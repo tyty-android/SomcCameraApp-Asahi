@@ -17,7 +17,7 @@
 # static fields
 .field public static final FAIL:I = 0x0
 
-.field public static final NORMAL:I = 0x7f0803fa
+.field public static final NORMAL:I = 0x7f080484
 
 
 # direct methods

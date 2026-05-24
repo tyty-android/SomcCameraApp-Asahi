@@ -56,6 +56,17 @@
 # direct methods
 .method constructor <init>(ILcom/google/common/base/Supplier;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "stripes",
+            "supplier"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -66,10 +77,10 @@
         }
     .end annotation
 
-    .line 515
+    .line 481
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/Striped$PowerOfTwoStriped;-><init>(I)V
 
-    .line 516
+    .line 482
     iget p1, p0, Lcom/google/common/util/concurrent/Striped$LargeLazyStriped;->mask:I
 
     const/4 v0, -0x1
@@ -88,10 +99,10 @@
     :goto_0
     iput p1, p0, Lcom/google/common/util/concurrent/Striped$LargeLazyStriped;->size:I
 
-    .line 517
+    .line 483
     iput-object p2, p0, Lcom/google/common/util/concurrent/Striped$LargeLazyStriped;->supplier:Lcom/google/common/base/Supplier;
 
-    .line 518
+    .line 484
     new-instance p1, Lcom/google/common/collect/MapMaker;
 
     invoke-direct {p1}, Lcom/google/common/collect/MapMaker;-><init>()V
@@ -113,6 +124,15 @@
 # virtual methods
 .method public getAt(I)Ljava/lang/Object;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)T",
@@ -120,21 +140,21 @@
         }
     .end annotation
 
-    .line 523
+    .line 489
     iget v0, p0, Lcom/google/common/util/concurrent/Striped$LargeLazyStriped;->size:I
 
     const v1, 0x7fffffff
 
     if-eq v0, v1, :cond_0
 
-    .line 524
+    .line 490
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/Striped$LargeLazyStriped;->size()I
 
     move-result v0
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkElementIndex(II)I
 
-    .line 526
+    .line 492
     :cond_0
     iget-object v0, p0, Lcom/google/common/util/concurrent/Striped$LargeLazyStriped;->locks:Ljava/util/concurrent/ConcurrentMap;
 
@@ -150,7 +170,7 @@
 
     return-object v0
 
-    .line 530
+    .line 496
     :cond_1
     iget-object v0, p0, Lcom/google/common/util/concurrent/Striped$LargeLazyStriped;->supplier:Lcom/google/common/base/Supplier;
 
@@ -158,7 +178,7 @@
 
     move-result-object v0
 
-    .line 531
+    .line 497
     iget-object p0, p0, Lcom/google/common/util/concurrent/Striped$LargeLazyStriped;->locks:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -169,7 +189,7 @@
 
     move-result-object p0
 
-    .line 532
+    .line 498
     invoke-static {p0, v0}, Lcom/google/common/base/MoreObjects;->firstNonNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -180,7 +200,7 @@
 .method public size()I
     .locals 0
 
-    .line 537
+    .line 503
     iget p0, p0, Lcom/google/common/util/concurrent/Striped$LargeLazyStriped;->size:I
 
     return p0

@@ -8,11 +8,18 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
+.annotation runtime Lcom/google/errorprone/annotations/Immutable;
+    containerOf = {
+        "C"
+    }
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/common/collect/Range$RangeLexOrdering;,
-        Lcom/google/common/collect/Range$UpperBoundFn;,
-        Lcom/google/common/collect/Range$LowerBoundFn;
+        Lcom/google/common/collect/Range$RangeLexOrdering;
     }
 .end annotation
 
@@ -67,7 +74,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 298
+    .line 272
     new-instance v0, Lcom/google/common/collect/Range;
 
     invoke-static {}, Lcom/google/common/collect/Cut;->belowAll()Lcom/google/common/collect/Cut;
@@ -86,7 +93,18 @@
 .end method
 
 .method private constructor <init>(Lcom/google/common/collect/Cut;Lcom/google/common/collect/Cut;)V
-    .locals 1
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "lowerBound",
+            "upperBound"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -97,10 +115,10 @@
         }
     .end annotation
 
-    .line 352
+    .line 326
     invoke-direct {p0}, Lcom/google/common/collect/RangeGwtSerializationDependencies;-><init>()V
 
-    .line 353
+    .line 327
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -109,7 +127,7 @@
 
     iput-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
-    .line 354
+    .line 328
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -118,65 +136,51 @@
 
     iput-object v0, p0, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
 
-    .line 355
+    .line 329
     invoke-virtual {p1, p2}, Lcom/google/common/collect/Cut;->compareTo(Lcom/google/common/collect/Cut;)I
 
     move-result p0
 
-    if-gtz p0, :cond_1
+    if-gtz p0, :cond_0
 
-    .line 356
+    .line 330
     invoke-static {}, Lcom/google/common/collect/Cut;->aboveAll()Lcom/google/common/collect/Cut;
 
     move-result-object p0
 
-    if-eq p1, p0, :cond_1
+    if-eq p1, p0, :cond_0
 
-    .line 357
+    .line 331
     invoke-static {}, Lcom/google/common/collect/Cut;->belowAll()Lcom/google/common/collect/Cut;
 
     move-result-object p0
 
-    if-ne p2, p0, :cond_0
+    if-eq p2, p0, :cond_0
 
-    goto :goto_0
-
-    :cond_0
     return-void
 
-    .line 358
-    :cond_1
-    :goto_0
+    .line 332
+    :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "Invalid range: "
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-static {p1, p2}, Lcom/google/common/collect/Range;->toString(Lcom/google/common/collect/Cut;Lcom/google/common/collect/Cut;)Ljava/lang/String;
 
     move-result-object p1
 
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Ljava/lang/String;->length()I
-
-    move-result p2
-
-    const-string v0, "Invalid range: "
-
-    if-eqz p2, :cond_2
-
-    invoke-virtual {v0, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    goto :goto_1
-
-    :cond_2
-    new-instance p1, Ljava/lang/String;
-
-    invoke-direct {p1, v0}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
-
-    :goto_1
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p0
@@ -194,7 +198,7 @@
         }
     .end annotation
 
-    .line 307
+    .line 281
     sget-object v0, Lcom/google/common/collect/Range;->ALL:Lcom/google/common/collect/Range;
 
     return-object v0
@@ -202,6 +206,15 @@
 
 .method public static atLeast(Ljava/lang/Comparable;)Lcom/google/common/collect/Range;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "endpoint"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<C::",
@@ -212,7 +225,7 @@
         }
     .end annotation
 
-    .line 278
+    .line 253
     invoke-static {p0}, Lcom/google/common/collect/Cut;->belowValue(Ljava/lang/Comparable;)Lcom/google/common/collect/Cut;
 
     move-result-object p0
@@ -230,6 +243,15 @@
 
 .method public static atMost(Ljava/lang/Comparable;)Lcom/google/common/collect/Range;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "endpoint"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<C::",
@@ -240,7 +262,7 @@
         }
     .end annotation
 
-    .line 243
+    .line 219
     invoke-static {}, Lcom/google/common/collect/Cut;->belowAll()Lcom/google/common/collect/Cut;
 
     move-result-object v0
@@ -256,28 +278,19 @@
     return-object p0
 .end method
 
-.method private static cast(Ljava/lang/Iterable;)Ljava/util/SortedSet;
+.method public static closed(Ljava/lang/Comparable;Ljava/lang/Comparable;)Lcom/google/common/collect/Range;
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljava/lang/Iterable<",
-            "TT;>;)",
-            "Ljava/util/SortedSet<",
-            "TT;>;"
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "lower",
+            "upper"
         }
     .end annotation
 
-    .line 699
-    check-cast p0, Ljava/util/SortedSet;
-
-    return-object p0
-.end method
-
-.method public static closed(Ljava/lang/Comparable;Ljava/lang/Comparable;)Lcom/google/common/collect/Range;
-    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<C::",
@@ -288,7 +301,7 @@
         }
     .end annotation
 
-    .line 181
+    .line 157
     invoke-static {p0}, Lcom/google/common/collect/Cut;->belowValue(Ljava/lang/Comparable;)Lcom/google/common/collect/Cut;
 
     move-result-object p0
@@ -306,6 +319,17 @@
 
 .method public static closedOpen(Ljava/lang/Comparable;Ljava/lang/Comparable;)Lcom/google/common/collect/Range;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "lower",
+            "upper"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<C::",
@@ -316,7 +340,7 @@
         }
     .end annotation
 
-    .line 193
+    .line 169
     invoke-static {p0}, Lcom/google/common/collect/Cut;->belowValue(Ljava/lang/Comparable;)Lcom/google/common/collect/Cut;
 
     move-result-object p0
@@ -334,8 +358,18 @@
 
 .method static compareOrThrow(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "left",
+            "right"
+        }
+    .end annotation
 
-    .line 712
+    .line 700
     invoke-interface {p0, p1}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
 
     move-result p0
@@ -345,6 +379,17 @@
 
 .method static create(Lcom/google/common/collect/Cut;Lcom/google/common/collect/Cut;)Lcom/google/common/collect/Range;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "lowerBound",
+            "upperBound"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<C::",
@@ -359,7 +404,7 @@
         }
     .end annotation
 
-    .line 156
+    .line 132
     new-instance v0, Lcom/google/common/collect/Range;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Range;-><init>(Lcom/google/common/collect/Cut;Lcom/google/common/collect/Cut;)V
@@ -369,6 +414,17 @@
 
 .method public static downTo(Ljava/lang/Comparable;Lcom/google/common/collect/BoundType;)Lcom/google/common/collect/Range;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "endpoint",
+            "boundType"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<C::",
@@ -381,7 +437,7 @@
         }
     .end annotation
 
-    .line 288
+    .line 263
     sget-object v0, Lcom/google/common/collect/Range$1;->$SwitchMap$com$google$common$collect$BoundType:[I
 
     invoke-virtual {p1}, Lcom/google/common/collect/BoundType;->ordinal()I
@@ -398,14 +454,14 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 292
+    .line 267
     invoke-static {p0}, Lcom/google/common/collect/Range;->atLeast(Ljava/lang/Comparable;)Lcom/google/common/collect/Range;
 
     move-result-object p0
 
     return-object p0
 
-    .line 294
+    .line 269
     :cond_0
     new-instance p0, Ljava/lang/AssertionError;
 
@@ -413,7 +469,7 @@
 
     throw p0
 
-    .line 290
+    .line 265
     :cond_1
     invoke-static {p0}, Lcom/google/common/collect/Range;->greaterThan(Ljava/lang/Comparable;)Lcom/google/common/collect/Range;
 
@@ -424,6 +480,15 @@
 
 .method public static encloseAll(Ljava/lang/Iterable;)Lcom/google/common/collect/Range;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "values"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<C::",
@@ -436,25 +501,25 @@
         }
     .end annotation
 
-    .line 330
+    .line 304
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 331
+    .line 305
     instance-of v0, p0, Ljava/util/SortedSet;
 
     if-eqz v0, :cond_1
 
-    .line 332
-    invoke-static {p0}, Lcom/google/common/collect/Range;->cast(Ljava/lang/Iterable;)Ljava/util/SortedSet;
+    .line 306
+    move-object v0, p0
 
-    move-result-object v0
+    check-cast v0, Ljava/util/SortedSet;
 
-    .line 333
+    .line 307
     invoke-interface {v0}, Ljava/util/SortedSet;->comparator()Ljava/util/Comparator;
 
     move-result-object v1
 
-    .line 334
+    .line 308
     invoke-static {}, Lcom/google/common/collect/Ordering;->natural()Lcom/google/common/collect/Ordering;
 
     move-result-object v2
@@ -467,7 +532,7 @@
 
     if-nez v1, :cond_1
 
-    .line 335
+    .line 309
     :cond_0
     invoke-interface {v0}, Ljava/util/SortedSet;->first()Ljava/lang/Object;
 
@@ -487,16 +552,18 @@
 
     return-object p0
 
-    .line 338
+    .line 312
     :cond_1
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
 
-    .line 339
+    .line 313
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
+
+    check-cast v0, Ljava/lang/Comparable;
 
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -506,7 +573,7 @@
 
     move-object v1, v0
 
-    .line 341
+    .line 315
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -514,10 +581,12 @@
 
     if-eqz v2, :cond_2
 
-    .line 342
+    .line 316
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
+
+    check-cast v2, Ljava/lang/Comparable;
 
     invoke-static {v2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -525,7 +594,7 @@
 
     check-cast v2, Ljava/lang/Comparable;
 
-    .line 343
+    .line 317
     invoke-static {}, Lcom/google/common/collect/Ordering;->natural()Lcom/google/common/collect/Ordering;
 
     move-result-object v3
@@ -536,7 +605,7 @@
 
     check-cast v0, Ljava/lang/Comparable;
 
-    .line 344
+    .line 318
     invoke-static {}, Lcom/google/common/collect/Ordering;->natural()Lcom/google/common/collect/Ordering;
 
     move-result-object v3
@@ -549,7 +618,7 @@
 
     goto :goto_0
 
-    .line 346
+    .line 320
     :cond_2
     invoke-static {v0, v1}, Lcom/google/common/collect/Range;->closed(Ljava/lang/Comparable;Ljava/lang/Comparable;)Lcom/google/common/collect/Range;
 
@@ -560,6 +629,15 @@
 
 .method public static greaterThan(Ljava/lang/Comparable;)Lcom/google/common/collect/Range;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "endpoint"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<C::",
@@ -570,7 +648,7 @@
         }
     .end annotation
 
-    .line 269
+    .line 244
     invoke-static {p0}, Lcom/google/common/collect/Cut;->aboveValue(Ljava/lang/Comparable;)Lcom/google/common/collect/Cut;
 
     move-result-object p0
@@ -588,6 +666,15 @@
 
 .method public static lessThan(Ljava/lang/Comparable;)Lcom/google/common/collect/Range;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "endpoint"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<C::",
@@ -598,7 +685,7 @@
         }
     .end annotation
 
-    .line 234
+    .line 210
     invoke-static {}, Lcom/google/common/collect/Cut;->belowAll()Lcom/google/common/collect/Cut;
 
     move-result-object v0
@@ -614,29 +701,19 @@
     return-object p0
 .end method
 
-.method static lowerBoundFn()Lcom/google/common/base/Function;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<C::",
-            "Ljava/lang/Comparable<",
-            "*>;>()",
-            "Lcom/google/common/base/Function<",
-            "Lcom/google/common/collect/Range<",
-            "TC;>;",
-            "Lcom/google/common/collect/Cut<",
-            "TC;>;>;"
+.method public static open(Ljava/lang/Comparable;Ljava/lang/Comparable;)Lcom/google/common/collect/Range;
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "lower",
+            "upper"
         }
     .end annotation
 
-    .line 143
-    sget-object v0, Lcom/google/common/collect/Range$LowerBoundFn;->INSTANCE:Lcom/google/common/collect/Range$LowerBoundFn;
-
-    return-object v0
-.end method
-
-.method public static open(Ljava/lang/Comparable;Ljava/lang/Comparable;)Lcom/google/common/collect/Range;
-    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<C::",
@@ -647,7 +724,7 @@
         }
     .end annotation
 
-    .line 169
+    .line 145
     invoke-static {p0}, Lcom/google/common/collect/Cut;->aboveValue(Ljava/lang/Comparable;)Lcom/google/common/collect/Cut;
 
     move-result-object p0
@@ -665,6 +742,17 @@
 
 .method public static openClosed(Ljava/lang/Comparable;Ljava/lang/Comparable;)Lcom/google/common/collect/Range;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "lower",
+            "upper"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<C::",
@@ -675,7 +763,7 @@
         }
     .end annotation
 
-    .line 205
+    .line 181
     invoke-static {p0}, Lcom/google/common/collect/Cut;->aboveValue(Ljava/lang/Comparable;)Lcom/google/common/collect/Cut;
 
     move-result-object p0
@@ -693,6 +781,21 @@
 
 .method public static range(Ljava/lang/Comparable;Lcom/google/common/collect/BoundType;Ljava/lang/Comparable;Lcom/google/common/collect/BoundType;)Lcom/google/common/collect/Range;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "lower",
+            "lowerType",
+            "upper",
+            "upperType"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<C::",
@@ -707,13 +810,13 @@
         }
     .end annotation
 
-    .line 218
+    .line 194
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 219
+    .line 195
     invoke-static {p3}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 222
+    .line 198
     sget-object v0, Lcom/google/common/collect/BoundType;->OPEN:Lcom/google/common/collect/BoundType;
 
     if-ne p1, v0, :cond_0
@@ -729,7 +832,7 @@
 
     move-result-object p0
 
-    .line 224
+    .line 200
     :goto_0
     sget-object p1, Lcom/google/common/collect/BoundType;->OPEN:Lcom/google/common/collect/BoundType;
 
@@ -746,7 +849,7 @@
 
     move-result-object p1
 
-    .line 225
+    .line 201
     :goto_1
     invoke-static {p0, p1}, Lcom/google/common/collect/Range;->create(Lcom/google/common/collect/Cut;Lcom/google/common/collect/Cut;)Lcom/google/common/collect/Range;
 
@@ -768,7 +871,7 @@
         }
     .end annotation
 
-    .line 152
+    .line 128
     sget-object v0, Lcom/google/common/collect/Range$RangeLexOrdering;->INSTANCE:Lcom/google/common/collect/Ordering;
 
     return-object v0
@@ -776,6 +879,15 @@
 
 .method public static singleton(Ljava/lang/Comparable;)Lcom/google/common/collect/Range;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<C::",
@@ -786,7 +898,7 @@
         }
     .end annotation
 
-    .line 317
+    .line 291
     invoke-static {p0, p0}, Lcom/google/common/collect/Range;->closed(Ljava/lang/Comparable;Ljava/lang/Comparable;)Lcom/google/common/collect/Range;
 
     move-result-object p0
@@ -796,6 +908,17 @@
 
 .method private static toString(Lcom/google/common/collect/Cut;Lcom/google/common/collect/Cut;)Ljava/lang/String;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "lowerBound",
+            "upperBound"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -807,25 +930,25 @@
         }
     .end annotation
 
-    .line 690
+    .line 673
     new-instance v0, Ljava/lang/StringBuilder;
 
     const/16 v1, 0x10
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    .line 691
+    .line 674
     invoke-virtual {p0, v0}, Lcom/google/common/collect/Cut;->describeAsLowerBound(Ljava/lang/StringBuilder;)V
 
-    .line 692
+    .line 675
     const-string p0, ".."
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 693
+    .line 676
     invoke-virtual {p1, v0}, Lcom/google/common/collect/Cut;->describeAsUpperBound(Ljava/lang/StringBuilder;)V
 
-    .line 694
+    .line 677
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -835,6 +958,17 @@
 
 .method public static upTo(Ljava/lang/Comparable;Lcom/google/common/collect/BoundType;)Lcom/google/common/collect/Range;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "endpoint",
+            "boundType"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<C::",
@@ -847,7 +981,7 @@
         }
     .end annotation
 
-    .line 253
+    .line 229
     sget-object v0, Lcom/google/common/collect/Range$1;->$SwitchMap$com$google$common$collect$BoundType:[I
 
     invoke-virtual {p1}, Lcom/google/common/collect/BoundType;->ordinal()I
@@ -864,14 +998,14 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 257
+    .line 233
     invoke-static {p0}, Lcom/google/common/collect/Range;->atMost(Ljava/lang/Comparable;)Lcom/google/common/collect/Range;
 
     move-result-object p0
 
     return-object p0
 
-    .line 259
+    .line 235
     :cond_0
     new-instance p0, Ljava/lang/AssertionError;
 
@@ -879,7 +1013,7 @@
 
     throw p0
 
-    .line 255
+    .line 231
     :cond_1
     invoke-static {p0}, Lcom/google/common/collect/Range;->lessThan(Ljava/lang/Comparable;)Lcom/google/common/collect/Range;
 
@@ -888,31 +1022,19 @@
     return-object p0
 .end method
 
-.method static upperBoundFn()Lcom/google/common/base/Function;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<C::",
-            "Ljava/lang/Comparable<",
-            "*>;>()",
-            "Lcom/google/common/base/Function<",
-            "Lcom/google/common/collect/Range<",
-            "TC;>;",
-            "Lcom/google/common/collect/Cut<",
-            "TC;>;>;"
-        }
-    .end annotation
-
-    .line 148
-    sget-object v0, Lcom/google/common/collect/Range$UpperBoundFn;->INSTANCE:Lcom/google/common/collect/Range$UpperBoundFn;
-
-    return-object v0
-.end method
-
 
 # virtual methods
 .method public apply(Ljava/lang/Comparable;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "input"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TC;)Z"
@@ -922,7 +1044,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 445
+    .line 419
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Range;->contains(Ljava/lang/Comparable;)Z
 
     move-result p0
@@ -932,10 +1054,19 @@
 
 .method public bridge synthetic apply(Ljava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "input"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 118
+    .line 120
     check-cast p1, Ljava/lang/Comparable;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Range;->apply(Ljava/lang/Comparable;)Z
@@ -947,6 +1078,15 @@
 
 .method public canonical(Lcom/google/common/collect/DiscreteDomain;)Lcom/google/common/collect/Range;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "domain"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -957,24 +1097,24 @@
         }
     .end annotation
 
-    .line 652
+    .line 635
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 653
+    .line 636
     iget-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     invoke-virtual {v0, p1}, Lcom/google/common/collect/Cut;->canonical(Lcom/google/common/collect/DiscreteDomain;)Lcom/google/common/collect/Cut;
 
     move-result-object v0
 
-    .line 654
+    .line 637
     iget-object v1, p0, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
 
     invoke-virtual {v1, p1}, Lcom/google/common/collect/Cut;->canonical(Lcom/google/common/collect/DiscreteDomain;)Lcom/google/common/collect/Cut;
 
     move-result-object p1
 
-    .line 655
+    .line 638
     iget-object v1, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     if-ne v0, v1, :cond_0
@@ -996,16 +1136,25 @@
 
 .method public contains(Ljava/lang/Comparable;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TC;)Z"
         }
     .end annotation
 
-    .line 433
+    .line 407
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 435
+    .line 409
     iget-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     invoke-virtual {v0, p1}, Lcom/google/common/collect/Cut;->isLessThan(Ljava/lang/Comparable;)Z
@@ -1035,6 +1184,15 @@
 
 .method public containsAll(Ljava/lang/Iterable;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "values"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1043,7 +1201,7 @@
         }
     .end annotation
 
-    .line 453
+    .line 427
     invoke-static {p1}, Lcom/google/common/collect/Iterables;->isEmpty(Ljava/lang/Iterable;)Z
 
     move-result v0
@@ -1054,7 +1212,7 @@
 
     return v1
 
-    .line 458
+    .line 432
     :cond_0
     instance-of v0, p1, Ljava/util/SortedSet;
 
@@ -1062,17 +1220,17 @@
 
     if-eqz v0, :cond_3
 
-    .line 459
-    invoke-static {p1}, Lcom/google/common/collect/Range;->cast(Ljava/lang/Iterable;)Ljava/util/SortedSet;
+    .line 433
+    move-object v0, p1
 
-    move-result-object v0
+    check-cast v0, Ljava/util/SortedSet;
 
-    .line 460
+    .line 434
     invoke-interface {v0}, Ljava/util/SortedSet;->comparator()Ljava/util/Comparator;
 
     move-result-object v3
 
-    .line 461
+    .line 435
     invoke-static {}, Lcom/google/common/collect/Ordering;->natural()Lcom/google/common/collect/Ordering;
 
     move-result-object v4
@@ -1085,7 +1243,7 @@
 
     if-nez v3, :cond_3
 
-    .line 462
+    .line 436
     :cond_1
     invoke-interface {v0}, Ljava/util/SortedSet;->first()Ljava/lang/Object;
 
@@ -1119,7 +1277,7 @@
     :goto_0
     return v1
 
-    .line 466
+    .line 440
     :cond_3
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -1138,7 +1296,7 @@
 
     check-cast v0, Ljava/lang/Comparable;
 
-    .line 467
+    .line 441
     invoke-virtual {p0, v0}, Lcom/google/common/collect/Range;->contains(Ljava/lang/Comparable;)Z
 
     move-result v0
@@ -1153,6 +1311,15 @@
 
 .method public encloses(Lcom/google/common/collect/Range;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "other"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1161,7 +1328,7 @@
         }
     .end annotation
 
-    .line 498
+    .line 472
     iget-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     iget-object v1, p1, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
@@ -1176,7 +1343,7 @@
 
     iget-object p1, p1, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
 
-    .line 499
+    .line 473
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Cut;->compareTo(Lcom/google/common/collect/Cut;)I
 
     move-result p0
@@ -1197,21 +1364,29 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 667
+    .line 650
     instance-of v0, p1, Lcom/google/common/collect/Range;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 668
+    .line 651
     check-cast p1, Lcom/google/common/collect/Range;
 
-    .line 669
+    .line 652
     iget-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     iget-object v2, p1, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
@@ -1240,6 +1415,15 @@
 
 .method public gap(Lcom/google/common/collect/Range;)Lcom/google/common/collect/Range;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "otherRange"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1250,7 +1434,7 @@
         }
     .end annotation
 
-    .line 590
+    .line 573
     iget-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     iget-object v1, p1, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
@@ -1265,7 +1449,7 @@
 
     iget-object v1, p0, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
 
-    .line 591
+    .line 574
     invoke-virtual {v0, v1}, Lcom/google/common/collect/Cut;->compareTo(Lcom/google/common/collect/Cut;)I
 
     move-result v0
@@ -1274,49 +1458,17 @@
 
     goto :goto_0
 
-    .line 592
+    .line 575
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    move-result-object p0
+    const-string v2, "Ranges have a nonempty intersection: "
 
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p1
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    move-result v1
-
-    add-int/lit8 v1, v1, 0x27
-
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/String;->length()I
-
-    move-result v2
-
-    add-int/2addr v1, v2
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v1, "Ranges have a nonempty intersection: "
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -1326,7 +1478,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -1338,7 +1490,7 @@
 
     throw v0
 
-    .line 596
+    .line 579
     :cond_1
     :goto_0
     iget-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
@@ -1373,7 +1525,7 @@
 
     move-object p0, p1
 
-    .line 599
+    .line 582
     :cond_4
     iget-object p1, v1, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
 
@@ -1389,7 +1541,7 @@
 .method public hasLowerBound()Z
     .locals 1
 
-    .line 364
+    .line 338
     iget-object p0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     invoke-static {}, Lcom/google/common/collect/Cut;->belowAll()Lcom/google/common/collect/Cut;
@@ -1412,7 +1564,7 @@
 .method public hasUpperBound()Z
     .locals 1
 
-    .line 390
+    .line 364
     iget-object p0, p0, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
 
     invoke-static {}, Lcom/google/common/collect/Cut;->aboveAll()Lcom/google/common/collect/Cut;
@@ -1435,7 +1587,7 @@
 .method public hashCode()I
     .locals 1
 
-    .line 677
+    .line 660
     iget-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     invoke-virtual {v0}, Lcom/google/common/collect/Cut;->hashCode()I
@@ -1456,7 +1608,16 @@
 .end method
 
 .method public intersection(Lcom/google/common/collect/Range;)Lcom/google/common/collect/Range;
-    .locals 3
+    .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "connectedRange"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1467,7 +1628,7 @@
         }
     .end annotation
 
-    .line 549
+    .line 523
     iget-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     iget-object v1, p1, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
@@ -1476,7 +1637,7 @@
 
     move-result v0
 
-    .line 550
+    .line 524
     iget-object v1, p0, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
 
     iget-object v2, p1, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
@@ -1501,7 +1662,7 @@
     :cond_1
     if-ltz v0, :cond_2
 
-    .line 556
+    .line 530
     iget-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     goto :goto_0
@@ -1512,17 +1673,37 @@
     :goto_0
     if-gtz v1, :cond_3
 
-    .line 557
-    iget-object p0, p0, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
+    .line 531
+    iget-object v1, p0, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
 
     goto :goto_1
 
     :cond_3
-    iget-object p0, p1, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
+    iget-object v1, p1, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
 
-    .line 558
+    .line 535
     :goto_1
-    invoke-static {v0, p0}, Lcom/google/common/collect/Range;->create(Lcom/google/common/collect/Cut;Lcom/google/common/collect/Cut;)Lcom/google/common/collect/Range;
+    invoke-virtual {v0, v1}, Lcom/google/common/collect/Cut;->compareTo(Lcom/google/common/collect/Cut;)I
+
+    move-result v2
+
+    if-gtz v2, :cond_4
+
+    const/4 v2, 0x1
+
+    goto :goto_2
+
+    :cond_4
+    const/4 v2, 0x0
+
+    :goto_2
+    const-string v3, "intersection is undefined for disconnected ranges %s and %s"
+
+    .line 534
+    invoke-static {v2, v3, p0, p1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 541
+    invoke-static {v0, v1}, Lcom/google/common/collect/Range;->create(Lcom/google/common/collect/Cut;Lcom/google/common/collect/Cut;)Lcom/google/common/collect/Range;
 
     move-result-object p0
 
@@ -1531,6 +1712,15 @@
 
 .method public isConnected(Lcom/google/common/collect/Range;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "other"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1539,7 +1729,7 @@
         }
     .end annotation
 
-    .line 528
+    .line 502
     iget-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     iget-object v1, p1, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
@@ -1554,7 +1744,7 @@
 
     iget-object p0, p0, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
 
-    .line 529
+    .line 503
     invoke-virtual {p1, p0}, Lcom/google/common/collect/Cut;->compareTo(Lcom/google/common/collect/Cut;)I
 
     move-result p0
@@ -1575,7 +1765,7 @@
 .method public isEmpty()Z
     .locals 1
 
-    .line 424
+    .line 398
     iget-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     iget-object p0, p0, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
@@ -1587,10 +1777,26 @@
     return p0
 .end method
 
+.method lowerBound()Lcom/google/common/collect/Cut;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/common/collect/Cut<",
+            "TC;>;"
+        }
+    .end annotation
+
+    .line 683
+    iget-object p0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
+
+    return-object p0
+.end method
+
 .method public lowerBoundType()Lcom/google/common/collect/BoundType;
     .locals 0
 
-    .line 385
+    .line 359
     iget-object p0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     invoke-virtual {p0}, Lcom/google/common/collect/Cut;->typeAsLowerBound()Lcom/google/common/collect/BoundType;
@@ -1608,7 +1814,7 @@
         }
     .end annotation
 
-    .line 374
+    .line 348
     iget-object p0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     invoke-virtual {p0}, Lcom/google/common/collect/Cut;->endpoint()Ljava/lang/Comparable;
@@ -1621,7 +1827,7 @@
 .method readResolve()Ljava/lang/Object;
     .locals 1
 
-    .line 703
+    .line 691
     sget-object v0, Lcom/google/common/collect/Range;->ALL:Lcom/google/common/collect/Range;
 
     invoke-virtual {p0, v0}, Lcom/google/common/collect/Range;->equals(Ljava/lang/Object;)Z
@@ -1630,7 +1836,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 704
+    .line 692
     invoke-static {}, Lcom/google/common/collect/Range;->all()Lcom/google/common/collect/Range;
 
     move-result-object p0
@@ -1641,6 +1847,15 @@
 
 .method public span(Lcom/google/common/collect/Range;)Lcom/google/common/collect/Range;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "other"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1651,7 +1866,7 @@
         }
     .end annotation
 
-    .line 614
+    .line 597
     iget-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     iget-object v1, p1, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
@@ -1660,7 +1875,7 @@
 
     move-result v0
 
-    .line 615
+    .line 598
     iget-object v1, p0, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
 
     iget-object v2, p1, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
@@ -1685,7 +1900,7 @@
     :cond_1
     if-gtz v0, :cond_2
 
-    .line 621
+    .line 604
     iget-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     goto :goto_0
@@ -1696,7 +1911,7 @@
     :goto_0
     if-ltz v1, :cond_3
 
-    .line 622
+    .line 605
     iget-object p0, p0, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
 
     goto :goto_1
@@ -1704,7 +1919,7 @@
     :cond_3
     iget-object p0, p1, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
 
-    .line 623
+    .line 606
     :goto_1
     invoke-static {v0, p0}, Lcom/google/common/collect/Range;->create(Lcom/google/common/collect/Cut;Lcom/google/common/collect/Cut;)Lcom/google/common/collect/Range;
 
@@ -1716,7 +1931,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 686
+    .line 669
     iget-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     iget-object p0, p0, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
@@ -1728,10 +1943,26 @@
     return-object p0
 .end method
 
+.method upperBound()Lcom/google/common/collect/Cut;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/common/collect/Cut<",
+            "TC;>;"
+        }
+    .end annotation
+
+    .line 687
+    iget-object p0, p0, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
+
+    return-object p0
+.end method
+
 .method public upperBoundType()Lcom/google/common/collect/BoundType;
     .locals 0
 
-    .line 411
+    .line 385
     iget-object p0, p0, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
 
     invoke-virtual {p0}, Lcom/google/common/collect/Cut;->typeAsUpperBound()Lcom/google/common/collect/BoundType;
@@ -1749,7 +1980,7 @@
         }
     .end annotation
 
-    .line 400
+    .line 374
     iget-object p0, p0, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
 
     invoke-virtual {p0}, Lcom/google/common/collect/Cut;->endpoint()Ljava/lang/Comparable;

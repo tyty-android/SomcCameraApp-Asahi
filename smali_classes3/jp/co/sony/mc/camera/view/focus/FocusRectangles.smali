@@ -137,6 +137,8 @@
 
 .field private mTouchPoint:Ljp/co/sony/mc/camera/view/focus/TouchPointFactor;
 
+.field private mTouchPositionAcceptableChecker:Ljp/co/sony/mc/camera/view/FragmentController$TouchPositionAcceptableChecker;
+
 .field private mUiOrientation:Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
 
 
@@ -155,14 +157,6 @@
     .locals 0
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mActivity:Landroid/app/Activity;
-
-    return-object p0
-.end method
-
-.method static bridge synthetic -$$Nest$fgetmCaptureArea(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Landroid/view/View;
-    .locals 0
-
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCaptureArea:Landroid/view/View;
 
     return-object p0
 .end method
@@ -279,6 +273,14 @@
     return-object p0
 .end method
 
+.method static bridge synthetic -$$Nest$fgetmTouchPositionAcceptableChecker(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Ljp/co/sony/mc/camera/view/FragmentController$TouchPositionAcceptableChecker;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mTouchPositionAcceptableChecker:Ljp/co/sony/mc/camera/view/FragmentController$TouchPositionAcceptableChecker;
+
+    return-object p0
+.end method
+
 .method static bridge synthetic -$$Nest$fputmMultiAutoFocusArea(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;[Landroid/graphics/Rect;)V
     .locals 0
 
@@ -327,6 +329,16 @@
     return-void
 .end method
 
+.method static bridge synthetic -$$Nest$mconvertPointCoordinatesFromThisViewToScreen(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;Landroid/view/View;Landroid/graphics/Point;)Landroid/graphics/Point;
+    .locals 0
+
+    invoke-direct {p0, p1, p2}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->convertPointCoordinatesFromThisViewToScreen(Landroid/view/View;Landroid/graphics/Point;)Landroid/graphics/Point;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method static bridge synthetic -$$Nest$mfaceResultToRectangles(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;Z)V
     .locals 0
 
@@ -373,15 +385,49 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroid/app/Activity;Ljp/co/sony/mc/camera/view/focus/FocusActionListener;Ljp/co/sony/mc/camera/view/focus/FocusRectanglesViewList;Landroid/view/View;ZLjp/co/sony/mc/camera/configuration/parameters/FocusArea;Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;ZLjp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/TouchIntention;)V
+.method public constructor <init>(Landroid/app/Activity;Ljp/co/sony/mc/camera/view/FragmentController$TouchPositionAcceptableChecker;Ljp/co/sony/mc/camera/view/focus/FocusActionListener;Ljp/co/sony/mc/camera/view/focus/FocusRectanglesViewList;Landroid/view/View;ZLjp/co/sony/mc/camera/configuration/parameters/FocusArea;Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;ZLjp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/TouchIntention;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "activity",
+            "touchPositionAcceptableChecker",
+            "focusEventListener",
+            "focusRectanglesViewList",
+            "captureArea",
+            "isMultiAutoFocusAreaSupported",
+            "focusArea",
+            "focusMode",
+            "FocusFrameColor",
+            "framePlatformDraw",
+            "mode",
+            "cameraId",
+            "baseZoomRatio",
+            "touchIntention"
+        }
+    .end annotation
 
     move-object v0, p0
 
-    .line 240
+    .line 243
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 77
+    .line 79
     new-instance v1, Landroid/os/Handler;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
@@ -394,10 +440,10 @@
 
     const/4 v1, 0x0
 
-    .line 84
+    .line 86
     iput-object v1, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mPressedRectangle:Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;
 
-    .line 99
+    .line 101
     new-instance v2, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;
 
     invoke-direct {v2, p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;-><init>(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)V
@@ -406,60 +452,60 @@
 
     const/4 v2, 0x0
 
-    .line 107
+    .line 109
     iput-boolean v2, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mIsFaceTouchCaptureEnabled:Z
 
-    .line 113
+    .line 115
     new-instance v3, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateAfDefaultPreview;
 
     invoke-direct {v3, p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateAfDefaultPreview;-><init>(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)V
 
     iput-object v3, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentState:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;
 
-    .line 118
+    .line 120
     iput-object v1, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mLatestSelectedFaceUuid:Ljava/lang/String;
 
-    .line 123
+    .line 125
     sget-object v3, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;->PORTRAIT:Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
 
     iput-object v3, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mUiOrientation:Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
 
-    .line 146
+    .line 148
     iput-object v1, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusControlButtonUiState:Ljp/co/sony/mc/camera/view/uistate/FocusControlButtonUiState;
 
-    .line 148
+    .line 150
     iput-object v1, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mTouchEventDispatcher:Ljp/co/sony/mc/camera/view/focus/RectangleTouchEventDispatcher;
 
-    .line 150
+    .line 152
     new-array v3, v2, [Landroid/graphics/Rect;
 
     iput-object v3, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mMultiAutoFocusArea:[Landroid/graphics/Rect;
 
-    .line 158
+    .line 160
     iput-boolean v2, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mIsZooming:Z
 
-    .line 160
+    .line 162
     iput-boolean v2, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mIsMultiAutoFocusAreaSupported:Z
 
-    .line 164
+    .line 166
     sget-object v3, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;->TYPE_NON_FOCUS:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
     iput-object v3, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentFocusType:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
-    .line 165
+    .line 167
     sget-object v3, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;->TYPE_NON_FOCUS:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
     iput-object v3, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mNextFocusType:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
-    .line 166
+    .line 168
     sget-object v3, Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusState;->NORMAL:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusState;
 
     iput-object v3, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mNextFocusState:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusState;
 
-    .line 168
+    .line 170
     iput-boolean v2, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mIsFocusFramePlatformDraw:Z
 
-    .line 172
+    .line 174
     new-instance v2, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$1;
 
     invoke-direct {v2, p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$1;-><init>(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)V
@@ -468,15 +514,20 @@
 
     move-object v2, p1
 
-    .line 242
+    .line 245
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mActivity:Landroid/app/Activity;
 
     move-object v2, p2
 
-    .line 245
+    .line 247
+    iput-object v2, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mTouchPositionAcceptableChecker:Ljp/co/sony/mc/camera/view/FragmentController$TouchPositionAcceptableChecker;
+
+    move-object v2, p3
+
+    .line 250
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusEventListener:Ljp/co/sony/mc/camera/view/focus/FocusActionListener;
 
-    .line 247
+    .line 252
     new-instance v2, Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation;
 
     iget-object v3, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mActivity:Landroid/app/Activity;
@@ -485,66 +536,66 @@
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mAnimation:Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation;
 
-    move-object v2, p4
+    move-object v2, p5
 
-    .line 249
+    .line 254
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCaptureArea:Landroid/view/View;
-
-    move-object v2, p6
-
-    .line 251
-    iput-object v2, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusArea:Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;
 
     move-object v2, p7
 
-    .line 253
-    iput-object v2, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusMode:Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
+    .line 256
+    iput-object v2, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusArea:Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;
 
     move-object v2, p8
 
-    .line 255
+    .line 258
+    iput-object v2, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusMode:Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
+
+    move-object v2, p9
+
+    .line 260
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusFrameColor:Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;
 
-    move v2, p5
+    move v2, p6
 
-    .line 257
+    .line 262
     iput-boolean v2, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mIsMultiAutoFocusAreaSupported:Z
-
-    move-object v2, p10
-
-    .line 259
-    iput-object v2, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-object v2, p11
 
-    .line 261
+    .line 264
+    iput-object v2, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    move-object/from16 v2, p12
+
+    .line 266
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentCameraId:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    move/from16 v2, p12
-
-    .line 263
-    iput v2, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentBaseZoomRatio:F
-
-    move v2, p9
-
-    .line 265
-    iput-boolean v2, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mIsFocusFramePlatformDraw:Z
-
-    move-object v2, p3
+    move/from16 v2, p13
 
     .line 268
-    invoke-direct {p0, p3}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->initialize(Ljp/co/sony/mc/camera/view/focus/FocusRectanglesViewList;)V
+    iput v2, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentBaseZoomRatio:F
+
+    move v2, p10
 
     .line 270
+    iput-boolean v2, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mIsFocusFramePlatformDraw:Z
+
+    move-object v2, p4
+
+    .line 273
+    invoke-direct {p0, p4}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->initialize(Ljp/co/sony/mc/camera/view/focus/FocusRectanglesViewList;)V
+
+    .line 275
     new-instance v2, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker;
 
     invoke-direct {v2, p0, v1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker;-><init>(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker-IA;)V
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFaceReflectChecker:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker;
 
-    move-object/from16 v1, p13
+    move-object/from16 v1, p14
 
-    .line 272
+    .line 277
     iput-object v1, v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mTouchIntention:Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;
 
     return-void
@@ -552,8 +603,20 @@
 
 .method private addTaggedRectangle(Landroid/view/LayoutInflater;Ljava/lang/String;Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;)Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "inflater",
+            "uuid",
+            "preInflatedRect"
+        }
+    .end annotation
 
-    .line 362
+    .line 367
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFaceRectangles:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->size()I
@@ -568,13 +631,13 @@
 
     return-object v2
 
-    .line 367
+    .line 372
     :cond_0
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    .line 368
+    .line 373
     new-instance v1, Landroid/view/ViewGroup$LayoutParams;
 
     const/4 v3, -0x1
@@ -586,9 +649,9 @@
     goto :goto_0
 
     :cond_1
-    const p3, 0x7f0c005d
+    const p3, 0x7f0c0056
 
-    .line 377
+    .line 382
     invoke-virtual {p1, p3, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object p1
@@ -597,24 +660,24 @@
 
     check-cast p3, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;
 
-    .line 382
+    .line 387
     :goto_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mRectangles:Landroid/widget/RelativeLayout;
 
     invoke-virtual {p1, p3, v1}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 385
+    .line 390
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->prepare()V
 
-    .line 387
+    .line 392
     invoke-virtual {p3, v0}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->setFaceRect(Landroid/graphics/Rect;)V
 
-    .line 390
+    .line 395
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mOnFaceRectTouchListener:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;
 
     invoke-virtual {p3, p1}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->setRectangleOnTouchListener(Ljp/co/sony/mc/camera/view/focus/RectangleView$RectangleOnTouchListener;)V
 
-    .line 393
+    .line 398
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFaceRectangles:Ljava/util/HashMap;
 
     invoke-virtual {p0, p2, p3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -624,8 +687,16 @@
 
 .method private changeFacePriority(Ljava/lang/String;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "faceUuid"
+        }
+    .end annotation
 
-    .line 2327
+    .line 2322
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFaceRectangles:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -638,7 +709,7 @@
 
     const/4 p0, 0x1
 
-    .line 2329
+    .line 2324
     new-array p0, p0, [Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -669,13 +740,13 @@
 
     return-void
 
-    .line 2333
+    .line 2328
     :cond_0
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->getFaceRect()Landroid/graphics/Rect;
 
     move-result-object p1
 
-    .line 2334
+    .line 2329
     invoke-static {}, Ljp/co/sony/mc/camera/util/PositionConverter;->getInstance()Ljp/co/sony/mc/camera/util/PositionConverter;
 
     move-result-object v0
@@ -684,7 +755,7 @@
 
     move-result-object p1
 
-    .line 2338
+    .line 2333
     new-instance v0, Landroid/graphics/Point;
 
     invoke-virtual {p1}, Landroid/graphics/Rect;->centerX()I
@@ -697,12 +768,12 @@
 
     invoke-direct {v0, v1, p1}, Landroid/graphics/Point;-><init>(II)V
 
-    .line 2339
+    .line 2334
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusEventListener:Ljp/co/sony/mc/camera/view/focus/FocusActionListener;
 
     invoke-interface {p1, v0}, Ljp/co/sony/mc/camera/view/focus/FocusActionListener;->onFaceSelected(Landroid/graphics/Point;)V
 
-    .line 2341
+    .line 2336
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFaceReflectChecker:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker;->requestToWaitForFaceReflected(Landroid/graphics/Point;)V
@@ -712,12 +783,20 @@
 
 .method private declared-synchronized changeState(Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "newState"
+        }
+    .end annotation
 
     const-string v0, "invoke current: "
 
     monitor-enter p0
 
-    .line 2499
+    .line 2494
     :try_start_0
     sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
@@ -751,7 +830,7 @@
 
     move-result-object v0
 
-    .line 2500
+    .line 2495
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v2
@@ -772,38 +851,38 @@
 
     aput-object v0, v1, v2
 
-    .line 2499
+    .line 2494
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 2506
+    .line 2501
     :cond_0
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentState:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;
 
-    .line 2508
+    .line 2503
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;->entry()V
 
-    .line 2509
+    .line 2504
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentFocusType:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mNextFocusType:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
     if-eq p1, v0, :cond_1
 
-    .line 2510
+    .line 2505
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->clearFocusView()V
 
-    .line 2512
+    .line 2507
     :cond_1
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->showFocusView()V
 
-    .line 2513
+    .line 2508
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mNextFocusType:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentFocusType:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2514
+    .line 2509
     monitor-exit p0
 
     return-void
@@ -819,7 +898,7 @@
 .method private clearCancelButton()V
     .locals 2
 
-    .line 2276
+    .line 2271
     sget-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$2;->$SwitchMap$jp$co$sony$mc$camera$view$focus$SingleFocusFrameView$FocusState:[I
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mNextFocusState:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusState;
@@ -848,7 +927,7 @@
 
     goto :goto_0
 
-    .line 2281
+    .line 2276
     :cond_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->hideFocusControlButton()V
 
@@ -859,7 +938,7 @@
 .method private clearFocusView()V
     .locals 2
 
-    .line 2517
+    .line 2512
     sget-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$2;->$SwitchMap$jp$co$sony$mc$camera$view$focus$FocusRectangles$FocusType:[I
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentFocusType:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
@@ -874,7 +953,7 @@
 
     goto :goto_0
 
-    .line 2549
+    .line 2544
     :pswitch_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusMode:Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
@@ -882,18 +961,18 @@
 
     if-eq v0, v1, :cond_3
 
-    .line 2550
+    .line 2545
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->clearCancelButton()V
 
     goto :goto_0
 
-    .line 2546
+    .line 2541
     :pswitch_1
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->clearFaceDetection()V
 
     goto :goto_0
 
-    .line 2538
+    .line 2533
     :pswitch_2
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mNextFocusType:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
@@ -913,17 +992,17 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 2541
+    .line 2536
     :cond_0
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->clearTouchFocus()V
 
-    .line 2543
+    .line 2538
     :cond_1
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->clearFaceDetection()V
 
     goto :goto_0
 
-    .line 2530
+    .line 2525
     :pswitch_3
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mNextFocusType:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
@@ -943,19 +1022,19 @@
 
     if-eq v0, v1, :cond_3
 
-    .line 2533
+    .line 2528
     :cond_2
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->clearTouchFocus()V
 
     goto :goto_0
 
-    .line 2526
+    .line 2521
     :pswitch_4
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->clearMultiAutoFocus()V
 
     goto :goto_0
 
-    .line 2521
+    .line 2516
     :pswitch_5
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->clearSingleAutoFocus()V
 
@@ -978,22 +1057,77 @@
     .end packed-switch
 .end method
 
+.method private convertPointCoordinatesFromThisViewToScreen(Landroid/view/View;Landroid/graphics/Point;)Landroid/graphics/Point;
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "viewPoint"
+        }
+    .end annotation
+
+    const/4 p0, 0x2
+
+    .line 2815
+    new-array p0, p0, [I
+
+    .line 2816
+    invoke-virtual {p1, p0}, Landroid/view/View;->getLocationOnScreen([I)V
+
+    .line 2818
+    new-instance p1, Landroid/graphics/Point;
+
+    iget v0, p2, Landroid/graphics/Point;->x:I
+
+    const/4 v1, 0x0
+
+    aget v1, p0, v1
+
+    add-int/2addr v0, v1
+
+    iget p2, p2, Landroid/graphics/Point;->y:I
+
+    const/4 v1, 0x1
+
+    aget p0, p0, v1
+
+    add-int/2addr p2, p0
+
+    invoke-direct {p1, v0, p2}, Landroid/graphics/Point;-><init>(II)V
+
+    return-object p1
+.end method
+
 .method private faceResultToRectangles(Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;Z)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "detectionResult",
+            "isInvisible"
+        }
+    .end annotation
 
-    .line 2346
+    .line 2341
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->getPreviewSurfaceViewRect()Landroid/graphics/Rect;
 
     move-result-object v0
 
     if-eqz p1, :cond_0
 
-    .line 2355
+    .line 2350
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->getSelectedFaceUuId(Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 2352
+    .line 2347
     invoke-static {p1, v0, v1}, Ljp/co/sony/mc/camera/util/FaceDetectUtil;->getFaceInformationList(Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;Landroid/graphics/Rect;Ljava/lang/String;)Ljp/co/sony/mc/camera/view/focus/FaceInformationList;
 
     move-result-object p1
@@ -1003,7 +1137,7 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 2358
+    .line 2353
     :goto_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mTouchEventDispatcher:Ljp/co/sony/mc/camera/view/focus/RectangleTouchEventDispatcher;
 
@@ -1013,7 +1147,7 @@
 
     return-void
 
-    .line 2364
+    .line 2359
     :cond_1
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mIsFaceSelectEnabled:Z
 
@@ -1027,7 +1161,7 @@
 
     const/4 p2, 0x1
 
-    .line 2372
+    .line 2367
     :cond_2
     invoke-direct {p0, p1, p2}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->updateFaceRectangles(Ljp/co/sony/mc/camera/view/focus/FaceInformationList;Z)V
 
@@ -1037,7 +1171,7 @@
 .method private getPreviewSurfaceViewRect()Landroid/graphics/Rect;
     .locals 0
 
-    .line 357
+    .line 362
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mRectangles:Landroid/widget/RelativeLayout;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/ViewExtensionsKt;->getViewBound(Landroid/view/View;)Landroid/graphics/Rect;
@@ -1049,8 +1183,16 @@
 
 .method private getSelectedFaceUuId(Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 
-    .line 2592
+    .line 2587
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->getFaceList()Ljava/util/List;
 
     move-result-object p0
@@ -1065,7 +1207,7 @@
 
     return-object p0
 
-    .line 2596
+    .line 2591
     :cond_0
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->getFaceList()Ljava/util/List;
 
@@ -1095,7 +1237,7 @@
 .method private getSingleAutoFocusRect()Landroid/graphics/Rect;
     .locals 7
 
-    .line 2699
+    .line 2694
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isBasicLayoutMode()Z
@@ -1104,25 +1246,25 @@
 
     if-eqz v0, :cond_0
 
-    .line 2700
+    .line 2695
     new-instance p0, Landroid/graphics/Rect;
 
     invoke-direct {p0}, Landroid/graphics/Rect;-><init>()V
 
     return-object p0
 
-    .line 2703
+    .line 2698
     :cond_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->getPreviewSurfaceViewRect()Landroid/graphics/Rect;
 
     move-result-object v0
 
-    .line 2706
+    .line 2701
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mIsZooming:Z
 
     if-eqz p0, :cond_1
 
-    .line 2707
+    .line 2702
     invoke-virtual {v0}, Landroid/graphics/Rect;->width()I
 
     move-result p0
@@ -1139,7 +1281,7 @@
 
     float-to-int p0, p0
 
-    .line 2708
+    .line 2703
     invoke-virtual {v0}, Landroid/graphics/Rect;->height()I
 
     move-result v3
@@ -1154,7 +1296,7 @@
 
     goto :goto_0
 
-    .line 2710
+    .line 2705
     :cond_1
     invoke-static {}, Ljp/co/sony/mc/camera/util/PositionConverter;->getInstance()Ljp/co/sony/mc/camera/util/PositionConverter;
 
@@ -1164,7 +1306,7 @@
 
     move-result-object p0
 
-    .line 2711
+    .line 2706
     invoke-virtual {p0}, Landroid/graphics/Rect;->width()I
 
     move-result v1
@@ -1181,7 +1323,7 @@
 
     float-to-int v1, v1
 
-    .line 2712
+    .line 2707
     invoke-virtual {p0}, Landroid/graphics/Rect;->height()I
 
     move-result p0
@@ -1200,32 +1342,32 @@
 
     move p0, v6
 
-    .line 2714
+    .line 2709
     :goto_0
     new-instance v2, Landroid/graphics/Rect;
 
-    .line 2715
+    .line 2710
     invoke-virtual {v0}, Landroid/graphics/Rect;->centerX()I
 
     move-result v3
 
     sub-int/2addr v3, p0
 
-    .line 2716
+    .line 2711
     invoke-virtual {v0}, Landroid/graphics/Rect;->centerY()I
 
     move-result v4
 
     sub-int/2addr v4, v1
 
-    .line 2717
+    .line 2712
     invoke-virtual {v0}, Landroid/graphics/Rect;->centerX()I
 
     move-result v5
 
     add-int/2addr v5, p0
 
-    .line 2718
+    .line 2713
     invoke-virtual {v0}, Landroid/graphics/Rect;->centerY()I
 
     move-result p0
@@ -1240,7 +1382,7 @@
 .method private getSingleAutoFocusRectSize()Landroid/util/Size;
     .locals 3
 
-    .line 2691
+    .line 2686
     invoke-static {}, Ljp/co/sony/mc/camera/util/PositionConverter;->getInstance()Ljp/co/sony/mc/camera/util/PositionConverter;
 
     move-result-object p0
@@ -1249,7 +1391,7 @@
 
     move-result-object p0
 
-    .line 2693
+    .line 2688
     invoke-virtual {p0}, Landroid/graphics/Rect;->width()I
 
     move-result v0
@@ -1266,7 +1408,7 @@
 
     float-to-int v0, v0
 
-    .line 2694
+    .line 2689
     invoke-virtual {p0}, Landroid/graphics/Rect;->height()I
 
     move-result p0
@@ -1279,7 +1421,7 @@
 
     float-to-int p0, p0
 
-    .line 2695
+    .line 2690
     new-instance v1, Landroid/util/Size;
 
     invoke-direct {v1, v0, p0}, Landroid/util/Size;-><init>(II)V
@@ -1289,8 +1431,16 @@
 
 .method private hideFaceRectangles(Z)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "translucentOnly"
+        }
+    .end annotation
 
-    .line 2207
+    .line 2202
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFaceRectangles:Ljava/util/HashMap;
 
     invoke-virtual {p0}, Ljava/util/HashMap;->values()Ljava/util/Collection;
@@ -1318,10 +1468,10 @@
 
     const/4 v1, 0x0
 
-    .line 2209
+    .line 2204
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->changeRectangleResource(I)V
 
-    .line 2212
+    .line 2207
     :cond_0
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->hide()V
 
@@ -1334,14 +1484,14 @@
 .method private hideFocusControlButton()V
     .locals 1
 
-    .line 2321
+    .line 2316
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusControlButtonUiState:Ljp/co/sony/mc/camera/view/uistate/FocusControlButtonUiState;
 
     if-eqz p0, :cond_0
 
     const/4 v0, 0x0
 
-    .line 2322
+    .line 2317
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/uistate/FocusControlButtonUiState;->setVisible(Z)V
 
     :cond_0
@@ -1350,27 +1500,35 @@
 
 .method private initialize(Ljp/co/sony/mc/camera/view/focus/FocusRectanglesViewList;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "focusRectanglesViewList"
+        }
+    .end annotation
 
-    .line 294
+    .line 299
     iget-object v0, p1, Ljp/co/sony/mc/camera/view/focus/FocusRectanglesViewList;->rectanglesContainer:Landroid/widget/RelativeLayout;
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mRectangles:Landroid/widget/RelativeLayout;
 
-    .line 296
+    .line 301
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object v0
 
-    .line 299
+    .line 304
     new-instance v1, Ljava/util/HashMap;
 
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFaceRectangles:Ljava/util/HashMap;
 
-    .line 301
+    .line 306
     new-instance v1, Ljp/co/sony/mc/camera/view/focus/RectangleTouchEventDispatcher;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFaceRectangles:Ljava/util/HashMap;
@@ -1379,19 +1537,19 @@
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mTouchEventDispatcher:Ljp/co/sony/mc/camera/view/focus/RectangleTouchEventDispatcher;
 
-    .line 302
+    .line 307
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mRectangles:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v2, v1}, Landroid/widget/RelativeLayout;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    .line 306
+    .line 311
     iget-object v1, p1, Ljp/co/sony/mc/camera/view/focus/FocusRectanglesViewList;->faceViewList:[Landroid/view/View;
 
     const/4 v2, 0x0
 
     if-eqz v1, :cond_0
 
-    .line 307
+    .line 312
     iget-object v1, p1, Ljp/co/sony/mc/camera/view/focus/FocusRectanglesViewList;->faceViewList:[Landroid/view/View;
 
     goto :goto_0
@@ -1409,7 +1567,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 312
+    .line 317
     aget-object v4, v1, v3
 
     check-cast v4, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;
@@ -1419,7 +1577,7 @@
     :cond_1
     move-object v4, v2
 
-    .line 314
+    .line 319
     :goto_2
     invoke-static {v3}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
@@ -1431,7 +1589,7 @@
 
     goto :goto_1
 
-    .line 317
+    .line 322
     :cond_2
     new-instance v0, Landroid/widget/RelativeLayout$LayoutParams;
 
@@ -1439,7 +1597,7 @@
 
     invoke-direct {v0, v1, v1}, Landroid/widget/RelativeLayout$LayoutParams;-><init>(II)V
 
-    .line 322
+    .line 327
     new-instance v2, Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView;
 
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mActivity:Landroid/app/Activity;
@@ -1454,27 +1612,27 @@
 
     const/16 v3, 0x8
 
-    .line 323
+    .line 328
     invoke-virtual {v2, v3}, Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView;->setVisibility(I)V
 
-    .line 324
+    .line 329
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mRectangles:Landroid/widget/RelativeLayout;
 
     iget-object v4, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mSingleAfRect:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView;
 
     invoke-virtual {v2, v4, v0}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 326
+    .line 331
     iget-object p1, p1, Ljp/co/sony/mc/camera/view/focus/FocusRectanglesViewList;->focusControlButtonUiState:Ljp/co/sony/mc/camera/view/uistate/FocusControlButtonUiState;
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusControlButtonUiState:Ljp/co/sony/mc/camera/view/uistate/FocusControlButtonUiState;
 
-    .line 327
+    .line 332
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCancelButtonListener:Ljp/co/sony/mc/camera/view/widget/FocusControlButton$OnClickListener;
 
     invoke-virtual {p1, v2}, Ljp/co/sony/mc/camera/view/uistate/FocusControlButtonUiState;->setClickListener(Ljp/co/sony/mc/camera/view/widget/FocusControlButton$OnClickListener;)V
 
-    .line 330
+    .line 335
     new-instance p1, Ljp/co/sony/mc/camera/view/focus/MultiFocusFrameView;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mActivity:Landroid/app/Activity;
@@ -1483,42 +1641,42 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mMultiAfRect:Ljp/co/sony/mc/camera/view/focus/MultiFocusFrameView;
 
-    .line 332
+    .line 337
     invoke-virtual {p1, v3}, Ljp/co/sony/mc/camera/view/focus/MultiFocusFrameView;->setVisibility(I)V
 
-    .line 333
+    .line 338
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mRectangles:Landroid/widget/RelativeLayout;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mMultiAfRect:Ljp/co/sony/mc/camera/view/focus/MultiFocusFrameView;
 
     invoke-virtual {p1, v2, v0}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 336
+    .line 341
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->getSingleAutoFocusRectSize()Landroid/util/Size;
 
     move-result-object p1
 
-    .line 337
+    .line 342
     new-instance v0, Ljp/co/sony/mc/camera/view/focus/TouchFocusFrameView;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mActivity:Landroid/app/Activity;
 
     invoke-direct {v0, v2, p1}, Ljp/co/sony/mc/camera/view/focus/TouchFocusFrameView;-><init>(Landroid/content/Context;Landroid/util/Size;)V
 
-    .line 339
+    .line 344
     new-instance p1, Landroid/widget/RelativeLayout$LayoutParams;
 
     invoke-direct {p1, v1, v1}, Landroid/widget/RelativeLayout$LayoutParams;-><init>(II)V
 
-    .line 342
+    .line 347
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mRectangles:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v1, v0, p1}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 343
+    .line 348
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mTouchAfRect:Ljp/co/sony/mc/camera/view/focus/TouchFocusFrameView;
 
-    .line 344
+    .line 349
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->resetAf()V
 
     return-void
@@ -1527,7 +1685,7 @@
 .method private isAvailableFramePlatformDrawing()Z
     .locals 0
 
-    .line 2807
+    .line 2802
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mIsFocusFramePlatformDraw:Z
 
     if-nez p0, :cond_0
@@ -1545,7 +1703,7 @@
 .method private isBodyRectangle()Z
     .locals 4
 
-    .line 2782
+    .line 2777
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mLastFaceDetectionResult:Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->getSelectedFaceUuId(Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;)Ljava/lang/String;
@@ -1558,7 +1716,7 @@
 
     return v1
 
-    .line 2787
+    .line 2782
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mLastFaceDetectionResult:Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;
 
@@ -1583,7 +1741,7 @@
 
     check-cast v2, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;
 
-    .line 2788
+    .line 2783
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;->getId()I
 
     move-result v3
@@ -1598,12 +1756,12 @@
 
     if-eqz v3, :cond_1
 
-    .line 2790
+    .line 2785
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;->getFaceRectType()Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
 
     move-result-object p0
 
-    .line 2791
+    .line 2786
     sget-object v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;->HUMAN_BODY:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
 
     if-eq p0, v0, :cond_2
@@ -1622,7 +1780,7 @@
 .method private isFaceLost()Z
     .locals 0
 
-    .line 2803
+    .line 2798
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mLastFaceDetectionResult:Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;
 
     if-nez p0, :cond_0
@@ -1641,7 +1799,7 @@
 .method private isPortrait()Z
     .locals 0
 
-    .line 2815
+    .line 2810
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mUiOrientation:Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;->isPortrait()Z
@@ -1654,7 +1812,7 @@
 .method private isValidMultiAutoFocusArea()Z
     .locals 4
 
-    .line 2766
+    .line 2761
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mMultiAutoFocusArea:[Landroid/graphics/Rect;
 
     const/4 v1, 0x0
@@ -1663,7 +1821,7 @@
 
     goto :goto_0
 
-    .line 2768
+    .line 2763
     :cond_0
     array-length v2, v0
 
@@ -1671,7 +1829,7 @@
 
     goto :goto_0
 
-    .line 2770
+    .line 2765
     :cond_1
     array-length v2, v0
 
@@ -1679,14 +1837,14 @@
 
     if-ne v2, v3, :cond_3
 
-    .line 2771
+    .line 2766
     aget-object v0, v0, v1
 
     if-nez v0, :cond_2
 
     goto :goto_0
 
-    .line 2773
+    .line 2768
     :cond_2
     invoke-virtual {v0}, Landroid/graphics/Rect;->width()I
 
@@ -1698,7 +1856,7 @@
 
     aget-object p0, p0, v1
 
-    .line 2774
+    .line 2769
     invoke-virtual {p0}, Landroid/graphics/Rect;->height()I
 
     move-result p0
@@ -1717,7 +1875,7 @@
 .method private resetFaceRectangleColor()V
     .locals 2
 
-    .line 2217
+    .line 2212
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFaceRectangles:Ljava/util/HashMap;
 
     invoke-virtual {p0}, Ljava/util/HashMap;->values()Ljava/util/Collection;
@@ -1743,7 +1901,7 @@
 
     const/4 v1, 0x0
 
-    .line 2218
+    .line 2213
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->changeRectangleResource(I)V
 
     goto :goto_0
@@ -1755,7 +1913,7 @@
 .method private resetSingleFocusRectangleColor()V
     .locals 2
 
-    .line 2231
+    .line 2226
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mSingleAfRect:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusFrameColor:Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;
@@ -1764,7 +1922,7 @@
 
     if-ne p0, v1, :cond_0
 
-    .line 2232
+    .line 2227
     sget-object p0, Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusColor;->NORMAL:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusColor;
 
     goto :goto_0
@@ -1772,7 +1930,7 @@
     :cond_0
     sget-object p0, Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusColor;->RED:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusColor;
 
-    .line 2231
+    .line 2226
     :goto_0
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView;->resetFocusRectangleColor(Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusColor;)V
 
@@ -1782,10 +1940,10 @@
 .method private resetTouchFocusRectangleColor()V
     .locals 2
 
-    .line 2224
+    .line 2219
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mTouchAfRect:Ljp/co/sony/mc/camera/view/focus/TouchFocusFrameView;
 
-    const v1, 0x7f09009d
+    const v1, 0x7f0900a5
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/focus/TouchFocusFrameView;->findViewById(I)Landroid/view/View;
 
@@ -1795,22 +1953,22 @@
 
     const/4 v1, 0x0
 
-    .line 2225
+    .line 2220
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 2226
+    .line 2221
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusFrameColor:Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;
 
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;->WHITE:Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;
 
     if-ne p0, v1, :cond_0
 
-    const p0, 0x7f080091
+    const p0, 0x7f080092
 
     goto :goto_0
 
     :cond_0
-    const p0, 0x7f080090
+    const p0, 0x7f080091
 
     :goto_0
     invoke-virtual {v0, p0}, Landroid/widget/ImageView;->setBackgroundResource(I)V
@@ -1824,30 +1982,38 @@
         .annotation runtime Ljavax/annotation/Nullable;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "touchPoint"
+        }
+    .end annotation
 
-    .line 2287
+    .line 2282
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mTouchAfRect:Ljp/co/sony/mc/camera/view/focus/TouchFocusFrameView;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/view/focus/TouchFocusFrameView;->setTouchFocusRectPosition(Ljp/co/sony/mc/camera/view/focus/TouchPointFactor;)V
 
-    .line 2288
+    .line 2283
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mTouchAfRect:Ljp/co/sony/mc/camera/view/focus/TouchFocusFrameView;
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/focus/TouchFocusFrameView;->setVisibility(I)V
 
-    .line 2289
+    .line 2284
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusEventListener:Ljp/co/sony/mc/camera/view/focus/FocusActionListener;
 
     const/4 v0, 0x1
 
     invoke-interface {p1, v0}, Ljp/co/sony/mc/camera/view/focus/FocusActionListener;->onTouchFocusVisibilityChanged(Z)V
 
-    .line 2290
+    .line 2285
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->resetTouchFocusRectangleColor()V
 
-    .line 2291
+    .line 2286
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusMode:Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->isAf()Z
@@ -1856,14 +2022,14 @@
 
     if-eqz p1, :cond_0
 
-    .line 2292
+    .line 2287
     sget-object p1, Ljp/co/sony/mc/camera/view/widget/FocusControlButton$ButtonType;->TOUCH_FOCUS_CANCEL:Ljp/co/sony/mc/camera/view/widget/FocusControlButton$ButtonType;
 
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->showCancelTouchActionButton(Ljp/co/sony/mc/camera/view/widget/FocusControlButton$ButtonType;)V
 
     goto :goto_0
 
-    .line 2294
+    .line 2289
     :cond_0
     sget-object p1, Ljp/co/sony/mc/camera/view/widget/FocusControlButton$ButtonType;->TOUCH_AUTO_EXPOSURE_CANCEL:Ljp/co/sony/mc/camera/view/widget/FocusControlButton$ButtonType;
 
@@ -1875,16 +2041,24 @@
 
 .method private showCancelTouchActionButton(Ljp/co/sony/mc/camera/view/widget/FocusControlButton$ButtonType;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
-    .line 2314
+    .line 2309
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusControlButtonUiState:Ljp/co/sony/mc/camera/view/uistate/FocusControlButtonUiState;
 
     if-eqz v0, :cond_0
 
-    .line 2315
+    .line 2310
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/view/uistate/FocusControlButtonUiState;->setButtonType(Ljp/co/sony/mc/camera/view/widget/FocusControlButton$ButtonType;)V
 
-    .line 2316
+    .line 2311
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusControlButtonUiState:Ljp/co/sony/mc/camera/view/uistate/FocusControlButtonUiState;
 
     const/4 p1, 0x1
@@ -1897,16 +2071,24 @@
 
 .method private showFaceRectangles(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isInvisible"
+        }
+    .end annotation
 
-    .line 1871
+    .line 1876
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mLastFaceDetectionResult:Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->faceResultToRectangles(Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;Z)V
 
-    .line 1872
+    .line 1877
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->updateFaceRectangles()V
 
-    .line 1873
+    .line 1878
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFaceReflectChecker:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker;->isWaitingForFaceReflected()Z
@@ -1915,7 +2097,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 1874
+    .line 1879
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFaceReflectChecker:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mLastFaceDetectionResult:Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;
@@ -1929,7 +2111,7 @@
 .method private showFocusView()V
     .locals 2
 
-    .line 2559
+    .line 2554
     sget-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$2;->$SwitchMap$jp$co$sony$mc$camera$view$focus$FocusRectangles$FocusType:[I
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mNextFocusType:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
@@ -1944,7 +2126,7 @@
 
     goto :goto_0
 
-    .line 2584
+    .line 2579
     :pswitch_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->showTrackingCancelButton()V
 
@@ -1953,35 +2135,35 @@
     :pswitch_1
     const/4 v0, 0x0
 
-    .line 2576
+    .line 2571
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->showFaceRectangles(Z)V
 
     goto :goto_0
 
-    .line 2572
+    .line 2567
     :pswitch_2
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->showTouchFocusView()V
 
     const/4 v0, 0x1
 
-    .line 2573
+    .line 2568
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->showFaceRectangles(Z)V
 
     goto :goto_0
 
-    .line 2569
+    .line 2564
     :pswitch_3
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->showTouchFocusView()V
 
     goto :goto_0
 
-    .line 2566
+    .line 2561
     :pswitch_4
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->showMultiAutoFocusingView()V
 
     goto :goto_0
 
-    .line 2579
+    .line 2574
     :pswitch_5
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->isAvailableFramePlatformDrawing()Z
 
@@ -1989,12 +2171,12 @@
 
     if-nez v0, :cond_0
 
-    .line 2580
+    .line 2575
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->showSingleAutoFocusingView()V
 
     goto :goto_0
 
-    .line 2561
+    .line 2556
     :pswitch_6
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->showSingleAutoFocusingView()V
 
@@ -2020,7 +2202,7 @@
 .method private showMultiAutoFocusingView()V
     .locals 9
 
-    .line 2722
+    .line 2717
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->isAvailableFramePlatformDrawing()Z
 
     move-result v0
@@ -2029,7 +2211,7 @@
 
     return-void
 
-    .line 2725
+    .line 2720
     :cond_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->isValidMultiAutoFocusArea()Z
 
@@ -2039,7 +2221,7 @@
 
     const/4 v0, 0x1
 
-    .line 2726
+    .line 2721
     new-array v0, v0, [Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2066,12 +2248,12 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 2728
+    .line 2723
     new-instance v0, Ljava/util/LinkedList;
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
 
-    .line 2730
+    .line 2725
     invoke-static {}, Ljp/co/sony/mc/camera/util/PositionConverter;->getInstance()Ljp/co/sony/mc/camera/util/PositionConverter;
 
     move-result-object v1
@@ -2080,10 +2262,10 @@
 
     move-result-object v1
 
-    .line 2731
+    .line 2726
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mActivity:Landroid/app/Activity;
 
-    .line 2733
+    .line 2728
     invoke-virtual {v1}, Landroid/graphics/Rect;->width()I
 
     move-result v4
@@ -2098,12 +2280,12 @@
 
     div-float/2addr v4, v1
 
-    .line 2731
+    .line 2726
     invoke-static {v3, v4}, Ljp/co/sony/mc/camera/view/LayoutDependencyResolver;->getSurfaceViewRectOnDisplay(Landroid/content/Context;F)Landroid/graphics/Rect;
 
     move-result-object v1
 
-    .line 2735
+    .line 2730
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mMultiAutoFocusArea:[Landroid/graphics/Rect;
 
     array-length v4, v3
@@ -2117,32 +2299,32 @@
 
     goto :goto_1
 
-    .line 2740
+    .line 2735
     :cond_1
     invoke-static {}, Ljp/co/sony/mc/camera/util/PositionConverter;->getInstance()Ljp/co/sony/mc/camera/util/PositionConverter;
 
     move-result-object v6
 
-    .line 2741
+    .line 2736
     invoke-virtual {v6, v5}, Ljp/co/sony/mc/camera/util/PositionConverter;->convertFromActiveArrayToView(Landroid/graphics/Rect;)Landroid/graphics/Rect;
 
     move-result-object v5
 
-    .line 2743
+    .line 2738
     iget-object v6, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v6}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v6
 
-    const v7, 0x7f070682
+    const v7, 0x7f07062e
 
-    .line 2744
+    .line 2739
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v6
 
-    .line 2746
+    .line 2741
     invoke-virtual {v5}, Landroid/graphics/Rect;->centerX()I
 
     move-result v7
@@ -2153,7 +2335,7 @@
 
     iput v7, v5, Landroid/graphics/Rect;->left:I
 
-    .line 2747
+    .line 2742
     invoke-virtual {v5}, Landroid/graphics/Rect;->centerY()I
 
     move-result v7
@@ -2162,28 +2344,28 @@
 
     iput v7, v5, Landroid/graphics/Rect;->top:I
 
-    .line 2748
+    .line 2743
     iget v7, v5, Landroid/graphics/Rect;->left:I
 
     add-int/2addr v7, v6
 
     iput v7, v5, Landroid/graphics/Rect;->right:I
 
-    .line 2749
+    .line 2744
     iget v7, v5, Landroid/graphics/Rect;->top:I
 
     add-int/2addr v7, v6
 
     iput v7, v5, Landroid/graphics/Rect;->bottom:I
 
-    .line 2752
+    .line 2747
     invoke-virtual {v1, v5}, Landroid/graphics/Rect;->contains(Landroid/graphics/Rect;)Z
 
     move-result v6
 
     if-eqz v6, :cond_2
 
-    .line 2753
+    .line 2748
     invoke-virtual {v0, v5}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
 
     :cond_2
@@ -2192,7 +2374,7 @@
 
     goto :goto_0
 
-    .line 2757
+    .line 2752
     :cond_3
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mMultiAfRect:Ljp/co/sony/mc/camera/view/focus/MultiFocusFrameView;
 
@@ -2200,7 +2382,7 @@
 
     goto :goto_2
 
-    .line 2759
+    .line 2754
     :cond_4
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->clearMultiAutoFocus()V
 
@@ -2211,7 +2393,7 @@
 .method private showSingleAutoFocusingView()V
     .locals 5
 
-    .line 2676
+    .line 2671
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCaptureArea:Landroid/view/View;
 
     if-nez v0, :cond_0
@@ -2221,7 +2403,7 @@
     :cond_0
     const/4 v0, 0x1
 
-    .line 2679
+    .line 2674
     new-array v0, v0, [Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2258,12 +2440,12 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 2681
+    .line 2676
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mIsZooming:Z
 
     if-eqz v0, :cond_1
 
-    .line 2682
+    .line 2677
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mSingleAfRect:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView;
 
     const/16 v0, 0x8
@@ -2272,13 +2454,13 @@
 
     goto :goto_1
 
-    .line 2684
+    .line 2679
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mSingleAfRect:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mNextFocusState:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusState;
 
-    .line 2685
+    .line 2680
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusFrameColor:Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;
 
     sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;->WHITE:Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;
@@ -2292,11 +2474,11 @@
     :cond_2
     sget-object v3, Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusColor;->RED:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusColor;
 
-    .line 2684
+    .line 2679
     :goto_0
     invoke-virtual {v0, v1, v3}, Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView;->setFocusRectangleColor(Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusState;Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusColor;)V
 
-    .line 2686
+    .line 2681
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mSingleAfRect:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView;
 
     invoke-virtual {p0, v2}, Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView;->setVisibility(I)V
@@ -2308,16 +2490,16 @@
 .method private showTouchFocusView()V
     .locals 3
 
-    .line 2237
+    .line 2232
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mTouchAfRect:Ljp/co/sony/mc/camera/view/focus/TouchFocusFrameView;
 
-    const v1, 0x7f09009d
+    const v1, 0x7f0900a5
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/focus/TouchFocusFrameView;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    .line 2239
+    .line 2234
     sget-object v1, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$2;->$SwitchMap$jp$co$sony$mc$camera$view$focus$SingleFocusFrameView$FocusState:[I
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mNextFocusState:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusState;
@@ -2353,17 +2535,6 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 2259
-    invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundResource(I)V
-
-    .line 2260
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->hideFocusControlButton()V
-
-    goto :goto_1
-
-    :cond_1
-    const v1, 0x7f08008f
-
     .line 2254
     invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundResource(I)V
 
@@ -2372,18 +2543,29 @@
 
     goto :goto_1
 
-    :cond_2
-    const v1, 0x7f08008e
+    :cond_1
+    const v1, 0x7f080090
 
-    .line 2250
+    .line 2249
     invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundResource(I)V
 
-    .line 2251
+    .line 2250
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->hideFocusControlButton()V
 
     goto :goto_1
 
-    .line 2244
+    :cond_2
+    const v1, 0x7f08008f
+
+    .line 2245
+    invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundResource(I)V
+
+    .line 2246
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->hideFocusControlButton()V
+
+    goto :goto_1
+
+    .line 2239
     :cond_3
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusFrameColor:Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;
 
@@ -2391,22 +2573,22 @@
 
     if-ne v1, v2, :cond_4
 
-    const v1, 0x7f080091
+    const v1, 0x7f080092
 
     goto :goto_0
 
     :cond_4
-    const v1, 0x7f080090
+    const v1, 0x7f080091
 
     :goto_0
     invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundResource(I)V
 
-    .line 2247
+    .line 2242
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->hideFocusControlButton()V
 
     goto :goto_1
 
-    .line 2241
+    .line 2236
     :cond_5
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mTouchPoint:Ljp/co/sony/mc/camera/view/focus/TouchPointFactor;
 
@@ -2419,7 +2601,7 @@
 .method private showTrackingCancelButton()V
     .locals 2
 
-    .line 2268
+    .line 2263
     sget-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$2;->$SwitchMap$jp$co$sony$mc$camera$view$focus$SingleFocusFrameView$FocusState:[I
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mNextFocusState:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusState;
@@ -2436,7 +2618,7 @@
 
     goto :goto_0
 
-    .line 2270
+    .line 2265
     :cond_0
     sget-object v0, Ljp/co/sony/mc/camera/view/widget/FocusControlButton$ButtonType;->TOUCH_TRACKING_CANCEL:Ljp/co/sony/mc/camera/view/widget/FocusControlButton$ButtonType;
 
@@ -2449,7 +2631,7 @@
 .method private startFaceDetection()V
     .locals 2
 
-    .line 2799
+    .line 2794
     sget-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;->EVENT_FACE_DETECTION_STARTED:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
     const/4 v1, 0x0
@@ -2464,7 +2646,7 @@
 .method private updateFaceRectangles()V
     .locals 8
 
-    .line 1879
+    .line 1884
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFaceRectangles:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->values()Ljava/util/Collection;
@@ -2489,7 +2671,7 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;
 
-    .line 1881
+    .line 1886
     sget-object v2, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$2;->$SwitchMap$jp$co$sony$mc$camera$view$focus$SingleFocusFrameView$FocusState:[I
 
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mNextFocusState:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusState;
@@ -2502,7 +2684,7 @@
 
     const/16 v3, 0x8
 
-    const v4, 0x7f080306
+    const v4, 0x7f080374
 
     const/4 v5, 0x0
 
@@ -2524,13 +2706,13 @@
 
     goto :goto_0
 
-    .line 1917
+    .line 1922
     :cond_1
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mLatestSelectedFaceUuid:Ljava/lang/String;
 
     if-eqz v2, :cond_4
 
-    .line 1918
+    .line 1923
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->getUuid()Ljava/lang/String;
 
     move-result-object v3
@@ -2541,7 +2723,7 @@
 
     if-eqz v2, :cond_4
 
-    .line 1920
+    .line 1925
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->isAvailableFramePlatformDrawing()Z
 
     move-result v2
@@ -2550,7 +2732,7 @@
 
     goto :goto_1
 
-    .line 1923
+    .line 1928
     :cond_2
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusMode:Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
@@ -2558,7 +2740,7 @@
 
     if-ne v2, v3, :cond_3
 
-    const v2, 0x7f0803fd
+    const v2, 0x7f080487
 
     move v4, v2
 
@@ -2567,35 +2749,35 @@
     :cond_3
     move v4, v5
 
-    .line 1927
+    .line 1932
     :goto_1
     invoke-virtual {v1, v6, v6, v4}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->setEyeDetectionOn(ZZI)V
 
-    .line 1928
+    .line 1933
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->isShown()Z
 
     move-result v2
 
     if-nez v2, :cond_0
 
-    .line 1929
+    .line 1934
     invoke-virtual {v1, v5}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->setVisibility(I)V
 
     goto :goto_0
 
-    .line 1933
+    .line 1938
     :cond_4
     invoke-virtual {v1, v7}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->setVisibility(I)V
 
     goto :goto_0
 
-    .line 1900
+    .line 1905
     :cond_5
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mLatestSelectedFaceUuid:Ljava/lang/String;
 
     if-eqz v2, :cond_7
 
-    .line 1901
+    .line 1906
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->getUuid()Ljava/lang/String;
 
     move-result-object v3
@@ -2606,7 +2788,7 @@
 
     if-eqz v2, :cond_7
 
-    .line 1904
+    .line 1909
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->isAvailableFramePlatformDrawing()Z
 
     move-result v2
@@ -2616,31 +2798,31 @@
     goto :goto_2
 
     :cond_6
-    const v4, 0x7f0803fc
+    const v4, 0x7f080486
 
-    .line 1907
+    .line 1912
     :goto_2
     invoke-virtual {v1, v6, v6, v4}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->setEyeDetectionOn(ZZI)V
 
-    .line 1908
+    .line 1913
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->isShown()Z
 
     move-result v2
 
     if-nez v2, :cond_0
 
-    .line 1909
+    .line 1914
     invoke-virtual {v1, v5}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->setVisibility(I)V
 
     goto :goto_0
 
-    .line 1913
+    .line 1918
     :cond_7
     invoke-virtual {v1, v7}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->setVisibility(I)V
 
     goto/16 :goto_0
 
-    .line 1894
+    .line 1899
     :cond_8
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->isBody()Z
 
@@ -2648,12 +2830,12 @@
 
     if-eqz v2, :cond_0
 
-    .line 1896
+    .line 1901
     invoke-virtual {v1, v3}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->setVisibility(I)V
 
     goto/16 :goto_0
 
-    .line 1884
+    .line 1889
     :cond_9
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->isAvailableFramePlatformDrawing()Z
 
@@ -2664,13 +2846,13 @@
     goto :goto_3
 
     :cond_a
-    const v4, 0x7f0803fb
+    const v4, 0x7f080485
 
-    .line 1887
+    .line 1892
     :goto_3
     invoke-virtual {v1, v5, v5, v4}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->setEyeDetectionOn(ZZI)V
 
-    .line 1888
+    .line 1893
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->isAnimal()Z
 
     move-result v2
@@ -2683,7 +2865,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 1890
+    .line 1895
     invoke-virtual {v1, v3}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->setVisibility(I)V
 
     goto/16 :goto_0
@@ -2694,13 +2876,23 @@
 
 .method private updateFaceRectangles(Ljp/co/sony/mc/camera/view/focus/FaceInformationList;Z)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "resultList",
+            "isInvisible"
+        }
+    .end annotation
 
-    .line 1949
+    .line 1954
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/focus/FaceInformationList;->getUserSelectedUuid()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1951
+    .line 1956
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFaceRectangles:Ljava/util/HashMap;
 
     invoke-virtual {v1}, Ljava/util/HashMap;->values()Ljava/util/Collection;
@@ -2732,12 +2924,12 @@
 
     if-nez v4, :cond_1
 
-    .line 1953
+    .line 1958
     sget-boolean v4, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v4, :cond_0
 
-    .line 1954
+    .line 1959
     new-array v4, v5, [Ljava/lang/String;
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -2764,16 +2956,16 @@
 
     goto :goto_0
 
-    .line 1961
+    .line 1966
     :cond_1
     invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->clearUpdated()V
 
-    .line 1964
+    .line 1969
     iget-boolean v6, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mIsFaceSelectEnabled:Z
 
     invoke-virtual {v4, v6}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->setTouchable(Z)V
 
-    .line 1966
+    .line 1971
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/focus/FaceInformationList;->getNamedFaceList()Ljava/util/List;
 
     move-result-object v6
@@ -2784,19 +2976,19 @@
 
     if-ge v3, v6, :cond_4
 
-    .line 1968
+    .line 1973
     invoke-virtual {p1, v3}, Ljp/co/sony/mc/camera/view/focus/FaceInformationList;->getNamedFace(I)Ljp/co/sony/mc/camera/view/focus/NamedFace;
 
     move-result-object v6
 
     if-nez v6, :cond_2
 
-    .line 1970
+    .line 1975
     sget-boolean v4, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v4, :cond_0
 
-    .line 1971
+    .line 1976
     new-array v4, v5, [Ljava/lang/String;
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -2819,11 +3011,11 @@
 
     goto :goto_1
 
-    .line 1979
+    .line 1984
     :cond_2
     invoke-direct {p0, v4, v6, p2}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->updateRectangle(Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;Ljp/co/sony/mc/camera/view/focus/NamedFace;Z)V
 
-    .line 1985
+    .line 1990
     iget-object v5, v6, Ljp/co/sony/mc/camera/view/focus/NamedFace;->mUuid:Ljava/lang/String;
 
     invoke-virtual {v5, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -2834,28 +3026,28 @@
 
     if-nez p2, :cond_0
 
-    .line 1987
+    .line 1992
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->isAvailableFramePlatformDrawing()Z
 
     move-result v5
 
     if-eqz v5, :cond_3
 
-    const v5, 0x7f080306
+    const v5, 0x7f080374
 
     goto :goto_2
 
     :cond_3
-    const v5, 0x7f0803fe
+    const v5, 0x7f080488
 
-    .line 1990
+    .line 1995
     :goto_2
     invoke-virtual {v4, v5}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->changeRectangleResource(I)V
 
-    .line 1991
+    .line 1996
     invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->stopAnimation()V
 
-    .line 1993
+    .line 1998
     invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->getUuid()Ljava/lang/String;
 
     move-result-object v4
@@ -2864,13 +3056,13 @@
 
     goto :goto_1
 
-    .line 1997
+    .line 2002
     :cond_4
     invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->hide()V
 
     const/4 v5, 0x0
 
-    .line 1998
+    .line 2003
     invoke-virtual {v4, v5, v5}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->update(Ljava/lang/String;Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;)V
 
     goto :goto_1
@@ -2881,8 +3073,20 @@
 
 .method private updateRectangle(Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;Ljp/co/sony/mc/camera/view/focus/NamedFace;Z)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "targetRect",
+            "namedFace",
+            "isInvisible"
+        }
+    .end annotation
 
-    .line 2009
+    .line 2014
     invoke-static {}, Ljp/co/sony/mc/camera/util/PositionConverter;->getInstance()Ljp/co/sony/mc/camera/util/PositionConverter;
 
     move-result-object v0
@@ -2895,7 +3099,7 @@
 
     const/4 v1, 0x1
 
-    .line 2011
+    .line 2016
     new-array v1, v1, [Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -2918,7 +3122,7 @@
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 2013
+    .line 2018
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->setFaceRect(Landroid/graphics/Rect;)V
 
     if-eqz p3, :cond_0
@@ -2927,7 +3131,7 @@
 
     goto :goto_0
 
-    .line 2020
+    .line 2025
     :cond_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->isAvailableFramePlatformDrawing()Z
 
@@ -2935,18 +3139,18 @@
 
     if-eqz p3, :cond_1
 
-    const p3, 0x7f080306
+    const p3, 0x7f080374
 
     goto :goto_0
 
     :cond_1
-    const p3, 0x7f0803fb
+    const p3, 0x7f080485
 
-    .line 2024
+    .line 2029
     :goto_0
     invoke-virtual {p1, p3}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->changeRectangleResource(I)V
 
-    .line 2026
+    .line 2031
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->getVisibility()I
 
     move-result p3
@@ -2955,16 +3159,16 @@
 
     goto :goto_1
 
-    .line 2033
+    .line 2038
     :cond_2
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mIsFocusFramePlatformDraw:Z
 
     if-nez p0, :cond_3
 
-    .line 2034
+    .line 2039
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->startRectangleAnimation()V
 
-    .line 2039
+    .line 2044
     :cond_3
     :goto_1
     iget-object p0, p2, Ljp/co/sony/mc/camera/view/focus/NamedFace;->mUuid:Ljava/lang/String;
@@ -2973,20 +3177,20 @@
 
     invoke-virtual {p1, p0, p2}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->update(Ljava/lang/String;Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;)V
 
-    .line 2044
+    .line 2049
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->setUpdated()V
 
-    .line 2047
+    .line 2052
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->getVisibility()I
 
     move-result p0
 
     if-eqz p0, :cond_4
 
-    .line 2048
+    .line 2053
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->requestLayout()V
 
-    .line 2049
+    .line 2054
     invoke-virtual {p1, v3}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->setVisibility(I)V
 
     :cond_4
@@ -2998,16 +3202,16 @@
 .method public clearAllFocus()V
     .locals 0
 
-    .line 1826
+    .line 1831
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->clearSingleAutoFocus()V
 
-    .line 1827
+    .line 1832
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->clearMultiAutoFocus()V
 
-    .line 1828
+    .line 1833
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->clearTouchFocus()V
 
-    .line 1829
+    .line 1834
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->clearFaceDetection()V
 
     return-void
@@ -3018,13 +3222,13 @@
 
     const/4 v0, 0x0
 
-    .line 1850
+    .line 1855
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->hideFaceRectangles(Z)V
 
-    .line 1851
+    .line 1856
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->resetFaceRectangleColor()V
 
-    .line 1852
+    .line 1857
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mTouchEventDispatcher:Ljp/co/sony/mc/camera/view/focus/RectangleTouchEventDispatcher;
 
     const/4 v0, 0x0
@@ -3037,7 +3241,7 @@
 .method public clearMultiAutoFocus()V
     .locals 0
 
-    .line 1846
+    .line 1851
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mMultiAfRect:Ljp/co/sony/mc/camera/view/focus/MultiFocusFrameView;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/focus/MultiFocusFrameView;->clear()V
@@ -3048,12 +3252,12 @@
 .method public clearSingleAutoFocus()V
     .locals 1
 
-    .line 1841
+    .line 1846
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mSingleAfRect:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView;->clear()V
 
-    .line 1842
+    .line 1847
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->resetSingleFocusRectangleColor()V
 
     return-void
@@ -3064,15 +3268,15 @@
 
     const/4 v0, 0x0
 
-    .line 2300
+    .line 2295
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mTouchPoint:Ljp/co/sony/mc/camera/view/focus/TouchPointFactor;
 
-    .line 2301
+    .line 2296
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mTouchAfRect:Ljp/co/sony/mc/camera/view/focus/TouchFocusFrameView;
 
     invoke-virtual {v1, v0}, Ljp/co/sony/mc/camera/view/focus/TouchFocusFrameView;->setTouchFocusRectPosition(Ljp/co/sony/mc/camera/view/focus/TouchPointFactor;)V
 
-    .line 2302
+    .line 2297
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mTouchAfRect:Ljp/co/sony/mc/camera/view/focus/TouchFocusFrameView;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/focus/TouchFocusFrameView;->getVisibility()I
@@ -3081,33 +3285,33 @@
 
     if-nez v0, :cond_1
 
-    .line 2303
+    .line 2298
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mTouchAfRect:Ljp/co/sony/mc/camera/view/focus/TouchFocusFrameView;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/focus/TouchFocusFrameView;->setVisibility(I)V
 
-    .line 2304
+    .line 2299
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusEventListener:Ljp/co/sony/mc/camera/view/focus/FocusActionListener;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x0
 
-    .line 2305
+    .line 2300
     invoke-interface {v0, v1}, Ljp/co/sony/mc/camera/view/focus/FocusActionListener;->onTouchFocusVisibilityChanged(Z)V
 
-    .line 2306
+    .line 2301
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusEventListener:Ljp/co/sony/mc/camera/view/focus/FocusActionListener;
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/view/focus/FocusActionListener;->onTouchFocusCleared()V
 
-    .line 2308
+    .line 2303
     :cond_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->hideFocusControlButton()V
 
-    .line 2310
+    .line 2305
     :cond_1
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->resetTouchFocusRectangleColor()V
 
@@ -3117,7 +3321,7 @@
 .method public clearTouched()V
     .locals 0
 
-    .line 284
+    .line 289
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mOnFaceRectTouchListener:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->clearTouched()V
@@ -3130,7 +3334,7 @@
 
     const/4 v0, 0x0
 
-    .line 280
+    .line 285
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mIsFaceTouchCaptureEnabled:Z
 
     return-void
@@ -3141,7 +3345,7 @@
 
     const/4 v0, 0x1
 
-    .line 276
+    .line 281
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mIsFaceTouchCaptureEnabled:Z
 
     return-void
@@ -3150,12 +3354,12 @@
 .method public getFocusControlButtonUiState()Ljp/co/sony/mc/camera/view/uistate/FocusControlButtonUiState;
     .locals 1
 
-    .line 348
+    .line 353
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusControlButtonUiState:Ljp/co/sony/mc/camera/view/uistate/FocusControlButtonUiState;
 
     if-eqz v0, :cond_0
 
-    .line 349
+    .line 354
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/uistate/FocusControlButtonUiState;->getVisible()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
@@ -3172,7 +3376,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 350
+    .line 355
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusControlButtonUiState:Ljp/co/sony/mc/camera/view/uistate/FocusControlButtonUiState;
 
     return-object p0
@@ -3188,15 +3392,15 @@
 
     const/4 v0, 0x2
 
-    .line 2376
+    .line 2371
     new-array v0, v0, [I
 
-    .line 2377
+    .line 2372
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mRectangles:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v1, v0}, Landroid/widget/RelativeLayout;->getLocationOnScreen([I)V
 
-    .line 2378
+    .line 2373
     invoke-static {}, Ljp/co/sony/mc/camera/util/PositionConverter;->getInstance()Ljp/co/sony/mc/camera/util/PositionConverter;
 
     move-result-object v1
@@ -3205,10 +3409,10 @@
 
     move-result-object v1
 
-    .line 2379
+    .line 2374
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mActivity:Landroid/app/Activity;
 
-    .line 2380
+    .line 2375
     invoke-virtual {v1}, Landroid/graphics/Rect;->width()I
 
     move-result v3
@@ -3223,12 +3427,12 @@
 
     div-float/2addr v3, v1
 
-    .line 2379
+    .line 2374
     invoke-static {v2, v3}, Ljp/co/sony/mc/camera/view/LayoutDependencyResolver;->getSurfaceViewRectOnDisplay(Landroid/content/Context;F)Landroid/graphics/Rect;
 
     move-result-object v1
 
-    .line 2384
+    .line 2379
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mUiOrientation:Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
 
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;->isPortrait()Z
@@ -3237,7 +3441,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 2385
+    .line 2380
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mTouchPoint:Ljp/co/sony/mc/camera/view/focus/TouchPointFactor;
 
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/view/focus/TouchPointFactor;->getPointFactor()Landroid/graphics/PointF;
@@ -3256,7 +3460,7 @@
 
     float-to-int v2, v2
 
-    .line 2386
+    .line 2381
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mTouchPoint:Ljp/co/sony/mc/camera/view/focus/TouchPointFactor;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/focus/TouchPointFactor;->getPointFactor()Landroid/graphics/PointF;
@@ -3271,7 +3475,7 @@
 
     goto :goto_0
 
-    .line 2388
+    .line 2383
     :cond_0
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mTouchPoint:Ljp/co/sony/mc/camera/view/focus/TouchPointFactor;
 
@@ -3291,7 +3495,7 @@
 
     float-to-int v2, v2
 
-    .line 2389
+    .line 2384
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mTouchPoint:Ljp/co/sony/mc/camera/view/focus/TouchPointFactor;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/focus/TouchPointFactor;->getPointFactor()Landroid/graphics/PointF;
@@ -3313,19 +3517,19 @@
 
     const/4 v1, 0x0
 
-    .line 2392
+    .line 2387
     aget v1, v0, v1
 
     add-int/2addr v2, v1
 
     const/4 v1, 0x1
 
-    .line 2393
+    .line 2388
     aget v0, v0, v1
 
     add-int/2addr p0, v0
 
-    .line 2395
+    .line 2390
     new-instance v0, Landroid/graphics/Point;
 
     invoke-direct {v0, v2, p0}, Landroid/graphics/Point;-><init>(II)V
@@ -3336,17 +3540,17 @@
 .method public getTouchFocusIconSize()Landroid/graphics/Rect;
     .locals 3
 
-    .line 2474
+    .line 2469
     new-instance v0, Landroid/graphics/Rect;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mActivity:Landroid/app/Activity;
 
-    .line 2475
+    .line 2470
     invoke-virtual {v1}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    const v2, 0x7f070360
+    const v2, 0x7f07030a
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -3354,12 +3558,12 @@
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mActivity:Landroid/app/Activity;
 
-    .line 2476
+    .line 2471
     invoke-virtual {p0}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0
 
-    const v2, 0x7f07035f
+    const v2, 0x7f070309
 
     invoke-virtual {p0, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -3375,7 +3579,7 @@
 .method public getVisibility()I
     .locals 0
 
-    .line 2491
+    .line 2486
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mRectangles:Landroid/widget/RelativeLayout;
 
     invoke-virtual {p0}, Landroid/widget/RelativeLayout;->getVisibility()I
@@ -3388,7 +3592,7 @@
 .method public hideTouchFocus()V
     .locals 2
 
-    .line 1833
+    .line 1838
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mTouchAfRect:Ljp/co/sony/mc/camera/view/focus/TouchFocusFrameView;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/focus/TouchFocusFrameView;->getVisibility()I
@@ -3397,21 +3601,21 @@
 
     if-nez v0, :cond_0
 
-    .line 1834
+    .line 1839
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mTouchAfRect:Ljp/co/sony/mc/camera/view/focus/TouchFocusFrameView;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/focus/TouchFocusFrameView;->setVisibility(I)V
 
-    .line 1835
+    .line 1840
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusEventListener:Ljp/co/sony/mc/camera/view/focus/FocusActionListener;
 
     const/4 v1, 0x0
 
     invoke-interface {v0, v1}, Ljp/co/sony/mc/camera/view/focus/FocusActionListener;->onTouchFocusVisibilityChanged(Z)V
 
-    .line 1836
+    .line 1841
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->hideFocusControlButton()V
 
     :cond_0
@@ -3423,7 +3627,7 @@
 
     monitor-enter p0
 
-    .line 2464
+    .line 2459
     :try_start_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentState:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;
 
@@ -3441,7 +3645,7 @@
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentState:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;
 
-    .line 2465
+    .line 2460
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -3456,7 +3660,7 @@
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentState:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;
 
-    .line 2466
+    .line 2461
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -3471,7 +3675,7 @@
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentState:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;
 
-    .line 2467
+    .line 2462
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -3486,7 +3690,7 @@
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentState:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;
 
-    .line 2468
+    .line 2463
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -3501,7 +3705,7 @@
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentState:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;
 
-    .line 2469
+    .line 2464
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -3516,7 +3720,7 @@
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentState:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;
 
-    .line 2470
+    .line 2465
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -3542,7 +3746,7 @@
     :goto_0
     const/4 v0, 0x1
 
-    .line 2464
+    .line 2459
     :goto_1
     monitor-exit p0
 
@@ -3558,8 +3762,18 @@
 
 .method public onCameraSettingsChanged(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Z)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x0
+        }
+        names = {
+            "holder",
+            "isZooming"
+        }
+    .end annotation
 
-    .line 2618
+    .line 2613
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object v0
@@ -3578,11 +3792,11 @@
 
     if-eqz v0, :cond_1
 
-    .line 2619
+    .line 2614
     :cond_0
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->clearAllFocus()V
 
-    .line 2623
+    .line 2618
     :cond_1
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getFocusArea()Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;
 
@@ -3603,7 +3817,7 @@
     :cond_2
     move v0, v3
 
-    .line 2627
+    .line 2622
     :goto_0
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getFocusMode()Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
@@ -3620,7 +3834,7 @@
     :cond_3
     move v1, v3
 
-    .line 2631
+    .line 2626
     :goto_1
     iget-boolean v4, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mIsZooming:Z
 
@@ -3631,7 +3845,7 @@
     :cond_4
     move v2, v3
 
-    .line 2634
+    .line 2629
     :goto_2
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getFocusFrameColor()Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;
 
@@ -3641,19 +3855,19 @@
 
     if-eq v3, v4, :cond_6
 
-    .line 2635
+    .line 2630
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getFocusFrameColor()Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;
 
     move-result-object v3
 
     iput-object v3, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusFrameColor:Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;
 
-    .line 2636
+    .line 2631
     iget-object v4, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mSingleAfRect:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView;
 
     iget-object v5, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mNextFocusState:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusState;
 
-    .line 2637
+    .line 2632
     sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;->WHITE:Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;
 
     if-ne v3, v6, :cond_5
@@ -3665,14 +3879,14 @@
     :cond_5
     sget-object v3, Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusColor;->RED:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusColor;
 
-    .line 2636
+    .line 2631
     :goto_3
     invoke-virtual {v4, v5, v3}, Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView;->setFocusRectangleColor(Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusState;Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusColor;)V
 
     :cond_6
     if-eqz v1, :cond_7
 
-    .line 2641
+    .line 2636
     sget-object v1, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;->EVENT_ON_FOCUS_MODE_CHANGED:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getFocusMode()Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
@@ -3688,7 +3902,7 @@
     :cond_7
     if-eqz v2, :cond_8
 
-    .line 2644
+    .line 2639
     sget-object v1, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;->EVENT_ON_ZOOM_STEP_CHANGED:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -3701,7 +3915,7 @@
 
     invoke-virtual {p0, v1, p2}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->sendEvent(Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;[Ljava/lang/Object;)V
 
-    .line 2647
+    .line 2642
     :cond_8
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
@@ -3711,7 +3925,7 @@
 
     if-ne p2, v1, :cond_9
 
-    .line 2648
+    .line 2643
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     move-result-object p2
@@ -3720,7 +3934,7 @@
 
     if-ne p2, v1, :cond_9
 
-    .line 2649
+    .line 2644
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getBaseZoomRatio()F
 
     move-result p2
@@ -3731,7 +3945,7 @@
 
     if-eqz p2, :cond_b
 
-    .line 2650
+    .line 2645
     :cond_9
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
@@ -3739,28 +3953,28 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 2651
+    .line 2646
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     move-result-object p2
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentCameraId:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 2652
+    .line 2647
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getBaseZoomRatio()F
 
     move-result p2
 
     iput p2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentBaseZoomRatio:F
 
-    .line 2653
+    .line 2648
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusArea:Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;
 
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;->OBJECT_TRACKING:Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;
 
     if-ne p2, v1, :cond_a
 
-    .line 2654
+    .line 2649
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getFocusArea()Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;
 
     move-result-object p2
@@ -3769,14 +3983,14 @@
 
     if-eq p2, v1, :cond_b
 
-    .line 2655
+    .line 2650
     :cond_a
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->resetAf()V
 
     :cond_b
     if-eqz v0, :cond_c
 
-    .line 2659
+    .line 2654
     sget-object p2, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;->EVENT_ON_FOCUS_AREA_CHANGED:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getFocusArea()Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;
@@ -3789,7 +4003,7 @@
 
     invoke-virtual {p0, p2, v0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->sendEvent(Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;[Ljava/lang/Object;)V
 
-    .line 2661
+    .line 2656
     :cond_c
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getTouchIntention()Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;
 
@@ -3799,7 +4013,7 @@
 
     if-eq p2, v0, :cond_d
 
-    .line 2662
+    .line 2657
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getTouchIntention()Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;
 
     move-result-object p1
@@ -3815,10 +4029,10 @@
 
     const/4 v0, 0x0
 
-    .line 399
+    .line 404
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mActivity:Landroid/app/Activity;
 
-    .line 400
+    .line 405
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusEventListener:Ljp/co/sony/mc/camera/view/focus/FocusActionListener;
 
     return-void
@@ -3827,7 +4041,7 @@
 .method public reset()V
     .locals 0
 
-    .line 1856
+    .line 1861
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->setFaceFocusTouchListener()V
 
     return-void
@@ -3836,7 +4050,7 @@
 .method public resetAf()V
     .locals 1
 
-    .line 288
+    .line 293
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusMode:Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->isAf()Z
@@ -3845,7 +4059,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 289
+    .line 294
     new-instance v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateAfDefaultPreview;
 
     invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateAfDefaultPreview;-><init>(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)V
@@ -3857,7 +4071,7 @@
 
     invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateMfDefaultPreview;-><init>(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)V
 
-    .line 288
+    .line 293
     :goto_0
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->changeState(Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;)V
 
@@ -3866,6 +4080,16 @@
 
 .method public varargs declared-synchronized sendEvent(Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;[Ljava/lang/Object;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "event",
+            "objects"
+        }
+    .end annotation
 
     const-string/jumbo v0, "touch position on screen = "
 
@@ -3873,7 +4097,7 @@
 
     monitor-enter p0
 
-    .line 1712
+    .line 1717
     :try_start_0
     sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
@@ -3901,7 +4125,7 @@
 
     iget-object v5, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentState:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;
 
-    .line 1713
+    .line 1718
     invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v5
@@ -3920,10 +4144,10 @@
 
     aput-object v1, v2, v4
 
-    .line 1712
+    .line 1717
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 1715
+    .line 1720
     :cond_0
     sget-object v1, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$2;->$SwitchMap$jp$co$sony$mc$camera$view$focus$FocusRectangles$Event:[I
 
@@ -3937,7 +4161,7 @@
 
     goto/16 :goto_0
 
-    .line 1815
+    .line 1820
     :pswitch_0
     aget-object p1, p2, v4
 
@@ -3949,14 +4173,14 @@
 
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mIsZooming:Z
 
-    .line 1816
+    .line 1821
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentState:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;->handleOnZoomStepChanged()V
 
     goto/16 :goto_0
 
-    .line 1809
+    .line 1814
     :pswitch_1
     aget-object p1, p2, v4
 
@@ -3964,14 +4188,14 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusArea:Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;
 
-    .line 1810
+    .line 1815
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentState:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;->handleOnFocusAreaChanged()V
 
     goto/16 :goto_0
 
-    .line 1803
+    .line 1808
     :pswitch_2
     aget-object p1, p2, v4
 
@@ -3979,14 +4203,14 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusMode:Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
-    .line 1804
+    .line 1809
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentState:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;->handleOnFocusModeChanged()V
 
     goto/16 :goto_0
 
-    .line 1798
+    .line 1803
     :pswitch_3
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentState:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;
 
@@ -3994,13 +4218,13 @@
 
     goto/16 :goto_0
 
-    .line 1788
+    .line 1793
     :pswitch_4
     aget-object p1, p2, v4
 
     check-cast p1, Landroid/graphics/Rect;
 
-    .line 1789
+    .line 1794
     aget-object p2, p2, v3
 
     check-cast p2, Ljava/lang/Boolean;
@@ -4011,14 +4235,14 @@
 
     if-nez p2, :cond_1
 
-    .line 1791
+    .line 1796
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentState:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;
 
     invoke-virtual {v0, p1, p2}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;->handleOnTrackedObjectStateUpdated(Landroid/graphics/Rect;Z)V
 
     goto/16 :goto_0
 
-    .line 1793
+    .line 1798
     :cond_1
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentState:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;
 
@@ -4026,7 +4250,7 @@
 
     goto/16 :goto_0
 
-    .line 1782
+    .line 1787
     :pswitch_5
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentState:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;
 
@@ -4034,7 +4258,7 @@
 
     goto/16 :goto_0
 
-    .line 1776
+    .line 1781
     :pswitch_6
     aget-object p1, p2, v4
 
@@ -4046,23 +4270,23 @@
 
     const/4 p2, 0x0
 
-    .line 1777
+    .line 1782
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mLastFaceDetectionResult:Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;
 
-    .line 1778
+    .line 1783
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentState:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;
 
     invoke-virtual {p2, p1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;->handleOnFaceLost(Z)V
 
     goto/16 :goto_0
 
-    .line 1767
+    .line 1772
     :pswitch_7
     aget-object p1, p2, v4
 
     check-cast p1, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;
 
-    .line 1768
+    .line 1773
     aget-object v0, p2, v3
 
     check-cast v0, Ljava/lang/Boolean;
@@ -4075,7 +4299,7 @@
 
     const/4 v0, 0x2
 
-    .line 1769
+    .line 1774
     aget-object p2, p2, v0
 
     check-cast p2, Ljava/lang/Boolean;
@@ -4084,17 +4308,17 @@
 
     move-result p2
 
-    .line 1770
+    .line 1775
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mLastFaceDetectionResult:Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;
 
-    .line 1771
+    .line 1776
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentState:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;
 
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;->handleOnFaceDetected(Z)V
 
     goto/16 :goto_0
 
-    .line 1761
+    .line 1766
     :pswitch_8
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentState:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;
 
@@ -4102,7 +4326,7 @@
 
     goto/16 :goto_0
 
-    .line 1757
+    .line 1762
     :pswitch_9
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentState:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;
 
@@ -4110,28 +4334,28 @@
 
     goto/16 :goto_0
 
-    .line 1739
+    .line 1744
     :pswitch_a
     aget-object p1, p2, v4
 
     check-cast p1, Ljp/co/sony/mc/camera/view/focus/TouchAdjustRequest;
 
-    .line 1740
+    .line 1745
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/focus/TouchAdjustRequest;->getLocationOfPreview()[I
 
     move-result-object p2
 
-    .line 1741
+    .line 1746
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/focus/TouchAdjustRequest;->getPoint()Landroid/graphics/Point;
 
     move-result-object p1
 
-    .line 1742
+    .line 1747
     sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v1, :cond_2
 
-    .line 1743
+    .line 1748
     new-array v1, v3, [Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -4174,7 +4398,7 @@
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 1748
+    .line 1753
     :cond_2
     new-instance v0, Landroid/graphics/Point;
 
@@ -4192,10 +4416,10 @@
 
     invoke-direct {v0, v1, p1}, Landroid/graphics/Point;-><init>(II)V
 
-    .line 1751
+    .line 1756
     new-instance p1, Ljp/co/sony/mc/camera/view/focus/TouchPointFactor;
 
-    .line 1752
+    .line 1757
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->getPreviewSurfaceViewRect()Landroid/graphics/Rect;
 
     move-result-object p2
@@ -4206,14 +4430,14 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mTouchPoint:Ljp/co/sony/mc/camera/view/focus/TouchPointFactor;
 
-    .line 1753
+    .line 1758
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentState:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;->handleSetFocusPosition()V
 
     goto :goto_0
 
-    .line 1735
+    .line 1740
     :pswitch_b
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentState:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;
 
@@ -4221,7 +4445,7 @@
 
     goto :goto_0
 
-    .line 1729
+    .line 1734
     :pswitch_c
     aget-object p1, p2, v4
 
@@ -4231,21 +4455,21 @@
 
     move-result p1
 
-    .line 1730
+    .line 1735
     aget-object p2, p2, v3
 
     check-cast p2, [Landroid/graphics/Rect;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mMultiAutoFocusArea:[Landroid/graphics/Rect;
 
-    .line 1731
+    .line 1736
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentState:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;
 
     invoke-virtual {p2, p1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;->handleUpdateFocusStatus(Z)V
 
     goto :goto_0
 
-    .line 1722
+    .line 1727
     :pswitch_d
     aget-object p1, p2, v4
 
@@ -4255,14 +4479,14 @@
 
     move-result p1
 
-    .line 1723
+    .line 1728
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentState:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;
 
     invoke-virtual {p2, p1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;->handleOnAutoFocusDone(Z)V
 
     goto :goto_0
 
-    .line 1717
+    .line 1722
     :pswitch_e
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCurrentState:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;
 
@@ -4270,7 +4494,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1823
+    .line 1828
     :goto_0
     monitor-exit p0
 
@@ -4306,14 +4530,14 @@
 .method public setFaceFocusTouchListener()V
     .locals 3
 
-    .line 1860
+    .line 1865
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFaceRectangles:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 1864
+    .line 1869
     :cond_0
     invoke-virtual {v0}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
 
@@ -4336,14 +4560,14 @@
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 1865
+    .line 1870
     invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;
 
-    .line 1866
+    .line 1871
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mOnFaceRectTouchListener:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;
 
     invoke-virtual {v1, v2}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->setRectangleOnTouchListener(Ljp/co/sony/mc/camera/view/focus/RectangleView$RectangleOnTouchListener;)V
@@ -4356,8 +4580,16 @@
 
 .method public setMultiAutoFocusAreaSupported(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isMultiAutoFocusAreaSupported"
+        }
+    .end annotation
 
-    .line 2672
+    .line 2667
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mIsMultiAutoFocusAreaSupported:Z
 
     return-void
@@ -4365,23 +4597,31 @@
 
 .method public setObjectTrackingRectSupported(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "supported"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
-    .line 2601
+    .line 2596
     sget-object p1, Ljp/co/sony/mc/camera/view/widget/FocusControlButton$ButtonType;->TOUCH_TRACKING_CANCEL:Ljp/co/sony/mc/camera/view/widget/FocusControlButton$ButtonType;
 
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->showCancelTouchActionButton(Ljp/co/sony/mc/camera/view/widget/FocusControlButton$ButtonType;)V
 
     goto :goto_0
 
-    .line 2603
+    .line 2598
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusControlButtonUiState:Ljp/co/sony/mc/camera/view/uistate/FocusControlButtonUiState;
 
     if-eqz p1, :cond_1
 
-    .line 2604
+    .line 2599
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/FocusControlButtonUiState;->getButtonType()Landroidx/lifecycle/LiveData;
 
     move-result-object p1
@@ -4394,7 +4634,7 @@
 
     if-ne p1, v0, :cond_1
 
-    .line 2606
+    .line 2601
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->hideFocusControlButton()V
 
     :cond_1
@@ -4404,16 +4644,24 @@
 
 .method public setUiOrientation(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "orientation"
+        }
+    .end annotation
 
-    .line 2485
+    .line 2480
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mUiOrientation:Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
 
-    .line 2486
+    .line 2481
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mTouchAfRect:Ljp/co/sony/mc/camera/view/focus/TouchFocusFrameView;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/view/focus/TouchFocusFrameView;->updateLayoutOrientation(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
 
-    .line 2487
+    .line 2482
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mTouchAfRect:Ljp/co/sony/mc/camera/view/focus/TouchFocusFrameView;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/focus/TouchFocusFrameView;->getTouchPointFactor()Ljp/co/sony/mc/camera/view/focus/TouchPointFactor;
@@ -4427,8 +4675,16 @@
 
 .method public setVisibility(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "visibility"
+        }
+    .end annotation
 
-    .line 2495
+    .line 2490
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mRectangles:Landroid/widget/RelativeLayout;
 
     invoke-virtual {p0, p1}, Landroid/widget/RelativeLayout;->setVisibility(I)V

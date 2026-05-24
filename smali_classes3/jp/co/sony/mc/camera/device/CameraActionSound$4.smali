@@ -24,6 +24,15 @@
 # direct methods
 .method constructor <init>(Landroid/media/SoundPool;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "val$soundPool"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"

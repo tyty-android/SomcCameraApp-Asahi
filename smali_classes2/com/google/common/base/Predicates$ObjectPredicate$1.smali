@@ -17,10 +17,20 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 252
+    .line 260
     invoke-direct {p0, p1, p2, v0}, Lcom/google/common/base/Predicates$ObjectPredicate;-><init>(Ljava/lang/String;ILcom/google/common/base/Predicates$1;)V
 
     return-void
@@ -31,9 +41,17 @@
 .method public apply(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
     const/4 p0, 0x1
 
@@ -43,7 +61,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 260
+    .line 268
     const-string p0, "Predicates.alwaysTrue()"
 
     return-object p0

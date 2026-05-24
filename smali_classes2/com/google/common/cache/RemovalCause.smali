@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/cache/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Enum<",
@@ -52,7 +55,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 35
+    .line 36
     new-instance v0, Lcom/google/common/cache/RemovalCause$1;
 
     const-string v1, "EXPLICIT"
@@ -63,7 +66,7 @@
 
     sput-object v0, Lcom/google/common/cache/RemovalCause;->EXPLICIT:Lcom/google/common/cache/RemovalCause;
 
-    .line 48
+    .line 49
     new-instance v0, Lcom/google/common/cache/RemovalCause$2;
 
     const-string v1, "REPLACED"
@@ -74,7 +77,7 @@
 
     sput-object v0, Lcom/google/common/cache/RemovalCause;->REPLACED:Lcom/google/common/cache/RemovalCause;
 
-    .line 60
+    .line 61
     new-instance v0, Lcom/google/common/cache/RemovalCause$3;
 
     const-string v1, "COLLECTED"
@@ -85,7 +88,7 @@
 
     sput-object v0, Lcom/google/common/cache/RemovalCause;->COLLECTED:Lcom/google/common/cache/RemovalCause;
 
-    .line 71
+    .line 72
     new-instance v0, Lcom/google/common/cache/RemovalCause$4;
 
     const-string v1, "EXPIRED"
@@ -96,7 +99,7 @@
 
     sput-object v0, Lcom/google/common/cache/RemovalCause;->EXPIRED:Lcom/google/common/cache/RemovalCause;
 
-    .line 82
+    .line 83
     new-instance v0, Lcom/google/common/cache/RemovalCause$5;
 
     const-string v1, "SIZE"
@@ -119,13 +122,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 29
+    .line 30
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -134,7 +148,7 @@
 .method synthetic constructor <init>(Ljava/lang/String;ILcom/google/common/cache/RemovalCause$1;)V
     .locals 0
 
-    .line 29
+    .line 30
     invoke-direct {p0, p1, p2}, Lcom/google/common/cache/RemovalCause;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -142,6 +156,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/cache/RemovalCause;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 28
     const-class v0, Lcom/google/common/cache/RemovalCause;

@@ -26,6 +26,18 @@
 
 .method static getApi2Value(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZI)Ljava/lang/Integer;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "cameraId",
+            "isVideo",
+            "isoValue"
+        }
+    .end annotation
 
     if-lez p2, :cond_0
 

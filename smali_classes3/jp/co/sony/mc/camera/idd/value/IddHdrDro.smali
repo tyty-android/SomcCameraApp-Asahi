@@ -62,7 +62,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 227
+    .line 226
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddHdrDro;->value:Ljp/co/sony/mc/camera/configuration/parameters/Hdr;
@@ -75,7 +75,7 @@
 .method public final getValue()Ljp/co/sony/mc/camera/configuration/parameters/Hdr;
     .locals 0
 
-    .line 227
+    .line 226
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddHdrDro;->value:Ljp/co/sony/mc/camera/configuration/parameters/Hdr;
 
     return-object p0
@@ -84,7 +84,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 228
+    .line 227
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddHdrDro;->value:Ljp/co/sony/mc/camera/configuration/parameters/Hdr;
 
     sget-object v0, Ljp/co/sony/mc/camera/idd/value/IddHdrDro$WhenMappings;->$EnumSwitchMapping$0:[I
@@ -126,13 +126,13 @@
 
     throw p0
 
-    .line 231
+    .line 230
     :cond_1
     const-string v1, "OFF"
 
     goto :goto_0
 
-    .line 230
+    .line 229
     :cond_2
     const-string v1, "HDR"
 

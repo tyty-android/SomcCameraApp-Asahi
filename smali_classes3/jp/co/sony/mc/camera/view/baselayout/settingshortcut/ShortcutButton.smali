@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final DISABLED_FILTER:I = 0x7f0600de
+.field private static final DISABLED_FILTER:I = 0x7f0600d2
 
 .field private static final ICON_FADE_SWITCH_ANIMATION_DURATION:I = 0xfa
 
@@ -22,6 +22,14 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 37
     invoke-direct {p0, p1}, Landroidx/appcompat/widget/AppCompatImageView;-><init>(Landroid/content/Context;)V
@@ -34,6 +42,16 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "attrs"
+        }
+    .end annotation
 
     .line 42
     invoke-direct {p0, p1, p2}, Landroidx/appcompat/widget/AppCompatImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -180,7 +198,7 @@
     goto :goto_1
 
     :cond_1
-    const v0, 0x7f0600de
+    const v0, 0x7f0600d2
 
     .line 100
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/baselayout/settingshortcut/ShortcutButton;->setColorFilter(I)V
@@ -207,6 +225,14 @@
 
 .method public set(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isAvailable"
+        }
+    .end annotation
 
     .line 77
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/baselayout/settingshortcut/ShortcutButton;->mIsAvailable:Z
@@ -219,6 +245,14 @@
 
 .method public setImageResource(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "resId"
+        }
+    .end annotation
 
     .line 53
     iput p1, p0, Ljp/co/sony/mc/camera/view/baselayout/settingshortcut/ShortcutButton;->mLastResId:I
@@ -231,6 +265,14 @@
 
 .method public setImageResourceWithAnimation(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "resId"
+        }
+    .end annotation
 
     .line 59
     iget v0, p0, Ljp/co/sony/mc/camera/view/baselayout/settingshortcut/ShortcutButton;->mLastResId:I
@@ -256,6 +298,14 @@
 
 .method public setUiOrientation(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "orientation"
+        }
+    .end annotation
 
     .line 47
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/RotationUtil;->getAngle(I)F

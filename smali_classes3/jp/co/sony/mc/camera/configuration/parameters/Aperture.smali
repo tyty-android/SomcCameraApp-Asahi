@@ -77,7 +77,7 @@
     .line 26
     new-instance v6, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
-    const v4, 0x7f1101fb
+    const v4, 0x7f110247
 
     const v5, 0x3fd9999a    # 1.7f
 
@@ -96,7 +96,7 @@
     .line 30
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
-    const v11, 0x7f1101fc
+    const v11, 0x7f110248
 
     const/high16 v12, 0x40000000    # 2.0f
 
@@ -115,7 +115,7 @@
     .line 34
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
-    const v5, 0x7f1101fd
+    const v5, 0x7f110249
 
     const v6, 0x400ccccd    # 2.2f
 
@@ -134,7 +134,7 @@
     .line 38
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
-    const v11, 0x7f1101fe
+    const v11, 0x7f11024a
 
     const v12, 0x40133333    # 2.3f
 
@@ -151,7 +151,7 @@
     .line 42
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
-    const v5, 0x7f1101ff
+    const v5, 0x7f11024b
 
     const v6, 0x4019999a    # 2.4f
 
@@ -168,7 +168,7 @@
     .line 46
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
-    const v11, 0x7f110200
+    const v11, 0x7f11024c
 
     const v12, 0x40333333    # 2.8f
 
@@ -185,7 +185,7 @@
     .line 50
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
-    const v5, 0x7f110201
+    const v5, 0x7f11024d
 
     const/high16 v6, 0x40800000    # 4.0f
 
@@ -211,6 +211,23 @@
 
 .method private constructor <init>(Ljava/lang/String;IIIF)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId",
+            "configApertureValue"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IIF)V"
@@ -234,8 +251,16 @@
 
 .method public static getApertureFromValue(F)Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 186
+    .line 191
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;->values()[Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
     move-result-object v0
@@ -249,7 +274,7 @@
 
     aget-object v3, v0, v2
 
-    .line 187
+    .line 192
     iget v4, v3, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;->mConfigApertureValue:F
 
     sub-float/2addr v4, p0
@@ -271,34 +296,54 @@
 
     goto :goto_0
 
-    .line 191
+    .line 196
     :cond_1
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;->F2_0:Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
     return-object p0
 .end method
 
-.method public static getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
+.method public static getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId",
+            "baseZoomRatio",
+            "isBokeh",
+            "videoStabilizer",
+            "videoMfHdr",
+            "isHfr"
+        }
+    .end annotation
 
-    .line 175
-    invoke-static {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)[Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
+    .line 179
+    invoke-static/range {p0 .. p6}, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)[Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
     move-result-object p0
 
-    .line 176
+    .line 181
     array-length p2, p0
 
     const/4 p3, 0x0
 
     if-lez p2, :cond_0
 
-    .line 177
+    .line 182
     aget-object p0, p0, p3
 
     return-object p0
 
-    .line 178
+    .line 183
     :cond_0
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSupportedApertures(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/util/List;
 
@@ -310,7 +355,7 @@
 
     if-lez p0, :cond_1
 
-    .line 179
+    .line 184
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSupportedApertures(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/util/List;
 
     move-result-object p0
@@ -331,34 +376,69 @@
 
     return-object p0
 
-    .line 181
+    .line 186
     :cond_1
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;->F2_0:Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
     return-object p0
 .end method
 
-.method public static getNextAperture(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/Aperture;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
-    .locals 0
+.method public static getNextAperture(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/Aperture;ZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
+    .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId",
+            "baseZoomRatio",
+            "currentAperture",
+            "isBokeh",
+            "videoStabilizer",
+            "videoMfHdr",
+            "isHfr"
+        }
+    .end annotation
 
-    .line 197
-    invoke-static {p0, p1, p2, p4, p5}, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)[Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move v2, p2
+
+    move v3, p4
+
+    move-object v4, p5
+
+    move-object v5, p6
+
+    move v6, p7
+
+    .line 202
+    invoke-static/range {v0 .. v6}, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)[Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
     move-result-object p0
 
-    .line 196
     invoke-static {p0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
 
-    .line 198
+    .line 204
     invoke-interface {p0, p3}, Ljava/util/List;->indexOf(Ljava/lang/Object;)I
 
     move-result p1
 
     add-int/lit8 p1, p1, 0x1
 
-    .line 200
+    .line 206
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result p2
@@ -367,7 +447,7 @@
 
     const/4 p1, 0x0
 
-    .line 203
+    .line 209
     :cond_0
     invoke-interface {p0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -378,16 +458,36 @@
     return-object p0
 .end method
 
-.method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)[Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
-    .locals 5
+.method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)[Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId",
+            "baseZoomRatio",
+            "isBokeh",
+            "videoStabilizer",
+            "videoMfHdr",
+            "isHfr"
+        }
+    .end annotation
 
-    .line 156
+    .line 159
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 157
-    invoke-static {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getFValueList(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljava/util/List;
+    .line 160
+    invoke-static/range {p0 .. p6}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getFValueList(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljava/util/List;
 
     move-result-object p0
 
@@ -395,12 +495,12 @@
 
     if-nez p0, :cond_0
 
-    .line 160
+    .line 163
     new-array p0, p1, [Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
     return-object p0
 
-    .line 163
+    .line 166
     :cond_0
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;->values()[Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
@@ -413,42 +513,42 @@
     :goto_0
     if-ge p4, p3, :cond_3
 
-    aget-object v1, p2, p4
+    aget-object p5, p2, p4
 
-    .line 164
+    .line 167
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
-    move-result-object v2
+    move-result-object p6
 
     :cond_1
     :goto_1
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {p6}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v3
+    move-result v1
 
-    if-eqz v3, :cond_2
+    if-eqz v1, :cond_2
 
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {p6}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v3
+    move-result-object v1
 
-    check-cast v3, Ljava/lang/Float;
+    check-cast v1, Ljava/lang/Float;
 
-    .line 165
-    iget v4, v1, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;->mConfigApertureValue:F
+    .line 168
+    iget v2, p5, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;->mConfigApertureValue:F
 
-    invoke-virtual {v3}, Ljava/lang/Float;->floatValue()F
+    invoke-virtual {v1}, Ljava/lang/Float;->floatValue()F
 
-    move-result v3
+    move-result v1
 
-    invoke-static {v4, v3}, Ljava/lang/Float;->compare(FF)I
+    invoke-static {v2, v1}, Ljava/lang/Float;->compare(FF)I
 
-    move-result v3
+    move-result v1
 
-    if-nez v3, :cond_1
+    if-nez v1, :cond_1
 
-    .line 166
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    .line 169
+    invoke-virtual {v0, p5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
@@ -457,7 +557,7 @@
 
     goto :goto_0
 
-    .line 170
+    .line 173
     :cond_3
     new-array p0, p1, [Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
@@ -472,6 +572,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 25
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
@@ -504,6 +612,14 @@
 # virtual methods
 .method public getApertureValue(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)F
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
     .line 135
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSupportedApertures(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/util/List;

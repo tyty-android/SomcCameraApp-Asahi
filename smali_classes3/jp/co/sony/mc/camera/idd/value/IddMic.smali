@@ -87,7 +87,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 253
+    .line 268
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddMic;
 
     const-string v1, "EXTERNAL"
@@ -161,7 +161,7 @@
         }
     .end annotation
 
-    .line 252
+    .line 267
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -192,7 +192,7 @@
 
     move-result-object p0
 
-    .line 262
+    .line 277
     check-cast p0, Ljp/co/sony/mc/camera/idd/value/IddMic;
 
     return-object p0
@@ -207,7 +207,7 @@
 
     move-result-object v0
 
-    .line 262
+    .line 277
     check-cast v0, [Ljp/co/sony/mc/camera/idd/value/IddMic;
 
     return-object v0

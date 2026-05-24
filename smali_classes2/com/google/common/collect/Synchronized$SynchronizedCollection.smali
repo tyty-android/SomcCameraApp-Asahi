@@ -36,9 +36,20 @@
 .method private constructor <init>(Ljava/util/Collection;Ljava/lang/Object;)V
     .locals 0
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "delegate",
+            "mutex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -49,7 +60,7 @@
         }
     .end annotation
 
-    .line 107
+    .line 123
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/Synchronized$SynchronizedObject;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     return-void
@@ -58,7 +69,7 @@
 .method synthetic constructor <init>(Ljava/util/Collection;Ljava/lang/Object;Lcom/google/common/collect/Synchronized$1;)V
     .locals 0
 
-    .line 105
+    .line 120
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/Synchronized$SynchronizedCollection;-><init>(Ljava/util/Collection;Ljava/lang/Object;)V
 
     return-void
@@ -68,18 +79,27 @@
 # virtual methods
 .method public add(Ljava/lang/Object;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)Z"
         }
     .end annotation
 
-    .line 118
+    .line 134
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 119
+    .line 135
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->delegate()Ljava/util/Collection;
 
@@ -96,7 +116,7 @@
     :catchall_0
     move-exception p0
 
-    .line 120
+    .line 136
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -106,6 +126,15 @@
 
 .method public addAll(Ljava/util/Collection;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -114,12 +143,12 @@
         }
     .end annotation
 
-    .line 125
+    .line 141
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 126
+    .line 142
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->delegate()Ljava/util/Collection;
 
@@ -136,7 +165,7 @@
     :catchall_0
     move-exception p0
 
-    .line 127
+    .line 143
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -147,12 +176,12 @@
 .method public clear()V
     .locals 1
 
-    .line 132
+    .line 148
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 133
+    .line 149
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->delegate()Ljava/util/Collection;
 
@@ -160,7 +189,7 @@
 
     invoke-interface {p0}, Ljava/util/Collection;->clear()V
 
-    .line 134
+    .line 150
     monitor-exit v0
 
     return-void
@@ -177,13 +206,25 @@
 
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 139
+    .line 155
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 140
+    .line 156
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->delegate()Ljava/util/Collection;
 
@@ -200,7 +241,7 @@
     :catchall_0
     move-exception p0
 
-    .line 141
+    .line 157
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -210,6 +251,15 @@
 
 .method public containsAll(Ljava/util/Collection;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -218,12 +268,12 @@
         }
     .end annotation
 
-    .line 146
+    .line 162
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 147
+    .line 163
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->delegate()Ljava/util/Collection;
 
@@ -240,7 +290,7 @@
     :catchall_0
     move-exception p0
 
-    .line 148
+    .line 164
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -251,7 +301,7 @@
 .method bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 104
+    .line 119
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->delegate()Ljava/util/Collection;
 
     move-result-object p0
@@ -269,7 +319,7 @@
         }
     .end annotation
 
-    .line 113
+    .line 129
     invoke-super {p0}, Lcom/google/common/collect/Synchronized$SynchronizedObject;->delegate()Ljava/lang/Object;
 
     move-result-object p0
@@ -282,12 +332,12 @@
 .method public isEmpty()Z
     .locals 1
 
-    .line 153
+    .line 169
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 154
+    .line 170
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->delegate()Ljava/util/Collection;
 
@@ -304,7 +354,7 @@
     :catchall_0
     move-exception p0
 
-    .line 155
+    .line 171
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -322,7 +372,7 @@
         }
     .end annotation
 
-    .line 160
+    .line 176
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->delegate()Ljava/util/Collection;
 
     move-result-object p0
@@ -336,13 +386,25 @@
 
 .method public remove(Ljava/lang/Object;)Z
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 165
+    .line 181
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 166
+    .line 182
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->delegate()Ljava/util/Collection;
 
@@ -359,7 +421,7 @@
     :catchall_0
     move-exception p0
 
-    .line 167
+    .line 183
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -369,6 +431,15 @@
 
 .method public removeAll(Ljava/util/Collection;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -377,12 +448,12 @@
         }
     .end annotation
 
-    .line 172
+    .line 188
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 173
+    .line 189
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->delegate()Ljava/util/Collection;
 
@@ -399,7 +470,7 @@
     :catchall_0
     move-exception p0
 
-    .line 174
+    .line 190
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -409,6 +480,15 @@
 
 .method public retainAll(Ljava/util/Collection;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -417,12 +497,12 @@
         }
     .end annotation
 
-    .line 179
+    .line 195
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 180
+    .line 196
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->delegate()Ljava/util/Collection;
 
@@ -439,7 +519,7 @@
     :catchall_0
     move-exception p0
 
-    .line 181
+    .line 197
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -450,12 +530,12 @@
 .method public size()I
     .locals 1
 
-    .line 186
+    .line 202
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 187
+    .line 203
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->delegate()Ljava/util/Collection;
 
@@ -472,7 +552,7 @@
     :catchall_0
     move-exception p0
 
-    .line 188
+    .line 204
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -483,12 +563,12 @@
 .method public toArray()[Ljava/lang/Object;
     .locals 1
 
-    .line 193
+    .line 209
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 194
+    .line 210
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->delegate()Ljava/util/Collection;
 
@@ -505,7 +585,7 @@
     :catchall_0
     move-exception p0
 
-    .line 195
+    .line 211
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -515,6 +595,15 @@
 
 .method public toArray([Ljava/lang/Object;)[Ljava/lang/Object;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "a"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -523,12 +612,12 @@
         }
     .end annotation
 
-    .line 200
+    .line 217
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 201
+    .line 218
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->delegate()Ljava/util/Collection;
 
@@ -545,7 +634,7 @@
     :catchall_0
     move-exception p0
 
-    .line 202
+    .line 219
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/cache/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<K:",
@@ -18,6 +21,17 @@
 
 # virtual methods
 .method public abstract weigh(Ljava/lang/Object;Ljava/lang/Object;)I
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV;)I"

@@ -35,6 +35,15 @@
 # direct methods
 .method constructor <init>(Ljava/util/Set;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "entries"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -44,7 +53,7 @@
         }
     .end annotation
 
-    .line 1341
+    .line 1557
     invoke-direct {p0, p1}, Lcom/google/common/collect/Maps$UnmodifiableEntries;-><init>(Ljava/util/Collection;)V
 
     return-void
@@ -55,11 +64,19 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 1348
+    .line 1564
     invoke-static {p0, p1}, Lcom/google/common/collect/Sets;->equalsImpl(Ljava/util/Set;Ljava/lang/Object;)Z
 
     move-result p0
@@ -70,7 +87,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 1353
+    .line 1569
     invoke-static {p0}, Lcom/google/common/collect/Sets;->hashCodeImpl(Ljava/util/Set;)I
 
     move-result p0

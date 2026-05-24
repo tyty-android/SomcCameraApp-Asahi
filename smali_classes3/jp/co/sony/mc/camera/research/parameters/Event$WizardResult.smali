@@ -50,7 +50,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;
     .locals 8
 
-    .line 282
+    .line 281
     sget-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;->YES:Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;
 
     sget-object v1, Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;->NO:Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;
@@ -77,7 +77,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 283
+    .line 282
     new-instance v0, Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;
 
     const-string v1, "YES"
@@ -88,7 +88,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;->YES:Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;
 
-    .line 284
+    .line 283
     new-instance v0, Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;
 
     const-string v1, "NO"
@@ -99,7 +99,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;->NO:Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;
 
-    .line 285
+    .line 284
     new-instance v0, Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;
 
     const-string v1, "GOT_IT"
@@ -110,7 +110,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;->GOT_IT:Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;
 
-    .line 286
+    .line 285
     new-instance v0, Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;
 
     const-string v1, "PREVIOUS"
@@ -121,7 +121,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;->PREVIOUS:Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;
 
-    .line 287
+    .line 286
     new-instance v0, Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;
 
     const-string v1, "NEXT"
@@ -132,7 +132,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;->NEXT:Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;
 
-    .line 288
+    .line 287
     new-instance v0, Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;
 
     const-string v1, "BACK_KEY"
@@ -143,7 +143,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;->BACK_KEY:Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;
 
-    .line 289
+    .line 288
     new-instance v0, Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;
 
     const-string v1, "SKIP"
@@ -154,7 +154,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;->SKIP:Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;
 
-    .line 290
+    .line 289
     new-instance v0, Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;
 
     const-string v1, "OTHER"
@@ -165,7 +165,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;->OTHER:Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;
 
-    .line 282
+    .line 281
     invoke-static {}, Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;->$values()[Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;
 
     move-result-object v0
@@ -177,13 +177,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 282
+    .line 281
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -191,8 +202,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 282
+    .line 281
     const-class v0, Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -207,7 +226,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;
     .locals 1
 
-    .line 282
+    .line 281
     sget-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;->$VALUES:[Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/research/parameters/Event$WizardResult;->clone()Ljava/lang/Object;

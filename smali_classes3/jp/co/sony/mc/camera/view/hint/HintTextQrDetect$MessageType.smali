@@ -184,7 +184,7 @@
 
     const v6, 0x800013
 
-    const v8, 0x7f08010d
+    const v8, 0x7f080168
 
     move-object v0, v12
 
@@ -215,7 +215,7 @@
 
     const v19, 0x800013
 
-    const v21, 0x7f08010d
+    const v21, 0x7f080168
 
     move-object v13, v0
 
@@ -238,7 +238,7 @@
 
     const/4 v3, 0x2
 
-    const v4, 0x7f110370
+    const v4, 0x7f1103bb
 
     const/4 v5, 0x0
 
@@ -246,7 +246,7 @@
 
     const v7, 0x800013
 
-    const v9, 0x7f08010d
+    const v9, 0x7f080168
 
     move-object v1, v0
 
@@ -267,7 +267,7 @@
 
     const/4 v15, 0x3
 
-    const v16, 0x7f110371
+    const v16, 0x7f1103bc
 
     const/16 v18, 0x1
 
@@ -290,7 +290,7 @@
 
     const/4 v3, 0x4
 
-    const v4, 0x7f110373
+    const v4, 0x7f1103be
 
     move-object v1, v0
 
@@ -310,6 +310,35 @@
 
 .method private constructor <init>(Ljava/lang/String;IILjava/lang/String;IILjp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;ILjp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;ZLjp/co/sony/mc/camera/view/hint/HintTextContent$DisplayLocation;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "messageResourceId",
+            "messageString",
+            "messageLines",
+            "messageGravity",
+            "wrapType",
+            "leftButtonResourceId",
+            "priority",
+            "isToast",
+            "displayLocation"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -359,6 +388,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 21
     const-class v0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;

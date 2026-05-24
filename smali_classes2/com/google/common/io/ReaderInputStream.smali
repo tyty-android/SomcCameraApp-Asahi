@@ -3,6 +3,11 @@
 .source "ReaderInputStream.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/io/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # instance fields
 .field private byteBuffer:Ljava/nio/ByteBuffer;
 
@@ -24,27 +29,39 @@
 # direct methods
 .method constructor <init>(Ljava/io/Reader;Ljava/nio/charset/Charset;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "reader",
+            "charset",
+            "bufferSize"
+        }
+    .end annotation
 
-    .line 85
+    .line 89
     invoke-virtual {p2}, Ljava/nio/charset/Charset;->newEncoder()Ljava/nio/charset/CharsetEncoder;
 
     move-result-object p2
 
     sget-object v0, Ljava/nio/charset/CodingErrorAction;->REPLACE:Ljava/nio/charset/CodingErrorAction;
 
-    .line 86
+    .line 90
     invoke-virtual {p2, v0}, Ljava/nio/charset/CharsetEncoder;->onMalformedInput(Ljava/nio/charset/CodingErrorAction;)Ljava/nio/charset/CharsetEncoder;
 
     move-result-object p2
 
     sget-object v0, Ljava/nio/charset/CodingErrorAction;->REPLACE:Ljava/nio/charset/CodingErrorAction;
 
-    .line 87
+    .line 91
     invoke-virtual {p2, v0}, Ljava/nio/charset/CharsetEncoder;->onUnmappableCharacter(Ljava/nio/charset/CodingErrorAction;)Ljava/nio/charset/CharsetEncoder;
 
     move-result-object p2
 
-    .line 82
+    .line 86
     invoke-direct {p0, p1, p2, p3}, Lcom/google/common/io/ReaderInputStream;-><init>(Ljava/io/Reader;Ljava/nio/charset/CharsetEncoder;I)V
 
     return-void
@@ -52,18 +69,30 @@
 
 .method constructor <init>(Ljava/io/Reader;Ljava/nio/charset/CharsetEncoder;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "reader",
+            "encoder",
+            "bufferSize"
+        }
+    .end annotation
 
-    .line 100
+    .line 104
     invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
 
     const/4 v0, 0x1
 
-    .line 50
+    .line 54
     new-array v1, v0, [B
 
     iput-object v1, p0, Lcom/google/common/io/ReaderInputStream;->singleByte:[B
 
-    .line 101
+    .line 105
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -72,7 +101,7 @@
 
     iput-object p1, p0, Lcom/google/common/io/ReaderInputStream;->reader:Ljava/io/Reader;
 
-    .line 102
+    .line 106
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -88,26 +117,26 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 103
+    .line 107
     :goto_0
     const-string p1, "bufferSize must be positive: %s"
 
     invoke-static {v0, p1, p3}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;I)V
 
-    .line 104
+    .line 108
     invoke-virtual {p2}, Ljava/nio/charset/CharsetEncoder;->reset()Ljava/nio/charset/CharsetEncoder;
 
-    .line 106
+    .line 110
     invoke-static {p3}, Ljava/nio/CharBuffer;->allocate(I)Ljava/nio/CharBuffer;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/google/common/io/ReaderInputStream;->charBuffer:Ljava/nio/CharBuffer;
 
-    .line 107
+    .line 111
     invoke-static {p1}, Lcom/google/common/io/Java8Compatibility;->flip(Ljava/nio/Buffer;)V
 
-    .line 109
+    .line 113
     invoke-static {p3}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
     move-result-object p1
@@ -119,8 +148,16 @@
 
 .method private static availableCapacity(Ljava/nio/Buffer;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "buffer"
+        }
+    .end annotation
 
-    .line 229
+    .line 233
     invoke-virtual {p0}, Ljava/nio/Buffer;->capacity()I
 
     move-result v0
@@ -136,8 +173,20 @@
 
 .method private drain([BII)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "b",
+            "off",
+            "len"
+        }
+    .end annotation
 
-    .line 251
+    .line 255
     iget-object v0, p0, Lcom/google/common/io/ReaderInputStream;->byteBuffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->remaining()I
@@ -148,7 +197,7 @@
 
     move-result p3
 
-    .line 252
+    .line 256
     iget-object p0, p0, Lcom/google/common/io/ReaderInputStream;->byteBuffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {p0, p1, p2, p3}, Ljava/nio/ByteBuffer;->get([BII)Ljava/nio/ByteBuffer;
@@ -158,8 +207,16 @@
 
 .method private static grow(Ljava/nio/CharBuffer;)Ljava/nio/CharBuffer;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "buf"
+        }
+    .end annotation
 
-    .line 190
+    .line 194
     invoke-virtual {p0}, Ljava/nio/CharBuffer;->array()[C
 
     move-result-object v0
@@ -174,19 +231,19 @@
 
     move-result-object v0
 
-    .line 191
+    .line 195
     invoke-static {v0}, Ljava/nio/CharBuffer;->wrap([C)Ljava/nio/CharBuffer;
 
     move-result-object v0
 
-    .line 192
+    .line 196
     invoke-virtual {p0}, Ljava/nio/CharBuffer;->position()I
 
     move-result v1
 
     invoke-static {v0, v1}, Lcom/google/common/io/Java8Compatibility;->position(Ljava/nio/Buffer;I)V
 
-    .line 193
+    .line 197
     invoke-virtual {p0}, Ljava/nio/CharBuffer;->limit()I
 
     move-result p0
@@ -204,7 +261,7 @@
         }
     .end annotation
 
-    .line 207
+    .line 211
     iget-object v0, p0, Lcom/google/common/io/ReaderInputStream;->charBuffer:Ljava/nio/CharBuffer;
 
     invoke-static {v0}, Lcom/google/common/io/ReaderInputStream;->availableCapacity(Ljava/nio/Buffer;)I
@@ -213,7 +270,7 @@
 
     if-nez v0, :cond_1
 
-    .line 208
+    .line 212
     iget-object v0, p0, Lcom/google/common/io/ReaderInputStream;->charBuffer:Ljava/nio/CharBuffer;
 
     invoke-virtual {v0}, Ljava/nio/CharBuffer;->position()I
@@ -222,7 +279,7 @@
 
     if-lez v0, :cond_0
 
-    .line 210
+    .line 214
     iget-object v0, p0, Lcom/google/common/io/ReaderInputStream;->charBuffer:Ljava/nio/CharBuffer;
 
     invoke-virtual {v0}, Ljava/nio/CharBuffer;->compact()Ljava/nio/CharBuffer;
@@ -233,7 +290,7 @@
 
     goto :goto_0
 
-    .line 213
+    .line 217
     :cond_0
     iget-object v0, p0, Lcom/google/common/io/ReaderInputStream;->charBuffer:Ljava/nio/CharBuffer;
 
@@ -243,7 +300,7 @@
 
     iput-object v0, p0, Lcom/google/common/io/ReaderInputStream;->charBuffer:Ljava/nio/CharBuffer;
 
-    .line 218
+    .line 222
     :cond_1
     :goto_0
     iget-object v0, p0, Lcom/google/common/io/ReaderInputStream;->charBuffer:Ljava/nio/CharBuffer;
@@ -252,7 +309,7 @@
 
     move-result v0
 
-    .line 219
+    .line 223
     iget-object v1, p0, Lcom/google/common/io/ReaderInputStream;->reader:Ljava/io/Reader;
 
     iget-object v2, p0, Lcom/google/common/io/ReaderInputStream;->charBuffer:Ljava/nio/CharBuffer;
@@ -277,12 +334,12 @@
 
     const/4 v0, 0x1
 
-    .line 221
+    .line 225
     iput-boolean v0, p0, Lcom/google/common/io/ReaderInputStream;->endOfInput:Z
 
     goto :goto_1
 
-    .line 223
+    .line 227
     :cond_2
     iget-object p0, p0, Lcom/google/common/io/ReaderInputStream;->charBuffer:Ljava/nio/CharBuffer;
 
@@ -296,15 +353,23 @@
 
 .method private startDraining(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "overflow"
+        }
+    .end annotation
 
-    .line 238
+    .line 242
     iget-object v0, p0, Lcom/google/common/io/ReaderInputStream;->byteBuffer:Ljava/nio/ByteBuffer;
 
     invoke-static {v0}, Lcom/google/common/io/Java8Compatibility;->flip(Ljava/nio/Buffer;)V
 
     if-eqz p1, :cond_0
 
-    .line 239
+    .line 243
     iget-object p1, p0, Lcom/google/common/io/ReaderInputStream;->byteBuffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->remaining()I
@@ -313,7 +378,7 @@
 
     if-nez p1, :cond_0
 
-    .line 240
+    .line 244
     iget-object p1, p0, Lcom/google/common/io/ReaderInputStream;->byteBuffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->capacity()I
@@ -333,7 +398,7 @@
     :cond_0
     const/4 p1, 0x1
 
-    .line 242
+    .line 246
     iput-boolean p1, p0, Lcom/google/common/io/ReaderInputStream;->draining:Z
 
     :goto_0
@@ -350,7 +415,7 @@
         }
     .end annotation
 
-    .line 114
+    .line 118
     iget-object p0, p0, Lcom/google/common/io/ReaderInputStream;->reader:Ljava/io/Reader;
 
     invoke-virtual {p0}, Ljava/io/Reader;->close()V
@@ -366,7 +431,7 @@
         }
     .end annotation
 
-    .line 119
+    .line 123
     iget-object v0, p0, Lcom/google/common/io/ReaderInputStream;->singleByte:[B
 
     invoke-virtual {p0, v0}, Lcom/google/common/io/ReaderInputStream;->read([B)I
@@ -398,6 +463,19 @@
 
 .method public read([BII)I
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "b",
+            "off",
+            "len"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -406,7 +484,7 @@
 
     add-int v0, p2, p3
 
-    .line 127
+    .line 131
     array-length v1, p1
 
     invoke-static {p2, v0, v1}, Lcom/google/common/base/Preconditions;->checkPositionIndexes(III)V
@@ -417,13 +495,13 @@
 
     return v0
 
-    .line 134
+    .line 138
     :cond_0
     iget-boolean v1, p0, Lcom/google/common/io/ReaderInputStream;->endOfInput:Z
 
     move v2, v0
 
-    .line 140
+    .line 144
     :goto_0
     iget-boolean v3, p0, Lcom/google/common/io/ReaderInputStream;->draining:Z
 
@@ -433,7 +511,7 @@
 
     sub-int v4, p3, v2
 
-    .line 141
+    .line 145
     invoke-direct {p0, p1, v3, v4}, Lcom/google/common/io/ReaderInputStream;->drain([BII)I
 
     move-result v3
@@ -442,18 +520,18 @@
 
     if-eq v2, p3, :cond_2
 
-    .line 142
+    .line 146
     iget-boolean v3, p0, Lcom/google/common/io/ReaderInputStream;->doneFlushing:Z
 
     if-eqz v3, :cond_1
 
     goto :goto_1
 
-    .line 145
+    .line 149
     :cond_1
     iput-boolean v0, p0, Lcom/google/common/io/ReaderInputStream;->draining:Z
 
-    .line 146
+    .line 150
     iget-object v3, p0, Lcom/google/common/io/ReaderInputStream;->byteBuffer:Ljava/nio/ByteBuffer;
 
     invoke-static {v3}, Lcom/google/common/io/Java8Compatibility;->clear(Ljava/nio/Buffer;)V
@@ -472,14 +550,14 @@
     :goto_2
     return v2
 
-    .line 153
+    .line 157
     :cond_4
     :goto_3
     iget-boolean v3, p0, Lcom/google/common/io/ReaderInputStream;->doneFlushing:Z
 
     if-eqz v3, :cond_5
 
-    .line 154
+    .line 158
     sget-object v3, Ljava/nio/charset/CoderResult;->UNDERFLOW:Ljava/nio/charset/CoderResult;
 
     goto :goto_4
@@ -487,7 +565,7 @@
     :cond_5
     if-eqz v1, :cond_6
 
-    .line 156
+    .line 160
     iget-object v3, p0, Lcom/google/common/io/ReaderInputStream;->encoder:Ljava/nio/charset/CharsetEncoder;
 
     iget-object v4, p0, Lcom/google/common/io/ReaderInputStream;->byteBuffer:Ljava/nio/ByteBuffer;
@@ -498,7 +576,7 @@
 
     goto :goto_4
 
-    .line 158
+    .line 162
     :cond_6
     iget-object v3, p0, Lcom/google/common/io/ReaderInputStream;->encoder:Ljava/nio/charset/CharsetEncoder;
 
@@ -512,7 +590,7 @@
 
     move-result-object v3
 
-    .line 161
+    .line 165
     :goto_4
     invoke-virtual {v3}, Ljava/nio/charset/CoderResult;->isOverflow()Z
 
@@ -522,12 +600,12 @@
 
     if-eqz v4, :cond_7
 
-    .line 163
+    .line 167
     invoke-direct {p0, v5}, Lcom/google/common/io/ReaderInputStream;->startDraining(Z)V
 
     goto :goto_0
 
-    .line 165
+    .line 169
     :cond_7
     invoke-virtual {v3}, Ljava/nio/charset/CoderResult;->isUnderflow()Z
 
@@ -537,15 +615,15 @@
 
     if-eqz v1, :cond_8
 
-    .line 171
+    .line 175
     iput-boolean v5, p0, Lcom/google/common/io/ReaderInputStream;->doneFlushing:Z
 
-    .line 172
+    .line 176
     invoke-direct {p0, v0}, Lcom/google/common/io/ReaderInputStream;->startDraining(Z)V
 
     goto :goto_0
 
-    .line 174
+    .line 178
     :cond_8
     iget-boolean v3, p0, Lcom/google/common/io/ReaderInputStream;->endOfInput:Z
 
@@ -555,13 +633,13 @@
 
     goto :goto_3
 
-    .line 177
+    .line 181
     :cond_9
     invoke-direct {p0}, Lcom/google/common/io/ReaderInputStream;->readMoreChars()V
 
     goto :goto_3
 
-    .line 179
+    .line 183
     :cond_a
     invoke-virtual {v3}, Ljava/nio/charset/CoderResult;->isError()Z
 
@@ -569,7 +647,7 @@
 
     if-eqz v4, :cond_4
 
-    .line 181
+    .line 185
     invoke-virtual {v3}, Ljava/nio/charset/CoderResult;->throwException()V
 
     return v0

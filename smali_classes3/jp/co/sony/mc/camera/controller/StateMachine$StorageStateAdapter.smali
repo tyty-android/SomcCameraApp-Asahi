@@ -65,13 +65,21 @@
 
 .method private constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 327
+    .line 315
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 328
+    .line 316
     new-instance p1, Ljava/util/HashMap;
 
     invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
@@ -92,14 +100,14 @@
 .method private resume()V
     .locals 1
 
-    .line 332
+    .line 320
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;->mStorageStateMap:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
 
     const/4 v0, 0x1
 
-    .line 334
+    .line 322
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;->updateGestureShutterState(Z)V
 
     return-void
@@ -107,8 +115,16 @@
 
 .method private updateGestureShutterState(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isStorageAvailable"
+        }
+    .end annotation
 
-    .line 361
+    .line 349
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmHandShutterController(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;
@@ -124,8 +140,18 @@
 # virtual methods
 .method public onStorageSizeChanged(Ljp/co/sony/mc/camera/storage/Storage$StorageType;J)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "availableSize"
+        }
+    .end annotation
 
-    .line 357
+    .line 345
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmStorageStatusNotifier(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/StorageStatusNotifierImpl;
@@ -139,12 +165,24 @@
 
 .method public declared-synchronized onStorageStateChanged(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/Storage$StorageState;Ljp/co/sony/mc/camera/storage/Storage$StorageReadyState;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "state",
+            "readyState"
+        }
+    .end annotation
 
     const-string v0, "invoke type:"
 
     monitor-enter p0
 
-    .line 340
+    .line 328
     :try_start_0
     sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
@@ -192,7 +230,7 @@
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 344
+    .line 332
     :cond_0
     sget-object v0, Ljp/co/sony/mc/camera/storage/Storage$StorageReadyState;->ACCESSIBLE:Ljp/co/sony/mc/camera/storage/Storage$StorageReadyState;
 
@@ -204,12 +242,12 @@
 
     if-eq p3, v0, :cond_1
 
-    .line 346
+    .line 334
     monitor-exit p0
 
     return-void
 
-    .line 349
+    .line 337
     :cond_1
     :try_start_1
     new-instance p3, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;
@@ -220,7 +258,7 @@
 
     move-result-object v0
 
-    .line 350
+    .line 338
     invoke-interface {v0}, Ljp/co/sony/mc/camera/storage/Storage;->areAllStoragesActivated()Z
 
     move-result v4
@@ -237,7 +275,7 @@
 
     invoke-direct/range {v0 .. v5}, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;-><init>(Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/Storage$StorageState;ZLjp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask-IA;)V
 
-    .line 352
+    .line 340
     invoke-static {}, Ljp/co/sony/mc/camera/CameraApplication;->getUiThreadHandler()Landroid/os/Handler;
 
     move-result-object p1
@@ -246,7 +284,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 353
+    .line 341
     monitor-exit p0
 
     return-void

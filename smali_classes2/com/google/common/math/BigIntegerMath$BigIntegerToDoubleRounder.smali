@@ -30,7 +30,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 339
+    .line 331
     new-instance v0, Lcom/google/common/math/BigIntegerMath$BigIntegerToDoubleRounder;
 
     invoke-direct {v0}, Lcom/google/common/math/BigIntegerMath$BigIntegerToDoubleRounder;-><init>()V
@@ -43,7 +43,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 341
+    .line 333
     invoke-direct {p0}, Lcom/google/common/math/ToDoubleRounder;-><init>()V
 
     return-void
@@ -53,8 +53,18 @@
 # virtual methods
 .method bridge synthetic minus(Ljava/lang/Number;Ljava/lang/Number;)Ljava/lang/Number;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "a",
+            "b"
+        }
+    .end annotation
 
-    .line 337
+    .line 329
     check-cast p1, Ljava/math/BigInteger;
 
     check-cast p2, Ljava/math/BigInteger;
@@ -68,8 +78,18 @@
 
 .method minus(Ljava/math/BigInteger;Ljava/math/BigInteger;)Ljava/math/BigInteger;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b"
+        }
+    .end annotation
 
-    .line 360
+    .line 352
     invoke-virtual {p1, p2}, Ljava/math/BigInteger;->subtract(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object p0
@@ -79,8 +99,16 @@
 
 .method bridge synthetic roundToDoubleArbitrarily(Ljava/lang/Number;)D
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "bigInteger"
+        }
+    .end annotation
 
-    .line 337
+    .line 329
     check-cast p1, Ljava/math/BigInteger;
 
     invoke-virtual {p0, p1}, Lcom/google/common/math/BigIntegerMath$BigIntegerToDoubleRounder;->roundToDoubleArbitrarily(Ljava/math/BigInteger;)D
@@ -92,8 +120,16 @@
 
 .method roundToDoubleArbitrarily(Ljava/math/BigInteger;)D
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bigInteger"
+        }
+    .end annotation
 
-    .line 345
+    .line 337
     invoke-static {p1}, Lcom/google/common/math/DoubleUtils;->bigToDouble(Ljava/math/BigInteger;)D
 
     move-result-wide p0
@@ -103,8 +139,16 @@
 
 .method bridge synthetic sign(Ljava/lang/Number;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "bigInteger"
+        }
+    .end annotation
 
-    .line 337
+    .line 329
     check-cast p1, Ljava/math/BigInteger;
 
     invoke-virtual {p0, p1}, Lcom/google/common/math/BigIntegerMath$BigIntegerToDoubleRounder;->sign(Ljava/math/BigInteger;)I
@@ -116,8 +160,16 @@
 
 .method sign(Ljava/math/BigInteger;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bigInteger"
+        }
+    .end annotation
 
-    .line 350
+    .line 342
     invoke-virtual {p1}, Ljava/math/BigInteger;->signum()I
 
     move-result p0
@@ -127,8 +179,18 @@
 
 .method bridge synthetic toX(DLjava/math/RoundingMode;)Ljava/lang/Number;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "d",
+            "mode"
+        }
+    .end annotation
 
-    .line 337
+    .line 329
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/common/math/BigIntegerMath$BigIntegerToDoubleRounder;->toX(DLjava/math/RoundingMode;)Ljava/math/BigInteger;
 
     move-result-object p0
@@ -138,8 +200,18 @@
 
 .method toX(DLjava/math/RoundingMode;)Ljava/math/BigInteger;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "d",
+            "mode"
+        }
+    .end annotation
 
-    .line 355
+    .line 347
     invoke-static {p1, p2, p3}, Lcom/google/common/math/DoubleMath;->roundToBigInteger(DLjava/math/RoundingMode;)Ljava/math/BigInteger;
 
     move-result-object p0

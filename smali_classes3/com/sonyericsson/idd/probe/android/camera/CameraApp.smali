@@ -6,6 +6,21 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppTouchOutsideEffectiveRange;,
+        Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppDigitalTripodAutoOff;,
+        Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppDigitalTripodDisabled;,
+        Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppBoxParameterModified;,
+        Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppAiSuggestionSubPreviewReset;,
+        Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppAiSuggestionParameterReset;,
+        Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppAiSuggestionParameterMenuClosed;,
+        Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppAiSuggestionReturnToDefault;,
+        Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppAiSuggestionSaveToBox;,
+        Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppAiSuggestionSelected;,
+        Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppAiSuggestionProvided;,
+        Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppTouchAfChanged;,
+        Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppZoomReset;,
+        Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeAndZoomChanged;,
+        Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppHwCameraKeyLongPress;,
         Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppAutoPowerOffNotification;,
         Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;,
         Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;,
@@ -58,6 +73,14 @@
 
 .method public static registerAllExtensions(Lcom/google/protobuf/ExtensionRegistryLite;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "registry"
+        }
+    .end annotation
 
     return-void
 .end method

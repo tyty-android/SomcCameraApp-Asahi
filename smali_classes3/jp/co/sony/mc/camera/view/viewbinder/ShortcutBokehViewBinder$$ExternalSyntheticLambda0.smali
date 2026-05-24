@@ -30,9 +30,9 @@
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ShortcutBokehViewBinder$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/ShortcutBokehViewBinder;
 
-    check-cast p1, Ljava/lang/Boolean;
+    check-cast p1, Ljava/lang/Integer;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ShortcutBokehViewBinder;->$r8$lambda$GYltmx1QkFKiJXxv-425tNTad_g(Ljp/co/sony/mc/camera/view/viewbinder/ShortcutBokehViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ShortcutBokehViewBinder;->$r8$lambda$ItAk4EyDT8_jvS7zMPGBFh6toFk(Ljp/co/sony/mc/camera/view/viewbinder/ShortcutBokehViewBinder;Ljava/lang/Integer;)Lkotlin/Unit;
 
     move-result-object p0
 

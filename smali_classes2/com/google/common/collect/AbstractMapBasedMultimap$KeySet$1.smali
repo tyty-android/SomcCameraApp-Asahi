@@ -36,7 +36,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -48,11 +48,27 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet;Ljava/util/Iterator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$1",
+            "val$entryIterator"
+        }
+    .end annotation
 
-    .line 913
-    iput-object p1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet$1;->this$1:Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
 
+    .line 947
     iput-object p2, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet$1;->val$entryIterator:Ljava/util/Iterator;
+
+    iput-object p1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet$1;->this$1:Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -64,7 +80,7 @@
 .method public hasNext()Z
     .locals 0
 
-    .line 918
+    .line 952
     iget-object p0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet$1;->val$entryIterator:Ljava/util/Iterator;
 
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
@@ -76,13 +92,16 @@
 
 .method public next()Ljava/lang/Object;
     .locals 1
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TK;"
         }
     .end annotation
 
-    .line 923
+    .line 958
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet$1;->val$entryIterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -93,7 +112,7 @@
 
     iput-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet$1;->entry:Ljava/util/Map$Entry;
 
-    .line 924
+    .line 959
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object p0
@@ -104,7 +123,7 @@
 .method public remove()V
     .locals 3
 
-    .line 929
+    .line 964
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet$1;->entry:Ljava/util/Map$Entry;
 
     if-eqz v0, :cond_0
@@ -117,9 +136,11 @@
     const/4 v0, 0x0
 
     :goto_0
-    invoke-static {v0}, Lcom/google/common/collect/CollectPreconditions;->checkRemove(Z)V
+    const-string v1, "no calls to next() since the last call to remove()"
 
-    .line 930
+    invoke-static {v0, v1}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
+
+    .line 965
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet$1;->entry:Ljava/util/Map$Entry;
 
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -128,12 +149,12 @@
 
     check-cast v0, Ljava/util/Collection;
 
-    .line 931
+    .line 966
     iget-object v1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet$1;->val$entryIterator:Ljava/util/Iterator;
 
     invoke-interface {v1}, Ljava/util/Iterator;->remove()V
 
-    .line 932
+    .line 967
     iget-object v1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet$1;->this$1:Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet;
 
     iget-object v1, v1, Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet;->this$0:Lcom/google/common/collect/AbstractMapBasedMultimap;
@@ -144,12 +165,12 @@
 
     invoke-static {v1, v2}, Lcom/google/common/collect/AbstractMapBasedMultimap;->access$220(Lcom/google/common/collect/AbstractMapBasedMultimap;I)I
 
-    .line 933
+    .line 968
     invoke-interface {v0}, Ljava/util/Collection;->clear()V
 
     const/4 v0, 0x0
 
-    .line 934
+    .line 969
     iput-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet$1;->entry:Ljava/util/Map$Entry;
 
     return-void

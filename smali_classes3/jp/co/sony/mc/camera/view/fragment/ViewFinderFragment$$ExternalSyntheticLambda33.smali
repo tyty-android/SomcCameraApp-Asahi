@@ -9,11 +9,9 @@
 # instance fields
 .field public final synthetic f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
-.field public final synthetic f$1:Landroid/view/View;
-
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Landroid/view/View;)V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;)V
     .locals 0
 
     .line 0
@@ -21,24 +19,20 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda33;->f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
-    iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda33;->f$1:Landroid/view/View;
-
     return-void
 .end method
 
 
 # virtual methods
 .method public final onChanged(Ljava/lang/Object;)V
-    .locals 1
+    .locals 0
 
     .line 0
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda33;->f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda33;->f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda33;->f$1:Landroid/view/View;
+    check-cast p1, Ljava/lang/Boolean;
 
-    check-cast p1, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
-
-    invoke-static {v0, p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->$r8$lambda$WsLFPw4mK66lJbNmgpyBCob6SdA(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Landroid/view/View;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->$r8$lambda$HPbxgkyZXeT_fOkwdPUpYnkI8IU(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Ljava/lang/Boolean;)V
 
     return-void
 .end method

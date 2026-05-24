@@ -92,7 +92,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 530
+    .line 532
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;
 
     const-string v1, "QUALITY_LOW"
@@ -103,7 +103,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;->QUALITY_LOW:Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;
 
-    .line 531
+    .line 533
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;
 
     const-string v1, "QUALITY_HIGH"
@@ -114,7 +114,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;->QUALITY_HIGH:Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;
 
-    .line 532
+    .line 534
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;
 
     const-string v1, "QUALITY_480P"
@@ -125,7 +125,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;->QUALITY_480P:Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;
 
-    .line 533
+    .line 535
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;
 
     const-string v1, "QUALITY_720P"
@@ -136,7 +136,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;->QUALITY_720P:Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;
 
-    .line 534
+    .line 536
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;
 
     const-string v1, "QUALITY_1080P"
@@ -180,7 +180,7 @@
         }
     .end annotation
 
-    .line 529
+    .line 531
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -211,7 +211,7 @@
 
     move-result-object p0
 
-    .line 546
+    .line 548
     check-cast p0, Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;
 
     return-object p0
@@ -226,7 +226,7 @@
 
     move-result-object v0
 
-    .line 546
+    .line 548
     check-cast v0, [Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;
 
     return-object v0

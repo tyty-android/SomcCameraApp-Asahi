@@ -14,6 +14,14 @@
 # direct methods
 .method constructor <init>(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isFlashRequired"
+        }
+    .end annotation
 
     .line 24
     const-string v0, "StatePhotoSnapshotPrepared"
@@ -28,6 +36,16 @@
 
 .method constructor <init>(ZI)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "isFlashRequired",
+            "burstType"
+        }
+    .end annotation
 
     .line 32
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoSnapshotPrepared;-><init>(Z)V
@@ -40,6 +58,18 @@
 
 .method constructor <init>(ZIZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "isFlashRequired",
+            "burstType",
+            "isAfLocked"
+        }
+    .end annotation
 
     .line 48
     invoke-direct {p0, p1, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoSnapshotPrepared;-><init>(ZI)V
@@ -52,6 +82,16 @@
 
 .method constructor <init>(ZZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "isFlashRequired",
+            "isAfLocked"
+        }
+    .end annotation
 
     .line 40
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoSnapshotPrepared;-><init>(Z)V
@@ -66,6 +106,16 @@
 # virtual methods
 .method public varargs handleCameraClose(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     const/4 p2, 0x1
 
@@ -84,6 +134,16 @@
 
 .method public varargs handleCancelPrepareSnapshot(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -129,6 +189,16 @@
 
 .method public varargs handleCapture(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -182,6 +252,16 @@
 
 .method public varargs handleCaptureBurst(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -285,18 +365,48 @@
 
 .method public varargs handleOnObjectTracked(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public varargs handleOnObjectTrackingLost(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public varargs handleOnRequestHistogramPreviewFrame(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     .line 199
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->copyCaptureRequestHolder()Ljp/co/sony/mc/camera/device/CaptureRequestHolder;
@@ -320,6 +430,16 @@
 
 .method public varargs handleOnRequestPreviewFrameProvider(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     .line 155
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
@@ -351,6 +471,16 @@
 
 .method public varargs handleStartFaceDetection(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     .line 208
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->setFaceDetectionResultChecker()Z
@@ -382,6 +512,16 @@
 
 .method public varargs handleStartObjectTracking(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     .line 166
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoSnapshotPrepared;->startObjectTracking(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
@@ -391,6 +531,16 @@
 
 .method public varargs handleStartPreview(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     .line 66
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoSnapshotPrepared;->repeatingRequest(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
@@ -400,6 +550,16 @@
 
 .method public varargs handleStopObjectTracking(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     .line 174
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoSnapshotPrepared;->stopObjectTracking(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
@@ -409,6 +569,16 @@
 
 .method public varargs handleUpdateRequest(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     .line 74
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoSnapshotPrepared;->repeatingRequest(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V

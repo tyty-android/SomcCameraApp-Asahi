@@ -53,7 +53,7 @@
     f = "AutoFramingUiState.kt"
     i = {}
     l = {
-        0x5e
+        0x60
     }
     m = "invokeSuspend"
     n = {}
@@ -167,7 +167,7 @@
 
     move-result-object v0
 
-    .line 93
+    .line 95
     iget v1, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$2;->label:I
 
     const/4 v2, 0x1
@@ -192,7 +192,7 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 94
+    .line 96
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$2;->this$0:Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;->access$getCameraSettingsModel$p(Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;)Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
@@ -229,7 +229,7 @@
 
     return-object v0
 
-    .line 101
+    .line 103
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

@@ -26,16 +26,16 @@
 .method constructor <init>(IIZ)V
     .locals 0
 
-    .line 800
+    .line 801
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 801
+    .line 802
     iput p1, p0, Ljp/co/sony/mc/camera/camera/DngCreator$ExposureData;->exposureMode:I
 
-    .line 802
+    .line 803
     iput p2, p0, Ljp/co/sony/mc/camera/camera/DngCreator$ExposureData;->flashMode:I
 
-    .line 803
+    .line 804
     iput-boolean p3, p0, Ljp/co/sony/mc/camera/camera/DngCreator$ExposureData;->isRedEye:Z
 
     return-void

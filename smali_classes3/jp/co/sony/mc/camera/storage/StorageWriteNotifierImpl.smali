@@ -25,6 +25,20 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/storage/Storage;Ljp/co/sony/mc/camera/storage/Storage$StorageType;ILjp/co/sony/mc/camera/storage/StorageController;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "storage",
+            "type",
+            "intervalCount",
+            "controller"
+        }
+    .end annotation
 
     .line 62
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

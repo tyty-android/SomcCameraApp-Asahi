@@ -29,6 +29,14 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/hint/HintTextViewController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 587
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;->this$0:Ljp/co/sony/mc/camera/view/hint/HintTextViewController;
@@ -84,6 +92,14 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "msg"
+        }
+    .end annotation
 
     .line 617
     iget v0, p1, Landroid/os/Message;->what:I
@@ -150,6 +166,18 @@
 
 .method public startFadeOut(JILjp/co/sony/mc/camera/view/hint/HintTextContent;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "delayMillis",
+            "fadeOutDurationMillis",
+            "content"
+        }
+    .end annotation
 
     .line 600
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;->cancelCount()V
@@ -178,6 +206,16 @@
 
 .method public startTimeoutCount(JLjp/co/sony/mc/camera/view/hint/HintTextContent;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "time",
+            "content"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 

@@ -32,6 +32,16 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "attrs"
+        }
+    .end annotation
 
     .line 40
     invoke-direct {p0, p1, p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -46,6 +56,14 @@
 
 .method private drawArc(Landroid/graphics/Canvas;)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "canvas"
+        }
+    .end annotation
 
     .line 82
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/sidetouch/SideTouchCountDownCircleView;->mValueAnimator:Landroid/animation/ValueAnimator;
@@ -122,6 +140,14 @@
 
 .method private getRotateDuration(Ljp/co/sony/mc/camera/setting/SelfTimerInterface;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "selftimer"
+        }
+    .end annotation
 
     .line 71
     invoke-interface {p1}, Ljp/co/sony/mc/camera/setting/SelfTimerInterface;->getDurationInMillisecond()I
@@ -189,7 +215,7 @@
 
     move-result-object p0
 
-    const v1, 0x7f060431
+    const v1, 0x7f060415
 
     const/4 v2, 0x0
 
@@ -204,6 +230,14 @@
 
 .method private setAnimator(Ljp/co/sony/mc/camera/setting/SelfTimerInterface;)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "selftimer"
+        }
+    .end annotation
 
     .line 52
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/sidetouch/SideTouchCountDownCircleView;->init()V
@@ -319,6 +353,14 @@
 
 .method public onDraw(Landroid/graphics/Canvas;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "canvas"
+        }
+    .end annotation
 
     .line 65
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
@@ -331,6 +373,14 @@
 
 .method public setSelfTimer(Ljp/co/sony/mc/camera/setting/SelfTimerInterface;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "selfTimer"
+        }
+    .end annotation
 
     .line 100
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/sidetouch/SideTouchCountDownCircleView;->setAnimator(Ljp/co/sony/mc/camera/setting/SelfTimerInterface;)V

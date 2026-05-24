@@ -102,6 +102,18 @@
 
 .method public constructor <init>(Landroid/os/Handler;Ljp/co/sony/mc/camera/recorder/utility/ReferenceClock$TickCallback;J)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "tickHandler",
+            "tickEvent",
+            "tickIntervalMillis"
+        }
+    .end annotation
 
     .line 50
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -173,6 +185,14 @@
 
 .method private computeElapsedTime(J)J
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "now"
+        }
+    .end annotation
 
     .line 132
     monitor-enter p0
@@ -204,6 +224,14 @@
 
 .method private computeElapsedTimeSinceInitialTime(J)J
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "now"
+        }
+    .end annotation
 
     .line 138
     monitor-enter p0
@@ -255,6 +283,14 @@
 
 .method private scheduleNextTickEvent(J)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "now"
+        }
+    .end annotation
 
     .line 148
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/utility/ReferenceClock;->mTickHandler:Landroid/os/Handler;
@@ -391,6 +427,14 @@
 
 .method public reset(J)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elapsedTimeMillis"
+        }
+    .end annotation
 
     .line 105
     invoke-direct {p0}, Ljp/co/sony/mc/camera/recorder/utility/ReferenceClock;->now()J

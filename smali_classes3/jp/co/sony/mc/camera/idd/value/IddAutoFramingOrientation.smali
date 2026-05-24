@@ -53,12 +53,12 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 588
+    .line 633
     check-cast p1, Ljava/lang/Enum;
 
     const/4 v0, 0x0
 
-    .line 587
+    .line 632
     invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/idd/value/IddUserSettingEnumValue;-><init>(Ljava/lang/Enum;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void

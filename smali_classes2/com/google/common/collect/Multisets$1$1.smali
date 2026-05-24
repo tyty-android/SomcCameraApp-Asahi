@@ -33,13 +33,25 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/Multisets$1;Ljava/util/Iterator;Ljava/util/Iterator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$iterator1",
+            "val$iterator2"
+        }
+    .end annotation
 
-    .line 411
-    iput-object p1, p0, Lcom/google/common/collect/Multisets$1$1;->this$0:Lcom/google/common/collect/Multisets$1;
-
+    .line 452
     iput-object p2, p0, Lcom/google/common/collect/Multisets$1$1;->val$iterator1:Ljava/util/Iterator;
 
     iput-object p3, p0, Lcom/google/common/collect/Multisets$1$1;->val$iterator2:Ljava/util/Iterator;
+
+    iput-object p1, p0, Lcom/google/common/collect/Multisets$1$1;->this$0:Lcom/google/common/collect/Multisets$1;
 
     invoke-direct {p0}, Lcom/google/common/collect/AbstractIterator;-><init>()V
 
@@ -58,7 +70,10 @@
         }
     .end annotation
 
-    .line 414
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 456
     iget-object v0, p0, Lcom/google/common/collect/Multisets$1$1;->val$iterator1:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -67,7 +82,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 415
+    .line 457
     iget-object v0, p0, Lcom/google/common/collect/Multisets$1$1;->val$iterator1:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -76,12 +91,12 @@
 
     check-cast v0, Lcom/google/common/collect/Multiset$Entry;
 
-    .line 416
+    .line 458
     invoke-interface {v0}, Lcom/google/common/collect/Multiset$Entry;->getElement()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 417
+    .line 459
     invoke-interface {v0}, Lcom/google/common/collect/Multiset$Entry;->getCount()I
 
     move-result v0
@@ -98,14 +113,14 @@
 
     move-result p0
 
-    .line 418
+    .line 460
     invoke-static {v1, p0}, Lcom/google/common/collect/Multisets;->immutableEntry(Ljava/lang/Object;I)Lcom/google/common/collect/Multiset$Entry;
 
     move-result-object p0
 
     return-object p0
 
-    .line 420
+    .line 462
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/Multisets$1$1;->val$iterator2:Ljava/util/Iterator;
 
@@ -115,7 +130,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 421
+    .line 463
     iget-object v0, p0, Lcom/google/common/collect/Multisets$1$1;->val$iterator2:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -124,12 +139,12 @@
 
     check-cast v0, Lcom/google/common/collect/Multiset$Entry;
 
-    .line 422
+    .line 464
     invoke-interface {v0}, Lcom/google/common/collect/Multiset$Entry;->getElement()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 423
+    .line 465
     iget-object v2, p0, Lcom/google/common/collect/Multisets$1$1;->this$0:Lcom/google/common/collect/Multisets$1;
 
     iget-object v2, v2, Lcom/google/common/collect/Multisets$1;->val$multiset1:Lcom/google/common/collect/Multiset;
@@ -140,7 +155,7 @@
 
     if-nez v2, :cond_0
 
-    .line 424
+    .line 466
     invoke-interface {v0}, Lcom/google/common/collect/Multiset$Entry;->getCount()I
 
     move-result p0
@@ -151,7 +166,7 @@
 
     return-object p0
 
-    .line 427
+    .line 469
     :cond_1
     invoke-virtual {p0}, Lcom/google/common/collect/Multisets$1$1;->endOfData()Ljava/lang/Object;
 
@@ -164,8 +179,10 @@
 
 .method protected bridge synthetic computeNext()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 
-    .line 411
+    .line 452
     invoke-virtual {p0}, Lcom/google/common/collect/Multisets$1$1;->computeNext()Lcom/google/common/collect/Multiset$Entry;
 
     move-result-object p0

@@ -4,6 +4,118 @@
 
 
 # static fields
+.field public static final SONYMOBILE_AI_SUGGESTION_COLOR_TONE_PROFILE_01:I = 0x1
+
+.field public static final SONYMOBILE_AI_SUGGESTION_COLOR_TONE_PROFILE_02:I = 0x2
+
+.field public static final SONYMOBILE_AI_SUGGESTION_COLOR_TONE_PROFILE_03:I = 0x3
+
+.field public static final SONYMOBILE_AI_SUGGESTION_COLOR_TONE_PROFILE_04:I = 0x4
+
+.field public static final SONYMOBILE_AI_SUGGESTION_COLOR_TONE_PROFILE_05:I = 0x5
+
+.field public static final SONYMOBILE_AI_SUGGESTION_COLOR_TONE_PROFILE_06:I = 0x6
+
+.field public static final SONYMOBILE_AI_SUGGESTION_COLOR_TONE_PROFILE_07:I = 0x7
+
+.field public static final SONYMOBILE_AI_SUGGESTION_COLOR_TONE_PROFILE_08:I = 0x8
+
+.field public static final SONYMOBILE_AI_SUGGESTION_COLOR_TONE_PROFILE_09:I = 0x9
+
+.field public static final SONYMOBILE_AI_SUGGESTION_COLOR_TONE_PROFILE_10:I = 0xa
+
+.field public static final SONYMOBILE_AI_SUGGESTION_COLOR_TONE_PROFILE_11:I = 0xb
+
+.field public static final SONYMOBILE_AI_SUGGESTION_COLOR_TONE_PROFILE_OFF:I = 0x0
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_00:I = 0x0
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_01:I = 0x1
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_02:I = 0x2
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_03:I = 0x3
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_04:I = 0x4
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_05:I = 0x5
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_06:I = 0x6
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_07:I = 0x7
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_08:I = 0x8
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_09:I = 0x9
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_10:I = 0xa
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_11:I = 0xb
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_12:I = 0xc
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_13:I = 0xd
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_14:I = 0xe
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_15:I = 0xf
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_16:I = 0x10
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_17:I = 0x11
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_18:I = 0x12
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_19:I = 0x13
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_20:I = 0x14
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_21:I = 0x15
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_22:I = 0x16
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_23:I = 0x17
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_24:I = 0x18
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_25:I = 0x19
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_26:I = 0x1a
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_27:I = 0x1b
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_28:I = 0x1c
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_29:I = 0x1d
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_30:I = 0x1e
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_31:I = 0x1f
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION1_32:I = 0x20
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION2_00:I = 0x0
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION2_01:I = 0x1
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION2_02:I = 0x2
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION2_03:I = 0x3
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION2_04:I = 0x4
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION2_05:I = 0x5
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION2_06:I = 0x6
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION2_07:I = 0x7
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION3_00:I = 0x0
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION3_01:I = 0x1
+
+.field public static final SONYMOBILE_AI_SUGGESTION_SITUATION3_02:I = 0x2
+
 .field public static final SONYMOBILE_CALIBRATION_COMMAND_TRIGGER_CANCEL:I = 0x1
 
 .field public static final SONYMOBILE_CALIBRATION_COMMAND_TRIGGER_IDLE:I = 0x0
@@ -130,6 +242,12 @@
 
 .field public static final SONYMOBILE_CONTROL_AF_REGION_MODE_USE_REGIONS:I = 0x3
 
+.field public static final SONYMOBILE_CONTROL_AI_SUGGESTION_MODE_OFF:I = 0x0
+
+.field public static final SONYMOBILE_CONTROL_AI_SUGGESTION_MODE_ON_FULL_AUTO:I = 0x1
+
+.field public static final SONYMOBILE_CONTROL_AI_SUGGESTION_MODE_ON_SCENE_AUTO:I = 0x2
+
 .field public static final SONYMOBILE_CONTROL_AUTO_FRAMING_ORIENTATION_LANDSCAPE:I = 0x1
 
 .field public static final SONYMOBILE_CONTROL_AUTO_FRAMING_ORIENTATION_PORTRAIT:I = 0x0
@@ -198,6 +316,18 @@
 
 .field public static final SONYMOBILE_CONTROL_COLOR_TONE_PROFILE_OFF:I = 0x0
 
+.field public static final SONYMOBILE_CONTROL_DIGITAL_TRIPOD_CROPPED_POSITION_AT_EDGE:I = 0x2
+
+.field public static final SONYMOBILE_CONTROL_DIGITAL_TRIPOD_CROPPED_POSITION_NEAR_CENTER:I = 0x0
+
+.field public static final SONYMOBILE_CONTROL_DIGITAL_TRIPOD_CROPPED_POSITION_NEAR_EDGE:I = 0x1
+
+.field public static final SONYMOBILE_CONTROL_DIGITAL_TRIPOD_CROPPED_POSITION_OVER_EDGE:I = 0x3
+
+.field public static final SONYMOBILE_CONTROL_DIGITAL_TRIPOD_INDICATOR_MODE_OFF:I = 0x0
+
+.field public static final SONYMOBILE_CONTROL_DIGITAL_TRIPOD_INDICATOR_MODE_ON:I = 0x1
+
 .field public static final SONYMOBILE_CONTROL_DISTORTION_CORRECTION_MODE_OFF:I = 0x0
 
 .field public static final SONYMOBILE_CONTROL_DISTORTION_CORRECTION_MODE_ON:I = 0x1
@@ -213,6 +343,8 @@
 .field public static final SONYMOBILE_CONTROL_FRAMING_ASSIST_OBJECT_POSITION_MODE_LOCKING:I = 0x1
 
 .field public static final SONYMOBILE_CONTROL_FRAMING_MODE_AUTO_FRAMING:I = 0x1
+
+.field public static final SONYMOBILE_CONTROL_FRAMING_MODE_DIGITAL_TRIPOD:I = 0x4
 
 .field public static final SONYMOBILE_CONTROL_FRAMING_MODE_FRAMING_ASSIST:I = 0x2
 

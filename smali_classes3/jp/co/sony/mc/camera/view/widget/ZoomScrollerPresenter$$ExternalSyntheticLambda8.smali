@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnTouchListener;
+.implements Lkotlin/jvm/functions/Function2;
 
 
 # direct methods
@@ -18,13 +18,25 @@
 
 
 # virtual methods
-.method public final onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
-    invoke-static {p1, p2}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->$r8$lambda$--zv5agkQy2UgjunGhxVuwTKEuM(Landroid/view/View;Landroid/view/MotionEvent;)Z
+    check-cast p1, Ljava/lang/Boolean;
+
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p0
 
-    return p0
+    check-cast p2, Ljava/lang/Integer;
+
+    invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
+
+    move-result p1
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->$r8$lambda$4cYzX0TaGi6zy0USsvg8E3FhinY(ZI)Lkotlin/Pair;
+
+    move-result-object p0
+
+    return-object p0
 .end method

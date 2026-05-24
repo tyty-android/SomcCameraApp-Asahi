@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/sub_preview_layout" android:tag="layout/ai_suggestion_sub_preview_item_0" android:background="@drawable/camera_ai_suggestion_sub_preview_border_background" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/ai_suggestion_sub_preview_layout_margin" android:elevation="0.0dip" app:cardCornerRadius="4.0dip">
+        <jp.co.sony.mc.camera.view.widget.PreviewTextureView android:id="@id/sub_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/sub_cover_view" android:background="@color/ai_suggestion_sub_preview_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+        <ImageView android:layout_gravity="center" android:id="@id/sub_preview_selected_image_port" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_aisuggestion_subview_check_mark_icn" />
+        <ImageView android:layout_gravity="center" android:id="@id/sub_preview_selected_image_land" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_aisuggestion_subview_check_mark_icn" android:rotation="90.0" />
+        <ImageView android:layout_gravity="center" android:id="@id/sub_preview_selected_image_reverse_land" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_aisuggestion_subview_check_mark_icn" android:rotation="270.0" />
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

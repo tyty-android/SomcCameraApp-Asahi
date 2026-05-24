@@ -46,6 +46,16 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "verticalDividerPadding"
+        }
+    .end annotation
 
     .line 145
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$ItemDecoration;-><init>()V
@@ -95,6 +105,16 @@
 
 .method private drawHorizontal(Landroid/graphics/Canvas;Landroidx/recyclerview/widget/RecyclerView;)V
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "c",
+            "parent"
+        }
+    .end annotation
 
     .line 170
     invoke-virtual {p2}, Landroidx/recyclerview/widget/RecyclerView;->getChildCount()I
@@ -210,6 +230,16 @@
 
 .method private drawVertical(Landroid/graphics/Canvas;Landroidx/recyclerview/widget/RecyclerView;)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "c",
+            "parent"
+        }
+    .end annotation
 
     .line 193
     invoke-virtual {p2}, Landroidx/recyclerview/widget/RecyclerView;->getChildCount()I
@@ -305,6 +335,14 @@
 
 .method private getSpanCount(Landroidx/recyclerview/widget/RecyclerView;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "parent"
+        }
+    .end annotation
 
     .line 162
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
@@ -334,6 +372,18 @@
 
 .method private isLastColumn(Landroidx/recyclerview/widget/RecyclerView;II)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "parent",
+            "pos",
+            "spanCount"
+        }
+    .end annotation
 
     .line 213
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
@@ -364,6 +414,20 @@
 
 .method private isLastRaw(Landroidx/recyclerview/widget/RecyclerView;III)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "parent",
+            "pos",
+            "spanCount",
+            "childCount"
+        }
+    .end annotation
 
     .line 223
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
@@ -404,6 +468,20 @@
 # virtual methods
 .method public getItemOffsets(Landroid/graphics/Rect;Landroid/view/View;Landroidx/recyclerview/widget/RecyclerView;Landroidx/recyclerview/widget/RecyclerView$State;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "outRect",
+            "view",
+            "parent",
+            "state"
+        }
+    .end annotation
 
     .line 239
     iget p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/FnItemAdapter$DividerGridItemDecoration;->mDividerIntrinsicHeight:I
@@ -419,6 +497,18 @@
 
 .method public onDraw(Landroid/graphics/Canvas;Landroidx/recyclerview/widget/RecyclerView;Landroidx/recyclerview/widget/RecyclerView$State;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "c",
+            "parent",
+            "state"
+        }
+    .end annotation
 
     .line 156
     invoke-direct {p0, p1, p2}, Ljp/co/sony/mc/camera/view/setting/fragment/FnItemAdapter$DividerGridItemDecoration;->drawHorizontal(Landroid/graphics/Canvas;Landroidx/recyclerview/widget/RecyclerView;)V

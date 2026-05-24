@@ -30,7 +30,7 @@
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView$$ExternalSyntheticLambda4;->f$0:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->$r8$lambda$dc1NYTtHH_DN-vOHuNkSQzkXgpE(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Landroid/view/View;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->$r8$lambda$QWRJHPE_bEM-t-jWf62t-najjsk(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Landroid/view/View;)V
 
     return-void
 .end method

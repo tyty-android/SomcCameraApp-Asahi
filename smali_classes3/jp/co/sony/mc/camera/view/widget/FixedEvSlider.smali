@@ -122,7 +122,7 @@
 
     if-eqz p4, :cond_1
 
-    const p3, 0x7f0403fe
+    const p3, 0x7f040404
 
     .line 160
     :cond_1

@@ -146,6 +146,21 @@
 
 .method private constructor <init>(Ljava/lang/String;ILjava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "api1",
+            "api2"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -168,6 +183,16 @@
 
 .method static getApi2Value(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljava/lang/String;)I
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "cameraId",
+            "api1Value"
+        }
+    .end annotation
 
     .line 131
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$FocusArea;->AUTO:Ljp/co/sony/mc/camera/device/CameraParameterConverter$FocusArea;
@@ -244,6 +269,14 @@
 
 .method private static isMultiAutoFocusSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
     .line 147
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isMultiAutoFocusSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
@@ -255,6 +288,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/device/CameraParameterConverter$FocusArea;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 109
     const-class v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$FocusArea;

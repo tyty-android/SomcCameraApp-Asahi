@@ -60,7 +60,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 223
+    .line 208
     invoke-virtual {p1}, Landroidx/databinding/ViewDataBinding;->getRoot()Landroid/view/View;
 
     move-result-object v0
@@ -77,7 +77,7 @@
 .method public final getBinding()Landroidx/databinding/ViewDataBinding;
     .locals 0
 
-    .line 223
+    .line 208
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$ViewHolder;->binding:Landroidx/databinding/ViewDataBinding;
 
     return-object p0

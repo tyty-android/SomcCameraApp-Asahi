@@ -38,11 +38,19 @@
 # direct methods
 .method constructor <init>(I)V
     .locals 1
-
-    .line 215
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "expectedValuesPerKey"
+        }
+    .end annotation
 
     .line 216
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 217
     const-string v0, "expectedValuesPerKey"
 
     invoke-static {p1, v0}, Lcom/google/common/collect/CollectPreconditions;->checkNonnegative(ILjava/lang/String;)I
@@ -77,7 +85,7 @@
         }
     .end annotation
 
-    .line 221
+    .line 222
     iget p0, p0, Lcom/google/common/collect/MultimapBuilder$HashSetSupplier;->expectedValuesPerKey:I
 
     invoke-static {p0}, Lcom/google/common/collect/Platform;->newHashSetWithExpectedSize(I)Ljava/util/Set;

@@ -38,8 +38,27 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$PXRRP_NYxQ7IKAyO13H8YX2p-q0(Ljava/util/Map$Entry;)Lcom/google/common/reflect/MutableTypeToInstanceMap$UnmodifiableEntry;
+    .locals 1
+
+    new-instance v0, Lcom/google/common/reflect/MutableTypeToInstanceMap$UnmodifiableEntry;
+
+    invoke-direct {v0, p0}, Lcom/google/common/reflect/MutableTypeToInstanceMap$UnmodifiableEntry;-><init>(Ljava/util/Map$Entry;)V
+
+    return-object v0
+.end method
+
 .method private constructor <init>(Ljava/util/Map$Entry;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "delegate"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -48,10 +67,10 @@
         }
     .end annotation
 
-    .line 159
+    .line 167
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingMapEntry;-><init>()V
 
-    .line 160
+    .line 168
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -63,19 +82,10 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Ljava/util/Map$Entry;Lcom/google/common/reflect/MutableTypeToInstanceMap$1;)V
-    .locals 0
-
-    .line 120
-    invoke-direct {p0, p1}, Lcom/google/common/reflect/MutableTypeToInstanceMap$UnmodifiableEntry;-><init>(Ljava/util/Map$Entry;)V
-
-    return-void
-.end method
-
 .method static synthetic access$000(Ljava/util/Iterator;)Ljava/util/Iterator;
     .locals 0
 
-    .line 120
+    .line 123
     invoke-static {p0}, Lcom/google/common/reflect/MutableTypeToInstanceMap$UnmodifiableEntry;->transformEntries(Ljava/util/Iterator;)Ljava/util/Iterator;
 
     move-result-object p0
@@ -85,6 +95,15 @@
 
 .method private static transformEntries(Ljava/util/Iterator;)Ljava/util/Iterator;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "entries"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -101,10 +120,10 @@
         }
     .end annotation
 
-    .line 149
-    new-instance v0, Lcom/google/common/reflect/MutableTypeToInstanceMap$UnmodifiableEntry$2;
+    .line 164
+    new-instance v0, Lcom/google/common/reflect/MutableTypeToInstanceMap$UnmodifiableEntry$$ExternalSyntheticLambda0;
 
-    invoke-direct {v0}, Lcom/google/common/reflect/MutableTypeToInstanceMap$UnmodifiableEntry$2;-><init>()V
+    invoke-direct {v0}, Lcom/google/common/reflect/MutableTypeToInstanceMap$UnmodifiableEntry$$ExternalSyntheticLambda0;-><init>()V
 
     invoke-static {p0, v0}, Lcom/google/common/collect/Iterators;->transform(Ljava/util/Iterator;Lcom/google/common/base/Function;)Ljava/util/Iterator;
 
@@ -115,6 +134,15 @@
 
 .method static transformEntries(Ljava/util/Set;)Ljava/util/Set;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "entries"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -131,7 +159,7 @@
         }
     .end annotation
 
-    .line 125
+    .line 130
     new-instance v0, Lcom/google/common/reflect/MutableTypeToInstanceMap$UnmodifiableEntry$1;
 
     invoke-direct {v0, p0}, Lcom/google/common/reflect/MutableTypeToInstanceMap$UnmodifiableEntry$1;-><init>(Ljava/util/Set;)V
@@ -144,7 +172,7 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 120
+    .line 123
     invoke-virtual {p0}, Lcom/google/common/reflect/MutableTypeToInstanceMap$UnmodifiableEntry;->delegate()Ljava/util/Map$Entry;
 
     move-result-object p0
@@ -162,7 +190,7 @@
         }
     .end annotation
 
-    .line 165
+    .line 173
     iget-object p0, p0, Lcom/google/common/reflect/MutableTypeToInstanceMap$UnmodifiableEntry;->delegate:Ljava/util/Map$Entry;
 
     return-object p0
@@ -170,13 +198,29 @@
 
 .method public setValue(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/reflect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation runtime Lcom/google/common/reflect/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TV;)TV;"
         }
     .end annotation
 
-    .line 170
+    .line 179
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V

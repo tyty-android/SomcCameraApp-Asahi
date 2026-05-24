@@ -16,6 +16,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/util/capability/ResolutionOptions;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     .line 19
     const-string v0, ""

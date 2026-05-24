@@ -28,7 +28,15 @@
 
 .field public static final AE_REGION_WEIGHT:I = 0x1
 
+.field public static final AI_SUGGESTION_MODE_OFF:Ljava/lang/String; = "off"
+
+.field public static final AI_SUGGESTION_MODE_ON_FULL_AUTO:Ljava/lang/String; = "on_full_auto"
+
+.field public static final AI_SUGGESTION_MODE_ON_SCENE_AUTO:Ljava/lang/String; = "on_scene_auto"
+
 .field public static final AUTO_FRAMING_MODE_AUTO_FRAMING:Ljava/lang/String; = "auto-framing"
+
+.field public static final AUTO_FRAMING_MODE_DIGITAL_TRIPOD_FRAMING:Ljava/lang/String; = "digital-tripod-framing"
 
 .field public static final AUTO_FRAMING_MODE_FRAMING_ASSIST:Ljava/lang/String; = "framing-assist"
 
@@ -78,6 +86,8 @@
 
 .field public static final COLOR_TONE_PROFILE_S_CINETONE:Ljava/lang/String; = "s-cinetone"
 
+.field public static final COLOR_TONE_PROFILE_UN_ASSIGNED:Ljava/lang/String; = "un_assigned"
+
 .field public static final COLOR_TONE_PROFILE_VV:Ljava/lang/String; = "vv"
 
 .field public static final COLOR_TONE_PROFILE_VV2:Ljava/lang/String; = "vv2"
@@ -89,6 +99,10 @@
 .field private static final DEFAULT_AF_AREA:Ljava/lang/String; = "center"
 
 .field private static final DEFAULT_AF_MODE:Ljava/lang/String; = "auto"
+
+.field private static final DEFAULT_AI_SUGGESTION_IQ_PARAMETER_INDEX:I = 0x0
+
+.field private static final DEFAULT_AI_SUGGESTION_MODE:Ljava/lang/String; = "off"
 
 .field private static final DEFAULT_AUTO_FRAMING_MODE:Ljava/lang/String; = "off"
 
@@ -112,7 +126,7 @@
 
 .field private static final DEFAULT_COLOR_TONE_PROFILE:Ljava/lang/String; = "off"
 
-.field private static final DEFAULT_CONTROL_FPS:F = 0.0f
+.field private static final DEFAULT_CONTRAST_SCALE_FACTOR:I = 0x0
 
 .field private static final DEFAULT_DISTORTION_CORRECTION:Ljava/lang/String; = "off"
 
@@ -164,8 +178,6 @@
 
 .field private static final DEFAULT_IS_SLOW_MOTION:Z = false
 
-.field private static final DEFAULT_IS_STREAMING:Z = false
-
 .field private static final DEFAULT_LOW_LIGHT_MODE:Ljava/lang/String; = "auto"
 
 .field private static final DEFAULT_MAX_PREVIEW_FPS:I = 0x1e
@@ -198,6 +210,8 @@
 
 .field private static final DEFAULT_ROTATION:I = 0x0
 
+.field private static final DEFAULT_SATURATION_SCALE_FACTOR:I = 0x0
+
 .field private static final DEFAULT_SHUTTER_SPEED:J = 0x3d0900L
 
 .field private static final DEFAULT_SOFT_SKIN:I = 0x0
@@ -205,6 +219,8 @@
 .field private static final DEFAULT_STILL_HDR:Ljava/lang/String; = "off"
 
 .field private static final DEFAULT_SUPER_RESOLUTION_ZOOM:Ljava/lang/String; = "off"
+
+.field private static final DEFAULT_TRIPOD_FRAMING_INDICATOR_MODE:Ljava/lang/String; = "off"
 
 .field private static final DEFAULT_ULTRA_HDR:Ljava/lang/String; = "off"
 
@@ -215,8 +231,6 @@
 .field private static final DEFAULT_VIDEO_HDR:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
 .field private static final DEFAULT_VIDEO_MULTI_FRAME_HDR_MODE:Ljava/lang/String; = "off"
-
-.field private static final DEFAULT_VIDEO_QUALITY:Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;
 
 .field private static final DEFAULT_VIDEO_SENSITIVITY_SMOOTHING:Ljava/lang/String; = "off"
 
@@ -356,8 +370,6 @@
 
 .field public static final KEY_COLOR_TONE_PROFILE:Ljava/lang/String; = "sony-color-tone-profile"
 
-.field public static final KEY_CONTROL_FPS:Ljava/lang/String; = "control-fps"
-
 .field public static final KEY_DISPLAY_FLASH_LIGHT_SHIELDING_COLOR:Ljava/lang/String; = "light-shielding-color"
 
 .field public static final KEY_DISPLAY_FLASH_LIGHT_SHIELDING_RECT:Ljava/lang/String; = "light-shielding-rect"
@@ -375,6 +387,24 @@
 .field public static final KEY_EX_ACTION_MODE_HDR_CONFIGURATION:Ljava/lang/String; = "sony-vs-action-mode-hdr-config"
 
 .field public static final KEY_EX_AE_MODE:Ljava/lang/String; = "sony-ae-mode"
+
+.field public static final KEY_EX_AI_SUGGESTION_AWB:Ljava/lang/String; = "sony-ai-suggestion-awbColorCompensationAbGm"
+
+.field public static final KEY_EX_AI_SUGGESTION_BS:Ljava/lang/String; = "sony-ai-suggestion-bokehStrength"
+
+.field public static final KEY_EX_AI_SUGGESTION_CL:Ljava/lang/String; = "sony-ai-suggestion-colorToneProfile"
+
+.field public static final KEY_EX_AI_SUGGESTION_CSF:Ljava/lang/String; = "sony-ai-suggestion-contrastScaleFactor"
+
+.field public static final KEY_EX_AI_SUGGESTION_EV:Ljava/lang/String; = "sony-ai-suggestion-aeExposureCompensation"
+
+.field public static final KEY_EX_AI_SUGGESTION_IQ_PARAMETER_INDEX:Ljava/lang/String; = "sony-ai-suggestion-iq-parameter-index"
+
+.field public static final KEY_EX_AI_SUGGESTION_MODE:Ljava/lang/String; = "sony-ai-suggestion-mode"
+
+.field public static final KEY_EX_AI_SUGGESTION_MODE_SUPPORTED:Ljava/lang/String; = "sony-ai-suggestion-mode-supported-values"
+
+.field public static final KEY_EX_AI_SUGGESTION_SSF:Ljava/lang/String; = "sony-ai-suggestion-saturationScaleFactor"
 
 .field public static final KEY_EX_AUTO_FRAMING_MODE:Ljava/lang/String; = "sony-auto-framing-mode"
 
@@ -399,6 +429,8 @@
 .field public static final KEY_EX_CLOSE_UP_MODE:Ljava/lang/String; = "sony-close-up-mode"
 
 .field public static final KEY_EX_CLOSE_UP_MODE_ZOOM_RATIO_RANGE:Ljava/lang/String; = "sony-close-up-mode-zoom-ratio-range-values"
+
+.field public static final KEY_EX_CONTRAST_SCALE_FACTOR:Ljava/lang/String; = "sony-contrast-scale-factor"
 
 .field public static final KEY_EX_EYE_DETECTION_MODES:Ljava/lang/String; = "sony-eye-detect-modes"
 
@@ -430,7 +462,7 @@
 
 .field public static final KEY_EX_HYBRID_ZOOM:Ljava/lang/String; = "sony-photo-hybrid-zoom"
 
-.field public static final KEY_EX_HYBRID_ZOOM_RATIO_RANGE:Ljava/lang/String; = "sony-hybrid-zoom-ratio-range-values"
+.field public static final KEY_EX_HYBRID_ZOOM_RATIO_RANGE:Ljava/lang/String; = "sony-hybrid-zoom-ratio-range"
 
 .field public static final KEY_EX_HYBRID_ZOOM_SUPPORTED_ISO_RANGE:Ljava/lang/String; = "sony-hybrid-zoom-iso-range"
 
@@ -454,6 +486,8 @@
 
 .field public static final KEY_EX_MANUAL_FOCUS_FOR_MACRO:Ljava/lang/String; = "sony-manual-focus-for-macro"
 
+.field public static final KEY_EX_MAX_AE_EXPOSURE_COMPENSATION:Ljava/lang/String; = "sony-max-ae-exposure-compensation"
+
 .field public static final KEY_EX_MAX_AWB_COMPENSATION_AB:Ljava/lang/String; = "sony-max-awb-compensation-ab"
 
 .field public static final KEY_EX_MAX_AWB_COMPENSATION_AB_FLOAT:Ljava/lang/String; = "sony-max-awb-compensation-ab-float"
@@ -464,17 +498,23 @@
 
 .field public static final KEY_EX_MAX_AWB_TEMPERATURE:Ljava/lang/String; = "sony-max-awb-temperature"
 
+.field public static final KEY_EX_MAX_CONTRAST_SCALE_FACTOR:Ljava/lang/String; = "sony-max-contrast-scale-factor"
+
 .field public static final KEY_EX_MAX_FOCUS_MAGNIFICATION_RATIO:Ljava/lang/String; = "sony-max-focus-magnification-ratio"
 
 .field public static final KEY_EX_MAX_HISTOGRAM_COUNT:Ljava/lang/String; = "sony-cinema-max-histogram-count"
 
 .field public static final KEY_EX_MAX_PREVIEW_FPS:Ljava/lang/String; = "sony-max-preview-fps"
 
+.field public static final KEY_EX_MAX_SATURATION_SCALE_FACTOR:Ljava/lang/String; = "sony-max-saturation-scale-factor"
+
 .field public static final KEY_EX_MAX_SHUTTER_SPEED:Ljava/lang/String; = "sony-max-shutter-speed"
 
 .field public static final KEY_EX_MAX_SOFT_SKIN_LEVEL:Ljava/lang/String; = "sony-max-soft-skin-level"
 
 .field public static final KEY_EX_METERING_MODE:Ljava/lang/String; = "sony-metering-mode"
+
+.field public static final KEY_EX_MIN_AE_EXPOSURE_COMPENSATION:Ljava/lang/String; = "sony-min-ae-exposure-compensation"
 
 .field public static final KEY_EX_MIN_AWB_COMPENSATION_AB:Ljava/lang/String; = "sony-min-awb-compensation-ab"
 
@@ -485,6 +525,10 @@
 .field public static final KEY_EX_MIN_AWB_COMPENSATION_GM_FLOAT:Ljava/lang/String; = "sony-min-awb-compensation-gm-float"
 
 .field public static final KEY_EX_MIN_AWB_TEMPERATURE:Ljava/lang/String; = "sony-min-awb-temperature"
+
+.field public static final KEY_EX_MIN_CONTRAST_SCALE_FACTOR:Ljava/lang/String; = "sony-min-contrast-scale-factor"
+
+.field public static final KEY_EX_MIN_SATURATION_SCALE_FACTOR:Ljava/lang/String; = "sony-min-saturation-scale-factor"
 
 .field public static final KEY_EX_MIN_SHUTTER_SPEED:Ljava/lang/String; = "sony-min-shutter-speed"
 
@@ -501,6 +545,8 @@
 .field public static final KEY_EX_PREVIEW_FPS_MAP:Ljava/lang/String; = "sony-preview-fps-map"
 
 .field public static final KEY_EX_PRIORITY_SET_IN_AWB:Ljava/lang/String; = "priority-set-in-awb"
+
+.field public static final KEY_EX_SATURATION_SCALE_FACTOR:Ljava/lang/String; = "sony-saturation-scale-factor"
 
 .field public static final KEY_EX_SHUTTER_SPEED:Ljava/lang/String; = "sony-shutter-speed"
 
@@ -554,9 +600,11 @@
 
 .field public static final KEY_EX_TRACKING_FOCUS_DURING_LOCK_SUPPORTED:Ljava/lang/String; = "sony-tracking-focus-during-lock-supported"
 
-.field public static final KEY_EX_VIDEO_STABILIZER:Ljava/lang/String; = "sony-vs"
+.field public static final KEY_EX_VIDEO_HYBRID_ZOOM_RATIO_RANGE:Ljava/lang/String; = "sony-video-hybrid-zoom-ratio-range"
 
-.field public static final KEY_EX_VIDEO_STREAM_ORIENTATION_SUPPORTED:Ljava/lang/String; = "sony-video-stream-orientation-supported"
+.field public static final KEY_EX_VIDEO_OPTICAL_ZOOM_RATIO_RANGE:Ljava/lang/String; = "sony-video-optical-zoom-ratio-range"
+
+.field public static final KEY_EX_VIDEO_STABILIZER:Ljava/lang/String; = "sony-vs"
 
 .field public static final KEY_EX_WHITE_BALANCE_TEMPERATURE:Ljava/lang/String; = "sony-whitebalance-temperature"
 
@@ -588,7 +636,7 @@
 
 .field public static final KEY_IS_SLOW_MOTION:Ljava/lang/String; = "is-slow-motion"
 
-.field public static final KEY_IS_STREAMING:Ljava/lang/String; = "is-streaming"
+.field public static final KEY_MAIN_PREVIEW_SURFACE_SIZE:Ljava/lang/String; = "surface-size"
 
 .field public static final KEY_MAX_BOKEH_BURST_QUEUEING_NUM:Ljava/lang/String; = "max-bokeh-burst-queueing-num"
 
@@ -609,8 +657,6 @@
 .field public static final KEY_MIN_EXPOSURE_COMPENSATION:Ljava/lang/String; = "min-exposure-compensation"
 
 .field public static final KEY_MIN_FRAME_DURATION:Ljava/lang/String; = "minimum-frame-duration"
-
-.field public static final KEY_MIN_ZOOM_RATIO:Ljava/lang/String; = "min-zoom-ratio"
 
 .field public static final KEY_MULTI_FRAME_NR_MODE:Ljava/lang/String; = "sony-multi-frame-nr-mode"
 
@@ -646,6 +692,10 @@
 
 .field public static final KEY_SENSOR_NAME:Ljava/lang/String; = "sensor-name"
 
+.field public static final KEY_SUB_PREVIEW_SURFACE_DISPLAYED_INDEX:Ljava/lang/String; = "sub-surface-displayed-index"
+
+.field public static final KEY_SUB_PREVIEW_SURFACE_SIZE:Ljava/lang/String; = "sub-surface-size"
+
 .field public static final KEY_SUPER_RESOLUTION_ZOOM:Ljava/lang/String; = "sony-super-resolution-zoom"
 
 .field public static final KEY_SUPER_RESOLUTION_ZOOM_SUPPORTED:Ljava/lang/String; = "super-resolution-zoom-supported"
@@ -656,7 +706,9 @@
 
 .field public static final KEY_SUPPORTED_VOLUME_DISTORTION_CORRECTIONS:Ljava/lang/String; = "volume-distortion-correction-values"
 
-.field public static final KEY_SURFACE_SIZE:Ljava/lang/String; = "surface-size"
+.field public static final KEY_TRIPOD_FRAMING_INDICATOR_MODE:Ljava/lang/String; = "sony-tripod-framing-indicator-mode"
+
+.field public static final KEY_TRIPOD_FRAMING_INDICATOR_MODE_SUPPORTED:Ljava/lang/String; = "sony-tripod-framing-indicator-mode-supported-values"
 
 .field public static final KEY_UI_ROTATION:Ljava/lang/String; = "ui-rotation"
 
@@ -671,8 +723,6 @@
 .field public static final KEY_VIDEO_HDR:Ljava/lang/String; = "video-hdr"
 
 .field public static final KEY_VIDEO_MULTI_FRAME_HDR_MODE:Ljava/lang/String; = "video-multi-frame-hdr-mode"
-
-.field public static final KEY_VIDEO_QUALITY:Ljava/lang/String; = "video-quality"
 
 .field public static final KEY_VIDEO_SENSITIVITY_SMOOTHING_MODE:Ljava/lang/String; = "video-sensitivity-smoothing-mode"
 
@@ -749,6 +799,10 @@
 .field public static final SUPER_RESOLUTION_ZOOM_OFF:Ljava/lang/String; = "off"
 
 .field private static final TAG:Ljava/lang/String; = "CameraParameters"
+
+.field public static final TRIPOD_FRAMING_INDICATOR_MODE_OFF:Ljava/lang/String; = "off"
+
+.field public static final TRIPOD_FRAMING_INDICATOR_MODE_ON:Ljava/lang/String; = "on"
 
 .field public static final ULTRA_HDR_AUTO:Ljava/lang/String; = "auto"
 
@@ -860,7 +914,7 @@
 .method static constructor <clinit>()V
     .locals 4
 
-    .line 314
+    .line 348
     new-instance v0, Landroid/graphics/Point;
 
     const/4 v1, 0x0
@@ -871,21 +925,21 @@
 
     const/high16 v0, 0x3f800000    # 1.0f
 
-    .line 411
+    .line 445
     invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v0
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameters;->MANUAL_FOCUS_1M:Ljava/lang/Float;
 
-    .line 557
+    .line 602
     invoke-virtual {v0}, Ljava/lang/Float;->floatValue()F
 
     move-result v0
 
     sput v0, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_FOCUS_RANGE:F
 
-    .line 560
+    .line 605
     new-instance v0, Ljava/util/ArrayList;
 
     const/4 v2, 0x1
@@ -898,7 +952,7 @@
 
     aput-object v3, v2, v1
 
-    .line 561
+    .line 606
     invoke-static {v2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v2
@@ -907,10 +961,10 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_FOCUS_RECTS:Ljava/util/List;
 
-    .line 566
+    .line 611
     new-instance v0, Landroid/util/Range;
 
-    .line 567
+    .line 612
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -927,50 +981,47 @@
 
     const/4 v0, 0x0
 
-    .line 570
+    .line 615
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_GPS_DATA:Landroid/location/Location;
 
-    .line 586
+    .line 631
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;->JPEG:Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
 
     sput-object v1, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_PHOTO_FORMAT:Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
 
-    .line 600
+    .line 644
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_VIDEO_SIZE:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
 
-    .line 601
+    .line 645
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_CAPTURE_FPS:Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
 
-    .line 602
+    .line 646
     new-instance v1, Landroid/graphics/Rect;
 
     invoke-direct {v1}, Landroid/graphics/Rect;-><init>()V
 
     sput-object v1, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_VIDEO_SNAPSHOT_SIZE:Landroid/graphics/Rect;
 
-    .line 604
+    .line 648
     new-instance v1, Landroid/graphics/Rect;
 
     invoke-direct {v1}, Landroid/graphics/Rect;-><init>()V
 
     sput-object v1, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_METERING_AREA:Landroid/graphics/Rect;
 
-    .line 605
+    .line 649
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_VIDEO_HDR:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
-    .line 606
-    sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_VIDEO_QUALITY:Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;
-
-    .line 607
+    .line 650
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_HAND_TRIGGER:Ljp/co/sony/mc/camera/configuration/parameters/HandShutter;
 
-    .line 608
+    .line 651
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_QR_CODE_DETECTION:Ljp/co/sony/mc/camera/configuration/parameters/QrCodeDetection;
 
-    .line 609
+    .line 652
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_WHITE_BALANCE_RATIO:[I
 
-    .line 612
+    .line 654
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_EXTEND_FPS:Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;
@@ -980,53 +1031,61 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
-    .line 635
+    .line 683
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 668
+    .line 716
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v1
 
-    .line 650
+    .line 698
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
 
-    .line 623
+    .line 671
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedApply:Z
 
-    .line 629
+    .line 677
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedCreatePreviewSession:Z
 
-    .line 633
+    .line 681
     new-instance v3, Ljava/util/HashMap;
 
     invoke-direct {v3}, Ljava/util/HashMap;-><init>()V
 
     iput-object v3, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mParameters:Ljava/util/Map;
 
-    .line 636
+    .line 684
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mCameraId:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 638
+    .line 686
     const-string p0, "focus-mode"
 
     const-string p1, "auto"
 
     invoke-interface {v3, p0, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 639
+    .line 687
     const-string/jumbo p0, "sony-focus-area"
 
     const-string v4, "center"
 
     invoke-interface {v3, p0, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 640
+    .line 688
     sget p0, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_FOCUS_RANGE:F
 
     invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
@@ -1039,7 +1098,7 @@
 
     const/16 p0, 0x32
 
-    .line 641
+    .line 689
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -1050,7 +1109,7 @@
 
     const-wide/32 v5, 0x3d0900
 
-    .line 642
+    .line 690
     invoke-static {v5, v6}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
@@ -1059,58 +1118,58 @@
 
     invoke-interface {v3, v5, p0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 643
+    .line 691
     const-string/jumbo p0, "sony-ae-mode"
 
     invoke-interface {v3, p0, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 644
+    .line 692
     const-string p0, "flash-mode"
 
     const-string v5, "off"
 
     invoke-interface {v3, p0, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 645
+    .line 693
     const-string p0, "face-detection"
 
     invoke-interface {v3, p0, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 646
+    .line 694
     const-string/jumbo p0, "whitebalance"
 
     invoke-interface {v3, p0, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 647
+    .line 695
     const-string/jumbo p0, "sony-is"
 
     invoke-interface {v3, p0, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 648
+    .line 696
     const-string/jumbo p0, "sony-metering-mode"
 
     const-string v6, "center-weighted"
 
     invoke-interface {v3, p0, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 649
+    .line 697
     const-string/jumbo p0, "sony-power-save-mode"
 
     invoke-interface {v3, p0, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 650
+    .line 698
     const-string/jumbo p0, "sony-awb-compensation-ab"
 
     invoke-interface {v3, p0, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 651
+    .line 699
     const-string/jumbo p0, "sony-awb-compensation-gm"
 
     invoke-interface {v3, p0, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-wide/16 v6, 0x0
 
-    .line 652
+    .line 700
     invoke-static {v6, v7}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
@@ -1119,53 +1178,53 @@
 
     invoke-interface {v3, v6, p0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 653
+    .line 701
     const-string/jumbo p0, "sony-soft-skin-level"
 
     invoke-interface {v3, p0, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 654
+    .line 702
     const-string p0, "exposure-compensation-step"
 
     invoke-interface {v3, p0, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 655
+    .line 703
     const-string p0, "distortion-correction"
 
     invoke-interface {v3, p0, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 656
+    .line 704
     const-string/jumbo p0, "volume-distortion-correction"
 
     invoke-interface {v3, p0, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 657
+    .line 705
     const-string/jumbo p0, "usecase"
 
     const-string/jumbo v6, "usecase_none"
 
     invoke-interface {v3, p0, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 658
+    .line 706
     const-string/jumbo p0, "vague-control-mode"
 
     const-string v6, "on"
 
     invoke-interface {v3, p0, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 659
+    .line 707
     const-string p0, "high-quality-snapshot-mode"
 
     invoke-interface {v3, p0, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 660
+    .line 708
     const-string/jumbo p0, "video-stabilization-mode"
 
     const-string v6, "intelligent_active"
 
     invoke-interface {v3, p0, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 661
+    .line 709
     new-instance p0, Landroid/graphics/Rect;
 
     const/16 v6, 0x500
@@ -1178,7 +1237,7 @@
 
     invoke-interface {v3, v8, p0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 662
+    .line 710
     new-instance p0, Landroid/util/Size;
 
     invoke-direct {p0, v6, v7}, Landroid/util/Size;-><init>(II)V
@@ -1187,7 +1246,7 @@
 
     invoke-interface {v3, v8, p0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 663
+    .line 711
     new-instance p0, Landroid/graphics/Rect;
 
     invoke-direct {p0, v0, v0, v6, v7}, Landroid/graphics/Rect;-><init>(IIII)V
@@ -1196,14 +1255,14 @@
 
     invoke-interface {v3, v0, p0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 664
+    .line 712
     const-string/jumbo p0, "sony-bokeh-mode"
 
     invoke-interface {v3, p0, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const p0, 0x3f4ccccd    # 0.8f
 
-    .line 665
+    .line 713
     invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p0
@@ -1212,226 +1271,209 @@
 
     invoke-interface {v3, v0, p0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 666
+    .line 714
     const-string/jumbo p0, "sony-multi-frame-nr-mode"
 
     invoke-interface {v3, p0, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 667
+    .line 715
     const-string/jumbo p0, "sony-burst-fps"
 
     invoke-interface {v3, p0, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 668
+    .line 716
     const-string p0, "auto-exposure-lock"
 
     invoke-interface {v3, p0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 669
+    .line 717
     const-string/jumbo p0, "sony-cinema-histogram"
 
     invoke-interface {v3, p0, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 670
+    .line 718
     const-string/jumbo p0, "sony-super-resolution-zoom"
 
     invoke-interface {v3, p0, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 671
+    .line 719
     const-string/jumbo p0, "video-multi-frame-hdr-mode"
 
     invoke-interface {v3, p0, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 672
+    .line 720
     const-string/jumbo p0, "sony-photopro-peaking-mode"
 
     invoke-interface {v3, p0, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 673
+    .line 721
     const-string/jumbo p0, "sony-color-tone-profile"
 
     invoke-interface {v3, p0, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 674
+    .line 722
     const-string p0, "auto-white-balance-lock"
 
     invoke-interface {v3, p0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 675
+    .line 723
     const-string/jumbo p0, "sony-product-showcase-mode"
 
     invoke-interface {v3, p0, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 676
+    .line 724
     const-string/jumbo p0, "sony-low-light-mode"
 
     invoke-interface {v3, p0, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 677
+    .line 725
     const-string/jumbo p0, "sony-photo-hybrid-zoom"
 
     invoke-interface {v3, p0, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 678
+    .line 726
     const-string/jumbo p0, "sony-fallback-mode"
 
     invoke-interface {v3, p0, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 727
+    const-string p0, "extend-fps"
+
+    sget-object v0, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_EXTEND_FPS:Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;
+
+    invoke-interface {v3, p0, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 728
+    const-string/jumbo p0, "sony-photo_format"
+
+    sget-object v0, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_PHOTO_FORMAT:Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
+
+    invoke-interface {v3, p0, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 729
+    const-string p0, "photo-high-resolution"
+
+    invoke-interface {v3, p0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 730
+    const-string/jumbo p0, "sony-close-up-mode"
+
+    invoke-interface {v3, p0, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 731
+    const-string/jumbo p0, "sony-focus-magnification"
+
+    invoke-interface {v3, p0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
     const/4 p0, 0x0
 
-    .line 679
+    .line 732
     invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p0
 
-    const-string v0, "control-fps"
-
-    invoke-interface {v3, v0, p0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 680
-    const-string v0, "extend-fps"
-
-    sget-object v6, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_EXTEND_FPS:Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;
-
-    invoke-interface {v3, v0, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 681
-    const-string/jumbo v0, "sony-photo_format"
-
-    sget-object v6, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_PHOTO_FORMAT:Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
-
-    invoke-interface {v3, v0, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 682
-    const-string v0, "photo-high-resolution"
-
-    invoke-interface {v3, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 683
-    const-string/jumbo v0, "sony-close-up-mode"
-
-    invoke-interface {v3, v0, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 684
-    const-string/jumbo v0, "sony-focus-magnification"
-
-    invoke-interface {v3, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 685
     const-string/jumbo v0, "sony-focus-magnification-ratio"
 
     invoke-interface {v3, v0, p0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 686
+    .line 733
     const-string/jumbo p0, "sony-focus-magnification-position"
 
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_FOCUS_MAGNIFICATION_POSITION:Landroid/graphics/Point;
 
     invoke-interface {v3, p0, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 687
+    .line 734
     const-string/jumbo p0, "video-sensitivity-smoothing-mode"
 
     invoke-interface {v3, p0, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 688
+    .line 735
     const-string/jumbo p0, "video-size"
 
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_VIDEO_SIZE:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
 
     invoke-interface {v3, p0, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 689
+    .line 736
     const-string p0, "capture-fps"
 
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_CAPTURE_FPS:Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
 
     invoke-interface {v3, p0, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 690
+    .line 737
     const-string/jumbo p0, "video-snapshot-size"
 
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_VIDEO_SNAPSHOT_SIZE:Landroid/graphics/Rect;
 
     invoke-interface {v3, p0, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 691
+    .line 738
     const-string p0, "is-slow-motion"
 
     invoke-interface {v3, p0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 692
+    .line 739
     const-string p0, "metering-area"
 
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_METERING_AREA:Landroid/graphics/Rect;
 
     invoke-interface {v3, p0, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 693
+    .line 740
     const-string/jumbo p0, "video-hdr"
 
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_VIDEO_HDR:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
     invoke-interface {v3, p0, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 694
-    const-string/jumbo p0, "video-quality"
-
-    sget-object v0, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_VIDEO_QUALITY:Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;
-
-    invoke-interface {v3, p0, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 695
+    .line 741
     const-string p0, "hand-shutter"
 
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_HAND_TRIGGER:Ljp/co/sony/mc/camera/configuration/parameters/HandShutter;
 
     invoke-interface {v3, p0, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 696
+    .line 742
     const-string p0, "qr-code-detection"
 
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_QR_CODE_DETECTION:Ljp/co/sony/mc/camera/configuration/parameters/QrCodeDetection;
 
     invoke-interface {v3, p0, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 697
+    .line 743
     const-string p0, "gps-data"
 
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_GPS_DATA:Landroid/location/Location;
 
     invoke-interface {v3, p0, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 698
-    const-string p0, "is-streaming"
-
-    invoke-interface {v3, p0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 699
+    .line 744
     const-string p0, "is-quick-record"
 
     invoke-interface {v3, p0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 700
+    .line 745
     const-string/jumbo p0, "white-balance-ratio"
 
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_WHITE_BALANCE_RATIO:[I
 
     invoke-interface {v3, p0, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 701
+    .line 746
     const-string p0, "rotation"
 
     invoke-interface {v3, p0, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 702
+    .line 747
     const-string/jumbo p0, "ui-rotation"
 
     invoke-interface {v3, p0, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const/high16 p0, 0x3f800000    # 1.0f
 
-    .line 703
+    .line 748
     invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p0
@@ -1440,33 +1482,33 @@
 
     invoke-interface {v3, v0, p0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 704
+    .line 749
     const-string p0, "focus-rects"
 
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_FOCUS_RECTS:Ljava/util/List;
 
     invoke-interface {v3, p0, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 705
+    .line 750
     const-string p0, "preview-fps-range"
 
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_PREVIEW_FPS_RANGE:Landroid/util/Range;
 
     invoke-interface {v3, p0, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 706
+    .line 751
     const-string/jumbo p0, "sony-auto-framing-mode"
 
     invoke-interface {v3, p0, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 707
+    .line 752
     const-string/jumbo p0, "sony-auto-framing-orientation"
 
     invoke-interface {v3, p0, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const/high16 p0, 0x3f000000    # 0.5f
 
-    .line 708
+    .line 753
     invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p0
@@ -1475,13 +1517,38 @@
 
     invoke-interface {v3, p1, p0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 709
+    .line 754
     const-string/jumbo p0, "sony-framing-assist-position-mode"
 
     invoke-interface {v3, p0, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 710
+    .line 755
     const-string/jumbo p0, "ultra_hdr"
+
+    invoke-interface {v3, p0, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 756
+    const-string/jumbo p0, "sony-ai-suggestion-mode"
+
+    invoke-interface {v3, p0, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 757
+    const-string/jumbo p0, "sony-ai-suggestion-iq-parameter-index"
+
+    invoke-interface {v3, p0, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 759
+    const-string/jumbo p0, "sony-contrast-scale-factor"
+
+    invoke-interface {v3, p0, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 760
+    const-string/jumbo p0, "sony-saturation-scale-factor"
+
+    invoke-interface {v3, p0, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 761
+    const-string/jumbo p0, "sony-tripod-framing-indicator-mode"
 
     invoke-interface {v3, p0, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1490,8 +1557,16 @@
 
 .method private getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 1531
+    .line 1731
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mParameters:Ljava/util/Map;
 
     invoke-interface {p0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1503,8 +1578,18 @@
 
 .method private setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
-    .line 1508
+    .line 1708
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     const/4 v1, 0x0
@@ -1513,12 +1598,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 1509
+    .line 1709
     new-array v0, v2, [Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
-    const-string v4, "setKeyValue : key = "
+    const-string/jumbo v4, "setKeyValue : key = "
 
     invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
@@ -1544,7 +1629,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 1512
+    .line 1712
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mParameters:Ljava/util/Map;
 
@@ -1558,7 +1643,7 @@
 
     goto :goto_0
 
-    .line 1515
+    .line 1715
     :cond_1
     invoke-virtual {v0, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -1577,17 +1662,17 @@
     :goto_1
     if-eqz v3, :cond_4
 
-    .line 1520
+    .line 1720
     sget-boolean v4, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v4, :cond_3
 
-    .line 1521
+    .line 1721
     new-array v4, v2, [Ljava/lang/String;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
-    const-string v6, "setKeyValue : value is changed from "
+    const-string/jumbo v6, "setKeyValue : value is changed from "
 
     invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
@@ -1613,13 +1698,13 @@
 
     invoke-static {v4}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 1523
+    .line 1723
     :cond_3
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mParameters:Ljava/util/Map;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1524
+    .line 1724
     iput-boolean v2, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedApply:Z
 
     :cond_4
@@ -1633,7 +1718,7 @@
 
     const/4 v0, 0x0
 
-    .line 1492
+    .line 1692
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedApply:Z
 
     return-void
@@ -1644,7 +1729,7 @@
 
     const/4 v0, 0x0
 
-    .line 1504
+    .line 1704
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedCreatePreviewSession:Z
 
     return-void
@@ -1653,14 +1738,14 @@
 .method public deepCopy()Ljp/co/sony/mc/camera/device/CameraParameters;
     .locals 5
 
-    .line 1535
+    .line 1735
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraParameters;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mCameraId:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     invoke-direct {v0, v1}, Ljp/co/sony/mc/camera/device/CameraParameters;-><init>(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
 
-    .line 1536
+    .line 1736
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mParameters:Ljava/util/Map;
 
     invoke-interface {v1}, Ljava/util/Map;->keySet()Ljava/util/Set;
@@ -1684,7 +1769,7 @@
 
     check-cast v2, Ljava/lang/String;
 
-    .line 1537
+    .line 1737
     iget-object v3, v0, Ljp/co/sony/mc/camera/device/CameraParameters;->mParameters:Ljava/util/Map;
 
     iget-object v4, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mParameters:Ljava/util/Map;
@@ -1706,7 +1791,7 @@
 
     const/4 v0, 0x1
 
-    .line 1500
+    .line 1700
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedCreatePreviewSession:Z
 
     return-void
@@ -1715,7 +1800,7 @@
 .method public getAeMode()Ljava/lang/String;
     .locals 1
 
-    .line 886
+    .line 930
     const-string/jumbo v0, "sony-ae-mode"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -1730,7 +1815,7 @@
 .method public getAfDriveMode()Ljava/lang/String;
     .locals 1
 
-    .line 838
+    .line 882
     const-string/jumbo v0, "sony-af-drive-mode"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -1742,10 +1827,134 @@
     return-object p0
 .end method
 
+.method public getAiSuggestionIqParameterIndex()I
+    .locals 1
+
+    .line 1631
+    const-string/jumbo v0, "sony-ai-suggestion-iq-parameter-index"
+
+    invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Integer;
+
+    invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public getAiSuggestionMode()Ljava/lang/String;
+    .locals 1
+
+    .line 1567
+    const-string/jumbo v0, "sony-ai-suggestion-mode"
+
+    invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public getAiSuggestionParameterAWB()[F
+    .locals 1
+
+    .line 1583
+    const-string/jumbo v0, "sony-ai-suggestion-awbColorCompensationAbGm"
+
+    invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, [F
+
+    return-object p0
+.end method
+
+.method public getAiSuggestionParameterBS()[F
+    .locals 1
+
+    .line 1615
+    const-string/jumbo v0, "sony-ai-suggestion-bokehStrength"
+
+    invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, [F
+
+    return-object p0
+.end method
+
+.method public getAiSuggestionParameterCL()[I
+    .locals 1
+
+    .line 1591
+    const-string/jumbo v0, "sony-ai-suggestion-colorToneProfile"
+
+    invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, [I
+
+    return-object p0
+.end method
+
+.method public getAiSuggestionParameterCSF()[I
+    .locals 1
+
+    .line 1607
+    const-string/jumbo v0, "sony-ai-suggestion-contrastScaleFactor"
+
+    invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, [I
+
+    return-object p0
+.end method
+
+.method public getAiSuggestionParameterEV()[I
+    .locals 1
+
+    .line 1575
+    const-string/jumbo v0, "sony-ai-suggestion-aeExposureCompensation"
+
+    invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, [I
+
+    return-object p0
+.end method
+
+.method public getAiSuggestionParameterSSF()[I
+    .locals 1
+
+    .line 1599
+    const-string/jumbo v0, "sony-ai-suggestion-saturationScaleFactor"
+
+    invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, [I
+
+    return-object p0
+.end method
+
 .method public getAperture()F
     .locals 1
 
-    .line 1239
+    .line 1297
     const-string v0, "aperture"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -1764,7 +1973,7 @@
 .method public getAutoExposureLock()Z
     .locals 1
 
-    .line 949
+    .line 993
     const-string v0, "auto-exposure-lock"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -1783,7 +1992,7 @@
 .method public getAutoFocusLock()Ljava/lang/String;
     .locals 1
 
-    .line 941
+    .line 985
     const-string v0, "auto-focus-lock"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -1798,7 +2007,7 @@
 .method public getAutoFramingMode()Ljava/lang/String;
     .locals 1
 
-    .line 1439
+    .line 1497
     const-string/jumbo v0, "sony-auto-framing-mode"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -1813,7 +2022,7 @@
 .method public getAutoFramingOrientation()Ljava/lang/String;
     .locals 1
 
-    .line 1455
+    .line 1513
     const-string/jumbo v0, "sony-auto-framing-orientation"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -1828,7 +2037,7 @@
 .method public getAutoFramingSize()F
     .locals 1
 
-    .line 1471
+    .line 1529
     const-string/jumbo v0, "sony-auto-framing-size"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -1847,7 +2056,7 @@
 .method public getAutoWhiteBalanceLock()Z
     .locals 1
 
-    .line 957
+    .line 1001
     const-string v0, "auto-white-balance-lock"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -1866,7 +2075,7 @@
 .method public getAwbColorCompensationAb()F
     .locals 1
 
-    .line 1009
+    .line 1055
     const-string/jumbo v0, "sony-awb-compensation-ab"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -1885,7 +2094,7 @@
 .method public getAwbColorCompensationCustomGm()F
     .locals 1
 
-    .line 1025
+    .line 1071
     const-string/jumbo v0, "sony-awb-compensation-custom-gm"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -1904,7 +2113,7 @@
 .method public getAwbColorCompensationGm()F
     .locals 1
 
-    .line 1017
+    .line 1063
     const-string/jumbo v0, "sony-awb-compensation-gm"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -1923,7 +2132,7 @@
 .method public getAwbPriority()Ljava/lang/String;
     .locals 1
 
-    .line 1033
+    .line 1079
     const-string v0, "priority-set-in-awb"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -1938,7 +2147,7 @@
 .method public getBokehMode()Ljava/lang/String;
     .locals 1
 
-    .line 1221
+    .line 1279
     const-string/jumbo v0, "sony-bokeh-mode"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -1953,7 +2162,7 @@
 .method public getBokehStrength()F
     .locals 1
 
-    .line 1229
+    .line 1287
     const-string/jumbo v0, "sony-bokeh-strength"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -1972,7 +2181,7 @@
 .method public getBurstFps()I
     .locals 1
 
-    .line 1355
+    .line 1413
     const-string/jumbo v0, "sony-burst-fps"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -1991,7 +2200,7 @@
 .method public getCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
     .locals 0
 
-    .line 714
+    .line 765
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mCameraId:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     return-object p0
@@ -2000,7 +2209,7 @@
 .method public getCaptureFps()Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
     .locals 1
 
-    .line 1116
+    .line 1182
     const-string v0, "capture-fps"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2015,7 +2224,7 @@
 .method public getCloseUpMode()Ljava/lang/String;
     .locals 1
 
-    .line 1397
+    .line 1455
     const-string/jumbo v0, "sony-close-up-mode"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2030,7 +2239,7 @@
 .method public getColorToneProfile()Ljava/lang/String;
     .locals 1
 
-    .line 1363
+    .line 1421
     const-string/jumbo v0, "sony-color-tone-profile"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2042,10 +2251,29 @@
     return-object p0
 .end method
 
+.method public getContrastScaleFactor()I
+    .locals 1
+
+    .line 1647
+    const-string/jumbo v0, "sony-contrast-scale-factor"
+
+    invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Integer;
+
+    invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
+
+    move-result p0
+
+    return p0
+.end method
+
 .method public getDistortionCorrection()Ljava/lang/String;
     .locals 1
 
-    .line 1259
+    .line 1317
     const-string v0, "distortion-correction"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2060,7 +2288,7 @@
 .method public getExposureCompensation()I
     .locals 1
 
-    .line 846
+    .line 890
     const-string v0, "exposure-compensation-step"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2079,7 +2307,7 @@
 .method public getExposureTimeLimit()J
     .locals 2
 
-    .line 753
+    .line 797
     const-string/jumbo v0, "sony-shutter-speed-limit"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2098,7 +2326,7 @@
 .method public getExtendFps()Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;
     .locals 1
 
-    .line 1126
+    .line 1192
     const-string v0, "extend-fps"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2113,7 +2341,7 @@
 .method getFaceDetection()Ljava/lang/String;
     .locals 1
 
-    .line 973
+    .line 1017
     const-string v0, "face-detection"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2128,7 +2356,7 @@
 .method public getFallbackMode()Ljava/lang/String;
     .locals 1
 
-    .line 1319
+    .line 1377
     const-string/jumbo v0, "sony-fallback-mode"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2143,7 +2371,7 @@
 .method public getFlashMode()Ljava/lang/String;
     .locals 1
 
-    .line 965
+    .line 1009
     const-string v0, "flash-mode"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2158,7 +2386,7 @@
 .method public getFocusArea()Ljava/lang/String;
     .locals 1
 
-    .line 806
+    .line 850
     const-string/jumbo v0, "sony-focus-area"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2173,7 +2401,7 @@
 .method public getFocusDistance()F
     .locals 1
 
-    .line 761
+    .line 805
     const-string/jumbo v0, "sony-manual-focus"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2192,7 +2420,7 @@
 .method public getFocusMagnification()Z
     .locals 1
 
-    .line 814
+    .line 858
     const-string/jumbo v0, "sony-focus-magnification"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2211,7 +2439,7 @@
 .method public getFocusMagnificationPosition()Landroid/graphics/Point;
     .locals 1
 
-    .line 830
+    .line 874
     const-string/jumbo v0, "sony-focus-magnification-position"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2226,7 +2454,7 @@
 .method public getFocusMagnificationRatio()F
     .locals 1
 
-    .line 822
+    .line 866
     const-string/jumbo v0, "sony-focus-magnification-ratio"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2245,7 +2473,7 @@
 .method public getFocusMode()Ljava/lang/String;
     .locals 1
 
-    .line 769
+    .line 813
     const-string v0, "focus-mode"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2268,7 +2496,7 @@
         }
     .end annotation
 
-    .line 798
+    .line 842
     const-string v0, "focus-rects"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2291,7 +2519,7 @@
         }
     .end annotation
 
-    .line 1065
+    .line 1111
     const-string v0, "preview-fps-range"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2306,7 +2534,7 @@
 .method public getFramingAssistPositionMode()Ljava/lang/String;
     .locals 1
 
-    .line 1479
+    .line 1545
     const-string/jumbo v0, "sony-framing-assist-position-mode"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2321,7 +2549,7 @@
 .method public getGpsData()Landroid/location/Location;
     .locals 1
 
-    .line 1197
+    .line 1255
     const-string v0, "gps-data"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2336,7 +2564,7 @@
 .method public getHandShutter()Ljp/co/sony/mc/camera/configuration/parameters/HandShutter;
     .locals 1
 
-    .line 1178
+    .line 1236
     const-string v0, "hand-shutter"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2351,7 +2579,7 @@
 .method public getHighQualitySnapshotMode()Ljava/lang/String;
     .locals 1
 
-    .line 1283
+    .line 1341
     const-string v0, "high-quality-snapshot-mode"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2366,7 +2594,7 @@
 .method public getHistogram()Ljava/lang/String;
     .locals 1
 
-    .line 1303
+    .line 1361
     const-string/jumbo v0, "sony-cinema-histogram"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2381,7 +2609,7 @@
 .method public getHybridZoom()Ljava/lang/String;
     .locals 1
 
-    .line 737
+    .line 781
     const-string/jumbo v0, "sony-photo-hybrid-zoom"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2396,7 +2624,7 @@
 .method public getIso()I
     .locals 1
 
-    .line 929
+    .line 973
     const-string/jumbo v0, "sony-iso"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2415,7 +2643,7 @@
 .method public getLowLightMode()Ljava/lang/String;
     .locals 1
 
-    .line 1311
+    .line 1369
     const-string/jumbo v0, "sony-low-light-mode"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2427,10 +2655,25 @@
     return-object p0
 .end method
 
+.method public getMainPreviewSurfaceSize()Landroid/util/Size;
+    .locals 1
+
+    .line 1125
+    const-string/jumbo v0, "surface-size"
+
+    invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Landroid/util/Size;
+
+    return-object p0
+.end method
+
 .method public getMeteringArea()Landroid/graphics/Rect;
     .locals 1
 
-    .line 878
+    .line 922
     const-string v0, "metering-area"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2445,7 +2688,7 @@
 .method public getMeteringMode()Ljava/lang/String;
     .locals 1
 
-    .line 854
+    .line 898
     const-string/jumbo v0, "sony-metering-mode"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2460,7 +2703,7 @@
 .method public getMultiFrameNrMode()Ljava/lang/String;
     .locals 1
 
-    .line 1295
+    .line 1353
     const-string/jumbo v0, "sony-multi-frame-nr-mode"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2475,7 +2718,7 @@
 .method public getPeakingMode()Ljava/lang/String;
     .locals 1
 
-    .line 1247
+    .line 1305
     const-string/jumbo v0, "sony-photopro-peaking-mode"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2490,7 +2733,7 @@
 .method public getPhotoFormat()Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
     .locals 1
 
-    .line 1379
+    .line 1437
     const-string/jumbo v0, "sony-photo_format"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2505,7 +2748,7 @@
 .method public getPictureSize()Landroid/graphics/Rect;
     .locals 1
 
-    .line 1096
+    .line 1162
     const-string v0, "picture-size"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2520,7 +2763,7 @@
 .method public getPowerMode()Ljava/lang/String;
     .locals 1
 
-    .line 745
+    .line 789
     const-string/jumbo v0, "sony-power-save-mode"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2535,7 +2778,7 @@
 .method public getPreviewSize()Landroid/graphics/Rect;
     .locals 1
 
-    .line 1075
+    .line 1121
     const-string v0, "preview-size"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2550,7 +2793,7 @@
 .method public getProductShowcase()Ljava/lang/String;
     .locals 1
 
-    .line 1371
+    .line 1429
     const-string/jumbo v0, "sony-product-showcase-mode"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2565,7 +2808,7 @@
 .method public getQrCodeDetection()Ljp/co/sony/mc/camera/configuration/parameters/QrCodeDetection;
     .locals 1
 
-    .line 1188
+    .line 1246
     const-string v0, "qr-code-detection"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2580,8 +2823,27 @@
 .method public getRotation()I
     .locals 1
 
-    .line 1329
+    .line 1387
     const-string v0, "rotation"
+
+    invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Integer;
+
+    invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public getSaturationScaleFactor()I
+    .locals 1
+
+    .line 1663
+    const-string/jumbo v0, "sony-saturation-scale-factor"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -2599,7 +2861,7 @@
 .method public getShutterSpeed()J
     .locals 2
 
-    .line 921
+    .line 965
     const-string/jumbo v0, "sony-shutter-speed"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2618,7 +2880,7 @@
 .method public getSoftSkin()I
     .locals 1
 
-    .line 1049
+    .line 1095
     const-string/jumbo v0, "sony-soft-skin-level"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2637,7 +2899,7 @@
 .method public getStillHdr()Ljava/lang/String;
     .locals 1
 
-    .line 981
+    .line 1027
     const-string/jumbo v0, "sony-is"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2649,10 +2911,40 @@
     return-object p0
 .end method
 
+.method public getSubPreviewSurfaceDisplayedIndex()[Ljava/lang/Integer;
+    .locals 1
+
+    .line 1151
+    const-string/jumbo v0, "sub-surface-displayed-index"
+
+    invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, [Ljava/lang/Integer;
+
+    return-object p0
+.end method
+
+.method public getSubPreviewSurfaceSize()[Landroid/util/Size;
+    .locals 1
+
+    .line 1135
+    const-string/jumbo v0, "sub-surface-size"
+
+    invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, [Landroid/util/Size;
+
+    return-object p0
+.end method
+
 .method public getSuperResolutionZoom()Ljava/lang/String;
     .locals 1
 
-    .line 1347
+    .line 1405
     const-string/jumbo v0, "sony-super-resolution-zoom"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2664,17 +2956,17 @@
     return-object p0
 .end method
 
-.method public getSurfaceSize()Landroid/util/Size;
+.method public getTripodFramingIndicatorMode()Ljava/lang/String;
     .locals 1
 
-    .line 1079
-    const-string/jumbo v0, "surface-size"
+    .line 1679
+    const-string/jumbo v0, "sony-tripod-framing-indicator-mode"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
 
-    check-cast p0, Landroid/util/Size;
+    check-cast p0, Ljava/lang/String;
 
     return-object p0
 .end method
@@ -2682,7 +2974,7 @@
 .method public getUiOrientation()I
     .locals 1
 
-    .line 1339
+    .line 1397
     const-string/jumbo v0, "ui-rotation"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2701,7 +2993,7 @@
 .method public getUltraHdr()Ljava/lang/String;
     .locals 1
 
-    .line 1407
+    .line 1465
     const-string/jumbo v0, "ultra_hdr"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2716,7 +3008,7 @@
 .method public getUsecase()Ljava/lang/String;
     .locals 1
 
-    .line 1275
+    .line 1333
     const-string/jumbo v0, "usecase"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2731,7 +3023,7 @@
 .method public getVagueControlMode()Ljava/lang/String;
     .locals 1
 
-    .line 1279
+    .line 1337
     const-string/jumbo v0, "vague-control-mode"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2746,7 +3038,7 @@
 .method public getVideoHdr()Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
     .locals 1
 
-    .line 1156
+    .line 1222
     const-string/jumbo v0, "video-hdr"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2761,7 +3053,7 @@
 .method public getVideoMfHdrMode()Ljava/lang/String;
     .locals 1
 
-    .line 991
+    .line 1037
     const-string/jumbo v0, "video-multi-frame-hdr-mode"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2773,25 +3065,10 @@
     return-object p0
 .end method
 
-.method public getVideoQuality()Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;
-    .locals 1
-
-    .line 1164
-    const-string/jumbo v0, "video-quality"
-
-    invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;
-
-    return-object p0
-.end method
-
 .method public getVideoSensitivitySmoothingMode()Ljava/lang/String;
     .locals 1
 
-    .line 1423
+    .line 1481
     const-string/jumbo v0, "video-sensitivity-smoothing-mode"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2806,7 +3083,7 @@
 .method public getVideoSize()Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
     .locals 1
 
-    .line 1106
+    .line 1172
     const-string/jumbo v0, "video-size"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2821,7 +3098,7 @@
 .method public getVideoSnapshotSize()Landroid/graphics/Rect;
     .locals 1
 
-    .line 1136
+    .line 1202
     const-string/jumbo v0, "video-snapshot-size"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2836,7 +3113,7 @@
 .method public getVideoStabilizationMode()Ljava/lang/String;
     .locals 1
 
-    .line 1287
+    .line 1345
     const-string/jumbo v0, "video-stabilization-mode"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2851,7 +3128,7 @@
 .method public getVideoStabilizer()Ljava/lang/String;
     .locals 1
 
-    .line 1168
+    .line 1226
     const-string/jumbo v0, "sony-vs"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2866,7 +3143,7 @@
 .method public getVolumeDistortionCorrection()Ljava/lang/String;
     .locals 1
 
-    .line 1267
+    .line 1325
     const-string/jumbo v0, "volume-distortion-correction"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2881,7 +3158,7 @@
 .method public getWbTemperature()F
     .locals 1
 
-    .line 913
+    .line 957
     const-string/jumbo v0, "sony-whitebalance-temperature"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2900,7 +3177,7 @@
 .method public getWhiteBalance()Ljava/lang/String;
     .locals 1
 
-    .line 894
+    .line 938
     const-string/jumbo v0, "whitebalance"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2915,7 +3192,7 @@
 .method public getWhiteBalanceRatio()[I
     .locals 1
 
-    .line 905
+    .line 949
     const-string/jumbo v0, "white-balance-ratio"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2930,7 +3207,7 @@
 .method public getZoom()F
     .locals 1
 
-    .line 1001
+    .line 1047
     const-string/jumbo v0, "zoom-ratio"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2949,7 +3226,7 @@
 .method public isHighResolutionMode()Z
     .locals 1
 
-    .line 1387
+    .line 1445
     const-string v0, "photo-high-resolution"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2968,7 +3245,7 @@
 .method public isQuickRecord()Z
     .locals 1
 
-    .line 729
+    .line 773
     const-string v0, "is-quick-record"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
@@ -2987,14 +3264,14 @@
 .method public isSceneRecognitionOn()Z
     .locals 1
 
-    .line 1041
-    const-string v0, "scene-recognition"
+    .line 1087
+    const-string/jumbo v0, "scene-recognition"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
 
-    const-string v0, "scene-recognition-on"
+    const-string/jumbo v0, "scene-recognition-on"
 
     invoke-virtual {v0, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -3006,27 +3283,8 @@
 .method public isSlowMotion()Z
     .locals 1
 
-    .line 1211
+    .line 1269
     const-string v0, "is-slow-motion"
-
-    invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Ljava/lang/Boolean;
-
-    invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isStreaming()Z
-    .locals 1
-
-    .line 721
-    const-string v0, "is-streaming"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getKeyValue(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -3044,7 +3302,7 @@
 .method public needApply()Z
     .locals 0
 
-    .line 1488
+    .line 1688
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedApply:Z
 
     return p0
@@ -3053,7 +3311,7 @@
 .method public needCreatePreviewSession()Z
     .locals 0
 
-    .line 1496
+    .line 1696
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedCreatePreviewSession:Z
 
     return p0
@@ -3062,7 +3320,7 @@
 .method public removeGpsData()V
     .locals 1
 
-    .line 1201
+    .line 1259
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraParameters;->DEFAULT_GPS_DATA:Landroid/location/Location;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->setGpsData(Landroid/location/Location;)V
@@ -3075,7 +3333,7 @@
 
     const/4 v0, 0x1
 
-    .line 1484
+    .line 1684
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedApply:Z
 
     return-void
@@ -3083,8 +3341,16 @@
 
 .method public setAeMode(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "valueApi1"
+        }
+    .end annotation
 
-    .line 882
+    .line 926
     const-string/jumbo v0, "sony-ae-mode"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -3094,9 +3360,205 @@
 
 .method public setAfDriveMode(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mode"
+        }
+    .end annotation
 
-    .line 834
+    .line 878
     const-string/jumbo v0, "sony-af-drive-mode"
+
+    invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
+
+    return-void
+.end method
+
+.method public setAiSuggestionIqParameterIndex(I)V
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
+    .line 1622
+    const-string/jumbo v0, "sony-ai-suggestion-iq-parameter-index"
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
+
+    return-void
+.end method
+
+.method public setAiSuggestionMode(Ljava/lang/String;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
+    .line 1552
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getAiSuggestionMode()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 1553
+    const-string/jumbo v1, "sony-ai-suggestion-mode"
+
+    invoke-direct {p0, v1, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 1554
+    const-string v1, "on_scene_auto"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 1555
+    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    :cond_0
+    const/4 p1, 0x1
+
+    .line 1556
+    iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedCreatePreviewSession:Z
+
+    :cond_1
+    return-void
+.end method
+
+.method public setAiSuggestionParameterAWB([F)V
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
+    .line 1579
+    const-string/jumbo v0, "sony-ai-suggestion-awbColorCompensationAbGm"
+
+    invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
+
+    return-void
+.end method
+
+.method public setAiSuggestionParameterBS([F)V
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
+    .line 1611
+    const-string/jumbo v0, "sony-ai-suggestion-bokehStrength"
+
+    invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
+
+    return-void
+.end method
+
+.method public setAiSuggestionParameterCL([I)V
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
+    .line 1587
+    const-string/jumbo v0, "sony-ai-suggestion-colorToneProfile"
+
+    invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
+
+    return-void
+.end method
+
+.method public setAiSuggestionParameterCSF([I)V
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
+    .line 1603
+    const-string/jumbo v0, "sony-ai-suggestion-contrastScaleFactor"
+
+    invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
+
+    return-void
+.end method
+
+.method public setAiSuggestionParameterEV([I)V
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
+    .line 1571
+    const-string/jumbo v0, "sony-ai-suggestion-aeExposureCompensation"
+
+    invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
+
+    return-void
+.end method
+
+.method public setAiSuggestionParameterSSF([I)V
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
+    .line 1595
+    const-string/jumbo v0, "sony-ai-suggestion-saturationScaleFactor"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
 
@@ -3105,8 +3567,16 @@
 
 .method public setAperture(Ljava/lang/Float;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1233
+    .line 1291
     const-string v0, "aperture"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -3117,7 +3587,7 @@
 
     const/4 p1, 0x1
 
-    .line 1234
+    .line 1292
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedCreatePreviewSession:Z
 
     :cond_0
@@ -3126,8 +3596,16 @@
 
 .method public setAutoExposureLock(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "lock"
+        }
+    .end annotation
 
-    .line 945
+    .line 989
     const-string v0, "auto-exposure-lock"
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -3141,8 +3619,16 @@
 
 .method public setAutoFocusLock(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "valueApi1"
+        }
+    .end annotation
 
-    .line 937
+    .line 981
     const-string v0, "auto-focus-lock"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -3152,8 +3638,16 @@
 
 .method public setAutoFramingMode(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1430
+    .line 1488
     const-string/jumbo v0, "sony-auto-framing-mode"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -3163,8 +3657,16 @@
 
 .method public setAutoFramingOrientation(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1446
+    .line 1504
     const-string/jumbo v0, "sony-auto-framing-orientation"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -3174,8 +3676,16 @@
 
 .method public setAutoFramingSize(F)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1462
+    .line 1520
     const-string/jumbo v0, "sony-auto-framing-size"
 
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
@@ -3189,8 +3699,16 @@
 
 .method public setAutoWhiteBalanceLock(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "lock"
+        }
+    .end annotation
 
-    .line 953
+    .line 997
     const-string v0, "auto-white-balance-lock"
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -3204,8 +3722,16 @@
 
 .method public setAwbColorCompensationAb(F)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1005
+    .line 1051
     const-string/jumbo v0, "sony-awb-compensation-ab"
 
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
@@ -3219,8 +3745,16 @@
 
 .method public setAwbColorCompensationCustomGm(F)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1021
+    .line 1067
     const-string/jumbo v0, "sony-awb-compensation-custom-gm"
 
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
@@ -3234,8 +3768,16 @@
 
 .method public setAwbColorCompensationGm(F)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1013
+    .line 1059
     const-string/jumbo v0, "sony-awb-compensation-gm"
 
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
@@ -3249,8 +3791,16 @@
 
 .method public setAwbPriority(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1029
+    .line 1075
     const-string v0, "priority-set-in-awb"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -3260,8 +3810,16 @@
 
 .method public setBokehMode(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1215
+    .line 1273
     const-string/jumbo v0, "sony-bokeh-mode"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -3272,7 +3830,7 @@
 
     const/4 p1, 0x1
 
-    .line 1216
+    .line 1274
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedCreatePreviewSession:Z
 
     :cond_0
@@ -3281,8 +3839,16 @@
 
 .method public setBokehStrength(F)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1225
+    .line 1283
     const-string/jumbo v0, "sony-bokeh-strength"
 
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
@@ -3296,8 +3862,16 @@
 
 .method public setBurstFps(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "burstFpsRate"
+        }
+    .end annotation
 
-    .line 1351
+    .line 1409
     const-string/jumbo v0, "sony-burst-fps"
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -3311,8 +3885,16 @@
 
 .method public setCaptureFps(Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "captureFps"
+        }
+    .end annotation
 
-    .line 1110
+    .line 1176
     const-string v0, "capture-fps"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -3323,7 +3905,7 @@
 
     const/4 p1, 0x1
 
-    .line 1111
+    .line 1177
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedCreatePreviewSession:Z
 
     :cond_0
@@ -3332,8 +3914,16 @@
 
 .method public setCloseUpMode(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1391
+    .line 1449
     const-string/jumbo v0, "sony-close-up-mode"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -3344,7 +3934,7 @@
 
     const/4 p1, 0x1
 
-    .line 1392
+    .line 1450
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedCreatePreviewSession:Z
 
     :cond_0
@@ -3353,9 +3943,40 @@
 
 .method public setColorToneProfile(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1359
+    .line 1417
     const-string/jumbo v0, "sony-color-tone-profile"
+
+    invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
+
+    return-void
+.end method
+
+.method public setContrastScaleFactor(I)V
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
+    .line 1638
+    const-string/jumbo v0, "sony-contrast-scale-factor"
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
 
@@ -3364,8 +3985,16 @@
 
 .method public setDistortionCorrection(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "valueApi1"
+        }
+    .end annotation
 
-    .line 1251
+    .line 1309
     const-string v0, "distortion-correction"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -3375,8 +4004,16 @@
 
 .method public setExposureCompensation(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 842
+    .line 886
     const-string v0, "exposure-compensation-step"
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -3390,8 +4027,16 @@
 
 .method public setExposureTimeLimit(J)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 749
+    .line 793
     const-string/jumbo v0, "sony-shutter-speed-limit"
 
     invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -3405,8 +4050,16 @@
 
 .method public setExtendFps(Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1120
+    .line 1186
     const-string v0, "extend-fps"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -3417,7 +4070,7 @@
 
     const/4 p1, 0x1
 
-    .line 1121
+    .line 1187
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedCreatePreviewSession:Z
 
     :cond_0
@@ -3426,8 +4079,16 @@
 
 .method setFaceDetection(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 969
+    .line 1013
     const-string v0, "face-detection"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -3437,8 +4098,16 @@
 
 .method public setFallbackMode(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1315
+    .line 1373
     const-string/jumbo v0, "sony-fallback-mode"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -3448,8 +4117,16 @@
 
 .method public setFlashMode(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "valueApi1"
+        }
+    .end annotation
 
-    .line 933
+    .line 977
     const-string v0, "flash-mode"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -3459,8 +4136,16 @@
 
 .method public setFocusArea(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 802
+    .line 846
     const-string/jumbo v0, "sony-focus-area"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -3470,8 +4155,16 @@
 
 .method public setFocusDistance(F)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 757
+    .line 801
     const-string/jumbo v0, "sony-manual-focus"
 
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
@@ -3485,8 +4178,16 @@
 
 .method public setFocusMagnification(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 810
+    .line 854
     const-string/jumbo v0, "sony-focus-magnification"
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -3500,8 +4201,16 @@
 
 .method public setFocusMagnificationPosition(Landroid/graphics/Point;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 826
+    .line 870
     const-string/jumbo v0, "sony-focus-magnification-position"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -3511,8 +4220,16 @@
 
 .method public setFocusMagnificationRatio(F)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 818
+    .line 862
     const-string/jumbo v0, "sony-focus-magnification-ratio"
 
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
@@ -3526,8 +4243,16 @@
 
 .method public setFocusMode(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 765
+    .line 809
     const-string v0, "focus-mode"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -3537,6 +4262,15 @@
 
 .method public setFocusRectangles(Ljava/util/List;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "focusAreas"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3548,25 +4282,25 @@
 
     if-nez p1, :cond_0
 
-    .line 774
+    .line 818
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 775
+    .line 819
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
     invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 778
+    .line 822
     :cond_0
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getFocusRectangles()Ljava/util/List;
 
     move-result-object v0
 
-    .line 780
+    .line 824
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v1
@@ -3582,7 +4316,7 @@
     :cond_1
     const/4 v1, 0x0
 
-    .line 783
+    .line 827
     :goto_0
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -3590,7 +4324,7 @@
 
     if-ge v1, v2, :cond_3
 
-    .line 784
+    .line 828
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -3607,7 +4341,7 @@
 
     if-nez v2, :cond_2
 
-    .line 792
+    .line 836
     :goto_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mParameters:Ljava/util/Map;
 
@@ -3617,7 +4351,7 @@
 
     const/4 p1, 0x1
 
-    .line 793
+    .line 837
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedApply:Z
 
     goto :goto_2
@@ -3634,8 +4368,18 @@
 
 .method public setFpsRange(II)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "min",
+            "max"
+        }
+    .end annotation
 
-    .line 1053
+    .line 1099
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     const/4 v1, 0x1
@@ -3646,7 +4390,7 @@
 
     new-instance v2, Ljava/lang/StringBuilder;
 
-    const-string v3, "setFpsRange() : min = "
+    const-string/jumbo v3, "setFpsRange() : min = "
 
     invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
@@ -3674,13 +4418,13 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 1055
+    .line 1101
     :cond_0
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getFpsRange()Landroid/util/Range;
 
     move-result-object v0
 
-    .line 1056
+    .line 1102
     invoke-virtual {v0}, Landroid/util/Range;->getLower()Ljava/lang/Comparable;
 
     move-result-object v2
@@ -3707,7 +4451,7 @@
 
     return-void
 
-    .line 1060
+    .line 1106
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mParameters:Ljava/util/Map;
 
@@ -3727,7 +4471,7 @@
 
     invoke-interface {v0, p1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1061
+    .line 1107
     iput-boolean v1, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedApply:Z
 
     return-void
@@ -3735,8 +4479,16 @@
 
 .method public setFramingAssistPositionMode(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1475
+    .line 1536
     const-string/jumbo v0, "sony-framing-assist-position-mode"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -3746,8 +4498,16 @@
 
 .method public setGpsData(Landroid/location/Location;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "location"
+        }
+    .end annotation
 
-    .line 1192
+    .line 1250
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
@@ -3758,7 +4518,7 @@
 
     new-instance v1, Ljava/lang/StringBuilder;
 
-    const-string v2, "setGpsData() : location = "
+    const-string/jumbo v2, "setGpsData() : location = "
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
@@ -3776,7 +4536,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 1193
+    .line 1251
     :cond_0
     const-string v0, "gps-data"
 
@@ -3787,8 +4547,16 @@
 
 .method public setHandShutter(Ljp/co/sony/mc/camera/configuration/parameters/HandShutter;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1172
+    .line 1230
     const-string v0, "hand-shutter"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -3799,7 +4567,7 @@
 
     const/4 p1, 0x1
 
-    .line 1173
+    .line 1231
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedCreatePreviewSession:Z
 
     :cond_0
@@ -3808,8 +4576,16 @@
 
 .method public setHighResolutionMode(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1383
+    .line 1441
     const-string v0, "photo-high-resolution"
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -3823,8 +4599,16 @@
 
 .method public setHistogram(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1299
+    .line 1357
     const-string/jumbo v0, "sony-cinema-histogram"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -3834,8 +4618,16 @@
 
 .method public setHybridZoom(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 733
+    .line 777
     const-string/jumbo v0, "sony-photo-hybrid-zoom"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -3845,8 +4637,16 @@
 
 .method public setIsQuickRecord(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isQuickRecord"
+        }
+    .end annotation
 
-    .line 725
+    .line 769
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mParameters:Ljava/util/Map;
 
     const-string v0, "is-quick-record"
@@ -3860,27 +4660,18 @@
     return-void
 .end method
 
-.method public setIsStreaming(Z)V
-    .locals 1
-
-    .line 718
-    iget-object p0, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mParameters:Ljava/util/Map;
-
-    const-string v0, "is-streaming"
-
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object p1
-
-    invoke-interface {p0, v0, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    return-void
-.end method
-
 .method public setIso(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "valueApi1"
+        }
+    .end annotation
 
-    .line 925
+    .line 969
     const-string/jumbo v0, "sony-iso"
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -3894,8 +4685,16 @@
 
 .method public setLowLightMode(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1307
+    .line 1365
     const-string/jumbo v0, "sony-low-light-mode"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -3903,8 +4702,46 @@
     return-void
 .end method
 
+.method public setMainPreviewSurfaceSize(Landroid/util/Size;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "size"
+        }
+    .end annotation
+
+    .line 1129
+    const-string/jumbo v0, "surface-size"
+
+    invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    const/4 p1, 0x1
+
+    .line 1130
+    iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedCreatePreviewSession:Z
+
+    :cond_0
+    return-void
+.end method
+
 .method public setMeteringArea(Ljava/util/List;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "areas"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3916,7 +4753,7 @@
 
     if-eqz p1, :cond_3
 
-    .line 858
+    .line 902
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v0
@@ -3927,7 +4764,7 @@
 
     goto :goto_0
 
-    .line 861
+    .line 905
     :cond_0
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
@@ -3943,7 +4780,7 @@
 
     invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 862
+    .line 906
     invoke-interface {p1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
@@ -3958,10 +4795,10 @@
 
     aput-object v3, v0, v2
 
-    .line 861
+    .line 905
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 864
+    .line 908
     :cond_1
     invoke-interface {p1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -3973,7 +4810,7 @@
 
     move-result v0
 
-    .line 865
+    .line 909
     invoke-interface {p1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
@@ -3984,7 +4821,7 @@
 
     move-result p1
 
-    .line 866
+    .line 910
     new-instance v2, Landroid/graphics/Rect;
 
     add-int/lit8 v3, v0, 0x1
@@ -3993,12 +4830,12 @@
 
     invoke-direct {v2, v0, p1, v3, v4}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    .line 867
+    .line 911
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getMeteringArea()Landroid/graphics/Rect;
 
     move-result-object p1
 
-    .line 868
+    .line 912
     iget v0, v2, Landroid/graphics/Rect;->left:I
 
     iget v3, p1, Landroid/graphics/Rect;->left:I
@@ -4023,7 +4860,7 @@
 
     if-eq v0, p1, :cond_3
 
-    .line 872
+    .line 916
     :cond_2
     iget-object p1, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mParameters:Ljava/util/Map;
 
@@ -4031,7 +4868,7 @@
 
     invoke-interface {p1, v0, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 873
+    .line 917
     iput-boolean v1, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedApply:Z
 
     :cond_3
@@ -4041,8 +4878,16 @@
 
 .method public setMeteringMode(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 850
+    .line 894
     const-string/jumbo v0, "sony-metering-mode"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -4052,8 +4897,16 @@
 
 .method public setMultiFrameNrMode(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1291
+    .line 1349
     const-string/jumbo v0, "sony-multi-frame-nr-mode"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -4063,8 +4916,16 @@
 
 .method public setPeakingMode(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1243
+    .line 1301
     const-string/jumbo v0, "sony-photopro-peaking-mode"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -4074,8 +4935,16 @@
 
 .method public setPhotoFormat(Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1375
+    .line 1433
     const-string/jumbo v0, "sony-photo_format"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -4085,8 +4954,16 @@
 
 .method public setPictureSize(Landroid/graphics/Rect;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "rect"
+        }
+    .end annotation
 
-    .line 1089
+    .line 1155
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     const/4 v1, 0x1
@@ -4119,7 +4996,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 1090
+    .line 1156
     :cond_0
     const-string v0, "picture-size"
 
@@ -4129,7 +5006,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 1091
+    .line 1157
     iput-boolean v1, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedCreatePreviewSession:Z
 
     :cond_1
@@ -4138,8 +5015,16 @@
 
 .method public setPowerMode(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "valueApi1"
+        }
+    .end annotation
 
-    .line 741
+    .line 785
     const-string/jumbo v0, "sony-power-save-mode"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -4149,8 +5034,16 @@
 
 .method public setPreviewSize(Landroid/graphics/Rect;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "rect"
+        }
+    .end annotation
 
-    .line 1069
+    .line 1115
     const-string v0, "preview-size"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -4161,7 +5054,7 @@
 
     const/4 p1, 0x1
 
-    .line 1070
+    .line 1116
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedCreatePreviewSession:Z
 
     :cond_0
@@ -4170,8 +5063,16 @@
 
 .method public setProductShowcase(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1367
+    .line 1425
     const-string/jumbo v0, "sony-product-showcase-mode"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -4181,8 +5082,16 @@
 
 .method public setQrCodeDetection(Ljp/co/sony/mc/camera/configuration/parameters/QrCodeDetection;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1182
+    .line 1240
     const-string v0, "qr-code-detection"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -4193,7 +5102,7 @@
 
     const/4 p1, 0x1
 
-    .line 1183
+    .line 1241
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedCreatePreviewSession:Z
 
     :cond_0
@@ -4202,8 +5111,16 @@
 
 .method public setRotation(I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "orientation"
+        }
+    .end annotation
 
-    .line 1323
+    .line 1381
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
@@ -4232,7 +5149,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 1325
+    .line 1383
     :cond_0
     const-string v0, "rotation"
 
@@ -4245,11 +5162,42 @@
     return-void
 .end method
 
+.method public setSaturationScaleFactor(I)V
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
+    .line 1654
+    const-string/jumbo v0, "sony-saturation-scale-factor"
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
+
+    return-void
+.end method
+
 .method public setSceneRecognition(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1037
-    const-string v0, "scene-recognition"
+    .line 1083
+    const-string/jumbo v0, "scene-recognition"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
 
@@ -4258,8 +5206,16 @@
 
 .method public setShutterSpeed(J)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 917
+    .line 961
     const-string/jumbo v0, "sony-shutter-speed"
 
     invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -4273,8 +5229,16 @@
 
 .method public setSlowMotion(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "slowMotion"
+        }
+    .end annotation
 
-    .line 1205
+    .line 1263
     const-string v0, "is-slow-motion"
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -4289,7 +5253,7 @@
 
     const/4 p1, 0x1
 
-    .line 1206
+    .line 1264
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedCreatePreviewSession:Z
 
     :cond_0
@@ -4298,8 +5262,16 @@
 
 .method public setSoftSkin(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1045
+    .line 1091
     const-string/jumbo v0, "sony-soft-skin-level"
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -4313,31 +5285,17 @@
 
 .method public setStillHdr(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 977
+    .line 1021
     const-string/jumbo v0, "sony-is"
-
-    invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
-
-    return-void
-.end method
-
-.method public setSuperResolutionZoom(Ljava/lang/String;)V
-    .locals 1
-
-    .line 1343
-    const-string/jumbo v0, "sony-super-resolution-zoom"
-
-    invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
-
-    return-void
-.end method
-
-.method public setSurfaceSize(Landroid/util/Size;)V
-    .locals 1
-
-    .line 1083
-    const-string/jumbo v0, "surface-size"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
 
@@ -4347,17 +5305,121 @@
 
     const/4 p1, 0x1
 
-    .line 1084
+    .line 1022
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedCreatePreviewSession:Z
 
     :cond_0
     return-void
 .end method
 
+.method public setSubPreviewSurfaceDisplayedIndex([Ljava/lang/Integer;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "displayedIndex"
+        }
+    .end annotation
+
+    .line 1145
+    const-string/jumbo v0, "sub-surface-displayed-index"
+
+    invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    const/4 p1, 0x1
+
+    .line 1146
+    iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedCreatePreviewSession:Z
+
+    :cond_0
+    return-void
+.end method
+
+.method public setSubPreviewSurfaceSize([Landroid/util/Size;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "size"
+        }
+    .end annotation
+
+    .line 1139
+    const-string/jumbo v0, "sub-surface-size"
+
+    invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    const/4 p1, 0x1
+
+    .line 1140
+    iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedCreatePreviewSession:Z
+
+    :cond_0
+    return-void
+.end method
+
+.method public setSuperResolutionZoom(Ljava/lang/String;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
+    .line 1401
+    const-string/jumbo v0, "sony-super-resolution-zoom"
+
+    invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
+
+    return-void
+.end method
+
+.method public setTripodFramingIndicatorMode(Ljava/lang/String;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "valueApi1"
+        }
+    .end annotation
+
+    .line 1670
+    const-string/jumbo v0, "sony-tripod-framing-indicator-mode"
+
+    invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
+
+    return-void
+.end method
+
 .method public setUiOrientation(I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "orientation"
+        }
+    .end annotation
 
-    .line 1333
+    .line 1391
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
@@ -4386,7 +5448,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 1335
+    .line 1393
     :cond_0
     const-string/jumbo v0, "ui-rotation"
 
@@ -4401,8 +5463,16 @@
 
 .method public setUltraHdr(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1401
+    .line 1459
     const-string/jumbo v0, "ultra_hdr"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -4413,7 +5483,7 @@
 
     const/4 p1, 0x1
 
-    .line 1402
+    .line 1460
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedCreatePreviewSession:Z
 
     :cond_0
@@ -4422,8 +5492,16 @@
 
 .method public setUsecase(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1271
+    .line 1329
     const-string/jumbo v0, "usecase"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -4433,8 +5511,16 @@
 
 .method public setVideoHdr(Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "videoHdr"
+        }
+    .end annotation
 
-    .line 1150
+    .line 1216
     const-string/jumbo v0, "video-hdr"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -4445,7 +5531,7 @@
 
     const/4 p1, 0x1
 
-    .line 1151
+    .line 1217
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedCreatePreviewSession:Z
 
     :cond_0
@@ -4454,8 +5540,16 @@
 
 .method public setVideoMfHdrMode(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 985
+    .line 1031
     const-string/jumbo v0, "video-multi-frame-hdr-mode"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -4466,28 +5560,25 @@
 
     const/4 p1, 0x1
 
-    .line 986
+    .line 1032
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedCreatePreviewSession:Z
 
     :cond_0
     return-void
 .end method
 
-.method public setVideoQuality(Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;)V
-    .locals 1
-
-    .line 1160
-    const-string/jumbo v0, "video-quality"
-
-    invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
-
-    return-void
-.end method
-
 .method public setVideoSensitivitySmoothingMode(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1414
+    .line 1472
     const-string/jumbo v0, "video-sensitivity-smoothing-mode"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -4497,8 +5588,16 @@
 
 .method public setVideoSize(Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "videoSize"
+        }
+    .end annotation
 
-    .line 1100
+    .line 1166
     const-string/jumbo v0, "video-size"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -4509,7 +5608,7 @@
 
     const/4 p1, 0x1
 
-    .line 1101
+    .line 1167
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedCreatePreviewSession:Z
 
     :cond_0
@@ -4518,8 +5617,16 @@
 
 .method public setVideoSnapshotSize(Landroid/graphics/Rect;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "videoSnapshotSize"
+        }
+    .end annotation
 
-    .line 1130
+    .line 1196
     const-string/jumbo v0, "video-snapshot-size"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -4530,7 +5637,7 @@
 
     const/4 p1, 0x1
 
-    .line 1131
+    .line 1197
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedCreatePreviewSession:Z
 
     :cond_0
@@ -4539,8 +5646,16 @@
 
 .method public setVideoStabilizationMode(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1144
+    .line 1210
     const-string/jumbo v0, "video-stabilization-mode"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -4551,7 +5666,7 @@
 
     const/4 p1, 0x1
 
-    .line 1145
+    .line 1211
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedCreatePreviewSession:Z
 
     :cond_0
@@ -4560,8 +5675,16 @@
 
 .method public setVideoStabilizer(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 1140
+    .line 1206
     const-string/jumbo v0, "sony-vs"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -4571,8 +5694,16 @@
 
 .method public setVolumeDistortionCorrection(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "valueApi1"
+        }
+    .end annotation
 
-    .line 1263
+    .line 1321
     const-string/jumbo v0, "volume-distortion-correction"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -4582,8 +5713,16 @@
 
 .method public setWbTemperature(F)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 909
+    .line 953
     const-string/jumbo v0, "sony-whitebalance-temperature"
 
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
@@ -4597,8 +5736,16 @@
 
 .method public setWhiteBalance(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "valueApi1"
+        }
+    .end annotation
 
-    .line 890
+    .line 934
     const-string/jumbo v0, "whitebalance"
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->setKeyValue(Ljava/lang/String;Ljava/lang/Object;)Z
@@ -4608,8 +5755,16 @@
 
 .method public setWhiteBalanceRatio([I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 898
+    .line 942
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getWhiteBalanceRatio()[I
 
     move-result-object v0
@@ -4620,7 +5775,7 @@
 
     if-nez v0, :cond_0
 
-    .line 899
+    .line 943
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mParameters:Ljava/util/Map;
 
     const-string/jumbo v1, "white-balance-ratio"
@@ -4629,7 +5784,7 @@
 
     const/4 p1, 0x1
 
-    .line 900
+    .line 944
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraParameters;->mNeedApply:Z
 
     :cond_0
@@ -4638,8 +5793,16 @@
 
 .method public setZoom(F)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "zoomRatio"
+        }
+    .end annotation
 
-    .line 995
+    .line 1041
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
@@ -4668,7 +5831,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 997
+    .line 1043
     :cond_0
     const-string/jumbo v0, "zoom-ratio"
 

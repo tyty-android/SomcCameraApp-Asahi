@@ -32,7 +32,7 @@
 .method static constructor <clinit>()V
     .locals 4
 
-    .line 1261
+    .line 1365
     :try_start_0
     invoke-static {}, Lsun/misc/Unsafe;->getUnsafe()Lsun/misc/Unsafe;
 
@@ -42,14 +42,14 @@
 
     goto :goto_0
 
-    .line 1264
+    .line 1368
     :catch_0
     :try_start_1
     new-instance v0, Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper$1;
 
     invoke-direct {v0}, Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper$1;-><init>()V
 
-    .line 1265
+    .line 1369
     invoke-static {v0}, Ljava/security/AccessController;->doPrivileged(Ljava/security/PrivilegedExceptionAction;)Ljava/lang/Object;
 
     move-result-object v0
@@ -58,12 +58,12 @@
     :try_end_1
     .catch Ljava/security/PrivilegedActionException; {:try_start_1 .. :try_end_1} :catch_2
 
-    .line 1285
+    .line 1389
     :goto_0
     :try_start_2
     const-class v1, Lcom/google/common/util/concurrent/AbstractFuture;
 
-    .line 1286
+    .line 1390
     const-string v2, "waiters"
 
     invoke-virtual {v1, v2}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
@@ -76,7 +76,7 @@
 
     sput-wide v2, Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->WAITERS_OFFSET:J
 
-    .line 1287
+    .line 1391
     const-string v2, "listeners"
 
     invoke-virtual {v1, v2}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
@@ -89,7 +89,7 @@
 
     sput-wide v2, Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->LISTENERS_OFFSET:J
 
-    .line 1288
+    .line 1392
     const-string v2, "value"
 
     invoke-virtual {v1, v2}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
@@ -102,7 +102,7 @@
 
     sput-wide v1, Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->VALUE_OFFSET:J
 
-    .line 1289
+    .line 1393
     const-class v1, Lcom/google/common/util/concurrent/AbstractFuture$Waiter;
 
     const-string v2, "thread"
@@ -117,7 +117,7 @@
 
     sput-wide v1, Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->WAITER_THREAD_OFFSET:J
 
-    .line 1290
+    .line 1394
     const-class v1, Lcom/google/common/util/concurrent/AbstractFuture$Waiter;
 
     const-string v2, "next"
@@ -132,20 +132,17 @@
 
     sput-wide v1, Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->WAITER_NEXT_OFFSET:J
 
-    .line 1291
+    .line 1395
     sput-object v0, Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->UNSAFE:Lsun/misc/Unsafe;
     :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
+    .catch Ljava/lang/NoSuchFieldException; {:try_start_2 .. :try_end_2} :catch_1
 
     return-void
 
     :catch_1
     move-exception v0
 
-    .line 1293
-    invoke-static {v0}, Lcom/google/common/base/Throwables;->throwIfUnchecked(Ljava/lang/Throwable;)V
-
-    .line 1294
+    .line 1397
     new-instance v1, Ljava/lang/RuntimeException;
 
     invoke-direct {v1, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
@@ -155,7 +152,7 @@
     :catch_2
     move-exception v0
 
-    .line 1281
+    .line 1385
     new-instance v1, Ljava/lang/RuntimeException;
 
     const-string v2, "Could not initialize intrinsics"
@@ -174,7 +171,7 @@
 
     const/4 v0, 0x0
 
-    .line 1250
+    .line 1354
     invoke-direct {p0, v0}, Lcom/google/common/util/concurrent/AbstractFuture$AtomicHelper;-><init>(Lcom/google/common/util/concurrent/AbstractFuture$1;)V
 
     return-void
@@ -183,7 +180,7 @@
 .method synthetic constructor <init>(Lcom/google/common/util/concurrent/AbstractFuture$1;)V
     .locals 0
 
-    .line 1250
+    .line 1354
     invoke-direct {p0}, Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;-><init>()V
 
     return-void
@@ -193,6 +190,23 @@
 # virtual methods
 .method casListeners(Lcom/google/common/util/concurrent/AbstractFuture;Lcom/google/common/util/concurrent/AbstractFuture$Listener;Lcom/google/common/util/concurrent/AbstractFuture$Listener;)Z
     .locals 6
+    .param p2    # Lcom/google/common/util/concurrent/AbstractFuture$Listener;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "future",
+            "expect",
+            "update"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -204,7 +218,7 @@
         }
     .end annotation
 
-    .line 1317
+    .line 1419
     sget-object v0, Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->UNSAFE:Lsun/misc/Unsafe;
 
     sget-wide v2, Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->LISTENERS_OFFSET:J
@@ -224,6 +238,23 @@
 
 .method casValue(Lcom/google/common/util/concurrent/AbstractFuture;Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 6
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "future",
+            "expect",
+            "update"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -235,7 +266,7 @@
         }
     .end annotation
 
-    .line 1323
+    .line 1450
     sget-object v0, Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->UNSAFE:Lsun/misc/Unsafe;
 
     sget-wide v2, Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->VALUE_OFFSET:J
@@ -255,6 +286,27 @@
 
 .method casWaiters(Lcom/google/common/util/concurrent/AbstractFuture;Lcom/google/common/util/concurrent/AbstractFuture$Waiter;Lcom/google/common/util/concurrent/AbstractFuture$Waiter;)Z
     .locals 6
+    .param p2    # Lcom/google/common/util/concurrent/AbstractFuture$Waiter;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .param p3    # Lcom/google/common/util/concurrent/AbstractFuture$Waiter;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "future",
+            "expect",
+            "update"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -266,7 +318,7 @@
         }
     .end annotation
 
-    .line 1311
+    .line 1414
     sget-object v0, Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->UNSAFE:Lsun/misc/Unsafe;
 
     sget-wide v2, Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->WAITERS_OFFSET:J
@@ -284,10 +336,114 @@
     return p0
 .end method
 
+.method gasListeners(Lcom/google/common/util/concurrent/AbstractFuture;Lcom/google/common/util/concurrent/AbstractFuture$Listener;)Lcom/google/common/util/concurrent/AbstractFuture$Listener;
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "future",
+            "update"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/common/util/concurrent/AbstractFuture<",
+            "*>;",
+            "Lcom/google/common/util/concurrent/AbstractFuture$Listener;",
+            ")",
+            "Lcom/google/common/util/concurrent/AbstractFuture$Listener;"
+        }
+    .end annotation
+
+    .line 1425
+    :cond_0
+    invoke-static {p1}, Lcom/google/common/util/concurrent/AbstractFuture;->access$700(Lcom/google/common/util/concurrent/AbstractFuture;)Lcom/google/common/util/concurrent/AbstractFuture$Listener;
+
+    move-result-object v0
+
+    if-ne p2, v0, :cond_1
+
+    return-object v0
+
+    .line 1429
+    :cond_1
+    invoke-virtual {p0, p1, v0, p2}, Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->casListeners(Lcom/google/common/util/concurrent/AbstractFuture;Lcom/google/common/util/concurrent/AbstractFuture$Listener;Lcom/google/common/util/concurrent/AbstractFuture$Listener;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    return-object v0
+.end method
+
+.method gasWaiters(Lcom/google/common/util/concurrent/AbstractFuture;Lcom/google/common/util/concurrent/AbstractFuture$Waiter;)Lcom/google/common/util/concurrent/AbstractFuture$Waiter;
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "future",
+            "update"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/common/util/concurrent/AbstractFuture<",
+            "*>;",
+            "Lcom/google/common/util/concurrent/AbstractFuture$Waiter;",
+            ")",
+            "Lcom/google/common/util/concurrent/AbstractFuture$Waiter;"
+        }
+    .end annotation
+
+    .line 1438
+    :cond_0
+    invoke-static {p1}, Lcom/google/common/util/concurrent/AbstractFuture;->access$800(Lcom/google/common/util/concurrent/AbstractFuture;)Lcom/google/common/util/concurrent/AbstractFuture$Waiter;
+
+    move-result-object v0
+
+    if-ne p2, v0, :cond_1
+
+    return-object v0
+
+    .line 1442
+    :cond_1
+    invoke-virtual {p0, p1, v0, p2}, Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->casWaiters(Lcom/google/common/util/concurrent/AbstractFuture;Lcom/google/common/util/concurrent/AbstractFuture$Waiter;Lcom/google/common/util/concurrent/AbstractFuture$Waiter;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    return-object v0
+.end method
+
 .method putNext(Lcom/google/common/util/concurrent/AbstractFuture$Waiter;Lcom/google/common/util/concurrent/AbstractFuture$Waiter;)V
     .locals 2
+    .param p2    # Lcom/google/common/util/concurrent/AbstractFuture$Waiter;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "waiter",
+            "newValue"
+        }
+    .end annotation
 
-    .line 1305
+    .line 1408
     sget-object p0, Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->UNSAFE:Lsun/misc/Unsafe;
 
     sget-wide v0, Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->WAITER_NEXT_OFFSET:J
@@ -299,8 +455,18 @@
 
 .method putThread(Lcom/google/common/util/concurrent/AbstractFuture$Waiter;Ljava/lang/Thread;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "waiter",
+            "newValue"
+        }
+    .end annotation
 
-    .line 1300
+    .line 1403
     sget-object p0, Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->UNSAFE:Lsun/misc/Unsafe;
 
     sget-wide v0, Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper;->WAITER_THREAD_OFFSET:J

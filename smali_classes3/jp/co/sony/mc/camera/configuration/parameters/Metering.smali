@@ -77,7 +77,7 @@
     .line 25
     new-instance v6, Ljp/co/sony/mc/camera/configuration/parameters/Metering;
 
-    const v4, 0x7f11032a
+    const v4, 0x7f110373
 
     const-string v5, "multi"
 
@@ -85,7 +85,7 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f080256
+    const v3, 0x7f0802b1
 
     move-object v0, v6
 
@@ -96,7 +96,7 @@
     .line 29
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Metering;
 
-    const v11, 0x7f110329
+    const v11, 0x7f110372
 
     const-string v12, "center-weighted"
 
@@ -104,7 +104,7 @@
 
     const/4 v9, 0x1
 
-    const v10, 0x7f080253
+    const v10, 0x7f0802ae
 
     move-object v7, v0
 
@@ -115,7 +115,7 @@
     .line 33
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Metering;
 
-    const v5, 0x7f11032b
+    const v5, 0x7f110374
 
     const-string/jumbo v6, "spot"
 
@@ -123,7 +123,7 @@
 
     const/4 v3, 0x2
 
-    const v4, 0x7f080259
+    const v4, 0x7f0802b4
 
     move-object v1, v0
 
@@ -211,6 +211,23 @@
 
 .method private constructor <init>(Ljava/lang/String;IIILjava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -245,6 +262,18 @@
 
 .method public static getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/ComputationalMode;)Ljp/co/sony/mc/camera/configuration/parameters/Metering;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId",
+            "computationalMode"
+        }
+    .end annotation
 
     .line 171
     invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/configuration/parameters/Metering;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/ComputationalMode;)[Ljp/co/sony/mc/camera/configuration/parameters/Metering;
@@ -294,6 +323,18 @@
 
 .method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/ComputationalMode;)[Ljp/co/sony/mc/camera/configuration/parameters/Metering;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId",
+            "computationalMode"
+        }
+    .end annotation
 
     .line 129
     new-instance v0, Ljava/util/ArrayList;
@@ -411,6 +452,17 @@
 
 .method private static isParameterSupported(Ljp/co/sony/mc/camera/configuration/parameters/Metering;Ljava/util/List;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "value",
+            "supportedValues"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -462,6 +514,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/Metering;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 24
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/Metering;

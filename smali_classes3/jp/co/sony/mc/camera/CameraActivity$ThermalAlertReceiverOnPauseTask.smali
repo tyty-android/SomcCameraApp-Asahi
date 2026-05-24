@@ -24,8 +24,16 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/CameraActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 1518
+    .line 1521
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$ThermalAlertReceiverOnPauseTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +54,7 @@
 .method public run()V
     .locals 2
 
-    .line 1521
+    .line 1524
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraActivity$ThermalAlertReceiverOnPauseTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmBackgroundWorkLock(Ljp/co/sony/mc/camera/CameraActivity;)Ljava/lang/Object;
@@ -55,7 +63,7 @@
 
     monitor-enter v0
 
-    .line 1522
+    .line 1525
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/CameraActivity$ThermalAlertReceiverOnPauseTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
@@ -65,7 +73,7 @@
 
     if-nez v1, :cond_0
 
-    .line 1523
+    .line 1526
     iget-object v1, p0, Ljp/co/sony/mc/camera/CameraActivity$ThermalAlertReceiverOnPauseTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmThermalAlertReceiver(Ljp/co/sony/mc/camera/CameraActivity;)Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver;
@@ -74,7 +82,7 @@
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver;->onPause()V
 
-    .line 1524
+    .line 1527
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$ThermalAlertReceiverOnPauseTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmBatteryChangedReceiver(Ljp/co/sony/mc/camera/CameraActivity;)Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;
@@ -83,14 +91,14 @@
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->onPause()V
 
-    .line 1526
+    .line 1529
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddLaunchEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddLaunchEvent$Context;
 
     const/4 v1, 0x0
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/idd/event/IddLaunchEvent$Context;->setHighTemperature(Z)V
 
-    .line 1528
+    .line 1531
     :cond_0
     monitor-exit v0
 

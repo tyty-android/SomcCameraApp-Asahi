@@ -33,8 +33,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
-    .line 831
+    .line 864
     iput-object p1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList$WrappedListIterator;->this$1:Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList;
 
     invoke-direct {p0, p1}, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedCollection$WrappedIterator;-><init>(Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedCollection;)V
@@ -44,11 +52,21 @@
 
 .method public constructor <init>(Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$1",
+            "index"
+        }
+    .end annotation
 
-    .line 833
+    .line 866
     iput-object p1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList$WrappedListIterator;->this$1:Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList;
 
-    .line 834
+    .line 867
     invoke-virtual {p1}, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList;->getListDelegate()Ljava/util/List;
 
     move-result-object v0
@@ -72,7 +90,7 @@
         }
     .end annotation
 
-    .line 838
+    .line 871
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList$WrappedListIterator;->getDelegateIterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -86,27 +104,40 @@
 # virtual methods
 .method public add(Ljava/lang/Object;)V
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TV;)V"
         }
     .end annotation
 
-    .line 868
+    .line 902
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList$WrappedListIterator;->this$1:Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList;
 
     invoke-virtual {v0}, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList;->isEmpty()Z
 
     move-result v0
 
-    .line 869
+    .line 903
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList$WrappedListIterator;->getDelegateListIterator()Ljava/util/ListIterator;
 
     move-result-object v1
 
     invoke-interface {v1, p1}, Ljava/util/ListIterator;->add(Ljava/lang/Object;)V
 
-    .line 870
+    .line 904
     iget-object p1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList$WrappedListIterator;->this$1:Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList;
 
     iget-object p1, p1, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList;->this$0:Lcom/google/common/collect/AbstractMapBasedMultimap;
@@ -115,7 +146,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 872
+    .line 906
     iget-object p0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList$WrappedListIterator;->this$1:Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList;
 
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList;->addToMap()V
@@ -127,7 +158,7 @@
 .method public hasPrevious()Z
     .locals 0
 
-    .line 843
+    .line 876
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList$WrappedListIterator;->getDelegateListIterator()Ljava/util/ListIterator;
 
     move-result-object p0
@@ -142,7 +173,7 @@
 .method public nextIndex()I
     .locals 0
 
-    .line 853
+    .line 887
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList$WrappedListIterator;->getDelegateListIterator()Ljava/util/ListIterator;
 
     move-result-object p0
@@ -156,13 +187,16 @@
 
 .method public previous()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TV;"
         }
     .end annotation
 
-    .line 848
+    .line 882
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList$WrappedListIterator;->getDelegateListIterator()Ljava/util/ListIterator;
 
     move-result-object p0
@@ -177,7 +211,7 @@
 .method public previousIndex()I
     .locals 0
 
-    .line 858
+    .line 892
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList$WrappedListIterator;->getDelegateListIterator()Ljava/util/ListIterator;
 
     move-result-object p0
@@ -191,13 +225,26 @@
 
 .method public set(Ljava/lang/Object;)V
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TV;)V"
         }
     .end annotation
 
-    .line 863
+    .line 897
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList$WrappedListIterator;->getDelegateListIterator()Ljava/util/ListIterator;
 
     move-result-object p0

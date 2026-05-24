@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field private final mCallback39:Landroid/view/View$OnClickListener;
+.field private final mCallback33:Landroid/view/View$OnClickListener;
 
 .field private mDirtyFlags:J
 
@@ -31,7 +31,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialTitleBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0904b6
+    const v1, 0x7f0904b5
 
     const/4 v2, 0x5
 
@@ -43,6 +43,16 @@
 
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root"
+        }
+    .end annotation
 
     .line 30
     sget-object v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialTitleBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -62,6 +72,18 @@
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
     .locals 11
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root",
+            "bindings"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -161,7 +183,7 @@
 
     invoke-direct {p1, p0, v0}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
 
-    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialTitleBindingImpl;->mCallback39:Landroid/view/View$OnClickListener;
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialTitleBindingImpl;->mCallback33:Landroid/view/View$OnClickListener;
 
     .line 49
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialTitleBindingImpl;->invalidateAll()V
@@ -171,6 +193,17 @@
 
 .method private onChangeProModeCommonUiStateFnItemLabelTitleTextId(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ProModeCommonUiStateFnItemLabelTitleTextId",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -219,6 +252,17 @@
 
 .method private onChangeProModeCommonUiStateFnItemLabelValueText(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ProModeCommonUiStateFnItemLabelValueText",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -267,6 +311,17 @@
 
 .method private onChangeProModeCommonUiStateFnItemLabelVisible(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ProModeCommonUiStateFnItemLabelVisible",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -315,6 +370,17 @@
 
 .method private onChangeProModeCommonUiStatePopupMenuInfoSrc(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ProModeCommonUiStatePopupMenuInfoSrc",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -363,6 +429,17 @@
 
 .method private onChangeViewFinderUiStateIsViewFinderItemClickable(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ViewFinderUiStateIsViewFinderItemClickable",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -413,6 +490,16 @@
 # virtual methods
 .method public final _internalCallbackOnClick(ILandroid/view/View;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sourceId",
+            "callbackArg_0"
+        }
+    .end annotation
 
     .line 321
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialTitleBindingImpl;->mProModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
@@ -737,7 +824,7 @@
     .line 284
     iget-object v14, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialTitleBindingImpl;->close:Landroid/widget/ImageButton;
 
-    iget-object v15, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialTitleBindingImpl;->mCallback39:Landroid/view/View$OnClickListener;
+    iget-object v15, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialTitleBindingImpl;->mCallback33:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v14, v15}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -913,6 +1000,18 @@
 
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "localFieldId",
+            "object",
+            "fieldId"
+        }
+    .end annotation
 
     if-eqz p1, :cond_4
 
@@ -989,6 +1088,14 @@
 
 .method public setProModeCommonUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ProModeCommonUiState"
+        }
+    .end annotation
 
     .line 94
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialTitleBindingImpl;->mProModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
@@ -1011,7 +1118,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x18
+    const/16 p1, 0x1b
 
     .line 98
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialTitleBindingImpl;->notifyPropertyChanged(I)V
@@ -1035,8 +1142,18 @@
 
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "variableId",
+            "variable"
+        }
+    .end annotation
 
-    const/16 v0, 0x25
+    const/16 v0, 0x28
 
     if-ne v0, p1, :cond_0
 
@@ -1048,7 +1165,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x18
+    const/16 v0, 0x1b
 
     if-ne v0, p1, :cond_1
 
@@ -1071,6 +1188,14 @@
 
 .method public setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ViewFinderUiState"
+        }
+    .end annotation
 
     .line 86
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialTitleBindingImpl;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
@@ -1093,7 +1218,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x25
+    const/16 p1, 0x28
 
     .line 90
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialTitleBindingImpl;->notifyPropertyChanged(I)V

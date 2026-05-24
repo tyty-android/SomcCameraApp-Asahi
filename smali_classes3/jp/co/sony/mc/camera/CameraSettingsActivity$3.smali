@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/CameraSettingsActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 536
+    .line 538
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$3;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +46,7 @@
 .method public run()V
     .locals 0
 
-    .line 539
+    .line 541
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$3;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->updateSetting()V

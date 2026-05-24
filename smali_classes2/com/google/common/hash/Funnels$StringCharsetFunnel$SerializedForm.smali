@@ -28,11 +28,19 @@
 # direct methods
 .method constructor <init>(Ljava/nio/charset/Charset;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "charset"
+        }
+    .end annotation
 
-    .line 126
+    .line 134
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 127
+    .line 135
     invoke-virtual {p1}, Ljava/nio/charset/Charset;->name()Ljava/lang/String;
 
     move-result-object p1
@@ -45,7 +53,7 @@
 .method private readResolve()Ljava/lang/Object;
     .locals 0
 
-    .line 131
+    .line 139
     iget-object p0, p0, Lcom/google/common/hash/Funnels$StringCharsetFunnel$SerializedForm;->charsetCanonicalName:Ljava/lang/String;
 
     invoke-static {p0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;

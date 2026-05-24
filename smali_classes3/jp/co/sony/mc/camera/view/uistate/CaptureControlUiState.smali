@@ -13,7 +13,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0084\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u001c\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0008\n\n\u0002\u0010\u0008\n\u0002\u0008\u0004\n\u0002\u0010\t\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0002\u0008*\u0008\u0007\u0018\u00002\u00020\u0001:\u0002\u0086\u0001B7\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\u0008\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\u0006\u0010\u000c\u001a\u00020\r\u00a2\u0006\u0004\u0008\u000e\u0010\u000fJ\u000e\u0010V\u001a\u00020<2\u0006\u0010W\u001a\u00020XJ\u0006\u0010Y\u001a\u00020<J\u0006\u0010Z\u001a\u00020\u0018J\u0014\u0010Y\u001a\u00020<2\u000c\u0010[\u001a\u0008\u0012\u0004\u0012\u00020]0\\J\u0006\u0010^\u001a\u00020<J\u0006\u0010_\u001a\u00020<J\u0006\u0010`\u001a\u00020<J\u0006\u0010=\u001a\u00020<J\u000e\u0010a\u001a\u00020<2\u0006\u0010@\u001a\u00020\u0018J\u0006\u0010b\u001a\u00020<J\u0006\u0010c\u001a\u00020<J\u0006\u0010d\u001a\u00020<J\u0006\u0010e\u001a\u00020<J\u0006\u0010f\u001a\u00020<J\u0006\u0010g\u001a\u00020<J\u0006\u0010h\u001a\u00020<J\u0006\u0010i\u001a\u00020<J\u0006\u0010j\u001a\u00020\u0018J\u0006\u0010k\u001a\u00020<J\u0006\u0010l\u001a\u00020<J\u0006\u0010m\u001a\u00020<J\u0006\u0010n\u001a\u00020<J\u0006\u0010o\u001a\u00020<J\u0006\u0010p\u001a\u00020<J\u0006\u0010q\u001a\u00020<J\u0006\u0010r\u001a\u00020<J\u0006\u0010s\u001a\u00020<J\u0006\u0010t\u001a\u00020<J\u0006\u0010u\u001a\u00020<J\u0006\u0010v\u001a\u00020<J\u0006\u0010w\u001a\u00020<J\u0006\u0010x\u001a\u00020<J\u0006\u0010y\u001a\u00020<J\u0006\u0010z\u001a\u00020<J\u0006\u0010{\u001a\u00020<J\u0006\u0010|\u001a\u00020<J\u0006\u0010}\u001a\u00020<J\u0008\u0010~\u001a\u00020<H\u0002J\u0008\u0010\u007f\u001a\u00020<H\u0002J\t\u0010\u0080\u0001\u001a\u00020<H\u0002J\t\u0010\u0081\u0001\u001a\u00020<H\u0002J\t\u0010\u0082\u0001\u001a\u00020<H\u0002J\t\u0010\u0083\u0001\u001a\u00020<H\u0002J\t\u0010\u0084\u0001\u001a\u00020<H\u0002J\u0007\u0010\u0085\u0001\u001a\u00020<R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\rX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u0010\u001a\u0004\u0018\u00010\u0011X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0012\u0010\u0013\"\u0004\u0008\u0014\u0010\u0015R\u001c\u0010\u0016\u001a\u0010\u0012\u000c\u0012\n \u0019*\u0004\u0018\u00010\u00180\u00180\u0017X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0017\u0010\u001a\u001a\u0008\u0012\u0004\u0012\u00020\u00180\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001a\u0010\u001cR\u0017\u0010\u001d\u001a\u0008\u0012\u0004\u0012\u00020\u001e0\u0017\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001f\u0010 R\u0017\u0010!\u001a\u0008\u0012\u0004\u0012\u00020\u00180\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\"\u0010\u001cR\u0017\u0010#\u001a\u0008\u0012\u0004\u0012\u00020\u001e0\u0017\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008$\u0010 R\u0017\u0010%\u001a\u0008\u0012\u0004\u0012\u00020\u00180\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008&\u0010\u001cR\u000e\u0010\'\u001a\u00020\u0018X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0017\u0010(\u001a\u0008\u0012\u0004\u0012\u00020\u001e0\u0017\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008)\u0010 R\u0017\u0010*\u001a\u0008\u0012\u0004\u0012\u00020\u00180\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008+\u0010\u001cR\u0017\u0010,\u001a\u0008\u0012\u0004\u0012\u00020\u001e0\u0017\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008-\u0010 R\u0017\u0010.\u001a\u0008\u0012\u0004\u0012\u00020\u00180\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008/\u0010\u001cR\u0017\u00100\u001a\u0008\u0012\u0004\u0012\u00020\u001e0\u0017\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00081\u0010 R\u0017\u00102\u001a\u0008\u0012\u0004\u0012\u00020\u00180\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00083\u0010\u001cR\u0017\u00104\u001a\u0008\u0012\u0004\u0012\u00020\u001e0\u0017\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00085\u0010 R\u0017\u00106\u001a\u0008\u0012\u0004\u0012\u00020\u00180\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00087\u0010\u001cR\u0017\u00108\u001a\u0008\u0012\u0004\u0012\u00020\u00180\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00089\u0010\u001cR\u0014\u0010:\u001a\u0008\u0012\u0004\u0012\u00020<0;X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001f\u0010=\u001a\u0010\u0012\u000c\u0012\n \u0019*\u0004\u0018\u00010<0<0\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008>\u0010\u001cR\u001c\u0010?\u001a\u0010\u0012\u000c\u0012\n \u0019*\u0004\u0018\u00010\u00180\u00180\u0017X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0017\u0010@\u001a\u0008\u0012\u0004\u0012\u00020\u00180\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008A\u0010\u001cR\u001c\u0010B\u001a\u0010\u0012\u000c\u0012\n \u0019*\u0004\u0018\u00010\u00180\u00180\u0017X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001f\u0010C\u001a\u0010\u0012\u000c\u0012\n \u0019*\u0004\u0018\u00010\u00180\u00180\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008C\u0010\u001cR\u0017\u0010D\u001a\u0008\u0012\u0004\u0012\u00020\u00180\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008E\u0010\u001cR\u0017\u0010F\u001a\u0008\u0012\u0004\u0012\u00020G0\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008H\u0010\u001cR\u0017\u0010I\u001a\u0008\u0012\u0004\u0012\u00020\u00180\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008J\u0010\u001cR\u0014\u0010K\u001a\u00020LX\u0086D\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008M\u0010NR\u001a\u0010O\u001a\u00020LX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008P\u0010N\"\u0004\u0008Q\u0010RR\u001a\u0010S\u001a\u00020LX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008T\u0010N\"\u0004\u0008U\u0010R\u00a8\u0006\u0087\u0001"
+        "\u0000\u0082\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u001c\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0008\n\n\u0002\u0010\t\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0002\u0008)\u0008\u0007\u0018\u00002\u00020\u0001:\u0002\u0082\u0001B?\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\u0008\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\u0006\u0010\u000c\u001a\u00020\r\u0012\u0006\u0010\u000e\u001a\u00020\u000f\u00a2\u0006\u0004\u0008\u0010\u0010\u0011J\u000e\u0010S\u001a\u00020>2\u0006\u0010T\u001a\u00020UJ\u0006\u0010V\u001a\u00020>J\u0006\u0010W\u001a\u00020\u001aJ\u0014\u0010V\u001a\u00020>2\u000c\u0010X\u001a\u0008\u0012\u0004\u0012\u00020Z0YJ\u0006\u0010[\u001a\u00020>J\u0006\u0010\\\u001a\u00020>J\u0006\u0010]\u001a\u00020>J\u0006\u0010?\u001a\u00020>J\u000e\u0010^\u001a\u00020>2\u0006\u0010B\u001a\u00020\u001aJ\u0006\u0010_\u001a\u00020>J\u0006\u0010`\u001a\u00020>J\u0006\u0010a\u001a\u00020>J\u0006\u0010b\u001a\u00020>J\u0006\u0010c\u001a\u00020>J\u0006\u0010d\u001a\u00020>J\u0006\u0010e\u001a\u00020>J\u0006\u0010f\u001a\u00020>J\u0006\u0010g\u001a\u00020\u001aJ\u0006\u0010h\u001a\u00020>J\u0006\u0010i\u001a\u00020>J\u0006\u0010j\u001a\u00020>J\u0006\u0010k\u001a\u00020>J\u0006\u0010l\u001a\u00020>J\u0006\u0010m\u001a\u00020>J\u0006\u0010n\u001a\u00020>J\u0006\u0010o\u001a\u00020>J\u0006\u0010p\u001a\u00020>J\u0006\u0010q\u001a\u00020>J\u0006\u0010r\u001a\u00020>J\u0006\u0010s\u001a\u00020>J\u0006\u0010t\u001a\u00020>J\u0006\u0010u\u001a\u00020>J\u0006\u0010v\u001a\u00020>J\u0006\u0010w\u001a\u00020>J\u0006\u0010x\u001a\u00020>J\u0006\u0010y\u001a\u00020>J\u0008\u0010z\u001a\u00020>H\u0002J\u0008\u0010{\u001a\u00020>H\u0002J\u0008\u0010|\u001a\u00020>H\u0002J\u0008\u0010}\u001a\u00020>H\u0002J\u0008\u0010~\u001a\u00020>H\u0002J\u0008\u0010\u007f\u001a\u00020>H\u0002J\t\u0010\u0080\u0001\u001a\u00020>H\u0002J\u0007\u0010\u0081\u0001\u001a\u00020>R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\rX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u000fX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u0012\u001a\u0004\u0018\u00010\u0013X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0014\u0010\u0015\"\u0004\u0008\u0016\u0010\u0017R\u001c\u0010\u0018\u001a\u0010\u0012\u000c\u0012\n \u001b*\u0004\u0018\u00010\u001a0\u001a0\u0019X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0017\u0010\u001c\u001a\u0008\u0012\u0004\u0012\u00020\u001a0\u001d\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001c\u0010\u001eR\u0017\u0010\u001f\u001a\u0008\u0012\u0004\u0012\u00020 0\u0019\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008!\u0010\"R\u0017\u0010#\u001a\u0008\u0012\u0004\u0012\u00020\u001a0\u001d\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008$\u0010\u001eR\u0017\u0010%\u001a\u0008\u0012\u0004\u0012\u00020 0\u0019\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008&\u0010\"R\u0017\u0010\'\u001a\u0008\u0012\u0004\u0012\u00020\u001a0\u001d\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008(\u0010\u001eR\u000e\u0010)\u001a\u00020\u001aX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0017\u0010*\u001a\u0008\u0012\u0004\u0012\u00020 0\u0019\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008+\u0010\"R\u0017\u0010,\u001a\u0008\u0012\u0004\u0012\u00020\u001a0\u001d\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008-\u0010\u001eR\u0017\u0010.\u001a\u0008\u0012\u0004\u0012\u00020 0\u0019\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008/\u0010\"R\u0017\u00100\u001a\u0008\u0012\u0004\u0012\u00020\u001a0\u001d\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00081\u0010\u001eR\u0017\u00102\u001a\u0008\u0012\u0004\u0012\u00020 0\u0019\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00083\u0010\"R\u0017\u00104\u001a\u0008\u0012\u0004\u0012\u00020\u001a0\u001d\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00085\u0010\u001eR\u0017\u00106\u001a\u0008\u0012\u0004\u0012\u00020 0\u0019\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00087\u0010\"R\u0017\u00108\u001a\u0008\u0012\u0004\u0012\u00020\u001a0\u001d\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00089\u0010\u001eR\u0017\u0010:\u001a\u0008\u0012\u0004\u0012\u00020\u001a0\u001d\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008;\u0010\u001eR\u0014\u0010<\u001a\u0008\u0012\u0004\u0012\u00020>0=X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001f\u0010?\u001a\u0010\u0012\u000c\u0012\n \u001b*\u0004\u0018\u00010>0>0\u001d\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008@\u0010\u001eR\u001c\u0010A\u001a\u0010\u0012\u000c\u0012\n \u001b*\u0004\u0018\u00010\u001a0\u001a0\u0019X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0017\u0010B\u001a\u0008\u0012\u0004\u0012\u00020\u001a0\u001d\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008C\u0010\u001eR\u001c\u0010D\u001a\u0010\u0012\u000c\u0012\n \u001b*\u0004\u0018\u00010\u001a0\u001a0\u0019X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001f\u0010E\u001a\u0010\u0012\u000c\u0012\n \u001b*\u0004\u0018\u00010\u001a0\u001a0\u001d\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008E\u0010\u001eR\u0017\u0010F\u001a\u0008\u0012\u0004\u0012\u00020\u001a0\u001d\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008G\u0010\u001eR\u0014\u0010H\u001a\u00020IX\u0086D\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008J\u0010KR\u001a\u0010L\u001a\u00020IX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008M\u0010K\"\u0004\u0008N\u0010OR\u001a\u0010P\u001a\u00020IX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008Q\u0010K\"\u0004\u0008R\u0010O\u00a8\u0006\u0083\u0001"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;",
@@ -30,8 +30,10 @@
         "Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;",
         "thermalUiState",
         "Ljp/co/sony/mc/camera/view/uistate/ThermalUiState;",
+        "basicModeColorToneProfileUiState",
+        "Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;",
         "<init>",
-        "(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;Ljp/co/sony/mc/camera/view/uistate/MessageUiState;Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;Ljp/co/sony/mc/camera/view/uistate/ThermalUiState;)V",
+        "(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;Ljp/co/sony/mc/camera/view/uistate/MessageUiState;Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;Ljp/co/sony/mc/camera/view/uistate/ThermalUiState;Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;)V",
         "operator",
         "Ljp/co/sony/mc/camera/view/CameraOperator;",
         "getOperator",
@@ -84,11 +86,6 @@
         "getFocusOnShutterButton",
         "_isQuickRecordStarted",
         "isQuickRecordStarted",
-        "streamingAudioMuteState",
-        "getStreamingAudioMuteState",
-        "streamingAudioMuteIcon",
-        "",
-        "getStreamingAudioMuteIcon",
         "captureButtonAlpha",
         "getCaptureButtonAlpha",
         "RECORDING_PAUSE_RESUME_MIN_INTERVAL_US",
@@ -138,7 +135,6 @@
         "holdSnapshot",
         "execSnapshot",
         "releaseSnapshot",
-        "toggleAudioMute",
         "startQuickRecord",
         "stopQuickRecord",
         "lockQuickRecord",
@@ -199,6 +195,8 @@
         }
     .end annotation
 .end field
+
+.field private final basicModeColorToneProfileUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;
 
 .field private final cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
@@ -406,42 +404,12 @@
     .end annotation
 .end field
 
-.field private final streamingAudioMuteIcon:Landroidx/lifecycle/LiveData;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroidx/lifecycle/LiveData<",
-            "Ljava/lang/Integer;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final streamingAudioMuteState:Landroidx/lifecycle/LiveData;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroidx/lifecycle/LiveData<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end field
-
 .field private final thermalUiState:Ljp/co/sony/mc/camera/view/uistate/ThermalUiState;
 
 .field private final tutorialDialogUiState:Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;
 
 
 # direct methods
-.method public static synthetic $r8$lambda$520LpHqWO4EKKPcofzGl5d65IBE(Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;)I
-    .locals 0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->streamingAudioMuteIcon$lambda$10(Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;)I
-
-    move-result p0
-
-    return p0
-.end method
-
 .method public static synthetic $r8$lambda$BFHELetr_RVovI3bBPG9jHLAgNE(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;Ljava/lang/Boolean;)Z
     .locals 0
 
@@ -452,30 +420,10 @@
     return p0
 .end method
 
-.method public static synthetic $r8$lambda$Q2w5zPWxft6xTznBauGgguVSw3o(ZLjava/lang/Boolean;Ljava/lang/Boolean;)Z
-    .locals 0
-
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->captureButtonAlpha$lambda$11(ZLjava/lang/Boolean;Ljava/lang/Boolean;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
 .method public static synthetic $r8$lambda$RWBd44DnBMD_sYK5kHz_3INHyus(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;Ljava/lang/Boolean;)Z
     .locals 0
 
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->focusOnShutterButton$lambda$8(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;Ljava/lang/Boolean;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public static synthetic $r8$lambda$VUNwS6p9r_rUhQdFEDqC7CCFVdk(Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;)Z
-    .locals 0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->streamingAudioMuteState$lambda$9(Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;)Z
 
     move-result p0
 
@@ -496,6 +444,16 @@
     .locals 0
 
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->pauseButtonEnabled$lambda$5(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;Ljava/lang/Boolean;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$cIEeqU95z8ZfvsDfgc8LHiMpz68(ZLjava/lang/Boolean;Ljava/lang/Boolean;)Z
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->captureButtonAlpha$lambda$9(ZLjava/lang/Boolean;Ljava/lang/Boolean;)Z
 
     move-result p0
 
@@ -558,7 +516,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;Ljp/co/sony/mc/camera/view/uistate/MessageUiState;Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;Ljp/co/sony/mc/camera/view/uistate/ThermalUiState;)V
+.method public constructor <init>(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;Ljp/co/sony/mc/camera/view/uistate/MessageUiState;Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;Ljp/co/sony/mc/camera/view/uistate/ThermalUiState;Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;)V
     .locals 6
 
     const-string v0, "cameraStatusModel"
@@ -585,28 +543,35 @@
 
     invoke-static {p6, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 36
+    const-string v0, "basicModeColorToneProfileUiState"
+
+    invoke-static {p7, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 34
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 37
+    .line 35
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
-    .line 38
+    .line 36
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
-    .line 39
+    .line 37
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->messageUiState:Ljp/co/sony/mc/camera/view/uistate/MessageUiState;
 
-    .line 40
+    .line 38
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->tutorialDialogUiState:Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;
 
-    .line 41
+    .line 39
     iput-object p5, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->proModeTopPaneUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;
 
-    .line 42
+    .line 40
     iput-object p6, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->thermalUiState:Ljp/co/sony/mc/camera/view/uistate/ThermalUiState;
 
-    .line 95
+    .line 41
+    iput-object p7, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->basicModeColorToneProfileUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;
+
+    .line 94
     new-instance p3, Landroidx/lifecycle/MutableLiveData;
 
     const/4 p4, 0x0
@@ -619,30 +584,30 @@
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->hardwareKeyHeld:Landroidx/lifecycle/MutableLiveData;
 
-    .line 97
+    .line 96
     sget-object v0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 98
+    .line 97
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
 
     move-result-object v1
 
-    .line 99
+    .line 98
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getDriveMode()Landroidx/lifecycle/LiveData;
 
     move-result-object v2
 
-    .line 100
+    .line 99
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isModeChanging()Landroidx/lifecycle/LiveData;
 
     move-result-object v3
 
-    .line 101
+    .line 100
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getSelftimering()Landroidx/lifecycle/LiveData;
 
     move-result-object v4
 
-    .line 97
+    .line 96
     new-instance v5, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda0;
 
     invoke-direct {v5, p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;)V
@@ -651,14 +616,14 @@
 
     move-result-object p3
 
-    .line 106
+    .line 105
     invoke-static {p3}, Landroidx/lifecycle/Transformations;->distinctUntilChanged(Landroidx/lifecycle/LiveData;)Landroidx/lifecycle/LiveData;
 
     move-result-object p3
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->isQuickRecordEnabled:Landroidx/lifecycle/LiveData;
 
-    .line 108
+    .line 107
     new-instance p3, Landroidx/lifecycle/MutableLiveData;
 
     sget-object p5, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
@@ -667,34 +632,34 @@
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->singleShootingButtonState:Landroidx/lifecycle/MutableLiveData;
 
-    .line 109
+    .line 108
     sget-object p5, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 110
+    .line 109
     check-cast p3, Landroidx/lifecycle/LiveData;
 
-    .line 111
+    .line 110
     iget-object p6, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->hardwareKeyHeld:Landroidx/lifecycle/MutableLiveData;
 
     check-cast p6, Landroidx/lifecycle/LiveData;
 
-    .line 112
+    .line 111
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isModeChanging()Landroidx/lifecycle/LiveData;
 
-    move-result-object v0
+    move-result-object p7
 
-    .line 109
-    new-instance v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda5;
+    .line 108
+    new-instance v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda1;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda5;-><init>(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;)V
+    invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda1;-><init>(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;)V
 
-    invoke-virtual {p5, p3, p6, v0, v1}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function3;)Landroidx/lifecycle/LiveData;
+    invoke-virtual {p5, p3, p6, p7, v0}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function3;)Landroidx/lifecycle/LiveData;
 
     move-result-object p3
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->singleShootingButtonEnabled:Landroidx/lifecycle/LiveData;
 
-    .line 127
+    .line 126
     new-instance p3, Landroidx/lifecycle/MutableLiveData;
 
     sget-object p5, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
@@ -703,34 +668,34 @@
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->selfTimerButtonState:Landroidx/lifecycle/MutableLiveData;
 
-    .line 128
+    .line 127
     sget-object p5, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 129
+    .line 128
     check-cast p3, Landroidx/lifecycle/LiveData;
 
-    .line 130
+    .line 129
     iget-object p6, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->hardwareKeyHeld:Landroidx/lifecycle/MutableLiveData;
 
     check-cast p6, Landroidx/lifecycle/LiveData;
 
-    .line 131
+    .line 130
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isModeChanging()Landroidx/lifecycle/LiveData;
 
-    move-result-object v0
+    move-result-object p7
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda6;
+    new-instance v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda2;
 
-    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda6;-><init>()V
+    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda2;-><init>()V
 
-    .line 128
-    invoke-virtual {p5, p3, p6, v0, v1}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function3;)Landroidx/lifecycle/LiveData;
+    .line 127
+    invoke-virtual {p5, p3, p6, p7, v0}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function3;)Landroidx/lifecycle/LiveData;
 
     move-result-object p3
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->selfTimerButtonEnabled:Landroidx/lifecycle/LiveData;
 
-    .line 148
+    .line 147
     new-instance p3, Landroidx/lifecycle/MutableLiveData;
 
     sget-object p5, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
@@ -739,34 +704,34 @@
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->continuousShootingButtonState:Landroidx/lifecycle/MutableLiveData;
 
-    .line 149
+    .line 148
     sget-object p5, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 150
+    .line 149
     check-cast p3, Landroidx/lifecycle/LiveData;
 
-    .line 151
+    .line 150
     iget-object p6, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->hardwareKeyHeld:Landroidx/lifecycle/MutableLiveData;
 
     check-cast p6, Landroidx/lifecycle/LiveData;
 
-    .line 152
+    .line 151
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isModeChanging()Landroidx/lifecycle/LiveData;
 
-    move-result-object v0
+    move-result-object p7
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda7;
+    new-instance v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda3;
 
-    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda7;-><init>()V
+    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda3;-><init>()V
 
-    .line 149
-    invoke-virtual {p5, p3, p6, v0, v1}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function3;)Landroidx/lifecycle/LiveData;
+    .line 148
+    invoke-virtual {p5, p3, p6, p7, v0}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function3;)Landroidx/lifecycle/LiveData;
 
     move-result-object p3
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->continuousShootingButtonEnabled:Landroidx/lifecycle/LiveData;
 
-    .line 162
+    .line 161
     new-instance p3, Landroidx/lifecycle/MutableLiveData;
 
     sget-object p5, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
@@ -775,34 +740,34 @@
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->recordingButtonState:Landroidx/lifecycle/MutableLiveData;
 
-    .line 163
+    .line 162
     sget-object p5, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 164
+    .line 163
     check-cast p3, Landroidx/lifecycle/LiveData;
 
-    .line 165
+    .line 164
     iget-object p6, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->hardwareKeyHeld:Landroidx/lifecycle/MutableLiveData;
 
     check-cast p6, Landroidx/lifecycle/LiveData;
 
-    .line 166
+    .line 165
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isModeChanging()Landroidx/lifecycle/LiveData;
 
-    move-result-object v0
+    move-result-object p7
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda8;
+    new-instance v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda4;
 
-    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda8;-><init>()V
+    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda4;-><init>()V
 
-    .line 163
-    invoke-virtual {p5, p3, p6, v0, v1}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function3;)Landroidx/lifecycle/LiveData;
+    .line 162
+    invoke-virtual {p5, p3, p6, p7, v0}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function3;)Landroidx/lifecycle/LiveData;
 
     move-result-object p3
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->recordingButtonEnabled:Landroidx/lifecycle/LiveData;
 
-    .line 177
+    .line 176
     new-instance p3, Landroidx/lifecycle/MutableLiveData;
 
     sget-object p5, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
@@ -811,29 +776,29 @@
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->pauseButtonState:Landroidx/lifecycle/MutableLiveData;
 
-    .line 178
+    .line 177
     sget-object p5, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 179
+    .line 178
     check-cast p3, Landroidx/lifecycle/LiveData;
 
-    .line 180
+    .line 179
     iget-object p6, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->hardwareKeyHeld:Landroidx/lifecycle/MutableLiveData;
 
     check-cast p6, Landroidx/lifecycle/LiveData;
 
-    new-instance v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda9;
+    new-instance p7, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda5;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda9;-><init>()V
+    invoke-direct {p7}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda5;-><init>()V
 
-    .line 178
-    invoke-virtual {p5, p3, p6, v0}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
+    .line 177
+    invoke-virtual {p5, p3, p6, p7}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object p3
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->pauseButtonEnabled:Landroidx/lifecycle/LiveData;
 
-    .line 189
+    .line 188
     new-instance p3, Landroidx/lifecycle/MutableLiveData;
 
     sget-object p5, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
@@ -842,143 +807,113 @@
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->snapshotButtonState:Landroidx/lifecycle/MutableLiveData;
 
-    .line 190
+    .line 189
     sget-object p5, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 191
+    .line 190
     check-cast p3, Landroidx/lifecycle/LiveData;
 
-    .line 192
+    .line 191
     iget-object p6, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->hardwareKeyHeld:Landroidx/lifecycle/MutableLiveData;
 
     check-cast p6, Landroidx/lifecycle/LiveData;
 
-    new-instance v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda10;
+    new-instance p7, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda6;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda10;-><init>()V
+    invoke-direct {p7}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda6;-><init>()V
 
-    .line 190
-    invoke-virtual {p5, p3, p6, v0}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
+    .line 189
+    invoke-virtual {p5, p3, p6, p7}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object p3
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->snapshotButtonEnabled:Landroidx/lifecycle/LiveData;
 
-    .line 201
+    .line 200
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getVideoHdr()Landroidx/lifecycle/LiveData;
 
-    move-result-object p3
+    move-result-object p2
 
-    new-instance p5, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda11;
+    new-instance p3, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda7;
 
-    invoke-direct {p5}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda11;-><init>()V
+    invoke-direct {p3}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda7;-><init>()V
 
-    invoke-static {p3, p5}, Landroidx/lifecycle/Transformations;->map(Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function1;)Landroidx/lifecycle/LiveData;
+    invoke-static {p2, p3}, Landroidx/lifecycle/Transformations;->map(Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function1;)Landroidx/lifecycle/LiveData;
 
-    move-result-object p3
+    move-result-object p2
 
-    iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->snapshotActivated:Landroidx/lifecycle/LiveData;
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->snapshotActivated:Landroidx/lifecycle/LiveData;
+
+    .line 204
+    new-instance p2, Ljp/co/sony/mc/camera/view/viewmodel/LiveEvent;
+
+    invoke-direct {p2}, Ljp/co/sony/mc/camera/view/viewmodel/LiveEvent;-><init>()V
+
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->_onCaptureInRecording:Ljp/co/sony/mc/camera/view/viewmodel/LiveEvent;
 
     .line 205
-    new-instance p3, Ljp/co/sony/mc/camera/view/viewmodel/LiveEvent;
+    check-cast p2, Landroidx/lifecycle/MutableLiveData;
 
-    invoke-direct {p3}, Ljp/co/sony/mc/camera/view/viewmodel/LiveEvent;-><init>()V
+    invoke-static {p2}, Ljp/co/sony/mc/camera/util/LiveDataExtensionsKt;->asLiveData(Landroidx/lifecycle/MutableLiveData;)Landroidx/lifecycle/LiveData;
 
-    iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->_onCaptureInRecording:Ljp/co/sony/mc/camera/view/viewmodel/LiveEvent;
+    move-result-object p2
 
-    .line 206
-    check-cast p3, Landroidx/lifecycle/MutableLiveData;
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->onCaptureInRecording:Landroidx/lifecycle/LiveData;
 
-    invoke-static {p3}, Ljp/co/sony/mc/camera/util/LiveDataExtensionsKt;->asLiveData(Landroidx/lifecycle/MutableLiveData;)Landroidx/lifecycle/LiveData;
+    .line 207
+    new-instance p2, Landroidx/lifecycle/MutableLiveData;
 
-    move-result-object p3
+    invoke-direct {p2, p4}, Landroidx/lifecycle/MutableLiveData;-><init>(Ljava/lang/Object;)V
 
-    iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->onCaptureInRecording:Landroidx/lifecycle/LiveData;
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->_focusOnShutterButton:Landroidx/lifecycle/MutableLiveData;
 
     .line 208
-    new-instance p3, Landroidx/lifecycle/MutableLiveData;
+    check-cast p2, Landroidx/lifecycle/LiveData;
 
-    invoke-direct {p3, p4}, Landroidx/lifecycle/MutableLiveData;-><init>(Ljava/lang/Object;)V
+    new-instance p3, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda8;
 
-    iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->_focusOnShutterButton:Landroidx/lifecycle/MutableLiveData;
+    invoke-direct {p3, p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda8;-><init>(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;)V
 
-    .line 209
-    check-cast p3, Landroidx/lifecycle/LiveData;
+    invoke-static {p2, p3}, Landroidx/lifecycle/Transformations;->map(Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function1;)Landroidx/lifecycle/LiveData;
 
-    new-instance p5, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda1;
+    move-result-object p2
 
-    invoke-direct {p5, p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda1;-><init>(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;)V
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->focusOnShutterButton:Landroidx/lifecycle/LiveData;
 
-    invoke-static {p3, p5}, Landroidx/lifecycle/Transformations;->map(Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function1;)Landroidx/lifecycle/LiveData;
+    .line 212
+    new-instance p2, Landroidx/lifecycle/MutableLiveData;
 
-    move-result-object p3
+    invoke-direct {p2, p4}, Landroidx/lifecycle/MutableLiveData;-><init>(Ljava/lang/Object;)V
 
-    iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->focusOnShutterButton:Landroidx/lifecycle/LiveData;
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->_isQuickRecordStarted:Landroidx/lifecycle/MutableLiveData;
 
     .line 213
-    new-instance p3, Landroidx/lifecycle/MutableLiveData;
+    invoke-static {p2}, Ljp/co/sony/mc/camera/util/LiveDataExtensionsKt;->asLiveData(Landroidx/lifecycle/MutableLiveData;)Landroidx/lifecycle/LiveData;
 
-    invoke-direct {p3, p4}, Landroidx/lifecycle/MutableLiveData;-><init>(Ljava/lang/Object;)V
+    move-result-object p2
 
-    iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->_isQuickRecordStarted:Landroidx/lifecycle/MutableLiveData;
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->isQuickRecordStarted:Landroidx/lifecycle/LiveData;
 
-    .line 214
-    invoke-static {p3}, Ljp/co/sony/mc/camera/util/LiveDataExtensionsKt;->asLiveData(Landroidx/lifecycle/MutableLiveData;)Landroidx/lifecycle/LiveData;
-
-    move-result-object p3
-
-    iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->isQuickRecordStarted:Landroidx/lifecycle/LiveData;
+    .line 215
+    sget-object p3, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
     .line 216
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getStreamingAudioMute()Landroidx/lifecycle/LiveData;
-
-    move-result-object p4
-
-    new-instance p5, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda2;
-
-    invoke-direct {p5}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda2;-><init>()V
-
-    invoke-static {p4, p5}, Landroidx/lifecycle/Transformations;->map(Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function1;)Landroidx/lifecycle/LiveData;
-
-    move-result-object p4
-
-    iput-object p4, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->streamingAudioMuteState:Landroidx/lifecycle/LiveData;
-
-    .line 218
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getStreamingAudioMute()Landroidx/lifecycle/LiveData;
-
-    move-result-object p2
-
-    new-instance p4, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda3;
-
-    invoke-direct {p4}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda3;-><init>()V
-
-    invoke-static {p2, p4}, Landroidx/lifecycle/Transformations;->map(Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function1;)Landroidx/lifecycle/LiveData;
-
-    move-result-object p2
-
-    iput-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->streamingAudioMuteIcon:Landroidx/lifecycle/LiveData;
-
-    .line 225
-    sget-object p2, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
-
-    .line 226
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getInitializing()Landroidx/lifecycle/LiveData;
 
     move-result-object p4
 
-    .line 227
+    .line 217
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isModeChanging()Landroidx/lifecycle/LiveData;
 
     move-result-object p1
 
-    .line 228
-    new-instance p5, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda4;
+    .line 218
+    new-instance p5, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda9;
 
-    invoke-direct {p5}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda4;-><init>()V
+    invoke-direct {p5}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda9;-><init>()V
 
-    .line 225
-    invoke-virtual {p2, p4, p1, p3, p5}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function3;)Landroidx/lifecycle/LiveData;
+    .line 215
+    invoke-virtual {p3, p4, p1, p2, p5}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function3;)Landroidx/lifecycle/LiveData;
 
     move-result-object p1
 
@@ -986,18 +921,18 @@
 
     const-wide/16 p1, 0x3e8
 
-    .line 233
+    .line 223
     iput-wide p1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->RECORDING_PAUSE_RESUME_MIN_INTERVAL_US:J
 
     return-void
 .end method
 
-.method private static final captureButtonAlpha$lambda$11(ZLjava/lang/Boolean;Ljava/lang/Boolean;)Z
+.method private static final captureButtonAlpha$lambda$9(ZLjava/lang/Boolean;Ljava/lang/Boolean;)Z
     .locals 0
 
     if-nez p0, :cond_0
 
-    .line 230
+    .line 220
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p0
@@ -1026,7 +961,7 @@
 .method private static final continuousShootingButtonEnabled$lambda$3(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;Ljava/lang/Boolean;Ljava/lang/Boolean;)Z
     .locals 2
 
-    .line 155
+    .line 154
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1037,7 +972,7 @@
 
     if-nez v0, :cond_0
 
-    .line 156
+    .line 155
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$ContinuousShooting$Prepared;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$ContinuousShooting$Prepared;
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1046,7 +981,7 @@
 
     if-nez v0, :cond_0
 
-    .line 157
+    .line 156
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$ContinuousShooting$Capturing;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$ContinuousShooting$Capturing;
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1081,7 +1016,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 210
+    .line 209
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p1
@@ -1112,7 +1047,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 103
+    .line 102
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-eq p1, v0, :cond_0
@@ -1123,7 +1058,7 @@
 
     if-nez v0, :cond_0
 
-    .line 104
+    .line 103
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isPro()Z
 
     move-result p1
@@ -1139,7 +1074,7 @@
     :cond_0
     if-nez p4, :cond_1
 
-    .line 105
+    .line 104
     invoke-virtual {p3}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p1
@@ -1177,7 +1112,7 @@
 .method private static final pauseButtonEnabled$lambda$5(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;Ljava/lang/Boolean;)Z
     .locals 2
 
-    .line 183
+    .line 182
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1188,7 +1123,7 @@
 
     if-nez v0, :cond_0
 
-    .line 184
+    .line 183
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Pause$Pausing;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Pause$Pausing;
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1213,7 +1148,7 @@
 .method private static final recordingButtonEnabled$lambda$4(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;Ljava/lang/Boolean;Ljava/lang/Boolean;)Z
     .locals 2
 
-    .line 169
+    .line 168
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1224,7 +1159,7 @@
 
     if-nez v0, :cond_0
 
-    .line 170
+    .line 169
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Record$Recording;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Record$Recording;
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1233,7 +1168,7 @@
 
     if-nez v0, :cond_0
 
-    .line 171
+    .line 170
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Record$Pausing;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Record$Pausing;
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1242,7 +1177,7 @@
 
     if-nez v0, :cond_0
 
-    .line 172
+    .line 171
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Record$Stopping;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Record$Stopping;
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1273,7 +1208,7 @@
 .method private static final selfTimerButtonEnabled$lambda$2(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;Ljava/lang/Boolean;Ljava/lang/Boolean;)Z
     .locals 2
 
-    .line 134
+    .line 133
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1284,7 +1219,7 @@
 
     if-nez v0, :cond_0
 
-    .line 135
+    .line 134
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Prepared;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Prepared;
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1293,7 +1228,7 @@
 
     if-nez v0, :cond_0
 
-    .line 136
+    .line 135
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Counting;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Counting;
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1302,7 +1237,7 @@
 
     if-nez v0, :cond_0
 
-    .line 137
+    .line 136
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Capturing;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Capturing;
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1311,7 +1246,7 @@
 
     if-nez v0, :cond_0
 
-    .line 138
+    .line 137
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$RequestRecording;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$RequestRecording;
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1320,7 +1255,7 @@
 
     if-nez v0, :cond_0
 
-    .line 139
+    .line 138
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$HoldRecording;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$HoldRecording;
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1329,7 +1264,7 @@
 
     if-nez v0, :cond_0
 
-    .line 140
+    .line 139
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$LockRecording;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$LockRecording;
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1338,7 +1273,7 @@
 
     if-nez v0, :cond_0
 
-    .line 141
+    .line 140
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Stopping;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Stopping;
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1373,7 +1308,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 115
+    .line 114
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1384,7 +1319,7 @@
 
     if-nez v0, :cond_0
 
-    .line 116
+    .line 115
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$Prepared;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$Prepared;
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1393,7 +1328,7 @@
 
     if-nez v0, :cond_0
 
-    .line 117
+    .line 116
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$Capturing;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$Capturing;
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1402,7 +1337,7 @@
 
     if-nez v0, :cond_0
 
-    .line 118
+    .line 117
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$RequestRecording;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$RequestRecording;
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1411,7 +1346,7 @@
 
     if-nez v0, :cond_0
 
-    .line 119
+    .line 118
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$HoldRecording;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$HoldRecording;
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1420,7 +1355,7 @@
 
     if-nez v0, :cond_0
 
-    .line 120
+    .line 119
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$LockRecording;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$LockRecording;
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1429,7 +1364,7 @@
 
     if-nez v0, :cond_0
 
-    .line 121
+    .line 120
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$Stopping;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$Stopping;
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1438,7 +1373,7 @@
 
     if-eqz p1, :cond_2
 
-    .line 122
+    .line 121
     :cond_0
     invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -1480,7 +1415,7 @@
 .method private static final snapshotActivated$lambda$7(Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;)Z
     .locals 1
 
-    .line 202
+    .line 201
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;->HDR_ON:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
     if-eq p0, v0, :cond_0
@@ -1499,7 +1434,7 @@
 .method private static final snapshotButtonEnabled$lambda$6(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;Ljava/lang/Boolean;)Z
     .locals 2
 
-    .line 195
+    .line 194
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1510,7 +1445,7 @@
 
     if-nez v0, :cond_0
 
-    .line 196
+    .line 195
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Snapshot$Capturing;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Snapshot$Capturing;
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1532,74 +1467,17 @@
     return v1
 .end method
 
-.method private static final streamingAudioMuteIcon$lambda$10(Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;)I
-    .locals 1
-
-    if-nez p0, :cond_0
-
-    const/4 p0, -0x1
-
-    goto :goto_0
-
-    .line 219
-    :cond_0
-    sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$WhenMappings;->$EnumSwitchMapping$0:[I
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;->ordinal()I
-
-    move-result p0
-
-    aget p0, v0, p0
-
-    :goto_0
-    const/4 v0, 0x1
-
-    if-eq p0, v0, :cond_2
-
-    const/4 v0, 0x2
-
-    if-ne p0, v0, :cond_1
-
-    const p0, 0x7f0802db
-
-    goto :goto_1
-
-    :cond_1
-    new-instance p0, Lkotlin/NoWhenBranchMatchedException;
-
-    invoke-direct {p0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
-
-    throw p0
-
-    :cond_2
-    const p0, 0x7f0802dc
-
-    :goto_1
-    return p0
-.end method
-
-.method private static final streamingAudioMuteState$lambda$9(Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;)Z
-    .locals 0
-
-    .line 216
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;->getBooleanValue()Z
-
-    move-result p0
-
-    return p0
-.end method
-
 .method private final updateContinuousShooting()V
     .locals 3
 
-    .line 726
+    .line 723
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->continuousShootingButtonState:Landroidx/lifecycle/MutableLiveData;
 
     move-object v1, p0
 
     check-cast v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
 
-    .line 727
+    .line 724
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->isVideo()Landroidx/lifecycle/LiveData;
@@ -1622,7 +1500,7 @@
 
     if-nez v1, :cond_6
 
-    .line 728
+    .line 725
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getDriveMode()Landroidx/lifecycle/LiveData;
@@ -1645,7 +1523,7 @@
 
     goto :goto_1
 
-    .line 733
+    .line 730
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
@@ -1666,7 +1544,7 @@
     goto :goto_0
 
     :cond_1
-    sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$WhenMappings;->$EnumSwitchMapping$1:[I
+    sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$WhenMappings;->$EnumSwitchMapping$0:[I
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->ordinal()I
 
@@ -1699,14 +1577,14 @@
 
     if-eq p0, v1, :cond_2
 
-    .line 739
+    .line 736
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Inactive;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Inactive;
 
     check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
     goto :goto_2
 
-    .line 738
+    .line 735
     :cond_2
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
 
@@ -1714,7 +1592,7 @@
 
     goto :goto_2
 
-    .line 737
+    .line 734
     :cond_3
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$ContinuousShooting$Capturing;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$ContinuousShooting$Capturing;
 
@@ -1722,7 +1600,7 @@
 
     goto :goto_2
 
-    .line 735
+    .line 732
     :cond_4
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$ContinuousShooting$Prepared;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$ContinuousShooting$Prepared;
 
@@ -1730,7 +1608,7 @@
 
     goto :goto_2
 
-    .line 734
+    .line 731
     :cond_5
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
 
@@ -1738,14 +1616,14 @@
 
     goto :goto_2
 
-    .line 730
+    .line 727
     :cond_6
     :goto_1
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
 
     check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
-    .line 726
+    .line 723
     :goto_2
     invoke-virtual {v0, p0}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
@@ -1755,22 +1633,22 @@
 .method private final updateControlState()V
     .locals 0
 
-    .line 634
+    .line 629
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->updateSingleShooting()V
 
-    .line 635
+    .line 630
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->updateSelfTimer()V
 
-    .line 636
+    .line 631
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->updateContinuousShooting()V
 
-    .line 637
+    .line 632
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->updateRecording()V
 
-    .line 638
+    .line 633
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->updatePause()V
 
-    .line 639
+    .line 634
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->updateSnapshot()V
 
     return-void
@@ -1779,166 +1657,14 @@
 .method private final updatePause()V
     .locals 4
 
-    .line 772
+    .line 770
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->pauseButtonState:Landroidx/lifecycle/MutableLiveData;
 
     move-object v1, p0
 
     check-cast v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
 
-    .line 773
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    const/4 v2, -0x1
-
-    if-nez v1, :cond_0
-
-    move v1, v2
-
-    goto :goto_0
-
-    :cond_0
-    sget-object v3, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$WhenMappings;->$EnumSwitchMapping$2:[I
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->ordinal()I
-
-    move-result v1
-
-    aget v1, v3, v1
-
-    :goto_0
-    packed-switch v1, :pswitch_data_0
-
-    .line 789
-    sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
-
-    check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
-
-    goto :goto_2
-
-    .line 781
-    :pswitch_0
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getLatestCameraEvent()Landroidx/lifecycle/LiveData;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
-
-    if-nez p0, :cond_1
-
-    goto :goto_1
-
-    :cond_1
-    sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$WhenMappings;->$EnumSwitchMapping$1:[I
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->ordinal()I
-
-    move-result p0
-
-    aget v2, v1, p0
-
-    :goto_1
-    const/4 p0, 0x7
-
-    if-eq v2, p0, :cond_3
-
-    const/16 p0, 0xa
-
-    if-eq v2, p0, :cond_3
-
-    const/16 p0, 0xb
-
-    if-eq v2, p0, :cond_2
-
-    .line 785
-    sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
-
-    check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
-
-    goto :goto_2
-
-    .line 784
-    :cond_2
-    sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Pause$Pausing;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Pause$Pausing;
-
-    check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
-
-    goto :goto_2
-
-    .line 783
-    :cond_3
-    sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
-
-    check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
-
-    .line 772
-    :goto_2
-    invoke-virtual {v0, p0}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
-
-    return-void
-
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method private final updateRecording()V
-    .locals 5
-
-    .line 745
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->recordingButtonState:Landroidx/lifecycle/MutableLiveData;
-
-    move-object v1, p0
-
-    check-cast v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
-
-    .line 746
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->isVideo()Landroidx/lifecycle/LiveData;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
-
-    move-result-object v1
-
-    const/4 v2, 0x0
-
-    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v2
-
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_6
-
-    .line 747
+    .line 771
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
@@ -1961,9 +1687,235 @@
 
     if-ne v1, v2, :cond_0
 
+    .line 772
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isQuickRecordLocked()Landroidx/lifecycle/LiveData;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 774
+    sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
+
+    check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
+
+    goto :goto_2
+
+    .line 777
+    :cond_0
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    const/4 v2, -0x1
+
+    if-nez v1, :cond_1
+
+    move v1, v2
+
+    goto :goto_0
+
+    :cond_1
+    sget-object v3, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$WhenMappings;->$EnumSwitchMapping$1:[I
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->ordinal()I
+
+    move-result v1
+
+    aget v1, v3, v1
+
+    :goto_0
+    packed-switch v1, :pswitch_data_0
+
+    .line 794
+    sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
+
+    check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
+
+    goto :goto_2
+
+    .line 786
+    :pswitch_0
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getLatestCameraEvent()Landroidx/lifecycle/LiveData;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
+
+    if-nez p0, :cond_2
+
     goto :goto_1
 
-    .line 752
+    :cond_2
+    sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$WhenMappings;->$EnumSwitchMapping$0:[I
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->ordinal()I
+
+    move-result p0
+
+    aget v2, v1, p0
+
+    :goto_1
+    const/4 p0, 0x7
+
+    if-eq v2, p0, :cond_4
+
+    const/16 p0, 0xa
+
+    if-eq v2, p0, :cond_3
+
+    const/16 p0, 0xb
+
+    if-eq v2, p0, :cond_4
+
+    .line 790
+    sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
+
+    check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
+
+    goto :goto_2
+
+    .line 789
+    :cond_3
+    sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Pause$Pausing;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Pause$Pausing;
+
+    check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
+
+    goto :goto_2
+
+    .line 788
+    :cond_4
+    sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
+
+    check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
+
+    .line 770
+    :goto_2
+    invoke-virtual {v0, p0}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
+
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method private final updateRecording()V
+    .locals 5
+
+    .line 742
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->recordingButtonState:Landroidx/lifecycle/MutableLiveData;
+
+    move-object v1, p0
+
+    check-cast v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
+
+    .line 743
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->isVideo()Landroidx/lifecycle/LiveData;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_6
+
+    .line 744
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
+
+    move-result v1
+
+    const/4 v3, 0x1
+
+    if-ne v1, v3, :cond_0
+
+    .line 745
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isQuickRecordLocked()Landroidx/lifecycle/LiveData;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    goto :goto_1
+
+    .line 750
     :cond_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
@@ -1984,7 +1936,7 @@
     goto :goto_0
 
     :cond_1
-    sget-object v2, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$WhenMappings;->$EnumSwitchMapping$1:[I
+    sget-object v2, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$WhenMappings;->$EnumSwitchMapping$0:[I
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->ordinal()I
 
@@ -2009,26 +1961,26 @@
 
     const/16 v2, 0xa
 
-    if-eq v1, v2, :cond_4
+    if-eq v1, v2, :cond_2
 
     const/16 v2, 0xb
 
-    if-eq v1, v2, :cond_2
+    if-eq v1, v2, :cond_4
 
-    .line 763
+    .line 761
     iput-wide v3, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->lastRecordingPauseTime:J
 
-    .line 764
+    .line 762
     iput-wide v3, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->lastRecordingResumeTime:J
 
-    .line 765
+    .line 763
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Inactive;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Inactive;
 
     check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
     goto :goto_2
 
-    .line 756
+    .line 754
     :cond_2
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Record$Pausing;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Record$Pausing;
 
@@ -2036,21 +1988,21 @@
 
     goto :goto_2
 
-    .line 758
+    .line 756
     :cond_3
     iput-wide v3, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->lastRecordingPauseTime:J
 
-    .line 759
+    .line 757
     iput-wide v3, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->lastRecordingResumeTime:J
 
-    .line 760
+    .line 758
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Record$Stopping;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Record$Stopping;
 
     check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
     goto :goto_2
 
-    .line 755
+    .line 753
     :cond_4
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Record$Recording;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Record$Recording;
 
@@ -2058,7 +2010,7 @@
 
     goto :goto_2
 
-    .line 753
+    .line 751
     :cond_5
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
 
@@ -2066,14 +2018,14 @@
 
     goto :goto_2
 
-    .line 749
+    .line 747
     :cond_6
     :goto_1
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
 
     check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
-    .line 745
+    .line 742
     :goto_2
     invoke-virtual {v0, p0}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
@@ -2083,14 +2035,14 @@
 .method private final updateSelfTimer()V
     .locals 4
 
-    .line 684
+    .line 679
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->selfTimerButtonState:Landroidx/lifecycle/MutableLiveData;
 
     move-object v1, p0
 
     check-cast v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
 
-    .line 685
+    .line 680
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
@@ -2105,21 +2057,21 @@
 
     const/4 v2, 0x1
 
-    .line 690
+    .line 685
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v3
 
     if-eqz v1, :cond_0
 
-    .line 685
+    .line 680
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
 
     move-result v1
 
     if-ne v1, v2, :cond_0
 
-    .line 686
+    .line 681
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->selfTimerButtonState:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v1}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -2134,14 +2086,14 @@
 
     if-eqz v1, :cond_2
 
-    .line 687
+    .line 682
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
 
     check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
     goto/16 :goto_1
 
-    .line 690
+    .line 685
     :cond_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
@@ -2159,14 +2111,14 @@
 
     if-eqz v1, :cond_1
 
-    .line 691
+    .line 686
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
 
     check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
     goto/16 :goto_1
 
-    .line 694
+    .line 689
     :cond_1
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
@@ -2188,7 +2140,7 @@
 
     if-nez v1, :cond_2
 
-    .line 695
+    .line 690
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getSelftimering()Landroidx/lifecycle/LiveData;
@@ -2211,14 +2163,14 @@
 
     if-eqz v1, :cond_2
 
-    .line 697
+    .line 692
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
 
     check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
     goto/16 :goto_1
 
-    .line 701
+    .line 696
     :cond_2
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->isQuickRecordStarted:Landroidx/lifecycle/LiveData;
 
@@ -2232,7 +2184,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 702
+    .line 697
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getLatestCameraEvent()Landroidx/lifecycle/LiveData;
@@ -2247,7 +2199,7 @@
 
     if-ne v1, v2, :cond_3
 
-    .line 704
+    .line 699
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->selfTimerButtonState:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {p0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -2256,9 +2208,9 @@
 
     check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
-    goto :goto_1
+    goto/16 :goto_1
 
-    .line 707
+    .line 702
     :cond_3
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->selfTimerButtonState:Landroidx/lifecycle/MutableLiveData;
 
@@ -2274,7 +2226,7 @@
 
     if-eqz v1, :cond_4
 
-    .line 708
+    .line 703
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getLatestCameraEvent()Landroidx/lifecycle/LiveData;
@@ -2289,7 +2241,7 @@
 
     if-ne v1, v2, :cond_4
 
-    .line 710
+    .line 705
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->selfTimerButtonState:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {p0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -2300,39 +2252,39 @@
 
     goto :goto_1
 
-    .line 713
+    .line 708
     :cond_4
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getLatestCameraEvent()Landroidx/lifecycle/LiveData;
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getLatestCameraEvent()Landroidx/lifecycle/LiveData;
 
-    move-result-object p0
+    move-result-object v1
 
-    invoke-virtual {p0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
-    move-result-object p0
+    move-result-object v1
 
-    check-cast p0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
+    check-cast v1, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
-    if-nez p0, :cond_5
+    if-nez v1, :cond_5
 
-    const/4 p0, -0x1
+    const/4 v1, -0x1
 
     goto :goto_0
 
     :cond_5
-    sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$WhenMappings;->$EnumSwitchMapping$1:[I
+    sget-object v2, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$WhenMappings;->$EnumSwitchMapping$0:[I
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->ordinal()I
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->ordinal()I
 
-    move-result p0
+    move-result v1
 
-    aget p0, v1, p0
+    aget v1, v2, v1
 
     :goto_0
-    packed-switch p0, :pswitch_data_0
+    packed-switch v1, :pswitch_data_0
 
-    .line 720
+    .line 717
     :pswitch_0
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Inactive;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Inactive;
 
@@ -2342,63 +2294,91 @@
 
     .line 716
     :pswitch_1
-    sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Counting;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Counting;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->selfTimerButtonState:Landroidx/lifecycle/MutableLiveData;
 
-    check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
+    invoke-virtual {p0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
 
-    goto :goto_1
-
-    .line 719
-    :pswitch_2
-    sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Stopping;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Stopping;
-
-    check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
-
-    goto :goto_1
-
-    .line 718
-    :pswitch_3
-    sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$HoldRecording;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$HoldRecording;
-
-    check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
-
-    goto :goto_1
-
-    .line 717
-    :pswitch_4
-    sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Capturing;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Capturing;
+    move-result-object p0
 
     check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
     goto :goto_1
 
     .line 715
-    :pswitch_5
-    sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Prepared;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Prepared;
+    :pswitch_2
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->selfTimerButtonState:Landroidx/lifecycle/MutableLiveData;
+
+    invoke-virtual {p0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
+
+    goto :goto_1
+
+    .line 711
+    :pswitch_3
+    sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Counting;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Counting;
 
     check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
     goto :goto_1
 
     .line 714
+    :pswitch_4
+    sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Stopping;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Stopping;
+
+    check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
+
+    goto :goto_1
+
+    .line 713
+    :pswitch_5
+    sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$HoldRecording;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$HoldRecording;
+
+    check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
+
+    goto :goto_1
+
+    .line 712
     :pswitch_6
+    sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Capturing;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Capturing;
+
+    check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
+
+    goto :goto_1
+
+    .line 710
+    :pswitch_7
+    sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Prepared;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Prepared;
+
+    check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
+
+    goto :goto_1
+
+    .line 709
+    :pswitch_8
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
 
     check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
-    .line 684
+    .line 679
     :goto_1
     invoke-virtual {v0, p0}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
     return-void
 
+    nop
+
     :pswitch_data_0
     .packed-switch 0x2
+        :pswitch_8
+        :pswitch_8
+        :pswitch_7
         :pswitch_6
-        :pswitch_6
+        :pswitch_0
         :pswitch_5
         :pswitch_4
-        :pswitch_0
         :pswitch_3
         :pswitch_2
         :pswitch_1
@@ -2408,14 +2388,14 @@
 .method private final updateSingleShooting()V
     .locals 4
 
-    .line 643
+    .line 638
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->singleShootingButtonState:Landroidx/lifecycle/MutableLiveData;
 
     move-object v1, p0
 
     check-cast v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
 
-    .line 644
+    .line 639
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
@@ -2430,21 +2410,21 @@
 
     const/4 v2, 0x1
 
-    .line 649
+    .line 644
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v3
 
     if-eqz v1, :cond_0
 
-    .line 644
+    .line 639
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
 
     move-result v1
 
     if-ne v1, v2, :cond_0
 
-    .line 645
+    .line 640
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->singleShootingButtonState:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v1}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -2459,14 +2439,14 @@
 
     if-eqz v1, :cond_2
 
-    .line 646
+    .line 641
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
 
     check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
     goto/16 :goto_1
 
-    .line 649
+    .line 644
     :cond_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
@@ -2484,14 +2464,14 @@
 
     if-eqz v1, :cond_1
 
-    .line 650
+    .line 645
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
 
     check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
     goto/16 :goto_1
 
-    .line 653
+    .line 648
     :cond_1
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
@@ -2507,14 +2487,14 @@
 
     if-eq v1, v2, :cond_2
 
-    .line 654
+    .line 649
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
 
     check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
     goto/16 :goto_1
 
-    .line 658
+    .line 653
     :cond_2
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->isQuickRecordStarted:Landroidx/lifecycle/LiveData;
 
@@ -2528,7 +2508,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 659
+    .line 654
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getLatestCameraEvent()Landroidx/lifecycle/LiveData;
@@ -2543,7 +2523,7 @@
 
     if-ne v1, v2, :cond_3
 
-    .line 661
+    .line 656
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->singleShootingButtonState:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {p0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -2554,7 +2534,7 @@
 
     goto :goto_1
 
-    .line 664
+    .line 659
     :cond_3
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->singleShootingButtonState:Landroidx/lifecycle/MutableLiveData;
 
@@ -2570,7 +2550,7 @@
 
     if-eqz v1, :cond_4
 
-    .line 665
+    .line 660
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getLatestCameraEvent()Landroidx/lifecycle/LiveData;
@@ -2585,7 +2565,7 @@
 
     if-ne v1, v2, :cond_4
 
-    .line 667
+    .line 662
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->singleShootingButtonState:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {p0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -2596,7 +2576,7 @@
 
     goto :goto_1
 
-    .line 670
+    .line 665
     :cond_4
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
@@ -2617,7 +2597,7 @@
     goto :goto_0
 
     :cond_5
-    sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$WhenMappings;->$EnumSwitchMapping$1:[I
+    sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$WhenMappings;->$EnumSwitchMapping$0:[I
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->ordinal()I
 
@@ -2628,14 +2608,14 @@
     :goto_0
     packed-switch p0, :pswitch_data_0
 
-    .line 678
+    .line 673
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Inactive;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Inactive;
 
     check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
     goto :goto_1
 
-    .line 677
+    .line 672
     :pswitch_0
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
 
@@ -2643,7 +2623,7 @@
 
     goto :goto_1
 
-    .line 676
+    .line 671
     :pswitch_1
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$Stopping;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$Stopping;
 
@@ -2651,7 +2631,7 @@
 
     goto :goto_1
 
-    .line 675
+    .line 670
     :pswitch_2
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$HoldRecording;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$HoldRecording;
 
@@ -2659,7 +2639,7 @@
 
     goto :goto_1
 
-    .line 674
+    .line 669
     :pswitch_3
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$Capturing;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$Capturing;
 
@@ -2667,7 +2647,7 @@
 
     goto :goto_1
 
-    .line 672
+    .line 667
     :pswitch_4
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$Prepared;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$Prepared;
 
@@ -2675,13 +2655,13 @@
 
     goto :goto_1
 
-    .line 671
+    .line 666
     :pswitch_5
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
 
     check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
-    .line 643
+    .line 638
     :goto_1
     invoke-virtual {v0, p0}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
@@ -2703,16 +2683,70 @@
 .end method
 
 .method private final updateSnapshot()V
-    .locals 5
+    .locals 4
 
-    .line 795
+    .line 800
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->snapshotButtonState:Landroidx/lifecycle/MutableLiveData;
 
     move-object v1, p0
 
     check-cast v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
 
-    .line 796
+    .line 801
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    if-ne v1, v2, :cond_0
+
+    .line 802
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isQuickRecordLocked()Landroidx/lifecycle/LiveData;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 804
+    sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
+
+    check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
+
+    goto/16 :goto_2
+
+    .line 807
+    :cond_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
@@ -2727,14 +2761,14 @@
 
     const/4 v2, -0x1
 
-    if-nez v1, :cond_0
+    if-nez v1, :cond_1
 
     move v1, v2
 
     goto :goto_0
 
-    :cond_0
-    sget-object v3, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$WhenMappings;->$EnumSwitchMapping$2:[I
+    :cond_1
+    sget-object v3, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$WhenMappings;->$EnumSwitchMapping$1:[I
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->ordinal()I
 
@@ -2743,35 +2777,18 @@
     aget v1, v3, v1
 
     :goto_0
-    const/4 v3, 0x1
+    packed-switch v1, :pswitch_data_0
 
-    const/4 v4, 0x7
-
-    if-eq v1, v3, :cond_1
-
-    const/4 v3, 0x2
-
-    if-eq v1, v3, :cond_1
-
-    const/4 v3, 0x5
-
-    if-eq v1, v3, :cond_1
-
-    const/4 v3, 0x6
-
-    if-eq v1, v3, :cond_1
-
-    if-eq v1, v4, :cond_1
-
-    .line 818
+    .line 831
+    :pswitch_0
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
 
     check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
     goto :goto_2
 
-    .line 802
-    :cond_1
+    .line 815
+    :pswitch_1
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getVideoFps()Landroidx/lifecycle/LiveData;
@@ -2786,14 +2803,14 @@
 
     if-ne v1, v3, :cond_2
 
-    .line 803
+    .line 816
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
 
     check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
     goto :goto_2
 
-    .line 805
+    .line 818
     :cond_2
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
@@ -2809,7 +2826,7 @@
 
     if-ne v1, v3, :cond_3
 
-    .line 806
+    .line 819
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getVideoFps()Landroidx/lifecycle/LiveData;
@@ -2824,14 +2841,14 @@
 
     if-ne v1, v3, :cond_3
 
-    .line 808
+    .line 821
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
 
     check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
     goto :goto_2
 
-    .line 810
+    .line 823
     :cond_3
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
@@ -2850,7 +2867,7 @@
     goto :goto_1
 
     :cond_4
-    sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$WhenMappings;->$EnumSwitchMapping$1:[I
+    sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$WhenMappings;->$EnumSwitchMapping$0:[I
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->ordinal()I
 
@@ -2859,7 +2876,9 @@
     aget v2, v1, p0
 
     :goto_1
-    if-eq v2, v4, :cond_5
+    const/4 p0, 0x7
+
+    if-eq v2, p0, :cond_5
 
     const/16 p0, 0xa
 
@@ -2869,32 +2888,47 @@
 
     if-eq v2, p0, :cond_5
 
-    .line 814
+    .line 827
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
 
     check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
     goto :goto_2
 
-    .line 813
+    .line 826
     :cond_5
     sget-object p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
 
     check-cast p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
-    .line 795
+    .line 800
     :goto_2
     invoke-virtual {v0, p0}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
     return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_1
+        :pswitch_1
+        :pswitch_1
+        :pswitch_0
+        :pswitch_0
+        :pswitch_1
+        :pswitch_1
+        :pswitch_1
+        :pswitch_1
+    .end packed-switch
 .end method
 
 
 # virtual methods
 .method public final canFocusOnShutterButton()Z
-    .locals 6
+    .locals 7
 
-    .line 256
+    .line 246
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->tutorialDialogUiState:Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->isTutorialDialogVisible()Landroidx/lifecycle/LiveData;
@@ -2915,7 +2949,7 @@
 
     move-result v0
 
-    .line 257
+    .line 247
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->proModeTopPaneUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;
 
     invoke-virtual {v3}, Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;->getCapturingModeInfoVisible()Landroidx/lifecycle/LiveData;
@@ -2930,7 +2964,7 @@
 
     move-result v3
 
-    .line 258
+    .line 248
     iget-object v4, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->proModeTopPaneUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;
 
     invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;->getCapturingModeMenuVisible()Landroidx/lifecycle/LiveData;
@@ -2945,7 +2979,7 @@
 
     move-result v4
 
-    .line 259
+    .line 249
     iget-object v5, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->messageUiState:Ljp/co/sony/mc/camera/view/uistate/MessageUiState;
 
     invoke-virtual {v5}, Ljp/co/sony/mc/camera/view/uistate/MessageUiState;->isDialogShown()Landroidx/lifecycle/LiveData;
@@ -2960,10 +2994,25 @@
 
     move-result v5
 
-    .line 261
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->thermalUiState:Ljp/co/sony/mc/camera/view/uistate/ThermalUiState;
+    .line 251
+    iget-object v6, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->thermalUiState:Ljp/co/sony/mc/camera/view/uistate/ThermalUiState;
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/ThermalUiState;->isModeRestrictedInHighTemperatureDialogVisible()Landroidx/lifecycle/LiveData;
+    invoke-virtual {v6}, Ljp/co/sony/mc/camera/view/uistate/ThermalUiState;->isModeRestrictedInHighTemperatureDialogVisible()Landroidx/lifecycle/LiveData;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v6
+
+    invoke-static {v6, v2}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v6
+
+    .line 253
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->basicModeColorToneProfileUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;->getColorToneProfileVisible()Landroidx/lifecycle/LiveData;
 
     move-result-object p0
 
@@ -2983,6 +3032,8 @@
 
     if-nez v5, :cond_0
 
+    if-nez v6, :cond_0
+
     if-nez p0, :cond_0
 
     goto :goto_0
@@ -2995,9 +3046,9 @@
 .end method
 
 .method public final execLongContinuousShooting()Z
-    .locals 2
+    .locals 7
 
-    .line 381
+    .line 379
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->isContinuousShootingPressed:Z
 
     const/4 v1, 0x0
@@ -3006,7 +3057,7 @@
 
     return v1
 
-    .line 382
+    .line 380
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->hardwareKeyHeld:Landroidx/lifecycle/MutableLiveData;
 
@@ -3026,7 +3077,7 @@
 
     return v1
 
-    .line 383
+    .line 381
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
@@ -3034,7 +3085,7 @@
 
     invoke-interface {v0, v1}, Ljp/co/sony/mc/camera/view/CameraOperator;->setCameraKeyEnabled(Z)V
 
-    .line 384
+    .line 382
     :cond_2
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->continuousShootingButtonState:Landroidx/lifecycle/MutableLiveData;
 
@@ -3046,14 +3097,43 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
-    .line 385
-    sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
+    .line 383
+    sget-object v2, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
+    const/4 v2, 0x1
+
     if-eqz v0, :cond_4
+
+    .line 384
+    new-array v0, v2, [Ljava/lang/String;
+
+    .line 385
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtimeNanos()J
+
+    move-result-wide v3
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    const-string v6, "KeyTimestamp SW_LONG_CONTINUOUS_SHOOTING currentElapsedRealtimeNanos = "
+
+    invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v5, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    aput-object v3, v0, v1
+
+    .line 384
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 386
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
@@ -3078,20 +3158,18 @@
     :cond_4
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
-    const/4 v0, 0x1
-
     if-eqz p0, :cond_5
 
-    invoke-interface {p0, v0}, Ljp/co/sony/mc/camera/view/CameraOperator;->setCameraKeyEnabled(Z)V
+    invoke-interface {p0, v2}, Ljp/co/sony/mc/camera/view/CameraOperator;->setCameraKeyEnabled(Z)V
 
     :cond_5
-    return v0
+    return v2
 .end method
 
 .method public final execPause()V
-    .locals 4
+    .locals 6
 
-    .line 535
+    .line 528
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->hardwareKeyHeld:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -3110,7 +3188,7 @@
 
     return-void
 
-    .line 536
+    .line 529
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->pauseButtonState:Landroidx/lifecycle/MutableLiveData;
 
@@ -3122,16 +3200,47 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
-    .line 537
+    .line 530
     sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
+    const/4 v2, 0x0
+
+    const/4 v3, 0x1
+
     if-eqz v1, :cond_1
 
-    .line 538
+    .line 531
+    new-array v0, v3, [Ljava/lang/String;
+
+    .line 532
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtimeNanos()J
+
+    move-result-wide v3
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v5, "KeyTimestamp SW_PAUSE_RECORDING currentElapsedRealtimeNanos = "
+
+    invoke-direct {v1, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    aput-object v1, v0, v2
+
+    .line 531
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 533
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
@@ -3140,21 +3249,21 @@
 
     sub-long/2addr v0, v2
 
-    .line 539
+    .line 534
     iget-wide v2, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->RECORDING_PAUSE_RESUME_MIN_INTERVAL_US:J
 
     cmp-long v0, v0, v2
 
     if-lez v0, :cond_2
 
-    .line 541
+    .line 536
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
     iput-wide v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->lastRecordingPauseTime:J
 
-    .line 542
+    .line 537
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     if-eqz p0, :cond_2
@@ -3163,7 +3272,7 @@
 
     goto :goto_0
 
-    .line 545
+    .line 540
     :cond_1
     sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Pause$Pausing;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Pause$Pausing;
 
@@ -3173,7 +3282,34 @@
 
     if-eqz v0, :cond_2
 
-    .line 546
+    .line 541
+    new-array v0, v3, [Ljava/lang/String;
+
+    .line 542
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtimeNanos()J
+
+    move-result-wide v3
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v5, "KeyTimestamp SW_RESUME_RECORDING currentElapsedRealtimeNanos = "
+
+    invoke-direct {v1, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    aput-object v1, v0, v2
+
+    .line 541
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 543
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
@@ -3182,21 +3318,21 @@
 
     sub-long/2addr v0, v2
 
-    .line 547
+    .line 544
     iget-wide v2, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->RECORDING_PAUSE_RESUME_MIN_INTERVAL_US:J
 
     cmp-long v0, v0, v2
 
     if-lez v0, :cond_2
 
-    .line 549
+    .line 546
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
     iput-wide v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->lastRecordingResumeTime:J
 
-    .line 550
+    .line 547
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     if-eqz p0, :cond_2
@@ -3209,9 +3345,9 @@
 .end method
 
 .method public final execRecording()V
-    .locals 3
+    .locals 6
 
-    .line 491
+    .line 497
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->hardwareKeyHeld:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -3230,7 +3366,7 @@
 
     return-void
 
-    .line 492
+    .line 498
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->recordingButtonState:Landroidx/lifecycle/MutableLiveData;
 
@@ -3242,68 +3378,63 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
-    .line 493
+    .line 499
     sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
-    const/4 v2, 0x1
+    const/4 v2, 0x0
 
-    if-eqz v1, :cond_5
+    const/4 v3, 0x1
 
-    .line 494
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+    if-eqz v1, :cond_3
 
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->isStreaming()Landroidx/lifecycle/LiveData;
+    .line 500
+    new-array v0, v3, [Ljava/lang/String;
 
-    move-result-object v0
+    .line 501
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtimeNanos()J
 
-    invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+    move-result-wide v3
 
-    move-result-object v0
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    const-string v5, "KeyTimestamp SW_START_RECORDING currentElapsedRealtimeNanos = "
+
+    invoke-direct {v1, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result v0
+    move-result-object v1
 
-    if-nez v0, :cond_2
+    aput-object v1, v0, v2
 
-    .line 496
+    .line 500
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 502
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     if-eqz v0, :cond_1
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/view/CameraOperator;->prepareRecording()V
 
-    .line 497
+    .line 503
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
-    if-eqz p0, :cond_3
+    if-eqz p0, :cond_2
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/view/CameraOperator;->startRecording()V
 
-    goto :goto_0
-
-    :cond_2
-    if-ne v0, v2, :cond_4
-
-    .line 501
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
-
-    if-eqz p0, :cond_3
-
-    invoke-interface {p0}, Ljp/co/sony/mc/camera/view/CameraOperator;->prepareStreaming()V
-
     .line 504
-    :cond_3
-    :goto_0
+    :cond_2
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent$Context;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent$Context;->getEnv()Ljp/co/sony/mc/camera/idd/value/IddEnvironment;
@@ -3314,36 +3445,17 @@
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->setCaptureTrigger(Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;)V
 
-    .line 505
-    sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;
+    goto :goto_0
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;->getEnv()Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;
-
-    move-result-object p0
-
-    sget-object v0, Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;->SW_KEY:Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;
-
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->setCaptureTrigger(Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;)V
-
-    goto :goto_1
-
-    .line 494
-    :cond_4
-    new-instance p0, Lkotlin/NoWhenBranchMatchedException;
-
-    invoke-direct {p0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
-
-    throw p0
-
-    .line 507
-    :cond_5
+    .line 506
+    :cond_3
     sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Record$Recording;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Record$Recording;
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
-    if-nez v1, :cond_6
+    if-nez v1, :cond_4
 
     sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Record$Pausing;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Record$Pausing;
 
@@ -3351,66 +3463,52 @@
 
     move-result v0
 
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_5
+
+    .line 507
+    :cond_4
+    new-array v0, v3, [Ljava/lang/String;
 
     .line 508
-    :cond_6
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtimeNanos()J
 
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->isStreaming()Landroidx/lifecycle/LiveData;
+    move-result-wide v3
 
-    move-result-object v0
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+    const-string v5, "KeyTimestamp SW_STOP_RECORDING currentElapsedRealtimeNanos = "
 
-    move-result-object v0
+    invoke-direct {v1, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-virtual {v1, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result v0
+    move-result-object v1
 
-    if-nez v0, :cond_7
+    aput-object v1, v0, v2
 
-    .line 510
+    .line 507
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 509
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
-    if-eqz p0, :cond_8
+    if-eqz p0, :cond_5
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/view/CameraOperator;->stopRecording()V
 
-    goto :goto_1
-
-    :cond_7
-    if-ne v0, v2, :cond_9
-
-    .line 514
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
-
-    if-eqz p0, :cond_8
-
-    invoke-interface {p0}, Ljp/co/sony/mc/camera/view/CameraOperator;->confirmStopStreaming()V
-
-    :cond_8
-    :goto_1
+    :cond_5
+    :goto_0
     return-void
-
-    .line 508
-    :cond_9
-    new-instance p0, Lkotlin/NoWhenBranchMatchedException;
-
-    invoke-direct {p0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
-
-    throw p0
 .end method
 
 .method public final execSelfTimer()V
-    .locals 2
+    .locals 5
 
-    .line 458
+    .line 462
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->hardwareKeyHeld:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -3429,7 +3527,7 @@
 
     return-void
 
-    .line 459
+    .line 463
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->selfTimerButtonState:Landroidx/lifecycle/MutableLiveData;
 
@@ -3441,7 +3539,7 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
-    .line 460
+    .line 464
     sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -3460,7 +3558,7 @@
 
     goto :goto_0
 
-    .line 463
+    .line 469
     :cond_1
     sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Counting;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Counting;
 
@@ -3470,7 +3568,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 464
+    .line 470
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     if-eqz p0, :cond_3
@@ -3479,9 +3577,40 @@
 
     goto :goto_1
 
-    .line 461
     :cond_2
     :goto_0
+    const/4 v0, 0x1
+
+    .line 465
+    new-array v0, v0, [Ljava/lang/String;
+
+    .line 466
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtimeNanos()J
+
+    move-result-wide v1
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    const-string v4, "KeyTimestamp SW_SELF_TIMER currentElapsedRealtimeNanos = "
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v3, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
+
+    .line 465
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 467
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     if-eqz p0, :cond_3
@@ -3494,7 +3623,7 @@
 .end method
 
 .method public final execShortContinuousShooting()V
-    .locals 2
+    .locals 7
 
     .line 398
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->isContinuousShootingPressed:Z
@@ -3527,9 +3656,9 @@
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
-    if-eqz v0, :cond_2
-
     const/4 v1, 0x0
+
+    if-eqz v0, :cond_2
 
     invoke-interface {v0, v1}, Ljp/co/sony/mc/camera/view/CameraOperator;->setCameraKeyEnabled(Z)V
 
@@ -3546,22 +3675,51 @@
     check-cast v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
     .line 402
-    sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
+    sget-object v2, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    move-result v1
+    move-result v2
 
-    if-eqz v1, :cond_4
+    const/4 v3, 0x1
+
+    if-eqz v2, :cond_4
 
     .line 403
+    new-array v0, v3, [Ljava/lang/String;
+
+    .line 404
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtimeNanos()J
+
+    move-result-wide v4
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    const-string v6, "KeyTimestamp SW_SHORT_CONTINUOUS_SHOOTING currentElapsedRealtimeNanos = "
+
+    invoke-direct {v2, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    aput-object v2, v0, v1
+
+    .line 403
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 405
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     if-eqz v0, :cond_3
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/view/CameraOperator;->requestBurstCapture()V
 
-    .line 404
+    .line 406
     :cond_3
     sget-object v0, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent$Context;
 
@@ -3573,7 +3731,7 @@
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->setCaptureTrigger(Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;)V
 
-    .line 405
+    .line 407
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     if-eqz v0, :cond_6
@@ -3582,7 +3740,7 @@
 
     goto :goto_0
 
-    .line 407
+    .line 409
     :cond_4
     sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$ContinuousShooting$Prepared;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$ContinuousShooting$Prepared;
 
@@ -3600,7 +3758,7 @@
 
     if-eqz v0, :cond_6
 
-    .line 408
+    .line 410
     :cond_5
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
@@ -3608,25 +3766,23 @@
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/view/CameraOperator;->requestCaptureCancel()V
 
-    .line 414
+    .line 416
     :cond_6
     :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     if-eqz p0, :cond_7
 
-    const/4 v0, 0x1
-
-    invoke-interface {p0, v0}, Ljp/co/sony/mc/camera/view/CameraOperator;->setCameraKeyEnabled(Z)V
+    invoke-interface {p0, v3}, Ljp/co/sony/mc/camera/view/CameraOperator;->setCameraKeyEnabled(Z)V
 
     :cond_7
     return-void
 .end method
 
 .method public final execSingleShooting()V
-    .locals 2
+    .locals 5
 
-    .line 338
+    .line 332
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->hardwareKeyHeld:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -3645,7 +3801,7 @@
 
     return-void
 
-    .line 339
+    .line 333
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->singleShootingButtonState:Landroidx/lifecycle/MutableLiveData;
 
@@ -3657,7 +3813,7 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
-    .line 340
+    .line 334
     sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -3666,7 +3822,7 @@
 
     if-nez v1, :cond_1
 
-    .line 341
+    .line 335
     sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$Prepared;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$Prepared;
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -3675,7 +3831,7 @@
 
     if-nez v1, :cond_1
 
-    .line 342
+    .line 336
     sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$Capturing;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$Capturing;
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -3684,15 +3840,46 @@
 
     if-eqz v0, :cond_3
 
-    .line 343
     :cond_1
+    const/4 v0, 0x1
+
+    .line 337
+    new-array v0, v0, [Ljava/lang/String;
+
+    .line 338
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtimeNanos()J
+
+    move-result-wide v1
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    const-string v4, "KeyTimestamp SW_SINGLE_SHOOTING currentElapsedRealtimeNanos = "
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v3, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
+
+    .line 337
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 339
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     if-eqz p0, :cond_2
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/view/CameraOperator;->takeSnapshot()V
 
-    .line 344
+    .line 340
     :cond_2
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent$Context;
 
@@ -3709,9 +3896,9 @@
 .end method
 
 .method public final execSnapshot()V
-    .locals 2
+    .locals 5
 
-    .line 570
+    .line 567
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->snapshotActivated:Landroidx/lifecycle/LiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
@@ -3728,7 +3915,7 @@
 
     if-nez v0, :cond_1
 
-    .line 571
+    .line 568
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getVideoHdr()Landroidx/lifecycle/LiveData;
@@ -3743,15 +3930,15 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 572
+    .line 569
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->messageUiState:Ljp/co/sony/mc/camera/view/uistate/MessageUiState;
 
     new-instance v0, Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage;
 
-    .line 573
+    .line 570
     sget-object v1, Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage$MessageType;->CANNOT_SNAPSHOT_DUE_TO_VIDEO_HDR:Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage$MessageType;
 
-    .line 572
+    .line 569
     invoke-direct {v0, v1}, Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage;-><init>(Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage$MessageType;)V
 
     check-cast v0, Ljp/co/sony/mc/camera/view/hint/HintTextContent;
@@ -3761,7 +3948,7 @@
     :cond_0
     return-void
 
-    .line 578
+    .line 575
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->hardwareKeyHeld:Landroidx/lifecycle/MutableLiveData;
 
@@ -3781,7 +3968,7 @@
 
     return-void
 
-    .line 579
+    .line 576
     :cond_2
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->snapshotButtonState:Landroidx/lifecycle/MutableLiveData;
 
@@ -3793,7 +3980,7 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
-    .line 580
+    .line 577
     sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -3802,7 +3989,38 @@
 
     if-eqz v0, :cond_3
 
-    .line 581
+    const/4 v0, 0x1
+
+    .line 578
+    new-array v0, v0, [Ljava/lang/String;
+
+    .line 579
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtimeNanos()J
+
+    move-result-wide v1
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    const-string v4, "KeyTimestamp SW_VIDEO_SNAPSHOT currentElapsedRealtimeNanos = "
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v3, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
+
+    .line 578
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 580
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     if-eqz p0, :cond_3
@@ -3824,7 +4042,7 @@
         }
     .end annotation
 
-    .line 225
+    .line 215
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->captureButtonAlpha:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -3841,7 +4059,7 @@
         }
     .end annotation
 
-    .line 149
+    .line 148
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->continuousShootingButtonEnabled:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -3858,7 +4076,7 @@
         }
     .end annotation
 
-    .line 148
+    .line 147
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->continuousShootingButtonState:Landroidx/lifecycle/MutableLiveData;
 
     return-object p0
@@ -3875,7 +4093,7 @@
         }
     .end annotation
 
-    .line 209
+    .line 208
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->focusOnShutterButton:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -3884,7 +4102,7 @@
 .method public final getLastRecordingPauseTime()J
     .locals 2
 
-    .line 235
+    .line 225
     iget-wide v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->lastRecordingPauseTime:J
 
     return-wide v0
@@ -3893,7 +4111,7 @@
 .method public final getLastRecordingResumeTime()J
     .locals 2
 
-    .line 237
+    .line 227
     iget-wide v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->lastRecordingResumeTime:J
 
     return-wide v0
@@ -3910,7 +4128,7 @@
         }
     .end annotation
 
-    .line 206
+    .line 205
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->onCaptureInRecording:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -3919,7 +4137,7 @@
 .method public final getOperator()Ljp/co/sony/mc/camera/view/CameraOperator;
     .locals 0
 
-    .line 45
+    .line 44
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     return-object p0
@@ -3936,7 +4154,7 @@
         }
     .end annotation
 
-    .line 178
+    .line 177
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->pauseButtonEnabled:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -3953,7 +4171,7 @@
         }
     .end annotation
 
-    .line 177
+    .line 176
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->pauseButtonState:Landroidx/lifecycle/MutableLiveData;
 
     return-object p0
@@ -3962,7 +4180,7 @@
 .method public final getRECORDING_PAUSE_RESUME_MIN_INTERVAL_US()J
     .locals 2
 
-    .line 233
+    .line 223
     iget-wide v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->RECORDING_PAUSE_RESUME_MIN_INTERVAL_US:J
 
     return-wide v0
@@ -3979,7 +4197,7 @@
         }
     .end annotation
 
-    .line 163
+    .line 162
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->recordingButtonEnabled:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -3996,7 +4214,7 @@
         }
     .end annotation
 
-    .line 162
+    .line 161
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->recordingButtonState:Landroidx/lifecycle/MutableLiveData;
 
     return-object p0
@@ -4013,7 +4231,7 @@
         }
     .end annotation
 
-    .line 128
+    .line 127
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->selfTimerButtonEnabled:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -4030,7 +4248,7 @@
         }
     .end annotation
 
-    .line 127
+    .line 126
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->selfTimerButtonState:Landroidx/lifecycle/MutableLiveData;
 
     return-object p0
@@ -4047,7 +4265,7 @@
         }
     .end annotation
 
-    .line 109
+    .line 108
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->singleShootingButtonEnabled:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -4064,7 +4282,7 @@
         }
     .end annotation
 
-    .line 108
+    .line 107
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->singleShootingButtonState:Landroidx/lifecycle/MutableLiveData;
 
     return-object p0
@@ -4081,7 +4299,7 @@
         }
     .end annotation
 
-    .line 201
+    .line 200
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->snapshotActivated:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -4098,7 +4316,7 @@
         }
     .end annotation
 
-    .line 190
+    .line 189
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->snapshotButtonEnabled:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -4115,112 +4333,105 @@
         }
     .end annotation
 
-    .line 189
+    .line 188
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->snapshotButtonState:Landroidx/lifecycle/MutableLiveData;
 
     return-object p0
 .end method
 
-.method public final getStreamingAudioMuteIcon()Landroidx/lifecycle/LiveData;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Landroidx/lifecycle/LiveData<",
-            "Ljava/lang/Integer;",
-            ">;"
-        }
-    .end annotation
-
-    .line 218
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->streamingAudioMuteIcon:Landroidx/lifecycle/LiveData;
-
-    return-object p0
-.end method
-
-.method public final getStreamingAudioMuteState()Landroidx/lifecycle/LiveData;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Landroidx/lifecycle/LiveData<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-
-    .line 216
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->streamingAudioMuteState:Landroidx/lifecycle/LiveData;
-
-    return-object p0
-.end method
-
 .method public final holdContinuousShooting()V
-    .locals 2
+    .locals 6
 
     const/4 v0, 0x1
 
-    .line 366
+    .line 362
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->isContinuousShootingPressed:Z
 
-    .line 367
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->hardwareKeyHeld:Landroidx/lifecycle/MutableLiveData;
+    .line 363
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->hardwareKeyHeld:Landroidx/lifecycle/MutableLiveData;
 
-    invoke-virtual {v0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    check-cast v0, Ljava/lang/Boolean;
+    check-cast v1, Ljava/lang/Boolean;
 
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
 
-    move-result v0
+    move-result v1
 
-    if-eqz v0, :cond_0
+    if-eqz v1, :cond_0
 
     return-void
 
-    .line 368
+    .line 364
     :cond_0
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
-    if-eqz v0, :cond_1
+    const/4 v2, 0x0
 
-    const/4 v1, 0x0
+    if-eqz v1, :cond_1
 
-    invoke-interface {v0, v1}, Ljp/co/sony/mc/camera/view/CameraOperator;->setCameraKeyEnabled(Z)V
+    invoke-interface {v1, v2}, Ljp/co/sony/mc/camera/view/CameraOperator;->setCameraKeyEnabled(Z)V
+
+    .line 365
+    :cond_1
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->continuousShootingButtonState:Landroidx/lifecycle/MutableLiveData;
+
+    invoke-virtual {v1}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    check-cast v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
+
+    .line 366
+    sget-object v3, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    .line 367
+    new-array v0, v0, [Ljava/lang/String;
+
+    .line 368
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtimeNanos()J
+
+    move-result-wide v3
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v5, "KeyTimestamp SW_LONG_CONTINUOUS_SHOOTING currentElapsedRealtimeNanos = "
+
+    invoke-direct {v1, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    aput-object v1, v0, v2
+
+    .line 367
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 369
-    :cond_1
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->continuousShootingButtonState:Landroidx/lifecycle/MutableLiveData;
-
-    invoke-virtual {v0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
-    check-cast v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
-
-    .line 370
-    sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    .line 371
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     if-eqz p0, :cond_2
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/view/CameraOperator;->requestBurstCapture()V
 
-    .line 372
+    .line 370
     :cond_2
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent$Context;
 
@@ -4239,7 +4450,7 @@
 .method public final holdPause()V
     .locals 1
 
-    .line 530
+    .line 523
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->hardwareKeyHeld:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -4258,7 +4469,7 @@
 
     return-void
 
-    .line 531
+    .line 524
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
@@ -4275,7 +4486,7 @@
 .method public final holdRecording()V
     .locals 1
 
-    .line 486
+    .line 492
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->hardwareKeyHeld:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -4294,7 +4505,7 @@
 
     return-void
 
-    .line 487
+    .line 493
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
@@ -4309,9 +4520,9 @@
 .end method
 
 .method public final holdSelfTimer()V
-    .locals 2
+    .locals 6
 
-    .line 442
+    .line 444
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->hardwareKeyHeld:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -4330,17 +4541,17 @@
 
     return-void
 
-    .line 443
+    .line 445
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
-    if-eqz v0, :cond_1
-
     const/4 v1, 0x0
+
+    if-eqz v0, :cond_1
 
     invoke-interface {v0, v1}, Ljp/co/sony/mc/camera/view/CameraOperator;->setCameraKeyEnabled(Z)V
 
-    .line 444
+    .line 446
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->selfTimerButtonState:Landroidx/lifecycle/MutableLiveData;
 
@@ -4352,16 +4563,16 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
-    .line 445
-    sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
+    .line 447
+    sget-object v2, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
-    .line 446
+    .line 448
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getFocusMode()Landroidx/lifecycle/LiveData;
@@ -4374,17 +4585,46 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
-    .line 447
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->AF_S:Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
+    .line 449
+    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->AF_S:Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
-    if-eq v0, v1, :cond_2
+    if-eq v0, v2, :cond_2
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->MF:Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
+    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->MF:Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
-    if-ne v0, v1, :cond_3
+    if-ne v0, v2, :cond_3
 
-    .line 448
     :cond_2
+    const/4 v0, 0x1
+
+    .line 450
+    new-array v0, v0, [Ljava/lang/String;
+
+    .line 451
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtimeNanos()J
+
+    move-result-wide v2
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    const-string v5, "KeyTimestamp SW_FOCUS currentElapsedRealtimeNanos = "
+
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v4, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    aput-object v2, v0, v1
+
+    .line 450
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 452
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     if-eqz p0, :cond_3
@@ -4396,9 +4636,9 @@
 .end method
 
 .method public final holdSingleShooting()V
-    .locals 2
+    .locals 6
 
-    .line 325
+    .line 317
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->hardwareKeyHeld:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -4417,17 +4657,17 @@
 
     return-void
 
-    .line 326
+    .line 318
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
-    if-eqz v0, :cond_1
-
     const/4 v1, 0x0
+
+    if-eqz v0, :cond_1
 
     invoke-interface {v0, v1}, Ljp/co/sony/mc/camera/view/CameraOperator;->setCameraKeyEnabled(Z)V
 
-    .line 327
+    .line 319
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->singleShootingButtonState:Landroidx/lifecycle/MutableLiveData;
 
@@ -4437,16 +4677,45 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
-    .line 328
-    sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
+    .line 320
+    sget-object v2, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 329
+    const/4 v0, 0x1
+
+    .line 321
+    new-array v0, v0, [Ljava/lang/String;
+
+    .line 322
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtimeNanos()J
+
+    move-result-wide v2
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    const-string v5, "KeyTimestamp SW_FOCUS currentElapsedRealtimeNanos = "
+
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v4, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    aput-object v2, v0, v1
+
+    .line 321
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 323
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     if-eqz p0, :cond_2
@@ -4460,7 +4729,7 @@
 .method public final holdSnapshot()V
     .locals 1
 
-    .line 565
+    .line 562
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->hardwareKeyHeld:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -4495,7 +4764,7 @@
 
     goto :goto_0
 
-    .line 566
+    .line 563
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
@@ -4521,7 +4790,7 @@
         }
     .end annotation
 
-    .line 97
+    .line 96
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->isQuickRecordEnabled:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -4538,7 +4807,7 @@
         }
     .end annotation
 
-    .line 214
+    .line 213
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->isQuickRecordStarted:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -4547,22 +4816,22 @@
 .method public final lockQuickRecord()V
     .locals 3
 
-    .line 624
+    .line 616
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     const/4 v1, 0x1
 
-    .line 626
+    .line 618
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v2
 
     if-eqz v0, :cond_0
 
-    .line 624
+    .line 616
     invoke-interface {v0, v1}, Ljp/co/sony/mc/camera/view/CameraOperator;->setCameraKeyEnabled(Z)V
 
-    .line 626
+    .line 618
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->singleShootingButtonEnabled:Landroidx/lifecycle/LiveData;
 
@@ -4576,16 +4845,16 @@
 
     if-eqz v0, :cond_1
 
-    .line 627
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->singleShootingButtonState:Landroidx/lifecycle/MutableLiveData;
+    .line 619
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->singleShootingButtonState:Landroidx/lifecycle/MutableLiveData;
 
-    sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$LockRecording;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$LockRecording;
+    sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$LockRecording;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$LockRecording;
 
-    invoke-virtual {p0, v0}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
+    invoke-virtual {v0, v1}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
     goto :goto_0
 
-    .line 628
+    .line 620
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->selfTimerButtonEnabled:Landroidx/lifecycle/LiveData;
 
@@ -4599,15 +4868,21 @@
 
     if-eqz v0, :cond_2
 
-    .line 629
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->selfTimerButtonState:Landroidx/lifecycle/MutableLiveData;
+    .line 621
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->selfTimerButtonState:Landroidx/lifecycle/MutableLiveData;
 
-    sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$LockRecording;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$LockRecording;
+    sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$LockRecording;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$LockRecording;
 
-    invoke-virtual {p0, v0}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
+    invoke-virtual {v0, v1}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
+    .line 624
     :cond_2
     :goto_0
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->updateSnapshot()V
+
+    .line 625
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->updatePause()V
+
     return-void
 .end method
 
@@ -4618,8 +4893,8 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 240
-    sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$WhenMappings;->$EnumSwitchMapping$1:[I
+    .line 230
+    sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$WhenMappings;->$EnumSwitchMapping$0:[I
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->ordinal()I
 
@@ -4631,7 +4906,7 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 242
+    .line 232
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->hardwareKeyHeld:Landroidx/lifecycle/MutableLiveData;
 
     const/4 v0, 0x0
@@ -4642,7 +4917,7 @@
 
     invoke-virtual {p1, v0}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
-    .line 248
+    .line 238
     :cond_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->updateControlState()V
 
@@ -4652,7 +4927,7 @@
 .method public final onCameraKeyHeld()V
     .locals 2
 
-    .line 306
+    .line 298
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->hardwareKeyHeld:Landroidx/lifecycle/MutableLiveData;
 
     const/4 v1, 0x1
@@ -4663,7 +4938,7 @@
 
     invoke-virtual {v0, v1}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
-    .line 307
+    .line 299
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->updateControlState()V
 
     return-void
@@ -4672,7 +4947,7 @@
 .method public final onCameraKeyReleased()V
     .locals 1
 
-    .line 311
+    .line 303
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->hardwareKeyHeld:Landroidx/lifecycle/MutableLiveData;
 
     const/4 v0, 0x0
@@ -4689,7 +4964,7 @@
 .method public final onCameraSettingsChanged()V
     .locals 0
 
-    .line 252
+    .line 242
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->updateControlState()V
 
     return-void
@@ -4710,7 +4985,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 268
+    .line 260
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v0
@@ -4719,7 +4994,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 269
+    .line 261
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->ZOOM_RATIO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
@@ -4734,7 +5009,7 @@
 
     goto :goto_0
 
-    .line 271
+    .line 263
     :cond_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->updateControlState()V
 
@@ -4745,7 +5020,7 @@
 .method public final onCaptureInRecording()V
     .locals 1
 
-    .line 294
+    .line 286
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->_onCaptureInRecording:Ljp/co/sony/mc/camera/view/viewmodel/LiveEvent;
 
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -4758,7 +5033,7 @@
 .method public final onClickSelfTimerButton()V
     .locals 2
 
-    .line 432
+    .line 434
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->isQuickRecordStarted:Landroidx/lifecycle/LiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
@@ -4777,7 +5052,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 433
+    .line 435
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isQuickRecordLocked()Landroidx/lifecycle/LiveData;
@@ -4794,12 +5069,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 434
+    .line 436
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->stopQuickRecord()V
 
     goto :goto_0
 
-    .line 437
+    .line 439
     :cond_0
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->execSelfTimer()V
 
@@ -4811,7 +5086,7 @@
 .method public final onClickSingleShootingButton()V
     .locals 2
 
-    .line 315
+    .line 307
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->isQuickRecordStarted:Landroidx/lifecycle/LiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
@@ -4830,7 +5105,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 316
+    .line 308
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isQuickRecordLocked()Landroidx/lifecycle/LiveData;
@@ -4847,12 +5122,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 317
+    .line 309
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->stopQuickRecord()V
 
     goto :goto_0
 
-    .line 320
+    .line 312
     :cond_0
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->execSingleShooting()V
 
@@ -4864,7 +5139,7 @@
 .method public final onExposureStarted()V
     .locals 2
 
-    .line 282
+    .line 274
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->snapshotButtonState:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -4879,7 +5154,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 283
+    .line 275
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->snapshotButtonState:Landroidx/lifecycle/MutableLiveData;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Snapshot$Capturing;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Snapshot$Capturing;
@@ -4893,7 +5168,7 @@
 .method public final onPause()V
     .locals 1
 
-    .line 302
+    .line 294
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->_focusOnShutterButton:Landroidx/lifecycle/MutableLiveData;
 
     const/4 v0, 0x0
@@ -4910,7 +5185,7 @@
 .method public final onShutterAction()V
     .locals 2
 
-    .line 288
+    .line 280
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->snapshotButtonState:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -4925,7 +5200,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 289
+    .line 281
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->snapshotButtonState:Landroidx/lifecycle/MutableLiveData;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
@@ -4939,7 +5214,7 @@
 .method public final onVideoSnapshotRequested()V
     .locals 2
 
-    .line 276
+    .line 268
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->snapshotButtonState:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -4954,7 +5229,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 277
+    .line 269
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->snapshotButtonState:Landroidx/lifecycle/MutableLiveData;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Snapshot$Capturing;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Snapshot$Capturing;
@@ -4970,10 +5245,10 @@
 
     const/4 v0, 0x0
 
-    .line 418
+    .line 420
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->isContinuousShootingPressed:Z
 
-    .line 419
+    .line 421
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->hardwareKeyHeld:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -4992,7 +5267,7 @@
 
     return-void
 
-    .line 420
+    .line 422
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
@@ -5002,7 +5277,7 @@
 
     invoke-interface {v0, v1}, Ljp/co/sony/mc/camera/view/CameraOperator;->setCameraKeyEnabled(Z)V
 
-    .line 421
+    .line 423
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->continuousShootingButtonState:Landroidx/lifecycle/MutableLiveData;
 
@@ -5014,7 +5289,7 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
-    .line 422
+    .line 424
     sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$ContinuousShooting$Prepared;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$ContinuousShooting$Prepared;
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -5031,7 +5306,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 423
+    .line 425
     :cond_2
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
@@ -5046,7 +5321,7 @@
 .method public final releasePause()V
     .locals 1
 
-    .line 560
+    .line 557
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->hardwareKeyHeld:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -5065,7 +5340,7 @@
 
     return-void
 
-    .line 561
+    .line 558
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
@@ -5082,7 +5357,7 @@
 .method public final releaseRecording()V
     .locals 1
 
-    .line 525
+    .line 518
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->hardwareKeyHeld:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -5101,7 +5376,7 @@
 
     return-void
 
-    .line 526
+    .line 519
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
@@ -5118,7 +5393,7 @@
 .method public final releaseSelfTimer()V
     .locals 2
 
-    .line 473
+    .line 479
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->hardwareKeyHeld:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -5137,7 +5412,7 @@
 
     return-void
 
-    .line 474
+    .line 480
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
@@ -5147,7 +5422,7 @@
 
     invoke-interface {v0, v1}, Ljp/co/sony/mc/camera/view/CameraOperator;->setCameraKeyEnabled(Z)V
 
-    .line 475
+    .line 481
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->selfTimerButtonState:Landroidx/lifecycle/MutableLiveData;
 
@@ -5159,7 +5434,7 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
-    .line 476
+    .line 482
     sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Prepared;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Prepared;
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -5168,7 +5443,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 477
+    .line 483
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     if-eqz p0, :cond_2
@@ -5182,7 +5457,7 @@
 .method public final releaseSingleShooting()V
     .locals 2
 
-    .line 353
+    .line 349
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->hardwareKeyHeld:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -5201,7 +5476,7 @@
 
     return-void
 
-    .line 354
+    .line 350
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
@@ -5211,7 +5486,7 @@
 
     invoke-interface {v0, v1}, Ljp/co/sony/mc/camera/view/CameraOperator;->setCameraKeyEnabled(Z)V
 
-    .line 355
+    .line 351
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->singleShootingButtonState:Landroidx/lifecycle/MutableLiveData;
 
@@ -5223,7 +5498,7 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
-    .line 356
+    .line 352
     sget-object v1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$Prepared;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$Prepared;
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -5232,7 +5507,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 357
+    .line 353
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     if-eqz p0, :cond_2
@@ -5246,7 +5521,7 @@
 .method public final releaseSnapshot()V
     .locals 1
 
-    .line 590
+    .line 589
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->hardwareKeyHeld:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -5265,7 +5540,7 @@
 
     return-void
 
-    .line 591
+    .line 590
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
@@ -5282,7 +5557,7 @@
 .method public final resetQuickRecordState()V
     .locals 1
 
-    .line 824
+    .line 837
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->_isQuickRecordStarted:Landroidx/lifecycle/MutableLiveData;
 
     const/4 v0, 0x0
@@ -5299,7 +5574,7 @@
 .method public final setFocusOnShutterButton(Z)V
     .locals 0
 
-    .line 298
+    .line 290
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->_focusOnShutterButton:Landroidx/lifecycle/MutableLiveData;
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -5314,7 +5589,7 @@
 .method public final setLastRecordingPauseTime(J)V
     .locals 0
 
-    .line 235
+    .line 225
     iput-wide p1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->lastRecordingPauseTime:J
 
     return-void
@@ -5323,7 +5598,7 @@
 .method public final setLastRecordingResumeTime(J)V
     .locals 0
 
-    .line 237
+    .line 227
     iput-wide p1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->lastRecordingResumeTime:J
 
     return-void
@@ -5332,27 +5607,57 @@
 .method public final setOperator(Ljp/co/sony/mc/camera/view/CameraOperator;)V
     .locals 0
 
-    .line 45
+    .line 44
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     return-void
 .end method
 
 .method public final startQuickRecord()V
-    .locals 3
+    .locals 6
 
-    .line 606
+    const/4 v0, 0x1
+
+    .line 596
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    .line 594
+    new-array v0, v0, [Ljava/lang/String;
+
+    .line 595
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtimeNanos()J
+
+    move-result-wide v2
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    const-string v5, "KeyTimestamp SW_START_QUICK_RECORDING currentElapsedRealtimeNanos = "
+
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v4, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    const/4 v3, 0x0
+
+    aput-object v2, v0, v3
+
+    .line 594
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 596
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->singleShootingButtonEnabled:Landroidx/lifecycle/LiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v0
-
-    const/4 v1, 0x1
-
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v1
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -5360,7 +5665,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 607
+    .line 597
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->singleShootingButtonState:Landroidx/lifecycle/MutableLiveData;
 
     sget-object v2, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$RequestRecording;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SingleShooting$RequestRecording;
@@ -5369,7 +5674,7 @@
 
     goto :goto_0
 
-    .line 608
+    .line 598
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->selfTimerButtonEnabled:Landroidx/lifecycle/LiveData;
 
@@ -5383,28 +5688,28 @@
 
     if-eqz v0, :cond_1
 
-    .line 609
+    .line 599
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->selfTimerButtonState:Landroidx/lifecycle/MutableLiveData;
 
     sget-object v2, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$RequestRecording;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$RequestRecording;
 
     invoke-virtual {v0, v2}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
-    .line 612
+    .line 602
     :cond_1
     :goto_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->_isQuickRecordStarted:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v0, v1}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
-    .line 613
+    .line 603
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     if-eqz v0, :cond_2
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/view/CameraOperator;->requestCaptureCancel()V
 
-    .line 614
+    .line 604
     :cond_2
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
@@ -5419,18 +5724,47 @@
 .end method
 
 .method public final stopQuickRecord()V
-    .locals 2
+    .locals 6
 
-    .line 618
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
+    const/4 v0, 0x1
 
-    if-eqz v0, :cond_0
+    .line 608
+    new-array v1, v0, [Ljava/lang/String;
 
-    const/4 v1, 0x1
+    .line 609
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtimeNanos()J
 
-    invoke-interface {v0, v1}, Ljp/co/sony/mc/camera/view/CameraOperator;->setCameraKeyEnabled(Z)V
+    move-result-wide v2
 
-    .line 619
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    const-string v5, "KeyTimestamp SW_STOP_QUICK_RECORDING currentElapsedRealtimeNanos = "
+
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v4, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    const/4 v3, 0x0
+
+    aput-object v2, v1, v3
+
+    .line 608
+    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 610
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
+
+    if-eqz v1, :cond_0
+
+    invoke-interface {v1, v0}, Ljp/co/sony/mc/camera/view/CameraOperator;->setCameraKeyEnabled(Z)V
+
+    .line 611
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
@@ -5438,116 +5772,15 @@
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/view/CameraOperator;->stopRecording()V
 
-    .line 620
+    .line 612
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->_isQuickRecordStarted:Landroidx/lifecycle/MutableLiveData;
 
-    const/4 v0, 0x0
-
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
     return-void
-.end method
-
-.method public final toggleAudioMute()V
-    .locals 4
-
-    .line 595
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->streamingAudioMuteState:Landroidx/lifecycle/LiveData;
-
-    invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
-    check-cast v0, Ljava/lang/Boolean;
-
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v0
-
-    const/4 v1, 0x1
-
-    if-ne v0, v1, :cond_0
-
-    .line 596
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
-
-    if-eqz v0, :cond_1
-
-    sget-object v2, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_AUDIO_MUTE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    check-cast v2, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
-
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;
-
-    invoke-interface {v0, v2, v3}, Ljp/co/sony/mc/camera/view/CameraOperator;->setSetting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
-
-    goto :goto_0
-
-    :cond_0
-    if-nez v0, :cond_3
-
-    .line 597
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
-
-    if-eqz v0, :cond_1
-
-    sget-object v2, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_AUDIO_MUTE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    check-cast v2, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
-
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;->ON:Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;
-
-    invoke-interface {v0, v2, v3}, Ljp/co/sony/mc/camera/view/CameraOperator;->setSetting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
-
-    .line 600
-    :cond_1
-    :goto_0
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->streamingAudioMuteState:Landroidx/lifecycle/LiveData;
-
-    invoke-virtual {p0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
-
-    move-result-object p0
-
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v0
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_2
-
-    .line 601
-    sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;->getEnv()Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->getMuteCount()I
-
-    move-result v0
-
-    add-int/2addr v0, v1
-
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->setMuteCount(I)V
-
-    :cond_2
-    return-void
-
-    .line 595
-    :cond_3
-    new-instance p0, Lkotlin/NoWhenBranchMatchedException;
-
-    invoke-direct {p0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
-
-    throw p0
 .end method

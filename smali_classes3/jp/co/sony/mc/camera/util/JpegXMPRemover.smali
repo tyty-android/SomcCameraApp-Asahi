@@ -310,6 +310,19 @@
 
 .method private static varargs cutOff(Ljava/nio/ByteBuffer;Landroid/util/SparseArray;[Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;)Ljava/nio/ByteBuffer;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "srcBuffer",
+            "scanResult",
+            "cutTarget"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -507,6 +520,14 @@
 
 .method public static cutOffXmpData(Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "srcBuffer"
+        }
+    .end annotation
 
     .line 181
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/JpegXMPRemover;->scanMarkerIndex(Ljava/nio/ByteBuffer;)Landroid/util/SparseArray;
@@ -554,6 +575,20 @@
 
 .method private static findIndex(Ljava/nio/ByteBuffer;I[BI)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "byteBuffer",
+            "offset",
+            "val",
+            "direction"
+        }
+    .end annotation
 
     if-lez p3, :cond_0
 
@@ -644,6 +679,18 @@
 
 .method private static findIndexFromLast(Ljava/nio/ByteBuffer;I[B)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "byteBuffer",
+            "offset",
+            "val"
+        }
+    .end annotation
 
     const/4 v0, -0x1
 
@@ -657,6 +704,18 @@
 
 .method private static findIndexFromTop(Ljava/nio/ByteBuffer;I[B)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "byteBuffer",
+            "offset",
+            "val"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -670,6 +729,18 @@
 
 .method private static findMarkerType(Ljava/nio/ByteBuffer;I[B)Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "byteBuffer",
+            "markerIndex",
+            "marker"
+        }
+    .end annotation
 
     .line 329
     invoke-static {}, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;->values()[Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;
@@ -724,6 +795,15 @@
 
 .method private static scanMarkerIndex(Ljava/nio/ByteBuffer;)Landroid/util/SparseArray;
     .locals 11
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "byteBuffer"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

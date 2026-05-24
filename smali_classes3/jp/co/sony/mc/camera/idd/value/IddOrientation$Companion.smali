@@ -42,7 +42,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 116
+    .line 175
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -73,24 +73,24 @@
 
     if-eq p1, p0, :cond_0
 
-    .line 121
+    .line 180
     sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddOrientation;->ORIENTATION_0:Ljp/co/sony/mc/camera/idd/value/IddOrientation;
 
     goto :goto_0
 
-    .line 120
+    .line 179
     :cond_0
     sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddOrientation;->ORIENTATION_270:Ljp/co/sony/mc/camera/idd/value/IddOrientation;
 
     goto :goto_0
 
-    .line 119
+    .line 178
     :cond_1
     sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddOrientation;->ORIENTATION_180:Ljp/co/sony/mc/camera/idd/value/IddOrientation;
 
     goto :goto_0
 
-    .line 118
+    .line 177
     :cond_2
     sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddOrientation;->ORIENTATION_90:Ljp/co/sony/mc/camera/idd/value/IddOrientation;
 

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="ai_suggestion_customize_setting_bottom_margin_horizontal">15.0dip</dimen>
+    <dimen name="ai_suggestion_customize_setting_menu_width">412.0dip</dimen>
+    <dimen name="ai_suggestion_customize_setting_title_margin_bottom">16.0dip</dimen>
+    <dimen name="ai_suggestion_reset_button_margin_top">6.0dip</dimen>
+    <dimen name="ai_suggestion_slider_margin_horizontal">15.0dip</dimen>
     <dimen name="audio_indicator_landscape_margin_top">45.0dip</dimen>
     <dimen name="auto_framing_size_info_button_horizontal_margin">14.0dip</dimen>
     <dimen name="auto_framing_size_menu_button_horizontal_margin">14.0dip</dimen>
@@ -52,7 +57,7 @@
     <dimen name="dial_picker_label_item_width">62.0dip</dimen>
     <dimen name="gimbal_button_horizontal_margin">14.0dip</dimen>
     <dimen name="gimbal_button_vertical_margin">13.0dip</dimen>
-    <dimen name="hint_text_basic_mode_portrait_bottom_margin">215.0dip</dimen>
+    <dimen name="hint_text_ai_suggestion_portrait_top_margin">80.0dip</dimen>
     <dimen name="hint_text_basic_mode_portrait_top_margin">34.0dip</dimen>
     <dimen name="hint_text_pro_mode_portrait_bottom_margin">320.0dip</dimen>
     <dimen name="hint_text_pro_video_mode_portrait_bottom_margin">250.0dip</dimen>
@@ -101,6 +106,7 @@
     <dimen name="saving_process_text_landscape_width">229.0dip</dimen>
     <dimen name="thermal_hint_text_layout_margin_bottom_pro_mode_land">90.0dip</dimen>
     <dimen name="thermal_hint_text_layout_margin_top_pro_mode_land">90.0dip</dimen>
+    <dimen name="tripod_framing_settings_menu_padding">24.0dip</dimen>
     <dimen name="tutorial_dialog_body_basic_land_height">362.0dip</dimen>
     <dimen name="tutorial_dialog_body_basic_land_width">692.0dip</dimen>
     <dimen name="tutorial_dialog_body_margin_horizontal">35.0dip</dimen>

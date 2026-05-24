@@ -34,7 +34,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
     .locals 2
 
-    .line 49
+    .line 48
     sget-object v0, Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;->VIDEO_TRACK_1:Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
 
     sget-object v1, Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;->VIDEO_TRACK_2:Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
@@ -49,7 +49,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 50
+    .line 49
     new-instance v0, Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
 
     const-string v1, "VIDEO_TRACK_1"
@@ -60,7 +60,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;->VIDEO_TRACK_1:Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
 
-    .line 51
+    .line 50
     new-instance v0, Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
 
     const-string v1, "VIDEO_TRACK_2"
@@ -71,7 +71,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;->VIDEO_TRACK_2:Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
 
-    .line 49
+    .line 48
     invoke-static {}, Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;->$values()[Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
 
     move-result-object v0
@@ -83,13 +83,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 49
+    .line 48
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -97,8 +108,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 49
+    .line 48
     const-class v0, Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -113,7 +132,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
     .locals 1
 
-    .line 49
+    .line 48
     sget-object v0, Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;->$VALUES:[Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;->clone()Ljava/lang/Object;

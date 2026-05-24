@@ -30,9 +30,9 @@
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/StatusIndicatorViewBinder$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/StatusIndicatorViewBinder;
 
-    check-cast p1, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
+    check-cast p1, Ljava/lang/Boolean;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/StatusIndicatorViewBinder;->$r8$lambda$XT2rGIhzfQP1DpJd8KVnJlsdUsg(Ljp/co/sony/mc/camera/view/viewbinder/StatusIndicatorViewBinder;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/StatusIndicatorViewBinder;->$r8$lambda$KRUKKwmir1weCt20X6MIxEdqlB8(Ljp/co/sony/mc/camera/view/viewbinder/StatusIndicatorViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
 
     move-result-object p0
 

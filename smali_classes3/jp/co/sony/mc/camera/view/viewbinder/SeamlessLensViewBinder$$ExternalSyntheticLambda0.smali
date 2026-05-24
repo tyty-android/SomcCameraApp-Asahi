@@ -34,7 +34,7 @@
 
     move-result p1
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->$r8$lambda$q14GoxFLWx2HRyxIFi_gpAVTKXU(ZI)Lkotlin/Pair;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->$r8$lambda$mw6ViZdFYA01mkY6O30pfIggECY(ZI)Lkotlin/Pair;
 
     move-result-object p0
 

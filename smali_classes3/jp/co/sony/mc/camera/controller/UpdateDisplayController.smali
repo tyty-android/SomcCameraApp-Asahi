@@ -29,6 +29,14 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/controller/UpdateDisplayController$UpdateDisplayControlListener;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 23
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

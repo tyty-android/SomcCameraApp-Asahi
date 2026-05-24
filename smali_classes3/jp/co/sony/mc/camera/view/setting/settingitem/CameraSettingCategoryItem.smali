@@ -26,6 +26,21 @@
 # direct methods
 .method public constructor <init>(ILjava/lang/String;ILjava/util/List;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "drawableResId",
+            "categoryString",
+            "backgroundColor",
+            "cameraSettingItems"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -112,6 +127,14 @@
 
 .method public setSelected(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isSelected"
+        }
+    .end annotation
 
     .line 76
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingCategoryItem;->mIsSelected:Z

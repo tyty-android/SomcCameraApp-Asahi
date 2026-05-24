@@ -26,6 +26,17 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment;Landroid/view/View;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$view"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
@@ -45,7 +56,7 @@
 .method static synthetic lambda$onClick$0(Landroid/view/View;)Lkotlin/Unit;
     .locals 1
 
-    const v0, 0x7f0900a3
+    const v0, 0x7f0900ab
 
     .line 135
     invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -66,6 +77,16 @@
 # virtual methods
 .method public onClick(Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingCategoryItem;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "item",
+            "position"
+        }
+    .end annotation
 
     .line 130
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment$2;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment;

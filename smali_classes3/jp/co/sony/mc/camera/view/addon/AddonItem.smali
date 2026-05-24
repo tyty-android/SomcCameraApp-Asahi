@@ -18,6 +18,22 @@
 # direct methods
 .method public constructor <init>(IIIZLandroid/view/View$OnClickListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "titleId",
+            "accessibilityId",
+            "iconId",
+            "isGray",
+            "itemClickListener"
+        }
+    .end annotation
 
     .line 21
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

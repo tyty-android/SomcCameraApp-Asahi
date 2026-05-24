@@ -28,11 +28,19 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/TreeRangeSet;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 652
+    .line 661
     iput-object p1, p0, Lcom/google/common/collect/TreeRangeSet$Complement;->this$0:Lcom/google/common/collect/TreeRangeSet;
 
-    .line 653
+    .line 662
     new-instance v0, Lcom/google/common/collect/TreeRangeSet$ComplementRangesByLowerBound;
 
     iget-object p1, p1, Lcom/google/common/collect/TreeRangeSet;->rangesByLowerBound:Ljava/util/NavigableMap;
@@ -50,6 +58,15 @@
 # virtual methods
 .method public add(Lcom/google/common/collect/Range;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "rangeToAdd"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -58,7 +75,7 @@
         }
     .end annotation
 
-    .line 658
+    .line 667
     iget-object p0, p0, Lcom/google/common/collect/TreeRangeSet$Complement;->this$0:Lcom/google/common/collect/TreeRangeSet;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/TreeRangeSet;->remove(Lcom/google/common/collect/Range;)V
@@ -76,7 +93,7 @@
         }
     .end annotation
 
-    .line 673
+    .line 682
     iget-object p0, p0, Lcom/google/common/collect/TreeRangeSet$Complement;->this$0:Lcom/google/common/collect/TreeRangeSet;
 
     return-object p0
@@ -84,13 +101,22 @@
 
 .method public contains(Ljava/lang/Comparable;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TC;)Z"
         }
     .end annotation
 
-    .line 668
+    .line 677
     iget-object p0, p0, Lcom/google/common/collect/TreeRangeSet$Complement;->this$0:Lcom/google/common/collect/TreeRangeSet;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/TreeRangeSet;->contains(Ljava/lang/Comparable;)Z
@@ -104,6 +130,15 @@
 
 .method public remove(Lcom/google/common/collect/Range;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "rangeToRemove"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -112,7 +147,7 @@
         }
     .end annotation
 
-    .line 663
+    .line 672
     iget-object p0, p0, Lcom/google/common/collect/TreeRangeSet$Complement;->this$0:Lcom/google/common/collect/TreeRangeSet;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/TreeRangeSet;->add(Lcom/google/common/collect/Range;)V

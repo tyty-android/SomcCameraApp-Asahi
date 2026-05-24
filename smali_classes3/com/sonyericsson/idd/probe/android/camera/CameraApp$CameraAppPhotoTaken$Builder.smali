@@ -51,7 +51,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 10219
+    .line 11217
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;-><init>()V
 
     return-void
@@ -65,21 +65,21 @@
         }
     .end annotation
 
-    .line 10260
+    .line 11258
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->isInitialized()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 10264
+    .line 11262
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->buildPartial()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     move-result-object p0
 
     return-object p0
 
-    .line 10261
+    .line 11259
     :cond_0
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
@@ -87,7 +87,7 @@
 
     move-result-object p0
 
-    .line 10262
+    .line 11260
     invoke-virtual {p0}, Lcom/google/protobuf/UninitializedMessageException;->asInvalidProtocolBufferException()Lcom/google/protobuf/InvalidProtocolBufferException;
 
     move-result-object p0
@@ -98,12 +98,12 @@
 .method private static create()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
     .locals 3
 
-    .line 10222
+    .line 11220
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
 
     invoke-direct {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;-><init>()V
 
-    .line 10223
+    .line 11221
     new-instance v1, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     const/4 v2, 0x0
@@ -120,7 +120,7 @@
 .method public bridge synthetic build()Lcom/google/protobuf/MessageLite;
     .locals 0
 
-    .line 10213
+    .line 11211
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->build()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     move-result-object p0
@@ -131,7 +131,7 @@
 .method public build()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
     .locals 1
 
-    .line 10252
+    .line 11250
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     if-eqz v0, :cond_1
@@ -144,7 +144,7 @@
 
     goto :goto_0
 
-    .line 10253
+    .line 11251
     :cond_0
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
@@ -154,7 +154,7 @@
 
     throw p0
 
-    .line 10255
+    .line 11253
     :cond_1
     :goto_0
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->buildPartial()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
@@ -167,7 +167,7 @@
 .method public bridge synthetic buildPartial()Lcom/google/protobuf/MessageLite;
     .locals 0
 
-    .line 10213
+    .line 11211
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->buildPartial()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     move-result-object p0
@@ -178,19 +178,19 @@
 .method public buildPartial()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
     .locals 2
 
-    .line 10268
+    .line 11266
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x0
 
-    .line 10273
+    .line 11271
     iput-object v1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     return-object v0
 
-    .line 10269
+    .line 11267
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -204,7 +204,7 @@
 .method public bridge synthetic clear()Lcom/google/protobuf/MessageLite$Builder;
     .locals 0
 
-    .line 10213
+    .line 11211
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->clear()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
 
     move-result-object p0
@@ -215,12 +215,12 @@
 .method public clear()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
     .locals 2
 
-    .line 10232
+    .line 11230
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     if-eqz v0, :cond_0
 
-    .line 10236
+    .line 11234
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     const/4 v1, 0x0
@@ -231,7 +231,7 @@
 
     return-object p0
 
-    .line 10233
+    .line 11231
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -245,14 +245,14 @@
 .method public clearEnvironment()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
     .locals 2
 
-    .line 10422
+    .line 11420
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->-$$Nest$fputhasEnvironment(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;Z)V
 
-    .line 10423
+    .line 11421
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment;->getDefaultInstance()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment;
@@ -267,14 +267,14 @@
 .method public clearLaunchedBy()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
     .locals 2
 
-    .line 10364
+    .line 11362
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->-$$Nest$fputhasLaunchedBy(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;Z)V
 
-    .line 10365
+    .line 11363
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     sget-object v1, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$LaunchBy;->LOCK_SCREEN:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$LaunchBy;
@@ -287,14 +287,14 @@
 .method public clearMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
     .locals 2
 
-    .line 10385
+    .line 11383
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->-$$Nest$fputhasMode(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;Z)V
 
-    .line 10386
+    .line 11384
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     sget-object v1, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->UNKNOWN:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
@@ -307,14 +307,14 @@
 .method public clearSetting()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
     .locals 2
 
-    .line 10459
+    .line 11457
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->-$$Nest$fputhasSetting(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;Z)V
 
-    .line 10460
+    .line 11458
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getDefaultInstance()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
@@ -329,7 +329,7 @@
 .method public bridge synthetic clone()Lcom/google/protobuf/AbstractMessageLite$Builder;
     .locals 0
 
-    .line 10213
+    .line 11211
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->clone()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
 
     move-result-object p0
@@ -340,7 +340,7 @@
 .method public bridge synthetic clone()Lcom/google/protobuf/GeneratedMessageLite$Builder;
     .locals 0
 
-    .line 10213
+    .line 11211
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->clone()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
 
     move-result-object p0
@@ -351,7 +351,7 @@
 .method public bridge synthetic clone()Lcom/google/protobuf/MessageLite$Builder;
     .locals 0
 
-    .line 10213
+    .line 11211
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->clone()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
 
     move-result-object p0
@@ -362,7 +362,7 @@
 .method public clone()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
     .locals 1
 
-    .line 10241
+    .line 11239
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->create()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
 
     move-result-object v0
@@ -384,7 +384,7 @@
         }
     .end annotation
 
-    .line 10213
+    .line 11211
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->clone()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
 
     move-result-object p0
@@ -395,7 +395,7 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/GeneratedMessageLite;
     .locals 0
 
-    .line 10213
+    .line 11211
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->getDefaultInstanceForType()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     move-result-object p0
@@ -406,7 +406,7 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/MessageLite;
     .locals 0
 
-    .line 10213
+    .line 11211
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->getDefaultInstanceForType()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     move-result-object p0
@@ -417,7 +417,7 @@
 .method public getDefaultInstanceForType()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
     .locals 0
 
-    .line 10245
+    .line 11243
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->getDefaultInstance()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     move-result-object p0
@@ -428,7 +428,7 @@
 .method public getEnvironment()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment;
     .locals 0
 
-    .line 10395
+    .line 11393
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->getEnvironment()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment;
@@ -441,7 +441,7 @@
 .method public getLaunchedBy()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$LaunchBy;
     .locals 0
 
-    .line 10353
+    .line 11351
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->getLaunchedBy()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$LaunchBy;
@@ -454,7 +454,7 @@
 .method public getMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
     .locals 0
 
-    .line 10374
+    .line 11372
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->getMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
@@ -467,7 +467,7 @@
 .method public getSetting()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
     .locals 0
 
-    .line 10432
+    .line 11430
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->getSetting()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
@@ -480,7 +480,7 @@
 .method public hasEnvironment()Z
     .locals 0
 
-    .line 10392
+    .line 11390
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->hasEnvironment()Z
@@ -493,7 +493,7 @@
 .method public hasLaunchedBy()Z
     .locals 0
 
-    .line 10350
+    .line 11348
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->hasLaunchedBy()Z
@@ -506,7 +506,7 @@
 .method public hasMode()Z
     .locals 0
 
-    .line 10371
+    .line 11369
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->hasMode()Z
@@ -519,7 +519,7 @@
 .method public hasSetting()Z
     .locals 0
 
-    .line 10429
+    .line 11427
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->hasSetting()Z
@@ -532,7 +532,7 @@
 .method protected bridge synthetic internalGetResult()Lcom/google/protobuf/GeneratedMessageLite;
     .locals 0
 
-    .line 10213
+    .line 11211
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->internalGetResult()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     move-result-object p0
@@ -543,7 +543,7 @@
 .method protected internalGetResult()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
     .locals 0
 
-    .line 10228
+    .line 11226
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     return-object p0
@@ -552,7 +552,7 @@
 .method public isInitialized()Z
     .locals 0
 
-    .line 10249
+    .line 11247
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->isInitialized()Z
@@ -564,8 +564,16 @@
 
 .method public mergeEnvironment(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 10411
+    .line 11409
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     invoke-virtual {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->hasEnvironment()Z
@@ -580,21 +588,21 @@
 
     move-result-object v0
 
-    .line 10412
+    .line 11410
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment;->getDefaultInstance()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment;
 
     move-result-object v1
 
     if-eq v0, v1, :cond_0
 
-    .line 10413
+    .line 11411
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     invoke-static {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->-$$Nest$fgetenvironment_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment;
 
     move-result-object v1
 
-    .line 10414
+    .line 11412
     invoke-static {v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment;->newBuilder(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;
 
     move-result-object v1
@@ -611,13 +619,13 @@
 
     goto :goto_0
 
-    .line 10416
+    .line 11414
     :cond_0
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     invoke-static {v0, p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->-$$Nest$fputenvironment_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment;)V
 
-    .line 10418
+    .line 11416
     :goto_0
     iget-object p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
@@ -630,13 +638,24 @@
 
 .method public bridge synthetic mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/AbstractMessageLite$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "input",
+            "extensionRegistry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 10213
+    .line 11211
     invoke-virtual {p0, p1, p2}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
 
     move-result-object p0
@@ -646,8 +665,16 @@
 
 .method public bridge synthetic mergeFrom(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "other"
+        }
+    .end annotation
 
-    .line 10213
+    .line 11211
     check-cast p1, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     invoke-virtual {p0, p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->mergeFrom(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
@@ -659,13 +686,24 @@
 
 .method public bridge synthetic mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/MessageLite$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "input",
+            "extensionRegistry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 10213
+    .line 11211
     invoke-virtual {p0, p1, p2}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
 
     move-result-object p0
@@ -675,13 +713,24 @@
 
 .method public mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "input",
+            "extensionRegistry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 10299
+    .line 11297
     :cond_0
     :goto_0
     invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->readTag()I
@@ -706,7 +755,7 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 10304
+    .line 11302
     invoke-virtual {p0, p1, p2, v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->parseUnknownField(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;I)Z
 
     move-result v0
@@ -715,31 +764,31 @@
 
     return-object p0
 
-    .line 10335
+    .line 11333
     :cond_1
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;
 
     move-result-object v0
 
-    .line 10336
+    .line 11334
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->hasSetting()Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    .line 10337
+    .line 11335
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->getSetting()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;->mergeFrom(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;
 
-    .line 10339
+    .line 11337
     :cond_2
     invoke-virtual {p1, v0, p2}, Lcom/google/protobuf/CodedInputStream;->readMessage(Lcom/google/protobuf/MessageLite$Builder;Lcom/google/protobuf/ExtensionRegistryLite;)V
 
-    .line 10340
+    .line 11338
     invoke-virtual {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;->buildPartial()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
 
     move-result-object v0
@@ -748,31 +797,31 @@
 
     goto :goto_0
 
-    .line 10326
+    .line 11324
     :cond_3
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;
 
     move-result-object v0
 
-    .line 10327
+    .line 11325
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->hasEnvironment()Z
 
     move-result v1
 
     if-eqz v1, :cond_4
 
-    .line 10328
+    .line 11326
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->getEnvironment()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;->mergeFrom(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;
 
-    .line 10330
+    .line 11328
     :cond_4
     invoke-virtual {p1, v0, p2}, Lcom/google/protobuf/CodedInputStream;->readMessage(Lcom/google/protobuf/MessageLite$Builder;Lcom/google/protobuf/ExtensionRegistryLite;)V
 
-    .line 10331
+    .line 11329
     invoke-virtual {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;->buildPartial()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment;
 
     move-result-object v0
@@ -781,38 +830,38 @@
 
     goto :goto_0
 
-    .line 10318
+    .line 11316
     :cond_5
     invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->readEnum()I
 
     move-result v0
 
-    .line 10319
+    .line 11317
     invoke-static {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->valueOf(I)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 10321
+    .line 11319
     invoke-virtual {p0, v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->setMode(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
 
     goto :goto_0
 
-    .line 10310
+    .line 11308
     :cond_6
     invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->readEnum()I
 
     move-result v0
 
-    .line 10311
+    .line 11309
     invoke-static {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$LaunchBy;->valueOf(I)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$LaunchBy;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 10313
+    .line 11311
     invoke-virtual {p0, v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->setLaunchedBy(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$LaunchBy;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
 
     goto :goto_0
@@ -823,8 +872,16 @@
 
 .method public mergeFrom(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "other"
+        }
+    .end annotation
 
-    .line 10278
+    .line 11276
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->getDefaultInstance()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     move-result-object v0
@@ -833,7 +890,7 @@
 
     return-object p0
 
-    .line 10279
+    .line 11277
     :cond_0
     invoke-virtual {p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->hasLaunchedBy()Z
 
@@ -841,14 +898,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 10280
+    .line 11278
     invoke-virtual {p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->getLaunchedBy()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$LaunchBy;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->setLaunchedBy(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$LaunchBy;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
 
-    .line 10282
+    .line 11280
     :cond_1
     invoke-virtual {p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->hasMode()Z
 
@@ -856,14 +913,14 @@
 
     if-eqz v0, :cond_2
 
-    .line 10283
+    .line 11281
     invoke-virtual {p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->getMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->setMode(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
 
-    .line 10285
+    .line 11283
     :cond_2
     invoke-virtual {p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->hasEnvironment()Z
 
@@ -871,14 +928,14 @@
 
     if-eqz v0, :cond_3
 
-    .line 10286
+    .line 11284
     invoke-virtual {p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->getEnvironment()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->mergeEnvironment(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
 
-    .line 10288
+    .line 11286
     :cond_3
     invoke-virtual {p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->hasSetting()Z
 
@@ -886,7 +943,7 @@
 
     if-eqz v0, :cond_4
 
-    .line 10289
+    .line 11287
     invoke-virtual {p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->getSetting()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
 
     move-result-object p1
@@ -899,8 +956,16 @@
 
 .method public mergeSetting(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 10448
+    .line 11446
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     invoke-virtual {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->hasSetting()Z
@@ -915,21 +980,21 @@
 
     move-result-object v0
 
-    .line 10449
+    .line 11447
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getDefaultInstance()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
 
     move-result-object v1
 
     if-eq v0, v1, :cond_0
 
-    .line 10450
+    .line 11448
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     invoke-static {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->-$$Nest$fgetsetting_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
 
     move-result-object v1
 
-    .line 10451
+    .line 11449
     invoke-static {v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->newBuilder(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;
 
     move-result-object v1
@@ -946,13 +1011,13 @@
 
     goto :goto_0
 
-    .line 10453
+    .line 11451
     :cond_0
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     invoke-static {v0, p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->-$$Nest$fputsetting_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;)V
 
-    .line 10455
+    .line 11453
     :goto_0
     iget-object p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
@@ -965,15 +1030,23 @@
 
 .method public setEnvironment(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "builderForValue"
+        }
+    .end annotation
 
-    .line 10406
+    .line 11404
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->-$$Nest$fputhasEnvironment(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;Z)V
 
-    .line 10407
+    .line 11405
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     invoke-virtual {p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;->build()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment;
@@ -987,18 +1060,26 @@
 
 .method public setEnvironment(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 10399
+    .line 11397
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 10401
+    .line 11399
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->-$$Nest$fputhasEnvironment(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;Z)V
 
-    .line 10402
+    .line 11400
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     invoke-static {v0, p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->-$$Nest$fputenvironment_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment;)V
@@ -1008,18 +1089,26 @@
 
 .method public setLaunchedBy(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$LaunchBy;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 10357
+    .line 11355
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 10359
+    .line 11357
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->-$$Nest$fputhasLaunchedBy(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;Z)V
 
-    .line 10360
+    .line 11358
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     invoke-static {v0, p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->-$$Nest$fputlaunchedBy_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$LaunchBy;)V
@@ -1029,18 +1118,26 @@
 
 .method public setMode(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 10378
+    .line 11376
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 10380
+    .line 11378
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->-$$Nest$fputhasMode(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;Z)V
 
-    .line 10381
+    .line 11379
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     invoke-static {v0, p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->-$$Nest$fputmode_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;)V
@@ -1050,15 +1147,23 @@
 
 .method public setSetting(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "builderForValue"
+        }
+    .end annotation
 
-    .line 10443
+    .line 11441
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->-$$Nest$fputhasSetting(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;Z)V
 
-    .line 10444
+    .line 11442
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     invoke-virtual {p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;->build()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
@@ -1072,18 +1177,26 @@
 
 .method public setSetting(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 10436
+    .line 11434
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 10438
+    .line 11436
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->-$$Nest$fputhasSetting(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;Z)V
 
-    .line 10439
+    .line 11437
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;
 
     invoke-static {v0, p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;->-$$Nest$fputsetting_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppPhotoTaken;Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;)V

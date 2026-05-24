@@ -25,6 +25,16 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Landroid/view/View;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "view"
+        }
+    .end annotation
 
     .line 137
     invoke-direct {p0, p2}, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;-><init>(Landroid/view/View;)V
@@ -32,7 +42,7 @@
     .line 138
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/addon/AddonAdapter$AddonViewHolder;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f09004e
+    const p1, 0x7f09004c
 
     .line 139
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -43,7 +53,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/addon/AddonAdapter$AddonViewHolder;->textView:Landroid/widget/TextView;
 
-    const p1, 0x7f09004d
+    const p1, 0x7f09004b
 
     .line 140
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;

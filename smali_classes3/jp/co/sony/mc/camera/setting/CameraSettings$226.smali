@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 2495
+    .line 2723
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,6 +31,17 @@
 # virtual methods
 .method public getOptions(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -42,15 +53,20 @@
         }
     .end annotation
 
-    .line 2499
+    .line 2727
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 2500
+    .line 2728
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCapturingMode(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/configuration/parameters/FramingAssistSwitch;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)[Ljp/co/sony/mc/camera/configuration/parameters/FramingAssistSwitch;
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCameraId(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    move-result-object p1
+
+    .line 2729
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/SuperResolutionZoom;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/SuperResolutionZoom;
 
     move-result-object p0
 

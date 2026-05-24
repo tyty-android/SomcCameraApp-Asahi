@@ -30,8 +30,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/Multimaps$AsMap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 1723
+    .line 1881
     iput-object p1, p0, Lcom/google/common/collect/Multimaps$AsMap$EntrySet;->this$0:Lcom/google/common/collect/Multimaps$AsMap;
 
     invoke-direct {p0}, Lcom/google/common/collect/Maps$EntrySet;-><init>()V
@@ -54,10 +62,9 @@
         }
     .end annotation
 
-    .line 1731
+    .line 1889
     iget-object v0, p0, Lcom/google/common/collect/Multimaps$AsMap$EntrySet;->this$0:Lcom/google/common/collect/Multimaps$AsMap;
 
-    .line 1732
     invoke-static {v0}, Lcom/google/common/collect/Multimaps$AsMap;->access$200(Lcom/google/common/collect/Multimaps$AsMap;)Lcom/google/common/collect/Multimap;
 
     move-result-object v0
@@ -66,12 +73,28 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/google/common/collect/Multimaps$AsMap$EntrySet$1;
+    new-instance v1, Lcom/google/common/collect/Multimaps$AsMap$EntrySet$$ExternalSyntheticLambda0;
 
-    invoke-direct {v1, p0}, Lcom/google/common/collect/Multimaps$AsMap$EntrySet$1;-><init>(Lcom/google/common/collect/Multimaps$AsMap$EntrySet;)V
+    invoke-direct {v1, p0}, Lcom/google/common/collect/Multimaps$AsMap$EntrySet$$ExternalSyntheticLambda0;-><init>(Lcom/google/common/collect/Multimaps$AsMap$EntrySet;)V
 
-    .line 1731
     invoke-static {v0, v1}, Lcom/google/common/collect/Maps;->asMapEntryIterator(Ljava/util/Set;Lcom/google/common/base/Function;)Ljava/util/Iterator;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$iterator$0$com-google-common-collect-Multimaps$AsMap$EntrySet(Ljava/lang/Object;)Ljava/util/Collection;
+    .locals 0
+
+    .line 1889
+    iget-object p0, p0, Lcom/google/common/collect/Multimaps$AsMap$EntrySet;->this$0:Lcom/google/common/collect/Multimaps$AsMap;
+
+    invoke-static {p0}, Lcom/google/common/collect/Multimaps$AsMap;->access$200(Lcom/google/common/collect/Multimaps$AsMap;)Lcom/google/common/collect/Multimap;
+
+    move-result-object p0
+
+    invoke-interface {p0, p1}, Lcom/google/common/collect/Multimap;->get(Ljava/lang/Object;)Ljava/util/Collection;
 
     move-result-object p0
 
@@ -90,7 +113,7 @@
         }
     .end annotation
 
-    .line 1726
+    .line 1884
     iget-object p0, p0, Lcom/google/common/collect/Multimaps$AsMap$EntrySet;->this$0:Lcom/google/common/collect/Multimaps$AsMap;
 
     return-object p0
@@ -98,8 +121,20 @@
 
 .method public remove(Ljava/lang/Object;)Z
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 1743
+    .line 1894
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Multimaps$AsMap$EntrySet;->contains(Ljava/lang/Object;)Z
 
     move-result v0
@@ -110,11 +145,17 @@
 
     return p0
 
-    .line 1746
+    .line 1898
     :cond_0
     check-cast p1, Ljava/util/Map$Entry;
 
-    .line 1747
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/util/Map$Entry;
+
+    .line 1899
     iget-object p0, p0, Lcom/google/common/collect/Multimaps$AsMap$EntrySet;->this$0:Lcom/google/common/collect/Multimaps$AsMap;
 
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;

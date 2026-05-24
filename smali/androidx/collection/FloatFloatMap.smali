@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nFloatFloatMap.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FloatFloatMap.kt\nandroidx/collection/FloatFloatMap\n+ 2 ScatterMap.kt\nandroidx/collection/ScatterMapKt\n+ 3 FloatSet.kt\nandroidx/collection/FloatSetKt\n*L\n1#1,1031:1\n357#1,6:1034\n367#1,3:1041\n370#1,9:1045\n357#1,6:1054\n367#1,3:1061\n370#1,9:1065\n357#1,6:1074\n367#1,3:1081\n370#1,9:1085\n385#1,4:1094\n357#1,6:1098\n367#1,3:1105\n370#1,2:1109\n389#1,2:1111\n373#1,6:1113\n391#1:1119\n385#1,4:1120\n357#1,6:1124\n367#1,3:1131\n370#1,2:1135\n389#1,2:1137\n373#1,6:1139\n391#1:1145\n385#1,4:1146\n357#1,6:1150\n367#1,3:1157\n370#1,2:1161\n389#1,2:1163\n373#1,6:1165\n391#1:1171\n410#1,3:1172\n357#1,6:1175\n367#1,3:1182\n370#1,2:1186\n413#1,2:1188\n373#1,6:1190\n415#1:1196\n385#1,4:1197\n357#1,6:1201\n367#1,3:1208\n370#1,2:1212\n389#1,2:1214\n373#1,6:1216\n391#1:1222\n385#1,4:1223\n357#1,6:1227\n367#1,3:1234\n370#1,2:1238\n389#1,2:1240\n373#1,6:1242\n391#1:1248\n385#1,4:1249\n357#1,6:1253\n367#1,3:1260\n370#1,2:1264\n389#1,2:1266\n373#1,6:1268\n391#1:1274\n385#1,4:1275\n357#1,6:1279\n367#1,3:1286\n370#1,2:1290\n389#1,2:1292\n373#1,6:1294\n391#1:1300\n385#1,4:1301\n357#1,6:1305\n367#1,3:1312\n370#1,2:1316\n389#1,2:1318\n373#1,6:1320\n391#1:1326\n385#1,4:1327\n357#1,6:1331\n367#1,3:1338\n370#1,2:1342\n389#1,2:1344\n373#1,6:1346\n391#1:1352\n519#1,11:1369\n385#1,4:1380\n357#1,6:1384\n367#1,3:1391\n370#1,2:1395\n389#1:1397\n530#1,10:1398\n390#1:1408\n373#1,6:1409\n391#1:1415\n540#1,2:1416\n519#1,11:1418\n385#1,4:1429\n357#1,6:1433\n367#1,3:1440\n370#1,2:1444\n389#1:1446\n530#1,10:1447\n390#1:1457\n373#1,6:1458\n391#1:1464\n540#1,2:1465\n519#1,11:1467\n385#1,4:1478\n357#1,6:1482\n367#1,3:1489\n370#1,2:1493\n389#1:1495\n530#1,10:1496\n390#1:1506\n373#1,6:1507\n391#1:1513\n540#1,2:1514\n519#1,11:1516\n385#1,4:1527\n357#1,6:1531\n367#1,3:1538\n370#1,2:1542\n389#1:1544\n530#1,10:1545\n390#1:1555\n373#1,6:1556\n391#1:1562\n540#1,2:1563\n519#1,11:1565\n385#1,4:1576\n357#1,6:1580\n367#1,3:1587\n370#1,2:1591\n389#1:1593\n530#1,10:1594\n390#1:1604\n373#1,6:1605\n391#1:1611\n540#1,2:1612\n1810#2:1032\n1672#2:1033\n1810#2:1040\n1672#2:1044\n1810#2:1060\n1672#2:1064\n1810#2:1080\n1672#2:1084\n1810#2:1104\n1672#2:1108\n1810#2:1130\n1672#2:1134\n1810#2:1156\n1672#2:1160\n1810#2:1181\n1672#2:1185\n1810#2:1207\n1672#2:1211\n1810#2:1233\n1672#2:1237\n1810#2:1259\n1672#2:1263\n1810#2:1285\n1672#2:1289\n1810#2:1311\n1672#2:1315\n1810#2:1337\n1672#2:1341\n1603#2:1356\n1599#2:1357\n1779#2,3:1358\n1793#2,3:1361\n1717#2:1364\n1705#2:1365\n1699#2:1366\n1712#2:1367\n1802#2:1368\n1810#2:1390\n1672#2:1394\n1810#2:1439\n1672#2:1443\n1810#2:1488\n1672#2:1492\n1810#2:1537\n1672#2:1541\n1810#2:1586\n1672#2:1590\n833#3,3:1353\n*S KotlinDebug\n*F\n+ 1 FloatFloatMap.kt\nandroidx/collection/FloatFloatMap\n*L\n388#1:1034,6\n388#1:1041,3\n388#1:1045,9\n400#1:1054,6\n400#1:1061,3\n400#1:1065,9\n412#1:1074,6\n412#1:1081,3\n412#1:1085,9\n421#1:1094,4\n421#1:1098,6\n421#1:1105,3\n421#1:1109,2\n421#1:1111,2\n421#1:1113,6\n421#1:1119\n431#1:1120,4\n431#1:1124,6\n431#1:1131,3\n431#1:1135,2\n431#1:1137,2\n431#1:1139,6\n431#1:1145\n447#1:1146,4\n447#1:1150,6\n447#1:1157,3\n447#1:1161,2\n447#1:1163,2\n447#1:1165,6\n447#1:1171\n470#1:1172,3\n470#1:1175,6\n470#1:1182,3\n470#1:1186,2\n470#1:1188,2\n470#1:1190,6\n470#1:1196\n494#1:1197,4\n494#1:1201,6\n494#1:1208,3\n494#1:1212,2\n494#1:1214,2\n494#1:1216,6\n494#1:1222\n529#1:1223,4\n529#1:1227,6\n529#1:1234,3\n529#1:1238,2\n529#1:1240,2\n529#1:1242,6\n529#1:1248\n529#1:1249,4\n529#1:1253,6\n529#1:1260,3\n529#1:1264,2\n529#1:1266,2\n529#1:1268,6\n529#1:1274\n550#1:1275,4\n550#1:1279,6\n550#1:1286,3\n550#1:1290,2\n550#1:1292,2\n550#1:1294,6\n550#1:1300\n576#1:1301,4\n576#1:1305,6\n576#1:1312,3\n576#1:1316,2\n576#1:1318,2\n576#1:1320,6\n576#1:1326\n598#1:1327,4\n598#1:1331,6\n598#1:1338,3\n598#1:1342,2\n598#1:1344,2\n598#1:1346,6\n598#1:1352\n-1#1:1369,11\n-1#1:1380,4\n-1#1:1384,6\n-1#1:1391,3\n-1#1:1395,2\n-1#1:1397\n-1#1:1398,10\n-1#1:1408\n-1#1:1409,6\n-1#1:1415\n-1#1:1416,2\n-1#1:1418,11\n-1#1:1429,4\n-1#1:1433,6\n-1#1:1440,3\n-1#1:1444,2\n-1#1:1446\n-1#1:1447,10\n-1#1:1457\n-1#1:1458,6\n-1#1:1464\n-1#1:1465,2\n-1#1:1467,11\n-1#1:1478,4\n-1#1:1482,6\n-1#1:1489,3\n-1#1:1493,2\n-1#1:1495\n-1#1:1496,10\n-1#1:1506\n-1#1:1507,6\n-1#1:1513\n-1#1:1514,2\n-1#1:1516,11\n-1#1:1527,4\n-1#1:1531,6\n-1#1:1538,3\n-1#1:1542,2\n-1#1:1544\n-1#1:1545,10\n-1#1:1555\n-1#1:1556,6\n-1#1:1562\n-1#1:1563,2\n-1#1:1565,11\n-1#1:1576,4\n-1#1:1580,6\n-1#1:1587,3\n-1#1:1591,2\n-1#1:1593\n-1#1:1594,10\n-1#1:1604\n-1#1:1605,6\n-1#1:1611\n-1#1:1612,2\n362#1:1032\n369#1:1033\n388#1:1040\n388#1:1044\n400#1:1060\n400#1:1064\n412#1:1080\n412#1:1084\n421#1:1104\n421#1:1108\n431#1:1130\n431#1:1134\n447#1:1156\n447#1:1160\n470#1:1181\n470#1:1185\n494#1:1207\n494#1:1211\n529#1:1233\n529#1:1237\n529#1:1259\n529#1:1263\n550#1:1285\n550#1:1289\n576#1:1311\n576#1:1315\n598#1:1337\n598#1:1341\n618#1:1356\n621#1:1357\n625#1:1358,3\n626#1:1361,3\n627#1:1364\n628#1:1365\n628#1:1366\n632#1:1367\n635#1:1368\n-1#1:1390\n-1#1:1394\n-1#1:1439\n-1#1:1443\n-1#1:1488\n-1#1:1492\n-1#1:1537\n-1#1:1541\n-1#1:1586\n-1#1:1590\n617#1:1353,3\n*E\n"
+    value = "SMAP\nFloatFloatMap.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FloatFloatMap.kt\nandroidx/collection/FloatFloatMap\n+ 2 ScatterMap.kt\nandroidx/collection/ScatterMapKt\n+ 3 FloatSet.kt\nandroidx/collection/FloatSetKt\n*L\n1#1,1047:1\n357#1,6:1050\n367#1,3:1057\n370#1,9:1061\n357#1,6:1070\n367#1,3:1077\n370#1,9:1081\n357#1,6:1090\n367#1,3:1097\n370#1,9:1101\n385#1,4:1110\n357#1,6:1114\n367#1,3:1121\n370#1,2:1125\n389#1,2:1127\n373#1,6:1129\n391#1:1135\n385#1,4:1136\n357#1,6:1140\n367#1,3:1147\n370#1,2:1151\n389#1,2:1153\n373#1,6:1155\n391#1:1161\n385#1,4:1162\n357#1,6:1166\n367#1,3:1173\n370#1,2:1177\n389#1,2:1179\n373#1,6:1181\n391#1:1187\n410#1,3:1188\n357#1,6:1191\n367#1,3:1198\n370#1,2:1202\n413#1,2:1204\n373#1,6:1206\n415#1:1212\n385#1,4:1213\n357#1,6:1217\n367#1,3:1224\n370#1,2:1228\n389#1,2:1230\n373#1,6:1232\n391#1:1238\n385#1,4:1239\n357#1,6:1243\n367#1,3:1250\n370#1,2:1254\n389#1,2:1256\n373#1,6:1258\n391#1:1264\n385#1,4:1265\n357#1,6:1269\n367#1,3:1276\n370#1,2:1280\n389#1,2:1282\n373#1,6:1284\n391#1:1290\n385#1,4:1291\n357#1,6:1295\n367#1,3:1302\n370#1,2:1306\n389#1,2:1308\n373#1,6:1310\n391#1:1316\n385#1,4:1317\n357#1,6:1321\n367#1,3:1328\n370#1,2:1332\n389#1,2:1334\n373#1,6:1336\n391#1:1342\n385#1,4:1343\n357#1,6:1347\n367#1,3:1354\n370#1,2:1358\n389#1,2:1360\n373#1,6:1362\n391#1:1368\n519#1,11:1385\n385#1,4:1396\n357#1,6:1400\n367#1,3:1407\n370#1,2:1411\n389#1:1413\n530#1,10:1414\n390#1:1424\n373#1,6:1425\n391#1:1431\n540#1,2:1432\n519#1,11:1434\n385#1,4:1445\n357#1,6:1449\n367#1,3:1456\n370#1,2:1460\n389#1:1462\n530#1,10:1463\n390#1:1473\n373#1,6:1474\n391#1:1480\n540#1,2:1481\n519#1,11:1483\n385#1,4:1494\n357#1,6:1498\n367#1,3:1505\n370#1,2:1509\n389#1:1511\n530#1,10:1512\n390#1:1522\n373#1,6:1523\n391#1:1529\n540#1,2:1530\n519#1,11:1532\n385#1,4:1543\n357#1,6:1547\n367#1,3:1554\n370#1,2:1558\n389#1:1560\n530#1,10:1561\n390#1:1571\n373#1,6:1572\n391#1:1578\n540#1,2:1579\n519#1,11:1581\n385#1,4:1592\n357#1,6:1596\n367#1,3:1603\n370#1,2:1607\n389#1:1609\n530#1,10:1610\n390#1:1620\n373#1,6:1621\n391#1:1627\n540#1,2:1628\n1826#2:1048\n1688#2:1049\n1826#2:1056\n1688#2:1060\n1826#2:1076\n1688#2:1080\n1826#2:1096\n1688#2:1100\n1826#2:1120\n1688#2:1124\n1826#2:1146\n1688#2:1150\n1826#2:1172\n1688#2:1176\n1826#2:1197\n1688#2:1201\n1826#2:1223\n1688#2:1227\n1826#2:1249\n1688#2:1253\n1826#2:1275\n1688#2:1279\n1826#2:1301\n1688#2:1305\n1826#2:1327\n1688#2:1331\n1826#2:1353\n1688#2:1357\n1619#2:1372\n1615#2:1373\n1795#2,3:1374\n1809#2,3:1377\n1733#2:1380\n1721#2:1381\n1715#2:1382\n1728#2:1383\n1818#2:1384\n1826#2:1406\n1688#2:1410\n1826#2:1455\n1688#2:1459\n1826#2:1504\n1688#2:1508\n1826#2:1553\n1688#2:1557\n1826#2:1602\n1688#2:1606\n849#3,3:1369\n*S KotlinDebug\n*F\n+ 1 FloatFloatMap.kt\nandroidx/collection/FloatFloatMap\n*L\n388#1:1050,6\n388#1:1057,3\n388#1:1061,9\n400#1:1070,6\n400#1:1077,3\n400#1:1081,9\n412#1:1090,6\n412#1:1097,3\n412#1:1101,9\n421#1:1110,4\n421#1:1114,6\n421#1:1121,3\n421#1:1125,2\n421#1:1127,2\n421#1:1129,6\n421#1:1135\n431#1:1136,4\n431#1:1140,6\n431#1:1147,3\n431#1:1151,2\n431#1:1153,2\n431#1:1155,6\n431#1:1161\n447#1:1162,4\n447#1:1166,6\n447#1:1173,3\n447#1:1177,2\n447#1:1179,2\n447#1:1181,6\n447#1:1187\n470#1:1188,3\n470#1:1191,6\n470#1:1198,3\n470#1:1202,2\n470#1:1204,2\n470#1:1206,6\n470#1:1212\n494#1:1213,4\n494#1:1217,6\n494#1:1224,3\n494#1:1228,2\n494#1:1230,2\n494#1:1232,6\n494#1:1238\n529#1:1239,4\n529#1:1243,6\n529#1:1250,3\n529#1:1254,2\n529#1:1256,2\n529#1:1258,6\n529#1:1264\n529#1:1265,4\n529#1:1269,6\n529#1:1276,3\n529#1:1280,2\n529#1:1282,2\n529#1:1284,6\n529#1:1290\n550#1:1291,4\n550#1:1295,6\n550#1:1302,3\n550#1:1306,2\n550#1:1308,2\n550#1:1310,6\n550#1:1316\n576#1:1317,4\n576#1:1321,6\n576#1:1328,3\n576#1:1332,2\n576#1:1334,2\n576#1:1336,6\n576#1:1342\n598#1:1343,4\n598#1:1347,6\n598#1:1354,3\n598#1:1358,2\n598#1:1360,2\n598#1:1362,6\n598#1:1368\n-1#1:1385,11\n-1#1:1396,4\n-1#1:1400,6\n-1#1:1407,3\n-1#1:1411,2\n-1#1:1413\n-1#1:1414,10\n-1#1:1424\n-1#1:1425,6\n-1#1:1431\n-1#1:1432,2\n-1#1:1434,11\n-1#1:1445,4\n-1#1:1449,6\n-1#1:1456,3\n-1#1:1460,2\n-1#1:1462\n-1#1:1463,10\n-1#1:1473\n-1#1:1474,6\n-1#1:1480\n-1#1:1481,2\n-1#1:1483,11\n-1#1:1494,4\n-1#1:1498,6\n-1#1:1505,3\n-1#1:1509,2\n-1#1:1511\n-1#1:1512,10\n-1#1:1522\n-1#1:1523,6\n-1#1:1529\n-1#1:1530,2\n-1#1:1532,11\n-1#1:1543,4\n-1#1:1547,6\n-1#1:1554,3\n-1#1:1558,2\n-1#1:1560\n-1#1:1561,10\n-1#1:1571\n-1#1:1572,6\n-1#1:1578\n-1#1:1579,2\n-1#1:1581,11\n-1#1:1592,4\n-1#1:1596,6\n-1#1:1603,3\n-1#1:1607,2\n-1#1:1609\n-1#1:1610,10\n-1#1:1620\n-1#1:1621,6\n-1#1:1627\n-1#1:1628,2\n362#1:1048\n369#1:1049\n388#1:1056\n388#1:1060\n400#1:1076\n400#1:1080\n412#1:1096\n412#1:1100\n421#1:1120\n421#1:1124\n431#1:1146\n431#1:1150\n447#1:1172\n447#1:1176\n470#1:1197\n470#1:1201\n494#1:1223\n494#1:1227\n529#1:1249\n529#1:1253\n529#1:1275\n529#1:1279\n550#1:1301\n550#1:1305\n576#1:1327\n576#1:1331\n598#1:1353\n598#1:1357\n618#1:1372\n621#1:1373\n625#1:1374,3\n626#1:1377,3\n627#1:1380\n628#1:1381\n628#1:1382\n632#1:1383\n635#1:1384\n-1#1:1406\n-1#1:1410\n-1#1:1455\n-1#1:1459\n-1#1:1504\n-1#1:1508\n-1#1:1553\n-1#1:1557\n-1#1:1602\n-1#1:1606\n617#1:1369,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -375,16 +375,16 @@
     .line 527
     invoke-virtual {v7, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1249
+    .line 1265
     iget-object v3, v0, Landroidx/collection/FloatFloatMap;->keys:[F
 
-    .line 1250
+    .line 1266
     iget-object v8, v0, Landroidx/collection/FloatFloatMap;->values:[F
 
-    .line 1253
+    .line 1269
     iget-object v0, v0, Landroidx/collection/FloatFloatMap;->metadata:[J
 
-    .line 1254
+    .line 1270
     array-length v9, v0
 
     add-int/lit8 v9, v9, -0x2
@@ -395,7 +395,7 @@
 
     const/4 v12, 0x0
 
-    .line 1257
+    .line 1273
     :goto_5
     aget-wide v13, v0, v11
 
@@ -446,7 +446,7 @@
 
     add-int v16, v16, v15
 
-    .line 1266
+    .line 1282
     aget v17, v3, v16
 
     aget v16, v8, v16
@@ -577,16 +577,16 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1094
+    .line 1110
     iget-object v0, p0, Landroidx/collection/FloatFloatMap;->keys:[F
 
-    .line 1095
+    .line 1111
     iget-object v1, p0, Landroidx/collection/FloatFloatMap;->values:[F
 
-    .line 1098
+    .line 1114
     iget-object p0, p0, Landroidx/collection/FloatFloatMap;->metadata:[J
 
-    .line 1099
+    .line 1115
     array-length v2, p0
 
     add-int/lit8 v2, v2, -0x2
@@ -597,7 +597,7 @@
 
     move v4, v3
 
-    .line 1102
+    .line 1118
     :goto_0
     aget-wide v5, p0, v4
 
@@ -646,7 +646,7 @@
 
     add-int/2addr v10, v9
 
-    .line 1111
+    .line 1127
     aget v11, v0, v10
 
     aget v10, v1, v10
@@ -735,16 +735,16 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1120
+    .line 1136
     iget-object v0, p0, Landroidx/collection/FloatFloatMap;->keys:[F
 
-    .line 1121
+    .line 1137
     iget-object v1, p0, Landroidx/collection/FloatFloatMap;->values:[F
 
-    .line 1124
+    .line 1140
     iget-object p0, p0, Landroidx/collection/FloatFloatMap;->metadata:[J
 
-    .line 1125
+    .line 1141
     array-length v2, p0
 
     add-int/lit8 v2, v2, -0x2
@@ -755,7 +755,7 @@
 
     move v4, v3
 
-    .line 1128
+    .line 1144
     :goto_0
     aget-wide v5, p0, v4
 
@@ -804,7 +804,7 @@
 
     add-int/2addr v10, v9
 
-    .line 1137
+    .line 1153
     aget v11, v0, v10
 
     aget v10, v1, v10
@@ -900,13 +900,13 @@
 .method public final containsValue(F)Z
     .locals 13
 
-    .line 1172
+    .line 1188
     iget-object v0, p0, Landroidx/collection/FloatFloatMap;->values:[F
 
-    .line 1175
+    .line 1191
     iget-object p0, p0, Landroidx/collection/FloatFloatMap;->metadata:[J
 
-    .line 1176
+    .line 1192
     array-length v1, p0
 
     add-int/lit8 v1, v1, -0x2
@@ -917,7 +917,7 @@
 
     move v3, v2
 
-    .line 1179
+    .line 1195
     :goto_0
     aget-wide v4, p0, v3
 
@@ -966,7 +966,7 @@
 
     add-int/2addr v9, v8
 
-    .line 1188
+    .line 1204
     aget v9, v0, v9
 
     cmpg-float v9, p1, v9
@@ -1032,16 +1032,16 @@
 
     invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1146
+    .line 1162
     iget-object v2, v0, Landroidx/collection/FloatFloatMap;->keys:[F
 
-    .line 1147
+    .line 1163
     iget-object v3, v0, Landroidx/collection/FloatFloatMap;->values:[F
 
-    .line 1150
+    .line 1166
     iget-object v0, v0, Landroidx/collection/FloatFloatMap;->metadata:[J
 
-    .line 1151
+    .line 1167
     array-length v4, v0
 
     add-int/lit8 v4, v4, -0x2
@@ -1054,7 +1054,7 @@
 
     move v7, v6
 
-    .line 1154
+    .line 1170
     :goto_0
     aget-wide v8, v0, v6
 
@@ -1103,7 +1103,7 @@
 
     add-int/2addr v13, v12
 
-    .line 1163
+    .line 1179
     aget v14, v2, v13
 
     aget v13, v3, v13
@@ -1197,17 +1197,17 @@
 
     return v4
 
-    .line 1301
+    .line 1317
     :cond_2
     iget-object v3, v0, Landroidx/collection/FloatFloatMap;->keys:[F
 
-    .line 1302
+    .line 1318
     iget-object v5, v0, Landroidx/collection/FloatFloatMap;->values:[F
 
-    .line 1305
+    .line 1321
     iget-object v0, v0, Landroidx/collection/FloatFloatMap;->metadata:[J
 
-    .line 1306
+    .line 1322
     array-length v6, v0
 
     add-int/lit8 v6, v6, -0x2
@@ -1216,7 +1216,7 @@
 
     move v7, v4
 
-    .line 1309
+    .line 1325
     :goto_0
     aget-wide v8, v0, v7
 
@@ -1265,7 +1265,7 @@
 
     add-int/2addr v13, v12
 
-    .line 1318
+    .line 1334
     aget v14, v3, v13
 
     aget v13, v5, v13
@@ -1309,7 +1309,7 @@
 .method public final findKeyIndex(F)I
     .locals 13
 
-    .line 1353
+    .line 1369
     invoke-static {p1}, Ljava/lang/Float;->hashCode(F)I
 
     move-result v0
@@ -1343,7 +1343,7 @@
 
     shl-int/lit8 v6, v6, 0x3
 
-    .line 1360
+    .line 1376
     aget-wide v7, v4, v5
 
     ushr-long/2addr v7, v6
@@ -1393,7 +1393,7 @@
 
     if-eqz v12, :cond_1
 
-    .line 1366
+    .line 1382
     invoke-static {v6, v7}, Ljava/lang/Long;->numberOfTrailingZeros(J)I
 
     move-result v10
@@ -1478,10 +1478,10 @@
     .line 386
     iget-object v1, p0, Landroidx/collection/FloatFloatMap;->values:[F
 
-    .line 1034
+    .line 1050
     iget-object p0, p0, Landroidx/collection/FloatFloatMap;->metadata:[J
 
-    .line 1035
+    .line 1051
     array-length v2, p0
 
     add-int/lit8 v2, v2, -0x2
@@ -1492,7 +1492,7 @@
 
     move v4, v3
 
-    .line 1038
+    .line 1054
     :goto_0
     aget-wide v5, p0, v4
 
@@ -1707,10 +1707,10 @@
     .line 398
     iget-object v0, p0, Landroidx/collection/FloatFloatMap;->keys:[F
 
-    .line 1054
+    .line 1070
     iget-object p0, p0, Landroidx/collection/FloatFloatMap;->metadata:[J
 
-    .line 1055
+    .line 1071
     array-length v1, p0
 
     add-int/lit8 v1, v1, -0x2
@@ -1721,7 +1721,7 @@
 
     move v3, v2
 
-    .line 1058
+    .line 1074
     :goto_0
     aget-wide v4, p0, v3
 
@@ -1820,10 +1820,10 @@
     .line 410
     iget-object v0, p0, Landroidx/collection/FloatFloatMap;->values:[F
 
-    .line 1074
+    .line 1090
     iget-object p0, p0, Landroidx/collection/FloatFloatMap;->metadata:[J
 
-    .line 1075
+    .line 1091
     array-length v1, p0
 
     add-int/lit8 v1, v1, -0x2
@@ -1834,7 +1834,7 @@
 
     move v3, v2
 
-    .line 1078
+    .line 1094
     :goto_0
     aget-wide v4, p0, v3
 
@@ -2039,16 +2039,16 @@
 .method public hashCode()I
     .locals 15
 
-    .line 1275
+    .line 1291
     iget-object v0, p0, Landroidx/collection/FloatFloatMap;->keys:[F
 
-    .line 1276
+    .line 1292
     iget-object v1, p0, Landroidx/collection/FloatFloatMap;->values:[F
 
-    .line 1279
+    .line 1295
     iget-object p0, p0, Landroidx/collection/FloatFloatMap;->metadata:[J
 
-    .line 1280
+    .line 1296
     array-length v2, p0
 
     add-int/lit8 v2, v2, -0x2
@@ -2061,7 +2061,7 @@
 
     move v5, v4
 
-    .line 1283
+    .line 1299
     :goto_0
     aget-wide v6, p0, v4
 
@@ -2110,7 +2110,7 @@
 
     add-int/2addr v11, v10
 
-    .line 1292
+    .line 1308
     aget v12, v0, v11
 
     aget v11, v1, v11
@@ -2396,16 +2396,16 @@
     .line 492
     invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1197
+    .line 1213
     iget-object v2, v0, Landroidx/collection/FloatFloatMap;->keys:[F
 
-    .line 1198
+    .line 1214
     iget-object v6, v0, Landroidx/collection/FloatFloatMap;->values:[F
 
-    .line 1201
+    .line 1217
     iget-object v0, v0, Landroidx/collection/FloatFloatMap;->metadata:[J
 
-    .line 1202
+    .line 1218
     array-length v7, v0
 
     add-int/lit8 v7, v7, -0x2
@@ -2416,7 +2416,7 @@
 
     const/4 v10, 0x0
 
-    .line 1205
+    .line 1221
     :goto_0
     aget-wide v11, v0, v9
 
@@ -2465,7 +2465,7 @@
 
     add-int v16, v16, v15
 
-    .line 1214
+    .line 1230
     aget v8, v2, v16
 
     aget v14, v6, v16
@@ -2627,16 +2627,16 @@
     .line 527
     invoke-virtual {v6, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1223
+    .line 1239
     iget-object v2, v0, Landroidx/collection/FloatFloatMap;->keys:[F
 
-    .line 1224
+    .line 1240
     iget-object v7, v0, Landroidx/collection/FloatFloatMap;->values:[F
 
-    .line 1227
+    .line 1243
     iget-object v0, v0, Landroidx/collection/FloatFloatMap;->metadata:[J
 
-    .line 1228
+    .line 1244
     array-length v8, v0
 
     add-int/lit8 v8, v8, -0x2
@@ -2647,7 +2647,7 @@
 
     const/4 v11, 0x0
 
-    .line 1231
+    .line 1247
     :goto_0
     aget-wide v12, v0, v10
 
@@ -2696,7 +2696,7 @@
 
     add-int v16, v16, v9
 
-    .line 1240
+    .line 1256
     aget v17, v2, v16
 
     aget v16, v7, v16
@@ -2851,29 +2851,29 @@
 
     invoke-static {v4, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1374
+    .line 1390
     const-string v5, "..."
 
     check-cast v5, Ljava/lang/CharSequence;
 
-    .line 1376
+    .line 1392
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 1377
+    .line 1393
     invoke-virtual {v6, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1380
+    .line 1396
     iget-object v2, v0, Landroidx/collection/FloatFloatMap;->keys:[F
 
-    .line 1381
+    .line 1397
     iget-object v7, v0, Landroidx/collection/FloatFloatMap;->values:[F
 
-    .line 1384
+    .line 1400
     iget-object v0, v0, Landroidx/collection/FloatFloatMap;->metadata:[J
 
-    .line 1385
+    .line 1401
     array-length v8, v0
 
     add-int/lit8 v8, v8, -0x2
@@ -2884,7 +2884,7 @@
 
     const/4 v11, 0x0
 
-    .line 1388
+    .line 1404
     :goto_0
     aget-wide v12, v0, v10
 
@@ -2933,7 +2933,7 @@
 
     add-int v16, v16, v9
 
-    .line 1397
+    .line 1413
     aget v17, v2, v16
 
     aget v16, v7, v16
@@ -2942,7 +2942,7 @@
 
     if-ne v11, v15, :cond_0
 
-    .line 1399
+    .line 1415
     invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
     goto :goto_4
@@ -2950,13 +2950,13 @@
     :cond_0
     if-eqz v11, :cond_1
 
-    .line 1403
+    .line 1419
     invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
     :cond_1
     move-object/from16 v18, v0
 
-    .line 1405
+    .line 1421
     invoke-static/range {v17 .. v17}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v0
@@ -3024,11 +3024,11 @@
 
     goto :goto_0
 
-    .line 1416
+    .line 1432
     :cond_5
     invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1376
+    .line 1392
     :goto_4
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -3087,29 +3087,29 @@
 
     invoke-static {v4, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1423
+    .line 1439
     const-string v5, "..."
 
     check-cast v5, Ljava/lang/CharSequence;
 
-    .line 1425
+    .line 1441
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 1426
+    .line 1442
     invoke-virtual {v6, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1429
+    .line 1445
     iget-object v2, v0, Landroidx/collection/FloatFloatMap;->keys:[F
 
-    .line 1430
+    .line 1446
     iget-object v7, v0, Landroidx/collection/FloatFloatMap;->values:[F
 
-    .line 1433
+    .line 1449
     iget-object v0, v0, Landroidx/collection/FloatFloatMap;->metadata:[J
 
-    .line 1434
+    .line 1450
     array-length v8, v0
 
     add-int/lit8 v8, v8, -0x2
@@ -3120,7 +3120,7 @@
 
     const/4 v11, 0x0
 
-    .line 1437
+    .line 1453
     :goto_0
     aget-wide v12, v0, v10
 
@@ -3169,7 +3169,7 @@
 
     add-int v16, v16, v9
 
-    .line 1446
+    .line 1462
     aget v17, v2, v16
 
     aget v16, v7, v16
@@ -3178,7 +3178,7 @@
 
     if-ne v11, v15, :cond_0
 
-    .line 1448
+    .line 1464
     invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
     goto :goto_4
@@ -3186,10 +3186,10 @@
     :cond_0
     if-eqz v11, :cond_1
 
-    .line 1452
+    .line 1468
     invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1454
+    .line 1470
     :cond_1
     invoke-static/range {v17 .. v17}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -3252,11 +3252,11 @@
 
     goto :goto_0
 
-    .line 1465
+    .line 1481
     :cond_5
     invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1425
+    .line 1441
     :goto_4
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -3308,34 +3308,34 @@
 
     invoke-static {v3, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1470
+    .line 1486
     const-string v4, ""
 
     check-cast v4, Ljava/lang/CharSequence;
 
-    .line 1472
+    .line 1488
     const-string v5, "..."
 
     check-cast v5, Ljava/lang/CharSequence;
 
-    .line 1474
+    .line 1490
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 1475
+    .line 1491
     invoke-virtual {v6, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1478
+    .line 1494
     iget-object v2, v0, Landroidx/collection/FloatFloatMap;->keys:[F
 
-    .line 1479
+    .line 1495
     iget-object v7, v0, Landroidx/collection/FloatFloatMap;->values:[F
 
-    .line 1482
+    .line 1498
     iget-object v0, v0, Landroidx/collection/FloatFloatMap;->metadata:[J
 
-    .line 1483
+    .line 1499
     array-length v8, v0
 
     add-int/lit8 v8, v8, -0x2
@@ -3346,7 +3346,7 @@
 
     const/4 v11, 0x0
 
-    .line 1486
+    .line 1502
     :goto_0
     aget-wide v12, v0, v10
 
@@ -3395,7 +3395,7 @@
 
     add-int v16, v16, v9
 
-    .line 1495
+    .line 1511
     aget v17, v2, v16
 
     aget v16, v7, v16
@@ -3404,7 +3404,7 @@
 
     if-ne v11, v15, :cond_0
 
-    .line 1497
+    .line 1513
     invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
     goto :goto_4
@@ -3412,10 +3412,10 @@
     :cond_0
     if-eqz v11, :cond_1
 
-    .line 1501
+    .line 1517
     invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1503
+    .line 1519
     :cond_1
     invoke-static/range {v17 .. v17}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -3478,11 +3478,11 @@
 
     goto :goto_0
 
-    .line 1514
+    .line 1530
     :cond_5
     invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1474
+    .line 1490
     :goto_4
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -3527,39 +3527,39 @@
 
     invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1518
+    .line 1534
     const-string v3, ""
 
     move-object v4, v3
 
     check-cast v4, Ljava/lang/CharSequence;
 
-    .line 1519
+    .line 1535
     check-cast v3, Ljava/lang/CharSequence;
 
-    .line 1521
+    .line 1537
     const-string v5, "..."
 
     check-cast v5, Ljava/lang/CharSequence;
 
-    .line 1523
+    .line 1539
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 1524
+    .line 1540
     invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1527
+    .line 1543
     iget-object v4, v0, Landroidx/collection/FloatFloatMap;->keys:[F
 
-    .line 1528
+    .line 1544
     iget-object v7, v0, Landroidx/collection/FloatFloatMap;->values:[F
 
-    .line 1531
+    .line 1547
     iget-object v0, v0, Landroidx/collection/FloatFloatMap;->metadata:[J
 
-    .line 1532
+    .line 1548
     array-length v8, v0
 
     add-int/lit8 v8, v8, -0x2
@@ -3570,7 +3570,7 @@
 
     const/4 v11, 0x0
 
-    .line 1535
+    .line 1551
     :goto_0
     aget-wide v12, v0, v10
 
@@ -3619,7 +3619,7 @@
 
     add-int v16, v16, v9
 
-    .line 1544
+    .line 1560
     aget v17, v4, v16
 
     aget v16, v7, v16
@@ -3628,7 +3628,7 @@
 
     if-ne v11, v15, :cond_0
 
-    .line 1546
+    .line 1562
     invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
     goto :goto_4
@@ -3636,10 +3636,10 @@
     :cond_0
     if-eqz v11, :cond_1
 
-    .line 1550
+    .line 1566
     invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1552
+    .line 1568
     :cond_1
     invoke-static/range {v17 .. v17}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -3702,11 +3702,11 @@
 
     goto :goto_0
 
-    .line 1563
+    .line 1579
     :cond_5
     invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1523
+    .line 1539
     :goto_4
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -3744,44 +3744,44 @@
 
     invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1566
+    .line 1582
     const-string v2, ", "
 
     check-cast v2, Ljava/lang/CharSequence;
 
-    .line 1567
+    .line 1583
     const-string v3, ""
 
     move-object v4, v3
 
     check-cast v4, Ljava/lang/CharSequence;
 
-    .line 1568
+    .line 1584
     check-cast v3, Ljava/lang/CharSequence;
 
-    .line 1570
+    .line 1586
     const-string v5, "..."
 
     check-cast v5, Ljava/lang/CharSequence;
 
-    .line 1572
+    .line 1588
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 1573
+    .line 1589
     invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1576
+    .line 1592
     iget-object v4, v0, Landroidx/collection/FloatFloatMap;->keys:[F
 
-    .line 1577
+    .line 1593
     iget-object v7, v0, Landroidx/collection/FloatFloatMap;->values:[F
 
-    .line 1580
+    .line 1596
     iget-object v0, v0, Landroidx/collection/FloatFloatMap;->metadata:[J
 
-    .line 1581
+    .line 1597
     array-length v8, v0
 
     add-int/lit8 v8, v8, -0x2
@@ -3792,7 +3792,7 @@
 
     const/4 v11, 0x0
 
-    .line 1584
+    .line 1600
     :goto_0
     aget-wide v12, v0, v10
 
@@ -3841,7 +3841,7 @@
 
     add-int v16, v16, v9
 
-    .line 1593
+    .line 1609
     aget v17, v4, v16
 
     aget v16, v7, v16
@@ -3850,7 +3850,7 @@
 
     if-ne v11, v15, :cond_0
 
-    .line 1595
+    .line 1611
     invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
     goto :goto_4
@@ -3858,10 +3858,10 @@
     :cond_0
     if-eqz v11, :cond_1
 
-    .line 1599
+    .line 1615
     invoke-virtual {v6, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1601
+    .line 1617
     :cond_1
     invoke-static/range {v17 .. v17}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -3924,11 +3924,11 @@
 
     goto :goto_0
 
-    .line 1612
+    .line 1628
     :cond_5
     invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1572
+    .line 1588
     :goto_4
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -3985,16 +3985,16 @@
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 1327
+    .line 1343
     iget-object v2, v0, Landroidx/collection/FloatFloatMap;->keys:[F
 
-    .line 1328
+    .line 1344
     iget-object v3, v0, Landroidx/collection/FloatFloatMap;->values:[F
 
-    .line 1331
+    .line 1347
     iget-object v4, v0, Landroidx/collection/FloatFloatMap;->metadata:[J
 
-    .line 1332
+    .line 1348
     array-length v5, v4
 
     add-int/lit8 v5, v5, -0x2
@@ -4007,7 +4007,7 @@
 
     move v8, v7
 
-    .line 1335
+    .line 1351
     :goto_0
     aget-wide v9, v4, v7
 
@@ -4056,7 +4056,7 @@
 
     add-int/2addr v14, v13
 
-    .line 1344
+    .line 1360
     aget v15, v2, v14
 
     aget v14, v3, v14

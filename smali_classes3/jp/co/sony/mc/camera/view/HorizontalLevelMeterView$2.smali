@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 295
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$2;->this$0:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;
@@ -37,12 +45,28 @@
 # virtual methods
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "animation"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "animation"
+        }
+    .end annotation
 
     .line 303
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$2;->this$0:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;
@@ -95,12 +119,28 @@
 
 .method public onAnimationRepeat(Landroid/animation/Animator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "animation"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "animation"
+        }
+    .end annotation
 
     return-void
 .end method

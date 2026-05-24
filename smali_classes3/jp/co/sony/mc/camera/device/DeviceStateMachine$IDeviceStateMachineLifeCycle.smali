@@ -15,5 +15,24 @@
 
 
 # virtual methods
+.method public abstract onCameraClosedBySwitchToOffline(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sessionId"
+        }
+    .end annotation
+.end method
+
 .method public abstract onInvalid(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sessionId"
+        }
+    .end annotation
 .end method

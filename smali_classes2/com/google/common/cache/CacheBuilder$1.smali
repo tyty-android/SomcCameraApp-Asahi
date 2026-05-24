@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 166
+    .line 208
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -37,24 +37,56 @@
 
 .method public recordHits(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "count"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public recordLoadException(J)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "loadTime"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public recordLoadSuccess(J)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "loadTime"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public recordMisses(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "count"
+        }
+    .end annotation
 
     return-void
 .end method
@@ -62,7 +94,7 @@
 .method public snapshot()Lcom/google/common/cache/CacheStats;
     .locals 0
 
-    .line 186
+    .line 228
     sget-object p0, Lcom/google/common/cache/CacheBuilder;->EMPTY_STATS:Lcom/google/common/cache/CacheStats;
 
     return-object p0

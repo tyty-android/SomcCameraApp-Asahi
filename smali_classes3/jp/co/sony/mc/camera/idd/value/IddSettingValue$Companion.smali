@@ -61,7 +61,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 17
+    .line 18
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -86,7 +86,7 @@
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 20
+    .line 21
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;
 
     if-eqz p0, :cond_0
@@ -101,7 +101,7 @@
 
     goto/16 :goto_0
 
-    .line 21
+    .line 22
     :cond_0
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/AutoExposureLock;
 
@@ -117,7 +117,7 @@
 
     goto/16 :goto_0
 
-    .line 22
+    .line 23
     :cond_1
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;
 
@@ -133,7 +133,7 @@
 
     goto/16 :goto_0
 
-    .line 23
+    .line 24
     :cond_2
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSound;
 
@@ -149,7 +149,7 @@
 
     goto/16 :goto_0
 
-    .line 24
+    .line 25
     :cond_3
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;
 
@@ -165,7 +165,7 @@
 
     goto/16 :goto_0
 
-    .line 25
+    .line 26
     :cond_4
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
 
@@ -181,7 +181,7 @@
 
     goto/16 :goto_0
 
-    .line 26
+    .line 27
     :cond_5
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;
 
@@ -197,7 +197,7 @@
 
     goto/16 :goto_0
 
-    .line 27
+    .line 28
     :cond_6
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/Ev;
 
@@ -213,7 +213,7 @@
 
     goto/16 :goto_0
 
-    .line 28
+    .line 29
     :cond_7
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/FaceDetection;
 
@@ -229,7 +229,7 @@
 
     goto/16 :goto_0
 
-    .line 29
+    .line 30
     :cond_8
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/Flash;
 
@@ -245,7 +245,7 @@
 
     goto/16 :goto_0
 
-    .line 30
+    .line 31
     :cond_9
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;
 
@@ -261,7 +261,7 @@
 
     goto/16 :goto_0
 
-    .line 31
+    .line 32
     :cond_a
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
@@ -277,7 +277,7 @@
 
     goto/16 :goto_0
 
-    .line 32
+    .line 33
     :cond_b
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
 
@@ -293,7 +293,7 @@
 
     goto/16 :goto_0
 
-    .line 33
+    .line 34
     :cond_c
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/BurstFeedback;
 
@@ -309,7 +309,7 @@
 
     goto/16 :goto_0
 
-    .line 34
+    .line 35
     :cond_d
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/GridLine;
 
@@ -325,7 +325,7 @@
 
     goto/16 :goto_0
 
-    .line 35
+    .line 36
     :cond_e
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/Hdr;
 
@@ -341,27 +341,11 @@
 
     goto/16 :goto_0
 
-    .line 36
-    :cond_f
-    instance-of p0, p2, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    if-eqz p0, :cond_10
-
-    new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddLens;
-
-    check-cast p2, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/idd/value/IddLens;-><init>(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
-
-    check-cast p0, Ljp/co/sony/mc/camera/idd/value/IddSettingValue;
-
-    goto/16 :goto_0
-
     .line 37
-    :cond_10
+    :cond_f
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;
 
-    if-eqz p0, :cond_11
+    if-eqz p0, :cond_10
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;
 
@@ -374,10 +358,10 @@
     goto/16 :goto_0
 
     .line 38
-    :cond_11
+    :cond_10
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    if-eqz p0, :cond_12
+    if-eqz p0, :cond_11
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddIso;
 
@@ -390,10 +374,10 @@
     goto/16 :goto_0
 
     .line 39
-    :cond_12
+    :cond_11
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/Metering;
 
-    if-eqz p0, :cond_13
+    if-eqz p0, :cond_12
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddMetering;
 
@@ -406,10 +390,10 @@
     goto/16 :goto_0
 
     .line 40
-    :cond_13
+    :cond_12
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    if-eqz p0, :cond_14
+    if-eqz p0, :cond_13
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddMode$Wrapper;
 
@@ -422,10 +406,10 @@
     goto/16 :goto_0
 
     .line 41
-    :cond_14
+    :cond_13
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    if-eqz p0, :cond_15
+    if-eqz p0, :cond_14
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;
 
@@ -438,10 +422,10 @@
     goto/16 :goto_0
 
     .line 42
-    :cond_15
+    :cond_14
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/BackSoftSkin;
 
-    if-eqz p0, :cond_16
+    if-eqz p0, :cond_15
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;
 
@@ -454,10 +438,10 @@
     goto/16 :goto_0
 
     .line 43
-    :cond_16
+    :cond_15
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;
 
-    if-eqz p0, :cond_17
+    if-eqz p0, :cond_16
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;
 
@@ -470,10 +454,10 @@
     goto/16 :goto_0
 
     .line 44
-    :cond_17
+    :cond_16
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/VolumeKey;
 
-    if-eqz p0, :cond_18
+    if-eqz p0, :cond_17
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;
 
@@ -486,10 +470,10 @@
     goto/16 :goto_0
 
     .line 45
-    :cond_18
+    :cond_17
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
-    if-eqz p0, :cond_19
+    if-eqz p0, :cond_18
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;
 
@@ -502,10 +486,10 @@
     goto/16 :goto_0
 
     .line 46
-    :cond_19
+    :cond_18
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;
 
-    if-eqz p0, :cond_1a
+    if-eqz p0, :cond_19
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;
 
@@ -518,10 +502,10 @@
     goto/16 :goto_0
 
     .line 47
-    :cond_1a
+    :cond_19
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
 
-    if-eqz p0, :cond_1b
+    if-eqz p0, :cond_1a
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddFileFormat;
 
@@ -534,10 +518,10 @@
     goto/16 :goto_0
 
     .line 48
-    :cond_1b
+    :cond_1a
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/FastCapture;
 
-    if-eqz p0, :cond_1c
+    if-eqz p0, :cond_1b
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddFastCapture;
 
@@ -550,10 +534,10 @@
     goto/16 :goto_0
 
     .line 49
-    :cond_1c
+    :cond_1b
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/QrCodeDetection;
 
-    if-eqz p0, :cond_1d
+    if-eqz p0, :cond_1c
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;
 
@@ -566,10 +550,10 @@
     goto/16 :goto_0
 
     .line 50
-    :cond_1d
+    :cond_1c
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
 
-    if-eqz p0, :cond_1e
+    if-eqz p0, :cond_1d
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddVideoSize;
 
@@ -582,10 +566,10 @@
     goto/16 :goto_0
 
     .line 51
-    :cond_1e
+    :cond_1d
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;
 
-    if-eqz p0, :cond_1f
+    if-eqz p0, :cond_1e
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddVideoFps;
 
@@ -598,10 +582,10 @@
     goto/16 :goto_0
 
     .line 52
-    :cond_1f
+    :cond_1e
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;
 
-    if-eqz p0, :cond_20
+    if-eqz p0, :cond_1f
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddExtendFps;
 
@@ -614,10 +598,10 @@
     goto/16 :goto_0
 
     .line 53
-    :cond_20
+    :cond_1f
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
-    if-eqz p0, :cond_21
+    if-eqz p0, :cond_20
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;
 
@@ -630,10 +614,10 @@
     goto/16 :goto_0
 
     .line 54
-    :cond_21
+    :cond_20
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/HandShutter;
 
-    if-eqz p0, :cond_22
+    if-eqz p0, :cond_21
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddHandShutter;
 
@@ -646,10 +630,10 @@
     goto/16 :goto_0
 
     .line 55
-    :cond_22
+    :cond_21
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/SuperResolutionZoom;
 
-    if-eqz p0, :cond_23
+    if-eqz p0, :cond_22
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;
 
@@ -662,10 +646,10 @@
     goto/16 :goto_0
 
     .line 56
-    :cond_23
+    :cond_22
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/PhotoLight;
 
-    if-eqz p0, :cond_24
+    if-eqz p0, :cond_23
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;
 
@@ -678,10 +662,10 @@
     goto/16 :goto_0
 
     .line 57
-    :cond_24
+    :cond_23
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/WindNoiseReduction;
 
-    if-eqz p0, :cond_25
+    if-eqz p0, :cond_24
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;
 
@@ -696,10 +680,10 @@
     goto/16 :goto_0
 
     .line 58
-    :cond_25
+    :cond_24
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;
 
-    if-eqz p0, :cond_26
+    if-eqz p0, :cond_25
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;
 
@@ -712,10 +696,10 @@
     goto/16 :goto_0
 
     .line 59
-    :cond_26
+    :cond_25
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
-    if-eqz p0, :cond_27
+    if-eqz p0, :cond_26
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddIris;
 
@@ -728,10 +712,10 @@
     goto/16 :goto_0
 
     .line 60
-    :cond_27
+    :cond_26
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;
 
-    if-eqz p0, :cond_28
+    if-eqz p0, :cond_27
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddBtRemote;
 
@@ -744,10 +728,10 @@
     goto/16 :goto_0
 
     .line 61
-    :cond_28
+    :cond_27
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/HapticFeedback;
 
-    if-eqz p0, :cond_29
+    if-eqz p0, :cond_28
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;
 
@@ -760,10 +744,10 @@
     goto/16 :goto_0
 
     .line 62
-    :cond_29
+    :cond_28
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/EnduranceMode;
 
-    if-eqz p0, :cond_2a
+    if-eqz p0, :cond_29
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;
 
@@ -776,10 +760,10 @@
     goto/16 :goto_0
 
     .line 63
-    :cond_2a
+    :cond_29
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
-    if-eqz p0, :cond_2b
+    if-eqz p0, :cond_2a
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;
 
@@ -792,10 +776,10 @@
     goto/16 :goto_0
 
     .line 64
-    :cond_2b
+    :cond_2a
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
 
-    if-eqz p0, :cond_2c
+    if-eqz p0, :cond_2b
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;
 
@@ -808,10 +792,10 @@
     goto/16 :goto_0
 
     .line 65
-    :cond_2c
+    :cond_2b
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/Peaking;
 
-    if-eqz p0, :cond_2d
+    if-eqz p0, :cond_2c
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddPeaking;
 
@@ -824,10 +808,10 @@
     goto/16 :goto_0
 
     .line 66
-    :cond_2d
+    :cond_2c
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/PeakingColor;
 
-    if-eqz p0, :cond_2e
+    if-eqz p0, :cond_2d
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;
 
@@ -840,10 +824,10 @@
     goto/16 :goto_0
 
     .line 67
-    :cond_2e
+    :cond_2d
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;
 
-    if-eqz p0, :cond_2f
+    if-eqz p0, :cond_2e
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;
 
@@ -856,10 +840,10 @@
     goto/16 :goto_0
 
     .line 68
-    :cond_2f
+    :cond_2e
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;
 
-    if-eqz p0, :cond_30
+    if-eqz p0, :cond_2f
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddNight;
 
@@ -872,10 +856,10 @@
     goto/16 :goto_0
 
     .line 69
-    :cond_30
+    :cond_2f
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;
 
-    if-eqz p0, :cond_31
+    if-eqz p0, :cond_30
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;
 
@@ -888,10 +872,10 @@
     goto/16 :goto_0
 
     .line 70
-    :cond_31
+    :cond_30
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/MacroMode;
 
-    if-eqz p0, :cond_32
+    if-eqz p0, :cond_31
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddMacroMode;
 
@@ -904,10 +888,10 @@
     goto/16 :goto_0
 
     .line 71
-    :cond_32
+    :cond_31
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/ComputationalMode;
 
-    if-eqz p0, :cond_33
+    if-eqz p0, :cond_32
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;
 
@@ -920,10 +904,10 @@
     goto/16 :goto_0
 
     .line 72
-    :cond_33
+    :cond_32
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/Mic;
 
-    if-eqz p0, :cond_34
+    if-eqz p0, :cond_33
 
     sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddMic;->Companion:Ljp/co/sony/mc/camera/idd/value/IddMic$Companion;
 
@@ -938,10 +922,10 @@
     goto/16 :goto_0
 
     .line 73
-    :cond_34
+    :cond_33
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/FramingAssistSwitch;
 
-    if-eqz p0, :cond_35
+    if-eqz p0, :cond_34
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddFramingAssist;
 
@@ -954,10 +938,10 @@
     goto/16 :goto_0
 
     .line 74
-    :cond_35
+    :cond_34
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/FramingAssistPositionMode;
 
-    if-eqz p0, :cond_36
+    if-eqz p0, :cond_35
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddFramingAssistMethod;
 
@@ -970,10 +954,10 @@
     goto/16 :goto_0
 
     .line 75
-    :cond_36
+    :cond_35
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/BasicModeLevelMeterDisplay;
 
-    if-eqz p0, :cond_37
+    if-eqz p0, :cond_36
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddLevelMeter;
 
@@ -986,10 +970,10 @@
     goto/16 :goto_0
 
     .line 76
-    :cond_37
+    :cond_36
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingRecordingMode;
 
-    if-eqz p0, :cond_38
+    if-eqz p0, :cond_37
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddSaveFullScreenVideo;
 
@@ -1002,10 +986,10 @@
     goto/16 :goto_0
 
     .line 77
-    :cond_38
+    :cond_37
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/UltraHdr;
 
-    if-eqz p0, :cond_39
+    if-eqz p0, :cond_38
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddUltraHdr;
 
@@ -1018,10 +1002,10 @@
     goto/16 :goto_0
 
     .line 78
-    :cond_39
+    :cond_38
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/VolumeDistortionCorrection;
 
-    if-eqz p0, :cond_3a
+    if-eqz p0, :cond_39
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddVolumeDistortionCorrection;
 
@@ -1034,54 +1018,70 @@
     goto/16 :goto_0
 
     .line 79
-    :cond_3a
-    instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;
+    :cond_39
+    instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestionDetection;
 
-    if-eqz p0, :cond_3b
+    if-eqz p0, :cond_3a
 
-    new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddConnectMode;
+    new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddAiSuggestionDetection;
 
-    check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;
+    check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestionDetection;
 
-    invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/idd/value/IddConnectMode;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;)V
+    invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/idd/value/IddAiSuggestionDetection;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestionDetection;)V
 
     check-cast p0, Ljp/co/sony/mc/camera/idd/value/IddSettingValue;
 
     goto/16 :goto_0
 
     .line 80
-    :cond_3b
-    instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/NetworkUsage;
+    :cond_3a
+    instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestionCustomExtensionData;
 
-    if-eqz p0, :cond_3c
+    if-eqz p0, :cond_3b
 
-    new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;
+    new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddAiSuggestionCustomExtensionData;
 
-    check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/NetworkUsage;
+    check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestionCustomExtensionData;
 
-    invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/NetworkUsage;)V
+    invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/idd/value/IddAiSuggestionCustomExtensionData;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestionCustomExtensionData;)V
 
     check-cast p0, Ljp/co/sony/mc/camera/idd/value/IddSettingValue;
 
     goto/16 :goto_0
 
     .line 81
-    :cond_3c
-    instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;
+    :cond_3b
+    instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;
 
-    if-eqz p0, :cond_3d
+    if-eqz p0, :cond_3c
 
-    new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;
+    new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddDigitalTripodFraming;
 
-    check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;
+    check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;
 
-    invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;)V
+    invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/idd/value/IddDigitalTripodFraming;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;)V
 
     check-cast p0, Ljp/co/sony/mc/camera/idd/value/IddSettingValue;
 
     goto/16 :goto_0
 
     .line 82
+    :cond_3c
+    instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/TripodFramingAssistanceExtensionData;
+
+    if-eqz p0, :cond_3d
+
+    new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddDigitalTripodFramingData;
+
+    check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/TripodFramingAssistanceExtensionData;
+
+    invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/idd/value/IddDigitalTripodFramingData;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/TripodFramingAssistanceExtensionData;)V
+
+    check-cast p0, Ljp/co/sony/mc/camera/idd/value/IddSettingValue;
+
+    goto/16 :goto_0
+
+    .line 83
     :cond_3d
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/SelfTimer;
 
@@ -1097,7 +1097,7 @@
 
     goto/16 :goto_0
 
-    .line 83
+    .line 84
     :cond_3e
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/ObjectTracking;
 
@@ -1113,7 +1113,7 @@
 
     goto/16 :goto_0
 
-    .line 84
+    .line 85
     :cond_3f
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/Resolution;
 
@@ -1129,7 +1129,7 @@
 
     goto/16 :goto_0
 
-    .line 85
+    .line 86
     :cond_40
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingOrientation;
 
@@ -1145,7 +1145,7 @@
 
     goto/16 :goto_0
 
-    .line 86
+    .line 87
     :cond_41
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/BasicModeFocusDisplay;
 
@@ -1161,7 +1161,7 @@
 
     goto/16 :goto_0
 
-    .line 87
+    .line 88
     :cond_42
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/BasicModeShutterSpeedDisplay;
 
@@ -1177,27 +1177,11 @@
 
     goto/16 :goto_0
 
-    .line 88
-    :cond_43
-    instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;
-
-    if-eqz p0, :cond_44
-
-    new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;
-
-    check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;
-
-    invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;)V
-
-    check-cast p0, Ljp/co/sony/mc/camera/idd/value/IddSettingValue;
-
-    goto/16 :goto_0
-
     .line 89
-    :cond_44
+    :cond_43
     instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/PrivacyPolicy;
 
-    if-eqz p0, :cond_45
+    if-eqz p0, :cond_44
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddPrivacyPolicy;
 
@@ -1208,21 +1192,7 @@
     goto/16 :goto_0
 
     .line 90
-    :cond_45
-    instance-of p0, p2, Ljp/co/sony/mc/camera/configuration/parameters/StreamingPrivacyPolicy;
-
-    if-eqz p0, :cond_46
-
-    new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddPrivacyPolicy;
-
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/idd/value/IddPrivacyPolicy;-><init>()V
-
-    check-cast p0, Ljp/co/sony/mc/camera/idd/value/IddSettingValue;
-
-    goto/16 :goto_0
-
-    .line 91
-    :cond_46
+    :cond_44
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->ZOOM_RATIO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1231,7 +1201,7 @@
 
     const-string v0, "null cannot be cast to non-null type kotlin.Float"
 
-    if-eqz p0, :cond_47
+    if-eqz p0, :cond_45
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddZoomRatio;
 
@@ -1249,15 +1219,15 @@
 
     goto/16 :goto_0
 
-    .line 92
-    :cond_47
+    .line 91
+    :cond_45
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->AMBER_BLUE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p0
 
-    if-eqz p0, :cond_48
+    if-eqz p0, :cond_46
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;
 
@@ -1275,8 +1245,8 @@
 
     goto/16 :goto_0
 
-    .line 93
-    :cond_48
+    .line 92
+    :cond_46
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->BRIGHTNESS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1285,7 +1255,7 @@
 
     const-string v1, "null cannot be cast to non-null type kotlin.Int"
 
-    if-eqz p0, :cond_49
+    if-eqz p0, :cond_47
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddBrightness;
 
@@ -1303,15 +1273,15 @@
 
     goto/16 :goto_0
 
-    .line 94
-    :cond_49
+    .line 93
+    :cond_47
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->BOKEH_STRENGTH:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p0
 
-    if-eqz p0, :cond_4a
+    if-eqz p0, :cond_48
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;
 
@@ -1325,19 +1295,19 @@
 
     goto/16 :goto_0
 
-    .line 95
-    :cond_4a
+    .line 94
+    :cond_48
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->AUTO_FRAMING_SIZE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p0
 
-    if-eqz p0, :cond_4b
+    if-eqz p0, :cond_49
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddAfrShortcut;
 
-    .line 96
+    .line 95
     invoke-static {p2, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast p2, Ljava/lang/Integer;
@@ -1352,22 +1322,22 @@
 
     div-float/2addr p1, p2
 
-    .line 95
+    .line 94
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/idd/value/IddAfrShortcut;-><init>(F)V
 
     check-cast p0, Ljp/co/sony/mc/camera/idd/value/IddSettingValue;
 
     goto :goto_0
 
-    .line 97
-    :cond_4b
+    .line 96
+    :cond_49
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_DISTANCE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p0
 
-    if-eqz p0, :cond_4c
+    if-eqz p0, :cond_4a
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;
 
@@ -1385,15 +1355,15 @@
 
     goto :goto_0
 
-    .line 98
-    :cond_4c
+    .line 97
+    :cond_4a
     sget-object p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->HORIZONTAL_LEVEL_METER:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p0
 
-    if-eqz p0, :cond_4d
+    if-eqz p0, :cond_4b
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddHorizontalLevelMeter;
 
@@ -1403,15 +1373,15 @@
 
     goto :goto_0
 
-    .line 99
-    :cond_4d
+    .line 98
+    :cond_4b
     sget-object p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->ACCESSIBILITY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p0
 
-    if-eqz p0, :cond_4e
+    if-eqz p0, :cond_4c
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddAccessibility;
 
@@ -1421,15 +1391,15 @@
 
     goto :goto_0
 
-    .line 100
-    :cond_4e
+    .line 99
+    :cond_4c
     sget-object p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p0
 
-    if-eqz p0, :cond_4f
+    if-eqz p0, :cond_4d
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddSoftwareLicence;
 
@@ -1439,15 +1409,15 @@
 
     goto :goto_0
 
-    .line 101
-    :cond_4f
+    .line 100
+    :cond_4d
     sget-object p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p0
 
-    if-eqz p0, :cond_50
+    if-eqz p0, :cond_4e
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddReset;
 
@@ -1457,15 +1427,15 @@
 
     goto :goto_0
 
-    .line 102
-    :cond_50
+    .line 101
+    :cond_4e
     sget-object p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->TIPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p0
 
-    if-eqz p0, :cond_51
+    if-eqz p0, :cond_4f
 
     new-instance p0, Ljp/co/sony/mc/camera/idd/value/IddTips;
 
@@ -1476,8 +1446,8 @@
     :goto_0
     return-object p0
 
-    .line 103
-    :cond_51
+    .line 102
+    :cond_4f
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
     invoke-direct {p0}, Ljava/lang/IllegalArgumentException;-><init>()V

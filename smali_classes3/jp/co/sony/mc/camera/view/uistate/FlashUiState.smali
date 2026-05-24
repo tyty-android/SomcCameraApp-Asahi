@@ -224,6 +224,16 @@
     return p0
 .end method
 
+.method public static synthetic $r8$lambda$Un-78dT-LWtUvKkbheEaafAkRnI(ZLjp/co/sony/mc/camera/configuration/parameters/DriveMode;Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;Ljava/lang/Boolean;ZZLjava/lang/Boolean;)Z
+    .locals 0
+
+    invoke-static/range {p0 .. p6}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->isFlashModeButtonEnabled$lambda$1(ZLjp/co/sony/mc/camera/configuration/parameters/DriveMode;Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;Ljava/lang/Boolean;ZZLjava/lang/Boolean;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
 .method public static synthetic $r8$lambda$ZURxCr7Kk7LdG2TTVzEpCi-qMGs(ZZ)Z
     .locals 0
 
@@ -238,16 +248,6 @@
     .locals 0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->photoLightModeButtonSrc$lambda$5(Ljp/co/sony/mc/camera/configuration/parameters/PhotoLight;)I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public static synthetic $r8$lambda$hBd56w4sZw6wQTahfYQ3vKquhOY(ZLjp/co/sony/mc/camera/configuration/parameters/DriveMode;Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljava/lang/Boolean;ZZ)Z
-    .locals 0
-
-    invoke-static/range {p0 .. p6}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->isFlashModeButtonEnabled$lambda$1(ZLjp/co/sony/mc/camera/configuration/parameters/DriveMode;Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljava/lang/Boolean;ZZ)Z
 
     move-result p0
 
@@ -315,27 +315,27 @@
 
     invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 27
+    .line 26
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 28
+    .line 27
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
-    .line 29
+    .line 28
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
-    .line 30
+    .line 29
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->proModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
 
-    .line 36
+    .line 35
     sget-object v0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 37
+    .line 36
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getFlash()Landroidx/lifecycle/LiveData;
 
     move-result-object v1
 
-    .line 38
+    .line 37
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isFlashRequired()Landroidx/lifecycle/LiveData;
 
     move-result-object v2
@@ -344,17 +344,17 @@
 
     invoke-direct {v3}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$$ExternalSyntheticLambda0;-><init>()V
 
-    .line 36
+    .line 35
     invoke-virtual {v0, v1, v2, v3}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->flashModeButtonSrc:Landroidx/lifecycle/LiveData;
 
-    .line 54
+    .line 53
     sget-object v1, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 55
+    .line 54
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getPreviewing()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
@@ -363,33 +363,33 @@
 
     move-result-object v2
 
-    .line 56
+    .line 55
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getDriveMode()Landroidx/lifecycle/LiveData;
 
     move-result-object v3
 
-    .line 57
+    .line 56
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getShutterSpeed()Landroidx/lifecycle/LiveData;
 
     move-result-object v4
 
-    .line 58
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
+    .line 57
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getSaving()Landroidx/lifecycle/LiveData;
 
     move-result-object v5
 
-    .line 59
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getSaving()Landroidx/lifecycle/LiveData;
+    .line 58
+    invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;->isAnyFnMenuOpened()Landroidx/lifecycle/LiveData;
 
     move-result-object v6
 
-    .line 60
-    invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;->isAnyFnMenuOpened()Landroidx/lifecycle/LiveData;
+    .line 59
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->isFocusMagnificationOn()Landroidx/lifecycle/LiveData;
 
     move-result-object v7
 
-    .line 61
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->isFocusMagnificationOn()Landroidx/lifecycle/LiveData;
+    .line 60
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getBokeh()Landroidx/lifecycle/LiveData;
 
     move-result-object v8
 
@@ -397,29 +397,29 @@
 
     invoke-direct {v9}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$$ExternalSyntheticLambda1;-><init>()V
 
-    .line 54
+    .line 53
     invoke-virtual/range {v1 .. v9}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function7;)Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->isFlashModeButtonEnabled:Landroidx/lifecycle/LiveData;
 
-    .line 69
+    .line 67
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getReady()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->isFlashModeButtonClickable:Landroidx/lifecycle/LiveData;
 
-    .line 70
+    .line 68
     sget-object v0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 71
+    .line 69
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
 
     move-result-object v1
 
-    .line 72
+    .line 70
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getFlashAppearance()Landroidx/lifecycle/MediatorLiveData;
 
     move-result-object v2
@@ -430,22 +430,22 @@
 
     invoke-direct {v3}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$$ExternalSyntheticLambda2;-><init>()V
 
-    .line 70
+    .line 68
     invoke-virtual {v0, v1, v2, v3}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->flashModeButtonVisible:Landroidx/lifecycle/LiveData;
 
-    .line 97
+    .line 95
     sget-object v0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 98
+    .line 96
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getDisplayFlash()Landroidx/lifecycle/LiveData;
 
     move-result-object v1
 
-    .line 99
+    .line 97
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isFlashRequired()Landroidx/lifecycle/LiveData;
 
     move-result-object v2
@@ -454,36 +454,36 @@
 
     invoke-direct {v3}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$$ExternalSyntheticLambda3;-><init>()V
 
-    .line 97
+    .line 95
     invoke-virtual {v0, v1, v2, v3}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->displayFlashModeButtonSrc:Landroidx/lifecycle/LiveData;
 
-    .line 114
+    .line 112
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getPreviewing()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->isDisplayFlashModeButtonEnabled:Landroidx/lifecycle/LiveData;
 
-    .line 115
+    .line 113
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getReady()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->isDisplayFlashModeButtonClickable:Landroidx/lifecycle/LiveData;
 
-    .line 116
+    .line 114
     sget-object v0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 117
+    .line 115
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
 
     move-result-object v1
 
-    .line 118
+    .line 116
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getDisplayFlashAppearance()Landroidx/lifecycle/MediatorLiveData;
 
     move-result-object v2
@@ -494,14 +494,14 @@
 
     invoke-direct {v3}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$$ExternalSyntheticLambda4;-><init>()V
 
-    .line 116
+    .line 114
     invoke-virtual {v0, v1, v2, v3}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->displayFlashModeButtonVisible:Landroidx/lifecycle/LiveData;
 
-    .line 135
+    .line 133
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getPhotoLight()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
@@ -516,25 +516,25 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->photoLightModeButtonSrc:Landroidx/lifecycle/LiveData;
 
-    .line 142
+    .line 140
     sget-object v1, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 143
+    .line 141
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getPreviewing()Landroidx/lifecycle/LiveData;
 
     move-result-object v2
 
-    .line 144
+    .line 142
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getRecording()Landroidx/lifecycle/LiveData;
 
     move-result-object v3
 
-    .line 145
+    .line 143
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;->isAnyFnMenuOpened()Landroidx/lifecycle/LiveData;
 
     move-result-object v4
 
-    .line 146
+    .line 144
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;->isFocusMagMenuOpened()Landroidx/lifecycle/LiveData;
 
     move-result-object v5
@@ -543,22 +543,22 @@
 
     invoke-direct {v6}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$$ExternalSyntheticLambda6;-><init>()V
 
-    .line 142
+    .line 140
     invoke-virtual/range {v1 .. v6}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function4;)Landroidx/lifecycle/LiveData;
 
     move-result-object p3
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->isPhotoLightButtonEnabled:Landroidx/lifecycle/LiveData;
 
-    .line 150
+    .line 148
     sget-object p3, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 151
+    .line 149
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getReady()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
-    .line 152
+    .line 150
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getRecording()Landroidx/lifecycle/LiveData;
 
     move-result-object p1
@@ -567,14 +567,14 @@
 
     invoke-direct {v1}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$$ExternalSyntheticLambda7;-><init>()V
 
-    .line 150
+    .line 148
     invoke-virtual {p3, v0, p1, v1}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object p1
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->isPhotoLightButtonClickable:Landroidx/lifecycle/LiveData;
 
-    .line 156
+    .line 154
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getPhotoLightAppearance()Landroidx/lifecycle/MediatorLiveData;
 
     move-result-object p1
@@ -603,7 +603,7 @@
 
     goto :goto_0
 
-    .line 101
+    .line 99
     :cond_0
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$WhenMappings;->$EnumSwitchMapping$1:[I
 
@@ -622,16 +622,16 @@
 
     if-eq p0, p1, :cond_1
 
-    const p0, 0x7f080198
+    const p0, 0x7f0801f4
 
     goto :goto_1
 
     :cond_1
-    const p0, 0x7f080185
+    const p0, 0x7f0801e1
 
     goto :goto_1
 
-    .line 102
+    .line 100
     :cond_2
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -639,12 +639,12 @@
 
     if-eqz p0, :cond_3
 
-    const p0, 0x7f080181
+    const p0, 0x7f0801dd
 
     goto :goto_1
 
     :cond_3
-    const p0, 0x7f080180
+    const p0, 0x7f0801dc
 
     :goto_1
     return p0
@@ -653,7 +653,7 @@
 .method private static final displayFlashModeButtonVisible$lambda$4(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/setting/SettingAppearance;)Z
     .locals 0
 
-    .line 120
+    .line 118
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
 
     move-result p0
@@ -684,7 +684,7 @@
 
     goto :goto_0
 
-    .line 40
+    .line 39
     :cond_0
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$WhenMappings;->$EnumSwitchMapping$0:[I
 
@@ -707,21 +707,21 @@
 
     if-eq p0, p1, :cond_1
 
-    const p0, 0x7f080198
+    const p0, 0x7f0801f4
 
     goto :goto_1
 
     :cond_1
-    const p0, 0x7f08019f
+    const p0, 0x7f0801fb
 
     goto :goto_1
 
     :cond_2
-    const p0, 0x7f080185
+    const p0, 0x7f0801e1
 
     goto :goto_1
 
-    .line 41
+    .line 40
     :cond_3
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -729,12 +729,12 @@
 
     if-eqz p0, :cond_4
 
-    const p0, 0x7f080181
+    const p0, 0x7f0801dd
 
     goto :goto_1
 
     :cond_4
-    const p0, 0x7f080180
+    const p0, 0x7f0801dc
 
     :goto_1
     return p0
@@ -743,7 +743,7 @@
 .method private static final flashModeButtonVisible$lambda$2(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/setting/SettingAppearance;)Z
     .locals 0
 
-    .line 74
+    .line 72
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
 
     move-result p0
@@ -765,12 +765,12 @@
     return p0
 .end method
 
-.method private static final isFlashModeButtonEnabled$lambda$1(ZLjp/co/sony/mc/camera/configuration/parameters/DriveMode;Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljava/lang/Boolean;ZZ)Z
+.method private static final isFlashModeButtonEnabled$lambda$1(ZLjp/co/sony/mc/camera/configuration/parameters/DriveMode;Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;Ljava/lang/Boolean;ZZLjava/lang/Boolean;)Z
     .locals 0
 
     if-eqz p0, :cond_1
 
-    .line 64
+    .line 63
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;->isBurstMode()Z
 
     move-result p0
@@ -783,23 +783,23 @@
 
     if-nez p0, :cond_1
 
-    .line 65
-    invoke-virtual {p3}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isBokehPhoto()Z
+    .line 64
+    invoke-virtual {p6}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p0
 
     if-eqz p0, :cond_0
 
-    invoke-virtual {p4}, Ljava/lang/Boolean;->booleanValue()Z
+    invoke-virtual {p3}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p0
 
     if-nez p0, :cond_1
 
     :cond_0
-    if-nez p5, :cond_1
+    if-nez p4, :cond_1
 
-    if-nez p6, :cond_1
+    if-nez p5, :cond_1
 
     const/4 p0, 0x1
 
@@ -860,7 +860,7 @@
 .method private static final photoLightButtonVisible$lambda$8(Ljp/co/sony/mc/camera/setting/SettingAppearance;)Z
     .locals 1
 
-    .line 157
+    .line 155
     sget-object v0, Ljp/co/sony/mc/camera/setting/SettingAppearance;->INVISIBLE:Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
     if-eq p0, v0, :cond_0
@@ -885,7 +885,7 @@
 
     goto :goto_0
 
-    .line 136
+    .line 134
     :cond_0
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$WhenMappings;->$EnumSwitchMapping$2:[I
 
@@ -904,7 +904,7 @@
 
     if-ne p0, v0, :cond_1
 
-    const p0, 0x7f08019d
+    const p0, 0x7f0801f9
 
     goto :goto_1
 
@@ -916,7 +916,7 @@
     throw p0
 
     :cond_2
-    const p0, 0x7f08019f
+    const p0, 0x7f0801fb
 
     :goto_1
     return p0
@@ -935,7 +935,7 @@
         }
     .end annotation
 
-    .line 97
+    .line 95
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->displayFlashModeButtonSrc:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -952,7 +952,7 @@
         }
     .end annotation
 
-    .line 116
+    .line 114
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->displayFlashModeButtonVisible:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -969,7 +969,7 @@
         }
     .end annotation
 
-    .line 36
+    .line 35
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->flashModeButtonSrc:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -986,7 +986,7 @@
         }
     .end annotation
 
-    .line 70
+    .line 68
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->flashModeButtonVisible:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -995,7 +995,7 @@
 .method public final getOperator()Ljp/co/sony/mc/camera/view/CameraOperator;
     .locals 0
 
-    .line 33
+    .line 32
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     return-object p0
@@ -1012,7 +1012,7 @@
         }
     .end annotation
 
-    .line 156
+    .line 154
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->photoLightButtonVisible:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1029,7 +1029,7 @@
         }
     .end annotation
 
-    .line 135
+    .line 133
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->photoLightModeButtonSrc:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1046,7 +1046,7 @@
         }
     .end annotation
 
-    .line 115
+    .line 113
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->isDisplayFlashModeButtonClickable:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1063,7 +1063,7 @@
         }
     .end annotation
 
-    .line 114
+    .line 112
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->isDisplayFlashModeButtonEnabled:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1080,7 +1080,7 @@
         }
     .end annotation
 
-    .line 69
+    .line 67
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->isFlashModeButtonClickable:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1097,7 +1097,7 @@
         }
     .end annotation
 
-    .line 54
+    .line 53
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->isFlashModeButtonEnabled:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1114,7 +1114,7 @@
         }
     .end annotation
 
-    .line 150
+    .line 148
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->isPhotoLightButtonClickable:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1131,7 +1131,7 @@
         }
     .end annotation
 
-    .line 142
+    .line 140
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->isPhotoLightButtonEnabled:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1140,7 +1140,7 @@
 .method public final setOperator(Ljp/co/sony/mc/camera/view/CameraOperator;)V
     .locals 0
 
-    .line 33
+    .line 32
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     return-void
@@ -1149,7 +1149,7 @@
 .method public final toggleDisplayFlashMode()V
     .locals 11
 
-    .line 124
+    .line 122
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getDisplayFlash()Landroidx/lifecycle/LiveData;
@@ -1164,7 +1164,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 125
+    .line 123
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     if-eqz p0, :cond_1
@@ -1179,7 +1179,7 @@
 
     goto :goto_0
 
-    .line 127
+    .line 125
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
@@ -1193,7 +1193,7 @@
 
     invoke-interface {p0, v0, v1}, Ljp/co/sony/mc/camera/view/CameraOperator;->setSetting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    .line 129
+    .line 127
     :cond_1
     :goto_0
     new-instance p0, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
@@ -1224,7 +1224,7 @@
 
     move-result-object p0
 
-    .line 130
+    .line 128
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->DISPLAY_FLASH:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     const-string v1, "DISPLAY_FLASH"
@@ -1237,7 +1237,7 @@
 
     move-result-object p0
 
-    .line 131
+    .line 129
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->send()V
 
     return-void
@@ -1246,7 +1246,7 @@
 .method public final toggleFlashMode()V
     .locals 11
 
-    .line 78
+    .line 76
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getFlash()Landroidx/lifecycle/LiveData;
@@ -1261,7 +1261,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 79
+    .line 77
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     if-eqz p0, :cond_3
@@ -1276,7 +1276,7 @@
 
     goto :goto_0
 
-    .line 80
+    .line 78
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
@@ -1292,7 +1292,7 @@
 
     if-ne v0, v1, :cond_3
 
-    .line 81
+    .line 79
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
@@ -1315,7 +1315,7 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 82
+    .line 80
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getComputationalMode()Landroidx/lifecycle/LiveData;
@@ -1330,7 +1330,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 83
+    .line 81
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     if-eqz p0, :cond_3
@@ -1345,7 +1345,7 @@
 
     goto :goto_0
 
-    .line 85
+    .line 83
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
@@ -1361,7 +1361,7 @@
 
     goto :goto_0
 
-    .line 88
+    .line 86
     :cond_2
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
@@ -1375,7 +1375,7 @@
 
     invoke-interface {p0, v0, v1}, Ljp/co/sony/mc/camera/view/CameraOperator;->setSetting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    .line 91
+    .line 89
     :cond_3
     :goto_0
     new-instance p0, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
@@ -1406,7 +1406,7 @@
 
     move-result-object p0
 
-    .line 92
+    .line 90
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FLASH:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     const-string v1, "FLASH"
@@ -1419,7 +1419,7 @@
 
     move-result-object p0
 
-    .line 93
+    .line 91
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->send()V
 
     return-void
@@ -1428,7 +1428,7 @@
 .method public final togglePhotoLightMode()V
     .locals 11
 
-    .line 161
+    .line 159
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getPhotoLightAppearance()Landroidx/lifecycle/MediatorLiveData;
@@ -1443,7 +1443,7 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 162
+    .line 160
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getPhotoLight()Landroidx/lifecycle/LiveData;
@@ -1458,7 +1458,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 163
+    .line 161
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     if-eqz p0, :cond_1
@@ -1473,7 +1473,7 @@
 
     goto :goto_0
 
-    .line 165
+    .line 163
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
@@ -1487,7 +1487,7 @@
 
     invoke-interface {p0, v0, v1}, Ljp/co/sony/mc/camera/view/CameraOperator;->setSetting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    .line 168
+    .line 166
     :cond_1
     :goto_0
     new-instance p0, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
@@ -1518,7 +1518,7 @@
 
     move-result-object p0
 
-    .line 169
+    .line 167
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->PHOTO_LIGHT:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     const-string v1, "PHOTO_LIGHT"
@@ -1531,7 +1531,7 @@
 
     move-result-object p0
 
-    .line 170
+    .line 168
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->send()V
 
     return-void

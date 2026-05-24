@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 3549
+    .line 3787
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,6 +31,17 @@
 # virtual methods
 .method public isTempChanged(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -42,15 +53,15 @@
         }
     .end annotation
 
-    .line 3553
+    .line 3791
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 3554
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetZoomRatio(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljava/lang/Float;
+    .line 3792
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetBokeh(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljava/lang/Boolean;
 
     move-result-object p0
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmZoomRatio(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljava/lang/Float;
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmBokeh(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljava/lang/Boolean;
 
     move-result-object p1
 

@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract onPowerConnectionStateChanged(Z)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isConnected"
+        }
+    .end annotation
 .end method

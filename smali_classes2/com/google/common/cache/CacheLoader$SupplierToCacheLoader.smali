@@ -47,6 +47,15 @@
 # direct methods
 .method public constructor <init>(Lcom/google/common/base/Supplier;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "computingSupplier"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -55,10 +64,10 @@
         }
     .end annotation
 
-    .line 221
+    .line 215
     invoke-direct {p0}, Lcom/google/common/cache/CacheLoader;-><init>()V
 
-    .line 222
+    .line 216
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -74,6 +83,15 @@
 # virtual methods
 .method public load(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -82,10 +100,10 @@
         }
     .end annotation
 
-    .line 227
+    .line 221
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 228
+    .line 222
     iget-object p0, p0, Lcom/google/common/cache/CacheLoader$SupplierToCacheLoader;->computingSupplier:Lcom/google/common/base/Supplier;
 
     invoke-interface {p0}, Lcom/google/common/base/Supplier;->get()Ljava/lang/Object;

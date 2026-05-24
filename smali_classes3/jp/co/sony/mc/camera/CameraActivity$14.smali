@@ -26,13 +26,24 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/CameraActivity;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$requestCode"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 2488
+    .line 2447
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$14;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     iput p2, p0, Ljp/co/sony/mc/camera/CameraActivity$14;->val$requestCode:I
@@ -49,7 +60,7 @@
 
     const/4 v0, 0x1
 
-    .line 2491
+    .line 2450
     new-array v0, v0, [Ljava/lang/String;
 
     const/4 v1, 0x0
@@ -60,7 +71,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 2492
+    .line 2451
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraActivity$14;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     iget p0, p0, Ljp/co/sony/mc/camera/CameraActivity$14;->val$requestCode:I

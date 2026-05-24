@@ -23,8 +23,18 @@
 # direct methods
 .method constructor <init>(Ljava/lang/Appendable;Ljava/io/Writer;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x1010
+        }
+        names = {
+            "val$separatingAppendable",
+            "val$delegate"
+        }
+    .end annotation
 
-    .line 1056
+    .line 1119
     iput-object p1, p0, Lcom/google/common/io/BaseEncoding$5;->val$separatingAppendable:Ljava/lang/Appendable;
 
     iput-object p2, p0, Lcom/google/common/io/BaseEncoding$5;->val$delegate:Ljava/io/Writer;
@@ -44,7 +54,7 @@
         }
     .end annotation
 
-    .line 1074
+    .line 1137
     iget-object p0, p0, Lcom/google/common/io/BaseEncoding$5;->val$delegate:Ljava/io/Writer;
 
     invoke-virtual {p0}, Ljava/io/Writer;->close()V
@@ -60,7 +70,7 @@
         }
     .end annotation
 
-    .line 1069
+    .line 1132
     iget-object p0, p0, Lcom/google/common/io/BaseEncoding$5;->val$delegate:Ljava/io/Writer;
 
     invoke-virtual {p0}, Ljava/io/Writer;->flush()V
@@ -70,13 +80,22 @@
 
 .method public write(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 1059
+    .line 1122
     iget-object p0, p0, Lcom/google/common/io/BaseEncoding$5;->val$separatingAppendable:Ljava/lang/Appendable;
 
     int-to-char p1, p1
@@ -88,13 +107,26 @@
 
 .method public write([CII)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "chars",
+            "off",
+            "len"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 1064
+    .line 1127
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V

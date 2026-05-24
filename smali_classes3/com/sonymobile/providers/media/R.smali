@@ -2,26 +2,6 @@
 .super Ljava/lang/Object;
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/sonymobile/providers/media/R$anim;,
-        Lcom/sonymobile/providers/media/R$attr;,
-        Lcom/sonymobile/providers/media/R$bool;,
-        Lcom/sonymobile/providers/media/R$color;,
-        Lcom/sonymobile/providers/media/R$dimen;,
-        Lcom/sonymobile/providers/media/R$drawable;,
-        Lcom/sonymobile/providers/media/R$id;,
-        Lcom/sonymobile/providers/media/R$integer;,
-        Lcom/sonymobile/providers/media/R$interpolator;,
-        Lcom/sonymobile/providers/media/R$layout;,
-        Lcom/sonymobile/providers/media/R$string;,
-        Lcom/sonymobile/providers/media/R$style;,
-        Lcom/sonymobile/providers/media/R$styleable;
-    }
-.end annotation
-
-
 # direct methods
 .method private constructor <init>()V
     .locals 0

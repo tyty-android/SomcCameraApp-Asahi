@@ -101,13 +101,13 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f110386
+    const v3, 0x7f1103d1
 
-    const v4, 0x7f110386
+    const v4, 0x7f1103d1
 
-    const v5, 0x7f080277
+    const v5, 0x7f0802cd
 
-    const v6, 0x7f110385
+    const v6, 0x7f1103d0
 
     const/4 v7, 0x1
 

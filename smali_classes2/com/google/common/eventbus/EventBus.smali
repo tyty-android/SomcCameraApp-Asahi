@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/eventbus/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/eventbus/EventBus$LoggingHandler;
@@ -31,7 +34,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 98
+    .line 153
     const-class v0, Lcom/google/common/eventbus/EventBus;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -50,7 +53,7 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 109
+    .line 164
     const-string v0, "default"
 
     invoke-direct {p0, v0}, Lcom/google/common/eventbus/EventBus;-><init>(Ljava/lang/String;)V
@@ -60,18 +63,24 @@
 
 .method public constructor <init>(Lcom/google/common/eventbus/SubscriberExceptionHandler;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "exceptionHandler"
+        }
+    .end annotation
 
-    .line 135
+    .line 185
     invoke-static {}, Lcom/google/common/util/concurrent/MoreExecutors;->directExecutor()Ljava/util/concurrent/Executor;
 
     move-result-object v0
 
-    .line 136
     invoke-static {}, Lcom/google/common/eventbus/Dispatcher;->perThreadDispatchQueue()Lcom/google/common/eventbus/Dispatcher;
 
     move-result-object v1
 
-    .line 133
     const-string v2, "default"
 
     invoke-direct {p0, v2, v0, v1, p1}, Lcom/google/common/eventbus/EventBus;-><init>(Ljava/lang/String;Ljava/util/concurrent/Executor;Lcom/google/common/eventbus/Dispatcher;Lcom/google/common/eventbus/SubscriberExceptionHandler;)V
@@ -81,20 +90,27 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "identifier"
+        }
+    .end annotation
 
-    .line 121
+    .line 175
     invoke-static {}, Lcom/google/common/util/concurrent/MoreExecutors;->directExecutor()Ljava/util/concurrent/Executor;
 
     move-result-object v0
 
-    .line 122
     invoke-static {}, Lcom/google/common/eventbus/Dispatcher;->perThreadDispatchQueue()Lcom/google/common/eventbus/Dispatcher;
 
     move-result-object v1
 
     sget-object v2, Lcom/google/common/eventbus/EventBus$LoggingHandler;->INSTANCE:Lcom/google/common/eventbus/EventBus$LoggingHandler;
 
-    .line 119
+    .line 174
     invoke-direct {p0, p1, v0, v1, v2}, Lcom/google/common/eventbus/EventBus;-><init>(Ljava/lang/String;Ljava/util/concurrent/Executor;Lcom/google/common/eventbus/Dispatcher;Lcom/google/common/eventbus/SubscriberExceptionHandler;)V
 
     return-void
@@ -102,18 +118,32 @@
 
 .method constructor <init>(Ljava/lang/String;Ljava/util/concurrent/Executor;Lcom/google/common/eventbus/Dispatcher;Lcom/google/common/eventbus/SubscriberExceptionHandler;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "identifier",
+            "executor",
+            "dispatcher",
+            "exceptionHandler"
+        }
+    .end annotation
 
-    .line 144
+    .line 192
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 104
+    .line 159
     new-instance v0, Lcom/google/common/eventbus/SubscriberRegistry;
 
     invoke-direct {v0, p0}, Lcom/google/common/eventbus/SubscriberRegistry;-><init>(Lcom/google/common/eventbus/EventBus;)V
 
     iput-object v0, p0, Lcom/google/common/eventbus/EventBus;->subscribers:Lcom/google/common/eventbus/SubscriberRegistry;
 
-    .line 145
+    .line 193
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -122,7 +152,7 @@
 
     iput-object p1, p0, Lcom/google/common/eventbus/EventBus;->identifier:Ljava/lang/String;
 
-    .line 146
+    .line 194
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -131,7 +161,7 @@
 
     iput-object p1, p0, Lcom/google/common/eventbus/EventBus;->executor:Ljava/util/concurrent/Executor;
 
-    .line 147
+    .line 195
     invoke-static {p3}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -140,7 +170,7 @@
 
     iput-object p1, p0, Lcom/google/common/eventbus/EventBus;->dispatcher:Lcom/google/common/eventbus/Dispatcher;
 
-    .line 148
+    .line 196
     invoke-static {p4}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -157,7 +187,7 @@
 .method final executor()Ljava/util/concurrent/Executor;
     .locals 0
 
-    .line 162
+    .line 210
     iget-object p0, p0, Lcom/google/common/eventbus/EventBus;->executor:Ljava/util/concurrent/Executor;
 
     return-object p0
@@ -165,14 +195,24 @@
 
 .method handleSubscriberException(Ljava/lang/Throwable;Lcom/google/common/eventbus/SubscriberExceptionContext;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "e",
+            "context"
+        }
+    .end annotation
 
-    .line 167
+    .line 215
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 168
+    .line 216
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 170
+    .line 218
     :try_start_0
     iget-object p0, p0, Lcom/google/common/eventbus/EventBus;->exceptionHandler:Lcom/google/common/eventbus/SubscriberExceptionHandler;
 
@@ -185,7 +225,7 @@
     :catchall_0
     move-exception p0
 
-    .line 173
+    .line 221
     sget-object p2, Lcom/google/common/eventbus/EventBus;->logger:Ljava/util/logging/Logger;
 
     sget-object v0, Ljava/util/logging/Level;->SEVERE:Ljava/util/logging/Level;
@@ -198,12 +238,12 @@
 
     move-result-object p1
 
-    .line 175
+    .line 223
     invoke-static {v1, v2, p1}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 173
+    .line 221
     invoke-virtual {p2, v0, p1, p0}, Ljava/util/logging/Logger;->log(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_0
@@ -213,7 +253,7 @@
 .method public final identifier()Ljava/lang/String;
     .locals 0
 
-    .line 157
+    .line 205
     iget-object p0, p0, Lcom/google/common/eventbus/EventBus;->identifier:Ljava/lang/String;
 
     return-object p0
@@ -221,35 +261,43 @@
 
 .method public post(Ljava/lang/Object;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
 
-    .line 210
+    .line 258
     iget-object v0, p0, Lcom/google/common/eventbus/EventBus;->subscribers:Lcom/google/common/eventbus/SubscriberRegistry;
 
     invoke-virtual {v0, p1}, Lcom/google/common/eventbus/SubscriberRegistry;->getSubscribers(Ljava/lang/Object;)Ljava/util/Iterator;
 
     move-result-object v0
 
-    .line 211
+    .line 259
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 212
+    .line 260
     iget-object p0, p0, Lcom/google/common/eventbus/EventBus;->dispatcher:Lcom/google/common/eventbus/Dispatcher;
 
     invoke-virtual {p0, p1, v0}, Lcom/google/common/eventbus/Dispatcher;->dispatch(Ljava/lang/Object;Ljava/util/Iterator;)V
 
     goto :goto_0
 
-    .line 213
+    .line 261
     :cond_0
     instance-of v0, p1, Lcom/google/common/eventbus/DeadEvent;
 
     if-nez v0, :cond_1
 
-    .line 215
+    .line 263
     new-instance v0, Lcom/google/common/eventbus/DeadEvent;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/eventbus/DeadEvent;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
@@ -263,8 +311,16 @@
 
 .method public register(Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 186
+    .line 234
     iget-object p0, p0, Lcom/google/common/eventbus/EventBus;->subscribers:Lcom/google/common/eventbus/SubscriberRegistry;
 
     invoke-virtual {p0, p1}, Lcom/google/common/eventbus/SubscriberRegistry;->register(Ljava/lang/Object;)V
@@ -275,7 +331,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 221
+    .line 269
     invoke-static {p0}, Lcom/google/common/base/MoreObjects;->toStringHelper(Ljava/lang/Object;)Lcom/google/common/base/MoreObjects$ToStringHelper;
 
     move-result-object v0
@@ -295,8 +351,16 @@
 
 .method public unregister(Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 196
+    .line 244
     iget-object p0, p0, Lcom/google/common/eventbus/EventBus;->subscribers:Lcom/google/common/eventbus/SubscriberRegistry;
 
     invoke-virtual {p0, p1}, Lcom/google/common/eventbus/SubscriberRegistry;->unregister(Ljava/lang/Object;)V

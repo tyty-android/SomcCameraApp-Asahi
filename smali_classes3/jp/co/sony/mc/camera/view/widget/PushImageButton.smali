@@ -21,6 +21,14 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -32,6 +40,16 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "attrs"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -43,6 +61,18 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "attrs",
+            "defStyleAttr"
+        }
+    .end annotation
 
     .line 59
     invoke-direct {p0, p1, p2, p3}, Landroidx/appcompat/widget/AppCompatImageButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -54,6 +84,14 @@
 # virtual methods
 .method protected dispatchSetPressed(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "pressed"
+        }
+    .end annotation
 
     .line 65
     invoke-super {p0, p1}, Landroidx/appcompat/widget/AppCompatImageButton;->dispatchSetPressed(Z)V
@@ -85,6 +123,14 @@
 
 .method public setOnPressListener(Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnPressListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 82
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/PushImageButton;->mOnPressListener:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnPressListener;
@@ -94,6 +140,14 @@
 
 .method public setOnReleaseListener(Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnReleaseListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 91
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/PushImageButton;->mOnReleaseListener:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnReleaseListener;

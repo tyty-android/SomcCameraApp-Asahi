@@ -82,6 +82,7 @@ Teile saadetakse teadaandeid ja dialooge. Valige kõigil Seo ja seejärel sidumi
     <string name="call_notification_incoming_text">Sissetulev kõne</string>
     <string name="call_notification_ongoing_text">Käimasolev kõne</string>
     <string name="call_notification_screening_text">Sissetuleva kõne filtreerimine</string>
+    <string name="camera_string_saving_process_hint_txt">Salvestamine... Oodake, kuni salvestamine on lõppenud.</string>
     <string name="camera_strings_accept_privacy_policy_txt">Olete privaatsuspoliitikaga varem nõustunud, kuid saate alati oma meelt muuta.</string>
     <string name="camera_strings_accessibility_48_mega_pixel_txt">48 megapikslit</string>
     <string name="camera_strings_accessibility_adjust_bokeh_txt">Tausta udususe seadistamine</string>
@@ -92,6 +93,27 @@ Teile saadetakse teadaandeid ja dialooge. Valige kõigil Seo ja seejärel sidumi
     <string name="camera_strings_accessibility_adjust_framing_size_smaller_txt">Kaadri suuruse vähendamine</string>
     <string name="camera_strings_accessibility_adjust_framing_size_txt">Kaadri suuruse reguleerimine</string>
     <string name="camera_strings_accessibility_adjust_shutter_speed_txt">Säriaeg</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_look_menu_txt">Sulgemisnupp. Sulgeb ilmemenüü.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_menu_txt">Sulge kohandatud menüü</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_suggests_txt">Sulge soovitatud kohandused</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_menu_txt">Praegu rakendatud Kohandatud välimus. Avab kohandamise menüü.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_txt">Kohandatud välimus. Rakendab kohandatud menüüs registreeritud välimuse, heleduse ja värvi sätteid.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_tab_txt">Kohandatud vahekaart. Rakendab kohandatud menüüs registreeritud välimuse, heleduse ja värvi sätteid.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_button_txt">Kohandage nuppu. Avab menüü, mis võimaldab teil soovitatud kohanduste rakendamisel täiendavaid kohandusi teha.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_param_txt">%1$s on määratud väärtusele %2$s</string>
+    <string name="camera_strings_accessibility_ai_suggestion_first_time_txt">AI kaamera assistent. See funktsioon soovitab stseenile vastavaid sätteid, näiteks värvi.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_four_of_some_suggests_txt">Neljas soovitatud kohandus</string>
+    <string name="camera_strings_accessibility_ai_suggestion_look_menu_txt">"%1$s
+Avab menüü Loominguline välimus"</string>
+    <string name="camera_strings_accessibility_ai_suggestion_new_suggest_txt">Soovitati uusi kohandusi</string>
+    <string name="camera_strings_accessibility_ai_suggestion_one_of_some_suggests_txt">Esimene soovitatud kohandus</string>
+    <string name="camera_strings_accessibility_ai_suggestion_open_suggests_txt">Laienda soovitatud kohandusi</string>
+    <string name="camera_strings_accessibility_ai_suggestion_reset_to_default_txt">Lähtesta eelsoovituste sätetele</string>
+    <string name="camera_strings_accessibility_ai_suggestion_selected_suggest_txt">Rakendatakse need soovitatud kohandused</string>
+    <string name="camera_strings_accessibility_ai_suggestion_suggest_lens_txt">Soovitatud objektiivi nupp. Soovitatakse järgmist: %1$sx.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_surface_of_some_suggests_txt">Soovitatud kohandused. Soovitatud kohanduste kuvamiseks nipsake paremalt vasakule.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_three_of_some_suggests_txt">Kolmas soovitatud kohandus</string>
+    <string name="camera_strings_accessibility_ai_suggestion_two_of_some_suggests_txt">Teine soovitatud kohandus</string>
     <string name="camera_strings_accessibility_arrow_left_button_txt">Vasak nool</string>
     <string name="camera_strings_accessibility_arrow_right_button_txt">Parem nool</string>
     <string name="camera_strings_accessibility_audio_level_txt">Helitaseme mõõtur</string>
@@ -246,6 +268,45 @@ Teile saadetakse teadaandeid ja dialooge. Valige kõigil Seo ja seejärel sidumi
     <string name="camera_strings_advanced_setting_geo_tag_title_txt">Salvesta asukoht</string>
     <string name="camera_strings_ai_face_restore_description_txt">Näojoonte selgemaks muutmiseks saate kasutada pildistamiseks näo teravustamist</string>
     <string name="camera_strings_ai_face_restore_txt">Nägude teravustamine</string>
+    <string name="camera_strings_ai_suggestion_introduce_hint_text_txt">[Näpunäide] AI kaamera assistent</string>
+    <string name="camera_strings_aisuggestion_box_name1_txt">Kohandat.</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_message_txt">Registreerige praegused välimuse, heleduse ja värvi sätted jaotises Kohandatud.</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_overwrite_message_txt">Välimus on juba jaotises Kohandatud registreeritud. Kas üle kirjutada?</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_title_txt">Registreeruge kohandatud välimusega</string>
+    <string name="camera_strings_aisuggestion_box_title_txt">Kohandat.</string>
+    <string name="camera_strings_aisuggestion_custom_params_contrast_txt">Kontrast</string>
+    <string name="camera_strings_aisuggestion_custom_params_ev_txt">Heledus</string>
+    <string name="camera_strings_aisuggestion_custom_params_register_txt">Registreeri</string>
+    <string name="camera_strings_aisuggestion_custom_params_saturation_txt">Küllastat.</string>
+    <string name="camera_strings_aisuggestion_custom_params_title_txt">Heledus/värv</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbab_txt">Soojus</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbgm_txt">Tooni</string>
+    <string name="camera_strings_aisuggestion_customlook_register_instruction_txt">Saate igal ajal vahekaardilt Kohandatud välimus registreeritud kohandatud välimusi kasutada</string>
+    <string name="camera_strings_aisuggestion_description_txt">"Tehisintellekt tuvastab stseeni automaatselt ja soovitab paremas alanurgas olevas minieelvaates optimeeritud kohandusi.
+Kui puudutate seda minieelvaadet, reguleeritakse järgmisi sätteid automaatselt stseenile vastavaks:
+ilme, säriaeg, valge tasakaal, küllastus, kontrast ja tausta udusus
+*See funktsioon on saadaval ainult fotorežiimis.
+*Kui te alustate katikunuppu all hoides video salvestamist, siis küllastuse, kontrasti ja tausta udususe efekti sätteid ei rakendata."</string>
+    <string name="camera_strings_aisuggestion_guide_description1_txt">Tehisintellekti tuvastatud stseenil põhinevad soovituslikud kohandused kuvatakse paremas alanurgas (horisontaalselt hoides üleval paremas) asuvas minieelvaates. Saate minieelvaadet puudutades rakendada kõiki neid kohandusi korraga.</string>
+    <string name="camera_strings_aisuggestion_guide_description2_txt">Sõltuvalt stseenist võidakse soovitada ka konkreetset objektiivi seadistust. Sellisel juhul saate muuta vastavalt oma eelistustele soovitatud objektiivi seadistust.</string>
+    <string name="camera_strings_aisuggestion_guide_description3_txt">"Saate paremas alanurgas (horisontaalselt hoides üleval paremas) asuval minieelvaatel vasakule nipsates kuvada alternatiivseid kohandussoovitusi.
+Valitud soovitus salvestatakse eelistatud korrigeerimisena ja see lisatakse soovitustele järgmisel korral, kui sarnases stseenis pildistate."</string>
+    <string name="camera_strings_aisuggestion_guide_description4_txt">Kui soovite soovitused peita, saate puudutada nuppu [>]. Kui uus stseen tuvastatakse, süttib nupp [&lt;], mis näitab, et on olemas uusi kohandamissoovitusi. Soovituste uuesti kontrollimiseks puudutage nuppu [&lt;].</string>
+    <string name="camera_strings_aisuggestion_guide_description5_txt">Kui puudutate pärast soovitatud kohanduste valimist reguleerimisnuppu, saate sätteid, näiteks heledust ja värvi, veelgi kohandada. Teie muudatused salvestatakse seadmesse ja rakendatakse soovitatud muudatustele järgmisel korral, kui sarnane stseen tuvastatakse.</string>
+    <string name="camera_strings_aisuggestion_guide_description6_txt">Soovitatud ja teie enda tehtud kohandused saab salvestada, et saaksite need igal ajal laadida ja teha fotosid samade sätetega. Kohandatud ilme lisamiseks olemasolevate ilmete loendisse puudutage nuppu [Registreeri].</string>
+    <string name="camera_strings_aisuggestion_guide_entry_txt">Kuidas kasutada AI Camera Assistanti</string>
+    <string name="camera_strings_aisuggestion_guide_title_txt">AI kaamera assistendi juhend</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_message_txt">Kas lähtestada kõik sätted vaikeväärtustele, sh värv, heledus ja teie eelistatud kohandused?</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_title_txt">Parameetrite lähtestamine</string>
+    <string name="camera_strings_aisuggestion_params_reset_txt">Parameetrite lähtestamine</string>
+    <string name="camera_strings_aisuggestion_permitted_item_bokeh_txt">Bokeh</string>
+    <string name="camera_strings_aisuggestion_permitted_item_lens_txt">Objektiiv</string>
+    <string name="camera_strings_aisuggestion_permitted_item_title_txt">Soovitustesse lisamine</string>
+    <string name="camera_strings_aisuggestion_recommend_lens_ratio_txt">Soovitatakse objektiivi %1$s</string>
+    <string name="camera_strings_aisuggestion_return_to_default_txt">Ennista</string>
+    <string name="camera_strings_aisuggestion_simple_video_instruction_txt">Pika vajutusega video salvestamisel võivad küllastuse, kontrasti ja tausta udususe efekti sätted erineda.</string>
+    <string name="camera_strings_aisuggestion_txt">AI kaamera assistent</string>
+    <string name="camera_strings_aisuggestion_use_aissuggestion_txt">AI kaamera assistent</string>
     <string name="camera_strings_anonymous_analytics_txt">Anonüümne statistika</string>
     <string name="camera_strings_application_name">Kaamera</string>
     <string name="camera_strings_application_name_google_lens_txt">Google Lens</string>
@@ -421,6 +482,7 @@ Turve:
     <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Wi-Fi ühendust ei saa luua</string>
     <string name="camera_strings_dialog_user_data_collection_txt">Kui te allpool nõustute, kogub Sony teie &lt;b>&lt;a href=#personal-data>isikuandmeid&lt;/a>&lt;/b> kohandatud tugiteenuste osutamiseks ning seadmete ja teenuste parendamiseks. Sony töötleb teie andmeid vastavalt oma &lt;b>&lt;a href=https://www.sonymobile.com/privacy/>privaatsuspoliitikale&lt;/a>&lt;/b>.</string>
     <string name="camera_strings_dialog_video_hdr_hlg_supported_short_description_txt">Mõned seadmed/teenused ei pruugi olla võimelised taasesitama HDR-sisu algset värvi ja heledust. Kasutage HDR-sisu nautimiseks seadmeid/teenuseid, mis HDR-i toetavad.</string>
+    <string name="camera_strings_digital_tripod_hint_edge_txt">Kompositsioon on muutunud. Suunake kaamera algse objekti poole.</string>
     <string name="camera_strings_digital_zoom_type_description_txt">"Valige digitaalse suumi seade.
 
 Tavaline digitaalne suum: suum pildisensori andmetel põhineva digitaalse töötluse abil.
@@ -484,6 +546,7 @@ Selle muutmiseks peatage voogedastus ja avage Facebooki rakendus ning muutke kaa
     <string name="camera_strings_fast_capturing_screen_locked_settings_txt">Seade kuvamiseks avage ekraan.</string>
     <string name="camera_strings_fast_capturing_screen_locked_streaming_txt">Voogedastusega alustamiseks avage ekraan.</string>
     <string name="camera_strings_fast_capturing_screen_locked_title_txt">Ekraan on lukus</string>
+    <string name="camera_strings_feature_creative_look_custom_description_txt">Saate registreerida välimusi ja heleduse/värvi sätteid.</string>
     <string name="camera_strings_feature_creative_look_description_txt">"Piltide (fotode või filmide) viimistluse saate valida, tehes valiku „välimus“.
 
 Loominguline välimus pakub 6 eelseadistatud välimust. Igaüks neist on optimeeritud erineva värvitooni, küllastuse, kontrasti, teravuse, heleduse ja muude pildielementide kombinatsiooniga, nii et saate seadistada pilditöötluse nende elementide ideaalse tasakaaluga."</string>
@@ -567,6 +630,7 @@ Puudutage obj., mida soovite jälgida."</string>
     <string name="camera_strings_framing_orientation_description_txt">"Saate valida objekti kärpimise kas horisontaalses või vertikaalses raamis.
 Kärpimise asendi muutmiseks samaks seadme orientatsiooniga määrake valik [Automaatne]."</string>
     <string name="camera_strings_framing_select_subject_to_track_txt">Puudutage objekti, mille asukoha soovite lukustada</string>
+    <string name="camera_strings_framing_setting_guide_title_txt">Teave automaatse kaadri kohta</string>
     <string name="camera_strings_framing_setting_orientation_landscape_txt">Horisontaalne</string>
     <string name="camera_strings_framing_setting_orientation_portrait_txt">Vertikaalne</string>
     <string name="camera_strings_framing_setting_orientation_title_txt">Raami asend</string>
@@ -574,6 +638,7 @@ Kärpimise asendi muutmiseks samaks seadme orientatsiooniga määrake valik [Aut
 Kärbitud salvestised salvestatakse täis-HD eraldusvõimega. Kärpimata salvestised salvestatakse 4K-eraldusvõimega."</string>
     <string name="camera_strings_framing_setting_save_original_video_off_txt">Täis salvestusekraan: väljas</string>
     <string name="camera_strings_framing_setting_save_original_video_title_txt">Täis salvestusekraan</string>
+    <string name="camera_strings_framing_setting_snapshot_description_txt">Olenemata sellest, kas [Täis salvestusekraan] on sisse või välja lülitatud, salvestatakse video tegemise ajal tehtud hetktõmmised täisekraanil.</string>
     <string name="camera_strings_geotagging_description_txt">Salvestage fotod ja videod asukohtadega, kus need tehti.</string>
     <string name="camera_strings_geotagging_txt">Salvesta asukoht</string>
     <string name="camera_strings_gimbal_mode_tab_label">AI kaameratöö</string>
@@ -592,6 +657,7 @@ See võimaldab salvestada stabiilset videot isegi ebastabiilsetes olukordades, n
     <string name="camera_strings_gimbal_setting_assist_method_locking_hint_txt">Objekti asukoha lukustus: käsitsi</string>
     <string name="camera_strings_gimbal_setting_assist_method_locking_txt">Käsitsi</string>
     <string name="camera_strings_gimbal_setting_assist_method_title_txt">Objekti asuk. lukustus</string>
+    <string name="camera_strings_gimbal_setting_guide_title_txt">Teave AI kaameratöö kohta</string>
     <string name="camera_strings_gridline_description_txt">Saate valida, kas kuvada ruudustiku jooned piltide koostamisel</string>
     <string name="camera_strings_gridline_txt">Ruudujooned</string>
     <string name="camera_strings_hand_shutter_description_updated_txt">Taimeri lugemist saate alustada, kui pöörate oma peopesa esikaamera poole. Hõlpsamaks tuvastamiseks sirutage sõrmed üles.</string>
@@ -727,6 +793,7 @@ Video salvestamise ajal tehtud hetktõmmised kasutavad alati standardset dünaam
     <string name="camera_strings_notification_channel_title_saving_process_txt">Salvestamine</string>
     <string name="camera_strings_notification_text_saving_in_progress_txt">Odake, kuni salvestamine on lõpetatud</string>
     <string name="camera_strings_notification_title_saving_in_progress_txt">Salvestamine on pooleli</string>
+    <string name="camera_strings_notify_saving_process_cannot_launch_app_by_hw_shutter_txt">Salvestamise ajal ei pruugi katikunupu vajutamine kaamerat käivitada</string>
     <string name="camera_strings_ok_txt">OK</string>
     <string name="camera_strings_peaking_color_blue_txt">Sinine</string>
     <string name="camera_strings_peaking_color_red_txt">Punane</string>
@@ -735,6 +802,7 @@ Video salvestamise ajal tehtud hetktõmmised kasutavad alati standardset dünaam
     <string name="camera_strings_peaking_color_yellow_txt">Kollane</string>
     <string name="camera_strings_peaking_txt">Esiletoomine</string>
     <string name="camera_strings_personal_data_txt">Isiklikud andmed</string>
+    <string name="camera_strings_photopro_setting_guide_title_txt">Teave Pro foto kohta</string>
     <string name="camera_strings_privacy_policy_txt">Privaatsuspoliitika</string>
     <string name="camera_strings_pro_tips_computational_photo_description_txt">"Isegi P-režiimis tuvastab kaamera automaatselt pildistamisolud ja teeb kauneid automaatvõtteid, vähendades hägusust, müra, üle- ja alasäritust.
 Kui te seda ei kasuta, saate selle Fn-nuppu kasutades või MENÜÜ kaudu välja lülitada."</string>
@@ -965,6 +1033,7 @@ Kui jätkate SD-kaardi mäluruumina kasutamist, kasutage kindlasti kiiret SD-kaa
     <string name="camera_strings_video_stabilization_description_sub_txt">Märkus: kõrge kvaliteedi valimine võib seoses seadme temperatuuri tõusuga salvestamise kestust lühendada.</string>
     <string name="camera_strings_video_stabilization_description_txt">Xperial on ainulaadne hübriidstabiliseerimissüsteem nimega Optical SteadyShot, mis kombineerib samaaegselt nii optilise kui ka elektroonilise pildistabilisaatori. See võimaldab värisemisvabu ja sujuvaid videoid ka liikvel olles.</string>
     <string name="camera_strings_video_stabilization_high_quality_images_txt">Kõrge</string>
+    <string name="camera_strings_videopro_setting_guide_title_txt">Teave Pro video kohta</string>
     <string name="camera_strings_volume_distortion_correction_description_txt">Parandab ekraani serva lähedal olevate nägude moonutused, kui kasutate ülilaia objektiivi. Selle tulemusena võib taust moonduda või vaade kitseneda.</string>
     <string name="camera_strings_volume_distortion_correction_front_description_txt">Parandab ekraani serva lähedal olevate nägude moonutused. See võib põhjustada tausta moonutamist või vaate kitsenemist.</string>
     <string name="camera_strings_volume_distortion_correction_txt">Näo moonutuste korrigeerimine</string>
@@ -1042,8 +1111,25 @@ Võrguühendust pole."</string>
     <string name="clear_text_end_icon_content_description">Kustuta tekst</string>
     <string name="close_drawer">Sule navigeerimismenüü</string>
     <string name="close_sheet">Sule leht</string>
+    <string name="common_google_play_services_enable_button">Luba</string>
+    <string name="common_google_play_services_enable_text">Rakendus %1$s töötab ainult siis, kui lubate Google Play teenused.</string>
+    <string name="common_google_play_services_enable_title">Google Play teenuste lubamine</string>
+    <string name="common_google_play_services_install_button">Installi</string>
+    <string name="common_google_play_services_install_text">Rakendus %1$s töötab ainult koos Google Play teenustega, mida teie seadmes pole.</string>
+    <string name="common_google_play_services_install_title">Google Play teenuste hankimine</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play teenuste saadavalolek</string>
+    <string name="common_google_play_services_notification_ticker">Viga Google Play teenustes</string>
+    <string name="common_google_play_services_unknown_issue">Rakendusel %1$s on probleeme Google Play teenustega. Proovige uuesti.</string>
+    <string name="common_google_play_services_unsupported_text">Rakendus %1$s töötab ainult koos Google Play teenustega, mida teie seadmes ei toetata.</string>
+    <string name="common_google_play_services_update_button">Värskenda</string>
+    <string name="common_google_play_services_update_text">Rakenduse %1$s töötamiseks peate värskendama Google Play teenuseid.</string>
+    <string name="common_google_play_services_update_title">Google Play teenuste värskendamine</string>
+    <string name="common_google_play_services_updating_text">Rakendus %1$s töötab ainult koos Google Play teenustega, mida praegu värskendatakse.</string>
+    <string name="common_google_play_services_wear_update_text">Vajalik on Google Play teenuste uus versioon. See värskendab end peagi.</string>
+    <string name="common_open_on_phone">Ava telefonis</string>
+    <string name="common_signin_button_text">Logi sisse</string>
+    <string name="common_signin_button_text_long">"Logi sisse Google'i kontoga"</string>
     <string name="copy">Kopeerimine</string>
-    <string name="copy_toast_msg">Link kopeeriti lõikelauale</string>
     <string name="default_error_message">Sobimatu sisend</string>
     <string name="default_popup_window_title">Hüpikaken</string>
     <string name="dropdown_menu">Rippmenüü</string>
@@ -1054,9 +1140,6 @@ Võrguühendust pole."</string>
     <string name="external_display_connected_description_txt">Pildinäidikut saate kontrollida Vlog Monitorist</string>
     <string name="external_display_connected_title_txt">Vlog Monitor on ühendatud</string>
     <string name="external_display_note_about_external_mic_txt">Märkus: Välise mikrofoni kasutamiseks ühendage see enne salvestamist Vlog Monitoriga. Kui ühendate selle pärast, peate Vlog Monitori uuesti ühendama.</string>
-    <string name="fallback_menu_item_copy_link">Kopeeri link</string>
-    <string name="fallback_menu_item_open_in_browser">Ava brauseris</string>
-    <string name="fallback_menu_item_share_link">Jaga linki</string>
     <string name="icon_content_description">Dialoogi ikoon</string>
     <string name="in_progress">Pooleli</string>
     <string name="indeterminate">Osaliselt märgitud</string>

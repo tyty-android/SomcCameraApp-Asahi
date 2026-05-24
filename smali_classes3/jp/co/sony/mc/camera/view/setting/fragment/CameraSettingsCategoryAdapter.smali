@@ -55,6 +55,19 @@
 
 .method constructor <init>(Landroid/content/Context;Ljava/util/List;Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsCategoryAdapter$OnCategoryItemClickListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "settingItems",
+            "listener"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -99,6 +112,16 @@
 
 .method public bridge synthetic onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1010
+        }
+        names = {
+            "holder",
+            "position"
+        }
+    .end annotation
 
     .line 30
     check-cast p1, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsCategoryAdapter$CategoryViewHolder;
@@ -110,6 +133,16 @@
 
 .method public onBindViewHolder(Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsCategoryAdapter$CategoryViewHolder;I)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x10
+        }
+        names = {
+            "holder",
+            "position"
+        }
+    .end annotation
 
     .line 83
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsCategoryAdapter;->mCategoryItems:Ljava/util/List;
@@ -211,6 +244,16 @@
 
 .method public bridge synthetic onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "parent",
+            "viewType"
+        }
+    .end annotation
 
     .line 30
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsCategoryAdapter;->onCreateViewHolder(Landroid/view/ViewGroup;I)Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsCategoryAdapter$CategoryViewHolder;
@@ -222,6 +265,16 @@
 
 .method public onCreateViewHolder(Landroid/view/ViewGroup;I)Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsCategoryAdapter$CategoryViewHolder;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "parent",
+            "viewType"
+        }
+    .end annotation
 
     .line 63
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsCategoryAdapter;->mContext:Landroid/content/Context;
@@ -230,7 +283,7 @@
 
     move-result-object p2
 
-    const v0, 0x7f0c00bb
+    const v0, 0x7f0c00b2
 
     const/4 v1, 0x0
 
@@ -308,6 +361,15 @@
 
 .method setCategoryItems(Ljava/util/List;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "settingItems"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

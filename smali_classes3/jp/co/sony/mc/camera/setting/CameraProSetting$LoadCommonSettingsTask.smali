@@ -34,13 +34,23 @@
 
 .method constructor <init>(Ljp/co/sony/mc/camera/setting/CameraProSetting;Ljava/util/concurrent/ExecutorService;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "service"
+        }
+    .end annotation
 
-    .line 947
+    .line 932
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting$LoadCommonSettingsTask;->this$0:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 948
+    .line 933
     iput-object p2, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting$LoadCommonSettingsTask;->mService:Ljava/util/concurrent/ExecutorService;
 
     return-void
@@ -49,7 +59,7 @@
 .method private synthetic lambda$call$0()V
     .locals 0
 
-    .line 956
+    .line 941
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting$LoadCommonSettingsTask;->mService:Ljava/util/concurrent/ExecutorService;
 
     invoke-interface {p0}, Ljava/util/concurrent/ExecutorService;->shutdown()V
@@ -67,7 +77,7 @@
         }
     .end annotation
 
-    .line 944
+    .line 929
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/setting/CameraProSetting$LoadCommonSettingsTask;->call()Ljava/lang/String;
 
     move-result-object p0
@@ -78,7 +88,7 @@
 .method public call()Ljava/lang/String;
     .locals 2
 
-    .line 953
+    .line 938
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting$LoadCommonSettingsTask;->this$0:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->-$$Nest$fgetmCurrentSettingsLock(Ljp/co/sony/mc/camera/setting/CameraProSetting;)Ljava/lang/Object;
@@ -87,7 +97,7 @@
 
     monitor-enter v0
 
-    .line 954
+    .line 939
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting$LoadCommonSettingsTask;->this$0:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
@@ -97,12 +107,12 @@
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->loadAll()V
 
-    .line 955
+    .line 940
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 956
+    .line 941
     new-instance v0, Ljava/lang/Thread;
 
     new-instance v1, Ljp/co/sony/mc/camera/setting/CameraProSetting$LoadCommonSettingsTask$$ExternalSyntheticLambda0;
@@ -120,7 +130,7 @@
     :catchall_0
     move-exception p0
 
-    .line 955
+    .line 940
     :try_start_1
     monitor-exit v0
     :try_end_1

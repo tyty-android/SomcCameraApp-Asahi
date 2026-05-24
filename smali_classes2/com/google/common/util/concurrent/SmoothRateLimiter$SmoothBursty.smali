@@ -21,13 +21,23 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;D)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "stopwatch",
+            "maxBurstSeconds"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 281
+    .line 284
     invoke-direct {p0, p1, v0}, Lcom/google/common/util/concurrent/SmoothRateLimiter;-><init>(Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;Lcom/google/common/util/concurrent/SmoothRateLimiter$1;)V
 
-    .line 282
+    .line 285
     iput-wide p2, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothBursty;->maxBurstSeconds:D
 
     return-void
@@ -38,7 +48,7 @@
 .method coolDownIntervalMicros()D
     .locals 2
 
-    .line 307
+    .line 310
     iget-wide v0, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothBursty;->stableIntervalMicros:D
 
     return-wide v0
@@ -46,11 +56,21 @@
 
 .method doSetRate(DD)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "permitsPerSecond",
+            "stableIntervalMicros"
+        }
+    .end annotation
 
-    .line 287
+    .line 290
     iget-wide p3, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothBursty;->maxPermits:D
 
-    .line 288
+    .line 291
     iget-wide v0, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothBursty;->maxBurstSeconds:D
 
     mul-double/2addr v0, p1
@@ -63,7 +83,7 @@
 
     if-nez p1, :cond_0
 
-    .line 291
+    .line 294
     iget-wide p1, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothBursty;->maxPermits:D
 
     iput-wide p1, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothBursty;->storedPermits:D
@@ -79,7 +99,7 @@
 
     goto :goto_0
 
-    .line 296
+    .line 299
     :cond_1
     iget-wide p1, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothBursty;->storedPermits:D
 
@@ -98,6 +118,16 @@
 
 .method storedPermitsToWaitTime(DD)J
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "storedPermits",
+            "permitsToTake"
+        }
+    .end annotation
 
     const-wide/16 p0, 0x0
 

@@ -16,4 +16,18 @@
 
 # virtual methods
 .method public abstract onFaceDetection(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceDetectionResult;ZZZ)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "faceDetectionResult",
+            "notifySync",
+            "isAfSuccess",
+            "isAfLocked"
+        }
+    .end annotation
 .end method

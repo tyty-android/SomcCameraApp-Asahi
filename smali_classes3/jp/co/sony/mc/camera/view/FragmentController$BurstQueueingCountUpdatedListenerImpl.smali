@@ -32,11 +32,19 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "controller"
+        }
+    .end annotation
 
-    .line 8215
+    .line 7139
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 8216
+    .line 7140
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BurstQueueingCountUpdatedListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     return-void
@@ -46,8 +54,16 @@
 # virtual methods
 .method public onBurstQueueingCountUpdated(I)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "queueingCount"
+        }
+    .end annotation
 
-    .line 8221
+    .line 7145
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     const/4 v1, 0x0
@@ -76,7 +92,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 8222
+    .line 7146
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$BurstQueueingCountUpdatedListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -87,7 +103,7 @@
     :cond_1
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fputmIsBurstPostProcessing(Ljp/co/sony/mc/camera/view/FragmentController;Z)V
 
-    .line 8223
+    .line 7147
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$BurstQueueingCountUpdatedListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;

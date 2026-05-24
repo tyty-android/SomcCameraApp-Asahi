@@ -26,13 +26,24 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/CameraSettingsActivity$StorageReadyStateAdapter;Ljp/co/sony/mc/camera/storage/Storage$StorageType;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$1",
+            "val$type"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 1508
+    .line 1525
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$StorageReadyStateAdapter$1;->this$1:Ljp/co/sony/mc/camera/CameraSettingsActivity$StorageReadyStateAdapter;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$StorageReadyStateAdapter$1;->val$type:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
@@ -47,7 +58,7 @@
 .method public run()V
     .locals 3
 
-    .line 1511
+    .line 1528
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$StorageReadyStateAdapter$1;->this$1:Ljp/co/sony/mc/camera/CameraSettingsActivity$StorageReadyStateAdapter;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/CameraSettingsActivity$StorageReadyStateAdapter;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
@@ -60,7 +71,7 @@
 
     return-void
 
-    .line 1515
+    .line 1532
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$StorageReadyStateAdapter$1;->this$1:Ljp/co/sony/mc/camera/CameraSettingsActivity$StorageReadyStateAdapter;
 
@@ -78,7 +89,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 1516
+    .line 1533
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$StorageReadyStateAdapter$1;->this$1:Ljp/co/sony/mc/camera/CameraSettingsActivity$StorageReadyStateAdapter;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/CameraSettingsActivity$StorageReadyStateAdapter;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
@@ -87,7 +98,7 @@
 
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->-$$Nest$fputmIsSdPermissionFinished(Ljp/co/sony/mc/camera/CameraSettingsActivity;Z)V
 
-    .line 1517
+    .line 1534
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$StorageReadyStateAdapter$1;->this$1:Ljp/co/sony/mc/camera/CameraSettingsActivity$StorageReadyStateAdapter;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/CameraSettingsActivity$StorageReadyStateAdapter;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
@@ -106,7 +117,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 1518
+    .line 1535
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$StorageReadyStateAdapter$1;->this$1:Ljp/co/sony/mc/camera/CameraSettingsActivity$StorageReadyStateAdapter;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$StorageReadyStateAdapter;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
@@ -117,12 +128,12 @@
 
     sget-object v2, Ljp/co/sony/mc/camera/setting/SettingAppearance;->ENABLED:Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
-    .line 1519
+    .line 1536
     invoke-virtual {p0, v0, v1, v2}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->onSettingValueChanged(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljp/co/sony/mc/camera/setting/SettingAppearance;)V
 
     goto :goto_0
 
-    .line 1524
+    .line 1541
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$StorageReadyStateAdapter$1;->this$1:Ljp/co/sony/mc/camera/CameraSettingsActivity$StorageReadyStateAdapter;
 

@@ -7,11 +7,14 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/collect/ImmutableMultiset$Builder;,
-        Lcom/google/common/collect/ImmutableMultiset$EntrySetSerializedForm;,
-        Lcom/google/common/collect/ImmutableMultiset$EntrySet;
+        Lcom/google/common/collect/ImmutableMultiset$EntrySet;,
+        Lcom/google/common/collect/ImmutableMultiset$EntrySetSerializedForm;
     }
 .end annotation
 
@@ -28,6 +31,10 @@
 .end annotation
 
 
+# static fields
+.field private static final serialVersionUID:J = 0xdecafL
+
+
 # instance fields
 .field private transient asList:Lcom/google/common/collect/ImmutableList;
     .annotation runtime Lcom/google/errorprone/annotations/concurrent/LazyInit;
@@ -38,6 +45,9 @@
             "Lcom/google/common/collect/ImmutableList<",
             "TE;>;"
         }
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -52,6 +62,9 @@
             "TE;>;>;"
         }
     .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 .end field
 
 
@@ -59,7 +72,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 183
+    .line 224
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableMultisetGwtSerializationDependencies;-><init>()V
 
     return-void
@@ -77,7 +90,7 @@
         }
     .end annotation
 
-    .line 388
+    .line 448
     new-instance v0, Lcom/google/common/collect/ImmutableMultiset$Builder;
 
     invoke-direct {v0}, Lcom/google/common/collect/ImmutableMultiset$Builder;-><init>()V
@@ -87,6 +100,15 @@
 
 .method private static varargs copyFromElements([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMultiset;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -97,7 +119,7 @@
         }
     .end annotation
 
-    .line 171
+    .line 212
     new-instance v0, Lcom/google/common/collect/ImmutableMultiset$Builder;
 
     invoke-direct {v0}, Lcom/google/common/collect/ImmutableMultiset$Builder;-><init>()V
@@ -115,6 +137,15 @@
 
 .method static copyFromEntries(Ljava/util/Collection;)Lcom/google/common/collect/ImmutableMultiset;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "entries"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -129,7 +160,7 @@
         }
     .end annotation
 
-    .line 176
+    .line 217
     new-instance v0, Lcom/google/common/collect/ImmutableMultiset$Builder;
 
     invoke-interface {p0}, Ljava/util/Collection;->size()I
@@ -138,7 +169,7 @@
 
     invoke-direct {v0, v1}, Lcom/google/common/collect/ImmutableMultiset$Builder;-><init>(I)V
 
-    .line 177
+    .line 218
     invoke-interface {p0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -156,7 +187,7 @@
 
     check-cast v1, Lcom/google/common/collect/Multiset$Entry;
 
-    .line 178
+    .line 219
     invoke-interface {v1}, Lcom/google/common/collect/Multiset$Entry;->getElement()Ljava/lang/Object;
 
     move-result-object v2
@@ -169,7 +200,7 @@
 
     goto :goto_0
 
-    .line 180
+    .line 221
     :cond_0
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableMultiset$Builder;->build()Lcom/google/common/collect/ImmutableMultiset;
 
@@ -180,6 +211,15 @@
 
 .method public static copyOf(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableMultiset;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -192,17 +232,17 @@
         }
     .end annotation
 
-    .line 147
+    .line 188
     instance-of v0, p0, Lcom/google/common/collect/ImmutableMultiset;
 
     if-eqz v0, :cond_0
 
-    .line 149
+    .line 190
     move-object v0, p0
 
     check-cast v0, Lcom/google/common/collect/ImmutableMultiset;
 
-    .line 150
+    .line 191
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableMultiset;->isPartialView()Z
 
     move-result v1
@@ -211,21 +251,21 @@
 
     return-object v0
 
-    .line 154
+    .line 195
     :cond_0
     new-instance v0, Lcom/google/common/collect/ImmutableMultiset$Builder;
 
-    .line 155
+    .line 196
     invoke-static {p0}, Lcom/google/common/collect/Multisets;->inferDistinctElements(Ljava/lang/Iterable;)I
 
     move-result v1
 
     invoke-direct {v0, v1}, Lcom/google/common/collect/ImmutableMultiset$Builder;-><init>(I)V
 
-    .line 156
+    .line 197
     invoke-virtual {v0, p0}, Lcom/google/common/collect/ImmutableMultiset$Builder;->addAll(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableMultiset$Builder;
 
-    .line 157
+    .line 198
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableMultiset$Builder;->build()Lcom/google/common/collect/ImmutableMultiset;
 
     move-result-object p0
@@ -235,6 +275,15 @@
 
 .method public static copyOf(Ljava/util/Iterator;)Lcom/google/common/collect/ImmutableMultiset;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -247,7 +296,7 @@
         }
     .end annotation
 
-    .line 167
+    .line 208
     new-instance v0, Lcom/google/common/collect/ImmutableMultiset$Builder;
 
     invoke-direct {v0}, Lcom/google/common/collect/ImmutableMultiset$Builder;-><init>()V
@@ -265,6 +314,15 @@
 
 .method public static copyOf([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMultiset;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -275,7 +333,7 @@
         }
     .end annotation
 
-    .line 137
+    .line 178
     invoke-static {p0}, Lcom/google/common/collect/ImmutableMultiset;->copyFromElements([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMultiset;
 
     move-result-object p0
@@ -294,7 +352,7 @@
         }
     .end annotation
 
-    .line 317
+    .line 362
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMultiset;->isEmpty()Z
 
     move-result v0
@@ -320,6 +378,14 @@
     return-object p0
 .end method
 
+.method static synthetic lambda$toImmutableMultiset$0(Ljava/lang/Object;)I
+    .locals 0
+
+    const/4 p0, 0x1
+
+    return p0
+.end method
+
 .method public static of()Lcom/google/common/collect/ImmutableMultiset;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
@@ -332,7 +398,7 @@
         }
     .end annotation
 
-    .line 56
+    .line 103
     sget-object v0, Lcom/google/common/collect/RegularImmutableMultiset;->EMPTY:Lcom/google/common/collect/RegularImmutableMultiset;
 
     return-object v0
@@ -340,6 +406,15 @@
 
 .method public static of(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMultiset;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e1"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -350,7 +425,7 @@
         }
     .end annotation
 
-    .line 67
+    .line 113
     filled-new-array {p0}, [Ljava/lang/Object;
 
     move-result-object p0
@@ -364,6 +439,17 @@
 
 .method public static of(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMultiset;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "e1",
+            "e2"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -374,7 +460,7 @@
         }
     .end annotation
 
-    .line 78
+    .line 123
     filled-new-array {p0, p1}, [Ljava/lang/Object;
 
     move-result-object p0
@@ -388,6 +474,19 @@
 
 .method public static of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMultiset;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "e1",
+            "e2",
+            "e3"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -398,7 +497,7 @@
         }
     .end annotation
 
-    .line 90
+    .line 134
     filled-new-array {p0, p1, p2}, [Ljava/lang/Object;
 
     move-result-object p0
@@ -412,6 +511,21 @@
 
 .method public static of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMultiset;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "e1",
+            "e2",
+            "e3",
+            "e4"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -422,7 +536,7 @@
         }
     .end annotation
 
-    .line 102
+    .line 145
     filled-new-array {p0, p1, p2, p3}, [Ljava/lang/Object;
 
     move-result-object p0
@@ -436,6 +550,23 @@
 
 .method public static of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMultiset;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "e1",
+            "e2",
+            "e3",
+            "e4",
+            "e5"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -446,7 +577,7 @@
         }
     .end annotation
 
-    .line 114
+    .line 156
     filled-new-array {p0, p1, p2, p3, p4}, [Ljava/lang/Object;
 
     move-result-object p0
@@ -460,6 +591,27 @@
 
 .method public static varargs of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMultiset;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "e1",
+            "e2",
+            "e3",
+            "e4",
+            "e5",
+            "e6",
+            "others"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -470,7 +622,7 @@
         }
     .end annotation
 
-    .line 126
+    .line 167
     new-instance v0, Lcom/google/common/collect/ImmutableMultiset$Builder;
 
     invoke-direct {v0}, Lcom/google/common/collect/ImmutableMultiset$Builder;-><init>()V
@@ -510,10 +662,117 @@
     return-object p0
 .end method
 
+.method private readObject(Ljava/io/ObjectInputStream;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stream"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/InvalidObjectException;
+        }
+    .end annotation
+
+    .line 440
+    new-instance p0, Ljava/io/InvalidObjectException;
+
+    const-string p1, "Use SerializedForm"
+
+    invoke-direct {p0, p1}, Ljava/io/InvalidObjectException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public static toImmutableMultiset()Ljava/util/stream/Collector;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<E:",
+            "Ljava/lang/Object;",
+            ">()",
+            "Ljava/util/stream/Collector<",
+            "TE;*",
+            "Lcom/google/common/collect/ImmutableMultiset<",
+            "TE;>;>;"
+        }
+    .end annotation
+
+    .line 73
+    invoke-static {}, Ljava/util/function/Function;->identity()Ljava/util/function/Function;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/google/common/collect/ImmutableMultiset$$ExternalSyntheticLambda0;
+
+    invoke-direct {v1}, Lcom/google/common/collect/ImmutableMultiset$$ExternalSyntheticLambda0;-><init>()V
+
+    invoke-static {v0, v1}, Lcom/google/common/collect/CollectCollectors;->toImmutableMultiset(Ljava/util/function/Function;Ljava/util/function/ToIntFunction;)Ljava/util/stream/Collector;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static toImmutableMultiset(Ljava/util/function/Function;Ljava/util/function/ToIntFunction;)Ljava/util/stream/Collector;
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "elementFunction",
+            "countFunction"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            "E:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/function/Function<",
+            "-TT;+TE;>;",
+            "Ljava/util/function/ToIntFunction<",
+            "-TT;>;)",
+            "Ljava/util/stream/Collector<",
+            "TT;*",
+            "Lcom/google/common/collect/ImmutableMultiset<",
+            "TE;>;>;"
+        }
+    .end annotation
+
+    .line 93
+    invoke-static {p0, p1}, Lcom/google/common/collect/CollectCollectors;->toImmutableMultiset(Ljava/util/function/Function;Ljava/util/function/ToIntFunction;)Ljava/util/stream/Collector;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 
 # virtual methods
 .method public final add(Ljava/lang/Object;I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "element",
+            "occurrences"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;I)I"
@@ -523,7 +782,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 234
+    .line 279
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -541,12 +800,12 @@
         }
     .end annotation
 
-    .line 214
+    .line 259
     iget-object v0, p0, Lcom/google/common/collect/ImmutableMultiset;->asList:Lcom/google/common/collect/ImmutableList;
 
     if-nez v0, :cond_0
 
-    .line 215
+    .line 260
     invoke-super {p0}, Lcom/google/common/collect/ImmutableMultisetGwtSerializationDependencies;->asList()Lcom/google/common/collect/ImmutableList;
 
     move-result-object v0
@@ -560,11 +819,19 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 220
+    .line 265
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableMultiset;->count(Ljava/lang/Object;)I
 
     move-result p0
@@ -584,8 +851,18 @@
 
 .method copyIntoArray([Ljava/lang/Object;I)I
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dst",
+            "offset"
+        }
+    .end annotation
 
-    .line 282
+    .line 327
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMultiset;->entrySet()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object p0
@@ -607,7 +884,7 @@
 
     check-cast v0, Lcom/google/common/collect/Multiset$Entry;
 
-    .line 283
+    .line 328
     invoke-interface {v0}, Lcom/google/common/collect/Multiset$Entry;->getCount()I
 
     move-result v1
@@ -620,7 +897,7 @@
 
     invoke-static {p1, p2, v1, v2}, Ljava/util/Arrays;->fill([Ljava/lang/Object;IILjava/lang/Object;)V
 
-    .line 284
+    .line 329
     invoke-interface {v0}, Lcom/google/common/collect/Multiset$Entry;->getCount()I
 
     move-result v0
@@ -646,7 +923,7 @@
 .method public bridge synthetic elementSet()Ljava/util/Set;
     .locals 0
 
-    .line 49
+    .line 57
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMultiset;->elementSet()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object p0
@@ -665,12 +942,12 @@
         }
     .end annotation
 
-    .line 312
+    .line 357
     iget-object v0, p0, Lcom/google/common/collect/ImmutableMultiset;->entrySet:Lcom/google/common/collect/ImmutableSet;
 
     if-nez v0, :cond_0
 
-    .line 313
+    .line 358
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableMultiset;->createEntrySet()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object v0
@@ -684,7 +961,7 @@
 .method public bridge synthetic entrySet()Ljava/util/Set;
     .locals 0
 
-    .line 49
+    .line 57
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMultiset;->entrySet()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object p0
@@ -695,11 +972,19 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 291
+    .line 336
     invoke-static {p0, p1}, Lcom/google/common/collect/Multisets;->equalsImpl(Lcom/google/common/collect/Multiset;Ljava/lang/Object;)Z
 
     move-result p0
@@ -708,6 +993,15 @@
 .end method
 
 .method abstract getEntry(I)Lcom/google/common/collect/Multiset$Entry;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -720,7 +1014,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 296
+    .line 341
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMultiset;->entrySet()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object p0
@@ -742,7 +1036,7 @@
         }
     .end annotation
 
-    .line 187
+    .line 228
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMultiset;->entrySet()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object v0
@@ -751,7 +1045,7 @@
 
     move-result-object v0
 
-    .line 188
+    .line 229
     new-instance v1, Lcom/google/common/collect/ImmutableMultiset$1;
 
     invoke-direct {v1, p0, v0}, Lcom/google/common/collect/ImmutableMultiset$1;-><init>(Lcom/google/common/collect/ImmutableMultiset;Ljava/util/Iterator;)V
@@ -762,7 +1056,7 @@
 .method public bridge synthetic iterator()Ljava/util/Iterator;
     .locals 0
 
-    .line 49
+    .line 57
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMultiset;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p0
@@ -772,10 +1066,25 @@
 
 .method public final remove(Ljava/lang/Object;I)I
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "element",
+            "occurrences"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 248
+    .line 293
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -785,6 +1094,17 @@
 
 .method public final setCount(Ljava/lang/Object;I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "element",
+            "count"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;I)I"
@@ -794,7 +1114,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 262
+    .line 307
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -804,6 +1124,19 @@
 
 .method public final setCount(Ljava/lang/Object;II)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "element",
+            "oldCount",
+            "newCount"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;II)Z"
@@ -813,7 +1146,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 276
+    .line 321
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -824,7 +1157,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 301
+    .line 346
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMultiset;->entrySet()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object p0

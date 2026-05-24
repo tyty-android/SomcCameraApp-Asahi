@@ -24,11 +24,19 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "controller"
+        }
+    .end annotation
 
-    .line 8200
+    .line 7124
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 8201
+    .line 7125
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$HandShutterSignsDetectionListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     return-void
@@ -38,8 +46,16 @@
 # virtual methods
 .method public onDetected(Ljp/co/sony/mc/camera/CameraStatusNotifier$HandDetectionResult;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 
-    .line 8206
+    .line 7130
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$HandShutterSignsDetectionListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmGestureShutter(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/GestureShutter;

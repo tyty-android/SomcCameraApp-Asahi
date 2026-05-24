@@ -9,11 +9,9 @@
 # instance fields
 .field public final synthetic f$0:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;
 
-.field public final synthetic f$1:Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;
-
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;)V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;)V
     .locals 0
 
     .line 0
@@ -21,22 +19,18 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;
 
-    iput-object p2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda1;->f$1:Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;
-
     return-void
 .end method
 
 
 # virtual methods
 .method public final onClick(Landroid/view/View;)V
-    .locals 1
+    .locals 0
 
     .line 0
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;
 
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda1;->f$1:Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;
-
-    invoke-static {v0, p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->$r8$lambda$u6TqzHoq89942uqalRyX0J-7d40(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;Landroid/view/View;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->$r8$lambda$TMmuAlimvpPbS1Ce8iU5iWOoGl8(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Landroid/view/View;)V
 
     return-void
 .end method

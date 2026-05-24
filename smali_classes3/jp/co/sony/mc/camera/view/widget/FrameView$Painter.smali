@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract draw(Landroid/graphics/Canvas;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "canvas"
+        }
+    .end annotation
 .end method

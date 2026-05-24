@@ -28,6 +28,15 @@
 # direct methods
 .method constructor <init>(Ljava/lang/reflect/TypeVariable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "var"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -53,6 +62,15 @@
 
 .method private equalsTypeVariable(Ljava/lang/reflect/TypeVariable;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "that"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -61,7 +79,7 @@
         }
     .end annotation
 
-    .line 600
+    .line 601
     iget-object v0, p0, Lcom/google/common/reflect/TypeResolver$TypeVariableKey;->var:Ljava/lang/reflect/TypeVariable;
 
     invoke-interface {v0}, Ljava/lang/reflect/TypeVariable;->getGenericDeclaration()Ljava/lang/reflect/GenericDeclaration;
@@ -72,7 +90,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    invoke-interface {v0, v1}, Ljava/lang/reflect/GenericDeclaration;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -80,7 +98,7 @@
 
     iget-object p0, p0, Lcom/google/common/reflect/TypeResolver$TypeVariableKey;->var:Ljava/lang/reflect/TypeVariable;
 
-    .line 601
+    .line 602
     invoke-interface {p0}, Ljava/lang/reflect/TypeVariable;->getName()Ljava/lang/String;
 
     move-result-object p0
@@ -108,13 +126,24 @@
 
 .method static forLookup(Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeResolver$TypeVariableKey;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "t"
+        }
+    .end annotation
 
-    .line 580
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 581
     instance-of v0, p0, Ljava/lang/reflect/TypeVariable;
 
     if-eqz v0, :cond_0
 
-    .line 581
+    .line 582
     new-instance v0, Lcom/google/common/reflect/TypeResolver$TypeVariableKey;
 
     check-cast p0, Ljava/lang/reflect/TypeVariable;
@@ -133,6 +162,18 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
     .line 565
     instance-of v0, p1, Lcom/google/common/reflect/TypeResolver$TypeVariableKey;
@@ -159,13 +200,21 @@
 
 .method equalsType(Ljava/lang/reflect/Type;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
-    .line 592
+    .line 593
     instance-of v0, p1, Ljava/lang/reflect/TypeVariable;
 
     if-eqz v0, :cond_0
 
-    .line 593
+    .line 594
     check-cast p1, Ljava/lang/reflect/TypeVariable;
 
     invoke-direct {p0, p1}, Lcom/google/common/reflect/TypeResolver$TypeVariableKey;->equalsTypeVariable(Ljava/lang/reflect/TypeVariable;)Z
@@ -213,7 +262,7 @@
     .line 575
     iget-object p0, p0, Lcom/google/common/reflect/TypeResolver$TypeVariableKey;->var:Ljava/lang/reflect/TypeVariable;
 
-    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-interface {p0}, Ljava/lang/reflect/TypeVariable;->toString()Ljava/lang/String;
 
     move-result-object p0
 

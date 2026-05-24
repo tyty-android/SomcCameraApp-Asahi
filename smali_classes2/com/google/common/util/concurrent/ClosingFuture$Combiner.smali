@@ -19,24 +19,10 @@
 
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/common/util/concurrent/ClosingFuture$Combiner$AsyncCombiningCallable;,
-        Lcom/google/common/util/concurrent/ClosingFuture$Combiner$CombiningCallable;
+        Lcom/google/common/util/concurrent/ClosingFuture$Combiner$CombiningCallable;,
+        Lcom/google/common/util/concurrent/ClosingFuture$Combiner$AsyncCombiningCallable;
     }
 .end annotation
-
-
-# static fields
-.field private static final INNER_FUTURE:Lcom/google/common/base/Function;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/google/common/base/Function<",
-            "Lcom/google/common/util/concurrent/ClosingFuture<",
-            "*>;",
-            "Lcom/google/common/util/concurrent/FluentFuture<",
-            "*>;>;"
-        }
-    .end annotation
-.end field
 
 
 # instance fields
@@ -56,21 +42,19 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    .line 1365
-    new-instance v0, Lcom/google/common/util/concurrent/ClosingFuture$Combiner$3;
-
-    invoke-direct {v0}, Lcom/google/common/util/concurrent/ClosingFuture$Combiner$3;-><init>()V
-
-    sput-object v0, Lcom/google/common/util/concurrent/ClosingFuture$Combiner;->INNER_FUTURE:Lcom/google/common/base/Function;
-
-    return-void
-.end method
-
 .method private constructor <init>(ZLjava/lang/Iterable;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "allMustSucceed",
+            "inputs"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z",
@@ -81,10 +65,10 @@
         }
     .end annotation
 
-    .line 1261
+    .line 1275
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1217
+    .line 1231
     new-instance v0, Lcom/google/common/util/concurrent/ClosingFuture$CloseableList;
 
     const/4 v1, 0x0
@@ -93,17 +77,17 @@
 
     iput-object v0, p0, Lcom/google/common/util/concurrent/ClosingFuture$Combiner;->closeables:Lcom/google/common/util/concurrent/ClosingFuture$CloseableList;
 
-    .line 1262
+    .line 1276
     iput-boolean p1, p0, Lcom/google/common/util/concurrent/ClosingFuture$Combiner;->allMustSucceed:Z
 
-    .line 1263
+    .line 1277
     invoke-static {p2}, Lcom/google/common/collect/ImmutableList;->copyOf(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/google/common/util/concurrent/ClosingFuture$Combiner;->inputs:Lcom/google/common/collect/ImmutableList;
 
-    .line 1264
+    .line 1278
     invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -121,10 +105,10 @@
 
     check-cast p2, Lcom/google/common/util/concurrent/ClosingFuture;
 
-    .line 1265
+    .line 1279
     iget-object v0, p0, Lcom/google/common/util/concurrent/ClosingFuture$Combiner;->closeables:Lcom/google/common/util/concurrent/ClosingFuture$CloseableList;
 
-    invoke-static {p2, v0}, Lcom/google/common/util/concurrent/ClosingFuture;->access$1000(Lcom/google/common/util/concurrent/ClosingFuture;Lcom/google/common/util/concurrent/ClosingFuture$CloseableList;)V
+    invoke-static {p2, v0}, Lcom/google/common/util/concurrent/ClosingFuture;->access$400(Lcom/google/common/util/concurrent/ClosingFuture;Lcom/google/common/util/concurrent/ClosingFuture$CloseableList;)V
 
     goto :goto_0
 
@@ -135,7 +119,7 @@
 .method synthetic constructor <init>(ZLjava/lang/Iterable;Lcom/google/common/util/concurrent/ClosingFuture$1;)V
     .locals 0
 
-    .line 1215
+    .line 1229
     invoke-direct {p0, p1, p2}, Lcom/google/common/util/concurrent/ClosingFuture$Combiner;-><init>(ZLjava/lang/Iterable;)V
 
     return-void
@@ -144,7 +128,7 @@
 .method static synthetic access$1300(Lcom/google/common/util/concurrent/ClosingFuture$Combiner;)Lcom/google/common/util/concurrent/ClosingFuture$CloseableList;
     .locals 0
 
-    .line 1215
+    .line 1229
     iget-object p0, p0, Lcom/google/common/util/concurrent/ClosingFuture$Combiner;->closeables:Lcom/google/common/util/concurrent/ClosingFuture$CloseableList;
 
     return-object p0
@@ -161,12 +145,12 @@
         }
     .end annotation
 
-    .line 1360
+    .line 1374
     iget-boolean v0, p0, Lcom/google/common/util/concurrent/ClosingFuture$Combiner;->allMustSucceed:Z
 
     if-eqz v0, :cond_0
 
-    .line 1361
+    .line 1375
     invoke-direct {p0}, Lcom/google/common/util/concurrent/ClosingFuture$Combiner;->inputFutures()Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
@@ -177,7 +161,7 @@
 
     goto :goto_0
 
-    .line 1362
+    .line 1376
     :cond_0
     invoke-direct {p0}, Lcom/google/common/util/concurrent/ClosingFuture$Combiner;->inputFutures()Lcom/google/common/collect/ImmutableList;
 
@@ -202,20 +186,35 @@
         }
     .end annotation
 
-    .line 1374
+    .line 1381
     iget-object p0, p0, Lcom/google/common/util/concurrent/ClosingFuture$Combiner;->inputs:Lcom/google/common/collect/ImmutableList;
 
     invoke-static {p0}, Lcom/google/common/collect/FluentIterable;->from(Ljava/lang/Iterable;)Lcom/google/common/collect/FluentIterable;
 
     move-result-object p0
 
-    sget-object v0, Lcom/google/common/util/concurrent/ClosingFuture$Combiner;->INNER_FUTURE:Lcom/google/common/base/Function;
+    new-instance v0, Lcom/google/common/util/concurrent/ClosingFuture$Combiner$$ExternalSyntheticLambda0;
 
+    invoke-direct {v0}, Lcom/google/common/util/concurrent/ClosingFuture$Combiner$$ExternalSyntheticLambda0;-><init>()V
+
+    .line 1382
     invoke-virtual {p0, v0}, Lcom/google/common/collect/FluentIterable;->transform(Lcom/google/common/base/Function;)Lcom/google/common/collect/FluentIterable;
 
     move-result-object p0
 
+    .line 1383
     invoke-virtual {p0}, Lcom/google/common/collect/FluentIterable;->toList()Lcom/google/common/collect/ImmutableList;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$inputFutures$0(Lcom/google/common/util/concurrent/ClosingFuture;)Lcom/google/common/util/concurrent/FluentFuture;
+    .locals 0
+
+    .line 1382
+    invoke-static {p0}, Lcom/google/common/util/concurrent/ClosingFuture;->access$000(Lcom/google/common/util/concurrent/ClosingFuture;)Lcom/google/common/util/concurrent/FluentFuture;
 
     move-result-object p0
 
@@ -226,6 +225,17 @@
 # virtual methods
 .method public call(Lcom/google/common/util/concurrent/ClosingFuture$Combiner$CombiningCallable;Ljava/util/concurrent/Executor;)Lcom/google/common/util/concurrent/ClosingFuture;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x0
+        }
+        names = {
+            "combiningCallable",
+            "executor"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<V:",
@@ -240,12 +250,12 @@
         }
     .end annotation
 
-    .line 1285
+    .line 1299
     new-instance v0, Lcom/google/common/util/concurrent/ClosingFuture$Combiner$1;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/util/concurrent/ClosingFuture$Combiner$1;-><init>(Lcom/google/common/util/concurrent/ClosingFuture$Combiner;Lcom/google/common/util/concurrent/ClosingFuture$Combiner$CombiningCallable;)V
 
-    .line 1297
+    .line 1312
     new-instance p1, Lcom/google/common/util/concurrent/ClosingFuture;
 
     invoke-direct {p0}, Lcom/google/common/util/concurrent/ClosingFuture$Combiner;->futureCombiner()Lcom/google/common/util/concurrent/Futures$FutureCombiner;
@@ -260,8 +270,8 @@
 
     invoke-direct {p1, p2, v0}, Lcom/google/common/util/concurrent/ClosingFuture;-><init>(Lcom/google/common/util/concurrent/ListenableFuture;Lcom/google/common/util/concurrent/ClosingFuture$1;)V
 
-    .line 1298
-    invoke-static {p1}, Lcom/google/common/util/concurrent/ClosingFuture;->access$200(Lcom/google/common/util/concurrent/ClosingFuture;)Lcom/google/common/util/concurrent/ClosingFuture$CloseableList;
+    .line 1313
+    invoke-static {p1}, Lcom/google/common/util/concurrent/ClosingFuture;->access$500(Lcom/google/common/util/concurrent/ClosingFuture;)Lcom/google/common/util/concurrent/ClosingFuture$CloseableList;
 
     move-result-object p2
 
@@ -271,13 +281,24 @@
 
     move-result-object v0
 
-    invoke-virtual {p2, p0, v0}, Lcom/google/common/util/concurrent/ClosingFuture$CloseableList;->add(Ljava/io/Closeable;Ljava/util/concurrent/Executor;)V
+    invoke-virtual {p2, p0, v0}, Lcom/google/common/util/concurrent/ClosingFuture$CloseableList;->add(Ljava/lang/AutoCloseable;Ljava/util/concurrent/Executor;)V
 
     return-object p1
 .end method
 
 .method public callAsync(Lcom/google/common/util/concurrent/ClosingFuture$Combiner$AsyncCombiningCallable;Ljava/util/concurrent/Executor;)Lcom/google/common/util/concurrent/ClosingFuture;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x0
+        }
+        names = {
+            "combiningCallable",
+            "executor"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<V:",
@@ -292,15 +313,15 @@
         }
     .end annotation
 
-    .line 1341
+    .line 1355
     new-instance v0, Lcom/google/common/util/concurrent/ClosingFuture$Combiner$2;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/util/concurrent/ClosingFuture$Combiner$2;-><init>(Lcom/google/common/util/concurrent/ClosingFuture$Combiner;Lcom/google/common/util/concurrent/ClosingFuture$Combiner$AsyncCombiningCallable;)V
 
-    .line 1353
+    .line 1367
     new-instance p1, Lcom/google/common/util/concurrent/ClosingFuture;
 
-    .line 1354
+    .line 1368
     invoke-direct {p0}, Lcom/google/common/util/concurrent/ClosingFuture$Combiner;->futureCombiner()Lcom/google/common/util/concurrent/Futures$FutureCombiner;
 
     move-result-object v1
@@ -313,8 +334,8 @@
 
     invoke-direct {p1, p2, v0}, Lcom/google/common/util/concurrent/ClosingFuture;-><init>(Lcom/google/common/util/concurrent/ListenableFuture;Lcom/google/common/util/concurrent/ClosingFuture$1;)V
 
-    .line 1355
-    invoke-static {p1}, Lcom/google/common/util/concurrent/ClosingFuture;->access$200(Lcom/google/common/util/concurrent/ClosingFuture;)Lcom/google/common/util/concurrent/ClosingFuture$CloseableList;
+    .line 1369
+    invoke-static {p1}, Lcom/google/common/util/concurrent/ClosingFuture;->access$500(Lcom/google/common/util/concurrent/ClosingFuture;)Lcom/google/common/util/concurrent/ClosingFuture$CloseableList;
 
     move-result-object p2
 
@@ -324,7 +345,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p2, p0, v0}, Lcom/google/common/util/concurrent/ClosingFuture$CloseableList;->add(Ljava/io/Closeable;Ljava/util/concurrent/Executor;)V
+    invoke-virtual {p2, p0, v0}, Lcom/google/common/util/concurrent/ClosingFuture$CloseableList;->add(Ljava/lang/AutoCloseable;Ljava/util/concurrent/Executor;)V
 
     return-object p1
 .end method

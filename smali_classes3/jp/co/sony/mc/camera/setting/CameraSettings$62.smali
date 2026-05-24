@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1110
+    .line 1343
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,6 +31,17 @@
 # virtual methods
 .method public getValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -42,11 +53,11 @@
         }
     .end annotation
 
-    .line 1114
+    .line 1347
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1115
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetPeakingColor(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/PeakingColor;
+    .line 1348
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetAperture(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
     move-result-object p0
 

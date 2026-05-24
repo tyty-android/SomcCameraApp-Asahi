@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function4;
+.implements Lkotlin/jvm/functions/Function2;
 
 
 # direct methods
@@ -18,27 +18,19 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
-    check-cast p1, Ljava/lang/Boolean;
+    check-cast p1, Ljava/lang/Float;
 
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+    check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;
 
-    move-result p0
-
-    check-cast p2, Ljava/lang/Boolean;
-
-    check-cast p3, Ljava/lang/Boolean;
-
-    check-cast p4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    invoke-static {p0, p2, p3, p4}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->$r8$lambda$-AaPI_jglk81XXdAzbpQoZdxWD8(ZLjava/lang/Boolean;Ljava/lang/Boolean;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
+    invoke-static {p1, p2}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->$r8$lambda$92nYGQovPRsT2PdIHHL1G79P8qk(Ljava/lang/Float;Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;)I
 
     move-result p0
 
-    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 

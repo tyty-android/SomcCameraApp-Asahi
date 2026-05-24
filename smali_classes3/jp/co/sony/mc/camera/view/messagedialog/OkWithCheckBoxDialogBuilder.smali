@@ -17,6 +17,26 @@
 # virtual methods
 .method protected create(Landroid/content/Context;Ljp/co/sony/mc/camera/setting/MessageSettings;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;Landroid/content/DialogInterface$OnDismissListener;)Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "mMessageSettings",
+            "parameter",
+            "onPositiveListener",
+            "onNegativeListener",
+            "onCancelListener",
+            "onDismissListener"
+        }
+    .end annotation
 
     .line 47
     new-instance p5, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Builder;
@@ -46,7 +66,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090222
+    const v1, 0x7f090227
 
     .line 54
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -62,7 +82,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
 
-    const v2, 0x7f090241
+    const v2, 0x7f09024a
 
     .line 57
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -97,7 +117,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     :cond_0
-    const v2, 0x7f090295
+    const v2, 0x7f09029e
 
     .line 63
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -154,7 +174,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V
 
     :cond_1
-    const v2, 0x7f090107
+    const v2, 0x7f090104
 
     .line 75
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -214,7 +234,7 @@
 
     move-result-object p2
 
-    const v0, 0x7f0702d5
+    const v0, 0x7f07028b
 
     invoke-virtual {p2, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

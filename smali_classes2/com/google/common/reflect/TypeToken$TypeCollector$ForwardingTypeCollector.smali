@@ -38,6 +38,15 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/reflect/TypeToken$TypeCollector;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "delegate"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -48,10 +57,10 @@
 
     const/4 v0, 0x0
 
-    .line 1422
+    .line 1447
     invoke-direct {p0, v0}, Lcom/google/common/reflect/TypeToken$TypeCollector;-><init>(Lcom/google/common/reflect/TypeToken$1;)V
 
-    .line 1423
+    .line 1448
     iput-object p1, p0, Lcom/google/common/reflect/TypeToken$TypeCollector$ForwardingTypeCollector;->delegate:Lcom/google/common/reflect/TypeToken$TypeCollector;
 
     return-void
@@ -61,6 +70,15 @@
 # virtual methods
 .method getInterfaces(Ljava/lang/Object;)Ljava/lang/Iterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -69,7 +87,7 @@
         }
     .end annotation
 
-    .line 1433
+    .line 1458
     iget-object p0, p0, Lcom/google/common/reflect/TypeToken$TypeCollector$ForwardingTypeCollector;->delegate:Lcom/google/common/reflect/TypeToken$TypeCollector;
 
     invoke-virtual {p0, p1}, Lcom/google/common/reflect/TypeToken$TypeCollector;->getInterfaces(Ljava/lang/Object;)Ljava/lang/Iterable;
@@ -81,6 +99,15 @@
 
 .method getRawType(Ljava/lang/Object;)Ljava/lang/Class;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -89,7 +116,7 @@
         }
     .end annotation
 
-    .line 1428
+    .line 1453
     iget-object p0, p0, Lcom/google/common/reflect/TypeToken$TypeCollector$ForwardingTypeCollector;->delegate:Lcom/google/common/reflect/TypeToken$TypeCollector;
 
     invoke-virtual {p0, p1}, Lcom/google/common/reflect/TypeToken$TypeCollector;->getRawType(Ljava/lang/Object;)Ljava/lang/Class;
@@ -101,13 +128,25 @@
 
 .method getSuperclass(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)TK;"
         }
     .end annotation
 
-    .line 1438
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1464
     iget-object p0, p0, Lcom/google/common/reflect/TypeToken$TypeCollector$ForwardingTypeCollector;->delegate:Lcom/google/common/reflect/TypeToken$TypeCollector;
 
     invoke-virtual {p0, p1}, Lcom/google/common/reflect/TypeToken$TypeCollector;->getSuperclass(Ljava/lang/Object;)Ljava/lang/Object;

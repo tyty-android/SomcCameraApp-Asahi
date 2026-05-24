@@ -26,6 +26,17 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/GestureShutter;Ljp/co/sony/mc/camera/CameraStatusNotifier$HandDetectionResult;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$result"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"

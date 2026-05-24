@@ -30,11 +30,21 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/TreeTraverser;Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$root"
+        }
+    .end annotation
 
-    .line 116
-    iput-object p1, p0, Lcom/google/common/collect/TreeTraverser$2;->this$0:Lcom/google/common/collect/TreeTraverser;
-
+    .line 121
     iput-object p2, p0, Lcom/google/common/collect/TreeTraverser$2;->val$root:Ljava/lang/Object;
+
+    iput-object p1, p0, Lcom/google/common/collect/TreeTraverser$2;->this$0:Lcom/google/common/collect/TreeTraverser;
 
     invoke-direct {p0}, Lcom/google/common/collect/FluentIterable;-><init>()V
 
@@ -53,7 +63,7 @@
         }
     .end annotation
 
-    .line 119
+    .line 124
     iget-object v0, p0, Lcom/google/common/collect/TreeTraverser$2;->this$0:Lcom/google/common/collect/TreeTraverser;
 
     iget-object p0, p0, Lcom/google/common/collect/TreeTraverser$2;->val$root:Ljava/lang/Object;
@@ -68,7 +78,7 @@
 .method public bridge synthetic iterator()Ljava/util/Iterator;
     .locals 0
 
-    .line 116
+    .line 121
     invoke-virtual {p0}, Lcom/google/common/collect/TreeTraverser$2;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p0

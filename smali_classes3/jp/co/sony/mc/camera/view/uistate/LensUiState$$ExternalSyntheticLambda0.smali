@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function6;
+.implements Lkotlin/jvm/functions/Function5;
 
 
 # direct methods
@@ -18,41 +18,29 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 6
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 0
     check-cast p1, Ljava/lang/Boolean;
 
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
-    move-result v0
+    move-result p0
 
     check-cast p2, Ljava/lang/Boolean;
 
-    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
+    check-cast p3, Ljava/lang/Boolean;
 
-    move-result v1
+    check-cast p4, Ljava/lang/Boolean;
 
-    move-object v2, p3
+    invoke-virtual {p4}, Ljava/lang/Boolean;->booleanValue()Z
 
-    check-cast v2, Ljava/lang/Boolean;
-
-    move-object v3, p4
-
-    check-cast v3, Ljava/lang/Boolean;
+    move-result p1
 
     check-cast p5, Ljava/lang/Boolean;
 
-    invoke-virtual {p5}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v4
-
-    move-object v5, p6
-
-    check-cast v5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    invoke-static/range {v0 .. v5}, Ljp/co/sony/mc/camera/view/uistate/LensUiState;->$r8$lambda$uN5Lh5QrYaZD7lD346AaW31KvDA(ZZLjava/lang/Boolean;Ljava/lang/Boolean;ZLjp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
+    invoke-static {p0, p2, p3, p1, p5}, Ljp/co/sony/mc/camera/view/uistate/LensUiState;->$r8$lambda$pD9ubaE5ZwCQGz4wQEQVhJDs1uU(ZLjava/lang/Boolean;Ljava/lang/Boolean;ZLjava/lang/Boolean;)Z
 
     move-result p0
 

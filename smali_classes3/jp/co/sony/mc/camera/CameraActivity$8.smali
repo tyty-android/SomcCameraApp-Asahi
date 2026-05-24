@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/CameraActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 753
+    .line 743
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$8;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,8 +45,18 @@
 # virtual methods
 .method public onStorageReadyStateChanged(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/Storage$StorageReadyState;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "status"
+        }
+    .end annotation
 
-    .line 759
+    .line 749
     iget-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$8;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmStorage(Ljp/co/sony/mc/camera/CameraActivity;)Ljp/co/sony/mc/camera/storage/Storage;
@@ -51,14 +69,14 @@
 
     if-eqz p1, :cond_1
 
-    .line 760
+    .line 750
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p1, :cond_0
 
     const/4 p1, 0x1
 
-    .line 761
+    .line 751
     new-array p1, p1, [Ljava/lang/String;
 
     const/4 p2, 0x0
@@ -69,7 +87,7 @@
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 766
+    .line 756
     :cond_0
     invoke-static {}, Ljp/co/sony/mc/camera/CameraApplication;->getUiThreadHandler()Landroid/os/Handler;
 

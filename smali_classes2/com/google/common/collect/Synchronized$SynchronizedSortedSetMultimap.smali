@@ -1,4 +1,4 @@
-.class Lcom/google/common/collect/Synchronized$SynchronizedSortedSetMultimap;
+.class final Lcom/google/common/collect/Synchronized$SynchronizedSortedSetMultimap;
 .super Lcom/google/common/collect/Synchronized$SynchronizedSetMultimap;
 .source "Synchronized.java"
 
@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0xa
+    accessFlags = 0x18
     name = "SynchronizedSortedSetMultimap"
 .end annotation
 
@@ -39,9 +39,20 @@
 .method constructor <init>(Lcom/google/common/collect/SortedSetMultimap;Ljava/lang/Object;)V
     .locals 0
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "delegate",
+            "mutex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -52,7 +63,7 @@
         }
     .end annotation
 
-    .line 805
+    .line 833
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/Synchronized$SynchronizedSetMultimap;-><init>(Lcom/google/common/collect/SetMultimap;Ljava/lang/Object;)V
 
     return-void
@@ -63,7 +74,7 @@
 .method bridge synthetic delegate()Lcom/google/common/collect/Multimap;
     .locals 0
 
-    .line 802
+    .line 829
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedSortedSetMultimap;->delegate()Lcom/google/common/collect/SortedSetMultimap;
 
     move-result-object p0
@@ -74,7 +85,7 @@
 .method bridge synthetic delegate()Lcom/google/common/collect/SetMultimap;
     .locals 0
 
-    .line 802
+    .line 829
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedSortedSetMultimap;->delegate()Lcom/google/common/collect/SortedSetMultimap;
 
     move-result-object p0
@@ -92,7 +103,7 @@
         }
     .end annotation
 
-    .line 810
+    .line 838
     invoke-super {p0}, Lcom/google/common/collect/Synchronized$SynchronizedSetMultimap;->delegate()Lcom/google/common/collect/SetMultimap;
 
     move-result-object p0
@@ -105,7 +116,7 @@
 .method bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 802
+    .line 829
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedSortedSetMultimap;->delegate()Lcom/google/common/collect/SortedSetMultimap;
 
     move-result-object p0
@@ -115,8 +126,16 @@
 
 .method public bridge synthetic get(Ljava/lang/Object;)Ljava/util/Collection;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 802
+    .line 829
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Synchronized$SynchronizedSortedSetMultimap;->get(Ljava/lang/Object;)Ljava/util/SortedSet;
 
     move-result-object p0
@@ -126,8 +145,16 @@
 
 .method public bridge synthetic get(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 802
+    .line 829
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Synchronized$SynchronizedSortedSetMultimap;->get(Ljava/lang/Object;)Ljava/util/SortedSet;
 
     move-result-object p0
@@ -137,6 +164,15 @@
 
 .method public get(Ljava/lang/Object;)Ljava/util/SortedSet;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -145,12 +181,12 @@
         }
     .end annotation
 
-    .line 815
+    .line 843
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedSortedSetMultimap;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 816
+    .line 844
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedSortedSetMultimap;->delegate()Lcom/google/common/collect/SortedSetMultimap;
 
@@ -173,7 +209,7 @@
     :catchall_0
     move-exception p0
 
-    .line 817
+    .line 845
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -183,8 +219,20 @@
 
 .method public bridge synthetic removeAll(Ljava/lang/Object;)Ljava/util/Collection;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 802
+    .line 829
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Synchronized$SynchronizedSortedSetMultimap;->removeAll(Ljava/lang/Object;)Ljava/util/SortedSet;
 
     move-result-object p0
@@ -194,8 +242,20 @@
 
 .method public bridge synthetic removeAll(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 802
+    .line 829
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Synchronized$SynchronizedSortedSetMultimap;->removeAll(Ljava/lang/Object;)Ljava/util/SortedSet;
 
     move-result-object p0
@@ -205,6 +265,19 @@
 
 .method public removeAll(Ljava/lang/Object;)Ljava/util/SortedSet;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -215,12 +288,12 @@
         }
     .end annotation
 
-    .line 822
+    .line 850
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedSortedSetMultimap;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 823
+    .line 851
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedSortedSetMultimap;->delegate()Lcom/google/common/collect/SortedSetMultimap;
 
@@ -237,7 +310,7 @@
     :catchall_0
     move-exception p0
 
-    .line 824
+    .line 852
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -247,8 +320,18 @@
 
 .method public bridge synthetic replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/Collection;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "key",
+            "values"
+        }
+    .end annotation
 
-    .line 802
+    .line 829
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/Synchronized$SynchronizedSortedSetMultimap;->replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/SortedSet;
 
     move-result-object p0
@@ -258,8 +341,18 @@
 
 .method public bridge synthetic replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "key",
+            "values"
+        }
+    .end annotation
 
-    .line 802
+    .line 829
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/Synchronized$SynchronizedSortedSetMultimap;->replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/SortedSet;
 
     move-result-object p0
@@ -269,6 +362,17 @@
 
 .method public replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/SortedSet;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "values"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;",
@@ -279,12 +383,12 @@
         }
     .end annotation
 
-    .line 829
+    .line 857
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedSortedSetMultimap;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 830
+    .line 858
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedSortedSetMultimap;->delegate()Lcom/google/common/collect/SortedSetMultimap;
 
@@ -301,7 +405,7 @@
     :catchall_0
     move-exception p0
 
-    .line 831
+    .line 859
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -319,12 +423,15 @@
         }
     .end annotation
 
-    .line 836
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 865
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedSortedSetMultimap;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 837
+    .line 866
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedSortedSetMultimap;->delegate()Lcom/google/common/collect/SortedSetMultimap;
 
@@ -341,7 +448,7 @@
     :catchall_0
     move-exception p0
 
-    .line 838
+    .line 867
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

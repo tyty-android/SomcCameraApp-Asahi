@@ -75,6 +75,14 @@
 
 .method public static complete(Ljp/co/sony/mc/camera/storage/RequestFactory$RequestBuilder;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "request"
+        }
+    .end annotation
 
     .line 75
     sget-object v0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger;->sCaptureTimeMap:Ljava/util/Map;
@@ -111,6 +119,14 @@
 
 .method public static complete(Ljp/co/sony/mc/camera/storage/SavingRequest;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "request"
+        }
+    .end annotation
 
     .line 83
     sget-object v0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger;->sCaptureTimeMap:Ljava/util/Map;
@@ -395,6 +411,14 @@
 
 .method public static create(Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;)Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "commonStatus"
+        }
+    .end annotation
 
     .line 39
     new-instance v0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;
@@ -436,6 +460,14 @@
 
 .method public static create(Ljp/co/sony/mc/camera/storage/SavingRequest;)Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "request"
+        }
+    .end annotation
 
     .line 50
     new-instance v0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;
@@ -477,6 +509,14 @@
 
 .method public static get(Ljp/co/sony/mc/camera/storage/RequestFactory$RequestBuilder;)Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "request"
+        }
+    .end annotation
 
     .line 61
     sget-object v0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger;->sCaptureTimeMap:Ljava/util/Map;
@@ -500,6 +540,14 @@
 
 .method public static get(Ljp/co/sony/mc/camera/storage/SavingRequest;)Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "request"
+        }
+    .end annotation
 
     .line 68
     sget-object v0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger;->sCaptureTimeMap:Ljava/util/Map;
@@ -523,6 +571,14 @@
 
 .method public static setNumOfBurstTaken(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "burstNum"
+        }
+    .end annotation
 
     .line 103
     sput p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger;->sNumOfBurstTaken:I

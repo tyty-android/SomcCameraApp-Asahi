@@ -18,6 +18,17 @@
 
 .method public static deserialize(Ljava/lang/String;Ljava/lang/Class;)Ljp/co/sony/mc/camera/configuration/parameters/ExtensionData;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "json",
+            "cls"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

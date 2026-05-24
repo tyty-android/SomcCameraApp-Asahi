@@ -30,6 +30,17 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/AbstractMapBasedMultimap;Ljava/util/Map;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x10
+        }
+        names = {
+            "this$0",
+            "subMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -40,10 +51,10 @@
         }
     .end annotation
 
-    .line 906
+    .line 940
     iput-object p1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet;->this$0:Lcom/google/common/collect/AbstractMapBasedMultimap;
 
-    .line 907
+    .line 941
     invoke-direct {p0, p2}, Lcom/google/common/collect/Maps$KeySet;-><init>(Ljava/util/Map;)V
 
     return-void
@@ -54,7 +65,7 @@
 .method public clear()V
     .locals 0
 
-    .line 955
+    .line 990
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -66,6 +77,15 @@
 
 .method public containsAll(Ljava/util/Collection;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -74,7 +94,7 @@
         }
     .end annotation
 
-    .line 960
+    .line 995
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet;->map()Ljava/util/Map;
 
     move-result-object p0
@@ -93,13 +113,21 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
     if-eq p0, p1, :cond_1
 
-    .line 965
+    .line 1000
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet;->map()Ljava/util/Map;
 
     move-result-object p0
@@ -132,7 +160,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 970
+    .line 1005
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet;->map()Ljava/util/Map;
 
     move-result-object p0
@@ -158,7 +186,7 @@
         }
     .end annotation
 
-    .line 912
+    .line 946
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet;->map()Ljava/util/Map;
 
     move-result-object v0
@@ -171,7 +199,7 @@
 
     move-result-object v0
 
-    .line 913
+    .line 947
     new-instance v1, Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet$1;
 
     invoke-direct {v1, p0, v0}, Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet$1;-><init>(Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet;Ljava/util/Iterator;)V
@@ -181,8 +209,20 @@
 
 .method public remove(Ljava/lang/Object;)Z
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 944
+    .line 979
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet;->map()Ljava/util/Map;
 
     move-result-object v0
@@ -197,15 +237,15 @@
 
     if-eqz p1, :cond_0
 
-    .line 946
+    .line 981
     invoke-interface {p1}, Ljava/util/Collection;->size()I
 
     move-result v1
 
-    .line 947
+    .line 982
     invoke-interface {p1}, Ljava/util/Collection;->clear()V
 
-    .line 948
+    .line 983
     iget-object p0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet;->this$0:Lcom/google/common/collect/AbstractMapBasedMultimap;
 
     invoke-static {p0, v1}, Lcom/google/common/collect/AbstractMapBasedMultimap;->access$220(Lcom/google/common/collect/AbstractMapBasedMultimap;I)I

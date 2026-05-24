@@ -46,7 +46,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/AnimationManager$buildAnimator$1$2;->this$0:Ljp/co/sony/mc/camera/view/widget/AnimationManager;
 
-    .line 855
+    .line 1062
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
     return-void
@@ -61,7 +61,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 857
+    .line 1064
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/AnimationManager$buildAnimator$1$2;->this$0:Ljp/co/sony/mc/camera/view/widget/AnimationManager;
 
     const/4 p1, 0x0

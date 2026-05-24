@@ -28,8 +28,16 @@
 # direct methods
 .method constructor <init>(Ljava/util/Set;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "val$set"
+        }
+    .end annotation
 
-    .line 979
+    .line 1114
     iput-object p1, p0, Lcom/google/common/collect/Maps$4;->val$set:Ljava/util/Set;
 
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingSet;-><init>()V
@@ -41,13 +49,26 @@
 # virtual methods
 .method public add(Ljava/lang/Object;)Z
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "element"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)Z"
         }
     .end annotation
 
-    .line 987
+    .line 1122
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -57,6 +78,15 @@
 
 .method public addAll(Ljava/util/Collection;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "es"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -65,7 +95,7 @@
         }
     .end annotation
 
-    .line 992
+    .line 1127
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -76,7 +106,7 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 979
+    .line 1114
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$4;->delegate()Ljava/util/Set;
 
     move-result-object p0
@@ -87,7 +117,7 @@
 .method protected bridge synthetic delegate()Ljava/util/Collection;
     .locals 0
 
-    .line 979
+    .line 1114
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$4;->delegate()Ljava/util/Set;
 
     move-result-object p0
@@ -105,7 +135,7 @@
         }
     .end annotation
 
-    .line 982
+    .line 1117
     iget-object p0, p0, Lcom/google/common/collect/Maps$4;->val$set:Ljava/util/Set;
 
     return-object p0

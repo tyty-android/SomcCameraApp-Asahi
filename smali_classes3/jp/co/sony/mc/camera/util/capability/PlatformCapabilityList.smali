@@ -84,6 +84,14 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 76
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -183,6 +191,16 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/content/SharedPreferences;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "prefs"
+        }
+    .end annotation
 
     .line 67
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -379,7 +397,7 @@
 
     invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v11, "sensorInfoList: sensorName "
+    const-string/jumbo v11, "sensorInfoList: sensorName "
 
     invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -404,7 +422,7 @@
 
     invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v10, "sensorInfoList: id "
+    const-string/jumbo v10, "sensorInfoList: id "
 
     invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

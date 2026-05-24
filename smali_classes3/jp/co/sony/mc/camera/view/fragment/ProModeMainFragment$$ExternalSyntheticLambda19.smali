@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function2;
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
@@ -24,21 +24,15 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment$$ExternalSyntheticLambda19;->f$0:Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;
 
-    check-cast p1, Landroidx/constraintlayout/widget/ConstraintSet;
+    check-cast p1, Ljava/lang/Boolean;
 
-    check-cast p2, Ljava/lang/Integer;
-
-    invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
-
-    move-result p2
-
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;->$r8$lambda$nFp6jv2-3aAhUG7eJ2XfeccYQuo(Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;Landroidx/constraintlayout/widget/ConstraintSet;I)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;->$r8$lambda$jYG2XLEAIq9a5FbZsAC-5Iwa5gM(Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;Ljava/lang/Boolean;)Lkotlin/Unit;
 
     move-result-object p0
 

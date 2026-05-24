@@ -16,6 +16,14 @@
 
 # virtual methods
 .method public abstract onCropRegionChanged(Landroid/graphics/Rect;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cropRegion"
+        }
+    .end annotation
 .end method
 
 .method public abstract onCropRegionReady()V

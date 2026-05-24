@@ -22,6 +22,18 @@
 # direct methods
 .method public constructor <init>(Landroid/os/Handler;Ljp/co/sony/mc/camera/device/CaptureResultNotifier$AfParametersCallback;Ljp/co/sony/mc/camera/device/CaptureRequestHolder;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "handler",
+            "callback",
+            "reqHolder"
+        }
+    .end annotation
 
     .line 54
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/device/CaptureResultCheckerBase;-><init>(Landroid/os/Handler;)V
@@ -42,6 +54,18 @@
 
 .method private expectRectsAreSimilar(Landroid/graphics/Rect;Landroid/graphics/Rect;F)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expected",
+            "actual",
+            "errorPercent"
+        }
+    .end annotation
 
     .line 192
     invoke-virtual {p2}, Landroid/graphics/Rect;->width()I
@@ -124,6 +148,18 @@
 
 .method private expectSimilarValues(IIF)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "actualValue",
+            "expectedValue",
+            "errorPercent"
+        }
+    .end annotation
 
     int-to-float p0, p1
 
@@ -172,6 +208,14 @@
 
 .method private static trace(Ljava/lang/String;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "message"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -191,6 +235,16 @@
 # virtual methods
 .method public checkOnCompleted(Landroid/hardware/camera2/CaptureRequest;Ljp/co/sony/mc/camera/device/CaptureResultHolder;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "resultHolder"
+        }
+    .end annotation
 
     .line 62
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/device/AfParametersReflectedChecker;->isAlreadyReflected:Z
@@ -323,6 +377,14 @@
 
 .method public checkSync(Landroid/hardware/camera2/CaptureResult;)Z
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 
     .line 98
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/AfParametersReflectedChecker;->mReqHolder:Ljp/co/sony/mc/camera/device/CaptureRequestHolder;

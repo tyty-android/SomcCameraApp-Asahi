@@ -28,6 +28,14 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValueHolder;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 255
     iput-object p1, p0, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValueHolder$NormalState;->this$0:Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValueHolder;
@@ -40,6 +48,21 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValueHolder;Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "value",
+            "originalValue",
+            "recommendedValue"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;TT;TT;)V"
@@ -65,6 +88,15 @@
 
 .method public applyRecommendedValue(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)V"
@@ -98,6 +130,15 @@
 
 .method public forceChange(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)Z"

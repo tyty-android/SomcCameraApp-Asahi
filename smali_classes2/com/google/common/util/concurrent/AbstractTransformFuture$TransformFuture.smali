@@ -31,6 +31,17 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/util/concurrent/ListenableFuture;Lcom/google/common/base/Function;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "inputFuture",
+            "function"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -41,7 +52,7 @@
         }
     .end annotation
 
-    .line 237
+    .line 254
     invoke-direct {p0, p1, p2}, Lcom/google/common/util/concurrent/AbstractTransformFuture;-><init>(Lcom/google/common/util/concurrent/ListenableFuture;Ljava/lang/Object;)V
 
     return-void
@@ -52,9 +63,23 @@
 .method doTransform(Lcom/google/common/base/Function;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/util/concurrent/ParametricNullness;
         .end annotation
     .end param
+    .annotation runtime Lcom/google/common/util/concurrent/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "function",
+            "input"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -63,10 +88,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-    .end annotation
-
-    .line 243
+    .line 260
     invoke-interface {p1, p2}, Lcom/google/common/base/Function;->apply(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -77,19 +99,30 @@
 .method bridge synthetic doTransform(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/util/concurrent/ParametricNullness;
         .end annotation
     .end param
+    .annotation runtime Lcom/google/common/util/concurrent/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "function",
+            "input"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-    .end annotation
-
-    .line 233
+    .line 250
     check-cast p1, Lcom/google/common/base/Function;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/common/util/concurrent/AbstractTransformFuture$TransformFuture;->doTransform(Lcom/google/common/base/Function;Ljava/lang/Object;)Ljava/lang/Object;
@@ -102,16 +135,25 @@
 .method setResult(Ljava/lang/Object;)V
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/util/concurrent/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TO;)V"
         }
     .end annotation
 
-    .line 248
+    .line 265
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/AbstractTransformFuture$TransformFuture;->set(Ljava/lang/Object;)Z
 
     return-void

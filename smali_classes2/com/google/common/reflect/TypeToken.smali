@@ -7,15 +7,18 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/reflect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/common/reflect/TypeToken$TypeCollector;,
         Lcom/google/common/reflect/TypeToken$SimpleTypeToken;,
+        Lcom/google/common/reflect/TypeToken$TypeSet;,
         Lcom/google/common/reflect/TypeToken$Bounds;,
+        Lcom/google/common/reflect/TypeToken$TypeCollector;,
         Lcom/google/common/reflect/TypeToken$TypeFilter;,
         Lcom/google/common/reflect/TypeToken$ClassSet;,
-        Lcom/google/common/reflect/TypeToken$InterfaceSet;,
-        Lcom/google/common/reflect/TypeToken$TypeSet;
+        Lcom/google/common/reflect/TypeToken$InterfaceSet;
     }
 .end annotation
 
@@ -37,12 +40,18 @@
 
 # instance fields
 .field private transient covariantTypeResolver:Lcom/google/common/reflect/TypeResolver;
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Lcom/google/errorprone/annotations/concurrent/LazyInit;
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
 .field private transient invariantTypeResolver:Lcom/google/common/reflect/TypeResolver;
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Lcom/google/errorprone/annotations/concurrent/LazyInit;
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -53,17 +62,17 @@
 .method protected constructor <init>()V
     .locals 2
 
-    .line 123
+    .line 125
     invoke-direct {p0}, Lcom/google/common/reflect/TypeCapture;-><init>()V
 
-    .line 124
+    .line 126
     invoke-virtual {p0}, Lcom/google/common/reflect/TypeToken;->capture()Ljava/lang/reflect/Type;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
-    .line 125
+    .line 127
     instance-of p0, v0, Ljava/lang/reflect/TypeVariable;
 
     xor-int/lit8 p0, p0, 0x1
@@ -77,6 +86,15 @@
 
 .method protected constructor <init>(Ljava/lang/Class;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "declaringClass"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -85,25 +103,25 @@
         }
     .end annotation
 
-    .line 154
+    .line 156
     invoke-direct {p0}, Lcom/google/common/reflect/TypeCapture;-><init>()V
 
-    .line 155
+    .line 157
     invoke-super {p0}, Lcom/google/common/reflect/TypeCapture;->capture()Ljava/lang/reflect/Type;
 
     move-result-object v0
 
-    .line 156
+    .line 158
     instance-of v1, v0, Ljava/lang/Class;
 
     if-eqz v1, :cond_0
 
-    .line 157
+    .line 159
     iput-object v0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
     goto :goto_0
 
-    .line 159
+    .line 161
     :cond_0
     invoke-static {p1}, Lcom/google/common/reflect/TypeResolver;->covariantly(Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeResolver;
 
@@ -121,11 +139,19 @@
 
 .method private constructor <init>(Ljava/lang/reflect/Type;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
-    .line 163
+    .line 165
     invoke-direct {p0}, Lcom/google/common/reflect/TypeCapture;-><init>()V
 
-    .line 164
+    .line 166
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -140,7 +166,7 @@
 .method synthetic constructor <init>(Ljava/lang/reflect/Type;Lcom/google/common/reflect/TypeToken$1;)V
     .locals 0
 
-    .line 101
+    .line 103
     invoke-direct {p0, p1}, Lcom/google/common/reflect/TypeToken;-><init>(Ljava/lang/reflect/Type;)V
 
     return-void
@@ -149,7 +175,7 @@
 .method static synthetic access$000(Lcom/google/common/reflect/TypeToken;)Lcom/google/common/reflect/TypeResolver;
     .locals 0
 
-    .line 101
+    .line 103
     invoke-direct {p0}, Lcom/google/common/reflect/TypeToken;->getCovariantTypeResolver()Lcom/google/common/reflect/TypeResolver;
 
     move-result-object p0
@@ -160,7 +186,7 @@
 .method static synthetic access$100(Lcom/google/common/reflect/TypeToken;)Lcom/google/common/reflect/TypeResolver;
     .locals 0
 
-    .line 101
+    .line 103
     invoke-direct {p0}, Lcom/google/common/reflect/TypeToken;->getInvariantTypeResolver()Lcom/google/common/reflect/TypeResolver;
 
     move-result-object p0
@@ -171,7 +197,7 @@
 .method static synthetic access$300(Lcom/google/common/reflect/TypeToken;)Lcom/google/common/collect/ImmutableSet;
     .locals 0
 
-    .line 101
+    .line 103
     invoke-direct {p0}, Lcom/google/common/reflect/TypeToken;->getRawTypes()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object p0
@@ -182,7 +208,7 @@
 .method static synthetic access$500(Lcom/google/common/reflect/TypeToken;)Ljava/lang/reflect/Type;
     .locals 0
 
-    .line 101
+    .line 103
     iget-object p0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
     return-object p0
@@ -190,8 +216,16 @@
 
 .method private static any([Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeToken$Bounds;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bounds"
+        }
+    .end annotation
 
-    .line 1056
+    .line 1065
     new-instance v0, Lcom/google/common/reflect/TypeToken$Bounds;
 
     const/4 v1, 0x1
@@ -203,6 +237,15 @@
 
 .method private boundAsSuperclass(Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeToken;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bound"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -213,15 +256,15 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
-    .line 312
+    .line 329
     invoke-static {p1}, Lcom/google/common/reflect/TypeToken;->of(Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeToken;
 
     move-result-object p0
 
-    .line 313
+    .line 330
     invoke-virtual {p0}, Lcom/google/common/reflect/TypeToken;->getRawType()Ljava/lang/Class;
 
     move-result-object p1
@@ -240,6 +283,15 @@
 
 .method private boundsAsInterfaces([Ljava/lang/reflect/Type;)Lcom/google/common/collect/ImmutableList;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bounds"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
@@ -251,12 +303,12 @@
         }
     .end annotation
 
-    .line 351
+    .line 368
     invoke-static {}, Lcom/google/common/collect/ImmutableList;->builder()Lcom/google/common/collect/ImmutableList$Builder;
 
     move-result-object p0
 
-    .line 352
+    .line 369
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -266,12 +318,12 @@
 
     aget-object v2, p1, v1
 
-    .line 354
+    .line 371
     invoke-static {v2}, Lcom/google/common/reflect/TypeToken;->of(Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeToken;
 
     move-result-object v2
 
-    .line 355
+    .line 372
     invoke-virtual {v2}, Lcom/google/common/reflect/TypeToken;->getRawType()Ljava/lang/Class;
 
     move-result-object v3
@@ -282,7 +334,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 356
+    .line 373
     invoke-virtual {p0, v2}, Lcom/google/common/collect/ImmutableList$Builder;->add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList$Builder;
 
     :cond_0
@@ -290,7 +342,7 @@
 
     goto :goto_0
 
-    .line 359
+    .line 376
     :cond_1
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableList$Builder;->build()Lcom/google/common/collect/ImmutableList;
 
@@ -301,6 +353,17 @@
 
 .method private static canonicalizeTypeArg(Ljava/lang/reflect/TypeVariable;Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "declaration",
+            "typeArg"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -312,12 +375,12 @@
         }
     .end annotation
 
-    .line 1007
+    .line 1016
     instance-of v0, p1, Ljava/lang/reflect/WildcardType;
 
     if-eqz v0, :cond_0
 
-    .line 1008
+    .line 1017
     check-cast p1, Ljava/lang/reflect/WildcardType;
 
     invoke-static {p0, p1}, Lcom/google/common/reflect/TypeToken;->canonicalizeWildcardType(Ljava/lang/reflect/TypeVariable;Ljava/lang/reflect/WildcardType;)Ljava/lang/reflect/WildcardType;
@@ -326,7 +389,7 @@
 
     goto :goto_0
 
-    .line 1009
+    .line 1018
     :cond_0
     invoke-static {p1}, Lcom/google/common/reflect/TypeToken;->canonicalizeWildcardsInType(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
 
@@ -338,6 +401,17 @@
 
 .method private static canonicalizeWildcardType(Ljava/lang/reflect/TypeVariable;Ljava/lang/reflect/WildcardType;)Ljava/lang/reflect/WildcardType;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "declaration",
+            "type"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -349,17 +423,17 @@
         }
     .end annotation
 
-    .line 1028
+    .line 1037
     invoke-interface {p0}, Ljava/lang/reflect/TypeVariable;->getBounds()[Ljava/lang/reflect/Type;
 
     move-result-object p0
 
-    .line 1029
+    .line 1038
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1030
+    .line 1039
     invoke-interface {p1}, Ljava/lang/reflect/WildcardType;->getUpperBounds()[Ljava/lang/reflect/Type;
 
     move-result-object v1
@@ -375,7 +449,7 @@
 
     aget-object v5, v1, v4
 
-    .line 1031
+    .line 1040
     invoke-static {p0}, Lcom/google/common/reflect/TypeToken;->any([Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeToken$Bounds;
 
     move-result-object v6
@@ -386,7 +460,7 @@
 
     if-nez v6, :cond_0
 
-    .line 1032
+    .line 1041
     invoke-static {v5}, Lcom/google/common/reflect/TypeToken;->canonicalizeWildcardsInType(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
 
     move-result-object v5
@@ -398,7 +472,7 @@
 
     goto :goto_0
 
-    .line 1035
+    .line 1044
     :cond_1
     new-instance p0, Lcom/google/common/reflect/Types$WildcardTypeImpl;
 
@@ -421,33 +495,41 @@
 
 .method private static canonicalizeWildcardsInParameterizedType(Ljava/lang/reflect/ParameterizedType;)Ljava/lang/reflect/ParameterizedType;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
-    .line 1040
+    .line 1049
     invoke-interface {p0}, Ljava/lang/reflect/ParameterizedType;->getRawType()Ljava/lang/reflect/Type;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/Class;
 
-    .line 1041
+    .line 1050
     invoke-virtual {v0}, Ljava/lang/Class;->getTypeParameters()[Ljava/lang/reflect/TypeVariable;
 
     move-result-object v1
 
-    .line 1042
+    .line 1051
     invoke-interface {p0}, Ljava/lang/reflect/ParameterizedType;->getActualTypeArguments()[Ljava/lang/reflect/Type;
 
     move-result-object v2
 
     const/4 v3, 0x0
 
-    .line 1043
+    .line 1052
     :goto_0
     array-length v4, v2
 
     if-ge v3, v4, :cond_0
 
-    .line 1044
+    .line 1053
     aget-object v4, v1, v3
 
     aget-object v5, v2, v3
@@ -462,7 +544,7 @@
 
     goto :goto_0
 
-    .line 1046
+    .line 1055
     :cond_0
     invoke-interface {p0}, Ljava/lang/reflect/ParameterizedType;->getOwnerType()Ljava/lang/reflect/Type;
 
@@ -477,13 +559,21 @@
 
 .method private static canonicalizeWildcardsInType(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
-    .line 1013
+    .line 1022
     instance-of v0, p0, Ljava/lang/reflect/ParameterizedType;
 
     if-eqz v0, :cond_0
 
-    .line 1014
+    .line 1023
     check-cast p0, Ljava/lang/reflect/ParameterizedType;
 
     invoke-static {p0}, Lcom/google/common/reflect/TypeToken;->canonicalizeWildcardsInParameterizedType(Ljava/lang/reflect/ParameterizedType;)Ljava/lang/reflect/ParameterizedType;
@@ -492,16 +582,16 @@
 
     return-object p0
 
-    .line 1016
+    .line 1025
     :cond_0
     instance-of v0, p0, Ljava/lang/reflect/GenericArrayType;
 
     if-eqz v0, :cond_1
 
-    .line 1017
+    .line 1026
     check-cast p0, Ljava/lang/reflect/GenericArrayType;
 
-    .line 1018
+    .line 1027
     invoke-interface {p0}, Ljava/lang/reflect/GenericArrayType;->getGenericComponentType()Ljava/lang/reflect/Type;
 
     move-result-object p0
@@ -510,7 +600,7 @@
 
     move-result-object p0
 
-    .line 1017
+    .line 1026
     invoke-static {p0}, Lcom/google/common/reflect/Types;->newArrayType(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
 
     move-result-object p0
@@ -521,8 +611,16 @@
 
 .method private static every([Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeToken$Bounds;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bounds"
+        }
+    .end annotation
 
-    .line 1051
+    .line 1060
     new-instance v0, Lcom/google/common/reflect/TypeToken$Bounds;
 
     const/4 v1, 0x0
@@ -533,7 +631,16 @@
 .end method
 
 .method private getArraySubtype(Ljava/lang/Class;)Lcom/google/common/reflect/TypeToken;
-    .locals 0
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "subclass"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -544,23 +651,32 @@
         }
     .end annotation
 
-    .line 1241
+    .line 1257
+    invoke-virtual {p1}, Ljava/lang/Class;->getComponentType()Ljava/lang/Class;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 1264
     invoke-virtual {p0}, Lcom/google/common/reflect/TypeToken;->getComponentType()Lcom/google/common/reflect/TypeToken;
 
     move-result-object p0
 
-    invoke-virtual {p1}, Ljava/lang/Class;->getComponentType()Ljava/lang/Class;
-
-    move-result-object p1
-
-    invoke-virtual {p0, p1}, Lcom/google/common/reflect/TypeToken;->getSubtype(Ljava/lang/Class;)Lcom/google/common/reflect/TypeToken;
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 1243
+    check-cast p0, Lcom/google/common/reflect/TypeToken;
+
+    invoke-virtual {p0, v0}, Lcom/google/common/reflect/TypeToken;->getSubtype(Ljava/lang/Class;)Lcom/google/common/reflect/TypeToken;
+
+    move-result-object p0
+
+    .line 1266
     iget-object p0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
-    .line 1246
+    .line 1269
     invoke-static {p0}, Lcom/google/common/reflect/TypeToken;->newArrayClassOrGenericArrayType(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
 
     move-result-object p0
@@ -570,10 +686,49 @@
     move-result-object p0
 
     return-object p0
+
+    .line 1259
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    const-string v1, " does not appear to be a subtype of "
+
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v0
 .end method
 
 .method private getArraySupertype(Ljava/lang/Class;)Lcom/google/common/reflect/TypeToken;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "supertype"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -584,32 +739,32 @@
         }
     .end annotation
 
-    .line 1227
+    .line 1235
     invoke-virtual {p0}, Lcom/google/common/reflect/TypeToken;->getComponentType()Lcom/google/common/reflect/TypeToken;
 
     move-result-object v0
 
-    const-string v1, "%s isn\'t a super type of %s"
+    if-eqz v0, :cond_0
 
-    invoke-static {v0, v1, p1, p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Lcom/google/common/reflect/TypeToken;
-
-    .line 1230
+    .line 1247
     invoke-virtual {p1}, Ljava/lang/Class;->getComponentType()Ljava/lang/Class;
 
-    move-result-object p1
+    move-result-object p0
 
-    invoke-virtual {p0, p1}, Lcom/google/common/reflect/TypeToken;->getSupertype(Ljava/lang/Class;)Lcom/google/common/reflect/TypeToken;
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 1232
+    check-cast p0, Ljava/lang/Class;
+
+    invoke-virtual {v0, p0}, Lcom/google/common/reflect/TypeToken;->getSupertype(Ljava/lang/Class;)Lcom/google/common/reflect/TypeToken;
+
+    move-result-object p0
+
+    .line 1249
     iget-object p0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
-    .line 1235
+    .line 1252
     invoke-static {p0}, Lcom/google/common/reflect/TypeToken;->newArrayClassOrGenericArrayType(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
 
     move-result-object p0
@@ -619,17 +774,47 @@
     move-result-object p0
 
     return-object p0
+
+    .line 1238
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    const-string v1, " isn\'t a super type of "
+
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v0
 .end method
 
 .method private getCovariantTypeResolver()Lcom/google/common/reflect/TypeResolver;
     .locals 1
 
-    .line 1183
+    .line 1192
     iget-object v0, p0, Lcom/google/common/reflect/TypeToken;->covariantTypeResolver:Lcom/google/common/reflect/TypeResolver;
 
     if-nez v0, :cond_0
 
-    .line 1185
+    .line 1194
     iget-object v0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
     invoke-static {v0}, Lcom/google/common/reflect/TypeResolver;->covariantly(Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeResolver;
@@ -645,12 +830,12 @@
 .method private getInvariantTypeResolver()Lcom/google/common/reflect/TypeResolver;
     .locals 1
 
-    .line 1191
+    .line 1200
     iget-object v0, p0, Lcom/google/common/reflect/TypeToken;->invariantTypeResolver:Lcom/google/common/reflect/TypeResolver;
 
     if-nez v0, :cond_0
 
-    .line 1193
+    .line 1202
     iget-object v0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
     invoke-static {v0}, Lcom/google/common/reflect/TypeResolver;->invariantly(Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeResolver;
@@ -665,17 +850,17 @@
 
 .method private getOwnerTypeIfPresent()Ljava/lang/reflect/Type;
     .locals 1
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
-    .line 1138
+    .line 1147
     iget-object p0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
     instance-of v0, p0, Ljava/lang/reflect/ParameterizedType;
 
     if-eqz v0, :cond_0
 
-    .line 1139
+    .line 1148
     check-cast p0, Ljava/lang/reflect/ParameterizedType;
 
     invoke-interface {p0}, Ljava/lang/reflect/ParameterizedType;->getOwnerType()Ljava/lang/reflect/Type;
@@ -684,13 +869,13 @@
 
     return-object p0
 
-    .line 1140
+    .line 1149
     :cond_0
     instance-of v0, p0, Ljava/lang/Class;
 
     if-eqz v0, :cond_1
 
-    .line 1141
+    .line 1150
     check-cast p0, Ljava/lang/Class;
 
     invoke-virtual {p0}, Ljava/lang/Class;->getEnclosingClass()Ljava/lang/Class;
@@ -716,12 +901,12 @@
         }
     .end annotation
 
-    .line 1089
+    .line 1098
     invoke-static {}, Lcom/google/common/collect/ImmutableSet;->builder()Lcom/google/common/collect/ImmutableSet$Builder;
 
     move-result-object v0
 
-    .line 1090
+    .line 1099
     new-instance v1, Lcom/google/common/reflect/TypeToken$4;
 
     invoke-direct {v1, p0, v0}, Lcom/google/common/reflect/TypeToken$4;-><init>(Lcom/google/common/reflect/TypeToken;Lcom/google/common/collect/ImmutableSet$Builder;)V
@@ -736,10 +921,10 @@
 
     aput-object p0, v2, v3
 
-    .line 1115
+    .line 1124
     invoke-virtual {v1, v2}, Lcom/google/common/reflect/TypeToken$4;->visit([Ljava/lang/reflect/Type;)V
 
-    .line 1118
+    .line 1127
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableSet$Builder;->build()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object p0
@@ -748,7 +933,18 @@
 .end method
 
 .method private getSubtypeFromLowerBounds(Ljava/lang/Class;[Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeToken;
-    .locals 2
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "subclass",
+            "lowerBounds"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -761,64 +957,36 @@
         }
     .end annotation
 
-    .line 1213
+    .line 1222
     array-length v0, p2
 
     if-lez v0, :cond_0
 
     const/4 p0, 0x0
 
-    .line 1215
+    .line 1224
     aget-object p0, p2, p0
 
     invoke-static {p0}, Lcom/google/common/reflect/TypeToken;->of(Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeToken;
 
     move-result-object p0
 
-    .line 1217
+    .line 1226
     invoke-virtual {p0, p1}, Lcom/google/common/reflect/TypeToken;->getSubtype(Ljava/lang/Class;)Lcom/google/common/reflect/TypeToken;
 
     move-result-object p0
 
     return-object p0
 
-    .line 1219
+    .line 1228
     :cond_0
     new-instance p2, Ljava/lang/IllegalArgumentException;
 
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    move-result-object p1
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, 0x15
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    move-result v1
-
-    add-int/2addr v0, v1
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -828,7 +996,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -843,6 +1011,17 @@
 
 .method private getSupertypeFromUpperBounds(Ljava/lang/Class;[Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeToken;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "supertype",
+            "upperBounds"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -855,7 +1034,7 @@
         }
     .end annotation
 
-    .line 1200
+    .line 1209
     array-length v0, p2
 
     const/4 v1, 0x0
@@ -865,19 +1044,19 @@
 
     aget-object v2, p2, v1
 
-    .line 1202
+    .line 1211
     invoke-static {v2}, Lcom/google/common/reflect/TypeToken;->of(Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeToken;
 
     move-result-object v2
 
-    .line 1203
+    .line 1212
     invoke-virtual {v2, p1}, Lcom/google/common/reflect/TypeToken;->isSubtypeOf(Ljava/lang/reflect/Type;)Z
 
     move-result v3
 
     if-eqz v3, :cond_0
 
-    .line 1205
+    .line 1214
     invoke-virtual {v2, p1}, Lcom/google/common/reflect/TypeToken;->getSupertype(Ljava/lang/Class;)Lcom/google/common/reflect/TypeToken;
 
     move-result-object p0
@@ -889,43 +1068,15 @@
 
     goto :goto_0
 
-    .line 1209
+    .line 1218
     :cond_1
     new-instance p2, Ljava/lang/IllegalArgumentException;
 
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    move-result-object p1
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, 0x17
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    move-result v1
-
-    add-int/2addr v0, v1
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -935,7 +1086,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -950,6 +1101,17 @@
 
 .method private is(Ljava/lang/reflect/Type;Ljava/lang/reflect/TypeVariable;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "formalType",
+            "declaration"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -959,10 +1121,10 @@
         }
     .end annotation
 
-    .line 972
+    .line 981
     iget-object v0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
-    invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    invoke-interface {v0, p1}, Ljava/lang/reflect/Type;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -972,20 +1134,20 @@
 
     return v1
 
-    .line 975
+    .line 984
     :cond_0
     instance-of v0, p1, Ljava/lang/reflect/WildcardType;
 
     if-eqz v0, :cond_2
 
-    .line 976
+    .line 985
     check-cast p1, Ljava/lang/reflect/WildcardType;
 
     invoke-static {p2, p1}, Lcom/google/common/reflect/TypeToken;->canonicalizeWildcardType(Ljava/lang/reflect/TypeVariable;Ljava/lang/reflect/WildcardType;)Ljava/lang/reflect/WildcardType;
 
     move-result-object p1
 
-    .line 982
+    .line 991
     invoke-interface {p1}, Ljava/lang/reflect/WildcardType;->getUpperBounds()[Ljava/lang/reflect/Type;
 
     move-result-object p2
@@ -1002,7 +1164,7 @@
 
     if-eqz p2, :cond_1
 
-    .line 983
+    .line 992
     invoke-interface {p1}, Ljava/lang/reflect/WildcardType;->getLowerBounds()[Ljava/lang/reflect/Type;
 
     move-result-object p1
@@ -1027,7 +1189,7 @@
     :goto_0
     return v1
 
-    .line 985
+    .line 994
     :cond_2
     iget-object p0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
@@ -1039,7 +1201,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    invoke-interface {p0, p1}, Ljava/lang/reflect/Type;->equals(Ljava/lang/Object;)Z
 
     move-result p0
 
@@ -1048,8 +1210,16 @@
 
 .method private isOwnedBySubtypeOf(Ljava/lang/reflect/Type;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "supertype"
+        }
+    .end annotation
 
-    .line 1123
+    .line 1132
     invoke-virtual {p0}, Lcom/google/common/reflect/TypeToken;->getTypes()Lcom/google/common/reflect/TypeToken$TypeSet;
 
     move-result-object p0
@@ -1071,14 +1241,14 @@
 
     check-cast v0, Lcom/google/common/reflect/TypeToken;
 
-    .line 1124
+    .line 1133
     invoke-direct {v0}, Lcom/google/common/reflect/TypeToken;->getOwnerTypeIfPresent()Ljava/lang/reflect/Type;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 1125
+    .line 1134
     invoke-static {v0}, Lcom/google/common/reflect/TypeToken;->of(Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeToken;
 
     move-result-object v0
@@ -1101,8 +1271,16 @@
 
 .method private isSubtypeOfArrayType(Ljava/lang/reflect/GenericArrayType;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "supertype"
+        }
+    .end annotation
 
-    .line 915
+    .line 924
     iget-object p0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
     instance-of v0, p0, Ljava/lang/Class;
@@ -1111,10 +1289,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 916
+    .line 925
     check-cast p0, Ljava/lang/Class;
 
-    .line 917
+    .line 926
     invoke-virtual {p0}, Ljava/lang/Class;->isArray()Z
 
     move-result v0
@@ -1123,7 +1301,7 @@
 
     return v1
 
-    .line 920
+    .line 929
     :cond_0
     invoke-virtual {p0}, Ljava/lang/Class;->getComponentType()Ljava/lang/Class;
 
@@ -1143,16 +1321,16 @@
 
     return p0
 
-    .line 921
+    .line 930
     :cond_1
     instance-of v0, p0, Ljava/lang/reflect/GenericArrayType;
 
     if-eqz v0, :cond_2
 
-    .line 922
+    .line 931
     check-cast p0, Ljava/lang/reflect/GenericArrayType;
 
-    .line 923
+    .line 932
     invoke-interface {p0}, Ljava/lang/reflect/GenericArrayType;->getGenericComponentType()Ljava/lang/reflect/Type;
 
     move-result-object p0
@@ -1161,7 +1339,7 @@
 
     move-result-object p0
 
-    .line 924
+    .line 933
     invoke-interface {p1}, Ljava/lang/reflect/GenericArrayType;->getGenericComponentType()Ljava/lang/reflect/Type;
 
     move-result-object p1
@@ -1178,8 +1356,16 @@
 
 .method private isSubtypeOfParameterizedType(Ljava/lang/reflect/ParameterizedType;)Z
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "supertype"
+        }
+    .end annotation
 
-    .line 890
+    .line 899
     invoke-static {p1}, Lcom/google/common/reflect/TypeToken;->of(Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeToken;
 
     move-result-object v0
@@ -1188,7 +1374,7 @@
 
     move-result-object v0
 
-    .line 891
+    .line 900
     invoke-direct {p0, v0}, Lcom/google/common/reflect/TypeToken;->someRawTypeIsSubclassOf(Ljava/lang/Class;)Z
 
     move-result v1
@@ -1199,26 +1385,26 @@
 
     return v2
 
-    .line 894
+    .line 903
     :cond_0
     invoke-virtual {v0}, Ljava/lang/Class;->getTypeParameters()[Ljava/lang/reflect/TypeVariable;
 
     move-result-object v0
 
-    .line 895
+    .line 904
     invoke-interface {p1}, Ljava/lang/reflect/ParameterizedType;->getActualTypeArguments()[Ljava/lang/reflect/Type;
 
     move-result-object v1
 
     move v3, v2
 
-    .line 896
+    .line 905
     :goto_0
     array-length v4, v0
 
     if-ge v3, v4, :cond_2
 
-    .line 897
+    .line 906
     invoke-direct {p0}, Lcom/google/common/reflect/TypeToken;->getCovariantTypeResolver()Lcom/google/common/reflect/TypeResolver;
 
     move-result-object v4
@@ -1229,7 +1415,7 @@
 
     move-result-object v4
 
-    .line 902
+    .line 911
     invoke-static {v4}, Lcom/google/common/reflect/TypeToken;->of(Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeToken;
 
     move-result-object v4
@@ -1251,7 +1437,7 @@
 
     goto :goto_0
 
-    .line 909
+    .line 918
     :cond_2
     invoke-interface {p1}, Ljava/lang/reflect/ParameterizedType;->getRawType()Ljava/lang/reflect/Type;
 
@@ -1269,14 +1455,14 @@
 
     if-nez v0, :cond_3
 
-    .line 910
+    .line 919
     invoke-interface {p1}, Ljava/lang/reflect/ParameterizedType;->getOwnerType()Ljava/lang/reflect/Type;
 
     move-result-object v0
 
     if-eqz v0, :cond_3
 
-    .line 911
+    .line 920
     invoke-interface {p1}, Ljava/lang/reflect/ParameterizedType;->getOwnerType()Ljava/lang/reflect/Type;
 
     move-result-object p1
@@ -1296,25 +1482,33 @@
 
 .method private isSupertypeOfArray(Ljava/lang/reflect/GenericArrayType;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "subtype"
+        }
+    .end annotation
 
-    .line 931
+    .line 940
     iget-object v0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
     instance-of v1, v0, Ljava/lang/Class;
 
     if-eqz v1, :cond_1
 
-    .line 932
+    .line 941
     check-cast v0, Ljava/lang/Class;
 
-    .line 933
+    .line 942
     invoke-virtual {v0}, Ljava/lang/Class;->isArray()Z
 
     move-result p0
 
     if-nez p0, :cond_0
 
-    .line 934
+    .line 943
     const-class p0, [Ljava/lang/Object;
 
     invoke-virtual {v0, p0}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
@@ -1323,7 +1517,7 @@
 
     return p0
 
-    .line 936
+    .line 945
     :cond_0
     invoke-interface {p1}, Ljava/lang/reflect/GenericArrayType;->getGenericComponentType()Ljava/lang/reflect/Type;
 
@@ -1343,13 +1537,13 @@
 
     return p0
 
-    .line 937
+    .line 946
     :cond_1
     instance-of v0, v0, Ljava/lang/reflect/GenericArrayType;
 
     if-eqz v0, :cond_2
 
-    .line 938
+    .line 947
     invoke-interface {p1}, Ljava/lang/reflect/GenericArrayType;->getGenericComponentType()Ljava/lang/reflect/Type;
 
     move-result-object p1
@@ -1362,7 +1556,7 @@
 
     check-cast p0, Ljava/lang/reflect/GenericArrayType;
 
-    .line 939
+    .line 948
     invoke-interface {p0}, Ljava/lang/reflect/GenericArrayType;->getGenericComponentType()Ljava/lang/reflect/Type;
 
     move-result-object p0
@@ -1382,7 +1576,7 @@
 .method private isWrapper()Z
     .locals 1
 
-    .line 541
+    .line 558
     invoke-static {}, Lcom/google/common/primitives/Primitives;->allWrapperTypes()Ljava/util/Set;
 
     move-result-object v0
@@ -1398,8 +1592,16 @@
 
 .method private static newArrayClassOrGenericArrayType(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "componentType"
+        }
+    .end annotation
 
-    .line 1282
+    .line 1305
     sget-object v0, Lcom/google/common/reflect/Types$JavaVersion;->JAVA7:Lcom/google/common/reflect/Types$JavaVersion;
 
     invoke-virtual {v0, p0}, Lcom/google/common/reflect/Types$JavaVersion;->newArrayType(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
@@ -1411,6 +1613,15 @@
 
 .method public static of(Ljava/lang/Class;)Lcom/google/common/reflect/TypeToken;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1423,7 +1634,7 @@
         }
     .end annotation
 
-    .line 169
+    .line 171
     new-instance v0, Lcom/google/common/reflect/TypeToken$SimpleTypeToken;
 
     invoke-direct {v0, p0}, Lcom/google/common/reflect/TypeToken$SimpleTypeToken;-><init>(Ljava/lang/reflect/Type;)V
@@ -1433,6 +1644,15 @@
 
 .method public static of(Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeToken;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1443,7 +1663,7 @@
         }
     .end annotation
 
-    .line 174
+    .line 176
     new-instance v0, Lcom/google/common/reflect/TypeToken$SimpleTypeToken;
 
     invoke-direct {v0, p0}, Lcom/google/common/reflect/TypeToken$SimpleTypeToken;-><init>(Ljava/lang/reflect/Type;)V
@@ -1453,6 +1673,15 @@
 
 .method private resolveSupertype(Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeToken;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1463,7 +1692,7 @@
         }
     .end annotation
 
-    .line 272
+    .line 289
     invoke-direct {p0}, Lcom/google/common/reflect/TypeToken;->getCovariantTypeResolver()Lcom/google/common/reflect/TypeResolver;
 
     move-result-object v0
@@ -1476,12 +1705,12 @@
 
     move-result-object p1
 
-    .line 274
+    .line 291
     iget-object v0, p0, Lcom/google/common/reflect/TypeToken;->covariantTypeResolver:Lcom/google/common/reflect/TypeResolver;
 
     iput-object v0, p1, Lcom/google/common/reflect/TypeToken;->covariantTypeResolver:Lcom/google/common/reflect/TypeResolver;
 
-    .line 275
+    .line 292
     iget-object p0, p0, Lcom/google/common/reflect/TypeToken;->invariantTypeResolver:Lcom/google/common/reflect/TypeResolver;
 
     iput-object p0, p1, Lcom/google/common/reflect/TypeToken;->invariantTypeResolver:Lcom/google/common/reflect/TypeResolver;
@@ -1491,6 +1720,15 @@
 
 .method private resolveTypeArgsForSubclass(Ljava/lang/Class;)Ljava/lang/reflect/Type;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "subclass"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1500,14 +1738,14 @@
         }
     .end annotation
 
-    .line 1255
+    .line 1278
     iget-object v0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
     instance-of v0, v0, Ljava/lang/Class;
 
     if-eqz v0, :cond_1
 
-    .line 1256
+    .line 1279
     invoke-virtual {p1}, Ljava/lang/Class;->getTypeParameters()[Ljava/lang/reflect/TypeVariable;
 
     move-result-object v0
@@ -1516,7 +1754,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1257
+    .line 1280
     invoke-virtual {p0}, Lcom/google/common/reflect/TypeToken;->getRawType()Ljava/lang/Class;
 
     move-result-object v0
@@ -1532,13 +1770,13 @@
     :cond_0
     return-object p1
 
-    .line 1268
+    .line 1291
     :cond_1
     invoke-static {p1}, Lcom/google/common/reflect/TypeToken;->toGenericType(Ljava/lang/Class;)Lcom/google/common/reflect/TypeToken;
 
     move-result-object p1
 
-    .line 1271
+    .line 1294
     invoke-virtual {p0}, Lcom/google/common/reflect/TypeToken;->getRawType()Ljava/lang/Class;
 
     move-result-object v0
@@ -1549,21 +1787,21 @@
 
     iget-object v0, v0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
-    .line 1272
+    .line 1295
     new-instance v1, Lcom/google/common/reflect/TypeResolver;
 
     invoke-direct {v1}, Lcom/google/common/reflect/TypeResolver;-><init>()V
 
     iget-object p0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
-    .line 1273
+    .line 1296
     invoke-virtual {v1, v0, p0}, Lcom/google/common/reflect/TypeResolver;->where(Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeResolver;
 
     move-result-object p0
 
     iget-object p1, p1, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
-    .line 1274
+    .line 1297
     invoke-virtual {p0, p1}, Lcom/google/common/reflect/TypeResolver;->resolveType(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
 
     move-result-object p0
@@ -1573,6 +1811,15 @@
 
 .method private someRawTypeIsSubclassOf(Ljava/lang/Class;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "superclass"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1581,7 +1828,7 @@
         }
     .end annotation
 
-    .line 881
+    .line 890
     invoke-direct {p0}, Lcom/google/common/reflect/TypeToken;->getRawTypes()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object p0
@@ -1603,7 +1850,7 @@
 
     check-cast v0, Ljava/lang/Class;
 
-    .line 882
+    .line 891
     invoke-virtual {p1, v0}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
 
     move-result v0
@@ -1622,6 +1869,15 @@
 
 .method static toGenericType(Ljava/lang/Class;)Lcom/google/common/reflect/TypeToken;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cls"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1634,14 +1890,14 @@
         }
     .end annotation
 
-    .line 1156
+    .line 1165
     invoke-virtual {p0}, Ljava/lang/Class;->isArray()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 1160
+    .line 1169
     invoke-virtual {p0}, Ljava/lang/Class;->getComponentType()Ljava/lang/Class;
 
     move-result-object p0
@@ -1652,25 +1908,25 @@
 
     iget-object p0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
-    .line 1158
+    .line 1167
     invoke-static {p0}, Lcom/google/common/reflect/Types;->newArrayType(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
 
     move-result-object p0
 
-    .line 1162
+    .line 1171
     invoke-static {p0}, Lcom/google/common/reflect/TypeToken;->of(Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeToken;
 
     move-result-object p0
 
     return-object p0
 
-    .line 1165
+    .line 1174
     :cond_0
     invoke-virtual {p0}, Ljava/lang/Class;->getTypeParameters()[Ljava/lang/reflect/TypeVariable;
 
     move-result-object v0
 
-    .line 1167
+    .line 1176
     invoke-virtual {p0}, Ljava/lang/Class;->isMemberClass()Z
 
     move-result v1
@@ -1687,7 +1943,7 @@
 
     if-nez v1, :cond_1
 
-    .line 1168
+    .line 1177
     invoke-virtual {p0}, Ljava/lang/Class;->getEnclosingClass()Ljava/lang/Class;
 
     move-result-object v1
@@ -1703,7 +1959,7 @@
     :cond_1
     const/4 v1, 0x0
 
-    .line 1171
+    .line 1180
     :goto_0
     array-length v2, v0
 
@@ -1719,7 +1975,7 @@
 
     goto :goto_1
 
-    .line 1178
+    .line 1187
     :cond_2
     invoke-static {p0}, Lcom/google/common/reflect/TypeToken;->of(Ljava/lang/Class;)Lcom/google/common/reflect/TypeToken;
 
@@ -1727,7 +1983,7 @@
 
     return-object p0
 
-    .line 1175
+    .line 1184
     :cond_3
     :goto_1
     invoke-static {v1, p0, v0}, Lcom/google/common/reflect/Types;->newParameterizedTypeWithOwner(Ljava/lang/reflect/Type;Ljava/lang/Class;[Ljava/lang/reflect/Type;)Ljava/lang/reflect/ParameterizedType;
@@ -1745,6 +2001,15 @@
 # virtual methods
 .method public final constructor(Ljava/lang/reflect/Constructor;)Lcom/google/common/reflect/Invokable;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "constructor"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1755,7 +2020,7 @@
         }
     .end annotation
 
-    .line 618
+    .line 635
     invoke-virtual {p1}, Ljava/lang/reflect/Constructor;->getDeclaringClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -1776,15 +2041,15 @@
     :goto_0
     const-string v1, "%s not declared by %s"
 
-    .line 621
+    .line 638
     invoke-virtual {p0}, Lcom/google/common/reflect/TypeToken;->getRawType()Ljava/lang/Class;
 
     move-result-object v2
 
-    .line 617
+    .line 634
     invoke-static {v0, v1, p1, v2}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 622
+    .line 639
     new-instance v0, Lcom/google/common/reflect/TypeToken$2;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/reflect/TypeToken$2;-><init>(Lcom/google/common/reflect/TypeToken;Ljava/lang/reflect/Constructor;)V
@@ -1795,24 +2060,32 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 823
+    .line 832
     instance-of v0, p1, Lcom/google/common/reflect/TypeToken;
 
     if-eqz v0, :cond_0
 
-    .line 824
+    .line 833
     check-cast p1, Lcom/google/common/reflect/TypeToken;
 
-    .line 825
+    .line 834
     iget-object p0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
     iget-object p1, p1, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
-    invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    invoke-interface {p0, p1}, Ljava/lang/reflect/Type;->equals(Ljava/lang/Object;)Z
 
     move-result p0
 
@@ -1834,10 +2107,10 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
-    .line 565
+    .line 582
     iget-object p0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
     invoke-static {p0}, Lcom/google/common/reflect/Types;->getComponentType(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
@@ -1850,7 +2123,7 @@
 
     return-object p0
 
-    .line 569
+    .line 586
     :cond_0
     invoke-static {p0}, Lcom/google/common/reflect/TypeToken;->of(Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeToken;
 
@@ -1870,14 +2143,14 @@
         }
     .end annotation
 
-    .line 334
+    .line 351
     iget-object v0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
     instance-of v1, v0, Ljava/lang/reflect/TypeVariable;
 
     if-eqz v1, :cond_0
 
-    .line 335
+    .line 352
     check-cast v0, Ljava/lang/reflect/TypeVariable;
 
     invoke-interface {v0}, Ljava/lang/reflect/TypeVariable;->getBounds()[Ljava/lang/reflect/Type;
@@ -1890,13 +2163,13 @@
 
     return-object p0
 
-    .line 337
+    .line 354
     :cond_0
     instance-of v1, v0, Ljava/lang/reflect/WildcardType;
 
     if-eqz v1, :cond_1
 
-    .line 338
+    .line 355
     check-cast v0, Ljava/lang/reflect/WildcardType;
 
     invoke-interface {v0}, Ljava/lang/reflect/WildcardType;->getUpperBounds()[Ljava/lang/reflect/Type;
@@ -1909,13 +2182,13 @@
 
     return-object p0
 
-    .line 340
+    .line 357
     :cond_1
     invoke-static {}, Lcom/google/common/collect/ImmutableList;->builder()Lcom/google/common/collect/ImmutableList$Builder;
 
     move-result-object v0
 
-    .line 341
+    .line 358
     invoke-virtual {p0}, Lcom/google/common/reflect/TypeToken;->getRawType()Ljava/lang/Class;
 
     move-result-object v1
@@ -1933,19 +2206,19 @@
 
     aget-object v4, v1, v3
 
-    .line 344
+    .line 361
     invoke-direct {p0, v4}, Lcom/google/common/reflect/TypeToken;->resolveSupertype(Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeToken;
 
     move-result-object v4
 
-    .line 345
+    .line 362
     invoke-virtual {v0, v4}, Lcom/google/common/collect/ImmutableList$Builder;->add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList$Builder;
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 347
+    .line 364
     :cond_2
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableList$Builder;->build()Lcom/google/common/collect/ImmutableList;
 
@@ -1964,10 +2237,10 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
-    .line 293
+    .line 310
     iget-object v0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
     instance-of v1, v0, Ljava/lang/reflect/TypeVariable;
@@ -1976,7 +2249,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 295
+    .line 312
     check-cast v0, Ljava/lang/reflect/TypeVariable;
 
     invoke-interface {v0}, Ljava/lang/reflect/TypeVariable;->getBounds()[Ljava/lang/reflect/Type;
@@ -1991,13 +2264,13 @@
 
     return-object p0
 
-    .line 297
+    .line 314
     :cond_0
     instance-of v1, v0, Ljava/lang/reflect/WildcardType;
 
     if-eqz v1, :cond_1
 
-    .line 299
+    .line 316
     check-cast v0, Ljava/lang/reflect/WildcardType;
 
     invoke-interface {v0}, Ljava/lang/reflect/WildcardType;->getUpperBounds()[Ljava/lang/reflect/Type;
@@ -2012,7 +2285,7 @@
 
     return-object p0
 
-    .line 301
+    .line 318
     :cond_1
     invoke-virtual {p0}, Lcom/google/common/reflect/TypeToken;->getRawType()Ljava/lang/Class;
 
@@ -2028,7 +2301,7 @@
 
     return-object p0
 
-    .line 306
+    .line 323
     :cond_2
     invoke-direct {p0, v0}, Lcom/google/common/reflect/TypeToken;->resolveSupertype(Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeToken;
 
@@ -2047,7 +2320,7 @@
         }
     .end annotation
 
-    .line 194
+    .line 196
     invoke-direct {p0}, Lcom/google/common/reflect/TypeToken;->getRawTypes()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object p0
@@ -2067,6 +2340,15 @@
 
 .method public final getSubtype(Ljava/lang/Class;)Lcom/google/common/reflect/TypeToken;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "subclass"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2077,7 +2359,7 @@
         }
     .end annotation
 
-    .line 409
+    .line 426
     iget-object v0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
     instance-of v0, v0, Ljava/lang/reflect/TypeVariable;
@@ -2088,14 +2370,14 @@
 
     invoke-static {v0, v1, p0}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;)V
 
-    .line 411
+    .line 428
     iget-object v0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
     instance-of v1, v0, Ljava/lang/reflect/WildcardType;
 
     if-eqz v1, :cond_0
 
-    .line 412
+    .line 429
     check-cast v0, Ljava/lang/reflect/WildcardType;
 
     invoke-interface {v0}, Ljava/lang/reflect/WildcardType;->getLowerBounds()[Ljava/lang/reflect/Type;
@@ -2108,7 +2390,7 @@
 
     return-object p0
 
-    .line 415
+    .line 432
     :cond_0
     invoke-virtual {p0}, Lcom/google/common/reflect/TypeToken;->isArray()Z
 
@@ -2116,14 +2398,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 416
+    .line 433
     invoke-direct {p0, p1}, Lcom/google/common/reflect/TypeToken;->getArraySubtype(Ljava/lang/Class;)Lcom/google/common/reflect/TypeToken;
 
     move-result-object p0
 
     return-object p0
 
-    .line 420
+    .line 437
     :cond_1
     invoke-virtual {p0}, Lcom/google/common/reflect/TypeToken;->getRawType()Ljava/lang/Class;
 
@@ -2135,27 +2417,27 @@
 
     const-string v1, "%s isn\'t a subclass of %s"
 
-    .line 419
+    .line 436
     invoke-static {v0, v1, p1, p0}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 421
+    .line 438
     invoke-direct {p0, p1}, Lcom/google/common/reflect/TypeToken;->resolveTypeArgsForSubclass(Ljava/lang/Class;)Ljava/lang/reflect/Type;
 
     move-result-object p1
 
-    .line 423
+    .line 440
     invoke-static {p1}, Lcom/google/common/reflect/TypeToken;->of(Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeToken;
 
     move-result-object p1
 
-    .line 425
+    .line 442
     invoke-virtual {p1, p0}, Lcom/google/common/reflect/TypeToken;->isSubtypeOf(Lcom/google/common/reflect/TypeToken;)Z
 
     move-result v0
 
     const-string v1, "%s does not appear to be a subtype of %s"
 
-    .line 424
+    .line 441
     invoke-static {v0, v1, p1, p0}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
 
     return-object p1
@@ -2163,6 +2445,15 @@
 
 .method public final getSupertype(Ljava/lang/Class;)Lcom/google/common/reflect/TypeToken;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "superclass"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2173,24 +2464,24 @@
         }
     .end annotation
 
-    .line 384
+    .line 401
     invoke-direct {p0, p1}, Lcom/google/common/reflect/TypeToken;->someRawTypeIsSubclassOf(Ljava/lang/Class;)Z
 
     move-result v0
 
     const-string v1, "%s is not a super class of %s"
 
-    .line 383
+    .line 400
     invoke-static {v0, v1, p1, p0}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 388
+    .line 405
     iget-object v0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
     instance-of v1, v0, Ljava/lang/reflect/TypeVariable;
 
     if-eqz v1, :cond_0
 
-    .line 389
+    .line 406
     check-cast v0, Ljava/lang/reflect/TypeVariable;
 
     invoke-interface {v0}, Ljava/lang/reflect/TypeVariable;->getBounds()[Ljava/lang/reflect/Type;
@@ -2203,13 +2494,13 @@
 
     return-object p0
 
-    .line 391
+    .line 408
     :cond_0
     instance-of v1, v0, Ljava/lang/reflect/WildcardType;
 
     if-eqz v1, :cond_1
 
-    .line 392
+    .line 409
     check-cast v0, Ljava/lang/reflect/WildcardType;
 
     invoke-interface {v0}, Ljava/lang/reflect/WildcardType;->getUpperBounds()[Ljava/lang/reflect/Type;
@@ -2222,7 +2513,7 @@
 
     return-object p0
 
-    .line 394
+    .line 411
     :cond_1
     invoke-virtual {p1}, Ljava/lang/Class;->isArray()Z
 
@@ -2230,14 +2521,14 @@
 
     if-eqz v0, :cond_2
 
-    .line 395
+    .line 412
     invoke-direct {p0, p1}, Lcom/google/common/reflect/TypeToken;->getArraySupertype(Ljava/lang/Class;)Lcom/google/common/reflect/TypeToken;
 
     move-result-object p0
 
     return-object p0
 
-    .line 399
+    .line 416
     :cond_2
     invoke-static {p1}, Lcom/google/common/reflect/TypeToken;->toGenericType(Ljava/lang/Class;)Lcom/google/common/reflect/TypeToken;
 
@@ -2255,7 +2546,7 @@
 .method public final getType()Ljava/lang/reflect/Type;
     .locals 0
 
-    .line 202
+    .line 204
     iget-object p0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
     return-object p0
@@ -2271,7 +2562,7 @@
         }
     .end annotation
 
-    .line 374
+    .line 391
     new-instance v0, Lcom/google/common/reflect/TypeToken$TypeSet;
 
     invoke-direct {v0, p0}, Lcom/google/common/reflect/TypeToken$TypeSet;-><init>(Lcom/google/common/reflect/TypeToken;)V
@@ -2282,10 +2573,10 @@
 .method public hashCode()I
     .locals 0
 
-    .line 832
+    .line 841
     iget-object p0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
-    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
+    invoke-interface {p0}, Ljava/lang/reflect/Type;->hashCode()I
 
     move-result p0
 
@@ -2295,7 +2586,7 @@
 .method public final isArray()Z
     .locals 0
 
-    .line 513
+    .line 530
     invoke-virtual {p0}, Lcom/google/common/reflect/TypeToken;->getComponentType()Lcom/google/common/reflect/TypeToken;
 
     move-result-object p0
@@ -2316,7 +2607,7 @@
 .method public final isPrimitive()Z
     .locals 1
 
-    .line 522
+    .line 539
     iget-object p0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
     instance-of v0, p0, Ljava/lang/Class;
@@ -2344,6 +2635,15 @@
 
 .method public final isSubtypeOf(Lcom/google/common/reflect/TypeToken;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2352,7 +2652,7 @@
         }
     .end annotation
 
-    .line 462
+    .line 479
     invoke-virtual {p1}, Lcom/google/common/reflect/TypeToken;->getType()Ljava/lang/reflect/Type;
 
     move-result-object p1
@@ -2366,16 +2666,24 @@
 
 .method public final isSubtypeOf(Ljava/lang/reflect/Type;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "supertype"
+        }
+    .end annotation
 
-    .line 474
+    .line 491
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 475
+    .line 492
     instance-of v0, p1, Ljava/lang/reflect/WildcardType;
 
     if-eqz v0, :cond_0
 
-    .line 479
+    .line 496
     check-cast p1, Ljava/lang/reflect/WildcardType;
 
     invoke-interface {p1}, Ljava/lang/reflect/WildcardType;->getLowerBounds()[Ljava/lang/reflect/Type;
@@ -2394,7 +2702,7 @@
 
     return p0
 
-    .line 483
+    .line 500
     :cond_0
     iget-object v0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
@@ -2402,7 +2710,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 485
+    .line 502
     check-cast v0, Ljava/lang/reflect/WildcardType;
 
     invoke-interface {v0}, Ljava/lang/reflect/WildcardType;->getUpperBounds()[Ljava/lang/reflect/Type;
@@ -2419,7 +2727,7 @@
 
     return p0
 
-    .line 489
+    .line 506
     :cond_1
     instance-of v1, v0, Ljava/lang/reflect/TypeVariable;
 
@@ -2427,8 +2735,8 @@
 
     if-eqz v1, :cond_4
 
-    .line 490
-    invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    .line 507
+    invoke-interface {v0, p1}, Ljava/lang/reflect/Type;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -2438,7 +2746,7 @@
 
     check-cast p0, Ljava/lang/reflect/TypeVariable;
 
-    .line 491
+    .line 508
     invoke-interface {p0}, Ljava/lang/reflect/TypeVariable;->getBounds()[Ljava/lang/reflect/Type;
 
     move-result-object p0
@@ -2459,13 +2767,13 @@
     :cond_3
     return v2
 
-    .line 493
+    .line 510
     :cond_4
     instance-of v0, v0, Ljava/lang/reflect/GenericArrayType;
 
     if-eqz v0, :cond_5
 
-    .line 494
+    .line 511
     invoke-static {p1}, Lcom/google/common/reflect/TypeToken;->of(Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeToken;
 
     move-result-object p1
@@ -2480,13 +2788,13 @@
 
     return p0
 
-    .line 497
+    .line 514
     :cond_5
     instance-of v0, p1, Ljava/lang/Class;
 
     if-eqz v0, :cond_6
 
-    .line 498
+    .line 515
     check-cast p1, Ljava/lang/Class;
 
     invoke-direct {p0, p1}, Lcom/google/common/reflect/TypeToken;->someRawTypeIsSubclassOf(Ljava/lang/Class;)Z
@@ -2495,13 +2803,13 @@
 
     return p0
 
-    .line 499
+    .line 516
     :cond_6
     instance-of v0, p1, Ljava/lang/reflect/ParameterizedType;
 
     if-eqz v0, :cond_7
 
-    .line 500
+    .line 517
     check-cast p1, Ljava/lang/reflect/ParameterizedType;
 
     invoke-direct {p0, p1}, Lcom/google/common/reflect/TypeToken;->isSubtypeOfParameterizedType(Ljava/lang/reflect/ParameterizedType;)Z
@@ -2510,13 +2818,13 @@
 
     return p0
 
-    .line 501
+    .line 518
     :cond_7
     instance-of v0, p1, Ljava/lang/reflect/GenericArrayType;
 
     if-eqz v0, :cond_8
 
-    .line 502
+    .line 519
     check-cast p1, Ljava/lang/reflect/GenericArrayType;
 
     invoke-direct {p0, p1}, Lcom/google/common/reflect/TypeToken;->isSubtypeOfArrayType(Ljava/lang/reflect/GenericArrayType;)Z
@@ -2531,6 +2839,15 @@
 
 .method public final isSupertypeOf(Lcom/google/common/reflect/TypeToken;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2539,7 +2856,7 @@
         }
     .end annotation
 
-    .line 438
+    .line 455
     invoke-virtual {p0}, Lcom/google/common/reflect/TypeToken;->getType()Ljava/lang/reflect/Type;
 
     move-result-object p0
@@ -2553,8 +2870,16 @@
 
 .method public final isSupertypeOf(Ljava/lang/reflect/Type;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
-    .line 450
+    .line 467
     invoke-static {p1}, Lcom/google/common/reflect/TypeToken;->of(Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeToken;
 
     move-result-object p1
@@ -2572,6 +2897,15 @@
 
 .method public final method(Ljava/lang/reflect/Method;)Lcom/google/common/reflect/Invokable;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "method"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2584,7 +2918,7 @@
         }
     .end annotation
 
-    .line 579
+    .line 596
     invoke-virtual {p1}, Ljava/lang/reflect/Method;->getDeclaringClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -2595,10 +2929,10 @@
 
     const-string v1, "%s not declared by %s"
 
-    .line 578
+    .line 595
     invoke-static {v0, v1, p1, p0}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 583
+    .line 600
     new-instance v0, Lcom/google/common/reflect/TypeToken$1;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/reflect/TypeToken$1;-><init>(Lcom/google/common/reflect/TypeToken;Ljava/lang/reflect/Method;)V
@@ -2616,7 +2950,7 @@
         }
     .end annotation
 
-    .line 853
+    .line 862
     new-instance v0, Lcom/google/common/reflect/TypeToken$3;
 
     invoke-direct {v0, p0}, Lcom/google/common/reflect/TypeToken$3;-><init>(Lcom/google/common/reflect/TypeToken;)V
@@ -2631,7 +2965,7 @@
 
     aput-object v3, v1, v2
 
-    .line 876
+    .line 885
     invoke-virtual {v0, v1}, Lcom/google/common/reflect/TypeToken$3;->visit([Ljava/lang/reflect/Type;)V
 
     return-object p0
@@ -2639,6 +2973,15 @@
 
 .method public final resolveType(Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeToken;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2649,10 +2992,10 @@
         }
     .end annotation
 
-    .line 265
+    .line 282
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 268
+    .line 285
     invoke-direct {p0}, Lcom/google/common/reflect/TypeToken;->getInvariantTypeResolver()Lcom/google/common/reflect/TypeResolver;
 
     move-result-object p0
@@ -2671,7 +3014,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 837
+    .line 846
     iget-object p0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
     invoke-static {p0}, Lcom/google/common/reflect/Types;->toString(Ljava/lang/reflect/Type;)Ljava/lang/String;
@@ -2691,19 +3034,19 @@
         }
     .end annotation
 
-    .line 551
+    .line 568
     invoke-direct {p0}, Lcom/google/common/reflect/TypeToken;->isWrapper()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 553
+    .line 570
     iget-object p0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
     check-cast p0, Ljava/lang/Class;
 
-    .line 554
+    .line 571
     invoke-static {p0}, Lcom/google/common/primitives/Primitives;->unwrap(Ljava/lang/Class;)Ljava/lang/Class;
 
     move-result-object p0
@@ -2718,6 +3061,17 @@
 
 .method public final where(Lcom/google/common/reflect/TypeParameter;Lcom/google/common/reflect/TypeToken;)Lcom/google/common/reflect/TypeToken;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "typeParam",
+            "typeArg"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<X:",
@@ -2732,7 +3086,7 @@
         }
     .end annotation
 
-    .line 224
+    .line 237
     new-instance v0, Lcom/google/common/reflect/TypeResolver;
 
     invoke-direct {v0}, Lcom/google/common/reflect/TypeResolver;-><init>()V
@@ -2745,17 +3099,17 @@
 
     iget-object p1, p2, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
-    .line 227
+    .line 240
     invoke-static {v1, p1}, Lcom/google/common/collect/ImmutableMap;->of(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap;
 
     move-result-object p1
 
-    .line 226
+    .line 239
     invoke-virtual {v0, p1}, Lcom/google/common/reflect/TypeResolver;->where(Ljava/util/Map;)Lcom/google/common/reflect/TypeResolver;
 
     move-result-object p1
 
-    .line 230
+    .line 243
     new-instance p2, Lcom/google/common/reflect/TypeToken$SimpleTypeToken;
 
     iget-object p0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
@@ -2771,6 +3125,17 @@
 
 .method public final where(Lcom/google/common/reflect/TypeParameter;Ljava/lang/Class;)Lcom/google/common/reflect/TypeToken;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "typeParam",
+            "typeArg"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<X:",
@@ -2785,7 +3150,7 @@
         }
     .end annotation
 
-    .line 252
+    .line 269
     invoke-static {p2}, Lcom/google/common/reflect/TypeToken;->of(Ljava/lang/Class;)Lcom/google/common/reflect/TypeToken;
 
     move-result-object p2
@@ -2807,19 +3172,19 @@
         }
     .end annotation
 
-    .line 532
+    .line 549
     invoke-virtual {p0}, Lcom/google/common/reflect/TypeToken;->isPrimitive()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 534
+    .line 551
     iget-object p0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
     check-cast p0, Ljava/lang/Class;
 
-    .line 535
+    .line 552
     invoke-static {p0}, Lcom/google/common/primitives/Primitives;->wrap(Ljava/lang/Class;)Ljava/lang/Class;
 
     move-result-object p0
@@ -2835,7 +3200,7 @@
 .method protected writeReplace()Ljava/lang/Object;
     .locals 1
 
-    .line 844
+    .line 853
     new-instance v0, Lcom/google/common/reflect/TypeResolver;
 
     invoke-direct {v0}, Lcom/google/common/reflect/TypeResolver;-><init>()V

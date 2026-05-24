@@ -26,22 +26,40 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/storage/SavingTaskManager;Ljp/co/sony/mc/camera/storage/VideoSavingRequest;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "request"
+        }
+    .end annotation
 
-    .line 896
+    .line 969
     iput-object p1, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavingVideoTask;->this$0:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 897
+    .line 970
     iput-object p2, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavingVideoTask;->mRequest:Ljp/co/sony/mc/camera/storage/VideoSavingRequest;
 
     return-void
 .end method
 
 .method private updateSpecialType(Landroid/net/Uri;)V
-    .locals 3
+    .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "uri"
+        }
+    .end annotation
 
-    .line 984
+    .line 1057
     iget-object v0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavingVideoTask;->mRequest:Ljp/co/sony/mc/camera/storage/VideoSavingRequest;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/storage/VideoSavingRequest;->video:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusVideo;
@@ -50,27 +68,27 @@
 
     if-eqz v0, :cond_0
 
-    .line 985
-    new-instance v0, Landroid/content/ContentValues;
+    .line 1058
+    new-instance v3, Landroid/content/ContentValues;
 
-    invoke-direct {v0}, Landroid/content/ContentValues;-><init>()V
+    invoke-direct {v3}, Landroid/content/ContentValues;-><init>()V
 
-    .line 986
-    sget-object v1, Lcom/sonymobile/providers/media/SpecialType;->HDR:Lcom/sonymobile/providers/media/SpecialType;
+    .line 1059
+    sget-object v0, Lcom/sonymobile/providers/media/SpecialType;->HDR:Lcom/sonymobile/providers/media/SpecialType;
 
-    invoke-virtual {v1}, Lcom/sonymobile/providers/media/SpecialType;->getSpecialTypeId()I
+    invoke-virtual {v0}, Lcom/sonymobile/providers/media/SpecialType;->getSpecialTypeId()I
 
-    move-result v1
+    move-result v0
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v1
+    move-result-object v0
 
-    const-string/jumbo v2, "special_type"
+    const-string/jumbo v1, "special_type"
 
-    invoke-virtual {v0, v2, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+    invoke-virtual {v3, v1, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 987
+    .line 1060
     new-instance v1, Lcom/sonymobile/providers/media/ExtensionApi;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavingVideoTask;->this$0:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
@@ -79,21 +97,25 @@
 
     invoke-direct {v1, p0}, Lcom/sonymobile/providers/media/ExtensionApi;-><init>(Landroid/content/Context;)V
 
-    .line 988
+    .line 1061
     invoke-virtual {p1}, Landroid/net/Uri;->getLastPathSegment()Ljava/lang/String;
 
     move-result-object p0
 
-    .line 989
+    .line 1062
     sget-object p1, Landroid/provider/MediaStore$Video$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
 
     invoke-static {p1, p0}, Landroid/net/Uri;->withAppendedPath(Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;
 
-    move-result-object p0
+    move-result-object v2
 
-    const/4 p1, 0x0
+    const/4 v5, 0x0
 
-    invoke-virtual {v1, p0, v0, p1, p1}, Lcom/sonymobile/providers/media/ExtensionApi;->update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
+    const/4 v6, 0x0
+
+    const/4 v4, 0x0
+
+    invoke-virtual/range {v1 .. v6}, Lcom/sonymobile/providers/media/ExtensionApi;->update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;[B)I
 
     :cond_0
     return-void
@@ -104,31 +126,31 @@
 .method public run()V
     .locals 12
 
-    .line 902
+    .line 975
     sget-object v0, Ljp/co/sony/mc/camera/mediasaving/MediaSavingResult;->FAIL:Ljp/co/sony/mc/camera/mediasaving/MediaSavingResult;
 
-    .line 904
+    .line 977
     iget-object v0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavingVideoTask;->mRequest:Ljp/co/sony/mc/camera/storage/VideoSavingRequest;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/storage/VideoSavingRequest;->getExtraOutput()Landroid/net/Uri;
 
     move-result-object v0
 
-    .line 905
+    .line 978
     iget-object v1, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavingVideoTask;->mRequest:Ljp/co/sony/mc/camera/storage/VideoSavingRequest;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/storage/VideoSavingRequest;->getFilePath()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 907
+    .line 980
     iget-object v2, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavingVideoTask;->mRequest:Ljp/co/sony/mc/camera/storage/VideoSavingRequest;
 
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/storage/VideoSavingRequest;->getStorageType()Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
     move-result-object v2
 
-    .line 909
+    .line 982
     sget-boolean v3, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     const/4 v4, 0x0
@@ -147,7 +169,7 @@
 
     iget-object v7, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavingVideoTask;->mRequest:Ljp/co/sony/mc/camera/storage/VideoSavingRequest;
 
-    .line 910
+    .line 983
     invoke-virtual {v7}, Ljp/co/sony/mc/camera/storage/VideoSavingRequest;->getRequestId()I
 
     move-result v7
@@ -162,10 +184,10 @@
 
     aput-object v6, v3, v4
 
-    .line 909
+    .line 982
     invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 928
+    .line 1001
     :cond_0
     iget-object v3, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavingVideoTask;->this$0:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
 
@@ -179,11 +201,11 @@
 
     check-cast v3, Ljava/util/concurrent/Semaphore;
 
-    .line 930
+    .line 1003
     :try_start_0
     invoke-virtual {v3}, Ljava/util/concurrent/Semaphore;->acquire()V
 
-    .line 931
+    .line 1004
     sget-boolean v6, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_2
@@ -224,7 +246,7 @@
 
     if-eqz v0, :cond_7
 
-    .line 940
+    .line 1013
     :try_start_2
     iget-object v8, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavingVideoTask;->mRequest:Ljp/co/sony/mc/camera/storage/VideoSavingRequest;
 
@@ -238,7 +260,7 @@
 
     if-eqz v8, :cond_4
 
-    .line 941
+    .line 1014
     :try_start_3
     const-string v8, "file"
 
@@ -252,14 +274,14 @@
 
     if-eqz v8, :cond_2
 
-    .line 942
+    .line 1015
     invoke-virtual {v0}, Landroid/net/Uri;->getPath()Ljava/lang/String;
 
     move-result-object v1
 
     goto :goto_0
 
-    .line 943
+    .line 1016
     :cond_2
     invoke-virtual {v0}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
 
@@ -271,12 +293,12 @@
 
     if-eqz v8, :cond_3
 
-    .line 944
+    .line 1017
     invoke-virtual {v0}, Landroid/net/Uri;->getPath()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 946
+    .line 1019
     :cond_3
     :goto_0
     iget-object v8, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavingVideoTask;->this$0:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
@@ -301,7 +323,7 @@
     :goto_1
     if-nez v8, :cond_6
 
-    .line 950
+    .line 1023
     :try_start_4
     invoke-virtual {v0}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
 
@@ -315,7 +337,7 @@
 
     goto :goto_2
 
-    .line 951
+    .line 1024
     :cond_5
     sget-object v0, Ljp/co/sony/mc/camera/mediasaving/MediaSavingResult;->FAIL:Ljp/co/sony/mc/camera/mediasaving/MediaSavingResult;
 
@@ -329,7 +351,7 @@
 
     goto :goto_3
 
-    .line 953
+    .line 1026
     :cond_7
     :try_start_5
     iget-object v0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavingVideoTask;->this$0:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
@@ -348,7 +370,7 @@
 
     if-eqz v8, :cond_8
 
-    .line 954
+    .line 1027
     :try_start_6
     sget-object v0, Ljp/co/sony/mc/camera/mediasaving/MediaSavingResult;->SUCCESS:Ljp/co/sony/mc/camera/mediasaving/MediaSavingResult;
 
@@ -364,11 +386,11 @@
     :catch_0
     move-object v8, v6
 
-    .line 957
+    .line 1030
     :catch_1
     sget-object v0, Ljp/co/sony/mc/camera/mediasaving/MediaSavingResult;->FAIL_MEMORY_FULL:Ljp/co/sony/mc/camera/mediasaving/MediaSavingResult;
 
-    .line 959
+    .line 1032
     :goto_3
     sget-boolean v9, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
@@ -384,7 +406,7 @@
 
     iget-object v11, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavingVideoTask;->mRequest:Ljp/co/sony/mc/camera/storage/VideoSavingRequest;
 
-    .line 960
+    .line 1033
     invoke-virtual {v11}, Ljp/co/sony/mc/camera/storage/VideoSavingRequest;->getRequestId()I
 
     move-result v11
@@ -399,19 +421,19 @@
 
     aput-object v10, v9, v4
 
-    .line 959
+    .line 1032
     invoke-static {v9}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 961
+    .line 1034
     :cond_9
     invoke-virtual {v3}, Ljava/util/concurrent/Semaphore;->release()V
 
     if-eqz v8, :cond_b
 
-    .line 963
+    .line 1036
     invoke-direct {p0, v8}, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavingVideoTask;->updateSpecialType(Landroid/net/Uri;)V
 
-    .line 964
+    .line 1037
     sget-boolean v3, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v3, :cond_a
@@ -440,7 +462,7 @@
 
     invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 970
+    .line 1043
     :cond_a
     iget-object v2, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavingVideoTask;->this$0:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
 
@@ -450,7 +472,7 @@
 
     goto :goto_4
 
-    .line 972
+    .line 1045
     :cond_b
     iget-object v0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavingVideoTask;->this$0:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
 
@@ -462,7 +484,7 @@
 
     invoke-static {v0, v1, v2, v3, v6}, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->-$$Nest$mnotifyStoreComplete(Ljp/co/sony/mc/camera/storage/SavingTaskManager;Ljp/co/sony/mc/camera/mediasaving/MediaSavingResult;Landroid/net/Uri;Ljp/co/sony/mc/camera/storage/SavingRequest;Ljava/lang/String;)V
 
-    .line 975
+    .line 1048
     :goto_4
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavingVideoTask;->this$0:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
 
@@ -470,7 +492,7 @@
 
     return-void
 
-    .line 934
+    .line 1007
     :catch_2
     new-array p0, v5, [Ljava/lang/String;
 

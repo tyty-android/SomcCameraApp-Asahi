@@ -18,7 +18,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1049
+    .line 1051
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -26,6 +26,14 @@
 
 .method public static getApi1Value(I)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sensitivitySmoothingMode"
+        }
+    .end annotation
 
     if-eqz p0, :cond_1
 
@@ -37,13 +45,13 @@
 
     goto :goto_0
 
-    .line 1061
+    .line 1063
     :cond_0
     const-string p0, "on"
 
     goto :goto_0
 
-    .line 1065
+    .line 1067
     :cond_1
     const-string p0, "off"
 
@@ -53,8 +61,16 @@
 
 .method static getApi2Value(Ljava/lang/String;)Ljava/lang/Integer;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sensitivitySmoothingModeApi1"
+        }
+    .end annotation
 
-    .line 1074
+    .line 1076
     invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
 
     const-string v0, "on"
@@ -80,7 +96,7 @@
     :cond_0
     const/4 p0, 0x0
 
-    .line 1080
+    .line 1082
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -90,7 +106,7 @@
     :cond_1
     const/4 p0, 0x1
 
-    .line 1076
+    .line 1078
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0

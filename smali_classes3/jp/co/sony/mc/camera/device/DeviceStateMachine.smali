@@ -49,18 +49,34 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraDeviceHandlerInquirer;Landroid/os/Handler;Landroid/os/Handler;Ljp/co/sony/mc/camera/device/DeviceStateMachine$IDeviceStateMachineLifeCycle;)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "applicationContext",
+            "deviceHandler",
+            "deviceThreadHandler",
+            "uiThreadHandler",
+            "lifeCycleCallback"
+        }
+    .end annotation
 
-    .line 169
+    .line 184
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 170
+    .line 185
     new-instance v0, Ljp/co/sony/mc/camera/device/state/DeviceStateNone;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateNone;-><init>()V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->mCurrentState:Ljp/co/sony/mc/camera/device/state/DeviceState;
 
-    .line 171
+    .line 186
     new-instance v0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     move-object v1, v0
@@ -86,48 +102,34 @@
 
 .method private changeTo(Ljp/co/sony/mc/camera/device/state/DeviceState;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "nextState"
+        }
+    .end annotation
 
-    .line 514
-    iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->mDeviceStateContext:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
+    .line 558
+    iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->mCurrentState:Ljp/co/sony/mc/camera/device/state/DeviceState;
 
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->isSwitchLensDuringStreaming()Z
+    invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceState;->equalsState(Ljp/co/sony/mc/camera/device/state/DeviceState;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 515
-    iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->mCurrentState:Ljp/co/sony/mc/camera/device/state/DeviceState;
-
-    invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceState;->equalsState(Ljp/co/sony/mc/camera/device/state/DeviceState;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
     instance-of v0, p1, Ljp/co/sony/mc/camera/device/state/DeviceStateNone;
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_0
+
+    goto :goto_0
 
     :cond_0
-    return-void
-
-    .line 521
-    :cond_1
-    iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->mCurrentState:Ljp/co/sony/mc/camera/device/state/DeviceState;
-
-    invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceState;->equalsState(Ljp/co/sony/mc/camera/device/state/DeviceState;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    return-void
-
-    :cond_2
     const/4 v0, 0x1
 
-    .line 527
+    .line 563
     new-array v0, v0, [Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -170,21 +172,23 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 528
+    .line 564
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->mCurrentState:Ljp/co/sony/mc/camera/device/state/DeviceState;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->mDeviceStateContext:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/device/state/DeviceState;->exit(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
 
-    .line 529
+    .line 565
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->mCurrentState:Ljp/co/sony/mc/camera/device/state/DeviceState;
 
-    .line 530
+    .line 566
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->mDeviceStateContext:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-virtual {p1, p0}, Ljp/co/sony/mc/camera/device/state/DeviceState;->entry(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
 
+    :cond_1
+    :goto_0
     return-void
 .end method
 
@@ -193,7 +197,7 @@
 .method public getDeviceThreadhandler()Landroid/os/Handler;
     .locals 0
 
-    .line 182
+    .line 197
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->mDeviceStateContext:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getDeviceThreadHandler()Landroid/os/Handler;
@@ -205,8 +209,18 @@
 
 .method public varargs sendEvent(Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;[Ljava/lang/Object;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "event",
+            "params"
+        }
+    .end annotation
 
-    .line 196
+    .line 211
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->mDeviceStateContext:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     new-instance v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;

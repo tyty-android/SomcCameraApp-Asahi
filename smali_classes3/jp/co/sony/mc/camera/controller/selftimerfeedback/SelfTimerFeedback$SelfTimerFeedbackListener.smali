@@ -22,4 +22,12 @@
 .end method
 
 .method public abstract onSoundTypeChange(J)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "remainTime"
+        }
+    .end annotation
 .end method

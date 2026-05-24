@@ -3,28 +3,42 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnTouchListener;
+.implements Lkotlin/jvm/functions/Function0;
+
+
+# instance fields
+.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder;
+
+.field public final synthetic f$1:Ljava/util/List;
 
 
 # direct methods
-.method public synthetic constructor <init>()V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder;Ljava/util/List;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder$$ExternalSyntheticLambda13;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder;
+
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder$$ExternalSyntheticLambda13;->f$1:Ljava/util/List;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
-    .locals 0
+.method public final invoke()Ljava/lang/Object;
+    .locals 1
 
     .line 0
-    invoke-static {p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder;->$r8$lambda$iDiEuCKZr7OZER9oYPTcYijfXBs(Landroid/view/View;Landroid/view/MotionEvent;)Z
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder$$ExternalSyntheticLambda13;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder;
 
-    move-result p0
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder$$ExternalSyntheticLambda13;->f$1:Ljava/util/List;
 
-    return p0
+    invoke-static {v0, p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder;->$r8$lambda$-tQKIckHBHHUWPG79Q8zctyLIUA(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder;Ljava/util/List;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
 .end method

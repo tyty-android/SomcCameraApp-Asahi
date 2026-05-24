@@ -7,7 +7,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 30
+    .line 28
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -15,8 +15,16 @@
 
 .method public static getAspectRatioTextId(Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "aspectRatio"
+        }
+    .end annotation
 
-    .line 651
+    .line 653
     sget-object v0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingResource$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$AspectRatio:[I
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;->ordinal()I
@@ -46,28 +54,36 @@
     return p0
 
     :cond_0
-    const p0, 0x7f110116
+    const p0, 0x7f110152
 
     return p0
 
     :cond_1
-    const p0, 0x7f110114
+    const p0, 0x7f110150
 
     return p0
 
     :cond_2
-    const p0, 0x7f110111
+    const p0, 0x7f11014d
 
     return p0
 
     :cond_3
-    const p0, 0x7f11011a
+    const p0, 0x7f110156
 
     return p0
 .end method
 
 .method public static getBasicDriveModeIconResId(Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "driveMode"
+        }
+    .end annotation
 
     .line 339
     sget-object v0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingResource$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$DriveMode:[I
@@ -85,57 +101,57 @@
     return p0
 
     :pswitch_0
-    const p0, 0x7f080151
+    const p0, 0x7f0801ad
 
     return p0
 
     :pswitch_1
-    const p0, 0x7f080155
+    const p0, 0x7f0801b1
 
     return p0
 
     :pswitch_2
-    const p0, 0x7f080145
+    const p0, 0x7f0801a1
 
     return p0
 
     :pswitch_3
-    const p0, 0x7f08014d
+    const p0, 0x7f0801a9
 
     return p0
 
     :pswitch_4
-    const p0, 0x7f080146
+    const p0, 0x7f0801a2
 
     return p0
 
     :pswitch_5
-    const p0, 0x7f080148
+    const p0, 0x7f0801a4
 
     return p0
 
     :pswitch_6
-    const p0, 0x7f080139
+    const p0, 0x7f080195
 
     return p0
 
     :pswitch_7
-    const p0, 0x7f080141
+    const p0, 0x7f08019d
 
     return p0
 
     :pswitch_8
-    const p0, 0x7f08013a
+    const p0, 0x7f080196
 
     return p0
 
     :pswitch_9
-    const p0, 0x7f08013c
+    const p0, 0x7f080198
 
     return p0
 
     :pswitch_a
-    const p0, 0x7f08015a
+    const p0, 0x7f0801b6
 
     return p0
 
@@ -159,6 +175,15 @@
 
 .method public static getDescriptionResIdList(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/util/List;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -184,7 +209,7 @@
 
     if-eqz v1, :cond_0
 
-    const p0, 0x7f1102e8
+    const p0, 0x7f110331
 
     .line 416
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -205,7 +230,7 @@
 
     if-eqz v1, :cond_1
 
-    const p0, 0x7f1101d6
+    const p0, 0x7f110222
 
     .line 418
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -226,7 +251,7 @@
 
     if-eqz v1, :cond_2
 
-    const p0, 0x7f110479
+    const p0, 0x7f1104c2
 
     .line 420
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -247,7 +272,7 @@
 
     if-eqz v1, :cond_3
 
-    const p0, 0x7f1102df
+    const p0, 0x7f110328
 
     .line 423
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -269,7 +294,7 @@
 
     if-eqz v1, :cond_4
 
-    const p0, 0x7f110239
+    const p0, 0x7f110282
 
     .line 425
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -309,7 +334,7 @@
 
     if-eqz p0, :cond_5
 
-    const p0, 0x7f110205
+    const p0, 0x7f110251
 
     .line 429
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -322,7 +347,7 @@
     goto/16 :goto_1
 
     :cond_5
-    const p0, 0x7f110204
+    const p0, 0x7f110250
 
     .line 431
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -343,7 +368,7 @@
 
     if-eqz v1, :cond_7
 
-    const p0, 0x7f11028f
+    const p0, 0x7f1102d8
 
     .line 434
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -364,7 +389,7 @@
 
     if-eqz v1, :cond_8
 
-    const p0, 0x7f11022a
+    const p0, 0x7f110273
 
     .line 437
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -386,7 +411,7 @@
 
     if-eqz v1, :cond_9
 
-    const p0, 0x7f11032f
+    const p0, 0x7f110378
 
     .line 439
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -407,7 +432,7 @@
 
     if-eqz v1, :cond_a
 
-    const p0, 0x7f110123
+    const p0, 0x7f11015f
 
     .line 441
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -449,7 +474,7 @@
 
     if-eqz v1, :cond_c
 
-    const p0, 0x7f110496
+    const p0, 0x7f1104e4
 
     .line 447
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -471,7 +496,7 @@
 
     if-eqz v1, :cond_d
 
-    const p0, 0x7f11028d
+    const p0, 0x7f1102d6
 
     .line 449
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -492,7 +517,7 @@
 
     if-eqz v1, :cond_e
 
-    const p0, 0x7f11049d
+    const p0, 0x7f1104ec
 
     .line 451
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -513,7 +538,7 @@
 
     if-eqz v1, :cond_f
 
-    const p0, 0x7f110120
+    const p0, 0x7f11015c
 
     .line 453
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -534,7 +559,7 @@
 
     if-eqz v1, :cond_10
 
-    const p0, 0x7f1103e1
+    const p0, 0x7f11042c
 
     .line 455
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -555,7 +580,7 @@
 
     if-eqz v1, :cond_11
 
-    const p0, 0x7f110278
+    const p0, 0x7f1102c3
 
     .line 457
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -576,7 +601,7 @@
 
     if-eqz v1, :cond_12
 
-    const p0, 0x7f11017c
+    const p0, 0x7f1101b9
 
     .line 459
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -597,7 +622,7 @@
 
     if-eqz v1, :cond_13
 
-    const p0, 0x7f110132
+    const p0, 0x7f11016f
 
     .line 461
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -618,7 +643,7 @@
 
     if-eqz v1, :cond_14
 
-    const p0, 0x7f110292
+    const p0, 0x7f1102db
 
     .line 464
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -640,7 +665,7 @@
 
     if-eqz v1, :cond_15
 
-    const p0, 0x7f110024
+    const p0, 0x7f110023
 
     .line 466
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -661,7 +686,7 @@
 
     if-eqz v1, :cond_16
 
-    const p0, 0x7f110298
+    const p0, 0x7f1102e1
 
     .line 468
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -670,7 +695,7 @@
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    const p0, 0x7f110297
+    const p0, 0x7f1102e0
 
     .line 470
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -692,7 +717,7 @@
 
     if-eqz v1, :cond_17
 
-    const p0, 0x7f11029d
+    const p0, 0x7f1102e6
 
     .line 472
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -713,7 +738,7 @@
 
     if-eqz v1, :cond_18
 
-    const p0, 0x7f110263
+    const p0, 0x7f1102ac
 
     .line 474
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -734,7 +759,7 @@
 
     if-eqz v1, :cond_19
 
-    const p0, 0x7f110160
+    const p0, 0x7f11019d
 
     .line 476
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -755,7 +780,7 @@
 
     if-eqz v1, :cond_1a
 
-    const p0, 0x7f110158
+    const p0, 0x7f110195
 
     .line 478
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -776,7 +801,7 @@
 
     if-eqz v1, :cond_1b
 
-    const p0, 0x7f110245
+    const p0, 0x7f11028e
 
     .line 480
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -797,7 +822,7 @@
 
     if-eqz v1, :cond_1c
 
-    const p0, 0x7f11036c
+    const p0, 0x7f1103b7
 
     .line 482
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -818,7 +843,7 @@
 
     if-eqz v1, :cond_1d
 
-    const p0, 0x7f110271
+    const p0, 0x7f1102bb
 
     .line 485
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -828,9 +853,19 @@
     .line 484
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    goto :goto_1
+    const p0, 0x7f1102be
+
+    .line 487
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p0
 
     .line 486
+    invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_1
+
+    .line 488
     :cond_1d
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->VOLUME_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -840,7 +875,7 @@
 
     if-eqz v1, :cond_1f
 
-    .line 487
+    .line 489
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p0
@@ -855,32 +890,32 @@
 
     if-eqz p0, :cond_1e
 
-    const p0, 0x7f11049b
+    const p0, 0x7f1104ea
 
-    .line 489
+    .line 491
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
-    .line 488
+    .line 490
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
     :cond_1e
-    const p0, 0x7f11049a
+    const p0, 0x7f1104e9
 
-    .line 492
+    .line 494
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
-    .line 491
+    .line 493
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 494
+    .line 496
     :cond_1f
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASIC_MODE_LEVEL_METER_DISPLAY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -890,19 +925,19 @@
 
     if-eqz v1, :cond_20
 
-    const p0, 0x7f1102f8
+    const p0, 0x7f110341
 
-    .line 496
+    .line 498
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
-    .line 495
+    .line 497
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 497
+    .line 499
     :cond_20
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->ULTRA_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -912,9 +947,9 @@
 
     if-eqz p0, :cond_22
 
-    const p0, 0x7f110486
+    const p0, 0x7f1104d3
 
-    .line 498
+    .line 500
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -925,7 +960,7 @@
 
     :cond_21
     :goto_0
-    const p0, 0x7f11044e
+    const p0, 0x7f110499
 
     .line 444
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -941,6 +976,14 @@
 
 .method public static getDriveModeIconResId(Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "driveMode"
+        }
+    .end annotation
 
     .line 310
     sget-object v0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingResource$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$DriveMode:[I
@@ -958,57 +1001,57 @@
     return p0
 
     :pswitch_0
-    const p0, 0x7f080151
+    const p0, 0x7f0801ad
 
     return p0
 
     :pswitch_1
-    const p0, 0x7f080155
+    const p0, 0x7f0801b1
 
     return p0
 
     :pswitch_2
-    const p0, 0x7f080145
+    const p0, 0x7f0801a1
 
     return p0
 
     :pswitch_3
-    const p0, 0x7f08014d
+    const p0, 0x7f0801a9
 
     return p0
 
     :pswitch_4
-    const p0, 0x7f080146
+    const p0, 0x7f0801a2
 
     return p0
 
     :pswitch_5
-    const p0, 0x7f080148
+    const p0, 0x7f0801a4
 
     return p0
 
     :pswitch_6
-    const p0, 0x7f080139
+    const p0, 0x7f080195
 
     return p0
 
     :pswitch_7
-    const p0, 0x7f080141
+    const p0, 0x7f08019d
 
     return p0
 
     :pswitch_8
-    const p0, 0x7f08013a
+    const p0, 0x7f080196
 
     return p0
 
     :pswitch_9
-    const p0, 0x7f08013c
+    const p0, 0x7f080198
 
     return p0
 
     :pswitch_a
-    const p0, 0x7f080159
+    const p0, 0x7f0801b5
 
     return p0
 
@@ -1032,6 +1075,14 @@
 
 .method public static getDriveModeSelftimerSound(Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;)Ljp/co/sony/mc/camera/sound/SoundPlayer$Type;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "driveMode"
+        }
+    .end annotation
 
     .line 403
     sget-object v0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingResource$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$DriveMode:[I
@@ -1069,6 +1120,14 @@
 
 .method public static getDriveModeTextResId(Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "driveMode"
+        }
+    .end annotation
 
     .line 380
     sget-object v0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingResource$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$DriveMode:[I
@@ -1116,50 +1175,58 @@
     return p0
 
     :cond_0
-    const p0, 0x7f1101d2
+    const p0, 0x7f11021e
 
     return p0
 
     :cond_1
-    const p0, 0x7f1101d3
+    const p0, 0x7f11021f
 
     return p0
 
     :cond_2
-    const p0, 0x7f1101cd
+    const p0, 0x7f110219
 
     return p0
 
     :cond_3
-    const p0, 0x7f1101cc
+    const p0, 0x7f110218
 
     return p0
 
     :cond_4
-    const p0, 0x7f1101d0
+    const p0, 0x7f11021c
 
     return p0
 
     :cond_5
-    const p0, 0x7f1101cf
+    const p0, 0x7f11021b
 
     return p0
 
     :cond_6
-    const p0, 0x7f1101ce
+    const p0, 0x7f11021a
 
     return p0
 
     :cond_7
-    const p0, 0x7f1101d4
+    const p0, 0x7f110220
 
     return p0
 .end method
 
 .method public static getImageResId(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 612
+    .line 614
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->MIC:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
@@ -1168,7 +1235,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 613
+    .line 615
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p0
@@ -1183,16 +1250,16 @@
 
     if-eqz p0, :cond_0
 
-    const p0, 0x7f08035c
+    const p0, 0x7f0803d6
 
     return p0
 
     :cond_0
-    const p0, 0x7f08035d
+    const p0, 0x7f0803d7
 
     return p0
 
-    .line 618
+    .line 620
     :cond_1
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FACE_DETECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -1202,11 +1269,11 @@
 
     if-eqz v0, :cond_2
 
-    const p0, 0x7f080355
+    const p0, 0x7f0803cf
 
     return p0
 
-    .line 620
+    .line 622
     :cond_2
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->DISP_CUSTOM:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -1216,7 +1283,7 @@
 
     if-eqz v0, :cond_4
 
-    .line 621
+    .line 623
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p0
@@ -1231,16 +1298,16 @@
 
     if-eqz p0, :cond_3
 
-    const p0, 0x7f080130
+    const p0, 0x7f08018e
 
     return p0
 
     :cond_3
-    const p0, 0x7f08012f
+    const p0, 0x7f08018d
 
     return p0
 
-    .line 626
+    .line 628
     :cond_4
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_BUTTON_CUSTOM:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -1254,7 +1321,7 @@
 
     return p0
 
-    .line 628
+    .line 630
     :cond_5
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->LOW_LIGHT_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -1264,11 +1331,11 @@
 
     if-eqz v0, :cond_6
 
-    const p0, 0x7f08035a
+    const p0, 0x7f0803d4
 
     return p0
 
-    .line 630
+    .line 632
     :cond_6
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->COMPUTATIONAL_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -1278,11 +1345,11 @@
 
     if-eqz v0, :cond_7
 
-    const p0, 0x7f080348
+    const p0, 0x7f0803be
 
     return p0
 
-    .line 632
+    .line 634
     :cond_7
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->GEOTAG:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -1292,11 +1359,11 @@
 
     if-eqz v0, :cond_8
 
-    const p0, 0x7f080362
+    const p0, 0x7f0803dc
 
     return p0
 
-    .line 634
+    .line 636
     :cond_8
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->PRODUCT_SHOWCASE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -1306,11 +1373,11 @@
 
     if-eqz v0, :cond_9
 
-    const p0, 0x7f08035f
+    const p0, 0x7f0803d9
 
     return p0
 
-    .line 636
+    .line 638
     :cond_9
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->HAND_SHUTTER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -1320,11 +1387,11 @@
 
     if-eqz v0, :cond_a
 
-    const p0, 0x7f080359
+    const p0, 0x7f0803d3
 
     return p0
 
-    .line 638
+    .line 640
     :cond_a
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->MACRO_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -1334,11 +1401,11 @@
 
     if-eqz v0, :cond_b
 
-    const p0, 0x7f080347
+    const p0, 0x7f0803bd
 
     return p0
 
-    .line 640
+    .line 642
     :cond_b
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->EXTEND_FPS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -1348,7 +1415,7 @@
 
     if-eqz v0, :cond_c
 
-    .line 641
+    .line 643
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p0
@@ -1363,11 +1430,11 @@
 
     if-eqz p0, :cond_d
 
-    const p0, 0x7f0800b7
+    const p0, 0x7f08011a
 
     return p0
 
-    .line 644
+    .line 646
     :cond_c
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->AUTO_FRAMING_RECORDING_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -1377,7 +1444,7 @@
 
     if-eqz p0, :cond_d
 
-    const p0, 0x7f080346
+    const p0, 0x7f0803bc
 
     return p0
 
@@ -1389,6 +1456,16 @@
 
 .method static getInformationResId(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "capturingMode",
+            "key"
+        }
+    .end annotation
 
     const/4 p0, -0x1
 
@@ -1397,6 +1474,14 @@
 
 .method public static getModeDescriptionResId(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "capturingMode"
+        }
+    .end annotation
 
     .line 298
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProP()Z
@@ -1405,7 +1490,7 @@
 
     if-eqz v0, :cond_0
 
-    const p0, 0x7f11033f
+    const p0, 0x7f110388
 
     return p0
 
@@ -1417,7 +1502,7 @@
 
     if-eqz v0, :cond_1
 
-    const p0, 0x7f110342
+    const p0, 0x7f11038b
 
     return p0
 
@@ -1429,7 +1514,7 @@
 
     if-eqz p0, :cond_2
 
-    const p0, 0x7f11033c
+    const p0, 0x7f110385
 
     return p0
 
@@ -1441,6 +1526,14 @@
 
 .method public static getModeIconResId(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "capturingMode"
+        }
+    .end annotation
 
     .line 225
     sget-object v0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingResource$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$CapturingMode:[I
@@ -1466,27 +1559,27 @@
     return p0
 
     :pswitch_0
-    const p0, 0x7f0802c2
+    const p0, 0x7f080346
 
     return p0
 
     :pswitch_1
-    const p0, 0x7f0802c8
+    const p0, 0x7f08034c
 
     return p0
 
     :pswitch_2
-    const p0, 0x7f0802c5
+    const p0, 0x7f080349
 
     return p0
 
     :cond_0
-    const p0, 0x7f080400
+    const p0, 0x7f08048a
 
     return p0
 
     :cond_1
-    const p0, 0x7f08040d
+    const p0, 0x7f080497
 
     return p0
 
@@ -1505,6 +1598,14 @@
 
 .method public static getModeInitialNameResId(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "capturingMode"
+        }
+    .end annotation
 
     .line 261
     sget-object v0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingResource$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$CapturingMode:[I
@@ -1532,23 +1633,31 @@
     return p0
 
     :cond_0
-    const p0, 0x7f11033e
+    const p0, 0x7f110387
 
     return p0
 
     :cond_1
-    const p0, 0x7f110344
+    const p0, 0x7f11038d
 
     return p0
 
     :cond_2
-    const p0, 0x7f110341
+    const p0, 0x7f11038a
 
     return p0
 .end method
 
 .method public static getModeNameContentDescriptionResId(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "capturingMode"
+        }
+    .end annotation
 
     .line 286
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProP()Z
@@ -1557,7 +1666,7 @@
 
     if-eqz v0, :cond_0
 
-    const p0, 0x7f1100dd
+    const p0, 0x7f1100f1
 
     return p0
 
@@ -1569,7 +1678,7 @@
 
     if-eqz v0, :cond_1
 
-    const p0, 0x7f1100f2
+    const p0, 0x7f110106
 
     return p0
 
@@ -1581,7 +1690,7 @@
 
     if-eqz p0, :cond_2
 
-    const p0, 0x7f1100c2
+    const p0, 0x7f1100d6
 
     return p0
 
@@ -1593,6 +1702,14 @@
 
 .method public static getModeNameResId(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "capturingMode"
+        }
+    .end annotation
 
     .line 274
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProP()Z
@@ -1601,7 +1718,7 @@
 
     if-eqz v0, :cond_0
 
-    const p0, 0x7f110340
+    const p0, 0x7f110389
 
     return p0
 
@@ -1613,7 +1730,7 @@
 
     if-eqz v0, :cond_1
 
-    const p0, 0x7f110343
+    const p0, 0x7f11038c
 
     return p0
 
@@ -1625,7 +1742,7 @@
 
     if-eqz p0, :cond_2
 
-    const p0, 0x7f11033d
+    const p0, 0x7f110386
 
     return p0
 
@@ -1637,6 +1754,14 @@
 
 .method public static getModeTitleResId(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "capturingMode"
+        }
+    .end annotation
 
     .line 201
     sget-object v0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingResource$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$CapturingMode:[I
@@ -1647,7 +1772,7 @@
 
     aget p0, v0, p0
 
-    const v0, 0x7f110322
+    const v0, 0x7f11036b
 
     packed-switch p0, :pswitch_data_0
 
@@ -1659,7 +1784,7 @@
     return v0
 
     :pswitch_1
-    const p0, 0x7f11031f
+    const p0, 0x7f110368
 
     return p0
 
@@ -1667,17 +1792,17 @@
     return v0
 
     :pswitch_3
-    const p0, 0x7f11033d
+    const p0, 0x7f110386
 
     return p0
 
     :pswitch_4
-    const p0, 0x7f110343
+    const p0, 0x7f11038c
 
     return p0
 
     :pswitch_5
-    const p0, 0x7f110340
+    const p0, 0x7f110389
 
     return p0
 
@@ -1697,6 +1822,14 @@
 
 .method public static getProModeIconResId(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "capturingMode"
+        }
+    .end annotation
 
     .line 245
     sget-object v0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingResource$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$CapturingMode:[I
@@ -1714,17 +1847,17 @@
     return p0
 
     :pswitch_0
-    const p0, 0x7f0802c1
+    const p0, 0x7f080345
 
     return p0
 
     :pswitch_1
-    const p0, 0x7f0802c7
+    const p0, 0x7f08034b
 
     return p0
 
     :pswitch_2
-    const p0, 0x7f0802c4
+    const p0, 0x7f080348
 
     return p0
 
@@ -1743,6 +1876,14 @@
 
 .method public static getSelftimerCountingDownIconResId(Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "driveMode"
+        }
+    .end annotation
 
     .line 368
     sget-object v0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingResource$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$DriveMode:[I
@@ -1766,97 +1907,41 @@
     return p0
 
     :cond_0
-    const p0, 0x7f080153
+    const p0, 0x7f0801af
 
     return p0
 
     :cond_1
-    const p0, 0x7f080157
-
-    return p0
-.end method
-
-.method public static getStreamingSettingTextId(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)I
-    .locals 1
-
-    .line 668
-    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;->RTMP_URL:Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;
-
-    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const p0, 0x7f110457
-
-    return p0
-
-    .line 670
-    :cond_0
-    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;->YOUTUBE:Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;
-
-    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    const p0, 0x7f110458
-
-    return p0
-
-    .line 672
-    :cond_1
-    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/NetworkUsage;->WIFI_ONLY:Ljp/co/sony/mc/camera/configuration/parameters/NetworkUsage;
-
-    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/configuration/parameters/NetworkUsage;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    const p0, 0x7f11034a
-
-    return p0
-
-    .line 674
-    :cond_2
-    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/NetworkUsage;->ANY_NETWORK:Ljp/co/sony/mc/camera/configuration/parameters/NetworkUsage;
-
-    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/configuration/parameters/NetworkUsage;->equals(Ljava/lang/Object;)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_3
-
-    const p0, 0x7f110347
-
-    return p0
-
-    :cond_3
-    const/4 p0, -0x1
+    const p0, 0x7f0801b3
 
     return p0
 .end method
 
 .method public static getSubCategoryTitleId(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 33
+    .line 31
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASIC_MODE_FOCUS_DISPLAY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    const v1, 0x7f110315
+    const v1, 0x7f11035e
 
     if-eqz v0, :cond_0
 
     return v1
 
-    .line 35
+    .line 33
     :cond_0
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASIC_MODE_SHUTTER_SPEED_DISPLAY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -1876,8 +1961,18 @@
 
 .method public static getSubDescriptionResId(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
-    .line 573
+    .line 575
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->WHITE_BALANCE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
@@ -1886,12 +1981,12 @@
 
     if-eqz p0, :cond_3
 
-    .line 574
+    .line 576
     instance-of p0, p1, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
     if-eqz p0, :cond_3
 
-    .line 575
+    .line 577
     sget-object p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingResource$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$WhiteBalance:[I
 
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
@@ -1917,17 +2012,17 @@
     goto :goto_0
 
     :cond_0
-    const p0, 0x7f110100
+    const p0, 0x7f110119
 
     return p0
 
     :cond_1
-    const p0, 0x7f1100ff
+    const p0, 0x7f110118
 
     return p0
 
     :cond_2
-    const p0, 0x7f1100fe
+    const p0, 0x7f110117
 
     return p0
 
@@ -1940,6 +2035,15 @@
 
 .method public static getSubDescriptionResIdList(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/util/List;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1951,12 +2055,12 @@
         }
     .end annotation
 
-    .line 504
+    .line 506
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 505
+    .line 507
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->PHOTO_FORMAT:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v1, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
@@ -1965,9 +2069,9 @@
 
     if-eqz v1, :cond_0
 
-    const p0, 0x7f11023a
+    const p0, 0x7f110283
 
-    .line 506
+    .line 508
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -1976,7 +2080,7 @@
 
     goto/16 :goto_0
 
-    .line 507
+    .line 509
     :cond_0
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->SAVE_DESTINATION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -1986,17 +2090,7 @@
 
     if-eqz v1, :cond_1
 
-    const p0, 0x7f1103e7
-
-    .line 509
-    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p0
-
-    .line 508
-    invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    const p0, 0x7f1103e5
+    const p0, 0x7f110432
 
     .line 511
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -2006,7 +2100,7 @@
     .line 510
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    const p0, 0x7f1103e4
+    const p0, 0x7f110430
 
     .line 513
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -2016,7 +2110,7 @@
     .line 512
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    const p0, 0x7f1103e3
+    const p0, 0x7f11042f
 
     .line 515
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -2026,7 +2120,7 @@
     .line 514
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    const p0, 0x7f1103e6
+    const p0, 0x7f11042e
 
     .line 517
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -2036,7 +2130,7 @@
     .line 516
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    const p0, 0x7f1103e2
+    const p0, 0x7f110431
 
     .line 519
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -2046,9 +2140,19 @@
     .line 518
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    goto/16 :goto_0
+    const p0, 0x7f11042d
+
+    .line 521
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p0
 
     .line 520
+    invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto/16 :goto_0
+
+    .line 522
     :cond_1
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_STABILIZER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -2058,7 +2162,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 521
+    .line 523
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p0
@@ -2077,19 +2181,19 @@
 
     if-nez p0, :cond_c
 
-    const p0, 0x7f110497
+    const p0, 0x7f1104e5
 
-    .line 523
+    .line 525
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
-    .line 522
+    .line 524
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto/16 :goto_0
 
-    .line 525
+    .line 527
     :cond_2
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -2099,19 +2203,19 @@
 
     if-eqz v1, :cond_3
 
-    const p0, 0x7f110296
+    const p0, 0x7f1102df
 
-    .line 527
+    .line 529
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
-    .line 526
+    .line 528
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto/16 :goto_0
 
-    .line 528
+    .line 530
     :cond_3
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_MF_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -2121,19 +2225,19 @@
 
     if-eqz v1, :cond_4
 
-    const p0, 0x7f11029c
+    const p0, 0x7f1102e5
 
-    .line 530
+    .line 532
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
-    .line 529
+    .line 531
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto/16 :goto_0
 
-    .line 531
+    .line 533
     :cond_4
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->FACE_DETECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -2143,7 +2247,7 @@
 
     if-eqz v1, :cond_6
 
-    .line 532
+    .line 534
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p0
@@ -2162,30 +2266,30 @@
 
     if-eqz p0, :cond_5
 
-    const p0, 0x7f110206
+    const p0, 0x7f110252
 
-    .line 534
+    .line 536
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
-    .line 533
+    .line 535
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_5
-    const p0, 0x7f110203
+    const p0, 0x7f11024f
 
-    .line 537
+    .line 539
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
-    .line 536
+    .line 538
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto/16 :goto_0
 
-    .line 538
+    .line 540
     :cond_6
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->TOUCH_INTENTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -2195,47 +2299,47 @@
 
     if-eqz v1, :cond_7
 
-    const p0, 0x7f11047c
-
-    .line 539
-    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p0
-
-    invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    const p0, 0x7f11047d
-
-    .line 542
-    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p0
+    const p0, 0x7f1104c5
 
     .line 541
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p0
+
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    const p0, 0x7f11047a
+    const p0, 0x7f1104c6
+
+    .line 544
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p0
 
     .line 543
+    invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    const p0, 0x7f1104c3
+
+    .line 545
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    const p0, 0x7f11047b
+    const p0, 0x7f1104c4
 
-    .line 546
+    .line 548
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
-    .line 545
+    .line 547
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto/16 :goto_0
 
-    .line 547
+    .line 549
     :cond_7
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->MIC:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -2245,17 +2349,17 @@
 
     if-eqz v1, :cond_9
 
-    const p0, 0x7f110330
+    const p0, 0x7f110379
 
-    .line 549
+    .line 551
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
-    .line 548
+    .line 550
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 550
+    .line 552
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p0
@@ -2270,32 +2374,32 @@
 
     if-eqz p0, :cond_8
 
-    const p0, 0x7f110331
+    const p0, 0x7f11037a
 
-    .line 552
+    .line 554
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
-    .line 551
+    .line 553
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
     :cond_8
-    const p0, 0x7f110332
+    const p0, 0x7f11037b
 
-    .line 555
+    .line 557
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
-    .line 554
+    .line 556
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 557
+    .line 559
     :cond_9
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->EXTEND_FPS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -2305,19 +2409,19 @@
 
     if-eqz v1, :cond_a
 
-    const p0, 0x7f110122
+    const p0, 0x7f11015e
 
-    .line 559
+    .line 561
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
-    .line 558
+    .line 560
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 560
+    .line 562
     :cond_a
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->PRODUCT_SHOWCASE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -2327,19 +2431,19 @@
 
     if-eqz v1, :cond_b
 
-    const p0, 0x7f11036b
+    const p0, 0x7f1103b6
 
-    .line 562
+    .line 564
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
-    .line 561
+    .line 563
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 563
+    .line 565
     :cond_b
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->VOLUME_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -2349,7 +2453,7 @@
 
     if-eqz p0, :cond_c
 
-    .line 564
+    .line 566
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p0
@@ -2368,14 +2472,14 @@
 
     if-eqz p0, :cond_c
 
-    const p0, 0x7f1102e7
+    const p0, 0x7f110330
 
-    .line 566
+    .line 568
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
-    .line 565
+    .line 567
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_c
@@ -2385,8 +2489,16 @@
 
 .method public static getTitleTextId(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)I
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 42
+    .line 40
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;->equals(Ljava/lang/Object;)Z
@@ -2395,11 +2507,11 @@
 
     if-eqz v0, :cond_0
 
-    const p0, 0x7f1103f7
+    const p0, 0x7f110442
 
     return p0
 
-    .line 44
+    .line 42
     :cond_0
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FLASH:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -2409,11 +2521,11 @@
 
     if-eqz v0, :cond_1
 
-    const p0, 0x7f110242
+    const p0, 0x7f11028b
 
     return p0
 
-    .line 46
+    .line 44
     :cond_1
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->DISPLAY_FLASH:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -2423,14 +2535,14 @@
 
     if-eqz v0, :cond_2
 
-    .line 47
+    .line 45
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;->getParameterKeyTitleTextId()I
 
     move-result p0
 
     return p0
 
-    .line 48
+    .line 46
     :cond_2
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_STABILIZER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -2440,14 +2552,14 @@
 
     if-eqz v0, :cond_3
 
-    .line 49
+    .line 47
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->getParameterKeyTitleText()I
 
     move-result p0
 
     return p0
 
-    .line 50
+    .line 48
     :cond_3
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->ASPECT_RATIO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -2457,11 +2569,11 @@
 
     if-eqz v0, :cond_4
 
-    const p0, 0x7f11011b
+    const p0, 0x7f110157
 
     return p0
 
-    .line 52
+    .line 50
     :cond_4
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->PHOTO_LIGHT:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -2471,11 +2583,11 @@
 
     if-eqz v0, :cond_5
 
-    const p0, 0x7f110492
+    const p0, 0x7f1104e0
 
     return p0
 
-    .line 54
+    .line 52
     :cond_5
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->DRIVE_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -2485,11 +2597,11 @@
 
     if-eqz v0, :cond_6
 
-    const p0, 0x7f1101d1
+    const p0, 0x7f11021d
 
     return p0
 
-    .line 56
+    .line 54
     :cond_6
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->SELF_TIMER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -2499,11 +2611,11 @@
 
     if-eqz v0, :cond_7
 
-    const p0, 0x7f110472
+    const p0, 0x7f1104bb
 
     return p0
 
-    .line 58
+    .line 56
     :cond_7
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -2513,11 +2625,11 @@
 
     if-eqz v0, :cond_8
 
-    const p0, 0x7f110259
+    const p0, 0x7f1102a2
 
     return p0
 
-    .line 60
+    .line 58
     :cond_8
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->TOUCH_INTENTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -2527,11 +2639,11 @@
 
     if-eqz v0, :cond_9
 
-    const p0, 0x7f11047f
+    const p0, 0x7f1104c8
 
     return p0
 
-    .line 62
+    .line 60
     :cond_9
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->METERING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -2541,11 +2653,11 @@
 
     if-eqz v0, :cond_a
 
-    const p0, 0x7f11032c
+    const p0, 0x7f110375
 
     return p0
 
-    .line 64
+    .line 62
     :cond_a
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->WHITE_BALANCE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -2555,11 +2667,11 @@
 
     if-eqz v0, :cond_b
 
-    const p0, 0x7f1104bc
+    const p0, 0x7f11050b
 
     return p0
 
-    .line 66
+    .line 64
     :cond_b
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -2569,11 +2681,11 @@
 
     if-eqz v0, :cond_c
 
-    const p0, 0x7f1101d8
+    const p0, 0x7f110224
 
     return p0
 
-    .line 68
+    .line 66
     :cond_c
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->BACK_SOFT_SKIN:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -2581,13 +2693,13 @@
 
     move-result v0
 
-    const v1, 0x7f11044f
+    const v1, 0x7f11049a
 
     if-eqz v0, :cond_d
 
     return v1
 
-    .line 70
+    .line 68
     :cond_d
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FRONT_SOFT_SKIN:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -2599,7 +2711,7 @@
 
     return v1
 
-    .line 72
+    .line 70
     :cond_e
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->BURST_FEEDBACK:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -2609,11 +2721,11 @@
 
     if-eqz v0, :cond_f
 
-    const p0, 0x7f110166
+    const p0, 0x7f1101a3
 
     return p0
 
-    .line 74
+    .line 72
     :cond_f
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->GRID_LINE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -2623,11 +2735,11 @@
 
     if-eqz v0, :cond_10
 
-    const p0, 0x7f11028e
+    const p0, 0x7f1102d7
 
     return p0
 
-    .line 76
+    .line 74
     :cond_10
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->HORIZONTAL_LEVEL_METER:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -2637,11 +2749,11 @@
 
     if-eqz v0, :cond_11
 
-    const p0, 0x7f1102f7
+    const p0, 0x7f110340
 
     return p0
 
-    .line 78
+    .line 76
     :cond_11
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->VOLUME_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -2651,11 +2763,11 @@
 
     if-eqz v0, :cond_12
 
-    const p0, 0x7f11049f
+    const p0, 0x7f1104ee
 
     return p0
 
-    .line 80
+    .line 78
     :cond_12
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->SHUTTER_SOUND:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -2665,11 +2777,11 @@
 
     if-eqz v0, :cond_13
 
-    const p0, 0x7f110121
+    const p0, 0x7f11015d
 
     return p0
 
-    .line 82
+    .line 80
     :cond_13
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->SAVE_DESTINATION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -2679,11 +2791,11 @@
 
     if-eqz v0, :cond_14
 
-    const p0, 0x7f1103ec
+    const p0, 0x7f110437
 
     return p0
 
-    .line 84
+    .line 82
     :cond_14
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->GEOTAG:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -2693,11 +2805,11 @@
 
     if-eqz v0, :cond_15
 
-    const p0, 0x7f110279
+    const p0, 0x7f1102c4
 
     return p0
 
-    .line 86
+    .line 84
     :cond_15
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->FUNCTION_CUSTOM:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -2707,11 +2819,11 @@
 
     if-eqz v0, :cond_16
 
-    const p0, 0x7f110182
+    const p0, 0x7f1101bf
 
     return p0
 
-    .line 88
+    .line 86
     :cond_16
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->TIPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -2721,11 +2833,11 @@
 
     if-eqz v0, :cond_17
 
-    const p0, 0x7f110476
+    const p0, 0x7f1104bf
 
     return p0
 
-    .line 90
+    .line 88
     :cond_17
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->ACCESSIBILITY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -2735,11 +2847,11 @@
 
     if-eqz v0, :cond_18
 
-    const p0, 0x7f1100fa
+    const p0, 0x7f110110
 
     return p0
 
-    .line 92
+    .line 90
     :cond_18
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->DISP_CUSTOM:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -2749,11 +2861,11 @@
 
     if-eqz v0, :cond_19
 
-    const p0, 0x7f110180
+    const p0, 0x7f1101bd
 
     return p0
 
-    .line 94
+    .line 92
     :cond_19
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -2763,13 +2875,13 @@
 
     if-eqz v0, :cond_1a
 
-    const p0, 0x7f11046b
+    const p0, 0x7f1104b4
 
     return p0
 
-    .line 96
+    .line 94
     :cond_1a
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_NOTES_ON_USE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;->equals(Ljava/lang/Object;)Z
 
@@ -2777,13 +2889,13 @@
 
     if-eqz v0, :cond_1b
 
-    const p0, 0x7f1101a5
+    const p0, 0x7f1103a8
 
     return p0
 
-    .line 98
+    .line 96
     :cond_1b
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;->equals(Ljava/lang/Object;)Z
 
@@ -2791,41 +2903,41 @@
 
     if-eqz v0, :cond_1c
 
-    const p0, 0x7f11035d
+    const p0, 0x7f1103da
 
     return p0
 
-    .line 100
+    .line 98
     :cond_1c
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FACE_DETECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1d
 
-    const p0, 0x7f1101aa
+    const p0, 0x7f110254
 
     return p0
 
-    .line 102
+    .line 100
     :cond_1d
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1e
 
-    const p0, 0x7f11038f
+    const p0, 0x7f110334
 
     return p0
 
-    .line 104
+    .line 102
     :cond_1e
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FACE_DETECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VOLUME_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
@@ -2833,13 +2945,13 @@
 
     if-eqz v0, :cond_1f
 
-    const p0, 0x7f110208
+    const p0, 0x7f1104eb
 
     return p0
 
-    .line 106
+    .line 104
     :cond_1f
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->HAND_SHUTTER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
@@ -2847,13 +2959,13 @@
 
     if-eqz v0, :cond_20
 
-    const p0, 0x7f1102eb
+    const p0, 0x7f1102da
 
     return p0
 
-    .line 108
+    .line 106
     :cond_20
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VOLUME_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_AREA:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
@@ -2861,13 +2973,13 @@
 
     if-eqz v0, :cond_21
 
-    const p0, 0x7f11049c
+    const p0, 0x7f110290
 
     return p0
 
-    .line 110
+    .line 108
     :cond_21
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->HAND_SHUTTER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_FRAME_COLOR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
@@ -2875,13 +2987,13 @@
 
     if-eqz v0, :cond_22
 
-    const p0, 0x7f110291
+    const p0, 0x7f110293
 
     return p0
 
-    .line 112
+    .line 110
     :cond_22
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_AREA:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_MAGNIFICATION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
@@ -2889,13 +3001,13 @@
 
     if-eqz v0, :cond_23
 
-    const p0, 0x7f110247
+    const p0, 0x7f110299
 
     return p0
 
-    .line 114
+    .line 112
     :cond_23
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_FRAME_COLOR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->EV:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
@@ -2903,13 +3015,13 @@
 
     if-eqz v0, :cond_24
 
-    const p0, 0x7f11024a
+    const p0, 0x7f110246
 
     return p0
 
-    .line 116
+    .line 114
     :cond_24
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_MAGNIFICATION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->ISO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
@@ -2917,13 +3029,13 @@
 
     if-eqz v0, :cond_25
 
-    const p0, 0x7f110250
+    const p0, 0x7f110325
 
     return p0
 
-    .line 118
+    .line 116
     :cond_25
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->EV:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->PHOTO_FORMAT:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
@@ -2931,13 +3043,13 @@
 
     if-eqz v0, :cond_26
 
-    const p0, 0x7f1101fa
+    const p0, 0x7f110287
 
     return p0
 
-    .line 120
+    .line 118
     :cond_26
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->ISO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->SHUTTER_SPEED:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
@@ -2945,27 +3057,27 @@
 
     if-eqz v0, :cond_27
 
-    const p0, 0x7f1102dc
+    const p0, 0x7f110494
 
     return p0
 
-    .line 122
+    .line 120
     :cond_27
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->PHOTO_FORMAT:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->QUICK_LAUNCH:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_28
 
-    const p0, 0x7f11023e
+    const p0, 0x7f110326
 
     return p0
 
-    .line 124
+    .line 122
     :cond_28
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->SHUTTER_SPEED:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->OBJECT_TRACKING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
@@ -2973,83 +3085,83 @@
 
     if-eqz v0, :cond_29
 
-    const p0, 0x7f110449
+    const p0, 0x7f1104ca
 
     return p0
 
-    .line 126
+    .line 124
     :cond_29
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->QUICK_LAUNCH:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2a
-
-    const p0, 0x7f1102dd
-
-    return p0
-
-    .line 128
-    :cond_2a
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->OBJECT_TRACKING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2b
-
-    const p0, 0x7f110481
-
-    return p0
-
-    .line 130
-    :cond_2b
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_SIZE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_2c
+    if-eqz v0, :cond_2a
 
-    const p0, 0x7f110396
+    const p0, 0x7f1103e1
 
     return p0
 
-    .line 132
-    :cond_2c
+    .line 126
+    :cond_2a
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_FPS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    const v1, 0x7f110263
+    const v1, 0x7f1102ac
 
-    if-eqz v0, :cond_2d
+    if-eqz v0, :cond_2b
 
     return v1
 
-    .line 134
-    :cond_2d
+    .line 128
+    :cond_2b
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->EXTEND_FPS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    const v2, 0x7f110124
+    const v2, 0x7f110160
 
-    if-eqz v0, :cond_2e
+    if-eqz v0, :cond_2c
 
     return v2
 
-    .line 136
-    :cond_2e
+    .line 130
+    :cond_2c
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->WIND_NOISE_REDUCTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2d
+
+    const p0, 0x7f1102f7
+
+    return p0
+
+    .line 132
+    :cond_2d
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2e
+
+    const p0, 0x7f1102e4
+
+    return p0
+
+    .line 134
+    :cond_2e
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_MF_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
@@ -3057,13 +3169,13 @@
 
     if-eqz v0, :cond_2f
 
-    const p0, 0x7f1102ae
+    const p0, 0x7f1102e9
 
     return p0
 
-    .line 138
+    .line 136
     :cond_2f
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->MIC:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
@@ -3071,41 +3183,41 @@
 
     if-eqz v0, :cond_30
 
-    const p0, 0x7f11029b
+    const p0, 0x7f11037e
 
     return p0
 
-    .line 140
+    .line 138
     :cond_30
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_MF_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_31
 
-    const p0, 0x7f1102a0
+    const p0, 0x7f11016f
 
     return p0
 
-    .line 142
+    .line 140
     :cond_31
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->MIC:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->HAPTIC_FEEDBACK:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_32
 
-    const p0, 0x7f110335
+    const p0, 0x7f1102dc
 
     return p0
 
-    .line 144
+    .line 142
     :cond_32
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_BUTTON_CUSTOM:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;->equals(Ljava/lang/Object;)Z
 
@@ -3113,75 +3225,55 @@
 
     if-eqz v0, :cond_33
 
-    const p0, 0x7f110132
+    const p0, 0x7f110024
 
     return p0
 
-    .line 146
+    .line 144
     :cond_33
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->HAPTIC_FEEDBACK:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_34
-
-    const p0, 0x7f110293
-
-    return p0
-
-    .line 148
-    :cond_34
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_BUTTON_CUSTOM:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_35
-
-    const p0, 0x7f110025
-
-    return p0
-
-    .line 150
-    :cond_35
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->RECOMMENDED_SETTINGS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_37
+    if-eqz v0, :cond_34
 
-    .line 151
-    invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isStreaming()Z
-
-    move-result p0
-
-    if-eqz p0, :cond_36
-
-    const p0, 0x7f110456
+    const p0, 0x7f1103d6
 
     return p0
 
-    :cond_36
-    const p0, 0x7f11038b
-
-    return p0
-
-    .line 156
-    :cond_37
+    .line 146
+    :cond_34
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->PEAKING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_35
+
+    const p0, 0x7f1103a5
+
+    return p0
+
+    .line 148
+    :cond_35
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->PEAKING_COLOR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_36
+
+    const p0, 0x7f1103a2
+
+    return p0
+
+    .line 150
+    :cond_36
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->COLOR_TONE_PROFILE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
@@ -3189,35 +3281,7 @@
 
     if-eqz v0, :cond_38
 
-    const p0, 0x7f11035b
-
-    return p0
-
-    .line 158
-    :cond_38
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->PEAKING_COLOR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_39
-
-    const p0, 0x7f110358
-
-    return p0
-
-    .line 160
-    :cond_39
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->COLOR_TONE_PROFILE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3b
-
-    .line 161
+    .line 151
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p0
@@ -3230,20 +3294,58 @@
 
     move-result p0
 
-    if-eqz p0, :cond_3a
+    if-eqz p0, :cond_37
 
-    const p0, 0x7f110178
-
-    return p0
-
-    :cond_3a
-    const p0, 0x7f11030e
+    const p0, 0x7f1101b5
 
     return p0
 
-    .line 166
-    :cond_3b
+    :cond_37
+    const p0, 0x7f110357
+
+    return p0
+
+    .line 156
+    :cond_38
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_FPS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_39
+
+    return v1
+
+    .line 158
+    :cond_39
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->EXTEND_FPS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3a
+
+    return v2
+
+    .line 160
+    :cond_3a
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->PRODUCT_SHOWCASE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3b
+
+    const p0, 0x7f1103ba
+
+    return p0
+
+    .line 162
+    :cond_3b
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->MACRO_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
@@ -3251,11 +3353,13 @@
 
     if-eqz v0, :cond_3c
 
-    return v1
+    const p0, 0x7f110196
 
-    .line 168
+    return p0
+
+    .line 164
     :cond_3c
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->EXTEND_FPS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASIC_MODE_FOCUS_DISPLAY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
@@ -3263,11 +3367,13 @@
 
     if-eqz v0, :cond_3d
 
-    return v2
+    const p0, 0x7f1102a3
 
-    .line 170
+    return p0
+
+    .line 166
     :cond_3d
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->PRODUCT_SHOWCASE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASIC_MODE_SHUTTER_SPEED_DISPLAY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
@@ -3275,27 +3381,27 @@
 
     if-eqz v0, :cond_3e
 
-    const p0, 0x7f11036f
+    const p0, 0x7f110443
 
     return p0
 
-    .line 172
+    .line 168
     :cond_3e
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_CONNECT_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->COMPUTATIONAL_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_3f
 
-    const p0, 0x7f110459
+    const p0, 0x7f11019e
 
     return p0
 
-    .line 174
+    .line 170
     :cond_3f
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_QUALITY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->AUTO_FRAMING_RECORDING_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
@@ -3303,27 +3409,27 @@
 
     if-eqz v0, :cond_40
 
-    const p0, 0x7f110494
+    const p0, 0x7f1102bd
 
     return p0
 
-    .line 176
+    .line 172
     :cond_40
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->NETWORK_USAGE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->AUTO_FRAMING_ORIENTATION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_41
 
-    const p0, 0x7f110349
+    const p0, 0x7f1102ba
 
     return p0
 
-    .line 178
+    .line 174
     :cond_41
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->MACRO_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FRAMING_ASSIST_POSITION_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
@@ -3331,13 +3437,13 @@
 
     if-eqz v0, :cond_42
 
-    const p0, 0x7f110159
+    const p0, 0x7f1102d4
 
     return p0
 
-    .line 180
+    .line 176
     :cond_42
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASIC_MODE_FOCUS_DISPLAY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASIC_MODE_LEVEL_METER_DISPLAY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
@@ -3345,13 +3451,13 @@
 
     if-eqz v0, :cond_43
 
-    const p0, 0x7f11025a
+    const p0, 0x7f110344
 
     return p0
 
-    .line 182
+    .line 178
     :cond_43
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASIC_MODE_SHUTTER_SPEED_DISPLAY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->ULTRA_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
@@ -3359,69 +3465,102 @@
 
     if-eqz v0, :cond_44
 
-    const p0, 0x7f1103f8
+    const p0, 0x7f1104d4
 
     return p0
 
-    .line 184
+    .line 180
     :cond_44
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->COMPUTATIONAL_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->MODE_INTRODUCTION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_45
-
-    const p0, 0x7f110161
-
-    return p0
-
-    .line 186
-    :cond_45
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->AUTO_FRAMING_RECORDING_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_46
-
-    const p0, 0x7f110273
-
-    return p0
-
-    .line 188
-    :cond_46
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->AUTO_FRAMING_ORIENTATION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_47
-
-    const p0, 0x7f110270
-
-    return p0
-
-    .line 190
-    :cond_47
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FRAMING_ASSIST_POSITION_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_48
 
-    const p0, 0x7f110289
+    .line 181
+    invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProPhoto()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_45
+
+    const p0, 0x7f1103a7
 
     return p0
 
-    .line 192
+    .line 183
+    :cond_45
+    invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_46
+
+    const p0, 0x7f1104e8
+
+    return p0
+
+    .line 185
+    :cond_46
+    invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoFraming()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_47
+
+    const p0, 0x7f1102b7
+
+    return p0
+
+    .line 187
+    :cond_47
+    invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isGimbal()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_4b
+
+    const p0, 0x7f1102d5
+
+    return p0
+
+    .line 190
     :cond_48
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASIC_MODE_LEVEL_METER_DISPLAY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->AI_SUGGESTION_DETECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
@@ -3429,25 +3568,39 @@
 
     if-eqz v0, :cond_49
 
-    const p0, 0x7f1102fb
+    const p0, 0x7f110146
+
+    return p0
+
+    .line 192
+    :cond_49
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->TRIPOD_FRAMING_INTRODUCTION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+
+    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4a
+
+    const p0, 0x7f1104ce
 
     return p0
 
     .line 194
-    :cond_49
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->ULTRA_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    :cond_4a
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->TRIPOD_FRAMING_ASSISTANCE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->equals(Ljava/lang/Object;)Z
 
     move-result p0
 
-    if-eqz p0, :cond_4a
+    if-eqz p0, :cond_4b
 
-    const p0, 0x7f110487
+    const p0, 0x7f1104da
 
     return p0
 
-    :cond_4a
+    :cond_4b
     const/4 p0, -0x1
 
     return p0
@@ -3455,6 +3608,14 @@
 
 .method static isExclusiveInformationId(I)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "resId"
+        }
+    .end annotation
 
     const/4 p0, 0x0
 

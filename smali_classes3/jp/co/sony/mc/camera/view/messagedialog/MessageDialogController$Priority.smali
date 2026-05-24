@@ -42,7 +42,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
     .locals 4
 
-    .line 85
+    .line 83
     sget-object v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->HIGH:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
@@ -61,7 +61,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 90
+    .line 88
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
     const-string v1, "IMMEDIATELY"
@@ -72,7 +72,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    .line 95
+    .line 93
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
     const-string v1, "HIGH"
@@ -83,7 +83,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->HIGH:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    .line 100
+    .line 98
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
     const-string v1, "NORMAL"
@@ -94,7 +94,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    .line 104
+    .line 102
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
     const-string v1, "LOW"
@@ -105,7 +105,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    .line 85
+    .line 83
     invoke-static {}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->$values()[Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
     move-result-object v0
@@ -117,16 +117,29 @@
 
 .method private constructor <init>(Ljava/lang/String;II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "priority"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)V"
         }
     .end annotation
 
-    .line 107
+    .line 105
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 108
+    .line 106
     iput p3, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->priority:I
 
     return-void
@@ -134,8 +147,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 85
+    .line 83
     const-class v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -150,7 +171,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
     .locals 1
 
-    .line 85
+    .line 83
     sget-object v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->$VALUES:[Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->clone()Ljava/lang/Object;

@@ -53,7 +53,7 @@
     f = "ViewFinderUiState.kt"
     i = {}
     l = {
-        0x13b
+        0xb8
     }
     m = "invokeSuspend"
     n = {}
@@ -167,7 +167,7 @@
 
     move-result-object v0
 
-    .line 313
+    .line 182
     iget v1, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$1;->label:I
 
     const/4 v2, 0x1
@@ -192,7 +192,7 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 314
+    .line 183
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$getCameraStatusModel$p(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
@@ -203,7 +203,7 @@
 
     move-result-object p1
 
-    .line 315
+    .line 184
     invoke-static {p1}, Landroidx/lifecycle/Transformations;->distinctUntilChanged(Landroidx/lifecycle/LiveData;)Landroidx/lifecycle/LiveData;
 
     move-result-object p1
@@ -236,7 +236,7 @@
 
     return-object v0
 
-    .line 324
+    .line 193
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

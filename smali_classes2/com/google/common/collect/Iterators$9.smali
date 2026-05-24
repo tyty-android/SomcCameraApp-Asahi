@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/common/collect/Iterators;->singletonIterator(Ljava/lang/Object;)Lcom/google/common/collect/UnmodifiableIterator;
+    value = Lcom/google/common/collect/Iterators;->forEnumeration(Ljava/util/Enumeration;)Lcom/google/common/collect/UnmodifiableIterator;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,17 +22,23 @@
 
 
 # instance fields
-.field done:Z
-
-.field final synthetic val$value:Ljava/lang/Object;
+.field final synthetic val$enumeration:Ljava/util/Enumeration;
 
 
 # direct methods
-.method constructor <init>(Ljava/lang/Object;)V
+.method constructor <init>(Ljava/util/Enumeration;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "val$enumeration"
+        }
+    .end annotation
 
-    .line 1056
-    iput-object p1, p0, Lcom/google/common/collect/Iterators$9;->val$value:Ljava/lang/Object;
+    .line 1145
+    iput-object p1, p0, Lcom/google/common/collect/Iterators$9;->val$enumeration:Ljava/util/Enumeration;
 
     invoke-direct {p0}, Lcom/google/common/collect/UnmodifiableIterator;-><init>()V
 
@@ -44,42 +50,33 @@
 .method public hasNext()Z
     .locals 0
 
-    .line 1061
-    iget-boolean p0, p0, Lcom/google/common/collect/Iterators$9;->done:Z
+    .line 1148
+    iget-object p0, p0, Lcom/google/common/collect/Iterators$9;->val$enumeration:Ljava/util/Enumeration;
 
-    xor-int/lit8 p0, p0, 0x1
+    invoke-interface {p0}, Ljava/util/Enumeration;->hasMoreElements()Z
+
+    move-result p0
 
     return p0
 .end method
 
 .method public next()Ljava/lang/Object;
-    .locals 1
+    .locals 0
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TT;"
         }
     .end annotation
 
-    .line 1066
-    iget-boolean v0, p0, Lcom/google/common/collect/Iterators$9;->done:Z
+    .line 1154
+    iget-object p0, p0, Lcom/google/common/collect/Iterators$9;->val$enumeration:Ljava/util/Enumeration;
 
-    if-nez v0, :cond_0
+    invoke-interface {p0}, Ljava/util/Enumeration;->nextElement()Ljava/lang/Object;
 
-    const/4 v0, 0x1
-
-    .line 1069
-    iput-boolean v0, p0, Lcom/google/common/collect/Iterators$9;->done:Z
-
-    .line 1070
-    iget-object p0, p0, Lcom/google/common/collect/Iterators$9;->val$value:Ljava/lang/Object;
+    move-result-object p0
 
     return-object p0
-
-    .line 1067
-    :cond_0
-    new-instance p0, Ljava/util/NoSuchElementException;
-
-    invoke-direct {p0}, Ljava/util/NoSuchElementException;-><init>()V
-
-    throw p0
 .end method

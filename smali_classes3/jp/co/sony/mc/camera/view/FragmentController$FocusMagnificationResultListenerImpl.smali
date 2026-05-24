@@ -24,11 +24,19 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "controller"
+        }
+    .end annotation
 
-    .line 7906
+    .line 6790
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7907
+    .line 6791
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$FocusMagnificationResultListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     return-void
@@ -38,13 +46,21 @@
 # virtual methods
 .method public onFocusMagnificationResultChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 
-    .line 7913
+    .line 6797
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
 
-    .line 7914
+    .line 6798
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_MAGNIFICATION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -53,7 +69,7 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/FocusMagnification;
 
-    .line 7915
+    .line 6799
     sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_MAGNIFICATION_RATIO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, v2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -66,7 +82,7 @@
 
     move-result v0
 
-    .line 7916
+    .line 6800
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/FocusMagnification;->getBooleanValue()Z
 
     move-result v1
@@ -81,7 +97,7 @@
 
     if-nez v0, :cond_0
 
-    .line 7917
+    .line 6801
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$FocusMagnificationResultListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;

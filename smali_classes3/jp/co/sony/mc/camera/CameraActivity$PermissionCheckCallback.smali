@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract onPermissionChecked([Ljava/lang/String;)Z
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "permissions"
+        }
+    .end annotation
 .end method

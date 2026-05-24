@@ -42,7 +42,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 143
+    .line 202
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -65,12 +65,12 @@
 
     if-ne p1, p0, :cond_0
 
-    .line 145
+    .line 204
     sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddRotateLockState;->LOCKED:Ljp/co/sony/mc/camera/idd/value/IddRotateLockState;
 
     goto :goto_0
 
-    .line 146
+    .line 205
     :cond_0
     sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddRotateLockState;->UNLOCKED:Ljp/co/sony/mc/camera/idd/value/IddRotateLockState;
 

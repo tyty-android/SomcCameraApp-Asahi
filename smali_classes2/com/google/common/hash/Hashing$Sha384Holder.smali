@@ -22,7 +22,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 219
+    .line 266
     new-instance v0, Lcom/google/common/hash/MessageDigestHashFunction;
 
     const-string v1, "SHA-384"
@@ -39,7 +39,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 218
+    .line 265
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

@@ -24,6 +24,14 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 288
     iput-object p1, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$SingleMove;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;
@@ -45,6 +53,14 @@
 # virtual methods
 .method public handleMotionEvent(Landroid/view/MotionEvent;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "motion"
+        }
+    .end annotation
 
     .line 291
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
@@ -284,6 +300,18 @@
 
 .method public handleSingleTouchMoveEvent(Landroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "currentPoint",
+            "lastPoint",
+            "downPoint"
+        }
+    .end annotation
 
     .line 325
     iget-object p0, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$SingleMove;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;
@@ -299,6 +327,18 @@
 
 .method public handleSingleTouchStopEvent(Landroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "currentPoint",
+            "lastPoint",
+            "downPoint"
+        }
+    .end annotation
 
     .line 331
     iget-object v0, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$SingleMove;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;
@@ -327,12 +367,34 @@
 
 .method public handleTouchRotateEvent(FF)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "degreeVsOrigin",
+            "degreeVsLast"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public handleTouchScaleEvent(FFF)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "currentLength",
+            "previousLength",
+            "originalLength"
+        }
+    .end annotation
 
     return-void
 .end method

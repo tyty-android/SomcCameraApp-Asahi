@@ -41,6 +41,15 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/ImmutableMultiset;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "multiset"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -49,10 +58,10 @@
         }
     .end annotation
 
-    .line 370
+    .line 423
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 371
+    .line 424
     iput-object p1, p0, Lcom/google/common/collect/ImmutableMultiset$EntrySetSerializedForm;->multiset:Lcom/google/common/collect/ImmutableMultiset;
 
     return-void
@@ -63,7 +72,7 @@
 .method readResolve()Ljava/lang/Object;
     .locals 0
 
-    .line 375
+    .line 428
     iget-object p0, p0, Lcom/google/common/collect/ImmutableMultiset$EntrySetSerializedForm;->multiset:Lcom/google/common/collect/ImmutableMultiset;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMultiset;->entrySet()Lcom/google/common/collect/ImmutableSet;

@@ -35,8 +35,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/Synchronized$SynchronizedTable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 1978
+    .line 2067
     iput-object p1, p0, Lcom/google/common/collect/Synchronized$SynchronizedTable$1;->this$0:Lcom/google/common/collect/Synchronized$SynchronizedTable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -48,8 +56,16 @@
 # virtual methods
 .method public bridge synthetic apply(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "t"
+        }
+    .end annotation
 
-    .line 1978
+    .line 2067
     check-cast p1, Ljava/util/Map;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Synchronized$SynchronizedTable$1;->apply(Ljava/util/Map;)Ljava/util/Map;
@@ -61,6 +77,15 @@
 
 .method public apply(Ljava/util/Map;)Ljava/util/Map;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "t"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -71,7 +96,7 @@
         }
     .end annotation
 
-    .line 1981
+    .line 2070
     iget-object p0, p0, Lcom/google/common/collect/Synchronized$SynchronizedTable$1;->this$0:Lcom/google/common/collect/Synchronized$SynchronizedTable;
 
     iget-object p0, p0, Lcom/google/common/collect/Synchronized$SynchronizedTable;->mutex:Ljava/lang/Object;

@@ -26,7 +26,7 @@
         ">",
         "Ljava/lang/Object;",
         "Lcom/google/common/base/Supplier<",
-        "Ljava/util/TreeMap<",
+        "Ljava/util/Map<",
         "TC;TV;>;>;",
         "Ljava/io/Serializable;"
     }
@@ -51,6 +51,15 @@
 # direct methods
 .method constructor <init>(Ljava/util/Comparator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "comparator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -59,10 +68,10 @@
         }
     .end annotation
 
-    .line 75
+    .line 78
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 76
+    .line 79
     iput-object p1, p0, Lcom/google/common/collect/TreeBasedTable$Factory;->comparator:Ljava/util/Comparator;
 
     return-void
@@ -73,25 +82,25 @@
 .method public bridge synthetic get()Ljava/lang/Object;
     .locals 0
 
-    .line 72
-    invoke-virtual {p0}, Lcom/google/common/collect/TreeBasedTable$Factory;->get()Ljava/util/TreeMap;
+    .line 75
+    invoke-virtual {p0}, Lcom/google/common/collect/TreeBasedTable$Factory;->get()Ljava/util/Map;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public get()Ljava/util/TreeMap;
+.method public get()Ljava/util/Map;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Ljava/util/TreeMap<",
+            "Ljava/util/Map<",
             "TC;TV;>;"
         }
     .end annotation
 
-    .line 81
+    .line 84
     new-instance v0, Ljava/util/TreeMap;
 
     iget-object p0, p0, Lcom/google/common/collect/TreeBasedTable$Factory;->comparator:Ljava/util/Comparator;

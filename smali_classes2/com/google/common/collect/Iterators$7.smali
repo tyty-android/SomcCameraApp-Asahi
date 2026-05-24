@@ -36,8 +36,24 @@
 # direct methods
 .method constructor <init>(ILjava/util/Iterator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x1010
+        }
+        names = {
+            "val$limitSize",
+            "val$iterator"
+        }
+    .end annotation
 
-    .line 913
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .line 962
     iput p1, p0, Lcom/google/common/collect/Iterators$7;->val$limitSize:I
 
     iput-object p2, p0, Lcom/google/common/collect/Iterators$7;->val$iterator:Ljava/util/Iterator;
@@ -52,7 +68,7 @@
 .method public hasNext()Z
     .locals 2
 
-    .line 918
+    .line 967
     iget v0, p0, Lcom/google/common/collect/Iterators$7;->count:I
 
     iget v1, p0, Lcom/google/common/collect/Iterators$7;->val$limitSize:I
@@ -80,27 +96,30 @@
 
 .method public next()Ljava/lang/Object;
     .locals 1
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TT;"
         }
     .end annotation
 
-    .line 923
+    .line 973
     invoke-virtual {p0}, Lcom/google/common/collect/Iterators$7;->hasNext()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 926
+    .line 976
     iget v0, p0, Lcom/google/common/collect/Iterators$7;->count:I
 
     add-int/lit8 v0, v0, 0x1
 
     iput v0, p0, Lcom/google/common/collect/Iterators$7;->count:I
 
-    .line 927
+    .line 977
     iget-object p0, p0, Lcom/google/common/collect/Iterators$7;->val$iterator:Ljava/util/Iterator;
 
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -109,7 +128,7 @@
 
     return-object p0
 
-    .line 924
+    .line 974
     :cond_0
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -121,7 +140,7 @@
 .method public remove()V
     .locals 0
 
-    .line 932
+    .line 982
     iget-object p0, p0, Lcom/google/common/collect/Iterators$7;->val$iterator:Ljava/util/Iterator;
 
     invoke-interface {p0}, Ljava/util/Iterator;->remove()V

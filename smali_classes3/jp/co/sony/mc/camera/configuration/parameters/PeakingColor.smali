@@ -61,7 +61,7 @@
     .line 21
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/PeakingColor;
 
-    const v1, 0x7f110359
+    const v1, 0x7f1103a3
 
     const-string v2, "on_white"
 
@@ -76,7 +76,7 @@
     .line 24
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/PeakingColor;
 
-    const v1, 0x7f110357
+    const v1, 0x7f1103a1
 
     const-string v2, "on_red"
 
@@ -91,7 +91,7 @@
     .line 27
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/PeakingColor;
 
-    const v1, 0x7f11035a
+    const v1, 0x7f1103a4
 
     const-string v2, "on_yellow"
 
@@ -106,7 +106,7 @@
     .line 30
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/PeakingColor;
 
-    const v1, 0x7f110356
+    const v1, 0x7f1103a0
 
     const-string v2, "on_blue"
 
@@ -130,6 +130,21 @@
 
 .method private constructor <init>(Ljava/lang/String;IILjava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "textId",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -152,6 +167,14 @@
 
 .method public static getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Ljp/co/sony/mc/camera/configuration/parameters/PeakingColor;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "capturingMode"
+        }
+    .end annotation
 
     .line 97
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isPro()Z
@@ -174,6 +197,14 @@
 
 .method public static getOptions(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/PeakingColor;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
     .line 76
     new-instance v0, Ljava/util/ArrayList;
@@ -242,6 +273,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/PeakingColor;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 20
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/PeakingColor;

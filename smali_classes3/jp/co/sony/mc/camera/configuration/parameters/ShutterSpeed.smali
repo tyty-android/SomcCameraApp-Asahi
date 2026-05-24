@@ -294,7 +294,7 @@
 
     const/4 v3, -0x1
 
-    const v4, 0x7f11046c
+    const v4, 0x7f1104b5
 
     const-string v5, "auto"
 
@@ -338,7 +338,7 @@
 
     const/4 v13, -0x1
 
-    const v14, 0x7f110407
+    const v14, 0x7f110452
 
     const-string/jumbo v15, "shutter-prio"
 
@@ -376,7 +376,7 @@
 
     const/16 v22, -0x1
 
-    const v23, 0x7f1103ff
+    const v23, 0x7f11044a
 
     const-string/jumbo v24, "shutter-prio"
 
@@ -414,7 +414,7 @@
 
     const/4 v9, -0x1
 
-    const v10, 0x7f11040c
+    const v10, 0x7f110457
 
     const-string/jumbo v11, "shutter-prio"
 
@@ -452,7 +452,7 @@
 
     const/16 v18, -0x1
 
-    const v19, 0x7f110409
+    const v19, 0x7f110454
 
     const-string/jumbo v20, "shutter-prio"
 
@@ -488,7 +488,7 @@
 
     const/4 v8, 0x5
 
-    const v10, 0x7f110406
+    const v10, 0x7f110451
 
     const-string/jumbo v11, "shutter-prio"
 
@@ -522,7 +522,7 @@
 
     const/16 v17, 0x6
 
-    const v19, 0x7f110402
+    const v19, 0x7f11044d
 
     const-string/jumbo v20, "shutter-prio"
 
@@ -556,7 +556,7 @@
 
     const/4 v8, 0x7
 
-    const v10, 0x7f1103fc
+    const v10, 0x7f110447
 
     const-string/jumbo v11, "shutter-prio"
 
@@ -592,7 +592,7 @@
 
     const/16 v17, 0x8
 
-    const v19, 0x7f1103fb
+    const v19, 0x7f110446
 
     const-string/jumbo v20, "shutter-prio"
 
@@ -628,7 +628,7 @@
 
     const/16 v8, 0x9
 
-    const v10, 0x7f1103fa
+    const v10, 0x7f110445
 
     const-string/jumbo v11, "shutter-prio"
 
@@ -664,7 +664,7 @@
 
     const/16 v17, 0xa
 
-    const v19, 0x7f1103f9
+    const v19, 0x7f110444
 
     const-string/jumbo v20, "shutter-prio"
 
@@ -698,7 +698,7 @@
 
     const/16 v8, 0xb
 
-    const v10, 0x7f110431
+    const v10, 0x7f11047c
 
     const-string/jumbo v11, "shutter-prio"
 
@@ -738,7 +738,7 @@
 
     const/16 v17, 0xc
 
-    const v19, 0x7f110438
+    const v19, 0x7f110483
 
     const-string/jumbo v20, "shutter-prio"
 
@@ -778,7 +778,7 @@
 
     const/16 v8, 0xd
 
-    const v10, 0x7f11043d
+    const v10, 0x7f110488
 
     const-string/jumbo v11, "shutter-prio"
 
@@ -816,7 +816,7 @@
 
     const/16 v17, 0xe
 
-    const v19, 0x7f110442
+    const v19, 0x7f11048d
 
     const-string/jumbo v20, "shutter-prio"
 
@@ -854,7 +854,7 @@
 
     const/16 v8, 0xf
 
-    const v10, 0x7f110447
+    const v10, 0x7f110492
 
     const-string/jumbo v11, "shutter-prio"
 
@@ -892,7 +892,7 @@
 
     const/16 v17, 0x10
 
-    const v19, 0x7f110412
+    const v19, 0x7f11045d
 
     const-string/jumbo v20, "shutter-prio"
 
@@ -930,7 +930,7 @@
 
     const/16 v8, 0x11
 
-    const v10, 0x7f11041a
+    const v10, 0x7f110465
 
     const-string/jumbo v11, "shutter-prio"
 
@@ -968,7 +968,7 @@
 
     const/16 v17, 0x12
 
-    const v19, 0x7f11041b
+    const v19, 0x7f110466
 
     const-string/jumbo v20, "shutter-prio"
 
@@ -1006,7 +1006,7 @@
 
     const/16 v8, 0x13
 
-    const v10, 0x7f110424
+    const v10, 0x7f11046f
 
     const-string/jumbo v11, "shutter-prio"
 
@@ -1044,7 +1044,7 @@
 
     const/16 v17, 0x14
 
-    const v19, 0x7f110426
+    const v19, 0x7f110471
 
     const-string/jumbo v20, "shutter-prio"
 
@@ -1100,7 +1100,7 @@
 
     const/16 v8, 0x15
 
-    const v10, 0x7f11042b
+    const v10, 0x7f110476
 
     const-string/jumbo v11, "shutter-prio"
 
@@ -1156,7 +1156,7 @@
 
     const/16 v20, -0x1
 
-    const v21, 0x7f11042c
+    const v21, 0x7f110477
 
     const-string/jumbo v22, "shutter-prio"
 
@@ -1210,7 +1210,7 @@
 
     const/16 v29, -0x1
 
-    const v30, 0x7f110436
+    const v30, 0x7f110481
 
     const-string/jumbo v31, "shutter-prio"
 
@@ -1252,7 +1252,7 @@
 
     const/16 v19, -0x1
 
-    const v20, 0x7f110437
+    const v20, 0x7f110482
 
     const-string/jumbo v21, "shutter-prio"
 
@@ -1306,7 +1306,7 @@
 
     const/16 v28, -0x1
 
-    const v29, 0x7f11043c
+    const v29, 0x7f110487
 
     const-string/jumbo v30, "shutter-prio"
 
@@ -1358,7 +1358,7 @@
 
     const/16 v18, 0x1a
 
-    const v20, 0x7f11043e
+    const v20, 0x7f110489
 
     const-string/jumbo v21, "shutter-prio"
 
@@ -1404,7 +1404,7 @@
 
     const/16 v27, 0x1b
 
-    const v29, 0x7f110446
+    const v29, 0x7f110491
 
     const-string/jumbo v30, "shutter-prio"
 
@@ -1442,7 +1442,7 @@
 
     const/16 v18, 0x1c
 
-    const v20, 0x7f110448
+    const v20, 0x7f110493
 
     const-string/jumbo v21, "shutter-prio"
 
@@ -1492,7 +1492,7 @@
 
     const/16 v27, 0x1d
 
-    const v29, 0x7f110411
+    const v29, 0x7f11045c
 
     const-string/jumbo v30, "shutter-prio"
 
@@ -1530,7 +1530,7 @@
 
     const/16 v18, 0x1e
 
-    const v20, 0x7f110415
+    const v20, 0x7f110460
 
     const-string/jumbo v21, "shutter-prio"
 
@@ -1580,7 +1580,7 @@
 
     const/16 v27, 0x1f
 
-    const v29, 0x7f110419
+    const v29, 0x7f110464
 
     const-string/jumbo v30, "shutter-prio"
 
@@ -1626,7 +1626,7 @@
 
     const/16 v18, 0x20
 
-    const v20, 0x7f11041f
+    const v20, 0x7f11046a
 
     const-string/jumbo v21, "shutter-prio"
 
@@ -1672,7 +1672,7 @@
 
     const/16 v27, 0x21
 
-    const v29, 0x7f110423
+    const v29, 0x7f11046e
 
     const-string/jumbo v30, "shutter-prio"
 
@@ -1710,7 +1710,7 @@
 
     const/16 v18, 0x22
 
-    const v20, 0x7f110425
+    const v20, 0x7f110470
 
     const-string/jumbo v21, "shutter-prio"
 
@@ -1760,7 +1760,7 @@
 
     const/16 v27, 0x23
 
-    const v29, 0x7f11042a
+    const v29, 0x7f110475
 
     const-string/jumbo v30, "shutter-prio"
 
@@ -1806,7 +1806,7 @@
 
     const/16 v18, 0x24
 
-    const v20, 0x7f110430
+    const v20, 0x7f11047b
 
     const-string/jumbo v21, "shutter-prio"
 
@@ -1852,7 +1852,7 @@
 
     const/16 v27, 0x25
 
-    const v29, 0x7f110435
+    const v29, 0x7f110480
 
     const-string/jumbo v30, "shutter-prio"
 
@@ -1902,7 +1902,7 @@
 
     const/16 v18, 0x26
 
-    const v20, 0x7f11043b
+    const v20, 0x7f110486
 
     const-string/jumbo v21, "shutter-prio"
 
@@ -1948,7 +1948,7 @@
 
     const/16 v27, 0x27
 
-    const v29, 0x7f110441
+    const v29, 0x7f11048c
 
     const-string/jumbo v30, "shutter-prio"
 
@@ -1994,7 +1994,7 @@
 
     const/16 v18, 0x28
 
-    const v20, 0x7f110445
+    const v20, 0x7f110490
 
     const-string/jumbo v21, "shutter-prio"
 
@@ -2044,7 +2044,7 @@
 
     const/16 v27, 0x29
 
-    const v29, 0x7f110410
+    const v29, 0x7f11045b
 
     const-string/jumbo v30, "shutter-prio"
 
@@ -2090,7 +2090,7 @@
 
     const/16 v18, 0x2a
 
-    const v20, 0x7f110418
+    const v20, 0x7f110463
 
     const-string/jumbo v21, "shutter-prio"
 
@@ -2136,7 +2136,7 @@
 
     const/16 v27, 0x2b
 
-    const v29, 0x7f11041e
+    const v29, 0x7f110469
 
     const-string/jumbo v30, "shutter-prio"
 
@@ -2186,7 +2186,7 @@
 
     const/16 v18, 0x2c
 
-    const v20, 0x7f110422
+    const v20, 0x7f11046d
 
     const-string/jumbo v21, "shutter-prio"
 
@@ -2232,7 +2232,7 @@
 
     const/16 v27, 0x2d
 
-    const v29, 0x7f110429
+    const v29, 0x7f110474
 
     const-string/jumbo v30, "shutter-prio"
 
@@ -2278,7 +2278,7 @@
 
     const/16 v18, 0x2e
 
-    const v20, 0x7f11042f
+    const v20, 0x7f11047a
 
     const-string/jumbo v21, "shutter-prio"
 
@@ -2328,7 +2328,7 @@
 
     const/16 v27, 0x2f
 
-    const v29, 0x7f110434
+    const v29, 0x7f11047f
 
     const-string/jumbo v30, "shutter-prio"
 
@@ -2374,7 +2374,7 @@
 
     const/16 v18, 0x30
 
-    const v20, 0x7f11043a
+    const v20, 0x7f110485
 
     const-string/jumbo v21, "shutter-prio"
 
@@ -2420,7 +2420,7 @@
 
     const/16 v27, 0x31
 
-    const v29, 0x7f110440
+    const v29, 0x7f11048b
 
     const-string/jumbo v30, "shutter-prio"
 
@@ -2470,7 +2470,7 @@
 
     const/16 v18, 0x32
 
-    const v20, 0x7f110444
+    const v20, 0x7f11048f
 
     const-string/jumbo v21, "shutter-prio"
 
@@ -2504,7 +2504,7 @@
 
     const/16 v8, 0x33
 
-    const v10, 0x7f110413
+    const v10, 0x7f11045e
 
     const-string/jumbo v11, "shutter-prio"
 
@@ -2528,6 +2528,29 @@
 
 .method private constructor <init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId",
+            "aeMode",
+            "numerator",
+            "denominator",
+            "supportedModeList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -2565,6 +2588,22 @@
 
 .method public static adjustToSupportedValue(Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "targetValue",
+            "mode",
+            "cameraId",
+            "fps",
+            "videoMfHdr"
+        }
+    .end annotation
 
     .line 698
     invoke-static {p1, p2, p0, p3, p4}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->isSupportedValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Z
@@ -2605,6 +2644,20 @@
 
 .method public static getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId",
+            "fps",
+            "videoMfHdr"
+        }
+    .end annotation
 
     .line 527
     invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
@@ -2718,6 +2771,20 @@
 
 .method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId",
+            "fps",
+            "videoMfHdr"
+        }
+    .end annotation
 
     .line 584
     new-instance v0, Ljava/util/ArrayList;
@@ -2831,6 +2898,20 @@
 
 .method private static getOptionsExceptAuto(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId",
+            "fps",
+            "videoMfHdr"
+        }
+    .end annotation
 
     .line 619
     new-instance v0, Ljava/util/ArrayList;
@@ -2983,6 +3064,22 @@
 
 .method public static getShutterSpeedByExposureTime(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljava/lang/Long;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId",
+            "fps",
+            "exposureTime",
+            "videoMfHdr"
+        }
+    .end annotation
 
     .line 731
     invoke-static {p0, p1, p2, p4}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getOptionsExceptAuto(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
@@ -3146,6 +3243,20 @@
 
 .method private static getShutterSpeedByFps(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "id",
+            "fps",
+            "videoMfHdr"
+        }
+    .end annotation
 
     .line 772
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->values()[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
@@ -3209,6 +3320,20 @@
 
 .method private static getSupportedMaxValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId",
+            "fps",
+            "videoMfHdr"
+        }
+    .end annotation
 
     .line 570
     invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getOptionsExceptAuto(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
@@ -3235,6 +3360,20 @@
 
 .method private static getSupportedMinValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId",
+            "fps",
+            "videoMfHdr"
+        }
+    .end annotation
 
     .line 560
     invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getOptionsExceptAuto(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
@@ -3263,6 +3402,14 @@
 
 .method public static isLongExposureSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
     .line 670
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getCameraCapability(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;
@@ -3300,6 +3447,22 @@
 
 .method public static isSupportedValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId",
+            "checkTarget",
+            "fps",
+            "videoMfHdr"
+        }
+    .end annotation
 
     .line 679
     invoke-static {p0, p1, p3, p4}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
@@ -3334,6 +3497,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 24
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;

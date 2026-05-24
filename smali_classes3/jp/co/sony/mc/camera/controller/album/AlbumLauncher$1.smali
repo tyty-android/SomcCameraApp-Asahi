@@ -22,7 +22,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 125
+    .line 138
     invoke-static {}, Ljp/co/sony/mc/camera/util/CommonUtility$DefaultGallerySetting;->values()[Ljp/co/sony/mc/camera/util/CommonUtility$DefaultGallerySetting;
 
     move-result-object v0

@@ -48,6 +48,16 @@
 # virtual methods
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "o1",
+            "o2"
+        }
+    .end annotation
 
     .line 711
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
@@ -63,6 +73,16 @@
 
 .method public compare(Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "o1",
+            "o2"
+        }
+    .end annotation
 
     const-wide/high16 v0, -0x8000000000000000L
 

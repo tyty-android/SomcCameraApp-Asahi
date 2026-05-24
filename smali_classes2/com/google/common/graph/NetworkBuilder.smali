@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/graph/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<N:",
@@ -43,23 +46,31 @@
 # direct methods
 .method private constructor <init>(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "directed"
+        }
+    .end annotation
 
-    .line 77
+    .line 84
     invoke-direct {p0, p1}, Lcom/google/common/graph/AbstractGraphBuilder;-><init>(Z)V
 
     const/4 p1, 0x0
 
-    .line 71
+    .line 78
     iput-boolean p1, p0, Lcom/google/common/graph/NetworkBuilder;->allowsParallelEdges:Z
 
-    .line 72
+    .line 79
     invoke-static {}, Lcom/google/common/graph/ElementOrder;->insertion()Lcom/google/common/graph/ElementOrder;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/google/common/graph/NetworkBuilder;->edgeOrder:Lcom/google/common/graph/ElementOrder;
 
-    .line 73
+    .line 80
     invoke-static {}, Lcom/google/common/base/Optional;->absent()Lcom/google/common/base/Optional;
 
     move-result-object p1
@@ -94,7 +105,7 @@
         }
     .end annotation
 
-    .line 82
+    .line 89
     new-instance v0, Lcom/google/common/graph/NetworkBuilder;
 
     const/4 v1, 0x1
@@ -106,6 +117,15 @@
 
 .method public static from(Lcom/google/common/graph/Network;)Lcom/google/common/graph/NetworkBuilder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "network"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -120,7 +140,7 @@
         }
     .end annotation
 
-    .line 99
+    .line 106
     new-instance v0, Lcom/google/common/graph/NetworkBuilder;
 
     invoke-interface {p0}, Lcom/google/common/graph/Network;->isDirected()Z
@@ -129,7 +149,7 @@
 
     invoke-direct {v0, v1}, Lcom/google/common/graph/NetworkBuilder;-><init>(Z)V
 
-    .line 100
+    .line 107
     invoke-interface {p0}, Lcom/google/common/graph/Network;->allowsParallelEdges()Z
 
     move-result v1
@@ -138,7 +158,7 @@
 
     move-result-object v0
 
-    .line 101
+    .line 108
     invoke-interface {p0}, Lcom/google/common/graph/Network;->allowsSelfLoops()Z
 
     move-result v1
@@ -147,7 +167,7 @@
 
     move-result-object v0
 
-    .line 102
+    .line 109
     invoke-interface {p0}, Lcom/google/common/graph/Network;->nodeOrder()Lcom/google/common/graph/ElementOrder;
 
     move-result-object v1
@@ -156,7 +176,7 @@
 
     move-result-object v0
 
-    .line 103
+    .line 110
     invoke-interface {p0}, Lcom/google/common/graph/Network;->edgeOrder()Lcom/google/common/graph/ElementOrder;
 
     move-result-object p0
@@ -180,7 +200,7 @@
         }
     .end annotation
 
-    .line 87
+    .line 94
     new-instance v0, Lcom/google/common/graph/NetworkBuilder;
 
     const/4 v1, 0x0
@@ -194,6 +214,15 @@
 # virtual methods
 .method public allowsParallelEdges(Z)Lcom/google/common/graph/NetworkBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "allowsParallelEdges"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -202,7 +231,7 @@
         }
     .end annotation
 
-    .line 125
+    .line 133
     iput-boolean p1, p0, Lcom/google/common/graph/NetworkBuilder;->allowsParallelEdges:Z
 
     return-object p0
@@ -210,6 +239,15 @@
 
 .method public allowsSelfLoops(Z)Lcom/google/common/graph/NetworkBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "allowsSelfLoops"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -218,7 +256,7 @@
         }
     .end annotation
 
-    .line 137
+    .line 146
     iput-boolean p1, p0, Lcom/google/common/graph/NetworkBuilder;->allowsSelfLoops:Z
 
     return-object p0
@@ -234,7 +272,7 @@
         }
     .end annotation
 
-    .line 185
+    .line 196
     new-instance v0, Lcom/google/common/graph/StandardMutableNetwork;
 
     invoke-direct {v0, p0}, Lcom/google/common/graph/StandardMutableNetwork;-><init>(Lcom/google/common/graph/NetworkBuilder;)V
@@ -244,6 +282,15 @@
 
 .method public edgeOrder(Lcom/google/common/graph/ElementOrder;)Lcom/google/common/graph/NetworkBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "edgeOrder"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E1:TE;>(",
@@ -254,12 +301,12 @@
         }
     .end annotation
 
-    .line 178
+    .line 189
     invoke-direct {p0}, Lcom/google/common/graph/NetworkBuilder;->cast()Lcom/google/common/graph/NetworkBuilder;
 
     move-result-object p0
 
-    .line 179
+    .line 190
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -273,6 +320,15 @@
 
 .method public expectedEdgeCount(I)Lcom/google/common/graph/NetworkBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "expectedEdgeCount"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -281,7 +337,7 @@
         }
     .end annotation
 
-    .line 157
+    .line 168
     invoke-static {p1}, Lcom/google/common/graph/Graphs;->checkNonNegative(I)I
 
     move-result p1
@@ -301,6 +357,15 @@
 
 .method public expectedNodeCount(I)Lcom/google/common/graph/NetworkBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "expectedNodeCount"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -309,7 +374,7 @@
         }
     .end annotation
 
-    .line 147
+    .line 157
     invoke-static {p1}, Lcom/google/common/graph/Graphs;->checkNonNegative(I)I
 
     move-result p1
@@ -337,12 +402,12 @@
         }
     .end annotation
 
-    .line 114
+    .line 121
     invoke-direct {p0}, Lcom/google/common/graph/NetworkBuilder;->cast()Lcom/google/common/graph/NetworkBuilder;
 
     move-result-object p0
 
-    .line 115
+    .line 122
     new-instance v0, Lcom/google/common/graph/ImmutableNetwork$Builder;
 
     invoke-direct {v0, p0}, Lcom/google/common/graph/ImmutableNetwork$Builder;-><init>(Lcom/google/common/graph/NetworkBuilder;)V
@@ -352,6 +417,15 @@
 
 .method public nodeOrder(Lcom/google/common/graph/ElementOrder;)Lcom/google/common/graph/NetworkBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "nodeOrder"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N1:TN;>(",
@@ -362,12 +436,12 @@
         }
     .end annotation
 
-    .line 167
+    .line 178
     invoke-direct {p0}, Lcom/google/common/graph/NetworkBuilder;->cast()Lcom/google/common/graph/NetworkBuilder;
 
     move-result-object p0
 
-    .line 168
+    .line 179
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1

@@ -33,9 +33,6 @@
 
 
 # virtual methods
-.method public abstract clearValue()V
-.end method
-
 .method public abstract getValueReference()Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {

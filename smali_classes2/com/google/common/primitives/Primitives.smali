@@ -3,6 +3,11 @@
 .source "Primitives.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/primitives/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # static fields
 .field private static final PRIMITIVE_TO_WRAPPER_TYPE:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
@@ -33,89 +38,89 @@
 .method static constructor <clinit>()V
     .locals 4
 
-    .line 45
+    .line 46
     new-instance v0, Ljava/util/LinkedHashMap;
 
     const/16 v1, 0x10
 
     invoke-direct {v0, v1}, Ljava/util/LinkedHashMap;-><init>(I)V
 
-    .line 46
+    .line 47
     new-instance v2, Ljava/util/LinkedHashMap;
 
     invoke-direct {v2, v1}, Ljava/util/LinkedHashMap;-><init>(I)V
 
-    .line 48
+    .line 49
     sget-object v1, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
     const-class v3, Ljava/lang/Boolean;
 
     invoke-static {v0, v2, v1, v3}, Lcom/google/common/primitives/Primitives;->add(Ljava/util/Map;Ljava/util/Map;Ljava/lang/Class;Ljava/lang/Class;)V
 
-    .line 49
+    .line 50
     sget-object v1, Ljava/lang/Byte;->TYPE:Ljava/lang/Class;
 
     const-class v3, Ljava/lang/Byte;
 
     invoke-static {v0, v2, v1, v3}, Lcom/google/common/primitives/Primitives;->add(Ljava/util/Map;Ljava/util/Map;Ljava/lang/Class;Ljava/lang/Class;)V
 
-    .line 50
+    .line 51
     sget-object v1, Ljava/lang/Character;->TYPE:Ljava/lang/Class;
 
     const-class v3, Ljava/lang/Character;
 
     invoke-static {v0, v2, v1, v3}, Lcom/google/common/primitives/Primitives;->add(Ljava/util/Map;Ljava/util/Map;Ljava/lang/Class;Ljava/lang/Class;)V
 
-    .line 51
+    .line 52
     sget-object v1, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
 
     const-class v3, Ljava/lang/Double;
 
     invoke-static {v0, v2, v1, v3}, Lcom/google/common/primitives/Primitives;->add(Ljava/util/Map;Ljava/util/Map;Ljava/lang/Class;Ljava/lang/Class;)V
 
-    .line 52
+    .line 53
     sget-object v1, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
 
     const-class v3, Ljava/lang/Float;
 
     invoke-static {v0, v2, v1, v3}, Lcom/google/common/primitives/Primitives;->add(Ljava/util/Map;Ljava/util/Map;Ljava/lang/Class;Ljava/lang/Class;)V
 
-    .line 53
+    .line 54
     sget-object v1, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
     const-class v3, Ljava/lang/Integer;
 
     invoke-static {v0, v2, v1, v3}, Lcom/google/common/primitives/Primitives;->add(Ljava/util/Map;Ljava/util/Map;Ljava/lang/Class;Ljava/lang/Class;)V
 
-    .line 54
+    .line 55
     sget-object v1, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
 
     const-class v3, Ljava/lang/Long;
 
     invoke-static {v0, v2, v1, v3}, Lcom/google/common/primitives/Primitives;->add(Ljava/util/Map;Ljava/util/Map;Ljava/lang/Class;Ljava/lang/Class;)V
 
-    .line 55
+    .line 56
     sget-object v1, Ljava/lang/Short;->TYPE:Ljava/lang/Class;
 
     const-class v3, Ljava/lang/Short;
 
     invoke-static {v0, v2, v1, v3}, Lcom/google/common/primitives/Primitives;->add(Ljava/util/Map;Ljava/util/Map;Ljava/lang/Class;Ljava/lang/Class;)V
 
-    .line 56
+    .line 57
     sget-object v1, Ljava/lang/Void;->TYPE:Ljava/lang/Class;
 
     const-class v3, Ljava/lang/Void;
 
     invoke-static {v0, v2, v1, v3}, Lcom/google/common/primitives/Primitives;->add(Ljava/util/Map;Ljava/util/Map;Ljava/lang/Class;Ljava/lang/Class;)V
 
-    .line 58
+    .line 59
     invoke-static {v0}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object v0
 
     sput-object v0, Lcom/google/common/primitives/Primitives;->PRIMITIVE_TO_WRAPPER_TYPE:Ljava/util/Map;
 
-    .line 59
+    .line 60
     invoke-static {v2}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object v0
@@ -128,7 +133,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 34
+    .line 35
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -136,6 +141,21 @@
 
 .method private static add(Ljava/util/Map;Ljava/util/Map;Ljava/lang/Class;Ljava/lang/Class;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "forward",
+            "backward",
+            "key",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -156,10 +176,10 @@
         }
     .end annotation
 
-    .line 67
+    .line 68
     invoke-interface {p0, p2, p3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 68
+    .line 69
     invoke-interface {p1, p3, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
@@ -176,7 +196,7 @@
         }
     .end annotation
 
-    .line 79
+    .line 80
     sget-object v0, Lcom/google/common/primitives/Primitives;->PRIMITIVE_TO_WRAPPER_TYPE:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->keySet()Ljava/util/Set;
@@ -197,7 +217,7 @@
         }
     .end annotation
 
-    .line 88
+    .line 89
     sget-object v0, Lcom/google/common/primitives/Primitives;->WRAPPER_TO_PRIMITIVE_TYPE:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->keySet()Ljava/util/Set;
@@ -209,6 +229,15 @@
 
 .method public static isWrapperType(Ljava/lang/Class;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -217,7 +246,7 @@
         }
     .end annotation
 
-    .line 98
+    .line 99
     sget-object v0, Lcom/google/common/primitives/Primitives;->WRAPPER_TO_PRIMITIVE_TYPE:Ljava/util/Map;
 
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -233,6 +262,15 @@
 
 .method public static unwrap(Ljava/lang/Class;)Ljava/lang/Class;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -245,10 +283,10 @@
         }
     .end annotation
 
-    .line 131
+    .line 132
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 135
+    .line 136
     sget-object v0, Lcom/google/common/primitives/Primitives;->WRAPPER_TO_PRIMITIVE_TYPE:Ljava/util/Map;
 
     invoke-interface {v0, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -270,6 +308,15 @@
 
 .method public static wrap(Ljava/lang/Class;)Ljava/lang/Class;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -282,10 +329,10 @@
         }
     .end annotation
 
-    .line 112
+    .line 113
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 116
+    .line 117
     sget-object v0, Lcom/google/common/primitives/Primitives;->PRIMITIVE_TO_WRAPPER_TYPE:Ljava/util/Map;
 
     invoke-interface {v0, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;

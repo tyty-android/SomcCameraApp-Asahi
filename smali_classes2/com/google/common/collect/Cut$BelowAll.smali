@@ -32,7 +32,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 120
+    .line 124
     new-instance v0, Lcom/google/common/collect/Cut$BelowAll;
 
     invoke-direct {v0}, Lcom/google/common/collect/Cut$BelowAll;-><init>()V
@@ -45,9 +45,9 @@
 .method private constructor <init>()V
     .locals 1
 
-    const/4 v0, 0x0
+    .line 133
+    const-string v0, ""
 
-    .line 123
     invoke-direct {p0, v0}, Lcom/google/common/collect/Cut;-><init>(Ljava/lang/Comparable;)V
 
     return-void
@@ -56,7 +56,7 @@
 .method static synthetic access$000()Lcom/google/common/collect/Cut$BelowAll;
     .locals 1
 
-    .line 119
+    .line 123
     sget-object v0, Lcom/google/common/collect/Cut$BelowAll;->INSTANCE:Lcom/google/common/collect/Cut$BelowAll;
 
     return-object v0
@@ -65,7 +65,7 @@
 .method private readResolve()Ljava/lang/Object;
     .locals 0
 
-    .line 203
+    .line 213
     sget-object p0, Lcom/google/common/collect/Cut$BelowAll;->INSTANCE:Lcom/google/common/collect/Cut$BelowAll;
 
     return-object p0
@@ -75,6 +75,15 @@
 # virtual methods
 .method canonical(Lcom/google/common/collect/DiscreteDomain;)Lcom/google/common/collect/Cut;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "domain"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -87,7 +96,7 @@
         }
     .end annotation
 
-    .line 181
+    .line 191
     :try_start_0
     invoke-virtual {p1}, Lcom/google/common/collect/DiscreteDomain;->minValue()Ljava/lang/Comparable;
 
@@ -105,6 +114,15 @@
 
 .method public compareTo(Lcom/google/common/collect/Cut;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -129,8 +147,16 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 119
+    .line 123
     check-cast p1, Lcom/google/common/collect/Cut;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Cut$BelowAll;->compareTo(Lcom/google/common/collect/Cut;)I
@@ -142,8 +168,16 @@
 
 .method describeAsLowerBound(Ljava/lang/StringBuilder;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sb"
+        }
+    .end annotation
 
-    .line 160
+    .line 170
     const-string p0, "(-\u221e"
 
     invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -153,8 +187,16 @@
 
 .method describeAsUpperBound(Ljava/lang/StringBuilder;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sb"
+        }
+    .end annotation
 
-    .line 165
+    .line 175
     new-instance p0, Ljava/lang/AssertionError;
 
     invoke-direct {p0}, Ljava/lang/AssertionError;-><init>()V
@@ -172,7 +214,7 @@
         }
     .end annotation
 
-    .line 128
+    .line 138
     new-instance p0, Ljava/lang/IllegalStateException;
 
     const-string v0, "range unbounded on this side"
@@ -184,6 +226,15 @@
 
 .method greatestValueBelow(Lcom/google/common/collect/DiscreteDomain;)Ljava/lang/Comparable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "domain"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -195,7 +246,7 @@
         }
     .end annotation
 
-    .line 175
+    .line 185
     new-instance p0, Ljava/lang/AssertionError;
 
     invoke-direct {p0}, Ljava/lang/AssertionError;-><init>()V
@@ -206,7 +257,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 194
+    .line 204
     invoke-static {p0}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
 
     move-result p0
@@ -216,6 +267,15 @@
 
 .method isLessThan(Ljava/lang/Comparable;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -231,6 +291,15 @@
 
 .method leastValueAbove(Lcom/google/common/collect/DiscreteDomain;)Ljava/lang/Comparable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "domain"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -242,7 +311,7 @@
         }
     .end annotation
 
-    .line 170
+    .line 180
     invoke-virtual {p1}, Lcom/google/common/collect/DiscreteDomain;->minValue()Ljava/lang/Comparable;
 
     move-result-object p0
@@ -253,7 +322,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 199
+    .line 209
     const-string p0, "-\u221e"
 
     return-object p0
@@ -262,7 +331,7 @@
 .method typeAsLowerBound()Lcom/google/common/collect/BoundType;
     .locals 0
 
-    .line 138
+    .line 148
     new-instance p0, Ljava/lang/IllegalStateException;
 
     invoke-direct {p0}, Ljava/lang/IllegalStateException;-><init>()V
@@ -273,7 +342,7 @@
 .method typeAsUpperBound()Lcom/google/common/collect/BoundType;
     .locals 1
 
-    .line 143
+    .line 153
     new-instance p0, Ljava/lang/AssertionError;
 
     const-string v0, "this statement should be unreachable"
@@ -285,6 +354,17 @@
 
 .method withLowerBoundType(Lcom/google/common/collect/BoundType;Lcom/google/common/collect/DiscreteDomain;)Lcom/google/common/collect/Cut;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "boundType",
+            "domain"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -298,7 +378,7 @@
         }
     .end annotation
 
-    .line 149
+    .line 159
     new-instance p0, Ljava/lang/IllegalStateException;
 
     invoke-direct {p0}, Ljava/lang/IllegalStateException;-><init>()V
@@ -308,6 +388,17 @@
 
 .method withUpperBoundType(Lcom/google/common/collect/BoundType;Lcom/google/common/collect/DiscreteDomain;)Lcom/google/common/collect/Cut;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "boundType",
+            "domain"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -321,7 +412,7 @@
         }
     .end annotation
 
-    .line 155
+    .line 165
     new-instance p0, Ljava/lang/AssertionError;
 
     const-string p1, "this statement should be unreachable"

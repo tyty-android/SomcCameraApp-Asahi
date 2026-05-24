@@ -112,6 +112,14 @@
 
 .method private addBaseCondition(Ljp/co/sony/mc/camera/device/CameraParameterValidator$KeyValueSet;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "set"
+        }
+    .end annotation
 
     .line 117
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CameraParameterValidator$ValidationCase;->mBaseConditionList:Ljava/util/List;
@@ -123,6 +131,14 @@
 
 .method private addCheckCondition(Ljp/co/sony/mc/camera/device/CameraParameterValidator$KeyValueSet;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "set"
+        }
+    .end annotation
 
     .line 121
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CameraParameterValidator$ValidationCase;->mCheckConditionList:Ljava/util/List;
@@ -134,6 +150,19 @@
 
 .method private checkInvalid(Ljava/util/List;Ljp/co/sony/mc/camera/device/CaptureRequestHolder;Landroid/graphics/Rect;)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "keyList",
+            "request",
+            "activeArraySize"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -345,6 +374,19 @@
 
 .method private checkValid(Ljava/util/List;Ljp/co/sony/mc/camera/device/CaptureRequestHolder;Landroid/graphics/Rect;)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "keyList",
+            "request",
+            "activeArraySize"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -574,6 +616,15 @@
 
 .method private getApplicationCaptureRequestKey(Landroid/hardware/camera2/CaptureRequest$Key;)Landroid/hardware/camera2/CaptureRequest$Key;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "nativeKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -632,6 +683,17 @@
 
 .method private getTargetKey(Ljava/util/List;Ljp/co/sony/mc/camera/device/CameraParameterValidator$KeyValueSet;)Landroid/hardware/camera2/CaptureRequest$Key;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "keyList",
+            "set"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -693,6 +755,17 @@
 
 .method private isBaseCondition(Ljava/util/List;Ljp/co/sony/mc/camera/device/CaptureRequestHolder;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "keyList",
+            "request"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

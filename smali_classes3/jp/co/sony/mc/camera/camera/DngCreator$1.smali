@@ -27,12 +27,12 @@
 .method constructor <init>()V
     .locals 6
 
-    .line 870
+    .line 871
     invoke-direct {p0}, Ljava/util/HashMap;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 872
+    .line 873
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -47,7 +47,7 @@
 
     invoke-virtual {p0, v1, v2}, Ljp/co/sony/mc/camera/camera/DngCreator$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 874
+    .line 875
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -58,7 +58,7 @@
 
     invoke-virtual {p0, v1, v2}, Ljp/co/sony/mc/camera/camera/DngCreator$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 876
+    .line 877
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -71,7 +71,7 @@
 
     invoke-virtual {p0, v1, v2}, Ljp/co/sony/mc/camera/camera/DngCreator$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 878
+    .line 879
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -84,7 +84,7 @@
 
     const/4 v1, 0x4
 
-    .line 880
+    .line 881
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -97,7 +97,7 @@
 
     const/4 v1, 0x5
 
-    .line 882
+    .line 883
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -110,7 +110,7 @@
 
     const/4 v1, 0x6
 
-    .line 884
+    .line 885
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -123,7 +123,7 @@
 
     const/4 v1, 0x7
 
-    .line 886
+    .line 887
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -136,7 +136,7 @@
 
     const/16 v1, 0x8
 
-    .line 888
+    .line 889
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -149,7 +149,7 @@
 
     const/16 v1, 0x9
 
-    .line 890
+    .line 891
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -162,7 +162,7 @@
 
     const/16 v1, 0xa
 
-    .line 892
+    .line 893
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -175,7 +175,7 @@
 
     const/16 v1, 0xb
 
-    .line 894
+    .line 895
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -188,7 +188,7 @@
 
     const/16 v1, 0xc
 
-    .line 896
+    .line 897
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -201,7 +201,7 @@
 
     const/16 v1, 0xd
 
-    .line 898
+    .line 899
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -214,7 +214,7 @@
 
     const/16 v1, 0xe
 
-    .line 900
+    .line 901
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -227,7 +227,7 @@
 
     const/16 v1, 0xf
 
-    .line 902
+    .line 903
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -240,7 +240,7 @@
 
     const/16 v1, 0x10
 
-    .line 904
+    .line 905
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1

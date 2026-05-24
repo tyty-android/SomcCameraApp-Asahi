@@ -15,19 +15,19 @@
 
 
 # static fields
-.field static final INSTANCE:Lcom/google/common/base/CharMatcher$JavaLetter;
+.field static final INSTANCE:Lcom/google/common/base/CharMatcher;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1380
+    .line 1383
     new-instance v0, Lcom/google/common/base/CharMatcher$JavaLetter;
 
     invoke-direct {v0}, Lcom/google/common/base/CharMatcher$JavaLetter;-><init>()V
 
-    sput-object v0, Lcom/google/common/base/CharMatcher$JavaLetter;->INSTANCE:Lcom/google/common/base/CharMatcher$JavaLetter;
+    sput-object v0, Lcom/google/common/base/CharMatcher$JavaLetter;->INSTANCE:Lcom/google/common/base/CharMatcher;
 
     return-void
 .end method
@@ -35,7 +35,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1378
+    .line 1381
     invoke-direct {p0}, Lcom/google/common/base/CharMatcher;-><init>()V
 
     return-void
@@ -45,10 +45,19 @@
 # virtual methods
 .method public bridge synthetic apply(Ljava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "character"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1378
+    .line 1381
     check-cast p1, Ljava/lang/Character;
 
     invoke-super {p0, p1}, Lcom/google/common/base/CharMatcher;->apply(Ljava/lang/Character;)Z
@@ -60,8 +69,16 @@
 
 .method public matches(C)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
 
-    .line 1384
+    .line 1387
     invoke-static {p1}, Ljava/lang/Character;->isLetter(C)Z
 
     move-result p0
@@ -72,7 +89,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 1389
+    .line 1392
     const-string p0, "CharMatcher.javaLetter()"
 
     return-object p0

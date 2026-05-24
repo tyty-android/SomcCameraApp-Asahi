@@ -31,8 +31,23 @@
 
 
 # direct methods
+.method private static synthetic $values()[Lcom/google/j2objc/annotations/ReflectionSupport$Level;
+    .locals 2
+
+    .line 37
+    sget-object v0, Lcom/google/j2objc/annotations/ReflectionSupport$Level;->NATIVE_ONLY:Lcom/google/j2objc/annotations/ReflectionSupport$Level;
+
+    sget-object v1, Lcom/google/j2objc/annotations/ReflectionSupport$Level;->FULL:Lcom/google/j2objc/annotations/ReflectionSupport$Level;
+
+    filled-new-array {v0, v1}, [Lcom/google/j2objc/annotations/ReflectionSupport$Level;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
 .method static constructor <clinit>()V
-    .locals 4
+    .locals 3
 
     .line 42
     new-instance v0, Lcom/google/j2objc/annotations/ReflectionSupport$Level;
@@ -46,18 +61,18 @@
     sput-object v0, Lcom/google/j2objc/annotations/ReflectionSupport$Level;->NATIVE_ONLY:Lcom/google/j2objc/annotations/ReflectionSupport$Level;
 
     .line 46
-    new-instance v1, Lcom/google/j2objc/annotations/ReflectionSupport$Level;
+    new-instance v0, Lcom/google/j2objc/annotations/ReflectionSupport$Level;
 
-    const-string v2, "FULL"
+    const-string v1, "FULL"
 
-    const/4 v3, 0x1
+    const/4 v2, 0x1
 
-    invoke-direct {v1, v2, v3}, Lcom/google/j2objc/annotations/ReflectionSupport$Level;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, v2}, Lcom/google/j2objc/annotations/ReflectionSupport$Level;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lcom/google/j2objc/annotations/ReflectionSupport$Level;->FULL:Lcom/google/j2objc/annotations/ReflectionSupport$Level;
+    sput-object v0, Lcom/google/j2objc/annotations/ReflectionSupport$Level;->FULL:Lcom/google/j2objc/annotations/ReflectionSupport$Level;
 
     .line 37
-    filled-new-array {v0, v1}, [Lcom/google/j2objc/annotations/ReflectionSupport$Level;
+    invoke-static {}, Lcom/google/j2objc/annotations/ReflectionSupport$Level;->$values()[Lcom/google/j2objc/annotations/ReflectionSupport$Level;
 
     move-result-object v0
 

@@ -76,7 +76,7 @@
 .method public constructor <init>(F)V
     .locals 0
 
-    .line 305
+    .line 319
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;->value:F
@@ -87,7 +87,7 @@
 .method public static final synthetic access$getLastManualFocusDistance$cp()F
     .locals 1
 
-    .line 305
+    .line 319
     sget v0, Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;->lastManualFocusDistance:F
 
     return v0
@@ -96,7 +96,7 @@
 .method public static final synthetic access$setLastManualFocusDistance$cp(F)V
     .locals 0
 
-    .line 305
+    .line 319
     sput p0, Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;->lastManualFocusDistance:F
 
     return-void
@@ -107,7 +107,7 @@
 .method public final getValue()F
     .locals 0
 
-    .line 305
+    .line 319
     iget p0, p0, Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;->value:F
 
     return p0
@@ -116,7 +116,7 @@
 .method public final setValue(F)V
     .locals 0
 
-    .line 305
+    .line 319
     iput p1, p0, Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;->value:F
 
     return-void
@@ -125,7 +125,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 311
+    .line 325
     sget v0, Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;->lastManualFocusDistance:F
 
     iget p0, p0, Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;->value:F
@@ -134,7 +134,7 @@
 
     if-gez v1, :cond_0
 
-    .line 312
+    .line 326
     const-string p0, "ZOOM_TO_FLOWER"
 
     goto :goto_0
@@ -144,12 +144,12 @@
 
     if-lez p0, :cond_1
 
-    .line 314
+    .line 328
     const-string p0, "ZOOM_TO_MOUNTAINS"
 
     goto :goto_0
 
-    .line 316
+    .line 330
     :cond_1
     const-string p0, "UNKNOWN"
 

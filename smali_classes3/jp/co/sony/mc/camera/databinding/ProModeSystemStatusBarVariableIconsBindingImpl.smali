@@ -24,6 +24,16 @@
 
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root"
+        }
+    .end annotation
 
     .line 27
     sget-object v0, Ljp/co/sony/mc/camera/databinding/ProModeSystemStatusBarVariableIconsBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -43,6 +53,18 @@
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root",
+            "bindings"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -124,6 +146,17 @@
 
 .method private onChangeViewFinderUiStateIsViewFinderItemClickable(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ViewFinderUiStateIsViewFinderItemClickable",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -379,6 +412,18 @@
 
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "localFieldId",
+            "object",
+            "fieldId"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -399,8 +444,18 @@
 
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "variableId",
+            "variable"
+        }
+    .end annotation
 
-    const/16 v0, 0x25
+    const/16 v0, 0x28
 
     if-ne v0, p1, :cond_0
 
@@ -422,6 +477,14 @@
 
 .method public setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ViewFinderUiState"
+        }
+    .end annotation
 
     .line 76
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeSystemStatusBarVariableIconsBindingImpl;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
@@ -444,7 +507,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x25
+    const/16 p1, 0x28
 
     .line 80
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ProModeSystemStatusBarVariableIconsBindingImpl;->notifyPropertyChanged(I)V

@@ -20,7 +20,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nScatterSet.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ScatterSet.kt\nandroidx/collection/ScatterSet\n+ 2 ScatterMap.kt\nandroidx/collection/ScatterMapKt\n*L\n1#1,1084:1\n267#1,4:1085\n237#1,7:1089\n248#1,3:1097\n251#1,2:1101\n272#1,2:1103\n254#1,6:1105\n274#1:1111\n267#1,4:1112\n237#1,7:1116\n248#1,3:1124\n251#1,2:1128\n272#1,2:1130\n254#1,6:1132\n274#1:1138\n267#1,4:1139\n237#1,7:1143\n248#1,3:1151\n251#1,2:1155\n272#1,2:1157\n254#1,6:1159\n274#1:1165\n237#1,7:1168\n248#1,3:1176\n251#1,9:1180\n267#1,4:1189\n237#1,7:1193\n248#1,3:1201\n251#1,2:1205\n272#1,2:1207\n254#1,6:1209\n274#1:1215\n267#1,4:1216\n237#1,7:1220\n248#1,3:1228\n251#1,2:1232\n272#1,2:1234\n254#1,6:1236\n274#1:1242\n267#1,4:1243\n237#1,7:1247\n248#1,3:1255\n251#1,2:1259\n272#1,2:1261\n254#1,6:1263\n274#1:1269\n433#1:1270\n434#1:1274\n436#1,2:1276\n438#1,3:1279\n441#1:1285\n442#1:1289\n443#1:1291\n444#1,4:1294\n450#1:1299\n451#1,8:1301\n267#1,4:1309\n237#1,7:1313\n248#1,3:1321\n251#1,2:1325\n272#1,2:1327\n254#1,6:1329\n274#1:1335\n267#1,4:1336\n237#1,7:1340\n248#1,3:1348\n251#1,2:1352\n272#1,2:1354\n254#1,6:1356\n274#1:1362\n267#1,4:1363\n237#1,7:1367\n248#1,3:1375\n251#1,2:1379\n272#1,2:1381\n254#1,6:1383\n274#1:1389\n1810#2:1096\n1672#2:1100\n1810#2:1123\n1672#2:1127\n1810#2:1150\n1672#2:1154\n1810#2:1166\n1672#2:1167\n1810#2:1175\n1672#2:1179\n1810#2:1200\n1672#2:1204\n1810#2:1227\n1672#2:1231\n1810#2:1254\n1672#2:1258\n1589#2,3:1271\n1603#2:1275\n1599#2:1278\n1779#2,3:1282\n1793#2,3:1286\n1717#2:1290\n1705#2:1292\n1699#2:1293\n1712#2:1298\n1802#2:1300\n1810#2:1320\n1672#2:1324\n1810#2:1347\n1672#2:1351\n1810#2:1374\n1672#2:1378\n1589#2,3:1390\n1603#2:1393\n1599#2:1394\n1779#2,3:1395\n1793#2,3:1398\n1717#2:1401\n1705#2:1402\n1699#2:1403\n1712#2:1404\n1802#2:1405\n*S KotlinDebug\n*F\n+ 1 ScatterSet.kt\nandroidx/collection/ScatterSet\n*L\n201#1:1085,4\n201#1:1089,7\n201#1:1097,3\n201#1:1101,2\n201#1:1103,2\n201#1:1105,6\n201#1:1111\n214#1:1112,4\n214#1:1116,7\n214#1:1124,3\n214#1:1128,2\n214#1:1130,2\n214#1:1132,6\n214#1:1138\n227#1:1139,4\n227#1:1143,7\n227#1:1151,3\n227#1:1155,2\n227#1:1157,2\n227#1:1159,6\n227#1:1165\n270#1:1168,7\n270#1:1176,3\n270#1:1180,9\n284#1:1189,4\n284#1:1193,7\n284#1:1201,3\n284#1:1205,2\n284#1:1207,2\n284#1:1209,6\n284#1:1215\n297#1:1216,4\n297#1:1220,7\n297#1:1228,3\n297#1:1232,2\n297#1:1234,2\n297#1:1236,6\n297#1:1242\n318#1:1243,4\n318#1:1247,7\n318#1:1255,3\n318#1:1259,2\n318#1:1261,2\n318#1:1263,6\n318#1:1269\n329#1:1270\n329#1:1274\n329#1:1276,2\n329#1:1279,3\n329#1:1285\n329#1:1289\n329#1:1291\n329#1:1294,4\n329#1:1299\n329#1:1301,8\n352#1:1309,4\n352#1:1313,7\n352#1:1321,3\n352#1:1325,2\n352#1:1327,2\n352#1:1329,6\n352#1:1335\n378#1:1336,4\n378#1:1340,7\n378#1:1348,3\n378#1:1352,2\n378#1:1354,2\n378#1:1356,6\n378#1:1362\n407#1:1363,4\n407#1:1367,7\n407#1:1375,3\n407#1:1379,2\n407#1:1381,2\n407#1:1383,6\n407#1:1389\n201#1:1096\n201#1:1100\n214#1:1123\n214#1:1127\n227#1:1150\n227#1:1154\n243#1:1166\n250#1:1167\n270#1:1175\n270#1:1179\n284#1:1200\n284#1:1204\n297#1:1227\n297#1:1231\n318#1:1254\n318#1:1258\n329#1:1271,3\n329#1:1275\n329#1:1278\n329#1:1282,3\n329#1:1286,3\n329#1:1290\n329#1:1292\n329#1:1293\n329#1:1298\n329#1:1300\n352#1:1320\n352#1:1324\n378#1:1347\n378#1:1351\n407#1:1374\n407#1:1378\n433#1:1390,3\n434#1:1393\n437#1:1394\n440#1:1395,3\n441#1:1398,3\n442#1:1401\n443#1:1402\n443#1:1403\n447#1:1404\n450#1:1405\n*E\n"
+    value = "SMAP\nScatterSet.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ScatterSet.kt\nandroidx/collection/ScatterSet\n+ 2 ScatterMap.kt\nandroidx/collection/ScatterMapKt\n*L\n1#1,1100:1\n267#1,4:1101\n237#1,7:1105\n248#1,3:1113\n251#1,2:1117\n272#1,2:1119\n254#1,6:1121\n274#1:1127\n267#1,4:1128\n237#1,7:1132\n248#1,3:1140\n251#1,2:1144\n272#1,2:1146\n254#1,6:1148\n274#1:1154\n267#1,4:1155\n237#1,7:1159\n248#1,3:1167\n251#1,2:1171\n272#1,2:1173\n254#1,6:1175\n274#1:1181\n237#1,7:1184\n248#1,3:1192\n251#1,9:1196\n267#1,4:1205\n237#1,7:1209\n248#1,3:1217\n251#1,2:1221\n272#1,2:1223\n254#1,6:1225\n274#1:1231\n267#1,4:1232\n237#1,7:1236\n248#1,3:1244\n251#1,2:1248\n272#1,2:1250\n254#1,6:1252\n274#1:1258\n267#1,4:1259\n237#1,7:1263\n248#1,3:1271\n251#1,2:1275\n272#1,2:1277\n254#1,6:1279\n274#1:1285\n433#1:1286\n434#1:1290\n436#1,2:1292\n438#1,3:1295\n441#1:1301\n442#1:1305\n443#1:1307\n444#1,4:1310\n450#1:1315\n451#1,8:1317\n267#1,4:1325\n237#1,7:1329\n248#1,3:1337\n251#1,2:1341\n272#1,2:1343\n254#1,6:1345\n274#1:1351\n267#1,4:1352\n237#1,7:1356\n248#1,3:1364\n251#1,2:1368\n272#1,2:1370\n254#1,6:1372\n274#1:1378\n267#1,4:1379\n237#1,7:1383\n248#1,3:1391\n251#1,2:1395\n272#1,2:1397\n254#1,6:1399\n274#1:1405\n1826#2:1112\n1688#2:1116\n1826#2:1139\n1688#2:1143\n1826#2:1166\n1688#2:1170\n1826#2:1182\n1688#2:1183\n1826#2:1191\n1688#2:1195\n1826#2:1216\n1688#2:1220\n1826#2:1243\n1688#2:1247\n1826#2:1270\n1688#2:1274\n1605#2,3:1287\n1619#2:1291\n1615#2:1294\n1795#2,3:1298\n1809#2,3:1302\n1733#2:1306\n1721#2:1308\n1715#2:1309\n1728#2:1314\n1818#2:1316\n1826#2:1336\n1688#2:1340\n1826#2:1363\n1688#2:1367\n1826#2:1390\n1688#2:1394\n1605#2,3:1406\n1619#2:1409\n1615#2:1410\n1795#2,3:1411\n1809#2,3:1414\n1733#2:1417\n1721#2:1418\n1715#2:1419\n1728#2:1420\n1818#2:1421\n*S KotlinDebug\n*F\n+ 1 ScatterSet.kt\nandroidx/collection/ScatterSet\n*L\n201#1:1101,4\n201#1:1105,7\n201#1:1113,3\n201#1:1117,2\n201#1:1119,2\n201#1:1121,6\n201#1:1127\n214#1:1128,4\n214#1:1132,7\n214#1:1140,3\n214#1:1144,2\n214#1:1146,2\n214#1:1148,6\n214#1:1154\n227#1:1155,4\n227#1:1159,7\n227#1:1167,3\n227#1:1171,2\n227#1:1173,2\n227#1:1175,6\n227#1:1181\n270#1:1184,7\n270#1:1192,3\n270#1:1196,9\n284#1:1205,4\n284#1:1209,7\n284#1:1217,3\n284#1:1221,2\n284#1:1223,2\n284#1:1225,6\n284#1:1231\n297#1:1232,4\n297#1:1236,7\n297#1:1244,3\n297#1:1248,2\n297#1:1250,2\n297#1:1252,6\n297#1:1258\n318#1:1259,4\n318#1:1263,7\n318#1:1271,3\n318#1:1275,2\n318#1:1277,2\n318#1:1279,6\n318#1:1285\n329#1:1286\n329#1:1290\n329#1:1292,2\n329#1:1295,3\n329#1:1301\n329#1:1305\n329#1:1307\n329#1:1310,4\n329#1:1315\n329#1:1317,8\n352#1:1325,4\n352#1:1329,7\n352#1:1337,3\n352#1:1341,2\n352#1:1343,2\n352#1:1345,6\n352#1:1351\n378#1:1352,4\n378#1:1356,7\n378#1:1364,3\n378#1:1368,2\n378#1:1370,2\n378#1:1372,6\n378#1:1378\n407#1:1379,4\n407#1:1383,7\n407#1:1391,3\n407#1:1395,2\n407#1:1397,2\n407#1:1399,6\n407#1:1405\n201#1:1112\n201#1:1116\n214#1:1139\n214#1:1143\n227#1:1166\n227#1:1170\n243#1:1182\n250#1:1183\n270#1:1191\n270#1:1195\n284#1:1216\n284#1:1220\n297#1:1243\n297#1:1247\n318#1:1270\n318#1:1274\n329#1:1287,3\n329#1:1291\n329#1:1294\n329#1:1298,3\n329#1:1302,3\n329#1:1306\n329#1:1308\n329#1:1309\n329#1:1314\n329#1:1316\n352#1:1336\n352#1:1340\n378#1:1363\n378#1:1367\n407#1:1390\n407#1:1394\n433#1:1406,3\n434#1:1409\n437#1:1410\n440#1:1411,3\n441#1:1414,3\n442#1:1417\n443#1:1418\n443#1:1419\n447#1:1420\n450#1:1421\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -275,13 +275,13 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1190
+    .line 1206
     iget-object v0, p0, Landroidx/collection/ScatterSet;->elements:[Ljava/lang/Object;
 
-    .line 1194
+    .line 1210
     iget-object p0, p0, Landroidx/collection/ScatterSet;->metadata:[J
 
-    .line 1195
+    .line 1211
     array-length v1, p0
 
     add-int/lit8 v1, v1, -0x2
@@ -292,7 +292,7 @@
 
     move v3, v2
 
-    .line 1198
+    .line 1214
     :goto_0
     aget-wide v4, p0, v3
 
@@ -341,7 +341,7 @@
 
     add-int/2addr v9, v8
 
-    .line 1207
+    .line 1223
     aget-object v9, v0, v9
 
     .line 285
@@ -417,13 +417,13 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1217
+    .line 1233
     iget-object v0, p0, Landroidx/collection/ScatterSet;->elements:[Ljava/lang/Object;
 
-    .line 1221
+    .line 1237
     iget-object p0, p0, Landroidx/collection/ScatterSet;->metadata:[J
 
-    .line 1222
+    .line 1238
     array-length v1, p0
 
     add-int/lit8 v1, v1, -0x2
@@ -434,7 +434,7 @@
 
     move v3, v2
 
-    .line 1225
+    .line 1241
     :goto_0
     aget-wide v4, p0, v3
 
@@ -483,7 +483,7 @@
 
     add-int/2addr v9, v8
 
-    .line 1234
+    .line 1250
     aget-object v9, v0, v9
 
     .line 298
@@ -560,7 +560,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1271
+    .line 1287
     invoke-virtual/range {p1 .. p1}, Ljava/lang/Object;->hashCode()I
 
     move-result v3
@@ -581,7 +581,7 @@
 
     and-int/lit8 v4, v3, 0x7f
 
-    .line 1276
+    .line 1292
     iget v5, v0, Landroidx/collection/ScatterSet;->_capacity:I
 
     ushr-int/lit8 v3, v3, 0x7
@@ -590,7 +590,7 @@
 
     move v6, v2
 
-    .line 1281
+    .line 1297
     :goto_1
     iget-object v7, v0, Landroidx/collection/ScatterSet;->metadata:[J
 
@@ -600,7 +600,7 @@
 
     shl-int/lit8 v9, v9, 0x3
 
-    .line 1284
+    .line 1300
     aget-wide v10, v7, v8
 
     ushr-long/2addr v10, v9
@@ -652,7 +652,7 @@
 
     if-eqz v11, :cond_2
 
-    .line 1293
+    .line 1309
     invoke-static {v9, v10}, Ljava/lang/Long;->numberOfTrailingZeros(J)I
 
     move-result v11
@@ -663,7 +663,7 @@
 
     and-int/2addr v11, v5
 
-    .line 1294
+    .line 1310
     iget-object v15, v0, Landroidx/collection/ScatterSet;->elements:[Ljava/lang/Object;
 
     aget-object v15, v15, v11
@@ -747,13 +747,13 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1244
+    .line 1260
     iget-object v0, p0, Landroidx/collection/ScatterSet;->elements:[Ljava/lang/Object;
 
-    .line 1248
+    .line 1264
     iget-object p0, p0, Landroidx/collection/ScatterSet;->metadata:[J
 
-    .line 1249
+    .line 1265
     array-length v1, p0
 
     add-int/lit8 v1, v1, -0x2
@@ -766,7 +766,7 @@
 
     move v4, v3
 
-    .line 1252
+    .line 1268
     :goto_0
     aget-wide v5, p0, v3
 
@@ -815,7 +815,7 @@
 
     add-int/2addr v10, v9
 
-    .line 1261
+    .line 1277
     aget-object v10, v0, v10
 
     .line 319
@@ -895,14 +895,14 @@
 
     return v2
 
-    .line 1364
+    .line 1380
     :cond_2
     iget-object v1, p0, Landroidx/collection/ScatterSet;->elements:[Ljava/lang/Object;
 
-    .line 1368
+    .line 1384
     iget-object p0, p0, Landroidx/collection/ScatterSet;->metadata:[J
 
-    .line 1369
+    .line 1385
     array-length v3, p0
 
     add-int/lit8 v3, v3, -0x2
@@ -911,7 +911,7 @@
 
     move v4, v2
 
-    .line 1372
+    .line 1388
     :goto_0
     aget-wide v5, p0, v4
 
@@ -960,7 +960,7 @@
 
     add-int/2addr v10, v9
 
-    .line 1381
+    .line 1397
     aget-object v10, v1, v10
 
     .line 408
@@ -1005,7 +1005,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 1390
+    .line 1406
     invoke-virtual {p1}, Ljava/lang/Object;->hashCode()I
 
     move-result v1
@@ -1043,7 +1043,7 @@
 
     shl-int/lit8 v6, v6, 0x3
 
-    .line 1397
+    .line 1413
     aget-wide v7, v4, v5
 
     ushr-long/2addr v7, v6
@@ -1093,7 +1093,7 @@
 
     if-eqz v12, :cond_2
 
-    .line 1403
+    .line 1419
     invoke-static {v6, v7}, Ljava/lang/Long;->numberOfTrailingZeros(J)I
 
     move-result v10
@@ -1161,13 +1161,13 @@
         }
     .end annotation
 
-    .line 1086
+    .line 1102
     iget-object v0, p0, Landroidx/collection/ScatterSet;->elements:[Ljava/lang/Object;
 
-    .line 1090
+    .line 1106
     iget-object p0, p0, Landroidx/collection/ScatterSet;->metadata:[J
 
-    .line 1091
+    .line 1107
     array-length v1, p0
 
     add-int/lit8 v1, v1, -0x2
@@ -1178,7 +1178,7 @@
 
     move v3, v2
 
-    .line 1094
+    .line 1110
     :goto_0
     aget-wide v4, p0, v3
 
@@ -1227,7 +1227,7 @@
 
     add-int/2addr p0, v8
 
-    .line 1103
+    .line 1119
     aget-object p0, v0, p0
 
     return-object p0
@@ -1276,13 +1276,13 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1113
+    .line 1129
     iget-object v0, p0, Landroidx/collection/ScatterSet;->elements:[Ljava/lang/Object;
 
-    .line 1117
+    .line 1133
     iget-object p0, p0, Landroidx/collection/ScatterSet;->metadata:[J
 
-    .line 1118
+    .line 1134
     array-length v1, p0
 
     add-int/lit8 v1, v1, -0x2
@@ -1293,7 +1293,7 @@
 
     move v3, v2
 
-    .line 1121
+    .line 1137
     :goto_0
     aget-wide v4, p0, v3
 
@@ -1342,7 +1342,7 @@
 
     add-int/2addr v9, v8
 
-    .line 1130
+    .line 1146
     aget-object v9, v0, v9
 
     .line 214
@@ -1404,13 +1404,13 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1140
+    .line 1156
     iget-object v0, p0, Landroidx/collection/ScatterSet;->elements:[Ljava/lang/Object;
 
-    .line 1144
+    .line 1160
     iget-object p0, p0, Landroidx/collection/ScatterSet;->metadata:[J
 
-    .line 1145
+    .line 1161
     array-length v1, p0
 
     add-int/lit8 v1, v1, -0x2
@@ -1421,7 +1421,7 @@
 
     move v3, v2
 
-    .line 1148
+    .line 1164
     :goto_0
     aget-wide v4, p0, v3
 
@@ -1470,7 +1470,7 @@
 
     add-int/2addr v9, v8
 
-    .line 1157
+    .line 1173
     aget-object v9, v0, v9
 
     .line 227
@@ -1530,10 +1530,10 @@
     .line 268
     iget-object v0, p0, Landroidx/collection/ScatterSet;->elements:[Ljava/lang/Object;
 
-    .line 1169
+    .line 1185
     iget-object p0, p0, Landroidx/collection/ScatterSet;->metadata:[J
 
-    .line 1170
+    .line 1186
     array-length v1, p0
 
     add-int/lit8 v1, v1, -0x2
@@ -1544,7 +1544,7 @@
 
     move v3, v2
 
-    .line 1173
+    .line 1189
     :goto_0
     aget-wide v4, p0, v3
 
@@ -1750,13 +1750,13 @@
 .method public hashCode()I
     .locals 14
 
-    .line 1337
+    .line 1353
     iget-object v0, p0, Landroidx/collection/ScatterSet;->elements:[Ljava/lang/Object;
 
-    .line 1341
+    .line 1357
     iget-object p0, p0, Landroidx/collection/ScatterSet;->metadata:[J
 
-    .line 1342
+    .line 1358
     array-length v1, p0
 
     add-int/lit8 v1, v1, -0x2
@@ -1769,7 +1769,7 @@
 
     move v4, v3
 
-    .line 1345
+    .line 1361
     :goto_0
     aget-wide v5, p0, v3
 
@@ -1818,7 +1818,7 @@
 
     add-int/2addr v10, v9
 
-    .line 1354
+    .line 1370
     aget-object v10, v0, v10
 
     if-eqz v10, :cond_0
@@ -2175,13 +2175,13 @@
     .line 350
     invoke-virtual {v6, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1310
+    .line 1326
     iget-object v2, v0, Landroidx/collection/ScatterSet;->elements:[Ljava/lang/Object;
 
-    .line 1314
+    .line 1330
     iget-object v0, v0, Landroidx/collection/ScatterSet;->metadata:[J
 
-    .line 1315
+    .line 1331
     array-length v7, v0
 
     add-int/lit8 v7, v7, -0x2
@@ -2192,7 +2192,7 @@
 
     const/4 v10, 0x0
 
-    .line 1318
+    .line 1334
     :goto_0
     aget-wide v11, v0, v9
 
@@ -2241,7 +2241,7 @@
 
     add-int v16, v16, v15
 
-    .line 1327
+    .line 1343
     aget-object v8, v2, v16
 
     move/from16 v14, p4

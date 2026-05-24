@@ -32,7 +32,7 @@
 
     check-cast p1, Ljava/lang/Boolean;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->$r8$lambda$iK59ECRRHTzk0S7D0OInU-sWLz4(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->$r8$lambda$yNl3-7oLAHr5ewAukxsGto4K59A(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
 
     move-result-object p0
 

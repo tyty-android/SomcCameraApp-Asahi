@@ -49,8 +49,16 @@
 
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 9402
+    .line 8241
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$TimerForWaitingEnduranceModeActivate;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -69,19 +77,19 @@
 .method private start()V
     .locals 4
 
-    .line 9415
+    .line 8254
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$TimerForWaitingEnduranceModeActivate;->mTimer:Ljava/util/Timer;
 
     if-nez v0, :cond_0
 
-    .line 9416
+    .line 8255
     new-instance v0, Ljava/util/Timer;
 
     invoke-direct {v0}, Ljava/util/Timer;-><init>()V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$TimerForWaitingEnduranceModeActivate;->mTimer:Ljava/util/Timer;
 
-    .line 9417
+    .line 8256
     new-instance v1, Ljp/co/sony/mc/camera/view/FragmentController$TimerForWaitingEnduranceModeActivate$TimeoutTask;
 
     const/4 v2, 0x0
@@ -99,22 +107,22 @@
 .method private stop()V
     .locals 1
 
-    .line 9407
+    .line 8246
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$TimerForWaitingEnduranceModeActivate;->mTimer:Ljava/util/Timer;
 
     if-eqz v0, :cond_0
 
-    .line 9408
+    .line 8247
     invoke-virtual {v0}, Ljava/util/Timer;->cancel()V
 
-    .line 9409
+    .line 8248
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$TimerForWaitingEnduranceModeActivate;->mTimer:Ljava/util/Timer;
 
     invoke-virtual {v0}, Ljava/util/Timer;->purge()I
 
     const/4 v0, 0x0
 
-    .line 9410
+    .line 8249
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$TimerForWaitingEnduranceModeActivate;->mTimer:Ljava/util/Timer;
 
     :cond_0

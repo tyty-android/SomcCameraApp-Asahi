@@ -51,10 +51,10 @@
 
 
 # direct methods
-.method public static synthetic $r8$lambda$orwC7_EdpptlJq8LXWgzNJlqPqs(Ljava/lang/Float;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Lkotlin/Pair;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljp/co/sony/mc/camera/view/util/UiText$StringResource;
+.method public static synthetic $r8$lambda$8vKumuzM-4_UTgAcaXAhySfPfo0(Ljava/lang/Float;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Lkotlin/Pair;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljava/lang/Boolean;Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljp/co/sony/mc/camera/view/util/UiText$StringResource;
     .locals 0
 
-    invoke-static/range {p0 .. p5}, Ljp/co/sony/mc/camera/view/uistate/ZoomHintTextUiState;->zoomRatioLabel$lambda$0(Ljava/lang/Float;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Lkotlin/Pair;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljp/co/sony/mc/camera/view/util/UiText$StringResource;
+    invoke-static/range {p0 .. p7}, Ljp/co/sony/mc/camera/view/uistate/ZoomHintTextUiState;->zoomRatioLabel$lambda$0(Ljava/lang/Float;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Lkotlin/Pair;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljava/lang/Boolean;Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljp/co/sony/mc/camera/view/util/UiText$StringResource;
 
     move-result-object p0
 
@@ -68,7 +68,7 @@
 .end method
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;Ljp/co/sony/mc/camera/view/uistate/LensUiState;)V
-    .locals 9
+    .locals 11
 
     const-string v0, "cameraSettingsModel"
 
@@ -105,21 +105,31 @@
     move-result-object v5
 
     .line 22
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getVideoMfHdr()Landroidx/lifecycle/LiveData;
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getBokeh()Landroidx/lifecycle/LiveData;
 
     move-result-object v6
 
     .line 23
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/uistate/LensUiState;->getZoomHintTextVisible()Landroidx/lifecycle/LiveData;
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getVideoStabilizer()Landroidx/lifecycle/LiveData;
 
     move-result-object v7
 
-    new-instance v8, Ljp/co/sony/mc/camera/view/uistate/ZoomHintTextUiState$$ExternalSyntheticLambda0;
+    .line 24
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getVideoMfHdr()Landroidx/lifecycle/LiveData;
 
-    invoke-direct {v8}, Ljp/co/sony/mc/camera/view/uistate/ZoomHintTextUiState$$ExternalSyntheticLambda0;-><init>()V
+    move-result-object v8
+
+    .line 25
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/uistate/LensUiState;->getZoomHintTextVisible()Landroidx/lifecycle/LiveData;
+
+    move-result-object v9
+
+    new-instance v10, Ljp/co/sony/mc/camera/view/uistate/ZoomHintTextUiState$$ExternalSyntheticLambda0;
+
+    invoke-direct {v10}, Ljp/co/sony/mc/camera/view/uistate/ZoomHintTextUiState$$ExternalSyntheticLambda0;-><init>()V
 
     .line 17
-    invoke-virtual/range {v1 .. v8}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function6;)Landroidx/lifecycle/LiveData;
+    invoke-virtual/range {v1 .. v10}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function8;)Landroidx/lifecycle/LiveData;
 
     move-result-object p1
 
@@ -128,35 +138,61 @@
     return-void
 .end method
 
-.method private static final zoomRatioLabel$lambda$0(Ljava/lang/Float;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Lkotlin/Pair;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljp/co/sony/mc/camera/view/util/UiText$StringResource;
-    .locals 0
+.method private static final zoomRatioLabel$lambda$0(Ljava/lang/Float;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Lkotlin/Pair;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljava/lang/Boolean;Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljp/co/sony/mc/camera/view/util/UiText$StringResource;
+    .locals 8
 
-    if-eqz p5, :cond_0
+    if-eqz p7, :cond_0
 
-    .line 29
+    .line 31
     invoke-virtual {p2}, Lkotlin/Pair;->getFirst()Ljava/lang/Object;
+
+    move-result-object p7
+
+    move-object v2, p7
+
+    check-cast v2, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    .line 32
+    invoke-virtual {p2}, Lkotlin/Pair;->getSecond()Ljava/lang/Object;
 
     move-result-object p2
 
-    check-cast p2, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    move-object v3, p2
 
-    .line 30
+    check-cast v3, Ljava/lang/Float;
+
+    .line 33
+    invoke-static {p4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-virtual {p4}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v4
+
+    .line 35
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;->isHfr()Z
 
-    move-result p3
+    move-result v6
 
-    .line 26
-    invoke-static {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getZoomRatioLabel(Ljava/lang/Float;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljava/lang/String;
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v5, p5
+
+    move-object v7, p6
+
+    .line 28
+    invoke-static/range {v0 .. v7}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getZoomRatioLabel(Ljava/lang/Float;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljava/lang/Float;ZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;ZLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljava/lang/String;
 
     move-result-object p0
 
     goto :goto_0
 
-    .line 34
+    .line 39
     :cond_0
     const-string p0, ""
 
-    .line 36
+    .line 41
     :goto_0
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isPro()Z
 
@@ -172,11 +208,11 @@
 
     goto :goto_1
 
-    .line 39
+    .line 44
     :cond_1
     new-instance p1, Ljp/co/sony/mc/camera/view/util/UiText$StringResource;
 
-    const p2, 0x7f1104e0
+    const p2, 0x7f11052d
 
     filled-new-array {p0}, [Ljava/lang/Object;
 
@@ -186,12 +222,12 @@
 
     goto :goto_2
 
-    .line 37
+    .line 42
     :cond_2
     :goto_1
     new-instance p1, Ljp/co/sony/mc/camera/view/util/UiText$StringResource;
 
-    const p2, 0x7f1102ec
+    const p2, 0x7f110335
 
     filled-new-array {p0}, [Ljava/lang/Object;
 

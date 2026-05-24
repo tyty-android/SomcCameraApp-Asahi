@@ -16,7 +16,27 @@
 
 # virtual methods
 .method public abstract onStoreCompleted(Ljp/co/sony/mc/camera/storage/SavingRequest;Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "result"
+        }
+    .end annotation
 .end method
 
 .method public abstract onStoreFailed(Ljp/co/sony/mc/camera/storage/SavingRequest;Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "result"
+        }
+    .end annotation
 .end method

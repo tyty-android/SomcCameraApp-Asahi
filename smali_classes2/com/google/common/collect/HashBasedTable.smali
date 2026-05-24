@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/collect/HashBasedTable$Factory;
@@ -32,6 +35,17 @@
 # direct methods
 .method constructor <init>(Ljava/util/Map;Lcom/google/common/collect/HashBasedTable$Factory;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "backingMap",
+            "factory"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -44,7 +58,7 @@
         }
     .end annotation
 
-    .line 103
+    .line 102
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/StandardTable;-><init>(Ljava/util/Map;Lcom/google/common/base/Supplier;)V
 
     return-void
@@ -66,7 +80,7 @@
         }
     .end annotation
 
-    .line 70
+    .line 69
     new-instance v0, Lcom/google/common/collect/HashBasedTable;
 
     new-instance v1, Ljava/util/LinkedHashMap;
@@ -86,6 +100,17 @@
 
 .method public static create(II)Lcom/google/common/collect/HashBasedTable;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "expectedRows",
+            "expectedCellsPerRow"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<R:",
@@ -100,17 +125,17 @@
         }
     .end annotation
 
-    .line 83
+    .line 82
     const-string v0, "expectedCellsPerRow"
 
     invoke-static {p1, v0}, Lcom/google/common/collect/CollectPreconditions;->checkNonnegative(ILjava/lang/String;)I
 
-    .line 84
+    .line 83
     invoke-static {p0}, Lcom/google/common/collect/Maps;->newLinkedHashMapWithExpectedSize(I)Ljava/util/LinkedHashMap;
 
     move-result-object p0
 
-    .line 85
+    .line 84
     new-instance v0, Lcom/google/common/collect/HashBasedTable;
 
     new-instance v1, Lcom/google/common/collect/HashBasedTable$Factory;
@@ -124,6 +149,15 @@
 
 .method public static create(Lcom/google/common/collect/Table;)Lcom/google/common/collect/HashBasedTable;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "table"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<R:",
@@ -140,12 +174,12 @@
         }
     .end annotation
 
-    .line 97
+    .line 96
     invoke-static {}, Lcom/google/common/collect/HashBasedTable;->create()Lcom/google/common/collect/HashBasedTable;
 
     move-result-object v0
 
-    .line 98
+    .line 97
     invoke-virtual {v0, p0}, Lcom/google/common/collect/HashBasedTable;->putAll(Lcom/google/common/collect/Table;)V
 
     return-object v0
@@ -156,7 +190,7 @@
 .method public bridge synthetic cellSet()Ljava/util/Set;
     .locals 0
 
-    .line 51
+    .line 49
     invoke-super {p0}, Lcom/google/common/collect/StandardTable;->cellSet()Ljava/util/Set;
 
     move-result-object p0
@@ -167,7 +201,7 @@
 .method public bridge synthetic clear()V
     .locals 0
 
-    .line 51
+    .line 49
     invoke-super {p0}, Lcom/google/common/collect/StandardTable;->clear()V
 
     return-void
@@ -175,8 +209,16 @@
 
 .method public bridge synthetic column(Ljava/lang/Object;)Ljava/util/Map;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "columnKey"
+        }
+    .end annotation
 
-    .line 51
+    .line 49
     invoke-super {p0, p1}, Lcom/google/common/collect/StandardTable;->column(Ljava/lang/Object;)Ljava/util/Map;
 
     move-result-object p0
@@ -187,7 +229,7 @@
 .method public bridge synthetic columnKeySet()Ljava/util/Set;
     .locals 0
 
-    .line 51
+    .line 49
     invoke-super {p0}, Lcom/google/common/collect/StandardTable;->columnKeySet()Ljava/util/Set;
 
     move-result-object p0
@@ -198,7 +240,7 @@
 .method public bridge synthetic columnMap()Ljava/util/Map;
     .locals 0
 
-    .line 51
+    .line 49
     invoke-super {p0}, Lcom/google/common/collect/StandardTable;->columnMap()Ljava/util/Map;
 
     move-result-object p0
@@ -206,18 +248,28 @@
     return-object p0
 .end method
 
-.method public contains(Ljava/lang/Object;Ljava/lang/Object;)Z
+.method public bridge synthetic contains(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "rowKey",
+            "columnKey"
+        }
+    .end annotation
 
-    .line 110
+    .line 49
     invoke-super {p0, p1, p2}, Lcom/google/common/collect/StandardTable;->contains(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p0
@@ -225,14 +277,22 @@
     return p0
 .end method
 
-.method public containsColumn(Ljava/lang/Object;)Z
+.method public bridge synthetic containsColumn(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "columnKey"
+        }
+    .end annotation
 
-    .line 115
+    .line 49
     invoke-super {p0, p1}, Lcom/google/common/collect/StandardTable;->containsColumn(Ljava/lang/Object;)Z
 
     move-result p0
@@ -240,14 +300,22 @@
     return p0
 .end method
 
-.method public containsRow(Ljava/lang/Object;)Z
+.method public bridge synthetic containsRow(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "rowKey"
+        }
+    .end annotation
 
-    .line 120
+    .line 49
     invoke-super {p0, p1}, Lcom/google/common/collect/StandardTable;->containsRow(Ljava/lang/Object;)Z
 
     move-result p0
@@ -255,14 +323,22 @@
     return p0
 .end method
 
-.method public containsValue(Ljava/lang/Object;)Z
+.method public bridge synthetic containsValue(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 125
+    .line 49
     invoke-super {p0, p1}, Lcom/google/common/collect/StandardTable;->containsValue(Ljava/lang/Object;)Z
 
     move-result p0
@@ -270,14 +346,22 @@
     return p0
 .end method
 
-.method public equals(Ljava/lang/Object;)Z
+.method public bridge synthetic equals(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
-    .line 135
+    .line 49
     invoke-super {p0, p1}, Lcom/google/common/collect/StandardTable;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -285,26 +369,31 @@
     return p0
 .end method
 
-.method public get(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public bridge synthetic get(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/Object;",
-            "Ljava/lang/Object;",
-            ")TV;"
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "rowKey",
+            "columnKey"
         }
     .end annotation
 
-    .line 130
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 49
     invoke-super {p0, p1, p2}, Lcom/google/common/collect/StandardTable;->get(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -315,7 +404,7 @@
 .method public bridge synthetic hashCode()I
     .locals 0
 
-    .line 51
+    .line 49
     invoke-super {p0}, Lcom/google/common/collect/StandardTable;->hashCode()I
 
     move-result p0
@@ -326,7 +415,7 @@
 .method public bridge synthetic isEmpty()Z
     .locals 0
 
-    .line 51
+    .line 49
     invoke-super {p0}, Lcom/google/common/collect/StandardTable;->isEmpty()Z
 
     move-result p0
@@ -336,8 +425,23 @@
 
 .method public bridge synthetic put(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x1000
+        }
+        names = {
+            "rowKey",
+            "columnKey",
+            "value"
+        }
+    .end annotation
 
-    .line 51
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 49
     invoke-super {p0, p1, p2, p3}, Lcom/google/common/collect/StandardTable;->put(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -347,33 +451,46 @@
 
 .method public bridge synthetic putAll(Lcom/google/common/collect/Table;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "table"
+        }
+    .end annotation
 
-    .line 51
+    .line 49
     invoke-super {p0, p1}, Lcom/google/common/collect/StandardTable;->putAll(Lcom/google/common/collect/Table;)V
 
     return-void
 .end method
 
-.method public remove(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public bridge synthetic remove(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/Object;",
-            "Ljava/lang/Object;",
-            ")TV;"
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "rowKey",
+            "columnKey"
         }
     .end annotation
 
-    .line 141
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 49
     invoke-super {p0, p1, p2}, Lcom/google/common/collect/StandardTable;->remove(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -383,8 +500,16 @@
 
 .method public bridge synthetic row(Ljava/lang/Object;)Ljava/util/Map;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "rowKey"
+        }
+    .end annotation
 
-    .line 51
+    .line 49
     invoke-super {p0, p1}, Lcom/google/common/collect/StandardTable;->row(Ljava/lang/Object;)Ljava/util/Map;
 
     move-result-object p0
@@ -395,7 +520,7 @@
 .method public bridge synthetic rowKeySet()Ljava/util/Set;
     .locals 0
 
-    .line 51
+    .line 49
     invoke-super {p0}, Lcom/google/common/collect/StandardTable;->rowKeySet()Ljava/util/Set;
 
     move-result-object p0
@@ -406,7 +531,7 @@
 .method public bridge synthetic rowMap()Ljava/util/Map;
     .locals 0
 
-    .line 51
+    .line 49
     invoke-super {p0}, Lcom/google/common/collect/StandardTable;->rowMap()Ljava/util/Map;
 
     move-result-object p0
@@ -417,7 +542,7 @@
 .method public bridge synthetic size()I
     .locals 0
 
-    .line 51
+    .line 49
     invoke-super {p0}, Lcom/google/common/collect/StandardTable;->size()I
 
     move-result p0
@@ -428,7 +553,7 @@
 .method public bridge synthetic toString()Ljava/lang/String;
     .locals 0
 
-    .line 51
+    .line 49
     invoke-super {p0}, Lcom/google/common/collect/StandardTable;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -439,7 +564,7 @@
 .method public bridge synthetic values()Ljava/util/Collection;
     .locals 0
 
-    .line 51
+    .line 49
     invoke-super {p0}, Lcom/google/common/collect/StandardTable;->values()Ljava/util/Collection;
 
     move-result-object p0

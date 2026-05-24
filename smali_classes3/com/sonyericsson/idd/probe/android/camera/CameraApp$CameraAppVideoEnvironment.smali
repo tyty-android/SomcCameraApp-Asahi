@@ -431,7 +431,7 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 9034
+    .line 10032
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;
 
     const/4 v1, 0x1
@@ -440,10 +440,10 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->defaultInstance:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;
 
-    .line 9035
+    .line 10033
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp;->internalForceInit()V
 
-    .line 9036
+    .line 10034
     invoke-direct {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->initFields()V
 
     return-void
@@ -452,63 +452,63 @@
 .method private constructor <init>()V
     .locals 4
 
-    .line 7963
+    .line 8961
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageLite;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 8116
+    .line 9114
     iput v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->countOfPause_:I
 
-    .line 8123
+    .line 9121
     iput v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->countOfSnapshot_:I
 
-    .line 8130
+    .line 9128
     iput v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->countOfZoom_:I
 
-    .line 8137
+    .line 9135
     const-string v1, ""
 
     iput-object v1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->faceNum_:Ljava/lang/String;
 
-    .line 8144
+    .line 9142
     iput-boolean v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->isBtAccessaryConnected_:Z
 
-    .line 8151
+    .line 9149
     iput-boolean v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->isCloseupRequired_:Z
 
-    .line 8158
+    .line 9156
     iput-boolean v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->isDisplayAccessaryConnected_:Z
 
-    .line 8165
+    .line 9163
     iput-boolean v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->isEnduranceModeActivated_:Z
 
-    .line 8172
+    .line 9170
     iput-boolean v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->isEyeDetected_:Z
 
     const-wide/16 v2, 0x0
 
-    .line 8186
+    .line 9184
     iput-wide v2, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->recDuration_:J
 
-    .line 8200
+    .line 9198
     iput-object v1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->zoom_:Ljava/lang/String;
 
-    .line 8214
+    .line 9212
     iput-boolean v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->isFramingAssist_:Z
 
-    .line 8221
+    .line 9219
     iput v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->screenTouchNums_:I
 
-    .line 8228
+    .line 9226
     iput v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->estimatedAmbientTemperature_:I
 
     const/4 v0, -0x1
 
-    .line 8301
+    .line 9299
     iput v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->memoizedSerializedSize:I
 
-    .line 7964
+    .line 8962
     invoke-direct {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->initFields()V
 
     return-void
@@ -524,61 +524,69 @@
 
 .method private constructor <init>(Z)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "noInit"
+        }
+    .end annotation
 
-    .line 7966
+    .line 8964
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageLite;-><init>()V
 
     const/4 p1, 0x0
 
-    .line 8116
+    .line 9114
     iput p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->countOfPause_:I
 
-    .line 8123
+    .line 9121
     iput p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->countOfSnapshot_:I
 
-    .line 8130
+    .line 9128
     iput p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->countOfZoom_:I
 
-    .line 8137
+    .line 9135
     const-string v0, ""
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->faceNum_:Ljava/lang/String;
 
-    .line 8144
+    .line 9142
     iput-boolean p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->isBtAccessaryConnected_:Z
 
-    .line 8151
+    .line 9149
     iput-boolean p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->isCloseupRequired_:Z
 
-    .line 8158
+    .line 9156
     iput-boolean p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->isDisplayAccessaryConnected_:Z
 
-    .line 8165
+    .line 9163
     iput-boolean p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->isEnduranceModeActivated_:Z
 
-    .line 8172
+    .line 9170
     iput-boolean p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->isEyeDetected_:Z
 
     const-wide/16 v1, 0x0
 
-    .line 8186
+    .line 9184
     iput-wide v1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->recDuration_:J
 
-    .line 8200
+    .line 9198
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->zoom_:Ljava/lang/String;
 
-    .line 8214
+    .line 9212
     iput-boolean p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->isFramingAssist_:Z
 
-    .line 8221
+    .line 9219
     iput p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->screenTouchNums_:I
 
-    .line 8228
+    .line 9226
     iput p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->estimatedAmbientTemperature_:I
 
     const/4 p1, -0x1
 
-    .line 8301
+    .line 9299
     iput p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->memoizedSerializedSize:I
 
     return-void
@@ -587,7 +595,7 @@
 .method public static getDefaultInstance()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;
     .locals 1
 
-    .line 7970
+    .line 8968
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->defaultInstance:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;
 
     return-object v0
@@ -596,22 +604,22 @@
 .method private initFields()V
     .locals 1
 
-    .line 8233
+    .line 9231
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$CaptureTrigger;->CAMERA_KEY:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$CaptureTrigger;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->captureTrigger_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$CaptureTrigger;
 
-    .line 8234
+    .line 9232
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Orientation;->ORIENTATION_0:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Orientation;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->orientation_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Orientation;
 
-    .line 8235
+    .line 9233
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$StopFactor;->USER_STOP:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$StopFactor;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->stopFactor_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$StopFactor;
 
-    .line 8236
+    .line 9234
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->isFooterShown_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
@@ -622,7 +630,7 @@
 .method public static newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;
     .locals 1
 
-    .line 8450
+    .line 9448
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;->-$$Nest$smcreate()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;
 
     move-result-object v0
@@ -632,8 +640,16 @@
 
 .method public static newBuilder(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "prototype"
+        }
+    .end annotation
 
-    .line 8453
+    .line 9451
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;
 
     move-result-object v0
@@ -647,25 +663,34 @@
 
 .method public static parseDelimitedFrom(Ljava/io/InputStream;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "input"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 8419
+    .line 9417
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;
 
     move-result-object v0
 
-    .line 8420
+    .line 9418
     invoke-virtual {v0, p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;->mergeDelimitedFrom(Ljava/io/InputStream;)Z
 
     move-result p0
 
     if-eqz p0, :cond_0
 
-    .line 8421
+    .line 9419
     invoke-static {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;->-$$Nest$mbuildParsed(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;
 
     move-result-object p0
@@ -680,25 +705,36 @@
 
 .method public static parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "input",
+            "extensionRegistry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 8430
+    .line 9428
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;
 
     move-result-object v0
 
-    .line 8431
+    .line 9429
     invoke-virtual {v0, p0, p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;->mergeDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Z
 
     move-result p0
 
     if-eqz p0, :cond_0
 
-    .line 8432
+    .line 9430
     invoke-static {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;->-$$Nest$mbuildParsed(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;
 
     move-result-object p0
@@ -713,13 +749,22 @@
 
 .method public static parseFrom(Lcom/google/protobuf/ByteString;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "data"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/protobuf/InvalidProtocolBufferException;
         }
     .end annotation
 
-    .line 8386
+    .line 9384
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;
 
     move-result-object v0
@@ -739,13 +784,24 @@
 
 .method public static parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "data",
+            "extensionRegistry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/protobuf/InvalidProtocolBufferException;
         }
     .end annotation
 
-    .line 8392
+    .line 9390
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;
 
     move-result-object v0
@@ -756,7 +812,7 @@
 
     check-cast p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;
 
-    .line 8393
+    .line 9391
     invoke-static {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;->-$$Nest$mbuildParsed(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;
 
     move-result-object p0
@@ -766,13 +822,22 @@
 
 .method public static parseFrom(Lcom/google/protobuf/CodedInputStream;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "input"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 8440
+    .line 9438
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;
 
     move-result-object v0
@@ -792,13 +857,24 @@
 
 .method public static parseFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "input",
+            "extensionRegistry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 8446
+    .line 9444
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;
 
     move-result-object v0
@@ -807,7 +883,7 @@
 
     move-result-object p0
 
-    .line 8447
+    .line 9445
     invoke-static {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;->-$$Nest$mbuildParsed(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;
 
     move-result-object p0
@@ -817,13 +893,22 @@
 
 .method public static parseFrom(Ljava/io/InputStream;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "input"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 8408
+    .line 9406
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;
 
     move-result-object v0
@@ -843,13 +928,24 @@
 
 .method public static parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "input",
+            "extensionRegistry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 8414
+    .line 9412
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;
 
     move-result-object v0
@@ -860,7 +956,7 @@
 
     check-cast p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;
 
-    .line 8415
+    .line 9413
     invoke-static {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;->-$$Nest$mbuildParsed(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;
 
     move-result-object p0
@@ -870,13 +966,22 @@
 
 .method public static parseFrom([B)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "data"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/protobuf/InvalidProtocolBufferException;
         }
     .end annotation
 
-    .line 8397
+    .line 9395
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;
 
     move-result-object v0
@@ -896,13 +1001,24 @@
 
 .method public static parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "data",
+            "extensionRegistry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/protobuf/InvalidProtocolBufferException;
         }
     .end annotation
 
-    .line 8403
+    .line 9401
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;
 
     move-result-object v0
@@ -913,7 +1029,7 @@
 
     check-cast p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;
 
-    .line 8404
+    .line 9402
     invoke-static {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;->-$$Nest$mbuildParsed(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;
 
     move-result-object p0
@@ -926,7 +1042,7 @@
 .method public getCaptureTrigger()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$CaptureTrigger;
     .locals 0
 
-    .line 8111
+    .line 9109
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->captureTrigger_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$CaptureTrigger;
 
     return-object p0
@@ -935,7 +1051,7 @@
 .method public getCountOfPause()I
     .locals 0
 
-    .line 8118
+    .line 9116
     iget p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->countOfPause_:I
 
     return p0
@@ -944,7 +1060,7 @@
 .method public getCountOfSnapshot()I
     .locals 0
 
-    .line 8125
+    .line 9123
     iget p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->countOfSnapshot_:I
 
     return p0
@@ -953,7 +1069,7 @@
 .method public getCountOfZoom()I
     .locals 0
 
-    .line 8132
+    .line 9130
     iget p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->countOfZoom_:I
 
     return p0
@@ -962,7 +1078,7 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/MessageLite;
     .locals 0
 
-    .line 7960
+    .line 8958
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getDefaultInstanceForType()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;
 
     move-result-object p0
@@ -973,7 +1089,7 @@
 .method public getDefaultInstanceForType()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;
     .locals 0
 
-    .line 7974
+    .line 8972
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->defaultInstance:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;
 
     return-object p0
@@ -982,7 +1098,7 @@
 .method public getEstimatedAmbientTemperature()I
     .locals 0
 
-    .line 8230
+    .line 9228
     iget p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->estimatedAmbientTemperature_:I
 
     return p0
@@ -991,7 +1107,7 @@
 .method public getFaceNum()Ljava/lang/String;
     .locals 0
 
-    .line 8139
+    .line 9137
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->faceNum_:Ljava/lang/String;
 
     return-object p0
@@ -1000,7 +1116,7 @@
 .method public getIsBtAccessaryConnected()Z
     .locals 0
 
-    .line 8146
+    .line 9144
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->isBtAccessaryConnected_:Z
 
     return p0
@@ -1009,7 +1125,7 @@
 .method public getIsCloseupRequired()Z
     .locals 0
 
-    .line 8153
+    .line 9151
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->isCloseupRequired_:Z
 
     return p0
@@ -1018,7 +1134,7 @@
 .method public getIsDisplayAccessaryConnected()Z
     .locals 0
 
-    .line 8160
+    .line 9158
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->isDisplayAccessaryConnected_:Z
 
     return p0
@@ -1027,7 +1143,7 @@
 .method public getIsEnduranceModeActivated()Z
     .locals 0
 
-    .line 8167
+    .line 9165
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->isEnduranceModeActivated_:Z
 
     return p0
@@ -1036,7 +1152,7 @@
 .method public getIsEyeDetected()Z
     .locals 0
 
-    .line 8174
+    .line 9172
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->isEyeDetected_:Z
 
     return p0
@@ -1045,7 +1161,7 @@
 .method public getIsFooterShown()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
     .locals 0
 
-    .line 8209
+    .line 9207
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->isFooterShown_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     return-object p0
@@ -1054,7 +1170,7 @@
 .method public getIsFramingAssist()Z
     .locals 0
 
-    .line 8216
+    .line 9214
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->isFramingAssist_:Z
 
     return p0
@@ -1063,7 +1179,7 @@
 .method public getOrientation()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Orientation;
     .locals 0
 
-    .line 8181
+    .line 9179
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->orientation_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Orientation;
 
     return-object p0
@@ -1072,7 +1188,7 @@
 .method public getRecDuration()J
     .locals 2
 
-    .line 8188
+    .line 9186
     iget-wide v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->recDuration_:J
 
     return-wide v0
@@ -1081,7 +1197,7 @@
 .method public getScreenTouchNums()I
     .locals 0
 
-    .line 8223
+    .line 9221
     iget p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->screenTouchNums_:I
 
     return p0
@@ -1090,7 +1206,7 @@
 .method public getSerializedSize()I
     .locals 4
 
-    .line 8303
+    .line 9301
     iget v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->memoizedSerializedSize:I
 
     const/4 v1, -0x1
@@ -1099,7 +1215,7 @@
 
     return v0
 
-    .line 8307
+    .line 9305
     :cond_0
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasCaptureTrigger()Z
 
@@ -1107,7 +1223,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 8309
+    .line 9307
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getCaptureTrigger()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$CaptureTrigger;
 
     move-result-object v0
@@ -1127,7 +1243,7 @@
     :cond_1
     const/4 v0, 0x0
 
-    .line 8311
+    .line 9309
     :goto_0
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasCountOfPause()Z
 
@@ -1137,7 +1253,7 @@
 
     const/4 v1, 0x2
 
-    .line 8313
+    .line 9311
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getCountOfPause()I
 
     move-result v2
@@ -1148,7 +1264,7 @@
 
     add-int/2addr v0, v1
 
-    .line 8315
+    .line 9313
     :cond_2
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasCountOfSnapshot()Z
 
@@ -1158,7 +1274,7 @@
 
     const/4 v1, 0x3
 
-    .line 8317
+    .line 9315
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getCountOfSnapshot()I
 
     move-result v2
@@ -1169,7 +1285,7 @@
 
     add-int/2addr v0, v1
 
-    .line 8319
+    .line 9317
     :cond_3
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasCountOfZoom()Z
 
@@ -1179,7 +1295,7 @@
 
     const/4 v1, 0x4
 
-    .line 8321
+    .line 9319
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getCountOfZoom()I
 
     move-result v2
@@ -1190,7 +1306,7 @@
 
     add-int/2addr v0, v1
 
-    .line 8323
+    .line 9321
     :cond_4
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasFaceNum()Z
 
@@ -1200,7 +1316,7 @@
 
     const/4 v1, 0x5
 
-    .line 8325
+    .line 9323
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getFaceNum()Ljava/lang/String;
 
     move-result-object v2
@@ -1211,7 +1327,7 @@
 
     add-int/2addr v0, v1
 
-    .line 8327
+    .line 9325
     :cond_5
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasIsBtAccessaryConnected()Z
 
@@ -1221,7 +1337,7 @@
 
     const/4 v1, 0x6
 
-    .line 8329
+    .line 9327
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getIsBtAccessaryConnected()Z
 
     move-result v2
@@ -1232,7 +1348,7 @@
 
     add-int/2addr v0, v1
 
-    .line 8331
+    .line 9329
     :cond_6
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasIsCloseupRequired()Z
 
@@ -1242,7 +1358,7 @@
 
     const/4 v1, 0x7
 
-    .line 8333
+    .line 9331
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getIsCloseupRequired()Z
 
     move-result v2
@@ -1253,7 +1369,7 @@
 
     add-int/2addr v0, v1
 
-    .line 8335
+    .line 9333
     :cond_7
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasIsDisplayAccessaryConnected()Z
 
@@ -1263,7 +1379,7 @@
 
     const/16 v1, 0x8
 
-    .line 8337
+    .line 9335
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getIsDisplayAccessaryConnected()Z
 
     move-result v2
@@ -1274,7 +1390,7 @@
 
     add-int/2addr v0, v1
 
-    .line 8339
+    .line 9337
     :cond_8
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasIsEnduranceModeActivated()Z
 
@@ -1284,7 +1400,7 @@
 
     const/16 v1, 0x9
 
-    .line 8341
+    .line 9339
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getIsEnduranceModeActivated()Z
 
     move-result v2
@@ -1295,7 +1411,7 @@
 
     add-int/2addr v0, v1
 
-    .line 8343
+    .line 9341
     :cond_9
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasIsEyeDetected()Z
 
@@ -1305,7 +1421,7 @@
 
     const/16 v1, 0xa
 
-    .line 8345
+    .line 9343
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getIsEyeDetected()Z
 
     move-result v2
@@ -1316,7 +1432,7 @@
 
     add-int/2addr v0, v1
 
-    .line 8347
+    .line 9345
     :cond_a
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasOrientation()Z
 
@@ -1324,7 +1440,7 @@
 
     if-eqz v1, :cond_b
 
-    .line 8349
+    .line 9347
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getOrientation()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Orientation;
 
     move-result-object v1
@@ -1341,7 +1457,7 @@
 
     add-int/2addr v0, v1
 
-    .line 8351
+    .line 9349
     :cond_b
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasRecDuration()Z
 
@@ -1351,7 +1467,7 @@
 
     const/16 v1, 0xc
 
-    .line 8353
+    .line 9351
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getRecDuration()J
 
     move-result-wide v2
@@ -1362,7 +1478,7 @@
 
     add-int/2addr v0, v1
 
-    .line 8355
+    .line 9353
     :cond_c
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasStopFactor()Z
 
@@ -1370,7 +1486,7 @@
 
     if-eqz v1, :cond_d
 
-    .line 8357
+    .line 9355
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getStopFactor()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$StopFactor;
 
     move-result-object v1
@@ -1387,7 +1503,7 @@
 
     add-int/2addr v0, v1
 
-    .line 8359
+    .line 9357
     :cond_d
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasZoom()Z
 
@@ -1397,7 +1513,7 @@
 
     const/16 v1, 0xe
 
-    .line 8361
+    .line 9359
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getZoom()Ljava/lang/String;
 
     move-result-object v2
@@ -1408,7 +1524,7 @@
 
     add-int/2addr v0, v1
 
-    .line 8363
+    .line 9361
     :cond_e
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasIsFooterShown()Z
 
@@ -1416,7 +1532,7 @@
 
     if-eqz v1, :cond_f
 
-    .line 8365
+    .line 9363
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getIsFooterShown()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v1
@@ -1433,7 +1549,7 @@
 
     add-int/2addr v0, v1
 
-    .line 8367
+    .line 9365
     :cond_f
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasIsFramingAssist()Z
 
@@ -1443,7 +1559,7 @@
 
     const/16 v1, 0x10
 
-    .line 8369
+    .line 9367
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getIsFramingAssist()Z
 
     move-result v2
@@ -1454,7 +1570,7 @@
 
     add-int/2addr v0, v1
 
-    .line 8371
+    .line 9369
     :cond_10
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasScreenTouchNums()Z
 
@@ -1464,7 +1580,7 @@
 
     const/16 v1, 0x11
 
-    .line 8373
+    .line 9371
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getScreenTouchNums()I
 
     move-result v2
@@ -1475,7 +1591,7 @@
 
     add-int/2addr v0, v1
 
-    .line 8375
+    .line 9373
     :cond_11
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasEstimatedAmbientTemperature()Z
 
@@ -1485,7 +1601,7 @@
 
     const/16 v1, 0x12
 
-    .line 8377
+    .line 9375
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getEstimatedAmbientTemperature()I
 
     move-result v2
@@ -1496,7 +1612,7 @@
 
     add-int/2addr v0, v1
 
-    .line 8379
+    .line 9377
     :cond_12
     iput v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->memoizedSerializedSize:I
 
@@ -1506,7 +1622,7 @@
 .method public getStopFactor()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$StopFactor;
     .locals 0
 
-    .line 8195
+    .line 9193
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->stopFactor_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$StopFactor;
 
     return-object p0
@@ -1515,7 +1631,7 @@
 .method public getZoom()Ljava/lang/String;
     .locals 0
 
-    .line 8202
+    .line 9200
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->zoom_:Ljava/lang/String;
 
     return-object p0
@@ -1524,7 +1640,7 @@
 .method public hasCaptureTrigger()Z
     .locals 0
 
-    .line 8110
+    .line 9108
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasCaptureTrigger:Z
 
     return p0
@@ -1533,7 +1649,7 @@
 .method public hasCountOfPause()Z
     .locals 0
 
-    .line 8117
+    .line 9115
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasCountOfPause:Z
 
     return p0
@@ -1542,7 +1658,7 @@
 .method public hasCountOfSnapshot()Z
     .locals 0
 
-    .line 8124
+    .line 9122
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasCountOfSnapshot:Z
 
     return p0
@@ -1551,7 +1667,7 @@
 .method public hasCountOfZoom()Z
     .locals 0
 
-    .line 8131
+    .line 9129
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasCountOfZoom:Z
 
     return p0
@@ -1560,7 +1676,7 @@
 .method public hasEstimatedAmbientTemperature()Z
     .locals 0
 
-    .line 8229
+    .line 9227
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasEstimatedAmbientTemperature:Z
 
     return p0
@@ -1569,7 +1685,7 @@
 .method public hasFaceNum()Z
     .locals 0
 
-    .line 8138
+    .line 9136
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasFaceNum:Z
 
     return p0
@@ -1578,7 +1694,7 @@
 .method public hasIsBtAccessaryConnected()Z
     .locals 0
 
-    .line 8145
+    .line 9143
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasIsBtAccessaryConnected:Z
 
     return p0
@@ -1587,7 +1703,7 @@
 .method public hasIsCloseupRequired()Z
     .locals 0
 
-    .line 8152
+    .line 9150
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasIsCloseupRequired:Z
 
     return p0
@@ -1596,7 +1712,7 @@
 .method public hasIsDisplayAccessaryConnected()Z
     .locals 0
 
-    .line 8159
+    .line 9157
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasIsDisplayAccessaryConnected:Z
 
     return p0
@@ -1605,7 +1721,7 @@
 .method public hasIsEnduranceModeActivated()Z
     .locals 0
 
-    .line 8166
+    .line 9164
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasIsEnduranceModeActivated:Z
 
     return p0
@@ -1614,7 +1730,7 @@
 .method public hasIsEyeDetected()Z
     .locals 0
 
-    .line 8173
+    .line 9171
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasIsEyeDetected:Z
 
     return p0
@@ -1623,7 +1739,7 @@
 .method public hasIsFooterShown()Z
     .locals 0
 
-    .line 8208
+    .line 9206
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasIsFooterShown:Z
 
     return p0
@@ -1632,7 +1748,7 @@
 .method public hasIsFramingAssist()Z
     .locals 0
 
-    .line 8215
+    .line 9213
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasIsFramingAssist:Z
 
     return p0
@@ -1641,7 +1757,7 @@
 .method public hasOrientation()Z
     .locals 0
 
-    .line 8180
+    .line 9178
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasOrientation:Z
 
     return p0
@@ -1650,7 +1766,7 @@
 .method public hasRecDuration()Z
     .locals 0
 
-    .line 8187
+    .line 9185
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasRecDuration:Z
 
     return p0
@@ -1659,7 +1775,7 @@
 .method public hasScreenTouchNums()Z
     .locals 0
 
-    .line 8222
+    .line 9220
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasScreenTouchNums:Z
 
     return p0
@@ -1668,7 +1784,7 @@
 .method public hasStopFactor()Z
     .locals 0
 
-    .line 8194
+    .line 9192
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasStopFactor:Z
 
     return p0
@@ -1677,7 +1793,7 @@
 .method public hasZoom()Z
     .locals 0
 
-    .line 8201
+    .line 9199
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasZoom:Z
 
     return p0
@@ -1694,7 +1810,7 @@
 .method public bridge synthetic newBuilderForType()Lcom/google/protobuf/MessageLite$Builder;
     .locals 0
 
-    .line 7960
+    .line 8958
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->newBuilderForType()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;
 
     move-result-object p0
@@ -1705,7 +1821,7 @@
 .method public newBuilderForType()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;
     .locals 0
 
-    .line 8451
+    .line 9449
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;
 
     move-result-object p0
@@ -1716,7 +1832,7 @@
 .method public bridge synthetic toBuilder()Lcom/google/protobuf/MessageLite$Builder;
     .locals 0
 
-    .line 7960
+    .line 8958
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->toBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;
 
     move-result-object p0
@@ -1727,7 +1843,7 @@
 .method public toBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;
     .locals 0
 
-    .line 8455
+    .line 9453
     invoke-static {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->newBuilder(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Builder;
 
     move-result-object p0
@@ -1737,23 +1853,32 @@
 
 .method public writeTo(Lcom/google/protobuf/CodedOutputStream;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "output"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 8244
+    .line 9242
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getSerializedSize()I
 
-    .line 8245
+    .line 9243
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasCaptureTrigger()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 8246
+    .line 9244
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getCaptureTrigger()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$CaptureTrigger;
 
     move-result-object v0
@@ -1766,7 +1891,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 8248
+    .line 9246
     :cond_0
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasCountOfPause()Z
 
@@ -1776,14 +1901,14 @@
 
     const/4 v0, 0x2
 
-    .line 8249
+    .line 9247
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getCountOfPause()I
 
     move-result v1
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeSInt32(II)V
 
-    .line 8251
+    .line 9249
     :cond_1
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasCountOfSnapshot()Z
 
@@ -1793,14 +1918,14 @@
 
     const/4 v0, 0x3
 
-    .line 8252
+    .line 9250
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getCountOfSnapshot()I
 
     move-result v1
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeSInt32(II)V
 
-    .line 8254
+    .line 9252
     :cond_2
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasCountOfZoom()Z
 
@@ -1810,14 +1935,14 @@
 
     const/4 v0, 0x4
 
-    .line 8255
+    .line 9253
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getCountOfZoom()I
 
     move-result v1
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeSInt32(II)V
 
-    .line 8257
+    .line 9255
     :cond_3
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasFaceNum()Z
 
@@ -1827,14 +1952,14 @@
 
     const/4 v0, 0x5
 
-    .line 8258
+    .line 9256
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getFaceNum()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeString(ILjava/lang/String;)V
 
-    .line 8260
+    .line 9258
     :cond_4
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasIsBtAccessaryConnected()Z
 
@@ -1844,14 +1969,14 @@
 
     const/4 v0, 0x6
 
-    .line 8261
+    .line 9259
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getIsBtAccessaryConnected()Z
 
     move-result v1
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeBool(IZ)V
 
-    .line 8263
+    .line 9261
     :cond_5
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasIsCloseupRequired()Z
 
@@ -1861,14 +1986,14 @@
 
     const/4 v0, 0x7
 
-    .line 8264
+    .line 9262
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getIsCloseupRequired()Z
 
     move-result v1
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeBool(IZ)V
 
-    .line 8266
+    .line 9264
     :cond_6
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasIsDisplayAccessaryConnected()Z
 
@@ -1878,14 +2003,14 @@
 
     const/16 v0, 0x8
 
-    .line 8267
+    .line 9265
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getIsDisplayAccessaryConnected()Z
 
     move-result v1
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeBool(IZ)V
 
-    .line 8269
+    .line 9267
     :cond_7
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasIsEnduranceModeActivated()Z
 
@@ -1895,14 +2020,14 @@
 
     const/16 v0, 0x9
 
-    .line 8270
+    .line 9268
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getIsEnduranceModeActivated()Z
 
     move-result v1
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeBool(IZ)V
 
-    .line 8272
+    .line 9270
     :cond_8
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasIsEyeDetected()Z
 
@@ -1912,14 +2037,14 @@
 
     const/16 v0, 0xa
 
-    .line 8273
+    .line 9271
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getIsEyeDetected()Z
 
     move-result v1
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeBool(IZ)V
 
-    .line 8275
+    .line 9273
     :cond_9
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasOrientation()Z
 
@@ -1927,7 +2052,7 @@
 
     if-eqz v0, :cond_a
 
-    .line 8276
+    .line 9274
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getOrientation()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$Orientation;
 
     move-result-object v0
@@ -1940,7 +2065,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 8278
+    .line 9276
     :cond_a
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasRecDuration()Z
 
@@ -1950,14 +2075,14 @@
 
     const/16 v0, 0xc
 
-    .line 8279
+    .line 9277
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getRecDuration()J
 
     move-result-wide v1
 
     invoke-virtual {p1, v0, v1, v2}, Lcom/google/protobuf/CodedOutputStream;->writeSInt64(IJ)V
 
-    .line 8281
+    .line 9279
     :cond_b
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasStopFactor()Z
 
@@ -1965,7 +2090,7 @@
 
     if-eqz v0, :cond_c
 
-    .line 8282
+    .line 9280
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getStopFactor()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment$StopFactor;
 
     move-result-object v0
@@ -1978,7 +2103,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 8284
+    .line 9282
     :cond_c
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasZoom()Z
 
@@ -1988,14 +2113,14 @@
 
     const/16 v0, 0xe
 
-    .line 8285
+    .line 9283
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getZoom()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeString(ILjava/lang/String;)V
 
-    .line 8287
+    .line 9285
     :cond_d
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasIsFooterShown()Z
 
@@ -2003,7 +2128,7 @@
 
     if-eqz v0, :cond_e
 
-    .line 8288
+    .line 9286
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getIsFooterShown()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v0
@@ -2016,7 +2141,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 8290
+    .line 9288
     :cond_e
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasIsFramingAssist()Z
 
@@ -2026,14 +2151,14 @@
 
     const/16 v0, 0x10
 
-    .line 8291
+    .line 9289
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getIsFramingAssist()Z
 
     move-result v1
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeBool(IZ)V
 
-    .line 8293
+    .line 9291
     :cond_f
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasScreenTouchNums()Z
 
@@ -2043,14 +2168,14 @@
 
     const/16 v0, 0x11
 
-    .line 8294
+    .line 9292
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getScreenTouchNums()I
 
     move-result v1
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeSInt32(II)V
 
-    .line 8296
+    .line 9294
     :cond_10
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->hasEstimatedAmbientTemperature()Z
 
@@ -2060,7 +2185,7 @@
 
     const/16 v0, 0x12
 
-    .line 8297
+    .line 9295
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppVideoEnvironment;->getEstimatedAmbientTemperature()I
 
     move-result p0

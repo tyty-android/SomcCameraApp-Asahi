@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<E:",
@@ -38,6 +41,17 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/ImmutableCollection;Lcom/google/common/collect/ImmutableList;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "delegate",
+            "delegateList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -48,13 +62,13 @@
         }
     .end annotation
 
-    .line 34
+    .line 38
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableAsList;-><init>()V
 
-    .line 35
+    .line 39
     iput-object p1, p0, Lcom/google/common/collect/RegularImmutableAsList;->delegate:Lcom/google/common/collect/ImmutableCollection;
 
-    .line 36
+    .line 40
     iput-object p2, p0, Lcom/google/common/collect/RegularImmutableAsList;->delegateList:Lcom/google/common/collect/ImmutableList;
 
     return-void
@@ -62,6 +76,17 @@
 
 .method constructor <init>(Lcom/google/common/collect/ImmutableCollection;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "delegate",
+            "array"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -72,7 +97,7 @@
         }
     .end annotation
 
-    .line 40
+    .line 44
     invoke-static {p2}, Lcom/google/common/collect/ImmutableList;->asImmutableList([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p2
@@ -84,6 +109,19 @@
 
 .method constructor <init>(Lcom/google/common/collect/ImmutableCollection;[Ljava/lang/Object;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "delegate",
+            "array",
+            "size"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -94,7 +132,7 @@
         }
     .end annotation
 
-    .line 44
+    .line 48
     invoke-static {p2, p3}, Lcom/google/common/collect/ImmutableList;->asImmutableList([Ljava/lang/Object;I)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p2
@@ -108,8 +146,18 @@
 # virtual methods
 .method copyIntoArray([Ljava/lang/Object;I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dst",
+            "offset"
+        }
+    .end annotation
 
-    .line 65
+    .line 69
     iget-object p0, p0, Lcom/google/common/collect/RegularImmutableAsList;->delegateList:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/ImmutableList;->copyIntoArray([Ljava/lang/Object;I)I
@@ -129,7 +177,7 @@
         }
     .end annotation
 
-    .line 49
+    .line 53
     iget-object p0, p0, Lcom/google/common/collect/RegularImmutableAsList;->delegate:Lcom/google/common/collect/ImmutableCollection;
 
     return-object p0
@@ -145,7 +193,7 @@
         }
     .end annotation
 
-    .line 53
+    .line 57
     iget-object p0, p0, Lcom/google/common/collect/RegularImmutableAsList;->delegateList:Lcom/google/common/collect/ImmutableList;
 
     return-object p0
@@ -153,13 +201,22 @@
 
 .method public get(I)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TE;"
         }
     .end annotation
 
-    .line 85
+    .line 91
     iget-object p0, p0, Lcom/google/common/collect/RegularImmutableAsList;->delegateList:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableList;->get(I)Ljava/lang/Object;
@@ -171,8 +228,10 @@
 
 .method internalArray()[Ljava/lang/Object;
     .locals 0
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 
-    .line 70
+    .line 76
     iget-object p0, p0, Lcom/google/common/collect/RegularImmutableAsList;->delegateList:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableList;->internalArray()[Ljava/lang/Object;
@@ -185,7 +244,7 @@
 .method internalArrayEnd()I
     .locals 0
 
-    .line 80
+    .line 86
     iget-object p0, p0, Lcom/google/common/collect/RegularImmutableAsList;->delegateList:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableList;->internalArrayEnd()I
@@ -198,7 +257,7 @@
 .method internalArrayStart()I
     .locals 0
 
-    .line 75
+    .line 81
     iget-object p0, p0, Lcom/google/common/collect/RegularImmutableAsList;->delegateList:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableList;->internalArrayStart()I
@@ -210,6 +269,15 @@
 
 .method public listIterator(I)Lcom/google/common/collect/UnmodifiableListIterator;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -218,7 +286,7 @@
         }
     .end annotation
 
-    .line 59
+    .line 63
     iget-object p0, p0, Lcom/google/common/collect/RegularImmutableAsList;->delegateList:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableList;->listIterator(I)Lcom/google/common/collect/UnmodifiableListIterator;
@@ -230,9 +298,28 @@
 
 .method public bridge synthetic listIterator(I)Ljava/util/ListIterator;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
-    .line 28
+    .line 31
     invoke-virtual {p0, p1}, Lcom/google/common/collect/RegularImmutableAsList;->listIterator(I)Lcom/google/common/collect/UnmodifiableListIterator;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method writeReplace()Ljava/lang/Object;
+    .locals 0
+
+    .line 100
+    invoke-super {p0}, Lcom/google/common/collect/ImmutableAsList;->writeReplace()Ljava/lang/Object;
 
     move-result-object p0
 

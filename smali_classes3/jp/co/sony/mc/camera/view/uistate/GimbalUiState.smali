@@ -12,15 +12,15 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0088\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0008\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0007\u0008\u0007\u0018\u0000 A2\u00020\u0001:\u0001ABW\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\u0008\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\u0006\u0010\u000c\u001a\u00020\r\u0012\u0006\u0010\u000e\u001a\u00020\u000f\u0012\u0006\u0010\u0010\u001a\u00020\u0011\u0012\u0006\u0010\u0012\u001a\u00020\u0013\u0012\u0006\u0010\u0014\u001a\u00020\u0015\u00a2\u0006\u0004\u0008\u0016\u0010\u0017J\u0006\u0010:\u001a\u00020;J\u0006\u0010<\u001a\u00020;J\u0006\u0010=\u001a\u00020;J\u000e\u0010>\u001a\u00020;2\u0006\u0010?\u001a\u00020*J\u0006\u0010@\u001a\u00020;R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\rX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u000fX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0011X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0013X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0015X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u0018\u001a\u0004\u0018\u00010\u0019X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001a\u0010\u001b\"\u0004\u0008\u001c\u0010\u001dR\u000e\u0010\u001e\u001a\u00020\u001fX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010 \u001a\u0010\u0012\u000c\u0012\n #*\u0004\u0018\u00010\"0\"0!X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0017\u0010$\u001a\u0008\u0012\u0004\u0012\u00020\"0%\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008$\u0010&R\u001c\u0010\'\u001a\u0010\u0012\u000c\u0012\n #*\u0004\u0018\u00010\"0\"0!X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0017\u0010(\u001a\u0008\u0012\u0004\u0012\u00020\"0%\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008(\u0010&R\u001c\u0010)\u001a\u0010\u0012\u000c\u0012\n #*\u0004\u0018\u00010*0*0!X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001f\u0010+\u001a\u0010\u0012\u000c\u0012\n #*\u0004\u0018\u00010*0*0%\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008,\u0010&R\u0017\u0010-\u001a\u0008\u0012\u0004\u0012\u00020\"0%\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008-\u0010&R\u0017\u0010.\u001a\u0008\u0012\u0004\u0012\u00020\"0%\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008.\u0010&R\u0017\u0010/\u001a\u0008\u0012\u0004\u0012\u0002000%\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00081\u0010&R\u0017\u00102\u001a\u0008\u0012\u0004\u0012\u00020\"0%\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00082\u0010&R\u0017\u00103\u001a\u0008\u0012\u0004\u0012\u00020\"0%\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00083\u0010&R\u0017\u00104\u001a\u0008\u0012\u0004\u0012\u0002000%\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00085\u0010&R\u0017\u00106\u001a\u0008\u0012\u0004\u0012\u0002000%\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00087\u0010&R\u000e\u00108\u001a\u000209X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006B"
+        "\u0000\u008a\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0008\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u0007\u0008\u0007\u0018\u0000 B2\u00020\u0001:\u0001BBW\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\u0008\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\u0006\u0010\u000c\u001a\u00020\r\u0012\u0006\u0010\u000e\u001a\u00020\u000f\u0012\u0006\u0010\u0010\u001a\u00020\u0011\u0012\u0006\u0010\u0012\u001a\u00020\u0013\u0012\u0006\u0010\u0014\u001a\u00020\u0015\u00a2\u0006\u0004\u0008\u0016\u0010\u0017J\u0006\u0010;\u001a\u00020<J\u0006\u0010=\u001a\u00020<J\u0006\u0010>\u001a\u00020<J\u000e\u0010?\u001a\u00020<2\u0006\u0010@\u001a\u00020*J\u0006\u0010A\u001a\u00020<R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\rX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u000fX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0011X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0013X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0015X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u0018\u001a\u0004\u0018\u00010\u0019X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001a\u0010\u001b\"\u0004\u0008\u001c\u0010\u001dR\u000e\u0010\u001e\u001a\u00020\u001fX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010 \u001a\u0010\u0012\u000c\u0012\n #*\u0004\u0018\u00010\"0\"0!X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0017\u0010$\u001a\u0008\u0012\u0004\u0012\u00020\"0%\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008$\u0010&R\u001c\u0010\'\u001a\u0010\u0012\u000c\u0012\n #*\u0004\u0018\u00010\"0\"0!X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0017\u0010(\u001a\u0008\u0012\u0004\u0012\u00020\"0%\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008(\u0010&R\u001c\u0010)\u001a\u0010\u0012\u000c\u0012\n #*\u0004\u0018\u00010*0*0!X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001f\u0010+\u001a\u0010\u0012\u000c\u0012\n #*\u0004\u0018\u00010*0*0%\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008,\u0010&R\u0017\u0010-\u001a\u0008\u0012\u0004\u0012\u00020\"0%\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008-\u0010&R\u0017\u0010.\u001a\u0008\u0012\u0004\u0012\u00020\"0%\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008.\u0010&R\u0017\u0010/\u001a\u0008\u0012\u0004\u0012\u0002000%\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00081\u0010&R\u0017\u00102\u001a\u0008\u0012\u0004\u0012\u00020\"0%\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00082\u0010&R\u0017\u00103\u001a\u0008\u0012\u0004\u0012\u00020\"0%\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00083\u0010&R\u0017\u00104\u001a\u0008\u0012\u0004\u0012\u0002000%\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00085\u0010&R\u0017\u00106\u001a\u0008\u0012\u0004\u0012\u0002000%\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00087\u0010&R\u000e\u00108\u001a\u000209X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010:\u001a\u00020\"X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006C"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;",
         "",
         "viewModelScope",
         "Lkotlinx/coroutines/CoroutineScope;",
-        "basicModeCommonUiState",
-        "Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;",
+        "basicModeSubmenuUiState",
+        "Ljp/co/sony/mc/camera/view/uistate/BasicModeSubmenuUiState;",
         "cameraSettingsModel",
         "Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;",
         "cameraStatusModel",
@@ -38,7 +38,7 @@
         "autoFramingUiState",
         "Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;",
         "<init>",
-        "(Lkotlinx/coroutines/CoroutineScope;Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;Ljp/co/sony/mc/camera/view/uistate/MessageUiState;Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;Ljp/co/sony/mc/camera/view/uistate/ThermalUiState;Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;)V",
+        "(Lkotlinx/coroutines/CoroutineScope;Ljp/co/sony/mc/camera/view/uistate/BasicModeSubmenuUiState;Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;Ljp/co/sony/mc/camera/view/uistate/MessageUiState;Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;Ljp/co/sony/mc/camera/view/uistate/ThermalUiState;Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;)V",
         "operator",
         "Ljp/co/sony/mc/camera/view/CameraOperator;",
         "getOperator",
@@ -73,6 +73,7 @@
         "getFramingAssistButtonContentDescription",
         "enableFramingAssistTask",
         "Ljava/lang/Runnable;",
+        "waitingInitializedToEnableFramingAssist",
         "switchFramingAssist",
         "",
         "changeToFramingAssistState",
@@ -134,7 +135,7 @@
 
 .field private final autoFramingUiState:Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;
 
-.field private final basicModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
+.field private final basicModeSubmenuUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeSubmenuUiState;
 
 .field private final cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
@@ -258,6 +259,8 @@
 
 .field private final viewModelScope:Lkotlinx/coroutines/CoroutineScope;
 
+.field private waitingInitializedToEnableFramingAssist:Z
+
 
 # direct methods
 .method public static synthetic $r8$lambda$3C-_oLrpJLPlblGuO63nveGCrTM(Z)Z
@@ -356,14 +359,14 @@
     return-void
 .end method
 
-.method public constructor <init>(Lkotlinx/coroutines/CoroutineScope;Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;Ljp/co/sony/mc/camera/view/uistate/MessageUiState;Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;Ljp/co/sony/mc/camera/view/uistate/ThermalUiState;Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;)V
+.method public constructor <init>(Lkotlinx/coroutines/CoroutineScope;Ljp/co/sony/mc/camera/view/uistate/BasicModeSubmenuUiState;Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;Ljp/co/sony/mc/camera/view/uistate/MessageUiState;Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;Ljp/co/sony/mc/camera/view/uistate/ThermalUiState;Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;)V
     .locals 1
 
     const-string/jumbo v0, "viewModelScope"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string v0, "basicModeCommonUiState"
+    const-string v0, "basicModeSubmenuUiState"
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -406,7 +409,7 @@
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->viewModelScope:Lkotlinx/coroutines/CoroutineScope;
 
     .line 41
-    iput-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->basicModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->basicModeSubmenuUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeSubmenuUiState;
 
     .line 42
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
@@ -498,7 +501,7 @@
     move-result-object p8
 
     .line 68
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;->getSubMenuVisible()Landroidx/lifecycle/LiveData;
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/uistate/BasicModeSubmenuUiState;->getSubMenuVisible()Landroidx/lifecycle/LiveData;
 
     move-result-object p2
 
@@ -630,7 +633,12 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->enableFramingAssistTask:Ljava/lang/Runnable;
 
+    const/4 p2, 0x1
+
     .line 118
+    iput-boolean p2, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->waitingInitializedToEnableFramingAssist:Z
+
+    .line 121
     new-instance p2, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$1;
 
     const/4 p3, 0x0
@@ -653,7 +661,7 @@
 
     invoke-static/range {p4 .. p9}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
 
-    .line 135
+    .line 138
     new-instance p2, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$2;
 
     invoke-direct {p2, p0, p3}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$2;-><init>(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;Lkotlin/coroutines/Continuation;)V
@@ -664,7 +672,7 @@
 
     invoke-static/range {p4 .. p9}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
 
-    .line 151
+    .line 158
     new-instance p2, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$3;
 
     invoke-direct {p2, p0, p3}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$3;-><init>(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;Lkotlin/coroutines/Continuation;)V
@@ -675,7 +683,7 @@
 
     invoke-static/range {p4 .. p9}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
 
-    .line 159
+    .line 174
     new-instance p2, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$4;
 
     invoke-direct {p2, p0, p3}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$4;-><init>(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;Lkotlin/coroutines/Continuation;)V
@@ -686,7 +694,7 @@
 
     invoke-static/range {p4 .. p9}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
 
-    .line 174
+    .line 182
     new-instance p2, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$5;
 
     invoke-direct {p2, p0, p3}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$5;-><init>(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;Lkotlin/coroutines/Continuation;)V
@@ -697,7 +705,7 @@
 
     invoke-static/range {p4 .. p9}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
 
-    .line 196
+    .line 197
     new-instance p2, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$6;
 
     invoke-direct {p2, p0, p3}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$6;-><init>(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;Lkotlin/coroutines/Continuation;)V
@@ -708,7 +716,7 @@
 
     invoke-static/range {p4 .. p9}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
 
-    .line 211
+    .line 219
     new-instance p2, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$7;
 
     invoke-direct {p2, p0, p3}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$7;-><init>(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;Lkotlin/coroutines/Continuation;)V
@@ -719,7 +727,7 @@
 
     invoke-static/range {p4 .. p9}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
 
-    .line 222
+    .line 234
     new-instance p2, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$8;
 
     invoke-direct {p2, p0, p3}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$8;-><init>(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;Lkotlin/coroutines/Continuation;)V
@@ -730,7 +738,7 @@
 
     invoke-static/range {p4 .. p9}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
 
-    .line 241
+    .line 245
     new-instance p2, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$9;
 
     invoke-direct {p2, p0, p3}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$9;-><init>(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;Lkotlin/coroutines/Continuation;)V
@@ -741,10 +749,21 @@
 
     invoke-static/range {p4 .. p9}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
 
-    .line 263
+    .line 264
     new-instance p2, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$10;
 
     invoke-direct {p2, p0, p3}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$10;-><init>(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;Lkotlin/coroutines/Continuation;)V
+
+    move-object p7, p2
+
+    check-cast p7, Lkotlin/jvm/functions/Function2;
+
+    invoke-static/range {p4 .. p9}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
+
+    .line 286
+    new-instance p2, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$11;
+
+    invoke-direct {p2, p0, p3}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$11;-><init>(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;Lkotlin/coroutines/Continuation;)V
 
     move-object p7, p2
 
@@ -845,6 +864,15 @@
     return-object p0
 .end method
 
+.method public static final synthetic access$getWaitingInitializedToEnableFramingAssist$p(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;)Z
+    .locals 0
+
+    .line 39
+    iget-boolean p0, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->waitingInitializedToEnableFramingAssist:Z
+
+    return p0
+.end method
+
 .method public static final synthetic access$get_framingAssistCroppedPosition$p(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;)Landroidx/lifecycle/MutableLiveData;
     .locals 0
 
@@ -870,6 +898,15 @@
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->_isFramingAssistSwitched:Landroidx/lifecycle/MutableLiveData;
 
     return-object p0
+.end method
+
+.method public static final synthetic access$setWaitingInitializedToEnableFramingAssist$p(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;Z)V
+    .locals 0
+
+    .line 39
+    iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->waitingInitializedToEnableFramingAssist:Z
+
+    return-void
 .end method
 
 .method private static final enableFramingAssistTask$lambda$7(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;)V
@@ -942,12 +979,12 @@
 
     if-eqz p0, :cond_0
 
-    const p0, 0x7f1100a8
+    const p0, 0x7f1100bc
 
     goto :goto_0
 
     :cond_0
-    const p0, 0x7f1100a6
+    const p0, 0x7f1100ba
 
     :goto_0
     return p0
@@ -963,12 +1000,12 @@
 
     if-eqz p0, :cond_0
 
-    const p0, 0x7f080210
+    const p0, 0x7f08026c
 
     goto :goto_0
 
     :cond_0
-    const p0, 0x7f08020f
+    const p0, 0x7f08026b
 
     :goto_0
     return p0
@@ -982,12 +1019,12 @@
 
     if-ne p0, v0, :cond_0
 
-    const p0, 0x7f110284
+    const p0, 0x7f1102cf
 
     goto :goto_0
 
     :cond_0
-    const p0, 0x7f110287
+    const p0, 0x7f1102d2
 
     :goto_0
     return p0
@@ -1063,7 +1100,7 @@
 .method public final changeToActionMode()V
     .locals 2
 
-    .line 312
+    .line 345
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     if-eqz p0, :cond_0
@@ -1072,10 +1109,10 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    .line 313
+    .line 346
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;->OFF_KEEP_FRAMING_ASSIST:Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;
 
-    .line 312
+    .line 345
     invoke-interface {p0, v0, v1}, Ljp/co/sony/mc/camera/view/CameraOperator;->setSetting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
     :cond_0
@@ -1085,7 +1122,7 @@
 .method public final changeToFramingAssistState()V
     .locals 3
 
-    .line 306
+    .line 339
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     if-eqz v0, :cond_0
@@ -1098,7 +1135,7 @@
 
     invoke-interface {v0, v1, v2}, Ljp/co/sony/mc/camera/view/CameraOperator;->setSetting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    .line 308
+    .line 341
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
@@ -1302,7 +1339,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 317
+    .line 350
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->_framingAssistCroppedPosition:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {p0, p1}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
@@ -1313,14 +1350,14 @@
 .method public final onPause()V
     .locals 2
 
-    .line 321
+    .line 354
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->handler:Landroid/os/Handler;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->enableFramingAssistTask:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 322
+    .line 355
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->_isFramingAssistEnabled:Landroidx/lifecycle/MutableLiveData;
 
     const/4 v1, 0x0
@@ -1331,12 +1368,17 @@
 
     invoke-virtual {v0, v1}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
-    .line 323
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->_framingAssistCroppedPosition:Landroidx/lifecycle/MutableLiveData;
+    .line 356
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->_framingAssistCroppedPosition:Landroidx/lifecycle/MutableLiveData;
 
-    sget-object v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;->NEAR_CENTER:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;
+    sget-object v1, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;->NEAR_CENTER:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;
 
-    invoke-virtual {p0, v0}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
+    invoke-virtual {v0, v1}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
+
+    const/4 v0, 0x1
+
+    .line 357
+    iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->waitingInitializedToEnableFramingAssist:Z
 
     return-void
 .end method
@@ -1353,7 +1395,7 @@
 .method public final switchFramingAssist()V
     .locals 12
 
-    .line 288
+    .line 321
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->_isFramingAssistSwitched:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -1372,7 +1414,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 289
+    .line 322
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->viewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->getFaceRectList()Lkotlinx/coroutines/flow/StateFlow;
@@ -1393,7 +1435,7 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 290
+    .line 323
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isObjectTracking()Landroidx/lifecycle/LiveData;
@@ -1416,7 +1458,7 @@
 
     goto :goto_0
 
-    .line 293
+    .line 326
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
@@ -1432,14 +1474,14 @@
 
     goto :goto_1
 
-    .line 291
+    .line 324
     :cond_1
     :goto_0
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->changeToFramingAssistState()V
 
     goto :goto_1
 
-    .line 296
+    .line 329
     :cond_2
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
@@ -1453,11 +1495,11 @@
 
     invoke-interface {v0, v1, v2}, Ljp/co/sony/mc/camera/view/CameraOperator;->setSetting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    .line 297
+    .line 330
     :cond_3
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->changeToActionMode()V
 
-    .line 300
+    .line 333
     :cond_4
     :goto_1
     new-instance p0, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
@@ -1488,7 +1530,7 @@
 
     move-result-object p0
 
-    .line 301
+    .line 334
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FRAMING_ASSIST_SWITCH:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     const-string v1, "FRAMING_ASSIST_SWITCH"
@@ -1501,7 +1543,7 @@
 
     move-result-object p0
 
-    .line 302
+    .line 335
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->send()V
 
     return-void

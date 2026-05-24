@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/cache/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<K:",
@@ -18,6 +21,15 @@
 
 # virtual methods
 .method public abstract onRemoval(Lcom/google/common/cache/RemovalNotification;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "notification"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -16,6 +16,14 @@
 # direct methods
 .method public constructor <init>(Landroid/content/SharedPreferences;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "prefs"
+        }
+    .end annotation
 
     .line 26
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -92,6 +100,14 @@
 
 .method public remove(Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
     .line 71
     invoke-direct {p0}, Ljp/co/sony/mc/camera/configuration/SharedPreferencesWriter;->getEditor()Landroid/content/SharedPreferences$Editor;
@@ -105,6 +121,16 @@
 
 .method public writeBoolean(Ljava/lang/String;Z)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
     .line 53
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -158,6 +184,16 @@
 
 .method public writeInt(Ljava/lang/String;I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
     .line 59
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -211,6 +247,16 @@
 
 .method public writeLong(Ljava/lang/String;J)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
     .line 65
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -264,6 +310,16 @@
 
 .method public writeString(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
     .line 40
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -317,6 +373,17 @@
 
 .method public writeString(Ljava/util/Map;Ljava/lang/String;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "map",
+            "prefix"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -26,15 +26,35 @@
 
 
 # instance fields
+.field final synthetic this$0:Lcom/google/common/util/concurrent/ExecutionSequencer;
+
 .field final synthetic val$callable:Ljava/util/concurrent/Callable;
 
 
 # direct methods
 .method constructor <init>(Lcom/google/common/util/concurrent/ExecutionSequencer;Ljava/util/concurrent/Callable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$callable"
+        }
+    .end annotation
 
-    .line 143
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .line 155
     iput-object p2, p0, Lcom/google/common/util/concurrent/ExecutionSequencer$1;->val$callable:Ljava/util/concurrent/Callable;
+
+    iput-object p1, p0, Lcom/google/common/util/concurrent/ExecutionSequencer$1;->this$0:Lcom/google/common/util/concurrent/ExecutionSequencer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -59,7 +79,7 @@
         }
     .end annotation
 
-    .line 146
+    .line 158
     iget-object p0, p0, Lcom/google/common/util/concurrent/ExecutionSequencer$1;->val$callable:Ljava/util/concurrent/Callable;
 
     invoke-interface {p0}, Ljava/util/concurrent/Callable;->call()Ljava/lang/Object;
@@ -76,10 +96,10 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 151
+    .line 163
     iget-object p0, p0, Lcom/google/common/util/concurrent/ExecutionSequencer$1;->val$callable:Ljava/util/concurrent/Callable;
 
-    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-interface {p0}, Ljava/util/concurrent/Callable;->toString()Ljava/lang/String;
 
     move-result-object p0
 

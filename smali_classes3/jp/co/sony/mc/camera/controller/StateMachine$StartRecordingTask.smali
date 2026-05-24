@@ -34,6 +34,17 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;Ljava/util/List;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "recordingParams"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -43,19 +54,19 @@
         }
     .end annotation
 
-    .line 6552
+    .line 6296
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StartRecordingTask;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6550
+    .line 6294
     new-instance p1, Ljava/util/LinkedList;
 
     invoke-direct {p1}, Ljava/util/LinkedList;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StartRecordingTask;->mRecordingParams:Ljava/util/LinkedList;
 
-    .line 6553
+    .line 6297
     invoke-virtual {p1, p2}, Ljava/util/LinkedList;->addAll(Ljava/util/Collection;)Z
 
     return-void
@@ -66,7 +77,7 @@
 .method public run()V
     .locals 3
 
-    .line 6558
+    .line 6302
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
@@ -83,7 +94,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 6560
+    .line 6304
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StartRecordingTask;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 

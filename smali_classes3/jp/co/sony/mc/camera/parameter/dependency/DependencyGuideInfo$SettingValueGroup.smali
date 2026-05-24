@@ -23,6 +23,16 @@
 # direct methods
 .method public varargs constructor <init>(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;[Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingDependencyGroup;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "value",
+            "settingDependencyGroup"
+        }
+    .end annotation
 
     .line 80
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

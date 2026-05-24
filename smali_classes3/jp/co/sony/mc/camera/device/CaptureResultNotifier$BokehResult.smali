@@ -24,7 +24,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 669
+    .line 671
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,14 +32,24 @@
 
 .method public constructor <init>(II)V
     .locals 0
-
-    .line 672
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 673
-    iput p1, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$BokehResult;->mStatus:I
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "status",
+            "quality"
+        }
+    .end annotation
 
     .line 674
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 675
+    iput p1, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$BokehResult;->mStatus:I
+
+    .line 676
     iput p2, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$BokehResult;->mQuality:I
 
     return-void
@@ -50,7 +60,7 @@
 .method public getQuality()I
     .locals 0
 
-    .line 682
+    .line 684
     iget p0, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$BokehResult;->mQuality:I
 
     return p0
@@ -59,7 +69,7 @@
 .method public getStatus()I
     .locals 0
 
-    .line 678
+    .line 680
     iget p0, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$BokehResult;->mStatus:I
 
     return p0

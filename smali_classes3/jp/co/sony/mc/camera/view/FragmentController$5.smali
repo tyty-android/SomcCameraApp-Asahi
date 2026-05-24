@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 563
+    .line 522
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$5;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +46,7 @@
 .method public onJumpZoomEnd()V
     .locals 1
 
-    .line 571
+    .line 530
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$5;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraOperator(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;
@@ -55,7 +63,7 @@
 .method public onJumpZoomStart()V
     .locals 1
 
-    .line 566
+    .line 525
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$5;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraOperator(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;

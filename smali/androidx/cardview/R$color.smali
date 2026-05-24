@@ -14,13 +14,13 @@
 
 
 # static fields
-.field public static final cardview_dark_background:I = 0x7f0600ac
+.field public static final cardview_dark_background:I = 0x7f060095
 
-.field public static final cardview_light_background:I = 0x7f0600ad
+.field public static final cardview_light_background:I = 0x7f060096
 
-.field public static final cardview_shadow_end_color:I = 0x7f0600ae
+.field public static final cardview_shadow_end_color:I = 0x7f060097
 
-.field public static final cardview_shadow_start_color:I = 0x7f0600af
+.field public static final cardview_shadow_start_color:I = 0x7f060098
 
 
 # direct methods

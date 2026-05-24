@@ -132,6 +132,14 @@
 
 .method private getLinkText(Ljava/lang/String;)Landroid/text/SpannableStringBuilder;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "contentString"
+        }
+    .end annotation
 
     .line 229
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -315,6 +323,14 @@
 
 .method private showConsentDialog(Ljp/co/sony/mc/camera/DataConsentActivity$DialogId;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dialogId"
+        }
+    .end annotation
 
     .line 145
     invoke-direct {p0}, Ljp/co/sony/mc/camera/DataConsentActivity;->dismissDialog()V
@@ -329,7 +345,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0c0035
+    const v2, 0x7f0c003b
 
     const/4 v3, 0x0
 
@@ -340,7 +356,7 @@
 
     check-cast v1, Landroid/view/ViewGroup;
 
-    const v2, 0x7f090052
+    const v2, 0x7f090058
 
     .line 150
     invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
@@ -349,7 +365,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    const v4, 0x7f090374
+    const v4, 0x7f090376
 
     .line 151
     invoke-virtual {v1, v4}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
@@ -363,7 +379,7 @@
 
     if-ne p1, v5, :cond_0
 
-    const v5, 0x7f1103d1
+    const v5, 0x7f11041c
 
     .line 154
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setText(I)V
@@ -383,7 +399,7 @@
 
     if-ne p1, v3, :cond_1
 
-    const v3, 0x7f1101c6
+    const v3, 0x7f110207
 
     .line 157
     invoke-virtual {p0, v3}, Ljp/co/sony/mc/camera/DataConsentActivity;->getString(I)Ljava/lang/String;
@@ -417,7 +433,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v4, 0x7f110186
+    const v4, 0x7f1101c3
 
     invoke-virtual {p0, v4}, Ljp/co/sony/mc/camera/DataConsentActivity;->getString(I)Ljava/lang/String;
 
@@ -433,7 +449,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f11010c
+    const v4, 0x7f110148
 
     .line 163
     invoke-virtual {p0, v4}, Ljp/co/sony/mc/camera/DataConsentActivity;->getString(I)Ljava/lang/String;
@@ -537,6 +553,14 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "savedInstanceState"
+        }
+    .end annotation
 
     .line 103
     invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onCreate(Landroid/os/Bundle;)V
@@ -596,6 +620,14 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "intent"
+        }
+    .end annotation
 
     .line 127
     invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onNewIntent(Landroid/content/Intent;)V

@@ -24,8 +24,16 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/CameraActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 2359
+    .line 2318
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffTimerImpl;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +46,7 @@
 .method public disable()V
     .locals 0
 
-    .line 2373
+    .line 2332
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffTimerImpl;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/CameraActivity;->disableAutoPowerOffTimer()V
@@ -49,7 +57,7 @@
 .method public enable()V
     .locals 0
 
-    .line 2368
+    .line 2327
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffTimerImpl;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/CameraActivity;->enableAutoPowerOffTimer()V
@@ -60,7 +68,7 @@
 .method public resetTimer()V
     .locals 0
 
-    .line 2363
+    .line 2322
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffTimerImpl;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/CameraActivity;->restartAutoPowerOffTimer()V

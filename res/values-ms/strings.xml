@@ -82,6 +82,7 @@ Anda akan menerima pemberitahuan dan dialog. Pilih Berpasangan dengan semua, kem
     <string name="call_notification_incoming_text">Panggilan masuk</string>
     <string name="call_notification_ongoing_text">Panggilan sedang berlangsung</string>
     <string name="call_notification_screening_text">Menyaring panggilan masuk</string>
+    <string name="camera_string_saving_process_hint_txt">Menyimpan... Sila tunggu sehingga penyimpanan selesai.</string>
     <string name="camera_strings_accept_privacy_policy_txt">Sebelum ini, anda telah menerima dasar privasi tetapi anda sentiasa boleh berubah fikiran.</string>
     <string name="camera_strings_accessibility_48_mega_pixel_txt">48 megapiksel</string>
     <string name="camera_strings_accessibility_adjust_bokeh_txt">Laraskan Bokeh</string>
@@ -92,6 +93,27 @@ Anda akan menerima pemberitahuan dan dialog. Pilih Berpasangan dengan semua, kem
     <string name="camera_strings_accessibility_adjust_framing_size_smaller_txt">Kecilkan saiz bingkai</string>
     <string name="camera_strings_accessibility_adjust_framing_size_txt">Laraskan saiz bingkai</string>
     <string name="camera_strings_accessibility_adjust_shutter_speed_txt">Kelajuan pengatup</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_look_menu_txt">Tutup butang. Menutup menu rupa.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_menu_txt">Tutup menu tersuai</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_suggests_txt">Tutup pelarasan disyorkan</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_menu_txt">Rupa tersuai yang digunakan buat masa ini. Membuka menu pelarasan.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_txt">Rupa tersuai. Menggunakan tetapan rupa, kecerahan dan warna yang didaftarkan dalam menu tersuai.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_tab_txt">Tab Tersuai. Menggunakan tetapan rupa, kecerahan dan warna yang didaftarkan dalam menu tersuai.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_button_txt">Butang tersuai. Membuka menu yang membolehkan anda membuat pelarasan lanjutan apabila pelarasan disyorkan digunakan.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_param_txt">%1$s ditetapkan kepada %2$s</string>
+    <string name="camera_strings_accessibility_ai_suggestion_first_time_txt">Pembantu Kamera AI. Fungsi ini mengesyorkan tetapan seperti warna mengikut pemandangan.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_four_of_some_suggests_txt">Pelarasan disyorkan keempat</string>
+    <string name="camera_strings_accessibility_ai_suggestion_look_menu_txt">"%1$s
+Buka menu penampilan kreatif"</string>
+    <string name="camera_strings_accessibility_ai_suggestion_new_suggest_txt">Pelarasan disyorkan baharu disyorkan</string>
+    <string name="camera_strings_accessibility_ai_suggestion_one_of_some_suggests_txt">Pelarasan disyorkan pertama</string>
+    <string name="camera_strings_accessibility_ai_suggestion_open_suggests_txt">Kembangkan pelarasan disyorkan</string>
+    <string name="camera_strings_accessibility_ai_suggestion_reset_to_default_txt">Tetapkan semula kepada tetapan prapengesyoran</string>
+    <string name="camera_strings_accessibility_ai_suggestion_selected_suggest_txt">Pelarasan pengesyoran ini digunakan</string>
+    <string name="camera_strings_accessibility_ai_suggestion_suggest_lens_txt">Butang lensa disyorkan. %1$sx dicadangkan.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_surface_of_some_suggests_txt">Pelarasan disyorkan. Leret dari kanan ke kiri untuk memaparkan pelarasan disyorkan.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_three_of_some_suggests_txt">Pelarasan disyorkan ketiga</string>
+    <string name="camera_strings_accessibility_ai_suggestion_two_of_some_suggests_txt">Pelarasan disyorkan kedua</string>
     <string name="camera_strings_accessibility_arrow_left_button_txt">Anak panah kiri</string>
     <string name="camera_strings_accessibility_arrow_right_button_txt">Anak panah kanan</string>
     <string name="camera_strings_accessibility_audio_level_txt">Meter tahap audio</string>
@@ -246,6 +268,45 @@ Anda akan menerima pemberitahuan dan dialog. Pilih Berpasangan dengan semua, kem
     <string name="camera_strings_advanced_setting_geo_tag_title_txt">Simpan lokasi</string>
     <string name="camera_strings_ai_face_restore_description_txt">Anda boleh mengambil foto dengan kejelasan wajah untuk membuatkan bahagian muka lebih jelas</string>
     <string name="camera_strings_ai_face_restore_txt">Tajamkan muka</string>
+    <string name="camera_strings_ai_suggestion_introduce_hint_text_txt">[Petua] Pembantu Kamera AI</string>
+    <string name="camera_strings_aisuggestion_box_name1_txt">Tersuai</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_message_txt">Daftar rupa, kecerahan dan tetapan warna semasa kepada Tersuai.</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_overwrite_message_txt">Rupa telah didaftar dalam Tersuai. Tulis ganti?</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_title_txt">Daftar sebagai Rupa tersuai</string>
+    <string name="camera_strings_aisuggestion_box_title_txt">Tersuai</string>
+    <string name="camera_strings_aisuggestion_custom_params_contrast_txt">Kontras</string>
+    <string name="camera_strings_aisuggestion_custom_params_ev_txt">Cerah</string>
+    <string name="camera_strings_aisuggestion_custom_params_register_txt">Daftar</string>
+    <string name="camera_strings_aisuggestion_custom_params_saturation_txt">Kepekat.</string>
+    <string name="camera_strings_aisuggestion_custom_params_title_txt">Kecerahan/Warna</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbab_txt">Hangat</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbgm_txt">Seri warna</string>
+    <string name="camera_strings_aisuggestion_customlook_register_instruction_txt">Anda boleh menggunakan rupa tersuai pada bila-bila masa daripada tab Rupa tersuai</string>
+    <string name="camera_strings_aisuggestion_description_txt">"AI mengenal pasti latar dan mengesyorkan pelarasan dioptimumkan secara automatik dalam pratonton mini pada bahagian bawah kanan.
+Jika anda mengetik pada pratonton mini, tetapan yang berikut akan dilaraskan secara automatik untuk disesuaikan dengan latar:
+Rupa, Dedahan, Imbangan putih, Kepekatan, Kontras, Bokeh
+*Fungsi ini hanya tersedia dalam Mod foto.
+*Anda boleh memulakan rakaman video dengan menekan lama butang pengatup, kepekatan, kontras dan tetapan bokeh tidak akan digunakan."</string>
+    <string name="camera_strings_aisuggestion_guide_description1_txt">Pelarasan disyorkan berdasarkan latar yang dikenal pasti oleh AI dipaparkan dalam pratonton mini pada bahagian bawah kanan (bahagian atas kanan apabila dipegang secara mendatar). Anda boleh menggunakan semua pelarasan ini sekali dengan mengetik pratonton mini.</string>
+    <string name="camera_strings_aisuggestion_guide_description2_txt">Tetapan lensa tertentu juga mungkin disyorkan berdasarkan latar. Dalam keadaan ini, anda boleh menukar tetapan lensa disyorkan bergantung pada pilihan anda.</string>
+    <string name="camera_strings_aisuggestion_guide_description3_txt">"Dengan meleret ke kiri pratonton mini pada bahagian bawah kanan (bahagian atas kanan apabila dipegang secara mendatar), anda boleh memaparkan pengesyoran pelarasan alternatif.
+Pengesyoran yang anda pilih akan disimpan sebagai pelarasan pilihan anda dan akan disertakan dalam pengesyoran anda seterusnya semasa anda merakam dalam pemandangan yang serupa."</string>
+    <string name="camera_strings_aisuggestion_guide_description4_txt">Anda boleh mengetik butang [>] untuk menyembunyikan pengesyoran apabila tidak diperlukan. Apabila latar baharu dikenal pasti, butang [&lt;] akan menyala untuk menunjukkan kepada anda adanya pengesyoran pelarasan baharu. Untuk melihat pengesyoran semula, ketik butang [&lt;].</string>
+    <string name="camera_strings_aisuggestion_guide_description5_txt">Jika anda mengetik butang pelarasan selepas memilih pelarasan disyorkan, anda boleh membuat pelarasan tetapan lanjutan seperti kecerahan dan warna. Pelarasan anda akan disimpan dalam peranti dan digunakan pada pelarasan disyorkan seterusnya apabila latar serupa dikesan.</string>
+    <string name="camera_strings_aisuggestion_guide_description6_txt">Pelarasan disyorkan dan pelarasan yang anda jalankan boleh didaftarkan, membolehkan anda memuatkan pelarasan pada bila-bila masa untuk mengambil foto dalam tetapan yang sama. Ketik [Daftar] untuk menambah Rupa tersuai pada senarai rupa yang tersedia.</string>
+    <string name="camera_strings_aisuggestion_guide_entry_txt">Semak cara guna Pembantu Kamera AI</string>
+    <string name="camera_strings_aisuggestion_guide_title_txt">Cara guna Pembantu Kamera AI</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_message_txt">Tetapkan semula semua tetapan kepada lalai termasuk warna, kecerahan dan pelarasan pilihan anda?</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_title_txt">Ttpkn smula parameter</string>
+    <string name="camera_strings_aisuggestion_params_reset_txt">Ttpkn smula parameter</string>
+    <string name="camera_strings_aisuggestion_permitted_item_bokeh_txt">Bokeh</string>
+    <string name="camera_strings_aisuggestion_permitted_item_lens_txt">Lensa</string>
+    <string name="camera_strings_aisuggestion_permitted_item_title_txt">Sertakan dalam pengesyoran</string>
+    <string name="camera_strings_aisuggestion_recommend_lens_ratio_txt">%1$s disyorkan</string>
+    <string name="camera_strings_aisuggestion_return_to_default_txt">Kembali kpd asal</string>
+    <string name="camera_strings_aisuggestion_simple_video_instruction_txt">Apabila merakam video dgn menekan lama, ketepuan, kontras dan tetapan bokeh mungkin kelihatan berbeza.</string>
+    <string name="camera_strings_aisuggestion_txt">Pembantu Kamera AI</string>
+    <string name="camera_strings_aisuggestion_use_aissuggestion_txt">Guna Pembantu Kamera AI</string>
     <string name="camera_strings_anonymous_analytics_txt">Analisis tanpa nama</string>
     <string name="camera_strings_application_name">Kamera</string>
     <string name="camera_strings_application_name_google_lens_txt">Google Lens</string>
@@ -421,6 +482,7 @@ Keselamatan:
     <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Tidak boleh menyambung ke Wi-Fi</string>
     <string name="camera_strings_dialog_user_data_collection_txt">Sekiranya anda bersetuju dengan di bawah, Sony akan mengumpul &lt;b>&lt;a href=#personal-data>data peribadi&lt;/a>&lt;/b> untuk menyediakan sokongan tersuai dan mempertingkatkan peranti dan perkhidmatan. Sony akan mengendalikan data anda menurut &lt;b>&lt;a href=https://www.sonymobile.com/privacy/>Dasar Privasi&lt;/a>&lt;/b>.</string>
     <string name="camera_strings_dialog_video_hdr_hlg_supported_short_description_txt">Sesetengah peranti/perkhidmatan mungkin tidak boleh mengeluarkan semula warna asal dan kecerahan kandungan HDR. Sila gunakan peranti/perkhidmatan yang menyokong HDR apabila menikmati kandungan HDR.</string>
+    <string name="camera_strings_digital_tripod_hint_edge_txt">Komposisi beralih. Gerakkan kamera arah subjek asal.</string>
     <string name="camera_strings_digital_zoom_type_description_txt">"Pilih tetapan zum digital.
 
 Zum digital standard: Zum menggunakan pemprosesan digital berdasarkan data sensor imej.
@@ -484,6 +546,7 @@ Untuk menukarkan tetapan ini, tamatkan penstriman, dan kemudian pergi ke aplikas
     <string name="camera_strings_fast_capturing_screen_locked_settings_txt">Untuk membuka tetapan, buka kunci skrin.</string>
     <string name="camera_strings_fast_capturing_screen_locked_streaming_txt">Untuk memulakan penstriman, buka kunci skrin.</string>
     <string name="camera_strings_fast_capturing_screen_locked_title_txt">Skrin dikunci</string>
+    <string name="camera_strings_feature_creative_look_custom_description_txt">Anda boleh mendaftar rupa dan tetapan kecerahan/warna.</string>
     <string name="camera_strings_feature_creative_look_description_txt">"Anda boleh memilih untuk melengkapkan imej (foto atau filem) dengan memilih \"penampilan\".
 
 Penampilan kreatif menawarkan 6 penampilan praset. Setiap satu dioptimumkan dengan kombinasi ton, kepekatan, kontras, ketajaman, kecerahan warna yang berbeza dan unsur imej yang lain, agar anda boleh menyediakan pemprosesan imej dengan keseimbangan terbaik unsur ini."</string>
@@ -567,6 +630,7 @@ Ketik pada subjek yang ingin dijejak."</string>
     <string name="camera_strings_framing_orientation_description_txt">"Anda boleh memilih untuk memangkas subjek dalam sama ada bingkai mendatar atau menegak.
 Tetapkan kepada [Auto] untuk membuat orientasi pangkas sama seperti orientasi peranti."</string>
     <string name="camera_strings_framing_select_subject_to_track_txt">Ketik pada subjek yang posisinya ingin anda kunci</string>
+    <string name="camera_strings_framing_setting_guide_title_txt">Perihal Pmbngkan Auto.</string>
     <string name="camera_strings_framing_setting_orientation_landscape_txt">Mendatar</string>
     <string name="camera_strings_framing_setting_orientation_portrait_txt">Menegak</string>
     <string name="camera_strings_framing_setting_orientation_title_txt">Orientasi bingkai</string>
@@ -574,6 +638,7 @@ Tetapkan kepada [Auto] untuk membuat orientasi pangkas sama seperti orientasi pe
 Rakaman dipangkas akan disimpan dengan resolusi HD penuh. Rakaman belum dipangkas disimpan sebagai 4K."</string>
     <string name="camera_strings_framing_setting_save_original_video_off_txt">Rakaman skrin penuh: Mati</string>
     <string name="camera_strings_framing_setting_save_original_video_title_txt">Rakaman skrin penuh</string>
+    <string name="camera_strings_framing_setting_snapshot_description_txt">Sama ada [Rakaman skrin penuh] dihidupkan atau dimatikan, tangkapan gambar yang diambil semasa rakaman video disimpan dengan skrin penuh.</string>
     <string name="camera_strings_geotagging_description_txt">Simpan foto dan video anda di lokasi ia diambil</string>
     <string name="camera_strings_geotagging_txt">Simpan lokasi</string>
     <string name="camera_strings_gimbal_mode_tab_label">Ciptaan Kamera AI</string>
@@ -592,6 +657,7 @@ Ini membantu anda merakam video walau pun dalam keadaan yang tidak stabil sepert
     <string name="camera_strings_gimbal_setting_assist_method_locking_hint_txt">Kunci posisi subjek: Manual</string>
     <string name="camera_strings_gimbal_setting_assist_method_locking_txt">Manual</string>
     <string name="camera_strings_gimbal_setting_assist_method_title_txt">Kunci posisi subjek</string>
+    <string name="camera_strings_gimbal_setting_guide_title_txt">Perihal Ciptaan Kamera AI</string>
     <string name="camera_strings_gridline_description_txt">Tetapkan sama ada untuk memaparkan garisan grid atau tidak, untuk membantu anda dengan komposisi imej</string>
     <string name="camera_strings_gridline_txt">Garisan grid</string>
     <string name="camera_strings_hand_shutter_description_updated_txt">Anda boleh mula mengira ke bawah pemasa dengan memusingkan tapak tangan anda ke arah kamera depan. Untuk memudahkan ia dikesan, regangkan jari-jari anda ke atas.</string>
@@ -727,6 +793,7 @@ Syot kilat yang diambil semasa merakam video akan selalu menggunakan julat Dinam
     <string name="camera_strings_notification_channel_title_saving_process_txt">Proses penyimpanan</string>
     <string name="camera_strings_notification_text_saving_in_progress_txt">Sila tunggu sehingga penyimpanan selesai</string>
     <string name="camera_strings_notification_title_saving_in_progress_txt">Dalam proses menyimpan</string>
+    <string name="camera_strings_notify_saving_process_cannot_launch_app_by_hw_shutter_txt">Tindakan menekan butang pengatup mungkin tidak akan melancarkan kamera semasa menyimpan</string>
     <string name="camera_strings_ok_txt">OK</string>
     <string name="camera_strings_peaking_color_blue_txt">Biru</string>
     <string name="camera_strings_peaking_color_red_txt">Merah</string>
@@ -735,6 +802,7 @@ Syot kilat yang diambil semasa merakam video akan selalu menggunakan julat Dinam
     <string name="camera_strings_peaking_color_yellow_txt">Kuning</string>
     <string name="camera_strings_peaking_txt">Penimbulan</string>
     <string name="camera_strings_personal_data_txt">Data peribadi</string>
+    <string name="camera_strings_photopro_setting_guide_title_txt">Perihal Foto pro</string>
     <string name="camera_strings_privacy_policy_txt">Dasar privasi</string>
     <string name="camera_strings_pro_tips_computational_photo_description_txt">"Walaupun dalam mod P, kamera akan mengenal pasti pemandangan secara automatik dan mengambil gambar yang cantik secara automatik dengan mengurangkan kabur, hinggar, dedahan lampau dan kurang dedahan.
 Jika anda tidak menggunakan ciri ini, anda boleh mematikan ini daripada butang FN atau di MENU."</string>
@@ -965,6 +1033,7 @@ Jika anda terus menggunakan kad SD sebagai storan data, pastikan anda menggunaka
     <string name="camera_strings_video_stabilization_description_sub_txt">Nota: Pemilhan imej Berkualiti tinggi mungkin memendekkan tempoh rakaman kerana peningkatan suhu peranti.</string>
     <string name="camera_strings_video_stabilization_description_txt">Xperia mempunyai sistem penstabilan hibrid unik yang dipanggil Optical SteadyShot - menyatukan penstabilan imej optikal dan kestabilan imej elektronik secara serentak. Ini akan memberikan video tanpa gegaran kepada anda dan melancarkan video walaupun anda merakam sambil bergerak.</string>
     <string name="camera_strings_video_stabilization_high_quality_images_txt">Berkualiti Tinggi</string>
+    <string name="camera_strings_videopro_setting_guide_title_txt">Perihal Video pro</string>
     <string name="camera_strings_volume_distortion_correction_description_txt">Betulkan herotan muka yang kelihatan berdekatan hujung skrin apabila menggunakan lensa ultraluas. Ini boleh menyebabkan latar belakang kelihatan herot atau sudut paparan kelihatan sempit.</string>
     <string name="camera_strings_volume_distortion_correction_front_description_txt">Betulkan herotan muka yang kelihatan berdekatan hujung skrin. Ini boleh menyebabkan latar belakang kelihatan herot atau sudut paparan kelihatan sempit.</string>
     <string name="camera_strings_volume_distortion_correction_txt">Pembetulan herotan muka</string>
@@ -1042,8 +1111,25 @@ Tiada sambungan rangkaian."</string>
     <string name="clear_text_end_icon_content_description">Kosongkan teks</string>
     <string name="close_drawer">Tutup menu navigasi</string>
     <string name="close_sheet">Tutup helaian</string>
+    <string name="common_google_play_services_enable_button">Dayakan</string>
+    <string name="common_google_play_services_enable_text">%1$s tidak akan berfungsi melainkan anda mendayakan perkhidmatan Google Play.</string>
+    <string name="common_google_play_services_enable_title">Dayakan perkhidmatan Google Play</string>
+    <string name="common_google_play_services_install_button">Pasang</string>
+    <string name="common_google_play_services_install_text">%1$s tidak akan berfungsi tanpa perkhidmatan Google Play dan perkhidmatan ini tiada pada peranti anda.</string>
+    <string name="common_google_play_services_install_title">Dapatkan perkhidmatan Google Play</string>
+    <string name="common_google_play_services_notification_channel_name">Ketersediaan perkhidmatan Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Ralat perkhidmatan Google Play</string>
+    <string name="common_google_play_services_unknown_issue">%1$s menghadapi masalah berhubung perkhidmatan Google Play. Sila cuba lagi.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s tidak akan berfungsi tanpa perkhidmatan Google Play dan perkhidmatan ini tidak disokong oleh peranti anda.</string>
+    <string name="common_google_play_services_update_button">Kemas kini</string>
+    <string name="common_google_play_services_update_text">%1$s tidak akan berfungsi kecuali anda mengemas kini perkhidmatan Google Play.</string>
+    <string name="common_google_play_services_update_title">Kemaskinikan perkhidmatan Google Play</string>
+    <string name="common_google_play_services_updating_text">%1$s tidak akan berfungsi tanpa perkhidmatan Google Play dan perkhidmatan ini sedang dikemaskinikan.</string>
+    <string name="common_google_play_services_wear_update_text">Versi baharu perkhidmatan Google Play diperlukan. Kemas kini automatik akan dijalankan sebentar lagi.</string>
+    <string name="common_open_on_phone">Buka pada telefon</string>
+    <string name="common_signin_button_text">Log masuk</string>
+    <string name="common_signin_button_text_long">Log masuk dengan Google</string>
     <string name="copy">Salin</string>
-    <string name="copy_toast_msg">Pautan disalin ke papan keratan</string>
     <string name="default_error_message">Input tidak sah</string>
     <string name="default_popup_window_title">Tetingkap Timbul</string>
     <string name="dropdown_menu">Menu lungsur</string>
@@ -1054,9 +1140,6 @@ Tiada sambungan rangkaian."</string>
     <string name="external_display_connected_description_txt">Anda boleh menyemak pemidang tilik daripada Monitor Vlog</string>
     <string name="external_display_connected_title_txt">Monitor Vlog disambung</string>
     <string name="external_display_note_about_external_mic_txt">Nota: Utk menggunakan mikrofon luaran, sila sambungkan ini kpd Monitor Vlog sebelum merakam. Jika anda menyambungkan ini kemudian, anda perlu menyambungkan Monitor Vlog semula.</string>
-    <string name="fallback_menu_item_copy_link">Salin pautan</string>
-    <string name="fallback_menu_item_open_in_browser">Buka dalam penyemak imbas</string>
-    <string name="fallback_menu_item_share_link">Kongsi pautan</string>
     <string name="icon_content_description">Ikon Dialog</string>
     <string name="in_progress">Dalam proses</string>
     <string name="indeterminate">Sebahagiannya ditandai</string>

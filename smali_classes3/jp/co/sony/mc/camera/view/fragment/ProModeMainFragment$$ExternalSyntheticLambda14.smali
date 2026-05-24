@@ -30,9 +30,9 @@
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment$$ExternalSyntheticLambda14;->f$0:Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;
 
-    check-cast p1, Ljava/lang/Boolean;
+    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;->$r8$lambda$G1g14xywjwDFwq9bM9710AHn1ps(Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;Ljava/lang/Boolean;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;->$r8$lambda$wy_8USrkojcLWZkVDvN0ouwbwnE(Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;)Lkotlin/Unit;
 
     move-result-object p0
 

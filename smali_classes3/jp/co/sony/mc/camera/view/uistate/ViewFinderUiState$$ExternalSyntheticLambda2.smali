@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function2;
+.implements Lkotlin/jvm/functions/Function4;
 
 
 # direct methods
@@ -18,19 +18,35 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
-    check-cast p1, Ljp/co/sony/mc/camera/view/uistate/BasicFinderUiState;
+    check-cast p1, Ljava/lang/Boolean;
 
-    check-cast p2, Ljava/lang/Boolean;
-
-    invoke-static {p1, p2}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->$r8$lambda$eopMTNPw_gzuqpsaN5j8lDiFI4s(Ljp/co/sony/mc/camera/view/uistate/BasicFinderUiState;Ljava/lang/Boolean;)F
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p0
 
-    invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    check-cast p2, Ljava/lang/Boolean;
+
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    check-cast p3, Ljava/lang/Boolean;
+
+    invoke-virtual {p3}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p2
+
+    check-cast p4, Ljava/lang/Boolean;
+
+    invoke-static {p0, p1, p2, p4}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->$r8$lambda$bPP1QujZ8oY1GOYA63JO2BEB7p8(ZZZLjava/lang/Boolean;)Z
+
+    move-result p0
+
+    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0
 

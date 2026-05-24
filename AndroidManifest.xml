@@ -20,21 +20,14 @@
             <action android:name="com.sonymobile.moviecreator.intent.action.EDIT"/>
             <data android:mimeType="video/mp4"/>
         </intent>
-        <intent>
-            <action android:name="android.intent.action.VIEW"/>
-            <category android:name="android.intent.category.BROWSABLE"/>
-            <data android:scheme="https"/>
-        </intent>
     </queries>
     <permission android:name="com.sonymobile.permission.SOMC_CAMERA" android:protectionLevel="signatureOrSystem"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CAMERA"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
     <uses-permission android:name="android.permission.VIBRATE"/>
@@ -139,26 +132,22 @@
         <activity android:configChanges="keyboard|keyboardHidden|navigation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:label="@string/camera_strings_application_name" android:launchMode="singleTask" android:name="jp.co.sony.mc.camera.BasicRemoconMenuActivity" android:resizeableActivity="false" android:screenOrientation="sensor" android:theme="@style/Theme.AutoModeSettings" android:windowSoftInputMode="stateAlwaysHidden"/>
         <activity android:configChanges="keyboard|keyboardHidden|navigation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:label="@string/camera_strings_application_name" android:launchMode="singleTask" android:name="jp.co.sony.mc.camera.RemoconMenuActivity" android:resizeableActivity="false" android:screenOrientation="sensor" android:theme="@style/Theme.AutoModeSettings" android:windowSoftInputMode="stateAlwaysHidden"/>
         <activity android:configChanges="keyboard|keyboardHidden|navigation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:label="@string/camera_strings_application_name" android:launchMode="singleTask" android:name="jp.co.sony.mc.camera.RecommendedSettingsActivity" android:resizeableActivity="false" android:screenOrientation="sensor" android:theme="@style/Theme.AutoModeSettings" android:windowSoftInputMode="stateAlwaysHidden"/>
-        <activity android:configChanges="keyboard|keyboardHidden|navigation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:label="@string/camera_strings_application_name" android:launchMode="singleTask" android:name="jp.co.sony.mc.camera.CreateYouTubeLiveEventActivity" android:resizeableActivity="false" android:screenOrientation="fullSensor" android:showWhenLocked="false" android:theme="@style/CameraActivityTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:inheritShowWhenLocked="true" android:label="@string/camera_strings_application_name" android:launchMode="singleTask" android:name="jp.co.sony.mc.camera.FeatureIntroductionActivity" android:resizeableActivity="false" android:screenOrientation="sensor" android:theme="@style/Theme.AutoModeSettings" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:inheritShowWhenLocked="true" android:label="@string/camera_strings_application_name" android:launchMode="singleTask" android:name="jp.co.sony.mc.camera.AiSuggestionMenuActivity" android:resizeableActivity="false" android:screenOrientation="sensor" android:theme="@style/Theme.AutoModeSettings" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:inheritShowWhenLocked="true" android:label="@string/camera_strings_application_name" android:launchMode="singleTask" android:name="jp.co.sony.mc.camera.TripodFramingAssistanceMenuActivity" android:resizeableActivity="false" android:screenOrientation="sensor" android:theme="@style/Theme.AutoModeSettings" android:windowSoftInputMode="stateAlwaysHidden"/>
         <service android:exported="false" android:foregroundServiceType="camera" android:minSdkVersion="34" android:name="jp.co.sony.mc.camera.service.SavingService"/>
         <receiver android:exported="false" android:name="jp.co.sony.mc.camera.RecommendedSettingNotificationReceiver">
             <intent-filter>
                 <action android:name="jp.co.sony.mc.camera.intent.action.RECOMMEND_SETTINGS_NOTIFICATION_DO_NOT_SHOW_AGAIN"/>
             </intent-filter>
         </receiver>
-        <receiver android:exported="false" android:name="jp.co.sony.mc.camera.rtmp.ShareLiveUrlResultReceiver"/>
         <uses-library android:name="com.sony.device" android:required="true"/>
         <uses-library android:name="com.sonyericsson.idd" android:required="false"/>
         <service android:name="com.sonymobile.camera.bleremotecontrol.BleRemoteControlService"/>
-        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTask" android:name="net.openid.appauth.AuthorizationManagementActivity" android:theme="@style/Theme.AppCompat.Translucent.NoTitleBar"/>
-        <activity android:exported="true" android:name="net.openid.appauth.RedirectUriReceiverActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:scheme="jp.co.sony.mc.cameraapp"/>
-            </intent-filter>
-        </activity>
+        <activity android:label="@string/oss_license_title" android:name="com.google.android.gms.oss.licenses.OssLicensesMenuActivity"/>
+        <activity android:name="com.google.android.gms.oss.licenses.OssLicensesActivity"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
         <activity android:exported="true" android:name="androidx.activity.ComponentActivity"/>
         <activity android:exported="true" android:name="androidx.compose.ui.tooling.PreviewActivity"/>
         <provider android:authorities="jp.co.sony.mc.cameraapp.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
@@ -168,6 +157,7 @@
         </provider>
         <uses-library android:name="androidx.window.extensions" android:required="false"/>
         <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
         <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
             <intent-filter>
                 <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>

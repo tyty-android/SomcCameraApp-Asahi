@@ -21,8 +21,16 @@
 # direct methods
 .method private constructor <init>(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "scale"
+        }
+    .end annotation
 
-    .line 168
+    .line 177
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     if-lez p1, :cond_0
@@ -34,13 +42,13 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 169
+    .line 178
     :goto_0
     const-string v1, "Quantile scale must be positive"
 
     invoke-static {v0, v1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/Object;)V
 
-    .line 170
+    .line 179
     iput p1, p0, Lcom/google/common/math/Quantiles$Scale;->scale:I
 
     return-void
@@ -49,7 +57,7 @@
 .method synthetic constructor <init>(ILcom/google/common/math/Quantiles$1;)V
     .locals 0
 
-    .line 164
+    .line 173
     invoke-direct {p0, p1}, Lcom/google/common/math/Quantiles$Scale;-><init>(I)V
 
     return-void
@@ -59,8 +67,16 @@
 # virtual methods
 .method public index(I)Lcom/google/common/math/Quantiles$ScaleAndIndex;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
-    .line 179
+    .line 188
     new-instance v0, Lcom/google/common/math/Quantiles$ScaleAndIndex;
 
     iget p0, p0, Lcom/google/common/math/Quantiles$Scale;->scale:I
@@ -74,6 +90,15 @@
 
 .method public indexes(Ljava/util/Collection;)Lcom/google/common/math/Quantiles$ScaleAndIndexes;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "indexes"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -84,7 +109,7 @@
         }
     .end annotation
 
-    .line 205
+    .line 214
     new-instance v0, Lcom/google/common/math/Quantiles$ScaleAndIndexes;
 
     iget p0, p0, Lcom/google/common/math/Quantiles$Scale;->scale:I
@@ -102,8 +127,16 @@
 
 .method public varargs indexes([I)Lcom/google/common/math/Quantiles$ScaleAndIndexes;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "indexes"
+        }
+    .end annotation
 
-    .line 192
+    .line 201
     new-instance v0, Lcom/google/common/math/Quantiles$ScaleAndIndexes;
 
     iget p0, p0, Lcom/google/common/math/Quantiles$Scale;->scale:I

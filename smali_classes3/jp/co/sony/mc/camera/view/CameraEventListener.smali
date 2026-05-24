@@ -6,14 +6,13 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;,
-        Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;
+        Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u009a\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u0015\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0011\n\u0002\u0018\u0002\n\u0002\u0008\u000f\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\t\n\u0002\u0008\'\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\n\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008f\u0018\u00002\u00020\u0001:\u0002\u0091\u0001J\u0010\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0016J\u0010\u0010\u0006\u001a\u00020\u00032\u0006\u0010\u0007\u001a\u00020\u0008H\u0016J\u0010\u0010\t\u001a\u00020\u00032\u0006\u0010\n\u001a\u00020\u000bH\u0016J\u001e\u0010\t\u001a\u00020\u00032\u0006\u0010\n\u001a\u00020\u000b2\u000c\u0010\u000c\u001a\u0008\u0012\u0004\u0012\u00020\u000e0\rH\u0016J\u0018\u0010\u000f\u001a\u00020\u00032\u0006\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0004\u001a\u00020\u0012H\u0016J\u0010\u0010\u0013\u001a\u00020\u00032\u0006\u0010\u0014\u001a\u00020\u0015H\u0016J\u0008\u0010\u0016\u001a\u00020\u0003H\u0016J\u0008\u0010\u0017\u001a\u00020\u0003H\u0016J=\u0010\u0018\u001a\u00020\u00032\u0006\u0010\u0019\u001a\u00020\u001a2\u0008\u0010\u001b\u001a\u0004\u0018\u00010\u001c2\u0008\u0010\u001d\u001a\u0004\u0018\u00010\u001e2\u0008\u0010\u001f\u001a\u0004\u0018\u00010\u001e2\u0008\u0010 \u001a\u0004\u0018\u00010\u000eH\u0016\u00a2\u0006\u0002\u0010!J\u0018\u0010\"\u001a\u00020\u00032\u0006\u0010\u0014\u001a\u00020\u001a2\u0006\u0010#\u001a\u00020\u0008H\u0016J\u0010\u0010$\u001a\u00020\u00032\u0006\u0010%\u001a\u00020\u0008H\u0016J\u0010\u0010&\u001a\u00020\u00032\u0006\u0010\'\u001a\u00020\u0008H\u0016J\u0010\u0010(\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u0010*\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u0010+\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u0010,\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u0010-\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u001a\u0010.\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001a2\u0008\u0010/\u001a\u0004\u0018\u000100H\u0016J\u0010\u00101\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u00102\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0018\u00103\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001a2\u0006\u00104\u001a\u00020\u001aH\u0016J(\u00105\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001a2\u0006\u00106\u001a\u00020\u001a2\u0006\u00107\u001a\u00020\u00082\u0006\u00108\u001a\u00020\u0008H\u0016J\u0010\u00109\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u0010:\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u0010;\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u0010<\u001a\u00020\u00032\u0006\u0010=\u001a\u00020\u001aH\u0016J\u0010\u0010>\u001a\u00020\u00032\u0006\u0010?\u001a\u00020@H\u0016J\u0010\u0010A\u001a\u00020\u00032\u0006\u0010?\u001a\u00020@H\u0016J\u0008\u0010B\u001a\u00020\u0003H\u0016J\u0008\u0010C\u001a\u00020\u0003H\u0016J\u0010\u0010D\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u0010E\u001a\u00020\u00032\u0006\u0010F\u001a\u00020\u001aH\u0016J\u0018\u0010G\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001a2\u0006\u0010\u0019\u001a\u00020HH\u0016J\u0010\u0010I\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u0010J\u001a\u00020\u00032\u0006\u0010K\u001a\u00020\u0008H\u0016J \u0010L\u001a\u00020\u00032\u0006\u0010M\u001a\u00020N2\u0006\u0010O\u001a\u00020\u001a2\u0006\u0010P\u001a\u00020\u001aH\u0016J\u0010\u0010Q\u001a\u00020\u00032\u0006\u0010R\u001a\u00020\u000eH\u0016J\u0010\u0010S\u001a\u00020\u00032\u0006\u0010T\u001a\u00020\u000eH\u0016J\u0010\u0010U\u001a\u00020\u00032\u0006\u0010V\u001a\u00020\u000eH\u0016J\u0010\u0010W\u001a\u00020\u00032\u0006\u0010X\u001a\u00020\u000eH\u0016J\u0010\u0010Y\u001a\u00020\u00032\u0006\u0010Z\u001a\u00020\u000eH\u0016J\u0008\u0010[\u001a\u00020\u0003H\u0016J\u0008\u0010\\\u001a\u00020\u0003H\u0016J\u0010\u0010]\u001a\u00020\u00032\u0006\u0010^\u001a\u00020\u0008H\u0016J\u0008\u0010_\u001a\u00020\u0003H\u0016J\u0010\u0010`\u001a\u00020\u00032\u0006\u0010a\u001a\u00020\u0008H\u0016J\u0010\u0010b\u001a\u00020\u00032\u0006\u0010a\u001a\u00020\u0008H\u0016J\u0008\u0010c\u001a\u00020\u0003H\u0016J\u0008\u0010d\u001a\u00020\u0003H\u0016J\u0018\u0010e\u001a\u00020\u00032\u0006\u0010f\u001a\u00020\u00082\u0006\u0010g\u001a\u00020\u0008H\u0016J\u0010\u0010h\u001a\u00020\u00032\u0006\u0010i\u001a\u00020\u001eH\u0016J\u0010\u0010j\u001a\u00020\u00032\u0006\u0010k\u001a\u00020\u0008H\u0016J\u0008\u0010l\u001a\u00020\u0003H\u0016J\u0008\u0010m\u001a\u00020\u0003H\u0016J\u0010\u0010n\u001a\u00020\u00032\u0006\u0010o\u001a\u00020\u0008H\u0016J\u0010\u0010p\u001a\u00020\u00032\u0006\u0010q\u001a\u00020\u0008H\u0016J\u0010\u0010r\u001a\u00020\u00032\u0006\u0010s\u001a\u00020\u0008H\u0016J\u0010\u0010t\u001a\u00020\u00032\u0006\u0010u\u001a\u00020vH\u0016J\u0008\u0010w\u001a\u00020\u0003H\u0016J\u0010\u0010x\u001a\u00020\u00032\u0006\u0010y\u001a\u00020\u0008H\u0016J\u0010\u0010z\u001a\u00020\u00032\u0006\u0010\u0019\u001a\u00020{H\u0016J\u0018\u0010|\u001a\u00020\u00032\u0006\u0010}\u001a\u00020\u00082\u0006\u0010~\u001a\u00020\u0008H\u0016J\u0010\u0010\u007f\u001a\u00020\u00032\u0006\u0010a\u001a\u00020\u0008H\u0016J\u0012\u0010\u0080\u0001\u001a\u00020\u00032\u0007\u0010\u0081\u0001\u001a\u00020\u000eH\u0016J\u0012\u0010\u0082\u0001\u001a\u00020\u00032\u0007\u0010\u0083\u0001\u001a\u00020\u000eH\u0016J\u0013\u0010\u0084\u0001\u001a\u00020\u00032\u0008\u0010\u0085\u0001\u001a\u00030\u0086\u0001H\u0016J\u001b\u0010\u0087\u0001\u001a\u00020\u00032\u0007\u0010\u0088\u0001\u001a\u00020\u00082\u0007\u0010\u0089\u0001\u001a\u00020\u0008H\u0016J\u0012\u0010\u008a\u0001\u001a\u00020\u00032\u0007\u0010\u008b\u0001\u001a\u00020\u0008H\u0016J\u0013\u0010\u008c\u0001\u001a\u00020\u00032\u0008\u0010\u008d\u0001\u001a\u00030\u008e\u0001H\u0016J\u0012\u0010\u008f\u0001\u001a\u00020\u00032\u0007\u0010\u0090\u0001\u001a\u00020\u0008H\u0016\u00a8\u0006\u0092\u0001"
+        "\u0000\u00a2\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u0015\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0011\n\u0002\u0018\u0002\n\u0002\u0008\u000f\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\t\n\u0002\u0008\u001b\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\n\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008f\u0018\u00002\u00020\u0001:\u0002\u008b\u0001J\u0010\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0016J\u0010\u0010\u0006\u001a\u00020\u00032\u0006\u0010\u0007\u001a\u00020\u0008H\u0016J\u0010\u0010\t\u001a\u00020\u00032\u0006\u0010\n\u001a\u00020\u000bH\u0016J\u001e\u0010\t\u001a\u00020\u00032\u0006\u0010\n\u001a\u00020\u000b2\u000c\u0010\u000c\u001a\u0008\u0012\u0004\u0012\u00020\u000e0\rH\u0016J\u0018\u0010\u000f\u001a\u00020\u00032\u0006\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0004\u001a\u00020\u0012H\u0016J\u0010\u0010\u0013\u001a\u00020\u00032\u0006\u0010\u0014\u001a\u00020\u0015H\u0016J\u0008\u0010\u0016\u001a\u00020\u0003H\u0016J\u0008\u0010\u0017\u001a\u00020\u0003H\u0016J=\u0010\u0018\u001a\u00020\u00032\u0006\u0010\u0019\u001a\u00020\u001a2\u0008\u0010\u001b\u001a\u0004\u0018\u00010\u001c2\u0008\u0010\u001d\u001a\u0004\u0018\u00010\u001e2\u0008\u0010\u001f\u001a\u0004\u0018\u00010\u001e2\u0008\u0010 \u001a\u0004\u0018\u00010\u000eH\u0016\u00a2\u0006\u0002\u0010!J\u0018\u0010\"\u001a\u00020\u00032\u0006\u0010\u0014\u001a\u00020\u001a2\u0006\u0010#\u001a\u00020\u0008H\u0016J\u0010\u0010$\u001a\u00020\u00032\u0006\u0010%\u001a\u00020\u0008H\u0016J\u0010\u0010&\u001a\u00020\u00032\u0006\u0010\'\u001a\u00020\u0008H\u0016J\u0010\u0010(\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u0010*\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u0010+\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u0010,\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u0010-\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u001a\u0010.\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001a2\u0008\u0010/\u001a\u0004\u0018\u000100H\u0016J\u0010\u00101\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u00102\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0018\u00103\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001a2\u0006\u00104\u001a\u00020\u001aH\u0016J(\u00105\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001a2\u0006\u00106\u001a\u00020\u001a2\u0006\u00107\u001a\u00020\u00082\u0006\u00108\u001a\u00020\u0008H\u0016J\u0010\u00109\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u0010:\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u0010;\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u0010<\u001a\u00020\u00032\u0006\u0010=\u001a\u00020\u001aH\u0016J\u0010\u0010>\u001a\u00020\u00032\u0006\u0010?\u001a\u00020@H\u0016J\u0010\u0010A\u001a\u00020\u00032\u0006\u0010?\u001a\u00020@H\u0016J\u0008\u0010B\u001a\u00020\u0003H\u0016J\u0008\u0010C\u001a\u00020\u0003H\u0016J\u0010\u0010D\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u0010E\u001a\u00020\u00032\u0006\u0010F\u001a\u00020\u001aH\u0016J\u0018\u0010G\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001a2\u0006\u0010\u0019\u001a\u00020HH\u0016J\u0010\u0010I\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u0010J\u001a\u00020\u00032\u0006\u0010K\u001a\u00020\u0008H\u0016J \u0010L\u001a\u00020\u00032\u0006\u0010M\u001a\u00020N2\u0006\u0010O\u001a\u00020\u001a2\u0006\u0010P\u001a\u00020\u001aH\u0016J\u0010\u0010Q\u001a\u00020\u00032\u0006\u0010R\u001a\u00020\u0008H\u0016J\u0008\u0010S\u001a\u00020\u0003H\u0016J\u0010\u0010T\u001a\u00020\u00032\u0006\u0010U\u001a\u00020\u0008H\u0016J\u0010\u0010V\u001a\u00020\u00032\u0006\u0010U\u001a\u00020\u0008H\u0016J\u0008\u0010W\u001a\u00020\u0003H\u0016J\u0008\u0010X\u001a\u00020\u0003H\u0016J\u0018\u0010Y\u001a\u00020\u00032\u0006\u0010Z\u001a\u00020\u00082\u0006\u0010[\u001a\u00020\u0008H\u0016J\u0010\u0010\\\u001a\u00020\u00032\u0006\u0010]\u001a\u00020\u001eH\u0016J\u0010\u0010^\u001a\u00020\u00032\u0006\u0010_\u001a\u00020\u0008H\u0016J\u0008\u0010`\u001a\u00020\u0003H\u0016J\u0008\u0010a\u001a\u00020\u0003H\u0016J\u0010\u0010b\u001a\u00020\u00032\u0006\u0010c\u001a\u00020\u0008H\u0016J\u0010\u0010d\u001a\u00020\u00032\u0006\u0010e\u001a\u00020\u0008H\u0016J\u0010\u0010f\u001a\u00020\u00032\u0006\u0010g\u001a\u00020\u0008H\u0016J\u0010\u0010h\u001a\u00020\u00032\u0006\u0010i\u001a\u00020jH\u0016J\u0008\u0010k\u001a\u00020\u0003H\u0016J\u0010\u0010l\u001a\u00020\u00032\u0006\u0010m\u001a\u00020\u0008H\u0016J\u0010\u0010n\u001a\u00020\u00032\u0006\u0010\u0019\u001a\u00020oH\u0016J\u0018\u0010p\u001a\u00020\u00032\u0006\u0010q\u001a\u00020\u00082\u0006\u0010r\u001a\u00020\u0008H\u0016J\u0010\u0010s\u001a\u00020\u00032\u0006\u0010U\u001a\u00020\u0008H\u0016J\u0010\u0010t\u001a\u00020\u00032\u0006\u0010u\u001a\u00020vH\u0016J\u0018\u0010w\u001a\u00020\u00032\u0006\u0010x\u001a\u00020\u00082\u0006\u0010y\u001a\u00020\u0008H\u0016J\u0010\u0010z\u001a\u00020\u00032\u0006\u0010{\u001a\u00020\u0008H\u0016J\u0010\u0010|\u001a\u00020\u00032\u0006\u0010}\u001a\u00020~H\u0016J\u0011\u0010\u007f\u001a\u00020\u00032\u0007\u0010\u0080\u0001\u001a\u00020\u0008H\u0016J-\u0010\u0081\u0001\u001a\u00020\u00032\u0007\u0010\u0082\u0001\u001a\u00020\u001c2\u0007\u0010\u0083\u0001\u001a\u00020\u001c2\u0007\u0010\u0084\u0001\u001a\u00020\u001a2\u0007\u0010\u0085\u0001\u001a\u00020\u001eH\u0016J\t\u0010\u0086\u0001\u001a\u00020\u0003H\u0016J\t\u0010\u0087\u0001\u001a\u00020\u0003H\u0016J\u0012\u0010\u0088\u0001\u001a\u00020\u00032\u0007\u0010}\u001a\u00030\u0089\u0001H\u0016J\u0011\u0010\u008a\u0001\u001a\u00020\u00032\u0006\u0010c\u001a\u00020\u0008H\u0016\u00f8\u0001\u0000\u0082\u0002\u0006\n\u0004\u0008!0\u0001\u00a8\u0006\u008c\u0001\u00c0\u0006\u0001"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/CameraEventListener;",
@@ -97,18 +96,6 @@
         "",
         "iso",
         "ev",
-        "onYoutubeAccountSettingChanged",
-        "youtubeAccount",
-        "onYoutubeLiveEventSettingChanged",
-        "youtubeLiveEvent",
-        "onYoutubeLiveIdSettingChanged",
-        "youtubeLiveId",
-        "onFacebookAccountSettingChanged",
-        "facebookAccount",
-        "onFacebookLiveSelectSettingChanged",
-        "facebookLiveSelect",
-        "onDismissKeyguard",
-        "onDismissKeyguardCanceled",
         "onRemoteControlStateChanged",
         "isConnected",
         "onCaptureInRecording",
@@ -144,10 +131,6 @@
         "fallbackable",
         "fallbackEnabled",
         "onFallbackModeChanging",
-        "onRtmpStreamUrlSettingChanged",
-        "rtmpStreamUrl",
-        "onRtmpStreamKeySettingChanged",
-        "rtmpStreamKey",
         "onSurfaceRequested",
         "request",
         "Ljp/co/sony/mc/camera/view/SurfaceRequest;",
@@ -161,6 +144,16 @@
         "Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;",
         "onMoreModeSelectorOpened",
         "isOpened",
+        "onAiSuggestionSceneChanged",
+        "originalSituations",
+        "parameterIndexes",
+        "bokehStatus",
+        "recommendedZoomRatio",
+        "onStartMonitorAiSuggestion",
+        "onStopMonitorAiSuggestion",
+        "onTripodFramingCroppedPositionChanged",
+        "Ljp/co/sony/mc/camera/device/CaptureResultNotifier$TripodFramingCroppedPosition;",
+        "onOfflineSessionActive",
         "CameraEvent",
         "SomcCamera_release"
     }
@@ -175,52 +168,120 @@
 
 
 # virtual methods
-.method public abstract onAeAwbLockStateChanged(ZZ)V
+.method public onAeAwbLockStateChanged(ZZ)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onAfOnStateChangedByRemocon()V
+.method public onAfOnStateChangedByRemocon()V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onApertureDetected(F)V
+.method public onAiSuggestionSceneChanged([I[IIF)V
+    .locals 0
+
+    const-string p0, "originalSituations"
+
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string p0, "parameterIndexes"
+
+    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
 .end method
 
-.method public abstract onAutoFlashChanged(Z)V
+.method public onApertureDetected(F)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onAutoFramingObjectTrackResultChanged(Z)V
+.method public onAutoFlashChanged(Z)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onAutoHdrChanged(Z)V
+.method public onAutoFramingObjectTrackResultChanged(Z)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onBokehResultChanged(IZ)V
+.method public onAutoHdrChanged(Z)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onBurstCaptureDone(I)V
+.method public onBokehResultChanged(IZ)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onBurstCaptureRejected(I)V
+.method public onBurstCaptureDone(I)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onBurstCaptureRequested(I)V
+.method public onBurstCaptureRejected(I)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onBurstQueueingCountUpdated(I)V
+.method public onBurstCaptureRequested(I)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onBurstShutterAction(II)V
+.method public onBurstQueueingCountUpdated(I)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onBurstShutterDone(I)V
+.method public onBurstShutterAction(II)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onCameraEvent(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)V
+.method public onBurstShutterDone(I)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onCameraSettingsChanged(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;)V
+.method public onCameraEvent(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)V
+    .locals 0
+
+    const-string/jumbo p0, "state"
+
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
 .end method
 
-.method public abstract onCameraSettingsChanged(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljava/util/List;)V
+.method public onCameraSettingsChanged(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;)V
+    .locals 0
+
+    const-string p0, "holder"
+
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public onCameraSettingsChanged(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljava/util/List;)V
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -230,166 +291,355 @@
             ">;)V"
         }
     .end annotation
+
+    const-string v0, "holder"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "changedKeyNames"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 65
+    invoke-interface {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onCameraSettingsChanged(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;)V
+
+    return-void
 .end method
 
-.method public abstract onCameraSettingsReset()V
+.method public onCameraSettingsReset()V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onCaptureInRecording()V
+.method public onCaptureInRecording()V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onChangeToCoolMode()V
+.method public onChangeToCoolMode()V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onDismissKeyguard()V
+.method public onEnduranceModeActivationChanged(Z)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onDismissKeyguardCanceled()V
+.method public onExposureDone(I)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onEnduranceModeActivationChanged(Z)V
+.method public onExposureStarted(IIZZ)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onExposureDone(I)V
+.method public onFaceSelected(Landroid/graphics/Point;)V
+    .locals 0
+
+    const-string p0, "activeArrayPoint"
+
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
 .end method
 
-.method public abstract onExposureStarted(IIZZ)V
+.method public onFallbackModeChanging(Z)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onFaceSelected(Landroid/graphics/Point;)V
+.method public onFallbackStateChanged(ZZ)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onFacebookAccountSettingChanged(Ljava/lang/String;)V
+.method public onFocusChangedByRemocon(ZZ)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onFacebookLiveSelectSettingChanged(Ljava/lang/String;)V
+.method public onFocusMagnificationResultChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;)V
+    .locals 0
+
+    const-string p0, "result"
+
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
 .end method
 
-.method public abstract onFallbackModeChanging(Z)V
+.method public onFocusMagnifierPreparing(Z)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onFallbackStateChanged(ZZ)V
+.method public onFramingAssistCroppedPositionChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;)V
+    .locals 0
+
+    const-string p0, "position"
+
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
 .end method
 
-.method public abstract onFocusChangedByRemocon(ZZ)V
+.method public onGoogleLensAvailableChanged(Z)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onFocusMagnificationResultChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;)V
+.method public onHintTextHidden(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
+    .locals 0
+
+    const-string p0, "content"
+
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
 .end method
 
-.method public abstract onFocusMagnifierPreparing(Z)V
+.method public onHintTextShown(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
+    .locals 0
+
+    const-string p0, "content"
+
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
 .end method
 
-.method public abstract onFramingAssistCroppedPositionChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;)V
+.method public onLensChange(Z)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onGoogleLensAvailableChanged(Z)V
+.method public onLensChangedByRemocon()V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onHintTextHidden(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
+.method public onLowLightStateChanged(Z)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onHintTextShown(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
+.method public onMessageDialogHidden()V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onLensChange(Z)V
+.method public onMessageDialogShown()V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onLensChangedByRemocon()V
+.method public onModeChange(Z)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onLowLightStateChanged(Z)V
+.method public onMoreModeSelectorOpened(Z)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onMessageDialogHidden()V
+.method public onObjectTrackingStateChanged(Z)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onMessageDialogShown()V
+.method public onOfflineSessionActive(Z)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onModeChange(Z)V
+.method public onPrepareBurstDone(I)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onMoreModeSelectorOpened(Z)V
+.method public onRecordFinished(I)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onObjectTrackingStateChanged(Z)V
+.method public onRecordRequested(I)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onPrepareBurstDone(I)V
+.method public onRecordingProgress(I)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onRecordFinished(I)V
+.method public onRemoteControlStateChanged(Z)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onRecordRequested(I)V
+.method public onShutterAction(I)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onRecordingProgress(I)V
+.method public onSnapshotRequestDone(ILandroid/graphics/Bitmap;)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onRemoteControlStateChanged(Z)V
+.method public onSnapshotRequested(I)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onRtmpStreamKeySettingChanged(Ljava/lang/String;)V
+.method public onSsIsoEvDetected(JII)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onRtmpStreamUrlSettingChanged(Ljava/lang/String;)V
+.method public onStartMonitorAiSuggestion()V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onShutterAction(I)V
+.method public onStopMonitorAiSuggestion()V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onSnapshotRequestDone(ILandroid/graphics/Bitmap;)V
+.method public onStorageStateChanged(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/Storage$StorageState;)V
+    .locals 0
+
+    const-string/jumbo p0, "type"
+
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string/jumbo p0, "state"
+
+    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
 .end method
 
-.method public abstract onSnapshotRequested(I)V
+.method public onStoreError(I)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onSsIsoEvDetected(JII)V
+.method public onStoreFinished(ILjp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
+    .locals 0
+
+    const-string p0, "result"
+
+    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
 .end method
 
-.method public abstract onStorageStateChanged(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/Storage$StorageState;)V
+.method public onSurfaceRequested(Ljp/co/sony/mc/camera/view/SurfaceRequest;)V
+    .locals 0
+
+    const-string p0, "request"
+
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
 .end method
 
-.method public abstract onStoreError(I)V
+.method public onThermalStateChanged(Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;)V
+    .locals 0
+
+    const-string/jumbo p0, "status"
+
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
 .end method
 
-.method public abstract onStoreFinished(ILjp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
+.method public onToggleCapturingMode()V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onSurfaceRequested(Ljp/co/sony/mc/camera/view/SurfaceRequest;)V
+.method public onToggleFacing()V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onThermalStateChanged(Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;)V
+.method public onTouchFocusVisibilityChanged(Z)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onToggleCapturingMode()V
+.method public onTripodFramingCroppedPositionChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$TripodFramingCroppedPosition;)V
+    .locals 0
+
+    const-string p0, "position"
+
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
 .end method
 
-.method public abstract onToggleFacing()V
+.method public onVideoSnapshotRequested(I)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onTouchFocusVisibilityChanged(Z)V
+.method public onWbCustomFinished(I[ILjava/lang/Float;Ljava/lang/Float;Ljava/lang/String;)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onVideoSnapshotRequested(I)V
+.method public onWbCustomStarted()V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onWbCustomFinished(I[ILjava/lang/Float;Ljava/lang/Float;Ljava/lang/String;)V
-.end method
+.method public onZoomStateChanged(Z)V
+    .locals 0
 
-.method public abstract onWbCustomStarted()V
-.end method
-
-.method public abstract onYoutubeAccountSettingChanged(Ljava/lang/String;)V
-.end method
-
-.method public abstract onYoutubeLiveEventSettingChanged(Ljava/lang/String;)V
-.end method
-
-.method public abstract onYoutubeLiveIdSettingChanged(Ljava/lang/String;)V
-.end method
-
-.method public abstract onZoomStateChanged(Z)V
+    return-void
 .end method

@@ -31,10 +31,10 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 372
+    .line 371
     invoke-direct {p0}, Lcom/google/common/reflect/TypeVisitor;-><init>()V
 
-    .line 374
+    .line 373
     invoke-static {}, Lcom/google/common/collect/Maps;->newHashMap()Ljava/util/HashMap;
 
     move-result-object v0
@@ -46,6 +46,15 @@
 
 .method static getTypeMappings(Ljava/lang/reflect/Type;)Lcom/google/common/collect/ImmutableMap;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "contextType"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -58,17 +67,17 @@
         }
     .end annotation
 
-    .line 381
+    .line 380
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 382
+    .line 381
     new-instance v0, Lcom/google/common/reflect/TypeResolver$TypeMappingIntrospector;
 
     invoke-direct {v0}, Lcom/google/common/reflect/TypeResolver$TypeMappingIntrospector;-><init>()V
 
     const/4 v1, 0x1
 
-    .line 383
+    .line 382
     new-array v1, v1, [Ljava/lang/reflect/Type;
 
     const/4 v2, 0x0
@@ -77,7 +86,7 @@
 
     invoke-virtual {v0, v1}, Lcom/google/common/reflect/TypeResolver$TypeMappingIntrospector;->visit([Ljava/lang/reflect/Type;)V
 
-    .line 384
+    .line 383
     iget-object p0, v0, Lcom/google/common/reflect/TypeResolver$TypeMappingIntrospector;->mappings:Ljava/util/Map;
 
     invoke-static {p0}, Lcom/google/common/collect/ImmutableMap;->copyOf(Ljava/util/Map;)Lcom/google/common/collect/ImmutableMap;
@@ -89,8 +98,18 @@
 
 .method private map(Lcom/google/common/reflect/TypeResolver$TypeVariableKey;Ljava/lang/reflect/Type;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "var",
+            "arg"
+        }
+    .end annotation
 
-    .line 417
+    .line 416
     iget-object v0, p0, Lcom/google/common/reflect/TypeResolver$TypeMappingIntrospector;->mappings:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
@@ -107,7 +126,7 @@
     :goto_0
     if-eqz v0, :cond_3
 
-    .line 427
+    .line 426
     invoke-virtual {p1, v0}, Lcom/google/common/reflect/TypeResolver$TypeVariableKey;->equalsType(Ljava/lang/reflect/Type;)Z
 
     move-result v1
@@ -117,7 +136,7 @@
     :goto_1
     if-eqz p2, :cond_1
 
-    .line 432
+    .line 431
     iget-object p1, p0, Lcom/google/common/reflect/TypeResolver$TypeMappingIntrospector;->mappings:Ljava/util/Map;
 
     invoke-static {p2}, Lcom/google/common/reflect/TypeResolver$TypeVariableKey;->forLookup(Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeResolver$TypeVariableKey;
@@ -137,7 +156,7 @@
     :cond_1
     return-void
 
-    .line 426
+    .line 425
     :cond_2
     iget-object v1, p0, Lcom/google/common/reflect/TypeResolver$TypeMappingIntrospector;->mappings:Ljava/util/Map;
 
@@ -153,7 +172,7 @@
 
     goto :goto_0
 
-    .line 436
+    .line 435
     :cond_3
     iget-object p0, p0, Lcom/google/common/reflect/TypeResolver$TypeMappingIntrospector;->mappings:Ljava/util/Map;
 
@@ -166,6 +185,15 @@
 # virtual methods
 .method visitClass(Ljava/lang/Class;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "clazz"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -176,7 +204,7 @@
 
     const/4 v0, 0x1
 
-    .line 389
+    .line 388
     new-array v0, v0, [Ljava/lang/reflect/Type;
 
     const/4 v1, 0x0
@@ -189,7 +217,7 @@
 
     invoke-virtual {p0, v0}, Lcom/google/common/reflect/TypeResolver$TypeMappingIntrospector;->visit([Ljava/lang/reflect/Type;)V
 
-    .line 390
+    .line 389
     invoke-virtual {p1}, Ljava/lang/Class;->getGenericInterfaces()[Ljava/lang/reflect/Type;
 
     move-result-object p1
@@ -201,25 +229,33 @@
 
 .method visitParameterizedType(Ljava/lang/reflect/ParameterizedType;)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "parameterizedType"
+        }
+    .end annotation
 
-    .line 395
+    .line 394
     invoke-interface {p1}, Ljava/lang/reflect/ParameterizedType;->getRawType()Ljava/lang/reflect/Type;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/Class;
 
-    .line 396
+    .line 395
     invoke-virtual {v0}, Ljava/lang/Class;->getTypeParameters()[Ljava/lang/reflect/TypeVariable;
 
     move-result-object v1
 
-    .line 397
+    .line 396
     invoke-interface {p1}, Ljava/lang/reflect/ParameterizedType;->getActualTypeArguments()[Ljava/lang/reflect/Type;
 
     move-result-object v2
 
-    .line 398
+    .line 397
     array-length v3, v1
 
     array-length v4, v2
@@ -242,13 +278,13 @@
 
     move v3, v6
 
-    .line 399
+    .line 398
     :goto_1
     array-length v4, v1
 
     if-ge v3, v4, :cond_1
 
-    .line 400
+    .line 399
     new-instance v4, Lcom/google/common/reflect/TypeResolver$TypeVariableKey;
 
     aget-object v7, v1, v3
@@ -263,7 +299,7 @@
 
     goto :goto_1
 
-    .line 402
+    .line 401
     :cond_1
     new-array v1, v5, [Ljava/lang/reflect/Type;
 
@@ -271,7 +307,7 @@
 
     invoke-virtual {p0, v1}, Lcom/google/common/reflect/TypeResolver$TypeMappingIntrospector;->visit([Ljava/lang/reflect/Type;)V
 
-    .line 403
+    .line 402
     new-array v0, v5, [Ljava/lang/reflect/Type;
 
     invoke-interface {p1}, Ljava/lang/reflect/ParameterizedType;->getOwnerType()Ljava/lang/reflect/Type;
@@ -287,6 +323,15 @@
 
 .method visitTypeVariable(Ljava/lang/reflect/TypeVariable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "t"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -295,7 +340,7 @@
         }
     .end annotation
 
-    .line 408
+    .line 407
     invoke-interface {p1}, Ljava/lang/reflect/TypeVariable;->getBounds()[Ljava/lang/reflect/Type;
 
     move-result-object p1
@@ -307,8 +352,16 @@
 
 .method visitWildcardType(Ljava/lang/reflect/WildcardType;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "t"
+        }
+    .end annotation
 
-    .line 413
+    .line 412
     invoke-interface {p1}, Ljava/lang/reflect/WildcardType;->getUpperBounds()[Ljava/lang/reflect/Type;
 
     move-result-object p1

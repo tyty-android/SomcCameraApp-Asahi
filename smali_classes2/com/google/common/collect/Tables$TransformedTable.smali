@@ -53,6 +53,17 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/Table;Lcom/google/common/base/Function;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromTable",
+            "function"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -63,10 +74,10 @@
         }
     .end annotation
 
-    .line 328
+    .line 420
     invoke-direct {p0}, Lcom/google/common/collect/AbstractTable;-><init>()V
 
-    .line 329
+    .line 421
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -75,7 +86,7 @@
 
     iput-object p1, p0, Lcom/google/common/collect/Tables$TransformedTable;->fromTable:Lcom/google/common/collect/Table;
 
-    .line 330
+    .line 422
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -102,7 +113,7 @@
         }
     .end annotation
 
-    .line 383
+    .line 485
     new-instance v0, Lcom/google/common/collect/Tables$TransformedTable$1;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/Tables$TransformedTable$1;-><init>(Lcom/google/common/collect/Tables$TransformedTable;)V
@@ -121,7 +132,7 @@
         }
     .end annotation
 
-    .line 394
+    .line 496
     iget-object v0, p0, Lcom/google/common/collect/Tables$TransformedTable;->fromTable:Lcom/google/common/collect/Table;
 
     invoke-interface {v0}, Lcom/google/common/collect/Table;->cellSet()Ljava/util/Set;
@@ -146,7 +157,7 @@
 .method public clear()V
     .locals 0
 
-    .line 352
+    .line 448
     iget-object p0, p0, Lcom/google/common/collect/Tables$TransformedTable;->fromTable:Lcom/google/common/collect/Table;
 
     invoke-interface {p0}, Lcom/google/common/collect/Table;->clear()V
@@ -156,6 +167,19 @@
 
 .method public column(Ljava/lang/Object;)Ljava/util/Map;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "columnKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TC;)",
@@ -164,7 +188,7 @@
         }
     .end annotation
 
-    .line 379
+    .line 481
     iget-object v0, p0, Lcom/google/common/collect/Tables$TransformedTable;->fromTable:Lcom/google/common/collect/Table;
 
     invoke-interface {v0, p1}, Lcom/google/common/collect/Table;->column(Ljava/lang/Object;)Ljava/util/Map;
@@ -190,7 +214,7 @@
         }
     .end annotation
 
-    .line 404
+    .line 506
     iget-object p0, p0, Lcom/google/common/collect/Tables$TransformedTable;->fromTable:Lcom/google/common/collect/Table;
 
     invoke-interface {p0}, Lcom/google/common/collect/Table;->columnKeySet()Ljava/util/Set;
@@ -212,12 +236,12 @@
         }
     .end annotation
 
-    .line 426
+    .line 528
     new-instance v0, Lcom/google/common/collect/Tables$TransformedTable$3;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/Tables$TransformedTable$3;-><init>(Lcom/google/common/collect/Tables$TransformedTable;)V
 
-    .line 433
+    .line 535
     iget-object p0, p0, Lcom/google/common/collect/Tables$TransformedTable;->fromTable:Lcom/google/common/collect/Table;
 
     invoke-interface {p0}, Lcom/google/common/collect/Table;->columnMap()Ljava/util/Map;
@@ -233,8 +257,26 @@
 
 .method public contains(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "rowKey",
+            "columnKey"
+        }
+    .end annotation
 
-    .line 335
+    .line 427
     iget-object p0, p0, Lcom/google/common/collect/Tables$TransformedTable;->fromTable:Lcom/google/common/collect/Table;
 
     invoke-interface {p0, p1, p2}, Lcom/google/common/collect/Table;->contains(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -254,7 +296,7 @@
         }
     .end annotation
 
-    .line 409
+    .line 511
     iget-object v0, p0, Lcom/google/common/collect/Tables$TransformedTable;->fromTable:Lcom/google/common/collect/Table;
 
     invoke-interface {v0}, Lcom/google/common/collect/Table;->values()Ljava/util/Collection;
@@ -272,6 +314,25 @@
 
 .method public get(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "rowKey",
+            "columnKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -281,18 +342,26 @@
         }
     .end annotation
 
-    .line 342
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 436
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/Tables$TransformedTable;->contains(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
+    .line 437
     iget-object v0, p0, Lcom/google/common/collect/Tables$TransformedTable;->function:Lcom/google/common/base/Function;
 
     iget-object p0, p0, Lcom/google/common/collect/Tables$TransformedTable;->fromTable:Lcom/google/common/collect/Table;
 
     invoke-interface {p0, p1, p2}, Lcom/google/common/collect/Table;->get(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lcom/google/common/collect/NullnessCasts;->uncheckedCastNullableTToT(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -311,13 +380,41 @@
 
 .method public put(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .param p3    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "rowKey",
+            "columnKey",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TR;TC;TV2;)TV2;"
         }
     .end annotation
 
-    .line 357
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 457
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -327,6 +424,15 @@
 
 .method public putAll(Lcom/google/common/collect/Table;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "table"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -335,7 +441,7 @@
         }
     .end annotation
 
-    .line 362
+    .line 462
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -345,6 +451,25 @@
 
 .method public remove(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "rowKey",
+            "columnKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -354,19 +479,26 @@
         }
     .end annotation
 
-    .line 367
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 468
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/Tables$TransformedTable;->contains(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 368
+    .line 470
     iget-object v0, p0, Lcom/google/common/collect/Tables$TransformedTable;->function:Lcom/google/common/base/Function;
 
     iget-object p0, p0, Lcom/google/common/collect/Tables$TransformedTable;->fromTable:Lcom/google/common/collect/Table;
 
     invoke-interface {p0, p1, p2}, Lcom/google/common/collect/Table;->remove(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lcom/google/common/collect/NullnessCasts;->uncheckedCastNullableTToT(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -385,6 +517,19 @@
 
 .method public row(Ljava/lang/Object;)Ljava/util/Map;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "rowKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TR;)",
@@ -393,7 +538,7 @@
         }
     .end annotation
 
-    .line 374
+    .line 476
     iget-object v0, p0, Lcom/google/common/collect/Tables$TransformedTable;->fromTable:Lcom/google/common/collect/Table;
 
     invoke-interface {v0, p1}, Lcom/google/common/collect/Table;->row(Ljava/lang/Object;)Ljava/util/Map;
@@ -419,7 +564,7 @@
         }
     .end annotation
 
-    .line 399
+    .line 501
     iget-object p0, p0, Lcom/google/common/collect/Tables$TransformedTable;->fromTable:Lcom/google/common/collect/Table;
 
     invoke-interface {p0}, Lcom/google/common/collect/Table;->rowKeySet()Ljava/util/Set;
@@ -441,12 +586,12 @@
         }
     .end annotation
 
-    .line 414
+    .line 516
     new-instance v0, Lcom/google/common/collect/Tables$TransformedTable$2;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/Tables$TransformedTable$2;-><init>(Lcom/google/common/collect/Tables$TransformedTable;)V
 
-    .line 421
+    .line 523
     iget-object p0, p0, Lcom/google/common/collect/Tables$TransformedTable;->fromTable:Lcom/google/common/collect/Table;
 
     invoke-interface {p0}, Lcom/google/common/collect/Table;->rowMap()Ljava/util/Map;
@@ -463,7 +608,7 @@
 .method public size()I
     .locals 0
 
-    .line 347
+    .line 443
     iget-object p0, p0, Lcom/google/common/collect/Tables$TransformedTable;->fromTable:Lcom/google/common/collect/Table;
 
     invoke-interface {p0}, Lcom/google/common/collect/Table;->size()I

@@ -24,8 +24,16 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 4018
+    .line 4411
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$OnCropRegionCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -45,8 +53,16 @@
 # virtual methods
 .method public onCropRegionChanged(Landroid/graphics/Rect;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cropRegion"
+        }
+    .end annotation
 
-    .line 4026
+    .line 4419
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$OnCropRegionCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;
@@ -61,7 +77,7 @@
 .method public onCropRegionReady()V
     .locals 0
 
-    .line 4021
+    .line 4414
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$OnCropRegionCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;

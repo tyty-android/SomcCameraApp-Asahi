@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 354
     iput-object p1, p0, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment$5;->this$0:Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment;
@@ -37,13 +45,21 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "arg0"
+        }
+    .end annotation
 
     .line 357
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result v0
 
-    const v1, 0x7f0900d9
+    const v1, 0x7f0900db
 
     const/4 v2, 0x0
 
@@ -149,7 +165,7 @@
     :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment$5;->this$0:Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment;
 
-    const p1, 0x7f1102f5
+    const p1, 0x7f11033e
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment;->getString(I)Ljava/lang/String;
 
@@ -165,7 +181,7 @@
 
     move-result v0
 
-    const v1, 0x7f0903c3
+    const v1, 0x7f0903c2
 
     const/4 v3, 0x0
 
@@ -177,7 +193,7 @@
     .line 384
     iget-object p0, p0, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment$5;->this$0:Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment;
 
-    const p1, 0x7f1102f6
+    const p1, 0x7f11033f
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment;->getString(I)Ljava/lang/String;
 
@@ -193,7 +209,7 @@
 
     move-result p1
 
-    const v0, 0x7f0900a3
+    const v0, 0x7f0900ab
 
     if-ne p1, v0, :cond_7
 

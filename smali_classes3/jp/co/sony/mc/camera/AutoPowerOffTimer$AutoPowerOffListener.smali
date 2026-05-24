@@ -16,6 +16,14 @@
 
 # virtual methods
 .method public abstract onAutoPowerOff(Ljava/lang/Object;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "userdata"
+        }
+    .end annotation
 .end method
 
 .method public abstract onAutoPowerOffWarning()V

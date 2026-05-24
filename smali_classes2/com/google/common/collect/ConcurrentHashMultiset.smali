@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/collect/ConcurrentHashMultiset$EntrySet;,
@@ -46,6 +49,15 @@
 # direct methods
 .method constructor <init>(Ljava/util/concurrent/ConcurrentMap;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "countMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -56,10 +68,10 @@
         }
     .end annotation
 
-    .line 126
+    .line 131
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMultiset;-><init>()V
 
-    .line 127
+    .line 132
     invoke-interface {p1}, Ljava/util/concurrent/ConcurrentMap;->isEmpty()Z
 
     move-result v0
@@ -68,7 +80,7 @@
 
     invoke-static {v0, v1, p1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;)V
 
-    .line 128
+    .line 133
     iput-object p1, p0, Lcom/google/common/collect/ConcurrentHashMultiset;->countMap:Ljava/util/concurrent/ConcurrentMap;
 
     return-void
@@ -77,7 +89,7 @@
 .method static synthetic access$100(Lcom/google/common/collect/ConcurrentHashMultiset;)Ljava/util/concurrent/ConcurrentMap;
     .locals 0
 
-    .line 59
+    .line 65
     iget-object p0, p0, Lcom/google/common/collect/ConcurrentHashMultiset;->countMap:Ljava/util/concurrent/ConcurrentMap;
 
     return-object p0
@@ -95,7 +107,7 @@
         }
     .end annotation
 
-    .line 89
+    .line 95
     new-instance v0, Lcom/google/common/collect/ConcurrentHashMultiset;
 
     new-instance v1, Ljava/util/concurrent/ConcurrentHashMap;
@@ -109,6 +121,15 @@
 
 .method public static create(Ljava/lang/Iterable;)Lcom/google/common/collect/ConcurrentHashMultiset;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -121,12 +142,12 @@
         }
     .end annotation
 
-    .line 101
+    .line 107
     invoke-static {}, Lcom/google/common/collect/ConcurrentHashMultiset;->create()Lcom/google/common/collect/ConcurrentHashMultiset;
 
     move-result-object v0
 
-    .line 102
+    .line 108
     invoke-static {v0, p0}, Lcom/google/common/collect/Iterables;->addAll(Ljava/util/Collection;Ljava/lang/Iterable;)Z
 
     return-object v0
@@ -134,6 +155,15 @@
 
 .method public static create(Ljava/util/concurrent/ConcurrentMap;)Lcom/google/common/collect/ConcurrentHashMultiset;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "countMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -148,7 +178,7 @@
         }
     .end annotation
 
-    .line 122
+    .line 127
     new-instance v0, Lcom/google/common/collect/ConcurrentHashMultiset;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/ConcurrentHashMultiset;-><init>(Ljava/util/concurrent/ConcurrentMap;)V
@@ -158,6 +188,15 @@
 
 .method private readObject(Ljava/io/ObjectInputStream;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stream"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -165,17 +204,21 @@
         }
     .end annotation
 
-    .line 594
+    .line 603
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->defaultReadObject()V
 
-    .line 597
+    .line 606
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readObject()Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, Ljava/util/concurrent/ConcurrentMap;
 
-    .line 598
+    .line 607
     sget-object v0, Lcom/google/common/collect/ConcurrentHashMultiset$FieldSettersHolder;->COUNT_MAP_FIELD_SETTER:Lcom/google/common/collect/Serialization$FieldSetter;
 
     invoke-virtual {v0, p0, p1}, Lcom/google/common/collect/Serialization$FieldSetter;->set(Ljava/lang/Object;Ljava/lang/Object;)V
@@ -193,7 +236,7 @@
         }
     .end annotation
 
-    .line 180
+    .line 186
     invoke-virtual {p0}, Lcom/google/common/collect/ConcurrentHashMultiset;->size()I
 
     move-result v0
@@ -202,7 +245,7 @@
 
     move-result-object v0
 
-    .line 181
+    .line 187
     invoke-virtual {p0}, Lcom/google/common/collect/ConcurrentHashMultiset;->entrySet()Ljava/util/Set;
 
     move-result-object p0
@@ -224,12 +267,12 @@
 
     check-cast v1, Lcom/google/common/collect/Multiset$Entry;
 
-    .line 182
+    .line 188
     invoke-interface {v1}, Lcom/google/common/collect/Multiset$Entry;->getElement()Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 183
+    .line 189
     invoke-interface {v1}, Lcom/google/common/collect/Multiset$Entry;->getCount()I
 
     move-result v1
@@ -237,7 +280,7 @@
     :goto_0
     if-lez v1, :cond_0
 
-    .line 184
+    .line 190
     invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v1, v1, -0x1
@@ -250,16 +293,25 @@
 
 .method private writeObject(Ljava/io/ObjectOutputStream;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stream"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 589
+    .line 597
     invoke-virtual {p1}, Ljava/io/ObjectOutputStream;->defaultWriteObject()V
 
-    .line 590
+    .line 598
     iget-object p0, p0, Lcom/google/common/collect/ConcurrentHashMultiset;->countMap:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-virtual {p1, p0}, Ljava/io/ObjectOutputStream;->writeObject(Ljava/lang/Object;)V
@@ -271,31 +323,42 @@
 # virtual methods
 .method public add(Ljava/lang/Object;I)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "element",
+            "occurrences"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;I)I"
         }
     .end annotation
 
-    .line 204
+    .line 210
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     if-nez p2, :cond_0
 
-    .line 206
+    .line 212
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ConcurrentHashMultiset;->count(Ljava/lang/Object;)I
 
     move-result p0
 
     return p0
 
-    .line 208
+    .line 214
     :cond_0
-    const-string v0, "occurences"
+    const-string v0, "occurrences"
 
     invoke-static {p2, v0}, Lcom/google/common/collect/CollectPreconditions;->checkPositive(ILjava/lang/String;)V
 
-    .line 211
+    .line 217
     :cond_1
     iget-object v0, p0, Lcom/google/common/collect/ConcurrentHashMultiset;->countMap:Ljava/util/concurrent/ConcurrentMap;
 
@@ -309,7 +372,7 @@
 
     if-nez v0, :cond_2
 
-    .line 213
+    .line 219
     iget-object v0, p0, Lcom/google/common/collect/ConcurrentHashMultiset;->countMap:Ljava/util/concurrent/ConcurrentMap;
 
     new-instance v2, Ljava/util/concurrent/atomic/AtomicInteger;
@@ -326,7 +389,7 @@
 
     return v1
 
-    .line 221
+    .line 227
     :cond_2
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
 
@@ -334,13 +397,13 @@
 
     if-eqz v2, :cond_3
 
-    .line 224
+    .line 230
     :try_start_0
     invoke-static {v2, p2}, Lcom/google/common/math/IntMath;->checkedAdd(II)I
 
     move-result v3
 
-    .line 225
+    .line 231
     invoke-virtual {v0, v2, v3}, Ljava/util/concurrent/atomic/AtomicInteger;->compareAndSet(II)Z
 
     move-result v3
@@ -351,21 +414,15 @@
 
     return v2
 
-    .line 230
+    .line 236
     :catch_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
     new-instance p1, Ljava/lang/StringBuilder;
 
-    const/16 v0, 0x41
-
-    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
     const-string v0, "Overflow adding "
 
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p1
+    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -389,13 +446,13 @@
 
     throw p0
 
-    .line 237
+    .line 243
     :cond_3
     new-instance v2, Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-direct {v2, p2}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
 
-    .line 238
+    .line 244
     iget-object v3, p0, Lcom/google/common/collect/ConcurrentHashMultiset;->countMap:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {v3, p1, v2}, Ljava/util/concurrent/ConcurrentMap;->putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -406,7 +463,7 @@
 
     iget-object v3, p0, Lcom/google/common/collect/ConcurrentHashMultiset;->countMap:Ljava/util/concurrent/ConcurrentMap;
 
-    .line 239
+    .line 245
     invoke-interface {v3, p1, v0, v2}, Ljava/util/concurrent/ConcurrentMap;->replace(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
@@ -420,7 +477,7 @@
 .method public clear()V
     .locals 0
 
-    .line 554
+    .line 561
     iget-object p0, p0, Lcom/google/common/collect/ConcurrentHashMultiset;->countMap:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {p0}, Ljava/util/concurrent/ConcurrentMap;->clear()V
@@ -431,11 +488,19 @@
 .method public bridge synthetic contains(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "element"
+        }
+    .end annotation
 
-    .line 58
+    .line 62
     invoke-super {p0, p1}, Lcom/google/common/collect/AbstractMultiset;->contains(Ljava/lang/Object;)Z
 
     move-result p0
@@ -446,11 +511,19 @@
 .method public count(Ljava/lang/Object;)I
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "element"
+        }
+    .end annotation
 
-    .line 141
+    .line 146
     iget-object p0, p0, Lcom/google/common/collect/ConcurrentHashMultiset;->countMap:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-static {p0, p1}, Lcom/google/common/collect/Maps;->safeGet(Ljava/util/Map;Ljava/lang/Object;)Ljava/lang/Object;
@@ -465,7 +538,7 @@
 
     goto :goto_0
 
-    .line 142
+    .line 147
     :cond_0
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
 
@@ -485,14 +558,14 @@
         }
     .end annotation
 
-    .line 449
+    .line 455
     iget-object v0, p0, Lcom/google/common/collect/ConcurrentHashMultiset;->countMap:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {v0}, Ljava/util/concurrent/ConcurrentMap;->keySet()Ljava/util/Set;
 
     move-result-object v0
 
-    .line 450
+    .line 456
     new-instance v1, Lcom/google/common/collect/ConcurrentHashMultiset$1;
 
     invoke-direct {v1, p0, v0}, Lcom/google/common/collect/ConcurrentHashMultiset$1;-><init>(Lcom/google/common/collect/ConcurrentHashMultiset;Ljava/util/Set;)V
@@ -514,7 +587,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 487
+    .line 493
     new-instance v0, Lcom/google/common/collect/ConcurrentHashMultiset$EntrySet;
 
     const/4 v1, 0x0
@@ -527,7 +600,7 @@
 .method distinctElements()I
     .locals 0
 
-    .line 492
+    .line 498
     iget-object p0, p0, Lcom/google/common/collect/ConcurrentHashMultiset;->countMap:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {p0}, Ljava/util/concurrent/ConcurrentMap;->size()I
@@ -547,7 +620,7 @@
         }
     .end annotation
 
-    .line 480
+    .line 486
     new-instance p0, Ljava/lang/AssertionError;
 
     const-string v0, "should never be called"
@@ -560,7 +633,7 @@
 .method public bridge synthetic elementSet()Ljava/util/Set;
     .locals 0
 
-    .line 58
+    .line 62
     invoke-super {p0}, Lcom/google/common/collect/AbstractMultiset;->elementSet()Ljava/util/Set;
 
     move-result-object p0
@@ -579,12 +652,12 @@
         }
     .end annotation
 
-    .line 504
+    .line 510
     new-instance v0, Lcom/google/common/collect/ConcurrentHashMultiset$2;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/ConcurrentHashMultiset$2;-><init>(Lcom/google/common/collect/ConcurrentHashMultiset;)V
 
-    .line 524
+    .line 531
     new-instance v1, Lcom/google/common/collect/ConcurrentHashMultiset$3;
 
     invoke-direct {v1, p0, v0}, Lcom/google/common/collect/ConcurrentHashMultiset$3;-><init>(Lcom/google/common/collect/ConcurrentHashMultiset;Ljava/util/Iterator;)V
@@ -595,7 +668,7 @@
 .method public bridge synthetic entrySet()Ljava/util/Set;
     .locals 0
 
-    .line 58
+    .line 62
     invoke-super {p0}, Lcom/google/common/collect/AbstractMultiset;->entrySet()Ljava/util/Set;
 
     move-result-object p0
@@ -606,7 +679,7 @@
 .method public isEmpty()Z
     .locals 0
 
-    .line 497
+    .line 503
     iget-object p0, p0, Lcom/google/common/collect/ConcurrentHashMultiset;->countMap:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {p0}, Ljava/util/concurrent/ConcurrentMap;->isEmpty()Z
@@ -626,7 +699,7 @@
         }
     .end annotation
 
-    .line 549
+    .line 556
     invoke-static {p0}, Lcom/google/common/collect/Multisets;->iteratorImpl(Lcom/google/common/collect/Multiset;)Ljava/util/Iterator;
 
     move-result-object p0
@@ -637,26 +710,36 @@
 .method public remove(Ljava/lang/Object;I)I
     .locals 5
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "element",
+            "occurrences"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
-    .line 272
+    .line 278
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ConcurrentHashMultiset;->count(Ljava/lang/Object;)I
 
     move-result p0
 
     return p0
 
-    .line 274
+    .line 280
     :cond_0
-    const-string v0, "occurences"
+    const-string v0, "occurrences"
 
     invoke-static {p2, v0}, Lcom/google/common/collect/CollectPreconditions;->checkPositive(ILjava/lang/String;)V
 
-    .line 276
+    .line 282
     iget-object v0, p0, Lcom/google/common/collect/ConcurrentHashMultiset;->countMap:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-static {v0, p1}, Lcom/google/common/collect/Maps;->safeGet(Ljava/util/Map;Ljava/lang/Object;)Ljava/lang/Object;
@@ -671,7 +754,7 @@
 
     return v1
 
-    .line 281
+    .line 287
     :cond_1
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
 
@@ -681,12 +764,12 @@
 
     sub-int v3, v2, p2
 
-    .line 283
+    .line 289
     invoke-static {v1, v3}, Ljava/lang/Math;->max(II)I
 
     move-result v3
 
-    .line 284
+    .line 290
     invoke-virtual {v0, v2, v3}, Ljava/util/concurrent/atomic/AtomicInteger;->compareAndSet(II)Z
 
     move-result v4
@@ -695,7 +778,7 @@
 
     if-nez v3, :cond_2
 
-    .line 288
+    .line 294
     iget-object p0, p0, Lcom/google/common/collect/ConcurrentHashMultiset;->countMap:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {p0, p1, v0}, Ljava/util/concurrent/ConcurrentMap;->remove(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -710,9 +793,19 @@
 .method public removeExactly(Ljava/lang/Object;I)Z
     .locals 5
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "element",
+            "occurrences"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -720,13 +813,13 @@
 
     return v0
 
-    .line 315
+    .line 321
     :cond_0
-    const-string v1, "occurences"
+    const-string v1, "occurrences"
 
     invoke-static {p2, v1}, Lcom/google/common/collect/CollectPreconditions;->checkPositive(ILjava/lang/String;)V
 
-    .line 317
+    .line 323
     iget-object v1, p0, Lcom/google/common/collect/ConcurrentHashMultiset;->countMap:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-static {v1, p1}, Lcom/google/common/collect/Maps;->safeGet(Ljava/util/Map;Ljava/lang/Object;)Ljava/lang/Object;
@@ -741,7 +834,7 @@
 
     return v2
 
-    .line 322
+    .line 328
     :cond_1
     invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
 
@@ -754,7 +847,7 @@
     :cond_2
     sub-int v4, v3, p2
 
-    .line 327
+    .line 333
     invoke-virtual {v1, v3, v4}, Ljava/util/concurrent/atomic/AtomicInteger;->compareAndSet(II)Z
 
     move-result v3
@@ -763,7 +856,7 @@
 
     if-nez v4, :cond_3
 
-    .line 331
+    .line 337
     iget-object p0, p0, Lcom/google/common/collect/ConcurrentHashMultiset;->countMap:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {p0, p1, v1}, Ljava/util/concurrent/ConcurrentMap;->remove(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -774,21 +867,32 @@
 
 .method public setCount(Ljava/lang/Object;I)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "element",
+            "count"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;I)I"
         }
     .end annotation
 
-    .line 348
+    .line 354
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 349
+    .line 355
     const-string v0, "count"
 
     invoke-static {p2, v0}, Lcom/google/common/collect/CollectPreconditions;->checkNonnegative(ILjava/lang/String;)I
 
-    .line 351
+    .line 357
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/ConcurrentHashMultiset;->countMap:Ljava/util/concurrent/ConcurrentMap;
 
@@ -806,7 +910,7 @@
 
     return v1
 
-    .line 356
+    .line 362
     :cond_1
     iget-object v0, p0, Lcom/google/common/collect/ConcurrentHashMultiset;->countMap:Ljava/util/concurrent/ConcurrentMap;
 
@@ -824,7 +928,7 @@
 
     return v1
 
-    .line 365
+    .line 371
     :cond_2
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
 
@@ -836,13 +940,13 @@
 
     return v1
 
-    .line 370
+    .line 376
     :cond_3
     new-instance v2, Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-direct {v2, p2}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
 
-    .line 371
+    .line 377
     iget-object v3, p0, Lcom/google/common/collect/ConcurrentHashMultiset;->countMap:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {v3, p1, v2}, Ljava/util/concurrent/ConcurrentMap;->putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -853,7 +957,7 @@
 
     iget-object v3, p0, Lcom/google/common/collect/ConcurrentHashMultiset;->countMap:Ljava/util/concurrent/ConcurrentMap;
 
-    .line 372
+    .line 378
     invoke-interface {v3, p1, v0, v2}, Ljava/util/concurrent/ConcurrentMap;->replace(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
@@ -863,7 +967,7 @@
     :cond_4
     return v1
 
-    .line 378
+    .line 384
     :cond_5
     invoke-virtual {v0, v2, p2}, Ljava/util/concurrent/atomic/AtomicInteger;->compareAndSet(II)Z
 
@@ -873,7 +977,7 @@
 
     if-nez p2, :cond_6
 
-    .line 382
+    .line 388
     iget-object p0, p0, Lcom/google/common/collect/ConcurrentHashMultiset;->countMap:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {p0, p1, v0}, Ljava/util/concurrent/ConcurrentMap;->remove(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -884,26 +988,39 @@
 
 .method public setCount(Ljava/lang/Object;II)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "element",
+            "expectedOldCount",
+            "newCount"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;II)Z"
         }
     .end annotation
 
-    .line 404
+    .line 410
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 405
+    .line 411
     const-string v0, "oldCount"
 
     invoke-static {p2, v0}, Lcom/google/common/collect/CollectPreconditions;->checkNonnegative(ILjava/lang/String;)I
 
-    .line 406
+    .line 412
     const-string v0, "newCount"
 
     invoke-static {p3, v0}, Lcom/google/common/collect/CollectPreconditions;->checkNonnegative(ILjava/lang/String;)I
 
-    .line 408
+    .line 414
     iget-object v0, p0, Lcom/google/common/collect/ConcurrentHashMultiset;->countMap:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-static {v0, p1}, Lcom/google/common/collect/Maps;->safeGet(Ljava/util/Map;Ljava/lang/Object;)Ljava/lang/Object;
@@ -927,7 +1044,7 @@
 
     return v2
 
-    .line 416
+    .line 422
     :cond_1
     iget-object p0, p0, Lcom/google/common/collect/ConcurrentHashMultiset;->countMap:Ljava/util/concurrent/ConcurrentMap;
 
@@ -946,7 +1063,7 @@
     :cond_2
     return v1
 
-    .line 419
+    .line 425
     :cond_3
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
 
@@ -958,20 +1075,20 @@
 
     if-nez p3, :cond_4
 
-    .line 424
+    .line 430
     iget-object p0, p0, Lcom/google/common/collect/ConcurrentHashMultiset;->countMap:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {p0, p1, v0}, Ljava/util/concurrent/ConcurrentMap;->remove(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     return v2
 
-    .line 427
+    .line 433
     :cond_4
     new-instance p2, Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-direct {p2, p3}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
 
-    .line 428
+    .line 434
     iget-object p3, p0, Lcom/google/common/collect/ConcurrentHashMultiset;->countMap:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {p3, p1, p2}, Ljava/util/concurrent/ConcurrentMap;->putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -982,7 +1099,7 @@
 
     iget-object p0, p0, Lcom/google/common/collect/ConcurrentHashMultiset;->countMap:Ljava/util/concurrent/ConcurrentMap;
 
-    .line 429
+    .line 435
     invoke-interface {p0, p1, v0, p2}, Ljava/util/concurrent/ConcurrentMap;->replace(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p0
@@ -995,7 +1112,7 @@
     :cond_6
     return v1
 
-    .line 432
+    .line 438
     :cond_7
     invoke-virtual {v0, v3, p3}, Ljava/util/concurrent/atomic/AtomicInteger;->compareAndSet(II)Z
 
@@ -1005,7 +1122,7 @@
 
     if-nez p3, :cond_8
 
-    .line 436
+    .line 442
     iget-object p0, p0, Lcom/google/common/collect/ConcurrentHashMultiset;->countMap:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {p0, p1, v0}, Ljava/util/concurrent/ConcurrentMap;->remove(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1020,7 +1137,7 @@
 .method public size()I
     .locals 4
 
-    .line 154
+    .line 159
     iget-object p0, p0, Lcom/google/common/collect/ConcurrentHashMultiset;->countMap:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {p0}, Ljava/util/concurrent/ConcurrentMap;->values()Ljava/util/Collection;
@@ -1046,7 +1163,7 @@
 
     check-cast v2, Ljava/util/concurrent/atomic/AtomicInteger;
 
-    .line 155
+    .line 160
     invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
 
     move-result v2
@@ -1057,7 +1174,7 @@
 
     goto :goto_0
 
-    .line 157
+    .line 162
     :cond_0
     invoke-static {v0, v1}, Lcom/google/common/primitives/Ints;->saturatedCast(J)I
 
@@ -1069,7 +1186,7 @@
 .method public toArray()[Ljava/lang/Object;
     .locals 0
 
-    .line 167
+    .line 172
     invoke-direct {p0}, Lcom/google/common/collect/ConcurrentHashMultiset;->snapshot()Ljava/util/List;
 
     move-result-object p0
@@ -1083,6 +1200,15 @@
 
 .method public toArray([Ljava/lang/Object;)[Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "array"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1091,7 +1217,7 @@
         }
     .end annotation
 
-    .line 172
+    .line 178
     invoke-direct {p0}, Lcom/google/common/collect/ConcurrentHashMultiset;->snapshot()Ljava/util/List;
 
     move-result-object p0

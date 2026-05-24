@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 8283
+    .line 7207
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler$1;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +46,7 @@
 .method public turnOff()V
     .locals 1
 
-    .line 8291
+    .line 7215
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler$1;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -59,7 +67,7 @@
 .method public turnOn()V
     .locals 1
 
-    .line 8286
+    .line 7210
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler$1;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;)Ljp/co/sony/mc/camera/view/FragmentController;

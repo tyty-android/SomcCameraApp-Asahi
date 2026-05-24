@@ -24,6 +24,14 @@
 
 .method public static buildExecutor(Ljava/lang/String;)Ljava/util/concurrent/ExecutorService;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "threadName"
+        }
+    .end annotation
 
     const/4 v0, 0x5
 
@@ -37,6 +45,16 @@
 
 .method public static buildExecutor(Ljava/lang/String;I)Ljava/util/concurrent/ExecutorService;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x0
+        }
+        names = {
+            "threadName",
+            "priority"
+        }
+    .end annotation
 
     .line 61
     new-instance v0, Ljp/co/sony/mc/camera/util/ThreadUtil$ExceptionHandlingExecutor;
@@ -56,6 +74,16 @@
 
 .method public static buildPoolExecutor(Ljava/lang/String;I)Ljava/util/concurrent/ExecutorService;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x0
+        }
+        names = {
+            "threadName",
+            "nThreads"
+        }
+    .end annotation
 
     const/4 v0, 0x5
 
@@ -69,6 +97,18 @@
 
 .method public static buildPoolExecutor(Ljava/lang/String;II)Ljava/util/concurrent/ExecutorService;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x0,
+            0x0
+        }
+        names = {
+            "threadName",
+            "nThreads",
+            "priority"
+        }
+    .end annotation
 
     .line 137
     new-instance v0, Ljp/co/sony/mc/camera/util/ThreadUtil$NamedThreadFactory;
@@ -87,6 +127,14 @@
 
 .method public static buildScheduledExecutor(Ljava/lang/String;)Ljava/util/concurrent/ScheduledExecutorService;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "threadName"
+        }
+    .end annotation
 
     .line 75
     new-instance v0, Ljp/co/sony/mc/camera/util/ThreadUtil$NamedThreadFactory;
@@ -106,6 +154,16 @@
 
 .method public static buildScheduledExecutor(Ljava/lang/String;I)Ljava/util/concurrent/ScheduledExecutorService;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x0
+        }
+        names = {
+            "threadName",
+            "priority"
+        }
+    .end annotation
 
     .line 97
     new-instance v0, Ljp/co/sony/mc/camera/util/ThreadUtil$NamedThreadFactory;

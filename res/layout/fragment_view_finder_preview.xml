@@ -26,7 +26,8 @@
         <RelativeLayout android:id="@id/focus_rectangles" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/hint_text_container" android:tag="binding_8" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/basic_mode_indicator_container" android:layout_width="fill_parent" android:layout_height="wrap_content" binding:layout_constraintTop_toTopOf="parent" layout="@layout/basic_mode_indicator_container" />
         <include android:id="@id/capture_state" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/fragment_common_operation_capture_state" />
-        <include android:id="@id/preview_hint_text_view_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/preview_overlay_hint_text_view" />
+        <include android:id="@id/preview_hint_text_view_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="0.0dip" binding:layout_constraintBottom_toBottomOf="parent" binding:layout_constraintTop_toTopOf="parent" layout="@layout/preview_overlay_hint_text_view" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

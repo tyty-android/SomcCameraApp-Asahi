@@ -18,67 +18,90 @@
 
 .field public final selectedOptionWithInfo:Landroid/widget/TextView;
 
-.field public final streamingItemOptions:Landroidx/recyclerview/widget/RecyclerView;
-
-.field public final streamingItemTitle:Landroid/widget/TextView;
-
-.field public final streamingQuickSetting:Landroidx/constraintlayout/widget/ConstraintLayout;
-
 .field public final titleArea:Landroidx/constraintlayout/widget/ConstraintLayout;
 
 .field public final titleAreaContainer:Landroidx/constraintlayout/widget/ConstraintLayout;
 
 
 # direct methods
-.method protected constructor <init>(Ljava/lang/Object;Landroid/view/View;ILandroid/view/View;Landroid/widget/ImageView;Landroidx/recyclerview/widget/RecyclerView;Landroid/widget/TextView;Landroidx/constraintlayout/widget/ConstraintLayout;Landroid/widget/TextView;Landroid/widget/TextView;Landroidx/recyclerview/widget/RecyclerView;Landroid/widget/TextView;Landroidx/constraintlayout/widget/ConstraintLayout;Landroidx/constraintlayout/widget/ConstraintLayout;Landroidx/constraintlayout/widget/ConstraintLayout;)V
+.method protected constructor <init>(Ljava/lang/Object;Landroid/view/View;ILandroid/view/View;Landroid/widget/ImageView;Landroidx/recyclerview/widget/RecyclerView;Landroid/widget/TextView;Landroidx/constraintlayout/widget/ConstraintLayout;Landroid/widget/TextView;Landroid/widget/TextView;Landroidx/constraintlayout/widget/ConstraintLayout;Landroidx/constraintlayout/widget/ConstraintLayout;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "_bindingComponent",
+            "_root",
+            "_localFieldCount",
+            "backgroundWithInfo",
+            "itemInfo",
+            "itemOptions",
+            "itemTitle",
+            "quickSetting",
+            "selectedOption",
+            "selectedOptionWithInfo",
+            "titleArea",
+            "titleAreaContainer"
+        }
+    .end annotation
 
-    .line 62
+    .line 51
     invoke-direct {p0, p1, p2, p3}, Landroidx/databinding/ViewDataBinding;-><init>(Ljava/lang/Object;Landroid/view/View;I)V
 
-    .line 63
+    .line 52
     iput-object p4, p0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->backgroundWithInfo:Landroid/view/View;
 
-    .line 64
+    .line 53
     iput-object p5, p0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->itemInfo:Landroid/widget/ImageView;
 
-    .line 65
+    .line 54
     iput-object p6, p0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->itemOptions:Landroidx/recyclerview/widget/RecyclerView;
 
-    .line 66
+    .line 55
     iput-object p7, p0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->itemTitle:Landroid/widget/TextView;
 
-    .line 67
+    .line 56
     iput-object p8, p0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->quickSetting:Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    .line 68
+    .line 57
     iput-object p9, p0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->selectedOption:Landroid/widget/TextView;
 
-    .line 69
+    .line 58
     iput-object p10, p0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->selectedOptionWithInfo:Landroid/widget/TextView;
 
-    .line 70
-    iput-object p11, p0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->streamingItemOptions:Landroidx/recyclerview/widget/RecyclerView;
+    .line 59
+    iput-object p11, p0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->titleArea:Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    .line 71
-    iput-object p12, p0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->streamingItemTitle:Landroid/widget/TextView;
-
-    .line 72
-    iput-object p13, p0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->streamingQuickSetting:Landroidx/constraintlayout/widget/ConstraintLayout;
-
-    .line 73
-    iput-object p14, p0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->titleArea:Landroidx/constraintlayout/widget/ConstraintLayout;
-
-    .line 74
-    iput-object p15, p0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->titleAreaContainer:Landroidx/constraintlayout/widget/ConstraintLayout;
+    .line 60
+    iput-object p12, p0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->titleAreaContainer:Landroidx/constraintlayout/widget/ConstraintLayout;
 
     return-void
 .end method
 
 .method public static bind(Landroid/view/View;)Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
-    .line 117
+    .line 103
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -92,12 +115,23 @@
 
 .method public static bind(Landroid/view/View;Ljava/lang/Object;)Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "component"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    const v0, 0x7f0c012e
+    const v0, 0x7f0c0128
 
-    .line 129
+    .line 115
     invoke-static {p1, p0, v0}, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->bind(Ljava/lang/Object;Landroid/view/View;I)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0
@@ -109,8 +143,16 @@
 
 .method public static inflate(Landroid/view/LayoutInflater;)Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "inflater"
+        }
+    .end annotation
 
-    .line 99
+    .line 85
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -124,8 +166,20 @@
 
 .method public static inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "inflater",
+            "root",
+            "attachToRoot"
+        }
+    .end annotation
 
-    .line 80
+    .line 66
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -139,12 +193,27 @@
 
 .method public static inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;ZLjava/lang/Object;)Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "inflater",
+            "root",
+            "attachToRoot",
+            "component"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    const v0, 0x7f0c012e
+    const v0, 0x7f0c0128
 
-    .line 94
+    .line 80
     invoke-static {p0, v0, p1, p2, p3}, Landroidx/databinding/ViewDataBinding;->inflateInternal(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;ZLjava/lang/Object;)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0
@@ -156,6 +225,17 @@
 
 .method public static inflate(Landroid/view/LayoutInflater;Ljava/lang/Object;)Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "inflater",
+            "component"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -163,9 +243,9 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x7f0c012e
+    const v2, 0x7f0c0128
 
-    .line 113
+    .line 99
     invoke-static {p0, v2, v0, v1, p1}, Landroidx/databinding/ViewDataBinding;->inflateInternal(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;ZLjava/lang/Object;)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0

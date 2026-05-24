@@ -26,6 +26,16 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "cameraId"
+        }
+    .end annotation
 
     .line 52
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/status/CameraStatusPublisher;-><init>(Landroid/content/Context;)V
@@ -236,15 +246,6 @@
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;->put(Ljp/co/sony/mc/camera/status/CameraStatusValue;)Ljp/co/sony/mc/camera/status/CameraStatusPublisher;
 
     .line 90
-    new-instance v0, Ljp/co/sony/mc/camera/status/eachcamera/StreamingQuality;
-
-    sget-object v1, Ljp/co/sony/mc/camera/status/eachcamera/StreamingQuality$Value;->MID:Ljp/co/sony/mc/camera/status/eachcamera/StreamingQuality$Value;
-
-    invoke-direct {v0, v1}, Ljp/co/sony/mc/camera/status/eachcamera/StreamingQuality;-><init>(Ljp/co/sony/mc/camera/status/eachcamera/StreamingQuality$Value;)V
-
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;->put(Ljp/co/sony/mc/camera/status/CameraStatusValue;)Ljp/co/sony/mc/camera/status/CameraStatusPublisher;
-
-    .line 91
     new-instance v0, Ljp/co/sony/mc/camera/status/eachcamera/Orientation;
 
     sget-object v1, Ljp/co/sony/mc/camera/status/eachcamera/Orientation$Value;->PORTRAIT:Ljp/co/sony/mc/camera/status/eachcamera/Orientation$Value;
@@ -253,7 +254,7 @@
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;->put(Ljp/co/sony/mc/camera/status/CameraStatusValue;)Ljp/co/sony/mc/camera/status/CameraStatusPublisher;
 
-    .line 92
+    .line 91
     new-instance v0, Ljp/co/sony/mc/camera/status/eachcamera/EyeDetection;
 
     sget-object v1, Ljp/co/sony/mc/camera/status/eachcamera/EyeDetection$Value;->OFF:Ljp/co/sony/mc/camera/status/eachcamera/EyeDetection$Value;
@@ -262,12 +263,21 @@
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;->put(Ljp/co/sony/mc/camera/status/CameraStatusValue;)Ljp/co/sony/mc/camera/status/CameraStatusPublisher;
 
-    .line 93
+    .line 92
     new-instance v0, Ljp/co/sony/mc/camera/status/eachcamera/HybridZoom;
 
     sget-object v1, Ljp/co/sony/mc/camera/status/eachcamera/HybridZoom$Value;->OFF:Ljp/co/sony/mc/camera/status/eachcamera/HybridZoom$Value;
 
     invoke-direct {v0, v1}, Ljp/co/sony/mc/camera/status/eachcamera/HybridZoom;-><init>(Ljp/co/sony/mc/camera/status/eachcamera/HybridZoom$Value;)V
+
+    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;->put(Ljp/co/sony/mc/camera/status/CameraStatusValue;)Ljp/co/sony/mc/camera/status/CameraStatusPublisher;
+
+    .line 93
+    new-instance v0, Ljp/co/sony/mc/camera/status/eachcamera/DigitalTripod;
+
+    sget-object v1, Ljp/co/sony/mc/camera/status/eachcamera/DigitalTripod$Value;->OFF:Ljp/co/sony/mc/camera/status/eachcamera/DigitalTripod$Value;
+
+    invoke-direct {v0, v1}, Ljp/co/sony/mc/camera/status/eachcamera/DigitalTripod;-><init>(Ljp/co/sony/mc/camera/status/eachcamera/DigitalTripod$Value;)V
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;->put(Ljp/co/sony/mc/camera/status/CameraStatusValue;)Ljp/co/sony/mc/camera/status/CameraStatusPublisher;
 

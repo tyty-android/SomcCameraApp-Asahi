@@ -16,4 +16,14 @@
 
 # virtual methods
 .method public abstract onDismiss(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;I)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "what"
+        }
+    .end annotation
 .end method

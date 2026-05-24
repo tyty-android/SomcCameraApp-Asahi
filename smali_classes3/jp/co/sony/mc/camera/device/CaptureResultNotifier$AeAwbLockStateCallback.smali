@@ -16,4 +16,14 @@
 
 # virtual methods
 .method public abstract onAeAwbLockStateChanged(ZZ)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "aeLocked",
+            "awbLocked"
+        }
+    .end annotation
 .end method

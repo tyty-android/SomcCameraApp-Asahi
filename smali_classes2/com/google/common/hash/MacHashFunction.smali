@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/hash/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation runtime Lcom/google/errorprone/annotations/Immutable;
 .end annotation
 
@@ -29,18 +32,30 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;Ljava/security/Key;Ljava/lang/String;)V
     .locals 0
-
-    .line 45
-    invoke-direct {p0}, Lcom/google/common/hash/AbstractHashFunction;-><init>()V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "algorithmName",
+            "key",
+            "toString"
+        }
+    .end annotation
 
     .line 46
+    invoke-direct {p0}, Lcom/google/common/hash/AbstractHashFunction;-><init>()V
+
+    .line 47
     invoke-static {p1, p2}, Lcom/google/common/hash/MacHashFunction;->getMac(Ljava/lang/String;Ljava/security/Key;)Ljavax/crypto/Mac;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/google/common/hash/MacHashFunction;->prototype:Ljavax/crypto/Mac;
 
-    .line 47
+    .line 48
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p2
@@ -49,7 +64,7 @@
 
     iput-object p2, p0, Lcom/google/common/hash/MacHashFunction;->key:Ljava/security/Key;
 
-    .line 48
+    .line 49
     invoke-static {p3}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p2
@@ -58,7 +73,7 @@
 
     iput-object p2, p0, Lcom/google/common/hash/MacHashFunction;->toString:Ljava/lang/String;
 
-    .line 49
+    .line 50
     invoke-virtual {p1}, Ljavax/crypto/Mac;->getMacLength()I
 
     move-result p2
@@ -67,7 +82,7 @@
 
     iput p2, p0, Lcom/google/common/hash/MacHashFunction;->bits:I
 
-    .line 50
+    .line 51
     invoke-static {p1}, Lcom/google/common/hash/MacHashFunction;->supportsClone(Ljavax/crypto/Mac;)Z
 
     move-result p1
@@ -79,14 +94,24 @@
 
 .method private static getMac(Ljava/lang/String;Ljava/security/Key;)Ljavax/crypto/Mac;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "algorithmName",
+            "key"
+        }
+    .end annotation
 
-    .line 69
+    .line 70
     :try_start_0
     invoke-static {p0}, Ljavax/crypto/Mac;->getInstance(Ljava/lang/String;)Ljavax/crypto/Mac;
 
     move-result-object p0
 
-    .line 70
+    .line 71
     invoke-virtual {p0, p1}, Ljavax/crypto/Mac;->init(Ljava/security/Key;)V
     :try_end_0
     .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_0} :catch_1
@@ -97,7 +122,7 @@
     :catch_0
     move-exception p0
 
-    .line 75
+    .line 76
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     invoke-direct {p1, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/Throwable;)V
@@ -107,7 +132,7 @@
     :catch_1
     move-exception p0
 
-    .line 73
+    .line 74
     new-instance p1, Ljava/lang/IllegalStateException;
 
     invoke-direct {p1, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/Throwable;)V
@@ -117,8 +142,16 @@
 
 .method private static supportsClone(Ljavax/crypto/Mac;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mac"
+        }
+    .end annotation
 
-    .line 60
+    .line 61
     :try_start_0
     invoke-virtual {p0}, Ljavax/crypto/Mac;->clone()Ljava/lang/Object;
     :try_end_0
@@ -139,7 +172,7 @@
 .method public bits()I
     .locals 0
 
-    .line 55
+    .line 56
     iget p0, p0, Lcom/google/common/hash/MacHashFunction;->bits:I
 
     return p0
@@ -148,14 +181,14 @@
 .method public newHasher()Lcom/google/common/hash/Hasher;
     .locals 3
 
-    .line 81
+    .line 82
     iget-boolean v0, p0, Lcom/google/common/hash/MacHashFunction;->supportsClone:Z
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 83
+    .line 84
     :try_start_0
     new-instance v0, Lcom/google/common/hash/MacHashFunction$MacHasher;
 
@@ -173,7 +206,7 @@
 
     return-object v0
 
-    .line 88
+    .line 89
     :catch_0
     :cond_0
     new-instance v0, Lcom/google/common/hash/MacHashFunction$MacHasher;
@@ -198,7 +231,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 93
+    .line 94
     iget-object p0, p0, Lcom/google/common/hash/MacHashFunction;->toString:Ljava/lang/String;
 
     return-object p0

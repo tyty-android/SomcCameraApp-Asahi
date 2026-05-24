@@ -81,7 +81,7 @@
 
     const/4 v3, -0x1
 
-    const v4, 0x7f1103e9
+    const v4, 0x7f110434
 
     move-object v0, v7
 
@@ -102,7 +102,7 @@
 
     const/4 v11, -0x1
 
-    const v12, 0x7f1103ea
+    const v12, 0x7f110435
 
     move-object v8, v15
 
@@ -159,6 +159,25 @@
 
 .method private constructor <init>(Ljava/lang/String;IIILjp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId",
+            "storageType",
+            "compatibleValue"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -217,6 +236,14 @@
 
 .method public static getValueFromType(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -314,6 +341,15 @@
 
 .method public static setMountPoint(Ljava/util/List;)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "types"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -470,6 +506,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 16
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;

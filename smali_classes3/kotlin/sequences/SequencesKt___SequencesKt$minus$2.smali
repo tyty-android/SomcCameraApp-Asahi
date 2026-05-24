@@ -37,8 +37,8 @@
     }
     k = 0x1
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x30
@@ -65,6 +65,16 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$twMC2039TDVsB1xPpyW3MHM-jHo([Ljava/lang/Object;Ljava/lang/Object;)Z
+    .locals 0
+
+    invoke-static {p0, p1}, Lkotlin/sequences/SequencesKt___SequencesKt$minus$2;->iterator$lambda$0([Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
 .method constructor <init>(Lkotlin/sequences/Sequence;[Ljava/lang/Object;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
@@ -85,6 +95,17 @@
     return-void
 .end method
 
+.method private static final iterator$lambda$0([Ljava/lang/Object;Ljava/lang/Object;)Z
+    .locals 0
+
+    .line 2642
+    invoke-static {p0, p1}, Lkotlin/collections/ArraysKt;->contains([Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
 
 # virtual methods
 .method public iterator()Ljava/util/Iterator;
@@ -100,13 +121,11 @@
     .line 2642
     iget-object v0, p0, Lkotlin/sequences/SequencesKt___SequencesKt$minus$2;->$this_minus:Lkotlin/sequences/Sequence;
 
-    new-instance v1, Lkotlin/sequences/SequencesKt___SequencesKt$minus$2$iterator$1;
-
     iget-object p0, p0, Lkotlin/sequences/SequencesKt___SequencesKt$minus$2;->$elements:[Ljava/lang/Object;
 
-    invoke-direct {v1, p0}, Lkotlin/sequences/SequencesKt___SequencesKt$minus$2$iterator$1;-><init>([Ljava/lang/Object;)V
+    new-instance v1, Lkotlin/sequences/SequencesKt___SequencesKt$minus$2$$ExternalSyntheticLambda0;
 
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Lkotlin/sequences/SequencesKt___SequencesKt$minus$2$$ExternalSyntheticLambda0;-><init>([Ljava/lang/Object;)V
 
     invoke-static {v0, v1}, Lkotlin/sequences/SequencesKt;->filterNot(Lkotlin/sequences/Sequence;Lkotlin/jvm/functions/Function1;)Lkotlin/sequences/Sequence;
 

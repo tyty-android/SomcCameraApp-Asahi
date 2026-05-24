@@ -82,7 +82,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 871
+    .line 961
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
 
     const-string v1, "OPENED"
@@ -148,7 +148,7 @@
         }
     .end annotation
 
-    .line 870
+    .line 960
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -179,7 +179,7 @@
 
     move-result-object p0
 
-    .line 872
+    .line 962
     check-cast p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
 
     return-object p0
@@ -194,7 +194,7 @@
 
     move-result-object v0
 
-    .line 872
+    .line 962
     check-cast v0, [Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
 
     return-object v0

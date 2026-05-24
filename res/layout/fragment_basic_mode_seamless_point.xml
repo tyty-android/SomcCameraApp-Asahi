@@ -2,5 +2,8 @@
 <FrameLayout android:tag="layout/fragment_basic_mode_seamless_point_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:binding="http://schemas.android.com/apk/res-auto">
     <View android:layout_gravity="start" android:id="@id/circle" android:tag="binding_1" android:background="@drawable/camera_circle_lens_button" android:layout_width="@dimen/auto_mode_zoom_circle_size" android:layout_height="@dimen/auto_mode_zoom_circle_size" android:soundEffectsEnabled="false" android:hapticFeedbackEnabled="false" />
-    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/label" android:layout_width="30.0dip" android:layout_height="30.0dip" android:importantForAccessibility="no" style="@style/TextAppearance.ZoomLabel" />
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/label" android:tag="binding_2" android:layout_width="30.0dip" android:layout_height="30.0dip" android:importantForAccessibility="no" style="@style/TextAppearance.ZoomLabel" />
+    <FrameLayout android:clipChildren="false" android:layout_width="@dimen/auto_mode_zoom_circle_size" android:layout_height="@dimen/auto_mode_zoom_circle_size">
+        <ImageView android:layout_gravity="center" android:id="@id/highlight_circle" android:visibility="gone" android:layout_width="@dimen/auto_mode_zoom_highlight_circle_size" android:layout_height="@dimen/auto_mode_zoom_highlight_circle_size" android:src="@drawable/camera_ai_suggestion_recommended_lens_animation" android:scaleType="center" android:soundEffectsEnabled="false" android:hapticFeedbackEnabled="false" />
+    </FrameLayout>
 </FrameLayout>

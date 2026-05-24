@@ -22,7 +22,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 800
+    .line 738
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->values()[Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object v0
@@ -274,7 +274,7 @@
     :try_start_f
     sget-object v0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$CapturingMode:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_STREAMING:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_ONE_SHOT:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->ordinal()I
 
@@ -290,7 +290,7 @@
     :try_start_10
     sget-object v0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$CapturingMode:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_ONE_SHOT:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_AUTO_FRAMING:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->ordinal()I
 
@@ -306,7 +306,7 @@
     :try_start_11
     sget-object v0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$CapturingMode:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_AUTO_FRAMING:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_GIMBAL:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->ordinal()I
 
@@ -319,21 +319,5 @@
     .catch Ljava/lang/NoSuchFieldError; {:try_start_11 .. :try_end_11} :catch_11
 
     :catch_11
-    :try_start_12
-    sget-object v0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$CapturingMode:[I
-
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_GIMBAL:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x13
-
-    aput v2, v0, v1
-    :try_end_12
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_12 .. :try_end_12} :catch_12
-
-    :catch_12
     return-void
 .end method

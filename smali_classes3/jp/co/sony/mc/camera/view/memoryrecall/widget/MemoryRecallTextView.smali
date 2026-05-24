@@ -96,7 +96,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallTextView;->initColorStateList:Landroid/content/res/ColorStateList;
 
-    const v0, 0x7f0603a3
+    const v0, 0x7f06038c
 
     .line 27
     invoke-virtual {p1, v0}, Landroid/content/Context;->getColor(I)I

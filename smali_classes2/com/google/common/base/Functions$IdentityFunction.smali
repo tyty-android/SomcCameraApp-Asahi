@@ -39,7 +39,7 @@
 .method private static synthetic $values()[Lcom/google/common/base/Functions$IdentityFunction;
     .locals 1
 
-    .line 87
+    .line 95
     sget-object v0, Lcom/google/common/base/Functions$IdentityFunction;->INSTANCE:Lcom/google/common/base/Functions$IdentityFunction;
 
     filled-new-array {v0}, [Lcom/google/common/base/Functions$IdentityFunction;
@@ -52,7 +52,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 88
+    .line 96
     new-instance v0, Lcom/google/common/base/Functions$IdentityFunction;
 
     const-string v1, "INSTANCE"
@@ -63,7 +63,7 @@
 
     sput-object v0, Lcom/google/common/base/Functions$IdentityFunction;->INSTANCE:Lcom/google/common/base/Functions$IdentityFunction;
 
-    .line 87
+    .line 95
     invoke-static {}, Lcom/google/common/base/Functions$IdentityFunction;->$values()[Lcom/google/common/base/Functions$IdentityFunction;
 
     move-result-object v0
@@ -75,13 +75,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 87
+    .line 95
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -89,8 +100,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/base/Functions$IdentityFunction;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 87
+    .line 95
     const-class v0, Lcom/google/common/base/Functions$IdentityFunction;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -105,7 +124,7 @@
 .method public static values()[Lcom/google/common/base/Functions$IdentityFunction;
     .locals 1
 
-    .line 87
+    .line 95
     sget-object v0, Lcom/google/common/base/Functions$IdentityFunction;->$VALUES:[Lcom/google/common/base/Functions$IdentityFunction;
 
     invoke-virtual {v0}, [Lcom/google/common/base/Functions$IdentityFunction;->clone()Ljava/lang/Object;
@@ -122,10 +141,19 @@
 .method public apply(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
     return-object p1
@@ -134,7 +162,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 98
+    .line 106
     const-string p0, "Functions.identity()"
 
     return-object p0

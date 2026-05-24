@@ -17,8 +17,16 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "message"
+        }
+    .end annotation
 
-    .line 287
+    .line 309
     invoke-direct {p0, p1}, Ljava/lang/Throwable;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -31,7 +39,7 @@
 
     monitor-enter p0
 
-    .line 290
+    .line 312
     monitor-exit p0
 
     return-object p0

@@ -21,6 +21,16 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "intent"
+        }
+    .end annotation
 
     .line 22
     const-string v0, "android.intent.action.SCREEN_OFF"
@@ -69,6 +79,14 @@
 
 .method public final registerTo(Landroid/content/Context;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 37
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/ScreenOffReceiverBase;->mIsRegistered:Z
@@ -99,6 +117,14 @@
 
 .method public final unregisterFrom(Landroid/content/Context;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 51
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/ScreenOffReceiverBase;->mIsRegistered:Z

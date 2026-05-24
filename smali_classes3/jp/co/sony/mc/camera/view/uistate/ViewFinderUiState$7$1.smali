@@ -54,12 +54,25 @@
 
 
 # virtual methods
-.method public final emit(Ljava/lang/Boolean;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public bridge synthetic emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    .locals 0
+
+    .line 249
+    check-cast p1, Ljp/co/sony/mc/camera/view/uistate/BasicFinderUiState;
+
+    invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$7$1;->emit(Ljp/co/sony/mc/camera/view/uistate/BasicFinderUiState;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final emit(Ljp/co/sony/mc/camera/view/uistate/BasicFinderUiState;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ljava/lang/Boolean;",
+            "Ljp/co/sony/mc/camera/view/uistate/BasicFinderUiState;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Lkotlin/Unit;",
@@ -68,60 +81,59 @@
         }
     .end annotation
 
-    .line 370
+    .line 250
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$7$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
-    invoke-static {p2}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$getCameraSettingsModel$p(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+    invoke-static {p2}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$get_basicFinderUiVisible$p(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)Lkotlinx/coroutines/flow/MutableStateFlow;
 
     move-result-object p2
 
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
+    .line 251
+    instance-of p1, p1, Ljp/co/sony/mc/camera/view/uistate/BasicFinderUiState$None;
 
-    move-result-object p2
+    if-eqz p1, :cond_1
 
-    invoke-virtual {p2}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
-
-    move-result-object p2
-
-    invoke-static {p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
-    check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isPro()Z
-
-    move-result p2
-
-    if-nez p2, :cond_0
-
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result p1
-
-    if-nez p1, :cond_0
-
-    .line 371
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$7$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
-    const/4 p1, 0x0
-
-    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->onTouchAdjustStateChange(Z)V
-
-    .line 373
-    :cond_0
-    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
-
-    return-object p0
-.end method
-
-.method public bridge synthetic emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-    .locals 0
-
-    .line 369
-    check-cast p1, Ljava/lang/Boolean;
-
-    invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$7$1;->emit(Ljava/lang/Boolean;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$isColorAndBrightnessFocused$p(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)Landroidx/lifecycle/MutableLiveData;
 
     move-result-object p0
+
+    invoke-virtual {p0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    check-cast p0, Ljava/lang/Boolean;
+
+    invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 p0, 0x1
+
+    :goto_1
+    invoke-static {p0}, Lkotlin/coroutines/jvm/internal/Boxing;->boxBoolean(Z)Ljava/lang/Boolean;
+
+    move-result-object p0
+
+    .line 250
+    invoke-interface {p2, p0}, Lkotlinx/coroutines/flow/MutableStateFlow;->setValue(Ljava/lang/Object;)V
+
+    .line 252
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 .end method

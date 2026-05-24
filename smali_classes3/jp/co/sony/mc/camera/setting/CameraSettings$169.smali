@@ -3,7 +3,7 @@
 .source "CameraSettings.java"
 
 # interfaces
-.implements Ljp/co/sony/mc/camera/setting/SettingsBase$GetOptionsCommand;
+.implements Ljp/co/sony/mc/camera/setting/SettingsBase$SetCommand;
 
 
 # annotations
@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1983
+    .line 2205
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,8 +29,23 @@
 
 
 # virtual methods
-.method public getOptions(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
+.method public setValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljava/util/Map;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key",
+            "value",
+            "listenersMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -38,23 +53,23 @@
             ">(",
             "Ljp/co/sony/mc/camera/setting/SettingsBase;",
             "Ljp/co/sony/mc/camera/setting/SettingKey$Key<",
-            "TT;>;)[TT;"
+            "TT;>;TT;",
+            "Ljava/util/Map<",
+            "Ljp/co/sony/mc/camera/setting/CameraProSettingChangedListener;",
+            "Landroid/os/Handler;",
+            ">;)Z"
         }
     .end annotation
 
-    .line 1987
+    .line 2209
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1988
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCapturingMode(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    .line 2210
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingOrientation;
 
-    move-result-object p0
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetAutoFramingOrientation(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingOrientation;)Z
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/configuration/parameters/Flash;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)[Ljp/co/sony/mc/camera/configuration/parameters/Flash;
+    move-result p0
 
-    move-result-object p0
-
-    check-cast p0, [Ljava/lang/Object;
-
-    return-object p0
+    return p0
 .end method

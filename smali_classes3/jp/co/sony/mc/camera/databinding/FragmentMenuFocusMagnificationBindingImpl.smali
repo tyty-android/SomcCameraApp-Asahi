@@ -24,21 +24,21 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentMenuFocusMagnificationBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0904bd
+    const v1, 0x7f0904bb
 
     const/4 v2, 0x2
 
     .line 17
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090161
+    const v1, 0x7f090167
 
     const/4 v2, 0x3
 
     .line 18
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0901f2
+    const v1, 0x7f0901f5
 
     const/4 v2, 0x4
 
@@ -50,6 +50,16 @@
 
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root"
+        }
+    .end annotation
 
     .line 28
     sget-object v0, Ljp/co/sony/mc/camera/databinding/FragmentMenuFocusMagnificationBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -69,6 +79,18 @@
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root",
+            "bindings"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -149,6 +171,17 @@
 
 .method private onChangeFocusMagnificationUiStateIsCloseButtonEnabled(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "FocusMagnificationUiStateIsCloseButtonEnabled",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -365,6 +398,18 @@
 
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "localFieldId",
+            "object",
+            "fieldId"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -385,6 +430,14 @@
 
 .method public setFocusMagnificationUiState(Ljp/co/sony/mc/camera/view/uistate/FocusMagnificationUiState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "FocusMagnificationUiState"
+        }
+    .end annotation
 
     .line 76
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentMenuFocusMagnificationBindingImpl;->mFocusMagnificationUiState:Ljp/co/sony/mc/camera/view/uistate/FocusMagnificationUiState;
@@ -407,7 +460,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0xc
+    const/16 p1, 0xf
 
     .line 80
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentMenuFocusMagnificationBindingImpl;->notifyPropertyChanged(I)V
@@ -431,8 +484,18 @@
 
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "variableId",
+            "variable"
+        }
+    .end annotation
 
-    const/16 v0, 0xc
+    const/16 v0, 0xf
 
     if-ne v0, p1, :cond_0
 

@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/graph/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<N:",
@@ -18,6 +21,17 @@
 
 # virtual methods
 .method public abstract addPredecessor(Ljava/lang/Object;Ljava/lang/Object;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "node",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;TV;)V"
@@ -26,10 +40,24 @@
 .end method
 
 .method public abstract addSuccessor(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "node",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;TV;)TV;"
         }
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end method
 
@@ -44,6 +72,15 @@
 .end method
 
 .method public abstract incidentEdgeIterator(Ljava/lang/Object;)Ljava/util/Iterator;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "thisNode"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)",
@@ -65,6 +102,15 @@
 .end method
 
 .method public abstract removePredecessor(Ljava/lang/Object;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)V"
@@ -73,10 +119,22 @@
 .end method
 
 .method public abstract removeSuccessor(Ljava/lang/Object;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)TV;"
         }
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end method
 
@@ -91,12 +149,21 @@
 .end method
 
 .method public abstract value(Ljava/lang/Object;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)TV;"
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end method

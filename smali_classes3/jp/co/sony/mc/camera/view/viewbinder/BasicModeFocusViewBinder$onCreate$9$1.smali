@@ -51,7 +51,7 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeFocusViewBinder$onCreate$9$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicModeFocusViewBinder;
 
-    .line 266
+    .line 269
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -62,7 +62,7 @@
 .method public onGlobalLayout()V
     .locals 2
 
-    .line 268
+    .line 271
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeFocusViewBinder$onCreate$9$1;->$focusedView:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
@@ -75,7 +75,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->removeOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
-    .line 269
+    .line 272
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeFocusViewBinder$onCreate$9$1;->$focusedView:Landroid/view/View;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeFocusViewBinder$onCreate$9$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicModeFocusViewBinder;
@@ -92,7 +92,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 270
+    .line 273
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeFocusViewBinder$onCreate$9$1;->$focusedView:Landroid/view/View;
 
     const/16 v0, 0x8
@@ -101,7 +101,7 @@
 
     goto :goto_0
 
-    .line 274
+    .line 277
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeFocusViewBinder$onCreate$9$1;->$focusedView:Landroid/view/View;
 

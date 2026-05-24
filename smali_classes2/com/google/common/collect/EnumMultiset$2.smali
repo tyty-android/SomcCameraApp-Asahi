@@ -30,8 +30,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/EnumMultiset;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 259
+    .line 264
     iput-object p1, p0, Lcom/google/common/collect/EnumMultiset$2;->this$0:Lcom/google/common/collect/EnumMultiset;
 
     invoke-direct {p0, p1}, Lcom/google/common/collect/EnumMultiset$Itr;-><init>(Lcom/google/common/collect/EnumMultiset;)V
@@ -43,6 +51,15 @@
 # virtual methods
 .method output(I)Lcom/google/common/collect/Multiset$Entry;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -51,7 +68,7 @@
         }
     .end annotation
 
-    .line 262
+    .line 267
     new-instance v0, Lcom/google/common/collect/EnumMultiset$2$1;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/EnumMultiset$2$1;-><init>(Lcom/google/common/collect/EnumMultiset$2;I)V
@@ -61,8 +78,16 @@
 
 .method bridge synthetic output(I)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
-    .line 259
+    .line 264
     invoke-virtual {p0, p1}, Lcom/google/common/collect/EnumMultiset$2;->output(I)Lcom/google/common/collect/Multiset$Entry;
 
     move-result-object p0

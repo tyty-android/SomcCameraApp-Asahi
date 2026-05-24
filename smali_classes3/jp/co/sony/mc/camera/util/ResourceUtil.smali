@@ -23,6 +23,16 @@
 
 .method public static getApplicationLabel(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "packageName"
+        }
+    .end annotation
 
     .line 174
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -66,6 +76,16 @@
 
 .method public static getBoolean(Landroid/content/Context;I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "id"
+        }
+    .end annotation
 
     .line 72
     const-string v0, "com.sonymobile.cameracommon"
@@ -79,6 +99,18 @@
 
 .method public static getBoolean(Landroid/content/Context;Ljava/lang/String;I)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "packageName",
+            "id"
+        }
+    .end annotation
 
     .line 76
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -118,6 +150,16 @@
 
 .method public static getColorStateList(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "id"
+        }
+    .end annotation
 
     .line 159
     const-string v0, "com.sonymobile.cameracommon"
@@ -131,6 +173,18 @@
 
 .method public static getColorStateList(Landroid/content/Context;Ljava/lang/String;I)Landroid/content/res/ColorStateList;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "packageName",
+            "id"
+        }
+    .end annotation
 
     .line 163
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -172,6 +226,16 @@
 
 .method public static getDimension(Landroid/content/Context;I)F
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "id"
+        }
+    .end annotation
 
     .line 144
     const-string v0, "com.sonymobile.cameracommon"
@@ -185,6 +249,18 @@
 
 .method public static getDimension(Landroid/content/Context;Ljava/lang/String;I)F
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "packageName",
+            "id"
+        }
+    .end annotation
 
     .line 148
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -224,6 +300,16 @@
 
 .method public static getDimensionPixelOffset(Landroid/content/Context;I)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "id"
+        }
+    .end annotation
 
     .line 117
     const-string v0, "com.sonymobile.cameracommon"
@@ -237,6 +323,18 @@
 
 .method public static getDimensionPixelOffset(Landroid/content/Context;Ljava/lang/String;I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "packageName",
+            "id"
+        }
+    .end annotation
 
     .line 121
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -276,6 +374,16 @@
 
 .method public static getDimensionPixelSize(Landroid/content/Context;I)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "id"
+        }
+    .end annotation
 
     .line 102
     const-string v0, "com.sonymobile.cameracommon"
@@ -289,6 +397,18 @@
 
 .method public static getDimensionPixelSize(Landroid/content/Context;Ljava/lang/String;I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "packageName",
+            "id"
+        }
+    .end annotation
 
     .line 106
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -328,6 +448,16 @@
 
 .method public static getDrawable(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "id"
+        }
+    .end annotation
 
     .line 87
     const-string v0, "com.sonymobile.cameracommon"
@@ -341,6 +471,18 @@
 
 .method public static getDrawable(Landroid/content/Context;Ljava/lang/String;I)Landroid/graphics/drawable/Drawable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "packageName",
+            "id"
+        }
+    .end annotation
 
     .line 91
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -382,6 +524,16 @@
 
 .method public static getFloat(Landroid/content/Context;I)F
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "id"
+        }
+    .end annotation
 
     .line 68
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -405,6 +557,16 @@
 
 .method public static getInteger(Landroid/content/Context;I)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "id"
+        }
+    .end annotation
 
     .line 53
     const-string v0, "com.sonymobile.cameracommon"
@@ -418,6 +580,18 @@
 
 .method public static getInteger(Landroid/content/Context;Ljava/lang/String;I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "packageName",
+            "id"
+        }
+    .end annotation
 
     .line 57
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -457,6 +631,18 @@
 
 .method public static getPixelFromRate(Landroid/content/Context;II)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "id",
+            "base"
+        }
+    .end annotation
 
     int-to-float p2, p2
 
@@ -478,6 +664,16 @@
 
 .method public static getString(Landroid/content/Context;I)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "id"
+        }
+    .end annotation
 
     const/4 v0, -0x1
 
@@ -502,6 +698,18 @@
 
 .method public static getString(Landroid/content/Context;Ljava/lang/String;I)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "packageName",
+            "id"
+        }
+    .end annotation
 
     .line 41
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;

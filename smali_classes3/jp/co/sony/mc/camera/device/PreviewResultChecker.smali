@@ -50,6 +50,18 @@
 
 .method public constructor <init>(Landroid/os/Handler;Ljp/co/sony/mc/camera/device/CaptureResultNotifier$PreviewResultCallback;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "handler",
+            "callback",
+            "cameraId"
+        }
+    .end annotation
 
     .line 43
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/device/CaptureResultCheckerBase;-><init>(Landroid/os/Handler;)V
@@ -293,6 +305,14 @@
 
 .method private checkAperture(Ljp/co/sony/mc/camera/device/CaptureResultHolder;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "resultHolder"
+        }
+    .end annotation
 
     .line 123
     sget-object v0, Landroid/hardware/camera2/CaptureResult;->LENS_APERTURE:Landroid/hardware/camera2/CaptureResult$Key;
@@ -346,6 +366,14 @@
 
 .method private checkHdrState(Ljp/co/sony/mc/camera/device/CaptureResultHolder;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "resultHolder"
+        }
+    .end annotation
 
     .line 140
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/device/PreviewResultChecker;->mIsStillHdrStateAvailable:Z
@@ -415,6 +443,14 @@
 
 .method private checkSsIsoEv(Ljp/co/sony/mc/camera/device/CaptureResultHolder;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "resultHolder"
+        }
+    .end annotation
 
     .line 87
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/device/PreviewResultChecker;->mIsExposureTimeHintAvailable:Z
@@ -538,6 +574,16 @@
 # virtual methods
 .method public checkOnCompleted(Landroid/hardware/camera2/CaptureRequest;Ljp/co/sony/mc/camera/device/CaptureResultHolder;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "resultHolder"
+        }
+    .end annotation
 
     .line 68
     invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/device/PreviewResultChecker;->checkSsIsoEv(Ljp/co/sony/mc/camera/device/CaptureResultHolder;)V

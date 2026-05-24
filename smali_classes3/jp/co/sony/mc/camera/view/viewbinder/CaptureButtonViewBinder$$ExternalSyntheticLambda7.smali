@@ -32,7 +32,7 @@
 
     check-cast p1, Ljava/lang/Boolean;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;->$r8$lambda$IfoCxUXhrwSeCuU8xgzd6m-bV5A(Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;->$r8$lambda$FcawnfsGn5JjevXIq6yO6efLeGM(Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
 
     move-result-object p0
 

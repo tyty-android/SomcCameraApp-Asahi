@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<K:",
@@ -20,6 +23,15 @@
 # direct methods
 .method constructor <init>(Ljava/util/SortedMap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "map"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -30,7 +42,7 @@
         }
     .end annotation
 
-    .line 37
+    .line 41
     invoke-direct {p0, p1}, Lcom/google/common/collect/AbstractSortedSetMultimap;-><init>(Ljava/util/Map;)V
 
     return-void
@@ -41,7 +53,7 @@
 .method public bridge synthetic asMap()Ljava/util/Map;
     .locals 0
 
-    .line 33
+    .line 34
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractSortedKeySortedSetMultimap;->asMap()Ljava/util/SortedMap;
 
     move-result-object p0
@@ -61,7 +73,7 @@
         }
     .end annotation
 
-    .line 42
+    .line 46
     invoke-super {p0}, Lcom/google/common/collect/AbstractSortedSetMultimap;->asMap()Ljava/util/Map;
 
     move-result-object p0
@@ -74,7 +86,7 @@
 .method bridge synthetic backingMap()Ljava/util/Map;
     .locals 0
 
-    .line 33
+    .line 34
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractSortedKeySortedSetMultimap;->backingMap()Ljava/util/SortedMap;
 
     move-result-object p0
@@ -94,7 +106,7 @@
         }
     .end annotation
 
-    .line 47
+    .line 51
     invoke-super {p0}, Lcom/google/common/collect/AbstractSortedSetMultimap;->backingMap()Ljava/util/Map;
 
     move-result-object p0
@@ -114,7 +126,7 @@
         }
     .end annotation
 
-    .line 57
+    .line 61
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractSortedKeySortedSetMultimap;->createMaybeNavigableKeySet()Ljava/util/Set;
 
     move-result-object p0
@@ -125,7 +137,7 @@
 .method public bridge synthetic keySet()Ljava/util/Set;
     .locals 0
 
-    .line 33
+    .line 34
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractSortedKeySortedSetMultimap;->keySet()Ljava/util/SortedSet;
 
     move-result-object p0
@@ -143,7 +155,7 @@
         }
     .end annotation
 
-    .line 52
+    .line 56
     invoke-super {p0}, Lcom/google/common/collect/AbstractSortedSetMultimap;->keySet()Ljava/util/Set;
 
     move-result-object p0

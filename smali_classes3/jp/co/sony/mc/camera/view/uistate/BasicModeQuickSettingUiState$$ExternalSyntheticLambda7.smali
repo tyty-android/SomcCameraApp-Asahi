@@ -3,68 +3,44 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function4;
-
-
-# instance fields
-.field public final synthetic f$0:Z
-
-.field public final synthetic f$1:Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;
-
-.field public final synthetic f$2:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemType;
-
-.field public final synthetic f$3:Z
+.implements Lkotlin/jvm/functions/Function5;
 
 
 # direct methods
-.method public synthetic constructor <init>(ZLjp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemType;Z)V
+.method public synthetic constructor <init>()V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState$$ExternalSyntheticLambda7;->f$0:Z
-
-    iput-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState$$ExternalSyntheticLambda7;->f$1:Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;
-
-    iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState$$ExternalSyntheticLambda7;->f$2:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemType;
-
-    iput-boolean p4, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState$$ExternalSyntheticLambda7;->f$3:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 8
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 0
-    iget-boolean v0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState$$ExternalSyntheticLambda7;->f$0:Z
+    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState$$ExternalSyntheticLambda7;->f$1:Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;
+    check-cast p2, Ljava/lang/Boolean;
 
-    iget-object v2, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState$$ExternalSyntheticLambda7;->f$2:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemType;
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
-    iget-boolean v3, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState$$ExternalSyntheticLambda7;->f$3:Z
+    move-result p0
 
-    move-object v4, p1
+    check-cast p3, Ljava/lang/Boolean;
 
-    check-cast v4, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
+    check-cast p4, Ljava/lang/Boolean;
 
-    move-object v5, p2
+    check-cast p5, Ljava/lang/Boolean;
 
-    check-cast v5, Ljp/co/sony/mc/camera/setting/SettingAppearance;
+    invoke-static {p1, p0, p3, p4, p5}, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;->$r8$lambda$wLzaAM-AtrmiWdLibKVJyx5w2uc(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;ZLjava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;)Z
 
-    move-object v6, p3
+    move-result p0
 
-    check-cast v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    move-object v7, p4
-
-    check-cast v7, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    invoke-static/range {v0 .. v7}, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;->$r8$lambda$IX3tZfgA1s7c0C7-5FqHi90mUBQ(ZLjp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemType;ZLjp/co/sony/mc/camera/configuration/parameters/UserSettingValue;Ljp/co/sony/mc/camera/setting/SettingAppearance;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItem;
+    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0
 

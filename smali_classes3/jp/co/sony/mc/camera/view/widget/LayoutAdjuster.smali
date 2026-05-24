@@ -13,7 +13,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nZoomScrollerPresenter.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ZoomScrollerPresenter.kt\njp/co/sony/mc/camera/view/widget/LayoutAdjuster\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,1102:1\n1557#2:1103\n1628#2,3:1104\n1557#2:1107\n1628#2,3:1108\n1557#2:1111\n1628#2,3:1112\n1872#2,3:1116\n1557#2:1119\n1628#2,3:1120\n1557#2:1123\n1628#2,3:1124\n1557#2:1127\n1628#2,3:1128\n1567#2:1131\n1598#2,4:1132\n1567#2:1136\n1598#2,4:1137\n1#3:1115\n*S KotlinDebug\n*F\n+ 1 ZoomScrollerPresenter.kt\njp/co/sony/mc/camera/view/widget/LayoutAdjuster\n*L\n964#1:1103\n964#1:1104,3\n973#1:1107\n973#1:1108,3\n981#1:1111\n981#1:1112,3\n1008#1:1116,3\n1032#1:1119\n1032#1:1120,3\n1036#1:1123\n1036#1:1124,3\n1043#1:1127\n1043#1:1128,3\n1084#1:1131\n1084#1:1132,4\n1094#1:1136\n1094#1:1137,4\n*E\n"
+    value = "SMAP\nZoomScrollerPresenter.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ZoomScrollerPresenter.kt\njp/co/sony/mc/camera/view/widget/LayoutAdjuster\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,1309:1\n1557#2:1310\n1628#2,3:1311\n1557#2:1314\n1628#2,3:1315\n1557#2:1318\n1628#2,3:1319\n1872#2,3:1323\n1557#2:1326\n1628#2,3:1327\n1557#2:1330\n1628#2,3:1331\n1557#2:1334\n1628#2,3:1335\n1567#2:1338\n1598#2,4:1339\n1567#2:1343\n1598#2,4:1344\n1#3:1322\n*S KotlinDebug\n*F\n+ 1 ZoomScrollerPresenter.kt\njp/co/sony/mc/camera/view/widget/LayoutAdjuster\n*L\n1171#1:1310\n1171#1:1311,3\n1180#1:1314\n1180#1:1315,3\n1188#1:1318\n1188#1:1319,3\n1215#1:1323,3\n1239#1:1326\n1239#1:1327,3\n1243#1:1330\n1243#1:1331,3\n1250#1:1334\n1250#1:1335,3\n1291#1:1338\n1291#1:1339,4\n1301#1:1343\n1301#1:1344,4\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -290,33 +290,33 @@
 
     invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 880
+    .line 1087
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 882
+    .line 1089
     iput p2, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->minStep:I
 
-    .line 883
+    .line 1090
     iput p3, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->totalStep:I
 
-    .line 884
+    .line 1091
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->opticalRanges:Ljava/util/List;
 
-    .line 885
+    .line 1092
     iput-object p5, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->labels:Ljava/util/List;
 
-    const p2, 0x7f0700b4
+    const p2, 0x7f0700f7
 
-    .line 911
+    .line 1118
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimension(I)F
 
     move-result p2
 
     iput p2, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->circle:F
 
-    const p2, 0x7f07010a
+    const p2, 0x7f07014d
 
-    .line 912
+    .line 1119
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimension(I)F
 
     move-result p1
@@ -329,7 +329,7 @@
 
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->xPerStep:F
 
-    .line 914
+    .line 1121
     new-instance p1, Landroidx/lifecycle/MutableLiveData;
 
     const/4 p2, 0x0
@@ -342,7 +342,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->layoutRatio:Landroidx/lifecycle/MutableLiveData;
 
-    .line 916
+    .line 1123
     new-instance p3, Landroidx/lifecycle/MutableLiveData;
 
     const/4 p4, 0x1
@@ -355,14 +355,14 @@
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->zoomStep:Landroidx/lifecycle/MutableLiveData;
 
-    .line 918
+    .line 1125
     new-instance p4, Landroidx/lifecycle/MutableLiveData;
 
     invoke-direct {p4, p2}, Landroidx/lifecycle/MutableLiveData;-><init>(Ljava/lang/Object;)V
 
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->rootWidth:Landroidx/lifecycle/MutableLiveData;
 
-    .line 920
+    .line 1127
     new-instance p2, Landroidx/lifecycle/MutableLiveData;
 
     const/4 p5, 0x0
@@ -375,7 +375,7 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->scroll:Landroidx/lifecycle/MutableLiveData;
 
-    .line 922
+    .line 1129
     sget-object p2, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
     move-object p5, p3
@@ -394,7 +394,7 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->openLayout:Landroidx/lifecycle/LiveData;
 
-    .line 926
+    .line 1133
     check-cast p3, Landroidx/lifecycle/LiveData;
 
     invoke-static {p3}, Landroidx/lifecycle/Transformations;->distinctUntilChanged(Landroidx/lifecycle/LiveData;)Landroidx/lifecycle/LiveData;
@@ -411,7 +411,7 @@
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->circleCount:Landroidx/lifecycle/LiveData;
 
-    .line 927
+    .line 1134
     invoke-static {p3}, Landroidx/lifecycle/Transformations;->distinctUntilChanged(Landroidx/lifecycle/LiveData;)Landroidx/lifecycle/LiveData;
 
     move-result-object p3
@@ -426,27 +426,27 @@
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->closeResult:Landroidx/lifecycle/LiveData;
 
-    .line 929
+    .line 1136
     sget-object p4, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 930
+    .line 1137
     invoke-static {p2}, Landroidx/lifecycle/Transformations;->distinctUntilChanged(Landroidx/lifecycle/LiveData;)Landroidx/lifecycle/LiveData;
 
     move-result-object p2
 
-    .line 931
+    .line 1138
     invoke-static {p3}, Landroidx/lifecycle/Transformations;->distinctUntilChanged(Landroidx/lifecycle/LiveData;)Landroidx/lifecycle/LiveData;
 
     move-result-object p3
 
-    .line 932
+    .line 1139
     check-cast p1, Landroidx/lifecycle/LiveData;
 
     invoke-static {p1}, Landroidx/lifecycle/Transformations;->distinctUntilChanged(Landroidx/lifecycle/LiveData;)Landroidx/lifecycle/LiveData;
 
     move-result-object p1
 
-    .line 929
+    .line 1136
     new-instance p5, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$$ExternalSyntheticLambda3;
 
     invoke-direct {p5, p0}, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$$ExternalSyntheticLambda3;-><init>(Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;)V
@@ -475,7 +475,7 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 934
+    .line 1141
     invoke-static {p3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-virtual {p3}, Ljava/lang/Float;->floatValue()F
@@ -496,7 +496,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 926
+    .line 1133
     invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
@@ -521,7 +521,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 927
+    .line 1134
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->getCloseLayout(Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$CircleInfo;)Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;
 
     move-result-object p0
@@ -532,7 +532,7 @@
 .method private final countCircle(I)Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$CircleInfo;
     .locals 8
 
-    .line 1007
+    .line 1214
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->opticalRanges:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -563,12 +563,12 @@
     :cond_0
     check-cast v1, Ljava/util/List;
 
-    .line 1008
+    .line 1215
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->opticalRanges:Ljava/util/List;
 
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 1117
+    .line 1324
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -597,19 +597,19 @@
     :cond_1
     check-cast v4, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel;
 
-    .line 1009
+    .line 1216
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v6
 
     invoke-interface {v1, v3, v6}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
-    .line 1012
+    .line 1219
     instance-of v3, v4, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;
 
     if-eqz v3, :cond_2
 
-    .line 1013
+    .line 1220
     move-object v6, v4
 
     check-cast v6, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;
@@ -624,13 +624,13 @@
 
     goto :goto_2
 
-    .line 1016
+    .line 1223
     :cond_2
     instance-of v6, v4, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;
 
     if-eqz v6, :cond_7
 
-    .line 1017
+    .line 1224
     move-object v6, v4
 
     check-cast v6, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;
@@ -649,7 +649,7 @@
 
     move v0, v2
 
-    .line 1018
+    .line 1225
     :cond_3
     invoke-virtual {v6}, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;->getMaxStep()I
 
@@ -667,7 +667,7 @@
 
     goto :goto_3
 
-    .line 1024
+    .line 1231
     :cond_5
     instance-of v3, v4, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;
 
@@ -682,7 +682,7 @@
 
     goto :goto_1
 
-    .line 1022
+    .line 1229
     :cond_6
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
@@ -690,7 +690,7 @@
 
     throw p0
 
-    .line 1011
+    .line 1218
     :cond_7
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
@@ -698,7 +698,7 @@
 
     throw p0
 
-    .line 1027
+    .line 1234
     :cond_8
     new-instance p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$CircleInfo;
 
@@ -712,14 +712,14 @@
 
     move-object/from16 v0, p0
 
-    .line 1032
+    .line 1239
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$CircleInfo;->getIndexForRanges()Ljava/util/List;
 
     move-result-object v1
 
     check-cast v1, Ljava/lang/Iterable;
 
-    .line 1119
+    .line 1326
     new-instance v2, Ljava/util/ArrayList;
 
     const/16 v3, 0xa
@@ -732,7 +732,7 @@
 
     check-cast v2, Ljava/util/Collection;
 
-    .line 1120
+    .line 1327
     invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -748,7 +748,7 @@
 
     move-result-object v4
 
-    .line 1121
+    .line 1328
     check-cast v4, Ljava/lang/Number;
 
     invoke-virtual {v4}, Ljava/lang/Number;->intValue()I
@@ -757,7 +757,7 @@
 
     int-to-float v4, v4
 
-    .line 1033
+    .line 1240
     iget v5, v0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->circle:F
 
     mul-float/2addr v4, v5
@@ -766,23 +766,23 @@
 
     move-result-object v4
 
-    .line 1121
+    .line 1328
     invoke-interface {v2, v4}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 1122
+    .line 1329
     :cond_0
     move-object v12, v2
 
     check-cast v12, Ljava/util/List;
 
-    .line 1036
+    .line 1243
     iget-object v1, v0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->opticalRanges:Ljava/util/List;
 
     check-cast v1, Ljava/lang/Iterable;
 
-    .line 1123
+    .line 1330
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-static {v1, v3}, Lkotlin/collections/CollectionsKt;->collectionSizeOrDefault(Ljava/lang/Iterable;I)I
@@ -793,7 +793,7 @@
 
     check-cast v2, Ljava/util/Collection;
 
-    .line 1124
+    .line 1331
     invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -811,10 +811,10 @@
 
     move-result-object v4
 
-    .line 1125
+    .line 1332
     check-cast v4, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel;
 
-    .line 1038
+    .line 1245
     instance-of v6, v4, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;
 
     if-eqz v6, :cond_1
@@ -823,7 +823,7 @@
 
     goto :goto_2
 
-    .line 1039
+    .line 1246
     :cond_1
     instance-of v4, v4, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;
 
@@ -839,13 +839,13 @@
 
     move-result-object v4
 
-    .line 1125
+    .line 1332
     :goto_2
     invoke-interface {v2, v4}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 1037
+    .line 1244
     :cond_2
     new-instance v0, Lkotlin/NoWhenBranchMatchedException;
 
@@ -853,18 +853,18 @@
 
     throw v0
 
-    .line 1126
+    .line 1333
     :cond_3
     move-object v13, v2
 
     check-cast v13, Ljava/util/List;
 
-    .line 1043
+    .line 1250
     iget-object v1, v0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->labels:Ljava/util/List;
 
     check-cast v1, Ljava/lang/Iterable;
 
-    .line 1127
+    .line 1334
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-static {v1, v3}, Lkotlin/collections/CollectionsKt;->collectionSizeOrDefault(Ljava/lang/Iterable;I)I
@@ -875,7 +875,7 @@
 
     check-cast v2, Ljava/util/Collection;
 
-    .line 1128
+    .line 1335
     invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -891,28 +891,28 @@
 
     move-result-object v3
 
-    .line 1129
+    .line 1336
     check-cast v3, Ljp/co/sony/mc/camera/view/uistate/ZoomLabel;
 
     const/4 v3, 0x0
 
-    .line 1043
+    .line 1250
     invoke-static {v3}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v3
 
-    .line 1129
+    .line 1336
     invoke-interface {v2, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_3
 
-    .line 1130
+    .line 1337
     :cond_4
     move-object v14, v2
 
     check-cast v14, Ljava/util/List;
 
-    .line 1045
+    .line 1252
     iget v1, v0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->circle:F
 
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$CircleInfo;->getTotal()I
@@ -929,14 +929,14 @@
 
     div-float/2addr v1, v2
 
-    .line 1049
+    .line 1256
     iget v3, v0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->circle:F
 
     div-float/2addr v3, v2
 
     add-float/2addr v1, v3
 
-    .line 1050
+    .line 1257
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$CircleInfo;->getActiveIndex()I
 
     move-result v3
@@ -949,7 +949,7 @@
 
     add-float v15, v1, v3
 
-    .line 1052
+    .line 1259
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;
 
     const/4 v11, 0x0
@@ -972,12 +972,12 @@
 .method private final getOpenLayout(F)Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;
     .locals 12
 
-    .line 960
+    .line 1167
     iget v0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->circle:F
 
     sub-float v4, p1, v0
 
-    .line 962
+    .line 1169
     iget v0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->xPerStep:F
 
     iget v1, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->totalStep:I
@@ -986,12 +986,12 @@
 
     mul-float v7, v0, v1
 
-    .line 964
+    .line 1171
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->opticalRanges:Ljava/util/List;
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 1103
+    .line 1310
     new-instance v1, Ljava/util/ArrayList;
 
     const/16 v2, 0xa
@@ -1004,7 +1004,7 @@
 
     check-cast v1, Ljava/util/Collection;
 
-    .line 1104
+    .line 1311
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -1022,10 +1022,10 @@
 
     move-result-object v3
 
-    .line 1105
+    .line 1312
     check-cast v3, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel;
 
-    .line 966
+    .line 1173
     instance-of v6, v3, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;
 
     if-eqz v6, :cond_0
@@ -1038,7 +1038,7 @@
 
     goto :goto_1
 
-    .line 967
+    .line 1174
     :cond_0
     instance-of v6, v3, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;
 
@@ -1050,7 +1050,7 @@
 
     move-result v3
 
-    .line 970
+    .line 1177
     :goto_1
     iget v6, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->minStep:I
 
@@ -1078,12 +1078,12 @@
 
     move-result-object v3
 
-    .line 1105
+    .line 1312
     invoke-interface {v1, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 965
+    .line 1172
     :cond_1
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
@@ -1091,18 +1091,18 @@
 
     throw p0
 
-    .line 1106
+    .line 1313
     :cond_2
     move-object v8, v1
 
     check-cast v8, Ljava/util/List;
 
-    .line 973
+    .line 1180
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->opticalRanges:Ljava/util/List;
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 1107
+    .line 1314
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-static {v0, v2}, Lkotlin/collections/CollectionsKt;->collectionSizeOrDefault(Ljava/lang/Iterable;I)I
@@ -1113,7 +1113,7 @@
 
     check-cast v1, Ljava/util/Collection;
 
-    .line 1108
+    .line 1315
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -1129,10 +1129,10 @@
 
     move-result-object v3
 
-    .line 1109
+    .line 1316
     check-cast v3, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel;
 
-    .line 975
+    .line 1182
     instance-of v6, v3, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;
 
     if-eqz v6, :cond_3
@@ -1141,13 +1141,13 @@
 
     goto :goto_3
 
-    .line 976
+    .line 1183
     :cond_3
     instance-of v6, v3, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;
 
     if-eqz v6, :cond_4
 
-    .line 977
+    .line 1184
     check-cast v3, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;
 
     invoke-virtual {v3}, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;->getMaxStep()I
@@ -1174,13 +1174,13 @@
 
     move-result-object v3
 
-    .line 1109
+    .line 1316
     :goto_3
     invoke-interface {v1, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_2
 
-    .line 974
+    .line 1181
     :cond_4
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
@@ -1188,18 +1188,18 @@
 
     throw p0
 
-    .line 1110
+    .line 1317
     :cond_5
     move-object v9, v1
 
     check-cast v9, Ljava/util/List;
 
-    .line 981
+    .line 1188
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->labels:Ljava/util/List;
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 1111
+    .line 1318
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-static {v0, v2}, Lkotlin/collections/CollectionsKt;->collectionSizeOrDefault(Ljava/lang/Iterable;I)I
@@ -1210,7 +1210,7 @@
 
     check-cast v1, Ljava/util/Collection;
 
-    .line 1112
+    .line 1319
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -1226,10 +1226,10 @@
 
     move-result-object v2
 
-    .line 1113
+    .line 1320
     check-cast v2, Ljp/co/sony/mc/camera/view/uistate/ZoomLabel;
 
-    .line 982
+    .line 1189
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/view/uistate/ZoomLabel;->getStep()I
 
     move-result v2
@@ -1260,18 +1260,18 @@
 
     move-result-object v2
 
-    .line 1113
+    .line 1320
     invoke-interface {v1, v2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_4
 
-    .line 1114
+    .line 1321
     :cond_6
     move-object v10, v1
 
     check-cast v10, Ljava/util/List;
 
-    .line 985
+    .line 1192
     new-instance p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;
 
     add-float v0, v4, v7
@@ -1304,7 +1304,7 @@
 
     sub-float/2addr v1, v0
 
-    .line 1077
+    .line 1284
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->getOpenRatio()F
 
     move-result v2
@@ -1319,7 +1319,7 @@
 
     add-float v5, v2, v3
 
-    .line 1078
+    .line 1285
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->getBackgroundWidth()F
 
     move-result v2
@@ -1334,7 +1334,7 @@
 
     add-float v6, v2, v3
 
-    .line 1079
+    .line 1286
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->getScrollViewWidth()F
 
     move-result v2
@@ -1349,7 +1349,7 @@
 
     add-float v7, v2, v3
 
-    .line 1080
+    .line 1287
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->getScrollContentWidth()F
 
     move-result v2
@@ -1364,7 +1364,7 @@
 
     add-float v8, v2, v3
 
-    .line 1081
+    .line 1288
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->getLineTranslationX()F
 
     move-result v2
@@ -1379,7 +1379,7 @@
 
     add-float v9, v2, v3
 
-    .line 1082
+    .line 1289
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->getLineWidth()F
 
     move-result v2
@@ -1394,14 +1394,14 @@
 
     add-float v10, v2, v3
 
-    .line 1084
+    .line 1291
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->getOpticalRangeTranslationXList()Ljava/util/List;
 
     move-result-object v2
 
     check-cast v2, Ljava/lang/Iterable;
 
-    .line 1131
+    .line 1338
     new-instance v3, Ljava/util/ArrayList;
 
     const/16 v4, 0xa
@@ -1414,7 +1414,7 @@
 
     check-cast v3, Ljava/util/Collection;
 
-    .line 1133
+    .line 1340
     invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -1438,7 +1438,7 @@
 
     if-gez v12, :cond_0
 
-    .line 1134
+    .line 1341
     invoke-static {}, Lkotlin/collections/CollectionsKt;->throwIndexOverflow()V
 
     :cond_0
@@ -1450,7 +1450,7 @@
 
     mul-float/2addr v13, v0
 
-    .line 1085
+    .line 1292
     invoke-virtual/range {p2 .. p2}, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->getOpticalRangeTranslationXList()Ljava/util/List;
 
     move-result-object v15
@@ -1473,45 +1473,45 @@
 
     move-result-object v12
 
-    .line 1134
+    .line 1341
     invoke-interface {v3, v12}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     move v12, v14
 
     goto :goto_0
 
-    .line 1135
+    .line 1342
     :cond_1
     move-object v2, v3
 
     check-cast v2, Ljava/util/List;
 
-    .line 1087
+    .line 1294
     sget-object v3, Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper;->Companion:Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper$Companion;
 
-    .line 1088
+    .line 1295
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->getOpticalRangeWidthList()Ljava/util/List;
 
     move-result-object v12
 
-    .line 1089
+    .line 1296
     invoke-virtual/range {p2 .. p2}, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->getOpticalRangeWidthList()Ljava/util/List;
 
     move-result-object v13
 
-    .line 1087
+    .line 1294
     invoke-virtual {v3, v12, v13, v0, v1}, Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper$Companion;->mergeFloatList(Ljava/util/List;Ljava/util/List;FF)Ljava/util/List;
 
     move-result-object v12
 
-    .line 1094
+    .line 1301
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->getLabelTranslationXList()Ljava/util/List;
 
     move-result-object v3
 
     check-cast v3, Ljava/lang/Iterable;
 
-    .line 1136
+    .line 1343
     new-instance v13, Ljava/util/ArrayList;
 
     invoke-static {v3, v4}, Lkotlin/collections/CollectionsKt;->collectionSizeOrDefault(Ljava/lang/Iterable;I)I
@@ -1522,7 +1522,7 @@
 
     check-cast v13, Ljava/util/Collection;
 
-    .line 1138
+    .line 1345
     invoke-interface {v3}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v3
@@ -1542,7 +1542,7 @@
 
     if-gez v11, :cond_2
 
-    .line 1139
+    .line 1346
     invoke-static {}, Lkotlin/collections/CollectionsKt;->throwIndexOverflow()V
 
     :cond_2
@@ -1554,7 +1554,7 @@
 
     mul-float/2addr v4, v0
 
-    .line 1095
+    .line 1302
     invoke-virtual/range {p2 .. p2}, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->getLabelTranslationXList()Ljava/util/List;
 
     move-result-object v15
@@ -1577,18 +1577,18 @@
 
     move-result-object v4
 
-    .line 1139
+    .line 1346
     invoke-interface {v13, v4}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     move v11, v14
 
     goto :goto_1
 
-    .line 1140
+    .line 1347
     :cond_3
     check-cast v13, Ljava/util/List;
 
-    .line 1098
+    .line 1305
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->getMainCircleTranslationX()F
 
     move-result v3
@@ -1603,7 +1603,7 @@
 
     add-float v14, v3, v0
 
-    .line 1076
+    .line 1283
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;
 
     move-object v4, v0
@@ -1622,7 +1622,7 @@
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 923
+    .line 1130
     invoke-static {p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-virtual {p2}, Ljava/lang/Float;->floatValue()F
@@ -1641,7 +1641,7 @@
 .method public final calculateScrollForStep(I)Ljava/lang/Integer;
     .locals 2
 
-    .line 954
+    .line 1161
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->openLayout:Landroidx/lifecycle/LiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
@@ -1656,7 +1656,7 @@
 
     move-result v0
 
-    .line 955
+    .line 1162
     iget v1, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->minStep:I
 
     sub-int/2addr p1, v1
@@ -1690,7 +1690,7 @@
 .method public final calculateStepForScroll(I)Ljava/lang/Integer;
     .locals 2
 
-    .line 938
+    .line 1145
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->openLayout:Landroidx/lifecycle/LiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
@@ -1709,7 +1709,7 @@
 
     if-lt p1, v1, :cond_0
 
-    .line 947
+    .line 1154
     iget p1, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->totalStep:I
 
     iget p0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->minStep:I
@@ -1727,7 +1727,7 @@
 
     div-float/2addr p1, v0
 
-    .line 949
+    .line 1156
     iget v0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->totalStep:I
 
     int-to-float v0, v0
@@ -1766,7 +1766,7 @@
         }
     .end annotation
 
-    .line 929
+    .line 1136
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->adjusted:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1783,7 +1783,7 @@
         }
     .end annotation
 
-    .line 926
+    .line 1133
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->circleCount:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1800,7 +1800,7 @@
         }
     .end annotation
 
-    .line 914
+    .line 1121
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->layoutRatio:Landroidx/lifecycle/MutableLiveData;
 
     return-object p0
@@ -1817,7 +1817,7 @@
         }
     .end annotation
 
-    .line 918
+    .line 1125
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->rootWidth:Landroidx/lifecycle/MutableLiveData;
 
     return-object p0
@@ -1834,7 +1834,7 @@
         }
     .end annotation
 
-    .line 920
+    .line 1127
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->scroll:Landroidx/lifecycle/MutableLiveData;
 
     return-object p0
@@ -1843,7 +1843,7 @@
 .method public final getXPerStep()F
     .locals 0
 
-    .line 912
+    .line 1119
     iget p0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->xPerStep:F
 
     return p0
@@ -1860,7 +1860,7 @@
         }
     .end annotation
 
-    .line 916
+    .line 1123
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster;->zoomStep:Landroidx/lifecycle/MutableLiveData;
 
     return-object p0

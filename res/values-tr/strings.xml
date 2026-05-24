@@ -82,6 +82,7 @@ Bildirimler ve iletişim kutuları göreceksiniz. Tümünde Eşle seçeneğini s
     <string name="call_notification_incoming_text">Gelen arama</string>
     <string name="call_notification_ongoing_text">Devam eden arama</string>
     <string name="call_notification_screening_text">Gelen arama süzülüyor</string>
+    <string name="camera_string_saving_process_hint_txt">Kaydediliyor... Lütfen kayıt tamamlanıncaya kadar bekleyin.</string>
     <string name="camera_strings_accept_privacy_policy_txt">Gizlilik Politikasını daha önce kabul ettiniz, ancak dilediğiniz zaman fikrinizi değiştirebilirsiniz.</string>
     <string name="camera_strings_accessibility_48_mega_pixel_txt">48 megapiksel</string>
     <string name="camera_strings_accessibility_adjust_bokeh_txt">"Bokeh'i ayarla"</string>
@@ -92,6 +93,27 @@ Bildirimler ve iletişim kutuları göreceksiniz. Tümünde Eşle seçeneğini s
     <string name="camera_strings_accessibility_adjust_framing_size_smaller_txt">Çerçeve boyutunu azalt</string>
     <string name="camera_strings_accessibility_adjust_framing_size_txt">Çerçeve boyutunu ayarla</string>
     <string name="camera_strings_accessibility_adjust_shutter_speed_txt">Deklanşör hızı</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_look_menu_txt">Kapat düğmesi. Tarz menüsünü kapatır.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_menu_txt">Özel menüyü kapat</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_suggests_txt">Önerilen ayarları kapat</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_menu_txt">Şu anda uygulanan Özel tarz. Ayar menüsünü açar.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_txt">Özel tarz. Özel menüde kayıtlı tarz, parlaklık ve renk ayarlarını uygular.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_tab_txt">Özel sekme. Özel menüde kayıtlı tarz, parlaklık ve renk ayarlarını uygular.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_button_txt">Özel düğme. Önerilen ayarlar uygulandığında daha fazla ayar yapmanızı sağlayan bir menü açılır.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_param_txt">%1$s, %2$s olarak ayarlandı</string>
+    <string name="camera_strings_accessibility_ai_suggestion_first_time_txt">AI Kamera Yardımcısı. Bu işlev sahneye göre renk gibi ayarları önerir.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_four_of_some_suggests_txt">Dördüncü önerilen ayar</string>
+    <string name="camera_strings_accessibility_ai_suggestion_look_menu_txt">"%1$s
+Yaratıcı görünüm menüsünü açar"</string>
+    <string name="camera_strings_accessibility_ai_suggestion_new_suggest_txt">Yeni önerilen ayarlar önerildi</string>
+    <string name="camera_strings_accessibility_ai_suggestion_one_of_some_suggests_txt">İlk önerilen ayar</string>
+    <string name="camera_strings_accessibility_ai_suggestion_open_suggests_txt">Önerilen ayarları genişlet</string>
+    <string name="camera_strings_accessibility_ai_suggestion_reset_to_default_txt">Öneri öncesi ayarlara sıfırla</string>
+    <string name="camera_strings_accessibility_ai_suggestion_selected_suggest_txt">Bu önerilen ayarlar uygulandı</string>
+    <string name="camera_strings_accessibility_ai_suggestion_suggest_lens_txt">Önerilen lens düğmesi. %1$sx önerilir.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_surface_of_some_suggests_txt">Önerilen ayarlar. Önerilen ayarları görüntülemek için sağdan sola kaydırın.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_three_of_some_suggests_txt">Üçüncü önerilen ayar</string>
+    <string name="camera_strings_accessibility_ai_suggestion_two_of_some_suggests_txt">İkinci önerilen ayar</string>
     <string name="camera_strings_accessibility_arrow_left_button_txt">Sol ok</string>
     <string name="camera_strings_accessibility_arrow_right_button_txt">Sağ ok</string>
     <string name="camera_strings_accessibility_audio_level_txt">Ses düzeyi seviyesi</string>
@@ -246,6 +268,45 @@ Bildirimler ve iletişim kutuları göreceksiniz. Tümünde Eşle seçeneğini s
     <string name="camera_strings_advanced_setting_geo_tag_title_txt">Konumu kaydet</string>
     <string name="camera_strings_ai_face_restore_description_txt">Yüz özelliklerinin daha net görülmesi için yüz netleştirme ile fotoğraf çekebilirsiniz</string>
     <string name="camera_strings_ai_face_restore_txt">Yüzleri netleştir</string>
+    <string name="camera_strings_ai_suggestion_introduce_hint_text_txt">[İpuçları] AI Kamera Yardımcısı</string>
+    <string name="camera_strings_aisuggestion_box_name1_txt">Özel</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_message_txt">Mevcut görünüm, parlaklık ve renk ayarlarını Özel tarz olarak kaydedin.</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_overwrite_message_txt">Bir tarz zaten Özel tarz altında kayıtlı. Üzerine yazılsın mı?</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_title_txt">Özel tarz olarak kaydet</string>
+    <string name="camera_strings_aisuggestion_box_title_txt">Özel</string>
+    <string name="camera_strings_aisuggestion_custom_params_contrast_txt">Kontrast</string>
+    <string name="camera_strings_aisuggestion_custom_params_ev_txt">Parlaklık</string>
+    <string name="camera_strings_aisuggestion_custom_params_register_txt">Kaydet</string>
+    <string name="camera_strings_aisuggestion_custom_params_saturation_txt">Doygunl.</string>
+    <string name="camera_strings_aisuggestion_custom_params_title_txt">Parlaklık/Renk</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbab_txt">Sıcaklık</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbgm_txt">Tonlama</string>
+    <string name="camera_strings_aisuggestion_customlook_register_instruction_txt">Kayıtlı özel tarzları istediğiniz zaman Özel tarz sekmesinden kullanabilirsiniz</string>
+    <string name="camera_strings_aisuggestion_description_txt">"AI otomatik olarak sahneyi tanımlar ve sağ altta yer alan mini önizleme kısmında optimize edilen ayarları önerir.
+Bu mini önizlemeye dokunursanız aşağıdaki ayarlar sahneye uyacak şekilde otomatik olarak ayarlanır:
+Tarz, Pozlama, Beyaz dengesi, Doygunluk, Kontrast, Bokeh
+*Bu işlev sadece Fotoğraf modunda kullanılabilir.
+*Deklanşör düğmesini basılı tutarak bir video kaydetmeye başladığınızda doygunluk, kontrast ve bokeh ayarları uygulanmaz."</string>
+    <string name="camera_strings_aisuggestion_guide_description1_txt">AI tarafından tanımlanan sahneye göre önerilen ayarlar sağ alttaki (yatay tutulduğunda sağ üsttedir) mini önizleme kısmında görüntülenir. Mini önizleme kısmına dokunarak bu ayarların tamamını anında uygulayabilirsiniz.</string>
+    <string name="camera_strings_aisuggestion_guide_description2_txt">Sahneye bağlı olarak belirli bir lens ayarı da önerilebilir. Bu durumda tercihleriniz doğrultusunda önerilen lens ayarını değiştirebilirsiniz.</string>
+    <string name="camera_strings_aisuggestion_guide_description3_txt">"Sağ alttaki (yatay tutulduğunda sağ üsttedir) mini önizleme kısmında sola kaydırarak alternatif ayar önerilerini görüntüleyebilirsiniz.
+Seçtiğiniz öneri tercih ettiğiniz ayar olarak kaydedilecek ve bir daha benzer bir manzarada çekim yaptığınızda önerilere eklenecek."</string>
+    <string name="camera_strings_aisuggestion_guide_description4_txt">İhtiyaç duyulmadığında önerileri gizlemek için [>] düğmesine dokunabilirsiniz. Yeni bir sahne tanımlandığında yeni ayar önerileri olduğunu göstermek için [&lt;] düğmesi aydınlanacaktır. Önerilere tekrar göz atmak için [&lt;] düğmesine dokunun.</string>
+    <string name="camera_strings_aisuggestion_guide_description5_txt">Önerilen ayarları seçtikten sonra ayar düğmesine dokunursanız parlaklık ve renk gibi ayarları daha ayrıntılı ayarlayabilirsiniz. Ayarlarınız cihaza kaydedilir ve benzer bir sahne bir kez daha algılandığında önerilen ayarlara uygulanır.</string>
+    <string name="camera_strings_aisuggestion_guide_description6_txt">"Önerilen ayarlar ve sizin yaptığınız ayarlar kaydedilebilir, bu şekilde aynı ayarlarla istediğiniz zaman fotoğraf çekmek için bunları yükleyebilirsiniz. Mevcut tarz listesine Özel tarz eklemek için [Kaydet]'e dokunun."</string>
+    <string name="camera_strings_aisuggestion_guide_entry_txt">AI Kamera Yardımcısını öğrenin</string>
+    <string name="camera_strings_aisuggestion_guide_title_txt">AI Kamera Yardımcısı nasıl kullanılır</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_message_txt">Renk, parlaklık ve tercih ettiğiniz ayarlar dahil olmak üzere tüm ayarlar varsayılana sıfırlansın mı?</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_title_txt">Parametreleri sıfırla</string>
+    <string name="camera_strings_aisuggestion_params_reset_txt">Parametreleri sıfırla</string>
+    <string name="camera_strings_aisuggestion_permitted_item_bokeh_txt">Bokeh</string>
+    <string name="camera_strings_aisuggestion_permitted_item_lens_txt">Lens</string>
+    <string name="camera_strings_aisuggestion_permitted_item_title_txt">Önerilere ekle</string>
+    <string name="camera_strings_aisuggestion_recommend_lens_ratio_txt">%1$s önerilir</string>
+    <string name="camera_strings_aisuggestion_return_to_default_txt">Geri Döndür</string>
+    <string name="camera_strings_aisuggestion_simple_video_instruction_txt">Basılı tutarak video kaydedilirken doygunluk, kontrast ve Bokeh ayarları farklı görünebilir.</string>
+    <string name="camera_strings_aisuggestion_txt">AI Kamera Yardımcısı</string>
+    <string name="camera_strings_aisuggestion_use_aissuggestion_txt">AI Kmr. Yard. Kullanma</string>
     <string name="camera_strings_anonymous_analytics_txt">Anonim analizler</string>
     <string name="camera_strings_application_name">Kamera</string>
     <string name="camera_strings_application_name_google_lens_txt">Google Lens</string>
@@ -421,6 +482,7 @@ Güvenlik:
     <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Wi-Fi ağına bağlanılamıyor</string>
     <string name="camera_strings_dialog_user_data_collection_txt">Aşağıdakileri kabul ederseniz Sony, özelleştirilmiş destek sağlamak, cihazları ve hizmetleri iyileştirmek için &lt;b>&lt;a href=#personal-data>kişisel bilgilerinizi&lt;/a>&lt;/b> toplayacaktır. Sony olarak verilerinizi &lt;b>&lt;a href=https://www.sonymobile.com/privacy/>Gizlilik Bildirimimize&lt;/a>&lt;/b> uygun olarak işleyeceğiz.</string>
     <string name="camera_strings_dialog_video_hdr_hlg_supported_short_description_txt">Bazı cihazlar/hizmetler, HDR içeriğinin orijinal renk ve parlaklığını yeniden üretemeyebilir. HDR içeriğinin keyfini çıkarırken lütfen HDR desteği sunan cihazları/hizmetleri kullanın.</string>
+    <string name="camera_strings_digital_tripod_hint_edge_txt">Kompozisyon kaydı. Kamerayı orijinal konuya çevirin.</string>
     <string name="camera_strings_digital_zoom_type_description_txt">"Bir dijital yaklaştırma ayarı seçin.
 
 Standart dijital yaklaştırma: Görüntü sensörü verilerine göre dijital işlemeyi kullanarak yaklaştırın.
@@ -484,6 +546,7 @@ Bunu değiştirmek için akışı durdurun, ardından Facebook uygulamasına gid
     <string name="camera_strings_fast_capturing_screen_locked_settings_txt">Ayarları açmak için ekran kilidini açın.</string>
     <string name="camera_strings_fast_capturing_screen_locked_streaming_txt">Akışa başlamak için ekranın kilidini açın.</string>
     <string name="camera_strings_fast_capturing_screen_locked_title_txt">Ekran kilitlendi</string>
+    <string name="camera_strings_feature_creative_look_custom_description_txt">Tarzlar ve parlaklık/renk ayarlarını kaydedebilirsiniz.</string>
     <string name="camera_strings_feature_creative_look_description_txt">"Bir \"görünümü\" tercih ederek görüntülerin (fotoğrafların veya filmlerin) son halini seçebilirsiniz.
 
 Yaratıcı görünüm, ön ayarlı 6 görünüm sunar. Görünümlerin her biri renk tonunun, doygunluğun, kontrastın, keskinliğin, parlaklığın ve diğer görüntü unsurlarının farklı bir kombinasyonu ile optimize edilir. Bu sayede, bu unsurların ideal dengesi ile görüntü işlemeyi ayarlayabilirsiniz."</string>
@@ -567,6 +630,7 @@ Takip edilecek konuya dokunun."</string>
     <string name="camera_strings_framing_orientation_description_txt">"Konuyu yatay veya dikey çerçeve ile kırpabilirsiniz.
 Kırpma doğrultusunu cihaz ile aynı doğrultuda kırpmak için [Otomatik] olarak ayarlayın."</string>
     <string name="camera_strings_framing_select_subject_to_track_txt">Pozisyonunu kilitlemek istediğiniz konu üzerine dokunun</string>
+    <string name="camera_strings_framing_setting_guide_title_txt">Oto. Çerçeveleme Hakkında</string>
     <string name="camera_strings_framing_setting_orientation_landscape_txt">Yatay</string>
     <string name="camera_strings_framing_setting_orientation_portrait_txt">Dikey</string>
     <string name="camera_strings_framing_setting_orientation_title_txt">Çerçeve doğrultusu</string>
@@ -574,6 +638,7 @@ Kırpma doğrultusunu cihaz ile aynı doğrultuda kırpmak için [Otomatik] olar
 Kırpılan kayıtlar Full HD çözünürlükle kaydedilir. Kırpılmayan kayıtlar 4K olarak kaydedilir."</string>
     <string name="camera_strings_framing_setting_save_original_video_off_txt">Tam ekran kaydı: Kapalı</string>
     <string name="camera_strings_framing_setting_save_original_video_title_txt">Tam ekran kaydı</string>
+    <string name="camera_strings_framing_setting_snapshot_description_txt">[Tam ekran kaydı] seçeneğinin açık veya kapalı olmasından bağımsız olarak video kaydedilirken alınan ekran görüntüleri tam erkan olarak kaydedilir.</string>
     <string name="camera_strings_geotagging_description_txt">Fotoğraf ve videolarınızı çekildikleri yerlerle kaydedin</string>
     <string name="camera_strings_geotagging_txt">Konumu kaydet</string>
     <string name="camera_strings_gimbal_mode_tab_label">AI Kamera Çalışması</string>
@@ -592,6 +657,7 @@ Bu şekilde örneğin koşu sırasında olduğu gibi kameranın sallandığı du
     <string name="camera_strings_gimbal_setting_assist_method_locking_hint_txt">Konu pozisyon kilidi: El ile</string>
     <string name="camera_strings_gimbal_setting_assist_method_locking_txt">El ile</string>
     <string name="camera_strings_gimbal_setting_assist_method_title_txt">Konu pozisyon kilidi</string>
+    <string name="camera_strings_gimbal_setting_guide_title_txt">AI Kamera Çalışması Hakkında</string>
     <string name="camera_strings_gridline_description_txt">Görüntülerin oluşturulmasında size yardımcı olması için ızgara çizgilerinin görüntülenip görüntülenmeyeceğini belirleyin</string>
     <string name="camera_strings_gridline_txt">Izgara çizgileri</string>
     <string name="camera_strings_hand_shutter_description_updated_txt">Avcunuzu ön kameraya doğru döndürerek zaman sayacının geri sayıma başlamasını sağlayabilirsiniz. Kolay algılanmasını için parmaklarınızı yukarı doğru kaldırın.</string>
@@ -727,6 +793,7 @@ Video kaydı yapılırken alınan ekran görüntüleri her zaman Standart dinami
     <string name="camera_strings_notification_channel_title_saving_process_txt">Kayıt işlemi</string>
     <string name="camera_strings_notification_text_saving_in_progress_txt">Lütfen kayıt işlemi bitene kadar bekleyin</string>
     <string name="camera_strings_notification_title_saving_in_progress_txt">Kayıt işlemi devam ediyor</string>
+    <string name="camera_strings_notify_saving_process_cannot_launch_app_by_hw_shutter_txt">Kaydetme işlemi sırasında deklanşör düğmesine basılması kamerayı başlatmayabilir</string>
     <string name="camera_strings_ok_txt">Tamam</string>
     <string name="camera_strings_peaking_color_blue_txt">Mavi</string>
     <string name="camera_strings_peaking_color_red_txt">Kırmızı</string>
@@ -735,6 +802,7 @@ Video kaydı yapılırken alınan ekran görüntüleri her zaman Standart dinami
     <string name="camera_strings_peaking_color_yellow_txt">Sarı</string>
     <string name="camera_strings_peaking_txt">Vurgulama</string>
     <string name="camera_strings_personal_data_txt">Kişisel bilgiler</string>
+    <string name="camera_strings_photopro_setting_guide_title_txt">Pro foto. Hakkında</string>
     <string name="camera_strings_privacy_policy_txt">Gizlilik politikası</string>
     <string name="camera_strings_pro_tips_computational_photo_description_txt">"P modundayken bile kamera çekim modunu otomatik olarak tanımlar ve bulanıklığı, gürültüyü, aşırı pozlamayı ve yetersiz pozlamayı azaltarak harika otomatik çekim yapar.
 Bunu kullanmayacaksanız Fn düğmesinden veya MENÜ'den kapatabilirsiniz."</string>
@@ -965,6 +1033,7 @@ Veri depolaması olarak SD kart kullanmaya devam ederseniz, hızlı bir SD kart 
     <string name="camera_strings_video_stabilization_description_sub_txt">Not: Yüksek kalitenin seçilmesi, cihaz sıcaklığındaki artış nedeniyle kayıt süresini kısaltabilir.</string>
     <string name="camera_strings_video_stabilization_description_txt">Xperia, Optical SteadyShot adı verilen ve eş zamanlı olarak optik görüntü sabitleme ile elektronik görüntü sabitlemeyi bir araya getiren benzersiz, karma bir sabitleme sistemine sahiptir. Hareket halinde kayıt yaparken bile sorunsuz görünen ve sallanmayan videolar sunar.</string>
     <string name="camera_strings_video_stabilization_high_quality_images_txt">Yüksek kalite</string>
+    <string name="camera_strings_videopro_setting_guide_title_txt">Pro video Hakkında</string>
     <string name="camera_strings_volume_distortion_correction_description_txt">Ultra geniş lensi kullanırken ekranın kenarında görüntülenen yüz bozukluğunu düzeltir. Bu durum arka planın bozuk görünmesine veya bakış açısının dar gibi algılanmasına neden olabilir.</string>
     <string name="camera_strings_volume_distortion_correction_front_description_txt">Ekranın kenarında görüntülenen yüz bozukluğunu düzeltir. Bu durum arka planın bozuk görünmesine veya bakış açısının dar gibi algılanmasına neden olabilir.</string>
     <string name="camera_strings_volume_distortion_correction_txt">Yüz bozukluğu düzeltme</string>
@@ -1042,8 +1111,25 @@ Ağ bağlantısı yok."</string>
     <string name="clear_text_end_icon_content_description">Metni temizle</string>
     <string name="close_drawer">Gezinme menüsünü kapat</string>
     <string name="close_sheet">Sayfayı kapat</string>
+    <string name="common_google_play_services_enable_button">Etkinleştir</string>
+    <string name="common_google_play_services_enable_text">Google Play hizmetlerini etkinleştirmezseniz %1$s çalışmaz.</string>
+    <string name="common_google_play_services_enable_title">Google Play hizmetlerini etkinleştirin</string>
+    <string name="common_google_play_services_install_button">Yükle</string>
+    <string name="common_google_play_services_install_text">%1$s, şu anda cihazınızda bulunmayan Google Play hizmetleri olmadan çalışmaz.</string>
+    <string name="common_google_play_services_install_title">Google Play hizmetlerini edinin</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play hizmetlerinin kullanılabilirliği</string>
+    <string name="common_google_play_services_notification_ticker">Google Play Hizmetleri hatası</string>
+    <string name="common_google_play_services_unknown_issue">%1$s, Google Play hizmetleriyle ilgili sorun yaşıyor. Lütfen tekrar deneyin.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s, Google Play hizmetleri olmadan çalışmaz ve bu hizmetler cihazınız tarafından desteklenmiyor.</string>
+    <string name="common_google_play_services_update_button">Güncelle</string>
+    <string name="common_google_play_services_update_text">Google Play hizmetlerini güncellemezseniz %1$s çalışmayacak.</string>
+    <string name="common_google_play_services_update_title">Google Play hizmetlerini güncelleyin</string>
+    <string name="common_google_play_services_updating_text">%1$s, şu anda güncellenmekte olan Google Play hizmetleri olmadan çalışmaz.</string>
+    <string name="common_google_play_services_wear_update_text">Google Play hizmetlerinin yeni sürümü gerekiyor. Kendisini kısa süre içinde güncelleyecektir.</string>
+    <string name="common_open_on_phone">Telefonda aç</string>
+    <string name="common_signin_button_text">Oturum aç</string>
+    <string name="common_signin_button_text_long">"Google'da oturum aç"</string>
     <string name="copy">Kopyala</string>
-    <string name="copy_toast_msg">Bağlantı panoya kopyalandı</string>
     <string name="default_error_message">Geçersiz giriş</string>
     <string name="default_popup_window_title">Pop-up Pencere</string>
     <string name="dropdown_menu">Açılır menü</string>
@@ -1054,9 +1140,6 @@ Ağ bağlantısı yok."</string>
     <string name="external_display_connected_description_txt">Vizörü Vlog Monitöründen kontrol edebilirsiniz</string>
     <string name="external_display_connected_title_txt">Vlog Monitorü bağlandı</string>
     <string name="external_display_note_about_external_mic_txt">Not: Harici bir mikrofon kullanmak için lütfen kayıttan önce mikrofonu Vlog Monitörüne bağlayın. Kayıt işleminden sonra bağlamanız durumunda Vlog Monitörünü yeniden bağlamanız gerekecektir.</string>
-    <string name="fallback_menu_item_copy_link">Bağlantıyı kopyala</string>
-    <string name="fallback_menu_item_open_in_browser">Tarayıcıda aç</string>
-    <string name="fallback_menu_item_share_link">Bağlantıyı paylaş</string>
     <string name="icon_content_description">İletişim kutusu simgesi</string>
     <string name="in_progress">Devam ediyor</string>
     <string name="indeterminate">Kısmi olarak kontrol edildi</string>

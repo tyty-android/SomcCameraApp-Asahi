@@ -137,16 +137,16 @@
 
     invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 192
+    .line 177
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$Adapter;-><init>()V
 
-    .line 189
+    .line 174
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$RecommendedSettingsAdapter;->context:Landroid/content/Context;
 
-    .line 190
+    .line 175
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$RecommendedSettingsAdapter;->dataList:Ljava/util/List;
 
-    .line 191
+    .line 176
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$RecommendedSettingsAdapter;->onItemClick:Lkotlin/jvm/functions/Function1;
 
     return-void
@@ -159,7 +159,7 @@
 
     invoke-static {p0, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 213
+    .line 198
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$RecommendedSettingsAdapter;->onItemClick:Lkotlin/jvm/functions/Function1;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -176,7 +176,7 @@
 .method public final getContext()Landroid/content/Context;
     .locals 0
 
-    .line 189
+    .line 174
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$RecommendedSettingsAdapter;->context:Landroid/content/Context;
 
     return-object p0
@@ -193,7 +193,7 @@
         }
     .end annotation
 
-    .line 190
+    .line 175
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$RecommendedSettingsAdapter;->dataList:Ljava/util/List;
 
     return-object p0
@@ -202,7 +202,7 @@
 .method public getItemCount()I
     .locals 0
 
-    .line 219
+    .line 204
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$RecommendedSettingsAdapter;->dataList:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->size()I
@@ -224,7 +224,7 @@
         }
     .end annotation
 
-    .line 191
+    .line 176
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$RecommendedSettingsAdapter;->onItemClick:Lkotlin/jvm/functions/Function1;
 
     return-object p0
@@ -233,7 +233,7 @@
 .method public bridge synthetic onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)V
     .locals 0
 
-    .line 188
+    .line 173
     check-cast p1, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$ViewHolder;
 
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$RecommendedSettingsAdapter;->onBindViewHolder(Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$ViewHolder;I)V
@@ -248,7 +248,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 202
+    .line 187
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$RecommendedSettingsAdapter;->dataList:Ljava/util/List;
 
     invoke-interface {v0, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -257,7 +257,7 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;
 
-    .line 203
+    .line 188
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$ViewHolder;->getBinding()Landroidx/databinding/ViewDataBinding;
 
     move-result-object p1
@@ -268,7 +268,7 @@
 
     check-cast p1, Ljp/co/sony/mc/camera/databinding/RecommendedSettingItemBinding;
 
-    .line 204
+    .line 189
     iget-object v1, p1, Ljp/co/sony/mc/camera/databinding/RecommendedSettingItemBinding;->settingKey:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->getTitleText()Ljava/lang/String;
@@ -279,7 +279,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 205
+    .line 190
     iget-object v1, p1, Ljp/co/sony/mc/camera/databinding/RecommendedSettingItemBinding;->settingCheckBox:Landroid/widget/CheckBox;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->isChecked()Z
@@ -288,7 +288,7 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/CheckBox;->setChecked(Z)V
 
-    .line 206
+    .line 191
     iget-object v1, p1, Ljp/co/sony/mc/camera/databinding/RecommendedSettingItemBinding;->currentSetting:Landroid/widget/TextView;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -297,7 +297,7 @@
 
     invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 207
+    .line 192
     iget-object v4, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$RecommendedSettingsAdapter;->context:Landroid/content/Context;
 
     const/4 v5, 0x0
@@ -328,17 +328,17 @@
 
     check-cast v2, Ljava/lang/CharSequence;
 
-    .line 206
+    .line 191
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 208
+    .line 193
     iget-object v1, p1, Ljp/co/sony/mc/camera/databinding/RecommendedSettingItemBinding;->recommendedSetting:Landroid/widget/TextView;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 209
+    .line 194
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$RecommendedSettingsAdapter;->context:Landroid/content/Context;
 
     if-eqz v3, :cond_1
@@ -362,20 +362,20 @@
 
     check-cast v2, Ljava/lang/CharSequence;
 
-    .line 208
+    .line 193
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 210
+    .line 195
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/RecommendedSettingItemBinding;->settingItem:Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    .line 211
+    .line 196
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->getSelectable()Z
 
     move-result v0
 
     invoke-virtual {p1, v0}, Landroidx/constraintlayout/widget/ConstraintLayout;->setEnabled(Z)V
 
-    .line 212
+    .line 197
     new-instance v0, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$RecommendedSettingsAdapter$$ExternalSyntheticLambda0;
 
     invoke-direct {v0, p0, p2}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$RecommendedSettingsAdapter$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$RecommendedSettingsAdapter;I)V
@@ -388,7 +388,7 @@
 .method public bridge synthetic onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
     .locals 0
 
-    .line 188
+    .line 173
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$RecommendedSettingsAdapter;->onCreateViewHolder(Landroid/view/ViewGroup;I)Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$ViewHolder;
 
     move-result-object p0
@@ -405,7 +405,7 @@
 
     invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 196
+    .line 181
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$RecommendedSettingsAdapter;->context:Landroid/content/Context;
 
     invoke-static {p0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
@@ -414,7 +414,7 @@
 
     const/4 p2, 0x0
 
-    .line 195
+    .line 180
     invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/databinding/RecommendedSettingItemBinding;->inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Ljp/co/sony/mc/camera/databinding/RecommendedSettingItemBinding;
 
     move-result-object p0
@@ -423,7 +423,7 @@
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 198
+    .line 183
     new-instance p1, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$ViewHolder;
 
     check-cast p0, Landroidx/databinding/ViewDataBinding;
@@ -448,7 +448,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 190
+    .line 175
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$RecommendedSettingsAdapter;->dataList:Ljava/util/List;
 
     return-void

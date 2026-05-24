@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/primitives/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/primitives/UnsignedInts$LexicographicalComparator;
@@ -19,7 +22,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 53
+    .line 52
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -27,6 +30,14 @@
 
 .method public static checkedCast(J)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     const/16 v0, 0x20
 
@@ -58,6 +69,16 @@
 
 .method public static compare(II)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b"
+        }
+    .end annotation
 
     .line 71
     invoke-static {p0}, Lcom/google/common/primitives/UnsignedInts;->flip(I)I
@@ -77,13 +98,21 @@
 
 .method public static decode(Ljava/lang/String;)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stringValue"
+        }
+    .end annotation
 
-    .line 316
+    .line 318
     invoke-static {p0}, Lcom/google/common/primitives/ParseRequest;->fromString(Ljava/lang/String;)Lcom/google/common/primitives/ParseRequest;
 
     move-result-object v0
 
-    .line 319
+    .line 321
     :try_start_0
     iget-object v1, v0, Lcom/google/common/primitives/ParseRequest;->rawValue:Ljava/lang/String;
 
@@ -100,46 +129,46 @@
     :catch_0
     move-exception v0
 
-    .line 321
+    .line 323
     new-instance v1, Ljava/lang/NumberFormatException;
 
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/String;->length()I
-
-    move-result v2
+    new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "Error parsing value: "
 
-    if-eqz v2, :cond_0
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v3, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
-    goto :goto_0
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    :cond_0
-    new-instance p0, Ljava/lang/String;
+    move-result-object p0
 
-    invoke-direct {p0, v3}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
-
-    :goto_0
     invoke-direct {v1, p0}, Ljava/lang/NumberFormatException;-><init>(Ljava/lang/String;)V
 
-    .line 323
+    .line 325
     invoke-virtual {v1, v0}, Ljava/lang/NumberFormatException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
-    .line 324
+    .line 326
     throw v1
 .end method
 
 .method public static divide(II)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dividend",
+            "divisor"
+        }
+    .end annotation
 
-    .line 282
+    .line 284
     invoke-static {p0}, Lcom/google/common/primitives/UnsignedInts;->toLong(I)J
 
     move-result-wide v0
@@ -157,6 +186,14 @@
 
 .method static flip(I)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     const/high16 v0, -0x80000000
 
@@ -167,6 +204,16 @@
 
 .method public static varargs join(Ljava/lang/String;[I)Ljava/lang/String;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "separator",
+            "array"
+        }
+    .end annotation
 
     .line 166
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -254,6 +301,14 @@
 
 .method public static varargs max([I)I
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "array"
+        }
+    .end annotation
 
     .line 146
     array-length v0, p0
@@ -314,6 +369,14 @@
 
 .method public static varargs min([I)I
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "array"
+        }
+    .end annotation
 
     .line 126
     array-length v0, p0
@@ -374,10 +437,18 @@
 
 .method public static parseUnsignedInt(Ljava/lang/String;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "s"
+        }
+    .end annotation
 
     const/16 v0, 0xa
 
-    .line 339
+    .line 341
     invoke-static {p0, v0}, Lcom/google/common/primitives/UnsignedInts;->parseUnsignedInt(Ljava/lang/String;I)I
 
     move-result p0
@@ -387,11 +458,21 @@
 
 .method public static parseUnsignedInt(Ljava/lang/String;I)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "string",
+            "radix"
+        }
+    .end annotation
 
-    .line 357
+    .line 359
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 358
+    .line 360
     invoke-static {p0, p1}, Ljava/lang/Long;->parseLong(Ljava/lang/String;I)J
 
     move-result-wide v0
@@ -408,29 +489,15 @@
 
     return p0
 
-    .line 360
+    .line 362
     :cond_0
     new-instance v0, Ljava/lang/NumberFormatException;
 
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    const-string v2, "Input "
 
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    move-result v1
-
-    add-int/lit8 v1, v1, 0x45
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v1, "Input "
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -463,8 +530,18 @@
 
 .method public static remainder(II)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dividend",
+            "divisor"
+        }
+    .end annotation
 
-    .line 296
+    .line 298
     invoke-static {p0}, Lcom/google/common/primitives/UnsignedInts;->toLong(I)J
 
     move-result-wide v0
@@ -482,6 +559,14 @@
 
 .method public static saturatedCast(J)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     const-wide/16 v0, 0x0
 
@@ -512,13 +597,21 @@
 
 .method public static sort([I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "array"
+        }
+    .end annotation
 
-    .line 220
+    .line 222
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 v0, 0x0
 
-    .line 221
+    .line 223
     array-length v1, p0
 
     invoke-static {p0, v0, v1}, Lcom/google/common/primitives/UnsignedInts;->sort([III)V
@@ -528,11 +621,23 @@
 
 .method public static sort([III)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "array",
+            "fromIndex",
+            "toIndex"
+        }
+    .end annotation
 
-    .line 231
+    .line 233
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 232
+    .line 234
     array-length v0, p0
 
     invoke-static {p1, p2, v0}, Lcom/google/common/base/Preconditions;->checkPositionIndexes(III)V
@@ -542,7 +647,7 @@
     :goto_0
     if-ge v0, p2, :cond_0
 
-    .line 234
+    .line 236
     aget v1, p0, v0
 
     invoke-static {v1}, Lcom/google/common/primitives/UnsignedInts;->flip(I)I
@@ -555,14 +660,14 @@
 
     goto :goto_0
 
-    .line 236
+    .line 238
     :cond_0
     invoke-static {p0, p1, p2}, Ljava/util/Arrays;->sort([III)V
 
     :goto_1
     if-ge p1, p2, :cond_1
 
-    .line 238
+    .line 240
     aget v0, p0, p1
 
     invoke-static {v0}, Lcom/google/common/primitives/UnsignedInts;->flip(I)I
@@ -581,13 +686,21 @@
 
 .method public static sortDescending([I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "array"
+        }
+    .end annotation
 
-    .line 249
+    .line 251
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 v0, 0x0
 
-    .line 250
+    .line 252
     array-length v1, p0
 
     invoke-static {p0, v0, v1}, Lcom/google/common/primitives/UnsignedInts;->sortDescending([III)V
@@ -597,11 +710,23 @@
 
 .method public static sortDescending([III)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "array",
+            "fromIndex",
+            "toIndex"
+        }
+    .end annotation
 
-    .line 260
+    .line 262
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 261
+    .line 263
     array-length v0, p0
 
     invoke-static {p1, p2, v0}, Lcom/google/common/base/Preconditions;->checkPositionIndexes(III)V
@@ -613,7 +738,7 @@
 
     if-ge v0, p2, :cond_0
 
-    .line 263
+    .line 265
     aget v2, p0, v0
 
     xor-int/2addr v1, v2
@@ -624,14 +749,14 @@
 
     goto :goto_0
 
-    .line 265
+    .line 267
     :cond_0
     invoke-static {p0, p1, p2}, Ljava/util/Arrays;->sort([III)V
 
     :goto_1
     if-ge p1, p2, :cond_1
 
-    .line 267
+    .line 269
     aget v0, p0, p1
 
     xor-int/2addr v0, v1
@@ -648,6 +773,14 @@
 
 .method public static toLong(I)J
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     int-to-long v0, p0
 
@@ -660,10 +793,18 @@
 
 .method public static toString(I)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "x"
+        }
+    .end annotation
 
     const/16 v0, 0xa
 
-    .line 372
+    .line 374
     invoke-static {p0, v0}, Lcom/google/common/primitives/UnsignedInts;->toString(II)Ljava/lang/String;
 
     move-result-object p0
@@ -673,6 +814,16 @@
 
 .method public static toString(II)Ljava/lang/String;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "x",
+            "radix"
+        }
+    .end annotation
 
     int-to-long v0, p0
 
@@ -680,7 +831,7 @@
 
     and-long/2addr v0, v2
 
-    .line 388
+    .line 390
     invoke-static {v0, v1, p1}, Ljava/lang/Long;->toString(JI)Ljava/lang/String;
 
     move-result-object p0

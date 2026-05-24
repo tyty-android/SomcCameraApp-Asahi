@@ -53,6 +53,17 @@
 # direct methods
 .method public constructor <init>(Landroid/view/LayoutInflater;Ljava/util/List;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "layoutInflater",
+            "inflateItemList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -84,6 +95,14 @@
 
 .method private register(Ljp/co/sony/mc/camera/viewfinder/InflateItem;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "item"
+        }
+    .end annotation
 
     .line 66
     new-instance v0, Ljava/util/ArrayList;

@@ -16,4 +16,14 @@
 
 # virtual methods
 .method public abstract onFnItemClick(Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;I)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "functionCustom",
+            "position"
+        }
+    .end annotation
 .end method

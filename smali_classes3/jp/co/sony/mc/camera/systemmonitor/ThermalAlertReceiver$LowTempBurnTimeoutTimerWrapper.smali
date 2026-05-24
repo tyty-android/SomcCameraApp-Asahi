@@ -35,6 +35,14 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 487
     iput-object p1, p0, Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver$LowTempBurnTimeoutTimerWrapper;->this$0:Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver;
@@ -170,6 +178,14 @@
 
 .method public final declared-synchronized requestTimeMillis(J)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "durationTimeMillis"
+        }
+    .end annotation
 
     const-string v0, "Request low temp burn timer millis : "
 

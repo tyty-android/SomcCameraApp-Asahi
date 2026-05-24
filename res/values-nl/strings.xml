@@ -82,6 +82,7 @@ U zult ziet meldingen en dialoogvensters. Selecteer telkens koppelen en druk ver
     <string name="call_notification_incoming_text">Inkomend gesprek</string>
     <string name="call_notification_ongoing_text">Actief gesprek</string>
     <string name="call_notification_screening_text">Een inkomend gesprek screenen</string>
+    <string name="camera_string_saving_process_hint_txt">Bezig met opslaan... Wacht tot het opslaan is voltooid.</string>
     <string name="camera_strings_accept_privacy_policy_txt">U hebt het privacybeleid in het verleden geaccepteerd, maar u kunt altijd van mening veranderen.</string>
     <string name="camera_strings_accessibility_48_mega_pixel_txt">48 megapixel</string>
     <string name="camera_strings_accessibility_adjust_bokeh_txt">Bokeh aanpassen</string>
@@ -92,6 +93,27 @@ U zult ziet meldingen en dialoogvensters. Selecteer telkens koppelen en druk ver
     <string name="camera_strings_accessibility_adjust_framing_size_smaller_txt">Framegrootte verkleinen</string>
     <string name="camera_strings_accessibility_adjust_framing_size_txt">Framegrootte aanpassen</string>
     <string name="camera_strings_accessibility_adjust_shutter_speed_txt">Sluitersnelheid</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_look_menu_txt">Sluit de knop. Sluit het lookmenu.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_menu_txt">Eigen menu sluiten</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_suggests_txt">Voorgestelde aanpassingen sluiten</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_menu_txt">Momenteel toegepaste Eigen look. Opent het aanpassingsmenu.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_txt">Eigen look. Past de instellingen voor look, helderheid en kleur toe die in het eigen menu zijn ingesteld.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_tab_txt">Eigen tabblad. Past de instellingen voor look, helderheid en kleur toe die in het eigen menu zijn ingesteld.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_button_txt">Eigen knop. Opent een menu waarmee u verdere aanpassingen kunt verrichten wanneer de aanbevolen aanpassingen zijn toegepast.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_param_txt">%1$s is ingesteld op %2$s</string>
+    <string name="camera_strings_accessibility_ai_suggestion_first_time_txt">AI-camera-assistent. Deze functie geeft suggesties voor instellingen, zoals kleur, op basis van de scène.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_four_of_some_suggests_txt">Vierde voorgestelde aanpassing</string>
+    <string name="camera_strings_accessibility_ai_suggestion_look_menu_txt">"%1$s
+Opent het menu Creatieve look"</string>
+    <string name="camera_strings_accessibility_ai_suggestion_new_suggest_txt">Er werden nieuwe aanbevolen aanpassingen voorgesteld</string>
+    <string name="camera_strings_accessibility_ai_suggestion_one_of_some_suggests_txt">Eerste voorgestelde aanpassing</string>
+    <string name="camera_strings_accessibility_ai_suggestion_open_suggests_txt">Voorgestelde aanpassingen uitvouwen</string>
+    <string name="camera_strings_accessibility_ai_suggestion_reset_to_default_txt">Resetten naar instellingen van vóór de suggestie</string>
+    <string name="camera_strings_accessibility_ai_suggestion_selected_suggest_txt">Deze aanbevolen aanpassingen worden toegepast</string>
+    <string name="camera_strings_accessibility_ai_suggestion_suggest_lens_txt">Voorgestelde lensknop. %1$sx wordt aanbevolen.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_surface_of_some_suggests_txt">Voorgestelde aanpassingen. Veeg van rechts naar links om de aanbevolen aanpassingen te bekijken.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_three_of_some_suggests_txt">Derde voorgestelde aanpassing</string>
+    <string name="camera_strings_accessibility_ai_suggestion_two_of_some_suggests_txt">Tweede voorgestelde aanpassing</string>
     <string name="camera_strings_accessibility_arrow_left_button_txt">Linkerpijl</string>
     <string name="camera_strings_accessibility_arrow_right_button_txt">Rechterpijl</string>
     <string name="camera_strings_accessibility_audio_level_txt">Audioniveaumeter</string>
@@ -246,6 +268,45 @@ U zult ziet meldingen en dialoogvensters. Selecteer telkens koppelen en druk ver
     <string name="camera_strings_advanced_setting_geo_tag_title_txt">Locatie opslaan</string>
     <string name="camera_strings_ai_face_restore_description_txt">"U kunt foto's maken met gezichtsverscherping om de kenmerken van gezichten duidelijker te maken"</string>
     <string name="camera_strings_ai_face_restore_txt">Gezichten verscherpen</string>
+    <string name="camera_strings_ai_suggestion_introduce_hint_text_txt">[Tips] AI-camera-assistent</string>
+    <string name="camera_strings_aisuggestion_box_name1_txt">Eigen</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_message_txt">Stel de instellingen voor huidige look, helderheid en kleur in op Eigen.</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_overwrite_message_txt">Er is al een look ingesteld als Eigen. Overschrijven?</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_title_txt">Instellen als Eigen look</string>
+    <string name="camera_strings_aisuggestion_box_title_txt">Eigen</string>
+    <string name="camera_strings_aisuggestion_custom_params_contrast_txt">Contrast</string>
+    <string name="camera_strings_aisuggestion_custom_params_ev_txt">Helderh.</string>
+    <string name="camera_strings_aisuggestion_custom_params_register_txt">Instellen</string>
+    <string name="camera_strings_aisuggestion_custom_params_saturation_txt">Verz.</string>
+    <string name="camera_strings_aisuggestion_custom_params_title_txt">Helderheid/kleur</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbab_txt">Warmte</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbgm_txt">Tint</string>
+    <string name="camera_strings_aisuggestion_customlook_register_instruction_txt">U kunt ingestelde eigen looks op elk gewenst moment gebruiken via het tabblad Eigen look</string>
+    <string name="camera_strings_aisuggestion_description_txt">"De AI identificeert automatisch de scène en stelt in het minivoorbeeld rechtsonder geoptimaliseerde aanpassingen voor.
+Als u op dit minivoorbeeld tikt, worden de volgende instellingen automatisch aangepast aan de scène:
+Look, Belichting, Witbalans, Verzadiging, Contrast, Bokeh
+*Deze functie is alleen beschikbaar in de Fotomodus.
+*Wanneer u begint met het opnemen van een video door de sluiterknop ingedrukt te houden, worden de instellingen voor verzadiging, contrast en bokeh niet toegepast."</string>
+    <string name="camera_strings_aisuggestion_guide_description1_txt">Aanbevolen aanpassingen op basis van de door de AI geïdentificeerde scène worden weergegeven in het minivoorbeeld rechtsonder (of rechtsboven in de horizontale positie). U kunt al deze aanpassingen in één keer toepassen door op de minivoorbeeld te tikken.</string>
+    <string name="camera_strings_aisuggestion_guide_description2_txt">Afhankelijk van de scène kan ook een specifieke lensinstelling worden voorgesteld. In dat geval kunt u de voorgestelde lensinstelling naar wens wijzigen.</string>
+    <string name="camera_strings_aisuggestion_guide_description3_txt">"Door rechtsonder (of rechtsboven in de horizontale positie) over het minivoorbeeld naar links te vegen, worden alternatieve aanpassingsaanbevelingen weergegeven.
+De suggestie die u selecteert, wordt opgeslagen als uw gewenste aanpassing en wordt toegevoegd aan de suggesties de volgende keer dat u in een vergelijkbare scène opnames maakt."</string>
+    <string name="camera_strings_aisuggestion_guide_description4_txt">U kunt op de knop [>] tikken om suggesties te verbergen als u ze niet nodig hebt. Wanneer er een nieuwe scène wordt geïdentificeerd, licht de knop [&lt;] op om aan te geven dat er nieuwe aanpassingssuggesties beschikbaar zijn. Tik op de knop [&lt;] om de suggesties nogmaals te bekijken.</string>
+    <string name="camera_strings_aisuggestion_guide_description5_txt">Als u op de aanpassingsknop tikt nadat u de voorgestelde aanpassingen hebt geselecteerd, kunt u instellingen zoals helderheid en kleur verder aanpassen. Uw aanpassingen worden op het apparaat opgeslagen en de volgende keer dat er een vergelijkbare scène wordt gedetecteerd, worden de voorgestelde aanpassingen toegepast.</string>
+    <string name="camera_strings_aisuggestion_guide_description6_txt">"U kunt voorgestelde aanpassingen en door u gemaakte aanpassingen instellen, zodat u deze op elk gewenst moment kunt laden om foto's te maken met dezelfde instellingen. Tik op [Instellen] om een Eigen look toe te voegen aan de lijst met beschikbare looks."</string>
+    <string name="camera_strings_aisuggestion_guide_entry_txt">AI-camera-assistent gebruiken</string>
+    <string name="camera_strings_aisuggestion_guide_title_txt">Zo werkt AI-camera-assistent</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_message_txt">Wilt u alle instellingen resetten naar de standaardwaarden, inclusief kleur, helderheid en uw gewenste aanpassingen?</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_title_txt">Parameters resetten</string>
+    <string name="camera_strings_aisuggestion_params_reset_txt">Parameters resetten</string>
+    <string name="camera_strings_aisuggestion_permitted_item_bokeh_txt">Bokeh</string>
+    <string name="camera_strings_aisuggestion_permitted_item_lens_txt">Lens</string>
+    <string name="camera_strings_aisuggestion_permitted_item_title_txt">Toevoegen aan suggesties</string>
+    <string name="camera_strings_aisuggestion_recommend_lens_ratio_txt">%1$s wordt aanbevolen</string>
+    <string name="camera_strings_aisuggestion_return_to_default_txt">Terugzetten</string>
+    <string name="camera_strings_aisuggestion_simple_video_instruction_txt">Als u een video opneemt door lang te drukken, kunnen de inst. voor verz., contrast en bokeh er anders uitzien.</string>
+    <string name="camera_strings_aisuggestion_txt">AI-camera-assistent</string>
+    <string name="camera_strings_aisuggestion_use_aissuggestion_txt">AI-camera-assist. gebruiken</string>
     <string name="camera_strings_anonymous_analytics_txt">Anonieme analyse</string>
     <string name="camera_strings_application_name">Camera</string>
     <string name="camera_strings_application_name_google_lens_txt">Google Lens</string>
@@ -421,6 +482,7 @@ Beveiliging:
     <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Kan geen verbinding maken met Wi-Fi</string>
     <string name="camera_strings_dialog_user_data_collection_txt">Als u akkoord gaat met het onderstaande, verzamelt Sony uw &lt;b>&lt;a href=#personal-data>persoonlijke gegevens&lt;/a>&lt;/b> om aangepaste ondersteuning te leveren en apparaten en services te verbeteren. Sony behandelt uw gegevens volgens ons &lt;b>&lt;a href=https://www.sonymobile.com/privacy/>privacybeleid&lt;/a>&lt;/b>.</string>
     <string name="camera_strings_dialog_video_hdr_hlg_supported_short_description_txt">Sommige apparaten/services kunnen de originele kleur en helderheid van HDR-inhoud mogelijk niet reproduceren. Gebruik apparaten/services die HDR ondersteunen wanneer u geniet van HDR-inhoud.</string>
+    <string name="camera_strings_digital_tripod_hint_edge_txt">De compositie is gewijzigd. Richt de camera op het oorspronkelijke onderwerp.</string>
     <string name="camera_strings_digital_zoom_type_description_txt">"Selecteer een instelling voor digitale zoom.
 
 Standaard digitale zoom: zoom met digitale verwerking op basis van beeldsensorgegevens.
@@ -484,6 +546,7 @@ Om dit te wijzigen, beëindigt u de streaming, gaat u naar de Facebook-app en wi
     <string name="camera_strings_fast_capturing_screen_locked_settings_txt">Open de instellingen, ontgrendel het scherm.</string>
     <string name="camera_strings_fast_capturing_screen_locked_streaming_txt">Om te beginnen met streamen, ontgrendelt u het scherm.</string>
     <string name="camera_strings_fast_capturing_screen_locked_title_txt">Scherm vergrendeld</string>
+    <string name="camera_strings_feature_creative_look_custom_description_txt">U kunt de instellingen voor looks, helderheid/kleur instellen.</string>
     <string name="camera_strings_feature_creative_look_description_txt">"U kunt de afwerking van foto's (foto's of films) kiezen door een 'look' te selecteren.
 
 Creatieve look biedt 6 vooraf ingestelde looks. Elk is geoptimaliseerd met een andere combinatie van kleurtoon, verzadiging, contrast, scherpte, helderheid en andere foto-elementen, zodat u de fotobewerking kunt instellen volgens uw ideale balans van deze elementen."</string>
@@ -567,6 +630,7 @@ Tik op onderwerp dat u wilt volgen."</string>
     <string name="camera_strings_framing_orientation_description_txt">"U kunt ervoor kiezen om het onderwerp in een horizontaal of verticaal frame bij te snijden.
 Stel deze optie in op [Automatisch] om de stand voor het bijsnijden hetzelfde te maken als de apparaatstand."</string>
     <string name="camera_strings_framing_select_subject_to_track_txt">Tik op het onderwerp waarvan u de positie wilt vergrendelen</string>
+    <string name="camera_strings_framing_setting_guide_title_txt">Over Autom. framesnelh.</string>
     <string name="camera_strings_framing_setting_orientation_landscape_txt">Horizontaal</string>
     <string name="camera_strings_framing_setting_orientation_portrait_txt">Verticaal</string>
     <string name="camera_strings_framing_setting_orientation_title_txt">Schermstand</string>
@@ -574,6 +638,7 @@ Stel deze optie in op [Automatisch] om de stand voor het bijsnijden hetzelfde te
 Bijgesneden opnamen worden opgeslagen met een resolutie van Full HD. Niet-bijgesneden opnamen worden opgeslagen in 4K."</string>
     <string name="camera_strings_framing_setting_save_original_video_off_txt">Volledig scherm opnemen: uit</string>
     <string name="camera_strings_framing_setting_save_original_video_title_txt">Volledig scherm opnemen</string>
+    <string name="camera_strings_framing_setting_snapshot_description_txt">"Of [Volledig scherm opnemen] nu in- of uitgeschakeld is, foto's die tijdens video-opname worden genomen, worden opgeslagen op volledig scherm."</string>
     <string name="camera_strings_geotagging_description_txt">"Sla uw foto's en video's op met de locaties waar ze zijn gemaakt"</string>
     <string name="camera_strings_geotagging_txt">Locatie opslaan</string>
     <string name="camera_strings_gimbal_mode_tab_label">AI-camerawerk</string>
@@ -592,6 +657,7 @@ Hierdoor kunt u zelfs in onstabielere situaties, zoals tijdens het joggen, stabi
     <string name="camera_strings_gimbal_setting_assist_method_locking_hint_txt">Onderw.pos.verge.: Handm.</string>
     <string name="camera_strings_gimbal_setting_assist_method_locking_txt">Handmatig</string>
     <string name="camera_strings_gimbal_setting_assist_method_title_txt">Onderw.positievergr.</string>
+    <string name="camera_strings_gimbal_setting_guide_title_txt">Over AI-camerawerk</string>
     <string name="camera_strings_gridline_description_txt">Stel in of rasterlijnen wel of niet worden weergegeven om u te helpen bij beeldcompositie</string>
     <string name="camera_strings_gridline_txt">Rasterlijnen</string>
     <string name="camera_strings_hand_shutter_description_updated_txt">U kunt het aftellen van de timer starten door uw handpalm naar de camera aan voorzijde te draaien. Strek uw vingers naar boven om de herkenning te versnellen.</string>
@@ -727,6 +793,7 @@ Voor foto's die worden genomen tijdens het opnemen van video wordt altijd standa
     <string name="camera_strings_notification_channel_title_saving_process_txt">Opslagproces</string>
     <string name="camera_strings_notification_text_saving_in_progress_txt">Wacht even tot het opslaan is voltooid</string>
     <string name="camera_strings_notification_title_saving_in_progress_txt">Bezig met opslaan</string>
+    <string name="camera_strings_notify_saving_process_cannot_launch_app_by_hw_shutter_txt">Tijdens het opslaan start de camera mogelijk niet door de sluiterknop in te drukken</string>
     <string name="camera_strings_ok_txt">OK</string>
     <string name="camera_strings_peaking_color_blue_txt">Blauw</string>
     <string name="camera_strings_peaking_color_red_txt">Rood</string>
@@ -735,6 +802,7 @@ Voor foto's die worden genomen tijdens het opnemen van video wordt altijd standa
     <string name="camera_strings_peaking_color_yellow_txt">Geel</string>
     <string name="camera_strings_peaking_txt">Reliëf</string>
     <string name="camera_strings_personal_data_txt">Persoonlijke gegevens</string>
+    <string name="camera_strings_photopro_setting_guide_title_txt">Over Pro foto</string>
     <string name="camera_strings_privacy_policy_txt">Privacybeleid</string>
     <string name="camera_strings_pro_tips_computational_photo_description_txt">"Zelfs in de P-modus detecteert de camera automatisch de scène en maakt deze prachtige automatische opnamen door onscherpte, ruis, overbelichting en onderbelichting te verminderen.
 Als u deze functie niet gebruikt, kunt u deze uitschakelen via de Fn-knop of MENU."</string>
@@ -965,6 +1033,7 @@ Als u de SD-kaart als gegevensopslag blijft gebruiken, zorg dan dat u een high-s
     <string name="camera_strings_video_stabilization_description_sub_txt">Opmerking: Als u Hoge kwaliteit selecteert, kan de opnameduur worden verkort als gevolg van een hogere apparaattemperatuur.</string>
     <string name="camera_strings_video_stabilization_description_txt">"De Xperia heeft een uniek hybride stabilisatiesysteem, Optical SteadyShot genoemd, dat optische beeldstabilisatie en elektronische beeldstabilisatie combineert. U krijgt trilvrije en vloeiende video's, zelfs wanneer u onderweg opneemt."</string>
     <string name="camera_strings_video_stabilization_high_quality_images_txt">Hoge kwaliteit</string>
+    <string name="camera_strings_videopro_setting_guide_title_txt">Over Pro video</string>
     <string name="camera_strings_volume_distortion_correction_description_txt">Corrigeert vervorming van gezichten die aan de rand van het scherm verschijnen bij gebruik van de ultragroothoeklens. Hierdoor kan de achtergrond vervormd lijken of kan de beeldhoek smaller lijken.</string>
     <string name="camera_strings_volume_distortion_correction_front_description_txt">Corrigeert vervorming van gezichten die aan de rand van het scherm verschijnen. Hierdoor kan de achtergrond vervormd lijken of kan de beeldhoek smaller lijken.</string>
     <string name="camera_strings_volume_distortion_correction_txt">Correctie voor gezichtsvervorming</string>
@@ -1042,8 +1111,25 @@ Geen netwerkverbinding."</string>
     <string name="clear_text_end_icon_content_description">Tekst wissen</string>
     <string name="close_drawer">Navigatiemenu sluiten</string>
     <string name="close_sheet">Blad sluiten</string>
+    <string name="common_google_play_services_enable_button">Inschakelen</string>
+    <string name="common_google_play_services_enable_text">%1$s werkt niet, tenzij je Google Play-services inschakelt.</string>
+    <string name="common_google_play_services_enable_title">Google Play-services inschakelen</string>
+    <string name="common_google_play_services_install_button">Installeren</string>
+    <string name="common_google_play_services_install_text">%1$s kan niet worden uitgevoerd zonder Google Play-services, die je nog niet op je apparaat hebt.</string>
+    <string name="common_google_play_services_install_title">Google Play-services ophalen</string>
+    <string name="common_google_play_services_notification_channel_name">Beschikbaarheid van Google Play-services</string>
+    <string name="common_google_play_services_notification_ticker">Fout met Google Play-services</string>
+    <string name="common_google_play_services_unknown_issue">%1$s ondervindt problemen met Google Play-services. Probeer het opnieuw.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s kan niet worden uitgevoerd zonder Google Play-services, die niet worden ondersteund op je apparaat.</string>
+    <string name="common_google_play_services_update_button">Updaten</string>
+    <string name="common_google_play_services_update_text">%1$s kan niet worden uitgevoerd, tenzij je Google Play-services updatet.</string>
+    <string name="common_google_play_services_update_title">Google Play-services updaten</string>
+    <string name="common_google_play_services_updating_text">%1$s kan niet worden uitgevoerd zonder Google Play-services, die momenteel worden geüpdatet.</string>
+    <string name="common_google_play_services_wear_update_text">Er is een nieuwe versie van Google Play-services vereist. De update wordt binnenkort automatisch uitgevoerd.</string>
+    <string name="common_open_on_phone">Openen op telefoon</string>
+    <string name="common_signin_button_text">Inloggen</string>
+    <string name="common_signin_button_text_long">Inloggen met Google</string>
     <string name="copy">Kopiëren</string>
-    <string name="copy_toast_msg">Link naar klembord gekopieerd</string>
     <string name="default_error_message">Ongeldige invoer</string>
     <string name="default_popup_window_title">Pop-upvenster</string>
     <string name="dropdown_menu">Dropdownmenu</string>
@@ -1054,9 +1140,6 @@ Geen netwerkverbinding."</string>
     <string name="external_display_connected_description_txt">U kunt de zoeker controleren via het Vlog-beeldscherm</string>
     <string name="external_display_connected_title_txt">Vlog-beeldscherm verbonden</string>
     <string name="external_display_note_about_external_mic_txt">Opmerking: als u een externe microfoon wilt gebruiken, sluit u deze aan op het Vlog-beeldscherm voordat u opneemt. Als u deze later aansluit, moet u het Vlog-beeldscherm opnieuw aansluiten.</string>
-    <string name="fallback_menu_item_copy_link">Link kopiëren</string>
-    <string name="fallback_menu_item_open_in_browser">Openen in browser</string>
-    <string name="fallback_menu_item_share_link">Link delen</string>
     <string name="icon_content_description">Icoon voor dialoogvenster</string>
     <string name="in_progress">Bezig</string>
     <string name="indeterminate">Gedeeltelijk aangevinkt</string>

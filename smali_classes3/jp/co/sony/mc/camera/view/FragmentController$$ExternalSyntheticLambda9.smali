@@ -32,7 +32,7 @@
 
     check-cast p1, Ljava/lang/Boolean;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController;->$r8$lambda$a5uG7q4M4Lp3LEehi3FWsuMLhDM(Ljp/co/sony/mc/camera/view/FragmentController;Ljava/lang/Boolean;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController;->$r8$lambda$G4UyfR4NxSRO3VgEFKs8zayl-Zw(Ljp/co/sony/mc/camera/view/FragmentController;Ljava/lang/Boolean;)V
 
     return-void
 .end method

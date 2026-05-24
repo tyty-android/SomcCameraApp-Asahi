@@ -25,12 +25,12 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 513
+    .line 353
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 515
+    .line 355
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder$OnSettingMessageDialogCheckBoxChangeListener;->mIsItemChecked:Z
 
     return-void
@@ -49,7 +49,7 @@
 .method public isItemChecked()Z
     .locals 0
 
-    .line 523
+    .line 363
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder$OnSettingMessageDialogCheckBoxChangeListener;->mIsItemChecked:Z
 
     return p0
@@ -57,8 +57,18 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "buttonView",
+            "isChecked"
+        }
+    .end annotation
 
-    .line 519
+    .line 359
     iput-boolean p2, p0, Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder$OnSettingMessageDialogCheckBoxChangeListener;->mIsItemChecked:Z
 
     return-void

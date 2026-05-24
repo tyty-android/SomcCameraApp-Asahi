@@ -38,7 +38,7 @@
 .method private static synthetic $values()[Lcom/google/common/collect/Iterators$EmptyModifiableIterator;
     .locals 1
 
-    .line 95
+    .line 100
     sget-object v0, Lcom/google/common/collect/Iterators$EmptyModifiableIterator;->INSTANCE:Lcom/google/common/collect/Iterators$EmptyModifiableIterator;
 
     filled-new-array {v0}, [Lcom/google/common/collect/Iterators$EmptyModifiableIterator;
@@ -51,7 +51,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 96
+    .line 101
     new-instance v0, Lcom/google/common/collect/Iterators$EmptyModifiableIterator;
 
     const-string v1, "INSTANCE"
@@ -62,7 +62,7 @@
 
     sput-object v0, Lcom/google/common/collect/Iterators$EmptyModifiableIterator;->INSTANCE:Lcom/google/common/collect/Iterators$EmptyModifiableIterator;
 
-    .line 95
+    .line 100
     invoke-static {}, Lcom/google/common/collect/Iterators$EmptyModifiableIterator;->$values()[Lcom/google/common/collect/Iterators$EmptyModifiableIterator;
 
     move-result-object v0
@@ -74,13 +74,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 95
+    .line 100
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -88,8 +99,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/collect/Iterators$EmptyModifiableIterator;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 95
+    .line 100
     const-class v0, Lcom/google/common/collect/Iterators$EmptyModifiableIterator;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -104,7 +123,7 @@
 .method public static values()[Lcom/google/common/collect/Iterators$EmptyModifiableIterator;
     .locals 1
 
-    .line 95
+    .line 100
     sget-object v0, Lcom/google/common/collect/Iterators$EmptyModifiableIterator;->$VALUES:[Lcom/google/common/collect/Iterators$EmptyModifiableIterator;
 
     invoke-virtual {v0}, [Lcom/google/common/collect/Iterators$EmptyModifiableIterator;->clone()Ljava/lang/Object;
@@ -129,7 +148,7 @@
 .method public next()Ljava/lang/Object;
     .locals 0
 
-    .line 105
+    .line 110
     new-instance p0, Ljava/util/NoSuchElementException;
 
     invoke-direct {p0}, Ljava/util/NoSuchElementException;-><init>()V
@@ -142,7 +161,7 @@
 
     const/4 p0, 0x0
 
-    .line 110
+    .line 115
     invoke-static {p0}, Lcom/google/common/collect/CollectPreconditions;->checkRemove(Z)V
 
     return-void

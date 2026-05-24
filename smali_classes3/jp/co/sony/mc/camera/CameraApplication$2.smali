@@ -26,13 +26,24 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/CameraApplication;Ljava/lang/Thread$UncaughtExceptionHandler;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$previousHandler"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 193
+    .line 204
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraApplication$2;->this$0:Ljp/co/sony/mc/camera/CameraApplication;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/CameraApplication$2;->val$previousHandler:Ljava/lang/Thread$UncaughtExceptionHandler;
@@ -46,13 +57,23 @@
 # virtual methods
 .method public uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "thread",
+            "t"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
-    .line 196
+    .line 207
     invoke-static {v0, v0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->setDeviceError(ZZ)V
 
-    .line 197
+    .line 208
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraApplication$2;->val$previousHandler:Ljava/lang/Thread$UncaughtExceptionHandler;
 
     invoke-interface {p0, p1, p2}, Ljava/lang/Thread$UncaughtExceptionHandler;->uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V

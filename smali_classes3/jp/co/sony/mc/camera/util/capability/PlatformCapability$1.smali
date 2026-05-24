@@ -27,6 +27,20 @@
 # direct methods
 .method constructor <init>([ZLandroid/hardware/camera2/CameraManager;Ljava/lang/String;Ljava/util/concurrent/CountDownLatch;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x1010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "val$isInitCameraInfoSuccess",
+            "val$cameraManager",
+            "val$productName",
+            "val$initCameraInfoLatch"
+        }
+    .end annotation
 
     .line 411
     iput-object p1, p0, Ljp/co/sony/mc/camera/util/capability/PlatformCapability$1;->val$isInitCameraInfoSuccess:[Z
@@ -46,6 +60,14 @@
 # virtual methods
 .method public onCameraAvailable(Ljava/lang/String;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
     .line 414
     invoke-super {p0, p1}, Landroid/hardware/camera2/CameraManager$AvailabilityCallback;->onCameraAvailable(Ljava/lang/String;)V

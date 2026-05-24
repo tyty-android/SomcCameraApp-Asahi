@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/hash/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation runtime Lcom/google/errorprone/annotations/DoNotMock;
     value = "Implement with a lambda"
 .end annotation
@@ -24,6 +27,21 @@
 
 # virtual methods
 .method public abstract funnel(Ljava/lang/Object;Lcom/google/common/hash/PrimitiveSink;)V
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/hash/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "from",
+            "into"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;",

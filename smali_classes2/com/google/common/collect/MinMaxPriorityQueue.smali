@@ -4,12 +4,15 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/common/collect/MinMaxPriorityQueue$QueueIterator;,
+        Lcom/google/common/collect/MinMaxPriorityQueue$Builder;,
         Lcom/google/common/collect/MinMaxPriorityQueue$Heap;,
         Lcom/google/common/collect/MinMaxPriorityQueue$MoveDesc;,
-        Lcom/google/common/collect/MinMaxPriorityQueue$Builder;
+        Lcom/google/common/collect/MinMaxPriorityQueue$QueueIterator;
     }
 .end annotation
 
@@ -63,6 +66,17 @@
 # direct methods
 .method private constructor <init>(Lcom/google/common/collect/MinMaxPriorityQueue$Builder;I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "builder",
+            "queueSize"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -71,22 +85,22 @@
         }
     .end annotation
 
-    .line 231
+    .line 243
     invoke-direct {p0}, Ljava/util/AbstractQueue;-><init>()V
 
-    .line 232
+    .line 244
     invoke-static {p1}, Lcom/google/common/collect/MinMaxPriorityQueue$Builder;->access$200(Lcom/google/common/collect/MinMaxPriorityQueue$Builder;)Lcom/google/common/collect/Ordering;
 
     move-result-object v0
 
-    .line 233
+    .line 245
     new-instance v1, Lcom/google/common/collect/MinMaxPriorityQueue$Heap;
 
     invoke-direct {v1, p0, v0}, Lcom/google/common/collect/MinMaxPriorityQueue$Heap;-><init>(Lcom/google/common/collect/MinMaxPriorityQueue;Lcom/google/common/collect/Ordering;)V
 
     iput-object v1, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->minHeap:Lcom/google/common/collect/MinMaxPriorityQueue$Heap;
 
-    .line 234
+    .line 246
     new-instance v2, Lcom/google/common/collect/MinMaxPriorityQueue$Heap;
 
     invoke-virtual {v0}, Lcom/google/common/collect/Ordering;->reverse()Lcom/google/common/collect/Ordering;
@@ -97,20 +111,20 @@
 
     iput-object v2, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->maxHeap:Lcom/google/common/collect/MinMaxPriorityQueue$Heap;
 
-    .line 235
+    .line 247
     iput-object v2, v1, Lcom/google/common/collect/MinMaxPriorityQueue$Heap;->otherHeap:Lcom/google/common/collect/MinMaxPriorityQueue$Heap;
 
-    .line 236
+    .line 248
     iput-object v1, v2, Lcom/google/common/collect/MinMaxPriorityQueue$Heap;->otherHeap:Lcom/google/common/collect/MinMaxPriorityQueue$Heap;
 
-    .line 238
+    .line 250
     invoke-static {p1}, Lcom/google/common/collect/MinMaxPriorityQueue$Builder;->access$300(Lcom/google/common/collect/MinMaxPriorityQueue$Builder;)I
 
     move-result p1
 
     iput p1, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->maximumSize:I
 
-    .line 240
+    .line 252
     new-array p1, p2, [Ljava/lang/Object;
 
     iput-object p1, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->queue:[Ljava/lang/Object;
@@ -121,7 +135,7 @@
 .method synthetic constructor <init>(Lcom/google/common/collect/MinMaxPriorityQueue$Builder;ILcom/google/common/collect/MinMaxPriorityQueue$1;)V
     .locals 0
 
-    .line 101
+    .line 106
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/MinMaxPriorityQueue;-><init>(Lcom/google/common/collect/MinMaxPriorityQueue$Builder;I)V
 
     return-void
@@ -130,7 +144,7 @@
 .method static synthetic access$500(Lcom/google/common/collect/MinMaxPriorityQueue;)[Ljava/lang/Object;
     .locals 0
 
-    .line 101
+    .line 106
     iget-object p0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->queue:[Ljava/lang/Object;
 
     return-object p0
@@ -139,7 +153,7 @@
 .method static synthetic access$600(Lcom/google/common/collect/MinMaxPriorityQueue;)I
     .locals 0
 
-    .line 101
+    .line 106
     iget p0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
     return p0
@@ -148,7 +162,7 @@
 .method static synthetic access$700(Lcom/google/common/collect/MinMaxPriorityQueue;)I
     .locals 0
 
-    .line 101
+    .line 106
     iget p0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->modCount:I
 
     return p0
@@ -157,7 +171,7 @@
 .method private calculateNewCapacity()I
     .locals 2
 
-    .line 945
+    .line 980
     iget-object v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->queue:[Ljava/lang/Object;
 
     array-length v0, v0
@@ -172,7 +186,7 @@
 
     goto :goto_0
 
-    .line 947
+    .line 982
     :cond_0
     div-int/lit8 v0, v0, 0x2
 
@@ -182,7 +196,7 @@
 
     move-result v0
 
-    .line 948
+    .line 983
     :goto_0
     iget p0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->maximumSize:I
 
@@ -195,10 +209,20 @@
 
 .method private static capAtMaximumSize(II)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "queueSize",
+            "maximumSize"
+        }
+    .end annotation
 
     add-int/lit8 p0, p0, -0x1
 
-    .line 953
+    .line 988
     invoke-static {p0, p1}, Ljava/lang/Math;->min(II)I
 
     move-result p0
@@ -220,7 +244,7 @@
         }
     .end annotation
 
-    .line 108
+    .line 113
     new-instance v0, Lcom/google/common/collect/MinMaxPriorityQueue$Builder;
 
     invoke-static {}, Lcom/google/common/collect/Ordering;->natural()Lcom/google/common/collect/Ordering;
@@ -240,6 +264,15 @@
 
 .method public static create(Ljava/lang/Iterable;)Lcom/google/common/collect/MinMaxPriorityQueue;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "initialContents"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E::",
@@ -252,7 +285,7 @@
         }
     .end annotation
 
-    .line 117
+    .line 122
     new-instance v0, Lcom/google/common/collect/MinMaxPriorityQueue$Builder;
 
     invoke-static {}, Lcom/google/common/collect/Ordering;->natural()Lcom/google/common/collect/Ordering;
@@ -272,6 +305,15 @@
 
 .method public static expectedSize(I)Lcom/google/common/collect/MinMaxPriorityQueue$Builder;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "expectedSize"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -281,7 +323,7 @@
         }
     .end annotation
 
-    .line 133
+    .line 145
     new-instance v0, Lcom/google/common/collect/MinMaxPriorityQueue$Builder;
 
     invoke-static {}, Lcom/google/common/collect/Ordering;->natural()Lcom/google/common/collect/Ordering;
@@ -301,6 +343,17 @@
 
 .method private fillHole(ILjava/lang/Object;)Lcom/google/common/collect/MinMaxPriorityQueue$MoveDesc;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "toTrickle"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(ITE;)",
@@ -309,24 +362,27 @@
         }
     .end annotation
 
-    .line 431
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 455
     invoke-direct {p0, p1}, Lcom/google/common/collect/MinMaxPriorityQueue;->heapForIndex(I)Lcom/google/common/collect/MinMaxPriorityQueue$Heap;
 
     move-result-object v0
 
-    .line 439
+    .line 463
     invoke-virtual {v0, p1}, Lcom/google/common/collect/MinMaxPriorityQueue$Heap;->fillHoleAt(I)I
 
     move-result v1
 
-    .line 441
+    .line 465
     invoke-virtual {v0, v1, p2}, Lcom/google/common/collect/MinMaxPriorityQueue$Heap;->bubbleUpAlternatingLevels(ILjava/lang/Object;)I
 
     move-result v2
 
     if-ne v2, v1, :cond_0
 
-    .line 446
+    .line 470
     invoke-virtual {v0, p1, v1, p2}, Lcom/google/common/collect/MinMaxPriorityQueue$Heap;->tryCrossOverAndBubbleUp(IILjava/lang/Object;)Lcom/google/common/collect/MinMaxPriorityQueue$MoveDesc;
 
     move-result-object p0
@@ -336,7 +392,7 @@
     :cond_0
     if-ge v2, p1, :cond_1
 
-    .line 448
+    .line 472
     new-instance v0, Lcom/google/common/collect/MinMaxPriorityQueue$MoveDesc;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/MinMaxPriorityQueue;->elementData(I)Ljava/lang/Object;
@@ -357,7 +413,7 @@
 .method private getMaxElementIndex()I
     .locals 3
 
-    .line 311
+    .line 329
     iget v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
     const/4 v1, 0x1
@@ -368,7 +424,7 @@
 
     if-eq v0, v2, :cond_1
 
-    .line 319
+    .line 337
     iget-object p0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->maxHeap:Lcom/google/common/collect/MinMaxPriorityQueue$Heap;
 
     invoke-virtual {p0, v1, v2}, Lcom/google/common/collect/MinMaxPriorityQueue$Heap;->compareElements(II)I
@@ -395,7 +451,7 @@
 .method private growIfNeeded()V
     .locals 4
 
-    .line 935
+    .line 970
     iget v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
     iget-object v1, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->queue:[Ljava/lang/Object;
@@ -404,15 +460,15 @@
 
     if-le v0, v1, :cond_0
 
-    .line 936
+    .line 971
     invoke-direct {p0}, Lcom/google/common/collect/MinMaxPriorityQueue;->calculateNewCapacity()I
 
     move-result v0
 
-    .line 937
+    .line 972
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 938
+    .line 973
     iget-object v1, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->queue:[Ljava/lang/Object;
 
     array-length v2, v1
@@ -421,7 +477,7 @@
 
     invoke-static {v1, v3, v0, v3, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 939
+    .line 974
     iput-object v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->queue:[Ljava/lang/Object;
 
     :cond_0
@@ -430,6 +486,15 @@
 
 .method private heapForIndex(I)Lcom/google/common/collect/MinMaxPriorityQueue$Heap;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "i"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -438,7 +503,7 @@
         }
     .end annotation
 
-    .line 471
+    .line 495
     invoke-static {p1}, Lcom/google/common/collect/MinMaxPriorityQueue;->isEvenLevel(I)Z
 
     move-result p1
@@ -458,6 +523,19 @@
 
 .method static initialQueueSize(IILjava/lang/Iterable;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "configuredExpectedSize",
+            "maximumSize",
+            "initialContents"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -472,25 +550,25 @@
 
     const/16 p0, 0xb
 
-    .line 925
+    .line 960
     :cond_0
     instance-of v0, p2, Ljava/util/Collection;
 
     if-eqz v0, :cond_1
 
-    .line 926
+    .line 961
     check-cast p2, Ljava/util/Collection;
 
     invoke-interface {p2}, Ljava/util/Collection;->size()I
 
     move-result p2
 
-    .line 927
+    .line 962
     invoke-static {p0, p2}, Ljava/lang/Math;->max(II)I
 
     move-result p0
 
-    .line 931
+    .line 966
     :cond_1
     invoke-static {p0, p1}, Lcom/google/common/collect/MinMaxPriorityQueue;->capAtMaximumSize(II)I
 
@@ -501,6 +579,14 @@
 
 .method static isEvenLevel(I)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -521,7 +607,7 @@
     :cond_0
     move v2, v1
 
-    .line 480
+    .line 504
     :goto_0
     const-string v3, "negative index"
 
@@ -548,6 +634,15 @@
 
 .method public static maximumSize(I)Lcom/google/common/collect/MinMaxPriorityQueue$Builder;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "maximumSize"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -557,7 +652,7 @@
         }
     .end annotation
 
-    .line 143
+    .line 156
     new-instance v0, Lcom/google/common/collect/MinMaxPriorityQueue$Builder;
 
     invoke-static {}, Lcom/google/common/collect/Ordering;->natural()Lcom/google/common/collect/Ordering;
@@ -577,6 +672,15 @@
 
 .method public static orderedBy(Ljava/util/Comparator;)Lcom/google/common/collect/MinMaxPriorityQueue$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "comparator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<B:",
@@ -589,7 +693,7 @@
         }
     .end annotation
 
-    .line 125
+    .line 136
     new-instance v0, Lcom/google/common/collect/MinMaxPriorityQueue$Builder;
 
     const/4 v1, 0x0
@@ -601,18 +705,27 @@
 
 .method private removeAndGet(I)Ljava/lang/Object;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TE;"
         }
     .end annotation
 
-    .line 465
+    .line 489
     invoke-virtual {p0, p1}, Lcom/google/common/collect/MinMaxPriorityQueue;->elementData(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 466
+    .line 490
     invoke-virtual {p0, p1}, Lcom/google/common/collect/MinMaxPriorityQueue;->removeAt(I)Lcom/google/common/collect/MinMaxPriorityQueue$MoveDesc;
 
     return-object v0
@@ -622,13 +735,22 @@
 # virtual methods
 .method public add(Ljava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "element"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)Z"
         }
     .end annotation
 
-    .line 258
+    .line 270
     invoke-virtual {p0, p1}, Lcom/google/common/collect/MinMaxPriorityQueue;->offer(Ljava/lang/Object;)Z
 
     const/4 p0, 0x1
@@ -638,6 +760,15 @@
 
 .method public addAll(Ljava/util/Collection;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "newElements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -646,7 +777,7 @@
         }
     .end annotation
 
-    .line 266
+    .line 278
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -664,7 +795,7 @@
 
     move-result-object v0
 
-    .line 267
+    .line 279
     invoke-virtual {p0, v0}, Lcom/google/common/collect/MinMaxPriorityQueue;->offer(Ljava/lang/Object;)Z
 
     const/4 v0, 0x1
@@ -678,7 +809,7 @@
 .method capacity()I
     .locals 0
 
-    .line 908
+    .line 943
     iget-object p0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->queue:[Ljava/lang/Object;
 
     array-length p0, p0
@@ -693,13 +824,13 @@
 
     move v1, v0
 
-    .line 884
+    .line 918
     :goto_0
     iget v2, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
     if-ge v1, v2, :cond_0
 
-    .line 885
+    .line 919
     iget-object v2, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->queue:[Ljava/lang/Object;
 
     const/4 v3, 0x0
@@ -710,7 +841,7 @@
 
     goto :goto_0
 
-    .line 887
+    .line 921
     :cond_0
     iput v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
@@ -727,7 +858,7 @@
         }
     .end annotation
 
-    .line 903
+    .line 938
     iget-object p0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->minHeap:Lcom/google/common/collect/MinMaxPriorityQueue$Heap;
 
     iget-object p0, p0, Lcom/google/common/collect/MinMaxPriorityQueue$Heap;->ordering:Lcom/google/common/collect/Ordering;
@@ -737,16 +868,29 @@
 
 .method elementData(I)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TE;"
         }
     .end annotation
 
-    .line 301
+    .line 318
     iget-object p0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->queue:[Ljava/lang/Object;
 
     aget-object p0, p0, p1
+
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
 
     return-object p0
 .end method
@@ -758,13 +902,13 @@
 
     move v1, v0
 
-    .line 491
+    .line 515
     :goto_0
     iget v2, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
     if-ge v1, v2, :cond_1
 
-    .line 492
+    .line 516
     invoke-direct {p0, v1}, Lcom/google/common/collect/MinMaxPriorityQueue;->heapForIndex(I)Lcom/google/common/collect/MinMaxPriorityQueue$Heap;
 
     move-result-object v2
@@ -798,7 +942,7 @@
         }
     .end annotation
 
-    .line 879
+    .line 913
     new-instance v0, Lcom/google/common/collect/MinMaxPriorityQueue$QueueIterator;
 
     const/4 v1, 0x0
@@ -810,16 +954,25 @@
 
 .method public offer(Ljava/lang/Object;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "element"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)Z"
         }
     .end annotation
 
-    .line 281
+    .line 293
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 282
+    .line 294
     iget v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->modCount:I
 
     const/4 v1, 0x1
@@ -828,24 +981,24 @@
 
     iput v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->modCount:I
 
-    .line 283
+    .line 295
     iget v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
     add-int/lit8 v2, v0, 0x1
 
     iput v2, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
-    .line 285
+    .line 297
     invoke-direct {p0}, Lcom/google/common/collect/MinMaxPriorityQueue;->growIfNeeded()V
 
-    .line 289
+    .line 301
     invoke-direct {p0, v0}, Lcom/google/common/collect/MinMaxPriorityQueue;->heapForIndex(I)Lcom/google/common/collect/MinMaxPriorityQueue$Heap;
 
     move-result-object v2
 
     invoke-virtual {v2, v0, p1}, Lcom/google/common/collect/MinMaxPriorityQueue$Heap;->bubbleUp(ILjava/lang/Object;)V
 
-    .line 290
+    .line 302
     iget v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
     iget v2, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->maximumSize:I
@@ -876,7 +1029,10 @@
         }
     .end annotation
 
-    .line 306
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 324
     invoke-virtual {p0}, Lcom/google/common/collect/MinMaxPriorityQueue;->isEmpty()Z
 
     move-result v0
@@ -906,7 +1062,10 @@
         }
     .end annotation
 
-    .line 347
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 367
     invoke-virtual {p0}, Lcom/google/common/collect/MinMaxPriorityQueue;->peek()Ljava/lang/Object;
 
     move-result-object p0
@@ -922,7 +1081,10 @@
         }
     .end annotation
 
-    .line 377
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 399
     invoke-virtual {p0}, Lcom/google/common/collect/MinMaxPriorityQueue;->isEmpty()Z
 
     move-result v0
@@ -954,7 +1116,10 @@
         }
     .end annotation
 
-    .line 296
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 309
     invoke-virtual {p0}, Lcom/google/common/collect/MinMaxPriorityQueue;->isEmpty()Z
 
     move-result v0
@@ -984,7 +1149,10 @@
         }
     .end annotation
 
-    .line 329
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 348
     invoke-virtual {p0}, Lcom/google/common/collect/MinMaxPriorityQueue;->poll()Ljava/lang/Object;
 
     move-result-object p0
@@ -1000,7 +1168,10 @@
         }
     .end annotation
 
-    .line 356
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 377
     invoke-virtual {p0}, Lcom/google/common/collect/MinMaxPriorityQueue;->isEmpty()Z
 
     move-result v0
@@ -1026,6 +1197,15 @@
 
 .method removeAt(I)Lcom/google/common/collect/MinMaxPriorityQueue$MoveDesc;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1034,19 +1214,22 @@
         }
     .end annotation
 
-    .line 396
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 419
     iget v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkPositionIndex(II)I
 
-    .line 397
+    .line 420
     iget v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->modCount:I
 
     add-int/lit8 v0, v0, 0x1
 
     iput v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->modCount:I
 
-    .line 398
+    .line 421
     iget v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
     add-int/lit8 v0, v0, -0x1
@@ -1057,20 +1240,20 @@
 
     if-ne v0, p1, :cond_0
 
-    .line 400
+    .line 423
     iget-object p0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->queue:[Ljava/lang/Object;
 
     aput-object v1, p0, v0
 
     return-object v1
 
-    .line 403
+    .line 426
     :cond_0
     invoke-virtual {p0, v0}, Lcom/google/common/collect/MinMaxPriorityQueue;->elementData(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 404
+    .line 427
     iget v2, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
     invoke-direct {p0, v2}, Lcom/google/common/collect/MinMaxPriorityQueue;->heapForIndex(I)Lcom/google/common/collect/MinMaxPriorityQueue$Heap;
@@ -1083,7 +1266,7 @@
 
     if-ne v2, p1, :cond_1
 
-    .line 409
+    .line 432
     iget-object p1, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->queue:[Ljava/lang/Object;
 
     iget p0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
@@ -1092,7 +1275,7 @@
 
     return-object v1
 
-    .line 412
+    .line 435
     :cond_1
     iget v3, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
@@ -1100,14 +1283,14 @@
 
     move-result-object v3
 
-    .line 413
+    .line 436
     iget-object v4, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->queue:[Ljava/lang/Object;
 
     iget v5, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
     aput-object v1, v4, v5
 
-    .line 414
+    .line 437
     invoke-direct {p0, p1, v3}, Lcom/google/common/collect/MinMaxPriorityQueue;->fillHole(ILjava/lang/Object;)Lcom/google/common/collect/MinMaxPriorityQueue$MoveDesc;
 
     move-result-object p0
@@ -1116,14 +1299,14 @@
 
     if-nez p0, :cond_2
 
-    .line 419
+    .line 442
     new-instance p0, Lcom/google/common/collect/MinMaxPriorityQueue$MoveDesc;
 
     invoke-direct {p0, v0, v3}, Lcom/google/common/collect/MinMaxPriorityQueue$MoveDesc;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     return-object p0
 
-    .line 423
+    .line 446
     :cond_2
     new-instance p1, Lcom/google/common/collect/MinMaxPriorityQueue$MoveDesc;
 
@@ -1145,7 +1328,7 @@
         }
     .end annotation
 
-    .line 339
+    .line 358
     invoke-virtual {p0}, Lcom/google/common/collect/MinMaxPriorityQueue;->remove()Ljava/lang/Object;
 
     move-result-object p0
@@ -1161,14 +1344,14 @@
         }
     .end annotation
 
-    .line 366
+    .line 387
     invoke-virtual {p0}, Lcom/google/common/collect/MinMaxPriorityQueue;->isEmpty()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 369
+    .line 390
     invoke-direct {p0}, Lcom/google/common/collect/MinMaxPriorityQueue;->getMaxElementIndex()I
 
     move-result v0
@@ -1179,7 +1362,7 @@
 
     return-object p0
 
-    .line 367
+    .line 388
     :cond_0
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -1191,7 +1374,7 @@
 .method public size()I
     .locals 0
 
-    .line 245
+    .line 257
     iget p0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
     return p0
@@ -1200,12 +1383,12 @@
 .method public toArray()[Ljava/lang/Object;
     .locals 3
 
-    .line 892
+    .line 927
     iget v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
     new-array v1, v0, [Ljava/lang/Object;
 
-    .line 893
+    .line 928
     iget-object p0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->queue:[Ljava/lang/Object;
 
     const/4 v2, 0x0

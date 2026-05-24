@@ -96,16 +96,16 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 905
+    .line 1112
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 906
+    .line 1113
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$CircleInfo;->total:I
 
-    .line 907
+    .line 1114
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$CircleInfo;->indexForRanges:Ljava/util/List;
 
-    .line 908
+    .line 1115
     iput p3, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$CircleInfo;->activeIndex:I
 
     return-void
@@ -257,7 +257,7 @@
 .method public final getActiveIndex()I
     .locals 0
 
-    .line 908
+    .line 1115
     iget p0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$CircleInfo;->activeIndex:I
 
     return p0
@@ -274,7 +274,7 @@
         }
     .end annotation
 
-    .line 907
+    .line 1114
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$CircleInfo;->indexForRanges:Ljava/util/List;
 
     return-object p0
@@ -283,7 +283,7 @@
 .method public final getTotal()I
     .locals 0
 
-    .line 906
+    .line 1113
     iget p0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$CircleInfo;->total:I
 
     return p0

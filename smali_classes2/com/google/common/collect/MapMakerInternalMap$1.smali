@@ -32,7 +32,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1006
+    .line 1044
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -48,6 +48,17 @@
 
 .method public copyFor(Ljava/lang/ref/ReferenceQueue;Lcom/google/common/collect/MapMakerInternalMap$DummyInternalEntry;)Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "queue",
+            "entry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -69,8 +80,18 @@
 
 .method public bridge synthetic copyFor(Ljava/lang/ref/ReferenceQueue;Lcom/google/common/collect/MapMakerInternalMap$InternalEntry;)Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "queue",
+            "entry"
+        }
+    .end annotation
 
-    .line 1006
+    .line 1044
     check-cast p2, Lcom/google/common/collect/MapMakerInternalMap$DummyInternalEntry;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/MapMakerInternalMap$1;->copyFor(Ljava/lang/ref/ReferenceQueue;Lcom/google/common/collect/MapMakerInternalMap$DummyInternalEntry;)Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference;
@@ -82,6 +103,8 @@
 
 .method public get()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 
     const/4 p0, 0x0
 
@@ -90,6 +113,8 @@
 
 .method public getEntry()Lcom/google/common/collect/MapMakerInternalMap$DummyInternalEntry;
     .locals 0
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 
     const/4 p0, 0x0
 
@@ -98,8 +123,10 @@
 
 .method public bridge synthetic getEntry()Lcom/google/common/collect/MapMakerInternalMap$InternalEntry;
     .locals 0
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 
-    .line 1006
+    .line 1044
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$1;->getEntry()Lcom/google/common/collect/MapMakerInternalMap$DummyInternalEntry;
 
     move-result-object p0

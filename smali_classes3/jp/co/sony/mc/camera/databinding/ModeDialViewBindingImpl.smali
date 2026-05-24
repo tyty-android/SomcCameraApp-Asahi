@@ -22,6 +22,16 @@
 
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root"
+        }
+    .end annotation
 
     .line 25
     sget-object v0, Ljp/co/sony/mc/camera/databinding/ModeDialViewBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -41,6 +51,18 @@
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root",
+            "bindings"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -53,7 +75,7 @@
 
     const-wide/16 v0, -0x1
 
-    .line 114
+    .line 126
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/ModeDialViewBindingImpl;->mDirtyFlags:J
 
     .line 31
@@ -77,16 +99,16 @@
 .method protected executeBindings()V
     .locals 2
 
-    .line 105
+    .line 117
     monitor-enter p0
 
     const-wide/16 v0, 0x0
 
-    .line 107
+    .line 119
     :try_start_0
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/ModeDialViewBindingImpl;->mDirtyFlags:J
 
-    .line 108
+    .line 120
     monitor-exit p0
 
     return-void
@@ -148,7 +170,7 @@
     .line 39
     monitor-enter p0
 
-    const-wide/16 v0, 0x20
+    const-wide/16 v0, 0x80
 
     .line 40
     :try_start_0
@@ -178,6 +200,18 @@
 
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "localFieldId",
+            "object",
+            "fieldId"
+        }
+    .end annotation
 
     const/4 p0, 0x0
 
@@ -186,26 +220,84 @@
 
 .method public setBasicModeCommonUiState(Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "BasicModeCommonUiState"
+        }
+    .end annotation
 
-    .line 89
+    .line 101
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ModeDialViewBindingImpl;->mBasicModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
+
+    return-void
+.end method
+
+.method public setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "CameraSettingsModel"
+        }
+    .end annotation
+
+    .line 86
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ModeDialViewBindingImpl;->mCameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     return-void
 .end method
 
 .method public setCameraStatusModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "CameraStatusModel"
+        }
+    .end annotation
 
-    .line 86
+    .line 95
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ModeDialViewBindingImpl;->mCameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
+
+    return-void
+.end method
+
+.method public setMessageUiState(Ljp/co/sony/mc/camera/view/uistate/MessageUiState;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "MessageUiState"
+        }
+    .end annotation
+
+    .line 98
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ModeDialViewBindingImpl;->mMessageUiState:Ljp/co/sony/mc/camera/view/uistate/MessageUiState;
 
     return-void
 .end method
 
 .method public setModeCustomUiState(Ljp/co/sony/mc/camera/view/uistate/ModeCustomUiState;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ModeCustomUiState"
+        }
+    .end annotation
 
-    .line 92
+    .line 104
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ModeDialViewBindingImpl;->mModeCustomUiState:Ljp/co/sony/mc/camera/view/uistate/ModeCustomUiState;
 
     return-void
@@ -213,8 +305,16 @@
 
 .method public setModeDialUiState(Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ModeDialUiState"
+        }
+    .end annotation
 
-    .line 83
+    .line 92
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ModeDialViewBindingImpl;->mModeDialUiState:Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;
 
     return-void
@@ -222,8 +322,16 @@
 
 .method public setProModeCommonUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ProModeCommonUiState"
+        }
+    .end annotation
 
-    .line 80
+    .line 89
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ModeDialViewBindingImpl;->mProModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
 
     return-void
@@ -231,60 +339,94 @@
 
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "variableId",
+            "variable"
+        }
+    .end annotation
 
-    const/16 v0, 0x18
+    const/16 v0, 0xb
 
     if-ne v0, p1, :cond_0
 
     .line 59
+    check-cast p2, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/ModeDialViewBindingImpl;->setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
+
+    goto :goto_0
+
+    :cond_0
+    const/16 v0, 0x1b
+
+    if-ne v0, p1, :cond_1
+
+    .line 62
     check-cast p2, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
 
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/ModeDialViewBindingImpl;->setProModeCommonUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;)V
 
     goto :goto_0
 
-    :cond_0
-    const/16 v0, 0x15
+    :cond_1
+    const/16 v0, 0x18
 
-    if-ne v0, p1, :cond_1
+    if-ne v0, p1, :cond_2
 
-    .line 62
+    .line 65
     check-cast p2, Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;
 
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/ModeDialViewBindingImpl;->setModeDialUiState(Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;)V
 
     goto :goto_0
 
-    :cond_1
-    const/16 v0, 0x9
+    :cond_2
+    const/16 v0, 0xc
 
-    if-ne v0, p1, :cond_2
+    if-ne v0, p1, :cond_3
 
-    .line 65
+    .line 68
     check-cast p2, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/ModeDialViewBindingImpl;->setCameraStatusModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;)V
 
     goto :goto_0
 
-    :cond_2
-    const/4 v0, 0x4
+    :cond_3
+    const/16 v0, 0x16
 
-    if-ne v0, p1, :cond_3
+    if-ne v0, p1, :cond_4
 
-    .line 68
+    .line 71
+    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/MessageUiState;
+
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/ModeDialViewBindingImpl;->setMessageUiState(Ljp/co/sony/mc/camera/view/uistate/MessageUiState;)V
+
+    goto :goto_0
+
+    :cond_4
+    const/4 v0, 0x5
+
+    if-ne v0, p1, :cond_5
+
+    .line 74
     check-cast p2, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
 
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/ModeDialViewBindingImpl;->setBasicModeCommonUiState(Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;)V
 
     goto :goto_0
 
-    :cond_3
-    const/16 v0, 0x14
+    :cond_5
+    const/16 v0, 0x17
 
-    if-ne v0, p1, :cond_4
+    if-ne v0, p1, :cond_6
 
-    .line 71
+    .line 77
     check-cast p2, Ljp/co/sony/mc/camera/view/uistate/ModeCustomUiState;
 
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/ModeDialViewBindingImpl;->setModeCustomUiState(Ljp/co/sony/mc/camera/view/uistate/ModeCustomUiState;)V
@@ -294,7 +436,7 @@
 
     goto :goto_1
 
-    :cond_4
+    :cond_6
     const/4 p0, 0x0
 
     :goto_1

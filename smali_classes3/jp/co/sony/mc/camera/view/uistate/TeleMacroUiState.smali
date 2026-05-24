@@ -237,15 +237,15 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState;->isTeleMacroBarGone:Landroidx/lifecycle/LiveData;
 
-    .line 36
+    .line 38
     sget-object v0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 37
+    .line 39
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
 
     move-result-object v1
 
-    .line 38
+    .line 40
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;->getLayoutType()Landroidx/lifecycle/LiveData;
 
     move-result-object p1
@@ -254,22 +254,22 @@
 
     invoke-direct {v2}, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState$$ExternalSyntheticLambda1;-><init>()V
 
-    .line 36
+    .line 38
     invoke-virtual {v0, v1, p1, v2}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object p1
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState;->isFocusMagMenuVisible:Landroidx/lifecycle/LiveData;
 
-    .line 43
+    .line 45
     sget-object p1, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 44
+    .line 46
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getPreviewing()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
-    .line 45
+    .line 47
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isBurstPostProcessing()Landroidx/lifecycle/LiveData;
 
     move-result-object v1
@@ -278,22 +278,22 @@
 
     invoke-direct {v2}, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState$$ExternalSyntheticLambda2;-><init>()V
 
-    .line 43
+    .line 45
     invoke-virtual {p1, v0, v1, v2}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object p1
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState;->isToggleMacroModeButtonEnable:Landroidx/lifecycle/LiveData;
 
-    .line 50
+    .line 52
     sget-object p1, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 51
+    .line 53
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
 
     move-result-object p3
 
-    .line 52
+    .line 54
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getRecording()Landroidx/lifecycle/LiveData;
 
     move-result-object p2
@@ -302,7 +302,7 @@
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState$$ExternalSyntheticLambda3;-><init>()V
 
-    .line 50
+    .line 52
     invoke-virtual {p1, p3, p2, v0}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object p1
@@ -319,7 +319,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 40
+    .line 42
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isMacro()Z
 
     move-result p0
@@ -356,7 +356,17 @@
     if-nez p0, :cond_1
 
     .line 33
+    instance-of p0, p1, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$AiSuggestionCustomizeMenu;
+
+    if-nez p0, :cond_1
+
+    .line 34
     instance-of p0, p1, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$QuickSetting;
+
+    if-nez p0, :cond_1
+
+    .line 35
+    instance-of p0, p1, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$AiSuggestionColorToneProfile;
 
     if-eqz p0, :cond_0
 
@@ -380,7 +390,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 47
+    .line 49
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p0
@@ -401,7 +411,7 @@
 .method private static final isToggleMacroModeButtonVisible$lambda$3(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Z)Z
     .locals 0
 
-    .line 54
+    .line 56
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isMacro()Z
 
     move-result p0
@@ -460,7 +470,7 @@
         }
     .end annotation
 
-    .line 36
+    .line 38
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState;->isFocusMagMenuVisible:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -494,7 +504,7 @@
         }
     .end annotation
 
-    .line 43
+    .line 45
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState;->isToggleMacroModeButtonEnable:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -511,7 +521,7 @@
         }
     .end annotation
 
-    .line 50
+    .line 52
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState;->isToggleMacroModeButtonVisible:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -520,15 +530,15 @@
 .method public final onFocusChangedByRemocon(ZZ)V
     .locals 1
 
-    .line 67
+    .line 69
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState;->_onFocusChangedByRemoconEvent:Ljp/co/sony/mc/camera/view/viewmodel/LiveEvent;
 
-    .line 68
+    .line 70
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState$FocusAdjustAction;
 
     invoke-direct {v0, p1, p2}, Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState$FocusAdjustAction;-><init>(ZZ)V
 
-    .line 67
+    .line 69
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/viewmodel/LiveEvent;->setValue(Ljava/lang/Object;)V
 
     return-void
@@ -546,7 +556,7 @@
 .method public final toggleMacroMode()V
     .locals 2
 
-    .line 58
+    .line 60
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState;->basicModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$ModeChanged;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$ModeChanged;
@@ -555,7 +565,7 @@
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;->closeAllMenu(Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason;)Z
 
-    .line 59
+    .line 61
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
@@ -572,7 +582,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 60
+    .line 62
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     if-eqz p0, :cond_1
@@ -583,7 +593,7 @@
 
     goto :goto_0
 
-    .line 62
+    .line 64
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 

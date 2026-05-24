@@ -18,7 +18,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1173
+    .line 1165
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -26,6 +26,14 @@
 
 .method public static getApi1Value(I)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "framingAssistPositionMode"
+        }
+    .end annotation
 
     if-eqz p0, :cond_1
 
@@ -37,13 +45,13 @@
 
     goto :goto_0
 
-    .line 1184
+    .line 1176
     :cond_0
     const-string p0, "locking"
 
     goto :goto_0
 
-    .line 1180
+    .line 1172
     :cond_1
     const-string p0, "center"
 
@@ -53,8 +61,16 @@
 
 .method static getApi2Value(Ljava/lang/String;)Ljava/lang/Integer;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "framingAssistPositionMode"
+        }
+    .end annotation
 
-    .line 1193
+    .line 1185
     invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
 
     const-string v0, "center"
@@ -80,7 +96,7 @@
     :cond_0
     const/4 p0, 0x1
 
-    .line 1199
+    .line 1191
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -90,7 +106,7 @@
     :cond_1
     const/4 p0, 0x0
 
-    .line 1195
+    .line 1187
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0

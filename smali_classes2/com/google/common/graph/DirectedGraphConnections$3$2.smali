@@ -22,15 +22,29 @@
 
 
 # instance fields
+.field final synthetic this$1:Lcom/google/common/graph/DirectedGraphConnections$3;
+
 .field final synthetic val$nodeConnections:Ljava/util/Iterator;
 
 
 # direct methods
 .method constructor <init>(Lcom/google/common/graph/DirectedGraphConnections$3;Ljava/util/Iterator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$1",
+            "val$nodeConnections"
+        }
+    .end annotation
 
-    .line 340
+    .line 345
     iput-object p2, p0, Lcom/google/common/graph/DirectedGraphConnections$3$2;->val$nodeConnections:Ljava/util/Iterator;
+
+    iput-object p1, p0, Lcom/google/common/graph/DirectedGraphConnections$3$2;->this$1:Lcom/google/common/graph/DirectedGraphConnections$3;
 
     invoke-direct {p0}, Lcom/google/common/collect/AbstractIterator;-><init>()V
 
@@ -47,7 +61,10 @@
         }
     .end annotation
 
-    .line 343
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 349
     :cond_0
     iget-object v0, p0, Lcom/google/common/graph/DirectedGraphConnections$3$2;->val$nodeConnections:Ljava/util/Iterator;
 
@@ -57,7 +74,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 344
+    .line 350
     iget-object v0, p0, Lcom/google/common/graph/DirectedGraphConnections$3$2;->val$nodeConnections:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -66,17 +83,17 @@
 
     check-cast v0, Lcom/google/common/graph/DirectedGraphConnections$NodeConnection;
 
-    .line 345
+    .line 351
     instance-of v1, v0, Lcom/google/common/graph/DirectedGraphConnections$NodeConnection$Succ;
 
     if-eqz v1, :cond_0
 
-    .line 346
+    .line 352
     iget-object p0, v0, Lcom/google/common/graph/DirectedGraphConnections$NodeConnection;->node:Ljava/lang/Object;
 
     return-object p0
 
-    .line 349
+    .line 355
     :cond_1
     invoke-virtual {p0}, Lcom/google/common/graph/DirectedGraphConnections$3$2;->endOfData()Ljava/lang/Object;
 

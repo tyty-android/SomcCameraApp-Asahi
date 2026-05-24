@@ -30,11 +30,11 @@
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder$$ExternalSyntheticLambda5;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;->$r8$lambda$rIG2b_6INq3SunjwxfnfujDspOw(Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;)I
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;->$r8$lambda$bFOgEur9BHjFiqPH_N8trduWomk(Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;)F
 
     move-result p0
 
-    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p0
 

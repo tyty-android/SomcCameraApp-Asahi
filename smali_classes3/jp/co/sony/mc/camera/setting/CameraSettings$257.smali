@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 2758
+    .line 3004
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,6 +31,17 @@
 # virtual methods
 .method public getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -42,8 +53,8 @@
         }
     .end annotation
 
-    .line 2762
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->getDefault()Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+    .line 3008
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;
 
     move-result-object p0
 

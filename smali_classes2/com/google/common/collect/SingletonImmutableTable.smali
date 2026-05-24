@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<R:",
@@ -48,6 +51,15 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/Table$Cell;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cell"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -56,7 +68,7 @@
         }
     .end annotation
 
-    .line 42
+    .line 45
     invoke-interface {p1}, Lcom/google/common/collect/Table$Cell;->getRowKey()Ljava/lang/Object;
 
     move-result-object v0
@@ -76,30 +88,43 @@
 
 .method constructor <init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "rowKey",
+            "columnKey",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TR;TC;TV;)V"
         }
     .end annotation
 
-    .line 35
+    .line 38
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableTable;-><init>()V
 
-    .line 36
+    .line 39
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/google/common/collect/SingletonImmutableTable;->singleRowKey:Ljava/lang/Object;
 
-    .line 37
+    .line 40
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/google/common/collect/SingletonImmutableTable;->singleColumnKey:Ljava/lang/Object;
 
-    .line 38
+    .line 41
     invoke-static {p3}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -113,6 +138,15 @@
 # virtual methods
 .method public column(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "columnKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TC;)",
@@ -121,17 +155,17 @@
         }
     .end annotation
 
-    .line 47
+    .line 50
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 48
+    .line 51
     invoke-virtual {p0, p1}, Lcom/google/common/collect/SingletonImmutableTable;->containsColumn(Ljava/lang/Object;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 49
+    .line 52
     iget-object p1, p0, Lcom/google/common/collect/SingletonImmutableTable;->singleRowKey:Ljava/lang/Object;
 
     iget-object p0, p0, Lcom/google/common/collect/SingletonImmutableTable;->singleValue:Ljava/lang/Object;
@@ -142,7 +176,7 @@
 
     goto :goto_0
 
-    .line 50
+    .line 53
     :cond_0
     invoke-static {}, Lcom/google/common/collect/ImmutableMap;->of()Lcom/google/common/collect/ImmutableMap;
 
@@ -154,8 +188,16 @@
 
 .method public bridge synthetic column(Ljava/lang/Object;)Ljava/util/Map;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "columnKey"
+        }
+    .end annotation
 
-    .line 29
+    .line 31
     invoke-virtual {p0, p1}, Lcom/google/common/collect/SingletonImmutableTable;->column(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap;
 
     move-result-object p0
@@ -175,7 +217,7 @@
         }
     .end annotation
 
-    .line 55
+    .line 58
     iget-object v0, p0, Lcom/google/common/collect/SingletonImmutableTable;->singleColumnKey:Ljava/lang/Object;
 
     iget-object v1, p0, Lcom/google/common/collect/SingletonImmutableTable;->singleRowKey:Ljava/lang/Object;
@@ -196,7 +238,7 @@
 .method public bridge synthetic columnMap()Ljava/util/Map;
     .locals 0
 
-    .line 29
+    .line 31
     invoke-virtual {p0}, Lcom/google/common/collect/SingletonImmutableTable;->columnMap()Lcom/google/common/collect/ImmutableMap;
 
     move-result-object p0
@@ -215,7 +257,7 @@
         }
     .end annotation
 
-    .line 70
+    .line 73
     iget-object v0, p0, Lcom/google/common/collect/SingletonImmutableTable;->singleRowKey:Ljava/lang/Object;
 
     iget-object v1, p0, Lcom/google/common/collect/SingletonImmutableTable;->singleColumnKey:Ljava/lang/Object;
@@ -236,29 +278,8 @@
 .method bridge synthetic createCellSet()Ljava/util/Set;
     .locals 0
 
-    .line 29
+    .line 31
     invoke-virtual {p0}, Lcom/google/common/collect/SingletonImmutableTable;->createCellSet()Lcom/google/common/collect/ImmutableSet;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method createSerializedForm()Lcom/google/common/collect/ImmutableTable$SerializedForm;
-    .locals 2
-
-    const/4 v0, 0x0
-
-    .line 80
-    filled-new-array {v0}, [I
-
-    move-result-object v1
-
-    filled-new-array {v0}, [I
-
-    move-result-object v0
-
-    invoke-static {p0, v1, v0}, Lcom/google/common/collect/ImmutableTable$SerializedForm;->create(Lcom/google/common/collect/ImmutableTable;[I[I)Lcom/google/common/collect/ImmutableTable$SerializedForm;
 
     move-result-object p0
 
@@ -275,7 +296,7 @@
         }
     .end annotation
 
-    .line 75
+    .line 78
     iget-object p0, p0, Lcom/google/common/collect/SingletonImmutableTable;->singleValue:Ljava/lang/Object;
 
     invoke-static {p0}, Lcom/google/common/collect/ImmutableSet;->of(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSet;
@@ -288,7 +309,7 @@
 .method bridge synthetic createValues()Ljava/util/Collection;
     .locals 0
 
-    .line 29
+    .line 31
     invoke-virtual {p0}, Lcom/google/common/collect/SingletonImmutableTable;->createValues()Lcom/google/common/collect/ImmutableCollection;
 
     move-result-object p0
@@ -308,7 +329,7 @@
         }
     .end annotation
 
-    .line 60
+    .line 63
     iget-object v0, p0, Lcom/google/common/collect/SingletonImmutableTable;->singleRowKey:Ljava/lang/Object;
 
     iget-object v1, p0, Lcom/google/common/collect/SingletonImmutableTable;->singleColumnKey:Ljava/lang/Object;
@@ -329,7 +350,7 @@
 .method public bridge synthetic rowMap()Ljava/util/Map;
     .locals 0
 
-    .line 29
+    .line 31
     invoke-virtual {p0}, Lcom/google/common/collect/SingletonImmutableTable;->rowMap()Lcom/google/common/collect/ImmutableMap;
 
     move-result-object p0
@@ -343,4 +364,25 @@
     const/4 p0, 0x1
 
     return p0
+.end method
+
+.method writeReplace()Ljava/lang/Object;
+    .locals 2
+
+    const/4 v0, 0x0
+
+    .line 85
+    filled-new-array {v0}, [I
+
+    move-result-object v1
+
+    filled-new-array {v0}, [I
+
+    move-result-object v0
+
+    invoke-static {p0, v1, v0}, Lcom/google/common/collect/ImmutableTable$SerializedForm;->create(Lcom/google/common/collect/ImmutableTable;[I[I)Lcom/google/common/collect/ImmutableTable$SerializedForm;
+
+    move-result-object p0
+
+    return-object p0
 .end method

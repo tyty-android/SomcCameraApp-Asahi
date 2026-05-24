@@ -32,15 +32,15 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 532
+    .line 534
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 537
+    .line 539
     iput v0, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ExtFace;->id:I
 
-    .line 542
+    .line 544
     iput v0, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ExtFace;->trackingId:I
 
     return-void
@@ -51,7 +51,7 @@
 .method public isAnimal()Z
     .locals 2
 
-    .line 548
+    .line 550
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ExtFace;->faceRectType:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
 
     sget-object v1, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;->ANIMAL_FACE:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;

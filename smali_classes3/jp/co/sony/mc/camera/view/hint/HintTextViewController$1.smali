@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ljp/co/sony/mc/camera/view/hint/HintTextViewController;-><init>(Landroid/view/ViewGroup;Ljp/co/sony/mc/camera/view/hint/HintTextViewController$HintTextContentListener;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)V
+    value = Ljp/co/sony/mc/camera/view/hint/HintTextViewController;-><init>(Landroid/view/ViewGroup;Ljp/co/sony/mc/camera/view/hint/HintTextViewController$HintTextContentListener;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/hint/HintTextViewController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 155
+    .line 150
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$1;->this$0:Ljp/co/sony/mc/camera/view/hint/HintTextViewController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,8 +45,16 @@
 # virtual methods
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "animator"
+        }
+    .end annotation
 
-    .line 171
+    .line 166
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$1;->this$0:Ljp/co/sony/mc/camera/view/hint/HintTextViewController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->-$$Nest$fgetmHintTextView(Ljp/co/sony/mc/camera/view/hint/HintTextViewController;)Ljp/co/sony/mc/camera/view/hint/HintTextView;
@@ -54,8 +70,16 @@
 
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "animator"
+        }
+    .end annotation
 
-    .line 163
+    .line 158
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$1;->this$0:Ljp/co/sony/mc/camera/view/hint/HintTextViewController;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->-$$Nest$fgetmHandler(Ljp/co/sony/mc/camera/view/hint/HintTextViewController;)Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;
@@ -74,7 +98,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 164
+    .line 159
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$1;->this$0:Ljp/co/sony/mc/camera/view/hint/HintTextViewController;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->-$$Nest$fgetmHandler(Ljp/co/sony/mc/camera/view/hint/HintTextViewController;)Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;
@@ -85,7 +109,7 @@
 
     invoke-static {p1, v0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->-$$Nest$mcancelFromContentStack(Ljp/co/sony/mc/camera/view/hint/HintTextViewController;Ljp/co/sony/mc/camera/view/hint/HintTextContent;)Z
 
-    .line 166
+    .line 161
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$1;->this$0:Ljp/co/sony/mc/camera/view/hint/HintTextViewController;
 
@@ -102,12 +126,28 @@
 
 .method public onAnimationRepeat(Landroid/animation/Animator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "animator"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "animator"
+        }
+    .end annotation
 
     return-void
 .end method

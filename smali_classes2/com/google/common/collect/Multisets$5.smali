@@ -25,8 +25,16 @@
 # direct methods
 .method constructor <init>(Ljava/util/Iterator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "backingIterator"
+        }
+    .end annotation
 
-    .line 950
+    .line 999
     invoke-direct {p0, p1}, Lcom/google/common/collect/TransformedIterator;-><init>(Ljava/util/Iterator;)V
 
     return-void
@@ -36,6 +44,18 @@
 # virtual methods
 .method transform(Lcom/google/common/collect/Multiset$Entry;)Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "entry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -44,7 +64,7 @@
         }
     .end annotation
 
-    .line 953
+    .line 1003
     invoke-interface {p1}, Lcom/google/common/collect/Multiset$Entry;->getElement()Ljava/lang/Object;
 
     move-result-object p0
@@ -54,8 +74,19 @@
 
 .method bridge synthetic transform(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
 
-    .line 950
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "entry"
+        }
+    .end annotation
+
+    .line 999
     check-cast p1, Lcom/google/common/collect/Multiset$Entry;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Multisets$5;->transform(Lcom/google/common/collect/Multiset$Entry;)Ljava/lang/Object;

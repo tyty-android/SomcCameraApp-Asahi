@@ -33,6 +33,16 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;Landroid/content/SharedPreferences;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "name",
+            "prefs"
+        }
+    .end annotation
 
     .line 36
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,6 +62,17 @@
 
 .method constructor <init>(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "name",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -151,6 +172,17 @@
 
 .method read(Landroid/content/SharedPreferences;Ljava/lang/String;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "prefs",
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -167,6 +199,14 @@
 
 .method write(Landroid/content/SharedPreferences$Editor;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "editor"
+        }
+    .end annotation
 
     return-void
 .end method

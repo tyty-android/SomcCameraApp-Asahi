@@ -31,4 +31,12 @@
 .end method
 
 .method public abstract updateOperation(Ljp/co/sony/mc/camera/research/parameters/Event$UserOperation;)Ljp/co/sony/mc/camera/research/parameters/Event$UserOperation;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "currentOperation"
+        }
+    .end annotation
 .end method

@@ -83,9 +83,9 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f0801df
+    const v3, 0x7f08023b
 
-    const v4, 0x7f110244
+    const v4, 0x7f11028d
 
     move-object v0, v7
 
@@ -104,9 +104,9 @@
 
     const/4 v10, 0x1
 
-    const v11, 0x7f0801e5
+    const v11, 0x7f080241
 
-    const v12, 0x7f110248
+    const v12, 0x7f110291
 
     move-object v8, v0
 
@@ -125,9 +125,9 @@
 
     const/4 v3, 0x2
 
-    const v4, 0x7f0801e2
+    const v4, 0x7f08023e
 
-    const v5, 0x7f110246
+    const v5, 0x7f11028f
 
     move-object v1, v0
 
@@ -204,6 +204,25 @@
 
 .method private constructor <init>(Ljava/lang/String;IIILjava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId",
+            "value",
+            "focusRectangleCount"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -232,6 +251,14 @@
 
 .method public static getDefaultValue(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
     .line 146
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isMultiAutoFocusSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
@@ -254,6 +281,22 @@
 
 .method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Z)[Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId",
+            "videoSize",
+            "captureFps",
+            "isProductShowCaseOn"
+        }
+    .end annotation
 
     .line 132
     new-instance v0, Ljava/util/ArrayList;
@@ -307,6 +350,22 @@
 
 .method private static isObjectTrackingSupported(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Z)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId",
+            "videoSize",
+            "captureFps",
+            "isProductShowCaseOn"
+        }
+    .end annotation
 
     .line 174
     invoke-static {p1, p2, p3, p4}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isObjectTrackingSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Z)Z
@@ -341,6 +400,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 20
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;

@@ -7,13 +7,16 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/primitives/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation runtime Lcom/google/errorprone/annotations/Immutable;
 .end annotation
 
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/common/primitives/ImmutableLongArray$AsList;,
-        Lcom/google/common/primitives/ImmutableLongArray$Builder;
+        Lcom/google/common/primitives/ImmutableLongArray$Builder;,
+        Lcom/google/common/primitives/ImmutableLongArray$AsList;
     }
 .end annotation
 
@@ -34,7 +37,7 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 84
+    .line 90
     new-instance v0, Lcom/google/common/primitives/ImmutableLongArray;
 
     const/4 v1, 0x0
@@ -50,10 +53,18 @@
 
 .method private constructor <init>([J)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "array"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 318
+    .line 359
     array-length v1, p1
 
     invoke-direct {p0, p1, v0, v1}, Lcom/google/common/primitives/ImmutableLongArray;-><init>([JII)V
@@ -63,17 +74,29 @@
 
 .method private constructor <init>([JII)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "array",
+            "start",
+            "end"
+        }
+    .end annotation
 
-    .line 321
+    .line 362
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 322
+    .line 363
     iput-object p1, p0, Lcom/google/common/primitives/ImmutableLongArray;->array:[J
 
-    .line 323
+    .line 364
     iput p2, p0, Lcom/google/common/primitives/ImmutableLongArray;->start:I
 
-    .line 324
+    .line 365
     iput p3, p0, Lcom/google/common/primitives/ImmutableLongArray;->end:I
 
     return-void
@@ -82,7 +105,7 @@
 .method synthetic constructor <init>([JIILcom/google/common/primitives/ImmutableLongArray$1;)V
     .locals 0
 
-    .line 83
+    .line 89
     invoke-direct {p0, p1, p2, p3}, Lcom/google/common/primitives/ImmutableLongArray;-><init>([JII)V
 
     return-void
@@ -91,7 +114,7 @@
 .method static synthetic access$000(Lcom/google/common/primitives/ImmutableLongArray;)[J
     .locals 0
 
-    .line 83
+    .line 89
     iget-object p0, p0, Lcom/google/common/primitives/ImmutableLongArray;->array:[J
 
     return-object p0
@@ -100,7 +123,7 @@
 .method static synthetic access$100(Lcom/google/common/primitives/ImmutableLongArray;)I
     .locals 0
 
-    .line 83
+    .line 89
     iget p0, p0, Lcom/google/common/primitives/ImmutableLongArray;->start:I
 
     return p0
@@ -109,7 +132,7 @@
 .method static synthetic access$200()Lcom/google/common/primitives/ImmutableLongArray;
     .locals 1
 
-    .line 83
+    .line 89
     sget-object v0, Lcom/google/common/primitives/ImmutableLongArray;->EMPTY:Lcom/google/common/primitives/ImmutableLongArray;
 
     return-object v0
@@ -118,7 +141,7 @@
 .method public static builder()Lcom/google/common/primitives/ImmutableLongArray$Builder;
     .locals 2
 
-    .line 189
+    .line 208
     new-instance v0, Lcom/google/common/primitives/ImmutableLongArray$Builder;
 
     const/16 v1, 0xa
@@ -130,6 +153,14 @@
 
 .method public static builder(I)Lcom/google/common/primitives/ImmutableLongArray$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "initialCapacity"
+        }
+    .end annotation
 
     if-ltz p0, :cond_0
 
@@ -140,13 +171,13 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 176
+    .line 195
     :goto_0
     const-string v1, "Invalid initialCapacity: %s"
 
     invoke-static {v0, v1, p0}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;I)V
 
-    .line 177
+    .line 196
     new-instance v0, Lcom/google/common/primitives/ImmutableLongArray$Builder;
 
     invoke-direct {v0, p0}, Lcom/google/common/primitives/ImmutableLongArray$Builder;-><init>(I)V
@@ -156,6 +187,15 @@
 
 .method public static copyOf(Ljava/lang/Iterable;)Lcom/google/common/primitives/ImmutableLongArray;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "values"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -166,12 +206,12 @@
         }
     .end annotation
 
-    .line 159
+    .line 165
     instance-of v0, p0, Ljava/util/Collection;
 
     if-eqz v0, :cond_0
 
-    .line 160
+    .line 166
     check-cast p0, Ljava/util/Collection;
 
     invoke-static {p0}, Lcom/google/common/primitives/ImmutableLongArray;->copyOf(Ljava/util/Collection;)Lcom/google/common/primitives/ImmutableLongArray;
@@ -180,7 +220,7 @@
 
     return-object p0
 
-    .line 162
+    .line 168
     :cond_0
     invoke-static {}, Lcom/google/common/primitives/ImmutableLongArray;->builder()Lcom/google/common/primitives/ImmutableLongArray$Builder;
 
@@ -199,6 +239,15 @@
 
 .method public static copyOf(Ljava/util/Collection;)Lcom/google/common/primitives/ImmutableLongArray;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "values"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -209,7 +258,7 @@
         }
     .end annotation
 
-    .line 148
+    .line 154
     invoke-interface {p0}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v0
@@ -235,20 +284,64 @@
     return-object p0
 .end method
 
-.method public static copyOf([J)Lcom/google/common/primitives/ImmutableLongArray;
-    .locals 2
+.method public static copyOf(Ljava/util/stream/LongStream;)Lcom/google/common/primitives/ImmutableLongArray;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stream"
+        }
+    .end annotation
 
-    .line 141
+    .line 180
+    invoke-interface {p0}, Ljava/util/stream/LongStream;->toArray()[J
+
+    move-result-object p0
+
+    .line 181
     array-length v0, p0
 
     if-nez v0, :cond_0
 
-    .line 142
     sget-object p0, Lcom/google/common/primitives/ImmutableLongArray;->EMPTY:Lcom/google/common/primitives/ImmutableLongArray;
 
     goto :goto_0
 
-    .line 143
+    :cond_0
+    new-instance v0, Lcom/google/common/primitives/ImmutableLongArray;
+
+    invoke-direct {v0, p0}, Lcom/google/common/primitives/ImmutableLongArray;-><init>([J)V
+
+    move-object p0, v0
+
+    :goto_0
+    return-object p0
+.end method
+
+.method public static copyOf([J)Lcom/google/common/primitives/ImmutableLongArray;
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "values"
+        }
+    .end annotation
+
+    .line 147
+    array-length v0, p0
+
+    if-nez v0, :cond_0
+
+    .line 148
+    sget-object p0, Lcom/google/common/primitives/ImmutableLongArray;->EMPTY:Lcom/google/common/primitives/ImmutableLongArray;
+
+    goto :goto_0
+
+    .line 149
     :cond_0
     new-instance v0, Lcom/google/common/primitives/ImmutableLongArray;
 
@@ -269,7 +362,7 @@
 .method private isPartialView()Z
     .locals 1
 
-    .line 557
+    .line 646
     iget v0, p0, Lcom/google/common/primitives/ImmutableLongArray;->start:I
 
     if-gtz v0, :cond_1
@@ -300,7 +393,7 @@
 .method public static of()Lcom/google/common/primitives/ImmutableLongArray;
     .locals 1
 
-    .line 88
+    .line 94
     sget-object v0, Lcom/google/common/primitives/ImmutableLongArray;->EMPTY:Lcom/google/common/primitives/ImmutableLongArray;
 
     return-object v0
@@ -308,8 +401,16 @@
 
 .method public static of(J)Lcom/google/common/primitives/ImmutableLongArray;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e0"
+        }
+    .end annotation
 
-    .line 93
+    .line 99
     new-instance v0, Lcom/google/common/primitives/ImmutableLongArray;
 
     const/4 v1, 0x1
@@ -327,8 +428,18 @@
 
 .method public static of(JJ)Lcom/google/common/primitives/ImmutableLongArray;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "e0",
+            "e1"
+        }
+    .end annotation
 
-    .line 98
+    .line 104
     new-instance v0, Lcom/google/common/primitives/ImmutableLongArray;
 
     const/4 v1, 0x2
@@ -350,8 +461,20 @@
 
 .method public static of(JJJ)Lcom/google/common/primitives/ImmutableLongArray;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "e0",
+            "e1",
+            "e2"
+        }
+    .end annotation
 
-    .line 103
+    .line 109
     new-instance v0, Lcom/google/common/primitives/ImmutableLongArray;
 
     const/4 v1, 0x3
@@ -377,8 +500,22 @@
 
 .method public static of(JJJJ)Lcom/google/common/primitives/ImmutableLongArray;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "e0",
+            "e1",
+            "e2",
+            "e3"
+        }
+    .end annotation
 
-    .line 108
+    .line 114
     new-instance v0, Lcom/google/common/primitives/ImmutableLongArray;
 
     const/4 v1, 0x4
@@ -408,8 +545,24 @@
 
 .method public static of(JJJJJ)Lcom/google/common/primitives/ImmutableLongArray;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "e0",
+            "e1",
+            "e2",
+            "e3",
+            "e4"
+        }
+    .end annotation
 
-    .line 113
+    .line 119
     new-instance v0, Lcom/google/common/primitives/ImmutableLongArray;
 
     const/4 v1, 0x5
@@ -443,8 +596,26 @@
 
 .method public static of(JJJJJJ)Lcom/google/common/primitives/ImmutableLongArray;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "e0",
+            "e1",
+            "e2",
+            "e3",
+            "e4",
+            "e5"
+        }
+    .end annotation
 
-    .line 118
+    .line 124
     new-instance v0, Lcom/google/common/primitives/ImmutableLongArray;
 
     const/4 v1, 0x6
@@ -482,8 +653,18 @@
 
 .method public static varargs of(J[J)Lcom/google/common/primitives/ImmutableLongArray;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "first",
+            "rest"
+        }
+    .end annotation
 
-    .line 131
+    .line 137
     array-length v0, p2
 
     const v1, 0x7ffffffe
@@ -506,22 +687,22 @@
 
     invoke-static {v0, v1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/Object;)V
 
-    .line 133
+    .line 139
     array-length v0, p2
 
     add-int/2addr v0, v2
 
     new-array v0, v0, [J
 
-    .line 134
+    .line 140
     aput-wide p0, v0, v3
 
-    .line 135
+    .line 141
     array-length p0, p2
 
     invoke-static {p2, v3, v0, v2, p0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 136
+    .line 142
     new-instance p0, Lcom/google/common/primitives/ImmutableLongArray;
 
     invoke-direct {p0, v0}, Lcom/google/common/primitives/ImmutableLongArray;-><init>([J)V
@@ -542,7 +723,7 @@
         }
     .end annotation
 
-    .line 414
+    .line 491
     new-instance v0, Lcom/google/common/primitives/ImmutableLongArray$AsList;
 
     const/4 v1, 0x0
@@ -554,8 +735,16 @@
 
 .method public contains(J)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "target"
+        }
+    .end annotation
 
-    .line 379
+    .line 420
     invoke-virtual {p0, p1, p2}, Lcom/google/common/primitives/ImmutableLongArray;->indexOf(J)I
 
     move-result p0
@@ -576,9 +765,17 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 7
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -586,7 +783,7 @@
 
     return v0
 
-    .line 501
+    .line 590
     :cond_0
     instance-of v1, p1, Lcom/google/common/primitives/ImmutableLongArray;
 
@@ -596,11 +793,11 @@
 
     return v2
 
-    .line 504
+    .line 593
     :cond_1
     check-cast p1, Lcom/google/common/primitives/ImmutableLongArray;
 
-    .line 505
+    .line 594
     invoke-virtual {p0}, Lcom/google/common/primitives/ImmutableLongArray;->length()I
 
     move-result v1
@@ -616,7 +813,7 @@
     :cond_2
     move v1, v2
 
-    .line 508
+    .line 597
     :goto_0
     invoke-virtual {p0}, Lcom/google/common/primitives/ImmutableLongArray;->length()I
 
@@ -624,7 +821,7 @@
 
     if-ge v1, v3, :cond_4
 
-    .line 509
+    .line 598
     invoke-virtual {p0, v1}, Lcom/google/common/primitives/ImmutableLongArray;->get(I)J
 
     move-result-wide v3
@@ -648,17 +845,62 @@
     return v0
 .end method
 
+.method public forEach(Ljava/util/function/LongConsumer;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "consumer"
+        }
+    .end annotation
+
+    .line 431
+    invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 432
+    iget v0, p0, Lcom/google/common/primitives/ImmutableLongArray;->start:I
+
+    :goto_0
+    iget v1, p0, Lcom/google/common/primitives/ImmutableLongArray;->end:I
+
+    if-ge v0, v1, :cond_0
+
+    .line 433
+    iget-object v1, p0, Lcom/google/common/primitives/ImmutableLongArray;->array:[J
+
+    aget-wide v1, v1, v0
+
+    invoke-interface {p1, v1, v2}, Ljava/util/function/LongConsumer;->accept(J)V
+
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    return-void
+.end method
+
 .method public get(I)J
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
-    .line 344
+    .line 385
     invoke-virtual {p0}, Lcom/google/common/primitives/ImmutableLongArray;->length()I
 
     move-result v0
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkElementIndex(II)I
 
-    .line 345
+    .line 386
     iget-object v0, p0, Lcom/google/common/primitives/ImmutableLongArray;->array:[J
 
     iget p0, p0, Lcom/google/common/primitives/ImmutableLongArray;->start:I
@@ -673,7 +915,7 @@
 .method public hashCode()I
     .locals 4
 
-    .line 520
+    .line 609
     iget v0, p0, Lcom/google/common/primitives/ImmutableLongArray;->start:I
 
     const/4 v1, 0x1
@@ -685,7 +927,7 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    .line 522
+    .line 611
     iget-object v2, p0, Lcom/google/common/primitives/ImmutableLongArray;->array:[J
 
     aget-wide v2, v2, v0
@@ -706,8 +948,16 @@
 
 .method public indexOf(J)I
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "target"
+        }
+    .end annotation
 
-    .line 353
+    .line 394
     iget v0, p0, Lcom/google/common/primitives/ImmutableLongArray;->start:I
 
     :goto_0
@@ -715,7 +965,7 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 354
+    .line 395
     iget-object v1, p0, Lcom/google/common/primitives/ImmutableLongArray;->array:[J
 
     aget-wide v1, v1, v0
@@ -724,7 +974,7 @@
 
     if-nez v1, :cond_0
 
-    .line 355
+    .line 396
     iget p0, p0, Lcom/google/common/primitives/ImmutableLongArray;->start:I
 
     sub-int/2addr v0, p0
@@ -745,7 +995,7 @@
 .method public isEmpty()Z
     .locals 1
 
-    .line 334
+    .line 375
     iget v0, p0, Lcom/google/common/primitives/ImmutableLongArray;->end:I
 
     iget p0, p0, Lcom/google/common/primitives/ImmutableLongArray;->start:I
@@ -765,8 +1015,16 @@
 
 .method public lastIndexOf(J)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "target"
+        }
+    .end annotation
 
-    .line 366
+    .line 407
     iget v0, p0, Lcom/google/common/primitives/ImmutableLongArray;->end:I
 
     add-int/lit8 v0, v0, -0x1
@@ -776,7 +1034,7 @@
 
     if-lt v0, v1, :cond_1
 
-    .line 367
+    .line 408
     iget-object v2, p0, Lcom/google/common/primitives/ImmutableLongArray;->array:[J
 
     aget-wide v2, v2, v0
@@ -803,7 +1061,7 @@
 .method public length()I
     .locals 1
 
-    .line 329
+    .line 370
     iget v0, p0, Lcom/google/common/primitives/ImmutableLongArray;->end:I
 
     iget p0, p0, Lcom/google/common/primitives/ImmutableLongArray;->start:I
@@ -816,7 +1074,7 @@
 .method readResolve()Ljava/lang/Object;
     .locals 1
 
-    .line 565
+    .line 654
     invoke-virtual {p0}, Lcom/google/common/primitives/ImmutableLongArray;->isEmpty()Z
 
     move-result v0
@@ -829,10 +1087,56 @@
     return-object p0
 .end method
 
-.method public subArray(II)Lcom/google/common/primitives/ImmutableLongArray;
+.method spliterator()Ljava/util/Spliterator$OfLong;
+    .locals 3
+
+    .line 475
+    iget-object v0, p0, Lcom/google/common/primitives/ImmutableLongArray;->array:[J
+
+    iget v1, p0, Lcom/google/common/primitives/ImmutableLongArray;->start:I
+
+    iget p0, p0, Lcom/google/common/primitives/ImmutableLongArray;->end:I
+
+    const/16 v2, 0x410
+
+    invoke-static {v0, v1, p0, v2}, Ljava/util/Spliterators;->spliterator([JIII)Ljava/util/Spliterator$OfLong;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public stream()Ljava/util/stream/LongStream;
     .locals 2
 
-    .line 395
+    .line 446
+    iget-object v0, p0, Lcom/google/common/primitives/ImmutableLongArray;->array:[J
+
+    iget v1, p0, Lcom/google/common/primitives/ImmutableLongArray;->start:I
+
+    iget p0, p0, Lcom/google/common/primitives/ImmutableLongArray;->end:I
+
+    invoke-static {v0, v1, p0}, Ljava/util/Arrays;->stream([JII)Ljava/util/stream/LongStream;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public subArray(II)Lcom/google/common/primitives/ImmutableLongArray;
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "startIndex",
+            "endIndex"
+        }
+    .end annotation
+
+    .line 462
     invoke-virtual {p0}, Lcom/google/common/primitives/ImmutableLongArray;->length()I
 
     move-result v0
@@ -841,12 +1145,12 @@
 
     if-ne p1, p2, :cond_0
 
-    .line 397
+    .line 464
     sget-object p0, Lcom/google/common/primitives/ImmutableLongArray;->EMPTY:Lcom/google/common/primitives/ImmutableLongArray;
 
     goto :goto_0
 
-    .line 398
+    .line 465
     :cond_0
     new-instance v0, Lcom/google/common/primitives/ImmutableLongArray;
 
@@ -869,7 +1173,7 @@
 .method public toArray()[J
     .locals 2
 
-    .line 384
+    .line 451
     iget-object v0, p0, Lcom/google/common/primitives/ImmutableLongArray;->array:[J
 
     iget v1, p0, Lcom/google/common/primitives/ImmutableLongArray;->start:I
@@ -886,19 +1190,19 @@
 .method public toString()Ljava/lang/String;
     .locals 5
 
-    .line 533
+    .line 622
     invoke-virtual {p0}, Lcom/google/common/primitives/ImmutableLongArray;->isEmpty()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 534
+    .line 623
     const-string p0, "[]"
 
     return-object p0
 
-    .line 536
+    .line 625
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -912,7 +1216,7 @@
 
     const/16 v1, 0x5b
 
-    .line 537
+    .line 626
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     move-result-object v1
@@ -925,7 +1229,7 @@
 
     invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    .line 539
+    .line 628
     iget v1, p0, Lcom/google/common/primitives/ImmutableLongArray;->start:I
 
     :goto_0
@@ -935,7 +1239,7 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 540
+    .line 629
     const-string v2, ", "
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -953,10 +1257,10 @@
     :cond_1
     const/16 p0, 0x5d
 
-    .line 542
+    .line 631
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 543
+    .line 632
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -967,7 +1271,7 @@
 .method public trimmed()Lcom/google/common/primitives/ImmutableLongArray;
     .locals 1
 
-    .line 553
+    .line 642
     invoke-direct {p0}, Lcom/google/common/primitives/ImmutableLongArray;->isPartialView()Z
 
     move-result v0
@@ -991,7 +1295,7 @@
 .method writeReplace()Ljava/lang/Object;
     .locals 0
 
-    .line 561
+    .line 650
     invoke-virtual {p0}, Lcom/google/common/primitives/ImmutableLongArray;->trimmed()Lcom/google/common/primitives/ImmutableLongArray;
 
     move-result-object p0

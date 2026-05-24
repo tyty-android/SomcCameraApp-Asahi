@@ -18,7 +18,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 216
+    .line 270
     invoke-direct {p0}, Lcom/google/common/base/Ticker;-><init>()V
 
     return-void

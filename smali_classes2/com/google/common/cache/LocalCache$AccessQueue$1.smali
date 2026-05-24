@@ -40,18 +40,30 @@
     .end annotation
 .end field
 
+.field final synthetic this$0:Lcom/google/common/cache/LocalCache$AccessQueue;
+
 
 # direct methods
 .method constructor <init>(Lcom/google/common/cache/LocalCache$AccessQueue;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 3657
+    .line 3703
+    iput-object p1, p0, Lcom/google/common/cache/LocalCache$AccessQueue$1;->this$0:Lcom/google/common/cache/LocalCache$AccessQueue;
+
     invoke-direct {p0}, Lcom/google/common/cache/LocalCache$AbstractReferenceEntry;-><init>()V
 
-    .line 3667
+    .line 3713
     iput-object p0, p0, Lcom/google/common/cache/LocalCache$AccessQueue$1;->nextAccess:Lcom/google/common/cache/ReferenceEntry;
 
-    .line 3679
+    .line 3725
     iput-object p0, p0, Lcom/google/common/cache/LocalCache$AccessQueue$1;->previousAccess:Lcom/google/common/cache/ReferenceEntry;
 
     return-void
@@ -77,7 +89,7 @@
         }
     .end annotation
 
-    .line 3671
+    .line 3717
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$AccessQueue$1;->nextAccess:Lcom/google/common/cache/ReferenceEntry;
 
     return-object p0
@@ -93,7 +105,7 @@
         }
     .end annotation
 
-    .line 3683
+    .line 3729
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$AccessQueue$1;->previousAccess:Lcom/google/common/cache/ReferenceEntry;
 
     return-object p0
@@ -101,12 +113,29 @@
 
 .method public setAccessTime(J)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "time"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public setNextInAccessQueue(Lcom/google/common/cache/ReferenceEntry;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "next"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -115,7 +144,7 @@
         }
     .end annotation
 
-    .line 3676
+    .line 3722
     iput-object p1, p0, Lcom/google/common/cache/LocalCache$AccessQueue$1;->nextAccess:Lcom/google/common/cache/ReferenceEntry;
 
     return-void
@@ -123,6 +152,15 @@
 
 .method public setPreviousInAccessQueue(Lcom/google/common/cache/ReferenceEntry;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "previous"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -131,7 +169,7 @@
         }
     .end annotation
 
-    .line 3688
+    .line 3734
     iput-object p1, p0, Lcom/google/common/cache/LocalCache$AccessQueue$1;->previousAccess:Lcom/google/common/cache/ReferenceEntry;
 
     return-void

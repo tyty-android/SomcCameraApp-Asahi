@@ -26,13 +26,24 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$settingsHolder"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 692
+    .line 646
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$6;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$6;->val$settingsHolder:Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
@@ -47,7 +58,7 @@
 .method public run()V
     .locals 1
 
-    .line 695
+    .line 649
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$6;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$6;->val$settingsHolder:Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;

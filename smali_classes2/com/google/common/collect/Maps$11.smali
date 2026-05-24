@@ -33,8 +33,22 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/Maps$EntryTransformer;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "val$transformer"
+        }
+    .end annotation
 
-    .line 1841
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .line 2080
     iput-object p1, p0, Lcom/google/common/collect/Maps$11;->val$transformer:Lcom/google/common/collect/Maps$EntryTransformer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,8 +60,19 @@
 # virtual methods
 .method public bridge synthetic apply(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
 
-    .line 1841
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "entry"
+        }
+    .end annotation
+
+    .line 2080
     check-cast p1, Ljava/util/Map$Entry;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Maps$11;->apply(Ljava/util/Map$Entry;)Ljava/lang/Object;
@@ -59,6 +84,18 @@
 
 .method public apply(Ljava/util/Map$Entry;)Ljava/lang/Object;
     .locals 1
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "entry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -67,7 +104,7 @@
         }
     .end annotation
 
-    .line 1844
+    .line 2084
     iget-object p0, p0, Lcom/google/common/collect/Maps$11;->val$transformer:Lcom/google/common/collect/Maps$EntryTransformer;
 
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;

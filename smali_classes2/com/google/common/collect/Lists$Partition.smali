@@ -41,6 +41,17 @@
 # direct methods
 .method constructor <init>(Ljava/util/List;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "list",
+            "size"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -49,13 +60,13 @@
         }
     .end annotation
 
-    .line 657
+    .line 698
     invoke-direct {p0}, Ljava/util/AbstractList;-><init>()V
 
-    .line 658
+    .line 699
     iput-object p1, p0, Lcom/google/common/collect/Lists$Partition;->list:Ljava/util/List;
 
-    .line 659
+    .line 700
     iput p2, p0, Lcom/google/common/collect/Lists$Partition;->size:I
 
     return-void
@@ -65,8 +76,16 @@
 # virtual methods
 .method public bridge synthetic get(I)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
-    .line 653
+    .line 694
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Lists$Partition;->get(I)Ljava/util/List;
 
     move-result-object p0
@@ -76,6 +95,15 @@
 
 .method public get(I)Ljava/util/List;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -84,21 +112,21 @@
         }
     .end annotation
 
-    .line 664
+    .line 705
     invoke-virtual {p0}, Lcom/google/common/collect/Lists$Partition;->size()I
 
     move-result v0
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkElementIndex(II)I
 
-    .line 665
+    .line 706
     iget v0, p0, Lcom/google/common/collect/Lists$Partition;->size:I
 
     mul-int/2addr p1, v0
 
     add-int/2addr v0, p1
 
-    .line 666
+    .line 707
     iget-object v1, p0, Lcom/google/common/collect/Lists$Partition;->list:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
@@ -109,7 +137,7 @@
 
     move-result v0
 
-    .line 667
+    .line 708
     iget-object p0, p0, Lcom/google/common/collect/Lists$Partition;->list:Ljava/util/List;
 
     invoke-interface {p0, p1, v0}, Ljava/util/List;->subList(II)Ljava/util/List;
@@ -122,7 +150,7 @@
 .method public isEmpty()Z
     .locals 0
 
-    .line 677
+    .line 718
     iget-object p0, p0, Lcom/google/common/collect/Lists$Partition;->list:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->isEmpty()Z
@@ -135,7 +163,7 @@
 .method public size()I
     .locals 2
 
-    .line 672
+    .line 713
     iget-object v0, p0, Lcom/google/common/collect/Lists$Partition;->list:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I

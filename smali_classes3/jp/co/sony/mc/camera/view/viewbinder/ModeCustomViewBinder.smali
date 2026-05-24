@@ -678,7 +678,7 @@
 
     move-result v4
 
-    const v5, 0x7f0902fb
+    const v5, 0x7f090300
 
     if-ne v4, v5, :cond_1
 
@@ -727,7 +727,7 @@
     .line 616
     sget-object v1, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;->LANDSCAPE:Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
 
-    const v2, 0x7f0705ad
+    const v2, 0x7f070559
 
     if-ne p3, v1, :cond_1
 
@@ -746,7 +746,7 @@
     .line 621
     iget-object p3, p0, Ljp/co/sony/mc/camera/view/viewbinder/ModeCustomViewBinder;->resources:Landroid/content/res/Resources;
 
-    const v1, 0x7f0705a6
+    const v1, 0x7f070552
 
     invoke-virtual {p3, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -755,7 +755,7 @@
     .line 624
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ModeCustomViewBinder;->resources:Landroid/content/res/Resources;
 
-    const v2, 0x7f0705a4
+    const v2, 0x7f070550
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -798,7 +798,7 @@
     .line 638
     iget-object p3, p0, Ljp/co/sony/mc/camera/view/viewbinder/ModeCustomViewBinder;->resources:Landroid/content/res/Resources;
 
-    const v1, 0x7f0705a7
+    const v1, 0x7f070553
 
     invoke-virtual {p3, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -874,7 +874,7 @@
     .line 671
     iget-object v6, v0, Ljp/co/sony/mc/camera/view/viewbinder/ModeCustomViewBinder;->resources:Landroid/content/res/Resources;
 
-    const v8, 0x7f0705ae
+    const v8, 0x7f07055a
 
     invoke-virtual {v6, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -896,7 +896,7 @@
     .line 679
     iget-object v6, v0, Ljp/co/sony/mc/camera/view/viewbinder/ModeCustomViewBinder;->resources:Landroid/content/res/Resources;
 
-    const v8, 0x7f0705af
+    const v8, 0x7f07055b
 
     invoke-virtual {v6, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -933,7 +933,7 @@
     .line 694
     iget-object v6, v0, Ljp/co/sony/mc/camera/view/viewbinder/ModeCustomViewBinder;->resources:Landroid/content/res/Resources;
 
-    const v9, 0x7f0705b1
+    const v9, 0x7f07055d
 
     invoke-virtual {v6, v9}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -950,7 +950,7 @@
     :cond_3
     iget-object v6, v0, Ljp/co/sony/mc/camera/view/viewbinder/ModeCustomViewBinder;->resources:Landroid/content/res/Resources;
 
-    const v9, 0x7f0705b0
+    const v9, 0x7f07055c
 
     invoke-virtual {v6, v9}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1038,11 +1038,11 @@
 
     move-result v6
 
-    const v10, 0x7f0705ab
+    const v10, 0x7f070557
 
     const/4 v11, 0x2
 
-    const v12, 0x7f070593
+    const v12, 0x7f07053f
 
     if-eqz v6, :cond_7
 
@@ -1063,7 +1063,7 @@
     .line 737
     iget-object v13, v0, Ljp/co/sony/mc/camera/view/viewbinder/ModeCustomViewBinder;->resources:Landroid/content/res/Resources;
 
-    const v14, 0x7f0a0037
+    const v14, 0x7f0a003b
 
     invoke-virtual {v13, v14}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -1106,7 +1106,7 @@
     .line 751
     iget-object v13, v0, Ljp/co/sony/mc/camera/view/viewbinder/ModeCustomViewBinder;->resources:Landroid/content/res/Resources;
 
-    const v14, 0x7f0a0038
+    const v14, 0x7f0a003c
 
     invoke-virtual {v13, v14}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -1133,7 +1133,7 @@
     .line 762
     iget-object v6, v0, Ljp/co/sony/mc/camera/view/viewbinder/ModeCustomViewBinder;->resources:Landroid/content/res/Resources;
 
-    const v10, 0x7f0705a9
+    const v10, 0x7f070555
 
     invoke-virtual {v6, v10}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1145,7 +1145,7 @@
     :cond_9
     iget-object v6, v0, Ljp/co/sony/mc/camera/view/viewbinder/ModeCustomViewBinder;->resources:Landroid/content/res/Resources;
 
-    const v10, 0x7f0705a8
+    const v10, 0x7f070554
 
     invoke-virtual {v6, v10}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1186,7 +1186,7 @@
     :cond_a
     iget-object v6, v0, Ljp/co/sony/mc/camera/view/viewbinder/ModeCustomViewBinder;->resources:Landroid/content/res/Resources;
 
-    const v10, 0x7f0705a7
+    const v10, 0x7f070553
 
     invoke-virtual {v6, v10}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1198,7 +1198,7 @@
     :cond_b
     iget-object v6, v0, Ljp/co/sony/mc/camera/view/viewbinder/ModeCustomViewBinder;->resources:Landroid/content/res/Resources;
 
-    const v10, 0x7f0705a6
+    const v10, 0x7f070552
 
     invoke-virtual {v6, v10}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1238,7 +1238,7 @@
     .line 798
     iget-object v6, v0, Ljp/co/sony/mc/camera/view/viewbinder/ModeCustomViewBinder;->resources:Landroid/content/res/Resources;
 
-    const v8, 0x7f0705a4
+    const v8, 0x7f070550
 
     invoke-virtual {v6, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1322,7 +1322,7 @@
     .line 595
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ModeCustomViewBinder;->resources:Landroid/content/res/Resources;
 
-    const v2, 0x7f0705b4
+    const v2, 0x7f070560
 
     invoke-virtual {p1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1334,7 +1334,7 @@
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ModeCustomViewBinder;->resources:Landroid/content/res/Resources;
 
-    const v2, 0x7f0705b3
+    const v2, 0x7f07055f
 
     invoke-virtual {p1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1495,7 +1495,7 @@
     .line 464
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ModeCustomViewBinder;->resources:Landroid/content/res/Resources;
 
-    const p2, 0x7f0705ab
+    const p2, 0x7f070557
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -2221,7 +2221,7 @@
     .line 421
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/viewbinder/ModeCustomViewBinder;->resources:Landroid/content/res/Resources;
 
-    const v4, 0x7f0a0037
+    const v4, 0x7f0a003b
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -2230,7 +2230,7 @@
     .line 422
     iget-object v4, p0, Ljp/co/sony/mc/camera/view/viewbinder/ModeCustomViewBinder;->resources:Landroid/content/res/Resources;
 
-    const v6, 0x7f070593
+    const v6, 0x7f07053f
 
     invoke-virtual {v4, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -3485,7 +3485,7 @@
     .line 91
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ModeCustomViewBinder;->resources:Landroid/content/res/Resources;
 
-    const v0, 0x7f0a0036
+    const v0, 0x7f0a003a
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -3494,7 +3494,7 @@
     .line 92
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ModeCustomViewBinder;->resources:Landroid/content/res/Resources;
 
-    const v1, 0x7f0705ad
+    const v1, 0x7f070559
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -3503,7 +3503,7 @@
     .line 94
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ModeCustomViewBinder;->resources:Landroid/content/res/Resources;
 
-    const v2, 0x7f0705aa
+    const v2, 0x7f070556
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

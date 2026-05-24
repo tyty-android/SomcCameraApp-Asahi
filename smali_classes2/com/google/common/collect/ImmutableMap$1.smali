@@ -22,15 +22,29 @@
 
 
 # instance fields
+.field final synthetic this$0:Lcom/google/common/collect/ImmutableMap;
+
 .field final synthetic val$entryIterator:Lcom/google/common/collect/UnmodifiableIterator;
 
 
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/ImmutableMap;Lcom/google/common/collect/UnmodifiableIterator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$entryIterator"
+        }
+    .end annotation
 
-    .line 581
+    .line 969
     iput-object p2, p0, Lcom/google/common/collect/ImmutableMap$1;->val$entryIterator:Lcom/google/common/collect/UnmodifiableIterator;
+
+    iput-object p1, p0, Lcom/google/common/collect/ImmutableMap$1;->this$0:Lcom/google/common/collect/ImmutableMap;
 
     invoke-direct {p0}, Lcom/google/common/collect/UnmodifiableIterator;-><init>()V
 
@@ -42,7 +56,7 @@
 .method public hasNext()Z
     .locals 0
 
-    .line 584
+    .line 972
     iget-object p0, p0, Lcom/google/common/collect/ImmutableMap$1;->val$entryIterator:Lcom/google/common/collect/UnmodifiableIterator;
 
     invoke-virtual {p0}, Lcom/google/common/collect/UnmodifiableIterator;->hasNext()Z
@@ -60,7 +74,7 @@
         }
     .end annotation
 
-    .line 589
+    .line 977
     iget-object p0, p0, Lcom/google/common/collect/ImmutableMap$1;->val$entryIterator:Lcom/google/common/collect/UnmodifiableIterator;
 
     invoke-virtual {p0}, Lcom/google/common/collect/UnmodifiableIterator;->next()Ljava/lang/Object;

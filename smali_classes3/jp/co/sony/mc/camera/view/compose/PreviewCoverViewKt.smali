@@ -725,7 +725,7 @@
     .line 398
     invoke-interface {v4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    const v5, 0x7f070144
+    const v5, 0x7f070185
 
     .line 225
     invoke-static {v5, v4, v2}, Landroidx/compose/ui/res/PrimitiveResources_androidKt;->dimensionResource(ILandroidx/compose/runtime/Composer;I)F
@@ -789,7 +789,7 @@
 
     move-result v6
 
-    const v10, 0x7f070143
+    const v10, 0x7f070184
 
     if-eqz v6, :cond_f
 
@@ -1476,7 +1476,7 @@
 
     check-cast v1, Landroidx/compose/foundation/layout/BoxScope;
 
-    const v1, 0x6089d9f9
+    const v1, 0x6089daf9
 
     invoke-interface {v4, v1}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 

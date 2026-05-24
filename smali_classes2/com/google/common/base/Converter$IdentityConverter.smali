@@ -29,11 +29,11 @@
 
 
 # static fields
-.field static final INSTANCE:Lcom/google/common/base/Converter$IdentityConverter;
+.field static final INSTANCE:Lcom/google/common/base/Converter;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/base/Converter$IdentityConverter<",
-            "*>;"
+            "Lcom/google/common/base/Converter<",
+            "**>;"
         }
     .end annotation
 .end field
@@ -45,12 +45,12 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 486
+    .line 574
     new-instance v0, Lcom/google/common/base/Converter$IdentityConverter;
 
     invoke-direct {v0}, Lcom/google/common/base/Converter$IdentityConverter;-><init>()V
 
-    sput-object v0, Lcom/google/common/base/Converter$IdentityConverter;->INSTANCE:Lcom/google/common/base/Converter$IdentityConverter;
+    sput-object v0, Lcom/google/common/base/Converter$IdentityConverter;->INSTANCE:Lcom/google/common/base/Converter;
 
     return-void
 .end method
@@ -58,7 +58,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 485
+    .line 573
     invoke-direct {p0}, Lcom/google/common/base/Converter;-><init>()V
 
     return-void
@@ -67,8 +67,8 @@
 .method private readResolve()Ljava/lang/Object;
     .locals 0
 
-    .line 519
-    sget-object p0, Lcom/google/common/base/Converter$IdentityConverter;->INSTANCE:Lcom/google/common/base/Converter$IdentityConverter;
+    .line 607
+    sget-object p0, Lcom/google/common/base/Converter$IdentityConverter;->INSTANCE:Lcom/google/common/base/Converter;
 
     return-object p0
 .end method
@@ -77,6 +77,15 @@
 # virtual methods
 .method doAndThen(Lcom/google/common/base/Converter;)Lcom/google/common/base/Converter;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "otherConverter"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<S:",
@@ -89,7 +98,7 @@
         }
     .end annotation
 
-    .line 505
+    .line 593
     const-string p0, "otherConverter"
 
     invoke-static {p1, p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -103,6 +112,15 @@
 
 .method protected doBackward(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "t"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)TT;"
@@ -114,6 +132,15 @@
 
 .method protected doForward(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "t"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)TT;"
@@ -139,7 +166,7 @@
 .method public bridge synthetic reverse()Lcom/google/common/base/Converter;
     .locals 0
 
-    .line 485
+    .line 573
     invoke-virtual {p0}, Lcom/google/common/base/Converter$IdentityConverter;->reverse()Lcom/google/common/base/Converter$IdentityConverter;
 
     move-result-object p0
@@ -150,7 +177,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 515
+    .line 603
     const-string p0, "Converter.identity()"
 
     return-object p0

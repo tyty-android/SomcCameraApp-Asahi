@@ -27,6 +27,14 @@
 # direct methods
 .method constructor <init>(Landroid/app/Activity;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "activity"
+        }
+    .end annotation
 
     .line 40
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -48,7 +56,7 @@
     return-void
 
     :cond_0
-    const v1, 0x7f0c005b
+    const v1, 0x7f0c0054
 
     const/4 v2, 0x0
 
@@ -93,6 +101,14 @@
 
 .method private validateColor(I)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     if-gez p1, :cond_1
 
@@ -119,6 +135,14 @@
 # virtual methods
 .method enable(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "b"
+        }
+    .end annotation
 
     .line 55
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/DisplayFlashController;->mIsEnabled:Z
@@ -159,6 +183,18 @@
 
 .method setColor(III)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "r",
+            "g",
+            "b"
+        }
+    .end annotation
 
     .line 64
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/DisplayFlashController;->validateColor(I)Z
@@ -200,6 +236,14 @@
 
 .method show(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
     .line 73
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/DisplayFlashController;->mShieldRectMap:Ljava/util/Map;
@@ -277,7 +321,7 @@
     .line 81
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/DisplayFlashController;->mRootView:Landroid/view/View;
 
-    const v4, 0x7f090180
+    const v4, 0x7f090184
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

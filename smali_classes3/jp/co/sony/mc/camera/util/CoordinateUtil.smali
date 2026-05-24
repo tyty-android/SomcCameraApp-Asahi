@@ -21,6 +21,16 @@
 
 .method public static convertAbsolutePosition2Relative(II)I
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "position",
+            "length"
+        }
+    .end annotation
 
     mul-int/lit8 v0, p0, 0x64
 
@@ -72,6 +82,18 @@
 
 .method public static convertDev2View(Landroid/graphics/Rect;Landroid/graphics/Rect;I)Landroid/graphics/Rect;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x10
+        }
+        names = {
+            "srcArea",
+            "windowArea",
+            "orient"
+        }
+    .end annotation
 
     .line 119
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -209,6 +231,16 @@
 
 .method public static convertDip2Px(Landroid/content/Context;I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x10
+        }
+        names = {
+            "context",
+            "dip"
+        }
+    .end annotation
 
     .line 242
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -236,6 +268,16 @@
 
 .method public static convertDip2Px(Landroid/content/Context;Landroid/graphics/Point;)Landroid/graphics/Point;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x10
+        }
+        names = {
+            "context",
+            "dip"
+        }
+    .end annotation
 
     .line 257
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -280,6 +322,16 @@
 
 .method public static convertDip2Px(Landroid/content/Context;Landroid/graphics/Rect;)Landroid/graphics/Rect;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x10
+        }
+        names = {
+            "context",
+            "dip"
+        }
+    .end annotation
 
     .line 273
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -344,6 +396,24 @@
 
 .method public static convertPositionToAligned(IILandroid/graphics/Rect;Landroid/graphics/Rect;II)Landroid/graphics/Rect;
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "rawX",
+            "rawY",
+            "surface",
+            "touchArea",
+            "focusWidth",
+            "focusHeight"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -733,6 +803,20 @@
 
 .method public static convertPositionToSurface([Landroid/graphics/RectF;III)[Landroid/graphics/Rect;
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "deviceRects",
+            "surfaceWidth",
+            "surfaceHeight",
+            "orientation"
+        }
+    .end annotation
 
     .line 156
     array-length p3, p0
@@ -900,6 +984,16 @@
 
 .method public static convertPx2Dip(Landroid/content/Context;I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x10
+        }
+        names = {
+            "context",
+            "px"
+        }
+    .end annotation
 
     .line 291
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -927,6 +1021,16 @@
 
 .method public static convertPx2Dip(Landroid/content/Context;Landroid/graphics/Point;)Landroid/graphics/Point;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x10
+        }
+        names = {
+            "context",
+            "px"
+        }
+    .end annotation
 
     .line 306
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -971,6 +1075,16 @@
 
 .method public static convertPx2Dip(Landroid/content/Context;Landroid/graphics/Rect;)Landroid/graphics/Rect;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x10
+        }
+        names = {
+            "context",
+            "px"
+        }
+    .end annotation
 
     .line 322
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -1035,6 +1149,18 @@
 
 .method public static convertView2Dev(Landroid/graphics/Rect;Landroid/graphics/Rect;I)Landroid/graphics/Rect;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x10
+        }
+        names = {
+            "srcArea",
+            "windowArea",
+            "orient"
+        }
+    .end annotation
 
     .line 194
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -1172,6 +1298,18 @@
 
 .method public static scale(Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;)Landroid/graphics/Rect;
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "original",
+            "base",
+            "disp"
+        }
+    .end annotation
 
     .line 43
     invoke-virtual {p1}, Landroid/graphics/Rect;->height()I
@@ -1206,7 +1344,7 @@
 
     new-instance v5, Ljava/lang/StringBuilder;
 
-    const-string v6, "scale: origWidth: "
+    const-string/jumbo v6, "scale: origWidth: "
 
     invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
@@ -1391,6 +1529,18 @@
 
 .method public static scale2Dev(Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;)Landroid/graphics/Rect;
     .locals 13
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "src",
+            "picture",
+            "disp"
+        }
+    .end annotation
 
     .line 71
     invoke-virtual {p1}, Landroid/graphics/Rect;->height()I
@@ -1425,7 +1575,7 @@
 
     new-instance v5, Ljava/lang/StringBuilder;
 
-    const-string v6, "scale2Dev: origWidth: "
+    const-string/jumbo v6, "scale2Dev: origWidth: "
 
     invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
@@ -1473,7 +1623,7 @@
 
     new-instance v1, Ljava/lang/StringBuilder;
 
-    const-string v2, "scale2Dev: ratio: width: "
+    const-string/jumbo v2, "scale2Dev: ratio: width: "
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
@@ -1513,7 +1663,7 @@
 
     new-instance v7, Ljava/lang/StringBuilder;
 
-    const-string v8, "scale2Dev: Display position:top,left,right,bottom   :"
+    const-string/jumbo v8, "scale2Dev: Display position:top,left,right,bottom   :"
 
     invoke-direct {v7, v8}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
@@ -1603,7 +1753,7 @@
 
     new-instance v0, Ljava/lang/StringBuilder;
 
-    const-string v4, "scale2Dev: Device position:top,left,right,bottom   :"
+    const-string/jumbo v4, "scale2Dev: Device position:top,left,right,bottom   :"
 
     invoke-direct {v0, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 

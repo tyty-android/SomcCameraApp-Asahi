@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/graph/SuccessorsFunction;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "successorFunction"
+        }
+    .end annotation
 
-    .line 401
+    .line 413
     invoke-direct {p0, p1}, Lcom/google/common/graph/Traverser$Traversal;-><init>(Lcom/google/common/graph/SuccessorsFunction;)V
 
     return-void
@@ -35,6 +43,15 @@
 # virtual methods
 .method visitNext(Ljava/util/Deque;)Ljava/lang/Object;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "horizon"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -44,21 +61,24 @@
         }
     .end annotation
 
-    .line 404
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 417
     invoke-interface {p1}, Ljava/util/Deque;->getFirst()Ljava/lang/Object;
 
     move-result-object p0
 
     check-cast p0, Ljava/util/Iterator;
 
-    .line 405
+    .line 418
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 406
+    .line 419
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object p0
@@ -69,7 +89,7 @@
 
     return-object p0
 
-    .line 408
+    .line 421
     :cond_0
     invoke-interface {p1}, Ljava/util/Deque;->removeFirst()Ljava/lang/Object;
 

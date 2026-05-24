@@ -112,6 +112,19 @@
 
 .method private constructor <init>(Ljava/lang/String;II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "flag"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)V"
@@ -129,6 +142,14 @@
 
 .method private isAccepted(I)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "acceptedDragDirectionFlags"
+        }
+    .end annotation
 
     .line 83
     iget p0, p0, Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector$Direction;->flag:I
@@ -149,6 +170,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector$Direction;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 70
     const-class v0, Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector$Direction;

@@ -32,8 +32,16 @@
 
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 5857
+    .line 4764
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$SurfaceSwitchDoneTask;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,12 +60,12 @@
 .method private restoreViews()V
     .locals 2
 
-    .line 5873
+    .line 4780
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SurfaceSwitchDoneTask;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mhideBlackScreen(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
-    .line 5874
+    .line 4781
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SurfaceSwitchDoneTask;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -74,12 +82,12 @@
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->onPreviewStarted()V
 
-    .line 5876
+    .line 4783
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SurfaceSwitchDoneTask;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mchangeStateToPreview(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
-    .line 5877
+    .line 4784
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SurfaceSwitchDoneTask;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmUserEventAcceptChecker(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/UserEventAcceptableChecker;
@@ -98,7 +106,7 @@
 .method public onPreviewStarted()V
     .locals 2
 
-    .line 5861
+    .line 4768
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SurfaceSwitchDoneTask;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;

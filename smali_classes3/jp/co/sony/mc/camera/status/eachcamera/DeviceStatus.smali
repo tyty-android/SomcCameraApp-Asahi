@@ -50,8 +50,16 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "val"
+        }
+    .end annotation
 
-    .line 56
+    .line 55
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/status/EnumValue;-><init>(Ljava/lang/Enum;)V
 
     return-void
@@ -62,7 +70,7 @@
 .method public getKey()Ljava/lang/String;
     .locals 0
 
-    .line 61
+    .line 60
     const-string p0, "device_status"
 
     return-object p0
@@ -71,7 +79,7 @@
 .method public minRequiredVersion()I
     .locals 0
 
-    .line 66
+    .line 65
     sget p0, Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus;->REQUIRED_PROVIDER_VERSION:I
 
     return p0

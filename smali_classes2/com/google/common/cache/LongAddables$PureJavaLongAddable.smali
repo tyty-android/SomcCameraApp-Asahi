@@ -21,7 +21,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 57
+    .line 59
     invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicLong;-><init>()V
 
     return-void
@@ -30,7 +30,7 @@
 .method synthetic constructor <init>(Lcom/google/common/cache/LongAddables$1;)V
     .locals 0
 
-    .line 57
+    .line 59
     invoke-direct {p0}, Lcom/google/common/cache/LongAddables$PureJavaLongAddable;-><init>()V
 
     return-void
@@ -40,8 +40,16 @@
 # virtual methods
 .method public add(J)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "x"
+        }
+    .end annotation
 
-    .line 65
+    .line 67
     invoke-virtual {p0, p1, p2}, Lcom/google/common/cache/LongAddables$PureJavaLongAddable;->getAndAdd(J)J
 
     return-void
@@ -50,7 +58,7 @@
 .method public increment()V
     .locals 0
 
-    .line 60
+    .line 62
     invoke-virtual {p0}, Lcom/google/common/cache/LongAddables$PureJavaLongAddable;->getAndIncrement()J
 
     return-void
@@ -59,7 +67,7 @@
 .method public sum()J
     .locals 2
 
-    .line 70
+    .line 72
     invoke-virtual {p0}, Lcom/google/common/cache/LongAddables$PureJavaLongAddable;->get()J
 
     move-result-wide v0

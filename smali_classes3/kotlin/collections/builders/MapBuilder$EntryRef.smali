@@ -33,7 +33,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u00000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\'\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0007\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\u0008\u0005\n\u0002\u0010\u000e\n\u0000\u0008\u0000\u0018\u0000*\u0004\u0008\u0002\u0010\u0001*\u0004\u0008\u0003\u0010\u00022\u000e\u0012\u0004\u0012\u0002H\u0001\u0012\u0004\u0012\u0002H\u00020\u0003B!\u0012\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00028\u0002\u0012\u0004\u0012\u00028\u00030\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0002\u0010\u0008J\u0013\u0010\u000e\u001a\u00020\u000f2\u0008\u0010\u0010\u001a\u0004\u0018\u00010\u0011H\u0096\u0002J\u0008\u0010\u0012\u001a\u00020\u0007H\u0016J\u0015\u0010\u0013\u001a\u00028\u00032\u0006\u0010\u0014\u001a\u00028\u0003H\u0016\u00a2\u0006\u0002\u0010\u0015J\u0008\u0010\u0016\u001a\u00020\u0017H\u0016R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\t\u001a\u00028\u00028VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\n\u0010\u000bR\u001a\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00028\u0002\u0012\u0004\u0012\u00028\u00030\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u000c\u001a\u00028\u00038VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\r\u0010\u000b\u00a8\u0006\u0018"
+        "\u00006\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\'\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u000c\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\u0008\u0000\u0018\u0000*\u0004\u0008\u0002\u0010\u0001*\u0004\u0008\u0003\u0010\u00022\u000e\u0012\u0004\u0012\u0002H\u0001\u0012\u0004\u0012\u0002H\u00020\u0003B#\u0012\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00028\u0002\u0012\u0004\u0012\u00028\u00030\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0004\u0008\u0008\u0010\tJ\u0015\u0010\u0010\u001a\u00028\u00032\u0006\u0010\u0011\u001a\u00028\u0003H\u0016\u00a2\u0006\u0002\u0010\u0012J\u0013\u0010\u0013\u001a\u00020\u00142\u0008\u0010\u0015\u001a\u0004\u0018\u00010\u0016H\u0096\u0002J\u0008\u0010\u0017\u001a\u00020\u0007H\u0016J\u0008\u0010\u0018\u001a\u00020\u0019H\u0016J\u0008\u0010\u001a\u001a\u00020\u001bH\u0002R\u001a\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00028\u0002\u0012\u0004\u0012\u00028\u00030\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u000b\u001a\u00028\u00028VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000c\u0010\rR\u0014\u0010\u000e\u001a\u00028\u00038VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000f\u0010\r\u00a8\u0006\u001c"
     }
     d2 = {
         "Lkotlin/collections/builders/MapBuilder$EntryRef;",
@@ -44,28 +44,32 @@
         "Lkotlin/collections/builders/MapBuilder;",
         "index",
         "",
+        "<init>",
         "(Lkotlin/collections/builders/MapBuilder;I)V",
+        "expectedModCount",
         "key",
         "getKey",
         "()Ljava/lang/Object;",
         "value",
         "getValue",
+        "setValue",
+        "newValue",
+        "(Ljava/lang/Object;)Ljava/lang/Object;",
         "equals",
         "",
         "other",
         "",
         "hashCode",
-        "setValue",
-        "newValue",
-        "(Ljava/lang/Object;)Ljava/lang/Object;",
         "toString",
+        "",
+        "checkForComodification",
         "",
         "kotlin-stdlib"
     }
     k = 0x1
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x30
@@ -73,6 +77,8 @@
 
 
 # instance fields
+.field private final expectedModCount:I
+
 .field private final index:I
 
 .field private final map:Lkotlin/collections/builders/MapBuilder;
@@ -100,16 +106,50 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 583
+    .line 588
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 584
+    .line 589
     iput-object p1, p0, Lkotlin/collections/builders/MapBuilder$EntryRef;->map:Lkotlin/collections/builders/MapBuilder;
 
-    .line 585
+    .line 590
     iput p2, p0, Lkotlin/collections/builders/MapBuilder$EntryRef;->index:I
 
+    .line 592
+    invoke-static {p1}, Lkotlin/collections/builders/MapBuilder;->access$getModCount$p(Lkotlin/collections/builders/MapBuilder;)I
+
+    move-result p1
+
+    iput p1, p0, Lkotlin/collections/builders/MapBuilder$EntryRef;->expectedModCount:I
+
     return-void
+.end method
+
+.method private final checkForComodification()V
+    .locals 1
+
+    .line 625
+    iget-object v0, p0, Lkotlin/collections/builders/MapBuilder$EntryRef;->map:Lkotlin/collections/builders/MapBuilder;
+
+    invoke-static {v0}, Lkotlin/collections/builders/MapBuilder;->access$getModCount$p(Lkotlin/collections/builders/MapBuilder;)I
+
+    move-result v0
+
+    iget p0, p0, Lkotlin/collections/builders/MapBuilder$EntryRef;->expectedModCount:I
+
+    if-ne v0, p0, :cond_0
+
+    return-void
+
+    .line 626
+    :cond_0
+    new-instance p0, Ljava/util/ConcurrentModificationException;
+
+    const-string v0, "The backing map has been modified after this entry was obtained."
+
+    invoke-direct {p0, v0}, Ljava/util/ConcurrentModificationException;-><init>(Ljava/lang/String;)V
+
+    throw p0
 .end method
 
 
@@ -117,12 +157,12 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
 
-    .line 602
+    .line 616
     instance-of v0, p1, Ljava/util/Map$Entry;
 
     if-eqz v0, :cond_0
 
-    .line 603
+    .line 617
     check-cast p1, Ljava/util/Map$Entry;
 
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
@@ -139,7 +179,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 604
+    .line 618
     invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object p1
@@ -173,7 +213,10 @@
         }
     .end annotation
 
-    .line 588
+    .line 596
+    invoke-direct {p0}, Lkotlin/collections/builders/MapBuilder$EntryRef;->checkForComodification()V
+
+    .line 597
     iget-object v0, p0, Lkotlin/collections/builders/MapBuilder$EntryRef;->map:Lkotlin/collections/builders/MapBuilder;
 
     invoke-static {v0}, Lkotlin/collections/builders/MapBuilder;->access$getKeysArray$p(Lkotlin/collections/builders/MapBuilder;)[Ljava/lang/Object;
@@ -195,7 +238,10 @@
         }
     .end annotation
 
-    .line 591
+    .line 602
+    invoke-direct {p0}, Lkotlin/collections/builders/MapBuilder$EntryRef;->checkForComodification()V
+
+    .line 603
     iget-object v0, p0, Lkotlin/collections/builders/MapBuilder$EntryRef;->map:Lkotlin/collections/builders/MapBuilder;
 
     invoke-static {v0}, Lkotlin/collections/builders/MapBuilder;->access$getValuesArray$p(Lkotlin/collections/builders/MapBuilder;)[Ljava/lang/Object;
@@ -214,7 +260,7 @@
 .method public hashCode()I
     .locals 2
 
-    .line 606
+    .line 620
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder$EntryRef;->getKey()Ljava/lang/Object;
 
     move-result-object v0
@@ -257,24 +303,27 @@
         }
     .end annotation
 
-    .line 594
+    .line 607
+    invoke-direct {p0}, Lkotlin/collections/builders/MapBuilder$EntryRef;->checkForComodification()V
+
+    .line 608
     iget-object v0, p0, Lkotlin/collections/builders/MapBuilder$EntryRef;->map:Lkotlin/collections/builders/MapBuilder;
 
     invoke-virtual {v0}, Lkotlin/collections/builders/MapBuilder;->checkIsMutable$kotlin_stdlib()V
 
-    .line 595
+    .line 609
     iget-object v0, p0, Lkotlin/collections/builders/MapBuilder$EntryRef;->map:Lkotlin/collections/builders/MapBuilder;
 
     invoke-static {v0}, Lkotlin/collections/builders/MapBuilder;->access$allocateValuesArray(Lkotlin/collections/builders/MapBuilder;)[Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 596
+    .line 610
     iget p0, p0, Lkotlin/collections/builders/MapBuilder$EntryRef;->index:I
 
     aget-object v1, v0, p0
 
-    .line 597
+    .line 611
     aput-object p1, v0, p0
 
     return-object v1
@@ -283,7 +332,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 608
+    .line 622
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

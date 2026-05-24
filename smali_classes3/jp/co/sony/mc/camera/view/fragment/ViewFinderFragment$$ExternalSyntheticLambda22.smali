@@ -3,17 +3,17 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroidx/lifecycle/Observer;
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
 .field public final synthetic f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
-.field public final synthetic f$1:Landroid/view/View;
+.field public final synthetic f$1:Ljp/co/sony/mc/camera/view/hint/HintTextAiSuggestionSubPreviewIntroduction;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Landroid/view/View;)V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Ljp/co/sony/mc/camera/view/hint/HintTextAiSuggestionSubPreviewIntroduction;)V
     .locals 0
 
     .line 0
@@ -21,24 +21,22 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda22;->f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
-    iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda22;->f$1:Landroid/view/View;
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda22;->f$1:Ljp/co/sony/mc/camera/view/hint/HintTextAiSuggestionSubPreviewIntroduction;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onChanged(Ljava/lang/Object;)V
+.method public final onClick(Landroid/view/View;)V
     .locals 1
 
     .line 0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda22;->f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda22;->f$1:Landroid/view/View;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda22;->f$1:Ljp/co/sony/mc/camera/view/hint/HintTextAiSuggestionSubPreviewIntroduction;
 
-    check-cast p1, Ljava/lang/Integer;
-
-    invoke-static {v0, p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->$r8$lambda$jfcoaIIBVT-ioxk9t1gU94VxN58(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Landroid/view/View;Ljava/lang/Integer;)V
+    invoke-static {v0, p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->$r8$lambda$dpwhxIPECeN4_5oglUKNAuEABnE(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Ljp/co/sony/mc/camera/view/hint/HintTextAiSuggestionSubPreviewIntroduction;Landroid/view/View;)V
 
     return-void
 .end method

@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 133
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback$2;->this$0:Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback;

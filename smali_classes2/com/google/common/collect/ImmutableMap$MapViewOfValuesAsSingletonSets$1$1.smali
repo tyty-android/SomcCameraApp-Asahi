@@ -24,15 +24,29 @@
 
 
 # instance fields
+.field final synthetic this$2:Lcom/google/common/collect/ImmutableMap$MapViewOfValuesAsSingletonSets$1;
+
 .field final synthetic val$backingEntry:Ljava/util/Map$Entry;
 
 
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/ImmutableMap$MapViewOfValuesAsSingletonSets$1;Ljava/util/Map$Entry;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$2",
+            "val$backingEntry"
+        }
+    .end annotation
 
-    .line 685
+    .line 1074
     iput-object p2, p0, Lcom/google/common/collect/ImmutableMap$MapViewOfValuesAsSingletonSets$1$1;->val$backingEntry:Ljava/util/Map$Entry;
+
+    iput-object p1, p0, Lcom/google/common/collect/ImmutableMap$MapViewOfValuesAsSingletonSets$1$1;->this$2:Lcom/google/common/collect/ImmutableMap$MapViewOfValuesAsSingletonSets$1;
 
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMapEntry;-><init>()V
 
@@ -49,7 +63,7 @@
         }
     .end annotation
 
-    .line 688
+    .line 1077
     iget-object p0, p0, Lcom/google/common/collect/ImmutableMap$MapViewOfValuesAsSingletonSets$1$1;->val$backingEntry:Ljava/util/Map$Entry;
 
     invoke-interface {p0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
@@ -69,7 +83,7 @@
         }
     .end annotation
 
-    .line 693
+    .line 1082
     iget-object p0, p0, Lcom/google/common/collect/ImmutableMap$MapViewOfValuesAsSingletonSets$1$1;->val$backingEntry:Ljava/util/Map$Entry;
 
     invoke-interface {p0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -86,7 +100,7 @@
 .method public bridge synthetic getValue()Ljava/lang/Object;
     .locals 0
 
-    .line 685
+    .line 1074
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMap$MapViewOfValuesAsSingletonSets$1$1;->getValue()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object p0

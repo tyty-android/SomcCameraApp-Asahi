@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 2470
+    .line 2698
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,6 +31,17 @@
 # virtual methods
 .method public getOptions(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -42,15 +53,19 @@
         }
     .end annotation
 
-    .line 2474
+    .line 2702
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 2475
+    .line 2703
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCapturingMode(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingRecordingMode;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)[Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingRecordingMode;
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCameraId(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    move-result-object p1
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/QrCodeDetection;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/QrCodeDetection;
 
     move-result-object p0
 

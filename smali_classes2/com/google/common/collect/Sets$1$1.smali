@@ -46,13 +46,21 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/Sets$1;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 684
+    .line 770
     iput-object p1, p0, Lcom/google/common/collect/Sets$1$1;->this$0:Lcom/google/common/collect/Sets$1;
 
     invoke-direct {p0}, Lcom/google/common/collect/AbstractIterator;-><init>()V
 
-    .line 685
+    .line 771
     iget-object v0, p1, Lcom/google/common/collect/Sets$1;->val$set1:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
@@ -61,7 +69,7 @@
 
     iput-object v0, p0, Lcom/google/common/collect/Sets$1$1;->itr1:Ljava/util/Iterator;
 
-    .line 686
+    .line 772
     iget-object p1, p1, Lcom/google/common/collect/Sets$1;->val$set2:Ljava/util/Set;
 
     invoke-interface {p1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
@@ -83,7 +91,10 @@
         }
     .end annotation
 
-    .line 690
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 777
     iget-object v0, p0, Lcom/google/common/collect/Sets$1$1;->itr1:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -92,7 +103,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 691
+    .line 778
     iget-object p0, p0, Lcom/google/common/collect/Sets$1$1;->itr1:Ljava/util/Iterator;
 
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -101,7 +112,7 @@
 
     return-object p0
 
-    .line 693
+    .line 780
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/Sets$1$1;->itr2:Ljava/util/Iterator;
 
@@ -111,14 +122,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 694
+    .line 781
     iget-object v0, p0, Lcom/google/common/collect/Sets$1$1;->itr2:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 695
+    .line 782
     iget-object v1, p0, Lcom/google/common/collect/Sets$1$1;->this$0:Lcom/google/common/collect/Sets$1;
 
     iget-object v1, v1, Lcom/google/common/collect/Sets$1;->val$set1:Ljava/util/Set;
@@ -131,7 +142,7 @@
 
     return-object v0
 
-    .line 699
+    .line 786
     :cond_1
     invoke-virtual {p0}, Lcom/google/common/collect/Sets$1$1;->endOfData()Ljava/lang/Object;
 

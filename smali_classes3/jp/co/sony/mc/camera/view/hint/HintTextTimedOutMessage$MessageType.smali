@@ -150,7 +150,7 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f110135
+    const v3, 0x7f110172
 
     const/4 v4, 0x0
 
@@ -192,7 +192,7 @@
 
     const/4 v3, 0x2
 
-    const v4, 0x7f1104e1
+    const v4, 0x7f11052e
 
     const/4 v5, 0x0
 
@@ -211,7 +211,7 @@
 
     const/4 v10, 0x3
 
-    const v11, 0x7f110137
+    const v11, 0x7f110174
 
     move-object v8, v0
 
@@ -228,7 +228,7 @@
 
     const/4 v3, 0x4
 
-    const v4, 0x7f1103c8
+    const v4, 0x7f110413
 
     move-object v1, v0
 
@@ -245,7 +245,7 @@
 
     const/4 v10, 0x5
 
-    const v11, 0x7f1104e2
+    const v11, 0x7f11052f
 
     move-object v8, v0
 
@@ -264,7 +264,7 @@
 
     const/4 v3, 0x6
 
-    const v4, 0x7f11044d
+    const v4, 0x7f110498
 
     move-object v1, v0
 
@@ -283,7 +283,7 @@
 
     const/4 v10, 0x7
 
-    const v11, 0x7f110043
+    const v11, 0x7f110042
 
     move-object v8, v0
 
@@ -337,7 +337,7 @@
 
     move-result-object v1
 
-    const v8, 0x7f110026
+    const v8, 0x7f110025
 
     invoke-virtual {v1, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -352,7 +352,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f110253
+    const v3, 0x7f11029c
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -406,7 +406,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f110251
+    const v3, 0x7f11029a
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -462,7 +462,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f110257
+    const v3, 0x7f1102a0
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -500,7 +500,7 @@
 
     const/16 v10, 0xd
 
-    const v11, 0x7f11024d
+    const v11, 0x7f110296
 
     const/4 v12, 0x0
 
@@ -522,6 +522,25 @@
 
 .method private constructor <init>(Ljava/lang/String;IILjava/lang/String;Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "messageResourceId",
+            "messageString",
+            "priority",
+            "isToast"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -551,6 +570,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage$MessageType;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 20
     const-class v0, Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage$MessageType;

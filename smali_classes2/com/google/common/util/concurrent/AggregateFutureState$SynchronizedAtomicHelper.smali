@@ -20,7 +20,7 @@
 
     const/4 v0, 0x0
 
-    .line 177
+    .line 188
     invoke-direct {p0, v0}, Lcom/google/common/util/concurrent/AggregateFutureState$AtomicHelper;-><init>(Lcom/google/common/util/concurrent/AggregateFutureState$1;)V
 
     return-void
@@ -29,7 +29,7 @@
 .method synthetic constructor <init>(Lcom/google/common/util/concurrent/AggregateFutureState$1;)V
     .locals 0
 
-    .line 177
+    .line 188
     invoke-direct {p0}, Lcom/google/common/util/concurrent/AggregateFutureState$SynchronizedAtomicHelper;-><init>()V
 
     return-void
@@ -39,10 +39,28 @@
 # virtual methods
 .method compareAndSetSeenExceptions(Lcom/google/common/util/concurrent/AggregateFutureState;Ljava/util/Set;Ljava/util/Set;)V
     .locals 0
+    .param p2    # Ljava/util/Set;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "state",
+            "expect",
+            "update"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/google/common/util/concurrent/AggregateFutureState;",
+            "Lcom/google/common/util/concurrent/AggregateFutureState<",
+            "*>;",
             "Ljava/util/Set<",
             "Ljava/lang/Throwable;",
             ">;",
@@ -52,10 +70,10 @@
         }
     .end annotation
 
-    .line 181
+    .line 192
     monitor-enter p1
 
-    .line 182
+    .line 193
     :try_start_0
     invoke-static {p1}, Lcom/google/common/util/concurrent/AggregateFutureState;->access$200(Lcom/google/common/util/concurrent/AggregateFutureState;)Ljava/util/Set;
 
@@ -63,10 +81,10 @@
 
     if-ne p0, p2, :cond_0
 
-    .line 183
+    .line 194
     invoke-static {p1, p3}, Lcom/google/common/util/concurrent/AggregateFutureState;->access$202(Lcom/google/common/util/concurrent/AggregateFutureState;Ljava/util/Set;)Ljava/util/Set;
 
-    .line 185
+    .line 196
     :cond_0
     monitor-exit p1
 
@@ -84,11 +102,27 @@
 
 .method decrementAndGetRemainingCount(Lcom/google/common/util/concurrent/AggregateFutureState;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "state"
+        }
+    .end annotation
 
-    .line 190
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/common/util/concurrent/AggregateFutureState<",
+            "*>;)I"
+        }
+    .end annotation
+
+    .line 201
     monitor-enter p1
 
-    .line 191
+    .line 202
     :try_start_0
     invoke-static {p1}, Lcom/google/common/util/concurrent/AggregateFutureState;->access$306(Lcom/google/common/util/concurrent/AggregateFutureState;)I
 
@@ -101,7 +135,7 @@
     :catchall_0
     move-exception p0
 
-    .line 192
+    .line 203
     monitor-exit p1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

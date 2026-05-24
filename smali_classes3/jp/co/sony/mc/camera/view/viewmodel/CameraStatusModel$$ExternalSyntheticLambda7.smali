@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function4;
+.implements Lkotlin/jvm/functions/Function5;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
@@ -42,11 +42,13 @@
 
     check-cast p4, Ljava/lang/Boolean;
 
-    invoke-virtual {p4}, Ljava/lang/Boolean;->booleanValue()Z
+    check-cast p5, Ljava/lang/Boolean;
+
+    invoke-virtual {p5}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p3
 
-    invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->$r8$lambda$-PBVUTuLigCtvkBztmILD-DRDoE(ZZZZ)Z
+    invoke-static {p0, p1, p2, p4, p3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->$r8$lambda$0eTtvW_reIHxk0ASb-5wYMcnpfY(ZZZLjava/lang/Boolean;Z)Z
 
     move-result p0
 

@@ -40,6 +40,19 @@
 # direct methods
 .method public constructor <init>(Ljava/io/FileDescriptor;ILjp/co/sony/mc/camera/recorder/utility/encoder/MediaMuxerWrapper$MuxerListener;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "fd",
+            "format",
+            "listener"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -96,6 +109,19 @@
 
 .method public constructor <init>(Ljava/lang/String;ILjp/co/sony/mc/camera/recorder/utility/encoder/MediaMuxerWrapper$MuxerListener;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "filePath",
+            "format",
+            "listener"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -156,6 +182,14 @@
 # virtual methods
 .method public addTrack(Landroid/media/MediaFormat;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "format"
+        }
+    .end annotation
 
     .line 127
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/MediaMuxerWrapper;->mMuxer:Landroid/media/MediaMuxer;
@@ -207,6 +241,16 @@
 
 .method public setLocation(FF)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "latitude",
+            "longitude"
+        }
+    .end annotation
 
     .line 116
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/MediaMuxerWrapper;->mMuxer:Landroid/media/MediaMuxer;
@@ -218,6 +262,14 @@
 
 .method public setMaxDuration(J)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "maxDurationMs"
+        }
+    .end annotation
 
     const-wide/16 v0, 0x0
 
@@ -257,6 +309,14 @@
 
 .method public setMaxFileSize(J)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "maxFileSizeBytes"
+        }
+    .end annotation
 
     .line 95
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/MediaMuxerWrapper;->mFile:Ljava/io/File;
@@ -295,6 +355,14 @@
 
 .method public setOrientationHint(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "degrees"
+        }
+    .end annotation
 
     .line 107
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/MediaMuxerWrapper;->mMuxer:Landroid/media/MediaMuxer;
@@ -328,6 +396,18 @@
 
 .method public writeSampleData(ILjava/nio/ByteBuffer;Landroid/media/MediaCodec$BufferInfo;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "trackIndex",
+            "byteBuf",
+            "info"
+        }
+    .end annotation
 
     .line 168
     iget v0, p3, Landroid/media/MediaCodec$BufferInfo;->flags:I

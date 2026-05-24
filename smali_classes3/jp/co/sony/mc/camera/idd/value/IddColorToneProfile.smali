@@ -62,7 +62,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 510
+    .line 511
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;->value:Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;
@@ -75,7 +75,7 @@
 .method public final getValue()Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;
     .locals 0
 
-    .line 510
+    .line 511
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;->value:Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;
 
     return-object p0
@@ -84,7 +84,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 511
+    .line 512
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;->value:Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;
 
     sget-object v0, Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile$WhenMappings;->$EnumSwitchMapping$0:[I
@@ -103,51 +103,60 @@
 
     throw p0
 
-    .line 518
+    .line 520
     :pswitch_0
+    const-string p0, "CUSTOM1"
+
+    goto :goto_0
+
+    .line 519
+    :pswitch_1
     const-string p0, "S_CINETONE"
 
     goto :goto_0
 
-    .line 517
-    :pswitch_1
+    .line 518
+    :pswitch_2
     const-string p0, "CREATIVE_LOOK_SH"
 
     goto :goto_0
 
-    .line 516
-    :pswitch_2
+    .line 517
+    :pswitch_3
     const-string p0, "CREATIVE_LOOK_IN"
 
     goto :goto_0
 
-    .line 515
-    :pswitch_3
+    .line 516
+    :pswitch_4
     const-string p0, "CREATIVE_LOOK_FL"
 
     goto :goto_0
 
-    .line 514
-    :pswitch_4
+    .line 515
+    :pswitch_5
     const-string p0, "CREATIVE_LOOK_VV"
 
     goto :goto_0
 
-    .line 513
-    :pswitch_5
+    .line 514
+    :pswitch_6
     const-string p0, "CREATIVE_LOOK_NT"
 
     goto :goto_0
 
-    .line 512
-    :pswitch_6
+    .line 513
+    :pswitch_7
     const-string p0, "CREATIVE_LOOK_ST"
 
     :goto_0
     return-object p0
 
+    nop
+
     :pswitch_data_0
     .packed-switch 0x1
+        :pswitch_7
         :pswitch_6
         :pswitch_5
         :pswitch_4

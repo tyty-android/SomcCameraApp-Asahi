@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/hint/HintTextView;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 77
+    .line 78
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextView$1;->this$0:Ljp/co/sony/mc/camera/view/hint/HintTextView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +46,7 @@
 .method public run()V
     .locals 1
 
-    .line 80
+    .line 81
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextView$1;->this$0:Ljp/co/sony/mc/camera/view/hint/HintTextView;
 
     const/16 v0, 0x20

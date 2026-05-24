@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract onOrientationDegreeChanged(I)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "degree"
+        }
+    .end annotation
 .end method

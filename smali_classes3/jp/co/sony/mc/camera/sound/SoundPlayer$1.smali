@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/sound/SoundPlayer;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 139
     iput-object p1, p0, Ljp/co/sony/mc/camera/sound/SoundPlayer$1;->this$0:Ljp/co/sony/mc/camera/sound/SoundPlayer;
@@ -37,6 +45,18 @@
 # virtual methods
 .method public onLoadComplete(Landroid/media/SoundPool;II)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "pool",
+            "soundID",
+            "status"
+        }
+    .end annotation
 
     .line 142
     iget-object p1, p0, Ljp/co/sony/mc/camera/sound/SoundPlayer$1;->this$0:Ljp/co/sony/mc/camera/sound/SoundPlayer;

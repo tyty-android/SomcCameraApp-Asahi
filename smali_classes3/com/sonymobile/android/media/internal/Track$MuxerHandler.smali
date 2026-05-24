@@ -21,11 +21,21 @@
 # direct methods
 .method public constructor <init>(Lcom/sonymobile/android/media/internal/Track;Landroid/os/Looper;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "looper"
+        }
+    .end annotation
 
-    .line 307
+    .line 284
     iput-object p1, p0, Lcom/sonymobile/android/media/internal/Track$MuxerHandler;->this$0:Lcom/sonymobile/android/media/internal/Track;
 
-    .line 308
+    .line 285
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     return-void
@@ -34,7 +44,7 @@
 .method private doFlushBuffers()V
     .locals 3
 
-    .line 312
+    .line 289
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/Track$MuxerHandler;->this$0:Lcom/sonymobile/android/media/internal/Track;
 
     iget-object v0, v0, Lcom/sonymobile/android/media/internal/Track;->mBufferList:Ljava/util/concurrent/LinkedBlockingDeque;
@@ -48,7 +58,7 @@
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 315
+    .line 292
     iget-object v2, p0, Lcom/sonymobile/android/media/internal/Track$MuxerHandler;->this$0:Lcom/sonymobile/android/media/internal/Track;
 
     invoke-virtual {v2}, Lcom/sonymobile/android/media/internal/Track;->doWriteOutputBuffer()V
@@ -65,8 +75,16 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "msg"
+        }
+    .end annotation
 
-    .line 321
+    .line 298
     iget p1, p1, Landroid/os/Message;->what:I
 
     const/16 v0, 0x68
@@ -79,14 +97,14 @@
 
     goto :goto_0
 
-    .line 332
+    .line 309
     :cond_0
     :try_start_0
     invoke-direct {p0}, Lcom/sonymobile/android/media/internal/Track$MuxerHandler;->doFlushBuffers()V
 
     goto :goto_0
 
-    .line 324
+    .line 301
     :cond_1
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/Track$MuxerHandler;->this$0:Lcom/sonymobile/android/media/internal/Track;
 

@@ -21,11 +21,19 @@
 # direct methods
 .method constructor <init>(Ljava/lang/Object;)V
     .locals 0
-
-    .line 61
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "successorValue"
+        }
+    .end annotation
 
     .line 62
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 63
     iput-object p1, p0, Lcom/google/common/graph/DirectedGraphConnections$PredAndSucc;->successorValue:Ljava/lang/Object;
 
     return-void
@@ -34,7 +42,7 @@
 .method static synthetic access$600(Lcom/google/common/graph/DirectedGraphConnections$PredAndSucc;)Ljava/lang/Object;
     .locals 0
 
-    .line 58
+    .line 59
     iget-object p0, p0, Lcom/google/common/graph/DirectedGraphConnections$PredAndSucc;->successorValue:Ljava/lang/Object;
 
     return-object p0

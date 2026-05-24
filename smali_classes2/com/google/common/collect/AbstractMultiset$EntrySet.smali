@@ -28,8 +28,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/AbstractMultiset;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 173
+    .line 176
     iput-object p1, p0, Lcom/google/common/collect/AbstractMultiset$EntrySet;->this$0:Lcom/google/common/collect/AbstractMultiset;
 
     invoke-direct {p0}, Lcom/google/common/collect/Multisets$EntrySet;-><init>()V
@@ -50,7 +58,7 @@
         }
     .end annotation
 
-    .line 181
+    .line 184
     iget-object p0, p0, Lcom/google/common/collect/AbstractMultiset$EntrySet;->this$0:Lcom/google/common/collect/AbstractMultiset;
 
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultiset;->entryIterator()Ljava/util/Iterator;
@@ -70,7 +78,7 @@
         }
     .end annotation
 
-    .line 176
+    .line 179
     iget-object p0, p0, Lcom/google/common/collect/AbstractMultiset$EntrySet;->this$0:Lcom/google/common/collect/AbstractMultiset;
 
     return-object p0
@@ -79,7 +87,7 @@
 .method public size()I
     .locals 0
 
-    .line 186
+    .line 189
     iget-object p0, p0, Lcom/google/common/collect/AbstractMultiset$EntrySet;->this$0:Lcom/google/common/collect/AbstractMultiset;
 
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultiset;->distinctElements()I

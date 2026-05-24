@@ -3,6 +3,11 @@
 .source "PercentEscaper.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/net/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # static fields
 .field private static final PLUS_SIGN:[C
 
@@ -21,7 +26,7 @@
 
     const/4 v0, 0x1
 
-    .line 57
+    .line 58
     new-array v0, v0, [C
 
     const/16 v1, 0x2b
@@ -32,7 +37,7 @@
 
     sput-object v0, Lcom/google/common/net/PercentEscaper;->PLUS_SIGN:[C
 
-    .line 60
+    .line 61
     const-string v0, "0123456789ABCDEF"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
@@ -46,14 +51,24 @@
 
 .method public constructor <init>(Ljava/lang/String;Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "safeChars",
+            "plusForSpace"
+        }
+    .end annotation
 
-    .line 85
+    .line 86
     invoke-direct {p0}, Lcom/google/common/escape/UnicodeEscaper;-><init>()V
 
-    .line 88
+    .line 89
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 90
+    .line 91
     const-string v0, ".*[0-9A-Za-z].*"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->matches(Ljava/lang/String;)Z
@@ -62,20 +77,28 @@
 
     if-nez v0, :cond_2
 
-    .line 94
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    .line 95
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
     const-string v0, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 
-    invoke-virtual {p1, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     if-eqz p2, :cond_1
 
-    .line 97
+    .line 98
     const-string v0, " "
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
@@ -86,7 +109,7 @@
 
     goto :goto_0
 
-    .line 98
+    .line 99
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -96,12 +119,12 @@
 
     throw p0
 
-    .line 101
+    .line 102
     :cond_1
     :goto_0
     iput-boolean p2, p0, Lcom/google/common/net/PercentEscaper;->plusForSpace:Z
 
-    .line 102
+    .line 103
     invoke-static {p1}, Lcom/google/common/net/PercentEscaper;->createSafeOctets(Ljava/lang/String;)[Z
 
     move-result-object p1
@@ -110,7 +133,7 @@
 
     return-void
 
-    .line 91
+    .line 92
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -123,13 +146,21 @@
 
 .method private static createSafeOctets(Ljava/lang/String;)[Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "safeChars"
+        }
+    .end annotation
 
-    .line 112
+    .line 113
     invoke-virtual {p0}, Ljava/lang/String;->toCharArray()[C
 
     move-result-object p0
 
-    .line 113
+    .line 114
     array-length v0, p0
 
     const/4 v1, -0x1
@@ -143,7 +174,7 @@
 
     aget-char v4, p0, v3
 
-    .line 114
+    .line 115
     invoke-static {v4, v1}, Ljava/lang/Math;->max(II)I
 
     move-result v1
@@ -157,10 +188,10 @@
 
     add-int/2addr v1, v0
 
-    .line 116
+    .line 117
     new-array v1, v1, [Z
 
-    .line 117
+    .line 118
     array-length v3, p0
 
     :goto_1
@@ -168,7 +199,7 @@
 
     aget-char v4, p0, v2
 
-    .line 118
+    .line 119
     aput-boolean v0, v1, v4
 
     add-int/lit8 v2, v2, 0x1
@@ -183,11 +214,19 @@
 # virtual methods
 .method public escape(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-
-    .line 145
-    invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "s"
+        }
+    .end annotation
 
     .line 146
+    invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 147
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -197,12 +236,12 @@
     :goto_0
     if-ge v1, v0, :cond_2
 
-    .line 148
+    .line 149
     invoke-virtual {p1, v1}, Ljava/lang/String;->charAt(I)C
 
     move-result v2
 
-    .line 149
+    .line 150
     iget-object v3, p0, Lcom/google/common/net/PercentEscaper;->safeOctets:[Z
 
     array-length v4, v3
@@ -220,7 +259,7 @@
 
     goto :goto_0
 
-    .line 150
+    .line 151
     :cond_1
     :goto_1
     invoke-virtual {p0, p1, v1}, Lcom/google/common/net/PercentEscaper;->escapeSlow(Ljava/lang/String;I)Ljava/lang/String;
@@ -235,8 +274,19 @@
 
 .method protected escape(I)[C
     .locals 13
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cp"
+        }
+    .end annotation
 
-    .line 161
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 163
     iget-object v0, p0, Lcom/google/common/net/PercentEscaper;->safeOctets:[Z
 
     array-length v1, v0
@@ -256,12 +306,12 @@
 
     if-ne p1, v0, :cond_1
 
-    .line 163
+    .line 165
     iget-boolean p0, p0, Lcom/google/common/net/PercentEscaper;->plusForSpace:Z
 
     if-eqz p0, :cond_1
 
-    .line 164
+    .line 166
     sget-object p0, Lcom/google/common/net/PercentEscaper;->PLUS_SIGN:[C
 
     return-object p0
@@ -283,13 +333,13 @@
 
     if-gt p1, p0, :cond_2
 
-    .line 168
+    .line 170
     new-array p0, v5, [C
 
-    .line 169
+    .line 171
     aput-char v4, p0, v2
 
-    .line 170
+    .line 172
     sget-object v2, Lcom/google/common/net/PercentEscaper;->UPPER_HEX_DIGITS:[C
 
     and-int/lit8 v4, p1, 0xf
@@ -300,7 +350,7 @@
 
     ushr-int/2addr p1, v3
 
-    .line 171
+    .line 173
     aget-char p1, v2, p1
 
     aput-char p1, p0, v0
@@ -322,16 +372,16 @@
 
     if-gt p1, p0, :cond_3
 
-    .line 176
+    .line 178
     new-array p0, v9, [C
 
-    .line 177
+    .line 179
     aput-char v4, p0, v2
 
-    .line 178
+    .line 180
     aput-char v4, p0, v5
 
-    .line 179
+    .line 181
     sget-object v2, Lcom/google/common/net/PercentEscaper;->UPPER_HEX_DIGITS:[C
 
     and-int/lit8 v4, p1, 0xf
@@ -346,7 +396,7 @@
 
     or-int/2addr v4, v10
 
-    .line 181
+    .line 183
     aget-char v4, v2, v4
 
     aput-char v4, p0, v3
@@ -355,7 +405,7 @@
 
     and-int/lit8 v3, v3, 0xf
 
-    .line 183
+    .line 185
     aget-char v3, v2, v3
 
     aput-char v3, p0, v1
@@ -364,7 +414,7 @@
 
     or-int/2addr p1, v7
 
-    .line 185
+    .line 187
     aget-char p1, v2, p1
 
     aput-char p1, p0, v0
@@ -380,24 +430,24 @@
 
     if-gt p1, p0, :cond_4
 
-    .line 190
+    .line 192
     new-array p0, v11, [C
 
-    .line 191
+    .line 193
     aput-char v4, p0, v2
 
     const/16 v2, 0x45
 
-    .line 192
+    .line 194
     aput-char v2, p0, v0
 
-    .line 193
+    .line 195
     aput-char v4, p0, v5
 
-    .line 194
+    .line 196
     aput-char v4, p0, v9
 
-    .line 195
+    .line 197
     sget-object v0, Lcom/google/common/net/PercentEscaper;->UPPER_HEX_DIGITS:[C
 
     and-int/lit8 v2, p1, 0xf
@@ -412,7 +462,7 @@
 
     or-int/2addr v2, v10
 
-    .line 197
+    .line 199
     aget-char v2, v0, v2
 
     aput-char v2, p0, v12
@@ -421,7 +471,7 @@
 
     and-int/lit8 v2, v2, 0xf
 
-    .line 199
+    .line 201
     aget-char v2, v0, v2
 
     aput-char v2, p0, v6
@@ -432,14 +482,14 @@
 
     or-int/2addr v2, v10
 
-    .line 201
+    .line 203
     aget-char v2, v0, v2
 
     aput-char v2, p0, v3
 
     ushr-int/2addr p1, v7
 
-    .line 203
+    .line 205
     aget-char p1, v0, p1
 
     aput-char p1, p0, v1
@@ -451,27 +501,27 @@
 
     if-gt p1, p0, :cond_5
 
-    .line 206
+    .line 208
     new-array p0, v7, [C
 
-    .line 209
+    .line 211
     aput-char v4, p0, v2
 
     const/16 v2, 0x46
 
-    .line 210
+    .line 212
     aput-char v2, p0, v0
 
-    .line 211
+    .line 213
     aput-char v4, p0, v5
 
-    .line 212
+    .line 214
     aput-char v4, p0, v9
 
-    .line 213
+    .line 215
     aput-char v4, p0, v11
 
-    .line 214
+    .line 216
     sget-object v0, Lcom/google/common/net/PercentEscaper;->UPPER_HEX_DIGITS:[C
 
     and-int/lit8 v2, p1, 0xf
@@ -488,7 +538,7 @@
 
     or-int/2addr v2, v10
 
-    .line 216
+    .line 218
     aget-char v2, v0, v2
 
     aput-char v2, p0, v8
@@ -497,7 +547,7 @@
 
     and-int/lit8 v2, v2, 0xf
 
-    .line 218
+    .line 220
     aget-char v2, v0, v2
 
     aput-char v2, p0, v10
@@ -508,7 +558,7 @@
 
     or-int/2addr v2, v10
 
-    .line 220
+    .line 222
     aget-char v2, v0, v2
 
     aput-char v2, p0, v12
@@ -517,7 +567,7 @@
 
     and-int/lit8 v2, v2, 0xf
 
-    .line 222
+    .line 224
     aget-char v2, v0, v2
 
     aput-char v2, p0, v6
@@ -528,7 +578,7 @@
 
     or-int/2addr v2, v10
 
-    .line 224
+    .line 226
     aget-char v2, v0, v2
 
     aput-char v2, p0, v3
@@ -537,28 +587,22 @@
 
     and-int/2addr p1, v12
 
-    .line 226
+    .line 228
     aget-char p1, v0, p1
 
     aput-char p1, p0, v1
 
     return-object p0
 
-    .line 230
+    .line 232
     :cond_5
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
-    const/16 v1, 0x2b
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
-
     const-string v1, "Invalid unicode character value "
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -575,19 +619,31 @@
 
 .method protected nextEscapeIndex(Ljava/lang/CharSequence;II)I
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "csq",
+            "index",
+            "end"
+        }
+    .end annotation
 
-    .line 129
+    .line 130
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     :goto_0
     if-ge p2, p3, :cond_1
 
-    .line 131
+    .line 132
     invoke-interface {p1, p2}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v0
 
-    .line 132
+    .line 133
     iget-object v1, p0, Lcom/google/common/net/PercentEscaper;->safeOctets:[Z
 
     array-length v2, v1

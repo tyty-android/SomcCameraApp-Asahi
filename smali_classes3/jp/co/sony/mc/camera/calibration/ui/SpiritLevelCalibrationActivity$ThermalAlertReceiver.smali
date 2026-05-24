@@ -21,6 +21,14 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 173
     iput-object p1, p0, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationActivity$ThermalAlertReceiver;->this$0:Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationActivity;
@@ -42,6 +50,16 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "intent"
+        }
+    .end annotation
 
     .line 176
     const-string p1, "com.sonyericsson.psm.action.CAMERA_HEATED_OVER_CRITICAL"
@@ -59,7 +77,7 @@
     .line 177
     iget-object p1, p0, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationActivity$ThermalAlertReceiver;->this$0:Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationActivity;
 
-    const p2, 0x7f1101a0
+    const p2, 0x7f1101dd
 
     .line 178
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationActivity;->getString(I)Ljava/lang/String;
@@ -68,7 +86,7 @@
 
     iget-object p2, p0, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationActivity$ThermalAlertReceiver;->this$0:Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationActivity;
 
-    const v0, 0x7f1101e6
+    const v0, 0x7f110232
 
     .line 179
     invoke-virtual {p2, v0}, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationActivity;->getString(I)Ljava/lang/String;

@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/util/concurrent/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/util/concurrent/JdkFutureAdapters$ListenableFutureAdapter;
@@ -15,7 +18,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 170
+    .line 176
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -23,6 +26,15 @@
 
 .method public static listenInPoolThread(Ljava/util/concurrent/Future;)Lcom/google/common/util/concurrent/ListenableFuture;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "future"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<V:",
@@ -35,17 +47,17 @@
         }
     .end annotation
 
-    .line 53
+    .line 59
     instance-of v0, p0, Lcom/google/common/util/concurrent/ListenableFuture;
 
     if-eqz v0, :cond_0
 
-    .line 54
+    .line 60
     check-cast p0, Lcom/google/common/util/concurrent/ListenableFuture;
 
     return-object p0
 
-    .line 56
+    .line 62
     :cond_0
     new-instance v0, Lcom/google/common/util/concurrent/JdkFutureAdapters$ListenableFutureAdapter;
 
@@ -56,6 +68,17 @@
 
 .method public static listenInPoolThread(Ljava/util/concurrent/Future;Ljava/util/concurrent/Executor;)Lcom/google/common/util/concurrent/ListenableFuture;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "future",
+            "executor"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<V:",
@@ -70,20 +93,20 @@
         }
     .end annotation
 
-    .line 80
+    .line 87
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 81
+    .line 88
     instance-of v0, p0, Lcom/google/common/util/concurrent/ListenableFuture;
 
     if-eqz v0, :cond_0
 
-    .line 82
+    .line 89
     check-cast p0, Lcom/google/common/util/concurrent/ListenableFuture;
 
     return-object p0
 
-    .line 84
+    .line 91
     :cond_0
     new-instance v0, Lcom/google/common/util/concurrent/JdkFutureAdapters$ListenableFutureAdapter;
 

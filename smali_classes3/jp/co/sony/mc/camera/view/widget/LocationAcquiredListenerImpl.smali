@@ -17,6 +17,18 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;Ljp/co/sony/mc/camera/viewfinder/indicators/GeotagIndicator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "geotagManager",
+            "geotagIndicator"
+        }
+    .end annotation
 
     .line 27
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,6 +49,16 @@
 # virtual methods
 .method public onAcquired(ZZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "gps",
+            "net"
+        }
+    .end annotation
 
     .line 42
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/LocationAcquiredListenerImpl;->mGeotagIndicator:Ljp/co/sony/mc/camera/viewfinder/indicators/GeotagIndicator;

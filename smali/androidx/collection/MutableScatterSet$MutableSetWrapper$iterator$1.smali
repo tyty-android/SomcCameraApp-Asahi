@@ -96,15 +96,15 @@
 
     iput-object p1, p0, Landroidx/collection/MutableScatterSet$MutableSetWrapper$iterator$1;->this$0:Landroidx/collection/MutableScatterSet;
 
-    .line 1038
+    .line 1054
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 1039
+    .line 1055
     iput v0, p0, Landroidx/collection/MutableScatterSet$MutableSetWrapper$iterator$1;->current:I
 
-    .line 1040
+    .line 1056
     new-instance v0, Landroidx/collection/MutableScatterSet$MutableSetWrapper$iterator$1$iterator$1;
 
     const/4 v1, 0x0
@@ -127,7 +127,7 @@
 .method public final getCurrent()I
     .locals 0
 
-    .line 1039
+    .line 1055
     iget p0, p0, Landroidx/collection/MutableScatterSet$MutableSetWrapper$iterator$1;->current:I
 
     return p0
@@ -143,7 +143,7 @@
         }
     .end annotation
 
-    .line 1040
+    .line 1056
     iget-object p0, p0, Landroidx/collection/MutableScatterSet$MutableSetWrapper$iterator$1;->iterator:Ljava/util/Iterator;
 
     return-object p0
@@ -152,7 +152,7 @@
 .method public hasNext()Z
     .locals 0
 
-    .line 1048
+    .line 1064
     iget-object p0, p0, Landroidx/collection/MutableScatterSet$MutableSetWrapper$iterator$1;->iterator:Ljava/util/Iterator;
 
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
@@ -170,7 +170,7 @@
         }
     .end annotation
 
-    .line 1050
+    .line 1066
     iget-object p0, p0, Landroidx/collection/MutableScatterSet$MutableSetWrapper$iterator$1;->iterator:Ljava/util/Iterator;
 
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -183,19 +183,19 @@
 .method public remove()V
     .locals 3
 
-    .line 1053
+    .line 1069
     iget v0, p0, Landroidx/collection/MutableScatterSet$MutableSetWrapper$iterator$1;->current:I
 
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_0
 
-    .line 1054
+    .line 1070
     iget-object v2, p0, Landroidx/collection/MutableScatterSet$MutableSetWrapper$iterator$1;->this$0:Landroidx/collection/MutableScatterSet;
 
     invoke-virtual {v2, v0}, Landroidx/collection/MutableScatterSet;->removeElementAt(I)V
 
-    .line 1055
+    .line 1071
     iput v1, p0, Landroidx/collection/MutableScatterSet$MutableSetWrapper$iterator$1;->current:I
 
     :cond_0
@@ -205,7 +205,7 @@
 .method public final setCurrent(I)V
     .locals 0
 
-    .line 1039
+    .line 1055
     iput p1, p0, Landroidx/collection/MutableScatterSet$MutableSetWrapper$iterator$1;->current:I
 
     return-void

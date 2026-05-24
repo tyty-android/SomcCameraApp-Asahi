@@ -32,7 +32,22 @@
 .end method
 
 .method public static create(Landroid/content/Context;Ljp/co/sony/mc/camera/recorder/utility/Accessor;Landroid/os/Handler;Ljp/co/sony/mc/camera/recorder/RecorderFactory$Parameters;)Ljp/co/sony/mc/camera/recorder/RecorderController;
-    .locals 10
+    .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "cameraActionSound",
+            "uiThreadHandler",
+            "parameters"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -47,7 +62,7 @@
         }
     .end annotation
 
-    .line 63
+    .line 58
     invoke-static {p3}, Ljp/co/sony/mc/camera/recorder/RecorderFactory$Parameters;->-$$Nest$fgetmListener(Ljp/co/sony/mc/camera/recorder/RecorderFactory$Parameters;)Ljp/co/sony/mc/camera/recorder/RecorderController$RecorderListener;
 
     move-result-object v2
@@ -62,7 +77,7 @@
 
     const-string v1, "intelligent_active"
 
-    .line 69
+    .line 64
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -75,7 +90,7 @@
 
     const-string v1, "action_mode"
 
-    .line 70
+    .line 65
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -100,17 +115,9 @@
 
     move-result v6
 
-    invoke-static {p3}, Ljp/co/sony/mc/camera/recorder/RecorderFactory$Parameters;->-$$Nest$fgetmIsStreamingMode(Ljp/co/sony/mc/camera/recorder/RecorderFactory$Parameters;)Z
-
-    move-result v7
-
-    invoke-static {p3}, Ljp/co/sony/mc/camera/recorder/RecorderFactory$Parameters;->-$$Nest$fgetmIsHalfFps(Ljp/co/sony/mc/camera/recorder/RecorderFactory$Parameters;)Z
-
-    move-result v8
-
     invoke-static {p3}, Ljp/co/sony/mc/camera/recorder/RecorderFactory$Parameters;->-$$Nest$fgetmShouldWaitStartSound(Ljp/co/sony/mc/camera/recorder/RecorderFactory$Parameters;)Z
 
-    move-result v9
+    move-result v7
 
     move-object v0, p0
 
@@ -118,16 +125,39 @@
 
     move-object v3, p2
 
-    .line 63
-    invoke-static/range {v0 .. v9}, Ljp/co/sony/mc/camera/recorder/RecorderFactory;->createDefault(Landroid/content/Context;Ljp/co/sony/mc/camera/recorder/utility/Accessor;Ljp/co/sony/mc/camera/recorder/RecorderController$RecorderListener;Landroid/os/Handler;IZZZZZ)Ljp/co/sony/mc/camera/recorder/RecorderController;
+    .line 58
+    invoke-static/range {v0 .. v7}, Ljp/co/sony/mc/camera/recorder/RecorderFactory;->createDefault(Landroid/content/Context;Ljp/co/sony/mc/camera/recorder/utility/Accessor;Ljp/co/sony/mc/camera/recorder/RecorderController$RecorderListener;Landroid/os/Handler;IZZZ)Ljp/co/sony/mc/camera/recorder/RecorderController;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method private static createDefault(Landroid/content/Context;Ljp/co/sony/mc/camera/recorder/utility/Accessor;Ljp/co/sony/mc/camera/recorder/RecorderController$RecorderListener;Landroid/os/Handler;IZZZZZ)Ljp/co/sony/mc/camera/recorder/RecorderController;
-    .locals 16
+.method private static createDefault(Landroid/content/Context;Ljp/co/sony/mc/camera/recorder/utility/Accessor;Ljp/co/sony/mc/camera/recorder/RecorderController$RecorderListener;Landroid/os/Handler;IZZZ)Ljp/co/sony/mc/camera/recorder/RecorderController;
+    .locals 15
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "cameraActionSound",
+            "listener",
+            "progressNotificationHandler",
+            "progressNotificationIntervalMillis",
+            "isIntelligentActive",
+            "isShutterSoundOn",
+            "shouldWaitStartSound"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -137,7 +167,7 @@
             ">;",
             "Ljp/co/sony/mc/camera/recorder/RecorderController$RecorderListener;",
             "Landroid/os/Handler;",
-            "IZZZZZ)",
+            "IZZZ)",
             "Ljp/co/sony/mc/camera/recorder/RecorderController;"
         }
     .end annotation
@@ -146,7 +176,7 @@
 
     const/4 v0, 0x1
 
-    .line 94
+    .line 85
     new-array v0, v0, [Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -193,18 +223,14 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 101
-    new-instance v15, Ljp/co/sony/mc/camera/recorder/defaultrecorder/VanillaCameraRecorderController;
+    .line 92
+    new-instance v14, Ljp/co/sony/mc/camera/recorder/defaultrecorder/VanillaCameraRecorderController;
 
     new-instance v3, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;
 
     const/4 v0, 0x2
 
-    move/from16 v14, p7
-
-    move/from16 v1, p8
-
-    invoke-direct {v3, v0, v13, v14, v1}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;-><init>(IZZZ)V
+    invoke-direct {v3, v0, v13}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;-><init>(IZ)V
 
     sget-wide v5, Ljp/co/sony/mc/camera/recorder/RecorderFactory;->MIN_VIDEO_DURATION_MILLIS:J
 
@@ -212,9 +238,9 @@
 
     const/4 v11, 0x1
 
-    move-object v0, v15
+    move-object v0, v14
 
-    move-object/from16 v1, p0
+    move-object v1, p0
 
     move-object/from16 v2, p1
 
@@ -222,9 +248,9 @@
 
     move-object/from16 v7, p3
 
-    move/from16 v10, p9
+    move/from16 v10, p7
 
-    invoke-direct/range {v0 .. v14}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/VanillaCameraRecorderController;-><init>(Landroid/content/Context;Ljp/co/sony/mc/camera/recorder/utility/Accessor;Ljp/co/sony/mc/camera/recorder/RecorderInterface;Ljp/co/sony/mc/camera/recorder/RecorderController$RecorderListener;JLandroid/os/Handler;IZZZZZZ)V
+    invoke-direct/range {v0 .. v13}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/VanillaCameraRecorderController;-><init>(Landroid/content/Context;Ljp/co/sony/mc/camera/recorder/utility/Accessor;Ljp/co/sony/mc/camera/recorder/RecorderInterface;Ljp/co/sony/mc/camera/recorder/RecorderController$RecorderListener;JLandroid/os/Handler;IZZZZZ)V
 
-    return-object v15
+    return-object v14
 .end method

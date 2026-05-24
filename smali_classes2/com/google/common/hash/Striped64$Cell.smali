@@ -56,7 +56,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 114
+    .line 122
     :try_start_0
     invoke-static {}, Lcom/google/common/hash/Striped64;->access$000()Lsun/misc/Unsafe;
 
@@ -64,10 +64,10 @@
 
     sput-object v0, Lcom/google/common/hash/Striped64$Cell;->UNSAFE:Lsun/misc/Unsafe;
 
-    .line 115
+    .line 123
     const-class v1, Lcom/google/common/hash/Striped64$Cell;
 
-    .line 116
+    .line 124
     const-string v2, "value"
 
     invoke-virtual {v1, v2}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
@@ -87,7 +87,7 @@
     :catch_0
     move-exception v0
 
-    .line 118
+    .line 126
     new-instance v1, Ljava/lang/Error;
 
     invoke-direct {v1, v0}, Ljava/lang/Error;-><init>(Ljava/lang/Throwable;)V
@@ -97,11 +97,19 @@
 
 .method constructor <init>(J)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "x"
+        }
+    .end annotation
 
-    .line 100
+    .line 108
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 101
+    .line 109
     iput-wide p1, p0, Lcom/google/common/hash/Striped64$Cell;->value:J
 
     return-void
@@ -111,8 +119,18 @@
 # virtual methods
 .method final cas(JJ)Z
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "cmp",
+            "val"
+        }
+    .end annotation
 
-    .line 105
+    .line 113
     sget-object v0, Lcom/google/common/hash/Striped64$Cell;->UNSAFE:Lsun/misc/Unsafe;
 
     sget-wide v2, Lcom/google/common/hash/Striped64$Cell;->valueOffset:J

@@ -84,7 +84,7 @@
 .method private static synthetic $values()[Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
     .locals 17
 
-    .line 1479
+    .line 1756
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->ST:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     sget-object v1, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->NT:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
@@ -129,7 +129,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1481
+    .line 1758
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     const-string v1, "ST"
@@ -140,7 +140,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->ST:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
-    .line 1482
+    .line 1759
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     const-string v1, "NT"
@@ -151,7 +151,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->NT:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
-    .line 1483
+    .line 1760
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     const-string v1, "VV"
@@ -162,7 +162,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->VV:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
-    .line 1484
+    .line 1761
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     const-string v1, "FL"
@@ -173,7 +173,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->FL:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
-    .line 1485
+    .line 1762
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     const-string v1, "IN"
@@ -184,7 +184,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->IN:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
-    .line 1486
+    .line 1763
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     const-string v1, "SH"
@@ -195,7 +195,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->SH:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
-    .line 1487
+    .line 1764
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     const-string v1, "FILTER_OFF"
@@ -206,7 +206,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->FILTER_OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
-    .line 1488
+    .line 1765
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     const-string v1, "NATURAL"
@@ -217,7 +217,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->NATURAL:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
-    .line 1489
+    .line 1766
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     const-string v1, "VIVID"
@@ -228,7 +228,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->VIVID:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
-    .line 1490
+    .line 1767
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     const-string v1, "FILM"
@@ -239,7 +239,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->FILM:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
-    .line 1491
+    .line 1768
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     const-string v1, "NOSTALGIC"
@@ -250,7 +250,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->NOSTALGIC:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
-    .line 1492
+    .line 1769
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     const-string v1, "BRIGHT"
@@ -261,7 +261,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->BRIGHT:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
-    .line 1493
+    .line 1770
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     const-string v1, "DAILY"
@@ -272,7 +272,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->DAILY:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
-    .line 1494
+    .line 1771
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     const-string v1, "AQUA"
@@ -283,7 +283,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->AQUA:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
-    .line 1495
+    .line 1772
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     const-string v1, "CHERRY"
@@ -294,7 +294,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->CHERRY:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
-    .line 1496
+    .line 1773
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     const-string v1, "PURE"
@@ -305,7 +305,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->PURE:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
-    .line 1497
+    .line 1774
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     const-string v1, "S_CINE"
@@ -316,14 +316,14 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->S_CINE:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
-    .line 1479
+    .line 1756
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->$values()[Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->$VALUES:[Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
-    .line 1531
+    .line 1808
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter$1;
 
     invoke-direct {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter$1;-><init>()V
@@ -335,19 +335,34 @@
 
 .method private constructor <init>(Ljava/lang/String;III)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "index",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)V"
         }
     .end annotation
 
-    .line 1540
+    .line 1817
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 1541
+    .line 1818
     iput p3, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->index:I
 
-    .line 1542
+    .line 1819
     iput p4, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->value:I
 
     return-void
@@ -364,7 +379,7 @@
         }
     .end annotation
 
-    .line 1528
+    .line 1805
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->internalValueMap:Lcom/google/protobuf/Internal$EnumLiteMap;
 
     return-object v0
@@ -372,6 +387,14 @@
 
 .method public static valueOf(I)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     packed-switch p0, :pswitch_data_0
 
@@ -379,103 +402,103 @@
 
     return-object p0
 
-    .line 1521
+    .line 1798
     :pswitch_0
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->S_CINE:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     return-object p0
 
-    .line 1520
+    .line 1797
     :pswitch_1
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->PURE:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     return-object p0
 
-    .line 1519
+    .line 1796
     :pswitch_2
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->CHERRY:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     return-object p0
 
-    .line 1518
+    .line 1795
     :pswitch_3
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->AQUA:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     return-object p0
 
-    .line 1517
+    .line 1794
     :pswitch_4
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->DAILY:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     return-object p0
 
-    .line 1516
+    .line 1793
     :pswitch_5
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->BRIGHT:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     return-object p0
 
-    .line 1515
+    .line 1792
     :pswitch_6
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->NOSTALGIC:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     return-object p0
 
-    .line 1514
+    .line 1791
     :pswitch_7
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->FILM:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     return-object p0
 
-    .line 1513
+    .line 1790
     :pswitch_8
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->VIVID:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     return-object p0
 
-    .line 1512
+    .line 1789
     :pswitch_9
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->NATURAL:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     return-object p0
 
-    .line 1511
+    .line 1788
     :pswitch_a
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->FILTER_OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     return-object p0
 
-    .line 1510
+    .line 1787
     :pswitch_b
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->SH:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     return-object p0
 
-    .line 1509
+    .line 1786
     :pswitch_c
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->IN:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     return-object p0
 
-    .line 1508
+    .line 1785
     :pswitch_d
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->FL:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     return-object p0
 
-    .line 1507
+    .line 1784
     :pswitch_e
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->VV:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     return-object p0
 
-    .line 1506
+    .line 1783
     :pswitch_f
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->NT:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     return-object p0
 
-    .line 1505
+    .line 1782
     :pswitch_10
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->ST:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
@@ -505,8 +528,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 1479
+    .line 1756
     const-class v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -521,7 +552,7 @@
 .method public static values()[Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
     .locals 1
 
-    .line 1479
+    .line 1756
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->$VALUES:[Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     invoke-virtual {v0}, [Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->clone()Ljava/lang/Object;
@@ -538,7 +569,7 @@
 .method public final getNumber()I
     .locals 0
 
-    .line 1501
+    .line 1778
     iget p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->value:I
 
     return p0

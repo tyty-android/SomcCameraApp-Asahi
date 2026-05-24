@@ -19,8 +19,8 @@
     }
     k = 0x5
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x31
@@ -48,7 +48,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 40
+    .line 45
     new-instance v0, Lkotlin/io/encoding/DecodeInputStream;
 
     invoke-direct {v0, p0, p1}, Lkotlin/io/encoding/DecodeInputStream;-><init>(Ljava/io/InputStream;Lkotlin/io/encoding/Base64;)V
@@ -69,7 +69,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 59
+    .line 69
     new-instance v0, Lkotlin/io/encoding/EncodeOutputStream;
 
     invoke-direct {v0, p0, p1}, Lkotlin/io/encoding/EncodeOutputStream;-><init>(Ljava/io/OutputStream;Lkotlin/io/encoding/Base64;)V

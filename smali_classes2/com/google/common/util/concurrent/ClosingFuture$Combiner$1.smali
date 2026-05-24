@@ -34,11 +34,27 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/util/concurrent/ClosingFuture$Combiner;Lcom/google/common/util/concurrent/ClosingFuture$Combiner$CombiningCallable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$combiningCallable"
+        }
+    .end annotation
 
-    .line 1286
-    iput-object p1, p0, Lcom/google/common/util/concurrent/ClosingFuture$Combiner$1;->this$0:Lcom/google/common/util/concurrent/ClosingFuture$Combiner;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
 
+    .line 1300
     iput-object p2, p0, Lcom/google/common/util/concurrent/ClosingFuture$Combiner$1;->val$combiningCallable:Lcom/google/common/util/concurrent/ClosingFuture$Combiner$CombiningCallable;
+
+    iput-object p1, p0, Lcom/google/common/util/concurrent/ClosingFuture$Combiner$1;->this$0:Lcom/google/common/util/concurrent/ClosingFuture$Combiner;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,6 +65,9 @@
 # virtual methods
 .method public call()Ljava/lang/Object;
     .locals 3
+    .annotation runtime Lcom/google/common/util/concurrent/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TV;"
@@ -61,7 +80,7 @@
         }
     .end annotation
 
-    .line 1289
+    .line 1304
     new-instance v0, Lcom/google/common/util/concurrent/ClosingFuture$Peeker;
 
     iget-object v1, p0, Lcom/google/common/util/concurrent/ClosingFuture$Combiner$1;->this$0:Lcom/google/common/util/concurrent/ClosingFuture$Combiner;
@@ -90,10 +109,10 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 1294
+    .line 1309
     iget-object p0, p0, Lcom/google/common/util/concurrent/ClosingFuture$Combiner$1;->val$combiningCallable:Lcom/google/common/util/concurrent/ClosingFuture$Combiner$CombiningCallable;
 
-    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-interface {p0}, Lcom/google/common/util/concurrent/ClosingFuture$Combiner$CombiningCallable;->toString()Ljava/lang/String;
 
     move-result-object p0
 

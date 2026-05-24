@@ -3,11 +3,16 @@
 .source "Reflection.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/reflect/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # direct methods
 .method private constructor <init>()V
     .locals 0
 
-    .line 90
+    .line 89
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -15,6 +20,15 @@
 
 .method public static getPackageName(Ljava/lang/Class;)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "clazz"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -24,7 +38,7 @@
         }
     .end annotation
 
-    .line 38
+    .line 37
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object p0
@@ -38,17 +52,25 @@
 
 .method public static getPackageName(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "classFullName"
+        }
+    .end annotation
 
     const/16 v0, 0x2e
 
-    .line 47
+    .line 46
     invoke-virtual {p0, v0}, Ljava/lang/String;->lastIndexOf(I)I
 
     move-result v0
 
     if-gez v0, :cond_0
 
-    .line 48
+    .line 47
     const-string p0, ""
 
     goto :goto_0
@@ -66,6 +88,15 @@
 
 .method public static varargs initialize([Ljava/lang/Class;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "classes"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
@@ -74,7 +105,7 @@
         }
     .end annotation
 
-    .line 63
+    .line 62
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -84,7 +115,7 @@
 
     aget-object v2, p0, v1
 
-    .line 65
+    .line 64
     :try_start_0
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -107,7 +138,7 @@
     :catch_0
     move-exception p0
 
-    .line 67
+    .line 66
     new-instance v0, Ljava/lang/AssertionError;
 
     invoke-direct {v0, p0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
@@ -120,6 +151,17 @@
 
 .method public static newProxy(Ljava/lang/Class;Ljava/lang/reflect/InvocationHandler;)Ljava/lang/Object;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "interfaceType",
+            "handler"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -132,10 +174,10 @@
         }
     .end annotation
 
-    .line 82
+    .line 81
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 83
+    .line 82
     invoke-virtual {p0}, Ljava/lang/Class;->isInterface()Z
 
     move-result v0
@@ -144,7 +186,7 @@
 
     invoke-static {v0, v1, p0}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;)V
 
-    .line 86
+    .line 85
     invoke-virtual {p0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
     move-result-object v0
@@ -157,12 +199,12 @@
 
     aput-object p0, v1, v2
 
-    .line 85
+    .line 84
     invoke-static {v0, v1, p1}, Ljava/lang/reflect/Proxy;->newProxyInstance(Ljava/lang/ClassLoader;[Ljava/lang/Class;Ljava/lang/reflect/InvocationHandler;)Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 87
+    .line 86
     invoke-virtual {p0, p1}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0

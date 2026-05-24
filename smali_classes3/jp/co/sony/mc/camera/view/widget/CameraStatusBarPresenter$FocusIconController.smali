@@ -67,6 +67,14 @@
 
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 425
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;->this$0:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;
@@ -104,6 +112,14 @@
 
 .method private changeStateTo(Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController$FocusControllerState;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "state"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -153,6 +169,16 @@
 
 .method private varargs performEvent(Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;[Ljava/lang/Object;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "event",
+            "objects"
+        }
+    .end annotation
 
     .line 591
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;->mCurrentState:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController$FocusControllerState;
@@ -275,6 +301,14 @@
 
 .method private setIcon(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "resId"
+        }
+    .end annotation
 
     .line 621
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;->mIconView:Landroid/widget/ImageView;

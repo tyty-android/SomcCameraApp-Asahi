@@ -27,6 +27,14 @@
 
 .method public static createTypeface(Ljp/co/sony/mc/camera/util/FontUtil$RobotoFontType;)Landroid/graphics/Typeface;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
@@ -65,6 +73,14 @@
 
 .method public static setBold(Landroid/widget/Button;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
     if-nez p0, :cond_0
 
@@ -85,6 +101,14 @@
 
 .method public static setBold(Landroid/widget/TextView;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
     if-nez p0, :cond_0
 
@@ -105,6 +129,14 @@
 
 .method public static setDefault(Landroid/widget/Button;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
     if-nez p0, :cond_0
 
@@ -125,6 +157,14 @@
 
 .method public static setDefault(Landroid/widget/TextView;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
     if-nez p0, :cond_0
 
@@ -145,6 +185,16 @@
 
 .method public static setRobotoFont(Landroid/widget/Button;Ljp/co/sony/mc/camera/util/FontUtil$RobotoFontType;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "type"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -176,6 +226,16 @@
 
 .method public static setRobotoFont(Landroid/widget/TextView;Ljp/co/sony/mc/camera/util/FontUtil$RobotoFontType;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "type"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 

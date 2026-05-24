@@ -32,7 +32,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 115
+    .line 113
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -50,8 +50,18 @@
 # virtual methods
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "p1",
+            "p2"
+        }
+    .end annotation
 
-    .line 115
+    .line 113
     check-cast p1, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
 
     check-cast p2, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
@@ -65,15 +75,25 @@
 
 .method public compare(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "p1",
+            "p2"
+        }
+    .end annotation
 
-    .line 120
+    .line 118
     iget-object p0, p1, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->priority:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
     iget p0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->priority:I
 
-    .line 121
+    .line 119
     iget-object p1, p2, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->priority:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;

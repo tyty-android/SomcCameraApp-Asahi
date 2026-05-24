@@ -82,6 +82,7 @@ Vai receber notificações e diálogos. Selecione Emparelhar em todos e prima qu
     <string name="call_notification_incoming_text">Chamada recebida</string>
     <string name="call_notification_ongoing_text">Chamada em curso</string>
     <string name="call_notification_screening_text">A filtrar uma chamada recebida…</string>
+    <string name="camera_string_saving_process_hint_txt">A guardar... Aguarde até terminar de guardar.</string>
     <string name="camera_strings_accept_privacy_policy_txt">Aceitou anteriormente a política de privacidade, mas pode mudar de ideias em qualquer altura.</string>
     <string name="camera_strings_accessibility_48_mega_pixel_txt">48 megapíxeis</string>
     <string name="camera_strings_accessibility_adjust_bokeh_txt">Ajustar Bokeh</string>
@@ -92,6 +93,27 @@ Vai receber notificações e diálogos. Selecione Emparelhar em todos e prima qu
     <string name="camera_strings_accessibility_adjust_framing_size_smaller_txt">Diminuir tamanho da moldura</string>
     <string name="camera_strings_accessibility_adjust_framing_size_txt">Ajustar tamanho da moldura</string>
     <string name="camera_strings_accessibility_adjust_shutter_speed_txt">Velocidade do obturador</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_look_menu_txt">Botão Fechar. Fecha o menu de visual.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_menu_txt">Fechar menu personalizado</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_suggests_txt">Fechar ajustes sugeridos</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_menu_txt">Visual personalizado que está aplicado. Abre o menu de ajuste.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_txt">Visual personalizado. Aplica as definições de visual, brilho e cor registadas no menu personalizado.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_tab_txt">Separador Personalizado. Aplica as definições de visual, brilho e cor registadas no menu personalizado.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_button_txt">Botão Personalizado. Abre um menu que lhe permite fazer outros ajustes quando são aplicados ajustes recomendados.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_param_txt">%1$s é definido como %2$s</string>
+    <string name="camera_strings_accessibility_ai_suggestion_first_time_txt">Assistente de câmara com IA. Esta função sugere definições, como a cor, consoante a cena.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_four_of_some_suggests_txt">Quarto ajuste sugerido</string>
+    <string name="camera_strings_accessibility_ai_suggestion_look_menu_txt">"%1$s
+Abre o menu de visual criativo"</string>
+    <string name="camera_strings_accessibility_ai_suggestion_new_suggest_txt">Foram sugeridos novos ajustes recomendados</string>
+    <string name="camera_strings_accessibility_ai_suggestion_one_of_some_suggests_txt">Primeiro ajuste sugerido</string>
+    <string name="camera_strings_accessibility_ai_suggestion_open_suggests_txt">Expandir ajustes sugeridos</string>
+    <string name="camera_strings_accessibility_ai_suggestion_reset_to_default_txt">Repor para definições anteriores à sugestão</string>
+    <string name="camera_strings_accessibility_ai_suggestion_selected_suggest_txt">Estes ajustes recomendados são aplicados</string>
+    <string name="camera_strings_accessibility_ai_suggestion_suggest_lens_txt">Botão de lente sugerida. %1$sx recomendada.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_surface_of_some_suggests_txt">Ajustes sugeridos. Deslize da direita para a esquerda para mostrar os ajustes recomendados.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_three_of_some_suggests_txt">Terceiro ajuste sugerido</string>
+    <string name="camera_strings_accessibility_ai_suggestion_two_of_some_suggests_txt">Segundo ajuste sugerido</string>
     <string name="camera_strings_accessibility_arrow_left_button_txt">Seta para a esquerda</string>
     <string name="camera_strings_accessibility_arrow_right_button_txt">Seta para a direita</string>
     <string name="camera_strings_accessibility_audio_level_txt">Medidor de nível de áudio</string>
@@ -246,6 +268,45 @@ Vai receber notificações e diálogos. Selecione Emparelhar em todos e prima qu
     <string name="camera_strings_advanced_setting_geo_tag_title_txt">Guardar local</string>
     <string name="camera_strings_ai_face_restore_description_txt">Pode tirar fotografias com otimização facial para tornar os traços faciais mais nítidos</string>
     <string name="camera_strings_ai_face_restore_txt">Aumentar nitidez dos rostos</string>
+    <string name="camera_strings_ai_suggestion_introduce_hint_text_txt">[Sug.] Assistente de câmara com IA</string>
+    <string name="camera_strings_aisuggestion_box_name1_txt">Personal.</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_message_txt">Registe as definições atuais de visual, brilho e cor como Personalizado.</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_overwrite_message_txt">Já existe um visual registado em Personalizado. Substituir?</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_title_txt">Registar como Visual personalizado</string>
+    <string name="camera_strings_aisuggestion_box_title_txt">Personal.</string>
+    <string name="camera_strings_aisuggestion_custom_params_contrast_txt">Contras.</string>
+    <string name="camera_strings_aisuggestion_custom_params_ev_txt">Brilho</string>
+    <string name="camera_strings_aisuggestion_custom_params_register_txt">Registar</string>
+    <string name="camera_strings_aisuggestion_custom_params_saturation_txt">Satur.</string>
+    <string name="camera_strings_aisuggestion_custom_params_title_txt">Brilho/cor</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbab_txt">Quente</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbgm_txt">Tonalid.</string>
+    <string name="camera_strings_aisuggestion_customlook_register_instruction_txt">Pode utilizar visuais personalizados registados em qualquer altura a partir do separador Visual personalizado</string>
+    <string name="camera_strings_aisuggestion_description_txt">"A IA identifica automaticamente a cena e sugere ajustes otimizados na pré-visualização miniatura apresentada na parte inferior direita.
+Se tocar nesta pré-visualização miniatura, as definições a seguir serão ajustadas automaticamente com base na cena:
+Visual, Exposição, Equilíbrio de branco, Saturação, Contraste, Bokeh
+*Esta função só está disponível no modo Fotografia.
+*Quando premir sem soltar o botão do obturador para iniciar a gravação de um vídeo, as definições de saturação, contraste e bokeh não serão aplicadas."</string>
+    <string name="camera_strings_aisuggestion_guide_description1_txt">Os ajustes recomendados com base na cena identificada pela IA são apresentados na pré-visualização miniatura mostrada na parte inferior direita (parte superior direita quando segurada na horizontal). Pode aplicar todos estes ajustes em simultâneo ao tocar na pré-visualização miniatura.</string>
+    <string name="camera_strings_aisuggestion_guide_description2_txt">Dependendo da cena, também poderá ser sugerida uma definição de lente específica. Neste caso, pode alterar a definição de lente sugerida consoante a sua preferência.</string>
+    <string name="camera_strings_aisuggestion_guide_description3_txt">"Ao deslizar para a esquerda na pré-visualização miniatura mostrada na parte inferior direita (parte superior direita quando segurada na horizontal), pode ver recomendações de ajuste alternativas.
+A sugestão que selecionar será guardada como o seu ajuste preferido e será incluída nas sugestões da próxima vez que tirar fotografias numa cena semelhante."</string>
+    <string name="camera_strings_aisuggestion_guide_description4_txt">Pode tocar no botão [>] para ocultar as sugestões quando não for necessário. Quando uma nova cena for identificada, o botão [&lt;] irá acender-se para mostrar que existem novas sugestões de ajuste. Para voltar a verificar as sugestões, toque no botão [&lt;].</string>
+    <string name="camera_strings_aisuggestion_guide_description5_txt">Se tocar no botão de ajuste depois de selecionar os ajustes sugeridos, pode ajustar outras definições, como o brilho e a cor. Os seus ajustes são guardados no dispositivo e aplicados aos ajustes sugeridos da próxima vez que uma cena semelhante for detetada.</string>
+    <string name="camera_strings_aisuggestion_guide_description6_txt">Os ajustes sugeridos e os ajustes que fizer podem ser registados para que possa carregá-los em qualquer altura para tirar fotografias com as mesmas definições. Toque em [Registar] para adicionar um Visual personalizado à lista de visuais disponíveis.</string>
+    <string name="camera_strings_aisuggestion_guide_entry_txt">Como usar o Assist. câmara com IA</string>
+    <string name="camera_strings_aisuggestion_guide_title_txt">Como usar o Assist. câmara com IA</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_message_txt">Repor todas as definições para as predefinições, incluindo cor, brilho e os seus ajustes preferidos?</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_title_txt">Repor parâmetros</string>
+    <string name="camera_strings_aisuggestion_params_reset_txt">Repor parâmetros</string>
+    <string name="camera_strings_aisuggestion_permitted_item_bokeh_txt">Bokeh</string>
+    <string name="camera_strings_aisuggestion_permitted_item_lens_txt">Lente</string>
+    <string name="camera_strings_aisuggestion_permitted_item_title_txt">Incluir nas sugestões</string>
+    <string name="camera_strings_aisuggestion_recommend_lens_ratio_txt">%1$s recomendado</string>
+    <string name="camera_strings_aisuggestion_return_to_default_txt">Reverter</string>
+    <string name="camera_strings_aisuggestion_simple_video_instruction_txt">Qd. gravar um vídeo premindo sem soltar, as defs. de saturação, contraste e bokeh podem ser diferentes.</string>
+    <string name="camera_strings_aisuggestion_txt">Assistente de câmara com IA</string>
+    <string name="camera_strings_aisuggestion_use_aissuggestion_txt">Usar Assist. câmara com IA</string>
     <string name="camera_strings_anonymous_analytics_txt">Análise anónima</string>
     <string name="camera_strings_application_name">Câmara</string>
     <string name="camera_strings_application_name_google_lens_txt">Google Lens</string>
@@ -421,6 +482,7 @@ Segurança:
     <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Não é possível ligar ao Wi-Fi</string>
     <string name="camera_strings_dialog_user_data_collection_txt">Se concordar abaixo, a Sony irá recolher os seus &lt;b>&lt;a href=#personal-data>dados pessoais&lt;/a>&lt;/b> para fornecer suporte personalizado e melhorar os dispositivos e serviços. A Sony irá tratar os seus dados em conformidade com a nossa &lt;b>&lt;a href=https://www.sonymobile.com/privacy/>Política de Privacidade&lt;/a>&lt;/b>.</string>
     <string name="camera_strings_dialog_video_hdr_hlg_supported_short_description_txt">Alguns dispositivos/serviços podem não conseguir reproduzir a cor e o brilho originais do conteúdo em HDR. Utilize dispositivos/serviços compatíveis com HDR quando desfrutar de conteúdo em HDR.</string>
+    <string name="camera_strings_digital_tripod_hint_edge_txt">Desvio na composição. Aponte a câmara para o objeto original.</string>
     <string name="camera_strings_digital_zoom_type_description_txt">"Selecione uma definição de zoom digital.
 
 Zoom digital padrão: aplique zoom ao utilizar o processamento digital com base nos dados do sensor de imagem.
@@ -484,6 +546,7 @@ Para alterar a definição, pare a transmissão em sequência e, em seguida, ace
     <string name="camera_strings_fast_capturing_screen_locked_settings_txt">Para abrir as definições, desbloqueie o ecrã.</string>
     <string name="camera_strings_fast_capturing_screen_locked_streaming_txt">Para iniciar a transmissão em sequência, desbloqueie o ecrã.</string>
     <string name="camera_strings_fast_capturing_screen_locked_title_txt">Ecrã bloqueado</string>
+    <string name="camera_strings_feature_creative_look_custom_description_txt">Pode registar definições de visual e brilho/cor.</string>
     <string name="camera_strings_feature_creative_look_description_txt">"Pode optar por finalizar as imagens (fotografias ou filmes) ao selecionar um \"visual\".
 
 O Visual criativo oferece 6 visuais predefinidos. Cada um está otimizado com uma combinação diferente de tom de cor, saturação, contraste, nitidez, brilho e outros elementos de imagem para poder configurar o processamento da imagem com o equilíbrio ideal destes elementos."</string>
@@ -567,6 +630,7 @@ Toque no objeto a rastrear."</string>
     <string name="camera_strings_framing_orientation_description_txt">"Pode optar por recortar o objeto numa moldura horizontal ou vertical.
 Defina como [Automático] para que a orientação do recorte seja igual à orientação do dispositivo."</string>
     <string name="camera_strings_framing_select_subject_to_track_txt">Tocar rapidamente no objeto cuja posição quer bloquear</string>
+    <string name="camera_strings_framing_setting_guide_title_txt">Acerca do Enquadramento auto</string>
     <string name="camera_strings_framing_setting_orientation_landscape_txt">Horizontal</string>
     <string name="camera_strings_framing_setting_orientation_portrait_txt">Vertical</string>
     <string name="camera_strings_framing_setting_orientation_title_txt">Orientação moldura</string>
@@ -574,6 +638,7 @@ Defina como [Automático] para que a orientação do recorte seja igual à orien
 As gravações recortadas são guardadas com uma resolução de HD Total. As gravações não recortadas são guardadas em 4K."</string>
     <string name="camera_strings_framing_setting_save_original_video_off_txt">Gravação de ecrã inteiro: Desligado</string>
     <string name="camera_strings_framing_setting_save_original_video_title_txt">Gravação de ecrã inteiro</string>
+    <string name="camera_strings_framing_setting_snapshot_description_txt">Quer a opção [Gravação de ecrã inteiro] esteja ativada ou desativada, os instantâneos tirados ao gravar vídeo são guardados em ecrã inteiro.</string>
     <string name="camera_strings_geotagging_description_txt">Guarde os vídeos e as fotografias com os locais onde foram realizados</string>
     <string name="camera_strings_geotagging_txt">Guardar local</string>
     <string name="camera_strings_gimbal_mode_tab_label">Filmagem com IA</string>
@@ -592,6 +657,7 @@ Deste modo, pode gravar vídeo estável mesmo em situações com movimento, como
     <string name="camera_strings_gimbal_setting_assist_method_locking_hint_txt">Fixar posição objeto: Manual</string>
     <string name="camera_strings_gimbal_setting_assist_method_locking_txt">Manual</string>
     <string name="camera_strings_gimbal_setting_assist_method_title_txt">Fixar posição objeto</string>
+    <string name="camera_strings_gimbal_setting_guide_title_txt">Acerca da Filmagem com IA</string>
     <string name="camera_strings_gridline_description_txt">Defina se pretende ou não apresentar as linhas de grelha durante a composição das imagens</string>
     <string name="camera_strings_gridline_txt">Linhas de grelha</string>
     <string name="camera_strings_hand_shutter_description_updated_txt">Pode iniciar a contagem decrescente do temporizador ao virar a palma da mão para a câmara frontal. Para facilitar a deteção, estique os dedos para cima.</string>
@@ -727,6 +793,7 @@ Os instantâneos efetuados durante a gravação do vídeo utilizam sempre o Alca
     <string name="camera_strings_notification_channel_title_saving_process_txt">Processo de gravação</string>
     <string name="camera_strings_notification_text_saving_in_progress_txt">Aguarde até a gravação ficar concluída</string>
     <string name="camera_strings_notification_title_saving_in_progress_txt">A guardar progresso</string>
+    <string name="camera_strings_notify_saving_process_cannot_launch_app_by_hw_shutter_txt">Premir o botão do obturador pode não iniciar a câmara ao guardar</string>
     <string name="camera_strings_ok_txt">OK</string>
     <string name="camera_strings_peaking_color_blue_txt">Azul</string>
     <string name="camera_strings_peaking_color_red_txt">Vermelho</string>
@@ -735,6 +802,7 @@ Os instantâneos efetuados durante a gravação do vídeo utilizam sempre o Alca
     <string name="camera_strings_peaking_color_yellow_txt">Amarelo</string>
     <string name="camera_strings_peaking_txt">Saliência</string>
     <string name="camera_strings_personal_data_txt">Dados pessoais</string>
+    <string name="camera_strings_photopro_setting_guide_title_txt">Acerca da Foto. Pro</string>
     <string name="camera_strings_privacy_policy_txt">Política de privacidade</string>
     <string name="camera_strings_pro_tips_computational_photo_description_txt">"Mesmo no modo P, a câmara identifica automaticamente a cena e tira automaticamente fotografias fabulosas ao reduzir a desfocagem, o ruído, a sobre-exposição e a subexposição.
 Se não utilizar esta funcionalidade, pode desativá-la no botão Fn ou em MENU."</string>
@@ -965,6 +1033,7 @@ Se continuar a utilizar o cartão SD para o armazenamento de dados, certifique-s
     <string name="camera_strings_video_stabilization_description_sub_txt">Nota: selecionar Alta qualidade pode encurtar a duração da gravação devido ao aumento da temperatura do dispositivo.</string>
     <string name="camera_strings_video_stabilization_description_txt">O Xperia dispõe de um sistema de estabilização híbrido único chamado Optical SteadyShot que associa simultaneamente a estabilização de imagem ótica à estabilização de imagem eletrónica. Obtém vídeos estáveis mesmo quando faz a gravação em movimento.</string>
     <string name="camera_strings_video_stabilization_high_quality_images_txt">Alta qualidade</string>
+    <string name="camera_strings_videopro_setting_guide_title_txt">Acerca do Vídeo Pro</string>
     <string name="camera_strings_volume_distortion_correction_description_txt">Corrige a distorção dos rostos que aparecem junto à extremidade do ecrã quando são utilizadas lentes ultragrandes. Isto pode fazer com que o fundo apareça distorcido ou o ângulo de visão pareça mais estreito.</string>
     <string name="camera_strings_volume_distortion_correction_front_description_txt">Corrige a distorção dos rostos que aparecem junto à extremidade do ecrã. Isto pode fazer com que o fundo apareça distorcido ou o ângulo de visão pareça mais estreito.</string>
     <string name="camera_strings_volume_distortion_correction_txt">Correção da distorção facial</string>
@@ -1042,8 +1111,25 @@ Sem ligação de rede."</string>
     <string name="clear_text_end_icon_content_description">Limpar texto</string>
     <string name="close_drawer">Fechar menu de navegação</string>
     <string name="close_sheet">Fechar folha</string>
+    <string name="common_google_play_services_enable_button">Ativar</string>
+    <string name="common_google_play_services_enable_text">O %1$s não funciona enquanto não ativar os serviços do Google Play.</string>
+    <string name="common_google_play_services_enable_title">Ativar serviços do Google Play</string>
+    <string name="common_google_play_services_install_button">Instalar</string>
+    <string name="common_google_play_services_install_text">O %1$s não é executado sem os Serviços do Google Play, os quais estão em falta no seu dispositivo.</string>
+    <string name="common_google_play_services_install_title">Obter serviços do Google Play</string>
+    <string name="common_google_play_services_notification_channel_name">Disponibilidade Serviços do Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Erro dos Serviços do Google Play</string>
+    <string name="common_google_play_services_unknown_issue">%1$s está a ter problemas com os Serviços do Google Play. Tente novamente.</string>
+    <string name="common_google_play_services_unsupported_text">Não é possível executar o %1$s sem os Serviços do Google Play, os quais não são compatíveis com o seu dispositivo.</string>
+    <string name="common_google_play_services_update_button">Atualizar</string>
+    <string name="common_google_play_services_update_text">O %1$s não é executado enquanto não atualizar os serviços do Google Play.</string>
+    <string name="common_google_play_services_update_title">Atualizar serviços do Google Play</string>
+    <string name="common_google_play_services_updating_text">O %1$s não é executado sem os serviços do Google Play, os quais estão a ser atualizados.</string>
+    <string name="common_google_play_services_wear_update_text">É necessária uma nova versão dos serviços do Google Play. Esta será atualizada automaticamente em breve.</string>
+    <string name="common_open_on_phone">Abrir no telemóvel</string>
+    <string name="common_signin_button_text">Iniciar sessão</string>
+    <string name="common_signin_button_text_long">Iniciar sessão com o Google</string>
     <string name="copy">Copiar</string>
-    <string name="copy_toast_msg">Link copiado para a área de transferência.</string>
     <string name="default_error_message">Entrada inválida</string>
     <string name="default_popup_window_title">Janela pop-up</string>
     <string name="dropdown_menu">Menu pendente</string>
@@ -1054,9 +1140,6 @@ Sem ligação de rede."</string>
     <string name="external_display_connected_description_txt">Pode ver o visor da câmara a partir do Monitor de Vlog</string>
     <string name="external_display_connected_title_txt">Monitor de Vlog ligado</string>
     <string name="external_display_note_about_external_mic_txt">Nota: para utilizar um microfone externo, ligue-o ao Monitor de Vlog antes da gravação. Se o ligar depois, tem de voltar a ligar o Monitor de Vlog.</string>
-    <string name="fallback_menu_item_copy_link">Copiar link</string>
-    <string name="fallback_menu_item_open_in_browser">Abrir no navegador</string>
-    <string name="fallback_menu_item_share_link">Partilhar link</string>
     <string name="icon_content_description">Ícone de caixa de diálogo</string>
     <string name="in_progress">Em curso</string>
     <string name="indeterminate">Parcialmente selecionada</string>

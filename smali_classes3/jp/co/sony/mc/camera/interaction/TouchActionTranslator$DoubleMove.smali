@@ -24,6 +24,18 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;Landroid/graphics/Point;Landroid/graphics/Point;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "point0",
+            "point1"
+        }
+    .end annotation
 
     .line 597
     iput-object p1, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$DoubleMove;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;
@@ -52,6 +64,14 @@
 # virtual methods
 .method public handleMotionEvent(Landroid/view/MotionEvent;)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "motion"
+        }
+    .end annotation
 
     .line 605
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
@@ -327,18 +347,52 @@
 
 .method public handleSingleTouchMoveEvent(Landroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "currentPoint",
+            "lastPoint",
+            "downPoint"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public handleSingleTouchStopEvent(Landroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "currentPoint",
+            "lastPoint",
+            "downPoint"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public handleTouchRotateEvent(FF)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "degreeVsOrigin",
+            "degreeVsLast"
+        }
+    .end annotation
 
     .line 675
     iget-object p0, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$DoubleMove;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;
@@ -354,6 +408,18 @@
 
 .method public handleTouchScaleEvent(FFF)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "currentLength",
+            "previousLength",
+            "originalLength"
+        }
+    .end annotation
 
     .line 670
     iget-object p0, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$DoubleMove;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;

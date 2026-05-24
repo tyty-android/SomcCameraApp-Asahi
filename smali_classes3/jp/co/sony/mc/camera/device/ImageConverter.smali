@@ -25,7 +25,55 @@
 .end method
 
 .method public static native convertFromYuv420_888ToNv21([BIILjava/nio/ByteBuffer;IILjava/nio/ByteBuffer;IILjava/nio/ByteBuffer;II)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "dstBuf",
+            "width",
+            "height",
+            "yBuf",
+            "yRowStride",
+            "yPixelStride",
+            "cbBuf",
+            "cbRowStride",
+            "cbPixelStride",
+            "crBuf",
+            "crRowStride",
+            "crPixelStride"
+        }
+    .end annotation
 .end method
 
 .method public static native getHistogramData([IIILjava/nio/ByteBuffer;II)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "histogram",
+            "width",
+            "height",
+            "yBuf",
+            "jYRowStride",
+            "jYPixelStride"
+        }
+    .end annotation
 .end method

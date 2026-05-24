@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 819
+    .line 729
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,6 +31,21 @@
 # virtual methods
 .method public setValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljava/util/Map;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key",
+            "value",
+            "listenersMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -46,7 +61,15 @@
         }
     .end annotation
 
-    const/4 p0, 0x0
+    .line 733
+    check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
+
+    .line 734
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
+
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$msetProPhotoDispCustomExtensionData(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;)Z
+
+    move-result p0
 
     return p0
 .end method

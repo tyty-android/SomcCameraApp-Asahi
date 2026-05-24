@@ -36,57 +36,52 @@
 # instance fields
 .field final hash:I
 
-.field final next:Lcom/google/common/collect/MapMakerInternalMap$InternalEntry;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "TE;"
+
+# direct methods
+.method constructor <init>(Ljava/lang/ref/ReferenceQueue;Ljava/lang/Object;I)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "queue",
+            "key",
+            "hash"
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-    .end annotation
-.end field
-
-
-# direct methods
-.method constructor <init>(Ljava/lang/ref/ReferenceQueue;Ljava/lang/Object;ILcom/google/common/collect/MapMakerInternalMap$InternalEntry;)V
-    .locals 0
-    .param p4    # Lcom/google/common/collect/MapMakerInternalMap$InternalEntry;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/ref/ReferenceQueue<",
-            "TK;>;TK;ITE;)V"
+            "TK;>;TK;I)V"
         }
     .end annotation
 
-    .line 652
+    .line 673
     invoke-direct {p0, p2, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;Ljava/lang/ref/ReferenceQueue;)V
 
-    .line 653
+    .line 674
     iput p3, p0, Lcom/google/common/collect/MapMakerInternalMap$AbstractWeakKeyEntry;->hash:I
-
-    .line 654
-    iput-object p4, p0, Lcom/google/common/collect/MapMakerInternalMap$AbstractWeakKeyEntry;->next:Lcom/google/common/collect/MapMakerInternalMap$InternalEntry;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public getHash()I
+.method public final getHash()I
     .locals 0
 
-    .line 664
+    .line 684
     iget p0, p0, Lcom/google/common/collect/MapMakerInternalMap$AbstractWeakKeyEntry;->hash:I
 
     return p0
 .end method
 
-.method public getKey()Ljava/lang/Object;
+.method public final getKey()Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -94,7 +89,7 @@
         }
     .end annotation
 
-    .line 659
+    .line 679
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$AbstractWeakKeyEntry;->get()Ljava/lang/Object;
 
     move-result-object p0
@@ -110,8 +105,10 @@
         }
     .end annotation
 
-    .line 669
-    iget-object p0, p0, Lcom/google/common/collect/MapMakerInternalMap$AbstractWeakKeyEntry;->next:Lcom/google/common/collect/MapMakerInternalMap$InternalEntry;
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    const/4 p0, 0x0
 
     return-object p0
 .end method

@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function10;
+.implements Lkotlin/jvm/functions/Function11;
 
 
 # direct methods
@@ -18,8 +18,8 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 10
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 11
 
     .line 0
     move-object v0, p1
@@ -46,7 +46,7 @@
 
     check-cast v3, Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
 
-    move-object v4, p5
+    move-object/from16 v4, p5
 
     check-cast v4, Ljava/lang/Boolean;
 
@@ -74,6 +74,10 @@
 
     check-cast v9, Ljava/lang/Boolean;
 
+    move-object/from16 v10, p11
+
+    check-cast v10, Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;
+
     move p0, v0
 
     move p1, v1
@@ -84,7 +88,7 @@
 
     move p4, v4
 
-    move-object p5, v5
+    move-object/from16 p5, v5
 
     move-object/from16 p6, v6
 
@@ -94,7 +98,9 @@
 
     move-object/from16 p9, v9
 
-    invoke-static/range {p0 .. p9}, Ljp/co/sony/mc/camera/view/uistate/LevelMeterUiState;->$r8$lambda$Pnn0yeyx8ELku3RngplytWa5OGg(ZZLjp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;ZLjp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;Ljp/co/sony/mc/camera/configuration/parameters/BasicModeLevelMeterDisplay;Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;Ljava/lang/Boolean;)Z
+    move-object/from16 p10, v10
+
+    invoke-static/range {p0 .. p10}, Ljp/co/sony/mc/camera/view/uistate/LevelMeterUiState;->$r8$lambda$0NvXCFGsUaxyAC4Sk_EqMQ_Q4Bg(ZZLjp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;ZLjp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;Ljp/co/sony/mc/camera/configuration/parameters/BasicModeLevelMeterDisplay;Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;Ljava/lang/Boolean;Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;)Z
 
     move-result v0
 

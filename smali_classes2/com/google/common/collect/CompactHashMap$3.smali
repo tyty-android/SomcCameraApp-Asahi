@@ -28,8 +28,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/CompactHashMap;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 853
+    .line 944
     iput-object p1, p0, Lcom/google/common/collect/CompactHashMap$3;->this$0:Lcom/google/common/collect/CompactHashMap;
 
     const/4 v0, 0x0
@@ -43,18 +51,30 @@
 # virtual methods
 .method getOutput(I)Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "entry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TV;"
         }
     .end annotation
 
-    .line 857
+    .line 948
     iget-object p0, p0, Lcom/google/common/collect/CompactHashMap$3;->this$0:Lcom/google/common/collect/CompactHashMap;
 
-    iget-object p0, p0, Lcom/google/common/collect/CompactHashMap;->values:[Ljava/lang/Object;
+    invoke-static {p0, p1}, Lcom/google/common/collect/CompactHashMap;->access$600(Lcom/google/common/collect/CompactHashMap;I)Ljava/lang/Object;
 
-    aget-object p0, p0, p1
+    move-result-object p0
 
     return-object p0
 .end method

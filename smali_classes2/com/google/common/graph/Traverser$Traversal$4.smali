@@ -32,13 +32,25 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/graph/Traverser$Traversal;Ljava/util/Deque;Ljava/util/Deque;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$horizon",
+            "val$ancestorStack"
+        }
+    .end annotation
 
-    .line 455
-    iput-object p1, p0, Lcom/google/common/graph/Traverser$Traversal$4;->this$0:Lcom/google/common/graph/Traverser$Traversal;
-
+    .line 469
     iput-object p2, p0, Lcom/google/common/graph/Traverser$Traversal$4;->val$horizon:Ljava/util/Deque;
 
     iput-object p3, p0, Lcom/google/common/graph/Traverser$Traversal$4;->val$ancestorStack:Ljava/util/Deque;
+
+    iput-object p1, p0, Lcom/google/common/graph/Traverser$Traversal$4;->this$0:Lcom/google/common/graph/Traverser$Traversal;
 
     invoke-direct {p0}, Lcom/google/common/collect/AbstractIterator;-><init>()V
 
@@ -55,7 +67,10 @@
         }
     .end annotation
 
-    .line 458
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 473
     :goto_0
     iget-object v0, p0, Lcom/google/common/graph/Traverser$Traversal$4;->this$0:Lcom/google/common/graph/Traverser$Traversal;
 
@@ -67,7 +82,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 459
+    .line 474
     iget-object v1, p0, Lcom/google/common/graph/Traverser$Traversal$4;->this$0:Lcom/google/common/graph/Traverser$Traversal;
 
     iget-object v1, v1, Lcom/google/common/graph/Traverser$Traversal;->successorFunction:Lcom/google/common/graph/SuccessorsFunction;
@@ -80,7 +95,7 @@
 
     move-result-object v1
 
-    .line 460
+    .line 475
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
@@ -89,20 +104,20 @@
 
     return-object v0
 
-    .line 463
+    .line 478
     :cond_0
     iget-object v2, p0, Lcom/google/common/graph/Traverser$Traversal$4;->val$horizon:Ljava/util/Deque;
 
     invoke-interface {v2, v1}, Ljava/util/Deque;->addFirst(Ljava/lang/Object;)V
 
-    .line 464
+    .line 479
     iget-object v1, p0, Lcom/google/common/graph/Traverser$Traversal$4;->val$ancestorStack:Ljava/util/Deque;
 
     invoke-interface {v1, v0}, Ljava/util/Deque;->push(Ljava/lang/Object;)V
 
     goto :goto_0
 
-    .line 466
+    .line 482
     :cond_1
     iget-object v0, p0, Lcom/google/common/graph/Traverser$Traversal$4;->val$ancestorStack:Ljava/util/Deque;
 
@@ -110,21 +125,22 @@
 
     move-result v0
 
-    if-eqz v0, :cond_2
+    if-nez v0, :cond_2
 
-    invoke-virtual {p0}, Lcom/google/common/graph/Traverser$Traversal$4;->endOfData()Ljava/lang/Object;
-
-    move-result-object p0
-
-    goto :goto_1
-
-    :cond_2
+    .line 483
     iget-object p0, p0, Lcom/google/common/graph/Traverser$Traversal$4;->val$ancestorStack:Ljava/util/Deque;
 
     invoke-interface {p0}, Ljava/util/Deque;->pop()Ljava/lang/Object;
 
     move-result-object p0
 
-    :goto_1
+    return-object p0
+
+    .line 485
+    :cond_2
+    invoke-virtual {p0}, Lcom/google/common/graph/Traverser$Traversal$4;->endOfData()Ljava/lang/Object;
+
+    move-result-object p0
+
     return-object p0
 .end method

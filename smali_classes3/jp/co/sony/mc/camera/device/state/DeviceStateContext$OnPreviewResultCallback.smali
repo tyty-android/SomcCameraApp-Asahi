@@ -24,8 +24,16 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 3128
+    .line 3493
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$OnPreviewResultCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -45,8 +53,16 @@
 # virtual methods
 .method public onApertureReceived(F)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "aperture"
+        }
+    .end annotation
 
-    .line 3136
+    .line 3501
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$OnPreviewResultCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;
@@ -60,8 +76,16 @@
 
 .method public onAutoHdrResultChanged(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isHdrRequired"
+        }
+    .end annotation
 
-    .line 3144
+    .line 3509
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$OnPreviewResultCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;
@@ -75,8 +99,20 @@
 
 .method public onSsIsoEvReceived(JII)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "ss",
+            "iso",
+            "ev"
+        }
+    .end annotation
 
-    .line 3131
+    .line 3496
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$OnPreviewResultCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;

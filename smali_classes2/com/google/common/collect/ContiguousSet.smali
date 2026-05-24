@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<C::",
@@ -29,6 +32,15 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/DiscreteDomain;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "domain"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -37,14 +49,14 @@
         }
     .end annotation
 
-    .line 145
+    .line 149
     invoke-static {}, Lcom/google/common/collect/Ordering;->natural()Lcom/google/common/collect/Ordering;
 
     move-result-object v0
 
     invoke-direct {p0, v0}, Lcom/google/common/collect/ImmutableSortedSet;-><init>(Ljava/util/Comparator;)V
 
-    .line 146
+    .line 150
     iput-object p1, p0, Lcom/google/common/collect/ContiguousSet;->domain:Lcom/google/common/collect/DiscreteDomain;
 
     return-void
@@ -65,7 +77,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 257
+    .line 261
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -75,6 +87,17 @@
 
 .method public static closed(II)Lcom/google/common/collect/ContiguousSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "lower",
+            "upper"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -84,7 +107,7 @@
         }
     .end annotation
 
-    .line 100
+    .line 107
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -110,6 +133,17 @@
 
 .method public static closed(JJ)Lcom/google/common/collect/ContiguousSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "lower",
+            "upper"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(JJ)",
@@ -119,7 +153,7 @@
         }
     .end annotation
 
-    .line 113
+    .line 119
     invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
@@ -145,6 +179,17 @@
 
 .method public static closedOpen(II)Lcom/google/common/collect/ContiguousSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "lower",
+            "upper"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -154,7 +199,7 @@
         }
     .end annotation
 
-    .line 126
+    .line 131
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -180,6 +225,17 @@
 
 .method public static closedOpen(JJ)Lcom/google/common/collect/ContiguousSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "lower",
+            "upper"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(JJ)",
@@ -189,7 +245,7 @@
         }
     .end annotation
 
-    .line 139
+    .line 143
     invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
@@ -215,6 +271,17 @@
 
 .method public static create(Lcom/google/common/collect/Range;Lcom/google/common/collect/DiscreteDomain;)Lcom/google/common/collect/ContiguousSet;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "range",
+            "domain"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<C::",
@@ -229,13 +296,13 @@
         }
     .end annotation
 
-    .line 63
+    .line 65
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 64
+    .line 66
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 67
+    .line 69
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Range;->hasLowerBound()Z
 
@@ -243,7 +310,7 @@
 
     if-nez v0, :cond_0
 
-    .line 68
+    .line 70
     invoke-virtual {p1}, Lcom/google/common/collect/DiscreteDomain;->minValue()Ljava/lang/Comparable;
 
     move-result-object v0
@@ -261,7 +328,7 @@
     :cond_0
     move-object v0, p0
 
-    .line 70
+    .line 72
     :goto_0
     invoke-virtual {p0}, Lcom/google/common/collect/Range;->hasUpperBound()Z
 
@@ -269,7 +336,7 @@
 
     if-nez v1, :cond_1
 
-    .line 71
+    .line 73
     invoke-virtual {p1}, Lcom/google/common/collect/DiscreteDomain;->maxValue()Ljava/lang/Comparable;
 
     move-result-object v1
@@ -284,51 +351,63 @@
     :try_end_0
     .catch Ljava/util/NoSuchElementException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 79
+    .line 80
     :cond_1
     invoke-virtual {v0}, Lcom/google/common/collect/Range;->isEmpty()Z
 
     move-result v1
 
-    if-nez v1, :cond_3
-
-    iget-object v1, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
-
-    .line 81
-    invoke-virtual {v1, p1}, Lcom/google/common/collect/Cut;->leastValueAbove(Lcom/google/common/collect/DiscreteDomain;)Ljava/lang/Comparable;
-
-    move-result-object v1
-
-    iget-object p0, p0, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
-
-    .line 82
-    invoke-virtual {p0, p1}, Lcom/google/common/collect/Cut;->greatestValueBelow(Lcom/google/common/collect/DiscreteDomain;)Ljava/lang/Comparable;
-
-    move-result-object p0
-
-    .line 80
-    invoke-static {v1, p0}, Lcom/google/common/collect/Range;->compareOrThrow(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
-
-    move-result p0
-
-    if-lez p0, :cond_2
+    if-eqz v1, :cond_2
 
     goto :goto_1
 
     .line 87
     :cond_2
-    new-instance p0, Lcom/google/common/collect/RegularContiguousSet;
+    iget-object v1, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
-    invoke-direct {p0, v0, p1}, Lcom/google/common/collect/RegularContiguousSet;-><init>(Lcom/google/common/collect/Range;Lcom/google/common/collect/DiscreteDomain;)V
+    invoke-virtual {v1, p1}, Lcom/google/common/collect/Cut;->leastValueAbove(Lcom/google/common/collect/DiscreteDomain;)Ljava/lang/Comparable;
 
-    goto :goto_2
+    move-result-object v1
 
-    .line 86
-    :cond_3
+    invoke-static {v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/Comparable;
+
+    .line 88
+    iget-object p0, p0, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
+
+    invoke-virtual {p0, p1}, Lcom/google/common/collect/Cut;->greatestValueBelow(Lcom/google/common/collect/DiscreteDomain;)Ljava/lang/Comparable;
+
+    move-result-object p0
+
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Comparable;
+
+    .line 90
+    invoke-static {v1, p0}, Lcom/google/common/collect/Range;->compareOrThrow(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
+
+    move-result p0
+
+    if-lez p0, :cond_3
+
+    .line 94
     :goto_1
     new-instance p0, Lcom/google/common/collect/EmptyContiguousSet;
 
     invoke-direct {p0, p1}, Lcom/google/common/collect/EmptyContiguousSet;-><init>(Lcom/google/common/collect/DiscreteDomain;)V
+
+    goto :goto_2
+
+    .line 95
+    :cond_3
+    new-instance p0, Lcom/google/common/collect/RegularContiguousSet;
+
+    invoke-direct {p0, v0, p1}, Lcom/google/common/collect/RegularContiguousSet;-><init>(Lcom/google/common/collect/Range;Lcom/google/common/collect/DiscreteDomain;)V
 
     :goto_2
     return-object p0
@@ -336,7 +415,7 @@
     :catch_0
     move-exception p0
 
-    .line 74
+    .line 76
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     invoke-direct {p1, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/Throwable;)V
@@ -356,7 +435,7 @@
         }
     .end annotation
 
-    .line 237
+    .line 241
     new-instance v0, Lcom/google/common/collect/DescendingImmutableSortedSet;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/DescendingImmutableSortedSet;-><init>(Lcom/google/common/collect/ImmutableSortedSet;)V
@@ -366,6 +445,15 @@
 
 .method public headSet(Ljava/lang/Comparable;)Lcom/google/common/collect/ContiguousSet;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "toElement"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TC;)",
@@ -374,7 +462,7 @@
         }
     .end annotation
 
-    .line 151
+    .line 155
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -392,6 +480,17 @@
 
 .method public headSet(Ljava/lang/Comparable;Z)Lcom/google/common/collect/ContiguousSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "toElement",
+            "inclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TC;Z)",
@@ -400,7 +499,7 @@
         }
     .end annotation
 
-    .line 158
+    .line 162
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -416,8 +515,16 @@
 
 .method public bridge synthetic headSet(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSortedSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "toElement"
+        }
+    .end annotation
 
-    .line 50
+    .line 51
     check-cast p1, Ljava/lang/Comparable;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ContiguousSet;->headSet(Ljava/lang/Comparable;)Lcom/google/common/collect/ContiguousSet;
@@ -429,8 +536,18 @@
 
 .method public bridge synthetic headSet(Ljava/lang/Object;Z)Lcom/google/common/collect/ImmutableSortedSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "toElement",
+            "inclusive"
+        }
+    .end annotation
 
-    .line 50
+    .line 51
     check-cast p1, Ljava/lang/Comparable;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/ContiguousSet;->headSet(Ljava/lang/Comparable;Z)Lcom/google/common/collect/ContiguousSet;
@@ -442,8 +559,18 @@
 
 .method public bridge synthetic headSet(Ljava/lang/Object;Z)Ljava/util/NavigableSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "toElement",
+            "inclusive"
+        }
+    .end annotation
 
-    .line 50
+    .line 51
     check-cast p1, Ljava/lang/Comparable;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/ContiguousSet;->headSet(Ljava/lang/Comparable;Z)Lcom/google/common/collect/ContiguousSet;
@@ -455,8 +582,16 @@
 
 .method public bridge synthetic headSet(Ljava/lang/Object;)Ljava/util/SortedSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "toElement"
+        }
+    .end annotation
 
-    .line 50
+    .line 51
     check-cast p1, Ljava/lang/Comparable;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ContiguousSet;->headSet(Ljava/lang/Comparable;)Lcom/google/common/collect/ContiguousSet;
@@ -467,6 +602,17 @@
 .end method
 
 .method abstract headSetImpl(Ljava/lang/Comparable;Z)Lcom/google/common/collect/ContiguousSet;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "toElement",
+            "inclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TC;Z)",
@@ -478,8 +624,18 @@
 
 .method bridge synthetic headSetImpl(Ljava/lang/Object;Z)Lcom/google/common/collect/ImmutableSortedSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "toElement",
+            "inclusive"
+        }
+    .end annotation
 
-    .line 50
+    .line 51
     check-cast p1, Ljava/lang/Comparable;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/ContiguousSet;->headSetImpl(Ljava/lang/Comparable;Z)Lcom/google/common/collect/ContiguousSet;
@@ -490,6 +646,15 @@
 .end method
 
 .method public abstract intersection(Lcom/google/common/collect/ContiguousSet;)Lcom/google/common/collect/ContiguousSet;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "other"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -512,6 +677,17 @@
 .end method
 
 .method public abstract range(Lcom/google/common/collect/BoundType;Lcom/google/common/collect/BoundType;)Lcom/google/common/collect/Range;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "lowerBoundType",
+            "upperBoundType"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -526,6 +702,17 @@
 
 .method public subSet(Ljava/lang/Comparable;Ljava/lang/Comparable;)Lcom/google/common/collect/ContiguousSet;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromElement",
+            "toElement"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TC;TC;)",
@@ -534,13 +721,13 @@
         }
     .end annotation
 
-    .line 163
+    .line 167
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 164
+    .line 168
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 165
+    .line 169
     invoke-virtual {p0}, Lcom/google/common/collect/ContiguousSet;->comparator()Ljava/util/Comparator;
 
     move-result-object v0
@@ -565,7 +752,7 @@
     :goto_0
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 166
+    .line 170
     invoke-virtual {p0, p1, v1, p2, v2}, Lcom/google/common/collect/ContiguousSet;->subSetImpl(Ljava/lang/Comparable;ZLjava/lang/Comparable;Z)Lcom/google/common/collect/ContiguousSet;
 
     move-result-object p0
@@ -575,6 +762,21 @@
 
 .method public subSet(Ljava/lang/Comparable;ZLjava/lang/Comparable;Z)Lcom/google/common/collect/ContiguousSet;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "fromElement",
+            "fromInclusive",
+            "toElement",
+            "toInclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TC;ZTC;Z)",
@@ -583,13 +785,13 @@
         }
     .end annotation
 
-    .line 174
+    .line 178
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 175
+    .line 179
     invoke-static {p3}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 176
+    .line 180
     invoke-virtual {p0}, Lcom/google/common/collect/ContiguousSet;->comparator()Ljava/util/Comparator;
 
     move-result-object v0
@@ -610,7 +812,7 @@
     :goto_0
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 177
+    .line 181
     invoke-virtual {p0, p1, p2, p3, p4}, Lcom/google/common/collect/ContiguousSet;->subSetImpl(Ljava/lang/Comparable;ZLjava/lang/Comparable;Z)Lcom/google/common/collect/ContiguousSet;
 
     move-result-object p0
@@ -620,8 +822,18 @@
 
 .method public bridge synthetic subSet(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSortedSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "fromElement",
+            "toElement"
+        }
+    .end annotation
 
-    .line 50
+    .line 51
     check-cast p1, Ljava/lang/Comparable;
 
     check-cast p2, Ljava/lang/Comparable;
@@ -635,8 +847,22 @@
 
 .method public bridge synthetic subSet(Ljava/lang/Object;ZLjava/lang/Object;Z)Lcom/google/common/collect/ImmutableSortedSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x1000,
+            0x1000
+        }
+        names = {
+            "fromElement",
+            "fromInclusive",
+            "toElement",
+            "toInclusive"
+        }
+    .end annotation
 
-    .line 50
+    .line 51
     check-cast p1, Ljava/lang/Comparable;
 
     check-cast p3, Ljava/lang/Comparable;
@@ -650,8 +876,22 @@
 
 .method public bridge synthetic subSet(Ljava/lang/Object;ZLjava/lang/Object;Z)Ljava/util/NavigableSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x1000,
+            0x1000
+        }
+        names = {
+            "fromElement",
+            "fromInclusive",
+            "toElement",
+            "toInclusive"
+        }
+    .end annotation
 
-    .line 50
+    .line 51
     check-cast p1, Ljava/lang/Comparable;
 
     check-cast p3, Ljava/lang/Comparable;
@@ -665,8 +905,18 @@
 
 .method public bridge synthetic subSet(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "fromElement",
+            "toElement"
+        }
+    .end annotation
 
-    .line 50
+    .line 51
     check-cast p1, Ljava/lang/Comparable;
 
     check-cast p2, Ljava/lang/Comparable;
@@ -679,6 +929,21 @@
 .end method
 
 .method abstract subSetImpl(Ljava/lang/Comparable;ZLjava/lang/Comparable;Z)Lcom/google/common/collect/ContiguousSet;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "fromElement",
+            "fromInclusive",
+            "toElement",
+            "toInclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TC;ZTC;Z)",
@@ -690,8 +955,22 @@
 
 .method bridge synthetic subSetImpl(Ljava/lang/Object;ZLjava/lang/Object;Z)Lcom/google/common/collect/ImmutableSortedSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x1000,
+            0x1000
+        }
+        names = {
+            "fromElement",
+            "fromInclusive",
+            "toElement",
+            "toInclusive"
+        }
+    .end annotation
 
-    .line 50
+    .line 51
     check-cast p1, Ljava/lang/Comparable;
 
     check-cast p3, Ljava/lang/Comparable;
@@ -705,6 +984,15 @@
 
 .method public tailSet(Ljava/lang/Comparable;)Lcom/google/common/collect/ContiguousSet;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fromElement"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TC;)",
@@ -713,7 +1001,7 @@
         }
     .end annotation
 
-    .line 182
+    .line 186
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -731,6 +1019,17 @@
 
 .method public tailSet(Ljava/lang/Comparable;Z)Lcom/google/common/collect/ContiguousSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromElement",
+            "inclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TC;Z)",
@@ -739,7 +1038,7 @@
         }
     .end annotation
 
-    .line 189
+    .line 193
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -755,8 +1054,16 @@
 
 .method public bridge synthetic tailSet(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSortedSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "fromElement"
+        }
+    .end annotation
 
-    .line 50
+    .line 51
     check-cast p1, Ljava/lang/Comparable;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ContiguousSet;->tailSet(Ljava/lang/Comparable;)Lcom/google/common/collect/ContiguousSet;
@@ -768,8 +1075,18 @@
 
 .method public bridge synthetic tailSet(Ljava/lang/Object;Z)Lcom/google/common/collect/ImmutableSortedSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "fromElement",
+            "inclusive"
+        }
+    .end annotation
 
-    .line 50
+    .line 51
     check-cast p1, Ljava/lang/Comparable;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/ContiguousSet;->tailSet(Ljava/lang/Comparable;Z)Lcom/google/common/collect/ContiguousSet;
@@ -781,8 +1098,18 @@
 
 .method public bridge synthetic tailSet(Ljava/lang/Object;Z)Ljava/util/NavigableSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "fromElement",
+            "inclusive"
+        }
+    .end annotation
 
-    .line 50
+    .line 51
     check-cast p1, Ljava/lang/Comparable;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/ContiguousSet;->tailSet(Ljava/lang/Comparable;Z)Lcom/google/common/collect/ContiguousSet;
@@ -794,8 +1121,16 @@
 
 .method public bridge synthetic tailSet(Ljava/lang/Object;)Ljava/util/SortedSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "fromElement"
+        }
+    .end annotation
 
-    .line 50
+    .line 51
     check-cast p1, Ljava/lang/Comparable;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ContiguousSet;->tailSet(Ljava/lang/Comparable;)Lcom/google/common/collect/ContiguousSet;
@@ -806,6 +1141,17 @@
 .end method
 
 .method abstract tailSetImpl(Ljava/lang/Comparable;Z)Lcom/google/common/collect/ContiguousSet;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromElement",
+            "inclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TC;Z)",
@@ -817,8 +1163,18 @@
 
 .method bridge synthetic tailSetImpl(Ljava/lang/Object;Z)Lcom/google/common/collect/ImmutableSortedSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "fromElement",
+            "inclusive"
+        }
+    .end annotation
 
-    .line 50
+    .line 51
     check-cast p1, Ljava/lang/Comparable;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/ContiguousSet;->tailSetImpl(Ljava/lang/Comparable;Z)Lcom/google/common/collect/ContiguousSet;
@@ -831,12 +1187,23 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 243
+    .line 247
     invoke-virtual {p0}, Lcom/google/common/collect/ContiguousSet;->range()Lcom/google/common/collect/Range;
 
     move-result-object p0
 
     invoke-virtual {p0}, Lcom/google/common/collect/Range;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method writeReplace()Ljava/lang/Object;
+    .locals 0
+
+    .line 270
+    invoke-super {p0}, Lcom/google/common/collect/ImmutableSortedSet;->writeReplace()Ljava/lang/Object;
 
     move-result-object p0
 

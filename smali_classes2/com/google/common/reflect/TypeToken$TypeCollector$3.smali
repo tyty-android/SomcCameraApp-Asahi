@@ -21,11 +21,27 @@
 .end annotation
 
 
+# instance fields
+.field final synthetic this$0:Lcom/google/common/reflect/TypeToken$TypeCollector;
+
+
 # direct methods
 .method constructor <init>(Lcom/google/common/reflect/TypeToken$TypeCollector;Lcom/google/common/reflect/TypeToken$TypeCollector;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "delegate"
+        }
+    .end annotation
 
-    .line 1341
+    .line 1364
+    iput-object p1, p0, Lcom/google/common/reflect/TypeToken$TypeCollector$3;->this$0:Lcom/google/common/reflect/TypeToken$TypeCollector;
+
     invoke-direct {p0, p2}, Lcom/google/common/reflect/TypeToken$TypeCollector$ForwardingTypeCollector;-><init>(Lcom/google/common/reflect/TypeToken$TypeCollector;)V
 
     return-void
@@ -35,6 +51,15 @@
 # virtual methods
 .method collectTypes(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableList;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "types"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -45,12 +70,12 @@
         }
     .end annotation
 
-    .line 1349
+    .line 1372
     invoke-static {}, Lcom/google/common/collect/ImmutableList;->builder()Lcom/google/common/collect/ImmutableList$Builder;
 
     move-result-object v0
 
-    .line 1350
+    .line 1373
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -67,7 +92,7 @@
 
     move-result-object v1
 
-    .line 1351
+    .line 1374
     invoke-virtual {p0, v1}, Lcom/google/common/reflect/TypeToken$TypeCollector$3;->getRawType(Ljava/lang/Object;)Ljava/lang/Class;
 
     move-result-object v2
@@ -78,12 +103,12 @@
 
     if-nez v2, :cond_0
 
-    .line 1352
+    .line 1375
     invoke-virtual {v0, v1}, Lcom/google/common/collect/ImmutableList$Builder;->add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList$Builder;
 
     goto :goto_0
 
-    .line 1355
+    .line 1378
     :cond_1
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableList$Builder;->build()Lcom/google/common/collect/ImmutableList;
 
@@ -98,6 +123,15 @@
 
 .method getInterfaces(Ljava/lang/Object;)Ljava/lang/Iterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -106,7 +140,7 @@
         }
     .end annotation
 
-    .line 1344
+    .line 1367
     invoke-static {}, Lcom/google/common/collect/ImmutableSet;->of()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object p0

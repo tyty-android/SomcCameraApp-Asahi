@@ -23,11 +23,25 @@
 .end annotation
 
 
+# instance fields
+.field final synthetic this$0:Lcom/google/common/collect/MapMakerInternalMap;
+
+
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/MapMakerInternalMap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 2675
+    .line 2723
+    iput-object p1, p0, Lcom/google/common/collect/MapMakerInternalMap$EntryIterator;->this$0:Lcom/google/common/collect/MapMakerInternalMap;
+
     invoke-direct {p0, p1}, Lcom/google/common/collect/MapMakerInternalMap$HashIterator;-><init>(Lcom/google/common/collect/MapMakerInternalMap;)V
 
     return-void
@@ -38,7 +52,7 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .locals 0
 
-    .line 2675
+    .line 2723
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$EntryIterator;->next()Ljava/util/Map$Entry;
 
     move-result-object p0
@@ -56,7 +70,7 @@
         }
     .end annotation
 
-    .line 2679
+    .line 2727
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$EntryIterator;->nextEntry()Lcom/google/common/collect/MapMakerInternalMap$WriteThroughEntry;
 
     move-result-object p0

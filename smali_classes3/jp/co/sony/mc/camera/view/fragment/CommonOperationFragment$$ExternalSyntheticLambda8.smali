@@ -6,18 +6,12 @@
 .implements Lkotlin/jvm/functions/Function1;
 
 
-# instance fields
-.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;
-
-
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;)V
+.method public synthetic constructor <init>()V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment$$ExternalSyntheticLambda8;->f$0:Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;
 
     return-void
 .end method
@@ -28,11 +22,9 @@
     .locals 0
 
     .line 0
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment$$ExternalSyntheticLambda8;->f$0:Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;
+    check-cast p1, Ljava/lang/Boolean;
 
-    check-cast p1, Lkotlin/Pair;
-
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;->$r8$lambda$c1IxXYijTXFuwJq9baJbD18apf0(Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;Lkotlin/Pair;)Lkotlin/Unit;
+    invoke-static {p1}, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;->$r8$lambda$aUt_GyjEztudOa7ZQlqb-ErkvZc(Ljava/lang/Boolean;)Lkotlin/Unit;
 
     move-result-object p0
 

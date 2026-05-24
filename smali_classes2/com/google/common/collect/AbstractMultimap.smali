@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/collect/AbstractMultimap$Values;,
@@ -43,7 +46,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -59,7 +62,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -74,7 +77,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -89,7 +92,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -104,7 +107,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -113,7 +116,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 39
+    .line 41
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -133,12 +136,12 @@
         }
     .end annotation
 
-    .line 208
+    .line 211
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap;->asMap:Ljava/util/Map;
 
     if-nez v0, :cond_0
 
-    .line 209
+    .line 212
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap;->createAsMap()Ljava/util/Map;
 
     move-result-object v0
@@ -152,15 +155,25 @@
 .method public containsEntry(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
-    .line 58
+    .line 61
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap;->asMap()Ljava/util/Map;
 
     move-result-object p0
@@ -173,7 +186,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 59
+    .line 62
     invoke-interface {p0, p2}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
 
     move-result p0
@@ -194,11 +207,19 @@
 .method public containsValue(Ljava/lang/Object;)Z
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 47
+    .line 50
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap;->asMap()Ljava/util/Map;
 
     move-result-object p0
@@ -224,7 +245,7 @@
 
     check-cast v0, Ljava/util/Collection;
 
-    .line 48
+    .line 51
     invoke-interface {v0, p1}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
 
     move-result v0
@@ -305,12 +326,12 @@
         }
     .end annotation
 
-    .line 113
+    .line 116
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap;->entries:Ljava/util/Collection;
 
     if-nez v0, :cond_0
 
-    .line 114
+    .line 117
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap;->createEntries()Ljava/util/Collection;
 
     move-result-object v0
@@ -335,11 +356,19 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 218
+    .line 221
     invoke-static {p0, p1}, Lcom/google/common/collect/Multimaps;->equalsImpl(Lcom/google/common/collect/Multimap;Ljava/lang/Object;)Z
 
     move-result p0
@@ -350,7 +379,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 231
+    .line 234
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap;->asMap()Ljava/util/Map;
 
     move-result-object p0
@@ -365,7 +394,7 @@
 .method public isEmpty()Z
     .locals 0
 
-    .line 42
+    .line 45
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap;->size()I
 
     move-result p0
@@ -393,12 +422,12 @@
         }
     .end annotation
 
-    .line 151
+    .line 154
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap;->keySet:Ljava/util/Set;
 
     if-nez v0, :cond_0
 
-    .line 152
+    .line 155
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap;->createKeySet()Ljava/util/Set;
 
     move-result-object v0
@@ -419,12 +448,12 @@
         }
     .end annotation
 
-    .line 161
+    .line 164
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap;->keys:Lcom/google/common/collect/Multiset;
 
     if-nez v0, :cond_0
 
-    .line 162
+    .line 165
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap;->createKeys()Lcom/google/common/collect/Multiset;
 
     move-result-object v0
@@ -438,20 +467,31 @@
 .method public put(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV;)Z"
         }
     .end annotation
 
-    .line 72
+    .line 75
     invoke-virtual {p0, p1}, Lcom/google/common/collect/AbstractMultimap;->get(Ljava/lang/Object;)Ljava/util/Collection;
 
     move-result-object p0
@@ -465,6 +505,15 @@
 
 .method public putAll(Lcom/google/common/collect/Multimap;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "multimap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -473,7 +522,7 @@
         }
     .end annotation
 
-    .line 94
+    .line 97
     invoke-interface {p1}, Lcom/google/common/collect/Multimap;->entries()Ljava/util/Collection;
 
     move-result-object p1
@@ -497,7 +546,7 @@
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 95
+    .line 98
     invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v2
@@ -521,9 +570,20 @@
 .method public putAll(Ljava/lang/Object;Ljava/lang/Iterable;)Z
     .locals 3
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "values"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;",
@@ -532,10 +592,10 @@
         }
     .end annotation
 
-    .line 78
+    .line 81
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 81
+    .line 84
     instance-of v0, p2, Ljava/util/Collection;
 
     const/4 v1, 0x1
@@ -544,10 +604,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 82
+    .line 85
     check-cast p2, Ljava/util/Collection;
 
-    .line 83
+    .line 86
     invoke-interface {p2}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v0
@@ -572,13 +632,13 @@
     :goto_0
     return v1
 
-    .line 85
+    .line 88
     :cond_1
     invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p2
 
-    .line 86
+    .line 89
     invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
@@ -607,15 +667,25 @@
 .method public remove(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
-    .line 65
+    .line 68
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap;->asMap()Ljava/util/Map;
 
     move-result-object p0
@@ -628,7 +698,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 66
+    .line 69
     invoke-interface {p0, p2}, Ljava/util/Collection;->remove(Ljava/lang/Object;)Z
 
     move-result p0
@@ -649,9 +719,20 @@
 .method public replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/Collection;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "values"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;",
@@ -662,15 +743,15 @@
         }
     .end annotation
 
-    .line 103
+    .line 106
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 104
+    .line 107
     invoke-virtual {p0, p1}, Lcom/google/common/collect/AbstractMultimap;->removeAll(Ljava/lang/Object;)Ljava/util/Collection;
 
     move-result-object v0
 
-    .line 105
+    .line 108
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/AbstractMultimap;->putAll(Ljava/lang/Object;Ljava/lang/Iterable;)Z
 
     return-object v0
@@ -679,12 +760,12 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 242
+    .line 245
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap;->asMap()Ljava/util/Map;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-interface {p0}, Ljava/util/Map;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -701,7 +782,7 @@
         }
     .end annotation
 
-    .line 201
+    .line 204
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap;->entries()Ljava/util/Collection;
 
     move-result-object p0
@@ -727,12 +808,12 @@
         }
     .end annotation
 
-    .line 171
+    .line 174
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap;->values:Ljava/util/Collection;
 
     if-nez v0, :cond_0
 
-    .line 172
+    .line 175
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap;->createValues()Ljava/util/Collection;
 
     move-result-object v0

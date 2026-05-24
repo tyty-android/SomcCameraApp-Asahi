@@ -21,6 +21,14 @@
 # direct methods
 .method protected constructor <init>(Ljp/co/sony/mc/camera/view/GestureShutter;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 395
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/GestureShutter$StateConfirming;->this$0:Ljp/co/sony/mc/camera/view/GestureShutter;

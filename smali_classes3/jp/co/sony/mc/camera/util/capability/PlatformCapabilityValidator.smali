@@ -83,6 +83,15 @@
 
 .method static compareCameraIdMapToBackup(Ljava/util/Map;)Z
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "currentCameraIdStringMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -272,6 +281,16 @@
 
 .method static comparePreferencesDataToBackup(Landroid/content/SharedPreferences;Ljava/lang/String;)Z
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "orgPreference",
+            "name"
+        }
+    .end annotation
 
     .line 161
     invoke-static {}, Ljp/co/sony/mc/camera/CameraApplication;->getContext()Landroid/content/Context;
@@ -761,6 +780,16 @@
 
 .method private static copyPreferencesData(Landroid/content/SharedPreferences;Landroid/content/SharedPreferences;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "src",
+            "dst"
+        }
+    .end annotation
 
     .line 245
     invoke-interface {p0}, Landroid/content/SharedPreferences;->getAll()Ljava/util/Map;
@@ -823,6 +852,16 @@
 
 .method static createBackup(Landroid/content/SharedPreferences;Ljava/lang/String;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "orgPreference",
+            "name"
+        }
+    .end annotation
 
     .line 138
     invoke-static {}, Ljp/co/sony/mc/camera/CameraApplication;->getContext()Landroid/content/Context;
@@ -1011,6 +1050,18 @@
 
 .method private static putObject(Landroid/content/SharedPreferences$Editor;Ljava/lang/String;Ljava/lang/Object;)Landroid/content/SharedPreferences$Editor;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x10
+        }
+        names = {
+            "edit",
+            "key",
+            "value"
+        }
+    .end annotation
 
     .line 257
     instance-of v0, p2, Ljava/lang/Boolean;
@@ -1121,6 +1172,15 @@
 
 .method static remainDeviceErrorDetection(Ljava/util/Map;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraIdStringMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1261,6 +1321,14 @@
 
 .method static removeBackup(Ljava/lang/String;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 149
     invoke-static {}, Ljp/co/sony/mc/camera/CameraApplication;->getContext()Landroid/content/Context;
@@ -1292,6 +1360,14 @@
 
 .method static setIsRecovery(Z)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isRecovery"
+        }
+    .end annotation
 
     .line 91
     invoke-static {}, Ljp/co/sony/mc/camera/CameraApplication;->getContext()Landroid/content/Context;

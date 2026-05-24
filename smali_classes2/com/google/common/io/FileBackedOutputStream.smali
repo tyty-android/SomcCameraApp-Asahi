@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/io/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
@@ -13,20 +16,18 @@
 
 # instance fields
 .field private file:Ljava/io/File;
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
 .field private final fileThreshold:I
 
 .field private memory:Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
-
-.field private out:Ljava/io/OutputStream;
-
-.field private final parentDirectory:Ljava/io/File;
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
+
+.field private out:Ljava/io/OutputStream;
 
 .field private final resetOnFinalize:Z
 
@@ -36,77 +37,92 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fileThreshold"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 94
+    .line 111
     invoke-direct {p0, p1, v0}, Lcom/google/common/io/FileBackedOutputStream;-><init>(IZ)V
 
     return-void
 .end method
 
 .method public constructor <init>(IZ)V
-    .locals 1
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fileThreshold",
+            "resetOnFinalize"
+        }
+    .end annotation
+
+    .line 123
+    invoke-direct {p0}, Ljava/io/OutputStream;-><init>()V
+
+    if-ltz p1, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 124
+    :goto_0
+    const-string v1, "fileThreshold must be non-negative, but was %s"
+
+    invoke-static {v0, v1, p1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;I)V
+
+    .line 126
+    iput p1, p0, Lcom/google/common/io/FileBackedOutputStream;->fileThreshold:I
+
+    .line 127
+    iput-boolean p2, p0, Lcom/google/common/io/FileBackedOutputStream;->resetOnFinalize:Z
+
+    .line 128
+    new-instance p1, Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
 
     const/4 v0, 0x0
 
-    .line 106
-    invoke-direct {p0, p1, p2, v0}, Lcom/google/common/io/FileBackedOutputStream;-><init>(IZLjava/io/File;)V
-
-    return-void
-.end method
-
-.method private constructor <init>(IZLjava/io/File;)V
-    .locals 0
-    .param p3    # Ljava/io/File;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
-
-    .line 110
-    invoke-direct {p0}, Ljava/io/OutputStream;-><init>()V
-
-    .line 111
-    iput p1, p0, Lcom/google/common/io/FileBackedOutputStream;->fileThreshold:I
-
-    .line 112
-    iput-boolean p2, p0, Lcom/google/common/io/FileBackedOutputStream;->resetOnFinalize:Z
-
-    .line 113
-    iput-object p3, p0, Lcom/google/common/io/FileBackedOutputStream;->parentDirectory:Ljava/io/File;
-
-    .line 114
-    new-instance p1, Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
-
-    const/4 p3, 0x0
-
-    invoke-direct {p1, p3}, Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;-><init>(Lcom/google/common/io/FileBackedOutputStream$1;)V
+    invoke-direct {p1, v0}, Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;-><init>(Lcom/google/common/io/FileBackedOutputStream$1;)V
 
     iput-object p1, p0, Lcom/google/common/io/FileBackedOutputStream;->memory:Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
 
-    .line 115
+    .line 129
     iput-object p1, p0, Lcom/google/common/io/FileBackedOutputStream;->out:Ljava/io/OutputStream;
 
-    if-eqz p2, :cond_0
+    if-eqz p2, :cond_1
 
-    .line 118
+    .line 132
     new-instance p1, Lcom/google/common/io/FileBackedOutputStream$1;
 
     invoke-direct {p1, p0}, Lcom/google/common/io/FileBackedOutputStream$1;-><init>(Lcom/google/common/io/FileBackedOutputStream;)V
 
     iput-object p1, p0, Lcom/google/common/io/FileBackedOutputStream;->source:Lcom/google/common/io/ByteSource;
 
-    goto :goto_0
+    goto :goto_1
 
-    .line 135
-    :cond_0
+    .line 150
+    :cond_1
     new-instance p1, Lcom/google/common/io/FileBackedOutputStream$2;
 
     invoke-direct {p1, p0}, Lcom/google/common/io/FileBackedOutputStream$2;-><init>(Lcom/google/common/io/FileBackedOutputStream;)V
 
     iput-object p1, p0, Lcom/google/common/io/FileBackedOutputStream;->source:Lcom/google/common/io/ByteSource;
 
-    :goto_0
+    :goto_1
     return-void
 .end method
 
@@ -118,7 +134,7 @@
         }
     .end annotation
 
-    .line 54
+    .line 69
     invoke-direct {p0}, Lcom/google/common/io/FileBackedOutputStream;->openInputStream()Ljava/io/InputStream;
 
     move-result-object p0
@@ -136,13 +152,13 @@
 
     monitor-enter p0
 
-    .line 155
+    .line 170
     :try_start_0
     iget-object v0, p0, Lcom/google/common/io/FileBackedOutputStream;->file:Ljava/io/File;
 
     if-eqz v0, :cond_0
 
-    .line 156
+    .line 171
     new-instance v0, Ljava/io/FileInputStream;
 
     iget-object v1, p0, Lcom/google/common/io/FileBackedOutputStream;->file:Ljava/io/File;
@@ -155,9 +171,14 @@
 
     return-object v0
 
-    .line 158
+    .line 174
     :cond_0
     :try_start_1
+    iget-object v0, p0, Lcom/google/common/io/FileBackedOutputStream;->memory:Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
+
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 175
     new-instance v0, Ljava/io/ByteArrayInputStream;
 
     iget-object v1, p0, Lcom/google/common/io/FileBackedOutputStream;->memory:Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
@@ -191,19 +212,26 @@
 .end method
 
 .method private update(I)V
-    .locals 5
+    .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "len"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 221
-    iget-object v0, p0, Lcom/google/common/io/FileBackedOutputStream;->file:Ljava/io/File;
-
-    if-nez v0, :cond_1
-
+    .line 238
     iget-object v0, p0, Lcom/google/common/io/FileBackedOutputStream;->memory:Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
+
+    if-eqz v0, :cond_1
 
     invoke-virtual {v0}, Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;->getCount()I
 
@@ -215,61 +243,76 @@
 
     if-le v0, p1, :cond_1
 
-    .line 222
-    const-string p1, "FileBackedOutputStream"
+    .line 239
+    sget-object p1, Lcom/google/common/io/TempFileCreator;->INSTANCE:Lcom/google/common/io/TempFileCreator;
 
-    iget-object v0, p0, Lcom/google/common/io/FileBackedOutputStream;->parentDirectory:Ljava/io/File;
+    const-string v0, "FileBackedOutputStream"
 
-    const/4 v1, 0x0
-
-    invoke-static {p1, v1, v0}, Ljava/io/File;->createTempFile(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;)Ljava/io/File;
+    invoke-virtual {p1, v0}, Lcom/google/common/io/TempFileCreator;->createTempFile(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object p1
 
-    .line 223
+    .line 240
     iget-boolean v0, p0, Lcom/google/common/io/FileBackedOutputStream;->resetOnFinalize:Z
 
     if-eqz v0, :cond_0
 
-    .line 226
+    .line 243
     invoke-virtual {p1}, Ljava/io/File;->deleteOnExit()V
 
-    .line 228
+    .line 246
     :cond_0
+    :try_start_0
     new-instance v0, Ljava/io/FileOutputStream;
 
     invoke-direct {v0, p1}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
 
-    .line 229
+    .line 247
+    iget-object v1, p0, Lcom/google/common/io/FileBackedOutputStream;->memory:Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
+
+    invoke-virtual {v1}, Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;->getBuffer()[B
+
+    move-result-object v1
+
     iget-object v2, p0, Lcom/google/common/io/FileBackedOutputStream;->memory:Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
 
-    invoke-virtual {v2}, Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;->getBuffer()[B
+    invoke-virtual {v2}, Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;->getCount()I
 
-    move-result-object v2
+    move-result v2
 
-    iget-object v3, p0, Lcom/google/common/io/FileBackedOutputStream;->memory:Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
+    const/4 v3, 0x0
 
-    invoke-virtual {v3}, Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;->getCount()I
+    invoke-virtual {v0, v1, v3, v2}, Ljava/io/FileOutputStream;->write([BII)V
 
-    move-result v3
-
-    const/4 v4, 0x0
-
-    invoke-virtual {v0, v2, v4, v3}, Ljava/io/FileOutputStream;->write([BII)V
-
-    .line 230
+    .line 248
     invoke-virtual {v0}, Ljava/io/FileOutputStream;->flush()V
 
-    .line 233
+    .line 250
     iput-object v0, p0, Lcom/google/common/io/FileBackedOutputStream;->out:Ljava/io/OutputStream;
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 234
+    .line 256
     iput-object p1, p0, Lcom/google/common/io/FileBackedOutputStream;->file:Ljava/io/File;
 
-    .line 235
-    iput-object v1, p0, Lcom/google/common/io/FileBackedOutputStream;->memory:Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
+    const/4 p1, 0x0
+
+    .line 257
+    iput-object p1, p0, Lcom/google/common/io/FileBackedOutputStream;->memory:Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
+
+    goto :goto_0
+
+    :catch_0
+    move-exception p0
+
+    .line 252
+    invoke-virtual {p1}, Ljava/io/File;->delete()Z
+
+    .line 253
+    throw p0
 
     :cond_1
+    :goto_0
     return-void
 .end method
 
@@ -278,7 +321,7 @@
 .method public asByteSource()Lcom/google/common/io/ByteSource;
     .locals 0
 
-    .line 151
+    .line 166
     iget-object p0, p0, Lcom/google/common/io/FileBackedOutputStream;->source:Lcom/google/common/io/ByteSource;
 
     return-object p0
@@ -294,7 +337,7 @@
 
     monitor-enter p0
 
-    .line 207
+    .line 224
     :try_start_0
     iget-object v0, p0, Lcom/google/common/io/FileBackedOutputStream;->out:Ljava/io/OutputStream;
 
@@ -302,7 +345,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 208
+    .line 225
     monitor-exit p0
 
     return-void
@@ -325,7 +368,7 @@
 
     monitor-enter p0
 
-    .line 212
+    .line 229
     :try_start_0
     iget-object v0, p0, Lcom/google/common/io/FileBackedOutputStream;->out:Ljava/io/OutputStream;
 
@@ -333,7 +376,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 213
+    .line 230
     monitor-exit p0
 
     return-void
@@ -348,10 +391,12 @@
 
 .method declared-synchronized getFile()Ljava/io/File;
     .locals 1
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 
     monitor-enter p0
 
-    .line 84
+    .line 100
     :try_start_0
     iget-object v0, p0, Lcom/google/common/io/FileBackedOutputStream;->file:Ljava/io/File;
     :try_end_0
@@ -377,101 +422,85 @@
         }
     .end annotation
 
+    const-string v0, "Could not delete: "
+
+    const-string v1, "Could not delete: "
+
     monitor-enter p0
 
-    const/4 v0, 0x0
+    const/4 v2, 0x0
 
-    .line 170
+    .line 187
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/io/FileBackedOutputStream;->close()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 172
+    .line 189
     :try_start_1
-    iget-object v1, p0, Lcom/google/common/io/FileBackedOutputStream;->memory:Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
+    iget-object v0, p0, Lcom/google/common/io/FileBackedOutputStream;->memory:Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
 
-    if-nez v1, :cond_0
+    if-nez v0, :cond_0
 
-    .line 173
-    new-instance v1, Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
+    .line 190
+    new-instance v0, Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
 
-    invoke-direct {v1, v0}, Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;-><init>(Lcom/google/common/io/FileBackedOutputStream$1;)V
+    invoke-direct {v0, v2}, Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;-><init>(Lcom/google/common/io/FileBackedOutputStream$1;)V
 
-    iput-object v1, p0, Lcom/google/common/io/FileBackedOutputStream;->memory:Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
+    iput-object v0, p0, Lcom/google/common/io/FileBackedOutputStream;->memory:Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
 
     goto :goto_0
 
-    .line 175
+    .line 192
     :cond_0
-    invoke-virtual {v1}, Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;->reset()V
+    invoke-virtual {v0}, Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;->reset()V
 
-    .line 177
+    .line 194
     :goto_0
-    iget-object v1, p0, Lcom/google/common/io/FileBackedOutputStream;->memory:Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
+    iget-object v0, p0, Lcom/google/common/io/FileBackedOutputStream;->memory:Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
 
-    iput-object v1, p0, Lcom/google/common/io/FileBackedOutputStream;->out:Ljava/io/OutputStream;
+    iput-object v0, p0, Lcom/google/common/io/FileBackedOutputStream;->out:Ljava/io/OutputStream;
 
-    .line 178
-    iget-object v1, p0, Lcom/google/common/io/FileBackedOutputStream;->file:Ljava/io/File;
+    .line 195
+    iget-object v0, p0, Lcom/google/common/io/FileBackedOutputStream;->file:Ljava/io/File;
 
-    if-eqz v1, :cond_2
+    if-eqz v0, :cond_2
 
-    .line 180
-    iput-object v0, p0, Lcom/google/common/io/FileBackedOutputStream;->file:Ljava/io/File;
+    .line 197
+    iput-object v2, p0, Lcom/google/common/io/FileBackedOutputStream;->file:Ljava/io/File;
 
-    .line 181
-    invoke-virtual {v1}, Ljava/io/File;->delete()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    goto :goto_1
-
-    .line 182
-    :cond_1
-    new-instance v0, Ljava/io/IOException;
-
-    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/String;->length()I
+    .line 198
+    invoke-virtual {v0}, Ljava/io/File;->delete()Z
 
     move-result v2
 
-    add-int/lit8 v2, v2, 0x12
+    if-eqz v2, :cond_1
+
+    goto :goto_1
+
+    .line 199
+    :cond_1
+    new-instance v2, Ljava/io/IOException;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v3, v2}, Ljava/lang/StringBuilder;-><init>(I)V
+    invoke-direct {v3, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    const-string v2, "Could not delete: "
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v0
 
-    move-result-object v2
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v0
 
-    move-result-object v1
+    invoke-direct {v2, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    throw v2
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 186
+    .line 203
     :cond_2
     :goto_1
     monitor-exit p0
@@ -486,88 +515,68 @@
     :catchall_1
     move-exception v1
 
-    .line 172
+    .line 189
     :try_start_2
-    iget-object v2, p0, Lcom/google/common/io/FileBackedOutputStream;->memory:Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
+    iget-object v3, p0, Lcom/google/common/io/FileBackedOutputStream;->memory:Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
 
-    if-nez v2, :cond_3
+    if-nez v3, :cond_3
 
-    .line 173
-    new-instance v2, Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
+    .line 190
+    new-instance v3, Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
 
-    invoke-direct {v2, v0}, Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;-><init>(Lcom/google/common/io/FileBackedOutputStream$1;)V
+    invoke-direct {v3, v2}, Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;-><init>(Lcom/google/common/io/FileBackedOutputStream$1;)V
 
-    iput-object v2, p0, Lcom/google/common/io/FileBackedOutputStream;->memory:Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
+    iput-object v3, p0, Lcom/google/common/io/FileBackedOutputStream;->memory:Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
 
     goto :goto_2
 
-    .line 175
+    .line 192
     :cond_3
-    iget-object v2, p0, Lcom/google/common/io/FileBackedOutputStream;->memory:Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
+    iget-object v3, p0, Lcom/google/common/io/FileBackedOutputStream;->memory:Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
 
-    invoke-virtual {v2}, Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;->reset()V
+    invoke-virtual {v3}, Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;->reset()V
 
-    .line 177
+    .line 194
     :goto_2
-    iget-object v2, p0, Lcom/google/common/io/FileBackedOutputStream;->memory:Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
+    iget-object v3, p0, Lcom/google/common/io/FileBackedOutputStream;->memory:Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;
 
-    iput-object v2, p0, Lcom/google/common/io/FileBackedOutputStream;->out:Ljava/io/OutputStream;
+    iput-object v3, p0, Lcom/google/common/io/FileBackedOutputStream;->out:Ljava/io/OutputStream;
 
-    .line 178
-    iget-object v2, p0, Lcom/google/common/io/FileBackedOutputStream;->file:Ljava/io/File;
+    .line 195
+    iget-object v3, p0, Lcom/google/common/io/FileBackedOutputStream;->file:Ljava/io/File;
 
-    if-eqz v2, :cond_4
+    if-eqz v3, :cond_4
 
-    .line 180
-    iput-object v0, p0, Lcom/google/common/io/FileBackedOutputStream;->file:Ljava/io/File;
+    .line 197
+    iput-object v2, p0, Lcom/google/common/io/FileBackedOutputStream;->file:Ljava/io/File;
 
-    .line 181
-    invoke-virtual {v2}, Ljava/io/File;->delete()Z
-
-    move-result v0
-
-    if-nez v0, :cond_4
-
-    .line 182
-    new-instance v0, Ljava/io/IOException;
-
-    invoke-static {v2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/String;->length()I
+    .line 198
+    invoke-virtual {v3}, Ljava/io/File;->delete()Z
 
     move-result v2
 
-    add-int/lit8 v2, v2, 0x12
+    if-nez v2, :cond_4
 
-    new-instance v3, Ljava/lang/StringBuilder;
+    .line 199
+    new-instance v1, Ljava/io/IOException;
 
-    invoke-direct {v3, v2}, Ljava/lang/StringBuilder;-><init>(I)V
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    const-string v2, "Could not delete: "
+    invoke-direct {v2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v2
+    move-result-object v0
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-direct {v1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
-    move-result-object v1
+    throw v1
 
-    invoke-direct {v0, v1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    .line 185
+    .line 202
     :cond_4
     throw v1
     :try_end_2
@@ -581,6 +590,15 @@
 
 .method public declared-synchronized write(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "b"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -591,18 +609,18 @@
 
     const/4 v0, 0x1
 
-    .line 190
+    .line 207
     :try_start_0
     invoke-direct {p0, v0}, Lcom/google/common/io/FileBackedOutputStream;->update(I)V
 
-    .line 191
+    .line 208
     iget-object v0, p0, Lcom/google/common/io/FileBackedOutputStream;->out:Ljava/io/OutputStream;
 
     invoke-virtual {v0, p1}, Ljava/io/OutputStream;->write(I)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 192
+    .line 209
     monitor-exit p0
 
     return-void
@@ -617,6 +635,15 @@
 
 .method public declared-synchronized write([B)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "b"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -625,7 +652,7 @@
 
     monitor-enter p0
 
-    .line 196
+    .line 213
     :try_start_0
     array-length v0, p1
 
@@ -635,7 +662,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 197
+    .line 214
     monitor-exit p0
 
     return-void
@@ -650,6 +677,19 @@
 
 .method public declared-synchronized write([BII)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "b",
+            "off",
+            "len"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -658,18 +698,18 @@
 
     monitor-enter p0
 
-    .line 201
+    .line 218
     :try_start_0
     invoke-direct {p0, p3}, Lcom/google/common/io/FileBackedOutputStream;->update(I)V
 
-    .line 202
+    .line 219
     iget-object v0, p0, Lcom/google/common/io/FileBackedOutputStream;->out:Ljava/io/OutputStream;
 
     invoke-virtual {v0, p1, p2, p3}, Ljava/io/OutputStream;->write([BII)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 203
+    .line 220
     monitor-exit p0
 
     return-void

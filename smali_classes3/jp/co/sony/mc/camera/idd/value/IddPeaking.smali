@@ -53,7 +53,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 435
+    .line 449
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingBooleanValue;
 
     const/4 v0, 0x0

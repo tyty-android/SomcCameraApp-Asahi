@@ -1,4 +1,4 @@
-.class Lcom/google/common/collect/Synchronized$SynchronizedMultiset;
+.class final Lcom/google/common/collect/Synchronized$SynchronizedMultiset;
 .super Lcom/google/common/collect/Synchronized$SynchronizedCollection;
 .source "Synchronized.java"
 
@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0xa
+    accessFlags = 0x18
     name = "SynchronizedMultiset"
 .end annotation
 
@@ -42,7 +42,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -55,7 +55,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -64,9 +64,20 @@
 .method constructor <init>(Lcom/google/common/collect/Multiset;Ljava/lang/Object;)V
     .locals 1
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "delegate",
+            "mutex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -79,7 +90,7 @@
 
     const/4 v0, 0x0
 
-    .line 427
+    .line 451
     invoke-direct {p0, p1, p2, v0}, Lcom/google/common/collect/Synchronized$SynchronizedCollection;-><init>(Ljava/util/Collection;Ljava/lang/Object;Lcom/google/common/collect/Synchronized$1;)V
 
     return-void
@@ -89,18 +100,33 @@
 # virtual methods
 .method public add(Ljava/lang/Object;I)I
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "e",
+            "n"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;I)I"
         }
     .end annotation
 
-    .line 444
+    .line 468
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 445
+    .line 469
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;->delegate()Lcom/google/common/collect/Multiset;
 
@@ -117,7 +143,7 @@
     :catchall_0
     move-exception p0
 
-    .line 446
+    .line 470
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -127,13 +153,25 @@
 
 .method public count(Ljava/lang/Object;)I
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 437
+    .line 461
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 438
+    .line 462
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;->delegate()Lcom/google/common/collect/Multiset;
 
@@ -150,7 +188,7 @@
     :catchall_0
     move-exception p0
 
-    .line 439
+    .line 463
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -168,7 +206,7 @@
         }
     .end annotation
 
-    .line 432
+    .line 456
     invoke-super {p0}, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->delegate()Ljava/util/Collection;
 
     move-result-object p0
@@ -181,7 +219,7 @@
 .method bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 421
+    .line 445
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;->delegate()Lcom/google/common/collect/Multiset;
 
     move-result-object p0
@@ -192,7 +230,7 @@
 .method bridge synthetic delegate()Ljava/util/Collection;
     .locals 0
 
-    .line 421
+    .line 445
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;->delegate()Lcom/google/common/collect/Multiset;
 
     move-result-object p0
@@ -210,18 +248,18 @@
         }
     .end annotation
 
-    .line 472
+    .line 496
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 473
+    .line 497
     :try_start_0
     iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;->elementSet:Ljava/util/Set;
 
     if-nez v1, :cond_0
 
-    .line 474
+    .line 498
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;->delegate()Lcom/google/common/collect/Multiset;
 
     move-result-object v1
@@ -238,7 +276,7 @@
 
     iput-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;->elementSet:Ljava/util/Set;
 
-    .line 476
+    .line 500
     :cond_0
     iget-object p0, p0, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;->elementSet:Ljava/util/Set;
 
@@ -249,7 +287,7 @@
     :catchall_0
     move-exception p0
 
-    .line 477
+    .line 501
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -268,18 +306,18 @@
         }
     .end annotation
 
-    .line 482
+    .line 506
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 483
+    .line 507
     :try_start_0
     iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;->entrySet:Ljava/util/Set;
 
     if-nez v1, :cond_0
 
-    .line 484
+    .line 508
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;->delegate()Lcom/google/common/collect/Multiset;
 
     move-result-object v1
@@ -296,7 +334,7 @@
 
     iput-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;->entrySet:Ljava/util/Set;
 
-    .line 486
+    .line 510
     :cond_0
     iget-object p0, p0, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;->entrySet:Ljava/util/Set;
 
@@ -307,7 +345,7 @@
     :catchall_0
     move-exception p0
 
-    .line 487
+    .line 511
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -317,6 +355,18 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
     if-ne p1, p0, :cond_0
 
@@ -324,13 +374,13 @@
 
     return p0
 
-    .line 495
+    .line 519
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 496
+    .line 520
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;->delegate()Lcom/google/common/collect/Multiset;
 
@@ -347,7 +397,7 @@
     :catchall_0
     move-exception p0
 
-    .line 497
+    .line 521
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -358,12 +408,12 @@
 .method public hashCode()I
     .locals 1
 
-    .line 502
+    .line 526
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 503
+    .line 527
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;->delegate()Lcom/google/common/collect/Multiset;
 
@@ -380,7 +430,7 @@
     :catchall_0
     move-exception p0
 
-    .line 504
+    .line 528
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -390,13 +440,27 @@
 
 .method public remove(Ljava/lang/Object;I)I
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "o",
+            "n"
+        }
+    .end annotation
 
-    .line 451
+    .line 475
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 452
+    .line 476
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;->delegate()Lcom/google/common/collect/Multiset;
 
@@ -413,7 +477,7 @@
     :catchall_0
     move-exception p0
 
-    .line 453
+    .line 477
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -423,18 +487,33 @@
 
 .method public setCount(Ljava/lang/Object;I)I
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "element",
+            "count"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;I)I"
         }
     .end annotation
 
-    .line 458
+    .line 482
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 459
+    .line 483
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;->delegate()Lcom/google/common/collect/Multiset;
 
@@ -451,7 +530,7 @@
     :catchall_0
     move-exception p0
 
-    .line 460
+    .line 484
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -461,18 +540,35 @@
 
 .method public setCount(Ljava/lang/Object;II)Z
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "element",
+            "oldCount",
+            "newCount"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;II)Z"
         }
     .end annotation
 
-    .line 465
+    .line 489
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 466
+    .line 490
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;->delegate()Lcom/google/common/collect/Multiset;
 
@@ -489,7 +585,7 @@
     :catchall_0
     move-exception p0
 
-    .line 467
+    .line 491
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

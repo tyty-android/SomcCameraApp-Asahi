@@ -22,7 +22,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 646
+    .line 664
     new-instance v0, Lcom/google/common/io/ByteSource$EmptyByteSource;
 
     invoke-direct {v0}, Lcom/google/common/io/ByteSource$EmptyByteSource;-><init>()V
@@ -37,7 +37,7 @@
 
     const/4 v0, 0x0
 
-    .line 649
+    .line 667
     new-array v0, v0, [B
 
     invoke-direct {p0, v0}, Lcom/google/common/io/ByteSource$ByteArrayByteSource;-><init>([B)V
@@ -49,11 +49,19 @@
 # virtual methods
 .method public asCharSource(Ljava/nio/charset/Charset;)Lcom/google/common/io/CharSource;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "charset"
+        }
+    .end annotation
 
-    .line 654
+    .line 672
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 655
+    .line 673
     invoke-static {}, Lcom/google/common/io/CharSource;->empty()Lcom/google/common/io/CharSource;
 
     move-result-object p0
@@ -64,7 +72,7 @@
 .method public read()[B
     .locals 0
 
-    .line 660
+    .line 678
     iget-object p0, p0, Lcom/google/common/io/ByteSource$EmptyByteSource;->bytes:[B
 
     return-object p0
@@ -73,7 +81,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 665
+    .line 683
     const-string p0, "ByteSource.empty()"
 
     return-object p0

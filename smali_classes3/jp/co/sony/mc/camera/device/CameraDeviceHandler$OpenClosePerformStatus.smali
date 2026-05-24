@@ -36,7 +36,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;
     .locals 3
 
-    .line 621
+    .line 673
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;->NONE:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;
 
     sget-object v1, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;->CAMERA_OPENED:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;
@@ -53,7 +53,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 622
+    .line 674
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;
 
     const-string v1, "NONE"
@@ -64,7 +64,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;->NONE:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;
 
-    .line 623
+    .line 675
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;
 
     const-string v1, "CAMERA_OPENED"
@@ -75,7 +75,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;->CAMERA_OPENED:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;
 
-    .line 624
+    .line 676
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;
 
     const-string v1, "CAMERA_CLOSED"
@@ -86,7 +86,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;->CAMERA_CLOSED:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;
 
-    .line 621
+    .line 673
     invoke-static {}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;->$values()[Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;
 
     move-result-object v0
@@ -98,13 +98,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 621
+    .line 673
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -112,8 +123,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 621
+    .line 673
     const-class v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -128,7 +147,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;
     .locals 1
 
-    .line 621
+    .line 673
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;->$VALUES:[Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;->clone()Ljava/lang/Object;

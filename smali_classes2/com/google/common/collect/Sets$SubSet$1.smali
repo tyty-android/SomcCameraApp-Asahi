@@ -39,13 +39,21 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/Sets$SubSet;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 1433
+    .line 1567
     iput-object p1, p0, Lcom/google/common/collect/Sets$SubSet$1;->this$0:Lcom/google/common/collect/Sets$SubSet;
 
     invoke-direct {p0}, Lcom/google/common/collect/UnmodifiableIterator;-><init>()V
 
-    .line 1434
+    .line 1568
     invoke-static {p1}, Lcom/google/common/collect/Sets$SubSet;->access$100(Lcom/google/common/collect/Sets$SubSet;)Lcom/google/common/collect/ImmutableMap;
 
     move-result-object v0
@@ -60,7 +68,7 @@
 
     iput-object v0, p0, Lcom/google/common/collect/Sets$SubSet$1;->elements:Lcom/google/common/collect/ImmutableList;
 
-    .line 1435
+    .line 1569
     invoke-static {p1}, Lcom/google/common/collect/Sets$SubSet;->access$200(Lcom/google/common/collect/Sets$SubSet;)I
 
     move-result p1
@@ -75,7 +83,7 @@
 .method public hasNext()Z
     .locals 0
 
-    .line 1439
+    .line 1573
     iget p0, p0, Lcom/google/common/collect/Sets$SubSet$1;->remainingSetBits:I
 
     if-eqz p0, :cond_0
@@ -99,7 +107,7 @@
         }
     .end annotation
 
-    .line 1444
+    .line 1578
     iget v0, p0, Lcom/google/common/collect/Sets$SubSet$1;->remainingSetBits:I
 
     invoke-static {v0}, Ljava/lang/Integer;->numberOfTrailingZeros(I)I
@@ -110,7 +118,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 1448
+    .line 1582
     iget v1, p0, Lcom/google/common/collect/Sets$SubSet$1;->remainingSetBits:I
 
     const/4 v2, 0x1
@@ -123,7 +131,7 @@
 
     iput v1, p0, Lcom/google/common/collect/Sets$SubSet$1;->remainingSetBits:I
 
-    .line 1449
+    .line 1583
     iget-object p0, p0, Lcom/google/common/collect/Sets$SubSet$1;->elements:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {p0, v0}, Lcom/google/common/collect/ImmutableList;->get(I)Ljava/lang/Object;
@@ -132,7 +140,7 @@
 
     return-object p0
 
-    .line 1446
+    .line 1580
     :cond_0
     new-instance p0, Ljava/util/NoSuchElementException;
 

@@ -21,6 +21,14 @@
 # direct methods
 .method protected constructor <init>(Ljp/co/sony/mc/camera/view/GestureShutter;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 288
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/GestureShutter$StateStandBy;->this$0:Ljp/co/sony/mc/camera/view/GestureShutter;
@@ -63,6 +71,14 @@
 
 .method handleDetectResult(Ljp/co/sony/mc/camera/CameraStatusNotifier$HandDetectionResult;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 
     .line 300
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/GestureShutter$StateStandBy;->this$0:Ljp/co/sony/mc/camera/view/GestureShutter;

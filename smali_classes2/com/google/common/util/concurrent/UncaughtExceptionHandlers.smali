@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/util/concurrent/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/util/concurrent/UncaughtExceptionHandlers$Exiter;
@@ -15,7 +18,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 33
+    .line 35
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -24,7 +27,7 @@
 .method public static systemExit()Ljava/lang/Thread$UncaughtExceptionHandler;
     .locals 2
 
-    .line 52
+    .line 54
     new-instance v0, Lcom/google/common/util/concurrent/UncaughtExceptionHandlers$Exiter;
 
     invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;

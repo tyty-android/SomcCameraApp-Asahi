@@ -177,14 +177,14 @@
 
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
-    .line 399
+    .line 290
     iget v0, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$updateActiveArrayRectByObjectTrackingOrFaceRect$3;->label:I
 
     if-nez v0, :cond_0
 
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 400
+    .line 291
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$updateActiveArrayRectByObjectTrackingOrFaceRect$3;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$getCameraStatusModel$p(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
@@ -215,7 +215,7 @@
 
     return-object p0
 
-    .line 399
+    .line 290
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 

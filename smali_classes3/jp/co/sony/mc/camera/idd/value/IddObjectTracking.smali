@@ -73,7 +73,7 @@
 .method public constructor <init>(ZZ)V
     .locals 0
 
-    .line 126
+    .line 185
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/idd/value/IddObjectTracking;->enabled:Z
@@ -101,7 +101,7 @@
 
     move p2, v0
 
-    .line 126
+    .line 185
     :cond_1
     invoke-direct {p0, p1, p2}, Ljp/co/sony/mc/camera/idd/value/IddObjectTracking;-><init>(ZZ)V
 
@@ -113,7 +113,7 @@
 .method public final getEnabled()Z
     .locals 0
 
-    .line 126
+    .line 185
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/idd/value/IddObjectTracking;->enabled:Z
 
     return p0
@@ -122,7 +122,7 @@
 .method public final getTracking()Z
     .locals 0
 
-    .line 126
+    .line 185
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/idd/value/IddObjectTracking;->tracking:Z
 
     return p0
@@ -131,7 +131,7 @@
 .method public final setEnabled(Z)V
     .locals 0
 
-    .line 126
+    .line 185
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/idd/value/IddObjectTracking;->enabled:Z
 
     return-void
@@ -140,7 +140,7 @@
 .method public final setTracking(Z)V
     .locals 0
 
-    .line 126
+    .line 185
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/idd/value/IddObjectTracking;->tracking:Z
 
     return-void
@@ -149,7 +149,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 128
+    .line 187
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/idd/value/IddObjectTracking;->enabled:Z
 
     if-nez v0, :cond_0
@@ -158,7 +158,7 @@
 
     goto :goto_0
 
-    .line 129
+    .line 188
     :cond_0
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/idd/value/IddObjectTracking;->tracking:Z
 
@@ -168,7 +168,7 @@
 
     goto :goto_0
 
-    .line 130
+    .line 189
     :cond_1
     const-string p0, "OBJECT_TRACKING_TARGET_OFF"
 

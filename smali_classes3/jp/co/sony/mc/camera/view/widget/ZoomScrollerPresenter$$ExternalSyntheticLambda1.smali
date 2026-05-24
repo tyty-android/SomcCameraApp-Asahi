@@ -30,9 +30,9 @@
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
-    check-cast p1, Ljava/lang/Boolean;
+    check-cast p1, Ljava/lang/Integer;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->$r8$lambda$1tLL2Eh0O0SYIiA2xiazxoy4qsE(Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;Ljava/lang/Boolean;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->$r8$lambda$O8EeylsaiuY7MqayXtb9tAN_bpY(Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;Ljava/lang/Integer;)Lkotlin/Unit;
 
     move-result-object p0
 

@@ -21,6 +21,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/OrientationService;Landroid/content/Context;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "context"
+        }
+    .end annotation
 
     .line 382
     iput-object p1, p0, Ljp/co/sony/mc/camera/OrientationService$ExtendedOrientationEventListener;->this$0:Ljp/co/sony/mc/camera/OrientationService;
@@ -35,6 +45,14 @@
 # virtual methods
 .method public onOrientationChanged(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "orientation"
+        }
+    .end annotation
 
     const/4 v0, -0x1
 

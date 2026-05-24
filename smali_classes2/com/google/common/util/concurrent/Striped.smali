@@ -4,13 +4,16 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/util/concurrent/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lcom/google/common/util/concurrent/Striped$CompactStriped;,
+        Lcom/google/common/util/concurrent/Striped$SmallLazyStriped;,
+        Lcom/google/common/util/concurrent/Striped$LargeLazyStriped;,
         Lcom/google/common/util/concurrent/Striped$PaddedSemaphore;,
         Lcom/google/common/util/concurrent/Striped$PaddedLock;,
-        Lcom/google/common/util/concurrent/Striped$LargeLazyStriped;,
-        Lcom/google/common/util/concurrent/Striped$SmallLazyStriped;,
-        Lcom/google/common/util/concurrent/Striped$CompactStriped;,
         Lcom/google/common/util/concurrent/Striped$PowerOfTwoStriped;,
         Lcom/google/common/util/concurrent/Striped$WeakSafeCondition;,
         Lcom/google/common/util/concurrent/Striped$WeakSafeLock;,
@@ -33,52 +36,22 @@
 
 .field private static final LARGE_LAZY_CUTOFF:I = 0x400
 
-.field private static final READ_WRITE_LOCK_SUPPLIER:Lcom/google/common/base/Supplier;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/google/common/base/Supplier<",
-            "Ljava/util/concurrent/locks/ReadWriteLock;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private static final WEAK_SAFE_READ_WRITE_LOCK_SUPPLIER:Lcom/google/common/base/Supplier;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/google/common/base/Supplier<",
-            "Ljava/util/concurrent/locks/ReadWriteLock;",
-            ">;"
-        }
-    .end annotation
-.end field
-
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static synthetic $r8$lambda$f7AdVx1gLibS3hZPmjW1JxvV_us()Ljava/util/concurrent/locks/ReentrantReadWriteLock;
     .locals 1
 
-    .line 300
-    new-instance v0, Lcom/google/common/util/concurrent/Striped$5;
+    new-instance v0, Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
-    invoke-direct {v0}, Lcom/google/common/util/concurrent/Striped$5;-><init>()V
+    invoke-direct {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;-><init>()V
 
-    sput-object v0, Lcom/google/common/util/concurrent/Striped;->READ_WRITE_LOCK_SUPPLIER:Lcom/google/common/base/Supplier;
-
-    .line 308
-    new-instance v0, Lcom/google/common/util/concurrent/Striped$6;
-
-    invoke-direct {v0}, Lcom/google/common/util/concurrent/Striped$6;-><init>()V
-
-    sput-object v0, Lcom/google/common/util/concurrent/Striped;->WEAK_SAFE_READ_WRITE_LOCK_SUPPLIER:Lcom/google/common/base/Supplier;
-
-    return-void
+    return-object v0
 .end method
 
 .method private constructor <init>()V
     .locals 0
 
-    .line 93
+    .line 96
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -87,7 +60,7 @@
 .method synthetic constructor <init>(Lcom/google/common/util/concurrent/Striped$1;)V
     .locals 0
 
-    .line 85
+    .line 88
     invoke-direct {p0}, Lcom/google/common/util/concurrent/Striped;-><init>()V
 
     return-void
@@ -96,7 +69,7 @@
 .method static synthetic access$200(I)I
     .locals 0
 
-    .line 85
+    .line 88
     invoke-static {p0}, Lcom/google/common/util/concurrent/Striped;->ceilToPowerOfTwo(I)I
 
     move-result p0
@@ -107,7 +80,7 @@
 .method static synthetic access$300(I)I
     .locals 0
 
-    .line 85
+    .line 88
     invoke-static {p0}, Lcom/google/common/util/concurrent/Striped;->smear(I)I
 
     move-result p0
@@ -117,8 +90,16 @@
 
 .method private static ceilToPowerOfTwo(I)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "x"
+        }
+    .end annotation
 
-    .line 545
+    .line 511
     sget-object v0, Ljava/math/RoundingMode;->CEILING:Ljava/math/RoundingMode;
 
     invoke-static {p0, v0}, Lcom/google/common/math/IntMath;->log2(ILjava/math/RoundingMode;)I
@@ -134,6 +115,17 @@
 
 .method static custom(ILcom/google/common/base/Supplier;)Lcom/google/common/util/concurrent/Striped;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "stripes",
+            "supplier"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<",
@@ -150,7 +142,7 @@
         }
     .end annotation
 
-    .line 195
+    .line 198
     new-instance v0, Lcom/google/common/util/concurrent/Striped$CompactStriped;
 
     const/4 v1, 0x0
@@ -160,8 +152,56 @@
     return-object v0
 .end method
 
-.method private static lazy(ILcom/google/common/base/Supplier;)Lcom/google/common/util/concurrent/Striped;
+.method static synthetic lambda$lazyWeakLock$0()Ljava/util/concurrent/locks/Lock;
+    .locals 2
+
+    .line 220
+    new-instance v0, Ljava/util/concurrent/locks/ReentrantLock;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Ljava/util/concurrent/locks/ReentrantLock;-><init>(Z)V
+
+    return-object v0
+.end method
+
+.method static synthetic lambda$lazyWeakSemaphore$2(I)Ljava/util/concurrent/Semaphore;
+    .locals 2
+
+    .line 258
+    new-instance v0, Ljava/util/concurrent/Semaphore;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p0, v1}, Ljava/util/concurrent/Semaphore;-><init>(IZ)V
+
+    return-object v0
+.end method
+
+.method static synthetic lambda$semaphore$1(I)Ljava/util/concurrent/Semaphore;
     .locals 1
+
+    .line 246
+    new-instance v0, Lcom/google/common/util/concurrent/Striped$PaddedSemaphore;
+
+    invoke-direct {v0, p0}, Lcom/google/common/util/concurrent/Striped$PaddedSemaphore;-><init>(I)V
+
+    return-object v0
+.end method
+
+.method static lazyWeakCustom(ILcom/google/common/base/Supplier;)Lcom/google/common/util/concurrent/Striped;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "stripes",
+            "supplier"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<",
@@ -182,14 +222,14 @@
 
     if-ge p0, v0, :cond_0
 
-    .line 236
+    .line 233
     new-instance v0, Lcom/google/common/util/concurrent/Striped$SmallLazyStriped;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/util/concurrent/Striped$SmallLazyStriped;-><init>(ILcom/google/common/base/Supplier;)V
 
     goto :goto_0
 
-    .line 237
+    .line 234
     :cond_0
     new-instance v0, Lcom/google/common/util/concurrent/Striped$LargeLazyStriped;
 
@@ -201,6 +241,15 @@
 
 .method public static lazyWeakLock(I)Lcom/google/common/util/concurrent/Striped;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stripes"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -210,12 +259,12 @@
         }
     .end annotation
 
-    .line 224
-    new-instance v0, Lcom/google/common/util/concurrent/Striped$2;
+    .line 220
+    new-instance v0, Lcom/google/common/util/concurrent/Striped$$ExternalSyntheticLambda4;
 
-    invoke-direct {v0}, Lcom/google/common/util/concurrent/Striped$2;-><init>()V
+    invoke-direct {v0}, Lcom/google/common/util/concurrent/Striped$$ExternalSyntheticLambda4;-><init>()V
 
-    invoke-static {p0, v0}, Lcom/google/common/util/concurrent/Striped;->lazy(ILcom/google/common/base/Supplier;)Lcom/google/common/util/concurrent/Striped;
+    invoke-static {p0, v0}, Lcom/google/common/util/concurrent/Striped;->lazyWeakCustom(ILcom/google/common/base/Supplier;)Lcom/google/common/util/concurrent/Striped;
 
     move-result-object p0
 
@@ -224,6 +273,15 @@
 
 .method public static lazyWeakReadWriteLock(I)Lcom/google/common/util/concurrent/Striped;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stripes"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -233,10 +291,12 @@
         }
     .end annotation
 
-    .line 297
-    sget-object v0, Lcom/google/common/util/concurrent/Striped;->WEAK_SAFE_READ_WRITE_LOCK_SUPPLIER:Lcom/google/common/base/Supplier;
+    .line 280
+    new-instance v0, Lcom/google/common/util/concurrent/Striped$$ExternalSyntheticLambda0;
 
-    invoke-static {p0, v0}, Lcom/google/common/util/concurrent/Striped;->lazy(ILcom/google/common/base/Supplier;)Lcom/google/common/util/concurrent/Striped;
+    invoke-direct {v0}, Lcom/google/common/util/concurrent/Striped$$ExternalSyntheticLambda0;-><init>()V
+
+    invoke-static {p0, v0}, Lcom/google/common/util/concurrent/Striped;->lazyWeakCustom(ILcom/google/common/base/Supplier;)Lcom/google/common/util/concurrent/Striped;
 
     move-result-object p0
 
@@ -245,6 +305,17 @@
 
 .method public static lazyWeakSemaphore(II)Lcom/google/common/util/concurrent/Striped;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "stripes",
+            "permits"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -254,12 +325,12 @@
         }
     .end annotation
 
-    .line 268
-    new-instance v0, Lcom/google/common/util/concurrent/Striped$4;
+    .line 258
+    new-instance v0, Lcom/google/common/util/concurrent/Striped$$ExternalSyntheticLambda3;
 
-    invoke-direct {v0, p1}, Lcom/google/common/util/concurrent/Striped$4;-><init>(I)V
+    invoke-direct {v0, p1}, Lcom/google/common/util/concurrent/Striped$$ExternalSyntheticLambda3;-><init>(I)V
 
-    invoke-static {p0, v0}, Lcom/google/common/util/concurrent/Striped;->lazy(ILcom/google/common/base/Supplier;)Lcom/google/common/util/concurrent/Striped;
+    invoke-static {p0, v0}, Lcom/google/common/util/concurrent/Striped;->lazyWeakCustom(ILcom/google/common/base/Supplier;)Lcom/google/common/util/concurrent/Striped;
 
     move-result-object p0
 
@@ -268,6 +339,15 @@
 
 .method public static lock(I)Lcom/google/common/util/concurrent/Striped;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stripes"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -277,10 +357,10 @@
         }
     .end annotation
 
-    .line 206
-    new-instance v0, Lcom/google/common/util/concurrent/Striped$1;
+    .line 209
+    new-instance v0, Lcom/google/common/util/concurrent/Striped$$ExternalSyntheticLambda1;
 
-    invoke-direct {v0}, Lcom/google/common/util/concurrent/Striped$1;-><init>()V
+    invoke-direct {v0}, Lcom/google/common/util/concurrent/Striped$$ExternalSyntheticLambda1;-><init>()V
 
     invoke-static {p0, v0}, Lcom/google/common/util/concurrent/Striped;->custom(ILcom/google/common/base/Supplier;)Lcom/google/common/util/concurrent/Striped;
 
@@ -291,6 +371,15 @@
 
 .method public static readWriteLock(I)Lcom/google/common/util/concurrent/Striped;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stripes"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -300,8 +389,10 @@
         }
     .end annotation
 
-    .line 286
-    sget-object v0, Lcom/google/common/util/concurrent/Striped;->READ_WRITE_LOCK_SUPPLIER:Lcom/google/common/base/Supplier;
+    .line 269
+    new-instance v0, Lcom/google/common/util/concurrent/Striped$$ExternalSyntheticLambda5;
+
+    invoke-direct {v0}, Lcom/google/common/util/concurrent/Striped$$ExternalSyntheticLambda5;-><init>()V
 
     invoke-static {p0, v0}, Lcom/google/common/util/concurrent/Striped;->custom(ILcom/google/common/base/Supplier;)Lcom/google/common/util/concurrent/Striped;
 
@@ -312,6 +403,17 @@
 
 .method public static semaphore(II)Lcom/google/common/util/concurrent/Striped;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "stripes",
+            "permits"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -321,10 +423,10 @@
         }
     .end annotation
 
-    .line 249
-    new-instance v0, Lcom/google/common/util/concurrent/Striped$3;
+    .line 246
+    new-instance v0, Lcom/google/common/util/concurrent/Striped$$ExternalSyntheticLambda2;
 
-    invoke-direct {v0, p1}, Lcom/google/common/util/concurrent/Striped$3;-><init>(I)V
+    invoke-direct {v0, p1}, Lcom/google/common/util/concurrent/Striped$$ExternalSyntheticLambda2;-><init>(I)V
 
     invoke-static {p0, v0}, Lcom/google/common/util/concurrent/Striped;->custom(ILcom/google/common/base/Supplier;)Lcom/google/common/util/concurrent/Striped;
 
@@ -335,6 +437,14 @@
 
 .method private static smear(I)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "hashCode"
+        }
+    .end annotation
 
     ushr-int/lit8 v0, p0, 0x14
 
@@ -359,11 +469,22 @@
 # virtual methods
 .method public bulkGet(Ljava/lang/Iterable;)Ljava/lang/Iterable;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "keys"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/Iterable<",
-            "*>;)",
+            "+",
+            "Ljava/lang/Object;",
+            ">;)",
             "Ljava/lang/Iterable<",
             "T",
             "L;",
@@ -371,28 +492,30 @@
         }
     .end annotation
 
-    .line 141
-    const-class v0, Ljava/lang/Object;
-
-    invoke-static {p1, v0}, Lcom/google/common/collect/Iterables;->toArray(Ljava/lang/Iterable;Ljava/lang/Class;)[Ljava/lang/Object;
+    .line 144
+    invoke-static {p1}, Lcom/google/common/collect/Lists;->newArrayList(Ljava/lang/Iterable;)Ljava/util/ArrayList;
 
     move-result-object p1
 
-    .line 142
-    array-length v0, p1
+    .line 145
+    invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
 
-    if-nez v0, :cond_0
+    move-result v0
 
-    .line 143
+    if-eqz v0, :cond_0
+
+    .line 146
     invoke-static {}, Lcom/google/common/collect/ImmutableList;->of()Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
 
     return-object p0
 
-    .line 145
+    .line 148
     :cond_0
-    array-length v0, p1
+    invoke-interface {p1}, Ljava/util/List;->size()I
+
+    move-result v0
 
     new-array v0, v0, [I
 
@@ -400,14 +523,18 @@
 
     move v2, v1
 
-    .line 146
+    .line 149
     :goto_0
-    array-length v3, p1
+    invoke-interface {p1}, Ljava/util/List;->size()I
+
+    move-result v3
 
     if-ge v2, v3, :cond_1
 
-    .line 147
-    aget-object v3, p1, v2
+    .line 150
+    invoke-interface {p1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
 
     invoke-virtual {p0, v3}, Lcom/google/common/util/concurrent/Striped;->indexFor(Ljava/lang/Object;)I
 
@@ -419,49 +546,53 @@
 
     goto :goto_0
 
-    .line 149
+    .line 152
     :cond_1
     invoke-static {v0}, Ljava/util/Arrays;->sort([I)V
 
-    .line 151
+    .line 154
     aget v2, v0, v1
 
-    .line 152
+    .line 155
     invoke-virtual {p0, v2}, Lcom/google/common/util/concurrent/Striped;->getAt(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    aput-object v3, p1, v1
+    invoke-interface {p1, v1, v3}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
     const/4 v1, 0x1
 
-    .line 153
+    .line 156
     :goto_1
-    array-length v3, p1
+    invoke-interface {p1}, Ljava/util/List;->size()I
+
+    move-result v3
 
     if-ge v1, v3, :cond_3
 
-    .line 154
+    .line 157
     aget v3, v0, v1
 
     if-ne v3, v2, :cond_2
 
     add-int/lit8 v3, v1, -0x1
 
-    .line 156
-    aget-object v3, p1, v3
+    .line 159
+    invoke-interface {p1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    aput-object v3, p1, v1
+    move-result-object v3
+
+    invoke-interface {p1, v1, v3}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_2
 
-    .line 158
+    .line 161
     :cond_2
     invoke-virtual {p0, v3}, Lcom/google/common/util/concurrent/Striped;->getAt(I)Ljava/lang/Object;
 
     move-result-object v2
 
-    aput-object v2, p1, v1
+    invoke-interface {p1, v1, v2}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
     move v2, v3
 
@@ -470,14 +601,9 @@
 
     goto :goto_1
 
-    .line 180
+    .line 184
     :cond_3
-    invoke-static {p1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object p0
-
-    .line 181
-    invoke-static {p0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    invoke-static {p1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p0
 
@@ -485,6 +611,15 @@
 .end method
 
 .method public abstract get(Ljava/lang/Object;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -496,6 +631,15 @@
 .end method
 
 .method public abstract getAt(I)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)T",
@@ -505,6 +649,14 @@
 .end method
 
 .method abstract indexFor(Ljava/lang/Object;)I
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 .end method
 
 .method public abstract size()I

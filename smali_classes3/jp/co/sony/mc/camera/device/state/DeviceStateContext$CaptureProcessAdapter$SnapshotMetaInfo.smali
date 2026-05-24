@@ -31,22 +31,38 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;Ljp/co/sony/mc/camera/device/SnapshotRequest;IZLandroid/hardware/camera2/CaptureResult;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$1",
+            "snapshotRequest",
+            "progress",
+            "afSuccess",
+            "captureResult"
+        }
+    .end annotation
 
-    .line 3815
+    .line 4208
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter$SnapshotMetaInfo;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3816
+    .line 4209
     iput-object p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter$SnapshotMetaInfo;->snapshotRequest:Ljp/co/sony/mc/camera/device/SnapshotRequest;
 
-    .line 3817
+    .line 4210
     iput p3, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter$SnapshotMetaInfo;->progress:I
 
-    .line 3818
+    .line 4211
     iput-boolean p4, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter$SnapshotMetaInfo;->isAfSuccess:Z
 
-    .line 3819
+    .line 4212
     iput-object p5, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter$SnapshotMetaInfo;->captureResult:Landroid/hardware/camera2/CaptureResult;
 
     return-void
@@ -56,13 +72,21 @@
 # virtual methods
 .method endOfCapture(I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "captureNum"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
-    .line 3827
+    .line 4220
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter$SnapshotMetaInfo;->isFinal:Z
 
-    .line 3828
+    .line 4221
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter$SnapshotMetaInfo;->snapshotRequest:Ljp/co/sony/mc/camera/device/SnapshotRequest;
 
     iget p0, p0, Ljp/co/sony/mc/camera/device/SnapshotRequest;->captureNum:I
@@ -81,7 +105,7 @@
 .method isBurst()Z
     .locals 1
 
-    .line 3823
+    .line 4216
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter$SnapshotMetaInfo;->snapshotRequest:Ljp/co/sony/mc/camera/device/SnapshotRequest;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/SnapshotRequest;->fileType:Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;

@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/recorder/utility/encoder/source/MutableAudioSampleDataSource;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 252
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/source/MutableAudioSampleDataSource$2;->this$0:Ljp/co/sony/mc/camera/recorder/utility/encoder/source/MutableAudioSampleDataSource;

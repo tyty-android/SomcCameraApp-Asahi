@@ -33,11 +33,19 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/Rect;)V
     .locals 0
-
-    .line 143
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "target"
+        }
+    .end annotation
 
     .line 144
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 145
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/PlatformDependencyResolver$OptimalPreviewSizeComparator;->mTarget:Landroid/graphics/Rect;
 
     return-void
@@ -47,8 +55,18 @@
 # virtual methods
 .method public compare(Landroid/graphics/Rect;Landroid/graphics/Rect;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "r1",
+            "r2"
+        }
+    .end annotation
 
-    .line 153
+    .line 154
     invoke-virtual {p1}, Landroid/graphics/Rect;->height()I
 
     move-result p1
@@ -65,7 +83,7 @@
 
     move-result p1
 
-    .line 154
+    .line 155
     invoke-virtual {p2}, Landroid/graphics/Rect;->height()I
 
     move-result p2
@@ -89,8 +107,18 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "r1",
+            "r2"
+        }
+    .end annotation
 
-    .line 140
+    .line 141
     check-cast p1, Landroid/graphics/Rect;
 
     check-cast p2, Landroid/graphics/Rect;

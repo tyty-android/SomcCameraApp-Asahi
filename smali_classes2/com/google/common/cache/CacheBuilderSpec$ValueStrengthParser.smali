@@ -24,11 +24,19 @@
 # direct methods
 .method public constructor <init>(Lcom/google/common/cache/LocalCache$Strength;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "strength"
+        }
+    .end annotation
 
-    .line 384
+    .line 397
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 385
+    .line 398
     iput-object p1, p0, Lcom/google/common/cache/CacheBuilderSpec$ValueStrengthParser;->strength:Lcom/google/common/cache/LocalCache$Strength;
 
     return-void
@@ -39,9 +47,21 @@
 .method public parse(Lcom/google/common/cache/CacheBuilderSpec;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
     .param p3    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "spec",
+            "key",
+            "value"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -56,13 +76,13 @@
     :cond_0
     move p3, v1
 
-    .line 390
+    .line 403
     :goto_0
     const-string v2, "key %s does not take values"
 
     invoke-static {p3, v2, p2}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;)V
 
-    .line 391
+    .line 404
     iget-object p3, p1, Lcom/google/common/cache/CacheBuilderSpec;->valueStrength:Lcom/google/common/cache/LocalCache$Strength;
 
     if-nez p3, :cond_1
@@ -79,7 +99,7 @@
 
     invoke-static {v0, p3, p2, v1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 394
+    .line 407
     iget-object p0, p0, Lcom/google/common/cache/CacheBuilderSpec$ValueStrengthParser;->strength:Lcom/google/common/cache/LocalCache$Strength;
 
     iput-object p0, p1, Lcom/google/common/cache/CacheBuilderSpec;->valueStrength:Lcom/google/common/cache/LocalCache$Strength;

@@ -1,3 +1,0 @@
-.class public final synthetic Ljp/co/sony/mc/camera/view/FragmentController$YouTubeLiveChatCallbackImpl-IA;
-.super Ljava/lang/Object;
-.source "D8$$SyntheticClass"

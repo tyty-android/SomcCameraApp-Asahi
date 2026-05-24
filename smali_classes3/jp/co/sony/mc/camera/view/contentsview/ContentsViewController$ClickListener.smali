@@ -24,8 +24,16 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 587
+    .line 612
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController$ClickListener;->this$0:Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -45,8 +53,16 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
-    .line 590
+    .line 615
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
@@ -75,7 +91,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 592
+    .line 617
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController$ClickListener;->this$0:Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;
 
@@ -87,16 +103,16 @@
 
     if-eqz p1, :cond_1
 
-    .line 593
+    .line 618
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result p1
 
-    const v0, 0x7f09013b
+    const v0, 0x7f09013a
 
     if-ne p1, v0, :cond_1
 
-    .line 594
+    .line 619
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController$ClickListener;->this$0:Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->-$$Nest$fgetmClickThumbnailProgressListener(Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;)Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController$OnClickThumbnailProgressListener;

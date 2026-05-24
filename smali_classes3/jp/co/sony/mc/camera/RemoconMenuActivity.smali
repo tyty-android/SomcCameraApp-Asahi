@@ -72,6 +72,16 @@
 
 .method private addActivityResultListener(ILjp/co/sony/mc/camera/OnActivityResultListener;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "requestCode",
+            "listener"
+        }
+    .end annotation
 
     .line 184
     iget-object v0, p0, Ljp/co/sony/mc/camera/RemoconMenuActivity;->mActivityResultListeners:Landroid/util/SparseArray;
@@ -121,6 +131,18 @@
 
 .method private notifyActivityResultListeners(IILandroid/content/Intent;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "requestCode",
+            "resultCode",
+            "data"
+        }
+    .end annotation
 
     .line 170
     iget-object v0, p0, Ljp/co/sony/mc/camera/RemoconMenuActivity;->mActivityResultListeners:Landroid/util/SparseArray;
@@ -171,6 +193,18 @@
 # virtual methods
 .method public checkAndRequestSelfPermissions(I[Ljava/lang/String;Ljp/co/sony/mc/camera/OnActivityResultListener;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "requestCode",
+            "permissions",
+            "listener"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -190,6 +224,18 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "requestCode",
+            "resultCode",
+            "data"
+        }
+    .end annotation
 
     .line 156
     invoke-super {p0, p1, p2, p3}, Landroidx/appcompat/app/AppCompatActivity;->onActivityResult(IILandroid/content/Intent;)V
@@ -252,6 +298,14 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "savedInstanceState"
+        }
+    .end annotation
 
     .line 53
     invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onCreate(Landroid/os/Bundle;)V
@@ -282,7 +336,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/Window;->requestFeature(I)Z
 
-    const v0, 0x7f0c0027
+    const v0, 0x7f0c0028
 
     .line 60
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/RemoconMenuActivity;->setContentView(I)V
@@ -312,7 +366,7 @@
 
     const-string v0, "remocon_menu_fragment"
 
-    const v1, 0x7f090136
+    const v1, 0x7f090135
 
     invoke-virtual {p0, v1, p1, v0}, Landroidx/fragment/app/FragmentTransaction;->add(ILandroidx/fragment/app/Fragment;Ljava/lang/String;)Landroidx/fragment/app/FragmentTransaction;
 
@@ -330,6 +384,16 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "keyCode",
+            "event"
+        }
+    .end annotation
 
     const/16 v0, 0x50
 
@@ -365,6 +429,16 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "keyCode",
+            "event"
+        }
+    .end annotation
 
     .line 128
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/KeyEventTranslator;->translateKeyCode(I)Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
@@ -393,6 +467,14 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "item"
+        }
+    .end annotation
 
     .line 96
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
@@ -473,6 +555,18 @@
 
 .method public onValueChanged(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;Ljp/co/sony/mc/camera/setting/SettingAppearance;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value",
+            "appearance"
+        }
+    .end annotation
 
     .line 212
     iget-object v0, p0, Ljp/co/sony/mc/camera/RemoconMenuActivity;->mDetailChangedListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
@@ -511,6 +605,14 @@
 
 .method public registerDetailChangedListener(Ljp/co/sony/mc/camera/RemoconMenuActivity$DetailChangedListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 197
     iget-object p0, p0, Ljp/co/sony/mc/camera/RemoconMenuActivity;->mDetailChangedListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
@@ -522,6 +624,18 @@
 
 .method public startActivityForResult(Landroid/content/Intent;ILjp/co/sony/mc/camera/OnActivityResultListener;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "intent",
+            "requestCode",
+            "listener"
+        }
+    .end annotation
 
     .line 162
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/RemoconMenuActivity;->addActivityResultListener(ILjp/co/sony/mc/camera/OnActivityResultListener;)Z
@@ -545,6 +659,14 @@
 
 .method public unregisterDetailChangedListener(Ljp/co/sony/mc/camera/RemoconMenuActivity$DetailChangedListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 201
     iget-object p0, p0, Ljp/co/sony/mc/camera/RemoconMenuActivity;->mDetailChangedListeners:Ljava/util/concurrent/CopyOnWriteArrayList;

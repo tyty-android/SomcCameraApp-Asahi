@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 774
+    .line 756
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$1;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,14 +46,14 @@
 .method public run()V
     .locals 5
 
-    .line 777
+    .line 759
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$1;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mStateLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 778
+    .line 760
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$1;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
@@ -65,35 +73,35 @@
 
     if-eqz v1, :cond_0
 
-    .line 779
+    .line 761
     const-string p0, "release() X already released on the other"
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->-$$Nest$smtrace(Ljava/lang/String;)V
 
-    .line 780
+    .line 762
     monitor-exit v0
 
     return-void
 
-    .line 782
+    .line 764
     :cond_0
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 784
+    .line 766
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$1;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->releaseInternal()V
 
-    .line 786
+    .line 768
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$1;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     iget-object v1, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mStateLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 787
+    .line 769
     :try_start_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$1;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
@@ -101,7 +109,7 @@
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->changeTo(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;)V
 
-    .line 788
+    .line 770
     monitor-exit v1
 
     return-void
@@ -118,7 +126,7 @@
     :catchall_1
     move-exception p0
 
-    .line 782
+    .line 764
     :try_start_2
     monitor-exit v0
     :try_end_2

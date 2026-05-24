@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function6;
+.implements Lkotlin/jvm/functions/Function8;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
@@ -40,15 +40,23 @@
 
     move-object p4, p5
 
-    check-cast p4, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+    check-cast p4, Ljava/lang/Boolean;
 
-    check-cast p6, Ljava/lang/Boolean;
+    move-object p5, p6
 
-    invoke-virtual {p6}, Ljava/lang/Boolean;->booleanValue()Z
+    check-cast p5, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
-    move-result p5
+    move-object p6, p7
 
-    invoke-static/range {p0 .. p5}, Ljp/co/sony/mc/camera/view/uistate/ZoomHintTextUiState;->$r8$lambda$orwC7_EdpptlJq8LXWgzNJlqPqs(Ljava/lang/Float;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Lkotlin/Pair;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljp/co/sony/mc/camera/view/util/UiText$StringResource;
+    check-cast p6, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+
+    check-cast p8, Ljava/lang/Boolean;
+
+    invoke-virtual {p8}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p7
+
+    invoke-static/range {p0 .. p7}, Ljp/co/sony/mc/camera/view/uistate/ZoomHintTextUiState;->$r8$lambda$8vKumuzM-4_UTgAcaXAhySfPfo0(Ljava/lang/Float;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Lkotlin/Pair;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljava/lang/Boolean;Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljp/co/sony/mc/camera/view/util/UiText$StringResource;
 
     move-result-object p0
 

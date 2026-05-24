@@ -40,6 +40,18 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Landroid/os/Handler;Ljp/co/sony/mc/camera/device/CaptureResultNotifier$PrepareBurstCallback;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "sessionId",
+            "handler",
+            "callback"
+        }
+    .end annotation
 
     .line 38
     invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/device/CaptureResultCheckerBase;-><init>(Landroid/os/Handler;)V
@@ -70,6 +82,14 @@
 
 .method private changeTo(Ljp/co/sony/mc/camera/device/PrepareBurstStateChecker$State;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "next"
+        }
+    .end annotation
 
     .line 110
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/PrepareBurstStateChecker;->mState:Ljp/co/sony/mc/camera/device/PrepareBurstStateChecker$State;
@@ -135,6 +155,16 @@
 
 .method private check(Landroid/hardware/camera2/CaptureRequest;Landroid/hardware/camera2/CaptureResult;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "result"
+        }
+    .end annotation
 
     .line 56
     sget-object v0, Ljp/co/sony/mc/camera/device/PrepareBurstStateChecker$2;->$SwitchMap$jp$co$sony$mc$camera$device$PrepareBurstStateChecker$State:[I
@@ -329,6 +359,14 @@
 
 .method private notifyPrepareBurstDone(Z)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "success"
+        }
+    .end annotation
 
     .line 117
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/PrepareBurstStateChecker;->mHandler:Landroid/os/Handler;
@@ -346,6 +384,16 @@
 # virtual methods
 .method public checkOnCompleted(Landroid/hardware/camera2/CaptureRequest;Ljp/co/sony/mc/camera/device/CaptureResultHolder;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "resultHolder"
+        }
+    .end annotation
 
     .line 51
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CaptureResultHolder;->getLatest()Landroid/hardware/camera2/CaptureResult;
@@ -359,6 +407,16 @@
 
 .method public checkOnPartial(Landroid/hardware/camera2/CaptureRequest;Landroid/hardware/camera2/CaptureResult;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "result"
+        }
+    .end annotation
 
     .line 46
     invoke-direct {p0, p1, p2}, Ljp/co/sony/mc/camera/device/PrepareBurstStateChecker;->check(Landroid/hardware/camera2/CaptureRequest;Landroid/hardware/camera2/CaptureResult;)V

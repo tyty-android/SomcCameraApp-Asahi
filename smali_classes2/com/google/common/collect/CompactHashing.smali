@@ -3,6 +3,11 @@
 .source "CompactHashing.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # static fields
 .field private static final BYTE_MASK:I = 0xff
 
@@ -31,7 +36,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 32
+    .line 36
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -39,6 +44,14 @@
 
 .method static createTable(I)Ljava/lang/Object;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "buckets"
+        }
+    .end annotation
 
     const/4 v0, 0x2
 
@@ -48,7 +61,7 @@
 
     if-gt p0, v0, :cond_2
 
-    .line 77
+    .line 81
     invoke-static {p0}, Ljava/lang/Integer;->highestOneBit(I)I
 
     move-result v0
@@ -59,7 +72,7 @@
 
     if-gt p0, v0, :cond_0
 
-    .line 81
+    .line 85
     new-array p0, p0, [B
 
     return-object p0
@@ -69,32 +82,26 @@
 
     if-gt p0, v0, :cond_1
 
-    .line 83
+    .line 87
     new-array p0, p0, [S
 
     return-object p0
 
-    .line 85
+    .line 89
     :cond_1
     new-array p0, p0, [I
 
     return-object p0
 
-    .line 78
+    .line 82
     :cond_2
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
-    const/16 v2, 0x34
-
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(I)V
-
     const-string v2, "must be power of 2 between 2^1 and 2^30: "
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -111,6 +118,16 @@
 
 .method static getHashPrefix(II)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "value",
+            "mask"
+        }
+    .end annotation
 
     not-int p1, p1
 
@@ -121,6 +138,16 @@
 
 .method static getNext(II)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "entry",
+            "mask"
+        }
+    .end annotation
 
     and-int/2addr p0, p1
 
@@ -129,6 +156,18 @@
 
 .method static maskCombine(III)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "prefix",
+            "suffix",
+            "mask"
+        }
+    .end annotation
 
     not-int v0, p2
 
@@ -143,6 +182,14 @@
 
 .method static newCapacity(I)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mask"
+        }
+    .end annotation
 
     const/16 v0, 0x20
 
@@ -166,26 +213,46 @@
 .method static remove(Ljava/lang/Object;Ljava/lang/Object;ILjava/lang/Object;[I[Ljava/lang/Object;[Ljava/lang/Object;)I
     .locals 8
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p6    # [Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value",
+            "mask",
+            "table",
+            "entries",
+            "keys",
+            "values"
+        }
+    .end annotation
 
-    .line 153
+    .line 169
     invoke-static {p0}, Lcom/google/common/collect/Hashing;->smearedHash(Ljava/lang/Object;)I
 
     move-result v0
 
     and-int v1, v0, p2
 
-    .line 155
+    .line 171
     invoke-static {p3, v1}, Lcom/google/common/collect/CompactHashing;->tableGet(Ljava/lang/Object;I)I
 
     move-result v2
@@ -196,7 +263,7 @@
 
     return v3
 
-    .line 159
+    .line 175
     :cond_0
     invoke-static {v0, p2}, Lcom/google/common/collect/CompactHashing;->getHashPrefix(II)I
 
@@ -207,10 +274,10 @@
     :goto_0
     add-int/lit8 v2, v2, -0x1
 
-    .line 163
+    .line 179
     aget v5, p4, v2
 
-    .line 164
+    .line 180
     invoke-static {v5, p2}, Lcom/google/common/collect/CompactHashing;->getHashPrefix(II)I
 
     move-result v6
@@ -219,7 +286,7 @@
 
     aget-object v6, p5, v2
 
-    .line 165
+    .line 181
     invoke-static {p0, v6}, Lcom/google/common/base/Objects;->equal(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v6
@@ -230,14 +297,14 @@
 
     aget-object v6, p6, v2
 
-    .line 166
+    .line 182
     invoke-static {p1, v6}, Lcom/google/common/base/Objects;->equal(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v6
 
     if-eqz v6, :cond_3
 
-    .line 167
+    .line 183
     :cond_1
     invoke-static {v5, p2}, Lcom/google/common/collect/CompactHashing;->getNext(II)I
 
@@ -245,12 +312,12 @@
 
     if-ne v4, v3, :cond_2
 
-    .line 170
+    .line 186
     invoke-static {p3, v1, p0}, Lcom/google/common/collect/CompactHashing;->tableSet(Ljava/lang/Object;II)V
 
     goto :goto_1
 
-    .line 173
+    .line 189
     :cond_2
     aget p1, p4, v4
 
@@ -263,7 +330,7 @@
     :goto_1
     return v2
 
-    .line 179
+    .line 195
     :cond_3
     invoke-static {v5, p2}, Lcom/google/common/collect/CompactHashing;->getNext(II)I
 
@@ -285,35 +352,43 @@
 
 .method static tableClear(Ljava/lang/Object;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "table"
+        }
+    .end annotation
 
-    .line 90
+    .line 94
     instance-of v0, p0, [B
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 91
+    .line 95
     check-cast p0, [B
 
     invoke-static {p0, v1}, Ljava/util/Arrays;->fill([BB)V
 
     goto :goto_0
 
-    .line 92
+    .line 96
     :cond_0
     instance-of v0, p0, [S
 
     if-eqz v0, :cond_1
 
-    .line 93
+    .line 97
     check-cast p0, [S
 
     invoke-static {p0, v1}, Ljava/util/Arrays;->fill([SS)V
 
     goto :goto_0
 
-    .line 95
+    .line 99
     :cond_1
     check-cast p0, [I
 
@@ -325,13 +400,23 @@
 
 .method static tableGet(Ljava/lang/Object;I)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "table",
+            "index"
+        }
+    .end annotation
 
-    .line 100
+    .line 109
     instance-of v0, p0, [B
 
     if-eqz v0, :cond_0
 
-    .line 101
+    .line 110
     check-cast p0, [B
 
     aget-byte p0, p0, p1
@@ -340,13 +425,13 @@
 
     return p0
 
-    .line 102
+    .line 111
     :cond_0
     instance-of v0, p0, [S
 
     if-eqz v0, :cond_1
 
-    .line 103
+    .line 112
     check-cast p0, [S
 
     aget-short p0, p0, p1
@@ -357,7 +442,7 @@
 
     return p0
 
-    .line 105
+    .line 114
     :cond_1
     check-cast p0, [I
 
@@ -368,13 +453,25 @@
 
 .method static tableSet(Ljava/lang/Object;II)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "table",
+            "index",
+            "entry"
+        }
+    .end annotation
 
-    .line 110
+    .line 126
     instance-of v0, p0, [B
 
     if-eqz v0, :cond_0
 
-    .line 111
+    .line 127
     check-cast p0, [B
 
     int-to-byte p2, p2
@@ -383,13 +480,13 @@
 
     goto :goto_0
 
-    .line 112
+    .line 128
     :cond_0
     instance-of v0, p0, [S
 
     if-eqz v0, :cond_1
 
-    .line 113
+    .line 129
     check-cast p0, [S
 
     int-to-short p2, p2
@@ -398,7 +495,7 @@
 
     goto :goto_0
 
-    .line 115
+    .line 131
     :cond_1
     check-cast p0, [I
 
@@ -410,12 +507,20 @@
 
 .method static tableSize(I)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "expectedSize"
+        }
+    .end annotation
 
     add-int/lit8 p0, p0, 0x1
 
     const-wide/high16 v0, 0x3ff0000000000000L    # 1.0
 
-    .line 70
+    .line 74
     invoke-static {p0, v0, v1}, Lcom/google/common/collect/Hashing;->closedTableSize(ID)I
 
     move-result p0

@@ -40,6 +40,16 @@
 # virtual methods
 .method public compare(Landroid/util/Size;Landroid/util/Size;)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "lhs",
+            "rhs"
+        }
+    .end annotation
 
     .line 879
     invoke-virtual {p1}, Landroid/util/Size;->getWidth()I
@@ -83,6 +93,16 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "lhs",
+            "rhs"
+        }
+    .end annotation
 
     .line 874
     check-cast p1, Landroid/util/Size;

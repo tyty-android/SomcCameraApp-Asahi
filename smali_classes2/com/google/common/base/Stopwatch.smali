@@ -3,6 +3,11 @@
 .source "Stopwatch.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/base/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # instance fields
 .field private elapsedNanos:J
 
@@ -17,10 +22,10 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 132
+    .line 142
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 133
+    .line 143
     invoke-static {}, Lcom/google/common/base/Ticker;->systemTicker()Lcom/google/common/base/Ticker;
 
     move-result-object v0
@@ -32,11 +37,19 @@
 
 .method constructor <init>(Lcom/google/common/base/Ticker;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ticker"
+        }
+    .end annotation
 
-    .line 136
+    .line 146
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 137
+    .line 147
     const-string v0, "ticker"
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -52,8 +65,16 @@
 
 .method private static abbreviate(Ljava/util/concurrent/TimeUnit;)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "unit"
+        }
+    .end annotation
 
-    .line 242
+    .line 277
     sget-object v0, Lcom/google/common/base/Stopwatch$1;->$SwitchMap$java$util$concurrent$TimeUnit:[I
 
     invoke-virtual {p0}, Ljava/util/concurrent/TimeUnit;->ordinal()I
@@ -64,50 +85,50 @@
 
     packed-switch p0, :pswitch_data_0
 
-    .line 258
+    .line 293
     new-instance p0, Ljava/lang/AssertionError;
 
     invoke-direct {p0}, Ljava/lang/AssertionError;-><init>()V
 
     throw p0
 
-    .line 256
+    .line 291
     :pswitch_0
     const-string p0, "d"
 
     return-object p0
 
-    .line 254
+    .line 289
     :pswitch_1
     const-string p0, "h"
 
     return-object p0
 
-    .line 252
+    .line 287
     :pswitch_2
     const-string p0, "min"
 
     return-object p0
 
-    .line 250
+    .line 285
     :pswitch_3
     const-string p0, "s"
 
     return-object p0
 
-    .line 248
+    .line 283
     :pswitch_4
     const-string p0, "ms"
 
     return-object p0
 
-    .line 246
+    .line 281
     :pswitch_5
     const-string p0, "\u03bcs"
 
     return-object p0
 
-    .line 244
+    .line 279
     :pswitch_6
     const-string p0, "ns"
 
@@ -127,8 +148,16 @@
 
 .method private static chooseUnit(J)Ljava/util/concurrent/TimeUnit;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "nanos"
+        }
+    .end annotation
 
-    .line 220
+    .line 255
     sget-object v0, Ljava/util/concurrent/TimeUnit;->DAYS:Ljava/util/concurrent/TimeUnit;
 
     sget-object v1, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
@@ -143,12 +172,12 @@
 
     if-lez v0, :cond_0
 
-    .line 221
+    .line 256
     sget-object p0, Ljava/util/concurrent/TimeUnit;->DAYS:Ljava/util/concurrent/TimeUnit;
 
     return-object p0
 
-    .line 223
+    .line 258
     :cond_0
     sget-object v0, Ljava/util/concurrent/TimeUnit;->HOURS:Ljava/util/concurrent/TimeUnit;
 
@@ -162,12 +191,12 @@
 
     if-lez v0, :cond_1
 
-    .line 224
+    .line 259
     sget-object p0, Ljava/util/concurrent/TimeUnit;->HOURS:Ljava/util/concurrent/TimeUnit;
 
     return-object p0
 
-    .line 226
+    .line 261
     :cond_1
     sget-object v0, Ljava/util/concurrent/TimeUnit;->MINUTES:Ljava/util/concurrent/TimeUnit;
 
@@ -181,12 +210,12 @@
 
     if-lez v0, :cond_2
 
-    .line 227
+    .line 262
     sget-object p0, Ljava/util/concurrent/TimeUnit;->MINUTES:Ljava/util/concurrent/TimeUnit;
 
     return-object p0
 
-    .line 229
+    .line 264
     :cond_2
     sget-object v0, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
@@ -200,12 +229,12 @@
 
     if-lez v0, :cond_3
 
-    .line 230
+    .line 265
     sget-object p0, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     return-object p0
 
-    .line 232
+    .line 267
     :cond_3
     sget-object v0, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
@@ -219,12 +248,12 @@
 
     if-lez v0, :cond_4
 
-    .line 233
+    .line 268
     sget-object p0, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
     return-object p0
 
-    .line 235
+    .line 270
     :cond_4
     sget-object v0, Ljava/util/concurrent/TimeUnit;->MICROSECONDS:Ljava/util/concurrent/TimeUnit;
 
@@ -238,12 +267,12 @@
 
     if-lez p0, :cond_5
 
-    .line 236
+    .line 271
     sget-object p0, Ljava/util/concurrent/TimeUnit;->MICROSECONDS:Ljava/util/concurrent/TimeUnit;
 
     return-object p0
 
-    .line 238
+    .line 273
     :cond_5
     sget-object p0, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
 
@@ -253,7 +282,7 @@
 .method public static createStarted()Lcom/google/common/base/Stopwatch;
     .locals 1
 
-    .line 120
+    .line 130
     new-instance v0, Lcom/google/common/base/Stopwatch;
 
     invoke-direct {v0}, Lcom/google/common/base/Stopwatch;-><init>()V
@@ -267,8 +296,16 @@
 
 .method public static createStarted(Lcom/google/common/base/Ticker;)Lcom/google/common/base/Stopwatch;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ticker"
+        }
+    .end annotation
 
-    .line 129
+    .line 139
     new-instance v0, Lcom/google/common/base/Stopwatch;
 
     invoke-direct {v0, p0}, Lcom/google/common/base/Stopwatch;-><init>(Lcom/google/common/base/Ticker;)V
@@ -283,7 +320,7 @@
 .method public static createUnstarted()Lcom/google/common/base/Stopwatch;
     .locals 1
 
-    .line 102
+    .line 112
     new-instance v0, Lcom/google/common/base/Stopwatch;
 
     invoke-direct {v0}, Lcom/google/common/base/Stopwatch;-><init>()V
@@ -293,8 +330,16 @@
 
 .method public static createUnstarted(Lcom/google/common/base/Ticker;)Lcom/google/common/base/Stopwatch;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ticker"
+        }
+    .end annotation
 
-    .line 111
+    .line 121
     new-instance v0, Lcom/google/common/base/Stopwatch;
 
     invoke-direct {v0, p0}, Lcom/google/common/base/Stopwatch;-><init>(Lcom/google/common/base/Ticker;)V
@@ -305,7 +350,7 @@
 .method private elapsedNanos()J
     .locals 4
 
-    .line 191
+    .line 201
     iget-boolean v0, p0, Lcom/google/common/base/Stopwatch;->isRunning:Z
 
     if-eqz v0, :cond_0
@@ -337,8 +382,16 @@
 # virtual methods
 .method public elapsed(Ljava/util/concurrent/TimeUnit;)J
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "desiredUnit"
+        }
+    .end annotation
 
-    .line 204
+    .line 218
     invoke-direct {p0}, Lcom/google/common/base/Stopwatch;->elapsedNanos()J
 
     move-result-wide v0
@@ -352,10 +405,25 @@
     return-wide p0
 .end method
 
+.method public elapsed()Ljava/time/Duration;
+    .locals 2
+
+    .line 239
+    invoke-direct {p0}, Lcom/google/common/base/Stopwatch;->elapsedNanos()J
+
+    move-result-wide v0
+
+    invoke-static {v0, v1}, Ljava/time/Duration;->ofNanos(J)Ljava/time/Duration;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public isRunning()Z
     .locals 0
 
-    .line 145
+    .line 155
     iget-boolean p0, p0, Lcom/google/common/base/Stopwatch;->isRunning:Z
 
     return p0
@@ -366,12 +434,12 @@
 
     const-wide/16 v0, 0x0
 
-    .line 185
+    .line 195
     iput-wide v0, p0, Lcom/google/common/base/Stopwatch;->elapsedNanos:J
 
     const/4 v0, 0x0
 
-    .line 186
+    .line 196
     iput-boolean v0, p0, Lcom/google/common/base/Stopwatch;->isRunning:Z
 
     return-object p0
@@ -380,7 +448,7 @@
 .method public start()Lcom/google/common/base/Stopwatch;
     .locals 3
 
-    .line 156
+    .line 166
     iget-boolean v0, p0, Lcom/google/common/base/Stopwatch;->isRunning:Z
 
     const/4 v1, 0x1
@@ -391,10 +459,10 @@
 
     invoke-static {v0, v2}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
 
-    .line 157
+    .line 167
     iput-boolean v1, p0, Lcom/google/common/base/Stopwatch;->isRunning:Z
 
-    .line 158
+    .line 168
     iget-object v0, p0, Lcom/google/common/base/Stopwatch;->ticker:Lcom/google/common/base/Ticker;
 
     invoke-virtual {v0}, Lcom/google/common/base/Ticker;->read()J
@@ -409,14 +477,14 @@
 .method public stop()Lcom/google/common/base/Stopwatch;
     .locals 6
 
-    .line 171
+    .line 181
     iget-object v0, p0, Lcom/google/common/base/Stopwatch;->ticker:Lcom/google/common/base/Ticker;
 
     invoke-virtual {v0}, Lcom/google/common/base/Ticker;->read()J
 
     move-result-wide v0
 
-    .line 172
+    .line 182
     iget-boolean v2, p0, Lcom/google/common/base/Stopwatch;->isRunning:Z
 
     const-string v3, "This stopwatch is already stopped."
@@ -425,10 +493,10 @@
 
     const/4 v2, 0x0
 
-    .line 173
+    .line 183
     iput-boolean v2, p0, Lcom/google/common/base/Stopwatch;->isRunning:Z
 
-    .line 174
+    .line 184
     iget-wide v2, p0, Lcom/google/common/base/Stopwatch;->elapsedNanos:J
 
     iget-wide v4, p0, Lcom/google/common/base/Stopwatch;->startTick:J
@@ -445,19 +513,19 @@
 .method public toString()Ljava/lang/String;
     .locals 5
 
-    .line 210
+    .line 245
     invoke-direct {p0}, Lcom/google/common/base/Stopwatch;->elapsedNanos()J
 
     move-result-wide v0
 
-    .line 212
+    .line 247
     invoke-static {v0, v1}, Lcom/google/common/base/Stopwatch;->chooseUnit(J)Ljava/util/concurrent/TimeUnit;
 
     move-result-object p0
 
     long-to-double v0, v0
 
-    .line 213
+    .line 248
     sget-object v2, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
 
     const-wide/16 v3, 0x1
@@ -470,38 +538,14 @@
 
     div-double/2addr v0, v2
 
-    .line 216
+    .line 251
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
     invoke-static {v0, v1}, Lcom/google/common/base/Platform;->formatCompact4Digits(D)Ljava/lang/String;
 
     move-result-object v0
-
-    invoke-static {p0}, Lcom/google/common/base/Stopwatch;->abbreviate(Ljava/util/concurrent/TimeUnit;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    move-result v1
-
-    add-int/lit8 v1, v1, 0x1
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/String;->length()I
-
-    move-result v2
-
-    add-int/2addr v1, v2
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -512,6 +556,10 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
+
+    invoke-static {p0}, Lcom/google/common/base/Stopwatch;->abbreviate(Ljava/util/concurrent/TimeUnit;)Ljava/lang/String;
+
+    move-result-object p0
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

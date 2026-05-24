@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 892
+    .line 861
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$4;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,8 +45,16 @@
 # virtual methods
 .method public onLayoutOrientationChanged(Ljp/co/sony/mc/camera/OrientationService$LayoutOrientation;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "changed"
+        }
+    .end annotation
 
-    .line 896
+    .line 865
     sget-object v0, Ljp/co/sony/mc/camera/OrientationService$LayoutOrientation;->Portrait:Ljp/co/sony/mc/camera/OrientationService$LayoutOrientation;
 
     if-ne p1, v0, :cond_0
@@ -50,13 +66,13 @@
     :cond_0
     const/4 p1, 0x2
 
-    .line 901
+    .line 870
     :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$4;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$StaticEvent;->EVENT_ON_ORIENTATION_CHANGED:Ljp/co/sony/mc/camera/controller/StateMachine$StaticEvent;
 
-    .line 902
+    .line 871
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -65,7 +81,7 @@
 
     move-result-object p1
 
-    .line 901
+    .line 870
     invoke-virtual {p0, v0, p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->sendStaticEvent(Ljp/co/sony/mc/camera/controller/StateMachine$StaticEvent;[Ljava/lang/Object;)V
 
     return-void

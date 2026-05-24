@@ -28,11 +28,19 @@
 # direct methods
 .method constructor <init>([B)V
     .locals 0
-
-    .line 253
-    invoke-direct {p0}, Lcom/google/common/hash/HashCode;-><init>()V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bytes"
+        }
+    .end annotation
 
     .line 254
+    invoke-direct {p0}, Lcom/google/common/hash/HashCode;-><init>()V
+
+    .line 255
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -49,7 +57,7 @@
 .method public asBytes()[B
     .locals 0
 
-    .line 264
+    .line 265
     iget-object p0, p0, Lcom/google/common/hash/HashCode$BytesHashCode;->bytes:[B
 
     invoke-virtual {p0}, [B->clone()Ljava/lang/Object;
@@ -64,7 +72,7 @@
 .method public asInt()I
     .locals 5
 
-    .line 269
+    .line 270
     iget-object v0, p0, Lcom/google/common/hash/HashCode$BytesHashCode;->bytes:[B
 
     array-length v1, v0
@@ -91,7 +99,7 @@
 
     invoke-static {v1, v2, v0}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/String;I)V
 
-    .line 273
+    .line 274
     iget-object p0, p0, Lcom/google/common/hash/HashCode$BytesHashCode;->bytes:[B
 
     aget-byte v0, p0, v4
@@ -132,7 +140,7 @@
 .method public asLong()J
     .locals 3
 
-    .line 281
+    .line 282
     iget-object v0, p0, Lcom/google/common/hash/HashCode$BytesHashCode;->bytes:[B
 
     array-length v1, v0
@@ -155,7 +163,7 @@
 
     invoke-static {v1, v2, v0}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/String;I)V
 
-    .line 285
+    .line 286
     invoke-virtual {p0}, Lcom/google/common/hash/HashCode$BytesHashCode;->padToLong()J
 
     move-result-wide v0
@@ -166,7 +174,7 @@
 .method public bits()I
     .locals 0
 
-    .line 259
+    .line 260
     iget-object p0, p0, Lcom/google/common/hash/HashCode$BytesHashCode;->bytes:[B
 
     array-length p0, p0
@@ -178,8 +186,16 @@
 
 .method equalsSameBits(Lcom/google/common/hash/HashCode;)Z
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "that"
+        }
+    .end annotation
 
-    .line 311
+    .line 312
     iget-object v0, p0, Lcom/google/common/hash/HashCode$BytesHashCode;->bytes:[B
 
     array-length v0, v0
@@ -203,7 +219,7 @@
 
     move v1, v2
 
-    .line 316
+    .line 317
     :goto_0
     iget-object v4, p0, Lcom/google/common/hash/HashCode$BytesHashCode;->bytes:[B
 
@@ -211,7 +227,7 @@
 
     if-ge v1, v5, :cond_2
 
-    .line 317
+    .line 318
     aget-byte v4, v4, v1
 
     invoke-virtual {p1}, Lcom/google/common/hash/HashCode;->getBytesInternal()[B
@@ -243,7 +259,7 @@
 .method getBytesInternal()[B
     .locals 0
 
-    .line 304
+    .line 305
     iget-object p0, p0, Lcom/google/common/hash/HashCode$BytesHashCode;->bytes:[B
 
     return-object p0
@@ -252,7 +268,7 @@
 .method public padToLong()J
     .locals 7
 
-    .line 290
+    .line 291
     iget-object v0, p0, Lcom/google/common/hash/HashCode$BytesHashCode;->bytes:[B
 
     const/4 v1, 0x0
@@ -265,7 +281,7 @@
 
     const/4 v2, 0x1
 
-    .line 291
+    .line 292
     :goto_0
     iget-object v3, p0, Lcom/google/common/hash/HashCode$BytesHashCode;->bytes:[B
 
@@ -279,7 +295,7 @@
 
     if-ge v2, v3, :cond_0
 
-    .line 292
+    .line 293
     iget-object v3, p0, Lcom/google/common/hash/HashCode$BytesHashCode;->bytes:[B
 
     aget-byte v3, v3, v2
@@ -306,8 +322,20 @@
 
 .method writeBytesToImpl([BII)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "dest",
+            "offset",
+            "maxLength"
+        }
+    .end annotation
 
-    .line 299
+    .line 300
     iget-object p0, p0, Lcom/google/common/hash/HashCode$BytesHashCode;->bytes:[B
 
     const/4 v0, 0x0

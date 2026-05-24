@@ -21,8 +21,18 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/base/Joiner;Lcom/google/common/base/Joiner;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "prototype"
+        }
+    .end annotation
 
-    .line 247
+    .line 280
     iput-object p1, p0, Lcom/google/common/base/Joiner$2;->this$0:Lcom/google/common/base/Joiner;
 
     const/4 p1, 0x0
@@ -36,13 +46,26 @@
 # virtual methods
 .method public appendTo(Ljava/lang/Appendable;Ljava/util/Iterator;)Ljava/lang/Appendable;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "appendable",
+            "parts"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<A::",
             "Ljava/lang/Appendable;",
             ">(TA;",
             "Ljava/util/Iterator<",
-            "*>;)TA;"
+            "+",
+            "Ljava/lang/Object;",
+            ">;)TA;"
         }
     .end annotation
 
@@ -52,17 +75,17 @@
         }
     .end annotation
 
-    .line 250
+    .line 290
     const-string v0, "appendable"
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 251
+    .line 291
     const-string v0, "parts"
 
     invoke-static {p2, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 252
+    .line 292
     :cond_0
     invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
 
@@ -70,14 +93,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 253
+    .line 293
     invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 255
+    .line 295
     iget-object v1, p0, Lcom/google/common/base/Joiner$2;->this$0:Lcom/google/common/base/Joiner;
 
     invoke-virtual {v1, v0}, Lcom/google/common/base/Joiner;->toString(Ljava/lang/Object;)Ljava/lang/CharSequence;
@@ -86,7 +109,7 @@
 
     invoke-interface {p1, v0}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
 
-    .line 259
+    .line 299
     :cond_1
     :goto_0
     invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
@@ -95,14 +118,14 @@
 
     if-eqz v0, :cond_2
 
-    .line 260
+    .line 300
     invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    .line 262
+    .line 302
     iget-object v1, p0, Lcom/google/common/base/Joiner$2;->this$0:Lcom/google/common/base/Joiner;
 
     invoke-static {v1}, Lcom/google/common/base/Joiner;->access$100(Lcom/google/common/base/Joiner;)Ljava/lang/String;
@@ -111,7 +134,7 @@
 
     invoke-interface {p1, v1}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
 
-    .line 263
+    .line 303
     iget-object v1, p0, Lcom/google/common/base/Joiner$2;->this$0:Lcom/google/common/base/Joiner;
 
     invoke-virtual {v1, v0}, Lcom/google/common/base/Joiner;->toString(Ljava/lang/Object;)Ljava/lang/CharSequence;
@@ -126,10 +149,52 @@
     return-object p1
 .end method
 
+.method public join(Ljava/lang/Iterable;)Ljava/lang/String;
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "parts"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Iterable<",
+            "+",
+            "Ljava/lang/Object;",
+            ">;)",
+            "Ljava/lang/String;"
+        }
+    .end annotation
+
+    .line 284
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lcom/google/common/base/Joiner$2;->join(Ljava/util/Iterator;)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public useForNull(Ljava/lang/String;)Lcom/google/common/base/Joiner;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "nullText"
+        }
+    .end annotation
 
-    .line 271
+    .line 311
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     const-string p1, "already specified skipNulls"
@@ -141,8 +206,16 @@
 
 .method public withKeyValueSeparator(Ljava/lang/String;)Lcom/google/common/base/Joiner$MapJoiner;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "kvs"
+        }
+    .end annotation
 
-    .line 276
+    .line 316
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     const-string p1, "can\'t use .skipNulls() with maps"

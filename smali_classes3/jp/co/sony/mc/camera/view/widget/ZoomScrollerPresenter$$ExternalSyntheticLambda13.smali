@@ -3,38 +3,28 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
-
-
-# instance fields
-.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
+.implements Landroid/view/View$OnTouchListener;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;)V
+.method public synthetic constructor <init>()V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$$ExternalSyntheticLambda13;->f$0:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 0
 
     .line 0
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$$ExternalSyntheticLambda13;->f$0:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
+    invoke-static {p1, p2}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->$r8$lambda$YgUVrc8xlEzYQi-ILDtQgE3zAQs(Landroid/view/View;Landroid/view/MotionEvent;)Z
 
-    check-cast p1, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$CircleInfo;
+    move-result p0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->$r8$lambda$0D1lVW1seZUf_iBAohwNTBJQGfo(Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$CircleInfo;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
+    return p0
 .end method

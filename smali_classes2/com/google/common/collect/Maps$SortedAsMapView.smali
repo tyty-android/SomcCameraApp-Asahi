@@ -34,6 +34,17 @@
 # direct methods
 .method constructor <init>(Ljava/util/SortedSet;Lcom/google/common/base/Function;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "set",
+            "function"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -44,7 +55,7 @@
         }
     .end annotation
 
-    .line 855
+    .line 981
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/Maps$AsMapView;-><init>(Ljava/util/Set;Lcom/google/common/base/Function;)V
 
     return-void
@@ -55,7 +66,7 @@
 .method bridge synthetic backingSet()Ljava/util/Set;
     .locals 0
 
-    .line 852
+    .line 977
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$SortedAsMapView;->backingSet()Ljava/util/SortedSet;
 
     move-result-object p0
@@ -73,7 +84,7 @@
         }
     .end annotation
 
-    .line 860
+    .line 986
     invoke-super {p0}, Lcom/google/common/collect/Maps$AsMapView;->backingSet()Ljava/util/Set;
 
     move-result-object p0
@@ -93,7 +104,10 @@
         }
     .end annotation
 
-    .line 865
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 992
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$SortedAsMapView;->backingSet()Ljava/util/SortedSet;
 
     move-result-object p0
@@ -107,13 +121,16 @@
 
 .method public firstKey()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TK;"
         }
     .end annotation
 
-    .line 890
+    .line 1018
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$SortedAsMapView;->backingSet()Ljava/util/SortedSet;
 
     move-result-object p0
@@ -127,6 +144,19 @@
 
 .method public headMap(Ljava/lang/Object;)Ljava/util/SortedMap;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "toKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -135,7 +165,7 @@
         }
     .end annotation
 
-    .line 880
+    .line 1007
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$SortedAsMapView;->backingSet()Ljava/util/SortedSet;
 
     move-result-object v0
@@ -163,7 +193,7 @@
         }
     .end annotation
 
-    .line 870
+    .line 997
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$SortedAsMapView;->backingSet()Ljava/util/SortedSet;
 
     move-result-object p0
@@ -177,13 +207,16 @@
 
 .method public lastKey()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TK;"
         }
     .end annotation
 
-    .line 895
+    .line 1024
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$SortedAsMapView;->backingSet()Ljava/util/SortedSet;
 
     move-result-object p0
@@ -197,6 +230,25 @@
 
 .method public subMap(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedMap;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromKey",
+            "toKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TK;)",
@@ -205,7 +257,7 @@
         }
     .end annotation
 
-    .line 875
+    .line 1002
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$SortedAsMapView;->backingSet()Ljava/util/SortedSet;
 
     move-result-object v0
@@ -225,6 +277,19 @@
 
 .method public tailMap(Ljava/lang/Object;)Ljava/util/SortedMap;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fromKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -233,7 +298,7 @@
         }
     .end annotation
 
-    .line 885
+    .line 1012
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$SortedAsMapView;->backingSet()Ljava/util/SortedSet;
 
     move-result-object v0

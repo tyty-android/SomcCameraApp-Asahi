@@ -62,7 +62,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 476
+    .line 477
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;->value:Ljp/co/sony/mc/camera/configuration/parameters/PeakingColor;
@@ -75,7 +75,7 @@
 .method public final getValue()Ljp/co/sony/mc/camera/configuration/parameters/PeakingColor;
     .locals 0
 
-    .line 476
+    .line 477
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;->value:Ljp/co/sony/mc/camera/configuration/parameters/PeakingColor;
 
     return-object p0
@@ -84,7 +84,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 477
+    .line 478
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;->value:Ljp/co/sony/mc/camera/configuration/parameters/PeakingColor;
 
     sget-object v0, Ljp/co/sony/mc/camera/idd/value/IddPeakingColor$WhenMappings;->$EnumSwitchMapping$0:[I
@@ -107,24 +107,24 @@
 
     if-eq p0, v0, :cond_0
 
-    .line 481
+    .line 482
     const-string p0, "PEAKINGCOLOR_BLUE"
 
     goto :goto_0
 
-    .line 480
+    .line 481
     :cond_0
     const-string p0, "PEAKINGCOLOR_YELLOW"
 
     goto :goto_0
 
-    .line 479
+    .line 480
     :cond_1
     const-string p0, "PEAKINGCOLOR_RED"
 
     goto :goto_0
 
-    .line 478
+    .line 479
     :cond_2
     const-string p0, "PEAKINGCOLOR_WHITE"
 

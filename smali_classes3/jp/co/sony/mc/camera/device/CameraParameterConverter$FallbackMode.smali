@@ -18,7 +18,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 973
+    .line 975
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -26,6 +26,14 @@
 
 .method public static getApi1Value(I)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fallbackMode"
+        }
+    .end annotation
 
     if-eqz p0, :cond_2
 
@@ -41,19 +49,19 @@
 
     goto :goto_0
 
-    .line 982
+    .line 984
     :cond_0
     const-string p0, "on"
 
     goto :goto_0
 
-    .line 979
+    .line 981
     :cond_1
     const-string p0, "auto"
 
     goto :goto_0
 
-    .line 985
+    .line 987
     :cond_2
     const-string p0, "off"
 
@@ -63,8 +71,16 @@
 
 .method static getApi2Value(Ljava/lang/String;)Ljava/lang/Integer;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fallbackMode"
+        }
+    .end annotation
 
-    .line 994
+    .line 996
     invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
 
     invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
@@ -136,7 +152,7 @@
 
     goto :goto_1
 
-    .line 996
+    .line 998
     :pswitch_0
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -144,7 +160,7 @@
 
     goto :goto_1
 
-    .line 1004
+    .line 1006
     :pswitch_1
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -152,7 +168,7 @@
 
     goto :goto_1
 
-    .line 1000
+    .line 1002
     :pswitch_2
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

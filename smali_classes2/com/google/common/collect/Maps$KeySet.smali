@@ -40,6 +40,15 @@
 # direct methods
 .method constructor <init>(Ljava/util/Map;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "map"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -48,10 +57,10 @@
         }
     .end annotation
 
-    .line 3515
+    .line 3857
     invoke-direct {p0}, Lcom/google/common/collect/Sets$ImprovedAbstractSet;-><init>()V
 
-    .line 3516
+    .line 3858
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -68,7 +77,7 @@
 .method public clear()V
     .locals 0
 
-    .line 3554
+    .line 3896
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$KeySet;->map()Ljava/util/Map;
 
     move-result-object p0
@@ -80,8 +89,20 @@
 
 .method public contains(Ljava/lang/Object;)Z
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 3540
+    .line 3882
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$KeySet;->map()Ljava/util/Map;
 
     move-result-object p0
@@ -96,7 +117,7 @@
 .method public isEmpty()Z
     .locals 0
 
-    .line 3535
+    .line 3877
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$KeySet;->map()Ljava/util/Map;
 
     move-result-object p0
@@ -118,7 +139,7 @@
         }
     .end annotation
 
-    .line 3525
+    .line 3867
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$KeySet;->map()Ljava/util/Map;
 
     move-result-object p0
@@ -148,7 +169,7 @@
         }
     .end annotation
 
-    .line 3520
+    .line 3862
     iget-object p0, p0, Lcom/google/common/collect/Maps$KeySet;->map:Ljava/util/Map;
 
     return-object p0
@@ -156,15 +177,27 @@
 
 .method public remove(Ljava/lang/Object;)Z
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 3545
+    .line 3887
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Maps$KeySet;->contains(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 3546
+    .line 3888
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$KeySet;->map()Ljava/util/Map;
 
     move-result-object p0
@@ -184,7 +217,7 @@
 .method public size()I
     .locals 0
 
-    .line 3530
+    .line 3872
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$KeySet;->map()Ljava/util/Map;
 
     move-result-object p0

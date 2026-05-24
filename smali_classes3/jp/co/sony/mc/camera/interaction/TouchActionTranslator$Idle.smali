@@ -24,6 +24,14 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 191
     iput-object p1, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$Idle;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;
@@ -45,6 +53,14 @@
 # virtual methods
 .method public handleMotionEvent(Landroid/view/MotionEvent;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "motion"
+        }
+    .end annotation
 
     .line 194
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
@@ -112,24 +128,70 @@
 
 .method public handleSingleTouchMoveEvent(Landroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "currentPoint",
+            "lastPoint",
+            "downPoint"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public handleSingleTouchStopEvent(Landroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "currentPoint",
+            "lastPoint",
+            "downPoint"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public handleTouchRotateEvent(FF)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "degreeVsOrigin",
+            "degreeVsLast"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public handleTouchScaleEvent(FFF)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "currentLength",
+            "previousLength",
+            "originalLength"
+        }
+    .end annotation
 
     return-void
 .end method

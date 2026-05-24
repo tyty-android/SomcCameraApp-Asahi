@@ -18,7 +18,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 353
+    .line 366
     invoke-direct {p0}, Lcom/google/common/cache/CacheBuilderSpec$IntegerParser;-><init>()V
 
     return-void
@@ -28,8 +28,18 @@
 # virtual methods
 .method protected parseInteger(Lcom/google/common/cache/CacheBuilderSpec;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "spec",
+            "value"
+        }
+    .end annotation
 
-    .line 356
+    .line 369
     iget-object p0, p1, Lcom/google/common/cache/CacheBuilderSpec;->concurrencyLevel:Ljava/lang/Integer;
 
     if-nez p0, :cond_0
@@ -42,13 +52,13 @@
     const/4 p0, 0x0
 
     :goto_0
-    const-string v0, "concurrency level was already set to "
+    const-string v0, "concurrency level was already set to %s"
 
     iget-object v1, p1, Lcom/google/common/cache/CacheBuilderSpec;->concurrencyLevel:Ljava/lang/Integer;
 
     invoke-static {p0, v0, v1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;)V
 
-    .line 360
+    .line 373
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0

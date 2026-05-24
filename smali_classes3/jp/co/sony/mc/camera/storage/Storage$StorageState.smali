@@ -203,6 +203,19 @@
 
 .method private varargs constructor <init>(Ljava/lang/String;I[Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "states"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
@@ -230,6 +243,14 @@
 
 .method public static getState(Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;)Ljp/co/sony/mc/camera/storage/Storage$StorageState;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "state"
+        }
+    .end annotation
 
     .line 63
     invoke-static {}, Ljp/co/sony/mc/camera/storage/Storage$StorageState;->values()[Ljp/co/sony/mc/camera/storage/Storage$StorageState;
@@ -288,6 +309,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/storage/Storage$StorageState;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 42
     const-class v0, Ljp/co/sony/mc/camera/storage/Storage$StorageState;

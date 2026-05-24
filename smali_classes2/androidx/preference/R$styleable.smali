@@ -301,7 +301,7 @@
 
     const v0, 0x101030e
 
-    const v1, 0x7f040400
+    const v1, 0x7f040406
 
     filled-new-array {v0, v1}, [I
 
@@ -325,7 +325,7 @@
 
     sput-object v0, Landroidx/preference/R$styleable;->DialogPreference:[I
 
-    const v0, 0x7f04052d
+    const v0, 0x7f040533
 
     filled-new-array {v0}, [I
 
@@ -337,9 +337,9 @@
 
     const v2, 0x10101f8
 
-    const v3, 0x7f0401d3
+    const v3, 0x7f0401d6
 
-    const v4, 0x7f0401d4
+    const v4, 0x7f0401d7
 
     filled-new-array {v1, v2, v3, v4, v0}, [I
 
@@ -381,9 +381,9 @@
 
     sput-object v0, Landroidx/preference/R$styleable;->PreferenceFragmentCompat:[I
 
-    const v0, 0x7f04026e
+    const v0, 0x7f040273
 
-    const v1, 0x7f040399
+    const v1, 0x7f04039e
 
     const v2, 0x10101e7
 
@@ -393,9 +393,9 @@
 
     sput-object v0, Landroidx/preference/R$styleable;->PreferenceGroup:[I
 
-    const v0, 0x7f04033e
+    const v0, 0x7f040343
 
-    const v1, 0x7f040343
+    const v1, 0x7f040348
 
     const v2, 0x101011f
 
@@ -444,9 +444,9 @@
         0x10101ef
         0x10101f0
         0x10101f1
-        0x7f04019c
-        0x7f040464
-        0x7f040465
+        0x7f04019f
+        0x7f04046a
+        0x7f04046b
     .end array-data
 
     :array_1
@@ -457,12 +457,12 @@
         0x10101f5
         0x10101f6
         0x10101f7
-        0x7f040195
-        0x7f040196
-        0x7f040197
-        0x7f04019b
-        0x7f04038a
-        0x7f0403c3
+        0x7f040198
+        0x7f040199
+        0x7f04019a
+        0x7f04019e
+        0x7f04038f
+        0x7f0403c8
     .end array-data
 
     :array_2
@@ -485,45 +485,45 @@
         0x1010561
         0x7f040032
         0x7f040034
-        0x7f04018f
         0x7f040192
-        0x7f0401c5
-        0x7f0401c7
-        0x7f040235
-        0x7f040251
-        0x7f040256
-        0x7f040275
-        0x7f040294
-        0x7f04029f
-        0x7f040398
-        0x7f0403b7
-        0x7f0403ff
-        0x7f040412
-        0x7f040427
-        0x7f040463
-        0x7f0404f3
-        0x7f04053f
+        0x7f040195
+        0x7f0401c8
+        0x7f0401ca
+        0x7f040238
+        0x7f040254
+        0x7f040259
+        0x7f04027a
+        0x7f040299
+        0x7f0402a4
+        0x7f04039d
+        0x7f0403bc
+        0x7f040405
+        0x7f040418
+        0x7f04042d
+        0x7f040469
+        0x7f0404f9
+        0x7f040545
     .end array-data
 
     :array_3
     .array-data 4
-        0x7f0400c6
-        0x7f040198
-        0x7f0401b9
-        0x7f0401be
-        0x7f0403c4
-        0x7f0403c5
-        0x7f0403c6
-        0x7f0403c7
-        0x7f0403c8
+        0x7f0400c7
+        0x7f04019b
+        0x7f0401bc
+        0x7f0401c1
         0x7f0403c9
         0x7f0403ca
         0x7f0403cb
         0x7f0403cc
         0x7f0403cd
-        0x7f0403fd
-        0x7f040468
-        0x7f040469
+        0x7f0403ce
+        0x7f0403cf
+        0x7f0403d0
+        0x7f0403d1
+        0x7f0403d2
+        0x7f040403
+        0x7f04046e
+        0x7f04046f
     .end array-data
 
     :array_4
@@ -531,10 +531,10 @@
         0x10100f2
         0x1010136
         0x7f04002d
-        0x7f040349
-        0x7f0403fc
-        0x7f04041b
-        0x7f040529
+        0x7f04034e
+        0x7f040402
+        0x7f040421
+        0x7f04052f
     .end array-data
 
     :array_5
@@ -544,11 +544,11 @@
         0x10101f1
         0x101036b
         0x101036c
-        0x7f04019c
-        0x7f040464
-        0x7f040465
-        0x7f04046c
-        0x7f04046d
+        0x7f04019f
+        0x7f04046a
+        0x7f04046b
+        0x7f040472
+        0x7f040473
     .end array-data
 
     :array_6
@@ -558,11 +558,11 @@
         0x10101f1
         0x101036b
         0x101036c
-        0x7f04019c
-        0x7f040464
-        0x7f040465
-        0x7f04046c
-        0x7f04046d
+        0x7f04019f
+        0x7f04046a
+        0x7f04046b
+        0x7f040472
+        0x7f040473
     .end array-data
 .end method
 

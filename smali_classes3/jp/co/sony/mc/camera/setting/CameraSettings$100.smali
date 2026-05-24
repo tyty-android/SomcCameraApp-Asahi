@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1418
+    .line 1650
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,6 +31,21 @@
 # virtual methods
 .method public setValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljava/util/Map;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key",
+            "value",
+            "listenersMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -46,13 +61,13 @@
         }
     .end annotation
 
-    .line 1422
+    .line 1654
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1423
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
+    .line 1655
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetIso(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/Iso;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetDriveMode(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;)Z
 
     move-result p0
 

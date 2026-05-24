@@ -27,6 +27,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "commonStatus"
+        }
+    .end annotation
 
     .line 74
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -51,6 +59,14 @@
 # virtual methods
 .method public addCallback(Ljp/co/sony/mc/camera/storage/Storage$OnStoreCompletedListener;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cb"
+        }
+    .end annotation
 
     .line 155
     iget-object v0, p0, Ljp/co/sony/mc/camera/storage/RequestFactory$RequestBuilder;->mCommonStatus:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
@@ -206,6 +222,14 @@
 
 .method public setDateTaken(J)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dateTaken"
+        }
+    .end annotation
 
     .line 107
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/RequestFactory$RequestBuilder;->mCommonStatus:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
@@ -217,6 +241,14 @@
 
 .method public setExtraOutput(Landroid/net/Uri;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "extraOutput"
+        }
+    .end annotation
 
     .line 115
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/RequestFactory$RequestBuilder;->mCommonStatus:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
@@ -228,6 +260,14 @@
 
 .method public setFilePath(Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "path"
+        }
+    .end annotation
 
     .line 87
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/RequestFactory$RequestBuilder;->mCommonStatus:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
@@ -239,6 +279,14 @@
 
 .method public setFinalInSavingGroup(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isFinalRequest"
+        }
+    .end annotation
 
     .line 139
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/storage/RequestFactory$RequestBuilder;->mFinalRequest:Z
@@ -248,6 +296,14 @@
 
 .method public setOneShot(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "oneShot"
+        }
+    .end annotation
 
     .line 147
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/storage/RequestFactory$RequestBuilder;->mIsOneShot:Z
@@ -257,6 +313,14 @@
 
 .method public setPredictiveCaptureCover(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isPredictiveCaptureCover"
+        }
+    .end annotation
 
     .line 123
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/RequestFactory$RequestBuilder;->mCommonStatus:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
@@ -268,6 +332,14 @@
 
 .method public setRequestId(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "requestId"
+        }
+    .end annotation
 
     .line 79
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/RequestFactory$RequestBuilder;->mCommonStatus:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
@@ -279,6 +351,14 @@
 
 .method public setStorageType(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     .line 95
     iput-object p1, p0, Ljp/co/sony/mc/camera/storage/RequestFactory$RequestBuilder;->mStorageType:Ljp/co/sony/mc/camera/storage/Storage$StorageType;

@@ -18,6 +18,9 @@
 .field inverse:Lcom/google/common/math/LinearTransformation;
     .annotation runtime Lcom/google/errorprone/annotations/concurrent/LazyInit;
     .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 .end field
 
 .field final slope:D
@@ -28,19 +31,29 @@
 # direct methods
 .method constructor <init>(DD)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "slope",
+            "yIntercept"
+        }
+    .end annotation
 
-    .line 166
+    .line 175
     invoke-direct {p0}, Lcom/google/common/math/LinearTransformation;-><init>()V
 
-    .line 167
+    .line 176
     iput-wide p1, p0, Lcom/google/common/math/LinearTransformation$RegularLinearTransformation;->slope:D
 
-    .line 168
+    .line 177
     iput-wide p3, p0, Lcom/google/common/math/LinearTransformation$RegularLinearTransformation;->yIntercept:D
 
     const/4 p1, 0x0
 
-    .line 169
+    .line 178
     iput-object p1, p0, Lcom/google/common/math/LinearTransformation$RegularLinearTransformation;->inverse:Lcom/google/common/math/LinearTransformation;
 
     return-void
@@ -48,17 +61,29 @@
 
 .method constructor <init>(DDLcom/google/common/math/LinearTransformation;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "slope",
+            "yIntercept",
+            "inverse"
+        }
+    .end annotation
 
-    .line 172
+    .line 181
     invoke-direct {p0}, Lcom/google/common/math/LinearTransformation;-><init>()V
 
-    .line 173
+    .line 182
     iput-wide p1, p0, Lcom/google/common/math/LinearTransformation$RegularLinearTransformation;->slope:D
 
-    .line 174
+    .line 183
     iput-wide p3, p0, Lcom/google/common/math/LinearTransformation$RegularLinearTransformation;->yIntercept:D
 
-    .line 175
+    .line 184
     iput-object p5, p0, Lcom/google/common/math/LinearTransformation$RegularLinearTransformation;->inverse:Lcom/google/common/math/LinearTransformation;
 
     return-void
@@ -67,7 +92,7 @@
 .method private createInverse()Lcom/google/common/math/LinearTransformation;
     .locals 10
 
-    .line 210
+    .line 219
     iget-wide v0, p0, Lcom/google/common/math/LinearTransformation$RegularLinearTransformation;->slope:D
 
     const-wide/16 v2, 0x0
@@ -76,7 +101,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 211
+    .line 220
     new-instance v2, Lcom/google/common/math/LinearTransformation$RegularLinearTransformation;
 
     const-wide/high16 v3, 0x3ff0000000000000L    # 1.0
@@ -99,7 +124,7 @@
 
     return-object v2
 
-    .line 213
+    .line 222
     :cond_0
     new-instance v0, Lcom/google/common/math/LinearTransformation$VerticalLinearTransformation;
 
@@ -115,12 +140,12 @@
 .method public inverse()Lcom/google/common/math/LinearTransformation;
     .locals 1
 
-    .line 200
+    .line 209
     iget-object v0, p0, Lcom/google/common/math/LinearTransformation$RegularLinearTransformation;->inverse:Lcom/google/common/math/LinearTransformation;
 
     if-nez v0, :cond_0
 
-    .line 201
+    .line 210
     invoke-direct {p0}, Lcom/google/common/math/LinearTransformation$RegularLinearTransformation;->createInverse()Lcom/google/common/math/LinearTransformation;
 
     move-result-object v0
@@ -134,7 +159,7 @@
 .method public isHorizontal()Z
     .locals 4
 
-    .line 185
+    .line 194
     iget-wide v0, p0, Lcom/google/common/math/LinearTransformation$RegularLinearTransformation;->slope:D
 
     const-wide/16 v2, 0x0
@@ -165,7 +190,7 @@
 .method public slope()D
     .locals 2
 
-    .line 190
+    .line 199
     iget-wide v0, p0, Lcom/google/common/math/LinearTransformation$RegularLinearTransformation;->slope:D
 
     return-wide v0
@@ -174,7 +199,7 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 206
+    .line 215
     iget-wide v0, p0, Lcom/google/common/math/LinearTransformation$RegularLinearTransformation;->slope:D
 
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
@@ -202,8 +227,16 @@
 
 .method public transform(D)D
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "x"
+        }
+    .end annotation
 
-    .line 195
+    .line 204
     iget-wide v0, p0, Lcom/google/common/math/LinearTransformation$RegularLinearTransformation;->slope:D
 
     mul-double/2addr p1, v0

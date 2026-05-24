@@ -30,8 +30,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/AbstractMapBasedMultiset;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 216
+    .line 223
     iput-object p1, p0, Lcom/google/common/collect/AbstractMapBasedMultiset$2;->this$0:Lcom/google/common/collect/AbstractMapBasedMultiset;
 
     invoke-direct {p0, p1}, Lcom/google/common/collect/AbstractMapBasedMultiset$Itr;-><init>(Lcom/google/common/collect/AbstractMapBasedMultiset;)V
@@ -43,6 +51,15 @@
 # virtual methods
 .method result(I)Lcom/google/common/collect/Multiset$Entry;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "entryIndex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -51,7 +68,7 @@
         }
     .end annotation
 
-    .line 219
+    .line 226
     iget-object p0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset$2;->this$0:Lcom/google/common/collect/AbstractMapBasedMultiset;
 
     iget-object p0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset;->backingMap:Lcom/google/common/collect/ObjectCountHashMap;
@@ -65,8 +82,16 @@
 
 .method bridge synthetic result(I)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "entryIndex"
+        }
+    .end annotation
 
-    .line 216
+    .line 223
     invoke-virtual {p0, p1}, Lcom/google/common/collect/AbstractMapBasedMultiset$2;->result(I)Lcom/google/common/collect/Multiset$Entry;
 
     move-result-object p0

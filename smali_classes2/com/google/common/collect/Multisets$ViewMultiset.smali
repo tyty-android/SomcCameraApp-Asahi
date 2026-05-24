@@ -28,7 +28,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1134
+    .line 1190
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMultiset;-><init>()V
 
     return-void
@@ -37,7 +37,7 @@
 .method synthetic constructor <init>(Lcom/google/common/collect/Multisets$1;)V
     .locals 0
 
-    .line 1134
+    .line 1190
     invoke-direct {p0}, Lcom/google/common/collect/Multisets$ViewMultiset;-><init>()V
 
     return-void
@@ -48,7 +48,7 @@
 .method public clear()V
     .locals 0
 
-    .line 1142
+    .line 1199
     invoke-virtual {p0}, Lcom/google/common/collect/Multisets$ViewMultiset;->elementSet()Ljava/util/Set;
 
     move-result-object p0
@@ -61,7 +61,7 @@
 .method distinctElements()I
     .locals 0
 
-    .line 1152
+    .line 1209
     invoke-virtual {p0}, Lcom/google/common/collect/Multisets$ViewMultiset;->elementSet()Ljava/util/Set;
 
     move-result-object p0
@@ -83,7 +83,7 @@
         }
     .end annotation
 
-    .line 1147
+    .line 1204
     invoke-static {p0}, Lcom/google/common/collect/Multisets;->iteratorImpl(Lcom/google/common/collect/Multiset;)Ljava/util/Iterator;
 
     move-result-object p0
@@ -94,7 +94,7 @@
 .method public size()I
     .locals 0
 
-    .line 1137
+    .line 1194
     invoke-static {p0}, Lcom/google/common/collect/Multisets;->linearTimeSizeImpl(Lcom/google/common/collect/Multiset;)I
 
     move-result p0

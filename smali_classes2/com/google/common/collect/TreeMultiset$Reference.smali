@@ -31,7 +31,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -40,7 +40,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 537
+    .line 555
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -49,7 +49,7 @@
 .method synthetic constructor <init>(Lcom/google/common/collect/TreeMultiset$1;)V
     .locals 0
 
-    .line 537
+    .line 555
     invoke-direct {p0}, Lcom/google/common/collect/TreeMultiset$Reference;-><init>()V
 
     return-void
@@ -60,26 +60,41 @@
 .method public checkAndSet(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "expected",
+            "newValue"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;TT;)V"
         }
     .end annotation
 
-    .line 546
+    .line 564
     iget-object v0, p0, Lcom/google/common/collect/TreeMultiset$Reference;->value:Ljava/lang/Object;
 
     if-ne v0, p1, :cond_0
 
-    .line 549
+    .line 567
     iput-object p2, p0, Lcom/google/common/collect/TreeMultiset$Reference;->value:Ljava/lang/Object;
 
     return-void
 
-    .line 547
+    .line 565
     :cond_0
     new-instance p0, Ljava/util/ConcurrentModificationException;
 
@@ -93,7 +108,7 @@
 
     const/4 v0, 0x0
 
-    .line 553
+    .line 571
     iput-object v0, p0, Lcom/google/common/collect/TreeMultiset$Reference;->value:Ljava/lang/Object;
 
     return-void
@@ -107,10 +122,10 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
-    .line 542
+    .line 560
     iget-object p0, p0, Lcom/google/common/collect/TreeMultiset$Reference;->value:Ljava/lang/Object;
 
     return-object p0

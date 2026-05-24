@@ -46,6 +46,20 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/CameraStorageManager;Ljp/co/sony/mc/camera/storage/SavingTaskInquiry;Ljava/util/concurrent/Semaphore;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "storageManager",
+            "inquiry",
+            "semaphore"
+        }
+    .end annotation
 
     .line 65
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -238,6 +252,16 @@
 
 .method public requestVolumeCheck(Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateInterval;Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;)V
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "delayTime",
+            "reason"
+        }
+    .end annotation
 
     .line 90
     sget-object v0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;->APP_LAUNCH:Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
@@ -402,6 +426,14 @@
 
 .method public declared-synchronized requestWriteCheck(Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "reason"
+        }
+    .end annotation
 
     monitor-enter p0
 
@@ -497,6 +529,14 @@
 
 .method public setAutoUpdateEnabled(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isEnabled"
+        }
+    .end annotation
 
     .line 136
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/storage/updater/StorageStateUpdater;->mIsAutoUpdateEnabled:Z

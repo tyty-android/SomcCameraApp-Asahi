@@ -44,7 +44,7 @@
     return-void
 
     :cond_0
-    const v1, 0x7f0904d9
+    const v1, 0x7f0904d7
 
     .line 127
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -103,7 +103,7 @@
 
     iget v6, v6, Landroid/content/res/Configuration;->orientation:I
 
-    const v7, 0x7f090254
+    const v7, 0x7f090260
 
     .line 142
     invoke-virtual {v0, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -302,6 +302,14 @@
 
 .method private getValueString(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     .line 234
     invoke-interface {p1}, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;->getTextId()I
@@ -486,6 +494,17 @@
 
 .method protected handleItemClicked(Landroid/widget/AdapterView;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "parent",
+            "position"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -599,8 +618,16 @@
 
 .method protected handleSwitchBarClicked(Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
-    const v0, 0x7f09047b
+    const v0, 0x7f09047c
 
     .line 191
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -715,6 +742,18 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "inflater",
+            "container",
+            "savedInstanceState"
+        }
+    .end annotation
 
     if-eqz p3, :cond_0
 
@@ -754,6 +793,14 @@
 
 .method public onItemChanged(Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "newItem"
+        }
+    .end annotation
 
     .line 115
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDetailFragment;->mCameraSettingItem:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
@@ -778,6 +825,15 @@
 
 .method public onItemListChanged(Ljava/util/List;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "newItems"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -833,6 +889,14 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "outState"
+        }
+    .end annotation
 
     .line 104
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDetailFragment;->getStateItemKey()Ljava/lang/String;
@@ -862,4 +926,12 @@
 .end method
 
 .method protected abstract updateViews(Landroid/view/View;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 .end method

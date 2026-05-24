@@ -24,21 +24,21 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureStateBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0903de
+    const v1, 0x7f0903df
 
     const/4 v2, 0x1
 
     .line 17
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0900d6
+    const v1, 0x7f0900d8
 
     const/4 v2, 0x2
 
     .line 18
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0900d5
+    const v1, 0x7f0900d7
 
     const/4 v2, 0x3
 
@@ -50,6 +50,16 @@
 
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root"
+        }
+    .end annotation
 
     .line 28
     sget-object v0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureStateBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -69,6 +79,18 @@
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root",
+            "bindings"
+        }
+    .end annotation
 
     const/4 v0, 0x3
 
@@ -240,6 +262,18 @@
 
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "localFieldId",
+            "object",
+            "fieldId"
+        }
+    .end annotation
 
     const/4 p0, 0x0
 
@@ -248,6 +282,14 @@
 
 .method public setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "CameraSettingsModel"
+        }
+    .end annotation
 
     .line 83
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureStateBindingImpl;->mCameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
@@ -257,6 +299,14 @@
 
 .method public setCameraStatusModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "CameraStatusModel"
+        }
+    .end annotation
 
     .line 92
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureStateBindingImpl;->mCameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
@@ -266,6 +316,14 @@
 
 .method public setOrientationViewModel(Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "OrientationViewModel"
+        }
+    .end annotation
 
     .line 86
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureStateBindingImpl;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
@@ -275,6 +333,14 @@
 
 .method public setProModeFinderOverlayUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeFinderOverlayUiState;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ProModeFinderOverlayUiState"
+        }
+    .end annotation
 
     .line 89
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureStateBindingImpl;->mProModeFinderOverlayUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeFinderOverlayUiState;
@@ -284,8 +350,18 @@
 
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "variableId",
+            "variable"
+        }
+    .end annotation
 
-    const/16 v0, 0x8
+    const/16 v0, 0xb
 
     if-ne v0, p1, :cond_0
 
@@ -297,7 +373,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x16
+    const/16 v0, 0x19
 
     if-ne v0, p1, :cond_1
 
@@ -309,7 +385,7 @@
     goto :goto_0
 
     :cond_1
-    const/16 v0, 0x19
+    const/16 v0, 0x1c
 
     if-ne v0, p1, :cond_2
 
@@ -321,7 +397,7 @@
     goto :goto_0
 
     :cond_2
-    const/16 v0, 0x9
+    const/16 v0, 0xc
 
     if-ne v0, p1, :cond_3
 

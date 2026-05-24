@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/reflect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<T:",
@@ -18,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 27
+    .line 28
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,7 +32,7 @@
 .method final capture()Ljava/lang/reflect/Type;
     .locals 2
 
-    .line 31
+    .line 32
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p0
@@ -38,14 +41,14 @@
 
     move-result-object p0
 
-    .line 32
+    .line 33
     instance-of v0, p0, Ljava/lang/reflect/ParameterizedType;
 
     const-string v1, "%s isn\'t parameterized"
 
     invoke-static {v0, v1, p0}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;)V
 
-    .line 33
+    .line 34
     check-cast p0, Ljava/lang/reflect/ParameterizedType;
 
     invoke-interface {p0}, Ljava/lang/reflect/ParameterizedType;->getActualTypeArguments()[Ljava/lang/reflect/Type;

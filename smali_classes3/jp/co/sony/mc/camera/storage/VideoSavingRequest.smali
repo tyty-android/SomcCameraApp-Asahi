@@ -14,6 +14,20 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusVideo;Ljp/co/sony/mc/camera/storage/RequestFactory$RequestBuilder;Ljp/co/sony/mc/camera/storage/Storage$OnStoreCompletedListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x0,
+            0x0
+        }
+        names = {
+            "commonStatus",
+            "videoStatus",
+            "builder",
+            "listener"
+        }
+    .end annotation
 
     .line 34
     invoke-direct {p0, p1, p3, p4}, Ljp/co/sony/mc/camera/storage/SavingRequest;-><init>(Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;Ljp/co/sony/mc/camera/storage/RequestFactory$RequestBuilder;Ljp/co/sony/mc/camera/storage/Storage$OnStoreCompletedListener;)V
@@ -47,6 +61,14 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/storage/VideoSavingRequest;)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "data"
+        }
+    .end annotation
 
     .line 46
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/storage/SavingRequest;-><init>(Ljp/co/sony/mc/camera/storage/SavingRequest;)V

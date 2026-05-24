@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements Lkotlin/jvm/functions/Function2;
 
 
 # direct methods
@@ -18,17 +18,23 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
-    check-cast p1, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState;
+    check-cast p1, Ljava/lang/Boolean;
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->$r8$lambda$8i2dThGhpf46KK-M5rHCabSAwFQ(Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState;)I
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p0
 
-    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState;
+
+    invoke-static {p0, p2}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->$r8$lambda$l6jL6MBLQrFxMyjK4FfG1EdNSEM(ZLjp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState;)Z
+
+    move-result p0
+
+    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0
 

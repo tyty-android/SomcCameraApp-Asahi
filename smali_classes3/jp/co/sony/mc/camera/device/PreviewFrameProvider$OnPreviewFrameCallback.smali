@@ -16,4 +16,16 @@
 
 # virtual methods
 .method public abstract onReceived(Ljava/nio/ByteBuffer;ILandroid/graphics/Rect;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "byteBuffer",
+            "imageFormat",
+            "size"
+        }
+    .end annotation
 .end method

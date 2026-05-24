@@ -25,8 +25,16 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/CameraActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 524
+    .line 513
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$ScreenOffReceiver;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/ScreenOffReceiverBase;-><init>()V
@@ -47,7 +55,7 @@
 .method public onScreenOff()V
     .locals 3
 
-    .line 530
+    .line 519
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
@@ -64,7 +72,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 532
+    .line 521
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$ScreenOffReceiver;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 

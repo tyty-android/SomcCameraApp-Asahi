@@ -24,7 +24,7 @@
 
 .field public static final enum ON:Ljp/co/sony/mc/camera/configuration/parameters/BurstFeedback;
 
-.field private static final sParameterTextId:I = 0x7f110166
+.field private static final sParameterTextId:I = 0x7f1101a3
 
 
 # instance fields
@@ -55,7 +55,7 @@
     .line 21
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/BurstFeedback;
 
-    const v1, 0x7f1103f4
+    const v1, 0x7f11043f
 
     const-string v2, "ON"
 
@@ -72,7 +72,7 @@
 
     const/4 v1, 0x1
 
-    const v2, 0x7f1103f3
+    const v2, 0x7f11043e
 
     const-string v3, "OFF"
 
@@ -92,6 +92,21 @@
 
 .method private constructor <init>(Ljava/lang/String;III)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)V"
@@ -121,6 +136,14 @@
 
 .method public static getOptions(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/BurstFeedback;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
     .line 60
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->isFront()Z
@@ -147,6 +170,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/BurstFeedback;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 20
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/BurstFeedback;

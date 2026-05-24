@@ -25,13 +25,13 @@
 .field index:I
 
 .field final key:Ljava/lang/Object;
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TK;"
         }
-    .end annotation
-
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
     .end annotation
 .end field
 
@@ -41,20 +41,34 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/HashBiMap;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "index"
+        }
+    .end annotation
 
-    .line 864
+    .line 888
     iput-object p1, p0, Lcom/google/common/collect/HashBiMap$EntryForKey;->this$0:Lcom/google/common/collect/HashBiMap;
 
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMapEntry;-><init>()V
 
-    .line 865
+    .line 890
     iget-object p1, p1, Lcom/google/common/collect/HashBiMap;->keys:[Ljava/lang/Object;
 
     aget-object p1, p1, p2
 
+    invoke-static {p1}, Lcom/google/common/collect/NullnessCasts;->uncheckedCastNullableTToT(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
     iput-object p1, p0, Lcom/google/common/collect/HashBiMap$EntryForKey;->key:Ljava/lang/Object;
 
-    .line 866
+    .line 891
     iput p2, p0, Lcom/google/common/collect/HashBiMap$EntryForKey;->index:I
 
     return-void
@@ -64,13 +78,16 @@
 # virtual methods
 .method public getKey()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TK;"
         }
     .end annotation
 
-    .line 877
+    .line 903
     iget-object p0, p0, Lcom/google/common/collect/HashBiMap$EntryForKey;->key:Ljava/lang/Object;
 
     return-object p0
@@ -78,26 +95,28 @@
 
 .method public getValue()Ljava/lang/Object;
     .locals 2
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TV;"
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-    .end annotation
-
-    .line 883
+    .line 909
     invoke-virtual {p0}, Lcom/google/common/collect/HashBiMap$EntryForKey;->updateIndex()V
 
-    .line 884
+    .line 921
     iget v0, p0, Lcom/google/common/collect/HashBiMap$EntryForKey;->index:I
 
     const/4 v1, -0x1
 
     if-ne v0, v1, :cond_0
 
-    const/4 p0, 0x0
+    invoke-static {}, Lcom/google/common/collect/NullnessCasts;->unsafeNull()Ljava/lang/Object;
+
+    move-result-object p0
 
     goto :goto_0
 
@@ -110,40 +129,63 @@
 
     aget-object p0, v0, p0
 
+    invoke-static {p0}, Lcom/google/common/collect/NullnessCasts;->uncheckedCastNullableTToT(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
     :goto_0
     return-object p0
 .end method
 
 .method public setValue(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 3
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TV;)TV;"
         }
     .end annotation
 
-    .line 889
+    .line 927
     invoke-virtual {p0}, Lcom/google/common/collect/HashBiMap$EntryForKey;->updateIndex()V
 
-    .line 890
+    .line 928
     iget v0, p0, Lcom/google/common/collect/HashBiMap$EntryForKey;->index:I
 
     const/4 v1, -0x1
 
     if-ne v0, v1, :cond_0
 
-    .line 891
+    .line 929
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$EntryForKey;->this$0:Lcom/google/common/collect/HashBiMap;
 
     iget-object p0, p0, Lcom/google/common/collect/HashBiMap$EntryForKey;->key:Ljava/lang/Object;
 
     invoke-virtual {v0, p0, p1}, Lcom/google/common/collect/HashBiMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 930
+    invoke-static {}, Lcom/google/common/collect/NullnessCasts;->unsafeNull()Ljava/lang/Object;
+
     move-result-object p0
 
     return-object p0
 
-    .line 893
+    .line 937
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$EntryForKey;->this$0:Lcom/google/common/collect/HashBiMap;
 
@@ -153,7 +195,11 @@
 
     aget-object v0, v0, v1
 
-    .line 894
+    invoke-static {v0}, Lcom/google/common/collect/NullnessCasts;->uncheckedCastNullableTToT(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 938
     invoke-static {v0, p1}, Lcom/google/common/base/Objects;->equal(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
@@ -162,7 +208,7 @@
 
     return-object p1
 
-    .line 897
+    .line 941
     :cond_1
     iget-object v1, p0, Lcom/google/common/collect/HashBiMap$EntryForKey;->this$0:Lcom/google/common/collect/HashBiMap;
 
@@ -178,7 +224,7 @@
 .method updateIndex()V
     .locals 2
 
-    .line 870
+    .line 895
     iget v0, p0, Lcom/google/common/collect/HashBiMap$EntryForKey;->index:I
 
     const/4 v1, -0x1
@@ -207,7 +253,7 @@
 
     if-nez v0, :cond_1
 
-    .line 871
+    .line 896
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$EntryForKey;->this$0:Lcom/google/common/collect/HashBiMap;
 

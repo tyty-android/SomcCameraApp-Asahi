@@ -41,6 +41,15 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/ImmutableSetMultimap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "multimap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -49,10 +58,10 @@
         }
     .end annotation
 
-    .line 435
+    .line 610
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableSet;-><init>()V
 
-    .line 436
+    .line 611
     iput-object p1, p0, Lcom/google/common/collect/ImmutableSetMultimap$EntrySet;->multimap:Lcom/google/common/collect/ImmutableSetMultimap;
 
     return-void
@@ -63,19 +72,27 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 441
+    .line 616
     instance-of v0, p1, Ljava/util/Map$Entry;
 
     if-eqz v0, :cond_0
 
-    .line 442
+    .line 617
     check-cast p1, Ljava/util/Map$Entry;
 
-    .line 443
+    .line 618
     iget-object p0, p0, Lcom/google/common/collect/ImmutableSetMultimap$EntrySet;->multimap:Lcom/google/common/collect/ImmutableSetMultimap;
 
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
@@ -117,7 +134,7 @@
         }
     .end annotation
 
-    .line 455
+    .line 630
     iget-object p0, p0, Lcom/google/common/collect/ImmutableSetMultimap$EntrySet;->multimap:Lcom/google/common/collect/ImmutableSetMultimap;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableSetMultimap;->entryIterator()Lcom/google/common/collect/UnmodifiableIterator;
@@ -130,7 +147,7 @@
 .method public bridge synthetic iterator()Ljava/util/Iterator;
     .locals 0
 
-    .line 432
+    .line 607
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableSetMultimap$EntrySet;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p0
@@ -141,7 +158,7 @@
 .method public size()I
     .locals 0
 
-    .line 450
+    .line 625
     iget-object p0, p0, Lcom/google/common/collect/ImmutableSetMultimap$EntrySet;->multimap:Lcom/google/common/collect/ImmutableSetMultimap;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableSetMultimap;->size()I
@@ -149,4 +166,15 @@
     move-result p0
 
     return p0
+.end method
+
+.method writeReplace()Ljava/lang/Object;
+    .locals 0
+
+    .line 644
+    invoke-super {p0}, Lcom/google/common/collect/ImmutableSet;->writeReplace()Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
 .end method

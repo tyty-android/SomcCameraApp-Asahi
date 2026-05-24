@@ -24,9 +24,9 @@
     .line 0
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    check-cast p2, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
+    check-cast p2, Ljava/lang/Boolean;
 
-    invoke-static {p1, p2}, Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;->$r8$lambda$VX0OXjoFPnK0LfFZWjZ27DGGFb4(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)Lkotlin/Pair;
+    invoke-static {p1, p2}, Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;->$r8$lambda$5kZAqg80XjKuFeX5c0QzzwZ9F-o(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljava/lang/Boolean;)Lkotlin/Pair;
 
     move-result-object p0
 

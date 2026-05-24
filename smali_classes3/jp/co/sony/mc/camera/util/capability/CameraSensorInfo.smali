@@ -11,12 +11,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nCameraSensorInfo.kt\nKotlin\n*S Kotlin\n*F\n+ 1 CameraSensorInfo.kt\njp/co/sony/mc/camera/util/capability/CameraSensorInfo\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,435:1\n1863#2,2:436\n774#2:438\n865#2,2:439\n*S KotlinDebug\n*F\n+ 1 CameraSensorInfo.kt\njp/co/sony/mc/camera/util/capability/CameraSensorInfo\n*L\n411#1:436,2\n33#1:438\n33#1:439,2\n*E\n"
+    value = "SMAP\nCameraSensorInfo.kt\nKotlin\n*S Kotlin\n*F\n+ 1 CameraSensorInfo.kt\njp/co/sony/mc/camera/util/capability/CameraSensorInfo\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,541:1\n1863#2,2:542\n*S KotlinDebug\n*F\n+ 1 CameraSensorInfo.kt\njp/co/sony/mc/camera/util/capability/CameraSensorInfo\n*L\n514#1:542,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000Z\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0003\n\u0002\u0010%\n\u0002\u0010\u000e\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u000c\u0008\u00c7\u0002\u0018\u00002\u00020\u0001:\u0001.B\t\u0008\u0003\u00a2\u0006\u0004\u0008\u0002\u0010\u0003J8\u0010\u0012\u001a\u00020\u00062\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00112\u0006\u0010\u0018\u001a\u00020\u000c2\u0006\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u001aH\u0007J(\u0010\u001c\u001a\u00020\u00062\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00112\u0006\u0010\u0018\u001a\u00020\u000cH\u0007J6\u0010\u001d\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\u00072\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00112\u0006\u0010\u0018\u001a\u00020\u000c2\u0006\u0010\u001e\u001a\u00020\u001f2\u0006\u0010 \u001a\u00020\u001aH\u0007J0\u0010!\u001a\u00020\n2\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00112\u0006\u0010\u0018\u001a\u00020\u000c2\u0006\u0010\u001e\u001a\u00020\u001f2\u0006\u0010 \u001a\u00020\u001aH\u0007J\u0016\u0010\"\u001a\u0008\u0012\u0004\u0012\u00020\n0#2\u0006\u0010\u0017\u001a\u00020\u0011H\u0007J\u001e\u0010$\u001a\u0008\u0012\u0004\u0012\u00020\n0#2\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0011H\u0007J\u0010\u0010%\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u0011H\u0003J6\u0010&\u001a\u00020\u000c2\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00112\u0008\u0008\u0002\u0010\'\u001a\u00020\u001a2\u0008\u0008\u0002\u0010\u001e\u001a\u00020\u001f2\u0008\u0008\u0002\u0010 \u001a\u00020\u001aH\u0007J6\u0010(\u001a\u00020\n2\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00112\u0008\u0008\u0002\u0010\'\u001a\u00020\u001a2\u0008\u0008\u0002\u0010\u001e\u001a\u00020\u001f2\u0008\u0008\u0002\u0010 \u001a\u00020\u001aH\u0007J,\u0010)\u001a\u00020\n2\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00112\u0008\u0008\u0002\u0010\u001e\u001a\u00020\u001f2\u0008\u0008\u0002\u0010 \u001a\u00020\u001aH\u0007J>\u0010*\u001a\u00020\n2\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00112\u0006\u0010+\u001a\u00020\u000c2\u0008\u0008\u0002\u0010,\u001a\u00020\u001a2\u0008\u0008\u0002\u0010\u001e\u001a\u00020\u001f2\u0008\u0008\u0002\u0010 \u001a\u00020\u001aH\u0007J\u001e\u0010-\u001a\u0008\u0012\u0004\u0012\u00020\n0\u00072\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0011H\u0007R \u0010\u0004\u001a\u0014\u0012\u0004\u0012\u00020\u0006\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00080\u00070\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\u000cX\u0082T\u00a2\u0006\u0002\n\u0000R\u001a\u0010\r\u001a\u0008\u0012\u0004\u0012\u00020\u00080\u00078BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000e\u0010\u000fR\u0014\u0010\u0010\u001a\u0008\u0012\u0004\u0012\u00020\u00110\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006/"
+        "\u0000^\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0003\n\u0002\u0010%\n\u0002\u0010\u000e\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u000b\u0008\u00c7\u0002\u0018\u00002\u00020\u0001:\u0001.B\t\u0008\u0003\u00a2\u0006\u0004\u0008\u0002\u0010\u0003JH\u0010\u0010\u001a\u00020\u00062\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u000c2\u0006\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u00192\u0006\u0010\u001d\u001a\u00020\u0019H\u0007J8\u0010\u001e\u001a\u00020\u00062\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u000c2\u0006\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u001bH\u0007JF\u0010\u001f\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\u00072\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u000c2\u0006\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020\u0019H\u0007J\u0016\u0010#\u001a\u0008\u0012\u0004\u0012\u00020\n0$2\u0006\u0010\u0015\u001a\u00020\u0016H\u0007J\u001e\u0010%\u001a\u0008\u0012\u0004\u0012\u00020\n0$2\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u0016H\u0007JH\u0010&\u001a\u00020\u000c2\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u000c2\u0006\u0010\'\u001a\u00020\u00192\u0006\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020\u0019H\u0007J@\u0010(\u001a\u00020\n2\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u000c2\u0006\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020\u0019H\u0007J@\u0010)\u001a\u00020\n2\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u000c2\u0006\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020\u0019H\u0007JH\u0010*\u001a\u00020\n2\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010+\u001a\u00020\u000c2\u0006\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010,\u001a\u00020\u00192\u0006\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020\u0019H\u0007J.\u0010-\u001a\u0008\u0012\u0004\u0012\u00020\n0\u00072\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u001bH\u0007R \u0010\u0004\u001a\u0014\u0012\u0004\u0012\u00020\u0006\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00080\u00070\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\u000cX\u0082T\u00a2\u0006\u0002\n\u0000R\u001a\u0010\r\u001a\u0008\u0012\u0004\u0012\u00020\u00080\u00078BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000e\u0010\u000f\u00a8\u0006/"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;",
@@ -35,28 +35,28 @@
         "invalidInfo",
         "getInvalidInfo",
         "()Ljava/util/List;",
-        "SUPPORTED_BACK_CAMERA_ID_LIST",
-        "Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;",
         "getFocalLengthText",
         "context",
         "Landroid/content/Context;",
         "mode",
         "Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;",
         "cameraId",
+        "Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;",
         "baseZoomRatio",
-        "isLineBreak",
+        "isBokeh",
         "",
+        "videoStabilizer",
+        "Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;",
+        "isLineBreak",
         "withMm",
         "getFocalLengthContentDescription",
         "getFValueList",
         "videoMfHdr",
         "Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;",
         "isHfr",
-        "getMinFocalLengthFromZoomRatio",
         "getOpticalFocalLengthRange",
         "Landroid/util/Range;",
         "getHybridZoomFocalLengthRange",
-        "getSensorName",
         "getMaxZoomRatio",
         "isNominalZoom",
         "getMinFocalLength",
@@ -99,20 +99,10 @@
 
 .field private static final INVALID_F_VALUE:F
 
-.field private static final SUPPORTED_BACK_CAMERA_ID_LIST:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;",
-            ">;"
-        }
-    .end annotation
-.end field
-
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 29
+    .locals 34
 
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;
 
@@ -120,7 +110,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->INSTANCE:Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;
 
-    .line 21
+    .line 23
     new-instance v0, Ljava/util/LinkedHashMap;
 
     invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
@@ -129,320 +119,80 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->INFO_MAP:Ljava/util/Map;
 
-    const/4 v0, 0x3
+    .line 37
+    new-instance v14, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
 
-    .line 33
-    new-array v0, v0, [Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    const v1, 0x3ff33333    # 1.9f
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->ULTRA_WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
-    const/4 v2, 0x0
+    move-result-object v15
 
-    aput-object v1, v0, v2
+    invoke-static {v15}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    move-result-object v2
 
-    const/4 v3, 0x1
+    new-instance v10, Landroid/util/Range;
 
-    aput-object v1, v0, v3
+    const/16 v1, 0x30
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    const/4 v4, 0x2
+    move-result-object v16
 
-    aput-object v1, v0, v4
+    move-object/from16 v1, v16
 
-    .line 32
-    invoke-static {v0}, Lkotlin/collections/CollectionsKt;->mutableListOf([Ljava/lang/Object;)Ljava/util/List;
+    check-cast v1, Ljava/lang/Comparable;
 
-    move-result-object v0
+    const/16 v3, 0x90
 
-    check-cast v0, Ljava/lang/Iterable;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    .line 438
-    new-instance v1, Ljava/util/ArrayList;
+    move-result-object v17
 
-    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+    move-object/from16 v3, v17
 
-    check-cast v1, Ljava/util/Collection;
+    check-cast v3, Ljava/lang/Comparable;
 
-    .line 439
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-direct {v10, v1, v3}, Landroid/util/Range;-><init>(Ljava/lang/Comparable;Ljava/lang/Comparable;)V
 
-    move-result-object v0
-
-    :cond_0
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_1
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v5
-
-    move-object v6, v5
-
-    check-cast v6, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    .line 34
-    invoke-static {v6}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isCameraSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_0
-
-    .line 439
-    invoke-interface {v1, v5}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
-
-    goto :goto_0
-
-    .line 440
-    :cond_1
-    check-cast v1, Ljava/util/List;
-
-    .line 33
-    sput-object v1, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->SUPPORTED_BACK_CAMERA_ID_LIST:Ljava/util/List;
-
-    .line 38
-    sget-object v0, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->INFO_MAP:Ljava/util/Map;
-
-    .line 39
-    new-instance v1, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
-
-    const v5, 0x3ff33333    # 1.9f
-
-    invoke-static {v5}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v5
-
-    invoke-static {v5}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v6
-
-    new-instance v14, Landroid/util/Range;
-
-    const/16 v5, 0x30
-
-    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v5
-
-    check-cast v5, Ljava/lang/Comparable;
-
-    const/16 v7, 0x90
-
-    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v7
-
-    check-cast v7, Ljava/lang/Comparable;
-
-    invoke-direct {v14, v5, v7}, Landroid/util/Range;-><init>(Ljava/lang/Comparable;Ljava/lang/Comparable;)V
-
-    const/16 v15, 0xe0
-
-    const/16 v16, 0x0
-
-    const/16 v7, 0x18
-
-    const/16 v8, 0x55
-
-    const/16 v9, 0x18
-
-    const/16 v10, 0x55
-
-    const/4 v11, 0x0
-
-    const/4 v12, 0x0
+    const/16 v12, 0x2e0
 
     const/4 v13, 0x0
 
-    move-object v5, v1
+    const/16 v3, 0x18
 
-    invoke-direct/range {v5 .. v16}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;-><init>(Ljava/util/List;IIIIIILandroid/util/Range;Landroid/util/Range;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    const/16 v4, 0x55
 
-    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
+    const/16 v5, 0x18
+
+    const/16 v6, 0x55
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const/4 v9, 0x0
+
+    const/4 v11, 0x0
+
+    move-object v1, v14
+
+    invoke-direct/range {v1 .. v13}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;-><init>(Ljava/util/List;IIIIIILandroid/util/Range;Landroid/util/Range;Landroid/util/Range;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 36
+    invoke-static {v14}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v1
 
-    const-string v5, "SEM52BC0"
+    const-string v2, "SEM52BC0"
 
-    invoke-interface {v0, v5, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 41
     new-instance v1, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
 
-    const v5, 0x400ccccd    # 2.2f
-
-    invoke-static {v5}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v5
-
-    invoke-static {v5}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v7
-
-    const/16 v16, 0x1e0
-
-    const/16 v17, 0x0
-
-    const/16 v8, 0x10
-
-    const/16 v10, 0x10
-
-    const/16 v11, 0x30
-
-    const/4 v13, 0x0
-
-    const/4 v14, 0x0
-
-    const/4 v15, 0x0
-
-    move-object v6, v1
-
-    invoke-direct/range {v6 .. v17}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;-><init>(Ljava/util/List;IIIIIILandroid/util/Range;Landroid/util/Range;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-
-    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v1
-
-    const-string v5, "SEM12BC9"
-
-    invoke-interface {v0, v5, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 43
-    new-array v1, v4, [Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
-
-    new-instance v16, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
-
-    const v4, 0x40133333    # 2.3f
-
-    invoke-static {v4}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v4
-
-    invoke-static {v4}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v5
-
-    new-instance v12, Landroid/util/Range;
-
-    const/16 v4, 0x55
-
-    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v4
-
-    check-cast v4, Ljava/lang/Comparable;
-
-    const/16 v6, 0xaa
-
-    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v6
-
-    check-cast v6, Ljava/lang/Comparable;
-
-    invoke-direct {v12, v4, v6}, Landroid/util/Range;-><init>(Ljava/lang/Comparable;Ljava/lang/Comparable;)V
-
-    const/16 v14, 0x100
-
-    const/16 v6, 0x55
-
-    const/16 v7, 0xaa
-
-    const/16 v8, 0x55
-
-    const/16 v9, 0xff
-
-    const/16 v10, 0x55
-
-    const/16 v11, 0x1fe
-
-    const/4 v13, 0x0
-
-    move-object/from16 v4, v16
-
-    invoke-direct/range {v4 .. v15}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;-><init>(Ljava/util/List;IIIIIILandroid/util/Range;Landroid/util/Range;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-
-    aput-object v16, v1, v2
-
-    .line 44
-    new-instance v2, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
-
-    const/high16 v4, 0x40600000    # 3.5f
-
-    invoke-static {v4}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v4
-
-    invoke-static {v4}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v18
-
-    new-instance v4, Landroid/util/Range;
-
-    const/16 v5, 0x55
-
-    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v5
-
-    check-cast v5, Ljava/lang/Comparable;
-
-    const/16 v6, 0xaa
-
-    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v6
-
-    check-cast v6, Ljava/lang/Comparable;
-
-    invoke-direct {v4, v5, v6}, Landroid/util/Range;-><init>(Ljava/lang/Comparable;Ljava/lang/Comparable;)V
-
-    const/16 v27, 0x100
-
-    const/16 v28, 0x0
-
-    const/16 v19, 0xaa
-
-    const/16 v20, 0x1fe
-
-    const/16 v21, 0xaa
-
-    const/16 v22, 0x1fe
-
-    const/16 v23, 0x55
-
-    const/16 v24, 0x1fe
-
-    const/16 v26, 0x0
-
-    move-object/from16 v17, v2
-
-    move-object/from16 v25, v4
-
-    invoke-direct/range {v17 .. v28}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;-><init>(Ljava/util/List;IIIIIILandroid/util/Range;Landroid/util/Range;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-
-    aput-object v2, v1, v3
-
-    .line 43
-    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v1
-
-    .line 42
-    const-string v2, "LGI12BC1"
-
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 46
-    new-instance v1, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
-
-    const v2, 0x3ff33333    # 1.9f
+    const v2, 0x400ccccd    # 2.2f
 
     invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -450,48 +200,234 @@
 
     invoke-static {v2}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v4
+    move-result-object v19
 
-    new-instance v12, Landroid/util/Range;
+    const/16 v29, 0x3e0
 
-    const/16 v2, 0x30
+    const/16 v30, 0x0
 
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    const/16 v20, 0x10
+
+    const/16 v21, 0x18
+
+    const/16 v22, 0x10
+
+    const/16 v23, 0x30
+
+    const/16 v24, 0x0
+
+    const/16 v25, 0x0
+
+    const/16 v26, 0x0
+
+    const/16 v27, 0x0
+
+    const/16 v28, 0x0
+
+    move-object/from16 v18, v1
+
+    invoke-direct/range {v18 .. v30}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;-><init>(Ljava/util/List;IIIIIILandroid/util/Range;Landroid/util/Range;Landroid/util/Range;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 40
+    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v1
+
+    const-string v2, "SEM12BC9"
+
+    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/4 v1, 0x2
+
+    .line 45
+    new-array v1, v1, [Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
+
+    new-instance v18, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
+
+    const v2, 0x40133333    # 2.3f
+
+    invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v2
 
-    check-cast v2, Ljava/lang/Comparable;
-
-    const/16 v3, 0x90
-
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v2}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v3
 
-    check-cast v3, Ljava/lang/Comparable;
+    new-instance v10, Landroid/util/Range;
 
-    invoke-direct {v12, v2, v3}, Landroid/util/Range;-><init>(Ljava/lang/Comparable;Ljava/lang/Comparable;)V
+    const/16 v2, 0x55
 
-    const/16 v13, 0xe0
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v19
+
+    move-object/from16 v2, v19
+
+    check-cast v2, Ljava/lang/Comparable;
+
+    const/16 v4, 0xaa
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v20
+
+    move-object/from16 v4, v20
+
+    check-cast v4, Ljava/lang/Comparable;
+
+    invoke-direct {v10, v2, v4}, Landroid/util/Range;-><init>(Ljava/lang/Comparable;Ljava/lang/Comparable;)V
+
+    const/16 v13, 0x300
 
     const/4 v14, 0x0
 
-    const/16 v5, 0x18
+    const/16 v4, 0x55
 
-    const/16 v6, 0x55
+    const/16 v5, 0xaa
 
-    const/16 v7, 0x18
+    const/16 v7, 0xff
 
-    const/4 v9, 0x0
+    const/16 v8, 0x55
 
-    const/4 v10, 0x0
+    const/16 v9, 0x1fe
 
-    const/4 v11, 0x0
+    const/4 v12, 0x0
 
-    move-object v3, v1
+    move-object/from16 v2, v18
 
-    invoke-direct/range {v3 .. v14}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;-><init>(Ljava/util/List;IIIIIILandroid/util/Range;Landroid/util/Range;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    invoke-direct/range {v2 .. v14}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;-><init>(Ljava/util/List;IIIIIILandroid/util/Range;Landroid/util/Range;Landroid/util/Range;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
+    const/4 v2, 0x0
+
+    aput-object v18, v1, v2
+
+    .line 46
+    new-instance v2, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
+
+    const/high16 v3, 0x40600000    # 3.5f
+
+    invoke-static {v3}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v3
+
+    invoke-static {v3}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v22
+
+    new-instance v3, Landroid/util/Range;
+
+    move-object/from16 v4, v19
+
+    check-cast v4, Ljava/lang/Comparable;
+
+    move-object/from16 v5, v20
+
+    check-cast v5, Ljava/lang/Comparable;
+
+    invoke-direct {v3, v4, v5}, Landroid/util/Range;-><init>(Ljava/lang/Comparable;Ljava/lang/Comparable;)V
+
+    const/16 v32, 0x300
+
+    const/16 v33, 0x0
+
+    const/16 v23, 0xaa
+
+    const/16 v24, 0x1fe
+
+    const/16 v25, 0xaa
+
+    const/16 v26, 0x1fe
+
+    const/16 v27, 0x55
+
+    const/16 v28, 0x1fe
+
+    const/16 v31, 0x0
+
+    move-object/from16 v21, v2
+
+    move-object/from16 v29, v3
+
+    invoke-direct/range {v21 .. v33}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;-><init>(Ljava/util/List;IIIIIILandroid/util/Range;Landroid/util/Range;Landroid/util/Range;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    const/4 v3, 0x1
+
+    aput-object v2, v1, v3
+
+    .line 44
+    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v1
+
+    const-string v2, "LGI12BC1"
+
+    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 50
+    new-instance v1, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
+
+    invoke-static {v15}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v19
+
+    new-instance v2, Landroid/util/Range;
+
+    move-object/from16 v3, v16
+
+    check-cast v3, Ljava/lang/Comparable;
+
+    move-object/from16 v4, v17
+
+    check-cast v4, Ljava/lang/Comparable;
+
+    invoke-direct {v2, v3, v4}, Landroid/util/Range;-><init>(Ljava/lang/Comparable;Ljava/lang/Comparable;)V
+
+    .line 51
+    new-instance v3, Landroid/util/Range;
+
+    const/16 v4, 0x18
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    move-object v5, v4
+
+    check-cast v5, Ljava/lang/Comparable;
+
+    move-object/from16 v6, v16
+
+    check-cast v6, Ljava/lang/Comparable;
+
+    invoke-direct {v3, v5, v6}, Landroid/util/Range;-><init>(Ljava/lang/Comparable;Ljava/lang/Comparable;)V
+
+    const/16 v29, 0xe0
+
+    const/16 v20, 0x18
+
+    const/16 v21, 0x55
+
+    const/16 v22, 0x18
+
+    const/16 v23, 0x55
+
+    const/16 v24, 0x0
+
+    const/16 v25, 0x0
+
+    const/16 v26, 0x0
+
+    move-object/from16 v18, v1
+
+    move-object/from16 v27, v2
+
+    move-object/from16 v28, v3
+
+    .line 50
+    invoke-direct/range {v18 .. v30}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;-><init>(Ljava/util/List;IIIIIILandroid/util/Range;Landroid/util/Range;Landroid/util/Range;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 49
     invoke-static {v1}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v1
@@ -500,7 +436,7 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 48
+    .line 56
     new-instance v1, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
 
     const/high16 v2, 0x40000000    # 2.0f
@@ -511,46 +447,239 @@
 
     invoke-static {v2}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v4
+    move-result-object v19
 
-    const/16 v13, 0x1e0
+    new-instance v3, Landroid/util/Range;
 
     const/16 v5, 0x10
 
-    const/16 v6, 0x18
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    const/16 v7, 0x10
+    move-result-object v5
 
-    const/16 v8, 0x30
+    move-object v6, v5
 
-    const/4 v12, 0x0
+    check-cast v6, Ljava/lang/Comparable;
 
-    move-object v3, v1
+    const/16 v7, 0x21
 
-    invoke-direct/range {v3 .. v14}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;-><init>(Ljava/util/List;IIIIIILandroid/util/Range;Landroid/util/Range;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    move-result-object v7
+
+    move-object v8, v7
+
+    check-cast v8, Ljava/lang/Comparable;
+
+    invoke-direct {v3, v6, v8}, Landroid/util/Range;-><init>(Ljava/lang/Comparable;Ljava/lang/Comparable;)V
+
+    const/16 v29, 0x1e0
+
+    const/16 v20, 0x10
+
+    const/16 v21, 0x18
+
+    const/16 v22, 0x10
+
+    const/16 v23, 0x30
+
+    const/16 v27, 0x0
+
+    move-object/from16 v18, v1
+
+    move-object/from16 v28, v3
+
+    invoke-direct/range {v18 .. v30}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;-><init>(Ljava/util/List;IIIIIILandroid/util/Range;Landroid/util/Range;Landroid/util/Range;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 55
     invoke-static {v1}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v1
 
-    const-string v2, "SEM48BC0"
+    const-string v3, "SEM48BC0"
 
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, v3, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 52
+    .line 60
     new-instance v1, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
 
-    const/high16 v2, 0x40000000    # 2.0f
+    invoke-static {v15}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
 
-    invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    move-result-object v19
 
-    move-result-object v2
+    new-instance v3, Landroid/util/Range;
+
+    move-object/from16 v6, v16
+
+    check-cast v6, Ljava/lang/Comparable;
+
+    move-object/from16 v8, v17
+
+    check-cast v8, Ljava/lang/Comparable;
+
+    invoke-direct {v3, v6, v8}, Landroid/util/Range;-><init>(Ljava/lang/Comparable;Ljava/lang/Comparable;)V
+
+    .line 61
+    new-instance v6, Landroid/util/Range;
+
+    check-cast v4, Ljava/lang/Comparable;
+
+    move-object/from16 v8, v16
+
+    check-cast v8, Ljava/lang/Comparable;
+
+    invoke-direct {v6, v4, v8}, Landroid/util/Range;-><init>(Ljava/lang/Comparable;Ljava/lang/Comparable;)V
+
+    const/16 v29, 0xe0
+
+    const/16 v20, 0x18
+
+    const/16 v21, 0x46
+
+    const/16 v22, 0x18
+
+    const/16 v23, 0x48
+
+    move-object/from16 v18, v1
+
+    move-object/from16 v27, v3
+
+    move-object/from16 v28, v6
+
+    .line 60
+    invoke-direct/range {v18 .. v30}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;-><init>(Ljava/util/List;IIIIIILandroid/util/Range;Landroid/util/Range;Landroid/util/Range;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 59
+    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v1
+
+    const-string v3, "SEM52BC2"
+
+    invoke-interface {v0, v3, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 66
+    new-instance v1, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
 
     invoke-static {v2}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
 
+    move-result-object v9
+
+    new-instance v3, Landroid/util/Range;
+
+    check-cast v5, Ljava/lang/Comparable;
+
+    check-cast v7, Ljava/lang/Comparable;
+
+    invoke-direct {v3, v5, v7}, Landroid/util/Range;-><init>(Ljava/lang/Comparable;Ljava/lang/Comparable;)V
+
+    const/16 v19, 0x1e0
+
+    const/16 v20, 0x0
+
+    const/16 v10, 0x10
+
+    const/16 v11, 0x18
+
+    const/16 v12, 0x10
+
+    const/16 v13, 0x30
+
+    const/4 v14, 0x0
+
+    const/4 v15, 0x0
+
+    const/16 v16, 0x0
+
+    const/16 v17, 0x0
+
+    move-object v8, v1
+
+    move-object/from16 v18, v3
+
+    invoke-direct/range {v8 .. v20}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;-><init>(Ljava/util/List;IIIIIILandroid/util/Range;Landroid/util/Range;Landroid/util/Range;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 65
+    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v1
+
+    const-string v3, "SEM48BC1"
+
+    invoke-interface {v0, v3, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 70
+    new-instance v1, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
+
+    const v3, 0x40333333    # 2.8f
+
+    invoke-static {v3}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v3
+
+    invoke-static {v3}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v5
+
+    new-instance v13, Landroid/util/Range;
+
+    const/16 v3, 0x8c
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/Comparable;
+
+    const/16 v4, 0x1a4
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
     move-result-object v4
 
-    const/4 v5, 0x0
+    check-cast v4, Ljava/lang/Comparable;
+
+    invoke-direct {v13, v3, v4}, Landroid/util/Range;-><init>(Ljava/lang/Comparable;Ljava/lang/Comparable;)V
+
+    const/16 v15, 0x280
+
+    const/16 v6, 0x46
+
+    const/16 v7, 0x8c
+
+    const/16 v8, 0x46
+
+    const/16 v9, 0xd2
+
+    const/16 v10, 0x46
+
+    const/16 v11, 0x1a4
+
+    const/4 v12, 0x0
+
+    const/4 v14, 0x0
+
+    move-object v4, v1
+
+    invoke-direct/range {v4 .. v16}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;-><init>(Ljava/util/List;IIIIIILandroid/util/Range;Landroid/util/Range;Landroid/util/Range;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 69
+    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v1
+
+    const-string v3, "SEM48BC2"
+
+    invoke-interface {v0, v3, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 75
+    new-instance v1, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
+
+    invoke-static {v2}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v5
+
+    const/16 v15, 0x3e0
 
     const/4 v6, 0x0
 
@@ -558,10 +687,19 @@
 
     const/4 v8, 0x0
 
-    move-object v3, v1
+    const/4 v9, 0x0
 
-    invoke-direct/range {v3 .. v14}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;-><init>(Ljava/util/List;IIIIIILandroid/util/Range;Landroid/util/Range;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    const/4 v10, 0x0
 
+    const/4 v11, 0x0
+
+    const/4 v13, 0x0
+
+    move-object v4, v1
+
+    invoke-direct/range {v4 .. v16}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;-><init>(Ljava/util/List;IIIIIILandroid/util/Range;Landroid/util/Range;Landroid/util/Range;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 74
     invoke-static {v1}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v1
@@ -572,7 +710,7 @@
 
     const/16 v0, 0x8
 
-    .line 53
+    .line 77
     sput v0, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->$stable:I
 
     return-void
@@ -581,152 +719,131 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 20
+    .line 22
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static final getBaseZoomRatioIndex(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)I
-    .locals 1
+.method public static final getBaseZoomRatioIndex(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;ZLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)I
+    .locals 9
     .annotation runtime Lkotlin/jvm/JvmStatic;
     .end annotation
 
     const-string v0, "mode"
 
+    move-object v1, p0
+
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "cameraId"
 
+    move-object v2, p1
+
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string/jumbo v0, "videoMfHdr"
+    const-string/jumbo v0, "videoStabilizer"
+
+    move-object v3, p4
 
     invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 381
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoFraming()Z
+    const-string/jumbo v0, "videoMfHdr"
+
+    move-object v7, p6
+
+    invoke-static {p6, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 476
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
 
     move-result v0
+
+    .line 477
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoFraming()Z
+
+    move-result v4
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isGimbal()Z
 
-    move-result p0
+    move-result v5
 
-    .line 380
-    invoke-static {p1, p4, p5, v0, p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSwitchPointZoomRatio(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;ZZZ)Ljava/util/List;
+    invoke-virtual {p4}, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->getValue()Ljava/lang/String;
 
-    move-result-object p0
+    move-result-object v6
 
-    .line 383
-    move-object p1, p0
+    move-object v1, p1
 
-    check-cast p1, Ljava/util/Collection;
+    move v2, v0
 
-    invoke-interface {p1}, Ljava/util/Collection;->size()I
+    move v3, p3
 
-    move-result p1
+    move/from16 v8, p7
 
-    const/4 p4, 0x0
-
-    move p5, p4
-
-    :goto_0
-    if-ge p5, p1, :cond_1
-
-    .line 384
-    invoke-interface {p0, p5}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    .line 476
+    invoke-static/range {v1 .. v8}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSwitchPointZoomRatio(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZZZZLjava/lang/String;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljava/util/List;
 
     move-result-object v0
 
-    check-cast v0, Ljava/lang/Float;
+    .line 479
+    move-object v1, v0
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(FLjava/lang/Float;)Z
+    check-cast v1, Ljava/util/Collection;
 
-    move-result v0
+    invoke-interface {v1}, Ljava/util/Collection;->size()I
 
-    if-eqz v0, :cond_0
+    move-result v1
 
-    move p4, p5
+    const/4 v2, 0x0
 
-    goto :goto_1
-
-    :cond_0
-    add-int/lit8 p5, p5, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    :goto_1
-    if-eqz p3, :cond_2
-
-    add-int/lit8 p4, p4, -0x1
-
-    :cond_2
-    return p4
-.end method
-
-.method public static synthetic getBaseZoomRatioIndex$default(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;ZILjava/lang/Object;)I
-    .locals 7
-
-    and-int/lit8 p7, p6, 0x8
-
-    const/4 v0, 0x0
-
-    if-eqz p7, :cond_0
-
-    move v4, v0
-
-    goto :goto_0
-
-    :cond_0
-    move v4, p3
+    move v3, v2
 
     :goto_0
-    and-int/lit8 p3, p6, 0x10
+    if-ge v3, v1, :cond_1
 
-    if-eqz p3, :cond_1
+    .line 480
+    invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    .line 377
-    sget-object p4, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+    move-result-object v4
 
-    :cond_1
-    move-object v5, p4
+    check-cast v4, Ljava/lang/Float;
 
-    and-int/lit8 p3, p6, 0x20
+    move v5, p2
 
-    if-eqz p3, :cond_2
+    invoke-static {p2, v4}, Lkotlin/jvm/internal/Intrinsics;->areEqual(FLjava/lang/Float;)Z
 
-    move v6, v0
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    move v2, v3
 
     goto :goto_1
 
-    :cond_2
-    move v6, p5
+    :cond_0
+    add-int/lit8 v3, v3, 0x1
 
+    goto :goto_0
+
+    :cond_1
     :goto_1
-    move-object v1, p0
+    if-eqz p5, :cond_2
 
-    move-object v2, p1
+    add-int/lit8 v2, v2, -0x1
 
-    move v3, p2
-
-    .line 371
-    invoke-static/range {v1 .. v6}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getBaseZoomRatioIndex(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)I
-
-    move-result p0
-
-    return p0
+    :cond_2
+    return v2
 .end method
 
-.method public static final getFValueList(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljava/util/List;
-    .locals 8
+.method public static final getFValueList(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljava/util/List;
+    .locals 11
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;",
             "Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;",
-            "F",
+            "FZ",
+            "Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;",
             "Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;",
             "Z)",
             "Ljava/util/List<",
@@ -740,50 +857,73 @@
 
     const-string v0, "mode"
 
+    move-object v7, p0
+
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "cameraId"
 
+    move-object v8, p1
+
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string/jumbo v0, "videoStabilizer"
+
+    move-object v9, p4
+
+    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string/jumbo v0, "videoMfHdr"
 
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object/from16 v10, p5
 
-    .line 150
+    invoke-static {v10, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 200
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSensorName(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 151
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio;->Companion:Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio$Companion;
-
-    invoke-virtual {v1, p1, p2}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio$Companion;->isInHybridZoomRange(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;F)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    .line 152
-    invoke-virtual {p3}, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->getBooleanValue()Z
+    .line 201
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isGimbal()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    if-nez p4, :cond_0
+    invoke-virtual/range {p5 .. p5}, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->getBooleanValue()Z
 
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    if-nez p6, :cond_0
+
+    .line 202
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoFraming()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isGimbal()Z
+    .line 203
+    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio;->Companion:Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio$Companion;
+
+    move-object v2, p0
+
+    move-object v3, p1
+
+    move v4, p2
+
+    move v5, p3
+
+    move-object v6, p4
+
+    invoke-virtual/range {v1 .. v6}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio$Companion;->isInHybridZoomRange(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;)Z
 
     move-result v1
 
-    if-nez v1, :cond_0
+    if-eqz v1, :cond_0
 
     const/4 v1, 0x1
 
@@ -793,93 +933,97 @@
     const/4 v1, 0x0
 
     :goto_0
-    move v5, v1
+    move v6, v1
 
-    move-object v2, p0
+    move-object v1, p0
 
-    move-object v3, p1
+    move-object v2, p1
 
-    move v4, p2
+    move v3, p2
 
-    move-object v6, p3
+    move v4, p3
 
-    move v7, p4
+    move-object v5, p4
 
-    .line 153
-    invoke-static/range {v2 .. v7}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getBaseZoomRatioIndex(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)I
+    move-object/from16 v7, p5
 
-    move-result p0
+    move/from16 v8, p6
 
-    .line 155
-    sget-object p1, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->INFO_MAP:Ljava/util/Map;
+    .line 204
+    invoke-static/range {v1 .. v8}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getBaseZoomRatioIndex(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;ZLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)I
 
-    invoke-interface {p1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    move-result v1
 
-    move-result-object p2
+    .line 206
+    sget-object v2, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->INFO_MAP:Ljava/util/Map;
 
-    check-cast p2, Ljava/util/List;
+    invoke-interface {v2, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    if-eqz p2, :cond_1
+    move-result-object v3
 
-    invoke-interface {p2}, Ljava/util/List;->size()I
+    check-cast v3, Ljava/util/List;
 
-    move-result p2
+    if-eqz v3, :cond_1
+
+    invoke-interface {v3}, Ljava/util/List;->size()I
+
+    move-result v3
 
     goto :goto_1
 
     :cond_1
-    const/4 p2, -0x1
+    const/4 v3, -0x1
 
     :goto_1
-    if-ge p0, p2, :cond_3
+    if-ge v1, v3, :cond_3
 
-    .line 156
-    invoke-interface {p1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 207
+    invoke-interface {v2, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object p1
+    move-result-object v0
 
-    check-cast p1, Ljava/util/List;
+    check-cast v0, Ljava/util/List;
 
-    if-eqz p1, :cond_2
+    if-eqz v0, :cond_2
 
-    invoke-interface {p1, p0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    move-result-object p0
+    move-result-object v0
 
-    check-cast p0, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
+    check-cast v0, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
 
     goto :goto_2
 
     :cond_2
-    const/4 p0, 0x0
+    const/4 v0, 0x0
 
     :goto_2
-    invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;->getFValueList()Ljava/util/List;
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;->getFValueList()Ljava/util/List;
 
-    move-result-object p0
+    move-result-object v0
 
     goto :goto_3
 
     :cond_3
-    const/4 p0, 0x0
+    const/4 v0, 0x0
 
-    .line 158
-    invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    .line 209
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
-    move-result-object p0
+    move-result-object v0
 
-    invoke-static {p0}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v0}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object p0
+    move-result-object v0
 
     :goto_3
-    return-object p0
+    return-object v0
 .end method
 
-.method public static final getFocalLengthContentDescription(Landroid/content/Context;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;F)Ljava/lang/String;
-    .locals 6
+.method public static final getFocalLengthContentDescription(Landroid/content/Context;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;)Ljava/lang/String;
+    .locals 9
     .annotation runtime Lkotlin/jvm/JvmStatic;
     .end annotation
 
@@ -895,23 +1039,45 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 117
-    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+    const-string/jumbo v0, "videoStabilizer"
 
-    const/4 v1, 0x0
+    invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {p2, v0, v1, v1, v1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isOpticalZoomSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;ZZZ)Z
+    .line 158
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
+
+    move-result v2
+
+    .line 160
+    invoke-virtual {p5}, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->getValue()Ljava/lang/String;
+
+    move-result-object v6
+
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+
+    const/4 v8, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    move-object v1, p2
+
+    move v3, p4
+
+    .line 158
+    invoke-static/range {v1 .. v8}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isOpticalZoomSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZZZZLjava/lang/String;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 119
+    .line 162
     invoke-static {p2}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getOpticalFocalLengthRange(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Landroid/util/Range;
 
     move-result-object p1
 
-    .line 121
+    .line 164
     invoke-virtual {p1}, Landroid/util/Range;->getLower()Ljava/lang/Comparable;
 
     move-result-object p2
@@ -936,9 +1102,9 @@
 
     move-result-object p1
 
-    const p2, 0x7f1100bb
+    const p2, 0x7f1100cf
 
-    .line 120
+    .line 163
     invoke-virtual {p0, p2, p1}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
@@ -950,9 +1116,9 @@
     return-object p0
 
     :cond_0
-    const/4 v4, 0x0
+    const/4 v6, 0x0
 
-    const/4 v5, 0x1
+    const/4 v7, 0x1
 
     move-object v0, p0
 
@@ -962,227 +1128,273 @@
 
     move v3, p3
 
-    .line 123
-    invoke-static/range {v0 .. v5}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getFocalLengthText(Landroid/content/Context;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZZ)Ljava/lang/String;
+    move v4, p4
+
+    move-object v5, p5
+
+    .line 166
+    invoke-static/range {v0 .. v7}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getFocalLengthText(Landroid/content/Context;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;ZZ)Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final getFocalLengthText(Landroid/content/Context;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZZ)Ljava/lang/String;
-    .locals 4
+.method public static final getFocalLengthText(Landroid/content/Context;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;ZZ)Ljava/lang/String;
+    .locals 13
     .annotation runtime Lkotlin/jvm/JvmStatic;
     .end annotation
 
-    const-string v0, "context"
+    move-object v0, p0
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v1, "context"
 
-    const-string v0, "mode"
+    invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v1, "mode"
 
-    const-string v0, "cameraId"
+    move-object v2, p1
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 76
-    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+    const-string v1, "cameraId"
 
-    const/4 v1, 0x0
+    move-object v11, p2
 
-    invoke-static {p2, v0, v1, v1, v1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isOpticalZoomSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;ZZZ)Z
+    invoke-static {p2, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    move-result v0
+    const-string/jumbo v1, "videoStabilizer"
 
-    const-string v2, "format(...)"
+    move-object/from16 v12, p5
 
-    const-string v3, "getString(...)"
+    invoke-static {v12, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz v0, :cond_2
+    .line 104
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
 
-    .line 78
+    move-result v4
+
+    .line 106
+    invoke-virtual/range {p5 .. p5}, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->getValue()Ljava/lang/String;
+
+    move-result-object v8
+
+    sget-object v9, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+
+    const/4 v10, 0x0
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
+
+    move-object v3, p2
+
+    move/from16 v5, p4
+
+    .line 104
+    invoke-static/range {v3 .. v10}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isOpticalZoomSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZZZZLjava/lang/String;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Z
+
+    move-result v1
+
+    const-string v9, "format(...)"
+
+    const-string v10, "getString(...)"
+
+    if-eqz v1, :cond_2
+
+    .line 108
     invoke-static {p2}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getOpticalFocalLengthRange(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Landroid/util/Range;
 
-    move-result-object p1
+    move-result-object v1
 
-    const/4 p2, 0x2
+    const/4 v2, 0x2
 
-    if-nez p5, :cond_0
+    if-nez p7, :cond_0
 
-    .line 80
-    sget-object p3, Lkotlin/jvm/internal/StringCompanionObject;->INSTANCE:Lkotlin/jvm/internal/StringCompanionObject;
+    .line 110
+    sget-object v3, Lkotlin/jvm/internal/StringCompanionObject;->INSTANCE:Lkotlin/jvm/internal/StringCompanionObject;
 
-    sget-object p3, Ljava/util/Locale;->US:Ljava/util/Locale;
+    sget-object v3, Ljava/util/Locale;->US:Ljava/util/Locale;
 
-    const p4, 0x7f1102ef
+    const v4, 0x7f110338
 
-    invoke-virtual {p0, p4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
-    move-result-object p0
+    move-result-object v0
 
-    invoke-static {p0, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v10}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 81
-    invoke-virtual {p1}, Landroid/util/Range;->getLower()Ljava/lang/Comparable;
+    .line 111
+    invoke-virtual {v1}, Landroid/util/Range;->getLower()Ljava/lang/Comparable;
 
-    move-result-object p4
+    move-result-object v4
 
-    invoke-virtual {p1}, Landroid/util/Range;->getUpper()Ljava/lang/Comparable;
+    invoke-virtual {v1}, Landroid/util/Range;->getUpper()Ljava/lang/Comparable;
 
-    move-result-object p1
+    move-result-object v1
 
-    filled-new-array {p4, p1}, [Ljava/lang/Object;
+    filled-new-array {v4, v1}, [Ljava/lang/Object;
 
-    move-result-object p1
+    move-result-object v1
 
-    .line 80
-    invoke-static {p1, p2}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+    .line 110
+    invoke-static {v1, v2}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
-    move-result-object p1
+    move-result-object v1
 
-    invoke-static {p3, p0, p1}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v3, v0, v1}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result-object p0
+    move-result-object v0
 
-    invoke-static {p0, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v9}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     goto :goto_0
 
     :cond_0
-    if-eqz p4, :cond_1
+    if-eqz p6, :cond_1
 
-    .line 83
-    sget-object p3, Lkotlin/jvm/internal/StringCompanionObject;->INSTANCE:Lkotlin/jvm/internal/StringCompanionObject;
+    .line 113
+    sget-object v3, Lkotlin/jvm/internal/StringCompanionObject;->INSTANCE:Lkotlin/jvm/internal/StringCompanionObject;
 
-    sget-object p3, Ljava/util/Locale;->US:Ljava/util/Locale;
+    sget-object v3, Ljava/util/Locale;->US:Ljava/util/Locale;
 
-    const p4, 0x7f1102ee
+    const v4, 0x7f110337
 
-    invoke-virtual {p0, p4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
-    move-result-object p0
+    move-result-object v0
 
-    invoke-static {p0, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v10}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 84
-    invoke-virtual {p1}, Landroid/util/Range;->getLower()Ljava/lang/Comparable;
+    .line 114
+    invoke-virtual {v1}, Landroid/util/Range;->getLower()Ljava/lang/Comparable;
 
-    move-result-object p4
+    move-result-object v4
 
-    invoke-virtual {p1}, Landroid/util/Range;->getUpper()Ljava/lang/Comparable;
+    invoke-virtual {v1}, Landroid/util/Range;->getUpper()Ljava/lang/Comparable;
 
-    move-result-object p1
+    move-result-object v1
 
-    filled-new-array {p4, p1}, [Ljava/lang/Object;
+    filled-new-array {v4, v1}, [Ljava/lang/Object;
 
-    move-result-object p1
+    move-result-object v1
 
-    .line 83
-    invoke-static {p1, p2}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+    .line 113
+    invoke-static {v1, v2}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
-    move-result-object p1
+    move-result-object v1
 
-    invoke-static {p3, p0, p1}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v3, v0, v1}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result-object p0
+    move-result-object v0
 
-    invoke-static {p0, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v9}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 86
+    .line 116
     :cond_1
-    sget-object p3, Lkotlin/jvm/internal/StringCompanionObject;->INSTANCE:Lkotlin/jvm/internal/StringCompanionObject;
+    sget-object v3, Lkotlin/jvm/internal/StringCompanionObject;->INSTANCE:Lkotlin/jvm/internal/StringCompanionObject;
 
-    sget-object p3, Ljava/util/Locale;->US:Ljava/util/Locale;
+    sget-object v3, Ljava/util/Locale;->US:Ljava/util/Locale;
 
-    const p4, 0x7f1102f0
+    const v4, 0x7f110339
 
-    invoke-virtual {p0, p4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
-    move-result-object p0
+    move-result-object v0
 
-    invoke-static {p0, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v10}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 87
-    invoke-virtual {p1}, Landroid/util/Range;->getLower()Ljava/lang/Comparable;
+    .line 117
+    invoke-virtual {v1}, Landroid/util/Range;->getLower()Ljava/lang/Comparable;
 
-    move-result-object p4
+    move-result-object v4
 
-    invoke-virtual {p1}, Landroid/util/Range;->getUpper()Ljava/lang/Comparable;
+    invoke-virtual {v1}, Landroid/util/Range;->getUpper()Ljava/lang/Comparable;
 
-    move-result-object p1
+    move-result-object v1
 
-    filled-new-array {p4, p1}, [Ljava/lang/Object;
+    filled-new-array {v4, v1}, [Ljava/lang/Object;
 
-    move-result-object p1
+    move-result-object v1
 
-    .line 86
-    invoke-static {p1, p2}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+    .line 116
+    invoke-static {v1, v2}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
-    move-result-object p1
+    move-result-object v1
 
-    invoke-static {p3, p0, p1}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v3, v0, v1}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result-object p0
+    move-result-object v0
 
-    invoke-static {p0, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v9}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     :goto_0
-    return-object p0
+    return-object v0
 
-    .line 91
+    .line 126
     :cond_2
-    sget-object p4, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
 
-    .line 90
-    invoke-static {p1, p2, p3, p4, v1}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getMinFocalLengthFromZoomRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)I
+    const/4 v8, 0x0
 
-    move-result p1
+    move-object v2, p1
 
-    .line 92
-    sget-object p2, Lkotlin/jvm/internal/StringCompanionObject;->INSTANCE:Lkotlin/jvm/internal/StringCompanionObject;
+    move-object v3, p2
 
-    .line 93
-    sget-object p2, Ljava/util/Locale;->US:Ljava/util/Locale;
+    move/from16 v4, p3
 
-    const p3, 0x7f1102ed
+    move/from16 v5, p4
 
-    invoke-virtual {p0, p3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    move-object/from16 v6, p5
 
-    move-result-object p0
+    .line 120
+    invoke-static/range {v2 .. v8}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getMinFocalLength(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)I
 
-    invoke-static {p0, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    move-result v1
 
-    .line 95
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    .line 129
+    sget-object v2, Lkotlin/jvm/internal/StringCompanionObject;->INSTANCE:Lkotlin/jvm/internal/StringCompanionObject;
 
-    move-result-object p1
+    .line 130
+    sget-object v2, Ljava/util/Locale;->US:Ljava/util/Locale;
 
-    filled-new-array {p1}, [Ljava/lang/Object;
+    const v3, 0x7f110336
 
-    move-result-object p1
+    invoke-virtual {p0, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
-    const/4 p3, 0x1
+    move-result-object v0
 
-    .line 92
-    invoke-static {p1, p3}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+    invoke-static {v0, v10}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    move-result-object p1
+    .line 132
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    invoke-static {p2, p0, p1}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object p0
+    filled-new-array {v1}, [Ljava/lang/Object;
 
-    invoke-static {p0, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    move-result-object v1
 
-    return-object p0
+    const/4 v3, 0x1
+
+    .line 129
+    invoke-static {v1, v3}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-static {v2, v0, v1}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0, v9}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-object v0
 .end method
 
 .method public static final getHybridZoomFocalLengthRange(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Landroid/util/Range;
-    .locals 5
+    .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1206,141 +1418,151 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 228
+    .line 238
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSensorName(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object v0
 
-    .line 229
-    sget-object v0, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->INFO_MAP:Ljava/util/Map;
+    .line 239
+    sget-object v1, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->INFO_MAP:Ljava/util/Map;
 
-    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v1
+    move-result-object v2
 
-    check-cast v1, Ljava/util/List;
-
-    const/4 v2, 0x0
+    check-cast v2, Ljava/util/List;
 
     const/4 v3, 0x0
 
-    .line 238
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    const/4 v4, 0x0
 
-    move-result-object v4
+    .line 252
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    if-eqz v1, :cond_0
+    move-result-object v5
 
-    .line 229
-    invoke-interface {v1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    if-eqz v2, :cond_0
 
-    move-result-object v1
+    .line 239
+    invoke-interface {v2, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    check-cast v1, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
+    move-result-object v2
 
-    if-eqz v1, :cond_0
+    check-cast v2, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
 
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;->getHybridZoomRange()Landroid/util/Range;
+    if-eqz v2, :cond_0
 
-    move-result-object v1
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;->getHybridZoomRange()Landroid/util/Range;
+
+    move-result-object v2
 
     goto :goto_0
 
     :cond_0
-    move-object v1, v2
+    move-object v2, v3
 
     :goto_0
-    if-eqz v1, :cond_5
+    if-eqz v2, :cond_5
 
-    .line 230
-    sget-object v1, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    .line 240
+    sget-object v2, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    invoke-static {v1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isCameraSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
+    invoke-static {v2}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isCameraSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
 
-    move-result v1
+    move-result v2
 
-    if-eqz v1, :cond_3
+    if-eqz v2, :cond_3
 
-    .line 231
+    .line 241
+    sget-object v2, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    if-eq p1, v2, :cond_3
+
+    sget-object v2, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE_PHYSICAL:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    if-eq p1, v2, :cond_3
+
+    .line 242
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
 
     move-result p0
 
     if-nez p0, :cond_3
 
-    .line 232
+    .line 244
     new-instance p0, Landroid/util/Range;
 
-    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/util/List;
-
-    if-eqz v1, :cond_1
-
-    invoke-interface {v1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
-
-    if-eqz v1, :cond_1
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;->getHybridZoomRange()Landroid/util/Range;
-
-    move-result-object v1
-
-    goto :goto_1
-
-    :cond_1
-    move-object v1, v2
-
-    :goto_1
-    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
-    invoke-virtual {v1}, Landroid/util/Range;->getLower()Ljava/lang/Comparable;
-
-    move-result-object v1
-
-    .line 233
-    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 245
+    invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, Ljava/util/List;
 
-    if-eqz p1, :cond_2
+    if-eqz p1, :cond_1
 
-    invoke-interface {p1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {p1, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
 
-    move-object v2, p1
+    check-cast p1, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
 
-    check-cast v2, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;->getHybridZoomRange()Landroid/util/Range;
+
+    move-result-object p1
+
+    goto :goto_1
+
+    :cond_1
+    move-object p1, v3
+
+    :goto_1
+    invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-virtual {p1}, Landroid/util/Range;->getLower()Ljava/lang/Comparable;
+
+    move-result-object p1
+
+    .line 246
+    invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/util/List;
+
+    if-eqz v0, :cond_2
+
+    invoke-interface {v0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v3, v0
+
+    check-cast v3, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
 
     :cond_2
-    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    invoke-virtual {v2}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;->getZoomControlMaxFocalLength()I
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;->getZoomControlMaxFocalLength()I
 
-    move-result p1
+    move-result v0
 
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object p1
+    move-result-object v0
 
-    check-cast p1, Ljava/lang/Comparable;
+    check-cast v0, Ljava/lang/Comparable;
 
-    .line 232
-    invoke-direct {p0, v1, p1}, Landroid/util/Range;-><init>(Ljava/lang/Comparable;Ljava/lang/Comparable;)V
+    .line 244
+    invoke-direct {p0, p1, v0}, Landroid/util/Range;-><init>(Ljava/lang/Comparable;Ljava/lang/Comparable;)V
 
     goto :goto_2
 
-    .line 235
+    .line 249
     :cond_3
-    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -1348,7 +1570,7 @@
 
     if-eqz p0, :cond_4
 
-    invoke-interface {p0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {p0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -1358,33 +1580,33 @@
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;->getHybridZoomRange()Landroid/util/Range;
 
-    move-result-object v2
+    move-result-object v3
 
     :cond_4
-    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    move-object p0, v2
+    move-object p0, v3
 
     goto :goto_2
 
-    .line 238
+    .line 252
     :cond_5
     new-instance p0, Landroid/util/Range;
 
-    move-object p1, v4
+    move-object p1, v5
 
     check-cast p1, Ljava/lang/Comparable;
 
-    check-cast v4, Ljava/lang/Comparable;
+    check-cast v5, Ljava/lang/Comparable;
 
-    invoke-direct {p0, p1, v4}, Landroid/util/Range;-><init>(Ljava/lang/Comparable;Ljava/lang/Comparable;)V
+    invoke-direct {p0, p1, v5}, Landroid/util/Range;-><init>(Ljava/lang/Comparable;Ljava/lang/Comparable;)V
 
     :goto_2
     return-object p0
 .end method
 
 .method private final getInvalidInfo()Ljava/util/List;
-    .locals 12
+    .locals 13
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -1394,7 +1616,7 @@
         }
     .end annotation
 
-    .line 28
+    .line 30
     new-instance p0, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
 
     const/4 v0, 0x0
@@ -1407,9 +1629,9 @@
 
     move-result-object v1
 
-    const/16 v10, 0x1c0
+    const/16 v11, 0x3c0
 
-    const/4 v11, 0x0
+    const/4 v12, 0x0
 
     const/4 v2, -0x1
 
@@ -1427,9 +1649,11 @@
 
     const/4 v9, 0x0
 
+    const/4 v10, 0x0
+
     move-object v0, p0
 
-    invoke-direct/range {v0 .. v11}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;-><init>(Ljava/util/List;IIIIIILandroid/util/Range;Landroid/util/Range;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    invoke-direct/range {v0 .. v12}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;-><init>(Ljava/util/List;IIIIIILandroid/util/Range;Landroid/util/Range;Landroid/util/Range;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     invoke-static {p0}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
 
@@ -1438,538 +1662,662 @@
     return-object p0
 .end method
 
-.method public static final getMaxFocalLength(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)I
-    .locals 5
+.method public static final getMaxFocalLength(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)I
+    .locals 16
     .annotation runtime Lkotlin/jvm/JvmStatic;
     .end annotation
 
-    const-string v0, "mode"
+    move-object/from16 v0, p1
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v1, "mode"
 
-    const-string v0, "cameraId"
+    move-object/from16 v8, p0
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v8, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string/jumbo v0, "videoMfHdr"
+    const-string v1, "cameraId"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 338
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getSensorName(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/lang/String;
+    const-string/jumbo v1, "videoStabilizer"
+
+    move-object/from16 v9, p4
+
+    invoke-static {v9, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string/jumbo v1, "videoMfHdr"
+
+    move-object/from16 v10, p5
+
+    invoke-static {v10, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 400
+    sget-object v1, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    const-string v11, "getSupportedBackLogicalCameraIdList(...)"
+
+    if-ne v0, v1, :cond_0
+
+    .line 401
+    invoke-static {}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSupportedBackLogicalCameraIdList()Ljava/util/List;
 
     move-result-object v0
 
-    .line 340
-    sget-object v1, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->INFO_MAP:Ljava/util/Map;
+    invoke-static {v0, v11}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Lkotlin/collections/CollectionsKt;->last(Ljava/util/List;)Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v0
 
-    const/4 v3, 0x1
+    check-cast v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    if-nez v2, :cond_0
-
-    return v3
-
-    .line 342
+    .line 405
     :cond_0
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isHybridZoomSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSensorName(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/lang/String;
 
-    move-result v2
+    move-result-object v12
 
-    const/4 v4, 0x0
+    .line 406
+    sget-object v13, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->INFO_MAP:Ljava/util/Map;
 
-    if-eqz v2, :cond_1
+    invoke-interface {v13, v12}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 343
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->getBooleanValue()Z
+    move-result-object v1
 
-    move-result p2
+    const/4 v14, 0x1
 
-    if-nez p2, :cond_1
+    if-nez v1, :cond_1
 
-    if-nez p3, :cond_1
+    return v14
+
+    .line 408
+    :cond_1
+    invoke-virtual/range {p0 .. p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoFraming()Z
+
+    move-result v1
+
+    const/4 v15, 0x0
+
+    if-nez v1, :cond_2
+
+    .line 409
+    invoke-virtual/range {p0 .. p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isGimbal()Z
+
+    move-result v1
+
+    if-nez v1, :cond_2
+
+    .line 410
+    invoke-virtual/range {p5 .. p5}, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->getBooleanValue()Z
+
+    move-result v1
+
+    if-nez v1, :cond_2
+
+    if-nez p6, :cond_2
+
+    .line 412
+    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio;->Companion:Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio$Companion;
+
+    .line 413
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    move-object/from16 v3, p0
+
+    move-object v4, v0
+
+    move/from16 v5, p2
+
+    move/from16 v6, p3
+
+    move-object/from16 v7, p4
+
+    .line 412
+    invoke-virtual/range {v2 .. v7}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio$Companion;->isInHybridZoomRange(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    move v1, v14
 
     goto :goto_0
 
-    :cond_1
-    move v3, v4
-
-    .line 344
-    :goto_0
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
-
-    move-result p0
-
-    const/4 p2, 0x0
-
-    if-eqz p0, :cond_5
-
-    .line 345
-    sget-object p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE_PHYSICAL:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    if-ne p1, p0, :cond_3
-
-    .line 346
-    invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Ljava/util/List;
-
-    if-eqz p0, :cond_2
-
-    invoke-interface {p0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object p0
-
-    move-object p2, p0
-
-    check-cast p2, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
-
     :cond_2
-    invoke-static {p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    move v1, v15
 
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;->getZoomControlMaxFocalLength()I
+    .line 416
+    :goto_0
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->toLogical()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    move-result p0
+    move-result-object v2
+
+    .line 417
+    invoke-static {}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSupportedBackLogicalCameraIdList()Ljava/util/List;
+
+    move-result-object v3
+
+    invoke-static {v3, v11}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v3}, Lkotlin/collections/CollectionsKt;->last(Ljava/util/List;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    if-ne v2, v3, :cond_3
 
     goto :goto_1
 
-    .line 348
     :cond_3
-    invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Ljava/util/List;
-
-    if-eqz p0, :cond_4
-
-    invoke-interface {p0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object p0
-
-    move-object p2, p0
-
-    check-cast p2, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
-
-    :cond_4
-    invoke-static {p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;->getVideoMaxFocalLength()I
-
-    move-result p0
+    move v14, v15
 
     :goto_1
-    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    const/4 v11, 0x0
 
-    move-result-object p0
+    if-eqz v1, :cond_8
+
+    if-nez v14, :cond_6
+
+    .line 420
+    invoke-virtual/range {p0 .. p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
 
     goto :goto_2
 
+    .line 423
+    :cond_4
+    invoke-interface {v13, v12}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/util/List;
+
+    if-eqz v0, :cond_5
+
+    invoke-interface {v0, v15}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v11, v0
+
+    check-cast v11, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
+
     :cond_5
-    if-eqz v3, :cond_7
+    invoke-static {v11}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 351
-    sget-object p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    invoke-virtual {v11}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;->getZoomControlMaxFocalLength()I
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isCameraSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
+    move-result v0
 
-    move-result p0
+    goto/16 :goto_3
 
-    if-nez p0, :cond_7
-
-    .line 352
-    invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Ljava/util/List;
-
-    if-eqz p0, :cond_6
-
-    invoke-interface {p0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
-
-    if-eqz p0, :cond_6
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;->getHybridZoomRange()Landroid/util/Range;
-
-    move-result-object p2
-
+    .line 421
     :cond_6
-    invoke-static {p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
-    invoke-virtual {p2}, Landroid/util/Range;->getUpper()Ljava/lang/Comparable;
-
-    move-result-object p0
-
-    check-cast p0, Ljava/lang/Integer;
-
-    goto :goto_2
-
-    .line 354
-    :cond_7
-    invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Ljava/util/List;
-
-    if-eqz p0, :cond_8
-
-    invoke-interface {p0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object p0
-
-    move-object p2, p0
-
-    check-cast p2, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
-
-    :cond_8
-    invoke-static {p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;->getZoomControlMaxFocalLength()I
-
-    move-result p0
-
-    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p0
-
-    .line 357
     :goto_2
-    invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
-    invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public static synthetic getMaxFocalLength$default(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;ZILjava/lang/Object;)I
-    .locals 0
-
-    and-int/lit8 p5, p4, 0x4
-
-    if-eqz p5, :cond_0
-
-    .line 335
-    sget-object p2, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
-
-    :cond_0
-    and-int/lit8 p4, p4, 0x8
-
-    if-eqz p4, :cond_1
-
-    const/4 p3, 0x0
-
-    .line 331
-    :cond_1
-    invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getMaxFocalLength(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public static final getMaxZoomRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)F
-    .locals 2
-    .annotation runtime Lkotlin/jvm/JvmStatic;
-    .end annotation
-
-    const-string v0, "mode"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "cameraId"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "videoMfHdr"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 270
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getSensorName(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/lang/String;
+    invoke-interface {v13, v12}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 272
-    sget-object v1, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->INFO_MAP:Ljava/util/Map;
+    check-cast v0, Ljava/util/List;
 
-    invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    if-eqz v0, :cond_7
 
-    move-result-object v0
-
-    if-nez v0, :cond_0
-
-    const/high16 p0, 0x3f800000    # 1.0f
-
-    return p0
-
-    .line 274
-    :cond_0
-    invoke-static {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getMinFocalLength(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)I
-
-    move-result p2
-
-    int-to-float p2, p2
-
-    .line 276
-    invoke-static {p0, p1, p3, p4}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getMaxFocalLength(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)I
-
-    move-result p0
-
-    int-to-float p0, p0
-
-    div-float/2addr p0, p2
-
-    return p0
-.end method
-
-.method public static synthetic getMaxZoomRatio$default(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;ZILjava/lang/Object;)F
-    .locals 1
-
-    and-int/lit8 p6, p5, 0x4
-
-    const/4 v0, 0x0
-
-    if-eqz p6, :cond_0
-
-    move p2, v0
-
-    :cond_0
-    and-int/lit8 p6, p5, 0x8
-
-    if-eqz p6, :cond_1
-
-    .line 267
-    sget-object p3, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
-
-    :cond_1
-    and-int/lit8 p5, p5, 0x10
-
-    if-eqz p5, :cond_2
-
-    move p4, v0
-
-    .line 262
-    :cond_2
-    invoke-static {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getMaxZoomRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)F
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public static final getMinFocalLength(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)I
-    .locals 5
-    .annotation runtime Lkotlin/jvm/JvmStatic;
-    .end annotation
-
-    const-string v0, "mode"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "cameraId"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "videoMfHdr"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 299
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getSensorName(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/lang/String;
+    invoke-interface {v0, v15}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 301
-    sget-object v1, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->INFO_MAP:Ljava/util/Map;
+    check-cast v0, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
 
-    invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    if-eqz v0, :cond_7
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;->getHybridZoomRange()Landroid/util/Range;
+
+    move-result-object v11
+
+    :cond_7
+    invoke-static {v11}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-virtual {v11}, Landroid/util/Range;->getUpper()Ljava/lang/Comparable;
+
+    move-result-object v0
+
+    .line 420
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    check-cast v0, Ljava/lang/Number;
+
+    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
+
+    move-result v0
+
+    goto/16 :goto_3
+
+    .line 426
+    :cond_8
+    invoke-virtual/range {p0 .. p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoFraming()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_a
+
+    .line 427
+    invoke-interface {v13, v12}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/util/List;
+
+    if-eqz v0, :cond_9
+
+    invoke-interface {v0, v15}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v11, v0
+
+    check-cast v11, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
+
+    :cond_9
+    invoke-static {v11}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-virtual {v11}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;->getAutoFramingZoomRange()Landroid/util/Range;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-virtual {v0}, Landroid/util/Range;->getUpper()Ljava/lang/Comparable;
+
+    move-result-object v0
+
+    .line 426
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    check-cast v0, Ljava/lang/Number;
+
+    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
+
+    move-result v0
+
+    goto/16 :goto_3
+
+    .line 428
+    :cond_a
+    invoke-virtual/range {p0 .. p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_e
+
+    if-eqz v14, :cond_c
+
+    .line 430
+    invoke-virtual/range {p0 .. p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
+
+    move-result v1
+
+    invoke-virtual/range {p0 .. p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoFraming()Z
+
+    move-result v3
+
+    invoke-virtual/range {p0 .. p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isGimbal()Z
+
+    move-result v4
+
+    .line 431
+    invoke-virtual/range {p4 .. p4}, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->getValue()Ljava/lang/String;
+
+    move-result-object v5
+
+    move/from16 v2, p3
+
+    move-object/from16 v6, p5
+
+    move/from16 v7, p6
+
+    .line 429
+    invoke-static/range {v0 .. v7}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isOpticalZoomSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZZZZLjava/lang/String;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_c
+
+    .line 433
+    invoke-interface {v13, v12}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/util/List;
+
+    if-eqz v0, :cond_b
+
+    invoke-interface {v0, v15}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v11, v0
+
+    check-cast v11, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
+
+    :cond_b
+    invoke-static {v11}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-virtual {v11}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;->getZoomControlMaxFocalLength()I
+
+    move-result v0
+
+    goto :goto_3
+
+    .line 435
+    :cond_c
+    invoke-interface {v13, v12}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/util/List;
+
+    if-eqz v0, :cond_d
+
+    invoke-interface {v0, v15}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v11, v0
+
+    check-cast v11, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
+
+    :cond_d
+    invoke-static {v11}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-virtual {v11}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;->getVideoMaxFocalLength()I
+
+    move-result v0
+
+    goto :goto_3
+
+    .line 438
+    :cond_e
+    invoke-virtual/range {p5 .. p5}, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->getBooleanValue()Z
+
+    move-result v1
+
+    if-nez v1, :cond_f
+
+    if-eqz p6, :cond_11
+
+    :cond_f
+    if-eqz v14, :cond_11
+
+    .line 439
+    invoke-virtual/range {p0 .. p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
+
+    move-result v1
+
+    .line 440
+    invoke-virtual/range {p4 .. p4}, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->getValue()Ljava/lang/String;
 
     move-result-object v2
 
-    const/4 v3, 0x1
+    move/from16 v3, p3
 
-    if-nez v2, :cond_0
+    .line 439
+    invoke-static {v0, v1, v3, v2}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isHybridZoomSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZZLjava/lang/String;)Z
 
-    return v3
+    move-result v0
 
-    .line 303
-    :cond_0
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isHybridZoomSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
+    if-eqz v0, :cond_11
 
-    move-result v2
+    .line 443
+    invoke-interface {v13, v12}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    const/4 v4, 0x0
+    move-result-object v0
 
-    if-eqz v2, :cond_1
+    check-cast v0, Ljava/util/List;
 
-    .line 304
-    invoke-virtual {p3}, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->getBooleanValue()Z
+    if-eqz v0, :cond_10
 
-    move-result v2
+    invoke-interface {v0, v15}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    if-nez v2, :cond_1
+    move-result-object v0
 
-    if-nez p4, :cond_1
+    move-object v11, v0
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoFraming()Z
+    check-cast v11, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
 
-    move-result v2
+    :cond_10
+    invoke-static {v11}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    if-nez v2, :cond_1
+    invoke-virtual {v11}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;->getVideoMaxFocalLength()I
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isGimbal()Z
+    move-result v0
 
-    move-result v2
+    goto :goto_3
 
-    if-nez v2, :cond_1
+    .line 445
+    :cond_11
+    invoke-interface {v13, v12}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/util/List;
+
+    if-eqz v0, :cond_12
+
+    invoke-interface {v0, v15}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v11, v0
+
+    check-cast v11, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
+
+    :cond_12
+    invoke-static {v11}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-virtual {v11}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;->getZoomControlMaxFocalLength()I
+
+    move-result v0
+
+    :goto_3
+    return v0
+.end method
+
+.method public static final getMaxZoomRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)F
+    .locals 19
+    .annotation runtime Lkotlin/jvm/JvmStatic;
+    .end annotation
+
+    move-object/from16 v0, p1
+
+    const-string v1, "mode"
+
+    move-object/from16 v9, p0
+
+    invoke-static {v9, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v1, "cameraId"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string/jumbo v1, "videoStabilizer"
+
+    move-object/from16 v10, p5
+
+    invoke-static {v10, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string/jumbo v1, "videoMfHdr"
+
+    move-object/from16 v8, p6
+
+    invoke-static {v8, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 281
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->isPhysicalCameraId()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    if-eqz p3, :cond_0
 
     goto :goto_0
 
-    :cond_1
-    move v3, v4
-
-    .line 305
-    :goto_0
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->isPhysicalCameraId()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_5
-
-    if-nez v3, :cond_5
-
-    if-nez p2, :cond_5
-
-    .line 306
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
-
-    move-result p0
-
-    const/4 p2, 0x0
-
-    if-eqz p0, :cond_3
-
-    sget-object p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE_PHYSICAL:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    if-eq p1, p0, :cond_3
-
-    .line 307
-    invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Ljava/util/List;
-
-    if-eqz p0, :cond_2
-
-    invoke-interface {p0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object p0
-
-    move-object p2, p0
-
-    check-cast p2, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
-
-    :cond_2
-    invoke-static {p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;->getVideoMinFocalLength()I
-
-    move-result p0
-
-    goto :goto_1
-
-    .line 309
-    :cond_3
-    invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Ljava/util/List;
-
-    if-eqz p0, :cond_4
-
-    invoke-interface {p0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object p0
-
-    move-object p2, p0
-
-    check-cast p2, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
-
-    :cond_4
-    invoke-static {p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;->getZoomControlMinFocalLength()I
-
-    move-result p0
-
-    goto :goto_1
-
-    .line 314
-    :cond_5
-    sget-object p1, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    const/high16 p2, 0x3f800000    # 1.0f
-
-    .line 312
-    invoke-static {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getMinFocalLengthFromZoomRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)I
-
-    move-result p0
-
-    :goto_1
-    return p0
-.end method
-
-.method public static synthetic getMinFocalLength$default(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;ZILjava/lang/Object;)I
-    .locals 1
-
-    and-int/lit8 p6, p5, 0x4
-
-    const/4 v0, 0x0
-
-    if-eqz p6, :cond_0
-
-    move p2, v0
-
     :cond_0
-    and-int/lit8 p6, p5, 0x8
+    move-object v3, v0
 
-    if-eqz p6, :cond_1
+    goto :goto_1
 
-    .line 296
-    sget-object p3, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
-
+    .line 282
     :cond_1
-    and-int/lit8 p5, p5, 0x10
+    :goto_0
+    sget-object v1, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    if-eqz p5, :cond_2
+    move-object v3, v1
 
-    move p4, v0
+    .line 287
+    :goto_1
+    invoke-static {v3}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSensorName(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 288
+    sget-object v2, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->INFO_MAP:Ljava/util/Map;
+
+    invoke-interface {v2, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    const/high16 v4, 0x3f800000    # 1.0f
+
+    if-nez v1, :cond_2
+
+    return v4
 
     .line 291
     :cond_2
-    invoke-static {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getMinFocalLength(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)I
+    sget-object v1, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    move-result p0
+    if-ne v0, v1, :cond_3
 
-    return p0
+    .line 292
+    invoke-static {}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSupportedBackLogicalCameraIdList()Ljava/util/List;
+
+    move-result-object v0
+
+    const-string v1, "getSupportedBackLogicalCameraIdList(...)"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v0}, Lkotlin/collections/CollectionsKt;->last(Ljava/util/List;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    .line 297
+    :cond_3
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSensorName(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 298
+    invoke-interface {v2, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    if-nez v1, :cond_4
+
+    return v4
+
+    .line 306
+    :cond_4
+    invoke-virtual/range {p0 .. p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
+
+    move-result v12
+
+    .line 308
+    invoke-virtual/range {p0 .. p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoFraming()Z
+
+    move-result v14
+
+    .line 309
+    invoke-virtual/range {p0 .. p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isGimbal()Z
+
+    move-result v15
+
+    .line 310
+    invoke-virtual/range {p5 .. p5}, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->getValue()Ljava/lang/String;
+
+    move-result-object v16
+
+    move-object v11, v3
+
+    move/from16 v13, p4
+
+    move-object/from16 v17, p6
+
+    move/from16 v18, p7
+
+    .line 304
+    invoke-static/range {v11 .. v18}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSwitchPointZoomRatio(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZZZZLjava/lang/String;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljava/util/List;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    invoke-interface {v1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    const-string v2, "get(...)"
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v1, Ljava/lang/Number;
+
+    invoke-virtual {v1}, Ljava/lang/Number;->floatValue()F
+
+    move-result v4
+
+    move-object/from16 v2, p0
+
+    move/from16 v5, p4
+
+    move-object/from16 v6, p5
+
+    move-object/from16 v7, p6
+
+    move/from16 v8, p7
+
+    .line 301
+    invoke-static/range {v2 .. v8}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getMinFocalLength(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)I
+
+    move-result v1
+
+    int-to-float v1, v1
+
+    .line 321
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    move-object v3, v0
+
+    move/from16 v4, p2
+
+    .line 319
+    invoke-static/range {v2 .. v8}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getMaxFocalLength(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)I
+
+    move-result v0
+
+    int-to-float v0, v0
+
+    div-float/2addr v0, v1
+
+    return v0
 .end method
 
-.method public static final getMinFocalLengthFromZoomRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)I
+.method public static final getMinFocalLength(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)I
     .locals 9
     .annotation runtime Lkotlin/jvm/JvmStatic;
     .end annotation
@@ -1982,101 +2330,106 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
+    const-string/jumbo v0, "videoStabilizer"
+
+    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
     const-string/jumbo v0, "videoMfHdr"
 
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 180
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSensorName(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/lang/String;
+    .line 353
+    sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    if-ne p1, v0, :cond_0
+
+    .line 354
+    invoke-static {}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSupportedBackLogicalCameraIdList()Ljava/util/List;
+
+    move-result-object p1
+
+    const-string v0, "getSupportedBackLogicalCameraIdList(...)"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {p1}, Lkotlin/collections/CollectionsKt;->first(Ljava/util/List;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    :cond_0
+    move-object v2, p1
+
+    .line 358
+    invoke-static {v2}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSensorName(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 359
+    sget-object v6, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->INFO_MAP:Ljava/util/Map;
+
+    invoke-interface {v6, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 181
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio;->Companion:Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio$Companion;
+    if-nez v0, :cond_1
 
-    invoke-virtual {v1, p1, p2}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio$Companion;->isInHybridZoomRange(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;F)Z
+    const/4 p0, 0x1
 
-    move-result v1
+    return p0
 
-    const/4 v2, 0x0
-
-    if-eqz v1, :cond_0
-
-    .line 182
-    invoke-virtual {p3}, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->getBooleanValue()Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    if-nez p4, :cond_0
-
+    .line 361
+    :cond_1
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoFraming()Z
 
-    move-result v1
+    move-result v0
 
-    if-nez v1, :cond_0
+    const/4 v7, 0x0
 
+    const/4 v8, 0x0
+
+    if-nez v0, :cond_3
+
+    .line 362
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isGimbal()Z
 
-    move-result v1
+    move-result v0
 
-    if-nez v1, :cond_0
+    if-nez v0, :cond_3
 
-    const/4 v1, 0x1
+    .line 363
+    invoke-virtual {p5}, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->getBooleanValue()Z
 
-    goto :goto_0
+    move-result p5
 
-    :cond_0
-    move v1, v2
+    if-nez p5, :cond_3
 
-    :goto_0
-    move-object v3, p0
+    if-nez p6, :cond_3
 
-    move-object v4, p1
+    .line 365
+    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio;->Companion:Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio$Companion;
 
-    move v5, p2
+    .line 366
+    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    move v6, v1
+    move-object v1, p0
 
-    move-object v7, p3
+    move v3, p2
 
-    move v8, p4
+    move v4, p3
 
-    .line 183
-    invoke-static/range {v3 .. v8}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getBaseZoomRatioIndex(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)I
+    move-object v5, p4
 
-    move-result p1
+    .line 365
+    invoke-virtual/range {v0 .. v5}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio$Companion;->isInHybridZoomRange(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;)Z
 
-    .line 185
-    sget-object p2, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->INFO_MAP:Ljava/util/Map;
+    move-result p2
 
-    invoke-interface {p2, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    if-eqz p2, :cond_3
 
-    move-result-object p3
-
-    check-cast p3, Ljava/util/List;
-
-    if-eqz p3, :cond_1
-
-    invoke-interface {p3}, Ljava/util/List;->size()I
-
-    move-result p3
-
-    goto :goto_1
-
-    :cond_1
-    const/4 p3, -0x1
-
-    :goto_1
-    if-ge p1, p3, :cond_7
-
-    const/4 p3, 0x0
-
-    if-eqz v1, :cond_3
-
-    .line 187
-    invoke-interface {p2, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 369
+    invoke-interface {v6, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -2084,7 +2437,7 @@
 
     if-eqz p0, :cond_2
 
-    invoke-interface {p0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {p0, v7}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -2094,27 +2447,27 @@
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;->getHybridZoomRange()Landroid/util/Range;
 
-    move-result-object p3
+    move-result-object v8
 
     :cond_2
-    invoke-static {p3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    invoke-static {v8}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    invoke-virtual {p3}, Landroid/util/Range;->getLower()Ljava/lang/Comparable;
+    invoke-virtual {v8}, Landroid/util/Range;->getLower()Ljava/lang/Comparable;
 
     move-result-object p0
 
-    .line 186
+    .line 368
     invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     check-cast p0, Ljava/lang/Number;
 
     invoke-virtual {p0}, Ljava/lang/Number;->intValue()I
 
-    move-result v2
+    move-result p0
 
-    goto :goto_2
+    goto :goto_0
 
-    .line 189
+    .line 371
     :cond_3
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
 
@@ -2122,8 +2475,8 @@
 
     if-eqz p0, :cond_5
 
-    .line 190
-    invoke-interface {p2, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 372
+    invoke-interface {v6, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -2131,26 +2484,26 @@
 
     if-eqz p0, :cond_4
 
-    invoke-interface {p0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {p0, v7}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p0
 
-    move-object p3, p0
+    move-object v8, p0
 
-    check-cast p3, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
+    check-cast v8, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
 
     :cond_4
-    invoke-static {p3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    invoke-static {v8}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    invoke-virtual {p3}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;->getVideoMinFocalLength()I
+    invoke-virtual {v8}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;->getVideoMinFocalLength()I
 
-    move-result v2
+    move-result p0
 
-    goto :goto_2
+    goto :goto_0
 
-    .line 192
+    .line 374
     :cond_5
-    invoke-interface {p2, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v6, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -2158,24 +2511,23 @@
 
     if-eqz p0, :cond_6
 
-    invoke-interface {p0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {p0, v7}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p0
 
-    move-object p3, p0
+    move-object v8, p0
 
-    check-cast p3, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
+    check-cast v8, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;
 
     :cond_6
-    invoke-static {p3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    invoke-static {v8}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    invoke-virtual {p3}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;->getZoomControlMinFocalLength()I
+    invoke-virtual {v8}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo$Info;->getZoomControlMinFocalLength()I
 
-    move-result v2
+    move-result p0
 
-    :cond_7
-    :goto_2
-    return v2
+    :goto_0
+    return p0
 .end method
 
 .method public static final getOpticalFocalLengthRange(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Landroid/util/Range;
@@ -2198,12 +2550,12 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 208
+    .line 221
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSensorName(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 209
+    .line 222
     sget-object v0, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->INFO_MAP:Ljava/util/Map;
 
     invoke-interface {v0, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -2212,14 +2564,14 @@
 
     const/4 v2, 0x0
 
-    .line 212
+    .line 225
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
 
     if-eqz v1, :cond_1
 
-    .line 210
+    .line 223
     invoke-interface {v0, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -2248,7 +2600,7 @@
 
     goto :goto_1
 
-    .line 212
+    .line 225
     :cond_1
     new-instance p0, Landroid/util/Range;
 
@@ -2264,55 +2616,15 @@
     return-object p0
 .end method
 
-.method private static final getSensorName(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/lang/String;
-    .locals 1
-    .annotation runtime Lkotlin/jvm/JvmStatic;
-    .end annotation
-
-    .line 244
-    sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    if-ne p0, v0, :cond_0
-
-    .line 245
-    sget-object p0, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->SUPPORTED_BACK_CAMERA_ID_LIST:Ljava/util/List;
-
-    invoke-static {p0}, Lkotlin/collections/CollectionsKt;->last(Ljava/util/List;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    .line 246
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSensorName(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/lang/String;
-
-    move-result-object p0
-
-    .line 244
-    invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
-    goto :goto_0
-
-    .line 248
-    :cond_0
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSensorName(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/lang/String;
-
-    move-result-object p0
-
-    .line 247
-    invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
-    :goto_0
-    return-object p0
-.end method
-
-.method public static final getSwitchPointFocalLength(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/util/List;
-    .locals 5
+.method public static final getSwitchPointFocalLength(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;)Ljava/util/List;
+    .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;",
             "Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;",
+            "Z",
+            "Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;",
             ")",
             "Ljava/util/List<",
             "Ljava/lang/Integer;",
@@ -2331,27 +2643,37 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 404
+    const-string/jumbo v0, "videoStabilizer"
+
+    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 507
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v0, Ljava/util/List;
 
-    .line 405
+    .line 508
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v1, Ljava/util/List;
 
-    .line 406
+    .line 509
     sget-object v2, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     if-ne p1, v2, :cond_0
 
-    .line 407
-    sget-object p1, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->SUPPORTED_BACK_CAMERA_ID_LIST:Ljava/util/List;
+    .line 510
+    invoke-static {}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSupportedBackLogicalCameraIdList()Ljava/util/List;
+
+    move-result-object p1
+
+    const-string v2, "getSupportedBackLogicalCameraIdList(...)"
+
+    invoke-static {p1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast p1, Ljava/util/Collection;
 
@@ -2359,15 +2681,15 @@
 
     goto :goto_0
 
-    .line 409
+    .line 512
     :cond_0
     invoke-interface {v1, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 405
+    .line 508
     :goto_0
     check-cast v1, Ljava/lang/Iterable;
 
-    .line 436
+    .line 542
     invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -2386,12 +2708,12 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 412
+    .line 515
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getOpticalFocalLengthRange(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Landroid/util/Range;
 
     move-result-object v2
 
-    .line 413
+    .line 516
     invoke-virtual {v2}, Landroid/util/Range;->getLower()Ljava/lang/Comparable;
 
     move-result-object v3
@@ -2402,19 +2724,29 @@
 
     invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 414
-    invoke-static {v1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isHybridZoomSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
+    .line 517
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
+
+    move-result v3
+
+    .line 518
+    invoke-virtual {p3}, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->getValue()Ljava/lang/String;
+
+    move-result-object v5
+
+    .line 517
+    invoke-static {v1, v3, p2, v5}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isHybridZoomSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZZLjava/lang/String;)Z
 
     move-result v3
 
     if-eqz v3, :cond_2
 
-    .line 415
+    .line 520
     invoke-static {p0, v1}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getHybridZoomFocalLengthRange(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Landroid/util/Range;
 
     move-result-object v1
 
-    .line 416
+    .line 521
     invoke-virtual {v1}, Landroid/util/Range;->getLower()Ljava/lang/Comparable;
 
     move-result-object v1
@@ -2425,7 +2757,7 @@
 
     goto :goto_1
 
-    .line 417
+    .line 522
     :cond_2
     invoke-virtual {v2}, Landroid/util/Range;->getLower()Ljava/lang/Comparable;
 
@@ -2441,7 +2773,7 @@
 
     if-nez v1, :cond_1
 
-    .line 418
+    .line 523
     invoke-virtual {v2}, Landroid/util/Range;->getUpper()Ljava/lang/Comparable;
 
     move-result-object v1

@@ -70,7 +70,7 @@
 
     const/4 v0, 0x0
 
-    .line 282
+    .line 297
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/idd/value/IddMode;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddMode$Wrapper;->value:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -83,7 +83,7 @@
 .method public final getValue()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
     .locals 0
 
-    .line 282
+    .line 297
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddMode$Wrapper;->value:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     return-object p0
@@ -92,7 +92,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 283
+    .line 298
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddMode$Wrapper;->value:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     sget-object v0, Ljp/co/sony/mc/camera/idd/value/IddMode$Wrapper$WhenMappings;->$EnumSwitchMapping$0:[I
@@ -105,120 +105,111 @@
 
     packed-switch p0, :pswitch_data_0
 
-    .line 301
+    .line 315
     const-string p0, "UNKNOWN"
 
     goto :goto_0
 
-    .line 300
+    .line 314
     :pswitch_0
     const-string p0, "AUTO_FRAMING"
 
     goto :goto_0
 
-    .line 299
+    .line 313
     :pswitch_1
     const-string p0, "GIMBAL"
 
     goto :goto_0
 
-    .line 298
+    .line 312
     :pswitch_2
     const-string p0, "HI_RESOLUTION"
 
     goto :goto_0
 
-    .line 297
+    .line 311
     :pswitch_3
     const-string p0, "VIDEO_BOKEH"
 
     goto :goto_0
 
-    .line 296
+    .line 310
     :pswitch_4
     const-string p0, "TELE_MACRO"
 
     goto :goto_0
 
-    .line 295
+    .line 309
     :pswitch_5
-    const-string p0, "LIVE_STREAMING"
-
-    goto :goto_0
-
-    .line 294
-    :pswitch_6
     const-string p0, "VIDEO_SLOW"
 
     goto :goto_0
 
-    .line 293
-    :pswitch_7
+    .line 308
+    :pswitch_6
     const-string p0, "PHOTO"
 
     goto :goto_0
 
-    .line 292
-    :pswitch_8
+    .line 307
+    :pswitch_7
     const-string p0, "VIDEO"
 
     goto :goto_0
 
-    .line 291
-    :pswitch_9
+    .line 306
+    :pswitch_8
     const-string p0, "PHOTO_BOKEH"
 
     goto :goto_0
 
-    .line 290
-    :pswitch_a
+    .line 305
+    :pswitch_9
     const-string p0, "VIDEO_PRO_M"
 
     goto :goto_0
 
-    .line 289
-    :pswitch_b
+    .line 304
+    :pswitch_a
     const-string p0, "VIDEO_PRO_S"
 
     goto :goto_0
 
-    .line 288
-    :pswitch_c
+    .line 303
+    :pswitch_b
     const-string p0, "VIDEO_PRO_P"
 
     goto :goto_0
 
-    .line 287
-    :pswitch_d
+    .line 302
+    :pswitch_c
     const-string p0, "M"
 
     goto :goto_0
 
-    .line 286
-    :pswitch_e
+    .line 301
+    :pswitch_d
     const-string p0, "S"
 
     goto :goto_0
 
-    .line 285
-    :pswitch_f
+    .line 300
+    :pswitch_e
     const-string p0, "P"
 
     goto :goto_0
 
-    .line 284
-    :pswitch_10
+    .line 299
+    :pswitch_f
     const-string p0, "ONE_SHOT"
 
     :goto_0
     return-object p0
 
-    nop
-
     :pswitch_data_0
     .packed-switch 0x1
-        :pswitch_10
-        :pswitch_10
+        :pswitch_f
         :pswitch_f
         :pswitch_e
         :pswitch_d
@@ -228,7 +219,7 @@
         :pswitch_9
         :pswitch_8
         :pswitch_7
-        :pswitch_7
+        :pswitch_6
         :pswitch_6
         :pswitch_5
         :pswitch_4

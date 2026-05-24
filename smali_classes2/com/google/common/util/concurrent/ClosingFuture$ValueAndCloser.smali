@@ -37,6 +37,15 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/util/concurrent/ClosingFuture;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "closingFuture"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -45,10 +54,10 @@
         }
     .end annotation
 
-    .line 331
+    .line 330
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 332
+    .line 331
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -65,7 +74,7 @@
 .method public closeAsync()V
     .locals 0
 
-    .line 361
+    .line 360
     iget-object p0, p0, Lcom/google/common/util/concurrent/ClosingFuture$ValueAndCloser;->closingFuture:Lcom/google/common/util/concurrent/ClosingFuture;
 
     invoke-static {p0}, Lcom/google/common/util/concurrent/ClosingFuture;->access$100(Lcom/google/common/util/concurrent/ClosingFuture;)V
@@ -75,6 +84,9 @@
 
 .method public get()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/util/concurrent/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TV;"
@@ -87,10 +99,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-    .end annotation
-
-    .line 347
+    .line 346
     iget-object p0, p0, Lcom/google/common/util/concurrent/ClosingFuture$ValueAndCloser;->closingFuture:Lcom/google/common/util/concurrent/ClosingFuture;
 
     invoke-static {p0}, Lcom/google/common/util/concurrent/ClosingFuture;->access$000(Lcom/google/common/util/concurrent/ClosingFuture;)Lcom/google/common/util/concurrent/FluentFuture;

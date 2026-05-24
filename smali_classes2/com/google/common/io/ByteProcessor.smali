@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/io/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation runtime Lcom/google/errorprone/annotations/DoNotMock;
     value = "Implement it normally"
 .end annotation
@@ -20,6 +23,9 @@
 
 # virtual methods
 .method public abstract getResult()Ljava/lang/Object;
+    .annotation runtime Lcom/google/common/io/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TT;"
@@ -28,6 +34,19 @@
 .end method
 
 .method public abstract processBytes([BII)Z
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "buf",
+            "off",
+            "len"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

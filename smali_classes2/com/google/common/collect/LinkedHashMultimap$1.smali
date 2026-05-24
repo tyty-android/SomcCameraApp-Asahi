@@ -46,7 +46,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -54,18 +54,28 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/LinkedHashMultimap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 506
+    .line 552
     iput-object p1, p0, Lcom/google/common/collect/LinkedHashMultimap$1;->this$0:Lcom/google/common/collect/LinkedHashMultimap;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 507
+    .line 553
     invoke-static {p1}, Lcom/google/common/collect/LinkedHashMultimap;->access$300(Lcom/google/common/collect/LinkedHashMultimap;)Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;
 
     move-result-object p1
 
-    iget-object p1, p1, Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;->successorInMultimap:Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;
+    invoke-virtual {p1}, Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;->getSuccessorInMultimap()Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;
+
+    move-result-object p1
 
     iput-object p1, p0, Lcom/google/common/collect/LinkedHashMultimap$1;->nextEntry:Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;
 
@@ -77,7 +87,7 @@
 .method public hasNext()Z
     .locals 1
 
-    .line 512
+    .line 558
     iget-object v0, p0, Lcom/google/common/collect/LinkedHashMultimap$1;->nextEntry:Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;
 
     iget-object p0, p0, Lcom/google/common/collect/LinkedHashMultimap$1;->this$0:Lcom/google/common/collect/LinkedHashMultimap;
@@ -102,7 +112,7 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .locals 0
 
-    .line 506
+    .line 552
     invoke-virtual {p0}, Lcom/google/common/collect/LinkedHashMultimap$1;->next()Ljava/util/Map$Entry;
 
     move-result-object p0
@@ -120,27 +130,29 @@
         }
     .end annotation
 
-    .line 517
+    .line 563
     invoke-virtual {p0}, Lcom/google/common/collect/LinkedHashMultimap$1;->hasNext()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 520
+    .line 566
     iget-object v0, p0, Lcom/google/common/collect/LinkedHashMultimap$1;->nextEntry:Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;
 
-    .line 521
+    .line 567
     iput-object v0, p0, Lcom/google/common/collect/LinkedHashMultimap$1;->toRemove:Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;
 
-    .line 522
-    iget-object v1, v0, Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;->successorInMultimap:Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;
+    .line 568
+    invoke-virtual {v0}, Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;->getSuccessorInMultimap()Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;
+
+    move-result-object v1
 
     iput-object v1, p0, Lcom/google/common/collect/LinkedHashMultimap$1;->nextEntry:Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;
 
     return-object v0
 
-    .line 518
+    .line 564
     :cond_0
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -152,7 +164,7 @@
 .method public remove()V
     .locals 3
 
-    .line 528
+    .line 574
     iget-object v0, p0, Lcom/google/common/collect/LinkedHashMultimap$1;->toRemove:Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;
 
     if-eqz v0, :cond_0
@@ -165,9 +177,11 @@
     const/4 v0, 0x0
 
     :goto_0
-    invoke-static {v0}, Lcom/google/common/collect/CollectPreconditions;->checkRemove(Z)V
+    const-string v1, "no calls to next() since the last call to remove()"
 
-    .line 529
+    invoke-static {v0, v1}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
+
+    .line 575
     iget-object v0, p0, Lcom/google/common/collect/LinkedHashMultimap$1;->this$0:Lcom/google/common/collect/LinkedHashMultimap;
 
     iget-object v1, p0, Lcom/google/common/collect/LinkedHashMultimap$1;->toRemove:Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;
@@ -186,7 +200,7 @@
 
     const/4 v0, 0x0
 
-    .line 530
+    .line 576
     iput-object v0, p0, Lcom/google/common/collect/LinkedHashMultimap$1;->toRemove:Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;
 
     return-void

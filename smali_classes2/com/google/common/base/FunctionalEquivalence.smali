@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/base/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<F:",
@@ -30,7 +33,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/common/base/Function<",
-            "TF;+TT;>;"
+            "-TF;+TT;>;"
         }
     .end annotation
 .end field
@@ -48,20 +51,31 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/base/Function;Lcom/google/common/base/Equivalence;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "function",
+            "resultEquivalence"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/google/common/base/Function<",
-            "TF;+TT;>;",
+            "-TF;+TT;>;",
             "Lcom/google/common/base/Equivalence<",
             "TT;>;)V"
         }
     .end annotation
 
-    .line 39
+    .line 40
     invoke-direct {p0}, Lcom/google/common/base/Equivalence;-><init>()V
 
-    .line 40
+    .line 41
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -70,7 +84,7 @@
 
     iput-object p1, p0, Lcom/google/common/base/FunctionalEquivalence;->function:Lcom/google/common/base/Function;
 
-    .line 41
+    .line 42
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -86,13 +100,24 @@
 # virtual methods
 .method protected doEquivalent(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TF;TF;)Z"
         }
     .end annotation
 
-    .line 46
+    .line 47
     iget-object v0, p0, Lcom/google/common/base/FunctionalEquivalence;->resultEquivalence:Lcom/google/common/base/Equivalence;
 
     iget-object v1, p0, Lcom/google/common/base/FunctionalEquivalence;->function:Lcom/google/common/base/Function;
@@ -116,13 +141,22 @@
 
 .method protected doHash(Ljava/lang/Object;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "a"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TF;)I"
         }
     .end annotation
 
-    .line 51
+    .line 52
     iget-object v0, p0, Lcom/google/common/base/FunctionalEquivalence;->resultEquivalence:Lcom/google/common/base/Equivalence;
 
     iget-object p0, p0, Lcom/google/common/base/FunctionalEquivalence;->function:Lcom/google/common/base/Function;
@@ -141,9 +175,17 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -151,7 +193,7 @@
 
     return v0
 
-    .line 59
+    .line 60
     :cond_0
     instance-of v1, p1, Lcom/google/common/base/FunctionalEquivalence;
 
@@ -159,10 +201,10 @@
 
     if-eqz v1, :cond_2
 
-    .line 60
+    .line 61
     check-cast p1, Lcom/google/common/base/FunctionalEquivalence;
 
-    .line 61
+    .line 62
     iget-object v1, p0, Lcom/google/common/base/FunctionalEquivalence;->function:Lcom/google/common/base/Function;
 
     iget-object v3, p1, Lcom/google/common/base/FunctionalEquivalence;->function:Lcom/google/common/base/Function;
@@ -198,7 +240,7 @@
 .method public hashCode()I
     .locals 1
 
-    .line 68
+    .line 69
     iget-object v0, p0, Lcom/google/common/base/FunctionalEquivalence;->function:Lcom/google/common/base/Function;
 
     iget-object p0, p0, Lcom/google/common/base/FunctionalEquivalence;->resultEquivalence:Lcom/google/common/base/Equivalence;
@@ -215,46 +257,16 @@
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 3
+    .locals 2
 
-    .line 73
-    iget-object v0, p0, Lcom/google/common/base/FunctionalEquivalence;->resultEquivalence:Lcom/google/common/base/Equivalence;
+    .line 74
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-result-object v0
+    iget-object v1, p0, Lcom/google/common/base/FunctionalEquivalence;->resultEquivalence:Lcom/google/common/base/Equivalence;
 
-    iget-object p0, p0, Lcom/google/common/base/FunctionalEquivalence;->function:Lcom/google/common/base/Function;
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    move-result v1
-
-    add-int/lit8 v1, v1, 0xd
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/String;->length()I
-
-    move-result v2
-
-    add-int/2addr v1, v2
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -264,7 +276,9 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object p0, p0, Lcom/google/common/base/FunctionalEquivalence;->function:Lcom/google/common/base/Function;
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 

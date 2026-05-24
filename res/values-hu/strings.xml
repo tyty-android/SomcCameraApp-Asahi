@@ -82,6 +82,7 @@ A kilépéshez koppintson a KILÉPÉS gombra."</string>
     <string name="call_notification_incoming_text">Bejövő hívás</string>
     <string name="call_notification_ongoing_text">Hívás folyamatban</string>
     <string name="call_notification_screening_text">Bejövő hívás szűrése</string>
+    <string name="camera_string_saving_process_hint_txt">Mentés folyamatban... Várjon a mentés befejezéséig.</string>
     <string name="camera_strings_accept_privacy_policy_txt">Korábban elfogadta az adatvédelmi szabályzatot, de bármikor meggondolhatja magát.</string>
     <string name="camera_strings_accessibility_48_mega_pixel_txt">48 megapixel</string>
     <string name="camera_strings_accessibility_adjust_bokeh_txt">Háttér-homályosítás beállítása</string>
@@ -92,6 +93,27 @@ A kilépéshez koppintson a KILÉPÉS gombra."</string>
     <string name="camera_strings_accessibility_adjust_framing_size_smaller_txt">Képkocka méretének csökkentése</string>
     <string name="camera_strings_accessibility_adjust_framing_size_txt">Képkocka méretének beállítása</string>
     <string name="camera_strings_accessibility_adjust_shutter_speed_txt">Zársebesség</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_look_menu_txt">Bezárás gomb. Bezárja a Kinézet menüt.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_menu_txt">Egyedi menü bezárása</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_suggests_txt">Zárja be a javasolt beállításokat</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_menu_txt">Jelenleg alkalmazva egyedi nézetként. Beállítási menü megnyitása.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_txt">Egyedi nézet. Alkalmazza az egyéni menüben regisztrált megjelenés, fényerő és színbeállításokat.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_tab_txt">Lap testreszabása. Alkalmazza az egyéni menüben regisztrált megjelenés, fényerő és színbeállításokat.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_button_txt">Egyedi gomb. Megnyit egy menüt, amely lehetővé teszi további beállítások elvégzését, ha az ajánlott beállítások alkalmazásra kerültek.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_param_txt">%1$s beállítása %2$s</string>
+    <string name="camera_strings_accessibility_ai_suggestion_first_time_txt">MI-kameraasszisztens. Ez a funkció a jelenetnek megfelelő beállításokat javasol, például a színt.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_four_of_some_suggests_txt">Negyedik javasolt beállítás</string>
+    <string name="camera_strings_accessibility_ai_suggestion_look_menu_txt">"%1$s
+Megnyitja a kreatív megjelenés menüt"</string>
+    <string name="camera_strings_accessibility_ai_suggestion_new_suggest_txt">Új ajánlott módosításokat javasoltak</string>
+    <string name="camera_strings_accessibility_ai_suggestion_one_of_some_suggests_txt">Első javasolt beállítás</string>
+    <string name="camera_strings_accessibility_ai_suggestion_open_suggests_txt">Javasolt beállítások kiterjesztése</string>
+    <string name="camera_strings_accessibility_ai_suggestion_reset_to_default_txt">Visszaállítás a javaslat előtti beállításokra</string>
+    <string name="camera_strings_accessibility_ai_suggestion_selected_suggest_txt">Ezek az ajánlott módosítások alkalmazásra kerülnek</string>
+    <string name="camera_strings_accessibility_ai_suggestion_suggest_lens_txt">Javasolt objektívgomb. %1$sx ajánlott.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_surface_of_some_suggests_txt">Javasolt beállítások. Csúsztassa ujját jobbról balra az ajánlott beállítások megjelenítéséhez.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_three_of_some_suggests_txt">Harmadik javasolt beállítás</string>
+    <string name="camera_strings_accessibility_ai_suggestion_two_of_some_suggests_txt">Második javasolt beállítás</string>
     <string name="camera_strings_accessibility_arrow_left_button_txt">Balra mutató nyíl</string>
     <string name="camera_strings_accessibility_arrow_right_button_txt">Jobbra mutató nyíl</string>
     <string name="camera_strings_accessibility_audio_level_txt">Hangerőszintmérő</string>
@@ -246,6 +268,45 @@ A kilépéshez koppintson a KILÉPÉS gombra."</string>
     <string name="camera_strings_advanced_setting_geo_tag_title_txt">Hely mentése</string>
     <string name="camera_strings_ai_face_restore_description_txt">Az arcok élesítésével készíthet fényképeket, hogy az arcvonások tisztábbak legyenek</string>
     <string name="camera_strings_ai_face_restore_txt">Arcok élesítése</string>
+    <string name="camera_strings_ai_suggestion_introduce_hint_text_txt">[Tippek] MI-kameraassziszt.</string>
+    <string name="camera_strings_aisuggestion_box_name1_txt">Egyéni</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_message_txt">Az aktuális megjelenés, fényerő és színbeállítások regisztrálása az Egyéni beállításokra.</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_overwrite_message_txt">A kinézet már regisztrálva van az Egyéni beállítások között. Felülírja?</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_title_txt">Regisztálás egyedi nézetként</string>
+    <string name="camera_strings_aisuggestion_box_title_txt">Egyéni</string>
+    <string name="camera_strings_aisuggestion_custom_params_contrast_txt">Kontraszt</string>
+    <string name="camera_strings_aisuggestion_custom_params_ev_txt">Fényerő.</string>
+    <string name="camera_strings_aisuggestion_custom_params_register_txt">Regisztráció</string>
+    <string name="camera_strings_aisuggestion_custom_params_saturation_txt">Telítetts.</string>
+    <string name="camera_strings_aisuggestion_custom_params_title_txt">Fényerő/szín</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbab_txt">Szính.</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbgm_txt">Árnyalás</string>
+    <string name="camera_strings_aisuggestion_customlook_register_instruction_txt">A regisztálás egyedi nézetként bármikor használhatja az Egyéni kinézet lapon</string>
+    <string name="camera_strings_aisuggestion_description_txt">"Az MI automatikusan azonosítja a jelenetet, és a jobb alsó részen látható mini előnézetben optimalizált beállításokat javasol.
+Ha erre a mini előnézetre koppint, a következő beállítások automatikusan a jelenethez igazodnak:
+Kinézet, Expozíció, Fehéregyensúly, Telítettség, Kontraszt, Háttér-homályosítás
+*Ez a funkció Fénykép módban érhető el.
+*Ha a videofelvételt az zárgomb lenyomásával és nyomva tartásával indítja el, a telítettség, a kontraszt és a háttér-homályosítás beállítások nem kerülnek alkalmazásra."</string>
+    <string name="camera_strings_aisuggestion_guide_description1_txt">A MI által azonosított jelenet alapján javasolt beállítások a jobb alsó (vízszintesen tartva jobbra fent) mini előnézetben jelennek meg. A mini előnézetre koppintva egyszerre alkalmazhatja ezeket a beállításokat.</string>
+    <string name="camera_strings_aisuggestion_guide_description2_txt">A jelenettől függően egy adott objektív beállítása is javasolt lehet. Ebben az esetben a preferenciáktól függően válthat a javasolt objektívbeállításra.</string>
+    <string name="camera_strings_aisuggestion_guide_description3_txt">"Ha balra húzza a jobb alsó sarokban (vízszintesen tartva jobbra fent) lévő mini előnézetet, megjelenítheti az alternatív beállítási javaslatokat.
+A kiválasztott javaslat az Ön által kívánt beállításként kerül elmentésre, és a következő hasonló jelenet felvételekor a javaslatok között szerepel majd."</string>
+    <string name="camera_strings_aisuggestion_guide_description4_txt">A [>] gombra koppintva elrejtheti a javaslatokat, ha nincs rájuk szükség. Új jelenet azonosításakor a [&lt;] gomb kigyullad, jelezve, hogy új beállítási javaslatok vannak. A javaslatok ismételt megtekintéséhez koppintson a [&lt;] gombra.</string>
+    <string name="camera_strings_aisuggestion_guide_description5_txt">Ha a javasolt beállítások kiválasztása után megérinti a beállítás gombot, további beállításokat, például a fényerőt és a színeket állíthatja be. Az Ön beállításai mentésre kerülnek a készüléken, és a következő alkalommal, amikor hasonló jelenetet észlel, a javasolt beállításokat alkalmazza.</string>
+    <string name="camera_strings_aisuggestion_guide_description6_txt">A javasolt beállítások és az Ön által elvégzett beállítások regisztrálhatók, így bármikor betöltheti őket, hogy ugyanazokkal a beállításokkal készíthessen fényképeket. Érintse meg a [Regisztráció] elemet az Egyéni nézet hozzáadásához az elérhető megjelenések listájához.</string>
+    <string name="camera_strings_aisuggestion_guide_entry_txt">Hogyan használhatja az MI-kameraasszisz.</string>
+    <string name="camera_strings_aisuggestion_guide_title_txt">Az MI-kameraassz. használata</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_message_txt">Az összes beállítás visszaállítása az alapértelmezettre, beleértve a színt, a fényerőt és a kívánt beállításokat?</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_title_txt">Paraméterek alaphelyzetbe állítása</string>
+    <string name="camera_strings_aisuggestion_params_reset_txt">Paraméterek alaphelyzetbe állítása</string>
+    <string name="camera_strings_aisuggestion_permitted_item_bokeh_txt">Há.-hom.</string>
+    <string name="camera_strings_aisuggestion_permitted_item_lens_txt">Objektív</string>
+    <string name="camera_strings_aisuggestion_permitted_item_title_txt">Szerepeljen a javaslatok között</string>
+    <string name="camera_strings_aisuggestion_recommend_lens_ratio_txt">%1$s javasolt</string>
+    <string name="camera_strings_aisuggestion_return_to_default_txt">Visszaállítás</string>
+    <string name="camera_strings_aisuggestion_simple_video_instruction_txt">Nyomva tartva rögzít egy videót. A telítettség, a kontraszt és a háttér-hom. beáll.-k eltérőek.</string>
+    <string name="camera_strings_aisuggestion_txt">MI-kameraasszisztens</string>
+    <string name="camera_strings_aisuggestion_use_aissuggestion_txt">Az MI-kameraassz. haszn.</string>
     <string name="camera_strings_anonymous_analytics_txt">Névtelen statisztika</string>
     <string name="camera_strings_application_name">Kamera</string>
     <string name="camera_strings_application_name_google_lens_txt">Google Lens</string>
@@ -421,6 +482,7 @@ Biztonság:
     <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Nem lehet csatlakozni Wi-Fi-hálózathoz</string>
     <string name="camera_strings_dialog_user_data_collection_txt">Ha alább a hozzájárulását adja, a Sony gyűjti az Ön &lt;b>&lt;a href=#personal-data>személyes adatait&lt;/a>&lt;/b> személyre szabott támogatás biztosítása és a készülékei és szolgáltatásai javítása érdekében. A Sony az &lt;b>&lt;a href=https://www.sonymobile.com/privacy/>Adatvédelmi szabályzatunk&lt;/a>&lt;/b> előírásainak megfelelően kezeli az Ön adatait.</string>
     <string name="camera_strings_dialog_video_hdr_hlg_supported_short_description_txt">Előfordulhat, hogy egyes eszközök/szolgáltatások nem képesek visszadni a HDR-tartalom eredeti színét és fényerősségét. Kérjük, a HDR-tartalmak megtekintésekor olyan eszközöket/szolgáltatásokat használjon, amelyek támogatják a HDR-t.</string>
+    <string name="camera_strings_digital_tripod_hint_edge_txt">A kompozíció elmozdult. Irányítsa a kamerát az eredeti alany felé.</string>
     <string name="camera_strings_digital_zoom_type_description_txt">"Válasszon digitális zoombeállítást.
 
 Normál digitális zoom: A képérzékelő adataira épülő digitális feldolgozást használó zoom.
@@ -484,6 +546,7 @@ Ennek megváltoztatásához állítsa le az adatfolyamot, majd lépjen be a Face
     <string name="camera_strings_fast_capturing_screen_locked_settings_txt">A beállítások megnyitásához oldja fel a képernyő zárolását.</string>
     <string name="camera_strings_fast_capturing_screen_locked_streaming_txt">Az adatfolyam megkezdéséhez oldja fel a képernyőt.</string>
     <string name="camera_strings_fast_capturing_screen_locked_title_txt">Képernyő zárolva</string>
+    <string name="camera_strings_feature_creative_look_custom_description_txt">Regisztrálhatja a megjelenést és a fényerő/szín beállításokat.</string>
     <string name="camera_strings_feature_creative_look_description_txt">"Választhatja a képek (fényképek és filmek) befejezését egy „megjelenés” kiválasztásával.
 
 A Kreatív megjelenés 6 előre beállított megjelenést kínál. Mindegyik a színtónus, a telítettség, a kontraszt, az élesség, a fényerősség és más elemek különféle kombinációi alapján van optimalizálva, így a képfeldolgozást ezen elemek olyan egyensúlya szerint állíthatja be, amely ideális az Ön számára."</string>
@@ -567,6 +630,7 @@ Koppintson a követni kívánt témára."</string>
     <string name="camera_strings_framing_orientation_description_txt">"A témát vízszintes és függőleges képkockatájolás szerint is körülvághatja.
 Az [Auto] funkció bekapcsolásával a körülvágás tájolása a készülék tájolásával megegyezőre állítható."</string>
     <string name="camera_strings_framing_select_subject_to_track_txt">Koppintson arra az alanyra, akinek a pozícióját zárolni akarja</string>
+    <string name="camera_strings_framing_setting_guide_title_txt">Az Automatikus képkockáról</string>
     <string name="camera_strings_framing_setting_orientation_landscape_txt">Vízszintes</string>
     <string name="camera_strings_framing_setting_orientation_portrait_txt">Függőleges</string>
     <string name="camera_strings_framing_setting_orientation_title_txt">Képkocka tájolása</string>
@@ -574,6 +638,7 @@ Az [Auto] funkció bekapcsolásával a körülvágás tájolása a készülék t
 A körülvágott felvételek mentése Full HD felbontásban történik. A körülvágatlan felvételek mentése 4K-ban történik."</string>
     <string name="camera_strings_framing_setting_save_original_video_off_txt">Teljes képernyős felvétel: Kikapcsolva</string>
     <string name="camera_strings_framing_setting_save_original_video_title_txt">Teljes képernyős felvétel</string>
+    <string name="camera_strings_framing_setting_snapshot_description_txt">Attól függően, hogy a [Teljes képernyős felvétel] be vagy ki van kapcsolva, a videó felvétele közben készített pillanatképek teljes képernyősen lesznek elmentve.</string>
     <string name="camera_strings_geotagging_description_txt">Fényképeit és videóit a készítésük helyét jelző címkével együtt mentheti</string>
     <string name="camera_strings_geotagging_txt">Hely mentése</string>
     <string name="camera_strings_gimbal_mode_tab_label">MI-operatőr</string>
@@ -592,6 +657,7 @@ Ennek segítségével olyan helyzetekben is stabil videófelvételeket rögzíth
     <string name="camera_strings_gimbal_setting_assist_method_locking_hint_txt">Témapozíciós zár: Kézi</string>
     <string name="camera_strings_gimbal_setting_assist_method_locking_txt">Kézi</string>
     <string name="camera_strings_gimbal_setting_assist_method_title_txt">Témapozíciós zár</string>
+    <string name="camera_strings_gimbal_setting_guide_title_txt">Az MI-operatőr módról</string>
     <string name="camera_strings_gridline_description_txt">Megadhatja, hogy megjelenjenek-e a rácsvonalak a képek komponálásának segítése érdekében</string>
     <string name="camera_strings_gridline_txt">Rácsvonalak</string>
     <string name="camera_strings_hand_shutter_description_updated_txt">Elindíthatja az időzítő visszaszámlálását azzal, ha a tenyerét az előlapi kamera felé fordítja. Az észlelés megkönnyítéséhez nyújtsa ki az ujjait felfelé.</string>
@@ -727,6 +793,7 @@ A videó rögzítése közben készített pillanatképek mindig a szokásos dina
     <string name="camera_strings_notification_channel_title_saving_process_txt">Mentési folyamat</string>
     <string name="camera_strings_notification_text_saving_in_progress_txt">Kérjük, várjon, amíg a mentés befejeződik</string>
     <string name="camera_strings_notification_title_saving_in_progress_txt">Mentés folyamatban</string>
+    <string name="camera_strings_notify_saving_process_cannot_launch_app_by_hw_shutter_txt">A zárgomb megnyomása nem indítja el a kamerát mentés közben</string>
     <string name="camera_strings_ok_txt">OK</string>
     <string name="camera_strings_peaking_color_blue_txt">Kék</string>
     <string name="camera_strings_peaking_color_red_txt">Piros</string>
@@ -735,6 +802,7 @@ A videó rögzítése közben készített pillanatképek mindig a szokásos dina
     <string name="camera_strings_peaking_color_yellow_txt">Sárga</string>
     <string name="camera_strings_peaking_txt">Csúcsérték</string>
     <string name="camera_strings_personal_data_txt">Személyes adatok</string>
+    <string name="camera_strings_photopro_setting_guide_title_txt">A Profi fényképről</string>
     <string name="camera_strings_privacy_policy_txt">Adatvédelmi szabályzat</string>
     <string name="camera_strings_pro_tips_computational_photo_description_txt">"A kamera még P módban is automatikusan azonosítja a motívumprogramot, és gyönyörű automatikus felvételeket készít az elmosódás, a zaj, a túl- és alulexponálás csökkentésével.
 Ha nem használja, kikapcsolhatja az Fn gombbal vagy a MENÜ-ben."</string>
@@ -965,6 +1033,7 @@ Ha továbbra is SD-kártyát használ adattárolóként, feltétlenül nagy sebe
     <string name="camera_strings_video_stabilization_description_sub_txt">Megjegyzés: a Kiváló minőség kiválasztása lerövidítheti a felvétel időtartamát a készülék hőmérsékletének emelkedése miatt.</string>
     <string name="camera_strings_video_stabilization_description_txt">Az Xperia egyedülálló, „Optical SteadyShot” elnevezésű hibrid stabilizációs rendszert kapott – ez képes kombinálni az optikai képstabilizálást és az elektronikus képstabilizálást. Remegésmentes, sima videókat készít még menet közben rögzített felvételeknél is.</string>
     <string name="camera_strings_video_stabilization_high_quality_images_txt">Kiváló minőség</string>
+    <string name="camera_strings_videopro_setting_guide_title_txt">A Profi videóról</string>
     <string name="camera_strings_volume_distortion_correction_description_txt">Korrigálja a képernyő széléhez közel megjelenő arcok torzulását az ultraszéles objektív használata közben. Emiatt a háttér torznak vagy a látószög beszűkültnek tűnhet.</string>
     <string name="camera_strings_volume_distortion_correction_front_description_txt">Korrigálja a képernyő széléhez közel megjelenő arcok torzulását. Emiatt a háttér torznak vagy a látószög beszűkültnek tűnhet.</string>
     <string name="camera_strings_volume_distortion_correction_txt">Arcok torzításának korrekciója</string>
@@ -1042,8 +1111,25 @@ Nincs hálózati kapcsolat."</string>
     <string name="clear_text_end_icon_content_description">Szöveg törlése</string>
     <string name="close_drawer">Navigációs menü bezárása</string>
     <string name="close_sheet">Munkalap bezárása</string>
+    <string name="common_google_play_services_enable_button">Engedélyezés</string>
+    <string name="common_google_play_services_enable_text">"A(z) %1$s alkalmazás csak akkor működik, ha  engedélyezi a Google Play-szolgáltatásokat."</string>
+    <string name="common_google_play_services_enable_title">Google Play-szolgáltatások engedélyezése</string>
+    <string name="common_google_play_services_install_button">Telepítés</string>
+    <string name="common_google_play_services_install_text">A(z) %1$s alkalmazás nem fut a Google Play-szolgáltatások nélkül, amelyek hiányoznak az eszközről.</string>
+    <string name="common_google_play_services_install_title">A Google Play-szolgáltatások beszerzése</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play-szolgáltatások elérhetősége</string>
+    <string name="common_google_play_services_notification_ticker">Google Play-szolgáltatások – hiba</string>
+    <string name="common_google_play_services_unknown_issue">A(z) %1$s alkalmazás problémába ütközött a Google Play-szolgáltatások használata során. Próbálkozzon újra.</string>
+    <string name="common_google_play_services_unsupported_text">A(z) %1$s alkalmazás nem fut a Google Play-szolgáltatások nélkül, amelyeket eszköze nem támogat.</string>
+    <string name="common_google_play_services_update_button">Frissítés</string>
+    <string name="common_google_play_services_update_text">A(z) %1$s alkalmazás csak akkor fog működni, ha frissíti a Google Play-szolgáltatásokat.</string>
+    <string name="common_google_play_services_update_title">A Google Play-szolgáltatások frissítése</string>
+    <string name="common_google_play_services_updating_text">A(z) %1$s alkalmazás nem fut a Google Play-szolgáltatások nélkül, amelyek frissítése folyamatban van.</string>
+    <string name="common_google_play_services_wear_update_text">A Google Play-szolgáltatások új verziójára van szükség. A szolgáltatás hamarosan frissíti önmagát.</string>
+    <string name="common_open_on_phone">Megnyitás a telefonon</string>
+    <string name="common_signin_button_text">Bejelentkezés</string>
+    <string name="common_signin_button_text_long">Bejelentkezés Google-fiókkal</string>
     <string name="copy">Másolás</string>
-    <string name="copy_toast_msg">Link vágólapra másolva</string>
     <string name="default_error_message">Érvénytelen adat</string>
     <string name="default_popup_window_title">Előugró ablak</string>
     <string name="dropdown_menu">Legördülő menü</string>
@@ -1054,9 +1140,6 @@ Nincs hálózati kapcsolat."</string>
     <string name="external_display_connected_description_txt">A keresőt a vlogmonitorból tudod figyelemmel kísérni</string>
     <string name="external_display_connected_title_txt">Vlogmonitor csatlakoztatva</string>
     <string name="external_display_note_about_external_mic_txt">Megjegyzés: Külső mikrofon csatlakoztatásához a felvétel előtt csatlakoztassa azt a vlogmonitorhoz. Ha később csatlakoztatja, akkor újra kell majd csatlakoztatnia a Vlogmonitort.</string>
-    <string name="fallback_menu_item_copy_link">Link másolása</string>
-    <string name="fallback_menu_item_open_in_browser">Megnyitás böngészőben</string>
-    <string name="fallback_menu_item_share_link">Link megosztása</string>
     <string name="icon_content_description">Párbeszédpanel ikonja</string>
     <string name="in_progress">Folyamatban</string>
     <string name="indeterminate">Részlegesen ellenőrizve</string>

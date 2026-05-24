@@ -10,6 +10,14 @@
 # direct methods
 .method constructor <init>(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "needCancelCaptureRequest"
+        }
+    .end annotation
 
     .line 19
     const-string v0, "StateFinalize"
@@ -26,6 +34,14 @@
 # virtual methods
 .method public entry(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 29
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateFinalize;->mNeedCancelCaptureRequest:Z

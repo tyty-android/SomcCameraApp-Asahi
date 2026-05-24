@@ -28,7 +28,16 @@
 
 
 # static fields
-.field static final INSTANCE:Lcom/google/common/primitives/Doubles$DoubleConverter;
+.field static final INSTANCE:Lcom/google/common/base/Converter;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/common/base/Converter<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Double;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 .field private static final serialVersionUID:J = 0x1L
 
@@ -37,12 +46,12 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 290
+    .line 305
     new-instance v0, Lcom/google/common/primitives/Doubles$DoubleConverter;
 
     invoke-direct {v0}, Lcom/google/common/primitives/Doubles$DoubleConverter;-><init>()V
 
-    sput-object v0, Lcom/google/common/primitives/Doubles$DoubleConverter;->INSTANCE:Lcom/google/common/primitives/Doubles$DoubleConverter;
+    sput-object v0, Lcom/google/common/primitives/Doubles$DoubleConverter;->INSTANCE:Lcom/google/common/base/Converter;
 
     return-void
 .end method
@@ -50,7 +59,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 288
+    .line 303
     invoke-direct {p0}, Lcom/google/common/base/Converter;-><init>()V
 
     return-void
@@ -59,8 +68,8 @@
 .method private readResolve()Ljava/lang/Object;
     .locals 0
 
-    .line 308
-    sget-object p0, Lcom/google/common/primitives/Doubles$DoubleConverter;->INSTANCE:Lcom/google/common/primitives/Doubles$DoubleConverter;
+    .line 323
+    sget-object p0, Lcom/google/common/primitives/Doubles$DoubleConverter;->INSTANCE:Lcom/google/common/base/Converter;
 
     return-object p0
 .end method
@@ -69,8 +78,16 @@
 # virtual methods
 .method protected bridge synthetic doBackward(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 288
+    .line 303
     check-cast p1, Ljava/lang/Double;
 
     invoke-virtual {p0, p1}, Lcom/google/common/primitives/Doubles$DoubleConverter;->doBackward(Ljava/lang/Double;)Ljava/lang/String;
@@ -82,8 +99,16 @@
 
 .method protected doBackward(Ljava/lang/Double;)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 299
+    .line 314
     invoke-virtual {p1}, Ljava/lang/Double;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -93,8 +118,16 @@
 
 .method protected doForward(Ljava/lang/String;)Ljava/lang/Double;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 294
+    .line 309
     invoke-static {p1}, Ljava/lang/Double;->valueOf(Ljava/lang/String;)Ljava/lang/Double;
 
     move-result-object p0
@@ -104,8 +137,16 @@
 
 .method protected bridge synthetic doForward(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 288
+    .line 303
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/google/common/primitives/Doubles$DoubleConverter;->doForward(Ljava/lang/String;)Ljava/lang/Double;
@@ -118,7 +159,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 304
+    .line 319
     const-string p0, "Doubles.stringConverter()"
 
     return-object p0

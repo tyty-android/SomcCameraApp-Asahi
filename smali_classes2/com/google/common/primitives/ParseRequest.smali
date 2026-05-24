@@ -3,6 +3,11 @@
 .source "ParseRequest.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/primitives/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # instance fields
 .field final radix:I
 
@@ -12,14 +17,24 @@
 # direct methods
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
-
-    .line 25
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "rawValue",
+            "radix"
+        }
+    .end annotation
 
     .line 26
-    iput-object p1, p0, Lcom/google/common/primitives/ParseRequest;->rawValue:Ljava/lang/String;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 27
+    iput-object p1, p0, Lcom/google/common/primitives/ParseRequest;->rawValue:Ljava/lang/String;
+
+    .line 28
     iput p2, p0, Lcom/google/common/primitives/ParseRequest;->radix:I
 
     return-void
@@ -27,8 +42,16 @@
 
 .method static fromString(Ljava/lang/String;)Lcom/google/common/primitives/ParseRequest;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stringValue"
+        }
+    .end annotation
 
-    .line 31
+    .line 32
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -37,12 +60,12 @@
 
     const/4 v0, 0x0
 
-    .line 38
+    .line 39
     invoke-virtual {p0, v0}, Ljava/lang/String;->charAt(I)C
 
     move-result v0
 
-    .line 39
+    .line 40
     const-string v1, "0x"
 
     invoke-virtual {p0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
@@ -70,7 +93,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 43
+    .line 44
     invoke-virtual {p0, v3}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object p0
@@ -82,14 +105,14 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 45
+    .line 46
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v0
 
     if-le v0, v3, :cond_2
 
-    .line 46
+    .line 47
     invoke-virtual {p0, v3}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object p0
@@ -107,12 +130,12 @@
     :goto_0
     const/4 v0, 0x2
 
-    .line 40
+    .line 41
     invoke-virtual {p0, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 53
+    .line 54
     :goto_1
     new-instance v0, Lcom/google/common/primitives/ParseRequest;
 
@@ -120,7 +143,7 @@
 
     return-object v0
 
-    .line 32
+    .line 33
     :cond_4
     new-instance p0, Ljava/lang/NumberFormatException;
 

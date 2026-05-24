@@ -33,8 +33,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/Multisets$FilteredMultiset;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 308
+    .line 350
     iput-object p1, p0, Lcom/google/common/collect/Multisets$FilteredMultiset$1;->this$0:Lcom/google/common/collect/Multisets$FilteredMultiset;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,6 +54,15 @@
 # virtual methods
 .method public apply(Lcom/google/common/collect/Multiset$Entry;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "entry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -54,7 +71,7 @@
         }
     .end annotation
 
-    .line 311
+    .line 353
     iget-object p0, p0, Lcom/google/common/collect/Multisets$FilteredMultiset$1;->this$0:Lcom/google/common/collect/Multisets$FilteredMultiset;
 
     iget-object p0, p0, Lcom/google/common/collect/Multisets$FilteredMultiset;->predicate:Lcom/google/common/base/Predicate;
@@ -72,8 +89,16 @@
 
 .method public bridge synthetic apply(Ljava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "entry"
+        }
+    .end annotation
 
-    .line 308
+    .line 350
     check-cast p1, Lcom/google/common/collect/Multiset$Entry;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Multisets$FilteredMultiset$1;->apply(Lcom/google/common/collect/Multiset$Entry;)Z

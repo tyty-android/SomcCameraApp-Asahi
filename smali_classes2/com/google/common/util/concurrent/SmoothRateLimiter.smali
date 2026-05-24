@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/util/concurrent/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothBursty;,
@@ -25,13 +28,21 @@
 # direct methods
 .method private constructor <init>(Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stopwatch"
+        }
+    .end annotation
 
-    .line 330
+    .line 333
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/RateLimiter;-><init>(Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;)V
 
     const-wide/16 v0, 0x0
 
-    .line 327
+    .line 330
     iput-wide v0, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter;->nextFreeTicketMicros:J
 
     return-void
@@ -40,7 +51,7 @@
 .method synthetic constructor <init>(Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;Lcom/google/common/util/concurrent/SmoothRateLimiter$1;)V
     .locals 0
 
-    .line 25
+    .line 28
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/SmoothRateLimiter;-><init>(Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;)V
 
     return-void
@@ -54,7 +65,7 @@
 .method final doGetRate()D
     .locals 4
 
-    .line 345
+    .line 348
     sget-object v0, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     const-wide/16 v1, 0x1
@@ -73,15 +84,35 @@
 .end method
 
 .method abstract doSetRate(DD)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "permitsPerSecond",
+            "stableIntervalMicros"
+        }
+    .end annotation
 .end method
 
 .method final doSetRate(DJ)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "permitsPerSecond",
+            "nowMicros"
+        }
+    .end annotation
 
-    .line 335
+    .line 338
     invoke-virtual {p0, p3, p4}, Lcom/google/common/util/concurrent/SmoothRateLimiter;->resync(J)V
 
-    .line 336
+    .line 339
     sget-object p3, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     const-wide/16 v0, 0x1
@@ -94,10 +125,10 @@
 
     div-double/2addr p3, p1
 
-    .line 337
+    .line 340
     iput-wide p3, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter;->stableIntervalMicros:D
 
-    .line 338
+    .line 341
     invoke-virtual {p0, p1, p2, p3, p4}, Lcom/google/common/util/concurrent/SmoothRateLimiter;->doSetRate(DD)V
 
     return-void
@@ -105,8 +136,16 @@
 
 .method final queryEarliestAvailable(J)J
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "nowMicros"
+        }
+    .end annotation
 
-    .line 350
+    .line 353
     iget-wide p0, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter;->nextFreeTicketMicros:J
 
     return-wide p0
@@ -114,16 +153,26 @@
 
 .method final reserveEarliestAvailable(IJ)J
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "requiredPermits",
+            "nowMicros"
+        }
+    .end annotation
 
-    .line 355
+    .line 358
     invoke-virtual {p0, p2, p3}, Lcom/google/common/util/concurrent/SmoothRateLimiter;->resync(J)V
 
-    .line 356
+    .line 359
     iget-wide p2, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter;->nextFreeTicketMicros:J
 
     int-to-double v0, p1
 
-    .line 357
+    .line 360
     iget-wide v2, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter;->storedPermits:D
 
     invoke-static {v0, v1, v2, v3}, Ljava/lang/Math;->min(DD)D
@@ -132,10 +181,10 @@
 
     sub-double/2addr v0, v2
 
-    .line 359
+    .line 362
     iget-wide v4, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter;->storedPermits:D
 
-    .line 360
+    .line 363
     invoke-virtual {p0, v4, v5, v2, v3}, Lcom/google/common/util/concurrent/SmoothRateLimiter;->storedPermitsToWaitTime(DD)J
 
     move-result-wide v4
@@ -148,7 +197,7 @@
 
     add-long/2addr v4, v0
 
-    .line 363
+    .line 366
     iget-wide v0, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter;->nextFreeTicketMicros:J
 
     invoke-static {v0, v1, v4, v5}, Lcom/google/common/math/LongMath;->saturatedAdd(JJ)J
@@ -157,7 +206,7 @@
 
     iput-wide v0, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter;->nextFreeTicketMicros:J
 
-    .line 364
+    .line 367
     iget-wide v0, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter;->storedPermits:D
 
     sub-double/2addr v0, v2
@@ -169,8 +218,16 @@
 
 .method resync(J)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "nowMicros"
+        }
+    .end annotation
 
-    .line 385
+    .line 388
     iget-wide v0, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter;->nextFreeTicketMicros:J
 
     cmp-long v2, p1, v0
@@ -181,14 +238,14 @@
 
     long-to-double v0, v0
 
-    .line 386
+    .line 389
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/SmoothRateLimiter;->coolDownIntervalMicros()D
 
     move-result-wide v2
 
     div-double/2addr v0, v2
 
-    .line 387
+    .line 390
     iget-wide v2, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter;->maxPermits:D
 
     iget-wide v4, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter;->storedPermits:D
@@ -201,7 +258,7 @@
 
     iput-wide v0, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter;->storedPermits:D
 
-    .line 388
+    .line 391
     iput-wide p1, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter;->nextFreeTicketMicros:J
 
     :cond_0
@@ -209,4 +266,14 @@
 .end method
 
 .method abstract storedPermitsToWaitTime(DD)J
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "storedPermits",
+            "permitsToTake"
+        }
+    .end annotation
 .end method

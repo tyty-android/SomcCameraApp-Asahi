@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine$OnPreviewStartedListenerImpl;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
-    .line 7967
+    .line 7642
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$OnPreviewStartedListenerImpl$1;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$OnPreviewStartedListenerImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +46,7 @@
 .method public run()V
     .locals 2
 
-    .line 7970
+    .line 7645
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$OnPreviewStartedListenerImpl$1;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$OnPreviewStartedListenerImpl;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/controller/StateMachine$OnPreviewStartedListenerImpl;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;

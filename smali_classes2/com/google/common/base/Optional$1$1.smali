@@ -39,16 +39,24 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/base/Optional$1;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 298
+    .line 355
     iput-object p1, p0, Lcom/google/common/base/Optional$1$1;->this$0:Lcom/google/common/base/Optional$1;
 
     invoke-direct {p0}, Lcom/google/common/base/AbstractIterator;-><init>()V
 
-    .line 299
+    .line 356
     iget-object p1, p1, Lcom/google/common/base/Optional$1;->val$optionals:Ljava/lang/Iterable;
 
-    .line 300
+    .line 357
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -74,7 +82,10 @@
         }
     .end annotation
 
-    .line 304
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 362
     :cond_0
     iget-object v0, p0, Lcom/google/common/base/Optional$1$1;->iterator:Ljava/util/Iterator;
 
@@ -84,7 +95,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 305
+    .line 363
     iget-object v0, p0, Lcom/google/common/base/Optional$1$1;->iterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -93,21 +104,21 @@
 
     check-cast v0, Lcom/google/common/base/Optional;
 
-    .line 306
+    .line 364
     invoke-virtual {v0}, Lcom/google/common/base/Optional;->isPresent()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 307
+    .line 365
     invoke-virtual {v0}, Lcom/google/common/base/Optional;->get()Ljava/lang/Object;
 
     move-result-object p0
 
     return-object p0
 
-    .line 310
+    .line 368
     :cond_1
     invoke-virtual {p0}, Lcom/google/common/base/Optional$1$1;->endOfData()Ljava/lang/Object;
 

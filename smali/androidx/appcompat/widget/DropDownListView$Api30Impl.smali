@@ -80,7 +80,7 @@
     .line 749
     const-class v0, Landroid/widget/AdapterView;
 
-    const-string/jumbo v1, "setSelectedPositionInt"
+    const-string v1, "setSelectedPositionInt"
 
     new-array v2, v5, [Ljava/lang/Class;
 

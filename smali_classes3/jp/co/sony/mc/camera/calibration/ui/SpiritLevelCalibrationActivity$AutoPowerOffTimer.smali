@@ -60,6 +60,16 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationActivity;Landroid/content/Context;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "context"
+        }
+    .end annotation
 
     .line 219
     iput-object p1, p0, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationActivity$AutoPowerOffTimer;->this$0:Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationActivity;
@@ -93,6 +103,14 @@
 
 .method private declared-synchronized startAutoPowerOff(I)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "duration"
+        }
+    .end annotation
 
     monitor-enter p0
 

@@ -26,6 +26,17 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsCategoryAdapter;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$position"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
@@ -46,6 +57,14 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "v"
+        }
+    .end annotation
 
     .line 87
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsCategoryAdapter$1;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsCategoryAdapter;

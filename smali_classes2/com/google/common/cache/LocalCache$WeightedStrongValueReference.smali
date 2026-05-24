@@ -33,16 +33,27 @@
 # direct methods
 .method constructor <init>(Ljava/lang/Object;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "referent",
+            "weight"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TV;I)V"
         }
     .end annotation
 
-    .line 1629
+    .line 1667
     invoke-direct {p0, p1}, Lcom/google/common/cache/LocalCache$StrongValueReference;-><init>(Ljava/lang/Object;)V
 
-    .line 1630
+    .line 1668
     iput p2, p0, Lcom/google/common/cache/LocalCache$WeightedStrongValueReference;->weight:I
 
     return-void
@@ -53,7 +64,7 @@
 .method public getWeight()I
     .locals 0
 
-    .line 1635
+    .line 1673
     iget p0, p0, Lcom/google/common/cache/LocalCache$WeightedStrongValueReference;->weight:I
 
     return p0

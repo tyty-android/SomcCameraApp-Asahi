@@ -7,31 +7,86 @@
 .method public abstract canObjectTracking()Z
 .end method
 
-.method public abstract canSetLens()Z
-.end method
-
 .method public abstract cancelSelfTimer()V
 .end method
 
 .method public abstract changeAbGm(FF)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ab",
+            "gm"
+        }
+    .end annotation
 .end method
 
 .method public abstract changeAeLock(Ljp/co/sony/mc/camera/configuration/parameters/AutoExposureLock;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 .end method
 
 .method public abstract changeAfLock(Ljp/co/sony/mc/camera/configuration/parameters/AutoFocusLock;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 .end method
 
 .method public abstract changeFocusDistance(F)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "distance"
+        }
+    .end annotation
 .end method
 
 .method public abstract changeLowLightMode(Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 .end method
 
 .method public abstract changeWhiteBalance(Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 .end method
 
 .method public abstract changeZoomStep(I)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "step"
+        }
+    .end annotation
 .end method
 
 .method public abstract clearMessageDialog()V
@@ -41,9 +96,14 @@
 .end method
 
 .method public abstract closeCamera(Ljava/lang/Runnable;)V
-.end method
-
-.method public abstract confirmStopStreaming()V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "runnable"
+        }
+    .end annotation
 .end method
 
 .method public abstract fetchCustomWb()V
@@ -62,6 +122,16 @@
 .end method
 
 .method public abstract jumpZoomStep(II)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "startStep",
+            "endStep"
+        }
+    .end annotation
 .end method
 
 .method public abstract notifyZoomRejected()V
@@ -74,6 +144,18 @@
 .end method
 
 .method public abstract onFocusMagnificationPositionSwiped(Landroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "currentPoint",
+            "lastPoint",
+            "downPoint"
+        }
+    .end annotation
 .end method
 
 .method public abstract pauseRecording()V
@@ -88,9 +170,6 @@
 .method public abstract prepareStartFocusMagnification()V
 .end method
 
-.method public abstract prepareStreaming()V
-.end method
-
 .method public abstract requestBurstCapture()V
 .end method
 
@@ -101,6 +180,14 @@
 .end method
 
 .method public abstract requestObjectTracking(Landroid/graphics/Point;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "coordinate"
+        }
+    .end annotation
 .end method
 
 .method public abstract requestStartHistogramMonitoring()V
@@ -110,6 +197,14 @@
 .end method
 
 .method public abstract requestTouchFocus(Landroid/graphics/Point;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "coordinate"
+        }
+    .end annotation
 .end method
 
 .method public abstract requestUpdateAudioDevice()V
@@ -119,24 +214,61 @@
 .end method
 
 .method public abstract setCameraKeyEnabled(Z)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "enabled"
+        }
+    .end annotation
 .end method
 
 .method public abstract setCapturingMode(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)V
-.end method
-
-.method public abstract setFacebookAccount()V
-.end method
-
-.method public abstract setFacebookLive()V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "capturingMode"
+        }
+    .end annotation
 .end method
 
 .method public abstract setFocusDistanceListenerEnabled(Z)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isEnabled"
+        }
+    .end annotation
 .end method
 
 .method public abstract setFocusMagnificationPosition(Landroid/graphics/Point;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "coordinate"
+        }
+    .end annotation
 .end method
 
 .method public abstract setLens(Landroid/util/Pair;Ljava/lang/Float;)Z
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "lens",
+            "zoomRatio"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -151,18 +283,39 @@
 .end method
 
 .method public abstract setPoseRotationListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$PoseRotationResultListener;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 .end method
 
 .method public abstract setPowerSavingMode(Z)V
-.end method
-
-.method public abstract setRtmpStreamKey()V
-.end method
-
-.method public abstract setRtmpStreamUrl()V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isUltraLow"
+        }
+    .end annotation
 .end method
 
 .method public abstract setSetting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -172,15 +325,6 @@
             "TT;>;TT;)V"
         }
     .end annotation
-.end method
-
-.method public abstract setYoutubeLiveEvent()V
-.end method
-
-.method public abstract setYoutubeLogin()V
-.end method
-
-.method public abstract shareYoutubeLiveEvent()V
 .end method
 
 .method public abstract startAeAwbLockStateDetection()V
@@ -193,6 +337,9 @@
 .end method
 
 .method public abstract startHandDetection()V
+.end method
+
+.method public abstract startMonitorAiSuggestion()V
 .end method
 
 .method public abstract startMonitorAutoFramingState()V
@@ -210,6 +357,9 @@
 .method public abstract startMonitorPoseRotation()V
 .end method
 
+.method public abstract startMonitorTripodFramingCroppedPosition()V
+.end method
+
 .method public abstract startRecording()V
 .end method
 
@@ -225,6 +375,9 @@
 .method public abstract stopHandDetection()V
 .end method
 
+.method public abstract stopMonitorAiSuggestion()V
+.end method
+
 .method public abstract stopMonitorAutoFramingState()V
 .end method
 
@@ -238,6 +391,9 @@
 .end method
 
 .method public abstract stopMonitorPoseRotation()V
+.end method
+
+.method public abstract stopMonitorTripodFramingCroppedPosition()V
 .end method
 
 .method public abstract stopObjectTracking()V

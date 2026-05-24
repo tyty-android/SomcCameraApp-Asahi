@@ -40,45 +40,45 @@
 .method public constructor <init>()V
     .locals 3
 
-    .line 84
+    .line 83
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 85
+    .line 84
     iput-object v0, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;->profile:Ljp/co/sony/mc/camera/recorder/RecordingProfile;
 
-    .line 86
+    .line 85
     iput-object v0, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;->videoRect:Landroid/graphics/Rect;
 
-    .line 87
+    .line 86
     iput-object v0, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;->mimeType:Ljava/lang/String;
 
-    .line 88
+    .line 87
     iput-object v0, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;->fileExtension:Ljava/lang/String;
 
     const-wide/16 v1, 0x0
 
-    .line 89
+    .line 88
     iput-wide v1, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;->maxFileSizeBytes:J
 
-    .line 90
+    .line 89
     iput-wide v1, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;->maxDurationMills:J
 
     const/4 v1, 0x0
 
-    .line 91
+    .line 90
     iput-boolean v1, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;->isSlowMotion:Z
 
     const/4 v1, -0x1
 
-    .line 92
+    .line 91
     iput v1, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;->requestId:I
 
-    .line 93
+    .line 92
     iput-object v0, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;->audioDeviceInfo:Landroid/media/AudioDeviceInfo;
 
-    .line 94
+    .line 93
     iput v1, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;->recordingOrientation:I
 
     return-void
@@ -89,7 +89,7 @@
 .method public build()Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam;
     .locals 15
 
-    .line 97
+    .line 96
     new-instance v14, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;->profile:Ljp/co/sony/mc/camera/recorder/RecordingProfile;
@@ -123,8 +123,16 @@
 
 .method public setAudioDeviceInfo(Landroid/media/AudioDeviceInfo;)Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "audioDeviceInfo"
+        }
+    .end annotation
 
-    .line 144
+    .line 143
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;->audioDeviceInfo:Landroid/media/AudioDeviceInfo;
 
     return-object p0
@@ -132,8 +140,16 @@
 
 .method public setFileExtension(Ljava/lang/String;)Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fileExtension"
+        }
+    .end annotation
 
-    .line 119
+    .line 118
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;->fileExtension:Ljava/lang/String;
 
     return-object p0
@@ -141,8 +157,16 @@
 
 .method public setMaxDurationMills(J)Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "maxDurationMills"
+        }
+    .end annotation
 
-    .line 129
+    .line 128
     iput-wide p1, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;->maxDurationMills:J
 
     return-object p0
@@ -150,8 +174,16 @@
 
 .method public setMaxFileSizeBytes(J)Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "maxFileSizeBytes"
+        }
+    .end annotation
 
-    .line 124
+    .line 123
     iput-wide p1, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;->maxFileSizeBytes:J
 
     return-object p0
@@ -159,8 +191,16 @@
 
 .method public setMimeType(Ljava/lang/String;)Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mimeType"
+        }
+    .end annotation
 
-    .line 114
+    .line 113
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;->mimeType:Ljava/lang/String;
 
     return-object p0
@@ -168,8 +208,16 @@
 
 .method public setProfile(Ljp/co/sony/mc/camera/recorder/RecordingProfile;)Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "profile"
+        }
+    .end annotation
 
-    .line 104
+    .line 103
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;->profile:Ljp/co/sony/mc/camera/recorder/RecordingProfile;
 
     return-object p0
@@ -177,8 +225,16 @@
 
 .method public setRecordingOrientation(I)Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "recordingOrientation"
+        }
+    .end annotation
 
-    .line 149
+    .line 148
     iput p1, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;->recordingOrientation:I
 
     return-object p0
@@ -186,8 +242,16 @@
 
 .method public setRequestId(I)Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "requestId"
+        }
+    .end annotation
 
-    .line 139
+    .line 138
     iput p1, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;->requestId:I
 
     return-object p0
@@ -195,8 +259,16 @@
 
 .method public setSlowMotion(Z)Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "slowMotion"
+        }
+    .end annotation
 
-    .line 134
+    .line 133
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;->isSlowMotion:Z
 
     return-object p0
@@ -204,8 +276,16 @@
 
 .method public setVideoRect(Landroid/graphics/Rect;)Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "videoRect"
+        }
+    .end annotation
 
-    .line 109
+    .line 108
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam$Builder;->videoRect:Landroid/graphics/Rect;
 
     return-object p0

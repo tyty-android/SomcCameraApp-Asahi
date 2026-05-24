@@ -34,7 +34,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/research/parameters/Event$LaunchFeatureListWay;
     .locals 2
 
-    .line 359
+    .line 358
     sget-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$LaunchFeatureListWay;->FEATURE_LIST_BUTTON:Ljp/co/sony/mc/camera/research/parameters/Event$LaunchFeatureListWay;
 
     sget-object v1, Ljp/co/sony/mc/camera/research/parameters/Event$LaunchFeatureListWay;->NEW_FEATURE_BAR:Ljp/co/sony/mc/camera/research/parameters/Event$LaunchFeatureListWay;
@@ -49,7 +49,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 360
+    .line 359
     new-instance v0, Ljp/co/sony/mc/camera/research/parameters/Event$LaunchFeatureListWay;
 
     const-string v1, "FEATURE_LIST_BUTTON"
@@ -60,7 +60,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$LaunchFeatureListWay;->FEATURE_LIST_BUTTON:Ljp/co/sony/mc/camera/research/parameters/Event$LaunchFeatureListWay;
 
-    .line 361
+    .line 360
     new-instance v0, Ljp/co/sony/mc/camera/research/parameters/Event$LaunchFeatureListWay;
 
     const-string v1, "NEW_FEATURE_BAR"
@@ -71,7 +71,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$LaunchFeatureListWay;->NEW_FEATURE_BAR:Ljp/co/sony/mc/camera/research/parameters/Event$LaunchFeatureListWay;
 
-    .line 359
+    .line 358
     invoke-static {}, Ljp/co/sony/mc/camera/research/parameters/Event$LaunchFeatureListWay;->$values()[Ljp/co/sony/mc/camera/research/parameters/Event$LaunchFeatureListWay;
 
     move-result-object v0
@@ -83,13 +83,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 359
+    .line 358
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -97,8 +108,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/research/parameters/Event$LaunchFeatureListWay;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 359
+    .line 358
     const-class v0, Ljp/co/sony/mc/camera/research/parameters/Event$LaunchFeatureListWay;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -113,7 +132,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/research/parameters/Event$LaunchFeatureListWay;
     .locals 1
 
-    .line 359
+    .line 358
     sget-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$LaunchFeatureListWay;->$VALUES:[Ljp/co/sony/mc/camera/research/parameters/Event$LaunchFeatureListWay;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/research/parameters/Event$LaunchFeatureListWay;->clone()Ljava/lang/Object;

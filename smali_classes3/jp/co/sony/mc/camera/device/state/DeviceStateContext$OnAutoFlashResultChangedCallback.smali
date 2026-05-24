@@ -24,8 +24,16 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 3266
+    .line 3631
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$OnAutoFlashResultChangedCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -45,8 +53,16 @@
 # virtual methods
 .method public onAutoFlashResultChanged(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isFlashRequired"
+        }
+    .end annotation
 
-    .line 3273
+    .line 3638
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$OnAutoFlashResultChangedCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;

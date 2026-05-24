@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/io/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/io/CharStreams$NullWriter;
@@ -19,7 +22,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 58
+    .line 59
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -27,18 +30,26 @@
 
 .method public static asWriter(Ljava/lang/Appendable;)Ljava/io/Writer;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "target"
+        }
+    .end annotation
 
-    .line 347
+    .line 344
     instance-of v0, p0, Ljava/io/Writer;
 
     if-eqz v0, :cond_0
 
-    .line 348
+    .line 345
     check-cast p0, Ljava/io/Writer;
 
     return-object p0
 
-    .line 350
+    .line 347
     :cond_0
     new-instance v0, Lcom/google/common/io/AppendableWriter;
 
@@ -49,23 +60,34 @@
 
 .method public static copy(Ljava/lang/Readable;Ljava/lang/Appendable;)J
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "from",
+            "to"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 73
+    .line 74
     instance-of v0, p0, Ljava/io/Reader;
 
     if-eqz v0, :cond_1
 
-    .line 75
+    .line 76
     instance-of v0, p1, Ljava/lang/StringBuilder;
 
     if-eqz v0, :cond_0
 
-    .line 76
+    .line 77
     check-cast p0, Ljava/io/Reader;
 
     check-cast p1, Ljava/lang/StringBuilder;
@@ -76,7 +98,7 @@
 
     return-wide p0
 
-    .line 78
+    .line 79
     :cond_0
     check-cast p0, Ljava/io/Reader;
 
@@ -90,21 +112,21 @@
 
     return-wide p0
 
-    .line 82
+    .line 83
     :cond_1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 83
+    .line 84
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 85
+    .line 86
     invoke-static {}, Lcom/google/common/io/CharStreams;->createBuffer()Ljava/nio/CharBuffer;
 
     move-result-object v0
 
     const-wide/16 v1, 0x0
 
-    .line 86
+    .line 87
     :goto_0
     invoke-interface {p0, v0}, Ljava/lang/Readable;->read(Ljava/nio/CharBuffer;)I
 
@@ -114,13 +136,13 @@
 
     if-eq v3, v4, :cond_2
 
-    .line 87
+    .line 88
     invoke-static {v0}, Lcom/google/common/io/Java8Compatibility;->flip(Ljava/nio/Buffer;)V
 
-    .line 88
+    .line 89
     invoke-interface {p1, v0}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
 
-    .line 89
+    .line 90
     invoke-virtual {v0}, Ljava/nio/CharBuffer;->remaining()I
 
     move-result v3
@@ -129,7 +151,7 @@
 
     add-long/2addr v1, v3
 
-    .line 90
+    .line 91
     invoke-static {v0}, Lcom/google/common/io/Java8Compatibility;->clear(Ljava/nio/Buffer;)V
 
     goto :goto_0
@@ -140,26 +162,37 @@
 
 .method static copyReaderToBuilder(Ljava/io/Reader;Ljava/lang/StringBuilder;)J
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "from",
+            "to"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 115
+    .line 116
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 116
+    .line 117
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/16 v0, 0x800
 
-    .line 117
+    .line 118
     new-array v0, v0, [C
 
     const-wide/16 v1, 0x0
 
-    .line 120
+    .line 121
     :goto_0
     invoke-virtual {p0, v0}, Ljava/io/Reader;->read([C)I
 
@@ -171,7 +204,7 @@
 
     const/4 v4, 0x0
 
-    .line 121
+    .line 122
     invoke-virtual {p1, v0, v4, v3}, Ljava/lang/StringBuilder;->append([CII)Ljava/lang/StringBuilder;
 
     int-to-long v3, v3
@@ -186,26 +219,37 @@
 
 .method static copyReaderToWriter(Ljava/io/Reader;Ljava/io/Writer;)J
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "from",
+            "to"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 143
+    .line 144
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 144
+    .line 145
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/16 v0, 0x800
 
-    .line 145
+    .line 146
     new-array v0, v0, [C
 
     const-wide/16 v1, 0x0
 
-    .line 148
+    .line 149
     :goto_0
     invoke-virtual {p0, v0}, Ljava/io/Reader;->read([C)I
 
@@ -217,7 +261,7 @@
 
     const/4 v4, 0x0
 
-    .line 149
+    .line 150
     invoke-virtual {p1, v0, v4, v3}, Ljava/io/Writer;->write([CII)V
 
     int-to-long v3, v3
@@ -235,7 +279,7 @@
 
     const/16 v0, 0x800
 
-    .line 55
+    .line 56
     invoke-static {v0}, Ljava/nio/CharBuffer;->allocate(I)Ljava/nio/CharBuffer;
 
     move-result-object v0
@@ -245,6 +289,15 @@
 
 .method public static exhaust(Ljava/lang/Readable;)J
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "readable"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -286,7 +339,7 @@
 .method public static nullWriter()Ljava/io/Writer;
     .locals 1
 
-    .line 279
+    .line 277
     invoke-static {}, Lcom/google/common/io/CharStreams$NullWriter;->access$000()Lcom/google/common/io/CharStreams$NullWriter;
 
     move-result-object v0
@@ -296,6 +349,20 @@
 
 .method public static readLines(Ljava/lang/Readable;Lcom/google/common/io/LineProcessor;)Ljava/lang/Object;
     .locals 1
+    .annotation runtime Lcom/google/common/io/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "readable",
+            "processor"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -313,18 +380,18 @@
         }
     .end annotation
 
-    .line 219
+    .line 220
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 220
+    .line 221
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 222
+    .line 223
     new-instance v0, Lcom/google/common/io/LineReader;
 
     invoke-direct {v0, p0}, Lcom/google/common/io/LineReader;-><init>(Ljava/lang/Readable;)V
 
-    .line 224
+    .line 225
     :cond_0
     invoke-virtual {v0}, Lcom/google/common/io/LineReader;->readLine()Ljava/lang/String;
 
@@ -332,14 +399,14 @@
 
     if-eqz p0, :cond_1
 
-    .line 225
+    .line 226
     invoke-interface {p1, p0}, Lcom/google/common/io/LineProcessor;->processLine(Ljava/lang/String;)Z
 
     move-result p0
 
     if-nez p0, :cond_0
 
-    .line 229
+    .line 230
     :cond_1
     invoke-interface {p1}, Lcom/google/common/io/LineProcessor;->getResult()Ljava/lang/Object;
 
@@ -350,6 +417,15 @@
 
 .method public static readLines(Ljava/lang/Readable;)Ljava/util/List;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "r"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -396,13 +472,24 @@
 
 .method public static skipFully(Ljava/io/Reader;J)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "reader",
+            "n"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 262
+    .line 261
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     :goto_0
@@ -412,7 +499,7 @@
 
     if-lez v2, :cond_1
 
-    .line 264
+    .line 263
     invoke-virtual {p0, p1, p2}, Ljava/io/Reader;->skip(J)J
 
     move-result-wide v2
@@ -425,7 +512,7 @@
 
     goto :goto_0
 
-    .line 266
+    .line 265
     :cond_0
     new-instance p0, Ljava/io/EOFException;
 
@@ -439,13 +526,22 @@
 
 .method public static toString(Ljava/lang/Readable;)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "r"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 164
+    .line 165
     invoke-static {p0}, Lcom/google/common/io/CharStreams;->toStringBuilder(Ljava/lang/Readable;)Ljava/lang/StringBuilder;
 
     move-result-object p0
@@ -459,30 +555,39 @@
 
 .method private static toStringBuilder(Ljava/lang/Readable;)Ljava/lang/StringBuilder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "r"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 176
+    .line 177
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 177
+    .line 178
     instance-of v1, p0, Ljava/io/Reader;
 
     if-eqz v1, :cond_0
 
-    .line 178
+    .line 179
     check-cast p0, Ljava/io/Reader;
 
     invoke-static {p0, v0}, Lcom/google/common/io/CharStreams;->copyReaderToBuilder(Ljava/io/Reader;Ljava/lang/StringBuilder;)J
 
     goto :goto_0
 
-    .line 180
+    .line 181
     :cond_0
     invoke-static {p0, v0}, Lcom/google/common/io/CharStreams;->copy(Ljava/lang/Readable;Ljava/lang/Appendable;)J
 

@@ -33,6 +33,20 @@
 
 .method public static create(Ljp/co/sony/mc/camera/configuration/Configurations;Ljp/co/sony/mc/camera/recorder/RecordingProfile;Ljp/co/sony/mc/camera/storage/Storage;Ljp/co/sony/mc/camera/storage/Storage$StorageType;)Ljp/co/sony/mc/camera/util/MaxVideoSize;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "config",
+            "profile",
+            "storage",
+            "type"
+        }
+    .end annotation
 
     .line 79
     invoke-static {p2, p3}, Ljp/co/sony/mc/camera/util/RecordingUtil;->getRecordableSizeKBytes(Ljp/co/sony/mc/camera/storage/Storage;Ljp/co/sony/mc/camera/storage/Storage$StorageType;)J
@@ -133,6 +147,18 @@
 
 .method private static createMaxVideoSize(Ljp/co/sony/mc/camera/configuration/Configurations;Ljp/co/sony/mc/camera/recorder/RecordingProfile;J)Ljp/co/sony/mc/camera/util/MaxVideoSize;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "config",
+            "profile",
+            "recordableStorageSizeKBytes"
+        }
+    .end annotation
 
     .line 92
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->getIsMms()Z
@@ -159,6 +185,18 @@
 
 .method private static createQualityHighMaxVideoSize(Ljp/co/sony/mc/camera/configuration/Configurations;Ljp/co/sony/mc/camera/recorder/RecordingProfile;J)Ljp/co/sony/mc/camera/util/MaxVideoSize;
     .locals 16
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "config",
+            "profile",
+            "recordableStorageSizeKBytes"
+        }
+    .end annotation
 
     move-object/from16 v0, p1
 
@@ -339,6 +377,18 @@
 
 .method private static createQualityLowMaxVideoSize(Ljp/co/sony/mc/camera/configuration/Configurations;Ljp/co/sony/mc/camera/recorder/RecordingProfile;J)Ljp/co/sony/mc/camera/util/MaxVideoSize;
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "config",
+            "profile",
+            "recordableStorageSizeKBytes"
+        }
+    .end annotation
 
     .line 146
     new-instance v0, Ljp/co/sony/mc/camera/util/MaxVideoSize;
@@ -575,6 +625,16 @@
 
 .method private static getDurationFromSizeInMillis(Ljp/co/sony/mc/camera/recorder/RecordingProfile;J)J
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "profile",
+            "maxFileSizeBytes"
+        }
+    .end annotation
 
     .line 62
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->getAverageFileSize()J
@@ -661,6 +721,14 @@
 
 .method private setMaxDurationMillis(J)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "maxDurationMillis"
+        }
+    .end annotation
 
     const-wide/32 v0, 0x7fffffff
 
@@ -679,6 +747,14 @@
 
 .method private setMaxFileSizeBytes(J)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "maxFileSizeBytes"
+        }
+    .end annotation
 
     .line 56
     iput-wide p1, p0, Ljp/co/sony/mc/camera/util/MaxVideoSize;->mMaxFileSizeBytes:J

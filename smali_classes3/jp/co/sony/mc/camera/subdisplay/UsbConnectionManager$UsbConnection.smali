@@ -652,7 +652,7 @@
 
     new-array v0, v2, [Ljava/lang/String;
 
-    const-string v3, "sendDataBulk"
+    const-string/jumbo v3, "sendDataBulk"
 
     aput-object v3, v0, v1
 
@@ -702,7 +702,7 @@
 
     new-instance v0, Ljava/lang/StringBuilder;
 
-    const-string v2, "sendDataBulk res:"
+    const-string/jumbo v2, "sendDataBulk res:"
 
     invoke-direct {v0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 

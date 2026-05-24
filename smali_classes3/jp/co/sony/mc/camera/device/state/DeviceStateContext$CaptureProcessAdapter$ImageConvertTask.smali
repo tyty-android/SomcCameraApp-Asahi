@@ -42,6 +42,21 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;Ljava/util/List;Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter$SnapshotMetaInfo;Landroid/hardware/camera2/CameraCharacteristics;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$1",
+            "imageList",
+            "metaInfo",
+            "cameraCharacteristics"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -54,18 +69,18 @@
         }
     .end annotation
 
-    .line 3840
+    .line 4233
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter$ImageConvertTask;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3841
+    .line 4234
     iput-object p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter$ImageConvertTask;->mImageList:Ljava/util/List;
 
-    .line 3842
+    .line 4235
     iput-object p3, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter$ImageConvertTask;->mMetaInfo:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter$SnapshotMetaInfo;
 
-    .line 3843
+    .line 4236
     iput-object p4, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter$ImageConvertTask;->mCameraCharacteristics:Landroid/hardware/camera2/CameraCharacteristics;
 
     return-void
@@ -73,13 +88,21 @@
 
 .method private getTimestamps(Landroid/media/Image;)V
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "jpgImage"
+        }
+    .end annotation
 
-    .line 3930
+    .line 4323
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v0
 
-    .line 3931
+    .line 4324
     invoke-virtual {p1}, Landroid/media/Image;->getPlanes()[Landroid/media/Image$Plane;
 
     move-result-object p1
@@ -92,30 +115,30 @@
 
     move-result-object p1
 
-    .line 3932
+    .line 4325
     new-instance v3, Ljp/co/sony/mc/camera/util/ByteBufferInputStream;
 
     invoke-direct {v3, p1}, Ljp/co/sony/mc/camera/util/ByteBufferInputStream;-><init>(Ljava/nio/ByteBuffer;)V
 
-    .line 3934
+    .line 4327
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v4
 
     const-wide/16 v6, 0x0
 
-    .line 3939
+    .line 4332
     :try_start_0
     new-instance v8, Landroid/media/ExifInterface;
 
     invoke-direct {v8, v3}, Landroid/media/ExifInterface;-><init>(Ljava/io/InputStream;)V
 
-    .line 3940
+    .line 4333
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v6
 
-    .line 3942
+    .line 4335
     const-string v3, "DateTimeOriginal"
 
     invoke-virtual {v8, v3}, Landroid/media/ExifInterface;->getAttribute(Ljava/lang/String;)Ljava/lang/String;
@@ -124,7 +147,7 @@
 
     iput-object v3, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter$ImageConvertTask;->mDateTime:Ljava/lang/String;
 
-    .line 3943
+    .line 4336
     const-string v3, "SubSecTimeOriginal"
 
     invoke-virtual {v8, v3}, Landroid/media/ExifInterface;->getAttribute(Ljava/lang/String;)Ljava/lang/String;
@@ -146,24 +169,24 @@
     :catch_0
     move-exception p0
 
-    .line 3946
+    .line 4339
     :try_start_1
     invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 3948
+    .line 4341
     :goto_0
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->rewind()Ljava/nio/Buffer;
 
-    .line 3951
+    .line 4344
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide p0
 
     const/4 v3, 0x1
 
-    .line 3952
+    .line 4345
     new-array v3, v3, [Ljava/lang/String;
 
     new-instance v8, Ljava/lang/StringBuilder;
@@ -208,11 +231,11 @@
 
     return-void
 
-    .line 3948
+    .line 4341
     :goto_1
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->rewind()Ljava/nio/Buffer;
 
-    .line 3949
+    .line 4342
     throw p0
 .end method
 
@@ -223,7 +246,7 @@
 
     move-object/from16 v1, p0
 
-    .line 3848
+    .line 4241
     const-string v2, ", ByteBuffer size: "
 
     const-string v3, ", ByteBuffer wrap: "
@@ -236,7 +259,7 @@
 
     invoke-direct {v6}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3849
+    .line 4242
     iget-object v0, v1, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter$ImageConvertTask;->mImageList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -258,7 +281,7 @@
 
     check-cast v8, Landroid/media/Image;
 
-    .line 3850
+    .line 4243
     invoke-virtual {v8}, Landroid/media/Image;->getFormat()I
 
     move-result v0
@@ -269,7 +292,7 @@
 
     if-eq v0, v9, :cond_0
 
-    .line 3914
+    .line 4307
     invoke-virtual {v8}, Landroid/media/Image;->getPlanes()[Landroid/media/Image$Plane;
 
     move-result-object v0
@@ -280,24 +303,24 @@
 
     move-result-object v0
 
-    .line 3915
+    .line 4308
     new-instance v9, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageDataInfo;
 
-    .line 3916
+    .line 4309
     invoke-virtual {v8}, Landroid/media/Image;->getFormat()I
 
     move-result v10
 
     invoke-direct {v9, v8, v0, v10}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageDataInfo;-><init>(Landroid/media/Image;Ljava/nio/ByteBuffer;I)V
 
-    .line 3917
+    .line 4310
     invoke-interface {v6, v9}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     move-object/from16 v20, v7
 
     goto/16 :goto_7
 
-    .line 3852
+    .line 4245
     :cond_0
     iget-object v0, v1, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter$ImageConvertTask;->mImageList:Ljava/util/List;
 
@@ -309,7 +332,7 @@
 
     if-le v0, v11, :cond_2
 
-    .line 3853
+    .line 4246
     iget-object v0, v1, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter$ImageConvertTask;->mImageList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -329,7 +352,7 @@
 
     check-cast v12, Landroid/media/Image;
 
-    .line 3854
+    .line 4247
     iget-object v13, v1, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter$ImageConvertTask;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;
 
     invoke-virtual {v12}, Landroid/media/Image;->getFormat()I
@@ -342,21 +365,21 @@
 
     if-eqz v13, :cond_1
 
-    .line 3855
+    .line 4248
     invoke-direct {v1, v12}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter$ImageConvertTask;->getTimestamps(Landroid/media/Image;)V
 
-    .line 3860
+    .line 4253
     :cond_2
     new-instance v0, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {v0}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
-    .line 3861
+    .line 4254
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v12
 
-    .line 3866
+    .line 4259
     new-instance v14, Ljp/co/sony/mc/camera/camera/DngCreator;
 
     iget-object v15, v1, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter$ImageConvertTask;->mCameraCharacteristics:Landroid/hardware/camera2/CameraCharacteristics;
@@ -371,12 +394,12 @@
 
     invoke-direct {v14, v15, v10, v11, v9}, Ljp/co/sony/mc/camera/camera/DngCreator;-><init>(Landroid/hardware/camera2/CameraCharacteristics;Landroid/hardware/camera2/CaptureResult;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3868
+    .line 4261
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v9
 
-    .line 3869
+    .line 4262
     iget-object v11, v1, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter$ImageConvertTask;->mMetaInfo:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter$SnapshotMetaInfo;
 
     iget-object v11, v11, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter$SnapshotMetaInfo;->snapshotRequest:Ljp/co/sony/mc/camera/device/SnapshotRequest;
@@ -389,7 +412,7 @@
 
     invoke-virtual {v14, v11}, Ljp/co/sony/mc/camera/camera/DngCreator;->setOrientation(I)Ljp/co/sony/mc/camera/camera/DngCreator;
 
-    .line 3871
+    .line 4264
     iget-object v11, v1, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter$ImageConvertTask;->mMetaInfo:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter$SnapshotMetaInfo;
 
     iget-object v11, v11, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter$SnapshotMetaInfo;->captureResult:Landroid/hardware/camera2/CaptureResult;
@@ -404,13 +427,13 @@
 
     if-eqz v11, :cond_3
 
-    .line 3874
+    .line 4267
     invoke-virtual {v14, v11}, Ljp/co/sony/mc/camera/camera/DngCreator;->setLocation(Landroid/location/Location;)Ljp/co/sony/mc/camera/camera/DngCreator;
 
     :cond_3
     const-wide/16 v16, 0x0
 
-    .line 3877
+    .line 4270
     :try_start_0
     invoke-virtual {v14, v0, v8}, Ljp/co/sony/mc/camera/camera/DngCreator;->writeImage(Ljava/io/OutputStream;Landroid/media/Image;)V
     :try_end_0
@@ -418,7 +441,7 @@
     .catch Ljava/lang/OutOfMemoryError; {:try_start_0 .. :try_end_0} :catch_7
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
-    .line 3878
+    .line 4271
     :try_start_1
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
@@ -428,23 +451,23 @@
     .catch Ljava/lang/OutOfMemoryError; {:try_start_1 .. :try_end_1} :catch_7
     .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
-    .line 3880
+    .line 4273
     :try_start_2
     invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object v0
 
-    .line 3879
+    .line 4272
     invoke-static {v0}, Ljava/nio/ByteBuffer;->wrap([B)Ljava/nio/ByteBuffer;
 
     move-result-object v0
 
-    .line 3881
+    .line 4274
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v16
 
-    .line 3882
+    .line 4275
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->limit()I
 
     move-result v11
@@ -453,7 +476,7 @@
     .catch Ljava/lang/OutOfMemoryError; {:try_start_2 .. :try_end_2} :catch_4
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 3883
+    .line 4276
     :try_start_3
     new-instance v15, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageDataInfo;
     :try_end_3
@@ -470,22 +493,22 @@
     :try_start_4
     invoke-direct {v15, v7, v0, v1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageDataInfo;-><init>(Landroid/media/Image;Ljava/nio/ByteBuffer;I)V
 
-    .line 3885
+    .line 4278
     invoke-interface {v6, v15}, Ljava/util/List;->add(Ljava/lang/Object;)Z
     :try_end_4
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_1
     .catch Ljava/lang/OutOfMemoryError; {:try_start_4 .. :try_end_4} :catch_0
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
-    .line 3896
+    .line 4289
     invoke-virtual {v8}, Landroid/media/Image;->close()V
 
-    .line 3897
+    .line 4290
     invoke-virtual {v14}, Ljp/co/sony/mc/camera/camera/DngCreator;->close()V
 
     const/4 v1, 0x1
 
-    .line 3899
+    .line 4292
     new-array v0, v1, [Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -651,7 +674,7 @@
 
     const/4 v11, 0x0
 
-    .line 3890
+    .line 4283
     :goto_5
     :try_start_5
     const-string v1, "Cannot convert raw image to ByteBuffer because of OutOfMemoryError."
@@ -660,7 +683,7 @@
 
     move-object/from16 v1, p0
 
-    .line 3892
+    .line 4285
     iget-object v0, v1, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter$ImageConvertTask;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
@@ -677,27 +700,27 @@
 
     move-result-object v7
 
-    .line 3893
+    .line 4286
     invoke-virtual {v7}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->getSessionId()Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
 
     move-result-object v7
 
     const/4 v15, 0x4
 
-    .line 3892
+    .line 4285
     invoke-interface {v0, v7, v15}, Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;->onError(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;I)V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_3
 
-    .line 3896
+    .line 4289
     invoke-virtual {v8}, Landroid/media/Image;->close()V
 
-    .line 3897
+    .line 4290
     invoke-virtual {v14}, Ljp/co/sony/mc/camera/camera/DngCreator;->close()V
 
     const/4 v7, 0x1
 
-    .line 3899
+    .line 4292
     new-array v0, v7, [Ljava/lang/String;
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -759,7 +782,7 @@
 
     const/4 v11, 0x0
 
-    .line 3887
+    .line 4280
     :goto_6
     :try_start_6
     const-string v7, "Cannot convert raw image to ByteBuffer because of IOException."
@@ -768,15 +791,15 @@
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_3
 
-    .line 3896
+    .line 4289
     invoke-virtual {v8}, Landroid/media/Image;->close()V
 
-    .line 3897
+    .line 4290
     invoke-virtual {v14}, Ljp/co/sony/mc/camera/camera/DngCreator;->close()V
 
     const/4 v7, 0x1
 
-    .line 3899
+    .line 4292
     new-array v0, v7, [Ljava/lang/String;
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -835,16 +858,16 @@
     :catchall_3
     move-exception v0
 
-    .line 3896
+    .line 4289
     :goto_8
     invoke-virtual {v8}, Landroid/media/Image;->close()V
 
-    .line 3897
+    .line 4290
     invoke-virtual {v14}, Ljp/co/sony/mc/camera/camera/DngCreator;->close()V
 
     const/4 v1, 0x1
 
-    .line 3899
+    .line 4292
     new-array v1, v1, [Ljava/lang/String;
 
     new-instance v6, Ljava/lang/StringBuilder;
@@ -895,10 +918,10 @@
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 3908
+    .line 4301
     throw v0
 
-    .line 3921
+    .line 4314
     :cond_4
     invoke-interface {v6}, Ljava/util/List;->isEmpty()Z
 
@@ -906,7 +929,7 @@
 
     if-nez v0, :cond_5
 
-    .line 3922
+    .line 4315
     iget-object v0, v1, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter$ImageConvertTask;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;

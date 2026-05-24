@@ -16,8 +16,8 @@
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x30
@@ -45,7 +45,7 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 20
+    .line 19
     check-cast p0, Lkotlin/coroutines/CoroutineContext$Element;
 
     invoke-static {p0, p1, p2}, Lkotlin/coroutines/CoroutineContext$Element$DefaultImpls;->fold(Lkotlin/coroutines/CoroutineContext$Element;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)Ljava/lang/Object;
@@ -197,7 +197,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 20
+    .line 19
     check-cast p0, Lkotlin/coroutines/CoroutineContext$Element;
 
     invoke-static {p0, p1}, Lkotlin/coroutines/CoroutineContext$Element$DefaultImpls;->plus(Lkotlin/coroutines/CoroutineContext$Element;Lkotlin/coroutines/CoroutineContext;)Lkotlin/coroutines/CoroutineContext;

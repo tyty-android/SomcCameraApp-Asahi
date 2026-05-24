@@ -24,8 +24,16 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 306
+    .line 309
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet$ClickListener;->this$0:Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -45,8 +53,16 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
-    .line 309
+    .line 312
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet$ClickListener;->this$0:Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->-$$Nest$fgetmThumbnailStateListener(Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;)Ljp/co/sony/mc/camera/view/contentsview/ContentPallet$ThumbnailStateListener;
@@ -55,7 +71,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 310
+    .line 313
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet$ClickListener;->this$0:Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->-$$Nest$fgetmContent(Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;)Ljp/co/sony/mc/camera/view/contentsview/contents/Content;
@@ -64,7 +80,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 311
+    .line 314
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet$ClickListener;->this$0:Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->-$$Nest$fgetmThumbnailStateListener(Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;)Ljp/co/sony/mc/camera/view/contentsview/ContentPallet$ThumbnailStateListener;
@@ -81,7 +97,7 @@
 
     goto :goto_0
 
-    .line 312
+    .line 315
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet$ClickListener;->this$0:Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;
 
@@ -91,17 +107,17 @@
 
     if-eqz p1, :cond_1
 
-    .line 315
+    .line 318
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet$ClickListener;->this$0:Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;
 
     const/4 v0, 0x1
 
     invoke-static {p1, v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->-$$Nest$fputmIsTemporaryThumbnailClicked(Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;Z)V
 
-    .line 316
+    .line 319
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet$ClickListener;->this$0:Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;
 
-    const p1, 0x7f09013b
+    const p1, 0x7f09013a
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->findViewById(I)Landroid/view/View;
 
@@ -111,7 +127,7 @@
 
     invoke-virtual {p0, p1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 317
+    .line 320
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddThumbnailTransitedEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddThumbnailTransitedEvent$Context;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddThumbnailTransitedEvent$Context;->updateTempThumbnailClickNum()V

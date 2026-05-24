@@ -26,13 +26,24 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$result"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 523
+    .line 520
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$3;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/controller/StateMachine$3;->val$result:Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;
@@ -46,6 +57,21 @@
 # virtual methods
 .method public onDataLoadCompleted(IZLjava/util/LinkedList;Landroid/graphics/Bitmap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "requestId",
+            "isRegister",
+            "contentInfoList",
+            "bitmap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IZ",
@@ -62,14 +88,32 @@
 
 .method public onDataLoadFailed(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "requestId"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public onLoadCompleted(Landroid/net/Uri;Landroid/graphics/Bitmap;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "uri",
+            "bitmap"
+        }
+    .end annotation
 
-    .line 526
+    .line 523
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
@@ -98,7 +142,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 527
+    .line 524
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$3;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
@@ -111,8 +155,18 @@
 
 .method public onLoadFailed(Landroid/net/Uri;I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "uri",
+            "reason"
+        }
+    .end annotation
 
-    .line 532
+    .line 529
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
@@ -151,7 +205,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 534
+    .line 531
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$3;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 

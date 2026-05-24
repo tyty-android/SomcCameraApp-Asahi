@@ -28,8 +28,16 @@
 # direct methods
 .method public constructor <init>(Lcom/google/common/collect/ForwardingNavigableMap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 280
+    .line 304
     iput-object p1, p0, Lcom/google/common/collect/ForwardingNavigableMap$StandardDescendingMap;->this$0:Lcom/google/common/collect/ForwardingNavigableMap;
 
     invoke-direct {p0}, Lcom/google/common/collect/Maps$DescendingMap;-><init>()V
@@ -50,7 +58,7 @@
         }
     .end annotation
 
-    .line 289
+    .line 313
     new-instance v0, Lcom/google/common/collect/ForwardingNavigableMap$StandardDescendingMap$1;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/ForwardingNavigableMap$StandardDescendingMap$1;-><init>(Lcom/google/common/collect/ForwardingNavigableMap$StandardDescendingMap;)V
@@ -68,7 +76,7 @@
         }
     .end annotation
 
-    .line 284
+    .line 308
     iget-object p0, p0, Lcom/google/common/collect/ForwardingNavigableMap$StandardDescendingMap;->this$0:Lcom/google/common/collect/ForwardingNavigableMap;
 
     return-object p0

@@ -39,6 +39,16 @@
 # virtual methods
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "t1",
+            "t2"
+        }
+    .end annotation
 
     .line 30
     check-cast p1, [I
@@ -54,6 +64,16 @@
 
 .method public compare([I[I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "t1",
+            "t2"
+        }
+    .end annotation
 
     const/4 p0, 0x1
 

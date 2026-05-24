@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_feature_introduction_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title_bar_layout" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/setting_title_bar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title_bar_layout">
+        <androidx.viewpager.widget.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <jp.co.sony.mc.camera.view.widget.DialogPageIndicator android:layout_gravity="center_horizontal" android:id="@id/pageIndicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/feature_introduction_page_indicator_marginTop" android:layout_marginBottom="@dimen/feature_introduction_page_indicator_marginBottom" android:importantForAccessibility="no" app:selectedColor="@color/tutorial_dialog_page_indicator_selected_color" app:unselectedColor="@color/tutorial_dialog_page_indicator_unselected_color" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

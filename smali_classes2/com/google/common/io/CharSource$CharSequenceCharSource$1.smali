@@ -39,13 +39,21 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/io/CharSource$CharSequenceCharSource;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 493
+    .line 588
     iput-object p1, p0, Lcom/google/common/io/CharSource$CharSequenceCharSource$1;->this$0:Lcom/google/common/io/CharSource$CharSequenceCharSource;
 
     invoke-direct {p0}, Lcom/google/common/collect/AbstractIterator;-><init>()V
 
-    .line 494
+    .line 589
     invoke-static {}, Lcom/google/common/io/CharSource$CharSequenceCharSource;->access$100()Lcom/google/common/base/Splitter;
 
     move-result-object v0
@@ -69,8 +77,10 @@
 # virtual methods
 .method protected bridge synthetic computeNext()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 
-    .line 493
+    .line 588
     invoke-virtual {p0}, Lcom/google/common/io/CharSource$CharSequenceCharSource$1;->computeNext()Ljava/lang/String;
 
     move-result-object p0
@@ -80,8 +90,10 @@
 
 .method protected computeNext()Ljava/lang/String;
     .locals 2
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 
-    .line 498
+    .line 594
     iget-object v0, p0, Lcom/google/common/io/CharSource$CharSequenceCharSource$1;->lines:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -90,7 +102,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 499
+    .line 595
     iget-object v0, p0, Lcom/google/common/io/CharSource$CharSequenceCharSource$1;->lines:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -99,7 +111,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 501
+    .line 597
     iget-object v1, p0, Lcom/google/common/io/CharSource$CharSequenceCharSource$1;->lines:Ljava/util/Iterator;
 
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
@@ -117,7 +129,7 @@
     :cond_0
     return-object v0
 
-    .line 505
+    .line 601
     :cond_1
     invoke-virtual {p0}, Lcom/google/common/io/CharSource$CharSequenceCharSource$1;->endOfData()Ljava/lang/Object;
 

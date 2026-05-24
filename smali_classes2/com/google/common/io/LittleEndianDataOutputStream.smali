@@ -6,9 +6,22 @@
 .implements Ljava/io/DataOutput;
 
 
+# annotations
+.annotation runtime Lcom/google/common/io/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # direct methods
 .method public constructor <init>(Ljava/io/OutputStream;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "out"
+        }
+    .end annotation
 
     .line 48
     new-instance v0, Ljava/io/DataOutputStream;
@@ -36,7 +49,7 @@
         }
     .end annotation
 
-    .line 171
+    .line 170
     iget-object p0, p0, Lcom/google/common/io/LittleEndianDataOutputStream;->out:Ljava/io/OutputStream;
 
     invoke-virtual {p0}, Ljava/io/OutputStream;->close()V
@@ -46,6 +59,19 @@
 
 .method public write([BII)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "b",
+            "off",
+            "len"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -62,6 +88,15 @@
 
 .method public writeBoolean(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "v"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -80,6 +115,15 @@
 
 .method public writeByte(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "v"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -98,6 +142,15 @@
 
 .method public writeBytes(Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "s"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -119,6 +172,15 @@
 
 .method public writeChar(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "v"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -133,6 +195,15 @@
 
 .method public writeChars(Ljava/lang/String;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "s"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -166,6 +237,15 @@
 
 .method public writeDouble(D)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "v"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -184,6 +264,15 @@
 
 .method public writeFloat(F)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "v"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -202,6 +291,15 @@
 
 .method public writeInt(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "v"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -246,7 +344,16 @@
 .end method
 
 .method public writeLong(J)V
-    .locals 1
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "v"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -254,40 +361,44 @@
     .end annotation
 
     .line 145
+    iget-object p0, p0, Lcom/google/common/io/LittleEndianDataOutputStream;->out:Ljava/io/OutputStream;
+
+    check-cast p0, Ljava/io/DataOutputStream;
+
     invoke-static {p1, p2}, Ljava/lang/Long;->reverseBytes(J)J
 
     move-result-wide p1
 
-    invoke-static {p1, p2}, Lcom/google/common/primitives/Longs;->toByteArray(J)[B
-
-    move-result-object p1
-
-    const/4 p2, 0x0
-
-    .line 146
-    array-length v0, p1
-
-    invoke-virtual {p0, p1, p2, v0}, Lcom/google/common/io/LittleEndianDataOutputStream;->write([BII)V
+    invoke-virtual {p0, p1, p2}, Ljava/io/DataOutputStream;->writeLong(J)V
 
     return-void
 .end method
 
 .method public writeShort(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "v"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 157
+    .line 156
     iget-object v0, p0, Lcom/google/common/io/LittleEndianDataOutputStream;->out:Ljava/io/OutputStream;
 
     and-int/lit16 v1, p1, 0xff
 
     invoke-virtual {v0, v1}, Ljava/io/OutputStream;->write(I)V
 
-    .line 158
+    .line 157
     iget-object p0, p0, Lcom/google/common/io/LittleEndianDataOutputStream;->out:Ljava/io/OutputStream;
 
     shr-int/lit8 p1, p1, 0x8
@@ -301,13 +412,22 @@
 
 .method public writeUTF(Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "str"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 163
+    .line 162
     iget-object p0, p0, Lcom/google/common/io/LittleEndianDataOutputStream;->out:Ljava/io/OutputStream;
 
     check-cast p0, Ljava/io/DataOutputStream;

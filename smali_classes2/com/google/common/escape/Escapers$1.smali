@@ -28,6 +28,14 @@
 # virtual methods
 .method public escape(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "string"
+        }
+    .end annotation
 
     .line 51
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -41,6 +49,17 @@
 
 .method protected escape(C)[C
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 
     const/4 p0, 0x0
 

@@ -30,11 +30,21 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/DenseImmutableTable;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "columnIndex"
+        }
+    .end annotation
 
-    .line 168
+    .line 198
     iput-object p1, p0, Lcom/google/common/collect/DenseImmutableTable$Column;->this$0:Lcom/google/common/collect/DenseImmutableTable;
 
-    .line 169
+    .line 199
     invoke-static {p1}, Lcom/google/common/collect/DenseImmutableTable;->access$500(Lcom/google/common/collect/DenseImmutableTable;)[I
 
     move-result-object p1
@@ -43,7 +53,7 @@
 
     invoke-direct {p0, p1}, Lcom/google/common/collect/DenseImmutableTable$ImmutableArrayMap;-><init>(I)V
 
-    .line 170
+    .line 200
     iput p2, p0, Lcom/google/common/collect/DenseImmutableTable$Column;->columnIndex:I
 
     return-void
@@ -53,13 +63,25 @@
 # virtual methods
 .method getValue(I)Ljava/lang/Object;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "keyIndex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TV;"
         }
     .end annotation
 
-    .line 180
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 211
     iget-object v0, p0, Lcom/google/common/collect/DenseImmutableTable$Column;->this$0:Lcom/google/common/collect/DenseImmutableTable;
 
     invoke-static {v0}, Lcom/google/common/collect/DenseImmutableTable;->access$400(Lcom/google/common/collect/DenseImmutableTable;)[[Ljava/lang/Object;
@@ -95,10 +117,21 @@
         }
     .end annotation
 
-    .line 175
+    .line 205
     iget-object p0, p0, Lcom/google/common/collect/DenseImmutableTable$Column;->this$0:Lcom/google/common/collect/DenseImmutableTable;
 
     invoke-static {p0}, Lcom/google/common/collect/DenseImmutableTable;->access$600(Lcom/google/common/collect/DenseImmutableTable;)Lcom/google/common/collect/ImmutableMap;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method writeReplace()Ljava/lang/Object;
+    .locals 0
+
+    .line 225
+    invoke-super {p0}, Lcom/google/common/collect/DenseImmutableTable$ImmutableArrayMap;->writeReplace()Ljava/lang/Object;
 
     move-result-object p0
 

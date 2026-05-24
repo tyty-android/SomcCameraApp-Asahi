@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1595
+    .line 1826
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,6 +31,21 @@
 # virtual methods
 .method public setValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljava/util/Map;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key",
+            "value",
+            "listenersMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -46,13 +61,13 @@
         }
     .end annotation
 
-    .line 1599
+    .line 1830
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1600
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/AutoFocusLock;
+    .line 1831
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetAutoFocusLock(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/AutoFocusLock;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetTouchIntention(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;)Z
 
     move-result p0
 

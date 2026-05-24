@@ -168,14 +168,14 @@
 
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
-    .line 105
+    .line 187
     iget v0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState$1$1;->label:I
 
     if-nez v0, :cond_0
 
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 106
+    .line 188
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState$1$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
 
     sget-object p1, Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$ModeChanged;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$ModeChanged;
@@ -184,12 +184,12 @@
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;->closeAllMenu(Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason;)Z
 
-    .line 107
+    .line 189
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 
-    .line 105
+    .line 187
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 

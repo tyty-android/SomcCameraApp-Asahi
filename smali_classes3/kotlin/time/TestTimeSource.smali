@@ -5,34 +5,35 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nTimeSources.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TimeSources.kt\nkotlin/time/TestTimeSource\n+ 2 longSaturatedMath.kt\nkotlin/time/LongSaturatedMathKt\n*L\n1#1,199:1\n80#2:200\n80#2:201\n*S KotlinDebug\n*F\n+ 1 TimeSources.kt\nkotlin/time/TestTimeSource\n*L\n173#1:200\n180#1:201\n*E\n"
+    value = "SMAP\nTimeSources.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TimeSources.kt\nkotlin/time/TestTimeSource\n+ 2 longSaturatedMath.kt\nkotlin/time/LongSaturatedMathKt\n*L\n1#1,202:1\n80#2:203\n80#2:204\n*S KotlinDebug\n*F\n+ 1 TimeSources.kt\nkotlin/time/TestTimeSource\n*L\n176#1:203\n183#1:204\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\u0008\u0007\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0017\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\u0008H\u0002\u00a2\u0006\u0004\u0008\t\u0010\nJ\u0018\u0010\u000b\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\u0008H\u0086\u0002\u00a2\u0006\u0004\u0008\u000c\u0010\nJ\u0008\u0010\r\u001a\u00020\u0004H\u0014R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u000e"
+        "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\t\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u0008\u0007\u0018\u00002\u00020\u0001B\u0007\u00a2\u0006\u0004\u0008\u0002\u0010\u0003J\u0008\u0010\u0006\u001a\u00020\u0005H\u0014J\u0018\u0010\u0007\u001a\u00020\u00082\u0006\u0010\t\u001a\u00020\nH\u0086\u0002\u00a2\u0006\u0004\u0008\u000b\u0010\u000cJ\u0017\u0010\r\u001a\u00020\u00082\u0006\u0010\t\u001a\u00020\nH\u0002\u00a2\u0006\u0004\u0008\u000e\u0010\u000cR\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u000f"
     }
     d2 = {
         "Lkotlin/time/TestTimeSource;",
         "Lkotlin/time/AbstractLongTimeSource;",
+        "<init>",
         "()V",
         "reading",
         "",
-        "overflow",
+        "read",
+        "plusAssign",
         "",
         "duration",
         "Lkotlin/time/Duration;",
-        "overflow-LRDsOJo",
-        "(J)V",
-        "plusAssign",
         "plusAssign-LRDsOJo",
-        "read",
+        "(J)V",
+        "overflow",
+        "overflow-LRDsOJo",
         "kotlin-stdlib"
     }
     k = 0x1
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x30
@@ -47,12 +48,12 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 153
+    .line 156
     sget-object v0, Lkotlin/time/DurationUnit;->NANOSECONDS:Lkotlin/time/DurationUnit;
 
     invoke-direct {p0, v0}, Lkotlin/time/AbstractLongTimeSource;-><init>(Lkotlin/time/DurationUnit;)V
 
-    .line 157
+    .line 160
     invoke-virtual {p0}, Lkotlin/time/TestTimeSource;->markNow()Lkotlin/time/ComparableTimeMark;
 
     return-void
@@ -61,7 +62,7 @@
 .method private final overflow-LRDsOJo(J)V
     .locals 4
 
-    .line 196
+    .line 199
     new-instance v0, Ljava/lang/IllegalStateException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -122,7 +123,7 @@
 .method public final plusAssign-LRDsOJo(J)V
     .locals 8
 
-    .line 172
+    .line 175
     invoke-virtual {p0}, Lkotlin/time/TestTimeSource;->getUnit()Lkotlin/time/DurationUnit;
 
     move-result-object v0
@@ -145,12 +146,12 @@
 
     const/4 v0, 0x2
 
-    .line 179
+    .line 182
     invoke-static {p1, p2, v0}, Lkotlin/time/Duration;->div-UwyO8pc(JI)J
 
     move-result-wide v0
 
-    .line 180
+    .line 183
     invoke-virtual {p0}, Lkotlin/time/TestTimeSource;->getUnit()Lkotlin/time/DurationUnit;
 
     move-result-object v4
@@ -167,20 +168,20 @@
 
     if-nez v2, :cond_0
 
-    .line 190
+    .line 193
     invoke-direct {p0, p1, p2}, Lkotlin/time/TestTimeSource;->overflow-LRDsOJo(J)V
 
     goto :goto_0
 
-    .line 181
+    .line 184
     :cond_0
     iget-wide v2, p0, Lkotlin/time/TestTimeSource;->reading:J
 
-    .line 183
+    .line 186
     :try_start_0
     invoke-virtual {p0, v0, v1}, Lkotlin/time/TestTimeSource;->plusAssign-LRDsOJo(J)V
 
-    .line 184
+    .line 187
     invoke-static {p1, p2, v0, v1}, Lkotlin/time/Duration;->minus-LRDsOJo(JJ)J
 
     move-result-wide p1
@@ -194,13 +195,13 @@
     :catch_0
     move-exception p1
 
-    .line 186
+    .line 189
     iput-wide v2, p0, Lkotlin/time/TestTimeSource;->reading:J
 
-    .line 187
+    .line 190
     throw p1
 
-    .line 175
+    .line 178
     :cond_1
     iget-wide v2, p0, Lkotlin/time/TestTimeSource;->reading:J
 
@@ -220,10 +221,10 @@
 
     if-gez v0, :cond_2
 
-    .line 176
+    .line 179
     invoke-direct {p0, p1, p2}, Lkotlin/time/TestTimeSource;->overflow-LRDsOJo(J)V
 
-    .line 177
+    .line 180
     :cond_2
     iput-wide v4, p0, Lkotlin/time/TestTimeSource;->reading:J
 
@@ -234,7 +235,7 @@
 .method protected read()J
     .locals 2
 
-    .line 160
+    .line 163
     iget-wide v0, p0, Lkotlin/time/TestTimeSource;->reading:J
 
     return-wide v0

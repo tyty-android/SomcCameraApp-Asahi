@@ -18,7 +18,7 @@
 .field final executor:Ljava/util/concurrent/Executor;
 
 .field next:Lcom/google/common/util/concurrent/ExecutionList$RunnableExecutorPair;
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -28,17 +28,33 @@
 # direct methods
 .method constructor <init>(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;Lcom/google/common/util/concurrent/ExecutionList$RunnableExecutorPair;)V
     .locals 0
+    .param p3    # Lcom/google/common/util/concurrent/ExecutionList$RunnableExecutorPair;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "runnable",
+            "executor",
+            "next"
+        }
+    .end annotation
 
-    .line 159
+    .line 166
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 160
+    .line 167
     iput-object p1, p0, Lcom/google/common/util/concurrent/ExecutionList$RunnableExecutorPair;->runnable:Ljava/lang/Runnable;
 
-    .line 161
+    .line 168
     iput-object p2, p0, Lcom/google/common/util/concurrent/ExecutionList$RunnableExecutorPair;->executor:Ljava/util/concurrent/Executor;
 
-    .line 162
+    .line 169
     iput-object p3, p0, Lcom/google/common/util/concurrent/ExecutionList$RunnableExecutorPair;->next:Lcom/google/common/util/concurrent/ExecutionList$RunnableExecutorPair;
 
     return-void

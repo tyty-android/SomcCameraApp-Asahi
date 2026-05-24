@@ -12,8 +12,6 @@
 # instance fields
 .field private mDirtyFlags:J
 
-.field private final mboundView0:Landroid/widget/RelativeLayout;
-
 
 # direct methods
 .method static constructor <clinit>()V
@@ -26,81 +24,60 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0903a8
+    const v1, 0x7f0904ae
 
-    const/4 v2, 0x2
+    const/4 v2, 0x1
 
     .line 17
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
     const v1, 0x7f0904ad
 
-    const/4 v2, 0x3
+    const/4 v2, 0x2
 
     .line 18
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0904ac
+    const v1, 0x7f0900ae
 
-    const/4 v2, 0x4
+    const/4 v2, 0x3
 
     .line 19
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0900a5
+    const v1, 0x7f090279
 
-    const/4 v2, 0x5
+    const/4 v2, 0x4
 
     .line 20
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09026f
+    const v1, 0x7f090406
 
-    const/4 v2, 0x6
+    const/4 v2, 0x5
 
     .line 21
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090403
+    const v1, 0x7f090407
 
-    const/4 v2, 0x7
+    const/4 v2, 0x6
 
     .line 22
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090404
+    const v1, 0x7f090276
 
-    const/16 v2, 0x8
+    const/4 v2, 0x7
 
     .line 23
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09026b
+    const v1, 0x7f090278
 
-    const/16 v2, 0x9
+    const/16 v2, 0x8
 
     .line 24
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
-
-    const v1, 0x7f09026d
-
-    const/16 v2, 0xa
-
-    .line 25
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
-
-    const v1, 0x7f090468
-
-    const/16 v2, 0xb
-
-    .line 26
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
-
-    const v1, 0x7f090466
-
-    const/16 v2, 0xc
-
-    .line 27
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
     return-void
@@ -108,13 +85,23 @@
 
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root"
+        }
+    .end annotation
 
-    .line 38
+    .line 33
     sget-object v0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
 
     sget-object v1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const/16 v2, 0xd
+    const/16 v2, 0x9
 
     invoke-static {p1, p2, v2, v0, v1}, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBindingImpl;->mapBindings(Landroidx/databinding/DataBindingComponent;Landroid/view/View;ILandroidx/databinding/ViewDataBinding$IncludedLayouts;Landroid/util/SparseIntArray;)[Ljava/lang/Object;
 
@@ -126,20 +113,32 @@
 .end method
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
-    .locals 17
+    .locals 14
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root",
+            "bindings"
+        }
+    .end annotation
 
-    move-object/from16 v15, p0
+    move-object v13, p0
 
-    const/4 v0, 0x5
+    const/4 v0, 0x3
 
-    .line 41
+    .line 36
     aget-object v0, p3, v0
 
     move-object v4, v0
 
     check-cast v4, Landroid/view/View;
 
-    const/16 v0, 0x9
+    const/4 v0, 0x7
 
     aget-object v0, p3, v0
 
@@ -147,7 +146,7 @@
 
     check-cast v5, Landroid/widget/ImageView;
 
-    const/16 v0, 0xa
+    const/16 v0, 0x8
 
     aget-object v0, p3, v0
 
@@ -155,7 +154,7 @@
 
     check-cast v6, Landroidx/recyclerview/widget/RecyclerView;
 
-    const/4 v0, 0x6
+    const/4 v0, 0x4
 
     aget-object v0, p3, v0
 
@@ -163,7 +162,7 @@
 
     check-cast v7, Landroid/widget/TextView;
 
-    const/4 v0, 0x2
+    const/4 v0, 0x0
 
     aget-object v0, p3, v0
 
@@ -171,7 +170,7 @@
 
     check-cast v8, Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    const/4 v0, 0x7
+    const/4 v0, 0x5
 
     aget-object v0, p3, v0
 
@@ -179,7 +178,7 @@
 
     check-cast v9, Landroid/widget/TextView;
 
-    const/16 v0, 0x8
+    const/4 v0, 0x6
 
     aget-object v0, p3, v0
 
@@ -187,13 +186,13 @@
 
     check-cast v10, Landroid/widget/TextView;
 
-    const/16 v0, 0xc
+    const/4 v0, 0x2
 
     aget-object v0, p3, v0
 
     move-object v11, v0
 
-    check-cast v11, Landroidx/recyclerview/widget/RecyclerView;
+    check-cast v11, Landroidx/constraintlayout/widget/ConstraintLayout;
 
     const/4 v0, 0x1
 
@@ -201,77 +200,37 @@
 
     move-object v12, v0
 
-    check-cast v12, Landroid/widget/TextView;
-
-    const/16 v0, 0xb
-
-    aget-object v0, p3, v0
-
-    move-object v13, v0
-
-    check-cast v13, Landroidx/constraintlayout/widget/ConstraintLayout;
-
-    const/4 v0, 0x4
-
-    aget-object v0, p3, v0
-
-    move-object v14, v0
-
-    check-cast v14, Landroidx/constraintlayout/widget/ConstraintLayout;
-
-    const/4 v0, 0x3
-
-    aget-object v0, p3, v0
-
-    move-object/from16 v16, v0
-
-    check-cast v16, Landroidx/constraintlayout/widget/ConstraintLayout;
+    check-cast v12, Landroidx/constraintlayout/widget/ConstraintLayout;
 
     const/4 v3, 0x0
 
-    move-object/from16 v0, p0
+    move-object v0, p0
 
-    move-object/from16 v1, p1
+    move-object v1, p1
 
     move-object/from16 v2, p2
 
-    move-object/from16 v15, v16
-
-    invoke-direct/range {v0 .. v15}, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;-><init>(Ljava/lang/Object;Landroid/view/View;ILandroid/view/View;Landroid/widget/ImageView;Landroidx/recyclerview/widget/RecyclerView;Landroid/widget/TextView;Landroidx/constraintlayout/widget/ConstraintLayout;Landroid/widget/TextView;Landroid/widget/TextView;Landroidx/recyclerview/widget/RecyclerView;Landroid/widget/TextView;Landroidx/constraintlayout/widget/ConstraintLayout;Landroidx/constraintlayout/widget/ConstraintLayout;Landroidx/constraintlayout/widget/ConstraintLayout;)V
+    invoke-direct/range {v0 .. v12}, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;-><init>(Ljava/lang/Object;Landroid/view/View;ILandroid/view/View;Landroid/widget/ImageView;Landroidx/recyclerview/widget/RecyclerView;Landroid/widget/TextView;Landroidx/constraintlayout/widget/ConstraintLayout;Landroid/widget/TextView;Landroid/widget/TextView;Landroidx/constraintlayout/widget/ConstraintLayout;Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
     const-wide/16 v0, -0x1
 
-    move-object/from16 v2, p0
+    .line 96
+    iput-wide v0, v13, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBindingImpl;->mDirtyFlags:J
 
-    .line 111
-    iput-wide v0, v2, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBindingImpl;->mDirtyFlags:J
-
-    const/4 v0, 0x0
-
-    .line 55
-    aget-object v0, p3, v0
-
-    check-cast v0, Landroid/widget/RelativeLayout;
-
-    iput-object v0, v2, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBindingImpl;->mboundView0:Landroid/widget/RelativeLayout;
+    .line 47
+    iget-object v0, v13, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBindingImpl;->quickSetting:Landroidx/constraintlayout/widget/ConstraintLayout;
 
     const/4 v1, 0x0
 
-    .line 56
-    invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->setTag(Ljava/lang/Object;)V
-
-    .line 57
-    iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBindingImpl;->streamingItemTitle:Landroid/widget/TextView;
-
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
+    invoke-virtual {v0, v1}, Landroidx/constraintlayout/widget/ConstraintLayout;->setTag(Ljava/lang/Object;)V
 
     move-object/from16 v0, p2
 
-    .line 58
-    invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBindingImpl;->setRootTag(Landroid/view/View;)V
+    .line 48
+    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBindingImpl;->setRootTag(Landroid/view/View;)V
 
-    .line 60
-    invoke-virtual/range {p0 .. p0}, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBindingImpl;->invalidateAll()V
+    .line 50
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBindingImpl;->invalidateAll()V
 
     return-void
 .end method
@@ -279,51 +238,28 @@
 
 # virtual methods
 .method protected executeBindings()V
-    .locals 6
+    .locals 2
 
-    .line 97
+    .line 87
     monitor-enter p0
 
-    .line 98
+    const-wide/16 v0, 0x0
+
+    .line 89
     :try_start_0
-    iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBindingImpl;->mDirtyFlags:J
+    iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v2, 0x0
-
-    .line 99
-    iput-wide v2, p0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBindingImpl;->mDirtyFlags:J
-
-    .line 100
+    .line 90
     monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const-wide/16 v4, 0x1
-
-    and-long/2addr v0, v4
-
-    cmp-long v0, v0, v2
-
-    if-eqz v0, :cond_0
-
-    .line 105
-    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBindingImpl;->streamingItemTitle:Landroid/widget/TextView;
-
-    const/4 v0, 0x0
-
-    invoke-static {p0, v0}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setAccessibilityClickable(Landroid/view/View;Z)V
-
-    :cond_0
     return-void
 
     :catchall_0
     move-exception v0
 
-    .line 100
-    :try_start_1
     monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     throw v0
 .end method
@@ -331,10 +267,10 @@
 .method public hasPendingBindings()Z
     .locals 4
 
-    .line 73
+    .line 63
     monitor-enter p0
 
-    .line 74
+    .line 64
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBindingImpl;->mDirtyFlags:J
 
@@ -344,14 +280,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 75
+    .line 65
     monitor-exit p0
 
     const/4 p0, 0x1
 
     return p0
 
-    .line 77
+    .line 67
     :cond_0
     monitor-exit p0
 
@@ -372,21 +308,21 @@
 .method public invalidateAll()V
     .locals 2
 
-    .line 65
+    .line 55
     monitor-enter p0
 
     const-wide/16 v0, 0x1
 
-    .line 66
+    .line 56
     :try_start_0
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBindingImpl;->mDirtyFlags:J
 
-    .line 67
+    .line 57
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 68
+    .line 58
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBindingImpl;->requestRebind()V
 
     return-void
@@ -394,7 +330,7 @@
     :catchall_0
     move-exception v0
 
-    .line 67
+    .line 57
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -405,6 +341,18 @@
 
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "localFieldId",
+            "object",
+            "fieldId"
+        }
+    .end annotation
 
     const/4 p0, 0x0
 
@@ -413,6 +361,16 @@
 
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "variableId",
+            "variable"
+        }
+    .end annotation
 
     const/4 p0, 0x1
 

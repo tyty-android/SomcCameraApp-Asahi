@@ -22,15 +22,15 @@
     .locals 0
 
     .line 0
-    check-cast p1, Ljava/lang/Boolean;
+    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+    check-cast p2, Ljava/lang/Boolean;
+
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p0
 
-    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState;
-
-    invoke-static {p0, p2}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->$r8$lambda$l6jL6MBLQrFxMyjK4FfG1EdNSEM(ZLjp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState;)Z
+    invoke-static {p1, p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->$r8$lambda$W0xHL5L-dtUIBHJmoylhJyEcoX8(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Z)Z
 
     move-result p0
 

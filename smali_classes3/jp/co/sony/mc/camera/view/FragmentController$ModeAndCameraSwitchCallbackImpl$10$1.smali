@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$10;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
-    .line 7310
+    .line 6198
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$10$1;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$10;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +54,7 @@
 .method public getDurationInMillisecond()I
     .locals 0
 
-    .line 7313
+    .line 6201
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$10$1;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$10;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$10;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;
@@ -69,7 +77,7 @@
 .method public getSoundType()Ljp/co/sony/mc/camera/sound/SoundPlayer$Type;
     .locals 2
 
-    .line 7324
+    .line 6212
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$10$1;->getDurationInMillisecond()I
 
     move-result v0
@@ -78,12 +86,12 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 7325
+    .line 6213
     sget-object p0, Ljp/co/sony/mc/camera/sound/SoundPlayer$Type;->SELF_TIMER_3SEC:Ljp/co/sony/mc/camera/sound/SoundPlayer$Type;
 
     goto :goto_0
 
-    .line 7326
+    .line 6214
     :cond_0
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$10$1;->getDurationInMillisecond()I
 
@@ -91,12 +99,12 @@
 
     if-ne p0, v1, :cond_1
 
-    .line 7327
+    .line 6215
     sget-object p0, Ljp/co/sony/mc/camera/sound/SoundPlayer$Type;->SELF_TIMER_4SEC:Ljp/co/sony/mc/camera/sound/SoundPlayer$Type;
 
     goto :goto_0
 
-    .line 7329
+    .line 6217
     :cond_1
     sget-object p0, Ljp/co/sony/mc/camera/sound/SoundPlayer$Type;->SELF_TIMER_1SEC:Ljp/co/sony/mc/camera/sound/SoundPlayer$Type;
 

@@ -24,8 +24,16 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/CameraApplication;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 500
+    .line 525
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraApplication$ClassPreloadDoneCallback;->this$0:Ljp/co/sony/mc/camera/CameraApplication;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,14 +54,14 @@
 .method public onPreloadDone()V
     .locals 2
 
-    .line 508
+    .line 533
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraApplication$ClassPreloadDoneCallback;->this$0:Ljp/co/sony/mc/camera/CameraApplication;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/CameraApplication;->-$$Nest$fputmClassPreloadThread(Ljp/co/sony/mc/camera/CameraApplication;Ljp/co/sony/mc/camera/ClassStaticBlockPreLoadThread;)V
 
-    .line 509
+    .line 534
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraApplication$ClassPreloadDoneCallback;->this$0:Ljp/co/sony/mc/camera/CameraApplication;
 
     invoke-static {p0, v1}, Ljp/co/sony/mc/camera/CameraApplication;->-$$Nest$fputmClassPreloadDoneCallback(Ljp/co/sony/mc/camera/CameraApplication;Ljp/co/sony/mc/camera/ClassStaticBlockPreLoadThread$PreloadDoneCallback;)V

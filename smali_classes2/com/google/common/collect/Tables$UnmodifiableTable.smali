@@ -50,6 +50,15 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/Table;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "delegate"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -58,10 +67,10 @@
         }
     .end annotation
 
-    .line 458
+    .line 561
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingTable;-><init>()V
 
-    .line 459
+    .line 562
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -86,7 +95,7 @@
         }
     .end annotation
 
-    .line 470
+    .line 573
     invoke-super {p0}, Lcom/google/common/collect/ForwardingTable;->cellSet()Ljava/util/Set;
 
     move-result-object p0
@@ -101,7 +110,7 @@
 .method public clear()V
     .locals 0
 
-    .line 475
+    .line 578
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -112,9 +121,18 @@
 .method public column(Ljava/lang/Object;)Ljava/util/Map;
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "columnKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TC;)",
@@ -123,7 +141,7 @@
         }
     .end annotation
 
-    .line 480
+    .line 583
     invoke-super {p0, p1}, Lcom/google/common/collect/ForwardingTable;->column(Ljava/lang/Object;)Ljava/util/Map;
 
     move-result-object p0
@@ -145,7 +163,7 @@
         }
     .end annotation
 
-    .line 485
+    .line 588
     invoke-super {p0}, Lcom/google/common/collect/ForwardingTable;->columnKeySet()Ljava/util/Set;
 
     move-result-object p0
@@ -169,12 +187,12 @@
         }
     .end annotation
 
-    .line 490
-    invoke-static {}, Lcom/google/common/collect/Tables;->access$000()Lcom/google/common/base/Function;
+    .line 593
+    invoke-static {}, Lcom/google/common/collect/Tables;->access$100()Lcom/google/common/base/Function;
 
     move-result-object v0
 
-    .line 491
+    .line 594
     invoke-super {p0}, Lcom/google/common/collect/ForwardingTable;->columnMap()Ljava/util/Map;
 
     move-result-object p0
@@ -200,7 +218,7 @@
         }
     .end annotation
 
-    .line 465
+    .line 568
     iget-object p0, p0, Lcom/google/common/collect/Tables$UnmodifiableTable;->delegate:Lcom/google/common/collect/Table;
 
     return-object p0
@@ -209,7 +227,7 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 454
+    .line 556
     invoke-virtual {p0}, Lcom/google/common/collect/Tables$UnmodifiableTable;->delegate()Lcom/google/common/collect/Table;
 
     move-result-object p0
@@ -220,24 +238,40 @@
 .method public put(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
     .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "rowKey",
+            "columnKey",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TR;TC;TV;)TV;"
         }
     .end annotation
 
-    .line 496
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 603
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -247,6 +281,15 @@
 
 .method public putAll(Lcom/google/common/collect/Table;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "table"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -255,7 +298,7 @@
         }
     .end annotation
 
-    .line 501
+    .line 608
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -266,13 +309,24 @@
 .method public remove(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "rowKey",
+            "columnKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -282,7 +336,10 @@
         }
     .end annotation
 
-    .line 506
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 614
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -293,9 +350,18 @@
 .method public row(Ljava/lang/Object;)Ljava/util/Map;
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "rowKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TR;)",
@@ -304,7 +370,7 @@
         }
     .end annotation
 
-    .line 511
+    .line 619
     invoke-super {p0, p1}, Lcom/google/common/collect/ForwardingTable;->row(Ljava/lang/Object;)Ljava/util/Map;
 
     move-result-object p0
@@ -326,7 +392,7 @@
         }
     .end annotation
 
-    .line 516
+    .line 624
     invoke-super {p0}, Lcom/google/common/collect/ForwardingTable;->rowKeySet()Ljava/util/Set;
 
     move-result-object p0
@@ -350,12 +416,12 @@
         }
     .end annotation
 
-    .line 521
-    invoke-static {}, Lcom/google/common/collect/Tables;->access$000()Lcom/google/common/base/Function;
+    .line 629
+    invoke-static {}, Lcom/google/common/collect/Tables;->access$100()Lcom/google/common/base/Function;
 
     move-result-object v0
 
-    .line 522
+    .line 630
     invoke-super {p0}, Lcom/google/common/collect/ForwardingTable;->rowMap()Ljava/util/Map;
 
     move-result-object p0
@@ -381,7 +447,7 @@
         }
     .end annotation
 
-    .line 527
+    .line 635
     invoke-super {p0}, Lcom/google/common/collect/ForwardingTable;->values()Ljava/util/Collection;
 
     move-result-object p0

@@ -38,6 +38,14 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/status/eachcamera/EyeDetection$Value;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     .line 34
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/status/EnumValue;-><init>(Ljava/lang/Enum;)V

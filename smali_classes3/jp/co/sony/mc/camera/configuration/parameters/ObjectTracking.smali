@@ -57,7 +57,7 @@
     .line 24
     new-instance v6, Ljp/co/sony/mc/camera/configuration/parameters/ObjectTracking;
 
-    const v4, 0x7f1103f4
+    const v4, 0x7f11043f
 
     sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;->OBJECT_TRACKING:Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;
 
@@ -76,7 +76,7 @@
     .line 28
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ObjectTracking;
 
-    const v11, 0x7f1103f3
+    const v11, 0x7f11043e
 
     sget-object v12, Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;->FACE_DETECTION:Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;
 
@@ -104,6 +104,23 @@
 
 .method private constructor <init>(Ljava/lang/String;IIILjp/co/sony/mc/camera/configuration/parameters/FocusArea;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId",
+            "focusArea"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -129,6 +146,16 @@
 
 .method public static getDefault(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/ObjectTracking;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId"
+        }
+    .end annotation
 
     .line 128
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getCameraCapability(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;
@@ -174,6 +201,14 @@
 
 .method public static getOptions(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/ObjectTracking;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
     .line 73
     new-instance v0, Ljava/util/ArrayList;
@@ -227,6 +262,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/ObjectTracking;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 23
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/ObjectTracking;

@@ -6,6 +6,11 @@
 .implements Ljava/io/FilenameFilter;
 
 
+# annotations
+.annotation runtime Lcom/google/common/io/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # instance fields
 .field private final pattern:Ljava/util/regex/Pattern;
 
@@ -13,6 +18,14 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "patternStr"
+        }
+    .end annotation
 
     .line 46
     invoke-static {p1}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
@@ -26,6 +39,14 @@
 
 .method public constructor <init>(Ljava/util/regex/Pattern;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "pattern"
+        }
+    .end annotation
 
     .line 54
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,12 +67,18 @@
 # virtual methods
 .method public accept(Ljava/io/File;Ljava/lang/String;)Z
     .locals 0
-    .param p1    # Ljava/io/File;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dir",
+            "fileName"
+        }
+    .end annotation
 
-    .line 60
+    .line 73
     iget-object p0, p0, Lcom/google/common/io/PatternFilenameFilter;->pattern:Ljava/util/regex/Pattern;
 
     invoke-virtual {p0, p2}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;

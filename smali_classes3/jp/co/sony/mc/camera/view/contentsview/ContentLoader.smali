@@ -80,6 +80,22 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljp/co/sony/mc/camera/storage/Storage;Ljp/co/sony/mc/camera/view/contentsview/ContentLoader$SecurityLevel;Ljp/co/sony/mc/camera/view/contentsview/ContentLoader$ContentCreationCallback;Ljp/co/sony/mc/camera/view/contentsview/ContentCache;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "storage",
+            "securityLevel",
+            "callback",
+            "contentCache"
+        }
+    .end annotation
 
     .line 124
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -131,6 +147,14 @@
 
 .method private removeFuture(J)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "indexId"
+        }
+    .end annotation
 
     .line 211
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentLoader;->mThumbnailManager:Ljp/co/sony/mc/camera/view/contentsview/ThumbnailManager;
@@ -217,6 +241,14 @@
 
 .method public reload(I)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "number"
+        }
+    .end annotation
 
     .line 181
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -336,6 +368,16 @@
 
 .method public request(ILandroid/net/Uri;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "requestId",
+            "uri"
+        }
+    .end annotation
 
     .line 167
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z

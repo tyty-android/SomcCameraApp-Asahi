@@ -6,19 +6,20 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000.\n\u0000\n\u0002\u0010\u0001\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0005\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0005\n\u0002\u0010\t\n\u0002\u0008\u0003\n\u0002\u0010\n\n\u0002\u0008\u0003\u001a\u0010\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0005*\u00020\u0003H\u0007\u00a2\u0006\u0002\u0010\u0006\u001a\u001b\u0010\u0004\u001a\u0004\u0018\u00010\u0005*\u00020\u00032\u0006\u0010\u0007\u001a\u00020\u0008H\u0007\u00a2\u0006\u0002\u0010\t\u001a\u0013\u0010\n\u001a\u0004\u0018\u00010\u0008*\u00020\u0003H\u0007\u00a2\u0006\u0002\u0010\u000b\u001a\u001b\u0010\n\u001a\u0004\u0018\u00010\u0008*\u00020\u00032\u0006\u0010\u0007\u001a\u00020\u0008H\u0007\u00a2\u0006\u0002\u0010\u000c\u001a\u0013\u0010\r\u001a\u0004\u0018\u00010\u000e*\u00020\u0003H\u0007\u00a2\u0006\u0002\u0010\u000f\u001a\u001b\u0010\r\u001a\u0004\u0018\u00010\u000e*\u00020\u00032\u0006\u0010\u0007\u001a\u00020\u0008H\u0007\u00a2\u0006\u0002\u0010\u0010\u001a\u0013\u0010\u0011\u001a\u0004\u0018\u00010\u0012*\u00020\u0003H\u0007\u00a2\u0006\u0002\u0010\u0013\u001a\u001b\u0010\u0011\u001a\u0004\u0018\u00010\u0012*\u00020\u00032\u0006\u0010\u0007\u001a\u00020\u0008H\u0007\u00a2\u0006\u0002\u0010\u0014\u00a8\u0006\u0015"
+        "\u0000.\n\u0000\n\u0002\u0010\u0005\n\u0002\u0010\u000e\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010\n\n\u0002\u0008\u0006\n\u0002\u0010\t\n\u0002\u0008\u0003\n\u0002\u0010\u0001\n\u0002\u0008\u0002\u001a\u0013\u0010\u0000\u001a\u0004\u0018\u00010\u0001*\u00020\u0002H\u0007\u00a2\u0006\u0002\u0010\u0003\u001a\u001b\u0010\u0000\u001a\u0004\u0018\u00010\u0001*\u00020\u00022\u0006\u0010\u0004\u001a\u00020\u0005H\u0007\u00a2\u0006\u0002\u0010\u0006\u001a\u0013\u0010\u0007\u001a\u0004\u0018\u00010\u0008*\u00020\u0002H\u0007\u00a2\u0006\u0002\u0010\t\u001a\u001b\u0010\u0007\u001a\u0004\u0018\u00010\u0008*\u00020\u00022\u0006\u0010\u0004\u001a\u00020\u0005H\u0007\u00a2\u0006\u0002\u0010\n\u001a\u0013\u0010\u000b\u001a\u0004\u0018\u00010\u0005*\u00020\u0002H\u0007\u00a2\u0006\u0002\u0010\u000c\u001a\u001b\u0010\u000b\u001a\u0004\u0018\u00010\u0005*\u00020\u00022\u0006\u0010\u0004\u001a\u00020\u0005H\u0007\u00a2\u0006\u0002\u0010\r\u001a\u0013\u0010\u000e\u001a\u0004\u0018\u00010\u000f*\u00020\u0002H\u0007\u00a2\u0006\u0002\u0010\u0010\u001a\u001b\u0010\u000e\u001a\u0004\u0018\u00010\u000f*\u00020\u00022\u0006\u0010\u0004\u001a\u00020\u0005H\u0007\u00a2\u0006\u0002\u0010\u0011\u001a\u0010\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u0002H\u0000\u00a8\u0006\u0015"
     }
     d2 = {
-        "numberFormatError",
-        "",
-        "input",
-        "",
         "toByteOrNull",
+        "",
         "",
         "(Ljava/lang/String;)Ljava/lang/Byte;",
         "radix",
         "",
         "(Ljava/lang/String;I)Ljava/lang/Byte;",
+        "toShortOrNull",
+        "",
+        "(Ljava/lang/String;)Ljava/lang/Short;",
+        "(Ljava/lang/String;I)Ljava/lang/Short;",
         "toIntOrNull",
         "(Ljava/lang/String;)Ljava/lang/Integer;",
         "(Ljava/lang/String;I)Ljava/lang/Integer;",
@@ -26,16 +27,15 @@
         "",
         "(Ljava/lang/String;)Ljava/lang/Long;",
         "(Ljava/lang/String;I)Ljava/lang/Long;",
-        "toShortOrNull",
+        "numberFormatError",
         "",
-        "(Ljava/lang/String;)Ljava/lang/Short;",
-        "(Ljava/lang/String;I)Ljava/lang/Short;",
+        "input",
         "kotlin-stdlib"
     }
     k = 0x5
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x31
@@ -213,27 +213,27 @@
     return-object v1
 
     :cond_1
-    const/16 v6, 0x2d
+    const/16 v6, 0x2b
 
-    if-ne v3, v6, :cond_2
+    if-eq v3, v6, :cond_3
 
+    const/16 v5, 0x2d
+
+    if-eq v3, v5, :cond_2
+
+    return-object v1
+
+    :cond_2
     const/high16 v5, -0x80000000
 
     move v3, v4
 
     goto :goto_0
 
-    :cond_2
-    const/16 v6, 0x2b
-
-    if-ne v3, v6, :cond_3
-
+    :cond_3
     move v3, v2
 
     goto :goto_0
-
-    :cond_3
-    return-object v1
 
     :cond_4
     move v3, v2
@@ -379,21 +379,24 @@
     return-object v3
 
     :cond_1
-    const/16 v9, 0x2d
+    const/16 v9, 0x2b
 
-    if-ne v5, v9, :cond_2
+    if-eq v5, v9, :cond_3
 
+    const/16 v4, 0x2d
+
+    if-eq v5, v4, :cond_2
+
+    return-object v3
+
+    :cond_2
     const-wide/high16 v7, -0x8000000000000000L
 
     move v4, v6
 
     goto :goto_0
 
-    :cond_2
-    const/16 v9, 0x2b
-
-    if-ne v5, v9, :cond_3
-
+    :cond_3
     move/from16 v18, v6
 
     move v6, v4
@@ -401,9 +404,6 @@
     move/from16 v4, v18
 
     goto :goto_0
-
-    :cond_3
-    return-object v3
 
     :cond_4
     move v6, v4

@@ -25,16 +25,28 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder;Landroid/content/Context;Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "context",
+            "url"
+        }
+    .end annotation
 
-    .line 430
+    .line 270
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder$CustomClickUrlSpan;->this$0:Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder;
 
     invoke-direct {p0}, Landroid/text/style/ClickableSpan;-><init>()V
 
-    .line 431
+    .line 271
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder$CustomClickUrlSpan;->mUrl:Ljava/lang/String;
 
-    .line 432
+    .line 272
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder$CustomClickUrlSpan;->mContext:Landroid/content/Context;
 
     return-void
@@ -44,15 +56,23 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "widget"
+        }
+    .end annotation
 
-    .line 437
+    .line 277
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder$CustomClickUrlSpan;->mUrl:Ljava/lang/String;
 
     if-nez p1, :cond_0
 
     return-void
 
-    .line 440
+    .line 280
     :cond_0
     const-string v0, "personal-data"
 
@@ -62,25 +82,25 @@
 
     if-eqz p1, :cond_1
 
-    .line 441
+    .line 281
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder$CustomClickUrlSpan;->mContext:Landroid/content/Context;
 
     instance-of p1, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     if-eqz p1, :cond_2
 
-    .line 442
+    .line 282
     check-cast p0, Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
-    .line 443
+    .line 283
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->dismissSettingMessageDialog()V
 
-    .line 444
+    .line 284
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->showPersonDataInformation()V
 
     goto :goto_0
 
-    .line 447
+    .line 287
     :cond_1
     new-instance p1, Landroid/content/Intent;
 
@@ -88,7 +108,7 @@
 
     invoke-direct {p1, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 448
+    .line 288
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder$CustomClickUrlSpan;->mUrl:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
@@ -97,7 +117,7 @@
 
     invoke-virtual {p1, v0}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
-    .line 453
+    .line 293
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder$CustomClickUrlSpan;->mContext:Landroid/content/Context;
 
     invoke-virtual {p0, p1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V

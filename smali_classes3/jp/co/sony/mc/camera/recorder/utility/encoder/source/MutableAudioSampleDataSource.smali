@@ -48,6 +48,24 @@
 
 .method public constructor <init>(Landroid/media/MediaCodec;IIIII)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "codec",
+            "sampleRate",
+            "channels",
+            "format",
+            "muteDurationMillis",
+            "silentDurationMillis"
+        }
+    .end annotation
 
     .line 66
     invoke-direct {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/recorder/utility/encoder/source/AudioSampleDataSourceBase;-><init>(Landroid/media/MediaCodec;III)V
@@ -332,6 +350,14 @@
 
 .method private getCurrentPresentationTime(J)J
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "writtenBytes"
+        }
+    .end annotation
 
     .line 301
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/utility/encoder/source/MutableAudioSampleDataSource;->getSampleDataBytes()I
@@ -351,6 +377,22 @@
 
 .method private queueInputBuffer(IIIJI)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "offset",
+            "size",
+            "presentationTimeUs",
+            "flags"
+        }
+    .end annotation
 
     .line 322
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/utility/encoder/source/MutableAudioSampleDataSource;->getCodec()Landroid/media/MediaCodec;
@@ -411,6 +453,16 @@
 
 .method private requestToEnqueueSamples([BZ)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "inputByteArray",
+            "eos"
+        }
+    .end annotation
 
     .line 242
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/utility/encoder/source/MutableAudioSampleDataSource;->getBackgroundWorker()Ljp/co/sony/mc/camera/util/BackgroundWorker;
@@ -752,6 +804,14 @@
 
 .method public onPeriodicNotification(Landroid/media/AudioRecord;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "recorder"
+        }
+    .end annotation
 
     .line 108
     iget v0, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/source/MutableAudioSampleDataSource;->mNotificationCounter:I
@@ -777,6 +837,18 @@
 
 .method protected pushToEncoder([BIZ)J
     .locals 13
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "rawDataArray",
+            "rawDataBytes",
+            "eos"
+        }
+    .end annotation
 
     move-object v7, p0
 

@@ -14,6 +14,14 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 38
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -26,6 +34,16 @@
 
 .method public static sendBroadcastCameraShot(Landroid/content/Context;Landroid/net/Uri;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "uri"
+        }
+    .end annotation
 
     .line 94
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
@@ -40,7 +58,7 @@
 
     new-instance v3, Ljava/lang/StringBuilder;
 
-    const-string v4, "sendBroadcastCameraShot: "
+    const-string/jumbo v4, "sendBroadcastCameraShot: "
 
     invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
@@ -180,6 +198,16 @@
 # virtual methods
 .method public insertVideoAndSendIntent(Ljava/lang/String;Ljp/co/sony/mc/camera/storage/VideoSavingRequest;)Landroid/net/Uri;
     .locals 13
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "filePath",
+            "videoSavingRequest"
+        }
+    .end annotation
 
     const-string v0, ""
 

@@ -71,11 +71,11 @@
     .line 52
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder$onCreate$1$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder;
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder;->access$getViewFinderUiState(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder;)Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder;->access$getBasicModeFocusSsUiState(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder;)Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;
 
     move-result-object p0
 
-    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->setShutterSpeedValue(I)V
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;->setShutterSpeedValue(I)V
 
     :cond_0
     return-void

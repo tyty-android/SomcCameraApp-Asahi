@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/util/concurrent/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Enum<",
@@ -40,7 +43,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 26
+    .line 27
     new-instance v0, Lcom/google/common/util/concurrent/DirectExecutor;
 
     const-string v1, "INSTANCE"
@@ -63,13 +66,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 25
+    .line 26
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -77,6 +91,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/util/concurrent/DirectExecutor;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 24
     const-class v0, Lcom/google/common/util/concurrent/DirectExecutor;
@@ -109,8 +131,16 @@
 # virtual methods
 .method public execute(Ljava/lang/Runnable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "command"
+        }
+    .end annotation
 
-    .line 30
+    .line 31
     invoke-interface {p1}, Ljava/lang/Runnable;->run()V
 
     return-void
@@ -119,7 +149,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 35
+    .line 36
     const-string p0, "MoreExecutors.directExecutor()"
 
     return-object p0

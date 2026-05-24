@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/collect/ImmutableMapKeySet$KeySetSerializedForm;
@@ -37,6 +40,15 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/ImmutableMap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "map"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -45,10 +57,10 @@
         }
     .end annotation
 
-    .line 34
+    .line 36
     invoke-direct {p0}, Lcom/google/common/collect/IndexedImmutableSet;-><init>()V
 
-    .line 35
+    .line 37
     iput-object p1, p0, Lcom/google/common/collect/ImmutableMapKeySet;->map:Lcom/google/common/collect/ImmutableMap;
 
     return-void
@@ -59,11 +71,19 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 50
+    .line 52
     iget-object p0, p0, Lcom/google/common/collect/ImmutableMapKeySet;->map:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableMap;->containsKey(Ljava/lang/Object;)Z
@@ -75,13 +95,22 @@
 
 .method get(I)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TK;"
         }
     .end annotation
 
-    .line 55
+    .line 57
     iget-object p0, p0, Lcom/google/common/collect/ImmutableMapKeySet;->map:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMap;->entrySet()Lcom/google/common/collect/ImmutableSet;
@@ -123,7 +152,7 @@
         }
     .end annotation
 
-    .line 45
+    .line 47
     iget-object p0, p0, Lcom/google/common/collect/ImmutableMapKeySet;->map:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMap;->keyIterator()Lcom/google/common/collect/UnmodifiableIterator;
@@ -136,7 +165,7 @@
 .method public bridge synthetic iterator()Ljava/util/Iterator;
     .locals 0
 
-    .line 30
+    .line 31
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMapKeySet;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p0
@@ -147,7 +176,7 @@
 .method public size()I
     .locals 0
 
-    .line 40
+    .line 42
     iget-object p0, p0, Lcom/google/common/collect/ImmutableMapKeySet;->map:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMap;->size()I
@@ -160,7 +189,7 @@
 .method writeReplace()Ljava/lang/Object;
     .locals 1
 
-    .line 66
+    .line 69
     new-instance v0, Lcom/google/common/collect/ImmutableMapKeySet$KeySetSerializedForm;
 
     iget-object p0, p0, Lcom/google/common/collect/ImmutableMapKeySet;->map:Lcom/google/common/collect/ImmutableMap;

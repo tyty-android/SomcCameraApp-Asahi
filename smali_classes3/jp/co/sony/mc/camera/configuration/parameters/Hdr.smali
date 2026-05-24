@@ -69,7 +69,7 @@
     .line 24
     new-instance v6, Ljp/co/sony/mc/camera/configuration/parameters/Hdr;
 
-    const v4, 0x7f1101d7
+    const v4, 0x7f110223
 
     const-string v5, "on-still-dro"
 
@@ -77,7 +77,7 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f080163
+    const v3, 0x7f0801bf
 
     move-object v0, v6
 
@@ -88,7 +88,7 @@
     .line 28
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Hdr;
 
-    const v11, 0x7f1101d5
+    const v11, 0x7f110221
 
     const-string v12, "on-still-hdr"
 
@@ -96,7 +96,7 @@
 
     const/4 v9, 0x1
 
-    const v10, 0x7f080219
+    const v10, 0x7f080275
 
     move-object v7, v0
 
@@ -107,7 +107,7 @@
     .line 32
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Hdr;
 
-    const v5, 0x7f11046c
+    const v5, 0x7f1104b5
 
     const-string v6, "auto"
 
@@ -115,7 +115,7 @@
 
     const/4 v3, 0x2
 
-    const v4, 0x7f08015d
+    const v4, 0x7f0801b9
 
     move-object v1, v0
 
@@ -126,7 +126,7 @@
     .line 36
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Hdr;
 
-    const v11, 0x7f1103f3
+    const v11, 0x7f11043e
 
     const-string v12, "off"
 
@@ -134,7 +134,7 @@
 
     const/4 v9, 0x3
 
-    const v10, 0x7f080160
+    const v10, 0x7f0801bc
 
     move-object v7, v0
 
@@ -145,7 +145,7 @@
     .line 47
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Hdr;
 
-    const v5, 0x7f1101d7
+    const v5, 0x7f110223
 
     const-string v6, "on-still-dro"
 
@@ -171,6 +171,23 @@
 
 .method private constructor <init>(Ljava/lang/String;IIILjava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -196,6 +213,16 @@
 
 .method public static getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/Hdr;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId"
+        }
+    .end annotation
 
     .line 155
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getCameraCapability(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;
@@ -265,6 +292,18 @@
 
 .method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/ComputationalMode;)[Ljp/co/sony/mc/camera/configuration/parameters/Hdr;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId",
+            "computationalMode"
+        }
+    .end annotation
 
     .line 131
     new-instance v0, Ljava/util/ArrayList;
@@ -381,6 +420,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/Hdr;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 23
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/Hdr;

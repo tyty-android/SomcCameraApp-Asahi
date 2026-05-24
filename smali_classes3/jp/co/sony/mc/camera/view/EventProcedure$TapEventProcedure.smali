@@ -21,6 +21,14 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/EventProcedure;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 353
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$TapEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
@@ -42,6 +50,14 @@
 # virtual methods
 .method public doClick(Landroid/graphics/Point;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "point"
+        }
+    .end annotation
 
     .line 361
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$TapEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
@@ -57,6 +73,14 @@
 
 .method doDoubleClick(Landroid/graphics/Point;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "point"
+        }
+    .end annotation
 
     .line 371
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$TapEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
@@ -72,6 +96,18 @@
 
 .method doTouchAreaMove(Landroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "currentPoint",
+            "lastPoint",
+            "downPoint"
+        }
+    .end annotation
 
     .line 366
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$TapEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;

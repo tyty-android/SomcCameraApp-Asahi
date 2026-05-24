@@ -19,12 +19,38 @@
 .end method
 
 .method public abstract onNotifyThermalWarning(Z)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isOnStartup"
+        }
+    .end annotation
 .end method
 
 .method public abstract onNotifyThermalWarningExtra(Z)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isOnStartup"
+        }
+    .end annotation
 .end method
 
 .method public abstract onReachCriticalTemperature(ZZ)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "isOnStartup",
+            "isEndurance"
+        }
+    .end annotation
 .end method
 
 .method public abstract onTempEnduranceModeActivated()V

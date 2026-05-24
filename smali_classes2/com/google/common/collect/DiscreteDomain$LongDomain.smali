@@ -36,7 +36,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 119
+    .line 130
     new-instance v0, Lcom/google/common/collect/DiscreteDomain$LongDomain;
 
     invoke-direct {v0}, Lcom/google/common/collect/DiscreteDomain$LongDomain;-><init>()V
@@ -53,7 +53,7 @@
 
     const/4 v1, 0x0
 
-    .line 122
+    .line 133
     invoke-direct {p0, v0, v1}, Lcom/google/common/collect/DiscreteDomain;-><init>(ZLcom/google/common/collect/DiscreteDomain$1;)V
 
     return-void
@@ -62,7 +62,7 @@
 .method static synthetic access$200()Lcom/google/common/collect/DiscreteDomain$LongDomain;
     .locals 1
 
-    .line 118
+    .line 129
     sget-object v0, Lcom/google/common/collect/DiscreteDomain$LongDomain;->INSTANCE:Lcom/google/common/collect/DiscreteDomain$LongDomain;
 
     return-object v0
@@ -71,7 +71,7 @@
 .method private readResolve()Ljava/lang/Object;
     .locals 0
 
-    .line 170
+    .line 183
     sget-object p0, Lcom/google/common/collect/DiscreteDomain$LongDomain;->INSTANCE:Lcom/google/common/collect/DiscreteDomain$LongDomain;
 
     return-object p0
@@ -81,8 +81,18 @@
 # virtual methods
 .method public bridge synthetic distance(Ljava/lang/Comparable;Ljava/lang/Comparable;)J
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "start",
+            "end"
+        }
+    .end annotation
 
-    .line 118
+    .line 129
     check-cast p1, Ljava/lang/Long;
 
     check-cast p2, Ljava/lang/Long;
@@ -96,8 +106,18 @@
 
 .method public distance(Ljava/lang/Long;Ljava/lang/Long;)J
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "start",
+            "end"
+        }
+    .end annotation
 
-    .line 149
+    .line 162
     invoke-virtual {p2}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v0
@@ -108,7 +128,7 @@
 
     sub-long/2addr v0, v2
 
-    .line 150
+    .line 163
     invoke-virtual {p2}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v2
@@ -131,7 +151,7 @@
 
     return-wide p0
 
-    .line 153
+    .line 166
     :cond_0
     invoke-virtual {p2}, Ljava/lang/Long;->longValue()J
 
@@ -160,7 +180,7 @@
 .method public bridge synthetic maxValue()Ljava/lang/Comparable;
     .locals 0
 
-    .line 118
+    .line 129
     invoke-virtual {p0}, Lcom/google/common/collect/DiscreteDomain$LongDomain;->maxValue()Ljava/lang/Long;
 
     move-result-object p0
@@ -173,7 +193,7 @@
 
     const-wide v0, 0x7fffffffffffffffL
 
-    .line 166
+    .line 179
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
@@ -184,7 +204,7 @@
 .method public bridge synthetic minValue()Ljava/lang/Comparable;
     .locals 0
 
-    .line 118
+    .line 129
     invoke-virtual {p0}, Lcom/google/common/collect/DiscreteDomain$LongDomain;->minValue()Ljava/lang/Long;
 
     move-result-object p0
@@ -197,7 +217,7 @@
 
     const-wide/high16 v0, -0x8000000000000000L
 
-    .line 161
+    .line 174
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
@@ -207,8 +227,19 @@
 
 .method public bridge synthetic next(Ljava/lang/Comparable;)Ljava/lang/Comparable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 118
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 129
     check-cast p1, Ljava/lang/Long;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/DiscreteDomain$LongDomain;->next(Ljava/lang/Long;)Ljava/lang/Long;
@@ -220,8 +251,19 @@
 
 .method public next(Ljava/lang/Long;)Ljava/lang/Long;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 127
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 139
     invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
 
     move-result-wide p0
@@ -241,7 +283,7 @@
 
     add-long/2addr p0, v0
 
-    .line 128
+    .line 140
     invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
@@ -252,8 +294,18 @@
 
 .method bridge synthetic offset(Ljava/lang/Comparable;J)Ljava/lang/Comparable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "origin",
+            "distance"
+        }
+    .end annotation
 
-    .line 118
+    .line 129
     check-cast p1, Ljava/lang/Long;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/common/collect/DiscreteDomain$LongDomain;->offset(Ljava/lang/Long;J)Ljava/lang/Long;
@@ -265,13 +317,23 @@
 
 .method offset(Ljava/lang/Long;J)Ljava/lang/Long;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "origin",
+            "distance"
+        }
+    .end annotation
 
-    .line 139
+    .line 152
     const-string p0, "distance"
 
     invoke-static {p2, p3, p0}, Lcom/google/common/collect/CollectPreconditions;->checkNonnegative(JLjava/lang/String;)J
 
-    .line 140
+    .line 153
     invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v0
@@ -284,7 +346,7 @@
 
     if-gez p0, :cond_1
 
-    .line 142
+    .line 155
     invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
 
     move-result-wide p0
@@ -305,7 +367,7 @@
 
     invoke-static {p0, p1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/Object;)V
 
-    .line 144
+    .line 157
     :cond_1
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -316,8 +378,19 @@
 
 .method public bridge synthetic previous(Ljava/lang/Comparable;)Ljava/lang/Comparable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 118
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 129
     check-cast p1, Ljava/lang/Long;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/DiscreteDomain$LongDomain;->previous(Ljava/lang/Long;)Ljava/lang/Long;
@@ -329,8 +402,19 @@
 
 .method public previous(Ljava/lang/Long;)Ljava/lang/Long;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 133
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 146
     invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
 
     move-result-wide p0
@@ -350,7 +434,7 @@
 
     sub-long/2addr p0, v0
 
-    .line 134
+    .line 147
     invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
@@ -362,7 +446,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 175
+    .line 188
     const-string p0, "DiscreteDomain.longs()"
 
     return-object p0

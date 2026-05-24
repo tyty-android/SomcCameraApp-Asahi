@@ -29,7 +29,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 995
+    .line 1045
     invoke-direct {p0}, Lcom/google/common/collect/Sets$ImprovedAbstractSet;-><init>()V
 
     return-void
@@ -40,7 +40,7 @@
 .method public clear()V
     .locals 0
 
-    .line 1035
+    .line 1081
     invoke-virtual {p0}, Lcom/google/common/collect/Multisets$EntrySet;->multiset()Lcom/google/common/collect/Multiset;
 
     move-result-object p0
@@ -53,21 +53,29 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 2
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 1000
+    .line 1051
     instance-of v0, p1, Lcom/google/common/collect/Multiset$Entry;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_1
 
-    .line 1005
+    .line 1052
     check-cast p1, Lcom/google/common/collect/Multiset$Entry;
 
-    .line 1006
+    .line 1053
     invoke-interface {p1}, Lcom/google/common/collect/Multiset$Entry;->getCount()I
 
     move-result v0
@@ -76,7 +84,7 @@
 
     return v1
 
-    .line 1009
+    .line 1056
     :cond_0
     invoke-virtual {p0}, Lcom/google/common/collect/Multisets$EntrySet;->multiset()Lcom/google/common/collect/Multiset;
 
@@ -90,7 +98,7 @@
 
     move-result p0
 
-    .line 1010
+    .line 1057
     invoke-interface {p1}, Lcom/google/common/collect/Multiset$Entry;->getCount()I
 
     move-result p1
@@ -115,35 +123,47 @@
 
 .method public remove(Ljava/lang/Object;)Z
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 1019
+    .line 1064
     instance-of v0, p1, Lcom/google/common/collect/Multiset$Entry;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 1020
+    .line 1065
     check-cast p1, Lcom/google/common/collect/Multiset$Entry;
 
-    .line 1021
+    .line 1066
     invoke-interface {p1}, Lcom/google/common/collect/Multiset$Entry;->getElement()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 1022
+    .line 1067
     invoke-interface {p1}, Lcom/google/common/collect/Multiset$Entry;->getCount()I
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 1026
+    .line 1072
     invoke-virtual {p0}, Lcom/google/common/collect/Multisets$EntrySet;->multiset()Lcom/google/common/collect/Multiset;
 
     move-result-object p0
 
-    .line 1027
+    .line 1073
     invoke-interface {p0, v0, p1, v1}, Lcom/google/common/collect/Multiset;->setCount(Ljava/lang/Object;II)Z
 
     move-result p0

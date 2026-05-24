@@ -161,6 +161,21 @@
 
 .method private constructor <init>(Ljava/lang/String;ILjava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "api1",
+            "api2"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -183,6 +198,14 @@
 
 .method static getApi2Value(Ljava/lang/String;)I
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "api1Value"
+        }
+    .end annotation
 
     .line 99
     invoke-static {}, Ljp/co/sony/mc/camera/device/CameraParameterConverter$FocusMode;->values()[Ljp/co/sony/mc/camera/device/CameraParameterConverter$FocusMode;
@@ -225,6 +248,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/device/CameraParameterConverter$FocusMode;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 80
     const-class v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$FocusMode;

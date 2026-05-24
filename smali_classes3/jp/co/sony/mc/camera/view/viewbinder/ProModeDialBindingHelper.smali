@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nProModeDialBindingHelper.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ProModeDialBindingHelper.kt\njp/co/sony/mc/camera/view/viewbinder/ProModeDialBindingHelper\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 4 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,252:1\n1#2:253\n785#3:254\n796#3:255\n1872#3,2:256\n797#3,2:258\n1874#3:260\n799#3:261\n13367#4,2:262\n*S KotlinDebug\n*F\n+ 1 ProModeDialBindingHelper.kt\njp/co/sony/mc/camera/view/viewbinder/ProModeDialBindingHelper\n*L\n135#1:254\n135#1:255\n135#1:256,2\n135#1:258,2\n135#1:260\n135#1:261\n232#1:262,2\n*E\n"
+    value = "SMAP\nProModeDialBindingHelper.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ProModeDialBindingHelper.kt\njp/co/sony/mc/camera/view/viewbinder/ProModeDialBindingHelper\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 4 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,252:1\n1#2:253\n785#3:254\n796#3:255\n1872#3,2:256\n797#3,2:258\n1874#3:260\n799#3:261\n13423#4,2:262\n*S KotlinDebug\n*F\n+ 1 ProModeDialBindingHelper.kt\njp/co/sony/mc/camera/view/viewbinder/ProModeDialBindingHelper\n*L\n135#1:254\n135#1:255\n135#1:256,2\n135#1:258,2\n135#1:260\n135#1:261\n232#1:262,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -1012,7 +1012,7 @@
 
     move-result v7
 
-    const v8, 0x7f090254
+    const v8, 0x7f090260
 
     const/4 v9, 0x7
 
@@ -1085,7 +1085,7 @@
 
     move-result v7
 
-    const v8, 0x7f0900a4
+    const v8, 0x7f0900ac
 
     invoke-virtual {v5, v7, v2, v8, v2}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIII)V
 
@@ -1790,7 +1790,7 @@
 
     move-result-object p2
 
-    const p3, 0x7f0a0050
+    const p3, 0x7f0a0057
 
     invoke-virtual {p2, p3}, Landroid/content/res/Resources;->getInteger(I)I
 

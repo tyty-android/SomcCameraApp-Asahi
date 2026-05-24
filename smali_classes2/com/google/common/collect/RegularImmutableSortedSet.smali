@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<E:",
@@ -42,10 +45,10 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 42
+    .line 45
     new-instance v0, Lcom/google/common/collect/RegularImmutableSortedSet;
 
-    .line 43
+    .line 46
     invoke-static {}, Lcom/google/common/collect/ImmutableList;->of()Lcom/google/common/collect/ImmutableList;
 
     move-result-object v1
@@ -63,6 +66,17 @@
 
 .method constructor <init>(Lcom/google/common/collect/ImmutableList;Ljava/util/Comparator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "elements",
+            "comparator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -73,10 +87,10 @@
         }
     .end annotation
 
-    .line 48
+    .line 51
     invoke-direct {p0, p2}, Lcom/google/common/collect/ImmutableSortedSet;-><init>(Ljava/util/Comparator;)V
 
-    .line 49
+    .line 52
     iput-object p1, p0, Lcom/google/common/collect/RegularImmutableSortedSet;->elements:Lcom/google/common/collect/ImmutableList;
 
     return-void
@@ -84,13 +98,22 @@
 
 .method private unsafeBinarySearch(Ljava/lang/Object;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/ClassCastException;
         }
     .end annotation
 
-    .line 145
+    .line 150
     iget-object v0, p0, Lcom/google/common/collect/RegularImmutableSortedSet;->elements:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {p0}, Lcom/google/common/collect/RegularImmutableSortedSet;->unsafeComparator()Ljava/util/Comparator;
@@ -116,7 +139,7 @@
         }
     .end annotation
 
-    .line 304
+    .line 313
     iget-object p0, p0, Lcom/google/common/collect/RegularImmutableSortedSet;->elements:Lcom/google/common/collect/ImmutableList;
 
     return-object p0
@@ -124,20 +147,32 @@
 
 .method public ceiling(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "element"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)TE;"
         }
     .end annotation
 
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
     const/4 v0, 0x1
 
-    .line 225
+    .line 233
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/RegularImmutableSortedSet;->tailIndex(Ljava/lang/Object;Z)I
 
     move-result p1
 
-    .line 226
+    .line 234
     invoke-virtual {p0}, Lcom/google/common/collect/RegularImmutableSortedSet;->size()I
 
     move-result v0
@@ -162,15 +197,23 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
     if-eqz p1, :cond_0
 
-    .line 86
+    .line 91
     :try_start_0
     invoke-direct {p0, p1}, Lcom/google/common/collect/RegularImmutableSortedSet;->unsafeBinarySearch(Ljava/lang/Object;)I
 
@@ -191,6 +234,15 @@
 
 .method public containsAll(Ljava/util/Collection;)Z
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "targets"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -199,19 +251,19 @@
         }
     .end annotation
 
-    .line 98
+    .line 103
     instance-of v0, p1, Lcom/google/common/collect/Multiset;
 
     if-eqz v0, :cond_0
 
-    .line 99
+    .line 104
     check-cast p1, Lcom/google/common/collect/Multiset;
 
     invoke-interface {p1}, Lcom/google/common/collect/Multiset;->elementSet()Ljava/util/Set;
 
     move-result-object p1
 
-    .line 101
+    .line 106
     :cond_0
     invoke-virtual {p0}, Lcom/google/common/collect/RegularImmutableSortedSet;->comparator()Ljava/util/Comparator;
 
@@ -233,18 +285,18 @@
 
     goto :goto_1
 
-    .line 109
+    .line 114
     :cond_1
     invoke-virtual {p0}, Lcom/google/common/collect/RegularImmutableSortedSet;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object v0
 
-    .line 111
+    .line 116
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
 
-    .line 114
+    .line 119
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
@@ -255,18 +307,18 @@
 
     return v3
 
-    .line 118
+    .line 123
     :cond_2
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 119
+    .line 124
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 122
+    .line 127
     :cond_3
     :goto_0
     :try_start_0
@@ -276,7 +328,7 @@
 
     if-gez v5, :cond_5
 
-    .line 125
+    .line 130
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v4
@@ -285,7 +337,7 @@
 
     return v3
 
-    .line 128
+    .line 133
     :cond_4
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -296,7 +348,7 @@
     :cond_5
     if-nez v5, :cond_7
 
-    .line 130
+    .line 135
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
@@ -305,7 +357,7 @@
 
     return v1
 
-    .line 133
+    .line 138
     :cond_6
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -322,7 +374,7 @@
     :catch_0
     return v3
 
-    .line 102
+    .line 107
     :cond_8
     :goto_1
     invoke-super {p0, p1}, Lcom/google/common/collect/ImmutableSortedSet;->containsAll(Ljava/util/Collection;)Z
@@ -334,8 +386,18 @@
 
 .method copyIntoArray([Ljava/lang/Object;I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dst",
+            "offset"
+        }
+    .end annotation
 
-    .line 155
+    .line 160
     iget-object p0, p0, Lcom/google/common/collect/RegularImmutableSortedSet;->elements:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/ImmutableList;->copyIntoArray([Ljava/lang/Object;I)I
@@ -355,28 +417,28 @@
         }
     .end annotation
 
-    .line 309
+    .line 318
     iget-object v0, p0, Lcom/google/common/collect/RegularImmutableSortedSet;->comparator:Ljava/util/Comparator;
 
     invoke-static {v0}, Ljava/util/Collections;->reverseOrder(Ljava/util/Comparator;)Ljava/util/Comparator;
 
     move-result-object v0
 
-    .line 310
+    .line 319
     invoke-virtual {p0}, Lcom/google/common/collect/RegularImmutableSortedSet;->isEmpty()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 311
+    .line 320
     invoke-static {v0}, Lcom/google/common/collect/RegularImmutableSortedSet;->emptySet(Ljava/util/Comparator;)Lcom/google/common/collect/RegularImmutableSortedSet;
 
     move-result-object p0
 
     goto :goto_0
 
-    .line 312
+    .line 321
     :cond_0
     new-instance v1, Lcom/google/common/collect/RegularImmutableSortedSet;
 
@@ -404,7 +466,7 @@
         }
     .end annotation
 
-    .line 75
+    .line 80
     iget-object p0, p0, Lcom/google/common/collect/RegularImmutableSortedSet;->elements:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableList;->reverse()Lcom/google/common/collect/ImmutableList;
@@ -421,7 +483,7 @@
 .method public bridge synthetic descendingIterator()Ljava/util/Iterator;
     .locals 0
 
-    .line 39
+    .line 41
     invoke-virtual {p0}, Lcom/google/common/collect/RegularImmutableSortedSet;->descendingIterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p0
@@ -432,9 +494,17 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -442,7 +512,7 @@
 
     return v0
 
-    .line 163
+    .line 168
     :cond_0
     instance-of v1, p1, Ljava/util/Set;
 
@@ -452,11 +522,11 @@
 
     return v2
 
-    .line 167
+    .line 172
     :cond_1
     check-cast p1, Ljava/util/Set;
 
-    .line 168
+    .line 173
     invoke-virtual {p0}, Lcom/google/common/collect/RegularImmutableSortedSet;->size()I
 
     move-result v1
@@ -469,7 +539,7 @@
 
     return v2
 
-    .line 170
+    .line 175
     :cond_2
     invoke-virtual {p0}, Lcom/google/common/collect/RegularImmutableSortedSet;->isEmpty()Z
 
@@ -479,7 +549,7 @@
 
     return v0
 
-    .line 174
+    .line 179
     :cond_3
     iget-object v1, p0, Lcom/google/common/collect/RegularImmutableSortedSet;->comparator:Ljava/util/Comparator;
 
@@ -489,18 +559,18 @@
 
     if-eqz v1, :cond_7
 
-    .line 175
+    .line 180
     invoke-interface {p1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
 
-    .line 177
+    .line 182
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/RegularImmutableSortedSet;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object v1
 
-    .line 178
+    .line 183
     :cond_4
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -508,19 +578,19 @@
 
     if-eqz v3, :cond_6
 
-    .line 179
+    .line 184
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 180
+    .line 185
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v4
 
     if-eqz v4, :cond_5
 
-    .line 181
+    .line 186
     invoke-virtual {p0, v3, v4}, Lcom/google/common/collect/RegularImmutableSortedSet;->unsafeCompare(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result v3
@@ -539,7 +609,7 @@
     :catch_0
     return v2
 
-    .line 192
+    .line 197
     :cond_7
     invoke-virtual {p0, p1}, Lcom/google/common/collect/RegularImmutableSortedSet;->containsAll(Ljava/util/Collection;)Z
 
@@ -556,14 +626,14 @@
         }
     .end annotation
 
-    .line 197
+    .line 202
     invoke-virtual {p0}, Lcom/google/common/collect/RegularImmutableSortedSet;->isEmpty()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 200
+    .line 205
     iget-object p0, p0, Lcom/google/common/collect/RegularImmutableSortedSet;->elements:Lcom/google/common/collect/ImmutableList;
 
     const/4 v0, 0x0
@@ -574,7 +644,7 @@
 
     return-object p0
 
-    .line 198
+    .line 203
     :cond_0
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -585,15 +655,27 @@
 
 .method public floor(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "element"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)TE;"
         }
     .end annotation
 
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
     const/4 v0, 0x1
 
-    .line 219
+    .line 226
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/RegularImmutableSortedSet;->headIndex(Ljava/lang/Object;Z)I
 
     move-result p1
@@ -608,7 +690,7 @@
 
     goto :goto_0
 
-    .line 220
+    .line 227
     :cond_0
     iget-object p0, p0, Lcom/google/common/collect/RegularImmutableSortedSet;->elements:Lcom/google/common/collect/ImmutableList;
 
@@ -622,6 +704,17 @@
 
 .method getSubSet(II)Lcom/google/common/collect/RegularImmutableSortedSet;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "newFromIndex",
+            "newToIndex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -632,7 +725,7 @@
 
     if-nez p1, :cond_0
 
-    .line 278
+    .line 287
     invoke-virtual {p0}, Lcom/google/common/collect/RegularImmutableSortedSet;->size()I
 
     move-result v0
@@ -644,12 +737,12 @@
     :cond_0
     if-ge p1, p2, :cond_1
 
-    .line 281
+    .line 290
     new-instance v0, Lcom/google/common/collect/RegularImmutableSortedSet;
 
     iget-object v1, p0, Lcom/google/common/collect/RegularImmutableSortedSet;->elements:Lcom/google/common/collect/ImmutableList;
 
-    .line 282
+    .line 291
     invoke-virtual {v1, p1, p2}, Lcom/google/common/collect/ImmutableList;->subList(II)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p1
@@ -660,7 +753,7 @@
 
     return-object v0
 
-    .line 284
+    .line 293
     :cond_1
     iget-object p0, p0, Lcom/google/common/collect/RegularImmutableSortedSet;->comparator:Ljava/util/Comparator;
 
@@ -673,13 +766,24 @@
 
 .method headIndex(Ljava/lang/Object;Z)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "toElement",
+            "inclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;Z)I"
         }
     .end annotation
 
-    .line 241
+    .line 250
     iget-object v0, p0, Lcom/google/common/collect/RegularImmutableSortedSet;->elements:Lcom/google/common/collect/ImmutableList;
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -711,6 +815,17 @@
 
 .method headSetImpl(Ljava/lang/Object;Z)Lcom/google/common/collect/ImmutableSortedSet;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "toElement",
+            "inclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;Z)",
@@ -721,7 +836,7 @@
 
     const/4 v0, 0x0
 
-    .line 237
+    .line 246
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/RegularImmutableSortedSet;->headIndex(Ljava/lang/Object;Z)I
 
     move-result p1
@@ -735,20 +850,32 @@
 
 .method public higher(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "element"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)TE;"
         }
     .end annotation
 
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
     const/4 v0, 0x0
 
-    .line 231
+    .line 240
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/RegularImmutableSortedSet;->tailIndex(Ljava/lang/Object;Z)I
 
     move-result p1
 
-    .line 232
+    .line 241
     invoke-virtual {p0}, Lcom/google/common/collect/RegularImmutableSortedSet;->size()I
 
     move-result v0
@@ -773,9 +900,17 @@
 .method indexOf(Ljava/lang/Object;)I
     .locals 2
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "target"
+        }
+    .end annotation
 
     const/4 v0, -0x1
 
@@ -783,7 +918,7 @@
 
     return v0
 
-    .line 295
+    .line 304
     :cond_0
     :try_start_0
     iget-object v1, p0, Lcom/google/common/collect/RegularImmutableSortedSet;->elements:Lcom/google/common/collect/ImmutableList;
@@ -809,8 +944,10 @@
 
 .method internalArray()[Ljava/lang/Object;
     .locals 0
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 
-    .line 54
+    .line 59
     iget-object p0, p0, Lcom/google/common/collect/RegularImmutableSortedSet;->elements:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableList;->internalArray()[Ljava/lang/Object;
@@ -823,7 +960,7 @@
 .method internalArrayEnd()I
     .locals 0
 
-    .line 64
+    .line 69
     iget-object p0, p0, Lcom/google/common/collect/RegularImmutableSortedSet;->elements:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableList;->internalArrayEnd()I
@@ -836,7 +973,7 @@
 .method internalArrayStart()I
     .locals 0
 
-    .line 59
+    .line 64
     iget-object p0, p0, Lcom/google/common/collect/RegularImmutableSortedSet;->elements:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableList;->internalArrayStart()I
@@ -849,7 +986,7 @@
 .method isPartialView()Z
     .locals 0
 
-    .line 150
+    .line 155
     iget-object p0, p0, Lcom/google/common/collect/RegularImmutableSortedSet;->elements:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableList;->isPartialView()Z
@@ -869,7 +1006,7 @@
         }
     .end annotation
 
-    .line 69
+    .line 74
     iget-object p0, p0, Lcom/google/common/collect/RegularImmutableSortedSet;->elements:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableList;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
@@ -882,7 +1019,7 @@
 .method public bridge synthetic iterator()Ljava/util/Iterator;
     .locals 0
 
-    .line 39
+    .line 41
     invoke-virtual {p0}, Lcom/google/common/collect/RegularImmutableSortedSet;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p0
@@ -898,14 +1035,14 @@
         }
     .end annotation
 
-    .line 205
+    .line 210
     invoke-virtual {p0}, Lcom/google/common/collect/RegularImmutableSortedSet;->isEmpty()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 208
+    .line 213
     iget-object v0, p0, Lcom/google/common/collect/RegularImmutableSortedSet;->elements:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {p0}, Lcom/google/common/collect/RegularImmutableSortedSet;->size()I
@@ -920,7 +1057,7 @@
 
     return-object p0
 
-    .line 206
+    .line 211
     :cond_0
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -931,15 +1068,27 @@
 
 .method public lower(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "element"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)TE;"
         }
     .end annotation
 
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
     const/4 v0, 0x0
 
-    .line 213
+    .line 219
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/RegularImmutableSortedSet;->headIndex(Ljava/lang/Object;Z)I
 
     move-result p1
@@ -954,7 +1103,7 @@
 
     goto :goto_0
 
-    .line 214
+    .line 220
     :cond_0
     iget-object p0, p0, Lcom/google/common/collect/RegularImmutableSortedSet;->elements:Lcom/google/common/collect/ImmutableList;
 
@@ -969,7 +1118,7 @@
 .method public size()I
     .locals 0
 
-    .line 80
+    .line 85
     iget-object p0, p0, Lcom/google/common/collect/RegularImmutableSortedSet;->elements:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableList;->size()I
@@ -981,6 +1130,21 @@
 
 .method subSetImpl(Ljava/lang/Object;ZLjava/lang/Object;Z)Lcom/google/common/collect/ImmutableSortedSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "fromElement",
+            "fromInclusive",
+            "toElement",
+            "toInclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;ZTE;Z)",
@@ -989,7 +1153,7 @@
         }
     .end annotation
 
-    .line 252
+    .line 261
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/RegularImmutableSortedSet;->tailSetImpl(Ljava/lang/Object;Z)Lcom/google/common/collect/ImmutableSortedSet;
 
     move-result-object p0
@@ -1003,13 +1167,24 @@
 
 .method tailIndex(Ljava/lang/Object;Z)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromElement",
+            "inclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;Z)I"
         }
     .end annotation
 
-    .line 261
+    .line 270
     iget-object v0, p0, Lcom/google/common/collect/RegularImmutableSortedSet;->elements:Lcom/google/common/collect/ImmutableList;
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1044,6 +1219,17 @@
 
 .method tailSetImpl(Ljava/lang/Object;Z)Lcom/google/common/collect/ImmutableSortedSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromElement",
+            "inclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;Z)",
@@ -1052,7 +1238,7 @@
         }
     .end annotation
 
-    .line 257
+    .line 266
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/RegularImmutableSortedSet;->tailIndex(Ljava/lang/Object;Z)I
 
     move-result p1
@@ -1079,8 +1265,19 @@
         }
     .end annotation
 
-    .line 274
+    .line 283
     iget-object p0, p0, Lcom/google/common/collect/RegularImmutableSortedSet;->comparator:Ljava/util/Comparator;
+
+    return-object p0
+.end method
+
+.method writeReplace()Ljava/lang/Object;
+    .locals 0
+
+    .line 330
+    invoke-super {p0}, Lcom/google/common/collect/ImmutableSortedSet;->writeReplace()Ljava/lang/Object;
+
+    move-result-object p0
 
     return-object p0
 .end method

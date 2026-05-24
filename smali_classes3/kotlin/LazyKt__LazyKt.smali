@@ -24,8 +24,8 @@
     }
     k = 0x5
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x31
@@ -65,7 +65,7 @@
 
     invoke-static {p2, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 44
+    .line 50
     invoke-interface {p0}, Lkotlin/Lazy;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -85,7 +85,7 @@
         }
     .end annotation
 
-    .line 35
+    .line 39
     new-instance v0, Lkotlin/InitializedLazyImpl;
 
     invoke-direct {v0, p0}, Lkotlin/InitializedLazyImpl;-><init>(Ljava/lang/Object;)V

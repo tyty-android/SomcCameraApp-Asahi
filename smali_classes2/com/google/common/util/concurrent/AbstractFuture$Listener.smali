@@ -20,41 +20,72 @@
 
 # instance fields
 .field final executor:Ljava/util/concurrent/Executor;
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+.end field
 
 .field next:Lcom/google/common/util/concurrent/AbstractFuture$Listener;
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
 .field final task:Ljava/lang/Runnable;
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+.end field
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 1
 
-    .line 267
+    .line 282
     new-instance v0, Lcom/google/common/util/concurrent/AbstractFuture$Listener;
 
-    const/4 v1, 0x0
-
-    invoke-direct {v0, v1, v1}, Lcom/google/common/util/concurrent/AbstractFuture$Listener;-><init>(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+    invoke-direct {v0}, Lcom/google/common/util/concurrent/AbstractFuture$Listener;-><init>()V
 
     sput-object v0, Lcom/google/common/util/concurrent/AbstractFuture$Listener;->TOMBSTONE:Lcom/google/common/util/concurrent/AbstractFuture$Listener;
 
     return-void
 .end method
 
-.method constructor <init>(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
-    .locals 0
+.method constructor <init>()V
+    .locals 1
 
-    .line 274
+    .line 296
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 275
+    const/4 v0, 0x0
+
+    .line 297
+    iput-object v0, p0, Lcom/google/common/util/concurrent/AbstractFuture$Listener;->task:Ljava/lang/Runnable;
+
+    .line 298
+    iput-object v0, p0, Lcom/google/common/util/concurrent/AbstractFuture$Listener;->executor:Ljava/util/concurrent/Executor;
+
+    return-void
+.end method
+
+.method constructor <init>(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "task",
+            "executor"
+        }
+    .end annotation
+
+    .line 291
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 292
     iput-object p1, p0, Lcom/google/common/util/concurrent/AbstractFuture$Listener;->task:Ljava/lang/Runnable;
 
-    .line 276
+    .line 293
     iput-object p2, p0, Lcom/google/common/util/concurrent/AbstractFuture$Listener;->executor:Ljava/util/concurrent/Executor;
 
     return-void

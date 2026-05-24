@@ -38,6 +38,17 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/cache/CacheBuilder;Lcom/google/common/cache/CacheLoader;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "builder",
+            "loader"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -48,7 +59,7 @@
         }
     .end annotation
 
-    .line 4767
+    .line 4800
     new-instance v0, Lcom/google/common/cache/LocalCache;
 
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -66,17 +77,53 @@
     return-void
 .end method
 
+.method private readObject(Ljava/io/ObjectInputStream;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "in"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/InvalidObjectException;
+        }
+    .end annotation
+
+    .line 4845
+    new-instance p0, Ljava/io/InvalidObjectException;
+
+    const-string p1, "Use LoadingSerializationProxy"
+
+    invoke-direct {p0, p1}, Ljava/io/InvalidObjectException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
 
 # virtual methods
 .method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)TV;"
         }
     .end annotation
 
-    .line 4798
+    .line 4832
     invoke-virtual {p0, p1}, Lcom/google/common/cache/LocalCache$LocalLoadingCache;->getUnchecked(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -86,6 +133,15 @@
 
 .method public get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)TV;"
@@ -98,7 +154,7 @@
         }
     .end annotation
 
-    .line 4774
+    .line 4807
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$LocalLoadingCache;->localCache:Lcom/google/common/cache/LocalCache;
 
     invoke-virtual {p0, p1}, Lcom/google/common/cache/LocalCache;->getOrLoad(Ljava/lang/Object;)Ljava/lang/Object;
@@ -110,6 +166,15 @@
 
 .method public getAll(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableMap;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "keys"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -126,7 +191,7 @@
         }
     .end annotation
 
-    .line 4788
+    .line 4822
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$LocalLoadingCache;->localCache:Lcom/google/common/cache/LocalCache;
 
     invoke-virtual {p0, p1}, Lcom/google/common/cache/LocalCache;->getAll(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableMap;
@@ -138,13 +203,22 @@
 
 .method public getUnchecked(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)TV;"
         }
     .end annotation
 
-    .line 4780
+    .line 4814
     :try_start_0
     invoke-virtual {p0, p1}, Lcom/google/common/cache/LocalCache$LocalLoadingCache;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -157,7 +231,7 @@
     :catch_0
     move-exception p0
 
-    .line 4782
+    .line 4816
     new-instance p1, Lcom/google/common/util/concurrent/UncheckedExecutionException;
 
     invoke-virtual {p0}, Ljava/util/concurrent/ExecutionException;->getCause()Ljava/lang/Throwable;
@@ -171,13 +245,22 @@
 
 .method public refresh(Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)V"
         }
     .end annotation
 
-    .line 4793
+    .line 4827
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$LocalLoadingCache;->localCache:Lcom/google/common/cache/LocalCache;
 
     invoke-virtual {p0, p1}, Lcom/google/common/cache/LocalCache;->refresh(Ljava/lang/Object;)V
@@ -188,7 +271,7 @@
 .method writeReplace()Ljava/lang/Object;
     .locals 1
 
-    .line 4807
+    .line 4841
     new-instance v0, Lcom/google/common/cache/LocalCache$LoadingSerializationProxy;
 
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$LocalLoadingCache;->localCache:Lcom/google/common/cache/LocalCache;

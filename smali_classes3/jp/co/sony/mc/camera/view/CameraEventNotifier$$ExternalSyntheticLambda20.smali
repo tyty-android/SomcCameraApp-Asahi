@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/SurfaceRequest;
+.field public final synthetic f$0:Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/SurfaceRequest;)V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda20;->f$0:Ljp/co/sony/mc/camera/view/SurfaceRequest;
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda20;->f$0:Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
 
     return-void
 .end method
@@ -28,11 +28,11 @@
     .locals 0
 
     .line 0
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda20;->f$0:Ljp/co/sony/mc/camera/view/SurfaceRequest;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda20;->f$0:Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
 
     check-cast p1, Ljp/co/sony/mc/camera/view/CameraEventListener;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->$r8$lambda$QwNDC0MPt_HSqScUcA5DA4o5OVY(Ljp/co/sony/mc/camera/view/SurfaceRequest;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->$r8$lambda$WV76nCExBGrkzPQh3PVTSylcypU(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 

@@ -105,7 +105,7 @@
 
     move-result v5
 
-    const v6, 0x7f1103d6
+    const v6, 0x7f110421
 
     const-string v1, "CAMERA"
 
@@ -137,7 +137,7 @@
 
     move-result v15
 
-    const v16, 0x7f1103d8
+    const v16, 0x7f110423
 
     const-string v11, "MIC"
 
@@ -163,7 +163,7 @@
 
     move-result v6
 
-    const v7, 0x7f1103dc
+    const v7, 0x7f110427
 
     const-string v2, "READ_MEDIA_VISUAL"
 
@@ -195,7 +195,7 @@
 
     move-result v15
 
-    const v16, 0x7f1103db
+    const v16, 0x7f110426
 
     const-string v11, "NOTIFICATION"
 
@@ -233,7 +233,7 @@
 
     move-result v6
 
-    const v7, 0x7f1103d7
+    const v7, 0x7f110422
 
     const-string v2, "LOCATION"
 
@@ -269,7 +269,7 @@
 
     move-result v16
 
-    const v17, 0x7f1103d9
+    const v17, 0x7f110424
 
     const-string v12, "BLUETOOTH"
 
@@ -295,6 +295,25 @@
 
 .method private constructor <init>(Ljava/lang/String;ILjava/lang/String;Ljava/util/List;II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "groupName",
+            "permissionList",
+            "preDialogMessageId",
+            "postDialogMessageId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -336,6 +355,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 67
     const-class v0, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
@@ -368,6 +395,14 @@
 # virtual methods
 .method public contains(Ljava/lang/String;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "permission"
+        }
+    .end annotation
 
     .line 127
     iget-object p0, p0, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->mPermissionList:Ljava/util/List;

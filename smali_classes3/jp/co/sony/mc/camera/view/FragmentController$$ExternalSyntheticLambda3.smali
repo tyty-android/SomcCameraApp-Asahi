@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Ljp/co/sony/mc/camera/CameraAccessor$PreviewCallback;
+.implements Lkotlin/jvm/functions/Function4;
 
 
 # instance fields
@@ -24,13 +24,43 @@
 
 
 # virtual methods
-.method public final onPreviewStarted()V
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$$ExternalSyntheticLambda3;->f$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->$r8$lambda$bJ61WA5fDS8rX7rPlZUQvvPP2as(Ljp/co/sony/mc/camera/view/FragmentController;)V
+    check-cast p1, Ljava/lang/Boolean;
 
-    return-void
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    check-cast p2, Ljava/lang/Boolean;
+
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p2
+
+    check-cast p3, Ljava/lang/Boolean;
+
+    invoke-virtual {p3}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p3
+
+    check-cast p4, Ljava/lang/Boolean;
+
+    invoke-virtual {p4}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p4
+
+    invoke-static {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/view/FragmentController;->$r8$lambda$sVwc5WShwjbrQAe6ONtt0jJ0BNE(Ljp/co/sony/mc/camera/view/FragmentController;ZZZZ)Z
+
+    move-result p0
+
+    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p0
+
+    return-object p0
 .end method

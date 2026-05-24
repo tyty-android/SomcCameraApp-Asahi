@@ -52,6 +52,15 @@
 # direct methods
 .method public constructor <init>(Ljava/util/Comparator;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "comparator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -62,10 +71,10 @@
 
     const/4 v0, 0x1
 
-    .line 433
+    .line 507
     invoke-direct {p0, v0}, Lcom/google/common/collect/ImmutableMultiset$Builder;-><init>(Z)V
 
-    .line 434
+    .line 508
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -76,12 +85,12 @@
 
     const/4 p1, 0x4
 
-    .line 435
+    .line 509
     new-array v0, p1, [Ljava/lang/Object;
 
     iput-object v0, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->elements:[Ljava/lang/Object;
 
-    .line 436
+    .line 510
     new-array p1, p1, [I
 
     iput-object p1, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->counts:[I
@@ -91,15 +100,23 @@
 
 .method private dedupAndCoalesce(Z)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "maybeExpand"
+        }
+    .end annotation
 
-    .line 452
+    .line 526
     iget v0, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->length:I
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 455
+    .line 529
     :cond_0
     iget-object v1, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->elements:[Ljava/lang/Object;
 
@@ -107,7 +124,7 @@
 
     move-result-object v0
 
-    .line 456
+    .line 530
     iget-object v1, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->comparator:Ljava/util/Comparator;
 
     invoke-static {v0, v1}, Ljava/util/Arrays;->sort([Ljava/lang/Object;Ljava/util/Comparator;)V
@@ -118,13 +135,13 @@
 
     move v3, v2
 
-    .line 458
+    .line 532
     :goto_0
     array-length v4, v0
 
     if-ge v2, v4, :cond_2
 
-    .line 459
+    .line 533
     iget-object v4, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->comparator:Ljava/util/Comparator;
 
     add-int/lit8 v5, v3, -0x1
@@ -139,7 +156,7 @@
 
     if-gez v4, :cond_1
 
-    .line 460
+    .line 534
     aget-object v4, v0, v2
 
     aput-object v4, v0, v3
@@ -151,7 +168,7 @@
 
     goto :goto_0
 
-    .line 464
+    .line 538
     :cond_2
     iget v2, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->length:I
 
@@ -163,19 +180,19 @@
 
     mul-int/lit8 p1, v3, 0x4
 
-    .line 465
+    .line 539
     iget v2, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->length:I
 
     mul-int/lit8 v4, v2, 0x3
 
     if-le p1, v4, :cond_3
 
-    .line 467
+    .line 541
     div-int/lit8 p1, v2, 0x2
 
     add-int/2addr p1, v1
 
-    .line 468
+    .line 542
     invoke-static {v2, p1}, Lcom/google/common/math/IntMath;->saturatedAdd(II)I
 
     move-result p1
@@ -184,7 +201,7 @@
 
     move-result-object v0
 
-    .line 470
+    .line 544
     :cond_3
     array-length p1, v0
 
@@ -194,13 +211,13 @@
 
     move v2, v1
 
-    .line 471
+    .line 545
     :goto_1
     iget v4, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->length:I
 
     if-ge v2, v4, :cond_5
 
-    .line 472
+    .line 546
     iget-object v4, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->elements:[Ljava/lang/Object;
 
     aget-object v4, v4, v2
@@ -211,14 +228,14 @@
 
     move-result v4
 
-    .line 473
+    .line 547
     iget-object v5, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->counts:[I
 
     aget v5, v5, v2
 
     if-ltz v5, :cond_4
 
-    .line 474
+    .line 548
     aget v6, p1, v4
 
     add-int/2addr v6, v5
@@ -230,7 +247,7 @@
     :cond_4
     not-int v5, v5
 
-    .line 476
+    .line 550
     aput v5, p1, v4
 
     :goto_2
@@ -238,14 +255,14 @@
 
     goto :goto_1
 
-    .line 480
+    .line 554
     :cond_5
     iput-object v0, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->elements:[Ljava/lang/Object;
 
-    .line 481
+    .line 555
     iput-object p1, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->counts:[I
 
-    .line 482
+    .line 556
     iput v3, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->length:I
 
     return-void
@@ -256,34 +273,34 @@
 
     const/4 v0, 0x0
 
-    .line 601
+    .line 675
     invoke-direct {p0, v0}, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->dedupAndCoalesce(Z)V
 
     move v1, v0
 
     move v2, v1
 
-    .line 605
+    .line 679
     :goto_0
     iget v3, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->length:I
 
     if-ge v1, v3, :cond_1
 
-    .line 606
+    .line 680
     iget-object v3, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->counts:[I
 
     aget v4, v3, v1
 
     if-lez v4, :cond_0
 
-    .line 607
+    .line 681
     iget-object v5, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->elements:[Ljava/lang/Object;
 
     aget-object v6, v5, v1
 
     aput-object v6, v5, v2
 
-    .line 608
+    .line 682
     aput v4, v3, v2
 
     add-int/lit8 v2, v2, 0x1
@@ -293,7 +310,7 @@
 
     goto :goto_0
 
-    .line 612
+    .line 686
     :cond_1
     iget-object v1, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->elements:[Ljava/lang/Object;
 
@@ -301,14 +318,14 @@
 
     invoke-static {v1, v2, v3, v4}, Ljava/util/Arrays;->fill([Ljava/lang/Object;IILjava/lang/Object;)V
 
-    .line 613
+    .line 687
     iget-object v1, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->counts:[I
 
     iget v3, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->length:I
 
     invoke-static {v1, v2, v3, v0}, Ljava/util/Arrays;->fill([IIII)V
 
-    .line 614
+    .line 688
     iput v2, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->length:I
 
     return-void
@@ -317,7 +334,7 @@
 .method private maintenance()V
     .locals 3
 
-    .line 441
+    .line 515
     iget v0, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->length:I
 
     iget-object v1, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->elements:[Ljava/lang/Object;
@@ -328,18 +345,18 @@
 
     const/4 v0, 0x1
 
-    .line 442
+    .line 516
     invoke-direct {p0, v0}, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->dedupAndCoalesce(Z)V
 
     goto :goto_0
 
-    .line 443
+    .line 517
     :cond_0
     iget-boolean v0, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->forceCopyElements:Z
 
     if-eqz v0, :cond_1
 
-    .line 444
+    .line 518
     array-length v0, v1
 
     invoke-static {v1, v0}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
@@ -352,7 +369,7 @@
     :goto_0
     const/4 v0, 0x0
 
-    .line 448
+    .line 522
     iput-boolean v0, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->forceCopyElements:Z
 
     return-void
@@ -362,8 +379,16 @@
 # virtual methods
 .method public bridge synthetic add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableCollection$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "element"
+        }
+    .end annotation
 
-    .line 405
+    .line 479
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSortedMultiset$Builder;
 
     move-result-object p0
@@ -373,8 +398,16 @@
 
 .method public bridge synthetic add([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableCollection$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
 
-    .line 405
+    .line 479
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->add([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSortedMultiset$Builder;
 
     move-result-object p0
@@ -384,8 +417,16 @@
 
 .method public bridge synthetic add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMultiset$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "element"
+        }
+    .end annotation
 
-    .line 405
+    .line 479
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSortedMultiset$Builder;
 
     move-result-object p0
@@ -395,8 +436,16 @@
 
 .method public bridge synthetic add([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMultiset$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
 
-    .line 405
+    .line 479
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->add([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSortedMultiset$Builder;
 
     move-result-object p0
@@ -406,6 +455,15 @@
 
 .method public add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSortedMultiset$Builder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "element"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)",
@@ -416,7 +474,7 @@
 
     const/4 v0, 0x1
 
-    .line 495
+    .line 569
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->addCopies(Ljava/lang/Object;I)Lcom/google/common/collect/ImmutableSortedMultiset$Builder;
 
     move-result-object p0
@@ -426,6 +484,15 @@
 
 .method public varargs add([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSortedMultiset$Builder;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([TE;)",
@@ -434,7 +501,7 @@
         }
     .end annotation
 
-    .line 508
+    .line 582
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -444,7 +511,7 @@
 
     aget-object v2, p1, v1
 
-    .line 509
+    .line 583
     invoke-virtual {p0, v2}, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSortedMultiset$Builder;
 
     add-int/lit8 v1, v1, 0x1
@@ -457,8 +524,16 @@
 
 .method public bridge synthetic addAll(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableCollection$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
 
-    .line 405
+    .line 479
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->addAll(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableSortedMultiset$Builder;
 
     move-result-object p0
@@ -468,8 +543,16 @@
 
 .method public bridge synthetic addAll(Ljava/util/Iterator;)Lcom/google/common/collect/ImmutableCollection$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
 
-    .line 405
+    .line 479
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->addAll(Ljava/util/Iterator;)Lcom/google/common/collect/ImmutableSortedMultiset$Builder;
 
     move-result-object p0
@@ -479,8 +562,16 @@
 
 .method public bridge synthetic addAll(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableMultiset$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
 
-    .line 405
+    .line 479
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->addAll(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableSortedMultiset$Builder;
 
     move-result-object p0
@@ -490,8 +581,16 @@
 
 .method public bridge synthetic addAll(Ljava/util/Iterator;)Lcom/google/common/collect/ImmutableMultiset$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
 
-    .line 405
+    .line 479
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->addAll(Ljava/util/Iterator;)Lcom/google/common/collect/ImmutableSortedMultiset$Builder;
 
     move-result-object p0
@@ -501,6 +600,15 @@
 
 .method public addAll(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableSortedMultiset$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -511,12 +619,12 @@
         }
     .end annotation
 
-    .line 572
+    .line 646
     instance-of v0, p1, Lcom/google/common/collect/Multiset;
 
     if-eqz v0, :cond_0
 
-    .line 573
+    .line 647
     check-cast p1, Lcom/google/common/collect/Multiset;
 
     invoke-interface {p1}, Lcom/google/common/collect/Multiset;->entrySet()Ljava/util/Set;
@@ -540,7 +648,7 @@
 
     check-cast v0, Lcom/google/common/collect/Multiset$Entry;
 
-    .line 574
+    .line 648
     invoke-interface {v0}, Lcom/google/common/collect/Multiset$Entry;->getElement()Ljava/lang/Object;
 
     move-result-object v1
@@ -553,7 +661,7 @@
 
     goto :goto_0
 
-    .line 577
+    .line 651
     :cond_0
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -570,7 +678,7 @@
 
     move-result-object v0
 
-    .line 578
+    .line 652
     invoke-virtual {p0, v0}, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSortedMultiset$Builder;
 
     goto :goto_1
@@ -581,6 +689,15 @@
 
 .method public addAll(Ljava/util/Iterator;)Lcom/google/common/collect/ImmutableSortedMultiset$Builder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -591,7 +708,7 @@
         }
     .end annotation
 
-    .line 594
+    .line 668
     :goto_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -599,7 +716,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 595
+    .line 669
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
@@ -614,8 +731,18 @@
 
 .method public bridge synthetic addCopies(Ljava/lang/Object;I)Lcom/google/common/collect/ImmutableMultiset$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "element",
+            "occurrences"
+        }
+    .end annotation
 
-    .line 405
+    .line 479
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->addCopies(Ljava/lang/Object;I)Lcom/google/common/collect/ImmutableSortedMultiset$Builder;
 
     move-result-object p0
@@ -625,6 +752,17 @@
 
 .method public addCopies(Ljava/lang/Object;I)Lcom/google/common/collect/ImmutableSortedMultiset$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "element",
+            "occurrences"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;I)",
@@ -633,10 +771,10 @@
         }
     .end annotation
 
-    .line 528
+    .line 602
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 529
+    .line 603
     const-string v0, "occurrences"
 
     invoke-static {p2, v0}, Lcom/google/common/collect/CollectPreconditions;->checkNonnegative(ILjava/lang/String;)I
@@ -645,25 +783,25 @@
 
     return-object p0
 
-    .line 533
+    .line 607
     :cond_0
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->maintenance()V
 
-    .line 534
+    .line 608
     iget-object v0, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->elements:[Ljava/lang/Object;
 
     iget v1, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->length:I
 
     aput-object p1, v0, v1
 
-    .line 535
+    .line 609
     iget-object p1, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->counts:[I
 
     aput p2, p1, v1
 
     add-int/lit8 v1, v1, 0x1
 
-    .line 536
+    .line 610
     iput v1, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->length:I
 
     return-object p0
@@ -672,7 +810,7 @@
 .method public bridge synthetic build()Lcom/google/common/collect/ImmutableCollection;
     .locals 0
 
-    .line 405
+    .line 479
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->build()Lcom/google/common/collect/ImmutableSortedMultiset;
 
     move-result-object p0
@@ -683,7 +821,7 @@
 .method public bridge synthetic build()Lcom/google/common/collect/ImmutableMultiset;
     .locals 0
 
-    .line 405
+    .line 479
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->build()Lcom/google/common/collect/ImmutableSortedMultiset;
 
     move-result-object p0
@@ -701,15 +839,15 @@
         }
     .end annotation
 
-    .line 623
+    .line 697
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->dedupAndCoalesceAndDeleteEmpty()V
 
-    .line 624
+    .line 698
     iget v0, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->length:I
 
     if-nez v0, :cond_0
 
-    .line 625
+    .line 699
     iget-object p0, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->comparator:Ljava/util/Comparator;
 
     invoke-static {p0}, Lcom/google/common/collect/ImmutableSortedMultiset;->emptyMultiset(Ljava/util/Comparator;)Lcom/google/common/collect/ImmutableSortedMultiset;
@@ -718,20 +856,20 @@
 
     return-object p0
 
-    .line 627
+    .line 701
     :cond_0
     iget-object v1, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->comparator:Ljava/util/Comparator;
 
     iget-object v2, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->elements:[Ljava/lang/Object;
 
-    .line 628
+    .line 702
     invoke-static {v1, v0, v2}, Lcom/google/common/collect/ImmutableSortedSet;->construct(Ljava/util/Comparator;I[Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSortedSet;
 
     move-result-object v0
 
     check-cast v0, Lcom/google/common/collect/RegularImmutableSortedSet;
 
-    .line 629
+    .line 703
     iget v1, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->length:I
 
     const/4 v2, 0x1
@@ -744,7 +882,7 @@
 
     move v4, v3
 
-    .line 630
+    .line 704
     :goto_0
     iget v5, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->length:I
 
@@ -752,7 +890,7 @@
 
     add-int/lit8 v5, v4, 0x1
 
-    .line 631
+    .line 705
     aget-wide v6, v1, v4
 
     iget-object v8, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->counts:[I
@@ -769,11 +907,11 @@
 
     goto :goto_0
 
-    .line 633
+    .line 707
     :cond_1
     iput-boolean v2, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->forceCopyElements:Z
 
-    .line 634
+    .line 708
     new-instance v2, Lcom/google/common/collect/RegularImmutableSortedMultiset;
 
     iget p0, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->length:I
@@ -785,8 +923,18 @@
 
 .method public bridge synthetic setCount(Ljava/lang/Object;I)Lcom/google/common/collect/ImmutableMultiset$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "element",
+            "count"
+        }
+    .end annotation
 
-    .line 405
+    .line 479
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->setCount(Ljava/lang/Object;I)Lcom/google/common/collect/ImmutableSortedMultiset$Builder;
 
     move-result-object p0
@@ -796,6 +944,17 @@
 
 .method public setCount(Ljava/lang/Object;I)Lcom/google/common/collect/ImmutableSortedMultiset$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "element",
+            "count"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;I)",
@@ -804,25 +963,25 @@
         }
     .end annotation
 
-    .line 553
+    .line 627
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 554
+    .line 628
     const-string v0, "count"
 
     invoke-static {p2, v0}, Lcom/google/common/collect/CollectPreconditions;->checkNonnegative(ILjava/lang/String;)I
 
-    .line 555
+    .line 629
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->maintenance()V
 
-    .line 556
+    .line 630
     iget-object v0, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->elements:[Ljava/lang/Object;
 
     iget v1, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->length:I
 
     aput-object p1, v0, v1
 
-    .line 557
+    .line 631
     iget-object p1, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->counts:[I
 
     not-int p2, p2
@@ -831,7 +990,7 @@
 
     add-int/lit8 v1, v1, 0x1
 
-    .line 558
+    .line 632
     iput v1, p0, Lcom/google/common/collect/ImmutableSortedMultiset$Builder;->length:I
 
     return-object p0

@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/graph/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation runtime Lcom/google/errorprone/annotations/DoNotMock;
 .end annotation
 
@@ -21,8 +24,16 @@
 # direct methods
 .method private constructor <init>(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "directed"
+        }
+    .end annotation
 
-    .line 71
+    .line 79
     invoke-direct {p0, p1}, Lcom/google/common/graph/AbstractGraphBuilder;-><init>(Z)V
 
     return-void
@@ -52,7 +63,7 @@
         }
     .end annotation
 
-    .line 76
+    .line 84
     new-instance v0, Lcom/google/common/graph/GraphBuilder;
 
     const/4 v1, 0x1
@@ -64,6 +75,15 @@
 
 .method public static from(Lcom/google/common/graph/Graph;)Lcom/google/common/graph/GraphBuilder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "graph"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -76,7 +96,7 @@
         }
     .end annotation
 
-    .line 92
+    .line 100
     new-instance v0, Lcom/google/common/graph/GraphBuilder;
 
     invoke-interface {p0}, Lcom/google/common/graph/Graph;->isDirected()Z
@@ -85,7 +105,7 @@
 
     invoke-direct {v0, v1}, Lcom/google/common/graph/GraphBuilder;-><init>(Z)V
 
-    .line 93
+    .line 101
     invoke-interface {p0}, Lcom/google/common/graph/Graph;->allowsSelfLoops()Z
 
     move-result v1
@@ -94,7 +114,7 @@
 
     move-result-object v0
 
-    .line 94
+    .line 102
     invoke-interface {p0}, Lcom/google/common/graph/Graph;->nodeOrder()Lcom/google/common/graph/ElementOrder;
 
     move-result-object v1
@@ -103,7 +123,7 @@
 
     move-result-object v0
 
-    .line 95
+    .line 103
     invoke-interface {p0}, Lcom/google/common/graph/Graph;->incidentEdgeOrder()Lcom/google/common/graph/ElementOrder;
 
     move-result-object p0
@@ -126,7 +146,7 @@
         }
     .end annotation
 
-    .line 81
+    .line 89
     new-instance v0, Lcom/google/common/graph/GraphBuilder;
 
     const/4 v1, 0x0
@@ -140,6 +160,15 @@
 # virtual methods
 .method public allowsSelfLoops(Z)Lcom/google/common/graph/GraphBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "allowsSelfLoops"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -148,7 +177,7 @@
         }
     .end annotation
 
-    .line 121
+    .line 130
     iput-boolean p1, p0, Lcom/google/common/graph/GraphBuilder;->allowsSelfLoops:Z
 
     return-object p0
@@ -164,7 +193,7 @@
         }
     .end annotation
 
-    .line 173
+    .line 183
     new-instance v0, Lcom/google/common/graph/StandardMutableGraph;
 
     invoke-direct {v0, p0}, Lcom/google/common/graph/StandardMutableGraph;-><init>(Lcom/google/common/graph/AbstractGraphBuilder;)V
@@ -182,29 +211,29 @@
         }
     .end annotation
 
-    .line 177
+    .line 187
     new-instance v0, Lcom/google/common/graph/GraphBuilder;
 
     iget-boolean v1, p0, Lcom/google/common/graph/GraphBuilder;->directed:Z
 
     invoke-direct {v0, v1}, Lcom/google/common/graph/GraphBuilder;-><init>(Z)V
 
-    .line 178
+    .line 188
     iget-boolean v1, p0, Lcom/google/common/graph/GraphBuilder;->allowsSelfLoops:Z
 
     iput-boolean v1, v0, Lcom/google/common/graph/GraphBuilder;->allowsSelfLoops:Z
 
-    .line 179
+    .line 189
     iget-object v1, p0, Lcom/google/common/graph/GraphBuilder;->nodeOrder:Lcom/google/common/graph/ElementOrder;
 
     iput-object v1, v0, Lcom/google/common/graph/GraphBuilder;->nodeOrder:Lcom/google/common/graph/ElementOrder;
 
-    .line 180
+    .line 190
     iget-object v1, p0, Lcom/google/common/graph/GraphBuilder;->expectedNodeCount:Lcom/google/common/base/Optional;
 
     iput-object v1, v0, Lcom/google/common/graph/GraphBuilder;->expectedNodeCount:Lcom/google/common/base/Optional;
 
-    .line 181
+    .line 191
     iget-object p0, p0, Lcom/google/common/graph/GraphBuilder;->incidentEdgeOrder:Lcom/google/common/graph/ElementOrder;
 
     iput-object p0, v0, Lcom/google/common/graph/GraphBuilder;->incidentEdgeOrder:Lcom/google/common/graph/ElementOrder;
@@ -214,6 +243,15 @@
 
 .method public expectedNodeCount(I)Lcom/google/common/graph/GraphBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "expectedNodeCount"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -222,7 +260,7 @@
         }
     .end annotation
 
-    .line 131
+    .line 141
     invoke-static {p1}, Lcom/google/common/graph/Graphs;->checkNonNegative(I)I
 
     move-result p1
@@ -250,12 +288,12 @@
         }
     .end annotation
 
-    .line 109
+    .line 117
     invoke-direct {p0}, Lcom/google/common/graph/GraphBuilder;->cast()Lcom/google/common/graph/GraphBuilder;
 
     move-result-object p0
 
-    .line 110
+    .line 118
     new-instance v0, Lcom/google/common/graph/ImmutableGraph$Builder;
 
     invoke-direct {v0, p0}, Lcom/google/common/graph/ImmutableGraph$Builder;-><init>(Lcom/google/common/graph/GraphBuilder;)V
@@ -265,6 +303,15 @@
 
 .method public incidentEdgeOrder(Lcom/google/common/graph/ElementOrder;)Lcom/google/common/graph/GraphBuilder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "incidentEdgeOrder"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N1:TN;>(",
@@ -275,7 +322,7 @@
         }
     .end annotation
 
-    .line 161
+    .line 171
     invoke-virtual {p1}, Lcom/google/common/graph/ElementOrder;->type()Lcom/google/common/graph/ElementOrder$Type;
 
     move-result-object v0
@@ -284,7 +331,7 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 162
+    .line 172
     invoke-virtual {p1}, Lcom/google/common/graph/ElementOrder;->type()Lcom/google/common/graph/ElementOrder$Type;
 
     move-result-object v0
@@ -307,15 +354,15 @@
     :goto_1
     const-string v1, "The given elementOrder (%s) is unsupported. incidentEdgeOrder() only supports ElementOrder.unordered() and ElementOrder.stable()."
 
-    .line 160
+    .line 170
     invoke-static {v0, v1, p1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;)V
 
-    .line 166
+    .line 176
     invoke-direct {p0}, Lcom/google/common/graph/GraphBuilder;->cast()Lcom/google/common/graph/GraphBuilder;
 
     move-result-object p0
 
-    .line 167
+    .line 177
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -329,6 +376,15 @@
 
 .method public nodeOrder(Lcom/google/common/graph/ElementOrder;)Lcom/google/common/graph/GraphBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "nodeOrder"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N1:TN;>(",
@@ -339,12 +395,12 @@
         }
     .end annotation
 
-    .line 141
+    .line 151
     invoke-direct {p0}, Lcom/google/common/graph/GraphBuilder;->cast()Lcom/google/common/graph/GraphBuilder;
 
     move-result-object p0
 
-    .line 142
+    .line 152
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1

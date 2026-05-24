@@ -34,6 +34,14 @@
 # direct methods
 .method constructor <init>(Z)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isLockFocus"
+        }
+    .end annotation
 
     .line 33
     const-string v0, "StateAfModeChanging"
@@ -61,6 +69,16 @@
 
 .method constructor <init>(ZZ)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "isLockFocus",
+            "isPreviewStopRequested"
+        }
+    .end annotation
 
     .line 42
     const-string v0, "StateAfModeChanging"
@@ -90,6 +108,14 @@
 # virtual methods
 .method public entry(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 52
     new-instance p1, Ljava/util/LinkedList;
@@ -122,6 +148,14 @@
 
 .method public exit(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 65
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateAfModeChanging;->mPostEventQueue:Ljava/util/Queue;
@@ -174,6 +208,16 @@
 
 .method public varargs handleBurstCaptureAfterObjectTracked(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     .line 185
     iget-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateAfModeChanging;->mPostEventQueue:Ljava/util/Queue;
@@ -193,6 +237,16 @@
 
 .method public varargs handleCancelAutoFocus(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     .line 92
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateAfModeChanging;->cancelAutoFocus(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
@@ -207,6 +261,16 @@
 
 .method public varargs handleCapture(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     .line 157
     iget-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateAfModeChanging;->mPostEventQueue:Ljava/util/Queue;
@@ -226,6 +290,16 @@
 
 .method public varargs handleCaptureAfterObjectTracked(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     .line 175
     iget-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateAfModeChanging;->mPostEventQueue:Ljava/util/Queue;
@@ -245,6 +319,16 @@
 
 .method public varargs handleCaptureBurst(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     .line 166
     iget-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateAfModeChanging;->mPostEventQueue:Ljava/util/Queue;
@@ -264,18 +348,48 @@
 
 .method public varargs handleCreateSession(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     return-void
 .end method
 
-.method public varargs handleEvfPrepared(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
+.method public varargs handleMainPreviewSurfacePrepared(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public varargs handleOnAutoFocusCanceled(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     .line 133
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;
@@ -315,6 +429,16 @@
 
 .method public varargs handleOnAutoFocusDone(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -416,6 +540,16 @@
 
 .method public varargs handleOnAutoFocusRequested(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     const/4 p1, 0x0
 
@@ -435,6 +569,16 @@
 
 .method public varargs handleRequestAutoFocus(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     .line 83
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateAfModeChanging;->requestAutoFocus(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
@@ -449,6 +593,16 @@
 
 .method public varargs handleRequestPrepareSnapshot(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     .line 148
     iget-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateAfModeChanging;->mPostEventQueue:Ljava/util/Queue;

@@ -30,9 +30,9 @@
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment$$ExternalSyntheticLambda4;->f$0:Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;
 
-    check-cast p1, Lkotlin/Triple;
+    check-cast p1, Landroid/graphics/Rect;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;->$r8$lambda$sHlcikCWVyhOZqzvgwwdRaSjXnY(Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;Lkotlin/Triple;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;->$r8$lambda$ntRcMFHw-9GpTBm_lq-C8hDiT78(Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;Landroid/graphics/Rect;)Lkotlin/Unit;
 
     move-result-object p0
 

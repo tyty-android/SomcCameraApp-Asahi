@@ -28,8 +28,16 @@
 # direct methods
 .method private constructor <init>(Lcom/google/common/collect/ConcurrentHashMultiset;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 558
+    .line 565
     iput-object p1, p0, Lcom/google/common/collect/ConcurrentHashMultiset$EntrySet;->this$0:Lcom/google/common/collect/ConcurrentHashMultiset;
 
     invoke-direct {p0, p1}, Lcom/google/common/collect/AbstractMultiset$EntrySet;-><init>(Lcom/google/common/collect/AbstractMultiset;)V
@@ -40,7 +48,7 @@
 .method synthetic constructor <init>(Lcom/google/common/collect/ConcurrentHashMultiset;Lcom/google/common/collect/ConcurrentHashMultiset$1;)V
     .locals 0
 
-    .line 558
+    .line 565
     invoke-direct {p0, p1}, Lcom/google/common/collect/ConcurrentHashMultiset$EntrySet;-><init>(Lcom/google/common/collect/ConcurrentHashMultiset;)V
 
     return-void
@@ -57,7 +65,7 @@
         }
     .end annotation
 
-    .line 580
+    .line 588
     invoke-virtual {p0}, Lcom/google/common/collect/ConcurrentHashMultiset$EntrySet;->size()I
 
     move-result v0
@@ -66,7 +74,7 @@
 
     move-result-object v0
 
-    .line 582
+    .line 590
     invoke-virtual {p0}, Lcom/google/common/collect/ConcurrentHashMultiset$EntrySet;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -88,7 +96,7 @@
         }
     .end annotation
 
-    .line 561
+    .line 568
     iget-object p0, p0, Lcom/google/common/collect/ConcurrentHashMultiset$EntrySet;->this$0:Lcom/google/common/collect/ConcurrentHashMultiset;
 
     return-object p0
@@ -97,7 +105,7 @@
 .method bridge synthetic multiset()Lcom/google/common/collect/Multiset;
     .locals 0
 
-    .line 557
+    .line 564
     invoke-virtual {p0}, Lcom/google/common/collect/ConcurrentHashMultiset$EntrySet;->multiset()Lcom/google/common/collect/ConcurrentHashMultiset;
 
     move-result-object p0
@@ -108,7 +116,7 @@
 .method public toArray()[Ljava/lang/Object;
     .locals 0
 
-    .line 571
+    .line 578
     invoke-direct {p0}, Lcom/google/common/collect/ConcurrentHashMultiset$EntrySet;->snapshot()Ljava/util/List;
 
     move-result-object p0
@@ -122,6 +130,15 @@
 
 .method public toArray([Ljava/lang/Object;)[Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "array"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -130,7 +147,7 @@
         }
     .end annotation
 
-    .line 576
+    .line 584
     invoke-direct {p0}, Lcom/google/common/collect/ConcurrentHashMultiset$EntrySet;->snapshot()Ljava/util/List;
 
     move-result-object p0

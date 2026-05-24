@@ -66,6 +66,14 @@
 
 .method static isIgnoreKey(I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "keyCode"
+        }
+    .end annotation
 
     const/16 v0, 0x18
 
@@ -182,6 +190,14 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "savedInstanceState"
+        }
+    .end annotation
 
     .line 62
     invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onCreate(Landroid/os/Bundle;)V
@@ -203,7 +219,7 @@
     return-void
 
     :cond_0
-    const v0, 0x7f0c001f
+    const v0, 0x7f0c0020
 
     .line 67
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationActivity;->setContentView(I)V
@@ -226,7 +242,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f090131
+    const v0, 0x7f090130
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationActivity;->mSpiritLevelCalibrationFragment:Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment;
 
@@ -274,6 +290,16 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "keyCode",
+            "event"
+        }
+    .end annotation
 
     .line 119
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationActivity;->isFinishing()Z
@@ -307,6 +333,16 @@
 
 .method public onKeyLongPress(ILandroid/view/KeyEvent;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "keyCode",
+            "event"
+        }
+    .end annotation
 
     .line 146
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationActivity;->isFinishing()Z
@@ -340,6 +376,16 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "keyCode",
+            "event"
+        }
+    .end annotation
 
     .line 130
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationActivity;->isFinishing()Z

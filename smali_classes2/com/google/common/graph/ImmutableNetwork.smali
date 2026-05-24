@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/graph/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation runtime Lcom/google/errorprone/annotations/Immutable;
     containerOf = {
         "N",
@@ -33,6 +36,15 @@
 # direct methods
 .method private constructor <init>(Lcom/google/common/graph/Network;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "network"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -41,7 +53,7 @@
         }
     .end annotation
 
-    .line 53
+    .line 54
     invoke-static {p1}, Lcom/google/common/graph/NetworkBuilder;->from(Lcom/google/common/graph/Network;)Lcom/google/common/graph/NetworkBuilder;
 
     move-result-object v0
@@ -54,7 +66,7 @@
 
     move-result-object p1
 
-    .line 52
+    .line 53
     invoke-direct {p0, v0, v1, p1}, Lcom/google/common/graph/StandardNetwork;-><init>(Lcom/google/common/graph/NetworkBuilder;Ljava/util/Map;Ljava/util/Map;)V
 
     return-void
@@ -62,6 +74,17 @@
 
 .method private static adjacentNodeFn(Lcom/google/common/graph/Network;Ljava/lang/Object;)Lcom/google/common/base/Function;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "network",
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -76,16 +99,27 @@
         }
     .end annotation
 
-    .line 136
-    new-instance v0, Lcom/google/common/graph/ImmutableNetwork$3;
+    .line 127
+    new-instance v0, Lcom/google/common/graph/ImmutableNetwork$$ExternalSyntheticLambda1;
 
-    invoke-direct {v0, p0, p1}, Lcom/google/common/graph/ImmutableNetwork$3;-><init>(Lcom/google/common/graph/Network;Ljava/lang/Object;)V
+    invoke-direct {v0, p0, p1}, Lcom/google/common/graph/ImmutableNetwork$$ExternalSyntheticLambda1;-><init>(Lcom/google/common/graph/Network;Ljava/lang/Object;)V
 
     return-object v0
 .end method
 
 .method private static connectionsOf(Lcom/google/common/graph/Network;Ljava/lang/Object;)Lcom/google/common/graph/NetworkConnections;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "network",
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -100,14 +134,14 @@
         }
     .end annotation
 
-    .line 101
+    .line 102
     invoke-interface {p0}, Lcom/google/common/graph/Network;->isDirected()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 102
+    .line 103
     invoke-interface {p0, p1}, Lcom/google/common/graph/Network;->inEdges(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object v0
@@ -120,7 +154,7 @@
 
     move-result-object v0
 
-    .line 103
+    .line 104
     invoke-interface {p0, p1}, Lcom/google/common/graph/Network;->outEdges(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object v1
@@ -133,7 +167,7 @@
 
     move-result-object v1
 
-    .line 104
+    .line 105
     invoke-interface {p0, p1, p1}, Lcom/google/common/graph/Network;->edgesConnecting(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object p1
@@ -142,21 +176,21 @@
 
     move-result p1
 
-    .line 105
+    .line 106
     invoke-interface {p0}, Lcom/google/common/graph/Network;->allowsParallelEdges()Z
 
     move-result p0
 
     if-eqz p0, :cond_0
 
-    .line 106
+    .line 107
     invoke-static {v0, v1, p1}, Lcom/google/common/graph/DirectedMultiNetworkConnections;->ofImmutable(Ljava/util/Map;Ljava/util/Map;I)Lcom/google/common/graph/DirectedMultiNetworkConnections;
 
     move-result-object p0
 
     goto :goto_0
 
-    .line 107
+    .line 108
     :cond_0
     invoke-static {v0, v1, p1}, Lcom/google/common/graph/DirectedNetworkConnections;->ofImmutable(Ljava/util/Map;Ljava/util/Map;I)Lcom/google/common/graph/DirectedNetworkConnections;
 
@@ -165,7 +199,7 @@
     :goto_0
     return-object p0
 
-    .line 110
+    .line 111
     :cond_1
     invoke-interface {p0, p1}, Lcom/google/common/graph/Network;->incidentEdges(Ljava/lang/Object;)Ljava/util/Set;
 
@@ -179,21 +213,21 @@
 
     move-result-object p1
 
-    .line 111
+    .line 112
     invoke-interface {p0}, Lcom/google/common/graph/Network;->allowsParallelEdges()Z
 
     move-result p0
 
     if-eqz p0, :cond_2
 
-    .line 112
+    .line 113
     invoke-static {p1}, Lcom/google/common/graph/UndirectedMultiNetworkConnections;->ofImmutable(Ljava/util/Map;)Lcom/google/common/graph/UndirectedMultiNetworkConnections;
 
     move-result-object p0
 
     goto :goto_1
 
-    .line 113
+    .line 114
     :cond_2
     invoke-static {p1}, Lcom/google/common/graph/UndirectedNetworkConnections;->ofImmutable(Ljava/util/Map;)Lcom/google/common/graph/UndirectedNetworkConnections;
 
@@ -205,6 +239,15 @@
 
 .method public static copyOf(Lcom/google/common/graph/ImmutableNetwork;)Lcom/google/common/graph/ImmutableNetwork;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "network"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -222,7 +265,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 70
+    .line 71
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -234,6 +277,15 @@
 
 .method public static copyOf(Lcom/google/common/graph/Network;)Lcom/google/common/graph/ImmutableNetwork;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "network"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -248,17 +300,17 @@
         }
     .end annotation
 
-    .line 58
+    .line 59
     instance-of v0, p0, Lcom/google/common/graph/ImmutableNetwork;
 
     if-eqz v0, :cond_0
 
-    .line 59
+    .line 60
     check-cast p0, Lcom/google/common/graph/ImmutableNetwork;
 
     goto :goto_0
 
-    .line 60
+    .line 61
     :cond_0
     new-instance v0, Lcom/google/common/graph/ImmutableNetwork;
 
@@ -272,6 +324,15 @@
 
 .method private static getEdgeToReferenceNode(Lcom/google/common/graph/Network;)Ljava/util/Map;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "network"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -286,12 +347,12 @@
         }
     .end annotation
 
-    .line 93
+    .line 94
     invoke-static {}, Lcom/google/common/collect/ImmutableMap;->builder()Lcom/google/common/collect/ImmutableMap$Builder;
 
     move-result-object v0
 
-    .line 94
+    .line 95
     invoke-interface {p0}, Lcom/google/common/graph/Network;->edges()Ljava/util/Set;
 
     move-result-object v1
@@ -311,7 +372,7 @@
 
     move-result-object v2
 
-    .line 95
+    .line 96
     invoke-interface {p0, v2}, Lcom/google/common/graph/Network;->incidentNodes(Ljava/lang/Object;)Lcom/google/common/graph/EndpointPair;
 
     move-result-object v3
@@ -324,9 +385,9 @@
 
     goto :goto_0
 
-    .line 97
+    .line 98
     :cond_0
-    invoke-virtual {v0}, Lcom/google/common/collect/ImmutableMap$Builder;->build()Lcom/google/common/collect/ImmutableMap;
+    invoke-virtual {v0}, Lcom/google/common/collect/ImmutableMap$Builder;->buildOrThrow()Lcom/google/common/collect/ImmutableMap;
 
     move-result-object p0
 
@@ -335,6 +396,15 @@
 
 .method private static getNodeConnections(Lcom/google/common/graph/Network;)Ljava/util/Map;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "network"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -351,12 +421,12 @@
         }
     .end annotation
 
-    .line 82
+    .line 83
     invoke-static {}, Lcom/google/common/collect/ImmutableMap;->builder()Lcom/google/common/collect/ImmutableMap$Builder;
 
     move-result-object v0
 
-    .line 83
+    .line 84
     invoke-interface {p0}, Lcom/google/common/graph/Network;->nodes()Ljava/util/Set;
 
     move-result-object v1
@@ -376,7 +446,7 @@
 
     move-result-object v2
 
-    .line 84
+    .line 85
     invoke-static {p0, v2}, Lcom/google/common/graph/ImmutableNetwork;->connectionsOf(Lcom/google/common/graph/Network;Ljava/lang/Object;)Lcom/google/common/graph/NetworkConnections;
 
     move-result-object v3
@@ -385,9 +455,54 @@
 
     goto :goto_0
 
-    .line 86
+    .line 87
     :cond_0
-    invoke-virtual {v0}, Lcom/google/common/collect/ImmutableMap$Builder;->build()Lcom/google/common/collect/ImmutableMap;
+    invoke-virtual {v0}, Lcom/google/common/collect/ImmutableMap$Builder;->buildOrThrow()Lcom/google/common/collect/ImmutableMap;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$adjacentNodeFn$2(Lcom/google/common/graph/Network;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 127
+    invoke-interface {p0, p2}, Lcom/google/common/graph/Network;->incidentNodes(Ljava/lang/Object;)Lcom/google/common/graph/EndpointPair;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1}, Lcom/google/common/graph/EndpointPair;->adjacentNode(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$sourceNodeFn$0(Lcom/google/common/graph/Network;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 119
+    invoke-interface {p0, p1}, Lcom/google/common/graph/Network;->incidentNodes(Ljava/lang/Object;)Lcom/google/common/graph/EndpointPair;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lcom/google/common/graph/EndpointPair;->source()Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$targetNodeFn$1(Lcom/google/common/graph/Network;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 123
+    invoke-interface {p0, p1}, Lcom/google/common/graph/Network;->incidentNodes(Ljava/lang/Object;)Lcom/google/common/graph/EndpointPair;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lcom/google/common/graph/EndpointPair;->target()Ljava/lang/Object;
 
     move-result-object p0
 
@@ -396,6 +511,15 @@
 
 .method private static sourceNodeFn(Lcom/google/common/graph/Network;)Lcom/google/common/base/Function;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "network"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -410,16 +534,25 @@
         }
     .end annotation
 
-    .line 118
-    new-instance v0, Lcom/google/common/graph/ImmutableNetwork$1;
+    .line 119
+    new-instance v0, Lcom/google/common/graph/ImmutableNetwork$$ExternalSyntheticLambda0;
 
-    invoke-direct {v0, p0}, Lcom/google/common/graph/ImmutableNetwork$1;-><init>(Lcom/google/common/graph/Network;)V
+    invoke-direct {v0, p0}, Lcom/google/common/graph/ImmutableNetwork$$ExternalSyntheticLambda0;-><init>(Lcom/google/common/graph/Network;)V
 
     return-object v0
 .end method
 
 .method private static targetNodeFn(Lcom/google/common/graph/Network;)Lcom/google/common/base/Function;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "network"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -434,10 +567,10 @@
         }
     .end annotation
 
-    .line 127
-    new-instance v0, Lcom/google/common/graph/ImmutableNetwork$2;
+    .line 123
+    new-instance v0, Lcom/google/common/graph/ImmutableNetwork$$ExternalSyntheticLambda2;
 
-    invoke-direct {v0, p0}, Lcom/google/common/graph/ImmutableNetwork$2;-><init>(Lcom/google/common/graph/Network;)V
+    invoke-direct {v0, p0}, Lcom/google/common/graph/ImmutableNetwork$$ExternalSyntheticLambda2;-><init>(Lcom/google/common/graph/Network;)V
 
     return-object v0
 .end method
@@ -446,6 +579,14 @@
 # virtual methods
 .method public bridge synthetic adjacentNodes(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "node"
+        }
+    .end annotation
 
     .line 46
     invoke-super {p0, p1}, Lcom/google/common/graph/StandardNetwork;->adjacentNodes(Ljava/lang/Object;)Ljava/util/Set;
@@ -498,7 +639,7 @@
         }
     .end annotation
 
-    .line 75
+    .line 76
     new-instance v0, Lcom/google/common/graph/ImmutableGraph;
 
     invoke-super {p0}, Lcom/google/common/graph/StandardNetwork;->asGraph()Lcom/google/common/graph/Graph;
@@ -534,6 +675,16 @@
 
 .method public bridge synthetic edgesConnecting(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "nodeU",
+            "nodeV"
+        }
+    .end annotation
 
     .line 46
     invoke-super {p0, p1, p2}, Lcom/google/common/graph/StandardNetwork;->edgesConnecting(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;
@@ -545,6 +696,14 @@
 
 .method public bridge synthetic inEdges(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "node"
+        }
+    .end annotation
 
     .line 46
     invoke-super {p0, p1}, Lcom/google/common/graph/StandardNetwork;->inEdges(Ljava/lang/Object;)Ljava/util/Set;
@@ -556,6 +715,14 @@
 
 .method public bridge synthetic incidentEdges(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "node"
+        }
+    .end annotation
 
     .line 46
     invoke-super {p0, p1}, Lcom/google/common/graph/StandardNetwork;->incidentEdges(Ljava/lang/Object;)Ljava/util/Set;
@@ -567,6 +734,14 @@
 
 .method public bridge synthetic incidentNodes(Ljava/lang/Object;)Lcom/google/common/graph/EndpointPair;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "edge"
+        }
+    .end annotation
 
     .line 46
     invoke-super {p0, p1}, Lcom/google/common/graph/StandardNetwork;->incidentNodes(Ljava/lang/Object;)Lcom/google/common/graph/EndpointPair;
@@ -611,6 +786,14 @@
 
 .method public bridge synthetic outEdges(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "node"
+        }
+    .end annotation
 
     .line 46
     invoke-super {p0, p1}, Lcom/google/common/graph/StandardNetwork;->outEdges(Ljava/lang/Object;)Ljava/util/Set;
@@ -622,6 +805,14 @@
 
 .method public bridge synthetic predecessors(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "node"
+        }
+    .end annotation
 
     .line 46
     invoke-super {p0, p1}, Lcom/google/common/graph/StandardNetwork;->predecessors(Ljava/lang/Object;)Ljava/util/Set;
@@ -633,6 +824,14 @@
 
 .method public bridge synthetic successors(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "node"
+        }
+    .end annotation
 
     .line 46
     invoke-super {p0, p1}, Lcom/google/common/graph/StandardNetwork;->successors(Ljava/lang/Object;)Ljava/util/Set;

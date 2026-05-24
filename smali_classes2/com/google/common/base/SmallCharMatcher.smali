@@ -3,6 +3,11 @@
 .source "SmallCharMatcher.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/base/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # static fields
 .field private static final C1:I = -0x3361d2af
 
@@ -24,17 +29,31 @@
 # direct methods
 .method private constructor <init>([CJZLjava/lang/String;)V
     .locals 0
-
-    .line 36
-    invoke-direct {p0, p5}, Lcom/google/common/base/CharMatcher$NamedFastMatcher;-><init>(Ljava/lang/String;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "table",
+            "filter",
+            "containsZero",
+            "description"
+        }
+    .end annotation
 
     .line 37
-    iput-object p1, p0, Lcom/google/common/base/SmallCharMatcher;->table:[C
+    invoke-direct {p0, p5}, Lcom/google/common/base/CharMatcher$NamedFastMatcher;-><init>(Ljava/lang/String;)V
 
     .line 38
-    iput-wide p2, p0, Lcom/google/common/base/SmallCharMatcher;->filter:J
+    iput-object p1, p0, Lcom/google/common/base/SmallCharMatcher;->table:[C
 
     .line 39
+    iput-wide p2, p0, Lcom/google/common/base/SmallCharMatcher;->filter:J
+
+    .line 40
     iput-boolean p4, p0, Lcom/google/common/base/SmallCharMatcher;->containsZero:Z
 
     return-void
@@ -42,8 +61,16 @@
 
 .method private checkFilter(I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
 
-    .line 58
+    .line 59
     iget-wide v0, p0, Lcom/google/common/base/SmallCharMatcher;->filter:J
 
     shr-long p0, v0, p1
@@ -69,6 +96,14 @@
 
 .method static chooseTableSize(I)I
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "setSize"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -81,7 +116,7 @@
     :cond_0
     add-int/lit8 v1, p0, -0x1
 
-    .line 79
+    .line 80
     invoke-static {v1}, Ljava/lang/Integer;->highestOneBit(I)I
 
     move-result v1
@@ -111,20 +146,30 @@
 
 .method static from(Ljava/util/BitSet;Ljava/lang/String;)Lcom/google/common/base/CharMatcher;
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "chars",
+            "description"
+        }
+    .end annotation
 
-    .line 89
+    .line 90
     invoke-virtual {p0}, Ljava/util/BitSet;->cardinality()I
 
     move-result v0
 
     const/4 v1, 0x0
 
-    .line 90
+    .line 91
     invoke-virtual {p0, v1}, Ljava/util/BitSet;->get(I)Z
 
     move-result v6
 
-    .line 92
+    .line 93
     invoke-static {v0}, Lcom/google/common/base/SmallCharMatcher;->chooseTableSize(I)I
 
     move-result v0
@@ -133,7 +178,7 @@
 
     add-int/lit8 v0, v0, -0x1
 
-    .line 94
+    .line 95
     invoke-virtual {p0, v1}, Ljava/util/BitSet;->nextSetBit(I)I
 
     move-result v1
@@ -151,7 +196,7 @@
 
     or-long/2addr v7, v4
 
-    .line 97
+    .line 98
     invoke-static {v1}, Lcom/google/common/base/SmallCharMatcher;->smear(I)I
 
     move-result v2
@@ -159,19 +204,19 @@
     :goto_1
     and-int/2addr v2, v0
 
-    .line 100
+    .line 101
     aget-char v4, v3, v2
 
     if-nez v4, :cond_0
 
     int-to-char v4, v1
 
-    .line 101
+    .line 102
     aput-char v4, v3, v2
 
     add-int/lit8 v1, v1, 0x1
 
-    .line 94
+    .line 95
     invoke-virtual {p0, v1}, Ljava/util/BitSet;->nextSetBit(I)I
 
     move-result v1
@@ -185,7 +230,7 @@
 
     goto :goto_1
 
-    .line 108
+    .line 109
     :cond_1
     new-instance p0, Lcom/google/common/base/SmallCharMatcher;
 
@@ -200,6 +245,14 @@
 
 .method static smear(I)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "hashCode"
+        }
+    .end annotation
 
     const v0, -0x3361d2af    # -8.2930312E7f
 
@@ -207,7 +260,7 @@
 
     const/16 v0, 0xf
 
-    .line 54
+    .line 55
     invoke-static {p0, v0}, Ljava/lang/Integer;->rotateLeft(II)I
 
     move-result p0
@@ -223,15 +276,23 @@
 # virtual methods
 .method public matches(C)Z
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
 
     if-nez p1, :cond_0
 
-    .line 114
+    .line 115
     iget-boolean p0, p0, Lcom/google/common/base/SmallCharMatcher;->containsZero:Z
 
     return p0
 
-    .line 116
+    .line 117
     :cond_0
     invoke-direct {p0, p1}, Lcom/google/common/base/SmallCharMatcher;->checkFilter(I)Z
 
@@ -243,7 +304,7 @@
 
     return v1
 
-    .line 119
+    .line 120
     :cond_1
     iget-object v0, p0, Lcom/google/common/base/SmallCharMatcher;->table:[C
 
@@ -253,7 +314,7 @@
 
     sub-int/2addr v0, v2
 
-    .line 120
+    .line 121
     invoke-static {p1}, Lcom/google/common/base/SmallCharMatcher;->smear(I)I
 
     move-result v3
@@ -262,7 +323,7 @@
 
     move v4, v3
 
-    .line 123
+    .line 124
     :cond_2
     iget-object v5, p0, Lcom/google/common/base/SmallCharMatcher;->table:[C
 
@@ -289,18 +350,26 @@
 
 .method setBits(Ljava/util/BitSet;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "table"
+        }
+    .end annotation
 
-    .line 137
+    .line 138
     iget-boolean v0, p0, Lcom/google/common/base/SmallCharMatcher;->containsZero:Z
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 138
+    .line 139
     invoke-virtual {p1, v1}, Ljava/util/BitSet;->set(I)V
 
-    .line 140
+    .line 141
     :cond_0
     iget-object p0, p0, Lcom/google/common/base/SmallCharMatcher;->table:[C
 
@@ -313,7 +382,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 142
+    .line 143
     invoke-virtual {p1, v2}, Ljava/util/BitSet;->set(I)V
 
     :cond_1

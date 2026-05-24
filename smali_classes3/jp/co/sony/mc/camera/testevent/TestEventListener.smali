@@ -5,6 +5,14 @@
 
 # virtual methods
 .method public abstract onCapturedFrameStored(J)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "timeStamp"
+        }
+    .end annotation
 .end method
 
 .method public abstract onPictureTaken()V

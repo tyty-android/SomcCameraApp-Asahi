@@ -46,27 +46,41 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;Ljp/co/sony/mc/camera/recorder/RecorderInterface$OnMaxReachedListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "audioTrackListener",
+            "videoTrackListener",
+            "onMaxReachedListener"
+        }
+    .end annotation
 
-    .line 650
+    .line 629
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 651
+    .line 630
     iput-object p2, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mAudioTrackListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;
 
-    .line 652
+    .line 631
     iput-object p3, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mVideoTrackListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;
 
-    .line 653
+    .line 632
     iput-object p4, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mOnMaxReachedListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$OnMaxReachedListener;
 
     const/4 p1, 0x0
 
-    .line 654
+    .line 633
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mIsAudioTrackStarted:Z
 
-    .line 655
+    .line 634
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mIsVideoTrackStarted:Z
 
     return-void
@@ -82,8 +96,16 @@
 
 .method private onCompleted(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "kind"
+        }
+    .end annotation
 
-    .line 703
+    .line 682
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;->-$$Nest$fgetmIsMicrophoneEnabled(Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;)Z
@@ -96,14 +118,14 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 705
+    .line 684
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mAudioTrackListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;->onCompleted()V
 
     goto :goto_0
 
-    .line 706
+    .line 685
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;
 
@@ -117,7 +139,7 @@
 
     if-ne p1, v0, :cond_1
 
-    .line 708
+    .line 687
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mVideoTrackListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;->onCompleted()V
@@ -129,12 +151,20 @@
 
 .method private onFrameEnd(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "kind"
+        }
+    .end annotation
 
     const/4 v0, 0x2
 
     if-ne p1, v0, :cond_0
 
-    .line 746
+    .line 725
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mAudioTrackListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;->onFrameEnd()V
@@ -146,7 +176,7 @@
 
     if-ne p1, v0, :cond_1
 
-    .line 749
+    .line 728
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mVideoTrackListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;->onFrameEnd()V
@@ -158,6 +188,18 @@
 
 .method private onInfo(Lcom/sonymobile/android/media/MediaRecorder;II)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mediaRecorder",
+            "what",
+            "extra"
+        }
+    .end annotation
 
     const p1, 0xfffffff
 
@@ -189,25 +231,25 @@
 
     goto :goto_0
 
-    .line 688
+    .line 667
     :cond_0
     invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->onFrameEnd(I)V
 
     goto :goto_0
 
-    .line 673
+    .line 652
     :cond_1
     invoke-direct {p0, p3, p2}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->onProgress(II)V
 
     goto :goto_0
 
-    .line 668
+    .line 647
     :cond_2
     invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->onCompleted(I)V
 
     goto :goto_0
 
-    .line 683
+    .line 662
     :cond_3
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mOnMaxReachedListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$OnMaxReachedListener;
 
@@ -215,7 +257,7 @@
 
     goto :goto_0
 
-    .line 678
+    .line 657
     :cond_4
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mOnMaxReachedListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$OnMaxReachedListener;
 
@@ -227,8 +269,18 @@
 
 .method private onProgress(II)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "extra",
+            "kind"
+        }
+    .end annotation
 
-    .line 713
+    .line 692
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;->-$$Nest$fgetmIsMicrophoneEnabled(Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;)Z
@@ -243,20 +295,20 @@
 
     if-ne p2, v0, :cond_1
 
-    .line 717
+    .line 696
     iget-boolean p2, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mIsAudioTrackStarted:Z
 
     if-nez p2, :cond_0
 
-    .line 718
+    .line 697
     iget-object p2, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mAudioTrackListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;
 
     invoke-interface {p2}, Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;->onStarted()V
 
-    .line 719
+    .line 698
     iput-boolean v1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mIsAudioTrackStarted:Z
 
-    .line 721
+    .line 700
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mAudioTrackListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;
 
@@ -269,17 +321,17 @@
     :cond_1
     if-ne p2, v1, :cond_4
 
-    .line 725
+    .line 704
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mIsVideoTrackStarted:Z
 
     if-nez p1, :cond_4
 
-    .line 726
+    .line 705
     iget-object p1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mVideoTrackListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;
 
     invoke-interface {p1}, Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;->onStarted()V
 
-    .line 727
+    .line 706
     iput-boolean v1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mIsVideoTrackStarted:Z
 
     goto :goto_0
@@ -287,20 +339,20 @@
     :cond_2
     if-ne p2, v1, :cond_4
 
-    .line 734
+    .line 713
     iget-boolean p2, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mIsVideoTrackStarted:Z
 
     if-nez p2, :cond_3
 
-    .line 735
+    .line 714
     iget-object p2, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mVideoTrackListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;
 
     invoke-interface {p2}, Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;->onStarted()V
 
-    .line 736
+    .line 715
     iput-boolean v1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mIsVideoTrackStarted:Z
 
-    .line 738
+    .line 717
     :cond_3
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mVideoTrackListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;
 
@@ -317,10 +369,22 @@
 # virtual methods
 .method public onInfo(Landroid/media/MediaRecorder;II)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mediaRecorder",
+            "what",
+            "extra"
+        }
+    .end annotation
 
     const/4 p1, 0x0
 
-    .line 699
+    .line 678
     move-object v0, p1
 
     check-cast v0, Lcom/sonymobile/android/media/MediaRecorder;

@@ -25,6 +25,16 @@
 
 .method public static isActivityAvailable(Landroid/content/Context;Landroid/content/Intent;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "intent"
+        }
+    .end annotation
 
     .line 108
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/util/CommonUtility;->isActivityAvailable(Landroid/content/Context;Landroid/content/Intent;)Z
@@ -36,6 +46,14 @@
 
 .method public static isPanoramaAvailable(Landroid/content/Context;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 101
     new-instance v0, Landroid/content/Intent;
@@ -59,6 +77,14 @@
 
 .method public static launchAudioSettings(Landroid/app/Activity;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "activity"
+        }
+    .end annotation
 
     const-string v0, "launchAudioSettings: "
 
@@ -156,6 +182,14 @@
 
 .method public static launchLocationSourceSettings(Landroid/app/Activity;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "activity"
+        }
+    .end annotation
 
     const-string v0, "launchLocationSourceSettings: "
 
@@ -238,6 +272,14 @@
 
 .method public static launchWifiSetting(Ljp/co/sony/mc/camera/CameraActivity;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "activity"
+        }
+    .end annotation
 
     .line 112
     new-instance v0, Landroid/content/Intent;

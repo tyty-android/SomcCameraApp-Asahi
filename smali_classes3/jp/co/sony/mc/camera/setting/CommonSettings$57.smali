@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 771
+    .line 684
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,6 +31,21 @@
 # virtual methods
 .method public setValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljava/util/Map;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key",
+            "value",
+            "listenersMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -46,13 +61,13 @@
         }
     .end annotation
 
-    .line 775
+    .line 688
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 776
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/MemoryRecallData;
+    .line 689
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/PrivacyPolicy;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$msetMemoryRecallData(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljp/co/sony/mc/camera/configuration/parameters/MemoryRecallData;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$msetPrivacyPolicy(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljp/co/sony/mc/camera/configuration/parameters/PrivacyPolicy;)Z
 
     move-result p0
 

@@ -3,18 +3,163 @@
 .source "Comparators.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # direct methods
 .method private constructor <init>()V
     .locals 0
 
-    .line 45
+    .line 49
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
+.method public static emptiesFirst(Ljava/util/Comparator;)Ljava/util/Comparator;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "valueComparator"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/Comparator<",
+            "-TT;>;)",
+            "Ljava/util/Comparator<",
+            "Ljava/util/Optional<",
+            "TT;>;>;"
+        }
+    .end annotation
+
+    .line 185
+    invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 186
+    new-instance v0, Lcom/google/common/collect/Comparators$$ExternalSyntheticLambda4;
+
+    invoke-direct {v0}, Lcom/google/common/collect/Comparators$$ExternalSyntheticLambda4;-><init>()V
+
+    .line 187
+    invoke-static {p0}, Ljava/util/Comparator;->nullsFirst(Ljava/util/Comparator;)Ljava/util/Comparator;
+
+    move-result-object p0
+
+    .line 186
+    invoke-static {v0, p0}, Ljava/util/Comparator;->comparing(Ljava/util/function/Function;Ljava/util/Comparator;)Ljava/util/Comparator;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static emptiesLast(Ljava/util/Comparator;)Ljava/util/Comparator;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "valueComparator"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/Comparator<",
+            "-TT;>;)",
+            "Ljava/util/Comparator<",
+            "Ljava/util/Optional<",
+            "TT;>;>;"
+        }
+    .end annotation
+
+    .line 200
+    invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 201
+    new-instance v0, Lcom/google/common/collect/Comparators$$ExternalSyntheticLambda5;
+
+    invoke-direct {v0}, Lcom/google/common/collect/Comparators$$ExternalSyntheticLambda5;-><init>()V
+
+    .line 202
+    invoke-static {p0}, Ljava/util/Comparator;->nullsLast(Ljava/util/Comparator;)Ljava/util/Comparator;
+
+    move-result-object p0
+
+    .line 201
+    invoke-static {v0, p0}, Ljava/util/Comparator;->comparing(Ljava/util/function/Function;Ljava/util/Comparator;)Ljava/util/Comparator;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static greatest(ILjava/util/Comparator;)Ljava/util/stream/Collector;
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "k",
+            "comparator"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(I",
+            "Ljava/util/Comparator<",
+            "-TT;>;)",
+            "Ljava/util/stream/Collector<",
+            "TT;*",
+            "Ljava/util/List<",
+            "TT;>;>;"
+        }
+    .end annotation
+
+    .line 172
+    invoke-interface {p1}, Ljava/util/Comparator;->reversed()Ljava/util/Comparator;
+
+    move-result-object p1
+
+    invoke-static {p0, p1}, Lcom/google/common/collect/Comparators;->least(ILjava/util/Comparator;)Ljava/util/stream/Collector;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public static isInOrder(Ljava/lang/Iterable;Ljava/util/Comparator;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "iterable",
+            "comparator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -27,27 +172,27 @@
         }
     .end annotation
 
-    .line 71
+    .line 77
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 72
+    .line 78
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
 
-    .line 73
+    .line 79
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 74
+    .line 80
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 75
+    .line 81
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -55,12 +200,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 76
+    .line 82
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 77
+    .line 83
     invoke-interface {p1, v0, v1}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result v0
@@ -84,6 +229,17 @@
 
 .method public static isInStrictOrder(Ljava/lang/Iterable;Ljava/util/Comparator;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "iterable",
+            "comparator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -96,27 +252,27 @@
         }
     .end annotation
 
-    .line 93
+    .line 99
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 94
+    .line 100
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
 
-    .line 95
+    .line 101
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 96
+    .line 102
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 97
+    .line 103
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -124,12 +280,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 98
+    .line 104
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 99
+    .line 105
     invoke-interface {p1, v0, v1}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result v0
@@ -151,8 +307,119 @@
     return p0
 .end method
 
+.method static synthetic lambda$emptiesFirst$1(Ljava/util/Optional;)Ljava/lang/Object;
+    .locals 0
+
+    .line 187
+    invoke-static {p0}, Lcom/google/common/collect/Comparators;->orElseNull(Ljava/util/Optional;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$emptiesLast$2(Ljava/util/Optional;)Ljava/lang/Object;
+    .locals 0
+
+    .line 202
+    invoke-static {p0}, Lcom/google/common/collect/Comparators;->orElseNull(Ljava/util/Optional;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$least$0(ILjava/util/Comparator;)Lcom/google/common/collect/TopKSelector;
+    .locals 0
+
+    .line 141
+    invoke-static {p0, p1}, Lcom/google/common/collect/TopKSelector;->least(ILjava/util/Comparator;)Lcom/google/common/collect/TopKSelector;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static least(ILjava/util/Comparator;)Ljava/util/stream/Collector;
+    .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "k",
+            "comparator"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(I",
+            "Ljava/util/Comparator<",
+            "-TT;>;)",
+            "Ljava/util/stream/Collector<",
+            "TT;*",
+            "Ljava/util/List<",
+            "TT;>;>;"
+        }
+    .end annotation
+
+    .line 138
+    const-string v0, "k"
+
+    invoke-static {p0, v0}, Lcom/google/common/collect/CollectPreconditions;->checkNonnegative(ILjava/lang/String;)I
+
+    .line 139
+    invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 140
+    new-instance v0, Lcom/google/common/collect/Comparators$$ExternalSyntheticLambda0;
+
+    invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Comparators$$ExternalSyntheticLambda0;-><init>(ILjava/util/Comparator;)V
+
+    new-instance p0, Lcom/google/common/collect/Comparators$$ExternalSyntheticLambda1;
+
+    invoke-direct {p0}, Lcom/google/common/collect/Comparators$$ExternalSyntheticLambda1;-><init>()V
+
+    new-instance p1, Lcom/google/common/collect/Comparators$$ExternalSyntheticLambda2;
+
+    invoke-direct {p1}, Lcom/google/common/collect/Comparators$$ExternalSyntheticLambda2;-><init>()V
+
+    new-instance v1, Lcom/google/common/collect/Comparators$$ExternalSyntheticLambda3;
+
+    invoke-direct {v1}, Lcom/google/common/collect/Comparators$$ExternalSyntheticLambda3;-><init>()V
+
+    const/4 v2, 0x1
+
+    new-array v2, v2, [Ljava/util/stream/Collector$Characteristics;
+
+    const/4 v3, 0x0
+
+    sget-object v4, Ljava/util/stream/Collector$Characteristics;->UNORDERED:Ljava/util/stream/Collector$Characteristics;
+
+    aput-object v4, v2, v3
+
+    invoke-static {v0, p0, p1, v1, v2}, Ljava/util/stream/Collector;->of(Ljava/util/function/Supplier;Ljava/util/function/BiConsumer;Ljava/util/function/BinaryOperator;Ljava/util/function/Function;[Ljava/util/stream/Collector$Characteristics;)Ljava/util/stream/Collector;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public static lexicographical(Ljava/util/Comparator;)Ljava/util/Comparator;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "comparator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -166,7 +433,7 @@
         }
     .end annotation
 
-    .line 62
+    .line 67
     new-instance v0, Lcom/google/common/collect/LexicographicalOrdering;
 
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -182,6 +449,17 @@
 
 .method public static max(Ljava/lang/Comparable;Ljava/lang/Comparable;)Ljava/lang/Comparable;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T::",
@@ -190,7 +468,7 @@
         }
     .end annotation
 
-    .line 161
+    .line 269
     invoke-interface {p0, p1}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
 
     move-result v0
@@ -209,24 +487,40 @@
 .method public static max(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Comparator;)Ljava/lang/Object;
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b",
+            "comparator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
             "Ljava/lang/Object;",
             ">(TT;TT;",
             "Ljava/util/Comparator<",
-            "TT;>;)TT;"
+            "-TT;>;)TT;"
         }
     .end annotation
 
-    .line 181
+    .line 290
     invoke-interface {p2, p0, p1}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result p2
@@ -244,6 +538,17 @@
 
 .method public static min(Ljava/lang/Comparable;Ljava/lang/Comparable;)Ljava/lang/Comparable;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T::",
@@ -252,7 +557,7 @@
         }
     .end annotation
 
-    .line 123
+    .line 231
     invoke-interface {p0, p1}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
 
     move-result v0
@@ -271,24 +576,40 @@
 .method public static min(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Comparator;)Ljava/lang/Object;
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b",
+            "comparator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
             "Ljava/lang/Object;",
             ">(TT;TT;",
             "Ljava/util/Comparator<",
-            "TT;>;)TT;"
+            "-TT;>;)TT;"
         }
     .end annotation
 
-    .line 143
+    .line 252
     invoke-interface {p2, p0, p1}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result p2
@@ -301,5 +622,39 @@
     move-object p0, p1
 
     :goto_0
+    return-object p0
+.end method
+
+.method private static orElseNull(Ljava/util/Optional;)Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "optional"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/Optional<",
+            "TT;>;)TT;"
+        }
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    const/4 v0, 0x0
+
+    .line 214
+    invoke-virtual {p0, v0}, Ljava/util/Optional;->orElse(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
     return-object p0
 .end method

@@ -27,6 +27,14 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/AutoPowerOffTimer;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 171
     iput-object p1, p0, Ljp/co/sony/mc/camera/AutoPowerOffTimer$AutoPowerOffHandler;->this$0:Ljp/co/sony/mc/camera/AutoPowerOffTimer;
@@ -48,6 +56,14 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "msg"
+        }
+    .end annotation
 
     .line 190
     iget p1, p1, Landroid/os/Message;->what:I

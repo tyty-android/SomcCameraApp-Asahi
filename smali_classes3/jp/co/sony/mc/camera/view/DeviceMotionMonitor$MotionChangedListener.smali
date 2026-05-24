@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract onMotionChanged(Z)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isMove"
+        }
+    .end annotation
 .end method

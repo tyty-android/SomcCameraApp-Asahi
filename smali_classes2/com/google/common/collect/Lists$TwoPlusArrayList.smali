@@ -36,13 +36,13 @@
 
 # instance fields
 .field final first:Ljava/lang/Object;
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TE;"
         }
-    .end annotation
-
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
     .end annotation
 .end field
 
@@ -55,13 +55,13 @@
 .end field
 
 .field final second:Ljava/lang/Object;
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TE;"
         }
-    .end annotation
-
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
     .end annotation
 .end field
 
@@ -70,29 +70,42 @@
 .method constructor <init>(Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)V
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "first",
+            "second",
+            "rest"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;TE;[TE;)V"
         }
     .end annotation
 
-    .line 344
+    .line 371
     invoke-direct {p0}, Ljava/util/AbstractList;-><init>()V
 
-    .line 345
+    .line 372
     iput-object p1, p0, Lcom/google/common/collect/Lists$TwoPlusArrayList;->first:Ljava/lang/Object;
 
-    .line 346
+    .line 373
     iput-object p2, p0, Lcom/google/common/collect/Lists$TwoPlusArrayList;->second:Ljava/lang/Object;
 
-    .line 347
+    .line 374
     invoke-static {p3}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -108,6 +121,18 @@
 # virtual methods
 .method public get(I)Ljava/lang/Object;
     .locals 1
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TE;"
@@ -120,14 +145,14 @@
 
     if-eq p1, v0, :cond_0
 
-    .line 364
+    .line 392
     invoke-virtual {p0}, Lcom/google/common/collect/Lists$TwoPlusArrayList;->size()I
 
     move-result v0
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkElementIndex(II)I
 
-    .line 365
+    .line 393
     iget-object p0, p0, Lcom/google/common/collect/Lists$TwoPlusArrayList;->rest:[Ljava/lang/Object;
 
     add-int/lit8 p1, p1, -0x2
@@ -136,13 +161,13 @@
 
     return-object p0
 
-    .line 361
+    .line 389
     :cond_0
     iget-object p0, p0, Lcom/google/common/collect/Lists$TwoPlusArrayList;->second:Ljava/lang/Object;
 
     return-object p0
 
-    .line 359
+    .line 387
     :cond_1
     iget-object p0, p0, Lcom/google/common/collect/Lists$TwoPlusArrayList;->first:Ljava/lang/Object;
 
@@ -152,7 +177,7 @@
 .method public size()I
     .locals 1
 
-    .line 352
+    .line 379
     iget-object p0, p0, Lcom/google/common/collect/Lists$TwoPlusArrayList;->rest:[Ljava/lang/Object;
 
     array-length p0, p0

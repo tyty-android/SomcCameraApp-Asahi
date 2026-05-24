@@ -37,7 +37,7 @@
 .method private static synthetic $values()[Lcom/google/common/primitives/Booleans$LexicographicalComparator;
     .locals 1
 
-    .line 308
+    .line 319
     sget-object v0, Lcom/google/common/primitives/Booleans$LexicographicalComparator;->INSTANCE:Lcom/google/common/primitives/Booleans$LexicographicalComparator;
 
     filled-new-array {v0}, [Lcom/google/common/primitives/Booleans$LexicographicalComparator;
@@ -50,7 +50,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 309
+    .line 320
     new-instance v0, Lcom/google/common/primitives/Booleans$LexicographicalComparator;
 
     const-string v1, "INSTANCE"
@@ -61,7 +61,7 @@
 
     sput-object v0, Lcom/google/common/primitives/Booleans$LexicographicalComparator;->INSTANCE:Lcom/google/common/primitives/Booleans$LexicographicalComparator;
 
-    .line 308
+    .line 319
     invoke-static {}, Lcom/google/common/primitives/Booleans$LexicographicalComparator;->$values()[Lcom/google/common/primitives/Booleans$LexicographicalComparator;
 
     move-result-object v0
@@ -73,13 +73,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 308
+    .line 319
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -87,8 +98,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/primitives/Booleans$LexicographicalComparator;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 308
+    .line 319
     const-class v0, Lcom/google/common/primitives/Booleans$LexicographicalComparator;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -103,7 +122,7 @@
 .method public static values()[Lcom/google/common/primitives/Booleans$LexicographicalComparator;
     .locals 1
 
-    .line 308
+    .line 319
     sget-object v0, Lcom/google/common/primitives/Booleans$LexicographicalComparator;->$VALUES:[Lcom/google/common/primitives/Booleans$LexicographicalComparator;
 
     invoke-virtual {v0}, [Lcom/google/common/primitives/Booleans$LexicographicalComparator;->clone()Ljava/lang/Object;
@@ -119,8 +138,18 @@
 # virtual methods
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "left",
+            "right"
+        }
+    .end annotation
 
-    .line 308
+    .line 319
     check-cast p1, [Z
 
     check-cast p2, [Z
@@ -134,8 +163,18 @@
 
 .method public compare([Z[Z)I
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "left",
+            "right"
+        }
+    .end annotation
 
-    .line 313
+    .line 324
     array-length p0, p1
 
     array-length v0, p2
@@ -149,12 +188,12 @@
     :goto_0
     if-ge v0, p0, :cond_1
 
-    .line 315
+    .line 326
     aget-boolean v1, p1, v0
 
     aget-boolean v2, p2, v0
 
-    invoke-static {v1, v2}, Lcom/google/common/primitives/Booleans;->compare(ZZ)I
+    invoke-static {v1, v2}, Ljava/lang/Boolean;->compare(ZZ)I
 
     move-result v1
 
@@ -167,7 +206,7 @@
 
     goto :goto_0
 
-    .line 320
+    .line 331
     :cond_1
     array-length p0, p1
 
@@ -181,7 +220,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 325
+    .line 336
     const-string p0, "Booleans.lexicographicalComparator()"
 
     return-object p0

@@ -6,7 +6,9 @@
 # static fields
 .field public static final DISPLAY_DELAY_TIME_MILLIS:I = 0xbb8
 
-.field private static final SHOW_DURATION_MILLIS:I = 0xbb8
+.field private static final NORMAL_SHOW_DURATION_MILLIS:I = 0xbb8
+
+.field private static final TALKBACK_SHOW_DURATION_MILLIS:I = 0x1770
 
 
 # instance fields
@@ -17,12 +19,12 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 15
+    .line 16
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;-><init>()V
 
     const/4 v0, 0x2
 
-    .line 21
+    .line 24
     iput v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQuickRecord;->MAX_DISPLAY_COUNT:I
 
     return-void
@@ -32,8 +34,16 @@
 # virtual methods
 .method public canShow(Ljp/co/sony/mc/camera/setting/MessageSettings;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "messageSettings"
+        }
+    .end annotation
 
-    .line 41
+    .line 46
     sget-object p0, Ljp/co/sony/mc/camera/setting/MessageType;->QUICK_RECORD_OPERATION_NOTES:Ljp/co/sony/mc/camera/setting/MessageType;
 
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/setting/MessageSettings;->getDisplayCount(Ljp/co/sony/mc/camera/setting/MessageType;)I
@@ -58,7 +68,7 @@
 .method public getMessageString()Ljava/lang/String;
     .locals 1
 
-    .line 35
+    .line 40
     invoke-static {}, Ljp/co/sony/mc/camera/CameraApplication;->getContext()Landroid/content/Context;
 
     move-result-object p0
@@ -67,9 +77,9 @@
 
     move-result-object p0
 
-    const v0, 0x7f11044b
+    const v0, 0x7f110496
 
-    .line 36
+    .line 41
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object p0
@@ -80,30 +90,53 @@
 .method public getTimedOutDuration()J
     .locals 2
 
+    .line 33
+    sget-object p0, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->INSTANCE:Ljp/co/sony/mc/camera/util/AccessibilityUtil;
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->isTalkBackEnabled()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    const-wide/16 v0, 0x1770
+
+    goto :goto_0
+
+    :cond_0
     const-wide/16 v0, 0xbb8
 
+    :goto_0
     return-wide v0
 .end method
 
 .method public increaseDisplayCount(Ljp/co/sony/mc/camera/setting/MessageSettings;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "messageSettings"
+        }
+    .end annotation
 
-    .line 48
+    .line 53
     sget-object p0, Ljp/co/sony/mc/camera/setting/MessageType;->QUICK_RECORD_OPERATION_NOTES:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    .line 49
+    .line 54
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/setting/MessageSettings;->getDisplayCount(Ljp/co/sony/mc/camera/setting/MessageType;)I
 
     move-result p0
 
-    .line 50
+    .line 55
     sget-object v0, Ljp/co/sony/mc/camera/setting/MessageType;->QUICK_RECORD_OPERATION_NOTES:Ljp/co/sony/mc/camera/setting/MessageType;
 
     add-int/lit8 p0, p0, 0x1
 
     invoke-interface {p1, v0, p0}, Ljp/co/sony/mc/camera/setting/MessageSettings;->setDisplayCount(Ljp/co/sony/mc/camera/setting/MessageType;I)V
 
-    .line 52
+    .line 57
     invoke-interface {p1}, Ljp/co/sony/mc/camera/setting/MessageSettings;->save()V
 
     return-void

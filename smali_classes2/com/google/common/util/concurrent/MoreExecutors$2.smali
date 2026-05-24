@@ -26,8 +26,24 @@
 # direct methods
 .method constructor <init>(Ljava/util/concurrent/Executor;Lcom/google/common/base/Supplier;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x1010
+        }
+        names = {
+            "val$executor",
+            "val$nameSupplier"
+        }
+    .end annotation
 
-    .line 868
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .line 896
     iput-object p1, p0, Lcom/google/common/util/concurrent/MoreExecutors$2;->val$executor:Ljava/util/concurrent/Executor;
 
     iput-object p2, p0, Lcom/google/common/util/concurrent/MoreExecutors$2;->val$nameSupplier:Lcom/google/common/base/Supplier;
@@ -41,8 +57,16 @@
 # virtual methods
 .method public execute(Ljava/lang/Runnable;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "command"
+        }
+    .end annotation
 
-    .line 871
+    .line 899
     iget-object v0, p0, Lcom/google/common/util/concurrent/MoreExecutors$2;->val$executor:Ljava/util/concurrent/Executor;
 
     iget-object p0, p0, Lcom/google/common/util/concurrent/MoreExecutors$2;->val$nameSupplier:Lcom/google/common/base/Supplier;

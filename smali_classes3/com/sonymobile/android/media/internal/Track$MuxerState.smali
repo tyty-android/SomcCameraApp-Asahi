@@ -36,7 +36,7 @@
 .method private static synthetic $values()[Lcom/sonymobile/android/media/internal/Track$MuxerState;
     .locals 3
 
-    .line 98
+    .line 96
     sget-object v0, Lcom/sonymobile/android/media/internal/Track$MuxerState;->IDLE:Lcom/sonymobile/android/media/internal/Track$MuxerState;
 
     sget-object v1, Lcom/sonymobile/android/media/internal/Track$MuxerState;->STARTED:Lcom/sonymobile/android/media/internal/Track$MuxerState;
@@ -53,7 +53,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 99
+    .line 97
     new-instance v0, Lcom/sonymobile/android/media/internal/Track$MuxerState;
 
     const-string v1, "IDLE"
@@ -64,7 +64,7 @@
 
     sput-object v0, Lcom/sonymobile/android/media/internal/Track$MuxerState;->IDLE:Lcom/sonymobile/android/media/internal/Track$MuxerState;
 
-    .line 100
+    .line 98
     new-instance v0, Lcom/sonymobile/android/media/internal/Track$MuxerState;
 
     const-string v1, "STARTED"
@@ -75,7 +75,7 @@
 
     sput-object v0, Lcom/sonymobile/android/media/internal/Track$MuxerState;->STARTED:Lcom/sonymobile/android/media/internal/Track$MuxerState;
 
-    .line 101
+    .line 99
     new-instance v0, Lcom/sonymobile/android/media/internal/Track$MuxerState;
 
     const-string v1, "STOPPED"
@@ -86,7 +86,7 @@
 
     sput-object v0, Lcom/sonymobile/android/media/internal/Track$MuxerState;->STOPPED:Lcom/sonymobile/android/media/internal/Track$MuxerState;
 
-    .line 98
+    .line 96
     invoke-static {}, Lcom/sonymobile/android/media/internal/Track$MuxerState;->$values()[Lcom/sonymobile/android/media/internal/Track$MuxerState;
 
     move-result-object v0
@@ -98,13 +98,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 98
+    .line 96
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -112,8 +123,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/sonymobile/android/media/internal/Track$MuxerState;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 98
+    .line 96
     const-class v0, Lcom/sonymobile/android/media/internal/Track$MuxerState;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -128,7 +147,7 @@
 .method public static values()[Lcom/sonymobile/android/media/internal/Track$MuxerState;
     .locals 1
 
-    .line 98
+    .line 96
     sget-object v0, Lcom/sonymobile/android/media/internal/Track$MuxerState;->$VALUES:[Lcom/sonymobile/android/media/internal/Track$MuxerState;
 
     invoke-virtual {v0}, [Lcom/sonymobile/android/media/internal/Track$MuxerState;->clone()Ljava/lang/Object;

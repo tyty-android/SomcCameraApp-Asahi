@@ -30,6 +30,18 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;IZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "name",
+            "priority",
+            "forPool"
+        }
+    .end annotation
 
     .line 149
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -55,6 +67,14 @@
 # virtual methods
 .method public newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "runnable"
+        }
+    .end annotation
 
     .line 159
     new-instance v0, Ljava/lang/Thread;

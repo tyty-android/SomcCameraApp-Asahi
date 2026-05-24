@@ -34,20 +34,28 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/device/CameraDeviceHandler;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 634
+    .line 693
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineSet;->this$0:Ljp/co/sony/mc/camera/device/CameraDeviceHandler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 632
+    .line 691
     new-instance p1, Ljava/lang/Object;
 
     invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineSet;->mDeviceStateMachineMapLock:Ljava/lang/Object;
 
-    .line 635
+    .line 694
     new-instance p1, Ljava/util/HashMap;
 
     invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
@@ -69,13 +77,23 @@
 # virtual methods
 .method varargs broadcastEvent(Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;[Ljava/lang/Object;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "event",
+            "params"
+        }
+    .end annotation
 
-    .line 725
+    .line 784
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineSet;->mDeviceStateMachineMapLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 726
+    .line 785
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineSet;->mDeviceStateMachineMap:Ljava/util/HashMap;
 
@@ -100,7 +118,7 @@
 
     check-cast v2, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
 
-    .line 727
+    .line 786
     iget-object v3, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineSet;->mDeviceStateMachineMap:Ljava/util/HashMap;
 
     invoke-virtual {v3, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -113,7 +131,7 @@
 
     goto :goto_0
 
-    .line 729
+    .line 788
     :cond_0
     monitor-exit v0
 
@@ -134,12 +152,12 @@
 
     const-string v0, "Not exists target session ID:"
 
-    .line 661
+    .line 720
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineSet;->mDeviceStateMachineMapLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 662
+    .line 721
     :try_start_0
     iget-object v2, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineSet;->this$0:Ljp/co/sony/mc/camera/device/CameraDeviceHandler;
 
@@ -157,14 +175,14 @@
 
     move-result-object v3
 
-    .line 663
+    .line 722
     invoke-virtual {v2, v3}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 664
+    .line 723
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineSet;->mDeviceStateMachineMap:Ljava/util/HashMap;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineSet;->this$0:Ljp/co/sony/mc/camera/device/CameraDeviceHandler;
@@ -186,7 +204,7 @@
     :cond_0
     const/4 v2, 0x1
 
-    .line 666
+    .line 725
     new-array v2, v2, [Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -213,7 +231,7 @@
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
-    .line 667
+    .line 726
     monitor-exit v1
 
     const/4 p0, 0x0
@@ -223,7 +241,7 @@
     :catchall_0
     move-exception p0
 
-    .line 669
+    .line 728
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -233,28 +251,36 @@
 
 .method get(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;)Ljp/co/sony/mc/camera/device/DeviceStateMachine;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sessionId"
+        }
+    .end annotation
 
     const-string v0, "Not exists target session ID:"
 
-    .line 679
+    .line 738
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineSet;->mDeviceStateMachineMapLock:Ljava/lang/Object;
 
     monitor-enter v1
 
     if-eqz p1, :cond_0
 
-    .line 680
+    .line 739
     :try_start_0
     iget-object v2, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineSet;->mDeviceStateMachineMap:Ljava/util/HashMap;
 
-    .line 681
+    .line 740
     invoke-virtual {v2, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 682
+    .line 741
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineSet;->mDeviceStateMachineMap:Ljava/util/HashMap;
 
     invoke-virtual {p0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -270,7 +296,7 @@
     :cond_0
     const/4 p0, 0x1
 
-    .line 684
+    .line 743
     new-array p0, p0, [Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -291,7 +317,7 @@
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
-    .line 685
+    .line 744
     monitor-exit v1
 
     const/4 p0, 0x0
@@ -301,7 +327,7 @@
     :catchall_0
     move-exception p0
 
-    .line 687
+    .line 746
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -312,12 +338,12 @@
 .method getActiveDeviceStateMachineCount()I
     .locals 1
 
-    .line 713
+    .line 772
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineSet;->mDeviceStateMachineMapLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 714
+    .line 773
     :try_start_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineSet;->mDeviceStateMachineMap:Ljava/util/HashMap;
 
@@ -332,7 +358,7 @@
     :catchall_0
     move-exception p0
 
-    .line 715
+    .line 774
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -342,17 +368,27 @@
 
 .method put(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Ljp/co/sony/mc/camera/device/DeviceStateMachine;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sessionId",
+            "deviceStateMachine"
+        }
+    .end annotation
 
     const-string v0, "Duplicate camera session ID. new session ID:"
 
-    .line 645
+    .line 704
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineSet;->mDeviceStateMachineMapLock:Ljava/lang/Object;
 
     monitor-enter v1
 
     if-eqz p1, :cond_0
 
-    .line 646
+    .line 705
     :try_start_0
     iget-object v2, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineSet;->mDeviceStateMachineMap:Ljava/util/HashMap;
 
@@ -362,17 +398,17 @@
 
     if-nez v2, :cond_0
 
-    .line 647
+    .line 706
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineSet;->mDeviceStateMachineMap:Ljava/util/HashMap;
 
     invoke-virtual {p0, p1, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 652
+    .line 711
     monitor-exit v1
 
     return-void
 
-    .line 649
+    .line 708
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -395,7 +431,7 @@
     :catchall_0
     move-exception p0
 
-    .line 652
+    .line 711
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -405,15 +441,23 @@
 
 .method remove(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;)Ljp/co/sony/mc/camera/device/DeviceStateMachine;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sessionId"
+        }
+    .end annotation
 
     const-string v0, "Not exists target session ID:"
 
-    .line 697
+    .line 756
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineSet;->mDeviceStateMachineMapLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 698
+    .line 757
     :try_start_0
     iget-object v2, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineSet;->mDeviceStateMachineMap:Ljava/util/HashMap;
 
@@ -423,7 +467,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 699
+    .line 758
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineSet;->mDeviceStateMachineMap:Ljava/util/HashMap;
 
     invoke-virtual {p0, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
@@ -439,7 +483,7 @@
     :cond_0
     const/4 p0, 0x1
 
-    .line 701
+    .line 760
     new-array p0, p0, [Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -460,7 +504,7 @@
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
-    .line 702
+    .line 761
     monitor-exit v1
 
     const/4 p0, 0x0
@@ -470,7 +514,7 @@
     :catchall_0
     move-exception p0
 
-    .line 704
+    .line 763
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

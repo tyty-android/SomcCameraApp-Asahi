@@ -14,7 +14,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nZoomViewHelper.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ZoomViewHelper.kt\njp/co/sony/mc/camera/view/widget/ZoomViewHelper$Companion\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,187:1\n1567#2:188\n1598#2,4:189\n*S KotlinDebug\n*F\n+ 1 ZoomViewHelper.kt\njp/co/sony/mc/camera/view/widget/ZoomViewHelper$Companion\n*L\n137#1:188\n137#1:189,4\n*E\n"
+    value = "SMAP\nZoomViewHelper.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ZoomViewHelper.kt\njp/co/sony/mc/camera/view/widget/ZoomViewHelper$Companion\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,179:1\n1567#2:180\n1598#2,4:181\n*S KotlinDebug\n*F\n+ 1 ZoomViewHelper.kt\njp/co/sony/mc/camera/view/widget/ZoomViewHelper$Companion\n*L\n129#1:180\n129#1:181,4\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -95,10 +95,10 @@
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 121
+    .line 113
     new-instance p0, Landroid/graphics/RectF;
 
-    .line 122
+    .line 114
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/ZoomLabel;->getStep()I
 
     move-result v0
@@ -111,7 +111,7 @@
 
     div-float/2addr v0, p3
 
-    .line 124
+    .line 116
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/ZoomLabel;->getStep()I
 
     move-result p1
@@ -126,7 +126,7 @@
 
     const/4 p3, 0x0
 
-    .line 121
+    .line 113
     invoke-direct {p0, v0, p3, p1, p2}, Landroid/graphics/RectF;-><init>(FFFF)V
 
     return-object p0
@@ -143,26 +143,26 @@
 
     invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 152
+    .line 144
     const-string p0, " "
 
-    const v0, 0x7f1100ba
+    const v0, 0x7f1100ce
 
     if-eqz p3, :cond_0
 
-    .line 153
+    .line 145
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object p3
 
-    const v0, 0x7f1102ec
+    const v0, 0x7f110335
 
-    .line 157
+    .line 149
     filled-new-array {p2}, [Ljava/lang/Object;
 
     move-result-object p2
 
-    .line 155
+    .line 147
     invoke-virtual {p1, v0, p2}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
@@ -189,13 +189,13 @@
 
     goto :goto_0
 
-    .line 160
+    .line 152
     :cond_0
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object p3
 
-    .line 164
+    .line 156
     sget-object v0, Lkotlin/jvm/internal/StringCompanionObject;->INSTANCE:Lkotlin/jvm/internal/StringCompanionObject;
 
     invoke-static {p2}, Ljava/lang/Float;->parseFloat(Ljava/lang/String;)F
@@ -230,9 +230,9 @@
 
     move-result-object p2
 
-    const v0, 0x7f110107
+    const v0, 0x7f110120
 
-    .line 162
+    .line 154
     invoke-virtual {p1, v0, p2}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
@@ -268,7 +268,7 @@
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 105
+    .line 97
     instance-of p0, p1, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;
 
     if-eqz p0, :cond_0
@@ -283,7 +283,7 @@
 
     goto :goto_0
 
-    .line 106
+    .line 98
     :cond_0
     instance-of v0, p1, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;
 
@@ -300,7 +300,7 @@
     :goto_0
     if-eqz p0, :cond_1
 
-    .line 109
+    .line 101
     check-cast p1, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;->getStep()I
@@ -309,7 +309,7 @@
 
     goto :goto_1
 
-    .line 110
+    .line 102
     :cond_1
     instance-of p0, p1, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;
 
@@ -321,7 +321,7 @@
 
     move-result p0
 
-    .line 112
+    .line 104
     :goto_1
     new-instance p1, Landroid/graphics/RectF;
 
@@ -347,7 +347,7 @@
 
     return-object p1
 
-    .line 108
+    .line 100
     :cond_2
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
@@ -355,7 +355,7 @@
 
     throw p0
 
-    .line 104
+    .line 96
     :cond_3
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
@@ -379,7 +379,7 @@
 
     invoke-static {p3, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 78
+    .line 70
     new-instance p0, Landroid/widget/FrameLayout$LayoutParams;
 
     const/4 v0, -0x2
@@ -388,22 +388,22 @@
 
     invoke-direct {p0, v0, v0, v1}, Landroid/widget/FrameLayout$LayoutParams;-><init>(III)V
 
-    .line 85
+    .line 77
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v0
 
-    .line 86
+    .line 78
     check-cast p3, Landroid/view/ViewGroup;
 
     const/4 v1, 0x1
 
-    .line 84
+    .line 76
     invoke-static {v0, p3, v1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;->inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;
 
     move-result-object p3
 
-    .line 89
+    .line 81
     iget-object v0, p3, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;->label:Landroid/widget/TextView;
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/uistate/ZoomLabel;->getText()Ljava/lang/String;
@@ -414,7 +414,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 90
+    .line 82
     iget-object v0, p3, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;->circle:Landroid/view/View;
 
     invoke-static {}, Landroid/view/View;->generateViewId()I
@@ -423,7 +423,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setId(I)V
 
-    .line 91
+    .line 83
     iget-object v0, p3, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;->circle:Landroid/view/View;
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/uistate/ZoomLabel;->getContentDescription()Ljava/lang/String;
@@ -434,7 +434,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 92
+    .line 84
     iget-object v0, p3, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;->circle:Landroid/view/View;
 
     const v1, 0x106000d
@@ -445,12 +445,12 @@
 
     invoke-virtual {v0, p1}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    .line 88
+    .line 80
     const-string p1, "also(...)"
 
     invoke-static {p3, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 94
+    .line 86
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;->getRoot()Landroid/view/View;
 
     move-result-object p1
@@ -459,7 +459,7 @@
 
     invoke-virtual {p1, p0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 96
+    .line 88
     new-instance p0, Ljp/co/sony/mc/camera/view/widget/LabelView;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/view/widget/LabelView;-><init>(Ljp/co/sony/mc/camera/view/uistate/ZoomLabel;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;)V
@@ -468,7 +468,7 @@
 .end method
 
 .method public final inflateOpticalRangeView(Landroid/content/Context;Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel;Landroid/widget/FrameLayout;)Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;
-    .locals 3
+    .locals 2
 
     const-string p0, "context"
 
@@ -482,197 +482,170 @@
 
     invoke-static {p3, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 31
-    new-instance p0, Landroid/widget/FrameLayout$LayoutParams;
+    .line 33
+    instance-of p0, p2, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;
 
-    const/4 v0, -0x2
+    const-string v0, "also(...)"
 
-    const v1, 0x800003
+    const/4 v1, 0x1
 
-    invoke-direct {p0, v0, v0, v1}, Landroid/widget/FrameLayout$LayoutParams;-><init>(III)V
+    if-eqz p0, :cond_0
 
-    .line 39
-    instance-of v0, p2, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;
-
-    const-string v1, "also(...)"
-
-    const/4 v2, 0x1
-
-    if-eqz v0, :cond_0
-
-    .line 41
+    .line 35
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
-    move-result-object p1
+    move-result-object p0
 
-    .line 42
+    .line 36
     check-cast p3, Landroid/view/ViewGroup;
 
-    .line 40
-    invoke-static {p1, p3, v2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;->inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;
+    .line 34
+    invoke-static {p0, p3, v1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;->inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;
 
-    move-result-object p1
+    move-result-object p0
 
-    .line 45
-    iget-object p3, p1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;->label:Landroid/widget/TextView;
+    .line 39
+    iget-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;->label:Landroid/widget/TextView;
 
     check-cast p2, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;->getText()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object p3
 
-    check-cast v0, Ljava/lang/CharSequence;
+    check-cast p3, Ljava/lang/CharSequence;
 
-    invoke-virtual {p3, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {p1, p3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 46
-    iget-object p3, p1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;->circle:Landroid/view/View;
+    .line 40
+    iget-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;->circle:Landroid/view/View;
 
     invoke-static {}, Landroid/view/View;->generateViewId()I
 
-    move-result v0
+    move-result p3
 
-    invoke-virtual {p3, v0}, Landroid/view/View;->setId(I)V
+    invoke-virtual {p1, p3}, Landroid/view/View;->setId(I)V
 
-    .line 47
-    iget-object p3, p1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;->circle:Landroid/view/View;
+    .line 41
+    iget-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;->circle:Landroid/view/View;
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;->getContentDescription()Ljava/lang/String;
 
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/CharSequence;
-
-    invoke-virtual {p3, v0}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
-
-    .line 44
-    invoke-static {p1, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 49
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;->getRoot()Landroid/view/View;
-
     move-result-object p3
 
-    check-cast p0, Landroid/view/ViewGroup$LayoutParams;
+    check-cast p3, Ljava/lang/CharSequence;
 
-    invoke-virtual {p3, p0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {p1, p3}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 50
-    new-instance p0, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Point;
+    .line 38
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-direct {p0, p2, p1}, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Point;-><init>(Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;)V
+    .line 43
+    new-instance p1, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Point;
 
-    check-cast p0, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;
+    invoke-direct {p1, p2, p0}, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Point;-><init>(Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;)V
+
+    check-cast p1, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;
 
     goto :goto_0
 
-    .line 52
+    .line 45
     :cond_0
-    instance-of v0, p2, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;
+    instance-of p0, p2, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;
 
-    if-eqz v0, :cond_1
+    if-eqz p0, :cond_1
 
-    .line 54
+    .line 47
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
-    move-result-object p1
+    move-result-object p0
 
-    .line 55
+    .line 48
     check-cast p3, Landroid/view/ViewGroup;
 
-    .line 53
-    invoke-static {p1, p3, v2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;->inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;
+    .line 46
+    invoke-static {p0, p3, v1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;->inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;
 
-    move-result-object p1
+    move-result-object p0
 
-    .line 58
-    iget-object p3, p1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;->labelStart:Landroid/widget/TextView;
+    .line 51
+    iget-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;->labelStart:Landroid/widget/TextView;
 
     check-cast p2, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;->getMinText()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object p3
 
-    check-cast v0, Ljava/lang/CharSequence;
+    check-cast p3, Ljava/lang/CharSequence;
 
-    invoke-virtual {p3, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {p1, p3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 59
-    iget-object p3, p1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;->labelEnd:Landroid/widget/TextView;
+    .line 52
+    iget-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;->labelEnd:Landroid/widget/TextView;
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;->getMaxText()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object p3
 
-    check-cast v0, Ljava/lang/CharSequence;
+    check-cast p3, Ljava/lang/CharSequence;
 
-    invoke-virtual {p3, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {p1, p3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 60
-    iget-object p3, p1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;->circleStart:Landroid/view/View;
-
-    invoke-static {}, Landroid/view/View;->generateViewId()I
-
-    move-result v0
-
-    invoke-virtual {p3, v0}, Landroid/view/View;->setId(I)V
-
-    .line 61
-    iget-object p3, p1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;->circleEnd:Landroid/view/View;
+    .line 53
+    iget-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;->circleStart:Landroid/view/View;
 
     invoke-static {}, Landroid/view/View;->generateViewId()I
 
-    move-result v0
+    move-result p3
 
-    invoke-virtual {p3, v0}, Landroid/view/View;->setId(I)V
+    invoke-virtual {p1, p3}, Landroid/view/View;->setId(I)V
 
-    .line 62
-    iget-object p3, p1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;->circleStart:Landroid/view/View;
+    .line 54
+    iget-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;->circleEnd:Landroid/view/View;
+
+    invoke-static {}, Landroid/view/View;->generateViewId()I
+
+    move-result p3
+
+    invoke-virtual {p1, p3}, Landroid/view/View;->setId(I)V
+
+    .line 55
+    iget-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;->circleStart:Landroid/view/View;
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;->getMinContentDescription()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object p3
 
-    check-cast v0, Ljava/lang/CharSequence;
+    check-cast p3, Ljava/lang/CharSequence;
 
-    invoke-virtual {p3, v0}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
+    invoke-virtual {p1, p3}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 63
-    iget-object p3, p1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;->circleEnd:Landroid/view/View;
+    .line 56
+    iget-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;->circleEnd:Landroid/view/View;
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;->getMaxContentDescription()Ljava/lang/String;
 
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/CharSequence;
-
-    invoke-virtual {p3, v0}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
-
-    .line 57
-    invoke-static {p1, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 65
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;->getRoot()Landroid/view/View;
-
     move-result-object p3
 
-    check-cast p0, Landroid/view/ViewGroup$LayoutParams;
+    check-cast p3, Ljava/lang/CharSequence;
 
-    invoke-virtual {p3, p0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {p1, p3}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 66
-    new-instance p0, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Range;
+    .line 50
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-direct {p0, p2, p1}, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Range;-><init>(Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;)V
+    .line 58
+    new-instance p1, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Range;
 
-    check-cast p0, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;
+    invoke-direct {p1, p2, p0}, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Range;-><init>(Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;)V
+
+    check-cast p1, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;
 
     :goto_0
-    return-object p0
+    return-object p1
 
-    .line 38
+    .line 32
     :cond_1
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
@@ -706,15 +679,15 @@
 
     invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 135
+    .line 127
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     invoke-interface {p2}, Ljava/util/List;->size()I
 
-    .line 137
+    .line 129
     check-cast p1, Ljava/lang/Iterable;
 
-    .line 188
+    .line 180
     new-instance p0, Ljava/util/ArrayList;
 
     const/16 v0, 0xa
@@ -727,7 +700,7 @@
 
     check-cast p0, Ljava/util/Collection;
 
-    .line 190
+    .line 182
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -749,13 +722,13 @@
 
     if-gez v0, :cond_0
 
-    .line 191
+    .line 183
     invoke-static {}, Lkotlin/collections/CollectionsKt;->throwIndexOverflow()V
 
     :cond_0
     check-cast v1, Ljava/lang/Float;
 
-    .line 138
+    .line 130
     invoke-interface {p2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -768,7 +741,7 @@
 
     goto :goto_1
 
-    .line 142
+    .line 134
     :cond_1
     invoke-virtual {v1}, Ljava/lang/Float;->floatValue()F
 
@@ -794,7 +767,7 @@
     :goto_1
     const/4 v0, 0x0
 
-    .line 191
+    .line 183
     :goto_2
     invoke-interface {p0, v0}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
@@ -802,7 +775,7 @@
 
     goto :goto_0
 
-    .line 192
+    .line 184
     :cond_3
     check-cast p0, Ljava/util/List;
 

@@ -176,39 +176,39 @@
 
 .field public static final abc_text_size_title_material_toolbar:I = 0x7f070050
 
-.field public static final disabled_alpha_material_dark:I = 0x7f070324
+.field public static final disabled_alpha_material_dark:I = 0x7f0702ce
 
-.field public static final disabled_alpha_material_light:I = 0x7f070325
+.field public static final disabled_alpha_material_light:I = 0x7f0702cf
 
-.field public static final highlight_alpha_material_colored:I = 0x7f07036a
+.field public static final highlight_alpha_material_colored:I = 0x7f070314
 
-.field public static final highlight_alpha_material_dark:I = 0x7f07036b
+.field public static final highlight_alpha_material_dark:I = 0x7f070315
 
-.field public static final highlight_alpha_material_light:I = 0x7f07036c
+.field public static final highlight_alpha_material_light:I = 0x7f070316
 
-.field public static final hint_alpha_material_dark:I = 0x7f07036d
+.field public static final hint_alpha_material_dark:I = 0x7f070317
 
-.field public static final hint_alpha_material_light:I = 0x7f07036e
+.field public static final hint_alpha_material_light:I = 0x7f070318
 
-.field public static final hint_pressed_alpha_material_dark:I = 0x7f07036f
+.field public static final hint_pressed_alpha_material_dark:I = 0x7f070319
 
-.field public static final hint_pressed_alpha_material_light:I = 0x7f070370
+.field public static final hint_pressed_alpha_material_light:I = 0x7f07031a
 
-.field public static final tooltip_corner_radius:I = 0x7f0707ec
+.field public static final tooltip_corner_radius:I = 0x7f07079f
 
-.field public static final tooltip_horizontal_padding:I = 0x7f0707ed
+.field public static final tooltip_horizontal_padding:I = 0x7f0707a0
 
-.field public static final tooltip_margin:I = 0x7f0707ee
+.field public static final tooltip_margin:I = 0x7f0707a1
 
-.field public static final tooltip_precise_anchor_extra_offset:I = 0x7f0707ef
+.field public static final tooltip_precise_anchor_extra_offset:I = 0x7f0707a2
 
-.field public static final tooltip_precise_anchor_threshold:I = 0x7f0707f0
+.field public static final tooltip_precise_anchor_threshold:I = 0x7f0707a3
 
-.field public static final tooltip_vertical_padding:I = 0x7f0707f1
+.field public static final tooltip_vertical_padding:I = 0x7f0707a4
 
-.field public static final tooltip_y_offset_non_touch:I = 0x7f0707f2
+.field public static final tooltip_y_offset_non_touch:I = 0x7f0707a5
 
-.field public static final tooltip_y_offset_touch:I = 0x7f0707f3
+.field public static final tooltip_y_offset_touch:I = 0x7f0707a6
 
 
 # direct methods

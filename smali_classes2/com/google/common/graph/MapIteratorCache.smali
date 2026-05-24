@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/graph/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<K:",
@@ -34,7 +37,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -42,6 +45,15 @@
 # direct methods
 .method constructor <init>(Ljava/util/Map;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "backingMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -50,10 +62,10 @@
         }
     .end annotation
 
-    .line 58
+    .line 59
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 59
+    .line 60
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -68,7 +80,7 @@
 .method static synthetic access$000(Lcom/google/common/graph/MapIteratorCache;)Ljava/util/Map;
     .locals 0
 
-    .line 44
+    .line 45
     iget-object p0, p0, Lcom/google/common/graph/MapIteratorCache;->backingMap:Ljava/util/Map;
 
     return-object p0
@@ -77,7 +89,7 @@
 .method static synthetic access$102(Lcom/google/common/graph/MapIteratorCache;Ljava/util/Map$Entry;)Ljava/util/Map$Entry;
     .locals 0
 
-    .line 44
+    .line 45
     iput-object p1, p0, Lcom/google/common/graph/MapIteratorCache;->cacheEntry:Ljava/util/Map$Entry;
 
     return-object p1
@@ -85,13 +97,13 @@
 
 
 # virtual methods
-.method public final clear()V
+.method final clear()V
     .locals 0
 
-    .line 75
+    .line 81
     invoke-virtual {p0}, Lcom/google/common/graph/MapIteratorCache;->clearCache()V
 
-    .line 76
+    .line 82
     iget-object p0, p0, Lcom/google/common/graph/MapIteratorCache;->backingMap:Ljava/util/Map;
 
     invoke-interface {p0}, Ljava/util/Map;->clear()V
@@ -99,25 +111,33 @@
     return-void
 .end method
 
-.method protected clearCache()V
+.method clearCache()V
     .locals 1
 
     const/4 v0, 0x0
 
-    .line 138
+    .line 154
     iput-object v0, p0, Lcom/google/common/graph/MapIteratorCache;->cacheEntry:Ljava/util/Map$Entry;
 
     return-void
 .end method
 
-.method public final containsKey(Ljava/lang/Object;)Z
+.method final containsKey(Ljava/lang/Object;)Z
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 89
+    .line 104
     invoke-virtual {p0, p1}, Lcom/google/common/graph/MapIteratorCache;->getIfCached(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -147,12 +167,17 @@
     return p0
 .end method
 
-.method public get(Ljava/lang/Object;)Ljava/lang/Object;
+.method get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -161,31 +186,45 @@
         }
     .end annotation
 
-    .line 80
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 87
+    invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 88
     invoke-virtual {p0, p1}, Lcom/google/common/graph/MapIteratorCache;->getIfCached(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    if-nez v0, :cond_0
 
-    goto :goto_0
-
-    .line 81
-    :cond_0
+    .line 91
     invoke-virtual {p0, p1}, Lcom/google/common/graph/MapIteratorCache;->getWithoutCaching(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object p0
 
-    :goto_0
+    return-object p0
+
+    :cond_0
     return-object v0
 .end method
 
-.method protected getIfCached(Ljava/lang/Object;)Ljava/lang/Object;
+.method getIfCached(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -194,19 +233,22 @@
         }
     .end annotation
 
-    .line 128
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 144
     iget-object p0, p0, Lcom/google/common/graph/MapIteratorCache;->cacheEntry:Ljava/util/Map$Entry;
 
     if-eqz p0, :cond_0
 
-    .line 131
+    .line 147
     invoke-interface {p0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
 
     if-ne v0, p1, :cond_0
 
-    .line 132
+    .line 148
     invoke-interface {p0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -219,12 +261,17 @@
     return-object p0
 .end method
 
-.method public final getWithoutCaching(Ljava/lang/Object;)Ljava/lang/Object;
+.method final getWithoutCaching(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
-    .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -233,7 +280,13 @@
         }
     .end annotation
 
-    .line 85
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 99
+    invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 100
     iget-object p0, p0, Lcom/google/common/graph/MapIteratorCache;->backingMap:Ljava/util/Map;
 
     invoke-interface {p0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -243,26 +296,38 @@
     return-object p0
 .end method
 
-.method public final put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method final put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
-    .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
-    .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV;)TV;"
         }
     .end annotation
 
-    .line 64
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 66
+    invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 67
+    invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 68
     invoke-virtual {p0}, Lcom/google/common/graph/MapIteratorCache;->clearCache()V
 
-    .line 65
+    .line 69
     iget-object p0, p0, Lcom/google/common/graph/MapIteratorCache;->backingMap:Ljava/util/Map;
 
     invoke-interface {p0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -272,12 +337,17 @@
     return-object p0
 .end method
 
-.method public final remove(Ljava/lang/Object;)Ljava/lang/Object;
+.method final remove(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
-    .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -286,10 +356,16 @@
         }
     .end annotation
 
-    .line 70
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 75
+    invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 76
     invoke-virtual {p0}, Lcom/google/common/graph/MapIteratorCache;->clearCache()V
 
-    .line 71
+    .line 77
     iget-object p0, p0, Lcom/google/common/graph/MapIteratorCache;->backingMap:Ljava/util/Map;
 
     invoke-interface {p0, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
@@ -299,7 +375,7 @@
     return-object p0
 .end method
 
-.method public final unmodifiableKeySet()Ljava/util/Set;
+.method final unmodifiableKeySet()Ljava/util/Set;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -309,7 +385,7 @@
         }
     .end annotation
 
-    .line 93
+    .line 108
     new-instance v0, Lcom/google/common/graph/MapIteratorCache$1;
 
     invoke-direct {v0, p0}, Lcom/google/common/graph/MapIteratorCache$1;-><init>(Lcom/google/common/graph/MapIteratorCache;)V

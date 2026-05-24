@@ -47,7 +47,7 @@
 
     move-result-object v3
 
-    const v5, 0x7f0c00eb
+    const v5, 0x7f0c00e5
 
     filled-new-array {v5}, [I
 
@@ -68,7 +68,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0c0065
+    const v4, 0x7f0c0060
 
     filled-new-array {v4}, [I
 
@@ -83,21 +83,21 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0901d0
+    const v1, 0x7f0901d3
 
     const/4 v2, 0x4
 
     .line 25
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0902ff
+    const v1, 0x7f090304
 
     const/4 v2, 0x5
 
     .line 26
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0902fe
+    const v1, 0x7f090303
 
     const/4 v2, 0x6
 
@@ -109,6 +109,16 @@
 
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root"
+        }
+    .end annotation
 
     .line 40
     sget-object v0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -128,6 +138,18 @@
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root",
+            "bindings"
+        }
+    .end annotation
 
     const/4 v0, 0x4
 
@@ -232,6 +254,16 @@
 
 .method private onChangeModeCustomLayout(Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBinding;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ModeCustomLayout",
+            "fieldId"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
@@ -272,6 +304,17 @@
 
 .method private onChangeModeCustomUiStateIsModeCustomLayoutVisible(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ModeCustomUiStateIsModeCustomLayoutVisible",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -320,6 +363,16 @@
 
 .method private onChangeMoreIndicator(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "MoreIndicator",
+            "fieldId"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
@@ -601,6 +654,18 @@
 
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "localFieldId",
+            "object",
+            "fieldId"
+        }
+    .end annotation
 
     if-eqz p1, :cond_2
 
@@ -649,6 +714,14 @@
 
 .method public setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "lifecycleOwner"
+        }
+    .end annotation
 
     .line 110
     invoke-super {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
@@ -668,6 +741,14 @@
 
 .method public setModeCustomUiState(Ljp/co/sony/mc/camera/view/uistate/ModeCustomUiState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ModeCustomUiState"
+        }
+    .end annotation
 
     .line 100
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->mModeCustomUiState:Ljp/co/sony/mc/camera/view/uistate/ModeCustomUiState;
@@ -690,7 +771,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x14
+    const/16 p1, 0x17
 
     .line 104
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->notifyPropertyChanged(I)V
@@ -714,8 +795,18 @@
 
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "variableId",
+            "variable"
+        }
+    .end annotation
 
-    const/16 v0, 0x14
+    const/16 v0, 0x17
 
     if-ne v0, p1, :cond_0
 

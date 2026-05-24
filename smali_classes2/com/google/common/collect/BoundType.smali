@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Enum<",
@@ -44,7 +47,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 29
+    .line 30
     new-instance v0, Lcom/google/common/collect/BoundType;
 
     const-string v1, "OPEN"
@@ -55,7 +58,7 @@
 
     sput-object v0, Lcom/google/common/collect/BoundType;->OPEN:Lcom/google/common/collect/BoundType;
 
-    .line 30
+    .line 31
     new-instance v0, Lcom/google/common/collect/BoundType;
 
     const-string v1, "CLOSED"
@@ -78,16 +81,29 @@
 
 .method private constructor <init>(Ljava/lang/String;IZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "inclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)V"
         }
     .end annotation
 
-    .line 34
+    .line 35
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 35
+    .line 36
     iput-boolean p3, p0, Lcom/google/common/collect/BoundType;->inclusive:Z
 
     return-void
@@ -95,10 +111,18 @@
 
 .method static forBoolean(Z)Lcom/google/common/collect/BoundType;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "inclusive"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
-    .line 40
+    .line 41
     sget-object p0, Lcom/google/common/collect/BoundType;->CLOSED:Lcom/google/common/collect/BoundType;
 
     goto :goto_0
@@ -112,6 +136,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/collect/BoundType;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 26
     const-class v0, Lcom/google/common/collect/BoundType;
@@ -138,21 +170,4 @@
     check-cast v0, [Lcom/google/common/collect/BoundType;
 
     return-object v0
-.end method
-
-
-# virtual methods
-.method flip()Lcom/google/common/collect/BoundType;
-    .locals 0
-
-    .line 44
-    iget-boolean p0, p0, Lcom/google/common/collect/BoundType;->inclusive:Z
-
-    xor-int/lit8 p0, p0, 0x1
-
-    invoke-static {p0}, Lcom/google/common/collect/BoundType;->forBoolean(Z)Lcom/google/common/collect/BoundType;
-
-    move-result-object p0
-
-    return-object p0
 .end method

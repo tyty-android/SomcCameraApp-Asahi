@@ -8,6 +8,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation runtime Lcom/google/errorprone/annotations/Immutable;
     containerOf = {
         "B"
@@ -63,10 +66,10 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 42
+    .line 46
     new-instance v0, Lcom/google/common/collect/ImmutableClassToInstanceMap;
 
-    .line 43
+    .line 47
     invoke-static {}, Lcom/google/common/collect/ImmutableMap;->of()Lcom/google/common/collect/ImmutableMap;
 
     move-result-object v1
@@ -80,6 +83,15 @@
 
 .method private constructor <init>(Lcom/google/common/collect/ImmutableMap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "delegate"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -89,10 +101,10 @@
         }
     .end annotation
 
-    .line 163
+    .line 174
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingMap;-><init>()V
 
-    .line 164
+    .line 175
     iput-object p1, p0, Lcom/google/common/collect/ImmutableClassToInstanceMap;->delegate:Lcom/google/common/collect/ImmutableMap;
 
     return-void
@@ -101,7 +113,7 @@
 .method synthetic constructor <init>(Lcom/google/common/collect/ImmutableMap;Lcom/google/common/collect/ImmutableClassToInstanceMap$1;)V
     .locals 0
 
-    .line 39
+    .line 42
     invoke-direct {p0, p1}, Lcom/google/common/collect/ImmutableClassToInstanceMap;-><init>(Lcom/google/common/collect/ImmutableMap;)V
 
     return-void
@@ -119,7 +131,7 @@
         }
     .end annotation
 
-    .line 70
+    .line 76
     new-instance v0, Lcom/google/common/collect/ImmutableClassToInstanceMap$Builder;
 
     invoke-direct {v0}, Lcom/google/common/collect/ImmutableClassToInstanceMap$Builder;-><init>()V
@@ -129,6 +141,15 @@
 
 .method public static copyOf(Ljava/util/Map;)Lcom/google/common/collect/ImmutableClassToInstanceMap;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "map"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<B:",
@@ -143,17 +164,17 @@
         }
     .end annotation
 
-    .line 153
+    .line 162
     instance-of v0, p0, Lcom/google/common/collect/ImmutableClassToInstanceMap;
 
     if-eqz v0, :cond_0
 
-    .line 155
+    .line 166
     check-cast p0, Lcom/google/common/collect/ImmutableClassToInstanceMap;
 
     return-object p0
 
-    .line 158
+    .line 169
     :cond_0
     new-instance v0, Lcom/google/common/collect/ImmutableClassToInstanceMap$Builder;
 
@@ -182,7 +203,7 @@
         }
     .end annotation
 
-    .line 52
+    .line 58
     sget-object v0, Lcom/google/common/collect/ImmutableClassToInstanceMap;->EMPTY:Lcom/google/common/collect/ImmutableClassToInstanceMap;
 
     return-object v0
@@ -190,6 +211,17 @@
 
 .method public static of(Ljava/lang/Class;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableClassToInstanceMap;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<B:",
@@ -202,12 +234,12 @@
         }
     .end annotation
 
-    .line 61
+    .line 67
     invoke-static {p0, p1}, Lcom/google/common/collect/ImmutableMap;->of(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap;
 
     move-result-object p0
 
-    .line 62
+    .line 68
     new-instance p1, Lcom/google/common/collect/ImmutableClassToInstanceMap;
 
     invoke-direct {p1, p0}, Lcom/google/common/collect/ImmutableClassToInstanceMap;-><init>(Lcom/google/common/collect/ImmutableMap;)V
@@ -220,7 +252,7 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 37
+    .line 38
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableClassToInstanceMap;->delegate()Ljava/util/Map;
 
     move-result-object p0
@@ -239,7 +271,7 @@
         }
     .end annotation
 
-    .line 169
+    .line 180
     iget-object p0, p0, Lcom/google/common/collect/ImmutableClassToInstanceMap;->delegate:Lcom/google/common/collect/ImmutableMap;
 
     return-object p0
@@ -247,6 +279,15 @@
 
 .method public getInstance(Ljava/lang/Class;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:TB;>(",
@@ -255,10 +296,10 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
-    .line 176
+    .line 187
     iget-object p0, p0, Lcom/google/common/collect/ImmutableClassToInstanceMap;->delegate:Lcom/google/common/collect/ImmutableMap;
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -274,6 +315,17 @@
 
 .method public putInstance(Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:TB;>(",
@@ -285,7 +337,10 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 190
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 202
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -296,7 +351,7 @@
 .method readResolve()Ljava/lang/Object;
     .locals 1
 
-    .line 194
+    .line 206
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableClassToInstanceMap;->isEmpty()Z
 
     move-result v0

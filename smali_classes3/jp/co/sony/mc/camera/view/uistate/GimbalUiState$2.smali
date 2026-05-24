@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;-><init>(Lkotlinx/coroutines/CoroutineScope;Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;Ljp/co/sony/mc/camera/view/uistate/MessageUiState;Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;Ljp/co/sony/mc/camera/view/uistate/ThermalUiState;Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;)V
+    value = Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;-><init>(Lkotlinx/coroutines/CoroutineScope;Ljp/co/sony/mc/camera/view/uistate/BasicModeSubmenuUiState;Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;Ljp/co/sony/mc/camera/view/uistate/MessageUiState;Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;Ljp/co/sony/mc/camera/view/uistate/ThermalUiState;Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -53,7 +53,7 @@
     f = "GimbalUiState.kt"
     i = {}
     l = {
-        0x88
+        0x8b
     }
     m = "invokeSuspend"
     n = {}
@@ -167,7 +167,7 @@
 
     move-result-object v0
 
-    .line 135
+    .line 138
     iget v1, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$2;->label:I
 
     const/4 v2, 0x1
@@ -192,7 +192,7 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 136
+    .line 139
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$2;->this$0:Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->access$getCameraSettingsModel$p(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;)Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
@@ -229,7 +229,7 @@
 
     return-object v0
 
-    .line 149
+    .line 156
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

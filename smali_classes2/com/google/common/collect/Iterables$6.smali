@@ -30,8 +30,18 @@
 # direct methods
 .method constructor <init>(Ljava/lang/Iterable;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x1010
+        }
+        names = {
+            "val$iterable",
+            "val$numberToSkip"
+        }
+    .end annotation
 
-    .line 867
+    .line 917
     iput-object p1, p0, Lcom/google/common/collect/Iterables$6;->val$iterable:Ljava/lang/Iterable;
 
     iput p2, p0, Lcom/google/common/collect/Iterables$6;->val$numberToSkip:I
@@ -53,17 +63,17 @@
         }
     .end annotation
 
-    .line 870
+    .line 920
     iget-object v0, p0, Lcom/google/common/collect/Iterables$6;->val$iterable:Ljava/lang/Iterable;
 
     instance-of v1, v0, Ljava/util/List;
 
     if-eqz v1, :cond_0
 
-    .line 871
+    .line 921
     check-cast v0, Ljava/util/List;
 
-    .line 872
+    .line 922
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v1
@@ -74,7 +84,7 @@
 
     move-result p0
 
-    .line 873
+    .line 923
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v1
@@ -89,18 +99,18 @@
 
     return-object p0
 
-    .line 875
+    .line 925
     :cond_0
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
-    .line 877
+    .line 927
     iget v1, p0, Lcom/google/common/collect/Iterables$6;->val$numberToSkip:I
 
     invoke-static {v0, v1}, Lcom/google/common/collect/Iterators;->advance(Ljava/util/Iterator;I)I
 
-    .line 884
+    .line 934
     new-instance v1, Lcom/google/common/collect/Iterables$6$1;
 
     invoke-direct {v1, p0, v0}, Lcom/google/common/collect/Iterables$6$1;-><init>(Lcom/google/common/collect/Iterables$6;Ljava/util/Iterator;)V

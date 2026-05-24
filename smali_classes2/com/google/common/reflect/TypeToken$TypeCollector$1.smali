@@ -28,7 +28,7 @@
 
     const/4 v0, 0x0
 
-    .line 1302
+    .line 1325
     invoke-direct {p0, v0}, Lcom/google/common/reflect/TypeToken$TypeCollector;-><init>(Lcom/google/common/reflect/TypeToken$1;)V
 
     return-void
@@ -38,6 +38,15 @@
 # virtual methods
 .method getInterfaces(Lcom/google/common/reflect/TypeToken;)Ljava/lang/Iterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -50,7 +59,7 @@
         }
     .end annotation
 
-    .line 1310
+    .line 1333
     invoke-virtual {p1}, Lcom/google/common/reflect/TypeToken;->getGenericInterfaces()Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
@@ -60,8 +69,16 @@
 
 .method bridge synthetic getInterfaces(Ljava/lang/Object;)Ljava/lang/Iterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
-    .line 1302
+    .line 1325
     check-cast p1, Lcom/google/common/reflect/TypeToken;
 
     invoke-virtual {p0, p1}, Lcom/google/common/reflect/TypeToken$TypeCollector$1;->getInterfaces(Lcom/google/common/reflect/TypeToken;)Ljava/lang/Iterable;
@@ -73,6 +90,15 @@
 
 .method getRawType(Lcom/google/common/reflect/TypeToken;)Ljava/lang/Class;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -83,7 +109,7 @@
         }
     .end annotation
 
-    .line 1305
+    .line 1328
     invoke-virtual {p1}, Lcom/google/common/reflect/TypeToken;->getRawType()Ljava/lang/Class;
 
     move-result-object p0
@@ -93,8 +119,16 @@
 
 .method bridge synthetic getRawType(Ljava/lang/Object;)Ljava/lang/Class;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
-    .line 1302
+    .line 1325
     check-cast p1, Lcom/google/common/reflect/TypeToken;
 
     invoke-virtual {p0, p1}, Lcom/google/common/reflect/TypeToken$TypeCollector$1;->getRawType(Lcom/google/common/reflect/TypeToken;)Ljava/lang/Class;
@@ -106,6 +140,15 @@
 
 .method getSuperclass(Lcom/google/common/reflect/TypeToken;)Lcom/google/common/reflect/TypeToken;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -116,10 +159,10 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
-    .line 1316
+    .line 1339
     invoke-virtual {p1}, Lcom/google/common/reflect/TypeToken;->getGenericSuperclass()Lcom/google/common/reflect/TypeToken;
 
     move-result-object p0
@@ -129,10 +172,19 @@
 
 .method bridge synthetic getSuperclass(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "type"
+        }
     .end annotation
 
-    .line 1302
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1325
     check-cast p1, Lcom/google/common/reflect/TypeToken;
 
     invoke-virtual {p0, p1}, Lcom/google/common/reflect/TypeToken$TypeCollector$1;->getSuperclass(Lcom/google/common/reflect/TypeToken;)Lcom/google/common/reflect/TypeToken;

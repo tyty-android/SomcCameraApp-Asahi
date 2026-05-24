@@ -6,6 +6,8 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$AiSuggestionColorToneProfile;,
+        Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$AiSuggestionCustomizeMenu;,
         Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$AutoFramingSizeMenu;,
         Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$BokehSetting;,
         Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$ColorToneProfile;,
@@ -13,14 +15,14 @@
         Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$FocusMagnification;,
         Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$None;,
         Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$QuickSetting;,
-        Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$SS;,
-        Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$StreamingQuickSetting;,
-        Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$YoutubeLiveChatWindow;
+        Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$SS;
     }
 .end annotation
 
 .annotation system Ldalvik/annotation/PermittedSubclasses;
     value = {
+        Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$AiSuggestionColorToneProfile;,
+        Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$AiSuggestionCustomizeMenu;,
         Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$AutoFramingSizeMenu;,
         Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$BokehSetting;,
         Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$ColorToneProfile;,
@@ -28,9 +30,7 @@
         Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$FocusMagnification;,
         Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$None;,
         Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$QuickSetting;,
-        Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$SS;,
-        Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$StreamingQuickSetting;,
-        Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$YoutubeLiveChatWindow;
+        Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$SS;
     }
 .end annotation
 
@@ -52,12 +52,14 @@
         "QuickSetting",
         "ColorToneProfile",
         "SS",
-        "StreamingQuickSetting",
         "Focus",
         "BokehSetting",
         "FocusMagnification",
         "AutoFramingSizeMenu",
-        "YoutubeLiveChatWindow",
+        "AiSuggestionCustomizeMenu",
+        "AiSuggestionColorToneProfile",
+        "Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$AiSuggestionColorToneProfile;",
+        "Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$AiSuggestionCustomizeMenu;",
         "Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$AutoFramingSizeMenu;",
         "Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$BokehSetting;",
         "Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$ColorToneProfile;",
@@ -66,8 +68,6 @@
         "Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$None;",
         "Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$QuickSetting;",
         "Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$SS;",
-        "Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$StreamingQuickSetting;",
-        "Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$YoutubeLiveChatWindow;",
         "SomcCamera_release"
     }
     k = 0x1
@@ -115,7 +115,7 @@
         }
     .end annotation
 
-    .line 237
+    .line 363
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;->noNeedCloseMenuReasonList:Ljava/util/List;
@@ -144,7 +144,7 @@
         }
     .end annotation
 
-    .line 237
+    .line 363
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;->noNeedCloseMenuReasonList:Ljava/util/List;
 
     return-object p0

@@ -68,7 +68,7 @@
 
     const/4 v0, 0x0
 
-    .line 74
+    .line 73
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void

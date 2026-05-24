@@ -16,4 +16,20 @@
 
 # virtual methods
 .method public abstract onPreCaptureDone(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Ljp/co/sony/mc/camera/device/SnapshotRequest;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;II)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "sessionId",
+            "snapshotRequest",
+            "startPoint",
+            "duration",
+            "previewLatency"
+        }
+    .end annotation
 .end method

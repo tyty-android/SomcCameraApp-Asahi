@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root" android:tag="layout/fragment_basic_focus_ss_menu_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:binding="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/dial_focus" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" binding:layout_constraintEnd_toEndOf="parent" binding:layout_constraintStart_toStartOf="parent" binding:layout_constraintTop_toTopOf="parent" layout="@layout/fragment_basic_focus" />
+    <include android:id="@id/dial_ss" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" binding:layout_constraintEnd_toEndOf="parent" binding:layout_constraintStart_toStartOf="parent" binding:layout_constraintTop_toTopOf="parent" layout="@layout/fragment_basic_ss" />
+</androidx.constraintlayout.widget.ConstraintLayout>

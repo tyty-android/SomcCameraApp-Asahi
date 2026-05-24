@@ -73,6 +73,43 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/setting/SettingKey$Key;ILjava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZILjava/lang/String;Ljp/co/sony/mc/camera/view/setting/settingitem/SettingLayoutType;ZLjp/co/sony/mc/camera/view/messagedialog/DialogId;Ljava/util/List;II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "subCategoryTitleId",
+            "titleText",
+            "valueText",
+            "descriptionResIdList",
+            "subDescriptionResIdList",
+            "isExclusionInfo",
+            "informationResId",
+            "additionalTextForAccessibility",
+            "type",
+            "isRestricted",
+            "dialogId",
+            "options",
+            "imageResId",
+            "choiceMode"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -3,17 +3,15 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements Landroid/view/accessibility/AccessibilityManager$TouchExplorationStateChangeListener;
 
 
 # instance fields
 .field public final synthetic f$0:Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;
 
-.field public final synthetic f$1:Landroid/view/LayoutInflater;
-
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;Landroid/view/LayoutInflater;)V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;)V
     .locals 0
 
     .line 0
@@ -21,26 +19,18 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder$$ExternalSyntheticLambda4;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;
 
-    iput-object p2, p0, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder$$ExternalSyntheticLambda4;->f$1:Landroid/view/LayoutInflater;
-
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final onTouchExplorationStateChanged(Z)V
+    .locals 0
 
     .line 0
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder$$ExternalSyntheticLambda4;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder$$ExternalSyntheticLambda4;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;
 
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder$$ExternalSyntheticLambda4;->f$1:Landroid/view/LayoutInflater;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;->$r8$lambda$HQ0xuW9ZqQTPuAGB1Ns9cHneXcs(Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;Z)V
 
-    check-cast p1, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
-
-    invoke-static {v0, p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;->$r8$lambda$E8lSFn1_pPQ4IT_sb7ZC-Kb1POE(Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;Landroid/view/LayoutInflater;Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
+    return-void
 .end method

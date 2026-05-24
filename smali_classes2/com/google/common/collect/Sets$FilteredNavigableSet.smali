@@ -32,6 +32,17 @@
 # direct methods
 .method constructor <init>(Ljava/util/NavigableSet;Lcom/google/common/base/Predicate;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "unfiltered",
+            "predicate"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -42,7 +53,7 @@
         }
     .end annotation
 
-    .line 1108
+    .line 1221
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/Sets$FilteredSortedSet;-><init>(Ljava/util/SortedSet;Lcom/google/common/base/Predicate;)V
 
     return-void
@@ -52,13 +63,29 @@
 # virtual methods
 .method public ceiling(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)TE;"
         }
     .end annotation
 
-    .line 1129
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1243
     invoke-virtual {p0}, Lcom/google/common/collect/Sets$FilteredNavigableSet;->unfiltered()Ljava/util/NavigableSet;
 
     move-result-object v0
@@ -90,7 +117,7 @@
         }
     .end annotation
 
-    .line 1154
+    .line 1271
     invoke-virtual {p0}, Lcom/google/common/collect/Sets$FilteredNavigableSet;->unfiltered()Ljava/util/NavigableSet;
 
     move-result-object v0
@@ -118,7 +145,7 @@
         }
     .end annotation
 
-    .line 1149
+    .line 1266
     invoke-virtual {p0}, Lcom/google/common/collect/Sets$FilteredNavigableSet;->unfiltered()Ljava/util/NavigableSet;
 
     move-result-object v0
@@ -138,16 +165,29 @@
 
 .method public floor(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)TE;"
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
-    .line 1124
+    .line 1237
     invoke-virtual {p0}, Lcom/google/common/collect/Sets$FilteredNavigableSet;->unfiltered()Ljava/util/NavigableSet;
 
     move-result-object v0
@@ -175,6 +215,21 @@
 
 .method public headSet(Ljava/lang/Object;Z)Ljava/util/NavigableSet;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "toElement",
+            "inclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;Z)",
@@ -183,7 +238,7 @@
         }
     .end annotation
 
-    .line 1171
+    .line 1292
     invoke-virtual {p0}, Lcom/google/common/collect/Sets$FilteredNavigableSet;->unfiltered()Ljava/util/NavigableSet;
 
     move-result-object v0
@@ -203,13 +258,29 @@
 
 .method public higher(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)TE;"
         }
     .end annotation
 
-    .line 1134
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1249
     invoke-virtual {p0}, Lcom/google/common/collect/Sets$FilteredNavigableSet;->unfiltered()Ljava/util/NavigableSet;
 
     move-result-object v0
@@ -233,13 +304,16 @@
 
 .method public last()Ljava/lang/Object;
     .locals 1
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TE;"
         }
     .end annotation
 
-    .line 1159
+    .line 1277
     invoke-virtual {p0}, Lcom/google/common/collect/Sets$FilteredNavigableSet;->unfiltered()Ljava/util/NavigableSet;
 
     move-result-object v0
@@ -259,16 +333,29 @@
 
 .method public lower(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)TE;"
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
-    .line 1118
+    .line 1231
     invoke-virtual {p0}, Lcom/google/common/collect/Sets$FilteredNavigableSet;->unfiltered()Ljava/util/NavigableSet;
 
     move-result-object v0
@@ -302,7 +389,10 @@
         }
     .end annotation
 
-    .line 1139
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1255
     invoke-virtual {p0}, Lcom/google/common/collect/Sets$FilteredNavigableSet;->unfiltered()Ljava/util/NavigableSet;
 
     move-result-object v0
@@ -324,7 +414,10 @@
         }
     .end annotation
 
-    .line 1144
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1261
     invoke-virtual {p0}, Lcom/google/common/collect/Sets$FilteredNavigableSet;->unfiltered()Ljava/util/NavigableSet;
 
     move-result-object v0
@@ -344,6 +437,29 @@
 
 .method public subSet(Ljava/lang/Object;ZLjava/lang/Object;Z)Ljava/util/NavigableSet;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .param p3    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "fromElement",
+            "fromInclusive",
+            "toElement",
+            "toInclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;ZTE;Z)",
@@ -352,7 +468,7 @@
         }
     .end annotation
 
-    .line 1166
+    .line 1287
     invoke-virtual {p0}, Lcom/google/common/collect/Sets$FilteredNavigableSet;->unfiltered()Ljava/util/NavigableSet;
 
     move-result-object v0
@@ -363,7 +479,7 @@
 
     iget-object p0, p0, Lcom/google/common/collect/Sets$FilteredNavigableSet;->predicate:Lcom/google/common/base/Predicate;
 
-    .line 1165
+    .line 1286
     invoke-static {p1, p0}, Lcom/google/common/collect/Sets;->filter(Ljava/util/NavigableSet;Lcom/google/common/base/Predicate;)Ljava/util/NavigableSet;
 
     move-result-object p0
@@ -373,6 +489,21 @@
 
 .method public tailSet(Ljava/lang/Object;Z)Ljava/util/NavigableSet;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromElement",
+            "inclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;Z)",
@@ -381,7 +512,7 @@
         }
     .end annotation
 
-    .line 1176
+    .line 1297
     invoke-virtual {p0}, Lcom/google/common/collect/Sets$FilteredNavigableSet;->unfiltered()Ljava/util/NavigableSet;
 
     move-result-object v0
@@ -409,7 +540,7 @@
         }
     .end annotation
 
-    .line 1112
+    .line 1225
     iget-object p0, p0, Lcom/google/common/collect/Sets$FilteredNavigableSet;->unfiltered:Ljava/util/Collection;
 
     check-cast p0, Ljava/util/NavigableSet;

@@ -101,7 +101,7 @@
     .line 25
     new-instance v6, Ljp/co/sony/mc/camera/configuration/parameters/FramingAssistPositionMode;
 
-    const v4, 0x7f110285
+    const v4, 0x7f1102d0
 
     .line 28
     const-string v5, "center"
@@ -111,7 +111,7 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f080209
+    const v3, 0x7f080265
 
     move-object v0, v6
 
@@ -122,7 +122,7 @@
     .line 30
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/FramingAssistPositionMode;
 
-    const v11, 0x7f110288
+    const v11, 0x7f1102d3
 
     .line 33
     const-string v12, "locking"
@@ -132,7 +132,7 @@
 
     const/4 v9, 0x1
 
-    const v10, 0x7f08020c
+    const v10, 0x7f080268
 
     move-object v7, v0
 

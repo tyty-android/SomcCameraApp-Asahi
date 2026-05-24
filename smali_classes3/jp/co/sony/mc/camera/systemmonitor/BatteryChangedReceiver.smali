@@ -54,6 +54,16 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver$BatteryChangedReceiverListener;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "listener"
+        }
+    .end annotation
 
     .line 72
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -107,6 +117,16 @@
 
 .method private checkBcl(IZ)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x10
+        }
+        names = {
+            "percentage",
+            "isOnStartup"
+        }
+    .end annotation
 
     .line 191
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mIsAlreadyBcl:Z
@@ -184,6 +204,14 @@
 
 .method private notifyBatteryLevel(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "percentage"
+        }
+    .end annotation
 
     .line 227
     iget-object p0, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mListener:Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver$BatteryChangedReceiverListener;
@@ -453,6 +481,16 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "intent"
+        }
+    .end annotation
 
     .line 117
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mIsActive:Z

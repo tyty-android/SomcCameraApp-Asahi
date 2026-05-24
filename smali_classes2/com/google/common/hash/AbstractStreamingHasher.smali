@@ -3,6 +3,11 @@
 .source "AbstractStreamingHasher.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/hash/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # instance fields
 .field private final buffer:Ljava/nio/ByteBuffer;
 
@@ -14,6 +19,14 @@
 # direct methods
 .method protected constructor <init>(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "chunkSize"
+        }
+    .end annotation
 
     .line 50
     invoke-direct {p0, p1, p1}, Lcom/google/common/hash/AbstractStreamingHasher;-><init>(II)V
@@ -23,6 +36,16 @@
 
 .method protected constructor <init>(II)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "chunkSize",
+            "bufferSize"
+        }
+    .end annotation
 
     .line 62
     invoke-direct {p0}, Lcom/google/common/hash/AbstractHasher;-><init>()V
@@ -69,12 +92,12 @@
 .method private munch()V
     .locals 2
 
-    .line 206
+    .line 214
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
     invoke-static {v0}, Lcom/google/common/hash/Java8Compatibility;->flip(Ljava/nio/Buffer;)V
 
-    .line 207
+    .line 215
     :goto_0
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
@@ -86,14 +109,14 @@
 
     if-lt v0, v1, :cond_0
 
-    .line 210
+    .line 218
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {p0, v0}, Lcom/google/common/hash/AbstractStreamingHasher;->process(Ljava/nio/ByteBuffer;)V
 
     goto :goto_0
 
-    .line 212
+    .line 220
     :cond_0
     iget-object p0, p0, Lcom/google/common/hash/AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
@@ -105,7 +128,7 @@
 .method private munchIfFull()V
     .locals 2
 
-    .line 199
+    .line 207
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->remaining()I
@@ -116,7 +139,7 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 201
+    .line 209
     invoke-direct {p0}, Lcom/google/common/hash/AbstractStreamingHasher;->munch()V
 
     :cond_0
@@ -125,8 +148,16 @@
 
 .method private putBytesInternal(Ljava/nio/ByteBuffer;)Lcom/google/common/hash/Hasher;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "readBuffer"
+        }
+    .end annotation
 
-    .line 111
+    .line 114
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->remaining()I
 
     move-result v0
@@ -139,17 +170,17 @@
 
     if-gt v0, v1, :cond_0
 
-    .line 112
+    .line 115
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, p1}, Ljava/nio/ByteBuffer;->put(Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
 
-    .line 113
+    .line 116
     invoke-direct {p0}, Lcom/google/common/hash/AbstractStreamingHasher;->munchIfFull()V
 
     return-object p0
 
-    .line 118
+    .line 121
     :cond_0
     iget v0, p0, Lcom/google/common/hash/AbstractStreamingHasher;->bufferSize:I
 
@@ -166,7 +197,7 @@
     :goto_0
     if-ge v1, v0, :cond_1
 
-    .line 120
+    .line 123
     iget-object v2, p0, Lcom/google/common/hash/AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->get()B
@@ -179,11 +210,11 @@
 
     goto :goto_0
 
-    .line 122
+    .line 125
     :cond_1
     invoke-direct {p0}, Lcom/google/common/hash/AbstractStreamingHasher;->munch()V
 
-    .line 125
+    .line 128
     :goto_1
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->remaining()I
 
@@ -193,12 +224,12 @@
 
     if-lt v0, v1, :cond_2
 
-    .line 126
+    .line 129
     invoke-virtual {p0, p1}, Lcom/google/common/hash/AbstractStreamingHasher;->process(Ljava/nio/ByteBuffer;)V
 
     goto :goto_1
 
-    .line 130
+    .line 133
     :cond_2
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
@@ -212,15 +243,15 @@
 .method public final hash()Lcom/google/common/hash/HashCode;
     .locals 2
 
-    .line 181
+    .line 189
     invoke-direct {p0}, Lcom/google/common/hash/AbstractStreamingHasher;->munch()V
 
-    .line 182
+    .line 190
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
     invoke-static {v0}, Lcom/google/common/hash/Java8Compatibility;->flip(Ljava/nio/Buffer;)V
 
-    .line 183
+    .line 191
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->remaining()I
@@ -229,12 +260,12 @@
 
     if-lez v0, :cond_0
 
-    .line 184
+    .line 192
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {p0, v0}, Lcom/google/common/hash/AbstractStreamingHasher;->processRemaining(Ljava/nio/ByteBuffer;)V
 
-    .line 185
+    .line 193
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->limit()I
@@ -243,7 +274,7 @@
 
     invoke-static {v0, v1}, Lcom/google/common/hash/Java8Compatibility;->position(Ljava/nio/Buffer;I)V
 
-    .line 187
+    .line 195
     :cond_0
     invoke-virtual {p0}, Lcom/google/common/hash/AbstractStreamingHasher;->makeHash()Lcom/google/common/hash/HashCode;
 
@@ -256,10 +287,26 @@
 .end method
 
 .method protected abstract process(Ljava/nio/ByteBuffer;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bb"
+        }
+    .end annotation
 .end method
 
 .method protected processRemaining(Ljava/nio/ByteBuffer;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bb"
+        }
+    .end annotation
 
     .line 83
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->limit()I
@@ -307,13 +354,21 @@
 
 .method public final putByte(B)Lcom/google/common/hash/Hasher;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "b"
+        }
+    .end annotation
 
-    .line 146
+    .line 150
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, p1}, Ljava/nio/ByteBuffer;->put(B)Ljava/nio/ByteBuffer;
 
-    .line 147
+    .line 151
     invoke-direct {p0}, Lcom/google/common/hash/AbstractStreamingHasher;->munchIfFull()V
 
     return-object p0
@@ -321,6 +376,14 @@
 
 .method public bridge synthetic putByte(B)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "b"
+        }
+    .end annotation
 
     .line 31
     invoke-virtual {p0, p1}, Lcom/google/common/hash/AbstractStreamingHasher;->putByte(B)Lcom/google/common/hash/Hasher;
@@ -332,26 +395,34 @@
 
 .method public final putBytes(Ljava/nio/ByteBuffer;)Lcom/google/common/hash/Hasher;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "readBuffer"
+        }
+    .end annotation
 
-    .line 100
+    .line 102
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->order()Ljava/nio/ByteOrder;
 
     move-result-object v0
 
-    .line 102
+    .line 104
     :try_start_0
     sget-object v1, Ljava/nio/ByteOrder;->LITTLE_ENDIAN:Ljava/nio/ByteOrder;
 
     invoke-virtual {p1, v1}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
 
-    .line 103
+    .line 105
     invoke-direct {p0, p1}, Lcom/google/common/hash/AbstractStreamingHasher;->putBytesInternal(Ljava/nio/ByteBuffer;)Lcom/google/common/hash/Hasher;
 
     move-result-object p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 105
+    .line 107
     invoke-virtual {p1, v0}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
 
     return-object p0
@@ -361,14 +432,26 @@
 
     invoke-virtual {p1, v0}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
 
-    .line 106
+    .line 108
     throw p0
 .end method
 
 .method public final putBytes([BII)Lcom/google/common/hash/Hasher;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bytes",
+            "off",
+            "len"
+        }
+    .end annotation
 
-    .line 95
+    .line 96
     invoke-static {p1, p2, p3}, Ljava/nio/ByteBuffer;->wrap([BII)Ljava/nio/ByteBuffer;
 
     move-result-object p1
@@ -388,6 +471,14 @@
 
 .method public bridge synthetic putBytes(Ljava/nio/ByteBuffer;)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "readBuffer"
+        }
+    .end annotation
 
     .line 31
     invoke-virtual {p0, p1}, Lcom/google/common/hash/AbstractStreamingHasher;->putBytes(Ljava/nio/ByteBuffer;)Lcom/google/common/hash/Hasher;
@@ -399,6 +490,18 @@
 
 .method public bridge synthetic putBytes([BII)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x1000
+        }
+        names = {
+            "bytes",
+            "off",
+            "len"
+        }
+    .end annotation
 
     .line 31
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/common/hash/AbstractStreamingHasher;->putBytes([BII)Lcom/google/common/hash/Hasher;
@@ -410,13 +513,21 @@
 
 .method public final putChar(C)Lcom/google/common/hash/Hasher;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
 
-    .line 160
+    .line 166
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, p1}, Ljava/nio/ByteBuffer;->putChar(C)Ljava/nio/ByteBuffer;
 
-    .line 161
+    .line 167
     invoke-direct {p0}, Lcom/google/common/hash/AbstractStreamingHasher;->munchIfFull()V
 
     return-object p0
@@ -424,6 +535,14 @@
 
 .method public bridge synthetic putChar(C)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "c"
+        }
+    .end annotation
 
     .line 31
     invoke-virtual {p0, p1}, Lcom/google/common/hash/AbstractStreamingHasher;->putChar(C)Lcom/google/common/hash/Hasher;
@@ -435,13 +554,21 @@
 
 .method public final putInt(I)Lcom/google/common/hash/Hasher;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "i"
+        }
+    .end annotation
 
-    .line 167
+    .line 174
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, p1}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
 
-    .line 168
+    .line 175
     invoke-direct {p0}, Lcom/google/common/hash/AbstractStreamingHasher;->munchIfFull()V
 
     return-object p0
@@ -449,6 +576,14 @@
 
 .method public bridge synthetic putInt(I)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "i"
+        }
+    .end annotation
 
     .line 31
     invoke-virtual {p0, p1}, Lcom/google/common/hash/AbstractStreamingHasher;->putInt(I)Lcom/google/common/hash/Hasher;
@@ -460,13 +595,21 @@
 
 .method public final putLong(J)Lcom/google/common/hash/Hasher;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "l"
+        }
+    .end annotation
 
-    .line 174
+    .line 182
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, p1, p2}, Ljava/nio/ByteBuffer;->putLong(J)Ljava/nio/ByteBuffer;
 
-    .line 175
+    .line 183
     invoke-direct {p0}, Lcom/google/common/hash/AbstractStreamingHasher;->munchIfFull()V
 
     return-object p0
@@ -474,6 +617,14 @@
 
 .method public bridge synthetic putLong(J)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "l"
+        }
+    .end annotation
 
     .line 31
     invoke-virtual {p0, p1, p2}, Lcom/google/common/hash/AbstractStreamingHasher;->putLong(J)Lcom/google/common/hash/Hasher;
@@ -485,13 +636,21 @@
 
 .method public final putShort(S)Lcom/google/common/hash/Hasher;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "s"
+        }
+    .end annotation
 
-    .line 153
+    .line 158
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, p1}, Ljava/nio/ByteBuffer;->putShort(S)Ljava/nio/ByteBuffer;
 
-    .line 154
+    .line 159
     invoke-direct {p0}, Lcom/google/common/hash/AbstractStreamingHasher;->munchIfFull()V
 
     return-object p0
@@ -499,6 +658,14 @@
 
 .method public bridge synthetic putShort(S)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "s"
+        }
+    .end annotation
 
     .line 31
     invoke-virtual {p0, p1}, Lcom/google/common/hash/AbstractStreamingHasher;->putShort(S)Lcom/google/common/hash/Hasher;

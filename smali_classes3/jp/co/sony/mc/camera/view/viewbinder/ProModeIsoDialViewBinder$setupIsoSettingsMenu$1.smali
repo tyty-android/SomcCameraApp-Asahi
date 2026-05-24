@@ -95,7 +95,7 @@
 
     iput-boolean p6, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$setupIsoSettingsMenu$1;->$isFn:Z
 
-    .line 125
+    .line 128
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -110,10 +110,10 @@
 
     const/16 v0, 0x8
 
-    .line 135
+    .line 138
     invoke-virtual {p0, v0}, Landroid/widget/ImageButton;->sendAccessibilityEvent(I)V
 
-    .line 138
+    .line 141
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
@@ -128,10 +128,10 @@
 
     const/16 v0, 0x8
 
-    .line 144
+    .line 147
     invoke-virtual {p0, v0}, Landroid/widget/ImageButton;->sendAccessibilityEvent(I)V
 
-    .line 147
+    .line 150
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
@@ -146,14 +146,14 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 157
+    .line 160
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getSelectedItemPosition()I
 
     move-result v0
 
     if-ne v0, p2, :cond_0
 
-    .line 158
+    .line 161
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$setupIsoSettingsMenu$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->access$getProModeBottomPaneUiState$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;
@@ -162,7 +162,7 @@
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->hideBottomMainDial()V
 
-    .line 159
+    .line 162
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$setupIsoSettingsMenu$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->access$getProModeCommonUiState$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
@@ -173,7 +173,7 @@
 
     goto :goto_0
 
-    .line 161
+    .line 164
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$setupIsoSettingsMenu$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;
 
@@ -204,7 +204,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 166
+    .line 169
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getSelectedItemPosition()I
 
     move-result v0
@@ -213,7 +213,7 @@
 
     invoke-virtual {p1, v0, v1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->setSelectedItem(IZ)V
 
-    .line 167
+    .line 170
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$setupIsoSettingsMenu$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->access$getCameraStatusModel$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
@@ -230,7 +230,7 @@
 
     invoke-virtual {v0, v2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->onDialPickerScroll(Lkotlin/Pair;)V
 
-    .line 168
+    .line 171
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$setupIsoSettingsMenu$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->access$getProModeBottomPaneUiState$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;
@@ -253,21 +253,21 @@
 
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$setupIsoSettingsMenu$1;->$isFn:Z
 
-    .line 169
+    .line 172
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getSelectedItemPosition()I
 
     move-result p1
 
     aget-object p1, v0, p1
 
-    .line 170
+    .line 173
     invoke-static {v1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->access$getLastIso$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     move-result-object v0
 
     if-eq v0, p1, :cond_1
 
-    .line 171
+    .line 174
     new-instance v0, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
     const/16 v9, 0x3f
@@ -292,7 +292,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 173
+    .line 176
     sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->FUNCTION:Ljp/co/sony/mc/camera/idd/value/IddUserControl;
 
     goto :goto_0
@@ -300,13 +300,13 @@
     :cond_0
     sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->DIAL_1:Ljp/co/sony/mc/camera/idd/value/IddUserControl;
 
-    .line 172
+    .line 175
     :goto_0
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->changeLocation(Ljp/co/sony/mc/camera/idd/value/IddUserControl;)Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
     move-result-object p0
 
-    .line 175
+    .line 178
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->ISO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     const-string v2, "ISO"
@@ -319,10 +319,10 @@
 
     move-result-object p0
 
-    .line 176
+    .line 179
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->send()V
 
-    .line 178
+    .line 181
     :cond_1
     invoke-static {v1, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->access$setLastIso$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Ljp/co/sony/mc/camera/configuration/parameters/Iso;)V
 
@@ -337,7 +337,7 @@
 
     invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 127
+    .line 130
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$setupIsoSettingsMenu$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->access$getCameraStatusModel$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
@@ -356,7 +356,7 @@
 
     invoke-virtual {p2, v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->onDialPickerScroll(Lkotlin/Pair;)V
 
-    .line 128
+    .line 131
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$setupIsoSettingsMenu$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->access$getProModeBottomPaneUiState$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;
@@ -385,7 +385,7 @@
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$setupIsoSettingsMenu$1;->$arrowRightIcon:Landroid/widget/ImageView;
 
-    .line 129
+    .line 132
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->access$getCameraStatusModel$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     move-result-object v6
@@ -406,12 +406,12 @@
 
     if-nez v2, :cond_0
 
-    .line 130
+    .line 133
     check-cast p1, Landroid/view/View;
 
     invoke-static {p1, v6}, Ljp/co/sony/mc/camera/view/HapticFeedback;->perform(Landroid/view/View;I)V
 
-    .line 132
+    .line 135
     :cond_0
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->access$getProModeBottomPaneUiState$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;
 
@@ -429,7 +429,7 @@
 
     invoke-virtual {p1, v2, v7}, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->setSetting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    .line 133
+    .line 136
     invoke-virtual {v3}, Landroid/widget/ImageButton;->isAccessibilityFocused()Z
 
     move-result p1
@@ -438,7 +438,7 @@
 
     if-nez p3, :cond_1
 
-    .line 134
+    .line 137
     sget-object p1, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->INSTANCE:Ljp/co/sony/mc/camera/util/AccessibilityUtil;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->access$getBinding$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;
@@ -471,7 +471,7 @@
     :cond_2
     move v2, v6
 
-    .line 140
+    .line 143
     :goto_0
     invoke-virtual {v3, v2}, Landroid/widget/ImageButton;->setVisibility(I)V
 
@@ -484,11 +484,11 @@
     :cond_3
     move v2, v6
 
-    .line 141
+    .line 144
     :goto_1
     invoke-virtual {v4, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 142
+    .line 145
     invoke-virtual {v5}, Landroid/widget/ImageButton;->isAccessibilityFocused()Z
 
     move-result v2
@@ -501,7 +501,7 @@
 
     if-ne p3, v2, :cond_4
 
-    .line 143
+    .line 146
     sget-object v2, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->INSTANCE:Ljp/co/sony/mc/camera/util/AccessibilityUtil;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->access$getBinding$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;
@@ -522,7 +522,7 @@
 
     invoke-virtual {v2, v0, v4}, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->watchFocused(Landroid/view/View;Lkotlin/jvm/functions/Function0;)V
 
-    .line 150
+    .line 153
     :cond_4
     array-length v0, p2
 
@@ -537,11 +537,11 @@
     :cond_5
     move v0, v6
 
-    .line 149
+    .line 152
     :goto_2
     invoke-virtual {v5, v0}, Landroid/widget/ImageButton;->setVisibility(I)V
 
-    .line 152
+    .line 155
     array-length p2, p2
 
     sub-int/2addr p2, v1
@@ -550,7 +550,7 @@
 
     move v6, p1
 
-    .line 151
+    .line 154
     :cond_6
     invoke-virtual {p0, v6}, Landroid/widget/ImageView;->setVisibility(I)V
 

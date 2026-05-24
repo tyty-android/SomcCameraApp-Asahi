@@ -21,8 +21,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/io/LineReader;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 48
+    .line 49
     iput-object p1, p0, Lcom/google/common/io/LineReader$1;->this$0:Lcom/google/common/io/LineReader;
 
     invoke-direct {p0}, Lcom/google/common/io/LineBuffer;-><init>()V
@@ -34,8 +42,18 @@
 # virtual methods
 .method protected handleLine(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "line",
+            "end"
+        }
+    .end annotation
 
-    .line 51
+    .line 52
     iget-object p0, p0, Lcom/google/common/io/LineReader$1;->this$0:Lcom/google/common/io/LineReader;
 
     invoke-static {p0}, Lcom/google/common/io/LineReader;->access$000(Lcom/google/common/io/LineReader;)Ljava/util/Queue;

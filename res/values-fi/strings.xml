@@ -82,6 +82,7 @@ Ilmoitukset ja valintaikkunat näytetään. Valitse niissä Muodosta laitepari j
     <string name="call_notification_incoming_text">Saapuva puhelu</string>
     <string name="call_notification_ongoing_text">Käynnissä oleva puhelu</string>
     <string name="call_notification_screening_text">Seulotaan saapuvaa puhelua</string>
+    <string name="camera_string_saving_process_hint_txt">Tallennetaan... Odota, kunnes tallennus on valmis.</string>
     <string name="camera_strings_accept_privacy_policy_txt">Olet hyväksynyt tietosuojakäytännön aiemmin, mutta voit muuttaa mieltäsi milloin tahansa.</string>
     <string name="camera_strings_accessibility_48_mega_pixel_txt">48 megapikseliä</string>
     <string name="camera_strings_accessibility_adjust_bokeh_txt">Säädä pehmennystä</string>
@@ -92,6 +93,27 @@ Ilmoitukset ja valintaikkunat näytetään. Valitse niissä Muodosta laitepari j
     <string name="camera_strings_accessibility_adjust_framing_size_smaller_txt">Pienennä ruudun kokoa</string>
     <string name="camera_strings_accessibility_adjust_framing_size_txt">Säädä kehyksen kokoa</string>
     <string name="camera_strings_accessibility_adjust_shutter_speed_txt">Valotusaika</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_look_menu_txt">Sulje-painike. Sulkee tyylivalikon.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_menu_txt">Sulje mukauttamisvalikko</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_suggests_txt">Sulje ehdotetut säädöt</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_menu_txt">Tällä hetkellä käytetään omaa tyyliä. Avaa säätövalikon.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_txt">Oma tyyli. Käyttää mukautetussa valikossa rekisteröityjä tyyli-, kirkkaus- ja väriasetuksia.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_tab_txt">Mukauta-välilehti. Käyttää mukautetussa valikossa rekisteröityjä tyyli-, kirkkaus- ja väriasetuksia.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_button_txt">Mukauta painiketta. Avaa lisäsäätöjen tekemisen mahdollistavan valikon, kun käytetään suositeltuja säätöjä.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_param_txt">%1$s asetettu arvoon %2$s</string>
+    <string name="camera_strings_accessibility_ai_suggestion_first_time_txt">AI-kamera-avustaja. Tämä toiminto ehdottaa näkymän mukaisia asetuksia, kuten värit.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_four_of_some_suggests_txt">Neljäs ehdotettu säätö</string>
+    <string name="camera_strings_accessibility_ai_suggestion_look_menu_txt">"%1$s
+Avaa luovan tyylin valikon"</string>
+    <string name="camera_strings_accessibility_ai_suggestion_new_suggest_txt">Uusia suositeltuja säätöjä ehdotettiin</string>
+    <string name="camera_strings_accessibility_ai_suggestion_one_of_some_suggests_txt">Ensimmäinen ehdotettu säätö</string>
+    <string name="camera_strings_accessibility_ai_suggestion_open_suggests_txt">Laajenna ehdotetut säädöt</string>
+    <string name="camera_strings_accessibility_ai_suggestion_reset_to_default_txt">Nollaa esiehdotettuihin asetuksiin</string>
+    <string name="camera_strings_accessibility_ai_suggestion_selected_suggest_txt">Näitä suositeltuja säätöjä käytetään</string>
+    <string name="camera_strings_accessibility_ai_suggestion_suggest_lens_txt">Ehdotettu objektiivipainike. %1$sx on suositeltu.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_surface_of_some_suggests_txt">Ehdotetut säädöt. Näytä suositellut säädöt pyyhkäisemällä oikealta vasemmalle.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_three_of_some_suggests_txt">Kolmas ehdotettu säätö</string>
+    <string name="camera_strings_accessibility_ai_suggestion_two_of_some_suggests_txt">Toinen ehdotettu säätö</string>
     <string name="camera_strings_accessibility_arrow_left_button_txt">Vasen nuoli</string>
     <string name="camera_strings_accessibility_arrow_right_button_txt">Oikea nuoli</string>
     <string name="camera_strings_accessibility_audio_level_txt">Äänenvoimakkuusmittari</string>
@@ -246,6 +268,45 @@ Ilmoitukset ja valintaikkunat näytetään. Valitse niissä Muodosta laitepari j
     <string name="camera_strings_advanced_setting_geo_tag_title_txt">Tallenna sijainti</string>
     <string name="camera_strings_ai_face_restore_description_txt">Voit ottaa valokuvia, joissa on kasvojen terävöitys, jotta kasvojen piirteet erottuvat selkeämmin</string>
     <string name="camera_strings_ai_face_restore_txt">Terävöitä kasvot</string>
+    <string name="camera_strings_ai_suggestion_introduce_hint_text_txt">[Vihjeitä] AI-kamera-avustaja</string>
+    <string name="camera_strings_aisuggestion_box_name1_txt">Oma</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_message_txt">Rekisteröi nykyinen tyyli-, kirkkaus- ja väriasetus mukautetuksi.</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_overwrite_message_txt">Tyyli on jo rekisteröity mukautetuksi. Korvataanko se?</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_title_txt">Rekisteröi omana tyylinä</string>
+    <string name="camera_strings_aisuggestion_box_title_txt">Oma</string>
+    <string name="camera_strings_aisuggestion_custom_params_contrast_txt">Kontrasti</string>
+    <string name="camera_strings_aisuggestion_custom_params_ev_txt">Kirkkaus</string>
+    <string name="camera_strings_aisuggestion_custom_params_register_txt">Rekisteröi</string>
+    <string name="camera_strings_aisuggestion_custom_params_saturation_txt">Värikyll.</string>
+    <string name="camera_strings_aisuggestion_custom_params_title_txt">Kirkkaus/väri</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbab_txt">Lämpö</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbgm_txt">Värisävy</string>
+    <string name="camera_strings_aisuggestion_customlook_register_instruction_txt">Voit käyttää rekisteröityjä omia tyylejä koska tahansa Oma tyyli -välilehdeltä</string>
+    <string name="camera_strings_aisuggestion_description_txt">"Tekoäly tunnistaa näkymän automaattisesti ja ehdottaa optimoituja säätöjä oikean alakulman miniesikatselussa.
+Jos napautat tätä miniesikatselua, seuraavat asetukset säädetään automaattisesti näkymään sopivaksi:
+tyyli, valotus, valkotasapaino, värikylläisyys, kontrasti, pehmennys
+*Tämä toiminto on käytettävissä vain Valokuvatilassa.
+*Kun aloitat videotallennuksen painamalla suljinpainiketta pitkään, värikylläisyyden, kontrastin ja pehmennyksen asetuksia ei käytetä."</string>
+    <string name="camera_strings_aisuggestion_guide_description1_txt">Tekoälyn näkymän tunnistuksen perusteella suosittelemat säädöt näytetään oikean alakulman (oikean yläkulman, kun pidetään vaakasuunnassa) miniesikatselussa. Näitä kaikkia säätöjä voi käyttää kerralla napauttamalla miniesikatselua.</string>
+    <string name="camera_strings_aisuggestion_guide_description2_txt">Riippuen näkymästä voidaan myös ehdottaa tiettyä linssiasetusta. Tässä tapauksessa voit vaihtaa ehdotettua linssiasetusta mieltymysten mukaan.</string>
+    <string name="camera_strings_aisuggestion_guide_description3_txt">"Voit näyttää vaihtoehtoisia säätösuosituksia pyyhkäisemällä oikean alakulman (oikean yläkulman, kun pidetään vaakasuunnassa) miniesikatselusta vasemmalle.
+Valitsemasi ehdotus tallennetaan halutuksi säädöksi ja se sisällytetään ehdotuksiin, kun kuvaat seuraavan vastaavaa näkymää."</string>
+    <string name="camera_strings_aisuggestion_guide_description4_txt">Jos ehdotuksia ei tarvita, ne voi piilottaa napauttamalla [>]-painiketta. Kun uusi näkymä tunnistetaan, näytetään [&lt;]-painike osoittamaan, että uusia säätöehdotuksia on saatavilla. Katso ehdotukset uudelleen napauttamalla [&lt;]-painiketta.</string>
+    <string name="camera_strings_aisuggestion_guide_description5_txt">Jos napautat säätöpainiketta ehdotettujen säätöjen valitsemisen jälkeen, voit säätää lisää asetuksia, kuten kirkkaus ja väri. Säädöt tallennetaan laitteelle ja käytetään ehdotetuissa säädöissä, kun samanlainen näkymä havaitaan seuraavan kerran.</string>
+    <string name="camera_strings_aisuggestion_guide_description6_txt">Ehdotetut säädöt ja tekemäsi säädöt voidaan rekisteröidä, mikä mahdollistaa niiden lataamisen koska tahansa, jotta voit ottaa valokuvia samoilla asetuksilla. Lisää mukautettu tyyli käytettävissä olevien tyylien luetteloon napauttamalla [Rekisteröi].</string>
+    <string name="camera_strings_aisuggestion_guide_entry_txt">Katso AI-kamera-avustajan käyttö</string>
+    <string name="camera_strings_aisuggestion_guide_title_txt">AI-kamera-avustajan käyttö</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_message_txt">Nollataanko kaikki asetukset, mukaan lukien väri, kirkkaus ja halutut säädöt, oletusarvoihinsa?</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_title_txt">Nollaa parametrit</string>
+    <string name="camera_strings_aisuggestion_params_reset_txt">Nollaa parametrit</string>
+    <string name="camera_strings_aisuggestion_permitted_item_bokeh_txt">Pehm.</string>
+    <string name="camera_strings_aisuggestion_permitted_item_lens_txt">Linssi</string>
+    <string name="camera_strings_aisuggestion_permitted_item_title_txt">Sisällytä ehdotuksiin</string>
+    <string name="camera_strings_aisuggestion_recommend_lens_ratio_txt">%1$s suositellaan</string>
+    <string name="camera_strings_aisuggestion_return_to_default_txt">Palauta</string>
+    <string name="camera_strings_aisuggestion_simple_video_instruction_txt">Tallentamalla videon painamalla pitkään voivat saturaatio- kontrasti- ja pehmennysasetukset näkyä erilailla.</string>
+    <string name="camera_strings_aisuggestion_txt">AI-kamera-avustaja</string>
+    <string name="camera_strings_aisuggestion_use_aissuggestion_txt">Käyttää AI-kamera-avustajaa</string>
     <string name="camera_strings_anonymous_analytics_txt">Nimettömät analytiikkatiedot</string>
     <string name="camera_strings_application_name">Kamera</string>
     <string name="camera_strings_application_name_google_lens_txt">Google Lens</string>
@@ -421,6 +482,7 @@ Suojaus:
     <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Wi-Fi-yhteyden muodostaminen ei onnistu</string>
     <string name="camera_strings_dialog_user_data_collection_txt">Jos hyväksyt ehdot alla, Sony kerää sinulta &lt;b>&lt;a href=#personal-data>henkilötietoja&lt;/a>&lt;/b> tarjotakseen räätälöityä tukea ja parantaakseen laitteitaan sekä palveluitaan. Sony käsittelee tietojasi &lt;b>&lt;a href=https://www.sonymobile.com/privacy/>tietosuojakäytännön&lt;/a>&lt;/b> mukaisesti.</string>
     <string name="camera_strings_dialog_video_hdr_hlg_supported_short_description_txt">Jotkin laitteet/palvelut eivät ehkä pysty toistamaan HDR-sisällön alkuperäistä väriä ja kirkkautta. Käytä HDR:ää tukevia laitteita/palveluita, kun katselet HDR-sisältöä.</string>
+    <string name="camera_strings_digital_tripod_hint_edge_txt">Sommittelu on vaihdettu. Suuntaa kamera kohti alkuperäistä kohdetta.</string>
     <string name="camera_strings_digital_zoom_type_description_txt">"Valitse digitaalisen zoomauksen asetus.
 
 Tavallinen digitaalinen zoomaus: zoomaus digitaalisella käsittelyllä kennon tietojen perusteella.
@@ -484,6 +546,7 @@ Vaihda se lopettamalla suoratoisto, siirtymällä Facebook-sovellukseen ja muutt
     <string name="camera_strings_fast_capturing_screen_locked_settings_txt">Jos haluat avata asetukset, avaa ensin näyttö.</string>
     <string name="camera_strings_fast_capturing_screen_locked_streaming_txt">Aloita suoratoisto avaamalla näytön lukitus.</string>
     <string name="camera_strings_fast_capturing_screen_locked_title_txt">Näyttö lukittu</string>
+    <string name="camera_strings_feature_creative_look_custom_description_txt">Rekisteröi nykyinen tyyli- ja kirkkaus-/väriasetuksia.</string>
     <string name="camera_strings_feature_creative_look_description_txt">"Voit valita kuvien (valokuvat tai videot) käsittelyn valitsemalla ”tyyli”.
 
 Luova tyyli sisältää 6 esiasetettua ulkoasua. Kukin niistä on optimoitu erilaisella värisävyn, kylläisyyden, kontrastin, terävyyden, kirkkauden ja muiden kuvaelementtien yhdistelmällä, joten voit määrittää kuvien käsittelylle näiden elementtien ihanteellisen tasapainon."</string>
@@ -567,6 +630,7 @@ Napauta kohdetta, jota haluat seurata."</string>
     <string name="camera_strings_framing_orientation_description_txt">"Halutessasi voit rajata kohteen joko vaakasuuntaisessa tai pystysuuntaisessa kehyksessä.
 Asetuksella [Automaattinen] voit tehdä rajauksen suunnasta laitteen suuntauksen mukainen."</string>
     <string name="camera_strings_framing_select_subject_to_track_txt">Napauta kohdetta, jonka sijainnin haluat lukita</string>
+    <string name="camera_strings_framing_setting_guide_title_txt">Tietoja kohteesta Autom. kehystys</string>
     <string name="camera_strings_framing_setting_orientation_landscape_txt">Vaakasuuntainen</string>
     <string name="camera_strings_framing_setting_orientation_portrait_txt">Pystysuuntainen</string>
     <string name="camera_strings_framing_setting_orientation_title_txt">Ruudun suuntaus</string>
@@ -574,6 +638,7 @@ Asetuksella [Automaattinen] voit tehdä rajauksen suunnasta laitteen suuntauksen
 Rajatut tallenteet tallennetaan Full HD -resoluutiolla. Rajaamattomat tallenteet tallennetaan 4K-resoluutiolla."</string>
     <string name="camera_strings_framing_setting_save_original_video_off_txt">Koko näytön tallennus: pois päältä</string>
     <string name="camera_strings_framing_setting_save_original_video_title_txt">Koko näytön tallennus</string>
+    <string name="camera_strings_framing_setting_snapshot_description_txt">Olipa [Koko näytön tallennus] päällä tai pois päältä, videon tallennuksen aikana otetut kuvat tallennetaan koko näytöllä.</string>
     <string name="camera_strings_geotagging_description_txt">Tallenna kuviin ja videoihin niiden kuvauspaikka</string>
     <string name="camera_strings_geotagging_txt">Tallenna sijainti</string>
     <string name="camera_strings_gimbal_mode_tab_label">AI-kameratyö</string>
@@ -592,6 +657,7 @@ Tällöin voit kuvata vakaita videoita epävakaissakin tilanteissa, kuten hölk�
     <string name="camera_strings_gimbal_setting_assist_method_locking_hint_txt">Koht. sij. lukitus: manuaalinen</string>
     <string name="camera_strings_gimbal_setting_assist_method_locking_txt">Manuaalinen</string>
     <string name="camera_strings_gimbal_setting_assist_method_title_txt">Kohteen sij. lukitus</string>
+    <string name="camera_strings_gimbal_setting_guide_title_txt">Tietoja kohteesta AI-kameratyö</string>
     <string name="camera_strings_gridline_description_txt">Valitse, näytetäänkö kuvien sommittelussa auttavat ruudukkoviivat</string>
     <string name="camera_strings_gridline_txt">Ruudukkoviivat</string>
     <string name="camera_strings_hand_shutter_description_updated_txt">Voit käynnistää ajastimen kääntämällä kämmenesi etukameraa kohti. Voit helpottaa tunnistamista suoristamalla sormesi.</string>
@@ -727,6 +793,7 @@ Tallennuksen aikana otetuissa kuvissa käytetään aina vakiomallista dynaamista
     <string name="camera_strings_notification_channel_title_saving_process_txt">Tallentaminen</string>
     <string name="camera_strings_notification_text_saving_in_progress_txt">Odota, kunnes tallennus on valmis</string>
     <string name="camera_strings_notification_title_saving_in_progress_txt">Tallennus käynnissä</string>
+    <string name="camera_strings_notify_saving_process_cannot_launch_app_by_hw_shutter_txt">Suljinpainikkeen painaminen ei välttämättä käynnistä kameraa tallennuksen aikana</string>
     <string name="camera_strings_ok_txt">OK</string>
     <string name="camera_strings_peaking_color_blue_txt">Sininen</string>
     <string name="camera_strings_peaking_color_red_txt">Punainen</string>
@@ -735,6 +802,7 @@ Tallennuksen aikana otetuissa kuvissa käytetään aina vakiomallista dynaamista
     <string name="camera_strings_peaking_color_yellow_txt">Keltainen</string>
     <string name="camera_strings_peaking_txt">Korostus</string>
     <string name="camera_strings_personal_data_txt">Henkilökohtaiset tiedot</string>
+    <string name="camera_strings_photopro_setting_guide_title_txt">Tietoja kohteesta Pro-valokuva</string>
     <string name="camera_strings_privacy_policy_txt">Tietosuojakäytäntö</string>
     <string name="camera_strings_pro_tips_computational_photo_description_txt">"Kamera tunnistaa kuvausohjelman automaattisesti myös P-tilassa ja ottaa kauniita automaattikuvia vähentämällä epätarkkuutta, kohinaa ja yli- ja alivalotusta.
 Jos et käytä tätä, voit poistaa sen käytöstä Fn-painikkeen tai VALIKON kautta."</string>
@@ -965,6 +1033,7 @@ Jos jatkat tallentamista SD-kortille, käytä suurinopeuksista SD-korttia (vähi
     <string name="camera_strings_video_stabilization_description_sub_txt">Huomautus: Korkea laatu -asetus voi lyhentää tallennuksen kestoa laitteen lämpötilan nousun vuoksi.</string>
     <string name="camera_strings_video_stabilization_description_txt">Xperiassa on ainutlaatuinen Optical SteadyShot -hybridivakautusjärjestelmä, joka käyttää samanaikaisesti sekä optista että sähköistä kuvanvakautusta. Se varmistaa tärinättömän ja pehmeän videon myös liikuttaessa.</string>
     <string name="camera_strings_video_stabilization_high_quality_images_txt">Korkea laatu</string>
+    <string name="camera_strings_videopro_setting_guide_title_txt">Tietoja kohteesta Pro video</string>
     <string name="camera_strings_volume_distortion_correction_description_txt">Korjaa kasvojen vääristymiä, joita ilmenee näytön reunassa ultralaajaa linssiä käytettäessä. Tällöin tausta voi näyttää vääristyneeltä tai näkökulma kapeammalta.</string>
     <string name="camera_strings_volume_distortion_correction_front_description_txt">Korjaa kasvojen vääristymiä, joita ilmenee näytön reunassa. Tällöin tausta voi näyttää vääristyneeltä tai näkökulma kapeammalta.</string>
     <string name="camera_strings_volume_distortion_correction_txt">Kasvojen vääristymien korjaus</string>
@@ -1042,8 +1111,25 @@ Ei verkkoyhteyttä."</string>
     <string name="clear_text_end_icon_content_description">Tyhjennä teksti</string>
     <string name="close_drawer">Sulje navigointivalikko</string>
     <string name="close_sheet">Sulje taulukko</string>
+    <string name="common_google_play_services_enable_button">Ota käyttöön</string>
+    <string name="common_google_play_services_enable_text">%1$s ei toimi, ellet ota Google Play Palveluita käyttöön.</string>
+    <string name="common_google_play_services_enable_title">Ota Google Play Palvelut käyttöön</string>
+    <string name="common_google_play_services_install_button">Asenna</string>
+    <string name="common_google_play_services_install_text">%1$s ei toimi ilman Google Play Palveluita, jotka puuttuvat laitteeltasi.</string>
+    <string name="common_google_play_services_install_title">Asenna Google Play Palvelut</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play Palveluiden saatavuus</string>
+    <string name="common_google_play_services_notification_ticker">Virhe Google Play -palveluissa</string>
+    <string name="common_google_play_services_unknown_issue">Sovelluksella %1$s on ongelmia Google Play Palveluiden kanssa. Yritä uudelleen.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s ei toimi ilman Google Play Palveluita, joita laitteesi ei tue.</string>
+    <string name="common_google_play_services_update_button">Päivitä</string>
+    <string name="common_google_play_services_update_text">%1$s ei toimi, ellet päivitä Google Play Palveluita.</string>
+    <string name="common_google_play_services_update_title">Päivitä Google Play Palvelut</string>
+    <string name="common_google_play_services_updating_text">%1$s ei toimi ilman Google Play Palveluita, joita päivitetään tällä hetkellä.</string>
+    <string name="common_google_play_services_wear_update_text">Uusi Google Play Palveluiden versio tarvitaan. Se päivittyy pian.</string>
+    <string name="common_open_on_phone">Avaa puhelimessa</string>
+    <string name="common_signin_button_text">Kirjaudu sisään</string>
+    <string name="common_signin_button_text_long">Kirjaudu Google-tilille</string>
     <string name="copy">Kopioi</string>
-    <string name="copy_toast_msg">Linkki kopioitu leikepöydälle</string>
     <string name="default_error_message">Virheellinen syöte</string>
     <string name="default_popup_window_title">Ponnahdusikkuna</string>
     <string name="dropdown_menu">Avattava valikko</string>
@@ -1054,9 +1140,6 @@ Ei verkkoyhteyttä."</string>
     <string name="external_display_connected_description_txt">Voit tarkastella etsintä videobloginäytössä</string>
     <string name="external_display_connected_title_txt">Videobloginäyttö yhdistetty</string>
     <string name="external_display_note_about_external_mic_txt">Huomautus: Jos haluat käyttää ulkoista mikrofonia, yhdistä se videobloginäyttöön ennen tallentamista. Jos yhdistät sen myöhemmin, videobloginäyttö on yhdistettävä uudelleen.</string>
-    <string name="fallback_menu_item_copy_link">Kopioi linkki</string>
-    <string name="fallback_menu_item_open_in_browser">Avaa selaimessa</string>
-    <string name="fallback_menu_item_share_link">Jaa linkki</string>
     <string name="icon_content_description">Valintaikkunan kuvake</string>
     <string name="in_progress">Kesken</string>
     <string name="indeterminate">Osittain tarkistettu</string>

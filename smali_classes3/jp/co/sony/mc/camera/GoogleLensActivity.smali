@@ -83,6 +83,14 @@
 
 .method private changeTo(Ljp/co/sony/mc/camera/GoogleLensActivity$State;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "state"
+        }
+    .end annotation
 
     .line 68
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
@@ -215,6 +223,14 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "savedInstanceState"
+        }
+    .end annotation
 
     .line 74
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
@@ -286,6 +302,14 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "intent"
+        }
+    .end annotation
 
     .line 85
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z

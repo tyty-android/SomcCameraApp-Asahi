@@ -180,6 +180,15 @@
 
 .method private createPermissionStateList(Ljava/util/List;)Ljava/util/List;
     .locals 13
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "permissionList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -524,6 +533,14 @@
 
 .method private doAction(Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionAction;)Z
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "action"
+        }
+    .end annotation
 
     .line 479
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -1034,6 +1051,14 @@
 
 .method private getPermissionGroupLabel(Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;)Ljava/lang/String;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "group"
+        }
+    .end annotation
 
     const-string v0, "getPermissionGroupLabel label :"
 
@@ -1246,6 +1271,14 @@
 
 .method private requestPermissions([Ljava/lang/String;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "permissionList"
+        }
+    .end annotation
 
     .line 559
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -1298,6 +1331,17 @@
 
 .method private showPermissionDialog(ILjava/util/List;)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "id",
+            "groupList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -1358,7 +1402,7 @@
 
     if-ne p1, v5, :cond_2
 
-    const v5, 0x7f0c0116
+    const v5, 0x7f0c0110
 
     const/4 v6, 0x0
 
@@ -1369,7 +1413,7 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    const v5, 0x7f090052
+    const v5, 0x7f090058
 
     .line 635
     invoke-virtual {v0, v5}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
@@ -1378,12 +1422,12 @@
 
     check-cast v5, Landroid/widget/TextView;
 
-    const v6, 0x7f1103d1
+    const v6, 0x7f11041c
 
     .line 636
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 
-    const v5, 0x7f090374
+    const v5, 0x7f090376
 
     .line 638
     invoke-virtual {v0, v5}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
@@ -1402,7 +1446,7 @@
     invoke-virtual {v5, v6}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
     :cond_1
-    const p1, 0x7f090051
+    const p1, 0x7f090057
 
     .line 643
     invoke-virtual {v0, p1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
@@ -1411,7 +1455,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    const p2, 0x7f1103d2
+    const p2, 0x7f11041d
 
     .line 644
     invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(I)V
@@ -1423,7 +1467,7 @@
 
     move-result-object p2
 
-    const v5, 0x7f1103d3
+    const v5, 0x7f11041e
 
     invoke-virtual {p2, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1450,7 +1494,7 @@
 
     invoke-direct {p1, p0}, Ljp/co/sony/mc/camera/RequestPermissionActivity$2;-><init>(Ljp/co/sony/mc/camera/RequestPermissionActivity;)V
 
-    const p2, 0x7f11013a
+    const p2, 0x7f110177
 
     invoke-virtual {v3, p2, p1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1459,7 +1503,7 @@
 
     invoke-direct {p1, p0}, Ljp/co/sony/mc/camera/RequestPermissionActivity$3;-><init>(Ljp/co/sony/mc/camera/RequestPermissionActivity;)V
 
-    const p2, 0x7f110140
+    const p2, 0x7f11017d
 
     invoke-virtual {v3, p2, p1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1510,6 +1554,15 @@
 
 .method private showPermissionPostDialog(Ljava/util/List;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "groupList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1529,6 +1582,15 @@
 
 .method private showPermissionPreDialog(Ljava/util/List;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "groupList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1791,6 +1853,14 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "savedInstanceState"
+        }
+    .end annotation
 
     .line 273
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -1833,7 +1903,7 @@
     :cond_1
     invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onCreate(Landroid/os/Bundle;)V
 
-    const p1, 0x7f0c0028
+    const p1, 0x7f0c0029
 
     .line 284
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/RequestPermissionActivity;->setContentView(I)V

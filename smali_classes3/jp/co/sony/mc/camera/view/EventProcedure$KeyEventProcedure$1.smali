@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
-    .line 874
+    .line 859
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure$1;->this$1:Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,8 +45,16 @@
 # virtual methods
 .method public onTicked(Ljp/co/sony/mc/camera/view/EventProcedure$VariableUserEventTicker;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ticker"
+        }
+    .end annotation
 
-    .line 877
+    .line 862
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure$1;->this$1:Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->-$$Nest$mperformKeyZooming(Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;)V

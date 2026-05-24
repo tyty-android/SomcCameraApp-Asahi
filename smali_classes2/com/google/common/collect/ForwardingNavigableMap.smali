@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/collect/ForwardingNavigableMap$StandardNavigableKeySet;,
@@ -33,7 +36,7 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 61
+    .line 62
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingSortedMap;-><init>()V
 
     return-void
@@ -43,6 +46,19 @@
 # virtual methods
 .method public ceilingEntry(Ljava/lang/Object;)Ljava/util/Map$Entry;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -51,7 +67,10 @@
         }
     .end annotation
 
-    .line 124
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 134
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingNavigableMap;->delegate()Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -65,13 +84,29 @@
 
 .method public ceilingKey(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)TK;"
         }
     .end annotation
 
-    .line 138
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 150
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingNavigableMap;->delegate()Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -136,7 +171,7 @@
         }
     .end annotation
 
-    .line 344
+    .line 369
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingNavigableMap;->delegate()Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -158,7 +193,7 @@
         }
     .end annotation
 
-    .line 263
+    .line 288
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingNavigableMap;->delegate()Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -180,7 +215,10 @@
         }
     .end annotation
 
-    .line 180
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 198
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingNavigableMap;->delegate()Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -194,6 +232,19 @@
 
 .method public floorEntry(Ljava/lang/Object;)Ljava/util/Map$Entry;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -202,7 +253,10 @@
         }
     .end annotation
 
-    .line 96
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 102
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingNavigableMap;->delegate()Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -216,13 +270,29 @@
 
 .method public floorKey(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)TK;"
         }
     .end annotation
 
-    .line 110
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 118
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingNavigableMap;->delegate()Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -236,6 +306,21 @@
 
 .method public headMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "toKey",
+            "inclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;Z)",
@@ -244,7 +329,7 @@
         }
     .end annotation
 
-    .line 376
+    .line 405
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingNavigableMap;->delegate()Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -258,6 +343,19 @@
 
 .method public higherEntry(Ljava/lang/Object;)Ljava/util/Map$Entry;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -266,7 +364,10 @@
         }
     .end annotation
 
-    .line 152
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 166
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingNavigableMap;->delegate()Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -280,13 +381,29 @@
 
 .method public higherKey(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)TK;"
         }
     .end annotation
 
-    .line 166
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 182
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingNavigableMap;->delegate()Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -308,7 +425,10 @@
         }
     .end annotation
 
-    .line 208
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 228
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingNavigableMap;->delegate()Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -322,6 +442,19 @@
 
 .method public lowerEntry(Ljava/lang/Object;)Ljava/util/Map$Entry;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -330,7 +463,10 @@
         }
     .end annotation
 
-    .line 68
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 70
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingNavigableMap;->delegate()Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -344,13 +480,29 @@
 
 .method public lowerKey(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)TK;"
         }
     .end annotation
 
-    .line 82
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 86
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingNavigableMap;->delegate()Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -372,7 +524,7 @@
         }
     .end annotation
 
-    .line 323
+    .line 349
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingNavigableMap;->delegate()Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -394,7 +546,10 @@
         }
     .end annotation
 
-    .line 235
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 257
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingNavigableMap;->delegate()Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -416,7 +571,10 @@
         }
     .end annotation
 
-    .line 249
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 273
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingNavigableMap;->delegate()Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -430,6 +588,19 @@
 
 .method protected standardCeilingEntry(Ljava/lang/Object;)Ljava/util/Map$Entry;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -438,9 +609,12 @@
         }
     .end annotation
 
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
     const/4 v0, 0x1
 
-    .line 133
+    .line 144
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/ForwardingNavigableMap;->tailMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -454,13 +628,29 @@
 
 .method protected standardCeilingKey(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)TK;"
         }
     .end annotation
 
-    .line 147
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 160
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ForwardingNavigableMap;->ceilingEntry(Ljava/lang/Object;)Ljava/util/Map$Entry;
 
     move-result-object p0
@@ -482,7 +672,7 @@
         }
     .end annotation
 
-    .line 356
+    .line 380
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingNavigableMap;->descendingMap()Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -504,7 +694,10 @@
         }
     .end annotation
 
-    .line 189
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 208
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingNavigableMap;->entrySet()Ljava/util/Set;
 
     move-result-object p0
@@ -528,21 +721,21 @@
         }
     .end annotation
 
-    .line 198
+    .line 217
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingNavigableMap;->firstEntry()Ljava/util/Map$Entry;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 202
+    .line 221
     invoke-interface {p0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object p0
 
     return-object p0
 
-    .line 200
+    .line 219
     :cond_0
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -553,6 +746,19 @@
 
 .method protected standardFloorEntry(Ljava/lang/Object;)Ljava/util/Map$Entry;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -561,9 +767,12 @@
         }
     .end annotation
 
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
     const/4 v0, 0x1
 
-    .line 105
+    .line 112
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/ForwardingNavigableMap;->headMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -577,13 +786,29 @@
 
 .method protected standardFloorKey(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)TK;"
         }
     .end annotation
 
-    .line 119
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 128
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ForwardingNavigableMap;->floorEntry(Ljava/lang/Object;)Ljava/util/Map$Entry;
 
     move-result-object p0
@@ -597,6 +822,19 @@
 
 .method protected standardHeadMap(Ljava/lang/Object;)Ljava/util/SortedMap;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "toKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -607,7 +845,7 @@
 
     const/4 v0, 0x0
 
-    .line 390
+    .line 419
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/ForwardingNavigableMap;->headMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -617,6 +855,19 @@
 
 .method protected standardHigherEntry(Ljava/lang/Object;)Ljava/util/Map$Entry;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -625,9 +876,12 @@
         }
     .end annotation
 
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
     const/4 v0, 0x0
 
-    .line 161
+    .line 176
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/ForwardingNavigableMap;->tailMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -641,13 +895,29 @@
 
 .method protected standardHigherKey(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)TK;"
         }
     .end annotation
 
-    .line 175
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 192
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ForwardingNavigableMap;->higherEntry(Ljava/lang/Object;)Ljava/util/Map$Entry;
 
     move-result-object p0
@@ -669,7 +939,10 @@
         }
     .end annotation
 
-    .line 217
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 238
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingNavigableMap;->descendingMap()Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -697,21 +970,21 @@
         }
     .end annotation
 
-    .line 225
+    .line 246
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingNavigableMap;->lastEntry()Ljava/util/Map$Entry;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 229
+    .line 250
     invoke-interface {p0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object p0
 
     return-object p0
 
-    .line 227
+    .line 248
     :cond_0
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -722,6 +995,19 @@
 
 .method protected standardLowerEntry(Ljava/lang/Object;)Ljava/util/Map$Entry;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -730,9 +1016,12 @@
         }
     .end annotation
 
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
     const/4 v0, 0x0
 
-    .line 77
+    .line 80
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/ForwardingNavigableMap;->headMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -746,13 +1035,29 @@
 
 .method protected standardLowerKey(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)TK;"
         }
     .end annotation
 
-    .line 91
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 96
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ForwardingNavigableMap;->lowerEntry(Ljava/lang/Object;)Ljava/util/Map$Entry;
 
     move-result-object p0
@@ -774,7 +1079,10 @@
         }
     .end annotation
 
-    .line 244
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 267
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingNavigableMap;->entrySet()Ljava/util/Set;
 
     move-result-object p0
@@ -802,7 +1110,10 @@
         }
     .end annotation
 
-    .line 258
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 283
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingNavigableMap;->descendingMap()Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -826,6 +1137,25 @@
 
 .method protected standardSubMap(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedMap;
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromKey",
+            "toKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TK;)",
@@ -838,7 +1168,7 @@
 
     const/4 v1, 0x0
 
-    .line 366
+    .line 391
     invoke-virtual {p0, p1, v0, p2, v1}, Lcom/google/common/collect/ForwardingNavigableMap;->subMap(Ljava/lang/Object;ZLjava/lang/Object;Z)Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -848,6 +1178,19 @@
 
 .method protected standardTailMap(Ljava/lang/Object;)Ljava/util/SortedMap;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fromKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -858,7 +1201,7 @@
 
     const/4 v0, 0x1
 
-    .line 399
+    .line 428
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/ForwardingNavigableMap;->tailMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -868,6 +1211,29 @@
 
 .method public subMap(Ljava/lang/Object;ZLjava/lang/Object;Z)Ljava/util/NavigableMap;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .param p3    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "fromKey",
+            "fromInclusive",
+            "toKey",
+            "toInclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;ZTK;Z)",
@@ -876,7 +1242,7 @@
         }
     .end annotation
 
-    .line 371
+    .line 400
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingNavigableMap;->delegate()Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -890,6 +1256,21 @@
 
 .method public tailMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromKey",
+            "inclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;Z)",
@@ -898,7 +1279,7 @@
         }
     .end annotation
 
-    .line 381
+    .line 410
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingNavigableMap;->delegate()Ljava/util/NavigableMap;
 
     move-result-object p0

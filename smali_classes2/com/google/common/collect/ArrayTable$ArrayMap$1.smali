@@ -30,11 +30,21 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/ArrayTable$ArrayMap;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$index"
+        }
+    .end annotation
 
-    .line 210
-    iput-object p1, p0, Lcom/google/common/collect/ArrayTable$ArrayMap$1;->this$0:Lcom/google/common/collect/ArrayTable$ArrayMap;
-
+    .line 228
     iput p2, p0, Lcom/google/common/collect/ArrayTable$ArrayMap$1;->val$index:I
+
+    iput-object p1, p0, Lcom/google/common/collect/ArrayTable$ArrayMap$1;->this$0:Lcom/google/common/collect/ArrayTable$ArrayMap;
 
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMapEntry;-><init>()V
 
@@ -51,7 +61,7 @@
         }
     .end annotation
 
-    .line 213
+    .line 231
     iget-object v0, p0, Lcom/google/common/collect/ArrayTable$ArrayMap$1;->this$0:Lcom/google/common/collect/ArrayTable$ArrayMap;
 
     iget p0, p0, Lcom/google/common/collect/ArrayTable$ArrayMap$1;->val$index:I
@@ -65,13 +75,16 @@
 
 .method public getValue()Ljava/lang/Object;
     .locals 1
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TV;"
         }
     .end annotation
 
-    .line 218
+    .line 237
     iget-object v0, p0, Lcom/google/common/collect/ArrayTable$ArrayMap$1;->this$0:Lcom/google/common/collect/ArrayTable$ArrayMap;
 
     iget p0, p0, Lcom/google/common/collect/ArrayTable$ArrayMap$1;->val$index:I
@@ -85,13 +98,29 @@
 
 .method public setValue(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TV;)TV;"
         }
     .end annotation
 
-    .line 223
+    .line 243
     iget-object v0, p0, Lcom/google/common/collect/ArrayTable$ArrayMap$1;->this$0:Lcom/google/common/collect/ArrayTable$ArrayMap;
 
     iget p0, p0, Lcom/google/common/collect/ArrayTable$ArrayMap$1;->val$index:I

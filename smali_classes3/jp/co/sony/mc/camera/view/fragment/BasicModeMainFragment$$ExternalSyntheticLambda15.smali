@@ -32,7 +32,7 @@
 
     check-cast p1, Ljava/lang/Boolean;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;->$r8$lambda$Vfh4GmtCRTz2MolyRf_cXb9tqc4(Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;Ljava/lang/Boolean;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;->$r8$lambda$dCLlUBYBa5iq9lVs02YsnWmAzxM(Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;Ljava/lang/Boolean;)Lkotlin/Unit;
 
     move-result-object p0
 

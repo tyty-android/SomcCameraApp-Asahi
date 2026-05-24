@@ -47,7 +47,7 @@
 .method private static synthetic $values()[Lcom/google/common/hash/Hashing$ChecksumType;
     .locals 2
 
-    .line 381
+    .line 440
     sget-object v0, Lcom/google/common/hash/Hashing$ChecksumType;->CRC_32:Lcom/google/common/hash/Hashing$ChecksumType;
 
     sget-object v1, Lcom/google/common/hash/Hashing$ChecksumType;->ADLER_32:Lcom/google/common/hash/Hashing$ChecksumType;
@@ -62,7 +62,7 @@
 .method static constructor <clinit>()V
     .locals 4
 
-    .line 383
+    .line 442
     new-instance v0, Lcom/google/common/hash/Hashing$ChecksumType$1;
 
     const/4 v1, 0x0
@@ -75,7 +75,7 @@
 
     sput-object v0, Lcom/google/common/hash/Hashing$ChecksumType;->CRC_32:Lcom/google/common/hash/Hashing$ChecksumType;
 
-    .line 389
+    .line 448
     new-instance v0, Lcom/google/common/hash/Hashing$ChecksumType$2;
 
     const/4 v1, 0x1
@@ -88,7 +88,7 @@
 
     sput-object v0, Lcom/google/common/hash/Hashing$ChecksumType;->ADLER_32:Lcom/google/common/hash/Hashing$ChecksumType;
 
-    .line 381
+    .line 440
     invoke-static {}, Lcom/google/common/hash/Hashing$ChecksumType;->$values()[Lcom/google/common/hash/Hashing$ChecksumType;
 
     move-result-object v0
@@ -100,6 +100,19 @@
 
 .method private constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "toString"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -108,10 +121,10 @@
         }
     .end annotation
 
-    .line 398
+    .line 457
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 399
+    .line 458
     new-instance p1, Lcom/google/common/hash/ChecksumHashFunction;
 
     const/16 p2, 0x20
@@ -126,7 +139,7 @@
 .method synthetic constructor <init>(Ljava/lang/String;ILjava/lang/String;Lcom/google/common/hash/Hashing$1;)V
     .locals 0
 
-    .line 382
+    .line 441
     invoke-direct {p0, p1, p2, p3}, Lcom/google/common/hash/Hashing$ChecksumType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     return-void
@@ -134,8 +147,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/hash/Hashing$ChecksumType;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 381
+    .line 440
     const-class v0, Lcom/google/common/hash/Hashing$ChecksumType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -150,7 +171,7 @@
 .method public static values()[Lcom/google/common/hash/Hashing$ChecksumType;
     .locals 1
 
-    .line 381
+    .line 440
     sget-object v0, Lcom/google/common/hash/Hashing$ChecksumType;->$VALUES:[Lcom/google/common/hash/Hashing$ChecksumType;
 
     invoke-virtual {v0}, [Lcom/google/common/hash/Hashing$ChecksumType;->clone()Ljava/lang/Object;

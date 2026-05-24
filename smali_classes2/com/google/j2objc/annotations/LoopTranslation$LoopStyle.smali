@@ -31,8 +31,23 @@
 
 
 # direct methods
+.method private static synthetic $values()[Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;
+    .locals 2
+
+    .line 42
+    sget-object v0, Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;->JAVA_ITERATOR:Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;
+
+    sget-object v1, Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;->FAST_ENUMERATION:Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;
+
+    filled-new-array {v0, v1}, [Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
 .method static constructor <clinit>()V
-    .locals 4
+    .locals 3
 
     .line 50
     new-instance v0, Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;
@@ -46,18 +61,18 @@
     sput-object v0, Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;->JAVA_ITERATOR:Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;
 
     .line 56
-    new-instance v1, Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;
+    new-instance v0, Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;
 
-    const-string v2, "FAST_ENUMERATION"
+    const-string v1, "FAST_ENUMERATION"
 
-    const/4 v3, 0x1
+    const/4 v2, 0x1
 
-    invoke-direct {v1, v2, v3}, Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, v2}, Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;->FAST_ENUMERATION:Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;
+    sput-object v0, Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;->FAST_ENUMERATION:Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;
 
     .line 42
-    filled-new-array {v0, v1}, [Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;
+    invoke-static {}, Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;->$values()[Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;
 
     move-result-object v0
 

@@ -26,14 +26,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbStateBarBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f090114
+    const v1, 0x7f090111
 
     const/4 v2, 0x4
 
     .line 17
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090503
+    const v1, 0x7f09050b
 
     const/4 v2, 0x5
 
@@ -47,7 +47,7 @@
     .line 19
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09048f
+    const v1, 0x7f090490
 
     const/4 v2, 0x7
 
@@ -61,14 +61,14 @@
     .line 21
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09050e
+    const v1, 0x7f090516
 
     const/16 v2, 0x9
 
     .line 22
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09050f
+    const v1, 0x7f090517
 
     const/16 v2, 0xa
 
@@ -80,6 +80,16 @@
 
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root"
+        }
+    .end annotation
 
     .line 34
     sget-object v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbStateBarBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -99,6 +109,18 @@
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
     .locals 15
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root",
+            "bindings"
+        }
+    .end annotation
 
     move-object v14, p0
 
@@ -240,6 +262,17 @@
 
 .method private onChangeCameraStatusModelRecording(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "CameraStatusModelRecording",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -288,6 +321,17 @@
 
 .method private onChangeProModeCommonUiStateFnItemLabelTitleTextId(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ProModeCommonUiStateFnItemLabelTitleTextId",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -336,6 +380,17 @@
 
 .method private onChangeProModeCommonUiStateFnItemLabelValueText(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ProModeCommonUiStateFnItemLabelValueText",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -384,6 +439,17 @@
 
 .method private onChangeProModeCommonUiStateIsWbSubmenuOpened(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ProModeCommonUiStateIsWbSubmenuOpened",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -432,6 +498,17 @@
 
 .method private onChangeViewFinderUiStateIsViewFinderItemClickable(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ViewFinderUiStateIsViewFinderItemClickable",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -968,6 +1045,18 @@
 
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "localFieldId",
+            "object",
+            "fieldId"
+        }
+    .end annotation
 
     if-eqz p1, :cond_4
 
@@ -1044,6 +1133,14 @@
 
 .method public setCameraStatusModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "CameraStatusModel"
+        }
+    .end annotation
 
     .line 112
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbStateBarBindingImpl;->mCameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
@@ -1066,7 +1163,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x9
+    const/16 p1, 0xc
 
     .line 116
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbStateBarBindingImpl;->notifyPropertyChanged(I)V
@@ -1090,6 +1187,14 @@
 
 .method public setProModeCommonUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ProModeCommonUiState"
+        }
+    .end annotation
 
     .line 104
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbStateBarBindingImpl;->mProModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
@@ -1112,7 +1217,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x18
+    const/16 p1, 0x1b
 
     .line 108
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbStateBarBindingImpl;->notifyPropertyChanged(I)V
@@ -1136,8 +1241,18 @@
 
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "variableId",
+            "variable"
+        }
+    .end annotation
 
-    const/16 v0, 0x25
+    const/16 v0, 0x28
 
     if-ne v0, p1, :cond_0
 
@@ -1149,7 +1264,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x18
+    const/16 v0, 0x1b
 
     if-ne v0, p1, :cond_1
 
@@ -1161,7 +1276,7 @@
     goto :goto_0
 
     :cond_1
-    const/16 v0, 0x9
+    const/16 v0, 0xc
 
     if-ne v0, p1, :cond_2
 
@@ -1184,6 +1299,14 @@
 
 .method public setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ViewFinderUiState"
+        }
+    .end annotation
 
     .line 96
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbStateBarBindingImpl;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
@@ -1206,7 +1329,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x25
+    const/16 p1, 0x28
 
     .line 100
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbStateBarBindingImpl;->notifyPropertyChanged(I)V

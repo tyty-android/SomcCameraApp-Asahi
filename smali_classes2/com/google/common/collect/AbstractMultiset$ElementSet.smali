@@ -28,8 +28,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/AbstractMultiset;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 147
+    .line 150
     iput-object p1, p0, Lcom/google/common/collect/AbstractMultiset$ElementSet;->this$0:Lcom/google/common/collect/AbstractMultiset;
 
     invoke-direct {p0}, Lcom/google/common/collect/Multisets$ElementSet;-><init>()V
@@ -49,7 +57,7 @@
         }
     .end annotation
 
-    .line 155
+    .line 158
     iget-object p0, p0, Lcom/google/common/collect/AbstractMultiset$ElementSet;->this$0:Lcom/google/common/collect/AbstractMultiset;
 
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultiset;->elementIterator()Ljava/util/Iterator;
@@ -69,7 +77,7 @@
         }
     .end annotation
 
-    .line 150
+    .line 153
     iget-object p0, p0, Lcom/google/common/collect/AbstractMultiset$ElementSet;->this$0:Lcom/google/common/collect/AbstractMultiset;
 
     return-object p0

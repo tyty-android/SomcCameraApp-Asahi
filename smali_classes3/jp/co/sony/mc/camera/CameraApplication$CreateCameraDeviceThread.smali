@@ -34,13 +34,23 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/CameraApplication;Ljava/util/concurrent/ExecutorService;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "service"
+        }
+    .end annotation
 
-    .line 539
+    .line 564
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraApplication$CreateCameraDeviceThread;->this$0:Ljp/co/sony/mc/camera/CameraApplication;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 540
+    .line 565
     iput-object p2, p0, Ljp/co/sony/mc/camera/CameraApplication$CreateCameraDeviceThread;->mService:Ljava/util/concurrent/ExecutorService;
 
     return-void
@@ -56,7 +66,7 @@
         }
     .end annotation
 
-    .line 536
+    .line 561
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/CameraApplication$CreateCameraDeviceThread;->call()Ljava/lang/String;
 
     move-result-object p0
@@ -67,7 +77,7 @@
 .method public call()Ljava/lang/String;
     .locals 3
 
-    .line 546
+    .line 571
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraApplication$CreateCameraDeviceThread;->this$0:Ljp/co/sony/mc/camera/CameraApplication;
 
     new-instance v1, Ljp/co/sony/mc/camera/device/CameraDeviceHandler;
@@ -80,7 +90,7 @@
 
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/CameraApplication;->-$$Nest$fputmCameraDeviceHandler(Ljp/co/sony/mc/camera/CameraApplication;Ljp/co/sony/mc/camera/device/CameraDeviceHandler;)V
 
-    .line 547
+    .line 572
     new-instance v0, Ljava/lang/Thread;
 
     new-instance v1, Ljp/co/sony/mc/camera/CameraApplication$CreateCameraDeviceThread$1;
@@ -89,10 +99,10 @@
 
     invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
-    .line 552
+    .line 577
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
-    .line 553
+    .line 578
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraApplication$CreateCameraDeviceThread;->this$0:Ljp/co/sony/mc/camera/CameraApplication;
 
     const/4 v0, 0x0

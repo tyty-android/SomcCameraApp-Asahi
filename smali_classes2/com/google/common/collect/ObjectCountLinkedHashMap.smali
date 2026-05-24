@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<K:",
@@ -33,7 +36,7 @@
 
     const/4 v0, 0x3
 
-    .line 69
+    .line 77
     invoke-direct {p0, v0}, Lcom/google/common/collect/ObjectCountLinkedHashMap;-><init>(I)V
 
     return-void
@@ -41,10 +44,18 @@
 
 .method constructor <init>(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "expectedSize"
+        }
+    .end annotation
 
     const/high16 v0, 0x3f800000    # 1.0f
 
-    .line 73
+    .line 81
     invoke-direct {p0, p1, v0}, Lcom/google/common/collect/ObjectCountLinkedHashMap;-><init>(IF)V
 
     return-void
@@ -52,8 +63,18 @@
 
 .method constructor <init>(IF)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "expectedSize",
+            "loadFactor"
+        }
+    .end annotation
 
-    .line 77
+    .line 85
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/ObjectCountHashMap;-><init>(IF)V
 
     return-void
@@ -61,6 +82,15 @@
 
 .method constructor <init>(Lcom/google/common/collect/ObjectCountHashMap;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "map"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -69,10 +99,10 @@
         }
     .end annotation
 
-    .line 80
+    .line 88
     invoke-direct {p0}, Lcom/google/common/collect/ObjectCountHashMap;-><init>()V
 
-    .line 81
+    .line 89
     invoke-virtual {p1}, Lcom/google/common/collect/ObjectCountHashMap;->size()I
 
     move-result v0
@@ -81,7 +111,7 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/google/common/collect/ObjectCountLinkedHashMap;->init(IF)V
 
-    .line 82
+    .line 90
     invoke-virtual {p1}, Lcom/google/common/collect/ObjectCountHashMap;->firstIndex()I
 
     move-result v0
@@ -91,7 +121,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 83
+    .line 91
     invoke-virtual {p1, v0}, Lcom/google/common/collect/ObjectCountHashMap;->getKey(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -102,7 +132,7 @@
 
     invoke-virtual {p0, v1, v2}, Lcom/google/common/collect/ObjectCountLinkedHashMap;->put(Ljava/lang/Object;I)I
 
-    .line 82
+    .line 90
     invoke-virtual {p1, v0}, Lcom/google/common/collect/ObjectCountHashMap;->nextIndex(I)I
 
     move-result v0
@@ -113,7 +143,7 @@
     return-void
 .end method
 
-.method public static create()Lcom/google/common/collect/ObjectCountLinkedHashMap;
+.method static create()Lcom/google/common/collect/ObjectCountLinkedHashMap;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -125,7 +155,7 @@
         }
     .end annotation
 
-    .line 33
+    .line 35
     new-instance v0, Lcom/google/common/collect/ObjectCountLinkedHashMap;
 
     invoke-direct {v0}, Lcom/google/common/collect/ObjectCountLinkedHashMap;-><init>()V
@@ -133,8 +163,17 @@
     return-object v0
 .end method
 
-.method public static createWithExpectedSize(I)Lcom/google/common/collect/ObjectCountLinkedHashMap;
+.method static createWithExpectedSize(I)Lcom/google/common/collect/ObjectCountLinkedHashMap;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "expectedSize"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -145,7 +184,7 @@
         }
     .end annotation
 
-    .line 46
+    .line 49
     new-instance v0, Lcom/google/common/collect/ObjectCountLinkedHashMap;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/ObjectCountLinkedHashMap;-><init>(I)V
@@ -155,8 +194,16 @@
 
 .method private getPredecessor(I)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "entry"
+        }
+    .end annotation
 
-    .line 113
+    .line 121
     iget-object p0, p0, Lcom/google/common/collect/ObjectCountLinkedHashMap;->links:[J
 
     aget-wide p0, p0, p1
@@ -172,8 +219,16 @@
 
 .method private getSuccessor(I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "entry"
+        }
+    .end annotation
 
-    .line 117
+    .line 125
     iget-object p0, p0, Lcom/google/common/collect/ObjectCountLinkedHashMap;->links:[J
 
     aget-wide p0, p0, p1
@@ -185,8 +240,18 @@
 
 .method private setPredecessor(II)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "entry",
+            "pred"
+        }
+    .end annotation
 
-    .line 127
+    .line 135
     iget-object p0, p0, Lcom/google/common/collect/ObjectCountLinkedHashMap;->links:[J
 
     aget-wide v0, p0, p1
@@ -210,29 +275,39 @@
 
 .method private setSucceeds(II)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "pred",
+            "succ"
+        }
+    .end annotation
 
     const/4 v0, -0x2
 
     if-ne p1, v0, :cond_0
 
-    .line 132
+    .line 140
     iput p2, p0, Lcom/google/common/collect/ObjectCountLinkedHashMap;->firstEntry:I
 
     goto :goto_0
 
-    .line 134
+    .line 142
     :cond_0
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/ObjectCountLinkedHashMap;->setSuccessor(II)V
 
     :goto_0
     if-ne p2, v0, :cond_1
 
-    .line 137
+    .line 145
     iput p1, p0, Lcom/google/common/collect/ObjectCountLinkedHashMap;->lastEntry:I
 
     goto :goto_1
 
-    .line 139
+    .line 147
     :cond_1
     invoke-direct {p0, p2, p1}, Lcom/google/common/collect/ObjectCountLinkedHashMap;->setPredecessor(II)V
 
@@ -242,8 +317,18 @@
 
 .method private setSuccessor(II)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "entry",
+            "succ"
+        }
+    .end annotation
 
-    .line 122
+    .line 130
     iget-object p0, p0, Lcom/google/common/collect/ObjectCountLinkedHashMap;->links:[J
 
     aget-wide v0, p0, p1
@@ -270,15 +355,15 @@
 .method public clear()V
     .locals 1
 
-    .line 171
+    .line 179
     invoke-super {p0}, Lcom/google/common/collect/ObjectCountHashMap;->clear()V
 
     const/4 v0, -0x2
 
-    .line 172
+    .line 180
     iput v0, p0, Lcom/google/common/collect/ObjectCountLinkedHashMap;->firstEntry:I
 
-    .line 173
+    .line 181
     iput v0, p0, Lcom/google/common/collect/ObjectCountLinkedHashMap;->lastEntry:I
 
     return-void
@@ -287,7 +372,7 @@
 .method firstIndex()I
     .locals 1
 
-    .line 98
+    .line 106
     iget p0, p0, Lcom/google/common/collect/ObjectCountLinkedHashMap;->firstEntry:I
 
     const/4 v0, -0x2
@@ -302,26 +387,36 @@
 
 .method init(IF)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "expectedSize",
+            "loadFactor"
+        }
+    .end annotation
 
-    .line 89
+    .line 97
     invoke-super {p0, p1, p2}, Lcom/google/common/collect/ObjectCountHashMap;->init(IF)V
 
     const/4 p2, -0x2
 
-    .line 90
+    .line 98
     iput p2, p0, Lcom/google/common/collect/ObjectCountLinkedHashMap;->firstEntry:I
 
-    .line 91
+    .line 99
     iput p2, p0, Lcom/google/common/collect/ObjectCountLinkedHashMap;->lastEntry:I
 
-    .line 92
+    .line 100
     new-array p1, p1, [J
 
     iput-object p1, p0, Lcom/google/common/collect/ObjectCountLinkedHashMap;->links:[J
 
     const-wide/16 v0, -0x1
 
-    .line 93
+    .line 101
     invoke-static {p1, v0, v1}, Ljava/util/Arrays;->fill([JJ)V
 
     return-void
@@ -329,23 +424,42 @@
 
 .method insertEntry(ILjava/lang/Object;II)V
     .locals 0
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "entryIndex",
+            "key",
+            "value",
+            "hash"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(ITK;II)V"
         }
     .end annotation
 
-    .line 145
+    .line 153
     invoke-super {p0, p1, p2, p3, p4}, Lcom/google/common/collect/ObjectCountHashMap;->insertEntry(ILjava/lang/Object;II)V
 
-    .line 146
+    .line 154
     iget p2, p0, Lcom/google/common/collect/ObjectCountLinkedHashMap;->lastEntry:I
 
     invoke-direct {p0, p2, p1}, Lcom/google/common/collect/ObjectCountLinkedHashMap;->setSucceeds(II)V
 
     const/4 p2, -0x2
 
-    .line 147
+    .line 155
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/ObjectCountLinkedHashMap;->setSucceeds(II)V
 
     return-void
@@ -353,15 +467,23 @@
 
 .method moveLastEntry(I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dstIndex"
+        }
+    .end annotation
 
-    .line 152
+    .line 160
     invoke-virtual {p0}, Lcom/google/common/collect/ObjectCountLinkedHashMap;->size()I
 
     move-result v0
 
     add-int/lit8 v0, v0, -0x1
 
-    .line 153
+    .line 161
     invoke-direct {p0, p1}, Lcom/google/common/collect/ObjectCountLinkedHashMap;->getPredecessor(I)I
 
     move-result v1
@@ -374,21 +496,21 @@
 
     if-ge p1, v0, :cond_0
 
-    .line 155
+    .line 163
     invoke-direct {p0, v0}, Lcom/google/common/collect/ObjectCountLinkedHashMap;->getPredecessor(I)I
 
     move-result v1
 
     invoke-direct {p0, v1, p1}, Lcom/google/common/collect/ObjectCountLinkedHashMap;->setSucceeds(II)V
 
-    .line 156
+    .line 164
     invoke-direct {p0, v0}, Lcom/google/common/collect/ObjectCountLinkedHashMap;->getSuccessor(I)I
 
     move-result v0
 
     invoke-direct {p0, p1, v0}, Lcom/google/common/collect/ObjectCountLinkedHashMap;->setSucceeds(II)V
 
-    .line 158
+    .line 166
     :cond_0
     invoke-super {p0, p1}, Lcom/google/common/collect/ObjectCountHashMap;->moveLastEntry(I)V
 
@@ -397,8 +519,16 @@
 
 .method nextIndex(I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
-    .line 103
+    .line 111
     invoke-direct {p0, p1}, Lcom/google/common/collect/ObjectCountLinkedHashMap;->getSuccessor(I)I
 
     move-result p0
@@ -415,8 +545,18 @@
 
 .method nextIndexAfterRemove(II)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "oldNextIndex",
+            "removedIndex"
+        }
+    .end annotation
 
-    .line 109
+    .line 117
     invoke-virtual {p0}, Lcom/google/common/collect/ObjectCountLinkedHashMap;->size()I
 
     move-result p0
@@ -431,16 +571,24 @@
 
 .method resizeEntries(I)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "newCapacity"
+        }
+    .end annotation
 
-    .line 163
+    .line 171
     invoke-super {p0, p1}, Lcom/google/common/collect/ObjectCountHashMap;->resizeEntries(I)V
 
-    .line 164
+    .line 172
     iget-object v0, p0, Lcom/google/common/collect/ObjectCountLinkedHashMap;->links:[J
 
     array-length v1, v0
 
-    .line 165
+    .line 173
     invoke-static {v0, p1}, Ljava/util/Arrays;->copyOf([JI)[J
 
     move-result-object v0
@@ -449,7 +597,7 @@
 
     const-wide/16 v2, -0x1
 
-    .line 166
+    .line 174
     invoke-static {v0, v1, p1, v2, v3}, Ljava/util/Arrays;->fill([JIIJ)V
 
     return-void

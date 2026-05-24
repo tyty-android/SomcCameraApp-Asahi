@@ -36,6 +36,16 @@
 
 .method private static cropWithAspectRatio(Landroid/graphics/Rect;F)Landroid/graphics/Rect;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "size",
+            "aspectWidthPerHeight"
+        }
+    .end annotation
 
     .line 200
     invoke-virtual {p0}, Landroid/graphics/Rect;->width()I
@@ -133,6 +143,14 @@
 
 .method public static getCurrentSystemBarStatus(Landroid/content/Context;)Ljp/co/sony/mc/camera/view/LayoutDependencyResolver$SystemBarStatus;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 78
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
@@ -192,6 +210,14 @@
 
 .method public static getNavigationBarInsets(Landroid/content/Context;)Landroid/graphics/Insets;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 91
     const-string/jumbo v0, "window"
@@ -225,6 +251,14 @@
 
 .method public static getNavigationBarMargin(Landroid/content/Context;)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 97
     sget-object v0, Ljp/co/sony/mc/camera/view/LayoutDependencyResolver$1;->$SwitchMap$jp$co$sony$mc$camera$view$LayoutDependencyResolver$SystemBarStatus:[I
@@ -299,7 +333,7 @@
 
     move-result-object p0
 
-    const v0, 0x7f070685
+    const v0, 0x7f070631
 
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -315,6 +349,14 @@
 
 .method public static getSurfaceContainerSize(Landroid/content/Context;)Landroid/util/Size;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 125
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/LayoutDependencyResolver;->getSurfaceContainerSizeSixteenToNine(Landroid/content/Context;)Landroid/util/Size;
@@ -326,6 +368,14 @@
 
 .method public static getSurfaceContainerSizeFourToThree(Landroid/content/Context;)Landroid/util/Size;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 135
     const-string/jumbo v0, "window"
@@ -398,6 +448,14 @@
 
 .method private static getSurfaceContainerSizeSixteenToNine(Landroid/content/Context;)Landroid/util/Size;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 148
     const-string/jumbo v0, "window"
@@ -470,6 +528,16 @@
 
 .method public static getSurfaceViewRectOnDisplay(Landroid/content/Context;F)Landroid/graphics/Rect;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "previewAspectRatio"
+        }
+    .end annotation
 
     .line 219
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/LayoutDependencyResolver;->getSurfaceContainerSize(Landroid/content/Context;)Landroid/util/Size;
@@ -605,6 +673,14 @@
 
 .method public static getViewFinderSize(Landroid/content/Context;)Landroid/graphics/Rect;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 165
     const-string/jumbo v0, "window"
@@ -736,6 +812,14 @@
 
 .method public static isTablet(Landroid/content/Context;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 69
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -753,6 +837,14 @@
 
 .method public static isTenInch(Landroid/content/Context;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 73
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -770,6 +862,14 @@
 
 .method public static requestToRemoveSystemUi(Landroid/view/View;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
     if-nez p0, :cond_0
 
@@ -792,6 +892,16 @@
 
 .method public static requestToRemoveSystemUi(Landroid/view/View;Ljp/co/sony/mc/camera/view/LayoutDependencyResolver$SystemBarStatus;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "status"
+        }
+    .end annotation
 
     if-nez p0, :cond_0
 

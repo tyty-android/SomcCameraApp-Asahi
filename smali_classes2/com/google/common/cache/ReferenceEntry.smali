@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/cache/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<K:",
@@ -30,7 +33,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end method
 
@@ -43,7 +46,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end method
 
@@ -95,15 +98,35 @@
             "TK;TV;>;"
         }
     .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 .end method
 
 .method public abstract getWriteTime()J
 .end method
 
 .method public abstract setAccessTime(J)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "time"
+        }
+    .end annotation
 .end method
 
 .method public abstract setNextInAccessQueue(Lcom/google/common/cache/ReferenceEntry;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "next"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -114,6 +137,15 @@
 .end method
 
 .method public abstract setNextInWriteQueue(Lcom/google/common/cache/ReferenceEntry;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "next"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -124,6 +156,15 @@
 .end method
 
 .method public abstract setPreviousInAccessQueue(Lcom/google/common/cache/ReferenceEntry;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "previous"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -134,6 +175,15 @@
 .end method
 
 .method public abstract setPreviousInWriteQueue(Lcom/google/common/cache/ReferenceEntry;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "previous"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -144,6 +194,15 @@
 .end method
 
 .method public abstract setValueReference(Lcom/google/common/cache/LocalCache$ValueReference;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "valueReference"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -154,4 +213,12 @@
 .end method
 
 .method public abstract setWriteTime(J)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "time"
+        }
+    .end annotation
 .end method

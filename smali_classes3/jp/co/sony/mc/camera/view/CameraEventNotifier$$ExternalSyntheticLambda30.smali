@@ -6,12 +6,18 @@
 .implements Lkotlin/jvm/functions/Function1;
 
 
+# instance fields
+.field public final synthetic f$0:Z
+
+
 # direct methods
-.method public synthetic constructor <init>()V
+.method public synthetic constructor <init>(Z)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda30;->f$0:Z
 
     return-void
 .end method
@@ -22,9 +28,11 @@
     .locals 0
 
     .line 0
+    iget-boolean p0, p0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda30;->f$0:Z
+
     check-cast p1, Ljp/co/sony/mc/camera/view/CameraEventListener;
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->$r8$lambda$ZucFfrqksBRe73k-FaTyAqj4qBs(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->$r8$lambda$LqfF0P-TvOFUDp6MKwY3n3LlYFg(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 

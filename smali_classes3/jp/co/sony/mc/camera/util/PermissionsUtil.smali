@@ -55,6 +55,14 @@
 
 .method public static areCallerGeoPermissionsGranted(Landroid/app/Activity;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "activity"
+        }
+    .end annotation
 
     .line 212
     sget-object v0, Ljp/co/sony/mc/camera/util/PermissionsUtil;->REQUEST_LOCATION_PERMISSION:[Ljava/lang/String;
@@ -92,6 +100,14 @@
 
 .method public static arePermissionsGranted(Landroid/content/Context;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 199
     sget-object v0, Ljp/co/sony/mc/camera/util/PermissionsUtil;->REQUESTED_CAMERA_PERMISSIONS:[Ljava/lang/String;
@@ -105,6 +121,16 @@
 
 .method public static arePermissionsGranted(Landroid/content/Context;[Ljava/lang/String;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "permissions"
+        }
+    .end annotation
 
     .line 186
     new-instance v0, Ljava/util/ArrayList;
@@ -129,6 +155,16 @@
 
 .method public static checkAndRequestSelfPermissions(Landroid/app/Activity;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x0
+        }
+        names = {
+            "activity",
+            "requestCode"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -144,6 +180,20 @@
 
 .method public static checkAndRequestSelfPermissions(Landroid/app/Activity;II[Ljava/lang/String;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x0,
+            0x10
+        }
+        names = {
+            "activity",
+            "themeOverlayResId",
+            "requestCode",
+            "permissions"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -222,6 +272,18 @@
 
 .method public static checkAndRequestSelfPermissions(Landroid/app/Activity;I[Ljava/lang/String;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x0,
+            0x10
+        }
+        names = {
+            "activity",
+            "requestCode",
+            "permissions"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -235,6 +297,16 @@
 
 .method private static checkCallerPermission(Landroid/app/Activity;Ljava/lang/String;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "activity",
+            "permission"
+        }
+    .end annotation
 
     .line 228
     invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
@@ -311,6 +383,18 @@
 
 .method private static checkPermission(Ljava/lang/String;Landroid/content/pm/PackageManager;Ljava/lang/String;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x10
+        }
+        names = {
+            "permission",
+            "pm",
+            "packageName"
+        }
+    .end annotation
 
     const-wide/16 v0, 0x1000
 
@@ -386,6 +470,15 @@
 
 .method private static findLocationPermissions(Ljava/util/List;)Ljava/util/List;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "permissions"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -451,6 +544,21 @@
 
 .method private static getSelfPermissions(Landroid/content/Context;[Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "permissions",
+            "granted",
+            "notGranted"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

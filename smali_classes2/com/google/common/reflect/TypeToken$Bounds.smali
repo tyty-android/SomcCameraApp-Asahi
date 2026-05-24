@@ -23,14 +23,24 @@
 # direct methods
 .method constructor <init>([Ljava/lang/reflect/Type;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bounds",
+            "target"
+        }
+    .end annotation
 
-    .line 1063
+    .line 1072
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1064
+    .line 1073
     iput-object p1, p0, Lcom/google/common/reflect/TypeToken$Bounds;->bounds:[Ljava/lang/reflect/Type;
 
-    .line 1065
+    .line 1074
     iput-boolean p2, p0, Lcom/google/common/reflect/TypeToken$Bounds;->target:Z
 
     return-void
@@ -40,8 +50,16 @@
 # virtual methods
 .method isSubtypeOf(Ljava/lang/reflect/Type;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "supertype"
+        }
+    .end annotation
 
-    .line 1069
+    .line 1078
     iget-object v0, p0, Lcom/google/common/reflect/TypeToken$Bounds;->bounds:[Ljava/lang/reflect/Type;
 
     array-length v1, v0
@@ -53,7 +71,7 @@
 
     aget-object v3, v0, v2
 
-    .line 1070
+    .line 1079
     invoke-static {v3}, Lcom/google/common/reflect/TypeToken;->of(Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeToken;
 
     move-result-object v3
@@ -73,7 +91,7 @@
 
     goto :goto_0
 
-    .line 1074
+    .line 1083
     :cond_1
     iget-boolean p0, p0, Lcom/google/common/reflect/TypeToken$Bounds;->target:Z
 
@@ -84,13 +102,21 @@
 
 .method isSupertypeOf(Ljava/lang/reflect/Type;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "subtype"
+        }
+    .end annotation
 
-    .line 1078
+    .line 1087
     invoke-static {p1}, Lcom/google/common/reflect/TypeToken;->of(Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeToken;
 
     move-result-object p1
 
-    .line 1079
+    .line 1088
     iget-object v0, p0, Lcom/google/common/reflect/TypeToken$Bounds;->bounds:[Ljava/lang/reflect/Type;
 
     array-length v1, v0
@@ -102,7 +128,7 @@
 
     aget-object v3, v0, v2
 
-    .line 1080
+    .line 1089
     invoke-virtual {p1, v3}, Lcom/google/common/reflect/TypeToken;->isSubtypeOf(Ljava/lang/reflect/Type;)Z
 
     move-result v3
@@ -118,7 +144,7 @@
 
     goto :goto_0
 
-    .line 1084
+    .line 1093
     :cond_1
     iget-boolean p0, p0, Lcom/google/common/reflect/TypeToken$Bounds;->target:Z
 

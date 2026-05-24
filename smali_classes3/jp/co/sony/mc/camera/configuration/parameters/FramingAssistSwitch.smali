@@ -98,7 +98,7 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x7f1103f4
+    const v2, 0x7f11043f
 
     const-string v3, "ON"
 
@@ -111,7 +111,7 @@
 
     const/4 v1, 0x1
 
-    const v2, 0x7f1103f3
+    const v2, 0x7f11043e
 
     const-string v3, "OFF"
 

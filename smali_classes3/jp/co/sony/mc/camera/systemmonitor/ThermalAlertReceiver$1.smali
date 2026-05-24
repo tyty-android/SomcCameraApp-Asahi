@@ -21,6 +21,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver;Landroid/os/Handler;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "handler"
+        }
+    .end annotation
 
     .line 634
     iput-object p1, p0, Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver$1;->this$0:Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver;
@@ -34,6 +44,14 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "selfChange"
+        }
+    .end annotation
 
     .line 638
     iget-object p1, p0, Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver$1;->this$0:Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver;

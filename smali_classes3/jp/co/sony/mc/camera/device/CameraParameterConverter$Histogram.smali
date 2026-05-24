@@ -26,6 +26,14 @@
 
 .method public static getApi1Value(I)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "histogram"
+        }
+    .end annotation
 
     if-eqz p0, :cond_2
 
@@ -63,6 +71,14 @@
 
 .method static getApi2Value(Ljava/lang/String;)Ljava/lang/Integer;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "histogram"
+        }
+    .end annotation
 
     .line 711
     invoke-virtual {p0}, Ljava/lang/String;->hashCode()I

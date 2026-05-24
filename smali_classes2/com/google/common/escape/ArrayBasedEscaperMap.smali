@@ -3,6 +3,11 @@
 .source "ArrayBasedEscaperMap.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/escape/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # static fields
 .field private static final EMPTY_REPLACEMENT_ARRAY:[[C
 
@@ -17,7 +22,7 @@
 
     const/4 v0, 0x2
 
-    .line 83
+    .line 82
     new-array v0, v0, [I
 
     const/4 v1, 0x1
@@ -43,11 +48,19 @@
 
 .method private constructor <init>([[C)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "replacementArray"
+        }
+    .end annotation
 
-    .line 56
+    .line 55
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 57
+    .line 56
     iput-object p1, p0, Lcom/google/common/escape/ArrayBasedEscaperMap;->replacementArray:[[C
 
     return-void
@@ -55,6 +68,15 @@
 
 .method public static create(Ljava/util/Map;)Lcom/google/common/escape/ArrayBasedEscaperMap;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "replacements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -66,7 +88,7 @@
         }
     .end annotation
 
-    .line 49
+    .line 48
     new-instance v0, Lcom/google/common/escape/ArrayBasedEscaperMap;
 
     invoke-static {p0}, Lcom/google/common/escape/ArrayBasedEscaperMap;->createReplacementArray(Ljava/util/Map;)[[C
@@ -80,6 +102,15 @@
 
 .method static createReplacementArray(Ljava/util/Map;)[[C
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "map"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -90,22 +121,22 @@
         }
     .end annotation
 
-    .line 70
+    .line 69
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 71
+    .line 70
     invoke-interface {p0}, Ljava/util/Map;->isEmpty()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 72
+    .line 71
     sget-object p0, Lcom/google/common/escape/ArrayBasedEscaperMap;->EMPTY_REPLACEMENT_ARRAY:[[C
 
     return-object p0
 
-    .line 74
+    .line 73
     :cond_0
     invoke-interface {p0}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
@@ -123,10 +154,10 @@
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 75
+    .line 74
     new-array v0, v0, [[C
 
-    .line 76
+    .line 75
     invoke-interface {p0}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
     move-result-object v1
@@ -148,26 +179,22 @@
 
     check-cast v2, Ljava/lang/Character;
 
+    .line 76
     invoke-virtual {v2}, Ljava/lang/Character;->charValue()C
 
-    move-result v2
+    move-result v3
 
-    .line 77
-    invoke-static {v2}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+    invoke-interface {p0, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v3
+    move-result-object v2
 
-    invoke-interface {p0, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    check-cast v2, Ljava/lang/String;
 
-    move-result-object v3
+    invoke-virtual {v2}, Ljava/lang/String;->toCharArray()[C
 
-    check-cast v3, Ljava/lang/String;
+    move-result-object v2
 
-    invoke-virtual {v3}, Ljava/lang/String;->toCharArray()[C
-
-    move-result-object v3
-
-    aput-object v3, v0, v2
+    aput-object v2, v0, v3
 
     goto :goto_0
 
@@ -180,7 +207,7 @@
 .method getReplacementArray()[[C
     .locals 0
 
-    .line 62
+    .line 61
     iget-object p0, p0, Lcom/google/common/escape/ArrayBasedEscaperMap;->replacementArray:[[C
 
     return-object p0

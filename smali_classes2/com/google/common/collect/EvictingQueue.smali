@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<E:",
@@ -39,6 +42,14 @@
 # direct methods
 .method private constructor <init>(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "maxSize"
+        }
+    .end annotation
 
     .line 54
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingQueue;-><init>()V
@@ -73,6 +84,15 @@
 
 .method public static create(I)Lcom/google/common/collect/EvictingQueue;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "maxSize"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -95,6 +115,15 @@
 # virtual methods
 .method public add(Ljava/lang/Object;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)Z"
@@ -139,6 +168,15 @@
 
 .method public addAll(Ljava/util/Collection;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "collection"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -178,25 +216,6 @@
     .line 125
     :cond_0
     invoke-virtual {p0, p1}, Lcom/google/common/collect/EvictingQueue;->standardAddAll(Ljava/util/Collection;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public contains(Ljava/lang/Object;)Z
-    .locals 0
-
-    .line 130
-    invoke-virtual {p0}, Lcom/google/common/collect/EvictingQueue;->delegate()Ljava/util/Queue;
-
-    move-result-object p0
-
-    invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    invoke-interface {p0, p1}, Ljava/util/Queue;->contains(Ljava/lang/Object;)Z
 
     move-result p0
 
@@ -243,6 +262,15 @@
 
 .method public offer(Ljava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)Z"
@@ -272,21 +300,13 @@
     return v0
 .end method
 
-.method public remove(Ljava/lang/Object;)Z
+.method public toArray()[Ljava/lang/Object;
     .locals 0
 
-    .line 136
-    invoke-virtual {p0}, Lcom/google/common/collect/EvictingQueue;->delegate()Ljava/util/Queue;
+    .line 141
+    invoke-super {p0}, Lcom/google/common/collect/ForwardingQueue;->toArray()[Ljava/lang/Object;
 
     move-result-object p0
 
-    invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    invoke-interface {p0, p1}, Ljava/util/Queue;->remove(Ljava/lang/Object;)Z
-
-    move-result p0
-
-    return p0
+    return-object p0
 .end method

@@ -11,7 +11,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nRecommendedSettingsViewModel.kt\nKotlin\n*S Kotlin\n*F\n+ 1 RecommendedSettingsViewModel.kt\njp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 _Maps.kt\nkotlin/collections/MapsKt___MapsKt\n*L\n1#1,288:1\n1755#2,3:289\n1863#2,2:296\n1755#2,3:298\n216#3,2:292\n216#3,2:294\n*S KotlinDebug\n*F\n+ 1 RecommendedSettingsViewModel.kt\njp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel\n*L\n45#1:289,3\n164#1:296,2\n40#1:298,3\n57#1:292,2\n109#1:294,2\n*E\n"
+    value = "SMAP\nRecommendedSettingsViewModel.kt\nKotlin\n*S Kotlin\n*F\n+ 1 RecommendedSettingsViewModel.kt\njp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 _Maps.kt\nkotlin/collections/MapsKt___MapsKt\n*L\n1#1,269:1\n1755#2,3:270\n1863#2,2:277\n1755#2,3:279\n216#3,2:273\n216#3,2:275\n*S KotlinDebug\n*F\n+ 1 RecommendedSettingsViewModel.kt\njp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel\n*L\n43#1:270,3\n162#1:277,2\n38#1:279,3\n55#1:273,2\n107#1:275,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -160,14 +160,14 @@
 
     sput v0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->$stable:I
 
-    .line 270
+    .line 251
     new-instance v0, Ljava/util/LinkedHashMap;
 
     invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
 
     check-cast v0, Ljava/util/Map;
 
-    .line 271
+    .line 252
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_STABILIZER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->getRecommendedValue()Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
@@ -176,7 +176,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 272
+    .line 253
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->FACE_DETECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/FaceDetection;->getRecommendedValue()Ljp/co/sony/mc/camera/configuration/parameters/FaceDetection;
@@ -185,7 +185,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 273
+    .line 254
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_MF_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->getRecommendedValue()Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
@@ -194,7 +194,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 270
+    .line 251
     sput-object v0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->recommendedSettingsMap:Ljava/util/Map;
 
     return-void
@@ -207,38 +207,38 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 32
+    .line 30
     invoke-direct {p0, p1}, Landroidx/lifecycle/AndroidViewModel;-><init>(Landroid/app/Application;)V
 
-    .line 33
+    .line 31
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->getApplication()Landroid/app/Application;
 
     move-result-object p1
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->context:Landroid/app/Application;
 
-    .line 34
+    .line 32
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p1
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->settings:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
-    .line 36
+    .line 34
     new-instance p1, Landroidx/lifecycle/MutableLiveData;
 
     invoke-direct {p1}, Landroidx/lifecycle/MutableLiveData;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->_recommendedSettingItems:Landroidx/lifecycle/MutableLiveData;
 
-    .line 37
+    .line 35
     move-object v0, p1
 
     check-cast v0, Landroidx/lifecycle/LiveData;
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->recommendedSettingItems:Landroidx/lifecycle/LiveData;
 
-    .line 39
+    .line 37
     check-cast p1, Landroidx/lifecycle/LiveData;
 
     new-instance v0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel$$ExternalSyntheticLambda0;
@@ -251,7 +251,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->hasCheckedItems:Landroidx/lifecycle/LiveData;
 
-    .line 51
+    .line 49
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->loadRecommendedSettings()V
 
     return-void
@@ -260,7 +260,7 @@
 .method public static final synthetic access$getRecommendedSettingsMap$cp()Ljava/util/Map;
     .locals 1
 
-    .line 32
+    .line 30
     sget-object v0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->recommendedSettingsMap:Ljava/util/Map;
 
     return-object v0
@@ -282,7 +282,7 @@
         }
     .end annotation
 
-    .line 147
+    .line 145
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->settings:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     invoke-virtual {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
@@ -295,7 +295,7 @@
 
     return p1
 
-    .line 149
+    .line 147
     :cond_0
     array-length p2, p0
 
@@ -329,30 +329,30 @@
         }
     .end annotation
 
-    .line 227
+    .line 208
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_STABILIZER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
-    const v1, 0x7f11037d
+    const v1, 0x7f1103c8
 
     if-eqz v0, :cond_1
 
-    .line 228
+    .line 209
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->isFront()Z
 
     move-result p1
 
-    const p2, 0x7f110450
+    const p2, 0x7f11049b
 
     if-eqz p1, :cond_0
 
-    .line 229
+    .line 210
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->context:Landroid/app/Application;
 
-    .line 231
+    .line 212
     invoke-virtual {p0, p2}, Landroid/app/Application;->getString(I)Ljava/lang/String;
 
     move-result-object p1
@@ -361,14 +361,14 @@
 
     move-result-object p1
 
-    .line 229
+    .line 210
     invoke-virtual {p0, v1, p1}, Landroid/app/Application;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
 
     goto :goto_0
 
-    .line 234
+    .line 215
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->context:Landroid/app/Application;
 
@@ -378,7 +378,7 @@
 
     goto :goto_0
 
-    .line 238
+    .line 219
     :cond_1
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FACE_DETECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -388,19 +388,19 @@
 
     if-eqz v0, :cond_3
 
-    .line 239
+    .line 220
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->isFront()Z
 
     move-result p1
 
     if-eqz p1, :cond_2
 
-    .line 240
+    .line 221
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->context:Landroid/app/Application;
 
-    const p1, 0x7f110207
+    const p1, 0x7f110253
 
-    .line 242
+    .line 223
     invoke-virtual {p0, p1}, Landroid/app/Application;->getString(I)Ljava/lang/String;
 
     move-result-object p1
@@ -409,18 +409,18 @@
 
     move-result-object p1
 
-    .line 240
+    .line 221
     invoke-virtual {p0, v1, p1}, Landroid/app/Application;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
 
     goto :goto_0
 
-    .line 245
+    .line 226
     :cond_2
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->context:Landroid/app/Application;
 
-    const p1, 0x7f110208
+    const p1, 0x7f110254
 
     invoke-virtual {p0, p1}, Landroid/app/Application;->getString(I)Ljava/lang/String;
 
@@ -428,7 +428,7 @@
 
     goto :goto_0
 
-    .line 249
+    .line 230
     :cond_3
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_MF_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -438,19 +438,19 @@
 
     if-eqz p2, :cond_5
 
-    .line 250
+    .line 231
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->isFront()Z
 
     move-result p1
 
-    const p2, 0x7f1102a0
+    const p2, 0x7f1102e9
 
     if-eqz p1, :cond_4
 
-    .line 251
+    .line 232
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->context:Landroid/app/Application;
 
-    .line 253
+    .line 234
     invoke-virtual {p0, p2}, Landroid/app/Application;->getString(I)Ljava/lang/String;
 
     move-result-object p1
@@ -459,14 +459,14 @@
 
     move-result-object p1
 
-    .line 251
+    .line 232
     invoke-virtual {p0, v1, p1}, Landroid/app/Application;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
 
     goto :goto_0
 
-    .line 256
+    .line 237
     :cond_4
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->context:Landroid/app/Application;
 
@@ -476,7 +476,7 @@
 
     goto :goto_0
 
-    .line 249
+    .line 230
     :cond_5
     const-string p0, ""
 
@@ -487,12 +487,12 @@
 .method private static final hasCheckedItems$lambda$1(Ljava/util/List;)Z
     .locals 2
 
-    .line 40
+    .line 38
     invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 298
+    .line 279
     instance-of v0, p0, Ljava/util/Collection;
 
     const/4 v1, 0x0
@@ -511,7 +511,7 @@
 
     goto :goto_0
 
-    .line 299
+    .line 280
     :cond_0
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -530,7 +530,7 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;
 
-    .line 40
+    .line 38
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->isChecked()Z
 
     move-result v0
@@ -560,7 +560,7 @@
         }
     .end annotation
 
-    .line 158
+    .line 156
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->settings:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     invoke-virtual {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -569,7 +569,7 @@
 
     check-cast p0, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
-    .line 159
+    .line 157
     instance-of p1, p0, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingPowerLevelValue;
 
     const/4 p2, 0x0
@@ -612,7 +612,7 @@
 
     move-result p0
 
-    .line 160
+    .line 158
     instance-of p1, p4, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingPowerLevelValue;
 
     if-eqz p1, :cond_2
@@ -656,24 +656,24 @@
 
     move-object/from16 v0, p0
 
-    .line 55
+    .line 53
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v1, Ljava/util/List;
 
-    .line 56
+    .line 54
     iget-object v2, v0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->settings:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object v2
 
-    .line 57
+    .line 55
     sget-object v3, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->recommendedSettingsMap:Ljava/util/Map;
 
-    .line 292
+    .line 273
     invoke-interface {v3}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object v3
@@ -698,7 +698,7 @@
 
     check-cast v4, Ljava/util/Map$Entry;
 
-    .line 60
+    .line 58
     iget-object v6, v0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->settings:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     invoke-virtual {v6}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getAvailablePrimaryKeys()Ljava/util/ArrayList;
@@ -733,17 +733,17 @@
 
     check-cast v10, Landroid/util/Pair;
 
-    .line 61
+    .line 59
     iget-object v11, v10, Landroid/util/Pair;->first:Ljava/lang/Object;
 
     check-cast v11, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 62
+    .line 60
     iget-object v10, v10, Landroid/util/Pair;->second:Ljava/lang/Object;
 
     check-cast v10, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 63
+    .line 61
     invoke-static {v10}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isCameraSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
 
     move-result v12
@@ -752,7 +752,7 @@
 
     if-ne v11, v2, :cond_1
 
-    .line 65
+    .line 63
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->getFacingId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     move-result-object v12
@@ -766,7 +766,7 @@
     :cond_2
     if-nez v8, :cond_3
 
-    .line 71
+    .line 69
     invoke-static {v11}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-static {v10}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -792,7 +792,7 @@
 
     if-nez v9, :cond_5
 
-    .line 76
+    .line 74
     invoke-static {v11}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-static {v10}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -815,21 +815,21 @@
 
     if-eqz v9, :cond_4
 
-    .line 80
+    .line 78
     invoke-interface {v4}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v9
 
     check-cast v9, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    .line 81
+    .line 79
     invoke-interface {v4}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v12
 
     check-cast v12, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
-    .line 77
+    .line 75
     invoke-direct {v0, v11, v10, v9, v12}, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->isRecommendedSettingSelectable(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)Z
 
     move-result v9
@@ -854,13 +854,13 @@
 
     if-eqz v8, :cond_0
 
-    .line 92
+    .line 90
     new-instance v6, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;
 
-    .line 93
+    .line 91
     sget-object v10, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 94
+    .line 92
     invoke-interface {v4}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v7
@@ -871,7 +871,7 @@
 
     check-cast v11, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    .line 95
+    .line 93
     invoke-interface {v4}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v5
@@ -880,7 +880,7 @@
 
     check-cast v12, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
-    .line 96
+    .line 94
     sget-object v5, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     invoke-interface {v4}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
@@ -893,34 +893,34 @@
 
     move-result-object v13
 
-    .line 97
+    .line 95
     iget-object v5, v0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->settings:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
-    .line 99
+    .line 97
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getDefaultCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     move-result-object v7
 
-    .line 100
+    .line 98
     invoke-interface {v4}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v8
 
     check-cast v8, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    .line 97
+    .line 95
     invoke-virtual {v5, v2, v7, v8}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object v5
 
     check-cast v5, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
-    .line 101
+    .line 99
     invoke-interface {v5}, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;->getTextId()I
 
     move-result v14
 
-    .line 102
+    .line 100
     invoke-interface {v4}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v4
@@ -939,19 +939,19 @@
 
     move-object v9, v6
 
-    .line 92
+    .line 90
     invoke-direct/range {v9 .. v19}, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;-><init>(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/CameraSettings$Key;Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;Ljava/lang/String;IIZZILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 91
+    .line 89
     invoke-interface {v1, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto/16 :goto_0
 
-    .line 109
+    .line 107
     :cond_7
     sget-object v3, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->recommendedSettingsMap:Ljava/util/Map;
 
-    .line 294
+    .line 275
     invoke-interface {v3}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object v3
@@ -974,14 +974,14 @@
 
     check-cast v4, Ljava/util/Map$Entry;
 
-    .line 110
+    .line 108
     new-instance v6, Landroid/util/Pair;
 
     sget-object v7, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->FRONT:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     invoke-direct {v6, v2, v7}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 111
+    .line 109
     iget-object v7, v0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->settings:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     invoke-virtual {v7}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getAvailablePrimaryKeys()Ljava/util/ArrayList;
@@ -994,7 +994,7 @@
 
     if-eqz v6, :cond_8
 
-    .line 112
+    .line 110
     sget-object v6, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->FRONT:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     invoke-static {v6}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isCameraSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
@@ -1003,7 +1003,7 @@
 
     if-eqz v6, :cond_8
 
-    .line 113
+    .line 111
     invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     sget-object v6, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->FRONT:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
@@ -1026,13 +1026,13 @@
 
     if-eqz v6, :cond_8
 
-    .line 116
+    .line 114
     new-instance v6, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;
 
-    .line 117
+    .line 115
     sget-object v8, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->FRONT:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 118
+    .line 116
     invoke-interface {v4}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v7
@@ -1043,7 +1043,7 @@
 
     check-cast v9, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    .line 119
+    .line 117
     invoke-interface {v4}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v7
@@ -1052,7 +1052,7 @@
 
     check-cast v10, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
-    .line 120
+    .line 118
     sget-object v7, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->FRONT:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     invoke-interface {v4}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
@@ -1065,32 +1065,32 @@
 
     move-result-object v11
 
-    .line 121
+    .line 119
     iget-object v7, v0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->settings:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
-    .line 123
+    .line 121
     sget-object v12, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->FRONT:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 124
+    .line 122
     invoke-interface {v4}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v13
 
     check-cast v13, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    .line 121
+    .line 119
     invoke-virtual {v7, v2, v12, v13}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object v7
 
     check-cast v7, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
-    .line 125
+    .line 123
     invoke-interface {v7}, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;->getTextId()I
 
     move-result v12
 
-    .line 126
+    .line 124
     invoke-interface {v4}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v7
@@ -1101,24 +1101,24 @@
 
     move-result v13
 
-    .line 129
+    .line 127
     sget-object v7, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->FRONT:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 130
+    .line 128
     invoke-interface {v4}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v14
 
     check-cast v14, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    .line 131
+    .line 129
     invoke-interface {v4}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
-    .line 127
+    .line 125
     invoke-direct {v0, v2, v7, v14, v4}, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->isRecommendedSettingSelectable(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)Z
 
     move-result v14
@@ -1131,15 +1131,15 @@
 
     move-object v7, v6
 
-    .line 116
+    .line 114
     invoke-direct/range {v7 .. v17}, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;-><init>(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/CameraSettings$Key;Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;Ljava/lang/String;IIZZILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 115
+    .line 113
     invoke-interface {v1, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto/16 :goto_3
 
-    .line 138
+    .line 136
     :cond_9
     iget-object v0, v0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->_recommendedSettingItems:Landroidx/lifecycle/MutableLiveData;
 
@@ -1151,9 +1151,9 @@
 
 # virtual methods
 .method public final applyRecommendedSettings()V
-    .locals 9
+    .locals 11
 
-    .line 164
+    .line 162
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->_recommendedSettingItems:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -1166,7 +1166,7 @@
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 296
+    .line 277
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -1184,14 +1184,14 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;
 
-    .line 165
+    .line 163
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->isChecked()Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 166
+    .line 164
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->settings:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getAvailablePrimaryKeys()Ljava/util/ArrayList;
@@ -1220,24 +1220,24 @@
 
     check-cast v3, Landroid/util/Pair;
 
-    .line 167
+    .line 165
     iget-object v4, v3, Landroid/util/Pair;->first:Ljava/lang/Object;
 
     check-cast v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 168
+    .line 166
     iget-object v3, v3, Landroid/util/Pair;->second:Ljava/lang/Object;
 
     check-cast v3, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 169
+    .line 167
     invoke-static {v3}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isCameraSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
 
     move-result v5
 
     if-eqz v5, :cond_1
 
-    .line 170
+    .line 168
     iget-object v5, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->settings:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     invoke-virtual {v5}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -1246,7 +1246,7 @@
 
     if-ne v4, v5, :cond_1
 
-    .line 171
+    .line 169
     invoke-virtual {v3}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->getFacingId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     move-result-object v5
@@ -1257,27 +1257,33 @@
 
     if-eq v5, v6, :cond_2
 
-    .line 172
     iget-object v5, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->settings:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
+    .line 170
     invoke-virtual {v5}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    move-result-object v5
-
-    .line 174
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->getFacingId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     move-result-object v6
 
-    .line 176
+    .line 172
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->getFacingId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    move-result-object v8
+
+    .line 174
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->getSettingKey()Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     move-result-object v7
 
-    check-cast v7, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    move-object v10, v7
 
-    .line 171
-    invoke-static {v5, v4, v6, v3, v7}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->shouldTakeOver(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Z
+    check-cast v10, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+
+    move-object v7, v4
+
+    move-object v9, v3
+
+    .line 169
+    invoke-virtual/range {v5 .. v10}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->shouldTakeOver(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Z
 
     move-result v5
 
@@ -1285,137 +1291,50 @@
 
     goto :goto_0
 
-    .line 183
+    .line 181
     :cond_2
     invoke-static {v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 184
+    .line 182
     invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 185
+    .line 183
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->getSettingKey()Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     move-result-object v5
 
     check-cast v5, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    .line 186
+    .line 184
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->getRecommendedValue()Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     move-result-object v6
 
-    .line 182
+    .line 180
     invoke-direct {p0, v4, v3, v5, v6}, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->checkRecommendedSetting(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)Z
 
     move-result v5
 
     if-eqz v5, :cond_1
 
-    .line 189
+    .line 187
     iget-object v5, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->settings:Ljp/co/sony/mc/camera/setting/CameraProSetting;
-
-    .line 190
-    sget-object v6, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_MF_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    check-cast v6, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
-
-    .line 189
-    invoke-virtual {v5, v4, v3, v6}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
-
-    .line 192
-    iget-object v6, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->settings:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->getSettingKey()Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    move-result-object v7
-
-    check-cast v7, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->getRecommendedValue()Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
-
-    move-result-object v8
-
-    invoke-virtual {v6, v4, v3, v7, v8}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
-
-    .line 194
-    iget-object v6, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->settings:Ljp/co/sony/mc/camera/setting/CameraProSetting;
-
-    .line 195
-    sget-object v7, Ljp/co/sony/mc/camera/setting/CameraSettings;->ZOOM_RATIO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    check-cast v7, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
-
-    .line 194
-    invoke-virtual {v6, v4, v3, v7}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
-
     move-result-object v6
-
-    check-cast v6, Ljava/lang/Float;
-
-    .line 196
-    iget-object v7, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->settings:Ljp/co/sony/mc/camera/setting/CameraProSetting;
-
-    .line 197
-    sget-object v8, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_MF_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    check-cast v8, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
-
-    .line 196
-    invoke-virtual {v7, v4, v3, v8}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
-
-    move-result-object v7
-
-    check-cast v7, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
-
-    .line 200
-    sget-object v8, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    if-ne v3, v8, :cond_1
-
-    if-eq v5, v7, :cond_1
-
-    .line 202
-    invoke-virtual {v7}, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->getBooleanValue()Z
-
-    move-result v5
-
-    if-nez v5, :cond_1
-
-    .line 203
-    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio;->Companion:Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio$Companion;
-
-    invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
-    invoke-virtual {v6}, Ljava/lang/Float;->floatValue()F
-
-    move-result v6
-
-    invoke-virtual {v5, v3, v6}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio$Companion;->isInHybridZoomRange(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;F)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_1
-
-    .line 204
-    iget-object v5, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->settings:Ljp/co/sony/mc/camera/setting/CameraProSetting;
-
-    sget-object v6, Ljp/co/sony/mc/camera/setting/CameraSettings;->HYBRID_ZOOM:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     check-cast v6, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    .line 205
-    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;->AUTO:Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->getRecommendedValue()Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
-    .line 204
+    move-result-object v7
+
     invoke-virtual {v5, v4, v3, v6, v7}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    goto/16 :goto_0
+    goto :goto_0
 
-    .line 212
+    .line 193
     :cond_3
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->loadRecommendedSettings()V
 
@@ -1433,7 +1352,7 @@
         }
     .end annotation
 
-    .line 39
+    .line 37
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->hasCheckedItems:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1442,7 +1361,7 @@
 .method public final getHasSelectableItems()Z
     .locals 2
 
-    .line 45
+    .line 43
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->_recommendedSettingItems:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {p0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -1457,7 +1376,7 @@
 
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 289
+    .line 270
     instance-of v1, p0, Ljava/util/Collection;
 
     if-eqz v1, :cond_0
@@ -1474,7 +1393,7 @@
 
     goto :goto_0
 
-    .line 290
+    .line 271
     :cond_0
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -1493,7 +1412,7 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;
 
-    .line 46
+    .line 44
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->getSelectable()Z
 
     move-result v1
@@ -1521,7 +1440,7 @@
         }
     .end annotation
 
-    .line 37
+    .line 35
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->recommendedSettingItems:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1530,7 +1449,7 @@
 .method public final setChecked(I)V
     .locals 2
 
-    .line 216
+    .line 197
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->_recommendedSettingItems:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -1541,14 +1460,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 218
+    .line 199
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;
 
-    .line 219
+    .line 200
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->isChecked()Z
 
     move-result v1
@@ -1557,7 +1476,7 @@
 
     invoke-virtual {p1, v1}, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->setChecked(Z)V
 
-    .line 220
+    .line 201
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->_recommendedSettingItems:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {p0, v0}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V

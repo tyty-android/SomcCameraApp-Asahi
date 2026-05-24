@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 964
+    .line 946
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$4;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,24 +46,24 @@
 .method public onMaxDurationReached()V
     .locals 1
 
-    .line 968
+    .line 950
     const-string v0, "onMaxDurationReached() E"
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->-$$Nest$smtrace(Ljava/lang/String;)V
 
-    .line 969
+    .line 951
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$4;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->-$$Nest$mdisplayMaxDuration(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;)V
 
-    .line 970
+    .line 952
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$4;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     sget-object v0, Ljp/co/sony/mc/camera/recorder/RecorderController$Result;->MAX_DURATION_REACHED:Ljp/co/sony/mc/camera/recorder/RecorderController$Result;
 
     invoke-static {p0, v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->-$$Nest$mnotifyFinishResult(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;Ljp/co/sony/mc/camera/recorder/RecorderController$Result;)V
 
-    .line 971
+    .line 953
     const-string p0, "onMaxDurationReached() X"
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->-$$Nest$smtrace(Ljava/lang/String;)V
@@ -66,19 +74,19 @@
 .method public onMaxFileSizeReached()V
     .locals 1
 
-    .line 976
+    .line 958
     const-string v0, "onMaxFileSizeReached() E"
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->-$$Nest$smtrace(Ljava/lang/String;)V
 
-    .line 977
+    .line 959
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$4;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     sget-object v0, Ljp/co/sony/mc/camera/recorder/RecorderController$Result;->MAX_FILESIZE_REACHED:Ljp/co/sony/mc/camera/recorder/RecorderController$Result;
 
     invoke-static {p0, v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->-$$Nest$mnotifyFinishResult(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;Ljp/co/sony/mc/camera/recorder/RecorderController$Result;)V
 
-    .line 978
+    .line 960
     const-string p0, "onMaxFileSizeReached() X"
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->-$$Nest$smtrace(Ljava/lang/String;)V

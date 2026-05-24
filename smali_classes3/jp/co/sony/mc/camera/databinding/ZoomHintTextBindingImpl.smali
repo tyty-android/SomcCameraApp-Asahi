@@ -24,6 +24,16 @@
 
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root"
+        }
+    .end annotation
 
     .line 27
     sget-object v0, Ljp/co/sony/mc/camera/databinding/ZoomHintTextBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -43,6 +53,18 @@
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root",
+            "bindings"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -90,6 +112,17 @@
 
 .method private onChangeLensUiStateZoomHintTextVisible(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "LensUiStateZoomHintTextVisible",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -138,6 +171,17 @@
 
 .method private onChangeOrientationViewModelLayoutOrientation(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "OrientationViewModelLayoutOrientation",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -186,6 +230,17 @@
 
 .method private onChangeZoomHintTextUiStateZoomRatioLabel(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ZoomHintTextUiStateZoomRatioLabel",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -306,7 +361,7 @@
     move-object v4, v8
 
     :goto_1
-    const-wide/16 v9, 0x222
+    const-wide/16 v9, 0x212
 
     and-long/2addr v9, v0
 
@@ -517,6 +572,18 @@
 
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "localFieldId",
+            "object",
+            "fieldId"
+        }
+    .end annotation
 
     if-eqz p1, :cond_2
 
@@ -565,6 +632,14 @@
 
 .method public setBasicModeColorToneProfileUiState(Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "BasicModeColorToneProfileUiState"
+        }
+    .end annotation
 
     .line 117
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ZoomHintTextBindingImpl;->mBasicModeColorToneProfileUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;
@@ -572,10 +647,35 @@
     return-void
 .end method
 
-.method public setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
+.method public setBasicModeFocusSsUiState(Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "BasicModeFocusSsUiState"
+        }
+    .end annotation
 
     .line 106
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ZoomHintTextBindingImpl;->mBasicModeFocusSsUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;
+
+    return-void
+.end method
+
+.method public setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "CameraSettingsModel"
+        }
+    .end annotation
+
+    .line 103
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ZoomHintTextBindingImpl;->mCameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     return-void
@@ -583,6 +683,14 @@
 
 .method public setLensUiState(Ljp/co/sony/mc/camera/view/uistate/LensUiState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "LensUiState"
+        }
+    .end annotation
 
     .line 109
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ZoomHintTextBindingImpl;->mLensUiState:Ljp/co/sony/mc/camera/view/uistate/LensUiState;
@@ -605,7 +713,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x11
+    const/16 p1, 0x14
 
     .line 113
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ZoomHintTextBindingImpl;->notifyPropertyChanged(I)V
@@ -629,6 +737,14 @@
 
 .method public setOrientationViewModel(Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "OrientationViewModel"
+        }
+    .end annotation
 
     .line 87
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ZoomHintTextBindingImpl;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
@@ -651,7 +767,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x16
+    const/16 p1, 0x19
 
     .line 91
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ZoomHintTextBindingImpl;->notifyPropertyChanged(I)V
@@ -675,8 +791,18 @@
 
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "variableId",
+            "variable"
+        }
+    .end annotation
 
-    const/16 v0, 0x16
+    const/16 v0, 0x19
 
     if-ne v0, p1, :cond_0
 
@@ -688,43 +814,43 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x25
+    const/16 v0, 0x29
 
     if-ne v0, p1, :cond_1
 
     .line 66
-    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
-
-    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/ZoomHintTextBindingImpl;->setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
-
-    goto :goto_0
-
-    :cond_1
-    const/16 v0, 0x27
-
-    if-ne v0, p1, :cond_2
-
-    .line 69
     check-cast p2, Ljp/co/sony/mc/camera/view/uistate/ZoomHintTextUiState;
 
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/ZoomHintTextBindingImpl;->setZoomHintTextUiState(Ljp/co/sony/mc/camera/view/uistate/ZoomHintTextUiState;)V
 
     goto :goto_0
 
-    :cond_2
-    const/16 v0, 0x8
+    :cond_1
+    const/16 v0, 0xb
 
-    if-ne v0, p1, :cond_3
+    if-ne v0, p1, :cond_2
 
-    .line 72
+    .line 69
     check-cast p2, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/ZoomHintTextBindingImpl;->setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
 
     goto :goto_0
 
+    :cond_2
+    const/4 v0, 0x6
+
+    if-ne v0, p1, :cond_3
+
+    .line 72
+    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;
+
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/ZoomHintTextBindingImpl;->setBasicModeFocusSsUiState(Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;)V
+
+    goto :goto_0
+
     :cond_3
-    const/16 v0, 0x11
+    const/16 v0, 0x14
 
     if-ne v0, p1, :cond_4
 
@@ -736,7 +862,7 @@
     goto :goto_0
 
     :cond_4
-    const/4 v0, 0x3
+    const/4 v0, 0x4
 
     if-ne v0, p1, :cond_5
 
@@ -757,45 +883,44 @@
     return p0
 .end method
 
-.method public setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
-    .locals 0
-
-    .line 95
-    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ZoomHintTextBindingImpl;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
-
-    return-void
-.end method
-
 .method public setZoomHintTextUiState(Ljp/co/sony/mc/camera/view/uistate/ZoomHintTextUiState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ZoomHintTextUiState"
+        }
+    .end annotation
 
-    .line 98
+    .line 95
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ZoomHintTextBindingImpl;->mZoomHintTextUiState:Ljp/co/sony/mc/camera/view/uistate/ZoomHintTextUiState;
 
-    .line 99
+    .line 96
     monitor-enter p0
 
-    .line 100
+    .line 97
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/ZoomHintTextBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v2, 0x20
+    const-wide/16 v2, 0x10
 
     or-long/2addr v0, v2
 
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/ZoomHintTextBindingImpl;->mDirtyFlags:J
 
-    .line 101
+    .line 98
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x27
+    const/16 p1, 0x29
 
-    .line 102
+    .line 99
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ZoomHintTextBindingImpl;->notifyPropertyChanged(I)V
 
-    .line 103
+    .line 100
     invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/ZoomHintTextBinding;->requestRebind()V
 
     return-void
@@ -803,7 +928,7 @@
     :catchall_0
     move-exception p1
 
-    .line 101
+    .line 98
     :try_start_1
     monitor-exit p0
     :try_end_1

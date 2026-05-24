@@ -56,6 +56,33 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;Ljava/lang/String;Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem$ItemType;Ljava/lang/String;Ljava/lang/String;ZLjp/co/sony/mc/camera/setting/SettingAppearance;ZLjava/util/ArrayList;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "value",
+            "nameString",
+            "itemType",
+            "subDescriptionText",
+            "additionalTextForAccessibility",
+            "isSelected",
+            "appearance",
+            "isOffValue",
+            "dependencyGuideList",
+            "isVisible"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

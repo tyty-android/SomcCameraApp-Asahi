@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/util/concurrent/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/util/concurrent/ListenerCallQueue$PerListenerQueue;,
@@ -22,7 +25,7 @@
 
 
 # static fields
-.field private static final logger:Ljava/util/logging/Logger;
+.field private static final logger:Lcom/google/common/util/concurrent/LazyLogger;
 
 
 # instance fields
@@ -41,20 +44,16 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 2
 
-    .line 58
-    const-class v0, Lcom/google/common/util/concurrent/ListenerCallQueue;
+    .line 60
+    new-instance v0, Lcom/google/common/util/concurrent/LazyLogger;
 
-    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+    const-class v1, Lcom/google/common/util/concurrent/ListenerCallQueue;
 
-    move-result-object v0
+    invoke-direct {v0, v1}, Lcom/google/common/util/concurrent/LazyLogger;-><init>(Ljava/lang/Class;)V
 
-    invoke-static {v0}, Ljava/util/logging/Logger;->getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/common/util/concurrent/ListenerCallQueue;->logger:Ljava/util/logging/Logger;
+    sput-object v0, Lcom/google/common/util/concurrent/ListenerCallQueue;->logger:Lcom/google/common/util/concurrent/LazyLogger;
 
     return-void
 .end method
@@ -62,15 +61,15 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 56
+    .line 58
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 61
+    .line 63
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 62
+    .line 64
     invoke-static {v0}, Ljava/util/Collections;->synchronizedList(Ljava/util/List;)Ljava/util/List;
 
     move-result-object v0
@@ -80,17 +79,28 @@
     return-void
 .end method
 
-.method static synthetic access$000()Ljava/util/logging/Logger;
+.method static synthetic access$000()Lcom/google/common/util/concurrent/LazyLogger;
     .locals 1
 
-    .line 56
-    sget-object v0, Lcom/google/common/util/concurrent/ListenerCallQueue;->logger:Ljava/util/logging/Logger;
+    .line 58
+    sget-object v0, Lcom/google/common/util/concurrent/ListenerCallQueue;->logger:Lcom/google/common/util/concurrent/LazyLogger;
 
     return-object v0
 .end method
 
 .method private enqueueHelper(Lcom/google/common/util/concurrent/ListenerCallQueue$Event;Ljava/lang/Object;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "event",
+            "label"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -103,22 +113,22 @@
         }
     .end annotation
 
-    .line 103
+    .line 105
     const-string v0, "event"
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 104
+    .line 106
     const-string v0, "label"
 
     invoke-static {p2, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 105
+    .line 107
     iget-object v0, p0, Lcom/google/common/util/concurrent/ListenerCallQueue;->listeners:Ljava/util/List;
 
     monitor-enter v0
 
-    .line 106
+    .line 108
     :try_start_0
     iget-object p0, p0, Lcom/google/common/util/concurrent/ListenerCallQueue;->listeners:Ljava/util/List;
 
@@ -139,12 +149,12 @@
 
     check-cast v1, Lcom/google/common/util/concurrent/ListenerCallQueue$PerListenerQueue;
 
-    .line 107
+    .line 109
     invoke-virtual {v1, p1, p2}, Lcom/google/common/util/concurrent/ListenerCallQueue$PerListenerQueue;->add(Lcom/google/common/util/concurrent/ListenerCallQueue$Event;Ljava/lang/Object;)V
 
     goto :goto_0
 
-    .line 109
+    .line 111
     :cond_0
     monitor-exit v0
 
@@ -164,6 +174,17 @@
 # virtual methods
 .method public addListener(Ljava/lang/Object;Ljava/util/concurrent/Executor;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "listener",
+            "executor"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(T",
@@ -173,17 +194,17 @@
         }
     .end annotation
 
-    .line 75
+    .line 77
     const-string v0, "listener"
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 76
+    .line 78
     const-string v0, "executor"
 
     invoke-static {p2, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 77
+    .line 79
     iget-object p0, p0, Lcom/google/common/util/concurrent/ListenerCallQueue;->listeners:Ljava/util/List;
 
     new-instance v0, Lcom/google/common/util/concurrent/ListenerCallQueue$PerListenerQueue;
@@ -200,7 +221,7 @@
 
     const/4 v0, 0x0
 
-    .line 119
+    .line 121
     :goto_0
     iget-object v1, p0, Lcom/google/common/util/concurrent/ListenerCallQueue;->listeners:Ljava/util/List;
 
@@ -210,7 +231,7 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 120
+    .line 122
     iget-object v1, p0, Lcom/google/common/util/concurrent/ListenerCallQueue;->listeners:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -231,6 +252,15 @@
 
 .method public enqueue(Lcom/google/common/util/concurrent/ListenerCallQueue$Event;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -241,7 +271,7 @@
         }
     .end annotation
 
-    .line 89
+    .line 91
     invoke-direct {p0, p1, p1}, Lcom/google/common/util/concurrent/ListenerCallQueue;->enqueueHelper(Lcom/google/common/util/concurrent/ListenerCallQueue$Event;Ljava/lang/Object;)V
 
     return-void
@@ -249,6 +279,17 @@
 
 .method public enqueue(Lcom/google/common/util/concurrent/ListenerCallQueue$Event;Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "event",
+            "label"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -261,7 +302,7 @@
         }
     .end annotation
 
-    .line 99
+    .line 101
     invoke-direct {p0, p1, p2}, Lcom/google/common/util/concurrent/ListenerCallQueue;->enqueueHelper(Lcom/google/common/util/concurrent/ListenerCallQueue$Event;Ljava/lang/Object;)V
 
     return-void

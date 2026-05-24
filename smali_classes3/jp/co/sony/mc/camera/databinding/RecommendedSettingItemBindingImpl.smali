@@ -24,49 +24,49 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/RecommendedSettingItemBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f09040f
+    const v1, 0x7f090411
 
     const/4 v2, 0x1
 
     .line 17
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090411
+    const v1, 0x7f090413
 
     const/4 v2, 0x2
 
     .line 18
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09014d
+    const v1, 0x7f090152
 
     const/4 v2, 0x3
 
     .line 19
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09014c
+    const v1, 0x7f090151
 
     const/4 v2, 0x4
 
     .line 20
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0903b4
+    const v1, 0x7f0903b3
 
     const/4 v2, 0x5
 
     .line 21
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0903b3
+    const v1, 0x7f0903b2
 
     const/4 v2, 0x6
 
     .line 22
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090166
+    const v1, 0x7f09016c
 
     const/4 v2, 0x7
 
@@ -78,6 +78,16 @@
 
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root"
+        }
+    .end annotation
 
     .line 32
     sget-object v0, Ljp/co/sony/mc/camera/databinding/RecommendedSettingItemBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -97,6 +107,18 @@
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
     .locals 13
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root",
+            "bindings"
+        }
+    .end annotation
 
     move-object v12, p0
 
@@ -304,6 +326,18 @@
 
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "localFieldId",
+            "object",
+            "fieldId"
+        }
+    .end annotation
 
     const/4 p0, 0x0
 
@@ -312,6 +346,16 @@
 
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "variableId",
+            "variable"
+        }
+    .end annotation
 
     const/4 p0, 0x1
 

@@ -3,6 +3,11 @@
 .source "ArrayBasedCharEscaper.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/escape/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # instance fields
 .field private final replacements:[[C
 
@@ -16,6 +21,18 @@
 # direct methods
 .method protected constructor <init>(Lcom/google/common/escape/ArrayBasedEscaperMap;CC)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "escaperMap",
+            "safeMin",
+            "safeMax"
+        }
+    .end annotation
 
     .line 85
     invoke-direct {p0}, Lcom/google/common/escape/CharEscaper;-><init>()V
@@ -53,6 +70,19 @@
 
 .method protected constructor <init>(Ljava/util/Map;CC)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "replacementMap",
+            "safeMin",
+            "safeMax"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -77,6 +107,14 @@
 # virtual methods
 .method public final escape(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "s"
+        }
+    .end annotation
 
     .line 106
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -138,13 +176,24 @@
 
 .method protected final escape(C)[C
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
 
-    .line 123
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 126
     iget v0, p0, Lcom/google/common/escape/ArrayBasedCharEscaper;->replacementsLength:I
 
     if-ge p1, v0, :cond_0
 
-    .line 124
+    .line 127
     iget-object v0, p0, Lcom/google/common/escape/ArrayBasedCharEscaper;->replacements:[[C
 
     aget-object v0, v0, p1
@@ -153,7 +202,7 @@
 
     return-object v0
 
-    .line 129
+    .line 132
     :cond_0
     iget-char v0, p0, Lcom/google/common/escape/ArrayBasedCharEscaper;->safeMin:C
 
@@ -167,7 +216,7 @@
 
     return-object p0
 
-    .line 132
+    .line 135
     :cond_1
     invoke-virtual {p0, p1}, Lcom/google/common/escape/ArrayBasedCharEscaper;->escapeUnsafe(C)[C
 
@@ -177,4 +226,15 @@
 .end method
 
 .method protected abstract escapeUnsafe(C)[C
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 .end method

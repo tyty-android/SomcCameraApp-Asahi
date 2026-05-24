@@ -76,7 +76,7 @@
 .method public constructor <init>(IFF)V
     .locals 0
 
-    .line 120
+    .line 123
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Ljp/co/sony/mc/camera/view/uistate/LevelMeterUiState$OrientationInfo;->orientation:I
@@ -217,7 +217,7 @@
 .method public final getOrientation()I
     .locals 0
 
-    .line 120
+    .line 123
     iget p0, p0, Ljp/co/sony/mc/camera/view/uistate/LevelMeterUiState$OrientationInfo;->orientation:I
 
     return p0
@@ -226,7 +226,7 @@
 .method public final getPitch()F
     .locals 0
 
-    .line 120
+    .line 123
     iget p0, p0, Ljp/co/sony/mc/camera/view/uistate/LevelMeterUiState$OrientationInfo;->pitch:F
 
     return p0
@@ -235,7 +235,7 @@
 .method public final getRoll()F
     .locals 0
 
-    .line 120
+    .line 123
     iget p0, p0, Ljp/co/sony/mc/camera/view/uistate/LevelMeterUiState$OrientationInfo;->roll:F
 
     return p0

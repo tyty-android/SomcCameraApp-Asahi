@@ -3,7 +3,7 @@
 .source "CommonSettings.java"
 
 # interfaces
-.implements Ljp/co/sony/mc/camera/setting/SettingsBase$SetCommand;
+.implements Ljp/co/sony/mc/camera/setting/SettingsBase$GetOptionsCommand;
 
 
 # annotations
@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 939
+    .line 865
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,8 +29,19 @@
 
 
 # virtual methods
-.method public setValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljava/util/Map;)Z
+.method public getOptions(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -38,23 +49,16 @@
             ">(",
             "Ljp/co/sony/mc/camera/setting/SettingsBase;",
             "Ljp/co/sony/mc/camera/setting/SettingKey$Key<",
-            "TT;>;TT;",
-            "Ljava/util/Map<",
-            "Ljp/co/sony/mc/camera/setting/CameraProSettingChangedListener;",
-            "Landroid/os/Handler;",
-            ">;)Z"
+            "TT;>;)[TT;"
         }
     .end annotation
 
-    .line 943
-    check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
+    .line 869
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->values()[Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 944
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
+    move-result-object p0
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$msetProPhotoDispCustomExtensionData(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;)Z
+    check-cast p0, [Ljava/lang/Object;
 
-    move-result p0
-
-    return p0
+    return-object p0
 .end method

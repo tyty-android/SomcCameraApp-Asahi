@@ -34,12 +34,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nPathTreeWalk.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PathTreeWalk.kt\nkotlin/io/path/PathTreeWalk$dfsIterator$1\n+ 2 PathTreeWalk.kt\nkotlin/io/path/PathTreeWalk\n*L\n1#1,181:1\n45#2,19:182\n45#2,19:201\n*S KotlinDebug\n*F\n+ 1 PathTreeWalk.kt\nkotlin/io/path/PathTreeWalk$dfsIterator$1\n*L\n71#1:182,19\n82#1:201,19\n*E\n"
+    value = "SMAP\nPathTreeWalk.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PathTreeWalk.kt\nkotlin/io/path/PathTreeWalk$dfsIterator$1\n+ 2 PathTreeWalk.kt\nkotlin/io/path/PathTreeWalk\n*L\n1#1,180:1\n44#2,19:181\n44#2,19:200\n*S KotlinDebug\n*F\n+ 1 PathTreeWalk.kt\nkotlin/io/path/PathTreeWalk$dfsIterator$1\n*L\n70#1:181,19\n81#1:200,19\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u0008\u0012\u0004\u0012\u00020\u00030\u0002H\u008a@"
+        "\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u0008\u0012\u0004\u0012\u00020\u00030\u0002H\n"
     }
     d2 = {
         "<anonymous>",
@@ -49,8 +49,8 @@
     }
     k = 0x3
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x30
@@ -80,10 +80,10 @@
         0x3
     }
     l = {
-        0xc0,
-        0xc6,
-        0xd3,
-        0xd9
+        0xbf,
+        0xc5,
+        0xd2,
+        0xd8
     }
     m = "invokeSuspend"
     n = {
@@ -254,7 +254,7 @@
 
     move-result-object v1
 
-    .line 65
+    .line 64
     iget v2, v0, Lkotlin/io/path/PathTreeWalk$dfsIterator$1;->label:I
 
     const/4 v3, 0x0
@@ -375,12 +375,12 @@
 
     check-cast v9, Lkotlin/sequences/SequenceScope;
 
-    .line 67
+    .line 66
     new-instance v2, Lkotlin/collections/ArrayDeque;
 
     invoke-direct {v2}, Lkotlin/collections/ArrayDeque;-><init>()V
 
-    .line 68
+    .line 67
     new-instance v10, Lkotlin/io/path/DirectoryEntriesReader;
 
     iget-object v11, v0, Lkotlin/io/path/PathTreeWalk$dfsIterator$1;->this$0:Lkotlin/io/path/PathTreeWalk;
@@ -391,7 +391,7 @@
 
     invoke-direct {v10, v11}, Lkotlin/io/path/DirectoryEntriesReader;-><init>(Z)V
 
-    .line 70
+    .line 69
     new-instance v11, Lkotlin/io/path/PathNode;
 
     iget-object v12, v0, Lkotlin/io/path/PathTreeWalk$dfsIterator$1;->this$0:Lkotlin/io/path/PathTreeWalk;
@@ -418,25 +418,25 @@
 
     invoke-direct {v11, v12, v13, v7}, Lkotlin/io/path/PathNode;-><init>(Ljava/nio/file/Path;Ljava/lang/Object;Lkotlin/io/path/PathNode;)V
 
-    .line 71
+    .line 70
     iget-object v12, v0, Lkotlin/io/path/PathTreeWalk$dfsIterator$1;->this$0:Lkotlin/io/path/PathTreeWalk;
 
-    .line 182
+    .line 181
     invoke-virtual {v11}, Lkotlin/io/path/PathNode;->getPath()Ljava/nio/file/Path;
 
     move-result-object v13
 
-    .line 183
+    .line 182
     invoke-virtual {v11}, Lkotlin/io/path/PathNode;->getParent()Lkotlin/io/path/PathNode;
 
     move-result-object v14
 
     if-eqz v14, :cond_5
 
-    .line 185
+    .line 184
     invoke-static {v13}, Lkotlin/io/path/PathsKt;->checkFileName(Ljava/nio/file/Path;)V
 
-    .line 187
+    .line 186
     :cond_5
     invoke-static {v12}, Lkotlin/io/path/PathTreeWalk;->access$getLinkOptions(Lkotlin/io/path/PathTreeWalk;)[Ljava/nio/file/LinkOption;
 
@@ -464,21 +464,21 @@
 
     if-eqz v14, :cond_9
 
-    .line 188
+    .line 187
     invoke-static {v11}, Lkotlin/io/path/PathTreeWalkKt;->access$createsCycle(Lkotlin/io/path/PathNode;)Z
 
     move-result v6
 
     if-nez v6, :cond_8
 
-    .line 191
+    .line 190
     invoke-static {v12}, Lkotlin/io/path/PathTreeWalk;->access$getIncludeDirectories(Lkotlin/io/path/PathTreeWalk;)Z
 
     move-result v6
 
     if-eqz v6, :cond_7
 
-    .line 192
+    .line 191
     move-object v6, v0
 
     check-cast v6, Lkotlin/coroutines/Continuation;
@@ -527,7 +527,7 @@
 
     move-object v12, v6
 
-    .line 194
+    .line 193
     :cond_7
     invoke-static {v12}, Lkotlin/io/path/PathTreeWalk;->access$getLinkOptions(Lkotlin/io/path/PathTreeWalk;)[Ljava/nio/file/LinkOption;
 
@@ -555,24 +555,24 @@
 
     if-eqz v6, :cond_a
 
-    .line 195
+    .line 194
     invoke-virtual {v10, v11}, Lkotlin/io/path/DirectoryEntriesReader;->readEntries(Lkotlin/io/path/PathNode;)Ljava/util/List;
 
     move-result-object v6
 
-    .line 72
+    .line 71
     invoke-interface {v6}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v6
 
     invoke-virtual {v11, v6}, Lkotlin/io/path/PathNode;->setContentIterator(Ljava/util/Iterator;)V
 
-    .line 73
+    .line 72
     invoke-virtual {v2, v11}, Lkotlin/collections/ArrayDeque;->addLast(Ljava/lang/Object;)V
 
     goto :goto_2
 
-    .line 189
+    .line 188
     :cond_8
     new-instance v0, Ljava/nio/file/FileSystemLoopException;
 
@@ -584,7 +584,7 @@
 
     throw v0
 
-    .line 197
+    .line 196
     :cond_9
     new-array v11, v8, [Ljava/nio/file/LinkOption;
 
@@ -604,7 +604,7 @@
 
     if-eqz v11, :cond_a
 
-    .line 198
+    .line 197
     move-object v11, v0
 
     check-cast v11, Lkotlin/coroutines/Continuation;
@@ -631,7 +631,7 @@
 
     move-object v2, v10
 
-    .line 76
+    .line 75
     :cond_b
     :goto_3
     move-object v10, v6
@@ -646,53 +646,53 @@
 
     if-eqz v10, :cond_12
 
-    .line 77
+    .line 76
     invoke-virtual {v6}, Lkotlin/collections/ArrayDeque;->last()Ljava/lang/Object;
 
     move-result-object v10
 
     check-cast v10, Lkotlin/io/path/PathNode;
 
-    .line 78
+    .line 77
     invoke-virtual {v10}, Lkotlin/io/path/PathNode;->getContentIterator()Ljava/util/Iterator;
 
     move-result-object v10
 
     invoke-static {v10}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 80
+    .line 79
     invoke-interface {v10}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v11
 
     if-eqz v11, :cond_11
 
-    .line 81
+    .line 80
     invoke-interface {v10}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v10
 
     check-cast v10, Lkotlin/io/path/PathNode;
 
-    .line 82
+    .line 81
     iget-object v11, v0, Lkotlin/io/path/PathTreeWalk$dfsIterator$1;->this$0:Lkotlin/io/path/PathTreeWalk;
 
-    .line 201
+    .line 200
     invoke-virtual {v10}, Lkotlin/io/path/PathNode;->getPath()Ljava/nio/file/Path;
 
     move-result-object v12
 
-    .line 202
+    .line 201
     invoke-virtual {v10}, Lkotlin/io/path/PathNode;->getParent()Lkotlin/io/path/PathNode;
 
     move-result-object v13
 
     if-eqz v13, :cond_c
 
-    .line 204
+    .line 203
     invoke-static {v12}, Lkotlin/io/path/PathsKt;->checkFileName(Ljava/nio/file/Path;)V
 
-    .line 206
+    .line 205
     :cond_c
     invoke-static {v11}, Lkotlin/io/path/PathTreeWalk;->access$getLinkOptions(Lkotlin/io/path/PathTreeWalk;)[Ljava/nio/file/LinkOption;
 
@@ -720,21 +720,21 @@
 
     if-eqz v13, :cond_10
 
-    .line 207
+    .line 206
     invoke-static {v10}, Lkotlin/io/path/PathTreeWalkKt;->access$createsCycle(Lkotlin/io/path/PathNode;)Z
 
     move-result v13
 
     if-nez v13, :cond_f
 
-    .line 210
+    .line 209
     invoke-static {v11}, Lkotlin/io/path/PathTreeWalk;->access$getIncludeDirectories(Lkotlin/io/path/PathTreeWalk;)Z
 
     move-result v13
 
     if-eqz v13, :cond_e
 
-    .line 211
+    .line 210
     move-object v13, v0
 
     check-cast v13, Lkotlin/coroutines/Continuation;
@@ -795,7 +795,7 @@
 
     move-object/from16 v6, v17
 
-    .line 213
+    .line 212
     :cond_e
     invoke-static {v11}, Lkotlin/io/path/PathTreeWalk;->access$getLinkOptions(Lkotlin/io/path/PathTreeWalk;)[Ljava/nio/file/LinkOption;
 
@@ -823,24 +823,24 @@
 
     if-eqz v11, :cond_b
 
-    .line 214
+    .line 213
     invoke-virtual {v2, v10}, Lkotlin/io/path/DirectoryEntriesReader;->readEntries(Lkotlin/io/path/PathNode;)Ljava/util/List;
 
     move-result-object v11
 
-    .line 83
+    .line 82
     invoke-interface {v11}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v11
 
     invoke-virtual {v10, v11}, Lkotlin/io/path/PathNode;->setContentIterator(Ljava/util/Iterator;)V
 
-    .line 84
+    .line 83
     invoke-virtual {v6, v10}, Lkotlin/collections/ArrayDeque;->addLast(Ljava/lang/Object;)V
 
     goto/16 :goto_3
 
-    .line 208
+    .line 207
     :cond_f
     new-instance v0, Ljava/nio/file/FileSystemLoopException;
 
@@ -852,7 +852,7 @@
 
     throw v0
 
-    .line 216
+    .line 215
     :cond_10
     new-array v10, v8, [Ljava/nio/file/LinkOption;
 
@@ -872,7 +872,7 @@
 
     if-eqz v10, :cond_b
 
-    .line 217
+    .line 216
     move-object v10, v0
 
     check-cast v10, Lkotlin/coroutines/Continuation;
@@ -899,13 +899,13 @@
 
     return-object v1
 
-    .line 88
+    .line 87
     :cond_11
     invoke-virtual {v6}, Lkotlin/collections/ArrayDeque;->removeLast()Ljava/lang/Object;
 
     goto/16 :goto_3
 
-    .line 91
+    .line 90
     :cond_12
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

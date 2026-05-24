@@ -4,30 +4,33 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/common/collect/Synchronized$SynchronizedTable;,
-        Lcom/google/common/collect/Synchronized$SynchronizedDeque;,
-        Lcom/google/common/collect/Synchronized$SynchronizedQueue;,
-        Lcom/google/common/collect/Synchronized$SynchronizedEntry;,
-        Lcom/google/common/collect/Synchronized$SynchronizedNavigableMap;,
-        Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;,
-        Lcom/google/common/collect/Synchronized$SynchronizedAsMapValues;,
-        Lcom/google/common/collect/Synchronized$SynchronizedAsMap;,
-        Lcom/google/common/collect/Synchronized$SynchronizedBiMap;,
-        Lcom/google/common/collect/Synchronized$SynchronizedSortedMap;,
-        Lcom/google/common/collect/Synchronized$SynchronizedMap;,
-        Lcom/google/common/collect/Synchronized$SynchronizedAsMapEntries;,
-        Lcom/google/common/collect/Synchronized$SynchronizedSortedSetMultimap;,
-        Lcom/google/common/collect/Synchronized$SynchronizedSetMultimap;,
-        Lcom/google/common/collect/Synchronized$SynchronizedListMultimap;,
-        Lcom/google/common/collect/Synchronized$SynchronizedMultimap;,
-        Lcom/google/common/collect/Synchronized$SynchronizedMultiset;,
+        Lcom/google/common/collect/Synchronized$SynchronizedCollection;,
+        Lcom/google/common/collect/Synchronized$SynchronizedSet;,
+        Lcom/google/common/collect/Synchronized$SynchronizedSortedSet;,
         Lcom/google/common/collect/Synchronized$SynchronizedRandomAccessList;,
         Lcom/google/common/collect/Synchronized$SynchronizedList;,
-        Lcom/google/common/collect/Synchronized$SynchronizedSortedSet;,
-        Lcom/google/common/collect/Synchronized$SynchronizedSet;,
-        Lcom/google/common/collect/Synchronized$SynchronizedCollection;,
+        Lcom/google/common/collect/Synchronized$SynchronizedMultiset;,
+        Lcom/google/common/collect/Synchronized$SynchronizedMultimap;,
+        Lcom/google/common/collect/Synchronized$SynchronizedListMultimap;,
+        Lcom/google/common/collect/Synchronized$SynchronizedSetMultimap;,
+        Lcom/google/common/collect/Synchronized$SynchronizedSortedSetMultimap;,
+        Lcom/google/common/collect/Synchronized$SynchronizedMap;,
+        Lcom/google/common/collect/Synchronized$SynchronizedSortedMap;,
+        Lcom/google/common/collect/Synchronized$SynchronizedBiMap;,
+        Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;,
+        Lcom/google/common/collect/Synchronized$SynchronizedNavigableMap;,
+        Lcom/google/common/collect/Synchronized$SynchronizedEntry;,
+        Lcom/google/common/collect/Synchronized$SynchronizedQueue;,
+        Lcom/google/common/collect/Synchronized$SynchronizedDeque;,
+        Lcom/google/common/collect/Synchronized$SynchronizedTable;,
+        Lcom/google/common/collect/Synchronized$SynchronizedAsMapValues;,
+        Lcom/google/common/collect/Synchronized$SynchronizedAsMap;,
+        Lcom/google/common/collect/Synchronized$SynchronizedAsMapEntries;,
         Lcom/google/common/collect/Synchronized$SynchronizedObject;
     }
 .end annotation
@@ -37,7 +40,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 59
+    .line 72
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,7 +49,7 @@
 .method static synthetic access$100(Ljava/util/SortedSet;Ljava/lang/Object;)Ljava/util/SortedSet;
     .locals 0
 
-    .line 58
+    .line 71
     invoke-static {p0, p1}, Lcom/google/common/collect/Synchronized;->sortedSet(Ljava/util/SortedSet;Ljava/lang/Object;)Ljava/util/SortedSet;
 
     move-result-object p0
@@ -57,7 +60,7 @@
 .method static synthetic access$200(Ljava/util/List;Ljava/lang/Object;)Ljava/util/List;
     .locals 0
 
-    .line 58
+    .line 71
     invoke-static {p0, p1}, Lcom/google/common/collect/Synchronized;->list(Ljava/util/List;Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
@@ -68,7 +71,7 @@
 .method static synthetic access$300(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
 
-    .line 58
+    .line 71
     invoke-static {p0, p1}, Lcom/google/common/collect/Synchronized;->typePreservingSet(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object p0
@@ -79,7 +82,7 @@
 .method static synthetic access$400(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/Collection;
     .locals 0
 
-    .line 58
+    .line 71
     invoke-static {p0, p1}, Lcom/google/common/collect/Synchronized;->typePreservingCollection(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/Collection;
 
     move-result-object p0
@@ -90,7 +93,7 @@
 .method static synthetic access$500(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/Collection;
     .locals 0
 
-    .line 58
+    .line 71
     invoke-static {p0, p1}, Lcom/google/common/collect/Synchronized;->collection(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/Collection;
 
     move-result-object p0
@@ -101,7 +104,7 @@
 .method static synthetic access$700(Ljava/util/Map$Entry;Ljava/lang/Object;)Ljava/util/Map$Entry;
     .locals 0
 
-    .line 58
+    .line 71
     invoke-static {p0, p1}, Lcom/google/common/collect/Synchronized;->nullableSynchronizedEntry(Ljava/util/Map$Entry;Ljava/lang/Object;)Ljava/util/Map$Entry;
 
     move-result-object p0
@@ -112,9 +115,20 @@
 .method static biMap(Lcom/google/common/collect/BiMap;Ljava/lang/Object;)Lcom/google/common/collect/BiMap;
     .locals 2
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bimap",
+            "mutex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -131,7 +145,7 @@
         }
     .end annotation
 
-    .line 1153
+    .line 1200
     instance-of v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedBiMap;
 
     if-nez v0, :cond_1
@@ -142,7 +156,7 @@
 
     goto :goto_0
 
-    .line 1156
+    .line 1203
     :cond_0
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedBiMap;
 
@@ -160,9 +174,20 @@
 .method private static collection(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/Collection;
     .locals 2
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "collection",
+            "mutex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -177,7 +202,7 @@
         }
     .end annotation
 
-    .line 101
+    .line 116
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;
 
     const/4 v1, 0x0
@@ -190,9 +215,20 @@
 .method static deque(Ljava/util/Deque;Ljava/lang/Object;)Ljava/util/Deque;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "deque",
+            "mutex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -207,7 +243,7 @@
         }
     .end annotation
 
-    .line 1700
+    .line 1776
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedDeque;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Synchronized$SynchronizedDeque;-><init>(Ljava/util/Deque;Ljava/lang/Object;)V
@@ -218,9 +254,20 @@
 .method private static list(Ljava/util/List;Ljava/lang/Object;)Ljava/util/List;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "list",
+            "mutex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -235,19 +282,19 @@
         }
     .end annotation
 
-    .line 304
+    .line 326
     instance-of v0, p0, Ljava/util/RandomAccess;
 
     if-eqz v0, :cond_0
 
-    .line 305
+    .line 327
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedRandomAccessList;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Synchronized$SynchronizedRandomAccessList;-><init>(Ljava/util/List;Ljava/lang/Object;)V
 
     goto :goto_0
 
-    .line 306
+    .line 328
     :cond_0
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedList;
 
@@ -260,9 +307,20 @@
 .method static listMultimap(Lcom/google/common/collect/ListMultimap;Ljava/lang/Object;)Lcom/google/common/collect/ListMultimap;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "multimap",
+            "mutex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -279,7 +337,7 @@
         }
     .end annotation
 
-    .line 698
+    .line 723
     instance-of v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedListMultimap;
 
     if-nez v0, :cond_1
@@ -290,7 +348,7 @@
 
     goto :goto_0
 
-    .line 701
+    .line 726
     :cond_0
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedListMultimap;
 
@@ -306,9 +364,20 @@
 .method static map(Ljava/util/Map;Ljava/lang/Object;)Ljava/util/Map;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "map",
+            "mutex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -325,7 +394,7 @@
         }
     .end annotation
 
-    .line 960
+    .line 1000
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedMap;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Synchronized$SynchronizedMap;-><init>(Ljava/util/Map;Ljava/lang/Object;)V
@@ -336,9 +405,20 @@
 .method static multimap(Lcom/google/common/collect/Multimap;Ljava/lang/Object;)Lcom/google/common/collect/Multimap;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "multimap",
+            "mutex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -355,7 +435,7 @@
         }
     .end annotation
 
-    .line 511
+    .line 536
     instance-of v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedMultimap;
 
     if-nez v0, :cond_1
@@ -366,7 +446,7 @@
 
     goto :goto_0
 
-    .line 514
+    .line 539
     :cond_0
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedMultimap;
 
@@ -382,9 +462,20 @@
 .method static multiset(Lcom/google/common/collect/Multiset;Ljava/lang/Object;)Lcom/google/common/collect/Multiset;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "multiset",
+            "mutex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -399,7 +490,7 @@
         }
     .end annotation
 
-    .line 415
+    .line 439
     instance-of v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;
 
     if-nez v0, :cond_1
@@ -410,7 +501,7 @@
 
     goto :goto_0
 
-    .line 418
+    .line 442
     :cond_0
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;
 
@@ -425,6 +516,15 @@
 
 .method static navigableMap(Ljava/util/NavigableMap;)Ljava/util/NavigableMap;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "navigableMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -441,7 +541,7 @@
 
     const/4 v0, 0x0
 
-    .line 1398
+    .line 1455
     invoke-static {p0, v0}, Lcom/google/common/collect/Synchronized;->navigableMap(Ljava/util/NavigableMap;Ljava/lang/Object;)Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -452,9 +552,20 @@
 .method static navigableMap(Ljava/util/NavigableMap;Ljava/lang/Object;)Ljava/util/NavigableMap;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "navigableMap",
+            "mutex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -471,7 +582,7 @@
         }
     .end annotation
 
-    .line 1404
+    .line 1461
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedNavigableMap;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Synchronized$SynchronizedNavigableMap;-><init>(Ljava/util/NavigableMap;Ljava/lang/Object;)V
@@ -481,6 +592,15 @@
 
 .method static navigableSet(Ljava/util/NavigableSet;)Ljava/util/NavigableSet;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "navigableSet"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -495,7 +615,7 @@
 
     const/4 v0, 0x0
 
-    .line 1393
+    .line 1449
     invoke-static {p0, v0}, Lcom/google/common/collect/Synchronized;->navigableSet(Ljava/util/NavigableSet;Ljava/lang/Object;)Ljava/util/NavigableSet;
 
     move-result-object p0
@@ -506,9 +626,20 @@
 .method static navigableSet(Ljava/util/NavigableSet;Ljava/lang/Object;)Ljava/util/NavigableSet;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "navigableSet",
+            "mutex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -523,7 +654,7 @@
         }
     .end annotation
 
-    .line 1388
+    .line 1444
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;-><init>(Ljava/util/NavigableSet;Ljava/lang/Object;)V
@@ -534,13 +665,24 @@
 .method private static nullableSynchronizedEntry(Ljava/util/Map$Entry;Ljava/lang/Object;)Ljava/util/Map$Entry;
     .locals 1
     .param p0    # Ljava/util/Map$Entry;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "entry",
+            "mutex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -557,13 +699,16 @@
         }
     .end annotation
 
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
     if-nez p0, :cond_0
 
     const/4 p0, 0x0
 
     return-object p0
 
-    .line 1592
+    .line 1664
     :cond_0
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedEntry;
 
@@ -575,9 +720,20 @@
 .method static queue(Ljava/util/Queue;Ljava/lang/Object;)Ljava/util/Queue;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "queue",
+            "mutex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -592,7 +748,7 @@
         }
     .end annotation
 
-    .line 1647
+    .line 1720
     instance-of v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedQueue;
 
     if-eqz v0, :cond_0
@@ -613,9 +769,20 @@
 .method static set(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/Set;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "set",
+            "mutex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -630,7 +797,7 @@
         }
     .end annotation
 
-    .line 210
+    .line 227
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedSet;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Synchronized$SynchronizedSet;-><init>(Ljava/util/Set;Ljava/lang/Object;)V
@@ -641,9 +808,20 @@
 .method static setMultimap(Lcom/google/common/collect/SetMultimap;Ljava/lang/Object;)Lcom/google/common/collect/SetMultimap;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "multimap",
+            "mutex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -660,7 +838,7 @@
         }
     .end annotation
 
-    .line 741
+    .line 767
     instance-of v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedSetMultimap;
 
     if-nez v0, :cond_1
@@ -671,7 +849,7 @@
 
     goto :goto_0
 
-    .line 744
+    .line 770
     :cond_0
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedSetMultimap;
 
@@ -687,9 +865,20 @@
 .method static sortedMap(Ljava/util/SortedMap;Ljava/lang/Object;)Ljava/util/SortedMap;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sortedMap",
+            "mutex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -706,7 +895,7 @@
         }
     .end annotation
 
-    .line 1092
+    .line 1137
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedSortedMap;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Synchronized$SynchronizedSortedMap;-><init>(Ljava/util/SortedMap;Ljava/lang/Object;)V
@@ -717,9 +906,20 @@
 .method private static sortedSet(Ljava/util/SortedSet;Ljava/lang/Object;)Ljava/util/SortedSet;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "set",
+            "mutex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -734,7 +934,7 @@
         }
     .end annotation
 
-    .line 245
+    .line 264
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedSortedSet;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Synchronized$SynchronizedSortedSet;-><init>(Ljava/util/SortedSet;Ljava/lang/Object;)V
@@ -745,9 +945,20 @@
 .method static sortedSetMultimap(Lcom/google/common/collect/SortedSetMultimap;Ljava/lang/Object;)Lcom/google/common/collect/SortedSetMultimap;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "multimap",
+            "mutex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -764,14 +975,14 @@
         }
     .end annotation
 
-    .line 796
+    .line 823
     instance-of v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedSortedSetMultimap;
 
     if-eqz v0, :cond_0
 
     return-object p0
 
-    .line 799
+    .line 826
     :cond_0
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedSortedSetMultimap;
 
@@ -782,6 +993,21 @@
 
 .method static table(Lcom/google/common/collect/Table;Ljava/lang/Object;)Lcom/google/common/collect/Table;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "table",
+            "mutex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<R:",
@@ -800,7 +1026,7 @@
         }
     .end annotation
 
-    .line 1837
+    .line 1919
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedTable;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Synchronized$SynchronizedTable;-><init>(Lcom/google/common/collect/Table;Ljava/lang/Object;)V
@@ -811,9 +1037,20 @@
 .method private static typePreservingCollection(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/Collection;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "collection",
+            "mutex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -828,12 +1065,12 @@
         }
     .end annotation
 
-    .line 846
+    .line 875
     instance-of v0, p0, Ljava/util/SortedSet;
 
     if-eqz v0, :cond_0
 
-    .line 847
+    .line 876
     check-cast p0, Ljava/util/SortedSet;
 
     invoke-static {p0, p1}, Lcom/google/common/collect/Synchronized;->sortedSet(Ljava/util/SortedSet;Ljava/lang/Object;)Ljava/util/SortedSet;
@@ -842,13 +1079,13 @@
 
     return-object p0
 
-    .line 849
+    .line 878
     :cond_0
     instance-of v0, p0, Ljava/util/Set;
 
     if-eqz v0, :cond_1
 
-    .line 850
+    .line 879
     check-cast p0, Ljava/util/Set;
 
     invoke-static {p0, p1}, Lcom/google/common/collect/Synchronized;->set(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/Set;
@@ -857,13 +1094,13 @@
 
     return-object p0
 
-    .line 852
+    .line 881
     :cond_1
     instance-of v0, p0, Ljava/util/List;
 
     if-eqz v0, :cond_2
 
-    .line 853
+    .line 882
     check-cast p0, Ljava/util/List;
 
     invoke-static {p0, p1}, Lcom/google/common/collect/Synchronized;->list(Ljava/util/List;Ljava/lang/Object;)Ljava/util/List;
@@ -872,7 +1109,7 @@
 
     return-object p0
 
-    .line 855
+    .line 884
     :cond_2
     invoke-static {p0, p1}, Lcom/google/common/collect/Synchronized;->collection(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/Collection;
 
@@ -884,9 +1121,20 @@
 .method private static typePreservingSet(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/Set;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "set",
+            "mutex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -901,12 +1149,12 @@
         }
     .end annotation
 
-    .line 859
+    .line 889
     instance-of v0, p0, Ljava/util/SortedSet;
 
     if-eqz v0, :cond_0
 
-    .line 860
+    .line 890
     check-cast p0, Ljava/util/SortedSet;
 
     invoke-static {p0, p1}, Lcom/google/common/collect/Synchronized;->sortedSet(Ljava/util/SortedSet;Ljava/lang/Object;)Ljava/util/SortedSet;
@@ -915,7 +1163,7 @@
 
     return-object p0
 
-    .line 862
+    .line 892
     :cond_0
     invoke-static {p0, p1}, Lcom/google/common/collect/Synchronized;->set(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/Set;
 

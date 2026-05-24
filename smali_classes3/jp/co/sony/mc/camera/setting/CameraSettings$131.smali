@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1667
+    .line 1899
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,6 +31,21 @@
 # virtual methods
 .method public setValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljava/util/Map;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key",
+            "value",
+            "listenersMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -46,13 +61,13 @@
         }
     .end annotation
 
-    .line 1671
+    .line 1903
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1672
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
+    .line 1904
+    check-cast p3, Ljava/lang/Float;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetPhotoFormat(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetZoomRatio(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljava/lang/Float;)Z
 
     move-result p0
 

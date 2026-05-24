@@ -179,21 +179,21 @@
 .end method
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
-    .locals 5
+    .locals 6
 
     const-string v0, "context"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 25
+    .line 26
     invoke-direct {p0, p1, p2, p3}, Landroid/view/TextureView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 27
+    .line 28
     const-string p3, ""
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->text:Ljava/lang/String;
 
-    .line 44
+    .line 45
     const-string p3, "TextTextureView-Render-Thread"
 
     invoke-static {p3}, Ljp/co/sony/mc/camera/util/ThreadUtil;->buildExecutor(Ljava/lang/String;)Ljava/util/concurrent/ExecutorService;
@@ -206,139 +206,149 @@
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->renderService:Ljava/util/concurrent/ExecutorService;
 
-    .line 47
+    .line 48
     sget-object p3, Ljp/co/sony/mc/camera/R$styleable;->TextTextureView:[I
 
     invoke-virtual {p1, p2, p3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
-    move-result-object p1
+    move-result-object p2
 
-    const-string p2, "obtainStyledAttributes(...)"
+    const-string p3, "obtainStyledAttributes(...)"
 
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const/4 p2, 0x3
+    const/4 p3, 0x3
 
-    const/high16 p3, 0x3f800000    # 1.0f
+    const/high16 v0, 0x3f800000    # 1.0f
 
-    .line 49
-    invoke-virtual {p1, p2, p3}, Landroid/content/res/TypedArray;->getDimension(IF)F
-
-    move-result p2
-
-    const/4 p3, -0x1
-
-    const/4 v0, 0x0
-
-    .line 54
-    invoke-virtual {p1, v0, p3}, Landroid/content/res/TypedArray;->getColor(II)I
+    .line 50
+    invoke-virtual {p2, p3, v0}, Landroid/content/res/TypedArray;->getDimension(IF)F
 
     move-result p3
 
-    const/4 v1, 0x2
+    const/4 v0, -0x1
 
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
-    .line 59
-    invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getDimension(IF)F
+    .line 55
+    invoke-virtual {p2, v1, v0}, Landroid/content/res/TypedArray;->getColor(II)I
 
-    move-result v1
+    move-result v0
 
-    const/4 v3, 0x1
+    const/4 v2, 0x2
 
-    .line 64
-    invoke-virtual {p1, v3, v0}, Landroid/content/res/TypedArray;->getColor(II)I
+    const/4 v3, 0x0
 
-    move-result v3
+    .line 60
+    invoke-virtual {p2, v2, v3}, Landroid/content/res/TypedArray;->getDimension(IF)F
 
-    const/4 v4, 0x5
+    move-result v2
 
-    .line 69
-    invoke-virtual {p1, v4, v2}, Landroid/content/res/TypedArray;->getDimension(IF)F
+    const/4 v4, 0x1
 
-    move-result v4
-
-    iput v4, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->textStrokeWidth:F
-
-    const/4 v4, 0x4
-
-    .line 74
-    invoke-virtual {p1, v4, v0}, Landroid/content/res/TypedArray;->getColor(II)I
+    .line 65
+    invoke-virtual {p2, v4, v1}, Landroid/content/res/TypedArray;->getColor(II)I
 
     move-result v4
 
-    iput v4, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->textStrokeColor:I
+    const/4 v5, 0x5
 
-    .line 79
-    invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
+    .line 70
+    invoke-virtual {p2, v5, v3}, Landroid/content/res/TypedArray;->getDimension(IF)F
 
-    .line 81
-    new-instance p1, Landroid/graphics/Paint;
+    move-result v5
 
-    invoke-direct {p1}, Landroid/graphics/Paint;-><init>()V
+    iput v5, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->textStrokeWidth:F
+
+    const/4 v5, 0x4
+
+    .line 75
+    invoke-virtual {p2, v5, v1}, Landroid/content/res/TypedArray;->getColor(II)I
+
+    move-result v5
+
+    iput v5, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->textStrokeColor:I
+
+    .line 80
+    invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 82
-    sget-object v4, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
+    new-instance p2, Landroid/graphics/Paint;
 
-    invoke-virtual {p1, v4}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
+    invoke-direct {p2}, Landroid/graphics/Paint;-><init>()V
 
     .line 83
-    invoke-virtual {p1, p3}, Landroid/graphics/Paint;->setColor(I)V
+    sget-object v5, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
+
+    invoke-virtual {p2, v5}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 84
-    invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setTextSize(F)V
+    invoke-virtual {p2, v0}, Landroid/graphics/Paint;->setColor(I)V
+
+    const v0, 0x3fb33333    # 1.4f
 
     .line 85
-    sget-object p3, Landroid/graphics/Paint$Align;->CENTER:Landroid/graphics/Paint$Align;
+    invoke-static {p1, p3, v0}, Ljp/co/sony/mc/camera/util/ContextExtensionsKt;->getAdjustedFontSize(Landroid/content/Context;FF)F
 
-    invoke-virtual {p1, p3}, Landroid/graphics/Paint;->setTextAlign(Landroid/graphics/Paint$Align;)V
+    move-result v5
 
-    .line 81
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->paint:Landroid/graphics/Paint;
+    invoke-virtual {p2, v5}, Landroid/graphics/Paint;->setTextSize(F)V
 
-    .line 88
-    new-instance p1, Landroid/graphics/Paint;
+    .line 86
+    sget-object v5, Landroid/graphics/Paint$Align;->CENTER:Landroid/graphics/Paint$Align;
 
-    invoke-direct {p1}, Landroid/graphics/Paint;-><init>()V
+    invoke-virtual {p2, v5}, Landroid/graphics/Paint;->setTextAlign(Landroid/graphics/Paint$Align;)V
+
+    .line 82
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->paint:Landroid/graphics/Paint;
 
     .line 89
-    sget-object p3, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
+    new-instance p2, Landroid/graphics/Paint;
 
-    invoke-virtual {p1, p3}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
+    invoke-direct {p2}, Landroid/graphics/Paint;-><init>()V
 
     .line 90
-    iget p3, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->textStrokeColor:I
+    sget-object v5, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
-    invoke-virtual {p1, p3}, Landroid/graphics/Paint;->setColor(I)V
+    invoke-virtual {p2, v5}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 91
-    invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setTextSize(F)V
+    iget v5, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->textStrokeColor:I
+
+    invoke-virtual {p2, v5}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 92
-    iget p2, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->textStrokeWidth:F
+    invoke-static {p1, p3, v0}, Ljp/co/sony/mc/camera/util/ContextExtensionsKt;->getAdjustedFontSize(Landroid/content/Context;FF)F
 
-    invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setStrokeWidth(F)V
+    move-result p1
+
+    invoke-virtual {p2, p1}, Landroid/graphics/Paint;->setTextSize(F)V
 
     .line 93
-    sget-object p2, Landroid/graphics/Paint$Align;->CENTER:Landroid/graphics/Paint$Align;
+    iget p1, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->textStrokeWidth:F
 
-    invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setTextAlign(Landroid/graphics/Paint$Align;)V
+    invoke-virtual {p2, p1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
     .line 94
-    invoke-virtual {p1, v1, v2, v2, v3}, Landroid/graphics/Paint;->setShadowLayer(FFFI)V
+    sget-object p1, Landroid/graphics/Paint$Align;->CENTER:Landroid/graphics/Paint$Align;
 
-    .line 88
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->strokePaint:Landroid/graphics/Paint;
+    invoke-virtual {p2, p1}, Landroid/graphics/Paint;->setTextAlign(Landroid/graphics/Paint$Align;)V
 
-    .line 97
+    .line 95
+    invoke-virtual {p2, v2, v3, v3, v4}, Landroid/graphics/Paint;->setShadowLayer(FFFI)V
+
+    .line 89
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->strokePaint:Landroid/graphics/Paint;
+
+    .line 98
     move-object p1, p0
 
     check-cast p1, Landroid/view/TextureView$SurfaceTextureListener;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->setSurfaceTextureListener(Landroid/view/TextureView$SurfaceTextureListener;)V
 
-    .line 98
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->setOpaque(Z)V
+    .line 99
+    invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->setOpaque(Z)V
 
     return-void
 .end method
@@ -359,7 +369,7 @@
 
     const/4 p3, 0x0
 
-    .line 21
+    .line 22
     :cond_1
     invoke-direct {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/widget/TextTextureView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -369,7 +379,7 @@
 .method private final render()V
     .locals 2
 
-    .line 109
+    .line 110
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->renderService:Ljava/util/concurrent/ExecutorService;
 
     new-instance v1, Ljp/co/sony/mc/camera/view/widget/TextTextureView$$ExternalSyntheticLambda0;
@@ -388,14 +398,14 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 110
+    .line 111
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->isSurfaceTextureAvailable:Z
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 114
+    .line 115
     :cond_0
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->lockCanvas()Landroid/graphics/Canvas;
 
@@ -405,12 +415,12 @@
 
     const/4 v1, 0x0
 
-    .line 116
+    .line 117
     sget-object v2, Landroid/graphics/PorterDuff$Mode;->CLEAR:Landroid/graphics/PorterDuff$Mode;
 
     invoke-virtual {v0, v1, v2}, Landroid/graphics/Canvas;->drawColor(ILandroid/graphics/PorterDuff$Mode;)V
 
-    .line 119
+    .line 120
     iget v1, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->textStrokeWidth:F
 
     const/4 v2, 0x0
@@ -425,17 +435,17 @@
 
     if-eqz v1, :cond_1
 
-    .line 121
+    .line 122
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->text:Ljava/lang/String;
 
-    .line 122
+    .line 123
     iget v3, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->width:F
 
     int-to-float v4, v2
 
     div-float/2addr v3, v4
 
-    .line 123
+    .line 124
     iget v5, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->height:F
 
     div-float/2addr v5, v4
@@ -458,24 +468,24 @@
 
     sub-float/2addr v5, v6
 
-    .line 124
+    .line 125
     iget-object v4, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->strokePaint:Landroid/graphics/Paint;
 
-    .line 120
+    .line 121
     invoke-virtual {v0, v1, v3, v5, v4}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
 
-    .line 130
+    .line 131
     :cond_1
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->text:Ljava/lang/String;
 
-    .line 131
+    .line 132
     iget v3, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->width:F
 
     int-to-float v2, v2
 
     div-float/2addr v3, v2
 
-    .line 132
+    .line 133
     iget v4, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->height:F
 
     div-float/2addr v4, v2
@@ -498,13 +508,13 @@
 
     sub-float/2addr v4, v5
 
-    .line 133
+    .line 134
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->paint:Landroid/graphics/Paint;
 
-    .line 129
+    .line 130
     invoke-virtual {v0, v1, v3, v4, v2}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
 
-    .line 135
+    .line 136
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->unlockCanvasAndPost(Landroid/graphics/Canvas;)V
 
     :cond_2
@@ -522,20 +532,20 @@
 
     int-to-float p1, p2
 
-    .line 141
+    .line 142
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->width:F
 
     int-to-float p1, p3
 
-    .line 142
+    .line 143
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->height:F
 
     const/4 p1, 0x1
 
-    .line 143
+    .line 144
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->isSurfaceTextureAvailable:Z
 
-    .line 144
+    .line 145
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->render()V
 
     return-void
@@ -550,7 +560,7 @@
 
     const/4 p1, 0x0
 
-    .line 154
+    .line 155
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->isSurfaceTextureAvailable:Z
 
     const/4 p0, 0x1
@@ -567,15 +577,15 @@
 
     int-to-float p1, p2
 
-    .line 148
+    .line 149
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->width:F
 
     int-to-float p1, p3
 
-    .line 149
+    .line 150
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->height:F
 
-    .line 150
+    .line 151
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->render()V
 
     return-void
@@ -598,7 +608,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 102
+    .line 103
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->text:Ljava/lang/String;
 
     invoke-static {v0, p1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -607,10 +617,10 @@
 
     if-nez v0, :cond_0
 
-    .line 103
+    .line 104
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->text:Ljava/lang/String;
 
-    .line 104
+    .line 105
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->render()V
 
     :cond_0

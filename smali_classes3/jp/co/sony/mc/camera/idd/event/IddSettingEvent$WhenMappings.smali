@@ -183,7 +183,7 @@
 
     :catch_9
     :try_start_a
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->CONNECT_TO:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->BURST_FEEDBACK:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -197,7 +197,7 @@
 
     :catch_a
     :try_start_b
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->BURST_FEEDBACK:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SUPER_RESOLUTION_ZOOM:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -211,7 +211,7 @@
 
     :catch_b
     :try_start_c
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SUPER_RESOLUTION_ZOOM:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->DISP:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -225,7 +225,7 @@
 
     :catch_c
     :try_start_d
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->DISP:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->DRIVE_MODE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -239,7 +239,7 @@
 
     :catch_d
     :try_start_e
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->DRIVE_MODE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VIDEO_MF_HDR:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -253,7 +253,7 @@
 
     :catch_e
     :try_start_f
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VIDEO_MF_HDR:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ENDURANCE_MODE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -267,7 +267,7 @@
 
     :catch_f
     :try_start_10
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ENDURANCE_MODE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->EV:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -281,7 +281,7 @@
 
     :catch_10
     :try_start_11
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->EV:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FACE_DETECTION_EYE_AF:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -295,7 +295,7 @@
 
     :catch_11
     :try_start_12
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FACE_DETECTION_EYE_AF:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FILE_FORMAT:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -309,7 +309,7 @@
 
     :catch_12
     :try_start_13
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FILE_FORMAT:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->COLOR_TONE_PROFILE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -323,7 +323,7 @@
 
     :catch_13
     :try_start_14
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->COLOR_TONE_PROFILE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FLASH:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -337,7 +337,7 @@
 
     :catch_14
     :try_start_15
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FLASH:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FOCUS_AREA:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -351,7 +351,7 @@
 
     :catch_15
     :try_start_16
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FOCUS_AREA:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FOCUS_FRAME_COLOR:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -365,7 +365,7 @@
 
     :catch_16
     :try_start_17
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FOCUS_FRAME_COLOR:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FOCUS_MODE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -379,7 +379,7 @@
 
     :catch_17
     :try_start_18
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FOCUS_MODE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FOCUS_UI:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -393,7 +393,7 @@
 
     :catch_18
     :try_start_19
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FOCUS_UI:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VIDEO_FPS:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -407,7 +407,7 @@
 
     :catch_19
     :try_start_1a
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VIDEO_FPS:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->GEO_TAG:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -421,7 +421,7 @@
 
     :catch_1a
     :try_start_1b
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->GEO_TAG:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->GRID_LINE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -435,7 +435,7 @@
 
     :catch_1b
     :try_start_1c
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->GRID_LINE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->HAND_SHUTTER:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -449,7 +449,7 @@
 
     :catch_1c
     :try_start_1d
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->HAND_SHUTTER:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->HAPTIC_FEEDBACK:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -463,7 +463,7 @@
 
     :catch_1d
     :try_start_1e
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->HAPTIC_FEEDBACK:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->HDR_DRO:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -477,7 +477,7 @@
 
     :catch_1e
     :try_start_1f
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->HDR_DRO:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VIDEO_HDR:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -491,7 +491,7 @@
 
     :catch_1f
     :try_start_20
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VIDEO_HDR:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ISO:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -505,7 +505,7 @@
 
     :catch_20
     :try_start_21
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ISO:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->QUICK_LAUNCH:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -519,7 +519,7 @@
 
     :catch_21
     :try_start_22
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->QUICK_LAUNCH:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->LENS:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -533,7 +533,7 @@
 
     :catch_22
     :try_start_23
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->LENS:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->LENS_CORRECTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -547,7 +547,7 @@
 
     :catch_23
     :try_start_24
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->LENS_CORRECTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->METERING:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -561,7 +561,7 @@
 
     :catch_24
     :try_start_25
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->METERING:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->MIC:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -575,7 +575,7 @@
 
     :catch_25
     :try_start_26
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->MIC:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->CAPTURING_MODE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -589,7 +589,7 @@
 
     :catch_26
     :try_start_27
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->CAPTURING_MODE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->PEAKING:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -603,7 +603,7 @@
 
     :catch_27
     :try_start_28
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->NETWORK_USAGE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->PEAKING_COLOR:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -617,7 +617,7 @@
 
     :catch_28
     :try_start_29
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->PEAKING:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -631,7 +631,7 @@
 
     :catch_29
     :try_start_2a
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->PEAKING_COLOR:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->PRODUCT_SHOWCASE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -645,7 +645,7 @@
 
     :catch_2a
     :try_start_2b
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->RESET:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -659,7 +659,7 @@
 
     :catch_2b
     :try_start_2c
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->PRODUCT_SHOWCASE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VIDEO_SIZE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -673,7 +673,7 @@
 
     :catch_2c
     :try_start_2d
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->RESET:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SELF_TIMER:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -687,7 +687,7 @@
 
     :catch_2d
     :try_start_2e
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VIDEO_SIZE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SOFT_SKIN:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -701,7 +701,7 @@
 
     :catch_2e
     :try_start_2f
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SELF_TIMER:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SHUTTER_SPEED:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -715,7 +715,7 @@
 
     :catch_2f
     :try_start_30
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SOFT_SKIN:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SS_UI:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -729,7 +729,7 @@
 
     :catch_30
     :try_start_31
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SHUTTER_SPEED:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VIDEO_STABILIZER:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -743,7 +743,7 @@
 
     :catch_31
     :try_start_32
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SS_UI:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->DESTINATION_TO_SAVE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -757,7 +757,7 @@
 
     :catch_32
     :try_start_33
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VIDEO_STABILIZER:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SW_LICENSE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -771,7 +771,7 @@
 
     :catch_33
     :try_start_34
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->DESTINATION_TO_SAVE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->TOUCH_TO_ADJUST:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -785,7 +785,7 @@
 
     :catch_34
     :try_start_35
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->STREAM_MUTE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->TOUCH_TRACKING:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -799,7 +799,7 @@
 
     :catch_35
     :try_start_36
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->STREAM_VIDEO_QUALITY:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->PHOTO_LIGHT:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -813,7 +813,7 @@
 
     :catch_36
     :try_start_37
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SW_LICENSE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VOLUME_KEY:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -827,7 +827,7 @@
 
     :catch_37
     :try_start_38
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->TOUCH_TO_ADJUST:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->WHITE_BALANCE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -841,7 +841,7 @@
 
     :catch_38
     :try_start_39
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->TOUCH_TRACKING:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->WIND_NOISE_REDUCTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -855,7 +855,7 @@
 
     :catch_39
     :try_start_3a
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->PHOTO_LIGHT:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->MANUAL_FOCUS:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -869,7 +869,7 @@
 
     :catch_3a
     :try_start_3b
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VOLUME_KEY:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ACCESSIBILITY:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -883,7 +883,7 @@
 
     :catch_3b
     :try_start_3c
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->WHITE_BALANCE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->HORIZONTAL_LEVEL_METER:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -897,7 +897,7 @@
 
     :catch_3c
     :try_start_3d
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->WIND_NOISE_REDUCTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ZOOM:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -911,7 +911,7 @@
 
     :catch_3d
     :try_start_3e
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->MANUAL_FOCUS:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->TIPS:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -925,7 +925,7 @@
 
     :catch_3e
     :try_start_3f
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ACCESSIBILITY:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->AFR_SHORTCUT:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -939,7 +939,7 @@
 
     :catch_3f
     :try_start_40
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->HORIZONTAL_LEVEL_METER:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FRAMING_ASSIST:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -953,7 +953,7 @@
 
     :catch_40
     :try_start_41
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ZOOM:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FRAMING_ASSIST_METHOD:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -967,7 +967,7 @@
 
     :catch_41
     :try_start_42
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->TIPS:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->LEVEL_METER:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -981,7 +981,7 @@
 
     :catch_42
     :try_start_43
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->AFR_SHORTCUT:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SAVE_FULL_SCREEN_VIDEO:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -995,7 +995,7 @@
 
     :catch_43
     :try_start_44
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FRAMING_ASSIST:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ULTRA_HDR:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -1009,7 +1009,7 @@
 
     :catch_44
     :try_start_45
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FRAMING_ASSIST_METHOD:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VOLUME_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -1023,7 +1023,7 @@
 
     :catch_45
     :try_start_46
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->LEVEL_METER:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->AI_SUGGESTION_DETECTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -1037,7 +1037,7 @@
 
     :catch_46
     :try_start_47
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SAVE_FULL_SCREEN_VIDEO:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->AI_SUGGESTION_CUSTOM_EXTENSION_DATA:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -1051,7 +1051,7 @@
 
     :catch_47
     :try_start_48
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ULTRA_HDR:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->DIGITAL_TRIPOD_FRAMING:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -1065,7 +1065,7 @@
 
     :catch_48
     :try_start_49
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VOLUME_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->DIGITAL_TRIPOD_FRAMING_ASSISTANCE_EXTENSION_DATA:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 

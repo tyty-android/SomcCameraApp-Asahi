@@ -48,6 +48,15 @@
 # direct methods
 .method private constructor <init>(Ljava/util/Collection;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "target"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -56,10 +65,10 @@
         }
     .end annotation
 
-    .line 549
+    .line 572
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 550
+    .line 573
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -74,7 +83,7 @@
 .method synthetic constructor <init>(Ljava/util/Collection;Lcom/google/common/base/Predicates$1;)V
     .locals 0
 
-    .line 546
+    .line 568
     invoke-direct {p0, p1}, Lcom/google/common/base/Predicates$InPredicate;-><init>(Ljava/util/Collection;)V
 
     return-void
@@ -85,16 +94,25 @@
 .method public apply(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/base/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "t"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)Z"
         }
     .end annotation
 
-    .line 556
+    .line 579
     :try_start_0
     iget-object p0, p0, Lcom/google/common/base/Predicates$InPredicate;->target:Ljava/util/Collection;
 
@@ -116,19 +134,27 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
-    .line 564
+    .line 587
     instance-of v0, p1, Lcom/google/common/base/Predicates$InPredicate;
 
     if-eqz v0, :cond_0
 
-    .line 565
+    .line 588
     check-cast p1, Lcom/google/common/base/Predicates$InPredicate;
 
-    .line 566
+    .line 589
     iget-object p0, p0, Lcom/google/common/base/Predicates$InPredicate;->target:Ljava/util/Collection;
 
     iget-object p1, p1, Lcom/google/common/base/Predicates$InPredicate;->target:Ljava/util/Collection;
@@ -148,7 +174,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 573
+    .line 596
     iget-object p0, p0, Lcom/google/common/base/Predicates$InPredicate;->target:Ljava/util/Collection;
 
     invoke-interface {p0}, Ljava/util/Collection;->hashCode()I
@@ -161,34 +187,16 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 578
+    .line 601
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "Predicates.in("
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
     iget-object p0, p0, Lcom/google/common/base/Predicates$InPredicate;->target:Ljava/util/Collection;
 
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, 0xf
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v0, "Predicates.in("
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 

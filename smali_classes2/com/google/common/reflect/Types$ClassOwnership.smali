@@ -36,7 +36,7 @@
 .method private static synthetic $values()[Lcom/google/common/reflect/Types$ClassOwnership;
     .locals 2
 
-    .line 106
+    .line 100
     sget-object v0, Lcom/google/common/reflect/Types$ClassOwnership;->OWNED_BY_ENCLOSING_CLASS:Lcom/google/common/reflect/Types$ClassOwnership;
 
     sget-object v1, Lcom/google/common/reflect/Types$ClassOwnership;->LOCAL_CLASS_HAS_NO_OWNER:Lcom/google/common/reflect/Types$ClassOwnership;
@@ -51,7 +51,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 107
+    .line 101
     new-instance v0, Lcom/google/common/reflect/Types$ClassOwnership$1;
 
     const-string v1, "OWNED_BY_ENCLOSING_CLASS"
@@ -62,7 +62,7 @@
 
     sput-object v0, Lcom/google/common/reflect/Types$ClassOwnership;->OWNED_BY_ENCLOSING_CLASS:Lcom/google/common/reflect/Types$ClassOwnership;
 
-    .line 114
+    .line 108
     new-instance v0, Lcom/google/common/reflect/Types$ClassOwnership$2;
 
     const-string v1, "LOCAL_CLASS_HAS_NO_OWNER"
@@ -73,14 +73,14 @@
 
     sput-object v0, Lcom/google/common/reflect/Types$ClassOwnership;->LOCAL_CLASS_HAS_NO_OWNER:Lcom/google/common/reflect/Types$ClassOwnership;
 
-    .line 106
+    .line 100
     invoke-static {}, Lcom/google/common/reflect/Types$ClassOwnership;->$values()[Lcom/google/common/reflect/Types$ClassOwnership;
 
     move-result-object v0
 
     sput-object v0, Lcom/google/common/reflect/Types$ClassOwnership;->$VALUES:[Lcom/google/common/reflect/Types$ClassOwnership;
 
-    .line 129
+    .line 123
     invoke-static {}, Lcom/google/common/reflect/Types$ClassOwnership;->detectJvmBehavior()Lcom/google/common/reflect/Types$ClassOwnership;
 
     move-result-object v0
@@ -92,13 +92,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 106
+    .line 100
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -107,7 +118,7 @@
 .method synthetic constructor <init>(Ljava/lang/String;ILcom/google/common/reflect/Types$1;)V
     .locals 0
 
-    .line 106
+    .line 100
     invoke-direct {p0, p1, p2}, Lcom/google/common/reflect/Types$ClassOwnership;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -116,7 +127,7 @@
 .method private static detectJvmBehavior()Lcom/google/common/reflect/Types$ClassOwnership;
     .locals 7
 
-    .line 133
+    .line 127
     new-instance v0, Lcom/google/common/reflect/Types$ClassOwnership$3;
 
     invoke-direct {v0}, Lcom/google/common/reflect/Types$ClassOwnership$3;-><init>()V
@@ -125,14 +136,20 @@
 
     move-result-object v0
 
-    .line 134
+    .line 130
     invoke-virtual {v0}, Ljava/lang/Class;->getGenericSuperclass()Ljava/lang/reflect/Type;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/reflect/ParameterizedType;
 
-    .line 135
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/reflect/ParameterizedType;
+
+    .line 131
     invoke-static {}, Lcom/google/common/reflect/Types$ClassOwnership;->values()[Lcom/google/common/reflect/Types$ClassOwnership;
 
     move-result-object v1
@@ -146,7 +163,7 @@
 
     aget-object v4, v1, v3
 
-    .line 136
+    .line 132
     const-class v5, Lcom/google/common/reflect/Types$ClassOwnership$1LocalClass;
 
     invoke-virtual {v4, v5}, Lcom/google/common/reflect/Types$ClassOwnership;->getOwnerType(Ljava/lang/Class;)Ljava/lang/Class;
@@ -166,7 +183,7 @@
 
     goto :goto_0
 
-    .line 140
+    .line 136
     :cond_1
     new-instance v0, Ljava/lang/AssertionError;
 
@@ -177,8 +194,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/reflect/Types$ClassOwnership;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 106
+    .line 100
     const-class v0, Lcom/google/common/reflect/Types$ClassOwnership;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -193,7 +218,7 @@
 .method public static values()[Lcom/google/common/reflect/Types$ClassOwnership;
     .locals 1
 
-    .line 106
+    .line 100
     sget-object v0, Lcom/google/common/reflect/Types$ClassOwnership;->$VALUES:[Lcom/google/common/reflect/Types$ClassOwnership;
 
     invoke-virtual {v0}, [Lcom/google/common/reflect/Types$ClassOwnership;->clone()Ljava/lang/Object;
@@ -208,6 +233,15 @@
 
 # virtual methods
 .method abstract getOwnerType(Ljava/lang/Class;)Ljava/lang/Class;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "rawType"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -218,6 +252,6 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end method

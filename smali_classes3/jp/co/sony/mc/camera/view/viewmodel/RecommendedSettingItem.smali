@@ -135,31 +135,31 @@
 
     invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 278
+    .line 259
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 279
+    .line 260
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->facingId:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 280
+    .line 261
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->settingKey:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    .line 281
+    .line 262
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->recommendedValue:Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
-    .line 282
+    .line 263
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->titleText:Ljava/lang/String;
 
-    .line 283
+    .line 264
     iput p5, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->currentTextId:I
 
-    .line 284
+    .line 265
     iput p6, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->recommendedTextId:I
 
-    .line 285
+    .line 266
     iput-boolean p7, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->selectable:Z
 
-    .line 286
+    .line 267
     iput-boolean p8, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->isChecked:Z
 
     return-void
@@ -210,7 +210,7 @@
 
     move/from16 v8, p6
 
-    .line 278
+    .line 259
     invoke-direct/range {v2 .. v10}, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;-><init>(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/CameraSettings$Key;Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;Ljava/lang/String;IIZZ)V
 
     return-void
@@ -584,7 +584,7 @@
 .method public final getCurrentTextId()I
     .locals 0
 
-    .line 283
+    .line 264
     iget p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->currentTextId:I
 
     return p0
@@ -593,7 +593,7 @@
 .method public final getFacingId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
     .locals 0
 
-    .line 279
+    .line 260
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->facingId:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     return-object p0
@@ -602,7 +602,7 @@
 .method public final getRecommendedTextId()I
     .locals 0
 
-    .line 284
+    .line 265
     iget p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->recommendedTextId:I
 
     return p0
@@ -611,7 +611,7 @@
 .method public final getRecommendedValue()Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
     .locals 0
 
-    .line 281
+    .line 262
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->recommendedValue:Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     return-object p0
@@ -620,7 +620,7 @@
 .method public final getSelectable()Z
     .locals 0
 
-    .line 285
+    .line 266
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->selectable:Z
 
     return p0
@@ -637,7 +637,7 @@
         }
     .end annotation
 
-    .line 280
+    .line 261
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->settingKey:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     return-object p0
@@ -646,7 +646,7 @@
 .method public final getTitleText()Ljava/lang/String;
     .locals 0
 
-    .line 282
+    .line 263
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->titleText:Ljava/lang/String;
 
     return-object p0
@@ -737,7 +737,7 @@
 .method public final isChecked()Z
     .locals 0
 
-    .line 286
+    .line 267
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->isChecked:Z
 
     return p0
@@ -746,7 +746,7 @@
 .method public final setChecked(Z)V
     .locals 0
 
-    .line 286
+    .line 267
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingItem;->isChecked:Z
 
     return-void

@@ -24,7 +24,11 @@
     .line 0
     check-cast p1, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingLayoutType;
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;->$r8$lambda$ypZ0_zwORdMkgjv2f_wR8HYLK_k(Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingLayoutType;)[I
+    invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;->$r8$lambda$fmjotDpYfmcdkMqdYsoPVwaGSOs(Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingLayoutType;)I
+
+    move-result p0
+
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 

@@ -26,6 +26,22 @@
 # direct methods
 .method public constructor <init>(IIFFF)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "maxIndex",
+            "minIndex",
+            "ratio",
+            "baseStageNumber",
+            "zoomMagnificationCoefficient"
+        }
+    .end annotation
 
     .line 64
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -54,6 +70,22 @@
 
 .method public constructor <init>(IIIFF)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "maxIndex",
+            "minIndex",
+            "index",
+            "baseStageNumber",
+            "zoomMagnificationCoefficient"
+        }
+    .end annotation
 
     .line 46
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -78,6 +110,16 @@
 
 .method private getIndex(FI)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ratio",
+            "maxIndex"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -134,6 +176,14 @@
 
 .method private getRatio(I)F
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
     int-to-float p1, p1
 
@@ -199,6 +249,14 @@
 
 .method setIndex(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
     .line 107
     iget v0, p0, Ljp/co/sony/mc/camera/view/angle/VariableIndex;->mMinIndex:I

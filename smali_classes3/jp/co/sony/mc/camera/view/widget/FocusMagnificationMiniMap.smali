@@ -168,7 +168,7 @@
 
     invoke-direct {p2}, Landroid/graphics/Paint;-><init>()V
 
-    const p3, 0x7f0600ef
+    const p3, 0x7f0600e2
 
     .line 29
     invoke-virtual {p1, p3}, Landroid/content/Context;->getColor(I)I
@@ -187,7 +187,7 @@
 
     move-result-object p3
 
-    const v0, 0x7f0706cd
+    const v0, 0x7f070679
 
     invoke-virtual {p3, v0}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -203,7 +203,7 @@
 
     invoke-direct {p2}, Landroid/graphics/Paint;-><init>()V
 
-    const p3, 0x7f0600f0
+    const p3, 0x7f0600e3
 
     .line 37
     invoke-virtual {p1, p3}, Landroid/content/Context;->getColor(I)I
@@ -222,7 +222,7 @@
 
     move-result-object p1
 
-    const p3, 0x7f0706ce
+    const p3, 0x7f07067a
 
     invoke-virtual {p1, p3}, Landroid/content/res/Resources;->getDimension(I)F
 

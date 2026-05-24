@@ -153,7 +153,7 @@
     .line 19
     invoke-direct {p0, p1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
-    const v0, 0x7f0803fb
+    const v0, 0x7f080485
 
     .line 28
     iput v0, p0, Ljp/co/sony/mc/camera/view/focus/RectangleView;->drawableResourceId:I

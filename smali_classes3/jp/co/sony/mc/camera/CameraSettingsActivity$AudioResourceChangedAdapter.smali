@@ -24,8 +24,16 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/CameraSettingsActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 1532
+    .line 1549
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$AudioResourceChangedAdapter;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,12 +54,12 @@
 .method public onAudioResourceChanged()V
     .locals 2
 
-    .line 1535
+    .line 1552
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$AudioResourceChangedAdapter;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->updateSetting()V
 
-    .line 1536
+    .line 1553
     invoke-static {}, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->getInstance()Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;
 
     move-result-object v0
@@ -74,35 +82,35 @@
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/CameraSettingsActivity;->mLastClickedCameraSettingItem:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
 
-    .line 1538
+    .line 1555
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;->getKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
     move-result-object v1
 
     if-ne v0, v1, :cond_1
 
-    .line 1539
+    .line 1556
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 1540
+    .line 1557
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 1543
+    .line 1560
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 1544
+    .line 1561
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$AudioResourceChangedAdapter;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->getSupportFragmentManager()Landroidx/fragment/app/FragmentManager;
@@ -111,17 +119,17 @@
 
     const-class v1, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsImageDetailFragment;
 
-    .line 1545
+    .line 1562
     const-string v1, "ProModeCameraSettingsImageDetailFragment"
 
-    .line 1544
+    .line 1561
     invoke-virtual {v0, v1}, Landroidx/fragment/app/FragmentManager;->findFragmentByTag(Ljava/lang/String;)Landroidx/fragment/app/Fragment;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 1547
+    .line 1564
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$AudioResourceChangedAdapter;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
@@ -131,10 +139,10 @@
 
     const-class v1, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeCameraSettingsImageDetailFragment;
 
-    .line 1548
+    .line 1565
     const-string v1, "BasicModeCameraSettingsImageDetailFragment"
 
-    .line 1547
+    .line 1564
     invoke-virtual {v0, v1}, Landroidx/fragment/app/FragmentManager;->findFragmentByTag(Ljava/lang/String;)Landroidx/fragment/app/Fragment;
 
     move-result-object v0
@@ -142,7 +150,7 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 1552
+    .line 1569
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$AudioResourceChangedAdapter;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->getOnBackPressedDispatcher()Landroidx/activity/OnBackPressedDispatcher;

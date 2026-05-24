@@ -23,11 +23,21 @@
 # direct methods
 .method private constructor <init>(I[I)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "scale",
+            "indexes"
+        }
+    .end annotation
 
-    .line 319
+    .line 328
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 320
+    .line 329
     array-length v0, p2
 
     const/4 v1, 0x0
@@ -39,14 +49,14 @@
 
     aget v3, p2, v2
 
-    .line 321
+    .line 330
     invoke-static {v3, p1}, Lcom/google/common/math/Quantiles;->access$300(II)V
 
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 323
+    .line 332
     :cond_0
     array-length v0, p2
 
@@ -59,10 +69,10 @@
 
     invoke-static {v1, v0}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/Object;)V
 
-    .line 324
+    .line 333
     iput p1, p0, Lcom/google/common/math/Quantiles$ScaleAndIndexes;->scale:I
 
-    .line 325
+    .line 334
     iput-object p2, p0, Lcom/google/common/math/Quantiles$ScaleAndIndexes;->indexes:[I
 
     return-void
@@ -71,7 +81,7 @@
 .method synthetic constructor <init>(I[ILcom/google/common/math/Quantiles$1;)V
     .locals 0
 
-    .line 314
+    .line 323
     invoke-direct {p0, p1, p2}, Lcom/google/common/math/Quantiles$ScaleAndIndexes;-><init>(I[I)V
 
     return-void
@@ -81,6 +91,15 @@
 # virtual methods
 .method public compute(Ljava/util/Collection;)Ljava/util/Map;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dataset"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -95,7 +114,7 @@
         }
     .end annotation
 
-    .line 340
+    .line 349
     invoke-static {p1}, Lcom/google/common/primitives/Doubles;->toArray(Ljava/util/Collection;)[D
 
     move-result-object p1
@@ -109,6 +128,15 @@
 
 .method public varargs compute([D)Ljava/util/Map;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dataset"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([D)",
@@ -119,7 +147,7 @@
         }
     .end annotation
 
-    .line 354
+    .line 363
     invoke-virtual {p1}, [D->clone()Ljava/lang/Object;
 
     move-result-object p1
@@ -135,6 +163,15 @@
 
 .method public varargs compute([I)Ljava/util/Map;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dataset"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([I)",
@@ -145,7 +182,7 @@
         }
     .end annotation
 
-    .line 383
+    .line 392
     invoke-static {p1}, Lcom/google/common/math/Quantiles;->access$500([I)[D
 
     move-result-object p1
@@ -159,6 +196,15 @@
 
 .method public varargs compute([J)Ljava/util/Map;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dataset"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([J)",
@@ -169,7 +215,7 @@
         }
     .end annotation
 
-    .line 369
+    .line 378
     invoke-static {p1}, Lcom/google/common/math/Quantiles;->access$400([J)[D
 
     move-result-object p1
@@ -183,6 +229,15 @@
 
 .method public varargs computeInPlace([D)Ljava/util/Map;
     .locals 19
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dataset"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([D)",
@@ -197,7 +252,7 @@
 
     move-object/from16 v7, p1
 
-    .line 397
+    .line 406
     array-length v1, v7
 
     const/4 v8, 0x0
@@ -218,19 +273,19 @@
 
     invoke-static {v1, v3}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/Object;)V
 
-    .line 398
+    .line 407
     invoke-static/range {p1 .. p1}, Lcom/google/common/math/Quantiles;->access$600([D)Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    .line 399
+    .line 408
     new-instance v1, Ljava/util/LinkedHashMap;
 
     invoke-direct {v1}, Ljava/util/LinkedHashMap;-><init>()V
 
-    .line 400
+    .line 409
     iget-object v0, v0, Lcom/google/common/math/Quantiles$ScaleAndIndexes;->indexes:[I
 
     array-length v2, v0
@@ -240,7 +295,7 @@
 
     aget v3, v0, v8
 
-    .line 401
+    .line 410
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
@@ -257,7 +312,7 @@
 
     goto :goto_1
 
-    .line 403
+    .line 412
     :cond_1
     invoke-static {v1}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
 
@@ -265,7 +320,7 @@
 
     return-object v0
 
-    .line 411
+    .line 420
     :cond_2
     iget-object v1, v0, Lcom/google/common/math/Quantiles$ScaleAndIndexes;->indexes:[I
 
@@ -273,12 +328,12 @@
 
     new-array v9, v3, [I
 
-    .line 412
+    .line 421
     array-length v3, v1
 
     new-array v10, v3, [I
 
-    .line 414
+    .line 423
     array-length v1, v1
 
     mul-int/lit8 v1, v1, 0x2
@@ -289,7 +344,7 @@
 
     move v4, v3
 
-    .line 416
+    .line 425
     :goto_2
     iget-object v5, v0, Lcom/google/common/math/Quantiles$ScaleAndIndexes;->indexes:[I
 
@@ -297,7 +352,7 @@
 
     if-ge v3, v6, :cond_4
 
-    .line 419
+    .line 428
     aget v5, v5, v3
 
     int-to-long v5, v5
@@ -310,7 +365,7 @@
 
     mul-long/2addr v5, v11
 
-    .line 424
+    .line 433
     iget v11, v0, Lcom/google/common/math/Quantiles$ScaleAndIndexes;->scale:I
 
     int-to-long v11, v11
@@ -325,7 +380,7 @@
 
     int-to-long v12, v11
 
-    .line 425
+    .line 434
     iget v14, v0, Lcom/google/common/math/Quantiles$ScaleAndIndexes;->scale:I
 
     int-to-long v14, v14
@@ -336,13 +391,13 @@
 
     long-to-int v5, v5
 
-    .line 426
+    .line 435
     aput v11, v9, v3
 
-    .line 427
+    .line 436
     aput v5, v10, v3
 
-    .line 428
+    .line 437
     aput v11, v1, v4
 
     add-int/lit8 v6, v4, 0x1
@@ -351,7 +406,7 @@
 
     add-int/lit8 v11, v11, 0x1
 
-    .line 431
+    .line 440
     aput v11, v1, v6
 
     add-int/lit8 v4, v4, 0x2
@@ -366,13 +421,13 @@
 
     goto :goto_2
 
-    .line 435
+    .line 444
     :cond_4
     invoke-static {v1, v8, v4}, Ljava/util/Arrays;->sort([III)V
 
     add-int/lit8 v3, v4, -0x1
 
-    .line 436
+    .line 445
     array-length v4, v7
 
     add-int/lit8 v6, v4, -0x1
@@ -385,12 +440,12 @@
 
     invoke-static/range {v1 .. v6}, Lcom/google/common/math/Quantiles;->access$900([III[DII)V
 
-    .line 438
+    .line 447
     new-instance v1, Ljava/util/LinkedHashMap;
 
     invoke-direct {v1}, Ljava/util/LinkedHashMap;-><init>()V
 
-    .line 439
+    .line 448
     :goto_4
     iget-object v2, v0, Lcom/google/common/math/Quantiles$ScaleAndIndexes;->indexes:[I
 
@@ -398,15 +453,15 @@
 
     if-ge v8, v3, :cond_6
 
-    .line 440
+    .line 449
     aget v3, v9, v8
 
-    .line 441
+    .line 450
     aget v4, v10, v8
 
     if-nez v4, :cond_5
 
-    .line 443
+    .line 452
     aget v2, v2, v8
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -423,11 +478,11 @@
 
     goto :goto_5
 
-    .line 445
+    .line 454
     :cond_5
     aget v2, v2, v8
 
-    .line 446
+    .line 455
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -456,7 +511,7 @@
 
     move-result-object v3
 
-    .line 445
+    .line 454
     invoke-interface {v1, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :goto_5
@@ -464,7 +519,7 @@
 
     goto :goto_4
 
-    .line 449
+    .line 458
     :cond_6
     invoke-static {v1}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
 

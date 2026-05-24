@@ -43,7 +43,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f0c0068
+    const v3, 0x7f0c0063
 
     filled-new-array {v3}, [I
 
@@ -61,6 +61,16 @@
 
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root"
+        }
+    .end annotation
 
     .line 31
     sget-object v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeBottomPaneBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -80,6 +90,18 @@
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root",
+            "bindings"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -125,6 +147,16 @@
 
 .method private onChangeCapture(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "Capture",
+            "fieldId"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
@@ -299,6 +331,18 @@
 
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "localFieldId",
+            "object",
+            "fieldId"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -319,6 +363,14 @@
 
 .method public setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "lifecycleOwner"
+        }
+    .end annotation
 
     .line 75
     invoke-super {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeBottomPaneBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
@@ -333,6 +385,16 @@
 
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "variableId",
+            "variable"
+        }
+    .end annotation
 
     const/4 p0, 0x1
 

@@ -22,9 +22,9 @@
     .locals 0
 
     .line 0
-    check-cast p1, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingLayoutType;
+    check-cast p1, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;->$r8$lambda$dkuQXw_hEQCjY56tZVtzfEW81Ac(Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingLayoutType;)Z
+    invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;->$r8$lambda$xgqUgQIKT5qVjsDVSuplonIudwY(Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;)Z
 
     move-result p0
 

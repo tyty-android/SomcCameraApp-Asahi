@@ -9,15 +9,31 @@
 # instance fields
 .field public final synthetic f$0:Landroidx/lifecycle/MediatorLiveData;
 
-.field public final synthetic f$1:Lkotlin/jvm/functions/Function2;
+.field public final synthetic f$1:Lkotlin/jvm/functions/Function10;
+
+.field public final synthetic f$10:Landroidx/lifecycle/LiveData;
+
+.field public final synthetic f$11:Landroidx/lifecycle/LiveData;
 
 .field public final synthetic f$2:Landroidx/lifecycle/LiveData;
 
 .field public final synthetic f$3:Landroidx/lifecycle/LiveData;
 
+.field public final synthetic f$4:Landroidx/lifecycle/LiveData;
+
+.field public final synthetic f$5:Landroidx/lifecycle/LiveData;
+
+.field public final synthetic f$6:Landroidx/lifecycle/LiveData;
+
+.field public final synthetic f$7:Landroidx/lifecycle/LiveData;
+
+.field public final synthetic f$8:Landroidx/lifecycle/LiveData;
+
+.field public final synthetic f$9:Landroidx/lifecycle/LiveData;
+
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/lifecycle/MediatorLiveData;Lkotlin/jvm/functions/Function2;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;)V
+.method public synthetic constructor <init>(Landroidx/lifecycle/MediatorLiveData;Lkotlin/jvm/functions/Function10;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;)V
     .locals 0
 
     .line 0
@@ -25,11 +41,27 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators$$ExternalSyntheticLambda3;->f$0:Landroidx/lifecycle/MediatorLiveData;
 
-    iput-object p2, p0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators$$ExternalSyntheticLambda3;->f$1:Lkotlin/jvm/functions/Function2;
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators$$ExternalSyntheticLambda3;->f$1:Lkotlin/jvm/functions/Function10;
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators$$ExternalSyntheticLambda3;->f$2:Landroidx/lifecycle/LiveData;
 
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators$$ExternalSyntheticLambda3;->f$3:Landroidx/lifecycle/LiveData;
+
+    iput-object p5, p0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators$$ExternalSyntheticLambda3;->f$4:Landroidx/lifecycle/LiveData;
+
+    iput-object p6, p0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators$$ExternalSyntheticLambda3;->f$5:Landroidx/lifecycle/LiveData;
+
+    iput-object p7, p0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators$$ExternalSyntheticLambda3;->f$6:Landroidx/lifecycle/LiveData;
+
+    iput-object p8, p0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators$$ExternalSyntheticLambda3;->f$7:Landroidx/lifecycle/LiveData;
+
+    iput-object p9, p0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators$$ExternalSyntheticLambda3;->f$8:Landroidx/lifecycle/LiveData;
+
+    iput-object p10, p0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators$$ExternalSyntheticLambda3;->f$9:Landroidx/lifecycle/LiveData;
+
+    iput-object p11, p0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators$$ExternalSyntheticLambda3;->f$10:Landroidx/lifecycle/LiveData;
+
+    iput-object p12, p0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators$$ExternalSyntheticLambda3;->f$11:Landroidx/lifecycle/LiveData;
 
     return-void
 .end method
@@ -37,18 +69,36 @@
 
 # virtual methods
 .method public final onChanged(Ljava/lang/Object;)V
-    .locals 3
+    .locals 13
 
     .line 0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators$$ExternalSyntheticLambda3;->f$0:Landroidx/lifecycle/MediatorLiveData;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators$$ExternalSyntheticLambda3;->f$1:Lkotlin/jvm/functions/Function2;
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators$$ExternalSyntheticLambda3;->f$1:Lkotlin/jvm/functions/Function10;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators$$ExternalSyntheticLambda3;->f$2:Landroidx/lifecycle/LiveData;
 
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators$$ExternalSyntheticLambda3;->f$3:Landroidx/lifecycle/LiveData;
+    iget-object v3, p0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators$$ExternalSyntheticLambda3;->f$3:Landroidx/lifecycle/LiveData;
 
-    invoke-static {v0, v1, v2, p0, p1}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->$r8$lambda$kpXhgAR85umwkSwRo34ck_0gX4I(Landroidx/lifecycle/MediatorLiveData;Lkotlin/jvm/functions/Function2;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Ljava/lang/Object;)V
+    iget-object v4, p0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators$$ExternalSyntheticLambda3;->f$4:Landroidx/lifecycle/LiveData;
+
+    iget-object v5, p0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators$$ExternalSyntheticLambda3;->f$5:Landroidx/lifecycle/LiveData;
+
+    iget-object v6, p0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators$$ExternalSyntheticLambda3;->f$6:Landroidx/lifecycle/LiveData;
+
+    iget-object v7, p0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators$$ExternalSyntheticLambda3;->f$7:Landroidx/lifecycle/LiveData;
+
+    iget-object v8, p0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators$$ExternalSyntheticLambda3;->f$8:Landroidx/lifecycle/LiveData;
+
+    iget-object v9, p0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators$$ExternalSyntheticLambda3;->f$9:Landroidx/lifecycle/LiveData;
+
+    iget-object v10, p0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators$$ExternalSyntheticLambda3;->f$10:Landroidx/lifecycle/LiveData;
+
+    iget-object v11, p0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators$$ExternalSyntheticLambda3;->f$11:Landroidx/lifecycle/LiveData;
+
+    move-object v12, p1
+
+    invoke-static/range {v0 .. v12}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->$r8$lambda$Czk37wtfoKrF70FOulVmD9cmZ8Y(Landroidx/lifecycle/MediatorLiveData;Lkotlin/jvm/functions/Function10;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Ljava/lang/Object;)V
 
     return-void
 .end method

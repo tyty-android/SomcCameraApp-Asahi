@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 25
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi$1;->this$0:Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi;
@@ -35,6 +43,14 @@
 
 .method private findIconLayerNum(Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi$Icon;)I
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "icon"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -100,6 +116,14 @@
 # virtual methods
 .method public onDetached(Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi$Icon;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "icon"
+        }
+    .end annotation
 
     .line 29
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi$1;->findIconLayerNum(Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi$Icon;)I

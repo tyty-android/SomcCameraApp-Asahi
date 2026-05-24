@@ -35,6 +35,26 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/CameraProSetting;Ljp/co/sony/mc/camera/storage/Storage;ZLjp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "capturingMode",
+            "cameraId",
+            "setting",
+            "storage",
+            "isOneShot",
+            "group"
+        }
+    .end annotation
 
     .line 78
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -79,6 +99,15 @@
 
 .method private checkDependencyGuideList(Ljava/util/List;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "valueItems"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -133,6 +162,14 @@
 
 .method private generateCategoryItem(I)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingCategoryItem;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "categoryIndex"
+        }
+    .end annotation
 
     .line 112
     new-instance v0, Ljava/util/ArrayList;
@@ -227,6 +264,17 @@
 
 .method private generateChildrenSettingItem(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljp/co/sony/mc/camera/storage/Storage;)Ljava/util/List;
     .locals 20
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "storage"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -813,6 +861,15 @@
 
 .method private getSelectedSettingItem(Ljava/util/List;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "items"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -894,6 +951,14 @@
 
 .method private getString(I)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "resId"
+        }
+    .end annotation
 
     const/4 v0, -0x1
 
@@ -922,6 +987,16 @@
 
 .method private getString(II)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "resIdPrefix",
+            "resIdValue"
+        }
+    .end annotation
 
     .line 449
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
@@ -947,6 +1022,18 @@
 
 .method private getString(III)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "resIdPrefix",
+            "resIdValue1",
+            "resIdValue2"
+        }
+    .end annotation
 
     .line 456
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
@@ -1039,6 +1126,18 @@
 
 .method public generateKeyItem(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljp/co/sony/mc/camera/setting/SettingAppearance;Ljp/co/sony/mc/camera/storage/Storage;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
     .locals 11
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "keyAppearance",
+            "storage"
+        }
+    .end annotation
 
     .line 182
     invoke-direct {p0, p1, p3}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->generateChildrenSettingItem(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljp/co/sony/mc/camera/storage/Storage;)Ljava/util/List;
@@ -1150,11 +1249,11 @@
 
     if-eqz v5, :cond_3
 
-    const v5, 0x7f110178
+    const v5, 0x7f1101b5
 
-    const v7, 0x7f110237
+    const v7, 0x7f110280
 
-    const v9, 0x7f11030d
+    const v9, 0x7f110356
 
     .line 213
     invoke-direct {p0, v9, v5, v7}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(III)Ljava/lang/String;
@@ -1190,7 +1289,7 @@
 
     if-eqz v5, :cond_6
 
-    const v5, 0x7f11031b
+    const v5, 0x7f110364
 
     .line 203
     invoke-direct {p0, v5, v7}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(II)Ljava/lang/String;
@@ -1209,7 +1308,7 @@
 
     if-eqz v5, :cond_7
 
-    const v5, 0x7f11031d
+    const v5, 0x7f110366
 
     .line 206
     invoke-direct {p0, v5, v7}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(II)Ljava/lang/String;
@@ -1265,7 +1364,7 @@
 
     if-eqz v8, :cond_a
 
-    const v8, 0x7f110334
+    const v8, 0x7f11037d
 
     .line 233
     invoke-direct {p0, v8}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
@@ -1284,7 +1383,7 @@
 
     if-eq p2, v8, :cond_b
 
-    const v8, 0x7f1103a7
+    const v8, 0x7f1103f2
 
     .line 236
     invoke-direct {p0, v8}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
@@ -1399,7 +1498,7 @@
 
     if-nez v0, :cond_f
 
-    const v0, 0x7f1103f4
+    const v0, 0x7f11043f
 
     .line 251
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
@@ -1412,7 +1511,7 @@
     goto :goto_5
 
     :cond_f
-    const v0, 0x7f1103f3
+    const v0, 0x7f11043e
 
     .line 254
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
@@ -1432,7 +1531,7 @@
     .line 261
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    const p2, 0x7f1100d7
+    const p2, 0x7f1100eb
 
     .line 263
     invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;

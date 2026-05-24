@@ -15,15 +15,31 @@
 
 
 # instance fields
+.field final synthetic this$0:Lcom/google/common/reflect/TypeResolver$WildcardCapturer;
+
 .field final synthetic val$typeParam:Ljava/lang/reflect/TypeVariable;
 
 
 # direct methods
 .method constructor <init>(Lcom/google/common/reflect/TypeResolver$WildcardCapturer;Ljava/util/concurrent/atomic/AtomicInteger;Ljava/lang/reflect/TypeVariable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "id",
+            "val$typeParam"
+        }
+    .end annotation
 
-    .line 507
+    .line 506
     iput-object p3, p0, Lcom/google/common/reflect/TypeResolver$WildcardCapturer$1;->val$typeParam:Ljava/lang/reflect/TypeVariable;
+
+    iput-object p1, p0, Lcom/google/common/reflect/TypeResolver$WildcardCapturer$1;->this$0:Lcom/google/common/reflect/TypeResolver$WildcardCapturer;
 
     const/4 p1, 0x0
 
@@ -36,6 +52,15 @@
 # virtual methods
 .method captureAsTypeVariable([Ljava/lang/reflect/Type;)Ljava/lang/reflect/TypeVariable;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "upperBounds"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
@@ -46,7 +71,7 @@
         }
     .end annotation
 
-    .line 510
+    .line 509
     new-instance v0, Ljava/util/LinkedHashSet;
 
     invoke-static {p1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
@@ -55,7 +80,7 @@
 
     invoke-direct {v0, p1}, Ljava/util/LinkedHashSet;-><init>(Ljava/util/Collection;)V
 
-    .line 517
+    .line 516
     iget-object p1, p0, Lcom/google/common/reflect/TypeResolver$WildcardCapturer$1;->val$typeParam:Ljava/lang/reflect/TypeVariable;
 
     invoke-interface {p1}, Ljava/lang/reflect/TypeVariable;->getBounds()[Ljava/lang/reflect/Type;
@@ -68,7 +93,7 @@
 
     invoke-interface {v0, p1}, Ljava/util/Set;->addAll(Ljava/util/Collection;)Z
 
-    .line 518
+    .line 517
     invoke-interface {v0}, Ljava/util/Set;->size()I
 
     move-result p1
@@ -77,7 +102,7 @@
 
     if-le p1, v1, :cond_0
 
-    .line 519
+    .line 518
     const-class p1, Ljava/lang/Object;
 
     invoke-interface {v0, p1}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
@@ -85,7 +110,7 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 521
+    .line 520
     new-array p1, p1, [Ljava/lang/reflect/Type;
 
     invoke-interface {v0, p1}, Ljava/util/Set;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;

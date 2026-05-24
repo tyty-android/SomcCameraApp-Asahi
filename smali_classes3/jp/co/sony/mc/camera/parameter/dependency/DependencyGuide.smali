@@ -23,6 +23,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
     .line 23
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,6 +52,14 @@
 # virtual methods
 .method add(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     .line 28
     iget-object p0, p0, Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuide;->mValues:Ljava/util/ArrayList;

@@ -29,8 +29,16 @@
 # direct methods
 .method constructor <init>(Ljava/util/Iterator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "val$entryIterator"
+        }
+    .end annotation
 
-    .line 1293
+    .line 1501
     iput-object p1, p0, Lcom/google/common/collect/Maps$8;->val$entryIterator:Ljava/util/Iterator;
 
     invoke-direct {p0}, Lcom/google/common/collect/UnmodifiableIterator;-><init>()V
@@ -43,7 +51,7 @@
 .method public hasNext()Z
     .locals 0
 
-    .line 1296
+    .line 1504
     iget-object p0, p0, Lcom/google/common/collect/Maps$8;->val$entryIterator:Ljava/util/Iterator;
 
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
@@ -56,7 +64,7 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .locals 0
 
-    .line 1293
+    .line 1501
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$8;->next()Ljava/util/Map$Entry;
 
     move-result-object p0
@@ -74,7 +82,7 @@
         }
     .end annotation
 
-    .line 1301
+    .line 1509
     iget-object p0, p0, Lcom/google/common/collect/Maps$8;->val$entryIterator:Ljava/util/Iterator;
 
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;

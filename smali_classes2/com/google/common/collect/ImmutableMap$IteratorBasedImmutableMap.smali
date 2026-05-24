@@ -30,7 +30,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 425
+    .line 760
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableMap;-><init>()V
 
     return-void
@@ -49,7 +49,7 @@
         }
     .end annotation
 
-    .line 446
+    .line 790
     new-instance v0, Lcom/google/common/collect/ImmutableMap$IteratorBasedImmutableMap$1EntrySetImpl;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/ImmutableMap$IteratorBasedImmutableMap$1EntrySetImpl;-><init>(Lcom/google/common/collect/ImmutableMap$IteratorBasedImmutableMap;)V
@@ -67,7 +67,7 @@
         }
     .end annotation
 
-    .line 430
+    .line 765
     new-instance v0, Lcom/google/common/collect/ImmutableMapKeySet;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/ImmutableMapKeySet;-><init>(Lcom/google/common/collect/ImmutableMap;)V
@@ -85,7 +85,7 @@
         }
     .end annotation
 
-    .line 451
+    .line 795
     new-instance v0, Lcom/google/common/collect/ImmutableMapValues;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/ImmutableMapValues;-><init>(Lcom/google/common/collect/ImmutableMap;)V
@@ -107,7 +107,7 @@
 .method public bridge synthetic entrySet()Ljava/util/Set;
     .locals 0
 
-    .line 425
+    .line 760
     invoke-super {p0}, Lcom/google/common/collect/ImmutableMap;->entrySet()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object p0
@@ -118,7 +118,7 @@
 .method public bridge synthetic keySet()Ljava/util/Set;
     .locals 0
 
-    .line 425
+    .line 760
     invoke-super {p0}, Lcom/google/common/collect/ImmutableMap;->keySet()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object p0
@@ -129,8 +129,19 @@
 .method public bridge synthetic values()Ljava/util/Collection;
     .locals 0
 
-    .line 425
+    .line 760
     invoke-super {p0}, Lcom/google/common/collect/ImmutableMap;->values()Lcom/google/common/collect/ImmutableCollection;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method writeReplace()Ljava/lang/Object;
+    .locals 0
+
+    .line 804
+    invoke-super {p0}, Lcom/google/common/collect/ImmutableMap;->writeReplace()Ljava/lang/Object;
 
     move-result-object p0
 

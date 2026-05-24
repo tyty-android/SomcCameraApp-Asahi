@@ -40,6 +40,16 @@
 # virtual methods
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "firstResolution",
+            "secondResolution"
+        }
+    .end annotation
 
     .line 268
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/Resolution;
@@ -55,6 +65,16 @@
 
 .method public compare(Ljp/co/sony/mc/camera/configuration/parameters/Resolution;Ljp/co/sony/mc/camera/configuration/parameters/Resolution;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "firstResolution",
+            "secondResolution"
+        }
+    .end annotation
 
     .line 273
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/Resolution;->getPictureRect()Landroid/graphics/Rect;

@@ -9,7 +9,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000N\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0010\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u0008\u0007\u0018\u00002\u00020\u00012\u00020\u0002B\t\u0008\u0007\u00a2\u0006\u0004\u0008\u0003\u0010\u0004J\u001c\u0010\u0005\u001a\u00020\u00062\u0008\u0010\u0007\u001a\u0004\u0018\u00010\u00082\u0008\u0010\t\u001a\u0004\u0018\u00010\nH\u0016J\u0012\u0010\u000b\u001a\u00020\u00062\u0008\u0010\u0007\u001a\u0004\u0018\u00010\u0008H\u0016J\u0018\u0010\u000c\u001a\u00020\u00062\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u0010H\u0016J\u0010\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0014H\u0016J\u0008\u0010\u0015\u001a\u00020\u0006H\u0016J\u0008\u0010\u0016\u001a\u00020\u0006H\u0016J\u001a\u0010\u0017\u001a\u00020\u00062\u0006\u0010\u0018\u001a\u00020\u00192\u0008\u0010\u001a\u001a\u0004\u0018\u00010\nH\u0016J\u0008\u0010\u001b\u001a\u00020\u0006H\u0002J\u0008\u0010\u001c\u001a\u00020\u0006H\u0002J\u0008\u0010\u001d\u001a\u00020\u0006H\u0002J\u0008\u0010\u001e\u001a\u00020\u0006H\u0002J\u0008\u0010\u001f\u001a\u00020\u0006H\u0002J\u0008\u0010 \u001a\u00020\u0006H\u0002J\u0008\u0010!\u001a\u00020\u0006H\u0002J\u0008\u0010\"\u001a\u00020\u0006H\u0002J\u0008\u0010#\u001a\u00020\u0006H\u0002J\u0008\u0010$\u001a\u00020\u0006H\u0002J\u0008\u0010%\u001a\u00020\u0006H\u0002J\u0008\u0010&\u001a\u00020\u0006H\u0002J\u0008\u0010\'\u001a\u00020\u0006H\u0002J\u0010\u0010(\u001a\u00020\u00062\u0006\u0010)\u001a\u00020*H\u0002J\u0008\u0010+\u001a\u00020\u0006H\u0002J\u0008\u0010,\u001a\u00020\u0006H\u0003J\u0010\u0010-\u001a\u00020\u00062\u0006\u0010.\u001a\u00020\nH\u0002\u00a8\u0006/"
+        "\u0000N\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0011\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u0008\u0007\u0018\u00002\u00020\u00012\u00020\u0002B\t\u0008\u0007\u00a2\u0006\u0004\u0008\u0003\u0010\u0004J\u001c\u0010\u0005\u001a\u00020\u00062\u0008\u0010\u0007\u001a\u0004\u0018\u00010\u00082\u0008\u0010\t\u001a\u0004\u0018\u00010\nH\u0016J\u0012\u0010\u000b\u001a\u00020\u00062\u0008\u0010\u0007\u001a\u0004\u0018\u00010\u0008H\u0016J\u0018\u0010\u000c\u001a\u00020\u00062\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u0010H\u0016J\u0010\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0014H\u0016J\u0008\u0010\u0015\u001a\u00020\u0006H\u0016J\u0008\u0010\u0016\u001a\u00020\u0006H\u0016J\u001a\u0010\u0017\u001a\u00020\u00062\u0006\u0010\u0018\u001a\u00020\u00192\u0008\u0010\u001a\u001a\u0004\u0018\u00010\nH\u0016J\u0008\u0010\u001b\u001a\u00020\u0006H\u0002J\u0008\u0010\u001c\u001a\u00020\u0006H\u0002J\u0008\u0010\u001d\u001a\u00020\u0006H\u0002J\u0008\u0010\u001e\u001a\u00020\u0006H\u0002J\u0008\u0010\u001f\u001a\u00020\u0006H\u0002J\u0008\u0010 \u001a\u00020\u0006H\u0002J\u0008\u0010!\u001a\u00020\u0006H\u0002J\u0008\u0010\"\u001a\u00020\u0006H\u0002J\u0008\u0010#\u001a\u00020\u0006H\u0002J\u0008\u0010$\u001a\u00020\u0006H\u0002J\u0008\u0010%\u001a\u00020\u0006H\u0002J\u0008\u0010&\u001a\u00020\u0006H\u0002J\u0008\u0010\'\u001a\u00020\u0006H\u0002J\u0008\u0010(\u001a\u00020\u0006H\u0002J\u0010\u0010)\u001a\u00020\u00062\u0006\u0010*\u001a\u00020+H\u0002J\u0008\u0010,\u001a\u00020\u0006H\u0002J\u0008\u0010-\u001a\u00020\u0006H\u0003J\u0010\u0010.\u001a\u00020\u00062\u0006\u0010/\u001a\u00020\nH\u0002\u00a8\u00060"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/debug/DebugMenuFragment;",
@@ -52,6 +52,7 @@
         "initializeForceActivateCoolMode",
         "initializeSimulateCtaApp",
         "initializeEnduranceModeWithoutRemoteController",
+        "initializeSubPreviewRepeatFoldCollapse",
         "reset",
         "context",
         "Landroid/content/Context;",
@@ -124,20 +125,20 @@
 .method private final clearFingerPrint()V
     .locals 2
 
-    .line 274
+    .line 283
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
 
-    .line 275
+    .line 284
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->removeFingerPrint()V
 
-    .line 277
+    .line 286
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->getContext()Landroid/content/Context;
 
     move-result-object p0
 
-    const v0, 0x7f110506
+    const v0, 0x7f110565
 
     const/4 v1, 0x0
 
@@ -145,7 +146,7 @@
 
     move-result-object p0
 
-    .line 279
+    .line 288
     invoke-virtual {p0}, Landroid/widget/Toast;->show()V
 
     return-void
@@ -190,27 +191,30 @@
     .line 138
     invoke-direct {p0}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->initializeEnduranceModeWithoutRemoteController()V
 
+    .line 139
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->initializeSubPreviewRepeatFoldCollapse()V
+
     return-void
 .end method
 
 .method private final initializeAutoPowerOff()V
     .locals 3
 
-    .line 143
+    .line 144
     const-string v0, "KEY_DEBUG_DISABLE_AUTO_POWER_OFF"
 
     move-object v1, v0
 
     check-cast v1, Ljava/lang/CharSequence;
 
-    .line 142
+    .line 143
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->findPreference(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
 
     move-result-object v1
 
     check-cast v1, Landroidx/preference/SwitchPreference;
 
-    .line 144
+    .line 145
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->getPreferenceScreen()Landroidx/preference/PreferenceScreen;
 
     move-result-object p0
@@ -221,7 +225,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 145
+    .line 146
     invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     const/4 v2, 0x0
@@ -239,21 +243,21 @@
 .method private final initializeDeviceStateTransitionRestricted()V
     .locals 3
 
-    .line 179
+    .line 180
     const-string v0, "KEY_DEBUG_DEVICE_STATE_TRANSITION_RESTRICTED"
 
     move-object v1, v0
 
     check-cast v1, Ljava/lang/CharSequence;
 
-    .line 178
+    .line 179
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->findPreference(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
 
     move-result-object v1
 
     check-cast v1, Landroidx/preference/SwitchPreference;
 
-    .line 180
+    .line 181
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->getPreferenceScreen()Landroidx/preference/PreferenceScreen;
 
     move-result-object p0
@@ -264,7 +268,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 181
+    .line 182
     invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     const/4 v2, 0x0
@@ -282,21 +286,21 @@
 .method private final initializeEnduranceModeWithoutRemoteController()V
     .locals 3
 
-    .line 252
+    .line 253
     const-string v0, "KEY_DEBUG_ENDURANCE_MODE_WITHOUT_REMOTE_CONTROLLER"
 
     move-object v1, v0
 
     check-cast v1, Ljava/lang/CharSequence;
 
-    .line 251
+    .line 252
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->findPreference(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
 
     move-result-object v1
 
     check-cast v1, Landroidx/preference/SwitchPreference;
 
-    .line 253
+    .line 254
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->getPreferenceScreen()Landroidx/preference/PreferenceScreen;
 
     move-result-object p0
@@ -307,7 +311,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 254
+    .line 255
     invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     const/4 v2, 0x0
@@ -325,21 +329,21 @@
 .method private final initializeForceActivateCoolMode()V
     .locals 3
 
-    .line 236
+    .line 237
     const-string v0, "KEY_DEBUG_FORCE_ACTIVATE_COOL_MODE"
 
     move-object v1, v0
 
     check-cast v1, Ljava/lang/CharSequence;
 
-    .line 235
+    .line 236
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->findPreference(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
 
     move-result-object v1
 
     check-cast v1, Landroidx/preference/SwitchPreference;
 
-    .line 237
+    .line 238
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->getPreferenceScreen()Landroidx/preference/PreferenceScreen;
 
     move-result-object p0
@@ -350,7 +354,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 238
+    .line 239
     invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     const/4 v2, 0x0
@@ -368,19 +372,19 @@
 .method private final initializeForceSettingMigration()V
     .locals 2
 
-    .line 170
+    .line 171
     const-string v0, "KEY_DEBUG_FORCE_MIGRATE_SETTINGS"
 
     check-cast v0, Ljava/lang/CharSequence;
 
-    .line 169
+    .line 170
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->findPreference(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 171
+    .line 172
     new-instance v1, Ljp/co/sony/mc/camera/debug/DebugMenuFragment$$ExternalSyntheticLambda2;
 
     invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment$$ExternalSyntheticLambda2;-><init>(Ljp/co/sony/mc/camera/debug/DebugMenuFragment;)V
@@ -402,7 +406,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 172
+    .line 173
     invoke-direct {p0}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->clearFingerPrint()V
 
     const/4 p0, 0x1
@@ -413,19 +417,19 @@
 .method private final initializeLaunchWithOneShotPhotoMode()V
     .locals 2
 
-    .line 205
+    .line 206
     const-string v0, "KEY_DEBUG_LAUNCH_WITH_ONE_SHOT_PHOTO_MODE"
 
     check-cast v0, Ljava/lang/CharSequence;
 
-    .line 204
+    .line 205
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->findPreference(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 206
+    .line 207
     new-instance v1, Ljp/co/sony/mc/camera/debug/DebugMenuFragment$$ExternalSyntheticLambda1;
 
     invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment$$ExternalSyntheticLambda1;-><init>(Ljp/co/sony/mc/camera/debug/DebugMenuFragment;)V
@@ -447,7 +451,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 207
+    .line 208
     const-string p1, "android.media.action.IMAGE_CAPTURE"
 
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->launchActivityWithAction(Ljava/lang/String;)V
@@ -460,19 +464,19 @@
 .method private final initializeLaunchWithOneShotVideoMode()V
     .locals 2
 
-    .line 214
+    .line 215
     const-string v0, "KEY_DEBUG_LAUNCH_WITH_ONE_SHOT_VIDEO_MODE"
 
     check-cast v0, Ljava/lang/CharSequence;
 
-    .line 213
+    .line 214
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->findPreference(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 215
+    .line 216
     new-instance v1, Ljp/co/sony/mc/camera/debug/DebugMenuFragment$$ExternalSyntheticLambda0;
 
     invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/debug/DebugMenuFragment;)V
@@ -494,7 +498,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 216
+    .line 217
     const-string p1, "android.media.action.VIDEO_CAPTURE"
 
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->launchActivityWithAction(Ljava/lang/String;)V
@@ -507,7 +511,7 @@
 .method private final initializeLowPowerMode()V
     .locals 3
 
-    .line 150
+    .line 151
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->getPreferenceScreen()Landroidx/preference/PreferenceScreen;
 
     move-result-object v0
@@ -516,7 +520,7 @@
 
     move-result-object v0
 
-    .line 151
+    .line 152
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     const/4 v1, 0x0
@@ -527,10 +531,10 @@
 
     move-result v0
 
-    .line 155
+    .line 156
     check-cast v2, Ljava/lang/CharSequence;
 
-    .line 154
+    .line 155
     invoke-virtual {p0, v2}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->findPreference(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
 
     move-result-object v1
@@ -539,16 +543,16 @@
 
     if-eqz v1, :cond_0
 
-    .line 157
+    .line 158
     invoke-virtual {v1, v0}, Landroidx/preference/SwitchPreference;->setChecked(Z)V
 
-    .line 160
+    .line 161
     :cond_0
     const-string v1, "KEY_DEBUG_FORCE_ACTIVATE_COOL_MODE"
 
     check-cast v1, Ljava/lang/CharSequence;
 
-    .line 159
+    .line 160
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->findPreference(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
 
     move-result-object v1
@@ -559,13 +563,13 @@
 
     xor-int/lit8 v2, v0, 0x1
 
-    .line 162
+    .line 163
     invoke-virtual {v1, v2}, Landroidx/preference/SwitchPreference;->setEnabled(Z)V
 
     :cond_1
     if-eqz v0, :cond_2
 
-    .line 164
+    .line 165
     sget-object v0, Ljp/co/sony/mc/camera/debug/DebugParameterUtils;->INSTANCE:Ljp/co/sony/mc/camera/debug/DebugParameterUtils;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->requireContext()Landroid/content/Context;
@@ -585,21 +589,21 @@
 .method private final initializeMaxZoomRatioToX3Limitation()V
     .locals 3
 
-    .line 187
+    .line 188
     const-string v0, "KEY_DEBUG_DISABLE_MAX_ZOOM_RATIO_TO_X3_LIMITATION"
 
     move-object v1, v0
 
     check-cast v1, Ljava/lang/CharSequence;
 
-    .line 186
+    .line 187
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->findPreference(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
 
     move-result-object v1
 
     check-cast v1, Landroidx/preference/SwitchPreference;
 
-    .line 188
+    .line 189
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->getPreferenceScreen()Landroidx/preference/PreferenceScreen;
 
     move-result-object p0
@@ -610,7 +614,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 189
+    .line 190
     invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     const/4 v2, 0x0
@@ -628,21 +632,21 @@
 .method private final initializeSimulateCtaApp()V
     .locals 3
 
-    .line 244
+    .line 245
     const-string v0, "KEY_DEBUG_SIMULATE_CTA_APP"
 
     move-object v1, v0
 
     check-cast v1, Ljava/lang/CharSequence;
 
-    .line 243
+    .line 244
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->findPreference(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
 
     move-result-object v1
 
     check-cast v1, Landroidx/preference/SwitchPreference;
 
-    .line 245
+    .line 246
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->getPreferenceScreen()Landroidx/preference/PreferenceScreen;
 
     move-result-object p0
@@ -653,7 +657,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 246
+    .line 247
     invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     const/4 v2, 0x0
@@ -671,21 +675,21 @@
 .method private final initializeSimulateSdCardError()V
     .locals 3
 
-    .line 195
+    .line 196
     const-string v0, "KEY_DEBUG_SIMULATE_SD_CARD_ERROR"
 
     move-object v1, v0
 
     check-cast v1, Ljava/lang/CharSequence;
 
-    .line 194
+    .line 195
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->findPreference(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
 
     move-result-object v1
 
     check-cast v1, Landroidx/preference/ListPreference;
 
-    .line 196
+    .line 197
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->getPreferenceScreen()Landroidx/preference/PreferenceScreen;
 
     move-result-object p0
@@ -696,13 +700,13 @@
 
     if-eqz v1, :cond_0
 
-    .line 197
+    .line 198
     invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 199
+    .line 200
     const-string v2, "OFF"
 
-    .line 197
+    .line 198
     invoke-interface {p0, v0, v2}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -715,24 +719,67 @@
     return-void
 .end method
 
-.method private final initializeVirtualRemainSize()V
-    .locals 4
+.method private final initializeSubPreviewRepeatFoldCollapse()V
+    .locals 3
 
-    .line 223
-    const-string v0, "KEY_DEBUG_ENABLE_VIRTUAL_REMAIN_SIZE"
+    .line 261
+    const-string v0, "KEY_DEBUG_SUB_PREVIEW_REPEAT_FOLD_COLLAPSE"
 
     move-object v1, v0
 
     check-cast v1, Ljava/lang/CharSequence;
 
-    .line 222
+    .line 260
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->findPreference(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
 
     move-result-object v1
 
     check-cast v1, Landroidx/preference/SwitchPreference;
 
+    .line 262
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->getPreferenceScreen()Landroidx/preference/PreferenceScreen;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Landroidx/preference/PreferenceScreen;->getSharedPreferences()Landroid/content/SharedPreferences;
+
+    move-result-object p0
+
+    if-eqz v1, :cond_0
+
+    .line 263
+    invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    const/4 v2, 0x0
+
+    invoke-interface {p0, v0, v2}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result p0
+
+    invoke-virtual {v1, p0}, Landroidx/preference/SwitchPreference;->setChecked(Z)V
+
+    :cond_0
+    return-void
+.end method
+
+.method private final initializeVirtualRemainSize()V
+    .locals 4
+
     .line 224
+    const-string v0, "KEY_DEBUG_ENABLE_VIRTUAL_REMAIN_SIZE"
+
+    move-object v1, v0
+
+    check-cast v1, Ljava/lang/CharSequence;
+
+    .line 223
+    invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->findPreference(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
+
+    move-result-object v1
+
+    check-cast v1, Landroidx/preference/SwitchPreference;
+
+    .line 225
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->getPreferenceScreen()Landroidx/preference/PreferenceScreen;
 
     move-result-object v2
@@ -743,7 +790,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 225
+    .line 226
     invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     const/4 v3, 0x0
@@ -754,13 +801,13 @@
 
     invoke-virtual {v1, v0}, Landroidx/preference/SwitchPreference;->setChecked(Z)V
 
-    .line 229
+    .line 230
     :cond_0
     const-string v0, "KEY_DEBUG_SET_VIRTUAL_REMAIN_SIZE"
 
     check-cast v0, Ljava/lang/CharSequence;
 
-    .line 228
+    .line 229
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->findPreference(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
 
     move-result-object p0
@@ -769,7 +816,7 @@
 
     if-eqz p0, :cond_1
 
-    .line 230
+    .line 231
     invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-virtual {v1}, Landroidx/preference/SwitchPreference;->isChecked()Z
@@ -783,7 +830,7 @@
 
     const/16 v0, 0x12c
 
-    .line 231
+    .line 232
     invoke-virtual {p0, v0}, Landroidx/preference/SeekBarPreference;->setValue(I)V
 
     :cond_2
@@ -793,7 +840,7 @@
 .method private final launchActivityWithAction(Ljava/lang/String;)V
     .locals 2
 
-    .line 283
+    .line 292
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -809,7 +856,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 284
+    .line 293
     :goto_0
     new-instance v1, Landroid/content/Intent;
 
@@ -817,14 +864,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 286
+    .line 295
     invoke-virtual {v1, v0}, Landroid/content/Intent;->resolveActivity(Landroid/content/pm/PackageManager;)Landroid/content/ComponentName;
 
     move-result-object p1
 
     if-eqz p1, :cond_1
 
-    .line 287
+    .line 296
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->startActivity(Landroid/content/Intent;)V
 
     :cond_1
@@ -834,12 +881,12 @@
 .method private final reset(Landroid/content/Context;)V
     .locals 1
 
-    .line 259
+    .line 268
     sget-object v0, Ljp/co/sony/mc/camera/debug/DebugParameterUtils;->INSTANCE:Ljp/co/sony/mc/camera/debug/DebugParameterUtils;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/debug/DebugParameterUtils;->reset(Landroid/content/Context;)V
 
-    .line 260
+    .line 269
     invoke-direct {p0}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->initialize()V
 
     return-void
@@ -848,12 +895,12 @@
 .method private final showKillProcessToast()V
     .locals 2
 
-    .line 264
+    .line 273
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/debug/DebugMenuFragment;->getContext()Landroid/content/Context;
 
     move-result-object p0
 
-    const v0, 0x7f110507
+    const v0, 0x7f110566
 
     const/4 v1, 0x0
 
@@ -861,7 +908,7 @@
 
     move-result-object p0
 
-    .line 266
+    .line 275
     invoke-virtual {p0}, Landroid/widget/Toast;->show()V
 
     return-void
@@ -947,7 +994,7 @@
 
     move-result p1
 
-    const v1, 0x7f090159
+    const v1, 0x7f09015f
 
     if-ne p1, v1, :cond_0
 

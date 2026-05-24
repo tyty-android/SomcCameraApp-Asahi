@@ -26,6 +26,18 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/net/Uri;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "uri",
+            "orientation"
+        }
+    .end annotation
 
     .line 76
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -56,6 +68,18 @@
 
 .method public constructor <init>(Landroid/content/Context;[BI)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "imageData",
+            "orientation"
+        }
+    .end annotation
 
     .line 90
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -86,6 +110,17 @@
 
 .method private calcBounds(Ljava/io/InputStream;Landroid/graphics/BitmapFactory$Options;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "st",
+            "opt"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/InvalidObjectException;,
@@ -261,6 +296,18 @@
 
 .method private calcRatio(Landroid/graphics/BitmapFactory$Options;II)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "opt",
+            "firstRatio",
+            "limit"
+        }
+    .end annotation
 
     .line 288
     iget p0, p1, Landroid/graphics/BitmapFactory$Options;->outWidth:I
@@ -360,6 +407,17 @@
 
 .method private decodeStream(Ljava/io/InputStream;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "st",
+            "opt"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -413,6 +471,17 @@
 
 .method private loadFullSize(Ljava/io/InputStream;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "st",
+            "opt"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;,

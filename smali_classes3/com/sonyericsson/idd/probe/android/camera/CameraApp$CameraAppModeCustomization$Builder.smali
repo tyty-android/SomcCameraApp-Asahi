@@ -51,7 +51,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 17055
+    .line 18155
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;-><init>()V
 
     return-void
@@ -65,21 +65,21 @@
         }
     .end annotation
 
-    .line 17096
+    .line 18196
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->isInitialized()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 17100
+    .line 18200
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->buildPartial()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     move-result-object p0
 
     return-object p0
 
-    .line 17097
+    .line 18197
     :cond_0
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
@@ -87,7 +87,7 @@
 
     move-result-object p0
 
-    .line 17098
+    .line 18198
     invoke-virtual {p0}, Lcom/google/protobuf/UninitializedMessageException;->asInvalidProtocolBufferException()Lcom/google/protobuf/InvalidProtocolBufferException;
 
     move-result-object p0
@@ -98,12 +98,12 @@
 .method private static create()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
     .locals 3
 
-    .line 17058
+    .line 18158
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
 
     invoke-direct {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;-><init>()V
 
-    .line 17059
+    .line 18159
     new-instance v1, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     const/4 v2, 0x0
@@ -119,6 +119,15 @@
 # virtual methods
 .method public addAllCommonModeList(Ljava/lang/Iterable;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "values"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -130,7 +139,7 @@
         }
     .end annotation
 
-    .line 17252
+    .line 18352
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     invoke-static {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fgetcommonModeList_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;)Ljava/util/List;
@@ -143,7 +152,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 17253
+    .line 18353
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     new-instance v1, Ljava/util/ArrayList;
@@ -152,7 +161,7 @@
 
     invoke-static {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fputcommonModeList_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;Ljava/util/List;)V
 
-    .line 17255
+    .line 18355
     :cond_0
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
@@ -167,6 +176,15 @@
 
 .method public addAllMoreModeList(Ljava/lang/Iterable;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "values"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -178,7 +196,7 @@
         }
     .end annotation
 
-    .line 17292
+    .line 18392
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     invoke-static {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fgetmoreModeList_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;)Ljava/util/List;
@@ -191,7 +209,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 17293
+    .line 18393
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     new-instance v1, Ljava/util/ArrayList;
@@ -200,7 +218,7 @@
 
     invoke-static {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fputmoreModeList_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;Ljava/util/List;)V
 
-    .line 17295
+    .line 18395
     :cond_0
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
@@ -215,11 +233,19 @@
 
 .method public addCommonModeList(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 17242
+    .line 18342
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 17244
+    .line 18344
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     invoke-static {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fgetcommonModeList_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;)Ljava/util/List;
@@ -232,7 +258,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 17245
+    .line 18345
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     new-instance v1, Ljava/util/ArrayList;
@@ -241,7 +267,7 @@
 
     invoke-static {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fputcommonModeList_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;Ljava/util/List;)V
 
-    .line 17247
+    .line 18347
     :cond_0
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
@@ -256,11 +282,19 @@
 
 .method public addMoreModeList(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 17282
+    .line 18382
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 17284
+    .line 18384
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     invoke-static {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fgetmoreModeList_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;)Ljava/util/List;
@@ -273,7 +307,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 17285
+    .line 18385
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     new-instance v1, Ljava/util/ArrayList;
@@ -282,7 +316,7 @@
 
     invoke-static {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fputmoreModeList_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;Ljava/util/List;)V
 
-    .line 17287
+    .line 18387
     :cond_0
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
@@ -298,7 +332,7 @@
 .method public bridge synthetic build()Lcom/google/protobuf/MessageLite;
     .locals 0
 
-    .line 17049
+    .line 18149
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->build()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     move-result-object p0
@@ -309,7 +343,7 @@
 .method public build()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
     .locals 1
 
-    .line 17088
+    .line 18188
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     if-eqz v0, :cond_1
@@ -322,7 +356,7 @@
 
     goto :goto_0
 
-    .line 17089
+    .line 18189
     :cond_0
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
@@ -332,7 +366,7 @@
 
     throw p0
 
-    .line 17091
+    .line 18191
     :cond_1
     :goto_0
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->buildPartial()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
@@ -345,7 +379,7 @@
 .method public bridge synthetic buildPartial()Lcom/google/protobuf/MessageLite;
     .locals 0
 
-    .line 17049
+    .line 18149
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->buildPartial()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     move-result-object p0
@@ -356,12 +390,12 @@
 .method public buildPartial()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
     .locals 2
 
-    .line 17104
+    .line 18204
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     if-eqz v0, :cond_2
 
-    .line 17108
+    .line 18208
     invoke-static {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fgetcommonModeList_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;)Ljava/util/List;
 
     move-result-object v0
@@ -370,21 +404,21 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 17109
+    .line 18209
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     invoke-static {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fgetcommonModeList_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;)Ljava/util/List;
 
     move-result-object v1
 
-    .line 17110
+    .line 18210
     invoke-static {v1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     move-result-object v1
 
     invoke-static {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fputcommonModeList_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;Ljava/util/List;)V
 
-    .line 17112
+    .line 18212
     :cond_0
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
@@ -396,32 +430,32 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 17113
+    .line 18213
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     invoke-static {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fgetmoreModeList_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;)Ljava/util/List;
 
     move-result-object v1
 
-    .line 17114
+    .line 18214
     invoke-static {v1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     move-result-object v1
 
     invoke-static {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fputmoreModeList_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;Ljava/util/List;)V
 
-    .line 17116
+    .line 18216
     :cond_1
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     const/4 v1, 0x0
 
-    .line 17117
+    .line 18217
     iput-object v1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     return-object v0
 
-    .line 17105
+    .line 18205
     :cond_2
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -435,7 +469,7 @@
 .method public bridge synthetic clear()Lcom/google/protobuf/MessageLite$Builder;
     .locals 0
 
-    .line 17049
+    .line 18149
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->clear()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
 
     move-result-object p0
@@ -446,12 +480,12 @@
 .method public clear()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
     .locals 2
 
-    .line 17068
+    .line 18168
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     if-eqz v0, :cond_0
 
-    .line 17072
+    .line 18172
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     const/4 v1, 0x0
@@ -462,7 +496,7 @@
 
     return-object p0
 
-    .line 17069
+    .line 18169
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -476,7 +510,7 @@
 .method public clearCommonModeList()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
     .locals 2
 
-    .line 17259
+    .line 18359
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
@@ -491,14 +525,14 @@
 .method public clearMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
     .locals 2
 
-    .line 17200
+    .line 18300
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fputhasMode(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;Z)V
 
-    .line 17201
+    .line 18301
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     sget-object v1, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->UNKNOWN:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
@@ -511,7 +545,7 @@
 .method public clearMoreModeList()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
     .locals 2
 
-    .line 17299
+    .line 18399
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
@@ -526,14 +560,14 @@
 .method public clearResetCount()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
     .locals 2
 
-    .line 17218
+    .line 18318
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fputhasResetCount(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;Z)V
 
-    .line 17219
+    .line 18319
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     invoke-static {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fputresetCount_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;I)V
@@ -544,7 +578,7 @@
 .method public bridge synthetic clone()Lcom/google/protobuf/AbstractMessageLite$Builder;
     .locals 0
 
-    .line 17049
+    .line 18149
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->clone()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
 
     move-result-object p0
@@ -555,7 +589,7 @@
 .method public bridge synthetic clone()Lcom/google/protobuf/GeneratedMessageLite$Builder;
     .locals 0
 
-    .line 17049
+    .line 18149
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->clone()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
 
     move-result-object p0
@@ -566,7 +600,7 @@
 .method public bridge synthetic clone()Lcom/google/protobuf/MessageLite$Builder;
     .locals 0
 
-    .line 17049
+    .line 18149
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->clone()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
 
     move-result-object p0
@@ -577,7 +611,7 @@
 .method public clone()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
     .locals 1
 
-    .line 17077
+    .line 18177
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->create()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
 
     move-result-object v0
@@ -599,7 +633,7 @@
         }
     .end annotation
 
-    .line 17049
+    .line 18149
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->clone()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
 
     move-result-object p0
@@ -609,8 +643,16 @@
 
 .method public getCommonModeList(I)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
-    .line 17231
+    .line 18331
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     invoke-virtual {p0, p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->getCommonModeList(I)Ljava/lang/String;
@@ -623,7 +665,7 @@
 .method public getCommonModeListCount()I
     .locals 0
 
-    .line 17228
+    .line 18328
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->getCommonModeListCount()I
@@ -644,7 +686,7 @@
         }
     .end annotation
 
-    .line 17225
+    .line 18325
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     invoke-static {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fgetcommonModeList_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;)Ljava/util/List;
@@ -661,7 +703,7 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/GeneratedMessageLite;
     .locals 0
 
-    .line 17049
+    .line 18149
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->getDefaultInstanceForType()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     move-result-object p0
@@ -672,7 +714,7 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/MessageLite;
     .locals 0
 
-    .line 17049
+    .line 18149
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->getDefaultInstanceForType()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     move-result-object p0
@@ -683,7 +725,7 @@
 .method public getDefaultInstanceForType()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
     .locals 0
 
-    .line 17081
+    .line 18181
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->getDefaultInstance()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     move-result-object p0
@@ -694,7 +736,7 @@
 .method public getMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
     .locals 0
 
-    .line 17189
+    .line 18289
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->getMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
@@ -706,8 +748,16 @@
 
 .method public getMoreModeList(I)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
-    .line 17271
+    .line 18371
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     invoke-virtual {p0, p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->getMoreModeList(I)Ljava/lang/String;
@@ -720,7 +770,7 @@
 .method public getMoreModeListCount()I
     .locals 0
 
-    .line 17268
+    .line 18368
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->getMoreModeListCount()I
@@ -741,7 +791,7 @@
         }
     .end annotation
 
-    .line 17265
+    .line 18365
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     invoke-static {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fgetmoreModeList_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;)Ljava/util/List;
@@ -758,7 +808,7 @@
 .method public getResetCount()I
     .locals 0
 
-    .line 17210
+    .line 18310
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->getResetCount()I
@@ -771,7 +821,7 @@
 .method public hasMode()Z
     .locals 0
 
-    .line 17186
+    .line 18286
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->hasMode()Z
@@ -784,7 +834,7 @@
 .method public hasResetCount()Z
     .locals 0
 
-    .line 17207
+    .line 18307
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->hasResetCount()Z
@@ -797,7 +847,7 @@
 .method protected bridge synthetic internalGetResult()Lcom/google/protobuf/GeneratedMessageLite;
     .locals 0
 
-    .line 17049
+    .line 18149
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->internalGetResult()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     move-result-object p0
@@ -808,7 +858,7 @@
 .method protected internalGetResult()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
     .locals 0
 
-    .line 17064
+    .line 18164
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     return-object p0
@@ -817,7 +867,7 @@
 .method public isInitialized()Z
     .locals 0
 
-    .line 17085
+    .line 18185
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->isInitialized()Z
@@ -829,13 +879,24 @@
 
 .method public bridge synthetic mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/AbstractMessageLite$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "input",
+            "extensionRegistry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 17049
+    .line 18149
     invoke-virtual {p0, p1, p2}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
 
     move-result-object p0
@@ -845,8 +906,16 @@
 
 .method public bridge synthetic mergeFrom(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "other"
+        }
+    .end annotation
 
-    .line 17049
+    .line 18149
     check-cast p1, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     invoke-virtual {p0, p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->mergeFrom(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
@@ -858,13 +927,24 @@
 
 .method public bridge synthetic mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/MessageLite$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "input",
+            "extensionRegistry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 17049
+    .line 18149
     invoke-virtual {p0, p1, p2}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
 
     move-result-object p0
@@ -874,13 +954,24 @@
 
 .method public mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "input",
+            "extensionRegistry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 17149
+    .line 18249
     :cond_0
     :goto_0
     invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->readTag()I
@@ -905,7 +996,7 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 17154
+    .line 18254
     invoke-virtual {p0, p1, p2, v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->parseUnknownField(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;I)Z
 
     move-result v0
@@ -914,7 +1005,7 @@
 
     return-object p0
 
-    .line 17176
+    .line 18276
     :cond_1
     invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->readString()Ljava/lang/String;
 
@@ -924,7 +1015,7 @@
 
     goto :goto_0
 
-    .line 17172
+    .line 18272
     :cond_2
     invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->readString()Ljava/lang/String;
 
@@ -934,7 +1025,7 @@
 
     goto :goto_0
 
-    .line 17168
+    .line 18268
     :cond_3
     invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->readSInt32()I
 
@@ -944,20 +1035,20 @@
 
     goto :goto_0
 
-    .line 17160
+    .line 18260
     :cond_4
     invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->readEnum()I
 
     move-result v0
 
-    .line 17161
+    .line 18261
     invoke-static {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->valueOf(I)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 17163
+    .line 18263
     invoke-virtual {p0, v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->setMode(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
 
     goto :goto_0
@@ -968,8 +1059,16 @@
 
 .method public mergeFrom(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "other"
+        }
+    .end annotation
 
-    .line 17122
+    .line 18222
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->getDefaultInstance()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     move-result-object v0
@@ -978,7 +1077,7 @@
 
     return-object p0
 
-    .line 17123
+    .line 18223
     :cond_0
     invoke-virtual {p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->hasMode()Z
 
@@ -986,14 +1085,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 17124
+    .line 18224
     invoke-virtual {p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->getMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->setMode(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
 
-    .line 17126
+    .line 18226
     :cond_1
     invoke-virtual {p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->hasResetCount()Z
 
@@ -1001,14 +1100,14 @@
 
     if-eqz v0, :cond_2
 
-    .line 17127
+    .line 18227
     invoke-virtual {p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->getResetCount()I
 
     move-result v0
 
     invoke-virtual {p0, v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->setResetCount(I)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
 
-    .line 17129
+    .line 18229
     :cond_2
     invoke-static {p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fgetcommonModeList_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;)Ljava/util/List;
 
@@ -1020,7 +1119,7 @@
 
     if-nez v0, :cond_4
 
-    .line 17130
+    .line 18230
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     invoke-static {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fgetcommonModeList_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;)Ljava/util/List;
@@ -1033,7 +1132,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 17131
+    .line 18231
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     new-instance v1, Ljava/util/ArrayList;
@@ -1042,7 +1141,7 @@
 
     invoke-static {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fputcommonModeList_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;Ljava/util/List;)V
 
-    .line 17133
+    .line 18233
     :cond_3
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
@@ -1056,7 +1155,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
-    .line 17135
+    .line 18235
     :cond_4
     invoke-static {p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fgetmoreModeList_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;)Ljava/util/List;
 
@@ -1068,7 +1167,7 @@
 
     if-nez v0, :cond_6
 
-    .line 17136
+    .line 18236
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     invoke-static {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fgetmoreModeList_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;)Ljava/util/List;
@@ -1081,7 +1180,7 @@
 
     if-eqz v0, :cond_5
 
-    .line 17137
+    .line 18237
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     new-instance v1, Ljava/util/ArrayList;
@@ -1090,7 +1189,7 @@
 
     invoke-static {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fputmoreModeList_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;Ljava/util/List;)V
 
-    .line 17139
+    .line 18239
     :cond_5
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
@@ -1110,11 +1209,21 @@
 
 .method public setCommonModeList(ILjava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "value"
+        }
+    .end annotation
 
-    .line 17235
+    .line 18335
     invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 17237
+    .line 18337
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     invoke-static {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fgetcommonModeList_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;)Ljava/util/List;
@@ -1128,18 +1237,26 @@
 
 .method public setMode(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 17193
+    .line 18293
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 17195
+    .line 18295
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fputhasMode(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;Z)V
 
-    .line 17196
+    .line 18296
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     invoke-static {v0, p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fputmode_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;)V
@@ -1149,11 +1266,21 @@
 
 .method public setMoreModeList(ILjava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "value"
+        }
+    .end annotation
 
-    .line 17275
+    .line 18375
     invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 17277
+    .line 18377
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     invoke-static {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fgetmoreModeList_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;)Ljava/util/List;
@@ -1167,15 +1294,23 @@
 
 .method public setResetCount(I)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 17213
+    .line 18313
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fputhasResetCount(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;Z)V
 
-    .line 17214
+    .line 18314
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;
 
     invoke-static {v0, p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;->-$$Nest$fputresetCount_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppModeCustomization;I)V

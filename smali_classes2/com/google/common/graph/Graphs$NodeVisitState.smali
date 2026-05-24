@@ -34,7 +34,7 @@
 .method private static synthetic $values()[Lcom/google/common/graph/Graphs$NodeVisitState;
     .locals 2
 
-    .line 611
+    .line 655
     sget-object v0, Lcom/google/common/graph/Graphs$NodeVisitState;->PENDING:Lcom/google/common/graph/Graphs$NodeVisitState;
 
     sget-object v1, Lcom/google/common/graph/Graphs$NodeVisitState;->COMPLETE:Lcom/google/common/graph/Graphs$NodeVisitState;
@@ -49,7 +49,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 612
+    .line 656
     new-instance v0, Lcom/google/common/graph/Graphs$NodeVisitState;
 
     const-string v1, "PENDING"
@@ -60,7 +60,7 @@
 
     sput-object v0, Lcom/google/common/graph/Graphs$NodeVisitState;->PENDING:Lcom/google/common/graph/Graphs$NodeVisitState;
 
-    .line 613
+    .line 657
     new-instance v0, Lcom/google/common/graph/Graphs$NodeVisitState;
 
     const-string v1, "COMPLETE"
@@ -71,7 +71,7 @@
 
     sput-object v0, Lcom/google/common/graph/Graphs$NodeVisitState;->COMPLETE:Lcom/google/common/graph/Graphs$NodeVisitState;
 
-    .line 611
+    .line 655
     invoke-static {}, Lcom/google/common/graph/Graphs$NodeVisitState;->$values()[Lcom/google/common/graph/Graphs$NodeVisitState;
 
     move-result-object v0
@@ -83,13 +83,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 611
+    .line 655
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -97,8 +108,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/graph/Graphs$NodeVisitState;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 611
+    .line 655
     const-class v0, Lcom/google/common/graph/Graphs$NodeVisitState;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -113,7 +132,7 @@
 .method public static values()[Lcom/google/common/graph/Graphs$NodeVisitState;
     .locals 1
 
-    .line 611
+    .line 655
     sget-object v0, Lcom/google/common/graph/Graphs$NodeVisitState;->$VALUES:[Lcom/google/common/graph/Graphs$NodeVisitState;
 
     invoke-virtual {v0}, [Lcom/google/common/graph/Graphs$NodeVisitState;->clone()Ljava/lang/Object;

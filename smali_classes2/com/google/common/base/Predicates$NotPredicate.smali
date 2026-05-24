@@ -48,6 +48,15 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/base/Predicate;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "predicate"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -56,10 +65,10 @@
         }
     .end annotation
 
-    .line 310
+    .line 319
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 311
+    .line 320
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -76,16 +85,25 @@
 .method public apply(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/base/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "t"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)Z"
         }
     .end annotation
 
-    .line 316
+    .line 325
     iget-object p0, p0, Lcom/google/common/base/Predicates$NotPredicate;->predicate:Lcom/google/common/base/Predicate;
 
     invoke-interface {p0, p1}, Lcom/google/common/base/Predicate;->apply(Ljava/lang/Object;)Z
@@ -100,19 +118,27 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
-    .line 326
+    .line 335
     instance-of v0, p1, Lcom/google/common/base/Predicates$NotPredicate;
 
     if-eqz v0, :cond_0
 
-    .line 327
+    .line 336
     check-cast p1, Lcom/google/common/base/Predicates$NotPredicate;
 
-    .line 328
+    .line 337
     iget-object p0, p0, Lcom/google/common/base/Predicates$NotPredicate;->predicate:Lcom/google/common/base/Predicate;
 
     iget-object p1, p1, Lcom/google/common/base/Predicates$NotPredicate;->predicate:Lcom/google/common/base/Predicate;
@@ -132,10 +158,10 @@
 .method public hashCode()I
     .locals 0
 
-    .line 321
+    .line 330
     iget-object p0, p0, Lcom/google/common/base/Predicates$NotPredicate;->predicate:Lcom/google/common/base/Predicate;
 
-    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
+    invoke-interface {p0}, Lcom/google/common/base/Predicate;->hashCode()I
 
     move-result p0
 
@@ -147,34 +173,16 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 335
+    .line 344
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "Predicates.not("
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
     iget-object p0, p0, Lcom/google/common/base/Predicates$NotPredicate;->predicate:Lcom/google/common/base/Predicate;
 
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, 0x10
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v0, "Predicates.not("
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 

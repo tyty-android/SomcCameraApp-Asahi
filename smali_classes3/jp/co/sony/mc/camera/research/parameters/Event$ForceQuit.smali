@@ -38,7 +38,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/research/parameters/Event$ForceQuit;
     .locals 2
 
-    .line 293
+    .line 292
     sget-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$ForceQuit;->DURING_PREVIEW:Ljp/co/sony/mc/camera/research/parameters/Event$ForceQuit;
 
     sget-object v1, Ljp/co/sony/mc/camera/research/parameters/Event$ForceQuit;->DURING_RECORDING:Ljp/co/sony/mc/camera/research/parameters/Event$ForceQuit;
@@ -53,7 +53,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 294
+    .line 293
     new-instance v0, Ljp/co/sony/mc/camera/research/parameters/Event$ForceQuit;
 
     const-string v1, "DURING_PREVIEW"
@@ -64,7 +64,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$ForceQuit;->DURING_PREVIEW:Ljp/co/sony/mc/camera/research/parameters/Event$ForceQuit;
 
-    .line 295
+    .line 294
     new-instance v0, Ljp/co/sony/mc/camera/research/parameters/Event$ForceQuit;
 
     const-string v1, "DURING_RECORDING"
@@ -75,7 +75,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$ForceQuit;->DURING_RECORDING:Ljp/co/sony/mc/camera/research/parameters/Event$ForceQuit;
 
-    .line 293
+    .line 292
     invoke-static {}, Ljp/co/sony/mc/camera/research/parameters/Event$ForceQuit;->$values()[Ljp/co/sony/mc/camera/research/parameters/Event$ForceQuit;
 
     move-result-object v0
@@ -87,13 +87,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 293
+    .line 292
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -101,10 +112,18 @@
 
 .method public static getType(Z)Ljp/co/sony/mc/camera/research/parameters/Event$ForceQuit;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isRecording"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
-    .line 299
+    .line 298
     sget-object p0, Ljp/co/sony/mc/camera/research/parameters/Event$ForceQuit;->DURING_RECORDING:Ljp/co/sony/mc/camera/research/parameters/Event$ForceQuit;
 
     goto :goto_0
@@ -118,8 +137,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/research/parameters/Event$ForceQuit;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 293
+    .line 292
     const-class v0, Ljp/co/sony/mc/camera/research/parameters/Event$ForceQuit;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -134,7 +161,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/research/parameters/Event$ForceQuit;
     .locals 1
 
-    .line 293
+    .line 292
     sget-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$ForceQuit;->$VALUES:[Ljp/co/sony/mc/camera/research/parameters/Event$ForceQuit;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/research/parameters/Event$ForceQuit;->clone()Ljava/lang/Object;

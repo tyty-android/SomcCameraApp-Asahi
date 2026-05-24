@@ -69,7 +69,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0c0150
+    const v1, 0x7f0c0145
 
     check-cast p0, Landroid/view/ViewGroup;
 

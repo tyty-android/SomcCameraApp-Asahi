@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000^\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0007\u0018\u00002\u00020\u0001B/\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\u0008\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\u000b\u00a2\u0006\u0004\u0008\u000c\u0010\rJ\u000e\u0010\u001f\u001a\u00020\u00122\u0006\u0010 \u001a\u00020\u001aJ\u0006\u0010!\u001a\u00020\u0012J\u0006\u0010\"\u001a\u00020\u0012J\u0006\u0010#\u001a\u00020\u0012J\u0006\u0010$\u001a\u00020\u0012J \u0010%\u001a\u00020\u001e2\u0006\u0010&\u001a\u00020\'2\u0006\u0010(\u001a\u00020\u001e2\u0006\u0010)\u001a\u00020\u001eH\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u000fX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0010\u001a\u0008\u0012\u0004\u0012\u00020\u00120\u0011X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001f\u0010\u0013\u001a\u0010\u0012\u000c\u0012\n \u0015*\u0004\u0018\u00010\u00120\u00120\u0014\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0016\u0010\u0017R\u001c\u0010\u0018\u001a\u0010\u0012\u000c\u0012\n \u0015*\u0004\u0018\u00010\u001a0\u001a0\u0019X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0017\u0010\u001b\u001a\u0008\u0012\u0004\u0012\u00020\u001a0\u0014\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001c\u0010\u0017R\u0017\u0010\u001d\u001a\u0008\u0012\u0004\u0012\u00020\u001e0\u0014\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001d\u0010\u0017\u00a8\u0006*"
+        "\u0000\\\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0007\u0018\u00002\u00020\u0001B/\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\u0008\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\u000b\u00a2\u0006\u0004\u0008\u000c\u0010\rJ\u000e\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u0012J\u0006\u0010\u001e\u001a\u00020\u001cJ\u0006\u0010\u001f\u001a\u00020\u001cJ\u0006\u0010 \u001a\u00020\u001cJ \u0010!\u001a\u00020\u00192\u0006\u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020\u00192\u0006\u0010%\u001a\u00020\u0019H\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u000fX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u0010\u001a\u0010\u0012\u000c\u0012\n \u0013*\u0004\u0018\u00010\u00120\u00120\u0011X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0017\u0010\u0014\u001a\u0008\u0012\u0004\u0012\u00020\u00120\u0015\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0016\u0010\u0017R\u0017\u0010\u0018\u001a\u0008\u0012\u0004\u0012\u00020\u00190\u0015\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0018\u0010\u0017R\u0017\u0010\u001a\u001a\u0008\u0012\u0004\u0012\u00020\u00190\u0015\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001a\u0010\u0017\u00a8\u0006&"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;",
@@ -25,27 +25,23 @@
         "(Lkotlinx/coroutines/CoroutineScope;Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;Ljp/co/sony/mc/camera/view/uistate/ThermalUiState;Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;)V",
         "messageSettings",
         "Ljp/co/sony/mc/camera/setting/MessageSettings;",
-        "_overlayClickEvent",
-        "Ljp/co/sony/mc/camera/view/viewmodel/LiveEvent;",
-        "",
-        "overlayClickEvent",
-        "Landroidx/lifecycle/LiveData;",
-        "kotlin.jvm.PlatformType",
-        "getOverlayClickEvent",
-        "()Landroidx/lifecycle/LiveData;",
         "_tutorialDialogType",
         "Landroidx/lifecycle/MutableLiveData;",
         "Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;",
+        "kotlin.jvm.PlatformType",
         "tutorialDialogType",
+        "Landroidx/lifecycle/LiveData;",
         "getTutorialDialogType",
+        "()Landroidx/lifecycle/LiveData;",
         "isTutorialDialogVisible",
         "",
+        "isAiSuggestionSubPreviewIntroductionDisplayed",
         "showTutorialDialog",
+        "",
         "type",
         "hideTutorialDialog",
         "onResume",
         "onPause",
-        "onOverlayClicked",
         "needShowFirstInDialog",
         "mode",
         "Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;",
@@ -68,16 +64,6 @@
 
 
 # instance fields
-.field private final _overlayClickEvent:Ljp/co/sony/mc/camera/view/viewmodel/LiveEvent;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljp/co/sony/mc/camera/view/viewmodel/LiveEvent<",
-            "Lkotlin/Unit;",
-            ">;"
-        }
-    .end annotation
-.end field
-
 .field private final _tutorialDialogType:Landroidx/lifecycle/MutableLiveData;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -89,6 +75,16 @@
 .end field
 
 .field private final cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+.field private final isAiSuggestionSubPreviewIntroductionDisplayed:Landroidx/lifecycle/LiveData;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/lifecycle/LiveData<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 .field private final isTutorialDialogVisible:Landroidx/lifecycle/LiveData;
     .annotation system Ldalvik/annotation/Signature;
@@ -103,16 +99,6 @@
 .field private final messageSettings:Ljp/co/sony/mc/camera/setting/MessageSettings;
 
 .field private final modeDialUiState:Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;
-
-.field private final overlayClickEvent:Landroidx/lifecycle/LiveData;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroidx/lifecycle/LiveData<",
-            "Lkotlin/Unit;",
-            ">;"
-        }
-    .end annotation
-.end field
 
 .field private final proModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
 
@@ -136,6 +122,16 @@
     .locals 0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->isTutorialDialogVisible$lambda$0(Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$fN_GItyN1-dg8zjkyH_bc2NLIRg(Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;)Z
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->isAiSuggestionSubPreviewIntroductionDisplayed$lambda$1(Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;)Z
 
     move-result p0
 
@@ -171,25 +167,25 @@
 
     invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 27
+    .line 26
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 28
+    .line 27
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->viewModelScope:Lkotlinx/coroutines/CoroutineScope;
 
-    .line 29
+    .line 28
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
-    .line 30
+    .line 29
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->modeDialUiState:Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;
 
-    .line 31
+    .line 30
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->thermalUiState:Ljp/co/sony/mc/camera/view/uistate/ThermalUiState;
 
-    .line 32
+    .line 31
     iput-object p5, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->proModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
 
-    .line 35
+    .line 34
     invoke-static {}, Ljp/co/sony/mc/camera/CameraApplication;->getContext()Landroid/content/Context;
 
     move-result-object p2
@@ -210,23 +206,7 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->messageSettings:Ljp/co/sony/mc/camera/setting/MessageSettings;
 
-    .line 37
-    new-instance p2, Ljp/co/sony/mc/camera/view/viewmodel/LiveEvent;
-
-    invoke-direct {p2}, Ljp/co/sony/mc/camera/view/viewmodel/LiveEvent;-><init>()V
-
-    iput-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->_overlayClickEvent:Ljp/co/sony/mc/camera/view/viewmodel/LiveEvent;
-
-    .line 38
-    check-cast p2, Landroidx/lifecycle/MutableLiveData;
-
-    invoke-static {p2}, Ljp/co/sony/mc/camera/util/LiveDataExtensionsKt;->asLiveData(Landroidx/lifecycle/MutableLiveData;)Landroidx/lifecycle/LiveData;
-
-    move-result-object p2
-
-    iput-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->overlayClickEvent:Landroidx/lifecycle/LiveData;
-
-    .line 40
+    .line 36
     new-instance p2, Landroidx/lifecycle/MutableLiveData;
 
     sget-object p4, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->NONE:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
@@ -235,27 +215,49 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->_tutorialDialogType:Landroidx/lifecycle/MutableLiveData;
 
-    .line 41
+    .line 37
     move-object p4, p2
 
     check-cast p4, Landroidx/lifecycle/LiveData;
 
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->tutorialDialogType:Landroidx/lifecycle/LiveData;
 
+    .line 39
+    sget-object p4, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
+
+    move-object p5, p2
+
+    check-cast p5, Landroidx/lifecycle/LiveData;
+
+    new-instance v0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState$$ExternalSyntheticLambda0;
+
+    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState$$ExternalSyntheticLambda0;-><init>()V
+
+    invoke-virtual {p4, p5, v0}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->map(Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function1;)Landroidx/lifecycle/LiveData;
+
+    move-result-object p4
+
+    iput-object p4, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->isTutorialDialogVisible:Landroidx/lifecycle/LiveData;
+
     .line 43
     sget-object p4, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
     check-cast p2, Landroidx/lifecycle/LiveData;
 
-    new-instance p5, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState$$ExternalSyntheticLambda0;
+    new-instance p5, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState$$ExternalSyntheticLambda1;
 
-    invoke-direct {p5}, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState$$ExternalSyntheticLambda0;-><init>()V
+    invoke-direct {p5}, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState$$ExternalSyntheticLambda1;-><init>()V
 
     invoke-virtual {p4, p2, p5}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->map(Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function1;)Landroidx/lifecycle/LiveData;
 
     move-result-object p2
 
-    iput-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->isTutorialDialogVisible:Landroidx/lifecycle/LiveData;
+    .line 45
+    invoke-static {p2}, Landroidx/lifecycle/Transformations;->distinctUntilChanged(Landroidx/lifecycle/LiveData;)Landroidx/lifecycle/LiveData;
+
+    move-result-object p2
+
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->isAiSuggestionSubPreviewIntroductionDisplayed:Landroidx/lifecycle/LiveData;
 
     .line 48
     new-instance p2, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState$1;
@@ -278,13 +280,24 @@
 
     invoke-static/range {v0 .. v5}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
 
+    .line 77
+    new-instance p2, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState$2;
+
+    invoke-direct {p2, p0, p3}, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState$2;-><init>(Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;Lkotlin/coroutines/Continuation;)V
+
+    move-object v3, p2
+
+    check-cast v3, Lkotlin/jvm/functions/Function2;
+
+    invoke-static/range {v0 .. v5}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
+
     return-void
 .end method
 
 .method public static final synthetic access$getCameraSettingsModel$p(Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;)Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
     .locals 0
 
-    .line 27
+    .line 26
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     return-object p0
@@ -293,7 +306,7 @@
 .method public static final synthetic access$getModeDialUiState$p(Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;)Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;
     .locals 0
 
-    .line 27
+    .line 26
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->modeDialUiState:Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;
 
     return-object p0
@@ -302,8 +315,17 @@
 .method public static final synthetic access$getThermalUiState$p(Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;)Ljp/co/sony/mc/camera/view/uistate/ThermalUiState;
     .locals 0
 
-    .line 27
+    .line 26
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->thermalUiState:Ljp/co/sony/mc/camera/view/uistate/ThermalUiState;
+
+    return-object p0
+.end method
+
+.method public static final synthetic access$get_tutorialDialogType$p(Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;)Landroidx/lifecycle/MutableLiveData;
+    .locals 0
+
+    .line 26
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->_tutorialDialogType:Landroidx/lifecycle/MutableLiveData;
 
     return-object p0
 .end method
@@ -311,7 +333,7 @@
 .method public static final synthetic access$needShowFirstInDialog(Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;ZZ)Z
     .locals 0
 
-    .line 27
+    .line 26
     invoke-direct {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->needShowFirstInDialog(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;ZZ)Z
 
     move-result p0
@@ -319,10 +341,29 @@
     return p0
 .end method
 
-.method private static final isTutorialDialogVisible$lambda$0(Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;)Z
+.method private static final isAiSuggestionSubPreviewIntroductionDisplayed$lambda$1(Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;)Z
     .locals 1
 
     .line 44
+    sget-object v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->AI_SUGGESTION_SUB_PREVIEW_INTRODUCTION:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+
+    if-ne p0, v0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final isTutorialDialogVisible$lambda$0(Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;)Z
+    .locals 1
+
+    .line 40
     sget-object v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->NONE:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
 
     if-eq p0, v0, :cond_0
@@ -347,14 +388,14 @@
 
     if-nez p3, :cond_2
 
-    .line 119
+    .line 125
     sget-object p2, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->Companion:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType$Companion;
 
     invoke-virtual {p2, p1}, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType$Companion;->getModeFirstInDialogType(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
 
     move-result-object p2
 
-    .line 120
+    .line 126
     sget-object p3, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->NONE:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
 
     if-eq p2, p3, :cond_2
@@ -369,7 +410,7 @@
 
     goto :goto_1
 
-    .line 123
+    .line 129
     :cond_0
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
 
@@ -377,7 +418,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 128
+    .line 134
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->proModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;->isAnyFnMenuOpened()Landroidx/lifecycle/LiveData;
@@ -411,23 +452,6 @@
 
 
 # virtual methods
-.method public final getOverlayClickEvent()Landroidx/lifecycle/LiveData;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Landroidx/lifecycle/LiveData<",
-            "Lkotlin/Unit;",
-            ">;"
-        }
-    .end annotation
-
-    .line 38
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->overlayClickEvent:Landroidx/lifecycle/LiveData;
-
-    return-object p0
-.end method
-
 .method public final getTutorialDialogType()Landroidx/lifecycle/LiveData;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
@@ -439,7 +463,7 @@
         }
     .end annotation
 
-    .line 41
+    .line 37
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->tutorialDialogType:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -448,7 +472,7 @@
 .method public final hideTutorialDialog()V
     .locals 2
 
-    .line 87
+    .line 97
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->_tutorialDialogType:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -459,7 +483,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 88
+    .line 98
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->_tutorialDialogType:Landroidx/lifecycle/MutableLiveData;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->NONE:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
@@ -468,6 +492,23 @@
 
     :cond_0
     return-void
+.end method
+
+.method public final isAiSuggestionSubPreviewIntroductionDisplayed()Landroidx/lifecycle/LiveData;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Landroidx/lifecycle/LiveData<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+
+    .line 43
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->isAiSuggestionSubPreviewIntroductionDisplayed:Landroidx/lifecycle/LiveData;
+
+    return-object p0
 .end method
 
 .method public final isTutorialDialogVisible()Landroidx/lifecycle/LiveData;
@@ -481,29 +522,16 @@
         }
     .end annotation
 
-    .line 43
+    .line 39
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->isTutorialDialogVisible:Landroidx/lifecycle/LiveData;
 
     return-object p0
 .end method
 
-.method public final onOverlayClicked()V
-    .locals 1
-
-    .line 110
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->_overlayClickEvent:Ljp/co/sony/mc/camera/view/viewmodel/LiveEvent;
-
-    sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
-
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/viewmodel/LiveEvent;->setValue(Ljava/lang/Object;)V
-
-    return-void
-.end method
-
 .method public final onPause()V
     .locals 0
 
-    .line 106
+    .line 116
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->hideTutorialDialog()V
 
     return-void
@@ -512,7 +540,7 @@
 .method public final onResume()V
     .locals 3
 
-    .line 93
+    .line 103
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
@@ -527,7 +555,7 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 96
+    .line 106
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->modeDialUiState:Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;->isMoreModeSelectorOpened()Landroidx/lifecycle/LiveData;
@@ -546,7 +574,7 @@
 
     move-result v1
 
-    .line 97
+    .line 107
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->thermalUiState:Ljp/co/sony/mc/camera/view/uistate/ThermalUiState;
 
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/view/uistate/ThermalUiState;->isModeRestrictedInHighTemperatureDialogVisible()Landroidx/lifecycle/LiveData;
@@ -565,14 +593,14 @@
 
     move-result v2
 
-    .line 94
+    .line 104
     invoke-direct {p0, v0, v1, v2}, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->needShowFirstInDialog(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;ZZ)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 100
+    .line 110
     sget-object v1, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->Companion:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType$Companion;
 
     invoke-virtual {v1, v0}, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType$Companion;->getModeFirstInDialogType(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
@@ -592,7 +620,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 81
+    .line 91
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->_tutorialDialogType:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -601,7 +629,7 @@
 
     if-eq v0, p1, :cond_0
 
-    .line 82
+    .line 92
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->_tutorialDialogType:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {p0, p1}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V

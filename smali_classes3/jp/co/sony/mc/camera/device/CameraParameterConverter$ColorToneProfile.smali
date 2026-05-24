@@ -43,6 +43,8 @@
 
 .field public static final enum S_CINETONE:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
+.field public static final enum UN_ASSIGNED:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
+
 .field public static final enum VV:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
 .field public static final enum VV2:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
@@ -56,32 +58,34 @@
 
 # direct methods
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
-    .locals 11
+    .locals 12
 
     .line 799
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->ST:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->PT:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
+    sget-object v1, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->UN_ASSIGNED:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
-    sget-object v2, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->NT:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
+    sget-object v2, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->PT:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
-    sget-object v3, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->VV:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
+    sget-object v3, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->NT:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
-    sget-object v4, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->VV2:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
+    sget-object v4, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->VV:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
-    sget-object v5, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->FL:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
+    sget-object v5, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->VV2:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
-    sget-object v6, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->IN:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
+    sget-object v6, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->FL:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
-    sget-object v7, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->SH:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
+    sget-object v7, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->IN:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
-    sget-object v8, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->BW:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
+    sget-object v8, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->SH:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
-    sget-object v9, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->SE:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
+    sget-object v9, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->BW:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
-    sget-object v10, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->S_CINETONE:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
+    sget-object v10, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->SE:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
-    filled-new-array/range {v0 .. v10}, [Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
+    sget-object v11, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->S_CINETONE:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
+
+    filled-new-array/range {v0 .. v11}, [Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
     move-result-object v0
 
@@ -89,7 +93,7 @@
 .end method
 
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 4
 
     .line 800
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
@@ -107,132 +111,143 @@
     .line 802
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
-    const-string v1, "PT"
+    const/4 v1, 0x1
 
-    const/4 v2, 0x1
+    const-string/jumbo v2, "un_assigned"
 
-    const-string v3, "pt"
+    const-string v3, "UN_ASSIGNED"
 
-    const/4 v4, 0x2
+    invoke-direct {v0, v3, v1, v2, v1}, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
-    invoke-direct {v0, v1, v2, v3, v4}, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->PT:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
+    sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->UN_ASSIGNED:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
     .line 804
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
-    const-string v1, "NT"
+    const/4 v1, 0x2
 
-    const-string v2, "nt"
+    const-string v2, "pt"
 
-    const/4 v3, 0x3
+    const-string v3, "PT"
 
-    invoke-direct {v0, v1, v4, v2, v3}, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
+    invoke-direct {v0, v3, v1, v2, v1}, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->NT:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
+    sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->PT:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
     .line 806
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
-    const-string v1, "VV"
+    const/4 v1, 0x3
 
-    const-string/jumbo v2, "vv"
+    const-string v2, "nt"
 
-    const/4 v4, 0x4
+    const-string v3, "NT"
 
-    invoke-direct {v0, v1, v3, v2, v4}, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
+    invoke-direct {v0, v3, v1, v2, v1}, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->VV:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
+    sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->NT:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
     .line 808
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
-    const-string v1, "VV2"
+    const/4 v1, 0x4
 
-    const-string/jumbo v2, "vv2"
+    const-string/jumbo v2, "vv"
 
-    const/4 v3, 0x5
+    const-string v3, "VV"
 
-    invoke-direct {v0, v1, v4, v2, v3}, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
+    invoke-direct {v0, v3, v1, v2, v1}, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->VV2:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
+    sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->VV:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
     .line 810
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
-    const-string v1, "FL"
+    const/4 v1, 0x5
 
-    const-string v2, "fl"
+    const-string/jumbo v2, "vv2"
 
-    const/4 v4, 0x6
+    const-string v3, "VV2"
 
-    invoke-direct {v0, v1, v3, v2, v4}, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
+    invoke-direct {v0, v3, v1, v2, v1}, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->FL:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
+    sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->VV2:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
     .line 812
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
-    const-string v1, "IN"
+    const/4 v1, 0x6
 
-    const-string v2, "in"
+    const-string v2, "fl"
 
-    const/4 v3, 0x7
+    const-string v3, "FL"
 
-    invoke-direct {v0, v1, v4, v2, v3}, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
+    invoke-direct {v0, v3, v1, v2, v1}, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->IN:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
+    sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->FL:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
     .line 814
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
-    const-string v1, "SH"
+    const/4 v1, 0x7
 
-    const-string/jumbo v2, "sh"
+    const-string v2, "in"
 
-    const/16 v4, 0x8
+    const-string v3, "IN"
 
-    invoke-direct {v0, v1, v3, v2, v4}, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
+    invoke-direct {v0, v3, v1, v2, v1}, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->SH:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
+    sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->IN:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
     .line 816
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
-    const-string v1, "BW"
+    const/16 v1, 0x8
 
-    const-string v2, "bw"
+    const-string/jumbo v2, "sh"
 
-    const/16 v3, 0x9
+    const-string v3, "SH"
 
-    invoke-direct {v0, v1, v4, v2, v3}, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
+    invoke-direct {v0, v3, v1, v2, v1}, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->BW:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
+    sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->SH:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
     .line 818
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
-    const-string v1, "SE"
+    const/16 v1, 0x9
 
-    const-string v2, "se"
+    const-string v2, "bw"
 
-    const/16 v4, 0xa
+    const-string v3, "BW"
 
-    invoke-direct {v0, v1, v3, v2, v4}, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
+    invoke-direct {v0, v3, v1, v2, v1}, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->SE:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
+    sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->BW:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
     .line 820
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
-    const-string v1, "s-cinetone"
+    const/16 v1, 0xa
 
-    const/16 v2, 0xb
+    const-string/jumbo v2, "se"
+
+    const-string v3, "SE"
+
+    invoke-direct {v0, v3, v1, v2, v1}, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->SE:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
+
+    .line 822
+    new-instance v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
+
+    const/16 v1, 0xb
+
+    const-string v2, "s-cinetone"
 
     const-string v3, "S_CINETONE"
 
-    invoke-direct {v0, v3, v4, v1, v2}, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
+    invoke-direct {v0, v3, v1, v2, v1}, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->S_CINETONE:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
@@ -248,6 +263,21 @@
 
 .method private constructor <init>(Ljava/lang/String;ILjava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "api1",
+            "api2"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -256,13 +286,13 @@
         }
     .end annotation
 
-    .line 826
+    .line 828
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 827
+    .line 829
     iput-object p3, p0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->mApi1Value:Ljava/lang/String;
 
-    .line 828
+    .line 830
     iput p4, p0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->mApi2Value:I
 
     return-void
@@ -270,8 +300,16 @@
 
 .method public static getApi1Value(I)Ljava/lang/String;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "api2Value"
+        }
+    .end annotation
 
-    .line 832
+    .line 834
     invoke-static {}, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->values()[Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
     move-result-object v0
@@ -285,12 +323,12 @@
 
     aget-object v3, v0, v2
 
-    .line 833
+    .line 835
     iget v4, v3, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->mApi2Value:I
 
     if-ne v4, p0, :cond_0
 
-    .line 834
+    .line 836
     iget-object p0, v3, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->mApi1Value:Ljava/lang/String;
 
     return-object p0
@@ -300,17 +338,25 @@
 
     goto :goto_0
 
-    .line 837
+    .line 839
     :cond_1
     const-string p0, "off"
 
     return-object p0
 .end method
 
-.method static getApi2Value(Ljava/lang/String;)I
+.method public static getApi2Value(Ljava/lang/String;)I
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "api1Value"
+        }
+    .end annotation
 
-    .line 841
+    .line 843
     invoke-static {}, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->values()[Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
 
     move-result-object v0
@@ -326,7 +372,7 @@
 
     aget-object v4, v0, v3
 
-    .line 842
+    .line 844
     iget-object v5, v4, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->mApi1Value:Ljava/lang/String;
 
     invoke-virtual {v5, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -335,7 +381,7 @@
 
     if-eqz v5, :cond_0
 
-    .line 843
+    .line 845
     iget p0, v4, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;->mApi2Value:I
 
     return p0
@@ -351,6 +397,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 799
     const-class v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ColorToneProfile;

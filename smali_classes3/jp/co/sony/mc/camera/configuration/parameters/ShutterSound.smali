@@ -73,9 +73,9 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f0802ca
+    const v3, 0x7f08034e
 
-    const v4, 0x7f11011e
+    const v4, 0x7f11015a
 
     const/4 v5, 0x1
 
@@ -96,9 +96,9 @@
 
     const/4 v11, 0x1
 
-    const v12, 0x7f0802cc
+    const v12, 0x7f080350
 
-    const v13, 0x7f11011f
+    const v13, 0x7f11015b
 
     const/4 v14, 0x1
 
@@ -119,9 +119,9 @@
 
     const/4 v3, 0x2
 
-    const v4, 0x7f0802cb
+    const v4, 0x7f08034f
 
-    const v5, 0x7f1103f3
+    const v5, 0x7f11043e
 
     const/4 v6, 0x0
 
@@ -143,6 +143,27 @@
 
 .method private constructor <init>(Ljava/lang/String;IIIZZZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId",
+            "isShutterSoundEnabled",
+            "isFocusSoundEnabled",
+            "isSelfTimerEnabled"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IIZZZ)V"
@@ -181,6 +202,14 @@
 
 .method public static getOptions(Z)[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSound;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isForceSound"
+        }
+    .end annotation
 
     .line 117
     new-instance v0, Ljava/util/ArrayList;
@@ -237,6 +266,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/ShutterSound;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 16
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSound;

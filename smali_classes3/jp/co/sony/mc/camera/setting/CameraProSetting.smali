@@ -162,26 +162,26 @@
     return-object p0
 .end method
 
-.method static bridge synthetic -$$Nest$mmigrateCameraSettingsForBack(Ljp/co/sony/mc/camera/setting/CameraProSetting;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
+.method static bridge synthetic -$$Nest$mmigrateCameraSettingsForBack(Ljp/co/sony/mc/camera/setting/CameraProSetting;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->migrateCameraSettingsForBack(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->migrateCameraSettingsForBack()V
 
     return-void
 .end method
 
-.method static bridge synthetic -$$Nest$mmigrateCameraSettingsForSlowMotion(Ljp/co/sony/mc/camera/setting/CameraProSetting;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
+.method static bridge synthetic -$$Nest$mmigrateCameraSettingsForSlowMotion(Ljp/co/sony/mc/camera/setting/CameraProSetting;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->migrateCameraSettingsForSlowMotion(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->migrateCameraSettingsForSlowMotion()V
 
     return-void
 .end method
 
-.method static bridge synthetic -$$Nest$mmigrateCameraSettingsForTele(Ljp/co/sony/mc/camera/setting/CameraProSetting;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
+.method static bridge synthetic -$$Nest$mmigrateCameraSettingsForTele(Ljp/co/sony/mc/camera/setting/CameraProSetting;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->migrateCameraSettingsForTele(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->migrateCameraSettingsForTele()V
 
     return-void
 .end method
@@ -207,65 +207,65 @@
 
     const/4 v0, 0x1
 
-    .line 63
+    .line 44
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->CURRENT_SETTING_VERSION:Ljava/lang/Integer;
 
-    .line 69
+    .line 50
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->MEMORY_RECALL_ACTIVE_LENS:Ljava/util/List;
 
-    .line 71
+    .line 52
     sget-object v1, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->ULTRA_WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 72
+    .line 53
     sget-object v1, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 73
+    .line 54
     sget-object v1, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 76
+    .line 57
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->AVAILABLE_MEMORYRECALL_ORIGIN_KEYS:Ljava/util/List;
 
-    .line 78
+    .line 59
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/MrMode;->MR1:Ljp/co/sony/mc/camera/configuration/parameters/MrMode;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 79
+    .line 60
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/MrMode;->MR2:Ljp/co/sony/mc/camera/configuration/parameters/MrMode;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 80
+    .line 61
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/MrMode;->MR3:Ljp/co/sony/mc/camera/configuration/parameters/MrMode;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 83
+    .line 64
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->AVAILABLE_PRIMARY_KEYS:Ljava/util/List;
 
-    .line 87
+    .line 68
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_P:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -276,7 +276,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 89
+    .line 70
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_P:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -287,7 +287,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 91
+    .line 72
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_P:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -298,7 +298,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 93
+    .line 74
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -309,7 +309,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 95
+    .line 76
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -320,7 +320,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 97
+    .line 78
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -331,7 +331,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 99
+    .line 80
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -342,7 +342,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 101
+    .line 82
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -353,7 +353,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 103
+    .line 84
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -364,7 +364,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 105
+    .line 86
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -375,7 +375,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 107
+    .line 88
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -386,7 +386,29 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 109
+    .line 90
+    new-instance v1, Landroid/util/Pair;
+
+    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    sget-object v3, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    invoke-direct {v1, v2, v3}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 92
+    new-instance v1, Landroid/util/Pair;
+
+    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    sget-object v3, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    invoke-direct {v1, v2, v3}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 94
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BOKEH:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -397,18 +419,29 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 111
+    .line 96
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BOKEH:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    sget-object v3, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     invoke-direct {v1, v2, v3}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 113
+    .line 98
+    new-instance v1, Landroid/util/Pair;
+
+    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BOKEH:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    sget-object v3, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    invoke-direct {v1, v2, v3}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 100
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -419,7 +452,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 115
+    .line 102
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -430,7 +463,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 117
+    .line 104
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -441,7 +474,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 119
+    .line 106
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -452,7 +485,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 121
+    .line 108
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -463,7 +496,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 123
+    .line 110
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->QUICK_RECORD:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -474,7 +507,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 125
+    .line 112
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->QUICK_RECORD:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -485,7 +518,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 127
+    .line 114
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BOKEH:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -496,7 +529,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 129
+    .line 116
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BOKEH:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -507,7 +540,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 131
+    .line 118
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_SLOW_MOTION:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -518,7 +551,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 133
+    .line 120
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_SLOW_MOTION:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -529,7 +562,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 135
+    .line 122
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_SLOW_MOTION:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -540,7 +573,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 137
+    .line 124
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_SLOW_MOTION:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -551,7 +584,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 139
+    .line 126
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_MR:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -562,7 +595,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 141
+    .line 128
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_MR:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -573,7 +606,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 143
+    .line 130
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_MR:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -584,7 +617,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 145
+    .line 132
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_ONE_SHOT:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -595,7 +628,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 147
+    .line 134
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_ONE_SHOT:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -606,7 +639,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 149
+    .line 136
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_ONE_SHOT:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -617,7 +650,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 151
+    .line 138
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_ONE_SHOT:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -628,7 +661,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 153
+    .line 140
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_ONE_SHOT:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -639,7 +672,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 155
+    .line 142
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_ONE_SHOT:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -650,7 +683,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 157
+    .line 144
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_ONE_SHOT:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -661,29 +694,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 159
-    new-instance v1, Landroid/util/Pair;
-
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_STREAMING:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    sget-object v3, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->FRONT:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    invoke-direct {v1, v2, v3}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
-
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 161
-    new-instance v1, Landroid/util/Pair;
-
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_STREAMING:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    sget-object v3, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    invoke-direct {v1, v2, v3}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
-
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 163
+    .line 146
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_HI_RESOLUTION:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -694,7 +705,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 165
+    .line 148
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_MACRO:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -705,7 +716,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 167
+    .line 150
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_MACRO:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -716,7 +727,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 169
+    .line 152
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_P:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -727,7 +738,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 171
+    .line 154
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_P:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -738,7 +749,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 173
+    .line 156
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_P:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -749,7 +760,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 175
+    .line 158
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -760,7 +771,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 177
+    .line 160
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -771,7 +782,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 179
+    .line 162
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -782,7 +793,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 181
+    .line 164
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -793,7 +804,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 183
+    .line 166
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -804,7 +815,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 185
+    .line 168
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -815,7 +826,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 187
+    .line 170
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_AUTO_FRAMING:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -826,7 +837,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 189
+    .line 172
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_AUTO_FRAMING:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -837,7 +848,18 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 191
+    .line 174
+    new-instance v1, Landroid/util/Pair;
+
+    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_AUTO_FRAMING:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    sget-object v3, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE_PHYSICAL:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    invoke-direct {v1, v2, v3}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 176
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_GIMBAL:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -848,7 +870,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 193
+    .line 178
     new-instance v1, Landroid/util/Pair;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_GIMBAL:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -865,59 +887,59 @@
 .method private constructor <init>()V
     .locals 2
 
-    .line 223
+    .line 208
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 199
+    .line 184
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mListenersMap:Ljava/util/Map;
 
-    .line 201
+    .line 186
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
 
-    .line 204
+    .line 189
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mMrOriginSettingMap:Ljava/util/Map;
 
-    .line 206
+    .line 191
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mSettingsMapLock:Ljava/lang/Object;
 
-    .line 208
+    .line 193
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentSettingsLock:Ljava/lang/Object;
 
-    .line 224
+    .line 209
     new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings;-><init>()V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCommonSettings:Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 226
+    .line 211
     const-string v0, "SettingLoad"
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/ThreadUtil;->buildExecutor(Ljava/lang/String;)Ljava/util/concurrent/ExecutorService;
 
     move-result-object v0
 
-    .line 227
+    .line 212
     new-instance v1, Ljp/co/sony/mc/camera/setting/CameraProSetting$LoadCommonSettingsTask;
 
     invoke-direct {v1, p0, v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting$LoadCommonSettingsTask;-><init>(Ljp/co/sony/mc/camera/setting/CameraProSetting;Ljava/util/concurrent/ExecutorService;)V
@@ -928,7 +950,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mLoadCommonSettingsTaskFuture:Ljava/util/concurrent/Future;
 
-    .line 228
+    .line 213
     const-string v0, "TakeOver"
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/ThreadUtil;->buildExecutor(Ljava/lang/String;)Ljava/util/concurrent/ExecutorService;
@@ -943,191 +965,229 @@
 .method public static getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
     .locals 1
 
-    .line 232
+    .line 217
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->sInstance:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     if-nez v0, :cond_0
 
-    .line 233
+    .line 218
     new-instance v0, Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;-><init>()V
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->sInstance:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
-    .line 235
+    .line 220
     :cond_0
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->sInstance:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     return-object v0
 .end method
 
-.method private migrateCameraSettingsForBack(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
-    .locals 10
+.method private migrateCameraSettingsForBack()V
+    .locals 13
 
-    .line 1076
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->AVAILABLE_PRIMARY_KEYS:Ljava/util/List;
+    .line 1065
+    sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isCameraSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
 
-    move-result-object v0
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 1066
+    sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    goto :goto_0
+
+    .line 1067
+    :cond_0
+    sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->ULTRA_WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isCameraSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 1068
+    sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->ULTRA_WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v0, 0x0
 
     :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    if-nez v0, :cond_2
+
+    return-void
+
+    .line 1075
+    :cond_2
+    sget-object v1, Ljp/co/sony/mc/camera/setting/CameraProSetting;->AVAILABLE_PRIMARY_KEYS:Ljava/util/List;
+
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v7
+
+    :goto_1
+    invoke-interface {v7}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
 
-    if-eqz v1, :cond_4
+    if-eqz v1, :cond_7
 
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v7}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Landroid/util/Pair;
+    move-object v8, v1
 
-    .line 1077
-    iget-object v2, v1, Landroid/util/Pair;->second:Ljava/lang/Object;
+    check-cast v8, Landroid/util/Pair;
 
-    check-cast v2, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    .line 1076
+    iget-object v1, v8, Landroid/util/Pair;->second:Ljava/lang/Object;
 
-    sget-object v3, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    check-cast v1, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    invoke-virtual {v2, v3}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->equals(Ljava/lang/Object;)Z
+    sget-object v2, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    move-result v2
+    invoke-virtual {v1, v2}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->equals(Ljava/lang/Object;)Z
 
-    if-nez v2, :cond_0
+    move-result v1
 
-    goto :goto_0
-
-    .line 1082
-    :cond_0
-    iget-object v2, v1, Landroid/util/Pair;->first:Ljava/lang/Object;
-
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    if-eq v2, v3, :cond_1
-
-    iget-object v2, v1, Landroid/util/Pair;->first:Ljava/lang/Object;
-
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_ONE_SHOT:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    if-eq v2, v3, :cond_1
-
-    goto :goto_0
-
-    .line 1087
-    :cond_1
-    iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mSettingsMapLock:Ljava/lang/Object;
-
-    monitor-enter v2
-
-    .line 1088
-    :try_start_0
-    new-instance v3, Landroid/util/Pair;
-
-    iget-object v4, v1, Landroid/util/Pair;->first:Ljava/lang/Object;
-
-    check-cast v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    invoke-direct {v3, v4, p1}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
-
-    .line 1090
-    iget-object v4, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
-
-    invoke-interface {v4, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Ljp/co/sony/mc/camera/setting/CameraSettings;
-
-    .line 1091
-    invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraSettings;->getAllKeySet()Ljava/util/Set;
-
-    move-result-object v5
-
-    invoke-interface {v5}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v5
-
-    :cond_2
-    :goto_1
-    invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v6
-
-    if-eqz v6, :cond_3
-
-    invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v6
-
-    check-cast v6, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
-
-    .line 1092
-    iget-object v7, v1, Landroid/util/Pair;->first:Ljava/lang/Object;
-
-    check-cast v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    iget-object v8, v1, Landroid/util/Pair;->first:Ljava/lang/Object;
-
-    check-cast v8, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    iget-object v9, v1, Landroid/util/Pair;->second:Ljava/lang/Object;
-
-    check-cast v9, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    invoke-static {v7, v8, p1, v9, v6}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->shouldTakeOver(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Z
-
-    move-result v7
-
-    if-eqz v7, :cond_2
-
-    .line 1094
-    iget-object v7, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
-
-    invoke-interface {v7, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v7
-
-    check-cast v7, Ljp/co/sony/mc/camera/setting/CameraSettings;
-
-    invoke-virtual {v7, v6}, Ljp/co/sony/mc/camera/setting/CameraSettings;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
-
-    move-result-object v7
-
-    invoke-virtual {v4, v6, v7}, Ljp/co/sony/mc/camera/setting/CameraSettings;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Z
+    if-nez v1, :cond_3
 
     goto :goto_1
 
-    .line 1097
+    .line 1081
     :cond_3
-    iget-object v3, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
+    iget-object v1, v8, Landroid/util/Pair;->first:Ljava/lang/Object;
 
-    invoke-interface {v3, v1, v4}, Ljava/util/Map;->replace(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 1098
-    monitor-exit v2
+    if-eq v1, v2, :cond_4
 
-    goto :goto_0
+    iget-object v1, v8, Landroid/util/Pair;->first:Ljava/lang/Object;
 
-    :catchall_0
-    move-exception p0
+    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_ONE_SHOT:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    monitor-exit v2
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    if-eq v1, v2, :cond_4
 
-    throw p0
+    goto :goto_1
 
+    .line 1086
     :cond_4
+    new-instance v9, Landroid/util/Pair;
+
+    iget-object v1, v8, Landroid/util/Pair;->first:Ljava/lang/Object;
+
+    check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    invoke-direct {v9, v1, v0}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 1088
+    iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
+
+    invoke-interface {v1, v8}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    move-object v10, v1
+
+    check-cast v10, Ljp/co/sony/mc/camera/setting/CameraSettings;
+
+    .line 1089
+    invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraSettings;->getAllKeySet()Ljava/util/Set;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v11
+
+    :cond_5
+    :goto_2
+    invoke-interface {v11}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_6
+
+    invoke-interface {v11}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    move-object v12, v1
+
+    check-cast v12, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+
+    .line 1090
+    iget-object v1, v8, Landroid/util/Pair;->first:Ljava/lang/Object;
+
+    move-object v2, v1
+
+    check-cast v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    iget-object v1, v8, Landroid/util/Pair;->first:Ljava/lang/Object;
+
+    move-object v3, v1
+
+    check-cast v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    iget-object v1, v8, Landroid/util/Pair;->second:Ljava/lang/Object;
+
+    move-object v5, v1
+
+    check-cast v5, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    move-object v1, p0
+
+    move-object v4, v0
+
+    move-object v6, v12
+
+    invoke-virtual/range {v1 .. v6}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->shouldTakeOver(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_5
+
+    .line 1092
+    iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
+
+    invoke-interface {v1, v9}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljp/co/sony/mc/camera/setting/CameraSettings;
+
+    invoke-virtual {v1, v12}, Ljp/co/sony/mc/camera/setting/CameraSettings;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-virtual {v10, v12, v1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Z
+
+    goto :goto_2
+
+    .line 1095
+    :cond_6
+    iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
+
+    invoke-interface {v1, v8, v10}, Ljava/util/Map;->replace(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_1
+
+    :cond_7
     return-void
 .end method
 
-.method private migrateCameraSettingsForSlowMotion(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
-    .locals 7
+.method private migrateCameraSettingsForSlowMotion()V
+    .locals 6
 
-    .line 1103
+    .line 1100
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->AVAILABLE_PRIMARY_KEYS:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -1148,7 +1208,7 @@
 
     check-cast v1, Landroid/util/Pair;
 
-    .line 1104
+    .line 1101
     iget-object v2, v1, Landroid/util/Pair;->first:Ljava/lang/Object;
 
     check-cast v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -1171,1034 +1231,260 @@
 
     goto :goto_0
 
-    .line 1108
+    .line 1105
     :cond_1
-    iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mSettingsMapLock:Ljava/lang/Object;
+    new-instance v2, Landroid/util/Pair;
 
-    monitor-enter v2
+    iget-object v3, v1, Landroid/util/Pair;->first:Ljava/lang/Object;
 
-    .line 1109
-    :try_start_0
-    new-instance v3, Landroid/util/Pair;
+    check-cast v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    iget-object v4, v1, Landroid/util/Pair;->first:Ljava/lang/Object;
+    sget-object v4, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->SLOW_MOTION:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    check-cast v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    invoke-direct {v2, v3, v4}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    invoke-direct {v3, v4, p1}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    .line 1107
+    iget-object v3, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
 
-    .line 1111
-    iget-object v4, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
-
-    invoke-interface {v4, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Ljp/co/sony/mc/camera/setting/CameraSettings;
-
-    .line 1112
-    sget-object v5, Ljp/co/sony/mc/camera/setting/CameraSettings;->MIC:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    iget-object v6, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
-
-    .line 1113
-    invoke-interface {v6, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v3, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    sget-object v6, Ljp/co/sony/mc/camera/setting/CameraSettings;->MIC:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    .line 1108
+    sget-object v4, Ljp/co/sony/mc/camera/setting/CameraSettings;->MIC:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    invoke-virtual {v3, v6}, Ljp/co/sony/mc/camera/setting/CameraSettings;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
+    iget-object v5, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
 
-    move-result-object v3
+    .line 1109
+    invoke-interface {v5, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    check-cast v3, Ljp/co/sony/mc/camera/configuration/parameters/Mic;
+    move-result-object v2
 
-    .line 1112
-    invoke-virtual {v4, v5, v3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Z
+    check-cast v2, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1114
-    iget-object v3, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
+    sget-object v5, Ljp/co/sony/mc/camera/setting/CameraSettings;->MIC:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    invoke-interface {v3, v1, v4}, Ljava/util/Map;->replace(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v5}, Ljp/co/sony/mc/camera/setting/CameraSettings;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
-    .line 1115
-    monitor-exit v2
+    move-result-object v2
+
+    check-cast v2, Ljp/co/sony/mc/camera/configuration/parameters/Mic;
+
+    .line 1108
+    invoke-virtual {v3, v4, v2}, Ljp/co/sony/mc/camera/setting/CameraSettings;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Z
+
+    .line 1110
+    iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
+
+    invoke-interface {v2, v1, v3}, Ljava/util/Map;->replace(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
-
-    :catchall_0
-    move-exception p0
-
-    monitor-exit v2
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw p0
 
     :cond_2
     return-void
 .end method
 
-.method private migrateCameraSettingsForTele(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
-    .locals 10
+.method private migrateCameraSettingsForTele()V
+    .locals 13
 
-    .line 1057
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->AVAILABLE_PRIMARY_KEYS:Ljava/util/List;
+    .line 1036
+    sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isCameraSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
 
-    move-result-object v0
+    move-result v0
 
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    if-eqz v0, :cond_0
 
-    move-result v1
-
-    if-eqz v1, :cond_3
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/util/Pair;
-
-    .line 1058
-    iget-object v2, v1, Landroid/util/Pair;->second:Ljava/lang/Object;
-
-    sget-object v3, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    if-eq v2, v3, :cond_0
+    .line 1037
+    sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     goto :goto_0
 
-    .line 1061
+    .line 1038
     :cond_0
-    iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mSettingsMapLock:Ljava/lang/Object;
+    sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->ULTRA_WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    monitor-enter v2
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isCameraSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
 
-    .line 1062
-    :try_start_0
-    new-instance v3, Landroid/util/Pair;
+    move-result v0
 
-    iget-object v4, v1, Landroid/util/Pair;->first:Ljava/lang/Object;
+    if-eqz v0, :cond_1
 
-    check-cast v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    .line 1039
+    sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->ULTRA_WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    invoke-direct {v3, v4, p1}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    goto :goto_0
 
-    .line 1064
-    iget-object v4, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
+    :cond_1
+    const/4 v0, 0x0
 
-    invoke-interface {v4, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    :goto_0
+    if-nez v0, :cond_2
 
-    move-result-object v4
+    return-void
 
-    check-cast v4, Ljp/co/sony/mc/camera/setting/CameraSettings;
+    .line 1046
+    :cond_2
+    sget-object v1, Ljp/co/sony/mc/camera/setting/CameraProSetting;->AVAILABLE_PRIMARY_KEYS:Ljava/util/List;
 
-    .line 1065
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v7
+
+    :goto_1
+    invoke-interface {v7}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_6
+
+    invoke-interface {v7}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    move-object v8, v1
+
+    check-cast v8, Landroid/util/Pair;
+
+    .line 1047
+    iget-object v1, v8, Landroid/util/Pair;->second:Ljava/lang/Object;
+
+    sget-object v2, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    if-eq v1, v2, :cond_3
+
+    goto :goto_1
+
+    .line 1051
+    :cond_3
+    new-instance v9, Landroid/util/Pair;
+
+    iget-object v1, v8, Landroid/util/Pair;->first:Ljava/lang/Object;
+
+    check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    invoke-direct {v9, v1, v0}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 1053
+    iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
+
+    invoke-interface {v1, v8}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    move-object v10, v1
+
+    check-cast v10, Ljp/co/sony/mc/camera/setting/CameraSettings;
+
+    .line 1054
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraSettings;->getAllKeySet()Ljava/util/Set;
 
-    move-result-object v5
+    move-result-object v1
 
-    invoke-interface {v5}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+    invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
-    move-result-object v5
+    move-result-object v11
 
-    :cond_1
-    :goto_1
-    invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v6
-
-    if-eqz v6, :cond_2
-
-    invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v6
-
-    check-cast v6, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
-
-    .line 1066
-    iget-object v7, v1, Landroid/util/Pair;->first:Ljava/lang/Object;
-
-    check-cast v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    iget-object v8, v1, Landroid/util/Pair;->first:Ljava/lang/Object;
-
-    check-cast v8, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    iget-object v9, v1, Landroid/util/Pair;->second:Ljava/lang/Object;
-
-    check-cast v9, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    invoke-static {v7, v8, p1, v9, v6}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->shouldTakeOver(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Z
-
-    move-result v7
-
-    if-eqz v7, :cond_1
-
-    .line 1067
-    iget-object v7, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
-
-    invoke-interface {v7, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v7
-
-    check-cast v7, Ljp/co/sony/mc/camera/setting/CameraSettings;
-
-    invoke-virtual {v7, v6}, Ljp/co/sony/mc/camera/setting/CameraSettings;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
-
-    move-result-object v7
-
-    invoke-virtual {v4, v6, v7}, Ljp/co/sony/mc/camera/setting/CameraSettings;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Z
-
-    goto :goto_1
-
-    .line 1070
-    :cond_2
-    iget-object v3, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
-
-    invoke-interface {v3, v1, v4}, Ljava/util/Map;->replace(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 1071
-    monitor-exit v2
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception p0
-
-    monitor-exit v2
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw p0
-
-    :cond_3
-    return-void
-.end method
-
-.method public static shouldTakeOver(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Z
-    .locals 5
-
-    .line 1175
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isOneShot()Z
-
-    move-result v0
-
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isOneShot()Z
-
-    move-result v1
-
-    const/4 v2, 0x0
-
-    if-eq v0, v1, :cond_0
-
-    return v2
-
-    .line 1180
-    :cond_0
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
-
-    move-result v0
-
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
-
-    move-result v1
-
-    if-eq v0, v1, :cond_1
-
-    .line 1183
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->OBJECT_TRACKING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    if-eq p4, v0, :cond_1
-
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->MACRO_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    if-eq p4, v0, :cond_1
-
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FALLBACK_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    if-eq p4, v0, :cond_1
-
-    return v2
-
-    .line 1189
-    :cond_1
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoFraming()Z
-
-    move-result v0
-
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoFraming()Z
-
-    move-result v1
-
-    if-ne v0, v1, :cond_2
-
-    .line 1190
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isGimbal()Z
-
-    move-result v0
-
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isGimbal()Z
-
-    move-result v1
-
-    if-eq v0, v1, :cond_3
-
-    .line 1193
-    :cond_2
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->OBJECT_TRACKING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    if-ne p4, v0, :cond_3
-
-    return v2
-
-    .line 1198
-    :cond_3
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isMacro()Z
-
-    move-result v0
-
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isMacro()Z
-
-    move-result v1
-
-    if-eq v0, v1, :cond_4
-
-    .line 1200
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->OBJECT_TRACKING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    if-ne p4, v0, :cond_4
-
-    return v2
-
-    .line 1205
     :cond_4
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->getFacingId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    :goto_2
+    invoke-interface {v11}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result-object v0
+    move-result v1
 
-    invoke-virtual {p3}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->getFacingId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    if-eqz v1, :cond_5
+
+    invoke-interface {v11}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
-    const/16 v3, 0x8
+    move-object v12, v1
 
-    const/4 v4, 0x1
+    check-cast v12, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    if-eq v0, v1, :cond_b
+    .line 1055
+    iget-object v1, v8, Landroid/util/Pair;->first:Ljava/lang/Object;
 
-    const/16 p2, 0x2000
+    move-object v2, v1
 
-    .line 1207
-    invoke-virtual {p4, p2}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->hasTakeOverFlag(I)Z
+    check-cast v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result p2
+    iget-object v1, v8, Landroid/util/Pair;->first:Ljava/lang/Object;
 
-    if-eqz p2, :cond_5
+    move-object v3, v1
 
-    .line 1208
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isStreaming()Z
+    check-cast v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result p2
+    iget-object v1, v8, Landroid/util/Pair;->second:Ljava/lang/Object;
 
-    if-eqz p2, :cond_5
+    move-object v5, v1
 
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isStreaming()Z
+    check-cast v5, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    move-result p2
+    move-object v1, p0
 
-    if-eqz p2, :cond_5
+    move-object v4, v0
 
-    return v4
+    move-object v6, v12
 
-    :cond_5
-    const/16 p2, 0x4000
-
-    .line 1211
-    invoke-virtual {p4, p2}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->hasTakeOverFlag(I)Z
-
-    move-result p2
-
-    if-eqz p2, :cond_7
-
-    .line 1212
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
-
-    move-result p2
-
-    if-eqz p2, :cond_7
-
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
-
-    move-result p2
-
-    if-eqz p2, :cond_7
-
-    .line 1213
-    invoke-virtual {p4, v3}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->hasTakeOverFlag(I)Z
-
-    move-result p2
-
-    if-eqz p2, :cond_6
-
-    if-eq p0, p1, :cond_6
-
-    return v2
-
-    :cond_6
-    return v4
-
-    :cond_7
-    const/high16 p2, 0x20000
-
-    .line 1219
-    invoke-virtual {p4, p2}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->hasTakeOverFlag(I)Z
-
-    move-result p2
-
-    if-eqz p2, :cond_a
-
-    .line 1220
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
-
-    move-result p2
-
-    if-nez p2, :cond_a
-
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
-
-    move-result p2
-
-    if-nez p2, :cond_a
-
-    .line 1221
-    sget-object p2, Ljp/co/sony/mc/camera/setting/CameraSettings;->ULTRA_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    if-ne p4, p2, :cond_9
-
-    .line 1222
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isUltraHdrSupported()Z
-
-    move-result p0
-
-    if-eqz p0, :cond_8
-
-    .line 1223
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isUltraHdrSupported()Z
-
-    move-result p0
-
-    if-eqz p0, :cond_8
-
-    move v2, v4
-
-    :cond_8
-    return v2
-
-    :cond_9
-    return v4
-
-    :cond_a
-    return v2
-
-    .line 1230
-    :cond_b
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isMemoryRecall()Z
-
-    move-result v0
-
-    if-nez v0, :cond_c
-
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isMemoryRecall()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_c
-
-    return v2
-
-    .line 1236
-    :cond_c
-    invoke-virtual {p4, v4}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->hasTakeOverFlag(I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_d
-
-    return v4
-
-    .line 1242
-    :cond_d
-    invoke-virtual {p4, v3}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->hasTakeOverFlag(I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_e
-
-    if-ne p0, p1, :cond_e
-
-    move v0, v4
-
-    goto :goto_0
-
-    :cond_e
-    move v0, v2
-
-    :goto_0
-    if-nez v0, :cond_10
-
-    const/4 v1, 0x4
-
-    .line 1247
-    invoke-virtual {p4, v1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->hasTakeOverFlag(I)Z
+    invoke-virtual/range {v1 .. v6}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->shouldTakeOver(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_10
+    if-eqz v1, :cond_4
 
-    .line 1249
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
+    .line 1056
+    iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
 
-    move-result v0
+    invoke-interface {v1, v9}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    if-eqz v0, :cond_f
+    move-result-object v1
 
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
+    check-cast v1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    move-result v0
+    invoke-virtual {v1, v12}, Ljp/co/sony/mc/camera/setting/CameraSettings;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
-    if-eqz v0, :cond_f
+    move-result-object v1
 
-    move v0, v4
-
-    goto :goto_1
-
-    :cond_f
-    move v0, v2
-
-    :cond_10
-    :goto_1
-    if-nez v0, :cond_13
-
-    const/4 v1, 0x2
-
-    .line 1252
-    invoke-virtual {p4, v1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->hasTakeOverFlag(I)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_13
-
-    .line 1254
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
-
-    move-result v0
-
-    if-nez v0, :cond_11
-
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
-
-    move-result v0
-
-    if-nez v0, :cond_11
-
-    move v0, v4
+    invoke-virtual {v10, v12, v1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Z
 
     goto :goto_2
 
-    :cond_11
-    move v0, v2
+    .line 1059
+    :cond_5
+    iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
 
-    :goto_2
-    if-eqz v0, :cond_13
+    invoke-interface {v1, v8, v10}, Ljava/util/Map;->replace(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1257
-    sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->ULTRA_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    goto :goto_1
 
-    if-ne p4, v1, :cond_13
-
-    .line 1258
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isUltraHdrSupported()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_12
-
-    .line 1259
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isUltraHdrSupported()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_12
-
-    move v0, v4
-
-    goto :goto_3
-
-    :cond_12
-    move v0, v2
-
-    :cond_13
-    :goto_3
-    if-nez v0, :cond_15
-
-    const/16 v1, 0x1000
-
-    .line 1264
-    invoke-virtual {p4, v1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->hasTakeOverFlag(I)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_15
-
-    .line 1266
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isPro()Z
-
-    move-result v0
-
-    if-nez v0, :cond_14
-
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isPro()Z
-
-    move-result v0
-
-    if-nez v0, :cond_14
-
-    move v0, v4
-
-    goto :goto_4
-
-    :cond_14
-    move v0, v2
-
-    :cond_15
-    :goto_4
-    if-nez v0, :cond_17
-
-    const v1, 0x8000
-
-    .line 1269
-    invoke-virtual {p4, v1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->hasTakeOverFlag(I)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_17
-
-    .line 1271
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isFallbackModeSupported()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_16
-
-    .line 1272
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isFallbackModeSupported()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_16
-
-    .line 1273
-    invoke-static {p2}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isFallbackModeSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_16
-
-    .line 1274
-    invoke-static {p3}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isFallbackModeSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_16
-
-    move v0, v4
-
-    goto :goto_5
-
-    :cond_16
-    move v0, v2
-
-    :cond_17
-    :goto_5
-    if-nez v0, :cond_19
-
-    const/high16 v1, 0x10000
-
-    .line 1277
-    invoke-virtual {p4, v1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->hasTakeOverFlag(I)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_19
-
-    .line 1279
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isBasicMode()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_18
-
-    .line 1280
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isBasicMode()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_18
-
-    move v0, v4
-
-    goto :goto_6
-
-    :cond_18
-    move v0, v2
-
-    :cond_19
-    :goto_6
-    if-nez v0, :cond_26
-
-    .line 1284
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProPhoto()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_26
-
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProPhoto()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_26
-
-    const/16 v1, 0x10
-
-    .line 1285
-    invoke-virtual {p4, v1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->hasTakeOverFlag(I)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1a
-
-    move v0, v4
-
-    :cond_1a
-    const/16 v1, 0x20
-
-    .line 1290
-    invoke-virtual {p4, v1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->hasTakeOverFlag(I)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1c
-
-    if-ne p3, p2, :cond_1b
-
-    move v0, v4
-
-    goto :goto_7
-
-    :cond_1b
-    move v0, v2
-
-    :cond_1c
-    :goto_7
-    if-nez v0, :cond_20
-
-    const/16 v1, 0x40
-
-    .line 1295
-    invoke-virtual {p4, v1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->hasTakeOverFlag(I)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_20
-
-    .line 1298
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProP()Z
-
-    move-result v0
-
-    if-nez v0, :cond_1d
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProM()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1e
-
-    .line 1300
-    :cond_1d
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProP()Z
-
-    move-result v0
-
-    if-nez v0, :cond_1f
-
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProM()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1e
-
-    goto :goto_8
-
-    :cond_1e
-    move v0, v2
-
-    goto :goto_9
-
-    :cond_1f
-    :goto_8
-    move v0, v4
-
-    :cond_20
-    :goto_9
-    if-nez v0, :cond_24
-
-    const/16 v1, 0x80
-
-    .line 1303
-    invoke-virtual {p4, v1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->hasTakeOverFlag(I)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_24
-
-    .line 1306
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProS()Z
-
-    move-result v0
-
-    if-nez v0, :cond_21
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProM()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_22
-
-    .line 1308
-    :cond_21
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProS()Z
-
-    move-result v0
-
-    if-nez v0, :cond_23
-
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProM()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_22
-
-    goto :goto_a
-
-    :cond_22
-    move v0, v2
-
-    goto :goto_b
-
-    :cond_23
-    :goto_a
-    move v0, v4
-
-    :cond_24
-    :goto_b
-    if-eqz v0, :cond_26
-
-    .line 1312
-    sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->VOLUME_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    if-ne p4, v1, :cond_26
-
-    .line 1314
-    invoke-static {p2}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isVolumeDistortionCorrectionSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_25
-
-    .line 1316
-    invoke-static {p3}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isVolumeDistortionCorrectionSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_25
-
-    move v0, v4
-
-    goto :goto_c
-
-    :cond_25
-    move v0, v2
-
-    :cond_26
-    :goto_c
-    if-nez v0, :cond_31
-
-    .line 1322
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_31
-
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_31
-
-    const/16 v1, 0x100
-
-    .line 1323
-    invoke-virtual {p4, v1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->hasTakeOverFlag(I)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_27
-
-    move v0, v4
-
-    :cond_27
-    const/16 v1, 0x200
-
-    .line 1328
-    invoke-virtual {p4, v1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->hasTakeOverFlag(I)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_29
-
-    if-ne p3, p2, :cond_28
-
-    move v0, v4
-
-    goto :goto_d
-
-    :cond_28
-    move v0, v2
-
-    :cond_29
-    :goto_d
-    if-nez v0, :cond_2d
-
-    const/16 p2, 0x400
-
-    .line 1333
-    invoke-virtual {p4, p2}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->hasTakeOverFlag(I)Z
-
-    move-result p2
-
-    if-eqz p2, :cond_2d
-
-    .line 1336
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProP()Z
-
-    move-result p2
-
-    if-nez p2, :cond_2a
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProM()Z
-
-    move-result p2
-
-    if-eqz p2, :cond_2b
-
-    .line 1338
-    :cond_2a
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProP()Z
-
-    move-result p2
-
-    if-nez p2, :cond_2c
-
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProM()Z
-
-    move-result p2
-
-    if-eqz p2, :cond_2b
-
-    goto :goto_e
-
-    :cond_2b
-    move p2, v2
-
-    goto :goto_f
-
-    :cond_2c
-    :goto_e
-    move p2, v4
-
-    :goto_f
-    move v0, p2
-
-    :cond_2d
-    if-nez v0, :cond_31
-
-    const/16 p2, 0x800
-
-    .line 1341
-    invoke-virtual {p4, p2}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->hasTakeOverFlag(I)Z
-
-    move-result p2
-
-    if-eqz p2, :cond_31
-
-    .line 1344
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProS()Z
-
-    move-result p2
-
-    if-nez p2, :cond_2e
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProM()Z
-
-    move-result p0
-
-    if-eqz p0, :cond_30
-
-    .line 1346
-    :cond_2e
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProS()Z
-
-    move-result p0
-
-    if-nez p0, :cond_2f
-
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProM()Z
-
-    move-result p0
-
-    if-eqz p0, :cond_30
-
-    :cond_2f
-    move v2, v4
-
-    :cond_30
-    move v0, v2
-
-    :cond_31
-    return v0
+    :cond_6
+    return-void
 .end method
 
 .method private takeOverKeysNotSavedInMR(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "previousMode",
+            "previousCameraId"
+        }
+    .end annotation
 
-    .line 432
+    .line 416
     invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/setting/CameraProSettingResolver;->isResetFocusDistance(Ljp/co/sony/mc/camera/setting/CameraProSetting;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 434
+    .line 418
     sget-object p1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_MR:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/configuration/parameters/FocusDistance;->getDefaultDistance(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)F
@@ -2211,7 +1497,7 @@
 
     goto :goto_0
 
-    .line 436
+    .line 420
     :cond_0
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_DISTANCE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -2221,13 +1507,13 @@
 
     check-cast p1, Ljava/lang/Float;
 
-    .line 439
+    .line 423
     :goto_0
     iget-object p2, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentSettingsLock:Ljava/lang/Object;
 
     monitor-enter p2
 
-    .line 440
+    .line 424
     :try_start_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentCameraSettings:Ljp/co/sony/mc/camera/setting/CameraSettings;
 
@@ -2235,7 +1521,7 @@
 
     invoke-virtual {p0, v0, p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Z
 
-    .line 441
+    .line 425
     monitor-exit p2
 
     return-void
@@ -2255,28 +1541,28 @@
 .method public apply()V
     .locals 2
 
-    .line 685
+    .line 669
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentSettingsLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 686
+    .line 670
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCommonSettings:Ljp/co/sony/mc/camera/setting/CommonSettings;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->apply()V
 
-    .line 687
+    .line 671
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 689
+    .line 673
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mSettingsMapLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 690
+    .line 674
     :try_start_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
 
@@ -2301,12 +1587,12 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 691
+    .line 675
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraSettings;->apply()V
 
     goto :goto_0
 
-    .line 693
+    .line 677
     :cond_0
     monitor-exit v1
 
@@ -2324,7 +1610,7 @@
     :catchall_1
     move-exception p0
 
-    .line 687
+    .line 671
     :try_start_2
     monitor-exit v0
     :try_end_2
@@ -2336,12 +1622,12 @@
 .method public awaitCameraSettingsLoaded()V
     .locals 1
 
-    .line 292
+    .line 277
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mLoadCameraSettingsTaskFuture:Ljava/util/concurrent/Future;
 
     if-eqz p0, :cond_0
 
-    .line 294
+    .line 279
     :try_start_0
     invoke-interface {p0}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
     :try_end_0
@@ -2353,7 +1639,7 @@
     :catch_0
     move-exception p0
 
-    .line 296
+    .line 281
     const-string v0, "Failed to load camera settings."
 
     invoke-static {v0, p0}, Ljp/co/sony/mc/camera/util/CamLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
@@ -2365,33 +1651,43 @@
 
 .method public changeCameraSetting(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "targetMode",
+            "targetCameraId"
+        }
+    .end annotation
 
-    .line 329
+    .line 314
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentPrimaryKey()Landroid/util/Pair;
 
     move-result-object v0
 
-    .line 330
+    .line 315
     iget-object v1, v0, Landroid/util/Pair;->first:Ljava/lang/Object;
 
     check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 331
+    .line 316
     iget-object v0, v0, Landroid/util/Pair;->second:Ljava/lang/Object;
 
     check-cast v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 333
+    .line 318
     new-instance v2, Landroid/util/Pair;
 
     invoke-direct {v2, p1, p2}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 335
+    .line 320
     iget-object v3, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mSettingsMapLock:Ljava/lang/Object;
 
     monitor-enter v3
 
-    .line 336
+    .line 321
     :try_start_0
     iget-object v4, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
 
@@ -2401,7 +1697,7 @@
 
     if-nez v4, :cond_0
 
-    .line 337
+    .line 322
     new-instance v4, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
     iget-object v5, v2, Landroid/util/Pair;->first:Ljava/lang/Object;
@@ -2414,15 +1710,15 @@
 
     invoke-direct {v4, v5, v6}, Ljp/co/sony/mc/camera/setting/CameraSettings;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
 
-    .line 339
+    .line 324
     invoke-virtual {v4}, Ljp/co/sony/mc/camera/setting/CameraSettings;->loadAll()V
 
-    .line 341
+    .line 326
     iget-object v5, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
 
     invoke-interface {v5, v2, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 344
+    .line 329
     :cond_0
     iget-object v4, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
 
@@ -2434,45 +1730,45 @@
 
     iput-object v4, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentCameraSettings:Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 346
+    .line 330
     monitor-exit v3
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 348
+    .line 332
     iget-object v4, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentSettingsLock:Ljava/lang/Object;
 
     monitor-enter v4
 
-    .line 349
+    .line 333
     :try_start_1
     iget-object v3, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCommonSettings:Ljp/co/sony/mc/camera/setting/CommonSettings;
 
     invoke-virtual {v3, v2}, Ljp/co/sony/mc/camera/setting/CommonSettings;->setPrimaryKey(Landroid/util/Pair;)V
 
-    .line 350
+    .line 334
     monitor-exit v4
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     if-eq v0, p2, :cond_2
 
-    .line 353
+    .line 337
     sget-object p2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_MR:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-ne v1, p2, :cond_1
 
-    .line 358
+    .line 342
     invoke-direct {p0, v1, v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->takeOverKeysNotSavedInMR(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
 
-    .line 360
+    .line 344
     :cond_1
     invoke-static {p0, v1, v0}, Ljp/co/sony/mc/camera/setting/CameraProSettingResolver;->onCameraChanged(Ljp/co/sony/mc/camera/setting/CameraProSetting;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
 
     :cond_2
     if-eq v1, p1, :cond_3
 
-    .line 364
+    .line 348
     invoke-static {p0, v1, v0}, Ljp/co/sony/mc/camera/setting/CameraProSettingResolver;->onModeChanged(Ljp/co/sony/mc/camera/setting/CameraProSetting;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
 
     :cond_3
@@ -2481,7 +1777,7 @@
     :catchall_0
     move-exception p0
 
-    .line 350
+    .line 334
     :try_start_2
     monitor-exit v4
     :try_end_2
@@ -2492,7 +1788,7 @@
     :catchall_1
     move-exception p0
 
-    .line 346
+    .line 330
     :try_start_3
     monitor-exit v3
     :try_end_3
@@ -2503,61 +1799,69 @@
 
 .method public changeToMemoryRecallSetting(Ljp/co/sony/mc/camera/configuration/parameters/MemoryRecallData;)V
     .locals 11
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "data"
+        }
+    .end annotation
 
-    .line 376
+    .line 360
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/MemoryRecallData;->getMrMode()Ljp/co/sony/mc/camera/configuration/parameters/MrMode;
 
     move-result-object v0
 
-    .line 377
+    .line 361
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/configuration/parameters/MemoryRecallData;->getCameraId(Ljp/co/sony/mc/camera/configuration/parameters/MrMode;)Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     move-result-object p1
 
-    .line 378
+    .line 362
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentPrimaryKey()Landroid/util/Pair;
 
     move-result-object v1
 
-    .line 379
+    .line 363
     iget-object v2, v1, Landroid/util/Pair;->first:Ljava/lang/Object;
 
     check-cast v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 380
+    .line 364
     iget-object v1, v1, Landroid/util/Pair;->second:Ljava/lang/Object;
 
     check-cast v1, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 382
+    .line 366
     new-instance v3, Landroid/util/Pair;
 
     sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_MR:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     invoke-direct {v3, v4, p1}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 385
+    .line 369
     iget-object v4, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentSettingsLock:Ljava/lang/Object;
 
     monitor-enter v4
 
-    .line 386
+    .line 370
     :try_start_0
     iget-object v5, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCommonSettings:Ljp/co/sony/mc/camera/setting/CommonSettings;
 
     invoke-virtual {v5, v3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->setPrimaryKey(Landroid/util/Pair;)V
 
-    .line 387
+    .line 371
     monitor-exit v4
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 389
+    .line 373
     iget-object v5, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mSettingsMapLock:Ljava/lang/Object;
 
     monitor-enter v5
 
-    .line 390
+    .line 374
     :try_start_1
     iget-object v4, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mMrOriginSettingMap:Ljava/util/Map;
 
@@ -2567,7 +1871,7 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 391
+    .line 375
     iget-object v4, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
 
     invoke-interface {v4, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -2578,17 +1882,17 @@
 
     iput-object v3, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentCameraSettings:Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 392
+    .line 376
     iget-object v4, v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     invoke-virtual {v3, v4}, Ljp/co/sony/mc/camera/setting/CameraSettings;->loadAll(Ljp/co/sony/mc/camera/setting/CameraProPreferences;)V
 
-    .line 393
+    .line 377
     iget-object v3, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentCameraSettings:Ljp/co/sony/mc/camera/setting/CameraSettings;
 
     invoke-virtual {v3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->setAll()V
 
-    .line 395
+    .line 379
     sget-object v3, Ljp/co/sony/mc/camera/setting/CameraProSetting;->MEMORY_RECALL_ACTIVE_LENS:Ljava/util/List;
 
     invoke-interface {v3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -2609,7 +1913,7 @@
 
     check-cast v4, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 396
+    .line 380
     invoke-static {v4}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isCameraSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
 
     move-result v6
@@ -2620,7 +1924,7 @@
 
     goto :goto_0
 
-    .line 399
+    .line 383
     :cond_1
     iget-object v6, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
 
@@ -2636,15 +1940,15 @@
 
     check-cast v4, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 401
+    .line 385
     iget-object v6, v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     invoke-virtual {v4, v6}, Ljp/co/sony/mc/camera/setting/CameraSettings;->loadAll(Ljp/co/sony/mc/camera/setting/CameraProPreferences;)V
 
-    .line 402
+    .line 386
     invoke-virtual {v4}, Ljp/co/sony/mc/camera/setting/CameraSettings;->setAll()V
 
-    .line 403
+    .line 387
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraSettings;->getAllKeySet()Ljava/util/Set;
 
     move-result-object v6
@@ -2667,22 +1971,22 @@
 
     check-cast v7, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    .line 404
+    .line 388
     invoke-virtual {v4, v7}, Ljp/co/sony/mc/camera/setting/CameraSettings;->getOptions(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
 
     move-result-object v8
 
-    .line 405
+    .line 389
     invoke-virtual {v4, v7}, Ljp/co/sony/mc/camera/setting/CameraSettings;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object v9
 
-    .line 406
+    .line 390
     instance-of v10, v9, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     if-eqz v10, :cond_3
 
-    .line 407
+    .line 391
     check-cast v9, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     invoke-interface {v9}, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;->getCurrent()Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
@@ -2692,7 +1996,7 @@
     :cond_3
     if-eqz v8, :cond_2
 
-    .line 408
+    .line 392
     invoke-static {v8}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v8
@@ -2703,7 +2007,7 @@
 
     if-nez v8, :cond_2
 
-    .line 409
+    .line 393
     invoke-virtual {v4, v7}, Ljp/co/sony/mc/camera/setting/CameraSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object v8
@@ -2712,14 +2016,14 @@
 
     goto :goto_1
 
-    .line 418
+    .line 402
     :cond_4
     invoke-static {p0, v2, v1}, Ljp/co/sony/mc/camera/setting/CameraProSettingResolver;->onModeChanged(Ljp/co/sony/mc/camera/setting/CameraProSetting;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
 
-    .line 424
+    .line 408
     invoke-direct {p0, v2, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->takeOverKeysNotSavedInMR(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
 
-    .line 425
+    .line 409
     monitor-exit v5
 
     return-void
@@ -2736,7 +2040,7 @@
     :catchall_1
     move-exception p0
 
-    .line 387
+    .line 371
     :try_start_2
     monitor-exit v4
     :try_end_2
@@ -2748,7 +2052,7 @@
 .method public createCameraSettingsHolder()Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
     .locals 0
 
-    .line 801
+    .line 785
     new-instance p0, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;-><init>()V
@@ -2758,6 +2062,15 @@
 
 .method public createCameraSettingsHolder(Ljava/util/List;)Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "list"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2768,7 +2081,7 @@
         }
     .end annotation
 
-    .line 822
+    .line 806
     new-instance p0, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
 
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;-><init>(Ljava/util/List;)V
@@ -2778,8 +2091,18 @@
 
 .method public createCameraSettingsHolder(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "capturingMode",
+            "cameraId"
+        }
+    .end annotation
 
-    .line 811
+    .line 795
     new-instance p0, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
 
     invoke-direct {p0, p1, p2}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
@@ -2789,8 +2112,16 @@
 
 .method public createCameraSettingsHolder(Ljp/co/sony/mc/camera/configuration/parameters/MrMode;)Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mrMode"
+        }
+    .end annotation
 
-    .line 831
+    .line 815
     new-instance p0, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
 
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/MrMode;)V
@@ -2800,6 +2131,19 @@
 
 .method public get(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "capturingMode",
+            "cameraId",
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -2812,12 +2156,12 @@
         }
     .end annotation
 
-    .line 541
+    .line 525
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentSettingsLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 542
+    .line 526
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentCameraSettings:Ljp/co/sony/mc/camera/setting/CameraSettings;
 
@@ -2827,7 +2171,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 543
+    .line 527
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentCameraSettings:Ljp/co/sony/mc/camera/setting/CameraSettings;
 
     invoke-virtual {p0, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -2838,23 +2182,23 @@
 
     return-object p0
 
-    .line 545
+    .line 529
     :cond_0
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 547
+    .line 531
     new-instance v0, Landroid/util/Pair;
 
     invoke-direct {v0, p1, p2}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 548
+    .line 532
     iget-object p1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mSettingsMapLock:Ljava/lang/Object;
 
     monitor-enter p1
 
-    .line 549
+    .line 533
     :try_start_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
 
@@ -2866,7 +2210,7 @@
 
     if-eqz p0, :cond_1
 
-    .line 551
+    .line 535
     invoke-virtual {p0, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object p0
@@ -2875,7 +2219,7 @@
 
     return-object p0
 
-    .line 553
+    .line 537
     :cond_1
     monitor-exit p1
 
@@ -2895,7 +2239,7 @@
     :catchall_1
     move-exception p0
 
-    .line 545
+    .line 529
     :try_start_2
     monitor-exit v0
     :try_end_2
@@ -2906,6 +2250,17 @@
 
 .method public get(Ljp/co/sony/mc/camera/configuration/parameters/MrMode;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mrMode",
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -2917,12 +2272,12 @@
         }
     .end annotation
 
-    .line 582
+    .line 566
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mSettingsMapLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 583
+    .line 567
     :try_start_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mMrOriginSettingMap:Ljava/util/Map;
 
@@ -2934,14 +2289,14 @@
 
     if-nez p0, :cond_0
 
-    .line 585
+    .line 569
     monitor-exit v0
 
     const/4 p0, 0x0
 
     return-object p0
 
-    .line 587
+    .line 571
     :cond_0
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/setting/CameraSettings;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
@@ -2954,7 +2309,7 @@
     :catchall_0
     move-exception p0
 
-    .line 588
+    .line 572
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -2964,6 +2319,15 @@
 
 .method public get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -2974,18 +2338,18 @@
         }
     .end annotation
 
-    .line 565
+    .line 549
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentSettingsLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 566
+    .line 550
     :try_start_0
     instance-of v1, p1, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     if-eqz v1, :cond_0
 
-    .line 567
+    .line 551
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCommonSettings:Ljp/co/sony/mc/camera/setting/CommonSettings;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -2996,18 +2360,18 @@
 
     return-object p0
 
-    .line 569
+    .line 553
     :cond_0
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 570
+    .line 554
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentPrimaryKey()Landroid/util/Pair;
 
     move-result-object v0
 
-    .line 571
+    .line 555
     iget-object v1, v0, Landroid/util/Pair;->first:Ljava/lang/Object;
 
     check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -3025,7 +2389,7 @@
     :catchall_0
     move-exception p0
 
-    .line 569
+    .line 553
     :try_start_1
     monitor-exit v0
     :try_end_1
@@ -3047,12 +2411,12 @@
         }
     .end annotation
 
-    .line 464
+    .line 448
     new-instance p0, Ljava/util/ArrayList;
 
     invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 465
+    .line 449
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->AVAILABLE_PRIMARY_KEYS:Ljava/util/List;
 
     invoke-virtual {p0, v0}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
@@ -3063,12 +2427,12 @@
 .method public getConfiguration()Ljp/co/sony/mc/camera/configuration/Configurations;
     .locals 1
 
-    .line 905
+    .line 890
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentSettingsLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 906
+    .line 891
     :try_start_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentCameraSettings:Ljp/co/sony/mc/camera/setting/CameraSettings;
 
@@ -3083,7 +2447,7 @@
     :catchall_0
     move-exception p0
 
-    .line 907
+    .line 892
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -3094,7 +2458,7 @@
 .method public getCurrentCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
     .locals 0
 
-    .line 319
+    .line 304
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentPrimaryKey()Landroid/util/Pair;
 
     move-result-object p0
@@ -3109,7 +2473,7 @@
 .method public getCurrentCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
     .locals 0
 
-    .line 307
+    .line 292
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentPrimaryKey()Landroid/util/Pair;
 
     move-result-object p0
@@ -3133,12 +2497,12 @@
         }
     .end annotation
 
-    .line 276
+    .line 261
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentSettingsLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 277
+    .line 262
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCommonSettings:Ljp/co/sony/mc/camera/setting/CommonSettings;
 
@@ -3150,7 +2514,7 @@
 
     const/4 v1, 0x1
 
-    .line 278
+    .line 263
     new-array v1, v1, [Ljava/lang/String;
 
     const-string v2, "Accessed before loading key data."
@@ -3163,7 +2527,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 280
+    .line 265
     :try_start_1
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mLoadCommonSettingsTaskFuture:Ljava/util/concurrent/Future;
 
@@ -3178,13 +2542,13 @@
     :catch_0
     move-exception v1
 
-    .line 282
+    .line 267
     :try_start_2
     const-string v2, ""
 
     invoke-static {v2, v1}, Ljp/co/sony/mc/camera/util/CamLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 285
+    .line 270
     :cond_0
     :goto_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCommonSettings:Ljp/co/sony/mc/camera/setting/CommonSettings;
@@ -3193,7 +2557,7 @@
 
     move-result-object v1
 
-    .line 286
+    .line 271
     iget-object v2, v1, Landroid/util/Pair;->first:Ljava/lang/Object;
 
     check-cast v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -3210,19 +2574,19 @@
 
     sget-object v2, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAMERA_ID_ON_MR:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 287
+    .line 272
     invoke-virtual {p0, v2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object p0
 
     check-cast p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 286
+    .line 271
     invoke-static {v1, p0}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
 
     move-result-object v1
 
-    .line 287
+    .line 272
     :cond_1
     monitor-exit v0
 
@@ -3231,7 +2595,7 @@
     :catchall_0
     move-exception p0
 
-    .line 288
+    .line 273
     monitor-exit v0
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
@@ -3241,6 +2605,15 @@
 
 .method public getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -3248,176 +2621,6 @@
             ">(",
             "Ljp/co/sony/mc/camera/setting/SettingKey$Key<",
             "TT;>;)TT;"
-        }
-    .end annotation
-
-    .line 746
-    iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentSettingsLock:Ljava/lang/Object;
-
-    monitor-enter v0
-
-    .line 747
-    :try_start_0
-    instance-of v1, p1, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    if-eqz v1, :cond_0
-
-    .line 748
-    iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCommonSettings:Ljp/co/sony/mc/camera/setting/CommonSettings;
-
-    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    monitor-exit v0
-
-    return-object p0
-
-    .line 750
-    :cond_0
-    iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentCameraSettings:Ljp/co/sony/mc/camera/setting/CameraSettings;
-
-    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    monitor-exit v0
-
-    return-object p0
-
-    :catchall_0
-    move-exception p0
-
-    .line 752
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw p0
-.end method
-
-.method public getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;",
-            "Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;",
-            "Ljp/co/sony/mc/camera/setting/SettingKey$Key<",
-            "TT;>;)[TT;"
-        }
-    .end annotation
-
-    .line 706
-    iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentSettingsLock:Ljava/lang/Object;
-
-    monitor-enter v0
-
-    .line 707
-    :try_start_0
-    iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentCameraSettings:Ljp/co/sony/mc/camera/setting/CameraSettings;
-
-    invoke-virtual {v1, p1, p2}, Ljp/co/sony/mc/camera/setting/CameraSettings;->isSameKey(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    .line 708
-    iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentCameraSettings:Ljp/co/sony/mc/camera/setting/CameraSettings;
-
-    invoke-virtual {p0, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->getOptions(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
-
-    move-result-object p0
-
-    monitor-exit v0
-
-    return-object p0
-
-    .line 710
-    :cond_0
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
-
-    .line 712
-    new-instance v0, Landroid/util/Pair;
-
-    invoke-direct {v0, p1, p2}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
-
-    .line 713
-    iget-object p1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mSettingsMapLock:Ljava/lang/Object;
-
-    monitor-enter p1
-
-    .line 714
-    :try_start_1
-    iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
-
-    invoke-interface {p0, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Ljp/co/sony/mc/camera/setting/CameraSettings;
-
-    if-eqz p0, :cond_1
-
-    .line 716
-    invoke-virtual {p0, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->getOptions(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
-
-    move-result-object p0
-
-    monitor-exit p1
-
-    return-object p0
-
-    .line 718
-    :cond_1
-    monitor-exit p1
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    const/4 p0, 0x0
-
-    .line 720
-    new-array p0, p0, [Ljava/lang/Object;
-
-    return-object p0
-
-    :catchall_0
-    move-exception p0
-
-    .line 718
-    :try_start_2
-    monitor-exit p1
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    throw p0
-
-    :catchall_1
-    move-exception p0
-
-    .line 710
-    :try_start_3
-    monitor-exit v0
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
-
-    throw p0
-.end method
-
-.method public getOptions(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljp/co/sony/mc/camera/setting/SettingKey$Key<",
-            "TT;>;)[TT;"
         }
     .end annotation
 
@@ -3435,7 +2638,7 @@
     .line 732
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCommonSettings:Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getOptions(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -3447,7 +2650,7 @@
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentCameraSettings:Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->getOptions(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -3466,10 +2669,202 @@
     throw p0
 .end method
 
+.method public getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "capturingMode",
+            "cameraId",
+            "key"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;",
+            "Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;",
+            "Ljp/co/sony/mc/camera/setting/SettingKey$Key<",
+            "TT;>;)[TT;"
+        }
+    .end annotation
+
+    .line 690
+    iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentSettingsLock:Ljava/lang/Object;
+
+    monitor-enter v0
+
+    .line 691
+    :try_start_0
+    iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentCameraSettings:Ljp/co/sony/mc/camera/setting/CameraSettings;
+
+    invoke-virtual {v1, p1, p2}, Ljp/co/sony/mc/camera/setting/CameraSettings;->isSameKey(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 692
+    iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentCameraSettings:Ljp/co/sony/mc/camera/setting/CameraSettings;
+
+    invoke-virtual {p0, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->getOptions(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
+
+    move-result-object p0
+
+    monitor-exit v0
+
+    return-object p0
+
+    .line 694
+    :cond_0
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    .line 696
+    new-instance v0, Landroid/util/Pair;
+
+    invoke-direct {v0, p1, p2}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 697
+    iget-object p1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mSettingsMapLock:Ljava/lang/Object;
+
+    monitor-enter p1
+
+    .line 698
+    :try_start_1
+    iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
+
+    invoke-interface {p0, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljp/co/sony/mc/camera/setting/CameraSettings;
+
+    if-eqz p0, :cond_1
+
+    .line 700
+    invoke-virtual {p0, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->getOptions(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
+
+    move-result-object p0
+
+    monitor-exit p1
+
+    return-object p0
+
+    .line 702
+    :cond_1
+    monitor-exit p1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    const/4 p0, 0x0
+
+    .line 704
+    new-array p0, p0, [Ljava/lang/Object;
+
+    return-object p0
+
+    :catchall_0
+    move-exception p0
+
+    .line 702
+    :try_start_2
+    monitor-exit p1
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    throw p0
+
+    :catchall_1
+    move-exception p0
+
+    .line 694
+    :try_start_3
+    monitor-exit v0
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+
+    throw p0
+.end method
+
+.method public getOptions(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljp/co/sony/mc/camera/setting/SettingKey$Key<",
+            "TT;>;)[TT;"
+        }
+    .end annotation
+
+    .line 714
+    iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentSettingsLock:Ljava/lang/Object;
+
+    monitor-enter v0
+
+    .line 715
+    :try_start_0
+    instance-of v1, p1, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+
+    if-eqz v1, :cond_0
+
+    .line 716
+    iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCommonSettings:Ljp/co/sony/mc/camera/setting/CommonSettings;
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getOptions(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
+
+    move-result-object p0
+
+    monitor-exit v0
+
+    return-object p0
+
+    .line 718
+    :cond_0
+    iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentCameraSettings:Ljp/co/sony/mc/camera/setting/CameraSettings;
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->getOptions(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
+
+    move-result-object p0
+
+    monitor-exit v0
+
+    return-object p0
+
+    :catchall_0
+    move-exception p0
+
+    .line 720
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p0
+.end method
+
 .method public getSettingsMapLock()Ljava/lang/Object;
     .locals 0
 
-    .line 1359
+    .line 1189
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mSettingsMapLock:Ljava/lang/Object;
 
     return-object p0
@@ -3478,12 +2873,12 @@
 .method public init()V
     .locals 5
 
-    .line 239
+    .line 224
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentSettingsLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 240
+    .line 225
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCommonSettings:Ljp/co/sony/mc/camera/setting/CommonSettings;
 
@@ -3491,7 +2886,7 @@
 
     move-result-object v1
 
-    .line 241
+    .line 226
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCommonSettings:Ljp/co/sony/mc/camera/setting/CommonSettings;
 
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getFingerPrint()Ljava/lang/String;
@@ -3500,14 +2895,14 @@
 
     if-nez v1, :cond_0
 
-    .line 245
+    .line 230
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCommonSettings:Ljp/co/sony/mc/camera/setting/CommonSettings;
 
     sget-object v2, Ljp/co/sony/mc/camera/setting/CameraProSetting;->CURRENT_SETTING_VERSION:Ljava/lang/Integer;
 
     invoke-virtual {v1, v2}, Ljp/co/sony/mc/camera/setting/CommonSettings;->setSettingVersion(Ljava/lang/Integer;)V
 
-    .line 246
+    .line 231
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCommonSettings:Ljp/co/sony/mc/camera/setting/CommonSettings;
 
     sget-object v1, Landroid/os/Build;->FINGERPRINT:Ljava/lang/String;
@@ -3516,7 +2911,7 @@
 
     goto :goto_0
 
-    .line 248
+    .line 233
     :cond_0
     invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
 
@@ -3532,7 +2927,7 @@
 
     sget-object v1, Landroid/os/Build;->FINGERPRINT:Ljava/lang/String;
 
-    .line 249
+    .line 234
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -3542,7 +2937,7 @@
     :cond_1
     const/4 v1, 0x1
 
-    .line 250
+    .line 235
     new-array v1, v1, [Ljava/lang/String;
 
     const-string v2, "Found previous setting version or finger print change in preference."
@@ -3553,33 +2948,33 @@
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 252
+    .line 237
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSettingMigrator;->migrate()Z
 
     move-result v1
 
     if-eqz v1, :cond_3
 
-    .line 253
+    .line 238
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCommonSettings:Ljp/co/sony/mc/camera/setting/CommonSettings;
 
     invoke-virtual {v1, v3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->setSettingVersion(Ljava/lang/Integer;)V
 
-    .line 254
+    .line 239
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCommonSettings:Ljp/co/sony/mc/camera/setting/CommonSettings;
 
     sget-object v1, Landroid/os/Build;->FINGERPRINT:Ljava/lang/String;
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->setFingerPrint(Ljava/lang/String;)V
 
-    .line 260
+    .line 245
     :cond_2
     :goto_0
     monitor-exit v0
 
     return-void
 
-    .line 257
+    .line 242
     :cond_3
     new-instance p0, Ljava/lang/RuntimeException;
 
@@ -3592,7 +2987,7 @@
     :catchall_0
     move-exception p0
 
-    .line 260
+    .line 245
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -3603,18 +2998,18 @@
 .method public isLimitForSizeOrDuration()Z
     .locals 1
 
-    .line 917
+    .line 902
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentSettingsLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 918
+    .line 903
     :try_start_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentCameraSettings:Ljp/co/sony/mc/camera/setting/CameraSettings;
 
     if-eqz p0, :cond_0
 
-    .line 919
+    .line 904
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/setting/CameraSettings;->isLimitForSizeOrDuration()Z
 
     move-result p0
@@ -3636,7 +3031,7 @@
     :catchall_0
     move-exception p0
 
-    .line 920
+    .line 905
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -3647,12 +3042,12 @@
 .method public isPrepared()Z
     .locals 1
 
-    .line 501
+    .line 485
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentSettingsLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 502
+    .line 486
     :try_start_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentCameraSettings:Ljp/co/sony/mc/camera/setting/CameraSettings;
 
@@ -3673,7 +3068,7 @@
     :catchall_0
     move-exception p0
 
-    .line 503
+    .line 487
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -3683,6 +3078,19 @@
 
 .method public isTempChanged(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "capturingMode",
+            "cameraId",
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -3695,18 +3103,18 @@
         }
     .end annotation
 
-    .line 776
+    .line 760
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentSettingsLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 777
+    .line 761
     :try_start_0
     instance-of v1, p3, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     if-eqz v1, :cond_0
 
-    .line 778
+    .line 762
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCommonSettings:Ljp/co/sony/mc/camera/setting/CommonSettings;
 
     invoke-virtual {p0, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->isTempChanged(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Z
@@ -3717,7 +3125,7 @@
 
     return p0
 
-    .line 779
+    .line 763
     :cond_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentCameraSettings:Ljp/co/sony/mc/camera/setting/CameraSettings;
 
@@ -3727,7 +3135,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 780
+    .line 764
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentCameraSettings:Ljp/co/sony/mc/camera/setting/CameraSettings;
 
     invoke-virtual {p0, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->isTempChanged(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Z
@@ -3738,23 +3146,23 @@
 
     return p0
 
-    .line 782
+    .line 766
     :cond_1
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 784
+    .line 768
     new-instance v0, Landroid/util/Pair;
 
     invoke-direct {v0, p1, p2}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 785
+    .line 769
     iget-object p1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mSettingsMapLock:Ljava/lang/Object;
 
     monitor-enter p1
 
-    .line 786
+    .line 770
     :try_start_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
 
@@ -3766,7 +3174,7 @@
 
     if-eqz p0, :cond_2
 
-    .line 788
+    .line 772
     invoke-virtual {p0, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->isTempChanged(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Z
 
     move-result p0
@@ -3775,7 +3183,7 @@
 
     return p0
 
-    .line 790
+    .line 774
     :cond_2
     monitor-exit p1
 
@@ -3795,7 +3203,7 @@
     :catchall_1
     move-exception p0
 
-    .line 782
+    .line 766
     :try_start_2
     monitor-exit v0
     :try_end_2
@@ -3806,6 +3214,15 @@
 
 .method public isTempChanged(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -3816,12 +3233,12 @@
         }
     .end annotation
 
-    .line 762
+    .line 746
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentPrimaryKey()Landroid/util/Pair;
 
     move-result-object v0
 
-    .line 763
+    .line 747
     iget-object v1, v0, Landroid/util/Pair;->first:Ljava/lang/Object;
 
     check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -3840,14 +3257,14 @@
 .method public loadAllCameraSettings()V
     .locals 2
 
-    .line 264
+    .line 249
     const-string v0, "SettingLoad"
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/ThreadUtil;->buildExecutor(Ljava/lang/String;)Ljava/util/concurrent/ExecutorService;
 
     move-result-object v0
 
-    .line 265
+    .line 250
     new-instance v1, Ljp/co/sony/mc/camera/setting/CameraProSetting$LoadCameraSettingsTask;
 
     invoke-direct {v1, p0, v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting$LoadCameraSettingsTask;-><init>(Ljp/co/sony/mc/camera/setting/CameraProSetting;Ljava/util/concurrent/ExecutorService;)V
@@ -3863,6 +3280,15 @@
 
 .method public prepareCameraSetting(Landroid/util/Pair;)Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "primaryKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3874,12 +3300,12 @@
         }
     .end annotation
 
-    .line 478
+    .line 462
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mSettingsMapLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 479
+    .line 463
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
 
@@ -3889,7 +3315,7 @@
 
     if-nez v1, :cond_0
 
-    .line 480
+    .line 464
     new-instance v1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
     iget-object v2, p1, Landroid/util/Pair;->first:Ljava/lang/Object;
@@ -3902,15 +3328,15 @@
 
     invoke-direct {v1, v2, v3}, Ljp/co/sony/mc/camera/setting/CameraSettings;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
 
-    .line 482
+    .line 466
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->loadAll()V
 
-    .line 484
+    .line 468
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
 
     invoke-interface {v2, p1, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 487
+    .line 471
     :cond_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
 
@@ -3922,28 +3348,28 @@
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentCameraSettings:Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 488
+    .line 472
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 490
+    .line 474
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentSettingsLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 491
+    .line 475
     :try_start_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCommonSettings:Ljp/co/sony/mc/camera/setting/CommonSettings;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->setPrimaryKey(Landroid/util/Pair;)V
 
-    .line 492
+    .line 476
     monitor-exit v1
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 494
+    .line 478
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->createCameraSettingsHolder()Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
 
     move-result-object p0
@@ -3953,7 +3379,7 @@
     :catchall_0
     move-exception p0
 
-    .line 492
+    .line 476
     :try_start_2
     monitor-exit v1
     :try_end_2
@@ -3964,7 +3390,7 @@
     :catchall_1
     move-exception p0
 
-    .line 488
+    .line 472
     :try_start_3
     monitor-exit v0
     :try_end_3
@@ -3975,8 +3401,18 @@
 
 .method public registerSettingChangedListener(Ljp/co/sony/mc/camera/setting/CameraProSettingChangedListener;Landroid/os/Handler;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "listener",
+            "handler"
+        }
+    .end annotation
 
-    .line 842
+    .line 826
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mListenersMap:Ljava/util/Map;
 
     invoke-interface {p0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -3987,28 +3423,28 @@
 .method public removeFingerPrint()V
     .locals 5
 
-    .line 927
+    .line 912
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentSettingsLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 928
+    .line 913
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCommonSettings:Ljp/co/sony/mc/camera/setting/CommonSettings;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->removeFingerPrint()V
 
-    .line 929
+    .line 914
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 931
+    .line 916
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mSettingsMapLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 932
+    .line 917
     :try_start_1
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->AVAILABLE_PRIMARY_KEYS:Ljava/util/List;
 
@@ -4030,7 +3466,7 @@
 
     check-cast v2, Landroid/util/Pair;
 
-    .line 933
+    .line 918
     iget-object v3, v2, Landroid/util/Pair;->second:Ljava/lang/Object;
 
     check-cast v3, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
@@ -4043,7 +3479,7 @@
 
     goto :goto_0
 
-    .line 936
+    .line 921
     :cond_1
     iget-object v3, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
 
@@ -4053,7 +3489,7 @@
 
     if-nez v3, :cond_0
 
-    .line 937
+    .line 922
     new-instance v3, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
     iget-object v4, v2, Landroid/util/Pair;->first:Ljava/lang/Object;
@@ -4066,12 +3502,12 @@
 
     invoke-direct {v3, v4, v2}, Ljp/co/sony/mc/camera/setting/CameraSettings;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
 
-    .line 938
+    .line 923
     invoke-virtual {v3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->removeFingerPrint()V
 
     goto :goto_0
 
-    .line 941
+    .line 926
     :cond_2
     monitor-exit v1
 
@@ -4089,7 +3525,7 @@
     :catchall_1
     move-exception p0
 
-    .line 929
+    .line 914
     :try_start_2
     monitor-exit v0
     :try_end_2
@@ -4101,12 +3537,12 @@
 .method public resetCameraSetting()V
     .locals 4
 
-    .line 448
+    .line 432
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentSettingsLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 449
+    .line 433
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCommonSettings:Ljp/co/sony/mc/camera/setting/CommonSettings;
 
@@ -4114,17 +3550,17 @@
 
     invoke-virtual {v1, v2}, Ljp/co/sony/mc/camera/setting/CommonSettings;->setDefault(Z)V
 
-    .line 450
+    .line 434
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 452
+    .line 436
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mSettingsMapLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 454
+    .line 438
     :try_start_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
 
@@ -4149,7 +3585,7 @@
 
     check-cast v3, Ljava/util/Map$Entry;
 
-    .line 455
+    .line 439
     invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v3
@@ -4160,7 +3596,7 @@
 
     goto :goto_0
 
-    .line 457
+    .line 441
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mMrOriginSettingMap:Ljava/util/Map;
 
@@ -4185,7 +3621,7 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 458
+    .line 442
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v0
@@ -4196,7 +3632,7 @@
 
     goto :goto_1
 
-    .line 460
+    .line 444
     :cond_1
     monitor-exit v1
 
@@ -4214,7 +3650,7 @@
     :catchall_1
     move-exception p0
 
-    .line 450
+    .line 434
     :try_start_2
     monitor-exit v0
     :try_end_2
@@ -4225,6 +3661,21 @@
 
 .method public set(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "capturingMode",
+            "cameraId",
+            "key",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -4249,7 +3700,7 @@
 
     move-object v4, p4
 
-    .line 602
+    .line 586
     invoke-virtual/range {v0 .. v5}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Z)V
 
     return-void
@@ -4257,6 +3708,23 @@
 
 .method public set(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Z)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "capturingMode",
+            "cameraId",
+            "key",
+            "value",
+            "notify"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -4269,7 +3737,7 @@
         }
     .end annotation
 
-    .line 617
+    .line 601
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
@@ -4312,13 +3780,13 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 619
+    .line 603
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentSettingsLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 620
+    .line 604
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentCameraSettings:Ljp/co/sony/mc/camera/setting/CameraSettings;
 
@@ -4332,7 +3800,7 @@
 
     if-eqz p5, :cond_1
 
-    .line 622
+    .line 606
     iget-object p5, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentCameraSettings:Ljp/co/sony/mc/camera/setting/CameraSettings;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mListenersMap:Ljava/util/Map;
@@ -4341,13 +3809,13 @@
 
     goto :goto_0
 
-    .line 624
+    .line 608
     :cond_1
     iget-object p5, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentCameraSettings:Ljp/co/sony/mc/camera/setting/CameraSettings;
 
     invoke-virtual {p5, p3, p4, v2}, Ljp/co/sony/mc/camera/setting/CameraSettings;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljava/util/Map;)Z
 
-    .line 626
+    .line 610
     :goto_0
     iget-object p5, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mTakeOverService:Ljava/util/concurrent/ExecutorService;
 
@@ -4369,28 +3837,28 @@
 
     invoke-interface {p5, v7}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
 
-    .line 628
+    .line 612
     monitor-exit v0
 
     return-void
 
-    .line 630
+    .line 614
     :cond_2
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 632
+    .line 616
     new-instance v0, Landroid/util/Pair;
 
     invoke-direct {v0, p1, p2}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 633
+    .line 617
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mSettingsMapLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 634
+    .line 618
     :try_start_1
     iget-object v3, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
 
@@ -4404,18 +3872,18 @@
 
     if-eqz p5, :cond_3
 
-    .line 637
+    .line 621
     iget-object p5, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mListenersMap:Ljava/util/Map;
 
     invoke-virtual {v0, p3, p4, p5}, Ljp/co/sony/mc/camera/setting/CameraSettings;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljava/util/Map;)Z
 
     goto :goto_1
 
-    .line 639
+    .line 623
     :cond_3
     invoke-virtual {v0, p3, p4, v2}, Ljp/co/sony/mc/camera/setting/CameraSettings;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljava/util/Map;)Z
 
-    .line 641
+    .line 625
     :goto_1
     iget-object p5, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mTakeOverService:Ljava/util/concurrent/ExecutorService;
 
@@ -4437,7 +3905,7 @@
 
     invoke-interface {p5, v0}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
 
-    .line 644
+    .line 628
     :cond_4
     monitor-exit v1
 
@@ -4455,7 +3923,7 @@
     :catchall_1
     move-exception p0
 
-    .line 630
+    .line 614
     :try_start_2
     monitor-exit v0
     :try_end_2
@@ -4466,6 +3934,17 @@
 
 .method public set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -4478,7 +3957,7 @@
 
     const/4 v0, 0x1
 
-    .line 654
+    .line 638
     invoke-virtual {p0, p1, p2, v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Z)V
 
     return-void
@@ -4486,6 +3965,19 @@
 
 .method public set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Z)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value",
+            "notify"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -4498,17 +3990,17 @@
 
     const-string v0, "key : "
 
-    .line 665
+    .line 649
     instance-of v1, p1, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     if-eqz v1, :cond_2
 
-    .line 666
+    .line 650
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentSettingsLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 667
+    .line 651
     :try_start_0
     sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
@@ -4553,7 +4045,7 @@
     :cond_0
     if-eqz p3, :cond_1
 
-    .line 669
+    .line 653
     iget-object p3, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCommonSettings:Ljp/co/sony/mc/camera/setting/CommonSettings;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mListenersMap:Ljava/util/Map;
@@ -4562,7 +4054,7 @@
 
     goto :goto_0
 
-    .line 671
+    .line 655
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCommonSettings:Ljp/co/sony/mc/camera/setting/CommonSettings;
 
@@ -4570,7 +4062,7 @@
 
     invoke-virtual {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljava/util/Map;)Z
 
-    .line 673
+    .line 657
     :goto_0
     monitor-exit v1
 
@@ -4585,13 +4077,13 @@
 
     throw p0
 
-    .line 675
+    .line 659
     :cond_2
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentPrimaryKey()Landroid/util/Pair;
 
     move-result-object v0
 
-    .line 676
+    .line 660
     iget-object v1, v0, Landroid/util/Pair;->first:Ljava/lang/Object;
 
     move-object v3, v1
@@ -4620,19 +4112,31 @@
 
 .method public setMrOriginSettings(Ljp/co/sony/mc/camera/configuration/parameters/MrMode;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mrMode",
+            "fromMode",
+            "fromId"
+        }
+    .end annotation
 
-    .line 516
+    .line 500
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mSettingsMapLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 517
+    .line 501
     :try_start_0
     new-instance v1, Landroid/util/Pair;
 
     invoke-direct {v1, p2, p3}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 519
+    .line 503
     iget-object p2, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
 
     invoke-interface {p2, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -4641,7 +4145,7 @@
 
     check-cast p2, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 520
+    .line 504
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mMrOriginSettingMap:Ljava/util/Map;
 
     invoke-interface {p0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -4650,12 +4154,12 @@
 
     check-cast p0, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 521
+    .line 505
     iget-object p1, p2, Ljp/co/sony/mc/camera/setting/CameraSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->loadAll(Ljp/co/sony/mc/camera/setting/CameraProPreferences;)V
 
-    .line 523
+    .line 507
     sget-object p1, Ljp/co/sony/mc/camera/setting/CameraSettings;->PHOTO_FORMAT:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -4666,22 +4170,22 @@
 
     if-ne p1, p2, :cond_0
 
-    .line 524
+    .line 508
     sget-object p1, Ljp/co/sony/mc/camera/setting/CameraSettings;->COLOR_TONE_PROFILE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    .line 525
+    .line 509
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;
 
     move-result-object p2
 
-    .line 524
+    .line 508
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/setting/CameraSettings;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Z
 
-    .line 528
+    .line 512
     :cond_0
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/setting/CameraSettings;->setAll()V
 
-    .line 529
+    .line 513
     monitor-exit v0
 
     return-void
@@ -4696,10 +4200,94 @@
     throw p0
 .end method
 
+.method public shouldTakeOver(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Z
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "currentCapturingMode",
+            "targetCapturingMode",
+            "currentCameraId",
+            "targetCameraId",
+            "key"
+        }
+    .end annotation
+
+    .line 1170
+    instance-of v0, p5, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    return v1
+
+    .line 1174
+    :cond_0
+    iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mSettingsMapLock:Ljava/lang/Object;
+
+    monitor-enter v0
+
+    .line 1175
+    :try_start_0
+    new-instance v2, Landroid/util/Pair;
+
+    invoke-direct {v2, p2, p4}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 1177
+    iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
+
+    invoke-interface {p0, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljp/co/sony/mc/camera/setting/CameraSettings;
+
+    if-eqz p0, :cond_1
+
+    .line 1178
+    invoke-virtual {p0, p5, p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->shouldTakeOver(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_1
+
+    const/4 v1, 0x1
+
+    :cond_1
+    monitor-exit v0
+
+    return v1
+
+    :catchall_0
+    move-exception p0
+
+    .line 1180
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p0
+.end method
+
 .method public unregisterSettingChangedListener(Ljp/co/sony/mc/camera/setting/CameraProSettingChangedListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
-    .line 851
+    .line 835
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mListenersMap:Ljava/util/Map;
 
     invoke-interface {p0, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
@@ -4710,12 +4298,12 @@
 .method public updateSettingsTo4kVideo()V
     .locals 3
 
-    .line 858
+    .line 842
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentSettingsLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 859
+    .line 843
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCurrentCameraSettings:Ljp/co/sony/mc/camera/setting/CameraSettings;
 
@@ -4723,7 +4311,7 @@
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCommonSettings:Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 860
+    .line 844
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object v1
@@ -4732,7 +4320,7 @@
 
     if-ne v1, v2, :cond_1
 
-    .line 865
+    .line 849
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_SIZE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -4741,19 +4329,19 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
 
-    .line 867
+    .line 851
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->FOUR_K_UHD:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
 
     if-eq v1, v2, :cond_0
 
-    .line 868
+    .line 852
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_SIZE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->FOUR_K_UHD:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
 
     invoke-virtual {p0, v1, v2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    .line 870
+    .line 854
     :cond_0
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -4761,7 +4349,7 @@
 
     invoke-virtual {p0, v1, v2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    .line 872
+    .line 856
     :cond_1
     monitor-exit v0
 
@@ -4779,78 +4367,90 @@
 
 .method public updateVideoSizeByConfiguration(Ljp/co/sony/mc/camera/configuration/IntentReader$VideoQualityConfigurations;Ljp/co/sony/mc/camera/storage/Storage;Ljp/co/sony/mc/camera/storage/Storage$StorageType;)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "configurations",
+            "storage",
+            "type"
+        }
+    .end annotation
 
-    .line 885
+    .line 869
+    iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mSettingsMapLock:Ljava/lang/Object;
+
+    monitor-enter v0
+
+    .line 870
+    :try_start_0
     invoke-static {}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->values()[Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    move-result-object v0
+    move-result-object v1
 
-    array-length v1, v0
+    array-length v2, v1
 
-    const/4 v2, 0x0
+    const/4 v3, 0x0
 
     :goto_0
-    if-ge v2, v1, :cond_2
+    if-ge v3, v2, :cond_2
 
-    aget-object v3, v0, v2
+    aget-object v4, v1, v3
 
-    .line 886
-    invoke-static {v3}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isCameraSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
+    .line 871
+    invoke-static {v4}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isCameraSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
 
-    move-result v4
+    move-result v5
 
-    if-nez v4, :cond_0
+    if-nez v5, :cond_0
 
     goto :goto_1
 
-    .line 889
+    .line 875
     :cond_0
-    iget-object v4, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mSettingsMapLock:Ljava/lang/Object;
-
-    monitor-enter v4
-
-    .line 890
-    :try_start_0
     iget-object v5, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting;->mCameraSettingsMap:Ljava/util/Map;
 
     new-instance v6, Landroid/util/Pair;
 
-    .line 891
+    .line 876
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object v7
 
-    invoke-direct {v6, v7, v3}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v6, v7, v4}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     invoke-interface {v5, v6}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v3
+    move-result-object v4
 
-    check-cast v3, Ljp/co/sony/mc/camera/setting/CameraSettings;
+    check-cast v4, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    if-eqz v3, :cond_1
+    if-eqz v4, :cond_1
 
-    .line 893
-    invoke-virtual {v3, p1, p2, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->updateVideoSizeByConfiguration(Ljp/co/sony/mc/camera/configuration/IntentReader$VideoQualityConfigurations;Ljp/co/sony/mc/camera/storage/Storage;Ljp/co/sony/mc/camera/storage/Storage$StorageType;)V
+    .line 878
+    invoke-virtual {v4, p1, p2, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->updateVideoSizeByConfiguration(Ljp/co/sony/mc/camera/configuration/IntentReader$VideoQualityConfigurations;Ljp/co/sony/mc/camera/storage/Storage;Ljp/co/sony/mc/camera/storage/Storage$StorageType;)V
 
-    .line 895
     :cond_1
-    monitor-exit v4
-
     :goto_1
-    add-int/lit8 v2, v2, 0x1
+    add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
+
+    .line 881
+    :cond_2
+    monitor-exit v0
+
+    return-void
 
     :catchall_0
     move-exception p0
 
-    monitor-exit v4
+    monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     throw p0
-
-    :cond_2
-    return-void
 .end method

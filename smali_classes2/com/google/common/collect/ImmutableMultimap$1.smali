@@ -42,6 +42,9 @@
             "TK;"
         }
     .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 .end field
 
 .field final synthetic this$0:Lcom/google/common/collect/ImmutableMultimap;
@@ -59,16 +62,24 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/ImmutableMultimap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 561
+    .line 665
     iput-object p1, p0, Lcom/google/common/collect/ImmutableMultimap$1;->this$0:Lcom/google/common/collect/ImmutableMultimap;
 
     invoke-direct {p0}, Lcom/google/common/collect/UnmodifiableIterator;-><init>()V
 
-    .line 562
+    .line 666
     iget-object p1, p1, Lcom/google/common/collect/ImmutableMultimap;->map:Lcom/google/common/collect/ImmutableMap;
 
-    .line 563
+    .line 667
     invoke-virtual {p1}, Lcom/google/common/collect/ImmutableMap;->entrySet()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object p1
@@ -81,10 +92,10 @@
 
     const/4 p1, 0x0
 
-    .line 564
+    .line 668
     iput-object p1, p0, Lcom/google/common/collect/ImmutableMultimap$1;->currentKey:Ljava/lang/Object;
 
-    .line 565
+    .line 669
     invoke-static {}, Lcom/google/common/collect/Iterators;->emptyIterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p1
@@ -99,7 +110,7 @@
 .method public hasNext()Z
     .locals 1
 
-    .line 569
+    .line 673
     iget-object v0, p0, Lcom/google/common/collect/ImmutableMultimap$1;->valueItr:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -134,7 +145,7 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .locals 0
 
-    .line 561
+    .line 665
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMultimap$1;->next()Ljava/util/Map$Entry;
 
     move-result-object p0
@@ -152,7 +163,7 @@
         }
     .end annotation
 
-    .line 574
+    .line 678
     iget-object v0, p0, Lcom/google/common/collect/ImmutableMultimap$1;->valueItr:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -161,7 +172,7 @@
 
     if-nez v0, :cond_0
 
-    .line 575
+    .line 679
     iget-object v0, p0, Lcom/google/common/collect/ImmutableMultimap$1;->asMapItr:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -170,14 +181,14 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 576
+    .line 680
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/google/common/collect/ImmutableMultimap$1;->currentKey:Ljava/lang/Object;
 
-    .line 577
+    .line 681
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v0
@@ -190,9 +201,13 @@
 
     iput-object v0, p0, Lcom/google/common/collect/ImmutableMultimap$1;->valueItr:Ljava/util/Iterator;
 
-    .line 579
+    .line 687
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/ImmutableMultimap$1;->currentKey:Ljava/lang/Object;
+
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
 
     iget-object p0, p0, Lcom/google/common/collect/ImmutableMultimap$1;->valueItr:Ljava/util/Iterator;
 

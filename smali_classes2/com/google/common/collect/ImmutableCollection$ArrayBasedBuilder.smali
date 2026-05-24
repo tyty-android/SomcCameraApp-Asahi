@@ -35,47 +35,73 @@
 # direct methods
 .method constructor <init>(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "initialCapacity"
+        }
+    .end annotation
 
-    .line 456
+    .line 507
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableCollection$Builder;-><init>()V
 
-    .line 457
+    .line 508
     const-string v0, "initialCapacity"
 
     invoke-static {p1, v0}, Lcom/google/common/collect/CollectPreconditions;->checkNonnegative(ILjava/lang/String;)I
 
-    .line 458
+    .line 509
     new-array p1, p1, [Ljava/lang/Object;
 
     iput-object p1, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->contents:[Ljava/lang/Object;
 
     const/4 p1, 0x0
 
-    .line 459
+    .line 510
     iput p1, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->size:I
 
     return-void
 .end method
 
-.method private getReadyToExpandTo(I)V
+.method private ensureRoomFor(I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "newElements"
+        }
+    .end annotation
 
-    .line 468
+    .line 519
     iget-object v0, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->contents:[Ljava/lang/Object;
 
+    .line 520
     array-length v1, v0
 
-    const/4 v2, 0x0
+    iget v2, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->size:I
 
-    if-ge v1, p1, :cond_0
+    add-int/2addr v2, p1
 
-    .line 469
-    array-length v1, v0
-
-    .line 470
-    invoke-static {v1, p1}, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->expandedCapacity(II)I
+    invoke-static {v1, v2}, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->expandedCapacity(II)I
 
     move-result p1
+
+    .line 522
+    array-length v0, v0
+
+    if-gt p1, v0, :cond_0
+
+    iget-boolean v0, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->forceCopy:Z
+
+    if-eqz v0, :cond_1
+
+    .line 523
+    :cond_0
+    iget-object v0, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->contents:[Ljava/lang/Object;
 
     invoke-static {v0, p1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
@@ -83,31 +109,12 @@
 
     iput-object p1, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->contents:[Ljava/lang/Object;
 
-    .line 471
-    iput-boolean v2, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->forceCopy:Z
+    const/4 p1, 0x0
 
-    goto :goto_0
-
-    .line 472
-    :cond_0
-    iget-boolean p1, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->forceCopy:Z
-
-    if-eqz p1, :cond_1
-
-    .line 473
-    invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, [Ljava/lang/Object;
-
-    iput-object p1, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->contents:[Ljava/lang/Object;
-
-    .line 474
-    iput-boolean v2, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->forceCopy:Z
+    .line 524
+    iput-boolean p1, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->forceCopy:Z
 
     :cond_1
-    :goto_0
     return-void
 .end method
 
@@ -115,6 +122,15 @@
 # virtual methods
 .method public add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "element"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)",
@@ -123,17 +139,15 @@
         }
     .end annotation
 
-    .line 481
+    .line 531
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 482
-    iget v0, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->size:I
+    const/4 v0, 0x1
 
-    add-int/lit8 v0, v0, 0x1
+    .line 532
+    invoke-direct {p0, v0}, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->ensureRoomFor(I)V
 
-    invoke-direct {p0, v0}, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->getReadyToExpandTo(I)V
-
-    .line 483
+    .line 533
     iget-object v0, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->contents:[Ljava/lang/Object;
 
     iget v1, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->size:I
@@ -149,8 +163,16 @@
 
 .method public bridge synthetic add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableCollection$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "element"
+        }
+    .end annotation
 
-    .line 451
+    .line 501
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;
 
     move-result-object p0
@@ -160,6 +182,15 @@
 
 .method public varargs add([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableCollection$Builder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([TE;)",
@@ -168,7 +199,7 @@
         }
     .end annotation
 
-    .line 490
+    .line 540
     array-length v0, p1
 
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->addAll([Ljava/lang/Object;I)V
@@ -177,7 +208,16 @@
 .end method
 
 .method public addAll(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableCollection$Builder;
-    .locals 3
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -188,36 +228,32 @@
         }
     .end annotation
 
-    .line 504
+    .line 562
     instance-of v0, p1, Ljava/util/Collection;
 
     if-eqz v0, :cond_0
 
-    .line 505
+    .line 563
     move-object v0, p1
 
     check-cast v0, Ljava/util/Collection;
 
-    .line 506
-    iget v1, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->size:I
-
+    .line 564
     invoke-interface {v0}, Ljava/util/Collection;->size()I
 
-    move-result v2
+    move-result v1
 
-    add-int/2addr v1, v2
+    invoke-direct {p0, v1}, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->ensureRoomFor(I)V
 
-    invoke-direct {p0, v1}, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->getReadyToExpandTo(I)V
-
-    .line 507
+    .line 565
     instance-of v1, v0, Lcom/google/common/collect/ImmutableCollection;
 
     if-eqz v1, :cond_0
 
-    .line 508
+    .line 566
     check-cast v0, Lcom/google/common/collect/ImmutableCollection;
 
-    .line 509
+    .line 567
     iget-object p1, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->contents:[Ljava/lang/Object;
 
     iget v1, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->size:I
@@ -230,7 +266,7 @@
 
     return-object p0
 
-    .line 513
+    .line 571
     :cond_0
     invoke-super {p0, p1}, Lcom/google/common/collect/ImmutableCollection$Builder;->addAll(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableCollection$Builder;
 
@@ -239,18 +275,24 @@
 
 .method final addAll([Ljava/lang/Object;I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "elements",
+            "n"
+        }
+    .end annotation
 
-    .line 495
+    .line 545
     invoke-static {p1, p2}, Lcom/google/common/collect/ObjectArrays;->checkElementsNotNull([Ljava/lang/Object;I)[Ljava/lang/Object;
 
-    .line 496
-    iget v0, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->size:I
+    .line 546
+    invoke-direct {p0, p2}, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->ensureRoomFor(I)V
 
-    add-int/2addr v0, p2
-
-    invoke-direct {p0, v0}, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->getReadyToExpandTo(I)V
-
-    .line 497
+    .line 555
     iget-object v0, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->contents:[Ljava/lang/Object;
 
     iget v1, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->size:I
@@ -259,7 +301,7 @@
 
     invoke-static {p1, v2, v0, v1, p2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 498
+    .line 556
     iget p1, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->size:I
 
     add-int/2addr p1, p2

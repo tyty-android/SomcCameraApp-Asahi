@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000>\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0003\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u000f\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u000c\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\u0008\u00c7\u0002\u0018\u00002\u00020\u0001B\t\u0008\u0003\u00a2\u0006\u0004\u0008\u0002\u0010\u0003J\u000e\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001eJ\u000e\u0010\u001f\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001eJ\u000e\u0010 \u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001eJ\u000e\u0010!\u001a\u00020\u00172\u0006\u0010\u001d\u001a\u00020\u001eJ\u000e\u0010\"\u001a\u00020\u00172\u0006\u0010\u001d\u001a\u00020\u001eJ\u000e\u0010#\u001a\u00020\u00172\u0006\u0010\u001d\u001a\u00020\u001eJ\u000e\u0010$\u001a\u00020\u00172\u0006\u0010\u001d\u001a\u00020\u001eJ\u000e\u0010%\u001a\u00020\u00172\u0006\u0010\u001d\u001a\u00020\u001eJ\u000e\u0010&\u001a\u00020\u00172\u0006\u0010\u001d\u001a\u00020\u001eJ\u000e\u0010\'\u001a\u00020\u00172\u0006\u0010\u001d\u001a\u00020\u001eJ\u000e\u0010(\u001a\u00020\u00172\u0006\u0010\u001d\u001a\u00020\u001eJ\u000e\u0010)\u001a\u00020\u00052\u0006\u0010\u001d\u001a\u00020\u001eJ\u0010\u0010*\u001a\u0004\u0018\u00010+2\u0006\u0010\u001d\u001a\u00020\u001eJ\u0018\u0010,\u001a\u00020\u00172\u0006\u0010\u001d\u001a\u00020\u001e2\u0006\u0010-\u001a\u00020\u0007H\u0002J\u0012\u0010.\u001a\u0004\u0018\u00010/2\u0006\u0010\u001d\u001a\u00020\u001eH\u0002R\u000e\u0010\u0004\u001a\u00020\u0005X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u001b\u0010\u0016\u001a\u00020\u00178FX\u0086\u0084\u0002\u00a2\u0006\u000c\n\u0004\u0008\u0019\u0010\u001a\u001a\u0004\u0008\u0016\u0010\u0018\u00a8\u00060"
+        "\u0000>\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0003\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0010\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\r\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\u0008\u00c7\u0002\u0018\u00002\u00020\u0001B\t\u0008\u0003\u00a2\u0006\u0004\u0008\u0002\u0010\u0003J\u000e\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u001fJ\u000e\u0010 \u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u001fJ\u000e\u0010!\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u001fJ\u000e\u0010\"\u001a\u00020\u00182\u0006\u0010\u001e\u001a\u00020\u001fJ\u000e\u0010#\u001a\u00020\u00182\u0006\u0010\u001e\u001a\u00020\u001fJ\u000e\u0010$\u001a\u00020\u00182\u0006\u0010\u001e\u001a\u00020\u001fJ\u000e\u0010%\u001a\u00020\u00182\u0006\u0010\u001e\u001a\u00020\u001fJ\u000e\u0010&\u001a\u00020\u00182\u0006\u0010\u001e\u001a\u00020\u001fJ\u000e\u0010\'\u001a\u00020\u00182\u0006\u0010\u001e\u001a\u00020\u001fJ\u000e\u0010(\u001a\u00020\u00182\u0006\u0010\u001e\u001a\u00020\u001fJ\u000e\u0010)\u001a\u00020\u00182\u0006\u0010\u001e\u001a\u00020\u001fJ\u000e\u0010*\u001a\u00020\u00182\u0006\u0010\u001e\u001a\u00020\u001fJ\u000e\u0010+\u001a\u00020\u00052\u0006\u0010\u001e\u001a\u00020\u001fJ\u0010\u0010,\u001a\u0004\u0018\u00010-2\u0006\u0010\u001e\u001a\u00020\u001fJ\u0018\u0010.\u001a\u00020\u00182\u0006\u0010\u001e\u001a\u00020\u001f2\u0006\u0010/\u001a\u00020\u0007H\u0002J\u0012\u00100\u001a\u0004\u0018\u0001012\u0006\u0010\u001e\u001a\u00020\u001fH\u0002R\u000e\u0010\u0004\u001a\u00020\u0005X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u0007X\u0086T\u00a2\u0006\u0002\n\u0000R\u001b\u0010\u0017\u001a\u00020\u00188FX\u0086\u0084\u0002\u00a2\u0006\u000c\n\u0004\u0008\u001a\u0010\u001b\u001a\u0004\u0008\u0017\u0010\u0019\u00a8\u00062"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/debug/DebugParameterUtils;",
@@ -31,6 +31,7 @@
         "KEY_DEBUG_FORCE_ACTIVATE_COOL_MODE",
         "KEY_DEBUG_SIMULATE_CTA_APP",
         "KEY_DEBUG_ENDURANCE_MODE_WITHOUT_REMOTE_CONTROLLER",
+        "KEY_DEBUG_SUB_PREVIEW_REPEAT_FOLD_COLLAPSE",
         "isUserBuild",
         "",
         "()Z",
@@ -50,6 +51,7 @@
         "isForceActivateCoolModeEnabled",
         "isSimulateMlcAppEnabled",
         "isEnduranceModeWithoutRemoteController",
+        "isSubPreviewRepeatFoldCollapse",
         "getVirtualRemainSize",
         "getSimulateSdCardState",
         "Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;",
@@ -104,6 +106,8 @@
 
 .field public static final KEY_DEBUG_SIMULATE_SD_CARD_ERROR:Ljava/lang/String; = "KEY_DEBUG_SIMULATE_SD_CARD_ERROR"
 
+.field public static final KEY_DEBUG_SUB_PREVIEW_REPEAT_FOLD_COLLAPSE:Ljava/lang/String; = "KEY_DEBUG_SUB_PREVIEW_REPEAT_FOLD_COLLAPSE"
+
 .field public static final SHARED_PREFERENCES_CAMERA_DEBUG:Ljava/lang/String; = "jp.co.sony.mc.camera.shared_preferences_debug"
 
 .field private static final isUserBuild$delegate:Lkotlin/Lazy;
@@ -129,7 +133,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/debug/DebugParameterUtils;->INSTANCE:Ljp/co/sony/mc/camera/debug/DebugParameterUtils;
 
-    .line 59
+    .line 62
     new-instance v0, Ljp/co/sony/mc/camera/debug/DebugParameterUtils$$ExternalSyntheticLambda0;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/debug/DebugParameterUtils$$ExternalSyntheticLambda0;-><init>()V
@@ -159,14 +163,14 @@
 .method private final getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
     .locals 1
 
-    .line 215
+    .line 228
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/debug/DebugParameterUtils;->isUserBuild()Z
 
     move-result p0
 
     if-nez p0, :cond_0
 
-    .line 216
+    .line 229
     const-string p0, "jp.co.sony.mc.camera.shared_preferences_debug"
 
     const/4 v0, 0x0
@@ -187,7 +191,7 @@
 .method private final isTrue(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 2
 
-    .line 209
+    .line 222
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/debug/DebugParameterUtils;->isUserBuild()Z
 
     move-result v0
@@ -196,7 +200,7 @@
 
     if-nez v0, :cond_1
 
-    .line 210
+    .line 223
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/debug/DebugParameterUtils;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object p0
@@ -217,7 +221,7 @@
 .method private static final isUserBuild_delegate$lambda$0()Z
     .locals 3
 
-    .line 59
+    .line 62
     sget-object v0, Landroid/os/Build;->TYPE:Ljava/lang/String;
 
     const-string v1, "TYPE"
@@ -256,7 +260,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 187
+    .line 200
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/debug/DebugParameterUtils;->isUserBuild()Z
 
     move-result v0
@@ -267,7 +271,7 @@
 
     return-object v1
 
-    .line 191
+    .line 204
     :cond_0
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/debug/DebugParameterUtils;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -275,13 +279,13 @@
 
     if-eqz p0, :cond_1
 
-    .line 192
+    .line 205
     const-string p1, "KEY_DEBUG_SIMULATE_SD_CARD_ERROR"
 
-    .line 193
+    .line 206
     const-string v0, "OFF"
 
-    .line 191
+    .line 204
     invoke-interface {p0, p1, v0}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -291,7 +295,7 @@
     :cond_1
     move-object p0, v1
 
-    .line 196
+    .line 209
     :goto_0
     const-string p1, "READ-ONLY"
 
@@ -301,12 +305,12 @@
 
     if-eqz p1, :cond_2
 
-    .line 197
+    .line 210
     sget-object v1, Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;->MEMORY_ERR_READ_ONLY:Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
 
     goto :goto_1
 
-    .line 199
+    .line 212
     :cond_2
     const-string p1, "BROKEN"
 
@@ -316,7 +320,7 @@
 
     if-eqz p0, :cond_3
 
-    .line 200
+    .line 213
     sget-object v1, Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;->MEMORY_ERR_ACCESS:Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
 
     :cond_3
@@ -331,7 +335,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 172
+    .line 185
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/debug/DebugParameterUtils;->isUserBuild()Z
 
     move-result v0
@@ -342,7 +346,7 @@
 
     return p0
 
-    .line 176
+    .line 189
     :cond_0
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/debug/DebugParameterUtils;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -354,7 +358,7 @@
 
     return p1
 
-    .line 177
+    .line 190
     :cond_1
     const-string v0, "KEY_DEBUG_SET_VIRTUAL_REMAIN_SIZE"
 
@@ -372,7 +376,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 100
+    .line 104
     const-string v0, "KEY_DEBUG_DISABLE_AUTO_POWER_OFF"
 
     invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/debug/DebugParameterUtils;->isTrue(Landroid/content/Context;Ljava/lang/String;)Z
@@ -389,7 +393,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 118
+    .line 122
     const-string v0, "KEY_DEBUG_DEVICE_STATE_TRANSITION_RESTRICTED"
 
     invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/debug/DebugParameterUtils;->isTrue(Landroid/content/Context;Ljava/lang/String;)Z
@@ -406,7 +410,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 136
+    .line 140
     const-string v0, "KEY_DEBUG_ENABLE_VIRTUAL_REMAIN_SIZE"
 
     invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/debug/DebugParameterUtils;->isTrue(Landroid/content/Context;Ljava/lang/String;)Z
@@ -423,7 +427,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 163
+    .line 167
     const-string v0, "KEY_DEBUG_ENDURANCE_MODE_WITHOUT_REMOTE_CONTROLLER"
 
     invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/debug/DebugParameterUtils;->isTrue(Landroid/content/Context;Ljava/lang/String;)Z
@@ -440,7 +444,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 145
+    .line 149
     const-string v0, "KEY_DEBUG_FORCE_ACTIVATE_COOL_MODE"
 
     invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/debug/DebugParameterUtils;->isTrue(Landroid/content/Context;Ljava/lang/String;)Z
@@ -457,7 +461,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 109
+    .line 113
     const-string v0, "KEY_DEBUG_DISABLE_LOW_POWER_MODE"
 
     invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/debug/DebugParameterUtils;->isTrue(Landroid/content/Context;Ljava/lang/String;)Z
@@ -474,7 +478,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 127
+    .line 131
     const-string v0, "KEY_DEBUG_DISABLE_MAX_ZOOM_RATIO_TO_X3_LIMITATION"
 
     invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/debug/DebugParameterUtils;->isTrue(Landroid/content/Context;Ljava/lang/String;)Z
@@ -491,8 +495,25 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 154
+    .line 158
     const-string v0, "KEY_DEBUG_SIMULATE_CTA_APP"
+
+    invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/debug/DebugParameterUtils;->isTrue(Landroid/content/Context;Ljava/lang/String;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public final isSubPreviewRepeatFoldCollapse(Landroid/content/Context;)Z
+    .locals 1
+
+    const-string v0, "context"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 176
+    const-string v0, "KEY_DEBUG_SUB_PREVIEW_REPEAT_FOLD_COLLAPSE"
 
     invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/debug/DebugParameterUtils;->isTrue(Landroid/content/Context;Ljava/lang/String;)Z
 
@@ -504,7 +525,7 @@
 .method public final isUserBuild()Z
     .locals 0
 
-    .line 59
+    .line 62
     sget-object p0, Ljp/co/sony/mc/camera/debug/DebugParameterUtils;->isUserBuild$delegate:Lkotlin/Lazy;
 
     invoke-interface {p0}, Lkotlin/Lazy;->getValue()Ljava/lang/Object;
@@ -527,7 +548,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 67
+    .line 70
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/debug/DebugParameterUtils;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     return-void
@@ -540,7 +561,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 71
+    .line 74
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/debug/DebugParameterUtils;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object p0
@@ -553,57 +574,62 @@
 
     if-eqz p0, :cond_0
 
-    .line 72
+    .line 75
     const-string p1, "KEY_DEBUG_DISABLE_AUTO_POWER_OFF"
 
     invoke-interface {p0, p1}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 73
+    .line 76
     const-string p1, "KEY_DEBUG_DISABLE_LOW_POWER_MODE"
 
     invoke-interface {p0, p1}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 74
+    .line 77
     const-string p1, "KEY_DEBUG_DEVICE_STATE_TRANSITION_RESTRICTED"
 
     invoke-interface {p0, p1}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 75
+    .line 78
     const-string p1, "KEY_DEBUG_DISABLE_MAX_ZOOM_RATIO_TO_X3_LIMITATION"
 
     invoke-interface {p0, p1}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 76
+    .line 79
     const-string p1, "KEY_DEBUG_SIMULATE_SD_CARD_ERROR"
 
     invoke-interface {p0, p1}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 77
+    .line 80
     const-string p1, "KEY_DEBUG_ENABLE_VIRTUAL_REMAIN_SIZE"
 
     invoke-interface {p0, p1}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 78
+    .line 81
     const-string p1, "KEY_DEBUG_SET_VIRTUAL_REMAIN_SIZE"
 
     invoke-interface {p0, p1}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 79
+    .line 82
     const-string p1, "KEY_DEBUG_FORCE_ACTIVATE_COOL_MODE"
 
     invoke-interface {p0, p1}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 80
+    .line 83
     const-string p1, "KEY_DEBUG_SIMULATE_CTA_APP"
 
     invoke-interface {p0, p1}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 81
+    .line 84
     const-string p1, "KEY_DEBUG_ENDURANCE_MODE_WITHOUT_REMOTE_CONTROLLER"
 
     invoke-interface {p0, p1}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 82
+    .line 85
+    const-string p1, "KEY_DEBUG_SUB_PREVIEW_REPEAT_FOLD_COLLAPSE"
+
+    invoke-interface {p0, p1}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+
+    .line 86
     invoke-interface {p0}, Landroid/content/SharedPreferences$Editor;->apply()V
 
     :cond_0
@@ -617,7 +643,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 87
+    .line 91
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/debug/DebugParameterUtils;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object p0
@@ -630,12 +656,12 @@
 
     if-eqz p0, :cond_0
 
-    .line 88
+    .line 92
     const-string p1, "KEY_DEBUG_FORCE_ACTIVATE_COOL_MODE"
 
     invoke-interface {p0, p1}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 89
+    .line 93
     invoke-interface {p0}, Landroid/content/SharedPreferences$Editor;->apply()V
 
     :cond_0

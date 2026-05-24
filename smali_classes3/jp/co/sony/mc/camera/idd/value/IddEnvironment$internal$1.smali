@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ljp/co/sony/mc/camera/idd/value/IddEnvironment;-><init>(Ljp/co/sony/mc/camera/idd/value/IddAfDoneKeepingTime;Ljava/lang/Integer;Ljava/lang/Integer;Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;Ljp/co/sony/mc/camera/idd/value/IddFaceNum;Ljp/co/sony/mc/camera/idd/value/IddFaceRectType;ZZLjp/co/sony/mc/camera/idd/value/IddManualBurst;Ljp/co/sony/mc/camera/idd/value/IddOrientation;Ljp/co/sony/mc/camera/idd/value/IddObjectTracking;Ljp/co/sony/mc/camera/idd/value/IddZoom;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;IIILjava/lang/String;Ljava/lang/String;Ljava/lang/String;IIZZZLjava/lang/String;ZZZZLjp/co/sony/mc/camera/idd/value/IddRotateLockState;ZZII)V
+    value = Ljp/co/sony/mc/camera/idd/value/IddEnvironment;-><init>(Ljp/co/sony/mc/camera/idd/value/IddAfDoneKeepingTime;Ljava/lang/Integer;Ljava/lang/Integer;Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;Ljp/co/sony/mc/camera/idd/value/IddFaceNum;Ljp/co/sony/mc/camera/idd/value/IddFaceRectType;ZZLjp/co/sony/mc/camera/idd/value/IddManualBurst;Ljp/co/sony/mc/camera/idd/value/IddOrientation;Ljp/co/sony/mc/camera/idd/value/IddObjectTracking;Ljp/co/sony/mc/camera/idd/value/IddZoom;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;IIILjava/lang/String;Ljava/lang/String;Ljava/lang/String;IIZZZLjava/lang/String;ZZZZLjp/co/sony/mc/camera/idd/value/IddRotateLockState;ZZIIZLjp/co/sony/mc/camera/idd/value/IddAiSuggestionParameters;Ljp/co/sony/mc/camera/idd/value/IddAiSuggestionParameters;ZLjp/co/sony/mc/camera/idd/value/IddAiSuggestionParameters;Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$SituationType;Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$WeatherType;Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$HumanType;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -49,12 +49,12 @@
 .method constructor <init>()V
     .locals 2
 
-    .line 53
+    .line 62
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-wide v0, 0x7fffffffffffffffL
 
-    .line 54
+    .line 63
     iput-wide v0, p0, Ljp/co/sony/mc/camera/idd/value/IddEnvironment$internal$1;->afDoneTime:J
 
     return-void
@@ -65,7 +65,7 @@
 .method public final getAfDoneTime()J
     .locals 2
 
-    .line 54
+    .line 63
     iget-wide v0, p0, Ljp/co/sony/mc/camera/idd/value/IddEnvironment$internal$1;->afDoneTime:J
 
     return-wide v0
@@ -74,7 +74,7 @@
 .method public final setAfDoneTime(J)V
     .locals 0
 
-    .line 54
+    .line 63
     iput-wide p1, p0, Ljp/co/sony/mc/camera/idd/value/IddEnvironment$internal$1;->afDoneTime:J
 
     return-void

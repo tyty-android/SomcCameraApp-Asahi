@@ -28,8 +28,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/AbstractTable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 187
+    .line 199
     iput-object p1, p0, Lcom/google/common/collect/AbstractTable$Values;->this$0:Lcom/google/common/collect/AbstractTable;
 
     invoke-direct {p0}, Ljava/util/AbstractCollection;-><init>()V
@@ -42,7 +50,7 @@
 .method public clear()V
     .locals 0
 
-    .line 200
+    .line 212
     iget-object p0, p0, Lcom/google/common/collect/AbstractTable$Values;->this$0:Lcom/google/common/collect/AbstractTable;
 
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractTable;->clear()V
@@ -52,8 +60,20 @@
 
 .method public contains(Ljava/lang/Object;)Z
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 195
+    .line 207
     iget-object p0, p0, Lcom/google/common/collect/AbstractTable$Values;->this$0:Lcom/google/common/collect/AbstractTable;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/AbstractTable;->containsValue(Ljava/lang/Object;)Z
@@ -73,7 +93,7 @@
         }
     .end annotation
 
-    .line 190
+    .line 202
     iget-object p0, p0, Lcom/google/common/collect/AbstractTable$Values;->this$0:Lcom/google/common/collect/AbstractTable;
 
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractTable;->valuesIterator()Ljava/util/Iterator;
@@ -86,7 +106,7 @@
 .method public size()I
     .locals 0
 
-    .line 205
+    .line 217
     iget-object p0, p0, Lcom/google/common/collect/AbstractTable$Values;->this$0:Lcom/google/common/collect/AbstractTable;
 
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractTable;->size()I

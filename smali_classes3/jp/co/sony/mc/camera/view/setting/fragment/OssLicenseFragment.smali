@@ -11,7 +11,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nOssLicenseFragment.kt\nKotlin\n*S Kotlin\n*F\n+ 1 OssLicenseFragment.kt\njp/co/sony/mc/camera/view/setting/fragment/OssLicenseFragment\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,70:1\n13346#2,2:71\n1872#3,3:73\n*S KotlinDebug\n*F\n+ 1 OssLicenseFragment.kt\njp/co/sony/mc/camera/view/setting/fragment/OssLicenseFragment\n*L\n27#1:71,2\n45#1:73,3\n*E\n"
+    value = "SMAP\nOssLicenseFragment.kt\nKotlin\n*S Kotlin\n*F\n+ 1 OssLicenseFragment.kt\njp/co/sony/mc/camera/view/setting/fragment/OssLicenseFragment\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,70:1\n13402#2,2:71\n1872#3,3:73\n*S KotlinDebug\n*F\n+ 1 OssLicenseFragment.kt\njp/co/sony/mc/camera/view/setting/fragment/OssLicenseFragment\n*L\n27#1:71,2\n45#1:73,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -353,7 +353,7 @@
 
     move-result-object p3
 
-    const v0, 0x7f030002
+    const v0, 0x7f030001
 
     invoke-virtual {p3, v0}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 

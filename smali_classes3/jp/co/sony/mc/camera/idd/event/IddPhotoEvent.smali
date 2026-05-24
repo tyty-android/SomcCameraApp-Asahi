@@ -15,7 +15,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nIddPhotoEvent.kt\nKotlin\n*S Kotlin\n*F\n+ 1 IddPhotoEvent.kt\njp/co/sony/mc/camera/idd/event/IddPhotoEvent\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,212:1\n1872#2,3:213\n*S KotlinDebug\n*F\n+ 1 IddPhotoEvent.kt\njp/co/sony/mc/camera/idd/event/IddPhotoEvent\n*L\n163#1:213,3\n*E\n"
+    value = "SMAP\nIddPhotoEvent.kt\nKotlin\n*S Kotlin\n*F\n+ 1 IddPhotoEvent.kt\njp/co/sony/mc/camera/idd/event/IddPhotoEvent\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,240:1\n1872#2,3:241\n*S KotlinDebug\n*F\n+ 1 IddPhotoEvent.kt\njp/co/sony/mc/camera/idd/event/IddPhotoEvent\n*L\n191#1:241,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -130,7 +130,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 128
+    .locals 138
 
     new-instance v0, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent$Context;
 
@@ -154,9 +154,9 @@
 
     move-object v1, v0
 
-    const/16 v41, 0x1f
+    const/16 v49, 0x1fff
 
-    const/16 v42, 0x0
+    const/16 v50, 0x0
 
     const/4 v2, 0x0
 
@@ -232,20 +232,13 @@
 
     const/16 v39, 0x0
 
-    const/16 v40, -0x1
+    const/16 v40, 0x0
 
-    invoke-direct/range {v1 .. v42}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;-><init>(Ljp/co/sony/mc/camera/idd/value/IddAfDoneKeepingTime;Ljava/lang/Integer;Ljava/lang/Integer;Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;Ljp/co/sony/mc/camera/idd/value/IddFaceNum;Ljp/co/sony/mc/camera/idd/value/IddFaceRectType;ZZLjp/co/sony/mc/camera/idd/value/IddManualBurst;Ljp/co/sony/mc/camera/idd/value/IddOrientation;Ljp/co/sony/mc/camera/idd/value/IddObjectTracking;Ljp/co/sony/mc/camera/idd/value/IddZoom;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;IIILjava/lang/String;Ljava/lang/String;Ljava/lang/String;IIZZZLjava/lang/String;ZZZZLjp/co/sony/mc/camera/idd/value/IddRotateLockState;ZZIIIILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    const/16 v41, 0x0
 
-    sput-object v0, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent;->env:Ljp/co/sony/mc/camera/idd/value/IddEnvironment;
+    const/16 v42, 0x0
 
-    .line 28
-    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;
-
-    move-object/from16 v43, v0
-
-    const v126, 0xffff
-
-    const/16 v127, 0x0
+    const/16 v43, 0x0
 
     const/16 v44, 0x0
 
@@ -255,13 +248,20 @@
 
     const/16 v47, 0x0
 
-    const/16 v48, 0x0
+    const/16 v48, -0x1
 
-    const/16 v49, 0x0
+    invoke-direct/range {v1 .. v50}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;-><init>(Ljp/co/sony/mc/camera/idd/value/IddAfDoneKeepingTime;Ljava/lang/Integer;Ljava/lang/Integer;Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;Ljp/co/sony/mc/camera/idd/value/IddFaceNum;Ljp/co/sony/mc/camera/idd/value/IddFaceRectType;ZZLjp/co/sony/mc/camera/idd/value/IddManualBurst;Ljp/co/sony/mc/camera/idd/value/IddOrientation;Ljp/co/sony/mc/camera/idd/value/IddObjectTracking;Ljp/co/sony/mc/camera/idd/value/IddZoom;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;IIILjava/lang/String;Ljava/lang/String;Ljava/lang/String;IIZZZLjava/lang/String;ZZZZLjp/co/sony/mc/camera/idd/value/IddRotateLockState;ZZIIZLjp/co/sony/mc/camera/idd/value/IddAiSuggestionParameters;Ljp/co/sony/mc/camera/idd/value/IddAiSuggestionParameters;ZLjp/co/sony/mc/camera/idd/value/IddAiSuggestionParameters;Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$SituationType;Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$WeatherType;Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$HumanType;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    const/16 v50, 0x0
+    sput-object v0, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent;->env:Ljp/co/sony/mc/camera/idd/value/IddEnvironment;
 
-    const/16 v51, 0x0
+    .line 28
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;
+
+    move-object/from16 v51, v0
+
+    const v136, 0x3ffff
+
+    const/16 v137, 0x0
 
     const/16 v52, 0x0
 
@@ -407,11 +407,31 @@
 
     const/16 v123, 0x0
 
-    const/16 v124, -0x1
+    const/16 v124, 0x0
 
-    const/16 v125, -0x1
+    const/16 v125, 0x0
 
-    invoke-direct/range {v43 .. v127}, Ljp/co/sony/mc/camera/idd/value/IddSetting;-><init>(Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;Ljp/co/sony/mc/camera/idd/value/IddAel;Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;Ljp/co/sony/mc/camera/idd/value/IddDisp;Ljp/co/sony/mc/camera/idd/value/IddDriveMode;Ljp/co/sony/mc/camera/idd/value/IddEv;Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;Ljp/co/sony/mc/camera/idd/value/IddFlash;Ljp/co/sony/mc/camera/idd/value/IddFocusArea;Ljp/co/sony/mc/camera/idd/value/IddFocusMode;Ljp/co/sony/mc/camera/idd/value/IddGeoTag;Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;Ljp/co/sony/mc/camera/idd/value/IddGridLine;Ljp/co/sony/mc/camera/idd/value/IddHdrDro;Ljp/co/sony/mc/camera/idd/value/IddLens;Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;Ljp/co/sony/mc/camera/idd/value/IddLock;Ljp/co/sony/mc/camera/idd/value/IddIso;Ljp/co/sony/mc/camera/idd/value/IddMetering;Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;Ljp/co/sony/mc/camera/idd/value/IddHandShutter;Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;Ljp/co/sony/mc/camera/idd/value/IddFileFormat;Ljp/co/sony/mc/camera/idd/value/IddResolution;Ljp/co/sony/mc/camera/idd/value/IddMode;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;Ljp/co/sony/mc/camera/idd/value/IddVideoSize;Ljp/co/sony/mc/camera/idd/value/IddVideoFps;Ljp/co/sony/mc/camera/idd/value/IddExtendFps;Ljp/co/sony/mc/camera/idd/value/IddBrightness;Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;Ljp/co/sony/mc/camera/idd/value/IddFastCapture;Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;Ljp/co/sony/mc/camera/idd/value/IddBtRemote;Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;Ljp/co/sony/mc/camera/idd/value/IddTemperature;Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;Ljp/co/sony/mc/camera/idd/value/IddNight;Ljp/co/sony/mc/camera/idd/value/IddPeaking;Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;Ljp/co/sony/mc/camera/idd/value/IddConnectMode;Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;Ljp/co/sony/mc/camera/idd/value/IddMacroMode;Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;Ljp/co/sony/mc/camera/idd/value/IddMic;Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;Ljp/co/sony/mc/camera/idd/value/IddZoom;Ljp/co/sony/mc/camera/idd/value/IddAfrShortcut;Ljp/co/sony/mc/camera/idd/value/IddFramingAssist;Ljp/co/sony/mc/camera/idd/value/IddFramingAssistMethod;Ljp/co/sony/mc/camera/idd/value/IddLevelMeter;Ljp/co/sony/mc/camera/idd/value/IddSaveFullScreenVideo;Ljp/co/sony/mc/camera/idd/value/IddUltraHdr;Ljp/co/sony/mc/camera/idd/value/IddVolumeDistortionCorrection;IIILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    const/16 v126, 0x0
+
+    const/16 v127, 0x0
+
+    const/16 v128, 0x0
+
+    const/16 v129, 0x0
+
+    const/16 v130, 0x0
+
+    const/16 v131, 0x0
+
+    const/16 v132, 0x0
+
+    const/16 v133, 0x0
+
+    const/16 v134, -0x1
+
+    const/16 v135, -0x1
+
+    invoke-direct/range {v51 .. v137}, Ljp/co/sony/mc/camera/idd/value/IddSetting;-><init>(Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;Ljp/co/sony/mc/camera/idd/value/IddAel;Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;Ljp/co/sony/mc/camera/idd/value/IddDisp;Ljp/co/sony/mc/camera/idd/value/IddDriveMode;Ljp/co/sony/mc/camera/idd/value/IddEv;Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;Ljp/co/sony/mc/camera/idd/value/IddFlash;Ljp/co/sony/mc/camera/idd/value/IddFocusArea;Ljp/co/sony/mc/camera/idd/value/IddFocusMode;Ljp/co/sony/mc/camera/idd/value/IddGeoTag;Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;Ljp/co/sony/mc/camera/idd/value/IddGridLine;Ljp/co/sony/mc/camera/idd/value/IddHdrDro;Ljp/co/sony/mc/camera/idd/value/IddLens;Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;Ljp/co/sony/mc/camera/idd/value/IddLock;Ljp/co/sony/mc/camera/idd/value/IddIso;Ljp/co/sony/mc/camera/idd/value/IddMetering;Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;Ljp/co/sony/mc/camera/idd/value/IddHandShutter;Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;Ljp/co/sony/mc/camera/idd/value/IddFileFormat;Ljp/co/sony/mc/camera/idd/value/IddResolution;Ljp/co/sony/mc/camera/idd/value/IddMode;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;Ljp/co/sony/mc/camera/idd/value/IddVideoSize;Ljp/co/sony/mc/camera/idd/value/IddVideoFps;Ljp/co/sony/mc/camera/idd/value/IddExtendFps;Ljp/co/sony/mc/camera/idd/value/IddBrightness;Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;Ljp/co/sony/mc/camera/idd/value/IddFastCapture;Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;Ljp/co/sony/mc/camera/idd/value/IddBtRemote;Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;Ljp/co/sony/mc/camera/idd/value/IddTemperature;Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;Ljp/co/sony/mc/camera/idd/value/IddNight;Ljp/co/sony/mc/camera/idd/value/IddPeaking;Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;Ljp/co/sony/mc/camera/idd/value/IddMacroMode;Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;Ljp/co/sony/mc/camera/idd/value/IddMic;Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;Ljp/co/sony/mc/camera/idd/value/IddZoom;Ljp/co/sony/mc/camera/idd/value/IddAfrShortcut;Ljp/co/sony/mc/camera/idd/value/IddFramingAssist;Ljp/co/sony/mc/camera/idd/value/IddFramingAssistMethod;Ljp/co/sony/mc/camera/idd/value/IddLevelMeter;Ljp/co/sony/mc/camera/idd/value/IddSaveFullScreenVideo;Ljp/co/sony/mc/camera/idd/value/IddUltraHdr;Ljp/co/sony/mc/camera/idd/value/IddVolumeDistortionCorrection;Ljp/co/sony/mc/camera/idd/value/IddAiSuggestionDetection;Ljp/co/sony/mc/camera/idd/value/IddAiSuggestionCustomExtensionDataBokeh;Ljp/co/sony/mc/camera/idd/value/IddAiSuggestionCustomExtensionDataLens;Ljp/co/sony/mc/camera/idd/value/IddDigitalTripodFraming;Ljp/co/sony/mc/camera/idd/value/IddDigitalTripodFramingIndicator;Ljp/co/sony/mc/camera/idd/value/IddDigitalTripodFramingVibration;IIILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent;->set:Ljp/co/sony/mc/camera/idd/value/IddSetting;
 
@@ -631,7 +651,7 @@
 
     if-eqz p1, :cond_8
 
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/idd/value/IddLens;->getValue()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/idd/value/IddLens;->getCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     move-result-object p1
 
@@ -715,7 +735,7 @@
 .end method
 
 .method public synthetic constructor <init>(Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddLauncher;Ljp/co/sony/mc/camera/idd/value/IddMode;Ljp/co/sony/mc/camera/idd/value/IddEnvironment;Ljp/co/sony/mc/camera/idd/value/IddSetting;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-    .locals 90
+    .locals 92
 
     and-int/lit8 v0, p6, 0x1
 
@@ -771,9 +791,9 @@
     .line 18
     sget-object v4, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent;->env:Ljp/co/sony/mc/camera/idd/value/IddEnvironment;
 
-    const/16 v44, 0x1f
+    const/16 v52, 0x1fff
 
-    const/16 v45, 0x0
+    const/16 v53, 0x0
 
     const/4 v5, 0x0
 
@@ -849,9 +869,25 @@
 
     const/16 v42, 0x0
 
-    const/16 v43, -0x1
+    const/16 v43, 0x0
 
-    invoke-static/range {v4 .. v45}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->copy$default(Ljp/co/sony/mc/camera/idd/value/IddEnvironment;Ljp/co/sony/mc/camera/idd/value/IddAfDoneKeepingTime;Ljava/lang/Integer;Ljava/lang/Integer;Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;Ljp/co/sony/mc/camera/idd/value/IddFaceNum;Ljp/co/sony/mc/camera/idd/value/IddFaceRectType;ZZLjp/co/sony/mc/camera/idd/value/IddManualBurst;Ljp/co/sony/mc/camera/idd/value/IddOrientation;Ljp/co/sony/mc/camera/idd/value/IddObjectTracking;Ljp/co/sony/mc/camera/idd/value/IddZoom;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;IIILjava/lang/String;Ljava/lang/String;Ljava/lang/String;IIZZZLjava/lang/String;ZZZZLjp/co/sony/mc/camera/idd/value/IddRotateLockState;ZZIIIILjava/lang/Object;)Ljp/co/sony/mc/camera/idd/value/IddEnvironment;
+    const/16 v44, 0x0
+
+    const/16 v45, 0x0
+
+    const/16 v46, 0x0
+
+    const/16 v47, 0x0
+
+    const/16 v48, 0x0
+
+    const/16 v49, 0x0
+
+    const/16 v50, 0x0
+
+    const/16 v51, -0x1
+
+    invoke-static/range {v4 .. v53}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->copy$default(Ljp/co/sony/mc/camera/idd/value/IddEnvironment;Ljp/co/sony/mc/camera/idd/value/IddAfDoneKeepingTime;Ljava/lang/Integer;Ljava/lang/Integer;Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;Ljp/co/sony/mc/camera/idd/value/IddFaceNum;Ljp/co/sony/mc/camera/idd/value/IddFaceRectType;ZZLjp/co/sony/mc/camera/idd/value/IddManualBurst;Ljp/co/sony/mc/camera/idd/value/IddOrientation;Ljp/co/sony/mc/camera/idd/value/IddObjectTracking;Ljp/co/sony/mc/camera/idd/value/IddZoom;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;IIILjava/lang/String;Ljava/lang/String;Ljava/lang/String;IIZZZLjava/lang/String;ZZZZLjp/co/sony/mc/camera/idd/value/IddRotateLockState;ZZIIZLjp/co/sony/mc/camera/idd/value/IddAiSuggestionParameters;Ljp/co/sony/mc/camera/idd/value/IddAiSuggestionParameters;ZLjp/co/sony/mc/camera/idd/value/IddAiSuggestionParameters;Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$SituationType;Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$WeatherType;Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$HumanType;IILjava/lang/Object;)Ljp/co/sony/mc/camera/idd/value/IddEnvironment;
 
     move-result-object v3
 
@@ -868,9 +904,9 @@
     .line 19
     sget-object v5, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent;->set:Ljp/co/sony/mc/camera/idd/value/IddSetting;
 
-    const v88, 0xffff
+    const v90, 0x3ffff
 
-    const/16 v89, 0x0
+    const/16 v91, 0x0
 
     const/4 v6, 0x0
 
@@ -1032,11 +1068,15 @@
 
     const/16 v85, 0x0
 
-    const/16 v86, -0x1
+    const/16 v86, 0x0
 
-    const/16 v87, -0x1
+    const/16 v87, 0x0
 
-    invoke-static/range {v5 .. v89}, Ljp/co/sony/mc/camera/idd/value/IddSetting;->copy$default(Ljp/co/sony/mc/camera/idd/value/IddSetting;Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;Ljp/co/sony/mc/camera/idd/value/IddAel;Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;Ljp/co/sony/mc/camera/idd/value/IddDisp;Ljp/co/sony/mc/camera/idd/value/IddDriveMode;Ljp/co/sony/mc/camera/idd/value/IddEv;Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;Ljp/co/sony/mc/camera/idd/value/IddFlash;Ljp/co/sony/mc/camera/idd/value/IddFocusArea;Ljp/co/sony/mc/camera/idd/value/IddFocusMode;Ljp/co/sony/mc/camera/idd/value/IddGeoTag;Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;Ljp/co/sony/mc/camera/idd/value/IddGridLine;Ljp/co/sony/mc/camera/idd/value/IddHdrDro;Ljp/co/sony/mc/camera/idd/value/IddLens;Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;Ljp/co/sony/mc/camera/idd/value/IddLock;Ljp/co/sony/mc/camera/idd/value/IddIso;Ljp/co/sony/mc/camera/idd/value/IddMetering;Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;Ljp/co/sony/mc/camera/idd/value/IddHandShutter;Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;Ljp/co/sony/mc/camera/idd/value/IddFileFormat;Ljp/co/sony/mc/camera/idd/value/IddResolution;Ljp/co/sony/mc/camera/idd/value/IddMode;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;Ljp/co/sony/mc/camera/idd/value/IddVideoSize;Ljp/co/sony/mc/camera/idd/value/IddVideoFps;Ljp/co/sony/mc/camera/idd/value/IddExtendFps;Ljp/co/sony/mc/camera/idd/value/IddBrightness;Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;Ljp/co/sony/mc/camera/idd/value/IddFastCapture;Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;Ljp/co/sony/mc/camera/idd/value/IddBtRemote;Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;Ljp/co/sony/mc/camera/idd/value/IddTemperature;Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;Ljp/co/sony/mc/camera/idd/value/IddNight;Ljp/co/sony/mc/camera/idd/value/IddPeaking;Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;Ljp/co/sony/mc/camera/idd/value/IddConnectMode;Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;Ljp/co/sony/mc/camera/idd/value/IddMacroMode;Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;Ljp/co/sony/mc/camera/idd/value/IddMic;Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;Ljp/co/sony/mc/camera/idd/value/IddZoom;Ljp/co/sony/mc/camera/idd/value/IddAfrShortcut;Ljp/co/sony/mc/camera/idd/value/IddFramingAssist;Ljp/co/sony/mc/camera/idd/value/IddFramingAssistMethod;Ljp/co/sony/mc/camera/idd/value/IddLevelMeter;Ljp/co/sony/mc/camera/idd/value/IddSaveFullScreenVideo;Ljp/co/sony/mc/camera/idd/value/IddUltraHdr;Ljp/co/sony/mc/camera/idd/value/IddVolumeDistortionCorrection;IIILjava/lang/Object;)Ljp/co/sony/mc/camera/idd/value/IddSetting;
+    const/16 v88, -0x1
+
+    const/16 v89, -0x1
+
+    invoke-static/range {v5 .. v91}, Ljp/co/sony/mc/camera/idd/value/IddSetting;->copy$default(Ljp/co/sony/mc/camera/idd/value/IddSetting;Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;Ljp/co/sony/mc/camera/idd/value/IddAel;Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;Ljp/co/sony/mc/camera/idd/value/IddDisp;Ljp/co/sony/mc/camera/idd/value/IddDriveMode;Ljp/co/sony/mc/camera/idd/value/IddEv;Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;Ljp/co/sony/mc/camera/idd/value/IddFlash;Ljp/co/sony/mc/camera/idd/value/IddFocusArea;Ljp/co/sony/mc/camera/idd/value/IddFocusMode;Ljp/co/sony/mc/camera/idd/value/IddGeoTag;Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;Ljp/co/sony/mc/camera/idd/value/IddGridLine;Ljp/co/sony/mc/camera/idd/value/IddHdrDro;Ljp/co/sony/mc/camera/idd/value/IddLens;Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;Ljp/co/sony/mc/camera/idd/value/IddLock;Ljp/co/sony/mc/camera/idd/value/IddIso;Ljp/co/sony/mc/camera/idd/value/IddMetering;Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;Ljp/co/sony/mc/camera/idd/value/IddHandShutter;Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;Ljp/co/sony/mc/camera/idd/value/IddFileFormat;Ljp/co/sony/mc/camera/idd/value/IddResolution;Ljp/co/sony/mc/camera/idd/value/IddMode;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;Ljp/co/sony/mc/camera/idd/value/IddVideoSize;Ljp/co/sony/mc/camera/idd/value/IddVideoFps;Ljp/co/sony/mc/camera/idd/value/IddExtendFps;Ljp/co/sony/mc/camera/idd/value/IddBrightness;Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;Ljp/co/sony/mc/camera/idd/value/IddFastCapture;Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;Ljp/co/sony/mc/camera/idd/value/IddBtRemote;Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;Ljp/co/sony/mc/camera/idd/value/IddTemperature;Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;Ljp/co/sony/mc/camera/idd/value/IddNight;Ljp/co/sony/mc/camera/idd/value/IddPeaking;Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;Ljp/co/sony/mc/camera/idd/value/IddMacroMode;Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;Ljp/co/sony/mc/camera/idd/value/IddMic;Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;Ljp/co/sony/mc/camera/idd/value/IddZoom;Ljp/co/sony/mc/camera/idd/value/IddAfrShortcut;Ljp/co/sony/mc/camera/idd/value/IddFramingAssist;Ljp/co/sony/mc/camera/idd/value/IddFramingAssistMethod;Ljp/co/sony/mc/camera/idd/value/IddLevelMeter;Ljp/co/sony/mc/camera/idd/value/IddSaveFullScreenVideo;Ljp/co/sony/mc/camera/idd/value/IddUltraHdr;Ljp/co/sony/mc/camera/idd/value/IddVolumeDistortionCorrection;Ljp/co/sony/mc/camera/idd/value/IddAiSuggestionDetection;Ljp/co/sony/mc/camera/idd/value/IddAiSuggestionCustomExtensionDataBokeh;Ljp/co/sony/mc/camera/idd/value/IddAiSuggestionCustomExtensionDataLens;Ljp/co/sony/mc/camera/idd/value/IddDigitalTripodFraming;Ljp/co/sony/mc/camera/idd/value/IddDigitalTripodFramingIndicator;Ljp/co/sony/mc/camera/idd/value/IddDigitalTripodFramingVibration;IIILjava/lang/Object;)Ljp/co/sony/mc/camera/idd/value/IddSetting;
 
     move-result-object v4
 
@@ -1166,7 +1206,7 @@
 .method private final getCameraCaptureTrigger(Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$CaptureTrigger;
     .locals 0
 
-    .line 180
+    .line 208
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent$WhenMappings;->$EnumSwitchMapping$0:[I
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;->ordinal()I
@@ -1191,30 +1231,30 @@
 
     if-eq p0, p1, :cond_0
 
-    .line 185
+    .line 213
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$CaptureTrigger;->OTHER:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$CaptureTrigger;
 
     goto :goto_0
 
-    .line 184
+    .line 212
     :cond_0
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$CaptureTrigger;->CAMERA_KEY:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$CaptureTrigger;
 
     goto :goto_0
 
-    .line 183
+    .line 211
     :cond_1
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$CaptureTrigger;->SW_KEY:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$CaptureTrigger;
 
     goto :goto_0
 
-    .line 182
+    .line 210
     :cond_2
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$CaptureTrigger;->SELF_TIMER:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$CaptureTrigger;
 
     goto :goto_0
 
-    .line 181
+    .line 209
     :cond_3
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$CaptureTrigger;->VOLUME_KEY:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$CaptureTrigger;
 
@@ -1231,7 +1271,7 @@
 
     goto :goto_0
 
-    .line 189
+    .line 217
     :cond_0
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent$WhenMappings;->$EnumSwitchMapping$1:[I
 
@@ -1254,24 +1294,24 @@
 
     if-eq p0, p1, :cond_1
 
-    .line 193
+    .line 221
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$FocusRectType;->HUMAN_FACE:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$FocusRectType;
 
     goto :goto_1
 
-    .line 192
+    .line 220
     :cond_1
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$FocusRectType;->ANIMAL_BODY:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$FocusRectType;
 
     goto :goto_1
 
-    .line 191
+    .line 219
     :cond_2
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$FocusRectType;->ANIMAL_FACE:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$FocusRectType;
 
     goto :goto_1
 
-    .line 190
+    .line 218
     :cond_3
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$FocusRectType;->HUMAN_BODY:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$FocusRectType;
 
@@ -1282,7 +1322,7 @@
 .method private final getCameraObjectTracking(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$ObjectTracking;
     .locals 0
 
-    .line 207
+    .line 235
     const-string p0, "OBJECT_TRACKING_TARGET_ON"
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1291,12 +1331,12 @@
 
     if-eqz p0, :cond_0
 
-    .line 208
+    .line 236
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$ObjectTracking;->OBJECT_TRACKING_TARGET_ON:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$ObjectTracking;
 
     goto :goto_0
 
-    .line 209
+    .line 237
     :cond_0
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$ObjectTracking;->OBJECT_TRACKING_OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$ObjectTracking;
 
@@ -1307,7 +1347,7 @@
 .method private final getCameraOrientation(Ljp/co/sony/mc/camera/idd/value/IddOrientation;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Orientation;
     .locals 0
 
-    .line 198
+    .line 226
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent$WhenMappings;->$EnumSwitchMapping$2:[I
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/idd/value/IddOrientation;->ordinal()I
@@ -1328,24 +1368,24 @@
 
     if-eq p0, p1, :cond_0
 
-    .line 202
+    .line 230
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Orientation;->ORIENTATION_0:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Orientation;
 
     goto :goto_0
 
-    .line 201
+    .line 229
     :cond_0
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Orientation;->ORIENTATION_270:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Orientation;
 
     goto :goto_0
 
-    .line 200
+    .line 228
     :cond_1
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Orientation;->ORIENTATION_180:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Orientation;
 
     goto :goto_0
 
-    .line 199
+    .line 227
     :cond_2
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Orientation;->ORIENTATION_90:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Orientation;
 
@@ -1356,7 +1396,7 @@
 .method private final getCameraShutterSpeed(I)Ljava/lang/String;
     .locals 8
 
-    .line 159
+    .line 187
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->values()[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
     move-result-object p0
@@ -1367,7 +1407,7 @@
 
     const/4 v0, 0x0
 
-    .line 160
+    .line 188
     invoke-interface {p0, v0}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
     int-to-long v1, p1
@@ -1376,12 +1416,12 @@
 
     mul-long/2addr v1, v3
 
-    .line 163
+    .line 191
     move-object p1, p0
 
     check-cast p1, Ljava/lang/Iterable;
 
-    .line 214
+    .line 242
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -1406,7 +1446,7 @@
     :cond_0
     check-cast v3, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 164
+    .line 192
     invoke-virtual {v3}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getShutterSpeedInNanos()J
 
     move-result-wide v5
@@ -1415,12 +1455,12 @@
 
     if-lez v5, :cond_3
 
-    .line 165
+    .line 193
     sget-object p1, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->N30:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
     if-ne v3, p1, :cond_1
 
-    .line 166
+    .line 194
     const-string p0, "N30"
 
     goto :goto_1
@@ -1428,7 +1468,7 @@
     :cond_1
     add-int/lit8 v0, v0, -0x1
 
-    .line 167
+    .line 195
     invoke-interface {p0, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
@@ -1441,7 +1481,7 @@
 
     sub-long/2addr v4, v1
 
-    .line 168
+    .line 196
     invoke-virtual {v3}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getShutterSpeedInNanos()J
 
     move-result-wide v6
@@ -1452,7 +1492,7 @@
 
     if-gtz p1, :cond_2
 
-    .line 170
+    .line 198
     invoke-interface {p0, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p0
@@ -1465,7 +1505,7 @@
 
     goto :goto_1
 
-    .line 172
+    .line 200
     :cond_2
     invoke-virtual {v3}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->name()Ljava/lang/String;
 
@@ -1479,7 +1519,7 @@
 
     goto :goto_0
 
-    .line 176
+    .line 204
     :cond_4
     const-string p0, "D8000"
 
@@ -1785,17 +1825,151 @@
 
     .line 152
     :cond_9
+    sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent;->capturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isBasicPhoto()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_d
+
+    .line 153
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->getAiSuggestionSelected()Z
+
+    move-result p0
+
+    invoke-virtual {v1, p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;->setAiSuggestionSelected(Z)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;
+
+    .line 154
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->getAiSuggestionParameters()Ljp/co/sony/mc/camera/idd/value/IddAiSuggestionParameters;
+
+    move-result-object p0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    const-string v2, ""
+
+    if-eqz p0, :cond_a
+
+    .line 156
+    :try_start_1
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->getAiSuggestionParameters()Ljp/co/sony/mc/camera/idd/value/IddAiSuggestionParameters;
+
+    move-result-object p0
+
+    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p0
+
+    .line 155
+    invoke-virtual {v1, p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;->setAiSuggestionParameters(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;
+
+    goto :goto_0
+
+    .line 159
+    :cond_a
+    invoke-virtual {v1, v2}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;->setAiSuggestionParameters(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;
+
+    .line 161
+    :goto_0
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->getModifiedAiSuggestionParameters()Ljp/co/sony/mc/camera/idd/value/IddAiSuggestionParameters;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_b
+
+    .line 163
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->getModifiedAiSuggestionParameters()Ljp/co/sony/mc/camera/idd/value/IddAiSuggestionParameters;
+
+    move-result-object p0
+
+    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p0
+
+    .line 162
+    invoke-virtual {v1, p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;->setModifiedAiSuggestionParameters(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;
+
+    goto :goto_1
+
+    .line 166
+    :cond_b
+    invoke-virtual {v1, v2}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;->setModifiedAiSuggestionParameters(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;
+
+    .line 168
+    :goto_1
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->getBoxSelected()Z
+
+    move-result p0
+
+    invoke-virtual {v1, p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;->setBoxSelected(Z)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;
+
+    .line 169
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->getBoxParameters()Ljp/co/sony/mc/camera/idd/value/IddAiSuggestionParameters;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_c
+
+    .line 170
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->getBoxParameters()Ljp/co/sony/mc/camera/idd/value/IddAiSuggestionParameters;
+
+    move-result-object p0
+
+    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v1, p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;->setBoxParameters(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;
+
+    goto :goto_2
+
+    .line 172
+    :cond_c
+    invoke-virtual {v1, v2}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;->setBoxParameters(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;
+
+    .line 174
+    :goto_2
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->getAiSuggestionSituationType()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$SituationType;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_d
+
+    .line 175
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->getAiSuggestionSituationType()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$SituationType;
+
+    move-result-object p0
+
+    invoke-virtual {v1, p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;->setAiSuggestionSituationType(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$SituationType;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;
+
+    .line 176
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->getAiSuggestionWeatherType()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$WeatherType;
+
+    move-result-object p0
+
+    invoke-virtual {v1, p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;->setAiSuggestionWeatherType(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$WeatherType;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;
+
+    .line 177
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->getAiSuggestionHumanType()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$HumanType;
+
+    move-result-object p0
+
+    invoke-virtual {v1, p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;->setAiSuggestionHumanType(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$HumanType;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;
+
+    .line 180
+    :cond_d
     invoke-virtual {v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;->build()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment;
 
     move-result-object p0
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
     return-object p0
 
-    .line 154
+    .line 182
     :catch_0
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppEnvironment$Builder;
 
@@ -1983,55 +2157,11 @@
     return v0
 .end method
 
-.method public getCameraAppSetting(Ljp/co/sony/mc/camera/idd/value/IddSetting;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getCameraAppSetting(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljp/co/sony/mc/camera/idd/value/IddSetting;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getCameraMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
-    .locals 0
-
-    .line 14
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getCameraMode(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
 .method public final getEnvironment()Ljp/co/sony/mc/camera/idd/value/IddEnvironment;
     .locals 0
 
     .line 18
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent;->environment:Ljp/co/sony/mc/camera/idd/value/IddEnvironment;
-
-    return-object p0
-.end method
-
-.method public getEventData(Ljava/lang/String;)Ljava/lang/String;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getEventData(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getLaunchWithCameraKey(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LaunchWithCameraKey;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getLaunchWithCameraKey(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LaunchWithCameraKey;
-
-    move-result-object p0
 
     return-object p0
 .end method
@@ -2050,138 +2180,6 @@
 
     .line 17
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent;->mode:Ljp/co/sony/mc/camera/idd/value/IddMode;
-
-    return-object p0
-.end method
-
-.method public getProBrightness(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljava/lang/String;)I
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProBrightness(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljava/lang/String;)I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public getProColor(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljava/lang/String;)I
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProColor(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljava/lang/String;)I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public getProbeAspectRatio(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$AspectRatio;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeAspectRatio(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$AspectRatio;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeAudioSignals(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$AudioSignals;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeAudioSignals(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$AudioSignals;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeColorToneProfile(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeColorToneProfile(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeCommonAutoOff(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$AutoOff;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeCommonAutoOff(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$AutoOff;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeCommonOnOff(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeCommonOnOff(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeCommonOnOff(Z)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeCommonOnOff(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Z)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeConnectMode(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ConnectTo;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeConnectMode(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ConnectTo;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeDestinationToSave(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Storage;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeDestinationToSave(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Storage;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeDisp(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Disp;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeDisp(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Disp;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeDriveMode(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DriveMode;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeDriveMode(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DriveMode;
-
-    move-result-object p0
 
     return-object p0
 .end method
@@ -2304,17 +2302,6 @@
     return-object p0
 .end method
 
-.method public getProbeEv(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Ev;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeEv(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Ev;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
 .method public bridge synthetic getProbeEvent()Lcom/google/protobuf/GeneratedMessageLite;
     .locals 0
 
@@ -2402,380 +2389,6 @@
     return-object p0
 .end method
 
-.method public getProbeFaceDetectionEyeAf(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FaceEyeAf;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeFaceDetectionEyeAf(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FaceEyeAf;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeFileFormat(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FileFormat;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeFileFormat(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FileFormat;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeFlash(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Flash;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeFlash(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Flash;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeFocusArea(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusArea;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeFocusArea(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusArea;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeFocusFrameColor(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusAreaColor;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeFocusFrameColor(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusAreaColor;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeFocusMode(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusMode;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeFocusMode(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusMode;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeFps(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Fps;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeFps(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Fps;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeFramingAssistMethod(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FramingAssistMethod;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeFramingAssistMethod(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FramingAssistMethod;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeHdrDro(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HdrDro;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeHdrDro(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HdrDro;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeHdrFormat(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HdrSdr;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeHdrFormat(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HdrSdr;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeHdrQuality(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DynamicRange;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeHdrQuality(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DynamicRange;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeIso(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeIso(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeLaunchBy()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$LaunchBy;
-    .locals 0
-
-    .line 14
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeLaunchBy(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$LaunchBy;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeLens(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Lens;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeLens(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Lens;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeLensCorrection(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LensCorrection;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeLensCorrection(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LensCorrection;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeLevelMeter(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LevelMeter;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeLevelMeter(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LevelMeter;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeManualFocus(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ManualFocus;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeManualFocus(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ManualFocus;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeMetering(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$MeteringMode;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeMetering(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$MeteringMode;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeMic(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Mic;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeMic(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Mic;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeNetworkUsage(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$NetworkUsage;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeNetworkUsage(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$NetworkUsage;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbePeakingColor(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$PeakingColor;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbePeakingColor(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$PeakingColor;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeResolution(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Resolution;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeResolution(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Resolution;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeSelfTimer(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$SelfTimer;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeSelfTimer(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$SelfTimer;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeShutterSpeed(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ShutterSpeed;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeShutterSpeed(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ShutterSpeed;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeStreamVideoQuality(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$StreamVideoQuality;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeStreamVideoQuality(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$StreamVideoQuality;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeStreamingMute(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$StreamMute;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeStreamingMute(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$StreamMute;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeSuperResolutionZoom(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DigitalZoom;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeSuperResolutionZoom(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DigitalZoom;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeTalkBack()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
-    .locals 0
-
-    .line 14
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeTalkBack(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeTouchToAdjust(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$TouchToAdjust;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeTouchToAdjust(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$TouchToAdjust;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeVideoStabilizer(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Stabilization;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeVideoStabilizer(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Stabilization;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeVolumeDistortionCorrection(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$VolumeDistortionCorrection;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeVolumeDistortionCorrection(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$VolumeDistortionCorrection;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeVolumeKey(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$VolumeKeyAs;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeVolumeKey(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$VolumeKeyAs;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeWhiteBalance(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeWhiteBalance(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeWindFilter(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeWindFilter(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
 .method public final getSetting()Ljp/co/sony/mc/camera/idd/value/IddSetting;
     .locals 0
 
@@ -2844,213 +2457,6 @@
     add-int/2addr v0, p0
 
     return v0
-.end method
-
-.method public isAutoFraming()Z
-    .locals 0
-
-    .line 14
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isAutoFraming(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isBokeh()Z
-    .locals 0
-
-    .line 14
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isBokeh(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isGimbal()Z
-    .locals 0
-
-    .line 14
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isGimbal(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isManualControlSupported()Z
-    .locals 0
-
-    .line 14
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isManualControlSupported(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isOneShot()Z
-    .locals 0
-
-    .line 14
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isOneShot(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isPhotoBasic()Z
-    .locals 0
-
-    .line 14
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isPhotoBasic(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isProMode()Z
-    .locals 0
-
-    .line 14
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isProMode(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isProPhoto()Z
-    .locals 0
-
-    .line 14
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isProPhoto(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isProVideo()Z
-    .locals 0
-
-    .line 14
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isProVideo(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isSendComputationalPhoto()Z
-    .locals 0
-
-    .line 14
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isSendComputationalPhoto(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isSendFaceEyeAf()Z
-    .locals 0
-
-    .line 14
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isSendFaceEyeAf(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isSendIsoValue()Z
-    .locals 0
-
-    .line 14
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isSendIsoValue(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isSendManualFocus(Ljava/lang/String;Ljava/lang/String;)Z
-    .locals 0
-
-    .line 14
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isSendManualFocus(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;Ljava/lang/String;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isSendMic()Z
-    .locals 0
-
-    .line 14
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isSendMic(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isSendTouchTracking()Z
-    .locals 0
-
-    .line 14
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isSendTouchTracking(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isSendUltraHdr()Z
-    .locals 0
-
-    .line 14
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isSendUltraHdr(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isStreaming()Z
-    .locals 0
-
-    .line 14
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isStreaming(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isVideoBasic()Z
-    .locals 0
-
-    .line 14
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isVideoBasic(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public send()V
-    .locals 0
-
-    .line 14
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->send(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)V
-
-    return-void
 .end method
 
 .method public final setEnvironment(Ljp/co/sony/mc/camera/idd/value/IddEnvironment;)V

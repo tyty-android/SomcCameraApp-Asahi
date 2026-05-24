@@ -24,11 +24,19 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "controller"
+        }
+    .end annotation
 
-    .line 7970
+    .line 6854
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7971
+    .line 6855
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$FallbackStateListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     return-void
@@ -38,8 +46,18 @@
 # virtual methods
 .method public onFallbackStateChanged(ZZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fallbackable",
+            "fallbackEnabled"
+        }
+    .end annotation
 
-    .line 7976
+    .line 6860
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$FallbackStateListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;

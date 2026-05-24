@@ -28,8 +28,16 @@
 # direct methods
 .method constructor <init>(Ljava/lang/Iterable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "val$iterable"
+        }
+    .end annotation
 
-    .line 952
+    .line 1008
     iput-object p1, p0, Lcom/google/common/collect/Iterables$8;->val$iterable:Ljava/lang/Iterable;
 
     invoke-direct {p0}, Lcom/google/common/collect/FluentIterable;-><init>()V
@@ -49,14 +57,14 @@
         }
     .end annotation
 
-    .line 955
+    .line 1011
     iget-object v0, p0, Lcom/google/common/collect/Iterables$8;->val$iterable:Ljava/lang/Iterable;
 
     instance-of v1, v0, Ljava/util/Queue;
 
     if-eqz v1, :cond_0
 
-    .line 956
+    .line 1012
     new-instance v0, Lcom/google/common/collect/ConsumingQueueIterator;
 
     iget-object p0, p0, Lcom/google/common/collect/Iterables$8;->val$iterable:Ljava/lang/Iterable;
@@ -67,7 +75,7 @@
 
     goto :goto_0
 
-    .line 957
+    .line 1013
     :cond_0
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -84,7 +92,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 962
+    .line 1018
     const-string p0, "Iterables.consumingIterable(...)"
 
     return-object p0

@@ -30,8 +30,18 @@
 # direct methods
 .method constructor <init>(Ljava/util/Map$Entry;Lcom/google/common/collect/Maps$EntryTransformer;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x1010
+        }
+        names = {
+            "val$entry",
+            "val$transformer"
+        }
+    .end annotation
 
-    .line 1854
+    .line 2095
     iput-object p1, p0, Lcom/google/common/collect/Maps$12;->val$entry:Ljava/util/Map$Entry;
 
     iput-object p2, p0, Lcom/google/common/collect/Maps$12;->val$transformer:Lcom/google/common/collect/Maps$EntryTransformer;
@@ -45,13 +55,16 @@
 # virtual methods
 .method public getKey()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TK;"
         }
     .end annotation
 
-    .line 1857
+    .line 2099
     iget-object p0, p0, Lcom/google/common/collect/Maps$12;->val$entry:Ljava/util/Map$Entry;
 
     invoke-interface {p0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
@@ -63,13 +76,16 @@
 
 .method public getValue()Ljava/lang/Object;
     .locals 2
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TV2;"
         }
     .end annotation
 
-    .line 1862
+    .line 2105
     iget-object v0, p0, Lcom/google/common/collect/Maps$12;->val$transformer:Lcom/google/common/collect/Maps$EntryTransformer;
 
     iget-object v1, p0, Lcom/google/common/collect/Maps$12;->val$entry:Ljava/util/Map$Entry;

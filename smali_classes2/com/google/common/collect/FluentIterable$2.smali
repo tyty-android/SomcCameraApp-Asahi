@@ -28,8 +28,16 @@
 # direct methods
 .method constructor <init>(Ljava/lang/Iterable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "val$inputs"
+        }
+    .end annotation
 
-    .line 277
+    .line 280
     iput-object p1, p0, Lcom/google/common/collect/FluentIterable$2;->val$inputs:Ljava/lang/Iterable;
 
     invoke-direct {p0}, Lcom/google/common/collect/FluentIterable;-><init>()V
@@ -49,16 +57,16 @@
         }
     .end annotation
 
-    .line 280
+    .line 283
     iget-object p0, p0, Lcom/google/common/collect/FluentIterable$2;->val$inputs:Ljava/lang/Iterable;
 
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
 
-    invoke-static {}, Lcom/google/common/collect/Iterables;->toIterator()Lcom/google/common/base/Function;
+    new-instance v0, Lcom/google/common/collect/FluentIterable$2$$ExternalSyntheticLambda0;
 
-    move-result-object v0
+    invoke-direct {v0}, Lcom/google/common/collect/FluentIterable$2$$ExternalSyntheticLambda0;-><init>()V
 
     invoke-static {p0, v0}, Lcom/google/common/collect/Iterators;->transform(Ljava/util/Iterator;Lcom/google/common/base/Function;)Ljava/util/Iterator;
 

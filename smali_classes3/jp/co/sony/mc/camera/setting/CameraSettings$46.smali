@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 977
+    .line 1208
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,6 +31,17 @@
 # virtual methods
 .method public getValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -42,11 +53,11 @@
         }
     .end annotation
 
-    .line 981
+    .line 1212
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 982
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->getSemiAutoMode()Ljp/co/sony/mc/camera/configuration/parameters/SemiAutoMode;
+    .line 1213
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetWbExtensionData(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;
 
     move-result-object p0
 

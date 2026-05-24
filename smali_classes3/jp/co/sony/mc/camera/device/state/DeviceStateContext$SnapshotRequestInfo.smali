@@ -35,23 +35,35 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;ZI)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "isManualFocus",
+            "captureTemplate"
+        }
+    .end annotation
 
-    .line 1221
+    .line 1359
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1222
+    .line 1360
     new-instance p1, Ljava/util/LinkedList;
 
     invoke-direct {p1}, Ljava/util/LinkedList;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;->snapshotRequestQueue:Ljava/util/LinkedList;
 
-    .line 1223
+    .line 1361
     iput-boolean p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;->isManualFocus:Z
 
-    .line 1224
+    .line 1362
     iput p3, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;->captureTemplate:I
 
     return-void
@@ -69,8 +81,16 @@
 # virtual methods
 .method addSnapshotRequest(Ljp/co/sony/mc/camera/device/SnapshotRequest;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "request"
+        }
+    .end annotation
 
-    .line 1233
+    .line 1371
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;->snapshotRequestQueue:Ljava/util/LinkedList;
 
     invoke-virtual {p0, p1}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
@@ -81,7 +101,7 @@
 .method clearSnapshotRequestQueue()V
     .locals 0
 
-    .line 1240
+    .line 1378
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;->snapshotRequestQueue:Ljava/util/LinkedList;
 
     invoke-virtual {p0}, Ljava/util/LinkedList;->clear()V
@@ -92,7 +112,7 @@
 .method hasSnapshotRequest()Z
     .locals 0
 
-    .line 1256
+    .line 1394
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;->snapshotRequestQueue:Ljava/util/LinkedList;
 
     invoke-virtual {p0}, Ljava/util/LinkedList;->isEmpty()Z
@@ -109,7 +129,7 @@
 
     const/4 v0, 0x1
 
-    .line 1247
+    .line 1385
     new-array v0, v0, [Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -138,7 +158,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
 
-    .line 1248
+    .line 1386
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;->snapshotRequestQueue:Ljava/util/LinkedList;
 
     invoke-virtual {p0}, Ljava/util/LinkedList;->poll()Ljava/lang/Object;

@@ -20,6 +20,18 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;Ljp/co/sony/mc/camera/storage/RequestFactory$RequestBuilder;Ljp/co/sony/mc/camera/storage/Storage$OnStoreCompletedListener;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x10
+        }
+        names = {
+            "status",
+            "builder",
+            "listener"
+        }
+    .end annotation
 
     .line 45
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -54,6 +66,14 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/storage/SavingRequest;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "request"
+        }
+    .end annotation
 
     .line 57
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -98,6 +118,16 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/storage/SavingRequest;I)V
     .locals 18
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "orig",
+            "orientation"
+        }
+    .end annotation
 
     move-object/from16 v0, p0
 
@@ -200,6 +230,14 @@
 
 .method private addCallback(Ljp/co/sony/mc/camera/storage/Storage$OnStoreCompletedListener;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cb"
+        }
+    .end annotation
 
     .line 92
     iget-object v0, p0, Ljp/co/sony/mc/camera/storage/SavingRequest;->common:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
@@ -368,6 +406,14 @@
 
 .method notifyStoreResult(Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 
     .line 150
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -452,6 +498,14 @@
 
 .method public setOneShot(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "oneShot"
+        }
+    .end annotation
 
     .line 137
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/storage/SavingRequest;->mIsOneShot:Z

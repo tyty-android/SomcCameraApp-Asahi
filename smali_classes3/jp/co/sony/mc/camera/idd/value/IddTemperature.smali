@@ -52,7 +52,7 @@
 .method public constructor <init>(I)V
     .locals 0
 
-    .line 499
+    .line 500
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Ljp/co/sony/mc/camera/idd/value/IddTemperature;->value:I
@@ -65,7 +65,7 @@
 .method public final getValue()I
     .locals 0
 
-    .line 499
+    .line 500
     iget p0, p0, Ljp/co/sony/mc/camera/idd/value/IddTemperature;->value:I
 
     return p0
@@ -74,7 +74,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 500
+    .line 501
     iget p0, p0, Ljp/co/sony/mc/camera/idd/value/IddTemperature;->value:I
 
     invoke-static {p0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;

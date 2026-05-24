@@ -208,20 +208,6 @@
     .catch Ljava/lang/NoSuchFieldError; {:try_start_b .. :try_end_b} :catch_b
 
     :catch_b
-    :try_start_c
-    sget-object v1, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;->LIVE_STREAMING:Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0xd
-
-    aput v2, v0, v1
-    :try_end_c
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_c .. :try_end_c} :catch_c
-
-    :catch_c
     sput-object v0, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode$WhenMappings;->$EnumSwitchMapping$0:[I
 
     return-void

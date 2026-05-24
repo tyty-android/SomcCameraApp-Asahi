@@ -60,6 +60,14 @@
 # virtual methods
 .method notifyBatteryLevelChanged(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "level"
+        }
+    .end annotation
 
     .line 49
     iput p1, p0, Ljp/co/sony/mc/camera/SystemEventNotifierImpl;->mLastBatteryLevel:I
@@ -95,6 +103,14 @@
 
 .method notifyBatteryStateChanged(Ljp/co/sony/mc/camera/SystemEventNotifier$BatteryStatus;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "status"
+        }
+    .end annotation
 
     .line 42
     iput-object p1, p0, Ljp/co/sony/mc/camera/SystemEventNotifierImpl;->mLastBatteryStatus:Ljp/co/sony/mc/camera/SystemEventNotifier$BatteryStatus;
@@ -130,6 +146,14 @@
 
 .method notifyPowerConnectionStateChanged(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isConnected"
+        }
+    .end annotation
 
     .line 63
     iget-object p0, p0, Ljp/co/sony/mc/camera/SystemEventNotifierImpl;->mSystemEventListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
@@ -194,6 +218,14 @@
 
 .method notifyThermalStateChanged(Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "status"
+        }
+    .end annotation
 
     .line 56
     iput-object p1, p0, Ljp/co/sony/mc/camera/SystemEventNotifierImpl;->mLastThermalStatus:Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;
@@ -229,6 +261,14 @@
 
 .method public registerSystemEventListener(Ljp/co/sony/mc/camera/SystemEventNotifier$SystemEventListener;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 29
     iget-object v0, p0, Ljp/co/sony/mc/camera/SystemEventNotifierImpl;->mSystemEventListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
@@ -276,6 +316,14 @@
 
 .method public unregisterSystemEventListener(Ljp/co/sony/mc/camera/SystemEventNotifier$SystemEventListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 38
     iget-object p0, p0, Ljp/co/sony/mc/camera/SystemEventNotifierImpl;->mSystemEventListeners:Ljava/util/concurrent/CopyOnWriteArrayList;

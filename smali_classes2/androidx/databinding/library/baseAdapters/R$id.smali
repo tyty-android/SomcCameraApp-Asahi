@@ -14,11 +14,11 @@
 
 
 # static fields
-.field public static final onAttachStateChangeListener:I = 0x7f090349
+.field public static final onAttachStateChangeListener:I = 0x7f09034a
 
-.field public static final onDateChanged:I = 0x7f09034a
+.field public static final onDateChanged:I = 0x7f09034b
 
-.field public static final textWatcher:I = 0x7f090497
+.field public static final textWatcher:I = 0x7f090498
 
 
 # direct methods

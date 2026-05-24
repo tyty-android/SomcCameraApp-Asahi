@@ -22,10 +22,10 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 413
+    .line 482
     invoke-direct {p0}, Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;-><init>()V
 
-    .line 414
+    .line 483
     invoke-static {}, Lcom/google/common/base/Stopwatch;->createStarted()Lcom/google/common/base/Stopwatch;
 
     move-result-object v0
@@ -40,7 +40,7 @@
 .method protected readMicros()J
     .locals 2
 
-    .line 418
+    .line 487
     iget-object p0, p0, Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch$1;->stopwatch:Lcom/google/common/base/Stopwatch;
 
     sget-object v0, Ljava/util/concurrent/TimeUnit;->MICROSECONDS:Ljava/util/concurrent/TimeUnit;
@@ -54,6 +54,14 @@
 
 .method protected sleepMicrosUninterruptibly(J)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "micros"
+        }
+    .end annotation
 
     const-wide/16 v0, 0x0
 
@@ -61,7 +69,7 @@
 
     if-lez p0, :cond_0
 
-    .line 424
+    .line 493
     sget-object p0, Ljava/util/concurrent/TimeUnit;->MICROSECONDS:Ljava/util/concurrent/TimeUnit;
 
     invoke-static {p1, p2, p0}, Lcom/google/common/util/concurrent/Uninterruptibles;->sleepUninterruptibly(JLjava/util/concurrent/TimeUnit;)V

@@ -30,7 +30,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 100
+    .line 98
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -40,8 +40,18 @@
 # virtual methods
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "t1",
+            "t2"
+        }
+    .end annotation
 
-    .line 100
+    .line 98
     check-cast p1, Ljp/co/sony/mc/camera/view/hint/HintTextContent;
 
     check-cast p2, Ljp/co/sony/mc/camera/view/hint/HintTextContent;
@@ -55,8 +65,18 @@
 
 .method public compare(Ljp/co/sony/mc/camera/view/hint/HintTextContent;Ljp/co/sony/mc/camera/view/hint/HintTextContent;)I
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "t1",
+            "t2"
+        }
+    .end annotation
 
-    .line 103
+    .line 101
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;->getPriority()Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;
 
     move-result-object p0
@@ -71,14 +91,14 @@
 
     if-nez p0, :cond_1
 
-    .line 104
+    .line 102
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 105
+    .line 103
     invoke-static {}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$BlockingFiloContentQueue;->-$$Nest$sfgetsSequentialIndexMap()Ljava/util/Map;
 
     move-result-object p0
@@ -99,7 +119,7 @@
 
     move-result-wide p0
 
-    .line 106
+    .line 104
     invoke-static {}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$BlockingFiloContentQueue;->-$$Nest$sfgetsSequentialIndexMap()Ljava/util/Map;
 
     move-result-object v2

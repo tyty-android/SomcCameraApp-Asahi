@@ -26,7 +26,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 586
+    .line 588
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,17 +34,29 @@
 
 .method public constructor <init>([III)V
     .locals 0
-
-    .line 589
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 590
-    iput-object p1, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$HistogramResult;->mHistogram:[I
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "histogram",
+            "histogramBucketCount",
+            "maxHistogramCount"
+        }
+    .end annotation
 
     .line 591
-    iput p2, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$HistogramResult;->mHistogramBucketCount:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 592
+    iput-object p1, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$HistogramResult;->mHistogram:[I
+
+    .line 593
+    iput p2, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$HistogramResult;->mHistogramBucketCount:I
+
+    .line 594
     iput p3, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$HistogramResult;->mMaxHistogramCount:I
 
     return-void
@@ -55,7 +67,7 @@
 .method public getHistogram()[I
     .locals 0
 
-    .line 596
+    .line 598
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$HistogramResult;->mHistogram:[I
 
     return-object p0
@@ -64,7 +76,7 @@
 .method public getHistogramBucketCount()I
     .locals 0
 
-    .line 600
+    .line 602
     iget p0, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$HistogramResult;->mHistogramBucketCount:I
 
     return p0
@@ -73,7 +85,7 @@
 .method public getMaxHistogramCount()I
     .locals 0
 
-    .line 604
+    .line 606
     iget p0, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$HistogramResult;->mMaxHistogramCount:I
 
     return p0

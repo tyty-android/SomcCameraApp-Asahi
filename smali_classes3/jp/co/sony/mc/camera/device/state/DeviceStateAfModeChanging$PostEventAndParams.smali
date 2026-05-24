@@ -25,6 +25,18 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateAfModeChanging;Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "event",
+            "params"
+        }
+    .end annotation
 
     .line 212
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateAfModeChanging$PostEventAndParams;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateAfModeChanging;

@@ -82,6 +82,7 @@
     <string name="call_notification_incoming_text">Кіріс қоңырау</string>
     <string name="call_notification_ongoing_text">Қоңырау</string>
     <string name="call_notification_screening_text">Келген қоңырауды сүзу</string>
+    <string name="camera_string_saving_process_hint_txt">Сақталуда... Сақтап болғанша күтіңіз.</string>
     <string name="camera_strings_accept_privacy_policy_txt">Құпиялылық саясатын бұрын қабылдағансыз, бірақ шешіміңізді кез келген уақытта өзгерте аласыз.</string>
     <string name="camera_strings_accessibility_48_mega_pixel_txt">48 мегапиксель</string>
     <string name="camera_strings_accessibility_adjust_bokeh_txt">Боке функциясын реттеу</string>
@@ -92,6 +93,27 @@
     <string name="camera_strings_accessibility_adjust_framing_size_smaller_txt">Кадр өлшемін кішірейтіңіз</string>
     <string name="camera_strings_accessibility_adjust_framing_size_txt">Кадр өлшемін реттеңіз</string>
     <string name="camera_strings_accessibility_adjust_shutter_speed_txt">Ысырма жылдамдығы</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_look_menu_txt">Жабу түймесі. Түр мәзірін жабады.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_menu_txt">Арнайы мәзірді жабу</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_suggests_txt">Ұсынылған реттеулерді жабыңыз</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_menu_txt">Қазіргі уақытта қолданылған «Жеке түр». Реттеу мәзірін ашады.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_txt">Жеке түр. Арнайы мәзірде тіркелген түр, жарықтық және түс параметрлерін қолданады.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_tab_txt">Арнайы қойынды. Арнайы мәзірде тіркелген түр, жарықтық және түс параметрлерін қолданады.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_button_txt">Арнайы түйме. Ұсынылған реттеулер қолданылған кезде қосымша реттеулер жасауға мүмкіндік беретін мәзірді ашады.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_param_txt">%1$s параметрі %2$s күйіне орнатылды</string>
+    <string name="camera_strings_accessibility_ai_suggestion_first_time_txt">ЖИ камера көмекшісі. Бұл функция көрініске сәйкес түс сияқты параметрлерді ұсынады.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_four_of_some_suggests_txt">Төртінші ұсынылған реттеу</string>
+    <string name="camera_strings_accessibility_ai_suggestion_look_menu_txt">"%1$s
+Креативті көрініс мәзірін ашады"</string>
+    <string name="camera_strings_accessibility_ai_suggestion_new_suggest_txt">Жаңа ұсынылған реттеулер ұсынылды</string>
+    <string name="camera_strings_accessibility_ai_suggestion_one_of_some_suggests_txt">Бірінші ұсынылған реттеу</string>
+    <string name="camera_strings_accessibility_ai_suggestion_open_suggests_txt">Ұсынылған реттеулер кеңейтілді</string>
+    <string name="camera_strings_accessibility_ai_suggestion_reset_to_default_txt">Ұсыныстарға дейінгі параметрлерге қайта орнату</string>
+    <string name="camera_strings_accessibility_ai_suggestion_selected_suggest_txt">Бұл ұсынылған реттеулер қолданылды</string>
+    <string name="camera_strings_accessibility_ai_suggestion_suggest_lens_txt">Ұсынылған объектив түймесі. %1$sx ұсынылады.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_surface_of_some_suggests_txt">Ұсынылған реттеулер. Ұсынылған реттеулерді көрсету үшін оңнан солға қарай сырғытыңыз.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_three_of_some_suggests_txt">Үшінші ұсынылған реттеу</string>
+    <string name="camera_strings_accessibility_ai_suggestion_two_of_some_suggests_txt">Екінші ұсынылған реттеу</string>
     <string name="camera_strings_accessibility_arrow_left_button_txt">Сол жақ көрсеткі</string>
     <string name="camera_strings_accessibility_arrow_right_button_txt">Оң жақ көрсеткі</string>
     <string name="camera_strings_accessibility_audio_level_txt">Аудио деңгейінің өлшегіші</string>
@@ -246,6 +268,45 @@
     <string name="camera_strings_advanced_setting_geo_tag_title_txt">Орынды сақтау</string>
     <string name="camera_strings_ai_face_restore_description_txt">Бет мүмкіндіктерін таза ету үшін фотосуреттерді бетті айқындату мүмкіндігімен түсіріңіз</string>
     <string name="camera_strings_ai_face_restore_txt">Беттерді анық ету</string>
+    <string name="camera_strings_ai_suggestion_introduce_hint_text_txt">[Кеңестер] ЖИ камера көмекшісі</string>
+    <string name="camera_strings_aisuggestion_box_name1_txt">Пайдалан</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_message_txt">Ағымдағы түр, жарықтық және түс параметрлерін «Жеке» ретінде тіркеу.</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_overwrite_message_txt">Түр әлдеқашан «Жеке» параметрінде тіркелген. Қайта жазу керек пе?</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_title_txt">Жеке түр ретінде тіркелу</string>
+    <string name="camera_strings_aisuggestion_box_title_txt">Пайдалан</string>
+    <string name="camera_strings_aisuggestion_custom_params_contrast_txt">Контраст</string>
+    <string name="camera_strings_aisuggestion_custom_params_ev_txt">Жарықт.</string>
+    <string name="camera_strings_aisuggestion_custom_params_register_txt">Тіркелу</string>
+    <string name="camera_strings_aisuggestion_custom_params_saturation_txt">Қанық.</string>
+    <string name="camera_strings_aisuggestion_custom_params_title_txt">Жарықтық/түс</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbab_txt">Жылу</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbgm_txt">Реңк</string>
+    <string name="camera_strings_aisuggestion_customlook_register_instruction_txt">Тіркелген жеке түрлерді кез келген уақытта «Жеке түр» қойындысынан пайдалана аласыз</string>
+    <string name="camera_strings_aisuggestion_description_txt">"ЖИ көріністі автоматты түрде анықтап, оң жақ төменгі бұрыштағы шағын алдын-ала қарауда оңтайландырылған түзетулерді ұсынады.
+Осы шағын алдын-ала қарауды түртсеңіз, келесі параметрлер көрініске сәйкес автоматты түрде реттеледі:
+Түр, Экспозиция, Ақ тепе-теңдігі, Қанықтық, Қарама-қарсылық, Боке
+*Бұл функция тек Фотосурет режимінде қолжетімді.
+*Ысырма түймесін басып ұстап тұру арқылы бейне жазуды бастағанда қанықтық, қарама қарсылық және боке параметрлері қолданылмайды."</string>
+    <string name="camera_strings_aisuggestion_guide_description1_txt">ЖИ анықтаған көрініске сәйкес ұсынылған түзетулер төменгі оң жақтағы шағын алдын-ала қарауда көрсетіледі (көлденең ұстаған кезде оң жақ жоғарғы бұрышта). Шағын алдын-ала қарауды түрту арқылы осы түзетулердің барлығын бірден қолдануға болады.</string>
+    <string name="camera_strings_aisuggestion_guide_description2_txt">Көрініске байланысты арнайы объектив параметрі де ұсынылуы мүмкін. Бұл жағдайда өз таңдауыңызға қарай ұсынылған объектив параметрін өзгертуге болады.</string>
+    <string name="camera_strings_aisuggestion_guide_description3_txt">"Төменгі оң жақтағы шағын алдын-ала қарауда солға сырғытып (көлденең ұстаған кезде оң жақ жоғарғы бұрышта) балама түзету ұсыныстарын көрсетуге болады.
+Сіз таңдаған ұсыныс, сіздің қалаған түзетуіңіз ретінде сақталады және келесі жолы осыған ұқсас көріністі түсірген кезде ұсыныстар тізіміне қосылады."</string>
+    <string name="camera_strings_aisuggestion_guide_description4_txt">Қажет емес кезде ұсыныстарды жасыру үшін [>] түймесін түртуіңізге болады. Жаңа көрініс анықталғанда, жаңа түзету ұсыныстары бар екенін көрсету үшін [&lt;] түймесі жанады. Ұсыныстарды қайта тексеру үшін [&lt;] түймесін түртіңіз.</string>
+    <string name="camera_strings_aisuggestion_guide_description5_txt">Ұсынылған түзетулерді таңдағаннан кейін түзету түймесін түртсеңіз, жарықтық пен түс сияқты параметрлерді одан әрі реттеуге болады. Сіздің түзетулеріңіз құрылғыға сақталады және келесі жолы ұқсас көрініс анықталғанда ұсынылған түзетулерге қолданылады.</string>
+    <string name="camera_strings_aisuggestion_guide_description6_txt">Ұсынылған түзетулерді және сіз енгізген түзетулерді тіркеуге болады, осылайша оларды кез келген уақытта жүктеп, сол параметрлермен сурет түсіруге мүмкіндік береді. Қолжетімді түрлер тізіміне «Жеке түр» қосу үшін [Тіркелу] түймесін түртіңіз.</string>
+    <string name="camera_strings_aisuggestion_guide_entry_txt">ЖИ камера көмекшісі нұқсауы</string>
+    <string name="camera_strings_aisuggestion_guide_title_txt">ЖИ камера көмекшісі нұсқаулығы</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_message_txt">Түсті, жарықтықты және қалаған түзетулерді қоса барлық параметрлерді әдепкі мәндерге қалпына келтіру керек пе?</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_title_txt">Параметрлерді қалпына келтіру</string>
+    <string name="camera_strings_aisuggestion_params_reset_txt">Параметрлерді қалпына келтіру</string>
+    <string name="camera_strings_aisuggestion_permitted_item_bokeh_txt">Боке</string>
+    <string name="camera_strings_aisuggestion_permitted_item_lens_txt">Объектив</string>
+    <string name="camera_strings_aisuggestion_permitted_item_title_txt">Ұсыныстарға қосу</string>
+    <string name="camera_strings_aisuggestion_recommend_lens_ratio_txt">%1$s ұсынылады</string>
+    <string name="camera_strings_aisuggestion_return_to_default_txt">Орнына келтіру</string>
+    <string name="camera_strings_aisuggestion_simple_video_instruction_txt">Басып тұрып бейне жазғанда, қанық., қарама-қарс., боке баптауы түрлі көрінуі мүмкін.</string>
+    <string name="camera_strings_aisuggestion_txt">ЖИ камера көмекшісі</string>
+    <string name="camera_strings_aisuggestion_use_aissuggestion_txt">ЖИ камера көмекшісі</string>
     <string name="camera_strings_anonymous_analytics_txt">Анонимді аналитика</string>
     <string name="camera_strings_application_name">Камера</string>
     <string name="camera_strings_application_name_google_lens_txt">Google Lens</string>
@@ -421,6 +482,7 @@ Wi-Fi желісіне қосылу үшін"</string>
     <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Wi-Fi желісіне қосылу мүмкін емес</string>
     <string name="camera_strings_dialog_user_data_collection_txt">Егер төмендегіге келіссеңіз, Sony теңшелген қолдауды қамтамасыз ету және құрылғылар мен қызметтерді жақсарту үшін сіздің &lt;b>&lt;a href=#personal-data>жеке деректеріңізді&lt;/a>&lt;/b> жинайды. Sony сіздің деректеріңізді біздің &lt;b>&lt;a href=https://www.sonymobile.com/privacy/>Құпиялық туралы саясатымызға&lt;/a>&lt;/b> сәйкес өңдейді.</string>
     <string name="camera_strings_dialog_video_hdr_hlg_supported_short_description_txt">Кейбір құрылғылар/қызметтер HDR мазмұнының түпнұсқа түсі мен жарықтығын өндіре алмауы мүмкін. HDR мазмұнын пайдалану кезінде HDR қолдайтын құрылғыларды/қызметтерді пайдаланыңыз.</string>
+    <string name="camera_strings_digital_tripod_hint_edge_txt">Композиция өзгерді. Камераны бастапқы нысанға бағыттаңыз.</string>
     <string name="camera_strings_digital_zoom_type_description_txt">"Сандық масштабтау параметрін таңдаңыз.
 
 Стандартты сандық масштабтау: кескін датчигінің деректері негізінде сандық өңдеуді қолдану арқылы масштабтаңыз.
@@ -484,6 +546,7 @@ AI супер ажырат.-мен масштабтау: суреттің бас
     <string name="camera_strings_fast_capturing_screen_locked_settings_txt">Параметрлерді ашу үшін экран құлпын ашыңыз.</string>
     <string name="camera_strings_fast_capturing_screen_locked_streaming_txt">Ағымды бастау үшін экран құлпын ашыңыз.</string>
     <string name="camera_strings_fast_capturing_screen_locked_title_txt">Экран құлыпталған</string>
+    <string name="camera_strings_feature_creative_look_custom_description_txt">Түрлерді және жарықтық/түс баптауларын тіркей аласыз.</string>
     <string name="camera_strings_feature_creative_look_description_txt">"«Көрініс» опциясын таңдау арқылы кескіндердің (фотосуреттердің не фильмдердің) дайын нұсқасын таңдай аласыз.
 
 Креативті көрініс алдын ала орнатылған 6 көріністі ұсынады. Әрқайсысы түс реңкінің, қанықтығының, қарама-қарсылығының, анықтығының, жарықтығының және кескіннің басқа элементтерінің әртүрлі тіркесімімен оңтайландырылған, сондықтан кескінді өңдеуді осы элементтердің ең оңтайлы тепе-теңдігімен реттей аласыз."</string>
@@ -567,6 +630,7 @@ RAW немесе RAW және JPEG таңдалған кезде Үздіксі�
     <string name="camera_strings_framing_orientation_description_txt">"Субъектіні көлденең немесе тік кадрда қиюды таңдауға болады.
 Қиынды бағдарын құрылғы бағдарымен бірдей ету үшін [Авто] күйіне орнатыңыз."</string>
     <string name="camera_strings_framing_select_subject_to_track_txt">Позициясын бекіткіңіз келетін субъектіні түртіңіз</string>
+    <string name="camera_strings_framing_setting_guide_title_txt">Автоматты кадрлеу туралы</string>
     <string name="camera_strings_framing_setting_orientation_landscape_txt">Көлденең</string>
     <string name="camera_strings_framing_setting_orientation_portrait_txt">Тік</string>
     <string name="camera_strings_framing_setting_orientation_title_txt">Кадр бағдары</string>
@@ -574,6 +638,7 @@ RAW немесе RAW және JPEG таңдалған кезде Үздіксі�
 Қиылған жазбалар Толық HD ажыратымдылығымен сақталады. Қиылмаған жазбалар 4K ретінде сақталады."</string>
     <string name="camera_strings_framing_setting_save_original_video_off_txt">Толық экранды жазу: өшірулі</string>
     <string name="camera_strings_framing_setting_save_original_video_title_txt">Толық экранды жазу</string>
+    <string name="camera_strings_framing_setting_snapshot_description_txt">[Толық экранды жазу] функциясы өшірулі болсын не қосулы болсын, бейне жазу кезінде жасалған снапшоттар толық экранда сақталады.</string>
     <string name="camera_strings_geotagging_description_txt">Фотосуреттерді және бейнелерді түсірілген орындарымен сақтаңыз</string>
     <string name="camera_strings_geotagging_txt">Орынды сақтау</string>
     <string name="camera_strings_gimbal_mode_tab_label">ЖИ камерасы</string>
@@ -592,6 +657,7 @@ RAW немесе RAW және JPEG таңдалған кезде Үздіксі�
     <string name="camera_strings_gimbal_setting_assist_method_locking_hint_txt">Субъект орнын бекіту: қолмен</string>
     <string name="camera_strings_gimbal_setting_assist_method_locking_txt">қолмен</string>
     <string name="camera_strings_gimbal_setting_assist_method_title_txt">Суб. орнын бекіту</string>
+    <string name="camera_strings_gimbal_setting_guide_title_txt">ЖИ камерасы туралы</string>
     <string name="camera_strings_gridline_description_txt">Кескіндерді құрамдастыруға көмектесу үшін тор сызықтарды көрсетуге немесе көрсетпеуге болады</string>
     <string name="camera_strings_gridline_txt">Тор сызықтары</string>
     <string name="camera_strings_hand_shutter_description_updated_txt">Алақаныңызды алдыңғы камераға бұру арқылы таймердің кері санағын бастатуыңызға болады. Анықтауды жеңілдету үшін саусақтарыңызды жоғары қарай созыңыз.</string>
@@ -727,6 +793,7 @@ RAW немесе RAW және JPEG таңдалған кезде Үздіксі�
     <string name="camera_strings_notification_channel_title_saving_process_txt">Сақтау процесі</string>
     <string name="camera_strings_notification_text_saving_in_progress_txt">Сақтау аяқталғанша күте тұрыңыз</string>
     <string name="camera_strings_notification_title_saving_in_progress_txt">Сақталуда</string>
+    <string name="camera_strings_notify_saving_process_cannot_launch_app_by_hw_shutter_txt">Сақтау кезінде ысырма түймесін бассаңыз, камера іске қосылмауы мүмкін</string>
     <string name="camera_strings_ok_txt">OK</string>
     <string name="camera_strings_peaking_color_blue_txt">Көк</string>
     <string name="camera_strings_peaking_color_red_txt">Қызыл</string>
@@ -735,6 +802,7 @@ RAW немесе RAW және JPEG таңдалған кезде Үздіксі�
     <string name="camera_strings_peaking_color_yellow_txt">Сары</string>
     <string name="camera_strings_peaking_txt">Бөлектеу</string>
     <string name="camera_strings_personal_data_txt">Жеке деректер</string>
+    <string name="camera_strings_photopro_setting_guide_title_txt">Кәсіби фотосурет туралы</string>
     <string name="camera_strings_privacy_policy_txt">Құпиялық саясаты</string>
     <string name="camera_strings_pro_tips_computational_photo_description_txt">"Тіпті P режимінде де камера көріністі автоматты түрде анықтап, бұлыңғырлықты, шуды, шамадан артық экспозицияны және шамадан төмен экспозицияны азайту арқылы әдемі авто түсірілімдерді жасайды.
 Мұны пайдаланбасаңыз, оны Fn түймесінен немесе «МӘЗІР» ішінен өшіруге болады."</string>
@@ -965,6 +1033,7 @@ SD картасын деректер қоймасы ретінде пайдал�
     <string name="camera_strings_video_stabilization_description_sub_txt">Ескертпе: «Жоғары сапа» опциясын таңдасаңыз, құрылғы температурасы көтерілетіндіктен, жазу ұзақтығы қысқаруы мүмкін.</string>
     <string name="camera_strings_video_stabilization_description_txt">Xperia құрылғысында оптикалық кескінді және электрондық кескінді бір уақытта тұрақтандыру мүмкіндіктерін қамтитын Optical SteadyShot деп аталатын бірегей гибридті тұрақтандыру жүйесі бар. Әрекет күйінде жазу кезінде ол сізге дірілдеусіз және бірқалыпты бейнелерді береді.</string>
     <string name="camera_strings_video_stabilization_high_quality_images_txt">Жоғары сапа</string>
+    <string name="camera_strings_videopro_setting_guide_title_txt">Кәсіби бейне туралы</string>
     <string name="camera_strings_volume_distortion_correction_description_txt">Ультра кең бұрышты линзаларды пайдаланған кезде, экранның жиегіне жақын жерде пайда болатын беттердің бұрмалануын түзетеді. Ол фонның бұрмалануына немесе көрініс бұрышының тарылғандай етіп көрсетілуіне алып келуі мүмкін.</string>
     <string name="camera_strings_volume_distortion_correction_front_description_txt">Экранның жиегіне жақын жерде пайда болатын беттердің бұрмалануын түзетеді. Ол фонның бұрмалануына немесе көрініс бұрышының тарылғандай етіп көрсетілуіне алып келуі мүмкін.</string>
     <string name="camera_strings_volume_distortion_correction_txt">Беттің бұрмалануын түзету</string>
@@ -1042,8 +1111,25 @@ YouTube™ арна параметрлерін тексеріңіз."</string>
     <string name="clear_text_end_icon_content_description">Мәтінді өшіру</string>
     <string name="close_drawer">Навигация мәзірін жабу</string>
     <string name="close_sheet">Парақты жабу</string>
+    <string name="common_google_play_services_enable_button">Қосу</string>
+    <string name="common_google_play_services_enable_text">Google Play қызметтерін қоспасаңыз, %1$s жұмыс істемейді.</string>
+    <string name="common_google_play_services_enable_title">Google Play қызметтерін қосу</string>
+    <string name="common_google_play_services_install_button">Орнату</string>
+    <string name="common_google_play_services_install_text">Google Play қызметтері құрылғыда болмағандықтан, %1$s іске қосылмайды.</string>
+    <string name="common_google_play_services_install_title">Google Play қызметтерін алу</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play қызметтерінің қолжетімділігі</string>
+    <string name="common_google_play_services_notification_ticker">Google Play қызметтерінің қатесі</string>
+    <string name="common_google_play_services_unknown_issue">%1$s қолданбасында Google Play қызметіне байланысты белгісіз қате шықты. Әрекетті қайталаңыз.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s қолданбасы құрылғыңызда қолдау көрсетілмейтін Google Play қызметінсіз жұмыс істемейді.</string>
+    <string name="common_google_play_services_update_button">Жаңарту</string>
+    <string name="common_google_play_services_update_text">Google Play қызметтерін жаңартпасаңыз, %1$s іске қосылмайды.</string>
+    <string name="common_google_play_services_update_title">Google Play қызметтерін жаңарту</string>
+    <string name="common_google_play_services_updating_text">Қазіргі уақытта жаңартылып жатқан Google Play қызметтерінсіз %1$s іске қосылмайды.</string>
+    <string name="common_google_play_services_wear_update_text">Google Play қызметтерінің жаңа нұсқасы қажет. Ол қысқа уақыттан кейін өзі жаңарады.</string>
+    <string name="common_open_on_phone">Телефонда ашу</string>
+    <string name="common_signin_button_text">Кіру</string>
+    <string name="common_signin_button_text_long">Google арқылы кіру</string>
     <string name="copy">Көшіру</string>
-    <string name="copy_toast_msg">Сілтеме буферге көшірілді.</string>
     <string name="default_error_message">Енгізілген мән жарамсыз.</string>
     <string name="default_popup_window_title">Қалқымалы терезе</string>
     <string name="dropdown_menu">Ашылмалы мәзір</string>
@@ -1054,9 +1140,6 @@ YouTube™ арна параметрлерін тексеріңіз."</string>
     <string name="external_display_connected_description_txt">Көрсеткіш тетікті Бейнеблог мониторынан тексере аласыз</string>
     <string name="external_display_connected_title_txt">Бейнеблог қосылды</string>
     <string name="external_display_note_about_external_mic_txt">Ескертпе: сыртқы микрофонды пайдалану үшін, оны жазбас бұрын Бейнеблог мониторына қосыңыз. Оны кейін қоссаңыз, оны Бейнеблог мониторына қайта қосу қажет.</string>
-    <string name="fallback_menu_item_copy_link">Сілтемені көшіру</string>
-    <string name="fallback_menu_item_open_in_browser">Браузерден ашу</string>
-    <string name="fallback_menu_item_share_link">Сілтемені бөлісу</string>
     <string name="icon_content_description">Диалог белгішесі</string>
     <string name="in_progress">Орындалуда</string>
     <string name="indeterminate">Жартылай белгіленді.</string>

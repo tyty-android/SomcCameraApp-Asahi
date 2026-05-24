@@ -30,6 +30,21 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/storage/StorageImpl;Ljp/co/sony/mc/camera/storage/Storage$OnLoadCompletedListener;Landroid/graphics/Bitmap;Landroid/net/Uri;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$listener",
+            "val$bitmap",
+            "val$uri"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"

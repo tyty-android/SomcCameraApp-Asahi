@@ -4,10 +4,13 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/graph/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/common/graph/EndpointPairIterator$Undirected;,
-        Lcom/google/common/graph/EndpointPairIterator$Directed;
+        Lcom/google/common/graph/EndpointPairIterator$Directed;,
+        Lcom/google/common/graph/EndpointPairIterator$Undirected;
     }
 .end annotation
 
@@ -33,11 +36,14 @@
     .end annotation
 .end field
 
-.field protected node:Ljava/lang/Object;
+.field node:Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TN;"
         }
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -50,7 +56,7 @@
     .end annotation
 .end field
 
-.field protected successorIterator:Ljava/util/Iterator;
+.field successorIterator:Ljava/util/Iterator;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Iterator<",
@@ -63,6 +69,15 @@
 # direct methods
 .method private constructor <init>(Lcom/google/common/graph/BaseGraph;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "graph"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -71,15 +86,15 @@
         }
     .end annotation
 
-    .line 43
+    .line 49
     invoke-direct {p0}, Lcom/google/common/collect/AbstractIterator;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 36
+    .line 40
     iput-object v0, p0, Lcom/google/common/graph/EndpointPairIterator;->node:Ljava/lang/Object;
 
-    .line 37
+    .line 43
     invoke-static {}, Lcom/google/common/collect/ImmutableSet;->of()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object v0
@@ -90,10 +105,10 @@
 
     iput-object v0, p0, Lcom/google/common/graph/EndpointPairIterator;->successorIterator:Ljava/util/Iterator;
 
-    .line 44
+    .line 50
     iput-object p1, p0, Lcom/google/common/graph/EndpointPairIterator;->graph:Lcom/google/common/graph/BaseGraph;
 
-    .line 45
+    .line 51
     invoke-interface {p1}, Lcom/google/common/graph/BaseGraph;->nodes()Ljava/util/Set;
 
     move-result-object p1
@@ -110,7 +125,7 @@
 .method synthetic constructor <init>(Lcom/google/common/graph/BaseGraph;Lcom/google/common/graph/EndpointPairIterator$1;)V
     .locals 0
 
-    .line 32
+    .line 36
     invoke-direct {p0, p1}, Lcom/google/common/graph/EndpointPairIterator;-><init>(Lcom/google/common/graph/BaseGraph;)V
 
     return-void
@@ -118,6 +133,15 @@
 
 .method static of(Lcom/google/common/graph/BaseGraph;)Lcom/google/common/graph/EndpointPairIterator;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "graph"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -130,7 +154,7 @@
         }
     .end annotation
 
-    .line 40
+    .line 46
     invoke-interface {p0}, Lcom/google/common/graph/BaseGraph;->isDirected()Z
 
     move-result v0
@@ -156,10 +180,10 @@
 
 
 # virtual methods
-.method protected final advance()Z
+.method final advance()Z
     .locals 3
 
-    .line 53
+    .line 59
     iget-object v0, p0, Lcom/google/common/graph/EndpointPairIterator;->successorIterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -172,7 +196,7 @@
 
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkState(Z)V
 
-    .line 54
+    .line 60
     iget-object v0, p0, Lcom/google/common/graph/EndpointPairIterator;->nodeIterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -185,7 +209,7 @@
 
     return p0
 
-    .line 57
+    .line 63
     :cond_0
     iget-object v0, p0, Lcom/google/common/graph/EndpointPairIterator;->nodeIterator:Ljava/util/Iterator;
 
@@ -195,7 +219,7 @@
 
     iput-object v0, p0, Lcom/google/common/graph/EndpointPairIterator;->node:Ljava/lang/Object;
 
-    .line 58
+    .line 64
     iget-object v2, p0, Lcom/google/common/graph/EndpointPairIterator;->graph:Lcom/google/common/graph/BaseGraph;
 
     invoke-interface {v2, v0}, Lcom/google/common/graph/BaseGraph;->successors(Ljava/lang/Object;)Ljava/util/Set;

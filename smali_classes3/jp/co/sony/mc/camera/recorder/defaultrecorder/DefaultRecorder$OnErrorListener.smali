@@ -26,13 +26,23 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;Ljp/co/sony/mc/camera/recorder/RecorderInterface$OnErrorListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "listener"
+        }
+    .end annotation
 
-    .line 607
+    .line 586
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnErrorListener;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 608
+    .line 587
     iput-object p2, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnErrorListener;->mListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$OnErrorListener;
 
     return-void
@@ -48,10 +58,22 @@
 
 .method private onError(Lcom/sonymobile/android/media/MediaRecorder;II)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mediaRecorder",
+            "what",
+            "extra"
+        }
+    .end annotation
 
     const/4 p1, 0x1
 
-    .line 612
+    .line 591
     new-array v0, p1, [Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -88,7 +110,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
-    .line 614
+    .line 593
     iget-object p2, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnErrorListener;->mListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$OnErrorListener;
 
     invoke-interface {p2}, Ljp/co/sony/mc/camera/recorder/RecorderInterface$OnErrorListener;->onError()V
@@ -99,13 +121,13 @@
 
     goto :goto_0
 
-    .line 620
+    .line 599
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnErrorListener;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;
 
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;->-$$Nest$fputmIsErrorOnStart(Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;Z)V
 
-    .line 625
+    .line 604
     :goto_0
     new-array p0, p1, [Ljava/lang/String;
 
@@ -122,10 +144,22 @@
 # virtual methods
 .method public onError(Landroid/media/MediaRecorder;II)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mediaRecorder",
+            "what",
+            "extra"
+        }
+    .end annotation
 
     const/4 p1, 0x0
 
-    .line 630
+    .line 609
     move-object v0, p1
 
     check-cast v0, Lcom/sonymobile/android/media/MediaRecorder;

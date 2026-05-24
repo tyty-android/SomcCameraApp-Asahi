@@ -3,7 +3,7 @@
 .source "CommonSettings.java"
 
 # interfaces
-.implements Ljp/co/sony/mc/camera/setting/SettingsBase$GetOptionsCommand;
+.implements Ljp/co/sony/mc/camera/setting/SettingsBase$GetDefaultCommand;
 
 
 # annotations
@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1336
+    .line 1235
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,8 +29,19 @@
 
 
 # virtual methods
-.method public getOptions(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
+.method public getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -38,16 +49,14 @@
             ">(",
             "Ljp/co/sony/mc/camera/setting/SettingsBase;",
             "Ljp/co/sony/mc/camera/setting/SettingKey$Key<",
-            "TT;>;)[TT;"
+            "TT;>;)TT;"
         }
     .end annotation
 
-    .line 1340
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;->values()[Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;
+    .line 1239
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
 
     move-result-object p0
-
-    check-cast p0, [Ljava/lang/Object;
 
     return-object p0
 .end method

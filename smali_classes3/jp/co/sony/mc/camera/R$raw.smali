@@ -24,15 +24,21 @@
 
 .field public static final ele_pin:I = 0x7f100004
 
-.field public static final photopro_click:I = 0x7f100005
+.field public static final keep_third_party_licenses:I = 0x7f100005
 
-.field public static final photopro_focus:I = 0x7f100006
+.field public static final photopro_click:I = 0x7f100006
 
-.field public static final selftimer_1sec:I = 0x7f100007
+.field public static final photopro_focus:I = 0x7f100007
 
-.field public static final selftimer_3sec:I = 0x7f100008
+.field public static final selftimer_1sec:I = 0x7f100008
 
-.field public static final selftimer_4sec:I = 0x7f100009
+.field public static final selftimer_3sec:I = 0x7f100009
+
+.field public static final selftimer_4sec:I = 0x7f10000a
+
+.field public static final third_party_license_metadata:I = 0x7f10000b
+
+.field public static final third_party_licenses:I = 0x7f10000c
 
 
 # direct methods

@@ -50,6 +50,15 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/LinkedListMultimap$Node;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "firstNode"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -58,26 +67,26 @@
         }
     .end annotation
 
-    .line 142
+    .line 148
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 143
+    .line 149
     iput-object p1, p0, Lcom/google/common/collect/LinkedListMultimap$KeyList;->head:Lcom/google/common/collect/LinkedListMultimap$Node;
 
-    .line 144
+    .line 150
     iput-object p1, p0, Lcom/google/common/collect/LinkedListMultimap$KeyList;->tail:Lcom/google/common/collect/LinkedListMultimap$Node;
 
     const/4 v0, 0x0
 
-    .line 145
+    .line 151
     iput-object v0, p1, Lcom/google/common/collect/LinkedListMultimap$Node;->previousSibling:Lcom/google/common/collect/LinkedListMultimap$Node;
 
-    .line 146
+    .line 152
     iput-object v0, p1, Lcom/google/common/collect/LinkedListMultimap$Node;->nextSibling:Lcom/google/common/collect/LinkedListMultimap$Node;
 
     const/4 p1, 0x1
 
-    .line 147
+    .line 153
     iput p1, p0, Lcom/google/common/collect/LinkedListMultimap$KeyList;->count:I
 
     return-void

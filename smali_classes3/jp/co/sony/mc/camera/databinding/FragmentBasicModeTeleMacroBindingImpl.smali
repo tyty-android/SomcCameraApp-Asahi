@@ -45,7 +45,7 @@
 
     move-result-object v3
 
-    const v5, 0x7f0c008d
+    const v5, 0x7f0c0084
 
     filled-new-array {v5}, [I
 
@@ -66,7 +66,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0c0097
+    const v4, 0x7f0c008e
 
     filled-new-array {v4}, [I
 
@@ -81,7 +81,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f09043b
+    const v1, 0x7f09043d
 
     const/4 v2, 0x4
 
@@ -93,6 +93,16 @@
 
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root"
+        }
+    .end annotation
 
     .line 36
     sget-object v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -112,6 +122,18 @@
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root",
+            "bindings"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -158,7 +180,7 @@
 
     const-wide/16 v0, -0x1
 
-    .line 232
+    .line 238
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->mDirtyFlags:J
 
     .line 45
@@ -201,13 +223,23 @@
 
 .method private onChangeFocusMagMenu(Ljp/co/sony/mc/camera/databinding/FragmentMenuFocusMagnificationBinding;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "FocusMagMenu",
+            "fieldId"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
-    .line 143
+    .line 149
     monitor-enter p0
 
-    .line 144
+    .line 150
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->mDirtyFlags:J
 
@@ -217,7 +249,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->mDirtyFlags:J
 
-    .line 145
+    .line 151
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -241,13 +273,23 @@
 
 .method private onChangeTeleMacroBar(Ljp/co/sony/mc/camera/databinding/FragmentMacroFocusBinding;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "TeleMacroBar",
+            "fieldId"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
-    .line 125
+    .line 131
     monitor-enter p0
 
-    .line 126
+    .line 132
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->mDirtyFlags:J
 
@@ -257,7 +299,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->mDirtyFlags:J
 
-    .line 127
+    .line 133
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -281,6 +323,17 @@
 
 .method private onChangeTeleMacroUiStateIsFocusMagMenuVisible(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "TeleMacroUiStateIsFocusMagMenuVisible",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -292,10 +345,10 @@
 
     if-nez p2, :cond_0
 
-    .line 152
+    .line 158
     monitor-enter p0
 
-    .line 153
+    .line 159
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->mDirtyFlags:J
 
@@ -305,7 +358,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->mDirtyFlags:J
 
-    .line 154
+    .line 160
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -329,6 +382,17 @@
 
 .method private onChangeTeleMacroUiStateIsTeleMacroBarGone(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "TeleMacroUiStateIsTeleMacroBarGone",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -340,10 +404,10 @@
 
     if-nez p2, :cond_0
 
-    .line 134
+    .line 140
     monitor-enter p0
 
-    .line 135
+    .line 141
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->mDirtyFlags:J
 
@@ -353,7 +417,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->mDirtyFlags:J
 
-    .line 136
+    .line 142
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -380,35 +444,35 @@
 .method protected executeBindings()V
     .locals 14
 
-    .line 163
+    .line 169
     monitor-enter p0
 
-    .line 164
+    .line 170
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->mDirtyFlags:J
 
     const-wide/16 v2, 0x0
 
-    .line 165
+    .line 171
     iput-wide v2, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->mDirtyFlags:J
 
-    .line 166
+    .line 172
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 170
+    .line 176
     iget-object v4, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->mTeleMacroUiState:Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState;
 
-    const-wide/16 v5, 0x3a
+    const-wide/16 v5, 0x6a
 
     and-long/2addr v5, v0
 
     cmp-long v5, v5, v2
 
-    const-wide/16 v6, 0x32
+    const-wide/16 v6, 0x62
 
-    const-wide/16 v8, 0x38
+    const-wide/16 v8, 0x68
 
     const/4 v10, 0x0
 
@@ -424,7 +488,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 182
+    .line 188
     invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState;->isTeleMacroBarGone()Landroidx/lifecycle/LiveData;
 
     move-result-object v5
@@ -437,12 +501,12 @@
     :goto_0
     const/4 v12, 0x1
 
-    .line 184
+    .line 190
     invoke-virtual {p0, v12, v5}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v5, :cond_1
 
-    .line 189
+    .line 195
     invoke-virtual {v5}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v5
@@ -454,7 +518,7 @@
     :cond_1
     move-object v5, v11
 
-    .line 194
+    .line 200
     :goto_1
     invoke-static {v5}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
@@ -474,7 +538,7 @@
 
     if-eqz v4, :cond_3
 
-    .line 200
+    .line 206
     invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState;->isFocusMagMenuVisible()Landroidx/lifecycle/LiveData;
 
     move-result-object v4
@@ -487,12 +551,12 @@
     :goto_3
     const/4 v10, 0x3
 
-    .line 202
+    .line 208
     invoke-virtual {p0, v10, v4}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v4, :cond_4
 
-    .line 207
+    .line 213
     invoke-virtual {v4}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v4
@@ -501,7 +565,7 @@
 
     check-cast v11, Ljava/lang/Boolean;
 
-    .line 212
+    .line 218
     :cond_4
     invoke-static {v11}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
@@ -520,7 +584,7 @@
 
     if-eqz v4, :cond_7
 
-    .line 219
+    .line 225
     iget-object v4, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->fitDisplay:Ljp/co/sony/mc/camera/view/widget/FitDisplayOrientationFrameLayout;
 
     invoke-static {v4, v10}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setVisible(Landroid/view/View;Z)V
@@ -532,7 +596,7 @@
 
     if-eqz v0, :cond_8
 
-    .line 224
+    .line 230
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->teleMacroBar:Ljp/co/sony/mc/camera/databinding/FragmentMacroFocusBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/FragmentMacroFocusBinding;->getRoot()Landroid/view/View;
@@ -541,13 +605,13 @@
 
     invoke-static {v0, v5}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setGone(Landroid/view/View;Z)V
 
-    .line 226
+    .line 232
     :cond_8
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->teleMacroBar:Ljp/co/sony/mc/camera/databinding/FragmentMacroFocusBinding;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 227
+    .line 233
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->focusMagMenu:Ljp/co/sony/mc/camera/databinding/FragmentMenuFocusMagnificationBinding;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
@@ -557,7 +621,7 @@
     :catchall_0
     move-exception v0
 
-    .line 166
+    .line 172
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -641,7 +705,7 @@
     .line 57
     monitor-enter p0
 
-    const-wide/16 v0, 0x20
+    const-wide/16 v0, 0x40
 
     .line 58
     :try_start_0
@@ -681,6 +745,18 @@
 
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "localFieldId",
+            "object",
+            "fieldId"
+        }
+    .end annotation
 
     if-eqz p1, :cond_3
 
@@ -700,7 +776,7 @@
 
     return p0
 
-    .line 119
+    .line 125
     :cond_0
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -710,7 +786,7 @@
 
     return p0
 
-    .line 117
+    .line 123
     :cond_1
     check-cast p2, Ljp/co/sony/mc/camera/databinding/FragmentMenuFocusMagnificationBinding;
 
@@ -720,7 +796,7 @@
 
     return p0
 
-    .line 115
+    .line 121
     :cond_2
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -730,7 +806,7 @@
 
     return p0
 
-    .line 113
+    .line 119
     :cond_3
     check-cast p2, Ljp/co/sony/mc/camera/databinding/FragmentMacroFocusBinding;
 
@@ -741,18 +817,43 @@
     return p0
 .end method
 
+.method public setBasicModeFocusSsUiState(Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "BasicModeFocusSsUiState"
+        }
+    .end annotation
+
+    .line 97
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->mBasicModeFocusSsUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;
+
+    return-void
+.end method
+
 .method public setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "lifecycleOwner"
+        }
+    .end annotation
 
-    .line 104
+    .line 110
     invoke-super {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 105
+    .line 111
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->teleMacroBar:Ljp/co/sony/mc/camera/databinding/FragmentMacroFocusBinding;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentMacroFocusBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 106
+    .line 112
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->focusMagMenu:Ljp/co/sony/mc/camera/databinding/FragmentMenuFocusMagnificationBinding;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentMenuFocusMagnificationBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
@@ -762,34 +863,42 @@
 
 .method public setTeleMacroUiState(Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "TeleMacroUiState"
+        }
+    .end annotation
 
-    .line 94
+    .line 100
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->mTeleMacroUiState:Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState;
 
-    .line 95
+    .line 101
     monitor-enter p0
 
-    .line 96
+    .line 102
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v2, 0x10
+    const-wide/16 v2, 0x20
 
     or-long/2addr v0, v2
 
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->mDirtyFlags:J
 
-    .line 97
+    .line 103
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x22
+    const/16 p1, 0x24
 
-    .line 98
+    .line 104
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->notifyPropertyChanged(I)V
 
-    .line 99
+    .line 105
     invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBinding;->requestRebind()V
 
     return-void
@@ -797,7 +906,7 @@
     :catchall_0
     move-exception p1
 
-    .line 97
+    .line 103
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -808,23 +917,46 @@
 
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "variableId",
+            "variable"
+        }
+    .end annotation
 
-    const/16 v0, 0x22
+    const/4 v0, 0x6
 
     if-ne v0, p1, :cond_0
 
     .line 85
-    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState;
+    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;
 
-    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->setTeleMacroUiState(Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState;)V
-
-    const/4 p0, 0x1
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->setBasicModeFocusSsUiState(Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;)V
 
     goto :goto_0
 
     :cond_0
-    const/4 p0, 0x0
+    const/16 v0, 0x24
+
+    if-ne v0, p1, :cond_1
+
+    .line 88
+    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState;
+
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBindingImpl;->setTeleMacroUiState(Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState;)V
 
     :goto_0
+    const/4 p0, 0x1
+
+    goto :goto_1
+
+    :cond_1
+    const/4 p0, 0x0
+
+    :goto_1
     return p0
 .end method

@@ -46,6 +46,15 @@
 # direct methods
 .method private constructor <init>(Ljava/lang/Class;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "clazz"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -54,10 +63,10 @@
         }
     .end annotation
 
-    .line 514
+    .line 536
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 515
+    .line 537
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -72,7 +81,7 @@
 .method synthetic constructor <init>(Ljava/lang/Class;Lcom/google/common/base/Predicates$1;)V
     .locals 0
 
-    .line 511
+    .line 533
     invoke-direct {p0, p1}, Lcom/google/common/base/Predicates$SubtypeOfPredicate;-><init>(Ljava/lang/Class;)V
 
     return-void
@@ -82,6 +91,15 @@
 # virtual methods
 .method public apply(Ljava/lang/Class;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "input"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -90,7 +108,7 @@
         }
     .end annotation
 
-    .line 520
+    .line 542
     iget-object p0, p0, Lcom/google/common/base/Predicates$SubtypeOfPredicate;->clazz:Ljava/lang/Class;
 
     invoke-virtual {p0, p1}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
@@ -102,8 +120,16 @@
 
 .method public bridge synthetic apply(Ljava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "input"
+        }
+    .end annotation
 
-    .line 510
+    .line 531
     check-cast p1, Ljava/lang/Class;
 
     invoke-virtual {p0, p1}, Lcom/google/common/base/Predicates$SubtypeOfPredicate;->apply(Ljava/lang/Class;)Z
@@ -116,21 +142,29 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
-    .line 530
+    .line 552
     instance-of v0, p1, Lcom/google/common/base/Predicates$SubtypeOfPredicate;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 531
+    .line 553
     check-cast p1, Lcom/google/common/base/Predicates$SubtypeOfPredicate;
 
-    .line 532
+    .line 554
     iget-object p0, p0, Lcom/google/common/base/Predicates$SubtypeOfPredicate;->clazz:Ljava/lang/Class;
 
     iget-object p1, p1, Lcom/google/common/base/Predicates$SubtypeOfPredicate;->clazz:Ljava/lang/Class;
@@ -146,7 +180,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 525
+    .line 547
     iget-object p0, p0, Lcom/google/common/base/Predicates$SubtypeOfPredicate;->clazz:Ljava/lang/Class;
 
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
@@ -159,32 +193,18 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 539
+    .line 561
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "Predicates.subtypeOf("
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
     iget-object p0, p0, Lcom/google/common/base/Predicates$SubtypeOfPredicate;->clazz:Ljava/lang/Class;
 
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object p0
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, 0x16
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v0, "Predicates.subtypeOf("
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

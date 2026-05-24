@@ -507,6 +507,24 @@
 
 .method private static chooseOptimalSize([Landroid/util/Size;IIIILandroid/util/Size;)Landroid/util/Size;
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "choices",
+            "textureViewWidth",
+            "textureViewHeight",
+            "maxWidth",
+            "maxHeight",
+            "aspectRatio"
+        }
+    .end annotation
 
     .line 413
     new-instance v0, Ljava/util/ArrayList;
@@ -711,6 +729,16 @@
 
 .method private configureTransform(II)V
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "viewWidth",
+            "viewHeight"
+        }
+    .end annotation
 
     .line 844
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
@@ -1078,6 +1106,15 @@
 
 .method private getFpsRange(I)Landroid/util/Range;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "targetFps"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1105,6 +1142,16 @@
 
 .method private isTextureViewPrepared(II)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "width",
+            "height"
+        }
+    .end annotation
 
     .line 1030
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment;->getContext()Landroid/content/Context;
@@ -1155,6 +1202,16 @@
 
 .method private openCamera(II)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "width",
+            "height"
+        }
+    .end annotation
 
     .line 684
     iget-object v0, p0, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment;->mDialog:Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment$ConfirmationDialog;
@@ -1246,6 +1303,14 @@
 
 .method private setSurfaceFrameRate(Landroid/view/Surface;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "surface"
+        }
+    .end annotation
 
     .line 1036
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment;->getContext()Landroid/content/Context;
@@ -1378,6 +1443,16 @@
 
 .method private setUpCameraOutputs(II)V
     .locals 16
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "width",
+            "height"
+        }
+    .end annotation
 
     move-object/from16 v0, p0
 
@@ -1871,6 +1946,16 @@
 
 .method private showConfirmDialog(Ljava/lang/String;Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "message",
+            "isTriggerCalibrate"
+        }
+    .end annotation
 
     .line 1014
     invoke-static {p1, p2}, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment$ConfirmationDialog;->newInstance(Ljava/lang/String;Z)Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment$ConfirmationDialog;
@@ -1969,6 +2054,14 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "savedInstanceState"
+        }
+    .end annotation
 
     .line 488
     invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
@@ -1978,8 +2071,20 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "inflater",
+            "container",
+            "savedInstanceState"
+        }
+    .end annotation
 
-    const p0, 0x7f0c007e
+    const p0, 0x7f0c0079
 
     const/4 p3, 0x0
 
@@ -2173,6 +2278,18 @@
 
 .method public onSpiritLevelChanged(IFF)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "orientation",
+            "pitch",
+            "roll"
+        }
+    .end annotation
 
     .line 933
     iput p1, p0, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment;->mOrientation:I
@@ -2185,11 +2302,21 @@
 
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x0
+        }
+        names = {
+            "view",
+            "savedInstanceState"
+        }
+    .end annotation
 
     .line 457
     invoke-super {p0, p1, p2}, Landroidx/fragment/app/Fragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
-    const p2, 0x7f0904a2
+    const p2, 0x7f0904a3
 
     .line 458
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2200,7 +2327,7 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment;->mTextureView:Ljp/co/sony/mc/camera/calibration/ui/AutoFitTextureView;
 
-    const p2, 0x7f0900da
+    const p2, 0x7f0900dc
 
     .line 459
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2211,7 +2338,7 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment;->mLayoutMain:Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    const p2, 0x7f0900d9
+    const p2, 0x7f0900db
 
     .line 460
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2227,7 +2354,7 @@
 
     invoke-virtual {p2, v0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const p2, 0x7f0903c3
+    const p2, 0x7f0903c2
 
     .line 462
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2243,7 +2370,7 @@
 
     invoke-virtual {p2, v0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const p2, 0x7f0900a3
+    const p2, 0x7f0900ab
 
     .line 464
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;

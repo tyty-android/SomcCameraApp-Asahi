@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/graph/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<E:",
@@ -31,6 +34,17 @@
 # direct methods
 .method constructor <init>(Ljava/util/Map;Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "outEdgeToNode",
+            "targetNode"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -41,10 +55,10 @@
         }
     .end annotation
 
-    .line 43
+    .line 44
     invoke-direct {p0}, Ljava/util/AbstractSet;-><init>()V
 
-    .line 44
+    .line 45
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -53,7 +67,7 @@
 
     iput-object p1, p0, Lcom/google/common/graph/MultiEdgesConnecting;->outEdgeToNode:Ljava/util/Map;
 
-    .line 45
+    .line 46
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -66,7 +80,7 @@
 .method static synthetic access$000(Lcom/google/common/graph/MultiEdgesConnecting;)Ljava/lang/Object;
     .locals 0
 
-    .line 38
+    .line 39
     iget-object p0, p0, Lcom/google/common/graph/MultiEdgesConnecting;->targetNode:Ljava/lang/Object;
 
     return-object p0
@@ -77,11 +91,19 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "edge"
+        }
+    .end annotation
 
-    .line 67
+    .line 69
     iget-object v0, p0, Lcom/google/common/graph/MultiEdgesConnecting;->targetNode:Ljava/lang/Object;
 
     iget-object p0, p0, Lcom/google/common/graph/MultiEdgesConnecting;->outEdgeToNode:Ljava/util/Map;
@@ -107,7 +129,7 @@
         }
     .end annotation
 
-    .line 50
+    .line 51
     iget-object v0, p0, Lcom/google/common/graph/MultiEdgesConnecting;->outEdgeToNode:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
@@ -118,7 +140,7 @@
 
     move-result-object v0
 
-    .line 51
+    .line 52
     new-instance v1, Lcom/google/common/graph/MultiEdgesConnecting$1;
 
     invoke-direct {v1, p0, v0}, Lcom/google/common/graph/MultiEdgesConnecting$1;-><init>(Lcom/google/common/graph/MultiEdgesConnecting;Ljava/util/Iterator;)V

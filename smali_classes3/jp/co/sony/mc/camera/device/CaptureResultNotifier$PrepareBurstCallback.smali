@@ -16,4 +16,14 @@
 
 # virtual methods
 .method public abstract onPrepareBurstDone(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Z)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sessionId",
+            "success"
+        }
+    .end annotation
 .end method

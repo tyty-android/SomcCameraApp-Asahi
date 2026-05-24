@@ -28,8 +28,18 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/graph/SuccessorsFunction;Lcom/google/common/graph/SuccessorsFunction;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x1010
+        }
+        names = {
+            "successorFunction",
+            "val$tree"
+        }
+    .end annotation
 
-    .line 186
+    .line 188
     iput-object p2, p0, Lcom/google/common/graph/Traverser$2;->val$tree:Lcom/google/common/graph/SuccessorsFunction;
 
     const/4 p2, 0x0
@@ -51,7 +61,7 @@
         }
     .end annotation
 
-    .line 189
+    .line 191
     iget-object p0, p0, Lcom/google/common/graph/Traverser$2;->val$tree:Lcom/google/common/graph/SuccessorsFunction;
 
     invoke-static {p0}, Lcom/google/common/graph/Traverser$Traversal;->inTree(Lcom/google/common/graph/SuccessorsFunction;)Lcom/google/common/graph/Traverser$Traversal;

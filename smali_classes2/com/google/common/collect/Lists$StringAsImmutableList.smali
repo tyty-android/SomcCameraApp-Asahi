@@ -29,11 +29,19 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "string"
+        }
+    .end annotation
 
-    .line 715
+    .line 756
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableList;-><init>()V
 
-    .line 716
+    .line 757
     iput-object p1, p0, Lcom/google/common/collect/Lists$StringAsImmutableList;->string:Ljava/lang/String;
 
     return-void
@@ -43,15 +51,23 @@
 # virtual methods
 .method public get(I)Ljava/lang/Character;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
-    .line 742
+    .line 783
     invoke-virtual {p0}, Lcom/google/common/collect/Lists$StringAsImmutableList;->size()I
 
     move-result v0
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkElementIndex(II)I
 
-    .line 743
+    .line 784
     iget-object p0, p0, Lcom/google/common/collect/Lists$StringAsImmutableList;->string:Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ljava/lang/String;->charAt(I)C
@@ -67,8 +83,16 @@
 
 .method public bridge synthetic get(I)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
-    .line 710
+    .line 751
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Lists$StringAsImmutableList;->get(I)Ljava/lang/Character;
 
     move-result-object p0
@@ -79,11 +103,19 @@
 .method public indexOf(Ljava/lang/Object;)I
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 721
+    .line 762
     instance-of v0, p1, Ljava/lang/Character;
 
     if-eqz v0, :cond_0
@@ -120,11 +152,19 @@
 .method public lastIndexOf(Ljava/lang/Object;)I
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 726
+    .line 767
     instance-of v0, p1, Ljava/lang/Character;
 
     if-eqz v0, :cond_0
@@ -153,7 +193,7 @@
 .method public size()I
     .locals 0
 
-    .line 748
+    .line 789
     iget-object p0, p0, Lcom/google/common/collect/Lists$StringAsImmutableList;->string:Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
@@ -165,6 +205,17 @@
 
 .method public subList(II)Lcom/google/common/collect/ImmutableList;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromIndex",
+            "toIndex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -174,14 +225,14 @@
         }
     .end annotation
 
-    .line 731
+    .line 772
     invoke-virtual {p0}, Lcom/google/common/collect/Lists$StringAsImmutableList;->size()I
 
     move-result v0
 
     invoke-static {p1, p2, v0}, Lcom/google/common/base/Preconditions;->checkPositionIndexes(III)V
 
-    .line 732
+    .line 773
     iget-object p0, p0, Lcom/google/common/collect/Lists$StringAsImmutableList;->string:Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
@@ -197,9 +248,30 @@
 
 .method public bridge synthetic subList(II)Ljava/util/List;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "fromIndex",
+            "toIndex"
+        }
+    .end annotation
 
-    .line 710
+    .line 751
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/Lists$StringAsImmutableList;->subList(II)Lcom/google/common/collect/ImmutableList;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method writeReplace()Ljava/lang/Object;
+    .locals 0
+
+    .line 798
+    invoke-super {p0}, Lcom/google/common/collect/ImmutableList;->writeReplace()Ljava/lang/Object;
 
     move-result-object p0
 

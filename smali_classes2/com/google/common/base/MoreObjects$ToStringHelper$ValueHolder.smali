@@ -1,4 +1,4 @@
-.class final Lcom/google/common/base/MoreObjects$ToStringHelper$ValueHolder;
+.class Lcom/google/common/base/MoreObjects$ToStringHelper$ValueHolder;
 .super Ljava/lang/Object;
 .source "MoreObjects.java"
 
@@ -9,43 +9,34 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1a
+    accessFlags = 0x8
     name = "ValueHolder"
 .end annotation
 
 
 # instance fields
 .field name:Ljava/lang/String;
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
 .field next:Lcom/google/common/base/MoreObjects$ToStringHelper$ValueHolder;
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
 .field value:Ljava/lang/Object;
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
 
 # direct methods
-.method private constructor <init>()V
+.method constructor <init>()V
     .locals 0
 
-    .line 382
+    .line 449
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method synthetic constructor <init>(Lcom/google/common/base/MoreObjects$1;)V
-    .locals 0
-
-    .line 382
-    invoke-direct {p0}, Lcom/google/common/base/MoreObjects$ToStringHelper$ValueHolder;-><init>()V
 
     return-void
 .end method

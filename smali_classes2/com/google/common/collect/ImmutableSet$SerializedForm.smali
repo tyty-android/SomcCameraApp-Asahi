@@ -28,11 +28,19 @@
 # direct methods
 .method constructor <init>([Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
 
-    .line 363
+    .line 396
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 364
+    .line 397
     iput-object p1, p0, Lcom/google/common/collect/ImmutableSet$SerializedForm;->elements:[Ljava/lang/Object;
 
     return-void
@@ -43,7 +51,7 @@
 .method readResolve()Ljava/lang/Object;
     .locals 0
 
-    .line 368
+    .line 401
     iget-object p0, p0, Lcom/google/common/collect/ImmutableSet$SerializedForm;->elements:[Ljava/lang/Object;
 
     invoke-static {p0}, Lcom/google/common/collect/ImmutableSet;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSet;

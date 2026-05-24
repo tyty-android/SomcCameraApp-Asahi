@@ -38,20 +38,28 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/CompactHashSet;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 527
+    .line 544
     iput-object p1, p0, Lcom/google/common/collect/CompactHashSet$1;->this$0:Lcom/google/common/collect/CompactHashSet;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 528
+    .line 545
     invoke-static {p1}, Lcom/google/common/collect/CompactHashSet;->access$000(Lcom/google/common/collect/CompactHashSet;)I
 
     move-result v0
 
     iput v0, p0, Lcom/google/common/collect/CompactHashSet$1;->expectedMetadata:I
 
-    .line 529
+    .line 546
     invoke-virtual {p1}, Lcom/google/common/collect/CompactHashSet;->firstEntryIndex()I
 
     move-result p1
@@ -60,7 +68,7 @@
 
     const/4 p1, -0x1
 
-    .line 530
+    .line 547
     iput p1, p0, Lcom/google/common/collect/CompactHashSet$1;->indexToRemove:I
 
     return-void
@@ -69,7 +77,7 @@
 .method private checkForConcurrentModification()V
     .locals 1
 
-    .line 565
+    .line 582
     iget-object v0, p0, Lcom/google/common/collect/CompactHashSet$1;->this$0:Lcom/google/common/collect/CompactHashSet;
 
     invoke-static {v0}, Lcom/google/common/collect/CompactHashSet;->access$000(Lcom/google/common/collect/CompactHashSet;)I
@@ -82,7 +90,7 @@
 
     return-void
 
-    .line 566
+    .line 583
     :cond_0
     new-instance p0, Ljava/util/ConcurrentModificationException;
 
@@ -96,7 +104,7 @@
 .method public hasNext()Z
     .locals 0
 
-    .line 534
+    .line 551
     iget p0, p0, Lcom/google/common/collect/CompactHashSet$1;->currentIndex:I
 
     if-ltz p0, :cond_0
@@ -115,7 +123,7 @@
 .method incrementExpectedModCount()V
     .locals 1
 
-    .line 561
+    .line 578
     iget v0, p0, Lcom/google/common/collect/CompactHashSet$1;->expectedMetadata:I
 
     add-int/lit8 v0, v0, 0x20
@@ -127,40 +135,43 @@
 
 .method public next()Ljava/lang/Object;
     .locals 3
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TE;"
         }
     .end annotation
 
-    .line 540
+    .line 557
     invoke-direct {p0}, Lcom/google/common/collect/CompactHashSet$1;->checkForConcurrentModification()V
 
-    .line 541
+    .line 558
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashSet$1;->hasNext()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 544
+    .line 561
     iget v0, p0, Lcom/google/common/collect/CompactHashSet$1;->currentIndex:I
 
     iput v0, p0, Lcom/google/common/collect/CompactHashSet$1;->indexToRemove:I
 
-    .line 545
-    iget-object v0, p0, Lcom/google/common/collect/CompactHashSet$1;->this$0:Lcom/google/common/collect/CompactHashSet;
+    .line 562
+    iget-object v1, p0, Lcom/google/common/collect/CompactHashSet$1;->this$0:Lcom/google/common/collect/CompactHashSet;
 
-    iget-object v0, v0, Lcom/google/common/collect/CompactHashSet;->elements:[Ljava/lang/Object;
+    invoke-static {v1, v0}, Lcom/google/common/collect/CompactHashSet;->access$100(Lcom/google/common/collect/CompactHashSet;I)Ljava/lang/Object;
 
-    iget v1, p0, Lcom/google/common/collect/CompactHashSet$1;->currentIndex:I
+    move-result-object v0
 
-    aget-object v0, v0, v1
+    .line 563
+    iget-object v1, p0, Lcom/google/common/collect/CompactHashSet$1;->this$0:Lcom/google/common/collect/CompactHashSet;
 
-    .line 546
-    iget-object v2, p0, Lcom/google/common/collect/CompactHashSet$1;->this$0:Lcom/google/common/collect/CompactHashSet;
+    iget v2, p0, Lcom/google/common/collect/CompactHashSet$1;->currentIndex:I
 
-    invoke-virtual {v2, v1}, Lcom/google/common/collect/CompactHashSet;->getSuccessor(I)I
+    invoke-virtual {v1, v2}, Lcom/google/common/collect/CompactHashSet;->getSuccessor(I)I
 
     move-result v1
 
@@ -168,7 +179,7 @@
 
     return-object v0
 
-    .line 542
+    .line 559
     :cond_0
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -180,10 +191,10 @@
 .method public remove()V
     .locals 3
 
-    .line 552
+    .line 569
     invoke-direct {p0}, Lcom/google/common/collect/CompactHashSet$1;->checkForConcurrentModification()V
 
-    .line 553
+    .line 570
     iget v0, p0, Lcom/google/common/collect/CompactHashSet$1;->indexToRemove:I
 
     if-ltz v0, :cond_0
@@ -198,21 +209,21 @@
     :goto_0
     invoke-static {v0}, Lcom/google/common/collect/CollectPreconditions;->checkRemove(Z)V
 
-    .line 554
+    .line 571
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashSet$1;->incrementExpectedModCount()V
 
-    .line 555
+    .line 572
     iget-object v0, p0, Lcom/google/common/collect/CompactHashSet$1;->this$0:Lcom/google/common/collect/CompactHashSet;
 
-    iget-object v1, v0, Lcom/google/common/collect/CompactHashSet;->elements:[Ljava/lang/Object;
+    iget v1, p0, Lcom/google/common/collect/CompactHashSet$1;->indexToRemove:I
 
-    iget v2, p0, Lcom/google/common/collect/CompactHashSet$1;->indexToRemove:I
+    invoke-static {v0, v1}, Lcom/google/common/collect/CompactHashSet;->access$100(Lcom/google/common/collect/CompactHashSet;I)Ljava/lang/Object;
 
-    aget-object v1, v1, v2
+    move-result-object v1
 
     invoke-virtual {v0, v1}, Lcom/google/common/collect/CompactHashSet;->remove(Ljava/lang/Object;)Z
 
-    .line 556
+    .line 573
     iget-object v0, p0, Lcom/google/common/collect/CompactHashSet$1;->this$0:Lcom/google/common/collect/CompactHashSet;
 
     iget v1, p0, Lcom/google/common/collect/CompactHashSet$1;->currentIndex:I
@@ -227,7 +238,7 @@
 
     const/4 v0, -0x1
 
-    .line 557
+    .line 574
     iput v0, p0, Lcom/google/common/collect/CompactHashSet$1;->indexToRemove:I
 
     return-void

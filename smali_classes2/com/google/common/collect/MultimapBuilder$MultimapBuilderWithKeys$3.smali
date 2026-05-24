@@ -32,11 +32,21 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/MultimapBuilder$MultimapBuilderWithKeys;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$expectedValuesPerKey"
+        }
+    .end annotation
 
-    .line 327
-    iput-object p1, p0, Lcom/google/common/collect/MultimapBuilder$MultimapBuilderWithKeys$3;->this$0:Lcom/google/common/collect/MultimapBuilder$MultimapBuilderWithKeys;
-
+    .line 330
     iput p2, p0, Lcom/google/common/collect/MultimapBuilder$MultimapBuilderWithKeys$3;->val$expectedValuesPerKey:I
+
+    iput-object p1, p0, Lcom/google/common/collect/MultimapBuilder$MultimapBuilderWithKeys$3;->this$0:Lcom/google/common/collect/MultimapBuilder$MultimapBuilderWithKeys;
 
     invoke-direct {p0}, Lcom/google/common/collect/MultimapBuilder$SetMultimapBuilder;-><init>()V
 
@@ -48,7 +58,7 @@
 .method public bridge synthetic build()Lcom/google/common/collect/Multimap;
     .locals 0
 
-    .line 327
+    .line 330
     invoke-virtual {p0}, Lcom/google/common/collect/MultimapBuilder$MultimapBuilderWithKeys$3;->build()Lcom/google/common/collect/SetMultimap;
 
     move-result-object p0
@@ -68,10 +78,10 @@
         }
     .end annotation
 
-    .line 330
+    .line 333
     iget-object v0, p0, Lcom/google/common/collect/MultimapBuilder$MultimapBuilderWithKeys$3;->this$0:Lcom/google/common/collect/MultimapBuilder$MultimapBuilderWithKeys;
 
-    .line 331
+    .line 334
     invoke-virtual {v0}, Lcom/google/common/collect/MultimapBuilder$MultimapBuilderWithKeys;->createMap()Ljava/util/Map;
 
     move-result-object v0
@@ -82,7 +92,7 @@
 
     invoke-direct {v1, p0}, Lcom/google/common/collect/MultimapBuilder$HashSetSupplier;-><init>(I)V
 
-    .line 330
+    .line 333
     invoke-static {v0, v1}, Lcom/google/common/collect/Multimaps;->newSetMultimap(Ljava/util/Map;Lcom/google/common/base/Supplier;)Lcom/google/common/collect/SetMultimap;
 
     move-result-object p0

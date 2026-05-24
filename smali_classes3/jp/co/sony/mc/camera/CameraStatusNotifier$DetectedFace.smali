@@ -14,7 +14,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nCameraStatusNotifier.kt\nKotlin\n*S Kotlin\n*F\n+ 1 CameraStatusNotifier.kt\njp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,368:1\n1557#2:369\n1628#2,3:370\n1557#2:373\n1628#2,3:374\n*S KotlinDebug\n*F\n+ 1 CameraStatusNotifier.kt\njp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace\n*L\n50#1:369\n50#1:370,3\n68#1:373\n68#1:374,3\n*E\n"
+    value = "SMAP\nCameraStatusNotifier.kt\nKotlin\n*S Kotlin\n*F\n+ 1 CameraStatusNotifier.kt\njp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,418:1\n1557#2:419\n1628#2,3:420\n1557#2:423\n1628#2,3:424\n*S KotlinDebug\n*F\n+ 1 CameraStatusNotifier.kt\njp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace\n*L\n51#1:419\n51#1:420,3\n69#1:423\n69#1:424,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -92,15 +92,15 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 39
+    .line 40
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 43
+    .line 44
     iget v0, p1, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceDetectionResult;->indexOfSelectedFace:I
 
     iput v0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->selectedFaceIndex:I
 
-    .line 50
+    .line 51
     iget-object p1, p1, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceDetectionResult;->extFaceList:Ljava/util/List;
 
     const-string v0, "extFaceList"
@@ -109,7 +109,7 @@
 
     check-cast p1, Ljava/lang/Iterable;
 
-    .line 369
+    .line 419
     new-instance v0, Ljava/util/ArrayList;
 
     const/16 v1, 0xa
@@ -122,7 +122,7 @@
 
     check-cast v0, Ljava/util/Collection;
 
-    .line 370
+    .line 420
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -138,25 +138,25 @@
 
     move-result-object v1
 
-    .line 371
+    .line 421
     check-cast v1, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ExtFace;
 
-    .line 51
+    .line 52
     new-instance v8, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;
 
-    .line 52
+    .line 53
     iget-object v3, v1, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ExtFace;->rect:Landroid/graphics/Rect;
 
-    .line 53
+    .line 54
     iget-object v4, v1, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ExtFace;->eyePosition:Landroid/graphics/Point;
 
-    .line 54
+    .line 55
     iget v5, v1, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ExtFace;->id:I
 
-    .line 55
+    .line 56
     iget v6, v1, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ExtFace;->trackingId:I
 
-    .line 56
+    .line 57
     iget-object v7, v1, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ExtFace;->faceRectType:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
 
     const-string v1, "faceRectType"
@@ -165,19 +165,19 @@
 
     move-object v2, v8
 
-    .line 51
+    .line 52
     invoke-direct/range {v2 .. v7}, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;-><init>(Landroid/graphics/Rect;Landroid/graphics/Point;IILjp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;)V
 
-    .line 371
+    .line 421
     invoke-interface {v0, v8}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 372
+    .line 422
     :cond_0
     check-cast v0, Ljava/util/List;
 
-    .line 50
+    .line 51
     iput-object v0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->faceList:Ljava/util/List;
 
     return-void
@@ -188,12 +188,12 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
 
-    .line 61
+    .line 62
     instance-of v0, p1, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;
 
     if-eqz v0, :cond_0
 
-    .line 62
+    .line 63
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->faceList:Ljava/util/List;
 
     check-cast p1, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;
@@ -206,7 +206,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 63
+    .line 64
     iget p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->selectedFaceIndex:I
 
     iget p1, p1, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->selectedFaceIndex:I
@@ -227,7 +227,7 @@
 .method public final getFaceCount()I
     .locals 0
 
-    .line 47
+    .line 48
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->faceList:Ljava/util/List;
 
     check-cast p0, Ljava/util/Collection;
@@ -250,7 +250,7 @@
         }
     .end annotation
 
-    .line 42
+    .line 43
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->faceList:Ljava/util/List;
 
     return-object p0
@@ -259,7 +259,7 @@
 .method public final getSelectedFace()Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;
     .locals 1
 
-    .line 45
+    .line 46
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->faceList:Ljava/util/List;
 
     iget p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->selectedFaceIndex:I
@@ -276,7 +276,7 @@
 .method public final getSelectedFaceIndex()I
     .locals 0
 
-    .line 43
+    .line 44
     iget p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->selectedFaceIndex:I
 
     return p0
@@ -285,7 +285,7 @@
 .method public hashCode()I
     .locals 1
 
-    .line 65
+    .line 66
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->faceList:Ljava/util/List;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
@@ -308,12 +308,12 @@
 .method public toString()Ljava/lang/String;
     .locals 5
 
-    .line 68
+    .line 69
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->faceList:Ljava/util/List;
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 373
+    .line 423
     new-instance v1, Ljava/util/ArrayList;
 
     const/16 v2, 0xa
@@ -326,7 +326,7 @@
 
     check-cast v1, Ljava/util/Collection;
 
-    .line 374
+    .line 424
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -342,10 +342,10 @@
 
     move-result-object v2
 
-    .line 375
+    .line 425
     check-cast v2, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;
 
-    .line 68
+    .line 69
     new-instance v3, Ljava/lang/StringBuilder;
 
     const-string v4, "\t"
@@ -366,16 +366,16 @@
 
     move-result-object v2
 
-    .line 375
+    .line 425
     invoke-interface {v1, v2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 376
+    .line 426
     :cond_0
     check-cast v1, Ljava/util/List;
 
-    .line 69
+    .line 70
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->getSelectedFace()Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;
 
     move-result-object p0

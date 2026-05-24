@@ -95,9 +95,9 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f0801eb
+    const v3, 0x7f080247
 
-    const v4, 0x7f110254
+    const v4, 0x7f11029d
 
     const-string v5, "af-s"
 
@@ -120,9 +120,9 @@
 
     const/4 v12, 0x1
 
-    const v13, 0x7f0801e8
+    const v13, 0x7f080244
 
-    const v14, 0x7f110252
+    const v14, 0x7f11029b
 
     const-string v15, "af-c"
 
@@ -170,9 +170,9 @@
 
     const/4 v12, 0x3
 
-    const v13, 0x7f0801ee
+    const v13, 0x7f08024a
 
-    const v14, 0x7f110258
+    const v14, 0x7f1102a1
 
     const-string v15, "af-s"
 
@@ -254,6 +254,29 @@
 
 .method private constructor <init>(Ljava/lang/String;IIILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId",
+            "value",
+            "afModeValueOn",
+            "afModeValueOff",
+            "afModeValueForVideo"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -291,6 +314,16 @@
 
 .method public static getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId"
+        }
+    .end annotation
 
     .line 220
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isMacro()Z
@@ -335,6 +368,16 @@
 
 .method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId"
+        }
+    .end annotation
 
     .line 175
     new-instance v0, Ljava/util/ArrayList;
@@ -475,6 +518,18 @@
 
 .method public static isSupportedValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId",
+            "checkTarget"
+        }
+    .end annotation
 
     .line 210
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
@@ -509,6 +564,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 30
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
@@ -541,6 +604,14 @@
 # virtual methods
 .method public getAfModeValue(Z)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isPreAf"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 

@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/graph/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<N:",
@@ -18,8 +21,17 @@
 
 
 # direct methods
-.method protected constructor <init>(Ljava/util/Map;)V
+.method constructor <init>(Ljava/util/Map;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "incidentEdgeMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -28,7 +40,7 @@
         }
     .end annotation
 
-    .line 38
+    .line 39
     invoke-direct {p0, p1}, Lcom/google/common/graph/AbstractUndirectedNetworkConnections;-><init>(Ljava/util/Map;)V
 
     return-void
@@ -48,7 +60,7 @@
         }
     .end annotation
 
-    .line 42
+    .line 43
     new-instance v0, Lcom/google/common/graph/UndirectedNetworkConnections;
 
     const/4 v1, 0x2
@@ -64,6 +76,15 @@
 
 .method static ofImmutable(Ljava/util/Map;)Lcom/google/common/graph/UndirectedNetworkConnections;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "incidentEdges"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -78,7 +99,7 @@
         }
     .end annotation
 
-    .line 46
+    .line 47
     new-instance v0, Lcom/google/common/graph/UndirectedNetworkConnections;
 
     invoke-static {p0}, Lcom/google/common/collect/ImmutableBiMap;->copyOf(Ljava/util/Map;)Lcom/google/common/collect/ImmutableBiMap;
@@ -102,7 +123,7 @@
         }
     .end annotation
 
-    .line 51
+    .line 52
     iget-object p0, p0, Lcom/google/common/graph/UndirectedNetworkConnections;->incidentEdgeMap:Ljava/util/Map;
 
     check-cast p0, Lcom/google/common/collect/BiMap;
@@ -120,6 +141,15 @@
 
 .method public edgesConnecting(Ljava/lang/Object;)Ljava/util/Set;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)",
@@ -128,7 +158,7 @@
         }
     .end annotation
 
-    .line 56
+    .line 57
     new-instance v0, Lcom/google/common/graph/EdgesConnecting;
 
     iget-object p0, p0, Lcom/google/common/graph/UndirectedNetworkConnections;->incidentEdgeMap:Ljava/util/Map;

@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/graph/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation runtime Lcom/google/errorprone/annotations/Immutable;
     containerOf = {
         "N",
@@ -33,6 +36,15 @@
 # direct methods
 .method private constructor <init>(Lcom/google/common/graph/ValueGraph;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "graph"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -41,7 +53,7 @@
         }
     .end annotation
 
-    .line 49
+    .line 51
     invoke-static {p1}, Lcom/google/common/graph/ValueGraphBuilder;->from(Lcom/google/common/graph/ValueGraph;)Lcom/google/common/graph/ValueGraphBuilder;
 
     move-result-object v0
@@ -67,6 +79,17 @@
 
 .method private static connectionsOf(Lcom/google/common/graph/ValueGraph;Ljava/lang/Object;)Lcom/google/common/graph/GraphConnections;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "graph",
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -81,31 +104,31 @@
         }
     .end annotation
 
-    .line 93
-    new-instance v0, Lcom/google/common/graph/ImmutableValueGraph$1;
+    .line 94
+    new-instance v0, Lcom/google/common/graph/ImmutableValueGraph$$ExternalSyntheticLambda0;
 
-    invoke-direct {v0, p0, p1}, Lcom/google/common/graph/ImmutableValueGraph$1;-><init>(Lcom/google/common/graph/ValueGraph;Ljava/lang/Object;)V
+    invoke-direct {v0, p0, p1}, Lcom/google/common/graph/ImmutableValueGraph$$ExternalSyntheticLambda0;-><init>(Lcom/google/common/graph/ValueGraph;Ljava/lang/Object;)V
 
-    .line 100
+    .line 98
     invoke-interface {p0}, Lcom/google/common/graph/ValueGraph;->isDirected()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 102
+    .line 100
     invoke-interface {p0, p1}, Lcom/google/common/graph/ValueGraph;->incidentEdges(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object p0
 
-    .line 101
+    .line 99
     invoke-static {p1, p0, v0}, Lcom/google/common/graph/DirectedGraphConnections;->ofImmutable(Ljava/lang/Object;Ljava/lang/Iterable;Lcom/google/common/base/Function;)Lcom/google/common/graph/DirectedGraphConnections;
 
     move-result-object p0
 
     goto :goto_0
 
-    .line 104
+    .line 102
     :cond_0
     invoke-interface {p0, p1}, Lcom/google/common/graph/ValueGraph;->adjacentNodes(Ljava/lang/Object;)Ljava/util/Set;
 
@@ -115,7 +138,7 @@
 
     move-result-object p0
 
-    .line 103
+    .line 101
     invoke-static {p0}, Lcom/google/common/graph/UndirectedGraphConnections;->ofImmutable(Ljava/util/Map;)Lcom/google/common/graph/UndirectedGraphConnections;
 
     move-result-object p0
@@ -126,6 +149,15 @@
 
 .method public static copyOf(Lcom/google/common/graph/ImmutableValueGraph;)Lcom/google/common/graph/ImmutableValueGraph;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "graph"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -143,7 +175,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 66
+    .line 68
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -155,6 +187,15 @@
 
 .method public static copyOf(Lcom/google/common/graph/ValueGraph;)Lcom/google/common/graph/ImmutableValueGraph;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "graph"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -169,17 +210,17 @@
         }
     .end annotation
 
-    .line 54
+    .line 56
     instance-of v0, p0, Lcom/google/common/graph/ImmutableValueGraph;
 
     if-eqz v0, :cond_0
 
-    .line 55
+    .line 57
     check-cast p0, Lcom/google/common/graph/ImmutableValueGraph;
 
     goto :goto_0
 
-    .line 56
+    .line 58
     :cond_0
     new-instance v0, Lcom/google/common/graph/ImmutableValueGraph;
 
@@ -193,6 +234,15 @@
 
 .method private static getNodeConnections(Lcom/google/common/graph/ValueGraph;)Lcom/google/common/collect/ImmutableMap;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "graph"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -209,12 +259,12 @@
         }
     .end annotation
 
-    .line 84
+    .line 86
     invoke-static {}, Lcom/google/common/collect/ImmutableMap;->builder()Lcom/google/common/collect/ImmutableMap$Builder;
 
     move-result-object v0
 
-    .line 85
+    .line 87
     invoke-interface {p0}, Lcom/google/common/graph/ValueGraph;->nodes()Ljava/util/Set;
 
     move-result-object v1
@@ -234,7 +284,7 @@
 
     move-result-object v2
 
-    .line 86
+    .line 88
     invoke-static {p0, v2}, Lcom/google/common/graph/ImmutableValueGraph;->connectionsOf(Lcom/google/common/graph/ValueGraph;Ljava/lang/Object;)Lcom/google/common/graph/GraphConnections;
 
     move-result-object v3
@@ -243,9 +293,26 @@
 
     goto :goto_0
 
-    .line 88
+    .line 90
     :cond_0
-    invoke-virtual {v0}, Lcom/google/common/collect/ImmutableMap$Builder;->build()Lcom/google/common/collect/ImmutableMap;
+    invoke-virtual {v0}, Lcom/google/common/collect/ImmutableMap$Builder;->buildOrThrow()Lcom/google/common/collect/ImmutableMap;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$connectionsOf$0(Lcom/google/common/graph/ValueGraph;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    .line 97
+    invoke-interface {p0, p1, p2, v0}, Lcom/google/common/graph/ValueGraph;->edgeValueOrDefault(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -256,8 +323,16 @@
 # virtual methods
 .method public bridge synthetic adjacentNodes(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "node"
+        }
+    .end annotation
 
-    .line 43
+    .line 44
     invoke-super {p0, p1}, Lcom/google/common/graph/StandardValueGraph;->adjacentNodes(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object p0
@@ -268,7 +343,7 @@
 .method public bridge synthetic allowsSelfLoops()Z
     .locals 0
 
-    .line 43
+    .line 44
     invoke-super {p0}, Lcom/google/common/graph/StandardValueGraph;->allowsSelfLoops()Z
 
     move-result p0
@@ -279,7 +354,7 @@
 .method public bridge synthetic asGraph()Lcom/google/common/graph/Graph;
     .locals 0
 
-    .line 43
+    .line 44
     invoke-virtual {p0}, Lcom/google/common/graph/ImmutableValueGraph;->asGraph()Lcom/google/common/graph/ImmutableGraph;
 
     move-result-object p0
@@ -297,7 +372,7 @@
         }
     .end annotation
 
-    .line 76
+    .line 78
     new-instance v0, Lcom/google/common/graph/ImmutableGraph;
 
     invoke-direct {v0, p0}, Lcom/google/common/graph/ImmutableGraph;-><init>(Lcom/google/common/graph/BaseGraph;)V
@@ -308,13 +383,24 @@
 .method public bridge synthetic edgeValueOrDefault(Lcom/google/common/graph/EndpointPair;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "endpoints",
+            "defaultValue"
+        }
     .end annotation
 
-    .line 43
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 44
     invoke-super {p0, p1, p2}, Lcom/google/common/graph/StandardValueGraph;->edgeValueOrDefault(Lcom/google/common/graph/EndpointPair;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -325,13 +411,26 @@
 .method public bridge synthetic edgeValueOrDefault(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x1000
+        }
+        names = {
+            "nodeU",
+            "nodeV",
+            "defaultValue"
+        }
     .end annotation
 
-    .line 43
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 44
     invoke-super {p0, p1, p2, p3}, Lcom/google/common/graph/StandardValueGraph;->edgeValueOrDefault(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -341,8 +440,16 @@
 
 .method public bridge synthetic hasEdgeConnecting(Lcom/google/common/graph/EndpointPair;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "endpoints"
+        }
+    .end annotation
 
-    .line 43
+    .line 44
     invoke-super {p0, p1}, Lcom/google/common/graph/StandardValueGraph;->hasEdgeConnecting(Lcom/google/common/graph/EndpointPair;)Z
 
     move-result p0
@@ -352,8 +459,18 @@
 
 .method public bridge synthetic hasEdgeConnecting(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "nodeU",
+            "nodeV"
+        }
+    .end annotation
 
-    .line 43
+    .line 44
     invoke-super {p0, p1, p2}, Lcom/google/common/graph/StandardValueGraph;->hasEdgeConnecting(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p0
@@ -371,7 +488,7 @@
         }
     .end annotation
 
-    .line 71
+    .line 73
     invoke-static {}, Lcom/google/common/graph/ElementOrder;->stable()Lcom/google/common/graph/ElementOrder;
 
     move-result-object p0
@@ -381,8 +498,16 @@
 
 .method public bridge synthetic incidentEdges(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "node"
+        }
+    .end annotation
 
-    .line 43
+    .line 44
     invoke-super {p0, p1}, Lcom/google/common/graph/StandardValueGraph;->incidentEdges(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object p0
@@ -393,7 +518,7 @@
 .method public bridge synthetic isDirected()Z
     .locals 0
 
-    .line 43
+    .line 44
     invoke-super {p0}, Lcom/google/common/graph/StandardValueGraph;->isDirected()Z
 
     move-result p0
@@ -404,7 +529,7 @@
 .method public bridge synthetic nodeOrder()Lcom/google/common/graph/ElementOrder;
     .locals 0
 
-    .line 43
+    .line 44
     invoke-super {p0}, Lcom/google/common/graph/StandardValueGraph;->nodeOrder()Lcom/google/common/graph/ElementOrder;
 
     move-result-object p0
@@ -415,7 +540,7 @@
 .method public bridge synthetic nodes()Ljava/util/Set;
     .locals 0
 
-    .line 43
+    .line 44
     invoke-super {p0}, Lcom/google/common/graph/StandardValueGraph;->nodes()Ljava/util/Set;
 
     move-result-object p0
@@ -425,8 +550,16 @@
 
 .method public bridge synthetic predecessors(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "node"
+        }
+    .end annotation
 
-    .line 43
+    .line 44
     invoke-super {p0, p1}, Lcom/google/common/graph/StandardValueGraph;->predecessors(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object p0
@@ -436,8 +569,16 @@
 
 .method public bridge synthetic successors(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "node"
+        }
+    .end annotation
 
-    .line 43
+    .line 44
     invoke-super {p0, p1}, Lcom/google/common/graph/StandardValueGraph;->successors(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object p0

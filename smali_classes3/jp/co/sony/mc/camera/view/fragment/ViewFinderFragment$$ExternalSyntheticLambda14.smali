@@ -9,11 +9,11 @@
 # instance fields
 .field public final synthetic f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
-.field public final synthetic f$1:Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
+.field public final synthetic f$1:Landroid/view/View;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;)V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Landroid/view/View;)V
     .locals 0
 
     .line 0
@@ -21,7 +21,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda14;->f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
-    iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda14;->f$1:Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda14;->f$1:Landroid/view/View;
 
     return-void
 .end method
@@ -34,11 +34,11 @@
     .line 0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda14;->f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda14;->f$1:Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda14;->f$1:Landroid/view/View;
 
-    check-cast p1, Lkotlin/Pair;
+    check-cast p1, Ljava/lang/Integer;
 
-    invoke-static {v0, p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->$r8$lambda$HIhbOX3T3tactNTqOpy0oT2y5yQ(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;Lkotlin/Pair;)V
+    invoke-static {v0, p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->$r8$lambda$SOJwRQCZMi95dxZfZ8elf42GjWc(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Landroid/view/View;Ljava/lang/Integer;)V
 
     return-void
 .end method

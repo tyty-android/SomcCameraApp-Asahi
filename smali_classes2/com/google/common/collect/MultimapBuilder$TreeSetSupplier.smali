@@ -45,6 +45,15 @@
 # direct methods
 .method constructor <init>(Ljava/util/Comparator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "comparator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -53,10 +62,10 @@
         }
     .end annotation
 
-    .line 241
+    .line 244
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 242
+    .line 245
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -73,7 +82,7 @@
 .method public bridge synthetic get()Ljava/lang/Object;
     .locals 0
 
-    .line 238
+    .line 240
     invoke-virtual {p0}, Lcom/google/common/collect/MultimapBuilder$TreeSetSupplier;->get()Ljava/util/SortedSet;
 
     move-result-object p0
@@ -91,7 +100,7 @@
         }
     .end annotation
 
-    .line 247
+    .line 250
     new-instance v0, Ljava/util/TreeSet;
 
     iget-object p0, p0, Lcom/google/common/collect/MultimapBuilder$TreeSetSupplier;->comparator:Ljava/util/Comparator;

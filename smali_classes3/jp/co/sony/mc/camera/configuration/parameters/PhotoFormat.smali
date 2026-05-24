@@ -26,7 +26,7 @@
 
 .field public static final enum RAW_JPEG:Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
 
-.field private static final sParameterTextId:I = 0x7f11023e
+.field private static final sParameterTextId:I = 0x7f110287
 
 
 # instance fields
@@ -59,9 +59,9 @@
     .line 21
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
 
-    const v1, 0x7f080176
+    const v1, 0x7f0801d2
 
-    const v2, 0x7f11023b
+    const v2, 0x7f110284
 
     const-string v3, "JPEG"
 
@@ -74,9 +74,9 @@
     .line 24
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
 
-    const v1, 0x7f080179
+    const v1, 0x7f0801d5
 
-    const v2, 0x7f11023d
+    const v2, 0x7f110286
 
     const-string v3, "RAW"
 
@@ -89,9 +89,9 @@
     .line 27
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
 
-    const v1, 0x7f08017b
+    const v1, 0x7f0801d7
 
-    const v2, 0x7f11023c
+    const v2, 0x7f110285
 
     const-string v3, "RAW_JPEG"
 
@@ -113,6 +113,21 @@
 
 .method private constructor <init>(Ljava/lang/String;III)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)V"
@@ -142,6 +157,16 @@
 
 .method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "capturingMode",
+            "cameraId"
+        }
+    .end annotation
 
     .line 51
     new-instance p0, Ljava/util/ArrayList;
@@ -187,6 +212,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 20
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;

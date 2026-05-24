@@ -17,8 +17,16 @@
 # direct methods
 .method protected constructor <init>(Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "seq"
+        }
+    .end annotation
 
-    .line 555
+    .line 661
     invoke-direct {p0, p1}, Lcom/google/common/io/CharSource$CharSequenceCharSource;-><init>(Ljava/lang/CharSequence;)V
 
     return-void
@@ -28,21 +36,30 @@
 # virtual methods
 .method public copyTo(Lcom/google/common/io/CharSink;)J
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sink"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 571
+    .line 677
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 572
+    .line 678
     invoke-static {}, Lcom/google/common/io/Closer;->create()Lcom/google/common/io/Closer;
 
     move-result-object v0
 
-    .line 574
+    .line 680
     :try_start_0
     invoke-virtual {p1}, Lcom/google/common/io/CharSink;->openStream()Ljava/io/Writer;
 
@@ -54,14 +71,14 @@
 
     check-cast p1, Ljava/io/Writer;
 
-    .line 575
+    .line 681
     iget-object v1, p0, Lcom/google/common/io/CharSource$StringCharSource;->seq:Ljava/lang/CharSequence;
 
     check-cast v1, Ljava/lang/String;
 
     invoke-virtual {p1, v1}, Ljava/io/Writer;->write(Ljava/lang/String;)V
 
-    .line 576
+    .line 682
     iget-object p0, p0, Lcom/google/common/io/CharSource$StringCharSource;->seq:Ljava/lang/CharSequence;
 
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
@@ -72,7 +89,7 @@
 
     int-to-long p0, p0
 
-    .line 580
+    .line 686
     invoke-virtual {v0}, Lcom/google/common/io/Closer;->close()V
 
     return-wide p0
@@ -80,7 +97,7 @@
     :catchall_0
     move-exception p0
 
-    .line 578
+    .line 684
     :try_start_1
     invoke-virtual {v0, p0}, Lcom/google/common/io/Closer;->rethrow(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
 
@@ -93,27 +110,36 @@
     :catchall_1
     move-exception p0
 
-    .line 580
+    .line 686
     invoke-virtual {v0}, Lcom/google/common/io/Closer;->close()V
 
-    .line 581
+    .line 687
     throw p0
 .end method
 
 .method public copyTo(Ljava/lang/Appendable;)J
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "appendable"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 565
+    .line 671
     iget-object v0, p0, Lcom/google/common/io/CharSource$StringCharSource;->seq:Ljava/lang/CharSequence;
 
     invoke-interface {p1, v0}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
 
-    .line 566
+    .line 672
     iget-object p0, p0, Lcom/google/common/io/CharSource$StringCharSource;->seq:Ljava/lang/CharSequence;
 
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
@@ -128,7 +154,7 @@
 .method public openStream()Ljava/io/Reader;
     .locals 1
 
-    .line 560
+    .line 666
     new-instance v0, Ljava/io/StringReader;
 
     iget-object p0, p0, Lcom/google/common/io/CharSource$StringCharSource;->seq:Ljava/lang/CharSequence;

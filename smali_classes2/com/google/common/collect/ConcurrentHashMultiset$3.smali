@@ -31,7 +31,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -43,11 +43,21 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/ConcurrentHashMultiset;Ljava/util/Iterator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$readOnlyIterator"
+        }
+    .end annotation
 
-    .line 524
-    iput-object p1, p0, Lcom/google/common/collect/ConcurrentHashMultiset$3;->this$0:Lcom/google/common/collect/ConcurrentHashMultiset;
-
+    .line 531
     iput-object p2, p0, Lcom/google/common/collect/ConcurrentHashMultiset$3;->val$readOnlyIterator:Ljava/util/Iterator;
+
+    iput-object p1, p0, Lcom/google/common/collect/ConcurrentHashMultiset$3;->this$0:Lcom/google/common/collect/ConcurrentHashMultiset;
 
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingIterator;-><init>()V
 
@@ -59,7 +69,7 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 524
+    .line 531
     invoke-virtual {p0}, Lcom/google/common/collect/ConcurrentHashMultiset$3;->delegate()Ljava/util/Iterator;
 
     move-result-object p0
@@ -78,7 +88,7 @@
         }
     .end annotation
 
-    .line 529
+    .line 536
     iget-object p0, p0, Lcom/google/common/collect/ConcurrentHashMultiset$3;->val$readOnlyIterator:Ljava/util/Iterator;
 
     return-object p0
@@ -94,7 +104,7 @@
         }
     .end annotation
 
-    .line 534
+    .line 541
     invoke-super {p0}, Lcom/google/common/collect/ForwardingIterator;->next()Ljava/lang/Object;
 
     move-result-object v0
@@ -109,7 +119,7 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .locals 0
 
-    .line 524
+    .line 531
     invoke-virtual {p0}, Lcom/google/common/collect/ConcurrentHashMultiset$3;->next()Lcom/google/common/collect/Multiset$Entry;
 
     move-result-object p0
@@ -120,7 +130,7 @@
 .method public remove()V
     .locals 3
 
-    .line 540
+    .line 547
     iget-object v0, p0, Lcom/google/common/collect/ConcurrentHashMultiset$3;->last:Lcom/google/common/collect/Multiset$Entry;
 
     const/4 v1, 0x0
@@ -135,9 +145,11 @@
     move v0, v1
 
     :goto_0
-    invoke-static {v0}, Lcom/google/common/collect/CollectPreconditions;->checkRemove(Z)V
+    const-string v2, "no calls to next() since the last call to remove()"
 
-    .line 541
+    invoke-static {v0, v2}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
+
+    .line 548
     iget-object v0, p0, Lcom/google/common/collect/ConcurrentHashMultiset$3;->this$0:Lcom/google/common/collect/ConcurrentHashMultiset;
 
     iget-object v2, p0, Lcom/google/common/collect/ConcurrentHashMultiset$3;->last:Lcom/google/common/collect/Multiset$Entry;
@@ -150,7 +162,7 @@
 
     const/4 v0, 0x0
 
-    .line 542
+    .line 549
     iput-object v0, p0, Lcom/google/common/collect/ConcurrentHashMultiset$3;->last:Lcom/google/common/collect/Multiset$Entry;
 
     return-void

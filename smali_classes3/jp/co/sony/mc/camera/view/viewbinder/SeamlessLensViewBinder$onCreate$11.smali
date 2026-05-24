@@ -49,7 +49,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$onCreate$11;->$vm:Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;
 
-    .line 190
+    .line 280
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -60,7 +60,7 @@
 .method public onZoomed(I)V
     .locals 1
 
-    .line 192
+    .line 282
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$onCreate$11;->$vm:Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getSelected()Landroidx/lifecycle/LiveData;
@@ -81,7 +81,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 193
+    .line 283
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$onCreate$11;->$vm:Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->onZoomProgressed(I)V

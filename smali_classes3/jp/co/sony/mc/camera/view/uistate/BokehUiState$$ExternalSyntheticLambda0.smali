@@ -26,11 +26,7 @@
 
     check-cast p2, Ljava/lang/Boolean;
 
-    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result p0
-
-    invoke-static {p1, p0}, Ljp/co/sony/mc/camera/view/uistate/BokehUiState;->$r8$lambda$5nzDEcV_7OKyUmz2TEVnkizpHek(Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;Z)Z
+    invoke-static {p1, p2}, Ljp/co/sony/mc/camera/view/uistate/BokehUiState;->$r8$lambda$yRr9fohMw4mzbN7VFYcCpgo3lxw(Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;Ljava/lang/Boolean;)Z
 
     move-result p0
 

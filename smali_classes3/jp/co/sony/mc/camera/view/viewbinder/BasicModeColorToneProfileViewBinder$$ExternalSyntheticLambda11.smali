@@ -3,34 +3,40 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function2;
+.implements Lkotlin/jvm/functions/Function0;
+
+
+# instance fields
+.field public final synthetic f$0:Z
+
+.field public final synthetic f$1:Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder;
 
 
 # direct methods
-.method public synthetic constructor <init>()V
+.method public synthetic constructor <init>(ZLjp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder$$ExternalSyntheticLambda11;->f$0:Z
+
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder$$ExternalSyntheticLambda11;->f$1:Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public final invoke()Ljava/lang/Object;
+    .locals 1
 
     .line 0
-    check-cast p1, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
+    iget-boolean v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder$$ExternalSyntheticLambda11;->f$0:Z
 
-    check-cast p2, Ljava/lang/Boolean;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder$$ExternalSyntheticLambda11;->f$1:Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder;
 
-    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result p0
-
-    invoke-static {p1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder;->$r8$lambda$Hd6sRlzdClmXDW-Xe-mmyCtG1Qk(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;Z)Lkotlin/Pair;
+    invoke-static {v0, p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder;->$r8$lambda$iVXvV1tr106VUKTD6jtNrXYrguM(ZLjp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder;)Lkotlin/Unit;
 
     move-result-object p0
 

@@ -841,7 +841,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0c00ec
+    const v1, 0x7f0c00e6
 
     check-cast p0, Landroid/view/ViewGroup;
 
@@ -1079,7 +1079,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0c00ed
+    const v8, 0x7f0c00e7
 
     move-object v9, p0
 
@@ -1089,7 +1089,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f090236
+    const v8, 0x7f09023e
 
     .line 185
     invoke-virtual {v7, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2059,7 +2059,7 @@
 
     move-result-object p0
 
-    const v0, 0x7f09015e
+    const v0, 0x7f090164
 
     invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2076,7 +2076,7 @@
     .line 118
     invoke-super {p0}, Landroid/widget/FrameLayout;->onFinishInflate()V
 
-    const v0, 0x7f09016d
+    const v0, 0x7f090173
 
     .line 119
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/widget/ModeDial;->findViewById(I)Landroid/view/View;
@@ -2087,7 +2087,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ModeDial;->container:Landroid/widget/FrameLayout;
 
-    const v0, 0x7f09010c
+    const v0, 0x7f090109
 
     .line 121
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/widget/ModeDial;->findViewById(I)Landroid/view/View;
@@ -2130,7 +2130,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
 
-    const v0, 0x7f090181
+    const v0, 0x7f090185
 
     .line 125
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/widget/ModeDial;->findViewById(I)Landroid/view/View;
@@ -2268,7 +2268,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090236
+    const v1, 0x7f09023e
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

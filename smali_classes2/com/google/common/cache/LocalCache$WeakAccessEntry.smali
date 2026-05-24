@@ -52,9 +52,24 @@
 .method constructor <init>(Ljava/lang/ref/ReferenceQueue;Ljava/lang/Object;ILcom/google/common/cache/ReferenceEntry;)V
     .locals 0
     .param p4    # Lcom/google/common/cache/ReferenceEntry;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "queue",
+            "key",
+            "hash",
+            "next"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -65,22 +80,22 @@
         }
     .end annotation
 
-    .line 1266
+    .line 1304
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/google/common/cache/LocalCache$WeakEntry;-><init>(Ljava/lang/ref/ReferenceQueue;Ljava/lang/Object;ILcom/google/common/cache/ReferenceEntry;)V
 
     const-wide p1, 0x7fffffffffffffffL
 
-    .line 1271
+    .line 1309
     iput-wide p1, p0, Lcom/google/common/cache/LocalCache$WeakAccessEntry;->accessTime:J
 
-    .line 1284
+    .line 1322
     invoke-static {}, Lcom/google/common/cache/LocalCache;->nullEntry()Lcom/google/common/cache/ReferenceEntry;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/google/common/cache/LocalCache$WeakAccessEntry;->nextAccess:Lcom/google/common/cache/ReferenceEntry;
 
-    .line 1297
+    .line 1335
     invoke-static {}, Lcom/google/common/cache/LocalCache;->nullEntry()Lcom/google/common/cache/ReferenceEntry;
 
     move-result-object p1
@@ -95,7 +110,7 @@
 .method public getAccessTime()J
     .locals 2
 
-    .line 1275
+    .line 1313
     iget-wide v0, p0, Lcom/google/common/cache/LocalCache$WeakAccessEntry;->accessTime:J
 
     return-wide v0
@@ -111,7 +126,7 @@
         }
     .end annotation
 
-    .line 1288
+    .line 1326
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$WeakAccessEntry;->nextAccess:Lcom/google/common/cache/ReferenceEntry;
 
     return-object p0
@@ -127,7 +142,7 @@
         }
     .end annotation
 
-    .line 1301
+    .line 1339
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$WeakAccessEntry;->previousAccess:Lcom/google/common/cache/ReferenceEntry;
 
     return-object p0
@@ -135,8 +150,16 @@
 
 .method public setAccessTime(J)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "time"
+        }
+    .end annotation
 
-    .line 1280
+    .line 1318
     iput-wide p1, p0, Lcom/google/common/cache/LocalCache$WeakAccessEntry;->accessTime:J
 
     return-void
@@ -144,6 +167,15 @@
 
 .method public setNextInAccessQueue(Lcom/google/common/cache/ReferenceEntry;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "next"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -152,7 +184,7 @@
         }
     .end annotation
 
-    .line 1293
+    .line 1331
     iput-object p1, p0, Lcom/google/common/cache/LocalCache$WeakAccessEntry;->nextAccess:Lcom/google/common/cache/ReferenceEntry;
 
     return-void
@@ -160,6 +192,15 @@
 
 .method public setPreviousInAccessQueue(Lcom/google/common/cache/ReferenceEntry;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "previous"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -168,7 +209,7 @@
         }
     .end annotation
 
-    .line 1306
+    .line 1344
     iput-object p1, p0, Lcom/google/common/cache/LocalCache$WeakAccessEntry;->previousAccess:Lcom/google/common/cache/ReferenceEntry;
 
     return-void

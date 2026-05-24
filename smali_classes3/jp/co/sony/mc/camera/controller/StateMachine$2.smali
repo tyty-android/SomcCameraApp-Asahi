@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 479
+    .line 463
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$2;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,8 +43,16 @@
 
 .method private notifyResult(Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 
-    .line 497
+    .line 481
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$2;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmCurrentCapturingMode(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -49,12 +65,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 498
+    .line 482
     sget-object v0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->INSTANCE:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->startMonitor()V
 
-    .line 500
+    .line 484
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$2;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
@@ -75,8 +91,18 @@
 # virtual methods
 .method public onStoreCompleted(Ljp/co/sony/mc/camera/storage/SavingRequest;Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "result"
+        }
+    .end annotation
 
-    .line 482
+    .line 466
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
@@ -115,7 +141,7 @@
 
     move-result-object p1
 
-    .line 483
+    .line 467
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;->getStorageType()Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
     move-result-object v1
@@ -132,10 +158,10 @@
 
     aput-object p1, v0, v1
 
-    .line 482
+    .line 466
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 485
+    .line 469
     :cond_0
     invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/controller/StateMachine$2;->notifyResult(Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
 
@@ -144,8 +170,18 @@
 
 .method public onStoreFailed(Ljp/co/sony/mc/camera/storage/SavingRequest;Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "result"
+        }
+    .end annotation
 
-    .line 490
+    .line 474
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
@@ -184,7 +220,7 @@
 
     move-result-object p1
 
-    .line 491
+    .line 475
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;->getMediaSavingResult()Ljp/co/sony/mc/camera/mediasaving/MediaSavingResult;
 
     move-result-object v1
@@ -201,10 +237,10 @@
 
     aput-object p1, v0, v1
 
-    .line 490
+    .line 474
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 493
+    .line 477
     :cond_0
     invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/controller/StateMachine$2;->notifyResult(Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
 

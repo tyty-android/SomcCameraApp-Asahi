@@ -24,11 +24,19 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "controller"
+        }
+    .end annotation
 
-    .line 8059
+    .line 6987
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 8060
+    .line 6988
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$DeviceListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     return-void
@@ -39,7 +47,7 @@
 .method public onDeviceError()V
     .locals 3
 
-    .line 8065
+    .line 6993
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     const/4 v1, 0x0
@@ -56,7 +64,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 8066
+    .line 6994
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$DeviceListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 

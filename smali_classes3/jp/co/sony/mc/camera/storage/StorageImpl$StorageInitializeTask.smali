@@ -24,6 +24,14 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/storage/StorageImpl;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 174
     iput-object p1, p0, Ljp/co/sony/mc/camera/storage/StorageImpl$StorageInitializeTask;->this$0:Ljp/co/sony/mc/camera/storage/StorageImpl;

@@ -15,7 +15,7 @@
 
 
 # static fields
-.field static final INSTANCE:Lcom/google/common/base/CharMatcher$Digit;
+.field static final INSTANCE:Lcom/google/common/base/CharMatcher;
 
 .field private static final ZEROES:Ljava/lang/String; = "0\u0660\u06f0\u07c0\u0966\u09e6\u0a66\u0ae6\u0b66\u0be6\u0c66\u0ce6\u0d66\u0de6\u0e50\u0ed0\u0f20\u1040\u1090\u17e0\u1810\u1946\u19d0\u1a80\u1a90\u1b50\u1bb0\u1c40\u1c50\ua620\ua8d0\ua900\ua9d0\ua9f0\uaa50\uabf0\uff10"
 
@@ -24,12 +24,12 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1354
+    .line 1357
     new-instance v0, Lcom/google/common/base/CharMatcher$Digit;
 
     invoke-direct {v0}, Lcom/google/common/base/CharMatcher$Digit;-><init>()V
 
-    sput-object v0, Lcom/google/common/base/CharMatcher$Digit;->INSTANCE:Lcom/google/common/base/CharMatcher$Digit;
+    sput-object v0, Lcom/google/common/base/CharMatcher$Digit;->INSTANCE:Lcom/google/common/base/CharMatcher;
 
     return-void
 .end method
@@ -37,7 +37,7 @@
 .method private constructor <init>()V
     .locals 3
 
-    .line 1357
+    .line 1360
     invoke-static {}, Lcom/google/common/base/CharMatcher$Digit;->zeroes()[C
 
     move-result-object v0
@@ -58,7 +58,7 @@
 
     const/16 v0, 0x25
 
-    .line 1347
+    .line 1350
     new-array v1, v0, [C
 
     const/4 v2, 0x0
@@ -66,7 +66,7 @@
     :goto_0
     if-ge v2, v0, :cond_0
 
-    .line 1349
+    .line 1352
     const-string v3, "0\u0660\u06f0\u07c0\u0966\u09e6\u0a66\u0ae6\u0b66\u0be6\u0c66\u0ce6\u0d66\u0de6\u0e50\u0ed0\u0f20\u1040\u1090\u17e0\u1810\u1946\u19d0\u1a80\u1a90\u1b50\u1bb0\u1c40\u1c50\ua620\ua8d0\ua900\ua9d0\ua9f0\uaa50\uabf0\uff10"
 
     invoke-virtual {v3, v2}, Ljava/lang/String;->charAt(I)C
@@ -90,7 +90,7 @@
 .method private static zeroes()[C
     .locals 1
 
-    .line 1343
+    .line 1346
     const-string v0, "0\u0660\u06f0\u07c0\u0966\u09e6\u0a66\u0ae6\u0b66\u0be6\u0c66\u0ce6\u0d66\u0de6\u0e50\u0ed0\u0f20\u1040\u1090\u17e0\u1810\u1946\u19d0\u1a80\u1a90\u1b50\u1bb0\u1c40\u1c50\ua620\ua8d0\ua900\ua9d0\ua9f0\uaa50\uabf0\uff10"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C

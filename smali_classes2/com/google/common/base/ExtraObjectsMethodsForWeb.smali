@@ -3,11 +3,16 @@
 .source "ExtraObjectsMethodsForWeb.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/base/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # direct methods
 .method constructor <init>()V
     .locals 0
 
-    .line 24
+    .line 25
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

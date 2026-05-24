@@ -112,7 +112,7 @@
 .method private static final getOneToOneTopMargin(Landroid/content/res/Resources;)I
     .locals 1
 
-    const v0, 0x7f070143
+    const v0, 0x7f070184
 
     .line 27
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -125,7 +125,7 @@
 .method private static final getSelfTimerMarginTop(Landroid/content/res/Resources;)I
     .locals 1
 
-    const v0, 0x7f070174
+    const v0, 0x7f0701b2
 
     .line 29
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -179,7 +179,7 @@
 .method private static final getTopBarHeight(Landroid/content/res/Resources;)I
     .locals 1
 
-    const v0, 0x7f070144
+    const v0, 0x7f070185
 
     .line 25
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -990,7 +990,7 @@
 .method public static final relocateSelfTimerCountDownView(Ljp/co/sony/mc/camera/view/SelfTimerCountDownView;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;Landroid/content/res/Resources;)V
     .locals 1
 
-    const-string v0, "selfTimerCountDownView"
+    const-string/jumbo v0, "selfTimerCountDownView"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -1002,7 +1002,7 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v0, 0x7f090408
+    const v0, 0x7f09040b
 
     .line 145
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownView;->findViewById(I)Landroid/view/View;

@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/CameraActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 1106
+    .line 1093
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$10;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,8 +45,16 @@
 # virtual methods
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dialog"
+        }
+    .end annotation
 
-    .line 1109
+    .line 1096
     new-instance p1, Ljp/co/sony/mc/camera/idd/event/IddCloseDialogEvent;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_INTERNAL_UNAVAILABLE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
@@ -47,7 +63,7 @@
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/idd/event/IddCloseDialogEvent;->send()V
 
-    .line 1110
+    .line 1097
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$10;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/CameraActivity;->abort()V

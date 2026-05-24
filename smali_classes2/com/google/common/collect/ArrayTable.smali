@@ -7,12 +7,15 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/common/collect/ArrayTable$RowMap;,
-        Lcom/google/common/collect/ArrayTable$Row;,
-        Lcom/google/common/collect/ArrayTable$ColumnMap;,
         Lcom/google/common/collect/ArrayTable$Column;,
+        Lcom/google/common/collect/ArrayTable$ColumnMap;,
+        Lcom/google/common/collect/ArrayTable$Row;,
+        Lcom/google/common/collect/ArrayTable$RowMap;,
         Lcom/google/common/collect/ArrayTable$ArrayMap;
     }
 .end annotation
@@ -67,6 +70,9 @@
 .end field
 
 .field private transient columnMap:Lcom/google/common/collect/ArrayTable$ColumnMap;
+    .annotation runtime Lcom/google/errorprone/annotations/concurrent/LazyInit;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/common/collect/ArrayTable<",
@@ -74,7 +80,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -99,6 +105,9 @@
 .end field
 
 .field private transient rowMap:Lcom/google/common/collect/ArrayTable$RowMap;
+    .annotation runtime Lcom/google/errorprone/annotations/concurrent/LazyInit;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/common/collect/ArrayTable<",
@@ -106,7 +115,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -114,6 +123,15 @@
 # direct methods
 .method private constructor <init>(Lcom/google/common/collect/ArrayTable;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "table"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -122,30 +140,30 @@
         }
     .end annotation
 
-    .line 161
+    .line 177
     invoke-direct {p0}, Lcom/google/common/collect/AbstractTable;-><init>()V
 
-    .line 162
+    .line 178
     iget-object v0, p1, Lcom/google/common/collect/ArrayTable;->rowList:Lcom/google/common/collect/ImmutableList;
 
     iput-object v0, p0, Lcom/google/common/collect/ArrayTable;->rowList:Lcom/google/common/collect/ImmutableList;
 
-    .line 163
+    .line 179
     iget-object v1, p1, Lcom/google/common/collect/ArrayTable;->columnList:Lcom/google/common/collect/ImmutableList;
 
     iput-object v1, p0, Lcom/google/common/collect/ArrayTable;->columnList:Lcom/google/common/collect/ImmutableList;
 
-    .line 164
+    .line 180
     iget-object v2, p1, Lcom/google/common/collect/ArrayTable;->rowKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
     iput-object v2, p0, Lcom/google/common/collect/ArrayTable;->rowKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
-    .line 165
+    .line 181
     iget-object v2, p1, Lcom/google/common/collect/ArrayTable;->columnKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
     iput-object v2, p0, Lcom/google/common/collect/ArrayTable;->columnKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
-    .line 167
+    .line 184
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableList;->size()I
 
     move-result v0
@@ -174,12 +192,12 @@
 
     check-cast v0, [[Ljava/lang/Object;
 
-    .line 168
+    .line 185
     iput-object v0, p0, Lcom/google/common/collect/ArrayTable;->array:[[Ljava/lang/Object;
 
     move v2, v1
 
-    .line 169
+    .line 186
     :goto_0
     iget-object v3, p0, Lcom/google/common/collect/ArrayTable;->rowList:Lcom/google/common/collect/ImmutableList;
 
@@ -189,7 +207,7 @@
 
     if-ge v2, v3, :cond_0
 
-    .line 170
+    .line 187
     iget-object v3, p1, Lcom/google/common/collect/ArrayTable;->array:[[Ljava/lang/Object;
 
     aget-object v3, v3, v2
@@ -210,15 +228,24 @@
 
 .method private constructor <init>(Lcom/google/common/collect/Table;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "table"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/google/common/collect/Table<",
-            "TR;TC;TV;>;)V"
+            "TR;TC;+TV;>;)V"
         }
     .end annotation
 
-    .line 157
+    .line 173
     invoke-interface {p1}, Lcom/google/common/collect/Table;->rowKeySet()Ljava/util/Set;
 
     move-result-object v0
@@ -229,7 +256,7 @@
 
     invoke-direct {p0, v0, v1}, Lcom/google/common/collect/ArrayTable;-><init>(Ljava/lang/Iterable;Ljava/lang/Iterable;)V
 
-    .line 158
+    .line 174
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ArrayTable;->putAll(Lcom/google/common/collect/Table;)V
 
     return-void
@@ -237,6 +264,17 @@
 
 .method private constructor <init>(Ljava/lang/Iterable;Ljava/lang/Iterable;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "rowKeys",
+            "columnKeys"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -247,24 +285,24 @@
         }
     .end annotation
 
-    .line 135
+    .line 150
     invoke-direct {p0}, Lcom/google/common/collect/AbstractTable;-><init>()V
 
-    .line 136
+    .line 151
     invoke-static {p1}, Lcom/google/common/collect/ImmutableList;->copyOf(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/google/common/collect/ArrayTable;->rowList:Lcom/google/common/collect/ImmutableList;
 
-    .line 137
+    .line 152
     invoke-static {p2}, Lcom/google/common/collect/ImmutableList;->copyOf(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p2
 
     iput-object p2, p0, Lcom/google/common/collect/ArrayTable;->columnList:Lcom/google/common/collect/ImmutableList;
 
-    .line 138
+    .line 153
     invoke-virtual {p1}, Lcom/google/common/collect/ImmutableList;->isEmpty()Z
 
     move-result v0
@@ -289,21 +327,21 @@
     :goto_0
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 146
+    .line 161
     invoke-static {p1}, Lcom/google/common/collect/Maps;->indexMap(Ljava/util/Collection;)Lcom/google/common/collect/ImmutableMap;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/common/collect/ArrayTable;->rowKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
-    .line 147
+    .line 162
     invoke-static {p2}, Lcom/google/common/collect/Maps;->indexMap(Ljava/util/Collection;)Lcom/google/common/collect/ImmutableMap;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/common/collect/ArrayTable;->columnKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
-    .line 150
+    .line 166
     invoke-virtual {p1}, Lcom/google/common/collect/ImmutableList;->size()I
 
     move-result p1
@@ -328,10 +366,10 @@
 
     check-cast p1, [[Ljava/lang/Object;
 
-    .line 151
+    .line 167
     iput-object p1, p0, Lcom/google/common/collect/ArrayTable;->array:[[Ljava/lang/Object;
 
-    .line 153
+    .line 169
     invoke-virtual {p0}, Lcom/google/common/collect/ArrayTable;->eraseAll()V
 
     return-void
@@ -340,7 +378,7 @@
 .method static synthetic access$000(Lcom/google/common/collect/ArrayTable;I)Lcom/google/common/collect/Table$Cell;
     .locals 0
 
-    .line 81
+    .line 94
     invoke-direct {p0, p1}, Lcom/google/common/collect/ArrayTable;->getCell(I)Lcom/google/common/collect/Table$Cell;
 
     move-result-object p0
@@ -351,7 +389,7 @@
 .method static synthetic access$100(Lcom/google/common/collect/ArrayTable;)Lcom/google/common/collect/ImmutableList;
     .locals 0
 
-    .line 81
+    .line 94
     iget-object p0, p0, Lcom/google/common/collect/ArrayTable;->columnList:Lcom/google/common/collect/ImmutableList;
 
     return-object p0
@@ -360,7 +398,7 @@
 .method static synthetic access$200(Lcom/google/common/collect/ArrayTable;)Lcom/google/common/collect/ImmutableList;
     .locals 0
 
-    .line 81
+    .line 94
     iget-object p0, p0, Lcom/google/common/collect/ArrayTable;->rowList:Lcom/google/common/collect/ImmutableList;
 
     return-object p0
@@ -369,7 +407,7 @@
 .method static synthetic access$300(Lcom/google/common/collect/ArrayTable;)Lcom/google/common/collect/ImmutableMap;
     .locals 0
 
-    .line 81
+    .line 94
     iget-object p0, p0, Lcom/google/common/collect/ArrayTable;->rowKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
     return-object p0
@@ -378,7 +416,7 @@
 .method static synthetic access$600(Lcom/google/common/collect/ArrayTable;)Lcom/google/common/collect/ImmutableMap;
     .locals 0
 
-    .line 81
+    .line 94
     iget-object p0, p0, Lcom/google/common/collect/ArrayTable;->columnKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
     return-object p0
@@ -387,7 +425,7 @@
 .method static synthetic access$800(Lcom/google/common/collect/ArrayTable;I)Ljava/lang/Object;
     .locals 0
 
-    .line 81
+    .line 94
     invoke-direct {p0, p1}, Lcom/google/common/collect/ArrayTable;->getValue(I)Ljava/lang/Object;
 
     move-result-object p0
@@ -397,6 +435,15 @@
 
 .method public static create(Lcom/google/common/collect/Table;)Lcom/google/common/collect/ArrayTable;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "table"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<R:",
@@ -407,18 +454,18 @@
             "Ljava/lang/Object;",
             ">(",
             "Lcom/google/common/collect/Table<",
-            "TR;TC;TV;>;)",
+            "TR;TC;+TV;>;)",
             "Lcom/google/common/collect/ArrayTable<",
             "TR;TC;TV;>;"
         }
     .end annotation
 
-    .line 122
+    .line 137
     instance-of v0, p0, Lcom/google/common/collect/ArrayTable;
 
     if-eqz v0, :cond_0
 
-    .line 123
+    .line 138
     new-instance v0, Lcom/google/common/collect/ArrayTable;
 
     check-cast p0, Lcom/google/common/collect/ArrayTable;
@@ -427,7 +474,7 @@
 
     goto :goto_0
 
-    .line 124
+    .line 139
     :cond_0
     new-instance v0, Lcom/google/common/collect/ArrayTable;
 
@@ -439,6 +486,17 @@
 
 .method public static create(Ljava/lang/Iterable;Ljava/lang/Iterable;)Lcom/google/common/collect/ArrayTable;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "rowKeys",
+            "columnKeys"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<R:",
@@ -457,7 +515,7 @@
         }
     .end annotation
 
-    .line 94
+    .line 108
     new-instance v0, Lcom/google/common/collect/ArrayTable;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/ArrayTable;-><init>(Ljava/lang/Iterable;Ljava/lang/Iterable;)V
@@ -467,6 +525,15 @@
 
 .method private getCell(I)Lcom/google/common/collect/Table$Cell;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -475,7 +542,7 @@
         }
     .end annotation
 
-    .line 536
+    .line 566
     new-instance v0, Lcom/google/common/collect/ArrayTable$2;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/ArrayTable$2;-><init>(Lcom/google/common/collect/ArrayTable;I)V
@@ -485,13 +552,25 @@
 
 .method private getValue(I)Ljava/lang/Object;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TV;"
         }
     .end annotation
 
-    .line 558
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 590
     iget-object v0, p0, Lcom/google/common/collect/ArrayTable;->columnList:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableList;->size()I
@@ -500,7 +579,7 @@
 
     div-int v0, p1, v0
 
-    .line 559
+    .line 591
     iget-object v1, p0, Lcom/google/common/collect/ArrayTable;->columnList:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {v1}, Lcom/google/common/collect/ImmutableList;->size()I
@@ -509,7 +588,7 @@
 
     rem-int/2addr p1, v1
 
-    .line 560
+    .line 592
     invoke-virtual {p0, v0, p1}, Lcom/google/common/collect/ArrayTable;->at(II)Ljava/lang/Object;
 
     move-result-object p0
@@ -521,13 +600,27 @@
 # virtual methods
 .method public at(II)Ljava/lang/Object;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "rowIndex",
+            "columnIndex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)TV;"
         }
     .end annotation
 
-    .line 306
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 330
     iget-object v0, p0, Lcom/google/common/collect/ArrayTable;->rowList:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableList;->size()I
@@ -536,7 +629,7 @@
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkElementIndex(II)I
 
-    .line 307
+    .line 331
     iget-object v0, p0, Lcom/google/common/collect/ArrayTable;->columnList:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableList;->size()I
@@ -545,7 +638,7 @@
 
     invoke-static {p2, v0}, Lcom/google/common/base/Preconditions;->checkElementIndex(II)I
 
-    .line 308
+    .line 332
     iget-object p0, p0, Lcom/google/common/collect/ArrayTable;->array:[[Ljava/lang/Object;
 
     aget-object p0, p0, p1
@@ -566,7 +659,7 @@
         }
     .end annotation
 
-    .line 527
+    .line 557
     new-instance v0, Lcom/google/common/collect/ArrayTable$1;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ArrayTable;->size()I
@@ -589,7 +682,7 @@
         }
     .end annotation
 
-    .line 522
+    .line 552
     invoke-super {p0}, Lcom/google/common/collect/AbstractTable;->cellSet()Ljava/util/Set;
 
     move-result-object p0
@@ -602,7 +695,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 363
+    .line 389
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -612,6 +705,15 @@
 
 .method public column(Ljava/lang/Object;)Ljava/util/Map;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "columnKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TC;)",
@@ -620,10 +722,10 @@
         }
     .end annotation
 
-    .line 576
+    .line 608
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 577
+    .line 609
     iget-object v0, p0, Lcom/google/common/collect/ArrayTable;->columnKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {v0, p1}, Lcom/google/common/collect/ImmutableMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -634,13 +736,14 @@
 
     if-nez p1, :cond_0
 
-    .line 578
-    invoke-static {}, Lcom/google/common/collect/ImmutableMap;->of()Lcom/google/common/collect/ImmutableMap;
+    .line 611
+    invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
 
     move-result-object p0
 
-    goto :goto_0
+    return-object p0
 
+    .line 613
     :cond_0
     new-instance v0, Lcom/google/common/collect/ArrayTable$Column;
 
@@ -650,10 +753,7 @@
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/ArrayTable$Column;-><init>(Lcom/google/common/collect/ArrayTable;I)V
 
-    move-object p0, v0
-
-    :goto_0
-    return-object p0
+    return-object v0
 .end method
 
 .method public columnKeyList()Lcom/google/common/collect/ImmutableList;
@@ -666,7 +766,7 @@
         }
     .end annotation
 
-    .line 289
+    .line 312
     iget-object p0, p0, Lcom/google/common/collect/ArrayTable;->columnList:Lcom/google/common/collect/ImmutableList;
 
     return-object p0
@@ -682,7 +782,7 @@
         }
     .end annotation
 
-    .line 613
+    .line 651
     iget-object p0, p0, Lcom/google/common/collect/ArrayTable;->columnKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMap;->keySet()Lcom/google/common/collect/ImmutableSet;
@@ -695,7 +795,7 @@
 .method public bridge synthetic columnKeySet()Ljava/util/Set;
     .locals 0
 
-    .line 79
+    .line 92
     invoke-virtual {p0}, Lcom/google/common/collect/ArrayTable;->columnKeySet()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object p0
@@ -715,12 +815,12 @@
         }
     .end annotation
 
-    .line 620
+    .line 658
     iget-object v0, p0, Lcom/google/common/collect/ArrayTable;->columnMap:Lcom/google/common/collect/ArrayTable$ColumnMap;
 
     if-nez v0, :cond_0
 
-    .line 621
+    .line 659
     new-instance v0, Lcom/google/common/collect/ArrayTable$ColumnMap;
 
     const/4 v1, 0x0
@@ -736,15 +836,25 @@
 .method public contains(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "rowKey",
+            "columnKey"
+        }
+    .end annotation
 
-    .line 379
+    .line 405
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ArrayTable;->containsRow(Ljava/lang/Object;)Z
 
     move-result p1
@@ -771,11 +881,19 @@
 .method public containsColumn(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "columnKey"
+        }
+    .end annotation
 
-    .line 388
+    .line 414
     iget-object p0, p0, Lcom/google/common/collect/ArrayTable;->columnKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableMap;->containsKey(Ljava/lang/Object;)Z
@@ -788,11 +906,19 @@
 .method public containsRow(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "rowKey"
+        }
+    .end annotation
 
-    .line 397
+    .line 423
     iget-object p0, p0, Lcom/google/common/collect/ArrayTable;->rowKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableMap;->containsKey(Ljava/lang/Object;)Z
@@ -805,11 +931,19 @@
 .method public containsValue(Ljava/lang/Object;)Z
     .locals 7
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 402
+    .line 428
     iget-object p0, p0, Lcom/google/common/collect/ArrayTable;->array:[[Ljava/lang/Object;
 
     array-length v0, p0
@@ -823,7 +957,7 @@
 
     aget-object v3, p0, v2
 
-    .line 403
+    .line 429
     array-length v4, v3
 
     move v5, v1
@@ -833,7 +967,7 @@
 
     aget-object v6, v3, v5
 
-    .line 404
+    .line 430
     invoke-static {p1, v6}, Lcom/google/common/base/Objects;->equal(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v6
@@ -861,11 +995,19 @@
 .method public bridge synthetic equals(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
-    .line 79
+    .line 92
     invoke-super {p0, p1}, Lcom/google/common/collect/AbstractTable;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -876,13 +1018,24 @@
 .method public erase(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "rowKey",
+            "columnKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -892,7 +1045,10 @@
         }
     .end annotation
 
-    .line 494
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 524
     iget-object v0, p0, Lcom/google/common/collect/ArrayTable;->rowKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {v0, p1}, Lcom/google/common/collect/ImmutableMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -901,7 +1057,7 @@
 
     check-cast p1, Ljava/lang/Integer;
 
-    .line 495
+    .line 525
     iget-object v0, p0, Lcom/google/common/collect/ArrayTable;->columnKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {v0, p2}, Lcom/google/common/collect/ImmutableMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -918,7 +1074,7 @@
 
     goto :goto_0
 
-    .line 499
+    .line 529
     :cond_0
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
@@ -942,7 +1098,7 @@
 .method public eraseAll()V
     .locals 4
 
-    .line 368
+    .line 394
     iget-object p0, p0, Lcom/google/common/collect/ArrayTable;->array:[[Ljava/lang/Object;
 
     array-length v0, p0
@@ -956,7 +1112,7 @@
 
     const/4 v3, 0x0
 
-    .line 369
+    .line 395
     invoke-static {v2, v3}, Ljava/util/Arrays;->fill([Ljava/lang/Object;Ljava/lang/Object;)V
 
     add-int/lit8 v1, v1, 0x1
@@ -970,13 +1126,24 @@
 .method public get(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "rowKey",
+            "columnKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -986,7 +1153,10 @@
         }
     .end annotation
 
-    .line 414
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 441
     iget-object v0, p0, Lcom/google/common/collect/ArrayTable;->rowKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {v0, p1}, Lcom/google/common/collect/ImmutableMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -995,7 +1165,7 @@
 
     check-cast p1, Ljava/lang/Integer;
 
-    .line 415
+    .line 442
     iget-object v0, p0, Lcom/google/common/collect/ArrayTable;->columnKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {v0, p2}, Lcom/google/common/collect/ImmutableMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1010,7 +1180,7 @@
 
     goto :goto_0
 
-    .line 416
+    .line 443
     :cond_0
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
@@ -1037,7 +1207,7 @@
 .method public bridge synthetic hashCode()I
     .locals 0
 
-    .line 79
+    .line 92
     invoke-super {p0}, Lcom/google/common/collect/AbstractTable;->hashCode()I
 
     move-result p0
@@ -1048,7 +1218,7 @@
 .method public isEmpty()Z
     .locals 1
 
-    .line 424
+    .line 451
     iget-object v0, p0, Lcom/google/common/collect/ArrayTable;->rowList:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableList;->isEmpty()Z
@@ -1083,22 +1253,38 @@
 .method public put(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 6
     .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "rowKey",
+            "columnKey",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TR;TC;TV;)TV;"
         }
     .end annotation
 
-    .line 436
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 464
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 437
+    .line 465
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 438
+    .line 466
     iget-object v0, p0, Lcom/google/common/collect/ArrayTable;->rowKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {v0, p1}, Lcom/google/common/collect/ImmutableMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1120,7 +1306,7 @@
     :cond_0
     move v3, v2
 
-    .line 439
+    .line 467
     :goto_0
     const-string v4, "Row %s not in %s"
 
@@ -1128,7 +1314,7 @@
 
     invoke-static {v3, v4, p1, v5}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 440
+    .line 468
     iget-object p1, p0, Lcom/google/common/collect/ArrayTable;->columnKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {p1, p2}, Lcom/google/common/collect/ImmutableMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1144,7 +1330,7 @@
     :cond_1
     move v1, v2
 
-    .line 441
+    .line 469
     :goto_1
     const-string v2, "Column %s not in %s"
 
@@ -1152,7 +1338,7 @@
 
     invoke-static {v1, v2, p2, v3}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 442
+    .line 470
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result p2
@@ -1170,6 +1356,15 @@
 
 .method public putAll(Lcom/google/common/collect/Table;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "table"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1178,7 +1373,7 @@
         }
     .end annotation
 
-    .line 462
+    .line 490
     invoke-super {p0, p1}, Lcom/google/common/collect/AbstractTable;->putAll(Lcom/google/common/collect/Table;)V
 
     return-void
@@ -1186,6 +1381,25 @@
 
 .method public remove(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "rowKey",
+            "columnKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1198,7 +1412,10 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 476
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 505
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -1208,6 +1425,15 @@
 
 .method public row(Ljava/lang/Object;)Ljava/util/Map;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "rowKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TR;)",
@@ -1216,10 +1442,10 @@
         }
     .end annotation
 
-    .line 664
+    .line 703
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 665
+    .line 704
     iget-object v0, p0, Lcom/google/common/collect/ArrayTable;->rowKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {v0, p1}, Lcom/google/common/collect/ImmutableMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1230,13 +1456,14 @@
 
     if-nez p1, :cond_0
 
-    .line 666
-    invoke-static {}, Lcom/google/common/collect/ImmutableMap;->of()Lcom/google/common/collect/ImmutableMap;
+    .line 706
+    invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
 
     move-result-object p0
 
-    goto :goto_0
+    return-object p0
 
+    .line 708
     :cond_0
     new-instance v0, Lcom/google/common/collect/ArrayTable$Row;
 
@@ -1246,10 +1473,7 @@
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/ArrayTable$Row;-><init>(Lcom/google/common/collect/ArrayTable;I)V
 
-    move-object p0, v0
-
-    :goto_0
-    return-object p0
+    return-object v0
 .end method
 
 .method public rowKeyList()Lcom/google/common/collect/ImmutableList;
@@ -1262,7 +1486,7 @@
         }
     .end annotation
 
-    .line 281
+    .line 304
     iget-object p0, p0, Lcom/google/common/collect/ArrayTable;->rowList:Lcom/google/common/collect/ImmutableList;
 
     return-object p0
@@ -1278,7 +1502,7 @@
         }
     .end annotation
 
-    .line 701
+    .line 746
     iget-object p0, p0, Lcom/google/common/collect/ArrayTable;->rowKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMap;->keySet()Lcom/google/common/collect/ImmutableSet;
@@ -1291,7 +1515,7 @@
 .method public bridge synthetic rowKeySet()Ljava/util/Set;
     .locals 0
 
-    .line 79
+    .line 92
     invoke-virtual {p0}, Lcom/google/common/collect/ArrayTable;->rowKeySet()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object p0
@@ -1311,12 +1535,12 @@
         }
     .end annotation
 
-    .line 708
+    .line 753
     iget-object v0, p0, Lcom/google/common/collect/ArrayTable;->rowMap:Lcom/google/common/collect/ArrayTable$RowMap;
 
     if-nez v0, :cond_0
 
-    .line 709
+    .line 754
     new-instance v0, Lcom/google/common/collect/ArrayTable$RowMap;
 
     const/4 v1, 0x0
@@ -1332,16 +1556,32 @@
 .method public set(IILjava/lang/Object;)Ljava/lang/Object;
     .locals 1
     .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "rowIndex",
+            "columnIndex",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IITV;)TV;"
         }
     .end annotation
 
-    .line 327
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 352
     iget-object v0, p0, Lcom/google/common/collect/ArrayTable;->rowList:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableList;->size()I
@@ -1350,7 +1590,7 @@
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkElementIndex(II)I
 
-    .line 328
+    .line 353
     iget-object v0, p0, Lcom/google/common/collect/ArrayTable;->columnList:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableList;->size()I
@@ -1359,14 +1599,14 @@
 
     invoke-static {p2, v0}, Lcom/google/common/base/Preconditions;->checkElementIndex(II)I
 
-    .line 329
+    .line 354
     iget-object p0, p0, Lcom/google/common/collect/ArrayTable;->array:[[Ljava/lang/Object;
 
     aget-object p0, p0, p1
 
     aget-object p1, p0, p2
 
-    .line 330
+    .line 355
     aput-object p3, p0, p2
 
     return-object p1
@@ -1375,7 +1615,7 @@
 .method public size()I
     .locals 1
 
-    .line 506
+    .line 536
     iget-object v0, p0, Lcom/google/common/collect/ArrayTable;->rowList:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableList;->size()I
@@ -1395,6 +1635,15 @@
 
 .method public toArray(Ljava/lang/Class;)[[Ljava/lang/Object;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "valueClass"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1403,7 +1652,7 @@
         }
     .end annotation
 
-    .line 346
+    .line 372
     iget-object v0, p0, Lcom/google/common/collect/ArrayTable;->rowList:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableList;->size()I
@@ -1430,7 +1679,7 @@
 
     move v1, v0
 
-    .line 347
+    .line 373
     :goto_0
     iget-object v2, p0, Lcom/google/common/collect/ArrayTable;->rowList:Lcom/google/common/collect/ImmutableList;
 
@@ -1440,7 +1689,7 @@
 
     if-ge v1, v2, :cond_0
 
-    .line 348
+    .line 374
     iget-object v2, p0, Lcom/google/common/collect/ArrayTable;->array:[[Ljava/lang/Object;
 
     aget-object v2, v2, v1
@@ -1462,7 +1711,7 @@
 .method public bridge synthetic toString()Ljava/lang/String;
     .locals 0
 
-    .line 79
+    .line 92
     invoke-super {p0}, Lcom/google/common/collect/AbstractTable;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -1480,7 +1729,7 @@
         }
     .end annotation
 
-    .line 750
+    .line 796
     invoke-super {p0}, Lcom/google/common/collect/AbstractTable;->values()Ljava/util/Collection;
 
     move-result-object p0
@@ -1498,7 +1747,7 @@
         }
     .end annotation
 
-    .line 755
+    .line 801
     new-instance v0, Lcom/google/common/collect/ArrayTable$3;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ArrayTable;->size()I

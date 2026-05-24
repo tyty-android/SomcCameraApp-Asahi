@@ -44,6 +44,14 @@
 
 .method public static asInterface(Landroid/os/IBinder;)Lcom/sonymobile/cameracommon/ICameraExtensionService;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
     if-nez p0, :cond_0
 
@@ -90,6 +98,21 @@
 
 .method public onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "code",
+            "data",
+            "reply",
+            "flags"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

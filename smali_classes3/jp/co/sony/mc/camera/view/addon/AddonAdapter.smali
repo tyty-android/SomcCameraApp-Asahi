@@ -82,6 +82,17 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/util/List;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "dataSet"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -202,6 +213,14 @@
 
 .method public onAttachedToRecyclerView(Landroidx/recyclerview/widget/RecyclerView;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "recyclerView"
+        }
+    .end annotation
 
     .line 62
     invoke-super {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$Adapter;->onAttachedToRecyclerView(Landroidx/recyclerview/widget/RecyclerView;)V
@@ -230,6 +249,16 @@
 
 .method public bridge synthetic onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "holder",
+            "position"
+        }
+    .end annotation
 
     .line 26
     check-cast p1, Ljp/co/sony/mc/camera/view/addon/AddonAdapter$AddonViewHolder;
@@ -241,6 +270,16 @@
 
 .method public onBindViewHolder(Ljp/co/sony/mc/camera/view/addon/AddonAdapter$AddonViewHolder;I)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "holder",
+            "position"
+        }
+    .end annotation
 
     .line 86
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/addon/AddonAdapter;->mDataSet:Ljava/util/List;
@@ -390,6 +429,16 @@
 
 .method public bridge synthetic onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "parent",
+            "viewType"
+        }
+    .end annotation
 
     .line 26
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/view/addon/AddonAdapter;->onCreateViewHolder(Landroid/view/ViewGroup;I)Ljp/co/sony/mc/camera/view/addon/AddonAdapter$AddonViewHolder;
@@ -401,6 +450,16 @@
 
 .method public onCreateViewHolder(Landroid/view/ViewGroup;I)Ljp/co/sony/mc/camera/view/addon/AddonAdapter$AddonViewHolder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "parent",
+            "viewType"
+        }
+    .end annotation
 
     .line 79
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/addon/AddonAdapter;->mContext:Landroid/content/Context;
@@ -409,7 +468,7 @@
 
     move-result-object p2
 
-    const v0, 0x7f0c00d4
+    const v0, 0x7f0c00ce
 
     const/4 v1, 0x0
 
@@ -430,6 +489,14 @@
 
 .method public onDetachedFromRecyclerView(Landroidx/recyclerview/widget/RecyclerView;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "recyclerView"
+        }
+    .end annotation
 
     .line 70
     invoke-super {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$Adapter;->onDetachedFromRecyclerView(Landroidx/recyclerview/widget/RecyclerView;)V

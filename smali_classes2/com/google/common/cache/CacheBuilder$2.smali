@@ -30,7 +30,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 192
+    .line 246
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +41,7 @@
 .method public get()Lcom/google/common/cache/AbstractCache$StatsCounter;
     .locals 0
 
-    .line 195
+    .line 249
     new-instance p0, Lcom/google/common/cache/AbstractCache$SimpleStatsCounter;
 
     invoke-direct {p0}, Lcom/google/common/cache/AbstractCache$SimpleStatsCounter;-><init>()V
@@ -52,7 +52,7 @@
 .method public bridge synthetic get()Ljava/lang/Object;
     .locals 0
 
-    .line 192
+    .line 246
     invoke-virtual {p0}, Lcom/google/common/cache/CacheBuilder$2;->get()Lcom/google/common/cache/AbstractCache$StatsCounter;
 
     move-result-object p0

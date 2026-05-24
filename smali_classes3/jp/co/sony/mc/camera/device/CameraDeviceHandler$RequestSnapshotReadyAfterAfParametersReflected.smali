@@ -26,13 +26,23 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/device/CameraDeviceHandler;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "sessionId"
+        }
+    .end annotation
 
-    .line 6482
+    .line 7029
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$RequestSnapshotReadyAfterAfParametersReflected;->this$0:Ljp/co/sony/mc/camera/device/CameraDeviceHandler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6483
+    .line 7030
     iput-object p2, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$RequestSnapshotReadyAfterAfParametersReflected;->mSessionId:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
 
     return-void
@@ -50,8 +60,16 @@
 # virtual methods
 .method public onFocusAreaUpdated([Landroid/graphics/Rect;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "rect"
+        }
+    .end annotation
 
-    .line 6493
+    .line 7040
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$RequestSnapshotReadyAfterAfParametersReflected;->this$0:Ljp/co/sony/mc/camera/device/CameraDeviceHandler;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler;->-$$Nest$fgetmStateMachine(Ljp/co/sony/mc/camera/device/CameraDeviceHandler;)Ljp/co/sony/mc/camera/controller/StateMachine;
@@ -60,7 +78,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 6494
+    .line 7041
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
@@ -93,7 +111,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 6495
+    .line 7042
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$RequestSnapshotReadyAfterAfParametersReflected;->this$0:Ljp/co/sony/mc/camera/device/CameraDeviceHandler;
 
@@ -113,6 +131,14 @@
 
 .method public onReflected(Ljp/co/sony/mc/camera/device/AfParametersReflectedChecker;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "checker"
+        }
+    .end annotation
 
     return-void
 .end method

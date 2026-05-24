@@ -23,6 +23,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/GestureShutter;Z)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "stopForRelease"
+        }
+    .end annotation
 
     .line 264
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/GestureShutter$StateStopped;->this$0:Ljp/co/sony/mc/camera/view/GestureShutter;

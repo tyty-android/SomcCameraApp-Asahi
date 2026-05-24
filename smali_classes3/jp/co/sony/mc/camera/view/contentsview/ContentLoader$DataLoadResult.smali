@@ -41,6 +41,18 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/view/contentsview/ContentLoader;Ljp/co/sony/mc/camera/view/contentsview/contents/Content;Landroid/graphics/Bitmap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "content",
+            "bitmap"
+        }
+    .end annotation
 
     .line 218
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentLoader$DataLoadResult;->this$0:Ljp/co/sony/mc/camera/view/contentsview/ContentLoader;

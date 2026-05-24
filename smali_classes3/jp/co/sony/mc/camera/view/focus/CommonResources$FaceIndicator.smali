@@ -17,15 +17,15 @@
 # static fields
 .field public static final INVISIBLE:I = 0x0
 
-.field public static final NORMAL:I = 0x7f0803fb
+.field public static final NORMAL:I = 0x7f080485
 
-.field public static final OUT_OF_FOCUS:I = 0x7f0803fd
+.field public static final OUT_OF_FOCUS:I = 0x7f080487
 
-.field public static final PRIORITY:I = 0x7f0803fe
+.field public static final PRIORITY:I = 0x7f080488
 
-.field public static final SUCCESS:I = 0x7f0803fc
+.field public static final SUCCESS:I = 0x7f080486
 
-.field public static final TRANSPARENT:I = 0x7f080306
+.field public static final TRANSPARENT:I = 0x7f080374
 
 
 # direct methods

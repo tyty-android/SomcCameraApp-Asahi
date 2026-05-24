@@ -543,7 +543,7 @@
 
     move-result-object p1
 
-    const v3, 0x7f0706a2
+    const v3, 0x7f07064e
 
     invoke-virtual {p1, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -617,7 +617,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f07014e
+    const v1, 0x7f07018f
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -630,7 +630,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f070150
+    const v2, 0x7f070191
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -643,7 +643,7 @@
 
     move-result-object p0
 
-    const v2, 0x7f07014f
+    const v2, 0x7f070190
 
     invoke-virtual {p0, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -2601,7 +2601,7 @@
     .line 541
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->context:Landroid/content/Context;
 
-    const v1, 0x7f11009c
+    const v1, 0x7f1100b0
 
     invoke-virtual {p2, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2701,7 +2701,7 @@
 
     check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;
 
-    invoke-virtual {p3}, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;->getValueDescriptionId()I
+    invoke-virtual {p3}, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;->getProValueDescriptionId()I
 
     move-result p2
 
@@ -2745,7 +2745,7 @@
     :cond_5
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->context:Landroid/content/Context;
 
-    const p2, 0x7f1100d7
+    const p2, 0x7f1100eb
 
     invoke-virtual {p0, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2966,7 +2966,7 @@
 
     move-result v0
 
-    const v2, 0x7f0801c4
+    const v2, 0x7f080220
 
     if-eqz v0, :cond_4
 
@@ -3009,7 +3009,7 @@
     goto/16 :goto_1
 
     :cond_3
-    const p0, 0x7f0801c2
+    const p0, 0x7f08021e
 
     .line 509
     invoke-virtual {p1, p0}, Ljp/co/sony/mc/camera/view/widget/FnButtonBase;->setIcon(I)V
@@ -3063,7 +3063,7 @@
 
     if-eq p0, v0, :cond_7
 
-    const p0, 0x7f080300
+    const p0, 0x7f08036e
 
     .line 496
     invoke-virtual {p1, p0}, Ljp/co/sony/mc/camera/view/widget/FnButtonBase;->setIcon(I)V
@@ -4164,7 +4164,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f080136
+    const v3, 0x7f080192
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -4182,7 +4182,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f080138
+    const v3, 0x7f080194
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -4194,9 +4194,9 @@
     .line 164
     new-instance v2, Landroid/widget/LinearLayout$LayoutParams;
 
-    const v4, 0x7f07014d
+    const v4, 0x7f07018e
 
-    const v5, 0x7f07014c
+    const v5, 0x7f07018d
 
     if-eqz v0, :cond_1
 

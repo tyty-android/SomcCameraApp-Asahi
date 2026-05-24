@@ -1,16 +1,20 @@
 .class public abstract Lcom/google/common/reflect/Invokable;
-.super Lcom/google/common/reflect/Element;
+.super Ljava/lang/Object;
 .source "Invokable.java"
 
 # interfaces
-.implements Ljava/lang/reflect/GenericDeclaration;
+.implements Ljava/lang/reflect/AnnotatedElement;
+.implements Ljava/lang/reflect/Member;
 
 
 # annotations
+.annotation runtime Lcom/google/common/reflect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/common/reflect/Invokable$ConstructorInvokable;,
-        Lcom/google/common/reflect/Invokable$MethodInvokable;
+        Lcom/google/common/reflect/Invokable$MethodInvokable;,
+        Lcom/google/common/reflect/Invokable$ConstructorInvokable;
     }
 .end annotation
 
@@ -21,15 +25,48 @@
         "R:",
         "Ljava/lang/Object;",
         ">",
-        "Lcom/google/common/reflect/Element;",
-        "Ljava/lang/reflect/GenericDeclaration;"
+        "Ljava/lang/Object;",
+        "Ljava/lang/reflect/AnnotatedElement;",
+        "Ljava/lang/reflect/Member;"
     }
 .end annotation
 
 
+# static fields
+.field private static final ANNOTATED_TYPE_EXISTS:Z
+
+
+# instance fields
+.field private final accessibleObject:Ljava/lang/reflect/AccessibleObject;
+
+.field private final member:Ljava/lang/reflect/Member;
+
+
 # direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 518
+    invoke-static {}, Lcom/google/common/reflect/Invokable;->initAnnotatedTypeExists()Z
+
+    move-result v0
+
+    sput-boolean v0, Lcom/google/common/reflect/Invokable;->ANNOTATED_TYPE_EXISTS:Z
+
+    return-void
+.end method
+
 .method constructor <init>(Ljava/lang/reflect/AccessibleObject;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "member"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<M:",
@@ -40,14 +77,34 @@
         }
     .end annotation
 
-    .line 61
-    invoke-direct {p0, p1}, Lcom/google/common/reflect/Element;-><init>(Ljava/lang/reflect/AccessibleObject;)V
+    .line 69
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 70
+    invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 71
+    iput-object p1, p0, Lcom/google/common/reflect/Invokable;->accessibleObject:Ljava/lang/reflect/AccessibleObject;
+
+    .line 72
+    check-cast p1, Ljava/lang/reflect/Member;
+
+    iput-object p1, p0, Lcom/google/common/reflect/Invokable;->member:Ljava/lang/reflect/Member;
 
     return-void
 .end method
 
 .method public static from(Ljava/lang/reflect/Constructor;)Lcom/google/common/reflect/Invokable;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "constructor"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -60,7 +117,7 @@
         }
     .end annotation
 
-    .line 71
+    .line 82
     new-instance v0, Lcom/google/common/reflect/Invokable$ConstructorInvokable;
 
     invoke-direct {v0, p0}, Lcom/google/common/reflect/Invokable$ConstructorInvokable;-><init>(Ljava/lang/reflect/Constructor;)V
@@ -70,6 +127,15 @@
 
 .method public static from(Ljava/lang/reflect/Method;)Lcom/google/common/reflect/Invokable;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "method"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -82,7 +148,7 @@
         }
     .end annotation
 
-    .line 66
+    .line 77
     new-instance v0, Lcom/google/common/reflect/Invokable$MethodInvokable;
 
     invoke-direct {v0, p0}, Lcom/google/common/reflect/Invokable$MethodInvokable;-><init>(Ljava/lang/reflect/Method;)V
@@ -90,21 +156,143 @@
     return-object v0
 .end method
 
+.method private static initAnnotatedTypeExists()Z
+    .locals 1
+
+    .line 522
+    :try_start_0
+    const-string v0, "java.lang.reflect.AnnotatedType"
+
+    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+    :try_end_0
+    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :catch_0
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
 
 # virtual methods
-.method public bridge synthetic equals(Ljava/lang/Object;)Z
-    .locals 0
+.method public equals(Ljava/lang/Object;)Z
+    .locals 3
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
-    .line 57
-    invoke-super {p0, p1}, Lcom/google/common/reflect/Element;->equals(Ljava/lang/Object;)Z
+    .line 214
+    instance-of v0, p1, Lcom/google/common/reflect/Invokable;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    .line 215
+    check-cast p1, Lcom/google/common/reflect/Invokable;
+
+    .line 216
+    invoke-virtual {p0}, Lcom/google/common/reflect/Invokable;->getOwnerType()Lcom/google/common/reflect/TypeToken;
+
+    move-result-object v0
+
+    invoke-virtual {p1}, Lcom/google/common/reflect/Invokable;->getOwnerType()Lcom/google/common/reflect/TypeToken;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v2}, Lcom/google/common/reflect/TypeToken;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object p0, p0, Lcom/google/common/reflect/Invokable;->member:Ljava/lang/reflect/Member;
+
+    iget-object p1, p1, Lcom/google/common/reflect/Invokable;->member:Ljava/lang/reflect/Member;
+
+    invoke-interface {p0, p1}, Ljava/lang/reflect/Member;->equals(Ljava/lang/Object;)Z
 
     move-result p0
 
-    return p0
+    if-eqz p0, :cond_0
+
+    const/4 v1, 0x1
+
+    :cond_0
+    return v1
+.end method
+
+.method public final getAnnotation(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "annotationClass"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<A::",
+            "Ljava/lang/annotation/Annotation;",
+            ">(",
+            "Ljava/lang/Class<",
+            "TA;>;)TA;"
+        }
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 93
+    iget-object p0, p0, Lcom/google/common/reflect/Invokable;->accessibleObject:Ljava/lang/reflect/AccessibleObject;
+
+    invoke-virtual {p0, p1}, Ljava/lang/reflect/AccessibleObject;->getAnnotation(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final getAnnotations()[Ljava/lang/annotation/Annotation;
+    .locals 0
+
+    .line 98
+    iget-object p0, p0, Lcom/google/common/reflect/Invokable;->accessibleObject:Ljava/lang/reflect/AccessibleObject;
+
+    invoke-virtual {p0}, Ljava/lang/reflect/AccessibleObject;->getAnnotations()[Ljava/lang/annotation/Annotation;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final getDeclaredAnnotations()[Ljava/lang/annotation/Annotation;
+    .locals 0
+
+    .line 103
+    iget-object p0, p0, Lcom/google/common/reflect/Invokable;->accessibleObject:Ljava/lang/reflect/AccessibleObject;
+
+    invoke-virtual {p0}, Ljava/lang/reflect/AccessibleObject;->getDeclaredAnnotations()[Ljava/lang/annotation/Annotation;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
 .method public final getDeclaringClass()Ljava/lang/Class;
@@ -117,8 +305,10 @@
         }
     .end annotation
 
-    .line 165
-    invoke-super {p0}, Lcom/google/common/reflect/Element;->getDeclaringClass()Ljava/lang/Class;
+    .line 328
+    iget-object p0, p0, Lcom/google/common/reflect/Invokable;->member:Ljava/lang/reflect/Member;
+
+    invoke-interface {p0}, Ljava/lang/reflect/Member;->getDeclaringClass()Ljava/lang/Class;
 
     move-result-object p0
 
@@ -138,12 +328,12 @@
         }
     .end annotation
 
-    .line 128
+    .line 291
     invoke-static {}, Lcom/google/common/collect/ImmutableList;->builder()Lcom/google/common/collect/ImmutableList$Builder;
 
     move-result-object v0
 
-    .line 129
+    .line 292
     invoke-virtual {p0}, Lcom/google/common/reflect/Invokable;->getGenericExceptionTypes()[Ljava/lang/reflect/Type;
 
     move-result-object p0
@@ -157,19 +347,19 @@
 
     aget-object v3, p0, v2
 
-    .line 133
+    .line 296
     invoke-static {v3}, Lcom/google/common/reflect/TypeToken;->of(Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeToken;
 
     move-result-object v3
 
-    .line 134
+    .line 297
     invoke-virtual {v0, v3}, Lcom/google/common/collect/ImmutableList$Builder;->add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList$Builder;
 
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 136
+    .line 299
     :cond_0
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableList$Builder;->build()Lcom/google/common/collect/ImmutableList;
 
@@ -187,6 +377,32 @@
 .method abstract getGenericReturnType()Ljava/lang/reflect/Type;
 .end method
 
+.method public final getModifiers()I
+    .locals 0
+
+    .line 143
+    iget-object p0, p0, Lcom/google/common/reflect/Invokable;->member:Ljava/lang/reflect/Member;
+
+    invoke-interface {p0}, Ljava/lang/reflect/Member;->getModifiers()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public final getName()Ljava/lang/String;
+    .locals 0
+
+    .line 138
+    iget-object p0, p0, Lcom/google/common/reflect/Invokable;->member:Ljava/lang/reflect/Member;
+
+    invoke-interface {p0}, Ljava/lang/reflect/Member;->getName()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public getOwnerType()Lcom/google/common/reflect/TypeToken;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
@@ -197,7 +413,7 @@
         }
     .end annotation
 
-    .line 173
+    .line 335
     invoke-virtual {p0}, Lcom/google/common/reflect/Invokable;->getDeclaringClass()Ljava/lang/Class;
 
     move-result-object p0
@@ -213,7 +429,7 @@
 .end method
 
 .method public final getParameters()Lcom/google/common/collect/ImmutableList;
-    .locals 7
+    .locals 12
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -223,51 +439,66 @@
         }
     .end annotation
 
-    .line 117
+    .line 276
     invoke-virtual {p0}, Lcom/google/common/reflect/Invokable;->getGenericParameterTypes()[Ljava/lang/reflect/Type;
 
     move-result-object v0
 
-    .line 118
+    .line 277
     invoke-virtual {p0}, Lcom/google/common/reflect/Invokable;->getParameterAnnotations()[[Ljava/lang/annotation/Annotation;
 
     move-result-object v1
 
-    .line 119
+    .line 278
+    array-length v2, v0
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    .line 280
     invoke-static {}, Lcom/google/common/collect/ImmutableList;->builder()Lcom/google/common/collect/ImmutableList$Builder;
 
-    move-result-object v2
+    move-result-object v3
 
-    const/4 v3, 0x0
+    const/4 v4, 0x0
 
-    .line 120
+    .line 281
     :goto_0
-    array-length v4, v0
+    array-length v5, v0
 
-    if-ge v3, v4, :cond_0
+    if-ge v4, v5, :cond_0
 
-    .line 121
-    new-instance v4, Lcom/google/common/reflect/Parameter;
+    .line 282
+    new-instance v11, Lcom/google/common/reflect/Parameter;
 
-    aget-object v5, v0, v3
+    aget-object v5, v0, v4
 
+    .line 284
     invoke-static {v5}, Lcom/google/common/reflect/TypeToken;->of(Ljava/lang/reflect/Type;)Lcom/google/common/reflect/TypeToken;
 
-    move-result-object v5
+    move-result-object v8
 
-    aget-object v6, v1, v3
+    aget-object v9, v1, v4
 
-    invoke-direct {v4, p0, v3, v5, v6}, Lcom/google/common/reflect/Parameter;-><init>(Lcom/google/common/reflect/Invokable;ILcom/google/common/reflect/TypeToken;[Ljava/lang/annotation/Annotation;)V
+    aget-object v10, v2, v4
 
-    invoke-virtual {v2, v4}, Lcom/google/common/collect/ImmutableList$Builder;->add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList$Builder;
+    move-object v5, v11
 
-    add-int/lit8 v3, v3, 0x1
+    move-object v6, p0
+
+    move v7, v4
+
+    invoke-direct/range {v5 .. v10}, Lcom/google/common/reflect/Parameter;-><init>(Lcom/google/common/reflect/Invokable;ILcom/google/common/reflect/TypeToken;[Ljava/lang/annotation/Annotation;Ljava/lang/Object;)V
+
+    .line 282
+    invoke-virtual {v3, v11}, Lcom/google/common/collect/ImmutableList$Builder;->add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList$Builder;
+
+    add-int/lit8 v4, v4, 0x1
 
     goto :goto_0
 
-    .line 123
+    .line 286
     :cond_0
-    invoke-virtual {v2}, Lcom/google/common/collect/ImmutableList$Builder;->build()Lcom/google/common/collect/ImmutableList;
+    invoke-virtual {v3}, Lcom/google/common/collect/ImmutableList$Builder;->build()Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
 
@@ -284,7 +515,7 @@
         }
     .end annotation
 
-    .line 108
+    .line 266
     invoke-virtual {p0}, Lcom/google/common/reflect/Invokable;->getGenericReturnType()Ljava/lang/reflect/Type;
 
     move-result-object p0
@@ -296,11 +527,23 @@
     return-object p0
 .end method
 
-.method public bridge synthetic hashCode()I
+.method public abstract getTypeParameters()[Ljava/lang/reflect/TypeVariable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()[",
+            "Ljava/lang/reflect/TypeVariable<",
+            "*>;"
+        }
+    .end annotation
+.end method
+
+.method public hashCode()I
     .locals 0
 
-    .line 57
-    invoke-super {p0}, Lcom/google/common/reflect/Element;->hashCode()I
+    .line 223
+    iget-object p0, p0, Lcom/google/common/reflect/Invokable;->member:Ljava/lang/reflect/Member;
+
+    invoke-interface {p0}, Ljava/lang/reflect/Member;->hashCode()I
 
     move-result p0
 
@@ -310,9 +553,20 @@
 .method public final varargs invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "receiver",
+            "args"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;[",
@@ -328,7 +582,10 @@
         }
     .end annotation
 
-    .line 101
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 259
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p2
@@ -344,25 +601,288 @@
 
 .method abstract invokeInternal(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "receiver",
+            "args"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/reflect/InvocationTargetException;,
             Ljava/lang/IllegalAccessException;
         }
     .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+.end method
+
+.method public final isAbstract()Z
+    .locals 0
+
+    .line 189
+    invoke-virtual {p0}, Lcom/google/common/reflect/Invokable;->getModifiers()I
+
+    move-result p0
+
+    invoke-static {p0}, Ljava/lang/reflect/Modifier;->isAbstract(I)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public final isAccessible()Z
+    .locals 0
+
+    .line 133
+    iget-object p0, p0, Lcom/google/common/reflect/Invokable;->accessibleObject:Ljava/lang/reflect/AccessibleObject;
+
+    invoke-virtual {p0}, Ljava/lang/reflect/AccessibleObject;->isAccessible()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public final isAnnotationPresent(Ljava/lang/Class;)Z
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "annotationClass"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Class<",
+            "+",
+            "Ljava/lang/annotation/Annotation;",
+            ">;)Z"
+        }
+    .end annotation
+
+    .line 87
+    iget-object p0, p0, Lcom/google/common/reflect/Invokable;->accessibleObject:Ljava/lang/reflect/AccessibleObject;
+
+    invoke-virtual {p0, p1}, Ljava/lang/reflect/AccessibleObject;->isAnnotationPresent(Ljava/lang/Class;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public final isFinal()Z
+    .locals 0
+
+    .line 184
+    invoke-virtual {p0}, Lcom/google/common/reflect/Invokable;->getModifiers()I
+
+    move-result p0
+
+    invoke-static {p0}, Ljava/lang/reflect/Modifier;->isFinal(I)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public final isNative()Z
+    .locals 0
+
+    .line 194
+    invoke-virtual {p0}, Lcom/google/common/reflect/Invokable;->getModifiers()I
+
+    move-result p0
+
+    invoke-static {p0}, Ljava/lang/reflect/Modifier;->isNative(I)Z
+
+    move-result p0
+
+    return p0
 .end method
 
 .method public abstract isOverridable()Z
 .end method
 
+.method public final isPackagePrivate()Z
+    .locals 1
+
+    .line 163
+    invoke-virtual {p0}, Lcom/google/common/reflect/Invokable;->isPrivate()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    invoke-virtual {p0}, Lcom/google/common/reflect/Invokable;->isPublic()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    invoke-virtual {p0}, Lcom/google/common/reflect/Invokable;->isProtected()Z
+
+    move-result p0
+
+    if-nez p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method public final isPrivate()Z
+    .locals 0
+
+    .line 168
+    invoke-virtual {p0}, Lcom/google/common/reflect/Invokable;->getModifiers()I
+
+    move-result p0
+
+    invoke-static {p0}, Ljava/lang/reflect/Modifier;->isPrivate(I)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public final isProtected()Z
+    .locals 0
+
+    .line 158
+    invoke-virtual {p0}, Lcom/google/common/reflect/Invokable;->getModifiers()I
+
+    move-result p0
+
+    invoke-static {p0}, Ljava/lang/reflect/Modifier;->isProtected(I)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public final isPublic()Z
+    .locals 0
+
+    .line 153
+    invoke-virtual {p0}, Lcom/google/common/reflect/Invokable;->getModifiers()I
+
+    move-result p0
+
+    invoke-static {p0}, Ljava/lang/reflect/Modifier;->isPublic(I)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public final isStatic()Z
+    .locals 0
+
+    .line 173
+    invoke-virtual {p0}, Lcom/google/common/reflect/Invokable;->getModifiers()I
+
+    move-result p0
+
+    invoke-static {p0}, Ljava/lang/reflect/Modifier;->isStatic(I)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public final isSynchronized()Z
+    .locals 0
+
+    .line 199
+    invoke-virtual {p0}, Lcom/google/common/reflect/Invokable;->getModifiers()I
+
+    move-result p0
+
+    invoke-static {p0}, Ljava/lang/reflect/Modifier;->isSynchronized(I)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public final isSynthetic()Z
+    .locals 0
+
+    .line 148
+    iget-object p0, p0, Lcom/google/common/reflect/Invokable;->member:Ljava/lang/reflect/Member;
+
+    invoke-interface {p0}, Ljava/lang/reflect/Member;->isSynthetic()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method final isTransient()Z
+    .locals 0
+
+    .line 209
+    invoke-virtual {p0}, Lcom/google/common/reflect/Invokable;->getModifiers()I
+
+    move-result p0
+
+    invoke-static {p0}, Ljava/lang/reflect/Modifier;->isTransient(I)Z
+
+    move-result p0
+
+    return p0
+.end method
+
 .method public abstract isVarArgs()Z
+.end method
+
+.method final isVolatile()Z
+    .locals 0
+
+    .line 204
+    invoke-virtual {p0}, Lcom/google/common/reflect/Invokable;->getModifiers()I
+
+    move-result p0
+
+    invoke-static {p0}, Ljava/lang/reflect/Modifier;->isVolatile(I)Z
+
+    move-result p0
+
+    return p0
 .end method
 
 .method public final returning(Lcom/google/common/reflect/TypeToken;)Lcom/google/common/reflect/Invokable;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "returnType"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<R1:TR;>(",
@@ -373,7 +893,7 @@
         }
     .end annotation
 
-    .line 153
+    .line 316
     invoke-virtual {p0}, Lcom/google/common/reflect/Invokable;->getReturnType()Lcom/google/common/reflect/TypeToken;
 
     move-result-object v0
@@ -386,54 +906,22 @@
 
     return-object p0
 
-    .line 154
+    .line 317
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    .line 155
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v2, "Invokable is known to return "
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 318
     invoke-virtual {p0}, Lcom/google/common/reflect/Invokable;->getReturnType()Lcom/google/common/reflect/TypeToken;
 
     move-result-object p0
 
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    move-result v1
-
-    add-int/lit8 v1, v1, 0x23
-
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/String;->length()I
-
-    move-result v2
-
-    add-int/2addr v1, v2
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v1, "Invokable is known to return "
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -443,7 +931,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -458,6 +946,15 @@
 
 .method public final returning(Ljava/lang/Class;)Lcom/google/common/reflect/Invokable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "returnType"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<R1:TR;>(",
@@ -468,7 +965,7 @@
         }
     .end annotation
 
-    .line 148
+    .line 311
     invoke-static {p1}, Lcom/google/common/reflect/TypeToken;->of(Ljava/lang/Class;)Lcom/google/common/reflect/TypeToken;
 
     move-result-object p1
@@ -480,13 +977,55 @@
     return-object p0
 .end method
 
-.method public bridge synthetic toString()Ljava/lang/String;
+.method public final setAccessible(Z)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "flag"
+        }
+    .end annotation
+
+    .line 115
+    iget-object p0, p0, Lcom/google/common/reflect/Invokable;->accessibleObject:Ljava/lang/reflect/AccessibleObject;
+
+    invoke-virtual {p0, p1}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+
+    return-void
+.end method
+
+.method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 57
-    invoke-super {p0}, Lcom/google/common/reflect/Element;->toString()Ljava/lang/String;
+    .line 228
+    iget-object p0, p0, Lcom/google/common/reflect/Invokable;->member:Ljava/lang/reflect/Member;
+
+    invoke-interface {p0}, Ljava/lang/reflect/Member;->toString()Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
+.end method
+
+.method public final trySetAccessible()Z
+    .locals 1
+
+    .line 124
+    :try_start_0
+    iget-object p0, p0, Lcom/google/common/reflect/Invokable;->accessibleObject:Ljava/lang/reflect/AccessibleObject;
+
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, v0}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    return v0
+
+    :catch_0
+    const/4 p0, 0x0
+
+    return p0
 .end method

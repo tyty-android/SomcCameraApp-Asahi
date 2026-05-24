@@ -30,7 +30,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 855
+    .line 851
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -40,6 +40,15 @@
 # virtual methods
 .method public successors(Ljava/io/File;)Ljava/lang/Iterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "file"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -51,21 +60,21 @@
         }
     .end annotation
 
-    .line 859
+    .line 855
     invoke-virtual {p1}, Ljava/io/File;->isDirectory()Z
 
     move-result p0
 
     if-eqz p0, :cond_0
 
-    .line 860
+    .line 856
     invoke-virtual {p1}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 862
+    .line 858
     invoke-static {p0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
@@ -76,7 +85,7 @@
 
     return-object p0
 
-    .line 866
+    .line 862
     :cond_0
     invoke-static {}, Lcom/google/common/collect/ImmutableList;->of()Lcom/google/common/collect/ImmutableList;
 
@@ -87,8 +96,16 @@
 
 .method public bridge synthetic successors(Ljava/lang/Object;)Ljava/lang/Iterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "file"
+        }
+    .end annotation
 
-    .line 855
+    .line 851
     check-cast p1, Ljava/io/File;
 
     invoke-virtual {p0, p1}, Lcom/google/common/io/Files$2;->successors(Ljava/io/File;)Ljava/lang/Iterable;

@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/cache/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/cache/ForwardingLoadingCache$SimpleForwardingLoadingCache;
@@ -32,7 +35,7 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 38
+    .line 40
     invoke-direct {p0}, Lcom/google/common/cache/ForwardingCache;-><init>()V
 
     return-void
@@ -42,13 +45,22 @@
 # virtual methods
 .method public apply(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)TV;"
         }
     .end annotation
 
-    .line 60
+    .line 65
     invoke-virtual {p0}, Lcom/google/common/cache/ForwardingLoadingCache;->delegate()Lcom/google/common/cache/LoadingCache;
 
     move-result-object p0
@@ -63,7 +75,7 @@
 .method protected bridge synthetic delegate()Lcom/google/common/cache/Cache;
     .locals 0
 
-    .line 33
+    .line 34
     invoke-virtual {p0}, Lcom/google/common/cache/ForwardingLoadingCache;->delegate()Lcom/google/common/cache/LoadingCache;
 
     move-result-object p0
@@ -84,7 +96,7 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 33
+    .line 34
     invoke-virtual {p0}, Lcom/google/common/cache/ForwardingLoadingCache;->delegate()Lcom/google/common/cache/LoadingCache;
 
     move-result-object p0
@@ -94,6 +106,15 @@
 
 .method public get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)TV;"
@@ -106,7 +127,7 @@
         }
     .end annotation
 
-    .line 45
+    .line 48
     invoke-virtual {p0}, Lcom/google/common/cache/ForwardingLoadingCache;->delegate()Lcom/google/common/cache/LoadingCache;
 
     move-result-object p0
@@ -120,6 +141,15 @@
 
 .method public getAll(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableMap;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "keys"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -136,7 +166,7 @@
         }
     .end annotation
 
-    .line 55
+    .line 60
     invoke-virtual {p0}, Lcom/google/common/cache/ForwardingLoadingCache;->delegate()Lcom/google/common/cache/LoadingCache;
 
     move-result-object p0
@@ -150,13 +180,22 @@
 
 .method public getUnchecked(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)TV;"
         }
     .end annotation
 
-    .line 50
+    .line 54
     invoke-virtual {p0}, Lcom/google/common/cache/ForwardingLoadingCache;->delegate()Lcom/google/common/cache/LoadingCache;
 
     move-result-object p0
@@ -170,13 +209,22 @@
 
 .method public refresh(Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)V"
         }
     .end annotation
 
-    .line 65
+    .line 70
     invoke-virtual {p0}, Lcom/google/common/cache/ForwardingLoadingCache;->delegate()Lcom/google/common/cache/LoadingCache;
 
     move-result-object p0

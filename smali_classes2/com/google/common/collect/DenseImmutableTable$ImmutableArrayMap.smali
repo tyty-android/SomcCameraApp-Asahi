@@ -33,11 +33,19 @@
 # direct methods
 .method constructor <init>(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "size"
+        }
+    .end annotation
 
-    .line 87
+    .line 96
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableMap$IteratorBasedImmutableMap;-><init>()V
 
-    .line 88
+    .line 97
     iput p1, p0, Lcom/google/common/collect/DenseImmutableTable$ImmutableArrayMap;->size:I
 
     return-void
@@ -46,7 +54,7 @@
 .method private isFull()Z
     .locals 1
 
-    .line 95
+    .line 104
     iget v0, p0, Lcom/google/common/collect/DenseImmutableTable$ImmutableArrayMap;->size:I
 
     invoke-virtual {p0}, Lcom/google/common/collect/DenseImmutableTable$ImmutableArrayMap;->keyToIndex()Lcom/google/common/collect/ImmutableMap;
@@ -82,7 +90,7 @@
         }
     .end annotation
 
-    .line 107
+    .line 116
     invoke-direct {p0}, Lcom/google/common/collect/DenseImmutableTable$ImmutableArrayMap;->isFull()Z
 
     move-result v0
@@ -119,7 +127,7 @@
         }
     .end annotation
 
-    .line 123
+    .line 133
     new-instance v0, Lcom/google/common/collect/DenseImmutableTable$ImmutableArrayMap$1;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/DenseImmutableTable$ImmutableArrayMap$1;-><init>(Lcom/google/common/collect/DenseImmutableTable$ImmutableArrayMap;)V
@@ -130,9 +138,18 @@
 .method public get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -141,7 +158,10 @@
         }
     .end annotation
 
-    .line 117
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 127
     invoke-virtual {p0}, Lcom/google/common/collect/DenseImmutableTable$ImmutableArrayMap;->keyToIndex()Lcom/google/common/collect/ImmutableMap;
 
     move-result-object v0
@@ -158,7 +178,7 @@
 
     goto :goto_0
 
-    .line 118
+    .line 128
     :cond_0
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
@@ -174,13 +194,22 @@
 
 .method getKey(I)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TK;"
         }
     .end annotation
 
-    .line 99
+    .line 108
     invoke-virtual {p0}, Lcom/google/common/collect/DenseImmutableTable$ImmutableArrayMap;->keyToIndex()Lcom/google/common/collect/ImmutableMap;
 
     move-result-object p0
@@ -201,13 +230,22 @@
 .end method
 
 .method abstract getValue(I)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "keyIndex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TV;"
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end method
 
@@ -226,8 +264,19 @@
 .method public size()I
     .locals 0
 
-    .line 112
+    .line 121
     iget p0, p0, Lcom/google/common/collect/DenseImmutableTable$ImmutableArrayMap;->size:I
 
     return p0
+.end method
+
+.method writeReplace()Ljava/lang/Object;
+    .locals 0
+
+    .line 157
+    invoke-super {p0}, Lcom/google/common/collect/ImmutableMap$IteratorBasedImmutableMap;->writeReplace()Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
 .end method

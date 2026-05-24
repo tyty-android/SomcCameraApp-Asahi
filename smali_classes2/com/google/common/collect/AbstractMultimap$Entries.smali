@@ -28,8 +28,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/AbstractMultimap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 120
+    .line 123
     iput-object p1, p0, Lcom/google/common/collect/AbstractMultimap$Entries;->this$0:Lcom/google/common/collect/AbstractMultimap;
 
     invoke-direct {p0}, Lcom/google/common/collect/Multimaps$Entries;-><init>()V
@@ -50,7 +58,7 @@
         }
     .end annotation
 
-    .line 128
+    .line 131
     iget-object p0, p0, Lcom/google/common/collect/AbstractMultimap$Entries;->this$0:Lcom/google/common/collect/AbstractMultimap;
 
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultimap;->entryIterator()Ljava/util/Iterator;
@@ -70,7 +78,7 @@
         }
     .end annotation
 
-    .line 123
+    .line 126
     iget-object p0, p0, Lcom/google/common/collect/AbstractMultimap$Entries;->this$0:Lcom/google/common/collect/AbstractMultimap;
 
     return-object p0

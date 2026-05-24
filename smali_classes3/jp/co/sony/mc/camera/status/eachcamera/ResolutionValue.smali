@@ -26,6 +26,16 @@
 
 .method public constructor <init>(II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "width",
+            "height"
+        }
+    .end annotation
 
     .line 36
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,6 +51,14 @@
 
 .method public constructor <init>(Landroid/graphics/Rect;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "rect"
+        }
+    .end annotation
 
     .line 44
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -86,6 +104,16 @@
 
 .method public putInto(Landroid/content/ContentValues;Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "cv",
+            "keyPrefix"
+        }
+    .end annotation
 
     .line 74
     new-instance v0, Ljava/lang/StringBuilder;

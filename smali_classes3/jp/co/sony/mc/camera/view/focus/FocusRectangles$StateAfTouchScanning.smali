@@ -21,8 +21,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 910
+    .line 915
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateAfTouchScanning;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;-><init>(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)V
@@ -35,14 +43,14 @@
 .method public entry()V
     .locals 2
 
-    .line 914
+    .line 919
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateAfTouchScanning;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;->TYPE_TOUCH_FOCUS:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fputmNextFocusType(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;)V
 
-    .line 915
+    .line 920
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateAfTouchScanning;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusState;->FOCUSING:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusState;
@@ -55,7 +63,7 @@
 .method public handleOnAutoFocusCanceled()V
     .locals 2
 
-    .line 920
+    .line 925
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateAfTouchScanning;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     new-instance v1, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateAfTouchFocus;
@@ -71,8 +79,16 @@
 
 .method public handleOnAutoFocusDone(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "success"
+        }
+    .end annotation
 
-    .line 925
+    .line 930
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateAfTouchScanning;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     if-eqz p1, :cond_0

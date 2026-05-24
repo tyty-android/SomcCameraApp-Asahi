@@ -38,7 +38,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 37
+    .line 40
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData$1;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData$1;-><init>()V
@@ -50,18 +50,26 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "in"
+        }
+    .end annotation
 
-    .line 33
+    .line 36
     invoke-direct {p0}, Ljp/co/sony/mc/camera/configuration/parameters/ExtensionData;-><init>()V
 
-    .line 23
+    .line 26
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData;->mFunctionCustomList:Ljava/util/List;
 
-    .line 34
+    .line 37
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->readStringList(Ljava/util/List;)V
 
     return-void
@@ -77,6 +85,15 @@
 
 .method public constructor <init>(Ljava/util/List;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "functionCustomList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -86,17 +103,17 @@
         }
     .end annotation
 
-    .line 27
+    .line 30
     invoke-direct {p0}, Ljp/co/sony/mc/camera/configuration/parameters/ExtensionData;-><init>()V
 
-    .line 23
+    .line 26
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData;->mFunctionCustomList:Ljava/util/List;
 
-    .line 28
+    .line 31
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -114,7 +131,7 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
-    .line 29
+    .line 32
     iget-object v1, p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData;->mFunctionCustomList:Ljava/util/List;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->getValue()Ljava/lang/String;
@@ -129,154 +146,180 @@
     return-void
 .end method
 
-.method public static getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData;
+.method public static getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId"
+        }
+    .end annotation
 
-    .line 76
+    .line 80
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 77
+    .line 81
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProPhoto()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 78
+    .line 82
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->DRIVE_MODE:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 79
+    .line 83
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->FOCUS_MODE:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 80
+    .line 84
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->FOCUS_AREA:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 81
+    .line 85
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->COMPUTATIONAL_MODE:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 82
+    .line 86
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->HDR:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 83
+    .line 87
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->METERING:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 84
+    .line 88
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->FACE_DETECTION:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 85
+    .line 89
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->COLOR_TONE_PROFILE:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 86
+    .line 90
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->FLASH:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 87
+    .line 91
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->WB:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 88
+    .line 92
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->PHOTO_FORMAT:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 89
+    .line 93
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->PEAKING:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    goto :goto_0
+    goto :goto_1
 
-    .line 90
+    .line 94
     :cond_0
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
 
     move-result p0
 
-    if-eqz p0, :cond_1
+    if-eqz p0, :cond_2
 
-    .line 91
+    .line 95
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->VIDEO_SIZE:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 92
+    .line 96
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->VIDEO_FPS:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 93
+    .line 97
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->FOCUS_MODE:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 94
+    .line 98
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isProductShowcaseSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_1
+
+    .line 99
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->PRODUCT_SHOWCASE:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 95
+    goto :goto_0
+
+    .line 101
+    :cond_1
+    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->TOUCH_TO_ADJUST:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 103
+    :goto_0
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->VIDEO_MF_HDR:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 96
+    .line 104
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->MIC:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 97
+    .line 105
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->FACE_DETECTION:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 98
+    .line 106
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->COLOR_TONE_PROFILE:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 99
+    .line 107
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->VIDEO_HDR:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 100
+    .line 108
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->WB:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 101
+    .line 109
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->VIDEO_STABILIZER:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 102
+    .line 110
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->PEAKING:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 104
-    :cond_1
-    :goto_0
+    .line 112
+    :cond_2
+    :goto_1
     new-instance p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData;
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData;-><init>(Ljava/util/List;)V
@@ -288,10 +331,18 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
     if-eq p0, p1, :cond_1
 
-    .line 57
+    .line 60
     instance-of v0, p1, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData;
 
     if-eqz v0, :cond_0
@@ -302,7 +353,7 @@
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData;->mFunctionCustomList:Ljava/util/List;
 
-    .line 58
+    .line 61
     invoke-static {p0, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p0
@@ -335,12 +386,12 @@
         }
     .end annotation
 
-    .line 68
+    .line 71
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 69
+    .line 72
     iget-object p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData;->mFunctionCustomList:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -360,7 +411,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 70
+    .line 73
     invoke-static {v1}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     move-result-object v1
@@ -376,7 +427,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 64
+    .line 67
     iget-object p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData;->mFunctionCustomList:Ljava/util/List;
 
     filled-new-array {p0}, [Ljava/lang/Object;
@@ -392,8 +443,18 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dest",
+            "flags"
+        }
+    .end annotation
 
-    .line 52
+    .line 55
     iget-object p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData;->mFunctionCustomList:Ljava/util/List;
 
     invoke-virtual {p1, p0}, Landroid/os/Parcel;->writeStringList(Ljava/util/List;)V

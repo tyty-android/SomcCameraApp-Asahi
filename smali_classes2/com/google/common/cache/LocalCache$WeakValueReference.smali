@@ -45,6 +45,19 @@
 # direct methods
 .method constructor <init>(Ljava/lang/ref/ReferenceQueue;Ljava/lang/Object;Lcom/google/common/cache/ReferenceEntry;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "queue",
+            "referent",
+            "entry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -55,10 +68,10 @@
         }
     .end annotation
 
-    .line 1449
+    .line 1487
     invoke-direct {p0, p2, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;Ljava/lang/ref/ReferenceQueue;)V
 
-    .line 1450
+    .line 1488
     iput-object p3, p0, Lcom/google/common/cache/LocalCache$WeakValueReference;->entry:Lcom/google/common/cache/ReferenceEntry;
 
     return-void
@@ -68,6 +81,19 @@
 # virtual methods
 .method public copyFor(Ljava/lang/ref/ReferenceQueue;Ljava/lang/Object;Lcom/google/common/cache/ReferenceEntry;)Lcom/google/common/cache/LocalCache$ValueReference;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "queue",
+            "value",
+            "entry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -80,7 +106,7 @@
         }
     .end annotation
 
-    .line 1469
+    .line 1507
     new-instance p0, Lcom/google/common/cache/LocalCache$WeakValueReference;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/common/cache/LocalCache$WeakValueReference;-><init>(Ljava/lang/ref/ReferenceQueue;Ljava/lang/Object;Lcom/google/common/cache/ReferenceEntry;)V
@@ -98,7 +124,7 @@
         }
     .end annotation
 
-    .line 1460
+    .line 1498
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$WeakValueReference;->entry:Lcom/google/common/cache/ReferenceEntry;
 
     return-object p0
@@ -130,6 +156,15 @@
 
 .method public notifyNewValue(Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "newValue"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TV;)V"
@@ -147,7 +182,7 @@
         }
     .end annotation
 
-    .line 1484
+    .line 1522
     invoke-virtual {p0}, Lcom/google/common/cache/LocalCache$WeakValueReference;->get()Ljava/lang/Object;
 
     move-result-object p0

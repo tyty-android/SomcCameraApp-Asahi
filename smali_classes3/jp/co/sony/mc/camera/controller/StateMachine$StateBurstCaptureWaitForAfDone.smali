@@ -27,22 +27,30 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 4419
+    .line 4223
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCaptureWaitForAfDone;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/controller/StateMachine$StatePhotoBase;-><init>(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/controller/StateMachine$StatePhotoBase-IA;)V
 
-    .line 4420
+    .line 4224
     sget-object p1, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_BURST_CAPTURE_WAIT_FOR_AF_DONE:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCaptureWaitForAfDone;->mCaptureState:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const/4 p1, 0x0
 
-    .line 4421
+    .line 4225
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCaptureWaitForAfDone;->mIsCancelRequested:Z
 
     return-void
@@ -58,33 +66,20 @@
 
 
 # virtual methods
-.method public varargs handleBokehConditionChanged([Ljava/lang/Object;)V
-    .locals 1
-
-    .line 4492
-    iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCaptureWaitForAfDone;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmCameraStatusNotifier(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;
-
-    move-result-object p0
-
-    const/4 v0, 0x0
-
-    aget-object p1, p1, v0
-
-    check-cast p1, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$BokehResult;
-
-    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->notifyBokehResult(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$BokehResult;)V
-
-    return-void
-.end method
-
 .method public varargs handleCaptureCancel([Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "objects"
+        }
+    .end annotation
 
     const/4 p1, 0x1
 
-    .line 4426
+    .line 4230
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCaptureWaitForAfDone;->mIsCancelRequested:Z
 
     return-void
@@ -92,10 +87,18 @@
 
 .method public varargs handleOnAutoFocusDone([Ljava/lang/Object;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "objects"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 4434
+    .line 4238
     aget-object v0, p1, v0
 
     check-cast v0, Ljava/lang/Boolean;
@@ -106,7 +109,7 @@
 
     const/4 v1, 0x1
 
-    .line 4435
+    .line 4239
     aget-object v2, p1, v1
 
     check-cast v2, Ljava/lang/Integer;
@@ -117,7 +120,7 @@
 
     const/4 v3, 0x2
 
-    .line 4436
+    .line 4240
     aget-object v3, p1, v3
 
     check-cast v3, Ljava/lang/Integer;
@@ -126,7 +129,7 @@
 
     move-result v3
 
-    .line 4437
+    .line 4241
     iget-object v4, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCaptureWaitForAfDone;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {v4}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmAutoFocusCallback(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/CameraAccessor$AutoFocusCallback;
@@ -135,7 +138,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 4438
+    .line 4242
     iget-object v4, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCaptureWaitForAfDone;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {v4}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmAutoFocusCallback(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/CameraAccessor$AutoFocusCallback;
@@ -144,7 +147,7 @@
 
     invoke-interface {v4, v2, v0, v3}, Ljp/co/sony/mc/camera/CameraAccessor$AutoFocusCallback;->onAutoFocusDone(IZI)V
 
-    .line 4441
+    .line 4245
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCaptureWaitForAfDone;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
@@ -156,7 +159,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 4442
+    .line 4246
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCaptureWaitForAfDone;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mcreateBurstCaptureRequest(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/device/SnapshotRequest;
@@ -165,7 +168,7 @@
 
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mdoCapture(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/device/SnapshotRequest;)V
 
-    .line 4443
+    .line 4247
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCaptureWaitForAfDone;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     new-instance v1, Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCapture;
@@ -180,7 +183,7 @@
 
     goto :goto_0
 
-    .line 4445
+    .line 4249
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCaptureWaitForAfDone;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
@@ -190,7 +193,7 @@
 
     if-gt v0, v1, :cond_2
 
-    .line 4446
+    .line 4250
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCaptureWaitForAfDone;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object p1, Ljp/co/sony/mc/camera/storage/Storage$StorageType;->INTERNAL:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
@@ -201,7 +204,7 @@
 
     return-void
 
-    .line 4450
+    .line 4254
     :cond_2
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCaptureWaitForAfDone;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
@@ -227,12 +230,12 @@
 
     if-eqz v0, :cond_3
 
-    .line 4451
+    .line 4255
     iget-object v1, v0, Landroid/util/Pair;->second:Ljava/lang/Object;
 
     if-eqz v1, :cond_3
 
-    .line 4452
+    .line 4256
     iget-object v0, v0, Landroid/util/Pair;->second:Ljava/lang/Object;
 
     check-cast v0, Ljp/co/sony/mc/camera/CameraAccessor$CaptureCallback;
@@ -245,7 +248,7 @@
 
     invoke-interface {v0, v1, v2}, Ljp/co/sony/mc/camera/CameraAccessor$CaptureCallback;->onBurstCaptureRejected(II)V
 
-    .line 4454
+    .line 4258
     :cond_3
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCaptureWaitForAfDone;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
@@ -257,7 +260,7 @@
 
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mdoCapture(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/device/SnapshotRequest;)V
 
-    .line 4455
+    .line 4259
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCaptureWaitForAfDone;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     new-instance v1, Ljp/co/sony/mc/camera/controller/StateMachine$StatePhotoCapture;
@@ -274,8 +277,16 @@
 
 .method public varargs handleOnFaceDetected([Ljava/lang/Object;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "objects"
+        }
+    .end annotation
 
-    .line 4467
+    .line 4271
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCaptureWaitForAfDone;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmCameraStatusNotifier(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;
@@ -294,7 +305,7 @@
 
     check-cast v1, Ljava/lang/Boolean;
 
-    .line 4468
+    .line 4272
     invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v1
@@ -309,7 +320,7 @@
 
     move-result p1
 
-    .line 4467
+    .line 4271
     invoke-virtual {p0, v0, v1, p1}, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->notifyDetectedFace(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceDetectionResult;ZZ)V
 
     return-void
@@ -317,8 +328,16 @@
 
 .method public varargs handleOnFocusAreaUpdated([Ljava/lang/Object;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "objects"
+        }
+    .end annotation
 
-    .line 4481
+    .line 4285
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCaptureWaitForAfDone;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmAutoFocusCallback(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/CameraAccessor$AutoFocusCallback;
@@ -329,7 +348,7 @@
 
     const/4 v0, 0x0
 
-    .line 4484
+    .line 4288
     aget-object v0, p1, v0
 
     check-cast v0, Ljava/lang/Boolean;
@@ -340,12 +359,12 @@
 
     const/4 v1, 0x1
 
-    .line 4485
+    .line 4289
     aget-object p1, p1, v1
 
     check-cast p1, [Landroid/graphics/Rect;
 
-    .line 4486
+    .line 4290
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCaptureWaitForAfDone;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmAutoFocusCallback(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/CameraAccessor$AutoFocusCallback;
@@ -360,17 +379,25 @@
 
 .method public varargs handleOnObjectTracked([Ljava/lang/Object;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "objects"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 4474
+    .line 4278
     aget-object v0, p1, v0
 
     check-cast v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ObjectTrackingResult;
 
     const/4 v1, 0x1
 
-    .line 4475
+    .line 4279
     aget-object p1, p1, v1
 
     check-cast p1, Ljava/lang/Boolean;
@@ -379,7 +406,7 @@
 
     move-result p1
 
-    .line 4476
+    .line 4280
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCaptureWaitForAfDone;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p0, v0, p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mcallbackObjectTrackingResult(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ObjectTrackingResult;Z)V
@@ -389,15 +416,23 @@
 
 .method public varargs handlePause([Ljava/lang/Object;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "objects"
+        }
+    .end annotation
 
-    .line 4461
+    .line 4265
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCaptureWaitForAfDone;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mcancelPrepareSnapshot(Ljp/co/sony/mc/camera/controller/StateMachine;Z)V
 
-    .line 4462
+    .line 4266
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCaptureWaitForAfDone;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     new-instance v1, Ljp/co/sony/mc/camera/controller/StateMachine$StatePause;
@@ -415,15 +450,23 @@
 
 .method public varargs handleSetSelectedObjectPosition([Ljava/lang/Object;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "objects"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
-    .line 4497
+    .line 4296
     aget-object v0, p1, v0
 
     check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
-    .line 4498
+    .line 4297
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->isAf()Z
 
     move-result v0
@@ -432,19 +475,19 @@
 
     const/4 v0, 0x0
 
-    .line 4499
+    .line 4298
     aget-object v0, p1, v0
 
     check-cast v0, Landroid/graphics/Rect;
 
     const/4 v1, 0x2
 
-    .line 4500
+    .line 4299
     aget-object v1, p1, v1
 
     check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/Metering;
 
-    .line 4502
+    .line 4301
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCaptureWaitForAfDone;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     const/4 v2, 0x3

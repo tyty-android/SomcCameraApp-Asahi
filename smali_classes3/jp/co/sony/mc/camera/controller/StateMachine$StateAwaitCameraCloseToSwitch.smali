@@ -27,26 +27,36 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/CameraAccessor$ModeAndCameraSwitchCallback;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "callback"
+        }
+    .end annotation
 
-    .line 2245
+    .line 2274
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateAwaitCameraCloseToSwitch;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/controller/StateMachine$State;-><init>(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/controller/StateMachine$State-IA;)V
 
-    .line 2241
+    .line 2270
     iput-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateAwaitCameraCloseToSwitch;->mSurface:Landroid/view/Surface;
 
-    .line 2242
+    .line 2271
     iput-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateAwaitCameraCloseToSwitch;->mSurfaceSize:Landroid/util/Size;
 
-    .line 2246
+    .line 2275
     sget-object p1, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_AWAIT_CAMERA_CLOSE_TO_SWITCH:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateAwaitCameraCloseToSwitch;->mCaptureState:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 2247
+    .line 2276
     iput-object p2, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateAwaitCameraCloseToSwitch;->mCallback:Ljp/co/sony/mc/camera/CameraAccessor$ModeAndCameraSwitchCallback;
 
     return-void
@@ -64,8 +74,16 @@
 # virtual methods
 .method public varargs handleApplyChangedSetting([Ljava/lang/Object;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "objects"
+        }
+    .end annotation
 
-    .line 2292
+    .line 2321
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateAwaitCameraCloseToSwitch;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     const/4 v0, 0x0
@@ -87,18 +105,26 @@
 
 .method public varargs handleOnCameraDeviceClosed([Ljava/lang/Object;)V
     .locals 11
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "objects"
+        }
+    .end annotation
 
-    .line 2252
+    .line 2281
     invoke-super {p0, p1}, Ljp/co/sony/mc/camera/controller/StateMachine$State;->handleOnCameraDeviceClosed([Ljava/lang/Object;)V
 
-    .line 2254
+    .line 2283
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateAwaitCameraCloseToSwitch;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateAwaitCameraCloseToSwitch;->mCallback:Ljp/co/sony/mc/camera/CameraAccessor$ModeAndCameraSwitchCallback;
 
     invoke-static {p1, v0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fputmReadyStateCallback(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/CameraAccessor$ReadyStateCallback;)V
 
-    .line 2255
+    .line 2284
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateAwaitCameraCloseToSwitch;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmCameraDeviceHandler(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/device/CameraDeviceHandler;
@@ -119,19 +145,19 @@
 
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler;->setOnPreviewStartedListener(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OnPreviewStartedListener;)V
 
-    .line 2257
+    .line 2286
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateAwaitCameraCloseToSwitch;->mCallback:Ljp/co/sony/mc/camera/CameraAccessor$ModeAndCameraSwitchCallback;
 
     invoke-interface {p1}, Ljp/co/sony/mc/camera/CameraAccessor$ModeAndCameraSwitchCallback;->onCameraDeviceClosed()V
 
-    .line 2258
+    .line 2287
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateAwaitCameraCloseToSwitch;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmCameraSettingsHolder(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
 
     move-result-object p1
 
-    .line 2259
+    .line 2288
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getCaptureFps()Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
 
     move-result-object p1
@@ -140,14 +166,14 @@
 
     move-result p1
 
-    .line 2258
+    .line 2287
     invoke-static {p1}, Ljp/co/sony/mc/camera/device/FpsProvider;->isHighSpeedFps(I)Z
 
     move-result p1
 
     if-nez p1, :cond_2
 
-    .line 2260
+    .line 2289
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateAwaitCameraCloseToSwitch;->mSurface:Landroid/view/Surface;
 
     const/4 v0, 0x1
@@ -165,7 +191,7 @@
     :cond_0
     move v9, v4
 
-    .line 2261
+    .line 2290
     :goto_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateAwaitCameraCloseToSwitch;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
@@ -181,16 +207,16 @@
 
     if-eqz v9, :cond_1
 
-    .line 2264
+    .line 2293
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateAwaitCameraCloseToSwitch;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateAwaitCameraCloseToSwitch;->mSurface:Landroid/view/Surface;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateAwaitCameraCloseToSwitch;->mSurfaceSize:Landroid/util/Size;
 
-    invoke-static {p1, v1, v2}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$msetSurfaceToCameraDeviceHandler(Ljp/co/sony/mc/camera/controller/StateMachine;Landroid/view/Surface;Landroid/util/Size;)V
+    invoke-static {p1, v1, v2}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$msetMainPreviewSurfaceToCameraDeviceHandler(Ljp/co/sony/mc/camera/controller/StateMachine;Landroid/view/Surface;Landroid/util/Size;)V
 
-    .line 2266
+    .line 2295
     :cond_1
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateAwaitCameraCloseToSwitch;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
@@ -210,7 +236,7 @@
 
     invoke-static {p1, v1, v2}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mchangeTo(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/controller/StateMachine$State;[Ljava/lang/Object;)V
 
-    .line 2267
+    .line 2296
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateAwaitCameraCloseToSwitch;->mCallback:Ljp/co/sony/mc/camera/CameraAccessor$ModeAndCameraSwitchCallback;
 
     invoke-interface {p0, v0}, Ljp/co/sony/mc/camera/CameraAccessor$ModeAndCameraSwitchCallback;->onNewSettingsApplied(Z)V
@@ -219,12 +245,20 @@
     return-void
 .end method
 
-.method public varargs handleOnSurfacePrepared([Ljava/lang/Object;)V
+.method public varargs handleOnMainPreviewSurfacePrepared([Ljava/lang/Object;)V
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "objects"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 2273
+    .line 2302
     aget-object v1, p1, v0
 
     check-cast v1, Landroid/view/Surface;
@@ -233,21 +267,21 @@
 
     const/4 v1, 0x1
 
-    .line 2274
+    .line 2303
     aget-object p1, p1, v1
 
     check-cast p1, Landroid/util/Size;
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateAwaitCameraCloseToSwitch;->mSurfaceSize:Landroid/util/Size;
 
-    .line 2275
+    .line 2304
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateAwaitCameraCloseToSwitch;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmCameraSettingsHolder(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
 
     move-result-object p1
 
-    .line 2276
+    .line 2305
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getCaptureFps()Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
 
     move-result-object p1
@@ -256,14 +290,14 @@
 
     move-result p1
 
-    .line 2275
+    .line 2304
     invoke-static {p1}, Ljp/co/sony/mc/camera/device/FpsProvider;->isHighSpeedFps(I)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 2277
+    .line 2306
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateAwaitCameraCloseToSwitch;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmCameraSettingsHolder(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
@@ -276,16 +310,16 @@
 
     move-result-object v6
 
-    .line 2279
+    .line 2308
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateAwaitCameraCloseToSwitch;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateAwaitCameraCloseToSwitch;->mSurface:Landroid/view/Surface;
 
     iget-object v3, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateAwaitCameraCloseToSwitch;->mSurfaceSize:Landroid/util/Size;
 
-    invoke-static {p1, v2, v3}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$msetSurfaceToCameraDeviceHandler(Ljp/co/sony/mc/camera/controller/StateMachine;Landroid/view/Surface;Landroid/util/Size;)V
+    invoke-static {p1, v2, v3}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$msetMainPreviewSurfaceToCameraDeviceHandler(Ljp/co/sony/mc/camera/controller/StateMachine;Landroid/view/Surface;Landroid/util/Size;)V
 
-    .line 2280
+    .line 2309
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateAwaitCameraCloseToSwitch;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     new-instance v2, Ljp/co/sony/mc/camera/controller/StateMachine$StateCameraSwitching;
@@ -306,7 +340,7 @@
 
     invoke-static {p1, v2, v0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mchangeTo(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/controller/StateMachine$State;[Ljava/lang/Object;)V
 
-    .line 2281
+    .line 2310
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateAwaitCameraCloseToSwitch;->mCallback:Ljp/co/sony/mc/camera/CameraAccessor$ModeAndCameraSwitchCallback;
 
     invoke-interface {p0, v1}, Ljp/co/sony/mc/camera/CameraAccessor$ModeAndCameraSwitchCallback;->onNewSettingsApplied(Z)V
@@ -317,8 +351,16 @@
 
 .method public varargs handlePause([Ljava/lang/Object;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "objects"
+        }
+    .end annotation
 
-    .line 2287
+    .line 2316
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateAwaitCameraCloseToSwitch;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     new-instance v1, Ljp/co/sony/mc/camera/controller/StateMachine$StatePause;

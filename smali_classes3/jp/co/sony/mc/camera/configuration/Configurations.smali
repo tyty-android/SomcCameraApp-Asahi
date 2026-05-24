@@ -130,6 +130,14 @@
 
 .method public initInSync(Ljp/co/sony/mc/camera/configuration/IntentReader$VideoQualityConfigurations;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "videoConfig"
+        }
+    .end annotation
 
     .line 47
     iput-object p1, p0, Ljp/co/sony/mc/camera/configuration/Configurations;->mVideoConfig:Ljp/co/sony/mc/camera/configuration/IntentReader$VideoQualityConfigurations;

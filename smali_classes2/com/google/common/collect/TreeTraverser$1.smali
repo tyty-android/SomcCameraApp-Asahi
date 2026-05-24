@@ -28,8 +28,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/base/Function;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "val$nodeToChildrenFunction"
+        }
+    .end annotation
 
-    .line 92
+    .line 97
     iput-object p1, p0, Lcom/google/common/collect/TreeTraverser$1;->val$nodeToChildrenFunction:Lcom/google/common/base/Function;
 
     invoke-direct {p0}, Lcom/google/common/collect/TreeTraverser;-><init>()V
@@ -41,6 +49,15 @@
 # virtual methods
 .method public children(Ljava/lang/Object;)Ljava/lang/Iterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "root"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)",
@@ -49,7 +66,7 @@
         }
     .end annotation
 
-    .line 95
+    .line 100
     iget-object p0, p0, Lcom/google/common/collect/TreeTraverser$1;->val$nodeToChildrenFunction:Lcom/google/common/base/Function;
 
     invoke-interface {p0, p1}, Lcom/google/common/base/Function;->apply(Ljava/lang/Object;)Ljava/lang/Object;

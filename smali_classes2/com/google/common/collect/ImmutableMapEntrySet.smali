@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/collect/ImmutableMapEntrySet$EntrySetSerializedForm;,
@@ -29,10 +32,37 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 68
+    .line 82
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableSet;-><init>()V
 
     return-void
+.end method
+
+.method private readObject(Ljava/io/ObjectInputStream;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stream"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/InvalidObjectException;
+        }
+    .end annotation
+
+    .line 127
+    new-instance p0, Ljava/io/InvalidObjectException;
+
+    const-string p1, "Use EntrySetSerializedForm"
+
+    invoke-direct {p0, p1}, Ljava/io/InvalidObjectException;-><init>(Ljava/lang/String;)V
+
+    throw p0
 .end method
 
 
@@ -40,21 +70,29 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 2
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 79
+    .line 93
     instance-of v0, p1, Ljava/util/Map$Entry;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 80
+    .line 94
     check-cast p1, Ljava/util/Map$Entry;
 
-    .line 81
+    .line 95
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMapEntrySet;->map()Lcom/google/common/collect/ImmutableMap;
 
     move-result-object p0
@@ -69,7 +107,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 82
+    .line 96
     invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object p1
@@ -89,7 +127,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 100
+    .line 114
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMapEntrySet;->map()Lcom/google/common/collect/ImmutableMap;
 
     move-result-object p0
@@ -104,7 +142,7 @@
 .method isHashCodeFast()Z
     .locals 0
 
-    .line 95
+    .line 109
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMapEntrySet;->map()Lcom/google/common/collect/ImmutableMap;
 
     move-result-object p0
@@ -119,7 +157,7 @@
 .method isPartialView()Z
     .locals 0
 
-    .line 89
+    .line 103
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMapEntrySet;->map()Lcom/google/common/collect/ImmutableMap;
 
     move-result-object p0
@@ -144,7 +182,7 @@
 .method public size()I
     .locals 0
 
-    .line 74
+    .line 88
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMapEntrySet;->map()Lcom/google/common/collect/ImmutableMap;
 
     move-result-object p0
@@ -159,7 +197,7 @@
 .method writeReplace()Ljava/lang/Object;
     .locals 1
 
-    .line 106
+    .line 121
     new-instance v0, Lcom/google/common/collect/ImmutableMapEntrySet$EntrySetSerializedForm;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMapEntrySet;->map()Lcom/google/common/collect/ImmutableMap;

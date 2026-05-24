@@ -41,13 +41,21 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/AbstractMapBasedMultiset;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 163
+    .line 167
     iput-object p1, p0, Lcom/google/common/collect/AbstractMapBasedMultiset$Itr;->this$0:Lcom/google/common/collect/AbstractMapBasedMultiset;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 164
+    .line 168
     iget-object v0, p1, Lcom/google/common/collect/AbstractMapBasedMultiset;->backingMap:Lcom/google/common/collect/ObjectCountHashMap;
 
     invoke-virtual {v0}, Lcom/google/common/collect/ObjectCountHashMap;->firstIndex()I
@@ -58,10 +66,10 @@
 
     const/4 v0, -0x1
 
-    .line 165
+    .line 169
     iput v0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset$Itr;->toRemove:I
 
-    .line 166
+    .line 170
     iget-object p1, p1, Lcom/google/common/collect/AbstractMapBasedMultiset;->backingMap:Lcom/google/common/collect/ObjectCountHashMap;
 
     iget p1, p1, Lcom/google/common/collect/ObjectCountHashMap;->modCount:I
@@ -74,7 +82,7 @@
 .method private checkForConcurrentModification()V
     .locals 1
 
-    .line 171
+    .line 176
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset$Itr;->this$0:Lcom/google/common/collect/AbstractMapBasedMultiset;
 
     iget-object v0, v0, Lcom/google/common/collect/AbstractMapBasedMultiset;->backingMap:Lcom/google/common/collect/ObjectCountHashMap;
@@ -87,7 +95,7 @@
 
     return-void
 
-    .line 172
+    .line 177
     :cond_0
     new-instance p0, Ljava/util/ConcurrentModificationException;
 
@@ -101,10 +109,10 @@
 .method public hasNext()Z
     .locals 0
 
-    .line 178
+    .line 183
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMapBasedMultiset$Itr;->checkForConcurrentModification()V
 
-    .line 179
+    .line 184
     iget p0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset$Itr;->entryIndex:I
 
     if-ltz p0, :cond_0
@@ -122,32 +130,35 @@
 
 .method public next()Ljava/lang/Object;
     .locals 3
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TT;"
         }
     .end annotation
 
-    .line 184
+    .line 190
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultiset$Itr;->hasNext()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 187
+    .line 193
     iget v0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset$Itr;->entryIndex:I
 
     invoke-virtual {p0, v0}, Lcom/google/common/collect/AbstractMapBasedMultiset$Itr;->result(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 188
+    .line 194
     iget v1, p0, Lcom/google/common/collect/AbstractMapBasedMultiset$Itr;->entryIndex:I
 
     iput v1, p0, Lcom/google/common/collect/AbstractMapBasedMultiset$Itr;->toRemove:I
 
-    .line 189
+    .line 195
     iget-object v1, p0, Lcom/google/common/collect/AbstractMapBasedMultiset$Itr;->this$0:Lcom/google/common/collect/AbstractMapBasedMultiset;
 
     iget-object v1, v1, Lcom/google/common/collect/AbstractMapBasedMultiset;->backingMap:Lcom/google/common/collect/ObjectCountHashMap;
@@ -162,7 +173,7 @@
 
     return-object v0
 
-    .line 185
+    .line 191
     :cond_0
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -174,10 +185,10 @@
 .method public remove()V
     .locals 6
 
-    .line 195
+    .line 201
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMapBasedMultiset$Itr;->checkForConcurrentModification()V
 
-    .line 196
+    .line 202
     iget v0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset$Itr;->toRemove:I
 
     const/4 v1, -0x1
@@ -194,7 +205,7 @@
     :goto_0
     invoke-static {v0}, Lcom/google/common/collect/CollectPreconditions;->checkRemove(Z)V
 
-    .line 197
+    .line 203
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset$Itr;->this$0:Lcom/google/common/collect/AbstractMapBasedMultiset;
 
     iget-wide v2, v0, Lcom/google/common/collect/AbstractMapBasedMultiset;->size:J
@@ -215,7 +226,7 @@
 
     iput-wide v2, v0, Lcom/google/common/collect/AbstractMapBasedMultiset;->size:J
 
-    .line 198
+    .line 204
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset$Itr;->this$0:Lcom/google/common/collect/AbstractMapBasedMultiset;
 
     iget-object v0, v0, Lcom/google/common/collect/AbstractMapBasedMultiset;->backingMap:Lcom/google/common/collect/ObjectCountHashMap;
@@ -230,10 +241,10 @@
 
     iput v0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset$Itr;->entryIndex:I
 
-    .line 199
+    .line 205
     iput v1, p0, Lcom/google/common/collect/AbstractMapBasedMultiset$Itr;->toRemove:I
 
-    .line 200
+    .line 206
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset$Itr;->this$0:Lcom/google/common/collect/AbstractMapBasedMultiset;
 
     iget-object v0, v0, Lcom/google/common/collect/AbstractMapBasedMultiset;->backingMap:Lcom/google/common/collect/ObjectCountHashMap;
@@ -246,6 +257,18 @@
 .end method
 
 .method abstract result(I)Ljava/lang/Object;
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "entryIndex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TT;"

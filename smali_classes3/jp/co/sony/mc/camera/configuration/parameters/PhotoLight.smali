@@ -71,13 +71,13 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f08019c
+    const v3, 0x7f0801f8
 
-    const v4, 0x7f080192
+    const v4, 0x7f0801ee
 
-    const v5, 0x7f1103f3
+    const v5, 0x7f11043e
 
-    const v6, 0x7f1103f3
+    const v6, 0x7f11043e
 
     move-object v0, v9
 
@@ -96,13 +96,13 @@
 
     const/4 v12, 0x1
 
-    const v13, 0x7f08019a
+    const v13, 0x7f0801f6
 
-    const v14, 0x7f080190
+    const v14, 0x7f0801ec
 
-    const v15, 0x7f1103f4
+    const v15, 0x7f11043f
 
-    const v16, 0x7f1103f4
+    const v16, 0x7f11043f
 
     move-object v10, v0
 
@@ -122,6 +122,29 @@
 
 .method private constructor <init>(Ljava/lang/String;IIIIILjava/lang/String;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "BasicIconId",
+            "fnIconId",
+            "textId",
+            "shortTextId",
+            "value",
+            "booleanValue"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IIII",
@@ -156,6 +179,16 @@
 
 .method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/PhotoLight;
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId"
+        }
+    .end annotation
 
     .line 139
     new-instance v0, Ljava/util/ArrayList;
@@ -259,6 +292,14 @@
 
 .method public static getPhotoLightFromParameterString(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/PhotoLight;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "photolightString"
+        }
+    .end annotation
 
     .line 187
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/PhotoLight;->values()[Ljp/co/sony/mc/camera/configuration/parameters/PhotoLight;
@@ -300,6 +341,14 @@
 
 .method public static isSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
     .line 206
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isPhotoLightModeSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
@@ -311,6 +360,18 @@
 
 .method public static isSupportedValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/PhotoLight;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId",
+            "checkTarget"
+        }
+    .end annotation
 
     .line 164
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
@@ -362,6 +423,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/PhotoLight;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 21
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/PhotoLight;

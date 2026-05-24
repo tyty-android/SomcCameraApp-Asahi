@@ -40,7 +40,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
     .locals 5
 
-    .line 3742
+    .line 3988
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;->ERROR_ON_CAMERA_OPEN:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
     sget-object v1, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;->ERROR_ON_CAMERA_ERROR:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
@@ -61,7 +61,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 3743
+    .line 3989
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
     const-string v1, "ERROR_ON_CAMERA_OPEN"
@@ -72,7 +72,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;->ERROR_ON_CAMERA_OPEN:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
-    .line 3744
+    .line 3990
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
     const-string v1, "ERROR_ON_CAMERA_ERROR"
@@ -83,7 +83,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;->ERROR_ON_CAMERA_ERROR:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
-    .line 3745
+    .line 3991
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
     const-string v1, "ERROR_ON_CAMERA_DISCONNECTION"
@@ -94,7 +94,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;->ERROR_ON_CAMERA_DISCONNECTION:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
-    .line 3746
+    .line 3992
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
     const-string v1, "ERROR_ON_CAPTURE_FAILED"
@@ -105,7 +105,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;->ERROR_ON_CAPTURE_FAILED:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
-    .line 3747
+    .line 3993
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
     const-string v1, "ERROR_ON_CONFIGURE_FAILED"
@@ -116,7 +116,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;->ERROR_ON_CONFIGURE_FAILED:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
-    .line 3742
+    .line 3988
     invoke-static {}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;->$values()[Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
     move-result-object v0
@@ -128,13 +128,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 3742
+    .line 3988
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -142,8 +153,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 3742
+    .line 3988
     const-class v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -158,7 +177,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
     .locals 1
 
-    .line 3742
+    .line 3988
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;->$VALUES:[Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;->clone()Ljava/lang/Object;

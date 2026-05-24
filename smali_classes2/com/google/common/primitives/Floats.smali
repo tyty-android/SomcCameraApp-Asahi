@@ -4,11 +4,14 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/primitives/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/common/primitives/Floats$FloatArrayAsList;,
+        Lcom/google/common/primitives/Floats$FloatConverter;,
         Lcom/google/common/primitives/Floats$LexicographicalComparator;,
-        Lcom/google/common/primitives/Floats$FloatConverter;
+        Lcom/google/common/primitives/Floats$FloatArrayAsList;
     }
 .end annotation
 
@@ -21,7 +24,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 51
+    .line 52
     invoke-direct {p0}, Lcom/google/common/primitives/FloatsMethodsForWeb;-><init>()V
 
     return-void
@@ -30,7 +33,7 @@
 .method static synthetic access$000([FFII)I
     .locals 0
 
-    .line 50
+    .line 51
     invoke-static {p0, p1, p2, p3}, Lcom/google/common/primitives/Floats;->indexOf([FFII)I
 
     move-result p0
@@ -41,7 +44,7 @@
 .method static synthetic access$100([FFII)I
     .locals 0
 
-    .line 50
+    .line 51
     invoke-static {p0, p1, p2, p3}, Lcom/google/common/primitives/Floats;->lastIndexOf([FFII)I
 
     move-result p0
@@ -51,6 +54,15 @@
 
 .method public static varargs asList([F)Ljava/util/List;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "backingArray"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([F)",
@@ -60,19 +72,19 @@
         }
     .end annotation
 
-    .line 510
+    .line 574
     array-length v0, p0
 
     if-nez v0, :cond_0
 
-    .line 511
+    .line 575
     invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     move-result-object p0
 
     return-object p0
 
-    .line 513
+    .line 577
     :cond_0
     new-instance v0, Lcom/google/common/primitives/Floats$FloatArrayAsList;
 
@@ -81,10 +93,55 @@
     return-object v0
 .end method
 
+.method private static checkNoOverflow(J)I
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
+
+    long-to-int v0, p0
+
+    int-to-long v1, v0
+
+    cmp-long v1, p0, v1
+
+    if-nez v1, :cond_0
+
+    const/4 v1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v1, 0x0
+
+    .line 291
+    :goto_0
+    const-string v2, "the total number of elements (%s) in the arrays must fit in an int"
+
+    invoke-static {v1, v2, p0, p1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;J)V
+
+    return v0
+.end method
+
 .method public static compare(FF)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b"
+        }
+    .end annotation
 
-    .line 90
+    .line 92
     invoke-static {p0, p1}, Ljava/lang/Float;->compare(FF)I
 
     move-result p0
@@ -94,57 +151,71 @@
 
 .method public static varargs concat([[F)[F
     .locals 7
-
-    .line 273
-    array-length v0, p0
-
-    const/4 v1, 0x0
-
-    move v2, v1
-
-    move v3, v2
-
-    :goto_0
-    if-ge v2, v0, :cond_0
-
-    aget-object v4, p0, v2
-
-    .line 274
-    array-length v4, v4
-
-    add-int/2addr v3, v4
-
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    .line 276
-    :cond_0
-    new-array v0, v3, [F
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "arrays"
+        }
+    .end annotation
 
     .line 278
-    array-length v2, p0
+    array-length v0, p0
 
-    move v3, v1
+    const-wide/16 v1, 0x0
+
+    const/4 v3, 0x0
 
     move v4, v3
 
-    :goto_1
-    if-ge v3, v2, :cond_1
+    :goto_0
+    if-ge v4, v0, :cond_0
 
-    aget-object v5, p0, v3
+    aget-object v5, p0, v4
 
     .line 279
+    array-length v5, v5
+
+    int-to-long v5, v5
+
+    add-long/2addr v1, v5
+
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_0
+
+    .line 281
+    :cond_0
+    invoke-static {v1, v2}, Lcom/google/common/primitives/Floats;->checkNoOverflow(J)I
+
+    move-result v0
+
+    new-array v0, v0, [F
+
+    .line 283
+    array-length v1, p0
+
+    move v2, v3
+
+    move v4, v2
+
+    :goto_1
+    if-ge v2, v1, :cond_1
+
+    aget-object v5, p0, v2
+
+    .line 284
     array-length v6, v5
 
-    invoke-static {v5, v1, v0, v4, v6}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {v5, v3, v0, v4, v6}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 280
+    .line 285
     array-length v5, v5
 
     add-int/2addr v4, v5
 
-    add-int/lit8 v3, v3, 0x1
+    add-int/lit8 v2, v2, 0x1
 
     goto :goto_1
 
@@ -154,12 +225,24 @@
 
 .method public static constrainToRange(FFF)F
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "value",
+            "min",
+            "max"
+        }
+    .end annotation
 
     cmpg-float v0, p1, p2
 
     if-gtz v0, :cond_0
 
-    .line 257
+    .line 260
     invoke-static {p0, p1}, Ljava/lang/Math;->max(FF)F
 
     move-result p0
@@ -170,11 +253,11 @@
 
     return p0
 
-    .line 259
+    .line 262
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    .line 260
+    .line 263
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p1
@@ -200,8 +283,18 @@
 
 .method public static contains([FF)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "array",
+            "target"
+        }
+    .end annotation
 
-    .line 114
+    .line 116
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -232,6 +325,18 @@
 
 .method public static ensureCapacity([FII)[F
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "array",
+            "minLength",
+            "padding"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -246,7 +351,7 @@
     :cond_0
     move v2, v1
 
-    .line 336
+    .line 348
     :goto_0
     const-string v3, "Invalid minLength: %s"
 
@@ -259,13 +364,13 @@
     :cond_1
     move v0, v1
 
-    .line 337
+    .line 349
     :goto_1
     const-string v1, "Invalid padding: %s"
 
     invoke-static {v0, v1, p2}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;I)V
 
-    .line 338
+    .line 350
     array-length v0, p0
 
     if-ge v0, p1, :cond_2
@@ -282,8 +387,16 @@
 
 .method public static hashCode(F)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 73
+    .line 74
     invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p0
@@ -297,10 +410,20 @@
 
 .method public static indexOf([FF)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "array",
+            "target"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 132
+    .line 134
     array-length v1, p0
 
     invoke-static {p0, p1, v0, v1}, Lcom/google/common/primitives/Floats;->indexOf([FFII)I
@@ -312,11 +435,25 @@
 
 .method private static indexOf([FFII)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "array",
+            "target",
+            "start",
+            "end"
+        }
+    .end annotation
 
     :goto_0
     if-ge p2, p3, :cond_1
 
-    .line 138
+    .line 140
     aget v0, p0, p2
 
     cmpl-float v0, v0, p1
@@ -338,18 +475,28 @@
 
 .method public static indexOf([F[F)I
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "array",
+            "target"
+        }
+    .end annotation
 
-    .line 158
+    .line 160
     const-string v0, "array"
 
     invoke-static {p0, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 159
+    .line 161
     const-string v0, "target"
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 160
+    .line 162
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -361,7 +508,7 @@
     :cond_0
     move v0, v1
 
-    .line 165
+    .line 167
     :goto_0
     array-length v2, p0
 
@@ -375,7 +522,7 @@
 
     move v2, v1
 
-    .line 166
+    .line 168
     :goto_1
     array-length v3, p1
 
@@ -383,7 +530,7 @@
 
     add-int v3, v0, v2
 
-    .line 167
+    .line 169
     aget v3, p0, v3
 
     aget v4, p1, v2
@@ -412,6 +559,14 @@
 
 .method public static isFinite(F)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     const/high16 v0, -0x800000    # Float.NEGATIVE_INFINITY
 
@@ -438,21 +593,31 @@
 
 .method public static varargs join(Ljava/lang/String;[F)Ljava/lang/String;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "separator",
+            "array"
+        }
+    .end annotation
 
-    .line 354
+    .line 366
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 355
+    .line 367
     array-length v0, p1
 
     if-nez v0, :cond_0
 
-    .line 356
+    .line 368
     const-string p0, ""
 
     return-object p0
 
-    .line 360
+    .line 372
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -464,20 +629,20 @@
 
     const/4 v1, 0x0
 
-    .line 361
+    .line 373
     aget v1, p1, v1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
     const/4 v1, 0x1
 
-    .line 362
+    .line 374
     :goto_0
     array-length v2, p1
 
     if-ge v1, v2, :cond_1
 
-    .line 363
+    .line 375
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
@@ -490,7 +655,7 @@
 
     goto :goto_0
 
-    .line 365
+    .line 377
     :cond_1
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -501,10 +666,20 @@
 
 .method public static lastIndexOf([FF)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "array",
+            "target"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 186
+    .line 188
     array-length v1, p0
 
     invoke-static {p0, p1, v0, v1}, Lcom/google/common/primitives/Floats;->lastIndexOf([FFII)I
@@ -516,13 +691,27 @@
 
 .method private static lastIndexOf([FFII)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "array",
+            "target",
+            "start",
+            "end"
+        }
+    .end annotation
 
     add-int/lit8 p3, p3, -0x1
 
     :goto_0
     if-lt p3, p2, :cond_1
 
-    .line 192
+    .line 194
     aget v0, p0, p3
 
     cmpl-float v0, v0, p1
@@ -552,7 +741,7 @@
         }
     .end annotation
 
-    .line 382
+    .line 394
     sget-object v0, Lcom/google/common/primitives/Floats$LexicographicalComparator;->INSTANCE:Lcom/google/common/primitives/Floats$LexicographicalComparator;
 
     return-object v0
@@ -560,8 +749,16 @@
 
 .method public static varargs max([F)F
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "array"
+        }
+    .end annotation
 
-    .line 231
+    .line 233
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -580,16 +777,16 @@
     :goto_0
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 232
+    .line 234
     aget v0, p0, v1
 
-    .line 233
+    .line 235
     :goto_1
     array-length v1, p0
 
     if-ge v2, v1, :cond_1
 
-    .line 234
+    .line 236
     aget v1, p0, v2
 
     invoke-static {v0, v1}, Ljava/lang/Math;->max(FF)F
@@ -606,8 +803,16 @@
 
 .method public static varargs min([F)F
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "array"
+        }
+    .end annotation
 
-    .line 211
+    .line 213
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -626,16 +831,16 @@
     :goto_0
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 212
+    .line 214
     aget v0, p0, v1
 
-    .line 213
+    .line 215
     :goto_1
     array-length v1, p0
 
     if-ge v2, v1, :cond_1
 
-    .line 214
+    .line 216
     aget v1, p0, v2
 
     invoke-static {v0, v1}, Ljava/lang/Math;->min(FF)F
@@ -652,13 +857,21 @@
 
 .method public static reverse([F)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "array"
+        }
+    .end annotation
 
-    .line 442
+    .line 454
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 v0, 0x0
 
-    .line 443
+    .line 455
     array-length v1, p0
 
     invoke-static {p0, v0, v1}, Lcom/google/common/primitives/Floats;->reverse([FII)V
@@ -668,11 +881,23 @@
 
 .method public static reverse([FII)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "array",
+            "fromIndex",
+            "toIndex"
+        }
+    .end annotation
 
-    .line 457
+    .line 469
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 458
+    .line 470
     array-length v0, p0
 
     invoke-static {p1, p2, v0}, Lcom/google/common/base/Preconditions;->checkPositionIndexes(III)V
@@ -682,15 +907,15 @@
     :goto_0
     if-ge p1, p2, :cond_0
 
-    .line 460
+    .line 472
     aget v0, p0, p1
 
-    .line 461
+    .line 473
     aget v1, p0, p2
 
     aput v1, p0, p1
 
-    .line 462
+    .line 474
     aput v0, p0, p2
 
     add-int/lit8 p1, p1, 0x1
@@ -703,15 +928,112 @@
     return-void
 .end method
 
+.method public static rotate([FI)V
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "array",
+            "distance"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    .line 489
+    array-length v1, p0
+
+    invoke-static {p0, p1, v0, v1}, Lcom/google/common/primitives/Floats;->rotate([FIII)V
+
+    return-void
+.end method
+
+.method public static rotate([FIII)V
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "array",
+            "distance",
+            "fromIndex",
+            "toIndex"
+        }
+    .end annotation
+
+    .line 506
+    invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 507
+    array-length v0, p0
+
+    invoke-static {p2, p3, v0}, Lcom/google/common/base/Preconditions;->checkPositionIndexes(III)V
+
+    .line 508
+    array-length v0, p0
+
+    const/4 v1, 0x1
+
+    if-gt v0, v1, :cond_0
+
+    return-void
+
+    :cond_0
+    sub-int v0, p3, p2
+
+    neg-int p1, p1
+
+    .line 515
+    rem-int/2addr p1, v0
+
+    if-gez p1, :cond_1
+
+    add-int/2addr p1, v0
+
+    :cond_1
+    add-int/2addr p1, p2
+
+    if-ne p1, p2, :cond_2
+
+    return-void
+
+    .line 523
+    :cond_2
+    invoke-static {p0, p2, p1}, Lcom/google/common/primitives/Floats;->reverse([FII)V
+
+    .line 524
+    invoke-static {p0, p1, p3}, Lcom/google/common/primitives/Floats;->reverse([FII)V
+
+    .line 525
+    invoke-static {p0, p2, p3}, Lcom/google/common/primitives/Floats;->reverse([FII)V
+
+    return-void
+.end method
+
 .method public static sortDescending([F)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "array"
+        }
+    .end annotation
 
-    .line 415
+    .line 427
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 v0, 0x0
 
-    .line 416
+    .line 428
     array-length v1, p0
 
     invoke-static {p0, v0, v1}, Lcom/google/common/primitives/Floats;->sortDescending([FII)V
@@ -721,19 +1043,31 @@
 
 .method public static sortDescending([FII)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "array",
+            "fromIndex",
+            "toIndex"
+        }
+    .end annotation
 
-    .line 429
+    .line 441
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 430
+    .line 442
     array-length v0, p0
 
     invoke-static {p1, p2, v0}, Lcom/google/common/base/Preconditions;->checkPositionIndexes(III)V
 
-    .line 431
+    .line 443
     invoke-static {p0, p1, p2}, Ljava/util/Arrays;->sort([FII)V
 
-    .line 432
+    .line 444
     invoke-static {p0, p1, p2}, Lcom/google/common/primitives/Floats;->reverse([FII)V
 
     return-void
@@ -751,14 +1085,23 @@
         }
     .end annotation
 
-    .line 319
-    sget-object v0, Lcom/google/common/primitives/Floats$FloatConverter;->INSTANCE:Lcom/google/common/primitives/Floats$FloatConverter;
+    .line 331
+    sget-object v0, Lcom/google/common/primitives/Floats$FloatConverter;->INSTANCE:Lcom/google/common/base/Converter;
 
     return-object v0
 .end method
 
 .method public static toArray(Ljava/util/Collection;)[F
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "collection"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -769,12 +1112,12 @@
         }
     .end annotation
 
-    .line 480
+    .line 542
     instance-of v0, p0, Lcom/google/common/primitives/Floats$FloatArrayAsList;
 
     if-eqz v0, :cond_0
 
-    .line 481
+    .line 543
     check-cast p0, Lcom/google/common/primitives/Floats$FloatArrayAsList;
 
     invoke-virtual {p0}, Lcom/google/common/primitives/Floats$FloatArrayAsList;->toFloatArray()[F
@@ -783,16 +1126,16 @@
 
     return-object p0
 
-    .line 484
+    .line 546
     :cond_0
     invoke-interface {p0}, Ljava/util/Collection;->toArray()[Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 485
+    .line 547
     array-length v0, p0
 
-    .line 486
+    .line 548
     new-array v1, v0, [F
 
     const/4 v2, 0x0
@@ -800,7 +1143,7 @@
     :goto_0
     if-ge v2, v0, :cond_1
 
-    .line 489
+    .line 551
     aget-object v3, p0, v2
 
     invoke-static {v3}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -825,10 +1168,19 @@
 
 .method public static tryParse(Ljava/lang/String;)Ljava/lang/Float;
     .locals 1
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "string"
+        }
     .end annotation
 
-    .line 666
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 729
     sget-object v0, Lcom/google/common/primitives/Doubles;->FLOATING_POINT_PATTERN:Ljava/util/regex/Pattern;
 
     invoke-virtual {v0, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
@@ -841,7 +1193,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 670
+    .line 733
     :try_start_0
     invoke-static {p0}, Ljava/lang/Float;->parseFloat(Ljava/lang/String;)F
 

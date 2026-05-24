@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field private final mCallback67:Landroid/view/View$OnClickListener;
+.field private final mCallback58:Landroid/view/View$OnClickListener;
 
 .field private mDirtyFlags:J
 
@@ -27,6 +27,16 @@
 
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root"
+        }
+    .end annotation
 
     .line 27
     sget-object v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewApertureBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -46,6 +56,18 @@
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root",
+            "bindings"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -80,7 +102,7 @@
 
     invoke-direct {p1, p0, p2}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
 
-    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewApertureBindingImpl;->mCallback67:Landroid/view/View$OnClickListener;
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewApertureBindingImpl;->mCallback58:Landroid/view/View$OnClickListener;
 
     .line 37
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewApertureBindingImpl;->invalidateAll()V
@@ -90,6 +112,17 @@
 
 .method private onChangeApertureUiStateApertureAlpha(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ApertureUiStateApertureAlpha",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -138,6 +171,17 @@
 
 .method private onChangeApertureUiStateApertureSwitchable(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ApertureUiStateApertureSwitchable",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -186,6 +230,17 @@
 
 .method private onChangeApertureUiStateApertureTextId(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ApertureUiStateApertureTextId",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -234,6 +289,17 @@
 
 .method private onChangeApertureUiStateIsApertureClickable(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ApertureUiStateIsApertureClickable",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -282,6 +348,17 @@
 
 .method private onChangeCameraStatusModelRecording(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "CameraStatusModelRecording",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -332,6 +409,16 @@
 # virtual methods
 .method public final _internalCallbackOnClick(ILandroid/view/View;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sourceId",
+            "callbackArg_0"
+        }
+    .end annotation
 
     .line 322
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewApertureBindingImpl;->mApertureUiState:Ljp/co/sony/mc/camera/view/uistate/ApertureUiState;
@@ -736,7 +823,7 @@
     .line 314
     iget-object v2, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewApertureBindingImpl;->apertureButton:Landroid/widget/Button;
 
-    iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewApertureBindingImpl;->mCallback67:Landroid/view/View$OnClickListener;
+    iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewApertureBindingImpl;->mCallback58:Landroid/view/View$OnClickListener;
 
     invoke-static {v2, v1, v0}, Landroidx/databinding/adapters/ViewBindingAdapter;->setOnClick(Landroid/view/View;Landroid/view/View$OnClickListener;Z)V
 
@@ -832,6 +919,18 @@
 
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "localFieldId",
+            "object",
+            "fieldId"
+        }
+    .end annotation
 
     if-eqz p1, :cond_4
 
@@ -908,6 +1007,14 @@
 
 .method public setApertureUiState(Ljp/co/sony/mc/camera/view/uistate/ApertureUiState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ApertureUiState"
+        }
+    .end annotation
 
     .line 74
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewApertureBindingImpl;->mApertureUiState:Ljp/co/sony/mc/camera/view/uistate/ApertureUiState;
@@ -930,7 +1037,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/4 p1, 0x1
+    const/4 p1, 0x2
 
     .line 78
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewApertureBindingImpl;->notifyPropertyChanged(I)V
@@ -954,6 +1061,14 @@
 
 .method public setCameraStatusModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "CameraStatusModel"
+        }
+    .end annotation
 
     .line 82
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewApertureBindingImpl;->mCameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
@@ -976,7 +1091,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x9
+    const/16 p1, 0xc
 
     .line 86
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewApertureBindingImpl;->notifyPropertyChanged(I)V
@@ -999,9 +1114,19 @@
 .end method
 
 .method public setVariable(ILjava/lang/Object;)Z
-    .locals 2
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "variableId",
+            "variable"
+        }
+    .end annotation
 
-    const/4 v0, 0x1
+    const/4 v0, 0x2
 
     if-ne v0, p1, :cond_0
 
@@ -1013,20 +1138,23 @@
     goto :goto_0
 
     :cond_0
-    const/16 v1, 0x9
+    const/16 v0, 0xc
 
-    if-ne v1, p1, :cond_1
+    if-ne v0, p1, :cond_1
 
     .line 65
     check-cast p2, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewApertureBindingImpl;->setCameraStatusModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;)V
 
-    goto :goto_0
+    :goto_0
+    const/4 p0, 0x1
+
+    goto :goto_1
 
     :cond_1
-    const/4 v0, 0x0
+    const/4 p0, 0x0
 
-    :goto_0
-    return v0
+    :goto_1
+    return p0
 .end method

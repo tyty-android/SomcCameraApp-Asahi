@@ -54,6 +54,15 @@
 # direct methods
 .method constructor <init>(Ljava/util/NavigableMap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "rangesByLowerBound"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -65,13 +74,13 @@
         }
     .end annotation
 
-    .line 291
+    .line 297
     invoke-direct {p0}, Lcom/google/common/collect/AbstractNavigableMap;-><init>()V
 
-    .line 292
+    .line 298
     iput-object p1, p0, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->rangesByLowerBound:Ljava/util/NavigableMap;
 
-    .line 293
+    .line 299
     invoke-static {}, Lcom/google/common/collect/Range;->all()Lcom/google/common/collect/Range;
 
     move-result-object p1
@@ -83,6 +92,17 @@
 
 .method private constructor <init>(Ljava/util/NavigableMap;Lcom/google/common/collect/Range;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "rangesByLowerBound",
+            "upperBoundWindow"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -97,13 +117,13 @@
         }
     .end annotation
 
-    .line 297
+    .line 303
     invoke-direct {p0}, Lcom/google/common/collect/AbstractNavigableMap;-><init>()V
 
-    .line 298
+    .line 304
     iput-object p1, p0, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->rangesByLowerBound:Ljava/util/NavigableMap;
 
-    .line 299
+    .line 305
     iput-object p2, p0, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->upperBoundWindow:Lcom/google/common/collect/Range;
 
     return-void
@@ -112,7 +132,7 @@
 .method static synthetic access$000(Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;)Lcom/google/common/collect/Range;
     .locals 0
 
-    .line 281
+    .line 287
     iget-object p0, p0, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->upperBoundWindow:Lcom/google/common/collect/Range;
 
     return-object p0
@@ -120,6 +140,15 @@
 
 .method private subMap(Lcom/google/common/collect/Range;)Ljava/util/NavigableMap;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "window"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -134,7 +163,7 @@
         }
     .end annotation
 
-    .line 303
+    .line 309
     iget-object v0, p0, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->upperBoundWindow:Lcom/google/common/collect/Range;
 
     invoke-virtual {p1, v0}, Lcom/google/common/collect/Range;->isConnected(Lcom/google/common/collect/Range;)Z
@@ -143,7 +172,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 304
+    .line 310
     new-instance v0, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;
 
     iget-object v1, p0, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->rangesByLowerBound:Ljava/util/NavigableMap;
@@ -158,7 +187,7 @@
 
     return-object v0
 
-    .line 306
+    .line 312
     :cond_0
     invoke-static {}, Lcom/google/common/collect/ImmutableSortedMap;->of()Lcom/google/common/collect/ImmutableSortedMap;
 
@@ -181,7 +210,7 @@
         }
     .end annotation
 
-    .line 331
+    .line 337
     invoke-static {}, Lcom/google/common/collect/Ordering;->natural()Lcom/google/common/collect/Ordering;
 
     move-result-object p0
@@ -192,11 +221,19 @@
 .method public containsKey(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 336
+    .line 342
     invoke-virtual {p0, p1}, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->get(Ljava/lang/Object;)Lcom/google/common/collect/Range;
 
     move-result-object p0
@@ -228,7 +265,7 @@
         }
     .end annotation
 
-    .line 402
+    .line 410
     iget-object v0, p0, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->upperBoundWindow:Lcom/google/common/collect/Range;
 
     invoke-virtual {v0}, Lcom/google/common/collect/Range;->hasUpperBound()Z
@@ -237,15 +274,17 @@
 
     if-eqz v0, :cond_0
 
-    .line 403
+    .line 411
     iget-object v0, p0, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->rangesByLowerBound:Ljava/util/NavigableMap;
 
     iget-object v1, p0, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->upperBoundWindow:Lcom/google/common/collect/Range;
 
-    .line 405
+    .line 413
     invoke-virtual {v1}, Lcom/google/common/collect/Range;->upperEndpoint()Ljava/lang/Comparable;
 
     move-result-object v1
+
+    check-cast v1, Lcom/google/common/collect/Cut;
 
     const/4 v2, 0x0
 
@@ -253,19 +292,19 @@
 
     move-result-object v0
 
-    .line 406
+    .line 414
     invoke-interface {v0}, Ljava/util/NavigableMap;->descendingMap()Ljava/util/NavigableMap;
 
     move-result-object v0
 
-    .line 407
+    .line 415
     invoke-interface {v0}, Ljava/util/NavigableMap;->values()Ljava/util/Collection;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 409
+    .line 417
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->rangesByLowerBound:Ljava/util/NavigableMap;
 
@@ -277,7 +316,7 @@
 
     move-result-object v0
 
-    .line 411
+    .line 419
     :goto_0
     invoke-interface {v0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
@@ -287,7 +326,7 @@
 
     move-result-object v0
 
-    .line 412
+    .line 420
     invoke-interface {v0}, Lcom/google/common/collect/PeekingIterator;->hasNext()Z
 
     move-result v1
@@ -298,7 +337,7 @@
 
     iget-object v1, v1, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
 
-    .line 413
+    .line 421
     invoke-interface {v0}, Lcom/google/common/collect/PeekingIterator;->peek()Ljava/lang/Object;
 
     move-result-object v2
@@ -313,10 +352,10 @@
 
     if-eqz v1, :cond_1
 
-    .line 414
+    .line 422
     invoke-interface {v0}, Lcom/google/common/collect/PeekingIterator;->next()Ljava/lang/Object;
 
-    .line 416
+    .line 424
     :cond_1
     new-instance v1, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound$2;
 
@@ -339,7 +378,7 @@
         }
     .end annotation
 
-    .line 366
+    .line 373
     iget-object v0, p0, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->upperBoundWindow:Lcom/google/common/collect/Range;
 
     invoke-virtual {v0}, Lcom/google/common/collect/Range;->hasLowerBound()Z
@@ -348,7 +387,7 @@
 
     if-nez v0, :cond_0
 
-    .line 367
+    .line 374
     iget-object v0, p0, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->rangesByLowerBound:Ljava/util/NavigableMap;
 
     invoke-interface {v0}, Ljava/util/NavigableMap;->values()Ljava/util/Collection;
@@ -361,16 +400,18 @@
 
     goto :goto_0
 
-    .line 369
+    .line 376
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->rangesByLowerBound:Ljava/util/NavigableMap;
 
     iget-object v1, p0, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->upperBoundWindow:Lcom/google/common/collect/Range;
 
-    .line 370
+    .line 377
     invoke-virtual {v1}, Lcom/google/common/collect/Range;->lowerEndpoint()Ljava/lang/Comparable;
 
     move-result-object v1
+
+    check-cast v1, Lcom/google/common/collect/Cut;
 
     invoke-interface {v0, v1}, Ljava/util/NavigableMap;->lowerEntry(Ljava/lang/Object;)Ljava/util/Map$Entry;
 
@@ -378,7 +419,7 @@
 
     if-nez v0, :cond_1
 
-    .line 372
+    .line 379
     iget-object v0, p0, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->rangesByLowerBound:Ljava/util/NavigableMap;
 
     invoke-interface {v0}, Ljava/util/NavigableMap;->values()Ljava/util/Collection;
@@ -391,7 +432,7 @@
 
     goto :goto_0
 
-    .line 373
+    .line 380
     :cond_1
     iget-object v1, p0, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->upperBoundWindow:Lcom/google/common/collect/Range;
 
@@ -413,12 +454,14 @@
 
     if-eqz v1, :cond_2
 
-    .line 374
+    .line 381
     iget-object v1, p0, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->rangesByLowerBound:Ljava/util/NavigableMap;
 
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
+
+    check-cast v0, Lcom/google/common/collect/Cut;
 
     invoke-interface {v1, v0, v2}, Ljava/util/NavigableMap;->tailMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;
 
@@ -434,32 +477,34 @@
 
     goto :goto_0
 
-    .line 376
+    .line 383
     :cond_2
     iget-object v0, p0, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->rangesByLowerBound:Ljava/util/NavigableMap;
 
     iget-object v1, p0, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->upperBoundWindow:Lcom/google/common/collect/Range;
 
-    .line 378
+    .line 385
     invoke-virtual {v1}, Lcom/google/common/collect/Range;->lowerEndpoint()Ljava/lang/Comparable;
 
     move-result-object v1
+
+    check-cast v1, Lcom/google/common/collect/Cut;
 
     invoke-interface {v0, v1, v2}, Ljava/util/NavigableMap;->tailMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;
 
     move-result-object v0
 
-    .line 379
+    .line 386
     invoke-interface {v0}, Ljava/util/NavigableMap;->values()Ljava/util/Collection;
 
     move-result-object v0
 
-    .line 380
+    .line 387
     invoke-interface {v0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
-    .line 383
+    .line 390
     :goto_0
     new-instance v1, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound$1;
 
@@ -471,9 +516,18 @@
 .method public get(Ljava/lang/Object;)Lcom/google/common/collect/Range;
     .locals 2
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -484,18 +538,21 @@
         }
     .end annotation
 
-    .line 341
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 348
     instance-of v0, p1, Lcom/google/common/collect/Cut;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_1
 
-    .line 344
+    .line 351
     :try_start_0
     check-cast p1, Lcom/google/common/collect/Cut;
 
-    .line 345
+    .line 352
     iget-object v0, p0, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->upperBoundWindow:Lcom/google/common/collect/Range;
 
     invoke-virtual {v0, p1}, Lcom/google/common/collect/Range;->contains(Ljava/lang/Comparable;)Z
@@ -506,7 +563,7 @@
 
     return-object v1
 
-    .line 348
+    .line 355
     :cond_0
     iget-object p0, p0, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->rangesByLowerBound:Ljava/util/NavigableMap;
 
@@ -516,7 +573,7 @@
 
     if-eqz p0, :cond_1
 
-    .line 349
+    .line 356
     invoke-interface {p0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v0
@@ -531,7 +588,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 350
+    .line 357
     invoke-interface {p0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -550,11 +607,22 @@
 .method public bridge synthetic get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 280
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 286
     invoke-virtual {p0, p1}, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->get(Ljava/lang/Object;)Lcom/google/common/collect/Range;
 
     move-result-object p0
@@ -564,6 +632,17 @@
 
 .method public headMap(Lcom/google/common/collect/Cut;Z)Ljava/util/NavigableMap;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "toKey",
+            "inclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -577,7 +656,7 @@
         }
     .end annotation
 
-    .line 321
+    .line 327
     invoke-static {p2}, Lcom/google/common/collect/BoundType;->forBoolean(Z)Lcom/google/common/collect/BoundType;
 
     move-result-object p2
@@ -595,8 +674,18 @@
 
 .method public bridge synthetic headMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "toKey",
+            "inclusive"
+        }
+    .end annotation
 
-    .line 280
+    .line 286
     check-cast p1, Lcom/google/common/collect/Cut;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->headMap(Lcom/google/common/collect/Cut;Z)Ljava/util/NavigableMap;
@@ -609,7 +698,7 @@
 .method public isEmpty()Z
     .locals 2
 
-    .line 440
+    .line 449
     iget-object v0, p0, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->upperBoundWindow:Lcom/google/common/collect/Range;
 
     invoke-static {}, Lcom/google/common/collect/Range;->all()Lcom/google/common/collect/Range;
@@ -622,7 +711,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 441
+    .line 450
     iget-object p0, p0, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->rangesByLowerBound:Ljava/util/NavigableMap;
 
     invoke-interface {p0}, Ljava/util/NavigableMap;->isEmpty()Z
@@ -631,7 +720,7 @@
 
     goto :goto_0
 
-    .line 442
+    .line 451
     :cond_0
     invoke-virtual {p0}, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->entryIterator()Ljava/util/Iterator;
 
@@ -657,7 +746,7 @@
 .method public size()I
     .locals 2
 
-    .line 432
+    .line 441
     iget-object v0, p0, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->upperBoundWindow:Lcom/google/common/collect/Range;
 
     invoke-static {}, Lcom/google/common/collect/Range;->all()Lcom/google/common/collect/Range;
@@ -670,7 +759,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 433
+    .line 442
     iget-object p0, p0, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->rangesByLowerBound:Ljava/util/NavigableMap;
 
     invoke-interface {p0}, Ljava/util/NavigableMap;->size()I
@@ -679,7 +768,7 @@
 
     return p0
 
-    .line 435
+    .line 444
     :cond_0
     invoke-virtual {p0}, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->entryIterator()Ljava/util/Iterator;
 
@@ -694,6 +783,21 @@
 
 .method public subMap(Lcom/google/common/collect/Cut;ZLcom/google/common/collect/Cut;Z)Ljava/util/NavigableMap;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "fromKey",
+            "fromInclusive",
+            "toKey",
+            "toInclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -709,22 +813,22 @@
         }
     .end annotation
 
-    .line 315
+    .line 321
     invoke-static {p2}, Lcom/google/common/collect/BoundType;->forBoolean(Z)Lcom/google/common/collect/BoundType;
 
     move-result-object p2
 
-    .line 316
+    .line 322
     invoke-static {p4}, Lcom/google/common/collect/BoundType;->forBoolean(Z)Lcom/google/common/collect/BoundType;
 
     move-result-object p4
 
-    .line 314
+    .line 320
     invoke-static {p1, p2, p3, p4}, Lcom/google/common/collect/Range;->range(Ljava/lang/Comparable;Lcom/google/common/collect/BoundType;Ljava/lang/Comparable;Lcom/google/common/collect/BoundType;)Lcom/google/common/collect/Range;
 
     move-result-object p1
 
-    .line 313
+    .line 319
     invoke-direct {p0, p1}, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->subMap(Lcom/google/common/collect/Range;)Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -734,8 +838,22 @@
 
 .method public bridge synthetic subMap(Ljava/lang/Object;ZLjava/lang/Object;Z)Ljava/util/NavigableMap;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x1000,
+            0x1000
+        }
+        names = {
+            "fromKey",
+            "fromInclusive",
+            "toKey",
+            "toInclusive"
+        }
+    .end annotation
 
-    .line 280
+    .line 286
     check-cast p1, Lcom/google/common/collect/Cut;
 
     check-cast p3, Lcom/google/common/collect/Cut;
@@ -749,6 +867,17 @@
 
 .method public tailMap(Lcom/google/common/collect/Cut;Z)Ljava/util/NavigableMap;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromKey",
+            "inclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -762,7 +891,7 @@
         }
     .end annotation
 
-    .line 326
+    .line 332
     invoke-static {p2}, Lcom/google/common/collect/BoundType;->forBoolean(Z)Lcom/google/common/collect/BoundType;
 
     move-result-object p2
@@ -780,8 +909,18 @@
 
 .method public bridge synthetic tailMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "fromKey",
+            "inclusive"
+        }
+    .end annotation
 
-    .line 280
+    .line 286
     check-cast p1, Lcom/google/common/collect/Cut;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/TreeRangeSet$RangesByUpperBound;->tailMap(Lcom/google/common/collect/Cut;Z)Ljava/util/NavigableMap;

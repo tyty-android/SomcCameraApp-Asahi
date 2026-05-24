@@ -24,8 +24,16 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 5172
+    .line 4330
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnCancelListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -45,9 +53,17 @@
 # virtual methods
 .method public onCancel(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "parameter"
+        }
+    .end annotation
 
-    .line 5176
-    sget-object v0, Ljp/co/sony/mc/camera/view/FragmentController$26;->$SwitchMap$jp$co$sony$mc$camera$view$messagedialog$DialogId:[I
+    .line 4334
+    sget-object v0, Ljp/co/sony/mc/camera/view/FragmentController$14;->$SwitchMap$jp$co$sony$mc$camera$view$messagedialog$DialogId:[I
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
@@ -61,13 +77,13 @@
 
     if-eq p1, v0, :cond_1
 
-    const/16 v1, 0x1a
+    const/16 v1, 0xb
 
     if-eq p1, v1, :cond_0
 
     goto :goto_0
 
-    .line 5182
+    .line 4340
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnCancelListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -79,7 +95,7 @@
 
     invoke-interface {p1, v1, v0}, Ljp/co/sony/mc/camera/setting/MessageSettings;->setNeverShow(Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
-    .line 5183
+    .line 4341
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnCancelListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmMessageSettings(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/setting/MessageSettings;
@@ -90,7 +106,7 @@
 
     goto :goto_0
 
-    .line 5178
+    .line 4336
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnCancelListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 

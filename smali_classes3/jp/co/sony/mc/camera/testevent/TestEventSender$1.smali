@@ -31,6 +31,14 @@
 # virtual methods
 .method public onCapturedFrameStored(J)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "timeStamp"
+        }
+    .end annotation
 
     return-void
 .end method

@@ -21,6 +21,14 @@
 
 .method public static getDisplayRectSize(Landroid/content/Context;)Landroid/graphics/Rect;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 71
     const-string/jumbo v0, "window"
@@ -101,6 +109,14 @@
 
 .method public static declared-synchronized getDisplayScalePhysicalToReal(Landroid/content/Context;)Landroid/graphics/PointF;
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     const-class v0, Ljp/co/sony/mc/camera/util/ViewUtility;
 
@@ -249,6 +265,14 @@
 
 .method public static getHeightForNavigationBar(Landroid/content/Context;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 102
     const-string/jumbo v0, "window"
@@ -293,6 +317,14 @@
 
 .method public static getHeightForStatusBar(Landroid/content/Context;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 90
     const-string/jumbo v0, "window"
@@ -337,6 +369,14 @@
 
 .method private static getRealSize(Landroid/content/Context;)Landroid/util/Size;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 60
     const-string/jumbo v0, "window"
@@ -376,6 +416,16 @@
 
 .method public static isSimilarAspect(FF)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "aspect1",
+            "aspect2"
+        }
+    .end annotation
 
     sub-float/2addr p0, p1
 

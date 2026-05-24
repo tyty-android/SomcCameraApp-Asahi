@@ -3,9 +3,14 @@
 .source "MultiInputStream.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/io/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # instance fields
 .field private in:Ljava/io/InputStream;
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -24,6 +29,15 @@
 # direct methods
 .method public constructor <init>(Ljava/util/Iterator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "it"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -40,10 +54,10 @@
         }
     .end annotation
 
-    .line 43
+    .line 46
     invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
 
-    .line 44
+    .line 47
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -52,7 +66,7 @@
 
     iput-object p1, p0, Lcom/google/common/io/MultiInputStream;->it:Ljava/util/Iterator;
 
-    .line 45
+    .line 48
     invoke-direct {p0}, Lcom/google/common/io/MultiInputStream;->advance()V
 
     return-void
@@ -66,10 +80,10 @@
         }
     .end annotation
 
-    .line 61
+    .line 64
     invoke-virtual {p0}, Lcom/google/common/io/MultiInputStream;->close()V
 
-    .line 62
+    .line 65
     iget-object v0, p0, Lcom/google/common/io/MultiInputStream;->it:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -78,7 +92,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 63
+    .line 66
     iget-object v0, p0, Lcom/google/common/io/MultiInputStream;->it:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -107,7 +121,7 @@
         }
     .end annotation
 
-    .line 69
+    .line 72
     iget-object p0, p0, Lcom/google/common/io/MultiInputStream;->in:Ljava/io/InputStream;
 
     if-nez p0, :cond_0
@@ -116,7 +130,7 @@
 
     return p0
 
-    .line 72
+    .line 75
     :cond_0
     invoke-virtual {p0}, Ljava/io/InputStream;->available()I
 
@@ -133,20 +147,20 @@
         }
     .end annotation
 
-    .line 50
+    .line 53
     iget-object v0, p0, Lcom/google/common/io/MultiInputStream;->in:Ljava/io/InputStream;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x0
 
-    .line 52
+    .line 55
     :try_start_0
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 54
+    .line 57
     iput-object v1, p0, Lcom/google/common/io/MultiInputStream;->in:Ljava/io/InputStream;
 
     goto :goto_0
@@ -156,7 +170,7 @@
 
     iput-object v1, p0, Lcom/google/common/io/MultiInputStream;->in:Ljava/io/InputStream;
 
-    .line 55
+    .line 58
     throw v0
 
     :cond_0
@@ -180,7 +194,7 @@
         }
     .end annotation
 
-    .line 82
+    .line 85
     :goto_0
     iget-object v0, p0, Lcom/google/common/io/MultiInputStream;->in:Ljava/io/InputStream;
 
@@ -188,7 +202,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 83
+    .line 86
     invoke-virtual {v0}, Ljava/io/InputStream;->read()I
 
     move-result v0
@@ -197,7 +211,7 @@
 
     return v0
 
-    .line 87
+    .line 90
     :cond_0
     invoke-direct {p0}, Lcom/google/common/io/MultiInputStream;->advance()V
 
@@ -209,17 +223,29 @@
 
 .method public read([BII)I
     .locals 2
-    .param p1    # [B
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "b",
+            "off",
+            "len"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 94
+    .line 97
+    invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 98
     :goto_0
     iget-object v0, p0, Lcom/google/common/io/MultiInputStream;->in:Ljava/io/InputStream;
 
@@ -227,7 +253,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 95
+    .line 99
     invoke-virtual {v0, p1, p2, p3}, Ljava/io/InputStream;->read([BII)I
 
     move-result v0
@@ -236,7 +262,7 @@
 
     return v0
 
-    .line 99
+    .line 103
     :cond_0
     invoke-direct {p0}, Lcom/google/common/io/MultiInputStream;->advance()V
 
@@ -248,13 +274,22 @@
 
 .method public skip(J)J
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "n"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 106
+    .line 110
     iget-object v0, p0, Lcom/google/common/io/MultiInputStream;->in:Ljava/io/InputStream;
 
     const-wide/16 v1, 0x0
@@ -267,7 +302,7 @@
 
     goto :goto_0
 
-    .line 109
+    .line 113
     :cond_0
     invoke-virtual {v0, p1, p2}, Ljava/io/InputStream;->skip(J)J
 
@@ -279,7 +314,7 @@
 
     return-wide v3
 
-    .line 113
+    .line 117
     :cond_1
     invoke-virtual {p0}, Lcom/google/common/io/MultiInputStream;->read()I
 
@@ -291,7 +326,7 @@
 
     return-wide v1
 
-    .line 116
+    .line 120
     :cond_2
     iget-object p0, p0, Lcom/google/common/io/MultiInputStream;->in:Ljava/io/InputStream;
 

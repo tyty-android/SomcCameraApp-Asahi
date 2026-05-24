@@ -26,6 +26,8 @@
 
 
 # instance fields
+.field final synthetic this$0:Lcom/google/common/util/concurrent/ExecutionSequencer;
+
 .field final synthetic val$callable:Lcom/google/common/util/concurrent/AsyncCallable;
 
 .field final synthetic val$taskExecutor:Lcom/google/common/util/concurrent/ExecutionSequencer$TaskNonReentrantExecutor;
@@ -34,11 +36,31 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/util/concurrent/ExecutionSequencer;Lcom/google/common/util/concurrent/ExecutionSequencer$TaskNonReentrantExecutor;Lcom/google/common/util/concurrent/AsyncCallable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$taskExecutor",
+            "val$callable"
+        }
+    .end annotation
 
-    .line 170
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .line 182
     iput-object p2, p0, Lcom/google/common/util/concurrent/ExecutionSequencer$2;->val$taskExecutor:Lcom/google/common/util/concurrent/ExecutionSequencer$TaskNonReentrantExecutor;
 
     iput-object p3, p0, Lcom/google/common/util/concurrent/ExecutionSequencer$2;->val$callable:Lcom/google/common/util/concurrent/AsyncCallable;
+
+    iput-object p1, p0, Lcom/google/common/util/concurrent/ExecutionSequencer$2;->this$0:Lcom/google/common/util/concurrent/ExecutionSequencer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -63,7 +85,7 @@
         }
     .end annotation
 
-    .line 173
+    .line 185
     iget-object v0, p0, Lcom/google/common/util/concurrent/ExecutionSequencer$2;->val$taskExecutor:Lcom/google/common/util/concurrent/ExecutionSequencer$TaskNonReentrantExecutor;
 
     invoke-static {v0}, Lcom/google/common/util/concurrent/ExecutionSequencer$TaskNonReentrantExecutor;->access$200(Lcom/google/common/util/concurrent/ExecutionSequencer$TaskNonReentrantExecutor;)Z
@@ -72,14 +94,14 @@
 
     if-nez v0, :cond_0
 
-    .line 174
+    .line 186
     invoke-static {}, Lcom/google/common/util/concurrent/Futures;->immediateCancelledFuture()Lcom/google/common/util/concurrent/ListenableFuture;
 
     move-result-object p0
 
     return-object p0
 
-    .line 176
+    .line 188
     :cond_0
     iget-object p0, p0, Lcom/google/common/util/concurrent/ExecutionSequencer$2;->val$callable:Lcom/google/common/util/concurrent/AsyncCallable;
 
@@ -93,10 +115,10 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 181
+    .line 193
     iget-object p0, p0, Lcom/google/common/util/concurrent/ExecutionSequencer$2;->val$callable:Lcom/google/common/util/concurrent/AsyncCallable;
 
-    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-interface {p0}, Lcom/google/common/util/concurrent/AsyncCallable;->toString()Ljava/lang/String;
 
     move-result-object p0
 

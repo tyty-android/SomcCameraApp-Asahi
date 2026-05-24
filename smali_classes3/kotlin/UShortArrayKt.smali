@@ -25,8 +25,8 @@
     }
     k = 0x2
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x30
@@ -51,7 +51,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 80
+    .line 75
     new-array v0, p0, [S
 
     const/4 v1, 0x0

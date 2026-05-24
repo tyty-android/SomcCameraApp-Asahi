@@ -21,7 +21,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 8497
+    .line 7421
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -39,8 +39,16 @@
 # virtual methods
 .method public onCropRegionChanged(Landroid/graphics/Rect;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cropRegion"
+        }
+    .end annotation
 
-    .line 8505
+    .line 7429
     invoke-static {}, Ljp/co/sony/mc/camera/util/PositionConverter;->getInstance()Ljp/co/sony/mc/camera/util/PositionConverter;
 
     move-result-object p0

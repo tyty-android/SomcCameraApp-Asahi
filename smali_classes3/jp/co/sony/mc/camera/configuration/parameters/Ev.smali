@@ -99,7 +99,7 @@
     .line 24
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Ev;
 
-    const v1, 0x7f1101f2
+    const v1, 0x7f11023e
 
     const/high16 v2, -0x40000000    # -2.0f
 
@@ -114,7 +114,7 @@
     .line 27
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Ev;
 
-    const v1, 0x7f1101f1
+    const v1, 0x7f11023d
 
     const v2, -0x402aaaab
 
@@ -129,7 +129,7 @@
     .line 30
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Ev;
 
-    const v1, 0x7f1101f0
+    const v1, 0x7f11023c
 
     const v2, -0x40555555
 
@@ -144,7 +144,7 @@
     .line 33
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Ev;
 
-    const v1, 0x7f1101ef
+    const v1, 0x7f11023b
 
     const/high16 v2, -0x40800000    # -1.0f
 
@@ -159,7 +159,7 @@
     .line 36
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Ev;
 
-    const v1, 0x7f1101ee
+    const v1, 0x7f11023a
 
     const v2, -0x40d55555
 
@@ -174,7 +174,7 @@
     .line 39
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Ev;
 
-    const v1, 0x7f1101ed
+    const v1, 0x7f110239
 
     const v2, -0x41555555
 
@@ -189,7 +189,7 @@
     .line 42
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Ev;
 
-    const v1, 0x7f1101f9
+    const v1, 0x7f110245
 
     const/4 v2, 0x0
 
@@ -204,7 +204,7 @@
     .line 45
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Ev;
 
-    const v1, 0x7f1101f3
+    const v1, 0x7f11023f
 
     const v2, 0x3eaaaaab
 
@@ -219,7 +219,7 @@
     .line 48
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Ev;
 
-    const v1, 0x7f1101f4
+    const v1, 0x7f110240
 
     const v2, 0x3f2aaaab
 
@@ -234,7 +234,7 @@
     .line 51
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Ev;
 
-    const v1, 0x7f1101f5
+    const v1, 0x7f110241
 
     const/high16 v2, 0x3f800000    # 1.0f
 
@@ -249,7 +249,7 @@
     .line 54
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Ev;
 
-    const v1, 0x7f1101f6
+    const v1, 0x7f110242
 
     const v2, 0x3faaaaab
 
@@ -264,7 +264,7 @@
     .line 57
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Ev;
 
-    const v1, 0x7f1101f7
+    const v1, 0x7f110243
 
     const v2, 0x3fd55555
 
@@ -279,7 +279,7 @@
     .line 60
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Ev;
 
-    const v1, 0x7f1101f8
+    const v1, 0x7f110244
 
     const/high16 v2, 0x40000000    # 2.0f
 
@@ -303,6 +303,21 @@
 
 .method private constructor <init>(Ljava/lang/String;IIF)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "textId",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IF)V"
@@ -332,6 +347,14 @@
 
 .method public static getOptions(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/Ev;
     .locals 15
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
     .line 146
     new-instance v0, Ljava/util/ArrayList;
@@ -471,6 +494,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/Ev;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 23
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/Ev;
@@ -511,6 +542,14 @@
 
 .method public getIntValue(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
     .line 130
     iget p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/Ev;->mValue:F

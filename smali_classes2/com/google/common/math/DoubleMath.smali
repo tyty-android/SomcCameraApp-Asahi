@@ -3,6 +3,11 @@
 .source "DoubleMath.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/math/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # static fields
 .field private static final LN_2:D
 
@@ -25,7 +30,7 @@
 
     const-wide/high16 v0, 0x4000000000000000L    # 2.0
 
-    .line 277
+    .line 282
     invoke-static {v0, v1}, Ljava/lang/Math;->log(D)D
 
     move-result-wide v0
@@ -34,7 +39,7 @@
 
     const/16 v0, 0xb
 
-    .line 319
+    .line 324
     new-array v0, v0, [D
 
     fill-array-data v0, :array_0
@@ -62,7 +67,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 527
+    .line 532
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -70,8 +75,16 @@
 
 .method private static checkFinite(D)D
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "argument"
+        }
+    .end annotation
 
-    .line 523
+    .line 528
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleUtils;->isFinite(D)Z
 
     move-result v0
@@ -83,8 +96,16 @@
 
 .method public static factorial(I)D
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "n"
+        }
+    .end annotation
 
-    .line 302
+    .line 307
     const-string v0, "n"
 
     invoke-static {v0, p0}, Lcom/google/common/math/MathPreconditions;->checkNonNegative(Ljava/lang/String;I)I
@@ -115,7 +136,7 @@
 
     goto :goto_0
 
-    .line 312
+    .line 317
     :cond_1
     sget-object v0, Lcom/google/common/math/DoubleMath;->everySixteenthFactorial:[D
 
@@ -130,8 +151,20 @@
 
 .method public static fuzzyCompare(DDD)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b",
+            "tolerance"
+        }
+    .end annotation
 
-    .line 381
+    .line 386
     invoke-static/range {p0 .. p5}, Lcom/google/common/math/DoubleMath;->fuzzyEquals(DDD)Z
 
     move-result p4
@@ -160,7 +193,7 @@
 
     return p0
 
-    .line 388
+    .line 393
     :cond_2
     invoke-static {p0, p1}, Ljava/lang/Double;->isNaN(D)Z
 
@@ -170,7 +203,7 @@
 
     move-result p1
 
-    invoke-static {p0, p1}, Lcom/google/common/primitives/Booleans;->compare(ZZ)I
+    invoke-static {p0, p1}, Ljava/lang/Boolean;->compare(ZZ)I
 
     move-result p0
 
@@ -179,8 +212,20 @@
 
 .method public static fuzzyEquals(DDD)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b",
+            "tolerance"
+        }
+    .end annotation
 
-    .line 360
+    .line 365
     const-string v0, "tolerance"
 
     invoke-static {v0, p4, p5}, Lcom/google/common/math/MathPreconditions;->checkNonNegative(Ljava/lang/String;D)D
@@ -189,7 +234,7 @@
 
     const-wide/high16 v2, 0x3ff0000000000000L    # 1.0
 
-    .line 361
+    .line 366
     invoke-static {v0, v1, v2, v3}, Ljava/lang/Math;->copySign(DD)D
 
     move-result-wide v0
@@ -202,7 +247,7 @@
 
     if-eqz p4, :cond_1
 
-    .line 364
+    .line 369
     invoke-static {p0, p1}, Ljava/lang/Double;->isNaN(D)Z
 
     move-result p0
@@ -232,8 +277,16 @@
 
 .method public static isMathematicalInteger(D)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "x"
+        }
+    .end annotation
 
-    .line 287
+    .line 292
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleUtils;->isFinite(D)Z
 
     move-result v0
@@ -246,7 +299,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 289
+    .line 294
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleUtils;->getSignificand(D)J
 
     move-result-wide v0
@@ -277,6 +330,14 @@
 
 .method public static isPowerOfTwo(D)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "x"
+        }
+    .end annotation
 
     const-wide/16 v0, 0x0
 
@@ -286,14 +347,14 @@
 
     if-lez v0, :cond_0
 
-    .line 200
+    .line 204
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleUtils;->isFinite(D)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 201
+    .line 205
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleUtils;->getSignificand(D)J
 
     move-result-wide p0
@@ -318,8 +379,16 @@
 
 .method public static log2(D)D
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "x"
+        }
+    .end annotation
 
-    .line 224
+    .line 228
     invoke-static {p0, p1}, Ljava/lang/Math;->log(D)D
 
     move-result-wide p0
@@ -333,6 +402,16 @@
 
 .method public static log2(DLjava/math/RoundingMode;)I
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "x",
+            "mode"
+        }
+    .end annotation
 
     const-wide/16 v0, 0x0
 
@@ -344,7 +423,7 @@
 
     if-lez v0, :cond_0
 
-    .line 239
+    .line 244
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleUtils;->isFinite(D)Z
 
     move-result v0
@@ -363,12 +442,12 @@
 
     invoke-static {v0, v3}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/Object;)V
 
-    .line 240
+    .line 245
     invoke-static {p0, p1}, Ljava/lang/Math;->getExponent(D)I
 
     move-result v0
 
-    .line 241
+    .line 246
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleUtils;->isNormal(D)Z
 
     move-result v3
@@ -379,7 +458,7 @@
 
     mul-double/2addr p0, v0
 
-    .line 242
+    .line 247
     invoke-static {p0, p1, p2}, Lcom/google/common/math/DoubleMath;->log2(DLjava/math/RoundingMode;)I
 
     move-result p0
@@ -388,7 +467,7 @@
 
     return p0
 
-    .line 247
+    .line 252
     :cond_1
     sget-object v3, Lcom/google/common/math/DoubleMath$1;->$SwitchMap$java$math$RoundingMode:[I
 
@@ -400,14 +479,14 @@
 
     packed-switch p2, :pswitch_data_0
 
-    .line 272
+    .line 277
     new-instance p0, Ljava/lang/AssertionError;
 
     invoke-direct {p0}, Ljava/lang/AssertionError;-><init>()V
 
     throw p0
 
-    .line 266
+    .line 271
     :pswitch_0
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleUtils;->scaleNormalize(D)D
 
@@ -430,7 +509,7 @@
 
     move v1, v2
 
-    .line 261
+    .line 266
     :cond_2
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleMath;->isPowerOfTwo(D)Z
 
@@ -443,7 +522,7 @@
 
     move v1, v2
 
-    .line 258
+    .line 263
     :cond_3
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleMath;->isPowerOfTwo(D)Z
 
@@ -456,7 +535,7 @@
 
     goto :goto_2
 
-    .line 255
+    .line 260
     :pswitch_3
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleMath;->isPowerOfTwo(D)Z
 
@@ -466,7 +545,7 @@
 
     goto :goto_2
 
-    .line 249
+    .line 254
     :pswitch_4
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleMath;->isPowerOfTwo(D)Z
 
@@ -501,6 +580,15 @@
 
 .method public static mean(Ljava/lang/Iterable;)D
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "values"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -514,7 +602,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 488
+    .line 493
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -528,6 +616,15 @@
 
 .method public static mean(Ljava/util/Iterator;)D
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "values"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -541,7 +638,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 508
+    .line 513
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
@@ -550,7 +647,7 @@
 
     invoke-static {v0, v1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/Object;)V
 
-    .line 510
+    .line 515
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
@@ -569,7 +666,7 @@
 
     move-wide v4, v2
 
-    .line 511
+    .line 516
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -577,7 +674,7 @@
 
     if-eqz v6, :cond_0
 
-    .line 512
+    .line 517
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v6
@@ -610,10 +707,19 @@
 
 .method public static varargs mean([D)D
     .locals 11
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "values"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 408
+    .line 413
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -634,7 +740,7 @@
 
     invoke-static {v0, v3}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/Object;)V
 
-    .line 410
+    .line 415
     aget-wide v0, p0, v1
 
     invoke-static {v0, v1}, Lcom/google/common/math/DoubleMath;->checkFinite(D)D
@@ -645,20 +751,20 @@
 
     move-wide v5, v3
 
-    .line 411
+    .line 416
     :goto_1
     array-length v7, p0
 
     if-ge v2, v7, :cond_1
 
-    .line 412
+    .line 417
     aget-wide v7, p0, v2
 
     invoke-static {v7, v8}, Lcom/google/common/math/DoubleMath;->checkFinite(D)D
 
     add-long/2addr v5, v3
 
-    .line 415
+    .line 420
     aget-wide v7, p0, v2
 
     sub-double/2addr v7, v0
@@ -679,10 +785,19 @@
 
 .method public static varargs mean([I)D
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "values"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 434
+    .line 439
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -703,13 +818,13 @@
 
     const-wide/16 v2, 0x0
 
-    .line 439
+    .line 444
     :goto_1
     array-length v0, p0
 
     if-ge v1, v0, :cond_1
 
-    .line 440
+    .line 445
     aget v0, p0, v1
 
     int-to-long v4, v0
@@ -723,7 +838,7 @@
     :cond_1
     long-to-double v0, v2
 
-    .line 442
+    .line 447
     array-length p0, p0
 
     int-to-double v2, p0
@@ -735,10 +850,19 @@
 
 .method public static varargs mean([J)D
     .locals 11
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "values"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 460
+    .line 465
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -759,7 +883,7 @@
 
     invoke-static {v0, v3}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/Object;)V
 
-    .line 462
+    .line 467
     aget-wide v0, p0, v1
 
     long-to-double v0, v0
@@ -768,7 +892,7 @@
 
     move-wide v5, v3
 
-    .line 463
+    .line 468
     :goto_1
     array-length v7, p0
 
@@ -776,7 +900,7 @@
 
     add-long/2addr v5, v3
 
-    .line 466
+    .line 471
     aget-wide v7, p0, v2
 
     long-to-double v7, v7
@@ -799,6 +923,16 @@
 
 .method static roundIntermediate(DLjava/math/RoundingMode;)D
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "x",
+            "mode"
+        }
+    .end annotation
 
     .line 56
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleUtils;->isFinite(D)Z
@@ -824,7 +958,7 @@
 
     packed-switch p2, :pswitch_data_0
 
-    .line 112
+    .line 111
     new-instance p0, Ljava/lang/AssertionError;
 
     invoke-direct {p0}, Ljava/lang/AssertionError;-><init>()V
@@ -1009,8 +1143,18 @@
 
 .method public static roundToBigInteger(DLjava/math/RoundingMode;)Ljava/math/BigInteger;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "x",
+            "mode"
+        }
+    .end annotation
 
-    .line 184
+    .line 188
     invoke-static {p0, p1, p2}, Lcom/google/common/math/DoubleMath;->roundIntermediate(DLjava/math/RoundingMode;)D
 
     move-result-wide p0
@@ -1055,25 +1199,25 @@
 
     double-to-long p0, p0
 
-    .line 186
+    .line 190
     invoke-static {p0, p1}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
     move-result-object p0
 
     return-object p0
 
-    .line 188
+    .line 192
     :cond_2
     invoke-static {p0, p1}, Ljava/lang/Math;->getExponent(D)I
 
     move-result p2
 
-    .line 189
+    .line 193
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleUtils;->getSignificand(D)J
 
     move-result-wide v0
 
-    .line 190
+    .line 194
     invoke-static {v0, v1}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
     move-result-object v0
@@ -1090,7 +1234,7 @@
 
     if-gez p0, :cond_3
 
-    .line 191
+    .line 195
     invoke-virtual {p2}, Ljava/math/BigInteger;->negate()Ljava/math/BigInteger;
 
     move-result-object p2
@@ -1101,6 +1245,16 @@
 
 .method public static roundToInt(DLjava/math/RoundingMode;)I
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "x",
+            "mode"
+        }
+    .end annotation
 
     .line 132
     invoke-static {p0, p1, p2}, Lcom/google/common/math/DoubleMath;->roundIntermediate(DLjava/math/RoundingMode;)D
@@ -1149,8 +1303,18 @@
 
 .method public static roundToLong(DLjava/math/RoundingMode;)J
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "x",
+            "mode"
+        }
+    .end annotation
 
-    .line 157
+    .line 159
     invoke-static {p0, p1, p2}, Lcom/google/common/math/DoubleMath;->roundIntermediate(DLjava/math/RoundingMode;)D
 
     move-result-wide v0
@@ -1191,7 +1355,7 @@
     :goto_1
     and-int/2addr v2, v3
 
-    .line 158
+    .line 160
     invoke-static {v2, p0, p1, p2}, Lcom/google/common/math/MathPreconditions;->checkInRangeForRoundingInputs(ZDLjava/math/RoundingMode;)V
 
     double-to-long p0, v0

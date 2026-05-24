@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract onImageAvailable(Landroid/media/Image;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "image"
+        }
+    .end annotation
 .end method

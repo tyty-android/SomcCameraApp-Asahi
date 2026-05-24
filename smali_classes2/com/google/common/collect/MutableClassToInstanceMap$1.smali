@@ -29,8 +29,16 @@
 # direct methods
 .method constructor <init>(Ljava/util/Map$Entry;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "val$entry"
+        }
+    .end annotation
 
-    .line 76
+    .line 90
     iput-object p1, p0, Lcom/google/common/collect/MutableClassToInstanceMap$1;->val$entry:Ljava/util/Map$Entry;
 
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingMapEntry;-><init>()V
@@ -43,7 +51,7 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 76
+    .line 90
     invoke-virtual {p0}, Lcom/google/common/collect/MutableClassToInstanceMap$1;->delegate()Ljava/util/Map$Entry;
 
     move-result-object p0
@@ -62,7 +70,7 @@
         }
     .end annotation
 
-    .line 79
+    .line 93
     iget-object p0, p0, Lcom/google/common/collect/MutableClassToInstanceMap$1;->val$entry:Ljava/util/Map$Entry;
 
     return-object p0
@@ -70,13 +78,29 @@
 
 .method public setValue(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TB;)TB;"
         }
     .end annotation
 
-    .line 84
+    .line 99
     invoke-virtual {p0}, Lcom/google/common/collect/MutableClassToInstanceMap$1;->getKey()Ljava/lang/Object;
 
     move-result-object v0
@@ -85,8 +109,7 @@
 
     invoke-static {v0, p1}, Lcom/google/common/collect/MutableClassToInstanceMap;->access$000(Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object p1
-
+    .line 100
     invoke-super {p0, p1}, Lcom/google/common/collect/ForwardingMapEntry;->setValue(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0

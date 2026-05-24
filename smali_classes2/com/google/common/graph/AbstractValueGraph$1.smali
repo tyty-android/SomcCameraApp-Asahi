@@ -28,8 +28,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/graph/AbstractValueGraph;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 44
+    .line 48
     iput-object p1, p0, Lcom/google/common/graph/AbstractValueGraph$1;->this$0:Lcom/google/common/graph/AbstractValueGraph;
 
     invoke-direct {p0}, Lcom/google/common/graph/AbstractGraph;-><init>()V
@@ -41,6 +49,15 @@
 # virtual methods
 .method public adjacentNodes(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)",
@@ -49,7 +66,7 @@
         }
     .end annotation
 
-    .line 77
+    .line 81
     iget-object p0, p0, Lcom/google/common/graph/AbstractValueGraph$1;->this$0:Lcom/google/common/graph/AbstractValueGraph;
 
     invoke-virtual {p0, p1}, Lcom/google/common/graph/AbstractValueGraph;->adjacentNodes(Ljava/lang/Object;)Ljava/util/Set;
@@ -62,7 +79,7 @@
 .method public allowsSelfLoops()Z
     .locals 0
 
-    .line 62
+    .line 66
     iget-object p0, p0, Lcom/google/common/graph/AbstractValueGraph$1;->this$0:Lcom/google/common/graph/AbstractValueGraph;
 
     invoke-virtual {p0}, Lcom/google/common/graph/AbstractValueGraph;->allowsSelfLoops()Z
@@ -74,13 +91,22 @@
 
 .method public degree(Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)I"
         }
     .end annotation
 
-    .line 92
+    .line 96
     iget-object p0, p0, Lcom/google/common/graph/AbstractValueGraph$1;->this$0:Lcom/google/common/graph/AbstractValueGraph;
 
     invoke-virtual {p0, p1}, Lcom/google/common/graph/AbstractValueGraph;->degree(Ljava/lang/Object;)I
@@ -101,7 +127,7 @@
         }
     .end annotation
 
-    .line 52
+    .line 56
     iget-object p0, p0, Lcom/google/common/graph/AbstractValueGraph$1;->this$0:Lcom/google/common/graph/AbstractValueGraph;
 
     invoke-virtual {p0}, Lcom/google/common/graph/AbstractValueGraph;->edges()Ljava/util/Set;
@@ -113,13 +139,22 @@
 
 .method public inDegree(Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)I"
         }
     .end annotation
 
-    .line 97
+    .line 101
     iget-object p0, p0, Lcom/google/common/graph/AbstractValueGraph$1;->this$0:Lcom/google/common/graph/AbstractValueGraph;
 
     invoke-virtual {p0, p1}, Lcom/google/common/graph/AbstractValueGraph;->inDegree(Ljava/lang/Object;)I
@@ -139,7 +174,7 @@
         }
     .end annotation
 
-    .line 72
+    .line 76
     iget-object p0, p0, Lcom/google/common/graph/AbstractValueGraph$1;->this$0:Lcom/google/common/graph/AbstractValueGraph;
 
     invoke-virtual {p0}, Lcom/google/common/graph/AbstractValueGraph;->incidentEdgeOrder()Lcom/google/common/graph/ElementOrder;
@@ -152,7 +187,7 @@
 .method public isDirected()Z
     .locals 0
 
-    .line 57
+    .line 61
     iget-object p0, p0, Lcom/google/common/graph/AbstractValueGraph$1;->this$0:Lcom/google/common/graph/AbstractValueGraph;
 
     invoke-virtual {p0}, Lcom/google/common/graph/AbstractValueGraph;->isDirected()Z
@@ -172,7 +207,7 @@
         }
     .end annotation
 
-    .line 67
+    .line 71
     iget-object p0, p0, Lcom/google/common/graph/AbstractValueGraph$1;->this$0:Lcom/google/common/graph/AbstractValueGraph;
 
     invoke-virtual {p0}, Lcom/google/common/graph/AbstractValueGraph;->nodeOrder()Lcom/google/common/graph/ElementOrder;
@@ -192,7 +227,7 @@
         }
     .end annotation
 
-    .line 47
+    .line 51
     iget-object p0, p0, Lcom/google/common/graph/AbstractValueGraph$1;->this$0:Lcom/google/common/graph/AbstractValueGraph;
 
     invoke-virtual {p0}, Lcom/google/common/graph/AbstractValueGraph;->nodes()Ljava/util/Set;
@@ -204,13 +239,22 @@
 
 .method public outDegree(Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)I"
         }
     .end annotation
 
-    .line 102
+    .line 106
     iget-object p0, p0, Lcom/google/common/graph/AbstractValueGraph$1;->this$0:Lcom/google/common/graph/AbstractValueGraph;
 
     invoke-virtual {p0, p1}, Lcom/google/common/graph/AbstractValueGraph;->outDegree(Ljava/lang/Object;)I
@@ -222,8 +266,16 @@
 
 .method public bridge synthetic predecessors(Ljava/lang/Object;)Ljava/lang/Iterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "node"
+        }
+    .end annotation
 
-    .line 44
+    .line 48
     invoke-virtual {p0, p1}, Lcom/google/common/graph/AbstractValueGraph$1;->predecessors(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object p0
@@ -233,6 +285,15 @@
 
 .method public predecessors(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)",
@@ -241,7 +302,7 @@
         }
     .end annotation
 
-    .line 82
+    .line 86
     iget-object p0, p0, Lcom/google/common/graph/AbstractValueGraph$1;->this$0:Lcom/google/common/graph/AbstractValueGraph;
 
     invoke-virtual {p0, p1}, Lcom/google/common/graph/AbstractValueGraph;->predecessors(Ljava/lang/Object;)Ljava/util/Set;
@@ -253,8 +314,16 @@
 
 .method public bridge synthetic successors(Ljava/lang/Object;)Ljava/lang/Iterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "node"
+        }
+    .end annotation
 
-    .line 44
+    .line 48
     invoke-virtual {p0, p1}, Lcom/google/common/graph/AbstractValueGraph$1;->successors(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object p0
@@ -264,6 +333,15 @@
 
 .method public successors(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)",
@@ -272,7 +350,7 @@
         }
     .end annotation
 
-    .line 87
+    .line 91
     iget-object p0, p0, Lcom/google/common/graph/AbstractValueGraph$1;->this$0:Lcom/google/common/graph/AbstractValueGraph;
 
     invoke-virtual {p0, p1}, Lcom/google/common/graph/AbstractValueGraph;->successors(Ljava/lang/Object;)Ljava/util/Set;

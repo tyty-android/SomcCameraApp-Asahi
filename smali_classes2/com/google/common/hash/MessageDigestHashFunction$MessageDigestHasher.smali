@@ -25,14 +25,24 @@
 # direct methods
 .method private constructor <init>(Ljava/security/MessageDigest;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "digest",
+            "bytes"
+        }
+    .end annotation
 
-    .line 128
+    .line 135
     invoke-direct {p0}, Lcom/google/common/hash/AbstractByteHasher;-><init>()V
 
-    .line 129
+    .line 136
     iput-object p1, p0, Lcom/google/common/hash/MessageDigestHashFunction$MessageDigestHasher;->digest:Ljava/security/MessageDigest;
 
-    .line 130
+    .line 137
     iput p2, p0, Lcom/google/common/hash/MessageDigestHashFunction$MessageDigestHasher;->bytes:I
 
     return-void
@@ -41,7 +51,7 @@
 .method synthetic constructor <init>(Ljava/security/MessageDigest;ILcom/google/common/hash/MessageDigestHashFunction$1;)V
     .locals 0
 
-    .line 123
+    .line 130
     invoke-direct {p0, p1, p2}, Lcom/google/common/hash/MessageDigestHashFunction$MessageDigestHasher;-><init>(Ljava/security/MessageDigest;I)V
 
     return-void
@@ -50,7 +60,7 @@
 .method private checkNotDone()V
     .locals 1
 
-    .line 152
+    .line 159
     iget-boolean p0, p0, Lcom/google/common/hash/MessageDigestHashFunction$MessageDigestHasher;->done:Z
 
     xor-int/lit8 p0, p0, 0x1
@@ -67,15 +77,15 @@
 .method public hash()Lcom/google/common/hash/HashCode;
     .locals 2
 
-    .line 157
+    .line 164
     invoke-direct {p0}, Lcom/google/common/hash/MessageDigestHashFunction$MessageDigestHasher;->checkNotDone()V
 
     const/4 v0, 0x1
 
-    .line 158
+    .line 165
     iput-boolean v0, p0, Lcom/google/common/hash/MessageDigestHashFunction$MessageDigestHasher;->done:Z
 
-    .line 159
+    .line 166
     iget v0, p0, Lcom/google/common/hash/MessageDigestHashFunction$MessageDigestHasher;->bytes:I
 
     iget-object v1, p0, Lcom/google/common/hash/MessageDigestHashFunction$MessageDigestHasher;->digest:Ljava/security/MessageDigest;
@@ -86,7 +96,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 160
+    .line 167
     iget-object p0, p0, Lcom/google/common/hash/MessageDigestHashFunction$MessageDigestHasher;->digest:Ljava/security/MessageDigest;
 
     invoke-virtual {p0}, Ljava/security/MessageDigest;->digest()[B
@@ -99,7 +109,7 @@
 
     goto :goto_0
 
-    .line 161
+    .line 168
     :cond_0
     iget-object v0, p0, Lcom/google/common/hash/MessageDigestHashFunction$MessageDigestHasher;->digest:Ljava/security/MessageDigest;
 
@@ -123,11 +133,19 @@
 
 .method protected update(B)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "b"
+        }
+    .end annotation
 
-    .line 135
+    .line 142
     invoke-direct {p0}, Lcom/google/common/hash/MessageDigestHashFunction$MessageDigestHasher;->checkNotDone()V
 
-    .line 136
+    .line 143
     iget-object p0, p0, Lcom/google/common/hash/MessageDigestHashFunction$MessageDigestHasher;->digest:Ljava/security/MessageDigest;
 
     invoke-virtual {p0, p1}, Ljava/security/MessageDigest;->update(B)V
@@ -137,11 +155,19 @@
 
 .method protected update(Ljava/nio/ByteBuffer;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bytes"
+        }
+    .end annotation
 
-    .line 147
+    .line 154
     invoke-direct {p0}, Lcom/google/common/hash/MessageDigestHashFunction$MessageDigestHasher;->checkNotDone()V
 
-    .line 148
+    .line 155
     iget-object p0, p0, Lcom/google/common/hash/MessageDigestHashFunction$MessageDigestHasher;->digest:Ljava/security/MessageDigest;
 
     invoke-virtual {p0, p1}, Ljava/security/MessageDigest;->update(Ljava/nio/ByteBuffer;)V
@@ -151,11 +177,23 @@
 
 .method protected update([BII)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "b",
+            "off",
+            "len"
+        }
+    .end annotation
 
-    .line 141
+    .line 148
     invoke-direct {p0}, Lcom/google/common/hash/MessageDigestHashFunction$MessageDigestHasher;->checkNotDone()V
 
-    .line 142
+    .line 149
     iget-object p0, p0, Lcom/google/common/hash/MessageDigestHashFunction$MessageDigestHasher;->digest:Ljava/security/MessageDigest;
 
     invoke-virtual {p0, p1, p2, p3}, Ljava/security/MessageDigest;->update([BII)V

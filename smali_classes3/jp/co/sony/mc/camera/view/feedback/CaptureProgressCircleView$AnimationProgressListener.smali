@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract onProgressUpdate(J)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "timeInSeconds"
+        }
+    .end annotation
 .end method

@@ -152,7 +152,7 @@
     if-eqz v1, :cond_4
 
     .line 69
-    const-string v1, "selectionarg:["
+    const-string/jumbo v1, "selectionarg:["
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

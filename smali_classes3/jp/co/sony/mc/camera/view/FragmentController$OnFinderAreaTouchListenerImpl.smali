@@ -24,11 +24,19 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fragmentController"
+        }
+    .end annotation
 
-    .line 6851
+    .line 5732
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6852
+    .line 5733
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$OnFinderAreaTouchListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     return-void
@@ -47,7 +55,7 @@
 .method public onCaptureAreaCanceled()V
     .locals 2
 
-    .line 6940
+    .line 5821
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$OnFinderAreaTouchListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->isZooming()Z
@@ -56,7 +64,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 6941
+    .line 5822
     sget-object v0, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;->PINCH_ZOOM_UP:Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
 
     goto :goto_0
@@ -64,7 +72,7 @@
     :cond_0
     sget-object v0, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;->FINDER_AREA:Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
 
-    .line 6942
+    .line 5823
     :goto_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$OnFinderAreaTouchListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -76,7 +84,7 @@
 
     return-void
 
-    .line 6945
+    .line 5826
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$OnFinderAreaTouchListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -84,14 +92,14 @@
 
     move-result-object p0
 
-    .line 6946
+    .line 5827
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->getTouchEventProcedure(Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventSource;)Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventProcedure;
 
     move-result-object p0
 
     if-eqz p0, :cond_2
 
-    .line 6948
+    .line 5829
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventProcedure;->doCancel()V
 
     :cond_2
@@ -100,8 +108,16 @@
 
 .method public onCaptureAreaDoubleTapUp(Landroid/graphics/Point;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "point"
+        }
+    .end annotation
 
-    .line 6885
+    .line 5766
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$OnFinderAreaTouchListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;->FINDER_AREA:Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
@@ -114,7 +130,7 @@
 
     return-void
 
-    .line 6888
+    .line 5769
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$OnFinderAreaTouchListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -124,14 +140,14 @@
 
     sget-object v0, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;->FINDER_AREA:Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
 
-    .line 6889
+    .line 5770
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->getTouchEventProcedure(Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventSource;)Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventProcedure;
 
     move-result-object p0
 
     if-eqz p0, :cond_1
 
-    .line 6891
+    .line 5772
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventProcedure;->doDoubleClick(Landroid/graphics/Point;)V
 
     :cond_1
@@ -141,7 +157,7 @@
 .method public onCaptureAreaIsReadyToScale()V
     .locals 2
 
-    .line 6954
+    .line 5835
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$OnFinderAreaTouchListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;->FINDER_AREA:Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
@@ -154,7 +170,7 @@
 
     return-void
 
-    .line 6957
+    .line 5838
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$OnFinderAreaTouchListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -164,14 +180,14 @@
 
     if-nez v0, :cond_1
 
-    .line 6958
+    .line 5839
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$OnFinderAreaTouchListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mnotifyZoomRejected(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
     return-void
 
-    .line 6961
+    .line 5842
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$OnFinderAreaTouchListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -181,14 +197,14 @@
 
     sget-object v0, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;->FINDER_AREA:Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
 
-    .line 6962
+    .line 5843
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->getTouchEventProcedure(Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventSource;)Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventProcedure;
 
     move-result-object p0
 
     if-eqz p0, :cond_2
 
-    .line 6964
+    .line 5845
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventProcedure;->doTouchAreaScaleReady()V
 
     :cond_2
@@ -197,8 +213,16 @@
 
 .method public onCaptureAreaLongPressed(Landroid/graphics/Point;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "point"
+        }
+    .end annotation
 
-    .line 6897
+    .line 5778
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$OnFinderAreaTouchListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;->FINDER_AREA:Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
@@ -211,7 +235,7 @@
 
     return-void
 
-    .line 6900
+    .line 5781
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$OnFinderAreaTouchListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -221,14 +245,14 @@
 
     sget-object v0, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;->FINDER_AREA:Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
 
-    .line 6901
+    .line 5782
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->getTouchEventProcedure(Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventSource;)Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventProcedure;
 
     move-result-object p0
 
     if-eqz p0, :cond_1
 
-    .line 6903
+    .line 5784
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventProcedure;->doLongClick(Landroid/graphics/Point;)V
 
     :cond_1
@@ -237,8 +261,20 @@
 
 .method public onCaptureAreaMoved(Landroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "currentPoint",
+            "lastPoint",
+            "downPoint"
+        }
+    .end annotation
 
-    .line 6909
+    .line 5790
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$OnFinderAreaTouchListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;->FINDER_AREA:Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
@@ -251,7 +287,7 @@
 
     return-void
 
-    .line 6912
+    .line 5793
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$OnFinderAreaTouchListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -261,14 +297,14 @@
 
     sget-object v0, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;->FINDER_AREA:Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
 
-    .line 6913
+    .line 5794
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->getTouchEventProcedure(Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventSource;)Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventProcedure;
 
     move-result-object p0
 
     if-eqz p0, :cond_1
 
-    .line 6915
+    .line 5796
     invoke-virtual {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventProcedure;->doTouchAreaMove(Landroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
 
     :cond_1
@@ -278,7 +314,7 @@
 .method public onCaptureAreaReleased()V
     .locals 2
 
-    .line 6926
+    .line 5807
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$OnFinderAreaTouchListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->isZooming()Z
@@ -287,7 +323,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 6927
+    .line 5808
     sget-object v0, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;->PINCH_ZOOM_UP:Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
 
     goto :goto_0
@@ -295,7 +331,7 @@
     :cond_0
     sget-object v0, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;->FINDER_AREA:Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
 
-    .line 6928
+    .line 5809
     :goto_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$OnFinderAreaTouchListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -307,7 +343,7 @@
 
     return-void
 
-    .line 6931
+    .line 5812
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$OnFinderAreaTouchListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -315,14 +351,14 @@
 
     move-result-object p0
 
-    .line 6932
+    .line 5813
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->getTouchEventProcedure(Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventSource;)Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventProcedure;
 
     move-result-object p0
 
     if-eqz p0, :cond_2
 
-    .line 6934
+    .line 5815
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventProcedure;->doTouchUp()V
 
     :cond_2
@@ -331,8 +367,16 @@
 
 .method public onCaptureAreaScaled(F)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "scaleLength"
+        }
+    .end annotation
 
-    .line 6970
+    .line 5851
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$OnFinderAreaTouchListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;->FINDER_AREA:Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
@@ -345,7 +389,7 @@
 
     return-void
 
-    .line 6973
+    .line 5854
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$OnFinderAreaTouchListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -355,14 +399,14 @@
 
     sget-object v0, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;->FINDER_AREA:Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
 
-    .line 6974
+    .line 5855
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->getTouchEventProcedure(Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventSource;)Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventProcedure;
 
     move-result-object p0
 
     if-eqz p0, :cond_1
 
-    .line 6976
+    .line 5857
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventProcedure;->doTouchAreaScaling(F)V
 
     :cond_1
@@ -371,8 +415,16 @@
 
 .method public onCaptureAreaSingleTapUp(Landroid/graphics/Point;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "point"
+        }
+    .end annotation
 
-    .line 6873
+    .line 5754
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$OnFinderAreaTouchListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;->FINDER_AREA:Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
@@ -385,7 +437,7 @@
 
     return-void
 
-    .line 6876
+    .line 5757
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$OnFinderAreaTouchListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -395,14 +447,14 @@
 
     sget-object v0, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;->FINDER_AREA:Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
 
-    .line 6877
+    .line 5758
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->getTouchEventProcedure(Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventSource;)Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventProcedure;
 
     move-result-object p0
 
     if-eqz p0, :cond_1
 
-    .line 6879
+    .line 5760
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventProcedure;->doClick(Landroid/graphics/Point;)V
 
     :cond_1
@@ -418,7 +470,7 @@
 .method public onCaptureAreaTouched()V
     .locals 2
 
-    .line 6857
+    .line 5738
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$OnFinderAreaTouchListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;->FINDER_AREA:Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
@@ -431,7 +483,7 @@
 
     return-void
 
-    .line 6861
+    .line 5742
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$OnFinderAreaTouchListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -441,7 +493,7 @@
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/CameraAccessor;->prepareObjectTracking()V
 
-    .line 6863
+    .line 5744
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$OnFinderAreaTouchListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmEventProcedure(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/EventProcedure;
@@ -450,17 +502,17 @@
 
     sget-object v1, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;->FINDER_AREA:Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
 
-    .line 6864
+    .line 5745
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/EventProcedure;->getTouchEventProcedure(Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventSource;)Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventProcedure;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    .line 6866
+    .line 5747
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventProcedure;->doTouchDown()V
 
-    .line 6868
+    .line 5749
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$OnFinderAreaTouchListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 

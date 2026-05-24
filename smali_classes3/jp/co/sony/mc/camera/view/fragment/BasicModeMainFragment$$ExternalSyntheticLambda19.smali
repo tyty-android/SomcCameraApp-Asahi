@@ -38,7 +38,7 @@
 
     check-cast p4, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
 
-    invoke-static {p1, p0, p2, p4}, Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;->$r8$lambda$zuDrrIIoRTLQtsSPBUS6j7frksM(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;ZZLjp/co/sony/mc/camera/view/orientation/LayoutOrientation;)Ljp/co/sony/mc/camera/util/TuplesUtil$Quadruple;
+    invoke-static {p1, p0, p2, p4}, Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;->$r8$lambda$To9r0aOVKJRB6jTM2v6ODAMqE7c(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;ZZLjp/co/sony/mc/camera/view/orientation/LayoutOrientation;)Ljp/co/sony/mc/camera/util/TuplesUtil$Quadruple;
 
     move-result-object p0
 

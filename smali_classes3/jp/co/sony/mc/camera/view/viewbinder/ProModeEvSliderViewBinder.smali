@@ -471,7 +471,7 @@
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;->context:Landroid/content/Context;
 
-    const v2, 0x7f11009c
+    const v2, 0x7f1100b0
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

@@ -3,54 +3,36 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnLayoutChangeListener;
+.implements Landroidx/lifecycle/Observer;
 
 
 # instance fields
-.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
+.field public final synthetic f$0:Landroid/view/View;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;)V
+.method public synthetic constructor <init>(Landroid/view/View;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda28;->f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda28;->f$0:Landroid/view/View;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onLayoutChange(Landroid/view/View;IIIIIIII)V
-    .locals 10
+.method public final onChanged(Ljava/lang/Object;)V
+    .locals 0
 
     .line 0
-    move-object v0, p0
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda28;->f$0:Landroid/view/View;
 
-    iget-object v0, v0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda28;->f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
+    check-cast p1, Ljava/lang/Boolean;
 
-    move-object v1, p1
-
-    move v2, p2
-
-    move v3, p3
-
-    move v4, p4
-
-    move v5, p5
-
-    move/from16 v6, p6
-
-    move/from16 v7, p7
-
-    move/from16 v8, p8
-
-    move/from16 v9, p9
-
-    invoke-static/range {v0 .. v9}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->$r8$lambda$7anBMzO4WsHDexVx52HVfY7OR2c(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Landroid/view/View;IIIIIIII)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->lambda$onViewCreated$34(Landroid/view/View;Ljava/lang/Boolean;)V
 
     return-void
 .end method

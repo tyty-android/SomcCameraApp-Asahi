@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
@@ -24,13 +24,17 @@
 
 
 # virtual methods
-.method public final run()V
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$$ExternalSyntheticLambda4;->f$0:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->$r8$lambda$WAednhwFiLwLhjVT9FV71ugxI5c(Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;)V
+    check-cast p1, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$CircleInfo;
 
-    return-void
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->$r8$lambda$jlVZpjlIetIJSGV8XtAMfGHZIEc(Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$CircleInfo;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
 .end method

@@ -42,6 +42,15 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/HashBiMap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "biMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -50,10 +59,10 @@
         }
     .end annotation
 
-    .line 669
+    .line 685
     invoke-direct {p0}, Ljava/util/AbstractSet;-><init>()V
 
-    .line 670
+    .line 686
     iput-object p1, p0, Lcom/google/common/collect/HashBiMap$View;->biMap:Lcom/google/common/collect/HashBiMap;
 
     return-void
@@ -64,7 +73,7 @@
 .method public clear()V
     .locals 0
 
-    .line 731
+    .line 749
     iget-object p0, p0, Lcom/google/common/collect/HashBiMap$View;->biMap:Lcom/google/common/collect/HashBiMap;
 
     invoke-virtual {p0}, Lcom/google/common/collect/HashBiMap;->clear()V
@@ -73,6 +82,18 @@
 .end method
 
 .method abstract forEntry(I)Ljava/lang/Object;
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "entry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TT;"
@@ -90,7 +111,7 @@
         }
     .end annotation
 
-    .line 677
+    .line 694
     new-instance v0, Lcom/google/common/collect/HashBiMap$View$1;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/HashBiMap$View$1;-><init>(Lcom/google/common/collect/HashBiMap$View;)V
@@ -101,7 +122,7 @@
 .method public size()I
     .locals 0
 
-    .line 726
+    .line 744
     iget-object p0, p0, Lcom/google/common/collect/HashBiMap$View;->biMap:Lcom/google/common/collect/HashBiMap;
 
     iget p0, p0, Lcom/google/common/collect/HashBiMap;->size:I

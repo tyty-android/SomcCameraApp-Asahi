@@ -21,11 +21,21 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/view/hint/HintTextViewController;Landroid/content/Context;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "context"
+        }
+    .end annotation
 
-    .line 732
+    .line 722
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$Background;->this$0:Ljp/co/sony/mc/camera/view/hint/HintTextViewController;
 
-    .line 733
+    .line 723
     invoke-direct {p0, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
     return-void
@@ -35,8 +45,18 @@
 # virtual methods
 .method protected onMeasure(II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "widthMeasureSpec",
+            "heightMeasureSpec"
+        }
+    .end annotation
 
-    .line 738
+    .line 728
     invoke-super {p0, p1, p2}, Landroid/widget/FrameLayout;->onMeasure(II)V
 
     return-void
@@ -44,8 +64,16 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
 
-    .line 743
+    .line 733
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     const/4 v1, 0x1
@@ -78,7 +106,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 745
+    .line 735
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$Background;->this$0:Ljp/co/sony/mc/camera/view/hint/HintTextViewController;
 
@@ -92,7 +120,7 @@
 
     if-nez v0, :cond_3
 
-    .line 746
+    .line 736
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v0
@@ -101,7 +129,7 @@
 
     goto :goto_0
 
-    .line 748
+    .line 738
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$Background;->this$0:Ljp/co/sony/mc/camera/view/hint/HintTextViewController;
 
@@ -115,7 +143,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 749
+    .line 739
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$Background;->this$0:Ljp/co/sony/mc/camera/view/hint/HintTextViewController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->-$$Nest$fgetmAutoPowerOffExclusiveView(Ljp/co/sony/mc/camera/view/hint/HintTextViewController;)Landroid/view/View;
@@ -124,10 +152,10 @@
 
     if-eqz v0, :cond_2
 
-    .line 750
+    .line 740
     new-instance v0, Landroid/graphics/Point;
 
-    .line 751
+    .line 741
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
 
     move-result v3
@@ -140,7 +168,7 @@
 
     add-int/2addr v3, v4
 
-    .line 752
+    .line 742
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
     move-result p1
@@ -155,7 +183,7 @@
 
     invoke-direct {v0, v3, p1}, Landroid/graphics/Point;-><init>(II)V
 
-    .line 753
+    .line 743
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$Background;->this$0:Ljp/co/sony/mc/camera/view/hint/HintTextViewController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->-$$Nest$fgetmAutoPowerOffExclusiveView(Ljp/co/sony/mc/camera/view/hint/HintTextViewController;)Landroid/view/View;

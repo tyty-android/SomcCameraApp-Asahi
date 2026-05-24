@@ -16,7 +16,29 @@
 
 # virtual methods
 .method public abstract getLongLittleEndian([BI)J
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "array",
+            "offset"
+        }
+    .end annotation
 .end method
 
 .method public abstract putLongLittleEndian([BIJ)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "array",
+            "offset",
+            "value"
+        }
+    .end annotation
 .end method

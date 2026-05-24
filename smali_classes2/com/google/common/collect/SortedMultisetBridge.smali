@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<E:",
@@ -20,6 +23,17 @@
 
 
 # virtual methods
+.method public bridge synthetic elementSet()Ljava/util/Set;
+    .locals 0
+
+    .line 30
+    invoke-interface {p0}, Lcom/google/common/collect/SortedMultisetBridge;->elementSet()Ljava/util/SortedSet;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public abstract elementSet()Ljava/util/SortedSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {

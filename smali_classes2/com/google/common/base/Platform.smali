@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/base/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/base/Platform$JdkPatternCompiler;
@@ -12,8 +15,6 @@
 
 
 # static fields
-.field private static final logger:Ljava/util/logging/Logger;
-
 .field private static final patternCompiler:Lcom/google/common/base/PatternCompiler;
 
 
@@ -21,20 +22,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 33
-    const-class v0, Lcom/google/common/base/Platform;
-
-    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Ljava/util/logging/Logger;->getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/common/base/Platform;->logger:Ljava/util/logging/Logger;
-
-    .line 34
+    .line 31
     invoke-static {}, Lcom/google/common/base/Platform;->loadPatternCompiler()Lcom/google/common/base/PatternCompiler;
 
     move-result-object v0
@@ -47,25 +35,27 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 36
+    .line 33
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method static checkGwtRpcEnabled()V
-    .locals 0
 
     return-void
 .end method
 
 .method static compilePattern(Ljava/lang/String;)Lcom/google/common/base/CommonPattern;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "pattern"
+        }
+    .end annotation
 
-    .line 82
+    .line 84
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 83
+    .line 85
     sget-object v0, Lcom/google/common/base/Platform;->patternCompiler:Lcom/google/common/base/PatternCompiler;
 
     invoke-interface {v0, p0}, Lcom/google/common/base/PatternCompiler;->compile(Ljava/lang/String;)Lcom/google/common/base/CommonPattern;
@@ -78,11 +68,22 @@
 .method static emptyToNull(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
     .param p0    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "string"
+        }
+    .end annotation
 
-    .line 78
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 80
     invoke-static {p0}, Lcom/google/common/base/Platform;->stringIsNullOrEmpty(Ljava/lang/String;)Z
 
     move-result v0
@@ -97,8 +98,16 @@
 
 .method static formatCompact4Digits(D)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 54
+    .line 55
     sget-object v0, Ljava/util/Locale;->ROOT:Ljava/util/Locale;
 
     invoke-static {p0, p1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
@@ -120,6 +129,17 @@
 
 .method static getEnumIfPresent(Ljava/lang/Class;Ljava/lang/String;)Lcom/google/common/base/Optional;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "enumClass",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -134,7 +154,7 @@
         }
     .end annotation
 
-    .line 49
+    .line 40
     invoke-static {p0}, Lcom/google/common/base/Enums;->getEnumConstants(Ljava/lang/Class;)Ljava/util/Map;
 
     move-result-object v0
@@ -147,7 +167,7 @@
 
     if-nez p1, :cond_0
 
-    .line 50
+    .line 51
     invoke-static {}, Lcom/google/common/base/Optional;->absent()Lcom/google/common/base/Optional;
 
     move-result-object p0
@@ -163,7 +183,9 @@
 
     move-result-object p0
 
-    invoke-static {p0}, Lcom/google/common/base/Optional;->of(Ljava/lang/Object;)Lcom/google/common/base/Optional;
+    check-cast p0, Ljava/lang/Enum;
+
+    invoke-static {p0}, Lcom/google/common/base/Optional;->fromNullable(Ljava/lang/Object;)Lcom/google/common/base/Optional;
 
     move-result-object p0
 
@@ -174,7 +196,7 @@
 .method private static loadPatternCompiler()Lcom/google/common/base/PatternCompiler;
     .locals 2
 
-    .line 96
+    .line 98
     new-instance v0, Lcom/google/common/base/Platform$JdkPatternCompiler;
 
     const/4 v1, 0x0
@@ -184,31 +206,24 @@
     return-object v0
 .end method
 
-.method private static logPatternCompilerError(Ljava/util/ServiceConfigurationError;)V
-    .locals 3
-
-    .line 100
-    sget-object v0, Lcom/google/common/base/Platform;->logger:Ljava/util/logging/Logger;
-
-    sget-object v1, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
-
-    const-string v2, "Error loading regex compiler, falling back to next option"
-
-    invoke-virtual {v0, v1, v2, p0}, Ljava/util/logging/Logger;->log(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    return-void
-.end method
-
 .method static nullToEmpty(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
     .param p0    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "string"
+        }
+    .end annotation
 
     if-nez p0, :cond_0
 
-    .line 68
+    .line 69
     const-string p0, ""
 
     :cond_0
@@ -218,7 +233,7 @@
 .method static patternCompilerIsPcreLike()Z
     .locals 1
 
-    .line 87
+    .line 89
     sget-object v0, Lcom/google/common/base/Platform;->patternCompiler:Lcom/google/common/base/PatternCompiler;
 
     invoke-interface {v0}, Lcom/google/common/base/PatternCompiler;->isPcreLike()Z
@@ -230,8 +245,16 @@
 
 .method static precomputeCharMatcher(Lcom/google/common/base/CharMatcher;)Lcom/google/common/base/CharMatcher;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "matcher"
+        }
+    .end annotation
 
-    .line 45
+    .line 36
     invoke-virtual {p0}, Lcom/google/common/base/CharMatcher;->precomputedInternal()Lcom/google/common/base/CharMatcher;
 
     move-result-object p0
@@ -242,13 +265,21 @@
 .method static stringIsNullOrEmpty(Ljava/lang/String;)Z
     .locals 0
     .param p0    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "string"
+        }
+    .end annotation
 
     if-eqz p0, :cond_1
 
-    .line 58
+    .line 59
     invoke-virtual {p0}, Ljava/lang/String;->isEmpty()Z
 
     move-result p0
@@ -268,15 +299,4 @@
 
     :goto_1
     return p0
-.end method
-
-.method static systemNanoTime()J
-    .locals 2
-
-    .line 41
-    invoke-static {}, Ljava/lang/System;->nanoTime()J
-
-    move-result-wide v0
-
-    return-wide v0
 .end method

@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 1019
+    .line 1001
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$6;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,12 +46,12 @@
 .method public onCompleted()V
     .locals 0
 
-    .line 1048
+    .line 1030
     const-string p0, "onCompleted() E: Video Track"
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->-$$Nest$smtrace(Ljava/lang/String;)V
 
-    .line 1050
+    .line 1032
     const-string p0, "onCompleted() X: Video Track"
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->-$$Nest$smtrace(Ljava/lang/String;)V
@@ -54,17 +62,17 @@
 .method public onFrameEnd()V
     .locals 1
 
-    .line 1041
+    .line 1023
     const-string v0, "onFrameEnd() E: Video Track"
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->-$$Nest$smtrace(Ljava/lang/String;)V
 
-    .line 1042
+    .line 1024
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$6;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->-$$Nest$mplayStopVibrate(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;)V
 
-    .line 1043
+    .line 1025
     const-string p0, "onFrameEnd() X: Video Track"
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->-$$Nest$smtrace(Ljava/lang/String;)V
@@ -74,8 +82,16 @@
 
 .method public onProgress(J)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "durationMillis"
+        }
+    .end annotation
 
-    .line 1035
+    .line 1017
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$6;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->-$$Nest$mnotifyDuration(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;J)V
@@ -86,12 +102,12 @@
 .method public onStarted()V
     .locals 4
 
-    .line 1023
+    .line 1005
     const-string v0, "onStarted() E: Video Track"
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->-$$Nest$smtrace(Ljava/lang/String;)V
 
-    .line 1024
+    .line 1006
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$6;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->-$$Nest$fgetmWaitUntilWriting(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;)Ljava/util/concurrent/CountDownLatch;
@@ -100,7 +116,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1025
+    .line 1007
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$6;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->-$$Nest$fgetmWaitUntilWriting(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;)Ljava/util/concurrent/CountDownLatch;
@@ -117,7 +133,7 @@
 
     if-lez v0, :cond_0
 
-    .line 1026
+    .line 1008
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$6;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->-$$Nest$fgetmWaitUntilWriting(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;)Ljava/util/concurrent/CountDownLatch;
@@ -126,7 +142,7 @@
 
     invoke-virtual {p0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
-    .line 1029
+    .line 1011
     :cond_0
     const-string p0, "onStarted() X: Video Track"
 

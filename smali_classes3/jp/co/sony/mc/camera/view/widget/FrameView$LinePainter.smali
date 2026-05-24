@@ -24,6 +24,14 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/widget/FrameView;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 205
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/FrameView$LinePainter;->this$0:Ljp/co/sony/mc/camera/view/widget/FrameView;
@@ -45,6 +53,14 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "canvas"
+        }
+    .end annotation
 
     .line 209
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I

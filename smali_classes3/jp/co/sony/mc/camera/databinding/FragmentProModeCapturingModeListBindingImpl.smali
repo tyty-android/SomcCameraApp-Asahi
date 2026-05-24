@@ -26,14 +26,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f090253
+    const v1, 0x7f09025f
 
     const/4 v2, 0x2
 
     .line 17
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0902fc
+    const v1, 0x7f090301
 
     const/4 v2, 0x3
 
@@ -45,6 +45,16 @@
 
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root"
+        }
+    .end annotation
 
     .line 29
     sget-object v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -64,6 +74,18 @@
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root",
+            "bindings"
+        }
+    .end annotation
 
     const/4 v0, 0x2
 
@@ -135,6 +157,17 @@
 
 .method private onChangeOrientationViewModelLayoutOrientation(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "OrientationViewModelLayoutOrientation",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -183,6 +216,17 @@
 
 .method private onChangeProModeTopPaneUiStateCapturingModeMenuVisible(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ProModeTopPaneUiStateCapturingModeMenuVisible",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -231,6 +275,17 @@
 
 .method private onChangeViewFinderUiStateIsViewFinderItemClickable(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ViewFinderUiStateIsViewFinderItemClickable",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -592,6 +647,18 @@
 
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "localFieldId",
+            "object",
+            "fieldId"
+        }
+    .end annotation
 
     if-eqz p1, :cond_2
 
@@ -640,6 +707,14 @@
 
 .method public setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "CameraSettingsModel"
+        }
+    .end annotation
 
     .line 115
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBindingImpl;->mCameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
@@ -649,6 +724,14 @@
 
 .method public setModeDialUiState(Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ModeDialUiState"
+        }
+    .end annotation
 
     .line 112
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBindingImpl;->mModeDialUiState:Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;
@@ -658,6 +741,14 @@
 
 .method public setOrientationViewModel(Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "OrientationViewModel"
+        }
+    .end annotation
 
     .line 96
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBindingImpl;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
@@ -680,7 +771,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x16
+    const/16 p1, 0x19
 
     .line 100
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBindingImpl;->notifyPropertyChanged(I)V
@@ -704,6 +795,14 @@
 
 .method public setProModeTopPaneUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ProModeTopPaneUiState"
+        }
+    .end annotation
 
     .line 88
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBindingImpl;->mProModeTopPaneUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;
@@ -726,7 +825,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x1c
+    const/16 p1, 0x1f
 
     .line 92
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBindingImpl;->notifyPropertyChanged(I)V
@@ -750,8 +849,18 @@
 
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "variableId",
+            "variable"
+        }
+    .end annotation
 
-    const/16 v0, 0x1c
+    const/16 v0, 0x1f
 
     if-ne v0, p1, :cond_0
 
@@ -763,7 +872,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x16
+    const/16 v0, 0x19
 
     if-ne v0, p1, :cond_1
 
@@ -775,7 +884,7 @@
     goto :goto_0
 
     :cond_1
-    const/16 v0, 0x25
+    const/16 v0, 0x28
 
     if-ne v0, p1, :cond_2
 
@@ -787,7 +896,7 @@
     goto :goto_0
 
     :cond_2
-    const/16 v0, 0x15
+    const/16 v0, 0x18
 
     if-ne v0, p1, :cond_3
 
@@ -799,7 +908,7 @@
     goto :goto_0
 
     :cond_3
-    const/16 v0, 0x8
+    const/16 v0, 0xb
 
     if-ne v0, p1, :cond_4
 
@@ -822,6 +931,14 @@
 
 .method public setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ViewFinderUiState"
+        }
+    .end annotation
 
     .line 104
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBindingImpl;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
@@ -844,7 +961,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x25
+    const/16 p1, 0x28
 
     .line 108
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBindingImpl;->notifyPropertyChanged(I)V

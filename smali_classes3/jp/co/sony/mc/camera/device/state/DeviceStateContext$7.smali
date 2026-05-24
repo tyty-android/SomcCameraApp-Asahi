@@ -34,13 +34,21 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 4091
+    .line 4508
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$7;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4092
+    .line 4509
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
@@ -63,7 +71,7 @@
         }
     .end annotation
 
-    .line 4102
+    .line 4519
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$7;->mVideoSavingRequestBuilders:Ljava/util/List;
 
     return-object p0
@@ -71,8 +79,18 @@
 
 .method public onRecordError(II)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "what",
+            "extra"
+        }
+    .end annotation
 
-    .line 4119
+    .line 4534
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$7;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fgetmDeviceStateMachine(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Ljp/co/sony/mc/camera/device/DeviceStateMachine;
@@ -87,12 +105,12 @@
 
     invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->sendEvent(Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;[Ljava/lang/Object;)V
 
-    .line 4121
+    .line 4536
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$7;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->releaseRecorder()V
 
-    .line 4122
+    .line 4537
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$7;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;
@@ -106,8 +124,16 @@
 
 .method public onRecordFinished(Ljp/co/sony/mc/camera/recorder/RecorderController$Result;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 
-    .line 4133
+    .line 4548
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$7;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fgetmDeviceStateMachine(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Ljp/co/sony/mc/camera/device/DeviceStateMachine;
@@ -122,37 +148,36 @@
 
     invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->sendEvent(Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;[Ljava/lang/Object;)V
 
-    .line 4135
+    .line 4550
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$7;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;
 
     move-result-object v0
 
-    .line 4136
+    .line 4551
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$7;->getVideoSavingRequestBuilders()Ljava/util/List;
 
     move-result-object p0
 
-    .line 4135
+    .line 4550
     invoke-interface {v0, p1, p0}, Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;->onRecordFinished(Ljp/co/sony/mc/camera/recorder/RecorderController$Result;Ljava/util/List;)V
 
     return-void
 .end method
 
 .method public onRecordProgress(J)V
-    .locals 1
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "progressMillis"
+        }
+    .end annotation
 
-    .line 4112
-    iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$7;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
-
-    invoke-static {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fgetmIsSwitchLensDuringStreaming(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    .line 4113
+    .line 4529
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$7;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;
@@ -161,14 +186,13 @@
 
     invoke-interface {p0, p1, p2}, Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;->onRecordProgress(J)V
 
-    :cond_0
     return-void
 .end method
 
 .method public onRecordSetOutputDone()V
     .locals 2
 
-    .line 4107
+    .line 4524
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$7;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fgetmDeviceStateMachine(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Ljp/co/sony/mc/camera/device/DeviceStateMachine;
@@ -189,7 +213,7 @@
 .method public onRecordStopped()V
     .locals 2
 
-    .line 4127
+    .line 4542
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$7;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fgetmDeviceStateMachine(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Ljp/co/sony/mc/camera/device/DeviceStateMachine;
@@ -209,6 +233,15 @@
 
 .method public setSavingRequestBuilders(Ljava/util/List;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "builders"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -218,7 +251,7 @@
         }
     .end annotation
 
-    .line 4096
+    .line 4513
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
@@ -235,13 +268,13 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 4097
+    .line 4514
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$7;->mVideoSavingRequestBuilders:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    .line 4098
+    .line 4515
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$7;->mVideoSavingRequestBuilders:Ljava/util/List;
 
     invoke-interface {p0, p1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z

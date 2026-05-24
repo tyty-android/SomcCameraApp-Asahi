@@ -28,6 +28,16 @@
 
 .method private static computeClosesDistance(Landroid/graphics/Rect;Landroid/graphics/Rect;)I
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "faceRect",
+            "centerPosition"
+        }
+    .end annotation
 
     .line 95
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -145,6 +155,17 @@
 
 .method private static createSortedDistanceList(Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;Landroid/graphics/Rect;)Ljava/util/List;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "result",
+            "centerPosition"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -237,6 +258,15 @@
 
 .method public static dumpDistanceMapList(Ljava/util/List;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "list"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -331,6 +361,18 @@
 
 .method public static getFaceInformationList(Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;Landroid/graphics/Rect;Ljava/lang/String;)Ljp/co/sony/mc/camera/view/focus/FaceInformationList;
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "faceDetectResultList",
+            "centerPosition",
+            "userSelectedUuid"
+        }
+    .end annotation
 
     .line 186
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -499,6 +541,14 @@
 
 .method public static hasValidFaceId(Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;)Ljava/lang/Boolean;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 
     .line 244
     sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
@@ -561,6 +611,14 @@
 
 .method public static isValidFaceDetectionResult(Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
@@ -599,6 +657,14 @@
 
 .method public static logFaceDetectionResult(Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -898,6 +964,19 @@
 
 .method public static overwriteTaggedRectangle(Ljava/util/HashMap;Ljava/lang/String;Ljp/co/sony/mc/camera/view/focus/FaceInformationList;)Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "rectangles",
+            "uuid",
+            "faceList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1004,6 +1083,14 @@
 
 .method public static setUuidFaceDetectionResult(Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;)Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 
     .line 261
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->getFaceList()Ljava/util/List;

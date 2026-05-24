@@ -40,7 +40,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 60
+    .line 63
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -61,7 +61,7 @@
     .annotation runtime Lkotlin/jvm/JvmStatic;
     .end annotation
 
-    .line 62
+    .line 65
     new-instance p0, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;-><init>()V

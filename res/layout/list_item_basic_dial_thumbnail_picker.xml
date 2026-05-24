@@ -3,7 +3,8 @@
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/content_layout" android:padding="@dimen/dial_thumbnail_picker_item_margin" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
         <FrameLayout android:id="@id/icon_container" android:background="@color/basic_mode_thumbnail_picker_item_background_color" android:padding="@dimen/dial_thumbnail_picker_item_icon_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
-            <ImageView android:id="@id/icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+            <ImageView android:id="@id/background_thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+            <ImageView android:id="@id/foreground_thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
         </FrameLayout>
         <TextView android:gravity="center" android:id="@id/icon_text" android:layout_width="0.0dip" android:layout_height="@dimen/dial_thumbnail_picker_item_text_height" android:maxLines="1" android:includeFontPadding="false" app:layout_constraintBottom_toBottomOf="@id/icon_container" app:layout_constraintEnd_toEndOf="@id/icon_container" app:layout_constraintStart_toStartOf="@id/icon_container" style="@style/TextAppearance.BasicModeDialThumbnailPickerIcon" />
     </androidx.constraintlayout.widget.ConstraintLayout>

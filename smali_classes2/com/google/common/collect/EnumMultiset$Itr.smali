@@ -39,20 +39,28 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/EnumMultiset;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 208
+    .line 213
     iput-object p1, p0, Lcom/google/common/collect/EnumMultiset$Itr;->this$0:Lcom/google/common/collect/EnumMultiset;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 p1, 0x0
 
-    .line 209
+    .line 214
     iput p1, p0, Lcom/google/common/collect/EnumMultiset$Itr;->index:I
 
     const/4 p1, -0x1
 
-    .line 210
+    .line 215
     iput p1, p0, Lcom/google/common/collect/EnumMultiset$Itr;->toRemove:I
 
     return-void
@@ -63,7 +71,7 @@
 .method public hasNext()Z
     .locals 2
 
-    .line 216
+    .line 221
     :goto_0
     iget v0, p0, Lcom/google/common/collect/EnumMultiset$Itr;->index:I
 
@@ -77,7 +85,7 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 217
+    .line 222
     iget-object v0, p0, Lcom/google/common/collect/EnumMultiset$Itr;->this$0:Lcom/google/common/collect/EnumMultiset;
 
     invoke-static {v0}, Lcom/google/common/collect/EnumMultiset;->access$100(Lcom/google/common/collect/EnumMultiset;)[I
@@ -97,7 +105,7 @@
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
-    .line 216
+    .line 221
     iput v1, p0, Lcom/google/common/collect/EnumMultiset$Itr;->index:I
 
     goto :goto_0
@@ -116,33 +124,33 @@
         }
     .end annotation
 
-    .line 226
+    .line 231
     invoke-virtual {p0}, Lcom/google/common/collect/EnumMultiset$Itr;->hasNext()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 229
+    .line 234
     iget v0, p0, Lcom/google/common/collect/EnumMultiset$Itr;->index:I
 
     invoke-virtual {p0, v0}, Lcom/google/common/collect/EnumMultiset$Itr;->output(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 230
+    .line 235
     iget v1, p0, Lcom/google/common/collect/EnumMultiset$Itr;->index:I
 
     iput v1, p0, Lcom/google/common/collect/EnumMultiset$Itr;->toRemove:I
 
     add-int/lit8 v1, v1, 0x1
 
-    .line 231
+    .line 236
     iput v1, p0, Lcom/google/common/collect/EnumMultiset$Itr;->index:I
 
     return-object v0
 
-    .line 227
+    .line 232
     :cond_0
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -152,6 +160,15 @@
 .end method
 
 .method abstract output(I)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TT;"
@@ -162,7 +179,7 @@
 .method public remove()V
     .locals 4
 
-    .line 237
+    .line 242
     iget v0, p0, Lcom/google/common/collect/EnumMultiset$Itr;->toRemove:I
 
     const/4 v1, 0x0
@@ -179,7 +196,7 @@
     :goto_0
     invoke-static {v0}, Lcom/google/common/collect/CollectPreconditions;->checkRemove(Z)V
 
-    .line 238
+    .line 243
     iget-object v0, p0, Lcom/google/common/collect/EnumMultiset$Itr;->this$0:Lcom/google/common/collect/EnumMultiset;
 
     invoke-static {v0}, Lcom/google/common/collect/EnumMultiset;->access$100(Lcom/google/common/collect/EnumMultiset;)[I
@@ -192,12 +209,12 @@
 
     if-lez v0, :cond_1
 
-    .line 239
+    .line 244
     iget-object v0, p0, Lcom/google/common/collect/EnumMultiset$Itr;->this$0:Lcom/google/common/collect/EnumMultiset;
 
     invoke-static {v0}, Lcom/google/common/collect/EnumMultiset;->access$210(Lcom/google/common/collect/EnumMultiset;)I
 
-    .line 240
+    .line 245
     iget-object v0, p0, Lcom/google/common/collect/EnumMultiset$Itr;->this$0:Lcom/google/common/collect/EnumMultiset;
 
     invoke-static {v0}, Lcom/google/common/collect/EnumMultiset;->access$100(Lcom/google/common/collect/EnumMultiset;)[I
@@ -212,7 +229,7 @@
 
     invoke-static {v0, v2, v3}, Lcom/google/common/collect/EnumMultiset;->access$322(Lcom/google/common/collect/EnumMultiset;J)J
 
-    .line 241
+    .line 246
     iget-object v0, p0, Lcom/google/common/collect/EnumMultiset$Itr;->this$0:Lcom/google/common/collect/EnumMultiset;
 
     invoke-static {v0}, Lcom/google/common/collect/EnumMultiset;->access$100(Lcom/google/common/collect/EnumMultiset;)[I
@@ -226,7 +243,7 @@
     :cond_1
     const/4 v0, -0x1
 
-    .line 243
+    .line 248
     iput v0, p0, Lcom/google/common/collect/EnumMultiset$Itr;->toRemove:I
 
     return-void

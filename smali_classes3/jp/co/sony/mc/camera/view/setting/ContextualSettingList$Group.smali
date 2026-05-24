@@ -21,11 +21,19 @@
 # direct methods
 .method varargs constructor <init>([Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "categories"
+        }
+    .end annotation
 
-    .line 892
+    .line 828
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 893
+    .line 829
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;->categories:[Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     return-void

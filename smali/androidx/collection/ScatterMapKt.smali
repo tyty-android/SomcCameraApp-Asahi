@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nScatterMap.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ScatterMap.kt\nandroidx/collection/ScatterMapKt\n*L\n1#1,1834:1\n1645#1:1835\n1645#1:1836\n1645#1:1837\n1699#1:1838\n*S KotlinDebug\n*F\n+ 1 ScatterMap.kt\nandroidx/collection/ScatterMapKt\n*L\n1664#1:1835\n1666#1:1836\n1669#1:1837\n1705#1:1838\n*E\n"
+    value = "SMAP\nScatterMap.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ScatterMap.kt\nandroidx/collection/ScatterMapKt\n*L\n1#1,1850:1\n1661#1:1851\n1661#1:1852\n1661#1:1853\n1715#1:1854\n*S KotlinDebug\n*F\n+ 1 ScatterMap.kt\nandroidx/collection/ScatterMapKt\n*L\n1680#1:1851\n1682#1:1852\n1685#1:1853\n1721#1:1854\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -182,7 +182,7 @@
 .method public static final get(J)I
     .locals 0
 
-    .line 1838
+    .line 1854
     invoke-static {p0, p1}, Ljava/lang/Long;->numberOfTrailingZeros(J)I
 
     move-result p0
@@ -223,7 +223,7 @@
 
     shl-int/lit8 p1, p1, 0x3
 
-    .line 1781
+    .line 1797
     aget-wide v1, p0, v0
 
     ushr-long/2addr v1, p1
@@ -292,7 +292,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 1589
+    .line 1605
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
 
     move-result p0
@@ -323,7 +323,7 @@
 
     shr-int/lit8 v0, p1, 0x3
 
-    .line 1836
+    .line 1852
     aget-wide v0, p0, v0
 
     and-int/lit8 p0, p1, 0x7
@@ -362,7 +362,7 @@
 
     shr-int/lit8 v0, p1, 0x3
 
-    .line 1835
+    .line 1851
     aget-wide v0, p0, v0
 
     and-int/lit8 p0, p1, 0x7
@@ -421,7 +421,7 @@
 
     shr-int/lit8 v0, p1, 0x3
 
-    .line 1837
+    .line 1853
     aget-wide v0, p0, v0
 
     and-int/lit8 p0, p1, 0x7
@@ -462,7 +462,7 @@
 
     return p0
 
-    .line 1626
+    .line 1642
     :cond_0
     div-int/lit8 v0, p0, 0x8
 
@@ -474,7 +474,7 @@
 .method public static final lowestBitSet(J)I
     .locals 0
 
-    .line 1699
+    .line 1715
     invoke-static {p0, p1}, Ljava/lang/Long;->numberOfTrailingZeros(J)I
 
     move-result p0
@@ -642,7 +642,7 @@
 
     const/4 v0, -0x1
 
-    .line 1615
+    .line 1631
     invoke-static {p0}, Ljava/lang/Integer;->numberOfLeadingZeros(I)I
 
     move-result p0
@@ -667,7 +667,7 @@
 
     shr-int/lit8 v0, p1, 0x3
 
-    .line 1645
+    .line 1661
     aget-wide v0, p0, v0
 
     and-int/lit8 p0, p1, 0x7
@@ -697,7 +697,7 @@
     :cond_0
     add-int/lit8 v1, p0, -0x1
 
-    .line 1635
+    .line 1651
     div-int/2addr v1, v0
 
     add-int/2addr p0, v1
@@ -718,7 +718,7 @@
 
     shl-int/lit8 p1, p1, 0x3
 
-    .line 1660
+    .line 1676
     aget-wide v1, p0, v0
 
     const-wide/16 v3, 0xff

@@ -46,6 +46,19 @@
 # direct methods
 .method constructor <init>(Ljava/lang/ref/ReferenceQueue;Ljava/lang/Object;Lcom/google/common/collect/MapMakerInternalMap$InternalEntry;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "queue",
+            "referent",
+            "entry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -54,10 +67,10 @@
         }
     .end annotation
 
-    .line 1033
+    .line 1073
     invoke-direct {p0, p2, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;Ljava/lang/ref/ReferenceQueue;)V
 
-    .line 1034
+    .line 1074
     iput-object p3, p0, Lcom/google/common/collect/MapMakerInternalMap$WeakValueReferenceImpl;->entry:Lcom/google/common/collect/MapMakerInternalMap$InternalEntry;
 
     return-void
@@ -67,6 +80,17 @@
 # virtual methods
 .method public copyFor(Ljava/lang/ref/ReferenceQueue;Lcom/google/common/collect/MapMakerInternalMap$InternalEntry;)Lcom/google/common/collect/MapMakerInternalMap$WeakValueReference;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "queue",
+            "entry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -77,7 +101,7 @@
         }
     .end annotation
 
-    .line 1044
+    .line 1084
     new-instance v0, Lcom/google/common/collect/MapMakerInternalMap$WeakValueReferenceImpl;
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$WeakValueReferenceImpl;->get()Ljava/lang/Object;
@@ -97,7 +121,7 @@
         }
     .end annotation
 
-    .line 1039
+    .line 1079
     iget-object p0, p0, Lcom/google/common/collect/MapMakerInternalMap$WeakValueReferenceImpl;->entry:Lcom/google/common/collect/MapMakerInternalMap$InternalEntry;
 
     return-object p0

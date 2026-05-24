@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<E:",
@@ -24,7 +27,7 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 45
+    .line 51
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingQueue;-><init>()V
 
     return-void
@@ -34,13 +37,26 @@
 # virtual methods
 .method public addFirst(Ljava/lang/Object;)V
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)V"
         }
     .end annotation
 
-    .line 52
+    .line 58
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingDeque;->delegate()Ljava/util/Deque;
 
     move-result-object p0
@@ -52,13 +68,26 @@
 
 .method public addLast(Ljava/lang/Object;)V
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)V"
         }
     .end annotation
 
-    .line 57
+    .line 63
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingDeque;->delegate()Ljava/util/Deque;
 
     move-result-object p0
@@ -71,7 +100,7 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 41
+    .line 44
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingDeque;->delegate()Ljava/util/Deque;
 
     move-result-object p0
@@ -82,7 +111,7 @@
 .method protected bridge synthetic delegate()Ljava/util/Collection;
     .locals 0
 
-    .line 41
+    .line 44
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingDeque;->delegate()Ljava/util/Deque;
 
     move-result-object p0
@@ -103,7 +132,7 @@
 .method protected bridge synthetic delegate()Ljava/util/Queue;
     .locals 0
 
-    .line 41
+    .line 44
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingDeque;->delegate()Ljava/util/Deque;
 
     move-result-object p0
@@ -121,7 +150,7 @@
         }
     .end annotation
 
-    .line 62
+    .line 68
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingDeque;->delegate()Ljava/util/Deque;
 
     move-result-object p0
@@ -135,13 +164,16 @@
 
 .method public getFirst()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TE;"
         }
     .end annotation
 
-    .line 67
+    .line 74
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingDeque;->delegate()Ljava/util/Deque;
 
     move-result-object p0
@@ -155,13 +187,16 @@
 
 .method public getLast()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TE;"
         }
     .end annotation
 
-    .line 72
+    .line 80
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingDeque;->delegate()Ljava/util/Deque;
 
     move-result-object p0
@@ -175,13 +210,26 @@
 
 .method public offerFirst(Ljava/lang/Object;)Z
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)Z"
         }
     .end annotation
 
-    .line 78
+    .line 86
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingDeque;->delegate()Ljava/util/Deque;
 
     move-result-object p0
@@ -195,13 +243,26 @@
 
 .method public offerLast(Ljava/lang/Object;)Z
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)Z"
         }
     .end annotation
 
-    .line 84
+    .line 92
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingDeque;->delegate()Ljava/util/Deque;
 
     move-result-object p0
@@ -221,7 +282,10 @@
         }
     .end annotation
 
-    .line 89
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 98
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingDeque;->delegate()Ljava/util/Deque;
 
     move-result-object p0
@@ -241,7 +305,10 @@
         }
     .end annotation
 
-    .line 94
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 104
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingDeque;->delegate()Ljava/util/Deque;
 
     move-result-object p0
@@ -261,7 +328,10 @@
         }
     .end annotation
 
-    .line 100
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 111
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingDeque;->delegate()Ljava/util/Deque;
 
     move-result-object p0
@@ -281,7 +351,10 @@
         }
     .end annotation
 
-    .line 106
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 118
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingDeque;->delegate()Ljava/util/Deque;
 
     move-result-object p0
@@ -295,13 +368,16 @@
 
 .method public pop()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TE;"
         }
     .end annotation
 
-    .line 112
+    .line 125
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingDeque;->delegate()Ljava/util/Deque;
 
     move-result-object p0
@@ -315,13 +391,26 @@
 
 .method public push(Ljava/lang/Object;)V
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)V"
         }
     .end annotation
 
-    .line 117
+    .line 130
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingDeque;->delegate()Ljava/util/Deque;
 
     move-result-object p0
@@ -333,13 +422,16 @@
 
 .method public removeFirst()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TE;"
         }
     .end annotation
 
-    .line 123
+    .line 137
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingDeque;->delegate()Ljava/util/Deque;
 
     move-result-object p0
@@ -353,8 +445,20 @@
 
 .method public removeFirstOccurrence(Ljava/lang/Object;)Z
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 135
+    .line 150
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingDeque;->delegate()Ljava/util/Deque;
 
     move-result-object p0
@@ -368,13 +472,16 @@
 
 .method public removeLast()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TE;"
         }
     .end annotation
 
-    .line 129
+    .line 144
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingDeque;->delegate()Ljava/util/Deque;
 
     move-result-object p0
@@ -388,8 +495,20 @@
 
 .method public removeLastOccurrence(Ljava/lang/Object;)Z
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 141
+    .line 156
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingDeque;->delegate()Ljava/util/Deque;
 
     move-result-object p0

@@ -62,7 +62,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 572
+    .line 617
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSaveFullScreenVideo;->value:Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingRecordingMode;
@@ -75,7 +75,7 @@
 .method public final getValue()Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingRecordingMode;
     .locals 0
 
-    .line 572
+    .line 617
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSaveFullScreenVideo;->value:Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingRecordingMode;
 
     return-object p0
@@ -84,7 +84,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 573
+    .line 618
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSaveFullScreenVideo;->value:Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingRecordingMode;
 
     sget-object v0, Ljp/co/sony/mc/camera/idd/value/IddSaveFullScreenVideo$WhenMappings;->$EnumSwitchMapping$0:[I
@@ -99,12 +99,12 @@
 
     if-ne p0, v0, :cond_0
 
-    .line 574
+    .line 619
     const-string p0, "ON"
 
     goto :goto_0
 
-    .line 575
+    .line 620
     :cond_0
     const-string p0, "OFF"
 

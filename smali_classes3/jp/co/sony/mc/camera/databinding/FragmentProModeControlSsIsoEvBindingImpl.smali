@@ -53,9 +53,9 @@
 
     move-result-object v1
 
-    const v4, 0x7f0c00b0
+    const v4, 0x7f0c00a7
 
-    const v5, 0x7f0c00a0
+    const v5, 0x7f0c0097
 
     filled-new-array {v4, v4, v5}, [I
 
@@ -70,21 +70,21 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeControlSsIsoEvBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0900a4
+    const v1, 0x7f0900ac
 
     const/4 v2, 0x4
 
     .line 23
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0904a9
+    const v1, 0x7f0904aa
 
     const/4 v2, 0x5
 
     .line 24
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09018f
+    const v1, 0x7f090193
 
     const/4 v2, 0x6
 
@@ -96,6 +96,16 @@
 
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root"
+        }
+    .end annotation
 
     .line 36
     sget-object v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeControlSsIsoEvBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -115,6 +125,18 @@
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
     .locals 11
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root",
+            "bindings"
+        }
+    .end annotation
 
     const/4 v0, 0x4
 
@@ -220,6 +242,16 @@
 
 .method private onChangeFragmentOperationRightPaneCtrlEv(Ljp/co/sony/mc/camera/databinding/FragmentProModeEvSliderBinding;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "FragmentOperationRightPaneCtrlEv",
+            "fieldId"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
@@ -260,6 +292,16 @@
 
 .method private onChangeFragmentOperationRightPaneCtrlIso(Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "FragmentOperationRightPaneCtrlIso",
+            "fieldId"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
@@ -300,6 +342,16 @@
 
 .method private onChangeFragmentOperationRightPaneCtrlSs(Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "FragmentOperationRightPaneCtrlSs",
+            "fieldId"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
@@ -518,6 +570,18 @@
 
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "localFieldId",
+            "object",
+            "fieldId"
+        }
+    .end annotation
 
     if-eqz p1, :cond_2
 
@@ -566,6 +630,14 @@
 
 .method public setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "CameraSettingsModel"
+        }
+    .end annotation
 
     .line 112
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeControlSsIsoEvBindingImpl;->mCameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
@@ -575,6 +647,14 @@
 
 .method public setCameraStatusModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "CameraStatusModel"
+        }
+    .end annotation
 
     .line 124
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeControlSsIsoEvBindingImpl;->mCameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
@@ -584,6 +664,14 @@
 
 .method public setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "lifecycleOwner"
+        }
+    .end annotation
 
     .line 129
     invoke-super {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeControlSsIsoEvBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
@@ -608,6 +696,14 @@
 
 .method public setOrientationViewModel(Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "OrientationViewModel"
+        }
+    .end annotation
 
     .line 115
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeControlSsIsoEvBindingImpl;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
@@ -617,6 +713,14 @@
 
 .method public setProModeBottomPaneUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ProModeBottomPaneUiState"
+        }
+    .end annotation
 
     .line 121
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeControlSsIsoEvBindingImpl;->mProModeBottomPaneUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;
@@ -626,6 +730,14 @@
 
 .method public setProModeCommonUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ProModeCommonUiState"
+        }
+    .end annotation
 
     .line 118
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeControlSsIsoEvBindingImpl;->mProModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
@@ -635,8 +747,18 @@
 
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "variableId",
+            "variable"
+        }
+    .end annotation
 
-    const/16 v0, 0x8
+    const/16 v0, 0xb
 
     if-ne v0, p1, :cond_0
 
@@ -648,7 +770,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x16
+    const/16 v0, 0x19
 
     if-ne v0, p1, :cond_1
 
@@ -660,7 +782,7 @@
     goto :goto_0
 
     :cond_1
-    const/16 v0, 0x18
+    const/16 v0, 0x1b
 
     if-ne v0, p1, :cond_2
 
@@ -672,7 +794,7 @@
     goto :goto_0
 
     :cond_2
-    const/16 v0, 0x17
+    const/16 v0, 0x1a
 
     if-ne v0, p1, :cond_3
 
@@ -684,7 +806,7 @@
     goto :goto_0
 
     :cond_3
-    const/16 v0, 0x9
+    const/16 v0, 0xc
 
     if-ne v0, p1, :cond_4
 

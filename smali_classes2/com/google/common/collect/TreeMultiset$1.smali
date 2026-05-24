@@ -30,11 +30,21 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/TreeMultiset;Lcom/google/common/collect/TreeMultiset$AvlNode;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$baseEntry"
+        }
+    .end annotation
 
-    .line 362
-    iput-object p1, p0, Lcom/google/common/collect/TreeMultiset$1;->this$0:Lcom/google/common/collect/TreeMultiset;
-
+    .line 374
     iput-object p2, p0, Lcom/google/common/collect/TreeMultiset$1;->val$baseEntry:Lcom/google/common/collect/TreeMultiset$AvlNode;
+
+    iput-object p1, p0, Lcom/google/common/collect/TreeMultiset$1;->this$0:Lcom/google/common/collect/TreeMultiset;
 
     invoke-direct {p0}, Lcom/google/common/collect/Multisets$AbstractEntry;-><init>()V
 
@@ -46,7 +56,7 @@
 .method public getCount()I
     .locals 1
 
-    .line 370
+    .line 383
     iget-object v0, p0, Lcom/google/common/collect/TreeMultiset$1;->val$baseEntry:Lcom/google/common/collect/TreeMultiset$AvlNode;
 
     invoke-virtual {v0}, Lcom/google/common/collect/TreeMultiset$AvlNode;->getCount()I
@@ -55,7 +65,7 @@
 
     if-nez v0, :cond_0
 
-    .line 372
+    .line 385
     iget-object v0, p0, Lcom/google/common/collect/TreeMultiset$1;->this$0:Lcom/google/common/collect/TreeMultiset;
 
     invoke-virtual {p0}, Lcom/google/common/collect/TreeMultiset$1;->getElement()Ljava/lang/Object;
@@ -74,13 +84,16 @@
 
 .method public getElement()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TE;"
         }
     .end annotation
 
-    .line 365
+    .line 378
     iget-object p0, p0, Lcom/google/common/collect/TreeMultiset$1;->val$baseEntry:Lcom/google/common/collect/TreeMultiset$AvlNode;
 
     invoke-virtual {p0}, Lcom/google/common/collect/TreeMultiset$AvlNode;->getElement()Ljava/lang/Object;

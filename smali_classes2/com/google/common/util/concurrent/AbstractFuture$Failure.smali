@@ -26,7 +26,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 285
+    .line 307
     new-instance v0, Lcom/google/common/util/concurrent/AbstractFuture$Failure;
 
     new-instance v1, Lcom/google/common/util/concurrent/AbstractFuture$Failure$1;
@@ -44,11 +44,19 @@
 
 .method constructor <init>(Ljava/lang/Throwable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "exception"
+        }
+    .end annotation
 
-    .line 295
+    .line 317
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 296
+    .line 318
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1

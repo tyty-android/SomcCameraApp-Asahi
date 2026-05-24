@@ -9,13 +9,9 @@
 # instance fields
 .field public final synthetic f$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder;
 
-.field public final synthetic f$1:I
-
-.field public final synthetic f$2:I
-
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder;II)V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder;)V
     .locals 0
 
     .line 0
@@ -23,28 +19,20 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder$$ExternalSyntheticLambda6;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder;
 
-    iput p2, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder$$ExternalSyntheticLambda6;->f$1:I
-
-    iput p3, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder$$ExternalSyntheticLambda6;->f$2:I
-
     return-void
 .end method
 
 
 # virtual methods
 .method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+    .locals 0
 
     .line 0
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder$$ExternalSyntheticLambda6;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder$$ExternalSyntheticLambda6;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder;
 
-    iget v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder$$ExternalSyntheticLambda6;->f$1:I
+    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;
 
-    iget p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder$$ExternalSyntheticLambda6;->f$2:I
-
-    check-cast p1, Ljava/lang/Boolean;
-
-    invoke-static {v0, v1, p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder;->$r8$lambda$qyBV9yWYIvw5oSXVU24C2PI4OzY(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder;IILjava/lang/Boolean;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder;->$r8$lambda$Qq1i9R726Pkp2CV_j3OXWU11CyI(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder;Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;)Lkotlin/Unit;
 
     move-result-object p0
 

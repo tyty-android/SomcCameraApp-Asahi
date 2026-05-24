@@ -26,13 +26,23 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "controller"
+        }
+    .end annotation
 
-    .line 6828
+    .line 5709
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$ScreenLauncherImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6829
+    .line 5710
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$ScreenLauncherImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     return-void
@@ -42,8 +52,16 @@
 # virtual methods
 .method public launchCameraSettings(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "initialPosition"
+        }
+    .end annotation
 
-    .line 6839
+    .line 5720
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ScreenLauncherImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     const/4 v0, 0x0
@@ -56,7 +74,7 @@
 .method public launchGoogleLensActivity()V
     .locals 0
 
-    .line 6844
+    .line 5725
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ScreenLauncherImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mlaunchGoogleLensActivity(Ljp/co/sony/mc/camera/view/FragmentController;)V
@@ -67,7 +85,7 @@
 .method public launchMemoryRecall()V
     .locals 0
 
-    .line 6834
+    .line 5715
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ScreenLauncherImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mlaunchMemoryRecall(Ljp/co/sony/mc/camera/view/FragmentController;)V

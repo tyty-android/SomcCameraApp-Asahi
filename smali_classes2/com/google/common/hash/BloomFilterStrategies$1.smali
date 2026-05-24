@@ -17,10 +17,20 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 45
+    .line 47
     invoke-direct {p0, p1, p2, v0}, Lcom/google/common/hash/BloomFilterStrategies;-><init>(Ljava/lang/String;ILcom/google/common/hash/BloomFilterStrategies$1;)V
 
     return-void
@@ -30,6 +40,25 @@
 # virtual methods
 .method public mightContain(Ljava/lang/Object;Lcom/google/common/hash/Funnel;ILcom/google/common/hash/BloomFilterStrategies$LockFreeBitArray;)Z
     .locals 5
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/hash/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "object",
+            "funnel",
+            "numHashFunctions",
+            "bits"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -42,12 +71,12 @@
         }
     .end annotation
 
-    .line 69
+    .line 77
     invoke-virtual {p4}, Lcom/google/common/hash/BloomFilterStrategies$LockFreeBitArray;->bitSize()J
 
     move-result-wide v0
 
-    .line 70
+    .line 78
     invoke-static {}, Lcom/google/common/hash/Hashing;->murmur3_128()Lcom/google/common/hash/HashFunction;
 
     move-result-object p0
@@ -86,7 +115,7 @@
     :cond_0
     int-to-long v3, v3
 
-    .line 80
+    .line 88
     rem-long/2addr v3, v0
 
     invoke-virtual {p4, v3, v4}, Lcom/google/common/hash/BloomFilterStrategies$LockFreeBitArray;->get(J)Z
@@ -110,6 +139,25 @@
 
 .method public put(Ljava/lang/Object;Lcom/google/common/hash/Funnel;ILcom/google/common/hash/BloomFilterStrategies$LockFreeBitArray;)Z
     .locals 5
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/hash/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "object",
+            "funnel",
+            "numHashFunctions",
+            "bits"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -122,12 +170,12 @@
         }
     .end annotation
 
-    .line 49
+    .line 54
     invoke-virtual {p4}, Lcom/google/common/hash/BloomFilterStrategies$LockFreeBitArray;->bitSize()J
 
     move-result-wide v0
 
-    .line 50
+    .line 55
     invoke-static {}, Lcom/google/common/hash/Hashing;->murmur3_128()Lcom/google/common/hash/HashFunction;
 
     move-result-object p0
@@ -166,7 +214,7 @@
     :cond_0
     int-to-long v3, v3
 
-    .line 61
+    .line 66
     rem-long/2addr v3, v0
 
     invoke-virtual {p4, v3, v4}, Lcom/google/common/hash/BloomFilterStrategies$LockFreeBitArray;->set(J)Z

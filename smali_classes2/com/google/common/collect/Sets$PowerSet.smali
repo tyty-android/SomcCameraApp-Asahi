@@ -41,6 +41,15 @@
 # direct methods
 .method constructor <init>(Ljava/util/Set;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "input"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -49,10 +58,10 @@
         }
     .end annotation
 
-    .line 1469
+    .line 1603
     invoke-direct {p0}, Ljava/util/AbstractSet;-><init>()V
 
-    .line 1471
+    .line 1605
     invoke-interface {p1}, Ljava/util/Set;->size()I
 
     move-result v0
@@ -75,10 +84,10 @@
 
     move-result v2
 
-    .line 1470
+    .line 1604
     invoke-static {v0, v1, v2}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;I)V
 
-    .line 1472
+    .line 1606
     invoke-static {p1}, Lcom/google/common/collect/Maps;->indexMap(Ljava/util/Collection;)Lcom/google/common/collect/ImmutableMap;
 
     move-result-object p1
@@ -93,19 +102,27 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
-    .line 1497
+    .line 1631
     instance-of v0, p1, Ljava/util/Set;
 
     if-eqz v0, :cond_0
 
-    .line 1498
+    .line 1632
     check-cast p1, Ljava/util/Set;
 
-    .line 1499
+    .line 1633
     iget-object p0, p0, Lcom/google/common/collect/Sets$PowerSet;->inputSet:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMap;->keySet()Lcom/google/common/collect/ImmutableSet;
@@ -127,19 +144,27 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
-    .line 1506
+    .line 1640
     instance-of v0, p1, Lcom/google/common/collect/Sets$PowerSet;
 
     if-eqz v0, :cond_0
 
-    .line 1507
+    .line 1641
     check-cast p1, Lcom/google/common/collect/Sets$PowerSet;
 
-    .line 1508
+    .line 1642
     iget-object p0, p0, Lcom/google/common/collect/Sets$PowerSet;->inputSet:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMap;->keySet()Lcom/google/common/collect/ImmutableSet;
@@ -158,7 +183,7 @@
 
     return p0
 
-    .line 1510
+    .line 1644
     :cond_0
     invoke-super {p0, p1}, Ljava/util/AbstractSet;->equals(Ljava/lang/Object;)Z
 
@@ -170,7 +195,7 @@
 .method public hashCode()I
     .locals 1
 
-    .line 1520
+    .line 1654
     iget-object v0, p0, Lcom/google/common/collect/Sets$PowerSet;->inputSet:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableMap;->keySet()Lcom/google/common/collect/ImmutableSet;
@@ -213,7 +238,7 @@
         }
     .end annotation
 
-    .line 1487
+    .line 1621
     new-instance v0, Lcom/google/common/collect/Sets$PowerSet$1;
 
     invoke-virtual {p0}, Lcom/google/common/collect/Sets$PowerSet;->size()I
@@ -228,7 +253,7 @@
 .method public size()I
     .locals 1
 
-    .line 1477
+    .line 1611
     iget-object p0, p0, Lcom/google/common/collect/Sets$PowerSet;->inputSet:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMap;->size()I
@@ -245,34 +270,16 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1525
+    .line 1659
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "powerSet("
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
     iget-object p0, p0, Lcom/google/common/collect/Sets$PowerSet;->inputSet:Lcom/google/common/collect/ImmutableMap;
 
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, 0xa
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v0, "powerSet("
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 

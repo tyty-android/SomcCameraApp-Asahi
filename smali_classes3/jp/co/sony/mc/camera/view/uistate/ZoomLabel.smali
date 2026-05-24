@@ -74,7 +74,7 @@
 
     invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 878
+    .line 1048
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Ljp/co/sony/mc/camera/view/uistate/ZoomLabel;->step:I
@@ -223,7 +223,7 @@
 .method public final getContentDescription()Ljava/lang/String;
     .locals 0
 
-    .line 878
+    .line 1048
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ZoomLabel;->contentDescription:Ljava/lang/String;
 
     return-object p0
@@ -232,7 +232,7 @@
 .method public final getStep()I
     .locals 0
 
-    .line 878
+    .line 1048
     iget p0, p0, Ljp/co/sony/mc/camera/view/uistate/ZoomLabel;->step:I
 
     return p0
@@ -241,7 +241,7 @@
 .method public final getText()Ljava/lang/String;
     .locals 0
 
-    .line 878
+    .line 1048
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ZoomLabel;->text:Ljava/lang/String;
 
     return-object p0

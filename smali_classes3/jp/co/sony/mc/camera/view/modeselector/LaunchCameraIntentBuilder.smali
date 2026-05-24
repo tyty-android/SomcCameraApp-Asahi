@@ -77,6 +77,16 @@
 # virtual methods
 .method public activity(Ljava/lang/String;Ljava/lang/String;)Ljp/co/sony/mc/camera/view/modeselector/LaunchCameraIntentBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "packageName",
+            "activityName"
+        }
+    .end annotation
 
     .line 69
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/modeselector/LaunchCameraIntentBuilder;->mPackage:Ljava/lang/String;
@@ -89,6 +99,16 @@
 
 .method public callingActivity(Ljava/lang/String;Ljava/lang/String;)Ljp/co/sony/mc/camera/view/modeselector/LaunchCameraIntentBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "packageName",
+            "activityName"
+        }
+    .end annotation
 
     .line 81
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/modeselector/LaunchCameraIntentBuilder;->mCallingPackage:Ljava/lang/String;
@@ -101,6 +121,14 @@
 
 .method public callingMode(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/modeselector/LaunchCameraIntentBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 76
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/modeselector/LaunchCameraIntentBuilder;->mCallingMode:Ljava/lang/String;
@@ -110,6 +138,14 @@
 
 .method public category(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/modeselector/LaunchCameraIntentBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "category"
+        }
+    .end annotation
 
     .line 64
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/modeselector/LaunchCameraIntentBuilder;->mCategory:Ljava/lang/String;
@@ -211,6 +247,14 @@
 
 .method public mode(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/modeselector/LaunchCameraIntentBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 59
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/modeselector/LaunchCameraIntentBuilder;->mMode:Ljava/lang/String;

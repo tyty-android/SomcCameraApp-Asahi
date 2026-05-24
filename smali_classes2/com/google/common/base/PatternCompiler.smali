@@ -3,8 +3,21 @@
 .source "PatternCompiler.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/base/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # virtual methods
 .method public abstract compile(Ljava/lang/String;)Lcom/google/common/base/CommonPattern;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "pattern"
+        }
+    .end annotation
 .end method
 
 .method public abstract isPcreLike()Z

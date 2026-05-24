@@ -53,7 +53,7 @@
     f = "ViewFinderUiState.kt"
     i = {}
     l = {
-        0x171
+        0xf9
     }
     m = "invokeSuspend"
     n = {}
@@ -167,20 +167,15 @@
 
     move-result-object v0
 
-    .line 368
+    .line 248
     iget v1, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$7;->label:I
 
     const/4 v2, 0x1
 
     if-eqz v1, :cond_1
 
-    if-ne v1, v2, :cond_0
+    if-eq v1, v2, :cond_0
 
-    invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
-
-    goto :goto_0
-
-    :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
     const-string p1, "call to \'resume\' before \'invoke\' with coroutine"
@@ -189,25 +184,18 @@
 
     throw p0
 
+    :cond_0
+    invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
+
+    goto :goto_0
+
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 369
+    .line 249
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$7;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$getCameraStatusModel$p(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isObjectTracking()Landroidx/lifecycle/LiveData;
-
-    move-result-object p1
-
-    invoke-static {p1}, Landroidx/lifecycle/FlowLiveDataConversions;->asFlow(Landroidx/lifecycle/LiveData;)Lkotlinx/coroutines/flow/Flow;
-
-    move-result-object p1
-
-    invoke-static {p1}, Lkotlinx/coroutines/flow/FlowKt;->distinctUntilChanged(Lkotlinx/coroutines/flow/Flow;)Lkotlinx/coroutines/flow/Flow;
+    invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$getBasicFinderUiState$p(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)Lkotlinx/coroutines/flow/MutableStateFlow;
 
     move-result-object p1
 
@@ -225,7 +213,7 @@
 
     iput v2, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$7;->label:I
 
-    invoke-interface {p1, v1, v3}, Lkotlinx/coroutines/flow/Flow;->collect(Lkotlinx/coroutines/flow/FlowCollector;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-interface {p1, v1, v3}, Lkotlinx/coroutines/flow/MutableStateFlow;->collect(Lkotlinx/coroutines/flow/FlowCollector;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -233,10 +221,11 @@
 
     return-object v0
 
-    .line 374
     :cond_2
     :goto_0
-    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+    new-instance p0, Lkotlin/KotlinNothingValueException;
 
-    return-object p0
+    invoke-direct {p0}, Lkotlin/KotlinNothingValueException;-><init>()V
+
+    throw p0
 .end method

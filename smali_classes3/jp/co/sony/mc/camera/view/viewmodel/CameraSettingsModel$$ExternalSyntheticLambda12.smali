@@ -24,7 +24,7 @@
     .line 0
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->$r8$lambda$3ID2Vp3M-L60Ls3eztX1nmCKvQM(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
+    invoke-static {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->$r8$lambda$eL89YproWVFTD1GgwUrHx2IhmEU(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
 
     move-result p0
 

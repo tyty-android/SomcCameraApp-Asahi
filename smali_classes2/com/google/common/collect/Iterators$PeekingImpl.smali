@@ -47,7 +47,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -55,6 +55,15 @@
 # direct methods
 .method public constructor <init>(Ljava/util/Iterator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "iterator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -63,10 +72,10 @@
         }
     .end annotation
 
-    .line 1128
+    .line 1188
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1129
+    .line 1189
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -83,7 +92,7 @@
 .method public hasNext()Z
     .locals 1
 
-    .line 1134
+    .line 1194
     iget-boolean v0, p0, Lcom/google/common/collect/Iterators$PeekingImpl;->hasPeeked:Z
 
     if-nez v0, :cond_1
@@ -113,18 +122,21 @@
 
 .method public next()Ljava/lang/Object;
     .locals 2
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TE;"
         }
     .end annotation
 
-    .line 1139
+    .line 1200
     iget-boolean v0, p0, Lcom/google/common/collect/Iterators$PeekingImpl;->hasPeeked:Z
 
     if-nez v0, :cond_0
 
-    .line 1140
+    .line 1201
     iget-object p0, p0, Lcom/google/common/collect/Iterators$PeekingImpl;->iterator:Ljava/util/Iterator;
 
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -133,18 +145,22 @@
 
     return-object p0
 
-    .line 1142
+    .line 1204
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/Iterators$PeekingImpl;->peekedElement:Ljava/lang/Object;
 
+    invoke-static {v0}, Lcom/google/common/collect/NullnessCasts;->uncheckedCastNullableTToT(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
     const/4 v1, 0x0
 
-    .line 1143
+    .line 1205
     iput-boolean v1, p0, Lcom/google/common/collect/Iterators$PeekingImpl;->hasPeeked:Z
 
     const/4 v1, 0x0
 
-    .line 1144
+    .line 1206
     iput-object v1, p0, Lcom/google/common/collect/Iterators$PeekingImpl;->peekedElement:Ljava/lang/Object;
 
     return-object v0
@@ -152,18 +168,21 @@
 
 .method public peek()Ljava/lang/Object;
     .locals 1
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TE;"
         }
     .end annotation
 
-    .line 1156
+    .line 1219
     iget-boolean v0, p0, Lcom/google/common/collect/Iterators$PeekingImpl;->hasPeeked:Z
 
     if-nez v0, :cond_0
 
-    .line 1157
+    .line 1220
     iget-object v0, p0, Lcom/google/common/collect/Iterators$PeekingImpl;->iterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -174,12 +193,16 @@
 
     const/4 v0, 0x1
 
-    .line 1158
+    .line 1221
     iput-boolean v0, p0, Lcom/google/common/collect/Iterators$PeekingImpl;->hasPeeked:Z
 
-    .line 1160
+    .line 1224
     :cond_0
     iget-object p0, p0, Lcom/google/common/collect/Iterators$PeekingImpl;->peekedElement:Ljava/lang/Object;
+
+    invoke-static {p0}, Lcom/google/common/collect/NullnessCasts;->uncheckedCastNullableTToT(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
 
     return-object p0
 .end method
@@ -187,7 +210,7 @@
 .method public remove()V
     .locals 2
 
-    .line 1150
+    .line 1212
     iget-boolean v0, p0, Lcom/google/common/collect/Iterators$PeekingImpl;->hasPeeked:Z
 
     xor-int/lit8 v0, v0, 0x1
@@ -196,7 +219,7 @@
 
     invoke-static {v0, v1}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
 
-    .line 1151
+    .line 1213
     iget-object p0, p0, Lcom/google/common/collect/Iterators$PeekingImpl;->iterator:Ljava/util/Iterator;
 
     invoke-interface {p0}, Ljava/util/Iterator;->remove()V

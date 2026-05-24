@@ -10,6 +10,16 @@
 # direct methods
 .method public constructor <init>(IZ)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "status",
+            "isControlBokehStatusSupported"
+        }
+    .end annotation
 
     .line 23
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;-><init>()V
@@ -21,17 +31,17 @@
 
     const/4 v0, -0x1
 
-    const v1, 0x7f11012b
+    const v1, 0x7f110168
 
-    const v2, 0x7f11012c
+    const v2, 0x7f110169
 
-    const v3, 0x7f11012e
+    const v3, 0x7f11016b
 
-    const v4, 0x7f11012d
+    const v4, 0x7f11016a
 
-    const v5, 0x7f11012f
+    const v5, 0x7f11016c
 
-    const v6, 0x7f110130
+    const v6, 0x7f11016d
 
     if-eqz p2, :cond_0
 

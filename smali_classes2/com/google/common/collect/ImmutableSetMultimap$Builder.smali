@@ -30,8 +30,25 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 153
+    .line 268
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableMultimap$Builder;-><init>()V
+
+    return-void
+.end method
+
+.method constructor <init>(I)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "expectedKeys"
+        }
+    .end annotation
+
+    .line 272
+    invoke-direct {p0, p1}, Lcom/google/common/collect/ImmutableMultimap$Builder;-><init>(I)V
 
     return-void
 .end method
@@ -41,7 +58,7 @@
 .method public bridge synthetic build()Lcom/google/common/collect/ImmutableMultimap;
     .locals 0
 
-    .line 147
+    .line 262
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableSetMultimap$Builder;->build()Lcom/google/common/collect/ImmutableSetMultimap;
 
     move-result-object p0
@@ -59,19 +76,32 @@
         }
     .end annotation
 
-    .line 257
+    .line 403
+    iget-object v0, p0, Lcom/google/common/collect/ImmutableSetMultimap$Builder;->builderMap:Ljava/util/Map;
+
+    if-nez v0, :cond_0
+
+    .line 404
+    invoke-static {}, Lcom/google/common/collect/ImmutableSetMultimap;->of()Lcom/google/common/collect/ImmutableSetMultimap;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 406
+    :cond_0
     iget-object v0, p0, Lcom/google/common/collect/ImmutableSetMultimap$Builder;->builderMap:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object v0
 
-    .line 258
+    .line 407
     iget-object v1, p0, Lcom/google/common/collect/ImmutableSetMultimap$Builder;->keyComparator:Ljava/util/Comparator;
 
-    if-eqz v1, :cond_0
+    if-eqz v1, :cond_1
 
-    .line 259
+    .line 408
     iget-object v1, p0, Lcom/google/common/collect/ImmutableSetMultimap$Builder;->keyComparator:Ljava/util/Comparator;
 
     invoke-static {v1}, Lcom/google/common/collect/Ordering;->from(Ljava/util/Comparator;)Lcom/google/common/collect/Ordering;
@@ -86,11 +116,11 @@
 
     move-result-object v0
 
-    .line 261
-    :cond_0
+    .line 410
+    :cond_1
     iget-object p0, p0, Lcom/google/common/collect/ImmutableSetMultimap$Builder;->valueComparator:Ljava/util/Comparator;
 
-    invoke-static {v0, p0}, Lcom/google/common/collect/ImmutableSetMultimap;->fromMapEntries(Ljava/util/Collection;Ljava/util/Comparator;)Lcom/google/common/collect/ImmutableSetMultimap;
+    invoke-static {v0, p0}, Lcom/google/common/collect/ImmutableSetMultimap;->fromMapBuilderEntries(Ljava/util/Collection;Ljava/util/Comparator;)Lcom/google/common/collect/ImmutableSetMultimap;
 
     move-result-object p0
 
@@ -99,8 +129,16 @@
 
 .method bridge synthetic combine(Lcom/google/common/collect/ImmutableMultimap$Builder;)Lcom/google/common/collect/ImmutableMultimap$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "other"
+        }
+    .end annotation
 
-    .line 147
+    .line 262
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableSetMultimap$Builder;->combine(Lcom/google/common/collect/ImmutableMultimap$Builder;)Lcom/google/common/collect/ImmutableSetMultimap$Builder;
 
     move-result-object p0
@@ -110,6 +148,15 @@
 
 .method combine(Lcom/google/common/collect/ImmutableMultimap$Builder;)Lcom/google/common/collect/ImmutableSetMultimap$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "other"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -120,34 +167,157 @@
         }
     .end annotation
 
-    .line 220
+    .line 366
     invoke-super {p0, p1}, Lcom/google/common/collect/ImmutableMultimap$Builder;->combine(Lcom/google/common/collect/ImmutableMultimap$Builder;)Lcom/google/common/collect/ImmutableMultimap$Builder;
 
     return-object p0
 .end method
 
-.method newMutableValueCollection()Ljava/util/Collection;
+.method expectedValueCollectionSize(ILjava/lang/Iterable;)I
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Collection<",
-            "TV;>;"
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "defaultExpectedValues",
+            "values"
         }
     .end annotation
 
-    .line 158
-    invoke-static {}, Lcom/google/common/collect/Platform;->preservesInsertionOrderOnAddsSet()Ljava/util/Set;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I",
+            "Ljava/lang/Iterable<",
+            "*>;)I"
+        }
+    .end annotation
+
+    .line 285
+    instance-of p0, p2, Ljava/util/Set;
+
+    if-eqz p0, :cond_0
+
+    .line 286
+    check-cast p2, Ljava/util/Set;
+
+    .line 287
+    invoke-interface {p2}, Ljava/util/Set;->size()I
+
+    move-result p0
+
+    invoke-static {p1, p0}, Ljava/lang/Math;->max(II)I
+
+    move-result p0
+
+    return p0
+
+    :cond_0
+    return p1
+.end method
+
+.method public bridge synthetic expectedValuesPerKey(I)Lcom/google/common/collect/ImmutableMultimap$Builder;
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "expectedValuesPerKey"
+        }
+    .end annotation
+
+    .line 262
+    invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableSetMultimap$Builder;->expectedValuesPerKey(I)Lcom/google/common/collect/ImmutableSetMultimap$Builder;
 
     move-result-object p0
 
     return-object p0
 .end method
 
+.method public expectedValuesPerKey(I)Lcom/google/common/collect/ImmutableSetMultimap$Builder;
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "expectedValuesPerKey"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I)",
+            "Lcom/google/common/collect/ImmutableSetMultimap$Builder<",
+            "TK;TV;>;"
+        }
+    .end annotation
+
+    .line 304
+    invoke-super {p0, p1}, Lcom/google/common/collect/ImmutableMultimap$Builder;->expectedValuesPerKey(I)Lcom/google/common/collect/ImmutableMultimap$Builder;
+
+    return-object p0
+.end method
+
+.method newValueCollectionBuilderWithExpectedSize(I)Lcom/google/common/collect/ImmutableCollection$Builder;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "expectedSize"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I)",
+            "Lcom/google/common/collect/ImmutableCollection$Builder<",
+            "TV;>;"
+        }
+    .end annotation
+
+    .line 277
+    iget-object v0, p0, Lcom/google/common/collect/ImmutableSetMultimap$Builder;->valueComparator:Ljava/util/Comparator;
+
+    if-nez v0, :cond_0
+
+    .line 278
+    invoke-static {p1}, Lcom/google/common/collect/ImmutableSet;->builderWithExpectedSize(I)Lcom/google/common/collect/ImmutableSet$Builder;
+
+    move-result-object p0
+
+    goto :goto_0
+
+    .line 279
+    :cond_0
+    new-instance v0, Lcom/google/common/collect/ImmutableSortedSet$Builder;
+
+    iget-object p0, p0, Lcom/google/common/collect/ImmutableSetMultimap$Builder;->valueComparator:Ljava/util/Comparator;
+
+    invoke-direct {v0, p0, p1}, Lcom/google/common/collect/ImmutableSortedSet$Builder;-><init>(Ljava/util/Comparator;I)V
+
+    move-object p0, v0
+
+    :goto_0
+    return-object p0
+.end method
+
 .method public bridge synthetic orderKeysBy(Ljava/util/Comparator;)Lcom/google/common/collect/ImmutableMultimap$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "keyComparator"
+        }
+    .end annotation
 
-    .line 147
+    .line 262
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableSetMultimap$Builder;->orderKeysBy(Ljava/util/Comparator;)Lcom/google/common/collect/ImmutableSetMultimap$Builder;
 
     move-result-object p0
@@ -157,6 +327,15 @@
 
 .method public orderKeysBy(Ljava/util/Comparator;)Lcom/google/common/collect/ImmutableSetMultimap$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "keyComparator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -167,7 +346,7 @@
         }
     .end annotation
 
-    .line 232
+    .line 378
     invoke-super {p0, p1}, Lcom/google/common/collect/ImmutableMultimap$Builder;->orderKeysBy(Ljava/util/Comparator;)Lcom/google/common/collect/ImmutableMultimap$Builder;
 
     return-object p0
@@ -175,8 +354,16 @@
 
 .method public bridge synthetic orderValuesBy(Ljava/util/Comparator;)Lcom/google/common/collect/ImmutableMultimap$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "valueComparator"
+        }
+    .end annotation
 
-    .line 147
+    .line 262
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableSetMultimap$Builder;->orderValuesBy(Ljava/util/Comparator;)Lcom/google/common/collect/ImmutableSetMultimap$Builder;
 
     move-result-object p0
@@ -186,6 +373,15 @@
 
 .method public orderValuesBy(Ljava/util/Comparator;)Lcom/google/common/collect/ImmutableSetMultimap$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "valueComparator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -196,7 +392,7 @@
         }
     .end annotation
 
-    .line 250
+    .line 396
     invoke-super {p0, p1}, Lcom/google/common/collect/ImmutableMultimap$Builder;->orderValuesBy(Ljava/util/Comparator;)Lcom/google/common/collect/ImmutableMultimap$Builder;
 
     return-object p0
@@ -204,8 +400,18 @@
 
 .method public bridge synthetic put(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMultimap$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
-    .line 147
+    .line 262
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/ImmutableSetMultimap$Builder;->put(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSetMultimap$Builder;
 
     move-result-object p0
@@ -215,8 +421,16 @@
 
 .method public bridge synthetic put(Ljava/util/Map$Entry;)Lcom/google/common/collect/ImmutableMultimap$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "entry"
+        }
+    .end annotation
 
-    .line 147
+    .line 262
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableSetMultimap$Builder;->put(Ljava/util/Map$Entry;)Lcom/google/common/collect/ImmutableSetMultimap$Builder;
 
     move-result-object p0
@@ -226,6 +440,17 @@
 
 .method public put(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSetMultimap$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV;)",
@@ -234,7 +459,7 @@
         }
     .end annotation
 
-    .line 165
+    .line 312
     invoke-super {p0, p1, p2}, Lcom/google/common/collect/ImmutableMultimap$Builder;->put(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMultimap$Builder;
 
     return-object p0
@@ -242,6 +467,15 @@
 
 .method public put(Ljava/util/Map$Entry;)Lcom/google/common/collect/ImmutableSetMultimap$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "entry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -252,7 +486,7 @@
         }
     .end annotation
 
-    .line 177
+    .line 324
     invoke-super {p0, p1}, Lcom/google/common/collect/ImmutableMultimap$Builder;->put(Ljava/util/Map$Entry;)Lcom/google/common/collect/ImmutableMultimap$Builder;
 
     return-object p0
@@ -260,8 +494,16 @@
 
 .method public bridge synthetic putAll(Lcom/google/common/collect/Multimap;)Lcom/google/common/collect/ImmutableMultimap$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "multimap"
+        }
+    .end annotation
 
-    .line 147
+    .line 262
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableSetMultimap$Builder;->putAll(Lcom/google/common/collect/Multimap;)Lcom/google/common/collect/ImmutableSetMultimap$Builder;
 
     move-result-object p0
@@ -271,8 +513,16 @@
 
 .method public bridge synthetic putAll(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableMultimap$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "entries"
+        }
+    .end annotation
 
-    .line 147
+    .line 262
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableSetMultimap$Builder;->putAll(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableSetMultimap$Builder;
 
     move-result-object p0
@@ -282,8 +532,18 @@
 
 .method public bridge synthetic putAll(Ljava/lang/Object;Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableMultimap$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "key",
+            "values"
+        }
+    .end annotation
 
-    .line 147
+    .line 262
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/ImmutableSetMultimap$Builder;->putAll(Ljava/lang/Object;Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableSetMultimap$Builder;
 
     move-result-object p0
@@ -293,8 +553,18 @@
 
 .method public bridge synthetic putAll(Ljava/lang/Object;[Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMultimap$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "key",
+            "values"
+        }
+    .end annotation
 
-    .line 147
+    .line 262
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/ImmutableSetMultimap$Builder;->putAll(Ljava/lang/Object;[Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSetMultimap$Builder;
 
     move-result-object p0
@@ -304,6 +574,15 @@
 
 .method public putAll(Lcom/google/common/collect/Multimap;)Lcom/google/common/collect/ImmutableSetMultimap$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "multimap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -314,7 +593,7 @@
         }
     .end annotation
 
-    .line 211
+    .line 357
     invoke-interface {p1}, Lcom/google/common/collect/Multimap;->asMap()Ljava/util/Map;
 
     move-result-object p1
@@ -340,7 +619,7 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 212
+    .line 358
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v1
@@ -361,6 +640,15 @@
 
 .method public putAll(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableSetMultimap$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "entries"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -373,7 +661,7 @@
         }
     .end annotation
 
-    .line 190
+    .line 336
     invoke-super {p0, p1}, Lcom/google/common/collect/ImmutableMultimap$Builder;->putAll(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableMultimap$Builder;
 
     return-object p0
@@ -381,6 +669,17 @@
 
 .method public putAll(Ljava/lang/Object;Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableSetMultimap$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "values"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;",
@@ -391,7 +690,7 @@
         }
     .end annotation
 
-    .line 197
+    .line 343
     invoke-super {p0, p1, p2}, Lcom/google/common/collect/ImmutableMultimap$Builder;->putAll(Ljava/lang/Object;Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableMultimap$Builder;
 
     return-object p0
@@ -399,6 +698,17 @@
 
 .method public varargs putAll(Ljava/lang/Object;[Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSetMultimap$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "values"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;[TV;)",
@@ -407,7 +717,7 @@
         }
     .end annotation
 
-    .line 204
+    .line 350
     invoke-static {p2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p2

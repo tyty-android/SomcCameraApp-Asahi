@@ -58,7 +58,7 @@
 
     const/4 v0, 0x3
 
-    .line 315
+    .line 439
     new-array v0, v0, [Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason;
 
     const/4 v1, 0x0
@@ -69,26 +69,26 @@
 
     const/4 v1, 0x1
 
-    .line 316
+    .line 440
     sget-object v2, Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$FinderLongClicked;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$FinderLongClicked;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x2
 
-    .line 317
+    .line 441
     sget-object v2, Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$FinderSwiped;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$FinderSwiped;
 
     aput-object v2, v0, v1
 
-    .line 314
+    .line 438
     invoke-static {v0}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    .line 313
+    .line 437
     invoke-direct {p0, v0, v1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;-><init>(Ljava/util/List;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void

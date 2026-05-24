@@ -6,11 +6,16 @@
 .implements Ljava/util/concurrent/locks/Lock;
 
 
+# annotations
+.annotation runtime Lcom/google/common/util/concurrent/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # direct methods
 .method constructor <init>()V
     .locals 0
 
-    .line 22
+    .line 25
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -24,7 +29,7 @@
 .method public lock()V
     .locals 0
 
-    .line 27
+    .line 30
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingLock;->delegate()Ljava/util/concurrent/locks/Lock;
 
     move-result-object p0
@@ -42,7 +47,7 @@
         }
     .end annotation
 
-    .line 32
+    .line 35
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingLock;->delegate()Ljava/util/concurrent/locks/Lock;
 
     move-result-object p0
@@ -55,7 +60,7 @@
 .method public newCondition()Ljava/util/concurrent/locks/Condition;
     .locals 0
 
-    .line 52
+    .line 55
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingLock;->delegate()Ljava/util/concurrent/locks/Lock;
 
     move-result-object p0
@@ -70,7 +75,7 @@
 .method public tryLock()Z
     .locals 0
 
-    .line 37
+    .line 40
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingLock;->delegate()Ljava/util/concurrent/locks/Lock;
 
     move-result-object p0
@@ -84,13 +89,24 @@
 
 .method public tryLock(JLjava/util/concurrent/TimeUnit;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "time",
+            "unit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
         }
     .end annotation
 
-    .line 42
+    .line 45
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingLock;->delegate()Ljava/util/concurrent/locks/Lock;
 
     move-result-object p0
@@ -105,7 +121,7 @@
 .method public unlock()V
     .locals 0
 
-    .line 47
+    .line 50
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingLock;->delegate()Ljava/util/concurrent/locks/Lock;
 
     move-result-object p0

@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/collect/RegularContiguousSet$SerializedForm;
@@ -39,6 +42,17 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/Range;Lcom/google/common/collect/DiscreteDomain;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "range",
+            "domain"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -49,10 +63,10 @@
         }
     .end annotation
 
-    .line 39
+    .line 44
     invoke-direct {p0, p2}, Lcom/google/common/collect/ContiguousSet;-><init>(Lcom/google/common/collect/DiscreteDomain;)V
 
-    .line 40
+    .line 45
     iput-object p1, p0, Lcom/google/common/collect/RegularContiguousSet;->range:Lcom/google/common/collect/Range;
 
     return-void
@@ -61,7 +75,7 @@
 .method static synthetic access$000(Ljava/lang/Comparable;Ljava/lang/Comparable;)Z
     .locals 0
 
-    .line 35
+    .line 40
     invoke-static {p0, p1}, Lcom/google/common/collect/RegularContiguousSet;->equalsOrThrow(Ljava/lang/Comparable;Ljava/lang/Comparable;)Z
 
     move-result p0
@@ -72,9 +86,20 @@
 .method private static equalsOrThrow(Ljava/lang/Comparable;Ljava/lang/Comparable;)Z
     .locals 0
     .param p1    # Ljava/lang/Comparable;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "left",
+            "right"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -87,7 +112,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 104
+    .line 119
     invoke-static {p0, p1}, Lcom/google/common/collect/Range;->compareOrThrow(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
 
     move-result p0
@@ -107,6 +132,15 @@
 
 .method private intersectionInCurrentDomain(Lcom/google/common/collect/Range;)Lcom/google/common/collect/ContiguousSet;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "other"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -117,7 +151,7 @@
         }
     .end annotation
 
-    .line 44
+    .line 49
     iget-object v0, p0, Lcom/google/common/collect/RegularContiguousSet;->range:Lcom/google/common/collect/Range;
 
     invoke-virtual {v0, p1}, Lcom/google/common/collect/Range;->isConnected(Lcom/google/common/collect/Range;)Z
@@ -126,7 +160,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 45
+    .line 50
     iget-object v0, p0, Lcom/google/common/collect/RegularContiguousSet;->range:Lcom/google/common/collect/Range;
 
     invoke-virtual {v0, p1}, Lcom/google/common/collect/Range;->intersection(Lcom/google/common/collect/Range;)Lcom/google/common/collect/Range;
@@ -141,7 +175,7 @@
 
     goto :goto_0
 
-    .line 46
+    .line 51
     :cond_0
     new-instance p1, Lcom/google/common/collect/EmptyContiguousSet;
 
@@ -155,14 +189,49 @@
     return-object p0
 .end method
 
+.method private readObject(Ljava/io/ObjectInputStream;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stream"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/InvalidObjectException;
+        }
+    .end annotation
+
+    .line 271
+    new-instance p0, Ljava/io/InvalidObjectException;
+
+    const-string p1, "Use SerializedForm"
+
+    invoke-direct {p0, p1}, Ljava/io/InvalidObjectException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
 
 # virtual methods
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -170,12 +239,13 @@
 
     return v0
 
-    .line 154
+    .line 181
     :cond_0
     :try_start_0
-    iget-object p0, p0, Lcom/google/common/collect/RegularContiguousSet;->range:Lcom/google/common/collect/Range;
-
     check-cast p1, Ljava/lang/Comparable;
+
+    .line 182
+    iget-object p0, p0, Lcom/google/common/collect/RegularContiguousSet;->range:Lcom/google/common/collect/Range;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Range;->contains(Ljava/lang/Comparable;)Z
 
@@ -191,6 +261,15 @@
 
 .method public containsAll(Ljava/util/Collection;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "targets"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -199,7 +278,7 @@
         }
     .end annotation
 
-    .line 162
+    .line 190
     invoke-static {p0, p1}, Lcom/google/common/collect/Collections2;->containsAllImpl(Ljava/util/Collection;Ljava/util/Collection;)Z
 
     move-result p0
@@ -217,21 +296,21 @@
         }
     .end annotation
 
-    .line 124
+    .line 141
     iget-object v0, p0, Lcom/google/common/collect/RegularContiguousSet;->domain:Lcom/google/common/collect/DiscreteDomain;
 
     iget-boolean v0, v0, Lcom/google/common/collect/DiscreteDomain;->supportsFastOffset:Z
 
     if-eqz v0, :cond_0
 
-    .line 125
+    .line 142
     new-instance v0, Lcom/google/common/collect/RegularContiguousSet$3;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/RegularContiguousSet$3;-><init>(Lcom/google/common/collect/RegularContiguousSet;)V
 
     return-object v0
 
-    .line 138
+    .line 164
     :cond_0
     invoke-super {p0}, Lcom/google/common/collect/ContiguousSet;->createAsList()Lcom/google/common/collect/ImmutableList;
 
@@ -250,7 +329,7 @@
         }
     .end annotation
 
-    .line 93
+    .line 107
     new-instance v0, Lcom/google/common/collect/RegularContiguousSet$2;
 
     invoke-virtual {p0}, Lcom/google/common/collect/RegularContiguousSet;->last()Ljava/lang/Comparable;
@@ -265,7 +344,7 @@
 .method public bridge synthetic descendingIterator()Ljava/util/Iterator;
     .locals 0
 
-    .line 33
+    .line 37
     invoke-virtual {p0}, Lcom/google/common/collect/RegularContiguousSet;->descendingIterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p0
@@ -276,9 +355,17 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -286,18 +373,18 @@
 
     return v0
 
-    .line 201
+    .line 230
     :cond_0
     instance-of v1, p1, Lcom/google/common/collect/RegularContiguousSet;
 
     if-eqz v1, :cond_2
 
-    .line 202
+    .line 231
     move-object v1, p1
 
     check-cast v1, Lcom/google/common/collect/RegularContiguousSet;
 
-    .line 203
+    .line 232
     iget-object v2, p0, Lcom/google/common/collect/RegularContiguousSet;->domain:Lcom/google/common/collect/DiscreteDomain;
 
     iget-object v3, v1, Lcom/google/common/collect/RegularContiguousSet;->domain:Lcom/google/common/collect/DiscreteDomain;
@@ -308,7 +395,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 204
+    .line 233
     invoke-virtual {p0}, Lcom/google/common/collect/RegularContiguousSet;->first()Ljava/lang/Comparable;
 
     move-result-object p1
@@ -317,7 +404,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p1, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    invoke-interface {p1, v2}, Ljava/lang/Comparable;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -331,7 +418,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    invoke-interface {p0, p1}, Ljava/lang/Comparable;->equals(Ljava/lang/Object;)Z
 
     move-result p0
 
@@ -345,7 +432,7 @@
     :goto_0
     return v0
 
-    .line 207
+    .line 236
     :cond_2
     invoke-super {p0, p1}, Lcom/google/common/collect/ContiguousSet;->equals(Ljava/lang/Object;)Z
 
@@ -362,7 +449,7 @@
         }
     .end annotation
 
-    .line 114
+    .line 130
     iget-object v0, p0, Lcom/google/common/collect/RegularContiguousSet;->range:Lcom/google/common/collect/Range;
 
     iget-object v0, v0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
@@ -373,13 +460,19 @@
 
     move-result-object p0
 
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Comparable;
+
     return-object p0
 .end method
 
 .method public bridge synthetic first()Ljava/lang/Object;
     .locals 0
 
-    .line 33
+    .line 37
     invoke-virtual {p0}, Lcom/google/common/collect/RegularContiguousSet;->first()Ljava/lang/Comparable;
 
     move-result-object p0
@@ -390,7 +483,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 213
+    .line 242
     invoke-static {p0}, Lcom/google/common/collect/Sets;->hashCodeImpl(Ljava/util/Set;)I
 
     move-result p0
@@ -400,6 +493,17 @@
 
 .method headSetImpl(Ljava/lang/Comparable;Z)Lcom/google/common/collect/ContiguousSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "toElement",
+            "inclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TC;Z)",
@@ -408,7 +512,7 @@
         }
     .end annotation
 
-    .line 51
+    .line 56
     invoke-static {p2}, Lcom/google/common/collect/BoundType;->forBoolean(Z)Lcom/google/common/collect/BoundType;
 
     move-result-object p2
@@ -426,8 +530,18 @@
 
 .method bridge synthetic headSetImpl(Ljava/lang/Object;Z)Lcom/google/common/collect/ImmutableSortedSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "toElement",
+            "inclusive"
+        }
+    .end annotation
 
-    .line 33
+    .line 37
     check-cast p1, Ljava/lang/Comparable;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/RegularContiguousSet;->headSetImpl(Ljava/lang/Comparable;Z)Lcom/google/common/collect/ContiguousSet;
@@ -439,21 +553,44 @@
 
 .method indexOf(Ljava/lang/Object;)I
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "target"
+        }
+    .end annotation
 
-    .line 75
+    .line 81
     invoke-virtual {p0, p1}, Lcom/google/common/collect/RegularContiguousSet;->contains(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-nez v0, :cond_0
 
+    const/4 p0, -0x1
+
+    return p0
+
+    .line 87
+    :cond_0
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Comparable;
+
+    .line 88
     iget-object v0, p0, Lcom/google/common/collect/RegularContiguousSet;->domain:Lcom/google/common/collect/DiscreteDomain;
 
     invoke-virtual {p0}, Lcom/google/common/collect/RegularContiguousSet;->first()Ljava/lang/Comparable;
 
     move-result-object p0
-
-    check-cast p1, Ljava/lang/Comparable;
 
     invoke-virtual {v0, p0, p1}, Lcom/google/common/collect/DiscreteDomain;->distance(Ljava/lang/Comparable;Ljava/lang/Comparable;)J
 
@@ -461,17 +598,20 @@
 
     long-to-int p0, p0
 
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, -0x1
-
-    :goto_0
     return p0
 .end method
 
 .method public intersection(Lcom/google/common/collect/ContiguousSet;)Lcom/google/common/collect/ContiguousSet;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "other"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -482,10 +622,10 @@
         }
     .end annotation
 
-    .line 172
+    .line 201
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 173
+    .line 202
     iget-object v0, p0, Lcom/google/common/collect/RegularContiguousSet;->domain:Lcom/google/common/collect/DiscreteDomain;
 
     iget-object v1, p1, Lcom/google/common/collect/ContiguousSet;->domain:Lcom/google/common/collect/DiscreteDomain;
@@ -496,7 +636,7 @@
 
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 174
+    .line 203
     invoke-virtual {p1}, Lcom/google/common/collect/ContiguousSet;->isEmpty()Z
 
     move-result v0
@@ -505,7 +645,7 @@
 
     return-object p1
 
-    .line 177
+    .line 206
     :cond_0
     invoke-static {}, Lcom/google/common/collect/Ordering;->natural()Lcom/google/common/collect/Ordering;
 
@@ -519,13 +659,15 @@
 
     move-result-object v2
 
+    check-cast v2, Ljava/lang/Comparable;
+
     invoke-virtual {v0, v1, v2}, Lcom/google/common/collect/Ordering;->max(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/Comparable;
 
-    .line 178
+    .line 207
     invoke-static {}, Lcom/google/common/collect/Ordering;->natural()Lcom/google/common/collect/Ordering;
 
     move-result-object v1
@@ -538,20 +680,22 @@
 
     move-result-object p1
 
+    check-cast p1, Ljava/lang/Comparable;
+
     invoke-virtual {v1, v2, p1}, Lcom/google/common/collect/Ordering;->min(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, Ljava/lang/Comparable;
 
-    .line 179
+    .line 208
     invoke-interface {v0, p1}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
 
     move-result v1
 
     if-gtz v1, :cond_1
 
-    .line 180
+    .line 209
     invoke-static {v0, p1}, Lcom/google/common/collect/Range;->closed(Ljava/lang/Comparable;Ljava/lang/Comparable;)Lcom/google/common/collect/Range;
 
     move-result-object p1
@@ -564,7 +708,7 @@
 
     goto :goto_0
 
-    .line 181
+    .line 210
     :cond_1
     new-instance p1, Lcom/google/common/collect/EmptyContiguousSet;
 
@@ -604,7 +748,7 @@
         }
     .end annotation
 
-    .line 80
+    .line 93
     new-instance v0, Lcom/google/common/collect/RegularContiguousSet$1;
 
     invoke-virtual {p0}, Lcom/google/common/collect/RegularContiguousSet;->first()Ljava/lang/Comparable;
@@ -619,7 +763,7 @@
 .method public bridge synthetic iterator()Ljava/util/Iterator;
     .locals 0
 
-    .line 33
+    .line 37
     invoke-virtual {p0}, Lcom/google/common/collect/RegularContiguousSet;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p0
@@ -635,7 +779,7 @@
         }
     .end annotation
 
-    .line 119
+    .line 136
     iget-object v0, p0, Lcom/google/common/collect/RegularContiguousSet;->range:Lcom/google/common/collect/Range;
 
     iget-object v0, v0, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
@@ -646,13 +790,19 @@
 
     move-result-object p0
 
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Comparable;
+
     return-object p0
 .end method
 
 .method public bridge synthetic last()Ljava/lang/Object;
     .locals 0
 
-    .line 33
+    .line 37
     invoke-virtual {p0}, Lcom/google/common/collect/RegularContiguousSet;->last()Ljava/lang/Comparable;
 
     move-result-object p0
@@ -670,7 +820,7 @@
         }
     .end annotation
 
-    .line 187
+    .line 216
     sget-object v0, Lcom/google/common/collect/BoundType;->CLOSED:Lcom/google/common/collect/BoundType;
 
     sget-object v1, Lcom/google/common/collect/BoundType;->CLOSED:Lcom/google/common/collect/BoundType;
@@ -684,6 +834,17 @@
 
 .method public range(Lcom/google/common/collect/BoundType;Lcom/google/common/collect/BoundType;)Lcom/google/common/collect/Range;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "lowerBoundType",
+            "upperBoundType"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -695,14 +856,14 @@
         }
     .end annotation
 
-    .line 192
+    .line 221
     iget-object v0, p0, Lcom/google/common/collect/RegularContiguousSet;->range:Lcom/google/common/collect/Range;
 
     iget-object v0, v0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     iget-object v1, p0, Lcom/google/common/collect/RegularContiguousSet;->domain:Lcom/google/common/collect/DiscreteDomain;
 
-    .line 193
+    .line 222
     invoke-virtual {v0, p1, v1}, Lcom/google/common/collect/Cut;->withLowerBoundType(Lcom/google/common/collect/BoundType;Lcom/google/common/collect/DiscreteDomain;)Lcom/google/common/collect/Cut;
 
     move-result-object p1
@@ -713,12 +874,12 @@
 
     iget-object p0, p0, Lcom/google/common/collect/RegularContiguousSet;->domain:Lcom/google/common/collect/DiscreteDomain;
 
-    .line 194
+    .line 223
     invoke-virtual {v0, p2, p0}, Lcom/google/common/collect/Cut;->withUpperBoundType(Lcom/google/common/collect/BoundType;Lcom/google/common/collect/DiscreteDomain;)Lcom/google/common/collect/Cut;
 
     move-result-object p0
 
-    .line 192
+    .line 221
     invoke-static {p1, p0}, Lcom/google/common/collect/Range;->create(Lcom/google/common/collect/Cut;Lcom/google/common/collect/Cut;)Lcom/google/common/collect/Range;
 
     move-result-object p0
@@ -729,7 +890,7 @@
 .method public size()I
     .locals 4
 
-    .line 144
+    .line 170
     iget-object v0, p0, Lcom/google/common/collect/RegularContiguousSet;->domain:Lcom/google/common/collect/DiscreteDomain;
 
     invoke-virtual {p0}, Lcom/google/common/collect/RegularContiguousSet;->first()Ljava/lang/Comparable;
@@ -765,6 +926,21 @@
 
 .method subSetImpl(Ljava/lang/Comparable;ZLjava/lang/Comparable;Z)Lcom/google/common/collect/ContiguousSet;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "fromElement",
+            "fromInclusive",
+            "toElement",
+            "toInclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TC;ZTC;Z)",
@@ -773,7 +949,7 @@
         }
     .end annotation
 
-    .line 57
+    .line 63
     invoke-interface {p1, p3}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
 
     move-result v0
@@ -784,7 +960,7 @@
 
     if-nez p4, :cond_0
 
-    .line 59
+    .line 65
     new-instance p1, Lcom/google/common/collect/EmptyContiguousSet;
 
     iget-object p0, p0, Lcom/google/common/collect/RegularContiguousSet;->domain:Lcom/google/common/collect/DiscreteDomain;
@@ -793,23 +969,23 @@
 
     return-object p1
 
-    .line 63
+    .line 69
     :cond_0
     invoke-static {p2}, Lcom/google/common/collect/BoundType;->forBoolean(Z)Lcom/google/common/collect/BoundType;
 
     move-result-object p2
 
-    .line 64
+    .line 70
     invoke-static {p4}, Lcom/google/common/collect/BoundType;->forBoolean(Z)Lcom/google/common/collect/BoundType;
 
     move-result-object p4
 
-    .line 62
+    .line 68
     invoke-static {p1, p2, p3, p4}, Lcom/google/common/collect/Range;->range(Ljava/lang/Comparable;Lcom/google/common/collect/BoundType;Ljava/lang/Comparable;Lcom/google/common/collect/BoundType;)Lcom/google/common/collect/Range;
 
     move-result-object p1
 
-    .line 61
+    .line 67
     invoke-direct {p0, p1}, Lcom/google/common/collect/RegularContiguousSet;->intersectionInCurrentDomain(Lcom/google/common/collect/Range;)Lcom/google/common/collect/ContiguousSet;
 
     move-result-object p0
@@ -819,8 +995,22 @@
 
 .method bridge synthetic subSetImpl(Ljava/lang/Object;ZLjava/lang/Object;Z)Lcom/google/common/collect/ImmutableSortedSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x1000,
+            0x1000
+        }
+        names = {
+            "fromElement",
+            "fromInclusive",
+            "toElement",
+            "toInclusive"
+        }
+    .end annotation
 
-    .line 33
+    .line 37
     check-cast p1, Ljava/lang/Comparable;
 
     check-cast p3, Ljava/lang/Comparable;
@@ -834,6 +1024,17 @@
 
 .method tailSetImpl(Ljava/lang/Comparable;Z)Lcom/google/common/collect/ContiguousSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromElement",
+            "inclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TC;Z)",
@@ -842,7 +1043,7 @@
         }
     .end annotation
 
-    .line 69
+    .line 75
     invoke-static {p2}, Lcom/google/common/collect/BoundType;->forBoolean(Z)Lcom/google/common/collect/BoundType;
 
     move-result-object p2
@@ -860,8 +1061,18 @@
 
 .method bridge synthetic tailSetImpl(Ljava/lang/Object;Z)Lcom/google/common/collect/ImmutableSortedSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "fromElement",
+            "inclusive"
+        }
+    .end annotation
 
-    .line 33
+    .line 37
     check-cast p1, Ljava/lang/Comparable;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/RegularContiguousSet;->tailSetImpl(Ljava/lang/Comparable;Z)Lcom/google/common/collect/ContiguousSet;
@@ -874,7 +1085,7 @@
 .method writeReplace()Ljava/lang/Object;
     .locals 3
 
-    .line 234
+    .line 265
     new-instance v0, Lcom/google/common/collect/RegularContiguousSet$SerializedForm;
 
     iget-object v1, p0, Lcom/google/common/collect/RegularContiguousSet;->range:Lcom/google/common/collect/Range;

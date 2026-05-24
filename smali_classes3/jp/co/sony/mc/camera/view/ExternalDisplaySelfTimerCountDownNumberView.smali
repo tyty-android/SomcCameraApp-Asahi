@@ -98,7 +98,7 @@
     .line 27
     iget-boolean v1, p0, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->mIsTenDigit:Z
 
-    const v4, 0x7f07033f
+    const v4, 0x7f0702e8
 
     if-eqz v1, :cond_0
 
@@ -193,15 +193,15 @@
 
     const-string v1, "]"
 
-    const-string v4, "setImage() [Irregal Value = "
+    const-string/jumbo v4, "setImage() [Irregal Value = "
 
-    const-string v5, "setImage() : mCurrentCount = "
+    const-string/jumbo v5, "setImage() : mCurrentCount = "
 
-    const v6, 0x7f08038a
+    const v6, 0x7f080410
 
-    const v7, 0x7f080389
+    const v7, 0x7f08040f
 
-    const v8, 0x7f080388
+    const v8, 0x7f08040e
 
     const/4 v9, 0x1
 
@@ -351,7 +351,7 @@
     goto :goto_1
 
     :pswitch_0
-    const v0, 0x7f080390
+    const v0, 0x7f080416
 
     .line 68
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/ExternalDisplaySelfTimerCountDownNumberView;->setImageResource(I)V
@@ -359,7 +359,7 @@
     goto :goto_1
 
     :pswitch_1
-    const v0, 0x7f08038f
+    const v0, 0x7f080415
 
     .line 69
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/ExternalDisplaySelfTimerCountDownNumberView;->setImageResource(I)V
@@ -367,7 +367,7 @@
     goto :goto_1
 
     :pswitch_2
-    const v0, 0x7f08038e
+    const v0, 0x7f080414
 
     .line 70
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/ExternalDisplaySelfTimerCountDownNumberView;->setImageResource(I)V
@@ -375,7 +375,7 @@
     goto :goto_1
 
     :pswitch_3
-    const v0, 0x7f08038d
+    const v0, 0x7f080413
 
     .line 71
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/ExternalDisplaySelfTimerCountDownNumberView;->setImageResource(I)V
@@ -383,7 +383,7 @@
     goto :goto_1
 
     :pswitch_4
-    const v0, 0x7f08038c
+    const v0, 0x7f080412
 
     .line 72
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/ExternalDisplaySelfTimerCountDownNumberView;->setImageResource(I)V
@@ -391,7 +391,7 @@
     goto :goto_1
 
     :pswitch_5
-    const v0, 0x7f08038b
+    const v0, 0x7f080411
 
     .line 73
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/ExternalDisplaySelfTimerCountDownNumberView;->setImageResource(I)V
@@ -422,7 +422,7 @@
 
     if-le v0, v3, :cond_b
 
-    const v0, 0x7f080387
+    const v0, 0x7f08040d
 
     .line 79
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/ExternalDisplaySelfTimerCountDownNumberView;->setImageResource(I)V

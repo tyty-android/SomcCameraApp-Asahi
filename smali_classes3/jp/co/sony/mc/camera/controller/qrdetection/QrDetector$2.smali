@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/controller/qrdetection/QrDetector;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 130
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/qrdetection/QrDetector$2;->this$0:Ljp/co/sony/mc/camera/controller/qrdetection/QrDetector;
@@ -37,6 +45,18 @@
 # virtual methods
 .method public onReceived(Ljava/nio/ByteBuffer;ILandroid/graphics/Rect;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "byteBuffer",
+            "imageFormat",
+            "size"
+        }
+    .end annotation
 
     .line 134
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/qrdetection/QrDetector$2;->this$0:Ljp/co/sony/mc/camera/controller/qrdetection/QrDetector;

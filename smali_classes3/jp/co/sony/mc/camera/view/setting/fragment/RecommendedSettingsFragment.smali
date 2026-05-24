@@ -150,7 +150,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 34
+    .line 33
     invoke-direct {p0}, Landroidx/fragment/app/Fragment;-><init>()V
 
     return-void
@@ -159,7 +159,7 @@
 .method private final dismissDialog()V
     .locals 1
 
-    .line 131
+    .line 124
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object p0
@@ -168,12 +168,12 @@
 
     move-result-object p0
 
-    .line 133
+    .line 126
     const-class v0, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;
 
     const-string v0, "SettingMessageDialogFragment"
 
-    .line 132
+    .line 125
     invoke-virtual {p0, v0}, Landroidx/fragment/app/FragmentManager;->findFragmentByTag(Ljava/lang/String;)Landroidx/fragment/app/Fragment;
 
     move-result-object p0
@@ -182,14 +182,14 @@
 
     if-eqz p0, :cond_0
 
-    .line 134
+    .line 127
     invoke-virtual {p0}, Landroidx/fragment/app/DialogFragment;->getShowsDialog()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 135
+    .line 128
     invoke-virtual {p0}, Landroidx/fragment/app/DialogFragment;->dismiss()V
 
     :cond_0
@@ -199,137 +199,97 @@
 .method private final getMainDescription()Ljava/lang/String;
     .locals 4
 
-    .line 163
+    .line 156
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v1, 0x7f110376
+    const v1, 0x7f1103c1
 
-    .line 164
+    .line 157
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 165
+    .line 158
     const-string v1, "\n\n"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const v2, 0x7f11038a
+    const v2, 0x7f1103d5
 
-    .line 166
+    .line 159
     invoke-virtual {p0, v2}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 167
+    .line 160
     const-string v2, "\n- "
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const v3, 0x7f110381
+    const v3, 0x7f1103cc
+
+    .line 161
+    invoke-virtual {p0, v3}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 162
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const v3, 0x7f1103c7
+
+    .line 163
+    invoke-virtual {p0, v3}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 164
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const v3, 0x7f1103c6
+
+    .line 165
+    invoke-virtual {p0, v3}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 166
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const v1, 0x7f1103d4
+
+    .line 167
+    invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 168
-    invoke-virtual {p0, v3}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v3
-
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const v1, 0x7f1103c9
 
     .line 169
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const v3, 0x7f11037c
-
-    .line 170
-    invoke-virtual {p0, v3}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->getString(I)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 171
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const v3, 0x7f11037b
-
-    .line 172
-    invoke-virtual {p0, v3}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->getString(I)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 173
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const v1, 0x7f110389
-
-    .line 174
-    invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 175
-    invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isStreaming()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    .line 176
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const v1, 0x7f110380
-
-    .line 177
-    invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 179
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const v1, 0x7f110382
-
-    .line 180
-    invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 183
-    :cond_0
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const v1, 0x7f11037e
-
-    .line 184
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->getString(I)Ljava/lang/String;
 
     move-result-object p0
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 185
+    .line 170
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -344,7 +304,7 @@
 .method private final getRecommendedSettingsViewModel()Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;
     .locals 1
 
-    .line 39
+    .line 38
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object p0
@@ -359,10 +319,10 @@
 
     move-result-object p0
 
-    .line 40
+    .line 39
     const-class v0, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;
 
-    .line 39
+    .line 38
     invoke-virtual {p0, v0}, Landroidx/lifecycle/ViewModelProvider;->get(Ljava/lang/Class;)Landroidx/lifecycle/ViewModel;
 
     move-result-object p0
@@ -375,7 +335,7 @@
 .method private final isDialogShowing()Z
     .locals 1
 
-    .line 121
+    .line 114
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object p0
@@ -384,12 +344,12 @@
 
     move-result-object p0
 
-    .line 122
+    .line 115
     const-class v0, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;
 
     const-string v0, "SettingMessageDialogFragment"
 
-    .line 121
+    .line 114
     invoke-virtual {p0, v0}, Landroidx/fragment/app/FragmentManager;->findFragmentByTag(Ljava/lang/String;)Landroidx/fragment/app/Fragment;
 
     move-result-object p0
@@ -398,7 +358,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 124
+    .line 117
     invoke-virtual {p0}, Landroidx/fragment/app/DialogFragment;->getShowsDialog()Z
 
     move-result p0
@@ -423,14 +383,14 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 65
+    .line 58
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->getRecommendedSettingsViewModel()Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;
 
     move-result-object p0
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->setChecked(I)V
 
-    .line 66
+    .line 59
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
@@ -443,7 +403,7 @@
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 71
+    .line 64
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->getRecommendedSettingsViewModel()Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;
 
     move-result-object p1
@@ -454,14 +414,14 @@
 
     if-nez p1, :cond_0
 
-    .line 72
+    .line 65
     sget-object p1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RECOMMENDED_SETTINGS_NOTHING_TO_CHANGE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->showDialog(Ljp/co/sony/mc/camera/view/messagedialog/DialogId;)V
 
     goto :goto_0
 
-    .line 73
+    .line 66
     :cond_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->getRecommendedSettingsViewModel()Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;
 
@@ -485,7 +445,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 74
+    .line 67
     sget-object p1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RECOMMENDED_SETTINGS:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->showDialog(Ljp/co/sony/mc/camera/view/messagedialog/DialogId;)V
@@ -502,7 +462,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 80
+    .line 73
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->binding:Ljp/co/sony/mc/camera/databinding/FragmentRecommendedSettingsBinding;
 
     if-nez p0, :cond_0
@@ -522,7 +482,7 @@
 
     invoke-virtual {p0, p1}, Landroid/widget/TextView;->setEnabled(Z)V
 
-    .line 81
+    .line 74
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
@@ -535,7 +495,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 84
+    .line 77
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->binding:Ljp/co/sony/mc/camera/databinding/FragmentRecommendedSettingsBinding;
 
     if-nez p0, :cond_0
@@ -559,13 +519,13 @@
 
     check-cast p0, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$RecommendedSettingsAdapter;
 
-    .line 85
+    .line 78
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$RecommendedSettingsAdapter;->setDataList(Ljava/util/List;)V
 
-    .line 86
+    .line 79
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$RecommendedSettingsAdapter;->notifyDataSetChanged()V
 
-    .line 88
+    .line 81
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
@@ -578,14 +538,14 @@
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 91
+    .line 84
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    .line 92
+    .line 85
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object p0
@@ -601,7 +561,7 @@
 .method private final showDialog(Ljp/co/sony/mc/camera/view/messagedialog/DialogId;)V
     .locals 2
 
-    .line 106
+    .line 99
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->isDialogShowing()Z
 
     move-result v0
@@ -610,23 +570,23 @@
 
     return-void
 
-    .line 110
+    .line 103
     :cond_0
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;-><init>()V
 
-    .line 111
+    .line 104
     iput-object p1, v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     const/4 p1, 0x1
 
-    .line 112
+    .line 105
     invoke-static {v0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;->newInstance(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;Z)Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;
 
     move-result-object p1
 
-    .line 113
+    .line 106
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object p0
@@ -639,7 +599,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 114
+    .line 107
     invoke-virtual {p0}, Landroidx/fragment/app/FragmentManager;->beginTransaction()Landroidx/fragment/app/FragmentTransaction;
 
     move-result-object v0
@@ -648,7 +608,7 @@
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 115
+    .line 108
     check-cast p1, Landroidx/fragment/app/Fragment;
 
     const-class v1, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;
@@ -657,10 +617,10 @@
 
     invoke-virtual {v0, p1, v1}, Landroidx/fragment/app/FragmentTransaction;->add(Landroidx/fragment/app/Fragment;Ljava/lang/String;)Landroidx/fragment/app/FragmentTransaction;
 
-    .line 116
+    .line 109
     invoke-virtual {v0}, Landroidx/fragment/app/FragmentTransaction;->commitAllowingStateLoss()I
 
-    .line 117
+    .line 110
     invoke-virtual {p0}, Landroidx/fragment/app/FragmentManager;->executePendingTransactions()Z
 
     return-void
@@ -677,14 +637,14 @@
 
     const/4 p3, 0x0
 
-    .line 45
+    .line 44
     invoke-static {p1, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentRecommendedSettingsBinding;->inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Ljp/co/sony/mc/camera/databinding/FragmentRecommendedSettingsBinding;
 
     move-result-object p1
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->binding:Ljp/co/sony/mc/camera/databinding/FragmentRecommendedSettingsBinding;
 
-    .line 46
+    .line 45
     const-string p2, "binding"
 
     const/4 v0, 0x0
@@ -698,7 +658,7 @@
     :cond_0
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentRecommendedSettingsBinding;->titleBarLayout:Landroid/view/View;
 
-    const v1, 0x7f0904a9
+    const v1, 0x7f0904aa
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -706,29 +666,14 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    .line 47
-    invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
+    .line 46
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->getContext()Landroid/content/Context;
 
     move-result-object v1
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isStreaming()Z
-
-    move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 48
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_2
-
-    const v2, 0x7f110456
+    const v2, 0x7f1103d6
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -736,32 +681,36 @@
 
     goto :goto_0
 
-    .line 52
     :cond_1
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_2
-
-    const v2, 0x7f11038b
-
-    invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    goto :goto_0
-
-    :cond_2
     move-object v1, v0
 
     :goto_0
     check-cast v1, Ljava/lang/CharSequence;
 
-    .line 46
+    .line 45
     invoke-virtual {p1, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 54
+    .line 47
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->binding:Ljp/co/sony/mc/camera/databinding/FragmentRecommendedSettingsBinding;
+
+    if-nez p1, :cond_2
+
+    invoke-static {p2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    move-object p1, v0
+
+    :cond_2
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentRecommendedSettingsBinding;->mainDescription:Landroid/widget/TextView;
+
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->getMainDescription()Ljava/lang/String;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/CharSequence;
+
+    invoke-virtual {p1, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 48
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->binding:Ljp/co/sony/mc/camera/databinding/FragmentRecommendedSettingsBinding;
 
     if-nez p1, :cond_3
@@ -773,15 +722,15 @@
     :cond_3
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentRecommendedSettingsBinding;->mainDescription:Landroid/widget/TextView;
 
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->getMainDescription()Ljava/lang/String;
+    new-instance v1, Landroid/text/method/ScrollingMovementMethod;
 
-    move-result-object v1
+    invoke-direct {v1}, Landroid/text/method/ScrollingMovementMethod;-><init>()V
 
-    check-cast v1, Ljava/lang/CharSequence;
+    check-cast v1, Landroid/text/method/MovementMethod;
 
-    invoke-virtual {p1, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {p1, v1}, Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V
 
-    .line 55
+    .line 49
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->binding:Ljp/co/sony/mc/camera/databinding/FragmentRecommendedSettingsBinding;
 
     if-nez p1, :cond_4
@@ -791,29 +740,9 @@
     move-object p1, v0
 
     :cond_4
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentRecommendedSettingsBinding;->mainDescription:Landroid/widget/TextView;
-
-    new-instance v1, Landroid/text/method/ScrollingMovementMethod;
-
-    invoke-direct {v1}, Landroid/text/method/ScrollingMovementMethod;-><init>()V
-
-    check-cast v1, Landroid/text/method/MovementMethod;
-
-    invoke-virtual {p1, v1}, Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V
-
-    .line 56
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->binding:Ljp/co/sony/mc/camera/databinding/FragmentRecommendedSettingsBinding;
-
-    if-nez p1, :cond_5
-
-    invoke-static {p2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
-
-    move-object p1, v0
-
-    :cond_5
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentRecommendedSettingsBinding;->subDescription:Landroid/widget/TextView;
 
-    .line 57
+    .line 50
     new-instance v1, Landroid/text/method/ScrollingMovementMethod;
 
     invoke-direct {v1}, Landroid/text/method/ScrollingMovementMethod;-><init>()V
@@ -822,14 +751,14 @@
 
     invoke-virtual {p1, v1}, Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V
 
-    .line 58
+    .line 51
     sget-object v1, Lkotlin/jvm/internal/StringCompanionObject;->INSTANCE:Lkotlin/jvm/internal/StringCompanionObject;
 
     invoke-virtual {p1}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    const v2, 0x7f110377
+    const v2, 0x7f1103c2
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -839,12 +768,12 @@
 
     invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 60
+    .line 53
     invoke-virtual {p1}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
-    const v3, 0x7f110375
+    const v3, 0x7f1103c0
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -856,7 +785,7 @@
 
     const/4 v3, 0x1
 
-    .line 58
+    .line 51
     invoke-static {v2, v3}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
     move-result-object v2
@@ -873,19 +802,19 @@
 
     invoke-virtual {p1, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 62
+    .line 55
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->binding:Ljp/co/sony/mc/camera/databinding/FragmentRecommendedSettingsBinding;
 
-    if-nez p1, :cond_6
+    if-nez p1, :cond_5
 
     invoke-static {p2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
     move-object p1, v0
 
-    :cond_6
+    :cond_5
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentRecommendedSettingsBinding;->recommendedSettingsList:Landroidx/recyclerview/widget/RecyclerView;
 
-    .line 63
+    .line 56
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->getItemAnimator()Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;
 
     move-result-object v1
@@ -898,7 +827,7 @@
 
     invoke-virtual {v1, p3}, Landroidx/recyclerview/widget/SimpleItemAnimator;->setSupportsChangeAnimations(Z)V
 
-    .line 64
+    .line 57
     new-instance p3, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$RecommendedSettingsAdapter;
 
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->getContext()Landroid/content/Context;
@@ -919,29 +848,29 @@
 
     invoke-virtual {p1, p3}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$Adapter;)V
 
-    .line 68
+    .line 61
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->binding:Ljp/co/sony/mc/camera/databinding/FragmentRecommendedSettingsBinding;
 
-    if-nez p1, :cond_7
+    if-nez p1, :cond_6
 
     invoke-static {p2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
     move-object p1, v0
 
-    :cond_7
+    :cond_6
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentRecommendedSettingsBinding;->confirm:Landroid/widget/TextView;
 
-    .line 69
+    .line 62
     invoke-virtual {p1, v3}, Landroid/widget/TextView;->setAllowClickWhenDisabled(Z)V
 
-    .line 70
+    .line 63
     new-instance p3, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$$ExternalSyntheticLambda1;
 
     invoke-direct {p3, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$$ExternalSyntheticLambda1;-><init>(Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;)V
 
     invoke-virtual {p1, p3}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 79
+    .line 72
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->getRecommendedSettingsViewModel()Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;
 
     move-result-object p1
@@ -966,7 +895,7 @@
 
     invoke-virtual {p1, p3, v2}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
-    .line 83
+    .line 76
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->getRecommendedSettingsViewModel()Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;
 
     move-result-object p1
@@ -991,19 +920,19 @@
 
     invoke-virtual {p1, p3, v2}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
-    .line 90
+    .line 83
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->binding:Ljp/co/sony/mc/camera/databinding/FragmentRecommendedSettingsBinding;
 
-    if-nez p1, :cond_8
+    if-nez p1, :cond_7
 
     invoke-static {p2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
     move-object p1, v0
 
-    :cond_8
+    :cond_7
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentRecommendedSettingsBinding;->titleBarLayout:Landroid/view/View;
 
-    const p3, 0x7f0900a3
+    const p3, 0x7f0900ab
 
     invoke-virtual {p1, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1017,16 +946,16 @@
 
     invoke-virtual {p1, p3}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 95
+    .line 88
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->binding:Ljp/co/sony/mc/camera/databinding/FragmentRecommendedSettingsBinding;
 
-    if-nez p0, :cond_9
+    if-nez p0, :cond_8
 
     invoke-static {p2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
     goto :goto_1
 
-    :cond_9
+    :cond_8
     move-object v0, p0
 
     :goto_1
@@ -1042,7 +971,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 148
+    .line 141
     iget-object p1, p1, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     goto :goto_0
@@ -1075,7 +1004,7 @@
 
     if-ne p2, v0, :cond_2
 
-    .line 151
+    .line 144
     new-instance p1, Ljp/co/sony/mc/camera/idd/event/IddApplyRecommendedSettingsEvent;
 
     const/16 v11, 0xff
@@ -1102,7 +1031,7 @@
 
     invoke-direct/range {v2 .. v12}, Ljp/co/sony/mc/camera/idd/event/IddApplyRecommendedSettingsEvent;-><init>(Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddLauncher;Ljp/co/sony/mc/camera/idd/value/IddMode;Ljp/co/sony/mc/camera/idd/value/IddRecommendedMenu$ItemStatus;Ljp/co/sony/mc/camera/idd/value/IddRecommendedMenu$ItemStatus;Ljp/co/sony/mc/camera/idd/value/IddRecommendedMenu$ItemStatus;Ljp/co/sony/mc/camera/idd/value/IddRecommendedMenu$ItemStatus;Ljp/co/sony/mc/camera/idd/value/IddRecommendedMenu$ItemStatus;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 152
+    .line 145
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->getRecommendedSettingsViewModel()Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;
 
     move-result-object p2
@@ -1111,15 +1040,15 @@
 
     move-result-object p2
 
-    .line 151
+    .line 144
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/idd/event/IddApplyRecommendedSettingsEvent;->setting(Landroidx/lifecycle/LiveData;)Ljp/co/sony/mc/camera/idd/event/IddApplyRecommendedSettingsEvent;
 
     move-result-object p1
 
-    .line 152
+    .line 145
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/idd/event/IddApplyRecommendedSettingsEvent;->send()V
 
-    .line 153
+    .line 146
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->getRecommendedSettingsViewModel()Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;
 
     move-result-object p0
@@ -1133,10 +1062,10 @@
 .method public onPause()V
     .locals 1
 
-    .line 99
+    .line 92
     invoke-super {p0}, Landroidx/fragment/app/Fragment;->onPause()V
 
-    .line 100
+    .line 93
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
@@ -1147,7 +1076,7 @@
 
     if-nez v0, :cond_0
 
-    .line 101
+    .line 94
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->dismissDialog()V
 
     :cond_0

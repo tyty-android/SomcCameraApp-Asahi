@@ -95,6 +95,17 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
@@ -118,6 +129,18 @@
 
 .method public static getNextState(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;)Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "currentState",
+            "custom"
+        }
+    .end annotation
 
     .line 92
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;->values()[Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
@@ -246,6 +269,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 19
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;

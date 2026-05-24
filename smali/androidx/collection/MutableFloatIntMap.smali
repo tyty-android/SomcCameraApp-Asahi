@@ -5,12 +5,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nFloatIntMap.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FloatIntMap.kt\nandroidx/collection/MutableFloatIntMap\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 ScatterMap.kt\nandroidx/collection/ScatterMapKt\n+ 4 FloatIntMap.kt\nandroidx/collection/FloatIntMap\n+ 5 FloatSet.kt\nandroidx/collection/FloatSet\n+ 6 FloatList.kt\nandroidx/collection/FloatList\n+ 7 FloatSet.kt\nandroidx/collection/FloatSetKt\n*L\n1#1,1031:1\n1021#1,2:1118\n1025#1,5:1126\n1021#1,2:1157\n1025#1,5:1165\n1021#1,2:1182\n1025#1,5:1190\n1#2:1032\n1656#3,6:1033\n1810#3:1049\n1672#3:1053\n1810#3:1071\n1672#3:1075\n1810#3:1096\n1672#3:1100\n1656#3,6:1120\n1656#3,6:1131\n1599#3:1140\n1603#3:1141\n1779#3,3:1142\n1793#3,3:1145\n1717#3:1148\n1705#3:1149\n1699#3:1150\n1712#3:1151\n1802#3:1152\n1666#3:1153\n1645#3:1154\n1664#3:1155\n1645#3:1156\n1656#3,6:1159\n1779#3,3:1170\n1810#3:1173\n1699#3:1174\n1669#3:1175\n1645#3:1176\n1599#3:1180\n1603#3:1181\n1656#3,6:1184\n1656#3,6:1195\n1656#3,6:1201\n385#4,4:1039\n357#4,6:1043\n367#4,3:1050\n370#4,2:1054\n389#4,2:1056\n373#4,6:1058\n391#4:1064\n357#4,6:1065\n367#4,3:1072\n370#4,9:1076\n262#5,4:1085\n232#5,7:1089\n243#5,3:1097\n246#5,2:1101\n266#5,2:1103\n249#5,6:1105\n268#5:1111\n253#6,6:1112\n833#7,3:1137\n833#7,3:1177\n*S KotlinDebug\n*F\n+ 1 FloatIntMap.kt\nandroidx/collection/MutableFloatIntMap\n*L\n875#1:1118,2\n875#1:1126,5\n933#1:1157,2\n933#1:1165,5\n1008#1:1182,2\n1008#1:1190,5\n711#1:1033,6\n789#1:1049\n789#1:1053\n828#1:1071\n828#1:1075\n855#1:1096\n855#1:1100\n875#1:1120,6\n885#1:1131,6\n899#1:1140\n900#1:1141\n907#1:1142,3\n908#1:1145,3\n909#1:1148\n910#1:1149\n910#1:1150\n914#1:1151\n917#1:1152\n926#1:1153\n926#1:1154\n932#1:1155\n932#1:1156\n933#1:1159,6\n948#1:1170,3\n949#1:1173\n951#1:1174\n1003#1:1175\n1003#1:1176\n1006#1:1180\n1008#1:1181\n1008#1:1184,6\n1022#1:1195,6\n1028#1:1201,6\n789#1:1039,4\n789#1:1043,6\n789#1:1050,3\n789#1:1054,2\n789#1:1056,2\n789#1:1058,6\n789#1:1064\n828#1:1065,6\n828#1:1072,3\n828#1:1076,9\n855#1:1085,4\n855#1:1089,7\n855#1:1097,3\n855#1:1101,2\n855#1:1103,2\n855#1:1105,6\n855#1:1111\n864#1:1112,6\n898#1:1137,3\n1005#1:1177,3\n*E\n"
+    value = "SMAP\nFloatIntMap.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FloatIntMap.kt\nandroidx/collection/MutableFloatIntMap\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 ScatterMap.kt\nandroidx/collection/ScatterMapKt\n+ 4 FloatIntMap.kt\nandroidx/collection/FloatIntMap\n+ 5 FloatSet.kt\nandroidx/collection/FloatSet\n+ 6 FloatList.kt\nandroidx/collection/FloatList\n+ 7 FloatSet.kt\nandroidx/collection/FloatSetKt\n*L\n1#1,1047:1\n1037#1,2:1134\n1041#1,5:1142\n1037#1,2:1173\n1041#1,5:1181\n1037#1,2:1198\n1041#1,5:1206\n1037#1,2:1212\n1041#1,5:1220\n1#2:1048\n1672#3,6:1049\n1826#3:1065\n1688#3:1069\n1826#3:1087\n1688#3:1091\n1826#3:1112\n1688#3:1116\n1672#3,6:1136\n1672#3,6:1147\n1615#3:1156\n1619#3:1157\n1795#3,3:1158\n1809#3,3:1161\n1733#3:1164\n1721#3:1165\n1715#3:1166\n1728#3:1167\n1818#3:1168\n1682#3:1169\n1661#3:1170\n1680#3:1171\n1661#3:1172\n1672#3,6:1175\n1795#3,3:1186\n1826#3:1189\n1715#3:1190\n1685#3:1191\n1661#3:1192\n1615#3:1196\n1619#3:1197\n1672#3,6:1200\n1661#3:1211\n1672#3,6:1214\n1672#3,6:1225\n1672#3,6:1231\n385#4,4:1055\n357#4,6:1059\n367#4,3:1066\n370#4,2:1070\n389#4,2:1072\n373#4,6:1074\n391#4:1080\n357#4,6:1081\n367#4,3:1088\n370#4,9:1092\n262#5,4:1101\n232#5,7:1105\n243#5,3:1113\n246#5,2:1117\n266#5,2:1119\n249#5,6:1121\n268#5:1127\n253#6,6:1128\n849#7,3:1153\n849#7,3:1193\n*S KotlinDebug\n*F\n+ 1 FloatIntMap.kt\nandroidx/collection/MutableFloatIntMap\n*L\n875#1:1134,2\n875#1:1142,5\n933#1:1173,2\n933#1:1181,5\n1007#1:1198,2\n1007#1:1206,5\n1023#1:1212,2\n1023#1:1220,5\n711#1:1049,6\n789#1:1065\n789#1:1069\n828#1:1087\n828#1:1091\n855#1:1112\n855#1:1116\n875#1:1136,6\n885#1:1147,6\n899#1:1156\n900#1:1157\n907#1:1158,3\n908#1:1161,3\n909#1:1164\n910#1:1165\n910#1:1166\n914#1:1167\n917#1:1168\n926#1:1169\n926#1:1170\n932#1:1171\n932#1:1172\n933#1:1175,6\n948#1:1186,3\n949#1:1189\n951#1:1190\n1002#1:1191\n1002#1:1192\n1005#1:1196\n1007#1:1197\n1007#1:1200,6\n1021#1:1211\n1023#1:1214,6\n1038#1:1225,6\n1044#1:1231,6\n789#1:1055,4\n789#1:1059,6\n789#1:1066,3\n789#1:1070,2\n789#1:1072,2\n789#1:1074,6\n789#1:1080\n828#1:1081,6\n828#1:1088,3\n828#1:1092,9\n855#1:1101,4\n855#1:1105,7\n855#1:1113,3\n855#1:1117,2\n855#1:1119,2\n855#1:1121,6\n855#1:1127\n864#1:1128,6\n898#1:1153,3\n1004#1:1193,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000P\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0007\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0014\n\u0002\u0008\u0007\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0010\t\n\u0000\u0018\u00002\u00020\u0001B\u000f\u0012\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u0008\u0010\u0006\u001a\u00020\u0007H\u0002J\u0006\u0010\u0008\u001a\u00020\u0007J\u0010\u0010\t\u001a\u00020\u00032\u0006\u0010\n\u001a\u00020\u0003H\u0002J\u0010\u0010\u000b\u001a\u00020\u00032\u0006\u0010\u000c\u001a\u00020\rH\u0002J\"\u0010\u000e\u001a\u00020\u00032\u0006\u0010\u000c\u001a\u00020\r2\u000c\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u0010H\u0086\u0008\u00f8\u0001\u0000J\u0008\u0010\u0011\u001a\u00020\u0007H\u0002J\u0010\u0010\u0012\u001a\u00020\u00072\u0006\u0010\u0013\u001a\u00020\u0003H\u0002J\u0010\u0010\u0014\u001a\u00020\u00072\u0006\u0010\u0002\u001a\u00020\u0003H\u0002J\u0011\u0010\u0015\u001a\u00020\u00072\u0006\u0010\u0016\u001a\u00020\u0017H\u0086\nJ\u0011\u0010\u0015\u001a\u00020\u00072\u0006\u0010\u0016\u001a\u00020\u0018H\u0086\nJ\u0011\u0010\u0015\u001a\u00020\u00072\u0006\u0010\u000c\u001a\u00020\rH\u0086\nJ\u0011\u0010\u0015\u001a\u00020\u00072\u0006\u0010\u0016\u001a\u00020\u0019H\u0086\nJ\u0011\u0010\u001a\u001a\u00020\u00072\u0006\u0010\u001b\u001a\u00020\u0001H\u0086\nJ\u0016\u0010\u001c\u001a\u00020\u00072\u0006\u0010\u000c\u001a\u00020\r2\u0006\u0010\u001d\u001a\u00020\u0003J\u001e\u0010\u001c\u001a\u00020\u00032\u0006\u0010\u000c\u001a\u00020\r2\u0006\u0010\u001d\u001a\u00020\u00032\u0006\u0010\u001e\u001a\u00020\u0003J\u000e\u0010\u001f\u001a\u00020\u00072\u0006\u0010\u001b\u001a\u00020\u0001J\u000e\u0010 \u001a\u00020\u00072\u0006\u0010\u000c\u001a\u00020\rJ\u0016\u0010 \u001a\u00020!2\u0006\u0010\u000c\u001a\u00020\r2\u0006\u0010\u001d\u001a\u00020\u0003J&\u0010\"\u001a\u00020\u00072\u0018\u0010#\u001a\u0014\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020!0$H\u0086\u0008\u00f8\u0001\u0000J\u0010\u0010%\u001a\u00020\u00072\u0006\u0010&\u001a\u00020\u0003H\u0001J\u0010\u0010\'\u001a\u00020\u00072\u0006\u0010(\u001a\u00020\u0003H\u0002J\u0019\u0010)\u001a\u00020\u00072\u0006\u0010\u000c\u001a\u00020\r2\u0006\u0010\u001d\u001a\u00020\u0003H\u0086\u0002J\u0006\u0010*\u001a\u00020\u0003J\u0019\u0010+\u001a\u00020\u00072\u0006\u0010&\u001a\u00020\u00032\u0006\u0010\u001d\u001a\u00020,H\u0082\u0008R\u000e\u0010\u0005\u001a\u00020\u0003X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u0082\u0002\u0007\n\u0005\u0008\u009920\u0001\u00a8\u0006-"
+        "\u0000P\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0007\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0014\n\u0002\u0008\u0007\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0010\t\n\u0000\u0018\u00002\u00020\u0001B\u000f\u0012\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u0008\u0010\u0006\u001a\u00020\u0007H\u0002J\u0006\u0010\u0008\u001a\u00020\u0007J\u0010\u0010\t\u001a\u00020\u00032\u0006\u0010\n\u001a\u00020\u0003H\u0002J\u0010\u0010\u000b\u001a\u00020\u00032\u0006\u0010\u000c\u001a\u00020\rH\u0002J\"\u0010\u000e\u001a\u00020\u00032\u0006\u0010\u000c\u001a\u00020\r2\u000c\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u0010H\u0086\u0008\u00f8\u0001\u0000J\u0008\u0010\u0011\u001a\u00020\u0007H\u0002J\u0010\u0010\u0012\u001a\u00020\u00072\u0006\u0010\u0013\u001a\u00020\u0003H\u0002J\u0010\u0010\u0014\u001a\u00020\u00072\u0006\u0010\u0002\u001a\u00020\u0003H\u0002J\u0011\u0010\u0015\u001a\u00020\u00072\u0006\u0010\u0016\u001a\u00020\u0017H\u0086\nJ\u0011\u0010\u0015\u001a\u00020\u00072\u0006\u0010\u0016\u001a\u00020\u0018H\u0086\nJ\u0011\u0010\u0015\u001a\u00020\u00072\u0006\u0010\u000c\u001a\u00020\rH\u0086\nJ\u0011\u0010\u0015\u001a\u00020\u00072\u0006\u0010\u0016\u001a\u00020\u0019H\u0086\nJ\u0011\u0010\u001a\u001a\u00020\u00072\u0006\u0010\u001b\u001a\u00020\u0001H\u0086\nJ\u0016\u0010\u001c\u001a\u00020\u00072\u0006\u0010\u000c\u001a\u00020\r2\u0006\u0010\u001d\u001a\u00020\u0003J\u001e\u0010\u001c\u001a\u00020\u00032\u0006\u0010\u000c\u001a\u00020\r2\u0006\u0010\u001d\u001a\u00020\u00032\u0006\u0010\u001e\u001a\u00020\u0003J\u000e\u0010\u001f\u001a\u00020\u00072\u0006\u0010\u001b\u001a\u00020\u0001J\u000e\u0010 \u001a\u00020\u00072\u0006\u0010\u000c\u001a\u00020\rJ\u0016\u0010 \u001a\u00020!2\u0006\u0010\u000c\u001a\u00020\r2\u0006\u0010\u001d\u001a\u00020\u0003J\u0008\u0010\"\u001a\u00020\u0007H\u0002J&\u0010#\u001a\u00020\u00072\u0018\u0010$\u001a\u0014\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020!0%H\u0086\u0008\u00f8\u0001\u0000J\u0010\u0010&\u001a\u00020\u00072\u0006\u0010\'\u001a\u00020\u0003H\u0001J\u0010\u0010(\u001a\u00020\u00072\u0006\u0010)\u001a\u00020\u0003H\u0002J\u0019\u0010*\u001a\u00020\u00072\u0006\u0010\u000c\u001a\u00020\r2\u0006\u0010\u001d\u001a\u00020\u0003H\u0086\u0002J\u0006\u0010+\u001a\u00020\u0003J\u0019\u0010,\u001a\u00020\u00072\u0006\u0010\'\u001a\u00020\u00032\u0006\u0010\u001d\u001a\u00020-H\u0082\u0008R\u000e\u0010\u0005\u001a\u00020\u0003X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u0082\u0002\u0007\n\u0005\u0008\u009920\u0001\u00a8\u0006."
     }
     d2 = {
         "Landroidx/collection/MutableFloatIntMap;",
@@ -47,6 +47,7 @@
         "putAll",
         "remove",
         "",
+        "removeDeletedMarkers",
         "removeIf",
         "predicate",
         "Lkotlin/Function2;",
@@ -187,18 +188,12 @@
 
     if-gtz v0, :cond_0
 
-    .line 985
-    iget v0, p0, Landroidx/collection/MutableFloatIntMap;->_capacity:I
-
-    invoke-static {v0}, Landroidx/collection/ScatterMapKt;->nextCapacity(I)I
-
-    move-result v0
-
-    invoke-direct {p0, v0}, Landroidx/collection/MutableFloatIntMap;->resizeStorage(I)V
+    .line 984
+    invoke-direct {p0}, Landroidx/collection/MutableFloatIntMap;->removeDeletedMarkers()V
 
     goto :goto_0
 
-    .line 987
+    .line 986
     :cond_0
     iget v0, p0, Landroidx/collection/MutableFloatIntMap;->_capacity:I
 
@@ -232,7 +227,7 @@
 
     shl-int/lit8 v4, v4, 0x3
 
-    .line 1172
+    .line 1188
     aget-wide v5, v2, v3
 
     ushr-long/2addr v5, v4
@@ -275,7 +270,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 1174
+    .line 1190
     invoke-static {v2, v3}, Ljava/lang/Long;->numberOfTrailingZeros(J)I
 
     move-result p0
@@ -303,7 +298,7 @@
 
     move-object/from16 v0, p0
 
-    .line 1137
+    .line 1153
     invoke-static/range {p1 .. p1}, Ljava/lang/Float;->hashCode(F)I
 
     move-result v1
@@ -337,7 +332,7 @@
 
     shl-int/lit8 v9, v9, 0x3
 
-    .line 1144
+    .line 1160
     aget-wide v10, v7, v8
 
     ushr-long/2addr v10, v9
@@ -391,7 +386,7 @@
 
     if-eqz v18, :cond_1
 
-    .line 1150
+    .line 1166
     invoke-static {v5, v6}, Ljava/lang/Long;->numberOfTrailingZeros(J)I
 
     move-result v15
@@ -453,7 +448,7 @@
 
     shr-int/lit8 v6, v1, 0x3
 
-    .line 1154
+    .line 1170
     aget-wide v6, v3, v6
 
     and-int/lit8 v3, v1, 0x7
@@ -497,7 +492,7 @@
 
     shr-int/lit8 v6, v1, 0x3
 
-    .line 1156
+    .line 1172
     aget-wide v7, v3, v6
 
     and-int/lit8 v3, v1, 0x7
@@ -527,10 +522,10 @@
     .line 932
     iput v2, v0, Landroidx/collection/MutableFloatIntMap;->growthLimit:I
 
-    .line 1157
+    .line 1173
     iget-object v2, v0, Landroidx/collection/MutableFloatIntMap;->metadata:[J
 
-    .line 1163
+    .line 1179
     aget-wide v7, v2, v6
 
     shl-long v11, v4, v3
@@ -545,7 +540,7 @@
 
     aput-wide v7, v2, v6
 
-    .line 1165
+    .line 1181
     iget v0, v0, Landroidx/collection/MutableFloatIntMap;->_capacity:I
 
     add-int/lit8 v3, v1, -0x7
@@ -562,7 +557,7 @@
 
     shl-int/lit8 v3, v3, 0x3
 
-    .line 1163
+    .line 1179
     aget-wide v6, v2, v0
 
     shl-long/2addr v4, v3
@@ -660,7 +655,7 @@
 
     shl-int/lit8 p1, p1, 0x3
 
-    .line 1037
+    .line 1053
     aget-wide v2, v0, v1
 
     const-wide/16 v4, 0xff
@@ -722,30 +717,137 @@
     return-void
 .end method
 
+.method private final removeDeletedMarkers()V
+    .locals 14
+
+    .line 1015
+    iget-object v0, p0, Landroidx/collection/MutableFloatIntMap;->metadata:[J
+
+    .line 1016
+    iget v1, p0, Landroidx/collection/MutableFloatIntMap;->_capacity:I
+
+    const/4 v2, 0x0
+
+    move v3, v2
+
+    :goto_0
+    if-ge v2, v1, :cond_1
+
+    shr-int/lit8 v4, v2, 0x3
+
+    .line 1211
+    aget-wide v5, v0, v4
+
+    and-int/lit8 v7, v2, 0x7
+
+    shl-int/lit8 v7, v7, 0x3
+
+    shr-long/2addr v5, v7
+
+    const-wide/16 v8, 0xff
+
+    and-long/2addr v5, v8
+
+    const-wide/16 v10, 0xfe
+
+    cmp-long v5, v5, v10
+
+    if-nez v5, :cond_0
+
+    .line 1212
+    iget-object v5, p0, Landroidx/collection/MutableFloatIntMap;->metadata:[J
+
+    .line 1218
+    aget-wide v10, v5, v4
+
+    shl-long v12, v8, v7
+
+    not-long v12, v12
+
+    and-long/2addr v10, v12
+
+    const-wide/16 v12, 0x80
+
+    shl-long v6, v12, v7
+
+    or-long/2addr v6, v10
+
+    aput-wide v6, v5, v4
+
+    .line 1220
+    iget v4, p0, Landroidx/collection/MutableFloatIntMap;->_capacity:I
+
+    add-int/lit8 v6, v2, -0x7
+
+    and-int/2addr v6, v4
+
+    and-int/lit8 v4, v4, 0x7
+
+    add-int/2addr v6, v4
+
+    shr-int/lit8 v4, v6, 0x3
+
+    and-int/lit8 v6, v6, 0x7
+
+    shl-int/lit8 v6, v6, 0x3
+
+    .line 1218
+    aget-wide v10, v5, v4
+
+    shl-long v7, v8, v6
+
+    not-long v7, v7
+
+    and-long/2addr v7, v10
+
+    shl-long v9, v12, v6
+
+    or-long v6, v7, v9
+
+    aput-wide v6, v5, v4
+
+    add-int/lit8 v3, v3, 0x1
+
+    :cond_0
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    .line 1028
+    :cond_1
+    iget v0, p0, Landroidx/collection/MutableFloatIntMap;->growthLimit:I
+
+    add-int/2addr v0, v3
+
+    iput v0, p0, Landroidx/collection/MutableFloatIntMap;->growthLimit:I
+
+    return-void
+.end method
+
 .method private final resizeStorage(I)V
     .locals 21
 
     move-object/from16 v0, p0
 
-    .line 992
+    .line 991
     iget-object v1, v0, Landroidx/collection/MutableFloatIntMap;->metadata:[J
 
-    .line 993
+    .line 992
     iget-object v2, v0, Landroidx/collection/MutableFloatIntMap;->keys:[F
 
-    .line 994
+    .line 993
     iget-object v3, v0, Landroidx/collection/MutableFloatIntMap;->values:[I
 
-    .line 995
+    .line 994
     iget v4, v0, Landroidx/collection/MutableFloatIntMap;->_capacity:I
 
-    .line 997
+    .line 996
     invoke-direct/range {p0 .. p1}, Landroidx/collection/MutableFloatIntMap;->initializeStorage(I)V
 
-    .line 999
+    .line 998
     iget-object v5, v0, Landroidx/collection/MutableFloatIntMap;->keys:[F
 
-    .line 1000
+    .line 999
     iget-object v6, v0, Landroidx/collection/MutableFloatIntMap;->values:[I
 
     const/4 v7, 0x0
@@ -755,7 +857,7 @@
 
     shr-int/lit8 v8, v7, 0x3
 
-    .line 1176
+    .line 1192
     aget-wide v8, v1, v8
 
     and-int/lit8 v10, v7, 0x7
@@ -774,10 +876,10 @@
 
     if-gez v8, :cond_0
 
-    .line 1004
+    .line 1003
     aget v8, v2, v7
 
-    .line 1177
+    .line 1193
     invoke-static {v8}, Ljava/lang/Float;->hashCode(F)I
 
     move-result v9
@@ -792,7 +894,7 @@
 
     ushr-int/lit8 v12, v9, 0x7
 
-    .line 1006
+    .line 1005
     invoke-direct {v0, v12}, Landroidx/collection/MutableFloatIntMap;->findFirstAvailableSlot(I)I
 
     move-result v12
@@ -801,7 +903,7 @@
 
     int-to-long v13, v9
 
-    .line 1182
+    .line 1198
     iget-object v9, v0, Landroidx/collection/MutableFloatIntMap;->metadata:[J
 
     shr-int/lit8 v15, v12, 0x3
@@ -810,7 +912,7 @@
 
     shl-int/lit8 v16, v16, 0x3
 
-    .line 1188
+    .line 1204
     aget-wide v17, v9, v15
 
     move-object/from16 v19, v1
@@ -829,7 +931,7 @@
 
     aput-wide v1, v9, v15
 
-    .line 1190
+    .line 1206
     iget v1, v0, Landroidx/collection/MutableFloatIntMap;->_capacity:I
 
     add-int/lit8 v2, v12, -0x7
@@ -846,7 +948,7 @@
 
     shl-int/lit8 v2, v2, 0x3
 
-    .line 1188
+    .line 1204
     aget-wide v15, v9, v1
 
     shl-long/2addr v10, v2
@@ -861,10 +963,10 @@
 
     aput-wide v10, v9, v1
 
-    .line 1009
+    .line 1008
     aput v8, v5, v12
 
-    .line 1010
+    .line 1009
     aget v1, v3, v7
 
     aput v1, v6, v12
@@ -892,7 +994,7 @@
 .method private final writeMetadata(IJ)V
     .locals 9
 
-    .line 1021
+    .line 1037
     iget-object v0, p0, Landroidx/collection/MutableFloatIntMap;->metadata:[J
 
     shr-int/lit8 v1, p1, 0x3
@@ -901,7 +1003,7 @@
 
     shl-int/lit8 v2, v2, 0x3
 
-    .line 1199
+    .line 1229
     aget-wide v3, v0, v1
 
     const-wide/16 v5, 0xff
@@ -918,7 +1020,7 @@
 
     aput-wide v2, v0, v1
 
-    .line 1025
+    .line 1041
     iget p0, p0, Landroidx/collection/MutableFloatIntMap;->_capacity:I
 
     add-int/lit8 p1, p1, -0x7
@@ -935,7 +1037,7 @@
 
     shl-int/lit8 p1, p1, 0x3
 
-    .line 1205
+    .line 1235
     aget-wide v1, v0, p0
 
     shl-long v3, v5, p1
@@ -996,7 +1098,7 @@
 
     shl-int/lit8 v1, v1, 0x3
 
-    .line 1135
+    .line 1151
     aget-wide v3, v0, v2
 
     const-wide/16 v5, 0xff
@@ -1082,10 +1184,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1113
+    .line 1129
     iget-object v0, p1, Landroidx/collection/FloatList;->content:[F
 
-    .line 1114
+    .line 1130
     iget p1, p1, Landroidx/collection/FloatList;->_size:I
 
     const/4 v1, 0x0
@@ -1093,7 +1195,7 @@
     :goto_0
     if-ge v1, p1, :cond_0
 
-    .line 1115
+    .line 1131
     aget v2, v0, v1
 
     .line 865
@@ -1114,13 +1216,13 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1086
+    .line 1102
     iget-object v0, p1, Landroidx/collection/FloatSet;->elements:[F
 
-    .line 1090
+    .line 1106
     iget-object p1, p1, Landroidx/collection/FloatSet;->metadata:[J
 
-    .line 1091
+    .line 1107
     array-length v1, p1
 
     add-int/lit8 v1, v1, -0x2
@@ -1131,7 +1233,7 @@
 
     move v3, v2
 
-    .line 1094
+    .line 1110
     :goto_0
     aget-wide v4, p1, v3
 
@@ -1180,7 +1282,7 @@
 
     add-int/2addr v9, v8
 
-    .line 1103
+    .line 1119
     aget v9, v0, v9
 
     .line 856
@@ -1298,16 +1400,16 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1039
+    .line 1055
     iget-object v0, p1, Landroidx/collection/FloatIntMap;->keys:[F
 
-    .line 1040
+    .line 1056
     iget-object v1, p1, Landroidx/collection/FloatIntMap;->values:[I
 
-    .line 1043
+    .line 1059
     iget-object p1, p1, Landroidx/collection/FloatIntMap;->metadata:[J
 
-    .line 1044
+    .line 1060
     array-length v2, p1
 
     add-int/lit8 v2, v2, -0x2
@@ -1318,7 +1420,7 @@
 
     move v4, v3
 
-    .line 1047
+    .line 1063
     :goto_0
     aget-wide v5, p1, v4
 
@@ -1367,7 +1469,7 @@
 
     add-int/2addr v10, v9
 
-    .line 1056
+    .line 1072
     aget v11, v0, v10
 
     aget v10, v1, v10
@@ -1467,10 +1569,10 @@
 
     check-cast v0, Landroidx/collection/FloatIntMap;
 
-    .line 1065
+    .line 1081
     iget-object v0, v0, Landroidx/collection/FloatIntMap;->metadata:[J
 
-    .line 1066
+    .line 1082
     array-length v1, v0
 
     add-int/lit8 v1, v1, -0x2
@@ -1481,7 +1583,7 @@
 
     move v3, v2
 
-    .line 1069
+    .line 1085
     :goto_0
     aget-wide v4, v0, v3
 
@@ -1593,7 +1695,7 @@
 
     iput v0, p0, Landroidx/collection/MutableFloatIntMap;->_size:I
 
-    .line 1118
+    .line 1134
     iget-object v0, p0, Landroidx/collection/MutableFloatIntMap;->metadata:[J
 
     shr-int/lit8 v1, p1, 0x3
@@ -1602,7 +1704,7 @@
 
     shl-int/lit8 v2, v2, 0x3
 
-    .line 1124
+    .line 1140
     aget-wide v3, v0, v1
 
     const-wide/16 v5, 0xff
@@ -1621,7 +1723,7 @@
 
     aput-wide v2, v0, v1
 
-    .line 1126
+    .line 1142
     iget p0, p0, Landroidx/collection/MutableFloatIntMap;->_capacity:I
 
     add-int/lit8 p1, p1, -0x7
@@ -1638,7 +1740,7 @@
 
     shl-int/lit8 p1, p1, 0x3
 
-    .line 1124
+    .line 1140
     aget-wide v1, v0, p0
 
     shl-long v3, v5, p1

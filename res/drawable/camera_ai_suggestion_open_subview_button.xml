@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/camera_aisuggestion_open_subview_button_pressed_icn" />
+    <item android:drawable="@drawable/camera_aisuggestion_open_subview_button_icn" />
+</selector>

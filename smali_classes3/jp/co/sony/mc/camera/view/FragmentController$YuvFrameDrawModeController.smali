@@ -65,8 +65,16 @@
 
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 9538
+    .line 8309
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$YuvFrameDrawModeController;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -85,7 +93,7 @@
 .method private onCancelAutoFocus()V
     .locals 1
 
-    .line 9557
+    .line 8328
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$YuvFrameDrawModeController;->mIsTouchFocus:Z
 
     if-eqz v0, :cond_0
@@ -94,7 +102,7 @@
 
     if-nez v0, :cond_0
 
-    .line 9558
+    .line 8329
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$YuvFrameDrawModeController;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraAccessor(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraAccessor;
@@ -103,7 +111,7 @@
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/CameraAccessor;->stopFaceDetection()V
 
-    .line 9559
+    .line 8330
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$YuvFrameDrawModeController;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraAccessor(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraAccessor;
@@ -114,7 +122,7 @@
 
     const/4 v0, 0x1
 
-    .line 9560
+    .line 8331
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$YuvFrameDrawModeController;->mIsFaceDetectionTemporarilyStopped:Z
 
     :cond_0
@@ -124,17 +132,17 @@
 .method private onClearTouchFocus()V
     .locals 1
 
-    .line 9564
+    .line 8335
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$YuvFrameDrawModeController;->mIsFaceDetectionTemporarilyStopped:Z
 
     if-eqz v0, :cond_0
 
-    .line 9565
+    .line 8336
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$YuvFrameDrawModeController;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mswitchFaceDetection(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
-    .line 9566
+    .line 8337
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$YuvFrameDrawModeController;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraAccessor(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraAccessor;
@@ -145,10 +153,10 @@
 
     const/4 v0, 0x0
 
-    .line 9567
+    .line 8338
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$YuvFrameDrawModeController;->mIsFaceDetectionTemporarilyStopped:Z
 
-    .line 9568
+    .line 8339
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$YuvFrameDrawModeController;->mIsTouchFocus:Z
 
     :cond_0
@@ -158,17 +166,17 @@
 .method private onObjectTracked()V
     .locals 1
 
-    .line 9550
+    .line 8321
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$YuvFrameDrawModeController;->mIsFaceDetectionTemporarilyStopped:Z
 
     if-eqz v0, :cond_0
 
-    .line 9551
+    .line 8322
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$YuvFrameDrawModeController;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mswitchFaceDetection(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
-    .line 9552
+    .line 8323
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$YuvFrameDrawModeController;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraAccessor(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraAccessor;
@@ -179,7 +187,7 @@
 
     const/4 v0, 0x0
 
-    .line 9553
+    .line 8324
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$YuvFrameDrawModeController;->mIsFaceDetectionTemporarilyStopped:Z
 
     :cond_0
@@ -191,10 +199,10 @@
 
     const/4 v0, 0x0
 
-    .line 9572
+    .line 8343
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$YuvFrameDrawModeController;->mIsFaceDetectionTemporarilyStopped:Z
 
-    .line 9573
+    .line 8344
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$YuvFrameDrawModeController;->mIsTouchFocus:Z
 
     return-void
@@ -203,7 +211,7 @@
 .method private onShowTouchFocus()V
     .locals 1
 
-    .line 9542
+    .line 8313
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$YuvFrameDrawModeController;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$misObjectTrackingAfterS1(Ljp/co/sony/mc/camera/view/FragmentController;)Z
@@ -220,7 +228,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 9543
+    .line 8314
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$YuvFrameDrawModeController;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraAccessor(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraAccessor;
@@ -229,7 +237,7 @@
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/CameraAccessor;->stopFaceDetection()V
 
-    .line 9544
+    .line 8315
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$YuvFrameDrawModeController;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraAccessor(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraAccessor;
@@ -240,10 +248,10 @@
 
     const/4 v0, 0x1
 
-    .line 9545
+    .line 8316
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$YuvFrameDrawModeController;->mIsFaceDetectionTemporarilyStopped:Z
 
-    .line 9546
+    .line 8317
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$YuvFrameDrawModeController;->mIsTouchFocus:Z
 
     :cond_0

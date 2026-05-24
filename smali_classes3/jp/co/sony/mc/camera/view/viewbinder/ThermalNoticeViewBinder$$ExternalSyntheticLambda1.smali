@@ -26,15 +26,19 @@
 
     check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    check-cast p3, Landroid/util/Size;
+    check-cast p3, Ljava/lang/Boolean;
+
+    invoke-virtual {p3}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
 
     check-cast p4, Ljava/lang/Boolean;
 
     invoke-virtual {p4}, Ljava/lang/Boolean;->booleanValue()Z
 
-    move-result p0
+    move-result p3
 
-    invoke-static {p1, p2, p3, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ThermalNoticeViewBinder;->$r8$lambda$-_R0qVIVZhWjXJoUp9jtB38s6NQ(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Landroid/util/Size;Z)Ljp/co/sony/mc/camera/util/TuplesUtil$Quadruple;
+    invoke-static {p1, p2, p0, p3}, Ljp/co/sony/mc/camera/view/viewbinder/ThermalNoticeViewBinder;->$r8$lambda$5XS7FlD57ldImeQpa_ve6y8yHF0(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;ZZ)Ljp/co/sony/mc/camera/util/TuplesUtil$Quadruple;
 
     move-result-object p0
 

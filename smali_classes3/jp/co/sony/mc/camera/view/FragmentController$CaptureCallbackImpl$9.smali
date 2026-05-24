@@ -26,13 +26,24 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$requestId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 7579
+    .line 6459
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl$9;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;
 
     iput p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl$9;->val$requestId:I
@@ -47,7 +58,7 @@
 .method public run()V
     .locals 2
 
-    .line 7582
+    .line 6462
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl$9;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->-$$Nest$fgetmController(Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -58,7 +69,7 @@
 
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mhandleStoreFinished(Ljp/co/sony/mc/camera/view/FragmentController;I)V
 
-    .line 7583
+    .line 6463
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl$9;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->-$$Nest$fgetmController(Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;)Ljp/co/sony/mc/camera/view/FragmentController;

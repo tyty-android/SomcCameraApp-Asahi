@@ -31,6 +31,22 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation;IIII)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "widthId",
+            "heightId",
+            "factorId",
+            "durationId"
+        }
+    .end annotation
 
     .line 49
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation$AnimationConfig;->this$0:Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation;

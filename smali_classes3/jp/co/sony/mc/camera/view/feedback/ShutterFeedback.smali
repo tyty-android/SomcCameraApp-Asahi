@@ -26,6 +26,16 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/feedback/ShutterFeedback$Type;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "remainingCapturingTime"
+        }
+    .end annotation
 
     .line 44
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,6 +51,16 @@
 
 .method public static create(IZ)Ljp/co/sony/mc/camera/view/feedback/ShutterFeedback;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "remainingCaptureDuration",
+            "isHighResolution"
+        }
+    .end annotation
 
     const/16 v0, 0x3e8
 

@@ -33,8 +33,20 @@
 # direct methods
 .method constructor <init>(Ljava/util/Iterator;IZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "val$iterator",
+            "val$size",
+            "val$pad"
+        }
+    .end annotation
 
-    .line 597
+    .line 628
     iput-object p1, p0, Lcom/google/common/collect/Iterators$4;->val$iterator:Ljava/util/Iterator;
 
     iput p2, p0, Lcom/google/common/collect/Iterators$4;->val$size:I
@@ -51,7 +63,7 @@
 .method public hasNext()Z
     .locals 0
 
-    .line 600
+    .line 631
     iget-object p0, p0, Lcom/google/common/collect/Iterators$4;->val$iterator:Ljava/util/Iterator;
 
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
@@ -64,7 +76,7 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .locals 0
 
-    .line 597
+    .line 628
     invoke-virtual {p0}, Lcom/google/common/collect/Iterators$4;->next()Ljava/util/List;
 
     move-result-object p0
@@ -82,14 +94,14 @@
         }
     .end annotation
 
-    .line 605
+    .line 636
     invoke-virtual {p0}, Lcom/google/common/collect/Iterators$4;->hasNext()Z
 
     move-result v0
 
     if-eqz v0, :cond_4
 
-    .line 608
+    .line 640
     iget v0, p0, Lcom/google/common/collect/Iterators$4;->val$size:I
 
     new-array v0, v0, [Ljava/lang/Object;
@@ -98,7 +110,7 @@
 
     move v2, v1
 
-    .line 610
+    .line 642
     :goto_0
     iget v3, p0, Lcom/google/common/collect/Iterators$4;->val$size:I
 
@@ -112,7 +124,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 611
+    .line 643
     iget-object v3, p0, Lcom/google/common/collect/Iterators$4;->val$iterator:Ljava/util/Iterator;
 
     invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -128,7 +140,7 @@
     :cond_0
     move v3, v2
 
-    .line 613
+    .line 645
     :goto_1
     iget v4, p0, Lcom/google/common/collect/Iterators$4;->val$size:I
 
@@ -136,14 +148,14 @@
 
     const/4 v4, 0x0
 
-    .line 614
+    .line 646
     aput-object v4, v0, v3
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_1
 
-    .line 618
+    .line 649
     :cond_1
     invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
@@ -153,7 +165,7 @@
 
     move-result-object v0
 
-    .line 619
+    .line 651
     iget-boolean v3, p0, Lcom/google/common/collect/Iterators$4;->val$pad:Z
 
     if-nez v3, :cond_3
@@ -164,16 +176,19 @@
 
     goto :goto_2
 
+    .line 654
     :cond_2
     invoke-interface {v0, v1, v2}, Ljava/util/List;->subList(II)Ljava/util/List;
 
-    move-result-object v0
+    move-result-object p0
+
+    return-object p0
 
     :cond_3
     :goto_2
     return-object v0
 
-    .line 606
+    .line 637
     :cond_4
     new-instance p0, Ljava/util/NoSuchElementException;
 

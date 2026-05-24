@@ -7,12 +7,15 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lcom/google/common/collect/CompactHashMap$KeySetView;,
+        Lcom/google/common/collect/CompactHashMap$EntrySetView;,
         Lcom/google/common/collect/CompactHashMap$ValuesView;,
         Lcom/google/common/collect/CompactHashMap$MapEntry;,
-        Lcom/google/common/collect/CompactHashMap$EntrySetView;,
-        Lcom/google/common/collect/CompactHashMap$KeySetView;,
         Lcom/google/common/collect/CompactHashMap$Itr;
     }
 .end annotation
@@ -41,11 +44,14 @@
 
 # instance fields
 .field transient entries:[I
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
 .field private transient entrySetView:Ljava/util/Set;
+    .annotation runtime Lcom/google/errorprone/annotations/concurrent/LazyInit;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
@@ -54,11 +60,14 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
 .field private transient keySetView:Ljava/util/Set;
+    .annotation runtime Lcom/google/errorprone/annotations/concurrent/LazyInit;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
@@ -66,12 +75,12 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
 .field transient keys:[Ljava/lang/Object;
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -80,16 +89,19 @@
 .field private transient size:I
 
 .field private transient table:Ljava/lang/Object;
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
 .field transient values:[Ljava/lang/Object;
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
 .field private transient valuesView:Ljava/util/Collection;
+    .annotation runtime Lcom/google/errorprone/annotations/concurrent/LazyInit;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Collection<",
@@ -97,7 +109,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -106,7 +118,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 102
+    .line 114
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -119,12 +131,12 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 180
+    .line 238
     invoke-direct {p0}, Ljava/util/AbstractMap;-><init>()V
 
     const/4 v0, 0x3
 
-    .line 181
+    .line 239
     invoke-virtual {p0, v0}, Lcom/google/common/collect/CompactHashMap;->init(I)V
 
     return-void
@@ -132,11 +144,19 @@
 
 .method constructor <init>(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "expectedSize"
+        }
+    .end annotation
 
-    .line 189
+    .line 247
     invoke-direct {p0}, Ljava/util/AbstractMap;-><init>()V
 
-    .line 190
+    .line 248
     invoke-virtual {p0, p1}, Lcom/google/common/collect/CompactHashMap;->init(I)V
 
     return-void
@@ -145,67 +165,49 @@
 .method static synthetic access$000(Lcom/google/common/collect/CompactHashMap;)I
     .locals 0
 
-    .line 75
+    .line 84
     iget p0, p0, Lcom/google/common/collect/CompactHashMap;->metadata:I
 
     return p0
 .end method
 
-.method static synthetic access$100(Lcom/google/common/collect/CompactHashMap;Ljava/lang/Object;)Ljava/lang/Object;
+.method static synthetic access$100(Lcom/google/common/collect/CompactHashMap;I)Ljava/lang/Object;
     .locals 0
 
-    .line 75
-    invoke-direct {p0, p1}, Lcom/google/common/collect/CompactHashMap;->removeHelper(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 84
+    invoke-direct {p0, p1}, Lcom/google/common/collect/CompactHashMap;->key(I)Ljava/lang/Object;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method static synthetic access$200()Ljava/lang/Object;
-    .locals 1
-
-    .line 75
-    sget-object v0, Lcom/google/common/collect/CompactHashMap;->NOT_FOUND:Ljava/lang/Object;
-
-    return-object v0
-.end method
-
-.method static synthetic access$400(Lcom/google/common/collect/CompactHashMap;Ljava/lang/Object;)I
+.method static synthetic access$1000(Lcom/google/common/collect/CompactHashMap;)[Ljava/lang/Object;
     .locals 0
 
-    .line 75
-    invoke-direct {p0, p1}, Lcom/google/common/collect/CompactHashMap;->indexOf(Ljava/lang/Object;)I
+    .line 84
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireKeys()[Ljava/lang/Object;
 
-    move-result p0
-
-    return p0
-.end method
-
-.method static synthetic access$500(Lcom/google/common/collect/CompactHashMap;)I
-    .locals 0
-
-    .line 75
-    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->hashTableMask()I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method static synthetic access$600(Lcom/google/common/collect/CompactHashMap;)Ljava/lang/Object;
-    .locals 0
-
-    .line 75
-    iget-object p0, p0, Lcom/google/common/collect/CompactHashMap;->table:Ljava/lang/Object;
+    move-result-object p0
 
     return-object p0
 .end method
 
-.method static synthetic access$710(Lcom/google/common/collect/CompactHashMap;)I
+.method static synthetic access$1100(Lcom/google/common/collect/CompactHashMap;)[Ljava/lang/Object;
+    .locals 0
+
+    .line 84
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireValues()[Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic access$1210(Lcom/google/common/collect/CompactHashMap;)I
     .locals 2
 
-    .line 75
+    .line 84
     iget v0, p0, Lcom/google/common/collect/CompactHashMap;->size:I
 
     add-int/lit8 v1, v0, -0x1
@@ -213,6 +215,90 @@
     iput v1, p0, Lcom/google/common/collect/CompactHashMap;->size:I
 
     return v0
+.end method
+
+.method static synthetic access$1300(Lcom/google/common/collect/CompactHashMap;ILjava/lang/Object;)V
+    .locals 0
+
+    .line 84
+    invoke-direct {p0, p1, p2}, Lcom/google/common/collect/CompactHashMap;->setValue(ILjava/lang/Object;)V
+
+    return-void
+.end method
+
+.method static synthetic access$200(Lcom/google/common/collect/CompactHashMap;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 84
+    invoke-direct {p0, p1}, Lcom/google/common/collect/CompactHashMap;->removeHelper(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic access$300()Ljava/lang/Object;
+    .locals 1
+
+    .line 84
+    sget-object v0, Lcom/google/common/collect/CompactHashMap;->NOT_FOUND:Ljava/lang/Object;
+
+    return-object v0
+.end method
+
+.method static synthetic access$500(Lcom/google/common/collect/CompactHashMap;Ljava/lang/Object;)I
+    .locals 0
+
+    .line 84
+    invoke-direct {p0, p1}, Lcom/google/common/collect/CompactHashMap;->indexOf(Ljava/lang/Object;)I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method static synthetic access$600(Lcom/google/common/collect/CompactHashMap;I)Ljava/lang/Object;
+    .locals 0
+
+    .line 84
+    invoke-direct {p0, p1}, Lcom/google/common/collect/CompactHashMap;->value(I)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic access$700(Lcom/google/common/collect/CompactHashMap;)I
+    .locals 0
+
+    .line 84
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->hashTableMask()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method static synthetic access$800(Lcom/google/common/collect/CompactHashMap;)Ljava/lang/Object;
+    .locals 0
+
+    .line 84
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireTable()Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic access$900(Lcom/google/common/collect/CompactHashMap;)[I
+    .locals 0
+
+    .line 84
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireEntries()[I
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
 .method public static create()Lcom/google/common/collect/CompactHashMap;
@@ -229,7 +315,7 @@
         }
     .end annotation
 
-    .line 86
+    .line 97
     new-instance v0, Lcom/google/common/collect/CompactHashMap;
 
     invoke-direct {v0}, Lcom/google/common/collect/CompactHashMap;-><init>()V
@@ -239,6 +325,15 @@
 
 .method public static createWithExpectedSize(I)Lcom/google/common/collect/CompactHashMap;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "expectedSize"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -251,7 +346,7 @@
         }
     .end annotation
 
-    .line 99
+    .line 111
     new-instance v0, Lcom/google/common/collect/CompactHashMap;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/CompactHashMap;-><init>(I)V
@@ -259,10 +354,31 @@
     return-object v0
 .end method
 
+.method private entry(I)I
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "i"
+        }
+    .end annotation
+
+    .line 1076
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireEntries()[I
+
+    move-result-object p0
+
+    aget p0, p0, p1
+
+    return p0
+.end method
+
 .method private hashTableMask()I
     .locals 1
 
-    .line 263
+    .line 318
     iget p0, p0, Lcom/google/common/collect/CompactHashMap;->metadata:I
 
     and-int/lit8 p0, p0, 0x1f
@@ -279,11 +395,19 @@
 .method private indexOf(Ljava/lang/Object;)I
     .locals 6
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 416
+    .line 480
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->needsAllocArrays()Z
 
     move-result v0
@@ -294,19 +418,21 @@
 
     return v1
 
-    .line 419
+    .line 483
     :cond_0
     invoke-static {p1}, Lcom/google/common/collect/Hashing;->smearedHash(Ljava/lang/Object;)I
 
     move-result v0
 
-    .line 420
+    .line 484
     invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->hashTableMask()I
 
     move-result v2
 
-    .line 421
-    iget-object v3, p0, Lcom/google/common/collect/CompactHashMap;->table:Ljava/lang/Object;
+    .line 485
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireTable()Ljava/lang/Object;
+
+    move-result-object v3
 
     and-int v4, v0, v2
 
@@ -318,7 +444,7 @@
 
     return v1
 
-    .line 425
+    .line 489
     :cond_1
     invoke-static {v0, v2}, Lcom/google/common/collect/CompactHashing;->getHashPrefix(II)I
 
@@ -327,23 +453,23 @@
     :cond_2
     add-int/lit8 v3, v3, -0x1
 
-    .line 428
-    iget-object v4, p0, Lcom/google/common/collect/CompactHashMap;->entries:[I
+    .line 492
+    invoke-direct {p0, v3}, Lcom/google/common/collect/CompactHashMap;->entry(I)I
 
-    aget v4, v4, v3
+    move-result v4
 
-    .line 429
+    .line 493
     invoke-static {v4, v2}, Lcom/google/common/collect/CompactHashing;->getHashPrefix(II)I
 
     move-result v5
 
     if-ne v5, v0, :cond_3
 
-    iget-object v5, p0, Lcom/google/common/collect/CompactHashMap;->keys:[Ljava/lang/Object;
+    .line 494
+    invoke-direct {p0, v3}, Lcom/google/common/collect/CompactHashMap;->key(I)Ljava/lang/Object;
 
-    aget-object v5, v5, v3
+    move-result-object v5
 
-    .line 430
     invoke-static {p1, v5}, Lcom/google/common/base/Objects;->equal(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
@@ -352,7 +478,7 @@
 
     return v3
 
-    .line 433
+    .line 497
     :cond_3
     invoke-static {v4, v2}, Lcom/google/common/collect/CompactHashing;->getNext(II)I
 
@@ -363,8 +489,44 @@
     return v1
 .end method
 
+.method private key(I)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "i"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I)TK;"
+        }
+    .end annotation
+
+    .line 1067
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireKeys()[Ljava/lang/Object;
+
+    move-result-object p0
+
+    aget-object p0, p0, p1
+
+    return-object p0
+.end method
+
 .method private readObject(Ljava/io/ObjectInputStream;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stream"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -372,17 +534,17 @@
         }
     .end annotation
 
-    .line 923
+    .line 1016
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->defaultReadObject()V
 
-    .line 924
+    .line 1017
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readInt()I
 
     move-result v0
 
     if-ltz v0, :cond_1
 
-    .line 928
+    .line 1021
     invoke-virtual {p0, v0}, Lcom/google/common/collect/CompactHashMap;->init(I)V
 
     const/4 v1, 0x0
@@ -390,17 +552,17 @@
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 930
+    .line 1023
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readObject()Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 931
+    .line 1024
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readObject()Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 932
+    .line 1025
     invoke-virtual {p0, v2, v3}, Lcom/google/common/collect/CompactHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     add-int/lit8 v1, v1, 0x1
@@ -410,21 +572,15 @@
     :cond_0
     return-void
 
-    .line 926
+    .line 1019
     :cond_1
     new-instance p0, Ljava/io/InvalidObjectException;
 
     new-instance p1, Ljava/lang/StringBuilder;
 
-    const/16 v1, 0x19
-
-    invoke-direct {p1, v1}, Ljava/lang/StringBuilder;-><init>(I)V
-
     const-string v1, "Invalid size: "
 
-    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p1
+    invoke-direct {p1, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -442,36 +598,50 @@
 .method private removeHelper(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 8
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
     .end annotation
 
-    .line 474
+    .line 537
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->needsAllocArrays()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 475
+    .line 538
     sget-object p0, Lcom/google/common/collect/CompactHashMap;->NOT_FOUND:Ljava/lang/Object;
 
     return-object p0
 
-    .line 477
+    .line 540
     :cond_0
     invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->hashTableMask()I
 
     move-result v7
 
-    .line 478
-    iget-object v3, p0, Lcom/google/common/collect/CompactHashMap;->table:Ljava/lang/Object;
+    .line 546
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireTable()Ljava/lang/Object;
 
-    iget-object v4, p0, Lcom/google/common/collect/CompactHashMap;->entries:[I
+    move-result-object v3
 
-    iget-object v5, p0, Lcom/google/common/collect/CompactHashMap;->keys:[Ljava/lang/Object;
+    .line 547
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireEntries()[I
+
+    move-result-object v4
+
+    .line 548
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireKeys()[Ljava/lang/Object;
+
+    move-result-object v5
 
     const/4 v6, 0x0
 
@@ -481,7 +651,7 @@
 
     move v2, v7
 
-    .line 479
+    .line 542
     invoke-static/range {v0 .. v6}, Lcom/google/common/collect/CompactHashing;->remove(Ljava/lang/Object;Ljava/lang/Object;ILjava/lang/Object;[I[Ljava/lang/Object;[Ljava/lang/Object;)I
 
     move-result p1
@@ -490,38 +660,106 @@
 
     if-ne p1, v0, :cond_1
 
-    .line 482
+    .line 551
     sget-object p0, Lcom/google/common/collect/CompactHashMap;->NOT_FOUND:Ljava/lang/Object;
 
     return-object p0
 
-    .line 485
+    .line 554
     :cond_1
-    iget-object v0, p0, Lcom/google/common/collect/CompactHashMap;->values:[Ljava/lang/Object;
+    invoke-direct {p0, p1}, Lcom/google/common/collect/CompactHashMap;->value(I)Ljava/lang/Object;
 
-    aget-object v0, v0, p1
+    move-result-object v0
 
-    .line 487
+    .line 556
     invoke-virtual {p0, p1, v7}, Lcom/google/common/collect/CompactHashMap;->moveLastEntry(II)V
 
-    .line 488
+    .line 557
     iget p1, p0, Lcom/google/common/collect/CompactHashMap;->size:I
 
     add-int/lit8 p1, p1, -0x1
 
     iput p1, p0, Lcom/google/common/collect/CompactHashMap;->size:I
 
-    .line 489
+    .line 558
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->incrementModCount()V
 
     return-object v0
 .end method
 
+.method private requireEntries()[I
+    .locals 0
+
+    .line 1046
+    iget-object p0, p0, Lcom/google/common/collect/CompactHashMap;->entries:[I
+
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, [I
+
+    return-object p0
+.end method
+
+.method private requireKeys()[Ljava/lang/Object;
+    .locals 0
+
+    .line 1050
+    iget-object p0, p0, Lcom/google/common/collect/CompactHashMap;->keys:[Ljava/lang/Object;
+
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, [Ljava/lang/Object;
+
+    return-object p0
+.end method
+
+.method private requireTable()Ljava/lang/Object;
+    .locals 0
+
+    .line 1042
+    iget-object p0, p0, Lcom/google/common/collect/CompactHashMap;->table:Ljava/lang/Object;
+
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method private requireValues()[Ljava/lang/Object;
+    .locals 0
+
+    .line 1054
+    iget-object p0, p0, Lcom/google/common/collect/CompactHashMap;->values:[Ljava/lang/Object;
+
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, [Ljava/lang/Object;
+
+    return-object p0
+.end method
+
 .method private resizeMeMaybe(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "newSize"
+        }
+    .end annotation
 
-    .line 357
-    iget-object v0, p0, Lcom/google/common/collect/CompactHashMap;->entries:[I
+    .line 412
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireEntries()[I
+
+    move-result-object v0
 
     array-length v0, v0
 
@@ -531,7 +769,7 @@
 
     const/4 v1, 0x1
 
-    .line 361
+    .line 415
     invoke-static {v1, p1}, Ljava/lang/Math;->max(II)I
 
     move-result p1
@@ -548,7 +786,7 @@
 
     if-eq p1, v0, :cond_0
 
-    .line 363
+    .line 417
     invoke-virtual {p0, p1}, Lcom/google/common/collect/CompactHashMap;->resizeEntries(I)V
 
     :cond_0
@@ -557,8 +795,22 @@
 
 .method private resizeTable(IIII)I
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "oldMask",
+            "newCapacity",
+            "targetHash",
+            "targetEntryIndex"
+        }
+    .end annotation
 
-    .line 380
+    .line 434
     invoke-static {p2}, Lcom/google/common/collect/CompactHashing;->createTable(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -571,22 +823,26 @@
 
     add-int/lit8 p4, p4, 0x1
 
-    .line 385
+    .line 439
     invoke-static {v0, p3, p4}, Lcom/google/common/collect/CompactHashing;->tableSet(Ljava/lang/Object;II)V
 
-    .line 388
+    .line 442
     :cond_0
-    iget-object p3, p0, Lcom/google/common/collect/CompactHashMap;->table:Ljava/lang/Object;
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireTable()Ljava/lang/Object;
 
-    .line 389
-    iget-object p4, p0, Lcom/google/common/collect/CompactHashMap;->entries:[I
+    move-result-object p3
+
+    .line 443
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireEntries()[I
+
+    move-result-object p4
 
     const/4 v1, 0x0
 
     :goto_0
     if-gt v1, p1, :cond_2
 
-    .line 393
+    .line 451
     invoke-static {p3, v1}, Lcom/google/common/collect/CompactHashing;->tableGet(Ljava/lang/Object;I)I
 
     move-result v2
@@ -596,10 +852,10 @@
 
     add-int/lit8 v3, v2, -0x1
 
-    .line 396
+    .line 460
     aget v4, p4, v3
 
-    .line 399
+    .line 463
     invoke-static {v4, p1}, Lcom/google/common/collect/CompactHashing;->getHashPrefix(II)I
 
     move-result v5
@@ -608,22 +864,22 @@
 
     and-int v6, v5, p2
 
-    .line 402
+    .line 466
     invoke-static {v0, v6}, Lcom/google/common/collect/CompactHashing;->tableGet(Ljava/lang/Object;I)I
 
     move-result v7
 
-    .line 403
+    .line 467
     invoke-static {v0, v6, v2}, Lcom/google/common/collect/CompactHashing;->tableSet(Ljava/lang/Object;II)V
 
-    .line 404
+    .line 468
     invoke-static {v5, v7, p2}, Lcom/google/common/collect/CompactHashing;->maskCombine(III)I
 
     move-result v2
 
     aput v2, p4, v3
 
-    .line 406
+    .line 470
     invoke-static {v4, p1}, Lcom/google/common/collect/CompactHashing;->getNext(II)I
 
     move-result v2
@@ -635,32 +891,63 @@
 
     goto :goto_0
 
-    .line 410
+    .line 474
     :cond_2
     iput-object v0, p0, Lcom/google/common/collect/CompactHashMap;->table:Ljava/lang/Object;
 
-    .line 411
+    .line 475
     invoke-direct {p0, p2}, Lcom/google/common/collect/CompactHashMap;->setHashTableMask(I)V
 
     return p2
 .end method
 
+.method private setEntry(II)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "i",
+            "value"
+        }
+    .end annotation
+
+    .line 1088
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireEntries()[I
+
+    move-result-object p0
+
+    aput p2, p0, p1
+
+    return-void
+.end method
+
 .method private setHashTableMask(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mask"
+        }
+    .end annotation
 
-    .line 256
+    .line 311
     invoke-static {p1}, Ljava/lang/Integer;->numberOfLeadingZeros(I)I
 
     move-result p1
 
     rsub-int/lit8 p1, p1, 0x20
 
-    .line 257
+    .line 312
     iget v0, p0, Lcom/google/common/collect/CompactHashMap;->metadata:I
 
     const/16 v1, 0x1f
 
-    .line 258
+    .line 313
     invoke-static {v0, p1, v1}, Lcom/google/common/collect/CompactHashing;->maskCombine(III)I
 
     move-result p1
@@ -670,30 +957,124 @@
     return-void
 .end method
 
+.method private setKey(ILjava/lang/Object;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "i",
+            "key"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(ITK;)V"
+        }
+    .end annotation
+
+    .line 1080
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireKeys()[Ljava/lang/Object;
+
+    move-result-object p0
+
+    aput-object p2, p0, p1
+
+    return-void
+.end method
+
+.method private setValue(ILjava/lang/Object;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "i",
+            "value"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(ITV;)V"
+        }
+    .end annotation
+
+    .line 1084
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireValues()[Ljava/lang/Object;
+
+    move-result-object p0
+
+    aput-object p2, p0, p1
+
+    return-void
+.end method
+
+.method private value(I)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "i"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I)TV;"
+        }
+    .end annotation
+
+    .line 1072
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireValues()[Ljava/lang/Object;
+
+    move-result-object p0
+
+    aget-object p0, p0, p1
+
+    return-object p0
+.end method
+
 .method private writeObject(Ljava/io/ObjectOutputStream;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stream"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 911
+    .line 1003
     invoke-virtual {p1}, Ljava/io/ObjectOutputStream;->defaultWriteObject()V
 
-    .line 912
+    .line 1004
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->size()I
 
     move-result v0
 
     invoke-virtual {p1, v0}, Ljava/io/ObjectOutputStream;->writeInt(I)V
 
-    .line 913
+    .line 1005
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->entrySetIterator()Ljava/util/Iterator;
 
     move-result-object p0
 
-    .line 914
+    .line 1006
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -701,21 +1082,21 @@
 
     if-eqz v0, :cond_0
 
-    .line 915
+    .line 1007
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 916
+    .line 1008
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v1
 
     invoke-virtual {p1, v1}, Ljava/io/ObjectOutputStream;->writeObject(Ljava/lang/Object;)V
 
-    .line 917
+    .line 1009
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v0
@@ -732,12 +1113,30 @@
 # virtual methods
 .method accessEntry(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method adjustAfterRemove(II)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "indexBeforeRemove",
+            "indexRemoved"
+        }
+    .end annotation
 
     add-int/lit8 p1, p1, -0x1
 
@@ -747,7 +1146,7 @@
 .method allocArrays()I
     .locals 3
 
-    .line 210
+    .line 267
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->needsAllocArrays()Z
 
     move-result v0
@@ -756,15 +1155,15 @@
 
     invoke-static {v0, v1}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
 
-    .line 212
+    .line 269
     iget v0, p0, Lcom/google/common/collect/CompactHashMap;->metadata:I
 
-    .line 213
+    .line 270
     invoke-static {v0}, Lcom/google/common/collect/CompactHashing;->tableSize(I)I
 
     move-result v1
 
-    .line 214
+    .line 271
     invoke-static {v1}, Lcom/google/common/collect/CompactHashing;->createTable(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -773,20 +1172,20 @@
 
     add-int/lit8 v1, v1, -0x1
 
-    .line 215
+    .line 272
     invoke-direct {p0, v1}, Lcom/google/common/collect/CompactHashMap;->setHashTableMask(I)V
 
-    .line 217
+    .line 274
     new-array v1, v0, [I
 
     iput-object v1, p0, Lcom/google/common/collect/CompactHashMap;->entries:[I
 
-    .line 218
+    .line 275
     new-array v1, v0, [Ljava/lang/Object;
 
     iput-object v1, p0, Lcom/google/common/collect/CompactHashMap;->keys:[Ljava/lang/Object;
 
-    .line 219
+    .line 276
     new-array v1, v0, [Ljava/lang/Object;
 
     iput-object v1, p0, Lcom/google/common/collect/CompactHashMap;->values:[Ljava/lang/Object;
@@ -797,7 +1196,7 @@
 .method public clear()V
     .locals 6
 
-    .line 890
+    .line 981
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->needsAllocArrays()Z
 
     move-result v0
@@ -806,11 +1205,11 @@
 
     return-void
 
-    .line 893
+    .line 984
     :cond_0
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->incrementModCount()V
 
-    .line 894
+    .line 985
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->delegateOrNull()Ljava/util/Map;
 
     move-result-object v0
@@ -821,7 +1220,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 897
+    .line 988
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->size()I
 
     move-result v3
@@ -836,45 +1235,53 @@
 
     iput v3, p0, Lcom/google/common/collect/CompactHashMap;->metadata:I
 
-    .line 898
+    .line 989
     invoke-interface {v0}, Ljava/util/Map;->clear()V
 
-    .line 899
+    .line 990
     iput-object v1, p0, Lcom/google/common/collect/CompactHashMap;->table:Ljava/lang/Object;
 
-    .line 900
+    .line 991
     iput v2, p0, Lcom/google/common/collect/CompactHashMap;->size:I
 
     goto :goto_0
 
-    .line 902
+    .line 993
     :cond_1
-    iget-object v0, p0, Lcom/google/common/collect/CompactHashMap;->keys:[Ljava/lang/Object;
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireKeys()[Ljava/lang/Object;
+
+    move-result-object v0
 
     iget v3, p0, Lcom/google/common/collect/CompactHashMap;->size:I
 
     invoke-static {v0, v2, v3, v1}, Ljava/util/Arrays;->fill([Ljava/lang/Object;IILjava/lang/Object;)V
 
-    .line 903
-    iget-object v0, p0, Lcom/google/common/collect/CompactHashMap;->values:[Ljava/lang/Object;
+    .line 994
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireValues()[Ljava/lang/Object;
+
+    move-result-object v0
 
     iget v3, p0, Lcom/google/common/collect/CompactHashMap;->size:I
 
     invoke-static {v0, v2, v3, v1}, Ljava/util/Arrays;->fill([Ljava/lang/Object;IILjava/lang/Object;)V
 
-    .line 904
-    iget-object v0, p0, Lcom/google/common/collect/CompactHashMap;->table:Ljava/lang/Object;
+    .line 995
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireTable()Ljava/lang/Object;
+
+    move-result-object v0
 
     invoke-static {v0}, Lcom/google/common/collect/CompactHashing;->tableClear(Ljava/lang/Object;)V
 
-    .line 905
-    iget-object v0, p0, Lcom/google/common/collect/CompactHashMap;->entries:[I
+    .line 996
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireEntries()[I
+
+    move-result-object v0
 
     iget v1, p0, Lcom/google/common/collect/CompactHashMap;->size:I
 
     invoke-static {v0, v2, v1, v2}, Ljava/util/Arrays;->fill([IIII)V
 
-    .line 906
+    .line 997
     iput v2, p0, Lcom/google/common/collect/CompactHashMap;->size:I
 
     :goto_0
@@ -884,18 +1291,26 @@
 .method public containsKey(Ljava/lang/Object;)Z
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 440
+    .line 504
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->delegateOrNull()Ljava/util/Map;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 441
+    .line 505
     invoke-interface {v0, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
     move-result p0
@@ -925,18 +1340,26 @@
 .method public containsValue(Ljava/lang/Object;)Z
     .locals 3
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 807
+    .line 898
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->delegateOrNull()Ljava/util/Map;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 809
+    .line 900
     invoke-interface {v0, p1}, Ljava/util/Map;->containsValue(Ljava/lang/Object;)Z
 
     move-result p0
@@ -948,16 +1371,16 @@
 
     move v1, v0
 
-    .line 811
+    .line 902
     :goto_0
     iget v2, p0, Lcom/google/common/collect/CompactHashMap;->size:I
 
     if-ge v1, v2, :cond_2
 
-    .line 812
-    iget-object v2, p0, Lcom/google/common/collect/CompactHashMap;->values:[Ljava/lang/Object;
+    .line 903
+    invoke-direct {p0, v1}, Lcom/google/common/collect/CompactHashMap;->value(I)Ljava/lang/Object;
 
-    aget-object v2, v2, v1
+    move-result-object v2
 
     invoke-static {p1, v2}, Lcom/google/common/base/Objects;->equal(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -988,7 +1411,7 @@
         }
     .end annotation
 
-    .line 242
+    .line 297
     invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->hashTableMask()I
 
     move-result v0
@@ -999,7 +1422,7 @@
 
     move-result-object v0
 
-    .line 243
+    .line 298
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->firstEntryIndex()I
 
     move-result v1
@@ -1007,40 +1430,40 @@
     :goto_0
     if-ltz v1, :cond_0
 
-    .line 244
-    iget-object v2, p0, Lcom/google/common/collect/CompactHashMap;->keys:[Ljava/lang/Object;
+    .line 299
+    invoke-direct {p0, v1}, Lcom/google/common/collect/CompactHashMap;->key(I)Ljava/lang/Object;
 
-    aget-object v2, v2, v1
+    move-result-object v2
 
-    iget-object v3, p0, Lcom/google/common/collect/CompactHashMap;->values:[Ljava/lang/Object;
+    invoke-direct {p0, v1}, Lcom/google/common/collect/CompactHashMap;->value(I)Ljava/lang/Object;
 
-    aget-object v3, v3, v1
+    move-result-object v3
 
     invoke-interface {v0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 243
+    .line 298
     invoke-virtual {p0, v1}, Lcom/google/common/collect/CompactHashMap;->getSuccessor(I)I
 
     move-result v1
 
     goto :goto_0
 
-    .line 246
+    .line 301
     :cond_0
     iput-object v0, p0, Lcom/google/common/collect/CompactHashMap;->table:Ljava/lang/Object;
 
     const/4 v1, 0x0
 
-    .line 247
+    .line 302
     iput-object v1, p0, Lcom/google/common/collect/CompactHashMap;->entries:[I
 
-    .line 248
+    .line 303
     iput-object v1, p0, Lcom/google/common/collect/CompactHashMap;->keys:[Ljava/lang/Object;
 
-    .line 249
+    .line 304
     iput-object v1, p0, Lcom/google/common/collect/CompactHashMap;->values:[Ljava/lang/Object;
 
-    .line 250
+    .line 305
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->incrementModCount()V
 
     return-object v0
@@ -1057,7 +1480,7 @@
         }
     .end annotation
 
-    .line 663
+    .line 738
     new-instance v0, Lcom/google/common/collect/CompactHashMap$EntrySetView;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/CompactHashMap$EntrySetView;-><init>(Lcom/google/common/collect/CompactHashMap;)V
@@ -1067,6 +1490,15 @@
 
 .method createHashFloodingResistantDelegate(I)Ljava/util/Map;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "tableSize"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1075,7 +1507,7 @@
         }
     .end annotation
 
-    .line 235
+    .line 292
     new-instance p0, Ljava/util/LinkedHashMap;
 
     const/high16 v0, 0x3f800000    # 1.0f
@@ -1095,7 +1527,7 @@
         }
     .end annotation
 
-    .line 607
+    .line 682
     new-instance v0, Lcom/google/common/collect/CompactHashMap$KeySetView;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/CompactHashMap$KeySetView;-><init>(Lcom/google/common/collect/CompactHashMap;)V
@@ -1113,7 +1545,7 @@
         }
     .end annotation
 
-    .line 827
+    .line 918
     new-instance v0, Lcom/google/common/collect/CompactHashMap$ValuesView;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/CompactHashMap$ValuesView;-><init>(Lcom/google/common/collect/CompactHashMap;)V
@@ -1131,17 +1563,17 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
-    .line 228
+    .line 285
     iget-object p0, p0, Lcom/google/common/collect/CompactHashMap;->table:Ljava/lang/Object;
 
     instance-of v0, p0, Ljava/util/Map;
 
     if-eqz v0, :cond_0
 
-    .line 229
+    .line 286
     check-cast p0, Ljava/util/Map;
 
     return-object p0
@@ -1163,7 +1595,7 @@
         }
     .end annotation
 
-    .line 659
+    .line 734
     iget-object v0, p0, Lcom/google/common/collect/CompactHashMap;->entrySetView:Ljava/util/Set;
 
     if-nez v0, :cond_0
@@ -1189,14 +1621,14 @@
         }
     .end annotation
 
-    .line 726
+    .line 807
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->delegateOrNull()Ljava/util/Map;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 728
+    .line 809
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object p0
@@ -1207,7 +1639,7 @@
 
     return-object p0
 
-    .line 730
+    .line 811
     :cond_0
     new-instance v0, Lcom/google/common/collect/CompactHashMap$2;
 
@@ -1219,7 +1651,7 @@
 .method firstEntryIndex()I
     .locals 0
 
-    .line 538
+    .line 611
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->isEmpty()Z
 
     move-result p0
@@ -1240,9 +1672,18 @@
 .method public get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1251,21 +1692,24 @@
         }
     .end annotation
 
-    .line 447
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 511
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->delegateOrNull()Ljava/util/Map;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 449
+    .line 513
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
     return-object p0
 
-    .line 451
+    .line 515
     :cond_0
     invoke-direct {p0, p1}, Lcom/google/common/collect/CompactHashMap;->indexOf(Ljava/lang/Object;)I
 
@@ -1279,24 +1723,32 @@
 
     return-object p0
 
-    .line 455
+    .line 519
     :cond_1
     invoke-virtual {p0, p1}, Lcom/google/common/collect/CompactHashMap;->accessEntry(I)V
 
-    .line 456
-    iget-object p0, p0, Lcom/google/common/collect/CompactHashMap;->values:[Ljava/lang/Object;
+    .line 520
+    invoke-direct {p0, p1}, Lcom/google/common/collect/CompactHashMap;->value(I)Ljava/lang/Object;
 
-    aget-object p0, p0, p1
+    move-result-object p0
 
     return-object p0
 .end method
 
 .method getSuccessor(I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "entryIndex"
+        }
+    .end annotation
 
     add-int/lit8 p1, p1, 0x1
 
-    .line 542
+    .line 615
     iget p0, p0, Lcom/google/common/collect/CompactHashMap;->size:I
 
     if-ge p1, p0, :cond_0
@@ -1313,7 +1765,7 @@
 .method incrementModCount()V
     .locals 1
 
-    .line 267
+    .line 322
     iget v0, p0, Lcom/google/common/collect/CompactHashMap;->metadata:I
 
     add-int/lit8 v0, v0, 0x20
@@ -1325,6 +1777,14 @@
 
 .method init(I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "expectedSize"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -1337,7 +1797,7 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 195
+    .line 253
     :goto_0
     const-string v2, "Expected size must be >= 0"
 
@@ -1345,7 +1805,7 @@
 
     const v1, 0x3fffffff    # 1.9999999f
 
-    .line 198
+    .line 256
     invoke-static {p1, v0, v1}, Lcom/google/common/primitives/Ints;->constrainToRange(III)I
 
     move-result p1
@@ -1356,41 +1816,52 @@
 .end method
 
 .method insertEntry(ILjava/lang/Object;Ljava/lang/Object;II)V
-    .locals 2
+    .locals 1
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
     .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "entryIndex",
+            "key",
+            "value",
+            "hash",
+            "mask"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(ITK;TV;II)V"
         }
     .end annotation
 
-    .line 350
-    iget-object v0, p0, Lcom/google/common/collect/CompactHashMap;->entries:[I
+    const/4 v0, 0x0
 
-    const/4 v1, 0x0
-
-    invoke-static {p4, v1, p5}, Lcom/google/common/collect/CompactHashing;->maskCombine(III)I
+    .line 405
+    invoke-static {p4, v0, p5}, Lcom/google/common/collect/CompactHashing;->maskCombine(III)I
 
     move-result p4
 
-    aput p4, v0, p1
+    invoke-direct {p0, p1, p4}, Lcom/google/common/collect/CompactHashMap;->setEntry(II)V
 
-    .line 351
-    iget-object p4, p0, Lcom/google/common/collect/CompactHashMap;->keys:[Ljava/lang/Object;
+    .line 406
+    invoke-direct {p0, p1, p2}, Lcom/google/common/collect/CompactHashMap;->setKey(ILjava/lang/Object;)V
 
-    aput-object p2, p4, p1
-
-    .line 352
-    iget-object p0, p0, Lcom/google/common/collect/CompactHashMap;->values:[Ljava/lang/Object;
-
-    aput-object p3, p0, p1
+    .line 407
+    invoke-direct {p0, p1, p3}, Lcom/google/common/collect/CompactHashMap;->setValue(ILjava/lang/Object;)V
 
     return-void
 .end method
@@ -1398,7 +1869,7 @@
 .method public isEmpty()Z
     .locals 0
 
-    .line 802
+    .line 893
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->size()I
 
     move-result p0
@@ -1426,7 +1897,7 @@
         }
     .end annotation
 
-    .line 603
+    .line 678
     iget-object v0, p0, Lcom/google/common/collect/CompactHashMap;->keySetView:Ljava/util/Set;
 
     if-nez v0, :cond_0
@@ -1451,14 +1922,14 @@
         }
     .end annotation
 
-    .line 642
+    .line 717
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->delegateOrNull()Ljava/util/Map;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 644
+    .line 719
     invoke-interface {v0}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
     move-result-object p0
@@ -1469,7 +1940,7 @@
 
     return-object p0
 
-    .line 646
+    .line 721
     :cond_0
     new-instance v0, Lcom/google/common/collect/CompactHashMap$1;
 
@@ -1479,126 +1950,136 @@
 .end method
 
 .method moveLastEntry(II)V
-    .locals 8
+    .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dstIndex",
+            "mask"
+        }
+    .end annotation
 
-    .line 498
+    .line 567
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireTable()Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 568
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireEntries()[I
+
+    move-result-object v1
+
+    .line 569
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireKeys()[Ljava/lang/Object;
+
+    move-result-object v2
+
+    .line 570
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireValues()[Ljava/lang/Object;
+
+    move-result-object v3
+
+    .line 571
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->size()I
 
-    move-result v0
+    move-result p0
 
-    add-int/lit8 v1, v0, -0x1
+    add-int/lit8 v4, p0, -0x1
 
-    const/4 v2, 0x0
+    const/4 v5, 0x0
 
-    const/4 v3, 0x0
+    const/4 v6, 0x0
 
-    if-ge p1, v1, :cond_2
+    if-ge p1, v4, :cond_2
 
-    .line 501
-    iget-object v4, p0, Lcom/google/common/collect/CompactHashMap;->keys:[Ljava/lang/Object;
+    .line 574
+    aget-object v7, v2, v4
 
-    aget-object v5, v4, v1
+    .line 575
+    aput-object v7, v2, p1
 
-    .line 502
-    aput-object v5, v4, p1
+    .line 576
+    aget-object v8, v3, v4
 
-    .line 503
-    iget-object v6, p0, Lcom/google/common/collect/CompactHashMap;->values:[Ljava/lang/Object;
+    aput-object v8, v3, p1
 
-    aget-object v7, v6, v1
+    .line 577
+    aput-object v6, v2, v4
 
-    aput-object v7, v6, p1
+    .line 578
+    aput-object v6, v3, v4
 
-    .line 504
-    aput-object v3, v4, v1
+    .line 581
+    aget v2, v1, v4
 
-    .line 505
-    aput-object v3, v6, v1
+    aput v2, v1, p1
 
-    .line 508
-    iget-object v3, p0, Lcom/google/common/collect/CompactHashMap;->entries:[I
+    .line 582
+    aput v5, v1, v4
 
-    aget v4, v3, v1
-
-    aput v4, v3, p1
-
-    .line 509
-    aput v2, v3, v1
-
-    .line 512
-    invoke-static {v5}, Lcom/google/common/collect/Hashing;->smearedHash(Ljava/lang/Object;)I
-
-    move-result v1
-
-    and-int/2addr v1, p2
-
-    .line 513
-    iget-object v2, p0, Lcom/google/common/collect/CompactHashMap;->table:Ljava/lang/Object;
-
-    invoke-static {v2, v1}, Lcom/google/common/collect/CompactHashing;->tableGet(Ljava/lang/Object;I)I
+    .line 585
+    invoke-static {v7}, Lcom/google/common/collect/Hashing;->smearedHash(Ljava/lang/Object;)I
 
     move-result v2
 
-    if-ne v2, v0, :cond_0
+    and-int/2addr v2, p2
 
-    .line 517
-    iget-object p0, p0, Lcom/google/common/collect/CompactHashMap;->table:Ljava/lang/Object;
+    .line 586
+    invoke-static {v0, v2}, Lcom/google/common/collect/CompactHashing;->tableGet(Ljava/lang/Object;I)I
+
+    move-result v3
+
+    if-ne v3, p0, :cond_0
 
     add-int/lit8 p1, p1, 0x1
 
-    invoke-static {p0, v1, p1}, Lcom/google/common/collect/CompactHashing;->tableSet(Ljava/lang/Object;II)V
+    .line 590
+    invoke-static {v0, v2, p1}, Lcom/google/common/collect/CompactHashing;->tableSet(Ljava/lang/Object;II)V
 
     goto :goto_1
 
     :cond_0
     :goto_0
-    add-int/lit8 v2, v2, -0x1
+    add-int/lit8 v3, v3, -0x1
 
-    .line 524
-    iget-object v1, p0, Lcom/google/common/collect/CompactHashMap;->entries:[I
+    .line 597
+    aget v0, v1, v3
 
-    aget v1, v1, v2
+    .line 598
+    invoke-static {v0, p2}, Lcom/google/common/collect/CompactHashing;->getNext(II)I
 
-    .line 525
-    invoke-static {v1, p2}, Lcom/google/common/collect/CompactHashing;->getNext(II)I
+    move-result v2
 
-    move-result v3
-
-    if-ne v3, v0, :cond_1
-
-    .line 528
-    iget-object p0, p0, Lcom/google/common/collect/CompactHashMap;->entries:[I
+    if-ne v2, p0, :cond_1
 
     add-int/lit8 p1, p1, 0x1
 
-    invoke-static {v1, p1, p2}, Lcom/google/common/collect/CompactHashing;->maskCombine(III)I
+    .line 601
+    invoke-static {v0, p1, p2}, Lcom/google/common/collect/CompactHashing;->maskCombine(III)I
 
-    move-result p1
+    move-result p0
 
-    aput p1, p0, v2
+    aput p0, v1, v3
 
     goto :goto_1
 
     :cond_1
-    move v2, v3
+    move v3, v2
 
     goto :goto_0
 
-    .line 531
+    .line 604
     :cond_2
-    iget-object p2, p0, Lcom/google/common/collect/CompactHashMap;->keys:[Ljava/lang/Object;
+    aput-object v6, v2, p1
 
-    aput-object v3, p2, p1
+    .line 605
+    aput-object v6, v3, p1
 
-    .line 532
-    iget-object p2, p0, Lcom/google/common/collect/CompactHashMap;->values:[Ljava/lang/Object;
-
-    aput-object v3, p2, p1
-
-    .line 533
-    iget-object p0, p0, Lcom/google/common/collect/CompactHashMap;->entries:[I
-
-    aput v2, p0, p1
+    .line 606
+    aput v5, v1, p1
 
     :goto_1
     return-void
@@ -1607,7 +2088,7 @@
 .method needsAllocArrays()Z
     .locals 0
 
-    .line 204
+    .line 261
     iget-object p0, p0, Lcom/google/common/collect/CompactHashMap;->table:Ljava/lang/Object;
 
     if-nez p0, :cond_0
@@ -1626,33 +2107,44 @@
 .method public put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 12
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV;)TV;"
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
-    .line 282
+    .line 337
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->needsAllocArrays()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 283
+    .line 338
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->allocArrays()I
 
-    .line 285
+    .line 340
     :cond_0
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->delegateOrNull()Ljava/util/Map;
 
@@ -1660,42 +2152,50 @@
 
     if-eqz v0, :cond_1
 
-    .line 287
+    .line 342
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
     return-object p0
 
-    .line 289
+    .line 344
     :cond_1
-    iget-object v0, p0, Lcom/google/common/collect/CompactHashMap;->entries:[I
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireEntries()[I
 
-    .line 290
-    iget-object v1, p0, Lcom/google/common/collect/CompactHashMap;->keys:[Ljava/lang/Object;
+    move-result-object v0
 
-    .line 291
-    iget-object v2, p0, Lcom/google/common/collect/CompactHashMap;->values:[Ljava/lang/Object;
+    .line 345
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireKeys()[Ljava/lang/Object;
 
-    .line 293
+    move-result-object v1
+
+    .line 346
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireValues()[Ljava/lang/Object;
+
+    move-result-object v2
+
+    .line 348
     iget v4, p0, Lcom/google/common/collect/CompactHashMap;->size:I
 
     add-int/lit8 v9, v4, 0x1
 
-    .line 295
+    .line 350
     invoke-static {p1}, Lcom/google/common/collect/Hashing;->smearedHash(Ljava/lang/Object;)I
 
     move-result v7
 
-    .line 296
+    .line 351
     invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->hashTableMask()I
 
     move-result v3
 
     and-int v5, v7, v3
 
-    .line 298
-    iget-object v6, p0, Lcom/google/common/collect/CompactHashMap;->table:Ljava/lang/Object;
+    .line 353
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireTable()Ljava/lang/Object;
+
+    move-result-object v6
 
     invoke-static {v6, v5}, Lcom/google/common/collect/CompactHashing;->tableGet(Ljava/lang/Object;I)I
 
@@ -1705,7 +2205,7 @@
 
     if-le v9, v3, :cond_2
 
-    .line 302
+    .line 357
     invoke-static {v3}, Lcom/google/common/collect/CompactHashing;->newCapacity(I)I
 
     move-result v0
@@ -1719,15 +2219,17 @@
 
     goto :goto_3
 
-    .line 304
+    .line 359
     :cond_2
-    iget-object v0, p0, Lcom/google/common/collect/CompactHashMap;->table:Ljava/lang/Object;
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireTable()Ljava/lang/Object;
+
+    move-result-object v0
 
     invoke-static {v0, v5, v9}, Lcom/google/common/collect/CompactHashing;->tableSet(Ljava/lang/Object;II)V
 
     goto :goto_2
 
-    .line 309
+    .line 364
     :cond_3
     invoke-static {v7, v3}, Lcom/google/common/collect/CompactHashing;->getHashPrefix(II)I
 
@@ -1738,10 +2240,10 @@
     :goto_1
     add-int/lit8 v6, v6, -0x1
 
-    .line 313
+    .line 368
     aget v10, v0, v6
 
-    .line 314
+    .line 369
     invoke-static {v10, v3}, Lcom/google/common/collect/CompactHashing;->getHashPrefix(II)I
 
     move-result v11
@@ -1750,25 +2252,25 @@
 
     aget-object v11, v1, v6
 
-    .line 315
+    .line 370
     invoke-static {p1, v11}, Lcom/google/common/base/Objects;->equal(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v11
 
     if-eqz v11, :cond_4
 
-    .line 318
+    .line 372
     aget-object p1, v2, v6
 
-    .line 320
+    .line 374
     aput-object p2, v2, v6
 
-    .line 321
+    .line 375
     invoke-virtual {p0, v6}, Lcom/google/common/collect/CompactHashMap;->accessEntry(I)V
 
     return-object p1
 
-    .line 324
+    .line 378
     :cond_4
     invoke-static {v10, v3}, Lcom/google/common/collect/CompactHashing;->getNext(II)I
 
@@ -1782,7 +2284,7 @@
 
     if-lt v8, v1, :cond_5
 
-    .line 329
+    .line 383
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->convertToHashFloodingResistantImplementation()Ljava/util/Map;
 
     move-result-object p0
@@ -1796,7 +2298,7 @@
     :cond_5
     if-le v9, v3, :cond_6
 
-    .line 334
+    .line 388
     invoke-static {v3}, Lcom/google/common/collect/CompactHashing;->newCapacity(I)I
 
     move-result v0
@@ -1807,7 +2309,7 @@
 
     goto :goto_0
 
-    .line 336
+    .line 390
     :cond_6
     invoke-static {v10, v9, v3}, Lcom/google/common/collect/CompactHashing;->maskCombine(III)I
 
@@ -1818,7 +2320,7 @@
     :goto_2
     move v8, v3
 
-    .line 339
+    .line 393
     :goto_3
     invoke-direct {p0, v9}, Lcom/google/common/collect/CompactHashMap;->resizeMeMaybe(I)V
 
@@ -1828,13 +2330,13 @@
 
     move-object v6, p2
 
-    .line 340
+    .line 394
     invoke-virtual/range {v3 .. v8}, Lcom/google/common/collect/CompactHashMap;->insertEntry(ILjava/lang/Object;Ljava/lang/Object;II)V
 
-    .line 341
+    .line 395
     iput v9, p0, Lcom/google/common/collect/CompactHashMap;->size:I
 
-    .line 342
+    .line 396
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->incrementModCount()V
 
     const/4 p0, 0x0
@@ -1850,9 +2352,18 @@
 .method public remove(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1861,30 +2372,30 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
-    .line 464
+    .line 528
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->delegateOrNull()Ljava/util/Map;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 466
+    .line 530
     invoke-interface {v0, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
     return-object p0
 
-    .line 468
+    .line 532
     :cond_0
     invoke-direct {p0, p1}, Lcom/google/common/collect/CompactHashMap;->removeHelper(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 469
+    .line 533
     sget-object p1, Lcom/google/common/collect/CompactHashMap;->NOT_FOUND:Ljava/lang/Object;
 
     if-ne p0, p1, :cond_1
@@ -1897,9 +2408,19 @@
 
 .method resizeEntries(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "newCapacity"
+        }
+    .end annotation
 
-    .line 373
-    iget-object v0, p0, Lcom/google/common/collect/CompactHashMap;->entries:[I
+    .line 427
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireEntries()[I
+
+    move-result-object v0
 
     invoke-static {v0, p1}, Ljava/util/Arrays;->copyOf([II)[I
 
@@ -1907,8 +2428,10 @@
 
     iput-object v0, p0, Lcom/google/common/collect/CompactHashMap;->entries:[I
 
-    .line 374
-    iget-object v0, p0, Lcom/google/common/collect/CompactHashMap;->keys:[Ljava/lang/Object;
+    .line 428
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireKeys()[Ljava/lang/Object;
+
+    move-result-object v0
 
     invoke-static {v0, p1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
@@ -1916,8 +2439,10 @@
 
     iput-object v0, p0, Lcom/google/common/collect/CompactHashMap;->keys:[Ljava/lang/Object;
 
-    .line 375
-    iget-object v0, p0, Lcom/google/common/collect/CompactHashMap;->values:[Ljava/lang/Object;
+    .line 429
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireValues()[Ljava/lang/Object;
+
+    move-result-object v0
 
     invoke-static {v0, p1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
@@ -1931,14 +2456,14 @@
 .method public size()I
     .locals 1
 
-    .line 796
+    .line 887
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->delegateOrNull()Ljava/util/Map;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 797
+    .line 888
     invoke-interface {v0}, Ljava/util/Map;->size()I
 
     move-result p0
@@ -1955,7 +2480,7 @@
 .method public trimToSize()V
     .locals 3
 
-    .line 867
+    .line 958
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->needsAllocArrays()Z
 
     move-result v0
@@ -1964,7 +2489,7 @@
 
     return-void
 
-    .line 870
+    .line 961
     :cond_0
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->delegateOrNull()Ljava/util/Map;
 
@@ -1972,7 +2497,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 872
+    .line 963
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->size()I
 
     move-result v1
@@ -1981,35 +2506,37 @@
 
     move-result-object v1
 
-    .line 873
+    .line 964
     invoke-interface {v1, v0}, Ljava/util/Map;->putAll(Ljava/util/Map;)V
 
-    .line 874
+    .line 965
     iput-object v1, p0, Lcom/google/common/collect/CompactHashMap;->table:Ljava/lang/Object;
 
     return-void
 
-    .line 877
+    .line 968
     :cond_1
     iget v0, p0, Lcom/google/common/collect/CompactHashMap;->size:I
 
-    .line 878
-    iget-object v1, p0, Lcom/google/common/collect/CompactHashMap;->entries:[I
+    .line 969
+    invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->requireEntries()[I
+
+    move-result-object v1
 
     array-length v1, v1
 
     if-ge v0, v1, :cond_2
 
-    .line 879
+    .line 970
     invoke-virtual {p0, v0}, Lcom/google/common/collect/CompactHashMap;->resizeEntries(I)V
 
-    .line 881
+    .line 972
     :cond_2
     invoke-static {v0}, Lcom/google/common/collect/CompactHashing;->tableSize(I)I
 
     move-result v0
 
-    .line 882
+    .line 973
     invoke-direct {p0}, Lcom/google/common/collect/CompactHashMap;->hashTableMask()I
 
     move-result v1
@@ -2018,7 +2545,7 @@
 
     const/4 v2, 0x0
 
-    .line 884
+    .line 975
     invoke-direct {p0, v1, v0, v2, v2}, Lcom/google/common/collect/CompactHashMap;->resizeTable(IIII)I
 
     :cond_3
@@ -2035,7 +2562,7 @@
         }
     .end annotation
 
-    .line 823
+    .line 914
     iget-object v0, p0, Lcom/google/common/collect/CompactHashMap;->valuesView:Ljava/util/Collection;
 
     if-nez v0, :cond_0
@@ -2060,14 +2587,14 @@
         }
     .end annotation
 
-    .line 849
+    .line 940
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->delegateOrNull()Ljava/util/Map;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 851
+    .line 942
     invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
 
     move-result-object p0
@@ -2078,7 +2605,7 @@
 
     return-object p0
 
-    .line 853
+    .line 944
     :cond_0
     new-instance v0, Lcom/google/common/collect/CompactHashMap$3;
 

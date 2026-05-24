@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/graph/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<N:",
@@ -36,6 +39,15 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/graph/AbstractGraphBuilder;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "builder"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -44,10 +56,10 @@
         }
     .end annotation
 
-    .line 35
+    .line 36
     invoke-direct {p0}, Lcom/google/common/graph/ForwardingGraph;-><init>()V
 
-    .line 36
+    .line 37
     new-instance v0, Lcom/google/common/graph/StandardMutableValueGraph;
 
     invoke-direct {v0, p1}, Lcom/google/common/graph/StandardMutableValueGraph;-><init>(Lcom/google/common/graph/AbstractGraphBuilder;)V
@@ -61,13 +73,22 @@
 # virtual methods
 .method public addNode(Ljava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)Z"
         }
     .end annotation
 
-    .line 46
+    .line 47
     iget-object p0, p0, Lcom/google/common/graph/StandardMutableGraph;->backingValueGraph:Lcom/google/common/graph/MutableValueGraph;
 
     invoke-interface {p0, p1}, Lcom/google/common/graph/MutableValueGraph;->addNode(Ljava/lang/Object;)Z
@@ -77,7 +98,7 @@
     return p0
 .end method
 
-.method protected delegate()Lcom/google/common/graph/BaseGraph;
+.method delegate()Lcom/google/common/graph/BaseGraph;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -87,7 +108,7 @@
         }
     .end annotation
 
-    .line 41
+    .line 42
     iget-object p0, p0, Lcom/google/common/graph/StandardMutableGraph;->backingValueGraph:Lcom/google/common/graph/MutableValueGraph;
 
     return-object p0
@@ -95,6 +116,15 @@
 
 .method public putEdge(Lcom/google/common/graph/EndpointPair;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "endpoints"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -103,10 +133,10 @@
         }
     .end annotation
 
-    .line 56
+    .line 57
     invoke-virtual {p0, p1}, Lcom/google/common/graph/StandardMutableGraph;->validateEndpoints(Lcom/google/common/graph/EndpointPair;)V
 
-    .line 57
+    .line 58
     invoke-virtual {p1}, Lcom/google/common/graph/EndpointPair;->nodeU()Ljava/lang/Object;
 
     move-result-object v0
@@ -124,13 +154,24 @@
 
 .method public putEdge(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "nodeU",
+            "nodeV"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;TN;)Z"
         }
     .end annotation
 
-    .line 51
+    .line 52
     iget-object p0, p0, Lcom/google/common/graph/StandardMutableGraph;->backingValueGraph:Lcom/google/common/graph/MutableValueGraph;
 
     sget-object v0, Lcom/google/common/graph/GraphConstants$Presence;->EDGE_EXISTS:Lcom/google/common/graph/GraphConstants$Presence;
@@ -154,6 +195,15 @@
 
 .method public removeEdge(Lcom/google/common/graph/EndpointPair;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "endpoints"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -162,10 +212,10 @@
         }
     .end annotation
 
-    .line 72
+    .line 73
     invoke-virtual {p0, p1}, Lcom/google/common/graph/StandardMutableGraph;->validateEndpoints(Lcom/google/common/graph/EndpointPair;)V
 
-    .line 73
+    .line 74
     invoke-virtual {p1}, Lcom/google/common/graph/EndpointPair;->nodeU()Ljava/lang/Object;
 
     move-result-object v0
@@ -183,13 +233,24 @@
 
 .method public removeEdge(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "nodeU",
+            "nodeV"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;TN;)Z"
         }
     .end annotation
 
-    .line 67
+    .line 68
     iget-object p0, p0, Lcom/google/common/graph/StandardMutableGraph;->backingValueGraph:Lcom/google/common/graph/MutableValueGraph;
 
     invoke-interface {p0, p1, p2}, Lcom/google/common/graph/MutableValueGraph;->removeEdge(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -211,13 +272,22 @@
 
 .method public removeNode(Ljava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)Z"
         }
     .end annotation
 
-    .line 62
+    .line 63
     iget-object p0, p0, Lcom/google/common/graph/StandardMutableGraph;->backingValueGraph:Lcom/google/common/graph/MutableValueGraph;
 
     invoke-interface {p0, p1}, Lcom/google/common/graph/MutableValueGraph;->removeNode(Ljava/lang/Object;)Z

@@ -30,11 +30,17 @@
 
 # instance fields
 .field private delegate:Lcom/google/common/util/concurrent/ListenableFuture;
+    .annotation runtime Lcom/google/errorprone/annotations/concurrent/LazyInit;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/common/util/concurrent/ListenableFuture<",
             "TV;>;"
         }
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -42,6 +48,15 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/util/concurrent/ListenableFuture;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "delegate"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -50,10 +65,10 @@
         }
     .end annotation
 
-    .line 735
+    .line 807
     invoke-direct {p0}, Lcom/google/common/util/concurrent/AbstractFuture$TrustedFuture;-><init>()V
 
-    .line 736
+    .line 808
     iput-object p1, p0, Lcom/google/common/util/concurrent/Futures$NonCancellationPropagatingFuture;->delegate:Lcom/google/common/util/concurrent/ListenableFuture;
 
     return-void
@@ -66,7 +81,7 @@
 
     const/4 v0, 0x0
 
-    .line 760
+    .line 833
     iput-object v0, p0, Lcom/google/common/util/concurrent/Futures$NonCancellationPropagatingFuture;->delegate:Lcom/google/common/util/concurrent/ListenableFuture;
 
     return-void
@@ -74,38 +89,22 @@
 
 .method protected pendingToString()Ljava/lang/String;
     .locals 2
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 
-    .line 751
+    .line 824
     iget-object p0, p0, Lcom/google/common/util/concurrent/Futures$NonCancellationPropagatingFuture;->delegate:Lcom/google/common/util/concurrent/ListenableFuture;
 
     if-eqz p0, :cond_0
 
-    .line 753
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    .line 826
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    move-result-object p0
+    const-string v1, "delegate=["
 
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, 0xb
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v0, "delegate=["
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -130,12 +129,12 @@
 .method public run()V
     .locals 1
 
-    .line 743
+    .line 815
     iget-object v0, p0, Lcom/google/common/util/concurrent/Futures$NonCancellationPropagatingFuture;->delegate:Lcom/google/common/util/concurrent/ListenableFuture;
 
     if-eqz v0, :cond_0
 
-    .line 745
+    .line 817
     invoke-virtual {p0, v0}, Lcom/google/common/util/concurrent/Futures$NonCancellationPropagatingFuture;->setFuture(Lcom/google/common/util/concurrent/ListenableFuture;)Z
 
     :cond_0

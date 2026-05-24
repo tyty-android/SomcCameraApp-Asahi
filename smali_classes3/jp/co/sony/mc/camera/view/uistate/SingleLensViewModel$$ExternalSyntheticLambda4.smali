@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function4;
+.implements Lkotlin/jvm/functions/Function6;
 
 
 # instance fields
@@ -24,7 +24,7 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
@@ -34,11 +34,15 @@
 
     check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
 
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+    check-cast p3, Ljava/lang/Boolean;
 
-    check-cast p4, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
+    check-cast p4, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
-    invoke-static {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->$r8$lambda$A9ZcfxayNC-Z0NdHMMlYIGgjKO0(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;)Landroid/util/Range;
+    check-cast p5, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+
+    check-cast p6, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
+
+    invoke-static/range {p0 .. p6}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->$r8$lambda$na98pzM6tHPiyy4Ba5HYmtz1qIs(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;Ljava/lang/Boolean;Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;)Landroid/util/Range;
 
     move-result-object p0
 

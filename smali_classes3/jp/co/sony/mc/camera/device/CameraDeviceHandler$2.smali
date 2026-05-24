@@ -30,7 +30,7 @@
 .method static constructor <clinit>()V
     .locals 6
 
-    .line 5742
+    .line 6009
     invoke-static {}, Ljp/co/sony/mc/camera/recorder/RecorderController$Result;->values()[Ljp/co/sony/mc/camera/recorder/RecorderController$Result;
 
     move-result-object v0
@@ -102,7 +102,7 @@
     :try_end_3
     .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
 
-    .line 4764
+    .line 5011
     :catch_3
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;->values()[Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
 
@@ -153,7 +153,7 @@
     :try_end_6
     .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
 
-    .line 1837
+    .line 2024
     :catch_6
     invoke-static {}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;->values()[Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;
 
@@ -204,7 +204,7 @@
     :try_end_9
     .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
 
-    .line 543
+    .line 595
     :catch_9
     invoke-static {}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;->values()[Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;
 
@@ -227,7 +227,7 @@
     :try_end_a
     .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
 
-    .line 534
+    .line 586
     :catch_a
     invoke-static {}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenCloseRequestStatus;->values()[Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenCloseRequestStatus;
 

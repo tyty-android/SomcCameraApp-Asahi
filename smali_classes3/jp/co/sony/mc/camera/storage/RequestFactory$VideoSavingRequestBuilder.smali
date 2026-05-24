@@ -21,6 +21,16 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusVideo;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "commonStatus",
+            "videoStatus"
+        }
+    .end annotation
 
     .line 174
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/storage/RequestFactory$RequestBuilder;-><init>(Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;)V
@@ -35,6 +45,16 @@
 # virtual methods
 .method public generateAndSetPath(Ljp/co/sony/mc/camera/recorder/RecordingProfile;Ljp/co/sony/mc/camera/storage/Storage;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "profile",
+            "storage"
+        }
+    .end annotation
 
     .line 193
     check-cast p2, Ljp/co/sony/mc/camera/storage/StorageImpl;

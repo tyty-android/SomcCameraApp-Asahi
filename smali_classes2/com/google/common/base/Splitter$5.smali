@@ -35,11 +35,27 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/base/Splitter;Ljava/lang/CharSequence;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$sequence"
+        }
+    .end annotation
 
-    .line 383
-    iput-object p1, p0, Lcom/google/common/base/Splitter$5;->this$0:Lcom/google/common/base/Splitter;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
 
+    .line 387
     iput-object p2, p0, Lcom/google/common/base/Splitter$5;->val$sequence:Ljava/lang/CharSequence;
+
+    iput-object p1, p0, Lcom/google/common/base/Splitter$5;->this$0:Lcom/google/common/base/Splitter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -59,7 +75,7 @@
         }
     .end annotation
 
-    .line 386
+    .line 390
     iget-object v0, p0, Lcom/google/common/base/Splitter$5;->this$0:Lcom/google/common/base/Splitter;
 
     iget-object p0, p0, Lcom/google/common/base/Splitter$5;->val$sequence:Ljava/lang/CharSequence;
@@ -74,7 +90,7 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 391
+    .line 395
     const-string v0, ", "
 
     invoke-static {v0}, Lcom/google/common/base/Joiner;->on(Ljava/lang/String;)Lcom/google/common/base/Joiner;
@@ -87,7 +103,7 @@
 
     const/16 v2, 0x5b
 
-    .line 392
+    .line 396
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     move-result-object v1
@@ -98,12 +114,12 @@
 
     const/16 v0, 0x5d
 
-    .line 393
+    .line 397
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
-    .line 394
+    .line 398
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0

@@ -16,6 +16,16 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;Landroid/content/SharedPreferences;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "name",
+            "prefs"
+        }
+    .end annotation
 
     .line 26
     invoke-direct {p0, p1, p2}, Ljp/co/sony/mc/camera/util/capability/CapabilityItem;-><init>(Ljava/lang/String;Landroid/content/SharedPreferences;)V
@@ -25,6 +35,16 @@
 
 .method constructor <init>(Ljava/lang/String;Ljava/lang/Float;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "name",
+            "value"
+        }
+    .end annotation
 
     .line 22
     invoke-direct {p0, p1, p2}, Ljp/co/sony/mc/camera/util/capability/CapabilityItem;-><init>(Ljava/lang/String;Ljava/lang/Object;)V
@@ -60,6 +80,16 @@
 
 .method public read(Landroid/content/SharedPreferences;Ljava/lang/String;)Ljava/lang/Float;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "prefs",
+            "key"
+        }
+    .end annotation
 
     .line 31
     invoke-interface {p1, p2}, Landroid/content/SharedPreferences;->contains(Ljava/lang/String;)Z
@@ -92,6 +122,16 @@
 
 .method public bridge synthetic read(Landroid/content/SharedPreferences;Ljava/lang/String;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "prefs",
+            "key"
+        }
+    .end annotation
 
     .line 19
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/util/capability/FloatCapabilityItem;->read(Landroid/content/SharedPreferences;Ljava/lang/String;)Ljava/lang/Float;
@@ -103,6 +143,14 @@
 
 .method public write(Landroid/content/SharedPreferences$Editor;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "editor"
+        }
+    .end annotation
 
     .line 39
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/util/capability/FloatCapabilityItem;->get()Ljava/lang/Object;

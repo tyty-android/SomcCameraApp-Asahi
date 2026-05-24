@@ -24,6 +24,14 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/util/CameraExtensionServiceUtil;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 83
     iput-object p1, p0, Ljp/co/sony/mc/camera/util/CameraExtensionServiceUtil$ServiceConnectionCallback;->this$0:Ljp/co/sony/mc/camera/util/CameraExtensionServiceUtil;
@@ -45,6 +53,16 @@
 # virtual methods
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "name",
+            "service"
+        }
+    .end annotation
 
     .line 86
     iget-object p1, p0, Ljp/co/sony/mc/camera/util/CameraExtensionServiceUtil$ServiceConnectionCallback;->this$0:Ljp/co/sony/mc/camera/util/CameraExtensionServiceUtil;
@@ -95,6 +113,14 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 95
     iget-object p1, p0, Ljp/co/sony/mc/camera/util/CameraExtensionServiceUtil$ServiceConnectionCallback;->this$0:Ljp/co/sony/mc/camera/util/CameraExtensionServiceUtil;

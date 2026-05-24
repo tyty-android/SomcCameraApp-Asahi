@@ -162,6 +162,16 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/OrientationService$LayoutOrientation;Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetectorInterface$DetectResultListener;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "orientation",
+            "listener"
+        }
+    .end annotation
 
     .line 223
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -237,6 +247,18 @@
 
 .method private postDetect(IILjava/nio/ByteBuffer;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "width",
+            "height",
+            "byteBuffer"
+        }
+    .end annotation
 
     .line 325
     iget v0, p0, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector;->mImageWidth:I
@@ -474,6 +496,14 @@
 
 .method public setLayoutOrientation(Ljp/co/sony/mc/camera/OrientationService$LayoutOrientation;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "orientation"
+        }
+    .end annotation
 
     .line 277
     sget-object v0, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector$3;->$SwitchMap$jp$co$sony$mc$camera$OrientationService$LayoutOrientation:[I
@@ -586,6 +616,14 @@
 
 .method public startDetect(Ljp/co/sony/mc/camera/device/PreviewFrameProvider;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "receiver"
+        }
+    .end annotation
 
     .line 250
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector;->mDetectContext:Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector$DetectContext;

@@ -25,7 +25,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 275
+    .line 325
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,35 +34,43 @@
 
 # virtual methods
 .method getBaseUrl()Ljava/net/URL;
-    .locals 3
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    const/16 v0, 0x2e
+    .line 356
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    const/16 v1, 0x2f
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 306
-    const-string v2, "com.google.common.base.internal.Finalizer"
+    const/16 v1, 0x2e
 
-    invoke-virtual {v2, v0, v1}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+    const/16 v2, 0x2f
 
-    move-result-object v0
+    const-string v3, "com.google.common.base.internal.Finalizer"
 
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v3, v1, v2}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
     const-string v1, ".class"
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 307
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 357
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p0
@@ -75,53 +83,21 @@
 
     move-result-object p0
 
-    if-eqz p0, :cond_2
+    if-eqz p0, :cond_1
 
-    .line 313
+    .line 363
     invoke-virtual {p0}, Ljava/net/URL;->toString()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 314
+    .line 364
     invoke-virtual {v1, v0}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
     move-result v2
 
-    if-nez v2, :cond_1
+    if-eqz v2, :cond_0
 
-    .line 315
-    new-instance p0, Ljava/io/IOException;
-
-    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v1
-
-    const-string v2, "Unsupported path style: "
-
-    if-eqz v1, :cond_0
-
-    invoke-virtual {v2, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    :cond_0
-    new-instance v0, Ljava/lang/String;
-
-    invoke-direct {v0, v2}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
-
-    :goto_0
-    invoke-direct {p0, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
-
-    throw p0
-
-    .line 317
-    :cond_1
+    .line 367
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
     move-result v2
@@ -138,15 +114,37 @@
 
     move-result-object v0
 
-    .line 318
+    .line 368
     new-instance v1, Ljava/net/URL;
 
     invoke-direct {v1, p0, v0}, Ljava/net/URL;-><init>(Ljava/net/URL;Ljava/lang/String;)V
 
     return-object v1
 
-    .line 309
-    :cond_2
+    .line 365
+    :cond_0
+    new-instance p0, Ljava/io/IOException;
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v2, "Unsupported path style: "
+
+    invoke-direct {v0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+
+    .line 359
+    :cond_1
     new-instance p0, Ljava/io/FileNotFoundException;
 
     invoke-direct {p0, v0}, Ljava/io/FileNotFoundException;-><init>(Ljava/lang/String;)V
@@ -164,10 +162,10 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
-    .line 295
+    .line 345
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/base/FinalizableReferenceQueue$DecoupledLoader;->getBaseUrl()Ljava/net/URL;
 
@@ -177,7 +175,7 @@
 
     move-result-object p0
 
-    .line 296
+    .line 346
     const-string v0, "com.google.common.base.internal.Finalizer"
 
     invoke-virtual {p0, v0}, Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
@@ -191,7 +189,7 @@
     :catch_0
     move-exception p0
 
-    .line 298
+    .line 348
     invoke-static {}, Lcom/google/common/base/FinalizableReferenceQueue;->access$000()Ljava/util/logging/Logger;
 
     move-result-object v0
@@ -209,8 +207,16 @@
 
 .method newLoader(Ljava/net/URL;)Ljava/net/URLClassLoader;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "base"
+        }
+    .end annotation
 
-    .line 326
+    .line 376
     new-instance p0, Ljava/net/URLClassLoader;
 
     const/4 v0, 0x1

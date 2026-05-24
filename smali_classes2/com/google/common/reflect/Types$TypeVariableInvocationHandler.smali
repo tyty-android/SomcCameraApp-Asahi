@@ -45,12 +45,12 @@
 .method static constructor <clinit>()V
     .locals 7
 
-    .line 367
+    .line 364
     invoke-static {}, Lcom/google/common/collect/ImmutableMap;->builder()Lcom/google/common/collect/ImmutableMap$Builder;
 
     move-result-object v0
 
-    .line 368
+    .line 365
     const-class v1, Lcom/google/common/reflect/Types$TypeVariableImpl;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getMethods()[Ljava/lang/reflect/Method;
@@ -66,7 +66,7 @@
 
     aget-object v4, v1, v3
 
-    .line 369
+    .line 366
     invoke-virtual {v4}, Ljava/lang/reflect/Method;->getDeclaringClass()Ljava/lang/Class;
 
     move-result-object v5
@@ -81,13 +81,13 @@
 
     const/4 v5, 0x1
 
-    .line 371
+    .line 368
     :try_start_0
     invoke-virtual {v4, v5}, Ljava/lang/reflect/Method;->setAccessible(Z)V
     :try_end_0
     .catch Ljava/security/AccessControlException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 376
+    .line 373
     :catch_0
     invoke-virtual {v4}, Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
 
@@ -100,9 +100,9 @@
 
     goto :goto_0
 
-    .line 379
+    .line 376
     :cond_1
-    invoke-virtual {v0}, Lcom/google/common/collect/ImmutableMap$Builder;->build()Lcom/google/common/collect/ImmutableMap;
+    invoke-virtual {v0}, Lcom/google/common/collect/ImmutableMap$Builder;->buildKeepingLast()Lcom/google/common/collect/ImmutableMap;
 
     move-result-object v0
 
@@ -113,6 +113,15 @@
 
 .method constructor <init>(Lcom/google/common/reflect/Types$TypeVariableImpl;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "typeVariableImpl"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -121,19 +130,19 @@
         }
     .end annotation
 
-    .line 384
+    .line 381
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 385
+    .line 382
     iput-object p1, p0, Lcom/google/common/reflect/Types$TypeVariableInvocationHandler;->typeVariableImpl:Lcom/google/common/reflect/Types$TypeVariableImpl;
 
     return-void
 .end method
 
-.method static synthetic access$600(Lcom/google/common/reflect/Types$TypeVariableInvocationHandler;)Lcom/google/common/reflect/Types$TypeVariableImpl;
+.method static synthetic access$500(Lcom/google/common/reflect/Types$TypeVariableInvocationHandler;)Lcom/google/common/reflect/Types$TypeVariableImpl;
     .locals 0
 
-    .line 363
+    .line 360
     iget-object p0, p0, Lcom/google/common/reflect/Types$TypeVariableInvocationHandler;->typeVariableImpl:Lcom/google/common/reflect/Types$TypeVariableImpl;
 
     return-object p0
@@ -143,18 +152,38 @@
 # virtual methods
 .method public invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .param p3    # [Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "proxy",
+            "method",
+            "args"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Throwable;
         }
     .end annotation
 
-    .line 390
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 389
     invoke-virtual {p2}, Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 391
+    .line 390
     sget-object p2, Lcom/google/common/reflect/Types$TypeVariableInvocationHandler;->typeVariableMethods:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {p2, p1}, Lcom/google/common/collect/ImmutableMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -165,7 +194,7 @@
 
     if-eqz p2, :cond_0
 
-    .line 396
+    .line 395
     :try_start_0
     iget-object p0, p0, Lcom/google/common/reflect/Types$TypeVariableInvocationHandler;->typeVariableImpl:Lcom/google/common/reflect/Types$TypeVariableImpl;
 
@@ -180,14 +209,14 @@
     :catch_0
     move-exception p0
 
-    .line 398
+    .line 397
     invoke-virtual {p0}, Ljava/lang/reflect/InvocationTargetException;->getCause()Ljava/lang/Throwable;
 
     move-result-object p0
 
     throw p0
 
-    .line 393
+    .line 392
     :cond_0
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 

@@ -128,6 +128,14 @@
 
 .method public constructor <init>(Landroidx/activity/ComponentActivity;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "activity"
+        }
+    .end annotation
 
     .line 98
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -260,6 +268,18 @@
 
 .method private static in(III)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "testee",
+            "lower",
+            "upper"
+        }
+    .end annotation
 
     if-lt p0, p1, :cond_0
 
@@ -278,6 +298,14 @@
 
 .method private notifyLayoutOrientationChanged(Ljp/co/sony/mc/camera/OrientationService$LayoutOrientation;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "orientation"
+        }
+    .end annotation
 
     .line 316
     iget-object v0, p0, Ljp/co/sony/mc/camera/OrientationService;->mLastDetectedOrientation:Ljp/co/sony/mc/camera/OrientationService$LayoutOrientation;
@@ -376,6 +404,14 @@
 
 .method private notifyOrientationDegreeChanged(I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "degree"
+        }
+    .end annotation
 
     .line 299
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -457,6 +493,14 @@
 
 .method private setLayoutOrientation(Ljp/co/sony/mc/camera/OrientationService$LayoutOrientation;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "orientation"
+        }
+    .end annotation
 
     .line 335
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/OrientationService;->getOrientationDegree(Ljp/co/sony/mc/camera/OrientationService$LayoutOrientation;)I
@@ -479,6 +523,14 @@
 # virtual methods
 .method public addOrientationDegreeListener(Ljp/co/sony/mc/camera/OrientationService$OrientationDegreeChangedListener;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 136
     iget-object v0, p0, Ljp/co/sony/mc/camera/OrientationService;->mActivity:Landroid/app/Activity;
@@ -494,6 +546,14 @@
 
 .method public addOrientationListener(Ljp/co/sony/mc/camera/OrientationService$LayoutOrientationChangedListener;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 160
     iget-object v0, p0, Ljp/co/sony/mc/camera/OrientationService;->mActivity:Landroid/app/Activity;
@@ -667,6 +727,14 @@
 
 .method public getOrientationDegree(Ljp/co/sony/mc/camera/OrientationService$LayoutOrientation;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fixed"
+        }
+    .end annotation
 
     .line 350
     sget-object p0, Ljp/co/sony/mc/camera/OrientationService$5;->$SwitchMap$jp$co$sony$mc$camera$OrientationService$LayoutOrientation:[I
@@ -837,6 +905,14 @@
 
 .method public removeOrientationDegreeListener(Ljp/co/sony/mc/camera/OrientationService$OrientationDegreeChangedListener;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 148
     iget-object v0, p0, Ljp/co/sony/mc/camera/OrientationService;->mActivity:Landroid/app/Activity;
@@ -852,6 +928,14 @@
 
 .method public removeOrientationListener(Ljp/co/sony/mc/camera/OrientationService$LayoutOrientationChangedListener;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 172
     iget-object v0, p0, Ljp/co/sony/mc/camera/OrientationService;->mActivity:Landroid/app/Activity;

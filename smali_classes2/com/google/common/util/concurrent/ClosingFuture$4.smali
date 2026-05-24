@@ -34,11 +34,27 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/util/concurrent/ClosingFuture;Lcom/google/common/util/concurrent/ClosingFuture$ClosingFunction;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$function"
+        }
+    .end annotation
 
-    .line 677
-    iput-object p1, p0, Lcom/google/common/util/concurrent/ClosingFuture$4;->this$0:Lcom/google/common/util/concurrent/ClosingFuture;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
 
+    .line 690
     iput-object p2, p0, Lcom/google/common/util/concurrent/ClosingFuture$4;->val$function:Lcom/google/common/util/concurrent/ClosingFuture$ClosingFunction;
+
+    iput-object p1, p0, Lcom/google/common/util/concurrent/ClosingFuture$4;->this$0:Lcom/google/common/util/concurrent/ClosingFuture;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,6 +65,15 @@
 # virtual methods
 .method public apply(Ljava/lang/Object;)Lcom/google/common/util/concurrent/ListenableFuture;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "input"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TV;)",
@@ -63,10 +88,10 @@
         }
     .end annotation
 
-    .line 680
+    .line 693
     iget-object v0, p0, Lcom/google/common/util/concurrent/ClosingFuture$4;->this$0:Lcom/google/common/util/concurrent/ClosingFuture;
 
-    invoke-static {v0}, Lcom/google/common/util/concurrent/ClosingFuture;->access$200(Lcom/google/common/util/concurrent/ClosingFuture;)Lcom/google/common/util/concurrent/ClosingFuture$CloseableList;
+    invoke-static {v0}, Lcom/google/common/util/concurrent/ClosingFuture;->access$500(Lcom/google/common/util/concurrent/ClosingFuture;)Lcom/google/common/util/concurrent/ClosingFuture$CloseableList;
 
     move-result-object v0
 
@@ -82,10 +107,10 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 685
+    .line 698
     iget-object p0, p0, Lcom/google/common/util/concurrent/ClosingFuture$4;->val$function:Lcom/google/common/util/concurrent/ClosingFuture$ClosingFunction;
 
-    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-interface {p0}, Lcom/google/common/util/concurrent/ClosingFuture$ClosingFunction;->toString()Ljava/lang/String;
 
     move-result-object p0
 

@@ -25,6 +25,14 @@
 # direct methods
 .method public constructor <init>(Z)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "zoomIn"
+        }
+    .end annotation
 
     .line 23
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,6 +54,16 @@
 # virtual methods
 .method public varargs calculate(Ljp/co/sony/mc/camera/view/angle/VariableIndex;[Ljava/lang/Object;)Ljp/co/sony/mc/camera/view/angle/VariableIndex;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "args"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 

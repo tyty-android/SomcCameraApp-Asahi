@@ -29,7 +29,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 126
+    .line 136
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -37,20 +37,34 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "sensorName",
+            "openCameraId",
+            "lensCameraId",
+            "isFront"
+        }
+    .end annotation
 
-    .line 129
+    .line 139
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 130
+    .line 140
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/CameraInfo;->mSensorName:Ljava/lang/String;
 
-    .line 131
+    .line 141
     iput-object p2, p0, Ljp/co/sony/mc/camera/device/CameraInfo;->mOpenCameraId:Ljava/lang/String;
 
-    .line 132
+    .line 142
     iput-object p3, p0, Ljp/co/sony/mc/camera/device/CameraInfo;->mLensCameraId:Ljava/lang/String;
 
-    .line 133
+    .line 143
     iput-boolean p4, p0, Ljp/co/sony/mc/camera/device/CameraInfo;->mIsFront:Z
 
     return-void
@@ -61,7 +75,7 @@
 .method public canDisableShutterSound()Z
     .locals 0
 
-    .line 157
+    .line 167
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/device/CameraInfo;->mCanDisableShutterSound:Z
 
     return p0
@@ -70,7 +84,7 @@
 .method public getLensCameraId()Ljava/lang/String;
     .locals 0
 
-    .line 145
+    .line 155
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CameraInfo;->mLensCameraId:Ljava/lang/String;
 
     return-object p0
@@ -79,7 +93,7 @@
 .method public getOpenCameraId()Ljava/lang/String;
     .locals 0
 
-    .line 141
+    .line 151
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CameraInfo;->mOpenCameraId:Ljava/lang/String;
 
     return-object p0
@@ -88,7 +102,7 @@
 .method public getOrientation()I
     .locals 0
 
-    .line 153
+    .line 163
     iget p0, p0, Ljp/co/sony/mc/camera/device/CameraInfo;->mOrientation:I
 
     return p0
@@ -97,7 +111,7 @@
 .method public getSensorName()Ljava/lang/String;
     .locals 0
 
-    .line 137
+    .line 147
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CameraInfo;->mSensorName:Ljava/lang/String;
 
     return-object p0
@@ -105,11 +119,21 @@
 
 .method public init(IZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "orientation",
+            "canDisableShutterSound"
+        }
+    .end annotation
 
-    .line 161
+    .line 171
     iput p1, p0, Ljp/co/sony/mc/camera/device/CameraInfo;->mOrientation:I
 
-    .line 162
+    .line 172
     iput-boolean p2, p0, Ljp/co/sony/mc/camera/device/CameraInfo;->mCanDisableShutterSound:Z
 
     return-void
@@ -118,7 +142,7 @@
 .method public isFront()Z
     .locals 0
 
-    .line 149
+    .line 159
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/device/CameraInfo;->mIsFront:Z
 
     return p0

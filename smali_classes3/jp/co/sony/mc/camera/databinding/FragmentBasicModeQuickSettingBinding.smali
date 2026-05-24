@@ -35,6 +35,11 @@
     .end annotation
 .end field
 
+.field protected mCameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+    .annotation runtime Landroidx/databinding/Bindable;
+    .end annotation
+.end field
+
 .field protected mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
     .annotation runtime Landroidx/databinding/Bindable;
     .end annotation
@@ -65,115 +70,169 @@
 # direct methods
 .method protected constructor <init>(Ljava/lang/Object;Landroid/view/View;ILjp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Landroid/widget/ImageButton;Ljp/co/sony/mc/camera/view/widget/CustomConstraintLayout;Ljp/co/sony/mc/camera/view/widget/OutlinedButton;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Landroid/widget/ImageButton;Landroidx/constraintlayout/widget/ConstraintLayout;Landroid/widget/TextView;Landroid/widget/TextView;Landroidx/constraintlayout/widget/ConstraintLayout;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Landroidx/constraintlayout/widget/ConstraintLayout;Landroid/widget/ScrollView;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Landroid/widget/LinearLayout;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "_bindingComponent",
+            "_root",
+            "_localFieldCount",
+            "aspectRatio",
+            "autoFramingOrientation",
+            "closeButton",
+            "container",
+            "detailMenu",
+            "displayFlash",
+            "flash",
+            "framingAssistPositionMode",
+            "infoBack",
+            "infoContainer",
+            "infoDescription",
+            "infoTitle",
+            "infoTitleArea",
+            "photoLight",
+            "productShowcase",
+            "quickSettingRoot",
+            "quickSettingsContainer",
+            "selfTimer",
+            "settingsContainer",
+            "videoFps",
+            "videoSize"
+        }
+    .end annotation
 
     move-object v0, p0
 
-    .line 112
+    .line 116
     invoke-direct {p0, p1, p2, p3}, Landroidx/databinding/ViewDataBinding;-><init>(Ljava/lang/Object;Landroid/view/View;I)V
 
     move-object v1, p4
 
-    .line 113
+    .line 117
     iput-object v1, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->aspectRatio:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;
 
     move-object v1, p5
 
-    .line 114
+    .line 118
     iput-object v1, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->autoFramingOrientation:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;
 
     move-object v1, p6
 
-    .line 115
+    .line 119
     iput-object v1, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->closeButton:Landroid/widget/ImageButton;
 
     move-object v1, p7
 
-    .line 116
+    .line 120
     iput-object v1, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->container:Ljp/co/sony/mc/camera/view/widget/CustomConstraintLayout;
 
     move-object v1, p8
 
-    .line 117
+    .line 121
     iput-object v1, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->detailMenu:Ljp/co/sony/mc/camera/view/widget/OutlinedButton;
 
     move-object v1, p9
 
-    .line 118
+    .line 122
     iput-object v1, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->displayFlash:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;
 
     move-object v1, p10
 
-    .line 119
+    .line 123
     iput-object v1, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->flash:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;
 
     move-object v1, p11
 
-    .line 120
+    .line 124
     iput-object v1, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->framingAssistPositionMode:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;
 
     move-object v1, p12
 
-    .line 121
+    .line 125
     iput-object v1, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->infoBack:Landroid/widget/ImageButton;
 
     move-object v1, p13
 
-    .line 122
+    .line 126
     iput-object v1, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->infoContainer:Landroidx/constraintlayout/widget/ConstraintLayout;
 
     move-object/from16 v1, p14
 
-    .line 123
+    .line 127
     iput-object v1, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->infoDescription:Landroid/widget/TextView;
 
     move-object/from16 v1, p15
 
-    .line 124
+    .line 128
     iput-object v1, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->infoTitle:Landroid/widget/TextView;
 
     move-object/from16 v1, p16
 
-    .line 125
+    .line 129
     iput-object v1, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->infoTitleArea:Landroidx/constraintlayout/widget/ConstraintLayout;
 
     move-object/from16 v1, p17
 
-    .line 126
+    .line 130
     iput-object v1, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->photoLight:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;
 
     move-object/from16 v1, p18
 
-    .line 127
+    .line 131
     iput-object v1, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->productShowcase:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;
 
     move-object/from16 v1, p19
 
-    .line 128
+    .line 132
     iput-object v1, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->quickSettingRoot:Landroidx/constraintlayout/widget/ConstraintLayout;
 
     move-object/from16 v1, p20
 
-    .line 129
+    .line 133
     iput-object v1, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->quickSettingsContainer:Landroid/widget/ScrollView;
 
     move-object/from16 v1, p21
 
-    .line 130
+    .line 134
     iput-object v1, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->selfTimer:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;
 
     move-object/from16 v1, p22
 
-    .line 131
+    .line 135
     iput-object v1, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->settingsContainer:Landroid/widget/LinearLayout;
 
     move-object/from16 v1, p23
 
-    .line 132
+    .line 136
     iput-object v1, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->videoFps:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;
 
     move-object/from16 v1, p24
 
-    .line 133
+    .line 137
     iput-object v1, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->videoSize:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;
 
     return-void
@@ -181,8 +240,16 @@
 
 .method public static bind(Landroid/view/View;)Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
-    .line 198
+    .line 209
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -196,12 +263,23 @@
 
 .method public static bind(Landroid/view/View;Ljava/lang/Object;)Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "component"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    const v0, 0x7f0c0067
+    const v0, 0x7f0c0062
 
-    .line 211
+    .line 222
     invoke-static {p1, p0, v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->bind(Ljava/lang/Object;Landroid/view/View;I)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0
@@ -213,8 +291,16 @@
 
 .method public static inflate(Landroid/view/LayoutInflater;)Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "inflater"
+        }
+    .end annotation
 
-    .line 180
+    .line 191
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -228,8 +314,20 @@
 
 .method public static inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "inflater",
+            "root",
+            "attachToRoot"
+        }
+    .end annotation
 
-    .line 161
+    .line 172
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -243,12 +341,27 @@
 
 .method public static inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;ZLjava/lang/Object;)Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "inflater",
+            "root",
+            "attachToRoot",
+            "component"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    const v0, 0x7f0c0067
+    const v0, 0x7f0c0062
 
-    .line 175
+    .line 186
     invoke-static {p0, v0, p1, p2, p3}, Landroidx/databinding/ViewDataBinding;->inflateInternal(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;ZLjava/lang/Object;)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0
@@ -260,6 +373,17 @@
 
 .method public static inflate(Landroid/view/LayoutInflater;Ljava/lang/Object;)Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "inflater",
+            "component"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -267,9 +391,9 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x7f0c0067
+    const v2, 0x7f0c0062
 
-    .line 194
+    .line 205
     invoke-static {p0, v2, v0, v1, p1}, Landroidx/databinding/ViewDataBinding;->inflateInternal(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;ZLjava/lang/Object;)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0
@@ -284,8 +408,17 @@
 .method public getBasicModeQuickSettingUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;
     .locals 0
 
-    .line 141
+    .line 145
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->mBasicModeQuickSettingUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;
+
+    return-object p0
+.end method
+
+.method public getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+    .locals 0
+
+    .line 166
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->mCameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     return-object p0
 .end method
@@ -293,7 +426,7 @@
 .method public getOrientationViewModel()Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
     .locals 0
 
-    .line 148
+    .line 152
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
     return-object p0
@@ -302,17 +435,52 @@
 .method public getViewFinderUiState()Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
     .locals 0
 
-    .line 155
+    .line 159
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     return-object p0
 .end method
 
 .method public abstract setBasicModeQuickSettingUiState(Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "basicModeQuickSettingUiState"
+        }
+    .end annotation
+.end method
+
+.method public abstract setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraSettingsModel"
+        }
+    .end annotation
 .end method
 
 .method public abstract setOrientationViewModel(Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "orientationViewModel"
+        }
+    .end annotation
 .end method
 
 .method public abstract setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "viewFinderUiState"
+        }
+    .end annotation
 .end method

@@ -15,19 +15,19 @@
 
 
 # static fields
-.field static final INSTANCE:Lcom/google/common/base/CharMatcher$Ascii;
+.field static final INSTANCE:Lcom/google/common/base/CharMatcher;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1280
+    .line 1283
     new-instance v0, Lcom/google/common/base/CharMatcher$Ascii;
 
     invoke-direct {v0}, Lcom/google/common/base/CharMatcher$Ascii;-><init>()V
 
-    sput-object v0, Lcom/google/common/base/CharMatcher$Ascii;->INSTANCE:Lcom/google/common/base/CharMatcher$Ascii;
+    sput-object v0, Lcom/google/common/base/CharMatcher$Ascii;->INSTANCE:Lcom/google/common/base/CharMatcher;
 
     return-void
 .end method
@@ -35,7 +35,7 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 1283
+    .line 1286
     const-string v0, "CharMatcher.ascii()"
 
     invoke-direct {p0, v0}, Lcom/google/common/base/CharMatcher$NamedFastMatcher;-><init>(Ljava/lang/String;)V
@@ -47,6 +47,14 @@
 # virtual methods
 .method public matches(C)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
 
     const/16 p0, 0x7f
 

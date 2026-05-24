@@ -89,7 +89,7 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 774
+    .line 619
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/PreviewCoverState$FakeInitial;->copiedPreview:Landroid/graphics/Bitmap;
@@ -212,7 +212,7 @@
 .method public final getCopiedPreview()Landroid/graphics/Bitmap;
     .locals 0
 
-    .line 774
+    .line 619
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/PreviewCoverState$FakeInitial;->copiedPreview:Landroid/graphics/Bitmap;
 
     return-object p0
@@ -221,7 +221,7 @@
 .method public getPreviewVisible()Z
     .locals 0
 
-    .line 776
+    .line 621
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/view/uistate/PreviewCoverState$FakeInitial;->previewVisible:Z
 
     return p0
@@ -230,7 +230,7 @@
 .method public final getTargetPreviewSize()Landroid/util/Size;
     .locals 0
 
-    .line 774
+    .line 619
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/PreviewCoverState$FakeInitial;->targetPreviewSize:Landroid/util/Size;
 
     return-object p0

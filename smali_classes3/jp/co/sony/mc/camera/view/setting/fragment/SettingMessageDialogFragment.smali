@@ -122,6 +122,16 @@
 
 .method public static newInstance(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;Z)Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "isRotatable"
+        }
+    .end annotation
 
     .line 45
     new-instance v0, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;
@@ -153,6 +163,14 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dialog"
+        }
+    .end annotation
 
     .line 155
     invoke-super {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/RotatableDialogFragment;->onCancel(Landroid/content/DialogInterface;)V
@@ -195,6 +213,14 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "savedInstanceState"
+        }
+    .end annotation
 
     .line 56
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;->getArguments()Landroid/os/Bundle;

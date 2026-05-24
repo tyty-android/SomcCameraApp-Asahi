@@ -28,6 +28,14 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 32
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

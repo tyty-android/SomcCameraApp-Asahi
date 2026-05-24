@@ -76,6 +76,18 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/view/UserOperationListener;Ljp/co/sony/mc/camera/util/KeyEventTranslator$KeyEventMonitorListener;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "controller",
+            "userOperationListener",
+            "keyEventMonitorlistener"
+        }
+    .end annotation
 
     .line 79
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -123,7 +135,7 @@
 .end method
 
 .method private getVariableIndex()Ljp/co/sony/mc/camera/view/angle/VariableIndex;
-    .locals 19
+    .locals 18
 
     .line 208
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
@@ -133,12 +145,12 @@
     .line 209
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    move-result-object v7
+    move-result-object v9
 
     .line 210
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v8
+    move-result-object v10
 
     .line 211
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASE_ZOOM_RATIO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -151,7 +163,7 @@
 
     invoke-virtual {v1}, Ljava/lang/Float;->floatValue()F
 
-    move-result v3
+    move-result v11
 
     .line 212
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->CAPTURE_FPS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -164,7 +176,7 @@
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;->isHfr()Z
 
-    move-result v9
+    move-result v12
 
     .line 213
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->PHOTO_FORMAT:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -175,103 +187,112 @@
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;->RAW:Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
 
-    const/4 v4, 0x1
-
-    const/4 v5, 0x0
-
     if-ne v1, v2, :cond_0
 
-    move v10, v4
+    const/4 v1, 0x1
 
     goto :goto_0
 
     :cond_0
-    move v10, v5
+    const/4 v1, 0x0
+
+    :goto_0
+    move v13, v1
 
     .line 214
-    :goto_0
-    sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->HYBRID_ZOOM:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;->AUTO:Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;
-
-    if-ne v1, v2, :cond_1
-
-    move v11, v4
-
-    goto :goto_1
-
-    :cond_1
-    move v11, v5
-
-    .line 215
-    :goto_1
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_MF_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object v1
 
-    move-object v12, v1
+    move-object v14, v1
 
-    check-cast v12, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+    check-cast v14, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+
+    .line 215
+    sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_STABILIZER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    move-object v15, v1
+
+    check-cast v15, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
     .line 216
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->ZOOM_RATIO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object v1
 
-    check-cast v0, Ljava/lang/Float;
+    move-object/from16 v16, v1
 
-    move-object v1, v8
-
-    move-object v2, v7
-
-    move v4, v10
-
-    move-object v5, v12
-
-    move v6, v9
+    check-cast v16, Ljava/lang/Float;
 
     .line 217
-    invoke-static/range {v1 .. v6}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getMaxZoomStep(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)I
+    sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->BOKEH:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    move-result v14
+    invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
-    move v3, v10
+    move-result-object v0
 
-    move v4, v11
+    check-cast v0, Ljava/lang/Boolean;
 
-    .line 219
-    invoke-static/range {v1 .. v6}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getMinZoomStep(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZZLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)I
-
-    move-result v15
-
-    .line 222
-    new-instance v1, Ljp/co/sony/mc/camera/view/angle/VariableIndex;
-
-    invoke-virtual {v0}, Ljava/lang/Float;->floatValue()F
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v0
 
-    invoke-static {v0}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getZoomStep(F)I
+    move-object v1, v10
 
-    move-result v16
+    move-object v2, v9
 
-    const/high16 v17, 0x41a00000    # 20.0f
+    move v3, v11
 
-    sget v18, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->ZOOM_MAGNIFICATION_COEFFICIENT:F
+    move v4, v13
 
-    move-object v13, v1
+    move v5, v0
 
-    invoke-direct/range {v13 .. v18}, Ljp/co/sony/mc/camera/view/angle/VariableIndex;-><init>(IIIFF)V
+    move-object v6, v15
 
-    return-object v1
+    move-object v7, v14
+
+    move v8, v12
+
+    .line 218
+    invoke-static/range {v1 .. v8}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getMaxZoomStep(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)I
+
+    move-result v17
+
+    .line 220
+    invoke-static/range {v1 .. v8}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getMinZoomStep(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)I
+
+    move-result v3
+
+    .line 222
+    new-instance v0, Ljp/co/sony/mc/camera/view/angle/VariableIndex;
+
+    invoke-virtual/range {v16 .. v16}, Ljava/lang/Float;->floatValue()F
+
+    move-result v1
+
+    invoke-static {v1}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getZoomStep(F)I
+
+    move-result v4
+
+    const/high16 v5, 0x41a00000    # 20.0f
+
+    sget v6, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->ZOOM_MAGNIFICATION_COEFFICIENT:F
+
+    move-object v1, v0
+
+    move/from16 v2, v17
+
+    invoke-direct/range {v1 .. v6}, Ljp/co/sony/mc/camera/view/angle/VariableIndex;-><init>(IIIFF)V
+
+    return-object v0
 .end method
 
 
@@ -287,6 +308,14 @@
 
 .method public getTouchEventProcedure(Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventSource;)Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventProcedure;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "source"
+        }
+    .end annotation
 
     .line 196
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure;->mTouchEventProcedures:Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventProcedureManager;

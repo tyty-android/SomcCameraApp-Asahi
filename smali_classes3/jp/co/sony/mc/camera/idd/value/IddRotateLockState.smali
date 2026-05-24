@@ -72,7 +72,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 140
+    .line 199
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddRotateLockState;
 
     const-string v1, "LOCKED"
@@ -83,7 +83,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddRotateLockState;->LOCKED:Ljp/co/sony/mc/camera/idd/value/IddRotateLockState;
 
-    .line 141
+    .line 200
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddRotateLockState;
 
     const-string v1, "UNLOCKED"
@@ -127,7 +127,7 @@
         }
     .end annotation
 
-    .line 139
+    .line 198
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -158,7 +158,7 @@
 
     move-result-object p0
 
-    .line 149
+    .line 208
     check-cast p0, Ljp/co/sony/mc/camera/idd/value/IddRotateLockState;
 
     return-object p0
@@ -173,7 +173,7 @@
 
     move-result-object v0
 
-    .line 149
+    .line 208
     check-cast v0, [Ljp/co/sony/mc/camera/idd/value/IddRotateLockState;
 
     return-object v0

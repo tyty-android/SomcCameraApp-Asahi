@@ -29,8 +29,18 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/Sets$PowerSet;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "size"
+        }
+    .end annotation
 
-    .line 1487
+    .line 1621
     iput-object p1, p0, Lcom/google/common/collect/Sets$PowerSet$1;->this$0:Lcom/google/common/collect/Sets$PowerSet;
 
     invoke-direct {p0, p2}, Lcom/google/common/collect/AbstractIndexedListIterator;-><init>(I)V
@@ -42,8 +52,16 @@
 # virtual methods
 .method protected bridge synthetic get(I)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "setBits"
+        }
+    .end annotation
 
-    .line 1487
+    .line 1621
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Sets$PowerSet$1;->get(I)Ljava/util/Set;
 
     move-result-object p0
@@ -53,6 +71,15 @@
 
 .method protected get(I)Ljava/util/Set;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "setBits"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -61,7 +88,7 @@
         }
     .end annotation
 
-    .line 1490
+    .line 1624
     new-instance v0, Lcom/google/common/collect/Sets$SubSet;
 
     iget-object p0, p0, Lcom/google/common/collect/Sets$PowerSet$1;->this$0:Lcom/google/common/collect/Sets$PowerSet;

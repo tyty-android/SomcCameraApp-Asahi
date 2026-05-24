@@ -44,6 +44,16 @@
 
 .method public static create(Ljp/co/sony/mc/camera/storage/RequestFactory$RequestBuilder;[B)Ljp/co/sony/mc/camera/mediasaving/ExifOption;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "thumbnailData"
+        }
+    .end annotation
 
     .line 70
     new-instance v0, Ljp/co/sony/mc/camera/mediasaving/ExifOption;
@@ -182,6 +192,14 @@
 
 .method public static getExifDate(J)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "date"
+        }
+    .end annotation
 
     .line 142
     const-string/jumbo v0, "yyyy:MM:dd kk:mm:ss"
@@ -199,6 +217,14 @@
 
 .method public static getExifOrientation(I)S
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "degrees"
+        }
+    .end annotation
 
     if-gez p0, :cond_0
 
@@ -243,6 +269,14 @@
 
 .method private static log(Ljp/co/sony/mc/camera/mediasaving/ExifOption;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "exifOption"
+        }
+    .end annotation
 
     .line 98
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z

@@ -15,15 +15,33 @@
 
 
 # instance fields
+.field final synthetic this$0:Lcom/google/common/base/Splitter$3;
+
 .field final synthetic val$matcher:Lcom/google/common/base/CommonMatcher;
 
 
 # direct methods
 .method constructor <init>(Lcom/google/common/base/Splitter$3;Lcom/google/common/base/Splitter;Ljava/lang/CharSequence;Lcom/google/common/base/CommonMatcher;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0,
+            0x0,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "splitter",
+            "toSplit",
+            "val$matcher"
+        }
+    .end annotation
 
-    .line 229
+    .line 233
     iput-object p4, p0, Lcom/google/common/base/Splitter$3$1;->val$matcher:Lcom/google/common/base/CommonMatcher;
+
+    iput-object p1, p0, Lcom/google/common/base/Splitter$3$1;->this$0:Lcom/google/common/base/Splitter$3;
 
     invoke-direct {p0, p2, p3}, Lcom/google/common/base/Splitter$SplittingIterator;-><init>(Lcom/google/common/base/Splitter;Ljava/lang/CharSequence;)V
 
@@ -34,8 +52,16 @@
 # virtual methods
 .method public separatorEnd(I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "separatorPosition"
+        }
+    .end annotation
 
-    .line 237
+    .line 241
     iget-object p0, p0, Lcom/google/common/base/Splitter$3$1;->val$matcher:Lcom/google/common/base/CommonMatcher;
 
     invoke-virtual {p0}, Lcom/google/common/base/CommonMatcher;->end()I
@@ -47,8 +73,16 @@
 
 .method public separatorStart(I)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "start"
+        }
+    .end annotation
 
-    .line 232
+    .line 236
     iget-object v0, p0, Lcom/google/common/base/Splitter$3$1;->val$matcher:Lcom/google/common/base/CommonMatcher;
 
     invoke-virtual {v0, p1}, Lcom/google/common/base/CommonMatcher;->find(I)Z

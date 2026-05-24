@@ -133,7 +133,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/configuration/parameters/Iso;
     .locals 42
 
-    .line 28
+    .line 26
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_AUTO:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_6:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
@@ -228,14 +228,14 @@
 .method static constructor <clinit>()V
     .locals 24
 
-    .line 29
+    .line 27
     new-instance v8, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v7, Landroid/util/Range;
 
     const/4 v0, -0x1
 
-    .line 34
+    .line 32
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
@@ -248,7 +248,7 @@
 
     const/4 v3, -0x1
 
-    const v4, 0x7f11046c
+    const v4, 0x7f1104b5
 
     const-string v5, "auto"
 
@@ -260,12 +260,12 @@
 
     sput-object v8, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_AUTO:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 35
+    .line 33
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
-    .line 40
+    .line 38
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -284,7 +284,7 @@
 
     const/4 v12, -0x1
 
-    const v13, 0x7f1102d6
+    const v13, 0x7f11031f
 
     const-string v14, "iso-prio"
 
@@ -298,14 +298,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_6:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 41
+    .line 39
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x8
 
-    .line 46
+    .line 44
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -324,7 +324,7 @@
 
     const/16 v19, -0x1
 
-    const v20, 0x7f1102da
+    const v20, 0x7f110323
 
     const-string v21, "iso-prio"
 
@@ -338,14 +338,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_8:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 47
+    .line 45
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0xa
 
-    .line 52
+    .line 50
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -362,7 +362,7 @@
 
     const/4 v11, 0x3
 
-    const v13, 0x7f1102b2
+    const v13, 0x7f1102fb
 
     const-string v14, "iso-prio"
 
@@ -376,14 +376,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_10:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 53
+    .line 51
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0xc
 
-    .line 58
+    .line 56
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -400,7 +400,7 @@
 
     const/16 v18, 0x4
 
-    const v20, 0x7f1102b8
+    const v20, 0x7f110301
 
     const-string v21, "iso-prio"
 
@@ -414,14 +414,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_12:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 59
+    .line 57
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0xf
 
-    .line 64
+    .line 62
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -438,7 +438,7 @@
 
     const/4 v11, 0x5
 
-    const v13, 0x7f1102bc
+    const v13, 0x7f110305
 
     const-string v14, "iso-prio"
 
@@ -452,14 +452,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_16:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 65
+    .line 63
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x12
 
-    .line 70
+    .line 68
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -476,7 +476,7 @@
 
     const/16 v18, 0x6
 
-    const v20, 0x7f1102c0
+    const v20, 0x7f110309
 
     const-string v21, "iso-prio"
 
@@ -490,14 +490,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_20:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 71
+    .line 69
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x17
 
-    .line 76
+    .line 74
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -514,7 +514,7 @@
 
     const/4 v11, 0x7
 
-    const v13, 0x7f1102c4
+    const v13, 0x7f11030d
 
     const-string v14, "iso-prio"
 
@@ -528,14 +528,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_25:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 77
+    .line 75
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x1d
 
-    .line 82
+    .line 80
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -552,7 +552,7 @@
 
     const/16 v18, 0x8
 
-    const v20, 0x7f1102c9
+    const v20, 0x7f110312
 
     const-string v21, "iso-prio"
 
@@ -566,14 +566,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_32:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 83
+    .line 81
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x24
 
-    .line 88
+    .line 86
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -590,7 +590,7 @@
 
     const/16 v11, 0x9
 
-    const v13, 0x7f1102cd
+    const v13, 0x7f110316
 
     const-string v14, "iso-prio"
 
@@ -604,14 +604,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_40:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 89
+    .line 87
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x2d
 
-    .line 94
+    .line 92
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -628,7 +628,7 @@
 
     const/16 v18, 0xa
 
-    const v20, 0x7f1102d0
+    const v20, 0x7f110319
 
     const-string v21, "iso-prio"
 
@@ -642,14 +642,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_50:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 95
+    .line 93
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x39
 
-    .line 100
+    .line 98
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -666,7 +666,7 @@
 
     const/16 v11, 0xb
 
-    const v13, 0x7f1102d5
+    const v13, 0x7f11031e
 
     const-string v14, "iso-prio"
 
@@ -680,14 +680,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_64:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 101
+    .line 99
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x48
 
-    .line 106
+    .line 104
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -704,7 +704,7 @@
 
     const/16 v18, 0xc
 
-    const v20, 0x7f1102d9
+    const v20, 0x7f110322
 
     const-string v21, "iso-prio"
 
@@ -718,14 +718,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_80:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 107
+    .line 105
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x5a
 
-    .line 112
+    .line 110
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -742,7 +742,7 @@
 
     const/16 v11, 0xd
 
-    const v13, 0x7f1102b1
+    const v13, 0x7f1102fa
 
     const-string v14, "iso-prio"
 
@@ -756,14 +756,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_100:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 113
+    .line 111
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x71
 
-    .line 118
+    .line 116
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -780,7 +780,7 @@
 
     const/16 v18, 0xe
 
-    const v20, 0x7f1102b6
+    const v20, 0x7f1102ff
 
     const-string v21, "iso-prio"
 
@@ -794,14 +794,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_125:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 119
+    .line 117
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x8e
 
-    .line 124
+    .line 122
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -818,7 +818,7 @@
 
     const/16 v11, 0xf
 
-    const v13, 0x7f1102bb
+    const v13, 0x7f110304
 
     const-string v14, "iso-prio"
 
@@ -832,14 +832,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_160:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 125
+    .line 123
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0xb3
 
-    .line 130
+    .line 128
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -856,7 +856,7 @@
 
     const/16 v18, 0x10
 
-    const v20, 0x7f1102bf
+    const v20, 0x7f110308
 
     const-string v21, "iso-prio"
 
@@ -870,14 +870,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_200:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 131
+    .line 129
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0xe1
 
-    .line 136
+    .line 134
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -894,7 +894,7 @@
 
     const/16 v11, 0x11
 
-    const v13, 0x7f1102c2
+    const v13, 0x7f11030b
 
     const-string v14, "iso-prio"
 
@@ -908,14 +908,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_250:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 137
+    .line 135
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x11b
 
-    .line 142
+    .line 140
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -932,7 +932,7 @@
 
     const/16 v18, 0x12
 
-    const v20, 0x7f1102c8
+    const v20, 0x7f110311
 
     const-string v21, "iso-prio"
 
@@ -946,14 +946,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_320:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 143
+    .line 141
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x165
 
-    .line 148
+    .line 146
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -970,7 +970,7 @@
 
     const/16 v11, 0x13
 
-    const v13, 0x7f1102cc
+    const v13, 0x7f110315
 
     const-string v14, "iso-prio"
 
@@ -984,14 +984,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_400:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 149
+    .line 147
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x1c2
 
-    .line 154
+    .line 152
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -1008,7 +1008,7 @@
 
     const/16 v18, 0x14
 
-    const v20, 0x7f1102cf
+    const v20, 0x7f110318
 
     const-string v21, "iso-prio"
 
@@ -1022,14 +1022,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_500:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 155
+    .line 153
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x236
 
-    .line 160
+    .line 158
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -1046,7 +1046,7 @@
 
     const/16 v11, 0x15
 
-    const v13, 0x7f1102d4
+    const v13, 0x7f11031d
 
     const-string v14, "iso-prio"
 
@@ -1060,14 +1060,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_640:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 161
+    .line 159
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x2c9
 
-    .line 166
+    .line 164
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -1084,7 +1084,7 @@
 
     const/16 v18, 0x16
 
-    const v20, 0x7f1102d8
+    const v20, 0x7f110321
 
     const-string v21, "iso-prio"
 
@@ -1098,14 +1098,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_800:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 167
+    .line 165
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x37b
 
-    .line 172
+    .line 170
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -1122,7 +1122,7 @@
 
     const/16 v11, 0x17
 
-    const v13, 0x7f1102b0
+    const v13, 0x7f1102f9
 
     const-string v14, "iso-prio"
 
@@ -1136,14 +1136,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_1000:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 173
+    .line 171
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x463
 
-    .line 178
+    .line 176
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -1160,7 +1160,7 @@
 
     const/16 v18, 0x18
 
-    const v20, 0x7f1102b5
+    const v20, 0x7f1102fe
 
     const-string v21, "iso-prio"
 
@@ -1174,14 +1174,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_1250:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 179
+    .line 177
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x587
 
-    .line 184
+    .line 182
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -1198,7 +1198,7 @@
 
     const/16 v11, 0x19
 
-    const v13, 0x7f1102ba
+    const v13, 0x7f110303
 
     const-string v14, "iso-prio"
 
@@ -1212,14 +1212,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_1600:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 185
+    .line 183
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x6f7
 
-    .line 190
+    .line 188
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -1236,7 +1236,7 @@
 
     const/16 v18, 0x1a
 
-    const v20, 0x7f1102be
+    const v20, 0x7f110307
 
     const-string v21, "iso-prio"
 
@@ -1250,14 +1250,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_2000:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 191
+    .line 189
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x8c6
 
-    .line 196
+    .line 194
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -1274,7 +1274,7 @@
 
     const/16 v11, 0x1b
 
-    const v13, 0x7f1102c1
+    const v13, 0x7f11030a
 
     const-string v14, "iso-prio"
 
@@ -1288,14 +1288,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_2500:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 197
+    .line 195
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0xb0d
 
-    .line 202
+    .line 200
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -1312,7 +1312,7 @@
 
     const/16 v18, 0x1c
 
-    const v20, 0x7f1102c7
+    const v20, 0x7f110310
 
     const-string v21, "iso-prio"
 
@@ -1326,14 +1326,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_3200:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 203
+    .line 201
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0xded
 
-    .line 208
+    .line 206
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -1350,7 +1350,7 @@
 
     const/16 v11, 0x1d
 
-    const v13, 0x7f1102cb
+    const v13, 0x7f110314
 
     const-string v14, "iso-prio"
 
@@ -1364,14 +1364,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_4000:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 209
+    .line 207
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x118b
 
-    .line 214
+    .line 212
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -1388,7 +1388,7 @@
 
     const/16 v18, 0x1e
 
-    const v20, 0x7f1102ce
+    const v20, 0x7f110317
 
     const-string v21, "iso-prio"
 
@@ -1402,14 +1402,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_5000:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 215
+    .line 213
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x161a
 
-    .line 220
+    .line 218
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -1426,7 +1426,7 @@
 
     const/16 v11, 0x1f
 
-    const v13, 0x7f1102d3
+    const v13, 0x7f11031c
 
     const-string v14, "iso-prio"
 
@@ -1440,14 +1440,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_6400:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 221
+    .line 219
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x1bd8
 
-    .line 226
+    .line 224
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -1464,7 +1464,7 @@
 
     const/16 v18, 0x20
 
-    const v20, 0x7f1102d7
+    const v20, 0x7f110320
 
     const-string v21, "iso-prio"
 
@@ -1478,14 +1478,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_8000:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 227
+    .line 225
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x22ce
 
-    .line 232
+    .line 230
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -1502,7 +1502,7 @@
 
     const/16 v11, 0x21
 
-    const v13, 0x7f1102af
+    const v13, 0x7f1102f8
 
     const-string v14, "iso-prio"
 
@@ -1516,14 +1516,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_10000:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 233
+    .line 231
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x2bda
 
-    .line 238
+    .line 236
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -1540,7 +1540,7 @@
 
     const/16 v18, 0x22
 
-    const v20, 0x7f1102b7
+    const v20, 0x7f110300
 
     const-string v21, "iso-prio"
 
@@ -1554,14 +1554,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_12800:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 239
+    .line 237
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x373f
 
-    .line 244
+    .line 242
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -1578,7 +1578,7 @@
 
     const/16 v11, 0x23
 
-    const v13, 0x7f1102b9
+    const v13, 0x7f110302
 
     const-string v14, "iso-prio"
 
@@ -1592,14 +1592,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_16000:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 245
+    .line 243
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x459b
 
-    .line 250
+    .line 248
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -1616,7 +1616,7 @@
 
     const/16 v18, 0x24
 
-    const v20, 0x7f1102bd
+    const v20, 0x7f110306
 
     const-string v21, "iso-prio"
 
@@ -1630,14 +1630,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_20000:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 251
+    .line 249
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x57b2
 
-    .line 256
+    .line 254
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -1654,7 +1654,7 @@
 
     const/16 v11, 0x25
 
-    const v13, 0x7f1102c3
+    const v13, 0x7f11030c
 
     const-string v14, "iso-prio"
 
@@ -1668,14 +1668,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_25600:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 257
+    .line 255
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const/16 v2, 0x6e7d
 
-    .line 262
+    .line 260
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -1692,7 +1692,7 @@
 
     const/16 v18, 0x26
 
-    const v20, 0x7f1102c6
+    const v20, 0x7f11030f
 
     const-string v21, "iso-prio"
 
@@ -1706,14 +1706,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_32000:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 263
+    .line 261
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const v2, 0x8b35
 
-    .line 268
+    .line 266
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -1730,7 +1730,7 @@
 
     const/16 v11, 0x27
 
-    const v13, 0x7f1102ca
+    const v13, 0x7f110313
 
     const-string v14, "iso-prio"
 
@@ -1744,14 +1744,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_40000:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 269
+    .line 267
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const v2, 0xaf63
 
-    .line 274
+    .line 272
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -1768,7 +1768,7 @@
 
     const/16 v18, 0x28
 
-    const v20, 0x7f1102d1
+    const v20, 0x7f11031a
 
     const-string v21, "iso-prio"
 
@@ -1782,14 +1782,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_51200:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 275
+    .line 273
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     new-instance v1, Landroid/util/Range;
 
     const v2, 0xdcfa
 
-    .line 280
+    .line 278
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -1806,7 +1806,7 @@
 
     const/16 v11, 0x29
 
-    const v13, 0x7f1102d2
+    const v13, 0x7f11031b
 
     const-string v14, "iso-prio"
 
@@ -1820,14 +1820,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_64000:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 28
+    .line 26
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->$values()[Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     move-result-object v0
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->$VALUES:[Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 286
+    .line 284
     sput-object v8, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->DEFAULT_VALUE:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     return-void
@@ -1835,6 +1835,27 @@
 
 .method private constructor <init>(Ljava/lang/String;IIILjava/lang/String;ILandroid/util/Range;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId",
+            "aeMode",
+            "isoValue",
+            "isoRange"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -1846,22 +1867,22 @@
         }
     .end annotation
 
-    .line 303
+    .line 301
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 304
+    .line 302
     iput p3, p0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->mIconId:I
 
-    .line 305
+    .line 303
     iput p4, p0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->mTextId:I
 
-    .line 306
+    .line 304
     iput-object p5, p0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->mAeMode:Ljava/lang/String;
 
-    .line 307
+    .line 305
     iput p6, p0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->mIsoValue:I
 
-    .line 308
+    .line 306
     iput-object p7, p0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->mIsoRange:Landroid/util/Range;
 
     return-void
@@ -1869,6 +1890,16 @@
 
 .method public static adjustToSupportedValue(Ljp/co/sony/mc/camera/configuration/parameters/Iso;[Ljp/co/sony/mc/camera/configuration/parameters/Iso;)Ljp/co/sony/mc/camera/configuration/parameters/Iso;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "targetValue",
+            "options"
+        }
+    .end annotation
 
     .line 415
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_AUTO:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
@@ -1953,7 +1984,7 @@
 .method public static getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/Iso;
     .locals 1
 
-    .line 359
+    .line 357
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->DEFAULT_VALUE:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     return-object v0
@@ -1961,6 +1992,14 @@
 
 .method public static getIsoFromIsoValue(Ljava/lang/Integer;)Ljp/co/sony/mc/camera/configuration/parameters/Iso;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isoValue"
+        }
+    .end annotation
 
     .line 433
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_AUTO:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
@@ -2031,20 +2070,40 @@
     return-object v0
 .end method
 
-.method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;)[Ljp/co/sony/mc/camera/configuration/parameters/Iso;
-    .locals 5
+.method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZLjp/co/sony/mc/camera/configuration/parameters/HybridZoom;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;)[Ljp/co/sony/mc/camera/configuration/parameters/Iso;
+    .locals 11
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId",
+            "isBokeh",
+            "hybridZoom",
+            "videoHdr",
+            "colorToneProfile",
+            "videoStabilizer"
+        }
+    .end annotation
 
-    .line 364
+    .line 363
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 367
+    .line 366
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSupportedAeModes(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/util/List;
 
     move-result-object v1
 
-    .line 368
+    .line 367
     invoke-interface {v1}, Ljava/util/List;->isEmpty()Z
 
     move-result v2
@@ -2053,18 +2112,18 @@
 
     if-eqz v2, :cond_0
 
+    .line 368
+    new-array v1, v3, [Ljp/co/sony/mc/camera/configuration/parameters/Iso;
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [Ljp/co/sony/mc/camera/configuration/parameters/Iso;
+
+    return-object v0
+
     .line 369
-    new-array p0, v3, [Ljp/co/sony/mc/camera/configuration/parameters/Iso;
-
-    invoke-virtual {v0, p0}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, [Ljp/co/sony/mc/camera/configuration/parameters/Iso;
-
-    return-object p0
-
-    .line 370
     :cond_0
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_AUTO:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
@@ -2078,16 +2137,16 @@
 
     if-eqz v4, :cond_1
 
-    .line 372
+    .line 371
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 375
+    .line 374
     :cond_1
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object v2
 
-    .line 376
+    .line 375
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoPhotoMode()Z
 
     move-result v4
@@ -2100,7 +2159,7 @@
 
     if-nez v4, :cond_7
 
-    .line 377
+    .line 376
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
 
     move-result v4
@@ -2113,9 +2172,9 @@
 
     if-nez v2, :cond_2
 
-    goto :goto_2
+    goto/16 :goto_2
 
-    .line 382
+    .line 381
     :cond_2
     const-string v2, "iso-prio"
 
@@ -2125,135 +2184,162 @@
 
     if-nez v1, :cond_3
 
-    .line 383
-    new-array p0, v3, [Ljp/co/sony/mc/camera/configuration/parameters/Iso;
+    .line 382
+    new-array v1, v3, [Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    invoke-virtual {v0, p0}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
-    move-result-object p0
+    move-result-object v0
 
-    check-cast p0, [Ljp/co/sony/mc/camera/configuration/parameters/Iso;
+    check-cast v0, [Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    return-object p0
+    return-object v0
 
-    .line 387
+    .line 386
     :cond_3
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
 
-    move-result p0
+    move-result v1
 
-    if-eqz p0, :cond_4
-
-    .line 389
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;->getValue()Ljava/lang/String;
-
-    move-result-object p0
+    if-eqz v1, :cond_4
 
     .line 388
-    invoke-static {p1, p0, p3, p4}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSupportedVideoIsoRange(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljava/lang/String;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;)Landroid/util/Range;
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
 
-    move-result-object p0
+    move-result v5
+
+    invoke-virtual/range {p6 .. p6}, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->getValue()Ljava/lang/String;
+
+    move-result-object v7
+
+    .line 389
+    invoke-virtual {p3}, Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;->getValue()Ljava/lang/String;
+
+    move-result-object v8
+
+    move-object v4, p1
+
+    move v6, p2
+
+    move-object v9, p4
+
+    move-object/from16 v10, p5
+
+    .line 387
+    invoke-static/range {v4 .. v10}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSupportedVideoIsoRange(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZZLjava/lang/String;Ljava/lang/String;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;)Landroid/util/Range;
+
+    move-result-object v1
 
     goto :goto_0
 
     .line 392
     :cond_4
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;->getValue()Ljava/lang/String;
+    invoke-virtual {p3}, Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;->getValue()Ljava/lang/String;
 
-    move-result-object p0
+    move-result-object v1
+
+    move-object v2, p1
 
     .line 391
-    invoke-static {p1, p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSupportedIsoRange(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljava/lang/String;)Landroid/util/Range;
+    invoke-static {p1, v1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSupportedIsoRange(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljava/lang/String;)Landroid/util/Range;
 
-    move-result-object p0
+    move-result-object v1
 
     .line 394
     :goto_0
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->values()[Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    move-result-object p1
-
-    array-length p2, p1
-
-    move p3, v3
-
-    :goto_1
-    if-ge p3, p2, :cond_6
-
-    aget-object p4, p1, p3
-
-    .line 395
-    invoke-virtual {p0}, Landroid/util/Range;->getLower()Ljava/lang/Comparable;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/lang/Integer;
-
-    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
-
-    move-result v1
-
-    invoke-virtual {p4}, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->getIsoValue()I
-
-    move-result v2
-
-    if-gt v1, v2, :cond_5
-
-    .line 396
-    invoke-virtual {p4}, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->getIsoValue()I
-
-    move-result v1
-
-    invoke-virtual {p0}, Landroid/util/Range;->getUpper()Ljava/lang/Comparable;
-
     move-result-object v2
 
-    check-cast v2, Ljava/lang/Integer;
+    array-length v4, v2
 
-    invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
+    move v5, v3
 
-    move-result v2
+    :goto_1
+    if-ge v5, v4, :cond_6
 
-    if-gt v1, v2, :cond_5
+    aget-object v6, v2, v5
+
+    .line 395
+    invoke-virtual {v1}, Landroid/util/Range;->getLower()Ljava/lang/Comparable;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/lang/Integer;
+
+    invoke-virtual {v7}, Ljava/lang/Integer;->intValue()I
+
+    move-result v7
+
+    invoke-virtual {v6}, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->getIsoValue()I
+
+    move-result v8
+
+    if-gt v7, v8, :cond_5
+
+    .line 396
+    invoke-virtual {v6}, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->getIsoValue()I
+
+    move-result v7
+
+    invoke-virtual {v1}, Landroid/util/Range;->getUpper()Ljava/lang/Comparable;
+
+    move-result-object v8
+
+    check-cast v8, Ljava/lang/Integer;
+
+    invoke-virtual {v8}, Ljava/lang/Integer;->intValue()I
+
+    move-result v8
+
+    if-gt v7, v8, :cond_5
 
     .line 397
-    invoke-virtual {v0, p4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     :cond_5
-    add-int/lit8 p3, p3, 0x1
+    add-int/lit8 v5, v5, 0x1
 
     goto :goto_1
 
     .line 401
     :cond_6
-    new-array p0, v3, [Ljp/co/sony/mc/camera/configuration/parameters/Iso;
+    new-array v1, v3, [Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    invoke-virtual {v0, p0}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
-    move-result-object p0
+    move-result-object v0
 
-    check-cast p0, [Ljp/co/sony/mc/camera/configuration/parameters/Iso;
+    check-cast v0, [Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    return-object p0
+    return-object v0
 
-    .line 378
+    .line 377
     :cond_7
     :goto_2
-    new-array p0, v3, [Ljp/co/sony/mc/camera/configuration/parameters/Iso;
+    new-array v1, v3, [Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    invoke-virtual {v0, p0}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
-    move-result-object p0
+    move-result-object v0
 
-    check-cast p0, [Ljp/co/sony/mc/camera/configuration/parameters/Iso;
+    check-cast v0, [Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    return-object p0
+    return-object v0
 .end method
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/Iso;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 28
+    .line 26
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -2268,7 +2354,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/configuration/parameters/Iso;
     .locals 1
 
-    .line 28
+    .line 26
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->$VALUES:[Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/configuration/parameters/Iso;->clone()Ljava/lang/Object;
@@ -2285,7 +2371,7 @@
 .method public getIconId()I
     .locals 0
 
-    .line 326
+    .line 324
     iget p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->mIconId:I
 
     return p0
@@ -2294,7 +2380,7 @@
 .method public getIsoValue()I
     .locals 0
 
-    .line 350
+    .line 348
     iget p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->mIsoValue:I
 
     return p0
@@ -2303,7 +2389,7 @@
 .method public getName()Ljava/lang/String;
     .locals 0
 
-    .line 355
+    .line 353
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p0
@@ -2318,7 +2404,7 @@
 .method public getSettingKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
     .locals 0
 
-    .line 316
+    .line 314
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->ISO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     return-object p0
@@ -2327,7 +2413,7 @@
 .method public getTextId()I
     .locals 0
 
-    .line 336
+    .line 334
     iget p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->mTextId:I
 
     return p0
@@ -2336,7 +2422,7 @@
 .method public getValue()Ljava/lang/String;
     .locals 0
 
-    .line 346
+    .line 344
     iget-object p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->mAeMode:Ljava/lang/String;
 
     return-object p0

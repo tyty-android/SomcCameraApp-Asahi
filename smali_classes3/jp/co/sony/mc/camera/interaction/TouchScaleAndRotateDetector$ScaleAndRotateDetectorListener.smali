@@ -16,7 +16,29 @@
 
 # virtual methods
 .method public abstract onDoubleTouchRotateDetected(FF)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "degreeVsOrigin",
+            "degreeVsPrevious"
+        }
+    .end annotation
 .end method
 
 .method public abstract onDoubleTouchScaleDetected(FFF)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "currentLength",
+            "previousLength",
+            "originalLength"
+        }
+    .end annotation
 .end method

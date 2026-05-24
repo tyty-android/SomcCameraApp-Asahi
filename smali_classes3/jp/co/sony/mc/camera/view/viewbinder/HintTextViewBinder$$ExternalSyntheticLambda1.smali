@@ -30,9 +30,9 @@
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/HintTextViewBinder$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/HintTextViewBinder;
 
-    check-cast p1, Ljp/co/sony/mc/camera/util/TuplesUtil$Quadruple;
+    check-cast p1, Ljp/co/sony/mc/camera/util/TuplesUtil$Quintuple;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/HintTextViewBinder;->$r8$lambda$HkE4JhVvYUcsoFHm82uqq3yUHMY(Ljp/co/sony/mc/camera/view/viewbinder/HintTextViewBinder;Ljp/co/sony/mc/camera/util/TuplesUtil$Quadruple;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/HintTextViewBinder;->$r8$lambda$-sC5rOlinlz7pMKceOQkQuHnBSY(Ljp/co/sony/mc/camera/view/viewbinder/HintTextViewBinder;Ljp/co/sony/mc/camera/util/TuplesUtil$Quintuple;)Lkotlin/Unit;
 
     move-result-object p0
 

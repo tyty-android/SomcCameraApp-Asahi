@@ -3,6 +3,11 @@
 .source "DoubleUtils.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/math/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # static fields
 .field static final EXPONENT_BIAS:I = 0x3ff
 
@@ -23,7 +28,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 37
+    .line 39
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,13 +36,21 @@
 
 .method static bigToDouble(Ljava/math/BigInteger;)D
     .locals 13
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "x"
+        }
+    .end annotation
 
-    .line 89
+    .line 91
     invoke-virtual {p0}, Ljava/math/BigInteger;->abs()Ljava/math/BigInteger;
 
     move-result-object v0
 
-    .line 90
+    .line 92
     invoke-virtual {v0}, Ljava/math/BigInteger;->bitLength()I
 
     move-result v1
@@ -48,7 +61,7 @@
 
     if-ge v2, v3, :cond_0
 
-    .line 93
+    .line 95
     invoke-virtual {p0}, Ljava/math/BigInteger;->longValue()J
 
     move-result-wide v0
@@ -62,7 +75,7 @@
 
     if-le v2, v3, :cond_1
 
-    .line 95
+    .line 97
     invoke-virtual {p0}, Ljava/math/BigInteger;->signum()I
 
     move-result p0
@@ -78,7 +91,7 @@
     :cond_1
     add-int/lit8 v2, v1, -0x36
 
-    .line 107
+    .line 109
     invoke-virtual {v0, v2}, Ljava/math/BigInteger;->shiftRight(I)Ljava/math/BigInteger;
 
     move-result-object v3
@@ -111,7 +124,7 @@
 
     if-nez v3, :cond_2
 
-    .line 117
+    .line 119
     invoke-virtual {v0}, Ljava/math/BigInteger;->getLowestSetBit()I
 
     move-result v0
@@ -132,7 +145,7 @@
 
     add-long/2addr v0, v7
 
-    .line 127
+    .line 129
     invoke-virtual {p0}, Ljava/math/BigInteger;->signum()I
 
     move-result p0
@@ -145,7 +158,7 @@
 
     or-long/2addr v0, v2
 
-    .line 128
+    .line 130
     invoke-static {v0, v1}, Ljava/lang/Double;->longBitsToDouble(J)D
 
     move-result-wide v0
@@ -155,8 +168,16 @@
 
 .method static ensureNonNegative(D)D
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 133
+    .line 135
     invoke-static {p0, p1}, Ljava/lang/Double;->isNaN(D)Z
 
     move-result v0
@@ -167,7 +188,7 @@
 
     const-wide/16 v0, 0x0
 
-    .line 134
+    .line 136
     invoke-static {p0, p1, v0, v1}, Ljava/lang/Math;->max(DD)D
 
     move-result-wide p0
@@ -177,8 +198,16 @@
 
 .method static getSignificand(D)J
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "d"
+        }
+    .end annotation
 
-    .line 63
+    .line 65
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleUtils;->isFinite(D)Z
 
     move-result v0
@@ -187,12 +216,12 @@
 
     invoke-static {v0, v1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/Object;)V
 
-    .line 64
+    .line 66
     invoke-static {p0, p1}, Ljava/lang/Math;->getExponent(D)I
 
     move-result v0
 
-    .line 65
+    .line 67
     invoke-static {p0, p1}, Ljava/lang/Double;->doubleToRawLongBits(D)J
 
     move-result-wide p0
@@ -222,8 +251,16 @@
 
 .method static isFinite(D)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "d"
+        }
+    .end annotation
 
-    .line 71
+    .line 73
     invoke-static {p0, p1}, Ljava/lang/Math;->getExponent(D)I
 
     move-result p0
@@ -245,8 +282,16 @@
 
 .method static isNormal(D)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "d"
+        }
+    .end annotation
 
-    .line 75
+    .line 77
     invoke-static {p0, p1}, Ljava/lang/Math;->getExponent(D)I
 
     move-result p0
@@ -268,10 +313,18 @@
 
 .method static nextDown(D)D
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "d"
+        }
+    .end annotation
 
     neg-double p0, p0
 
-    .line 40
+    .line 42
     invoke-static {p0, p1}, Ljava/lang/Math;->nextUp(D)D
 
     move-result-wide p0
@@ -283,8 +336,16 @@
 
 .method static scaleNormalize(D)D
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "x"
+        }
+    .end annotation
 
-    .line 83
+    .line 85
     invoke-static {p0, p1}, Ljava/lang/Double;->doubleToRawLongBits(D)J
 
     move-result-wide p0
@@ -297,7 +358,7 @@
 
     or-long/2addr p0, v0
 
-    .line 84
+    .line 86
     invoke-static {p0, p1}, Ljava/lang/Double;->longBitsToDouble(J)D
 
     move-result-wide p0

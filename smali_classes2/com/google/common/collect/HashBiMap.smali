@@ -8,15 +8,18 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lcom/google/common/collect/HashBiMap$KeySet;,
+        Lcom/google/common/collect/HashBiMap$ValueSet;,
+        Lcom/google/common/collect/HashBiMap$EntrySet;,
+        Lcom/google/common/collect/HashBiMap$Inverse;,
         Lcom/google/common/collect/HashBiMap$EntryForValue;,
         Lcom/google/common/collect/HashBiMap$InverseEntrySet;,
-        Lcom/google/common/collect/HashBiMap$Inverse;,
         Lcom/google/common/collect/HashBiMap$EntryForKey;,
-        Lcom/google/common/collect/HashBiMap$EntrySet;,
-        Lcom/google/common/collect/HashBiMap$ValueSet;,
-        Lcom/google/common/collect/HashBiMap$KeySet;,
         Lcom/google/common/collect/HashBiMap$View;
     }
 .end annotation
@@ -45,6 +48,9 @@
 
 # instance fields
 .field private transient entrySet:Ljava/util/Set;
+    .annotation runtime Lcom/google/errorprone/annotations/concurrent/LazyInit;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
@@ -55,9 +61,6 @@
 .end field
 
 .field private transient firstInInsertionOrder:I
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-    .end annotation
-.end field
 
 .field private transient hashTableKToV:[I
 
@@ -74,11 +77,14 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
 .field private transient keySet:Ljava/util/Set;
+    .annotation runtime Lcom/google/errorprone/annotations/concurrent/LazyInit;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
@@ -96,9 +102,6 @@
 .end field
 
 .field private transient lastInInsertionOrder:I
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-    .end annotation
-.end field
 
 .field transient modCount:I
 
@@ -113,6 +116,9 @@
 .field transient size:I
 
 .field private transient valueSet:Ljava/util/Set;
+    .annotation runtime Lcom/google/errorprone/annotations/concurrent/LazyInit;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
@@ -133,11 +139,19 @@
 # direct methods
 .method private constructor <init>(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "expectedSize"
+        }
+    .end annotation
 
-    .line 107
+    .line 115
     invoke-direct {p0}, Ljava/util/AbstractMap;-><init>()V
 
-    .line 108
+    .line 116
     invoke-virtual {p0, p1}, Lcom/google/common/collect/HashBiMap;->init(I)V
 
     return-void
@@ -146,7 +160,7 @@
 .method static synthetic access$000(Lcom/google/common/collect/HashBiMap;)I
     .locals 0
 
-    .line 53
+    .line 58
     iget p0, p0, Lcom/google/common/collect/HashBiMap;->firstInInsertionOrder:I
 
     return p0
@@ -155,7 +169,7 @@
 .method static synthetic access$100(Lcom/google/common/collect/HashBiMap;)[I
     .locals 0
 
-    .line 53
+    .line 58
     iget-object p0, p0, Lcom/google/common/collect/HashBiMap;->nextInInsertionOrder:[I
 
     return-object p0
@@ -164,7 +178,7 @@
 .method static synthetic access$200(Lcom/google/common/collect/HashBiMap;ILjava/lang/Object;Z)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-direct {p0, p1, p2, p3}, Lcom/google/common/collect/HashBiMap;->replaceValueInEntry(ILjava/lang/Object;Z)V
 
     return-void
@@ -173,7 +187,7 @@
 .method static synthetic access$302(Lcom/google/common/collect/HashBiMap;Lcom/google/common/collect/BiMap;)Lcom/google/common/collect/BiMap;
     .locals 0
 
-    .line 53
+    .line 58
     iput-object p1, p0, Lcom/google/common/collect/HashBiMap;->inverse:Lcom/google/common/collect/BiMap;
 
     return-object p1
@@ -182,7 +196,7 @@
 .method static synthetic access$400(Lcom/google/common/collect/HashBiMap;ILjava/lang/Object;Z)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-direct {p0, p1, p2, p3}, Lcom/google/common/collect/HashBiMap;->replaceKeyInEntry(ILjava/lang/Object;Z)V
 
     return-void
@@ -190,8 +204,16 @@
 
 .method private bucket(I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "hash"
+        }
+    .end annotation
 
-    .line 192
+    .line 200
     iget-object p0, p0, Lcom/google/common/collect/HashBiMap;->hashTableKToV:[I
 
     array-length p0, p0
@@ -219,7 +241,7 @@
 
     const/16 v0, 0x10
 
-    .line 57
+    .line 63
     invoke-static {v0}, Lcom/google/common/collect/HashBiMap;->create(I)Lcom/google/common/collect/HashBiMap;
 
     move-result-object v0
@@ -229,6 +251,15 @@
 
 .method public static create(I)Lcom/google/common/collect/HashBiMap;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "expectedSize"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -241,7 +272,7 @@
         }
     .end annotation
 
-    .line 67
+    .line 74
     new-instance v0, Lcom/google/common/collect/HashBiMap;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/HashBiMap;-><init>(I)V
@@ -251,6 +282,15 @@
 
 .method public static create(Ljava/util/Map;)Lcom/google/common/collect/HashBiMap;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "map"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -265,7 +305,7 @@
         }
     .end annotation
 
-    .line 75
+    .line 83
     invoke-interface {p0}, Ljava/util/Map;->size()I
 
     move-result v0
@@ -274,7 +314,7 @@
 
     move-result-object v0
 
-    .line 76
+    .line 84
     invoke-virtual {v0, p0}, Lcom/google/common/collect/HashBiMap;->putAll(Ljava/util/Map;)V
 
     return-object v0
@@ -282,13 +322,21 @@
 
 .method private static createFilledWithAbsent(I)[I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "size"
+        }
+    .end annotation
 
-    .line 134
+    .line 142
     new-array p0, p0, [I
 
     const/4 v0, -0x1
 
-    .line 135
+    .line 143
     invoke-static {p0, v0}, Ljava/util/Arrays;->fill([II)V
 
     return-object p0
@@ -296,6 +344,16 @@
 
 .method private deleteFromTableKToV(II)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "entry",
+            "keyHash"
+        }
+    .end annotation
 
     const/4 v0, -0x1
 
@@ -308,35 +366,35 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 405
+    .line 419
     :goto_0
     invoke-static {v1}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 406
+    .line 420
     invoke-direct {p0, p2}, Lcom/google/common/collect/HashBiMap;->bucket(I)I
 
     move-result p2
 
-    .line 408
+    .line 422
     iget-object v1, p0, Lcom/google/common/collect/HashBiMap;->hashTableKToV:[I
 
     aget v2, v1, p2
 
     if-ne v2, p1, :cond_1
 
-    .line 409
+    .line 423
     iget-object p0, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketKToV:[I
 
     aget v2, p0, p1
 
     aput v2, v1, p2
 
-    .line 410
+    .line 424
     aput v0, p0, p1
 
     return-void
 
-    .line 415
+    .line 429
     :cond_1
     iget-object p2, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketKToV:[I
 
@@ -353,19 +411,19 @@
 
     if-ne v2, p1, :cond_2
 
-    .line 419
+    .line 433
     iget-object p0, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketKToV:[I
 
     aget v1, p0, p1
 
     aput v1, p0, p2
 
-    .line 420
+    .line 434
     aput v0, p0, p1
 
     return-void
 
-    .line 417
+    .line 431
     :cond_2
     iget-object p2, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketKToV:[I
 
@@ -373,39 +431,21 @@
 
     goto :goto_1
 
-    .line 425
+    .line 439
     :cond_3
     new-instance p2, Ljava/lang/AssertionError;
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "Expected to find entry with key "
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     iget-object p0, p0, Lcom/google/common/collect/HashBiMap;->keys:[Ljava/lang/Object;
 
     aget-object p0, p0, p1
 
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/String;->length()I
-
-    move-result p1
-
-    add-int/lit8 p1, p1, 0x20
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0, p1}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string p1, "Expected to find entry with key "
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p1
-
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -420,6 +460,16 @@
 
 .method private deleteFromTableVToK(II)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "entry",
+            "valueHash"
+        }
+    .end annotation
 
     const/4 v0, -0x1
 
@@ -432,35 +482,35 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 433
+    .line 447
     :goto_0
     invoke-static {v1}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 434
+    .line 448
     invoke-direct {p0, p2}, Lcom/google/common/collect/HashBiMap;->bucket(I)I
 
     move-result p2
 
-    .line 436
+    .line 450
     iget-object v1, p0, Lcom/google/common/collect/HashBiMap;->hashTableVToK:[I
 
     aget v2, v1, p2
 
     if-ne v2, p1, :cond_1
 
-    .line 437
+    .line 451
     iget-object p0, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketVToK:[I
 
     aget v2, p0, p1
 
     aput v2, v1, p2
 
-    .line 438
+    .line 452
     aput v0, p0, p1
 
     return-void
 
-    .line 443
+    .line 457
     :cond_1
     iget-object p2, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketVToK:[I
 
@@ -477,19 +527,19 @@
 
     if-ne v2, p1, :cond_2
 
-    .line 447
+    .line 461
     iget-object p0, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketVToK:[I
 
     aget v1, p0, p1
 
     aput v1, p0, p2
 
-    .line 448
+    .line 462
     aput v0, p0, p1
 
     return-void
 
-    .line 445
+    .line 459
     :cond_2
     iget-object p2, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketVToK:[I
 
@@ -497,39 +547,21 @@
 
     goto :goto_1
 
-    .line 453
+    .line 467
     :cond_3
     new-instance p2, Ljava/lang/AssertionError;
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "Expected to find entry with value "
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     iget-object p0, p0, Lcom/google/common/collect/HashBiMap;->values:[Ljava/lang/Object;
 
     aget-object p0, p0, p1
 
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/String;->length()I
-
-    move-result p1
-
-    add-int/lit8 p1, p1, 0x22
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0, p1}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string p1, "Expected to find entry with value "
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p1
-
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -544,23 +576,31 @@
 
 .method private ensureCapacity(I)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "minCapacity"
+        }
+    .end annotation
 
-    .line 156
+    .line 164
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketKToV:[I
 
     array-length v1, v0
 
     if-ge v1, p1, :cond_0
 
-    .line 157
+    .line 165
     array-length v0, v0
 
-    .line 158
+    .line 166
     invoke-static {v0, p1}, Lcom/google/common/collect/ImmutableCollection$Builder;->expandedCapacity(II)I
 
     move-result v0
 
-    .line 160
+    .line 168
     iget-object v1, p0, Lcom/google/common/collect/HashBiMap;->keys:[Ljava/lang/Object;
 
     invoke-static {v1, v0}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
@@ -569,7 +609,7 @@
 
     iput-object v1, p0, Lcom/google/common/collect/HashBiMap;->keys:[Ljava/lang/Object;
 
-    .line 161
+    .line 169
     iget-object v1, p0, Lcom/google/common/collect/HashBiMap;->values:[Ljava/lang/Object;
 
     invoke-static {v1, v0}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
@@ -578,7 +618,7 @@
 
     iput-object v1, p0, Lcom/google/common/collect/HashBiMap;->values:[Ljava/lang/Object;
 
-    .line 162
+    .line 170
     iget-object v1, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketKToV:[I
 
     invoke-static {v1, v0}, Lcom/google/common/collect/HashBiMap;->expandAndFillWithAbsent([II)[I
@@ -587,7 +627,7 @@
 
     iput-object v1, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketKToV:[I
 
-    .line 163
+    .line 171
     iget-object v1, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketVToK:[I
 
     invoke-static {v1, v0}, Lcom/google/common/collect/HashBiMap;->expandAndFillWithAbsent([II)[I
@@ -596,7 +636,7 @@
 
     iput-object v1, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketVToK:[I
 
-    .line 164
+    .line 172
     iget-object v1, p0, Lcom/google/common/collect/HashBiMap;->prevInInsertionOrder:[I
 
     invoke-static {v1, v0}, Lcom/google/common/collect/HashBiMap;->expandAndFillWithAbsent([II)[I
@@ -605,7 +645,7 @@
 
     iput-object v1, p0, Lcom/google/common/collect/HashBiMap;->prevInInsertionOrder:[I
 
-    .line 165
+    .line 173
     iget-object v1, p0, Lcom/google/common/collect/HashBiMap;->nextInInsertionOrder:[I
 
     invoke-static {v1, v0}, Lcom/google/common/collect/HashBiMap;->expandAndFillWithAbsent([II)[I
@@ -614,7 +654,7 @@
 
     iput-object v0, p0, Lcom/google/common/collect/HashBiMap;->nextInInsertionOrder:[I
 
-    .line 168
+    .line 176
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->hashTableKToV:[I
 
@@ -624,19 +664,19 @@
 
     const-wide/high16 v0, 0x3ff0000000000000L    # 1.0
 
-    .line 169
+    .line 177
     invoke-static {p1, v0, v1}, Lcom/google/common/collect/Hashing;->closedTableSize(ID)I
 
     move-result p1
 
-    .line 170
+    .line 178
     invoke-static {p1}, Lcom/google/common/collect/HashBiMap;->createFilledWithAbsent(I)[I
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/common/collect/HashBiMap;->hashTableKToV:[I
 
-    .line 171
+    .line 179
     invoke-static {p1}, Lcom/google/common/collect/HashBiMap;->createFilledWithAbsent(I)[I
 
     move-result-object p1
@@ -645,13 +685,13 @@
 
     const/4 p1, 0x0
 
-    .line 173
+    .line 181
     :goto_0
     iget v0, p0, Lcom/google/common/collect/HashBiMap;->size:I
 
     if-ge p1, v0, :cond_1
 
-    .line 174
+    .line 182
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->keys:[Ljava/lang/Object;
 
     aget-object v0, v0, p1
@@ -660,12 +700,12 @@
 
     move-result v0
 
-    .line 175
+    .line 183
     invoke-direct {p0, v0}, Lcom/google/common/collect/HashBiMap;->bucket(I)I
 
     move-result v0
 
-    .line 176
+    .line 184
     iget-object v1, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketKToV:[I
 
     iget-object v2, p0, Lcom/google/common/collect/HashBiMap;->hashTableKToV:[I
@@ -674,10 +714,10 @@
 
     aput v3, v1, p1
 
-    .line 177
+    .line 185
     aput p1, v2, v0
 
-    .line 179
+    .line 187
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->values:[Ljava/lang/Object;
 
     aget-object v0, v0, p1
@@ -686,12 +726,12 @@
 
     move-result v0
 
-    .line 180
+    .line 188
     invoke-direct {p0, v0}, Lcom/google/common/collect/HashBiMap;->bucket(I)I
 
     move-result v0
 
-    .line 181
+    .line 189
     iget-object v1, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketVToK:[I
 
     iget-object v2, p0, Lcom/google/common/collect/HashBiMap;->hashTableVToK:[I
@@ -700,7 +740,7 @@
 
     aput v3, v1, p1
 
-    .line 182
+    .line 190
     aput p1, v2, v0
 
     add-int/lit8 p1, p1, 0x1
@@ -713,18 +753,28 @@
 
 .method private static expandAndFillWithAbsent([II)[I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "array",
+            "newSize"
+        }
+    .end annotation
 
-    .line 141
+    .line 149
     array-length v0, p0
 
-    .line 142
+    .line 150
     invoke-static {p0, p1}, Ljava/util/Arrays;->copyOf([II)[I
 
     move-result-object p0
 
     const/4 v1, -0x1
 
-    .line 143
+    .line 151
     invoke-static {p0, v0, p1, v1}, Ljava/util/Arrays;->fill([IIII)V
 
     return-object p0
@@ -732,6 +782,16 @@
 
 .method private insertIntoTableKToV(II)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "entry",
+            "keyHash"
+        }
+    .end annotation
 
     const/4 v0, -0x1
 
@@ -744,16 +804,16 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 383
+    .line 397
     :goto_0
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 384
+    .line 398
     invoke-direct {p0, p2}, Lcom/google/common/collect/HashBiMap;->bucket(I)I
 
     move-result p2
 
-    .line 385
+    .line 399
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketKToV:[I
 
     iget-object p0, p0, Lcom/google/common/collect/HashBiMap;->hashTableKToV:[I
@@ -762,7 +822,7 @@
 
     aput v1, v0, p1
 
-    .line 386
+    .line 400
     aput p1, p0, p2
 
     return-void
@@ -770,6 +830,16 @@
 
 .method private insertIntoTableVToK(II)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "entry",
+            "valueHash"
+        }
+    .end annotation
 
     const/4 v0, -0x1
 
@@ -782,16 +852,16 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 394
+    .line 408
     :goto_0
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 395
+    .line 409
     invoke-direct {p0, p2}, Lcom/google/common/collect/HashBiMap;->bucket(I)I
 
     move-result p2
 
-    .line 396
+    .line 410
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketVToK:[I
 
     iget-object p0, p0, Lcom/google/common/collect/HashBiMap;->hashTableVToK:[I
@@ -800,7 +870,7 @@
 
     aput v1, v0, p1
 
-    .line 397
+    .line 411
     aput p1, p0, p2
 
     return-void
@@ -808,67 +878,77 @@
 
 .method private moveEntryToIndex(II)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "src",
+            "dest"
+        }
+    .end annotation
 
     if-ne p1, p2, :cond_0
 
     return-void
 
-    .line 597
+    .line 611
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->prevInInsertionOrder:[I
 
     aget v0, v0, p1
 
-    .line 598
+    .line 612
     iget-object v1, p0, Lcom/google/common/collect/HashBiMap;->nextInInsertionOrder:[I
 
     aget v1, v1, p1
 
-    .line 599
+    .line 613
     invoke-direct {p0, v0, p2}, Lcom/google/common/collect/HashBiMap;->setSucceeds(II)V
 
-    .line 600
+    .line 614
     invoke-direct {p0, p2, v1}, Lcom/google/common/collect/HashBiMap;->setSucceeds(II)V
 
-    .line 602
+    .line 616
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->keys:[Ljava/lang/Object;
 
     aget-object v1, v0, p1
 
-    .line 603
+    .line 617
     iget-object v2, p0, Lcom/google/common/collect/HashBiMap;->values:[Ljava/lang/Object;
 
     aget-object v3, v2, p1
 
-    .line 605
+    .line 619
     aput-object v1, v0, p2
 
-    .line 606
+    .line 620
     aput-object v3, v2, p2
 
-    .line 609
+    .line 623
     invoke-static {v1}, Lcom/google/common/collect/Hashing;->smearedHash(Ljava/lang/Object;)I
 
     move-result v0
 
-    .line 610
+    .line 624
     invoke-direct {p0, v0}, Lcom/google/common/collect/HashBiMap;->bucket(I)I
 
     move-result v0
 
-    .line 611
+    .line 625
     iget-object v1, p0, Lcom/google/common/collect/HashBiMap;->hashTableKToV:[I
 
     aget v2, v1, v0
 
     if-ne v2, p1, :cond_1
 
-    .line 612
+    .line 626
     aput p2, v1, v0
 
     goto :goto_1
 
-    .line 615
+    .line 629
     :cond_1
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketKToV:[I
 
@@ -883,12 +963,12 @@
 
     if-ne v2, p1, :cond_4
 
-    .line 619
+    .line 633
     iget-object v1, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketKToV:[I
 
     aput p2, v1, v0
 
-    .line 625
+    .line 639
     :goto_1
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketKToV:[I
 
@@ -898,32 +978,32 @@
 
     const/4 v1, -0x1
 
-    .line 626
+    .line 640
     aput v1, v0, p1
 
-    .line 629
+    .line 643
     invoke-static {v3}, Lcom/google/common/collect/Hashing;->smearedHash(Ljava/lang/Object;)I
 
     move-result v0
 
-    .line 630
+    .line 644
     invoke-direct {p0, v0}, Lcom/google/common/collect/HashBiMap;->bucket(I)I
 
     move-result v0
 
-    .line 631
+    .line 645
     iget-object v2, p0, Lcom/google/common/collect/HashBiMap;->hashTableVToK:[I
 
     aget v3, v2, v0
 
     if-ne v3, p1, :cond_2
 
-    .line 632
+    .line 646
     aput p2, v2, v0
 
     goto :goto_3
 
-    .line 635
+    .line 649
     :cond_2
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketVToK:[I
 
@@ -938,12 +1018,12 @@
 
     if-ne v3, p1, :cond_3
 
-    .line 639
+    .line 653
     iget-object v2, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketVToK:[I
 
     aput p2, v2, v0
 
-    .line 645
+    .line 659
     :goto_3
     iget-object p0, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketVToK:[I
 
@@ -951,12 +1031,12 @@
 
     aput v0, p0, p2
 
-    .line 646
+    .line 660
     aput v1, p0, p1
 
     return-void
 
-    .line 637
+    .line 651
     :cond_3
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketVToK:[I
 
@@ -964,7 +1044,7 @@
 
     goto :goto_2
 
-    .line 617
+    .line 631
     :cond_4
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketKToV:[I
 
@@ -975,6 +1055,15 @@
 
 .method private readObject(Ljava/io/ObjectInputStream;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stream"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -982,20 +1071,20 @@
         }
     .end annotation
 
-    .line 1092
+    .line 1147
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->defaultReadObject()V
 
-    .line 1093
+    .line 1148
     invoke-static {p1}, Lcom/google/common/collect/Serialization;->readCount(Ljava/io/ObjectInputStream;)I
 
     move-result v0
 
     const/16 v1, 0x10
 
-    .line 1094
+    .line 1149
     invoke-virtual {p0, v1}, Lcom/google/common/collect/HashBiMap;->init(I)V
 
-    .line 1095
+    .line 1150
     invoke-static {p0, p1, v0}, Lcom/google/common/collect/Serialization;->populateMap(Ljava/util/Map;Ljava/io/ObjectInputStream;I)V
 
     return-void
@@ -1003,6 +1092,18 @@
 
 .method private removeEntry(III)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "entry",
+            "keyHash",
+            "valueHash"
+        }
+    .end annotation
 
     const/4 v0, -0x1
 
@@ -1017,37 +1118,37 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 564
+    .line 578
     :goto_0
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 565
+    .line 579
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/HashBiMap;->deleteFromTableKToV(II)V
 
-    .line 566
+    .line 580
     invoke-direct {p0, p1, p3}, Lcom/google/common/collect/HashBiMap;->deleteFromTableVToK(II)V
 
-    .line 568
+    .line 582
     iget-object p2, p0, Lcom/google/common/collect/HashBiMap;->prevInInsertionOrder:[I
 
     aget p2, p2, p1
 
-    .line 569
+    .line 583
     iget-object p3, p0, Lcom/google/common/collect/HashBiMap;->nextInInsertionOrder:[I
 
     aget p3, p3, p1
 
-    .line 570
+    .line 584
     invoke-direct {p0, p2, p3}, Lcom/google/common/collect/HashBiMap;->setSucceeds(II)V
 
-    .line 572
+    .line 586
     iget p2, p0, Lcom/google/common/collect/HashBiMap;->size:I
 
     sub-int/2addr p2, v1
 
     invoke-direct {p0, p2, p1}, Lcom/google/common/collect/HashBiMap;->moveEntryToIndex(II)V
 
-    .line 573
+    .line 587
     iget-object p1, p0, Lcom/google/common/collect/HashBiMap;->keys:[Ljava/lang/Object;
 
     iget p2, p0, Lcom/google/common/collect/HashBiMap;->size:I
@@ -1058,7 +1159,7 @@
 
     aput-object v0, p1, p3
 
-    .line 574
+    .line 588
     iget-object p1, p0, Lcom/google/common/collect/HashBiMap;->values:[Ljava/lang/Object;
 
     add-int/lit8 p3, p2, -0x1
@@ -1067,10 +1168,10 @@
 
     sub-int/2addr p2, v1
 
-    .line 575
+    .line 589
     iput p2, p0, Lcom/google/common/collect/HashBiMap;->size:I
 
-    .line 576
+    .line 590
     iget p1, p0, Lcom/google/common/collect/HashBiMap;->modCount:I
 
     add-int/2addr p1, v1
@@ -1083,9 +1184,22 @@
 .method private replaceKeyInEntry(ILjava/lang/Object;Z)V
     .locals 4
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "entry",
+            "newKey",
+            "force"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(ITK;Z)V"
@@ -1103,41 +1217,41 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 486
+    .line 500
     :goto_0
     invoke-static {v1}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 487
+    .line 501
     invoke-static {p2}, Lcom/google/common/collect/Hashing;->smearedHash(Ljava/lang/Object;)I
 
     move-result v1
 
-    .line 488
+    .line 502
     invoke-virtual {p0, p2, v1}, Lcom/google/common/collect/HashBiMap;->findEntryByKey(Ljava/lang/Object;I)I
 
     move-result v2
 
-    .line 490
+    .line 504
     iget v3, p0, Lcom/google/common/collect/HashBiMap;->lastInInsertionOrder:I
 
     if-eq v2, v0, :cond_2
 
     if-eqz p3, :cond_1
 
-    .line 494
+    .line 508
     iget-object p3, p0, Lcom/google/common/collect/HashBiMap;->prevInInsertionOrder:[I
 
     aget v3, p3, v2
 
-    .line 495
+    .line 509
     iget-object p3, p0, Lcom/google/common/collect/HashBiMap;->nextInInsertionOrder:[I
 
     aget p3, p3, v2
 
-    .line 496
+    .line 510
     invoke-virtual {p0, v2, v1}, Lcom/google/common/collect/HashBiMap;->removeEntryKeyHashKnown(II)V
 
-    .line 497
+    .line 511
     iget v0, p0, Lcom/google/common/collect/HashBiMap;->size:I
 
     if-ne p1, v0, :cond_3
@@ -1146,35 +1260,17 @@
 
     goto :goto_1
 
-    .line 501
+    .line 515
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    invoke-static {p2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    new-instance p1, Ljava/lang/StringBuilder;
 
-    move-result-object p1
+    const-string p3, "Key already present in map: "
 
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-direct {p1, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p2
-
-    invoke-virtual {p2}, Ljava/lang/String;->length()I
-
-    move-result p2
-
-    add-int/lit8 p2, p2, 0x1c
-
-    new-instance p3, Ljava/lang/StringBuilder;
-
-    invoke-direct {p3, p2}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string p2, "Key already present in map: "
-
-    invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p2
-
-    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -1193,14 +1289,14 @@
     :goto_1
     if-ne v3, p1, :cond_4
 
-    .line 505
+    .line 519
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->prevInInsertionOrder:[I
 
     aget v3, v0, p1
 
     goto :goto_2
 
-    .line 506
+    .line 520
     :cond_4
     iget v0, p0, Lcom/google/common/collect/HashBiMap;->size:I
 
@@ -1212,14 +1308,14 @@
     :goto_2
     if-ne p3, p1, :cond_6
 
-    .line 511
+    .line 525
     iget-object p3, p0, Lcom/google/common/collect/HashBiMap;->nextInInsertionOrder:[I
 
     aget v2, p3, p1
 
     goto :goto_3
 
-    .line 512
+    .line 526
     :cond_6
     iget v0, p0, Lcom/google/common/collect/HashBiMap;->size:I
 
@@ -1230,21 +1326,21 @@
     :cond_7
     move v2, p3
 
-    .line 516
+    .line 530
     :goto_3
     iget-object p3, p0, Lcom/google/common/collect/HashBiMap;->prevInInsertionOrder:[I
 
     aget p3, p3, p1
 
-    .line 517
+    .line 531
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->nextInInsertionOrder:[I
 
     aget v0, v0, p1
 
-    .line 518
+    .line 532
     invoke-direct {p0, p3, v0}, Lcom/google/common/collect/HashBiMap;->setSucceeds(II)V
 
-    .line 520
+    .line 534
     iget-object p3, p0, Lcom/google/common/collect/HashBiMap;->keys:[Ljava/lang/Object;
 
     aget-object p3, p3, p1
@@ -1255,22 +1351,22 @@
 
     invoke-direct {p0, p1, p3}, Lcom/google/common/collect/HashBiMap;->deleteFromTableKToV(II)V
 
-    .line 521
+    .line 535
     iget-object p3, p0, Lcom/google/common/collect/HashBiMap;->keys:[Ljava/lang/Object;
 
     aput-object p2, p3, p1
 
-    .line 522
+    .line 536
     invoke-static {p2}, Lcom/google/common/collect/Hashing;->smearedHash(Ljava/lang/Object;)I
 
     move-result p2
 
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/HashBiMap;->insertIntoTableKToV(II)V
 
-    .line 525
+    .line 539
     invoke-direct {p0, v3, p1}, Lcom/google/common/collect/HashBiMap;->setSucceeds(II)V
 
-    .line 526
+    .line 540
     invoke-direct {p0, p1, v2}, Lcom/google/common/collect/HashBiMap;->setSucceeds(II)V
 
     return-void
@@ -1279,9 +1375,22 @@
 .method private replaceValueInEntry(ILjava/lang/Object;Z)V
     .locals 3
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "entry",
+            "newValue",
+            "force"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(ITV;Z)V"
@@ -1299,16 +1408,16 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 461
+    .line 475
     :goto_0
     invoke-static {v1}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 462
+    .line 476
     invoke-static {p2}, Lcom/google/common/collect/Hashing;->smearedHash(Ljava/lang/Object;)I
 
     move-result v1
 
-    .line 463
+    .line 477
     invoke-virtual {p0, p2, v1}, Lcom/google/common/collect/HashBiMap;->findEntryByValue(Ljava/lang/Object;I)I
 
     move-result v2
@@ -1317,10 +1426,10 @@
 
     if-eqz p3, :cond_1
 
-    .line 466
+    .line 480
     invoke-virtual {p0, v2, v1}, Lcom/google/common/collect/HashBiMap;->removeEntryValueHashKnown(II)V
 
-    .line 467
+    .line 481
     iget p3, p0, Lcom/google/common/collect/HashBiMap;->size:I
 
     if-ne p1, p3, :cond_2
@@ -1329,35 +1438,17 @@
 
     goto :goto_1
 
-    .line 471
+    .line 485
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    invoke-static {p2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    new-instance p1, Ljava/lang/StringBuilder;
 
-    move-result-object p1
+    const-string p3, "Value already present in map: "
 
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-direct {p1, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p2
-
-    invoke-virtual {p2}, Ljava/lang/String;->length()I
-
-    move-result p2
-
-    add-int/lit8 p2, p2, 0x1e
-
-    new-instance p3, Ljava/lang/StringBuilder;
-
-    invoke-direct {p3, p2}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string p2, "Value already present in map: "
-
-    invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p2
-
-    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -1369,7 +1460,7 @@
 
     throw p0
 
-    .line 475
+    .line 489
     :cond_2
     :goto_1
     iget-object p3, p0, Lcom/google/common/collect/HashBiMap;->values:[Ljava/lang/Object;
@@ -1382,12 +1473,12 @@
 
     invoke-direct {p0, p1, p3}, Lcom/google/common/collect/HashBiMap;->deleteFromTableVToK(II)V
 
-    .line 476
+    .line 490
     iget-object p3, p0, Lcom/google/common/collect/HashBiMap;->values:[Ljava/lang/Object;
 
     aput-object p2, p3, p1
 
-    .line 477
+    .line 491
     invoke-direct {p0, p1, v1}, Lcom/google/common/collect/HashBiMap;->insertIntoTableVToK(II)V
 
     return-void
@@ -1395,17 +1486,27 @@
 
 .method private setSucceeds(II)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "prev",
+            "next"
+        }
+    .end annotation
 
     const/4 v0, -0x2
 
     if-ne p1, v0, :cond_0
 
-    .line 367
+    .line 381
     iput p2, p0, Lcom/google/common/collect/HashBiMap;->firstInInsertionOrder:I
 
     goto :goto_0
 
-    .line 369
+    .line 383
     :cond_0
     iget-object v1, p0, Lcom/google/common/collect/HashBiMap;->nextInInsertionOrder:[I
 
@@ -1414,12 +1515,12 @@
     :goto_0
     if-ne p2, v0, :cond_1
 
-    .line 372
+    .line 386
     iput p1, p0, Lcom/google/common/collect/HashBiMap;->lastInInsertionOrder:I
 
     goto :goto_1
 
-    .line 374
+    .line 388
     :cond_1
     iget-object p0, p0, Lcom/google/common/collect/HashBiMap;->prevInInsertionOrder:[I
 
@@ -1431,16 +1532,25 @@
 
 .method private writeObject(Ljava/io/ObjectOutputStream;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stream"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 1086
+    .line 1140
     invoke-virtual {p1}, Ljava/io/ObjectOutputStream;->defaultWriteObject()V
 
-    .line 1087
+    .line 1141
     invoke-static {p0, p1}, Lcom/google/common/collect/Serialization;->writeMap(Ljava/util/Map;Ljava/io/ObjectOutputStream;)V
 
     return-void
@@ -1451,7 +1561,7 @@
 .method public clear()V
     .locals 4
 
-    .line 651
+    .line 665
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->keys:[Ljava/lang/Object;
 
     iget v1, p0, Lcom/google/common/collect/HashBiMap;->size:I
@@ -1462,65 +1572,65 @@
 
     invoke-static {v0, v2, v1, v3}, Ljava/util/Arrays;->fill([Ljava/lang/Object;IILjava/lang/Object;)V
 
-    .line 652
+    .line 666
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->values:[Ljava/lang/Object;
 
     iget v1, p0, Lcom/google/common/collect/HashBiMap;->size:I
 
     invoke-static {v0, v2, v1, v3}, Ljava/util/Arrays;->fill([Ljava/lang/Object;IILjava/lang/Object;)V
 
-    .line 653
+    .line 667
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->hashTableKToV:[I
 
     const/4 v1, -0x1
 
     invoke-static {v0, v1}, Ljava/util/Arrays;->fill([II)V
 
-    .line 654
+    .line 668
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->hashTableVToK:[I
 
     invoke-static {v0, v1}, Ljava/util/Arrays;->fill([II)V
 
-    .line 655
+    .line 669
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketKToV:[I
 
     iget v3, p0, Lcom/google/common/collect/HashBiMap;->size:I
 
     invoke-static {v0, v2, v3, v1}, Ljava/util/Arrays;->fill([IIII)V
 
-    .line 656
+    .line 670
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketVToK:[I
 
     iget v3, p0, Lcom/google/common/collect/HashBiMap;->size:I
 
     invoke-static {v0, v2, v3, v1}, Ljava/util/Arrays;->fill([IIII)V
 
-    .line 657
+    .line 671
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->prevInInsertionOrder:[I
 
     iget v3, p0, Lcom/google/common/collect/HashBiMap;->size:I
 
     invoke-static {v0, v2, v3, v1}, Ljava/util/Arrays;->fill([IIII)V
 
-    .line 658
+    .line 672
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->nextInInsertionOrder:[I
 
     iget v3, p0, Lcom/google/common/collect/HashBiMap;->size:I
 
     invoke-static {v0, v2, v3, v1}, Ljava/util/Arrays;->fill([IIII)V
 
-    .line 659
+    .line 673
     iput v2, p0, Lcom/google/common/collect/HashBiMap;->size:I
 
     const/4 v0, -0x2
 
-    .line 660
+    .line 674
     iput v0, p0, Lcom/google/common/collect/HashBiMap;->firstInInsertionOrder:I
 
-    .line 661
+    .line 675
     iput v0, p0, Lcom/google/common/collect/HashBiMap;->lastInInsertionOrder:I
 
-    .line 662
+    .line 676
     iget v0, p0, Lcom/google/common/collect/HashBiMap;->modCount:I
 
     add-int/lit8 v0, v0, 0x1
@@ -1533,11 +1643,19 @@
 .method public containsKey(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 232
+    .line 244
     invoke-virtual {p0, p1}, Lcom/google/common/collect/HashBiMap;->findEntryByKey(Ljava/lang/Object;)I
 
     move-result p0
@@ -1560,11 +1678,19 @@
 .method public containsValue(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 247
+    .line 259
     invoke-virtual {p0, p1}, Lcom/google/common/collect/HashBiMap;->findEntryByValue(Ljava/lang/Object;)I
 
     move-result p0
@@ -1595,12 +1721,12 @@
         }
     .end annotation
 
-    .line 811
+    .line 833
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->entrySet:Ljava/util/Set;
 
     if-nez v0, :cond_0
 
-    .line 812
+    .line 834
     new-instance v0, Lcom/google/common/collect/HashBiMap$EntrySet;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/HashBiMap$EntrySet;-><init>(Lcom/google/common/collect/HashBiMap;)V
@@ -1614,11 +1740,27 @@
 .method findEntry(Ljava/lang/Object;I[I[I[Ljava/lang/Object;)I
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "o",
+            "oHash",
+            "hashTable",
+            "nextInBucket",
+            "array"
+        }
+    .end annotation
 
-    .line 222
+    .line 234
     invoke-direct {p0, p2}, Lcom/google/common/collect/HashBiMap;->bucket(I)I
 
     move-result p0
@@ -1630,7 +1772,7 @@
 
     if-eq p0, p2, :cond_1
 
-    .line 223
+    .line 235
     aget-object p2, p5, p0
 
     invoke-static {p2, p1}, Lcom/google/common/base/Objects;->equal(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1641,7 +1783,7 @@
 
     return p0
 
-    .line 222
+    .line 234
     :cond_0
     aget p0, p4, p0
 
@@ -1654,11 +1796,19 @@
 .method findEntryByKey(Ljava/lang/Object;)I
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 197
+    .line 205
     invoke-static {p1}, Lcom/google/common/collect/Hashing;->smearedHash(Ljava/lang/Object;)I
 
     move-result v0
@@ -1673,11 +1823,21 @@
 .method findEntryByKey(Ljava/lang/Object;I)I
     .locals 6
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "keyHash"
+        }
+    .end annotation
 
-    .line 204
+    .line 212
     iget-object v3, p0, Lcom/google/common/collect/HashBiMap;->hashTableKToV:[I
 
     iget-object v4, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketKToV:[I
@@ -1700,11 +1860,19 @@
 .method findEntryByValue(Ljava/lang/Object;)I
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 209
+    .line 217
     invoke-static {p1}, Lcom/google/common/collect/Hashing;->smearedHash(Ljava/lang/Object;)I
 
     move-result v0
@@ -1719,11 +1887,21 @@
 .method findEntryByValue(Ljava/lang/Object;I)I
     .locals 6
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "value",
+            "valueHash"
+        }
+    .end annotation
 
-    .line 217
+    .line 225
     iget-object v3, p0, Lcom/google/common/collect/HashBiMap;->hashTableVToK:[I
 
     iget-object v4, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketVToK:[I
@@ -1746,25 +1924,36 @@
 .method public forcePut(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV;)TV;"
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
     const/4 v0, 0x1
 
-    .line 311
+    .line 324
     invoke-virtual {p0, p1, p2, v0}, Lcom/google/common/collect/HashBiMap;->put(Ljava/lang/Object;Ljava/lang/Object;Z)Ljava/lang/Object;
 
     move-result-object p0
@@ -1775,9 +1964,18 @@
 .method public get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1786,10 +1984,10 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
-    .line 253
+    .line 265
     invoke-virtual {p0, p1}, Lcom/google/common/collect/HashBiMap;->findEntryByKey(Ljava/lang/Object;)I
 
     move-result p1
@@ -1802,7 +2000,7 @@
 
     goto :goto_0
 
-    .line 254
+    .line 266
     :cond_0
     iget-object p0, p0, Lcom/google/common/collect/HashBiMap;->values:[Ljava/lang/Object;
 
@@ -1815,9 +2013,18 @@
 .method getInverse(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1826,10 +2033,10 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
-    .line 259
+    .line 271
     invoke-virtual {p0, p1}, Lcom/google/common/collect/HashBiMap;->findEntryByValue(Ljava/lang/Object;)I
 
     move-result p1
@@ -1842,7 +2049,7 @@
 
     goto :goto_0
 
-    .line 260
+    .line 272
     :cond_0
     iget-object p0, p0, Lcom/google/common/collect/HashBiMap;->keys:[Ljava/lang/Object;
 
@@ -1854,56 +2061,64 @@
 
 .method init(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "expectedSize"
+        }
+    .end annotation
 
-    .line 113
+    .line 121
     const-string v0, "expectedSize"
 
     invoke-static {p1, v0}, Lcom/google/common/collect/CollectPreconditions;->checkNonnegative(ILjava/lang/String;)I
 
     const-wide/high16 v0, 0x3ff0000000000000L    # 1.0
 
-    .line 114
+    .line 122
     invoke-static {p1, v0, v1}, Lcom/google/common/collect/Hashing;->closedTableSize(ID)I
 
     move-result v0
 
     const/4 v1, 0x0
 
-    .line 115
+    .line 123
     iput v1, p0, Lcom/google/common/collect/HashBiMap;->size:I
 
-    .line 117
+    .line 125
     new-array v1, p1, [Ljava/lang/Object;
 
     iput-object v1, p0, Lcom/google/common/collect/HashBiMap;->keys:[Ljava/lang/Object;
 
-    .line 118
+    .line 126
     new-array v1, p1, [Ljava/lang/Object;
 
     iput-object v1, p0, Lcom/google/common/collect/HashBiMap;->values:[Ljava/lang/Object;
 
-    .line 120
+    .line 128
     invoke-static {v0}, Lcom/google/common/collect/HashBiMap;->createFilledWithAbsent(I)[I
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/google/common/collect/HashBiMap;->hashTableKToV:[I
 
-    .line 121
+    .line 129
     invoke-static {v0}, Lcom/google/common/collect/HashBiMap;->createFilledWithAbsent(I)[I
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/common/collect/HashBiMap;->hashTableVToK:[I
 
-    .line 122
+    .line 130
     invoke-static {p1}, Lcom/google/common/collect/HashBiMap;->createFilledWithAbsent(I)[I
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/common/collect/HashBiMap;->nextInBucketKToV:[I
 
-    .line 123
+    .line 131
     invoke-static {p1}, Lcom/google/common/collect/HashBiMap;->createFilledWithAbsent(I)[I
 
     move-result-object v0
@@ -1912,20 +2127,20 @@
 
     const/4 v0, -0x2
 
-    .line 125
+    .line 133
     iput v0, p0, Lcom/google/common/collect/HashBiMap;->firstInInsertionOrder:I
 
-    .line 126
+    .line 134
     iput v0, p0, Lcom/google/common/collect/HashBiMap;->lastInInsertionOrder:I
 
-    .line 128
+    .line 136
     invoke-static {p1}, Lcom/google/common/collect/HashBiMap;->createFilledWithAbsent(I)[I
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/common/collect/HashBiMap;->prevInInsertionOrder:[I
 
-    .line 129
+    .line 137
     invoke-static {p1}, Lcom/google/common/collect/HashBiMap;->createFilledWithAbsent(I)[I
 
     move-result-object p1
@@ -1945,12 +2160,12 @@
         }
     .end annotation
 
-    .line 906
+    .line 950
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->inverse:Lcom/google/common/collect/BiMap;
 
     if-nez v0, :cond_0
 
-    .line 907
+    .line 951
     new-instance v0, Lcom/google/common/collect/HashBiMap$Inverse;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/HashBiMap$Inverse;-><init>(Lcom/google/common/collect/HashBiMap;)V
@@ -1971,12 +2186,12 @@
         }
     .end annotation
 
-    .line 739
+    .line 757
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->keySet:Ljava/util/Set;
 
     if-nez v0, :cond_0
 
-    .line 740
+    .line 758
     new-instance v0, Lcom/google/common/collect/HashBiMap$KeySet;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/HashBiMap$KeySet;-><init>(Lcom/google/common/collect/HashBiMap;)V
@@ -1990,22 +2205,36 @@
 .method public put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV;)TV;"
         }
     .end annotation
 
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
     const/4 v0, 0x0
 
-    .line 266
+    .line 279
     invoke-virtual {p0, p1, p2, v0}, Lcom/google/common/collect/HashBiMap;->put(Ljava/lang/Object;Ljava/lang/Object;Z)Ljava/lang/Object;
 
     move-result-object p0
@@ -2016,28 +2245,41 @@
 .method put(Ljava/lang/Object;Ljava/lang/Object;Z)Ljava/lang/Object;
     .locals 5
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value",
+            "force"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV;Z)TV;"
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
-    .line 271
+    .line 284
     invoke-static {p1}, Lcom/google/common/collect/Hashing;->smearedHash(Ljava/lang/Object;)I
 
     move-result v0
 
-    .line 272
+    .line 285
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/HashBiMap;->findEntryByKey(Ljava/lang/Object;I)I
 
     move-result v1
@@ -2046,12 +2288,12 @@
 
     if-eq v1, v2, :cond_1
 
-    .line 274
+    .line 287
     iget-object p1, p0, Lcom/google/common/collect/HashBiMap;->values:[Ljava/lang/Object;
 
     aget-object p1, p1, v1
 
-    .line 275
+    .line 288
     invoke-static {p1, p2}, Lcom/google/common/base/Objects;->equal(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
@@ -2060,19 +2302,19 @@
 
     return-object p2
 
-    .line 278
+    .line 291
     :cond_0
     invoke-direct {p0, v1, p2, p3}, Lcom/google/common/collect/HashBiMap;->replaceValueInEntry(ILjava/lang/Object;Z)V
 
     return-object p1
 
-    .line 283
+    .line 296
     :cond_1
     invoke-static {p2}, Lcom/google/common/collect/Hashing;->smearedHash(Ljava/lang/Object;)I
 
     move-result v1
 
-    .line 284
+    .line 297
     invoke-virtual {p0, p2, v1}, Lcom/google/common/collect/HashBiMap;->findEntryByValue(Ljava/lang/Object;I)I
 
     move-result v3
@@ -2083,7 +2325,7 @@
 
     if-eq v3, v2, :cond_4
 
-    .line 287
+    .line 300
     invoke-virtual {p0, v3, v1}, Lcom/google/common/collect/HashBiMap;->removeEntryValueHashKnown(II)V
 
     goto :goto_1
@@ -2098,13 +2340,13 @@
     :cond_3
     const/4 p3, 0x0
 
-    .line 290
+    .line 303
     :goto_0
     const-string v2, "Value already present: %s"
 
     invoke-static {p3, v2, p2}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;)V
 
-    .line 293
+    .line 306
     :cond_4
     :goto_1
     iget p3, p0, Lcom/google/common/collect/HashBiMap;->size:I
@@ -2113,48 +2355,48 @@
 
     invoke-direct {p0, p3}, Lcom/google/common/collect/HashBiMap;->ensureCapacity(I)V
 
-    .line 294
+    .line 307
     iget-object p3, p0, Lcom/google/common/collect/HashBiMap;->keys:[Ljava/lang/Object;
 
     iget v2, p0, Lcom/google/common/collect/HashBiMap;->size:I
 
     aput-object p1, p3, v2
 
-    .line 295
+    .line 308
     iget-object p1, p0, Lcom/google/common/collect/HashBiMap;->values:[Ljava/lang/Object;
 
     aput-object p2, p1, v2
 
-    .line 297
+    .line 310
     invoke-direct {p0, v2, v0}, Lcom/google/common/collect/HashBiMap;->insertIntoTableKToV(II)V
 
-    .line 298
+    .line 311
     iget p1, p0, Lcom/google/common/collect/HashBiMap;->size:I
 
     invoke-direct {p0, p1, v1}, Lcom/google/common/collect/HashBiMap;->insertIntoTableVToK(II)V
 
-    .line 300
+    .line 313
     iget p1, p0, Lcom/google/common/collect/HashBiMap;->lastInInsertionOrder:I
 
     iget p2, p0, Lcom/google/common/collect/HashBiMap;->size:I
 
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/HashBiMap;->setSucceeds(II)V
 
-    .line 301
+    .line 314
     iget p1, p0, Lcom/google/common/collect/HashBiMap;->size:I
 
     const/4 p2, -0x2
 
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/HashBiMap;->setSucceeds(II)V
 
-    .line 302
+    .line 315
     iget p1, p0, Lcom/google/common/collect/HashBiMap;->size:I
 
     add-int/2addr p1, v4
 
     iput p1, p0, Lcom/google/common/collect/HashBiMap;->size:I
 
-    .line 303
+    .line 316
     iget p1, p0, Lcom/google/common/collect/HashBiMap;->modCount:I
 
     add-int/2addr p1, v4
@@ -2169,28 +2411,41 @@
 .method putInverse(Ljava/lang/Object;Ljava/lang/Object;Z)Ljava/lang/Object;
     .locals 6
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "value",
+            "key",
+            "force"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TV;TK;Z)TK;"
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
-    .line 316
+    .line 330
     invoke-static {p1}, Lcom/google/common/collect/Hashing;->smearedHash(Ljava/lang/Object;)I
 
     move-result v0
 
-    .line 317
+    .line 331
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/HashBiMap;->findEntryByValue(Ljava/lang/Object;I)I
 
     move-result v1
@@ -2199,12 +2454,12 @@
 
     if-eq v1, v2, :cond_1
 
-    .line 319
+    .line 333
     iget-object p1, p0, Lcom/google/common/collect/HashBiMap;->keys:[Ljava/lang/Object;
 
     aget-object p1, p1, v1
 
-    .line 320
+    .line 334
     invoke-static {p1, p2}, Lcom/google/common/base/Objects;->equal(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
@@ -2213,22 +2468,22 @@
 
     return-object p2
 
-    .line 323
+    .line 337
     :cond_0
     invoke-direct {p0, v1, p2, p3}, Lcom/google/common/collect/HashBiMap;->replaceKeyInEntry(ILjava/lang/Object;Z)V
 
     return-object p1
 
-    .line 328
+    .line 342
     :cond_1
     iget v1, p0, Lcom/google/common/collect/HashBiMap;->lastInInsertionOrder:I
 
-    .line 329
+    .line 343
     invoke-static {p2}, Lcom/google/common/collect/Hashing;->smearedHash(Ljava/lang/Object;)I
 
     move-result v3
 
-    .line 330
+    .line 344
     invoke-virtual {p0, p2, v3}, Lcom/google/common/collect/HashBiMap;->findEntryByKey(Ljava/lang/Object;I)I
 
     move-result v4
@@ -2239,12 +2494,12 @@
 
     if-eq v4, v2, :cond_4
 
-    .line 333
+    .line 347
     iget-object p3, p0, Lcom/google/common/collect/HashBiMap;->prevInInsertionOrder:[I
 
     aget v1, p3, v4
 
-    .line 334
+    .line 348
     invoke-virtual {p0, v4, v3}, Lcom/google/common/collect/HashBiMap;->removeEntryKeyHashKnown(II)V
 
     goto :goto_1
@@ -2259,13 +2514,13 @@
     :cond_3
     const/4 p3, 0x0
 
-    .line 337
+    .line 351
     :goto_0
     const-string v2, "Key already present: %s"
 
     invoke-static {p3, v2, p2}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;)V
 
-    .line 344
+    .line 358
     :cond_4
     :goto_1
     iget p3, p0, Lcom/google/common/collect/HashBiMap;->size:I
@@ -2274,22 +2529,22 @@
 
     invoke-direct {p0, p3}, Lcom/google/common/collect/HashBiMap;->ensureCapacity(I)V
 
-    .line 345
+    .line 359
     iget-object p3, p0, Lcom/google/common/collect/HashBiMap;->keys:[Ljava/lang/Object;
 
     iget v2, p0, Lcom/google/common/collect/HashBiMap;->size:I
 
     aput-object p2, p3, v2
 
-    .line 346
+    .line 360
     iget-object p2, p0, Lcom/google/common/collect/HashBiMap;->values:[Ljava/lang/Object;
 
     aput-object p1, p2, v2
 
-    .line 348
+    .line 362
     invoke-direct {p0, v2, v3}, Lcom/google/common/collect/HashBiMap;->insertIntoTableKToV(II)V
 
-    .line 349
+    .line 363
     iget p1, p0, Lcom/google/common/collect/HashBiMap;->size:I
 
     invoke-direct {p0, p1, v0}, Lcom/google/common/collect/HashBiMap;->insertIntoTableVToK(II)V
@@ -2298,7 +2553,7 @@
 
     if-ne v1, p1, :cond_5
 
-    .line 352
+    .line 366
     iget p1, p0, Lcom/google/common/collect/HashBiMap;->firstInInsertionOrder:I
 
     goto :goto_2
@@ -2308,25 +2563,25 @@
 
     aget p1, p1, v1
 
-    .line 353
+    .line 367
     :goto_2
     iget p2, p0, Lcom/google/common/collect/HashBiMap;->size:I
 
     invoke-direct {p0, v1, p2}, Lcom/google/common/collect/HashBiMap;->setSucceeds(II)V
 
-    .line 354
+    .line 368
     iget p2, p0, Lcom/google/common/collect/HashBiMap;->size:I
 
     invoke-direct {p0, p2, p1}, Lcom/google/common/collect/HashBiMap;->setSucceeds(II)V
 
-    .line 355
+    .line 369
     iget p1, p0, Lcom/google/common/collect/HashBiMap;->size:I
 
     add-int/2addr p1, v5
 
     iput p1, p0, Lcom/google/common/collect/HashBiMap;->size:I
 
-    .line 356
+    .line 370
     iget p1, p0, Lcom/google/common/collect/HashBiMap;->modCount:I
 
     add-int/2addr p1, v5
@@ -2341,9 +2596,18 @@
 .method public remove(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2352,15 +2616,15 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
-    .line 533
+    .line 547
     invoke-static {p1}, Lcom/google/common/collect/Hashing;->smearedHash(Ljava/lang/Object;)I
 
     move-result v0
 
-    .line 534
+    .line 548
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/HashBiMap;->findEntryByKey(Ljava/lang/Object;I)I
 
     move-result p1
@@ -2373,13 +2637,13 @@
 
     return-object p0
 
-    .line 538
+    .line 552
     :cond_0
     iget-object v1, p0, Lcom/google/common/collect/HashBiMap;->values:[Ljava/lang/Object;
 
     aget-object v1, v1, p1
 
-    .line 539
+    .line 553
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/HashBiMap;->removeEntryKeyHashKnown(II)V
 
     return-object v1
@@ -2387,8 +2651,16 @@
 
 .method removeEntry(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "entry"
+        }
+    .end annotation
 
-    .line 559
+    .line 573
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->keys:[Ljava/lang/Object;
 
     aget-object v0, v0, p1
@@ -2404,8 +2676,18 @@
 
 .method removeEntryKeyHashKnown(II)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "entry",
+            "keyHash"
+        }
+    .end annotation
 
-    .line 581
+    .line 595
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->values:[Ljava/lang/Object;
 
     aget-object v0, v0, p1
@@ -2421,8 +2703,18 @@
 
 .method removeEntryValueHashKnown(II)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "entry",
+            "valueHash"
+        }
+    .end annotation
 
-    .line 586
+    .line 600
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->keys:[Ljava/lang/Object;
 
     aget-object v0, v0, p1
@@ -2439,9 +2731,18 @@
 .method removeInverse(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2450,15 +2751,15 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
-    .line 546
+    .line 560
     invoke-static {p1}, Lcom/google/common/collect/Hashing;->smearedHash(Ljava/lang/Object;)I
 
     move-result v0
 
-    .line 547
+    .line 561
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/HashBiMap;->findEntryByValue(Ljava/lang/Object;I)I
 
     move-result p1
@@ -2471,13 +2772,13 @@
 
     return-object p0
 
-    .line 551
+    .line 565
     :cond_0
     iget-object v1, p0, Lcom/google/common/collect/HashBiMap;->keys:[Ljava/lang/Object;
 
     aget-object v1, v1, p1
 
-    .line 552
+    .line 566
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/HashBiMap;->removeEntryValueHashKnown(II)V
 
     return-object v1
@@ -2486,7 +2787,7 @@
 .method public size()I
     .locals 0
 
-    .line 149
+    .line 157
     iget p0, p0, Lcom/google/common/collect/HashBiMap;->size:I
 
     return p0
@@ -2495,7 +2796,7 @@
 .method public bridge synthetic values()Ljava/util/Collection;
     .locals 0
 
-    .line 52
+    .line 56
     invoke-virtual {p0}, Lcom/google/common/collect/HashBiMap;->values()Ljava/util/Set;
 
     move-result-object p0
@@ -2513,12 +2814,12 @@
         }
     .end annotation
 
-    .line 775
+    .line 795
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap;->valueSet:Ljava/util/Set;
 
     if-nez v0, :cond_0
 
-    .line 776
+    .line 796
     new-instance v0, Lcom/google/common/collect/HashBiMap$ValueSet;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/HashBiMap$ValueSet;-><init>(Lcom/google/common/collect/HashBiMap;)V

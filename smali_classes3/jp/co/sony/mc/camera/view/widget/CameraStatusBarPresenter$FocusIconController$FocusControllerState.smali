@@ -21,6 +21,14 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
     .line 429
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController$FocusControllerState;->this$1:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;
@@ -59,6 +67,14 @@
 
 .method handleEventFocusLockedSuccess(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isSuccess"
+        }
+    .end annotation
 
     const/4 p0, 0x1
 
@@ -78,6 +94,14 @@
 
 .method handleEventFocusStarted(Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mode"
+        }
+    .end annotation
 
     const/4 p0, 0x1
 
@@ -97,6 +121,14 @@
 
 .method handleEventFocusStatusUpdated(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isSuccess"
+        }
+    .end annotation
 
     const/4 p0, 0x1
 

@@ -59,7 +59,7 @@
     .line 25
     new-instance v6, Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingOrientation;
 
-    const v4, 0x7f1103f2
+    const v4, 0x7f11043d
 
     const-string v5, "auto"
 
@@ -67,7 +67,7 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f0800ba
+    const v3, 0x7f08011d
 
     move-object v0, v6
 
@@ -78,7 +78,7 @@
     .line 30
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingOrientation;
 
-    const v11, 0x7f11026f
+    const v11, 0x7f1102b9
 
     const-string v12, "portrait"
 
@@ -86,7 +86,7 @@
 
     const/4 v9, 0x1
 
-    const v10, 0x7f0800c0
+    const v10, 0x7f080123
 
     move-object v7, v0
 
@@ -97,7 +97,7 @@
     .line 35
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingOrientation;
 
-    const v5, 0x7f11026e
+    const v5, 0x7f1102b8
 
     const-string v6, "landscape"
 
@@ -105,7 +105,7 @@
 
     const/4 v3, 0x2
 
-    const v4, 0x7f0800bd
+    const v4, 0x7f080120
 
     move-object v1, v0
 
@@ -125,6 +125,23 @@
 
 .method private constructor <init>(Ljava/lang/String;IIILjava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -159,6 +176,14 @@
 
 .method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)[Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingOrientation;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mode"
+        }
+    .end annotation
 
     .line 116
     new-instance v0, Ljava/util/ArrayList;
@@ -204,6 +229,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingOrientation;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 24
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingOrientation;

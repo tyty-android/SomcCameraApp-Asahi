@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/escape/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/escape/Escapers$Builder;
@@ -38,83 +41,10 @@
     return-void
 .end method
 
-.method static asUnicodeEscaper(Lcom/google/common/escape/Escaper;)Lcom/google/common/escape/UnicodeEscaper;
-    .locals 3
-
-    .line 180
-    invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 181
-    instance-of v0, p0, Lcom/google/common/escape/UnicodeEscaper;
-
-    if-eqz v0, :cond_0
-
-    .line 182
-    check-cast p0, Lcom/google/common/escape/UnicodeEscaper;
-
-    return-object p0
-
-    .line 183
-    :cond_0
-    instance-of v0, p0, Lcom/google/common/escape/CharEscaper;
-
-    if-eqz v0, :cond_1
-
-    .line 184
-    check-cast p0, Lcom/google/common/escape/CharEscaper;
-
-    invoke-static {p0}, Lcom/google/common/escape/Escapers;->wrap(Lcom/google/common/escape/CharEscaper;)Lcom/google/common/escape/UnicodeEscaper;
-
-    move-result-object p0
-
-    return-object p0
-
-    .line 188
-    :cond_1
-    new-instance v0, Ljava/lang/IllegalArgumentException;
-
-    .line 189
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/String;->length()I
-
-    move-result v1
-
-    const-string v2, "Cannot create a UnicodeEscaper from: "
-
-    if-eqz v1, :cond_2
-
-    invoke-virtual {v2, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p0
-
-    goto :goto_0
-
-    :cond_2
-    new-instance p0, Ljava/lang/String;
-
-    invoke-direct {p0, v2}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
-
-    :goto_0
-    invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
 .method public static builder()Lcom/google/common/escape/Escapers$Builder;
     .locals 2
 
-    .line 79
+    .line 80
     new-instance v0, Lcom/google/common/escape/Escapers$Builder;
 
     const/4 v1, 0x0
@@ -126,8 +56,21 @@
 
 .method public static computeReplacement(Lcom/google/common/escape/CharEscaper;C)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "escaper",
+            "c"
+        }
+    .end annotation
 
-    .line 202
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 178
     invoke-virtual {p0, p1}, Lcom/google/common/escape/CharEscaper;->escape(C)[C
 
     move-result-object p0
@@ -141,8 +84,21 @@
 
 .method public static computeReplacement(Lcom/google/common/escape/UnicodeEscaper;I)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "escaper",
+            "cp"
+        }
+    .end annotation
 
-    .line 215
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 192
     invoke-virtual {p0, p1}, Lcom/google/common/escape/UnicodeEscaper;->escape(I)[C
 
     move-result-object p0
@@ -165,6 +121,21 @@
 
 .method private static stringOrNull([C)Ljava/lang/String;
     .locals 1
+    .param p0    # [C
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "in"
+        }
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 
     if-nez p0, :cond_0
 
@@ -172,7 +143,7 @@
 
     goto :goto_0
 
-    .line 219
+    .line 197
     :cond_0
     new-instance v0, Ljava/lang/String;
 
@@ -182,15 +153,4 @@
 
     :goto_0
     return-object p0
-.end method
-
-.method private static wrap(Lcom/google/common/escape/CharEscaper;)Lcom/google/common/escape/UnicodeEscaper;
-    .locals 1
-
-    .line 224
-    new-instance v0, Lcom/google/common/escape/Escapers$2;
-
-    invoke-direct {v0, p0}, Lcom/google/common/escape/Escapers$2;-><init>(Lcom/google/common/escape/CharEscaper;)V
-
-    return-object v0
 .end method

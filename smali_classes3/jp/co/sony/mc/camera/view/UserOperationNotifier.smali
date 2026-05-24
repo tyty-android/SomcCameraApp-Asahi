@@ -8,12 +8,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nUserOperationNotifier.kt\nKotlin\n*S Kotlin\n*F\n+ 1 UserOperationNotifier.kt\njp/co/sony/mc/camera/view/UserOperationNotifier\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 4 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,88:1\n11420#2,9:89\n13346#2:98\n13347#2:100\n11429#2:101\n1#3:99\n1863#4,2:102\n1863#4,2:104\n*S KotlinDebug\n*F\n+ 1 UserOperationNotifier.kt\njp/co/sony/mc/camera/view/UserOperationNotifier\n*L\n19#1:89,9\n19#1:98\n19#1:100\n19#1:101\n19#1:99\n77#1:102,2\n82#1:104,2\n*E\n"
+    value = "SMAP\nUserOperationNotifier.kt\nKotlin\n*S Kotlin\n*F\n+ 1 UserOperationNotifier.kt\njp/co/sony/mc/camera/view/UserOperationNotifier\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 4 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,82:1\n11476#2,9:83\n13402#2:92\n13403#2:94\n11485#2:95\n1#3:93\n1863#4,2:96\n1863#4,2:98\n*S KotlinDebug\n*F\n+ 1 UserOperationNotifier.kt\njp/co/sony/mc/camera/view/UserOperationNotifier\n*L\n19#1:83,9\n19#1:92\n19#1:94\n19#1:95\n19#1:93\n71#1:96,2\n76#1:98,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000R\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0011\n\u0002\u0010\u000e\n\u0002\u0008\u0004\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0008\u0007\u0018\u00002\u00020\u0001B#\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0012\u0010\u0004\u001a\n\u0012\u0006\u0008\u0001\u0012\u00020\u00060\u0005\"\u00020\u0006\u00a2\u0006\u0004\u0008\u0007\u0010\u0008J\u0010\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0012H\u0016J\u0008\u0010\u0013\u001a\u00020\u0010H\u0016J\u0008\u0010\u0014\u001a\u00020\u0010H\u0016J\u0008\u0010\u0015\u001a\u00020\u0010H\u0016J\u0008\u0010\u0016\u001a\u00020\u0010H\u0016J\u0008\u0010\u0017\u001a\u00020\u0010H\u0016J\u0008\u0010\u0018\u001a\u00020\u0010H\u0016J\u0008\u0010\u0019\u001a\u00020\u0010H\u0016J\u0008\u0010\u001a\u001a\u00020\u001bH\u0016J\u0008\u0010\u001c\u001a\u00020\u0010H\u0016J\u0018\u0010\u001d\u001a\u00020\u00102\u0006\u0010\u001e\u001a\u00020\u001f2\u0006\u0010 \u001a\u00020\u001bH\u0016J\u0018\u0010!\u001a\u00020\u00102\u0006\u0010\u001e\u001a\u00020\u001f2\u0006\u0010 \u001a\u00020\u001bH\u0016J \u0010\"\u001a\u00020\u00102\u0006\u0010\u001e\u001a\u00020\u001f2\u0006\u0010 \u001a\u00020\u001b2\u0006\u0010#\u001a\u00020\u001bH\u0016J \u0010$\u001a\u00020\u00102\u0006\u0010%\u001a\u00020\u001f2\u0006\u0010&\u001a\u00020\u001f2\u0006\u0010\'\u001a\u00020\u001fH\u0016J\u0008\u0010(\u001a\u00020\u0010H\u0016J\u0008\u0010)\u001a\u00020\u0010H\u0016J!\u0010*\u001a\u00020\u00102\u0017\u0010+\u001a\u0013\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u00100,\u00a2\u0006\u0002\u0008-H\u0002J!\u0010.\u001a\u00020\u001b2\u0017\u0010+\u001a\u0013\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u001b0,\u00a2\u0006\u0002\u0008-H\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0018\u0010\u0004\u001a\n\u0012\u0006\u0008\u0001\u0012\u00020\u00060\u0005X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\tR\u001a\u0010\n\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\u000b8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\r\u0010\u000e\u00a8\u0006/"
+        "\u0000R\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0011\n\u0002\u0010\u000e\n\u0002\u0008\u0004\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0008\u0007\u0018\u00002\u00020\u0001B#\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0012\u0010\u0004\u001a\n\u0012\u0006\u0008\u0001\u0012\u00020\u00060\u0005\"\u00020\u0006\u00a2\u0006\u0004\u0008\u0007\u0010\u0008J\u0010\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0012H\u0016J\u0008\u0010\u0013\u001a\u00020\u0010H\u0016J\u0008\u0010\u0014\u001a\u00020\u0010H\u0016J\u0008\u0010\u0015\u001a\u00020\u0010H\u0016J\u0008\u0010\u0016\u001a\u00020\u0010H\u0016J\u0008\u0010\u0017\u001a\u00020\u0010H\u0016J\u0008\u0010\u0018\u001a\u00020\u0010H\u0016J\u0008\u0010\u0019\u001a\u00020\u0010H\u0016J\u0008\u0010\u001a\u001a\u00020\u001bH\u0016J\u0008\u0010\u001c\u001a\u00020\u0010H\u0016J\u0010\u0010\u001d\u001a\u00020\u00102\u0006\u0010\u001e\u001a\u00020\u001fH\u0016J\u0010\u0010 \u001a\u00020\u00102\u0006\u0010\u001e\u001a\u00020\u001fH\u0016J\u0018\u0010!\u001a\u00020\u00102\u0006\u0010\u001e\u001a\u00020\u001f2\u0006\u0010\"\u001a\u00020\u001bH\u0016J \u0010#\u001a\u00020\u00102\u0006\u0010$\u001a\u00020\u001f2\u0006\u0010%\u001a\u00020\u001f2\u0006\u0010&\u001a\u00020\u001fH\u0016J\u0008\u0010\'\u001a\u00020\u0010H\u0016J\u0008\u0010(\u001a\u00020\u0010H\u0016J!\u0010)\u001a\u00020\u00102\u0017\u0010*\u001a\u0013\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u00100+\u00a2\u0006\u0002\u0008,H\u0002J!\u0010-\u001a\u00020\u001b2\u0017\u0010*\u001a\u0013\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u001b0+\u00a2\u0006\u0002\u0008,H\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0018\u0010\u0004\u001a\n\u0012\u0006\u0008\u0001\u0012\u00020\u00060\u0005X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\tR\u001a\u0010\n\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\u000b8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\r\u0010\u000e\u00a8\u0006."
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/UserOperationNotifier;",
@@ -48,7 +48,6 @@
         "onFinderClick",
         "coordinate",
         "Landroid/graphics/Point;",
-        "isTouchPositionOnPreciseFocusArea",
         "onFinderDoubleClick",
         "onFinderLongClick",
         "isTouchedInSelectedTrackingRect",
@@ -86,6 +85,16 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$45SH399vWzsZ5HYldo6lnyF3_OA(Landroid/graphics/Point;Ljp/co/sony/mc/camera/view/UserOperationListener;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/UserOperationNotifier;->onFinderDoubleClick$lambda$12(Landroid/graphics/Point;Ljp/co/sony/mc/camera/view/UserOperationListener;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public static synthetic $r8$lambda$5SOwlVBbtMTTvloI1Qrd3fg-bzk(Ljp/co/sony/mc/camera/view/UserOperationListener;)Lkotlin/Unit;
     .locals 0
 
@@ -96,10 +105,20 @@
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$FDINxIXR0WnoJuoXCPO_qzxAJKw(Landroid/graphics/Point;ZLjp/co/sony/mc/camera/view/UserOperationListener;)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$9TLA1SzmfHVbvQNz1w3JDeATOKM(Landroid/graphics/Point;ZLjp/co/sony/mc/camera/view/UserOperationListener;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/UserOperationNotifier;->onFinderClick$lambda$11(Landroid/graphics/Point;ZLjp/co/sony/mc/camera/view/UserOperationListener;)Lkotlin/Unit;
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/UserOperationNotifier;->onFinderLongClick$lambda$13(Landroid/graphics/Point;ZLjp/co/sony/mc/camera/view/UserOperationListener;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$JO7pLDMsXxYRA3G2bSlidug9y_Q(Landroid/graphics/Point;Ljp/co/sony/mc/camera/view/UserOperationListener;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/UserOperationNotifier;->onFinderClick$lambda$11(Landroid/graphics/Point;Ljp/co/sony/mc/camera/view/UserOperationListener;)Lkotlin/Unit;
 
     move-result-object p0
 
@@ -120,16 +139,6 @@
     .locals 0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/UserOperationNotifier;->onFocusPressedDuringSelftimer$lambda$5(Ljp/co/sony/mc/camera/view/UserOperationListener;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static synthetic $r8$lambda$OHvdaBLQUAoSGllejVHreZQAJ9I(Landroid/graphics/Point;ZLjp/co/sony/mc/camera/view/UserOperationListener;)Lkotlin/Unit;
-    .locals 0
-
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/UserOperationNotifier;->onFinderDoubleClick$lambda$12(Landroid/graphics/Point;ZLjp/co/sony/mc/camera/view/UserOperationListener;)Lkotlin/Unit;
 
     move-result-object p0
 
@@ -190,16 +199,6 @@
     .locals 0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/UserOperationNotifier;->onRemoconKeyPressed$lambda$3(Ljp/co/sony/mc/camera/view/UserOperationListener;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static synthetic $r8$lambda$mg15DbyYBqAEhh6Pa94puMtHRNk(Landroid/graphics/Point;ZZLjp/co/sony/mc/camera/view/UserOperationListener;)Lkotlin/Unit;
-    .locals 0
-
-    invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/UserOperationNotifier;->onFinderLongClick$lambda$13(Landroid/graphics/Point;ZZLjp/co/sony/mc/camera/view/UserOperationListener;)Lkotlin/Unit;
 
     move-result-object p0
 
@@ -288,14 +287,14 @@
     .line 19
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/UserOperationNotifier;->tags:[Ljava/lang/String;
 
-    .line 89
+    .line 83
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v1, Ljava/util/Collection;
 
-    .line 98
+    .line 92
     array-length v2, v0
 
     const/4 v3, 0x0
@@ -314,7 +313,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 97
+    .line 91
     invoke-interface {v1, v4}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     :cond_0
@@ -322,7 +321,7 @@
 
     goto :goto_0
 
-    .line 101
+    .line 95
     :cond_1
     check-cast v1, Ljava/util/List;
 
@@ -351,7 +350,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 72
+    .line 66
     invoke-interface {p0}, Ljp/co/sony/mc/camera/view/UserOperationListener;->onExternalDisplayConnected()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -366,7 +365,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 74
+    .line 68
     invoke-interface {p0}, Ljp/co/sony/mc/camera/view/UserOperationListener;->onExternalDisplayDisconnected()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -374,7 +373,7 @@
     return-object p0
 .end method
 
-.method private static final onFinderClick$lambda$11(Landroid/graphics/Point;ZLjp/co/sony/mc/camera/view/UserOperationListener;)Lkotlin/Unit;
+.method private static final onFinderClick$lambda$11(Landroid/graphics/Point;Ljp/co/sony/mc/camera/view/UserOperationListener;)Lkotlin/Unit;
     .locals 1
 
     const-string v0, "$coordinate"
@@ -383,18 +382,38 @@
 
     const-string v0, "$this$runForEach"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 46
+    invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/UserOperationListener;->onFinderClick(Landroid/graphics/Point;)V
 
     .line 47
-    invoke-interface {p2, p0, p1}, Ljp/co/sony/mc/camera/view/UserOperationListener;->onFinderClick(Landroid/graphics/Point;Z)V
-
-    .line 48
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 .end method
 
-.method private static final onFinderDoubleClick$lambda$12(Landroid/graphics/Point;ZLjp/co/sony/mc/camera/view/UserOperationListener;)Lkotlin/Unit;
+.method private static final onFinderDoubleClick$lambda$12(Landroid/graphics/Point;Ljp/co/sony/mc/camera/view/UserOperationListener;)Lkotlin/Unit;
+    .locals 1
+
+    const-string v0, "$coordinate"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "$this$runForEach"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 51
+    invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/UserOperationListener;->onFinderDoubleClick(Landroid/graphics/Point;)V
+
+    .line 52
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onFinderLongClick$lambda$13(Landroid/graphics/Point;ZLjp/co/sony/mc/camera/view/UserOperationListener;)Lkotlin/Unit;
     .locals 1
 
     const-string v0, "$coordinate"
@@ -405,30 +424,10 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 52
-    invoke-interface {p2, p0, p1}, Ljp/co/sony/mc/camera/view/UserOperationListener;->onFinderDoubleClick(Landroid/graphics/Point;Z)V
+    .line 56
+    invoke-interface {p2, p0, p1}, Ljp/co/sony/mc/camera/view/UserOperationListener;->onFinderLongClick(Landroid/graphics/Point;Z)V
 
-    .line 53
-    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
-
-    return-object p0
-.end method
-
-.method private static final onFinderLongClick$lambda$13(Landroid/graphics/Point;ZZLjp/co/sony/mc/camera/view/UserOperationListener;)Lkotlin/Unit;
-    .locals 1
-
-    const-string v0, "$coordinate"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "$this$runForEach"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 59
-    invoke-interface {p3, p0, p1, p2}, Ljp/co/sony/mc/camera/view/UserOperationListener;->onFinderLongClick(Landroid/graphics/Point;ZZ)V
-
-    .line 64
+    .line 57
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
@@ -453,10 +452,10 @@
 
     invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 68
+    .line 62
     invoke-interface {p3, p0, p1, p2}, Ljp/co/sony/mc/camera/view/UserOperationListener;->onFinderSwipe(Landroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
 
-    .line 69
+    .line 63
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
@@ -615,14 +614,14 @@
         }
     .end annotation
 
-    .line 77
+    .line 71
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/UserOperationNotifier;->getFragments()Ljava/util/List;
 
     move-result-object p0
 
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 102
+    .line 96
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -641,7 +640,7 @@
 
     check-cast v0, Landroidx/fragment/app/Fragment;
 
-    .line 77
+    .line 71
     instance-of v1, v0, Ljp/co/sony/mc/camera/view/UserOperationListener;
 
     if-eqz v1, :cond_0
@@ -673,14 +672,14 @@
         }
     .end annotation
 
-    .line 82
+    .line 76
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/UserOperationNotifier;->getFragments()Ljava/util/List;
 
     move-result-object p0
 
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 104
+    .line 98
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -698,7 +697,7 @@
 
     check-cast v0, Landroidx/fragment/app/Fragment;
 
-    .line 83
+    .line 77
     instance-of v1, v0, Ljp/co/sony/mc/camera/view/UserOperationListener;
 
     if-eqz v1, :cond_0
@@ -751,7 +750,7 @@
 .method public onExternalDisplayConnected()V
     .locals 1
 
-    .line 72
+    .line 66
     new-instance v0, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda12;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda12;-><init>()V
@@ -764,61 +763,61 @@
 .method public onExternalDisplayDisconnected()V
     .locals 1
 
-    .line 74
-    new-instance v0, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda10;
-
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda10;-><init>()V
-
-    invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/UserOperationNotifier;->runForEach(Lkotlin/jvm/functions/Function1;)V
-
-    return-void
-.end method
-
-.method public onFinderClick(Landroid/graphics/Point;Z)V
-    .locals 1
-
-    const-string v0, "coordinate"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 46
-    new-instance v0, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda13;
-
-    invoke-direct {v0, p1, p2}, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda13;-><init>(Landroid/graphics/Point;Z)V
-
-    invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/UserOperationNotifier;->runForEach(Lkotlin/jvm/functions/Function1;)V
-
-    return-void
-.end method
-
-.method public onFinderDoubleClick(Landroid/graphics/Point;Z)V
-    .locals 1
-
-    const-string v0, "coordinate"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 51
+    .line 68
     new-instance v0, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda11;
 
-    invoke-direct {v0, p1, p2}, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda11;-><init>(Landroid/graphics/Point;Z)V
+    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda11;-><init>()V
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/UserOperationNotifier;->runForEach(Lkotlin/jvm/functions/Function1;)V
 
     return-void
 .end method
 
-.method public onFinderLongClick(Landroid/graphics/Point;ZZ)V
+.method public onFinderClick(Landroid/graphics/Point;)V
     .locals 1
 
     const-string v0, "coordinate"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 58
+    .line 45
+    new-instance v0, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda13;
+
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda13;-><init>(Landroid/graphics/Point;)V
+
+    invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/UserOperationNotifier;->runForEach(Lkotlin/jvm/functions/Function1;)V
+
+    return-void
+.end method
+
+.method public onFinderDoubleClick(Landroid/graphics/Point;)V
+    .locals 1
+
+    const-string v0, "coordinate"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 50
     new-instance v0, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda14;
 
-    invoke-direct {v0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda14;-><init>(Landroid/graphics/Point;ZZ)V
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda14;-><init>(Landroid/graphics/Point;)V
+
+    invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/UserOperationNotifier;->runForEach(Lkotlin/jvm/functions/Function1;)V
+
+    return-void
+.end method
+
+.method public onFinderLongClick(Landroid/graphics/Point;Z)V
+    .locals 1
+
+    const-string v0, "coordinate"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 55
+    new-instance v0, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda8;
+
+    invoke-direct {v0, p1, p2}, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda8;-><init>(Landroid/graphics/Point;Z)V
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/UserOperationNotifier;->runForEach(Lkotlin/jvm/functions/Function1;)V
 
@@ -840,7 +839,7 @@
 
     invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 67
+    .line 61
     new-instance v0, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda15;
 
     invoke-direct {v0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda15;-><init>(Landroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
@@ -893,9 +892,9 @@
     .locals 1
 
     .line 32
-    new-instance v0, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda9;
+    new-instance v0, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda10;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda9;-><init>()V
+    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda10;-><init>()V
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/UserOperationNotifier;->runForEach(Lkotlin/jvm/functions/Function1;)V
 
@@ -962,9 +961,9 @@
     .locals 1
 
     .line 37
-    new-instance v0, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda8;
+    new-instance v0, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda9;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda8;-><init>()V
+    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda9;-><init>()V
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/UserOperationNotifier;->runForEach(Lkotlin/jvm/functions/Function1;)V
 

@@ -50,6 +50,17 @@
 # direct methods
 .method constructor <init>(Ljava/util/concurrent/Future;Lcom/google/common/util/concurrent/FutureCallback;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "future",
+            "callback"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -60,13 +71,13 @@
         }
     .end annotation
 
-    .line 1022
+    .line 1117
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1023
+    .line 1118
     iput-object p1, p0, Lcom/google/common/util/concurrent/Futures$CallbackListener;->future:Ljava/util/concurrent/Future;
 
-    .line 1024
+    .line 1119
     iput-object p2, p0, Lcom/google/common/util/concurrent/Futures$CallbackListener;->callback:Lcom/google/common/util/concurrent/FutureCallback;
 
     return-void
@@ -77,31 +88,31 @@
 .method public run()V
     .locals 2
 
-    .line 1029
+    .line 1124
     iget-object v0, p0, Lcom/google/common/util/concurrent/Futures$CallbackListener;->future:Ljava/util/concurrent/Future;
 
     instance-of v1, v0, Lcom/google/common/util/concurrent/internal/InternalFutureFailureAccess;
 
     if-eqz v1, :cond_0
 
-    .line 1030
+    .line 1125
     check-cast v0, Lcom/google/common/util/concurrent/internal/InternalFutureFailureAccess;
 
-    .line 1031
+    .line 1126
     invoke-static {v0}, Lcom/google/common/util/concurrent/internal/InternalFutures;->tryInternalFastPathGetFailure(Lcom/google/common/util/concurrent/internal/InternalFutureFailureAccess;)Ljava/lang/Throwable;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 1033
+    .line 1128
     iget-object p0, p0, Lcom/google/common/util/concurrent/Futures$CallbackListener;->callback:Lcom/google/common/util/concurrent/FutureCallback;
 
     invoke-interface {p0, v0}, Lcom/google/common/util/concurrent/FutureCallback;->onFailure(Ljava/lang/Throwable;)V
 
     return-void
 
-    .line 1039
+    .line 1134
     :cond_0
     :try_start_0
     iget-object v0, p0, Lcom/google/common/util/concurrent/Futures$CallbackListener;->future:Ljava/util/concurrent/Future;
@@ -110,31 +121,30 @@
 
     move-result-object v0
     :try_end_0
-    .catch Ljava/util/concurrent/ExecutionException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Ljava/lang/Error; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/util/concurrent/ExecutionException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1047
+    .line 1143
     iget-object p0, p0, Lcom/google/common/util/concurrent/Futures$CallbackListener;->callback:Lcom/google/common/util/concurrent/FutureCallback;
 
     invoke-interface {p0, v0}, Lcom/google/common/util/concurrent/FutureCallback;->onSuccess(Ljava/lang/Object;)V
 
     return-void
 
-    :catch_0
+    :catchall_0
     move-exception v0
 
-    .line 1044
+    .line 1140
     iget-object p0, p0, Lcom/google/common/util/concurrent/Futures$CallbackListener;->callback:Lcom/google/common/util/concurrent/FutureCallback;
 
     invoke-interface {p0, v0}, Lcom/google/common/util/concurrent/FutureCallback;->onFailure(Ljava/lang/Throwable;)V
 
     return-void
 
-    :catch_1
+    :catch_0
     move-exception v0
 
-    .line 1041
+    .line 1136
     iget-object p0, p0, Lcom/google/common/util/concurrent/Futures$CallbackListener;->callback:Lcom/google/common/util/concurrent/FutureCallback;
 
     invoke-virtual {v0}, Ljava/util/concurrent/ExecutionException;->getCause()Ljava/lang/Throwable;
@@ -149,7 +159,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 1052
+    .line 1148
     invoke-static {p0}, Lcom/google/common/base/MoreObjects;->toStringHelper(Ljava/lang/Object;)Lcom/google/common/base/MoreObjects$ToStringHelper;
 
     move-result-object v0

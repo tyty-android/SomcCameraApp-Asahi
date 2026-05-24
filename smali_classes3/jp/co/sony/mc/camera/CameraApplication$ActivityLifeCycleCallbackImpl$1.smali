@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/CameraApplication$ActivityLifeCycleCallbackImpl;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
-    .line 340
+    .line 365
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraApplication$ActivityLifeCycleCallbackImpl$1;->this$1:Ljp/co/sony/mc/camera/CameraApplication$ActivityLifeCycleCallbackImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,14 +46,14 @@
 .method public run()V
     .locals 1
 
-    .line 343
+    .line 368
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraApplication$ActivityLifeCycleCallbackImpl$1;->this$1:Ljp/co/sony/mc/camera/CameraApplication$ActivityLifeCycleCallbackImpl;
 
     iget v0, v0, Ljp/co/sony/mc/camera/CameraApplication$ActivityLifeCycleCallbackImpl;->mVisibleActivityCount:I
 
     if-nez v0, :cond_0
 
-    .line 344
+    .line 369
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraApplication$ActivityLifeCycleCallbackImpl$1;->this$1:Ljp/co/sony/mc/camera/CameraApplication$ActivityLifeCycleCallbackImpl;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/CameraApplication$ActivityLifeCycleCallbackImpl;->this$0:Ljp/co/sony/mc/camera/CameraApplication;
@@ -56,7 +64,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 345
+    .line 370
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraApplication$ActivityLifeCycleCallbackImpl$1;->this$1:Ljp/co/sony/mc/camera/CameraApplication$ActivityLifeCycleCallbackImpl;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraApplication$ActivityLifeCycleCallbackImpl;->this$0:Ljp/co/sony/mc/camera/CameraApplication;

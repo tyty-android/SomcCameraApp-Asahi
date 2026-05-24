@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/dialogWithRadioButton" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ProgressBar android:theme="@style/Theme.SomcCamera.AlertDialog" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/progress" android:layout_width="@dimen/camera_progress_bar_width" android:layout_height="@dimen/camera_progress_bar_height" android:layout_marginTop="@dimen/camera_progress_margin_top" android:indeterminateTint="@color/camera_progress_bar" />
-</LinearLayout>

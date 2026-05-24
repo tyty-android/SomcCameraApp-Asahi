@@ -96,6 +96,16 @@
 
 .method private checkLocationService(Ljp/co/sony/mc/camera/configuration/parameters/Geotag;Landroid/content/Context;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "geotag",
+            "context"
+        }
+    .end annotation
 
     .line 358
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -211,6 +221,14 @@
 
 .method public static isGeoTagEnabled(Landroid/content/Context;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 73
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
@@ -235,6 +253,16 @@
 
 .method public static isGeoTagEnabled(Ljp/co/sony/mc/camera/configuration/parameters/Geotag;Landroid/content/Context;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "geotag",
+            "context"
+        }
+    .end annotation
 
     .line 78
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -319,6 +347,14 @@
 
 .method private isLocationServiceAvailable(Landroid/content/Context;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 436
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->readLocationSettings(Landroid/content/Context;)V
@@ -473,6 +509,14 @@
 # virtual methods
 .method public addLocationAcquiredListener(Ljp/co/sony/mc/camera/mediasaving/location/LocationAcquiredListener;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 156
     iget-object v0, p0, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->mLocationAcquiredListenerList:Ljava/util/ArrayList;
@@ -549,6 +593,18 @@
 
 .method public canSetGeotag(Ljp/co/sony/mc/camera/configuration/parameters/Geotag;Landroid/app/Activity;I)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x0
+        }
+        names = {
+            "geotag",
+            "activity",
+            "themeResId"
+        }
+    .end annotation
 
     .line 418
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -561,7 +617,7 @@
 
     new-instance v2, Ljava/lang/StringBuilder;
 
-    const-string v3, "setGeotag(): "
+    const-string/jumbo v3, "setGeotag(): "
 
     invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
@@ -659,6 +715,16 @@
 
 .method public initGeotag(Landroid/app/Activity;Z)Z
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "activity",
+            "allowUseLocation"
+        }
+    .end annotation
 
     .line 384
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -1084,6 +1150,14 @@
 
 .method public readLocationSettings(Landroid/content/Context;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 107
     iget-object p0, p0, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->mLocationSettingsReader:Ljp/co/sony/mc/camera/mediasaving/location/LocationSettingsReader;
@@ -1128,6 +1202,14 @@
 
 .method public removeLocationAcquiredListener(Ljp/co/sony/mc/camera/mediasaving/location/LocationAcquiredListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 167
     iget-object p0, p0, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->mLocationAcquiredListenerList:Ljava/util/ArrayList;
@@ -1139,6 +1221,14 @@
 
 .method public setIsGeoTagPermissionGranted(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isGeoTagPermissionGranted"
+        }
+    .end annotation
 
     .line 60
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->mIsGeoTagPermissionGranted:Z
@@ -1148,6 +1238,16 @@
 
 .method public declared-synchronized startLocationUpdates(ZZ)V
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "gps",
+            "network"
+        }
+    .end annotation
 
     const-string/jumbo v0, "startLocationUpdates: "
 
@@ -1338,6 +1438,14 @@
 
 .method public updateLocation(Ljp/co/sony/mc/camera/configuration/parameters/Geotag;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "geotag"
+        }
+    .end annotation
 
     .line 327
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->assignResource()V

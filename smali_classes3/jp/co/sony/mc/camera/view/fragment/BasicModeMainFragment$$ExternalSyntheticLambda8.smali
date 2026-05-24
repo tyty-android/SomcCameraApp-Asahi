@@ -36,7 +36,7 @@
 
     move-result p2
 
-    invoke-static {p1, p0, p2}, Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;->$r8$lambda$2EPwH4SezFSPdwwAmWiqzlw5wos(Ljava/lang/Boolean;ZZ)Z
+    invoke-static {p1, p0, p2}, Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;->$r8$lambda$wBFhit14hx6Q9PGEt4ISC-i3urU(Ljava/lang/Boolean;ZZ)Z
 
     move-result p0
 

@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function4;
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # direct methods
@@ -18,23 +18,13 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
-    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    check-cast p1, Ljava/lang/Integer;
 
-    check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/Peaking;
-
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
-
-    check-cast p4, Ljava/lang/Boolean;
-
-    invoke-virtual {p4}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result p0
-
-    invoke-static {p1, p2, p3, p0}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->$r8$lambda$1xlVms7aCybil9f2oGH0XbU0xoE(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/configuration/parameters/Peaking;Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;Z)Z
+    invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->$r8$lambda$rpvn8eeBuTmgo3kBawg-25v6XC0(Ljava/lang/Integer;)Z
 
     move-result p0
 

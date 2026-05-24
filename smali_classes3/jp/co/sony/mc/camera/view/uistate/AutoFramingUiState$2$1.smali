@@ -57,7 +57,7 @@
 .method public bridge synthetic emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
 
-    .line 94
+    .line 96
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;
 
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$2$1;->emit(Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -81,7 +81,7 @@
         }
     .end annotation
 
-    .line 95
+    .line 97
     sget-object p2, Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;->AUTO_FRAMING:Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;
 
     if-eq p1, p2, :cond_1
@@ -92,7 +92,7 @@
 
     goto :goto_0
 
-    .line 98
+    .line 100
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$2$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;
 
@@ -106,7 +106,7 @@
 
     goto :goto_1
 
-    .line 96
+    .line 98
     :cond_1
     :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$2$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;
@@ -119,7 +119,7 @@
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/view/CameraOperator;->startMonitorAutoFramingState()V
 
-    .line 100
+    .line 102
     :cond_2
     :goto_1
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

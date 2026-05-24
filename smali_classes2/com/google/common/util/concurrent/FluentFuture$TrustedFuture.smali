@@ -33,7 +33,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 81
+    .line 85
     invoke-direct {p0}, Lcom/google/common/util/concurrent/FluentFuture;-><init>()V
 
     return-void
@@ -43,8 +43,18 @@
 # virtual methods
 .method public final addListener(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "listener",
+            "executor"
+        }
+    .end annotation
 
-    .line 108
+    .line 114
     invoke-super {p0, p1, p2}, Lcom/google/common/util/concurrent/FluentFuture;->addListener(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
 
     return-void
@@ -52,8 +62,16 @@
 
 .method public final cancel(Z)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mayInterruptIfRunning"
+        }
+    .end annotation
 
-    .line 114
+    .line 120
     invoke-super {p0, p1}, Lcom/google/common/util/concurrent/FluentFuture;->cancel(Z)Z
 
     move-result p0
@@ -63,6 +81,9 @@
 
 .method public final get()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/util/concurrent/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TV;"
@@ -76,7 +97,7 @@
         }
     .end annotation
 
-    .line 86
+    .line 91
     invoke-super {p0}, Lcom/google/common/util/concurrent/FluentFuture;->get()Ljava/lang/Object;
 
     move-result-object p0
@@ -86,6 +107,20 @@
 
 .method public final get(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/util/concurrent/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "timeout",
+            "unit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(J",
@@ -102,7 +137,7 @@
         }
     .end annotation
 
-    .line 93
+    .line 99
     invoke-super {p0, p1, p2, p3}, Lcom/google/common/util/concurrent/FluentFuture;->get(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
 
     move-result-object p0
@@ -113,7 +148,7 @@
 .method public final isCancelled()Z
     .locals 0
 
-    .line 103
+    .line 109
     invoke-super {p0}, Lcom/google/common/util/concurrent/FluentFuture;->isCancelled()Z
 
     move-result p0
@@ -124,7 +159,7 @@
 .method public final isDone()Z
     .locals 0
 
-    .line 98
+    .line 104
     invoke-super {p0}, Lcom/google/common/util/concurrent/FluentFuture;->isDone()Z
 
     move-result p0

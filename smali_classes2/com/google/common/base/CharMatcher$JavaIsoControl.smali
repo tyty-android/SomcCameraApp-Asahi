@@ -15,19 +15,19 @@
 
 
 # static fields
-.field static final INSTANCE:Lcom/google/common/base/CharMatcher$JavaIsoControl;
+.field static final INSTANCE:Lcom/google/common/base/CharMatcher;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1444
+    .line 1447
     new-instance v0, Lcom/google/common/base/CharMatcher$JavaIsoControl;
 
     invoke-direct {v0}, Lcom/google/common/base/CharMatcher$JavaIsoControl;-><init>()V
 
-    sput-object v0, Lcom/google/common/base/CharMatcher$JavaIsoControl;->INSTANCE:Lcom/google/common/base/CharMatcher$JavaIsoControl;
+    sput-object v0, Lcom/google/common/base/CharMatcher$JavaIsoControl;->INSTANCE:Lcom/google/common/base/CharMatcher;
 
     return-void
 .end method
@@ -35,7 +35,7 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 1447
+    .line 1450
     const-string v0, "CharMatcher.javaIsoControl()"
 
     invoke-direct {p0, v0}, Lcom/google/common/base/CharMatcher$NamedFastMatcher;-><init>(Ljava/lang/String;)V
@@ -47,6 +47,14 @@
 # virtual methods
 .method public matches(C)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
 
     const/16 p0, 0x1f
 

@@ -36,10 +36,10 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 130
+    .line 133
     invoke-direct {p0}, Lcom/google/common/eventbus/Dispatcher;-><init>()V
 
-    .line 152
+    .line 155
     invoke-static {}, Lcom/google/common/collect/Queues;->newConcurrentLinkedQueue()Ljava/util/concurrent/ConcurrentLinkedQueue;
 
     move-result-object v0
@@ -52,7 +52,7 @@
 .method synthetic constructor <init>(Lcom/google/common/eventbus/Dispatcher$1;)V
     .locals 0
 
-    .line 130
+    .line 133
     invoke-direct {p0}, Lcom/google/common/eventbus/Dispatcher$LegacyAsyncDispatcher;-><init>()V
 
     return-void
@@ -62,6 +62,17 @@
 # virtual methods
 .method dispatch(Ljava/lang/Object;Ljava/util/Iterator;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "event",
+            "subscribers"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -72,10 +83,10 @@
         }
     .end annotation
 
-    .line 156
+    .line 159
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 157
+    .line 160
     :goto_0
     invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
 
@@ -83,7 +94,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 158
+    .line 161
     iget-object v0, p0, Lcom/google/common/eventbus/Dispatcher$LegacyAsyncDispatcher;->queue:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
     new-instance v1, Lcom/google/common/eventbus/Dispatcher$LegacyAsyncDispatcher$EventWithSubscriber;
@@ -102,7 +113,7 @@
 
     goto :goto_0
 
-    .line 162
+    .line 165
     :cond_0
     :goto_1
     iget-object p1, p0, Lcom/google/common/eventbus/Dispatcher$LegacyAsyncDispatcher;->queue:Ljava/util/concurrent/ConcurrentLinkedQueue;
@@ -115,7 +126,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 163
+    .line 166
     invoke-static {p1}, Lcom/google/common/eventbus/Dispatcher$LegacyAsyncDispatcher$EventWithSubscriber;->access$800(Lcom/google/common/eventbus/Dispatcher$LegacyAsyncDispatcher$EventWithSubscriber;)Lcom/google/common/eventbus/Subscriber;
 
     move-result-object p2

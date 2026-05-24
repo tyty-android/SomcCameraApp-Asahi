@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 334
+    .line 384
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -39,7 +39,7 @@
         }
     .end annotation
 
-    .line 338
+    .line 388
     :try_start_0
     const-string p0, "com.google.common.base.internal.Finalizer"
 
@@ -54,7 +54,7 @@
     :catch_0
     move-exception p0
 
-    .line 340
+    .line 390
     new-instance v0, Ljava/lang/AssertionError;
 
     invoke-direct {v0, p0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V

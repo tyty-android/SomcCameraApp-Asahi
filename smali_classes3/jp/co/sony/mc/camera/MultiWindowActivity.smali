@@ -82,6 +82,16 @@
 
 .method private addActivityResultListener(ILjp/co/sony/mc/camera/OnActivityResultListener;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "requestCode",
+            "listener"
+        }
+    .end annotation
 
     .line 179
     iget-object v0, p0, Ljp/co/sony/mc/camera/MultiWindowActivity;->mActivityResultListeners:Landroid/util/SparseArray;
@@ -367,6 +377,14 @@
 
 .method private resetNewTaskFlag(Landroid/content/Intent;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "intent"
+        }
+    .end annotation
 
     .line 127
     invoke-virtual {p1}, Landroid/content/Intent;->getFlags()I
@@ -398,12 +416,12 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f1101e0
+    const v1, 0x7f11022c
 
     .line 223
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f11048a
+    const v1, 0x7f1104d7
 
     .line 224
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
@@ -449,6 +467,16 @@
 # virtual methods
 .method public checkAndRequestSelfPermissions(I[Ljava/lang/String;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x10
+        }
+        names = {
+            "requestCode",
+            "permissions"
+        }
+    .end annotation
 
     .line 142
     invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/util/PermissionsUtil;->checkAndRequestSelfPermissions(Landroid/app/Activity;I[Ljava/lang/String;)Z
@@ -471,6 +499,18 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "requestCode",
+            "resultCode",
+            "data"
+        }
+    .end annotation
 
     .line 194
     invoke-super {p0, p1, p2, p3}, Landroid/app/Activity;->onActivityResult(IILandroid/content/Intent;)V
@@ -525,11 +565,19 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "savedInstanceState"
+        }
+    .end annotation
 
     .line 43
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    const p1, 0x7f0c002c
+    const p1, 0x7f0c0032
 
     .line 44
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/MultiWindowActivity;->setContentView(I)V
@@ -549,7 +597,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f09032a
+    const v0, 0x7f09032f
 
     .line 46
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/MultiWindowActivity;->findViewById(I)Landroid/view/View;
@@ -585,7 +633,7 @@
 
     move-result-object p0
 
-    const v0, 0x7f110345
+    const v0, 0x7f11038e
 
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -609,7 +657,7 @@
 
     move-result-object p0
 
-    const v0, 0x7f110346
+    const v0, 0x7f11038f
 
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -632,6 +680,16 @@
 
 .method public onMultiWindowModeChanged(ZLandroid/content/res/Configuration;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "isInMultiWindowMode",
+            "newConfig"
+        }
+    .end annotation
 
     .line 84
     invoke-super {p0, p1, p2}, Landroid/app/Activity;->onMultiWindowModeChanged(ZLandroid/content/res/Configuration;)V

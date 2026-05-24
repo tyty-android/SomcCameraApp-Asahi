@@ -3,6 +3,11 @@
 .source "TypeVisitor.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/reflect/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # instance fields
 .field private final visited:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
@@ -19,10 +24,10 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 56
+    .line 58
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 58
+    .line 60
     invoke-static {}, Lcom/google/common/collect/Sets;->newHashSet()Ljava/util/HashSet;
 
     move-result-object v0
@@ -36,8 +41,16 @@
 # virtual methods
 .method public final varargs visit([Ljava/lang/reflect/Type;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "types"
+        }
+    .end annotation
 
-    .line 65
+    .line 67
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -49,7 +62,7 @@
 
     if-eqz v2, :cond_6
 
-    .line 66
+    .line 68
     iget-object v3, p0, Lcom/google/common/reflect/TypeVisitor;->visited:Ljava/util/Set;
 
     invoke-interface {v3, v2}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
@@ -60,14 +73,14 @@
 
     goto :goto_1
 
-    .line 72
+    .line 74
     :cond_0
     :try_start_0
     instance-of v3, v2, Ljava/lang/reflect/TypeVariable;
 
     if-eqz v3, :cond_1
 
-    .line 73
+    .line 75
     move-object v3, v2
 
     check-cast v3, Ljava/lang/reflect/TypeVariable;
@@ -76,13 +89,13 @@
 
     goto :goto_1
 
-    .line 74
+    .line 76
     :cond_1
     instance-of v3, v2, Ljava/lang/reflect/WildcardType;
 
     if-eqz v3, :cond_2
 
-    .line 75
+    .line 77
     move-object v3, v2
 
     check-cast v3, Ljava/lang/reflect/WildcardType;
@@ -91,13 +104,13 @@
 
     goto :goto_1
 
-    .line 76
+    .line 78
     :cond_2
     instance-of v3, v2, Ljava/lang/reflect/ParameterizedType;
 
     if-eqz v3, :cond_3
 
-    .line 77
+    .line 79
     move-object v3, v2
 
     check-cast v3, Ljava/lang/reflect/ParameterizedType;
@@ -106,13 +119,13 @@
 
     goto :goto_1
 
-    .line 78
+    .line 80
     :cond_3
     instance-of v3, v2, Ljava/lang/Class;
 
     if-eqz v3, :cond_4
 
-    .line 79
+    .line 81
     move-object v3, v2
 
     check-cast v3, Ljava/lang/Class;
@@ -121,13 +134,13 @@
 
     goto :goto_1
 
-    .line 80
+    .line 82
     :cond_4
     instance-of v3, v2, Ljava/lang/reflect/GenericArrayType;
 
     if-eqz v3, :cond_5
 
-    .line 81
+    .line 83
     move-object v3, v2
 
     check-cast v3, Ljava/lang/reflect/GenericArrayType;
@@ -136,35 +149,21 @@
 
     goto :goto_1
 
-    .line 83
+    .line 85
     :cond_5
     new-instance p1, Ljava/lang/AssertionError;
 
-    invoke-static {v2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    move-result-object v0
-
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    move-result v1
-
-    add-int/lit8 v1, v1, 0xe
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3, v1}, Ljava/lang/StringBuilder;-><init>(I)V
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     const-string v1, "Unknown type: "
 
-    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -181,12 +180,12 @@
     :catchall_0
     move-exception p1
 
-    .line 88
+    .line 90
     iget-object p0, p0, Lcom/google/common/reflect/TypeVisitor;->visited:Ljava/util/Set;
 
     invoke-interface {p0, v2}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
-    .line 90
+    .line 92
     throw p1
 
     :cond_6
@@ -201,6 +200,15 @@
 
 .method visitClass(Ljava/lang/Class;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "t"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -214,18 +222,43 @@
 
 .method visitGenericArrayType(Ljava/lang/reflect/GenericArrayType;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "t"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method visitParameterizedType(Ljava/lang/reflect/ParameterizedType;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "t"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method visitTypeVariable(Ljava/lang/reflect/TypeVariable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "t"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -239,6 +272,14 @@
 
 .method visitWildcardType(Ljava/lang/reflect/WildcardType;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "t"
+        }
+    .end annotation
 
     return-void
 .end method

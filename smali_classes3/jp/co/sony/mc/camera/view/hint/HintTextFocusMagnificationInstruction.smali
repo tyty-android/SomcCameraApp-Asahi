@@ -30,6 +30,14 @@
 # virtual methods
 .method public canShow(Ljp/co/sony/mc/camera/setting/MessageSettings;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "messageSettings"
+        }
+    .end annotation
 
     .line 40
     sget-object p0, Ljp/co/sony/mc/camera/setting/MessageType;->FOCUS_MAGNIFICATION_INSTRUCTION:Ljp/co/sony/mc/camera/setting/MessageType;
@@ -63,7 +71,7 @@
 
     move-result-object p0
 
-    const v0, 0x7f11024e
+    const v0, 0x7f110297
 
     .line 35
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -83,6 +91,14 @@
 
 .method public increaseDisplayCount(Ljp/co/sony/mc/camera/setting/MessageSettings;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "messageSettings"
+        }
+    .end annotation
 
     .line 47
     sget-object p0, Ljp/co/sony/mc/camera/setting/MessageType;->FOCUS_MAGNIFICATION_INSTRUCTION:Ljp/co/sony/mc/camera/setting/MessageType;

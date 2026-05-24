@@ -26,6 +26,24 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusPhoto;ZLjp/co/sony/mc/camera/storage/PhotoSavingRequest$ImageSourceLifeCycleAdapter;Ljp/co/sony/mc/camera/storage/RequestFactory$RequestBuilder;Ljp/co/sony/mc/camera/storage/Storage$OnStoreCompletedListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "commonStatus",
+            "photoStatus",
+            "shouldUpdateOrientationBeforeStoring",
+            "adapter",
+            "builder",
+            "listener"
+        }
+    .end annotation
 
     .line 105
     invoke-direct {p0, p1, p5, p6}, Ljp/co/sony/mc/camera/storage/SavingRequest;-><init>(Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;Ljp/co/sony/mc/camera/storage/RequestFactory$RequestBuilder;Ljp/co/sony/mc/camera/storage/Storage$OnStoreCompletedListener;)V
@@ -65,6 +83,14 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "data"
+        }
+    .end annotation
 
     .line 122
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/storage/SavingRequest;-><init>(Ljp/co/sony/mc/camera/storage/SavingRequest;)V
@@ -95,6 +121,16 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "orig",
+            "orientation"
+        }
+    .end annotation
 
     .line 135
     invoke-direct {p0, p1, p2}, Ljp/co/sony/mc/camera/storage/SavingRequest;-><init>(Ljp/co/sony/mc/camera/storage/SavingRequest;I)V

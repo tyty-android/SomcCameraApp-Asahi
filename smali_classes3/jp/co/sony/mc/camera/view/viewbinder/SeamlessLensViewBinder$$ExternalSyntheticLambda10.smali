@@ -88,7 +88,7 @@
 
     move-object v12, p2
 
-    invoke-static/range {v0 .. v12}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->$r8$lambda$WZQlvOJw6VRohZuhpWjhs8eIlmo(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Lkotlin/jvm/internal/Ref$BooleanRef;Lkotlin/jvm/internal/Ref$BooleanRef;Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/jvm/internal/Ref$FloatRef;Lkotlin/jvm/internal/Ref$FloatRef;JILkotlin/jvm/internal/Ref$FloatRef;Lkotlin/jvm/internal/Ref$FloatRef;Landroid/view/View;Landroid/view/MotionEvent;)Z
+    invoke-static/range {v0 .. v12}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->$r8$lambda$jIchwFfLpHDTx8kgsvyDlxFAFr0(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Lkotlin/jvm/internal/Ref$BooleanRef;Lkotlin/jvm/internal/Ref$BooleanRef;Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/jvm/internal/Ref$FloatRef;Lkotlin/jvm/internal/Ref$FloatRef;JILkotlin/jvm/internal/Ref$FloatRef;Lkotlin/jvm/internal/Ref$FloatRef;Landroid/view/View;Landroid/view/MotionEvent;)Z
 
     move-result p0
 

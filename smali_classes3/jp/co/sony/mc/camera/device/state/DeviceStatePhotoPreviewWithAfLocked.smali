@@ -11,14 +11,14 @@
 .method constructor <init>()V
     .locals 2
 
-    .line 21
+    .line 20
     const-string v0, "StatePhotoPreviewWithAfLocked"
 
     const/4 v1, 0x0
 
     invoke-direct {p0, v0, v1, v1}, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoPreview;-><init>(Ljava/lang/String;ZZ)V
 
-    .line 15
+    .line 14
     iput-boolean v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoPreviewWithAfLocked;->mIsPreviewStopRequested:Z
 
     return-void
@@ -28,24 +28,34 @@
 # virtual methods
 .method public varargs handleBurstCaptureAfterObjectTracked(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 82
+    .line 81
     aget-object v0, p2, v0
 
     check-cast v0, Ljp/co/sony/mc/camera/device/SnapshotRequest;
 
     const/4 v1, 0x1
 
-    .line 83
+    .line 82
     aget-object v2, p2, v1
 
     check-cast v2, Ljava/lang/String;
 
     const/4 v3, 0x2
 
-    .line 84
+    .line 83
     aget-object v3, p2, v3
 
     check-cast v3, Ljava/lang/Boolean;
@@ -56,7 +66,7 @@
 
     const/4 v4, 0x3
 
-    .line 85
+    .line 84
     aget-object p2, p2, v4
 
     check-cast p2, Ljava/lang/Boolean;
@@ -65,10 +75,10 @@
 
     move-result p2
 
-    .line 87
+    .line 86
     invoke-virtual {p1, v0, v3}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->setSnapshotRequestInfo(Ljp/co/sony/mc/camera/device/SnapshotRequest;Z)V
 
-    .line 88
+    .line 87
     new-instance p1, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstWaitingTrackedObject;
 
     invoke-direct {p1, v2, p2, v1}, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstWaitingTrackedObject;-><init>(Ljava/lang/String;ZZ)V
@@ -80,11 +90,21 @@
 
 .method public varargs handleCancelAutoFocus(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
-    .line 38
+    .line 37
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoPreviewWithAfLocked;->cancelAutoFocus(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
 
-    .line 39
+    .line 38
     new-instance p1, Ljp/co/sony/mc/camera/device/state/DeviceStateAfModeChanging;
 
     const/4 p2, 0x0
@@ -100,24 +120,34 @@
 
 .method public varargs handleCaptureAfterObjectTracked(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 68
+    .line 67
     aget-object v0, p2, v0
 
     check-cast v0, Ljp/co/sony/mc/camera/device/SnapshotRequest;
 
     const/4 v1, 0x1
 
-    .line 69
+    .line 68
     aget-object v2, p2, v1
 
     check-cast v2, Ljava/lang/String;
 
     const/4 v3, 0x2
 
-    .line 70
+    .line 69
     aget-object p2, p2, v3
 
     check-cast p2, Ljava/lang/Boolean;
@@ -126,10 +156,10 @@
 
     move-result p2
 
-    .line 72
+    .line 71
     invoke-virtual {p1, v0, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->setSnapshotRequestInfo(Ljp/co/sony/mc/camera/device/SnapshotRequest;Z)V
 
-    .line 73
+    .line 72
     new-instance p1, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoCaptureWaitingTrackedObject;
 
     invoke-direct {p1, v2, v1}, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoCaptureWaitingTrackedObject;-><init>(Ljava/lang/String;Z)V
@@ -141,48 +171,108 @@
 
 .method public varargs handleCaptureSessionReady(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public varargs handleCreateSession(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     return-void
 .end method
 
-.method public varargs handleEvfPrepared(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
+.method public varargs handleMainPreviewSurfacePrepared(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public varargs handleOnAutoFocusDone(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public varargs handleRequestAutoFocus(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public varargs handleRequestPrepareSnapshot(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 55
+    .line 54
     aget-object p2, p2, v0
 
     check-cast p2, Ljava/lang/String;
 
-    .line 58
+    .line 57
     invoke-virtual {p0, p1, p2, v0}, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoPreviewWithAfLocked;->requestPrepareSnapshot(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Ljava/lang/String;Z)V
 
-    .line 60
+    .line 59
     new-instance p1, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoPrepareSnapshot;
 
     const/4 p2, 0x1
@@ -196,10 +286,20 @@
 
 .method public varargs handleStopPreview(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     const/4 p1, 0x1
 
-    .line 122
+    .line 121
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoPreviewWithAfLocked;->mIsPreviewStopRequested:Z
 
     return-void

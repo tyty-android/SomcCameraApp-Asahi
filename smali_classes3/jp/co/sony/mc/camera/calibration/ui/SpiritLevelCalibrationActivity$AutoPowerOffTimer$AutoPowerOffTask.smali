@@ -21,6 +21,14 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationActivity$AutoPowerOffTimer;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
     .line 284
     iput-object p1, p0, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationActivity$AutoPowerOffTimer$AutoPowerOffTask;->this$1:Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationActivity$AutoPowerOffTimer;

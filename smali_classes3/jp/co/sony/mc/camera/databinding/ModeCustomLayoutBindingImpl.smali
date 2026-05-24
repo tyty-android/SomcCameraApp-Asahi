@@ -13,9 +13,9 @@
 
 
 # instance fields
-.field private final mCallback23:Landroid/view/View$OnClickListener;
+.field private final mCallback17:Landroid/view/View$OnClickListener;
 
-.field private final mCallback24:Landroid/view/View$OnClickListener;
+.field private final mCallback18:Landroid/view/View$OnClickListener;
 
 .field private mDirtyFlags:J
 
@@ -31,84 +31,84 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0904bc
+    const v1, 0x7f0904ba
 
     const/4 v2, 0x7
 
     .line 17
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0904ac
+    const v1, 0x7f0904ad
 
     const/16 v2, 0x8
 
     .line 18
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0904a9
+    const v1, 0x7f0904aa
 
     const/16 v2, 0x9
 
     .line 19
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090150
+    const v1, 0x7f090155
 
     const/16 v2, 0xa
 
     .line 20
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09030c
+    const v1, 0x7f090311
 
     const/16 v2, 0xb
 
     .line 21
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09030f
+    const v1, 0x7f090314
 
     const/16 v2, 0xc
 
     .line 22
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090311
+    const v1, 0x7f090316
 
     const/16 v2, 0xd
 
     .line 23
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09030e
+    const v1, 0x7f090313
 
     const/16 v2, 0xe
 
     .line 24
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09011d
+    const v1, 0x7f09011e
 
     const/16 v2, 0xf
 
     .line 25
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09011f
+    const v1, 0x7f090120
 
     const/16 v2, 0x10
 
     .line 26
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090121
+    const v1, 0x7f090122
 
     const/16 v2, 0x11
 
     .line 27
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09011e
+    const v1, 0x7f09011f
 
     const/16 v2, 0x12
 
@@ -120,6 +120,16 @@
 
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root"
+        }
+    .end annotation
 
     .line 41
     sget-object v0, Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -139,6 +149,18 @@
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
     .locals 24
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root",
+            "bindings"
+        }
+    .end annotation
 
     move-object/from16 v3, p0
 
@@ -327,7 +349,7 @@
 
     invoke-direct {v0, v2, v1}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
 
-    iput-object v0, v2, Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBindingImpl;->mCallback23:Landroid/view/View$OnClickListener;
+    iput-object v0, v2, Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBindingImpl;->mCallback17:Landroid/view/View$OnClickListener;
 
     .line 75
     new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
@@ -336,7 +358,7 @@
 
     invoke-direct {v0, v2, v1}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
 
-    iput-object v0, v2, Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBindingImpl;->mCallback24:Landroid/view/View$OnClickListener;
+    iput-object v0, v2, Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBindingImpl;->mCallback18:Landroid/view/View$OnClickListener;
 
     .line 76
     invoke-virtual/range {p0 .. p0}, Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBindingImpl;->invalidateAll()V
@@ -346,6 +368,17 @@
 
 .method private onChangeModeCustomUiStateIsDragFailedToastVisible(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ModeCustomUiStateIsDragFailedToastVisible",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -394,6 +427,17 @@
 
 .method private onChangeModeCustomUiStateIsDragging(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ModeCustomUiStateIsDragging",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -444,6 +488,16 @@
 # virtual methods
 .method public final _internalCallbackOnClick(ILandroid/view/View;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sourceId",
+            "callbackArg_0"
+        }
+    .end annotation
 
     const/4 p2, 0x1
 
@@ -639,7 +693,7 @@
     .line 234
     iget-object v4, p0, Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBindingImpl;->back:Landroid/widget/ImageButton;
 
-    iget-object v11, p0, Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBindingImpl;->mCallback24:Landroid/view/View$OnClickListener;
+    iget-object v11, p0, Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBindingImpl;->mCallback18:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v4, v11}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -658,7 +712,7 @@
     .line 240
     iget-object v4, p0, Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBindingImpl;->info:Landroid/widget/ImageButton;
 
-    iget-object v6, p0, Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBindingImpl;->mCallback23:Landroid/view/View$OnClickListener;
+    iget-object v6, p0, Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBindingImpl;->mCallback17:Landroid/view/View$OnClickListener;
 
     invoke-static {v4, v6, v10}, Landroidx/databinding/adapters/ViewBindingAdapter;->setOnClick(Landroid/view/View;Landroid/view/View$OnClickListener;Z)V
 
@@ -776,6 +830,18 @@
 
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "localFieldId",
+            "object",
+            "fieldId"
+        }
+    .end annotation
 
     if-eqz p1, :cond_1
 
@@ -810,6 +876,14 @@
 
 .method public setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "CameraSettingsModel"
+        }
+    .end annotation
 
     .line 133
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBindingImpl;->mCameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
@@ -819,6 +893,14 @@
 
 .method public setModeCustomUiState(Ljp/co/sony/mc/camera/view/uistate/ModeCustomUiState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ModeCustomUiState"
+        }
+    .end annotation
 
     .line 122
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBindingImpl;->mModeCustomUiState:Ljp/co/sony/mc/camera/view/uistate/ModeCustomUiState;
@@ -841,7 +923,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x14
+    const/16 p1, 0x17
 
     .line 126
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBindingImpl;->notifyPropertyChanged(I)V
@@ -865,6 +947,14 @@
 
 .method public setModeDialUiState(Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ModeDialUiState"
+        }
+    .end annotation
 
     .line 130
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBindingImpl;->mModeDialUiState:Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;
@@ -874,6 +964,14 @@
 
 .method public setOrientationViewModel(Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "OrientationViewModel"
+        }
+    .end annotation
 
     .line 119
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBindingImpl;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
@@ -883,8 +981,18 @@
 
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "variableId",
+            "variable"
+        }
+    .end annotation
 
-    const/16 v0, 0x16
+    const/16 v0, 0x19
 
     if-ne v0, p1, :cond_0
 
@@ -896,7 +1004,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x14
+    const/16 v0, 0x17
 
     if-ne v0, p1, :cond_1
 
@@ -908,7 +1016,7 @@
     goto :goto_0
 
     :cond_1
-    const/16 v0, 0x15
+    const/16 v0, 0x18
 
     if-ne v0, p1, :cond_2
 
@@ -920,7 +1028,7 @@
     goto :goto_0
 
     :cond_2
-    const/16 v0, 0x8
+    const/16 v0, 0xb
 
     if-ne v0, p1, :cond_3
 

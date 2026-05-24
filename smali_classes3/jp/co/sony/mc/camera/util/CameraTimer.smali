@@ -80,6 +80,22 @@
 
 .method public constructor <init>(JJLandroid/os/Handler;Ljava/lang/String;J)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "maxtime",
+            "interval",
+            "handler",
+            "optionName",
+            "delay"
+        }
+    .end annotation
 
     .line 53
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

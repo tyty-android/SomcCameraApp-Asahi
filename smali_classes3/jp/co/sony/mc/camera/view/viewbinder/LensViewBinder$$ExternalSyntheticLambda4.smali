@@ -13,6 +13,10 @@
 
 .field public final synthetic f$10:Lkotlin/jvm/internal/Ref$ObjectRef;
 
+.field public final synthetic f$11:Lkotlin/jvm/internal/Ref$ObjectRef;
+
+.field public final synthetic f$12:Lkotlin/jvm/internal/Ref$ObjectRef;
+
 .field public final synthetic f$2:Lkotlin/jvm/internal/Ref$ObjectRef;
 
 .field public final synthetic f$3:Lkotlin/jvm/internal/Ref$ObjectRef;
@@ -31,7 +35,7 @@
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;)V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;)V
     .locals 0
 
     .line 0
@@ -59,13 +63,17 @@
 
     iput-object p11, p0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$$ExternalSyntheticLambda4;->f$10:Lkotlin/jvm/internal/Ref$ObjectRef;
 
+    iput-object p12, p0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$$ExternalSyntheticLambda4;->f$11:Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    iput-object p13, p0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$$ExternalSyntheticLambda4;->f$12:Lkotlin/jvm/internal/Ref$ObjectRef;
+
     return-void
 .end method
 
 
 # virtual methods
 .method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 12
+    .locals 14
 
     .line 0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$$ExternalSyntheticLambda4;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;
@@ -90,11 +98,15 @@
 
     iget-object v10, p0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$$ExternalSyntheticLambda4;->f$10:Lkotlin/jvm/internal/Ref$ObjectRef;
 
-    move-object v11, p1
+    iget-object v11, p0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$$ExternalSyntheticLambda4;->f$11:Lkotlin/jvm/internal/Ref$ObjectRef;
 
-    check-cast v11, Lkotlin/Unit;
+    iget-object v12, p0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$$ExternalSyntheticLambda4;->f$12:Lkotlin/jvm/internal/Ref$ObjectRef;
 
-    invoke-static/range {v0 .. v11}, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;->$r8$lambda$6MYJ7sXTH_lqHRxMCqD_sHBFBkc(Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/Unit;)Lkotlin/Unit;
+    move-object v13, p1
+
+    check-cast v13, Lkotlin/Unit;
+
+    invoke-static/range {v0 .. v13}, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;->$r8$lambda$vQX-Lpev5cWEo_m0Fd6FxAiDfoU(Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/Unit;)Lkotlin/Unit;
 
     move-result-object p0
 

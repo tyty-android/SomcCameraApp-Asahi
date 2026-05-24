@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$5;->invoke(Lkotlin/io/path/FileVisitorBuilder;)V
+    value = Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt;->copyToRecursively(Ljava/nio/file/Path;Ljava/nio/file/Path;Lkotlin/jvm/functions/Function3;ZLkotlin/jvm/functions/Function3;)Ljava/nio/file/Path;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -30,8 +30,8 @@
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x30

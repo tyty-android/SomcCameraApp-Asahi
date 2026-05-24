@@ -45,6 +45,15 @@
 # direct methods
 .method constructor <init>(Ljava/lang/Class;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "clazz"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -53,10 +62,10 @@
         }
     .end annotation
 
-    .line 255
+    .line 258
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 256
+    .line 259
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -73,7 +82,7 @@
 .method public bridge synthetic get()Ljava/lang/Object;
     .locals 0
 
-    .line 251
+    .line 254
     invoke-virtual {p0}, Lcom/google/common/collect/MultimapBuilder$EnumSetSupplier;->get()Ljava/util/Set;
 
     move-result-object p0
@@ -91,7 +100,7 @@
         }
     .end annotation
 
-    .line 261
+    .line 264
     iget-object p0, p0, Lcom/google/common/collect/MultimapBuilder$EnumSetSupplier;->clazz:Ljava/lang/Class;
 
     invoke-static {p0}, Ljava/util/EnumSet;->noneOf(Ljava/lang/Class;)Ljava/util/EnumSet;

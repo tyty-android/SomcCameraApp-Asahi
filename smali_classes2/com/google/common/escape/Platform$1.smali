@@ -25,7 +25,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 39
+    .line 43
     invoke-direct {p0}, Ljava/lang/ThreadLocal;-><init>()V
 
     return-void
@@ -36,7 +36,7 @@
 .method protected bridge synthetic initialValue()Ljava/lang/Object;
     .locals 0
 
-    .line 39
+    .line 43
     invoke-virtual {p0}, Lcom/google/common/escape/Platform$1;->initialValue()[C
 
     move-result-object p0
@@ -49,7 +49,7 @@
 
     const/16 p0, 0x400
 
-    .line 42
+    .line 46
     new-array p0, p0, [C
 
     return-object p0

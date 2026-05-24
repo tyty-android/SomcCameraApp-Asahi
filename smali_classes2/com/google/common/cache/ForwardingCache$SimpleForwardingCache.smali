@@ -40,6 +40,15 @@
 # direct methods
 .method protected constructor <init>(Lcom/google/common/cache/Cache;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "delegate"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -48,10 +57,10 @@
         }
     .end annotation
 
-    .line 120
+    .line 126
     invoke-direct {p0}, Lcom/google/common/cache/ForwardingCache;-><init>()V
 
-    .line 121
+    .line 127
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -75,7 +84,7 @@
         }
     .end annotation
 
-    .line 126
+    .line 132
     iget-object p0, p0, Lcom/google/common/cache/ForwardingCache$SimpleForwardingCache;->delegate:Lcom/google/common/cache/Cache;
 
     return-object p0
@@ -84,7 +93,7 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 117
+    .line 123
     invoke-virtual {p0}, Lcom/google/common/cache/ForwardingCache$SimpleForwardingCache;->delegate()Lcom/google/common/cache/Cache;
 
     move-result-object p0

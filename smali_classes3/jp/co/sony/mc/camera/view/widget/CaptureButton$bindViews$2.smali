@@ -53,7 +53,7 @@
     f = "CaptureButton.kt"
     i = {}
     l = {
-        0x13b
+        0x14a
     }
     m = "invokeSuspend"
     n = {}
@@ -167,7 +167,7 @@
 
     move-result-object v0
 
-    .line 314
+    .line 329
     iget v1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton$bindViews$2;->label:I
 
     const/4 v2, 0x1
@@ -192,7 +192,7 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 315
+    .line 330
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton$bindViews$2;->this$0:Ljp/co/sony/mc/camera/view/widget/CaptureButton;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->access$getLockSwitchVisible$p(Ljp/co/sony/mc/camera/view/widget/CaptureButton;)Lkotlinx/coroutines/flow/Flow;
@@ -221,7 +221,7 @@
 
     return-object v0
 
-    .line 322
+    .line 337
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

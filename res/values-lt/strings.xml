@@ -82,6 +82,7 @@ Gausite pranešimus ir dialogus. Visais atvejais pasirinkite „Sujungti“, tad
     <string name="call_notification_incoming_text">Gaunamasis skambutis</string>
     <string name="call_notification_ongoing_text">Vykstantis skambutis</string>
     <string name="call_notification_screening_text">Gaunamojo skambučio tikrinimas</string>
+    <string name="camera_string_saving_process_hint_txt">Išsaugoma... Palaukite, kol išsaugojimas bus baigtas.</string>
     <string name="camera_strings_accept_privacy_policy_txt">Anksčiau sutikote su privatumo politika, tačiau visada galite apsigalvoti.</string>
     <string name="camera_strings_accessibility_48_mega_pixel_txt">48 megapikseliai</string>
     <string name="camera_strings_accessibility_adjust_bokeh_txt">Pritaikyti „Bokeh“</string>
@@ -92,6 +93,27 @@ Gausite pranešimus ir dialogus. Visais atvejais pasirinkite „Sujungti“, tad
     <string name="camera_strings_accessibility_adjust_framing_size_smaller_txt">Sumažinti kadro dydį</string>
     <string name="camera_strings_accessibility_adjust_framing_size_txt">Sureguliuoti kadro dydį</string>
     <string name="camera_strings_accessibility_adjust_shutter_speed_txt">Užrakto greitis</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_look_menu_txt">Uždarymo mygtukas. Uždaro išvaizdos meniu.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_menu_txt">Uždaryti pritaikymo meniu</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_suggests_txt">Uždaryti siūlomus koregavimus</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_menu_txt">Šiuo metu taikoma pritaikyta išvaizda. Atidaro koregavimo meniu.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_txt">Pritaikyta išvaizda. Pritaiko išvaizdos, ryškumo ir spalvos nustatymus, kurie užregistruoti pritaikymo meniu.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_tab_txt">Pritaikymo kortelė. Pritaiko išvaizdos, ryškumo ir spalvos nustatymus, kurie užregistruoti pritaikymo meniu.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_button_txt">Pritaikymo mygtukas. Atidaro meniu, kuris leidžia toliau koreguoti pritaikius rekomenduojamus koregavimus.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_param_txt">%1$s nustatyta į %2$s</string>
+    <string name="camera_strings_accessibility_ai_suggestion_first_time_txt">DI kameros padėjėjas. Šia funkcija siūlomi nustatymai, pavyzdžiui, spalva atsižvelgiant į sceną.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_four_of_some_suggests_txt">Ketvirtasis siūlomas koregavimas</string>
+    <string name="camera_strings_accessibility_ai_suggestion_look_menu_txt">"%1$s
+Atidaro kūrybiškos išvaizdos meniu"</string>
+    <string name="camera_strings_accessibility_ai_suggestion_new_suggest_txt">Pasiūlyti nauji rekomenduojami koregavimai</string>
+    <string name="camera_strings_accessibility_ai_suggestion_one_of_some_suggests_txt">Pirmasis siūlomas koregavimas</string>
+    <string name="camera_strings_accessibility_ai_suggestion_open_suggests_txt">Išplėsti siūlomus koregavimus</string>
+    <string name="camera_strings_accessibility_ai_suggestion_reset_to_default_txt">Grąžinti nustatymus, kurie buvo taikyti prieš pasiūlymus</string>
+    <string name="camera_strings_accessibility_ai_suggestion_selected_suggest_txt">Šie rekomenduojami koregavimai pritaikyti</string>
+    <string name="camera_strings_accessibility_ai_suggestion_suggest_lens_txt">Siūlomo objektyvo mygtukas. Rekomenduojamas %1$sx.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_surface_of_some_suggests_txt">Siūlomi koregavimai. Perbraukite iš dešinės į kairę, kad būtų parodyti siūlomi koregavimai.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_three_of_some_suggests_txt">Trečiasis siūlomas koregavimas</string>
+    <string name="camera_strings_accessibility_ai_suggestion_two_of_some_suggests_txt">Antrasis siūlomas koregavimas</string>
     <string name="camera_strings_accessibility_arrow_left_button_txt">Rodyklė į kairę</string>
     <string name="camera_strings_accessibility_arrow_right_button_txt">Rodyklė į dešinę</string>
     <string name="camera_strings_accessibility_audio_level_txt">Garso lygio matuoklis</string>
@@ -246,6 +268,45 @@ Gausite pranešimus ir dialogus. Visais atvejais pasirinkite „Sujungti“, tad
     <string name="camera_strings_advanced_setting_geo_tag_title_txt">Išsaugoti vietą</string>
     <string name="camera_strings_ai_face_restore_description_txt">Galite fotografuoti su veido išryškinimo funkcija, kad veidų bruožai būtų aiškesni</string>
     <string name="camera_strings_ai_face_restore_txt">Ryškinti veidus</string>
+    <string name="camera_strings_ai_suggestion_introduce_hint_text_txt">[Patarimai] DI kameros padėjėjas</string>
+    <string name="camera_strings_aisuggestion_box_name1_txt">Pritaik.</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_message_txt">Registruokite dabartinius išvaizdos, ryškumo ir spalvų nustatymus kaip „Pritaikytus“.</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_overwrite_message_txt">Išvaizda jau užregistruota skirtuke „Pasirinktinis“. Perrašyti?</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_title_txt">Registruoti kaip pritaikytą išvaizdą</string>
+    <string name="camera_strings_aisuggestion_box_title_txt">Pritaik.</string>
+    <string name="camera_strings_aisuggestion_custom_params_contrast_txt">Kontrast.</string>
+    <string name="camera_strings_aisuggestion_custom_params_ev_txt">Ryškumas</string>
+    <string name="camera_strings_aisuggestion_custom_params_register_txt">Registruoti</string>
+    <string name="camera_strings_aisuggestion_custom_params_saturation_txt">Sodrum.</string>
+    <string name="camera_strings_aisuggestion_custom_params_title_txt">Ryškumas / spalva</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbab_txt">Šilt. sp.</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbgm_txt">Atspalvis</string>
+    <string name="camera_strings_aisuggestion_customlook_register_instruction_txt">Registruotą pritaikytą išvaizdą galite bet kuriuo metu naudoti skirtuke „Pritaikyta išvaizda“</string>
+    <string name="camera_strings_aisuggestion_description_txt">"DI automatiškai atpažįsta sceną ir apačioje dešinėje esančiame miniperžiūros lange siūlo optimizuotus koregavimus.
+Jei bakstelėsite šį miniperžiūros langą, pagal sceną bus pakoreguoti šie nustatymai:
+Išvaizda, Išlaikymas, Derinimas pagal baltą, Sodrumas, Kontrastas, Bokeh
+*Ši funkcija palaikoma tik Nuotraukų režimu.
+*Kai paspaudę ir laikydami užrakto mygtuką pradedate įrašinėti vaizdo įrašą, sodrumo, kontrasto ir Bokeh nustatymai nebus taikomi."</string>
+    <string name="camera_strings_aisuggestion_guide_description1_txt">Pagal DI atpažintą sceną rekomenduojami koregavimai rodomi apačioje dešinėje (arba viršuje dešinėje, jei laikoma horizontaliai) esančiame miniperžiūros lange. Galite iškart pritaikyti visus šiuos koregavimus bakstelėję miniperžiūros langą.</string>
+    <string name="camera_strings_aisuggestion_guide_description2_txt">Taip pat, atsižvelgus į sceną, gali būti pasiūlytas konkretus objektyvo nustatymas. Tokiu atveju galite pakeisti siūlomą objektyvo nustatymą pagal savo pageidavimus.</string>
+    <string name="camera_strings_aisuggestion_guide_description3_txt">"Perbraukę kairėn per apačioje dešinėje (arba viršuje dešinėje, jei laikoma horizontaliai) esantį miniperžiūros langą, galite pamatyti alternatyvias koregavimo rekomendacijas.
+Jūsų pasirinktas pasiūlymas bus išsaugotas kaip pageidaujamas koregavimas ir bus įtrauktas į pasiūlymus, kai kitą kartą fotografuosite panašioje aplinkoje."</string>
+    <string name="camera_strings_aisuggestion_guide_description4_txt">Kai pasiūlymų nereikia, galite bakstelėti mygtuką [>], kad juos paslėptumėte. Atpažinus naują sceną, mygtukas [&lt;] įsižiebs, nurodant, kad yra naujų koregavimo pasiūlymų. Norėdami vėl peržiūrėti pasiūlymus, bakstelėkite mygtuką [&lt;].</string>
+    <string name="camera_strings_aisuggestion_guide_description5_txt">Jei pasirinkę siūlomus koregavimus bakstelėsite koregavimo mygtuką, galėsite toliau koreguoti nustatymus, pavyzdžiui, ryškumą ir spalvą. Jūsų koregavimai bus išsaugoti įrenginyje ir pritaikyti siūlomiems koregavimams kitąkart nustačius panašią sceną.</string>
+    <string name="camera_strings_aisuggestion_guide_description6_txt">Jūsų pasiūlyti ir atlikti koregavimai gali būti įregistruoti, todėl juos galite įkelti bet kuriuo metu, kad fotografuotumėte naudodami tuos pačius nustatymus. Bakstelėkite [Registruoti], kad pridėtumėte pasirinktinį išvaizdos variantą prie galimų išvaizdos variantų sąrašo.</string>
+    <string name="camera_strings_aisuggestion_guide_entry_txt">Kaip naudoti DI kameros padėjėją</string>
+    <string name="camera_strings_aisuggestion_guide_title_txt">Kaip naudoti DI kameros padėjėją</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_message_txt">Atkurti visus numatytuosius nustatymus, įskaitant spalvą, ryškumą ir pageidaujamus koregavimus?</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_title_txt">Atkurti parametrus</string>
+    <string name="camera_strings_aisuggestion_params_reset_txt">Atkurti parametrus</string>
+    <string name="camera_strings_aisuggestion_permitted_item_bokeh_txt">Bokeh</string>
+    <string name="camera_strings_aisuggestion_permitted_item_lens_txt">Objek.</string>
+    <string name="camera_strings_aisuggestion_permitted_item_title_txt">Įtraukti į pasiūlymus</string>
+    <string name="camera_strings_aisuggestion_recommend_lens_ratio_txt">%1$s rekomenduojama</string>
+    <string name="camera_strings_aisuggestion_return_to_default_txt">Anuliuoti</string>
+    <string name="camera_strings_aisuggestion_simple_video_instruction_txt">Ilgai spaudžiant įrašant vaizdo įrašą, sodrumo, kontrasto ir Bokeh nustatymų rodymas gali skirtis.</string>
+    <string name="camera_strings_aisuggestion_txt">DI kameros padėjėjas</string>
+    <string name="camera_strings_aisuggestion_use_aissuggestion_txt">DI kam. padėjėjo naudojimas</string>
     <string name="camera_strings_anonymous_analytics_txt">Anoniminė analizė</string>
     <string name="camera_strings_application_name">Fotoaparatas (vaizdo kamera)</string>
     <string name="camera_strings_application_name_google_lens_txt">Google Lens</string>
@@ -421,6 +482,7 @@ Sauga:
     <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Negalima prisijungti prie „Wi-Fi“</string>
     <string name="camera_strings_dialog_user_data_collection_txt">Jei sutinkate su šiomis sąlygomis, „Sony“ rinks jūsų &lt;b>&lt;a href=#personal-data>asmens duomenis&lt;/a>&lt;/b>, kad teiktų tinkintą palaikymą bei tobulintų įrenginius ir paslaugas. „Sony“ jūsų duomenis tvarkys vadovaudamasi &lt;b>&lt;a href=https://www.sonymobile.com/privacy/>privatumo politika&lt;/a>&lt;/b>.</string>
     <string name="camera_strings_dialog_video_hdr_hlg_supported_short_description_txt">Kai kurie įrenginiai / paslaugos gali neatkurti HDR turinio originalių spalvų ir ryškumo. Žiūrėdami HDR turinį, naudokite įrenginius / paslaugas, kurie palaiko HDR.</string>
+    <string name="camera_strings_digital_tripod_hint_edge_txt">Kompozicijos padėtis pakito. Nukreipkite fotoaparatą (vaizdo kamerą) į pradinį objektą.</string>
     <string name="camera_strings_digital_zoom_type_description_txt">"Pasirinkite skaitmeninio artinimo ir tolinimo nustatymą.
 
 Standartinis skaitmeninis artinimas ir tolinimas: artinkite ir tolinkite naudodami skaitmeninį apdorojimą pagal vaizdo jutiklio duomenis.
@@ -484,6 +546,7 @@ Norėdami jį pakeisti, užbaikite transliavimą, tada eikite į „Facebook“ 
     <string name="camera_strings_fast_capturing_screen_locked_settings_txt">Norėdami atidaryti nustatymus, atrakinkite ekraną.</string>
     <string name="camera_strings_fast_capturing_screen_locked_streaming_txt">Norėdami pradėti transliuoti, atrakinkite ekraną.</string>
     <string name="camera_strings_fast_capturing_screen_locked_title_txt">Ekranas užrakintas</string>
+    <string name="camera_strings_feature_creative_look_custom_description_txt">Galite užregistruoti išvaizdą ir ryškumo / spalvų nustatymus.</string>
     <string name="camera_strings_feature_creative_look_description_txt">"Galite pasirinkti vaizdų (nuotraukų ar filmų) apdailą pasirinkę „išvaizdą“.
 
 Kūrybiška išvaizda siūlo 6 iš anksto nustatytas išvaizdas. Kiekvienas iš jų yra optimizuotas naudojant skirtingą spalvų tonų, sodrumo, kontrasto, aštrumo, ryškumo ir kitų vaizdo elementų derinį, todėl galite nustatyti vaizdo apdorojimą su idealiu šių elementų balansu."</string>
@@ -567,6 +630,7 @@ Palieskite objektą, kurį norite sekti."</string>
     <string name="camera_strings_framing_orientation_description_txt">"Galite pasirinkti, ar norite apkarpyti objektą horizontaliame, ar vertikaliame kadre.
 Nustatykite [Automatiškai], kad apkarpymo padėtis sutaptų su įrenginio padėtimi."</string>
     <string name="camera_strings_framing_select_subject_to_track_txt">Palieskite objektą, kurio padėtį norite užfiksuoti</string>
+    <string name="camera_strings_framing_setting_guide_title_txt">Apie Automatinį įrėminimą</string>
     <string name="camera_strings_framing_setting_orientation_landscape_txt">Horizontali</string>
     <string name="camera_strings_framing_setting_orientation_portrait_txt">Vertikali</string>
     <string name="camera_strings_framing_setting_orientation_title_txt">Kadro padėtis</string>
@@ -574,6 +638,7 @@ Nustatykite [Automatiškai], kad apkarpymo padėtis sutaptų su įrenginio padė
 Apkarpyti įrašai išsaugomi „Full HD“ raiška. Neapkarpyti įrašai išsaugomi kaip 4K."</string>
     <string name="camera_strings_framing_setting_save_original_video_off_txt">Viso ekrano įrašymas: Išjungtas</string>
     <string name="camera_strings_framing_setting_save_original_video_title_txt">Viso ekrano įrašas</string>
+    <string name="camera_strings_framing_setting_snapshot_description_txt">Nepriklausomai nuo to, ar [Viso ekrano įrašas] įjungtas, ar išjungtas, įrašant vaizdo įrašą sukurtos momentinės nuotraukos išsaugomos visame ekrane.</string>
     <string name="camera_strings_geotagging_description_txt">Įrašykite nuotraukas ir vaizdo įrašus su jų užfiksavimo vieta</string>
     <string name="camera_strings_geotagging_txt">Išsaugoti vietą</string>
     <string name="camera_strings_gimbal_mode_tab_label">DI kameros naud.</string>
@@ -592,6 +657,7 @@ Tai leidžia filmuoti stabilius vaizdo įrašus net ir esant nestabiliai padėč
     <string name="camera_strings_gimbal_setting_assist_method_locking_hint_txt">Objekto vietos užrakt.: rankinis</string>
     <string name="camera_strings_gimbal_setting_assist_method_locking_txt">Rankinis</string>
     <string name="camera_strings_gimbal_setting_assist_method_title_txt">Objekto vietos užrakt.</string>
+    <string name="camera_strings_gimbal_setting_guide_title_txt">Apie DI kameros naudojimą</string>
     <string name="camera_strings_gridline_description_txt">Nustatykite, ar rodyti tinklelio linijas, kurios padeda komponuoti vaizdus</string>
     <string name="camera_strings_gridline_txt">Tinklelio linijos</string>
     <string name="camera_strings_hand_shutter_description_updated_txt">Galite paleisti atgalinį fotografavimo skaičiavimą pasukdami delną link priekinės kameros. Kad jį būtų lengviau aptikti, ištieskite pirštus į viršų.</string>
@@ -727,6 +793,7 @@ Momentinės kopijos, padarytos įrašant vaizdo įrašą, visada naudos standart
     <string name="camera_strings_notification_channel_title_saving_process_txt">Išsaugojimo procesas</string>
     <string name="camera_strings_notification_text_saving_in_progress_txt">Palaukite, kol bus išsaugota</string>
     <string name="camera_strings_notification_title_saving_in_progress_txt">Išsaugoma</string>
+    <string name="camera_strings_notify_saving_process_cannot_launch_app_by_hw_shutter_txt">Fotoaparatas (vaizdo kamera) gali būti nepaleistas, jei užrakto mygtukas paspaudžiamas išsaugojimo metu</string>
     <string name="camera_strings_ok_txt">Gerai</string>
     <string name="camera_strings_peaking_color_blue_txt">Mėlynaї</string>
     <string name="camera_strings_peaking_color_red_txt">Raudona</string>
@@ -735,6 +802,7 @@ Momentinės kopijos, padarytos įrašant vaizdo įrašą, visada naudos standart
     <string name="camera_strings_peaking_color_yellow_txt">Geltona</string>
     <string name="camera_strings_peaking_txt">Kontūras</string>
     <string name="camera_strings_personal_data_txt">Asmeniniai duomenys</string>
+    <string name="camera_strings_photopro_setting_guide_title_txt">Apie „Pro“ nuotrauką</string>
     <string name="camera_strings_privacy_policy_txt">Privatumo politika</string>
     <string name="camera_strings_pro_tips_computational_photo_description_txt">"Net P režimu fotoaparatas (vaizdo kamera) automatiškai atpažįsta peizažą ir daro gražias automatines nuotraukas, sumažindama suliejimą, triukšmą, per didelę ir per mažą ekspoziciją.
 Jei šios funkcijos nenaudojate, galite ją išjungti Fn mygtuku arba MENIU."</string>
@@ -965,6 +1033,7 @@ Jei norite kaip duomenų saugyklą ir toliau naudoti SD kortelę, naudokite dide
     <string name="camera_strings_video_stabilization_description_sub_txt">Pastaba. Pasirinkus Aukštą kokybę, įrašymo trukmė gali sutrumpėti dėl padidėjusios įrenginio temperatūros.</string>
     <string name="camera_strings_video_stabilization_description_txt">„Xperia“ turi unikalią hibridinę stabilizavimo sistemą pavadinimu „Optical SteadyShot“ – tai vienu veikiantis optinis vaizdo stabilizavimas ir elektroninis vaizdo stabilizavimas. Ji užtikrina, kad vaizdo įrašai būtų be supurtymo efektų ir sklandūs, netgi kai įrašoma judant.</string>
     <string name="camera_strings_video_stabilization_high_quality_images_txt">Aukšta kokybė</string>
+    <string name="camera_strings_videopro_setting_guide_title_txt">Apie „Pro“ vaizdo įrašą</string>
     <string name="camera_strings_volume_distortion_correction_description_txt">Ištaiso prie ekrano krašto rodomų veidų iškraipymus, kai naudojamas itin platus objektyvas. Dėl to fonas gali atrodyti iškraipytas arba matymo kampas – susiaurėjęs.</string>
     <string name="camera_strings_volume_distortion_correction_front_description_txt">Ištaiso prie ekrano krašto rodomų veidų iškraipymus. Dėl to fonas gali atrodyti iškraipytas arba matymo kampas – susiaurėjęs.</string>
     <string name="camera_strings_volume_distortion_correction_txt">Veido iškraipymų korekcija</string>
@@ -1042,8 +1111,25 @@ Nėra tinklo ryšio."</string>
     <string name="clear_text_end_icon_content_description">Išvalyti tekstą</string>
     <string name="close_drawer">Uždaryti naršymo meniu</string>
     <string name="close_sheet">Uždaryti lapą</string>
+    <string name="common_google_play_services_enable_button">Įgalinti</string>
+    <string name="common_google_play_services_enable_text">„%1$s“ neveiks, jei neįgalinsite „Google Play“ paslaugų.</string>
+    <string name="common_google_play_services_enable_title">Įgalinkite „Google Play“ paslaugas</string>
+    <string name="common_google_play_services_install_button">Įdiegti</string>
+    <string name="common_google_play_services_install_text">Programa „%1$s“ nebus paleidžiama be „Google Play“ paslaugų, kurių nėra įrenginyje.</string>
+    <string name="common_google_play_services_install_title">Gaukite „Google Play“ paslaugas</string>
+    <string name="common_google_play_services_notification_channel_name">„Google Play“ paslaugų pasiekiamumas</string>
+    <string name="common_google_play_services_notification_ticker">„Google Play“ paslaugų klaida</string>
+    <string name="common_google_play_services_unknown_issue">Naudojant programą „%1$s“ kilo problemų dėl „Google Play“ paslaugų. Bandykite dar kartą.</string>
+    <string name="common_google_play_services_unsupported_text">Programa „%1$s“ nebus paleidžiama be „Google Play“ paslaugų, kurių jūsų įrenginys nepalaiko.</string>
+    <string name="common_google_play_services_update_button">Atnaujinti</string>
+    <string name="common_google_play_services_update_text">„%1$s“ nebus paleidžiama, jei neatnaujinsite „Google Play“ paslaugų.</string>
+    <string name="common_google_play_services_update_title">Atnaujinkite „Google Play“ paslaugas</string>
+    <string name="common_google_play_services_updating_text">„%1$s“ nebus paleidžiama be „Google Play“ paslaugų, kurios šiuo metu atnaujinamos.</string>
+    <string name="common_google_play_services_wear_update_text">Reikia naujos versijos „Google Play“ paslaugų. Jos netrukus bus atnaujintos.</string>
+    <string name="common_open_on_phone">Atidaryti telefone</string>
+    <string name="common_signin_button_text">Prisijungti</string>
+    <string name="common_signin_button_text_long">Prisijungti naudojant „Google“</string>
     <string name="copy">Kopijuoti</string>
-    <string name="copy_toast_msg">Nuoroda nukopijuota į iškarpinę</string>
     <string name="default_error_message">Netinkama įvestis</string>
     <string name="default_popup_window_title">Iššokantysis langas</string>
     <string name="dropdown_menu">Išskleidžiamasis meniu</string>
@@ -1054,9 +1140,6 @@ Nėra tinklo ryšio."</string>
     <string name="external_display_connected_description_txt">Vaizdo ieškiklį galima patikrinti vaizdo tinklaraščių monitoriuje</string>
     <string name="external_display_connected_title_txt">Vaizdo tinklaraščių monitorius prijungtas</string>
     <string name="external_display_note_about_external_mic_txt">Pastaba: Norėdami naudoti išorinį mikrofoną, prieš įrašydami prijunkite jį prie vaizdo tinklaraščių monitoriaus. Jei jį prijungsite vėliau, jums reikės iš naujo prijungti vaizdo tinklaraščių monitorių.</string>
-    <string name="fallback_menu_item_copy_link">Kopijuoti nuorodą</string>
-    <string name="fallback_menu_item_open_in_browser">Atidaryti naršyklėje</string>
-    <string name="fallback_menu_item_share_link">Bendrinti nuorodą</string>
     <string name="icon_content_description">Dialogo lango piktograma</string>
     <string name="in_progress">Vyksta</string>
     <string name="indeterminate">Iš dalies pažymėta</string>

@@ -22,15 +22,29 @@
 
 
 # instance fields
+.field final synthetic this$1:Lcom/google/common/graph/DirectedGraphConnections$2;
+
 .field final synthetic val$entries:Ljava/util/Iterator;
 
 
 # direct methods
 .method constructor <init>(Lcom/google/common/graph/DirectedGraphConnections$2;Ljava/util/Iterator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$1",
+            "val$entries"
+        }
+    .end annotation
 
-    .line 278
+    .line 280
     iput-object p2, p0, Lcom/google/common/graph/DirectedGraphConnections$2$1;->val$entries:Ljava/util/Iterator;
+
+    iput-object p1, p0, Lcom/google/common/graph/DirectedGraphConnections$2$1;->this$1:Lcom/google/common/graph/DirectedGraphConnections$2;
 
     invoke-direct {p0}, Lcom/google/common/collect/AbstractIterator;-><init>()V
 
@@ -47,7 +61,10 @@
         }
     .end annotation
 
-    .line 281
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 284
     :cond_0
     iget-object v0, p0, Lcom/google/common/graph/DirectedGraphConnections$2$1;->val$entries:Ljava/util/Iterator;
 
@@ -57,7 +74,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 282
+    .line 285
     iget-object v0, p0, Lcom/google/common/graph/DirectedGraphConnections$2$1;->val$entries:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -66,7 +83,7 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 283
+    .line 286
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v1
@@ -77,14 +94,14 @@
 
     if-eqz v1, :cond_0
 
-    .line 284
+    .line 287
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object p0
 
     return-object p0
 
-    .line 287
+    .line 290
     :cond_1
     invoke-virtual {p0}, Lcom/google/common/graph/DirectedGraphConnections$2$1;->endOfData()Ljava/lang/Object;
 

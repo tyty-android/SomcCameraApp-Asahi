@@ -33,8 +33,16 @@
 
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/widget/DialPicker;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 1098
+    .line 1310
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;->this$0:Ljp/co/sony/mc/camera/view/widget/DialPicker;
 
     invoke-direct {p0}, Landroidx/recyclerview/widget/LinearSnapHelper;-><init>()V
@@ -54,16 +62,25 @@
 # virtual methods
 .method public attachToRecyclerView(Landroidx/recyclerview/widget/RecyclerView;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "recyclerView"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
         }
     .end annotation
 
-    .line 1106
+    .line 1318
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;->mRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
-    .line 1107
+    .line 1319
     invoke-super {p0, p1}, Landroidx/recyclerview/widget/LinearSnapHelper;->attachToRecyclerView(Landroidx/recyclerview/widget/RecyclerView;)V
 
     return-void
@@ -71,8 +88,16 @@
 
 .method protected createScroller(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)Landroidx/recyclerview/widget/RecyclerView$SmoothScroller;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "layoutManager"
+        }
+    .end annotation
 
-    .line 1118
+    .line 1330
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper$1;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;->mRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
@@ -88,8 +113,16 @@
 
 .method public findSnapView(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)Landroid/view/View;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "layoutManager"
+        }
+    .end annotation
 
-    .line 1112
+    .line 1324
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;->this$0:Ljp/co/sony/mc/camera/view/widget/DialPicker;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;->mRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
@@ -103,8 +136,16 @@
 
 .method setViewKind(Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "viewKind"
+        }
+    .end annotation
 
-    .line 1149
+    .line 1361
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;->mViewKind:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
     return-void

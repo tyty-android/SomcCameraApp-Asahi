@@ -33,8 +33,8 @@
     }
     k = 0x2
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x30
@@ -140,15 +140,10 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
 
-    goto :goto_0
-
     :cond_0
-    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
-    :goto_0
     check-cast v1, Ljava/text/DecimalFormat;
 
-    goto :goto_1
+    goto :goto_0
 
     .line 25
     :cond_1
@@ -157,7 +152,7 @@
     move-result-object v1
 
     .line 26
-    :goto_1
+    :goto_0
     invoke-virtual {v1, p0, p1}, Ljava/text/DecimalFormat;->format(D)Ljava/lang/String;
 
     move-result-object p0

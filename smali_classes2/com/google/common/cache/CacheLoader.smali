@@ -4,12 +4,15 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/cache/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/common/cache/CacheLoader$InvalidCacheLoadException;,
         Lcom/google/common/cache/CacheLoader$UnsupportedLoadingOperationException;,
+        Lcom/google/common/cache/CacheLoader$FunctionToCacheLoader;,
         Lcom/google/common/cache/CacheLoader$SupplierToCacheLoader;,
-        Lcom/google/common/cache/CacheLoader$FunctionToCacheLoader;
+        Lcom/google/common/cache/CacheLoader$InvalidCacheLoadException;
     }
 .end annotation
 
@@ -29,7 +32,7 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 62
+    .line 61
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -37,7 +40,15 @@
 
 .method public static asyncReloading(Lcom/google/common/cache/CacheLoader;Ljava/util/concurrent/Executor;)Lcom/google/common/cache/CacheLoader;
     .locals 1
-    .annotation runtime Lcom/google/errorprone/annotations/CheckReturnValue;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "loader",
+            "executor"
+        }
     .end annotation
 
     .annotation system Ldalvik/annotation/Signature;
@@ -72,7 +83,13 @@
 
 .method public static from(Lcom/google/common/base/Function;)Lcom/google/common/cache/CacheLoader;
     .locals 1
-    .annotation runtime Lcom/google/errorprone/annotations/CheckReturnValue;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "function"
+        }
     .end annotation
 
     .annotation system Ldalvik/annotation/Signature;
@@ -99,7 +116,13 @@
 
 .method public static from(Lcom/google/common/base/Supplier;)Lcom/google/common/cache/CacheLoader;
     .locals 1
-    .annotation runtime Lcom/google/errorprone/annotations/CheckReturnValue;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "supplier"
+        }
     .end annotation
 
     .annotation system Ldalvik/annotation/Signature;
@@ -115,7 +138,7 @@
         }
     .end annotation
 
-    .line 156
+    .line 157
     new-instance v0, Lcom/google/common/cache/CacheLoader$SupplierToCacheLoader;
 
     invoke-direct {v0, p0}, Lcom/google/common/cache/CacheLoader$SupplierToCacheLoader;-><init>(Lcom/google/common/base/Supplier;)V
@@ -126,6 +149,15 @@
 
 # virtual methods
 .method public abstract load(Ljava/lang/Object;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)TV;"
@@ -141,6 +173,15 @@
 
 .method public loadAll(Ljava/lang/Iterable;)Ljava/util/Map;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "keys"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -157,7 +198,7 @@
         }
     .end annotation
 
-    .line 129
+    .line 128
     new-instance p0, Lcom/google/common/cache/CacheLoader$UnsupportedLoadingOperationException;
 
     invoke-direct {p0}, Lcom/google/common/cache/CacheLoader$UnsupportedLoadingOperationException;-><init>()V
@@ -167,6 +208,17 @@
 
 .method public reload(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/util/concurrent/ListenableFuture;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "oldValue"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV;)",
@@ -181,13 +233,13 @@
         }
     .end annotation
 
-    .line 99
+    .line 98
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 100
+    .line 99
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 101
+    .line 100
     invoke-virtual {p0, p1}, Lcom/google/common/cache/CacheLoader;->load(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0

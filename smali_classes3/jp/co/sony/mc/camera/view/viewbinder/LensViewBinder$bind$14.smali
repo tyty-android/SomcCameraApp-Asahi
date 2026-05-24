@@ -55,7 +55,7 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$bind$14;->$vm:Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;
 
-    .line 432
+    .line 433
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -66,7 +66,7 @@
 .method public onStartChanged()V
     .locals 0
 
-    .line 435
+    .line 436
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$bind$14;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;->access$getLensUiState(Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;)Ljp/co/sony/mc/camera/view/uistate/LensUiState;
@@ -92,7 +92,7 @@
 .method public onStopChanged()V
     .locals 1
 
-    .line 439
+    .line 440
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$bind$14;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;->access$getLensUiState(Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;)Ljp/co/sony/mc/camera/view/uistate/LensUiState;
@@ -101,7 +101,7 @@
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/uistate/LensUiState;->notifyZoomStop()V
 
-    .line 440
+    .line 441
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$bind$14;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;->access$getCameraStatusModel(Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;)Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
@@ -126,7 +126,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 441
+    .line 442
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent$Context;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent$Context;->getEnv()Ljp/co/sony/mc/camera/idd/value/IddEnvironment;
@@ -134,15 +134,6 @@
     move-result-object p0
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->incrementCountZoomInRecording()V
-
-    .line 442
-    sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;->getEnv()Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->IncrementCountZoomInRecording()V
 
     :cond_0
     return-void

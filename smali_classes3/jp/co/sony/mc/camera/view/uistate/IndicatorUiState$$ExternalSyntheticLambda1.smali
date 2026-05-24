@@ -24,29 +24,13 @@
     .line 0
     check-cast p1, Ljava/lang/Boolean;
 
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result p0
-
-    check-cast p2, Ljava/lang/Boolean;
-
-    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result p1
+    check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     check-cast p3, Ljava/lang/Boolean;
 
-    invoke-virtual {p3}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result p2
-
     check-cast p4, Ljava/lang/Boolean;
 
-    invoke-virtual {p4}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result p3
-
-    invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/uistate/IndicatorUiState;->$r8$lambda$zJpUGc1HIKoxv7KhB92L9BHBsqA(ZZZZ)Z
+    invoke-static {p1, p2, p3, p4}, Ljp/co/sony/mc/camera/view/uistate/IndicatorUiState;->$r8$lambda$opcUoB2JkvVNSrK_EXVAll1Pfk4(Ljava/lang/Boolean;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljava/lang/Boolean;Ljava/lang/Boolean;)Z
 
     move-result p0
 

@@ -23,14 +23,24 @@
 # direct methods
 .method constructor <init>(Ljava/util/concurrent/locks/Condition;Lcom/google/common/util/concurrent/Striped$WeakSafeReadWriteLock;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "delegate",
+            "strongReference"
+        }
+    .end annotation
 
-    .line 369
+    .line 335
     invoke-direct {p0}, Lcom/google/common/util/concurrent/ForwardingCondition;-><init>()V
 
-    .line 370
+    .line 336
     iput-object p1, p0, Lcom/google/common/util/concurrent/Striped$WeakSafeCondition;->delegate:Ljava/util/concurrent/locks/Condition;
 
-    .line 371
+    .line 337
     iput-object p2, p0, Lcom/google/common/util/concurrent/Striped$WeakSafeCondition;->strongReference:Lcom/google/common/util/concurrent/Striped$WeakSafeReadWriteLock;
 
     return-void
@@ -41,7 +51,7 @@
 .method delegate()Ljava/util/concurrent/locks/Condition;
     .locals 0
 
-    .line 376
+    .line 342
     iget-object p0, p0, Lcom/google/common/util/concurrent/Striped$WeakSafeCondition;->delegate:Ljava/util/concurrent/locks/Condition;
 
     return-object p0

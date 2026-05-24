@@ -50,6 +50,14 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/status/eachcamera/SceneRecognition$Value;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "val"
+        }
+    .end annotation
 
     .line 50
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/status/EnumValue;-><init>(Ljava/lang/Enum;)V
@@ -63,7 +71,7 @@
     .locals 0
 
     .line 55
-    const-string p0, "scene_recognition"
+    const-string/jumbo p0, "scene_recognition"
 
     return-object p0
 .end method

@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/cache/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/cache/ForwardingCache$SimpleForwardingCache;
@@ -31,7 +34,7 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 39
+    .line 40
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingObject;-><init>()V
 
     return-void
@@ -49,7 +52,7 @@
         }
     .end annotation
 
-    .line 103
+    .line 109
     invoke-virtual {p0}, Lcom/google/common/cache/ForwardingCache;->delegate()Lcom/google/common/cache/Cache;
 
     move-result-object p0
@@ -64,7 +67,7 @@
 .method public cleanUp()V
     .locals 0
 
-    .line 108
+    .line 114
     invoke-virtual {p0}, Lcom/google/common/cache/ForwardingCache;->delegate()Lcom/google/common/cache/Cache;
 
     move-result-object p0
@@ -97,6 +100,17 @@
 
 .method public get(Ljava/lang/Object;Ljava/util/concurrent/Callable;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "valueLoader"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;",
@@ -111,7 +125,7 @@
         }
     .end annotation
 
-    .line 54
+    .line 55
     invoke-virtual {p0}, Lcom/google/common/cache/ForwardingCache;->delegate()Lcom/google/common/cache/Cache;
 
     move-result-object p0
@@ -125,17 +139,28 @@
 
 .method public getAllPresent(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableMap;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "keys"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/Iterable<",
-            "*>;)",
+            "+",
+            "Ljava/lang/Object;",
+            ">;)",
             "Lcom/google/common/collect/ImmutableMap<",
             "TK;TV;>;"
         }
     .end annotation
 
-    .line 60
+    .line 65
     invoke-virtual {p0}, Lcom/google/common/cache/ForwardingCache;->delegate()Lcom/google/common/cache/Cache;
 
     move-result-object p0
@@ -149,6 +174,15 @@
 
 .method public getIfPresent(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -157,10 +191,10 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
-    .line 48
+    .line 49
     invoke-virtual {p0}, Lcom/google/common/cache/ForwardingCache;->delegate()Lcom/google/common/cache/Cache;
 
     move-result-object p0
@@ -174,8 +208,16 @@
 
 .method public invalidate(Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 77
+    .line 82
     invoke-virtual {p0}, Lcom/google/common/cache/ForwardingCache;->delegate()Lcom/google/common/cache/Cache;
 
     move-result-object p0
@@ -188,7 +230,7 @@
 .method public invalidateAll()V
     .locals 0
 
-    .line 88
+    .line 94
     invoke-virtual {p0}, Lcom/google/common/cache/ForwardingCache;->delegate()Lcom/google/common/cache/Cache;
 
     move-result-object p0
@@ -200,15 +242,26 @@
 
 .method public invalidateAll(Ljava/lang/Iterable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "keys"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/Iterable<",
-            "*>;)V"
+            "+",
+            "Ljava/lang/Object;",
+            ">;)V"
         }
     .end annotation
 
-    .line 83
+    .line 89
     invoke-virtual {p0}, Lcom/google/common/cache/ForwardingCache;->delegate()Lcom/google/common/cache/Cache;
 
     move-result-object p0
@@ -220,13 +273,24 @@
 
 .method public put(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV;)V"
         }
     .end annotation
 
-    .line 66
+    .line 71
     invoke-virtual {p0}, Lcom/google/common/cache/ForwardingCache;->delegate()Lcom/google/common/cache/Cache;
 
     move-result-object p0
@@ -238,6 +302,15 @@
 
 .method public putAll(Ljava/util/Map;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "m"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -246,7 +319,7 @@
         }
     .end annotation
 
-    .line 72
+    .line 77
     invoke-virtual {p0}, Lcom/google/common/cache/ForwardingCache;->delegate()Lcom/google/common/cache/Cache;
 
     move-result-object p0
@@ -259,7 +332,7 @@
 .method public size()J
     .locals 2
 
-    .line 93
+    .line 99
     invoke-virtual {p0}, Lcom/google/common/cache/ForwardingCache;->delegate()Lcom/google/common/cache/Cache;
 
     move-result-object p0
@@ -274,7 +347,7 @@
 .method public stats()Lcom/google/common/cache/CacheStats;
     .locals 0
 
-    .line 98
+    .line 104
     invoke-virtual {p0}, Lcom/google/common/cache/ForwardingCache;->delegate()Lcom/google/common/cache/Cache;
 
     move-result-object p0

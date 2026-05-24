@@ -175,7 +175,7 @@
 
     move-result-object p4
 
-    const p5, 0x7f0c0071
+    const p5, 0x7f0c006c
 
     .line 100
     invoke-virtual {p4, p5, p3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
@@ -316,7 +316,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f0700a4
+    const v3, 0x7f0700e7
 
     .line 121
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -341,7 +341,7 @@
     invoke-virtual {p2, v3, v4, v1, v5}, Landroid/view/View;->setPaddingRelative(IIII)V
 
     :goto_2
-    const v1, 0x7f0904a9
+    const v1, 0x7f0904aa
 
     .line 126
     invoke-virtual {p4, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -354,7 +354,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    const v4, 0x7f090471
+    const v4, 0x7f090464
 
     .line 127
     invoke-virtual {p4, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -365,7 +365,7 @@
 
     check-cast v4, Landroid/widget/TextView;
 
-    const v5, 0x7f0902eb
+    const v5, 0x7f0902f0
 
     .line 128
     invoke-virtual {p4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -404,7 +404,7 @@
 
     move-result-object v1
 
-    const v6, 0x7f090472
+    const v6, 0x7f090466
 
     .line 136
     invoke-virtual {p4, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -457,7 +457,7 @@
     invoke-virtual {v6, v8}, Landroid/widget/TextView;->setVisibility(I)V
 
     :goto_3
-    const v1, 0x7f09047b
+    const v1, 0x7f09047c
 
     .line 146
     invoke-virtual {p4, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -507,12 +507,12 @@
 
     if-eqz v3, :cond_6
 
-    const v3, 0x7f110099
+    const v3, 0x7f1100ad
 
     goto :goto_4
 
     :cond_6
-    const v3, 0x7f110098
+    const v3, 0x7f1100ac
 
     .line 152
     :goto_4
@@ -547,7 +547,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0700a0
+    const v1, 0x7f0700e3
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -569,7 +569,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f0700a7
+    const v3, 0x7f0700ea
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -582,7 +582,7 @@
 
     move-result-object v3
 
-    const v6, 0x7f0705bb
+    const v6, 0x7f070567
 
     invoke-virtual {v3, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -635,7 +635,7 @@
     .line 183
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSettingsAdapter;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f1100ed
+    const v6, 0x7f110101
 
     invoke-virtual {p0, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -682,7 +682,7 @@
 
     move-result-object p0
 
-    const p1, 0x7f0700a5
+    const p1, 0x7f0700e8
 
     invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -850,7 +850,7 @@
 
     move-result-object p2
 
-    const p3, 0x7f0c0070
+    const p3, 0x7f0c006b
 
     const/4 p4, 0x0
 
@@ -863,7 +863,7 @@
     :cond_0
     invoke-static {p3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    const p2, 0x7f0904a9
+    const p2, 0x7f0904aa
 
     invoke-virtual {p3, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -912,7 +912,7 @@
     .line 80
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSettingsAdapter;->mContext:Landroid/content/Context;
 
-    const v0, 0x7f1100ed
+    const v0, 0x7f110101
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -944,7 +944,7 @@
     .line 81
     invoke-static {p3, p0}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setAccessibilityClickable(Landroid/view/View;Z)V
 
-    const p2, 0x7f0900f4
+    const p2, 0x7f0900f6
 
     .line 83
     invoke-virtual {p3, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;

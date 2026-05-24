@@ -84,7 +84,7 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 219
+    .line 223
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$GestureEvent$Swipe;->point:Landroid/graphics/Point;
@@ -203,7 +203,7 @@
 .method public final getDirection()Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;
     .locals 0
 
-    .line 219
+    .line 223
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$GestureEvent$Swipe;->direction:Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;
 
     return-object p0
@@ -212,7 +212,7 @@
 .method public final getPoint()Landroid/graphics/Point;
     .locals 0
 
-    .line 219
+    .line 223
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$GestureEvent$Swipe;->point:Landroid/graphics/Point;
 
     return-object p0

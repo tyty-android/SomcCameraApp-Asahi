@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
@@ -24,17 +24,13 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final onClick(Landroid/view/View;)V
     .locals 0
 
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView$$ExternalSyntheticLambda3;->f$0:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;
 
-    check-cast p1, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingOptionItem;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->$r8$lambda$G0XpmxeTYMOUF6gGekF16DAhtYk(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Landroid/view/View;)V
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->$r8$lambda$H-W4V-07BQJQ2oEJBTAWLpSXLoE(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingOptionItem;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
+    return-void
 .end method

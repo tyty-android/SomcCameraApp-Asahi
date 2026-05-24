@@ -120,22 +120,22 @@
 
     invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 20
+    .line 21
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 22
+    .line 23
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;->rect:Landroid/graphics/Rect;
 
-    .line 24
+    .line 25
     iput-object p2, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;->eyePosition:Landroid/graphics/Point;
 
-    .line 27
+    .line 28
     iput p3, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;->id:I
 
-    .line 33
+    .line 34
     iput p4, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;->trackingId:I
 
-    .line 36
+    .line 37
     iput-object p5, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;->faceRectType:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
 
     return-void
@@ -180,10 +180,10 @@
 
     if-eqz p6, :cond_4
 
-    .line 36
+    .line 37
     sget-object p5, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;->HUMAN_FACE:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
 
-    .line 20
+    .line 21
     :cond_4
     invoke-direct/range {p0 .. p5}, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;-><init>(Landroid/graphics/Rect;Landroid/graphics/Point;IILjp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;)V
 
@@ -403,7 +403,7 @@
 .method public final getEyePosition()Landroid/graphics/Point;
     .locals 0
 
-    .line 24
+    .line 25
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;->eyePosition:Landroid/graphics/Point;
 
     return-object p0
@@ -412,7 +412,7 @@
 .method public final getFaceRectType()Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
     .locals 0
 
-    .line 36
+    .line 37
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;->faceRectType:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
 
     return-object p0
@@ -421,7 +421,7 @@
 .method public final getId()I
     .locals 0
 
-    .line 27
+    .line 28
     iget p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;->id:I
 
     return p0
@@ -430,7 +430,7 @@
 .method public final getRect()Landroid/graphics/Rect;
     .locals 0
 
-    .line 22
+    .line 23
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;->rect:Landroid/graphics/Rect;
 
     return-object p0
@@ -439,7 +439,7 @@
 .method public final getTrackingId()I
     .locals 0
 
-    .line 33
+    .line 34
     iget p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;->trackingId:I
 
     return p0
@@ -516,7 +516,7 @@
 .method public final setId(I)V
     .locals 0
 
-    .line 27
+    .line 28
     iput p1, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;->id:I
 
     return-void

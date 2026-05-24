@@ -393,6 +393,21 @@
 
 .method private constructor <init>(Ljava/lang/String;IIZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "value",
+            "isShooting"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IZ)V"
@@ -413,6 +428,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/research/parameters/Event$CaptureOperation;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 136
     const-class v0, Ljp/co/sony/mc/camera/research/parameters/Event$CaptureOperation;
@@ -481,6 +504,14 @@
 
 .method public updateOperation(Ljp/co/sony/mc/camera/research/parameters/Event$UserOperation;)Ljp/co/sony/mc/camera/research/parameters/Event$UserOperation;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "currentOperation"
+        }
+    .end annotation
 
     .line 202
     invoke-interface {p1}, Ljp/co/sony/mc/camera/research/parameters/Event$UserOperation;->getValue()I

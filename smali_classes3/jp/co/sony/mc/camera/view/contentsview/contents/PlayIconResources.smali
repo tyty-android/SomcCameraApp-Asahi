@@ -15,6 +15,14 @@
 
 .method public static get(Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentsType;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     .line 20
     sget-object v0, Ljp/co/sony/mc/camera/view/contentsview/contents/PlayIconResources$1;->$SwitchMap$jp$co$sony$mc$camera$view$contentsview$contents$Content$ContentsType:[I
@@ -34,7 +42,7 @@
     return p0
 
     :cond_0
-    const p0, 0x7f0802f4
+    const p0, 0x7f080362
 
     return p0
 .end method

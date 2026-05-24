@@ -28,8 +28,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/DescendingMultiset;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 119
+    .line 130
     iput-object p1, p0, Lcom/google/common/collect/DescendingMultiset$1EntrySetImpl;->this$0:Lcom/google/common/collect/DescendingMultiset;
 
     invoke-direct {p0}, Lcom/google/common/collect/Multisets$EntrySet;-><init>()V
@@ -50,7 +58,7 @@
         }
     .end annotation
 
-    .line 127
+    .line 138
     iget-object p0, p0, Lcom/google/common/collect/DescendingMultiset$1EntrySetImpl;->this$0:Lcom/google/common/collect/DescendingMultiset;
 
     invoke-virtual {p0}, Lcom/google/common/collect/DescendingMultiset;->entryIterator()Ljava/util/Iterator;
@@ -70,7 +78,7 @@
         }
     .end annotation
 
-    .line 122
+    .line 133
     iget-object p0, p0, Lcom/google/common/collect/DescendingMultiset$1EntrySetImpl;->this$0:Lcom/google/common/collect/DescendingMultiset;
 
     return-object p0
@@ -79,7 +87,7 @@
 .method public size()I
     .locals 0
 
-    .line 132
+    .line 143
     iget-object p0, p0, Lcom/google/common/collect/DescendingMultiset$1EntrySetImpl;->this$0:Lcom/google/common/collect/DescendingMultiset;
 
     invoke-virtual {p0}, Lcom/google/common/collect/DescendingMultiset;->forwardMultiset()Lcom/google/common/collect/SortedMultiset;

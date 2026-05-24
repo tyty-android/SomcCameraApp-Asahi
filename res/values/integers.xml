@@ -5,6 +5,7 @@
     <integer name="app_bar_elevation_anim_duration">150</integer>
     <integer name="basic_mode_indicator_default_max_lines">2</integer>
     <integer name="basic_mode_indicator_port_large_size_max_lines">1</integer>
+    <integer name="basic_mode_ss_focus_text_size">16</integer>
     <integer name="bottom_sheet_slide_duration">150</integer>
     <integer name="calibration_grid_line_fraction">2</integer>
     <integer name="cancel_button_image_alpha">127</integer>
@@ -13,10 +14,13 @@
     <integer name="design_tab_indicator_anim_duration_ms">300</integer>
     <integer name="focus_indicator_animation_fadeout_duration">70</integer>
     <integer name="focus_indicator_animation_focusin_duration">70</integer>
+    <integer name="google_play_services_version">12451000</integer>
     <integer name="hide_password_duration">320</integer>
     <integer name="hint_text_message_default_max_lines_land_large_size">8</integer>
     <integer name="hint_text_message_default_max_lines_normal_size">5</integer>
     <integer name="hint_text_message_default_max_lines_port_large_size">4</integer>
+    <integer name="hint_text_message_default_max_lines_pro_land">4</integer>
+    <integer name="hint_text_message_default_max_lines_pro_port">5</integer>
     <integer name="hint_text_message_text_size">14</integer>
     <integer name="m3_badge_max_number">999</integer>
     <integer name="m3_btn_anim_delay_ms">100</integer>
@@ -57,6 +61,7 @@
     <integer name="mode_custom_column_count">2</integer>
     <integer name="mode_custom_max_row_count_portrait">2</integer>
     <integer name="mode_custom_more_mode_max_row_count_landscape">2</integer>
+    <integer name="mode_label_text_size">16</integer>
     <integer name="mtrl_badge_max_character_count">4</integer>
     <integer name="mtrl_btn_anim_delay_ms">100</integer>
     <integer name="mtrl_btn_anim_duration_ms">100</integer>
@@ -80,15 +85,23 @@
     <integer name="mtrl_view_visible">0</integer>
     <integer name="preferences_detail_pane_weight">1</integer>
     <integer name="preferences_header_pane_weight">0</integer>
+    <integer name="pro_mode_camera_status_bar_text_size">15</integer>
+    <integer name="pro_mode_disp_text_size">16</integer>
     <integer name="pro_mode_fn_dial_picker_display_column_count">3</integer>
+    <integer name="pro_mode_fn_text_size">16</integer>
     <integer name="pro_mode_ss_iso_dial_picker_display_column_count">3</integer>
+    <integer name="pro_mode_top_pane_menu_text_size">16</integer>
     <integer name="pro_mode_wb_dial_picker_display_column_count">3</integer>
     <integer name="scene_fade_out_delay">2000</integer>
     <integer name="scene_fade_out_duration">1000</integer>
     <integer name="show_password_duration">200</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
+    <integer name="system_status_bar_text_size">12</integer>
     <integer name="thermal_hint_text_message_max_text_size_pro_mode">14</integer>
     <integer name="thermal_hint_text_message_min_text_size_pro_mode">10</integer>
     <integer name="thermal_hint_text_message_text_size_basic_mode">14</integer>
+    <integer name="thermal_notice_text_size">14</integer>
+    <integer name="top_pane_video_format_text_size">14</integer>
     <integer name="viewfinder_gesture_detector_time_slop_millis">200</integer>
+    <integer name="zoom_label_text_size">14</integer>
 </resources>

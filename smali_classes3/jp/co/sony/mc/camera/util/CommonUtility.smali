@@ -34,6 +34,14 @@
 
 .method private static getApplicationType(Landroid/content/Context;)Ljp/co/sony/mc/camera/util/CommonUtility$ApplicationType;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 163
     const-string v0, "Can\'t get packeage info. assume user app."
@@ -148,6 +156,18 @@
 
 .method public static getDefaultGallery(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;)Ljp/co/sony/mc/camera/util/CommonUtility$DefaultGallerySetting;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "uri",
+            "mimetype"
+        }
+    .end annotation
 
     .line 104
     new-instance v0, Landroid/content/Intent;
@@ -262,6 +282,14 @@
 
 .method public static getFileExtension(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "filename"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -351,6 +379,16 @@
 
 .method public static isActivityAvailable(Landroid/content/Context;Landroid/content/Intent;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "intent"
+        }
+    .end annotation
 
     .line 62
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -405,6 +443,14 @@
 
 .method public static isCoreCameraApp(Landroid/content/Context;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 141
     const-string v0, "jp.co.sony.mc.camera"
@@ -431,6 +477,14 @@
 
 .method public static isCtaPackageInstalled(Landroid/content/Context;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 231
     sget-object v0, Ljp/co/sony/mc/camera/debug/DebugParameterUtils;->INSTANCE:Ljp/co/sony/mc/camera/debug/DebugParameterUtils;
@@ -478,6 +532,14 @@
 
 .method public static isEnduranceModeAvailable(Landroid/content/Context;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 81
     new-instance v0, Landroid/content/Intent;
@@ -545,6 +607,14 @@
 
 .method public static isEnoughMemory(F)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ratio"
+        }
+    .end annotation
 
     .line 255
     invoke-static {}, Ljp/co/sony/mc/camera/util/CommonUtility;->getUsedMemory()J
@@ -582,6 +652,16 @@
 
 .method public static isEventContainedInView(Landroid/view/View;Landroid/graphics/Point;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "targetView",
+            "touchPosition"
+        }
+    .end annotation
 
     .line 199
     new-instance v0, Landroid/graphics/Rect;
@@ -614,6 +694,14 @@
 
 .method public static isGoogleLensAvailable(Landroid/content/Context;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 286
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -643,6 +731,14 @@
 
 .method public static isSystemApp(Landroid/content/Context;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 133
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CommonUtility;->getApplicationType(Landroid/content/Context;)Ljp/co/sony/mc/camera/util/CommonUtility$ApplicationType;
@@ -669,6 +765,14 @@
 
 .method public static shouldStorageForceInternal(Landroid/content/Context;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 154
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CommonUtility;->isSystemApp(Landroid/content/Context;)Z

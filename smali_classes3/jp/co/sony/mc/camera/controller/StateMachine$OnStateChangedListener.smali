@@ -16,4 +16,14 @@
 
 # virtual methods
 .method public varargs abstract onStateChanged(Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;[Ljava/lang/Object;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "currentState",
+            "objects"
+        }
+    .end annotation
 .end method

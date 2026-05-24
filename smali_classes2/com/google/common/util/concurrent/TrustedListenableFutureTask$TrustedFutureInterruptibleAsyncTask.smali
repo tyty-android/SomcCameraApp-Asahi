@@ -38,6 +38,17 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/util/concurrent/TrustedListenableFutureTask;Lcom/google/common/util/concurrent/AsyncCallable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "callable"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -46,12 +57,12 @@
         }
     .end annotation
 
-    .line 148
+    .line 155
     iput-object p1, p0, Lcom/google/common/util/concurrent/TrustedListenableFutureTask$TrustedFutureInterruptibleAsyncTask;->this$0:Lcom/google/common/util/concurrent/TrustedListenableFutureTask;
 
     invoke-direct {p0}, Lcom/google/common/util/concurrent/InterruptibleTask;-><init>()V
 
-    .line 149
+    .line 156
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -65,44 +76,67 @@
 
 
 # virtual methods
-.method afterRanInterruptibly(Lcom/google/common/util/concurrent/ListenableFuture;Ljava/lang/Throwable;)V
+.method afterRanInterruptiblyFailure(Ljava/lang/Throwable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "error"
+        }
+    .end annotation
+
+    .line 180
+    iget-object p0, p0, Lcom/google/common/util/concurrent/TrustedListenableFutureTask$TrustedFutureInterruptibleAsyncTask;->this$0:Lcom/google/common/util/concurrent/TrustedListenableFutureTask;
+
+    invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/TrustedListenableFutureTask;->setException(Ljava/lang/Throwable;)Z
+
+    return-void
+.end method
+
+.method afterRanInterruptiblySuccess(Lcom/google/common/util/concurrent/ListenableFuture;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/google/common/util/concurrent/ListenableFuture<",
-            "TV;>;",
-            "Ljava/lang/Throwable;",
-            ")V"
+            "TV;>;)V"
         }
     .end annotation
 
-    if-nez p2, :cond_0
-
-    .line 169
+    .line 175
     iget-object p0, p0, Lcom/google/common/util/concurrent/TrustedListenableFutureTask$TrustedFutureInterruptibleAsyncTask;->this$0:Lcom/google/common/util/concurrent/TrustedListenableFutureTask;
 
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/TrustedListenableFutureTask;->setFuture(Lcom/google/common/util/concurrent/ListenableFuture;)Z
 
-    goto :goto_0
-
-    .line 171
-    :cond_0
-    iget-object p0, p0, Lcom/google/common/util/concurrent/TrustedListenableFutureTask$TrustedFutureInterruptibleAsyncTask;->this$0:Lcom/google/common/util/concurrent/TrustedListenableFutureTask;
-
-    invoke-virtual {p0, p2}, Lcom/google/common/util/concurrent/TrustedListenableFutureTask;->setException(Ljava/lang/Throwable;)Z
-
-    :goto_0
     return-void
 .end method
 
-.method bridge synthetic afterRanInterruptibly(Ljava/lang/Object;Ljava/lang/Throwable;)V
+.method bridge synthetic afterRanInterruptiblySuccess(Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 
-    .line 143
+    .line 150
     check-cast p1, Lcom/google/common/util/concurrent/ListenableFuture;
 
-    invoke-virtual {p0, p1, p2}, Lcom/google/common/util/concurrent/TrustedListenableFutureTask$TrustedFutureInterruptibleAsyncTask;->afterRanInterruptibly(Lcom/google/common/util/concurrent/ListenableFuture;Ljava/lang/Throwable;)V
+    invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/TrustedListenableFutureTask$TrustedFutureInterruptibleAsyncTask;->afterRanInterruptiblySuccess(Lcom/google/common/util/concurrent/ListenableFuture;)V
 
     return-void
 .end method
@@ -110,7 +144,7 @@
 .method final isDone()Z
     .locals 0
 
-    .line 154
+    .line 161
     iget-object p0, p0, Lcom/google/common/util/concurrent/TrustedListenableFutureTask$TrustedFutureInterruptibleAsyncTask;->this$0:Lcom/google/common/util/concurrent/TrustedListenableFutureTask;
 
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/TrustedListenableFutureTask;->isDone()Z
@@ -136,10 +170,10 @@
         }
     .end annotation
 
-    .line 159
+    .line 166
     iget-object v0, p0, Lcom/google/common/util/concurrent/TrustedListenableFutureTask$TrustedFutureInterruptibleAsyncTask;->callable:Lcom/google/common/util/concurrent/AsyncCallable;
 
-    .line 160
+    .line 167
     invoke-interface {v0}, Lcom/google/common/util/concurrent/AsyncCallable;->call()Lcom/google/common/util/concurrent/ListenableFuture;
 
     move-result-object v0
@@ -148,7 +182,7 @@
 
     iget-object p0, p0, Lcom/google/common/util/concurrent/TrustedListenableFutureTask$TrustedFutureInterruptibleAsyncTask;->callable:Lcom/google/common/util/concurrent/AsyncCallable;
 
-    .line 159
+    .line 166
     invoke-static {v0, v1, p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -166,7 +200,7 @@
         }
     .end annotation
 
-    .line 143
+    .line 150
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/TrustedListenableFutureTask$TrustedFutureInterruptibleAsyncTask;->runInterruptibly()Lcom/google/common/util/concurrent/ListenableFuture;
 
     move-result-object p0
@@ -177,10 +211,10 @@
 .method toPendingString()Ljava/lang/String;
     .locals 0
 
-    .line 177
+    .line 185
     iget-object p0, p0, Lcom/google/common/util/concurrent/TrustedListenableFutureTask$TrustedFutureInterruptibleAsyncTask;->callable:Lcom/google/common/util/concurrent/AsyncCallable;
 
-    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-interface {p0}, Lcom/google/common/util/concurrent/AsyncCallable;->toString()Ljava/lang/String;
 
     move-result-object p0
 

@@ -41,13 +41,27 @@
 # direct methods
 .method constructor <init>(Ljava/lang/Iterable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "val$iterable"
+        }
+    .end annotation
 
-    .line 391
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .line 403
     iput-object p1, p0, Lcom/google/common/collect/Iterators$2;->val$iterable:Ljava/lang/Iterable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 392
+    .line 404
     invoke-static {}, Lcom/google/common/collect/Iterators;->emptyModifiableIterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -62,7 +76,7 @@
 .method public hasNext()Z
     .locals 1
 
-    .line 405
+    .line 417
     iget-object v0, p0, Lcom/google/common/collect/Iterators$2;->iterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -100,13 +114,16 @@
 
 .method public next()Ljava/lang/Object;
     .locals 1
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TT;"
         }
     .end annotation
 
-    .line 410
+    .line 423
     iget-object v0, p0, Lcom/google/common/collect/Iterators$2;->iterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -115,7 +132,7 @@
 
     if-nez v0, :cond_1
 
-    .line 411
+    .line 424
     iget-object v0, p0, Lcom/google/common/collect/Iterators$2;->val$iterable:Ljava/lang/Iterable;
 
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -124,7 +141,7 @@
 
     iput-object v0, p0, Lcom/google/common/collect/Iterators$2;->iterator:Ljava/util/Iterator;
 
-    .line 412
+    .line 425
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
@@ -133,7 +150,7 @@
 
     goto :goto_0
 
-    .line 413
+    .line 426
     :cond_0
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -141,7 +158,7 @@
 
     throw p0
 
-    .line 416
+    .line 429
     :cond_1
     :goto_0
     iget-object p0, p0, Lcom/google/common/collect/Iterators$2;->iterator:Ljava/util/Iterator;
@@ -156,7 +173,7 @@
 .method public remove()V
     .locals 0
 
-    .line 421
+    .line 434
     iget-object p0, p0, Lcom/google/common/collect/Iterators$2;->iterator:Ljava/util/Iterator;
 
     invoke-interface {p0}, Ljava/util/Iterator;->remove()V

@@ -58,7 +58,7 @@
 
     const/4 v0, 0x0
 
-    .line 353
+    .line 502
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void

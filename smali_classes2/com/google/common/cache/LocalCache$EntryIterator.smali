@@ -23,11 +23,25 @@
 .end annotation
 
 
+# instance fields
+.field final synthetic this$0:Lcom/google/common/cache/LocalCache;
+
+
 # direct methods
 .method constructor <init>(Lcom/google/common/cache/LocalCache;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 4355
+    .line 4417
+    iput-object p1, p0, Lcom/google/common/cache/LocalCache$EntryIterator;->this$0:Lcom/google/common/cache/LocalCache;
+
     invoke-direct {p0, p1}, Lcom/google/common/cache/LocalCache$HashIterator;-><init>(Lcom/google/common/cache/LocalCache;)V
 
     return-void
@@ -38,7 +52,7 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .locals 0
 
-    .line 4355
+    .line 4417
     invoke-virtual {p0}, Lcom/google/common/cache/LocalCache$EntryIterator;->next()Ljava/util/Map$Entry;
 
     move-result-object p0
@@ -56,7 +70,7 @@
         }
     .end annotation
 
-    .line 4359
+    .line 4421
     invoke-virtual {p0}, Lcom/google/common/cache/LocalCache$EntryIterator;->nextEntry()Lcom/google/common/cache/LocalCache$WriteThroughEntry;
 
     move-result-object p0

@@ -39,7 +39,7 @@
 .method private static synthetic $values()[Lcom/google/common/cache/CacheBuilder$NullListener;
     .locals 1
 
-    .line 199
+    .line 253
     sget-object v0, Lcom/google/common/cache/CacheBuilder$NullListener;->INSTANCE:Lcom/google/common/cache/CacheBuilder$NullListener;
 
     filled-new-array {v0}, [Lcom/google/common/cache/CacheBuilder$NullListener;
@@ -52,7 +52,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 200
+    .line 254
     new-instance v0, Lcom/google/common/cache/CacheBuilder$NullListener;
 
     const-string v1, "INSTANCE"
@@ -63,7 +63,7 @@
 
     sput-object v0, Lcom/google/common/cache/CacheBuilder$NullListener;->INSTANCE:Lcom/google/common/cache/CacheBuilder$NullListener;
 
-    .line 199
+    .line 253
     invoke-static {}, Lcom/google/common/cache/CacheBuilder$NullListener;->$values()[Lcom/google/common/cache/CacheBuilder$NullListener;
 
     move-result-object v0
@@ -75,13 +75,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 199
+    .line 253
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -89,8 +100,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/cache/CacheBuilder$NullListener;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 199
+    .line 253
     const-class v0, Lcom/google/common/cache/CacheBuilder$NullListener;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -105,7 +124,7 @@
 .method public static values()[Lcom/google/common/cache/CacheBuilder$NullListener;
     .locals 1
 
-    .line 199
+    .line 253
     sget-object v0, Lcom/google/common/cache/CacheBuilder$NullListener;->$VALUES:[Lcom/google/common/cache/CacheBuilder$NullListener;
 
     invoke-virtual {v0}, [Lcom/google/common/cache/CacheBuilder$NullListener;->clone()Ljava/lang/Object;
@@ -121,6 +140,15 @@
 # virtual methods
 .method public onRemoval(Lcom/google/common/cache/RemovalNotification;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "notification"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

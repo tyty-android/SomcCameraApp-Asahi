@@ -45,38 +45,64 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/recorder/RecordingProfile;Landroid/graphics/Rect;Ljava/lang/String;Ljava/lang/String;JJZILandroid/media/AudioDeviceInfo;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "profile",
+            "videoRect",
+            "mimeType",
+            "fileExtension",
+            "maxFileSizeBytes",
+            "maxDurationMills",
+            "isSlowMotion",
+            "requestId",
+            "audioDeviceInfo",
+            "recordingOrientation"
+        }
+    .end annotation
 
-    .line 71
+    .line 70
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 72
+    .line 71
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam;->profile:Ljp/co/sony/mc/camera/recorder/RecordingProfile;
 
-    .line 73
+    .line 72
     iput-object p2, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam;->videoRect:Landroid/graphics/Rect;
 
-    .line 74
+    .line 73
     iput-object p3, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam;->mimeType:Ljava/lang/String;
 
-    .line 75
+    .line 74
     iput-object p4, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam;->fileExtension:Ljava/lang/String;
 
-    .line 76
+    .line 75
     iput-wide p5, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam;->maxFileSizeBytes:J
 
-    .line 77
+    .line 76
     iput-wide p7, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam;->maxDurationMills:J
 
-    .line 78
+    .line 77
     iput-boolean p9, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam;->isSlowMotion:Z
 
-    .line 79
+    .line 78
     iput p10, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam;->requestId:I
 
-    .line 80
+    .line 79
     iput-object p11, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam;->audioDeviceInfo:Landroid/media/AudioDeviceInfo;
 
-    .line 81
+    .line 80
     iput p12, p0, Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam;->recordingOrientation:I
 
     return-void

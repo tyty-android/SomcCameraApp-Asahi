@@ -21,8 +21,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
-    .line 720
+    .line 835
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter$1;->this$1:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
 
     invoke-direct {p0}, Landroid/view/View$AccessibilityDelegate;-><init>()V
@@ -34,8 +42,20 @@
 # virtual methods
 .method public onRequestSendAccessibilityEvent(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "host",
+            "child",
+            "event"
+        }
+    .end annotation
 
-    .line 724
+    .line 839
     invoke-virtual {p3}, Landroid/view/accessibility/AccessibilityEvent;->getEventType()I
 
     move-result v0
@@ -44,7 +64,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 725
+    .line 840
     invoke-virtual {p1}, Landroid/view/ViewGroup;->isAccessibilityFocused()Z
 
     move-result v0
@@ -55,7 +75,7 @@
 
     return p0
 
-    .line 729
+    .line 844
     :cond_0
     invoke-super {p0, p1, p2, p3}, Landroid/view/View$AccessibilityDelegate;->onRequestSendAccessibilityEvent(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
 
@@ -66,12 +86,22 @@
 
 .method public sendAccessibilityEvent(Landroid/view/View;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "host",
+            "eventType"
+        }
+    .end annotation
 
     const/4 v0, 0x4
 
     if-ne p2, v0, :cond_0
 
-    .line 735
+    .line 850
     invoke-virtual {p1}, Landroid/view/View;->isAccessibilityFocused()Z
 
     move-result v0
@@ -80,7 +110,7 @@
 
     goto :goto_0
 
-    .line 738
+    .line 853
     :cond_0
     invoke-super {p0, p1, p2}, Landroid/view/View$AccessibilityDelegate;->sendAccessibilityEvent(Landroid/view/View;I)V
 

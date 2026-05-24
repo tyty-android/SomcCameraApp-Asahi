@@ -3,6 +3,11 @@
 .source "AbstractByteHasher.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/hash/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # instance fields
 .field private final scratch:Ljava/nio/ByteBuffer;
 
@@ -34,8 +39,16 @@
 
 .method private update(I)Lcom/google/common/hash/Hasher;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bytes"
+        }
+    .end annotation
 
-    .line 68
+    .line 69
     :try_start_0
     iget-object v0, p0, Lcom/google/common/hash/AbstractByteHasher;->scratch:Ljava/nio/ByteBuffer;
 
@@ -49,7 +62,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 70
+    .line 71
     iget-object p1, p0, Lcom/google/common/hash/AbstractByteHasher;->scratch:Ljava/nio/ByteBuffer;
 
     invoke-static {p1}, Lcom/google/common/hash/Java8Compatibility;->clear(Ljava/nio/Buffer;)V
@@ -63,7 +76,7 @@
 
     invoke-static {p0}, Lcom/google/common/hash/Java8Compatibility;->clear(Ljava/nio/Buffer;)V
 
-    .line 71
+    .line 72
     throw p1
 .end method
 
@@ -71,8 +84,16 @@
 # virtual methods
 .method public putByte(B)Lcom/google/common/hash/Hasher;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "b"
+        }
+    .end annotation
 
-    .line 77
+    .line 79
     invoke-virtual {p0, p1}, Lcom/google/common/hash/AbstractByteHasher;->update(B)V
 
     return-object p0
@@ -80,6 +101,14 @@
 
 .method public bridge synthetic putByte(B)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "b"
+        }
+    .end annotation
 
     .line 34
     invoke-virtual {p0, p1}, Lcom/google/common/hash/AbstractByteHasher;->putByte(B)Lcom/google/common/hash/Hasher;
@@ -91,8 +120,16 @@
 
 .method public putBytes(Ljava/nio/ByteBuffer;)Lcom/google/common/hash/Hasher;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bytes"
+        }
+    .end annotation
 
-    .line 97
+    .line 102
     invoke-virtual {p0, p1}, Lcom/google/common/hash/AbstractByteHasher;->update(Ljava/nio/ByteBuffer;)V
 
     return-object p0
@@ -100,11 +137,19 @@
 
 .method public putBytes([B)Lcom/google/common/hash/Hasher;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bytes"
+        }
+    .end annotation
 
-    .line 83
+    .line 86
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 84
+    .line 87
     invoke-virtual {p0, p1}, Lcom/google/common/hash/AbstractByteHasher;->update([B)V
 
     return-object p0
@@ -112,15 +157,27 @@
 
 .method public putBytes([BII)Lcom/google/common/hash/Hasher;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bytes",
+            "off",
+            "len"
+        }
+    .end annotation
 
     add-int v0, p2, p3
 
-    .line 90
+    .line 94
     array-length v1, p1
 
     invoke-static {p2, v0, v1}, Lcom/google/common/base/Preconditions;->checkPositionIndexes(III)V
 
-    .line 91
+    .line 95
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/common/hash/AbstractByteHasher;->update([BII)V
 
     return-object p0
@@ -128,6 +185,14 @@
 
 .method public bridge synthetic putBytes(Ljava/nio/ByteBuffer;)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "bytes"
+        }
+    .end annotation
 
     .line 34
     invoke-virtual {p0, p1}, Lcom/google/common/hash/AbstractByteHasher;->putBytes(Ljava/nio/ByteBuffer;)Lcom/google/common/hash/Hasher;
@@ -139,6 +204,14 @@
 
 .method public bridge synthetic putBytes([B)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "bytes"
+        }
+    .end annotation
 
     .line 34
     invoke-virtual {p0, p1}, Lcom/google/common/hash/AbstractByteHasher;->putBytes([B)Lcom/google/common/hash/Hasher;
@@ -150,6 +223,18 @@
 
 .method public bridge synthetic putBytes([BII)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x1000
+        }
+        names = {
+            "bytes",
+            "off",
+            "len"
+        }
+    .end annotation
 
     .line 34
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/common/hash/AbstractByteHasher;->putBytes([BII)Lcom/google/common/hash/Hasher;
@@ -161,15 +246,23 @@
 
 .method public putChar(C)Lcom/google/common/hash/Hasher;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
 
-    .line 121
+    .line 130
     iget-object v0, p0, Lcom/google/common/hash/AbstractByteHasher;->scratch:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, p1}, Ljava/nio/ByteBuffer;->putChar(C)Ljava/nio/ByteBuffer;
 
     const/4 p1, 0x2
 
-    .line 122
+    .line 131
     invoke-direct {p0, p1}, Lcom/google/common/hash/AbstractByteHasher;->update(I)Lcom/google/common/hash/Hasher;
 
     move-result-object p0
@@ -179,6 +272,14 @@
 
 .method public bridge synthetic putChar(C)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "c"
+        }
+    .end annotation
 
     .line 34
     invoke-virtual {p0, p1}, Lcom/google/common/hash/AbstractByteHasher;->putChar(C)Lcom/google/common/hash/Hasher;
@@ -190,15 +291,23 @@
 
 .method public putInt(I)Lcom/google/common/hash/Hasher;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "i"
+        }
+    .end annotation
 
-    .line 109
+    .line 116
     iget-object v0, p0, Lcom/google/common/hash/AbstractByteHasher;->scratch:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, p1}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
 
     const/4 p1, 0x4
 
-    .line 110
+    .line 117
     invoke-direct {p0, p1}, Lcom/google/common/hash/AbstractByteHasher;->update(I)Lcom/google/common/hash/Hasher;
 
     move-result-object p0
@@ -208,6 +317,14 @@
 
 .method public bridge synthetic putInt(I)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "i"
+        }
+    .end annotation
 
     .line 34
     invoke-virtual {p0, p1}, Lcom/google/common/hash/AbstractByteHasher;->putInt(I)Lcom/google/common/hash/Hasher;
@@ -219,15 +336,23 @@
 
 .method public putLong(J)Lcom/google/common/hash/Hasher;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "l"
+        }
+    .end annotation
 
-    .line 115
+    .line 123
     iget-object v0, p0, Lcom/google/common/hash/AbstractByteHasher;->scratch:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, p1, p2}, Ljava/nio/ByteBuffer;->putLong(J)Ljava/nio/ByteBuffer;
 
     const/16 p1, 0x8
 
-    .line 116
+    .line 124
     invoke-direct {p0, p1}, Lcom/google/common/hash/AbstractByteHasher;->update(I)Lcom/google/common/hash/Hasher;
 
     move-result-object p0
@@ -237,6 +362,14 @@
 
 .method public bridge synthetic putLong(J)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "l"
+        }
+    .end annotation
 
     .line 34
     invoke-virtual {p0, p1, p2}, Lcom/google/common/hash/AbstractByteHasher;->putLong(J)Lcom/google/common/hash/Hasher;
@@ -248,15 +381,23 @@
 
 .method public putShort(S)Lcom/google/common/hash/Hasher;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "s"
+        }
+    .end annotation
 
-    .line 103
+    .line 109
     iget-object v0, p0, Lcom/google/common/hash/AbstractByteHasher;->scratch:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, p1}, Ljava/nio/ByteBuffer;->putShort(S)Ljava/nio/ByteBuffer;
 
     const/4 p1, 0x2
 
-    .line 104
+    .line 110
     invoke-direct {p0, p1}, Lcom/google/common/hash/AbstractByteHasher;->update(I)Lcom/google/common/hash/Hasher;
 
     move-result-object p0
@@ -266,6 +407,14 @@
 
 .method public bridge synthetic putShort(S)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "s"
+        }
+    .end annotation
 
     .line 34
     invoke-virtual {p0, p1}, Lcom/google/common/hash/AbstractByteHasher;->putShort(S)Lcom/google/common/hash/Hasher;
@@ -276,10 +425,26 @@
 .end method
 
 .method protected abstract update(B)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "b"
+        }
+    .end annotation
 .end method
 
 .method protected update(Ljava/nio/ByteBuffer;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "b"
+        }
+    .end annotation
 
     .line 55
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->hasArray()Z
@@ -345,6 +510,14 @@
 
 .method protected update([B)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "b"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -358,6 +531,18 @@
 
 .method protected update([BII)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "b",
+            "off",
+            "len"
+        }
+    .end annotation
 
     move v0, p2
 

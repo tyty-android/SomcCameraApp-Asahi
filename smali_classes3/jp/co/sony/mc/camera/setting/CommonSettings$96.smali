@@ -3,7 +3,7 @@
 .source "CommonSettings.java"
 
 # interfaces
-.implements Ljp/co/sony/mc/camera/setting/SettingsBase$SetCommand;
+.implements Ljp/co/sony/mc/camera/setting/SettingsBase$GetOptionsCommand;
 
 
 # annotations
@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1077
+    .line 986
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,8 +29,19 @@
 
 
 # virtual methods
-.method public setValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljava/util/Map;)Z
+.method public getOptions(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -38,23 +49,16 @@
             ">(",
             "Ljp/co/sony/mc/camera/setting/SettingsBase;",
             "Ljp/co/sony/mc/camera/setting/SettingKey$Key<",
-            "TT;>;TT;",
-            "Ljava/util/Map<",
-            "Ljp/co/sony/mc/camera/setting/CameraProSettingChangedListener;",
-            "Landroid/os/Handler;",
-            ">;)Z"
+            "TT;>;)[TT;"
         }
     .end annotation
 
-    .line 1081
-    check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
+    .line 990
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;->values()[Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
 
-    .line 1082
-    check-cast p3, Ljava/lang/String;
+    move-result-object p0
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$msetYoutubeAccount(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljava/lang/String;)Z
+    check-cast p0, [Ljava/lang/Object;
 
-    move-result p0
-
-    return p0
+    return-object p0
 .end method

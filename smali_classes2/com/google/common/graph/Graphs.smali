@@ -1,15 +1,19 @@
 .class public final Lcom/google/common/graph/Graphs;
-.super Ljava/lang/Object;
+.super Lcom/google/common/graph/GraphsBridgeMethods;
 .source "Graphs.java"
 
 
 # annotations
+.annotation runtime Lcom/google/common/graph/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lcom/google/common/graph/Graphs$NodeAndRemainingSuccessors;,
         Lcom/google/common/graph/Graphs$NodeVisitState;,
-        Lcom/google/common/graph/Graphs$TransposedNetwork;,
+        Lcom/google/common/graph/Graphs$TransposedGraph;,
         Lcom/google/common/graph/Graphs$TransposedValueGraph;,
-        Lcom/google/common/graph/Graphs$TransposedGraph;
+        Lcom/google/common/graph/Graphs$TransposedNetwork;
     }
 .end annotation
 
@@ -18,8 +22,8 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 47
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 51
+    invoke-direct {p0}, Lcom/google/common/graph/GraphsBridgeMethods;-><init>()V
 
     return-void
 .end method
@@ -27,9 +31,22 @@
 .method private static canTraverseWithoutReusingEdge(Lcom/google/common/graph/Graph;Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 0
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "graph",
+            "nextNode",
+            "previousNode"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -41,7 +58,7 @@
         }
     .end annotation
 
-    .line 132
+    .line 169
     invoke-interface {p0}, Lcom/google/common/graph/Graph;->isDirected()Z
 
     move-result p0
@@ -70,6 +87,14 @@
 
 .method static checkNonNegative(I)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     if-ltz p0, :cond_0
 
@@ -80,7 +105,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 584
+    .line 628
     :goto_0
     const-string v1, "Not true that %s is non-negative."
 
@@ -91,6 +116,14 @@
 
 .method static checkNonNegative(J)J
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     const-wide/16 v0, 0x0
 
@@ -105,7 +138,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 590
+    .line 634
     :goto_0
     const-string v1, "Not true that %s is non-negative."
 
@@ -116,6 +149,14 @@
 
 .method static checkPositive(I)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     if-lez p0, :cond_0
 
@@ -126,7 +167,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 596
+    .line 640
     :goto_0
     const-string v1, "Not true that %s is positive."
 
@@ -137,6 +178,14 @@
 
 .method static checkPositive(J)J
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     const-wide/16 v0, 0x0
 
@@ -151,7 +200,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 602
+    .line 646
     :goto_0
     const-string v1, "Not true that %s is positive."
 
@@ -162,6 +211,15 @@
 
 .method public static copyOf(Lcom/google/common/graph/Graph;)Lcom/google/common/graph/MutableGraph;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "graph"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -174,7 +232,7 @@
         }
     .end annotation
 
-    .line 541
+    .line 582
     invoke-static {p0}, Lcom/google/common/graph/GraphBuilder;->from(Lcom/google/common/graph/Graph;)Lcom/google/common/graph/GraphBuilder;
 
     move-result-object v0
@@ -195,7 +253,7 @@
 
     move-result-object v0
 
-    .line 542
+    .line 583
     invoke-interface {p0}, Lcom/google/common/graph/Graph;->nodes()Ljava/util/Set;
 
     move-result-object v1
@@ -215,12 +273,12 @@
 
     move-result-object v2
 
-    .line 543
+    .line 584
     invoke-interface {v0, v2}, Lcom/google/common/graph/MutableGraph;->addNode(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 545
+    .line 586
     :cond_0
     invoke-interface {p0}, Lcom/google/common/graph/Graph;->edges()Ljava/util/Set;
 
@@ -243,7 +301,7 @@
 
     check-cast v1, Lcom/google/common/graph/EndpointPair;
 
-    .line 546
+    .line 587
     invoke-virtual {v1}, Lcom/google/common/graph/EndpointPair;->nodeU()Ljava/lang/Object;
 
     move-result-object v2
@@ -262,6 +320,15 @@
 
 .method public static copyOf(Lcom/google/common/graph/Network;)Lcom/google/common/graph/MutableNetwork;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "network"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -276,12 +343,12 @@
         }
     .end annotation
 
-    .line 568
+    .line 612
     invoke-static {p0}, Lcom/google/common/graph/NetworkBuilder;->from(Lcom/google/common/graph/Network;)Lcom/google/common/graph/NetworkBuilder;
 
     move-result-object v0
 
-    .line 569
+    .line 613
     invoke-interface {p0}, Lcom/google/common/graph/Network;->nodes()Ljava/util/Set;
 
     move-result-object v1
@@ -294,7 +361,7 @@
 
     move-result-object v0
 
-    .line 570
+    .line 614
     invoke-interface {p0}, Lcom/google/common/graph/Network;->edges()Ljava/util/Set;
 
     move-result-object v1
@@ -307,12 +374,12 @@
 
     move-result-object v0
 
-    .line 571
+    .line 615
     invoke-virtual {v0}, Lcom/google/common/graph/NetworkBuilder;->build()Lcom/google/common/graph/MutableNetwork;
 
     move-result-object v0
 
-    .line 572
+    .line 616
     invoke-interface {p0}, Lcom/google/common/graph/Network;->nodes()Ljava/util/Set;
 
     move-result-object v1
@@ -332,12 +399,12 @@
 
     move-result-object v2
 
-    .line 573
+    .line 617
     invoke-interface {v0, v2}, Lcom/google/common/graph/MutableNetwork;->addNode(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 575
+    .line 619
     :cond_0
     invoke-interface {p0}, Lcom/google/common/graph/Network;->edges()Ljava/util/Set;
 
@@ -358,12 +425,12 @@
 
     move-result-object v2
 
-    .line 576
+    .line 620
     invoke-interface {p0, v2}, Lcom/google/common/graph/Network;->incidentNodes(Ljava/lang/Object;)Lcom/google/common/graph/EndpointPair;
 
     move-result-object v3
 
-    .line 577
+    .line 621
     invoke-virtual {v3}, Lcom/google/common/graph/EndpointPair;->nodeU()Ljava/lang/Object;
 
     move-result-object v4
@@ -382,6 +449,15 @@
 
 .method public static copyOf(Lcom/google/common/graph/ValueGraph;)Lcom/google/common/graph/MutableValueGraph;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "graph"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -396,7 +472,7 @@
         }
     .end annotation
 
-    .line 554
+    .line 595
     invoke-static {p0}, Lcom/google/common/graph/ValueGraphBuilder;->from(Lcom/google/common/graph/ValueGraph;)Lcom/google/common/graph/ValueGraphBuilder;
 
     move-result-object v0
@@ -417,7 +493,7 @@
 
     move-result-object v0
 
-    .line 555
+    .line 596
     invoke-interface {p0}, Lcom/google/common/graph/ValueGraph;->nodes()Ljava/util/Set;
 
     move-result-object v1
@@ -437,12 +513,12 @@
 
     move-result-object v2
 
-    .line 556
+    .line 597
     invoke-interface {v0, v2}, Lcom/google/common/graph/MutableValueGraph;->addNode(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 558
+    .line 599
     :cond_0
     invoke-interface {p0}, Lcom/google/common/graph/ValueGraph;->edges()Ljava/util/Set;
 
@@ -465,15 +541,17 @@
 
     check-cast v2, Lcom/google/common/graph/EndpointPair;
 
-    .line 560
+    .line 602
     invoke-virtual {v2}, Lcom/google/common/graph/EndpointPair;->nodeU()Ljava/lang/Object;
 
     move-result-object v3
 
+    .line 603
     invoke-virtual {v2}, Lcom/google/common/graph/EndpointPair;->nodeV()Ljava/lang/Object;
 
     move-result-object v4
 
+    .line 604
     invoke-virtual {v2}, Lcom/google/common/graph/EndpointPair;->nodeU()Ljava/lang/Object;
 
     move-result-object v5
@@ -488,7 +566,11 @@
 
     move-result-object v2
 
-    .line 559
+    invoke-static {v2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    .line 601
     invoke-interface {v0, v3, v4, v2}, Lcom/google/common/graph/MutableValueGraph;->putEdgeValue(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_1
@@ -498,7 +580,16 @@
 .end method
 
 .method public static hasCycle(Lcom/google/common/graph/Graph;)Z
-    .locals 6
+    .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "graph"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -509,7 +600,7 @@
         }
     .end annotation
 
-    .line 59
+    .line 63
     invoke-interface {p0}, Lcom/google/common/graph/Graph;->edges()Ljava/util/Set;
 
     move-result-object v0
@@ -524,7 +615,7 @@
 
     return v1
 
-    .line 63
+    .line 67
     :cond_0
     invoke-interface {p0}, Lcom/google/common/graph/Graph;->isDirected()Z
 
@@ -546,7 +637,7 @@
 
     return v3
 
-    .line 68
+    .line 72
     :cond_1
     invoke-interface {p0}, Lcom/google/common/graph/Graph;->nodes()Ljava/util/Set;
 
@@ -560,7 +651,7 @@
 
     move-result-object v0
 
-    .line 69
+    .line 73
     invoke-interface {p0}, Lcom/google/common/graph/Graph;->nodes()Ljava/util/Set;
 
     move-result-object v2
@@ -580,10 +671,8 @@
 
     move-result-object v4
 
-    const/4 v5, 0x0
-
-    .line 70
-    invoke-static {p0, v0, v4, v5}, Lcom/google/common/graph/Graphs;->subgraphHasCycle(Lcom/google/common/graph/Graph;Ljava/util/Map;Ljava/lang/Object;Ljava/lang/Object;)Z
+    .line 74
+    invoke-static {p0, v0, v4}, Lcom/google/common/graph/Graphs;->subgraphHasCycle(Lcom/google/common/graph/Graph;Ljava/util/Map;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -597,6 +686,15 @@
 
 .method public static hasCycle(Lcom/google/common/graph/Network;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "network"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -605,21 +703,21 @@
         }
     .end annotation
 
-    .line 87
+    .line 91
     invoke-interface {p0}, Lcom/google/common/graph/Network;->isDirected()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 88
+    .line 92
     invoke-interface {p0}, Lcom/google/common/graph/Network;->allowsParallelEdges()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 89
+    .line 93
     invoke-interface {p0}, Lcom/google/common/graph/Network;->edges()Ljava/util/Set;
 
     move-result-object v0
@@ -646,7 +744,7 @@
 
     return p0
 
-    .line 92
+    .line 96
     :cond_0
     invoke-interface {p0}, Lcom/google/common/graph/Network;->asGraph()Lcom/google/common/graph/Graph;
 
@@ -661,6 +759,17 @@
 
 .method public static inducedSubgraph(Lcom/google/common/graph/Graph;Ljava/lang/Iterable;)Lcom/google/common/graph/MutableGraph;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "graph",
+            "nodes"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -675,12 +784,12 @@
         }
     .end annotation
 
-    .line 467
+    .line 505
     instance-of v0, p1, Ljava/util/Collection;
 
     if-eqz v0, :cond_0
 
-    .line 468
+    .line 506
     invoke-static {p0}, Lcom/google/common/graph/GraphBuilder;->from(Lcom/google/common/graph/Graph;)Lcom/google/common/graph/GraphBuilder;
 
     move-result-object v0
@@ -703,7 +812,7 @@
 
     goto :goto_0
 
-    .line 469
+    .line 507
     :cond_0
     invoke-static {p0}, Lcom/google/common/graph/GraphBuilder;->from(Lcom/google/common/graph/Graph;)Lcom/google/common/graph/GraphBuilder;
 
@@ -713,7 +822,7 @@
 
     move-result-object v0
 
-    .line 470
+    .line 508
     :goto_0
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -730,12 +839,12 @@
 
     move-result-object v1
 
-    .line 471
+    .line 509
     invoke-interface {v0, v1}, Lcom/google/common/graph/MutableGraph;->addNode(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 473
+    .line 511
     :cond_1
     invoke-interface {v0}, Lcom/google/common/graph/MutableGraph;->nodes()Ljava/util/Set;
 
@@ -756,7 +865,7 @@
 
     move-result-object v1
 
-    .line 474
+    .line 512
     invoke-interface {p0, v1}, Lcom/google/common/graph/Graph;->successors(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object v2
@@ -777,7 +886,7 @@
 
     move-result-object v3
 
-    .line 475
+    .line 513
     invoke-interface {v0}, Lcom/google/common/graph/MutableGraph;->nodes()Ljava/util/Set;
 
     move-result-object v4
@@ -788,7 +897,7 @@
 
     if-eqz v4, :cond_3
 
-    .line 476
+    .line 514
     invoke-interface {v0, v1, v3}, Lcom/google/common/graph/MutableGraph;->putEdge(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     goto :goto_2
@@ -799,6 +908,17 @@
 
 .method public static inducedSubgraph(Lcom/google/common/graph/Network;Ljava/lang/Iterable;)Lcom/google/common/graph/MutableNetwork;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "network",
+            "nodes"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -815,12 +935,12 @@
         }
     .end annotation
 
-    .line 522
+    .line 563
     instance-of v0, p1, Ljava/util/Collection;
 
     if-eqz v0, :cond_0
 
-    .line 523
+    .line 564
     invoke-static {p0}, Lcom/google/common/graph/NetworkBuilder;->from(Lcom/google/common/graph/Network;)Lcom/google/common/graph/NetworkBuilder;
 
     move-result-object v0
@@ -843,7 +963,7 @@
 
     goto :goto_0
 
-    .line 524
+    .line 565
     :cond_0
     invoke-static {p0}, Lcom/google/common/graph/NetworkBuilder;->from(Lcom/google/common/graph/Network;)Lcom/google/common/graph/NetworkBuilder;
 
@@ -853,7 +973,7 @@
 
     move-result-object v0
 
-    .line 525
+    .line 566
     :goto_0
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -870,12 +990,12 @@
 
     move-result-object v1
 
-    .line 526
+    .line 567
     invoke-interface {v0, v1}, Lcom/google/common/graph/MutableNetwork;->addNode(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 528
+    .line 569
     :cond_1
     invoke-interface {v0}, Lcom/google/common/graph/MutableNetwork;->nodes()Ljava/util/Set;
 
@@ -896,7 +1016,7 @@
 
     move-result-object v1
 
-    .line 529
+    .line 570
     invoke-interface {p0, v1}, Lcom/google/common/graph/Network;->outEdges(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object v2
@@ -917,7 +1037,7 @@
 
     move-result-object v3
 
-    .line 530
+    .line 571
     invoke-interface {p0, v3}, Lcom/google/common/graph/Network;->incidentNodes(Ljava/lang/Object;)Lcom/google/common/graph/EndpointPair;
 
     move-result-object v4
@@ -926,7 +1046,7 @@
 
     move-result-object v4
 
-    .line 531
+    .line 572
     invoke-interface {v0}, Lcom/google/common/graph/MutableNetwork;->nodes()Ljava/util/Set;
 
     move-result-object v5
@@ -937,7 +1057,7 @@
 
     if-eqz v5, :cond_3
 
-    .line 532
+    .line 573
     invoke-interface {v0, v1, v4, v3}, Lcom/google/common/graph/MutableNetwork;->addEdge(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
 
     goto :goto_2
@@ -948,6 +1068,17 @@
 
 .method public static inducedSubgraph(Lcom/google/common/graph/ValueGraph;Ljava/lang/Iterable;)Lcom/google/common/graph/MutableValueGraph;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "graph",
+            "nodes"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -964,12 +1095,12 @@
         }
     .end annotation
 
-    .line 494
+    .line 532
     instance-of v0, p1, Ljava/util/Collection;
 
     if-eqz v0, :cond_0
 
-    .line 495
+    .line 533
     invoke-static {p0}, Lcom/google/common/graph/ValueGraphBuilder;->from(Lcom/google/common/graph/ValueGraph;)Lcom/google/common/graph/ValueGraphBuilder;
 
     move-result-object v0
@@ -992,7 +1123,7 @@
 
     goto :goto_0
 
-    .line 496
+    .line 534
     :cond_0
     invoke-static {p0}, Lcom/google/common/graph/ValueGraphBuilder;->from(Lcom/google/common/graph/ValueGraph;)Lcom/google/common/graph/ValueGraphBuilder;
 
@@ -1002,7 +1133,7 @@
 
     move-result-object v0
 
-    .line 497
+    .line 535
     :goto_0
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -1019,12 +1150,12 @@
 
     move-result-object v1
 
-    .line 498
+    .line 536
     invoke-interface {v0, v1}, Lcom/google/common/graph/MutableValueGraph;->addNode(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 500
+    .line 538
     :cond_1
     invoke-interface {v0}, Lcom/google/common/graph/MutableValueGraph;->nodes()Ljava/util/Set;
 
@@ -1045,7 +1176,7 @@
 
     move-result-object v1
 
-    .line 501
+    .line 539
     invoke-interface {p0, v1}, Lcom/google/common/graph/ValueGraph;->successors(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object v2
@@ -1066,7 +1197,7 @@
 
     move-result-object v3
 
-    .line 502
+    .line 540
     invoke-interface {v0}, Lcom/google/common/graph/MutableValueGraph;->nodes()Ljava/util/Set;
 
     move-result-object v4
@@ -1079,12 +1210,16 @@
 
     const/4 v4, 0x0
 
-    .line 504
+    .line 545
     invoke-interface {p0, v1, v3, v4}, Lcom/google/common/graph/ValueGraph;->edgeValueOrDefault(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 503
+    invoke-static {v4}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    .line 542
     invoke-interface {v0, v1, v3, v4}, Lcom/google/common/graph/MutableValueGraph;->putEdgeValue(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_2
@@ -1093,8 +1228,19 @@
     return-object v0
 .end method
 
-.method public static reachableNodes(Lcom/google/common/graph/Graph;Ljava/lang/Object;)Ljava/util/Set;
+.method public static reachableNodes(Lcom/google/common/graph/Graph;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSet;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "graph",
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -1102,12 +1248,12 @@
             ">(",
             "Lcom/google/common/graph/Graph<",
             "TN;>;TN;)",
-            "Ljava/util/Set<",
+            "Lcom/google/common/collect/ImmutableSet<",
             "TN;>;"
         }
     .end annotation
 
-    .line 195
+    .line 236
     invoke-interface {p0}, Lcom/google/common/graph/Graph;->nodes()Ljava/util/Set;
 
     move-result-object v0
@@ -1120,7 +1266,7 @@
 
     invoke-static {v0, v1, p1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;)V
 
-    .line 196
+    .line 237
     invoke-static {p0}, Lcom/google/common/graph/Traverser;->forGraph(Lcom/google/common/graph/SuccessorsFunction;)Lcom/google/common/graph/Traverser;
 
     move-result-object p0
@@ -1136,12 +1282,21 @@
     return-object p0
 .end method
 
-.method private static subgraphHasCycle(Lcom/google/common/graph/Graph;Ljava/util/Map;Ljava/lang/Object;Ljava/lang/Object;)Z
+.method private static subgraphHasCycle(Lcom/google/common/graph/Graph;Ljava/util/Map;Ljava/lang/Object;)Z
     .locals 5
-    .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "graph",
+            "visitedNodes",
+            "startNode"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -1152,89 +1307,171 @@
             "Ljava/util/Map<",
             "Ljava/lang/Object;",
             "Lcom/google/common/graph/Graphs$NodeVisitState;",
-            ">;TN;TN;)Z"
+            ">;TN;)Z"
         }
     .end annotation
 
-    .line 105
-    invoke-interface {p1, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/google/common/graph/Graphs$NodeVisitState;
-
     .line 106
-    sget-object v1, Lcom/google/common/graph/Graphs$NodeVisitState;->COMPLETE:Lcom/google/common/graph/Graphs$NodeVisitState;
+    new-instance v0, Ljava/util/ArrayDeque;
 
-    const/4 v2, 0x0
+    invoke-direct {v0}, Ljava/util/ArrayDeque;-><init>()V
 
-    if-ne v0, v1, :cond_0
+    .line 107
+    new-instance v1, Lcom/google/common/graph/Graphs$NodeAndRemainingSuccessors;
 
-    return v2
+    invoke-direct {v1, p2}, Lcom/google/common/graph/Graphs$NodeAndRemainingSuccessors;-><init>(Ljava/lang/Object;)V
+
+    invoke-interface {v0, v1}, Ljava/util/Deque;->addLast(Ljava/lang/Object;)V
 
     .line 109
-    :cond_0
-    sget-object v1, Lcom/google/common/graph/Graphs$NodeVisitState;->PENDING:Lcom/google/common/graph/Graphs$NodeVisitState;
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Deque;->isEmpty()Z
 
-    const/4 v3, 0x1
+    move-result p2
 
-    if-ne v0, v1, :cond_1
+    if-nez p2, :cond_5
 
-    return v3
+    .line 111
+    invoke-interface {v0}, Ljava/util/Deque;->removeLast()Ljava/lang/Object;
 
-    .line 113
-    :cond_1
-    sget-object v0, Lcom/google/common/graph/Graphs$NodeVisitState;->PENDING:Lcom/google/common/graph/Graphs$NodeVisitState;
+    move-result-object p2
 
-    invoke-interface {p1, p2, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    check-cast p2, Lcom/google/common/graph/Graphs$NodeAndRemainingSuccessors;
 
-    .line 114
-    invoke-interface {p0, p2}, Lcom/google/common/graph/Graph;->successors(Ljava/lang/Object;)Ljava/util/Set;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :cond_2
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_3
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    .line 112
+    invoke-interface {v0}, Ljava/util/Deque;->peekLast()Ljava/lang/Object;
 
     move-result-object v1
 
+    check-cast v1, Lcom/google/common/graph/Graphs$NodeAndRemainingSuccessors;
+
+    .line 113
+    invoke-interface {v0, p2}, Ljava/util/Deque;->addLast(Ljava/lang/Object;)V
+
     .line 115
-    invoke-static {p0, v1, p3}, Lcom/google/common/graph/Graphs;->canTraverseWithoutReusingEdge(Lcom/google/common/graph/Graph;Ljava/lang/Object;Ljava/lang/Object;)Z
+    iget-object v2, p2, Lcom/google/common/graph/Graphs$NodeAndRemainingSuccessors;->node:Ljava/lang/Object;
 
-    move-result v4
+    if-nez v1, :cond_0
 
-    if-eqz v4, :cond_2
+    const/4 v1, 0x0
+
+    goto :goto_1
 
     .line 116
-    invoke-static {p0, p1, v1, p2}, Lcom/google/common/graph/Graphs;->subgraphHasCycle(Lcom/google/common/graph/Graph;Ljava/util/Map;Ljava/lang/Object;Ljava/lang/Object;)Z
+    :cond_0
+    iget-object v1, v1, Lcom/google/common/graph/Graphs$NodeAndRemainingSuccessors;->node:Ljava/lang/Object;
+
+    .line 117
+    :goto_1
+    iget-object v3, p2, Lcom/google/common/graph/Graphs$NodeAndRemainingSuccessors;->remainingSuccessors:Ljava/util/Queue;
+
+    if-nez v3, :cond_3
+
+    .line 118
+    invoke-interface {p1, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lcom/google/common/graph/Graphs$NodeVisitState;
+
+    .line 119
+    sget-object v4, Lcom/google/common/graph/Graphs$NodeVisitState;->COMPLETE:Lcom/google/common/graph/Graphs$NodeVisitState;
+
+    if-ne v3, v4, :cond_1
+
+    .line 120
+    invoke-interface {v0}, Ljava/util/Deque;->removeLast()Ljava/lang/Object;
+
+    goto :goto_0
+
+    .line 123
+    :cond_1
+    sget-object v4, Lcom/google/common/graph/Graphs$NodeVisitState;->PENDING:Lcom/google/common/graph/Graphs$NodeVisitState;
+
+    if-ne v3, v4, :cond_2
+
+    const/4 p0, 0x1
+
+    return p0
+
+    .line 127
+    :cond_2
+    sget-object v3, Lcom/google/common/graph/Graphs$NodeVisitState;->PENDING:Lcom/google/common/graph/Graphs$NodeVisitState;
+
+    invoke-interface {p1, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 128
+    new-instance v3, Ljava/util/ArrayDeque;
+
+    invoke-interface {p0, v2}, Lcom/google/common/graph/Graph;->successors(Ljava/lang/Object;)Ljava/util/Set;
+
+    move-result-object v4
+
+    invoke-direct {v3, v4}, Ljava/util/ArrayDeque;-><init>(Ljava/util/Collection;)V
+
+    iput-object v3, p2, Lcom/google/common/graph/Graphs$NodeAndRemainingSuccessors;->remainingSuccessors:Ljava/util/Queue;
+
+    .line 131
+    :cond_3
+    iget-object v3, p2, Lcom/google/common/graph/Graphs$NodeAndRemainingSuccessors;->remainingSuccessors:Ljava/util/Queue;
+
+    invoke-interface {v3}, Ljava/util/Queue;->isEmpty()Z
+
+    move-result v3
+
+    if-nez v3, :cond_4
+
+    .line 132
+    iget-object p2, p2, Lcom/google/common/graph/Graphs$NodeAndRemainingSuccessors;->remainingSuccessors:Ljava/util/Queue;
+
+    invoke-interface {p2}, Ljava/util/Queue;->remove()Ljava/lang/Object;
+
+    move-result-object p2
+
+    .line 133
+    invoke-static {p0, p2, v1}, Lcom/google/common/graph/Graphs;->canTraverseWithoutReusingEdge(Lcom/google/common/graph/Graph;Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_2
+    if-eqz v1, :cond_4
 
-    return v3
+    .line 134
+    new-instance v1, Lcom/google/common/graph/Graphs$NodeAndRemainingSuccessors;
 
-    .line 120
-    :cond_3
-    sget-object p0, Lcom/google/common/graph/Graphs$NodeVisitState;->COMPLETE:Lcom/google/common/graph/Graphs$NodeVisitState;
+    invoke-direct {v1, p2}, Lcom/google/common/graph/Graphs$NodeAndRemainingSuccessors;-><init>(Ljava/lang/Object;)V
 
-    invoke-interface {p1, p2, p0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, v1}, Ljava/util/Deque;->addLast(Ljava/lang/Object;)V
 
-    return v2
+    goto :goto_0
+
+    .line 139
+    :cond_4
+    invoke-interface {v0}, Ljava/util/Deque;->removeLast()Ljava/lang/Object;
+
+    .line 140
+    sget-object p2, Lcom/google/common/graph/Graphs$NodeVisitState;->COMPLETE:Lcom/google/common/graph/Graphs$NodeVisitState;
+
+    invoke-interface {p1, v2, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_0
+
+    :cond_5
+    const/4 p0, 0x0
+
+    return p0
 .end method
 
-.method public static transitiveClosure(Lcom/google/common/graph/Graph;)Lcom/google/common/graph/Graph;
+.method public static transitiveClosure(Lcom/google/common/graph/Graph;)Lcom/google/common/graph/ImmutableGraph;
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "graph"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -1242,12 +1479,12 @@
             ">(",
             "Lcom/google/common/graph/Graph<",
             "TN;>;)",
-            "Lcom/google/common/graph/Graph<",
+            "Lcom/google/common/graph/ImmutableGraph<",
             "TN;>;"
         }
     .end annotation
 
-    .line 151
+    .line 191
     invoke-static {p0}, Lcom/google/common/graph/GraphBuilder;->from(Lcom/google/common/graph/Graph;)Lcom/google/common/graph/GraphBuilder;
 
     move-result-object v0
@@ -1258,18 +1495,18 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/google/common/graph/GraphBuilder;->build()Lcom/google/common/graph/MutableGraph;
+    invoke-virtual {v0}, Lcom/google/common/graph/GraphBuilder;->immutable()Lcom/google/common/graph/ImmutableGraph$Builder;
 
     move-result-object v0
 
-    .line 155
+    .line 195
     invoke-interface {p0}, Lcom/google/common/graph/Graph;->isDirected()Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
-    .line 157
+    .line 197
     invoke-interface {p0}, Lcom/google/common/graph/Graph;->nodes()Ljava/util/Set;
 
     move-result-object v1
@@ -1289,12 +1526,12 @@
 
     move-result-object v2
 
-    .line 158
-    invoke-static {p0, v2}, Lcom/google/common/graph/Graphs;->reachableNodes(Lcom/google/common/graph/Graph;Ljava/lang/Object;)Ljava/util/Set;
+    .line 198
+    invoke-static {p0, v2}, Lcom/google/common/graph/Graphs;->reachableNodes(Lcom/google/common/graph/Graph;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSet;
 
     move-result-object v3
 
-    invoke-interface {v3}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v3}, Lcom/google/common/collect/ImmutableSet;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object v3
 
@@ -1309,18 +1546,18 @@
 
     move-result-object v4
 
-    .line 159
-    invoke-interface {v0, v2, v4}, Lcom/google/common/graph/MutableGraph;->putEdge(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .line 199
+    invoke-virtual {v0, v2, v4}, Lcom/google/common/graph/ImmutableGraph$Builder;->putEdge(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/graph/ImmutableGraph$Builder;
 
     goto :goto_0
 
-    .line 165
+    .line 205
     :cond_1
     new-instance v2, Ljava/util/HashSet;
 
     invoke-direct {v2}, Ljava/util/HashSet;-><init>()V
 
-    .line 166
+    .line 206
     invoke-interface {p0}, Lcom/google/common/graph/Graph;->nodes()Ljava/util/Set;
 
     move-result-object v3
@@ -1340,22 +1577,22 @@
 
     move-result-object v4
 
-    .line 167
+    .line 207
     invoke-interface {v2, v4}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
     move-result v5
 
     if-nez v5, :cond_2
 
-    .line 168
-    invoke-static {p0, v4}, Lcom/google/common/graph/Graphs;->reachableNodes(Lcom/google/common/graph/Graph;Ljava/lang/Object;)Ljava/util/Set;
+    .line 208
+    invoke-static {p0, v4}, Lcom/google/common/graph/Graphs;->reachableNodes(Lcom/google/common/graph/Graph;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSet;
 
     move-result-object v4
 
-    .line 169
+    .line 209
     invoke-interface {v2, v4}, Ljava/util/Set;->addAll(Ljava/util/Collection;)Z
 
-    .line 171
+    .line 211
     invoke-interface {v4}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
     move-result-object v5
@@ -1375,7 +1612,7 @@
 
     add-int/lit8 v8, v6, 0x1
 
-    .line 172
+    .line 212
     invoke-static {v4, v6}, Lcom/google/common/collect/Iterables;->limit(Ljava/lang/Iterable;I)Ljava/lang/Iterable;
 
     move-result-object v6
@@ -1395,8 +1632,8 @@
 
     move-result-object v9
 
-    .line 173
-    invoke-interface {v0, v7, v9}, Lcom/google/common/graph/MutableGraph;->putEdge(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .line 213
+    invoke-virtual {v0, v7, v9}, Lcom/google/common/graph/ImmutableGraph$Builder;->putEdge(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/graph/ImmutableGraph$Builder;
 
     goto :goto_2
 
@@ -1405,12 +1642,26 @@
 
     goto :goto_1
 
+    .line 220
     :cond_4
-    return-object v0
+    invoke-virtual {v0}, Lcom/google/common/graph/ImmutableGraph$Builder;->build()Lcom/google/common/graph/ImmutableGraph;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
 .method static transpose(Lcom/google/common/graph/EndpointPair;)Lcom/google/common/graph/EndpointPair;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "endpoints"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -1423,14 +1674,14 @@
         }
     .end annotation
 
-    .line 252
+    .line 293
     invoke-virtual {p0}, Lcom/google/common/graph/EndpointPair;->isOrdered()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 253
+    .line 294
     invoke-virtual {p0}, Lcom/google/common/graph/EndpointPair;->target()Ljava/lang/Object;
 
     move-result-object v0
@@ -1449,6 +1700,15 @@
 
 .method public static transpose(Lcom/google/common/graph/Graph;)Lcom/google/common/graph/Graph;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "graph"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -1461,7 +1721,7 @@
         }
     .end annotation
 
-    .line 208
+    .line 249
     invoke-interface {p0}, Lcom/google/common/graph/Graph;->isDirected()Z
 
     move-result v0
@@ -1470,13 +1730,13 @@
 
     return-object p0
 
-    .line 212
+    .line 253
     :cond_0
     instance-of v0, p0, Lcom/google/common/graph/Graphs$TransposedGraph;
 
     if-eqz v0, :cond_1
 
-    .line 213
+    .line 254
     check-cast p0, Lcom/google/common/graph/Graphs$TransposedGraph;
 
     invoke-static {p0}, Lcom/google/common/graph/Graphs$TransposedGraph;->access$000(Lcom/google/common/graph/Graphs$TransposedGraph;)Lcom/google/common/graph/Graph;
@@ -1485,7 +1745,7 @@
 
     return-object p0
 
-    .line 216
+    .line 257
     :cond_1
     new-instance v0, Lcom/google/common/graph/Graphs$TransposedGraph;
 
@@ -1496,6 +1756,15 @@
 
 .method public static transpose(Lcom/google/common/graph/Network;)Lcom/google/common/graph/Network;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "network"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -1510,7 +1779,7 @@
         }
     .end annotation
 
-    .line 240
+    .line 281
     invoke-interface {p0}, Lcom/google/common/graph/Network;->isDirected()Z
 
     move-result v0
@@ -1519,13 +1788,13 @@
 
     return-object p0
 
-    .line 244
+    .line 285
     :cond_0
     instance-of v0, p0, Lcom/google/common/graph/Graphs$TransposedNetwork;
 
     if-eqz v0, :cond_1
 
-    .line 245
+    .line 286
     check-cast p0, Lcom/google/common/graph/Graphs$TransposedNetwork;
 
     invoke-static {p0}, Lcom/google/common/graph/Graphs$TransposedNetwork;->access$200(Lcom/google/common/graph/Graphs$TransposedNetwork;)Lcom/google/common/graph/Network;
@@ -1534,7 +1803,7 @@
 
     return-object p0
 
-    .line 248
+    .line 289
     :cond_1
     new-instance v0, Lcom/google/common/graph/Graphs$TransposedNetwork;
 
@@ -1545,6 +1814,15 @@
 
 .method public static transpose(Lcom/google/common/graph/ValueGraph;)Lcom/google/common/graph/ValueGraph;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "graph"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -1559,7 +1837,7 @@
         }
     .end annotation
 
-    .line 224
+    .line 265
     invoke-interface {p0}, Lcom/google/common/graph/ValueGraph;->isDirected()Z
 
     move-result v0
@@ -1568,13 +1846,13 @@
 
     return-object p0
 
-    .line 228
+    .line 269
     :cond_0
     instance-of v0, p0, Lcom/google/common/graph/Graphs$TransposedValueGraph;
 
     if-eqz v0, :cond_1
 
-    .line 229
+    .line 270
     check-cast p0, Lcom/google/common/graph/Graphs$TransposedValueGraph;
 
     invoke-static {p0}, Lcom/google/common/graph/Graphs$TransposedValueGraph;->access$100(Lcom/google/common/graph/Graphs$TransposedValueGraph;)Lcom/google/common/graph/ValueGraph;
@@ -1583,7 +1861,7 @@
 
     return-object p0
 
-    .line 232
+    .line 273
     :cond_1
     new-instance v0, Lcom/google/common/graph/Graphs$TransposedValueGraph;
 

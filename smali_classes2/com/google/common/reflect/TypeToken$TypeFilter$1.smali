@@ -17,10 +17,20 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 803
+    .line 812
     invoke-direct {p0, p1, p2, v0}, Lcom/google/common/reflect/TypeToken$TypeFilter;-><init>(Ljava/lang/String;ILcom/google/common/reflect/TypeToken$1;)V
 
     return-void
@@ -30,6 +40,15 @@
 # virtual methods
 .method public apply(Lcom/google/common/reflect/TypeToken;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -38,7 +57,7 @@
         }
     .end annotation
 
-    .line 806
+    .line 815
     invoke-static {p1}, Lcom/google/common/reflect/TypeToken;->access$500(Lcom/google/common/reflect/TypeToken;)Ljava/lang/reflect/Type;
 
     move-result-object p0
@@ -47,7 +66,7 @@
 
     if-nez p0, :cond_0
 
-    .line 807
+    .line 816
     invoke-static {p1}, Lcom/google/common/reflect/TypeToken;->access$500(Lcom/google/common/reflect/TypeToken;)Ljava/lang/reflect/Type;
 
     move-result-object p0
@@ -69,8 +88,16 @@
 
 .method public bridge synthetic apply(Ljava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
-    .line 803
+    .line 812
     check-cast p1, Lcom/google/common/reflect/TypeToken;
 
     invoke-virtual {p0, p1}, Lcom/google/common/reflect/TypeToken$TypeFilter$1;->apply(Lcom/google/common/reflect/TypeToken;)Z

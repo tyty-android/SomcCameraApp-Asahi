@@ -134,7 +134,7 @@
 .method protected getLayoutResId()I
     .locals 0
 
-    const p0, 0x7f0c006e
+    const p0, 0x7f0c0069
 
     return p0
 .end method
@@ -162,7 +162,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0904d9
+    const v1, 0x7f0904d7
 
     .line 34
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -175,7 +175,7 @@
 
     check-cast v1, Landroid/widget/ListView;
 
-    const v2, 0x7f090161
+    const v2, 0x7f090167
 
     .line 35
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -188,14 +188,14 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    const v4, 0x7f0900f4
+    const v4, 0x7f0900f6
 
     .line 36
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v4
 
-    const v5, 0x7f090254
+    const v5, 0x7f090260
 
     .line 37
     invoke-virtual {p1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -208,14 +208,14 @@
 
     check-cast v5, Landroid/widget/ImageView;
 
-    const v6, 0x7f0904ae
+    const v6, 0x7f0904af
 
     .line 38
     invoke-virtual {p1, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v6
 
-    const v7, 0x7f0904a9
+    const v7, 0x7f0904aa
 
     .line 39
     invoke-virtual {p1, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -226,7 +226,7 @@
 
     check-cast v7, Landroid/widget/TextView;
 
-    const v3, 0x7f0900a3
+    const v3, 0x7f0900ab
 
     .line 40
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;

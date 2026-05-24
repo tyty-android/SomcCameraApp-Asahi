@@ -38,11 +38,13 @@
 
     move-object v3, p4
 
-    check-cast v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    check-cast v3, Ljava/lang/Boolean;
 
-    move-object v4, p5
+    check-cast p5, Ljava/lang/Boolean;
 
-    check-cast v4, Ljava/lang/Boolean;
+    invoke-virtual {p5}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v4
 
     check-cast p6, Ljava/lang/Boolean;
 
@@ -50,13 +52,11 @@
 
     move-result v5
 
-    check-cast p7, Ljava/lang/Boolean;
+    move-object v6, p7
 
-    invoke-virtual {p7}, Ljava/lang/Boolean;->booleanValue()Z
+    check-cast v6, Ljava/lang/Boolean;
 
-    move-result v6
-
-    invoke-static/range {v0 .. v6}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->$r8$lambda$hBd56w4sZw6wQTahfYQ3vKquhOY(ZLjp/co/sony/mc/camera/configuration/parameters/DriveMode;Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljava/lang/Boolean;ZZ)Z
+    invoke-static/range {v0 .. v6}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->$r8$lambda$Un-78dT-LWtUvKkbheEaafAkRnI(ZLjp/co/sony/mc/camera/configuration/parameters/DriveMode;Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;Ljava/lang/Boolean;ZZLjava/lang/Boolean;)Z
 
     move-result p0
 

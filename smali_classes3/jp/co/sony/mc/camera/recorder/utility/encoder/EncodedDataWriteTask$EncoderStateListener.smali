@@ -19,4 +19,12 @@
 .end method
 
 .method public abstract onEncoderFormatChanged(Landroid/media/MediaFormat;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "format"
+        }
+    .end annotation
 .end method

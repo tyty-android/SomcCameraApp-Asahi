@@ -39,9 +39,20 @@
 .method constructor <init>(Ljava/util/SortedMap;Ljava/lang/Object;)V
     .locals 0
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "delegate",
+            "mutex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -52,7 +63,7 @@
         }
     .end annotation
 
-    .line 1099
+    .line 1144
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/Synchronized$SynchronizedMap;-><init>(Ljava/util/Map;Ljava/lang/Object;)V
 
     return-void
@@ -70,12 +81,15 @@
         }
     .end annotation
 
-    .line 1109
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1155
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedSortedMap;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1110
+    .line 1156
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedSortedMap;->delegate()Ljava/util/SortedMap;
 
@@ -92,7 +106,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1111
+    .line 1157
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -103,7 +117,7 @@
 .method bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 1095
+    .line 1140
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedSortedMap;->delegate()Ljava/util/SortedMap;
 
     move-result-object p0
@@ -114,7 +128,7 @@
 .method bridge synthetic delegate()Ljava/util/Map;
     .locals 0
 
-    .line 1095
+    .line 1140
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedSortedMap;->delegate()Ljava/util/SortedMap;
 
     move-result-object p0
@@ -132,7 +146,7 @@
         }
     .end annotation
 
-    .line 1104
+    .line 1149
     invoke-super {p0}, Lcom/google/common/collect/Synchronized$SynchronizedMap;->delegate()Ljava/util/Map;
 
     move-result-object p0
@@ -150,12 +164,12 @@
         }
     .end annotation
 
-    .line 1116
+    .line 1162
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedSortedMap;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1117
+    .line 1163
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedSortedMap;->delegate()Ljava/util/SortedMap;
 
@@ -172,7 +186,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1118
+    .line 1164
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -182,6 +196,15 @@
 
 .method public headMap(Ljava/lang/Object;)Ljava/util/SortedMap;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "toKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -190,12 +213,12 @@
         }
     .end annotation
 
-    .line 1123
+    .line 1169
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedSortedMap;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1124
+    .line 1170
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedSortedMap;->delegate()Ljava/util/SortedMap;
 
@@ -218,7 +241,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1125
+    .line 1171
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -234,12 +257,12 @@
         }
     .end annotation
 
-    .line 1130
+    .line 1176
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedSortedMap;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1131
+    .line 1177
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedSortedMap;->delegate()Ljava/util/SortedMap;
 
@@ -256,7 +279,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1132
+    .line 1178
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -266,6 +289,17 @@
 
 .method public subMap(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedMap;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromKey",
+            "toKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TK;)",
@@ -274,12 +308,12 @@
         }
     .end annotation
 
-    .line 1137
+    .line 1183
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedSortedMap;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1138
+    .line 1184
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedSortedMap;->delegate()Ljava/util/SortedMap;
 
@@ -302,7 +336,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1139
+    .line 1185
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -312,6 +346,15 @@
 
 .method public tailMap(Ljava/lang/Object;)Ljava/util/SortedMap;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fromKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -320,12 +363,12 @@
         }
     .end annotation
 
-    .line 1144
+    .line 1190
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedSortedMap;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1145
+    .line 1191
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedSortedMap;->delegate()Ljava/util/SortedMap;
 
@@ -348,7 +391,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1146
+    .line 1192
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract onHistogramChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$HistogramResult;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "histogramResult"
+        }
+    .end annotation
 .end method

@@ -30,9 +30,9 @@
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment$$ExternalSyntheticLambda28;->f$0:Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;
 
-    check-cast p1, Lkotlin/Pair;
+    check-cast p1, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$CameraStatusBarSelectType;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;->$r8$lambda$_3jmuOJLQjO-4WiWSXZSL1fO4FI(Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;Lkotlin/Pair;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;->$r8$lambda$HYA0LOt43daqs5HU88LJZMXo1-o(Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$CameraStatusBarSelectType;)Lkotlin/Unit;
 
     move-result-object p0
 

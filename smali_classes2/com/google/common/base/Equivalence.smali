@@ -4,12 +4,15 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/base/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/common/base/Equivalence$Identity;,
-        Lcom/google/common/base/Equivalence$Equals;,
+        Lcom/google/common/base/Equivalence$Wrapper;,
         Lcom/google/common/base/Equivalence$EquivalentToPredicate;,
-        Lcom/google/common/base/Equivalence$Wrapper;
+        Lcom/google/common/base/Equivalence$Equals;,
+        Lcom/google/common/base/Equivalence$Identity;
     }
 .end annotation
 
@@ -27,7 +30,7 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 43
+    .line 50
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -44,7 +47,7 @@
         }
     .end annotation
 
-    .line 313
+    .line 333
     sget-object v0, Lcom/google/common/base/Equivalence$Equals;->INSTANCE:Lcom/google/common/base/Equivalence$Equals;
 
     return-object v0
@@ -61,7 +64,7 @@
         }
     .end annotation
 
-    .line 325
+    .line 345
     sget-object v0, Lcom/google/common/base/Equivalence$Identity;->INSTANCE:Lcom/google/common/base/Equivalence$Identity;
 
     return-object v0
@@ -70,6 +73,17 @@
 
 # virtual methods
 .method protected abstract doEquivalent(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;TT;)Z"
@@ -78,6 +92,15 @@
 .end method
 
 .method protected abstract doHash(Ljava/lang/Object;)I
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "t"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)I"
@@ -88,13 +111,24 @@
 .method public final equivalent(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;TT;)Z"
@@ -114,7 +148,7 @@
 
     goto :goto_0
 
-    .line 69
+    .line 76
     :cond_1
     invoke-virtual {p0, p1, p2}, Lcom/google/common/base/Equivalence;->doEquivalent(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -132,9 +166,18 @@
 .method public final equivalentTo(Ljava/lang/Object;)Lcom/google/common/base/Predicate;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "target"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)",
@@ -143,7 +186,7 @@
         }
     .end annotation
 
-    .line 259
+    .line 278
     new-instance v0, Lcom/google/common/base/Equivalence$EquivalentToPredicate;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/base/Equivalence$EquivalentToPredicate;-><init>(Lcom/google/common/base/Equivalence;Ljava/lang/Object;)V
@@ -154,9 +197,18 @@
 .method public final hash(Ljava/lang/Object;)I
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "t"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)I"
@@ -169,7 +221,7 @@
 
     return p0
 
-    .line 102
+    .line 107
     :cond_0
     invoke-virtual {p0, p1}, Lcom/google/common/base/Equivalence;->doHash(Ljava/lang/Object;)I
 
@@ -180,19 +232,28 @@
 
 .method public final onResultOf(Lcom/google/common/base/Function;)Lcom/google/common/base/Equivalence;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "function"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<F:",
             "Ljava/lang/Object;",
             ">(",
             "Lcom/google/common/base/Function<",
-            "TF;+TT;>;)",
+            "-TF;+TT;>;)",
             "Lcom/google/common/base/Equivalence<",
             "TF;>;"
         }
     .end annotation
 
-    .line 141
+    .line 146
     new-instance v0, Lcom/google/common/base/FunctionalEquivalence;
 
     invoke-direct {v0, p1, p0}, Lcom/google/common/base/FunctionalEquivalence;-><init>(Lcom/google/common/base/Function;Lcom/google/common/base/Equivalence;)V
@@ -211,7 +272,7 @@
         }
     .end annotation
 
-    .line 249
+    .line 268
     new-instance v0, Lcom/google/common/base/PairwiseEquivalence;
 
     invoke-direct {v0, p0}, Lcom/google/common/base/PairwiseEquivalence;-><init>(Lcom/google/common/base/Equivalence;)V
@@ -222,9 +283,18 @@
 .method public final wrap(Ljava/lang/Object;)Lcom/google/common/base/Equivalence$Wrapper;
     .locals 2
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/base/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "reference"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<S:TT;>(TS;)",
@@ -233,7 +303,7 @@
         }
     .end annotation
 
-    .line 152
+    .line 160
     new-instance v0, Lcom/google/common/base/Equivalence$Wrapper;
 
     const/4 v1, 0x0

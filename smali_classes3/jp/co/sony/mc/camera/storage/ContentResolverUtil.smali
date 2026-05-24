@@ -19,6 +19,16 @@
 
 .method public static crOpenInputStream(Landroid/content/Context;Landroid/net/Uri;)Ljava/io/InputStream;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "uri"
+        }
+    .end annotation
 
     .line 20
     :try_start_0

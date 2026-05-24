@@ -59,7 +59,7 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f1103f4
+    const v3, 0x7f11043f
 
     const/4 v4, 0x1
 
@@ -72,7 +72,7 @@
 
     const-string v1, "OFF"
 
-    const v3, 0x7f1103f3
+    const v3, 0x7f11043e
 
     invoke-direct {v0, v1, v4, v3, v2}, Ljp/co/sony/mc/camera/configuration/parameters/HandShutter;-><init>(Ljava/lang/String;IIZ)V
 
@@ -90,6 +90,21 @@
 
 .method private constructor <init>(Ljava/lang/String;IIZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "textId",
+            "gestureShutter"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IZ)V"
@@ -110,6 +125,16 @@
 
 .method public static getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/HandShutter;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId"
+        }
+    .end annotation
 
     .line 55
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/HandShutter;->isSupported(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
@@ -132,6 +157,16 @@
 
 .method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/HandShutter;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId"
+        }
+    .end annotation
 
     .line 46
     new-instance v0, Ljava/util/ArrayList;
@@ -172,6 +207,16 @@
 
 .method private static isSupported(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId"
+        }
+    .end annotation
 
     .line 105
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -204,6 +249,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/HandShutter;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 23
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/HandShutter;

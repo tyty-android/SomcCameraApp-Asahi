@@ -31,6 +31,14 @@
 # virtual methods
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dialog"
+        }
+    .end annotation
 
     .line 240
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z

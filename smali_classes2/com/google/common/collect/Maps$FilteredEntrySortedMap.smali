@@ -40,6 +40,17 @@
 # direct methods
 .method constructor <init>(Ljava/util/SortedMap;Lcom/google/common/base/Predicate;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "unfiltered",
+            "entryPredicate"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -52,7 +63,7 @@
         }
     .end annotation
 
-    .line 2823
+    .line 3117
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/Maps$FilteredEntryMap;-><init>(Ljava/util/Map;Lcom/google/common/base/Predicate;)V
 
     return-void
@@ -70,7 +81,10 @@
         }
     .end annotation
 
-    .line 2875
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 3174
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$FilteredEntrySortedMap;->sortedMap()Ljava/util/SortedMap;
 
     move-result-object p0
@@ -85,7 +99,7 @@
 .method bridge synthetic createKeySet()Ljava/util/Set;
     .locals 0
 
-    .line 2818
+    .line 3111
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$FilteredEntrySortedMap;->createKeySet()Ljava/util/SortedSet;
 
     move-result-object p0
@@ -103,7 +117,7 @@
         }
     .end annotation
 
-    .line 2837
+    .line 3131
     new-instance v0, Lcom/google/common/collect/Maps$FilteredEntrySortedMap$SortedKeySet;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/Maps$FilteredEntrySortedMap$SortedKeySet;-><init>(Lcom/google/common/collect/Maps$FilteredEntrySortedMap;)V
@@ -113,13 +127,16 @@
 
 .method public firstKey()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TK;"
         }
     .end annotation
 
-    .line 2881
+    .line 3181
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$FilteredEntrySortedMap;->keySet()Ljava/util/SortedSet;
 
     move-result-object p0
@@ -137,6 +154,19 @@
 
 .method public headMap(Ljava/lang/Object;)Ljava/util/SortedMap;
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "toKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -145,7 +175,7 @@
         }
     .end annotation
 
-    .line 2899
+    .line 3201
     new-instance v0, Lcom/google/common/collect/Maps$FilteredEntrySortedMap;
 
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$FilteredEntrySortedMap;->sortedMap()Ljava/util/SortedMap;
@@ -166,7 +196,7 @@
 .method public bridge synthetic keySet()Ljava/util/Set;
     .locals 0
 
-    .line 2818
+    .line 3111
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$FilteredEntrySortedMap;->keySet()Ljava/util/SortedSet;
 
     move-result-object p0
@@ -184,7 +214,7 @@
         }
     .end annotation
 
-    .line 2832
+    .line 3126
     invoke-super {p0}, Lcom/google/common/collect/Maps$FilteredEntryMap;->keySet()Ljava/util/Set;
 
     move-result-object p0
@@ -196,27 +226,34 @@
 
 .method public lastKey()Ljava/lang/Object;
     .locals 2
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TK;"
         }
     .end annotation
 
-    .line 2886
+    .line 3187
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$FilteredEntrySortedMap;->sortedMap()Ljava/util/SortedMap;
 
     move-result-object v0
 
-    .line 2889
+    .line 3190
     :goto_0
     invoke-interface {v0}, Ljava/util/SortedMap;->lastKey()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 2890
+    .line 3192
     iget-object v1, p0, Lcom/google/common/collect/Maps$FilteredEntrySortedMap;->unfiltered:Ljava/util/Map;
 
     invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/google/common/collect/NullnessCasts;->uncheckedCastNullableTToT(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -228,7 +265,7 @@
 
     return-object v0
 
-    .line 2893
+    .line 3195
     :cond_0
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$FilteredEntrySortedMap;->sortedMap()Ljava/util/SortedMap;
 
@@ -251,7 +288,7 @@
         }
     .end annotation
 
-    .line 2827
+    .line 3121
     iget-object p0, p0, Lcom/google/common/collect/Maps$FilteredEntrySortedMap;->unfiltered:Ljava/util/Map;
 
     check-cast p0, Ljava/util/SortedMap;
@@ -261,6 +298,25 @@
 
 .method public subMap(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedMap;
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromKey",
+            "toKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TK;)",
@@ -269,7 +325,7 @@
         }
     .end annotation
 
-    .line 2904
+    .line 3206
     new-instance v0, Lcom/google/common/collect/Maps$FilteredEntrySortedMap;
 
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$FilteredEntrySortedMap;->sortedMap()Ljava/util/SortedMap;
@@ -289,6 +345,19 @@
 
 .method public tailMap(Ljava/lang/Object;)Ljava/util/SortedMap;
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fromKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -297,7 +366,7 @@
         }
     .end annotation
 
-    .line 2909
+    .line 3211
     new-instance v0, Lcom/google/common/collect/Maps$FilteredEntrySortedMap;
 
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$FilteredEntrySortedMap;->sortedMap()Ljava/util/SortedMap;

@@ -17,10 +17,20 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 93
+    .line 101
     invoke-direct {p0, p1, p2, v0}, Lcom/google/common/hash/BloomFilterStrategies;-><init>(Ljava/lang/String;ILcom/google/common/hash/BloomFilterStrategies$1;)V
 
     return-void
@@ -28,10 +38,18 @@
 
 .method private lowerEight([B)J
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bytes"
+        }
+    .end annotation
 
     const/4 p0, 0x7
 
-    .line 132
+    .line 146
     aget-byte v0, p1, p0
 
     const/4 p0, 0x6
@@ -71,10 +89,18 @@
 
 .method private upperEight([B)J
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bytes"
+        }
+    .end annotation
 
     const/16 p0, 0xf
 
-    .line 137
+    .line 151
     aget-byte v0, p1, p0
 
     const/16 p0, 0xe
@@ -116,6 +142,25 @@
 # virtual methods
 .method public mightContain(Ljava/lang/Object;Lcom/google/common/hash/Funnel;ILcom/google/common/hash/BloomFilterStrategies$LockFreeBitArray;)Z
     .locals 7
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/hash/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "object",
+            "funnel",
+            "numHashFunctions",
+            "bits"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -128,12 +173,12 @@
         }
     .end annotation
 
-    .line 115
+    .line 129
     invoke-virtual {p4}, Lcom/google/common/hash/BloomFilterStrategies$LockFreeBitArray;->bitSize()J
 
     move-result-wide v0
 
-    .line 116
+    .line 130
     invoke-static {}, Lcom/google/common/hash/Hashing;->murmur3_128()Lcom/google/common/hash/HashFunction;
 
     move-result-object v2
@@ -146,12 +191,12 @@
 
     move-result-object p1
 
-    .line 117
+    .line 131
     invoke-direct {p0, p1}, Lcom/google/common/hash/BloomFilterStrategies$2;->lowerEight([B)J
 
     move-result-wide v2
 
-    .line 118
+    .line 132
     invoke-direct {p0, p1}, Lcom/google/common/hash/BloomFilterStrategies$2;->upperEight([B)J
 
     move-result-wide p0
@@ -167,7 +212,7 @@
 
     and-long/2addr v5, v2
 
-    .line 123
+    .line 137
     rem-long/2addr v5, v0
 
     invoke-virtual {p4, v5, v6}, Lcom/google/common/hash/BloomFilterStrategies$LockFreeBitArray;->get(J)Z
@@ -193,6 +238,25 @@
 
 .method public put(Ljava/lang/Object;Lcom/google/common/hash/Funnel;ILcom/google/common/hash/BloomFilterStrategies$LockFreeBitArray;)Z
     .locals 7
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/hash/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "object",
+            "funnel",
+            "numHashFunctions",
+            "bits"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -205,12 +269,12 @@
         }
     .end annotation
 
-    .line 97
+    .line 108
     invoke-virtual {p4}, Lcom/google/common/hash/BloomFilterStrategies$LockFreeBitArray;->bitSize()J
 
     move-result-wide v0
 
-    .line 98
+    .line 109
     invoke-static {}, Lcom/google/common/hash/Hashing;->murmur3_128()Lcom/google/common/hash/HashFunction;
 
     move-result-object v2
@@ -223,12 +287,12 @@
 
     move-result-object p1
 
-    .line 99
+    .line 110
     invoke-direct {p0, p1}, Lcom/google/common/hash/BloomFilterStrategies$2;->lowerEight([B)J
 
     move-result-wide v2
 
-    .line 100
+    .line 111
     invoke-direct {p0, p1}, Lcom/google/common/hash/BloomFilterStrategies$2;->upperEight([B)J
 
     move-result-wide p0
@@ -246,7 +310,7 @@
 
     and-long/2addr v5, v3
 
-    .line 106
+    .line 117
     rem-long/2addr v5, v0
 
     invoke-virtual {p4, v5, v6}, Lcom/google/common/hash/BloomFilterStrategies$LockFreeBitArray;->set(J)Z

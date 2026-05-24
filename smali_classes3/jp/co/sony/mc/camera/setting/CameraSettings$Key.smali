@@ -25,20 +25,35 @@
 
 
 # direct methods
-.method constructor <init>(Ljava/lang/String;ILjava/lang/Class;)V
+.method constructor <init>(Ljava/lang/String;Ljava/util/List;Ljava/lang/Class;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "name",
+            "takeOverCondition",
+            "type"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
-            "I",
+            "Ljava/util/List<",
+            "Ljp/co/sony/mc/camera/setting/TakeOverCondition;",
+            ">;",
             "Ljava/lang/Class<",
             "TT;>;)V"
         }
     .end annotation
 
-    .line 115
-    invoke-direct {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;-><init>(Ljava/lang/String;ILjava/lang/Class;)V
+    .line 128
+    invoke-direct {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;-><init>(Ljava/lang/String;Ljava/util/List;Ljava/lang/Class;)V
 
     return-void
 .end method

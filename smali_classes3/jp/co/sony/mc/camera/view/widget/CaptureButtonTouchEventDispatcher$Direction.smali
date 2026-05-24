@@ -106,7 +106,7 @@
 .method static constructor <clinit>()V
     .locals 4
 
-    .line 175
+    .line 179
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;
 
     const/high16 v1, 0x43700000    # 240.0f
@@ -125,7 +125,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;->UP:Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;
 
-    .line 176
+    .line 180
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;
 
     const/high16 v1, 0x42700000    # 60.0f
@@ -144,7 +144,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;->DOWN:Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;
 
-    .line 177
+    .line 181
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;
 
     const/high16 v1, 0x43160000    # 150.0f
@@ -163,7 +163,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;->LEFT:Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;
 
-    .line 178
+    .line 182
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;
 
     const/high16 v1, -0x3e100000    # -30.0f
@@ -218,7 +218,7 @@
         }
     .end annotation
 
-    .line 173
+    .line 177
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;->detectDegreeRange:Lkotlin/ranges/ClosedFloatingPointRange;
@@ -229,7 +229,7 @@
 .method public static final synthetic access$getDetectDegreeRange$p(Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;)Lkotlin/ranges/ClosedFloatingPointRange;
     .locals 0
 
-    .line 173
+    .line 177
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;->detectDegreeRange:Lkotlin/ranges/ClosedFloatingPointRange;
 
     return-object p0
@@ -260,7 +260,7 @@
 
     move-result-object p0
 
-    .line 188
+    .line 192
     check-cast p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;
 
     return-object p0
@@ -275,7 +275,7 @@
 
     move-result-object v0
 
-    .line 188
+    .line 192
     check-cast v0, [Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;
 
     return-object v0

@@ -25,6 +25,16 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "geotagManager",
+            "provider"
+        }
+    .end annotation
 
     .line 44
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -178,6 +188,14 @@
 
 .method public onLocationChanged(Landroid/location/Location;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "newLocation"
+        }
+    .end annotation
 
     .line 63
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -294,6 +312,14 @@
 
 .method public onProviderDisabled(Ljava/lang/String;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "provider"
+        }
+    .end annotation
 
     .line 97
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -347,6 +373,14 @@
 
 .method public onProviderEnabled(Ljava/lang/String;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "provider"
+        }
+    .end annotation
 
     .line 86
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z

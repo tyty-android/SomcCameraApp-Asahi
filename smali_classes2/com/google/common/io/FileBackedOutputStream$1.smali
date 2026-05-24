@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/common/io/FileBackedOutputStream;-><init>(IZLjava/io/File;)V
+    value = Lcom/google/common/io/FileBackedOutputStream;-><init>(IZ)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,8 +21,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/io/FileBackedOutputStream;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 119
+    .line 133
     iput-object p1, p0, Lcom/google/common/io/FileBackedOutputStream$1;->this$0:Lcom/google/common/io/FileBackedOutputStream;
 
     invoke-direct {p0}, Lcom/google/common/io/ByteSource;-><init>()V
@@ -35,7 +43,7 @@
 .method protected finalize()V
     .locals 1
 
-    .line 128
+    .line 143
     :try_start_0
     iget-object p0, p0, Lcom/google/common/io/FileBackedOutputStream$1;->this$0:Lcom/google/common/io/FileBackedOutputStream;
 
@@ -48,7 +56,7 @@
     :catchall_0
     move-exception p0
 
-    .line 130
+    .line 145
     sget-object v0, Ljava/lang/System;->err:Ljava/io/PrintStream;
 
     invoke-virtual {p0, v0}, Ljava/lang/Throwable;->printStackTrace(Ljava/io/PrintStream;)V
@@ -65,7 +73,7 @@
         }
     .end annotation
 
-    .line 122
+    .line 136
     iget-object p0, p0, Lcom/google/common/io/FileBackedOutputStream$1;->this$0:Lcom/google/common/io/FileBackedOutputStream;
 
     invoke-static {p0}, Lcom/google/common/io/FileBackedOutputStream;->access$100(Lcom/google/common/io/FileBackedOutputStream;)Ljava/io/InputStream;

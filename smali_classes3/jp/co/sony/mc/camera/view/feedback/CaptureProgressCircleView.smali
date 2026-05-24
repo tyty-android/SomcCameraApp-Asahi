@@ -49,6 +49,16 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "attrs"
+        }
+    .end annotation
 
     .line 45
     invoke-direct {p0, p1, p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -66,6 +76,14 @@
 
 .method private calculateArcOvalRect(Landroid/graphics/Canvas;)Landroid/graphics/RectF;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "canvas"
+        }
+    .end annotation
 
     .line 97
     iget v0, p0, Ljp/co/sony/mc/camera/view/feedback/CaptureProgressCircleView;->mCountdownCircleRadius:I
@@ -116,6 +134,14 @@
 
 .method private drawArc(Landroid/graphics/Canvas;)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "canvas"
+        }
+    .end annotation
 
     .line 81
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/feedback/CaptureProgressCircleView;->mValueAnimator:Landroid/animation/ValueAnimator;
@@ -198,6 +224,14 @@
 
 .method private setAnimator(I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "duration"
+        }
+    .end annotation
 
     const/4 v0, 0x2
 
@@ -317,7 +351,7 @@
 
     move-result-object p0
 
-    const v1, 0x7f060431
+    const v1, 0x7f060415
 
     const/4 v2, 0x0
 
@@ -332,6 +366,14 @@
 
 .method public onDraw(Landroid/graphics/Canvas;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "canvas"
+        }
+    .end annotation
 
     .line 76
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
@@ -344,6 +386,14 @@
 
 .method public setAnimationProgressListener(Ljp/co/sony/mc/camera/view/feedback/CaptureProgressCircleView$AnimationProgressListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 151
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/feedback/CaptureProgressCircleView;->mAnimationProgressListener:Ljp/co/sony/mc/camera/view/feedback/CaptureProgressCircleView$AnimationProgressListener;
@@ -353,6 +403,14 @@
 
 .method public setDuration(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "duration"
+        }
+    .end annotation
 
     .line 108
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/feedback/CaptureProgressCircleView;->setAnimator(I)V
@@ -368,7 +426,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f07080d
+    const v1, 0x7f0707c3
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -392,7 +450,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f07080c
+    const v2, 0x7f0707c2
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

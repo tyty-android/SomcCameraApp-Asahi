@@ -78,7 +78,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 26
+    .line 25
     new-instance v0, Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
     const-string v1, "ENABLED"
@@ -89,7 +89,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/SettingAppearance;->ENABLED:Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
-    .line 27
+    .line 26
     new-instance v0, Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
     const-string v1, "DISABLED"
@@ -100,7 +100,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/SettingAppearance;->DISABLED:Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
-    .line 28
+    .line 27
     new-instance v0, Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
     const-string v1, "DISABLED_WITH_DIALOG_MESSAGE"
@@ -111,7 +111,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/SettingAppearance;->DISABLED_WITH_DIALOG_MESSAGE:Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
-    .line 29
+    .line 28
     new-instance v0, Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
     const-string v1, "DISABLED_WITH_HINT_MESSAGE"
@@ -122,7 +122,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/SettingAppearance;->DISABLED_WITH_HINT_MESSAGE:Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
-    .line 30
+    .line 29
     new-instance v0, Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
     const-string v1, "INVISIBLE"
@@ -158,7 +158,7 @@
         }
     .end annotation
 
-    .line 25
+    .line 24
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -189,7 +189,7 @@
 
     move-result-object p0
 
-    .line 31
+    .line 30
     check-cast p0, Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
     return-object p0
@@ -204,7 +204,7 @@
 
     move-result-object v0
 
-    .line 31
+    .line 30
     check-cast v0, [Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
     return-object v0

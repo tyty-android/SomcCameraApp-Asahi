@@ -16,6 +16,16 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "attrib"
+        }
+    .end annotation
 
     .line 30
     invoke-direct {p0, p1, p2}, Landroidx/constraintlayout/widget/ConstraintLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -65,6 +75,14 @@
 
 .method public onDraw(Landroid/graphics/Canvas;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "canvas"
+        }
+    .end annotation
 
     .line 48
     invoke-super {p0, p1}, Landroidx/constraintlayout/widget/ConstraintLayout;->onDraw(Landroid/graphics/Canvas;)V
@@ -78,7 +96,7 @@
     .line 35
     invoke-super {p0}, Landroidx/constraintlayout/widget/ConstraintLayout;->onFinishInflate()V
 
-    const v0, 0x7f09040a
+    const v0, 0x7f09040d
 
     .line 36
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownView;->findViewById(I)Landroid/view/View;
@@ -89,7 +107,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/SelfTimerCountDownView;->mSelfTimerCountDownCircleView:Ljp/co/sony/mc/camera/view/SelfTimerCountDownCircleView;
 
-    const v0, 0x7f090287
+    const v0, 0x7f09028b
 
     .line 38
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownView;->findViewById(I)Landroid/view/View;
@@ -105,7 +123,7 @@
     .line 40
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->setIsTenDigit(Z)V
 
-    const v0, 0x7f0903cf
+    const v0, 0x7f0903d0
 
     .line 41
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownView;->findViewById(I)Landroid/view/View;
@@ -126,6 +144,14 @@
 
 .method public setSelfTimer(Ljp/co/sony/mc/camera/setting/SelfTimerInterface;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "selftimer"
+        }
+    .end annotation
 
     .line 80
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/SelfTimerCountDownView;->mSelfTimerCountDownCircleView:Ljp/co/sony/mc/camera/view/SelfTimerCountDownCircleView;
@@ -178,6 +204,14 @@
 
 .method public startSelfTimerCountDownAnimation(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isFront"
+        }
+    .end annotation
 
     .line 52
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/SelfTimerCountDownView;->mLeftSelfTimerCountDownNumberView:Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;

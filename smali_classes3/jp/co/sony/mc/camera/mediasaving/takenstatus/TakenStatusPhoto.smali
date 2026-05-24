@@ -36,6 +36,14 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusPhoto$Facing;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "facing"
+        }
+    .end annotation
 
     .line 43
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -51,6 +59,14 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusPhoto;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "data"
+        }
+    .end annotation
 
     .line 36
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

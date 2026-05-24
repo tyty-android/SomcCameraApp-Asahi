@@ -44,7 +44,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 306
+    .line 320
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -63,7 +63,7 @@
 .method public final getLastManualFocusDistance()F
     .locals 0
 
-    .line 307
+    .line 321
     invoke-static {}, Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;->access$getLastManualFocusDistance$cp()F
 
     move-result p0
@@ -74,7 +74,7 @@
 .method public final setLastManualFocusDistance(F)V
     .locals 0
 
-    .line 307
+    .line 321
     invoke-static {p1}, Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;->access$setLastManualFocusDistance$cp(F)V
 
     return-void

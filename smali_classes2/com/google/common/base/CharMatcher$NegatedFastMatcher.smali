@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0xa
     name = "NegatedFastMatcher"
 .end annotation
 
@@ -17,8 +17,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/base/CharMatcher;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "original"
+        }
+    .end annotation
 
-    .line 970
+    .line 973
     invoke-direct {p0, p1}, Lcom/google/common/base/CharMatcher$Negated;-><init>(Lcom/google/common/base/CharMatcher;)V
 
     return-void

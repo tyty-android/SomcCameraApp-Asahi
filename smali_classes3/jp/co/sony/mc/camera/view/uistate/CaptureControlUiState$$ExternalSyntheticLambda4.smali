@@ -22,17 +22,13 @@
     .locals 0
 
     .line 0
-    check-cast p1, Ljava/lang/Boolean;
-
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result p0
+    check-cast p1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
     check-cast p2, Ljava/lang/Boolean;
 
     check-cast p3, Ljava/lang/Boolean;
 
-    invoke-static {p0, p2, p3}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->$r8$lambda$Q2w5zPWxft6xTznBauGgguVSw3o(ZLjava/lang/Boolean;Ljava/lang/Boolean;)Z
+    invoke-static {p1, p2, p3}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->$r8$lambda$vcLBXDXnCdMznNOVI7GleIj0viA(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;Ljava/lang/Boolean;Ljava/lang/Boolean;)Z
 
     move-result p0
 

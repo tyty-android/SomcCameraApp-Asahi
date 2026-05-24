@@ -25,6 +25,18 @@
 
 .method private static computeInitialSampleSize(Landroid/graphics/BitmapFactory$Options;II)I
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "options",
+            "minSideLength",
+            "maxNumOfPixels"
+        }
+    .end annotation
 
     .line 232
     iget v0, p0, Landroid/graphics/BitmapFactory$Options;->outWidth:I
@@ -117,6 +129,18 @@
 
 .method private static computeSampleSize(Landroid/graphics/BitmapFactory$Options;II)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "options",
+            "minSideLength",
+            "maxNumOfPixels"
+        }
+    .end annotation
 
     .line 217
     invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailFactory;->computeInitialSampleSize(Landroid/graphics/BitmapFactory$Options;II)I
@@ -150,6 +174,16 @@
 
 .method public static createMicroThumbnail(Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;Landroid/content/Context;)Landroid/graphics/Bitmap;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "info",
+            "context"
+        }
+    .end annotation
 
     const-string v0, "createMicroThumbnail() wrong type:"
 
@@ -481,6 +515,16 @@
 
 .method public static createVideoThumbnail(Landroid/content/Context;Landroid/net/Uri;)Landroid/graphics/Bitmap;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "uri"
+        }
+    .end annotation
 
     .line 173
     const-string v0, "Assume this is a corrupt video file."
@@ -624,6 +668,18 @@
 
 .method public static createVideoThumbnail(Landroid/content/Context;Landroid/net/Uri;I)Landroid/graphics/Bitmap;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "uri",
+            "degree"
+        }
+    .end annotation
 
     .line 194
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailFactory;->createVideoThumbnail(Landroid/content/Context;Landroid/net/Uri;)Landroid/graphics/Bitmap;
@@ -639,6 +695,14 @@
 
 .method public static createVideoThumbnail(Ljava/io/FileDescriptor;)Landroid/graphics/Bitmap;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fd"
+        }
+    .end annotation
 
     .line 152
     const-string v0, "Assume this is a corrupt video file."
@@ -782,6 +846,16 @@
 
 .method private static rotateThumbnail(Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
     .locals 12
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bitmap",
+            "degree"
+        }
+    .end annotation
 
     .line 132
     const-string v0, ", height = "

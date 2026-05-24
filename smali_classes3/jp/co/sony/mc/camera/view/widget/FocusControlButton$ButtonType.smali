@@ -99,13 +99,13 @@
     .line 27
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/FocusControlButton$ButtonType;
 
-    const v1, 0x7f110478
+    const v1, 0x7f1104c1
 
     const-string v2, "TOUCH_FOCUS_CANCEL"
 
     const/4 v3, 0x0
 
-    const v4, 0x7f0802f7
+    const v4, 0x7f080365
 
     invoke-direct {v0, v2, v3, v4, v1}, Ljp/co/sony/mc/camera/view/widget/FocusControlButton$ButtonType;-><init>(Ljava/lang/String;III)V
 
@@ -116,7 +116,7 @@
 
     const/4 v1, 0x1
 
-    const v2, 0x7f1100fb
+    const v2, 0x7f110111
 
     const-string v3, "TOUCH_AUTO_EXPOSURE_CANCEL"
 
@@ -127,9 +127,9 @@
     .line 35
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/FocusControlButton$ButtonType;
 
-    const v1, 0x7f080305
+    const v1, 0x7f080373
 
-    const v2, 0x7f110483
+    const v2, 0x7f1104cc
 
     const-string v3, "TOUCH_TRACKING_CANCEL"
 

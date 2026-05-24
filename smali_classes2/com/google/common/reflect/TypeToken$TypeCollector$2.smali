@@ -28,7 +28,7 @@
 
     const/4 v0, 0x0
 
-    .line 1321
+    .line 1344
     invoke-direct {p0, v0}, Lcom/google/common/reflect/TypeToken$TypeCollector;-><init>(Lcom/google/common/reflect/TypeToken$1;)V
 
     return-void
@@ -38,6 +38,15 @@
 # virtual methods
 .method getInterfaces(Ljava/lang/Class;)Ljava/lang/Iterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -50,7 +59,7 @@
         }
     .end annotation
 
-    .line 1329
+    .line 1352
     invoke-virtual {p1}, Ljava/lang/Class;->getInterfaces()[Ljava/lang/Class;
 
     move-result-object p0
@@ -64,8 +73,16 @@
 
 .method bridge synthetic getInterfaces(Ljava/lang/Object;)Ljava/lang/Iterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
-    .line 1321
+    .line 1344
     check-cast p1, Ljava/lang/Class;
 
     invoke-virtual {p0, p1}, Lcom/google/common/reflect/TypeToken$TypeCollector$2;->getInterfaces(Ljava/lang/Class;)Ljava/lang/Iterable;
@@ -77,6 +94,15 @@
 
 .method getRawType(Ljava/lang/Class;)Ljava/lang/Class;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -92,8 +118,16 @@
 
 .method bridge synthetic getRawType(Ljava/lang/Object;)Ljava/lang/Class;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
-    .line 1321
+    .line 1344
     check-cast p1, Ljava/lang/Class;
 
     invoke-virtual {p0, p1}, Lcom/google/common/reflect/TypeToken$TypeCollector$2;->getRawType(Ljava/lang/Class;)Ljava/lang/Class;
@@ -105,6 +139,15 @@
 
 .method getSuperclass(Ljava/lang/Class;)Ljava/lang/Class;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -115,10 +158,10 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
-    .line 1335
+    .line 1358
     invoke-virtual {p1}, Ljava/lang/Class;->getSuperclass()Ljava/lang/Class;
 
     move-result-object p0
@@ -128,10 +171,19 @@
 
 .method bridge synthetic getSuperclass(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "type"
+        }
     .end annotation
 
-    .line 1321
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1344
     check-cast p1, Ljava/lang/Class;
 
     invoke-virtual {p0, p1}, Lcom/google/common/reflect/TypeToken$TypeCollector$2;->getSuperclass(Ljava/lang/Class;)Ljava/lang/Class;

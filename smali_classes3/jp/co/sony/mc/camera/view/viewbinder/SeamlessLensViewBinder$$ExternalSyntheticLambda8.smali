@@ -36,7 +36,7 @@
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$$ExternalSyntheticLambda8;->f$1:Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;
 
-    invoke-static {v0, p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->$r8$lambda$gEIksUWOOcqdBgKat7snXPhsZdI(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;)V
+    invoke-static {v0, p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->$r8$lambda$p8zreMplq6qltsejQJ5m593HUc0(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;)V
 
     return-void
 .end method

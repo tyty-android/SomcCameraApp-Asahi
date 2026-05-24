@@ -28,7 +28,7 @@
 
     move-result p0
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->$r8$lambda$MMt2Rm1XB4_f4XiDQ7EQ0OJg70I(I)Lkotlin/Unit;
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->$r8$lambda$06wb0k1wjj4BZm4W_oc1xB8Hl1Q(I)Lkotlin/Unit;
 
     move-result-object p0
 

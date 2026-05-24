@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements Lkotlin/jvm/functions/Function3;
 
 
 # direct methods
@@ -18,13 +18,17 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
-    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;
+    check-cast p1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->$r8$lambda$VUNwS6p9r_rUhQdFEDqC7CCFVdk(Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;)Z
+    check-cast p2, Ljava/lang/Boolean;
+
+    check-cast p3, Ljava/lang/Boolean;
+
+    invoke-static {p1, p2, p3}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->$r8$lambda$yraf4UN-OxxbXZCUTgq72teLcV4(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;Ljava/lang/Boolean;Ljava/lang/Boolean;)Z
 
     move-result p0
 

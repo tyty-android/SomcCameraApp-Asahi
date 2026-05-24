@@ -24,8 +24,16 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 2968
+    .line 3540
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$HintTextListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,8 +45,16 @@
 # virtual methods
 .method public onHintTextHidden(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "content"
+        }
+    .end annotation
 
-    .line 2981
+    .line 3553
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$HintTextListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;)Landroid/app/Activity;
@@ -59,7 +75,7 @@
 
     if-nez v0, :cond_0
 
-    .line 2982
+    .line 3554
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$HintTextListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->-$$Nest$fgetmOnHintTextShowListener(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;)Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$OnHintTextShowListener;
@@ -74,8 +90,16 @@
 
 .method public onHintTextShown(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "content"
+        }
+    .end annotation
 
-    .line 2976
+    .line 3548
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$HintTextListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->-$$Nest$fgetmOnHintTextShowListener(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;)Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$OnHintTextShowListener;

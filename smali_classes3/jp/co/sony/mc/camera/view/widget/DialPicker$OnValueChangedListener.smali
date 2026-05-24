@@ -16,10 +16,40 @@
 
 # virtual methods
 .method public abstract onStartValueChange(Ljp/co/sony/mc/camera/view/widget/DialPicker;I)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "picker",
+            "targetPosition"
+        }
+    .end annotation
 .end method
 
 .method public abstract onStopValueChange(Ljp/co/sony/mc/camera/view/widget/DialPicker;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "picker"
+        }
+    .end annotation
 .end method
 
 .method public abstract onValueChanged(Ljp/co/sony/mc/camera/view/widget/DialPicker;II)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "picker",
+            "from",
+            "to"
+        }
+    .end annotation
 .end method

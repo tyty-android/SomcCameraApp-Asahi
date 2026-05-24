@@ -346,10 +346,10 @@
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;->isAutoFramingSizeMenuButtonGone:Landroidx/lifecycle/LiveData;
 
-    .line 50
+    .line 52
     sget-object p6, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 52
+    .line 54
     invoke-virtual {p5}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getInitializing()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
@@ -358,14 +358,14 @@
 
     invoke-direct {v1}, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$$ExternalSyntheticLambda1;-><init>()V
 
-    .line 50
+    .line 52
     invoke-virtual {p6, p3, v0, v1}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object p3
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;->isAutoFramingSizeMenuButtonEnabled:Landroidx/lifecycle/LiveData;
 
-    .line 57
+    .line 59
     sget-object p3, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;->getLayoutType()Landroidx/lifecycle/LiveData;
@@ -382,7 +382,7 @@
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;->isAutoFramingSizeMenuOpened:Landroidx/lifecycle/LiveData;
 
-    .line 61
+    .line 63
     sget-object p3, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;->getLayoutType()Landroidx/lifecycle/LiveData;
@@ -399,7 +399,7 @@
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;->autoFramingSizeMenuButtonSrc:Landroidx/lifecycle/LiveData;
 
-    .line 69
+    .line 71
     sget-object p3, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;->getLayoutType()Landroidx/lifecycle/LiveData;
@@ -416,15 +416,15 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;->autoFramingSizeMenuButtonContentDescription:Landroidx/lifecycle/LiveData;
 
-    .line 77
+    .line 79
     sget-object p2, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 78
+    .line 80
     invoke-virtual {p4}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->isAutoFraming()Landroidx/lifecycle/LiveData;
 
     move-result-object p3
 
-    .line 79
+    .line 81
     invoke-virtual {p4}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getAutoFramingRecordingMode()Landroidx/lifecycle/LiveData;
 
     move-result-object p4
@@ -433,14 +433,14 @@
 
     invoke-direct {p6}, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$$ExternalSyntheticLambda5;-><init>()V
 
-    .line 77
+    .line 79
     invoke-virtual {p2, p3, p4, p6}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object p2
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;->isAutoFramingRecordingModeIndicatorVisible:Landroidx/lifecycle/LiveData;
 
-    .line 84
+    .line 86
     sget-object p2, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
     invoke-virtual {p5}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getRecording()Landroidx/lifecycle/LiveData;
@@ -457,7 +457,7 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;->isAutoFramingRecordingModeIndicatorGray:Landroidx/lifecycle/LiveData;
 
-    .line 87
+    .line 89
     new-instance p2, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$1;
 
     const/4 p3, 0x0
@@ -480,7 +480,7 @@
 
     invoke-static/range {v0 .. v5}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
 
-    .line 93
+    .line 95
     new-instance p2, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$2;
 
     invoke-direct {p2, p0, p3}, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$2;-><init>(Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;Lkotlin/coroutines/Continuation;)V
@@ -491,7 +491,7 @@
 
     invoke-static/range {v0 .. v5}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
 
-    .line 103
+    .line 105
     new-instance p2, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$3;
 
     invoke-direct {p2, p0, p3}, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$3;-><init>(Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;Lkotlin/coroutines/Continuation;)V
@@ -502,7 +502,7 @@
 
     invoke-static/range {v0 .. v5}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
 
-    .line 121
+    .line 123
     new-instance p2, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$4;
 
     invoke-direct {p2, p0, p3}, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$4;-><init>(Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;Lkotlin/coroutines/Continuation;)V
@@ -513,7 +513,7 @@
 
     invoke-static/range {v0 .. v5}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
 
-    .line 133
+    .line 135
     new-instance p2, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$5;
 
     invoke-direct {p2, p0, p3}, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$5;-><init>(Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;Lkotlin/coroutines/Continuation;)V
@@ -570,7 +570,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 70
+    .line 72
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$AutoFramingSizeMenu;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$AutoFramingSizeMenu;
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -579,7 +579,7 @@
 
     if-eqz p0, :cond_0
 
-    const p0, 0x7f110081
+    const p0, 0x7f110095
 
     goto :goto_0
 
@@ -597,7 +597,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 62
+    .line 64
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$AutoFramingSizeMenu;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$AutoFramingSizeMenu;
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -606,12 +606,12 @@
 
     if-eqz p0, :cond_0
 
-    const p0, 0x7f08010e
+    const p0, 0x7f080169
 
     goto :goto_0
 
     :cond_0
-    const p0, 0x7f0800c5
+    const p0, 0x7f080128
 
     :goto_0
     return p0
@@ -628,7 +628,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 81
+    .line 83
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingRecordingMode;->AUTO_FRAMING_ONLY:Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingRecordingMode;
 
     if-ne p1, p0, :cond_0
@@ -677,7 +677,17 @@
     if-nez p0, :cond_1
 
     .line 47
+    instance-of p0, p1, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$AiSuggestionCustomizeMenu;
+
+    if-nez p0, :cond_1
+
+    .line 48
     instance-of p0, p1, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$SS;
+
+    if-nez p0, :cond_1
+
+    .line 49
+    instance-of p0, p1, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$AiSuggestionColorToneProfile;
 
     if-eqz p0, :cond_0
 
@@ -703,7 +713,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 58
+    .line 60
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$AutoFramingSizeMenu;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$AutoFramingSizeMenu;
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -718,7 +728,7 @@
 .method public final getAutoFramingSize()Ljava/lang/Integer;
     .locals 0
 
-    .line 152
+    .line 154
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getAutoFramingSize()Landroidx/lifecycle/LiveData;
@@ -745,7 +755,7 @@
         }
     .end annotation
 
-    .line 69
+    .line 71
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;->autoFramingSizeMenuButtonContentDescription:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -762,7 +772,7 @@
         }
     .end annotation
 
-    .line 61
+    .line 63
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;->autoFramingSizeMenuButtonSrc:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -788,7 +798,7 @@
         }
     .end annotation
 
-    .line 84
+    .line 86
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;->isAutoFramingRecordingModeIndicatorGray:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -805,7 +815,7 @@
         }
     .end annotation
 
-    .line 77
+    .line 79
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;->isAutoFramingRecordingModeIndicatorVisible:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -822,7 +832,7 @@
         }
     .end annotation
 
-    .line 50
+    .line 52
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;->isAutoFramingSizeMenuButtonEnabled:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -856,7 +866,7 @@
         }
     .end annotation
 
-    .line 57
+    .line 59
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;->isAutoFramingSizeMenuOpened:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -882,7 +892,7 @@
 .method public final onFramingObjectLost(Z)V
     .locals 0
 
-    .line 155
+    .line 157
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;->_isFramingObjectLost:Landroidx/lifecycle/MutableLiveData;
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -897,7 +907,7 @@
 .method public final onPause()V
     .locals 1
 
-    .line 159
+    .line 161
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;->_isFramingObjectLost:Landroidx/lifecycle/MutableLiveData;
 
     const/4 v0, 0x0
@@ -914,7 +924,7 @@
 .method public final setAutoFramingSize(I)V
     .locals 2
 
-    .line 148
+    .line 150
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     if-eqz v0, :cond_0
@@ -929,7 +939,7 @@
 
     invoke-interface {v0, v1, p1}, Ljp/co/sony/mc/camera/view/CameraOperator;->setSetting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    .line 149
+    .line 151
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;->messageUiState:Ljp/co/sony/mc/camera/view/uistate/MessageUiState;
 

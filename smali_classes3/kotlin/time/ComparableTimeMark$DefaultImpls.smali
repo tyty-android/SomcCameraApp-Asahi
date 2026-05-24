@@ -16,8 +16,8 @@
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x30
@@ -53,7 +53,7 @@
 .method public static hasNotPassedNow(Lkotlin/time/ComparableTimeMark;)Z
     .locals 0
 
-    .line 180
+    .line 178
     check-cast p0, Lkotlin/time/TimeMark;
 
     invoke-static {p0}, Lkotlin/time/TimeMark$DefaultImpls;->hasNotPassedNow(Lkotlin/time/TimeMark;)Z
@@ -66,7 +66,7 @@
 .method public static hasPassedNow(Lkotlin/time/ComparableTimeMark;)Z
     .locals 0
 
-    .line 180
+    .line 178
     check-cast p0, Lkotlin/time/TimeMark;
 
     invoke-static {p0}, Lkotlin/time/TimeMark$DefaultImpls;->hasPassedNow(Lkotlin/time/TimeMark;)Z

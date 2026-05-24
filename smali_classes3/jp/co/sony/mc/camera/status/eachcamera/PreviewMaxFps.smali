@@ -23,6 +23,14 @@
 
 .method public constructor <init>(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fps"
+        }
+    .end annotation
 
     .line 34
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/status/IntegerValue;-><init>(I)V

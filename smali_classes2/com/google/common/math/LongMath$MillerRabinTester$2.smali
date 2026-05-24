@@ -17,10 +17,20 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 1108
+    .line 1109
     invoke-direct {p0, p1, p2, v0}, Lcom/google/common/math/LongMath$MillerRabinTester;-><init>(Ljava/lang/String;ILcom/google/common/math/LongMath$1;)V
 
     return-void
@@ -28,6 +38,18 @@
 
 .method private plusMod(JJJ)J
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b",
+            "m"
+        }
+    .end annotation
 
     sub-long v0, p5, p3
 
@@ -45,10 +67,20 @@
 
 .method private times2ToThe32Mod(JJ)J
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "m"
+        }
+    .end annotation
 
     const/16 p0, 0x20
 
-    .line 1118
+    .line 1119
     :cond_0
     invoke-static {p1, p2}, Ljava/lang/Long;->numberOfLeadingZeros(J)I
 
@@ -60,7 +92,7 @@
 
     shl-long/2addr p1, v0
 
-    .line 1121
+    .line 1122
     invoke-static {p1, p2, p3, p4}, Lcom/google/common/primitives/UnsignedLongs;->remainder(JJ)J
 
     move-result-wide p1
@@ -76,6 +108,18 @@
 # virtual methods
 .method mulMod(JJJ)J
     .locals 15
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b",
+            "m"
+        }
+    .end annotation
 
     move-object v0, p0
 
@@ -95,7 +139,7 @@
 
     mul-long v13, v2, v7
 
-    .line 1142
+    .line 1143
     invoke-direct {p0, v13, v14, v5, v6}, Lcom/google/common/math/LongMath$MillerRabinTester$2;->times2ToThe32Mod(JJ)J
 
     move-result-wide v13
@@ -110,7 +154,7 @@
 
     if-gez v1, :cond_0
 
-    .line 1145
+    .line 1146
     invoke-static {v13, v14, v5, v6}, Lcom/google/common/primitives/UnsignedLongs;->remainder(JJ)J
 
     move-result-wide v13
@@ -120,14 +164,14 @@
 
     add-long/2addr v13, v7
 
-    .line 1149
+    .line 1150
     invoke-direct {p0, v13, v14, v5, v6}, Lcom/google/common/math/LongMath$MillerRabinTester$2;->times2ToThe32Mod(JJ)J
 
     move-result-wide v1
 
     mul-long/2addr v11, v9
 
-    .line 1150
+    .line 1151
     invoke-static {v11, v12, v5, v6}, Lcom/google/common/primitives/UnsignedLongs;->remainder(JJ)J
 
     move-result-wide v3
@@ -145,6 +189,16 @@
 
 .method squareMod(JJ)J
     .locals 11
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "m"
+        }
+    .end annotation
 
     const/16 v0, 0x20
 
@@ -156,7 +210,7 @@
 
     mul-long v2, v0, v0
 
-    .line 1165
+    .line 1166
     invoke-direct {p0, v2, v3, p3, p4}, Lcom/google/common/math/LongMath$MillerRabinTester$2;->times2ToThe32Mod(JJ)J
 
     move-result-wide v2
@@ -173,7 +227,7 @@
 
     if-gez v4, :cond_0
 
-    .line 1168
+    .line 1169
     invoke-static {v0, v1, p3, p4}, Lcom/google/common/primitives/UnsignedLongs;->remainder(JJ)J
 
     move-result-wide v0
@@ -181,14 +235,14 @@
     :cond_0
     add-long/2addr v2, v0
 
-    .line 1172
+    .line 1173
     invoke-direct {p0, v2, v3, p3, p4}, Lcom/google/common/math/LongMath$MillerRabinTester$2;->times2ToThe32Mod(JJ)J
 
     move-result-wide v5
 
     mul-long/2addr p1, p1
 
-    .line 1173
+    .line 1174
     invoke-static {p1, p2, p3, p4}, Lcom/google/common/primitives/UnsignedLongs;->remainder(JJ)J
 
     move-result-wide v7

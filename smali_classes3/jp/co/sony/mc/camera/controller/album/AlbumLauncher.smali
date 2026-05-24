@@ -22,7 +22,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 27
+    .line 31
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -30,6 +30,22 @@
 
 .method public static launchAlbum(Landroid/app/Activity;Landroid/net/Uri;Ljava/lang/String;IZ)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "activity",
+            "uri",
+            "mimetype",
+            "bucketId",
+            "isBurst"
+        }
+    .end annotation
 
     const/4 v5, 0x1
 
@@ -43,16 +59,34 @@
 
     move v4, p4
 
-    .line 86
+    .line 90
     invoke-static/range {v0 .. v5}, Ljp/co/sony/mc/camera/controller/album/AlbumLauncher;->launchAlbum(Landroid/app/Activity;Landroid/net/Uri;Ljava/lang/String;IZZ)V
 
     return-void
 .end method
 
 .method public static launchAlbum(Landroid/app/Activity;Landroid/net/Uri;Ljava/lang/String;IZZ)V
-    .locals 7
+    .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "activity",
+            "uri",
+            "mimetype",
+            "bucketId",
+            "isBurst",
+            "isFast"
+        }
+    .end annotation
 
-    .line 101
+    .line 105
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     const/4 v1, 0x0
@@ -115,7 +149,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 104
+    .line 108
     :cond_0
     new-instance p5, Landroid/content/Intent;
 
@@ -123,12 +157,12 @@
 
     invoke-direct {p5, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 105
+    .line 109
     const-string v0, "android.intent.category.DEFAULT"
 
     invoke-virtual {p5, v0}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 106
+    .line 110
     invoke-static {p2}, Ljp/co/sony/mc/camera/controller/album/AlbumLauncher$MimeType;->fromText(Ljava/lang/String;)Ljp/co/sony/mc/camera/controller/album/AlbumLauncher$MimeType;
 
     move-result-object v0
@@ -137,7 +171,7 @@
 
     if-ne v0, v3, :cond_1
 
-    .line 107
+    .line 111
     sget-object v0, Ljp/co/sony/mc/camera/controller/album/AlbumLauncher$MimeType;->PHOTO:Ljp/co/sony/mc/camera/controller/album/AlbumLauncher$MimeType;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/controller/album/AlbumLauncher$MimeType;->mText:Ljava/lang/String;
@@ -146,12 +180,66 @@
 
     goto :goto_0
 
-    .line 109
+    .line 113
     :cond_1
     invoke-virtual {p5, p1, p2}, Landroid/content/Intent;->setDataAndType(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 113
+    .line 116
     :goto_0
+    invoke-static {p1}, Landroid/content/ContentUris;->parseId(Landroid/net/Uri;)J
+
+    move-result-wide v3
+
+    .line 118
+    invoke-static {}, Ljp/co/sony/mc/camera/storage/ProcessingMediaManager;->getInstance()Ljp/co/sony/mc/camera/storage/ProcessingMediaManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v3, v4}, Ljp/co/sony/mc/camera/storage/ProcessingMediaManager;->findProcessingMediaByMediaStoreId(J)Ljp/co/sony/mc/camera/storage/ProcessingMediaManager$ProcessingMedia;
+
+    move-result-object v0
+
+    .line 119
+    sget-boolean v5, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    if-eqz v5, :cond_2
+
+    new-array v5, v2, [Ljava/lang/String;
+
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    const-string v7, "ProcessingMedia uri:"
+
+    invoke-direct {v6, v7}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v6
+
+    aput-object v6, v5, v1
+
+    invoke-static {v5}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    :cond_2
+    if-eqz v0, :cond_3
+
+    .line 121
+    const-string v0, "processing_uri_intent_extra"
+
+    .line 122
+    invoke-static {v3, v4}, Lcom/sonymobile/providers/media/ExtensionApi;->getQueryProcessingUri(J)Landroid/net/Uri;
+
+    move-result-object v3
+
+    .line 121
+    invoke-virtual {p5, v0, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+
+    .line 126
+    :cond_3
     invoke-static {}, Ljp/co/sony/mc/camera/controller/album/AlbumLauncher$PreferredGallery;->values()[Ljp/co/sony/mc/camera/controller/album/AlbumLauncher$PreferredGallery;
 
     move-result-object v0
@@ -163,18 +251,18 @@
     :goto_1
     const/16 v5, 0x8
 
-    if-ge v4, v3, :cond_3
+    if-ge v4, v3, :cond_5
 
     aget-object v6, v0, v4
 
-    .line 114
+    .line 127
     invoke-static {v6}, Ljp/co/sony/mc/camera/controller/album/AlbumLauncher$PreferredGallery;->-$$Nest$mgetPackageName(Ljp/co/sony/mc/camera/controller/album/AlbumLauncher$PreferredGallery;)Ljava/lang/String;
 
     move-result-object v6
 
     invoke-virtual {p5, v6}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 115
+    .line 128
     invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v6
@@ -183,33 +271,33 @@
 
     move-result v6
 
-    if-eqz v6, :cond_2
+    if-eqz v6, :cond_4
 
-    .line 116
+    .line 129
     invoke-virtual {p0, p5, v5}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
 
     return-void
 
-    :cond_2
+    :cond_4
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_1
 
-    .line 123
-    :cond_3
+    .line 136
+    :cond_5
     invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
-    .line 122
+    .line 135
     invoke-static {v0, p1, p2}, Ljp/co/sony/mc/camera/util/CommonUtility;->getDefaultGallery(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;)Ljp/co/sony/mc/camera/util/CommonUtility$DefaultGallerySetting;
 
     move-result-object v0
 
-    .line 124
+    .line 137
     sget-boolean v3, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
-    if-eqz v3, :cond_4
+    if-eqz v3, :cond_6
 
     new-array v3, v2, [Ljava/lang/String;
 
@@ -231,8 +319,8 @@
 
     invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 125
-    :cond_4
+    .line 138
+    :cond_6
     sget-object v1, Ljp/co/sony/mc/camera/controller/album/AlbumLauncher$1;->$SwitchMap$jp$co$sony$mc$camera$util$CommonUtility$DefaultGallerySetting:[I
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/util/CommonUtility$DefaultGallerySetting;->ordinal()I
@@ -241,32 +329,32 @@
 
     aget v1, v1, v3
 
-    if-eq v1, v2, :cond_5
+    if-eq v1, v2, :cond_7
 
     const/4 p3, 0x0
 
-    .line 134
+    .line 147
     invoke-virtual {p5, p3}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
     goto :goto_2
 
-    .line 127
-    :cond_5
+    .line 140
+    :cond_7
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/util/CommonUtility$DefaultGallerySetting;->getPackageName()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p5, v0}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    if-eqz p4, :cond_6
+    if-eqz p4, :cond_8
 
-    .line 130
+    .line 143
     const-string p4, "burst_bucketId"
 
     invoke-virtual {p5, p4, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 138
-    :cond_6
+    .line 151
+    :cond_8
     :goto_2
     invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
 
@@ -276,15 +364,15 @@
 
     move-result p3
 
-    if-eqz p3, :cond_7
+    if-eqz p3, :cond_9
 
-    .line 144
+    .line 157
     invoke-virtual {p0, p5, v5}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto :goto_3
 
-    .line 146
-    :cond_7
+    .line 159
+    :cond_9
     invoke-static {p0, p1, p2, v5}, Ljp/co/sony/mc/camera/controller/album/AlbumLauncher;->launchReviewApp(Landroid/app/Activity;Landroid/net/Uri;Ljava/lang/String;I)V
 
     :goto_3
@@ -293,6 +381,21 @@
 
 .method public static launchAlbumSecure(Landroid/app/Activity;Ljava/util/List;Ljava/util/List;[J)V
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "activity",
+            "uriList",
+            "mimeList",
+            "mediaStoreIds"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -306,7 +409,7 @@
         }
     .end annotation
 
-    .line 159
+    .line 172
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v0
@@ -319,7 +422,7 @@
 
     if-eqz v0, :cond_5
 
-    .line 163
+    .line 176
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     const/4 v1, 0x1
@@ -354,7 +457,7 @@
 
     move-result-object v3
 
-    .line 164
+    .line 177
     invoke-static {p3}, Ljava/util/Arrays;->toString([J)Ljava/lang/String;
 
     move-result-object v4
@@ -375,10 +478,10 @@
 
     aput-object v3, v0, v2
 
-    .line 163
+    .line 176
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 166
+    .line 179
     :cond_0
     new-instance v0, Landroid/content/Intent;
 
@@ -386,7 +489,7 @@
 
     invoke-direct {v0, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 167
+    .line 180
     invoke-interface {p1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -401,22 +504,22 @@
 
     invoke-virtual {v0, v3, v4}, Landroid/content/Intent;->setDataAndType(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 168
+    .line 181
     const-string v3, "android.intent.category.DEFAULT"
 
     invoke-virtual {v0, v3}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 169
+    .line 182
     const-string v3, "com.google.android.apps.photos.api.secure_mode_ids"
 
     invoke-virtual {v0, v3, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;[J)Landroid/content/Intent;
 
-    .line 170
+    .line 183
     const-string p3, "com.google.android.apps.photos.api.secure_mode"
 
     invoke-virtual {v0, p3, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 173
+    .line 186
     invoke-static {}, Ljp/co/sony/mc/camera/controller/album/AlbumLauncher$PreferredGallery;->values()[Ljp/co/sony/mc/camera/controller/album/AlbumLauncher$PreferredGallery;
 
     move-result-object v4
@@ -432,14 +535,14 @@
 
     aget-object v8, v4, v6
 
-    .line 174
+    .line 187
     invoke-static {v8}, Ljp/co/sony/mc/camera/controller/album/AlbumLauncher$PreferredGallery;->-$$Nest$mgetPackageName(Ljp/co/sony/mc/camera/controller/album/AlbumLauncher$PreferredGallery;)Ljava/lang/String;
 
     move-result-object v8
 
     invoke-virtual {v0, v8}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 175
+    .line 188
     invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v8
@@ -450,7 +553,7 @@
 
     if-eqz v8, :cond_1
 
-    .line 176
+    .line 189
     invoke-virtual {p0, v0, v7}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
 
     return-void
@@ -460,7 +563,7 @@
 
     goto :goto_0
 
-    .line 183
+    .line 196
     :cond_2
     invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
 
@@ -482,7 +585,7 @@
 
     move-result-object v4
 
-    .line 184
+    .line 197
     sget-object v5, Ljp/co/sony/mc/camera/controller/album/AlbumLauncher$1;->$SwitchMap$jp$co$sony$mc$camera$util$CommonUtility$DefaultGallerySetting:[I
 
     invoke-virtual {v4}, Ljp/co/sony/mc/camera/util/CommonUtility$DefaultGallerySetting;->ordinal()I
@@ -495,18 +598,18 @@
 
     const/4 v1, 0x0
 
-    .line 189
+    .line 202
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 190
+    .line 203
     invoke-virtual {v0, v3}, Landroid/content/Intent;->removeExtra(Ljava/lang/String;)V
 
-    .line 191
+    .line 204
     invoke-virtual {v0, p3}, Landroid/content/Intent;->removeExtra(Ljava/lang/String;)V
 
     goto :goto_1
 
-    .line 186
+    .line 199
     :cond_3
     invoke-virtual {v4}, Ljp/co/sony/mc/camera/util/CommonUtility$DefaultGallerySetting;->getPackageName()Ljava/lang/String;
 
@@ -514,7 +617,7 @@
 
     invoke-virtual {v0, p3}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 195
+    .line 208
     :goto_1
     invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
 
@@ -526,12 +629,12 @@
 
     if-eqz p3, :cond_4
 
-    .line 201
+    .line 214
     invoke-virtual {p0, v0, v7}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto :goto_2
 
-    .line 203
+    .line 216
     :cond_4
     invoke-interface {p1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -550,7 +653,7 @@
     :goto_2
     return-void
 
-    .line 160
+    .line 173
     :cond_5
     new-instance p0, Ljava/lang/RuntimeException;
 
@@ -563,18 +666,32 @@
 
 .method private static launchReviewApp(Landroid/app/Activity;Landroid/net/Uri;Ljava/lang/String;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "activity",
+            "uri",
+            "mimetype",
+            "requestCode"
+        }
+    .end annotation
 
-    .line 213
+    .line 226
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "android.intent.action.VIEW"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 214
+    .line 227
     invoke-virtual {v0, p1, p2}, Landroid/content/Intent;->setDataAndType(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 220
+    .line 233
     :try_start_0
     invoke-virtual {p0, v0, p3}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
     :try_end_0
@@ -582,7 +699,7 @@
 
     goto :goto_0
 
-    .line 222
+    .line 235
     :catch_0
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 

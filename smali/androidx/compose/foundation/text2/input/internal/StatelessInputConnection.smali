@@ -1460,7 +1460,7 @@
     .line 169
     new-instance v0, Ljava/lang/StringBuilder;
 
-    const-string/jumbo v1, "setSelection("
+    const-string v1, "setSelection("
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 

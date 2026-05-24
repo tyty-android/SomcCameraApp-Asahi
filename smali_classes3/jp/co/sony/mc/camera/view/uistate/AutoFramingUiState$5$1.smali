@@ -57,7 +57,7 @@
 .method public bridge synthetic emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
 
-    .line 134
+    .line 136
     check-cast p1, Ljava/lang/Boolean;
 
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
@@ -86,7 +86,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 136
+    .line 138
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$5$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;->access$getMessageUiState$p(Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;)Ljp/co/sony/mc/camera/view/uistate/MessageUiState;
@@ -95,7 +95,7 @@
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/MessageUiState;->clearHintText()V
 
-    .line 137
+    .line 139
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$5$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;->access$getMessageUiState$p(Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;)Ljp/co/sony/mc/camera/view/uistate/MessageUiState;
@@ -112,7 +112,7 @@
 
     goto :goto_0
 
-    .line 139
+    .line 141
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$5$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;
 
@@ -120,7 +120,7 @@
 
     move-result-object p0
 
-    .line 140
+    .line 142
     const-class p1, Ljp/co/sony/mc/camera/view/hint/HintTextAutoFramingSizeMenuOpened;
 
     const-string p1, "getSimpleName(...)"
@@ -129,10 +129,10 @@
 
     invoke-static {p2, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 139
+    .line 141
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/view/uistate/MessageUiState;->hideHintText(Ljava/lang/String;)V
 
-    .line 143
+    .line 145
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

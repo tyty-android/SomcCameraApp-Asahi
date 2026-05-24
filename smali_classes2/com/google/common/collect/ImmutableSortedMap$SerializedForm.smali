@@ -44,6 +44,15 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/ImmutableSortedMap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sortedMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -52,10 +61,10 @@
         }
     .end annotation
 
-    .line 901
+    .line 1193
     invoke-direct {p0, p1}, Lcom/google/common/collect/ImmutableMap$SerializedForm;-><init>(Lcom/google/common/collect/ImmutableMap;)V
 
-    .line 902
+    .line 1194
     invoke-virtual {p1}, Lcom/google/common/collect/ImmutableSortedMap;->comparator()Ljava/util/Comparator;
 
     move-result-object p1
@@ -69,8 +78,16 @@
 # virtual methods
 .method bridge synthetic makeBuilder(I)Lcom/google/common/collect/ImmutableMap$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "size"
+        }
+    .end annotation
 
-    .line 897
+    .line 1188
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableSortedMap$SerializedForm;->makeBuilder(I)Lcom/google/common/collect/ImmutableSortedMap$Builder;
 
     move-result-object p0
@@ -80,6 +97,15 @@
 
 .method makeBuilder(I)Lcom/google/common/collect/ImmutableSortedMap$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "size"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -88,7 +114,7 @@
         }
     .end annotation
 
-    .line 907
+    .line 1199
     new-instance p1, Lcom/google/common/collect/ImmutableSortedMap$Builder;
 
     iget-object p0, p0, Lcom/google/common/collect/ImmutableSortedMap$SerializedForm;->comparator:Ljava/util/Comparator;

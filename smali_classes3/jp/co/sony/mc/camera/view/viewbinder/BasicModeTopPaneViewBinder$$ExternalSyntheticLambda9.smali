@@ -30,9 +30,9 @@
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeTopPaneViewBinder$$ExternalSyntheticLambda9;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicModeTopPaneViewBinder;
 
-    check-cast p1, Lkotlin/Pair;
+    check-cast p1, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeTopPaneViewBinder;->$r8$lambda$l0QIBTXk3_a-qD0Ao9tNIfmVIGk(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeTopPaneViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeTopPaneViewBinder;->$r8$lambda$w3EPwPN4_PHWhrYEhY49JRxlqLM(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeTopPaneViewBinder;Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;)Lkotlin/Unit;
 
     move-result-object p0
 

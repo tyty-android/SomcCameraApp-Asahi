@@ -25,6 +25,16 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "info",
+            "playIconId"
+        }
+    .end annotation
 
     .line 82
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

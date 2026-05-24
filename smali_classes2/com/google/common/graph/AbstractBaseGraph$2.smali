@@ -21,11 +21,29 @@
 .end annotation
 
 
+# instance fields
+.field final synthetic this$0:Lcom/google/common/graph/AbstractBaseGraph;
+
+
 # direct methods
 .method constructor <init>(Lcom/google/common/graph/AbstractBaseGraph;Lcom/google/common/graph/BaseGraph;Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "graph",
+            "node"
+        }
+    .end annotation
 
-    .line 109
+    .line 112
+    iput-object p1, p0, Lcom/google/common/graph/AbstractBaseGraph$2;->this$0:Lcom/google/common/graph/AbstractBaseGraph;
+
     invoke-direct {p0, p2, p3}, Lcom/google/common/graph/IncidentEdgeSet;-><init>(Lcom/google/common/graph/BaseGraph;Ljava/lang/Object;)V
 
     return-void
@@ -44,7 +62,7 @@
         }
     .end annotation
 
-    .line 112
+    .line 115
     iget-object v0, p0, Lcom/google/common/graph/AbstractBaseGraph$2;->graph:Lcom/google/common/graph/BaseGraph;
 
     invoke-interface {v0}, Lcom/google/common/graph/BaseGraph;->isDirected()Z
@@ -53,12 +71,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 113
+    .line 116
     iget-object v0, p0, Lcom/google/common/graph/AbstractBaseGraph$2;->graph:Lcom/google/common/graph/BaseGraph;
 
     iget-object v1, p0, Lcom/google/common/graph/AbstractBaseGraph$2;->node:Ljava/lang/Object;
 
-    .line 116
+    .line 119
     invoke-interface {v0, v1}, Lcom/google/common/graph/BaseGraph;->predecessors(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object v0
@@ -67,11 +85,11 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/google/common/graph/AbstractBaseGraph$2$1;
+    new-instance v1, Lcom/google/common/graph/AbstractBaseGraph$2$$ExternalSyntheticLambda0;
 
-    invoke-direct {v1, p0}, Lcom/google/common/graph/AbstractBaseGraph$2$1;-><init>(Lcom/google/common/graph/AbstractBaseGraph$2;)V
+    invoke-direct {v1, p0}, Lcom/google/common/graph/AbstractBaseGraph$2$$ExternalSyntheticLambda0;-><init>(Lcom/google/common/graph/AbstractBaseGraph$2;)V
 
-    .line 115
+    .line 118
     invoke-static {v0, v1}, Lcom/google/common/collect/Iterators;->transform(Ljava/util/Iterator;Lcom/google/common/base/Function;)Ljava/util/Iterator;
 
     move-result-object v0
@@ -80,7 +98,7 @@
 
     iget-object v2, p0, Lcom/google/common/graph/AbstractBaseGraph$2;->node:Ljava/lang/Object;
 
-    .line 125
+    .line 124
     invoke-interface {v1, v2}, Lcom/google/common/graph/BaseGraph;->successors(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object v1
@@ -99,34 +117,34 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/google/common/graph/AbstractBaseGraph$2$2;
+    new-instance v2, Lcom/google/common/graph/AbstractBaseGraph$2$$ExternalSyntheticLambda1;
 
-    invoke-direct {v2, p0}, Lcom/google/common/graph/AbstractBaseGraph$2$2;-><init>(Lcom/google/common/graph/AbstractBaseGraph$2;)V
+    invoke-direct {v2, p0}, Lcom/google/common/graph/AbstractBaseGraph$2$$ExternalSyntheticLambda1;-><init>(Lcom/google/common/graph/AbstractBaseGraph$2;)V
 
-    .line 123
+    .line 121
     invoke-static {v1, v2}, Lcom/google/common/collect/Iterators;->transform(Ljava/util/Iterator;Lcom/google/common/base/Function;)Ljava/util/Iterator;
 
     move-result-object p0
 
-    .line 114
+    .line 117
     invoke-static {v0, p0}, Lcom/google/common/collect/Iterators;->concat(Ljava/util/Iterator;Ljava/util/Iterator;)Ljava/util/Iterator;
 
     move-result-object p0
 
-    .line 113
+    .line 116
     invoke-static {p0}, Lcom/google/common/collect/Iterators;->unmodifiableIterator(Ljava/util/Iterator;)Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p0
 
     return-object p0
 
-    .line 133
+    .line 127
     :cond_0
     iget-object v0, p0, Lcom/google/common/graph/AbstractBaseGraph$2;->graph:Lcom/google/common/graph/BaseGraph;
 
     iget-object v1, p0, Lcom/google/common/graph/AbstractBaseGraph$2;->node:Ljava/lang/Object;
 
-    .line 135
+    .line 129
     invoke-interface {v0, v1}, Lcom/google/common/graph/BaseGraph;->adjacentNodes(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object v0
@@ -135,16 +153,16 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/google/common/graph/AbstractBaseGraph$2$3;
+    new-instance v1, Lcom/google/common/graph/AbstractBaseGraph$2$$ExternalSyntheticLambda2;
 
-    invoke-direct {v1, p0}, Lcom/google/common/graph/AbstractBaseGraph$2$3;-><init>(Lcom/google/common/graph/AbstractBaseGraph$2;)V
+    invoke-direct {v1, p0}, Lcom/google/common/graph/AbstractBaseGraph$2$$ExternalSyntheticLambda2;-><init>(Lcom/google/common/graph/AbstractBaseGraph$2;)V
 
-    .line 134
+    .line 128
     invoke-static {v0, v1}, Lcom/google/common/collect/Iterators;->transform(Ljava/util/Iterator;Lcom/google/common/base/Function;)Ljava/util/Iterator;
 
     move-result-object p0
 
-    .line 133
+    .line 127
     invoke-static {p0}, Lcom/google/common/collect/Iterators;->unmodifiableIterator(Ljava/util/Iterator;)Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p0
@@ -155,8 +173,47 @@
 .method public bridge synthetic iterator()Ljava/util/Iterator;
     .locals 0
 
-    .line 109
+    .line 112
     invoke-virtual {p0}, Lcom/google/common/graph/AbstractBaseGraph$2;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$iterator$0$com-google-common-graph-AbstractBaseGraph$2(Ljava/lang/Object;)Lcom/google/common/graph/EndpointPair;
+    .locals 0
+
+    .line 120
+    iget-object p0, p0, Lcom/google/common/graph/AbstractBaseGraph$2;->node:Ljava/lang/Object;
+
+    invoke-static {p1, p0}, Lcom/google/common/graph/EndpointPair;->ordered(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/graph/EndpointPair;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$iterator$1$com-google-common-graph-AbstractBaseGraph$2(Ljava/lang/Object;)Lcom/google/common/graph/EndpointPair;
+    .locals 0
+
+    .line 125
+    iget-object p0, p0, Lcom/google/common/graph/AbstractBaseGraph$2;->node:Ljava/lang/Object;
+
+    invoke-static {p0, p1}, Lcom/google/common/graph/EndpointPair;->ordered(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/graph/EndpointPair;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$iterator$2$com-google-common-graph-AbstractBaseGraph$2(Ljava/lang/Object;)Lcom/google/common/graph/EndpointPair;
+    .locals 0
+
+    .line 130
+    iget-object p0, p0, Lcom/google/common/graph/AbstractBaseGraph$2;->node:Ljava/lang/Object;
+
+    invoke-static {p0, p1}, Lcom/google/common/graph/EndpointPair;->unordered(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/graph/EndpointPair;
 
     move-result-object p0
 

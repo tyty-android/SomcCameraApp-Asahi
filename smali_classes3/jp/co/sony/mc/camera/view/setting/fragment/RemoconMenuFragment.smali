@@ -261,7 +261,7 @@
 
     const-string v1, "remocon_endurance_mode_fragment"
 
-    const v2, 0x7f090136
+    const v2, 0x7f090135
 
     invoke-virtual {p0, v2, v0, v1}, Landroidx/fragment/app/FragmentTransaction;->replace(ILandroidx/fragment/app/Fragment;Ljava/lang/String;)Landroidx/fragment/app/FragmentTransaction;
 
@@ -505,7 +505,7 @@
 
     const-string v0, "remocon_custom_fragment"
 
-    const v1, 0x7f090136
+    const v1, 0x7f090135
 
     invoke-virtual {p0, v1, p1, v0}, Landroidx/fragment/app/FragmentTransaction;->replace(ILandroidx/fragment/app/Fragment;Ljava/lang/String;)Landroidx/fragment/app/FragmentTransaction;
 
@@ -605,7 +605,7 @@
 
     const-string v1, "remocon_pair_fragment"
 
-    const v2, 0x7f090136
+    const v2, 0x7f090135
 
     invoke-virtual {p0, v2, v0, v1}, Landroidx/fragment/app/FragmentTransaction;->replace(ILandroidx/fragment/app/Fragment;Ljava/lang/String;)Landroidx/fragment/app/FragmentTransaction;
 
@@ -735,6 +735,16 @@
 
 .method private varargs showDialog(Ljp/co/sony/mc/camera/view/messagedialog/DialogId;[Ljava/lang/Object;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dialogId",
+            "objects"
+        }
+    .end annotation
 
     .line 388
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;->isDialogShowing()Z
@@ -794,6 +804,14 @@
 
 .method private updateSetting(Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     .line 362
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;->mSettings:Ljp/co/sony/mc/camera/setting/CameraProSetting;
@@ -923,6 +941,18 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "requestCode",
+            "resultCode",
+            "intent"
+        }
+    .end annotation
 
     .line 291
     invoke-super {p0, p1, p2, p3}, Landroidx/fragment/app/Fragment;->onActivityResult(IILandroid/content/Intent;)V
@@ -1018,8 +1048,20 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "inflater",
+            "container",
+            "savedInstanceState"
+        }
+    .end annotation
 
-    const p3, 0x7f0c00b5
+    const p3, 0x7f0c00ac
 
     const/4 v0, 0x0
 
@@ -1028,7 +1070,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f0904a9
+    const p2, 0x7f0904aa
 
     .line 90
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1037,7 +1079,7 @@
 
     check-cast p2, Landroid/widget/TextView;
 
-    const p3, 0x7f110049
+    const p3, 0x7f110048
 
     .line 91
     invoke-virtual {p0, p3}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;->getString(I)Ljava/lang/String;
@@ -1046,7 +1088,7 @@
 
     invoke-virtual {p2, p3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const p2, 0x7f090161
+    const p2, 0x7f090167
 
     .line 92
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1081,7 +1123,7 @@
 
     move-result-object p3
 
-    const v0, 0x7f11002f
+    const v0, 0x7f11002e
 
     .line 93
     invoke-virtual {p0, v0, p3}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
@@ -1090,7 +1132,7 @@
 
     invoke-virtual {p2, p3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const p2, 0x7f09047a
+    const p2, 0x7f09047b
 
     .line 96
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1101,7 +1143,7 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;->mSwitch:Landroid/widget/Switch;
 
-    const p2, 0x7f090364
+    const p2, 0x7f090366
 
     .line 97
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1112,7 +1154,7 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;->mPairNewController:Landroid/widget/TextView;
 
-    const p2, 0x7f0901a0
+    const p2, 0x7f0901a3
 
     .line 98
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1123,7 +1165,7 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;->mEnduranceModeLayout:Landroid/widget/LinearLayout;
 
-    const p2, 0x7f09019f
+    const p2, 0x7f0901a2
 
     .line 99
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1134,7 +1176,7 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;->mEnduranceModeTextLayout:Landroid/widget/LinearLayout;
 
-    const p2, 0x7f0901a3
+    const p2, 0x7f0901a6
 
     .line 100
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1145,7 +1187,7 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;->mEnduranceMode:Landroid/widget/TextView;
 
-    const p2, 0x7f090151
+    const p2, 0x7f090156
 
     .line 101
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1237,7 +1279,7 @@
 
     invoke-virtual {p2, p3}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const p2, 0x7f0900a3
+    const p2, 0x7f0900ab
 
     .line 156
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1255,6 +1297,16 @@
 
 .method public onDismiss(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "what"
+        }
+    .end annotation
 
     .line 265
     sget-object v0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment$4;->$SwitchMap$jp$co$sony$mc$camera$view$messagedialog$DialogId:[I
@@ -1380,6 +1432,14 @@
 
 .method public onOpen(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "request"
+        }
+    .end annotation
 
     .line 257
     iget-object p1, p1, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
@@ -1459,6 +1519,18 @@
 
 .method public onRequestPermissionsResult(I[Ljava/lang/String;[I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "requestCode",
+            "permissions",
+            "grantResults"
+        }
+    .end annotation
 
     .line 243
     invoke-super {p0, p1, p2, p3}, Landroidx/fragment/app/Fragment;->onRequestPermissionsResult(I[Ljava/lang/String;[I)V

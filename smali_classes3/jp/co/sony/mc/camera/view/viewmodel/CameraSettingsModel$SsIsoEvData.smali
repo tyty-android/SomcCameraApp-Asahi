@@ -76,7 +76,7 @@
 .method public constructor <init>(JII)V
     .locals 0
 
-    .line 870
+    .line 883
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel$SsIsoEvData;->ss:J
@@ -211,7 +211,7 @@
 .method public final getEv()I
     .locals 0
 
-    .line 870
+    .line 883
     iget p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel$SsIsoEvData;->ev:I
 
     return p0
@@ -220,7 +220,7 @@
 .method public final getIso()I
     .locals 0
 
-    .line 870
+    .line 883
     iget p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel$SsIsoEvData;->iso:I
 
     return p0
@@ -229,7 +229,7 @@
 .method public final getSs()J
     .locals 2
 
-    .line 870
+    .line 883
     iget-wide v0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel$SsIsoEvData;->ss:J
 
     return-wide v0

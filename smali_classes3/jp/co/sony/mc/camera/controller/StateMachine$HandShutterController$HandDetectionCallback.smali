@@ -16,4 +16,16 @@
 
 # virtual methods
 .method public abstract onDetected(Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetectorInterface$DetectResultInterface;II)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "result",
+            "detectionWidth",
+            "detectionHeight"
+        }
+    .end annotation
 .end method

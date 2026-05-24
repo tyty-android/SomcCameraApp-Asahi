@@ -36,13 +36,13 @@
 
 # instance fields
 .field final first:Ljava/lang/Object;
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TE;"
         }
-    .end annotation
-
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
     .end annotation
 .end field
 
@@ -59,22 +59,33 @@
 .method constructor <init>(Ljava/lang/Object;[Ljava/lang/Object;)V
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "first",
+            "rest"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;[TE;)V"
         }
     .end annotation
 
-    .line 317
+    .line 343
     invoke-direct {p0}, Ljava/util/AbstractList;-><init>()V
 
-    .line 318
+    .line 344
     iput-object p1, p0, Lcom/google/common/collect/Lists$OnePlusArrayList;->first:Ljava/lang/Object;
 
-    .line 319
+    .line 345
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -90,13 +101,25 @@
 # virtual methods
 .method public get(I)Ljava/lang/Object;
     .locals 1
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TE;"
         }
     .end annotation
 
-    .line 330
+    .line 357
     invoke-virtual {p0}, Lcom/google/common/collect/Lists$OnePlusArrayList;->size()I
 
     move-result v0
@@ -105,7 +128,7 @@
 
     if-nez p1, :cond_0
 
-    .line 331
+    .line 358
     iget-object p0, p0, Lcom/google/common/collect/Lists$OnePlusArrayList;->first:Ljava/lang/Object;
 
     goto :goto_0
@@ -124,7 +147,7 @@
 .method public size()I
     .locals 1
 
-    .line 324
+    .line 350
     iget-object p0, p0, Lcom/google/common/collect/Lists$OnePlusArrayList;->rest:[Ljava/lang/Object;
 
     array-length p0, p0

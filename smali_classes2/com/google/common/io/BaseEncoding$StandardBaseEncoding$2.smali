@@ -31,26 +31,36 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/io/BaseEncoding$StandardBaseEncoding;Ljava/io/Reader;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$reader"
+        }
+    .end annotation
 
-    .line 732
-    iput-object p1, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->this$0:Lcom/google/common/io/BaseEncoding$StandardBaseEncoding;
-
+    .line 785
     iput-object p2, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->val$reader:Ljava/io/Reader;
+
+    iput-object p1, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->this$0:Lcom/google/common/io/BaseEncoding$StandardBaseEncoding;
 
     invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
 
     const/4 p1, 0x0
 
-    .line 733
+    .line 786
     iput p1, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->bitBuffer:I
 
-    .line 734
+    .line 787
     iput p1, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->bitBufferLength:I
 
-    .line 735
+    .line 788
     iput p1, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->readChars:I
 
-    .line 736
+    .line 789
     iput-boolean p1, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->hitPadding:Z
 
     return-void
@@ -66,7 +76,7 @@
         }
     .end annotation
 
-    .line 795
+    .line 848
     iget-object p0, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->val$reader:Ljava/io/Reader;
 
     invoke-virtual {p0}, Ljava/io/Reader;->close()V
@@ -82,7 +92,7 @@
         }
     .end annotation
 
-    .line 741
+    .line 794
     :cond_0
     :goto_0
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->val$reader:Ljava/io/Reader;
@@ -95,7 +105,7 @@
 
     if-ne v0, v1, :cond_3
 
-    .line 743
+    .line 796
     iget-boolean v0, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->hitPadding:Z
 
     if-nez v0, :cond_2
@@ -114,23 +124,17 @@
 
     goto :goto_1
 
-    .line 744
+    .line 797
     :cond_1
     new-instance v0, Lcom/google/common/io/BaseEncoding$DecodingException;
 
-    iget p0, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->readChars:I
-
     new-instance v1, Ljava/lang/StringBuilder;
-
-    const/16 v2, 0x20
-
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(I)V
 
     const-string v2, "Invalid input length "
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v1
+    iget p0, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->readChars:I
 
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -148,7 +152,7 @@
     :goto_1
     return v1
 
-    .line 748
+    .line 801
     :cond_3
     iget v1, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->readChars:I
 
@@ -160,7 +164,7 @@
 
     int-to-char v0, v0
 
-    .line 750
+    .line 803
     iget-object v1, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->this$0:Lcom/google/common/io/BaseEncoding$StandardBaseEncoding;
 
     iget-object v1, v1, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding;->paddingChar:Ljava/lang/Character;
@@ -177,7 +181,7 @@
 
     if-ne v1, v0, :cond_6
 
-    .line 751
+    .line 804
     iget-boolean v0, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->hitPadding:Z
 
     if-nez v0, :cond_5
@@ -194,7 +198,7 @@
 
     sub-int/2addr v1, v2
 
-    .line 752
+    .line 805
     invoke-virtual {v0, v1}, Lcom/google/common/io/BaseEncoding$Alphabet;->isValidPaddingStartPosition(I)Z
 
     move-result v0
@@ -203,23 +207,17 @@
 
     goto :goto_2
 
-    .line 753
+    .line 806
     :cond_4
     new-instance v0, Lcom/google/common/io/BaseEncoding$DecodingException;
 
-    iget p0, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->readChars:I
-
     new-instance v1, Ljava/lang/StringBuilder;
-
-    const/16 v2, 0x29
-
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(I)V
 
     const-string v2, "Padding cannot start at index "
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v1
+    iget p0, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->readChars:I
 
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -233,20 +231,20 @@
 
     throw v0
 
-    .line 755
+    .line 808
     :cond_5
     :goto_2
     iput-boolean v2, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->hitPadding:Z
 
-    goto/16 :goto_0
+    goto :goto_0
 
-    .line 756
+    .line 809
     :cond_6
     iget-boolean v1, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->hitPadding:Z
 
     if-nez v1, :cond_7
 
-    .line 760
+    .line 813
     iget v1, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->bitBuffer:I
 
     iget-object v2, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->this$0:Lcom/google/common/io/BaseEncoding$StandardBaseEncoding;
@@ -259,7 +257,7 @@
 
     iput v1, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->bitBuffer:I
 
-    .line 761
+    .line 814
     iget-object v2, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->this$0:Lcom/google/common/io/BaseEncoding$StandardBaseEncoding;
 
     iget-object v2, v2, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding;->alphabet:Lcom/google/common/io/BaseEncoding$Alphabet;
@@ -272,7 +270,7 @@
 
     iput v0, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->bitBuffer:I
 
-    .line 762
+    .line 815
     iget v0, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->bitBufferLength:I
 
     iget-object v1, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->this$0:Lcom/google/common/io/BaseEncoding$StandardBaseEncoding;
@@ -291,10 +289,10 @@
 
     sub-int/2addr v0, v1
 
-    .line 765
+    .line 818
     iput v0, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->bitBufferLength:I
 
-    .line 766
+    .line 819
     iget p0, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->bitBuffer:I
 
     shr-int/2addr p0, v0
@@ -303,23 +301,15 @@
 
     return p0
 
-    .line 757
+    .line 810
     :cond_7
     new-instance v1, Lcom/google/common/io/BaseEncoding$DecodingException;
 
-    iget p0, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->readChars:I
-
     new-instance v2, Ljava/lang/StringBuilder;
-
-    const/16 v3, 0x3d
-
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(I)V
 
     const-string v3, "Expected padding character but found \'"
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
@@ -330,6 +320,8 @@
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
+
+    iget p0, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->readChars:I
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -346,6 +338,19 @@
 
 .method public read([BII)I
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "buf",
+            "off",
+            "len"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -354,7 +359,7 @@
 
     add-int/2addr p3, p2
 
-    .line 779
+    .line 832
     array-length v0, p1
 
     invoke-static {p2, p3, v0}, Lcom/google/common/base/Preconditions;->checkPositionIndexes(III)V
@@ -364,7 +369,7 @@
     :goto_0
     if-ge v0, p3, :cond_2
 
-    .line 783
+    .line 836
     invoke-virtual {p0}, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$2;->read()I
 
     move-result v1
@@ -388,7 +393,7 @@
     :cond_1
     int-to-byte v1, v1
 
-    .line 788
+    .line 841
     aput-byte v1, p1, v0
 
     add-int/lit8 v0, v0, 0x1

@@ -18,7 +18,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1139
+    .line 1131
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -26,6 +26,14 @@
 
 .method public static getApi1Value(I)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "autoFramingOrientation"
+        }
+    .end annotation
 
     if-eqz p0, :cond_1
 
@@ -37,13 +45,13 @@
 
     goto :goto_0
 
-    .line 1148
+    .line 1140
     :cond_0
     const-string p0, "landscape"
 
     goto :goto_0
 
-    .line 1145
+    .line 1137
     :cond_1
     const-string p0, "portrait"
 
@@ -53,8 +61,16 @@
 
 .method static getApi2Value(Ljava/lang/String;)Ljava/lang/Integer;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "autoFramingOrientation"
+        }
+    .end annotation
 
-    .line 1157
+    .line 1149
     invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
 
     const-string v0, "portrait"
@@ -80,7 +96,7 @@
     :cond_0
     const/4 p0, 0x1
 
-    .line 1163
+    .line 1155
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -90,7 +106,7 @@
     :cond_1
     const/4 p0, 0x0
 
-    .line 1159
+    .line 1151
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0

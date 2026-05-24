@@ -3,12 +3,12 @@
 .source "CameraSettings.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Ljp/co/sony/mc/camera/setting/SettingsBase$IsTempChangedCommand;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ljp/co/sony/mc/camera/setting/CameraSettings;->onSettingChanged(Ljava/util/List;Ljava/util/Map;)V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Ljp/co/sony/mc/camera/setting/CameraSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,30 +17,11 @@
 .end annotation
 
 
-# instance fields
-.field final synthetic this$0:Ljp/co/sony/mc/camera/setting/CameraSettings;
-
-.field final synthetic val$changedKeyNames:Ljava/util/List;
-
-.field final synthetic val$entry:Ljava/util/Map$Entry;
-
-
 # direct methods
-.method constructor <init>(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljava/util/Map$Entry;Ljava/util/List;)V
+.method constructor <init>()V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
 
-    .line 4966
-    iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CameraSettings$388;->this$0:Ljp/co/sony/mc/camera/setting/CameraSettings;
-
-    iput-object p2, p0, Ljp/co/sony/mc/camera/setting/CameraSettings$388;->val$entry:Ljava/util/Map$Entry;
-
-    iput-object p3, p0, Ljp/co/sony/mc/camera/setting/CameraSettings$388;->val$changedKeyNames:Ljava/util/List;
-
+    .line 4140
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -48,37 +29,51 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 4
+.method public isTempChanged(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Z
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key"
+        }
+    .end annotation
 
-    .line 4969
-    iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraSettings$388;->val$entry:Ljava/util/Map$Entry;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljp/co/sony/mc/camera/setting/SettingsBase;",
+            "Ljp/co/sony/mc/camera/setting/SettingKey$Key<",
+            "TT;>;)Z"
+        }
+    .end annotation
 
-    invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+    .line 4144
+    check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    move-result-object v0
+    .line 4145
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetWbExtensionData(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;
 
-    check-cast v0, Ljp/co/sony/mc/camera/setting/CameraProSettingChangedListener;
+    move-result-object p0
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraSettings$388;->this$0:Ljp/co/sony/mc/camera/setting/CameraSettings;
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmWbExtensionData(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;
 
-    invoke-static {v1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCapturingMode(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    move-result-object p1
 
-    move-result-object v1
+    if-eq p0, p1, :cond_0
 
-    iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CameraSettings$388;->this$0:Ljp/co/sony/mc/camera/setting/CameraSettings;
+    const/4 p0, 0x1
 
-    invoke-static {v2}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCameraId(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    goto :goto_0
 
-    move-result-object v2
+    :cond_0
+    const/4 p0, 0x0
 
-    new-instance v3, Ljava/util/ArrayList;
-
-    iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraSettings$388;->val$changedKeyNames:Ljava/util/List;
-
-    invoke-direct {v3, p0}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
-
-    invoke-interface {v0, v1, v2, v3}, Ljp/co/sony/mc/camera/setting/CameraProSettingChangedListener;->onCameraSettingChanged(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljava/util/List;)V
-
-    return-void
+    :goto_0
+    return p0
 .end method

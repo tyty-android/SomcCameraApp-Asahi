@@ -45,7 +45,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -86,7 +86,7 @@
 .end field
 
 .field final ticker:Lcom/google/common/base/Ticker;
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -115,6 +115,37 @@
 # direct methods
 .method private constructor <init>(Lcom/google/common/cache/LocalCache$Strength;Lcom/google/common/cache/LocalCache$Strength;Lcom/google/common/base/Equivalence;Lcom/google/common/base/Equivalence;JJJLcom/google/common/cache/Weigher;ILcom/google/common/cache/RemovalListener;Lcom/google/common/base/Ticker;Lcom/google/common/cache/CacheLoader;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "keyStrength",
+            "valueStrength",
+            "keyEquivalence",
+            "valueEquivalence",
+            "expireAfterWriteNanos",
+            "expireAfterAccessNanos",
+            "maxWeight",
+            "weigher",
+            "concurrencyLevel",
+            "removalListener",
+            "ticker",
+            "loader"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -136,40 +167,40 @@
         }
     .end annotation
 
-    .line 4548
+    .line 4577
     invoke-direct {p0}, Lcom/google/common/cache/ForwardingCache;-><init>()V
 
-    .line 4549
+    .line 4578
     iput-object p1, p0, Lcom/google/common/cache/LocalCache$ManualSerializationProxy;->keyStrength:Lcom/google/common/cache/LocalCache$Strength;
 
-    .line 4550
+    .line 4579
     iput-object p2, p0, Lcom/google/common/cache/LocalCache$ManualSerializationProxy;->valueStrength:Lcom/google/common/cache/LocalCache$Strength;
 
-    .line 4551
+    .line 4580
     iput-object p3, p0, Lcom/google/common/cache/LocalCache$ManualSerializationProxy;->keyEquivalence:Lcom/google/common/base/Equivalence;
 
-    .line 4552
+    .line 4581
     iput-object p4, p0, Lcom/google/common/cache/LocalCache$ManualSerializationProxy;->valueEquivalence:Lcom/google/common/base/Equivalence;
 
-    .line 4553
+    .line 4582
     iput-wide p5, p0, Lcom/google/common/cache/LocalCache$ManualSerializationProxy;->expireAfterWriteNanos:J
 
-    .line 4554
+    .line 4583
     iput-wide p7, p0, Lcom/google/common/cache/LocalCache$ManualSerializationProxy;->expireAfterAccessNanos:J
 
-    .line 4555
+    .line 4584
     iput-wide p9, p0, Lcom/google/common/cache/LocalCache$ManualSerializationProxy;->maxWeight:J
 
-    .line 4556
+    .line 4585
     iput-object p11, p0, Lcom/google/common/cache/LocalCache$ManualSerializationProxy;->weigher:Lcom/google/common/cache/Weigher;
 
-    .line 4557
+    .line 4586
     iput p12, p0, Lcom/google/common/cache/LocalCache$ManualSerializationProxy;->concurrencyLevel:I
 
-    .line 4558
+    .line 4587
     iput-object p13, p0, Lcom/google/common/cache/LocalCache$ManualSerializationProxy;->removalListener:Lcom/google/common/cache/RemovalListener;
 
-    .line 4559
+    .line 4588
     invoke-static {}, Lcom/google/common/base/Ticker;->systemTicker()Lcom/google/common/base/Ticker;
 
     move-result-object p1
@@ -186,7 +217,7 @@
     :cond_1
     iput-object p14, p0, Lcom/google/common/cache/LocalCache$ManualSerializationProxy;->ticker:Lcom/google/common/base/Ticker;
 
-    .line 4560
+    .line 4589
     iput-object p15, p0, Lcom/google/common/cache/LocalCache$ManualSerializationProxy;->loader:Lcom/google/common/cache/CacheLoader;
 
     return-void
@@ -194,6 +225,15 @@
 
 .method constructor <init>(Lcom/google/common/cache/LocalCache;)V
     .locals 16
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cache"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -204,7 +244,7 @@
 
     move-object/from16 v0, p1
 
-    .line 4521
+    .line 4550
     iget-object v1, v0, Lcom/google/common/cache/LocalCache;->keyStrength:Lcom/google/common/cache/LocalCache$Strength;
 
     iget-object v2, v0, Lcom/google/common/cache/LocalCache;->valueStrength:Lcom/google/common/cache/LocalCache$Strength;
@@ -238,6 +278,15 @@
 
 .method private readObject(Ljava/io/ObjectInputStream;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "in"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -245,15 +294,15 @@
         }
     .end annotation
 
-    .line 4596
+    .line 4625
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->defaultReadObject()V
 
-    .line 4597
+    .line 4626
     invoke-virtual {p0}, Lcom/google/common/cache/LocalCache$ManualSerializationProxy;->recreateCacheBuilder()Lcom/google/common/cache/CacheBuilder;
 
     move-result-object p1
 
-    .line 4598
+    .line 4627
     invoke-virtual {p1}, Lcom/google/common/cache/CacheBuilder;->build()Lcom/google/common/cache/Cache;
 
     move-result-object p1
@@ -266,7 +315,7 @@
 .method private readResolve()Ljava/lang/Object;
     .locals 0
 
-    .line 4602
+    .line 4631
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$ManualSerializationProxy;->delegate:Lcom/google/common/cache/Cache;
 
     return-object p0
@@ -284,7 +333,7 @@
         }
     .end annotation
 
-    .line 4607
+    .line 4636
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$ManualSerializationProxy;->delegate:Lcom/google/common/cache/Cache;
 
     return-object p0
@@ -293,7 +342,7 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 4501
+    .line 4530
     invoke-virtual {p0}, Lcom/google/common/cache/LocalCache$ManualSerializationProxy;->delegate()Lcom/google/common/cache/Cache;
 
     move-result-object p0
@@ -311,59 +360,59 @@
         }
     .end annotation
 
-    .line 4565
+    .line 4594
     invoke-static {}, Lcom/google/common/cache/CacheBuilder;->newBuilder()Lcom/google/common/cache/CacheBuilder;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/google/common/cache/LocalCache$ManualSerializationProxy;->keyStrength:Lcom/google/common/cache/LocalCache$Strength;
 
-    .line 4566
+    .line 4595
     invoke-virtual {v0, v1}, Lcom/google/common/cache/CacheBuilder;->setKeyStrength(Lcom/google/common/cache/LocalCache$Strength;)Lcom/google/common/cache/CacheBuilder;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/google/common/cache/LocalCache$ManualSerializationProxy;->valueStrength:Lcom/google/common/cache/LocalCache$Strength;
 
-    .line 4567
+    .line 4596
     invoke-virtual {v0, v1}, Lcom/google/common/cache/CacheBuilder;->setValueStrength(Lcom/google/common/cache/LocalCache$Strength;)Lcom/google/common/cache/CacheBuilder;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/google/common/cache/LocalCache$ManualSerializationProxy;->keyEquivalence:Lcom/google/common/base/Equivalence;
 
-    .line 4568
+    .line 4597
     invoke-virtual {v0, v1}, Lcom/google/common/cache/CacheBuilder;->keyEquivalence(Lcom/google/common/base/Equivalence;)Lcom/google/common/cache/CacheBuilder;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/google/common/cache/LocalCache$ManualSerializationProxy;->valueEquivalence:Lcom/google/common/base/Equivalence;
 
-    .line 4569
+    .line 4598
     invoke-virtual {v0, v1}, Lcom/google/common/cache/CacheBuilder;->valueEquivalence(Lcom/google/common/base/Equivalence;)Lcom/google/common/cache/CacheBuilder;
 
     move-result-object v0
 
     iget v1, p0, Lcom/google/common/cache/LocalCache$ManualSerializationProxy;->concurrencyLevel:I
 
-    .line 4570
+    .line 4599
     invoke-virtual {v0, v1}, Lcom/google/common/cache/CacheBuilder;->concurrencyLevel(I)Lcom/google/common/cache/CacheBuilder;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/google/common/cache/LocalCache$ManualSerializationProxy;->removalListener:Lcom/google/common/cache/RemovalListener;
 
-    .line 4571
+    .line 4600
     invoke-virtual {v0, v1}, Lcom/google/common/cache/CacheBuilder;->removalListener(Lcom/google/common/cache/RemovalListener;)Lcom/google/common/cache/CacheBuilder;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    .line 4572
+    .line 4601
     iput-boolean v1, v0, Lcom/google/common/cache/CacheBuilder;->strictParsing:Z
 
-    .line 4573
+    .line 4602
     iget-wide v1, p0, Lcom/google/common/cache/LocalCache$ManualSerializationProxy;->expireAfterWriteNanos:J
 
     const-wide/16 v3, 0x0
@@ -372,12 +421,12 @@
 
     if-lez v5, :cond_0
 
-    .line 4574
+    .line 4603
     sget-object v5, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
 
     invoke-virtual {v0, v1, v2, v5}, Lcom/google/common/cache/CacheBuilder;->expireAfterWrite(JLjava/util/concurrent/TimeUnit;)Lcom/google/common/cache/CacheBuilder;
 
-    .line 4576
+    .line 4605
     :cond_0
     iget-wide v1, p0, Lcom/google/common/cache/LocalCache$ManualSerializationProxy;->expireAfterAccessNanos:J
 
@@ -385,12 +434,12 @@
 
     if-lez v3, :cond_1
 
-    .line 4577
+    .line 4606
     sget-object v3, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/google/common/cache/CacheBuilder;->expireAfterAccess(JLjava/util/concurrent/TimeUnit;)Lcom/google/common/cache/CacheBuilder;
 
-    .line 4579
+    .line 4608
     :cond_1
     iget-object v1, p0, Lcom/google/common/cache/LocalCache$ManualSerializationProxy;->weigher:Lcom/google/common/cache/Weigher;
 
@@ -400,24 +449,24 @@
 
     if-eq v1, v2, :cond_2
 
-    .line 4580
+    .line 4609
     iget-object v1, p0, Lcom/google/common/cache/LocalCache$ManualSerializationProxy;->weigher:Lcom/google/common/cache/Weigher;
 
     invoke-virtual {v0, v1}, Lcom/google/common/cache/CacheBuilder;->weigher(Lcom/google/common/cache/Weigher;)Lcom/google/common/cache/CacheBuilder;
 
-    .line 4581
+    .line 4610
     iget-wide v1, p0, Lcom/google/common/cache/LocalCache$ManualSerializationProxy;->maxWeight:J
 
     cmp-long v3, v1, v3
 
     if-eqz v3, :cond_3
 
-    .line 4582
+    .line 4611
     invoke-virtual {v0, v1, v2}, Lcom/google/common/cache/CacheBuilder;->maximumWeight(J)Lcom/google/common/cache/CacheBuilder;
 
     goto :goto_0
 
-    .line 4585
+    .line 4614
     :cond_2
     iget-wide v1, p0, Lcom/google/common/cache/LocalCache$ManualSerializationProxy;->maxWeight:J
 
@@ -425,17 +474,17 @@
 
     if-eqz v3, :cond_3
 
-    .line 4586
+    .line 4615
     invoke-virtual {v0, v1, v2}, Lcom/google/common/cache/CacheBuilder;->maximumSize(J)Lcom/google/common/cache/CacheBuilder;
 
-    .line 4589
+    .line 4618
     :cond_3
     :goto_0
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$ManualSerializationProxy;->ticker:Lcom/google/common/base/Ticker;
 
     if-eqz p0, :cond_4
 
-    .line 4590
+    .line 4619
     invoke-virtual {v0, p0}, Lcom/google/common/cache/CacheBuilder;->ticker(Lcom/google/common/base/Ticker;)Lcom/google/common/cache/CacheBuilder;
 
     :cond_4

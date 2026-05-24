@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/primitives/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Number;",
@@ -35,7 +38,7 @@
 
     const/4 v0, 0x0
 
-    .line 43
+    .line 45
     invoke-static {v0}, Lcom/google/common/primitives/UnsignedInteger;->fromIntBits(I)Lcom/google/common/primitives/UnsignedInteger;
 
     move-result-object v0
@@ -44,7 +47,7 @@
 
     const/4 v0, 0x1
 
-    .line 44
+    .line 46
     invoke-static {v0}, Lcom/google/common/primitives/UnsignedInteger;->fromIntBits(I)Lcom/google/common/primitives/UnsignedInteger;
 
     move-result-object v0
@@ -53,7 +56,7 @@
 
     const/4 v0, -0x1
 
-    .line 45
+    .line 47
     invoke-static {v0}, Lcom/google/common/primitives/UnsignedInteger;->fromIntBits(I)Lcom/google/common/primitives/UnsignedInteger;
 
     move-result-object v0
@@ -65,11 +68,19 @@
 
 .method private constructor <init>(I)V
     .locals 0
-
-    .line 49
-    invoke-direct {p0}, Ljava/lang/Number;-><init>()V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     .line 51
+    invoke-direct {p0}, Ljava/lang/Number;-><init>()V
+
+    .line 53
     iput p1, p0, Lcom/google/common/primitives/UnsignedInteger;->value:I
 
     return-void
@@ -77,8 +88,16 @@
 
 .method public static fromIntBits(I)Lcom/google/common/primitives/UnsignedInteger;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bits"
+        }
+    .end annotation
 
-    .line 67
+    .line 69
     new-instance v0, Lcom/google/common/primitives/UnsignedInteger;
 
     invoke-direct {v0, p0}, Lcom/google/common/primitives/UnsignedInteger;-><init>(I)V
@@ -88,6 +107,14 @@
 
 .method public static valueOf(J)Lcom/google/common/primitives/UnsignedInteger;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     const-wide v0, 0xffffffffL
 
@@ -104,7 +131,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 75
+    .line 77
     :goto_0
     const-string v1, "value (%s) is outside the range for an unsigned integer value"
 
@@ -112,7 +139,7 @@
 
     long-to-int p0, p0
 
-    .line 79
+    .line 81
     invoke-static {p0}, Lcom/google/common/primitives/UnsignedInteger;->fromIntBits(I)Lcom/google/common/primitives/UnsignedInteger;
 
     move-result-object p0
@@ -122,10 +149,18 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/primitives/UnsignedInteger;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "string"
+        }
+    .end annotation
 
     const/16 v0, 0xa
 
-    .line 105
+    .line 107
     invoke-static {p0, v0}, Lcom/google/common/primitives/UnsignedInteger;->valueOf(Ljava/lang/String;I)Lcom/google/common/primitives/UnsignedInteger;
 
     move-result-object p0
@@ -135,8 +170,18 @@
 
 .method public static valueOf(Ljava/lang/String;I)Lcom/google/common/primitives/UnsignedInteger;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "string",
+            "radix"
+        }
+    .end annotation
 
-    .line 116
+    .line 118
     invoke-static {p0, p1}, Lcom/google/common/primitives/UnsignedInts;->parseUnsignedInt(Ljava/lang/String;I)I
 
     move-result p0
@@ -150,11 +195,19 @@
 
 .method public static valueOf(Ljava/math/BigInteger;)Lcom/google/common/primitives/UnsignedInteger;
     .locals 2
-
-    .line 89
-    invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     .line 91
+    invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 93
     invoke-virtual {p0}, Ljava/math/BigInteger;->signum()I
 
     move-result v0
@@ -179,10 +232,10 @@
     :goto_0
     const-string v1, "value (%s) is outside the range for an unsigned integer value"
 
-    .line 90
+    .line 92
     invoke-static {v0, v1, p0}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;)V
 
-    .line 94
+    .line 96
     invoke-virtual {p0}, Ljava/math/BigInteger;->intValue()I
 
     move-result p0
@@ -199,7 +252,7 @@
 .method public bigIntegerValue()Ljava/math/BigInteger;
     .locals 2
 
-    .line 209
+    .line 212
     invoke-virtual {p0}, Lcom/google/common/primitives/UnsignedInteger;->longValue()J
 
     move-result-wide v0
@@ -213,11 +266,19 @@
 
 .method public compareTo(Lcom/google/common/primitives/UnsignedInteger;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "other"
+        }
+    .end annotation
 
-    .line 219
+    .line 222
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 220
+    .line 223
     iget p0, p0, Lcom/google/common/primitives/UnsignedInteger;->value:I
 
     iget p1, p1, Lcom/google/common/primitives/UnsignedInteger;->value:I
@@ -231,8 +292,16 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "other"
+        }
+    .end annotation
 
-    .line 41
+    .line 42
     check-cast p1, Lcom/google/common/primitives/UnsignedInteger;
 
     invoke-virtual {p0, p1}, Lcom/google/common/primitives/UnsignedInteger;->compareTo(Lcom/google/common/primitives/UnsignedInteger;)I
@@ -244,8 +313,16 @@
 
 .method public dividedBy(Lcom/google/common/primitives/UnsignedInteger;)Lcom/google/common/primitives/UnsignedInteger;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "val"
+        }
+    .end annotation
 
-    .line 158
+    .line 161
     iget p0, p0, Lcom/google/common/primitives/UnsignedInteger;->value:I
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -270,7 +347,7 @@
 .method public doubleValue()D
     .locals 2
 
-    .line 204
+    .line 207
     invoke-virtual {p0}, Lcom/google/common/primitives/UnsignedInteger;->longValue()J
 
     move-result-wide v0
@@ -283,21 +360,29 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
-    .line 230
+    .line 233
     instance-of v0, p1, Lcom/google/common/primitives/UnsignedInteger;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 231
+    .line 234
     check-cast p1, Lcom/google/common/primitives/UnsignedInteger;
 
-    .line 232
+    .line 235
     iget p0, p0, Lcom/google/common/primitives/UnsignedInteger;->value:I
 
     iget p1, p1, Lcom/google/common/primitives/UnsignedInteger;->value:I
@@ -313,7 +398,7 @@
 .method public floatValue()F
     .locals 2
 
-    .line 195
+    .line 198
     invoke-virtual {p0}, Lcom/google/common/primitives/UnsignedInteger;->longValue()J
 
     move-result-wide v0
@@ -326,7 +411,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 225
+    .line 228
     iget p0, p0, Lcom/google/common/primitives/UnsignedInteger;->value:I
 
     return p0
@@ -335,7 +420,7 @@
 .method public intValue()I
     .locals 0
 
-    .line 180
+    .line 183
     iget p0, p0, Lcom/google/common/primitives/UnsignedInteger;->value:I
 
     return p0
@@ -344,7 +429,7 @@
 .method public longValue()J
     .locals 2
 
-    .line 186
+    .line 189
     iget p0, p0, Lcom/google/common/primitives/UnsignedInteger;->value:I
 
     invoke-static {p0}, Lcom/google/common/primitives/UnsignedInts;->toLong(I)J
@@ -356,8 +441,16 @@
 
 .method public minus(Lcom/google/common/primitives/UnsignedInteger;)Lcom/google/common/primitives/UnsignedInteger;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "val"
+        }
+    .end annotation
 
-    .line 136
+    .line 138
     iget p0, p0, Lcom/google/common/primitives/UnsignedInteger;->value:I
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -379,8 +472,16 @@
 
 .method public mod(Lcom/google/common/primitives/UnsignedInteger;)Lcom/google/common/primitives/UnsignedInteger;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "val"
+        }
+    .end annotation
 
-    .line 168
+    .line 171
     iget p0, p0, Lcom/google/common/primitives/UnsignedInteger;->value:I
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -404,8 +505,16 @@
 
 .method public plus(Lcom/google/common/primitives/UnsignedInteger;)Lcom/google/common/primitives/UnsignedInteger;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "val"
+        }
+    .end annotation
 
-    .line 126
+    .line 128
     iget p0, p0, Lcom/google/common/primitives/UnsignedInteger;->value:I
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -427,8 +536,16 @@
 
 .method public times(Lcom/google/common/primitives/UnsignedInteger;)Lcom/google/common/primitives/UnsignedInteger;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "val"
+        }
+    .end annotation
 
-    .line 148
+    .line 151
     iget p0, p0, Lcom/google/common/primitives/UnsignedInteger;->value:I
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -453,7 +570,7 @@
 
     const/16 v0, 0xa
 
-    .line 240
+    .line 243
     invoke-virtual {p0, v0}, Lcom/google/common/primitives/UnsignedInteger;->toString(I)Ljava/lang/String;
 
     move-result-object p0
@@ -463,8 +580,16 @@
 
 .method public toString(I)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "radix"
+        }
+    .end annotation
 
-    .line 249
+    .line 252
     iget p0, p0, Lcom/google/common/primitives/UnsignedInteger;->value:I
 
     invoke-static {p0, p1}, Lcom/google/common/primitives/UnsignedInts;->toString(II)Ljava/lang/String;

@@ -4,6 +4,8 @@
 
 
 # static fields
+.field public static final ADD_CONTENT_CACHE_ONLY:I = -0x2
+
 .field public static final INCREMENTAL_INVALID:I = -0x1
 
 .field private static final INCREMENTAL_MAX:I = 0x7ffffffe
@@ -19,12 +21,12 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 42
+    .line 46
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 37
+    .line 41
     iput v0, p0, Ljp/co/sony/mc/camera/util/IncrementalId;->mId:I
 
     return-void
@@ -39,13 +41,13 @@
 
     const/4 v0, 0x0
 
-    .line 74
+    .line 78
     :try_start_0
     iput v0, p0, Ljp/co/sony/mc/camera/util/IncrementalId;->mId:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 75
+    .line 79
     monitor-exit p0
 
     return-void
@@ -65,7 +67,7 @@
 
     monitor-enter p0
 
-    .line 61
+    .line 65
     :try_start_0
     iget v1, p0, Ljp/co/sony/mc/camera/util/IncrementalId;->mId:I
 
@@ -75,10 +77,10 @@
 
     if-lt v1, v2, :cond_0
 
-    .line 62
+    .line 66
     iput v3, p0, Ljp/co/sony/mc/camera/util/IncrementalId;->mId:I
 
-    .line 64
+    .line 68
     :cond_0
     iget v1, p0, Ljp/co/sony/mc/camera/util/IncrementalId;->mId:I
 
@@ -88,7 +90,7 @@
 
     iput v1, p0, Ljp/co/sony/mc/camera/util/IncrementalId;->mId:I
 
-    .line 65
+    .line 69
     sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v1, :cond_1
@@ -111,7 +113,7 @@
 
     iget v0, p0, Ljp/co/sony/mc/camera/util/IncrementalId;->mId:I
 
-    .line 66
+    .line 70
     invoke-static {v0}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
     move-result-object v0
@@ -126,10 +128,10 @@
 
     aput-object v0, v1, v2
 
-    .line 65
+    .line 69
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 67
+    .line 71
     :cond_1
     iget v0, p0, Ljp/co/sony/mc/camera/util/IncrementalId;->mId:I
     :try_end_0
@@ -150,7 +152,7 @@
 .method public getNext()I
     .locals 0
 
-    .line 52
+    .line 56
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/util/IncrementalId;->generateNext()I
 
     move-result p0

@@ -157,9 +157,9 @@
 
     const/4 p1, 0x3
 
-    const v0, 0x7f080091
+    const v0, 0x7f080092
 
-    const v1, 0x7f080090
+    const v1, 0x7f080091
 
     if-eq p0, p1, :cond_1
 
@@ -196,12 +196,12 @@
     goto :goto_0
 
     :cond_3
-    const v0, 0x7f08008f
+    const v0, 0x7f080090
 
     goto :goto_0
 
     :cond_4
-    const v0, 0x7f08008e
+    const v0, 0x7f08008f
 
     :goto_0
     return v0
@@ -306,7 +306,7 @@
 
     new-instance v1, Ljava/lang/StringBuilder;
 
-    const-string v2, "setBackgroundResources focus state ["
+    const-string/jumbo v2, "setBackgroundResources focus state ["
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 

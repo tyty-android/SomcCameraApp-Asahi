@@ -22,7 +22,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 423
+    .line 425
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -30,11 +30,19 @@
 
 .method public constructor <init>([F)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "poseRotation"
+        }
+    .end annotation
 
-    .line 431
+    .line 433
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 432
+    .line 434
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$PoseRotationResult;->mPoseRotation:[F
 
     return-void
@@ -45,7 +53,7 @@
 .method public getPoseRotation()[F
     .locals 0
 
-    .line 441
+    .line 443
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$PoseRotationResult;->mPoseRotation:[F
 
     return-object p0

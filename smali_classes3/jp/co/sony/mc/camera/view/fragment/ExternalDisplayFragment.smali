@@ -15,12 +15,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nExternalDisplayFragment.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ExternalDisplayFragment.kt\njp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment\n+ 2 Delegates.kt\nkotlin/properties/Delegates\n*L\n1#1,1246:1\n33#2,3:1247\n*S KotlinDebug\n*F\n+ 1 ExternalDisplayFragment.kt\njp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment\n*L\n144#1:1247,3\n*E\n"
+    value = "SMAP\nExternalDisplayFragment.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ExternalDisplayFragment.kt\njp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment\n+ 2 Delegates.kt\nkotlin/properties/Delegates\n*L\n1#1,1127:1\n33#2,3:1128\n*S KotlinDebug\n*F\n+ 1 ExternalDisplayFragment.kt\njp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment\n*L\n141#1:1128,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u00e6\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0005\n\u0002\u0010\t\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\t\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\r\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0012\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010 \n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0018\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\t\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u000b\u0008\u0007\u0018\u00002\u00020\u00012\u00020\u00022\u00020\u0003B/\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\u0008\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\u0006\u0010\u000c\u001a\u00020\r\u00a2\u0006\u0004\u0008\u000e\u0010\u000fJ&\u0010`\u001a\u0004\u0018\u0001032\u0006\u0010a\u001a\u00020b2\u0008\u0010c\u001a\u0004\u0018\u00010d2\u0008\u0010e\u001a\u0004\u0018\u00010fH\u0016J\u001a\u0010g\u001a\u00020h2\u0006\u0010i\u001a\u0002032\u0008\u0010e\u001a\u0004\u0018\u00010fH\u0016J\u001d\u0010j\u001a\u0004\u0018\u0001Hk\"\u0004\u0008\u0000\u0010k2\u0006\u0010l\u001a\u00020)H\u0002\u00a2\u0006\u0002\u0010mJ\u0008\u0010n\u001a\u00020hH\u0016J\u0008\u0010o\u001a\u00020hH\u0016J\u0006\u0010p\u001a\u00020hJ\u0006\u0010q\u001a\u00020hJ\u000e\u0010r\u001a\u00020h2\u0006\u0010s\u001a\u00020#J\u0010\u0010t\u001a\u00020h2\u0006\u0010u\u001a\u00020vH\u0002J\u0008\u0010w\u001a\u00020hH\u0002J\u000e\u0010x\u001a\u00020h2\u0006\u0010y\u001a\u00020zJ\u0010\u0010{\u001a\u00020h2\u0006\u0010y\u001a\u00020zH\u0002J\u000e\u0010|\u001a\u00020h2\u0006\u0010}\u001a\u00020~J\u0010\u0010\u007f\u001a\u00020h2\u0008\u0010\u0080\u0001\u001a\u00030\u0081\u0001J\u0013\u0010\u0082\u0001\u001a\u00020#2\u0008\u0010\u0083\u0001\u001a\u00030\u0084\u0001H\u0002J\u000c\u0010\u0085\u0001\u001a\u0005\u0018\u00010\u0086\u0001H\u0002J\u001c\u0010\u0087\u0001\u001a\u00020h2\u0007\u0010\u0088\u0001\u001a\u00020\u00182\u0008\u0010\u0089\u0001\u001a\u00030\u0086\u0001H\u0002J\t\u0010\u008a\u0001\u001a\u00020#H\u0002J\u0007\u0010\u008b\u0001\u001a\u00020hJ\u0007\u0010\u008c\u0001\u001a\u00020hJ\u0012\u0010\u008d\u0001\u001a\u00020h2\u0007\u0010\u008e\u0001\u001a\u00020)H\u0016J\u001b\u0010\u008f\u0001\u001a\u00020h2\u0007\u0010\u008e\u0001\u001a\u00020)2\u0007\u0010\u0090\u0001\u001a\u00020)H\u0016J\u0012\u0010\u0091\u0001\u001a\u00020h2\u0007\u0010\u008e\u0001\u001a\u00020)H\u0016J\u0012\u0010\u0092\u0001\u001a\u00020h2\u0007\u0010\u008e\u0001\u001a\u00020)H\u0016J\u0012\u0010\u0093\u0001\u001a\u00020h2\u0007\u0010\u008e\u0001\u001a\u00020)H\u0016J\u0012\u0010\u0094\u0001\u001a\u00020h2\u0007\u0010\u008e\u0001\u001a\u00020)H\u0016J\t\u0010\u0095\u0001\u001a\u00020hH\u0016J\u0012\u0010\u0096\u0001\u001a\u00020h2\u0007\u0010\u008e\u0001\u001a\u00020)H\u0016J\u001e\u0010\u0097\u0001\u001a\u00020h2\u0007\u0010\u008e\u0001\u001a\u00020)2\n\u0010\u0098\u0001\u001a\u0005\u0018\u00010\u0099\u0001H\u0016J\u0012\u0010\u009a\u0001\u001a\u00020h2\u0007\u0010\u008e\u0001\u001a\u00020)H\u0016J-\u0010\u009b\u0001\u001a\u00020h2\u0007\u0010\u008e\u0001\u001a\u00020)2\u0007\u0010\u009c\u0001\u001a\u00020)2\u0007\u0010\u009d\u0001\u001a\u00020#2\u0007\u0010\u009e\u0001\u001a\u00020#H\u0016J\u001c\u0010\u009f\u0001\u001a\u00020h2\u0007\u0010\u008e\u0001\u001a\u00020)2\u0008\u0010\u00a0\u0001\u001a\u00030\u00a1\u0001H\u0016J#\u0010\u00a2\u0001\u001a\u00020h2\u0008\u0010\u0080\u0001\u001a\u00030\u0081\u00012\u000e\u0010\u00a3\u0001\u001a\t\u0012\u0004\u0012\u00020\u00180\u00a4\u0001H\u0016J\u0013\u0010\u00a5\u0001\u001a\u00020h2\u0008\u0010\u00a6\u0001\u001a\u00030\u00a7\u0001H\u0016J\u0012\u0010\u00a8\u0001\u001a\u00020h2\u0007\u0010\u00a9\u0001\u001a\u00020)H\u0016J\t\u0010\u00aa\u0001\u001a\u00020hH\u0016J\u0013\u0010\u00ab\u0001\u001a\u00020h2\u0008\u0010\u00a0\u0001\u001a\u00030\u00ac\u0001H\u0016J\u0010\u0010\u00ad\u0001\u001a\u00020h2\u0007\u0010\u00ae\u0001\u001a\u00020 J\u0010\u0010\u00af\u0001\u001a\u00020h2\u0007\u0010\u00b0\u0001\u001a\u00020 J\u0010\u0010\u00b1\u0001\u001a\u00020h2\u0007\u0010\u00a6\u0001\u001a\u00020?J\u0012\u0010\u00b2\u0001\u001a\u00020h2\u0007\u0010\u00b3\u0001\u001a\u00020?H\u0002J\u0010\u0010\u00b4\u0001\u001a\u00020h2\u0007\u0010\u00b5\u0001\u001a\u00020)J\t\u0010\u00b6\u0001\u001a\u00020hH\u0002J\u001a\u0010\u00b7\u0001\u001a\u00020h2\u0006\u0010i\u001a\u0002052\u0007\u0010\u00b8\u0001\u001a\u00020)H\u0002J\u0012\u0010\u00b9\u0001\u001a\u00020h2\u0007\u0010\u00ba\u0001\u001a\u00020)H\u0002J\t\u0010\u00bb\u0001\u001a\u00020hH\u0002J\u0012\u0010\u00bc\u0001\u001a\u00020h2\u0007\u0010\u009c\u0001\u001a\u00020)H\u0002J\t\u0010\u00bd\u0001\u001a\u00020hH\u0002J\u0012\u0010\u00be\u0001\u001a\u00020h2\u0007\u0010\u00bf\u0001\u001a\u00020)H\u0002J\t\u0010\u00c0\u0001\u001a\u00020hH\u0002J\u0010\u0010\u00c1\u0001\u001a\u00020h2\u0007\u0010\u00c2\u0001\u001a\u00020#J\u001b\u0010\u00c3\u0001\u001a\u00020h2\u0008\u0010\u00c4\u0001\u001a\u00030\u00c5\u00012\u0008\u0010\u00c6\u0001\u001a\u00030\u00c7\u0001J\u0012\u0010\u00c8\u0001\u001a\u00020h2\u0007\u0010\u00c9\u0001\u001a\u00020 H\u0007J\u0012\u0010\u00ca\u0001\u001a\u00020h2\u0007\u0010\u00cb\u0001\u001a\u00020#H\u0002J\t\u0010\u00cc\u0001\u001a\u00020hH\u0002J\t\u0010\u00cd\u0001\u001a\u00020hH\u0002J\t\u0010\u00ce\u0001\u001a\u00020hH\u0002J\u0013\u0010\u00cf\u0001\u001a\u00020h2\n\u0010\u00d0\u0001\u001a\u0005\u0018\u00010\u00d1\u0001J0\u0010\u00d2\u0001\u001a\u00020h2\u0007\u0010\u00d3\u0001\u001a\u00020)2\u0007\u0010\u009d\u0001\u001a\u00020#2\u0007\u0010\u009e\u0001\u001a\u00020#2\n\u0010\u00d4\u0001\u001a\u0005\u0018\u00010\u00d5\u0001H\u0002J\t\u0010\u00d6\u0001\u001a\u00020hH\u0002J$\u0010\u00d7\u0001\u001a\u00020h2\u0007\u0010\u00d8\u0001\u001a\u0002012\u0007\u0010\u00d9\u0001\u001a\u0002032\u0007\u0010\u00da\u0001\u001a\u00020#H\u0002J$\u0010\u00db\u0001\u001a\u00020h2\u0007\u0010\u00d8\u0001\u001a\u0002012\u0007\u0010\u00d9\u0001\u001a\u0002032\u0007\u0010\u00da\u0001\u001a\u00020#H\u0002J-\u0010\u00dc\u0001\u001a\u00020h2\u0007\u0010\u00d8\u0001\u001a\u0002012\u0007\u0010\u00d9\u0001\u001a\u0002032\u0007\u0010\u00dd\u0001\u001a\u00020)2\u0007\u0010\u00da\u0001\u001a\u00020#H\u0002J$\u0010\u00de\u0001\u001a\u00020h2\u0007\u0010\u00d8\u0001\u001a\u0002012\u0007\u0010\u00d9\u0001\u001a\u0002032\u0007\u0010\u00da\u0001\u001a\u00020#H\u0002J$\u0010\u00df\u0001\u001a\u00020h2\u0007\u0010\u00d8\u0001\u001a\u0002012\u0007\u0010\u00d9\u0001\u001a\u0002032\u0007\u0010\u00da\u0001\u001a\u00020#H\u0002R\u000e\u0010\u0010\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u0014X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u000bX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\rX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\u0018X\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0019\u001a\u00020\u001aX\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001b\u001a\u00020\u001aX\u0082D\u00a2\u0006\u0002\n\u0000R\u0018\u0010\u001c\u001a\n \u001d*\u0004\u0018\u00010\u00180\u0018X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\u001eR\u000e\u0010\u001f\u001a\u00020 X\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010!\u001a\u00020\u0018X\u0082D\u00a2\u0006\u0002\n\u0000R\u0014\u0010\"\u001a\u00020#8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\"\u0010$R\u0010\u0010%\u001a\u0004\u0018\u00010&X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\'\u001a\u00020#X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010(\u001a\u00020)X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010*\u001a\u00020#X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010+\u001a\u00020#X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010,\u001a\u00020#X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010-\u001a\u00020 X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010.\u001a\u0004\u0018\u00010/X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u00100\u001a\u0004\u0018\u000101X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u00102\u001a\u0004\u0018\u000103X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u00104\u001a\u0004\u0018\u000105X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u00106\u001a\u0004\u0018\u000105X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u00107\u001a\u0004\u0018\u000108X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u00109\u001a\u00020)X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010:\u001a\u0004\u0018\u00010;X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010<\u001a\u0004\u0018\u00010=X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010>\u001a\u00020?X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010@\u001a\u0004\u0018\u000108X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010A\u001a\u0004\u0018\u000108X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010B\u001a\u0004\u0018\u000103X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010C\u001a\u0004\u0018\u00010DX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010E\u001a\u0004\u0018\u000108X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010F\u001a\u0004\u0018\u00010GX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010H\u001a\u0004\u0018\u00010IX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010J\u001a\u0004\u0018\u00010KX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010L\u001a\u0004\u0018\u00010MX\u0082\u000e\u00a2\u0006\u0002\n\u0000R+\u0010O\u001a\u00020)2\u0006\u0010N\u001a\u00020)8B@BX\u0082\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008T\u0010U\u001a\u0004\u0008P\u0010Q\"\u0004\u0008R\u0010SR\u0014\u0010V\u001a\u00020W8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008X\u0010YR\u0014\u0010Z\u001a\u00020[8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\\\u0010]R\u000e\u0010^\u001a\u00020_X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u00e0\u0001"
+        "\u0000\u00d4\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0004\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\t\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\r\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0012\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010 \n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0019\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u000b\u0008\u0007\u0018\u00002\u00020\u00012\u00020\u00022\u00020\u0003B7\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\u0008\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\u0006\u0010\u000c\u001a\u00020\r\u0012\u0006\u0010\u000e\u001a\u00020\u000f\u00a2\u0006\u0004\u0008\u0010\u0010\u0011J&\u0010`\u001a\u0004\u0018\u0001042\u0006\u0010a\u001a\u00020b2\u0008\u0010c\u001a\u0004\u0018\u00010d2\u0008\u0010e\u001a\u0004\u0018\u00010fH\u0016J\u001a\u0010g\u001a\u00020h2\u0006\u0010i\u001a\u0002042\u0008\u0010e\u001a\u0004\u0018\u00010fH\u0016J\u001d\u0010j\u001a\u0004\u0018\u0001Hk\"\u0004\u0008\u0000\u0010k2\u0006\u0010l\u001a\u00020)H\u0002\u00a2\u0006\u0002\u0010mJ\u0008\u0010n\u001a\u00020hH\u0016J\u0008\u0010o\u001a\u00020hH\u0016J\u0006\u0010p\u001a\u00020hJ\u0006\u0010q\u001a\u00020hJ\u000e\u0010r\u001a\u00020h2\u0006\u0010s\u001a\u00020#J\u0010\u0010t\u001a\u00020h2\u0006\u0010u\u001a\u00020vH\u0002J\u0008\u0010w\u001a\u00020hH\u0002J\u000e\u0010x\u001a\u00020h2\u0006\u0010y\u001a\u00020zJ\u000e\u0010{\u001a\u00020h2\u0006\u0010|\u001a\u00020}J\u0011\u0010~\u001a\u00020#2\u0007\u0010\u007f\u001a\u00030\u0080\u0001H\u0002J\u000c\u0010\u0081\u0001\u001a\u0005\u0018\u00010\u0082\u0001H\u0002J\u001c\u0010\u0083\u0001\u001a\u00020h2\u0007\u0010\u0084\u0001\u001a\u00020\u001b2\u0008\u0010\u0085\u0001\u001a\u00030\u0082\u0001H\u0002J\t\u0010\u0086\u0001\u001a\u00020#H\u0002J\u0007\u0010\u0087\u0001\u001a\u00020hJ\u0007\u0010\u0088\u0001\u001a\u00020hJ\u0012\u0010\u0089\u0001\u001a\u00020h2\u0007\u0010\u008a\u0001\u001a\u00020)H\u0016J\u001b\u0010\u008b\u0001\u001a\u00020h2\u0007\u0010\u008a\u0001\u001a\u00020)2\u0007\u0010\u008c\u0001\u001a\u00020)H\u0016J\u0012\u0010\u008d\u0001\u001a\u00020h2\u0007\u0010\u008a\u0001\u001a\u00020)H\u0016J\u0012\u0010\u008e\u0001\u001a\u00020h2\u0007\u0010\u008a\u0001\u001a\u00020)H\u0016J\u0012\u0010\u008f\u0001\u001a\u00020h2\u0007\u0010\u008a\u0001\u001a\u00020)H\u0016J\u0012\u0010\u0090\u0001\u001a\u00020h2\u0007\u0010\u008a\u0001\u001a\u00020)H\u0016J\t\u0010\u0091\u0001\u001a\u00020hH\u0016J\u0012\u0010\u0092\u0001\u001a\u00020h2\u0007\u0010\u008a\u0001\u001a\u00020)H\u0016J\u001e\u0010\u0093\u0001\u001a\u00020h2\u0007\u0010\u008a\u0001\u001a\u00020)2\n\u0010\u0094\u0001\u001a\u0005\u0018\u00010\u0095\u0001H\u0016J\u0012\u0010\u0096\u0001\u001a\u00020h2\u0007\u0010\u008a\u0001\u001a\u00020)H\u0016J-\u0010\u0097\u0001\u001a\u00020h2\u0007\u0010\u008a\u0001\u001a\u00020)2\u0007\u0010\u0098\u0001\u001a\u00020)2\u0007\u0010\u0099\u0001\u001a\u00020#2\u0007\u0010\u009a\u0001\u001a\u00020#H\u0016J\u001c\u0010\u009b\u0001\u001a\u00020h2\u0007\u0010\u008a\u0001\u001a\u00020)2\u0008\u0010\u009c\u0001\u001a\u00030\u009d\u0001H\u0016J!\u0010\u009e\u0001\u001a\u00020h2\u0006\u0010|\u001a\u00020}2\u000e\u0010\u009f\u0001\u001a\t\u0012\u0004\u0012\u00020\u001b0\u00a0\u0001H\u0016J\u0013\u0010\u00a1\u0001\u001a\u00020h2\u0008\u0010\u00a2\u0001\u001a\u00030\u00a3\u0001H\u0016J\u0012\u0010\u00a4\u0001\u001a\u00020h2\u0007\u0010\u00a5\u0001\u001a\u00020)H\u0016J\t\u0010\u00a6\u0001\u001a\u00020hH\u0016J\u0013\u0010\u00a7\u0001\u001a\u00020h2\u0008\u0010\u009c\u0001\u001a\u00030\u00a8\u0001H\u0016J\u0010\u0010\u00a9\u0001\u001a\u00020h2\u0007\u0010\u00aa\u0001\u001a\u00020.J\u0010\u0010\u00ab\u0001\u001a\u00020h2\u0007\u0010\u00ac\u0001\u001a\u00020.J\u0010\u0010\u00ad\u0001\u001a\u00020h2\u0007\u0010\u00a2\u0001\u001a\u00020@J\u0012\u0010\u00ae\u0001\u001a\u00020h2\u0007\u0010\u00af\u0001\u001a\u00020@H\u0002J\u0010\u0010\u00b0\u0001\u001a\u00020h2\u0007\u0010\u00b1\u0001\u001a\u00020)J\t\u0010\u00b2\u0001\u001a\u00020hH\u0002J\u001a\u0010\u00b3\u0001\u001a\u00020h2\u0006\u0010i\u001a\u0002062\u0007\u0010\u00b4\u0001\u001a\u00020)H\u0002J\u0012\u0010\u00b5\u0001\u001a\u00020h2\u0007\u0010\u00b6\u0001\u001a\u00020)H\u0002J\t\u0010\u00b7\u0001\u001a\u00020hH\u0002J\u0012\u0010\u00b8\u0001\u001a\u00020h2\u0007\u0010\u0098\u0001\u001a\u00020)H\u0002J\t\u0010\u00b9\u0001\u001a\u00020hH\u0002J\u0012\u0010\u00ba\u0001\u001a\u00020h2\u0007\u0010\u00bb\u0001\u001a\u00020)H\u0002J\t\u0010\u00bc\u0001\u001a\u00020hH\u0002J\t\u0010\u00bd\u0001\u001a\u00020hH\u0002J\t\u0010\u00be\u0001\u001a\u00020hH\u0002J\t\u0010\u00bf\u0001\u001a\u00020hH\u0002J\u0013\u0010\u00c0\u0001\u001a\u00020h2\n\u0010\u00c1\u0001\u001a\u0005\u0018\u00010\u00c2\u0001J0\u0010\u00c3\u0001\u001a\u00020h2\u0007\u0010\u00c4\u0001\u001a\u00020)2\u0007\u0010\u0099\u0001\u001a\u00020#2\u0007\u0010\u009a\u0001\u001a\u00020#2\n\u0010\u00c5\u0001\u001a\u0005\u0018\u00010\u00c6\u0001H\u0002J\t\u0010\u00c7\u0001\u001a\u00020hH\u0002J$\u0010\u00c8\u0001\u001a\u00020h2\u0007\u0010\u00c9\u0001\u001a\u0002022\u0007\u0010\u00ca\u0001\u001a\u0002042\u0007\u0010\u00cb\u0001\u001a\u00020#H\u0002J$\u0010\u00cc\u0001\u001a\u00020h2\u0007\u0010\u00c9\u0001\u001a\u0002022\u0007\u0010\u00ca\u0001\u001a\u0002042\u0007\u0010\u00cb\u0001\u001a\u00020#H\u0002J-\u0010\u00cd\u0001\u001a\u00020h2\u0007\u0010\u00c9\u0001\u001a\u0002022\u0007\u0010\u00ca\u0001\u001a\u0002042\u0007\u0010\u00ce\u0001\u001a\u00020)2\u0007\u0010\u00cb\u0001\u001a\u00020#H\u0002J$\u0010\u00cf\u0001\u001a\u00020h2\u0007\u0010\u00c9\u0001\u001a\u0002022\u0007\u0010\u00ca\u0001\u001a\u0002042\u0007\u0010\u00cb\u0001\u001a\u00020#H\u0002J$\u0010\u00d0\u0001\u001a\u00020h2\u0007\u0010\u00c9\u0001\u001a\u0002022\u0007\u0010\u00ca\u0001\u001a\u0002042\u0007\u0010\u00cb\u0001\u001a\u00020#H\u0002R\u000e\u0010\u0012\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u0016X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\u000bX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\rX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0019\u001a\u00020\u000fX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001a\u001a\u00020\u001bX\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001c\u001a\u00020\u001dX\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001e\u001a\u00020\u001dX\u0082D\u00a2\u0006\u0002\n\u0000R\u0018\u0010\u001f\u001a\n  *\u0004\u0018\u00010\u001b0\u001bX\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010!R\u0014\u0010\"\u001a\u00020#8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\"\u0010$R\u0010\u0010%\u001a\u0004\u0018\u00010&X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\'\u001a\u00020#X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010(\u001a\u00020)X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010*\u001a\u00020#X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010+\u001a\u00020#X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010,\u001a\u00020#X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010-\u001a\u00020.X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010/\u001a\u0004\u0018\u000100X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u00101\u001a\u0004\u0018\u000102X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u00103\u001a\u0004\u0018\u000104X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u00105\u001a\u0004\u0018\u000106X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u00107\u001a\u0004\u0018\u000106X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u00108\u001a\u0004\u0018\u000109X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010:\u001a\u00020)X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010;\u001a\u0004\u0018\u00010<X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010=\u001a\u0004\u0018\u00010>X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010?\u001a\u00020@X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010A\u001a\u0004\u0018\u000109X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010B\u001a\u0004\u0018\u000109X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010C\u001a\u0004\u0018\u00010DX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010E\u001a\u0004\u0018\u000109X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010F\u001a\u0004\u0018\u00010GX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010H\u001a\u0004\u0018\u00010IX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010J\u001a\u0004\u0018\u00010KX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010L\u001a\u0004\u0018\u00010MX\u0082\u000e\u00a2\u0006\u0002\n\u0000R+\u0010O\u001a\u00020)2\u0006\u0010N\u001a\u00020)8B@BX\u0082\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008T\u0010U\u001a\u0004\u0008P\u0010Q\"\u0004\u0008R\u0010SR\u0014\u0010V\u001a\u00020W8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008X\u0010YR\u0014\u0010Z\u001a\u00020[8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\\\u0010]R\u000e\u0010^\u001a\u00020_X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u00d1\u0001"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;",
@@ -37,8 +37,10 @@
         "Ljp/co/sony/mc/camera/storage/Storage;",
         "contentCache",
         "Ljp/co/sony/mc/camera/view/contentsview/ContentCache;",
+        "captureRequestRecorder",
+        "Ljp/co/sony/mc/camera/view/contentsview/CaptureRequestRecorder;",
         "<init>",
-        "(Landroid/content/Context;Landroidx/fragment/app/FragmentManager;Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayCallBack;Ljp/co/sony/mc/camera/storage/Storage;Ljp/co/sony/mc/camera/view/contentsview/ContentCache;)V",
+        "(Landroid/content/Context;Landroidx/fragment/app/FragmentManager;Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayCallBack;Ljp/co/sony/mc/camera/storage/Storage;Ljp/co/sony/mc/camera/view/contentsview/ContentCache;Ljp/co/sony/mc/camera/view/contentsview/CaptureRequestRecorder;)V",
         "mContext",
         "mFragmentManager",
         "mExternalDisplayCallBack",
@@ -46,6 +48,7 @@
         "Landroid/hardware/display/DisplayManager;",
         "mStorage",
         "mContentCache",
+        "mCaptureRequestRecorder",
         "BLACK_SCREEN_VIEW_TAG",
         "",
         "FLIP_FORWARD_ANGLE",
@@ -54,9 +57,6 @@
         "CLASS_NAME_TAG",
         "kotlin.jvm.PlatformType",
         "Ljava/lang/String;",
-        "DEFAULT_BITRATE",
-        "",
-        "BITRATE_MBPS_TEXT",
         "isDeviceInSecurityLock",
         "",
         "()Z",
@@ -69,6 +69,7 @@
         "mIsConnectionEnabled",
         "mIsFullStorage",
         "mMinFileSize",
+        "",
         "surfaceView",
         "Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;",
         "rootView",
@@ -89,7 +90,6 @@
         "Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;",
         "mRecText",
         "mStbyText",
-        "mStreamingText",
         "mRecStatusText",
         "Landroid/widget/FrameLayout;",
         "mRecordingDurationText",
@@ -143,10 +143,6 @@
         "display",
         "Landroid/view/Display;",
         "stopPresentation",
-        "notifyCapturingModeChanged",
-        "nextCapturingMode",
-        "Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;",
-        "updateNetworkStatusVisibility",
         "flipContent",
         "setting",
         "Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;",
@@ -216,17 +212,6 @@
         "setDurationText",
         "millis",
         "setDefaultDurationText",
-        "setMuteStatus",
-        "muted",
-        "setCurrentNetworkStatus",
-        "networkState",
-        "Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;",
-        "connectLevel",
-        "Ljp/co/sony/mc/camera/rtmp/NetworkManager$ConnectLevel;",
-        "setCurrentBitrate",
-        "bitrate",
-        "setBitrateValueVisibility",
-        "needShow",
         "cleanUpViews",
         "showSelfTimerCountDownView",
         "cancelSelfTimerCountDownView",
@@ -275,13 +260,9 @@
 
 
 # instance fields
-.field private final BITRATE_MBPS_TEXT:Ljava/lang/String;
-
 .field private final BLACK_SCREEN_VIEW_TAG:Ljava/lang/String;
 
 .field private final CLASS_NAME_TAG:Ljava/lang/String;
-
-.field private final DEFAULT_BITRATE:J
 
 .field private final FLIP_FORWARD_ANGLE:F
 
@@ -298,6 +279,8 @@
 .field private mBurstCountText:Ljp/co/sony/mc/camera/view/BurstCountView;
 
 .field private mCaptureProgressView:Ljp/co/sony/mc/camera/view/feedback/CaptureProgressView;
+
+.field private final mCaptureRequestRecorder:Ljp/co/sony/mc/camera/view/contentsview/CaptureRequestRecorder;
 
 .field private final mContentCache:Ljp/co/sony/mc/camera/view/contentsview/ContentCache;
 
@@ -338,8 +321,6 @@
 .field private mStbyText:Landroid/widget/TextView;
 
 .field private final mStorage:Ljp/co/sony/mc/camera/storage/Storage;
-
-.field private mStreamingText:Landroid/view/View;
 
 .field private mSurface:Landroid/view/Surface;
 
@@ -442,7 +423,7 @@
 
     new-array v0, v0, [Lkotlin/reflect/KProperty;
 
-    .line 144
+    .line 141
     new-instance v1, Lkotlin/jvm/internal/MutablePropertyReference1Impl;
 
     const-string v2, "mRecordingDuration"
@@ -472,7 +453,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Landroidx/fragment/app/FragmentManager;Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayCallBack;Ljp/co/sony/mc/camera/storage/Storage;Ljp/co/sony/mc/camera/view/contentsview/ContentCache;)V
+.method public constructor <init>(Landroid/content/Context;Landroidx/fragment/app/FragmentManager;Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayCallBack;Ljp/co/sony/mc/camera/storage/Storage;Ljp/co/sony/mc/camera/view/contentsview/ContentCache;Ljp/co/sony/mc/camera/view/contentsview/CaptureRequestRecorder;)V
     .locals 1
 
     const-string v0, "context"
@@ -495,19 +476,23 @@
 
     invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 94
+    const-string v0, "captureRequestRecorder"
+
+    invoke-static {p6, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 93
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/PresentationFragment;-><init>()V
 
-    .line 96
+    .line 95
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mContext:Landroid/content/Context;
 
-    .line 97
+    .line 96
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mFragmentManager:Landroidx/fragment/app/FragmentManager;
 
-    .line 98
+    .line 97
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mExternalDisplayCallBack:Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayCallBack;
 
-    .line 100
+    .line 99
     const-string p2, "display"
 
     invoke-virtual {p1, p2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -522,11 +507,14 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mDisplayManager:Landroid/hardware/display/DisplayManager;
 
-    .line 101
+    .line 100
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mStorage:Ljp/co/sony/mc/camera/storage/Storage;
 
-    .line 102
+    .line 101
     iput-object p5, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mContentCache:Ljp/co/sony/mc/camera/view/contentsview/ContentCache;
+
+    .line 102
+    iput-object p6, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mCaptureRequestRecorder:Ljp/co/sony/mc/camera/view/contentsview/CaptureRequestRecorder;
 
     .line 103
     const-string p1, "black_screen"
@@ -549,17 +537,12 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->CLASS_NAME_TAG:Ljava/lang/String;
 
-    .line 108
-    const-string p1, "Mbps"
-
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->BITRATE_MBPS_TEXT:Ljava/lang/String;
-
-    .line 133
+    .line 131
     sget-object p1, Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;->NORMAL:Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mThermalState:Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;
 
-    .line 144
+    .line 141
     sget-object p1, Lkotlin/properties/Delegates;->INSTANCE:Lkotlin/properties/Delegates;
 
     const/4 p1, -0x1
@@ -568,17 +551,17 @@
 
     move-result-object p1
 
-    .line 1247
+    .line 1128
     new-instance p2, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$special$$inlined$observable$1;
 
     invoke-direct {p2, p1, p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$special$$inlined$observable$1;-><init>(Ljava/lang/Object;Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;)V
 
     check-cast p2, Lkotlin/properties/ReadWriteProperty;
 
-    .line 144
+    .line 141
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mRecordingDuration$delegate:Lkotlin/properties/ReadWriteProperty;
 
-    .line 154
+    .line 151
     new-instance p1, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$mDisplayListener$1;
 
     invoke-direct {p1, p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$mDisplayListener$1;-><init>(Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;)V
@@ -593,7 +576,7 @@
 .method public static final synthetic access$getMDisplayId$p(Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;)I
     .locals 0
 
-    .line 92
+    .line 90
     iget p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mDisplayId:I
 
     return p0
@@ -602,7 +585,7 @@
 .method public static final synthetic access$getMDisplayManager$p(Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;)Landroid/hardware/display/DisplayManager;
     .locals 0
 
-    .line 92
+    .line 90
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mDisplayManager:Landroid/hardware/display/DisplayManager;
 
     return-object p0
@@ -611,7 +594,7 @@
 .method public static final synthetic access$getMExternalDisplayCallBack$p(Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;)Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayCallBack;
     .locals 0
 
-    .line 92
+    .line 90
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mExternalDisplayCallBack:Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayCallBack;
 
     return-object p0
@@ -620,7 +603,7 @@
 .method public static final synthetic access$getMIsUsbConnected$p(Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;)Z
     .locals 0
 
-    .line 92
+    .line 90
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mIsUsbConnected:Z
 
     return p0
@@ -629,7 +612,7 @@
 .method public static final synthetic access$getMSurface$p(Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;)Landroid/view/Surface;
     .locals 0
 
-    .line 92
+    .line 90
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mSurface:Landroid/view/Surface;
 
     return-object p0
@@ -638,7 +621,7 @@
 .method public static final synthetic access$isShowing(Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;)Z
     .locals 0
 
-    .line 92
+    .line 90
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->isShowing()Z
 
     move-result p0
@@ -649,7 +632,7 @@
 .method public static final synthetic access$setMDisplayId$p(Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;I)V
     .locals 0
 
-    .line 92
+    .line 90
     iput p1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mDisplayId:I
 
     return-void
@@ -658,7 +641,7 @@
 .method public static final synthetic access$setMSurface$p(Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;Landroid/view/Surface;)V
     .locals 0
 
-    .line 92
+    .line 90
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mSurface:Landroid/view/Surface;
 
     return-void
@@ -667,7 +650,7 @@
 .method public static final synthetic access$startPresentation(Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;Landroid/view/Display;)V
     .locals 0
 
-    .line 92
+    .line 90
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->startPresentation(Landroid/view/Display;)V
 
     return-void
@@ -676,7 +659,7 @@
 .method public static final synthetic access$stopPresentation(Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;)V
     .locals 0
 
-    .line 92
+    .line 90
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->stopPresentation()V
 
     return-void
@@ -685,7 +668,7 @@
 .method public static final synthetic access$updateRecordingIndicator(Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;I)V
     .locals 0
 
-    .line 92
+    .line 90
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->updateRecordingIndicator(I)V
 
     return-void
@@ -694,14 +677,14 @@
 .method private final cancelSelfTimerCountDownView()V
     .locals 2
 
-    .line 1034
+    .line 915
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mSelfTimerCountDownView:Ljp/co/sony/mc/camera/view/SelfTimerCountDownView;
 
     if-eqz v0, :cond_0
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownView;->cancelSelfTimerCountDownAnimation()V
 
-    .line 1035
+    .line 916
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mSelfTimerCountDownView:Ljp/co/sony/mc/camera/view/SelfTimerCountDownView;
 
@@ -711,13 +694,13 @@
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownView;->setVisibility(I)V
 
-    .line 1036
+    .line 917
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mSelfTimerCountDownView:Ljp/co/sony/mc/camera/view/SelfTimerCountDownView;
 
     if-eqz p0, :cond_2
 
-    .line 1037
+    .line 918
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
@@ -732,7 +715,7 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SelfTimerInterface;
 
-    .line 1036
+    .line 917
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownView;->setSelfTimer(Ljp/co/sony/mc/camera/setting/SelfTimerInterface;)V
 
     :cond_2
@@ -742,27 +725,27 @@
 .method private final changeAspectAndSize(Ljava/lang/String;Landroid/util/Size;)V
     .locals 2
 
-    .line 514
+    .line 486
     new-instance v0, Landroidx/constraintlayout/widget/ConstraintSet;
 
     invoke-direct {v0}, Landroidx/constraintlayout/widget/ConstraintSet;-><init>()V
 
-    .line 515
+    .line 487
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->rootView:Landroidx/constraintlayout/widget/ConstraintLayout;
 
     invoke-virtual {v0, v1}, Landroidx/constraintlayout/widget/ConstraintSet;->clone(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
-    const v1, 0x7f090201
+    const v1, 0x7f090209
 
-    .line 516
+    .line 488
     invoke-virtual {v0, v1, p1}, Landroidx/constraintlayout/widget/ConstraintSet;->setDimensionRatio(ILjava/lang/String;)V
 
-    .line 517
+    .line 489
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->rootView:Landroidx/constraintlayout/widget/ConstraintLayout;
 
     invoke-virtual {v0, p1}, Landroidx/constraintlayout/widget/ConstraintSet;->applyTo(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
-    .line 518
+    .line 490
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->surfaceView:Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;
 
     if-eqz p0, :cond_0
@@ -784,66 +767,63 @@
 .method private final cleanUpViews()V
     .locals 1
 
-    .line 1000
+    .line 882
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mContentsViewController:Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;
 
     if-eqz v0, :cond_0
 
-    .line 1001
+    .line 883
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->remove()V
 
-    .line 1002
+    .line 884
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->clearContents()V
 
-    .line 1003
+    .line 885
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->release()V
 
     :cond_0
     const/4 v0, 0x0
 
-    .line 1005
+    .line 887
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mContentsViewController:Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;
 
-    .line 1006
+    .line 888
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mThermalIcon:Landroid/widget/ImageView;
 
-    .line 1007
+    .line 889
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mBatteryIcon:Landroid/widget/ImageView;
 
-    .line 1008
+    .line 890
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mBatteryText:Landroid/widget/TextView;
 
-    .line 1009
+    .line 891
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mBurstCountText:Ljp/co/sony/mc/camera/view/BurstCountView;
 
-    .line 1010
+    .line 892
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mStbyText:Landroid/widget/TextView;
 
-    .line 1011
+    .line 893
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mRecText:Landroid/widget/TextView;
 
-    .line 1012
-    iput-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mStreamingText:Landroid/view/View;
-
-    .line 1013
+    .line 894
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mRecStatusText:Landroid/widget/FrameLayout;
 
-    .line 1014
+    .line 895
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mRecordingDurationText:Landroid/widget/TextView;
 
-    .line 1015
+    .line 896
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mCaptureProgressView:Ljp/co/sony/mc/camera/view/feedback/CaptureProgressView;
 
-    .line 1016
+    .line 897
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mSelfTimerCountDownView:Ljp/co/sony/mc/camera/view/SelfTimerCountDownView;
 
-    .line 1017
+    .line 898
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mUiRoot:Landroid/view/View;
 
-    .line 1018
+    .line 899
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mAudioLevel:Ljp/co/sony/mc/camera/view/widget/ExternalDisplayAudioLevelWidget;
 
-    .line 1019
+    .line 900
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mUpdateDisplayMonitor:Ljp/co/sony/mc/camera/UpdateDisplayMonitor;
 
     return-void
@@ -859,7 +839,7 @@
         }
     .end annotation
 
-    .line 326
+    .line 317
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->getView()Landroid/view/View;
 
     move-result-object p0
@@ -870,29 +850,29 @@
 
     return-object p0
 
-    .line 327
+    .line 318
     :cond_0
     invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p0
 
-    .line 328
+    .line 319
     instance-of v0, p0, Landroid/view/ViewStub;
 
     if-eqz v0, :cond_1
 
-    .line 330
+    .line 321
     check-cast p0, Landroid/view/ViewStub;
 
     invoke-virtual {p0}, Landroid/view/ViewStub;->inflate()Landroid/view/View;
 
     move-result-object p0
 
-    .line 332
+    .line 323
     :cond_1
     invoke-virtual {p0, p1}, Landroid/view/View;->setId(I)V
 
-    .line 333
+    .line 324
     check-cast p0, Ljava/lang/Object;
 
     return-object p0
@@ -901,7 +881,7 @@
 .method private final getCameraViewModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
     .locals 1
 
-    .line 149
+    .line 146
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object p0
@@ -930,7 +910,7 @@
 .method private final getMRecordingDuration()I
     .locals 3
 
-    .line 144
+    .line 141
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mRecordingDuration$delegate:Lkotlin/properties/ReadWriteProperty;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->$$delegatedProperties:[Lkotlin/reflect/KProperty;
@@ -955,7 +935,7 @@
 .method private final getOrientationViewModel()Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
     .locals 1
 
-    .line 152
+    .line 149
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object p0
@@ -984,7 +964,7 @@
 .method private final getSurfaceSize()Landroid/util/Size;
     .locals 0
 
-    .line 507
+    .line 479
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->surfaceView:Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;
 
     if-eqz p0, :cond_0
@@ -1005,7 +985,7 @@
 .method private final hideBustCount()V
     .locals 0
 
-    .line 796
+    .line 783
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mBurstCountText:Ljp/co/sony/mc/camera/view/BurstCountView;
 
     if-eqz p0, :cond_0
@@ -1019,7 +999,7 @@
 .method private final hideCaptureProgressView()V
     .locals 3
 
-    .line 1074
+    .line 955
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mCaptureProgressView:Ljp/co/sony/mc/camera/view/feedback/CaptureProgressView;
 
     if-eqz v0, :cond_0
@@ -1034,7 +1014,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 1075
+    .line 956
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mCaptureProgressView:Ljp/co/sony/mc/camera/view/feedback/CaptureProgressView;
 
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -1043,14 +1023,14 @@
 
     invoke-virtual {v0, v2}, Ljp/co/sony/mc/camera/view/feedback/CaptureProgressView;->setAnimationProgressListener(Ljp/co/sony/mc/camera/view/feedback/CaptureProgressCircleView$AnimationProgressListener;)V
 
-    .line 1076
+    .line 957
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mCaptureProgressView:Ljp/co/sony/mc/camera/view/feedback/CaptureProgressView;
 
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/feedback/CaptureProgressView;->cancelAnimation()V
 
-    .line 1077
+    .line 958
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mCaptureProgressView:Ljp/co/sony/mc/camera/view/feedback/CaptureProgressView;
 
     invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -1064,7 +1044,7 @@
 .method private final isDeviceInSecurityLock()Z
     .locals 1
 
-    .line 111
+    .line 109
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object p0
@@ -1085,7 +1065,7 @@
 .method private final isShowing()Z
     .locals 0
 
-    .line 527
+    .line 499
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mIsShowing:Z
 
     return p0
@@ -1098,14 +1078,14 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 273
+    .line 264
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mAudioLevel:Ljp/co/sony/mc/camera/view/widget/ExternalDisplayAudioLevelWidget;
 
     if-eqz p0, :cond_0
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/ExternalDisplayAudioLevelWidget;->onReportAudioLevel([I)V
 
-    .line 274
+    .line 265
     :cond_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
@@ -1119,7 +1099,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 280
+    .line 271
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p1
@@ -1138,7 +1118,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 281
+    .line 272
     invoke-virtual {p1}, Lkotlin/Pair;->component1()Ljava/lang/Object;
 
     move-result-object v0
@@ -1157,18 +1137,18 @@
 
     if-eqz p1, :cond_0
 
-    .line 283
+    .line 274
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 
-    .line 286
+    .line 277
     :cond_0
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;->isPortrait()Z
 
     move-result p1
 
-    .line 288
+    .line 279
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mUiRoot:Landroid/view/View;
 
     if-eqz v0, :cond_1
@@ -1179,7 +1159,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
-    .line 319
+    .line 310
     :cond_1
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
@@ -1193,14 +1173,14 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 289
+    .line 280
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mUiRoot:Landroid/view/View;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 293
+    .line 284
     :cond_0
     const-string v1, "null cannot be cast to non-null type androidx.constraintlayout.widget.ConstraintLayout"
 
@@ -1208,14 +1188,14 @@
 
     check-cast v0, Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    .line 294
+    .line 285
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mUiRoot:Landroid/view/View;
 
     const/4 v3, 0x0
 
     if-eqz v2, :cond_1
 
-    const v4, 0x7f09045b
+    const v4, 0x7f09045d
 
     invoke-virtual {v2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1229,22 +1209,22 @@
     :goto_0
     invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 293
+    .line 284
     invoke-direct {p0, v0, v2, p1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->rotateTopView(Landroidx/constraintlayout/widget/ConstraintLayout;Landroid/view/View;Z)V
 
-    .line 296
+    .line 287
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mUiRoot:Landroid/view/View;
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    .line 297
+    .line 288
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mUiRoot:Landroid/view/View;
 
     if-eqz v2, :cond_2
 
-    const v4, 0x7f0903b1
+    const v4, 0x7f0903b0
 
     invoke-virtual {v2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1258,22 +1238,22 @@
     :goto_1
     invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 296
+    .line 287
     invoke-direct {p0, v0, v2, p1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->rotateBottomView(Landroidx/constraintlayout/widget/ConstraintLayout;Landroid/view/View;Z)V
 
-    .line 299
+    .line 290
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mUiRoot:Landroid/view/View;
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    .line 300
+    .line 291
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mUiRoot:Landroid/view/View;
 
     if-eqz v2, :cond_3
 
-    const v3, 0x7f090140
+    const v3, 0x7f09013f
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1282,7 +1262,7 @@
     :cond_3
     invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 301
+    .line 292
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->requireContext()Landroid/content/Context;
 
     move-result-object v2
@@ -1291,30 +1271,30 @@
 
     move-result-object v2
 
-    const v4, 0x7f070350
+    const v4, 0x7f0702f8
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v2
 
-    .line 299
+    .line 290
     invoke-direct {p0, v0, v3, v2, p1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->rotateCenterEndView(Landroidx/constraintlayout/widget/ConstraintLayout;Landroid/view/View;IZ)V
 
-    .line 305
+    .line 296
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mUiRoot:Landroid/view/View;
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    .line 306
+    .line 297
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mBurstCountText:Ljp/co/sony/mc/camera/view/BurstCountView;
 
     invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     check-cast v2, Landroid/view/View;
 
-    .line 307
+    .line 298
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->requireContext()Landroid/content/Context;
 
     move-result-object v3
@@ -1327,17 +1307,17 @@
 
     move-result v3
 
-    .line 305
+    .line 296
     invoke-direct {p0, v0, v2, v3, p1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->rotateCenterEndView(Landroidx/constraintlayout/widget/ConstraintLayout;Landroid/view/View;IZ)V
 
-    .line 311
+    .line 302
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mUiRoot:Landroid/view/View;
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    .line 312
+    .line 303
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mSelfTimerCountDownView:Ljp/co/sony/mc/camera/view/SelfTimerCountDownView;
 
     invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -1346,10 +1326,10 @@
 
     const/4 v3, 0x0
 
-    .line 311
+    .line 302
     invoke-direct {p0, v0, v2, v3, p1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->rotateCenterEndView(Landroidx/constraintlayout/widget/ConstraintLayout;Landroid/view/View;IZ)V
 
-    .line 316
+    .line 307
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mUiRoot:Landroid/view/View;
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
@@ -1364,7 +1344,7 @@
 
     invoke-direct {p0, v0, v2, p1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->rotateCenterView(Landroidx/constraintlayout/widget/ConstraintLayout;Landroid/view/View;Z)V
 
-    .line 317
+    .line 308
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mUiRoot:Landroid/view/View;
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
@@ -1385,7 +1365,7 @@
 .method private final resizeSurfaceScope(Landroid/graphics/Rect;)Z
     .locals 6
 
-    .line 479
+    .line 451
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->isShowing()Z
 
     move-result v0
@@ -1396,12 +1376,12 @@
 
     if-nez v0, :cond_1
 
-    .line 480
+    .line 452
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_0
 
-    .line 481
+    .line 453
     new-array p0, v1, [Ljava/lang/String;
 
     const-string p1, "As Presentation is not ready yet, ignore size changing of surface"
@@ -1413,7 +1393,7 @@
     :cond_0
     return v2
 
-    .line 485
+    .line 457
     :cond_1
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->getSurfaceSize()Landroid/util/Size;
 
@@ -1421,7 +1401,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 487
+    .line 459
     new-instance v3, Landroid/util/Size;
 
     invoke-virtual {p1}, Landroid/graphics/Rect;->width()I
@@ -1440,12 +1420,12 @@
 
     if-eqz v0, :cond_3
 
-    .line 488
+    .line 460
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_2
 
-    .line 489
+    .line 461
     new-array p0, v1, [Ljava/lang/String;
 
     invoke-virtual {p1}, Landroid/graphics/Rect;->toShortString()Ljava/lang/String;
@@ -1479,7 +1459,7 @@
     :cond_2
     return v2
 
-    .line 496
+    .line 468
     :cond_3
     invoke-virtual {p1}, Landroid/graphics/Rect;->width()I
 
@@ -1495,7 +1475,7 @@
 
     div-float/2addr v0, v2
 
-    .line 498
+    .line 470
     invoke-static {v0}, Ljava/lang/String;->valueOf(F)Ljava/lang/String;
 
     move-result-object v0
@@ -1520,7 +1500,7 @@
 .method private final rotateAudioLevel(Landroidx/constraintlayout/widget/ConstraintLayout;Landroid/view/View;Z)V
     .locals 8
 
-    .line 1217
+    .line 1098
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->requireContext()Landroid/content/Context;
 
     move-result-object v0
@@ -1529,13 +1509,13 @@
 
     move-result-object v0
 
-    const v1, 0x7f07032c
+    const v1, 0x7f0702d6
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v7
 
-    .line 1219
+    .line 1100
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->requireContext()Landroid/content/Context;
 
     move-result-object p0
@@ -1544,7 +1524,7 @@
 
     move-result-object p0
 
-    const v0, 0x7f07032b
+    const v0, 0x7f0702d5
 
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1552,15 +1532,15 @@
 
     if-eqz p3, :cond_0
 
-    .line 1222
+    .line 1103
     new-instance p3, Landroidx/constraintlayout/widget/ConstraintSet;
 
     invoke-direct {p3}, Landroidx/constraintlayout/widget/ConstraintSet;-><init>()V
 
-    .line 1223
+    .line 1104
     invoke-virtual {p3, p1}, Landroidx/constraintlayout/widget/ConstraintSet;->clone(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
-    .line 1224
+    .line 1105
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result v2
@@ -1577,10 +1557,10 @@
 
     invoke-virtual/range {v1 .. v6}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIIII)V
 
-    .line 1226
+    .line 1107
     invoke-virtual {p3, p1}, Landroidx/constraintlayout/widget/ConstraintSet;->applyTo(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
-    .line 1227
+    .line 1108
     invoke-virtual {p2}, Landroid/view/View;->getHeight()I
 
     move-result p0
@@ -1615,7 +1595,7 @@
 
     invoke-virtual {p2, p0}, Landroid/view/View;->setTranslationY(F)V
 
-    .line 1228
+    .line 1109
     invoke-virtual {p2}, Landroid/view/View;->getHeight()I
 
     move-result p0
@@ -1650,21 +1630,21 @@
 
     const/high16 p0, 0x42b40000    # 90.0f
 
-    .line 1229
+    .line 1110
     invoke-virtual {p2, p0}, Landroid/view/View;->setRotation(F)V
 
     goto :goto_0
 
-    .line 1231
+    .line 1112
     :cond_0
     new-instance p3, Landroidx/constraintlayout/widget/ConstraintSet;
 
     invoke-direct {p3}, Landroidx/constraintlayout/widget/ConstraintSet;-><init>()V
 
-    .line 1232
+    .line 1113
     invoke-virtual {p3, p1}, Landroidx/constraintlayout/widget/ConstraintSet;->clone(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
-    .line 1233
+    .line 1114
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result v0
@@ -1673,7 +1653,7 @@
 
     invoke-virtual {p3, v0, v1}, Landroidx/constraintlayout/widget/ConstraintSet;->clear(II)V
 
-    .line 1234
+    .line 1115
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result v3
@@ -1688,7 +1668,7 @@
 
     invoke-virtual/range {v2 .. v7}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIIII)V
 
-    .line 1236
+    .line 1117
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result v2
@@ -1705,18 +1685,18 @@
 
     invoke-virtual/range {v1 .. v6}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIIII)V
 
-    .line 1238
+    .line 1119
     invoke-virtual {p3, p1}, Landroidx/constraintlayout/widget/ConstraintSet;->applyTo(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
     const/4 p0, 0x0
 
-    .line 1239
+    .line 1120
     invoke-virtual {p2, p0}, Landroid/view/View;->setTranslationY(F)V
 
-    .line 1240
+    .line 1121
     invoke-virtual {p2, p0}, Landroid/view/View;->setTranslationX(F)V
 
-    .line 1241
+    .line 1122
     invoke-virtual {p2, p0}, Landroid/view/View;->setRotation(F)V
 
     :goto_0
@@ -1726,7 +1706,7 @@
 .method private final rotateBottomView(Landroidx/constraintlayout/widget/ConstraintLayout;Landroid/view/View;Z)V
     .locals 7
 
-    .line 1137
+    .line 1018
     invoke-virtual {p2}, Landroid/view/View;->getWidth()I
 
     move-result v0
@@ -1735,7 +1715,7 @@
 
     invoke-virtual {p2, v0}, Landroid/view/View;->setPivotX(F)V
 
-    .line 1138
+    .line 1019
     invoke-virtual {p2}, Landroid/view/View;->getHeight()I
 
     move-result v0
@@ -1758,17 +1738,17 @@
 
     const/high16 p3, 0x42b40000    # 90.0f
 
-    .line 1140
+    .line 1021
     invoke-virtual {p2, p3}, Landroid/view/View;->setRotation(F)V
 
-    .line 1141
+    .line 1022
     invoke-virtual {p2}, Landroid/view/View;->getHeight()I
 
     move-result p3
 
     int-to-float p3, p3
 
-    .line 1142
+    .line 1023
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->requireContext()Landroid/content/Context;
 
     move-result-object v5
@@ -1777,7 +1757,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f07034a
+    const v6, 0x7f0702f3
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1787,7 +1767,7 @@
 
     add-float/2addr p3, v5
 
-    .line 1144
+    .line 1025
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->requireContext()Landroid/content/Context;
 
     move-result-object v5
@@ -1796,7 +1776,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f07034f
+    const v6, 0x7f0702f7
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1808,49 +1788,49 @@
 
     neg-float p3, p3
 
-    .line 1141
+    .line 1022
     invoke-virtual {p2, p3}, Landroid/view/View;->setTranslationX(F)V
 
-    .line 1146
+    .line 1027
     new-instance p3, Landroidx/constraintlayout/widget/ConstraintSet;
 
     invoke-direct {p3}, Landroidx/constraintlayout/widget/ConstraintSet;-><init>()V
 
-    .line 1147
+    .line 1028
     invoke-virtual {p3, p1}, Landroidx/constraintlayout/widget/ConstraintSet;->clone(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
-    .line 1148
+    .line 1029
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result v5
 
     invoke-virtual {p3, v5, v1}, Landroidx/constraintlayout/widget/ConstraintSet;->clear(II)V
 
-    .line 1149
+    .line 1030
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result v1
 
     invoke-virtual {p3, v1, v0}, Landroidx/constraintlayout/widget/ConstraintSet;->clear(II)V
 
-    .line 1150
+    .line 1031
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result v0
 
     invoke-virtual {p3, v0, v2, v3, v2}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIII)V
 
-    .line 1151
+    .line 1032
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result v0
 
     invoke-virtual {p3, v0, v4, v3, v4}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIII)V
 
-    .line 1152
+    .line 1033
     invoke-virtual {p3, p1}, Landroidx/constraintlayout/widget/ConstraintSet;->applyTo(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
-    .line 1154
+    .line 1035
     new-instance p1, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$$ExternalSyntheticLambda0;
 
     invoke-direct {p1, p2, p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$$ExternalSyntheticLambda0;-><init>(Landroid/view/View;Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;)V
@@ -1862,52 +1842,52 @@
     :cond_0
     const/4 p3, 0x0
 
-    .line 1160
+    .line 1041
     invoke-virtual {p2, p3}, Landroid/view/View;->setRotation(F)V
 
-    .line 1161
+    .line 1042
     invoke-virtual {p2, p3}, Landroid/view/View;->setTranslationX(F)V
 
-    .line 1162
+    .line 1043
     new-instance p3, Landroidx/constraintlayout/widget/ConstraintSet;
 
     invoke-direct {p3}, Landroidx/constraintlayout/widget/ConstraintSet;-><init>()V
 
-    .line 1163
+    .line 1044
     invoke-virtual {p3, p1}, Landroidx/constraintlayout/widget/ConstraintSet;->clone(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
-    .line 1164
+    .line 1045
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result v5
 
     invoke-virtual {p3, v5, v2}, Landroidx/constraintlayout/widget/ConstraintSet;->clear(II)V
 
-    .line 1165
+    .line 1046
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result v2
 
     invoke-virtual {p3, v2, v0}, Landroidx/constraintlayout/widget/ConstraintSet;->clear(II)V
 
-    .line 1166
+    .line 1047
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result v0
 
     invoke-virtual {p3, v0, v4, v3, v4}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIII)V
 
-    .line 1167
+    .line 1048
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result v0
 
     invoke-virtual {p3, v0, v1, v3, v1}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIII)V
 
-    .line 1168
+    .line 1049
     invoke-virtual {p3, p1}, Landroidx/constraintlayout/widget/ConstraintSet;->applyTo(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
-    .line 1170
+    .line 1051
     new-instance p1, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$$ExternalSyntheticLambda1;
 
     invoke-direct {p1, p2, p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$$ExternalSyntheticLambda1;-><init>(Landroid/view/View;Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;)V
@@ -1933,7 +1913,7 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1156
+    .line 1037
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->requireContext()Landroid/content/Context;
 
     move-result-object p1
@@ -1942,7 +1922,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f07034f
+    const p2, 0x7f0702f7
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1950,10 +1930,10 @@
 
     const/4 p2, 0x0
 
-    .line 1155
+    .line 1036
     invoke-virtual {p0, p2, p2, p1, p2}, Landroid/view/View;->setPadding(IIII)V
 
-    .line 1158
+    .line 1039
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
@@ -1974,7 +1954,7 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1172
+    .line 1053
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->requireContext()Landroid/content/Context;
 
     move-result-object p1
@@ -1983,7 +1963,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f070350
+    const p2, 0x7f0702f8
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1991,10 +1971,10 @@
 
     const/4 p2, 0x0
 
-    .line 1171
+    .line 1052
     invoke-virtual {p0, p2, p2, p1, p2}, Landroid/view/View;->setPadding(IIII)V
 
-    .line 1174
+    .line 1055
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
@@ -2011,22 +1991,22 @@
 
     if-eqz p4, :cond_0
 
-    .line 1183
+    .line 1064
     new-instance p4, Landroidx/constraintlayout/widget/ConstraintSet;
 
     invoke-direct {p4}, Landroidx/constraintlayout/widget/ConstraintSet;-><init>()V
 
-    .line 1184
+    .line 1065
     invoke-virtual {p4, p1}, Landroidx/constraintlayout/widget/ConstraintSet;->clone(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
-    .line 1185
+    .line 1066
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result v2
 
     invoke-virtual {p4, v2, v0}, Landroidx/constraintlayout/widget/ConstraintSet;->clear(II)V
 
-    .line 1186
+    .line 1067
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result v3
@@ -2043,14 +2023,14 @@
 
     invoke-virtual/range {v2 .. v7}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIIII)V
 
-    .line 1188
+    .line 1069
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result p3
 
     invoke-virtual {p4, p3, p0, v1, p0}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIII)V
 
-    .line 1189
+    .line 1070
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result p0
@@ -2059,10 +2039,10 @@
 
     invoke-virtual {p4, p0, p3, v1, p3}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIII)V
 
-    .line 1190
+    .line 1071
     invoke-virtual {p4, p1}, Landroidx/constraintlayout/widget/ConstraintSet;->applyTo(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
-    .line 1191
+    .line 1072
     invoke-virtual {p2}, Landroid/view/View;->getHeight()I
 
     move-result p0
@@ -2099,28 +2079,28 @@
 
     const/high16 p0, 0x42b40000    # 90.0f
 
-    .line 1192
+    .line 1073
     invoke-virtual {p2, p0}, Landroid/view/View;->setRotation(F)V
 
     goto :goto_0
 
-    .line 1194
+    .line 1075
     :cond_0
     new-instance p4, Landroidx/constraintlayout/widget/ConstraintSet;
 
     invoke-direct {p4}, Landroidx/constraintlayout/widget/ConstraintSet;-><init>()V
 
-    .line 1195
+    .line 1076
     invoke-virtual {p4, p1}, Landroidx/constraintlayout/widget/ConstraintSet;->clone(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
-    .line 1196
+    .line 1077
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result v2
 
     invoke-virtual {p4, v2, v0, v1, v0}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIII)V
 
-    .line 1197
+    .line 1078
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result v0
@@ -2129,14 +2109,14 @@
 
     invoke-virtual {p4, v0, v2, v1, v2}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIII)V
 
-    .line 1198
+    .line 1079
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result v0
 
     invoke-virtual {p4, v0, p0}, Landroidx/constraintlayout/widget/ConstraintSet;->clear(II)V
 
-    .line 1199
+    .line 1080
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result v1
@@ -2153,15 +2133,15 @@
 
     invoke-virtual/range {v0 .. v5}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIIII)V
 
-    .line 1201
+    .line 1082
     invoke-virtual {p4, p1}, Landroidx/constraintlayout/widget/ConstraintSet;->applyTo(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
     const/4 p0, 0x0
 
-    .line 1202
+    .line 1083
     invoke-virtual {p2, p0}, Landroid/view/View;->setTranslationY(F)V
 
-    .line 1203
+    .line 1084
     invoke-virtual {p2, p0}, Landroid/view/View;->setRotation(F)V
 
     :goto_0
@@ -2180,7 +2160,7 @@
     :cond_0
     const/4 p0, 0x0
 
-    .line 1210
+    .line 1091
     :goto_0
     invoke-virtual {p2, p0}, Landroid/view/View;->setRotation(F)V
 
@@ -2190,7 +2170,7 @@
 .method private final rotateTopView(Landroidx/constraintlayout/widget/ConstraintLayout;Landroid/view/View;Z)V
     .locals 8
 
-    const v0, 0x7f07034a
+    const v0, 0x7f0702f3
 
     const/4 v1, 0x6
 
@@ -2204,7 +2184,7 @@
 
     if-eqz p3, :cond_0
 
-    .line 1084
+    .line 965
     invoke-virtual {p1}, Landroidx/constraintlayout/widget/ConstraintLayout;->getHeight()I
 
     move-result p3
@@ -2213,7 +2193,7 @@
 
     invoke-virtual {p2, p3}, Landroid/view/View;->setPivotX(F)V
 
-    .line 1085
+    .line 966
     invoke-virtual {p2}, Landroid/view/View;->getHeight()I
 
     move-result p3
@@ -2222,15 +2202,15 @@
 
     invoke-virtual {p2, p3}, Landroid/view/View;->setPivotY(F)V
 
-    .line 1086
+    .line 967
     new-instance p3, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;
 
-    .line 1087
+    .line 968
     invoke-virtual {p1}, Landroidx/constraintlayout/widget/ConstraintLayout;->getHeight()I
 
     move-result v6
 
-    .line 1088
+    .line 969
     invoke-virtual {p2}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
@@ -2239,7 +2219,7 @@
 
     move-result v0
 
-    .line 1086
+    .line 967
     invoke-direct {p3, v6, v0}, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;-><init>(II)V
 
     check-cast p3, Landroid/view/ViewGroup$LayoutParams;
@@ -2248,10 +2228,10 @@
 
     const/high16 p3, 0x42b40000    # 90.0f
 
-    .line 1092
+    .line 973
     invoke-virtual {p2, p3}, Landroid/view/View;->setRotation(F)V
 
-    .line 1093
+    .line 974
     invoke-virtual {p2}, Landroid/view/View;->getHeight()I
 
     move-result p3
@@ -2262,46 +2242,46 @@
 
     invoke-virtual {p2, p3}, Landroid/view/View;->setTranslationX(F)V
 
-    .line 1094
+    .line 975
     new-instance p3, Landroidx/constraintlayout/widget/ConstraintSet;
 
     invoke-direct {p3}, Landroidx/constraintlayout/widget/ConstraintSet;-><init>()V
 
-    .line 1095
+    .line 976
     invoke-virtual {p3, p1}, Landroidx/constraintlayout/widget/ConstraintSet;->clone(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
-    .line 1096
+    .line 977
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result v0
 
     invoke-virtual {p3, v0, v2}, Landroidx/constraintlayout/widget/ConstraintSet;->clear(II)V
 
-    .line 1097
+    .line 978
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result v0
 
     invoke-virtual {p3, v0, v1}, Landroidx/constraintlayout/widget/ConstraintSet;->clear(II)V
 
-    .line 1098
+    .line 979
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result v0
 
     invoke-virtual {p3, v0, v4, v5, v4}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIII)V
 
-    .line 1099
+    .line 980
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result v0
 
     invoke-virtual {p3, v0, v3, v5, v3}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIII)V
 
-    .line 1100
+    .line 981
     invoke-virtual {p3, p1}, Landroidx/constraintlayout/widget/ConstraintSet;->applyTo(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
-    .line 1102
+    .line 983
     new-instance p1, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$$ExternalSyntheticLambda2;
 
     invoke-direct {p1, p2, p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$$ExternalSyntheticLambda2;-><init>(Landroid/view/View;Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;)V
@@ -2310,7 +2290,7 @@
 
     goto :goto_0
 
-    .line 1108
+    .line 989
     :cond_0
     invoke-virtual {p2}, Landroid/view/View;->getWidth()I
 
@@ -2320,7 +2300,7 @@
 
     invoke-virtual {p2, p3}, Landroid/view/View;->setPivotX(F)V
 
-    .line 1109
+    .line 990
     invoke-virtual {p2}, Landroid/view/View;->getHeight()I
 
     move-result p3
@@ -2329,15 +2309,15 @@
 
     invoke-virtual {p2, p3}, Landroid/view/View;->setPivotY(F)V
 
-    .line 1110
+    .line 991
     new-instance p3, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;
 
-    .line 1111
+    .line 992
     invoke-virtual {p1}, Landroidx/constraintlayout/widget/ConstraintLayout;->getWidth()I
 
     move-result v6
 
-    .line 1112
+    .line 993
     invoke-virtual {p2}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
@@ -2346,7 +2326,7 @@
 
     move-result v0
 
-    .line 1110
+    .line 991
     invoke-direct {p3, v6, v0}, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;-><init>(II)V
 
     check-cast p3, Landroid/view/ViewGroup$LayoutParams;
@@ -2355,52 +2335,52 @@
 
     const/4 p3, 0x0
 
-    .line 1116
+    .line 997
     invoke-virtual {p2, p3}, Landroid/view/View;->setRotation(F)V
 
-    .line 1117
+    .line 998
     invoke-virtual {p2, p3}, Landroid/view/View;->setTranslationX(F)V
 
-    .line 1118
+    .line 999
     new-instance p3, Landroidx/constraintlayout/widget/ConstraintSet;
 
     invoke-direct {p3}, Landroidx/constraintlayout/widget/ConstraintSet;-><init>()V
 
-    .line 1119
+    .line 1000
     invoke-virtual {p3, p1}, Landroidx/constraintlayout/widget/ConstraintSet;->clone(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
-    .line 1120
+    .line 1001
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result v0
 
     invoke-virtual {p3, v0, v4}, Landroidx/constraintlayout/widget/ConstraintSet;->clear(II)V
 
-    .line 1121
+    .line 1002
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result v0
 
     invoke-virtual {p3, v0, v3}, Landroidx/constraintlayout/widget/ConstraintSet;->clear(II)V
 
-    .line 1122
+    .line 1003
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result v0
 
     invoke-virtual {p3, v0, v2, v5, v2}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIII)V
 
-    .line 1123
+    .line 1004
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result v0
 
     invoke-virtual {p3, v0, v1, v5, v1}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIII)V
 
-    .line 1124
+    .line 1005
     invoke-virtual {p3, p1}, Landroidx/constraintlayout/widget/ConstraintSet;->applyTo(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
-    .line 1126
+    .line 1007
     new-instance p1, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$$ExternalSyntheticLambda3;
 
     invoke-direct {p1, p2, p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$$ExternalSyntheticLambda3;-><init>(Landroid/view/View;Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;)V
@@ -2426,7 +2406,7 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1104
+    .line 985
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->requireContext()Landroid/content/Context;
 
     move-result-object p1
@@ -2435,7 +2415,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f07034f
+    const p2, 0x7f0702f7
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -2443,10 +2423,10 @@
 
     const/4 p2, 0x0
 
-    .line 1103
+    .line 984
     invoke-virtual {p0, p2, p2, p1, p2}, Landroid/view/View;->setPadding(IIII)V
 
-    .line 1106
+    .line 987
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
@@ -2467,7 +2447,7 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1128
+    .line 1009
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->requireContext()Landroid/content/Context;
 
     move-result-object p1
@@ -2476,7 +2456,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f070350
+    const p2, 0x7f0702f8
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -2484,69 +2464,19 @@
 
     const/4 p2, 0x0
 
-    .line 1127
+    .line 1008
     invoke-virtual {p0, p2, p2, p1, p2}, Landroid/view/View;->setPadding(IIII)V
 
-    .line 1130
+    .line 1011
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 .end method
 
-.method private final setBitrateValueVisibility(Z)V
-    .locals 1
-
-    .line 988
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->isShowing()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    .line 989
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->getView()Landroid/view/View;
-
-    move-result-object p0
-
-    if-eqz p0, :cond_0
-
-    const v0, 0x7f0900bc
-
-    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object p0
-
-    check-cast p0, Landroid/widget/TextView;
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
-    if-eqz p0, :cond_2
-
-    if-eqz p1, :cond_1
-
-    const/4 p1, 0x0
-
-    goto :goto_1
-
-    :cond_1
-    const/16 p1, 0x8
-
-    .line 991
-    :goto_1
-    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setVisibility(I)V
-
-    :cond_2
-    return-void
-.end method
-
 .method private final setBurstCount(I)V
     .locals 0
 
-    .line 789
+    .line 776
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mBurstCountText:Ljp/co/sony/mc/camera/view/BurstCountView;
 
     if-eqz p0, :cond_0
@@ -2560,7 +2490,7 @@
 .method private final setDefaultDurationText()V
     .locals 1
 
-    .line 896
+    .line 872
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->isShowing()Z
 
     move-result v0
@@ -2571,10 +2501,10 @@
 
     if-eqz p0, :cond_0
 
-    .line 897
+    .line 873
     invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    const v0, 0x7f11038d
+    const v0, 0x7f1103d8
 
     invoke-virtual {p0, v0}, Landroid/widget/TextView;->setText(I)V
 
@@ -2585,7 +2515,7 @@
 .method private final setDurationText(I)V
     .locals 9
 
-    .line 883
+    .line 859
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->isShowing()Z
 
     move-result v0
@@ -2596,7 +2526,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 884
+    .line 860
     sget-object v0, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
     int-to-long v1, p1
@@ -2605,7 +2535,7 @@
 
     move-result-wide v3
 
-    .line 885
+    .line 861
     sget-object p1, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
     invoke-virtual {p1, v1, v2}, Ljava/util/concurrent/TimeUnit;->toMinutes(J)J
@@ -2618,7 +2548,7 @@
 
     rem-long/2addr v5, v7
 
-    .line 886
+    .line 862
     sget-object p1, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
     invoke-virtual {p1, v1, v2}, Ljava/util/concurrent/TimeUnit;->toSeconds(J)J
@@ -2627,7 +2557,7 @@
 
     rem-long/2addr v0, v7
 
-    .line 887
+    .line 863
     sget-object p1, Lkotlin/jvm/internal/StringCompanionObject;->INSTANCE:Lkotlin/jvm/internal/StringCompanionObject;
 
     invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -2662,7 +2592,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 888
+    .line 864
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mRecordingDurationText:Landroid/widget/TextView;
 
     invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -2684,21 +2614,21 @@
 
     if-ne p0, p2, :cond_0
 
-    .line 774
+    .line 761
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
     const/4 p0, 0x4
 
-    .line 775
+    .line 762
     invoke-virtual {p1, p0}, Landroid/widget/ImageView;->setVisibility(I)V
 
     goto :goto_0
 
-    .line 778
+    .line 765
     :cond_0
     invoke-virtual {p1, p2}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 779
+    .line 766
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setVisibility(I)V
 
     :goto_0
@@ -2708,7 +2638,7 @@
 .method private final setMRecordingDuration(I)V
     .locals 3
 
-    .line 144
+    .line 141
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mRecordingDuration$delegate:Lkotlin/properties/ReadWriteProperty;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->$$delegatedProperties:[Lkotlin/reflect/KProperty;
@@ -2729,12 +2659,12 @@
 .method private final showCaptureProgress(IZZLjp/co/sony/mc/camera/view/feedback/CaptureProgressCircleView$AnimationProgressListener;)V
     .locals 2
 
-    .line 1059
+    .line 940
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mCaptureProgressView:Ljp/co/sony/mc/camera/view/feedback/CaptureProgressView;
 
     if-eqz v0, :cond_0
 
-    .line 1060
+    .line 941
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/feedback/CaptureProgressView;->getVisibility()I
@@ -2747,7 +2677,7 @@
 
     if-eqz p2, :cond_0
 
-    .line 1061
+    .line 942
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mCaptureProgressView:Ljp/co/sony/mc/camera/view/feedback/CaptureProgressView;
 
     invoke-static {p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -2758,21 +2688,21 @@
 
     if-eqz p3, :cond_0
 
-    .line 1063
+    .line 944
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mCaptureProgressView:Ljp/co/sony/mc/camera/view/feedback/CaptureProgressView;
 
     invoke-static {p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-virtual {p2, p4}, Ljp/co/sony/mc/camera/view/feedback/CaptureProgressView;->setAnimationProgressListener(Ljp/co/sony/mc/camera/view/feedback/CaptureProgressCircleView$AnimationProgressListener;)V
 
-    .line 1064
+    .line 945
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mCaptureProgressView:Ljp/co/sony/mc/camera/view/feedback/CaptureProgressView;
 
     invoke-static {p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-virtual {p2, p1}, Ljp/co/sony/mc/camera/view/feedback/CaptureProgressView;->setDuration(I)V
 
-    .line 1065
+    .line 946
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mCaptureProgressView:Ljp/co/sony/mc/camera/view/feedback/CaptureProgressView;
 
     invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -2786,7 +2716,7 @@
 .method private final showSelfTimerCountDownView()V
     .locals 2
 
-    .line 1026
+    .line 907
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mSelfTimerCountDownView:Ljp/co/sony/mc/camera/view/SelfTimerCountDownView;
 
     const/4 v1, 0x0
@@ -2795,7 +2725,7 @@
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownView;->setVisibility(I)V
 
-    .line 1027
+    .line 908
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mSelfTimerCountDownView:Ljp/co/sony/mc/camera/view/SelfTimerCountDownView;
 
@@ -2810,14 +2740,14 @@
 .method private final startPresentation(Landroid/view/Display;)V
     .locals 4
 
-    .line 394
+    .line 385
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->isShowing()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 395
+    .line 386
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     const/4 v1, 0x1
@@ -2834,20 +2764,20 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 396
+    .line 387
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mContext:Landroid/content/Context;
 
     invoke-virtual {p0, v0, p1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->setDisplay(Landroid/content/Context;Landroid/view/Display;)V
 
-    .line 398
+    .line 389
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mFragmentManager:Landroidx/fragment/app/FragmentManager;
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->CLASS_NAME_TAG:Ljava/lang/String;
 
     invoke-virtual {p0, p1, v0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->show(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V
 
-    .line 399
+    .line 390
     iput-boolean v1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mIsShowing:Z
 
     :cond_1
@@ -2857,14 +2787,14 @@
 .method private final stopPresentation()V
     .locals 3
 
-    .line 407
+    .line 398
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->isShowing()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 408
+    .line 399
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     const/4 v1, 0x0
@@ -2881,22 +2811,22 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 409
+    .line 400
     :cond_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->hideCaptureProgressView()V
 
-    .line 410
+    .line 401
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->dismiss()V
 
-    .line 411
+    .line 402
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->cleanUpViews()V
 
     const/4 v0, 0x0
 
-    .line 412
+    .line 403
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mSurface:Landroid/view/Surface;
 
-    .line 413
+    .line 404
     iput-boolean v1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mIsShowing:Z
 
     :cond_1
@@ -2906,7 +2836,7 @@
 .method private final updateBattery()V
     .locals 2
 
-    .line 761
+    .line 748
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->isShowing()Z
 
     move-result v0
@@ -2921,20 +2851,20 @@
 
     if-eqz v0, :cond_0
 
-    .line 762
+    .line 749
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 763
+    .line 750
     iget v1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mBatteryLevel:I
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarResource;->getBatteryIconResIdForExtDisplay(I)I
 
     move-result v1
 
-    .line 762
+    .line 749
     invoke-direct {p0, v0, v1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->setIconResource(Landroid/widget/ImageView;I)V
 
-    .line 764
+    .line 751
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mBatteryText:Landroid/widget/TextView;
 
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -2967,69 +2897,10 @@
     return-void
 .end method
 
-.method private final updateNetworkStatusVisibility(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)V
-    .locals 1
-
-    .line 430
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->getView()Landroid/view/View;
-
-    move-result-object p0
-
-    if-eqz p0, :cond_0
-
-    const v0, 0x7f09046c
-
-    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object p0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
-    if-eqz p0, :cond_3
-
-    .line 431
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isStreaming()Z
-
-    move-result p1
-
-    const/4 v0, 0x1
-
-    if-ne p1, v0, :cond_1
-
-    const/4 p1, 0x0
-
-    goto :goto_1
-
-    :cond_1
-    if-nez p1, :cond_2
-
-    const/16 p1, 0x8
-
-    :goto_1
-    invoke-virtual {p0, p1}, Landroid/view/View;->setVisibility(I)V
-
-    goto :goto_2
-
-    :cond_2
-    new-instance p0, Lkotlin/NoWhenBranchMatchedException;
-
-    invoke-direct {p0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
-
-    throw p0
-
-    :cond_3
-    :goto_2
-    return-void
-.end method
-
 .method private final updateRecStatusVisibility()V
     .locals 5
 
-    .line 850
+    .line 826
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->isShowing()Z
 
     move-result v0
@@ -3044,17 +2915,17 @@
 
     if-eqz v0, :cond_3
 
-    .line 851
+    .line 827
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mAudioLevel:Ljp/co/sony/mc/camera/view/widget/ExternalDisplayAudioLevelWidget;
 
     if-eqz v0, :cond_3
 
-    .line 853
+    .line 829
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
 
-    .line 854
+    .line 830
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     check-cast v1, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
@@ -3065,7 +2936,7 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 856
+    .line 832
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
 
     move-result v2
@@ -3076,14 +2947,14 @@
 
     if-eqz v2, :cond_0
 
-    .line 857
+    .line 833
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mRecStatusText:Landroid/widget/FrameLayout;
 
     invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-virtual {v2, v3}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
-    .line 858
+    .line 834
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mRecordingDurationText:Landroid/widget/TextView;
 
     invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -3092,7 +2963,7 @@
 
     goto :goto_0
 
-    .line 860
+    .line 836
     :cond_0
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mRecStatusText:Landroid/widget/FrameLayout;
 
@@ -3100,14 +2971,14 @@
 
     invoke-virtual {v2, v4}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
-    .line 861
+    .line 837
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mRecordingDurationText:Landroid/widget/TextView;
 
     invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-virtual {v2, v4}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 864
+    .line 840
     :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mAudioLevel:Ljp/co/sony/mc/camera/view/widget/ExternalDisplayAudioLevelWidget;
 
@@ -3119,7 +2990,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 865
+    .line 841
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->DISPLAY_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     check-cast v1, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
@@ -3130,7 +3001,7 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
 
-    .line 866
+    .line 842
     sget-object v2, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRO_VIDEO_DISP_CUSTOM_EXTENSION_DATA:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     check-cast v2, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
@@ -3141,7 +3012,7 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
 
-    .line 867
+    .line 843
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;->STANDBY:Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
 
     if-eq v1, v2, :cond_2
@@ -3150,7 +3021,7 @@
 
     if-ne v1, v2, :cond_1
 
-    .line 868
+    .line 844
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/DispCustom;->AUDIO:Ljp/co/sony/mc/camera/configuration/parameters/DispCustom;
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;->isChecked(Ljp/co/sony/mc/camera/configuration/parameters/DispCustom;)Z
@@ -3164,7 +3035,7 @@
     :cond_1
     move v3, v4
 
-    .line 864
+    .line 840
     :cond_2
     :goto_1
     invoke-virtual {p0, v3}, Ljp/co/sony/mc/camera/view/widget/ExternalDisplayAudioLevelWidget;->setVisibility(I)V
@@ -3174,250 +3045,186 @@
 .end method
 
 .method private final updateRecordingIndicator(I)V
-    .locals 10
+    .locals 8
 
-    .line 803
-    invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
-
-    move-result-object v0
-
-    .line 804
-    sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    check-cast v1, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
-
-    .line 803
-    invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
+    .line 790
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->getOrientationViewModel()Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
     move-result-object v0
 
-    check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;->getLayoutOrientation()Landroidx/lifecycle/LiveData;
 
-    .line 804
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isStreaming()Z
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;->isPortrait()Z
 
     move-result v0
 
-    .line 805
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->getOrientationViewModel()Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;->getLayoutOrientation()Landroidx/lifecycle/LiveData;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
-
-    const/4 v2, 0x0
-
-    if-eqz v1, :cond_0
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;->isPortrait()Z
-
-    move-result v1
-
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v1
+    move-result-object v0
 
     goto :goto_0
 
     :cond_0
-    move-object v1, v2
+    move-object v0, v1
 
     :goto_0
-    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
-    move-result v1
+    move-result v0
 
-    .line 807
+    .line 792
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->isShowing()Z
 
-    move-result v3
+    move-result v2
 
-    if-eqz v3, :cond_7
+    if-eqz v2, :cond_6
 
-    iget-object v3, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mStbyText:Landroid/widget/TextView;
+    iget-object v2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mStbyText:Landroid/widget/TextView;
 
-    if-eqz v3, :cond_7
+    if-eqz v2, :cond_6
 
-    .line 808
-    iget-object v4, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mRecText:Landroid/widget/TextView;
+    .line 793
+    iget-object v3, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mRecText:Landroid/widget/TextView;
 
-    if-eqz v4, :cond_7
+    if-eqz v3, :cond_6
 
-    iget-object v5, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mStreamingText:Landroid/view/View;
+    iget-object v4, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mRecordingDurationText:Landroid/widget/TextView;
 
-    if-eqz v5, :cond_7
+    if-eqz v4, :cond_6
 
-    iget-object v6, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mRecordingDurationText:Landroid/widget/TextView;
+    const v4, 0x7f0903b0
 
-    if-eqz v6, :cond_7
+    .line 795
+    const-string v5, "null cannot be cast to non-null type androidx.constraintlayout.widget.ConstraintLayout"
 
-    const v6, 0x7f0903b1
+    const/4 v6, 0x0
 
-    .line 810
-    const-string v7, "null cannot be cast to non-null type androidx.constraintlayout.widget.ConstraintLayout"
-
-    const/16 v8, 0x8
-
-    const/4 v9, 0x0
+    const/16 v7, 0x8
 
     if-gez p1, :cond_3
 
-    .line 811
-    invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    .line 796
+    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mIsFullStorage:Z
 
     if-eqz p1, :cond_1
 
-    if-nez v0, :cond_1
-
-    move p1, v8
-
-    goto :goto_1
+    move v6, v7
 
     :cond_1
-    move p1, v9
+    invoke-virtual {v2, v6}, Landroid/widget/TextView;->setVisibility(I)V
 
-    :goto_1
-    invoke-virtual {v3, p1}, Landroid/widget/TextView;->setVisibility(I)V
-
-    .line 813
+    .line 797
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mRecText:Landroid/widget/TextView;
 
     invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    invoke-virtual {p1, v8}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {p1, v7}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 814
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mStreamingText:Landroid/view/View;
-
-    invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
-    invoke-virtual {p1, v8}, Landroid/view/View;->setVisibility(I)V
-
-    .line 817
+    .line 800
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mUiRoot:Landroid/view/View;
 
-    invoke-static {p1, v7}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast p1, Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    .line 818
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mUiRoot:Landroid/view/View;
+    .line 801
+    iget-object v2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mUiRoot:Landroid/view/View;
 
-    if-eqz v0, :cond_2
+    if-eqz v2, :cond_2
 
-    invoke-virtual {v0, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v2
+    move-result-object v1
 
     :cond_2
-    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 817
-    invoke-direct {p0, p1, v2, v1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->rotateBottomView(Landroidx/constraintlayout/widget/ConstraintLayout;Landroid/view/View;Z)V
+    .line 800
+    invoke-direct {p0, p1, v1, v0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->rotateBottomView(Landroidx/constraintlayout/widget/ConstraintLayout;Landroid/view/View;Z)V
 
-    .line 820
-    invoke-direct {p0, v9}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->setBitrateValueVisibility(Z)V
-
-    .line 821
+    .line 803
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->setDefaultDurationText()V
 
-    goto :goto_3
+    goto :goto_1
 
     :cond_3
-    if-nez p1, :cond_6
+    if-nez p1, :cond_5
 
-    if-eqz v0, :cond_4
+    .line 806
+    invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 825
-    invoke-static {v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    invoke-virtual {v3, v6}, Landroid/widget/TextView;->setVisibility(I)V
 
-    invoke-virtual {v5, v9}, Landroid/view/View;->setVisibility(I)V
+    .line 807
+    iget-object v2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mStbyText:Landroid/widget/TextView;
 
-    goto :goto_2
-
-    .line 827
-    :cond_4
-    invoke-static {v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
-    invoke-virtual {v4, v9}, Landroid/widget/TextView;->setVisibility(I)V
-
-    .line 829
-    :goto_2
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mStbyText:Landroid/widget/TextView;
-
-    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
-    invoke-virtual {v0, v8}, Landroid/widget/TextView;->setVisibility(I)V
-
-    .line 832
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mUiRoot:Landroid/view/View;
-
-    invoke-static {v0, v7}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
-
-    check-cast v0, Landroidx/constraintlayout/widget/ConstraintLayout;
-
-    .line 833
-    iget-object v3, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mUiRoot:Landroid/view/View;
-
-    if-eqz v3, :cond_5
-
-    invoke-virtual {v3, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v2
-
-    :cond_5
     invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 832
-    invoke-direct {p0, v0, v2, v1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->rotateBottomView(Landroidx/constraintlayout/widget/ConstraintLayout;Landroid/view/View;Z)V
+    invoke-virtual {v2, v7}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 835
-    iget-wide v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->DEFAULT_BITRATE:J
+    .line 810
+    iget-object v2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mUiRoot:Landroid/view/View;
 
-    invoke-virtual {p0, v0, v1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->setCurrentBitrate(J)V
+    invoke-static {v2, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const/4 v0, 0x1
+    check-cast v2, Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    .line 836
-    invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->setBitrateValueVisibility(Z)V
+    .line 811
+    iget-object v3, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mUiRoot:Landroid/view/View;
 
-    .line 837
+    if-eqz v3, :cond_4
+
+    invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    :cond_4
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    .line 810
+    invoke-direct {p0, v2, v1, v0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->rotateBottomView(Landroidx/constraintlayout/widget/ConstraintLayout;Landroid/view/View;Z)V
+
+    .line 813
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->setDurationText(I)V
 
-    goto :goto_3
+    goto :goto_1
 
-    .line 840
+    .line 816
+    :cond_5
+    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->setDurationText(I)V
+
     :cond_6
-    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->setDurationText(I)V
-
-    :cond_7
-    :goto_3
+    :goto_1
     return-void
 .end method
 
 .method private final updateThermalIcon(Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;)V
     .locals 2
 
-    .line 742
+    .line 729
     sget-object v0, Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;->WARNING:Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;
 
     const/4 v1, 0x0
 
     if-eq p1, v0, :cond_1
 
-    .line 743
+    .line 730
     sget-object v0, Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;->WARNING_EXTRA:Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;
 
     if-ne p1, v0, :cond_0
@@ -3433,7 +3240,7 @@
     :goto_0
     const/4 p1, 0x1
 
-    .line 744
+    .line 731
     :goto_1
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->isShowing()Z
 
@@ -3445,7 +3252,7 @@
 
     if-eqz p0, :cond_3
 
-    .line 745
+    .line 732
     invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     if-eqz p1, :cond_2
@@ -3469,17 +3276,17 @@
 
     const/4 v0, 0x0
 
-    .line 371
+    .line 362
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mIsConnectionEnabled:Z
 
-    .line 372
+    .line 363
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mDisplayManager:Landroid/hardware/display/DisplayManager;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mDisplayListener:Landroid/hardware/display/DisplayManager$DisplayListener;
 
     invoke-virtual {v0, v1}, Landroid/hardware/display/DisplayManager;->unregisterDisplayListener(Landroid/hardware/display/DisplayManager$DisplayListener;)V
 
-    .line 373
+    .line 364
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->stopPresentation()V
 
     return-void
@@ -3490,10 +3297,10 @@
 
     const/4 v0, 0x1
 
-    .line 362
+    .line 353
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mIsConnectionEnabled:Z
 
-    .line 363
+    .line 354
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mDisplayManager:Landroid/hardware/display/DisplayManager;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mDisplayListener:Landroid/hardware/display/DisplayManager$DisplayListener;
@@ -3512,7 +3319,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 441
+    .line 412
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     const/4 v1, 0x1
@@ -3529,7 +3336,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 442
+    .line 413
     :cond_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->isShowing()Z
 
@@ -3545,21 +3352,21 @@
 
     if-eqz v2, :cond_5
 
-    .line 443
+    .line 414
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     sget-object v2, Ljp/co/sony/mc/camera/OrientationService$LayoutOrientation;->Portrait:Ljp/co/sony/mc/camera/OrientationService$LayoutOrientation;
 
     invoke-virtual {v0, p1, v2}, Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;->flipGlSurface(Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;Ljp/co/sony/mc/camera/OrientationService$LayoutOrientation;)V
 
-    .line 444
+    .line 415
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 448
+    .line 419
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mUiRoot:Landroid/view/View;
 
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -3586,12 +3393,12 @@
 
     if-ne p1, v1, :cond_1
 
-    .line 454
+    .line 425
     iget p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->FLIP_FORWARD_ANGLE:F
 
     goto :goto_0
 
-    .line 448
+    .line 419
     :cond_1
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
@@ -3599,23 +3406,23 @@
 
     throw p0
 
-    .line 453
+    .line 424
     :cond_2
     iget p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->FLIP_FORWARD_ANGLE:F
 
     goto :goto_0
 
-    .line 452
+    .line 423
     :cond_3
     iget p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->FLIP_REVERSE_ANGLE:F
 
     goto :goto_0
 
-    .line 451
+    .line 422
     :cond_4
     iget p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->FLIP_REVERSE_ANGLE:F
 
-    .line 448
+    .line 419
     :goto_0
     invoke-virtual {v0, p0}, Landroid/view/View;->setRotation(F)V
 
@@ -3626,14 +3433,14 @@
 .method public final hideBlackScreen()V
     .locals 1
 
-    .line 544
+    .line 516
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->isShowing()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 545
+    .line 517
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->getView()Landroid/view/View;
 
     move-result-object v0
@@ -3656,7 +3463,7 @@
 
     const/16 v0, 0x8
 
-    .line 546
+    .line 518
     invoke-virtual {p0, v0}, Landroid/view/View;->setVisibility(I)V
 
     :cond_1
@@ -3666,10 +3473,10 @@
 .method public final notifyBatteryStatus(I)V
     .locals 0
 
-    .line 753
+    .line 740
     iput p1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mBatteryLevel:I
 
-    .line 754
+    .line 741
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->isShowing()Z
 
     move-result p1
@@ -3682,151 +3489,44 @@
     return-void
 .end method
 
-.method public final notifyCapturingModeChanged(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)V
-    .locals 1
-
-    const-string v0, "nextCapturingMode"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 421
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->isShowing()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 422
-    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->updateNetworkStatusVisibility(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public onAeAwbLockStateChanged(ZZ)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onAeAwbLockStateChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;ZZ)V
-
-    return-void
-.end method
-
-.method public onAfOnStateChangedByRemocon()V
-    .locals 0
-
-    .line 92
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onAfOnStateChangedByRemocon(Ljp/co/sony/mc/camera/view/CameraEventListener;)V
-
-    return-void
-.end method
-
-.method public onApertureDetected(F)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onApertureDetected(Ljp/co/sony/mc/camera/view/CameraEventListener;F)V
-
-    return-void
-.end method
-
-.method public onAutoFlashChanged(Z)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onAutoFlashChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;Z)V
-
-    return-void
-.end method
-
-.method public onAutoFramingObjectTrackResultChanged(Z)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onAutoFramingObjectTrackResultChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;Z)V
-
-    return-void
-.end method
-
-.method public onAutoHdrChanged(Z)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onAutoHdrChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;Z)V
-
-    return-void
-.end method
-
-.method public onBokehResultChanged(IZ)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onBokehResultChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;IZ)V
-
-    return-void
-.end method
-
 .method public onBurstCaptureDone(I)V
     .locals 0
 
-    .line 570
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onBurstCaptureDone(Ljp/co/sony/mc/camera/view/CameraEventListener;I)V
+    .line 542
+    invoke-super {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onBurstCaptureDone(I)V
 
-    .line 571
+    .line 543
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->hideBustCount()V
 
     return-void
 .end method
 
-.method public onBurstCaptureRejected(I)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onBurstCaptureRejected(Ljp/co/sony/mc/camera/view/CameraEventListener;I)V
-
-    return-void
-.end method
-
 .method public onBurstCaptureRequested(I)V
-    .locals 0
+    .locals 1
 
-    .line 585
+    .line 560
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mContentsViewController:Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;
 
     if-eqz p0, :cond_0
 
-    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->createEmptyContentFrame(I)Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;
+    .line 562
+    sget-object v0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;->BURST:Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
+
+    .line 560
+    invoke-virtual {p0, p1, v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->createEmptyContentFrame(ILjp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;)Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;
 
     :cond_0
-    return-void
-.end method
-
-.method public onBurstQueueingCountUpdated(I)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onBurstQueueingCountUpdated(Ljp/co/sony/mc/camera/view/CameraEventListener;I)V
-
     return-void
 .end method
 
 .method public onBurstShutterAction(II)V
     .locals 0
 
-    .line 562
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onBurstShutterAction(Ljp/co/sony/mc/camera/view/CameraEventListener;II)V
+    .line 534
+    invoke-super {p0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onBurstShutterAction(II)V
 
-    .line 563
+    .line 535
     invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->setBurstCount(I)V
-
-    return-void
-.end method
-
-.method public onBurstShutterDone(I)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onBurstShutterDone(Ljp/co/sony/mc/camera/view/CameraEventListener;I)V
 
     return-void
 .end method
@@ -3838,10 +3538,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 661
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onCameraEvent(Ljp/co/sony/mc/camera/view/CameraEventListener;Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)V
+    .line 648
+    invoke-super {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onCameraEvent(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)V
 
-    .line 662
+    .line 649
     sget-object v0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$WhenMappings;->$EnumSwitchMapping$1:[I
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->ordinal()I
@@ -3856,7 +3556,7 @@
 
     goto :goto_0
 
-    .line 682
+    .line 669
     :pswitch_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->showSelfTimerCountDownView()V
 
@@ -3865,39 +3565,39 @@
     :pswitch_1
     const/4 p1, 0x0
 
-    .line 679
+    .line 666
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->setMRecordingDuration(I)V
 
     goto :goto_0
 
-    .line 676
+    .line 663
     :pswitch_2
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->cancelSelfTimerCountDownView()V
 
     goto :goto_0
 
-    .line 670
+    .line 657
     :pswitch_3
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->hideBustCount()V
 
-    .line 671
+    .line 658
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->cancelSelfTimerCountDownView()V
 
-    .line 672
+    .line 659
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->hideCaptureProgressView()V
 
-    .line 673
+    .line 660
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->setMRecordingDuration(I)V
 
     goto :goto_0
 
-    .line 667
+    .line 654
     :pswitch_4
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->setMRecordingDuration(I)V
 
     goto :goto_0
 
-    .line 664
+    .line 651
     :pswitch_5
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->setMRecordingDuration(I)V
 
@@ -3914,15 +3614,6 @@
         :pswitch_1
         :pswitch_0
     .end packed-switch
-.end method
-
-.method public onCameraSettingsChanged(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onCameraSettingsChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;)V
-
-    return-void
 .end method
 
 .method public onCameraSettingsChanged(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljava/util/List;)V
@@ -3945,10 +3636,10 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 650
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onCameraSettingsChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljava/util/List;)V
+    .line 637
+    invoke-super {p0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onCameraSettingsChanged(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljava/util/List;)V
 
-    .line 651
+    .line 638
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->DRIVE_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
@@ -3961,7 +3652,7 @@
 
     if-eqz p2, :cond_0
 
-    .line 652
+    .line 639
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mSelfTimerCountDownView:Ljp/co/sony/mc/camera/view/SelfTimerCountDownView;
 
     if-eqz p2, :cond_0
@@ -3974,7 +3665,7 @@
 
     invoke-virtual {p2, p1}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownView;->setSelfTimer(Ljp/co/sony/mc/camera/setting/SelfTimerInterface;)V
 
-    .line 654
+    .line 641
     :cond_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->updateRecStatusVisibility()V
 
@@ -3984,41 +3675,23 @@
 .method public onCameraSettingsReset()V
     .locals 0
 
-    .line 700
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onCameraSettingsReset(Ljp/co/sony/mc/camera/view/CameraEventListener;)V
-
-    return-void
-.end method
-
-.method public onCaptureInRecording()V
-    .locals 0
-
-    .line 92
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onCaptureInRecording(Ljp/co/sony/mc/camera/view/CameraEventListener;)V
-
-    return-void
-.end method
-
-.method public onChangeToCoolMode()V
-    .locals 0
-
-    .line 92
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onChangeToCoolMode(Ljp/co/sony/mc/camera/view/CameraEventListener;)V
+    .line 687
+    invoke-super {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onCameraSettingsReset()V
 
     return-void
 .end method
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
-    .locals 10
+    .locals 11
 
     const-string v0, "inflater"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 178
+    .line 175
     invoke-super {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/fragment/PresentationFragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
-    .line 179
+    .line 176
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p1, :cond_0
@@ -4035,13 +3708,13 @@
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 180
+    .line 177
     :cond_0
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object p1
 
-    const p2, 0x7f0c0087
+    const p2, 0x7f0c007e
 
     const/4 p3, 0x0
 
@@ -4049,7 +3722,7 @@
 
     move-result-object p1
 
-    .line 181
+    .line 178
     const-string p2, "null cannot be cast to non-null type androidx.constraintlayout.widget.ConstraintLayout"
 
     invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
@@ -4060,9 +3733,9 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->rootView:Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    const p3, 0x7f0900e0
+    const p3, 0x7f0900e2
 
-    .line 183
+    .line 180
     invoke-virtual {p2, p3}, Landroidx/constraintlayout/widget/ConstraintLayout;->findViewById(I)Landroid/view/View;
 
     move-result-object p2
@@ -4071,7 +3744,7 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->surfaceView:Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;
 
-    .line 184
+    .line 181
     invoke-static {p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     new-instance p3, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$onCreateView$1;
@@ -4082,44 +3755,44 @@
 
     invoke-virtual {p2, p3}, Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;->initialize(Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView$LifeCycleCallback;)V
 
-    .line 212
+    .line 209
     new-instance p2, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;
 
-    .line 214
+    .line 211
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object v2
 
-    .line 215
+    .line 212
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mStorage:Ljp/co/sony/mc/camera/storage/Storage;
 
-    .line 216
+    .line 213
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->isDeviceInSecurityLock()Z
 
     move-result p3
 
     if-eqz p3, :cond_1
 
-    .line 217
+    .line 214
     sget-object p3, Ljp/co/sony/mc/camera/view/contentsview/ContentLoader$SecurityLevel;->NEWLY_ADDED_CONTENT_ONLY:Ljp/co/sony/mc/camera/view/contentsview/ContentLoader$SecurityLevel;
 
     goto :goto_0
 
-    .line 219
+    .line 216
     :cond_1
     sget-object p3, Ljp/co/sony/mc/camera/view/contentsview/ContentLoader$SecurityLevel;->NORMAL:Ljp/co/sony/mc/camera/view/contentsview/ContentLoader$SecurityLevel;
 
     :goto_0
     move-object v4, p3
 
-    .line 221
+    .line 218
     iget-object p3, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mContext:Landroid/content/Context;
 
     invoke-static {p3}, Ljp/co/sony/mc/camera/util/CommonUtility;->isCoreCameraApp(Landroid/content/Context;)Z
 
     move-result v5
 
-    .line 222
+    .line 219
     new-instance p3, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$onCreateView$2;
 
     invoke-direct {p3}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$onCreateView$2;-><init>()V
@@ -4128,13 +3801,16 @@
 
     check-cast v7, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet$ThumbnailStateListener;
 
-    .line 226
+    .line 223
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->getContext()Landroid/content/Context;
 
     move-result-object v8
 
-    .line 227
+    .line 224
     iget-object v9, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mContentCache:Ljp/co/sony/mc/camera/view/contentsview/ContentCache;
+
+    .line 225
+    iget-object v10, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mCaptureRequestRecorder:Ljp/co/sony/mc/camera/view/contentsview/CaptureRequestRecorder;
 
     const/4 v6, 0x1
 
@@ -4142,8 +3818,8 @@
 
     move-object v1, p1
 
-    .line 212
-    invoke-direct/range {v0 .. v9}, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;-><init>(Landroid/view/View;Landroid/view/LayoutInflater;Ljp/co/sony/mc/camera/storage/Storage;Ljp/co/sony/mc/camera/view/contentsview/ContentLoader$SecurityLevel;ZZLjp/co/sony/mc/camera/view/contentsview/ContentPallet$ThumbnailStateListener;Landroid/content/Context;Ljp/co/sony/mc/camera/view/contentsview/ContentCache;)V
+    .line 209
+    invoke-direct/range {v0 .. v10}, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;-><init>(Landroid/view/View;Landroid/view/LayoutInflater;Ljp/co/sony/mc/camera/storage/Storage;Ljp/co/sony/mc/camera/view/contentsview/ContentLoader$SecurityLevel;ZZLjp/co/sony/mc/camera/view/contentsview/ContentPallet$ThumbnailStateListener;Landroid/content/Context;Ljp/co/sony/mc/camera/view/contentsview/ContentCache;Ljp/co/sony/mc/camera/view/contentsview/CaptureRequestRecorder;)V
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mContentsViewController:Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;
 
@@ -4153,10 +3829,10 @@
 .method public onDestroyView()V
     .locals 1
 
-    .line 353
+    .line 344
     invoke-super {p0}, Ljp/co/sony/mc/camera/view/fragment/PresentationFragment;->onDestroyView()V
 
-    .line 354
+    .line 345
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mUpdateDisplayMonitor:Ljp/co/sony/mc/camera/UpdateDisplayMonitor;
 
     if-eqz v0, :cond_0
@@ -4169,106 +3845,16 @@
     return-void
 .end method
 
-.method public onDismissKeyguard()V
-    .locals 0
-
-    .line 92
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onDismissKeyguard(Ljp/co/sony/mc/camera/view/CameraEventListener;)V
-
-    return-void
-.end method
-
-.method public onDismissKeyguardCanceled()V
-    .locals 0
-
-    .line 92
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onDismissKeyguardCanceled(Ljp/co/sony/mc/camera/view/CameraEventListener;)V
-
-    return-void
-.end method
-
-.method public onEnduranceModeActivationChanged(Z)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onEnduranceModeActivationChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;Z)V
-
-    return-void
-.end method
-
-.method public onExposureDone(I)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onExposureDone(Ljp/co/sony/mc/camera/view/CameraEventListener;I)V
-
-    return-void
-.end method
-
 .method public onExposureStarted(IIZZ)V
     .locals 0
 
-    .line 631
-    invoke-static {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onExposureStarted(Ljp/co/sony/mc/camera/view/CameraEventListener;IIZZ)V
+    .line 615
+    invoke-super {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onExposureStarted(IIZZ)V
 
     const/4 p1, 0x0
 
-    .line 632
+    .line 616
     invoke-direct {p0, p2, p3, p4, p1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->showCaptureProgress(IZZLjp/co/sony/mc/camera/view/feedback/CaptureProgressCircleView$AnimationProgressListener;)V
-
-    return-void
-.end method
-
-.method public onFaceSelected(Landroid/graphics/Point;)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onFaceSelected(Ljp/co/sony/mc/camera/view/CameraEventListener;Landroid/graphics/Point;)V
-
-    return-void
-.end method
-
-.method public onFacebookAccountSettingChanged(Ljava/lang/String;)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onFacebookAccountSettingChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public onFacebookLiveSelectSettingChanged(Ljava/lang/String;)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onFacebookLiveSelectSettingChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public onFallbackModeChanging(Z)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onFallbackModeChanging(Ljp/co/sony/mc/camera/view/CameraEventListener;Z)V
-
-    return-void
-.end method
-
-.method public onFallbackStateChanged(ZZ)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onFallbackStateChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;ZZ)V
-
-    return-void
-.end method
-
-.method public onFocusChangedByRemocon(ZZ)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onFocusChangedByRemocon(Ljp/co/sony/mc/camera/view/CameraEventListener;ZZ)V
 
     return-void
 .end method
@@ -4280,125 +3866,8 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 707
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onFocusMagnificationResultChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;)V
-
-    return-void
-.end method
-
-.method public onFocusMagnifierPreparing(Z)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onFocusMagnifierPreparing(Ljp/co/sony/mc/camera/view/CameraEventListener;Z)V
-
-    return-void
-.end method
-
-.method public onFramingAssistCroppedPositionChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onFramingAssistCroppedPositionChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;)V
-
-    return-void
-.end method
-
-.method public onGoogleLensAvailableChanged(Z)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onGoogleLensAvailableChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;Z)V
-
-    return-void
-.end method
-
-.method public onHintTextHidden(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onHintTextHidden(Ljp/co/sony/mc/camera/view/CameraEventListener;Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
-
-    return-void
-.end method
-
-.method public onHintTextShown(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onHintTextShown(Ljp/co/sony/mc/camera/view/CameraEventListener;Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
-
-    return-void
-.end method
-
-.method public onLensChange(Z)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onLensChange(Ljp/co/sony/mc/camera/view/CameraEventListener;Z)V
-
-    return-void
-.end method
-
-.method public onLensChangedByRemocon()V
-    .locals 0
-
-    .line 92
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onLensChangedByRemocon(Ljp/co/sony/mc/camera/view/CameraEventListener;)V
-
-    return-void
-.end method
-
-.method public onLowLightStateChanged(Z)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onLowLightStateChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;Z)V
-
-    return-void
-.end method
-
-.method public onMessageDialogHidden()V
-    .locals 0
-
-    .line 92
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onMessageDialogHidden(Ljp/co/sony/mc/camera/view/CameraEventListener;)V
-
-    return-void
-.end method
-
-.method public onMessageDialogShown()V
-    .locals 0
-
-    .line 92
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onMessageDialogShown(Ljp/co/sony/mc/camera/view/CameraEventListener;)V
-
-    return-void
-.end method
-
-.method public onModeChange(Z)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onModeChange(Ljp/co/sony/mc/camera/view/CameraEventListener;Z)V
-
-    return-void
-.end method
-
-.method public onMoreModeSelectorOpened(Z)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onMoreModeSelectorOpened(Ljp/co/sony/mc/camera/view/CameraEventListener;Z)V
-
-    return-void
-.end method
-
-.method public onObjectTrackingStateChanged(Z)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onObjectTrackingStateChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;Z)V
+    .line 694
+    invoke-super {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onFocusMagnificationResultChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;)V
 
     return-void
 .end method
@@ -4406,35 +3875,30 @@
 .method public onPrepareBurstDone(I)V
     .locals 0
 
-    .line 554
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onPrepareBurstDone(Ljp/co/sony/mc/camera/view/CameraEventListener;I)V
+    .line 526
+    invoke-super {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onPrepareBurstDone(I)V
 
     const/4 p1, 0x0
 
-    .line 555
+    .line 527
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->setBurstCount(I)V
 
     return-void
 .end method
 
-.method public onRecordFinished(I)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onRecordFinished(Ljp/co/sony/mc/camera/view/CameraEventListener;I)V
-
-    return-void
-.end method
-
 .method public onRecordRequested(I)V
-    .locals 0
+    .locals 1
 
-    .line 592
+    .line 570
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mContentsViewController:Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;
 
     if-eqz p0, :cond_0
 
-    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->createEmptyContentFrame(I)Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;
+    .line 572
+    sget-object v0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;->VIDEO:Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
+
+    .line 570
+    invoke-virtual {p0, p1, v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->createEmptyContentFrame(ILjp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;)Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;
 
     :cond_0
     return-void
@@ -4443,38 +3907,11 @@
 .method public onRecordingProgress(I)V
     .locals 0
 
-    .line 692
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onRecordingProgress(Ljp/co/sony/mc/camera/view/CameraEventListener;I)V
+    .line 679
+    invoke-super {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onRecordingProgress(I)V
 
-    .line 693
+    .line 680
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->setMRecordingDuration(I)V
-
-    return-void
-.end method
-
-.method public onRemoteControlStateChanged(Z)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onRemoteControlStateChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;Z)V
-
-    return-void
-.end method
-
-.method public onRtmpStreamKeySettingChanged(Ljava/lang/String;)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onRtmpStreamKeySettingChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public onRtmpStreamUrlSettingChanged(Ljava/lang/String;)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onRtmpStreamUrlSettingChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;Ljava/lang/String;)V
 
     return-void
 .end method
@@ -4482,10 +3919,10 @@
 .method public onShutterAction(I)V
     .locals 1
 
-    .line 620
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onShutterAction(Ljp/co/sony/mc/camera/view/CameraEventListener;I)V
+    .line 604
+    invoke-super {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onShutterAction(I)V
 
-    .line 621
+    .line 605
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->getCameraViewModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
     move-result-object p1
@@ -4514,7 +3951,7 @@
 
     if-nez p1, :cond_0
 
-    .line 622
+    .line 606
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->hideCaptureProgressView()V
 
     :cond_0
@@ -4524,7 +3961,7 @@
 .method public onSnapshotRequestDone(ILandroid/graphics/Bitmap;)V
     .locals 0
 
-    .line 613
+    .line 597
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mContentsViewController:Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;
 
     if-eqz p0, :cond_0
@@ -4536,32 +3973,27 @@
 .end method
 
 .method public onSnapshotRequested(I)V
-    .locals 0
+    .locals 1
 
-    .line 578
+    .line 550
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mContentsViewController:Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;
 
     if-eqz p0, :cond_0
 
-    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->createEmptyContentFrame(I)Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;
+    .line 552
+    sget-object v0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;->PHOTO:Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
+
+    .line 550
+    invoke-virtual {p0, p1, v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->createEmptyContentFrame(ILjp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;)Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;
 
     :cond_0
-    return-void
-.end method
-
-.method public onSsIsoEvDetected(JII)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onSsIsoEvDetected(Ljp/co/sony/mc/camera/view/CameraEventListener;JII)V
-
     return-void
 .end method
 
 .method public onStart()V
     .locals 2
 
-    .line 341
+    .line 332
     :try_start_0
     invoke-super {p0}, Ljp/co/sony/mc/camera/view/fragment/PresentationFragment;->onStart()V
     :try_end_0
@@ -4572,17 +4004,17 @@
     :catch_0
     move-exception v0
 
-    .line 343
+    .line 334
     const-string v1, "Couldn\'t show presentation! Display was removed."
 
     check-cast v0, Ljava/lang/Throwable;
 
     invoke-static {v1, v0}, Ljp/co/sony/mc/camera/util/CamLog;->w(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 344
+    .line 335
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->stopPresentation()V
 
-    .line 345
+    .line 336
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mExternalDisplayCallBack:Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayCallBack;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayCallBack;->onExternalDisplayDisconnected()V
@@ -4591,32 +4023,14 @@
     return-void
 .end method
 
-.method public onStorageStateChanged(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/Storage$StorageState;)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onStorageStateChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/Storage$StorageState;)V
-
-    return-void
-.end method
-
-.method public onStoreError(I)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onStoreError(Ljp/co/sony/mc/camera/view/CameraEventListener;I)V
-
-    return-void
-.end method
-
 .method public onStoreFinished(ILjp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
-    .locals 1
+    .locals 2
 
     const-string p1, "result"
 
     invoke-static {p2, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 639
+    .line 623
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;->isFinalInSavingGroup()Z
 
     move-result p1
@@ -4629,7 +4043,13 @@
 
     if-eqz p1, :cond_1
 
-    .line 640
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;->getUri()Landroid/net/Uri;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1
+
+    .line 624
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mContentsViewController:Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;
 
     if-eqz p1, :cond_0
@@ -4640,12 +4060,34 @@
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;->getUri()Landroid/net/Uri;
 
-    move-result-object p2
+    move-result-object v1
 
-    invoke-virtual {p1, v0, p2}, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->addContent(ILandroid/net/Uri;)V
+    invoke-virtual {p1, v0, v1}, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->addContent(ILandroid/net/Uri;)V
 
-    .line 641
+    .line 625
     :cond_0
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mCaptureRequestRecorder:Ljp/co/sony/mc/camera/view/contentsview/CaptureRequestRecorder;
+
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;->getRequestedId()I
+
+    move-result v0
+
+    invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/contentsview/CaptureRequestRecorder;->isHideAnimationShown(I)Z
+
+    move-result p1
+
+    if-nez p1, :cond_1
+
+    .line 626
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mCaptureRequestRecorder:Ljp/co/sony/mc/camera/view/contentsview/CaptureRequestRecorder;
+
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;->getRequestedId()I
+
+    move-result p2
+
+    invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/view/contentsview/CaptureRequestRecorder;->onHideAnimationShown(I)V
+
+    .line 627
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mContentsViewController:Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;
 
     if-eqz p0, :cond_1
@@ -4656,55 +4098,10 @@
     return-void
 .end method
 
-.method public onSurfaceRequested(Ljp/co/sony/mc/camera/view/SurfaceRequest;)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onSurfaceRequested(Ljp/co/sony/mc/camera/view/CameraEventListener;Ljp/co/sony/mc/camera/view/SurfaceRequest;)V
-
-    return-void
-.end method
-
-.method public onThermalStateChanged(Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onThermalStateChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;)V
-
-    return-void
-.end method
-
-.method public onToggleCapturingMode()V
-    .locals 0
-
-    .line 92
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onToggleCapturingMode(Ljp/co/sony/mc/camera/view/CameraEventListener;)V
-
-    return-void
-.end method
-
-.method public onToggleFacing()V
-    .locals 0
-
-    .line 92
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onToggleFacing(Ljp/co/sony/mc/camera/view/CameraEventListener;)V
-
-    return-void
-.end method
-
-.method public onTouchFocusVisibilityChanged(Z)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onTouchFocusVisibilityChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;Z)V
-
-    return-void
-.end method
-
 .method public onUpdateDisplayRequested()V
     .locals 0
 
-    .line 599
+    .line 580
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mAudioLevel:Ljp/co/sony/mc/camera/view/widget/ExternalDisplayAudioLevelWidget;
 
     if-eqz p0, :cond_0
@@ -4716,14 +4113,18 @@
 .end method
 
 .method public onVideoSnapshotRequested(I)V
-    .locals 0
+    .locals 1
 
-    .line 606
+    .line 587
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mContentsViewController:Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;
 
     if-eqz p0, :cond_0
 
-    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->createEmptyContentFrame(I)Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;
+    .line 589
+    sget-object v0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;->PHOTO_DURING_REC:Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
+
+    .line 587
+    invoke-virtual {p0, p1, v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->createEmptyContentFrame(ILjp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;)Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;
 
     :cond_0
     return-void
@@ -4736,28 +4137,28 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 237
+    .line 235
     invoke-super {p0, p1, p2}, Ljp/co/sony/mc/camera/view/fragment/PresentationFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
-    .line 238
+    .line 236
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->getView()Landroid/view/View;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    const p2, 0x7f0901bd
+    const p2, 0x7f0901c4
 
-    .line 240
+    .line 238
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p2
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mUiRoot:Landroid/view/View;
 
-    const p2, 0x7f0904a3
+    const p2, 0x7f0904a4
 
-    .line 241
+    .line 239
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p2
@@ -4766,9 +4167,9 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mThermalIcon:Landroid/widget/ImageView;
 
-    const p2, 0x7f0900b5
+    const p2, 0x7f0900bd
 
-    .line 242
+    .line 240
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p2
@@ -4777,9 +4178,9 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mBatteryIcon:Landroid/widget/ImageView;
 
-    const p2, 0x7f0900b7
+    const p2, 0x7f0900bf
 
-    .line 243
+    .line 241
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p2
@@ -4788,9 +4189,9 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mBatteryText:Landroid/widget/TextView;
 
-    const p2, 0x7f0900d1
+    const p2, 0x7f0900d3
 
-    .line 244
+    .line 242
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p2
@@ -4799,9 +4200,9 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mBurstCountText:Ljp/co/sony/mc/camera/view/BurstCountView;
 
-    const p2, 0x7f0903b2
+    const p2, 0x7f0903b1
 
-    .line 245
+    .line 243
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p2
@@ -4810,9 +4211,9 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mRecStatusText:Landroid/widget/FrameLayout;
 
-    const p2, 0x7f090454
+    const p2, 0x7f090456
 
-    .line 246
+    .line 244
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p2
@@ -4821,9 +4222,9 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mStbyText:Landroid/widget/TextView;
 
-    const p2, 0x7f0903b0
+    const p2, 0x7f0903af
 
-    .line 247
+    .line 245
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p2
@@ -4832,18 +4233,9 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mRecText:Landroid/widget/TextView;
 
-    const p2, 0x7f090462
+    const p2, 0x7f090194
 
-    .line 248
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object p2
-
-    iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mStreamingText:Landroid/view/View;
-
-    const p2, 0x7f090190
-
-    .line 249
+    .line 246
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p2
@@ -4852,21 +4244,21 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mRecordingDurationText:Landroid/widget/TextView;
 
-    const p2, 0x7f0901fd
+    const p2, 0x7f090205
 
-    .line 251
+    .line 248
     invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->findOrInflateViewById(I)Ljava/lang/Object;
 
     move-result-object p2
 
     check-cast p2, Ljp/co/sony/mc/camera/view/feedback/CaptureProgressView;
 
-    .line 250
+    .line 247
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mCaptureProgressView:Ljp/co/sony/mc/camera/view/feedback/CaptureProgressView;
 
-    const p2, 0x7f09040b
+    const p2, 0x7f09040e
 
-    .line 252
+    .line 249
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p2
@@ -4875,9 +4267,9 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mSelfTimerCountDownView:Ljp/co/sony/mc/camera/view/SelfTimerCountDownView;
 
-    const p2, 0x7f090097
+    const p2, 0x7f0900a0
 
-    .line 253
+    .line 250
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -4886,88 +4278,19 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mAudioLevel:Ljp/co/sony/mc/camera/view/widget/ExternalDisplayAudioLevelWidget;
 
-    .line 255
+    .line 252
     :cond_0
-    invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
-
-    move-result-object p1
-
-    .line 256
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->updateBattery()V
 
-    .line 257
-    iget-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mThermalState:Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;
+    .line 253
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mThermalState:Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;
 
-    invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->updateThermalIcon(Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;)V
+    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->updateThermalIcon(Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;)V
 
-    .line 258
+    .line 254
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->updateRecStatusVisibility()V
 
-    .line 259
-    sget-object p2, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    check-cast p2, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
-
-    invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
-
-    move-result-object p2
-
-    const-string v0, "get(...)"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->notifyCapturingModeChanged(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)V
-
-    const/4 p2, 0x0
-
-    .line 260
-    invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->setBitrateValueVisibility(Z)V
-
-    .line 261
-    sget-object p2, Ljp/co/sony/mc/camera/rtmp/NetworkManager;->Companion:Ljp/co/sony/mc/camera/rtmp/NetworkManager$Companion;
-
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/rtmp/NetworkManager$Companion;->getInstance()Ljp/co/sony/mc/camera/rtmp/NetworkManager;
-
-    move-result-object p2
-
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/rtmp/NetworkManager;->getNetworkState()Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;
-
-    move-result-object p2
-
-    .line 262
-    sget-object v0, Ljp/co/sony/mc/camera/rtmp/NetworkManager;->Companion:Ljp/co/sony/mc/camera/rtmp/NetworkManager$Companion;
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/rtmp/NetworkManager$Companion;->getInstance()Ljp/co/sony/mc/camera/rtmp/NetworkManager;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/rtmp/NetworkManager;->getConnectLevel()Ljp/co/sony/mc/camera/rtmp/NetworkManager$ConnectLevel;
-
-    move-result-object v0
-
-    .line 261
-    invoke-virtual {p0, p2, v0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->setCurrentNetworkStatus(Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;Ljp/co/sony/mc/camera/rtmp/NetworkManager$ConnectLevel;)V
-
-    .line 263
-    sget-object p2, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_AUDIO_MUTE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    check-cast p2, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
-
-    invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;
-
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;->getBooleanValue()Z
-
-    move-result p1
-
-    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->setMuteStatus(Z)V
-
-    .line 265
+    .line 256
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object p1
@@ -4976,7 +4299,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 266
+    .line 257
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object p1
@@ -4991,14 +4314,14 @@
 
     if-eqz p1, :cond_1
 
-    .line 267
+    .line 258
     move-object p2, p0
 
     check-cast p2, Ljp/co/sony/mc/camera/UpdateDisplayMonitor$UpdateDisplayListener;
 
     invoke-interface {p1, p2}, Ljp/co/sony/mc/camera/UpdateDisplayMonitor;->registerUpdateDisplayListener(Ljp/co/sony/mc/camera/UpdateDisplayMonitor$UpdateDisplayListener;)V
 
-    .line 270
+    .line 261
     :cond_1
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->getCameraViewModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
@@ -5018,30 +4341,30 @@
 
     move-result-object p1
 
-    .line 271
+    .line 262
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->getViewLifecycleOwner()Landroidx/lifecycle/LifecycleOwner;
 
     move-result-object p2
 
-    .line 270
+    .line 261
     new-instance v0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$$ExternalSyntheticLambda5;
 
     invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$$ExternalSyntheticLambda5;-><init>(Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;)V
 
-    .line 272
+    .line 263
     new-instance v1, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$sam$androidx_lifecycle_Observer$0;
 
     invoke-direct {v1, v0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$sam$androidx_lifecycle_Observer$0;-><init>(Lkotlin/jvm/functions/Function1;)V
 
     check-cast v1, Landroidx/lifecycle/Observer;
 
-    .line 270
+    .line 261
     invoke-virtual {p1, p2, v1}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
-    .line 276
+    .line 267
     sget-object p1, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 277
+    .line 268
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->getOrientationViewModel()Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
     move-result-object p2
@@ -5054,7 +4377,7 @@
 
     move-result-object p2
 
-    .line 278
+    .line 269
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->getCameraViewModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
     move-result-object v0
@@ -5075,12 +4398,12 @@
 
     invoke-direct {v1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$$ExternalSyntheticLambda6;-><init>()V
 
-    .line 276
+    .line 267
     invoke-virtual {p1, p2, v0, v1}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object p1
 
-    .line 281
+    .line 272
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->getViewLifecycleOwner()Landroidx/lifecycle/LifecycleOwner;
 
     move-result-object p2
@@ -5100,64 +4423,10 @@
     return-void
 .end method
 
-.method public onWbCustomFinished(I[ILjava/lang/Float;Ljava/lang/Float;Ljava/lang/String;)V
-    .locals 0
-
-    .line 92
-    invoke-static/range {p0 .. p5}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onWbCustomFinished(Ljp/co/sony/mc/camera/view/CameraEventListener;I[ILjava/lang/Float;Ljava/lang/Float;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public onWbCustomStarted()V
-    .locals 0
-
-    .line 92
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onWbCustomStarted(Ljp/co/sony/mc/camera/view/CameraEventListener;)V
-
-    return-void
-.end method
-
-.method public onYoutubeAccountSettingChanged(Ljava/lang/String;)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onYoutubeAccountSettingChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public onYoutubeLiveEventSettingChanged(Ljava/lang/String;)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onYoutubeLiveEventSettingChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public onYoutubeLiveIdSettingChanged(Ljava/lang/String;)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onYoutubeLiveIdSettingChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public onZoomStateChanged(Z)V
-    .locals 0
-
-    .line 92
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener$DefaultImpls;->onZoomStateChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;Z)V
-
-    return-void
-.end method
-
 .method public final prepareSelfTimerCountDown(Ljp/co/sony/mc/camera/setting/SelfTimerInterface;)V
     .locals 0
 
-    .line 1044
+    .line 925
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mSelfTimerCountDownView:Ljp/co/sony/mc/camera/view/SelfTimerCountDownView;
 
     if-eqz p0, :cond_0
@@ -5175,17 +4444,17 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 463
+    .line 434
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->isShowing()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 464
+    .line 435
     new-instance v0, Landroid/graphics/Rect;
 
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getSurfaceSize()Landroid/util/Size;
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getMainPreviewSurfaceSize()Landroid/util/Size;
 
     move-result-object v1
 
@@ -5193,7 +4462,8 @@
 
     move-result v1
 
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getSurfaceSize()Landroid/util/Size;
+    .line 436
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getMainPreviewSurfaceSize()Landroid/util/Size;
 
     move-result-object p1
 
@@ -5203,16 +4473,17 @@
 
     const/4 v2, 0x0
 
+    .line 435
     invoke-direct {v0, v2, v2, v1, p1}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    .line 465
+    .line 437
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->resizeSurfaceScope(Landroid/graphics/Rect;)Z
 
     move-result p1
 
     if-nez p1, :cond_0
 
-    .line 467
+    .line 439
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mSurface:Landroid/view/Surface;
 
     if-eqz p1, :cond_0
@@ -5223,441 +4494,31 @@
 
     if-eqz p1, :cond_0
 
-    .line 468
+    .line 440
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mExternalDisplayCallBack:Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayCallBack;
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mSurface:Landroid/view/Surface;
 
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 469
+    .line 441
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->getSurfaceSize()Landroid/util/Size;
 
     move-result-object p0
 
     invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 468
+    .line 440
     invoke-interface {p1, v0, p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayCallBack;->onExternalDisplaySurfaceChanged(Landroid/view/Surface;Landroid/util/Size;)V
 
     :cond_0
     return-void
 .end method
 
-.method public final setCurrentBitrate(J)V
-    .locals 3
-
-    .line 976
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->isShowing()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 977
-    new-instance v0, Ljava/math/BigDecimal;
-
-    long-to-double p1, p1
-
-    const v1, 0xf4240
-
-    int-to-double v1, v1
-
-    div-double/2addr p1, v1
-
-    invoke-static {p1, p2}, Ljava/lang/String;->valueOf(D)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {v0, p1}, Ljava/math/BigDecimal;-><init>(Ljava/lang/String;)V
-
-    const/4 p1, 0x1
-
-    .line 978
-    sget-object p2, Ljava/math/RoundingMode;->HALF_UP:Ljava/math/RoundingMode;
-
-    invoke-virtual {v0, p1, p2}, Ljava/math/BigDecimal;->setScale(ILjava/math/RoundingMode;)Ljava/math/BigDecimal;
-
-    move-result-object p1
-
-    const-string/jumbo p2, "setScale(...)"
-
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 979
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->getView()Landroid/view/View;
-
-    move-result-object p2
-
-    if-eqz p2, :cond_0
-
-    const v0, 0x7f0900bc
-
-    invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object p2
-
-    check-cast p2, Landroid/widget/TextView;
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p2, 0x0
-
-    :goto_0
-    if-eqz p2, :cond_1
-
-    .line 980
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->BITRATE_MBPS_TEXT:Ljava/lang/String;
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object p1
-
-    const-string v0, " "
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p1
-
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    check-cast p0, Ljava/lang/CharSequence;
-
-    invoke-virtual {p2, p0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    :cond_1
-    return-void
-.end method
-
-.method public final setCurrentNetworkStatus(Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;Ljp/co/sony/mc/camera/rtmp/NetworkManager$ConnectLevel;)V
-    .locals 9
-
-    const-string v0, "networkState"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "connectLevel"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 918
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->isShowing()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_e
-
-    .line 919
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->getView()Landroid/view/View;
-
-    move-result-object v0
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_0
-
-    const v2, 0x7f090334
-
-    invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/ImageView;
-
-    goto :goto_0
-
-    :cond_0
-    move-object v0, v1
-
-    .line 920
-    :goto_0
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->getView()Landroid/view/View;
-
-    move-result-object p0
-
-    if-eqz p0, :cond_1
-
-    const v2, 0x7f090335
-
-    invoke-virtual {p0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object p0
-
-    check-cast p0, Landroid/widget/TextView;
-
-    goto :goto_1
-
-    :cond_1
-    move-object p0, v1
-
-    :goto_1
-    if-eqz v0, :cond_e
-
-    if-eqz p0, :cond_e
-
-    .line 922
-    sget-object v2, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$WhenMappings;->$EnumSwitchMapping$3:[I
-
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;->ordinal()I
-
-    move-result v3
-
-    aget v2, v2, v3
-
-    const/4 v3, 0x5
-
-    const/4 v4, 0x4
-
-    const/4 v5, 0x3
-
-    const/4 v6, 0x2
-
-    const/4 v7, 0x1
-
-    const/4 v8, -0x1
-
-    packed-switch v2, :pswitch_data_0
-
-    new-instance p0, Lkotlin/NoWhenBranchMatchedException;
-
-    invoke-direct {p0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
-
-    throw p0
-
-    :pswitch_0
-    const p2, 0x7f0802da
-
-    goto :goto_2
-
-    .line 939
-    :pswitch_1
-    sget-object v2, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$WhenMappings;->$EnumSwitchMapping$2:[I
-
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/rtmp/NetworkManager$ConnectLevel;->ordinal()I
-
-    move-result p2
-
-    aget p2, v2, p2
-
-    if-eq p2, v7, :cond_6
-
-    if-eq p2, v6, :cond_5
-
-    if-eq p2, v5, :cond_4
-
-    if-eq p2, v4, :cond_3
-
-    if-ne p2, v3, :cond_2
-
-    const p2, 0x7f0802e1
-
-    goto :goto_2
-
-    :cond_2
-    new-instance p0, Lkotlin/NoWhenBranchMatchedException;
-
-    invoke-direct {p0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
-
-    throw p0
-
-    :cond_3
-    const p2, 0x7f0802e0
-
-    goto :goto_2
-
-    :cond_4
-    const p2, 0x7f0802df
-
-    goto :goto_2
-
-    :cond_5
-    const p2, 0x7f0802de
-
-    goto :goto_2
-
-    :cond_6
-    const p2, 0x7f0802dd
-
-    goto :goto_2
-
-    .line 927
-    :pswitch_2
-    sget-object v2, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$WhenMappings;->$EnumSwitchMapping$2:[I
-
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/rtmp/NetworkManager$ConnectLevel;->ordinal()I
-
-    move-result p2
-
-    aget p2, v2, p2
-
-    if-eq p2, v7, :cond_b
-
-    if-eq p2, v6, :cond_a
-
-    if-eq p2, v5, :cond_9
-
-    if-eq p2, v4, :cond_8
-
-    if-ne p2, v3, :cond_7
-
-    const p2, 0x7f0802e6
-
-    goto :goto_2
-
-    :cond_7
-    new-instance p0, Lkotlin/NoWhenBranchMatchedException;
-
-    invoke-direct {p0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
-
-    throw p0
-
-    :cond_8
-    const p2, 0x7f0802e5
-
-    goto :goto_2
-
-    :cond_9
-    const p2, 0x7f0802e4
-
-    goto :goto_2
-
-    :cond_a
-    const p2, 0x7f0802e3
-
-    goto :goto_2
-
-    :cond_b
-    const p2, 0x7f0802e2
-
-    goto :goto_2
-
-    :pswitch_3
-    move p2, v8
-
-    :goto_2
-    const/4 v2, 0x0
-
-    const/16 v3, 0x8
-
-    if-eq p2, v8, :cond_c
-
-    .line 954
-    invoke-virtual {v0, p2}, Landroid/widget/ImageView;->setImageResource(I)V
-
-    .line 955
-    invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
-
-    .line 956
-    invoke-virtual {p0, v3}, Landroid/widget/TextView;->setVisibility(I)V
-
-    goto :goto_3
-
-    .line 959
-    :cond_c
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
-
-    .line 960
-    invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setVisibility(I)V
-
-    .line 961
-    sget-object p2, Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;->NO_NETWORK:Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;
-
-    if-ne p1, p2, :cond_d
-
-    .line 962
-    invoke-virtual {p0, v2}, Landroid/widget/TextView;->setVisibility(I)V
-
-    goto :goto_3
-
-    .line 964
-    :cond_d
-    invoke-virtual {p0, v3}, Landroid/widget/TextView;->setVisibility(I)V
-
-    :cond_e
-    :goto_3
-    return-void
-
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_3
-        :pswitch_3
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final setMuteStatus(Z)V
-    .locals 1
-
-    .line 906
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->isShowing()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    .line 907
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->getView()Landroid/view/View;
-
-    move-result-object p0
-
-    if-eqz p0, :cond_0
-
-    const v0, 0x7f090460
-
-    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object p0
-
-    check-cast p0, Landroid/widget/ImageView;
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
-    if-eqz p1, :cond_1
-
-    if-eqz p0, :cond_2
-
-    const p1, 0x7f0802db
-
-    .line 908
-    invoke-virtual {p0, p1}, Landroid/widget/ImageView;->setImageResource(I)V
-
-    goto :goto_1
-
-    :cond_1
-    if-eqz p0, :cond_2
-
-    const p1, 0x7f0802dc
-
-    .line 909
-    invoke-virtual {p0, p1}, Landroid/widget/ImageView;->setImageResource(I)V
-
-    :cond_2
-    :goto_1
-    return-void
-.end method
-
 .method public final setRecordingFileSize(J)V
     .locals 0
 
-    .line 727
+    .line 714
     iput-wide p1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mMinFileSize:J
 
     return-void
@@ -5677,7 +4538,7 @@
     :cond_0
     move-wide p1, v0
 
-    .line 715
+    .line 702
     :goto_0
     iget-wide v2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mMinFileSize:J
 
@@ -5698,7 +4559,7 @@
     :cond_1
     move-wide v0, p1
 
-    .line 719
+    .line 706
     :goto_1
     div-long/2addr v0, v2
 
@@ -5729,10 +4590,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 734
+    .line 721
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mThermalState:Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;
 
-    .line 735
+    .line 722
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->updateThermalIcon(Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;)V
 
     return-void
@@ -5741,12 +4602,12 @@
 .method public final setUsbConnectionStatus(Z)V
     .locals 3
 
-    .line 380
+    .line 371
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mIsUsbConnected:Z
 
     if-eqz p1, :cond_0
 
-    .line 381
+    .line 372
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mIsConnectionEnabled:Z
 
     if-eqz p1, :cond_0
@@ -5757,7 +4618,7 @@
 
     if-nez p1, :cond_0
 
-    .line 382
+    .line 373
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->mDisplayManager:Landroid/hardware/display/DisplayManager;
 
     const-string v0, "android.hardware.display.category.PRESENTATION"
@@ -5766,7 +4627,7 @@
 
     move-result-object p1
 
-    .line 383
+    .line 374
     array-length v0, p1
 
     const/4 v1, 0x1
@@ -5775,7 +4636,7 @@
 
     const/4 v0, 0x0
 
-    .line 384
+    .line 375
     aget-object v1, p1, v0
 
     const-string v2, "get(...)"
@@ -5784,7 +4645,7 @@
 
     invoke-direct {p0, v1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->startPresentation(Landroid/view/Display;)V
 
-    .line 385
+    .line 376
     aget-object p1, p1, v0
 
     invoke-virtual {p1}, Landroid/view/Display;->getDisplayId()I
@@ -5800,14 +4661,14 @@
 .method public final showBlackScreen()V
     .locals 1
 
-    .line 534
+    .line 506
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->isShowing()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 535
+    .line 507
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->getView()Landroid/view/View;
 
     move-result-object v0
@@ -5830,7 +4691,7 @@
 
     const/4 v0, 0x0
 
-    .line 536
+    .line 508
     invoke-virtual {p0, v0}, Landroid/view/View;->setVisibility(I)V
 
     :cond_1

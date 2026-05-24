@@ -117,6 +117,18 @@
 
 .method static overflowInParse(JII)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "current",
+            "digit",
+            "radix"
+        }
+    .end annotation
 
     const-wide/16 v0, 0x0
 

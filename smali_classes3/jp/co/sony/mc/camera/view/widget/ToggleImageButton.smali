@@ -16,6 +16,14 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 37
     invoke-direct {p0, p1}, Landroid/widget/ToggleButton;-><init>(Landroid/content/Context;)V
@@ -36,6 +44,16 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "attrs"
+        }
+    .end annotation
 
     .line 33
     invoke-direct {p0, p1, p2}, Landroid/widget/ToggleButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -56,6 +74,18 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "attrs",
+            "defStyleAttr"
+        }
+    .end annotation
 
     .line 29
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/ToggleButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -76,6 +106,20 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "attrs",
+            "defStyleAttr",
+            "defStyleRes"
+        }
+    .end annotation
 
     .line 25
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/widget/ToggleButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
@@ -293,6 +337,14 @@
 
 .method private setImageDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "drawable"
+        }
+    .end annotation
 
     .line 121
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ToggleImageButton;->mDrawable:Landroid/graphics/drawable/Drawable;
@@ -402,6 +454,14 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "canvas"
+        }
+    .end annotation
 
     .line 42
     invoke-super {p0, p1}, Landroid/widget/ToggleButton;->onDraw(Landroid/graphics/Canvas;)V
@@ -437,6 +497,20 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "w",
+            "h",
+            "oldw",
+            "oldh"
+        }
+    .end annotation
 
     .line 65
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/ToggleButton;->onSizeChanged(IIII)V
@@ -449,6 +523,14 @@
 
 .method public setChecked(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "checked"
+        }
+    .end annotation
 
     .line 71
     invoke-super {p0, p1}, Landroid/widget/ToggleButton;->setChecked(Z)V
@@ -461,6 +543,14 @@
 
 .method public setImageDrawableOff(Landroid/graphics/drawable/Drawable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "drawable"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -479,6 +569,14 @@
 
 .method public setImageDrawableOn(Landroid/graphics/drawable/Drawable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "drawable"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -497,6 +595,14 @@
 
 .method public setTextOff(Ljava/lang/CharSequence;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "textOff"
+        }
+    .end annotation
 
     .line 83
     invoke-super {p0, p1}, Landroid/widget/ToggleButton;->setTextOff(Ljava/lang/CharSequence;)V
@@ -509,6 +615,14 @@
 
 .method public setTextOn(Ljava/lang/CharSequence;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "textOn"
+        }
+    .end annotation
 
     .line 77
     invoke-super {p0, p1}, Landroid/widget/ToggleButton;->setTextOn(Ljava/lang/CharSequence;)V

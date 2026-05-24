@@ -30,16 +30,24 @@
 # direct methods
 .method private constructor <init>(Ljava/lang/reflect/Field;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "field"
+        }
+    .end annotation
 
-    .line 198
+    .line 205
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 199
+    .line 206
     iput-object p1, p0, Lcom/google/common/collect/Serialization$FieldSetter;->field:Ljava/lang/reflect/Field;
 
     const/4 p0, 0x1
 
-    .line 200
+    .line 207
     invoke-virtual {p1, p0}, Ljava/lang/reflect/Field;->setAccessible(Z)V
 
     return-void
@@ -48,7 +56,7 @@
 .method synthetic constructor <init>(Ljava/lang/reflect/Field;Lcom/google/common/collect/Serialization$1;)V
     .locals 0
 
-    .line 195
+    .line 202
     invoke-direct {p0, p1}, Lcom/google/common/collect/Serialization$FieldSetter;-><init>(Ljava/lang/reflect/Field;)V
 
     return-void
@@ -58,13 +66,24 @@
 # virtual methods
 .method set(Ljava/lang/Object;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "instance",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;I)V"
         }
     .end annotation
 
-    .line 213
+    .line 220
     :try_start_0
     iget-object p0, p0, Lcom/google/common/collect/Serialization$FieldSetter;->field:Ljava/lang/reflect/Field;
 
@@ -81,7 +100,7 @@
     :catch_0
     move-exception p0
 
-    .line 215
+    .line 222
     new-instance p1, Ljava/lang/AssertionError;
 
     invoke-direct {p1, p0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
@@ -91,6 +110,17 @@
 
 .method set(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "instance",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;",
@@ -99,7 +129,7 @@
         }
     .end annotation
 
-    .line 205
+    .line 212
     :try_start_0
     iget-object p0, p0, Lcom/google/common/collect/Serialization$FieldSetter;->field:Ljava/lang/reflect/Field;
 
@@ -112,7 +142,7 @@
     :catch_0
     move-exception p0
 
-    .line 207
+    .line 214
     new-instance p1, Ljava/lang/AssertionError;
 
     invoke-direct {p1, p0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V

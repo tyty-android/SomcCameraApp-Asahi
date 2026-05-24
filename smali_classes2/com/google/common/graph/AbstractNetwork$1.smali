@@ -28,8 +28,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/graph/AbstractNetwork;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 56
+    .line 61
     iput-object p1, p0, Lcom/google/common/graph/AbstractNetwork$1;->this$0:Lcom/google/common/graph/AbstractNetwork;
 
     invoke-direct {p0}, Lcom/google/common/graph/AbstractGraph;-><init>()V
@@ -41,6 +49,15 @@
 # virtual methods
 .method public adjacentNodes(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)",
@@ -49,7 +66,7 @@
         }
     .end annotation
 
-    .line 128
+    .line 127
     iget-object p0, p0, Lcom/google/common/graph/AbstractNetwork$1;->this$0:Lcom/google/common/graph/AbstractNetwork;
 
     invoke-virtual {p0, p1}, Lcom/google/common/graph/AbstractNetwork;->adjacentNodes(Ljava/lang/Object;)Ljava/util/Set;
@@ -62,7 +79,7 @@
 .method public allowsSelfLoops()Z
     .locals 0
 
-    .line 123
+    .line 122
     iget-object p0, p0, Lcom/google/common/graph/AbstractNetwork$1;->this$0:Lcom/google/common/graph/AbstractNetwork;
 
     invoke-virtual {p0}, Lcom/google/common/graph/AbstractNetwork;->allowsSelfLoops()Z
@@ -83,7 +100,7 @@
         }
     .end annotation
 
-    .line 64
+    .line 69
     iget-object v0, p0, Lcom/google/common/graph/AbstractNetwork$1;->this$0:Lcom/google/common/graph/AbstractNetwork;
 
     invoke-virtual {v0}, Lcom/google/common/graph/AbstractNetwork;->allowsParallelEdges()Z
@@ -92,14 +109,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 65
+    .line 70
     invoke-super {p0}, Lcom/google/common/graph/AbstractGraph;->edges()Ljava/util/Set;
 
     move-result-object p0
 
     return-object p0
 
-    .line 69
+    .line 74
     :cond_0
     new-instance v0, Lcom/google/common/graph/AbstractNetwork$1$1;
 
@@ -118,7 +135,7 @@
         }
     .end annotation
 
-    .line 113
+    .line 112
     invoke-static {}, Lcom/google/common/graph/ElementOrder;->unordered()Lcom/google/common/graph/ElementOrder;
 
     move-result-object p0
@@ -129,7 +146,7 @@
 .method public isDirected()Z
     .locals 0
 
-    .line 118
+    .line 117
     iget-object p0, p0, Lcom/google/common/graph/AbstractNetwork$1;->this$0:Lcom/google/common/graph/AbstractNetwork;
 
     invoke-virtual {p0}, Lcom/google/common/graph/AbstractNetwork;->isDirected()Z
@@ -149,7 +166,7 @@
         }
     .end annotation
 
-    .line 106
+    .line 105
     iget-object p0, p0, Lcom/google/common/graph/AbstractNetwork$1;->this$0:Lcom/google/common/graph/AbstractNetwork;
 
     invoke-virtual {p0}, Lcom/google/common/graph/AbstractNetwork;->nodeOrder()Lcom/google/common/graph/ElementOrder;
@@ -169,7 +186,7 @@
         }
     .end annotation
 
-    .line 59
+    .line 64
     iget-object p0, p0, Lcom/google/common/graph/AbstractNetwork$1;->this$0:Lcom/google/common/graph/AbstractNetwork;
 
     invoke-virtual {p0}, Lcom/google/common/graph/AbstractNetwork;->nodes()Ljava/util/Set;
@@ -181,8 +198,16 @@
 
 .method public bridge synthetic predecessors(Ljava/lang/Object;)Ljava/lang/Iterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "node"
+        }
+    .end annotation
 
-    .line 56
+    .line 61
     invoke-virtual {p0, p1}, Lcom/google/common/graph/AbstractNetwork$1;->predecessors(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object p0
@@ -192,6 +217,15 @@
 
 .method public predecessors(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)",
@@ -200,7 +234,7 @@
         }
     .end annotation
 
-    .line 133
+    .line 132
     iget-object p0, p0, Lcom/google/common/graph/AbstractNetwork$1;->this$0:Lcom/google/common/graph/AbstractNetwork;
 
     invoke-virtual {p0, p1}, Lcom/google/common/graph/AbstractNetwork;->predecessors(Ljava/lang/Object;)Ljava/util/Set;
@@ -212,8 +246,16 @@
 
 .method public bridge synthetic successors(Ljava/lang/Object;)Ljava/lang/Iterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "node"
+        }
+    .end annotation
 
-    .line 56
+    .line 61
     invoke-virtual {p0, p1}, Lcom/google/common/graph/AbstractNetwork$1;->successors(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object p0
@@ -223,6 +265,15 @@
 
 .method public successors(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)",
@@ -231,7 +282,7 @@
         }
     .end annotation
 
-    .line 138
+    .line 137
     iget-object p0, p0, Lcom/google/common/graph/AbstractNetwork$1;->this$0:Lcom/google/common/graph/AbstractNetwork;
 
     invoke-virtual {p0, p1}, Lcom/google/common/graph/AbstractNetwork;->successors(Ljava/lang/Object;)Ljava/util/Set;

@@ -33,8 +33,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/CameraActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 611
+    .line 600
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$5;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,8 +54,16 @@
 # virtual methods
 .method public bridge synthetic onChanged(Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "layoutOrientation"
+        }
+    .end annotation
 
-    .line 611
+    .line 600
     check-cast p1, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/CameraActivity$5;->onChanged(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
@@ -57,8 +73,16 @@
 
 .method public onChanged(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "layoutOrientation"
+        }
+    .end annotation
 
-    .line 614
+    .line 603
     iget-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$5;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/CameraActivity;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -67,7 +91,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 615
+    .line 604
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$5;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/CameraActivity;)Ljp/co/sony/mc/camera/view/FragmentController;

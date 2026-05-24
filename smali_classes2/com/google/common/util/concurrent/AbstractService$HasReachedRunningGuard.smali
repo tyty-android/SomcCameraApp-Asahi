@@ -21,11 +21,19 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/util/concurrent/AbstractService;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 152
+    .line 156
     iput-object p1, p0, Lcom/google/common/util/concurrent/AbstractService$HasReachedRunningGuard;->this$0:Lcom/google/common/util/concurrent/AbstractService;
 
-    .line 153
+    .line 157
     invoke-static {p1}, Lcom/google/common/util/concurrent/AbstractService;->access$000(Lcom/google/common/util/concurrent/AbstractService;)Lcom/google/common/util/concurrent/Monitor;
 
     move-result-object p1
@@ -40,7 +48,7 @@
 .method public isSatisfied()Z
     .locals 1
 
-    .line 158
+    .line 162
     iget-object p0, p0, Lcom/google/common/util/concurrent/AbstractService$HasReachedRunningGuard;->this$0:Lcom/google/common/util/concurrent/AbstractService;
 
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/AbstractService;->state()Lcom/google/common/util/concurrent/Service$State;

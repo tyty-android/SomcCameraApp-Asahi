@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u00000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0010\u000e\n\u0002\u0008\u0005\n\u0002\u0010\u0008\n\u0002\u0008\r\u0008\u0080\u0008\u0018\u00002\u00020\u0001B\u001d\u0008\u0000\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u000c\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u0005\u00a2\u0006\u0002\u0010\u0006J\t\u0010\u0016\u001a\u00020\u0003H\u00c6\u0003J\u000f\u0010\u0017\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u0005H\u00c6\u0003J#\u0010\u0018\u001a\u00020\u00002\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u00032\u000e\u0008\u0002\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u0005H\u00c6\u0001J\u0013\u0010\u0019\u001a\u00020\u00082\u0008\u0010\u001a\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\t\u0010\u001b\u001a\u00020\u0013H\u00d6\u0001J\u0016\u0010\u001c\u001a\u00020\u00032\u0006\u0010\u001d\u001a\u00020\u00132\u0006\u0010\u001e\u001a\u00020\u0013J\t\u0010\u001f\u001a\u00020\rH\u00d6\u0001R\u0011\u0010\u0007\u001a\u00020\u00088F\u00a2\u0006\u0006\u001a\u0004\u0008\u0007\u0010\tR\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\n\u0010\u000bR\u0011\u0010\u000c\u001a\u00020\r8F\u00a2\u0006\u0006\u001a\u0004\u0008\u000e\u0010\u000fR\u0017\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0010\u0010\u0011R\u0011\u0010\u0012\u001a\u00020\u00138F\u00a2\u0006\u0006\u001a\u0004\u0008\u0014\u0010\u0015\u00a8\u0006 "
+        "\u00000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0008\u0007\n\u0002\u0010\u000e\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u000e\u0008\u0080\u0008\u0018\u00002\u00020\u0001B\u001f\u0008\u0000\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u000c\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u0005\u00a2\u0006\u0004\u0008\u0006\u0010\u0007J\u0016\u0010\u0017\u001a\u00020\u00032\u0006\u0010\u0018\u001a\u00020\u00142\u0006\u0010\u0019\u001a\u00020\u0014J\t\u0010\u001a\u001a\u00020\u0003H\u00c6\u0003J\u000f\u0010\u001b\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u0005H\u00c6\u0003J(\u0010\u001c\u001a\u00020\u00002\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u00032\u000e\u0008\u0002\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u0005H\u00c0\u0001\u00a2\u0006\u0002\u0008\u001dJ\u0013\u0010\u001e\u001a\u00020\u00112\u0008\u0010\u001f\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\t\u0010 \u001a\u00020\u0014H\u00d6\u0001J\t\u0010!\u001a\u00020\rH\u00d6\u0001R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0008\u0010\tR\u0017\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\n\u0010\u000bR\u0011\u0010\u000c\u001a\u00020\r8F\u00a2\u0006\u0006\u001a\u0004\u0008\u000e\u0010\u000fR\u0011\u0010\u0010\u001a\u00020\u00118F\u00a2\u0006\u0006\u001a\u0004\u0008\u0010\u0010\u0012R\u0011\u0010\u0013\u001a\u00020\u00148F\u00a2\u0006\u0006\u001a\u0004\u0008\u0015\u0010\u0016\u00a8\u0006\""
     }
     d2 = {
         "Lkotlin/io/FilePathComponents;",
@@ -15,38 +15,40 @@
         "Ljava/io/File;",
         "segments",
         "",
+        "<init>",
         "(Ljava/io/File;Ljava/util/List;)V",
-        "isRooted",
-        "",
-        "()Z",
         "getRoot",
         "()Ljava/io/File;",
+        "getSegments",
+        "()Ljava/util/List;",
         "rootName",
         "",
         "getRootName",
         "()Ljava/lang/String;",
-        "getSegments",
-        "()Ljava/util/List;",
+        "isRooted",
+        "",
+        "()Z",
         "size",
         "",
         "getSize",
         "()I",
-        "component1",
-        "component2",
-        "copy",
-        "equals",
-        "other",
-        "hashCode",
         "subPath",
         "beginIndex",
         "endIndex",
+        "component1",
+        "component2",
+        "copy",
+        "copy$kotlin_stdlib",
+        "equals",
+        "other",
+        "hashCode",
         "toString",
         "kotlin-stdlib"
     }
     k = 0x1
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x30
@@ -85,14 +87,13 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string v0, "segments"
+    const-string/jumbo v0, "segments"
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 94
+    .line 96
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 95
     iput-object p1, p0, Lkotlin/io/FilePathComponents;->root:Ljava/io/File;
 
     iput-object p2, p0, Lkotlin/io/FilePathComponents;->segments:Ljava/util/List;
@@ -100,7 +101,7 @@
     return-void
 .end method
 
-.method public static synthetic copy$default(Lkotlin/io/FilePathComponents;Ljava/io/File;Ljava/util/List;ILjava/lang/Object;)Lkotlin/io/FilePathComponents;
+.method public static synthetic copy$kotlin_stdlib$default(Lkotlin/io/FilePathComponents;Ljava/io/File;Ljava/util/List;ILjava/lang/Object;)Lkotlin/io/FilePathComponents;
     .locals 0
 
     and-int/lit8 p4, p3, 0x1
@@ -117,7 +118,7 @@
     iget-object p2, p0, Lkotlin/io/FilePathComponents;->segments:Ljava/util/List;
 
     :cond_1
-    invoke-virtual {p0, p1, p2}, Lkotlin/io/FilePathComponents;->copy(Ljava/io/File;Ljava/util/List;)Lkotlin/io/FilePathComponents;
+    invoke-virtual {p0, p1, p2}, Lkotlin/io/FilePathComponents;->copy$kotlin_stdlib(Ljava/io/File;Ljava/util/List;)Lkotlin/io/FilePathComponents;
 
     move-result-object p0
 
@@ -150,7 +151,7 @@
     return-object p0
 .end method
 
-.method public final copy(Ljava/io/File;Ljava/util/List;)Lkotlin/io/FilePathComponents;
+.method public final copy$kotlin_stdlib(Ljava/io/File;Ljava/util/List;)Lkotlin/io/FilePathComponents;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -168,7 +169,7 @@
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string p0, "segments"
+    const-string/jumbo p0, "segments"
 
     invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -232,7 +233,7 @@
 .method public final getRoot()Ljava/io/File;
     .locals 0
 
-    .line 95
+    .line 96
     iget-object p0, p0, Lkotlin/io/FilePathComponents;->root:Ljava/io/File;
 
     return-object p0
@@ -241,7 +242,7 @@
 .method public final getRootName()Ljava/lang/String;
     .locals 1
 
-    .line 100
+    .line 101
     iget-object p0, p0, Lkotlin/io/FilePathComponents;->root:Ljava/io/File;
 
     invoke-virtual {p0}, Ljava/io/File;->getPath()Ljava/lang/String;
@@ -266,7 +267,7 @@
         }
     .end annotation
 
-    .line 95
+    .line 96
     iget-object p0, p0, Lkotlin/io/FilePathComponents;->segments:Ljava/util/List;
 
     return-object p0
@@ -275,7 +276,7 @@
 .method public final getSize()I
     .locals 0
 
-    .line 110
+    .line 111
     iget-object p0, p0, Lkotlin/io/FilePathComponents;->segments:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->size()I
@@ -310,7 +311,7 @@
 .method public final isRooted()Z
     .locals 1
 
-    .line 105
+    .line 106
     iget-object p0, p0, Lkotlin/io/FilePathComponents;->root:Ljava/io/File;
 
     invoke-virtual {p0}, Ljava/io/File;->getPath()Ljava/lang/String;
@@ -347,14 +348,14 @@
 
     if-gt p1, p2, :cond_0
 
-    .line 117
+    .line 118
     invoke-virtual {p0}, Lkotlin/io/FilePathComponents;->getSize()I
 
     move-result v0
 
     if-gt p2, v0, :cond_0
 
-    .line 120
+    .line 121
     new-instance v0, Ljava/io/File;
 
     iget-object p0, p0, Lkotlin/io/FilePathComponents;->segments:Ljava/util/List;
@@ -369,7 +370,7 @@
 
     sget-object p0, Ljava/io/File;->separator:Ljava/lang/String;
 
-    const-string p1, "separator"
+    const-string/jumbo p1, "separator"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -399,7 +400,7 @@
 
     return-object v0
 
-    .line 118
+    .line 119
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 

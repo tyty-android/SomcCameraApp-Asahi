@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<T:",
@@ -38,6 +41,15 @@
 # direct methods
 .method constructor <init>(Ljava/util/Comparator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elementOrder"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -46,10 +58,10 @@
         }
     .end annotation
 
-    .line 30
+    .line 33
     invoke-direct {p0}, Lcom/google/common/collect/Ordering;-><init>()V
 
-    .line 31
+    .line 34
     iput-object p1, p0, Lcom/google/common/collect/LexicographicalOrdering;->elementOrder:Ljava/util/Comparator;
 
     return-void
@@ -59,6 +71,17 @@
 # virtual methods
 .method public compare(Ljava/lang/Iterable;Ljava/lang/Iterable;)I
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "leftIterable",
+            "rightIterable"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -69,17 +92,17 @@
         }
     .end annotation
 
-    .line 36
+    .line 39
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
 
-    .line 37
+    .line 40
     invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p2
 
-    .line 38
+    .line 41
     :cond_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -87,7 +110,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 39
+    .line 42
     invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
@@ -98,7 +121,7 @@
 
     return p0
 
-    .line 42
+    .line 45
     :cond_1
     iget-object v0, p0, Lcom/google/common/collect/LexicographicalOrdering;->elementOrder:Ljava/util/Comparator;
 
@@ -118,7 +141,7 @@
 
     return v0
 
-    .line 47
+    .line 50
     :cond_2
     invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
 
@@ -138,8 +161,18 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "leftIterable",
+            "rightIterable"
+        }
+    .end annotation
 
-    .line 26
+    .line 27
     check-cast p1, Ljava/lang/Iterable;
 
     check-cast p2, Ljava/lang/Iterable;
@@ -154,9 +187,17 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
     if-ne p1, p0, :cond_0
 
@@ -164,16 +205,16 @@
 
     return p0
 
-    .line 58
+    .line 61
     :cond_0
     instance-of v0, p1, Lcom/google/common/collect/LexicographicalOrdering;
 
     if-eqz v0, :cond_1
 
-    .line 59
+    .line 62
     check-cast p1, Lcom/google/common/collect/LexicographicalOrdering;
 
-    .line 60
+    .line 63
     iget-object p0, p0, Lcom/google/common/collect/LexicographicalOrdering;->elementOrder:Ljava/util/Comparator;
 
     iget-object p1, p1, Lcom/google/common/collect/LexicographicalOrdering;->elementOrder:Ljava/util/Comparator;
@@ -193,10 +234,10 @@
 .method public hashCode()I
     .locals 1
 
-    .line 67
+    .line 70
     iget-object p0, p0, Lcom/google/common/collect/LexicographicalOrdering;->elementOrder:Ljava/util/Comparator;
 
-    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
+    invoke-interface {p0}, Ljava/util/Comparator;->hashCode()I
 
     move-result p0
 
@@ -208,30 +249,16 @@
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 2
+    .locals 1
 
-    .line 72
+    .line 75
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
     iget-object p0, p0, Lcom/google/common/collect/LexicographicalOrdering;->elementOrder:Ljava/util/Comparator;
 
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, 0x12
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 

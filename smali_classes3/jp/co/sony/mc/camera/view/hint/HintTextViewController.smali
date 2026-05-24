@@ -21,8 +21,6 @@
 # instance fields
 .field private mAutoPowerOffExclusiveView:Landroid/view/View;
 
-.field private mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
 .field private mContentDisplayThreshold:Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;
 
 .field private mContentPrioritizedStack:Ljava/util/concurrent/BlockingQueue;
@@ -115,10 +113,20 @@
     return p0
 .end method
 
-.method public constructor <init>(Landroid/view/ViewGroup;Ljp/co/sony/mc/camera/view/hint/HintTextViewController$HintTextContentListener;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)V
-    .locals 1
+.method public constructor <init>(Landroid/view/ViewGroup;Ljp/co/sony/mc/camera/view/hint/HintTextViewController$HintTextContentListener;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "parent",
+            "listener"
+        }
+    .end annotation
 
-    .line 145
+    .line 141
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 63
@@ -128,20 +136,17 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mContentPrioritizedStack:Ljava/util/concurrent/BlockingQueue;
 
-    .line 146
+    .line 142
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mListener:Ljp/co/sony/mc/camera/view/hint/HintTextViewController$HintTextContentListener;
 
-    .line 147
-    iput-object p3, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    .line 148
+    .line 143
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object p2
 
-    const/4 p3, 0x0
+    const/4 v0, 0x0
 
-    invoke-static {p2, p3}, Ljp/co/sony/mc/camera/setting/SettingsFactory;->create(Landroid/content/Context;Ljp/co/sony/mc/camera/storage/Storage;)Ljp/co/sony/mc/camera/setting/StoredSettings;
+    invoke-static {p2, v0}, Ljp/co/sony/mc/camera/setting/SettingsFactory;->create(Landroid/content/Context;Ljp/co/sony/mc/camera/storage/Storage;)Ljp/co/sony/mc/camera/setting/StoredSettings;
 
     move-result-object p2
 
@@ -151,15 +156,15 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mMessageSettings:Ljp/co/sony/mc/camera/setting/MessageSettings;
 
-    .line 150
+    .line 145
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->initHintTextBackground(Landroid/view/ViewGroup;)V
 
-    .line 151
+    .line 146
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->initHintTextView(Landroid/view/ViewGroup;)V
 
     const/4 p1, 0x2
 
-    .line 153
+    .line 148
     new-array p1, p1, [F
 
     fill-array-data p1, :array_0
@@ -170,24 +175,24 @@
 
     move-result-object p1
 
-    .line 154
+    .line 149
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintTextView:Ljp/co/sony/mc/camera/view/hint/HintTextView;
 
-    const/4 p3, 0x1
+    const/4 v0, 0x1
 
-    new-array p3, p3, [Landroid/animation/PropertyValuesHolder;
+    new-array v0, v0, [Landroid/animation/PropertyValuesHolder;
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    aput-object p1, p3, v0
+    aput-object p1, v0, v1
 
-    invoke-static {p2, p3}, Landroid/animation/ObjectAnimator;->ofPropertyValuesHolder(Ljava/lang/Object;[Landroid/animation/PropertyValuesHolder;)Landroid/animation/ObjectAnimator;
+    invoke-static {p2, v0}, Landroid/animation/ObjectAnimator;->ofPropertyValuesHolder(Ljava/lang/Object;[Landroid/animation/PropertyValuesHolder;)Landroid/animation/ObjectAnimator;
 
     move-result-object p1
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintTextFadeOutAnimator:Landroid/animation/ObjectAnimator;
 
-    .line 155
+    .line 150
     new-instance p2, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$1;
 
     invoke-direct {p2, p0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$1;-><init>(Ljp/co/sony/mc/camera/view/hint/HintTextViewController;)V
@@ -205,6 +210,14 @@
 
 .method private cancelFromContentStack(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "content"
+        }
+    .end annotation
 
     .line 531
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -379,6 +392,14 @@
 
 .method private hideInternal(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "content"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -450,6 +471,14 @@
 
 .method private initHintTextBackground(Landroid/view/ViewGroup;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "parent"
+        }
+    .end annotation
 
     .line 697
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
@@ -503,8 +532,16 @@
 
 .method private initHintTextView(Landroid/view/ViewGroup;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "parent"
+        }
+    .end annotation
 
-    const v0, 0x7f0903cd
+    const v0, 0x7f0903ce
 
     .line 708
     invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
@@ -538,25 +575,28 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintTextView:Ljp/co/sony/mc/camera/view/hint/HintTextView;
 
-    .line 714
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    .line 715
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintTextContainer:Landroid/widget/FrameLayout;
 
-    invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/hint/HintTextView;->setCapturingMode(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)V
-
-    .line 716
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintTextContainer:Landroid/widget/FrameLayout;
-
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintTextView:Ljp/co/sony/mc/camera/view/hint/HintTextView;
-
-    invoke-virtual {p1, p0}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;)V
+    invoke-virtual {p0, p1}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;)V
 
     return-void
 .end method
 
 .method private isPostAccepted(Ljp/co/sony/mc/camera/view/hint/HintTextContent;Ljp/co/sony/mc/camera/view/hint/HintTextContent;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "content",
+            "current"
+        }
+    .end annotation
 
-    .line 287
+    .line 282
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mMessageSettings:Ljp/co/sony/mc/camera/setting/MessageSettings;
 
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;->canShow(Ljp/co/sony/mc/camera/setting/MessageSettings;)Z
@@ -569,7 +609,7 @@
 
     return v1
 
-    .line 292
+    .line 287
     :cond_0
     instance-of v0, p1, Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage;
 
@@ -581,7 +621,7 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage;
 
-    .line 293
+    .line 288
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage;->getMessageType()Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage$MessageType;
 
     move-result-object v0
@@ -594,14 +634,14 @@
 
     if-eqz v0, :cond_2
 
-    .line 294
+    .line 289
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintBurstImageSavedToInternalStorageAlreadyDisplayed:Z
 
     if-eqz v0, :cond_1
 
     return v1
 
-    .line 297
+    .line 292
     :cond_1
     iput-boolean v2, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintBurstImageSavedToInternalStorageAlreadyDisplayed:Z
 
@@ -610,8 +650,36 @@
 
     return v2
 
-    .line 305
+    .line 304
     :cond_3
+    instance-of p0, p1, Ljp/co/sony/mc/camera/view/hint/HintTextSavingPhotos;
+
+    if-nez p0, :cond_4
+
+    instance-of p0, p2, Ljp/co/sony/mc/camera/view/hint/HintTextSavingPhotos;
+
+    if-eqz p0, :cond_5
+
+    .line 305
+    :cond_4
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;->getPriority()Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;
+
+    move-result-object p0
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;->getPriority()Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;->compareTo(Ljava/lang/Enum;)I
+
+    move-result p0
+
+    if-nez p0, :cond_5
+
+    return v2
+
+    .line 309
+    :cond_5
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;->getPriority()Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;
 
     move-result-object p0
@@ -624,16 +692,26 @@
 
     move-result p0
 
-    if-gtz p0, :cond_4
+    if-lez p0, :cond_6
 
+    move v1, v2
+
+    :cond_6
     return v1
-
-    :cond_4
-    return v2
 .end method
 
 .method private isSameContent(Ljp/co/sony/mc/camera/view/hint/HintTextContent;Ljp/co/sony/mc/camera/view/hint/HintTextContent;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "c1",
+            "c2"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -659,6 +737,14 @@
 
 .method private showInternal(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "content"
+        }
+    .end annotation
 
     if-nez p1, :cond_1
 
@@ -738,6 +824,18 @@
 
 .method private startFadeOut(JILjp/co/sony/mc/camera/view/hint/HintTextContent;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "delayMillis",
+            "fadeOutDurationMillis",
+            "content"
+        }
+    .end annotation
 
     .line 574
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHandler:Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;
@@ -764,6 +862,16 @@
 
 .method private startTimeoutCount(JLjp/co/sony/mc/camera/view/hint/HintTextContent;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "time",
+            "content"
+        }
+    .end annotation
 
     .line 566
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHandler:Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;
@@ -792,6 +900,14 @@
 # virtual methods
 .method public cancel(Ljava/lang/String;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "tag"
+        }
+    .end annotation
 
     .line 323
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mContentPrioritizedStack:Ljava/util/concurrent/BlockingQueue;
@@ -916,17 +1032,17 @@
 .method public clearAll()V
     .locals 2
 
-    .line 188
+    .line 183
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->cancelTimeoutCount()V
 
-    .line 191
+    .line 186
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->referTop()Ljp/co/sony/mc/camera/view/hint/HintTextContent;
 
     move-result-object v0
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->hideInternal(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
 
-    .line 193
+    .line 188
     :goto_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mContentPrioritizedStack:Ljava/util/concurrent/BlockingQueue;
 
@@ -936,14 +1052,14 @@
 
     if-nez v0, :cond_0
 
-    .line 194
+    .line 189
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mContentPrioritizedStack:Ljava/util/concurrent/BlockingQueue;
 
     invoke-interface {v0}, Ljava/util/concurrent/BlockingQueue;->poll()Ljava/lang/Object;
 
     goto :goto_0
 
-    .line 197
+    .line 192
     :cond_0
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
@@ -951,7 +1067,7 @@
 
     const/4 p0, 0x1
 
-    .line 198
+    .line 193
     new-array p0, p0, [Ljava/lang/String;
 
     const/4 v0, 0x0
@@ -969,21 +1085,21 @@
 .method public clearToastContent()V
     .locals 2
 
-    .line 209
+    .line 204
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->referTop()Ljp/co/sony/mc/camera/view/hint/HintTextContent;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 211
+    .line 206
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;->isToast()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 212
+    .line 207
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->cancelFromContentStack(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)Z
 
     :cond_0
@@ -1040,6 +1156,14 @@
 
 .method public isHintTextDisplayed(Ljava/lang/String;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "tag"
+        }
+    .end annotation
 
     .line 454
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->referTop()Ljp/co/sony/mc/camera/view/hint/HintTextContent;
@@ -1086,8 +1210,16 @@
 
 .method public post(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)Z
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "content"
+        }
+    .end annotation
 
-    .line 237
+    .line 232
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     const/4 v1, 0x1
@@ -1096,7 +1228,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 238
+    .line 233
     new-array v0, v1, [Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -1121,7 +1253,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 241
+    .line 236
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mContentPrioritizedStack:Ljava/util/concurrent/BlockingQueue;
 
@@ -1131,12 +1263,12 @@
 
     if-eqz v0, :cond_2
 
-    .line 243
+    .line 238
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz p0, :cond_1
 
-    .line 244
+    .line 239
     new-array p0, v1, [Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -1164,13 +1296,13 @@
     :cond_1
     return v2
 
-    .line 249
+    .line 244
     :cond_2
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->referTop()Ljp/co/sony/mc/camera/view/hint/HintTextContent;
 
     move-result-object v0
 
-    .line 251
+    .line 246
     invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->isPostAccepted(Ljp/co/sony/mc/camera/view/hint/HintTextContent;Ljp/co/sony/mc/camera/view/hint/HintTextContent;)Z
 
     move-result v3
@@ -1179,32 +1311,32 @@
 
     return v2
 
-    .line 255
+    .line 250
     :cond_3
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mContentPrioritizedStack:Ljava/util/concurrent/BlockingQueue;
 
     invoke-interface {v3, p1}, Ljava/util/concurrent/BlockingQueue;->add(Ljava/lang/Object;)Z
 
-    .line 257
+    .line 252
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->referTop()Ljp/co/sony/mc/camera/view/hint/HintTextContent;
 
     move-result-object p1
 
-    .line 258
+    .line 253
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->isSameContent(Ljp/co/sony/mc/camera/view/hint/HintTextContent;Ljp/co/sony/mc/camera/view/hint/HintTextContent;)Z
 
     move-result v3
 
     if-nez v3, :cond_7
 
-    .line 260
+    .line 255
     sget-boolean v3, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v3, :cond_5
 
     if-eqz p1, :cond_4
 
-    .line 261
+    .line 256
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;->getTag()Ljava/lang/String;
 
     move-result-object v3
@@ -1214,7 +1346,7 @@
     :cond_4
     const-string v3, ""
 
-    .line 262
+    .line 257
     :goto_0
     new-array v4, v1, [Ljava/lang/String;
 
@@ -1246,7 +1378,7 @@
 
     invoke-static {v4}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 267
+    .line 262
     :cond_5
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mContentDisplayThreshold:Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;
 
@@ -1260,7 +1392,7 @@
 
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mContentDisplayThreshold:Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;
 
-    .line 268
+    .line 263
     invoke-virtual {v2, v3}, Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;->compareTo(Ljava/lang/Enum;)I
 
     move-result v2
@@ -1269,10 +1401,10 @@
 
     if-eqz v0, :cond_6
 
-    .line 271
+    .line 266
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->hideInternal(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
 
-    .line 273
+    .line 268
     :cond_6
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->showInternal(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
 
@@ -1333,7 +1465,7 @@
 
     const/4 v0, 0x0
 
-    .line 221
+    .line 216
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintBurstImageSavedToInternalStorageAlreadyDisplayed:Z
 
     return-void
@@ -1356,33 +1488,16 @@
     return-void
 .end method
 
-.method public setAccessibilityInitialFocusable(Z)V
-    .locals 0
-
-    .line 725
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintTextView:Ljp/co/sony/mc/camera/view/hint/HintTextView;
-
-    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/hint/HintTextView;->setAccessibilityInitialFocusable(Z)V
-
-    return-void
-.end method
-
-.method public setCapturingMode(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)V
-    .locals 0
-
-    .line 720
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    .line 721
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintTextView:Ljp/co/sony/mc/camera/view/hint/HintTextView;
-
-    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/hint/HintTextView;->setCapturingMode(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)V
-
-    return-void
-.end method
-
 .method public setTalkBackState(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isTalkBackOn"
+        }
+    .end annotation
 
     .line 434
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintTextView:Ljp/co/sony/mc/camera/view/hint/HintTextView;
@@ -1400,6 +1515,14 @@
 
 .method public setUiOrientation(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "orientation"
+        }
+    .end annotation
 
     .line 427
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintTextView:Ljp/co/sony/mc/camera/view/hint/HintTextView;
@@ -1417,6 +1540,14 @@
 
 .method public show(Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "allowedPriority"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 

@@ -21,7 +21,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 103
+    .line 101
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -30,7 +30,7 @@
 .method synthetic constructor <init>(Lcom/google/common/base/Platform$1;)V
     .locals 0
 
-    .line 103
+    .line 101
     invoke-direct {p0}, Lcom/google/common/base/Platform$JdkPatternCompiler;-><init>()V
 
     return-void
@@ -40,8 +40,16 @@
 # virtual methods
 .method public compile(Ljava/lang/String;)Lcom/google/common/base/CommonPattern;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "pattern"
+        }
+    .end annotation
 
-    .line 106
+    .line 104
     new-instance p0, Lcom/google/common/base/JdkPattern;
 
     invoke-static {p1}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;

@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 521
+    .line 442
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,6 +31,17 @@
 # virtual methods
 .method public getValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -42,11 +53,11 @@
         }
     .end annotation
 
-    .line 524
+    .line 446
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 525
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$mgetProVideoDispCustomExtensionData(Ljp/co/sony/mc/camera/setting/CommonSettings;)Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
+    .line 447
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$mgetDisplayMode(Ljp/co/sony/mc/camera/setting/CommonSettings;)Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
 
     move-result-object p0
 

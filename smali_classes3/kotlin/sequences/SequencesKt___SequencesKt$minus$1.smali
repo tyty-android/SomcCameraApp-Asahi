@@ -37,8 +37,8 @@
     }
     k = 0x1
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x30
@@ -65,6 +65,16 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$kf-elBx0XPvFF6WPI5Hkv1SiMqI(Lkotlin/jvm/internal/Ref$BooleanRef;Ljava/lang/Object;Ljava/lang/Object;)Z
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Lkotlin/sequences/SequencesKt___SequencesKt$minus$1;->iterator$lambda$0(Lkotlin/jvm/internal/Ref$BooleanRef;Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
 .method constructor <init>(Lkotlin/sequences/Sequence;Ljava/lang/Object;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
@@ -83,6 +93,30 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
+.end method
+
+.method private static final iterator$lambda$0(Lkotlin/jvm/internal/Ref$BooleanRef;Ljava/lang/Object;Ljava/lang/Object;)Z
+    .locals 2
+
+    .line 2625
+    iget-boolean v0, p0, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
+
+    const/4 v1, 0x1
+
+    if-nez v0, :cond_0
+
+    invoke-static {p2, p1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    iput-boolean v1, p0, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
+
+    const/4 v1, 0x0
+
+    :cond_0
+    return v1
 .end method
 
 
@@ -105,13 +139,11 @@
     .line 2625
     iget-object v1, p0, Lkotlin/sequences/SequencesKt___SequencesKt$minus$1;->$this_minus:Lkotlin/sequences/Sequence;
 
-    new-instance v2, Lkotlin/sequences/SequencesKt___SequencesKt$minus$1$iterator$1;
-
     iget-object p0, p0, Lkotlin/sequences/SequencesKt___SequencesKt$minus$1;->$element:Ljava/lang/Object;
 
-    invoke-direct {v2, v0, p0}, Lkotlin/sequences/SequencesKt___SequencesKt$minus$1$iterator$1;-><init>(Lkotlin/jvm/internal/Ref$BooleanRef;Ljava/lang/Object;)V
+    new-instance v2, Lkotlin/sequences/SequencesKt___SequencesKt$minus$1$$ExternalSyntheticLambda0;
 
-    check-cast v2, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v2, v0, p0}, Lkotlin/sequences/SequencesKt___SequencesKt$minus$1$$ExternalSyntheticLambda0;-><init>(Lkotlin/jvm/internal/Ref$BooleanRef;Ljava/lang/Object;)V
 
     invoke-static {v1, v2}, Lkotlin/sequences/SequencesKt;->filter(Lkotlin/sequences/Sequence;Lkotlin/jvm/functions/Function1;)Lkotlin/sequences/Sequence;
 

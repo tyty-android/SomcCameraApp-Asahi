@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/collect/AbstractIterator$State;
@@ -29,7 +32,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -40,10 +43,10 @@
 .method protected constructor <init>()V
     .locals 1
 
-    .line 68
+    .line 71
     invoke-direct {p0}, Lcom/google/common/collect/UnmodifiableIterator;-><init>()V
 
-    .line 65
+    .line 68
     sget-object v0, Lcom/google/common/collect/AbstractIterator$State;->NOT_READY:Lcom/google/common/collect/AbstractIterator$State;
 
     iput-object v0, p0, Lcom/google/common/collect/AbstractIterator;->state:Lcom/google/common/collect/AbstractIterator$State;
@@ -54,26 +57,26 @@
 .method private tryToComputeNext()Z
     .locals 2
 
-    .line 140
+    .line 144
     sget-object v0, Lcom/google/common/collect/AbstractIterator$State;->FAILED:Lcom/google/common/collect/AbstractIterator$State;
 
     iput-object v0, p0, Lcom/google/common/collect/AbstractIterator;->state:Lcom/google/common/collect/AbstractIterator$State;
 
-    .line 141
+    .line 145
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractIterator;->computeNext()Ljava/lang/Object;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/common/collect/AbstractIterator;->next:Ljava/lang/Object;
 
-    .line 142
+    .line 146
     iget-object v0, p0, Lcom/google/common/collect/AbstractIterator;->state:Lcom/google/common/collect/AbstractIterator$State;
 
     sget-object v1, Lcom/google/common/collect/AbstractIterator$State;->DONE:Lcom/google/common/collect/AbstractIterator$State;
 
     if-eq v0, v1, :cond_0
 
-    .line 143
+    .line 147
     sget-object v0, Lcom/google/common/collect/AbstractIterator$State;->READY:Lcom/google/common/collect/AbstractIterator$State;
 
     iput-object v0, p0, Lcom/google/common/collect/AbstractIterator;->state:Lcom/google/common/collect/AbstractIterator$State;
@@ -96,6 +99,9 @@
             "()TT;"
         }
     .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 .end method
 
 .method protected final endOfData()Ljava/lang/Object;
@@ -106,7 +112,10 @@
         }
     .end annotation
 
-    .line 121
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 126
     sget-object v0, Lcom/google/common/collect/AbstractIterator$State;->DONE:Lcom/google/common/collect/AbstractIterator$State;
 
     iput-object v0, p0, Lcom/google/common/collect/AbstractIterator;->state:Lcom/google/common/collect/AbstractIterator$State;
@@ -119,45 +128,41 @@
 .method public final hasNext()Z
     .locals 4
 
-    .line 128
+    .line 132
     iget-object v0, p0, Lcom/google/common/collect/AbstractIterator;->state:Lcom/google/common/collect/AbstractIterator$State;
 
     sget-object v1, Lcom/google/common/collect/AbstractIterator$State;->FAILED:Lcom/google/common/collect/AbstractIterator$State;
 
-    const/4 v2, 0x0
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const/4 v3, 0x0
 
     if-eq v0, v1, :cond_0
 
-    move v0, v3
+    move v0, v2
 
     goto :goto_0
 
     :cond_0
-    move v0, v2
+    move v0, v3
 
     :goto_0
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkState(Z)V
 
-    .line 129
-    sget-object v0, Lcom/google/common/collect/AbstractIterator$1;->$SwitchMap$com$google$common$collect$AbstractIterator$State:[I
+    .line 133
+    iget-object v0, p0, Lcom/google/common/collect/AbstractIterator;->state:Lcom/google/common/collect/AbstractIterator$State;
 
-    iget-object v1, p0, Lcom/google/common/collect/AbstractIterator;->state:Lcom/google/common/collect/AbstractIterator$State;
+    invoke-virtual {v0}, Lcom/google/common/collect/AbstractIterator$State;->ordinal()I
 
-    invoke-virtual {v1}, Lcom/google/common/collect/AbstractIterator$State;->ordinal()I
+    move-result v0
 
-    move-result v1
-
-    aget v0, v0, v1
-
-    if-eq v0, v3, :cond_2
+    if-eqz v0, :cond_2
 
     const/4 v1, 0x2
 
     if-eq v0, v1, :cond_1
 
-    .line 136
+    .line 140
     invoke-direct {p0}, Lcom/google/common/collect/AbstractIterator;->tryToComputeNext()Z
 
     move-result p0
@@ -173,35 +178,42 @@
 
 .method public final next()Ljava/lang/Object;
     .locals 2
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TT;"
         }
     .end annotation
 
-    .line 152
+    .line 157
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractIterator;->hasNext()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 155
+    .line 160
     sget-object v0, Lcom/google/common/collect/AbstractIterator$State;->NOT_READY:Lcom/google/common/collect/AbstractIterator$State;
 
     iput-object v0, p0, Lcom/google/common/collect/AbstractIterator;->state:Lcom/google/common/collect/AbstractIterator$State;
 
-    .line 156
+    .line 162
     iget-object v0, p0, Lcom/google/common/collect/AbstractIterator;->next:Ljava/lang/Object;
+
+    invoke-static {v0}, Lcom/google/common/collect/NullnessCasts;->uncheckedCastNullableTToT(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
 
     const/4 v1, 0x0
 
-    .line 157
+    .line 163
     iput-object v1, p0, Lcom/google/common/collect/AbstractIterator;->next:Ljava/lang/Object;
 
     return-object v0
 
-    .line 153
+    .line 158
     :cond_0
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -212,25 +224,32 @@
 
 .method public final peek()Ljava/lang/Object;
     .locals 1
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TT;"
         }
     .end annotation
 
-    .line 169
+    .line 176
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractIterator;->hasNext()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 172
+    .line 180
     iget-object p0, p0, Lcom/google/common/collect/AbstractIterator;->next:Ljava/lang/Object;
+
+    invoke-static {p0}, Lcom/google/common/collect/NullnessCasts;->uncheckedCastNullableTToT(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
 
     return-object p0
 
-    .line 170
+    .line 177
     :cond_0
     new-instance p0, Ljava/util/NoSuchElementException;
 

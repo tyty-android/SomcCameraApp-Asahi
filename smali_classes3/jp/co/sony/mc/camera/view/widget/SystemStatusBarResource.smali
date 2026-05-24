@@ -23,6 +23,14 @@
 
 .method private static convertBatteryLevel(I)Ljp/co/sony/mc/camera/view/widget/SystemStatusBarResource$BatteryLevel;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "level"
+        }
+    .end annotation
 
     .line 74
     sget-object v0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarResource$BatteryLevel;->FULL:Ljp/co/sony/mc/camera/view/widget/SystemStatusBarResource$BatteryLevel;
@@ -93,6 +101,14 @@
 
 .method public static getBatteryIconResId(I)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "level"
+        }
+    .end annotation
 
     .line 37
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarResource;->convertBatteryLevel(I)Ljp/co/sony/mc/camera/view/widget/SystemStatusBarResource$BatteryLevel;
@@ -133,33 +149,41 @@
     return p0
 
     :cond_0
-    const p0, 0x7f080222
+    const p0, 0x7f08027e
 
     return p0
 
     :cond_1
-    const p0, 0x7f080221
+    const p0, 0x7f08027d
 
     return p0
 
     :cond_2
-    const p0, 0x7f080220
+    const p0, 0x7f08027c
 
     return p0
 
     :cond_3
-    const p0, 0x7f08021f
+    const p0, 0x7f08027b
 
     return p0
 
     :cond_4
-    const p0, 0x7f08021e
+    const p0, 0x7f08027a
 
     return p0
 .end method
 
 .method public static getBatteryIconResIdForExtDisplay(I)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "level"
+        }
+    .end annotation
 
     .line 55
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarResource;->convertBatteryLevel(I)Ljp/co/sony/mc/camera/view/widget/SystemStatusBarResource$BatteryLevel;
@@ -200,33 +224,41 @@
     return p0
 
     :cond_0
-    const p0, 0x7f080381
+    const p0, 0x7f080407
 
     return p0
 
     :cond_1
-    const p0, 0x7f08037f
+    const p0, 0x7f080405
 
     return p0
 
     :cond_2
-    const p0, 0x7f08037d
+    const p0, 0x7f080403
 
     return p0
 
     :cond_3
-    const p0, 0x7f08037b
+    const p0, 0x7f080401
 
     return p0
 
     :cond_4
-    const p0, 0x7f080379
+    const p0, 0x7f0803ff
 
     return p0
 .end method
 
 .method public static getCreativeLookTextId(Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "colorToneProfile"
+        }
+    .end annotation
 
     .line 149
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;->S_CINETONE:Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;
@@ -251,6 +283,14 @@
 
 .method public static getPhotoFormatDescriptionId(Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "photoFormat"
+        }
+    .end annotation
 
     .line 128
     sget-object v0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarResource$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$PhotoFormat:[I
@@ -278,23 +318,31 @@
     return p0
 
     :cond_0
-    const p0, 0x7f11023c
+    const p0, 0x7f110285
 
     return p0
 
     :cond_1
-    const p0, 0x7f11023d
+    const p0, 0x7f110286
 
     return p0
 
     :cond_2
-    const p0, 0x7f11023b
+    const p0, 0x7f110284
 
     return p0
 .end method
 
 .method public static getPhotoFormatIconResId(Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "photoFormat"
+        }
+    .end annotation
 
     .line 115
     sget-object v0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarResource$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$PhotoFormat:[I
@@ -322,23 +370,31 @@
     return p0
 
     :cond_0
-    const p0, 0x7f08022a
+    const p0, 0x7f080286
 
     return p0
 
     :cond_1
-    const p0, 0x7f080229
+    const p0, 0x7f080285
 
     return p0
 
     :cond_2
-    const p0, 0x7f080228
+    const p0, 0x7f080284
 
     return p0
 .end method
 
 .method public static getStorageDescriptionId(Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "destinationToSave"
+        }
+    .end annotation
 
     .line 102
     sget-object v0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarResource$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$DestinationToSave:[I
@@ -370,18 +426,26 @@
     return p0
 
     :cond_0
-    const p0, 0x7f1103ea
+    const p0, 0x7f110435
 
     return p0
 
     :cond_1
-    const p0, 0x7f1103e9
+    const p0, 0x7f110434
 
     return p0
 .end method
 
 .method public static getStorageIconResId(Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "destinationToSave"
+        }
+    .end annotation
 
     .line 89
     sget-object v0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarResource$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$DestinationToSave:[I
@@ -413,27 +477,35 @@
     return p0
 
     :cond_0
-    const p0, 0x7f080233
+    const p0, 0x7f08028f
 
     return p0
 
     :cond_1
-    const p0, 0x7f080232
+    const p0, 0x7f08028e
 
     return p0
 .end method
 
 .method public static getVideoFormatTextId(Z)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isH265"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
-    const p0, 0x7f110454
+    const p0, 0x7f11049f
 
     return p0
 
     :cond_0
-    const p0, 0x7f110453
+    const p0, 0x7f11049e
 
     return p0
 .end method

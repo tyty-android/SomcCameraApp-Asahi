@@ -28,7 +28,16 @@
 
 
 # static fields
-.field static final INSTANCE:Lcom/google/common/primitives/Longs$LongConverter;
+.field static final INSTANCE:Lcom/google/common/base/Converter;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/common/base/Converter<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Long;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 .field private static final serialVersionUID:J = 0x1L
 
@@ -37,12 +46,12 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 434
+    .line 448
     new-instance v0, Lcom/google/common/primitives/Longs$LongConverter;
 
     invoke-direct {v0}, Lcom/google/common/primitives/Longs$LongConverter;-><init>()V
 
-    sput-object v0, Lcom/google/common/primitives/Longs$LongConverter;->INSTANCE:Lcom/google/common/primitives/Longs$LongConverter;
+    sput-object v0, Lcom/google/common/primitives/Longs$LongConverter;->INSTANCE:Lcom/google/common/base/Converter;
 
     return-void
 .end method
@@ -50,7 +59,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 433
+    .line 447
     invoke-direct {p0}, Lcom/google/common/base/Converter;-><init>()V
 
     return-void
@@ -59,8 +68,8 @@
 .method private readResolve()Ljava/lang/Object;
     .locals 0
 
-    .line 452
-    sget-object p0, Lcom/google/common/primitives/Longs$LongConverter;->INSTANCE:Lcom/google/common/primitives/Longs$LongConverter;
+    .line 466
+    sget-object p0, Lcom/google/common/primitives/Longs$LongConverter;->INSTANCE:Lcom/google/common/base/Converter;
 
     return-object p0
 .end method
@@ -69,8 +78,16 @@
 # virtual methods
 .method protected bridge synthetic doBackward(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 433
+    .line 447
     check-cast p1, Ljava/lang/Long;
 
     invoke-virtual {p0, p1}, Lcom/google/common/primitives/Longs$LongConverter;->doBackward(Ljava/lang/Long;)Ljava/lang/String;
@@ -82,8 +99,16 @@
 
 .method protected doBackward(Ljava/lang/Long;)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 443
+    .line 457
     invoke-virtual {p1}, Ljava/lang/Long;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -93,8 +118,16 @@
 
 .method protected doForward(Ljava/lang/String;)Ljava/lang/Long;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 438
+    .line 452
     invoke-static {p1}, Ljava/lang/Long;->decode(Ljava/lang/String;)Ljava/lang/Long;
 
     move-result-object p0
@@ -104,8 +137,16 @@
 
 .method protected bridge synthetic doForward(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 433
+    .line 447
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/google/common/primitives/Longs$LongConverter;->doForward(Ljava/lang/String;)Ljava/lang/Long;
@@ -118,7 +159,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 448
+    .line 462
     const-string p0, "Longs.stringConverter()"
 
     return-object p0

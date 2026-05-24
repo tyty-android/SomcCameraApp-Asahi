@@ -82,6 +82,7 @@
     <string name="call_notification_incoming_text">สายเรียกเข้า</string>
     <string name="call_notification_ongoing_text">สายที่สนทนาอยู่</string>
     <string name="call_notification_screening_text">กำลังสกรีนสายเรียกเข้า</string>
+    <string name="camera_string_saving_process_hint_txt">กำลังบันทึก... โปรดรอจนกว่าการบันทึกจะเสร็จสมบูรณ์</string>
     <string name="camera_strings_accept_privacy_policy_txt">คุณได้ยอมรับนโยบายความเป็นส่วนตัวแล้วก่อนหน้านี้ แต่คุณสามารถเปลี่ยนใจได้ทุกเมื่อ</string>
     <string name="camera_strings_accessibility_48_mega_pixel_txt">48 เมกะพิกเซล</string>
     <string name="camera_strings_accessibility_adjust_bokeh_txt">ปรับการเบลอฉากหลัง</string>
@@ -92,6 +93,27 @@
     <string name="camera_strings_accessibility_adjust_framing_size_smaller_txt">ลดขนาดกรอบ</string>
     <string name="camera_strings_accessibility_adjust_framing_size_txt">ปรับขนาดกรอบ</string>
     <string name="camera_strings_accessibility_adjust_shutter_speed_txt">ความเร็วชัตเตอร์</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_look_menu_txt">ปุ่มปิด ปิดเมนูลุค</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_menu_txt">ปิดเมนูที่กำหนดเอง</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_suggests_txt">ปิดการปรับแต่งที่แนะนำ</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_menu_txt">ลุคที่กำหนดเองที่ใช้อยู่ในปัจจุบัน เปิดเมนูการปรับแต่ง</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_txt">ลุคที่กำหนดเอง ใช้การตั้งค่าลุค ความสว่าง และสีที่ลงทะเบียนไว้ในเมนูที่กำหนดเอง</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_tab_txt">แท็บที่กำหนดเอง ใช้การตั้งค่าลุค ความสว่าง และสีที่ลงทะเบียนไว้ในเมนูที่กำหนดเอง</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_button_txt">ปุ่มที่กำหนดเอง เปิดเมนูซึ่งอนุญาตให้คุณทำการปรับแต่งเพิ่มเติมเมื่อการปรับแต่งที่แนะนำถูกนำไปใช้</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_param_txt">%1$s ถูกตั้งค่าเป็น %2$s</string>
+    <string name="camera_strings_accessibility_ai_suggestion_first_time_txt">ผู้ช่วยกล้อง AI ฟังก์ชันนี้จะแนะนำการตั้งค่าต่างๆ เช่น สี ตามฉาก</string>
+    <string name="camera_strings_accessibility_ai_suggestion_four_of_some_suggests_txt">การปรับแต่งที่แนะนำรายการที่สี่</string>
+    <string name="camera_strings_accessibility_ai_suggestion_look_menu_txt">"%1$s
+เปิดเมนูลุคสร้างสรรค์"</string>
+    <string name="camera_strings_accessibility_ai_suggestion_new_suggest_txt">มีการเสนอแนะการปรับแต่งที่แนะนำรายการใหม่</string>
+    <string name="camera_strings_accessibility_ai_suggestion_one_of_some_suggests_txt">การปรับแต่งที่แนะนำรายการแรก</string>
+    <string name="camera_strings_accessibility_ai_suggestion_open_suggests_txt">ขยายการปรับแต่งที่แนะนำ</string>
+    <string name="camera_strings_accessibility_ai_suggestion_reset_to_default_txt">รีเซ็ตเป็นการตั้งค่าที่แนะนำก่อนหน้า</string>
+    <string name="camera_strings_accessibility_ai_suggestion_selected_suggest_txt">การปรับแต่งที่แนะนำเหล่านี้ได้ถูกนำไปใช้</string>
+    <string name="camera_strings_accessibility_ai_suggestion_suggest_lens_txt">ปุ่มเลนส์ที่แนะนำ แนะนำ %1$sx</string>
+    <string name="camera_strings_accessibility_ai_suggestion_surface_of_some_suggests_txt">การปรับแต่งที่แนะนำ ปัดนิ้วจากขวาไปซ้ายเพื่อแสดงการปรับแต่งที่แนะนำ</string>
+    <string name="camera_strings_accessibility_ai_suggestion_three_of_some_suggests_txt">การปรับแต่งที่แนะนำรายการที่สาม</string>
+    <string name="camera_strings_accessibility_ai_suggestion_two_of_some_suggests_txt">การปรับแต่งที่แนะนำรายการที่สอง</string>
     <string name="camera_strings_accessibility_arrow_left_button_txt">ลูกศรซ้าย</string>
     <string name="camera_strings_accessibility_arrow_right_button_txt">ลูกศรขวา</string>
     <string name="camera_strings_accessibility_audio_level_txt">มิเตอร์วัดระดับเสียง</string>
@@ -246,6 +268,45 @@
     <string name="camera_strings_advanced_setting_geo_tag_title_txt">บันทึกตำแหน่งที่ตั้ง</string>
     <string name="camera_strings_ai_face_restore_description_txt">คุณสามารถถ่ายภาพโดยปรับใบหน้าให้คมชัดเพื่อให้โครงหน้าชัดเจนขึ้น</string>
     <string name="camera_strings_ai_face_restore_txt">ทำให้ใบหน้าคมชัด</string>
+    <string name="camera_strings_ai_suggestion_introduce_hint_text_txt">[เคล็ดลับ] ผู้ช่วยกล้อง AI</string>
+    <string name="camera_strings_aisuggestion_box_name1_txt">กำหนดเอง</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_message_txt">ลงทะเบียนการตั้งค่าลุค ความสว่าง และสีปัจจุบันเป็นกำหนดเอง</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_overwrite_message_txt">ลงทะเบียนลุคไว้ในกำหนดเองแล้ว เขียนทับหรือไม่</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_title_txt">ลงทะเบียนเป็นลุคที่กำหนดเอง</string>
+    <string name="camera_strings_aisuggestion_box_title_txt">กำหนดเอง</string>
+    <string name="camera_strings_aisuggestion_custom_params_contrast_txt">ปรบ.ต่าง</string>
+    <string name="camera_strings_aisuggestion_custom_params_ev_txt">สว่าง</string>
+    <string name="camera_strings_aisuggestion_custom_params_register_txt">ลงทะเบียน</string>
+    <string name="camera_strings_aisuggestion_custom_params_saturation_txt">ความอิ่มสี</string>
+    <string name="camera_strings_aisuggestion_custom_params_title_txt">ความสว่าง/สี</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbab_txt">อุ่น</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbgm_txt">โทนสี</string>
+    <string name="camera_strings_aisuggestion_customlook_register_instruction_txt">คุณสามารถใช้ลุคที่กำหนดเองที่ลงทะเบียนไว้ได้ตลอดเวลาจากแท็บลุคที่กำหนดเอง</string>
+    <string name="camera_strings_aisuggestion_description_txt">"AI จะระบุฉากโดยอัตโนมัติและแนะนำการปรับแต่งที่เหมาะสมในภาพตัวอย่างขนาดเล็กด้านขวาล่าง
+หากคุณแตะที่ภาพตัวอย่างขนาดเล็กนี้ การตั้งค่าต่อไปนี้จะได้รับการปรับแต่งโดยอัตโนมัติเพื่อให้เหมาะสำหรับฉาก:
+ลุค, การรับแสง, อุณหภูมิสี, ความอิ่มตัวของสี, ความเปรียบต่าง, Bokeh
+*ฟังก์ชันนี้ใช้ได้ในโหมดภาพถ่ายเท่านั้น
+*เมื่อคุณเริ่มบันทึกวิดีโอได้โดยกดปุ่มชัตเตอร์ค้างไว้ ระบบจะไม่ใช้การตั้งค่าความอิ่มตัวของสี ความเปรียบต่าง และ Bokeh"</string>
+    <string name="camera_strings_aisuggestion_guide_description1_txt">การปรับแต่งที่แนะนำตามฉากที่ระบุโดย AI จะแสดงในภาพตัวอย่างขนาดเล็กด้านขวาล่าง (ด้านขวาบนเมื่อถือกล้องในแนวนอน) คุณสามารถใช้การปรับแต่งทั้งหมดพร้อมกันได้โดยการแตะที่ภาพตัวอย่างขนาดเล็ก</string>
+    <string name="camera_strings_aisuggestion_guide_description2_txt">ระบบอาจแนะนำการตั้งค่าเลนส์เฉพาะ โดยขึ้นอยู่กับฉาก ในกรณีนี้ คุณจะสามารถเปลี่ยนไปใช้การตั้งค่าเลนส์ที่แนะนำได้ตามความต้องการ</string>
+    <string name="camera_strings_aisuggestion_guide_description3_txt">"การปัดไปทางซ้ายบนภาพตัวอย่างขนาดเล็กด้านขวาล่าง (ด้านขวาบนเมื่อถือกล้องในแนวนอน) จะทำให้คุณสามารถแสดงคำแนะนำการปรับแต่งอื่นๆ ได้
+คำแนะนำที่คุณเลือกจะถูกบันทึกเป็นการปรับแต่งที่ต้องการ และจะรวมอยู่ในคำแนะนำครั้งถัดไปที่คุณถ่ายในฉากที่คล้ายกัน"</string>
+    <string name="camera_strings_aisuggestion_guide_description4_txt">คุณแตะที่ปุ่ม [>] เพื่อซ่อนคำแนะนำเมื่อไม่ต้องการ เมื่อมีการระบุฉากใหม่ ปุ่ม [&lt;] จะสว่างขึ้นเพื่อแสดงให้คุณทราบว่ามีคำแนะนำการปรับแต่งใหม่ หากต้องการดูคำแนะนำอีกครั้ง ให้แตะที่ปุ่ม [&lt;]</string>
+    <string name="camera_strings_aisuggestion_guide_description5_txt">หากคุณแตะที่ปุ่มการปรับแต่งหลังจากที่เลือกการปรับแต่งที่แนะนำ คุณจะสามารถปรับแต่งการตั้งค่าเพิ่มเติมได้ เช่น ความสว่างและสี การปรับแต่งของคุณจะถูกบันทึกลงในอุปกรณ์และนำไปใช้กับการปรับแต่งที่แนะนำในครั้งถัดไปที่มีการระบุฉากที่คล้ายกัน</string>
+    <string name="camera_strings_aisuggestion_guide_description6_txt">สามารถลงทะเบียนการปรับแต่งที่แนะนำและการปรับแต่งที่คุณดำเนินการได้ ซึ่งช่วยให้คุณสามารถโหลดการปรับแต่งดังกล่าวได้ตลอดเวลาเพื่อถ่ายรูปโดยใช้การตั้งค่าเดียวกัน แตะ [ลงทะเบียน] เพื่อเพิ่มลุคที่กำหนดเองไปยังรายการลุคที่ใช้ได้</string>
+    <string name="camera_strings_aisuggestion_guide_entry_txt">ตรวจสอบวิธีใช้ผู้ช่วยกล้อง AI</string>
+    <string name="camera_strings_aisuggestion_guide_title_txt">วิธีการใช้ผู้ช่วยกล้อง AI</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_message_txt">รีเซ็ตการตั้งค่าทั้งหมดเป็นค่าเริ่มต้น รวมถึงสี ความสว่าง และการปรับแต่งที่คุณต้องการ หรือไม่</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_title_txt">รีเซ็ตพารามิเตอร์</string>
+    <string name="camera_strings_aisuggestion_params_reset_txt">รีเซ็ตพารามิเตอร์</string>
+    <string name="camera_strings_aisuggestion_permitted_item_bokeh_txt">Bokeh</string>
+    <string name="camera_strings_aisuggestion_permitted_item_lens_txt">เลนส์</string>
+    <string name="camera_strings_aisuggestion_permitted_item_title_txt">รวมไว้ในคำแนะนำ</string>
+    <string name="camera_strings_aisuggestion_recommend_lens_ratio_txt">แนะนำให้ใช้ %1$s</string>
+    <string name="camera_strings_aisuggestion_return_to_default_txt">คืนค่าเดิม</string>
+    <string name="camera_strings_aisuggestion_simple_video_instruction_txt">เมื่อบันทึกวิดีโอโดยกดค้าง ค่าความอิ่มตัวของสี ความเปรียบต่าง และ Bokeh อาจต่างไป</string>
+    <string name="camera_strings_aisuggestion_txt">ผู้ช่วยกล้อง AI</string>
+    <string name="camera_strings_aisuggestion_use_aissuggestion_txt">การใช้ผู้ช่วยกล้อง AI</string>
     <string name="camera_strings_anonymous_analytics_txt">การวิเคราะห์ที่ไม่ระบุชื่อ</string>
     <string name="camera_strings_application_name">กล้อง</string>
     <string name="camera_strings_application_name_google_lens_txt">Google Lens</string>
@@ -421,6 +482,7 @@
     <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">เชื่อมต่อ Wi-Fi ไม่ได้</string>
     <string name="camera_strings_dialog_user_data_collection_txt">หากคุณยอมรับข้อตกลงด้านล่าง Sony จะรวบรวม&lt;b>&lt;a href=#personal-data>ข้อมูลส่วนตัว&lt;/a>&lt;/b> ของคุณเพื่อให้ความช่วยเหลือคุณโดยเฉพาะและปรับปรุงอุปกรณ์และบริการต่างๆ Sony จะจัดการกับข้อมูลของคุณตาม&lt;b>&lt;a href=https://www.sonymobile.com/privacy/>นโยบายความเป็นส่วนตัว&lt;/a>&lt;/b>ของเรา</string>
     <string name="camera_strings_dialog_video_hdr_hlg_supported_short_description_txt">อุปกรณ์/บริการบางอย่างอาจไม่สามารถจำลองสีและความสว่างของเนื้อหา HDR ต้นฉบับได้ โปรดใช้อุปกรณ์/บริการที่รองรับ HDR เมื่อรับชมเนื้อหา HDR</string>
+    <string name="camera_strings_digital_tripod_hint_edge_txt">องค์ประกอบภาพเปลี่ยนไป หันกล้องไปยังทิศทางของวัตถุเดิม</string>
     <string name="camera_strings_digital_zoom_type_description_txt">"เลือกการตั้งค่าการย่อขยายแบบดิจิทัล
 
 ย่อขยายแบบดิจิทัลมาตรฐาน: ย่อขยายโดยใช้กระบวนการดิจิทัลตามข้อมูลเซนเซอร์ภาพ
@@ -484,6 +546,7 @@
     <string name="camera_strings_fast_capturing_screen_locked_settings_txt">ปลดล็อกหน้าจอเพื่อเปิดการตั้งค่า</string>
     <string name="camera_strings_fast_capturing_screen_locked_streaming_txt">หากต้องการเริ่มสตรีมมิ่ง ให้ปลดล็อกหน้าจอ</string>
     <string name="camera_strings_fast_capturing_screen_locked_title_txt">ล็อกหน้าจอแล้ว</string>
+    <string name="camera_strings_feature_creative_look_custom_description_txt">คุณสามารถลงทะเบียนการตั้งค่าลุคและความสว่าง/สีได้</string>
     <string name="camera_strings_feature_creative_look_description_txt">"คุณสามารถเลือกลุคของภาพ (ภาพถ่ายหรือภาพยนตร์) ได้โดยเลือก \"ลุค\"
 
 ลุคสร้างสรรค์มีลุคให้เลือก 6 แบบ แต่ละลุคมีส่วนผสมของโทนสี ความอิ่มตัวของสี ความเปรียบต่าง ความคมชัด ความสว่าง และองค์ประกอบภาพอื่นๆ ที่ต่างกัน ให้คุณตั้งการประมวลผลภาพโดยเลือกองค์ประกอบต่างๆ ให้สมดุลได้ตามต้องการ"</string>
@@ -567,6 +630,7 @@ JPEG: บันทึกเป็นรูปภาพ JPEG"</string>
     <string name="camera_strings_framing_orientation_description_txt">"คุณสามารถเลือกที่จะครอบตัดวัตถุในกรอบแนวตั้งหรือแนวนอน
 ตั้งค่าเป็น [อัตโนมัติ] เพื่อทำให้การจัดวางกรอบเหมือนกับการจัดวางอุปกรณ์"</string>
     <string name="camera_strings_framing_select_subject_to_track_txt">แตะวัตถุที่ต้องการล็อกตำแหน่ง</string>
+    <string name="camera_strings_framing_setting_guide_title_txt">เกี่ยวกับการจัดเฟรมอัตโนมัติ</string>
     <string name="camera_strings_framing_setting_orientation_landscape_txt">แนวนอน</string>
     <string name="camera_strings_framing_setting_orientation_portrait_txt">แนวตั้ง</string>
     <string name="camera_strings_framing_setting_orientation_title_txt">การจัดวางกรอบ</string>
@@ -574,6 +638,7 @@ JPEG: บันทึกเป็นรูปภาพ JPEG"</string>
 การบันทึกที่ครอบตัดแล้วจะถูกเก็บบันทึกไว้ด้วยความละเอียดระดับ HD เต็มรูปแบบ การบันทึกที่ไม่ได้ครอบตัดจะถูกเก็บบันทึกไว้เป็น 4K"</string>
     <string name="camera_strings_framing_setting_save_original_video_off_txt">การบันทึกเต็มหน้าจอ: ปิด</string>
     <string name="camera_strings_framing_setting_save_original_video_title_txt">การบันทึกเต็มหน้าจอ</string>
+    <string name="camera_strings_framing_setting_snapshot_description_txt">ไม่ว่า [การบันทึกเต็มหน้าจอ] เปิดหรือปิดอยู่ สแนปช็อตที่ถ่ายขณะบันทึกวิดีโอจะได้รับการบันทึกไว้แบบเต็มหน้าจอ</string>
     <string name="camera_strings_geotagging_description_txt">บันทึกตำแหน่งที่ตั้งในภาพถ่ายและวิดีโอตามสถานที่ถ่าย</string>
     <string name="camera_strings_geotagging_txt">บันทึกตำแหน่งที่ตั้ง</string>
     <string name="camera_strings_gimbal_mode_tab_label">งานกล้อง AI</string>
@@ -592,6 +657,7 @@ JPEG: บันทึกเป็นรูปภาพ JPEG"</string>
     <string name="camera_strings_gimbal_setting_assist_method_locking_hint_txt">ล็อกตำแหน่งวัตถุ: กำหนดเอง</string>
     <string name="camera_strings_gimbal_setting_assist_method_locking_txt">กำหนดเอง</string>
     <string name="camera_strings_gimbal_setting_assist_method_title_txt">ล็อกตำแหน่งวัตถุ</string>
+    <string name="camera_strings_gimbal_setting_guide_title_txt">เกี่ยวกับงานกล้อง AI</string>
     <string name="camera_strings_gridline_description_txt">ตั้งค่าว่าจะแสดงเส้นตารางเพื่อช่วยคุณในการจัดองค์ประกอบภาพหรือไม่</string>
     <string name="camera_strings_gridline_txt">เส้นตาราง</string>
     <string name="camera_strings_hand_shutter_description_updated_txt">คุณสามารถเริ่มนับถอยหลังการตั้งเวลาได้โดยหันฝ่ามือเข้าหากล้องด้านหน้า ยืดนิ้วมือขึ้นด้านบนเพื่อให้สามารถตรวจจับได้ง่ายขึ้น</string>
@@ -727,6 +793,7 @@ JPEG: บันทึกเป็นรูปภาพ JPEG"</string>
     <string name="camera_strings_notification_channel_title_saving_process_txt">กระบวนการบันทึก</string>
     <string name="camera_strings_notification_text_saving_in_progress_txt">โปรดรอจนกว่าจะบันทึกเสร็จ</string>
     <string name="camera_strings_notification_title_saving_in_progress_txt">กำลังบันทึก</string>
+    <string name="camera_strings_notify_saving_process_cannot_launch_app_by_hw_shutter_txt">การกดปุ่มชัตเตอร์อาจไม่เรียกใช้กล้องขณะกำลังบันทึก</string>
     <string name="camera_strings_ok_txt">ตกลง</string>
     <string name="camera_strings_peaking_color_blue_txt">น้ำเงิน</string>
     <string name="camera_strings_peaking_color_red_txt">สีแดง</string>
@@ -735,6 +802,7 @@ JPEG: บันทึกเป็นรูปภาพ JPEG"</string>
     <string name="camera_strings_peaking_color_yellow_txt">เหลือง</string>
     <string name="camera_strings_peaking_txt">สูงสุด</string>
     <string name="camera_strings_personal_data_txt">ข้อมูลส่วนตัว</string>
+    <string name="camera_strings_photopro_setting_guide_title_txt">เกี่ยวกับภาพ Pro</string>
     <string name="camera_strings_privacy_policy_txt">นโยบายความเป็นส่วนตัว</string>
     <string name="camera_strings_pro_tips_computational_photo_description_txt">"แม้ในโหมด P กล้องจะระบุฉากโดยอัตโนมัติและถ่ายภาพอัตโนมัติสวยๆ โดยลดความเบลอ สัญญาณรบกวน การเปิดรับแสงมากเกินไป และน้อยเกินไป
 หากคุณไม่ได้ใช้คุณสมบัตินี้ คุณสามารถปิดได้จากปุ่ม Fn หรือในเมนู"</string>
@@ -965,6 +1033,7 @@ M (ปรับการรับแสงเอง)"</string>
     <string name="camera_strings_video_stabilization_description_sub_txt">หมายเหตุ: เมื่อเลือกคุณภาพสูง ไฟล์บันทึกอาจสั้นลงเนื่องจากอุปกรณ์ร้อนขึ้น</string>
     <string name="camera_strings_video_stabilization_description_txt">Xperia มีระบบกันการสั่นไหวแบบไฮบริดเฉพาะที่เรียกว่า Optical SteadyShot ซึ่งผสมผสานระบบกันการสั่นไหวแบบออปติคอลและระบบกันการสั่นไหวของภาพแบบอิเล็กทรอนิกส์เข้าด้วยกัน ช่วยให้วิดีโอของคุณไม่สั่นไหวและนุ่มนวลแม้บันทึกในขณะที่กำลังเคลื่อนไหว</string>
     <string name="camera_strings_video_stabilization_high_quality_images_txt">คุณภาพสูง</string>
+    <string name="camera_strings_videopro_setting_guide_title_txt">เกี่ยวกับวิดีโอ Pro</string>
     <string name="camera_strings_volume_distortion_correction_description_txt">แก้ไขภาพใบหน้าบิดเบี้ยวที่ปรากฏใกล้ขอบของหน้าจอเมื่อใช้เลนส์มุมกว้างพิเศษ ซึ่งอาจเป็นสาเหตุให้พื้นหลังดูบิดเบี้ยวหรือมุมรับภาพดูแคบ</string>
     <string name="camera_strings_volume_distortion_correction_front_description_txt">แก้ไขภาพใบหน้าบิดเบี้ยวที่ปรากฏใกล้ขอบของหน้าจอ ซึ่งอาจเป็นสาเหตุให้พื้นหลังดูบิดเบี้ยวหรือมุมรับภาพดูแคบ</string>
     <string name="camera_strings_volume_distortion_correction_txt">การแก้ไขภาพบิดเบี้ยว</string>
@@ -1042,8 +1111,25 @@ M (ปรับการรับแสงเอง)"</string>
     <string name="clear_text_end_icon_content_description">ล้างข้อความ</string>
     <string name="close_drawer">ปิดเมนูการนำทาง</string>
     <string name="close_sheet">ปิดชีต</string>
+    <string name="common_google_play_services_enable_button">เปิดใช้</string>
+    <string name="common_google_play_services_enable_text">%1$s จะไม่ทำงานจนกว่าคุณจะเปิดใช้บริการ Google Play</string>
+    <string name="common_google_play_services_enable_title">เปิดใช้บริการ Google Play</string>
+    <string name="common_google_play_services_install_button">ติดตั้ง</string>
+    <string name="common_google_play_services_install_text">%1$s จะไม่ทำงานหากไม่มีบริการ Google Play ซี่งไม่มีในอุปกรณ์ของคุณ</string>
+    <string name="common_google_play_services_install_title">ติดตั้งบริการ Google Play</string>
+    <string name="common_google_play_services_notification_channel_name">ความพร้อมใช้งานของบริการ Google Play</string>
+    <string name="common_google_play_services_notification_ticker">ข้อผิดพลาดของบริการ Google Play</string>
+    <string name="common_google_play_services_unknown_issue">%1$s มีปัญหาเกี่ยวกับบริการของ Google Play โปรดลองอีกครั้ง</string>
+    <string name="common_google_play_services_unsupported_text">%1$s จะไม่ทำงานหากไม่มีบริการ Google Play ซึ่งอุปกรณ์ของคุณไม่สนับสนุน</string>
+    <string name="common_google_play_services_update_button">อัปเดต</string>
+    <string name="common_google_play_services_update_text">%1$s จะไม่ทำงานจนกว่าคุณจะอัปเดตบริการ Google Play</string>
+    <string name="common_google_play_services_update_title">อัปเดตบริการ Google Play</string>
+    <string name="common_google_play_services_updating_text">%1$s จะไม่ทำงานหากไม่มีบริการ Google Play ซึ่งกำลังอัปเดตอยู่ในขณะนี้</string>
+    <string name="common_google_play_services_wear_update_text">จำเป็นต้องใช้บริการ Google Play เวอร์ชันใหม่ ซึ่งจะอัปเดตอัตโนมัติในอีกไม่ช้า</string>
+    <string name="common_open_on_phone">เปิดบนโทรศัพท์</string>
+    <string name="common_signin_button_text">ลงชื่อเข้าใช้</string>
+    <string name="common_signin_button_text_long">ลงชื่อเข้าใช้ด้วย Google</string>
     <string name="copy">คัดลอก</string>
-    <string name="copy_toast_msg">คัดลอกลิงก์ไปยังคลิปบอร์ดแล้ว</string>
     <string name="default_error_message">อินพุตไม่ถูกต้อง</string>
     <string name="default_popup_window_title">หน้าต่างป๊อปอัป</string>
     <string name="dropdown_menu">เมนูแบบเลื่อนลง</string>
@@ -1054,9 +1140,6 @@ M (ปรับการรับแสงเอง)"</string>
     <string name="external_display_connected_description_txt">คุณสามารถตรวจสอบช่องมองภาพจากจอภาพ Vlog</string>
     <string name="external_display_connected_title_txt">เชื่อมต่อจอภาพ Vlog แล้ว</string>
     <string name="external_display_note_about_external_mic_txt">หมายเหตุ: หากต้องการใช้ไมค์ภายนอก โปรดเชื่อมต่อไมค์ภายนอกกับจอภาพ Vlog ก่อนทำการบันทึก หากคุณเชื่อมต่อไมค์ภายนอกในภายหลัง คุณจำเป็นต้องเชื่อมต่อจอภาพ Vlog ใหม่</string>
-    <string name="fallback_menu_item_copy_link">คัดลอกลิงก์</string>
-    <string name="fallback_menu_item_open_in_browser">เปิดในเบราว์เซอร์</string>
-    <string name="fallback_menu_item_share_link">แชร์ลิงก์</string>
     <string name="icon_content_description">ไอคอนกล่องโต้ตอบ</string>
     <string name="in_progress">กำลังดำเนินการ</string>
     <string name="indeterminate">เลือกบางส่วน</string>

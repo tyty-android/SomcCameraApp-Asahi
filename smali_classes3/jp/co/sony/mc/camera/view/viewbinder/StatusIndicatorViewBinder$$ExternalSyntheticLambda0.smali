@@ -3,34 +3,36 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function2;
+.implements Lkotlin/jvm/functions/Function1;
+
+
+# instance fields
+.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/viewbinder/StatusIndicatorViewBinder;
 
 
 # direct methods
-.method public synthetic constructor <init>()V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/viewbinder/StatusIndicatorViewBinder;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/StatusIndicatorViewBinder$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/StatusIndicatorViewBinder;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
-    check-cast p1, Landroidx/constraintlayout/widget/ConstraintSet;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/StatusIndicatorViewBinder$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/StatusIndicatorViewBinder;
 
-    check-cast p2, Ljava/lang/Integer;
+    check-cast p1, Ljava/lang/Boolean;
 
-    invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
-
-    move-result p0
-
-    invoke-static {p1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StatusIndicatorViewBinder;->$r8$lambda$yTOBJneR7R52r4XsCmekBjbKfvQ(Landroidx/constraintlayout/widget/ConstraintSet;I)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/StatusIndicatorViewBinder;->$r8$lambda$ZQ-lB-atWCdTkvIA2BtrAkh1WQc(Ljp/co/sony/mc/camera/view/viewbinder/StatusIndicatorViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
 
     move-result-object p0
 

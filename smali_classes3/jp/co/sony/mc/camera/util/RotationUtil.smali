@@ -19,6 +19,14 @@
 
 .method public static getAngle(I)F
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "orientation"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -36,6 +44,14 @@
 
 .method public static getNormalizedRotation(I)I
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "degrees"
+        }
+    .end annotation
 
     .line 42
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -145,6 +161,14 @@
 
 .method public static orientationToString(I)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "orientation"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 

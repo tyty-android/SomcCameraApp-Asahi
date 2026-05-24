@@ -28,7 +28,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nScatterSet.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ScatterSet.kt\nandroidx/collection/MutableScatterSet$MutableSetWrapper\n+ 2 ScatterSet.kt\nandroidx/collection/ScatterSet\n+ 3 ScatterMap.kt\nandroidx/collection/ScatterMapKt\n*L\n1#1,1084:1\n237#2,7:1085\n248#2,3:1093\n251#2,9:1097\n1810#3:1092\n1672#3:1096\n*S KotlinDebug\n*F\n+ 1 ScatterSet.kt\nandroidx/collection/MutableScatterSet$MutableSetWrapper\n*L\n1064#1:1085,7\n1064#1:1093,3\n1064#1:1097,9\n1064#1:1092\n1064#1:1096\n*E\n"
+    value = "SMAP\nScatterSet.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ScatterSet.kt\nandroidx/collection/MutableScatterSet$MutableSetWrapper\n+ 2 ScatterSet.kt\nandroidx/collection/ScatterSet\n+ 3 ScatterMap.kt\nandroidx/collection/ScatterMapKt\n*L\n1#1,1100:1\n237#2,7:1101\n248#2,3:1109\n251#2,9:1113\n1826#3:1108\n1688#3:1112\n*S KotlinDebug\n*F\n+ 1 ScatterSet.kt\nandroidx/collection/MutableScatterSet$MutableSetWrapper\n*L\n1080#1:1101,7\n1080#1:1109,3\n1080#1:1113,9\n1080#1:1108\n1080#1:1112\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -87,7 +87,7 @@
         }
     .end annotation
 
-    .line 1028
+    .line 1044
     iput-object p1, p0, Landroidx/collection/MutableScatterSet$MutableSetWrapper;->this$0:Landroidx/collection/MutableScatterSet;
 
     check-cast p1, Landroidx/collection/ScatterSet;
@@ -107,7 +107,7 @@
         }
     .end annotation
 
-    .line 1029
+    .line 1045
     iget-object p0, p0, Landroidx/collection/MutableScatterSet$MutableSetWrapper;->this$0:Landroidx/collection/MutableScatterSet;
 
     invoke-virtual {p0, p1}, Landroidx/collection/MutableScatterSet;->add(Ljava/lang/Object;)Z
@@ -131,7 +131,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1032
+    .line 1048
     iget-object p0, p0, Landroidx/collection/MutableScatterSet$MutableSetWrapper;->this$0:Landroidx/collection/MutableScatterSet;
 
     check-cast p1, Ljava/lang/Iterable;
@@ -146,7 +146,7 @@
 .method public clear()V
     .locals 0
 
-    .line 1035
+    .line 1051
     iget-object p0, p0, Landroidx/collection/MutableScatterSet$MutableSetWrapper;->this$0:Landroidx/collection/MutableScatterSet;
 
     invoke-virtual {p0}, Landroidx/collection/MutableScatterSet;->clear()V
@@ -164,7 +164,7 @@
         }
     .end annotation
 
-    .line 1038
+    .line 1054
     new-instance v0, Landroidx/collection/MutableScatterSet$MutableSetWrapper$iterator$1;
 
     iget-object p0, p0, Landroidx/collection/MutableScatterSet$MutableSetWrapper;->this$0:Landroidx/collection/MutableScatterSet;
@@ -179,7 +179,7 @@
 .method public remove(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 1060
+    .line 1076
     iget-object p0, p0, Landroidx/collection/MutableScatterSet$MutableSetWrapper;->this$0:Landroidx/collection/MutableScatterSet;
 
     invoke-virtual {p0, p1}, Landroidx/collection/MutableScatterSet;->remove(Ljava/lang/Object;)Z
@@ -205,14 +205,14 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1076
+    .line 1092
     iget-object v0, p0, Landroidx/collection/MutableScatterSet$MutableSetWrapper;->this$0:Landroidx/collection/MutableScatterSet;
 
     invoke-virtual {v0}, Landroidx/collection/MutableScatterSet;->getSize()I
 
     move-result v0
 
-    .line 1077
+    .line 1093
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -228,14 +228,14 @@
 
     move-result-object v1
 
-    .line 1078
+    .line 1094
     iget-object v2, p0, Landroidx/collection/MutableScatterSet$MutableSetWrapper;->this$0:Landroidx/collection/MutableScatterSet;
 
     invoke-virtual {v2, v1}, Landroidx/collection/MutableScatterSet;->minusAssign(Ljava/lang/Object;)V
 
     goto :goto_0
 
-    .line 1080
+    .line 1096
     :cond_0
     iget-object p0, p0, Landroidx/collection/MutableScatterSet$MutableSetWrapper;->this$0:Landroidx/collection/MutableScatterSet;
 
@@ -272,17 +272,17 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1064
+    .line 1080
     iget-object p0, p0, Landroidx/collection/MutableScatterSet$MutableSetWrapper;->this$0:Landroidx/collection/MutableScatterSet;
 
     move-object v0, p0
 
     check-cast v0, Landroidx/collection/ScatterSet;
 
-    .line 1086
+    .line 1102
     iget-object v0, v0, Landroidx/collection/ScatterSet;->metadata:[J
 
-    .line 1087
+    .line 1103
     array-length v1, v0
 
     add-int/lit8 v1, v1, -0x2
@@ -295,7 +295,7 @@
 
     move v4, v3
 
-    .line 1090
+    .line 1106
     :goto_0
     aget-wide v5, v0, v3
 
@@ -344,19 +344,19 @@
 
     add-int/2addr v10, v9
 
-    .line 1066
+    .line 1082
     iget-object v11, p0, Landroidx/collection/MutableScatterSet;->elements:[Ljava/lang/Object;
 
     aget-object v11, v11, v10
 
-    .line 1067
+    .line 1083
     invoke-interface {p1, v11}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
 
     move-result v11
 
     if-nez v11, :cond_0
 
-    .line 1068
+    .line 1084
     invoke-virtual {p0, v10}, Landroidx/collection/MutableScatterSet;->removeElementAt(I)V
 
     const/4 v4, 0x1

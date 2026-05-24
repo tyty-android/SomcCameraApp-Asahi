@@ -58,6 +58,14 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 12
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 62
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -75,13 +83,13 @@
     .line 66
     new-instance p1, Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation$AnimationConfig;
 
-    const v4, 0x7f11051e
+    const v4, 0x7f11057a
 
-    const v5, 0x7f0a000c
+    const v5, 0x7f0a000d
 
-    const v2, 0x7f070360
+    const v2, 0x7f07030a
 
-    const v3, 0x7f07035f
+    const v3, 0x7f070309
 
     move-object v0, p1
 
@@ -94,13 +102,13 @@
     .line 72
     new-instance p1, Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation$AnimationConfig;
 
-    const v10, 0x7f11051f
+    const v10, 0x7f11057b
 
-    const v11, 0x7f0a000c
+    const v11, 0x7f0a000d
 
-    const v8, 0x7f070360
+    const v8, 0x7f07030a
 
-    const v9, 0x7f07035f
+    const v9, 0x7f070309
 
     move-object v6, p1
 
@@ -113,11 +121,11 @@
     .line 78
     new-instance p1, Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation$AnimationConfig;
 
-    const v4, 0x7f11051d
+    const v4, 0x7f110579
 
-    const v2, 0x7f07035e
+    const v2, 0x7f070308
 
-    const v3, 0x7f07035d
+    const v3, 0x7f070307
 
     move-object v0, p1
 
@@ -167,6 +175,14 @@
 
 .method private playAfFadeOutAnimation(Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
     .line 140
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation;->getFadeOutAnimation()Landroid/view/animation/AlphaAnimation;
@@ -195,6 +211,18 @@
 
 .method private playTouchDownAnimation(Landroid/view/View;Landroid/view/animation/AnimationSet;Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation$AnimationConfig;)Landroid/view/animation/AnimationSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "animation",
+            "config"
+        }
+    .end annotation
 
     .line 149
     invoke-virtual {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation;->getTouchDownAnimation(Landroid/view/View;Landroid/view/animation/AnimationSet;Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation$AnimationConfig;)Landroid/view/animation/AnimationSet;
@@ -209,6 +237,18 @@
 
 .method private playTouchUpAnimation(Landroid/view/View;Landroid/view/animation/AnimationSet;Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation$AnimationConfig;)Landroid/view/animation/AnimationSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "animation",
+            "config"
+        }
+    .end annotation
 
     .line 156
     invoke-virtual {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation;->getTouchUpAnimation(Landroid/view/View;Landroid/view/animation/AnimationSet;Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation$AnimationConfig;)Landroid/view/animation/AnimationSet;
@@ -225,6 +265,14 @@
 # virtual methods
 .method public cancelAfFocusAnimationObject(Landroid/view/View;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
     .line 212
     invoke-virtual {p1}, Landroid/view/View;->getWidth()I
@@ -280,6 +328,14 @@
 
 .method public cancelAfFocusAnimationSingle(Landroid/view/View;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
     .line 224
     invoke-virtual {p1}, Landroid/view/View;->getWidth()I
@@ -335,6 +391,14 @@
 
 .method public cancelAfFocusAnimationTouch(Landroid/view/View;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
     .line 236
     invoke-virtual {p1}, Landroid/view/View;->getWidth()I
@@ -408,6 +472,18 @@
 
 .method public getTouchDownAnimation(Landroid/view/View;Landroid/view/animation/AnimationSet;Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation$AnimationConfig;)Landroid/view/animation/AnimationSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "animation",
+            "config"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
@@ -430,6 +506,18 @@
 
 .method public getTouchUpAnimation(Landroid/view/View;Landroid/view/animation/AnimationSet;Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation$AnimationConfig;)Landroid/view/animation/AnimationSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "animation",
+            "config"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
@@ -452,6 +540,14 @@
 
 .method public playAfFadeOutAnimationObject(Landroid/view/View;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
     .line 136
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation;->playAfFadeOutAnimation(Landroid/view/View;)V
@@ -461,6 +557,14 @@
 
 .method public playAfFadeOutAnimationSingle(Landroid/view/View;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
     .line 98
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation;->playAfFadeOutAnimation(Landroid/view/View;)V
@@ -470,6 +574,14 @@
 
 .method public playAfFadeOutAnimationTouch(Landroid/view/View;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
     .line 132
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation;->playAfFadeOutAnimation(Landroid/view/View;)V
@@ -479,8 +591,16 @@
 
 .method public playAfFocusInAnimationSingle(Landroid/view/View;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
-    const v0, 0x7f08008e
+    const v0, 0x7f08008f
 
     .line 94
     invoke-virtual {p0, p1, v0}, Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation;->startFocusAnimation(Landroid/view/View;I)V
@@ -490,6 +610,16 @@
 
 .method public playAfFocusInAnimationTouch(Landroid/view/View;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "res"
+        }
+    .end annotation
 
     .line 102
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation;->startFocusAnimation(Landroid/view/View;I)V
@@ -499,6 +629,16 @@
 
 .method public startFocusAnimation(Landroid/view/View;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "res"
+        }
+    .end annotation
 
     .line 106
     invoke-virtual {p1, p2}, Landroid/view/View;->setBackgroundResource(I)V
@@ -560,6 +700,14 @@
 
 .method public stopFocusAnimation(Landroid/view/View;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
     .line 125
     invoke-virtual {p1}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;

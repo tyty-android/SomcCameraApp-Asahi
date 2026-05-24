@@ -47,6 +47,15 @@
 # direct methods
 .method constructor <init>(Ljava/lang/Class;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "enumClass"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -55,10 +64,10 @@
         }
     .end annotation
 
-    .line 116
+    .line 121
     invoke-direct {p0}, Lcom/google/common/base/Converter;-><init>()V
 
-    .line 117
+    .line 122
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -74,8 +83,16 @@
 # virtual methods
 .method protected bridge synthetic doBackward(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "enumValue"
+        }
+    .end annotation
 
-    .line 111
+    .line 115
     check-cast p1, Ljava/lang/Enum;
 
     invoke-virtual {p0, p1}, Lcom/google/common/base/Enums$StringConverter;->doBackward(Ljava/lang/Enum;)Ljava/lang/String;
@@ -87,6 +104,15 @@
 
 .method protected doBackward(Ljava/lang/Enum;)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "enumValue"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)",
@@ -94,7 +120,7 @@
         }
     .end annotation
 
-    .line 127
+    .line 132
     invoke-virtual {p1}, Ljava/lang/Enum;->name()Ljava/lang/String;
 
     move-result-object p0
@@ -104,6 +130,15 @@
 
 .method protected doForward(Ljava/lang/String;)Ljava/lang/Enum;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -112,7 +147,7 @@
         }
     .end annotation
 
-    .line 122
+    .line 127
     iget-object p0, p0, Lcom/google/common/base/Enums$StringConverter;->enumClass:Ljava/lang/Class;
 
     invoke-static {p0, p1}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -124,8 +159,16 @@
 
 .method protected bridge synthetic doForward(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 111
+    .line 115
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/google/common/base/Enums$StringConverter;->doForward(Ljava/lang/String;)Ljava/lang/Enum;
@@ -138,19 +181,27 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 132
+    .line 137
     instance-of v0, p1, Lcom/google/common/base/Enums$StringConverter;
 
     if-eqz v0, :cond_0
 
-    .line 133
+    .line 138
     check-cast p1, Lcom/google/common/base/Enums$StringConverter;
 
-    .line 134
+    .line 139
     iget-object p0, p0, Lcom/google/common/base/Enums$StringConverter;->enumClass:Ljava/lang/Class;
 
     iget-object p1, p1, Lcom/google/common/base/Enums$StringConverter;->enumClass:Ljava/lang/Class;
@@ -170,7 +221,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 141
+    .line 146
     iget-object p0, p0, Lcom/google/common/base/Enums$StringConverter;->enumClass:Ljava/lang/Class;
 
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
@@ -183,32 +234,18 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 146
+    .line 151
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "Enums.stringConverter("
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
     iget-object p0, p0, Lcom/google/common/base/Enums$StringConverter;->enumClass:Ljava/lang/Class;
 
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object p0
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, 0x1d
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v0, "Enums.stringConverter("
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

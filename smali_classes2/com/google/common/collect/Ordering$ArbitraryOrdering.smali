@@ -41,10 +41,10 @@
 .method constructor <init>()V
     .locals 2
 
-    .line 323
+    .line 337
     invoke-direct {p0}, Lcom/google/common/collect/Ordering;-><init>()V
 
-    .line 325
+    .line 339
     new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
 
     const/4 v1, 0x0
@@ -53,12 +53,12 @@
 
     iput-object v0, p0, Lcom/google/common/collect/Ordering$ArbitraryOrdering;->counter:Ljava/util/concurrent/atomic/AtomicInteger;
 
-    .line 326
+    .line 340
     new-instance v0, Lcom/google/common/collect/MapMaker;
 
     invoke-direct {v0}, Lcom/google/common/collect/MapMaker;-><init>()V
 
-    .line 327
+    .line 341
     invoke-static {v0}, Lcom/google/common/collect/Platform;->tryWeakKeys(Lcom/google/common/collect/MapMaker;)Lcom/google/common/collect/MapMaker;
 
     move-result-object v0
@@ -74,8 +74,16 @@
 
 .method private getUid(Ljava/lang/Object;)Ljava/lang/Integer;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
-    .line 330
+    .line 344
     iget-object v0, p0, Lcom/google/common/collect/Ordering$ArbitraryOrdering;->uids:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {v0, p1}, Ljava/util/concurrent/ConcurrentMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -86,7 +94,7 @@
 
     if-nez v0, :cond_0
 
-    .line 335
+    .line 349
     iget-object v0, p0, Lcom/google/common/collect/Ordering$ArbitraryOrdering;->counter:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
@@ -97,7 +105,7 @@
 
     move-result-object v0
 
-    .line 336
+    .line 350
     iget-object p0, p0, Lcom/google/common/collect/Ordering$ArbitraryOrdering;->uids:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {p0, p1, v0}, Ljava/util/concurrent/ConcurrentMap;->putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -118,6 +126,24 @@
 # virtual methods
 .method public compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 4
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "left",
+            "right"
+        }
+    .end annotation
 
     if-ne p1, p2, :cond_0
 
@@ -139,13 +165,13 @@
 
     return v1
 
-    .line 353
+    .line 367
     :cond_2
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Ordering$ArbitraryOrdering;->identityHashCode(Ljava/lang/Object;)I
 
     move-result v2
 
-    .line 354
+    .line 368
     invoke-virtual {p0, p2}, Lcom/google/common/collect/Ordering$ArbitraryOrdering;->identityHashCode(Ljava/lang/Object;)I
 
     move-result v3
@@ -162,7 +188,7 @@
     :goto_0
     return v0
 
-    .line 360
+    .line 374
     :cond_4
     invoke-direct {p0, p1}, Lcom/google/common/collect/Ordering$ArbitraryOrdering;->getUid(Ljava/lang/Object;)Ljava/lang/Integer;
 
@@ -180,7 +206,7 @@
 
     return p0
 
-    .line 362
+    .line 376
     :cond_5
     new-instance p0, Ljava/lang/AssertionError;
 
@@ -191,8 +217,16 @@
 
 .method identityHashCode(Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 381
+    .line 395
     invoke-static {p1}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
 
     move-result p0
@@ -203,7 +237,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 369
+    .line 383
     const-string p0, "Ordering.arbitrary()"
 
     return-object p0

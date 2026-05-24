@@ -38,7 +38,7 @@
 .method private static synthetic $values()[Lcom/google/common/util/concurrent/SequentialExecutor$WorkerRunningState;
     .locals 4
 
-    .line 53
+    .line 57
     sget-object v0, Lcom/google/common/util/concurrent/SequentialExecutor$WorkerRunningState;->IDLE:Lcom/google/common/util/concurrent/SequentialExecutor$WorkerRunningState;
 
     sget-object v1, Lcom/google/common/util/concurrent/SequentialExecutor$WorkerRunningState;->QUEUING:Lcom/google/common/util/concurrent/SequentialExecutor$WorkerRunningState;
@@ -57,7 +57,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 55
+    .line 59
     new-instance v0, Lcom/google/common/util/concurrent/SequentialExecutor$WorkerRunningState;
 
     const-string v1, "IDLE"
@@ -68,7 +68,7 @@
 
     sput-object v0, Lcom/google/common/util/concurrent/SequentialExecutor$WorkerRunningState;->IDLE:Lcom/google/common/util/concurrent/SequentialExecutor$WorkerRunningState;
 
-    .line 57
+    .line 61
     new-instance v0, Lcom/google/common/util/concurrent/SequentialExecutor$WorkerRunningState;
 
     const-string v1, "QUEUING"
@@ -79,7 +79,7 @@
 
     sput-object v0, Lcom/google/common/util/concurrent/SequentialExecutor$WorkerRunningState;->QUEUING:Lcom/google/common/util/concurrent/SequentialExecutor$WorkerRunningState;
 
-    .line 59
+    .line 63
     new-instance v0, Lcom/google/common/util/concurrent/SequentialExecutor$WorkerRunningState;
 
     const-string v1, "QUEUED"
@@ -90,7 +90,7 @@
 
     sput-object v0, Lcom/google/common/util/concurrent/SequentialExecutor$WorkerRunningState;->QUEUED:Lcom/google/common/util/concurrent/SequentialExecutor$WorkerRunningState;
 
-    .line 60
+    .line 64
     new-instance v0, Lcom/google/common/util/concurrent/SequentialExecutor$WorkerRunningState;
 
     const-string v1, "RUNNING"
@@ -101,7 +101,7 @@
 
     sput-object v0, Lcom/google/common/util/concurrent/SequentialExecutor$WorkerRunningState;->RUNNING:Lcom/google/common/util/concurrent/SequentialExecutor$WorkerRunningState;
 
-    .line 53
+    .line 57
     invoke-static {}, Lcom/google/common/util/concurrent/SequentialExecutor$WorkerRunningState;->$values()[Lcom/google/common/util/concurrent/SequentialExecutor$WorkerRunningState;
 
     move-result-object v0
@@ -113,13 +113,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 53
+    .line 57
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -127,8 +138,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/util/concurrent/SequentialExecutor$WorkerRunningState;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 53
+    .line 57
     const-class v0, Lcom/google/common/util/concurrent/SequentialExecutor$WorkerRunningState;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -143,7 +162,7 @@
 .method public static values()[Lcom/google/common/util/concurrent/SequentialExecutor$WorkerRunningState;
     .locals 1
 
-    .line 53
+    .line 57
     sget-object v0, Lcom/google/common/util/concurrent/SequentialExecutor$WorkerRunningState;->$VALUES:[Lcom/google/common/util/concurrent/SequentialExecutor$WorkerRunningState;
 
     invoke-virtual {v0}, [Lcom/google/common/util/concurrent/SequentialExecutor$WorkerRunningState;->clone()Ljava/lang/Object;

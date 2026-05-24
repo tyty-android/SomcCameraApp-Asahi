@@ -21,11 +21,21 @@
 # direct methods
 .method public constructor <init>(Lcom/sonymobile/android/media/internal/Track;Landroid/os/Looper;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "looper"
+        }
+    .end annotation
 
-    .line 344
+    .line 321
     iput-object p1, p0, Lcom/sonymobile/android/media/internal/Track$EventHandler;->this$0:Lcom/sonymobile/android/media/internal/Track;
 
-    .line 345
+    .line 322
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     return-void
@@ -35,43 +45,51 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "msg"
+        }
+    .end annotation
 
-    .line 350
+    .line 327
     iget v0, p1, Landroid/os/Message;->what:I
 
     packed-switch v0, :pswitch_data_0
 
     goto/16 :goto_0
 
-    .line 397
+    .line 374
     :pswitch_0
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/Track$EventHandler;->this$0:Lcom/sonymobile/android/media/internal/Track;
 
     invoke-virtual {p0}, Lcom/sonymobile/android/media/internal/Track;->doReset()V
 
-    .line 399
+    .line 376
     iget-object p0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast p0, Landroid/os/Handler;
 
-    .line 400
+    .line 377
     invoke-virtual {p0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
     move-result-object p0
 
-    .line 401
+    .line 378
     new-instance p1, Ljava/lang/Object;
 
     invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 402
+    .line 379
     invoke-virtual {p0}, Landroid/os/Message;->sendToTarget()V
 
     goto :goto_0
 
-    .line 393
+    .line 370
     :pswitch_1
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/Track$EventHandler;->this$0:Lcom/sonymobile/android/media/internal/Track;
 
@@ -83,7 +101,7 @@
 
     goto :goto_0
 
-    .line 352
+    .line 329
     :pswitch_2
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/Track$EventHandler;->this$0:Lcom/sonymobile/android/media/internal/Track;
 
@@ -91,114 +109,114 @@
 
     goto :goto_0
 
-    .line 384
+    .line 361
     :pswitch_3
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/Track$EventHandler;->this$0:Lcom/sonymobile/android/media/internal/Track;
 
     invoke-virtual {p0}, Lcom/sonymobile/android/media/internal/Track;->doRelease()V
 
-    .line 386
+    .line 363
     iget-object p0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast p0, Landroid/os/Handler;
 
-    .line 387
+    .line 364
     invoke-virtual {p0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
     move-result-object p0
 
-    .line 388
+    .line 365
     new-instance p1, Ljava/lang/Object;
 
     invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 389
+    .line 366
     invoke-virtual {p0}, Landroid/os/Message;->sendToTarget()V
 
     goto :goto_0
 
-    .line 375
+    .line 352
     :pswitch_4
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/Track$EventHandler;->this$0:Lcom/sonymobile/android/media/internal/Track;
 
     invoke-virtual {p0}, Lcom/sonymobile/android/media/internal/Track;->doPrepare()V
 
-    .line 377
+    .line 354
     iget-object p0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast p0, Landroid/os/Handler;
 
-    .line 378
+    .line 355
     invoke-virtual {p0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
     move-result-object p0
 
-    .line 379
+    .line 356
     new-instance p1, Ljava/lang/Object;
 
     invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 380
+    .line 357
     invoke-virtual {p0}, Landroid/os/Message;->sendToTarget()V
 
     goto :goto_0
 
-    .line 365
+    .line 342
     :pswitch_5
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/Track$EventHandler;->this$0:Lcom/sonymobile/android/media/internal/Track;
 
     invoke-virtual {p0}, Lcom/sonymobile/android/media/internal/Track;->doStop()V
 
-    .line 367
+    .line 344
     iget-object p0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast p0, Landroid/os/Handler;
 
-    .line 368
+    .line 345
     invoke-virtual {p0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
     move-result-object p0
 
-    .line 369
+    .line 346
     new-instance p1, Ljava/lang/Object;
 
     invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 370
+    .line 347
     invoke-virtual {p0}, Landroid/os/Message;->sendToTarget()V
 
     goto :goto_0
 
-    .line 356
+    .line 333
     :pswitch_6
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/Track$EventHandler;->this$0:Lcom/sonymobile/android/media/internal/Track;
 
     invoke-virtual {p0}, Lcom/sonymobile/android/media/internal/Track;->doStart()V
 
-    .line 358
+    .line 335
     iget-object p0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast p0, Landroid/os/Handler;
 
-    .line 359
+    .line 336
     invoke-virtual {p0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
     move-result-object p0
 
-    .line 360
+    .line 337
     new-instance p1, Ljava/lang/Object;
 
     invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 361
+    .line 338
     invoke-virtual {p0}, Landroid/os/Message;->sendToTarget()V
 
     :goto_0

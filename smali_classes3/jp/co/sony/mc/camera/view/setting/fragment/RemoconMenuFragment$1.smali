@@ -21,6 +21,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 326
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment$1;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;
@@ -34,6 +42,16 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "intent"
+        }
+    .end annotation
 
     .line 330
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;

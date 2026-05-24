@@ -29,8 +29,18 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/FluentIterable$3;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "size"
+        }
+    .end annotation
 
-    .line 296
+    .line 299
     iput-object p1, p0, Lcom/google/common/collect/FluentIterable$3$1;->this$0:Lcom/google/common/collect/FluentIterable$3;
 
     invoke-direct {p0, p2}, Lcom/google/common/collect/AbstractIndexedListIterator;-><init>(I)V
@@ -42,8 +52,16 @@
 # virtual methods
 .method public bridge synthetic get(I)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "i"
+        }
+    .end annotation
 
-    .line 296
+    .line 299
     invoke-virtual {p0, p1}, Lcom/google/common/collect/FluentIterable$3$1;->get(I)Ljava/util/Iterator;
 
     move-result-object p0
@@ -53,6 +71,15 @@
 
 .method public get(I)Ljava/util/Iterator;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "i"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -61,7 +88,7 @@
         }
     .end annotation
 
-    .line 299
+    .line 302
     iget-object p0, p0, Lcom/google/common/collect/FluentIterable$3$1;->this$0:Lcom/google/common/collect/FluentIterable$3;
 
     iget-object p0, p0, Lcom/google/common/collect/FluentIterable$3;->val$inputs:[Ljava/lang/Iterable;

@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 550
+    .line 508
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$4;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,9 +44,16 @@
 
 # virtual methods
 .method public onReleasedKeyEventHandling()V
-    .locals 3
+    .locals 4
 
-    .line 553
+    .line 511
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$4;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
+
+    const/4 v1, 0x0
+
+    invoke-static {v0, v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fputmAcceptedKeyEvent(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventSource;)V
+
+    .line 512
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$4;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmIsEventRunning(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/EventProcedure$EventSource;
@@ -49,25 +64,23 @@
 
     const/4 v0, 0x1
 
-    .line 554
+    .line 513
     new-array v0, v0, [Ljava/lang/String;
 
-    const/4 v1, 0x0
+    const/4 v2, 0x0
 
-    const-string v2, "mIsEventRunning is not null but keyEventHandling was released."
+    const-string v3, "mIsEventRunning is not null but keyEventHandling was released."
 
-    aput-object v2, v0, v1
+    aput-object v3, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 555
+    .line 514
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$4;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
-
-    const/4 v1, 0x0
 
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fputmIsEventRunning(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/view/EventProcedure$EventSource;)V
 
-    .line 556
+    .line 515
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$4;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmUserOperationNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/UserOperationListener;
@@ -76,7 +89,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 557
+    .line 516
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$4;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmUserOperationNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/UserOperationListener;

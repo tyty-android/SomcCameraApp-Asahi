@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1053
+    .line 1283
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,6 +31,17 @@
 # virtual methods
 .method public getValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -42,11 +53,11 @@
         }
     .end annotation
 
-    .line 1057
+    .line 1287
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1058
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetWindNoiseReduction(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/WindNoiseReduction;
+    .line 1288
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetSubPreviewSurfaceSize(Ljp/co/sony/mc/camera/setting/CameraSettings;)[Landroid/util/Size;
 
     move-result-object p0
 

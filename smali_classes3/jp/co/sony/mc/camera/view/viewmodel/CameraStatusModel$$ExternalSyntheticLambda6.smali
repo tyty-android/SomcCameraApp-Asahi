@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements Lkotlin/jvm/functions/Function4;
 
 
 # direct methods
@@ -18,13 +18,35 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
-    check-cast p1, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
+    check-cast p1, Ljava/lang/Boolean;
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->$r8$lambda$WhLtYvw3vSg19EuG1VP8JMMYpq0(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)Z
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
+
+    check-cast p2, Ljava/lang/Boolean;
+
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    check-cast p3, Ljava/lang/Boolean;
+
+    invoke-virtual {p3}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p2
+
+    check-cast p4, Ljava/lang/Boolean;
+
+    invoke-virtual {p4}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p3
+
+    invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->$r8$lambda$j0cibCpLmdqb3m9aaZCJ_GIk4gA(ZZZZ)Z
 
     move-result p0
 

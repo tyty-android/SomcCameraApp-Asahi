@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 8331
+    .line 8017
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$6;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,8 +45,20 @@
 # virtual methods
 .method public onDetected(Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetectorInterface$DetectResultInterface;II)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "result",
+            "detectionWidth",
+            "detectionHeight"
+        }
+    .end annotation
 
-    .line 8336
+    .line 8022
     invoke-interface {p1}, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetectorInterface$DetectResultInterface;->getStatus()Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetectorInterface$DetectResultInterface$HandStatus;
 
     move-result-object v0
@@ -47,24 +67,24 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 8338
+    .line 8024
     new-instance v0, Ljp/co/sony/mc/camera/CameraStatusNotifier$HandDetectionResult;
 
-    .line 8339
+    .line 8025
     invoke-interface {p1}, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetectorInterface$DetectResultInterface;->getArea()Landroid/graphics/Rect;
 
     move-result-object v1
 
     invoke-direct {v0, v1, p2, p3}, Ljp/co/sony/mc/camera/CameraStatusNotifier$HandDetectionResult;-><init>(Landroid/graphics/Rect;II)V
 
-    .line 8340
+    .line 8026
     sget-boolean p2, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz p2, :cond_0
 
     const/4 p2, 0x1
 
-    .line 8341
+    .line 8027
     new-array p2, p2, [Ljava/lang/String;
 
     new-instance p3, Ljava/lang/StringBuilder;
@@ -91,7 +111,7 @@
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 8343
+    .line 8029
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$6;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 

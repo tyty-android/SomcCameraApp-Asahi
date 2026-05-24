@@ -68,7 +68,7 @@
         }
     .end annotation
 
-    .line 120
+    .line 123
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$1$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->access$getCameraSettingsModel$p(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;)Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
@@ -93,7 +93,7 @@
 
     if-eqz p2, :cond_1
 
-    .line 121
+    .line 124
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$1$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->access$get_isFramingAssistEnabled$p(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;)Landroidx/lifecycle/MutableLiveData;
@@ -108,14 +108,14 @@
 
     invoke-virtual {p2, v0}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
-    .line 122
+    .line 125
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 123
+    .line 126
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$1$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->access$getHandler$p(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;)Landroid/os/Handler;
@@ -130,14 +130,14 @@
 
     invoke-virtual {p1, p2}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 124
+    .line 127
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$1$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->changeToActionMode()V
 
     goto :goto_0
 
-    .line 126
+    .line 129
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$1$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;
 
@@ -145,7 +145,7 @@
 
     move-result-object p1
 
-    .line 127
+    .line 130
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$1$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->access$getEnableFramingAssistTask$p(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;)Ljava/lang/Runnable;
@@ -154,14 +154,14 @@
 
     const-wide/16 v0, 0x3e8
 
-    .line 126
+    .line 129
     invoke-virtual {p1, p0, v0, v1}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
     move-result p0
 
     invoke-static {p0}, Lkotlin/coroutines/jvm/internal/Boxing;->boxBoolean(Z)Ljava/lang/Boolean;
 
-    .line 132
+    .line 135
     :cond_1
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -172,7 +172,7 @@
 .method public bridge synthetic emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
 
-    .line 119
+    .line 122
     check-cast p1, Ljava/lang/Boolean;
 
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$1$1;->emit(Ljava/lang/Boolean;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;

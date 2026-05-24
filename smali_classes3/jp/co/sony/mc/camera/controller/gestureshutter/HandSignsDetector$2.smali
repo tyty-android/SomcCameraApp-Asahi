@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 204
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector$2;->this$0:Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector;
@@ -37,6 +45,18 @@
 # virtual methods
 .method public onReceived(Ljava/nio/ByteBuffer;ILandroid/graphics/Rect;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "byteBuffer",
+            "imageFormat",
+            "size"
+        }
+    .end annotation
 
     .line 208
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector$2;->this$0:Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector;

@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/base/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<T:",
@@ -33,7 +36,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 27
+    .line 28
     new-instance v0, Lcom/google/common/base/Absent;
 
     invoke-direct {v0}, Lcom/google/common/base/Absent;-><init>()V
@@ -46,7 +49,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 34
+    .line 35
     invoke-direct {p0}, Lcom/google/common/base/Optional;-><init>()V
 
     return-void
@@ -55,7 +58,7 @@
 .method private readResolve()Ljava/lang/Object;
     .locals 0
 
-    .line 96
+    .line 97
     sget-object p0, Lcom/google/common/base/Absent;->INSTANCE:Lcom/google/common/base/Absent;
 
     return-object p0
@@ -73,7 +76,7 @@
         }
     .end annotation
 
-    .line 31
+    .line 32
     sget-object v0, Lcom/google/common/base/Absent;->INSTANCE:Lcom/google/common/base/Absent;
 
     return-object v0
@@ -91,7 +94,7 @@
         }
     .end annotation
 
-    .line 71
+    .line 72
     invoke-static {}, Ljava/util/Collections;->emptySet()Ljava/util/Set;
 
     move-result-object p0
@@ -102,9 +105,17 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
     if-ne p1, p0, :cond_0
 
@@ -127,7 +138,7 @@
         }
     .end annotation
 
-    .line 43
+    .line 44
     new-instance p0, Ljava/lang/IllegalStateException;
 
     const-string v0, "Optional.get() cannot be called on an absent value"
@@ -155,6 +166,15 @@
 
 .method public or(Lcom/google/common/base/Optional;)Lcom/google/common/base/Optional;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "secondChoice"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -165,7 +185,7 @@
         }
     .end annotation
 
-    .line 54
+    .line 55
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -177,6 +197,15 @@
 
 .method public or(Lcom/google/common/base/Supplier;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "supplier"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -185,14 +214,14 @@
         }
     .end annotation
 
-    .line 60
+    .line 61
     invoke-interface {p1}, Lcom/google/common/base/Supplier;->get()Ljava/lang/Object;
 
     move-result-object p0
 
     const-string p1, "use Optional.orNull() instead of a Supplier that returns null"
 
-    .line 59
+    .line 60
     invoke-static {p0, p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -202,13 +231,22 @@
 
 .method public or(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "defaultValue"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)TT;"
         }
     .end annotation
 
-    .line 48
+    .line 49
     const-string p0, "use Optional.orNull() instead of Optional.or(null)"
 
     invoke-static {p1, p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -226,7 +264,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
     const/4 p0, 0x0
@@ -237,7 +275,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 92
+    .line 93
     const-string p0, "Optional.absent()"
 
     return-object p0
@@ -245,6 +283,15 @@
 
 .method public transform(Lcom/google/common/base/Function;)Lcom/google/common/base/Optional;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "function"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<V:",
@@ -257,10 +304,10 @@
         }
     .end annotation
 
-    .line 76
+    .line 77
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 77
+    .line 78
     invoke-static {}, Lcom/google/common/base/Optional;->absent()Lcom/google/common/base/Optional;
 
     move-result-object p0

@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/util/concurrent/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;
@@ -13,7 +16,7 @@
 
 # instance fields
 .field private volatile mutexDoNotUseDirectly:Ljava/lang/Object;
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -23,11 +26,19 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stopwatch"
+        }
+    .end annotation
 
-    .line 202
+    .line 237
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 203
+    .line 238
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -41,8 +52,18 @@
 
 .method private canAcquire(JJ)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "nowMicros",
+            "timeoutMicros"
+        }
+    .end annotation
 
-    .line 364
+    .line 433
     invoke-virtual {p0, p1, p2}, Lcom/google/common/util/concurrent/RateLimiter;->queryEarliestAvailable(J)J
 
     move-result-wide v0
@@ -66,6 +87,14 @@
 
 .method private static checkPermits(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "permits"
+        }
+    .end annotation
 
     if-lez p0, :cond_0
 
@@ -76,7 +105,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 432
+    .line 501
     :goto_0
     const-string v1, "Requested permits (%s) must be positive"
 
@@ -87,8 +116,16 @@
 
 .method public static create(D)Lcom/google/common/util/concurrent/RateLimiter;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "permitsPerSecond"
+        }
+    .end annotation
 
-    .line 127
+    .line 132
     invoke-static {}, Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;->createFromSystemTimer()Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;
 
     move-result-object v0
@@ -102,6 +139,18 @@
 
 .method public static create(DJLjava/util/concurrent/TimeUnit;)Lcom/google/common/util/concurrent/RateLimiter;
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "permitsPerSecond",
+            "warmupPeriod",
+            "unit"
+        }
+    .end annotation
 
     const-wide/16 v0, 0x0
 
@@ -116,7 +165,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 163
+    .line 198
     :goto_0
     const-string v1, "warmupPeriod must not be negative: %s"
 
@@ -124,7 +173,7 @@
 
     const-wide/high16 v7, 0x4008000000000000L    # 3.0
 
-    .line 165
+    .line 200
     invoke-static {}, Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;->createFromSystemTimer()Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;
 
     move-result-object v9
@@ -135,7 +184,7 @@
 
     move-object v6, p4
 
-    .line 164
+    .line 199
     invoke-static/range {v2 .. v9}, Lcom/google/common/util/concurrent/RateLimiter;->create(DJLjava/util/concurrent/TimeUnit;DLcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;)Lcom/google/common/util/concurrent/RateLimiter;
 
     move-result-object p0
@@ -145,8 +194,24 @@
 
 .method static create(DJLjava/util/concurrent/TimeUnit;DLcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;)Lcom/google/common/util/concurrent/RateLimiter;
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "permitsPerSecond",
+            "warmupPeriod",
+            "unit",
+            "coldFactor",
+            "stopwatch"
+        }
+    .end annotation
 
-    .line 175
+    .line 210
     new-instance v7, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothWarmingUp;
 
     move-object v0, v7
@@ -161,7 +226,7 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothWarmingUp;-><init>(Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;JLjava/util/concurrent/TimeUnit;D)V
 
-    .line 176
+    .line 211
     invoke-virtual {v7, p0, p1}, Lcom/google/common/util/concurrent/RateLimiter;->setRate(D)V
 
     return-object v7
@@ -169,45 +234,82 @@
 
 .method static create(DLcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;)Lcom/google/common/util/concurrent/RateLimiter;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "permitsPerSecond",
+            "stopwatch"
+        }
+    .end annotation
 
-    .line 132
+    .line 137
     new-instance v0, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothBursty;
 
     const-wide/high16 v1, 0x3ff0000000000000L    # 1.0
 
     invoke-direct {v0, p2, v1, v2}, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothBursty;-><init>(Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;D)V
 
-    .line 133
+    .line 138
     invoke-virtual {v0, p0, p1}, Lcom/google/common/util/concurrent/RateLimiter;->setRate(D)V
 
     return-object v0
 .end method
 
+.method public static create(DLjava/time/Duration;)Lcom/google/common/util/concurrent/RateLimiter;
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "permitsPerSecond",
+            "warmupPeriod"
+        }
+    .end annotation
+
+    .line 169
+    invoke-static {p2}, Lcom/google/common/util/concurrent/Internal;->toNanosSaturated(Ljava/time/Duration;)J
+
+    move-result-wide v0
+
+    sget-object p2, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
+
+    invoke-static {p0, p1, v0, v1, p2}, Lcom/google/common/util/concurrent/RateLimiter;->create(DJLjava/util/concurrent/TimeUnit;)Lcom/google/common/util/concurrent/RateLimiter;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method private mutex()Ljava/lang/Object;
     .locals 1
 
-    .line 190
+    .line 225
     iget-object v0, p0, Lcom/google/common/util/concurrent/RateLimiter;->mutexDoNotUseDirectly:Ljava/lang/Object;
 
     if-nez v0, :cond_1
 
-    .line 192
+    .line 227
     monitor-enter p0
 
-    .line 193
+    .line 228
     :try_start_0
     iget-object v0, p0, Lcom/google/common/util/concurrent/RateLimiter;->mutexDoNotUseDirectly:Ljava/lang/Object;
 
     if-nez v0, :cond_0
 
-    .line 195
+    .line 230
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     iput-object v0, p0, Lcom/google/common/util/concurrent/RateLimiter;->mutexDoNotUseDirectly:Ljava/lang/Object;
 
-    .line 197
+    .line 232
     :cond_0
     monitor-exit p0
 
@@ -234,7 +336,7 @@
 
     const/4 v0, 0x1
 
-    .line 259
+    .line 293
     invoke-virtual {p0, v0}, Lcom/google/common/util/concurrent/RateLimiter;->acquire(I)D
 
     move-result-wide v0
@@ -244,13 +346,21 @@
 
 .method public acquire(I)D
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "permits"
+        }
+    .end annotation
 
-    .line 273
+    .line 307
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/RateLimiter;->reserve(I)J
 
     move-result-wide v0
 
-    .line 274
+    .line 308
     iget-object p0, p0, Lcom/google/common/util/concurrent/RateLimiter;->stopwatch:Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;
 
     invoke-virtual {p0, v0, v1}, Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;->sleepMicrosUninterruptibly(J)V
@@ -261,7 +371,7 @@
 
     mul-double/2addr v0, p0
 
-    .line 275
+    .line 309
     sget-object p0, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     const-wide/16 v2, 0x1
@@ -281,19 +391,29 @@
 .end method
 
 .method abstract doSetRate(DJ)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "permitsPerSecond",
+            "nowMicros"
+        }
+    .end annotation
 .end method
 
 .method public final getRate()D
     .locals 3
 
-    .line 241
+    .line 275
     invoke-direct {p0}, Lcom/google/common/util/concurrent/RateLimiter;->mutex()Ljava/lang/Object;
 
     move-result-object v0
 
     monitor-enter v0
 
-    .line 242
+    .line 276
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/RateLimiter;->doGetRate()D
 
@@ -306,7 +426,7 @@
     :catchall_0
     move-exception p0
 
-    .line 243
+    .line 277
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -315,22 +435,38 @@
 .end method
 
 .method abstract queryEarliestAvailable(J)J
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "nowMicros"
+        }
+    .end annotation
 .end method
 
 .method final reserve(I)J
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "permits"
+        }
+    .end annotation
 
-    .line 285
+    .line 319
     invoke-static {p1}, Lcom/google/common/util/concurrent/RateLimiter;->checkPermits(I)V
 
-    .line 286
+    .line 320
     invoke-direct {p0}, Lcom/google/common/util/concurrent/RateLimiter;->mutex()Ljava/lang/Object;
 
     move-result-object v0
 
     monitor-enter v0
 
-    .line 287
+    .line 321
     :try_start_0
     iget-object v1, p0, Lcom/google/common/util/concurrent/RateLimiter;->stopwatch:Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;
 
@@ -349,7 +485,7 @@
     :catchall_0
     move-exception p0
 
-    .line 288
+    .line 322
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -359,8 +495,18 @@
 
 .method final reserveAndGetWaitLength(IJ)J
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "permits",
+            "nowMicros"
+        }
+    .end annotation
 
-    .line 373
+    .line 442
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/common/util/concurrent/RateLimiter;->reserveEarliestAvailable(IJ)J
 
     move-result-wide p0
@@ -369,7 +515,7 @@
 
     const-wide/16 p2, 0x0
 
-    .line 374
+    .line 443
     invoke-static {p0, p1, p2, p3}, Ljava/lang/Math;->max(JJ)J
 
     move-result-wide p0
@@ -378,23 +524,34 @@
 .end method
 
 .method abstract reserveEarliestAvailable(IJ)J
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "permits",
+            "nowMicros"
+        }
+    .end annotation
 .end method
 
 .method public final setRate(D)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "permitsPerSecond"
+        }
+    .end annotation
 
     const-wide/16 v0, 0x0
 
     cmpl-double v0, p1, v0
 
     if-lez v0, :cond_0
-
-    .line 226
-    invoke-static {p1, p2}, Ljava/lang/Double;->isNaN(D)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
 
     const/4 v0, 0x1
 
@@ -403,20 +560,20 @@
     :cond_0
     const/4 v0, 0x0
 
+    .line 260
     :goto_0
     const-string v1, "rate must be positive"
 
-    .line 225
     invoke-static {v0, v1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/Object;)V
 
-    .line 227
+    .line 261
     invoke-direct {p0}, Lcom/google/common/util/concurrent/RateLimiter;->mutex()Ljava/lang/Object;
 
     move-result-object v0
 
     monitor-enter v0
 
-    .line 228
+    .line 262
     :try_start_0
     iget-object v1, p0, Lcom/google/common/util/concurrent/RateLimiter;->stopwatch:Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;
 
@@ -426,7 +583,7 @@
 
     invoke-virtual {p0, p1, p2, v1, v2}, Lcom/google/common/util/concurrent/RateLimiter;->doSetRate(DJ)V
 
-    .line 229
+    .line 263
     monitor-exit v0
 
     return-void
@@ -444,7 +601,7 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 396
+    .line 465
     sget-object v0, Ljava/util/Locale;->ROOT:Ljava/util/Locale;
 
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/RateLimiter;->getRate()D
@@ -473,7 +630,7 @@
 
     const-wide/16 v0, 0x0
 
-    .line 332
+    .line 384
     sget-object v2, Ljava/util/concurrent/TimeUnit;->MICROSECONDS:Ljava/util/concurrent/TimeUnit;
 
     const/4 v3, 0x1
@@ -487,10 +644,18 @@
 
 .method public tryAcquire(I)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "permits"
+        }
+    .end annotation
 
     const-wide/16 v0, 0x0
 
-    .line 319
+    .line 371
     sget-object v2, Ljava/util/concurrent/TimeUnit;->MICROSECONDS:Ljava/util/concurrent/TimeUnit;
 
     invoke-virtual {p0, p1, v0, v1, v2}, Lcom/google/common/util/concurrent/RateLimiter;->tryAcquire(IJLjava/util/concurrent/TimeUnit;)Z
@@ -502,8 +667,20 @@
 
 .method public tryAcquire(IJLjava/util/concurrent/TimeUnit;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "permits",
+            "timeout",
+            "unit"
+        }
+    .end annotation
 
-    .line 348
+    .line 417
     invoke-virtual {p4, p2, p3}, Ljava/util/concurrent/TimeUnit;->toMicros(J)J
 
     move-result-wide p2
@@ -514,17 +691,17 @@
 
     move-result-wide p2
 
-    .line 349
+    .line 418
     invoke-static {p1}, Lcom/google/common/util/concurrent/RateLimiter;->checkPermits(I)V
 
-    .line 351
+    .line 420
     invoke-direct {p0}, Lcom/google/common/util/concurrent/RateLimiter;->mutex()Ljava/lang/Object;
 
     move-result-object p4
 
     monitor-enter p4
 
-    .line 352
+    .line 421
     :try_start_0
     iget-object v0, p0, Lcom/google/common/util/concurrent/RateLimiter;->stopwatch:Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;
 
@@ -532,32 +709,32 @@
 
     move-result-wide v0
 
-    .line 353
+    .line 422
     invoke-direct {p0, v0, v1, p2, p3}, Lcom/google/common/util/concurrent/RateLimiter;->canAcquire(JJ)Z
 
     move-result p2
 
     if-nez p2, :cond_0
 
-    .line 354
+    .line 423
     monitor-exit p4
 
     const/4 p0, 0x0
 
     return p0
 
-    .line 356
+    .line 425
     :cond_0
     invoke-virtual {p0, p1, v0, v1}, Lcom/google/common/util/concurrent/RateLimiter;->reserveAndGetWaitLength(IJ)J
 
     move-result-wide p1
 
-    .line 358
+    .line 427
     monitor-exit p4
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 359
+    .line 428
     iget-object p0, p0, Lcom/google/common/util/concurrent/RateLimiter;->stopwatch:Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;->sleepMicrosUninterruptibly(J)V
@@ -569,7 +746,7 @@
     :catchall_0
     move-exception p0
 
-    .line 358
+    .line 427
     :try_start_1
     monitor-exit p4
     :try_end_1
@@ -578,13 +755,77 @@
     throw p0
 .end method
 
+.method public tryAcquire(ILjava/time/Duration;)Z
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "permits",
+            "timeout"
+        }
+    .end annotation
+
+    .line 401
+    invoke-static {p2}, Lcom/google/common/util/concurrent/Internal;->toNanosSaturated(Ljava/time/Duration;)J
+
+    move-result-wide v0
+
+    sget-object p2, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
+
+    invoke-virtual {p0, p1, v0, v1, p2}, Lcom/google/common/util/concurrent/RateLimiter;->tryAcquire(IJLjava/util/concurrent/TimeUnit;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
 .method public tryAcquire(JLjava/util/concurrent/TimeUnit;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "timeout",
+            "unit"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
-    .line 305
+    .line 357
     invoke-virtual {p0, v0, p1, p2, p3}, Lcom/google/common/util/concurrent/RateLimiter;->tryAcquire(IJLjava/util/concurrent/TimeUnit;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public tryAcquire(Ljava/time/Duration;)Z
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "timeout"
+        }
+    .end annotation
+
+    .line 340
+    invoke-static {p1}, Lcom/google/common/util/concurrent/Internal;->toNanosSaturated(Ljava/time/Duration;)J
+
+    move-result-wide v0
+
+    sget-object p1, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
+
+    const/4 v2, 0x1
+
+    invoke-virtual {p0, v2, v0, v1, p1}, Lcom/google/common/util/concurrent/RateLimiter;->tryAcquire(IJLjava/util/concurrent/TimeUnit;)Z
 
     move-result p0
 

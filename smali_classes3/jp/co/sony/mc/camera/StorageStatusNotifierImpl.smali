@@ -24,6 +24,20 @@
 # virtual methods
 .method public notifyStorageStateChanged(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/Storage$StorageState;ZZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "state",
+            "storageShouldChange",
+            "inBurstMode"
+        }
+    .end annotation
 
     .line 32
     iget-object p0, p0, Ljp/co/sony/mc/camera/StorageStatusNotifierImpl;->mStorageStateListener:Ljp/co/sony/mc/camera/StorageStatusNotifier$StorageStateListener;
@@ -39,6 +53,14 @@
 
 .method public onRecordingFileSizeChanged(J)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fileSize"
+        }
+    .end annotation
 
     .line 45
     iget-object p0, p0, Ljp/co/sony/mc/camera/StorageStatusNotifierImpl;->mStorageStateListener:Ljp/co/sony/mc/camera/StorageStatusNotifier$StorageStateListener;
@@ -54,6 +76,16 @@
 
 .method public onStorageSizeChanged(Ljp/co/sony/mc/camera/storage/Storage$StorageType;J)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "availableSize"
+        }
+    .end annotation
 
     .line 39
     iget-object p0, p0, Ljp/co/sony/mc/camera/StorageStatusNotifierImpl;->mStorageStateListener:Ljp/co/sony/mc/camera/StorageStatusNotifier$StorageStateListener;
@@ -69,6 +101,14 @@
 
 .method public registerStorageStateListener(Ljp/co/sony/mc/camera/StorageStatusNotifier$StorageStateListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 22
     iput-object p1, p0, Ljp/co/sony/mc/camera/StorageStatusNotifierImpl;->mStorageStateListener:Ljp/co/sony/mc/camera/StorageStatusNotifier$StorageStateListener;

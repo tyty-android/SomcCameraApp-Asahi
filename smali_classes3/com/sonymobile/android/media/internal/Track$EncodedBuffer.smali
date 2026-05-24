@@ -27,24 +27,34 @@
 # direct methods
 .method constructor <init>(ILandroid/media/MediaCodec$BufferInfo;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "info"
+        }
+    .end annotation
 
-    .line 277
+    .line 254
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 278
+    .line 255
     iput p1, p0, Lcom/sonymobile/android/media/internal/Track$EncodedBuffer;->bufferIndex:I
 
-    .line 279
+    .line 256
     iput-object p2, p0, Lcom/sonymobile/android/media/internal/Track$EncodedBuffer;->bufferInfo:Landroid/media/MediaCodec$BufferInfo;
 
     const/4 p1, 0x0
 
-    .line 280
+    .line 257
     iput-object p1, p0, Lcom/sonymobile/android/media/internal/Track$EncodedBuffer;->byteBuffer:Ljava/nio/ByteBuffer;
 
     const/4 p1, 0x0
 
-    .line 281
+    .line 258
     iput-boolean p1, p0, Lcom/sonymobile/android/media/internal/Track$EncodedBuffer;->containsCopiedBuffer:Z
 
     return-void

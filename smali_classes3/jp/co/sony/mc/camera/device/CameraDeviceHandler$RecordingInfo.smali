@@ -26,12 +26,12 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 748
+    .line 807
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 750
+    .line 809
     iput v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$RecordingInfo;->mRecordingOrientation:I
 
     return-void
@@ -49,13 +49,21 @@
 # virtual methods
 .method public getRecordingOrientation(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraSessionId"
+        }
+    .end annotation
 
-    .line 766
+    .line 821
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$RecordingInfo;->mRecordingSessionId:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
 
     if-ne p1, v0, :cond_0
 
-    .line 767
+    .line 822
     iget p0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$RecordingInfo;->mRecordingOrientation:I
 
     return p0
@@ -66,19 +74,10 @@
     return p0
 .end method
 
-.method public getRecordingSessionId()Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
-    .locals 0
-
-    .line 758
-    iget-object p0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$RecordingInfo;->mRecordingSessionId:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
-
-    return-object p0
-.end method
-
 .method public isVideoRecording()Z
     .locals 0
 
-    .line 782
+    .line 837
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$RecordingInfo;->mIsVideoRecording:Z
 
     return p0
@@ -86,8 +85,16 @@
 
 .method public setRecordingOrientation(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "recordingOrientation"
+        }
+    .end annotation
 
-    .line 762
+    .line 817
     iput p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$RecordingInfo;->mRecordingOrientation:I
 
     return-void
@@ -95,8 +102,16 @@
 
 .method public setRecordingSessionId(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "recordingSessionId"
+        }
+    .end annotation
 
-    .line 754
+    .line 813
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$RecordingInfo;->mRecordingSessionId:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
 
     return-void
@@ -104,20 +119,28 @@
 
 .method public setVideoRecording(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isVideoRecording"
+        }
+    .end annotation
 
-    .line 774
+    .line 829
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$RecordingInfo;->mIsVideoRecording:Z
 
     if-nez p1, :cond_0
 
     const/4 p1, 0x0
 
-    .line 776
+    .line 831
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$RecordingInfo;->mRecordingSessionId:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
 
     const/4 p1, -0x1
 
-    .line 777
+    .line 832
     iput p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$RecordingInfo;->mRecordingOrientation:I
 
     :cond_0

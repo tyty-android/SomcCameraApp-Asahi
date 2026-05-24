@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 2125
+    .line 2347
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,6 +31,17 @@
 # virtual methods
 .method public getOptions(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -42,10 +53,10 @@
         }
     .end annotation
 
-    .line 2129
+    .line 2351
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 2130
+    .line 2352
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCapturingMode(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
@@ -54,7 +65,7 @@
 
     move-result-object p1
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;
 
     move-result-object p0
 

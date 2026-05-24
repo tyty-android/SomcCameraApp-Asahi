@@ -33,6 +33,19 @@
 # direct methods
 .method constructor <init>(Ljava/lang/Object;ILjava/lang/ref/ReferenceQueue;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "referent",
+            "index",
+            "queue"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(T",
@@ -45,10 +58,10 @@
         }
     .end annotation
 
-    .line 497
+    .line 463
     invoke-direct {p0, p1, p3}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;Ljava/lang/ref/ReferenceQueue;)V
 
-    .line 498
+    .line 464
     iput p2, p0, Lcom/google/common/util/concurrent/Striped$SmallLazyStriped$ArrayReference;->index:I
 
     return-void

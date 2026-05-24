@@ -29,8 +29,16 @@
 # direct methods
 .method constructor <init>(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "val$expectedKeys"
+        }
+    .end annotation
 
-    .line 87
+    .line 86
     iput p1, p0, Lcom/google/common/collect/MultimapBuilder$1;->val$expectedKeys:I
 
     invoke-direct {p0}, Lcom/google/common/collect/MultimapBuilder$MultimapBuilderWithKeys;-><init>()V
@@ -56,7 +64,7 @@
         }
     .end annotation
 
-    .line 90
+    .line 89
     iget p0, p0, Lcom/google/common/collect/MultimapBuilder$1;->val$expectedKeys:I
 
     invoke-static {p0}, Lcom/google/common/collect/Platform;->newHashMapWithExpectedSize(I)Ljava/util/Map;

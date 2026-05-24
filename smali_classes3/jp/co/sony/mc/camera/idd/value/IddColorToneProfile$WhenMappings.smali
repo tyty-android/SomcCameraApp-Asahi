@@ -138,6 +138,20 @@
     .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
 
     :catch_6
+    :try_start_7
+    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;->CUSTOM1:Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x8
+
+    aput v2, v0, v1
+    :try_end_7
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
+
+    :catch_7
     sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile$WhenMappings;->$EnumSwitchMapping$0:[I
 
     return-void

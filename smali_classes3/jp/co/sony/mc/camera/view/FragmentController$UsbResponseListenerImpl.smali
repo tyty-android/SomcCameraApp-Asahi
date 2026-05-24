@@ -24,8 +24,16 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 8623
+    .line 7547
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$UsbResponseListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -45,8 +53,16 @@
 # virtual methods
 .method public onDataReceived(Ljava/lang/String;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "data"
+        }
+    .end annotation
 
-    .line 8626
+    .line 7550
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     const/4 v1, 0x0
@@ -75,7 +91,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 8627
+    .line 7551
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$UsbResponseListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -101,7 +117,7 @@
 
     if-eqz p0, :cond_6
 
-    .line 8629
+    .line 7553
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p0
@@ -114,8 +130,8 @@
 
     check-cast p0, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;
 
-    .line 8632
-    sget-object p1, Ljp/co/sony/mc/camera/view/FragmentController$26;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$DisplayFlip:[I
+    .line 7556
+    sget-object p1, Ljp/co/sony/mc/camera/view/FragmentController$14;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$DisplayFlip:[I
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;->ordinal()I
 
@@ -141,32 +157,32 @@
 
     goto :goto_0
 
-    .line 8643
+    .line 7567
     :cond_1
     sget-object p1, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;->HORIZONTAL:Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;
 
     goto :goto_0
 
-    .line 8640
+    .line 7564
     :cond_2
     sget-object p1, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;->HV:Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;
 
     goto :goto_0
 
-    .line 8637
+    .line 7561
     :cond_3
     sget-object p1, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;->VERTICAL:Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;
 
     goto :goto_0
 
-    .line 8634
+    .line 7558
     :cond_4
     sget-object p1, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;->ORIGINAL:Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;
 
     :goto_0
     if-eqz p1, :cond_6
 
-    .line 8650
+    .line 7574
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_5
@@ -201,7 +217,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 8652
+    .line 7576
     :cond_5
     new-instance p0, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
@@ -213,10 +229,10 @@
 
     move-result-object p0
 
-    .line 8653
+    .line 7577
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->send()V
 
-    .line 8654
+    .line 7578
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent$Context;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent$Context;->getSet()Ljp/co/sony/mc/camera/idd/value/IddSetting;
@@ -229,20 +245,7 @@
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/idd/value/IddSetting;->setAccessaryFlip(Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;)V
 
-    .line 8656
-    sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;->getSet()Ljp/co/sony/mc/camera/idd/value/IddSetting;
-
-    move-result-object p0
-
-    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;
-
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;)V
-
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/idd/value/IddSetting;->setAccessaryFlip(Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;)V
-
-    .line 8658
+    .line 7580
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent$Context;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent$Context;->getSet()Ljp/co/sony/mc/camera/idd/value/IddSetting;
@@ -255,7 +258,7 @@
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/idd/value/IddSetting;->setAccessaryFlip(Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;)V
 
-    .line 8660
+    .line 7582
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p0
@@ -271,7 +274,7 @@
 .method public onDissmissKeyguardRequested()V
     .locals 3
 
-    .line 8699
+    .line 7619
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     const/4 v1, 0x0
@@ -288,7 +291,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 8700
+    .line 7620
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$UsbResponseListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -304,7 +307,7 @@
 .method public onUsbConnected()V
     .locals 4
 
-    .line 8668
+    .line 7590
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     const/4 v1, 0x1
@@ -321,7 +324,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 8670
+    .line 7592
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$UsbResponseListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -339,12 +342,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 8672
+    .line 7594
     const-string/jumbo v2, "somc_selfie_accessary=true"
 
     invoke-virtual {v0, v2}, Landroid/media/AudioManager;->setParameters(Ljava/lang/String;)V
 
-    .line 8675
+    .line 7597
     :cond_1
     sget-object v0, Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent$Context;
 
@@ -354,16 +357,7 @@
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->setDisplayAccessaryConnected(Z)V
 
-    .line 8676
-    sget-object v0, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;->getEnv()Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->setDisplayAccessaryConnected(Z)V
-
-    .line 8677
+    .line 7598
     sget-object v0, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent$Context;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent$Context;->getEnv()Ljp/co/sony/mc/camera/idd/value/IddEnvironment;
@@ -372,7 +366,7 @@
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->setDisplayAccessaryConnected(Z)V
 
-    .line 8678
+    .line 7599
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$UsbResponseListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmExternalDisplayFragment(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;
@@ -381,7 +375,7 @@
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->setUsbConnectionStatus(Z)V
 
-    .line 8679
+    .line 7600
     new-instance p0, Ljp/co/sony/mc/camera/idd/event/IddDeviceConnectedEvent;
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/idd/event/IddDeviceConnectedEvent;-><init>()V
@@ -400,7 +394,7 @@
 .method public onUsbDisconnected()V
     .locals 3
 
-    .line 8684
+    .line 7605
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     const/4 v1, 0x0
@@ -417,7 +411,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 8686
+    .line 7607
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$UsbResponseListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -435,12 +429,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 8688
+    .line 7609
     const-string/jumbo v2, "somc_selfie_accessary=false"
 
     invoke-virtual {v0, v2}, Landroid/media/AudioManager;->setParameters(Ljava/lang/String;)V
 
-    .line 8691
+    .line 7612
     :cond_1
     sget-object v0, Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent$Context;
 
@@ -450,16 +444,7 @@
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->setDisplayAccessaryConnected(Z)V
 
-    .line 8692
-    sget-object v0, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;->getEnv()Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->setDisplayAccessaryConnected(Z)V
-
-    .line 8693
+    .line 7613
     sget-object v0, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent$Context;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent$Context;->getEnv()Ljp/co/sony/mc/camera/idd/value/IddEnvironment;
@@ -468,7 +453,7 @@
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->setDisplayAccessaryConnected(Z)V
 
-    .line 8694
+    .line 7614
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$UsbResponseListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmExternalDisplayFragment(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;

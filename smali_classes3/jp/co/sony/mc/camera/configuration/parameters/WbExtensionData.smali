@@ -105,6 +105,14 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "in"
+        }
+    .end annotation
 
     .line 62
     invoke-direct {p0}, Ljp/co/sony/mc/camera/configuration/parameters/ExtensionData;-><init>()V
@@ -199,6 +207,21 @@
 
 .method constructor <init>(Ljava/util/HashMap;Ljava/util/HashMap;Ljava/util/HashMap;Ljava/util/HashMap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "customRatio",
+            "abGmValue",
+            "temperature",
+            "customGm"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -241,6 +264,14 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "extensionData"
+        }
+    .end annotation
 
     .line 47
     invoke-direct {p0}, Ljp/co/sony/mc/camera/configuration/parameters/ExtensionData;-><init>()V
@@ -318,6 +349,14 @@
 
 .method public static getDefaultExtensionValue(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
     .line 211
     new-instance v0, Ljava/util/HashMap;
@@ -474,6 +513,14 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
     if-eq p0, p1, :cond_1
 
@@ -545,6 +592,14 @@
 
 .method public getAbGmValue(Ljava/lang/String;)[F
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
     .line 119
     iget-object p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;->mAbGmValue:Ljava/util/HashMap;
@@ -582,6 +637,14 @@
 
 .method public getCustomGm(Ljava/lang/String;)F
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
     .line 147
     iget-object v0, p0, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;->mCustomGm:Ljava/util/HashMap;
@@ -622,6 +685,14 @@
 
 .method public getCustomRatio(Ljava/lang/String;)[I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
     .line 102
     iget-object p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;->mCustomRatio:Ljava/util/HashMap;
@@ -659,6 +730,14 @@
 
 .method public getTemperature(Ljava/lang/String;)F
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
     .line 130
     iget-object v0, p0, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;->mTemperature:Ljava/util/HashMap;
@@ -722,6 +801,16 @@
 
 .method public setAbGmValue(Ljava/lang/String;[F)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
     .line 175
     iget-object p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;->mAbGmValue:Ljava/util/HashMap;
@@ -737,6 +826,16 @@
 
 .method public setCustomGm(Ljava/lang/String;F)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
     .line 198
     iget-object v0, p0, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;->mCustomGm:Ljava/util/HashMap;
@@ -765,6 +864,16 @@
 
 .method public setCustomRatio(Ljava/lang/String;[I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
     .line 165
     iget-object p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;->mCustomRatio:Ljava/util/HashMap;
@@ -780,6 +889,16 @@
 
 .method public setTemperature(Ljava/lang/String;F)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
     .line 185
     iget-object v0, p0, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;->mTemperature:Ljava/util/HashMap;
@@ -808,6 +927,16 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dest",
+            "flags"
+        }
+    .end annotation
 
     .line 90
     iget-object p2, p0, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;->mCustomRatio:Ljava/util/HashMap;

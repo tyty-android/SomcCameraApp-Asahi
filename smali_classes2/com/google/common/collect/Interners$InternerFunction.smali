@@ -42,6 +42,15 @@
 # direct methods
 .method public constructor <init>(Lcom/google/common/collect/Interner;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "interner"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -50,10 +59,10 @@
         }
     .end annotation
 
-    .line 164
+    .line 170
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 165
+    .line 171
     iput-object p1, p0, Lcom/google/common/collect/Interners$InternerFunction;->interner:Lcom/google/common/collect/Interner;
 
     return-void
@@ -63,13 +72,22 @@
 # virtual methods
 .method public apply(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "input"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)TE;"
         }
     .end annotation
 
-    .line 170
+    .line 176
     iget-object p0, p0, Lcom/google/common/collect/Interners$InternerFunction;->interner:Lcom/google/common/collect/Interner;
 
     invoke-interface {p0, p1}, Lcom/google/common/collect/Interner;->intern(Ljava/lang/Object;)Ljava/lang/Object;
@@ -81,21 +99,33 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "other"
+        }
+    .end annotation
 
-    .line 180
+    .line 186
     instance-of v0, p1, Lcom/google/common/collect/Interners$InternerFunction;
 
     if-eqz v0, :cond_0
 
-    .line 181
+    .line 187
     check-cast p1, Lcom/google/common/collect/Interners$InternerFunction;
 
-    .line 182
+    .line 188
     iget-object p0, p0, Lcom/google/common/collect/Interners$InternerFunction;->interner:Lcom/google/common/collect/Interner;
 
     iget-object p1, p1, Lcom/google/common/collect/Interners$InternerFunction;->interner:Lcom/google/common/collect/Interner;
 
-    invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    invoke-interface {p0, p1}, Lcom/google/common/collect/Interner;->equals(Ljava/lang/Object;)Z
 
     move-result p0
 
@@ -110,10 +140,10 @@
 .method public hashCode()I
     .locals 0
 
-    .line 175
+    .line 181
     iget-object p0, p0, Lcom/google/common/collect/Interners$InternerFunction;->interner:Lcom/google/common/collect/Interner;
 
-    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
+    invoke-interface {p0}, Lcom/google/common/collect/Interner;->hashCode()I
 
     move-result p0
 

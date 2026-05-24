@@ -971,6 +971,16 @@
 
 .method private static checkArguments([BLjp/co/sony/mc/camera/mediasaving/ExifOption;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "buffer",
+            "option"
+        }
+    .end annotation
 
     if-eqz p0, :cond_5
 
@@ -1136,6 +1146,18 @@
 
 .method private static fillNullValue([BII)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "buffer",
+            "bufferPos",
+            "count"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -1159,6 +1181,16 @@
 
 .method public static generate([BLjp/co/sony/mc/camera/mediasaving/ExifOption;)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "buffer",
+            "option"
+        }
+    .end annotation
 
     .line 147
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/mediasaving/ExifFactory;->checkArguments([BLjp/co/sony/mc/camera/mediasaving/ExifOption;)V
@@ -1247,6 +1279,14 @@
 
 .method private static removeGpsInfoFromHeader([B)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "buffer"
+        }
+    .end annotation
 
     .line 374
     sget-object v0, Ljp/co/sony/mc/camera/mediasaving/ExifFactory;->APP1_HEADER:[B
@@ -1297,6 +1337,16 @@
 
 .method private static updateDateTime([BLjava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "buffer",
+            "dateTime"
+        }
+    .end annotation
 
     .line 223
     sget-object v0, Ljp/co/sony/mc/camera/mediasaving/ExifFactory;->APP1_HEADER:[B
@@ -1330,6 +1380,16 @@
 
 .method private static updateExifSize([BI)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "buffer",
+            "size"
+        }
+    .end annotation
 
     .line 386
     sget-object v0, Ljp/co/sony/mc/camera/mediasaving/ExifFactory;->APP1_HEADER:[B
@@ -1345,6 +1405,16 @@
 
 .method private static updateGpsFields([BLandroid/location/Location;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "buffer",
+            "location"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -1366,6 +1436,16 @@
 
 .method private static updateJpegInterchangeFormatLength([BJ)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "buffer",
+            "thumbnailDataLength"
+        }
+    .end annotation
 
     .line 382
     sget-object v0, Ljp/co/sony/mc/camera/mediasaving/ExifFactory;->APP1_HEADER:[B
@@ -1381,6 +1461,16 @@
 
 .method private static updateMake([BLjava/lang/String;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "buffer",
+            "make"
+        }
+    .end annotation
 
     .line 202
     invoke-virtual {p1}, Ljava/lang/String;->length()I
@@ -1426,6 +1516,16 @@
 
 .method private static updateModel([BLjava/lang/String;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "buffer",
+            "value"
+        }
+    .end annotation
 
     .line 213
     sget-object v0, Ljp/co/sony/mc/camera/mediasaving/ExifFactory;->APP1_HEADER:[B
@@ -1456,6 +1556,16 @@
 
 .method private static updateOrientation([BI)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "buffer",
+            "orientation"
+        }
+    .end annotation
 
     .line 218
     sget-object v0, Ljp/co/sony/mc/camera/mediasaving/ExifFactory;->APP1_HEADER:[B
@@ -1480,6 +1590,16 @@
 
 .method private static updatePixelXDimension([BJ)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "buffer",
+            "pixelXDimension"
+        }
+    .end annotation
 
     .line 229
     sget-object v0, Ljp/co/sony/mc/camera/mediasaving/ExifFactory;->APP1_HEADER:[B
@@ -1495,6 +1615,16 @@
 
 .method private static updatePixelYDimension([BJ)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "buffer",
+            "pixelYDimension"
+        }
+    .end annotation
 
     .line 233
     sget-object v0, Ljp/co/sony/mc/camera/mediasaving/ExifFactory;->APP1_HEADER:[B
@@ -1510,6 +1640,18 @@
 
 .method private static writeASCIIValue([BILjava/lang/String;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "buffer",
+            "bufferPos",
+            "value"
+        }
+    .end annotation
 
     .line 409
     const-string v0, "US-ASCII"
@@ -1537,6 +1679,18 @@
 
 .method private static writeByteValue([BII)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "buffer",
+            "bufferPos",
+            "value"
+        }
+    .end annotation
 
     int-to-byte p2, p2
 
@@ -1548,6 +1702,16 @@
 
 .method private static writeGpsInfoToHeader([BLandroid/location/Location;)Z
     .locals 15
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "buffer",
+            "location"
+        }
+    .end annotation
 
     move-object v6, p0
 
@@ -2058,6 +2222,18 @@
 
 .method private static writeLongValue([BIJ)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "buffer",
+            "bufferPos",
+            "value"
+        }
+    .end annotation
 
     const-wide/32 v0, 0x1000000
 
@@ -2112,6 +2288,20 @@
 
 .method private static writeRationalValue([BIJJ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "buffer",
+            "bufferPos",
+            "denominator",
+            "numerator"
+        }
+    .end annotation
 
     .line 432
     invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/mediasaving/ExifFactory;->writeLongValue([BIJ)V
@@ -2126,6 +2316,18 @@
 
 .method private static writeShortValue([BII)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "buffer",
+            "bufferPos",
+            "value"
+        }
+    .end annotation
 
     .line 419
     div-int/lit16 v0, p2, 0x100
@@ -2148,6 +2350,14 @@
 
 .method private static writeTemplate([B)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "buffer"
+        }
+    .end annotation
 
     .line 391
     sget-object v0, Ljp/co/sony/mc/camera/mediasaving/ExifFactory;->APP1_HEADER:[B

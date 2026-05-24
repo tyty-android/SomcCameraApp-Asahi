@@ -88,6 +88,14 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "applicationContext"
+        }
+    .end annotation
 
     .line 58
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -242,6 +250,14 @@
 # virtual methods
 .method public declared-synchronized play(Ljp/co/sony/mc/camera/sound/SoundPlayer$Type;)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     monitor-enter p0
 

@@ -62,7 +62,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 185
+    .line 184
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;->value:Ljp/co/sony/mc/camera/configuration/parameters/FaceDetection;
@@ -75,7 +75,7 @@
 .method public final getValue()Ljp/co/sony/mc/camera/configuration/parameters/FaceDetection;
     .locals 0
 
-    .line 185
+    .line 184
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;->value:Ljp/co/sony/mc/camera/configuration/parameters/FaceDetection;
 
     return-object p0
@@ -84,7 +84,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 186
+    .line 185
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;->value:Ljp/co/sony/mc/camera/configuration/parameters/FaceDetection;
 
     sget-object v0, Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf$WhenMappings;->$EnumSwitchMapping$0:[I
@@ -103,18 +103,18 @@
 
     if-eq p0, v0, :cond_0
 
-    .line 189
+    .line 188
     const-string p0, "OFF"
 
     goto :goto_0
 
-    .line 188
+    .line 187
     :cond_0
     const-string p0, "ONLY_FACE"
 
     goto :goto_0
 
-    .line 187
+    .line 186
     :cond_1
     const-string p0, "FACE_AND_EYE"
 

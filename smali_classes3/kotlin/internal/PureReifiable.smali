@@ -1,6 +1,6 @@
 .class public interface abstract annotation Lkotlin/internal/PureReifiable;
 .super Ljava/lang/Object;
-.source "InternalAnnotations.kt"
+.source "AnnotationsBuiltin.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;
@@ -26,8 +26,8 @@
     }
     k = 0x1
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x30

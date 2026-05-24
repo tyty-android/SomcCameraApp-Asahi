@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract onDetached(Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi$Icon;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "icon"
+        }
+    .end annotation
 .end method

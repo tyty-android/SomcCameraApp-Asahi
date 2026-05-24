@@ -6,12 +6,18 @@
 .implements Lkotlin/jvm/functions/Function1;
 
 
+# instance fields
+.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/hint/HintTextContent;
+
+
 # direct methods
-.method public synthetic constructor <init>()V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda53;->f$0:Ljp/co/sony/mc/camera/view/hint/HintTextContent;
 
     return-void
 .end method
@@ -22,9 +28,11 @@
     .locals 0
 
     .line 0
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda53;->f$0:Ljp/co/sony/mc/camera/view/hint/HintTextContent;
+
     check-cast p1, Ljp/co/sony/mc/camera/view/CameraEventListener;
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->$r8$lambda$GeyXt80Lg42WIZMQqyigDiS3jiw(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->$r8$lambda$Ls2IaqkJu8u--i5p92Uw0AxHZL0(Ljp/co/sony/mc/camera/view/hint/HintTextContent;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 

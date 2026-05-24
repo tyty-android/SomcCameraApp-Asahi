@@ -31,7 +31,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 3774
+    .line 4131
     invoke-direct {p0}, Lcom/google/common/collect/Sets$ImprovedAbstractSet;-><init>()V
 
     return-void
@@ -42,7 +42,7 @@
 .method public clear()V
     .locals 0
 
-    .line 3784
+    .line 4142
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$EntrySet;->map()Ljava/util/Map;
 
     move-result-object p0
@@ -54,23 +54,35 @@
 
 .method public contains(Ljava/lang/Object;)Z
     .locals 3
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 3789
+    .line 4147
     instance-of v0, p1, Ljava/util/Map$Entry;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_1
 
-    .line 3790
+    .line 4148
     check-cast p1, Ljava/util/Map$Entry;
 
-    .line 3791
+    .line 4149
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 3792
+    .line 4150
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$EntrySet;->map()Ljava/util/Map;
 
     move-result-object v2
@@ -79,7 +91,7 @@
 
     move-result-object v2
 
-    .line 3793
+    .line 4151
     invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object p1
@@ -112,7 +124,7 @@
 .method public isEmpty()Z
     .locals 0
 
-    .line 3800
+    .line 4158
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$EntrySet;->map()Ljava/util/Map;
 
     move-result-object p0
@@ -136,18 +148,34 @@
 
 .method public remove(Ljava/lang/Object;)Z
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 3805
+    .line 4167
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Maps$EntrySet;->contains(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 3806
+    instance-of v0, p1, Ljava/util/Map$Entry;
+
+    if-eqz v0, :cond_0
+
+    .line 4168
     check-cast p1, Ljava/util/Map$Entry;
 
-    .line 3807
+    .line 4169
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$EntrySet;->map()Ljava/util/Map;
 
     move-result-object p0
@@ -174,6 +202,15 @@
 
 .method public removeAll(Ljava/util/Collection;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -182,7 +219,7 @@
         }
     .end annotation
 
-    .line 3815
+    .line 4177
     :try_start_0
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -198,7 +235,7 @@
 
     return p0
 
-    .line 3818
+    .line 4180
     :catch_0
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
@@ -213,6 +250,15 @@
 
 .method public retainAll(Ljava/util/Collection;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -221,7 +267,7 @@
         }
     .end annotation
 
-    .line 3825
+    .line 4187
     :try_start_0
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -237,7 +283,7 @@
 
     return p0
 
-    .line 3828
+    .line 4190
     :catch_0
     invoke-interface {p1}, Ljava/util/Collection;->size()I
 
@@ -247,7 +293,7 @@
 
     move-result-object v0
 
-    .line 3829
+    .line 4191
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -264,17 +310,21 @@
 
     move-result-object v1
 
-    .line 3830
+    .line 4196
     invoke-virtual {p0, v1}, Lcom/google/common/collect/Maps$EntrySet;->contains(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 3831
+    instance-of v2, v1, Ljava/util/Map$Entry;
+
+    if-eqz v2, :cond_0
+
+    .line 4197
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 3832
+    .line 4198
     invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v1
@@ -283,7 +333,7 @@
 
     goto :goto_0
 
-    .line 3835
+    .line 4201
     :cond_1
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$EntrySet;->map()Ljava/util/Map;
 
@@ -303,7 +353,7 @@
 .method public size()I
     .locals 0
 
-    .line 3779
+    .line 4137
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$EntrySet;->map()Ljava/util/Map;
 
     move-result-object p0

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_00_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_01_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_02_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_03_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_04_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_05_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_06_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_07_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_08_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_09_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_10_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_11_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_12_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_13_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_14_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_15_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_16_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_17_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_18_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_19_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_20_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_21_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_22_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_23_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_24_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_25_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_26_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_27_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_28_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_29_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_30_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_31_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_32_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_33_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_34_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_35_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_36_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_37_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_38_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_39_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_40_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_41_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_42_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_43_icn" />
+    <item android:duration="50" android:drawable="@drawable/camera_recommended_lens_anime_44_icn" />
+</animation-list>

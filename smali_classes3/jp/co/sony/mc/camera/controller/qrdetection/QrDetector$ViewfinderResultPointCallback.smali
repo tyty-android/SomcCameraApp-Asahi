@@ -39,6 +39,14 @@
 # virtual methods
 .method public foundPossibleResultPoint(Lcom/google/zxing/ResultPoint;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "point"
+        }
+    .end annotation
 
     return-void
 .end method

@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/graph/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<N:",
@@ -20,11 +23,11 @@
 # instance fields
 .field private final allowsSelfLoops:Z
 
-.field protected edgeCount:J
+.field edgeCount:J
 
 .field private final isDirected:Z
 
-.field protected final nodeConnections:Lcom/google/common/graph/MapIteratorCache;
+.field final nodeConnections:Lcom/google/common/graph/MapIteratorCache;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/common/graph/MapIteratorCache<",
@@ -48,6 +51,15 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/graph/AbstractGraphBuilder;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "builder"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -56,14 +68,14 @@
         }
     .end annotation
 
-    .line 57
+    .line 58
     iget-object v0, p1, Lcom/google/common/graph/AbstractGraphBuilder;->nodeOrder:Lcom/google/common/graph/ElementOrder;
 
     iget-object v1, p1, Lcom/google/common/graph/AbstractGraphBuilder;->expectedNodeCount:Lcom/google/common/base/Optional;
 
     const/16 v2, 0xa
 
-    .line 60
+    .line 61
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -78,14 +90,14 @@
 
     move-result v1
 
-    .line 59
+    .line 60
     invoke-virtual {v0, v1}, Lcom/google/common/graph/ElementOrder;->createMap(I)Ljava/util/Map;
 
     move-result-object v0
 
     const-wide/16 v1, 0x0
 
-    .line 57
+    .line 58
     invoke-direct {p0, p1, v0, v1, v2}, Lcom/google/common/graph/StandardValueGraph;-><init>(Lcom/google/common/graph/AbstractGraphBuilder;Ljava/util/Map;J)V
 
     return-void
@@ -93,6 +105,19 @@
 
 .method constructor <init>(Lcom/google/common/graph/AbstractGraphBuilder;Ljava/util/Map;J)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "builder",
+            "nodeConnections",
+            "edgeCount"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -105,20 +130,20 @@
         }
     .end annotation
 
-    .line 71
+    .line 72
     invoke-direct {p0}, Lcom/google/common/graph/AbstractValueGraph;-><init>()V
 
-    .line 72
+    .line 73
     iget-boolean v0, p1, Lcom/google/common/graph/AbstractGraphBuilder;->directed:Z
 
     iput-boolean v0, p0, Lcom/google/common/graph/StandardValueGraph;->isDirected:Z
 
-    .line 73
+    .line 74
     iget-boolean v0, p1, Lcom/google/common/graph/AbstractGraphBuilder;->allowsSelfLoops:Z
 
     iput-boolean v0, p0, Lcom/google/common/graph/StandardValueGraph;->allowsSelfLoops:Z
 
-    .line 74
+    .line 75
     iget-object p1, p1, Lcom/google/common/graph/AbstractGraphBuilder;->nodeOrder:Lcom/google/common/graph/ElementOrder;
 
     invoke-virtual {p1}, Lcom/google/common/graph/ElementOrder;->cast()Lcom/google/common/graph/ElementOrder;
@@ -127,19 +152,19 @@
 
     iput-object p1, p0, Lcom/google/common/graph/StandardValueGraph;->nodeOrder:Lcom/google/common/graph/ElementOrder;
 
-    .line 77
+    .line 78
     instance-of p1, p2, Ljava/util/TreeMap;
 
     if-eqz p1, :cond_0
 
-    .line 78
+    .line 79
     new-instance p1, Lcom/google/common/graph/MapRetrievalCache;
 
     invoke-direct {p1, p2}, Lcom/google/common/graph/MapRetrievalCache;-><init>(Ljava/util/Map;)V
 
     goto :goto_0
 
-    .line 79
+    .line 80
     :cond_0
     new-instance p1, Lcom/google/common/graph/MapIteratorCache;
 
@@ -148,7 +173,7 @@
     :goto_0
     iput-object p1, p0, Lcom/google/common/graph/StandardValueGraph;->nodeConnections:Lcom/google/common/graph/MapIteratorCache;
 
-    .line 80
+    .line 81
     invoke-static {p3, p4}, Lcom/google/common/graph/Graphs;->checkNonNegative(J)J
 
     move-result-wide p1
@@ -158,41 +183,17 @@
     return-void
 .end method
 
-
-# virtual methods
-.method public adjacentNodes(Ljava/lang/Object;)Ljava/util/Set;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TN;)",
-            "Ljava/util/Set<",
-            "TN;>;"
+.method private final checkedConnections(Ljava/lang/Object;)Lcom/google/common/graph/GraphConnections;
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
         }
     .end annotation
 
-    .line 105
-    invoke-virtual {p0, p1}, Lcom/google/common/graph/StandardValueGraph;->checkedConnections(Ljava/lang/Object;)Lcom/google/common/graph/GraphConnections;
-
-    move-result-object p0
-
-    invoke-interface {p0}, Lcom/google/common/graph/GraphConnections;->adjacentNodes()Ljava/util/Set;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public allowsSelfLoops()Z
-    .locals 0
-
-    .line 95
-    iget-boolean p0, p0, Lcom/google/common/graph/StandardValueGraph;->allowsSelfLoops:Z
-
-    return p0
-.end method
-
-.method protected final checkedConnections(Ljava/lang/Object;)Lcom/google/common/graph/GraphConnections;
-    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)",
@@ -201,7 +202,7 @@
         }
     .end annotation
 
-    .line 161
+    .line 163
     iget-object p0, p0, Lcom/google/common/graph/StandardValueGraph;->nodeConnections:Lcom/google/common/graph/MapIteratorCache;
 
     invoke-virtual {p0, p1}, Lcom/google/common/graph/MapIteratorCache;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -214,38 +215,20 @@
 
     return-object p0
 
-    .line 163
+    .line 165
     :cond_0
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 164
+    .line 166
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    move-result-object p1
+    const-string v1, "Node "
 
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, 0x26
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v0, "Node "
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -264,113 +247,35 @@
     throw p0
 .end method
 
-.method protected final containsNode(Ljava/lang/Object;)Z
-    .locals 0
-    .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TN;)Z"
-        }
-    .end annotation
-
-    .line 170
-    iget-object p0, p0, Lcom/google/common/graph/StandardValueGraph;->nodeConnections:Lcom/google/common/graph/MapIteratorCache;
-
-    invoke-virtual {p0, p1}, Lcom/google/common/graph/MapIteratorCache;->containsKey(Ljava/lang/Object;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method protected edgeCount()J
-    .locals 2
-
-    .line 157
-    iget-wide v0, p0, Lcom/google/common/graph/StandardValueGraph;->edgeCount:J
-
-    return-wide v0
-.end method
-
-.method public edgeValueOrDefault(Lcom/google/common/graph/EndpointPair;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
-    .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/google/common/graph/EndpointPair<",
-            "TN;>;TV;)TV;"
-        }
-    .end annotation
-
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-    .end annotation
-
-    .line 151
-    invoke-virtual {p0, p1}, Lcom/google/common/graph/StandardValueGraph;->validateEndpoints(Lcom/google/common/graph/EndpointPair;)V
-
-    .line 152
-    invoke-virtual {p1}, Lcom/google/common/graph/EndpointPair;->nodeU()Ljava/lang/Object;
-
-    move-result-object v0
-
-    invoke-virtual {p1}, Lcom/google/common/graph/EndpointPair;->nodeV()Ljava/lang/Object;
-
-    move-result-object p1
-
-    invoke-virtual {p0, v0, p1, p2}, Lcom/google/common/graph/StandardValueGraph;->edgeValueOrDefault_internal(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public edgeValueOrDefault(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method private final edgeValueOrDefaultInternal(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "nodeU",
+            "nodeV",
+            "defaultValue"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;TN;TV;)TV;"
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
-    .line 145
-    invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p2
-
-    invoke-virtual {p0, p1, p2, p3}, Lcom/google/common/graph/StandardValueGraph;->edgeValueOrDefault_internal(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method protected final edgeValueOrDefault_internal(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TN;TN;TV;)TV;"
-        }
-    .end annotation
-
-    .line 179
+    .line 182
     iget-object p0, p0, Lcom/google/common/graph/StandardValueGraph;->nodeConnections:Lcom/google/common/graph/MapIteratorCache;
 
     invoke-virtual {p0, p1}, Lcom/google/common/graph/MapIteratorCache;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -385,7 +290,7 @@
 
     goto :goto_0
 
-    .line 180
+    .line 183
     :cond_0
     invoke-interface {p0, p2}, Lcom/google/common/graph/GraphConnections;->value(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -394,94 +299,32 @@
     :goto_0
     if-nez p0, :cond_1
 
-    goto :goto_1
+    return-object p3
 
     :cond_1
-    move-object p3, p0
-
-    :goto_1
-    return-object p3
+    return-object p0
 .end method
 
-.method public hasEdgeConnecting(Lcom/google/common/graph/EndpointPair;)Z
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/google/common/graph/EndpointPair<",
-            "TN;>;)Z"
+.method private final hasEdgeConnectingInternal(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "nodeU",
+            "nodeV"
         }
     .end annotation
 
-    .line 137
-    invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 138
-    invoke-virtual {p0, p1}, Lcom/google/common/graph/StandardValueGraph;->isOrderingCompatible(Lcom/google/common/graph/EndpointPair;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 139
-    invoke-virtual {p1}, Lcom/google/common/graph/EndpointPair;->nodeU()Ljava/lang/Object;
-
-    move-result-object v0
-
-    invoke-virtual {p1}, Lcom/google/common/graph/EndpointPair;->nodeV()Ljava/lang/Object;
-
-    move-result-object p1
-
-    invoke-virtual {p0, v0, p1}, Lcom/google/common/graph/StandardValueGraph;->hasEdgeConnecting_internal(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_0
-
-    const/4 p0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
-    return p0
-.end method
-
-.method public hasEdgeConnecting(Ljava/lang/Object;Ljava/lang/Object;)Z
-    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;TN;)Z"
         }
     .end annotation
 
-    .line 132
-    invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p2
-
-    invoke-virtual {p0, p1, p2}, Lcom/google/common/graph/StandardValueGraph;->hasEdgeConnecting_internal(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method protected final hasEdgeConnecting_internal(Ljava/lang/Object;Ljava/lang/Object;)Z
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TN;TN;)Z"
-        }
-    .end annotation
-
-    .line 174
+    .line 176
     iget-object p0, p0, Lcom/google/common/graph/StandardValueGraph;->nodeConnections:Lcom/google/common/graph/MapIteratorCache;
 
     invoke-virtual {p0, p1}, Lcom/google/common/graph/MapIteratorCache;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -492,7 +335,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 175
+    .line 177
     invoke-interface {p0}, Lcom/google/common/graph/GraphConnections;->successors()Ljava/util/Set;
 
     move-result-object p0
@@ -514,8 +357,284 @@
     return p0
 .end method
 
+
+# virtual methods
+.method public adjacentNodes(Ljava/lang/Object;)Ljava/util/Set;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TN;)",
+            "Ljava/util/Set<",
+            "TN;>;"
+        }
+    .end annotation
+
+    .line 106
+    invoke-direct {p0, p1}, Lcom/google/common/graph/StandardValueGraph;->checkedConnections(Ljava/lang/Object;)Lcom/google/common/graph/GraphConnections;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lcom/google/common/graph/GraphConnections;->adjacentNodes()Ljava/util/Set;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0, p1}, Lcom/google/common/graph/StandardValueGraph;->nodeInvalidatableSet(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/Set;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public allowsSelfLoops()Z
+    .locals 0
+
+    .line 96
+    iget-boolean p0, p0, Lcom/google/common/graph/StandardValueGraph;->allowsSelfLoops:Z
+
+    return p0
+.end method
+
+.method final containsNode(Ljava/lang/Object;)Z
+    .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TN;)Z"
+        }
+    .end annotation
+
+    .line 172
+    iget-object p0, p0, Lcom/google/common/graph/StandardValueGraph;->nodeConnections:Lcom/google/common/graph/MapIteratorCache;
+
+    invoke-virtual {p0, p1}, Lcom/google/common/graph/MapIteratorCache;->containsKey(Ljava/lang/Object;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method protected edgeCount()J
+    .locals 2
+
+    .line 159
+    iget-wide v0, p0, Lcom/google/common/graph/StandardValueGraph;->edgeCount:J
+
+    return-wide v0
+.end method
+
+.method public edgeValueOrDefault(Lcom/google/common/graph/EndpointPair;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "endpoints",
+            "defaultValue"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/common/graph/EndpointPair<",
+            "TN;>;TV;)TV;"
+        }
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 153
+    invoke-virtual {p0, p1}, Lcom/google/common/graph/StandardValueGraph;->validateEndpoints(Lcom/google/common/graph/EndpointPair;)V
+
+    .line 154
+    invoke-virtual {p1}, Lcom/google/common/graph/EndpointPair;->nodeU()Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-virtual {p1}, Lcom/google/common/graph/EndpointPair;->nodeV()Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-direct {p0, v0, p1, p2}, Lcom/google/common/graph/StandardValueGraph;->edgeValueOrDefaultInternal(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public edgeValueOrDefault(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+    .param p3    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "nodeU",
+            "nodeV",
+            "defaultValue"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TN;TN;TV;)TV;"
+        }
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 147
+    invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    invoke-direct {p0, p1, p2, p3}, Lcom/google/common/graph/StandardValueGraph;->edgeValueOrDefaultInternal(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public hasEdgeConnecting(Lcom/google/common/graph/EndpointPair;)Z
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "endpoints"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/common/graph/EndpointPair<",
+            "TN;>;)Z"
+        }
+    .end annotation
+
+    .line 139
+    invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 140
+    invoke-virtual {p0, p1}, Lcom/google/common/graph/StandardValueGraph;->isOrderingCompatible(Lcom/google/common/graph/EndpointPair;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 141
+    invoke-virtual {p1}, Lcom/google/common/graph/EndpointPair;->nodeU()Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-virtual {p1}, Lcom/google/common/graph/EndpointPair;->nodeV()Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-direct {p0, v0, p1}, Lcom/google/common/graph/StandardValueGraph;->hasEdgeConnectingInternal(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method public hasEdgeConnecting(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "nodeU",
+            "nodeV"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TN;TN;)Z"
+        }
+    .end annotation
+
+    .line 134
+    invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    invoke-direct {p0, p1, p2}, Lcom/google/common/graph/StandardValueGraph;->hasEdgeConnectingInternal(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
 .method public incidentEdges(Ljava/lang/Object;)Ljava/util/Set;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)",
@@ -525,8 +644,8 @@
         }
     .end annotation
 
-    .line 120
-    invoke-virtual {p0, p1}, Lcom/google/common/graph/StandardValueGraph;->checkedConnections(Ljava/lang/Object;)Lcom/google/common/graph/GraphConnections;
+    .line 121
+    invoke-direct {p0, p1}, Lcom/google/common/graph/StandardValueGraph;->checkedConnections(Ljava/lang/Object;)Lcom/google/common/graph/GraphConnections;
 
     move-result-object v0
 
@@ -535,13 +654,18 @@
 
     invoke-direct {v1, p0, p0, p1, v0}, Lcom/google/common/graph/StandardValueGraph$1;-><init>(Lcom/google/common/graph/StandardValueGraph;Lcom/google/common/graph/BaseGraph;Ljava/lang/Object;Lcom/google/common/graph/GraphConnections;)V
 
-    return-object v1
+    .line 129
+    invoke-virtual {p0, v1, p1}, Lcom/google/common/graph/StandardValueGraph;->nodeInvalidatableSet(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/Set;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
 .method public isDirected()Z
     .locals 0
 
-    .line 90
+    .line 91
     iget-boolean p0, p0, Lcom/google/common/graph/StandardValueGraph;->isDirected:Z
 
     return p0
@@ -557,7 +681,7 @@
         }
     .end annotation
 
-    .line 100
+    .line 101
     iget-object p0, p0, Lcom/google/common/graph/StandardValueGraph;->nodeOrder:Lcom/google/common/graph/ElementOrder;
 
     return-object p0
@@ -573,7 +697,7 @@
         }
     .end annotation
 
-    .line 85
+    .line 86
     iget-object p0, p0, Lcom/google/common/graph/StandardValueGraph;->nodeConnections:Lcom/google/common/graph/MapIteratorCache;
 
     invoke-virtual {p0}, Lcom/google/common/graph/MapIteratorCache;->unmodifiableKeySet()Ljava/util/Set;
@@ -585,6 +709,14 @@
 
 .method public bridge synthetic predecessors(Ljava/lang/Object;)Ljava/lang/Iterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "node"
+        }
+    .end annotation
 
     .line 46
     invoke-virtual {p0, p1}, Lcom/google/common/graph/StandardValueGraph;->predecessors(Ljava/lang/Object;)Ljava/util/Set;
@@ -595,7 +727,16 @@
 .end method
 
 .method public predecessors(Ljava/lang/Object;)Ljava/util/Set;
-    .locals 0
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)",
@@ -604,12 +745,16 @@
         }
     .end annotation
 
-    .line 110
-    invoke-virtual {p0, p1}, Lcom/google/common/graph/StandardValueGraph;->checkedConnections(Ljava/lang/Object;)Lcom/google/common/graph/GraphConnections;
+    .line 111
+    invoke-direct {p0, p1}, Lcom/google/common/graph/StandardValueGraph;->checkedConnections(Ljava/lang/Object;)Lcom/google/common/graph/GraphConnections;
 
-    move-result-object p0
+    move-result-object v0
 
-    invoke-interface {p0}, Lcom/google/common/graph/GraphConnections;->predecessors()Ljava/util/Set;
+    invoke-interface {v0}, Lcom/google/common/graph/GraphConnections;->predecessors()Ljava/util/Set;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0, p1}, Lcom/google/common/graph/StandardValueGraph;->nodeInvalidatableSet(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object p0
 
@@ -618,6 +763,14 @@
 
 .method public bridge synthetic successors(Ljava/lang/Object;)Ljava/lang/Iterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "node"
+        }
+    .end annotation
 
     .line 46
     invoke-virtual {p0, p1}, Lcom/google/common/graph/StandardValueGraph;->successors(Ljava/lang/Object;)Ljava/util/Set;
@@ -628,7 +781,16 @@
 .end method
 
 .method public successors(Ljava/lang/Object;)Ljava/util/Set;
-    .locals 0
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)",
@@ -637,12 +799,16 @@
         }
     .end annotation
 
-    .line 115
-    invoke-virtual {p0, p1}, Lcom/google/common/graph/StandardValueGraph;->checkedConnections(Ljava/lang/Object;)Lcom/google/common/graph/GraphConnections;
+    .line 116
+    invoke-direct {p0, p1}, Lcom/google/common/graph/StandardValueGraph;->checkedConnections(Ljava/lang/Object;)Lcom/google/common/graph/GraphConnections;
 
-    move-result-object p0
+    move-result-object v0
 
-    invoke-interface {p0}, Lcom/google/common/graph/GraphConnections;->successors()Ljava/util/Set;
+    invoke-interface {v0}, Lcom/google/common/graph/GraphConnections;->successors()Ljava/util/Set;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0, p1}, Lcom/google/common/graph/StandardValueGraph;->nodeInvalidatableSet(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object p0
 

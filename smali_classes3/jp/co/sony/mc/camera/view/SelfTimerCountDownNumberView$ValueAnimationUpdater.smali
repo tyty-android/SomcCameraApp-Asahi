@@ -24,6 +24,14 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 230
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView$ValueAnimationUpdater;->this$0:Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;
@@ -45,6 +53,14 @@
 # virtual methods
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "arg0"
+        }
+    .end annotation
 
     .line 233
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView$ValueAnimationUpdater;->this$0:Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;

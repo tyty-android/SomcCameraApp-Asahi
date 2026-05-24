@@ -104,6 +104,16 @@
 
 .method private convert(Landroid/graphics/Rect;Landroid/graphics/Matrix;)Landroid/graphics/Rect;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "srcRect",
+            "matrix"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
@@ -1060,6 +1070,14 @@
 # virtual methods
 .method public convertFromActiveArrayToView(Landroid/graphics/Rect;)Landroid/graphics/Rect;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "srcRect"
+        }
+    .end annotation
 
     .line 291
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/PositionConverter;->mMatrixFromActiveArrayToSurface:Landroid/graphics/Matrix;
@@ -1119,6 +1137,14 @@
 
 .method public convertFromOriginalActiveArrayToView(Landroid/graphics/Rect;)Landroid/graphics/Rect;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "srcRect"
+        }
+    .end annotation
 
     .line 368
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/PositionConverter;->mOriginalMatrixFromActiveArrayToSurface:Landroid/graphics/Matrix;
@@ -1178,6 +1204,14 @@
 
 .method public convertFromViewToActiveArray(Landroid/graphics/Rect;)Landroid/graphics/Rect;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "srcRect"
+        }
+    .end annotation
 
     .line 310
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/PositionConverter;->mMatrixFromSurfaceToActiveArray:Landroid/graphics/Matrix;
@@ -1278,6 +1312,14 @@
 
 .method public getSurfaceRectInActiveArrayByAspectRatio(F)Landroid/graphics/Rect;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ratio"
+        }
+    .end annotation
 
     .line 339
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/PositionConverter;->mActiveArrayRect:Landroid/graphics/Rect;
@@ -1361,6 +1403,22 @@
 
 .method public init(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;ZLandroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "orientation",
+            "mirror",
+            "surface",
+            "preview",
+            "activeArraySize"
+        }
+    .end annotation
 
     .line 76
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -1516,6 +1574,14 @@
 
 .method public setCropRegion(Landroid/graphics/Rect;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cropRegion"
+        }
+    .end annotation
 
     .line 108
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/PositionConverter;->mCropRegion:Landroid/graphics/Rect;
@@ -1547,6 +1613,16 @@
 
 .method public setPreviewSize(II)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "width",
+            "height"
+        }
+    .end annotation
 
     .line 274
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z

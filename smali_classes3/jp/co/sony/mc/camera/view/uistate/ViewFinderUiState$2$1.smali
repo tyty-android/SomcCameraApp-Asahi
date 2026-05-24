@@ -54,28 +54,12 @@
 
 
 # virtual methods
-.method public bridge synthetic emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-    .locals 0
-
-    .line 326
-    check-cast p1, Ljava/lang/Boolean;
-
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result p1
-
-    invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$2$1;->emit(ZLkotlin/coroutines/Continuation;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public final emit(ZLkotlin/coroutines/Continuation;)Ljava/lang/Object;
-    .locals 0
+.method public final emit(Ljava/lang/Float;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(Z",
+            "(",
+            "Ljava/lang/Float;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Lkotlin/Unit;",
@@ -84,49 +68,116 @@
         }
     .end annotation
 
-    if-eqz p1, :cond_0
+    .line 196
+    iget-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$2$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
-    .line 329
+    invoke-static {p2}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$getCameraSettingsModel$p(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object p2
+
+    invoke-static {p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isPro()Z
+
+    move-result p2
+
+    if-nez p2, :cond_1
+
+    .line 197
+    iget-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$2$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+
+    invoke-static {p2}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$getCameraSettingsModel$p(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getAiSuggestion()Landroidx/lifecycle/LiveData;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object p2
+
+    invoke-static {p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestion;->ON_SCENE_AUTO:Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestion;
+
+    if-eq p2, v0, :cond_1
+
+    .line 199
+    iget-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$2$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->getItemAlpha()Landroidx/lifecycle/LiveData;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, Ljava/lang/Float;
+
+    const/4 v0, 0x0
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Float;F)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_0
+
+    .line 200
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Float;F)Z
+
+    move-result p1
+
+    if-nez p1, :cond_1
+
+    .line 201
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$2$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->getOperator()Ljp/co/sony/mc/camera/view/CameraOperator;
+    const/4 p1, 0x1
 
-    move-result-object p0
-
-    if-eqz p0, :cond_1
-
-    sget-object p1, Ljp/co/sony/mc/camera/setting/CameraSettings;->APPLY_PEAKING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    check-cast p1, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
-
-    sget-object p2, Ljp/co/sony/mc/camera/configuration/parameters/Peaking;->ON:Ljp/co/sony/mc/camera/configuration/parameters/Peaking;
-
-    invoke-interface {p0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraOperator;->setSetting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->onTouchAdjustStateChange(Z)V
 
     goto :goto_0
 
-    .line 331
+    .line 204
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$2$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->getOperator()Ljp/co/sony/mc/camera/view/CameraOperator;
+    sget-object p1, Ljp/co/sony/mc/camera/view/uistate/FinderEvent$OnAdjustFinderItem;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/FinderEvent$OnAdjustFinderItem;
 
-    move-result-object p0
+    check-cast p1, Ljp/co/sony/mc/camera/view/uistate/FinderEvent;
 
-    if-eqz p0, :cond_1
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$occurEvent(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;Ljp/co/sony/mc/camera/view/uistate/FinderEvent;)V
 
-    sget-object p1, Ljp/co/sony/mc/camera/setting/CameraSettings;->APPLY_PEAKING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    check-cast p1, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
-
-    sget-object p2, Ljp/co/sony/mc/camera/configuration/parameters/Peaking;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/Peaking;
-
-    invoke-interface {p0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraOperator;->setSetting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
-
-    .line 333
+    .line 207
     :cond_1
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method public bridge synthetic emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    .locals 0
+
+    .line 195
+    check-cast p1, Ljava/lang/Float;
+
+    invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$2$1;->emit(Ljava/lang/Float;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    move-result-object p0
 
     return-object p0
 .end method

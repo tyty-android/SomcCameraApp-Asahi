@@ -28,8 +28,16 @@
 # direct methods
 .method constructor <init>(Ljava/lang/Class;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "val$keyClass"
+        }
+    .end annotation
 
-    .line 172
+    .line 171
     iput-object p1, p0, Lcom/google/common/collect/MultimapBuilder$4;->val$keyClass:Ljava/lang/Class;
 
     invoke-direct {p0}, Lcom/google/common/collect/MultimapBuilder$MultimapBuilderWithKeys;-><init>()V
@@ -53,7 +61,7 @@
         }
     .end annotation
 
-    .line 178
+    .line 177
     new-instance v0, Ljava/util/EnumMap;
 
     iget-object p0, p0, Lcom/google/common/collect/MultimapBuilder$4;->val$keyClass:Ljava/lang/Class;

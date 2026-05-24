@@ -43,7 +43,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -51,6 +51,17 @@
 # direct methods
 .method constructor <init>(Ljava/util/List;Ljava/util/Comparator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "list",
+            "comparator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -61,17 +72,17 @@
         }
     .end annotation
 
-    .line 487
+    .line 490
     invoke-direct {p0}, Lcom/google/common/collect/AbstractIterator;-><init>()V
 
-    .line 488
+    .line 491
     invoke-static {p1}, Lcom/google/common/collect/Lists;->newArrayList(Ljava/lang/Iterable;)Ljava/util/ArrayList;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/google/common/collect/Collections2$OrderedPermutationIterator;->nextPermutation:Ljava/util/List;
 
-    .line 489
+    .line 492
     iput-object p2, p0, Lcom/google/common/collect/Collections2$OrderedPermutationIterator;->comparator:Ljava/util/Comparator;
 
     return-void
@@ -82,7 +93,7 @@
 .method calculateNextPermutation()V
     .locals 3
 
-    .line 503
+    .line 507
     invoke-virtual {p0}, Lcom/google/common/collect/Collections2$OrderedPermutationIterator;->findNextJ()I
 
     move-result v0
@@ -93,30 +104,35 @@
 
     const/4 v0, 0x0
 
-    .line 505
+    .line 509
     iput-object v0, p0, Lcom/google/common/collect/Collections2$OrderedPermutationIterator;->nextPermutation:Ljava/util/List;
 
     return-void
 
-    .line 509
+    .line 516
     :cond_0
+    iget-object v1, p0, Lcom/google/common/collect/Collections2$OrderedPermutationIterator;->nextPermutation:Ljava/util/List;
+
+    invoke-static {v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 518
     invoke-virtual {p0, v0}, Lcom/google/common/collect/Collections2$OrderedPermutationIterator;->findNextL(I)I
 
     move-result v1
 
-    .line 510
+    .line 519
     iget-object v2, p0, Lcom/google/common/collect/Collections2$OrderedPermutationIterator;->nextPermutation:Ljava/util/List;
 
     invoke-static {v2, v0, v1}, Ljava/util/Collections;->swap(Ljava/util/List;II)V
 
-    .line 511
+    .line 520
     iget-object v1, p0, Lcom/google/common/collect/Collections2$OrderedPermutationIterator;->nextPermutation:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result v1
 
-    .line 512
+    .line 521
     iget-object p0, p0, Lcom/google/common/collect/Collections2$OrderedPermutationIterator;->nextPermutation:Ljava/util/List;
 
     add-int/lit8 v0, v0, 0x1
@@ -132,8 +148,10 @@
 
 .method protected bridge synthetic computeNext()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 
-    .line 483
+    .line 486
     invoke-virtual {p0}, Lcom/google/common/collect/Collections2$OrderedPermutationIterator;->computeNext()Ljava/util/List;
 
     move-result-object p0
@@ -151,12 +169,15 @@
         }
     .end annotation
 
-    .line 494
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 498
     iget-object v0, p0, Lcom/google/common/collect/Collections2$OrderedPermutationIterator;->nextPermutation:Ljava/util/List;
 
     if-nez v0, :cond_0
 
-    .line 495
+    .line 499
     invoke-virtual {p0}, Lcom/google/common/collect/Collections2$OrderedPermutationIterator;->endOfData()Ljava/lang/Object;
 
     move-result-object p0
@@ -165,13 +186,13 @@
 
     return-object p0
 
-    .line 497
+    .line 501
     :cond_0
     invoke-static {v0}, Lcom/google/common/collect/ImmutableList;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object v0
 
-    .line 498
+    .line 502
     invoke-virtual {p0}, Lcom/google/common/collect/Collections2$OrderedPermutationIterator;->calculateNextPermutation()V
 
     return-object v0
@@ -180,7 +201,12 @@
 .method findNextJ()I
     .locals 5
 
-    .line 516
+    .line 529
+    iget-object v0, p0, Lcom/google/common/collect/Collections2$OrderedPermutationIterator;->nextPermutation:Ljava/util/List;
+
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 530
     iget-object v0, p0, Lcom/google/common/collect/Collections2$OrderedPermutationIterator;->nextPermutation:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -192,7 +218,7 @@
     :goto_0
     if-ltz v0, :cond_1
 
-    .line 517
+    .line 531
     iget-object v1, p0, Lcom/google/common/collect/Collections2$OrderedPermutationIterator;->comparator:Ljava/util/Comparator;
 
     iget-object v2, p0, Lcom/google/common/collect/Collections2$OrderedPermutationIterator;->nextPermutation:Ljava/util/List;
@@ -230,15 +256,28 @@
 
 .method findNextL(I)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "j"
+        }
+    .end annotation
 
-    .line 525
+    .line 543
+    iget-object v0, p0, Lcom/google/common/collect/Collections2$OrderedPermutationIterator;->nextPermutation:Ljava/util/List;
+
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 544
     iget-object v0, p0, Lcom/google/common/collect/Collections2$OrderedPermutationIterator;->nextPermutation:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 526
+    .line 545
     iget-object v1, p0, Lcom/google/common/collect/Collections2$OrderedPermutationIterator;->nextPermutation:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
@@ -250,7 +289,7 @@
     :goto_0
     if-le v1, p1, :cond_1
 
-    .line 527
+    .line 546
     iget-object v2, p0, Lcom/google/common/collect/Collections2$OrderedPermutationIterator;->comparator:Ljava/util/Comparator;
 
     iget-object v3, p0, Lcom/google/common/collect/Collections2$OrderedPermutationIterator;->nextPermutation:Ljava/util/List;
@@ -272,7 +311,7 @@
 
     goto :goto_0
 
-    .line 531
+    .line 550
     :cond_1
     new-instance p0, Ljava/lang/AssertionError;
 

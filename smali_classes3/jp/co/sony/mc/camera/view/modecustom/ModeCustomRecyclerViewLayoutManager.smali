@@ -212,7 +212,7 @@
     add-int/lit8 v2, v2, -0x1
 
     :goto_0
-    const p2, 0x7f090121
+    const p2, 0x7f090122
 
     if-gez v2, :cond_5
 
@@ -226,7 +226,7 @@
     goto :goto_1
 
     :cond_4
-    const p2, 0x7f090311
+    const p2, 0x7f090316
 
     .line 52
     :goto_1
@@ -246,7 +246,7 @@
 
     if-ne p0, v0, :cond_6
 
-    const p2, 0x7f0900a3
+    const p2, 0x7f0900ab
 
     .line 61
     :cond_6

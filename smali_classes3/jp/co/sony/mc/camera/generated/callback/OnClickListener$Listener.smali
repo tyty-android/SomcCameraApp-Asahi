@@ -16,4 +16,14 @@
 
 # virtual methods
 .method public abstract _internalCallbackOnClick(ILandroid/view/View;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sourceId",
+            "callbackArg_0"
+        }
+    .end annotation
 .end method

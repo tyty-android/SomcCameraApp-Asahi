@@ -33,8 +33,16 @@
 # direct methods
 .method private constructor <init>(Lcom/google/common/collect/ImmutableMultiset;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 323
+    .line 368
     iput-object p1, p0, Lcom/google/common/collect/ImmutableMultiset$EntrySet;->this$0:Lcom/google/common/collect/ImmutableMultiset;
 
     invoke-direct {p0}, Lcom/google/common/collect/IndexedImmutableSet;-><init>()V
@@ -45,28 +53,67 @@
 .method synthetic constructor <init>(Lcom/google/common/collect/ImmutableMultiset;Lcom/google/common/collect/ImmutableMultiset$1;)V
     .locals 0
 
-    .line 323
+    .line 368
     invoke-direct {p0, p1}, Lcom/google/common/collect/ImmutableMultiset$EntrySet;-><init>(Lcom/google/common/collect/ImmutableMultiset;)V
 
     return-void
+.end method
+
+.method private readObject(Ljava/io/ObjectInputStream;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stream"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/InvalidObjectException;
+        }
+    .end annotation
+
+    .line 412
+    new-instance p0, Ljava/io/InvalidObjectException;
+
+    const-string p1, "Use EntrySetSerializedForm"
+
+    invoke-direct {p0, p1}, Ljava/io/InvalidObjectException;-><init>(Ljava/lang/String;)V
+
+    throw p0
 .end method
 
 
 # virtual methods
 .method public contains(Ljava/lang/Object;)Z
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 341
+    .line 386
     instance-of v0, p1, Lcom/google/common/collect/Multiset$Entry;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_1
 
-    .line 342
+    .line 387
     check-cast p1, Lcom/google/common/collect/Multiset$Entry;
 
-    .line 343
+    .line 388
     invoke-interface {p1}, Lcom/google/common/collect/Multiset$Entry;->getCount()I
 
     move-result v0
@@ -75,7 +122,7 @@
 
     return v1
 
-    .line 346
+    .line 391
     :cond_0
     iget-object p0, p0, Lcom/google/common/collect/ImmutableMultiset$EntrySet;->this$0:Lcom/google/common/collect/ImmutableMultiset;
 
@@ -87,7 +134,7 @@
 
     move-result p0
 
-    .line 347
+    .line 392
     invoke-interface {p1}, Lcom/google/common/collect/Multiset$Entry;->getCount()I
 
     move-result p1
@@ -102,6 +149,15 @@
 
 .method get(I)Lcom/google/common/collect/Multiset$Entry;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -110,7 +166,7 @@
         }
     .end annotation
 
-    .line 331
+    .line 376
     iget-object p0, p0, Lcom/google/common/collect/ImmutableMultiset$EntrySet;->this$0:Lcom/google/common/collect/ImmutableMultiset;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableMultiset;->getEntry(I)Lcom/google/common/collect/Multiset$Entry;
@@ -122,8 +178,16 @@
 
 .method bridge synthetic get(I)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
-    .line 322
+    .line 367
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableMultiset$EntrySet;->get(I)Lcom/google/common/collect/Multiset$Entry;
 
     move-result-object p0
@@ -134,7 +198,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 354
+    .line 399
     iget-object p0, p0, Lcom/google/common/collect/ImmutableMultiset$EntrySet;->this$0:Lcom/google/common/collect/ImmutableMultiset;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMultiset;->hashCode()I
@@ -147,7 +211,7 @@
 .method isPartialView()Z
     .locals 0
 
-    .line 326
+    .line 371
     iget-object p0, p0, Lcom/google/common/collect/ImmutableMultiset$EntrySet;->this$0:Lcom/google/common/collect/ImmutableMultiset;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMultiset;->isPartialView()Z
@@ -160,7 +224,7 @@
 .method public size()I
     .locals 0
 
-    .line 336
+    .line 381
     iget-object p0, p0, Lcom/google/common/collect/ImmutableMultiset$EntrySet;->this$0:Lcom/google/common/collect/ImmutableMultiset;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMultiset;->elementSet()Lcom/google/common/collect/ImmutableSet;
@@ -177,7 +241,7 @@
 .method writeReplace()Ljava/lang/Object;
     .locals 1
 
-    .line 360
+    .line 406
     new-instance v0, Lcom/google/common/collect/ImmutableMultiset$EntrySetSerializedForm;
 
     iget-object p0, p0, Lcom/google/common/collect/ImmutableMultiset$EntrySet;->this$0:Lcom/google/common/collect/ImmutableMultiset;

@@ -26,13 +26,23 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;Ljp/co/sony/mc/camera/recorder/RecorderController$Result;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "result"
+        }
+    .end annotation
 
-    .line 1061
+    .line 1043
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$NotifyFinishResult;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1062
+    .line 1044
     iput-object p2, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$NotifyFinishResult;->mResult:Ljp/co/sony/mc/camera/recorder/RecorderController$Result;
 
     return-void
@@ -43,7 +53,7 @@
 .method public run()V
     .locals 9
 
-    .line 1067
+    .line 1049
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "notifyFinishResult() E result:"
@@ -66,7 +76,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->-$$Nest$smtrace(Ljava/lang/String;)V
 
-    .line 1071
+    .line 1053
     sget-object v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$9;->$SwitchMap$jp$co$sony$mc$camera$recorder$RecorderController$Result:[I
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$NotifyFinishResult;->mResult:Ljp/co/sony/mc/camera/recorder/RecorderController$Result;
@@ -95,7 +105,7 @@
 
     goto :goto_0
 
-    .line 1102
+    .line 1084
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$NotifyFinishResult;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
@@ -109,7 +119,7 @@
 
     goto :goto_0
 
-    .line 1074
+    .line 1056
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$NotifyFinishResult;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
@@ -117,7 +127,7 @@
 
     monitor-enter v0
 
-    .line 1081
+    .line 1063
     :try_start_0
     iget-object v4, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$NotifyFinishResult;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
@@ -137,19 +147,19 @@
 
     aput-object v5, v1, v2
 
-    .line 1082
+    .line 1064
     invoke-virtual {v4, v1}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->verifyState([Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;)Z
 
     move-result v1
 
-    .line 1083
+    .line 1065
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     if-eqz v1, :cond_2
 
-    .line 1085
+    .line 1067
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$NotifyFinishResult;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->-$$Nest$fgetmListener(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;)Ljp/co/sony/mc/camera/recorder/RecorderController$RecorderListener;
@@ -160,7 +170,7 @@
 
     invoke-interface {v0, v1}, Ljp/co/sony/mc/camera/recorder/RecorderController$RecorderListener;->onRecordFinished(Ljp/co/sony/mc/camera/recorder/RecorderController$Result;)V
 
-    .line 1087
+    .line 1069
     :cond_2
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$NotifyFinishResult;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
@@ -168,7 +178,7 @@
 
     monitor-enter v1
 
-    .line 1088
+    .line 1070
     :try_start_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$NotifyFinishResult;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
@@ -182,7 +192,7 @@
 
     move-result-object v4
 
-    .line 1089
+    .line 1071
     invoke-virtual {v4}, Ljp/co/sony/mc/camera/recorder/utility/ReferenceClock;->elapsedTimeMillis()J
 
     move-result-wide v4
@@ -193,14 +203,14 @@
 
     move-result-wide v7
 
-    .line 1088
+    .line 1070
     invoke-static {v4, v5, v7, v8}, Ljava/lang/Math;->max(JJ)J
 
     move-result-wide v4
 
     invoke-virtual {v0, v4, v5}, Ljp/co/sony/mc/camera/recorder/utility/ReferenceClock;->reset(J)V
 
-    .line 1090
+    .line 1072
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$NotifyFinishResult;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     new-array v2, v2, [Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;
@@ -219,20 +229,20 @@
 
     if-nez v0, :cond_3
 
-    .line 1093
+    .line 1075
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$NotifyFinishResult;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     sget-object v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;->IDLE:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->changeTo(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;)V
 
-    .line 1095
+    .line 1077
     :cond_3
     monitor-exit v1
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 1105
+    .line 1087
     :goto_0
     const-string p0, "notifyFinishResult() X"
 
@@ -243,7 +253,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1095
+    .line 1077
     :try_start_2
     monitor-exit v1
     :try_end_2
@@ -254,7 +264,7 @@
     :catchall_1
     move-exception p0
 
-    .line 1083
+    .line 1065
     :try_start_3
     monitor-exit v0
     :try_end_3

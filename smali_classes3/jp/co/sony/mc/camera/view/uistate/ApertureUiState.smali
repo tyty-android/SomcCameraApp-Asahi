@@ -376,7 +376,7 @@
 .end method
 
 .method public final switchAperture()V
-    .locals 7
+    .locals 9
 
     .line 47
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/ApertureUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
@@ -455,6 +455,40 @@
     .line 51
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/ApertureUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getBokeh()Landroidx/lifecycle/LiveData;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    check-cast v0, Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v5
+
+    .line 52
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/ApertureUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getVideoStabilizer()Landroidx/lifecycle/LiveData;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v6, v0
+
+    check-cast v6, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+
+    .line 53
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/ApertureUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getVideoMfHdr()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
@@ -463,11 +497,11 @@
 
     move-result-object v0
 
-    move-object v5, v0
+    move-object v7, v0
 
-    check-cast v5, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+    check-cast v7, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
 
-    .line 52
+    .line 54
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/ApertureUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCaptureFps()Landroidx/lifecycle/LiveData;
@@ -484,14 +518,14 @@
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;->isHfr()Z
 
-    move-result v6
+    move-result v8
 
     .line 46
-    invoke-static/range {v1 .. v6}, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;->getNextAperture(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/Aperture;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
+    invoke-static/range {v1 .. v8}, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;->getNextAperture(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/Aperture;ZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
     move-result-object v0
 
-    .line 54
+    .line 56
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ApertureUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     if-eqz p0, :cond_0

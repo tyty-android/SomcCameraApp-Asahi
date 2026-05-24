@@ -35,15 +35,29 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/ImmutableRangeSet;IILcom/google/common/collect/Range;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$length",
+            "val$fromIndex",
+            "val$range"
+        }
+    .end annotation
 
-    .line 449
-    iput-object p1, p0, Lcom/google/common/collect/ImmutableRangeSet$1;->this$0:Lcom/google/common/collect/ImmutableRangeSet;
-
+    .line 484
     iput p2, p0, Lcom/google/common/collect/ImmutableRangeSet$1;->val$length:I
 
     iput p3, p0, Lcom/google/common/collect/ImmutableRangeSet$1;->val$fromIndex:I
 
     iput-object p4, p0, Lcom/google/common/collect/ImmutableRangeSet$1;->val$range:Lcom/google/common/collect/Range;
+
+    iput-object p1, p0, Lcom/google/common/collect/ImmutableRangeSet$1;->this$0:Lcom/google/common/collect/ImmutableRangeSet;
 
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableList;-><init>()V
 
@@ -54,6 +68,15 @@
 # virtual methods
 .method public get(I)Lcom/google/common/collect/Range;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -62,14 +85,14 @@
         }
     .end annotation
 
-    .line 457
+    .line 492
     iget v0, p0, Lcom/google/common/collect/ImmutableRangeSet$1;->val$length:I
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkElementIndex(II)I
 
     if-eqz p1, :cond_1
 
-    .line 458
+    .line 493
     iget v0, p0, Lcom/google/common/collect/ImmutableRangeSet$1;->val$length:I
 
     add-int/lit8 v0, v0, -0x1
@@ -78,7 +101,7 @@
 
     goto :goto_0
 
-    .line 461
+    .line 496
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/ImmutableRangeSet$1;->this$0:Lcom/google/common/collect/ImmutableRangeSet;
 
@@ -98,7 +121,7 @@
 
     return-object p0
 
-    .line 459
+    .line 494
     :cond_1
     :goto_0
     iget-object v0, p0, Lcom/google/common/collect/ImmutableRangeSet$1;->this$0:Lcom/google/common/collect/ImmutableRangeSet;
@@ -128,8 +151,16 @@
 
 .method public bridge synthetic get(I)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
-    .line 449
+    .line 484
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableRangeSet$1;->get(I)Lcom/google/common/collect/Range;
 
     move-result-object p0
@@ -148,8 +179,19 @@
 .method public size()I
     .locals 0
 
-    .line 452
+    .line 487
     iget p0, p0, Lcom/google/common/collect/ImmutableRangeSet$1;->val$length:I
 
     return p0
+.end method
+
+.method writeReplace()Ljava/lang/Object;
+    .locals 0
+
+    .line 511
+    invoke-super {p0}, Lcom/google/common/collect/ImmutableList;->writeReplace()Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
 .end method

@@ -66,7 +66,7 @@
 .method public constructor <init>(I)V
     .locals 0
 
-    .line 104
+    .line 163
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Ljp/co/sony/mc/camera/idd/value/IddManualBurst;->value:I
@@ -83,7 +83,7 @@
 
     const/4 p1, 0x0
 
-    .line 104
+    .line 163
     :cond_0
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/idd/value/IddManualBurst;-><init>(I)V
 
@@ -95,7 +95,7 @@
 .method public final getValue()I
     .locals 0
 
-    .line 104
+    .line 163
     iget p0, p0, Ljp/co/sony/mc/camera/idd/value/IddManualBurst;->value:I
 
     return p0
@@ -104,7 +104,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 105
+    .line 164
     iget p0, p0, Ljp/co/sony/mc/camera/idd/value/IddManualBurst;->value:I
 
     if-lez p0, :cond_0

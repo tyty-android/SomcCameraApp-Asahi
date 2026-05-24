@@ -82,6 +82,7 @@ Bluetoothリモコンを接続すると、撮影持続モードで引き続き%1
     <string name="call_notification_incoming_text">着信</string>
     <string name="call_notification_ongoing_text">通話中</string>
     <string name="call_notification_screening_text">着信をスクリーニング中</string>
+    <string name="camera_string_saving_process_hint_txt">保存中です。操作できるまでお待ちください。</string>
     <string name="camera_strings_accept_privacy_policy_txt">プライバシーポリシーに同意済みですが、いつでも取り消すことができます。</string>
     <string name="camera_strings_accessibility_48_mega_pixel_txt">48メガピクセル</string>
     <string name="camera_strings_accessibility_adjust_bokeh_txt">ぼけ具合を調整します</string>
@@ -92,6 +93,27 @@ Bluetoothリモコンを接続すると、撮影持続モードで引き続き%1
     <string name="camera_strings_accessibility_adjust_framing_size_smaller_txt">切り出し枠を小さくします</string>
     <string name="camera_strings_accessibility_adjust_framing_size_txt">切り出し枠の大きさを調整します</string>
     <string name="camera_strings_accessibility_adjust_shutter_speed_txt">シャッタースピード</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_look_menu_txt">閉じるボタン。ルックメニューを閉じます。</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_menu_txt">カスタムメニューを閉じます</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_suggests_txt">提案を閉じます</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_menu_txt">適用中のカスタムルック。さらに調整するメニューを開きます。</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_txt">カスタムルック。カスタムメニューで登録されたルックと明るさ・色を適用します。</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_tab_txt">カスタムタブ。カスタムメニューで登録されたルックと明るさ・色を適用します。</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_button_txt">カスタムボタン。適用中のおすすめ設定をさらに調整するメニューを開きます。</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_param_txt">%1$sは%2$sに設定されています</string>
+    <string name="camera_strings_accessibility_ai_suggestion_first_time_txt">エーアイカメラアシスタント。シーンに合わせて色合いなどの設定を提案する機能です。</string>
+    <string name="camera_strings_accessibility_ai_suggestion_four_of_some_suggests_txt">4つ目の提案です</string>
+    <string name="camera_strings_accessibility_ai_suggestion_look_menu_txt">"%1$s
+クリエイティブルックメニューを開きます"</string>
+    <string name="camera_strings_accessibility_ai_suggestion_new_suggest_txt">新しいおすすめの設定が提案されました</string>
+    <string name="camera_strings_accessibility_ai_suggestion_one_of_some_suggests_txt">1つ目の提案です</string>
+    <string name="camera_strings_accessibility_ai_suggestion_open_suggests_txt">提案を開きます</string>
+    <string name="camera_strings_accessibility_ai_suggestion_reset_to_default_txt">おすすめ適用前の状態に戻します</string>
+    <string name="camera_strings_accessibility_ai_suggestion_selected_suggest_txt">このおすすめ設定を適用しています</string>
+    <string name="camera_strings_accessibility_ai_suggestion_suggest_lens_txt">おすすめのレンズボタン。%1$s倍がおすすめされています。</string>
+    <string name="camera_strings_accessibility_ai_suggestion_surface_of_some_suggests_txt">おすすめ提案。右から左にスワイプすると、おすすめの設定が表示されます。</string>
+    <string name="camera_strings_accessibility_ai_suggestion_three_of_some_suggests_txt">3つ目の提案です</string>
+    <string name="camera_strings_accessibility_ai_suggestion_two_of_some_suggests_txt">2つ目の提案です</string>
     <string name="camera_strings_accessibility_arrow_left_button_txt">左矢印</string>
     <string name="camera_strings_accessibility_arrow_right_button_txt">右矢印</string>
     <string name="camera_strings_accessibility_audio_level_txt">音声レベル表示</string>
@@ -246,6 +268,45 @@ Bluetoothリモコンを接続すると、撮影持続モードで引き続き%1
     <string name="camera_strings_advanced_setting_geo_tag_title_txt">位置情報を保存</string>
     <string name="camera_strings_ai_face_restore_description_txt">人物の解像度を補正して、人物の顔をはっきりと撮影することができます</string>
     <string name="camera_strings_ai_face_restore_txt">人物の解像補正</string>
+    <string name="camera_strings_ai_suggestion_introduce_hint_text_txt">[ヒント] AIカメラアシスタント</string>
+    <string name="camera_strings_aisuggestion_box_name1_txt">Custom</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_message_txt">現在のルックと明るさ・色の設定をカスタムに登録します。</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_overwrite_message_txt">カスタムにルックが登録されています。上書きしますか?</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_title_txt">カスタムルック登録</string>
+    <string name="camera_strings_aisuggestion_box_title_txt">カスタム</string>
+    <string name="camera_strings_aisuggestion_custom_params_contrast_txt">明暗</string>
+    <string name="camera_strings_aisuggestion_custom_params_ev_txt">明るさ</string>
+    <string name="camera_strings_aisuggestion_custom_params_register_txt">登録</string>
+    <string name="camera_strings_aisuggestion_custom_params_saturation_txt">鮮やかさ</string>
+    <string name="camera_strings_aisuggestion_custom_params_title_txt">明るさ・色調整</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbab_txt">暖かさ</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbgm_txt">色合い</string>
+    <string name="camera_strings_aisuggestion_customlook_register_instruction_txt">登録したカスタムルックは、ルックのカスタムタブからいつでも使用できます</string>
+    <string name="camera_strings_aisuggestion_description_txt">"AIが撮影シーンを自動で認識し、右下に表示される小さなサブ画面で最適な表現を提案します。
+このサブ画面をタップすると、以下の設定がシーンに合わせて自動で調整されます:
+ルック・露出・ホワイトバランス・彩度・コントラスト・ぼけ
+※この機能は「写真モード」でのみ利用できます。
+※シャッターボタンを長押しして動画を撮影する場合は、彩度・コントラスト・ぼけの設定は反映されません。"</string>
+    <string name="camera_strings_aisuggestion_guide_description1_txt">AIが認識したシーンに応じて、おすすめの表現を画面右下(横持ちの場合は右上)のサブ画面に表示します。このサブ画面をタップすると、おすすめの設定が一括で適用されます。</string>
+    <string name="camera_strings_aisuggestion_guide_description2_txt">シーンによっては、おすすめのレンズが提案されることもあります。この場合はお好みに応じて、提案されたレンズを選択してください。</string>
+    <string name="camera_strings_aisuggestion_guide_description3_txt">"右下(横持ちの場合は右上)のサブ画面を左にスワイプすると、他の表現の候補を表示します。
+選んだ表現は好みの表現として記憶され、次回似たようなシーンでの提案に反映されます。"</string>
+    <string name="camera_strings_aisuggestion_guide_description4_txt">提案が不要な場合には[>]ボタンをタップするとサブ画面が隠れます。再度新しいシーンを認識した場合、[&lt;]ボタンが光り、新しい提案があることをお知らせします。再度提案を確認したい場合には[&lt;]ボタンをタップしてください。</string>
+    <string name="camera_strings_aisuggestion_guide_description5_txt">表現の提案を選択した後、調整ボタンをタップすると、明るさや色合いなどの設定を変更することができます。変更した内容は端末内で記録され、この設定の変更は次回同様のシーンでも表現の提案に反映されます。</string>
+    <string name="camera_strings_aisuggestion_guide_description6_txt">表現の提案や変更した内容を気に入った場合、登録するといつでもその設定で撮影することが可能になります。[登録]をタップすると、ルックの中にカスタムルックが追加されます。</string>
+    <string name="camera_strings_aisuggestion_guide_entry_txt">AIカメラアシスタントの使い方はこちら</string>
+    <string name="camera_strings_aisuggestion_guide_title_txt">AIカメラアシスタントの使い方</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_message_txt">調整した色・明るさや、選んだ好みの表現をすべてリセットし、初期設定に戻しますか?</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_title_txt">初期設定に戻す</string>
+    <string name="camera_strings_aisuggestion_params_reset_txt">初期設定に戻す</string>
+    <string name="camera_strings_aisuggestion_permitted_item_bokeh_txt">ぼけ</string>
+    <string name="camera_strings_aisuggestion_permitted_item_lens_txt">レンズ</string>
+    <string name="camera_strings_aisuggestion_permitted_item_title_txt">提案に含める</string>
+    <string name="camera_strings_aisuggestion_recommend_lens_ratio_txt">%1$sがおすすめです</string>
+    <string name="camera_strings_aisuggestion_return_to_default_txt">元に戻す</string>
+    <string name="camera_strings_aisuggestion_simple_video_instruction_txt">シャッターボタン長押しでの動画撮影時には、ボケ・彩度・コントラストの表現が異なることがあります。</string>
+    <string name="camera_strings_aisuggestion_txt">AIカメラアシスタント</string>
+    <string name="camera_strings_aisuggestion_use_aissuggestion_txt">AIカメラアシスタントの使用</string>
     <string name="camera_strings_anonymous_analytics_txt">匿名の分析データ</string>
     <string name="camera_strings_application_name">カメラ</string>
     <string name="camera_strings_application_name_google_lens_txt">Google Lens</string>
@@ -422,6 +483,7 @@ Wi-Fiに接続するため"</string>
     <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Wi-Fiに接続できません</string>
     <string name="camera_strings_dialog_user_data_collection_txt">以下に同意すると、ソニーは適切なサポートを提供するため、また機器およびサービスを改善するために&lt;b>&lt;a href=#personal-data>個人データ&lt;/a>&lt;/b>を収集します。ソニーは&lt;b>&lt;a href=https://sonymobile.com/privacy/>プライバシーポリシー&lt;/a>&lt;/b>に従いこのデータを取り扱います。</string>
     <string name="camera_strings_dialog_video_hdr_hlg_supported_short_description_txt">非対応機器/サービスでは、HDRの色や明るさが正しく再現できないことがあります。対応機器/サービスのご使用をおすすめします。</string>
+    <string name="camera_strings_digital_tripod_hint_edge_txt">構図がずれています。カメラの向きを戻してください。</string>
     <string name="camera_strings_digital_zoom_type_description_txt">"デジタルズーム方式を選択します。
 
 標準のデジタルズーム: イメージセンサーで取得した映像をデジタル処理でズームします。
@@ -486,6 +548,7 @@ AI超解像ズーム: 画質をより現実に近づけたデジタル処理で�
     <string name="camera_strings_fast_capturing_screen_locked_settings_txt">設定を開くには、画面のロックを解除してください。</string>
     <string name="camera_strings_fast_capturing_screen_locked_streaming_txt">ストリーミングを開始するには、画面ロックを解除してください。</string>
     <string name="camera_strings_fast_capturing_screen_locked_title_txt">画面ロック中</string>
+    <string name="camera_strings_feature_creative_look_custom_description_txt">ルックと明るさ・色の設定を登録できます。</string>
     <string name="camera_strings_feature_creative_look_description_txt">"映像(静止画・動画)の仕上がりをお好みで選択できます。
 
 色合い、色の濃さ、明るさ、コントラスト、シャープさなど、さまざまな要素の組み合わせを最適にバランスさせた6種類のルックから選択することで、思い通りの雰囲気に仕上げることができます。"</string>
@@ -568,6 +631,7 @@ JPEG: JPEG画像を記録します。"</string>
     <string name="camera_strings_framing_orientation_description_txt">"被写体を切り出す方向を選ぶことができます。
 オートを選ぶとスマートフォンの向きに合わせた方向で、切り出しを行います。"</string>
     <string name="camera_strings_framing_select_subject_to_track_txt">位置をロックしたい被写体をタッチしてください</string>
+    <string name="camera_strings_framing_setting_guide_title_txt">オートフレーミングについて</string>
     <string name="camera_strings_framing_setting_orientation_landscape_txt">横</string>
     <string name="camera_strings_framing_setting_orientation_portrait_txt">縦</string>
     <string name="camera_strings_framing_setting_orientation_title_txt">切り出しの向き</string>
@@ -575,6 +639,7 @@ JPEG: JPEG画像を記録します。"</string>
 解像度は、切り出し動画がフルHDで全画面の動画が4Kで記録されます。"</string>
     <string name="camera_strings_framing_setting_save_original_video_off_txt">全画面の記録: OFF</string>
     <string name="camera_strings_framing_setting_save_original_video_title_txt">全画面の記録</string>
+    <string name="camera_strings_framing_setting_snapshot_description_txt">[全画面の記録]がOFFの状態でも、録画中の写真撮影は全画面が記録されます。</string>
     <string name="camera_strings_geotagging_description_txt">写真やビデオの撮影場所を記録します</string>
     <string name="camera_strings_geotagging_txt">位置情報を保存</string>
     <string name="camera_strings_gimbal_mode_tab_label">AIカメラワーク</string>
@@ -593,6 +658,7 @@ JPEG: JPEG画像を記録します。"</string>
     <string name="camera_strings_gimbal_setting_assist_method_locking_hint_txt">被写体位置ロック: マ⁠ニ⁠ュ⁠ア⁠ル</string>
     <string name="camera_strings_gimbal_setting_assist_method_locking_txt">マニュアル</string>
     <string name="camera_strings_gimbal_setting_assist_method_title_txt">被写体位置ロック</string>
+    <string name="camera_strings_gimbal_setting_guide_title_txt">AIカメラワークについて</string>
     <string name="camera_strings_gridline_description_txt">写真の構図合わせを補助するグリッドラインの表示/非表示を選択します</string>
     <string name="camera_strings_gridline_txt">グリッドライン</string>
     <string name="camera_strings_hand_shutter_description_updated_txt">手のひらをフロントカメラに向けることで、タイマー撮影を開始できます。指を真上に向けると認識されやすくなります。</string>
@@ -678,7 +744,7 @@ SDR (BT.709)を選択した場合
     <string name="camera_strings_menu_heading_mode_photo_txt">%1$s (写真)</string>
     <string name="camera_strings_menu_heading_mode_video_front_txt">%1$s (動画/フロント)</string>
     <string name="camera_strings_menu_heading_mode_video_txt">%1$s (動画)</string>
-    <string name="camera_strings_menu_sub_photo_front_txt">>写真(フロント)</string>
+    <string name="camera_strings_menu_sub_photo_front_txt">写真(フロント)</string>
     <string name="camera_strings_menu_sub_photo_txt">写真</string>
     <string name="camera_strings_menu_sub_slow_motion_txt">スローモーション</string>
     <string name="camera_strings_menu_sub_video_front_txt">動画(フロント)</string>
@@ -728,6 +794,7 @@ SDR (BT.709)を選択した場合
     <string name="camera_strings_notification_channel_title_saving_process_txt">保存処理</string>
     <string name="camera_strings_notification_text_saving_in_progress_txt">保存が完了するまでお待ちください</string>
     <string name="camera_strings_notification_title_saving_in_progress_txt">保存中です</string>
+    <string name="camera_strings_notify_saving_process_cannot_launch_app_by_hw_shutter_txt">保存中はシャッターボタンでカメラを起動できない場合があります</string>
     <string name="camera_strings_ok_txt">OK</string>
     <string name="camera_strings_peaking_color_blue_txt">ブルー</string>
     <string name="camera_strings_peaking_color_red_txt">レッド</string>
@@ -736,6 +803,7 @@ SDR (BT.709)を選択した場合
     <string name="camera_strings_peaking_color_yellow_txt">イエロー</string>
     <string name="camera_strings_peaking_txt">ピーキング</string>
     <string name="camera_strings_personal_data_txt">個人データ</string>
+    <string name="camera_strings_photopro_setting_guide_title_txt">プロ写真について</string>
     <string name="camera_strings_privacy_policy_txt">プライバシーポリシー</string>
     <string name="camera_strings_pro_tips_computational_photo_description_txt">"Pモードでもカメラがシーンを自動で判別し、ブレやノイズ、白飛びや黒つぶれを抑えてきれいにオート撮影します。
 使用しない場合は、FnボタンまたはMENUから設定をOFFにしてください。"</string>
@@ -965,6 +1033,7 @@ M (マニュアル露出)"</string>
     <string name="camera_strings_video_stabilization_description_sub_txt">なお、[高品質]を選択すると、本体温度の上昇により録画時間が短くなる場合があります。</string>
     <string name="camera_strings_video_stabilization_description_txt">光学式+電子式のハイブリッド手ブレ補正「Optical SteadyShot」により、うす暗い場所などの手ブレしやすい環境でも、クリアな動画を撮影できます</string>
     <string name="camera_strings_video_stabilization_high_quality_images_txt">高品質</string>
+    <string name="camera_strings_videopro_setting_guide_title_txt">プロ動画について</string>
     <string name="camera_strings_volume_distortion_correction_description_txt">超広角レンズで撮影をする際に、画面の端に映る顔の歪みを補正します。背景が歪んだり、画角が狭くなったりすることがあります。</string>
     <string name="camera_strings_volume_distortion_correction_front_description_txt">画面の端に映る顔の歪みを補正します。背景が歪んだり、画角が狭くなったりすることがあります。</string>
     <string name="camera_strings_volume_distortion_correction_txt">顔歪み補正</string>
@@ -1042,8 +1111,25 @@ YouTube™チャンネルの設定をご確認ください。"</string>
     <string name="clear_text_end_icon_content_description">テキストを消去</string>
     <string name="close_drawer">ナビゲーションメニューを閉じる</string>
     <string name="close_sheet">シートを閉じる</string>
+    <string name="common_google_play_services_enable_button">有効にする</string>
+    <string name="common_google_play_services_enable_text">%1$sの実行には、Google Play開発者サービスの有効化が必要です。</string>
+    <string name="common_google_play_services_enable_title">Google Play開発者サービスの有効化</string>
+    <string name="common_google_play_services_install_button">インストール</string>
+    <string name="common_google_play_services_install_text">「%1$s」の実行には Google Play 開発者サービスが必要ですが、お使いの端末にはインストールされていません。</string>
+    <string name="common_google_play_services_install_title">Google Play開発者サービスの入手</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play 開発者サービスの利用</string>
+    <string name="common_google_play_services_notification_ticker">Google Play開発者サービスのエラー</string>
+    <string name="common_google_play_services_unknown_issue">「%1$s」で Google Play 開発者サービスに問題が発生しています。もう一度お試しください。</string>
+    <string name="common_google_play_services_unsupported_text">「%1$s」の実行には Google Play 開発者サービスが必要ですが、お使いの端末ではサポートされていません。</string>
+    <string name="common_google_play_services_update_button">更新</string>
+    <string name="common_google_play_services_update_text">%1$sの実行にはGoogle Play開発者サービスの更新が必要です。</string>
+    <string name="common_google_play_services_update_title">Google Play開発者サービスの更新</string>
+    <string name="common_google_play_services_updating_text">%1$sの実行にはGoogle Play開発者サービスが必要ですが、このサービスは現在更新中です。</string>
+    <string name="common_google_play_services_wear_update_text">Google Play開発者サービスの新しいバージョンが必要です。まもなく自動更新されます。</string>
+    <string name="common_open_on_phone">スマートフォンで開く</string>
+    <string name="common_signin_button_text">ログイン</string>
+    <string name="common_signin_button_text_long">Googleにログイン</string>
     <string name="copy">コピー</string>
-    <string name="copy_toast_msg">リンクをクリップボードにコピーしました</string>
     <string name="default_error_message">入力値が無効です</string>
     <string name="default_popup_window_title">ポップアップウィンドウ</string>
     <string name="dropdown_menu">プルダウン メニュー</string>
@@ -1055,9 +1141,6 @@ YouTube™チャンネルの設定をご確認ください。"</string>
 Vlog Monitorでご確認ください"</string>
     <string name="external_display_connected_title_txt">Vlog Monitor接続中</string>
     <string name="external_display_note_about_external_mic_txt">注意: 外部マイクを使用するときは、撮影前にVlog Monitorに接続してください。マイクの接続後は、Vlog Monitorの再接続が必要です。</string>
-    <string name="fallback_menu_item_copy_link">リンクをコピー</string>
-    <string name="fallback_menu_item_open_in_browser">ブラウザで開く</string>
-    <string name="fallback_menu_item_share_link">リンクの共有</string>
     <string name="icon_content_description">ダイアログ アイコン</string>
     <string name="in_progress">処理しています</string>
     <string name="indeterminate">一部 ON</string>

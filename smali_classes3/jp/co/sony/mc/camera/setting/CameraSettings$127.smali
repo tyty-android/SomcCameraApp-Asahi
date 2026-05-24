@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1635
+    .line 1867
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,6 +31,21 @@
 # virtual methods
 .method public setValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljava/util/Map;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key",
+            "value",
+            "listenersMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -46,13 +61,13 @@
         }
     .end annotation
 
-    .line 1639
+    .line 1871
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1640
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/SemiAutoMode;
+    .line 1872
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;
 
-    invoke-virtual {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->setSemiAutoMode(Ljp/co/sony/mc/camera/configuration/parameters/SemiAutoMode;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetExtendFps(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;)Z
 
     move-result p0
 

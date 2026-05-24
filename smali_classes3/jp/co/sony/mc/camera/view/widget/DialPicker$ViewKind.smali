@@ -42,7 +42,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
     .locals 4
 
-    .line 130
+    .line 144
     sget-object v0, Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;->LABEL:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;->ICON:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
@@ -61,12 +61,12 @@
 .method static constructor <clinit>()V
     .locals 4
 
-    .line 131
+    .line 145
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
     const/4 v1, 0x0
 
-    const v2, 0x7f0c00d3
+    const v2, 0x7f0c00cd
 
     const-string v3, "LABEL"
 
@@ -74,12 +74,12 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;->LABEL:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
-    .line 132
+    .line 146
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
     const/4 v1, 0x1
 
-    const v2, 0x7f0c00d0
+    const v2, 0x7f0c00ca
 
     const-string v3, "ICON"
 
@@ -87,12 +87,12 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;->ICON:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
-    .line 133
+    .line 147
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
     const/4 v1, 0x2
 
-    const v2, 0x7f0c00d1
+    const v2, 0x7f0c00cb
 
     const-string v3, "THUMBNAIL_ICON"
 
@@ -100,12 +100,12 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;->THUMBNAIL_ICON:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
-    .line 134
+    .line 148
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
     const/4 v1, 0x3
 
-    const v2, 0x7f0c00d2
+    const v2, 0x7f0c00cc
 
     const-string v3, "MODE_LABEL"
 
@@ -113,7 +113,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;->MODE_LABEL:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
-    .line 130
+    .line 144
     invoke-static {}, Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;->$values()[Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
     move-result-object v0
@@ -125,16 +125,29 @@
 
 .method private constructor <init>(Ljava/lang/String;II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "resId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)V"
         }
     .end annotation
 
-    .line 138
+    .line 152
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 139
+    .line 153
     iput p3, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;->resId:I
 
     return-void
@@ -142,8 +155,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 130
+    .line 144
     const-class v0, Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -158,7 +179,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
     .locals 1
 
-    .line 130
+    .line 144
     sget-object v0, Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;->$VALUES:[Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;->clone()Ljava/lang/Object;

@@ -24,10 +24,10 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 47
+    .line 49
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 44
+    .line 46
     new-instance v0, Lcom/google/common/collect/MapMaker;
 
     invoke-direct {v0}, Lcom/google/common/collect/MapMaker;-><init>()V
@@ -36,7 +36,7 @@
 
     const/4 v0, 0x1
 
-    .line 45
+    .line 47
     iput-boolean v0, p0, Lcom/google/common/collect/Interners$InternerBuilder;->strong:Z
 
     return-void
@@ -45,7 +45,7 @@
 .method synthetic constructor <init>(Lcom/google/common/collect/Interners$1;)V
     .locals 0
 
-    .line 43
+    .line 45
     invoke-direct {p0}, Lcom/google/common/collect/Interners$InternerBuilder;-><init>()V
 
     return-void
@@ -65,17 +65,17 @@
         }
     .end annotation
 
-    .line 81
+    .line 83
     iget-boolean v0, p0, Lcom/google/common/collect/Interners$InternerBuilder;->strong:Z
 
     if-nez v0, :cond_0
 
-    .line 82
+    .line 84
     iget-object v0, p0, Lcom/google/common/collect/Interners$InternerBuilder;->mapMaker:Lcom/google/common/collect/MapMaker;
 
     invoke-virtual {v0}, Lcom/google/common/collect/MapMaker;->weakKeys()Lcom/google/common/collect/MapMaker;
 
-    .line 84
+    .line 86
     :cond_0
     new-instance v0, Lcom/google/common/collect/Interners$InternerImpl;
 
@@ -90,8 +90,16 @@
 
 .method public concurrencyLevel(I)Lcom/google/common/collect/Interners$InternerBuilder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "concurrencyLevel"
+        }
+    .end annotation
 
-    .line 76
+    .line 78
     iget-object v0, p0, Lcom/google/common/collect/Interners$InternerBuilder;->mapMaker:Lcom/google/common/collect/MapMaker;
 
     invoke-virtual {v0, p1}, Lcom/google/common/collect/MapMaker;->concurrencyLevel(I)Lcom/google/common/collect/MapMaker;
@@ -104,7 +112,7 @@
 
     const/4 v0, 0x1
 
-    .line 55
+    .line 57
     iput-boolean v0, p0, Lcom/google/common/collect/Interners$InternerBuilder;->strong:Z
 
     return-object p0
@@ -115,7 +123,7 @@
 
     const/4 v0, 0x0
 
-    .line 66
+    .line 68
     iput-boolean v0, p0, Lcom/google/common/collect/Interners$InternerBuilder;->strong:Z
 
     return-object p0

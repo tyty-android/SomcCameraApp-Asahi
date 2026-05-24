@@ -3,7 +3,7 @@
 .source "CameraSettings.java"
 
 # interfaces
-.implements Ljp/co/sony/mc/camera/setting/SettingsBase$GetOptionsCommand;
+.implements Ljp/co/sony/mc/camera/setting/SettingsBase$SetCommand;
 
 
 # annotations
@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 2090
+    .line 2306
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,8 +29,23 @@
 
 
 # virtual methods
-.method public getOptions(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
-    .locals 1
+.method public setValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljava/util/Map;)Z
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key",
+            "value",
+            "listenersMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -38,37 +53,23 @@
             ">(",
             "Ljp/co/sony/mc/camera/setting/SettingsBase;",
             "Ljp/co/sony/mc/camera/setting/SettingKey$Key<",
-            "TT;>;)[TT;"
+            "TT;>;TT;",
+            "Ljava/util/Map<",
+            "Ljp/co/sony/mc/camera/setting/CameraProSettingChangedListener;",
+            "Landroid/os/Handler;",
+            ">;)Z"
         }
     .end annotation
 
-    .line 2094
+    .line 2310
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 2095
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCapturingMode(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    .line 2311
+    check-cast p3, [Ljava/lang/Integer;
 
-    move-result-object p0
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetAiSuggestionSubPreviewDisplayIndexes(Ljp/co/sony/mc/camera/setting/CameraSettings;[Ljava/lang/Integer;)Z
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCameraId(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    move-result p0
 
-    move-result-object p2
-
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCaptureFps(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
-
-    move-result-object v0
-
-    .line 2097
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetVideoMfHdr(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
-
-    move-result-object p1
-
-    .line 2095
-    invoke-static {p0, p2, v0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
-
-    move-result-object p0
-
-    check-cast p0, [Ljava/lang/Object;
-
-    return-object p0
+    return p0
 .end method

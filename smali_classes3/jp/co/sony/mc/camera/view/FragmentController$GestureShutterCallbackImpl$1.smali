@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController$GestureShutterCallbackImpl;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
-    .line 5885
+    .line 4792
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$GestureShutterCallbackImpl$1;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$GestureShutterCallbackImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +46,7 @@
 .method public getCountDownIconId()I
     .locals 0
 
-    const p0, 0x7f080218
+    const p0, 0x7f080274
 
     return p0
 .end method

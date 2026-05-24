@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/widget/FinderArea;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 98
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/FinderArea$FinderAreaTouchEventListener;->this$0:Ljp/co/sony/mc/camera/view/widget/FinderArea;
@@ -37,6 +45,16 @@
 # virtual methods
 .method public declared-synchronized onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "motion"
+        }
+    .end annotation
 
     monitor-enter p0
 

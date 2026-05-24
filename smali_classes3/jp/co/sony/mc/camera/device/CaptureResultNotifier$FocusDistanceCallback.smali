@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract onFocusDistanceChanged(F)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "focusDistance"
+        }
+    .end annotation
 .end method

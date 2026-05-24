@@ -38,6 +38,21 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;Ljava/util/List;Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "changedKeyNames",
+            "settingsHolder",
+            "isTriggerExternalDisplay"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -49,18 +64,18 @@
         }
     .end annotation
 
-    .line 5831
+    .line 4738
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$SurfaceSwitchCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 5832
+    .line 4739
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$SurfaceSwitchCallbackImpl;->mChangedKeyNames:Ljava/util/List;
 
-    .line 5833
+    .line 4740
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/FragmentController$SurfaceSwitchCallbackImpl;->mSettingsHolder:Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
 
-    .line 5834
+    .line 4741
     iput-boolean p4, p0, Ljp/co/sony/mc/camera/view/FragmentController$SurfaceSwitchCallbackImpl;->mIsTriggerExternalDisplay:Z
 
     return-void
@@ -79,7 +94,7 @@
 .method public onPrepared()V
     .locals 6
 
-    .line 5840
+    .line 4747
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SurfaceSwitchCallbackImpl;->mIsTriggerExternalDisplay:Z
 
     const/4 v1, 0x0
@@ -94,7 +109,7 @@
 
     if-nez v0, :cond_0
 
-    .line 5842
+    .line 4749
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SurfaceSwitchCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraAccessor(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraAccessor;
@@ -115,7 +130,7 @@
 
     goto :goto_0
 
-    .line 5846
+    .line 4753
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SurfaceSwitchCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -133,7 +148,7 @@
 
     invoke-interface {v0, v2, v3}, Ljp/co/sony/mc/camera/CameraAccessor;->restartPreviewSession(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljp/co/sony/mc/camera/CameraAccessor$PreviewCallback;)V
 
-    .line 5852
+    .line 4759
     :goto_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SurfaceSwitchCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -141,7 +156,7 @@
 
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$msetupPositionConverter(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;)V
 
-    .line 5853
+    .line 4760
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SurfaceSwitchCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SurfaceSwitchCallbackImpl;->mSettingsHolder:Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;

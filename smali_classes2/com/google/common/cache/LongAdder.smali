@@ -7,6 +7,11 @@
 .implements Lcom/google/common/cache/LongAddable;
 
 
+# annotations
+.annotation runtime Lcom/google/common/cache/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # static fields
 .field private static final serialVersionUID:J = 0x6499de12a37d0a3dL
 
@@ -15,7 +20,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 53
+    .line 54
     invoke-direct {p0}, Lcom/google/common/cache/Striped64;-><init>()V
 
     return-void
@@ -23,6 +28,15 @@
 
 .method private readObject(Ljava/io/ObjectInputStream;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "s"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -30,20 +44,20 @@
         }
     .end annotation
 
-    .line 188
+    .line 189
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->defaultReadObject()V
 
     const/4 v0, 0x0
 
-    .line 189
+    .line 190
     iput v0, p0, Lcom/google/common/cache/LongAdder;->busy:I
 
     const/4 v0, 0x0
 
-    .line 190
+    .line 191
     iput-object v0, p0, Lcom/google/common/cache/LongAdder;->cells:[Lcom/google/common/cache/Striped64$Cell;
 
-    .line 191
+    .line 192
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readLong()J
 
     move-result-wide v0
@@ -55,16 +69,25 @@
 
 .method private writeObject(Ljava/io/ObjectOutputStream;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "s"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 183
+    .line 184
     invoke-virtual {p1}, Ljava/io/ObjectOutputStream;->defaultWriteObject()V
 
-    .line 184
+    .line 185
     invoke-virtual {p0}, Lcom/google/common/cache/LongAdder;->sum()J
 
     move-result-wide v0
@@ -78,8 +101,16 @@
 # virtual methods
 .method public add(J)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "x"
+        }
+    .end annotation
 
-    .line 67
+    .line 68
     iget-object v0, p0, Lcom/google/common/cache/LongAdder;->cells:[Lcom/google/common/cache/Striped64$Cell;
 
     if-nez v0, :cond_0
@@ -94,7 +125,7 @@
 
     if-nez v1, :cond_2
 
-    .line 69
+    .line 70
     :cond_0
     sget-object v1, Lcom/google/common/cache/LongAdder;->threadHashCode:Ljava/lang/ThreadLocal;
 
@@ -130,7 +161,7 @@
 
     add-long v4, v2, p1
 
-    .line 73
+    .line 74
     invoke-virtual {v0, v2, v3, v4, v5}, Lcom/google/common/cache/Striped64$Cell;->cas(JJ)Z
 
     move-result v2
@@ -149,7 +180,7 @@
 
     const-wide/16 v0, -0x1
 
-    .line 85
+    .line 86
     invoke-virtual {p0, v0, v1}, Lcom/google/common/cache/LongAdder;->add(J)V
 
     return-void
@@ -158,7 +189,7 @@
 .method public doubleValue()D
     .locals 2
 
-    .line 179
+    .line 180
     invoke-virtual {p0}, Lcom/google/common/cache/LongAdder;->sum()J
 
     move-result-wide v0
@@ -171,7 +202,7 @@
 .method public floatValue()F
     .locals 2
 
-    .line 173
+    .line 174
     invoke-virtual {p0}, Lcom/google/common/cache/LongAdder;->sum()J
 
     move-result-wide v0
@@ -183,6 +214,16 @@
 
 .method final fn(JJ)J
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "v",
+            "x"
+        }
+    .end annotation
 
     add-long/2addr p1, p3
 
@@ -194,7 +235,7 @@
 
     const-wide/16 v0, 0x1
 
-    .line 80
+    .line 81
     invoke-virtual {p0, v0, v1}, Lcom/google/common/cache/LongAdder;->add(J)V
 
     return-void
@@ -203,7 +244,7 @@
 .method public intValue()I
     .locals 2
 
-    .line 167
+    .line 168
     invoke-virtual {p0}, Lcom/google/common/cache/LongAdder;->sum()J
 
     move-result-wide v0
@@ -216,7 +257,7 @@
 .method public longValue()J
     .locals 2
 
-    .line 161
+    .line 162
     invoke-virtual {p0}, Lcom/google/common/cache/LongAdder;->sum()J
 
     move-result-wide v0
@@ -229,7 +270,7 @@
 
     const-wide/16 v0, 0x0
 
-    .line 116
+    .line 117
     invoke-virtual {p0, v0, v1}, Lcom/google/common/cache/LongAdder;->internalReset(J)V
 
     return-void
@@ -238,15 +279,15 @@
 .method public sum()J
     .locals 6
 
-    .line 97
+    .line 98
     iget-wide v0, p0, Lcom/google/common/cache/LongAdder;->base:J
 
-    .line 98
+    .line 99
     iget-object p0, p0, Lcom/google/common/cache/LongAdder;->cells:[Lcom/google/common/cache/Striped64$Cell;
 
     if-eqz p0, :cond_1
 
-    .line 100
+    .line 101
     array-length v2, p0
 
     const/4 v3, 0x0
@@ -254,12 +295,12 @@
     :goto_0
     if-ge v3, v2, :cond_1
 
-    .line 102
+    .line 103
     aget-object v4, p0, v3
 
     if-eqz v4, :cond_0
 
-    .line 103
+    .line 104
     iget-wide v4, v4, Lcom/google/common/cache/Striped64$Cell;->value:J
 
     add-long/2addr v0, v4
@@ -276,20 +317,20 @@
 .method public sumThenReset()J
     .locals 9
 
-    .line 128
+    .line 129
     iget-wide v0, p0, Lcom/google/common/cache/LongAdder;->base:J
 
-    .line 129
+    .line 130
     iget-object v2, p0, Lcom/google/common/cache/LongAdder;->cells:[Lcom/google/common/cache/Striped64$Cell;
 
     const-wide/16 v3, 0x0
 
-    .line 130
+    .line 131
     iput-wide v3, p0, Lcom/google/common/cache/LongAdder;->base:J
 
     if-eqz v2, :cond_1
 
-    .line 132
+    .line 133
     array-length p0, v2
 
     const/4 v5, 0x0
@@ -297,17 +338,17 @@
     :goto_0
     if-ge v5, p0, :cond_1
 
-    .line 134
+    .line 135
     aget-object v6, v2, v5
 
     if-eqz v6, :cond_0
 
-    .line 136
+    .line 137
     iget-wide v7, v6, Lcom/google/common/cache/Striped64$Cell;->value:J
 
     add-long/2addr v0, v7
 
-    .line 137
+    .line 138
     iput-wide v3, v6, Lcom/google/common/cache/Striped64$Cell;->value:J
 
     :cond_0
@@ -322,7 +363,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 151
+    .line 152
     invoke-virtual {p0}, Lcom/google/common/cache/LongAdder;->sum()J
 
     move-result-wide v0

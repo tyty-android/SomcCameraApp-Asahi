@@ -3,6 +3,11 @@
 .source "Runnables.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/util/concurrent/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # static fields
 .field private static final EMPTY_RUNNABLE:Ljava/lang/Runnable;
 
@@ -11,7 +16,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 29
+    .line 28
     new-instance v0, Lcom/google/common/util/concurrent/Runnables$1;
 
     invoke-direct {v0}, Lcom/google/common/util/concurrent/Runnables$1;-><init>()V
@@ -24,7 +29,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 40
+    .line 39
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -33,7 +38,7 @@
 .method public static doNothing()Ljava/lang/Runnable;
     .locals 1
 
-    .line 37
+    .line 36
     sget-object v0, Lcom/google/common/util/concurrent/Runnables;->EMPTY_RUNNABLE:Ljava/lang/Runnable;
 
     return-object v0

@@ -14,9 +14,9 @@
 
 
 # static fields
-.field public static final tooltip_description:I = 0x7f1105b5
+.field public static final tooltip_description:I = 0x7f110618
 
-.field public static final tooltip_label:I = 0x7f1105b6
+.field public static final tooltip_label:I = 0x7f110619
 
 
 # direct methods

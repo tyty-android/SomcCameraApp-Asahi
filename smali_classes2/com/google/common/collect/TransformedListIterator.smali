@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<F:",
@@ -25,6 +28,15 @@
 # direct methods
 .method constructor <init>(Ljava/util/ListIterator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "backingIterator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -33,7 +45,7 @@
         }
     .end annotation
 
-    .line 33
+    .line 35
     invoke-direct {p0, p1}, Lcom/google/common/collect/TransformedIterator;-><init>(Ljava/util/Iterator;)V
 
     return-void
@@ -49,12 +61,10 @@
         }
     .end annotation
 
-    .line 37
+    .line 39
     iget-object p0, p0, Lcom/google/common/collect/TransformedListIterator;->backingIterator:Ljava/util/Iterator;
 
-    invoke-static {p0}, Lcom/google/common/collect/Iterators;->cast(Ljava/util/Iterator;)Ljava/util/ListIterator;
-
-    move-result-object p0
+    check-cast p0, Ljava/util/ListIterator;
 
     return-object p0
 .end method
@@ -63,13 +73,26 @@
 # virtual methods
 .method public add(Ljava/lang/Object;)V
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "element"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)V"
         }
     .end annotation
 
-    .line 67
+    .line 70
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -80,7 +103,7 @@
 .method public final hasPrevious()Z
     .locals 0
 
-    .line 42
+    .line 44
     invoke-direct {p0}, Lcom/google/common/collect/TransformedListIterator;->backingIterator()Ljava/util/ListIterator;
 
     move-result-object p0
@@ -95,7 +118,7 @@
 .method public final nextIndex()I
     .locals 0
 
-    .line 52
+    .line 55
     invoke-direct {p0}, Lcom/google/common/collect/TransformedListIterator;->backingIterator()Ljava/util/ListIterator;
 
     move-result-object p0
@@ -109,13 +132,16 @@
 
 .method public final previous()Ljava/lang/Object;
     .locals 1
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TT;"
         }
     .end annotation
 
-    .line 47
+    .line 50
     invoke-direct {p0}, Lcom/google/common/collect/TransformedListIterator;->backingIterator()Ljava/util/ListIterator;
 
     move-result-object v0
@@ -134,7 +160,7 @@
 .method public final previousIndex()I
     .locals 0
 
-    .line 57
+    .line 60
     invoke-direct {p0}, Lcom/google/common/collect/TransformedListIterator;->backingIterator()Ljava/util/ListIterator;
 
     move-result-object p0
@@ -148,13 +174,26 @@
 
 .method public set(Ljava/lang/Object;)V
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "element"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)V"
         }
     .end annotation
 
-    .line 62
+    .line 65
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V

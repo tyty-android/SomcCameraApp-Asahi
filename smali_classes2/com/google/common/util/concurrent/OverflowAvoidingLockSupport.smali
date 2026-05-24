@@ -3,6 +3,11 @@
 .source "OverflowAvoidingLockSupport.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/util/concurrent/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # static fields
 .field static final MAX_NANOSECONDS_THRESHOLD:J = 0x1dcd64ffffffffffL
 
@@ -11,7 +16,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 30
+    .line 33
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -20,13 +25,23 @@
 .method static parkNanos(Ljava/lang/Object;J)V
     .locals 2
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "blocker",
+            "nanos"
+        }
+    .end annotation
 
     const-wide v0, 0x1dcd64ffffffffffL    # 3.98785104510193E-165
 
-    .line 35
+    .line 38
     invoke-static {p1, p2, v0, v1}, Ljava/lang/Math;->min(JJ)J
 
     move-result-wide p1

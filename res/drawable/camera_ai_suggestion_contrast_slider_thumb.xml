@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <rotate android:drawable="@drawable/camera_contrast_slider_button_disabled_icn" android:fromDegrees="90.0" android:toDegrees="90.0" android:pivotX="50.0%" android:pivotY="50.0%" />
+    </item>
+    <item android:state_pressed="true">
+        <rotate android:drawable="@drawable/camera_contrast_slider_button_pressed_icn" android:fromDegrees="90.0" android:toDegrees="90.0" android:pivotX="50.0%" android:pivotY="50.0%" />
+    </item>
+    <item>
+        <rotate android:drawable="@drawable/camera_contrast_slider_button_icn" android:fromDegrees="90.0" android:toDegrees="90.0" android:pivotX="50.0%" android:pivotY="50.0%" />
+    </item>
+</selector>

@@ -26,13 +26,24 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/CameraActivity;Ljp/co/sony/mc/camera/CameraActivity$PermissionCheckCallback;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$callback"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 2514
+    .line 2473
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$15;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/CameraActivity$15;->val$callback:Ljp/co/sony/mc/camera/CameraActivity$PermissionCheckCallback;
@@ -46,8 +57,20 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "requestCode",
+            "resultCode",
+            "data"
+        }
+    .end annotation
 
-    .line 2522
+    .line 2481
     sget-boolean p3, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     const/4 v0, 0x1
@@ -98,24 +121,24 @@
 
     if-ne p2, p1, :cond_4
 
-    .line 2531
+    .line 2490
     iget-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$15;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
-    .line 2532
+    .line 2491
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/PermissionsUtil;->arePermissionsGranted(Landroid/content/Context;)Z
 
     move-result p1
 
     if-nez p1, :cond_2
 
-    .line 2533
+    .line 2492
     iget-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$15;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/CameraActivity;->finish()V
 
     goto :goto_0
 
-    .line 2535
+    .line 2494
     :cond_2
     iget-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$15;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
@@ -125,17 +148,17 @@
 
     if-nez p1, :cond_3
 
-    .line 2536
+    .line 2495
     iget-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$15;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$msetup(Ljp/co/sony/mc/camera/CameraActivity;)V
 
-    .line 2537
+    .line 2496
     iget-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$15;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {p1, v0}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fputmIsSetupCompleted(Ljp/co/sony/mc/camera/CameraActivity;Z)V
 
-    .line 2540
+    .line 2499
     :cond_3
     iget-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$15;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
@@ -145,12 +168,12 @@
 
     if-nez p1, :cond_4
 
-    .line 2541
+    .line 2500
     iget-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$15;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$mshowRecommendedSettingsIfNeeded(Ljp/co/sony/mc/camera/CameraActivity;)Z
 
-    .line 2553
+    .line 2512
     :cond_4
     :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$15;->val$callback:Ljp/co/sony/mc/camera/CameraActivity$PermissionCheckCallback;
@@ -159,7 +182,7 @@
 
     const/4 p1, 0x0
 
-    .line 2554
+    .line 2513
     invoke-interface {p0, p1}, Ljp/co/sony/mc/camera/CameraActivity$PermissionCheckCallback;->onPermissionChecked([Ljava/lang/String;)Z
 
     :cond_5

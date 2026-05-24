@@ -35,11 +35,19 @@
 # direct methods
 .method private constructor <init>(Lcom/google/common/primitives/ImmutableDoubleArray;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "parent"
+        }
+    .end annotation
 
-    .line 423
+    .line 500
     invoke-direct {p0}, Ljava/util/AbstractList;-><init>()V
 
-    .line 424
+    .line 501
     iput-object p1, p0, Lcom/google/common/primitives/ImmutableDoubleArray$AsList;->parent:Lcom/google/common/primitives/ImmutableDoubleArray;
 
     return-void
@@ -48,7 +56,7 @@
 .method synthetic constructor <init>(Lcom/google/common/primitives/ImmutableDoubleArray;Lcom/google/common/primitives/ImmutableDoubleArray$1;)V
     .locals 0
 
-    .line 420
+    .line 497
     invoke-direct {p0, p1}, Lcom/google/common/primitives/ImmutableDoubleArray$AsList;-><init>(Lcom/google/common/primitives/ImmutableDoubleArray;)V
 
     return-void
@@ -58,8 +66,20 @@
 # virtual methods
 .method public contains(Ljava/lang/Object;)Z
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "target"
+        }
+    .end annotation
 
-    .line 441
+    .line 518
     invoke-virtual {p0, p1}, Lcom/google/common/primitives/ImmutableDoubleArray$AsList;->indexOf(Ljava/lang/Object;)I
 
     move-result p0
@@ -80,19 +100,27 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 7
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 461
+    .line 550
     instance-of v0, p1, Lcom/google/common/primitives/ImmutableDoubleArray$AsList;
 
     if-eqz v0, :cond_0
 
-    .line 462
+    .line 551
     check-cast p1, Lcom/google/common/primitives/ImmutableDoubleArray$AsList;
 
-    .line 463
+    .line 552
     iget-object p0, p0, Lcom/google/common/primitives/ImmutableDoubleArray$AsList;->parent:Lcom/google/common/primitives/ImmutableDoubleArray;
 
     iget-object p1, p1, Lcom/google/common/primitives/ImmutableDoubleArray$AsList;->parent:Lcom/google/common/primitives/ImmutableDoubleArray;
@@ -103,7 +131,7 @@
 
     return p0
 
-    .line 466
+    .line 555
     :cond_0
     instance-of v0, p1, Ljava/util/List;
 
@@ -113,11 +141,11 @@
 
     return v1
 
-    .line 469
+    .line 558
     :cond_1
     check-cast p1, Ljava/util/List;
 
-    .line 470
+    .line 559
     invoke-virtual {p0}, Lcom/google/common/primitives/ImmutableDoubleArray$AsList;->size()I
 
     move-result v0
@@ -130,7 +158,7 @@
 
     return v1
 
-    .line 473
+    .line 562
     :cond_2
     iget-object v0, p0, Lcom/google/common/primitives/ImmutableDoubleArray$AsList;->parent:Lcom/google/common/primitives/ImmutableDoubleArray;
 
@@ -138,7 +166,7 @@
 
     move-result v0
 
-    .line 475
+    .line 564
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -154,7 +182,7 @@
 
     move-result-object v2
 
-    .line 476
+    .line 565
     instance-of v3, v2, Ljava/lang/Double;
 
     if-eqz v3, :cond_4
@@ -200,8 +228,16 @@
 
 .method public get(I)Ljava/lang/Double;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
-    .line 436
+    .line 513
     iget-object p0, p0, Lcom/google/common/primitives/ImmutableDoubleArray$AsList;->parent:Lcom/google/common/primitives/ImmutableDoubleArray;
 
     invoke-virtual {p0, p1}, Lcom/google/common/primitives/ImmutableDoubleArray;->get(I)D
@@ -217,8 +253,16 @@
 
 .method public bridge synthetic get(I)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
-    .line 420
+    .line 497
     invoke-virtual {p0, p1}, Lcom/google/common/primitives/ImmutableDoubleArray$AsList;->get(I)Ljava/lang/Double;
 
     move-result-object p0
@@ -229,7 +273,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 486
+    .line 575
     iget-object p0, p0, Lcom/google/common/primitives/ImmutableDoubleArray$AsList;->parent:Lcom/google/common/primitives/ImmutableDoubleArray;
 
     invoke-virtual {p0}, Lcom/google/common/primitives/ImmutableDoubleArray;->hashCode()I
@@ -241,8 +285,20 @@
 
 .method public indexOf(Ljava/lang/Object;)I
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "target"
+        }
+    .end annotation
 
-    .line 446
+    .line 523
     instance-of v0, p1, Ljava/lang/Double;
 
     if-eqz v0, :cond_0
@@ -270,8 +326,20 @@
 
 .method public lastIndexOf(Ljava/lang/Object;)I
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "target"
+        }
+    .end annotation
 
-    .line 451
+    .line 528
     instance-of v0, p1, Ljava/lang/Double;
 
     if-eqz v0, :cond_0
@@ -300,7 +368,7 @@
 .method public size()I
     .locals 0
 
-    .line 431
+    .line 508
     iget-object p0, p0, Lcom/google/common/primitives/ImmutableDoubleArray$AsList;->parent:Lcom/google/common/primitives/ImmutableDoubleArray;
 
     invoke-virtual {p0}, Lcom/google/common/primitives/ImmutableDoubleArray;->length()I
@@ -310,8 +378,40 @@
     return p0
 .end method
 
+.method public spliterator()Ljava/util/Spliterator;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Spliterator<",
+            "Ljava/lang/Double;",
+            ">;"
+        }
+    .end annotation
+
+    .line 545
+    iget-object p0, p0, Lcom/google/common/primitives/ImmutableDoubleArray$AsList;->parent:Lcom/google/common/primitives/ImmutableDoubleArray;
+
+    invoke-virtual {p0}, Lcom/google/common/primitives/ImmutableDoubleArray;->spliterator()Ljava/util/Spliterator$OfDouble;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public subList(II)Ljava/util/List;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromIndex",
+            "toIndex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -321,7 +421,7 @@
         }
     .end annotation
 
-    .line 456
+    .line 533
     iget-object p0, p0, Lcom/google/common/primitives/ImmutableDoubleArray$AsList;->parent:Lcom/google/common/primitives/ImmutableDoubleArray;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/common/primitives/ImmutableDoubleArray;->subArray(II)Lcom/google/common/primitives/ImmutableDoubleArray;
@@ -338,7 +438,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 491
+    .line 580
     iget-object p0, p0, Lcom/google/common/primitives/ImmutableDoubleArray$AsList;->parent:Lcom/google/common/primitives/ImmutableDoubleArray;
 
     invoke-virtual {p0}, Lcom/google/common/primitives/ImmutableDoubleArray;->toString()Ljava/lang/String;

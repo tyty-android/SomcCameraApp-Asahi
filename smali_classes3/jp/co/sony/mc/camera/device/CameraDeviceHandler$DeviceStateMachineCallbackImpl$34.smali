@@ -28,13 +28,26 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl;[Landroid/hardware/camera2/params/MeteringRectangle;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$1",
+            "val$focusRegions",
+            "val$isAfSuccess"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 5392
+    .line 5667
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl$34;->this$1:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl$34;->val$focusRegions:[Landroid/hardware/camera2/params/MeteringRectangle;
@@ -51,7 +64,7 @@
 .method public run()V
     .locals 5
 
-    .line 5395
+    .line 5670
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl$34;->this$1:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl;->this$0:Ljp/co/sony/mc/camera/device/CameraDeviceHandler;
@@ -64,7 +77,7 @@
 
     return-void
 
-    .line 5400
+    .line 5675
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl$34;->val$focusRegions:[Landroid/hardware/camera2/params/MeteringRectangle;
 
@@ -74,7 +87,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 5401
+    .line 5676
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_1
@@ -103,13 +116,13 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 5402
+    .line 5677
     :cond_1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 5403
+    .line 5678
     iget-object v2, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl$34;->val$focusRegions:[Landroid/hardware/camera2/params/MeteringRectangle;
 
     array-length v3, v2
@@ -119,7 +132,7 @@
 
     aget-object v4, v2, v1
 
-    .line 5404
+    .line 5679
     invoke-virtual {v4}, Landroid/hardware/camera2/params/MeteringRectangle;->getRect()Landroid/graphics/Rect;
 
     move-result-object v4
@@ -130,7 +143,7 @@
 
     goto :goto_0
 
-    .line 5406
+    .line 5681
     :cond_2
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -146,7 +159,7 @@
 
     goto :goto_1
 
-    .line 5408
+    .line 5683
     :cond_3
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
@@ -163,7 +176,7 @@
     :cond_4
     const/4 v0, 0x0
 
-    .line 5413
+    .line 5688
     :goto_1
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl$34;->this$1:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl;
 

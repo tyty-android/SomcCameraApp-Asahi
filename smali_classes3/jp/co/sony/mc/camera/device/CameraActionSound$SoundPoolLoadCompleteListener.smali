@@ -24,6 +24,14 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/device/CameraActionSound;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 466
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/CameraActionSound$SoundPoolLoadCompleteListener;->this$0:Ljp/co/sony/mc/camera/device/CameraActionSound;
@@ -45,6 +53,18 @@
 # virtual methods
 .method public onLoadComplete(Landroid/media/SoundPool;II)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "soundPool",
+            "sampleId",
+            "status"
+        }
+    .end annotation
 
     .line 470
     invoke-static {}, Ljp/co/sony/mc/camera/device/CameraActionSound$Type;->values()[Ljp/co/sony/mc/camera/device/CameraActionSound$Type;

@@ -23,14 +23,22 @@
 # direct methods
 .method constructor <init>([[C)V
     .locals 0
-
-    .line 46
-    invoke-direct {p0}, Lcom/google/common/escape/CharEscaper;-><init>()V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "replacements"
+        }
+    .end annotation
 
     .line 47
-    iput-object p1, p0, Lcom/google/common/escape/CharEscaperBuilder$CharArrayDecorator;->replacements:[[C
+    invoke-direct {p0}, Lcom/google/common/escape/CharEscaper;-><init>()V
 
     .line 48
+    iput-object p1, p0, Lcom/google/common/escape/CharEscaperBuilder$CharArrayDecorator;->replacements:[[C
+
+    .line 49
     array-length p1, p1
 
     iput p1, p0, Lcom/google/common/escape/CharEscaperBuilder$CharArrayDecorator;->replaceLength:I
@@ -42,8 +50,16 @@
 # virtual methods
 .method public escape(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "s"
+        }
+    .end annotation
 
-    .line 57
+    .line 58
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -53,12 +69,12 @@
     :goto_0
     if-ge v1, v0, :cond_1
 
-    .line 59
+    .line 60
     invoke-virtual {p1, v1}, Ljava/lang/String;->charAt(I)C
 
     move-result v2
 
-    .line 60
+    .line 61
     iget-object v3, p0, Lcom/google/common/escape/CharEscaperBuilder$CharArrayDecorator;->replacements:[[C
 
     array-length v4, v3
@@ -69,7 +85,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 61
+    .line 62
     invoke-virtual {p0, p1, v1}, Lcom/google/common/escape/CharEscaperBuilder$CharArrayDecorator;->escapeSlow(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p0
@@ -87,8 +103,19 @@
 
 .method protected escape(C)[C
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
 
-    .line 69
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 71
     iget v0, p0, Lcom/google/common/escape/CharEscaperBuilder$CharArrayDecorator;->replaceLength:I
 
     if-ge p1, v0, :cond_0

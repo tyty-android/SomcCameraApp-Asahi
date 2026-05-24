@@ -37,6 +37,16 @@
 
 .method public constructor <init>(II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "width",
+            "height"
+        }
+    .end annotation
 
     .line 34
     invoke-direct {p0, p1, p2}, Ljp/co/sony/mc/camera/status/eachcamera/ResolutionValue;-><init>(II)V
@@ -46,6 +56,14 @@
 
 .method public constructor <init>(Landroid/graphics/Rect;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "rect"
+        }
+    .end annotation
 
     .line 41
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/status/eachcamera/ResolutionValue;-><init>(Landroid/graphics/Rect;)V

@@ -57,7 +57,7 @@
 .method public bridge synthetic emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
 
-    .line 315
+    .line 330
     check-cast p1, Ljava/lang/Boolean;
 
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
@@ -84,7 +84,7 @@
         }
     .end annotation
 
-    .line 316
+    .line 331
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton$bindViews$2$1;->this$0:Ljp/co/sony/mc/camera/view/widget/CaptureButton;
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->access$getBinding$p(Ljp/co/sony/mc/camera/view/widget/CaptureButton;)Ljp/co/sony/mc/camera/databinding/CaptureButtonLayoutBinding;
@@ -101,7 +101,7 @@
 
     invoke-static {p2, p1}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setAnimatedVisibility(Landroid/view/View;Z)V
 
-    .line 317
+    .line 332
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton$bindViews$2$1;->this$0:Ljp/co/sony/mc/camera/view/widget/CaptureButton;
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->access$getBinding$p(Ljp/co/sony/mc/camera/view/widget/CaptureButton;)Ljp/co/sony/mc/camera/databinding/CaptureButtonLayoutBinding;
@@ -118,7 +118,7 @@
 
     invoke-static {p2, p1}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setAnimatedVisibility(Landroid/view/View;Z)V
 
-    .line 318
+    .line 333
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton$bindViews$2$1;->this$0:Ljp/co/sony/mc/camera/view/widget/CaptureButton;
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->access$getBinding$p(Ljp/co/sony/mc/camera/view/widget/CaptureButton;)Ljp/co/sony/mc/camera/databinding/CaptureButtonLayoutBinding;
@@ -135,7 +135,7 @@
 
     invoke-static {p2, p1}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setAnimatedVisibility(Landroid/view/View;Z)V
 
-    .line 319
+    .line 334
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton$bindViews$2$1;->this$0:Ljp/co/sony/mc/camera/view/widget/CaptureButton;
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->access$getBinding$p(Ljp/co/sony/mc/camera/view/widget/CaptureButton;)Ljp/co/sony/mc/camera/databinding/CaptureButtonLayoutBinding;
@@ -144,7 +144,7 @@
 
     iget-object p2, p2, Ljp/co/sony/mc/camera/databinding/CaptureButtonLayoutBinding;->scrollPoints:Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    const-string v0, "scrollPoints"
+    const-string/jumbo v0, "scrollPoints"
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -152,7 +152,7 @@
 
     invoke-static {p2, p1}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setAnimatedVisibility(Landroid/view/View;Z)V
 
-    .line 320
+    .line 335
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton$bindViews$2$1;->this$0:Ljp/co/sony/mc/camera/view/widget/CaptureButton;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->access$getBinding$p(Ljp/co/sony/mc/camera/view/widget/CaptureButton;)Ljp/co/sony/mc/camera/databinding/CaptureButtonLayoutBinding;
@@ -165,7 +165,7 @@
 
     invoke-virtual {p0, p1}, Landroid/widget/ImageView;->setTranslationX(F)V
 
-    .line 321
+    .line 336
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0

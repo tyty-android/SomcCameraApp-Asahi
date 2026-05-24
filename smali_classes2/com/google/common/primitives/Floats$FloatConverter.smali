@@ -28,7 +28,16 @@
 
 
 # static fields
-.field static final INSTANCE:Lcom/google/common/primitives/Floats$FloatConverter;
+.field static final INSTANCE:Lcom/google/common/base/Converter;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/google/common/base/Converter<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Float;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 .field private static final serialVersionUID:J = 0x1L
 
@@ -37,12 +46,12 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 287
+    .line 300
     new-instance v0, Lcom/google/common/primitives/Floats$FloatConverter;
 
     invoke-direct {v0}, Lcom/google/common/primitives/Floats$FloatConverter;-><init>()V
 
-    sput-object v0, Lcom/google/common/primitives/Floats$FloatConverter;->INSTANCE:Lcom/google/common/primitives/Floats$FloatConverter;
+    sput-object v0, Lcom/google/common/primitives/Floats$FloatConverter;->INSTANCE:Lcom/google/common/base/Converter;
 
     return-void
 .end method
@@ -50,7 +59,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 285
+    .line 298
     invoke-direct {p0}, Lcom/google/common/base/Converter;-><init>()V
 
     return-void
@@ -59,8 +68,8 @@
 .method private readResolve()Ljava/lang/Object;
     .locals 0
 
-    .line 305
-    sget-object p0, Lcom/google/common/primitives/Floats$FloatConverter;->INSTANCE:Lcom/google/common/primitives/Floats$FloatConverter;
+    .line 318
+    sget-object p0, Lcom/google/common/primitives/Floats$FloatConverter;->INSTANCE:Lcom/google/common/base/Converter;
 
     return-object p0
 .end method
@@ -69,8 +78,16 @@
 # virtual methods
 .method protected bridge synthetic doBackward(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 285
+    .line 298
     check-cast p1, Ljava/lang/Float;
 
     invoke-virtual {p0, p1}, Lcom/google/common/primitives/Floats$FloatConverter;->doBackward(Ljava/lang/Float;)Ljava/lang/String;
@@ -82,8 +99,16 @@
 
 .method protected doBackward(Ljava/lang/Float;)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 296
+    .line 309
     invoke-virtual {p1}, Ljava/lang/Float;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -93,8 +118,16 @@
 
 .method protected doForward(Ljava/lang/String;)Ljava/lang/Float;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 291
+    .line 304
     invoke-static {p1}, Ljava/lang/Float;->valueOf(Ljava/lang/String;)Ljava/lang/Float;
 
     move-result-object p0
@@ -104,8 +137,16 @@
 
 .method protected bridge synthetic doForward(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 285
+    .line 298
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/google/common/primitives/Floats$FloatConverter;->doForward(Ljava/lang/String;)Ljava/lang/Float;
@@ -118,7 +159,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 301
+    .line 314
     const-string p0, "Floats.stringConverter()"
 
     return-object p0

@@ -62,12 +62,10 @@
 
 .field public static final enum VIDEO_SLOW_MOTION:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-.field public static final enum VIDEO_STREAMING:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
 
 # direct methods
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-    .locals 22
+    .locals 21
 
     .line 24
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_P:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -96,25 +94,23 @@
 
     sget-object v12, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_MACRO:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v13, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_STREAMING:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v13, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_ONE_SHOT:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v14, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_ONE_SHOT:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v14, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->QUICK_RECORD:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v15, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->QUICK_RECORD:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v15, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_AUTO_FRAMING:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v16, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_AUTO_FRAMING:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v16, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_GIMBAL:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v17, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_GIMBAL:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v17, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_P:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v18, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_P:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v18, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v19, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v19, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v20, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v20, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->UNKNOWN:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v21, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->UNKNOWN:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    filled-new-array/range {v0 .. v21}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    filled-new-array/range {v0 .. v20}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object v0
 
@@ -270,97 +266,86 @@
     .line 44
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const-string v1, "VIDEO_STREAMING"
+    const-string v1, "VIDEO_ONE_SHOT"
 
     const/16 v2, 0xd
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_STREAMING:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_ONE_SHOT:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     .line 45
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const-string v1, "VIDEO_ONE_SHOT"
+    const-string v1, "QUICK_RECORD"
 
     const/16 v2, 0xe
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_ONE_SHOT:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->QUICK_RECORD:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     .line 46
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const-string v1, "QUICK_RECORD"
+    const-string v1, "VIDEO_AUTO_FRAMING"
 
     const/16 v2, 0xf
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->QUICK_RECORD:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_AUTO_FRAMING:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     .line 47
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const-string v1, "VIDEO_AUTO_FRAMING"
+    const-string v1, "VIDEO_GIMBAL"
 
     const/16 v2, 0x10
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_AUTO_FRAMING:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_GIMBAL:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 48
+    .line 50
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const-string v1, "VIDEO_GIMBAL"
+    const-string v1, "VIDEO_PRO_P"
 
     const/16 v2, 0x11
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_GIMBAL:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_P:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     .line 51
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const-string v1, "VIDEO_PRO_P"
+    const-string v1, "VIDEO_PRO_S"
 
     const/16 v2, 0x12
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_P:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     .line 52
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const-string v1, "VIDEO_PRO_S"
+    const-string v1, "VIDEO_PRO_M"
 
     const/16 v2, 0x13
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    .line 53
-    new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    const-string v1, "VIDEO_PRO_M"
-
-    const/16 v2, 0x14
-
-    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;-><init>(Ljava/lang/String;I)V
-
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 55
+    .line 54
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     const-string v1, "UNKNOWN"
 
-    const/16 v2, 0x15
+    const/16 v2, 0x14
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;-><init>(Ljava/lang/String;I)V
 
@@ -378,13 +363,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 61
+    .line 60
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -392,8 +388,18 @@
 
 .method public static convertFrom(Ljava/lang/String;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "name",
+            "defaultMode"
+        }
+    .end annotation
 
-    .line 340
+    .line 361
     :try_start_0
     invoke-static {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
@@ -406,7 +412,7 @@
     :catch_0
     const/4 v0, 0x1
 
-    .line 342
+    .line 363
     new-array v0, v0, [Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -442,7 +448,7 @@
 .method public static getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
     .locals 1
 
-    .line 131
+    .line 136
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     return-object v0
@@ -451,12 +457,12 @@
 .method private isSimplePhoto()Z
     .locals 1
 
-    .line 173
+    .line 188
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
 
-    .line 174
+    .line 189
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-eq p0, v0, :cond_1
@@ -491,12 +497,12 @@
 .method private isSimpleVideo()Z
     .locals 1
 
-    .line 179
+    .line 194
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
 
-    .line 180
+    .line 195
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-eq p0, v0, :cond_1
@@ -510,10 +516,6 @@
     if-eq p0, v0, :cond_1
 
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_MACRO:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    if-eq p0, v0, :cond_1
-
-    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_STREAMING:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-eq p0, v0, :cond_1
 
@@ -546,6 +548,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 24
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -579,7 +589,7 @@
 .method public getCapturingUiMode()Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;
     .locals 1
 
-    .line 351
+    .line 372
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$CapturingMode:[I
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->ordinal()I
@@ -590,93 +600,84 @@
 
     packed-switch p0, :pswitch_data_0
 
-    .line 363
+    .line 383
     sget-object p0, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;->PHOTO:Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;
 
     goto :goto_0
 
-    .line 362
+    .line 382
     :pswitch_0
-    sget-object p0, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;->LIVE_STREAMING:Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;
-
-    goto :goto_0
-
-    .line 361
-    :pswitch_1
     sget-object p0, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;->BOKEH_VIDEO:Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;
 
     goto :goto_0
 
-    .line 360
-    :pswitch_2
+    .line 381
+    :pswitch_1
     sget-object p0, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;->SLOW_MOTION:Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;
 
     goto :goto_0
 
-    .line 359
-    :pswitch_3
+    .line 380
+    :pswitch_2
     sget-object p0, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;->VIDEO_AUTO_FRAMING:Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;
 
     goto :goto_0
 
-    .line 358
-    :pswitch_4
+    .line 379
+    :pswitch_3
     sget-object p0, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;->HI_RESOLUTION:Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;
 
     goto :goto_0
 
-    .line 357
-    :pswitch_5
+    .line 378
+    :pswitch_4
     sget-object p0, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;->TELE_MACRO:Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;
 
     goto :goto_0
 
-    .line 356
-    :pswitch_6
+    .line 377
+    :pswitch_5
     sget-object p0, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;->VIDEO_GIMBAL:Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;
 
     goto :goto_0
 
-    .line 355
-    :pswitch_7
+    .line 376
+    :pswitch_6
     sget-object p0, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;->VIDEO:Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;
 
     goto :goto_0
 
-    .line 354
-    :pswitch_8
+    .line 375
+    :pswitch_7
     sget-object p0, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;->BOKEH:Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;
 
     goto :goto_0
 
-    .line 353
-    :pswitch_9
+    .line 374
+    :pswitch_8
     sget-object p0, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;->PRO_PHOTO:Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;
 
     goto :goto_0
 
-    .line 352
-    :pswitch_a
+    .line 373
+    :pswitch_9
     sget-object p0, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;->PRO_VIDEO:Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;
 
     :goto_0
     return-object p0
 
-    nop
-
     :pswitch_data_0
     .packed-switch 0x1
-        :pswitch_a
-        :pswitch_a
-        :pswitch_a
         :pswitch_9
         :pswitch_9
         :pswitch_9
         :pswitch_8
+        :pswitch_8
+        :pswitch_8
         :pswitch_7
         :pswitch_6
         :pswitch_5
-        :pswitch_5
+        :pswitch_4
         :pswitch_4
         :pswitch_3
         :pswitch_2
@@ -688,128 +689,161 @@
 .method public getDefaultCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
     .locals 2
 
-    .line 108
+    .line 107
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isSeamlessZoom()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 109
-    sget-object p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    return-object p0
-
-    .line 110
-    :cond_0
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isMacro()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
+    .line 108
+    invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
+
+    move-result-object v0
+
+    sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->LAST_AI_SUGGESTION_BOKEH:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+
+    .line 109
+    invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    .line 110
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isBasicPhoto()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    if-eqz v0, :cond_0
+
     .line 111
-    sget-object p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE_PHYSICAL:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    sget-object p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     return-object p0
 
-    .line 112
-    :cond_1
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_6
-
     .line 113
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoFraming()Z
+    :cond_0
+    sget-object p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    move-result v0
+    return-object p0
 
-    if-nez v0, :cond_5
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isGimbal()Z
+    .line 115
+    :cond_1
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isMacro()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    goto :goto_1
+    .line 116
+    sget-object p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE_PHYSICAL:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 115
+    return-object p0
+
+    .line 117
     :cond_2
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isSlowMotion()Z
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
 
     move-result v0
 
-    if-nez v0, :cond_4
+    if-eqz v0, :cond_7
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
+    .line 118
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoFraming()Z
+
+    move-result v0
+
+    if-nez v0, :cond_6
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isGimbal()Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
+    goto :goto_1
+
+    .line 120
+    :cond_3
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isSlowMotion()Z
+
+    move-result v0
+
+    if-nez v0, :cond_5
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
     goto :goto_0
 
-    .line 118
-    :cond_3
+    .line 123
+    :cond_4
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->LAST_BACK_VIDEO_FPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 119
+    .line 124
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/LastBackVideoFps;
 
-    .line 120
+    .line 125
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/configuration/parameters/LastBackVideoFps;->get(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;
 
     move-result-object p0
 
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;->VIDEO_FPS_120:Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;
 
-    if-ne p0, v0, :cond_7
+    if-ne p0, v0, :cond_8
 
-    .line 121
+    .line 126
     sget-object p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->WIDE_PHYSICAL:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     return-object p0
 
-    .line 116
-    :cond_4
+    .line 121
+    :cond_5
     :goto_0
     sget-object p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->WIDE_PHYSICAL:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     return-object p0
 
-    .line 114
-    :cond_5
+    .line 119
+    :cond_6
     :goto_1
     sget-object p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->ULTRA_WIDE_PHYSICAL:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     return-object p0
 
-    .line 124
-    :cond_6
+    .line 129
+    :cond_7
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isHighResolution()Z
 
     move-result p0
 
-    if-eqz p0, :cond_7
+    if-eqz p0, :cond_8
 
-    .line 125
+    .line 130
     sget-object p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->WIDE_PHYSICAL:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     return-object p0
 
-    .line 127
-    :cond_7
+    .line 132
+    :cond_8
     sget-object p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     return-object p0
@@ -826,28 +860,28 @@
 .method public getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
     .locals 1
 
-    .line 328
+    .line 349
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isMemoryRecall()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 329
+    .line 350
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p0
 
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->MEMORY_RECALL_DATA:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 330
+    .line 351
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object p0
 
     check-cast p0, Ljp/co/sony/mc/camera/configuration/parameters/MemoryRecallData;
 
-    .line 331
+    .line 352
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/MemoryRecallData;->getMrMode()Ljp/co/sony/mc/camera/configuration/parameters/MrMode;
 
     move-result-object v0
@@ -863,7 +897,7 @@
 .method public getName()Ljava/lang/String;
     .locals 0
 
-    .line 104
+    .line 103
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p0
@@ -878,7 +912,7 @@
 .method public getSettingKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
     .locals 0
 
-    .line 69
+    .line 68
     sget-object p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     return-object p0
@@ -895,7 +929,7 @@
 .method public getValue()Ljava/lang/String;
     .locals 0
 
-    .line 99
+    .line 98
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -903,15 +937,39 @@
     return-object p0
 .end method
 
-.method public isAutoFraming()Z
+.method public isAiSuggestionSupported()Z
     .locals 1
 
-    .line 313
+    .line 334
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
 
-    .line 314
+    .line 335
+    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    if-ne p0, v0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method public isAutoFraming()Z
+    .locals 1
+
+    .line 324
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    move-result-object p0
+
+    .line 325
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_AUTO_FRAMING:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-ne p0, v0, :cond_0
@@ -930,12 +988,12 @@
 .method public isAutoPhotoMode()Z
     .locals 1
 
-    .line 186
+    .line 201
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object v0
 
-    .line 187
+    .line 202
     invoke-direct {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isSimplePhoto()Z
 
     move-result p0
@@ -964,7 +1022,7 @@
 .method public isBasicLayoutMode()Z
     .locals 1
 
-    .line 256
+    .line 266
     invoke-direct {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isSimplePhoto()Z
 
     move-result v0
@@ -1001,12 +1059,12 @@
 .method public isBasicMode()Z
     .locals 1
 
-    .line 168
+    .line 183
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
 
-    .line 169
+    .line 184
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-eq p0, v0, :cond_1
@@ -1030,15 +1088,63 @@
     return p0
 .end method
 
-.method public isBokeh()Z
+.method public isBasicPhoto()Z
     .locals 1
 
-    .line 221
+    .line 173
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
 
-    .line 222
+    .line 174
+    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    if-ne p0, v0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method public isBasicVideo()Z
+    .locals 1
+
+    .line 178
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    move-result-object p0
+
+    .line 179
+    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    if-ne p0, v0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method public isBokeh()Z
+    .locals 1
+
+    .line 236
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    move-result-object p0
+
+    .line 237
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BOKEH:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-eq p0, v0, :cond_1
@@ -1065,12 +1171,12 @@
 .method public isBokehPhoto()Z
     .locals 1
 
-    .line 226
+    .line 241
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
 
-    .line 227
+    .line 242
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BOKEH:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-ne p0, v0, :cond_0
@@ -1089,12 +1195,12 @@
 .method public isBokehVideo()Z
     .locals 1
 
-    .line 231
+    .line 246
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
 
-    .line 232
+    .line 247
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BOKEH:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-ne p0, v0, :cond_0
@@ -1113,7 +1219,7 @@
 .method public isComputationalModeSupported()Z
     .locals 1
 
-    .line 200
+    .line 215
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
@@ -1144,16 +1250,12 @@
 .method public isFallbackModeSupported()Z
     .locals 2
 
-    .line 265
+    .line 275
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object v0
 
-    .line 266
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_STREAMING:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    if-eq v0, v1, :cond_1
-
+    .line 276
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-eq v0, v1, :cond_1
@@ -1168,7 +1270,6 @@
 
     if-nez v0, :cond_1
 
-    .line 267
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
 
     move-result p0
@@ -1193,12 +1294,12 @@
 .method public isFrontCameraSupported()Z
     .locals 1
 
-    .line 135
+    .line 140
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
 
-    .line 136
+    .line 141
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-eq p0, v0, :cond_1
@@ -1216,10 +1317,6 @@
     if-eq p0, v0, :cond_1
 
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BOKEH:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    if-eq p0, v0, :cond_1
-
-    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_STREAMING:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-eq p0, v0, :cond_1
 
@@ -1249,12 +1346,12 @@
 .method public isGimbal()Z
     .locals 1
 
-    .line 318
+    .line 329
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
 
-    .line 319
+    .line 330
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_GIMBAL:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-ne p0, v0, :cond_0
@@ -1273,12 +1370,12 @@
 .method public isHighResolution()Z
     .locals 1
 
-    .line 241
+    .line 256
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
 
-    .line 242
+    .line 257
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_HI_RESOLUTION:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-ne p0, v0, :cond_0
@@ -1297,12 +1394,12 @@
 .method public isLowLightMode()Z
     .locals 1
 
-    .line 191
+    .line 206
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
 
-    .line 192
+    .line 207
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-eq p0, v0, :cond_1
@@ -1333,12 +1430,12 @@
 .method public isMacro()Z
     .locals 1
 
-    .line 287
+    .line 296
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
 
-    .line 288
+    .line 297
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_MACRO:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-eq p0, v0, :cond_1
@@ -1365,7 +1462,7 @@
 .method public isMemoryRecall()Z
     .locals 1
 
-    .line 204
+    .line 219
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_MR:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-ne p0, v0, :cond_0
@@ -1384,14 +1481,14 @@
 .method public isMore()Z
     .locals 2
 
-    .line 307
+    .line 318
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->MODE_CUSTOM_EXTENSION_DATA:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 308
+    .line 319
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object v0
@@ -1402,7 +1499,7 @@
 
     move-result-object v0
 
-    .line 309
+    .line 320
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getCapturingUiMode()Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;
 
     move-result-object p0
@@ -1417,12 +1514,12 @@
 .method public isOneShot()Z
     .locals 1
 
-    .line 246
+    .line 261
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
 
-    .line 247
+    .line 262
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_ONE_SHOT:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-eq p0, v0, :cond_1
@@ -1449,7 +1546,7 @@
 .method public isPro()Z
     .locals 1
 
-    .line 141
+    .line 146
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProP()Z
 
     move-result v0
@@ -1486,12 +1583,12 @@
 .method public isProM()Z
     .locals 1
 
-    .line 163
+    .line 168
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
 
-    .line 164
+    .line 169
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-eq p0, v0, :cond_1
@@ -1518,12 +1615,12 @@
 .method public isProP()Z
     .locals 1
 
-    .line 153
+    .line 158
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
 
-    .line 154
+    .line 159
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_P:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-eq p0, v0, :cond_1
@@ -1550,7 +1647,7 @@
 .method public isProPhoto()Z
     .locals 1
 
-    .line 145
+    .line 150
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isPro()Z
 
     move-result v0
@@ -1577,12 +1674,12 @@
 .method public isProS()Z
     .locals 1
 
-    .line 158
+    .line 163
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
 
-    .line 159
+    .line 164
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-eq p0, v0, :cond_1
@@ -1609,7 +1706,7 @@
 .method public isProVideo()Z
     .locals 1
 
-    .line 149
+    .line 154
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isPro()Z
 
     move-result v0
@@ -1636,12 +1733,12 @@
 .method public isQuickRecord()Z
     .locals 1
 
-    .line 236
+    .line 251
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
 
-    .line 237
+    .line 252
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->QUICK_RECORD:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-ne p0, v0, :cond_0
@@ -1660,7 +1757,7 @@
 .method public isSceneRecognitionMode()Z
     .locals 0
 
-    .line 196
+    .line 211
     invoke-direct {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isSimplePhoto()Z
 
     move-result p0
@@ -1671,63 +1768,79 @@
 .method public isSeamlessZoom()Z
     .locals 4
 
-    .line 292
+    .line 301
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object v0
 
-    .line 293
+    .line 302
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const/4 v2, 0x1
+    const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    const/4 v3, 0x1
 
-    if-eq v0, v1, :cond_3
+    if-eq v0, v1, :cond_4
 
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BOKEH:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    if-eq v0, v1, :cond_3
+    if-eq v0, v1, :cond_4
 
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_ONE_SHOT:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    if-eq v0, v1, :cond_3
-
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_STREAMING:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-ne v0, v1, :cond_0
 
     goto :goto_1
 
-    .line 298
+    .line 306
     :cond_0
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    if-eq v0, p0, :cond_2
+    if-ne v0, p0, :cond_1
 
-    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BOKEH:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    .line 307
+    invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
-    if-eq v0, p0, :cond_2
+    move-result-object p0
 
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->LAST_AI_SUGGESTION_BOKEH:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+
+    .line 308
+    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Boolean;
+
+    invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
+
+    xor-int/2addr p0, v3
+
+    return p0
+
+    .line 310
+    :cond_1
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_ONE_SHOT:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    if-eq v0, p0, :cond_2
+    if-eq v0, p0, :cond_3
 
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->QUICK_RECORD:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    if-ne v0, p0, :cond_1
+    if-ne v0, p0, :cond_2
 
     goto :goto_0
 
-    :cond_1
-    return v3
-
     :cond_2
-    :goto_0
     return v2
 
-    .line 295
     :cond_3
+    :goto_0
+    return v3
+
+    .line 303
+    :cond_4
     :goto_1
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
@@ -1735,40 +1848,37 @@
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->LAST_BACK_VIDEO_FPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 296
+    .line 304
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/LastBackVideoFps;
 
-    .line 297
+    .line 305
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/configuration/parameters/LastBackVideoFps;->get(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;
 
     move-result-object p0
 
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;->VIDEO_FPS_120:Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;
 
-    if-eq p0, v0, :cond_4
+    if-eq p0, v0, :cond_5
 
-    goto :goto_2
-
-    :cond_4
     move v2, v3
 
-    :goto_2
+    :cond_5
     return v2
 .end method
 
 .method public isSlowMotion()Z
     .locals 1
 
-    .line 216
+    .line 231
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
 
-    .line 217
+    .line 232
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_SLOW_MOTION:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-ne p0, v0, :cond_0
@@ -1784,16 +1894,16 @@
     return p0
 .end method
 
-.method public isStreaming()Z
+.method public isTripodFramingSupported()Z
     .locals 1
 
-    .line 251
+    .line 339
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
 
-    .line 252
-    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_STREAMING:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    .line 340
+    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-ne p0, v0, :cond_0
 
@@ -1811,12 +1921,12 @@
 .method public isUltraHdrSupported()Z
     .locals 1
 
-    .line 276
+    .line 285
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
 
-    .line 277
+    .line 286
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProPhoto()Z
 
     move-result v0
@@ -1857,12 +1967,12 @@
 .method public isVideo()Z
     .locals 1
 
-    .line 208
+    .line 223
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
 
-    .line 209
+    .line 224
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-eq p0, v0, :cond_1
@@ -1879,11 +1989,11 @@
 
     if-eq p0, v0, :cond_1
 
-    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_ONE_SHOT:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_AUTO_FRAMING:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-eq p0, v0, :cond_1
 
-    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_STREAMING:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_GIMBAL:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-eq p0, v0, :cond_1
 
@@ -1903,11 +2013,7 @@
 
     if-eq p0, v0, :cond_1
 
-    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_AUTO_FRAMING:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    if-eq p0, v0, :cond_1
-
-    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_GIMBAL:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_ONE_SHOT:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-ne p0, v0, :cond_0
 

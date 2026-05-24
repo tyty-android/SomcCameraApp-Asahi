@@ -1187,6 +1187,17 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
@@ -1208,6 +1219,14 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     .line 154
     new-instance p0, Ljava/lang/StringBuilder;
@@ -1250,6 +1269,16 @@
 
 .method private log(Ljava/lang/String;J)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "uptimeMillis"
+        }
+    .end annotation
 
     .line 164
     new-instance p0, Ljava/lang/StringBuilder;
@@ -1288,6 +1317,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/util/PerfLog;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 20
     const-class v0, Ljp/co/sony/mc/camera/util/PerfLog;
@@ -1407,6 +1444,14 @@
 
 .method public transit(J)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "uptimeMillis"
+        }
+    .end annotation
 
     .line 148
     sget-boolean v0, Ljp/co/sony/mc/camera/util/PerfLog;->IS_ENABLE:Z

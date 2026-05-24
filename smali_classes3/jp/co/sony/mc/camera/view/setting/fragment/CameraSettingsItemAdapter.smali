@@ -20,6 +20,17 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Ljava/util/List;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "settingItems"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -67,6 +78,14 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
     .line 53
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsItemAdapter;->mSettingItems:Ljava/util/List;
@@ -80,6 +99,14 @@
 
 .method public getItemId(I)J
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
     int-to-long p0, p1
 
@@ -88,6 +115,14 @@
 
 .method getSettingItem(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -134,6 +169,18 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "position",
+            "convertView",
+            "parent"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
@@ -144,7 +191,7 @@
 
     move-result-object p2
 
-    const v0, 0x7f0c00bd
+    const v0, 0x7f0c00b4
 
     const/4 v1, 0x0
 
@@ -197,7 +244,7 @@
     .line 74
     invoke-virtual {p2, v0}, Landroid/view/View;->setSelected(Z)V
 
-    const v0, 0x7f0904a9
+    const v0, 0x7f0904aa
 
     .line 76
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -227,7 +274,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f090472
+    const v4, 0x7f090466
 
     .line 81
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -276,7 +323,7 @@
     invoke-virtual {v4, v7}, Landroid/widget/TextView;->setVisibility(I)V
 
     :goto_1
-    const v3, 0x7f09047b
+    const v3, 0x7f09047c
 
     .line 91
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -322,12 +369,12 @@
 
     if-eqz v5, :cond_3
 
-    const v5, 0x7f110099
+    const v5, 0x7f1100ad
 
     goto :goto_2
 
     :cond_3
-    const v5, 0x7f110098
+    const v5, 0x7f1100ac
 
     .line 97
     :goto_2
@@ -378,7 +425,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f07079c
+    const v2, 0x7f070746
 
     .line 120
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -392,7 +439,7 @@
 
     move-result-object p0
 
-    const v2, 0x7f0707a0
+    const v2, 0x7f07074a
 
     .line 122
     invoke-virtual {p0, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -477,6 +524,15 @@
 
 .method setSettingItems(Ljava/util/List;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "settingItem"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -30,9 +30,9 @@
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment$$ExternalSyntheticLambda13;->f$0:Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;
 
-    check-cast p1, Ljava/lang/Boolean;
+    check-cast p1, Lkotlin/Triple;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;->$r8$lambda$ZV4OwaAjiUEERIcl63y4Zxrby-M(Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;Ljava/lang/Boolean;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;->$r8$lambda$zQ6TMrrCapr4m59SFlySJSSOJQY(Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;Lkotlin/Triple;)Lkotlin/Unit;
 
     move-result-object p0
 

@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/storage/updater/StorageStateUpdater;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 50
     iput-object p1, p0, Ljp/co/sony/mc/camera/storage/updater/StorageStateUpdater$1;->this$0:Ljp/co/sony/mc/camera/storage/updater/StorageStateUpdater;
@@ -37,6 +45,16 @@
 # virtual methods
 .method public onFinish(Ljp/co/sony/mc/camera/storage/Storage$StorageType;I)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "id"
+        }
+    .end annotation
 
     const-string/jumbo v0, "type: "
 

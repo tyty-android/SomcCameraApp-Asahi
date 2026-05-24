@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RadioButton android:textSize="@dimen/camera_font_size_sp_3" android:textColor="@color/camera_white_color" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_select_youtube_event_radio_button_height" android:layout_marginTop="@dimen/dialog_select_youtube_event_radio_button_margin_top" android:singleLine="true" android:textDirection="locale" android:paddingStart="@dimen/dialog_radio_button_padding_start" android:paddingEnd="0.0dip" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="@dimen/camera_font_size_sp_1" android:autoSizeMaxTextSize="@dimen/camera_font_size_sp_3"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

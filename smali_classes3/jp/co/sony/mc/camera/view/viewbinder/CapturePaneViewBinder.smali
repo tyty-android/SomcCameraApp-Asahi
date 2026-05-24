@@ -327,7 +327,7 @@
 
     move-result-object p1
 
-    const v1, 0x7f070252
+    const v1, 0x7f070256
 
     invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -349,7 +349,7 @@
 
     move-result-object p1
 
-    const v1, 0x7f070253
+    const v1, 0x7f070257
 
     invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -496,7 +496,7 @@
 
     :cond_2
     :goto_0
-    const p0, 0x7f080368
+    const p0, 0x7f0803e0
 
     .line 65
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/view/widget/PushImageButton;->setImageResource(I)V
@@ -509,7 +509,7 @@
 
     move-result-object p0
 
-    const p1, 0x7f1100e1
+    const p1, 0x7f1100f5
 
     invoke-virtual {p0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -572,7 +572,7 @@
     invoke-virtual {p1}, Landroid/view/ViewPropertyAnimator;->start()V
 
     :cond_4
-    const p0, 0x7f080369
+    const p0, 0x7f0803e1
 
     .line 80
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/view/widget/PushImageButton;->setImageResource(I)V
@@ -585,7 +585,7 @@
 
     move-result-object p0
 
-    const p1, 0x7f1100e2
+    const p1, 0x7f1100f6
 
     invoke-virtual {p0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

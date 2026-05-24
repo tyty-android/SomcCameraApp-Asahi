@@ -17,10 +17,22 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "toString"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 389
+    .line 448
     invoke-direct {p0, p1, p2, p3, v0}, Lcom/google/common/hash/Hashing$ChecksumType;-><init>(Ljava/lang/String;ILjava/lang/String;Lcom/google/common/hash/Hashing$1;)V
 
     return-void
@@ -31,7 +43,7 @@
 .method public bridge synthetic get()Ljava/lang/Object;
     .locals 0
 
-    .line 389
+    .line 448
     invoke-virtual {p0}, Lcom/google/common/hash/Hashing$ChecksumType$2;->get()Ljava/util/zip/Checksum;
 
     move-result-object p0
@@ -42,7 +54,7 @@
 .method public get()Ljava/util/zip/Checksum;
     .locals 0
 
-    .line 392
+    .line 451
     new-instance p0, Ljava/util/zip/Adler32;
 
     invoke-direct {p0}, Ljava/util/zip/Adler32;-><init>()V

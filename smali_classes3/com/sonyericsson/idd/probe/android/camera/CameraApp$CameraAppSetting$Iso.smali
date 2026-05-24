@@ -120,7 +120,7 @@
 .method private static synthetic $values()[Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
     .locals 35
 
-    .line 1876
+    .line 2153
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_AUTO:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     sget-object v1, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_6:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
@@ -201,7 +201,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    .line 1878
+    .line 2155
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const-string v1, "ISO_AUTO"
@@ -212,7 +212,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_AUTO:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1879
+    .line 2156
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const-string v1, "ISO_6"
@@ -223,7 +223,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_6:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1880
+    .line 2157
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const-string v1, "ISO_8"
@@ -234,7 +234,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_8:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1881
+    .line 2158
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const-string v1, "ISO_10"
@@ -245,7 +245,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_10:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1882
+    .line 2159
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const-string v1, "ISO_12"
@@ -256,7 +256,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_12:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1883
+    .line 2160
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const-string v1, "ISO_16"
@@ -267,7 +267,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_16:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1884
+    .line 2161
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const-string v1, "ISO_20"
@@ -278,7 +278,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_20:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1885
+    .line 2162
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const-string v1, "ISO_25"
@@ -289,7 +289,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_25:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1886
+    .line 2163
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const-string v1, "ISO_32"
@@ -300,7 +300,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_32:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1887
+    .line 2164
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const-string v1, "ISO_40"
@@ -311,7 +311,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_40:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1888
+    .line 2165
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const-string v1, "ISO_50"
@@ -322,7 +322,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_50:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1889
+    .line 2166
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const-string v1, "ISO_64"
@@ -333,7 +333,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_64:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1890
+    .line 2167
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const-string v1, "ISO_80"
@@ -344,7 +344,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_80:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1891
+    .line 2168
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const-string v1, "ISO_100"
@@ -355,7 +355,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_100:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1892
+    .line 2169
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const-string v1, "ISO_125"
@@ -366,7 +366,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_125:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1893
+    .line 2170
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const-string v1, "ISO_160"
@@ -377,7 +377,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_160:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1894
+    .line 2171
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const-string v1, "ISO_200"
@@ -388,7 +388,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_200:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1895
+    .line 2172
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const-string v1, "ISO_250"
@@ -399,7 +399,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_250:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1896
+    .line 2173
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const-string v1, "ISO_320"
@@ -410,7 +410,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_320:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1897
+    .line 2174
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const-string v1, "ISO_400"
@@ -421,7 +421,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_400:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1898
+    .line 2175
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const-string v1, "ISO_500"
@@ -432,7 +432,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_500:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1899
+    .line 2176
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const-string v1, "ISO_640"
@@ -443,7 +443,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_640:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1900
+    .line 2177
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const/16 v1, 0x16
@@ -458,7 +458,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_800:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1901
+    .line 2178
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const/16 v1, 0x17
@@ -473,7 +473,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_1000:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1902
+    .line 2179
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const/16 v1, 0x18
@@ -488,7 +488,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_1250:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1903
+    .line 2180
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const/16 v1, 0x19
@@ -503,7 +503,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_1600:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1904
+    .line 2181
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const/16 v1, 0x1a
@@ -518,7 +518,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_2000:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1905
+    .line 2182
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const/16 v1, 0x1b
@@ -533,7 +533,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_2500:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1906
+    .line 2183
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const/16 v1, 0x1c
@@ -548,7 +548,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_3200:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1907
+    .line 2184
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const/16 v1, 0x1d
@@ -563,7 +563,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_4000:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1908
+    .line 2185
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const/16 v1, 0x1e
@@ -578,7 +578,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_5000:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1909
+    .line 2186
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const/16 v1, 0x1f
@@ -593,7 +593,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_6400:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1910
+    .line 2187
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const/16 v1, 0x20
@@ -608,7 +608,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_8000:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1911
+    .line 2188
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const/16 v1, 0x21
@@ -623,7 +623,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_10000:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1912
+    .line 2189
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     const/16 v1, 0x22
@@ -638,14 +638,14 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_12800:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1876
+    .line 2153
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->$values()[Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->$VALUES:[Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 1964
+    .line 2241
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso$1;
 
     invoke-direct {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso$1;-><init>()V
@@ -657,19 +657,34 @@
 
 .method private constructor <init>(Ljava/lang/String;III)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "index",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)V"
         }
     .end annotation
 
-    .line 1973
+    .line 2250
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 1974
+    .line 2251
     iput p3, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->index:I
 
-    .line 1975
+    .line 2252
     iput p4, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->value:I
 
     return-void
@@ -686,7 +701,7 @@
         }
     .end annotation
 
-    .line 1961
+    .line 2238
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->internalValueMap:Lcom/google/protobuf/Internal$EnumLiteMap;
 
     return-object v0
@@ -694,6 +709,14 @@
 
 .method public static valueOf(I)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     packed-switch p0, :pswitch_data_0
 
@@ -701,211 +724,211 @@
 
     return-object p0
 
-    .line 1954
+    .line 2231
     :pswitch_0
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_12800:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1953
+    .line 2230
     :pswitch_1
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_10000:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1952
+    .line 2229
     :pswitch_2
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_8000:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1951
+    .line 2228
     :pswitch_3
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_6400:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1950
+    .line 2227
     :pswitch_4
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_5000:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1949
+    .line 2226
     :pswitch_5
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_4000:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1948
+    .line 2225
     :pswitch_6
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_3200:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1947
+    .line 2224
     :pswitch_7
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_2500:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1946
+    .line 2223
     :pswitch_8
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_2000:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1945
+    .line 2222
     :pswitch_9
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_1600:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1944
+    .line 2221
     :pswitch_a
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_1250:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1943
+    .line 2220
     :pswitch_b
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_1000:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1942
+    .line 2219
     :pswitch_c
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_800:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1941
+    .line 2218
     :pswitch_d
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_640:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1940
+    .line 2217
     :pswitch_e
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_500:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1939
+    .line 2216
     :pswitch_f
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_400:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1938
+    .line 2215
     :pswitch_10
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_320:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1937
+    .line 2214
     :pswitch_11
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_250:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1936
+    .line 2213
     :pswitch_12
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_200:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1935
+    .line 2212
     :pswitch_13
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_160:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1934
+    .line 2211
     :pswitch_14
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_125:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1933
+    .line 2210
     :pswitch_15
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_100:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1932
+    .line 2209
     :pswitch_16
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_80:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1931
+    .line 2208
     :pswitch_17
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_64:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1930
+    .line 2207
     :pswitch_18
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_50:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1929
+    .line 2206
     :pswitch_19
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_40:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1928
+    .line 2205
     :pswitch_1a
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_32:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1927
+    .line 2204
     :pswitch_1b
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_25:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1926
+    .line 2203
     :pswitch_1c
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_20:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1925
+    .line 2202
     :pswitch_1d
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_16:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1924
+    .line 2201
     :pswitch_1e
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_12:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1923
+    .line 2200
     :pswitch_1f
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_10:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1922
+    .line 2199
     :pswitch_20
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_8:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1921
+    .line 2198
     :pswitch_21
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_6:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
 
-    .line 1920
+    .line 2197
     :pswitch_22
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_AUTO:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
@@ -953,8 +976,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 1876
+    .line 2153
     const-class v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -969,7 +1000,7 @@
 .method public static values()[Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
     .locals 1
 
-    .line 1876
+    .line 2153
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->$VALUES:[Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     invoke-virtual {v0}, [Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->clone()Ljava/lang/Object;
@@ -986,7 +1017,7 @@
 .method public final getNumber()I
     .locals 0
 
-    .line 1916
+    .line 2193
     iget p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->value:I
 
     return p0

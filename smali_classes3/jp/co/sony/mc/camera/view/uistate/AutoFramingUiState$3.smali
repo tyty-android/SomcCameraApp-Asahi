@@ -53,7 +53,7 @@
     f = "AutoFramingUiState.kt"
     i = {}
     l = {
-        0x76
+        0x78
     }
     m = "invokeSuspend"
     n = {}
@@ -167,7 +167,7 @@
 
     move-result-object v0
 
-    .line 103
+    .line 105
     iget v1, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$3;->label:I
 
     const/4 v2, 0x1
@@ -192,7 +192,7 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 105
+    .line 107
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$3;->this$0:Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;->isFramingObjectLost()Landroidx/lifecycle/LiveData;
@@ -203,7 +203,7 @@
 
     move-result-object p1
 
-    .line 106
+    .line 108
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$3;->this$0:Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;->access$getCameraSettingsModel$p(Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;)Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
@@ -218,7 +218,7 @@
 
     move-result-object v1
 
-    .line 107
+    .line 109
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$3;->this$0:Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;
 
     invoke-static {v3}, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;->access$getModeDialUiState$p(Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;)Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;
@@ -233,7 +233,7 @@
 
     move-result-object v3
 
-    .line 104
+    .line 106
     new-instance v4, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$3$1;
 
     iget-object v5, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$3;->this$0:Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;
@@ -248,7 +248,7 @@
 
     move-result-object p1
 
-    .line 118
+    .line 120
     sget-object v1, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$3$2;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$3$2;
 
     check-cast v1, Lkotlinx/coroutines/flow/FlowCollector;
@@ -267,7 +267,7 @@
 
     return-object v0
 
-    .line 119
+    .line 121
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

@@ -36,7 +36,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;
     .locals 3
 
-    .line 769
+    .line 783
     sget-object v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;->NEAR_CENTER:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;
 
     sget-object v1, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;->NEAR_EDGE:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;
@@ -53,7 +53,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 770
+    .line 784
     new-instance v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;
 
     const-string v1, "NEAR_CENTER"
@@ -64,7 +64,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;->NEAR_CENTER:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;
 
-    .line 771
+    .line 785
     new-instance v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;
 
     const-string v1, "NEAR_EDGE"
@@ -75,7 +75,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;->NEAR_EDGE:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;
 
-    .line 772
+    .line 786
     new-instance v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;
 
     const-string v1, "AT_EDGE"
@@ -86,7 +86,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;->AT_EDGE:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;
 
-    .line 769
+    .line 783
     invoke-static {}, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;->$values()[Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;
 
     move-result-object v0
@@ -98,13 +98,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 769
+    .line 783
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -112,6 +123,14 @@
 
 .method public static from(I)Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -121,18 +140,18 @@
 
     if-eq p0, v0, :cond_0
 
-    .line 788
+    .line 802
     sget-object p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;->NEAR_CENTER:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;
 
     return-object p0
 
-    .line 782
+    .line 796
     :cond_0
     sget-object p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;->AT_EDGE:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;
 
     return-object p0
 
-    .line 778
+    .line 792
     :cond_1
     sget-object p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;->NEAR_EDGE:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;
 
@@ -141,8 +160,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 769
+    .line 783
     const-class v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -157,7 +184,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;
     .locals 1
 
-    .line 769
+    .line 783
     sget-object v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;->$VALUES:[Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;->clone()Ljava/lang/Object;

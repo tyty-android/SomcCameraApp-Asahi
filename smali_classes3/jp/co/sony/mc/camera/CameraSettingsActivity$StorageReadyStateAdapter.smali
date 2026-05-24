@@ -24,8 +24,16 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/CameraSettingsActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 1503
+    .line 1520
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$StorageReadyStateAdapter;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -45,13 +53,23 @@
 # virtual methods
 .method public onStorageReadyStateChanged(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/Storage$StorageReadyState;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "type",
+            "state"
+        }
+    .end annotation
 
-    .line 1507
+    .line 1524
     sget-object v0, Ljp/co/sony/mc/camera/storage/Storage$StorageReadyState;->COMPLETED:Ljp/co/sony/mc/camera/storage/Storage$StorageReadyState;
 
     if-ne p2, v0, :cond_0
 
-    .line 1508
+    .line 1525
     iget-object p2, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$StorageReadyStateAdapter;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->-$$Nest$fgetmMainHandler(Ljp/co/sony/mc/camera/CameraSettingsActivity;)Landroid/os/Handler;

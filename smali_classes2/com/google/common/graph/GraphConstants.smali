@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/graph/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/graph/GraphConstants$Presence;
@@ -20,7 +23,9 @@
 
 .field static final EDGE_NOT_IN_GRAPH:Ljava/lang/String; = "Edge %s is not an element of this graph."
 
-.field static final ENDPOINTS_MISMATCH:Ljava/lang/String; = "Mismatch: unordered endpoints cannot be used with directed graphs"
+.field static final EDGE_REMOVED_FROM_GRAPH:Ljava/lang/String; = "Edge %s that was used to generate this set is no longer in the graph."
+
+.field static final ENDPOINTS_MISMATCH:Ljava/lang/String; = "Mismatch: endpoints\' ordering is not compatible with directionality of the graph"
 
 .field static final EXPECTED_DEGREE:I = 0x2
 
@@ -31,6 +36,10 @@
 .field static final MULTIPLE_EDGES_CONNECTING:Ljava/lang/String; = "Cannot call edgeConnecting() when parallel edges exist between %s and %s. Consider calling edgesConnecting() instead."
 
 .field static final NODE_NOT_IN_GRAPH:Ljava/lang/String; = "Node %s is not an element of this graph."
+
+.field static final NODE_PAIR_REMOVED_FROM_GRAPH:Ljava/lang/String; = "Node %s or node %s that were used to generate this set are no longer in the graph."
+
+.field static final NODE_REMOVED_FROM_GRAPH:Ljava/lang/String; = "Node %s that was used to generate this set is no longer in the graph."
 
 .field static final NOT_AVAILABLE_ON_UNDIRECTED:Ljava/lang/String; = "Cannot call source()/target() on a EndpointPair from an undirected graph. Consider calling adjacentNode(node) if you already have a node, or nodeU()/nodeV() if you don\'t."
 
@@ -45,7 +54,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 22
+    .line 24
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

@@ -17,11 +17,19 @@
 # direct methods
 .method private varargs constructor <init>([Lcom/google/common/hash/HashFunction;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "functions"
+        }
+    .end annotation
 
-    .line 605
+    .line 688
     invoke-direct {p0, p1}, Lcom/google/common/hash/AbstractCompositeHashFunction;-><init>([Lcom/google/common/hash/HashFunction;)V
 
-    .line 606
+    .line 689
     array-length p0, p1
 
     const/4 v0, 0x0
@@ -33,7 +41,7 @@
 
     aget-object v2, p1, v1
 
-    .line 608
+    .line 691
     invoke-interface {v2}, Lcom/google/common/hash/HashFunction;->bits()I
 
     move-result v3
@@ -52,12 +60,12 @@
     :goto_1
     const-string v4, "the number of bits (%s) in hashFunction (%s) must be divisible by 8"
 
-    .line 610
+    .line 693
     invoke-interface {v2}, Lcom/google/common/hash/HashFunction;->bits()I
 
     move-result v5
 
-    .line 607
+    .line 690
     invoke-static {v3, v4, v5, v2}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;ILjava/lang/Object;)V
 
     add-int/lit8 v1, v1, 0x1
@@ -71,7 +79,7 @@
 .method synthetic constructor <init>([Lcom/google/common/hash/HashFunction;Lcom/google/common/hash/Hashing$1;)V
     .locals 0
 
-    .line 602
+    .line 685
     invoke-direct {p0, p1}, Lcom/google/common/hash/Hashing$ConcatenatedHashFunction;-><init>([Lcom/google/common/hash/HashFunction;)V
 
     return-void
@@ -82,7 +90,7 @@
 .method public bits()I
     .locals 4
 
-    .line 629
+    .line 712
     iget-object p0, p0, Lcom/google/common/hash/Hashing$ConcatenatedHashFunction;->functions:[Lcom/google/common/hash/HashFunction;
 
     array-length v0, p0
@@ -96,7 +104,7 @@
 
     aget-object v3, p0, v1
 
-    .line 630
+    .line 713
     invoke-interface {v3}, Lcom/google/common/hash/HashFunction;->bits()I
 
     move-result v3
@@ -114,19 +122,27 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 637
+    .line 720
     instance-of v0, p1, Lcom/google/common/hash/Hashing$ConcatenatedHashFunction;
 
     if-eqz v0, :cond_0
 
-    .line 638
+    .line 721
     check-cast p1, Lcom/google/common/hash/Hashing$ConcatenatedHashFunction;
 
-    .line 639
+    .line 722
     iget-object p0, p0, Lcom/google/common/hash/Hashing$ConcatenatedHashFunction;->functions:[Lcom/google/common/hash/HashFunction;
 
     iget-object p1, p1, Lcom/google/common/hash/Hashing$ConcatenatedHashFunction;->functions:[Lcom/google/common/hash/HashFunction;
@@ -146,7 +162,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 646
+    .line 729
     iget-object p0, p0, Lcom/google/common/hash/Hashing$ConcatenatedHashFunction;->functions:[Lcom/google/common/hash/HashFunction;
 
     invoke-static {p0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
@@ -158,8 +174,16 @@
 
 .method makeHash([Lcom/google/common/hash/Hasher;)Lcom/google/common/hash/HashCode;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "hashers"
+        }
+    .end annotation
 
-    .line 617
+    .line 700
     invoke-virtual {p0}, Lcom/google/common/hash/Hashing$ConcatenatedHashFunction;->bits()I
 
     move-result p0
@@ -168,7 +192,7 @@
 
     new-array p0, p0, [B
 
-    .line 619
+    .line 702
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -180,12 +204,12 @@
 
     aget-object v3, p1, v1
 
-    .line 620
+    .line 703
     invoke-interface {v3}, Lcom/google/common/hash/Hasher;->hash()Lcom/google/common/hash/HashCode;
 
     move-result-object v3
 
-    .line 621
+    .line 704
     invoke-virtual {v3}, Lcom/google/common/hash/HashCode;->bits()I
 
     move-result v4
@@ -202,7 +226,7 @@
 
     goto :goto_0
 
-    .line 623
+    .line 706
     :cond_0
     invoke-static {p0}, Lcom/google/common/hash/HashCode;->fromBytesNoCopy([B)Lcom/google/common/hash/HashCode;
 

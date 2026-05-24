@@ -30,7 +30,7 @@
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;
 
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;->$r8$lambda$sU_EfZTMGPrSW8Z0fH3_W7eL9ec(Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;Landroid/view/View;Z)V
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;->$r8$lambda$TI36u9oLzzJa8Qa4rBHbv2g7-_o(Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;Landroid/view/View;Z)V
 
     return-void
 .end method

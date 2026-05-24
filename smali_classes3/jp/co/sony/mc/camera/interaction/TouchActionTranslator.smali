@@ -189,6 +189,16 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/View;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "targetView"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -200,6 +210,18 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/View;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "targetView",
+            "margin"
+        }
+    .end annotation
 
     .line 127
     invoke-static {p1}, Landroid/view/ViewConfiguration;->get(Landroid/content/Context;)Landroid/view/ViewConfiguration;
@@ -217,6 +239,20 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/View;II)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "targetView",
+            "margin",
+            "touchSlop"
+        }
+    .end annotation
 
     .line 134
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -331,6 +367,14 @@
 
 .method private declared-synchronized changeTo(Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$InteractionState;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "next"
+        }
+    .end annotation
 
     monitor-enter p0
 
@@ -417,6 +461,20 @@
 
 .method private hitTest(Landroid/view/View;III)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "targetView",
+            "margin",
+            "xOnView",
+            "yOnView"
+        }
+    .end annotation
 
     .line 781
     new-instance p0, Landroid/graphics/Rect;
@@ -464,6 +522,16 @@
 
 .method public declared-synchronized onDoubleTouchRotateDetected(FF)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "degreeVsOrigin",
+            "degreeVsLast"
+        }
+    .end annotation
 
     monitor-enter p0
 
@@ -490,6 +558,18 @@
 
 .method public declared-synchronized onDoubleTouchScaleDetected(FFF)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x10
+        }
+        names = {
+            "currentLength",
+            "previousLength",
+            "originalLength"
+        }
+    .end annotation
 
     monitor-enter p0
 
@@ -516,6 +596,14 @@
 
 .method public declared-synchronized onDown(Landroid/view/MotionEvent;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
 
     monitor-enter p0
 
@@ -529,6 +617,20 @@
 
 .method public declared-synchronized onFling(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "event1",
+            "event2",
+            "velocX",
+            "velocY"
+        }
+    .end annotation
 
     monitor-enter p0
 
@@ -557,6 +659,14 @@
 
 .method public declared-synchronized onLongPress(Landroid/view/MotionEvent;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
 
     monitor-enter p0
 
@@ -583,6 +693,20 @@
 
 .method public declared-synchronized onScroll(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "event1",
+            "event2",
+            "distanceX",
+            "distanceY"
+        }
+    .end annotation
 
     monitor-enter p0
 
@@ -596,6 +720,14 @@
 
 .method public declared-synchronized onShowPress(Landroid/view/MotionEvent;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
 
     monitor-enter p0
 
@@ -622,6 +754,14 @@
 
 .method public declared-synchronized onSingleTapUp(Landroid/view/MotionEvent;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
 
     monitor-enter p0
 
@@ -656,6 +796,18 @@
 
 .method public declared-synchronized onSingleTouchMoveDetected(Landroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x10
+        }
+        names = {
+            "currentPoint",
+            "lastPoint",
+            "downPoint"
+        }
+    .end annotation
 
     monitor-enter p0
 
@@ -682,6 +834,18 @@
 
 .method public declared-synchronized onSingleTouchStopDetected(Landroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x10
+        }
+        names = {
+            "currentPoint",
+            "lastPoint",
+            "downPoint"
+        }
+    .end annotation
 
     monitor-enter p0
 
@@ -708,6 +872,14 @@
 
 .method public declared-synchronized onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "motion"
+        }
+    .end annotation
 
     const-string v0, "onTouchEvent() getActionMasked:"
 
@@ -1025,6 +1197,14 @@
 
 .method public setInteractionListener(Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$TouchActionListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -1045,6 +1225,14 @@
 
 .method public setNeedDetectDoubleTap(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "needDetectDoubleTap"
+        }
+    .end annotation
 
     .line 154
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;->mNeedDetectDoubleTap:Z

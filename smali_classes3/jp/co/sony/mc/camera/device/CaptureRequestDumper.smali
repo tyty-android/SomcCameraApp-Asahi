@@ -42,6 +42,16 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/device/CaptureRequestDumper$Type;Landroid/hardware/camera2/CameraCaptureSession;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "session"
+        }
+    .end annotation
 
     .line 46
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -81,6 +91,17 @@
 
 .method private static convertPrimitiveArrayToObjectArray(Ljava/lang/Object;Ljava/lang/Class;)[Ljava/lang/Object;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "array",
+            "wrapperClass"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -138,6 +159,14 @@
 
 .method private static flatten([Ljava/lang/Object;)Ljava/lang/String;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "list"
+        }
+    .end annotation
 
     .line 192
     new-instance v0, Ljava/lang/StringBuilder;
@@ -197,6 +226,14 @@
 
 .method private toCaptureRequestValueString(Ljava/lang/Object;)Ljava/lang/String;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     if-nez p1, :cond_0
 
@@ -355,6 +392,15 @@
 
 .method private toKeyValueMap(Landroid/hardware/camera2/CaptureRequest;)Ljava/util/Map;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "request"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -813,6 +859,14 @@
 
 .method public update(Landroid/hardware/camera2/CaptureRequest;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "newRequest"
+        }
+    .end annotation
 
     .line 62
     monitor-enter p0

@@ -82,6 +82,7 @@ Veți primi notificări și dialoguri. Selectați Asociere pe toate, apoi apăsa
     <string name="call_notification_incoming_text">Apel primit</string>
     <string name="call_notification_ongoing_text">Apel în desfășurare</string>
     <string name="call_notification_screening_text">Se filtrează un apel primit</string>
+    <string name="camera_string_saving_process_hint_txt">Se salvează... Așteptați finalizarea salvării.</string>
     <string name="camera_strings_accept_privacy_policy_txt">Aţi acceptat Politica de confidenţialitate, dar puteţi oricând să vă răzgândiţi.</string>
     <string name="camera_strings_accessibility_48_mega_pixel_txt">48 megapixeli</string>
     <string name="camera_strings_accessibility_adjust_bokeh_txt">Ajustare bokeh</string>
@@ -92,6 +93,27 @@ Veți primi notificări și dialoguri. Selectați Asociere pe toate, apoi apăsa
     <string name="camera_strings_accessibility_adjust_framing_size_smaller_txt">Reducere dimensiune cadru</string>
     <string name="camera_strings_accessibility_adjust_framing_size_txt">Ajustare dimensiune cadru</string>
     <string name="camera_strings_accessibility_adjust_shutter_speed_txt">Viteză de declanșare</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_look_menu_txt">Buton de închidere. Închide meniul de aspect.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_menu_txt">Închideți meniul Personalizat</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_suggests_txt">Închideți ajustările sugerate</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_menu_txt">Aspect personalizat aplicat în prezent. Deschide meniul de ajustare.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_txt">Aspect personalizat. Aplică setările de aspect, luminozitate și culoare înregistrate în meniul Personalizat.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_tab_txt">Fila Personalizat. Aplică setările de aspect, luminozitate și culoare înregistrate în meniul Personalizat.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_button_txt">Butonul Personalizat. Deschide un meniu care vă permite să faceți ajustări suplimentare atunci când sunt aplicate ajustările recomandate.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_param_txt">%1$s este setat la %2$s</string>
+    <string name="camera_strings_accessibility_ai_suggestion_first_time_txt">Asistent aparat foto cu IA. Această funcție sugerează setări precum culoarea, în funcție de scenă.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_four_of_some_suggests_txt">A patra ajustare sugerată</string>
+    <string name="camera_strings_accessibility_ai_suggestion_look_menu_txt">"%1$s
+Deschide meniul Aspect creativ"</string>
+    <string name="camera_strings_accessibility_ai_suggestion_new_suggest_txt">Au fost sugerate noi ajustări recomandate</string>
+    <string name="camera_strings_accessibility_ai_suggestion_one_of_some_suggests_txt">Prima ajustare sugerată</string>
+    <string name="camera_strings_accessibility_ai_suggestion_open_suggests_txt">Extindeți ajustările sugerate</string>
+    <string name="camera_strings_accessibility_ai_suggestion_reset_to_default_txt">Resetați la setările anterioare sugestiilor</string>
+    <string name="camera_strings_accessibility_ai_suggestion_selected_suggest_txt">Aceste ajustări recomandate sunt aplicate</string>
+    <string name="camera_strings_accessibility_ai_suggestion_suggest_lens_txt">Buton sugerat pentru obiectiv. Se recomandă %1$sx.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_surface_of_some_suggests_txt">Ajustări sugerate. Glisați de la dreapta la stânga pentru a afișa ajustările recomandate.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_three_of_some_suggests_txt">A treia ajustare sugerată</string>
+    <string name="camera_strings_accessibility_ai_suggestion_two_of_some_suggests_txt">A doua ajustare sugerată</string>
     <string name="camera_strings_accessibility_arrow_left_button_txt">Săgeată stânga</string>
     <string name="camera_strings_accessibility_arrow_right_button_txt">Săgeată dreapta</string>
     <string name="camera_strings_accessibility_audio_level_txt">Contor nivel audio</string>
@@ -246,6 +268,45 @@ Veți primi notificări și dialoguri. Selectați Asociere pe toate, apoi apăsa
     <string name="camera_strings_advanced_setting_geo_tag_title_txt">Salvare locaţie</string>
     <string name="camera_strings_ai_face_restore_description_txt">Puteți face fotografii cu clarificare facială pentru face trăsăturile fețelor mai clare</string>
     <string name="camera_strings_ai_face_restore_txt">Accentuare fețe</string>
+    <string name="camera_strings_ai_suggestion_introduce_hint_text_txt">[Sfaturi] Asistent aparat foto cu IA</string>
+    <string name="camera_strings_aisuggestion_box_name1_txt">Pers.</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_message_txt">Înregistrați setările curente de aspect, luminozitate și culoare în Personalizat.</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_overwrite_message_txt">S-a înregistrat deja un aspect în Personalizare. Suprascrieți?</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_title_txt">Înregistrare ca Asp. personalizat</string>
+    <string name="camera_strings_aisuggestion_box_title_txt">Pers.</string>
+    <string name="camera_strings_aisuggestion_custom_params_contrast_txt">Contrast</string>
+    <string name="camera_strings_aisuggestion_custom_params_ev_txt">Luminoz.</string>
+    <string name="camera_strings_aisuggestion_custom_params_register_txt">Înregistrare</string>
+    <string name="camera_strings_aisuggestion_custom_params_saturation_txt">Saturație</string>
+    <string name="camera_strings_aisuggestion_custom_params_title_txt">Luminozitate/Culoare</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbab_txt">Ton cald</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbgm_txt">Tentă</string>
+    <string name="camera_strings_aisuggestion_customlook_register_instruction_txt">Puteți utiliza oricând aspectele personalizate înregistrate din fila Asp. personalizat</string>
+    <string name="camera_strings_aisuggestion_description_txt">"IA identifică automat scena și sugerează ajustări optimizate în mini previzualizarea din partea dreaptă jos.
+Dacă atingeți această mini previzualizare, următoarele setări vor fi ajustate automat pentru a se potrivi scenei:
+Aspect, Expunere, Compensare alb, Saturație, Contrast, Bokeh
+*Această funcție este disponibilă doar în modul Foto.
+*Când începeți înregistrarea unui clip video apăsând lung butonul declanșator, setările de saturație, contrast și bokeh nu vor fi aplicate."</string>
+    <string name="camera_strings_aisuggestion_guide_description1_txt">Ajustările recomandate pe baza scenei identificate de IA sunt afișate în mini previzualizarea din partea dreaptă jos (partea dreaptă sus atunci când țineți dispozitivul în poziție orizontală). Puteți aplica simultan toate aceste ajustări atingând mini previzualizarea.</string>
+    <string name="camera_strings_aisuggestion_guide_description2_txt">De asemenea, o setare specifică a obiectivului poate fi sugerată în funcție de scenă. În acest caz, puteți modifica setarea sugerată a obiectivului în funcție de preferințe.</string>
+    <string name="camera_strings_aisuggestion_guide_description3_txt">"Trecând cu degetul spre stânga pe miniprevizualizarea din partea dreaptă jos (partea dreaptă sus atunci când țineți dispozitivul în poziție orizontală), puteți afișa recomandări de ajustări alternative.
+Sugestiile pe care le selectați vor fi salvate ca ajustări preferate și vor fi incluse în sugestii la următoarea înregistrare a unei scene similare."</string>
+    <string name="camera_strings_aisuggestion_guide_description4_txt">Puteți atinge butonul [>] pentru a ascunde sugestiile atunci când nu sunt necesare. Atunci când este identificată o nouă scenă, butonul [&lt;] se va ilumina pentru a vă arăta că există noi sugestii de ajustări. Pentru a verifica din nou sugestiile, atingeți butonul [&lt;].</string>
+    <string name="camera_strings_aisuggestion_guide_description5_txt">Dacă atingeți butonul de ajustare după ce ați selectat ajustările sugerate, puteți ajusta în continuare setări cum ar fi luminozitatea și culoarea. Ajustările vor fi salvate pe dispozitiv și aplicate ajustărilor sugerate data viitoare când este detectată o scenă similară.</string>
+    <string name="camera_strings_aisuggestion_guide_description6_txt">Ajustările sugerate și ajustările pe care le efectuați pot fi înregistrate, permițându-vă să le încărcați oricând pentru a fotografia cu aceleași setări. Atingeți [Înregistrare] pentru a adăuga un Asp. personalizat la lista de aspecte disponibile.</string>
+    <string name="camera_strings_aisuggestion_guide_entry_txt">Cum se utilizează Asist. ap. foto cu IA</string>
+    <string name="camera_strings_aisuggestion_guide_title_txt">Mod de utiliz. a Asist. ap. foto cu IA</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_message_txt">Resetați toate setările la valorile implicite, inclusiv culoarea, luminozitatea și ajustările preferate?</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_title_txt">Resetare parametri</string>
+    <string name="camera_strings_aisuggestion_params_reset_txt">Resetare parametri</string>
+    <string name="camera_strings_aisuggestion_permitted_item_bokeh_txt">Bokeh</string>
+    <string name="camera_strings_aisuggestion_permitted_item_lens_txt">Obiectiv</string>
+    <string name="camera_strings_aisuggestion_permitted_item_title_txt">Includere în sugestii</string>
+    <string name="camera_strings_aisuggestion_recommend_lens_ratio_txt">Se recomandă %1$s</string>
+    <string name="camera_strings_aisuggestion_return_to_default_txt">Revenire</string>
+    <string name="camera_strings_aisuggestion_simple_video_instruction_txt">La înregistrarea unui videoclip prin apăsare lungă, saturația, contrastul și setările bokeh se pot afișa diferit.</string>
+    <string name="camera_strings_aisuggestion_txt">Asistent aparat foto cu IA</string>
+    <string name="camera_strings_aisuggestion_use_aissuggestion_txt">Utiliz. Asist. ap. foto cu IA</string>
     <string name="camera_strings_anonymous_analytics_txt">Analize anonime</string>
     <string name="camera_strings_application_name">Aparat foto</string>
     <string name="camera_strings_application_name_google_lens_txt">Google Lens</string>
@@ -421,6 +482,7 @@ Securitate:
     <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Nu se poate conecta la Wi-Fi</string>
     <string name="camera_strings_dialog_user_data_collection_txt">Dacă vă dați acordul mai jos, Sony va colecta &lt;b>&lt;a href=#personal-data>datele dvs. cu caracter personal&lt;/a>&lt;/b> pentru a vă oferi asistență personalizată și a îmbunătăți dispozitivele și serviciile. Sony va trata datele dvs. în conformitate cu &lt;b>&lt;a href=https://www.sonymobile.com/privacy/>Politica noastră de confidențialitate&lt;/a>&lt;/b>.</string>
     <string name="camera_strings_dialog_video_hdr_hlg_supported_short_description_txt">Este posibil ca unele dispozitive/servicii să nu poată reproduce culoarea și luminozitatea originale ale conținutului HDR. Utilizați dispozitive/servicii care acceptă HDR atunci când vizualizați conținut HDR.</string>
+    <string name="camera_strings_digital_tripod_hint_edge_txt">Componența s-a deplasat. Direcționați aparatul foto către subiectul inițial.</string>
     <string name="camera_strings_digital_zoom_type_description_txt">"Selectați o setare de mărire/micșorare digitală.
 
 Mărire/micșorare digitală standard: măriți/micșorați utilizând procesarea digitală bazată pe datele senzorului de imagine.
@@ -484,6 +546,7 @@ Pentru a o modifica, opriți redarea în flux, apoi, accesați aplicația Facebo
     <string name="camera_strings_fast_capturing_screen_locked_settings_txt">Pentru a deschide setările, deblocaţi ecranul.</string>
     <string name="camera_strings_fast_capturing_screen_locked_streaming_txt">Pentru a începe redarea în flux, deblocați ecranul.</string>
     <string name="camera_strings_fast_capturing_screen_locked_title_txt">Ecran blocat</string>
+    <string name="camera_strings_feature_creative_look_custom_description_txt">Puteți înregistra aspecte și setările de luminozitate/culoare.</string>
     <string name="camera_strings_feature_creative_look_description_txt">"Puteți alege finisajul imaginilor (fotografii sau filme) prin selectarea unui „aspect”.
 
 Aspectul creativ oferă 6 aspecte prestabilite. Fiecare dintre ele este optimizată cu o combinație diferită de tonuri de culoare, saturație, contrast, claritate, luminozitate și alte elemente ale imaginii, astfel încât puteți configura procesarea imaginii cu echilibrul ideal al acestor elemente."</string>
@@ -566,6 +629,7 @@ Puteți modifica orientarea și dimensiunea cadrului."</string>
     <string name="camera_strings_framing_orientation_description_txt">"Puteți alege să decupați subiectul fie într-un cadru orizontal, fie într-unul vertical.
 Setați la [Automat] pentru ca orientarea decupării să fie aceeași cu orientarea dispozitivului."</string>
     <string name="camera_strings_framing_select_subject_to_track_txt">Atingeți subiectul a cărui poziție doriți să o blocați</string>
+    <string name="camera_strings_framing_setting_guide_title_txt">Despre Încadrare automată</string>
     <string name="camera_strings_framing_setting_orientation_landscape_txt">Orizontal</string>
     <string name="camera_strings_framing_setting_orientation_portrait_txt">Vertical</string>
     <string name="camera_strings_framing_setting_orientation_title_txt">Orientare cadru</string>
@@ -573,6 +637,7 @@ Setați la [Automat] pentru ca orientarea decupării să fie aceeași cu orienta
 Înregistrările decupate sunt salvate la rezoluție HD complet. Înregistrările nedecupate sunt salvate ca 4K."</string>
     <string name="camera_strings_framing_setting_save_original_video_off_txt">Înregistrare ecran complet: Oprită</string>
     <string name="camera_strings_framing_setting_save_original_video_title_txt">Înregistrare ecran complet</string>
+    <string name="camera_strings_framing_setting_snapshot_description_txt">Indiferent dacă [Înregistrare ecran complet] este activată sau dezactivată, fotografiile realizate în timpul înregistrării unui clip video sunt salvate la dimensiunea completă a ecranului.</string>
     <string name="camera_strings_geotagging_description_txt">Salvați-vă fotografiile și clipurile video cu locațiile unde au fost făcute</string>
     <string name="camera_strings_geotagging_txt">Salvare locaţie</string>
     <string name="camera_strings_gimbal_mode_tab_label">Funcționarea camerei cu IA</string>
@@ -591,6 +656,7 @@ Aceasta vă permite să înregistrați clipuri video stabile în situații insta
     <string name="camera_strings_gimbal_setting_assist_method_locking_hint_txt">Blocare poziție subiect: Manual</string>
     <string name="camera_strings_gimbal_setting_assist_method_locking_txt">Manual</string>
     <string name="camera_strings_gimbal_setting_assist_method_title_txt">Blocare poziție subiect</string>
+    <string name="camera_strings_gimbal_setting_guide_title_txt">Despre Funcționarea camerei cu IA</string>
     <string name="camera_strings_gridline_description_txt">Setați dacă doriți sau nu să afișați caroiajul pentru a vă ajuta la compunerea imaginilor</string>
     <string name="camera_strings_gridline_txt">Linii grilă</string>
     <string name="camera_strings_hand_shutter_description_updated_txt">Puteți începe numărătoarea inversă a temporizatorului întorcând palma spre aparatul foto frontal. Pentru a facilita detectarea, întindeți degetele în sus.</string>
@@ -726,6 +792,7 @@ Fotografiile realizate în timpul înregistrării clipului video vor folosi înt
     <string name="camera_strings_notification_channel_title_saving_process_txt">Proces de salvare</string>
     <string name="camera_strings_notification_text_saving_in_progress_txt">Așteptați până la finalizarea salvării</string>
     <string name="camera_strings_notification_title_saving_in_progress_txt">În curs de salvare</string>
+    <string name="camera_strings_notify_saving_process_cannot_launch_app_by_hw_shutter_txt">Apăsarea butonului declanșator poate să nu lanseze aparatul foto în timpul salvării</string>
     <string name="camera_strings_ok_txt">OK</string>
     <string name="camera_strings_peaking_color_blue_txt">Albastru</string>
     <string name="camera_strings_peaking_color_red_txt">"Roşu "</string>
@@ -734,6 +801,7 @@ Fotografiile realizate în timpul înregistrării clipului video vor folosi înt
     <string name="camera_strings_peaking_color_yellow_txt">Galben</string>
     <string name="camera_strings_peaking_txt">Accentuare</string>
     <string name="camera_strings_personal_data_txt">Date personale</string>
+    <string name="camera_strings_photopro_setting_guide_title_txt">Despre Fotografie Pro</string>
     <string name="camera_strings_privacy_policy_txt">Politică de confidenţialitate</string>
     <string name="camera_strings_pro_tips_computational_photo_description_txt">"Chiar și în modul P, aparatul foto identifică automat scena și realizează fotografii automate frumoase, reducând neclaritatea, zgomotul, supraexpunerea și subexpunerea.
 Dacă nu îl utilizați, îl puteți dezactiva cu ajutorul butonului Fn sau în MENIU."</string>
@@ -964,6 +1032,7 @@ Dacă utilizaţi în continuare cartela SD ca spaţiu de stocare a datelor, asig
     <string name="camera_strings_video_stabilization_description_sub_txt">Notă: selectarea calității înalte poate scurta durata înregistrării din cauza creșterii temperaturii dispozitivului.</string>
     <string name="camera_strings_video_stabilization_description_txt">Xperia dispune de un sistem de stabilizare hibrid unic numit Optical SteadyShot - care combină stabilizarea optică a imaginii și stabilizarea electronică a imaginii simultan. Vă oferă videoclipuri fără tremurături și fluide chiar și atunci când înregistrați în mișcare.</string>
     <string name="camera_strings_video_stabilization_high_quality_images_txt">Calitate înaltă</string>
+    <string name="camera_strings_videopro_setting_guide_title_txt">Despre Pro video</string>
     <string name="camera_strings_volume_distortion_correction_description_txt">Corectează distorsiunea fețelor care apar lângă marginea ecranului la folosirea obiectivului ultra-larg. Acest lucru poate face ca fundalul să pară distorsionat sau unghiul de vizualizare să pară îngustat.</string>
     <string name="camera_strings_volume_distortion_correction_front_description_txt">Corectează distorsiunea fețelor care apar lângă marginea ecranului. Acest lucru poate face ca fundalul să pară distorsionat sau unghiul de vizualizare să pară îngustat.</string>
     <string name="camera_strings_volume_distortion_correction_txt">Corectare a distorsiunilor faciale</string>
@@ -1041,8 +1110,25 @@ Lipsă conexiune la rețea."</string>
     <string name="clear_text_end_icon_content_description">Ștergeți textul</string>
     <string name="close_drawer">Închide meniul de navigare</string>
     <string name="close_sheet">Închide foaia</string>
+    <string name="common_google_play_services_enable_button">Activați</string>
+    <string name="common_google_play_services_enable_text">%1$s nu va funcționa decât dacă activați serviciile Google Play.</string>
+    <string name="common_google_play_services_enable_title">Activați serviciile Google Play</string>
+    <string name="common_google_play_services_install_button">Instalați</string>
+    <string name="common_google_play_services_install_text">%1$s nu va rula fără serviciile Google Play, care lipsesc de pe dispozitivul dvs.</string>
+    <string name="common_google_play_services_install_title">Descărcați serviciile Google Play</string>
+    <string name="common_google_play_services_notification_channel_name">Disponibilitatea serviciilor Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Eroare a serviciilor Google Play</string>
+    <string name="common_google_play_services_unknown_issue">%1$s întâmpină probleme privind serviciile Google Play. Încercați din nou.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s nu va rula fără serviciile Google Play, care nu sunt acceptate de dispozitivul dvs.</string>
+    <string name="common_google_play_services_update_button">Actualizați</string>
+    <string name="common_google_play_services_update_text">%1$s nu va rula decât dacă actualizați serviciile Google Play.</string>
+    <string name="common_google_play_services_update_title">Actualizați serviciile Google Play</string>
+    <string name="common_google_play_services_updating_text">%1$s nu va rula fără serviciile Google Play, care momentan se actualizează.</string>
+    <string name="common_google_play_services_wear_update_text">Este necesară o nouă versiune a serviciilor Google Play. Se vor actualiza automat în curând.</string>
+    <string name="common_open_on_phone">Deschideți pe telefon</string>
+    <string name="common_signin_button_text">Conectați-vă</string>
+    <string name="common_signin_button_text_long">Conectați-vă cu Google</string>
     <string name="copy">Copiați</string>
-    <string name="copy_toast_msg">Linkul a fost copiat în clipboard</string>
     <string name="default_error_message">Intrare nevalidă</string>
     <string name="default_popup_window_title">Fereastră pop-up</string>
     <string name="dropdown_menu">Meniu drop-down</string>
@@ -1053,9 +1139,6 @@ Lipsă conexiune la rețea."</string>
     <string name="external_display_connected_description_txt">Puteți verifica vizorul din Monitorul pentru vlogging</string>
     <string name="external_display_connected_title_txt">Monitor pentru vlogging conectat</string>
     <string name="external_display_note_about_external_mic_txt">Notă: pentru a utiliza un microfon extern, conectați-l la Monitorul pentru vlogging înainte de a înregistra. Dacă îl veți conecta ulterior, va trebui să reconectați Monitorul pentru vlogging.</string>
-    <string name="fallback_menu_item_copy_link">Copiați linkul</string>
-    <string name="fallback_menu_item_open_in_browser">Deschideți în browser</string>
-    <string name="fallback_menu_item_share_link">Trimiteți linkul</string>
     <string name="icon_content_description">Pictogramă de dialog</string>
     <string name="in_progress">În curs</string>
     <string name="indeterminate">Bifată parțial</string>

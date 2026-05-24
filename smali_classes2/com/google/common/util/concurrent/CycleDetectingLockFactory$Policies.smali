@@ -40,7 +40,7 @@
 .method private static synthetic $values()[Lcom/google/common/util/concurrent/CycleDetectingLockFactory$Policies;
     .locals 3
 
-    .line 194
+    .line 192
     sget-object v0, Lcom/google/common/util/concurrent/CycleDetectingLockFactory$Policies;->THROW:Lcom/google/common/util/concurrent/CycleDetectingLockFactory$Policies;
 
     sget-object v1, Lcom/google/common/util/concurrent/CycleDetectingLockFactory$Policies;->WARN:Lcom/google/common/util/concurrent/CycleDetectingLockFactory$Policies;
@@ -57,7 +57,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 201
+    .line 198
     new-instance v0, Lcom/google/common/util/concurrent/CycleDetectingLockFactory$Policies$1;
 
     const-string v1, "THROW"
@@ -68,7 +68,7 @@
 
     sput-object v0, Lcom/google/common/util/concurrent/CycleDetectingLockFactory$Policies;->THROW:Lcom/google/common/util/concurrent/CycleDetectingLockFactory$Policies;
 
-    .line 213
+    .line 210
     new-instance v0, Lcom/google/common/util/concurrent/CycleDetectingLockFactory$Policies$2;
 
     const-string v1, "WARN"
@@ -79,7 +79,7 @@
 
     sput-object v0, Lcom/google/common/util/concurrent/CycleDetectingLockFactory$Policies;->WARN:Lcom/google/common/util/concurrent/CycleDetectingLockFactory$Policies;
 
-    .line 228
+    .line 225
     new-instance v0, Lcom/google/common/util/concurrent/CycleDetectingLockFactory$Policies$3;
 
     const-string v1, "DISABLED"
@@ -90,7 +90,7 @@
 
     sput-object v0, Lcom/google/common/util/concurrent/CycleDetectingLockFactory$Policies;->DISABLED:Lcom/google/common/util/concurrent/CycleDetectingLockFactory$Policies;
 
-    .line 194
+    .line 192
     invoke-static {}, Lcom/google/common/util/concurrent/CycleDetectingLockFactory$Policies;->$values()[Lcom/google/common/util/concurrent/CycleDetectingLockFactory$Policies;
 
     move-result-object v0
@@ -102,13 +102,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 195
+    .line 192
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -117,7 +128,7 @@
 .method synthetic constructor <init>(Ljava/lang/String;ILcom/google/common/util/concurrent/CycleDetectingLockFactory$1;)V
     .locals 0
 
-    .line 195
+    .line 192
     invoke-direct {p0, p1, p2}, Lcom/google/common/util/concurrent/CycleDetectingLockFactory$Policies;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -125,8 +136,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/util/concurrent/CycleDetectingLockFactory$Policies;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 194
+    .line 192
     const-class v0, Lcom/google/common/util/concurrent/CycleDetectingLockFactory$Policies;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -141,7 +160,7 @@
 .method public static values()[Lcom/google/common/util/concurrent/CycleDetectingLockFactory$Policies;
     .locals 1
 
-    .line 194
+    .line 192
     sget-object v0, Lcom/google/common/util/concurrent/CycleDetectingLockFactory$Policies;->$VALUES:[Lcom/google/common/util/concurrent/CycleDetectingLockFactory$Policies;
 
     invoke-virtual {v0}, [Lcom/google/common/util/concurrent/CycleDetectingLockFactory$Policies;->clone()Ljava/lang/Object;

@@ -35,8 +35,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/Tables$TransformedTable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 415
+    .line 517
     iput-object p1, p0, Lcom/google/common/collect/Tables$TransformedTable$2;->this$0:Lcom/google/common/collect/Tables$TransformedTable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -48,8 +56,16 @@
 # virtual methods
 .method public bridge synthetic apply(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "row"
+        }
+    .end annotation
 
-    .line 415
+    .line 517
     check-cast p1, Ljava/util/Map;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Tables$TransformedTable$2;->apply(Ljava/util/Map;)Ljava/util/Map;
@@ -61,6 +77,15 @@
 
 .method public apply(Ljava/util/Map;)Ljava/util/Map;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "row"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -71,7 +96,7 @@
         }
     .end annotation
 
-    .line 418
+    .line 520
     iget-object p0, p0, Lcom/google/common/collect/Tables$TransformedTable$2;->this$0:Lcom/google/common/collect/Tables$TransformedTable;
 
     iget-object p0, p0, Lcom/google/common/collect/Tables$TransformedTable;->function:Lcom/google/common/base/Function;

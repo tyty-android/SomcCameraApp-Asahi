@@ -16,4 +16,20 @@
 
 # virtual methods
 .method public abstract onWbCustomStateChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;[IFFLjava/lang/String;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "status",
+            "ratio",
+            "temperature",
+            "gm",
+            "whiteBalance"
+        }
+    .end annotation
 .end method

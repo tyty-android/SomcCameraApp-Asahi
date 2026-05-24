@@ -53,7 +53,7 @@
     f = "ViewFinderUiState.kt"
     i = {}
     l = {
-        0x178
+        0xff
     }
     m = "invokeSuspend"
     n = {}
@@ -167,7 +167,7 @@
 
     move-result-object v0
 
-    .line 375
+    .line 254
     iget v1, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$8;->label:I
 
     const/4 v2, 0x1
@@ -192,10 +192,10 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 376
+    .line 255
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$8;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$getBasicFinderUiState$p(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)Lkotlinx/coroutines/flow/MutableStateFlow;
+    invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$getLatestSurfaceRequest$p(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)Lkotlinx/coroutines/flow/MutableStateFlow;
 
     move-result-object p1
 

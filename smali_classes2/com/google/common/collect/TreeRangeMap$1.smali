@@ -16,12 +16,23 @@
     name = null
 .end annotation
 
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/google/common/collect/RangeMap<",
+        "Ljava/lang/Comparable<",
+        "*>;",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
+
 
 # direct methods
 .method constructor <init>()V
     .locals 0
 
-    .line 306
+    .line 339
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -35,13 +46,15 @@
         value = {
             "()",
             "Ljava/util/Map<",
-            "Lcom/google/common/collect/Range;",
+            "Lcom/google/common/collect/Range<",
+            "Ljava/lang/Comparable<",
+            "*>;>;",
             "Ljava/lang/Object;",
             ">;"
         }
     .end annotation
 
-    .line 361
+    .line 394
     invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
 
     move-result-object p0
@@ -55,13 +68,15 @@
         value = {
             "()",
             "Ljava/util/Map<",
-            "Lcom/google/common/collect/Range;",
+            "Lcom/google/common/collect/Range<",
+            "Ljava/lang/Comparable<",
+            "*>;>;",
             "Ljava/lang/Object;",
             ">;"
         }
     .end annotation
 
-    .line 356
+    .line 389
     invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
 
     move-result-object p0
@@ -77,7 +92,25 @@
 
 .method public get(Ljava/lang/Comparable;)Ljava/lang/Object;
     .locals 0
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Comparable<",
+            "*>;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
     const/4 p0, 0x0
@@ -87,19 +120,30 @@
 
 .method public getEntry(Ljava/lang/Comparable;)Ljava/util/Map$Entry;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ljava/lang/Comparable;",
-            ")",
+            "Ljava/lang/Comparable<",
+            "*>;)",
             "Ljava/util/Map$Entry<",
-            "Lcom/google/common/collect/Range;",
+            "Lcom/google/common/collect/Range<",
+            "Ljava/lang/Comparable<",
+            "*>;>;",
             "Ljava/lang/Object;",
             ">;"
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
     const/4 p0, 0x0
@@ -109,38 +153,41 @@
 
 .method public put(Lcom/google/common/collect/Range;Ljava/lang/Object;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "range",
+            "value"
+        }
+    .end annotation
 
-    .line 326
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/common/collect/Range<",
+            "Ljava/lang/Comparable<",
+            "*>;>;",
+            "Ljava/lang/Object;",
+            ")V"
+        }
+    .end annotation
+
+    .line 359
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 327
+    .line 360
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    new-instance p2, Ljava/lang/StringBuilder;
 
-    move-result-object p1
+    const-string v0, "Cannot insert range "
 
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p2
-
-    invoke-virtual {p2}, Ljava/lang/String;->length()I
-
-    move-result p2
-
-    add-int/lit8 p2, p2, 0x2e
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0, p2}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string p2, "Cannot insert range "
-
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p2
-
-    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -161,8 +208,27 @@
 
 .method public putAll(Lcom/google/common/collect/RangeMap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "rangeMap"
+        }
+    .end annotation
 
-    .line 340
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/common/collect/RangeMap<",
+            "Ljava/lang/Comparable<",
+            "*>;+",
+            "Ljava/lang/Object;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 373
     invoke-interface {p1}, Lcom/google/common/collect/RangeMap;->asMapOfRanges()Ljava/util/Map;
 
     move-result-object p0
@@ -175,7 +241,7 @@
 
     return-void
 
-    .line 341
+    .line 374
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -188,38 +254,41 @@
 
 .method public putCoalescing(Lcom/google/common/collect/Range;Ljava/lang/Object;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "range",
+            "value"
+        }
+    .end annotation
 
-    .line 333
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/common/collect/Range<",
+            "Ljava/lang/Comparable<",
+            "*>;>;",
+            "Ljava/lang/Object;",
+            ")V"
+        }
+    .end annotation
+
+    .line 366
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 334
+    .line 367
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    new-instance p2, Ljava/lang/StringBuilder;
 
-    move-result-object p1
+    const-string v0, "Cannot insert range "
 
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p2
-
-    invoke-virtual {p2}, Ljava/lang/String;->length()I
-
-    move-result p2
-
-    add-int/lit8 p2, p2, 0x2e
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0, p2}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string p2, "Cannot insert range "
-
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p2
-
-    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -240,8 +309,25 @@
 
 .method public remove(Lcom/google/common/collect/Range;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "range"
+        }
+    .end annotation
 
-    .line 351
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/common/collect/Range<",
+            "Ljava/lang/Comparable<",
+            "*>;>;)V"
+        }
+    .end annotation
+
+    .line 384
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
@@ -249,8 +335,16 @@
 
 .method public span()Lcom/google/common/collect/Range;
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/common/collect/Range<",
+            "Ljava/lang/Comparable<",
+            "*>;>;"
+        }
+    .end annotation
 
-    .line 321
+    .line 354
     new-instance p0, Ljava/util/NoSuchElementException;
 
     invoke-direct {p0}, Ljava/util/NoSuchElementException;-><init>()V
@@ -260,8 +354,30 @@
 
 .method public subRangeMap(Lcom/google/common/collect/Range;)Lcom/google/common/collect/RangeMap;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "range"
+        }
+    .end annotation
 
-    .line 366
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/common/collect/Range<",
+            "Ljava/lang/Comparable<",
+            "*>;>;)",
+            "Lcom/google/common/collect/RangeMap<",
+            "Ljava/lang/Comparable<",
+            "*>;",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+
+    .line 399
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-object p0

@@ -4,11 +4,14 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lcom/google/common/collect/Interners$InternerBuilder;,
         Lcom/google/common/collect/Interners$InternerFunction;,
-        Lcom/google/common/collect/Interners$InternerImpl;,
-        Lcom/google/common/collect/Interners$InternerBuilder;
+        Lcom/google/common/collect/Interners$InternerImpl;
     }
 .end annotation
 
@@ -17,7 +20,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 36
+    .line 38
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -25,6 +28,15 @@
 
 .method public static asFunction(Lcom/google/common/collect/Interner;)Lcom/google/common/base/Function;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "interner"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -37,7 +49,7 @@
         }
     .end annotation
 
-    .line 157
+    .line 163
     new-instance v0, Lcom/google/common/collect/Interners$InternerFunction;
 
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -54,7 +66,7 @@
 .method public static newBuilder()Lcom/google/common/collect/Interners$InternerBuilder;
     .locals 2
 
-    .line 90
+    .line 92
     new-instance v0, Lcom/google/common/collect/Interners$InternerBuilder;
 
     const/4 v1, 0x0
@@ -76,7 +88,7 @@
         }
     .end annotation
 
-    .line 99
+    .line 101
     invoke-static {}, Lcom/google/common/collect/Interners;->newBuilder()Lcom/google/common/collect/Interners$InternerBuilder;
 
     move-result-object v0
@@ -104,7 +116,7 @@
         }
     .end annotation
 
-    .line 110
+    .line 112
     invoke-static {}, Lcom/google/common/collect/Interners;->newBuilder()Lcom/google/common/collect/Interners$InternerBuilder;
 
     move-result-object v0

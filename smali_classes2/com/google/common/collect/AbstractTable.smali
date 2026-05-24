@@ -7,10 +7,13 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/common/collect/AbstractTable$Values;,
-        Lcom/google/common/collect/AbstractTable$CellSet;
+        Lcom/google/common/collect/AbstractTable$CellSet;,
+        Lcom/google/common/collect/AbstractTable$Values;
     }
 .end annotation
 
@@ -43,7 +46,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -58,7 +61,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -67,7 +70,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 35
+    .line 40
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -97,12 +100,12 @@
         }
     .end annotation
 
-    .line 113
+    .line 124
     iget-object v0, p0, Lcom/google/common/collect/AbstractTable;->cellSet:Ljava/util/Set;
 
     if-nez v0, :cond_0
 
-    .line 114
+    .line 125
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractTable;->createCellSet()Ljava/util/Set;
 
     move-result-object v0
@@ -116,7 +119,7 @@
 .method public clear()V
     .locals 0
 
-    .line 86
+    .line 94
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractTable;->cellSet()Ljava/util/Set;
 
     move-result-object p0
@@ -140,7 +143,7 @@
         }
     .end annotation
 
-    .line 54
+    .line 61
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractTable;->columnMap()Ljava/util/Map;
 
     move-result-object p0
@@ -155,15 +158,25 @@
 .method public contains(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "rowKey",
+            "columnKey"
+        }
+    .end annotation
 
-    .line 69
+    .line 76
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractTable;->rowMap()Ljava/util/Map;
 
     move-result-object p0
@@ -176,7 +189,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 70
+    .line 77
     invoke-static {p0, p2}, Lcom/google/common/collect/Maps;->safeContainsKey(Ljava/util/Map;Ljava/lang/Object;)Z
 
     move-result p0
@@ -197,11 +210,19 @@
 .method public containsColumn(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "columnKey"
+        }
+    .end annotation
 
-    .line 44
+    .line 51
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractTable;->columnMap()Ljava/util/Map;
 
     move-result-object p0
@@ -216,11 +237,19 @@
 .method public containsRow(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "rowKey"
+        }
+    .end annotation
 
-    .line 39
+    .line 46
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractTable;->rowMap()Ljava/util/Map;
 
     move-result-object p0
@@ -235,11 +264,19 @@
 .method public containsValue(Ljava/lang/Object;)Z
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 59
+    .line 66
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractTable;->rowMap()Ljava/util/Map;
 
     move-result-object p0
@@ -265,7 +302,7 @@
 
     check-cast v0, Ljava/util/Map;
 
-    .line 60
+    .line 67
     invoke-interface {v0, p1}, Ljava/util/Map;->containsValue(Ljava/lang/Object;)Z
 
     move-result v0
@@ -293,7 +330,7 @@
         }
     .end annotation
 
-    .line 118
+    .line 129
     new-instance v0, Lcom/google/common/collect/AbstractTable$CellSet;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/AbstractTable$CellSet;-><init>(Lcom/google/common/collect/AbstractTable;)V
@@ -311,7 +348,7 @@
         }
     .end annotation
 
-    .line 174
+    .line 185
     new-instance v0, Lcom/google/common/collect/AbstractTable$Values;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/AbstractTable$Values;-><init>(Lcom/google/common/collect/AbstractTable;)V
@@ -322,11 +359,19 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
-    .line 211
+    .line 223
     invoke-static {p0, p1}, Lcom/google/common/collect/Tables;->equalsImpl(Lcom/google/common/collect/Table;Ljava/lang/Object;)Z
 
     move-result p0
@@ -337,13 +382,24 @@
 .method public get(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "rowKey",
+            "columnKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -353,7 +409,10 @@
         }
     .end annotation
 
-    .line 75
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 83
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractTable;->rowMap()Ljava/util/Map;
 
     move-result-object p0
@@ -370,7 +429,7 @@
 
     goto :goto_0
 
-    .line 76
+    .line 84
     :cond_0
     invoke-static {p0, p2}, Lcom/google/common/collect/Maps;->safeGet(Ljava/util/Map;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -383,7 +442,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 216
+    .line 228
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractTable;->cellSet()Ljava/util/Set;
 
     move-result-object p0
@@ -398,7 +457,7 @@
 .method public isEmpty()Z
     .locals 0
 
-    .line 81
+    .line 89
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractTable;->size()I
 
     move-result p0
@@ -418,13 +477,41 @@
 
 .method public put(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .param p3    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "rowKey",
+            "columnKey",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TR;TC;TV;)TV;"
         }
     .end annotation
 
-    .line 99
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 110
     invoke-virtual {p0, p1}, Lcom/google/common/collect/AbstractTable;->row(Ljava/lang/Object;)Ljava/util/Map;
 
     move-result-object p0
@@ -438,6 +525,15 @@
 
 .method public putAll(Lcom/google/common/collect/Table;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "table"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -446,7 +542,7 @@
         }
     .end annotation
 
-    .line 104
+    .line 115
     invoke-interface {p1}, Lcom/google/common/collect/Table;->cellSet()Ljava/util/Set;
 
     move-result-object p1
@@ -468,7 +564,7 @@
 
     check-cast v0, Lcom/google/common/collect/Table$Cell;
 
-    .line 105
+    .line 116
     invoke-interface {v0}, Lcom/google/common/collect/Table$Cell;->getRowKey()Ljava/lang/Object;
 
     move-result-object v1
@@ -492,13 +588,24 @@
 .method public remove(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "rowKey",
+            "columnKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -508,7 +615,10 @@
         }
     .end annotation
 
-    .line 92
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 101
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractTable;->rowMap()Ljava/util/Map;
 
     move-result-object p0
@@ -525,7 +635,7 @@
 
     goto :goto_0
 
-    .line 93
+    .line 102
     :cond_0
     invoke-static {p0, p2}, Lcom/google/common/collect/Maps;->safeRemove(Ljava/util/Map;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -545,7 +655,7 @@
         }
     .end annotation
 
-    .line 49
+    .line 56
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractTable;->rowMap()Ljava/util/Map;
 
     move-result-object p0
@@ -560,12 +670,12 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 222
+    .line 234
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractTable;->rowMap()Ljava/util/Map;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-interface {p0}, Ljava/util/Map;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -582,12 +692,12 @@
         }
     .end annotation
 
-    .line 169
+    .line 180
     iget-object v0, p0, Lcom/google/common/collect/AbstractTable;->values:Ljava/util/Collection;
 
     if-nez v0, :cond_0
 
-    .line 170
+    .line 181
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractTable;->createValues()Ljava/util/Collection;
 
     move-result-object v0
@@ -608,7 +718,7 @@
         }
     .end annotation
 
-    .line 178
+    .line 189
     new-instance v0, Lcom/google/common/collect/AbstractTable$1;
 
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractTable;->cellSet()Ljava/util/Set;

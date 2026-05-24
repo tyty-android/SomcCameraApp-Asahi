@@ -57,10 +57,6 @@
 
 .field private mIFrameInterval:I
 
-.field private mIsHalfFps:Z
-
-.field private mIsRestartRequested:Z
-
 .field private mKeyFrameRequested:Z
 
 .field private mLastRecordedVideoTimestampUs:J
@@ -76,8 +72,6 @@
 .field private mRecordedDurationAtStopUs:J
 
 .field private mSourceSurface:Landroid/view/Surface;
-
-.field private mStreamingOrientation:I
 
 .field private mTotalBufferingSize:J
 
@@ -337,14 +331,6 @@
     return-void
 .end method
 
-.method static bridge synthetic -$$Nest$mdoPrepare(Lcom/sonymobile/android/media/internal/VideoTrack;Z)V
-    .locals 0
-
-    invoke-direct {p0, p1}, Lcom/sonymobile/android/media/internal/VideoTrack;->doPrepare(Z)V
-
-    return-void
-.end method
-
 .method static bridge synthetic -$$Nest$sfgetBUFFERING_ALLOWABLE_MAX_MEMORY_RATIO()Ljava/lang/Float;
     .locals 1
 
@@ -358,7 +344,7 @@
 
     const v0, 0x3f4ccccd    # 0.8f
 
-    .line 54
+    .line 53
     invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v0
@@ -368,15 +354,31 @@
     return-void
 .end method
 
-.method constructor <init>(Landroid/os/Handler;Landroid/os/HandlerThread;Landroid/os/HandlerThread;Landroid/os/HandlerThread;ZLandroid/os/Handler;Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;)V
+.method constructor <init>(Landroid/os/Handler;Landroid/os/HandlerThread;Landroid/os/HandlerThread;Landroid/os/HandlerThread;Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "callback",
+            "codecThread",
+            "eventThread",
+            "muxerThread",
+            "videoTrackId"
+        }
+    .end annotation
 
-    .line 113
+    .line 107
     invoke-direct {p0}, Lcom/sonymobile/android/media/internal/Track;-><init>()V
 
     const/4 v0, 0x7
 
-    .line 58
+    .line 57
     new-array v0, v0, [Ljava/lang/String;
 
     const-string v1, ""
@@ -425,33 +427,33 @@
 
     const/4 v0, -0x1
 
-    .line 75
+    .line 74
     iput v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mMuxerTrackIndex:I
 
-    .line 82
+    .line 81
     iput v2, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mEncodingProfile:I
 
-    .line 83
+    .line 82
     iput v2, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mEncodingLevel:I
 
-    .line 84
+    .line 83
     iput v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mBitRateMode:I
 
-    .line 85
+    .line 84
     iput v3, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mIFrameInterval:I
 
-    .line 86
+    .line 85
     iput v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mColorStandard:I
 
-    .line 87
+    .line 86
     iput v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mColorTransfer:I
 
-    .line 88
+    .line 87
     iput v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mColorRange:I
 
     const v0, 0xf4240
 
-    .line 89
+    .line 88
     iget v1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mFrameRate:I
 
     div-int/2addr v0, v1
@@ -460,57 +462,48 @@
 
     iput-wide v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mFrameInterval:J
 
-    .line 90
-    iput v2, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mStreamingOrientation:I
-
     const-wide/16 v0, -0x1
 
-    .line 92
+    .line 90
     iput-wide v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mFirstVideoFrameTimeUs:J
 
-    .line 93
+    .line 91
     iput-wide v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mRecordedDurationAtStopUs:J
 
     const-wide/16 v0, 0x0
 
-    .line 94
+    .line 92
     iput-wide v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mLastRecordedVideoTimestampUs:J
 
-    .line 95
+    .line 93
     iput-boolean v2, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mWaitForKeyFrame:Z
 
-    .line 97
+    .line 95
     iput-wide v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mVideoOffset:J
 
-    .line 99
+    .line 97
     iput-boolean v2, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mKeyFrameRequested:Z
 
-    .line 100
+    .line 98
     iput-boolean v2, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mPauseResumeFlag:Z
 
-    .line 102
+    .line 100
     iput-boolean v3, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mFirstCodecConfigFrame:Z
 
-    .line 104
-    new-instance v3, Ljava/lang/Object;
+    .line 102
+    new-instance v2, Ljava/lang/Object;
 
-    invoke-direct {v3}, Ljava/lang/Object;-><init>()V
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
 
-    iput-object v3, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mTotalBufferingSizeInfoLock:Ljava/lang/Object;
+    iput-object v2, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mTotalBufferingSizeInfoLock:Ljava/lang/Object;
 
-    .line 105
+    .line 103
     iput-wide v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mTotalBufferingSize:J
 
-    .line 106
+    .line 104
     iput-wide v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mAllowableBufferingSize:J
 
-    .line 108
-    iput-boolean v2, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mIsHalfFps:Z
-
     .line 109
-    iput-boolean v2, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mIsRestartRequested:Z
-
-    .line 115
     new-instance v0, Lcom/sonymobile/android/media/internal/VideoTrack$CodecHandler;
 
     invoke-virtual {p2}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
@@ -521,7 +514,7 @@
 
     iput-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mCodecHandler:Lcom/sonymobile/android/media/internal/VideoTrack$CodecHandler;
 
-    .line 116
+    .line 110
     new-instance p2, Lcom/sonymobile/android/media/internal/Track$EventHandler;
 
     invoke-virtual {p3}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
@@ -532,7 +525,7 @@
 
     iput-object p2, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mEventHandler:Lcom/sonymobile/android/media/internal/Track$EventHandler;
 
-    .line 117
+    .line 111
     new-instance p2, Lcom/sonymobile/android/media/internal/Track$MuxerHandler;
 
     invoke-virtual {p4}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
@@ -543,167 +536,121 @@
 
     iput-object p2, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mMuxerHandler:Lcom/sonymobile/android/media/internal/Track$MuxerHandler;
 
-    .line 119
+    .line 113
     new-instance p2, Lcom/sonymobile/android/media/internal/HandlerHelper;
 
     invoke-direct {p2}, Lcom/sonymobile/android/media/internal/HandlerHelper;-><init>()V
 
     iput-object p2, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mHandlerHelper:Lcom/sonymobile/android/media/internal/HandlerHelper;
 
-    .line 120
+    .line 114
     iput-object p1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mCallback:Landroid/os/Handler;
 
-    .line 122
+    .line 116
     sget-object p1, Lcom/sonymobile/android/media/internal/Track$States;->STOPPED:Lcom/sonymobile/android/media/internal/Track$States;
 
     iput-object p1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mState:Lcom/sonymobile/android/media/internal/Track$States;
 
-    .line 123
-    iput-object p6, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mMediaRecordercallback:Landroid/os/Handler;
-
-    .line 124
-    iput-boolean p5, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mIsStreamingMode:Z
-
-    .line 125
-    iput-object p7, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mVideoTrackId:Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
+    .line 117
+    iput-object p5, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mVideoTrackId:Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
 
     return-void
 .end method
 
-.method private doPrepare(Z)V
+
+# virtual methods
+.method protected doPause()V
+    .locals 0
+
+    .line 174
+    iget-object p0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mPauseLatch:Ljava/util/concurrent/CountDownLatch;
+
+    invoke-virtual {p0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
+
+    return-void
+.end method
+
+.method protected doPrepare()V
     .locals 12
 
-    .line 217
-    sget-object v0, Lcom/sonymobile/android/media/internal/Track$States;->PREPARING:Lcom/sonymobile/android/media/internal/Track$States;
-
-    iput-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mState:Lcom/sonymobile/android/media/internal/Track$States;
-
-    .line 218
+    .line 178
     new-instance v0, Landroid/media/MediaCodecList;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, v1}, Landroid/media/MediaCodecList;-><init>(I)V
 
-    .line 222
-    iget-boolean v2, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mIsStreamingMode:Z
+    .line 180
+    iget-object v2, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mVideoMime:Ljava/lang/String;
 
-    if-eqz v2, :cond_1
-
-    iget v2, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mStreamingOrientation:I
-
-    const/16 v3, 0x5a
-
-    if-eq v2, v3, :cond_0
-
-    const/16 v3, 0x10e
-
-    if-ne v2, v3, :cond_1
-
-    .line 223
-    :cond_0
-    iget v2, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mHeight:I
-
-    .line 224
     iget v3, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mWidth:I
 
-    goto :goto_0
+    iget v4, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mHeight:I
 
-    .line 226
-    :cond_1
-    iget v2, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mWidth:I
-
-    .line 227
-    iget v3, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mHeight:I
-
-    .line 229
-    :goto_0
-    iget-object v4, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mVideoMime:Ljava/lang/String;
-
-    invoke-static {v4, v2, v3}, Landroid/media/MediaFormat;->createVideoFormat(Ljava/lang/String;II)Landroid/media/MediaFormat;
+    invoke-static {v2, v3, v4}, Landroid/media/MediaFormat;->createVideoFormat(Ljava/lang/String;II)Landroid/media/MediaFormat;
 
     move-result-object v2
 
-    .line 230
+    .line 181
     const-string v3, "bitrate"
 
     iget v4, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mEncodingBitRate:I
 
     invoke-virtual {v2, v3, v4}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
 
-    .line 231
+    .line 182
     const-string v3, "i-frame-interval"
 
     iget v4, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mIFrameInterval:I
 
     invoke-virtual {v2, v3, v4}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
 
-    .line 233
-    iget-boolean v3, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mIsHalfFps:Z
+    .line 183
+    const-string v3, "frame-rate"
 
-    const-string v4, "frame-rate"
+    iget v4, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mFrameRate:I
 
-    if-eqz v3, :cond_2
+    invoke-virtual {v2, v3, v4}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
 
-    .line 234
-    iget v3, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mFrameRate:I
-
-    int-to-float v3, v3
-
-    const/high16 v5, 0x40000000    # 2.0f
-
-    div-float/2addr v3, v5
-
-    invoke-virtual {v2, v4, v3}, Landroid/media/MediaFormat;->setFloat(Ljava/lang/String;F)V
-
-    goto :goto_1
-
-    .line 236
-    :cond_2
-    iget v3, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mFrameRate:I
-
-    invoke-virtual {v2, v4, v3}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
-
-    .line 239
-    :goto_1
+    .line 185
     iget v3, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mOperatingRate:I
 
-    if-lez v3, :cond_3
+    if-lez v3, :cond_0
 
-    .line 240
+    .line 186
     const-string v3, "operating-rate"
 
     iget v4, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mOperatingRate:I
 
     invoke-virtual {v2, v3, v4}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
 
-    .line 242
+    .line 188
     const-string/jumbo v3, "ts-schema"
 
     const-string v4, "none"
 
     invoke-virtual {v2, v3, v4}, Landroid/media/MediaFormat;->setString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 245
-    :cond_3
+    .line 191
+    :cond_0
     iget v3, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mCaptureRate:I
 
-    if-lez v3, :cond_4
+    if-lez v3, :cond_1
 
-    .line 246
+    .line 192
     const-string v3, "capture-rate"
 
     iget v4, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mCaptureRate:I
 
     invoke-virtual {v2, v3, v4}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
 
-    .line 249
-    :cond_4
+    .line 195
+    :cond_1
     const-string v3, "priority"
 
     invoke-virtual {v2, v3, v1}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
 
-    .line 251
+    .line 197
     iget v1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mEncodingProfile:I
 
     const/16 v3, 0x8
@@ -716,9 +663,9 @@
 
     const/4 v7, 0x1
 
-    if-nez v1, :cond_6
+    if-nez v1, :cond_3
 
-    .line 252
+    .line 198
     iget-object v1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mVideoMime:Ljava/lang/String;
 
     const-string/jumbo v8, "video/avc"
@@ -727,52 +674,52 @@
 
     move-result v1
 
-    if-eqz v1, :cond_8
+    if-eqz v1, :cond_5
 
-    .line 253
+    .line 199
     iget v1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mHeight:I
 
-    if-lt v1, v4, :cond_5
+    if-lt v1, v4, :cond_2
 
-    .line 254
+    .line 200
     invoke-virtual {v2, v6, v3}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
 
-    goto :goto_2
+    goto :goto_0
 
-    .line 257
-    :cond_5
+    .line 203
+    :cond_2
     invoke-virtual {v2, v6, v7}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
 
-    .line 260
-    :goto_2
+    .line 206
+    :goto_0
     invoke-virtual {v2, v5, v7}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
 
-    goto :goto_3
+    goto :goto_1
 
-    .line 264
-    :cond_6
+    .line 210
+    :cond_3
     invoke-virtual {v2, v6, v1}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
 
-    .line 265
+    .line 211
     iget v1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mEncodingLevel:I
 
-    if-nez v1, :cond_7
+    if-nez v1, :cond_4
 
     move v1, v7
 
-    :cond_7
+    :cond_4
     invoke-virtual {v2, v5, v1}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
 
-    .line 268
-    :cond_8
-    :goto_3
+    .line 214
+    :cond_5
+    :goto_1
     const-string v1, "color-format"
 
     const v5, 0x7f000789
 
     invoke-virtual {v2, v1, v5}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
 
-    .line 271
+    .line 217
     iget v1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mColorStandard:I
 
     const/4 v5, 0x2
@@ -785,57 +732,57 @@
 
     const/4 v10, 0x4
 
-    if-ltz v1, :cond_9
+    if-ltz v1, :cond_6
 
     iget v11, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mColorTransfer:I
 
-    if-ltz v11, :cond_9
+    if-ltz v11, :cond_6
 
     iget v11, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mColorRange:I
 
-    if-ltz v11, :cond_9
+    if-ltz v11, :cond_6
 
-    .line 272
+    .line 218
     invoke-virtual {v2, v9, v1}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
 
-    .line 273
+    .line 219
     iget v1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mColorTransfer:I
 
     invoke-virtual {v2, v8, v1}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
 
-    .line 274
+    .line 220
     iget v1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mColorRange:I
 
     invoke-virtual {v2, v6, v1}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
 
-    goto :goto_5
+    goto :goto_3
 
-    .line 276
-    :cond_9
+    .line 222
+    :cond_6
     iget v1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mHeight:I
 
-    if-lt v1, v4, :cond_a
+    if-lt v1, v4, :cond_7
 
-    .line 277
+    .line 223
     invoke-virtual {v2, v9, v7}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
 
-    goto :goto_4
+    goto :goto_2
 
-    .line 280
-    :cond_a
+    .line 226
+    :cond_7
     invoke-virtual {v2, v9, v10}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
 
-    :goto_4
+    :goto_2
     const/4 v1, 0x3
 
-    .line 283
+    .line 229
     invoke-virtual {v2, v8, v1}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
 
-    .line 285
+    .line 231
     invoke-virtual {v2, v6, v5}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
 
-    .line 288
-    :goto_5
+    .line 234
+    :goto_3
     iget-object v1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mVideoMime:Ljava/lang/String;
 
     invoke-virtual {p0, v0, v2, v1}, Lcom/sonymobile/android/media/internal/VideoTrack;->checkFormat(Landroid/media/MediaCodecList;Landroid/media/MediaFormat;Ljava/lang/String;)Z
@@ -844,14 +791,14 @@
 
     const-string v4, "VideoTrack"
 
-    if-eqz v1, :cond_e
+    if-eqz v1, :cond_a
 
-    .line 291
+    .line 237
     invoke-virtual {v0, v2}, Landroid/media/MediaCodecList;->findEncoderForFormat(Landroid/media/MediaFormat;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 295
+    .line 241
     :try_start_0
     invoke-static {v0}, Landroid/media/MediaCodec;->createByCodecName(Ljava/lang/String;)Landroid/media/MediaCodec;
 
@@ -863,7 +810,7 @@
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 303
+    .line 249
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mEncoder:Landroid/media/MediaCodec;
 
     new-instance v1, Lcom/sonymobile/android/media/internal/VideoTrack$VideoEncoderCallback;
@@ -874,31 +821,31 @@
 
     invoke-virtual {v0, v1}, Landroid/media/MediaCodec;->setCallback(Landroid/media/MediaCodec$Callback;)V
 
-    .line 305
+    .line 251
     :try_start_1
     iget v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mBitRateMode:I
 
-    if-ltz v0, :cond_b
+    if-ltz v0, :cond_8
 
-    .line 306
+    .line 252
     const-string v1, "bitrate-mode"
 
     invoke-virtual {v2, v1, v0}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
 
-    .line 308
-    :cond_b
+    .line 254
+    :cond_8
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mEncoder:Landroid/media/MediaCodec;
 
     invoke-virtual {v0, v2, v5, v5, v7}, Landroid/media/MediaCodec;->configure(Landroid/media/MediaFormat;Landroid/view/Surface;Landroid/media/MediaCrypto;I)V
     :try_end_1
     .catch Landroid/media/MediaCodec$CodecException; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 316
+    .line 262
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mSourceSurface:Landroid/view/Surface;
 
-    if-nez v0, :cond_c
+    if-nez v0, :cond_9
 
-    .line 317
+    .line 263
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mEncoder:Landroid/media/MediaCodec;
 
     invoke-virtual {v0}, Landroid/media/MediaCodec;->createInputSurface()Landroid/view/Surface;
@@ -907,163 +854,108 @@
 
     iput-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mSourceSurface:Landroid/view/Surface;
 
-    goto :goto_6
+    goto :goto_4
 
-    .line 319
-    :cond_c
+    .line 265
+    :cond_9
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mEncoder:Landroid/media/MediaCodec;
 
     iget-object v1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mSourceSurface:Landroid/view/Surface;
 
     invoke-virtual {v0, v1}, Landroid/media/MediaCodec;->setInputSurface(Landroid/view/Surface;)V
 
-    :goto_6
-    if-nez p1, :cond_d
+    .line 267
+    :goto_4
+    new-instance v0, Ljava/util/concurrent/LinkedBlockingDeque;
 
-    .line 321
-    iget-object p1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mBufferList:Ljava/util/concurrent/LinkedBlockingDeque;
+    invoke-direct {v0}, Ljava/util/concurrent/LinkedBlockingDeque;-><init>()V
 
-    if-nez p1, :cond_f
+    iput-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mBufferList:Ljava/util/concurrent/LinkedBlockingDeque;
 
-    .line 322
-    :cond_d
-    new-instance p1, Ljava/util/concurrent/LinkedBlockingDeque;
+    goto :goto_5
 
-    invoke-direct {p1}, Ljava/util/concurrent/LinkedBlockingDeque;-><init>()V
-
-    iput-object p1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mBufferList:Ljava/util/concurrent/LinkedBlockingDeque;
-
-    goto :goto_7
-
-    .line 310
+    .line 256
     :catch_0
-    const-string p1, "Failed to configure MediaCodec"
+    const-string v0, "Failed to configure MediaCodec"
 
-    invoke-static {v4, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v4, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 311
-    iget-object p1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mCallback:Landroid/os/Handler;
+    .line 257
+    iget-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mCallback:Landroid/os/Handler;
 
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mVideoTrackId:Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
 
-    invoke-virtual {p1, v7, v10, v7, p0}, Landroid/os/Handler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {v0, v7, v10, v7, p0}, Landroid/os/Handler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object p0
 
-    .line 312
+    .line 258
     invoke-virtual {p0}, Landroid/os/Message;->sendToTarget()V
 
     return-void
 
     :catch_1
-    move-exception p1
+    move-exception v0
 
-    .line 297
-    const-string v0, "Unable to create encoder"
+    .line 243
+    const-string v1, "Unable to create encoder"
 
-    invoke-static {v4, v0, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+    invoke-static {v4, v1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 298
-    iget-object p1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mCallback:Landroid/os/Handler;
+    .line 244
+    iget-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mCallback:Landroid/os/Handler;
 
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mVideoTrackId:Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
 
-    invoke-virtual {p1, v7, v10, v7, p0}, Landroid/os/Handler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {v0, v7, v10, v7, p0}, Landroid/os/Handler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object p0
 
-    .line 299
+    .line 245
     invoke-virtual {p0}, Landroid/os/Message;->sendToTarget()V
 
     return-void
 
-    .line 325
-    :cond_e
-    new-instance p1, Ljava/lang/StringBuilder;
+    .line 269
+    :cond_a
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    const-string v0, "Video format is not supported "
+    const-string v1, "Video format is not supported "
 
-    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v2}, Landroid/media/MediaFormat;->toString()Ljava/lang/String;
 
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     move-result-object v0
 
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object v0
 
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-static {v4, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    move-result-object p1
+    .line 270
+    iget-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mCallback:Landroid/os/Handler;
 
-    invoke-static {v4, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    iget-object v1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mVideoTrackId:Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
 
-    .line 326
-    iget-object p1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mCallback:Landroid/os/Handler;
+    invoke-virtual {v0, v7, v10, v5, v1}, Landroid/os/Handler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
 
-    iget-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mVideoTrackId:Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
+    .line 273
+    :goto_5
+    iget v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mEncodingBitRate:I
 
-    invoke-virtual {p1, v7, v10, v5, v0}, Landroid/os/Handler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
+    div-int/2addr v0, v3
 
-    .line 329
-    :cond_f
-    :goto_7
-    iget p1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mEncodingBitRate:I
+    mul-int/lit8 v0, v0, 0xa
 
-    div-int/2addr p1, v3
-
-    mul-int/lit8 p1, p1, 0xa
-
-    int-to-long v0, p1
+    int-to-long v0, v0
 
     iput-wide v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mAllowableBufferingSize:J
-
-    return-void
-.end method
-
-.method private doRestart()V
-    .locals 1
-
-    .line 201
-    iget-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mEncoder:Landroid/media/MediaCodec;
-
-    if-eqz v0, :cond_0
-
-    .line 202
-    sget-object v0, Lcom/sonymobile/android/media/internal/Track$States;->RESTARTING:Lcom/sonymobile/android/media/internal/Track$States;
-
-    iput-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mState:Lcom/sonymobile/android/media/internal/Track$States;
-
-    .line 203
-    iget-object p0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mEncoder:Landroid/media/MediaCodec;
-
-    invoke-virtual {p0}, Landroid/media/MediaCodec;->signalEndOfInputStream()V
-
-    :cond_0
-    return-void
-.end method
-
-
-# virtual methods
-.method protected doPause()V
-    .locals 0
-
-    .line 209
-    iget-object p0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mPauseLatch:Ljava/util/concurrent/CountDownLatch;
-
-    invoke-virtual {p0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
-
-    return-void
-.end method
-
-.method protected doPrepare()V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    .line 213
-    invoke-direct {p0, v0}, Lcom/sonymobile/android/media/internal/VideoTrack;->doPrepare(Z)V
 
     return-void
 .end method
@@ -1071,22 +963,22 @@
 .method protected doRelease()V
     .locals 1
 
-    .line 351
+    .line 291
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mEncoder:Landroid/media/MediaCodec;
 
     if-eqz v0, :cond_0
 
-    .line 352
+    .line 292
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mEncoder:Landroid/media/MediaCodec;
 
     invoke-virtual {v0}, Landroid/media/MediaCodec;->release()V
 
     const/4 v0, 0x0
 
-    .line 353
+    .line 293
     iput-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mEncoder:Landroid/media/MediaCodec;
 
-    .line 355
+    .line 295
     :cond_0
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mMuxerHandler:Lcom/sonymobile/android/media/internal/Track$MuxerHandler;
 
@@ -1100,31 +992,31 @@
 .method protected doReset()V
     .locals 2
 
-    .line 366
+    .line 306
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mEncoder:Landroid/media/MediaCodec;
 
     if-eqz v0, :cond_1
 
-    .line 367
+    .line 307
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mMuxerState:Lcom/sonymobile/android/media/internal/Track$MuxerState;
 
     sget-object v1, Lcom/sonymobile/android/media/internal/Track$MuxerState;->STARTED:Lcom/sonymobile/android/media/internal/Track$MuxerState;
 
     if-ne v0, v1, :cond_0
 
-    .line 368
+    .line 308
     sget-object v0, Lcom/sonymobile/android/media/internal/Track$States;->STOPPING:Lcom/sonymobile/android/media/internal/Track$States;
 
     iput-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mState:Lcom/sonymobile/android/media/internal/Track$States;
 
-    .line 369
+    .line 309
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mEncoder:Landroid/media/MediaCodec;
 
     invoke-virtual {p0}, Landroid/media/MediaCodec;->signalEndOfInputStream()V
 
     goto :goto_0
 
-    .line 370
+    .line 310
     :cond_0
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mState:Lcom/sonymobile/android/media/internal/Track$States;
 
@@ -1132,12 +1024,12 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 371
+    .line 311
     sget-object v0, Lcom/sonymobile/android/media/internal/Track$States;->STOPPED:Lcom/sonymobile/android/media/internal/Track$States;
 
     iput-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mState:Lcom/sonymobile/android/media/internal/Track$States;
 
-    .line 373
+    .line 313
     :try_start_0
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mEncoder:Landroid/media/MediaCodec;
 
@@ -1150,7 +1042,7 @@
     :catch_0
     move-exception p0
 
-    .line 375
+    .line 315
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1180,8 +1072,16 @@
 
 .method protected doResume(Ljava/util/concurrent/CountDownLatch;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "resumeLatch"
+        }
+    .end annotation
 
-    .line 360
+    .line 300
     invoke-virtual {p1}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
     return-void
@@ -1190,62 +1090,50 @@
 .method protected doStart()V
     .locals 3
 
-    .line 334
+    .line 278
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mEncoder:Landroid/media/MediaCodec;
 
     invoke-virtual {v0}, Landroid/media/MediaCodec;->start()V
 
     const/4 v0, 0x0
 
-    .line 335
+    .line 279
     iput v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mFrameDropCounter:I
 
     const-wide/16 v1, -0x1
 
-    .line 336
+    .line 280
     iput-wide v1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mFirstVideoFrameTimeUs:J
 
-    .line 337
+    .line 281
     iput-wide v1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mRecordedDurationAtStopUs:J
 
-    .line 338
+    .line 282
     iput-boolean v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mPauseResumeFlag:Z
 
-    .line 339
+    .line 283
     iput-boolean v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mWaitForKeyFrame:Z
 
-    .line 340
+    .line 284
     iput-boolean v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mKeyFrameRequested:Z
 
-    const/4 v1, 0x1
+    const/4 v0, 0x1
 
-    .line 341
-    iput-boolean v1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mFirstCodecConfigFrame:Z
+    .line 285
+    iput-boolean v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mFirstCodecConfigFrame:Z
 
-    .line 342
-    sget-object v1, Lcom/sonymobile/android/media/internal/Track$States;->STARTED:Lcom/sonymobile/android/media/internal/Track$States;
+    .line 286
+    sget-object v0, Lcom/sonymobile/android/media/internal/Track$States;->STARTED:Lcom/sonymobile/android/media/internal/Track$States;
 
-    iput-object v1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mState:Lcom/sonymobile/android/media/internal/Track$States;
+    iput-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mState:Lcom/sonymobile/android/media/internal/Track$States;
 
-    .line 343
-    iget-boolean v1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mIsRestartRequested:Z
-
-    if-eqz v1, :cond_0
-
-    .line 344
-    iput-boolean v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mIsRestartRequested:Z
-
-    .line 345
-    invoke-direct {p0}, Lcom/sonymobile/android/media/internal/VideoTrack;->doRestart()V
-
-    :cond_0
     return-void
 .end method
 
 .method protected doStop()V
     .locals 3
 
-    .line 388
+    .line 328
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mClock:Lcom/sonymobile/android/media/internal/ClockInterface;
 
     invoke-interface {v0}, Lcom/sonymobile/android/media/internal/ClockInterface;->getDurationAtStopUs()J
@@ -1254,7 +1142,7 @@
 
     iput-wide v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mRecordedDurationAtStopUs:J
 
-    .line 391
+    .line 331
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mCodecHandler:Lcom/sonymobile/android/media/internal/VideoTrack$CodecHandler;
 
     const/16 v0, 0x6f
@@ -1274,34 +1162,29 @@
         }
     .end annotation
 
-    .line 396
+    .line 336
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mBufferList:Ljava/util/concurrent/LinkedBlockingDeque;
 
     invoke-virtual {v0}, Ljava/util/concurrent/LinkedBlockingDeque;->isEmpty()Z
 
     move-result v0
 
-    if-nez v0, :cond_8
+    if-nez v0, :cond_6
 
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mState:Lcom/sonymobile/android/media/internal/Track$States;
 
     sget-object v1, Lcom/sonymobile/android/media/internal/Track$States;->STOPPED:Lcom/sonymobile/android/media/internal/Track$States;
 
-    if-eq v0, v1, :cond_8
+    if-eq v0, v1, :cond_6
 
-    .line 397
+    .line 337
     invoke-virtual {p0}, Lcom/sonymobile/android/media/internal/VideoTrack;->isMuxerStarted()Z
 
     move-result v0
 
-    if-nez v0, :cond_0
+    if-eqz v0, :cond_6
 
-    iget-boolean v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mIsStreamingMode:Z
-
-    if-eqz v0, :cond_8
-
-    .line 398
-    :cond_0
+    .line 338
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mBufferList:Ljava/util/concurrent/LinkedBlockingDeque;
 
     invoke-virtual {v0}, Ljava/util/concurrent/LinkedBlockingDeque;->removeFirst()Ljava/lang/Object;
@@ -1310,18 +1193,18 @@
 
     check-cast v0, Lcom/sonymobile/android/media/internal/Track$EncodedBuffer;
 
-    .line 405
+    .line 345
     iget-boolean v1, v0, Lcom/sonymobile/android/media/internal/Track$EncodedBuffer;->containsCopiedBuffer:Z
 
-    if-eqz v1, :cond_1
+    if-eqz v1, :cond_0
 
-    .line 406
+    .line 346
     iget-object v1, v0, Lcom/sonymobile/android/media/internal/Track$EncodedBuffer;->byteBuffer:Ljava/nio/ByteBuffer;
 
     goto :goto_0
 
-    .line 408
-    :cond_1
+    .line 348
+    :cond_0
     iget-object v1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mEncoder:Landroid/media/MediaCodec;
 
     iget v2, v0, Lcom/sonymobile/android/media/internal/Track$EncodedBuffer;->bufferIndex:I
@@ -1331,49 +1214,22 @@
     move-result-object v1
 
     :goto_0
-    if-nez v1, :cond_2
+    if-nez v1, :cond_1
 
-    goto :goto_2
+    goto :goto_1
 
-    .line 413
-    :cond_2
+    .line 353
+    :cond_1
     iget-object v2, v0, Lcom/sonymobile/android/media/internal/Track$EncodedBuffer;->bufferInfo:Landroid/media/MediaCodec$BufferInfo;
 
     iget v2, v2, Landroid/media/MediaCodec$BufferInfo;->size:I
 
-    if-nez v2, :cond_3
-
-    goto :goto_2
-
-    .line 421
-    :cond_3
-    iget-boolean v2, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mIsStreamingMode:Z
-
-    if-eqz v2, :cond_4
-
-    .line 422
-    invoke-virtual {v1}, Ljava/nio/ByteBuffer;->flip()Ljava/nio/Buffer;
-
-    .line 423
-    invoke-static {}, Ljp/co/sony/mc/camera/rtmp/RtmpManager;->getInstance()Ljp/co/sony/mc/camera/rtmp/RtmpManager;
-
-    move-result-object v2
-
-    iget-object v3, v0, Lcom/sonymobile/android/media/internal/Track$EncodedBuffer;->bufferInfo:Landroid/media/MediaCodec$BufferInfo;
-
-    invoke-virtual {v2, v1, v3}, Ljp/co/sony/mc/camera/rtmp/RtmpManager;->sendVideo(Ljava/nio/ByteBuffer;Landroid/media/MediaCodec$BufferInfo;)V
-
-    .line 424
-    iget v2, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mMuxerTrackIndex:I
-
-    iget-object v3, v0, Lcom/sonymobile/android/media/internal/Track$EncodedBuffer;->bufferInfo:Landroid/media/MediaCodec$BufferInfo;
-
-    invoke-virtual {p0, v2, v3}, Lcom/sonymobile/android/media/internal/VideoTrack;->sendProgressTimeUs(ILandroid/media/MediaCodec$BufferInfo;)V
+    if-nez v2, :cond_2
 
     goto :goto_1
 
-    .line 426
-    :cond_4
+    .line 361
+    :cond_2
     iget-object v2, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mMuxerWrapper:Lcom/sonymobile/android/media/internal/MediaMuxerWrapper;
 
     iget v3, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mMuxerTrackIndex:I
@@ -1382,18 +1238,17 @@
 
     invoke-virtual {v2, v3, v1, v4}, Lcom/sonymobile/android/media/internal/MediaMuxerWrapper;->writeSampleData(ILjava/nio/ByteBuffer;Landroid/media/MediaCodec$BufferInfo;)V
 
-    .line 429
-    :goto_1
+    .line 363
     iget-boolean v2, v0, Lcom/sonymobile/android/media/internal/Track$EncodedBuffer;->containsCopiedBuffer:Z
 
-    if-eqz v2, :cond_5
+    if-eqz v2, :cond_3
 
-    .line 430
+    .line 364
     iget-object v2, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mTotalBufferingSizeInfoLock:Ljava/lang/Object;
 
     monitor-enter v2
 
-    .line 431
+    .line 365
     :try_start_0
     iget-wide v3, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mTotalBufferingSize:J
 
@@ -1407,10 +1262,10 @@
 
     iput-wide v3, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mTotalBufferingSize:J
 
-    .line 432
+    .line 366
     monitor-exit v2
 
-    goto :goto_2
+    goto :goto_1
 
     :catchall_0
     move-exception p0
@@ -1421,43 +1276,38 @@
 
     throw p0
 
-    .line 435
-    :cond_5
-    :goto_2
+    .line 369
+    :cond_3
+    :goto_1
     iget-boolean v1, v0, Lcom/sonymobile/android/media/internal/Track$EncodedBuffer;->containsCopiedBuffer:Z
 
     const/4 v2, 0x0
 
-    if-nez v1, :cond_6
+    if-nez v1, :cond_4
 
-    .line 436
+    .line 370
     iget-object v1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mEncoder:Landroid/media/MediaCodec;
 
     iget v3, v0, Lcom/sonymobile/android/media/internal/Track$EncodedBuffer;->bufferIndex:I
 
     invoke-virtual {v1, v3, v2}, Landroid/media/MediaCodec;->releaseOutputBuffer(IZ)V
 
-    .line 440
-    :cond_6
-    iget-boolean v1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mIsStreamingMode:Z
-
-    if-nez v1, :cond_7
-
-    .line 441
+    .line 374
+    :cond_4
     iget-object v0, v0, Lcom/sonymobile/android/media/internal/Track$EncodedBuffer;->bufferInfo:Landroid/media/MediaCodec$BufferInfo;
 
     iget v0, v0, Landroid/media/MediaCodec$BufferInfo;->flags:I
 
     and-int/lit8 v0, v0, 0x4
 
-    if-eqz v0, :cond_7
+    if-eqz v0, :cond_5
 
-    .line 445
+    .line 377
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mEncoder:Landroid/media/MediaCodec;
 
     invoke-virtual {v0}, Landroid/media/MediaCodec;->stop()V
 
-    .line 446
+    .line 378
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mCallback:Landroid/os/Handler;
 
     const/16 v1, 0x65
@@ -1470,12 +1320,12 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 448
+    .line 380
     sget-object v0, Lcom/sonymobile/android/media/internal/Track$States;->STOPPED:Lcom/sonymobile/android/media/internal/Track$States;
 
     iput-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mState:Lcom/sonymobile/android/media/internal/Track$States;
 
-    .line 449
+    .line 381
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mMuxerWrapper:Lcom/sonymobile/android/media/internal/MediaMuxerWrapper;
 
     iget v1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mMuxerTrackIndex:I
@@ -1484,40 +1334,40 @@
 
     const/4 v0, 0x1
 
-    goto :goto_3
+    goto :goto_2
 
-    :cond_7
+    :cond_5
     move v0, v2
 
-    .line 454
-    :goto_3
+    .line 385
+    :goto_2
     iget-object v1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mCallback:Landroid/os/Handler;
 
     iget-wide v3, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mLastRecordedVideoTimestampUs:J
 
-    .line 455
+    .line 386
     invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
 
     const/16 v3, 0xc
 
-    .line 454
+    .line 385
     invoke-virtual {v1, v3, v0, v2, p0}, Landroid/os/Handler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object p0
 
-    .line 455
+    .line 386
     invoke-virtual {p0}, Landroid/os/Message;->sendToTarget()V
 
-    :cond_8
+    :cond_6
     return-void
 .end method
 
 .method public getSurface()Landroid/view/Surface;
     .locals 0
 
-    .line 129
+    .line 121
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mSourceSurface:Landroid/view/Surface;
 
     return-object p0
@@ -1525,8 +1375,16 @@
 
 .method setBitRateMode(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mode"
+        }
+    .end annotation
 
-    .line 158
+    .line 150
     iput p1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mBitRateMode:I
 
     return-void
@@ -1534,14 +1392,26 @@
 
 .method setColorAspects(III)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "standard",
+            "transfer",
+            "range"
+        }
+    .end annotation
 
-    .line 166
+    .line 158
     iput p1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mColorStandard:I
 
-    .line 167
+    .line 159
     iput p2, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mColorTransfer:I
 
-    .line 168
+    .line 160
     iput p3, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mColorRange:I
 
     return-void
@@ -1549,11 +1419,21 @@
 
 .method setEncodingProfileLevel(II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "profile",
+            "level"
+        }
+    .end annotation
 
-    .line 153
+    .line 145
     iput p1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mEncodingProfile:I
 
-    .line 154
+    .line 146
     iput p2, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mEncodingLevel:I
 
     return-void
@@ -1561,11 +1441,19 @@
 
 .method public setFrameRate(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "rate"
+        }
+    .end annotation
 
-    .line 147
+    .line 139
     invoke-super {p0, p1}, Lcom/sonymobile/android/media/internal/Track;->setFrameRate(I)V
 
-    .line 148
+    .line 140
     iget p1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mFrameRate:I
 
     if-eqz p1, :cond_0
@@ -1589,54 +1477,18 @@
     return-void
 .end method
 
-.method setHalfFps()V
-    .locals 3
-
-    .line 181
-    iget-boolean v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mIsHalfFps:Z
-
-    if-eqz v0, :cond_0
-
-    return-void
-
-    :cond_0
-    const/4 v0, 0x1
-
-    .line 184
-    iput-boolean v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mIsHalfFps:Z
-
-    .line 185
-    iget-object v1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mState:Lcom/sonymobile/android/media/internal/Track$States;
-
-    sget-object v2, Lcom/sonymobile/android/media/internal/Track$States;->PREPARING:Lcom/sonymobile/android/media/internal/Track$States;
-
-    if-ne v1, v2, :cond_1
-
-    .line 186
-    iput-boolean v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mIsRestartRequested:Z
-
-    goto :goto_0
-
-    .line 187
-    :cond_1
-    iget-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mState:Lcom/sonymobile/android/media/internal/Track$States;
-
-    sget-object v1, Lcom/sonymobile/android/media/internal/Track$States;->STARTED:Lcom/sonymobile/android/media/internal/Track$States;
-
-    if-ne v0, v1, :cond_2
-
-    .line 188
-    invoke-direct {p0}, Lcom/sonymobile/android/media/internal/VideoTrack;->doRestart()V
-
-    :cond_2
-    :goto_0
-    return-void
-.end method
-
 .method setIFrameInterval(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "iFrameInterval"
+        }
+    .end annotation
 
-    .line 162
+    .line 154
     iput p1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mIFrameInterval:I
 
     return-void
@@ -1644,16 +1496,24 @@
 
 .method setInputSurface(Landroid/view/Surface;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "surface"
+        }
+    .end annotation
 
-    .line 133
+    .line 125
     iput-object p1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mSourceSurface:Landroid/view/Surface;
 
-    .line 134
+    .line 126
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mEncoder:Landroid/media/MediaCodec;
 
     if-eqz v0, :cond_0
 
-    .line 135
+    .line 127
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mEncoder:Landroid/media/MediaCodec;
 
     invoke-virtual {p0, p1}, Landroid/media/MediaCodec;->setInputSurface(Landroid/view/Surface;)V
@@ -1664,8 +1524,16 @@
 
 .method public setMediaMuxer(Lcom/sonymobile/android/media/internal/MediaMuxerWrapper;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "muxerWrapper"
+        }
+    .end annotation
 
-    .line 382
+    .line 322
     iput-object p1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mMuxerWrapper:Lcom/sonymobile/android/media/internal/MediaMuxerWrapper;
 
     return-void
@@ -1674,10 +1542,10 @@
 .method public setMediaMuxerStarted()V
     .locals 1
 
-    .line 464
+    .line 395
     invoke-super {p0}, Lcom/sonymobile/android/media/internal/Track;->setMediaMuxerStarted()V
 
-    .line 465
+    .line 396
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mMuxerHandler:Lcom/sonymobile/android/media/internal/Track$MuxerHandler;
 
     const/16 v0, 0x6e
@@ -1691,57 +1559,20 @@
     return-void
 .end method
 
-.method setStreamingOrientation(I)V
-    .locals 1
-
-    if-eqz p1, :cond_0
-
-    const/16 v0, 0x5a
-
-    if-eq p1, v0, :cond_0
-
-    const/16 v0, 0xb4
-
-    if-eq p1, v0, :cond_0
-
-    const/16 v0, 0x10e
-
-    if-eq p1, v0, :cond_0
-
-    .line 194
-    new-instance p0, Ljava/lang/StringBuilder;
-
-    const-string v0, "Invalid orientation : "
-
-    invoke-direct {p0, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    const-string p1, "VideoTrack"
-
-    invoke-static {p1, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    return-void
-
-    .line 197
-    :cond_0
-    iput p1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mStreamingOrientation:I
-
-    return-void
-.end method
-
 .method setVideoEncoder(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "videoEncoder"
+        }
+    .end annotation
 
     if-ltz p1, :cond_1
 
-    .line 172
+    .line 164
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->videoMimeTypes:[Ljava/lang/String;
 
     array-length v1, v0
@@ -1752,7 +1583,7 @@
 
     goto :goto_0
 
-    .line 175
+    .line 167
     :cond_0
     aget-object p1, v0, p1
 
@@ -1764,7 +1595,7 @@
     :goto_0
     const/4 p1, 0x0
 
-    .line 173
+    .line 165
     iput-object p1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mVideoMime:Ljava/lang/String;
 
     :goto_1
@@ -1773,11 +1604,21 @@
 
 .method setVideoSize(II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "width",
+            "height"
+        }
+    .end annotation
 
-    .line 140
+    .line 132
     iput p1, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mWidth:I
 
-    .line 141
+    .line 133
     iput p2, p0, Lcom/sonymobile/android/media/internal/VideoTrack;->mHeight:I
 
     return-void

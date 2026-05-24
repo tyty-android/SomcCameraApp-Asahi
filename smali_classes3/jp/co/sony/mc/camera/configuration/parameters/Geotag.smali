@@ -57,7 +57,7 @@
     .line 16
     new-instance v6, Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
 
-    const v4, 0x7f1103f4
+    const v4, 0x7f11043f
 
     const/4 v5, 0x1
 
@@ -76,7 +76,7 @@
     .line 20
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
 
-    const v11, 0x7f1103f3
+    const v11, 0x7f11043e
 
     const/4 v12, 0x0
 
@@ -104,6 +104,23 @@
 
 .method private constructor <init>(Ljava/lang/String;IIIZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IIZ)V"
@@ -142,6 +159,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 15
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/Geotag;

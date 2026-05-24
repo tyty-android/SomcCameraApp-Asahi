@@ -16,8 +16,8 @@
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x30
@@ -25,6 +25,16 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$IMQRUXJxEerD0hyYDf50b5mQ5Cc(Lkotlin/coroutines/CoroutineContext;Lkotlin/coroutines/CoroutineContext$Element;)Lkotlin/coroutines/CoroutineContext;
+    .locals 0
+
+    invoke-static {p0, p1}, Lkotlin/coroutines/CoroutineContext$DefaultImpls;->plus$lambda$0(Lkotlin/coroutines/CoroutineContext;Lkotlin/coroutines/CoroutineContext$Element;)Lkotlin/coroutines/CoroutineContext;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public static plus(Lkotlin/coroutines/CoroutineContext;Lkotlin/coroutines/CoroutineContext;)Lkotlin/coroutines/CoroutineContext;
     .locals 1
 
@@ -41,9 +51,9 @@
 
     .line 32
     :cond_0
-    sget-object v0, Lkotlin/coroutines/CoroutineContext$plus$1;->INSTANCE:Lkotlin/coroutines/CoroutineContext$plus$1;
+    new-instance v0, Lkotlin/coroutines/CoroutineContext$DefaultImpls$$ExternalSyntheticLambda0;
 
-    check-cast v0, Lkotlin/jvm/functions/Function2;
+    invoke-direct {v0}, Lkotlin/coroutines/CoroutineContext$DefaultImpls$$ExternalSyntheticLambda0;-><init>()V
 
     invoke-interface {p1, p0, v0}, Lkotlin/coroutines/CoroutineContext;->fold(Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)Ljava/lang/Object;
 
@@ -53,4 +63,106 @@
 
     :goto_0
     return-object p0
+.end method
+
+.method private static plus$lambda$0(Lkotlin/coroutines/CoroutineContext;Lkotlin/coroutines/CoroutineContext$Element;)Lkotlin/coroutines/CoroutineContext;
+    .locals 3
+
+    const-string v0, "acc"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "element"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 33
+    invoke-interface {p1}, Lkotlin/coroutines/CoroutineContext$Element;->getKey()Lkotlin/coroutines/CoroutineContext$Key;
+
+    move-result-object v0
+
+    invoke-interface {p0, v0}, Lkotlin/coroutines/CoroutineContext;->minusKey(Lkotlin/coroutines/CoroutineContext$Key;)Lkotlin/coroutines/CoroutineContext;
+
+    move-result-object p0
+
+    .line 34
+    sget-object v0, Lkotlin/coroutines/EmptyCoroutineContext;->INSTANCE:Lkotlin/coroutines/EmptyCoroutineContext;
+
+    if-ne p0, v0, :cond_0
+
+    check-cast p1, Lkotlin/coroutines/CoroutineContext;
+
+    goto :goto_1
+
+    .line 36
+    :cond_0
+    sget-object v0, Lkotlin/coroutines/ContinuationInterceptor;->Key:Lkotlin/coroutines/ContinuationInterceptor$Key;
+
+    check-cast v0, Lkotlin/coroutines/CoroutineContext$Key;
+
+    invoke-interface {p0, v0}, Lkotlin/coroutines/CoroutineContext;->get(Lkotlin/coroutines/CoroutineContext$Key;)Lkotlin/coroutines/CoroutineContext$Element;
+
+    move-result-object v0
+
+    check-cast v0, Lkotlin/coroutines/ContinuationInterceptor;
+
+    if-nez v0, :cond_1
+
+    .line 37
+    new-instance v0, Lkotlin/coroutines/CombinedContext;
+
+    invoke-direct {v0, p0, p1}, Lkotlin/coroutines/CombinedContext;-><init>(Lkotlin/coroutines/CoroutineContext;Lkotlin/coroutines/CoroutineContext$Element;)V
+
+    goto :goto_0
+
+    .line 38
+    :cond_1
+    sget-object v1, Lkotlin/coroutines/ContinuationInterceptor;->Key:Lkotlin/coroutines/ContinuationInterceptor$Key;
+
+    check-cast v1, Lkotlin/coroutines/CoroutineContext$Key;
+
+    invoke-interface {p0, v1}, Lkotlin/coroutines/CoroutineContext;->minusKey(Lkotlin/coroutines/CoroutineContext$Key;)Lkotlin/coroutines/CoroutineContext;
+
+    move-result-object p0
+
+    .line 39
+    sget-object v1, Lkotlin/coroutines/EmptyCoroutineContext;->INSTANCE:Lkotlin/coroutines/EmptyCoroutineContext;
+
+    if-ne p0, v1, :cond_2
+
+    new-instance p0, Lkotlin/coroutines/CombinedContext;
+
+    check-cast p1, Lkotlin/coroutines/CoroutineContext;
+
+    check-cast v0, Lkotlin/coroutines/CoroutineContext$Element;
+
+    invoke-direct {p0, p1, v0}, Lkotlin/coroutines/CombinedContext;-><init>(Lkotlin/coroutines/CoroutineContext;Lkotlin/coroutines/CoroutineContext$Element;)V
+
+    move-object v0, p0
+
+    goto :goto_0
+
+    .line 40
+    :cond_2
+    new-instance v1, Lkotlin/coroutines/CombinedContext;
+
+    new-instance v2, Lkotlin/coroutines/CombinedContext;
+
+    invoke-direct {v2, p0, p1}, Lkotlin/coroutines/CombinedContext;-><init>(Lkotlin/coroutines/CoroutineContext;Lkotlin/coroutines/CoroutineContext$Element;)V
+
+    check-cast v2, Lkotlin/coroutines/CoroutineContext;
+
+    check-cast v0, Lkotlin/coroutines/CoroutineContext$Element;
+
+    invoke-direct {v1, v2, v0}, Lkotlin/coroutines/CombinedContext;-><init>(Lkotlin/coroutines/CoroutineContext;Lkotlin/coroutines/CoroutineContext$Element;)V
+
+    move-object v0, v1
+
+    :goto_0
+    move-object p1, v0
+
+    check-cast p1, Lkotlin/coroutines/CoroutineContext;
+
+    :goto_1
+    return-object p1
 .end method

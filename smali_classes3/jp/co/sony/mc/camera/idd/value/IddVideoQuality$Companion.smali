@@ -42,7 +42,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 536
+    .line 538
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -75,30 +75,30 @@
 
     if-eq p1, p0, :cond_0
 
-    .line 542
+    .line 544
     sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;->QUALITY_HIGH:Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;
 
     goto :goto_0
 
-    .line 541
+    .line 543
     :cond_0
     sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;->QUALITY_1080P:Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;
 
     goto :goto_0
 
-    .line 540
+    .line 542
     :cond_1
     sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;->QUALITY_720P:Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;
 
     goto :goto_0
 
-    .line 539
+    .line 541
     :cond_2
     sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;->QUALITY_480P:Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;
 
     goto :goto_0
 
-    .line 538
+    .line 540
     :cond_3
     sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;->QUALITY_LOW:Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;
 

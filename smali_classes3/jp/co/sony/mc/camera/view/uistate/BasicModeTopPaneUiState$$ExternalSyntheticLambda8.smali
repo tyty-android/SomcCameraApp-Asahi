@@ -30,7 +30,7 @@
 
     move-result p0
 
-    invoke-static {p1, p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->$r8$lambda$W0xHL5L-dtUIBHJmoylhJyEcoX8(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Z)Z
+    invoke-static {p1, p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->$r8$lambda$7aNGYoAHIvLyABA75xePhtg0kdY(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Z)Z
 
     move-result p0
 

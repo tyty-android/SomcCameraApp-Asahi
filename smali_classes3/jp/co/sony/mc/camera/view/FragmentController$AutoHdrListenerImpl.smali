@@ -26,13 +26,23 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "controller"
+        }
+    .end annotation
 
-    .line 8487
+    .line 7411
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoHdrListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 8488
+    .line 7412
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoHdrListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     return-void
@@ -42,8 +52,16 @@
 # virtual methods
 .method public onAutoHdrChanged(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isHdrRequired"
+        }
+    .end annotation
 
-    .line 8493
+    .line 7417
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoHdrListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;

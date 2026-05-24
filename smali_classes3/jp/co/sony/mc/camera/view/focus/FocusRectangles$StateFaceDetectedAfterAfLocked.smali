@@ -21,8 +21,16 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 1344
+    .line 1349
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateFaceDetectedAfterAfLocked;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;-><init>(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)V
@@ -43,14 +51,14 @@
 .method public entry()V
     .locals 2
 
-    .line 1347
+    .line 1352
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateFaceDetectedAfterAfLocked;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;->TYPE_OBJECT_TRACKING_IN_FOCUS:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fputmNextFocusType(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;)V
 
-    .line 1348
+    .line 1353
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateFaceDetectedAfterAfLocked;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusState;->NORMAL:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusState;
@@ -63,7 +71,7 @@
 .method public handleOnAutoFocusCanceled()V
     .locals 2
 
-    .line 1353
+    .line 1358
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateFaceDetectedAfterAfLocked;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$misFaceLost(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Z
@@ -72,7 +80,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1354
+    .line 1359
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateFaceDetectedAfterAfLocked;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     new-instance v1, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateAfDefaultPreview;
@@ -85,7 +93,7 @@
 
     goto :goto_0
 
-    .line 1356
+    .line 1361
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateFaceDetectedAfterAfLocked;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
@@ -104,7 +112,7 @@
 .method public handleStartObjectTracking()V
     .locals 2
 
-    .line 1362
+    .line 1367
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateFaceDetectedAfterAfLocked;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     new-instance v1, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateObjectTrackingInLocked;

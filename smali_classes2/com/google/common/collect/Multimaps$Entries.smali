@@ -31,7 +31,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1668
+    .line 1824
     invoke-direct {p0}, Ljava/util/AbstractCollection;-><init>()V
 
     return-void
@@ -42,7 +42,7 @@
 .method public clear()V
     .locals 0
 
-    .line 1696
+    .line 1853
     invoke-virtual {p0}, Lcom/google/common/collect/Multimaps$Entries;->multimap()Lcom/google/common/collect/Multimap;
 
     move-result-object p0
@@ -55,19 +55,27 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 1678
+    .line 1835
     instance-of v0, p1, Ljava/util/Map$Entry;
 
     if-eqz v0, :cond_0
 
-    .line 1679
+    .line 1836
     check-cast p1, Ljava/util/Map$Entry;
 
-    .line 1680
+    .line 1837
     invoke-virtual {p0}, Lcom/google/common/collect/Multimaps$Entries;->multimap()Lcom/google/common/collect/Multimap;
 
     move-result-object p0
@@ -105,19 +113,27 @@
 .method public remove(Ljava/lang/Object;)Z
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 1687
+    .line 1844
     instance-of v0, p1, Ljava/util/Map$Entry;
 
     if-eqz v0, :cond_0
 
-    .line 1688
+    .line 1845
     check-cast p1, Ljava/util/Map$Entry;
 
-    .line 1689
+    .line 1846
     invoke-virtual {p0}, Lcom/google/common/collect/Multimaps$Entries;->multimap()Lcom/google/common/collect/Multimap;
 
     move-result-object p0
@@ -145,7 +161,7 @@
 .method public size()I
     .locals 0
 
-    .line 1673
+    .line 1830
     invoke-virtual {p0}, Lcom/google/common/collect/Multimaps$Entries;->multimap()Lcom/google/common/collect/Multimap;
 
     move-result-object p0

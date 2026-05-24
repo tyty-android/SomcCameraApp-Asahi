@@ -30,7 +30,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 345
+    .line 349
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,7 +46,7 @@
         }
     .end annotation
 
-    .line 345
+    .line 349
     invoke-virtual {p0}, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator$1;->run()Lsun/misc/Unsafe;
 
     move-result-object p0
@@ -62,10 +62,10 @@
         }
     .end annotation
 
-    .line 348
+    .line 352
     const-class p0, Lsun/misc/Unsafe;
 
-    .line 349
+    .line 353
     invoke-virtual {p0}, Ljava/lang/Class;->getDeclaredFields()[Ljava/lang/reflect/Field;
 
     move-result-object v0
@@ -81,24 +81,24 @@
 
     const/4 v4, 0x1
 
-    .line 350
+    .line 354
     invoke-virtual {v3, v4}, Ljava/lang/reflect/Field;->setAccessible(Z)V
 
     const/4 v4, 0x0
 
-    .line 351
+    .line 355
     invoke-virtual {v3, v4}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 352
+    .line 356
     invoke-virtual {p0, v3}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
 
     move-result v4
 
     if-eqz v4, :cond_0
 
-    .line 353
+    .line 357
     invoke-virtual {p0, v3}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -112,7 +112,7 @@
 
     goto :goto_0
 
-    .line 356
+    .line 360
     :cond_1
     new-instance p0, Ljava/lang/NoSuchFieldError;
 

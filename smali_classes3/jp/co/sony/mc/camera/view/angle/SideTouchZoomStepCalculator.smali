@@ -26,6 +26,14 @@
 
 .method private getIncrementDirection(I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "distance"
+        }
+    .end annotation
 
     if-lez p1, :cond_0
 
@@ -42,6 +50,14 @@
 
 .method private getIncrementLength(I)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "distance"
+        }
+    .end annotation
 
     .line 34
     invoke-static {p1}, Ljava/lang/Math;->abs(I)I
@@ -108,6 +124,16 @@
 # virtual methods
 .method public varargs calculate(Ljp/co/sony/mc/camera/view/angle/VariableIndex;[Ljava/lang/Object;)Ljp/co/sony/mc/camera/view/angle/VariableIndex;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "args"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 

@@ -21,6 +21,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 252
     iput-object p1, p0, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment$3;->this$0:Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment;
@@ -34,6 +42,14 @@
 # virtual methods
 .method public onDisconnected(Landroid/hardware/camera2/CameraDevice;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraDevice"
+        }
+    .end annotation
 
     .line 283
     invoke-virtual {p1}, Landroid/hardware/camera2/CameraDevice;->close()V
@@ -50,6 +66,16 @@
 
 .method public onError(Landroid/hardware/camera2/CameraDevice;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "cameraDevice",
+            "error"
+        }
+    .end annotation
 
     .line 289
     invoke-virtual {p1}, Landroid/hardware/camera2/CameraDevice;->close()V
@@ -64,7 +90,7 @@
     .line 291
     iget-object p1, p0, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment$3;->this$0:Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment;
 
-    const p2, 0x7f1101df
+    const p2, 0x7f11022b
 
     .line 292
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment;->getString(I)Ljava/lang/String;
@@ -94,6 +120,14 @@
 
 .method public onOpened(Landroid/hardware/camera2/CameraDevice;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraDevice"
+        }
+    .end annotation
 
     .line 256
     iget-object v0, p0, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment$3;->this$0:Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment;

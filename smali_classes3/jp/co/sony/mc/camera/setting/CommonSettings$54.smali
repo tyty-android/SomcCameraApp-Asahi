@@ -3,7 +3,7 @@
 .source "CommonSettings.java"
 
 # interfaces
-.implements Ljp/co/sony/mc/camera/setting/SettingsBase$GetCommand;
+.implements Ljp/co/sony/mc/camera/setting/SettingsBase$SetCommand;
 
 
 # annotations
@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 743
+    .line 663
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,8 +29,23 @@
 
 
 # virtual methods
-.method public getValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
+.method public setValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljava/util/Map;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key",
+            "value",
+            "listenersMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -38,17 +53,15 @@
             ">(",
             "Ljp/co/sony/mc/camera/setting/SettingsBase;",
             "Ljp/co/sony/mc/camera/setting/SettingKey$Key<",
-            "TT;>;)TT;"
+            "TT;>;TT;",
+            "Ljava/util/Map<",
+            "Ljp/co/sony/mc/camera/setting/CameraProSettingChangedListener;",
+            "Landroid/os/Handler;",
+            ">;)Z"
         }
     .end annotation
 
-    .line 747
-    check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
+    const/4 p0, 0x0
 
-    .line 748
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$mgetModeCustomExtensionData(Ljp/co/sony/mc/camera/setting/CommonSettings;)Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;
-
-    move-result-object p0
-
-    return-object p0
+    return p0
 .end method

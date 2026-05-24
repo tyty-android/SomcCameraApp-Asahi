@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 3144
+    .line 3377
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,6 +31,17 @@
 # virtual methods
 .method public getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -42,20 +53,15 @@
         }
     .end annotation
 
-    .line 3148
+    .line 3381
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 3149
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCapturingMode(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    .line 3382
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCameraId(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    move-result-object p0
-
-    .line 3150
-    invoke-static {p0}, Ljp/co/sony/mc/camera/configuration/parameters/ComputationalMode;->getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Ljp/co/sony/mc/camera/configuration/parameters/ComputationalMode;
+    invoke-static {p0}, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;->getDefaultExtensionValue(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;
 
     move-result-object p0
 

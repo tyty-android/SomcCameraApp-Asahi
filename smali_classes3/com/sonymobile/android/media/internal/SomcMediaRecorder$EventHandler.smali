@@ -29,6 +29,17 @@
 # direct methods
 .method constructor <init>(Ljava/lang/ref/WeakReference;Landroid/os/Looper;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "recorder",
+            "looper"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -40,10 +51,10 @@
         }
     .end annotation
 
-    .line 1025
+    .line 968
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    .line 1027
+    .line 970
     iput-object p1, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder$EventHandler;->mRecorder:Ljava/lang/ref/WeakReference;
 
     return-void
@@ -53,8 +64,16 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "msg"
+        }
+    .end annotation
 
-    .line 1032
+    .line 975
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder$EventHandler;->mRecorder:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {p0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -63,14 +82,14 @@
 
     check-cast p0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
-    .line 1034
+    .line 977
     iget v0, p1, Landroid/os/Message;->arg1:I
 
     const v1, 0xfffffff
 
     and-int/2addr v0, v1
 
-    .line 1035
+    .line 978
     iget v1, p1, Landroid/os/Message;->what:I
 
     const/4 v2, 0x0
@@ -93,7 +112,7 @@
 
     goto/16 :goto_0
 
-    .line 1083
+    .line 1026
     :pswitch_0
     invoke-static {p0}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->-$$Nest$fgetmCallback(Lcom/sonymobile/android/media/internal/SomcMediaRecorder;)Landroid/os/Handler;
 
@@ -109,12 +128,12 @@
 
     move-result-object p0
 
-    .line 1084
+    .line 1027
     invoke-virtual {p0}, Landroid/os/Message;->sendToTarget()V
 
     goto :goto_0
 
-    .line 1077
+    .line 1020
     :pswitch_1
     invoke-static {p0}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->-$$Nest$fgetmAudioTrack(Lcom/sonymobile/android/media/internal/SomcMediaRecorder;)Lcom/sonymobile/android/media/internal/AudioTrack;
 
@@ -132,7 +151,7 @@
 
     goto :goto_0
 
-    .line 1073
+    .line 1016
     :pswitch_2
     invoke-static {p0}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->-$$Nest$fgetmAudioTrack(Lcom/sonymobile/android/media/internal/SomcMediaRecorder;)Lcom/sonymobile/android/media/internal/AudioTrack;
 
@@ -152,13 +171,13 @@
 
     goto :goto_0
 
-    .line 1063
+    .line 1006
     :cond_0
     invoke-static {p0, v3, v2}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->-$$Nest$monTrackStopped(Lcom/sonymobile/android/media/internal/SomcMediaRecorder;ZLjp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;)V
 
     goto :goto_0
 
-    .line 1057
+    .line 1000
     :cond_1
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -166,7 +185,7 @@
 
     if-eqz v0, :cond_6
 
-    .line 1058
+    .line 1001
     iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast p1, Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
@@ -190,13 +209,13 @@
 
     goto :goto_0
 
-    .line 1051
+    .line 994
     :cond_3
     invoke-static {p0, v3, v2}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->-$$Nest$monTrackStarted(Lcom/sonymobile/android/media/internal/SomcMediaRecorder;ZLjp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;)V
 
     goto :goto_0
 
-    .line 1044
+    .line 987
     :cond_4
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -204,7 +223,7 @@
 
     if-eqz v0, :cond_6
 
-    .line 1045
+    .line 988
     iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast p1, Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
@@ -213,7 +232,7 @@
 
     goto :goto_0
 
-    .line 1040
+    .line 983
     :cond_5
     iget p1, p1, Landroid/os/Message;->arg2:I
 

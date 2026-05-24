@@ -8,12 +8,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nCameraEventNotifier.kt\nKotlin\n*S Kotlin\n*F\n+ 1 CameraEventNotifier.kt\njp/co/sony/mc/camera/view/CameraEventNotifier\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 4 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,261:1\n11420#2,9:262\n13346#2:271\n13347#2:273\n11429#2:274\n1#3:272\n1863#4,2:275\n*S KotlinDebug\n*F\n+ 1 CameraEventNotifier.kt\njp/co/sony/mc/camera/view/CameraEventNotifier\n*L\n27#1:262,9\n27#1:271\n27#1:273\n27#1:274\n27#1:272\n256#1:275,2\n*E\n"
+    value = "SMAP\nCameraEventNotifier.kt\nKotlin\n*S Kotlin\n*F\n+ 1 CameraEventNotifier.kt\njp/co/sony/mc/camera/view/CameraEventNotifier\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 4 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,265:1\n11476#2,9:266\n13402#2:275\n13403#2:277\n11485#2:278\n1#3:276\n1863#4,2:279\n*S KotlinDebug\n*F\n+ 1 CameraEventNotifier.kt\njp/co/sony/mc/camera/view/CameraEventNotifier\n*L\n28#1:266,9\n28#1:275\n28#1:277\n28#1:278\n28#1:276\n260#1:279,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u00b8\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0011\n\u0002\u0010\u000e\n\u0002\u0008\u0004\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u0015\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0011\n\u0002\u0018\u0002\n\u0002\u0008\u0010\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\t\n\u0002\u0008)\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B#\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0012\u0010\u0004\u001a\n\u0012\u0006\u0008\u0001\u0012\u00020\u00060\u0005\"\u00020\u0006\u00a2\u0006\u0004\u0008\u0007\u0010\u0008J\u0010\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0012H\u0016J\u0010\u0010\u0013\u001a\u00020\u00102\u0006\u0010\u0014\u001a\u00020\u0015H\u0016J\u0010\u0010\u0016\u001a\u00020\u00102\u0006\u0010\u0017\u001a\u00020\u0018H\u0016J\u001e\u0010\u0016\u001a\u00020\u00102\u0006\u0010\u0017\u001a\u00020\u00182\u000c\u0010\u0019\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u000bH\u0016J\u0018\u0010\u001a\u001a\u00020\u00102\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u0011\u001a\u00020\u001dH\u0016J\u0010\u0010\u001e\u001a\u00020\u00102\u0006\u0010\u001f\u001a\u00020 H\u0016J\u0008\u0010!\u001a\u00020\u0010H\u0016J\u0008\u0010\"\u001a\u00020\u0010H\u0016J=\u0010#\u001a\u00020\u00102\u0006\u0010$\u001a\u00020%2\u0008\u0010&\u001a\u0004\u0018\u00010\'2\u0008\u0010(\u001a\u0004\u0018\u00010)2\u0008\u0010*\u001a\u0004\u0018\u00010)2\u0008\u0010+\u001a\u0004\u0018\u00010\u0006H\u0016\u00a2\u0006\u0002\u0010,J\u0018\u0010-\u001a\u00020\u00102\u0006\u0010\u001f\u001a\u00020%2\u0006\u0010.\u001a\u00020\u0015H\u0016J\u0010\u0010/\u001a\u00020\u00102\u0006\u00100\u001a\u00020\u0015H\u0016J\u0010\u00101\u001a\u00020\u00102\u0006\u00102\u001a\u00020\u0015H\u0016J\u0010\u00103\u001a\u00020\u00102\u0006\u00104\u001a\u00020%H\u0016J\u0010\u00105\u001a\u00020\u00102\u0006\u00104\u001a\u00020%H\u0016J\u0010\u00106\u001a\u00020\u00102\u0006\u00104\u001a\u00020%H\u0016J\u0010\u00107\u001a\u00020\u00102\u0006\u00104\u001a\u00020%H\u0016J\u0010\u00108\u001a\u00020\u00102\u0006\u00104\u001a\u00020%H\u0016J\u001a\u00109\u001a\u00020\u00102\u0006\u00104\u001a\u00020%2\u0008\u0010:\u001a\u0004\u0018\u00010;H\u0016J\u0010\u0010<\u001a\u00020\u00102\u0006\u00104\u001a\u00020%H\u0016J\u0010\u0010=\u001a\u00020\u00102\u0006\u00104\u001a\u00020%H\u0016J\u0018\u0010>\u001a\u00020\u00102\u0006\u00104\u001a\u00020%2\u0006\u0010?\u001a\u00020%H\u0016J(\u0010@\u001a\u00020\u00102\u0006\u00104\u001a\u00020%2\u0006\u0010A\u001a\u00020%2\u0006\u0010B\u001a\u00020\u00152\u0006\u0010C\u001a\u00020\u0015H\u0016J\u0010\u0010D\u001a\u00020\u00102\u0006\u00104\u001a\u00020%H\u0016J\u0010\u0010E\u001a\u00020\u00102\u0006\u00104\u001a\u00020%H\u0016J\u0010\u0010F\u001a\u00020\u00102\u0006\u00104\u001a\u00020%H\u0016J\u0010\u0010G\u001a\u00020\u00102\u0006\u00104\u001a\u00020%H\u0016J\u0010\u0010H\u001a\u00020\u00102\u0006\u0010I\u001a\u00020%H\u0016J\u0010\u0010J\u001a\u00020\u00102\u0006\u0010K\u001a\u00020LH\u0016J\u0010\u0010M\u001a\u00020\u00102\u0006\u0010K\u001a\u00020LH\u0016J\u0008\u0010N\u001a\u00020\u0010H\u0016J\u0008\u0010O\u001a\u00020\u0010H\u0016J\u0010\u0010P\u001a\u00020\u00102\u0006\u0010Q\u001a\u00020%H\u0016J\u0018\u0010R\u001a\u00020\u00102\u0006\u00104\u001a\u00020%2\u0006\u0010$\u001a\u00020SH\u0016J\u0010\u0010T\u001a\u00020\u00102\u0006\u00104\u001a\u00020%H\u0016J\u0010\u0010U\u001a\u00020\u00102\u0006\u0010V\u001a\u00020\u0015H\u0016J \u0010W\u001a\u00020\u00102\u0006\u0010X\u001a\u00020Y2\u0006\u0010Z\u001a\u00020%2\u0006\u0010[\u001a\u00020%H\u0016J\u0010\u0010\\\u001a\u00020\u00102\u0006\u0010]\u001a\u00020\u0006H\u0016J\u0010\u0010^\u001a\u00020\u00102\u0006\u0010_\u001a\u00020\u0006H\u0016J\u0010\u0010`\u001a\u00020\u00102\u0006\u0010a\u001a\u00020\u0006H\u0016J\u0010\u0010b\u001a\u00020\u00102\u0006\u0010c\u001a\u00020\u0006H\u0016J\u0010\u0010d\u001a\u00020\u00102\u0006\u0010e\u001a\u00020\u0006H\u0016J\u0010\u0010f\u001a\u00020\u00102\u0006\u0010g\u001a\u00020\u0015H\u0016J\u0008\u0010h\u001a\u00020\u0010H\u0016J\u0010\u0010i\u001a\u00020\u00102\u0006\u0010j\u001a\u00020\u0015H\u0016J\u0010\u0010k\u001a\u00020\u00102\u0006\u0010j\u001a\u00020\u0015H\u0016J\u0008\u0010l\u001a\u00020\u0010H\u0016J\u0008\u0010m\u001a\u00020\u0010H\u0016J\u0018\u0010n\u001a\u00020\u00102\u0006\u0010o\u001a\u00020\u00152\u0006\u0010p\u001a\u00020\u0015H\u0016J\u0010\u0010q\u001a\u00020\u00102\u0006\u0010r\u001a\u00020)H\u0016J\u0010\u0010s\u001a\u00020\u00102\u0006\u0010t\u001a\u00020\u0015H\u0016J\u0008\u0010u\u001a\u00020\u0010H\u0016J\u0008\u0010v\u001a\u00020\u0010H\u0016J\u0008\u0010w\u001a\u00020\u0010H\u0016J\u0008\u0010x\u001a\u00020\u0010H\u0016J\u0010\u0010y\u001a\u00020\u00102\u0006\u0010z\u001a\u00020\u0015H\u0016J\u0018\u0010{\u001a\u00020\u00102\u0006\u0010|\u001a\u00020\u00152\u0006\u0010}\u001a\u00020\u0015H\u0016J\u0010\u0010~\u001a\u00020\u00102\u0006\u0010j\u001a\u00020\u0015H\u0016J\u0008\u0010\u007f\u001a\u00020\u0010H\u0016J\u0012\u0010\u0080\u0001\u001a\u00020\u00102\u0007\u0010\u0081\u0001\u001a\u00020\u0015H\u0016J\u0012\u0010\u0082\u0001\u001a\u00020\u00102\u0007\u0010$\u001a\u00030\u0083\u0001H\u0016J\u0012\u0010\u0084\u0001\u001a\u00020\u00102\u0007\u0010\u0085\u0001\u001a\u00020\u0015H\u0016J\u0012\u0010\u0086\u0001\u001a\u00020\u00102\u0007\u0010\u0087\u0001\u001a\u00020\u0015H\u0016J\u0013\u0010\u0088\u0001\u001a\u00020\u00102\u0008\u0010\u0089\u0001\u001a\u00030\u008a\u0001H\u0016J\u0012\u0010\u008b\u0001\u001a\u00020\u00102\u0007\u0010\u008c\u0001\u001a\u00020\u0006H\u0016J\u0012\u0010\u008d\u0001\u001a\u00020\u00102\u0007\u0010\u008e\u0001\u001a\u00020\u0006H\u0016J\u0013\u0010\u008f\u0001\u001a\u00020\u00102\u0008\u0010\u0090\u0001\u001a\u00030\u0091\u0001H\u0016J\u001b\u0010\u0092\u0001\u001a\u00020\u00102\u0007\u0010\u0093\u0001\u001a\u00020\u00152\u0007\u0010\u0094\u0001\u001a\u00020\u0015H\u0016J\u0012\u0010\u0095\u0001\u001a\u00020\u00102\u0007\u0010\u0096\u0001\u001a\u00020\u0015H\u0016J\u0013\u0010\u0097\u0001\u001a\u00020\u00102\u0008\u0010\u0098\u0001\u001a\u00030\u0099\u0001H\u0016J\u0012\u0010\u009a\u0001\u001a\u00020\u00102\u0007\u0010\u009b\u0001\u001a\u00020\u0015H\u0016J0\u0010\u009c\u0001\u001a\u00020\u00102\t\u0008\u0002\u0010\u009d\u0001\u001a\u00020\u00152\u001a\u0010\u009e\u0001\u001a\u0015\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u00100\u009f\u0001\u00a2\u0006\u0003\u0008\u00a0\u0001H\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0018\u0010\u0004\u001a\n\u0012\u0006\u0008\u0001\u0012\u00020\u00060\u0005X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\tR\u001a\u0010\n\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\u000b8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\r\u0010\u000e\u00a8\u0006\u00a1\u0001"
+        "\u0000\u00c0\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0011\n\u0002\u0010\u000e\n\u0002\u0008\u0004\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u0015\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0011\n\u0002\u0018\u0002\n\u0002\u0008\u0010\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\t\n\u0002\u0008\u001d\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\n\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B#\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0012\u0010\u0004\u001a\n\u0012\u0006\u0008\u0001\u0012\u00020\u00060\u0005\"\u00020\u0006\u00a2\u0006\u0004\u0008\u0007\u0010\u0008J\u0010\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0012H\u0016J\u0010\u0010\u0013\u001a\u00020\u00102\u0006\u0010\u0014\u001a\u00020\u0015H\u0016J\u0010\u0010\u0016\u001a\u00020\u00102\u0006\u0010\u0017\u001a\u00020\u0018H\u0016J\u001e\u0010\u0016\u001a\u00020\u00102\u0006\u0010\u0017\u001a\u00020\u00182\u000c\u0010\u0019\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u000bH\u0016J\u0018\u0010\u001a\u001a\u00020\u00102\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u0011\u001a\u00020\u001dH\u0016J\u0010\u0010\u001e\u001a\u00020\u00102\u0006\u0010\u001f\u001a\u00020 H\u0016J\u0008\u0010!\u001a\u00020\u0010H\u0016J\u0008\u0010\"\u001a\u00020\u0010H\u0016J=\u0010#\u001a\u00020\u00102\u0006\u0010$\u001a\u00020%2\u0008\u0010&\u001a\u0004\u0018\u00010\'2\u0008\u0010(\u001a\u0004\u0018\u00010)2\u0008\u0010*\u001a\u0004\u0018\u00010)2\u0008\u0010+\u001a\u0004\u0018\u00010\u0006H\u0016\u00a2\u0006\u0002\u0010,J\u0018\u0010-\u001a\u00020\u00102\u0006\u0010\u001f\u001a\u00020%2\u0006\u0010.\u001a\u00020\u0015H\u0016J\u0010\u0010/\u001a\u00020\u00102\u0006\u00100\u001a\u00020\u0015H\u0016J\u0010\u00101\u001a\u00020\u00102\u0006\u00102\u001a\u00020\u0015H\u0016J\u0010\u00103\u001a\u00020\u00102\u0006\u00104\u001a\u00020%H\u0016J\u0010\u00105\u001a\u00020\u00102\u0006\u00104\u001a\u00020%H\u0016J\u0010\u00106\u001a\u00020\u00102\u0006\u00104\u001a\u00020%H\u0016J\u0010\u00107\u001a\u00020\u00102\u0006\u00104\u001a\u00020%H\u0016J\u0010\u00108\u001a\u00020\u00102\u0006\u00104\u001a\u00020%H\u0016J\u001a\u00109\u001a\u00020\u00102\u0006\u00104\u001a\u00020%2\u0008\u0010:\u001a\u0004\u0018\u00010;H\u0016J\u0010\u0010<\u001a\u00020\u00102\u0006\u00104\u001a\u00020%H\u0016J\u0010\u0010=\u001a\u00020\u00102\u0006\u00104\u001a\u00020%H\u0016J\u0018\u0010>\u001a\u00020\u00102\u0006\u00104\u001a\u00020%2\u0006\u0010?\u001a\u00020%H\u0016J(\u0010@\u001a\u00020\u00102\u0006\u00104\u001a\u00020%2\u0006\u0010A\u001a\u00020%2\u0006\u0010B\u001a\u00020\u00152\u0006\u0010C\u001a\u00020\u0015H\u0016J\u0010\u0010D\u001a\u00020\u00102\u0006\u00104\u001a\u00020%H\u0016J\u0010\u0010E\u001a\u00020\u00102\u0006\u00104\u001a\u00020%H\u0016J\u0010\u0010F\u001a\u00020\u00102\u0006\u00104\u001a\u00020%H\u0016J\u0010\u0010G\u001a\u00020\u00102\u0006\u00104\u001a\u00020%H\u0016J\u0010\u0010H\u001a\u00020\u00102\u0006\u0010I\u001a\u00020%H\u0016J\u0010\u0010J\u001a\u00020\u00102\u0006\u0010K\u001a\u00020LH\u0016J\u0010\u0010M\u001a\u00020\u00102\u0006\u0010K\u001a\u00020LH\u0016J\u0008\u0010N\u001a\u00020\u0010H\u0016J\u0008\u0010O\u001a\u00020\u0010H\u0016J\u0010\u0010P\u001a\u00020\u00102\u0006\u0010Q\u001a\u00020%H\u0016J\u0018\u0010R\u001a\u00020\u00102\u0006\u00104\u001a\u00020%2\u0006\u0010$\u001a\u00020SH\u0016J\u0010\u0010T\u001a\u00020\u00102\u0006\u00104\u001a\u00020%H\u0016J\u0010\u0010U\u001a\u00020\u00102\u0006\u0010V\u001a\u00020\u0015H\u0016J \u0010W\u001a\u00020\u00102\u0006\u0010X\u001a\u00020Y2\u0006\u0010Z\u001a\u00020%2\u0006\u0010[\u001a\u00020%H\u0016J\u0010\u0010\\\u001a\u00020\u00102\u0006\u0010]\u001a\u00020\u0015H\u0016J\u0008\u0010^\u001a\u00020\u0010H\u0016J\u0010\u0010_\u001a\u00020\u00102\u0006\u0010`\u001a\u00020\u0015H\u0016J\u0010\u0010a\u001a\u00020\u00102\u0006\u0010`\u001a\u00020\u0015H\u0016J\u0008\u0010b\u001a\u00020\u0010H\u0016J\u0008\u0010c\u001a\u00020\u0010H\u0016J\u0018\u0010d\u001a\u00020\u00102\u0006\u0010e\u001a\u00020\u00152\u0006\u0010f\u001a\u00020\u0015H\u0016J\u0010\u0010g\u001a\u00020\u00102\u0006\u0010h\u001a\u00020)H\u0016J\u0010\u0010i\u001a\u00020\u00102\u0006\u0010j\u001a\u00020\u0015H\u0016J\u0008\u0010k\u001a\u00020\u0010H\u0016J\u0008\u0010l\u001a\u00020\u0010H\u0016J\u0010\u0010m\u001a\u00020\u00102\u0006\u0010n\u001a\u00020\u0015H\u0016J\u0018\u0010o\u001a\u00020\u00102\u0006\u0010p\u001a\u00020\u00152\u0006\u0010q\u001a\u00020\u0015H\u0016J\u0010\u0010r\u001a\u00020\u00102\u0006\u0010`\u001a\u00020\u0015H\u0016J\u0008\u0010s\u001a\u00020\u0010H\u0016J\u0010\u0010t\u001a\u00020\u00102\u0006\u0010u\u001a\u00020\u0015H\u0016J\u0010\u0010v\u001a\u00020\u00102\u0006\u0010$\u001a\u00020wH\u0016J\u0010\u0010x\u001a\u00020\u00102\u0006\u0010y\u001a\u00020\u0015H\u0016J\u0010\u0010z\u001a\u00020\u00102\u0006\u0010{\u001a\u00020\u0015H\u0016J\u0010\u0010|\u001a\u00020\u00102\u0006\u0010}\u001a\u00020~H\u0016J\u0012\u0010\u007f\u001a\u00020\u00102\u0008\u0010\u0080\u0001\u001a\u00030\u0081\u0001H\u0016J\u001b\u0010\u0082\u0001\u001a\u00020\u00102\u0007\u0010\u0083\u0001\u001a\u00020\u00152\u0007\u0010\u0084\u0001\u001a\u00020\u0015H\u0016J\u0012\u0010\u0085\u0001\u001a\u00020\u00102\u0007\u0010\u0086\u0001\u001a\u00020\u0015H\u0016J\u0013\u0010\u0087\u0001\u001a\u00020\u00102\u0008\u0010\u0088\u0001\u001a\u00030\u0089\u0001H\u0016J\u0012\u0010\u008a\u0001\u001a\u00020\u00102\u0007\u0010\u008b\u0001\u001a\u00020\u0015H\u0016J-\u0010\u008c\u0001\u001a\u00020\u00102\u0007\u0010\u008d\u0001\u001a\u00020\'2\u0007\u0010\u008e\u0001\u001a\u00020\'2\u0007\u0010\u008f\u0001\u001a\u00020%2\u0007\u0010\u0090\u0001\u001a\u00020)H\u0016J\t\u0010\u0091\u0001\u001a\u00020\u0010H\u0016J\t\u0010\u0092\u0001\u001a\u00020\u0010H\u0016J\u0013\u0010\u0093\u0001\u001a\u00020\u00102\u0008\u0010\u0088\u0001\u001a\u00030\u0094\u0001H\u0016J\u0011\u0010\u0095\u0001\u001a\u00020\u00102\u0006\u0010n\u001a\u00020\u0015H\u0016J0\u0010\u0096\u0001\u001a\u00020\u00102\t\u0008\u0002\u0010\u0097\u0001\u001a\u00020\u00152\u001a\u0010\u0098\u0001\u001a\u0015\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u00100\u0099\u0001\u00a2\u0006\u0003\u0008\u009a\u0001H\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0018\u0010\u0004\u001a\n\u0012\u0006\u0008\u0001\u0012\u00020\u00060\u0005X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\tR\u001a\u0010\n\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\u000b8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\r\u0010\u000e\u00a8\u0006\u009b\u0001"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/CameraEventNotifier;",
@@ -108,16 +108,6 @@
         "",
         "iso",
         "ev",
-        "onYoutubeAccountSettingChanged",
-        "youtubeAccount",
-        "onYoutubeLiveEventSettingChanged",
-        "youtubeLiveEvent",
-        "onYoutubeLiveIdSettingChanged",
-        "youtubeLiveId",
-        "onFacebookAccountSettingChanged",
-        "facebookAccount",
-        "onFacebookLiveSelectSettingChanged",
-        "facebookLiveSelect",
         "onRemoteControlStateChanged",
         "isConnected",
         "onCaptureInRecording",
@@ -134,8 +124,6 @@
         "onEnduranceModeActivationChanged",
         "activate",
         "onToggleFacing",
-        "onDismissKeyguard",
-        "onDismissKeyguardCanceled",
         "onToggleCapturingMode",
         "onLowLightStateChanged",
         "isActive",
@@ -155,10 +143,6 @@
         "onFaceSelected",
         "activeArrayPoint",
         "Landroid/graphics/Point;",
-        "onRtmpStreamUrlSettingChanged",
-        "rtmpStreamUrl",
-        "onRtmpStreamKeySettingChanged",
-        "rtmpStreamKey",
         "onSurfaceRequested",
         "request",
         "Ljp/co/sony/mc/camera/view/SurfaceRequest;",
@@ -172,6 +156,16 @@
         "Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;",
         "onMoreModeSelectorOpened",
         "isOpened",
+        "onAiSuggestionSceneChanged",
+        "originalSituations",
+        "parameterIndexes",
+        "bokehStatus",
+        "recommendedZoomRatio",
+        "onStartMonitorAiSuggestion",
+        "onStopMonitorAiSuggestion",
+        "onTripodFramingCroppedPositionChanged",
+        "Ljp/co/sony/mc/camera/device/CaptureResultNotifier$TripodFramingCroppedPosition;",
+        "onOfflineSessionActive",
         "runForEach",
         "notifyAttachedOnly",
         "block",
@@ -210,10 +204,40 @@
     return-object p0
 .end method
 
+.method public static synthetic $r8$lambda$-ulMOEqjb6q7yy_cAxBLru87e7w(ZZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onFallbackStateChanged$lambda$49(ZZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$1Zb8BHj9zETFix9AcpHcZentMCE(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onLensChange$lambda$40(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public static synthetic $r8$lambda$2-4ayOx1UQcI8FzMr3j-JFQlDXQ(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onWbCustomStarted$lambda$8(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$3IvyYYSj2EEF6lM3RRAWOqUvLkA(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onMoreModeSelectorOpened$lambda$61(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 
@@ -230,10 +254,10 @@
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$53p4Bf8s4rkPFOzgmDqnLCrTctk(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$4coWPJuYnB1U0UjaVE8eboOnc64(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onLensChangedByRemocon$lambda$46(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onAfOnStateChangedByRemocon$lambda$42(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 
@@ -280,6 +304,16 @@
     return-object p0
 .end method
 
+.method public static synthetic $r8$lambda$7hkB4-cn-y0_uVcEv952q6Z9YuM(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onOfflineSessionActive$lambda$66(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public static synthetic $r8$lambda$7wH84d0UJOv0KhDKihejphsUrkY(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/Storage$StorageState;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 0
 
@@ -290,50 +324,10 @@
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$8Rr8nYsK0X1ddGrMCVeQOy7TZws(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$BI_QHd7N51bZBMPXi9mV1-1FD9Y(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onEnduranceModeActivationChanged$lambda$50(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static synthetic $r8$lambda$8d_CPiHZNb4utDNjBNk3tF3w7QE(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-    .locals 0
-
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onMoreModeSelectorOpened$lambda$70(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static synthetic $r8$lambda$8qVAT2RrRfaYbD75aKEJszjWa-A(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-    .locals 0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onAfOnStateChangedByRemocon$lambda$47(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static synthetic $r8$lambda$9yWZtQTWj6TThyPY50HaWNYqshI(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-    .locals 0
-
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onAutoFramingObjectTrackResultChanged$lambda$68(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static synthetic $r8$lambda$A_LMc6H3BUlbX-_Q7KQLzN-QSRo(Ljava/lang/String;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-    .locals 0
-
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onYoutubeLiveEventSettingChanged$lambda$38(Ljava/lang/String;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onStartMonitorAiSuggestion$lambda$63(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 
@@ -350,20 +344,30 @@
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$CbaWY9H3pwU-WOSUdueF0A020os(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$DU37-OW3kfR2DJNORLDsuV5aMnc(Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onModeChange$lambda$44(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onThermalStateChanged$lambda$6(Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$DU37-OW3kfR2DJNORLDsuV5aMnc(Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$DdNPzD3OmqkARHFBOWajQmztGv4(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onThermalStateChanged$lambda$6(Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onFocusMagnifierPreparing$lambda$52(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$DwUywpIT4q2DMeFf7soPAsbjPko(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onRemoteControlStateChanged$lambda$37(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 
@@ -380,30 +384,10 @@
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$Etz7KmKO67Fj5xaZw1r4NXIGBaI(ZZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-    .locals 0
-
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onFallbackStateChanged$lambda$56(ZZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
 .method public static synthetic $r8$lambda$FLs4XWjE9Inze0SGOz9rn34rcTE(ILandroid/graphics/Bitmap;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 0
 
     invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onSnapshotRequestDone$lambda$18(ILandroid/graphics/Bitmap;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static synthetic $r8$lambda$Fcq0QnkrIxz88pFZkzmSfwzNIZc(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-    .locals 0
-
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onFocusMagnifierPreparing$lambda$59(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 
@@ -420,10 +404,40 @@
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$J6ReFG7pjlgMtPD2duu4j0TP3Fs(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$IJ5D9x_n1H2fPguUn0anLUhfwHE(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onLowLightStateChanged$lambda$55(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onObjectTrackingStateChanged$lambda$54(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$JR0J9n4w1Y2tBzgs9bVhpc_h8f8(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onFramingAssistCroppedPositionChanged$lambda$60(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$JaSU_qiRPdhkh24BepHMWJ8hKBM(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onLensChangedByRemocon$lambda$41(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$KoX5OzRBV8G_E3wpl6m6Z33gfCU(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onLowLightStateChanged$lambda$48(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 
@@ -440,20 +454,30 @@
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$KvUX0kOrQBLlrRk1Rr8AIi2Tf1c(Ljava/lang/String;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$LEMI3cBi6YMNp9Sc4xMcW6RE6Is(ILjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onFacebookLiveSelectSettingChanged$lambda$41(Ljava/lang/String;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onBurstShutterDone$lambda$24(ILjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$LEMI3cBi6YMNp9Sc4xMcW6RE6Is(ILjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$LobbcZEOf1I2tdhwhH3YRcG3slc(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$TripodFramingCroppedPosition;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onBurstShutterDone$lambda$24(ILjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onTripodFramingCroppedPositionChanged$lambda$65(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$TripodFramingCroppedPosition;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$LqfF0P-TvOFUDp6MKwY3n3LlYFg(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onModeChange$lambda$39(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 
@@ -470,6 +494,36 @@
     return-object p0
 .end method
 
+.method public static synthetic $r8$lambda$Luabgu-1KCxHfKwlVUTawSeERWE(ZZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onAeAwbLockStateChanged$lambda$58(ZZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$OrI4W3t6I3ASwNVtFNZCSRmEhgY(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onAutoFramingObjectTrackResultChanged$lambda$59(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$PANN2dlOD3PHdcV3tI5ESo9-n8Q(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onStopMonitorAiSuggestion$lambda$64(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public static synthetic $r8$lambda$QF40gW-IjHHwrVJdyiSDQ5-WPRg(ILjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 0
 
@@ -480,10 +534,10 @@
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$QwNDC0MPt_HSqScUcA5DA4o5OVY(Ljp/co/sony/mc/camera/view/SurfaceRequest;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$RBKAxOOrhEXIgPSLNCN9dPekMNQ(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onSurfaceRequested$lambda$66(Ljp/co/sony/mc/camera/view/SurfaceRequest;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onCameraSettingsReset$lambda$51(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 
@@ -510,20 +564,10 @@
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$Tp2kfRlhmy6NsfuWhUTczhK57m8(FLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$SzT8jagzD8y7LZRKWP_sK_VZZcQ(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onApertureDetected$lambda$49(FLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static synthetic $r8$lambda$Vtye3wmNdD5R22Qbo7KZvh8txug(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-    .locals 0
-
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onLensChange$lambda$45(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onEnduranceModeActivationChanged$lambda$45(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 
@@ -540,16 +584,6 @@
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$WvX1IPm2tfKZfJKgmF1_wwh_BZo(Ljava/lang/String;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-    .locals 0
-
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onRtmpStreamUrlSettingChanged$lambda$64(Ljava/lang/String;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
 .method public static synthetic $r8$lambda$YOEn9XJT0Givu5sMYaXg_uqmzCw(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 0
 
@@ -560,20 +594,20 @@
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$ZucFfrqksBRe73k-FaTyAqj4qBs(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$_9_HvZ4pS4mmuAZ8wzyUxNpv-EI(ZZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onCameraSettingsReset$lambda$58(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onFocusChangedByRemocon$lambda$43(ZZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$_c1oAAUwxNgJQ4l1BznxNNw8vOM(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$_LtAlAT3T-S3nxFTlmMFhOvCb5M(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onDismissKeyguardCanceled$lambda$53(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onTouchFocusVisibilityChanged$lambda$55(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 
@@ -590,20 +624,20 @@
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$dhrm344AggbawGgjL5YIZ7Iu88s(ZZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$bTEc0kNTsg8mN4xld2UwJWX8yZY(Ljp/co/sony/mc/camera/view/SurfaceRequest;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onFocusChangedByRemocon$lambda$48(ZZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onSurfaceRequested$lambda$57(Ljp/co/sony/mc/camera/view/SurfaceRequest;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$fXw7_ptCCdOJIesSnx2fYH_U3ug(Landroid/graphics/Point;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$eBd792a5FZft6RUibeT95F5AS0w(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onFaceSelected$lambda$63(Landroid/graphics/Point;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onCaptureInRecording$lambda$38(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 
@@ -620,30 +654,20 @@
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$gTyZcbEdmKRHdaUZAJtli2Y_oWg(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-    .locals 0
-
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onFocusMagnificationResultChanged$lambda$60(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static synthetic $r8$lambda$gYCUFiqZrxjbCNjbHP0VRL7AIdg(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-    .locals 0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onDismissKeyguard$lambda$52(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
 .method public static synthetic $r8$lambda$gqJHp-Sc-d2HS53p2TNWAvuIYVc(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 0
 
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onCameraEvent$lambda$1(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$hdhpIn3eaICLqWSRHeYpfmfQ-JI(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onFallbackModeChanging$lambda$50(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 
@@ -670,40 +694,10 @@
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$iMgBopJXDRqp6TLeXE46rRlOqNg(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-    .locals 0
-
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onFramingAssistCroppedPositionChanged$lambda$69(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static synthetic $r8$lambda$iNbz-OL1xnLUqXq_quxFMTT8jeg(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-    .locals 0
-
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onTouchFocusVisibilityChanged$lambda$62(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
 .method public static synthetic $r8$lambda$iRMeRLK-Xxvp-6SI5mlj1rYvycI(ILjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 0
 
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onRecordRequested$lambda$15(ILjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static synthetic $r8$lambda$j5QJeNhdmRPsNOj4yHKJdR57R8A(ZZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-    .locals 0
-
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onAeAwbLockStateChanged$lambda$67(ZZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 
@@ -720,10 +714,10 @@
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$l44wAePVNliK4HHO4qFnE5ivqgs(Ljava/lang/String;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$kiGp0p7p6Y5Y5wTSw9qv5HNTEkI([I[IIFLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onRtmpStreamKeySettingChanged$lambda$65(Ljava/lang/String;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    invoke-static {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onAiSuggestionSceneChanged$lambda$62([I[IIFLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 
@@ -740,20 +734,20 @@
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$mq5NW5b9R1NjoNo8vpkLJzK_3wc(ILjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$mGsMM18Y_foR3wWyop7o1Bejbfk(FLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onRecordFinished$lambda$16(ILjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onApertureDetected$lambda$44(FLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$muwOQsWM7u_BKoa65IgglutHamM(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$mq5NW5b9R1NjoNo8vpkLJzK_3wc(ILjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onCaptureInRecording$lambda$43(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onRecordFinished$lambda$16(ILjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 
@@ -770,10 +764,10 @@
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$oky-2EbsqX_oJEjh79ibdRPkCJY(Ljava/lang/String;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$ojiSwsE8QB-U0jLCuXuNpC9bFns(Landroid/graphics/Point;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onFacebookAccountSettingChanged$lambda$40(Ljava/lang/String;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onFaceSelected$lambda$56(Landroid/graphics/Point;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 
@@ -790,10 +784,20 @@
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$pjzeTzjn5IwS3y47wLfv3CJtUr0(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$r2wVXP_ywZm3smI5hlZAHdZcMgU(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onToggleFacing$lambda$51(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onToggleFacing$lambda$46(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$r5d461GZt7IT9S3EIheXdPChIKY(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onFocusMagnificationResultChanged$lambda$53(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 
@@ -830,26 +834,6 @@
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$so1Njc0goXhBAuSrH8wNyPWUmTg(Ljava/lang/String;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-    .locals 0
-
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onYoutubeAccountSettingChanged$lambda$37(Ljava/lang/String;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static synthetic $r8$lambda$tHWWZqD4PaMUgItuogan4QTB-a4(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-    .locals 0
-
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onObjectTrackingStateChanged$lambda$61(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
 .method public static synthetic $r8$lambda$uQf1LQOnVKr9ft7m7VtMSyfFRYg(ILjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 0
 
@@ -860,40 +844,10 @@
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$vT4WJKyOo7MS3KysA3KdiRyYobM(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$vyLlQICc9IPHIw1JEhRQHmxMKIk(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onFallbackModeChanging$lambda$57(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static synthetic $r8$lambda$x51D32hihxw2SFfrgMEJu5BJ90g(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-    .locals 0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onToggleCapturingMode$lambda$54(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static synthetic $r8$lambda$yjfxYwhYOdqLi3CAwjZU2bytGtI(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-    .locals 0
-
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onRemoteControlStateChanged$lambda$42(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static synthetic $r8$lambda$zGuAwiDzlKMIRVvp-6nkPh8bzLI(Ljava/lang/String;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-    .locals 0
-
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onYoutubeLiveIdSettingChanged$lambda$39(Ljava/lang/String;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->onToggleCapturingMode$lambda$47(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 
@@ -917,10 +871,10 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 22
+    .line 23
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 23
+    .line 24
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->fragmentManager:Landroidx/fragment/app/FragmentManager;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->tags:[Ljava/lang/String;
@@ -939,17 +893,17 @@
         }
     .end annotation
 
-    .line 27
+    .line 28
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->tags:[Ljava/lang/String;
 
-    .line 262
+    .line 266
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v1, Ljava/util/Collection;
 
-    .line 271
+    .line 275
     array-length v2, v0
 
     const/4 v3, 0x0
@@ -959,7 +913,7 @@
 
     aget-object v4, v0, v3
 
-    .line 27
+    .line 28
     iget-object v5, p0, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->fragmentManager:Landroidx/fragment/app/FragmentManager;
 
     invoke-virtual {v5, v4}, Landroidx/fragment/app/FragmentManager;->findFragmentByTag(Ljava/lang/String;)Landroidx/fragment/app/Fragment;
@@ -968,7 +922,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 270
+    .line 274
     invoke-interface {v1, v4}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     :cond_0
@@ -976,21 +930,21 @@
 
     goto :goto_0
 
-    .line 274
+    .line 278
     :cond_1
     check-cast v1, Ljava/util/List;
 
     return-object v1
 .end method
 
-.method private static final onAeAwbLockStateChanged$lambda$67(ZZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method private static final onAeAwbLockStateChanged$lambda$58(ZZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 1
 
     const-string v0, "$this$runForEach"
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 238
+    .line 210
     invoke-interface {p2, p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onAeAwbLockStateChanged(ZZ)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -998,14 +952,14 @@
     return-object p0
 .end method
 
-.method private static final onAfOnStateChangedByRemocon$lambda$47(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method private static final onAfOnStateChangedByRemocon$lambda$42(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 1
 
     const-string v0, "$this$runForEach"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 165
+    .line 151
     invoke-interface {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onAfOnStateChangedByRemocon()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1013,14 +967,38 @@
     return-object p0
 .end method
 
-.method private static final onApertureDetected$lambda$49(FLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method private static final onAiSuggestionSceneChanged$lambda$62([I[IIFLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    .locals 1
+
+    const-string v0, "$originalSituations"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "$parameterIndexes"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "$this$runForEach"
+
+    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 232
+    invoke-interface {p4, p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onAiSuggestionSceneChanged([I[IIF)V
+
+    .line 238
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onApertureDetected$lambda$44(FLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 1
 
     const-string v0, "$this$runForEach"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 173
+    .line 159
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onApertureDetected(F)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1035,7 +1013,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 61
+    .line 62
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onAutoFlashChanged(Z)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1043,14 +1021,14 @@
     return-object p0
 .end method
 
-.method private static final onAutoFramingObjectTrackResultChanged$lambda$68(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method private static final onAutoFramingObjectTrackResultChanged$lambda$59(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 1
 
     const-string v0, "$this$runForEach"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 242
+    .line 214
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onAutoFramingObjectTrackResultChanged(Z)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1065,7 +1043,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 64
+    .line 65
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onAutoHdrChanged(Z)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1080,7 +1058,7 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 58
+    .line 59
     invoke-interface {p2, p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onBokehResultChanged(IZ)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1095,7 +1073,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 99
+    .line 100
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onBurstCaptureDone(I)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1110,7 +1088,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 97
+    .line 98
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onBurstCaptureRejected(I)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1125,7 +1103,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 69
+    .line 70
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onBurstCaptureRequested(I)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1140,7 +1118,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 102
+    .line 103
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onBurstQueueingCountUpdated(I)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1155,7 +1133,7 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 86
+    .line 87
     invoke-interface {p2, p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onBurstShutterAction(II)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1170,7 +1148,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 94
+    .line 95
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onBurstShutterDone(I)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1189,7 +1167,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 30
+    .line 31
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onCameraEvent(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1208,7 +1186,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 35
+    .line 36
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onCameraSettingsChanged(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1231,7 +1209,7 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 39
+    .line 40
     invoke-interface {p2, p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onCameraSettingsChanged(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljava/util/List;)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1239,14 +1217,14 @@
     return-object p0
 .end method
 
-.method private static final onCameraSettingsReset$lambda$58(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method private static final onCameraSettingsReset$lambda$51(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 1
 
     const-string v0, "$this$runForEach"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 202
+    .line 182
     invoke-interface {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onCameraSettingsReset()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1254,14 +1232,14 @@
     return-object p0
 .end method
 
-.method private static final onCaptureInRecording$lambda$43(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method private static final onCaptureInRecording$lambda$38(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 1
 
     const-string v0, "$this$runForEach"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 149
+    .line 135
     invoke-interface {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onCaptureInRecording()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1276,7 +1254,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 48
+    .line 49
     invoke-interface {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onChangeToCoolMode()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1284,44 +1262,14 @@
     return-object p0
 .end method
 
-.method private static final onDismissKeyguard$lambda$52(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-    .locals 1
-
-    const-string v0, "$this$runForEach"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 183
-    invoke-interface {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onDismissKeyguard()V
-
-    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
-
-    return-object p0
-.end method
-
-.method private static final onDismissKeyguardCanceled$lambda$53(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-    .locals 1
-
-    const-string v0, "$this$runForEach"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 186
-    invoke-interface {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onDismissKeyguardCanceled()V
-
-    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
-
-    return-object p0
-.end method
-
-.method private static final onEnduranceModeActivationChanged$lambda$50(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method private static final onEnduranceModeActivationChanged$lambda$45(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 1
 
     const-string v0, "$this$runForEach"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 176
+    .line 162
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onEnduranceModeActivationChanged(Z)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1336,7 +1284,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 92
+    .line 93
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onExposureDone(I)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1351,7 +1299,7 @@
 
     invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 90
+    .line 91
     invoke-interface {p4, p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onExposureStarted(IIZZ)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1359,7 +1307,7 @@
     return-object p0
 .end method
 
-.method private static final onFaceSelected$lambda$63(Landroid/graphics/Point;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method private static final onFaceSelected$lambda$56(Landroid/graphics/Point;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 1
 
     const-string v0, "$activeArrayPoint"
@@ -1370,7 +1318,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 222
+    .line 202
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onFaceSelected(Landroid/graphics/Point;)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1378,52 +1326,14 @@
     return-object p0
 .end method
 
-.method private static final onFacebookAccountSettingChanged$lambda$40(Ljava/lang/String;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-    .locals 1
-
-    const-string v0, "$facebookAccount"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "$this$runForEach"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 140
-    invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onFacebookAccountSettingChanged(Ljava/lang/String;)V
-
-    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
-
-    return-object p0
-.end method
-
-.method private static final onFacebookLiveSelectSettingChanged$lambda$41(Ljava/lang/String;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-    .locals 1
-
-    const-string v0, "$facebookLiveSelect"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "$this$runForEach"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 143
-    invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onFacebookLiveSelectSettingChanged(Ljava/lang/String;)V
-
-    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
-
-    return-object p0
-.end method
-
-.method private static final onFallbackModeChanging$lambda$57(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method private static final onFallbackModeChanging$lambda$50(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 1
 
     const-string v0, "$this$runForEach"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 199
+    .line 179
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onFallbackModeChanging(Z)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1431,14 +1341,14 @@
     return-object p0
 .end method
 
-.method private static final onFallbackStateChanged$lambda$56(ZZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method private static final onFallbackStateChanged$lambda$49(ZZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 1
 
     const-string v0, "$this$runForEach"
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 196
+    .line 176
     invoke-interface {p2, p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onFallbackStateChanged(ZZ)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1446,14 +1356,14 @@
     return-object p0
 .end method
 
-.method private static final onFocusChangedByRemocon$lambda$48(ZZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method private static final onFocusChangedByRemocon$lambda$43(ZZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 1
 
     const-string v0, "$this$runForEach"
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 169
+    .line 155
     invoke-interface {p2, p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onFocusChangedByRemocon(ZZ)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1461,7 +1371,7 @@
     return-object p0
 .end method
 
-.method private static final onFocusMagnificationResultChanged$lambda$60(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method private static final onFocusMagnificationResultChanged$lambda$53(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 1
 
     const-string v0, "$result"
@@ -1472,7 +1382,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 210
+    .line 190
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onFocusMagnificationResultChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1480,14 +1390,14 @@
     return-object p0
 .end method
 
-.method private static final onFocusMagnifierPreparing$lambda$59(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method private static final onFocusMagnifierPreparing$lambda$52(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 1
 
     const-string v0, "$this$runForEach"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 206
+    .line 186
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onFocusMagnifierPreparing(Z)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1495,7 +1405,7 @@
     return-object p0
 .end method
 
-.method private static final onFramingAssistCroppedPositionChanged$lambda$69(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method private static final onFramingAssistCroppedPositionChanged$lambda$60(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 1
 
     const-string v0, "$position"
@@ -1506,7 +1416,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 246
+    .line 218
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onFramingAssistCroppedPositionChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1521,7 +1431,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 125
+    .line 126
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onGoogleLensAvailableChanged(Z)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1540,7 +1450,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 108
+    .line 109
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onHintTextHidden(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1559,7 +1469,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 105
+    .line 106
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onHintTextShown(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1567,14 +1477,14 @@
     return-object p0
 .end method
 
-.method private static final onLensChange$lambda$45(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method private static final onLensChange$lambda$40(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 1
 
     const-string v0, "$this$runForEach"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 157
+    .line 143
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onLensChange(Z)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1582,14 +1492,14 @@
     return-object p0
 .end method
 
-.method private static final onLensChangedByRemocon$lambda$46(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method private static final onLensChangedByRemocon$lambda$41(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 1
 
     const-string v0, "$this$runForEach"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 161
+    .line 147
     invoke-interface {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onLensChangedByRemocon()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1597,14 +1507,14 @@
     return-object p0
 .end method
 
-.method private static final onLowLightStateChanged$lambda$55(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method private static final onLowLightStateChanged$lambda$48(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 1
 
     const-string v0, "$this$runForEach"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 193
+    .line 173
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onLowLightStateChanged(Z)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1619,7 +1529,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 114
+    .line 115
     invoke-interface {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onMessageDialogHidden()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1634,7 +1544,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 111
+    .line 112
     invoke-interface {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onMessageDialogShown()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1642,14 +1552,14 @@
     return-object p0
 .end method
 
-.method private static final onModeChange$lambda$44(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method private static final onModeChange$lambda$39(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 1
 
     const-string v0, "$this$runForEach"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 153
+    .line 139
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onModeChange(Z)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1657,14 +1567,14 @@
     return-object p0
 .end method
 
-.method private static final onMoreModeSelectorOpened$lambda$70(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method private static final onMoreModeSelectorOpened$lambda$61(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 1
 
     const-string v0, "$this$runForEach"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 250
+    .line 222
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onMoreModeSelectorOpened(Z)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1672,15 +1582,30 @@
     return-object p0
 .end method
 
-.method private static final onObjectTrackingStateChanged$lambda$61(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method private static final onObjectTrackingStateChanged$lambda$54(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 1
 
     const-string v0, "$this$runForEach"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 214
+    .line 194
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onObjectTrackingStateChanged(Z)V
+
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onOfflineSessionActive$lambda$66(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    .locals 1
+
+    const-string v0, "$this$runForEach"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 254
+    invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onOfflineSessionActive(Z)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
@@ -1694,7 +1619,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 81
+    .line 82
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onPrepareBurstDone(I)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1709,7 +1634,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 73
+    .line 74
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onRecordFinished(I)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1724,7 +1649,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 71
+    .line 72
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onRecordRequested(I)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1739,7 +1664,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 117
+    .line 118
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onRecordingProgress(I)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1747,53 +1672,15 @@
     return-object p0
 .end method
 
-.method private static final onRemoteControlStateChanged$lambda$42(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method private static final onRemoteControlStateChanged$lambda$37(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 1
 
     const-string v0, "$this$runForEach"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 146
+    .line 132
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onRemoteControlStateChanged(Z)V
-
-    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
-
-    return-object p0
-.end method
-
-.method private static final onRtmpStreamKeySettingChanged$lambda$65(Ljava/lang/String;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-    .locals 1
-
-    const-string v0, "$rtmpStreamKey"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "$this$runForEach"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 230
-    invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onRtmpStreamKeySettingChanged(Ljava/lang/String;)V
-
-    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
-
-    return-object p0
-.end method
-
-.method private static final onRtmpStreamUrlSettingChanged$lambda$64(Ljava/lang/String;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-    .locals 1
-
-    const-string v0, "$rtmpStreamUrl"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "$this$runForEach"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 226
-    invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onRtmpStreamUrlSettingChanged(Ljava/lang/String;)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
@@ -1807,7 +1694,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 83
+    .line 84
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onShutterAction(I)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1822,7 +1709,7 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 79
+    .line 80
     invoke-interface {p2, p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onSnapshotRequestDone(ILandroid/graphics/Bitmap;)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1837,7 +1724,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 66
+    .line 67
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onSnapshotRequested(I)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1852,8 +1739,38 @@
 
     invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 128
+    .line 129
     invoke-interface {p4, p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onSsIsoEvDetected(JII)V
+
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onStartMonitorAiSuggestion$lambda$63(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    .locals 1
+
+    const-string v0, "$this$runForEach"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 242
+    invoke-interface {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onStartMonitorAiSuggestion()V
+
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onStopMonitorAiSuggestion$lambda$64(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    .locals 1
+
+    const-string v0, "$this$runForEach"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 246
+    invoke-interface {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onStopMonitorAiSuggestion()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
@@ -1875,7 +1792,7 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 42
+    .line 43
     invoke-interface {p2, p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onStorageStateChanged(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/Storage$StorageState;)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1890,7 +1807,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 122
+    .line 123
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onStoreError(I)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1909,7 +1826,7 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 120
+    .line 121
     invoke-interface {p2, p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onStoreFinished(ILjp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1917,7 +1834,7 @@
     return-object p0
 .end method
 
-.method private static final onSurfaceRequested$lambda$66(Ljp/co/sony/mc/camera/view/SurfaceRequest;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method private static final onSurfaceRequested$lambda$57(Ljp/co/sony/mc/camera/view/SurfaceRequest;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 1
 
     const-string v0, "$request"
@@ -1928,7 +1845,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 234
+    .line 206
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onSurfaceRequested(Ljp/co/sony/mc/camera/view/SurfaceRequest;)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1947,7 +1864,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 45
+    .line 46
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onThermalStateChanged(Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1955,14 +1872,14 @@
     return-object p0
 .end method
 
-.method private static final onToggleCapturingMode$lambda$54(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method private static final onToggleCapturingMode$lambda$47(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 1
 
     const-string v0, "$this$runForEach"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 189
+    .line 169
     invoke-interface {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onToggleCapturingMode()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1970,14 +1887,14 @@
     return-object p0
 .end method
 
-.method private static final onToggleFacing$lambda$51(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method private static final onToggleFacing$lambda$46(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 1
 
     const-string v0, "$this$runForEach"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 179
+    .line 165
     invoke-interface {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onToggleFacing()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1985,15 +1902,34 @@
     return-object p0
 .end method
 
-.method private static final onTouchFocusVisibilityChanged$lambda$62(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+.method private static final onTouchFocusVisibilityChanged$lambda$55(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
     .locals 1
 
     const-string v0, "$this$runForEach"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 218
+    .line 198
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onTouchFocusVisibilityChanged(Z)V
+
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onTripodFramingCroppedPositionChanged$lambda$65(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$TripodFramingCroppedPosition;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    .locals 1
+
+    const-string v0, "$position"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "$this$runForEach"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 250
+    invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onTripodFramingCroppedPositionChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$TripodFramingCroppedPosition;)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
@@ -2007,7 +1943,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 76
+    .line 77
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onVideoSnapshotRequested(I)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -2034,7 +1970,7 @@
 
     move-object v5, p4
 
-    .line 55
+    .line 56
     invoke-interface/range {v0 .. v5}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onWbCustomFinished(I[ILjava/lang/Float;Ljava/lang/Float;Ljava/lang/String;)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -2049,65 +1985,8 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 51
+    .line 52
     invoke-interface {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onWbCustomStarted()V
-
-    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
-
-    return-object p0
-.end method
-
-.method private static final onYoutubeAccountSettingChanged$lambda$37(Ljava/lang/String;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-    .locals 1
-
-    const-string v0, "$youtubeAccount"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "$this$runForEach"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 131
-    invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onYoutubeAccountSettingChanged(Ljava/lang/String;)V
-
-    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
-
-    return-object p0
-.end method
-
-.method private static final onYoutubeLiveEventSettingChanged$lambda$38(Ljava/lang/String;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-    .locals 1
-
-    const-string v0, "$youtubeLiveEvent"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "$this$runForEach"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 134
-    invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onYoutubeLiveEventSettingChanged(Ljava/lang/String;)V
-
-    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
-
-    return-object p0
-.end method
-
-.method private static final onYoutubeLiveIdSettingChanged$lambda$39(Ljava/lang/String;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
-    .locals 1
-
-    const-string v0, "$youtubeLiveId"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "$this$runForEach"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 137
-    invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onYoutubeLiveIdSettingChanged(Ljava/lang/String;)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
@@ -2121,7 +2000,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 32
+    .line 33
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onZoomStateChanged(Z)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -2142,14 +2021,14 @@
         }
     .end annotation
 
-    .line 256
+    .line 260
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->getFragments()Ljava/util/List;
 
     move-result-object p0
 
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 275
+    .line 279
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -2168,7 +2047,7 @@
 
     check-cast v0, Landroidx/fragment/app/Fragment;
 
-    .line 257
+    .line 261
     instance-of v1, v0, Ljp/co/sony/mc/camera/view/CameraEventListener;
 
     if-eqz v1, :cond_0
@@ -2201,7 +2080,7 @@
 
     move p1, p4
 
-    .line 253
+    .line 257
     :cond_0
     invoke-direct {p0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->runForEach(ZLkotlin/jvm/functions/Function1;)V
 
@@ -2213,7 +2092,7 @@
 .method public onAeAwbLockStateChanged(ZZ)V
     .locals 2
 
-    .line 238
+    .line 210
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda33;
 
     invoke-direct {v0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda33;-><init>(ZZ)V
@@ -2232,10 +2111,10 @@
 .method public onAfOnStateChangedByRemocon()V
     .locals 4
 
-    .line 165
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda28;
+    .line 151
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda25;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda28;-><init>()V
+    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda25;-><init>()V
 
     const/4 v1, 0x1
 
@@ -2248,10 +2127,37 @@
     return-void
 .end method
 
+.method public onAiSuggestionSceneChanged([I[IIF)V
+    .locals 1
+
+    const-string v0, "originalSituations"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "parameterIndexes"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 231
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda4;
+
+    invoke-direct {v0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda4;-><init>([I[IIF)V
+
+    const/4 p1, 0x1
+
+    const/4 p2, 0x0
+
+    const/4 p3, 0x0
+
+    invoke-static {p0, p3, v0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->runForEach$default(Ljp/co/sony/mc/camera/view/CameraEventNotifier;ZLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
+
+    return-void
+.end method
+
 .method public onApertureDetected(F)V
     .locals 3
 
-    .line 173
+    .line 159
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda44;
 
     invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda44;-><init>(F)V
@@ -2270,10 +2176,10 @@
 .method public onAutoFlashChanged(Z)V
     .locals 1
 
-    .line 61
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda41;
+    .line 62
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda38;
 
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda41;-><init>(Z)V
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda38;-><init>(Z)V
 
     const/4 p1, 0x0
 
@@ -2285,10 +2191,10 @@
 .method public onAutoFramingObjectTrackResultChanged(Z)V
     .locals 3
 
-    .line 242
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda43;
+    .line 214
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda41;
 
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda43;-><init>(Z)V
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda41;-><init>(Z)V
 
     const/4 p1, 0x1
 
@@ -2304,10 +2210,10 @@
 .method public onAutoHdrChanged(Z)V
     .locals 3
 
-    .line 64
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda4;
+    .line 65
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda5;
 
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda4;-><init>(Z)V
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda5;-><init>(Z)V
 
     const/4 p1, 0x1
 
@@ -2323,10 +2229,10 @@
 .method public onBokehResultChanged(IZ)V
     .locals 2
 
-    .line 58
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda29;
+    .line 59
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda26;
 
-    invoke-direct {v0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda29;-><init>(IZ)V
+    invoke-direct {v0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda26;-><init>(IZ)V
 
     const/4 p1, 0x1
 
@@ -2342,7 +2248,7 @@
 .method public onBurstCaptureDone(I)V
     .locals 3
 
-    .line 99
+    .line 100
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda8;
 
     invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda8;-><init>(I)V
@@ -2361,10 +2267,10 @@
 .method public onBurstCaptureRejected(I)V
     .locals 3
 
-    .line 97
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda60;
+    .line 98
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda58;
 
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda60;-><init>(I)V
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda58;-><init>(I)V
 
     const/4 p1, 0x1
 
@@ -2380,10 +2286,10 @@
 .method public onBurstCaptureRequested(I)V
     .locals 3
 
-    .line 69
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda68;
+    .line 70
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda65;
 
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda68;-><init>(I)V
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda65;-><init>(I)V
 
     const/4 p1, 0x1
 
@@ -2399,7 +2305,7 @@
 .method public onBurstQueueingCountUpdated(I)V
     .locals 3
 
-    .line 102
+    .line 103
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda3;
 
     invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda3;-><init>(I)V
@@ -2418,10 +2324,10 @@
 .method public onBurstShutterAction(II)V
     .locals 2
 
-    .line 86
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda67;
+    .line 87
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda64;
 
-    invoke-direct {v0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda67;-><init>(II)V
+    invoke-direct {v0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda64;-><init>(II)V
 
     const/4 p1, 0x1
 
@@ -2437,10 +2343,10 @@
 .method public onBurstShutterDone(I)V
     .locals 3
 
-    .line 94
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda36;
+    .line 95
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda34;
 
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda36;-><init>(I)V
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda34;-><init>(I)V
 
     const/4 p1, 0x1
 
@@ -2460,7 +2366,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 30
+    .line 31
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda22;
 
     invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda22;-><init>(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)V
@@ -2483,10 +2389,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 35
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda24;
+    .line 36
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda20;
 
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda24;-><init>(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;)V
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda20;-><init>(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;)V
 
     const/4 p1, 0x1
 
@@ -2519,10 +2425,10 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 39
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda38;
+    .line 40
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda35;
 
-    invoke-direct {v0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda38;-><init>(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljava/util/List;)V
+    invoke-direct {v0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda35;-><init>(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljava/util/List;)V
 
     const/4 p1, 0x1
 
@@ -2538,10 +2444,10 @@
 .method public onCameraSettingsReset()V
     .locals 4
 
-    .line 202
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda30;
+    .line 182
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda27;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda30;-><init>()V
+    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda27;-><init>()V
 
     const/4 v1, 0x1
 
@@ -2557,7 +2463,7 @@
 .method public onCaptureInRecording()V
     .locals 4
 
-    .line 149
+    .line 135
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda1;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda1;-><init>()V
@@ -2576,48 +2482,10 @@
 .method public onChangeToCoolMode()V
     .locals 4
 
-    .line 48
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda53;
+    .line 49
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda51;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda53;-><init>()V
-
-    const/4 v1, 0x1
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    invoke-static {p0, v3, v0, v1, v2}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->runForEach$default(Ljp/co/sony/mc/camera/view/CameraEventNotifier;ZLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public onDismissKeyguard()V
-    .locals 4
-
-    .line 183
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda65;
-
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda65;-><init>()V
-
-    const/4 v1, 0x1
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    invoke-static {p0, v3, v0, v1, v2}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->runForEach$default(Ljp/co/sony/mc/camera/view/CameraEventNotifier;ZLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public onDismissKeyguardCanceled()V
-    .locals 4
-
-    .line 186
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda50;
-
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda50;-><init>()V
+    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda51;-><init>()V
 
     const/4 v1, 0x1
 
@@ -2633,10 +2501,10 @@
 .method public onEnduranceModeActivationChanged(Z)V
     .locals 3
 
-    .line 176
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda32;
+    .line 162
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda29;
 
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda32;-><init>(Z)V
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda29;-><init>(Z)V
 
     const/4 p1, 0x1
 
@@ -2652,10 +2520,10 @@
 .method public onExposureDone(I)V
     .locals 3
 
-    .line 92
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda51;
+    .line 93
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda48;
 
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda51;-><init>(I)V
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda48;-><init>(I)V
 
     const/4 p1, 0x1
 
@@ -2671,10 +2539,10 @@
 .method public onExposureStarted(IIZZ)V
     .locals 1
 
-    .line 90
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda40;
+    .line 91
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda37;
 
-    invoke-direct {v0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda40;-><init>(IIZZ)V
+    invoke-direct {v0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda37;-><init>(IIZZ)V
 
     const/4 p1, 0x1
 
@@ -2694,56 +2562,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 222
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda58;
+    .line 202
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda56;
 
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda58;-><init>(Landroid/graphics/Point;)V
-
-    const/4 p1, 0x1
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    invoke-static {p0, v2, v0, p1, v1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->runForEach$default(Ljp/co/sony/mc/camera/view/CameraEventNotifier;ZLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public onFacebookAccountSettingChanged(Ljava/lang/String;)V
-    .locals 3
-
-    const-string v0, "facebookAccount"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 140
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda6;
-
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda6;-><init>(Ljava/lang/String;)V
-
-    const/4 p1, 0x1
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    invoke-static {p0, v2, v0, p1, v1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->runForEach$default(Ljp/co/sony/mc/camera/view/CameraEventNotifier;ZLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public onFacebookLiveSelectSettingChanged(Ljava/lang/String;)V
-    .locals 3
-
-    const-string v0, "facebookLiveSelect"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 143
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda69;
-
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda69;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda56;-><init>(Landroid/graphics/Point;)V
 
     const/4 p1, 0x1
 
@@ -2759,7 +2581,7 @@
 .method public onFallbackModeChanging(Z)V
     .locals 3
 
-    .line 199
+    .line 179
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda2;
 
     invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda2;-><init>(Z)V
@@ -2778,10 +2600,10 @@
 .method public onFallbackStateChanged(ZZ)V
     .locals 2
 
-    .line 196
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda46;
+    .line 176
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda43;
 
-    invoke-direct {v0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda46;-><init>(ZZ)V
+    invoke-direct {v0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda43;-><init>(ZZ)V
 
     const/4 p1, 0x1
 
@@ -2797,10 +2619,10 @@
 .method public onFocusChangedByRemocon(ZZ)V
     .locals 2
 
-    .line 169
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda45;
+    .line 155
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda42;
 
-    invoke-direct {v0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda45;-><init>(ZZ)V
+    invoke-direct {v0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda42;-><init>(ZZ)V
 
     const/4 p1, 0x1
 
@@ -2820,10 +2642,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 210
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda23;
+    .line 190
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda19;
 
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda23;-><init>(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;)V
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda19;-><init>(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;)V
 
     const/4 p1, 0x1
 
@@ -2839,7 +2661,7 @@
 .method public onFocusMagnifierPreparing(Z)V
     .locals 3
 
-    .line 206
+    .line 186
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda0;
 
     invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda0;-><init>(Z)V
@@ -2862,10 +2684,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 246
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda25;
+    .line 218
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda21;
 
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda25;-><init>(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;)V
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda21;-><init>(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;)V
 
     const/4 p1, 0x1
 
@@ -2881,7 +2703,7 @@
 .method public onGoogleLensAvailableChanged(Z)V
     .locals 3
 
-    .line 125
+    .line 126
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda15;
 
     invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda15;-><init>(Z)V
@@ -2904,10 +2726,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 108
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda56;
+    .line 109
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda53;
 
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda56;-><init>(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda53;-><init>(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
 
     const/4 p1, 0x1
 
@@ -2927,10 +2749,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 105
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda5;
+    .line 106
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda6;
 
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda5;-><init>(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda6;-><init>(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
 
     const/4 p1, 0x1
 
@@ -2946,10 +2768,10 @@
 .method public onLensChange(Z)V
     .locals 3
 
-    .line 157
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda47;
+    .line 143
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda45;
 
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda47;-><init>(Z)V
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda45;-><init>(Z)V
 
     const/4 p1, 0x1
 
@@ -2965,10 +2787,10 @@
 .method public onLensChangedByRemocon()V
     .locals 4
 
-    .line 161
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda18;
+    .line 147
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda17;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda18;-><init>()V
+    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda17;-><init>()V
 
     const/4 v1, 0x1
 
@@ -2984,10 +2806,10 @@
 .method public onLowLightStateChanged(Z)V
     .locals 3
 
-    .line 193
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda27;
+    .line 173
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda24;
 
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda27;-><init>(Z)V
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda24;-><init>(Z)V
 
     const/4 p1, 0x1
 
@@ -3003,7 +2825,7 @@
 .method public onMessageDialogHidden()V
     .locals 4
 
-    .line 114
+    .line 115
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda7;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda7;-><init>()V
@@ -3022,10 +2844,10 @@
 .method public onMessageDialogShown()V
     .locals 4
 
-    .line 111
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda35;
+    .line 112
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda32;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda35;-><init>()V
+    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda32;-><init>()V
 
     const/4 v1, 0x1
 
@@ -3041,10 +2863,10 @@
 .method public onModeChange(Z)V
     .locals 3
 
-    .line 153
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda34;
+    .line 139
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda30;
 
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda34;-><init>(Z)V
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda30;-><init>(Z)V
 
     const/4 p1, 0x1
 
@@ -3060,10 +2882,10 @@
 .method public onMoreModeSelectorOpened(Z)V
     .locals 3
 
-    .line 250
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda64;
+    .line 222
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda61;
 
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda64;-><init>(Z)V
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda61;-><init>(Z)V
 
     const/4 p1, 0x1
 
@@ -3079,10 +2901,29 @@
 .method public onObjectTrackingStateChanged(Z)V
     .locals 3
 
-    .line 214
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda57;
+    .line 194
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda54;
 
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda57;-><init>(Z)V
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda54;-><init>(Z)V
+
+    const/4 p1, 0x1
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    invoke-static {p0, v2, v0, p1, v1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->runForEach$default(Ljp/co/sony/mc/camera/view/CameraEventNotifier;ZLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public onOfflineSessionActive(Z)V
+    .locals 3
+
+    .line 254
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda39;
+
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda39;-><init>(Z)V
 
     const/4 p1, 0x1
 
@@ -3098,26 +2939,7 @@
 .method public onPrepareBurstDone(I)V
     .locals 3
 
-    .line 81
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda54;
-
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda54;-><init>(I)V
-
-    const/4 p1, 0x1
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    invoke-static {p0, v2, v0, p1, v1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->runForEach$default(Ljp/co/sony/mc/camera/view/CameraEventNotifier;ZLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public onRecordFinished(I)V
-    .locals 3
-
-    .line 73
+    .line 82
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda52;
 
     invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda52;-><init>(I)V
@@ -3133,13 +2955,32 @@
     return-void
 .end method
 
+.method public onRecordFinished(I)V
+    .locals 3
+
+    .line 74
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda49;
+
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda49;-><init>(I)V
+
+    const/4 p1, 0x1
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    invoke-static {p0, v2, v0, p1, v1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->runForEach$default(Ljp/co/sony/mc/camera/view/CameraEventNotifier;ZLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
+
+    return-void
+.end method
+
 .method public onRecordRequested(I)V
     .locals 3
 
-    .line 71
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda63;
+    .line 72
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda60;
 
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda63;-><init>(I)V
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda60;-><init>(I)V
 
     const/4 p1, 0x1
 
@@ -3155,7 +2996,7 @@
 .method public onRecordingProgress(I)V
     .locals 3
 
-    .line 117
+    .line 118
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda9;
 
     invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda9;-><init>(I)V
@@ -3174,7 +3015,7 @@
 .method public onRemoteControlStateChanged(Z)V
     .locals 3
 
-    .line 146
+    .line 132
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda10;
 
     invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda10;-><init>(Z)V
@@ -3190,56 +3031,10 @@
     return-void
 .end method
 
-.method public onRtmpStreamKeySettingChanged(Ljava/lang/String;)V
-    .locals 3
-
-    const-string v0, "rtmpStreamKey"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 230
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda62;
-
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda62;-><init>(Ljava/lang/String;)V
-
-    const/4 p1, 0x1
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    invoke-static {p0, v2, v0, p1, v1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->runForEach$default(Ljp/co/sony/mc/camera/view/CameraEventNotifier;ZLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public onRtmpStreamUrlSettingChanged(Ljava/lang/String;)V
-    .locals 3
-
-    const-string v0, "rtmpStreamUrl"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 226
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda19;
-
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda19;-><init>(Ljava/lang/String;)V
-
-    const/4 p1, 0x1
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    invoke-static {p0, v2, v0, p1, v1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->runForEach$default(Ljp/co/sony/mc/camera/view/CameraEventNotifier;ZLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
-
-    return-void
-.end method
-
 .method public onShutterAction(I)V
     .locals 3
 
-    .line 83
+    .line 84
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda12;
 
     invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda12;-><init>(I)V
@@ -3258,7 +3053,7 @@
 .method public onSnapshotRequestDone(ILandroid/graphics/Bitmap;)V
     .locals 2
 
-    .line 79
+    .line 80
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda14;
 
     invoke-direct {v0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda14;-><init>(ILandroid/graphics/Bitmap;)V
@@ -3277,10 +3072,10 @@
 .method public onSnapshotRequested(I)V
     .locals 3
 
-    .line 66
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda17;
+    .line 67
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda16;
 
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda17;-><init>(I)V
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda16;-><init>(I)V
 
     const/4 p1, 0x1
 
@@ -3296,10 +3091,10 @@
 .method public onSsIsoEvDetected(JII)V
     .locals 1
 
-    .line 128
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda66;
+    .line 129
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda63;
 
-    invoke-direct {v0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda66;-><init>(JII)V
+    invoke-direct {v0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda63;-><init>(JII)V
 
     const/4 p1, 0x1
 
@@ -3308,6 +3103,44 @@
     const/4 p3, 0x0
 
     invoke-static {p0, p3, v0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->runForEach$default(Ljp/co/sony/mc/camera/view/CameraEventNotifier;ZLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public onStartMonitorAiSuggestion()V
+    .locals 4
+
+    .line 242
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda50;
+
+    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda50;-><init>()V
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    invoke-static {p0, v3, v0, v1, v2}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->runForEach$default(Ljp/co/sony/mc/camera/view/CameraEventNotifier;ZLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public onStopMonitorAiSuggestion()V
+    .locals 4
+
+    .line 246
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda62;
+
+    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda62;-><init>()V
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    invoke-static {p0, v3, v0, v1, v2}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->runForEach$default(Ljp/co/sony/mc/camera/view/CameraEventNotifier;ZLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
 
     return-void
 .end method
@@ -3323,7 +3156,7 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 42
+    .line 43
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda13;
 
     invoke-direct {v0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda13;-><init>(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/Storage$StorageState;)V
@@ -3338,10 +3171,10 @@
 .method public onStoreError(I)V
     .locals 3
 
-    .line 122
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda48;
+    .line 123
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda46;
 
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda48;-><init>(I)V
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda46;-><init>(I)V
 
     const/4 p1, 0x1
 
@@ -3361,10 +3194,10 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 120
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda49;
+    .line 121
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda47;
 
-    invoke-direct {v0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda49;-><init>(ILjp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
+    invoke-direct {v0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda47;-><init>(ILjp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
 
     const/4 p1, 0x1
 
@@ -3384,10 +3217,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 234
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda20;
+    .line 206
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda18;
 
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda20;-><init>(Ljp/co/sony/mc/camera/view/SurfaceRequest;)V
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda18;-><init>(Ljp/co/sony/mc/camera/view/SurfaceRequest;)V
 
     const/4 p1, 0x1
 
@@ -3407,10 +3240,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 45
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda61;
+    .line 46
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda59;
 
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda61;-><init>(Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;)V
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda59;-><init>(Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;)V
 
     const/4 p1, 0x0
 
@@ -3422,10 +3255,10 @@
 .method public onToggleCapturingMode()V
     .locals 4
 
-    .line 189
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda59;
+    .line 169
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda57;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda59;-><init>()V
+    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda57;-><init>()V
 
     const/4 v1, 0x1
 
@@ -3441,10 +3274,10 @@
 .method public onToggleFacing()V
     .locals 4
 
-    .line 179
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda26;
+    .line 165
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda23;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda26;-><init>()V
+    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda23;-><init>()V
 
     const/4 v1, 0x1
 
@@ -3460,10 +3293,33 @@
 .method public onTouchFocusVisibilityChanged(Z)V
     .locals 3
 
-    .line 218
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda42;
+    .line 198
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda40;
 
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda42;-><init>(Z)V
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda40;-><init>(Z)V
+
+    const/4 p1, 0x1
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    invoke-static {p0, v2, v0, p1, v1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->runForEach$default(Ljp/co/sony/mc/camera/view/CameraEventNotifier;ZLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public onTripodFramingCroppedPositionChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$TripodFramingCroppedPosition;)V
+    .locals 3
+
+    const-string v0, "position"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 250
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda31;
+
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda31;-><init>(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$TripodFramingCroppedPosition;)V
 
     const/4 p1, 0x1
 
@@ -3479,10 +3335,10 @@
 .method public onVideoSnapshotRequested(I)V
     .locals 3
 
-    .line 76
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda31;
+    .line 77
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda28;
 
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda31;-><init>(I)V
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda28;-><init>(I)V
 
     const/4 p1, 0x1
 
@@ -3498,7 +3354,7 @@
 .method public onWbCustomFinished(I[ILjava/lang/Float;Ljava/lang/Float;Ljava/lang/String;)V
     .locals 7
 
-    .line 55
+    .line 56
     new-instance v6, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda55;
 
     move-object v0, v6
@@ -3529,7 +3385,7 @@
 .method public onWbCustomStarted()V
     .locals 4
 
-    .line 51
+    .line 52
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda11;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda11;-><init>()V
@@ -3545,82 +3401,13 @@
     return-void
 .end method
 
-.method public onYoutubeAccountSettingChanged(Ljava/lang/String;)V
-    .locals 3
-
-    const-string/jumbo v0, "youtubeAccount"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 131
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda37;
-
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda37;-><init>(Ljava/lang/String;)V
-
-    const/4 p1, 0x1
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    invoke-static {p0, v2, v0, p1, v1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->runForEach$default(Ljp/co/sony/mc/camera/view/CameraEventNotifier;ZLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public onYoutubeLiveEventSettingChanged(Ljava/lang/String;)V
-    .locals 3
-
-    const-string/jumbo v0, "youtubeLiveEvent"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 134
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda21;
-
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda21;-><init>(Ljava/lang/String;)V
-
-    const/4 p1, 0x1
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    invoke-static {p0, v2, v0, p1, v1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->runForEach$default(Ljp/co/sony/mc/camera/view/CameraEventNotifier;ZLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public onYoutubeLiveIdSettingChanged(Ljava/lang/String;)V
-    .locals 3
-
-    const-string/jumbo v0, "youtubeLiveId"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 137
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda16;
-
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda16;-><init>(Ljava/lang/String;)V
-
-    const/4 p1, 0x1
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    invoke-static {p0, v2, v0, p1, v1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->runForEach$default(Ljp/co/sony/mc/camera/view/CameraEventNotifier;ZLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
-
-    return-void
-.end method
-
 .method public onZoomStateChanged(Z)V
     .locals 3
 
-    .line 32
-    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda39;
+    .line 33
+    new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda36;
 
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda39;-><init>(Z)V
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda36;-><init>(Z)V
 
     const/4 p1, 0x1
 

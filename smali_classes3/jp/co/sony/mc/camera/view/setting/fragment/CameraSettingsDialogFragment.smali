@@ -116,6 +116,16 @@
 
 .method public static newInstance(Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;Z)Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "item",
+            "isRotatable"
+        }
+    .end annotation
 
     .line 101
     new-instance v0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;
@@ -145,6 +155,14 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "savedInstanceState"
+        }
+    .end annotation
 
     .line 112
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
@@ -296,6 +314,14 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "outState"
+        }
+    .end annotation
 
     .line 157
     const-string v0, "CameraSettingItem"

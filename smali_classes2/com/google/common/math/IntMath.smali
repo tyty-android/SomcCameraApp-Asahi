@@ -3,6 +3,11 @@
 .source "IntMath.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/math/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # static fields
 .field static final FLOOR_SQRT_MAX_INT:I = 0xb504
 
@@ -27,7 +32,7 @@
 
     const/16 v0, 0x21
 
-    .line 201
+    .line 196
     new-array v0, v0, [B
 
     fill-array-data v0, :array_0
@@ -36,14 +41,14 @@
 
     const/16 v0, 0xa
 
-    .line 207
+    .line 202
     new-array v1, v0, [I
 
     fill-array-data v1, :array_1
 
     sput-object v1, Lcom/google/common/math/IntMath;->powersOf10:[I
 
-    .line 213
+    .line 208
     new-array v0, v0, [I
 
     fill-array-data v0, :array_2
@@ -52,7 +57,7 @@
 
     const/16 v0, 0xd
 
-    .line 627
+    .line 622
     new-array v0, v0, [I
 
     fill-array-data v0, :array_3
@@ -61,7 +66,7 @@
 
     const/16 v0, 0x11
 
-    .line 676
+    .line 671
     new-array v0, v0, [I
 
     fill-array-data v0, :array_4
@@ -179,7 +184,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 727
+    .line 721
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -187,13 +192,23 @@
 
 .method public static binomial(II)I
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "n",
+            "k"
+        }
+    .end annotation
 
-    .line 650
+    .line 645
     const-string v0, "n"
 
     invoke-static {v0, p0}, Lcom/google/common/math/MathPreconditions;->checkNonNegative(Ljava/lang/String;I)I
 
-    .line 651
+    .line 646
     const-string v0, "k"
 
     invoke-static {v0, p1}, Lcom/google/common/math/MathPreconditions;->checkNonNegative(Ljava/lang/String;I)I
@@ -211,7 +226,7 @@
     :cond_0
     move v2, v0
 
-    .line 652
+    .line 647
     :goto_0
     const-string v3, "k (%s) > n (%s)"
 
@@ -223,7 +238,7 @@
 
     sub-int p1, p0, p1
 
-    .line 656
+    .line 651
     :cond_1
     sget-object v2, Lcom/google/common/math/IntMath;->biggestBinomials:[I
 
@@ -257,7 +272,7 @@
 
     int-to-long v3, v0
 
-    .line 668
+    .line 663
     div-long/2addr v1, v3
 
     goto :goto_1
@@ -280,8 +295,16 @@
 
 .method public static ceilingPowerOfTwo(I)I
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "x"
+        }
+    .end annotation
 
-    .line 67
+    .line 64
     const-string v0, "x"
 
     invoke-static {v0, p0}, Lcom/google/common/math/MathPreconditions;->checkPositive(Ljava/lang/String;I)I
@@ -294,7 +317,7 @@
 
     sub-int/2addr p0, v0
 
-    .line 71
+    .line 68
     invoke-static {p0}, Ljava/lang/Integer;->numberOfLeadingZeros(I)I
 
     move-result p0
@@ -305,21 +328,15 @@
 
     return p0
 
-    .line 69
+    .line 66
     :cond_0
     new-instance v0, Ljava/lang/ArithmeticException;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
-    const/16 v2, 0x3a
-
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(I)V
-
     const-string v2, "ceilingPowerOfTwo("
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -342,6 +359,16 @@
 
 .method public static checkedAdd(II)I
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b"
+        }
+    .end annotation
 
     int-to-long v0, p0
 
@@ -364,7 +391,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 456
+    .line 451
     :goto_0
     const-string v1, "checkedAdd"
 
@@ -375,6 +402,16 @@
 
 .method public static checkedMultiply(II)I
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b"
+        }
+    .end annotation
 
     int-to-long v0, p0
 
@@ -397,7 +434,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 478
+    .line 473
     :goto_0
     const-string v1, "checkedMultiply"
 
@@ -408,15 +445,25 @@
 
 .method public static checkedPow(II)I
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "b",
+            "k"
+        }
+    .end annotation
 
-    .line 491
+    .line 488
     const-string v0, "exponent"
 
     invoke-static {v0, p1}, Lcom/google/common/math/MathPreconditions;->checkNonNegative(Ljava/lang/String;I)I
 
     const/4 v0, -0x2
 
-    .line 492
+    .line 489
     const-string v1, "checkedPow"
 
     const/4 v2, -0x1
@@ -449,7 +496,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 517
+    .line 514
     invoke-static {v0, p0}, Lcom/google/common/math/IntMath;->checkedMultiply(II)I
 
     move-result v0
@@ -485,14 +532,14 @@
     :goto_2
     and-int/2addr v2, v5
 
-    .line 521
+    .line 518
     invoke-static {v2, v1, p0, p1}, Lcom/google/common/math/MathPreconditions;->checkNoOverflow(ZLjava/lang/String;II)V
 
     mul-int/2addr p0, p0
 
     goto :goto_0
 
-    .line 514
+    .line 511
     :cond_4
     invoke-static {v0, p0}, Lcom/google/common/math/IntMath;->checkedMultiply(II)I
 
@@ -510,7 +557,7 @@
 
     move v3, v4
 
-    .line 500
+    .line 497
     :cond_7
     invoke-static {v3, v1, p0, p1}, Lcom/google/common/math/MathPreconditions;->checkNoOverflow(ZLjava/lang/String;II)V
 
@@ -546,7 +593,7 @@
 
     move v3, v4
 
-    .line 503
+    .line 500
     :cond_e
     invoke-static {v3, v1, p0, p1}, Lcom/google/common/math/MathPreconditions;->checkNoOverflow(ZLjava/lang/String;II)V
 
@@ -567,6 +614,16 @@
 
 .method public static checkedSubtract(II)I
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b"
+        }
+    .end annotation
 
     int-to-long v0, p0
 
@@ -589,7 +646,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 467
+    .line 462
     :goto_0
     const-string v1, "checkedSubtract"
 
@@ -600,13 +657,25 @@
 
 .method public static divide(IILjava/math/RoundingMode;)I
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "p",
+            "q",
+            "mode"
+        }
+    .end annotation
 
-    .line 317
+    .line 312
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     if-eqz p1, :cond_7
 
-    .line 321
+    .line 316
     div-int v0, p0, p1
 
     mul-int v1, p1, v0
@@ -626,7 +695,7 @@
 
     or-int/2addr p0, v2
 
-    .line 337
+    .line 332
     sget-object v3, Lcom/google/common/math/IntMath$1;->$SwitchMap$java$math$RoundingMode:[I
 
     invoke-virtual {p2}, Ljava/math/RoundingMode;->ordinal()I
@@ -639,20 +708,20 @@
 
     packed-switch v3, :pswitch_data_0
 
-    .line 367
+    .line 362
     new-instance p0, Ljava/lang/AssertionError;
 
     invoke-direct {p0}, Ljava/lang/AssertionError;-><init>()V
 
     throw p0
 
-    .line 356
+    .line 351
     :pswitch_0
     invoke-static {v1}, Ljava/lang/Math;->abs(I)I
 
     move-result v1
 
-    .line 357
+    .line 352
     invoke-static {p1}, Ljava/lang/Math;->abs(I)I
 
     move-result p1
@@ -663,7 +732,7 @@
 
     if-nez v1, :cond_3
 
-    .line 361
+    .line 356
     sget-object p1, Ljava/math/RoundingMode;->HALF_UP:Ljava/math/RoundingMode;
 
     if-eq p2, p1, :cond_4
@@ -724,7 +793,7 @@
     :cond_5
     move v2, v4
 
-    .line 339
+    .line 334
     :goto_3
     invoke-static {v2}, Lcom/google/common/math/MathPreconditions;->checkRoundingUnnecessary(Z)V
 
@@ -733,7 +802,7 @@
     :pswitch_5
     return v0
 
-    .line 319
+    .line 314
     :cond_7
     new-instance p0, Ljava/lang/ArithmeticException;
 
@@ -758,13 +827,21 @@
 
 .method public static factorial(I)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "n"
+        }
+    .end annotation
 
-    .line 623
+    .line 618
     const-string v0, "n"
 
     invoke-static {v0, p0}, Lcom/google/common/math/MathPreconditions;->checkNonNegative(Ljava/lang/String;I)I
 
-    .line 624
+    .line 619
     sget-object v0, Lcom/google/common/math/IntMath;->factorials:[I
 
     array-length v1, v0
@@ -784,13 +861,21 @@
 
 .method public static floorPowerOfTwo(I)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "x"
+        }
+    .end annotation
 
-    .line 83
+    .line 79
     const-string v0, "x"
 
     invoke-static {v0, p0}, Lcom/google/common/math/MathPreconditions;->checkPositive(Ljava/lang/String;I)I
 
-    .line 84
+    .line 80
     invoke-static {p0}, Ljava/lang/Integer;->highestOneBit(I)I
 
     move-result p0
@@ -800,13 +885,23 @@
 
 .method public static gcd(II)I
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b"
+        }
+    .end annotation
 
-    .line 410
+    .line 405
     const-string v0, "a"
 
     invoke-static {v0, p0}, Lcom/google/common/math/MathPreconditions;->checkNonNegative(Ljava/lang/String;I)I
 
-    .line 411
+    .line 406
     const-string v0, "b"
 
     invoke-static {v0, p1}, Lcom/google/common/math/MathPreconditions;->checkNonNegative(Ljava/lang/String;I)I
@@ -820,7 +915,7 @@
 
     return p0
 
-    .line 423
+    .line 418
     :cond_1
     invoke-static {p0}, Ljava/lang/Integer;->numberOfTrailingZeros(I)I
 
@@ -828,7 +923,7 @@
 
     shr-int/2addr p0, v0
 
-    .line 425
+    .line 420
     invoke-static {p1}, Ljava/lang/Integer;->numberOfTrailingZeros(I)I
 
     move-result v1
@@ -850,7 +945,7 @@
 
     add-int/2addr p1, v2
 
-    .line 444
+    .line 439
     invoke-static {p0}, Ljava/lang/Integer;->numberOfTrailingZeros(I)I
 
     move-result v2
@@ -859,7 +954,7 @@
 
     goto :goto_0
 
-    .line 446
+    .line 441
     :cond_2
     invoke-static {v0, v1}, Ljava/lang/Math;->min(II)I
 
@@ -872,6 +967,14 @@
 
 .method public static isPowerOfTwo(I)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "x"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -903,10 +1006,18 @@
 
 .method public static isPrime(I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "n"
+        }
+    .end annotation
 
     int-to-long v0, p0
 
-    .line 724
+    .line 718
     invoke-static {v0, v1}, Lcom/google/common/math/LongMath;->isPrime(J)Z
 
     move-result p0
@@ -916,6 +1027,16 @@
 
 .method static lessThanBranchFree(II)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "x",
+            "y"
+        }
+    .end annotation
 
     sub-int/2addr p0, p1
 
@@ -930,23 +1051,33 @@
 
 .method public static log10(ILjava/math/RoundingMode;)I
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "x",
+            "mode"
+        }
+    .end annotation
 
-    .line 160
+    .line 156
     const-string v0, "x"
 
     invoke-static {v0, p0}, Lcom/google/common/math/MathPreconditions;->checkPositive(Ljava/lang/String;I)I
 
-    .line 161
+    .line 157
     invoke-static {p0}, Lcom/google/common/math/IntMath;->log10Floor(I)I
 
     move-result v0
 
-    .line 162
+    .line 158
     sget-object v1, Lcom/google/common/math/IntMath;->powersOf10:[I
 
     aget v1, v1, v0
 
-    .line 163
+    .line 159
     sget-object v2, Lcom/google/common/math/IntMath$1;->$SwitchMap$java$math$RoundingMode:[I
 
     invoke-virtual {p1}, Ljava/math/RoundingMode;->ordinal()I
@@ -957,14 +1088,14 @@
 
     packed-switch p1, :pswitch_data_0
 
-    .line 179
+    .line 175
     new-instance p0, Ljava/lang/AssertionError;
 
     invoke-direct {p0}, Ljava/lang/AssertionError;-><init>()V
 
     throw p0
 
-    .line 177
+    .line 173
     :pswitch_0
     sget-object p1, Lcom/google/common/math/IntMath;->halfPowersOf10:[I
 
@@ -979,7 +1110,7 @@
 
     return v0
 
-    .line 172
+    .line 168
     :pswitch_1
     invoke-static {v1, p0}, Lcom/google/common/math/IntMath;->lessThanBranchFree(II)I
 
@@ -997,7 +1128,7 @@
     :cond_0
     const/4 p0, 0x0
 
-    .line 165
+    .line 161
     :goto_1
     invoke-static {p0}, Lcom/google/common/math/MathPreconditions;->checkRoundingUnnecessary(Z)V
 
@@ -1019,8 +1150,16 @@
 
 .method private static log10Floor(I)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "x"
+        }
+    .end annotation
 
-    .line 191
+    .line 186
     sget-object v0, Lcom/google/common/math/IntMath;->maxLog10ForLeadingZeros:[B
 
     invoke-static {p0}, Ljava/lang/Integer;->numberOfLeadingZeros(I)I
@@ -1029,7 +1168,7 @@
 
     aget-byte v0, v0, v1
 
-    .line 196
+    .line 191
     sget-object v1, Lcom/google/common/math/IntMath;->powersOf10:[I
 
     aget v1, v1, v0
@@ -1045,13 +1184,23 @@
 
 .method public static log2(ILjava/math/RoundingMode;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "x",
+            "mode"
+        }
+    .end annotation
 
-    .line 119
+    .line 117
     const-string v0, "x"
 
     invoke-static {v0, p0}, Lcom/google/common/math/MathPreconditions;->checkPositive(Ljava/lang/String;I)I
 
-    .line 120
+    .line 118
     sget-object v0, Lcom/google/common/math/IntMath$1;->$SwitchMap$java$math$RoundingMode:[I
 
     invoke-virtual {p1}, Ljava/math/RoundingMode;->ordinal()I
@@ -1062,14 +1211,14 @@
 
     packed-switch p1, :pswitch_data_0
 
-    .line 143
+    .line 140
     new-instance p0, Ljava/lang/AssertionError;
 
     invoke-direct {p0}, Ljava/lang/AssertionError;-><init>()V
 
     throw p0
 
-    .line 136
+    .line 134
     :pswitch_0
     invoke-static {p0}, Ljava/lang/Integer;->numberOfLeadingZeros(I)I
 
@@ -1081,7 +1230,7 @@
 
     rsub-int/lit8 p1, p1, 0x1f
 
-    .line 140
+    .line 138
     invoke-static {v0, p0}, Lcom/google/common/math/IntMath;->lessThanBranchFree(II)I
 
     move-result p0
@@ -1093,7 +1242,7 @@
     :pswitch_1
     add-int/lit8 p0, p0, -0x1
 
-    .line 130
+    .line 128
     invoke-static {p0}, Ljava/lang/Integer;->numberOfLeadingZeros(I)I
 
     move-result p0
@@ -1102,7 +1251,7 @@
 
     return p0
 
-    .line 122
+    .line 120
     :pswitch_2
     invoke-static {p0}, Lcom/google/common/math/IntMath;->isPowerOfTwo(I)Z
 
@@ -1110,7 +1259,7 @@
 
     invoke-static {p1}, Lcom/google/common/math/MathPreconditions;->checkRoundingUnnecessary(Z)V
 
-    .line 126
+    .line 124
     :pswitch_3
     invoke-static {p0}, Ljava/lang/Integer;->numberOfLeadingZeros(I)I
 
@@ -1137,6 +1286,16 @@
 
 .method public static mean(II)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "x",
+            "y"
+        }
+    .end annotation
 
     and-int v0, p0, p1
 
@@ -1151,10 +1310,20 @@
 
 .method public static mod(II)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "x",
+            "m"
+        }
+    .end annotation
 
     if-lez p1, :cond_1
 
-    .line 394
+    .line 389
     rem-int/2addr p0, p1
 
     if-ltz p0, :cond_0
@@ -1167,21 +1336,15 @@
     :goto_0
     return p0
 
-    .line 392
+    .line 387
     :cond_1
     new-instance p0, Ljava/lang/ArithmeticException;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
-    const/16 v1, 0x1f
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
-
     const-string v1, "Modulus "
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1204,8 +1367,18 @@
 
 .method public static pow(II)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "b",
+            "k"
+        }
+    .end annotation
 
-    .line 228
+    .line 223
     const-string v0, "exponent"
 
     invoke-static {v0, p1}, Lcom/google/common/math/MathPreconditions;->checkNonNegative(Ljava/lang/String;I)I
@@ -1324,6 +1497,16 @@
 
 .method public static saturatedAdd(II)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b"
+        }
+    .end annotation
 
     int-to-long v0, p0
 
@@ -1331,7 +1514,7 @@
 
     add-long/2addr v0, p0
 
-    .line 536
+    .line 532
     invoke-static {v0, v1}, Lcom/google/common/primitives/Ints;->saturatedCast(J)I
 
     move-result p0
@@ -1341,6 +1524,16 @@
 
 .method public static saturatedMultiply(II)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b"
+        }
+    .end annotation
 
     int-to-long v0, p0
 
@@ -1348,7 +1541,7 @@
 
     mul-long/2addr v0, p0
 
-    .line 558
+    .line 552
     invoke-static {v0, v1}, Lcom/google/common/primitives/Ints;->saturatedCast(J)I
 
     move-result p0
@@ -1358,8 +1551,18 @@
 
 .method public static saturatedPow(II)I
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "b",
+            "k"
+        }
+    .end annotation
 
-    .line 569
+    .line 564
     const-string v0, "exponent"
 
     invoke-static {v0, p1}, Lcom/google/common/math/MathPreconditions;->checkNonNegative(Ljava/lang/String;I)I
@@ -1406,7 +1609,7 @@
 
     if-eqz v4, :cond_1
 
-    .line 601
+    .line 596
     invoke-static {v1, p0}, Lcom/google/common/math/IntMath;->saturatedMultiply(II)I
 
     move-result v1
@@ -1451,7 +1654,7 @@
 
     goto :goto_0
 
-    .line 598
+    .line 593
     :cond_5
     invoke-static {v1, p0}, Lcom/google/common/math/IntMath;->saturatedMultiply(II)I
 
@@ -1527,6 +1730,16 @@
 
 .method public static saturatedSubtract(II)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b"
+        }
+    .end annotation
 
     int-to-long v0, p0
 
@@ -1534,7 +1747,7 @@
 
     sub-long/2addr v0, p0
 
-    .line 547
+    .line 542
     invoke-static {v0, v1}, Lcom/google/common/primitives/Ints;->saturatedCast(J)I
 
     move-result p0
@@ -1544,18 +1757,28 @@
 
 .method public static sqrt(ILjava/math/RoundingMode;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "x",
+            "mode"
+        }
+    .end annotation
 
-    .line 270
+    .line 265
     const-string v0, "x"
 
     invoke-static {v0, p0}, Lcom/google/common/math/MathPreconditions;->checkNonNegative(Ljava/lang/String;I)I
 
-    .line 271
+    .line 266
     invoke-static {p0}, Lcom/google/common/math/IntMath;->sqrtFloor(I)I
 
     move-result v0
 
-    .line 272
+    .line 267
     sget-object v1, Lcom/google/common/math/IntMath$1;->$SwitchMap$java$math$RoundingMode:[I
 
     invoke-virtual {p1}, Ljava/math/RoundingMode;->ordinal()I
@@ -1566,7 +1789,7 @@
 
     packed-switch p1, :pswitch_data_0
 
-    .line 298
+    .line 293
     new-instance p0, Ljava/lang/AssertionError;
 
     invoke-direct {p0}, Ljava/lang/AssertionError;-><init>()V
@@ -1578,7 +1801,7 @@
 
     add-int/2addr p1, v0
 
-    .line 296
+    .line 291
     invoke-static {p1, p0}, Lcom/google/common/math/IntMath;->lessThanBranchFree(II)I
 
     move-result p0
@@ -1591,7 +1814,7 @@
     :pswitch_1
     mul-int p1, v0, v0
 
-    .line 280
+    .line 275
     invoke-static {p1, p0}, Lcom/google/common/math/IntMath;->lessThanBranchFree(II)I
 
     move-result p0
@@ -1610,7 +1833,7 @@
     :cond_0
     const/4 p0, 0x0
 
-    .line 274
+    .line 269
     :goto_1
     invoke-static {p0}, Lcom/google/common/math/MathPreconditions;->checkRoundingUnnecessary(Z)V
 
@@ -1634,10 +1857,18 @@
 
 .method private static sqrtFloor(I)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "x"
+        }
+    .end annotation
 
     int-to-double v0, p0
 
-    .line 305
+    .line 299
     invoke-static {v0, v1}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide v0

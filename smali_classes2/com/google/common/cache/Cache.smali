@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/cache/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation runtime Lcom/google/errorprone/annotations/DoNotMock;
     value = "Use CacheBuilder.newBuilder().build()"
 .end annotation
@@ -22,9 +25,6 @@
 
 # virtual methods
 .method public abstract asMap()Ljava/util/concurrent/ConcurrentMap;
-    .annotation runtime Lcom/google/errorprone/annotations/CheckReturnValue;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -38,6 +38,17 @@
 .end method
 
 .method public abstract get(Ljava/lang/Object;Ljava/util/concurrent/Callable;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "loader"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;",
@@ -54,11 +65,22 @@
 .end method
 
 .method public abstract getAllPresent(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableMap;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "keys"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/Iterable<",
-            "*>;)",
+            "+",
+            "Ljava/lang/Object;",
+            ">;)",
             "Lcom/google/common/collect/ImmutableMap<",
             "TK;TV;>;"
         }
@@ -66,6 +88,15 @@
 .end method
 
 .method public abstract getIfPresent(Ljava/lang/Object;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -74,27 +105,57 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end method
 
 .method public abstract invalidate(Ljava/lang/Object;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 .end method
 
 .method public abstract invalidateAll()V
 .end method
 
 .method public abstract invalidateAll(Ljava/lang/Iterable;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "keys"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/Iterable<",
-            "*>;)V"
+            "+",
+            "Ljava/lang/Object;",
+            ">;)V"
         }
     .end annotation
 .end method
 
 .method public abstract put(Ljava/lang/Object;Ljava/lang/Object;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV;)V"
@@ -103,6 +164,15 @@
 .end method
 
 .method public abstract putAll(Ljava/util/Map;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "m"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -113,11 +183,7 @@
 .end method
 
 .method public abstract size()J
-    .annotation runtime Lcom/google/errorprone/annotations/CheckReturnValue;
-    .end annotation
 .end method
 
 .method public abstract stats()Lcom/google/common/cache/CacheStats;
-    .annotation runtime Lcom/google/errorprone/annotations/CheckReturnValue;
-    .end annotation
 .end method

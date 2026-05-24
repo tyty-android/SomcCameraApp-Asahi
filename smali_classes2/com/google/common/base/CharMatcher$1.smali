@@ -15,15 +15,31 @@
 
 
 # instance fields
+.field final synthetic this$0:Lcom/google/common/base/CharMatcher;
+
 .field final synthetic val$description:Ljava/lang/String;
 
 
 # direct methods
 .method constructor <init>(Lcom/google/common/base/CharMatcher;Lcom/google/common/base/CharMatcher;Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "original",
+            "val$description"
+        }
+    .end annotation
 
-    .line 431
+    .line 434
     iput-object p3, p0, Lcom/google/common/base/CharMatcher$1;->val$description:Ljava/lang/String;
+
+    iput-object p1, p0, Lcom/google/common/base/CharMatcher$1;->this$0:Lcom/google/common/base/CharMatcher;
 
     invoke-direct {p0, p2}, Lcom/google/common/base/CharMatcher$NegatedFastMatcher;-><init>(Lcom/google/common/base/CharMatcher;)V
 
@@ -35,7 +51,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 434
+    .line 437
     iget-object p0, p0, Lcom/google/common/base/CharMatcher$1;->val$description:Ljava/lang/String;
 
     return-object p0

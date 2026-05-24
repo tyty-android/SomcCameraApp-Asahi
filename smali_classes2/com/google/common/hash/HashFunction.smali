@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/hash/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation runtime Lcom/google/errorprone/annotations/Immutable;
 .end annotation
 
@@ -13,21 +16,80 @@
 .end method
 
 .method public abstract hashBytes(Ljava/nio/ByteBuffer;)Lcom/google/common/hash/HashCode;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "input"
+        }
+    .end annotation
 .end method
 
 .method public abstract hashBytes([B)Lcom/google/common/hash/HashCode;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "input"
+        }
+    .end annotation
 .end method
 
 .method public abstract hashBytes([BII)Lcom/google/common/hash/HashCode;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "input",
+            "off",
+            "len"
+        }
+    .end annotation
 .end method
 
 .method public abstract hashInt(I)Lcom/google/common/hash/HashCode;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "input"
+        }
+    .end annotation
 .end method
 
 .method public abstract hashLong(J)Lcom/google/common/hash/HashCode;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "input"
+        }
+    .end annotation
 .end method
 
 .method public abstract hashObject(Ljava/lang/Object;Lcom/google/common/hash/Funnel;)Lcom/google/common/hash/HashCode;
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/hash/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "instance",
+            "funnel"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -41,13 +103,39 @@
 .end method
 
 .method public abstract hashString(Ljava/lang/CharSequence;Ljava/nio/charset/Charset;)Lcom/google/common/hash/HashCode;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "input",
+            "charset"
+        }
+    .end annotation
 .end method
 
 .method public abstract hashUnencodedChars(Ljava/lang/CharSequence;)Lcom/google/common/hash/HashCode;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "input"
+        }
+    .end annotation
 .end method
 
 .method public abstract newHasher()Lcom/google/common/hash/Hasher;
 .end method
 
 .method public abstract newHasher(I)Lcom/google/common/hash/Hasher;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "expectedInputSize"
+        }
+    .end annotation
 .end method

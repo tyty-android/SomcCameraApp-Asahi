@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract onClick(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "parameter"
+        }
+    .end annotation
 .end method

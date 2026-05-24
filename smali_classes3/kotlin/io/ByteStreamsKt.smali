@@ -6,46 +6,46 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000Z\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\t\n\u0002\u0008\u0002\n\u0002\u0010\u0012\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u001a\u0017\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\u0008\u0008\u0002\u0010\u0003\u001a\u00020\u0004H\u0087\u0008\u001a\u0017\u0010\u0000\u001a\u00020\u0005*\u00020\u00062\u0008\u0008\u0002\u0010\u0003\u001a\u00020\u0004H\u0087\u0008\u001a\u0017\u0010\u0007\u001a\u00020\u0008*\u00020\u00022\u0008\u0008\u0002\u0010\t\u001a\u00020\nH\u0087\u0008\u001a\u0017\u0010\u000b\u001a\u00020\u000c*\u00020\u00062\u0008\u0008\u0002\u0010\t\u001a\u00020\nH\u0087\u0008\u001a\u0017\u0010\r\u001a\u00020\u000e*\u00020\u000f2\u0008\u0008\u0002\u0010\t\u001a\u00020\nH\u0087\u0008\u001a\u001c\u0010\u0010\u001a\u00020\u0011*\u00020\u00022\u0006\u0010\u0012\u001a\u00020\u00062\u0008\u0008\u0002\u0010\u0003\u001a\u00020\u0004\u001a\r\u0010\u0013\u001a\u00020\u000e*\u00020\u0014H\u0087\u0008\u001a\u001d\u0010\u0013\u001a\u00020\u000e*\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u00042\u0006\u0010\u0016\u001a\u00020\u0004H\u0087\u0008\u001a\r\u0010\u0017\u001a\u00020\u0018*\u00020\u0001H\u0086\u0002\u001a\u000c\u0010\u0019\u001a\u00020\u0014*\u00020\u0002H\u0007\u001a\u0016\u0010\u0019\u001a\u00020\u0014*\u00020\u00022\u0008\u0008\u0002\u0010\u001a\u001a\u00020\u0004H\u0007\u001a\u0017\u0010\u001b\u001a\u00020\u001c*\u00020\u00022\u0008\u0008\u0002\u0010\t\u001a\u00020\nH\u0087\u0008\u001a\u0017\u0010\u001d\u001a\u00020\u001e*\u00020\u00062\u0008\u0008\u0002\u0010\t\u001a\u00020\nH\u0087\u0008\u00a8\u0006\u001f"
+        "\u0000Z\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0012\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\u0008\u0004\u001a\r\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u0086\u0002\u001a\u0017\u0010\u0003\u001a\u00020\u0004*\u00020\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0007H\u0087\u0008\u001a\r\u0010\u0008\u001a\u00020\u0004*\u00020\tH\u0087\u0008\u001a\u001d\u0010\u0008\u001a\u00020\u0004*\u00020\t2\u0006\u0010\n\u001a\u00020\u000b2\u0006\u0010\u000c\u001a\u00020\u000bH\u0087\u0008\u001a\u0017\u0010\r\u001a\u00020\u0002*\u00020\u000e2\u0008\u0008\u0002\u0010\u000f\u001a\u00020\u000bH\u0087\u0008\u001a\u0017\u0010\u0010\u001a\u00020\u0011*\u00020\u000e2\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0007H\u0087\u0008\u001a\u0017\u0010\u0012\u001a\u00020\u0013*\u00020\u000e2\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0007H\u0087\u0008\u001a\u0017\u0010\r\u001a\u00020\u0014*\u00020\u00152\u0008\u0008\u0002\u0010\u000f\u001a\u00020\u000bH\u0087\u0008\u001a\u0017\u0010\u0016\u001a\u00020\u0017*\u00020\u00152\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0007H\u0087\u0008\u001a\u0017\u0010\u0018\u001a\u00020\u0019*\u00020\u00152\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0007H\u0087\u0008\u001a\u001c\u0010\u001a\u001a\u00020\u001b*\u00020\u000e2\u0006\u0010\u001c\u001a\u00020\u00152\u0008\u0008\u0002\u0010\u000f\u001a\u00020\u000b\u001a\u0016\u0010\u001d\u001a\u00020\t*\u00020\u000e2\u0008\u0008\u0002\u0010\u001e\u001a\u00020\u000bH\u0007\u001a\u000c\u0010\u001d\u001a\u00020\t*\u00020\u000eH\u0007\u00a8\u0006\u001f"
     }
     d2 = {
-        "buffered",
+        "iterator",
+        "Lkotlin/collections/ByteIterator;",
         "Ljava/io/BufferedInputStream;",
-        "Ljava/io/InputStream;",
-        "bufferSize",
-        "",
-        "Ljava/io/BufferedOutputStream;",
-        "Ljava/io/OutputStream;",
-        "bufferedReader",
-        "Ljava/io/BufferedReader;",
-        "charset",
-        "Ljava/nio/charset/Charset;",
-        "bufferedWriter",
-        "Ljava/io/BufferedWriter;",
         "byteInputStream",
         "Ljava/io/ByteArrayInputStream;",
         "",
-        "copyTo",
-        "",
-        "out",
+        "charset",
+        "Ljava/nio/charset/Charset;",
         "inputStream",
         "",
         "offset",
+        "",
         "length",
-        "iterator",
-        "Lkotlin/collections/ByteIterator;",
-        "readBytes",
-        "estimatedSize",
+        "buffered",
+        "Ljava/io/InputStream;",
+        "bufferSize",
         "reader",
         "Ljava/io/InputStreamReader;",
+        "bufferedReader",
+        "Ljava/io/BufferedReader;",
+        "Ljava/io/BufferedOutputStream;",
+        "Ljava/io/OutputStream;",
         "writer",
         "Ljava/io/OutputStreamWriter;",
+        "bufferedWriter",
+        "Ljava/io/BufferedWriter;",
+        "copyTo",
+        "",
+        "out",
+        "readBytes",
+        "estimatedSize",
         "kotlin-stdlib"
     }
     k = 0x2
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x30
@@ -116,7 +116,7 @@
 
     const/16 p1, 0x2000
 
-    .line 71
+    .line 70
     :cond_0
     const-string p2, "<this>"
 
@@ -151,7 +151,7 @@
 
     const/16 p1, 0x2000
 
-    .line 87
+    .line 86
     :cond_0
     const-string p2, "<this>"
 
@@ -226,6 +226,7 @@
     .line 80
     sget-object p1, Lkotlin/text/Charsets;->UTF_8:Ljava/nio/charset/Charset;
 
+    .line 79
     :cond_0
     const-string p2, "<this>"
 
@@ -237,6 +238,7 @@
 
     new-instance p2, Ljava/io/InputStreamReader;
 
+    .line 80
     invoke-direct {p2, p0, p1}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;Ljava/nio/charset/Charset;)V
 
     check-cast p2, Ljava/io/Reader;
@@ -311,6 +313,7 @@
     .line 96
     sget-object p1, Lkotlin/text/Charsets;->UTF_8:Ljava/nio/charset/Charset;
 
+    .line 95
     :cond_0
     const-string p2, "<this>"
 
@@ -322,6 +325,7 @@
 
     new-instance p2, Ljava/io/OutputStreamWriter;
 
+    .line 96
     invoke-direct {p2, p0, p1}, Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;Ljava/nio/charset/Charset;)V
 
     check-cast p2, Ljava/io/Writer;
@@ -384,6 +388,7 @@
     .line 50
     sget-object p1, Lkotlin/text/Charsets;->UTF_8:Ljava/nio/charset/Charset;
 
+    .line 49
     :cond_0
     const-string p2, "<this>"
 
@@ -393,6 +398,7 @@
 
     invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
+    .line 50
     new-instance p2, Ljava/io/ByteArrayInputStream;
 
     invoke-virtual {p0, p1}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
@@ -630,7 +636,7 @@
 
     const/16 p1, 0x2000
 
-    .line 122
+    .line 120
     :cond_0
     invoke-static {p0, p1}, Lkotlin/io/ByteStreamsKt;->readBytes(Ljava/io/InputStream;I)[B
 
@@ -668,6 +674,7 @@
     .line 76
     sget-object p1, Lkotlin/text/Charsets;->UTF_8:Ljava/nio/charset/Charset;
 
+    .line 75
     :cond_0
     const-string p2, "<this>"
 
@@ -677,6 +684,7 @@
 
     invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
+    .line 76
     new-instance p2, Ljava/io/InputStreamReader;
 
     invoke-direct {p2, p0, p1}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;Ljava/nio/charset/Charset;)V
@@ -713,6 +721,7 @@
     .line 92
     sget-object p1, Lkotlin/text/Charsets;->UTF_8:Ljava/nio/charset/Charset;
 
+    .line 91
     :cond_0
     const-string p2, "<this>"
 
@@ -722,6 +731,7 @@
 
     invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
+    .line 92
     new-instance p2, Ljava/io/OutputStreamWriter;
 
     invoke-direct {p2, p0, p1}, Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;Ljava/nio/charset/Charset;)V

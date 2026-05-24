@@ -58,10 +58,10 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder$setupSsSettingsMenu$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder;
 
-    .line 74
+    .line 77
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 75
+    .line 78
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder;->access$getBinding$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder;)Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;
 
     move-result-object p1
@@ -86,14 +86,14 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 88
+    .line 91
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getSelectedItemPosition()I
 
     move-result v0
 
     if-ne v0, p2, :cond_0
 
-    .line 89
+    .line 92
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder$setupSsSettingsMenu$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder;->access$getProModeBottomPaneUiState$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder;)Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;
@@ -104,7 +104,7 @@
 
     goto :goto_0
 
-    .line 91
+    .line 94
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder$setupSsSettingsMenu$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder;
 
@@ -135,7 +135,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 96
+    .line 99
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder$setupSsSettingsMenu$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder;->access$getCameraStatusModel$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder;)Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
@@ -154,17 +154,17 @@
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->onDialPickerScroll(Lkotlin/Pair;)V
 
-    .line 97
+    .line 100
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getSelectedItemPosition()I
 
     move-result v0
 
-    .line 98
+    .line 101
     iget v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder$setupSsSettingsMenu$1;->before:I
 
     if-eq v1, v0, :cond_0
 
-    .line 99
+    .line 102
     new-instance v1, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
     const/16 v10, 0x3f
@@ -187,14 +187,14 @@
 
     invoke-direct/range {v3 .. v11}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;-><init>(Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddLauncher;Ljp/co/sony/mc/camera/idd/value/IddMode;Ljp/co/sony/mc/camera/idd/value/IddSettingKey;Ljp/co/sony/mc/camera/idd/value/IddSettingValue;Ljp/co/sony/mc/camera/idd/value/IddUserControl;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 100
+    .line 103
     sget-object v3, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->DIAL_1:Ljp/co/sony/mc/camera/idd/value/IddUserControl;
 
     invoke-virtual {v1, v3}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->changeLocation(Ljp/co/sony/mc/camera/idd/value/IddUserControl;)Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
     move-result-object v1
 
-    .line 101
+    .line 104
     sget-object v3, Ljp/co/sony/mc/camera/setting/CameraSettings;->SHUTTER_SPEED:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     const-string v4, "SHUTTER_SPEED"
@@ -207,14 +207,14 @@
 
     move-result-object v1
 
-    .line 102
+    .line 105
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->send()V
 
-    .line 104
+    .line 107
     :cond_0
     iput v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder$setupSsSettingsMenu$1;->before:I
 
-    .line 105
+    .line 108
     invoke-virtual {p1, v0, v2}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->setSelectedItem(IZ)V
 
     return-void
@@ -227,12 +227,12 @@
 
     invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 77
+    .line 80
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder$setupSsSettingsMenu$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder;
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder;->access$setArrowButtonVisibility(Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder;)V
 
-    .line 78
+    .line 81
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder$setupSsSettingsMenu$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder;
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder;->access$getCameraStatusModel$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder;)Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
@@ -251,7 +251,7 @@
 
     invoke-virtual {p2, v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->onDialPickerScroll(Lkotlin/Pair;)V
 
-    .line 79
+    .line 82
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder$setupSsSettingsMenu$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder;
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder;->access$getCameraStatusModel$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder;)Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
@@ -272,14 +272,14 @@
 
     if-nez p2, :cond_0
 
-    .line 80
+    .line 83
     check-cast p1, Landroid/view/View;
 
     const/4 p2, 0x4
 
     invoke-static {p1, p2}, Ljp/co/sony/mc/camera/view/HapticFeedback;->perform(Landroid/view/View;I)V
 
-    .line 82
+    .line 85
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder$setupSsSettingsMenu$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder;
 
@@ -301,7 +301,7 @@
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder$setupSsSettingsMenu$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder;
 
-    .line 83
+    .line 86
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder;->access$getProModeBottomPaneUiState$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeSsDialViewBinder;)Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;
 
     move-result-object p0

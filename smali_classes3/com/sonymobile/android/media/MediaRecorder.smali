@@ -180,6 +180,14 @@
 # virtual methods
 .method public adjustAudioStartVolume(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "durationMs"
+        }
+    .end annotation
 
     .line 1047
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
@@ -191,6 +199,14 @@
 
 .method public adjustAudioTimestamp(J)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "offset"
+        }
+    .end annotation
 
     .line 1043
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
@@ -202,6 +218,14 @@
 
 .method public createVideoTrack(Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "videoTrackId"
+        }
+    .end annotation
 
     .line 382
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
@@ -214,18 +238,18 @@
 .method protected finalize()V
     .locals 1
 
-    .line 1142
+    .line 1130
     iget-object v0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     if-eqz v0, :cond_0
 
-    .line 1144
+    .line 1132
     :try_start_0
     invoke-virtual {v0}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->reset()V
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1149
+    .line 1137
     :catch_0
     :try_start_1
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
@@ -353,6 +377,14 @@
 
 .method public setAudioChannels(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "numChannels"
+        }
+    .end annotation
 
     .line 680
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
@@ -364,6 +396,15 @@
 
 .method public setAudioEncoder(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "audio_encoder"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -380,6 +421,14 @@
 
 .method public setAudioEncodingBitRate(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bitRate"
+        }
+    .end annotation
 
     .line 693
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
@@ -391,6 +440,14 @@
 
 .method public setAudioSamplingRate(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "samplingRate"
+        }
+    .end annotation
 
     .line 668
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
@@ -402,6 +459,15 @@
 
 .method public setAudioSource(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "audio_source"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -418,11 +484,19 @@
 
 .method public setAuxiliaryOutputFile(Ljava/io/FileDescriptor;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fd"
+        }
+    .end annotation
 
     .line 717
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
-    const-string p1, "setAuxiliaryOutputFile(FileDescriptor) unsupported"
+    const-string/jumbo p1, "setAuxiliaryOutputFile(FileDescriptor) unsupported"
 
     invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
@@ -431,11 +505,19 @@
 
 .method public setAuxiliaryOutputFile(Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "path"
+        }
+    .end annotation
 
     .line 728
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
-    const-string p1, "setAuxiliaryOutputFile unsupported"
+    const-string/jumbo p1, "setAuxiliaryOutputFile unsupported"
 
     invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
@@ -444,6 +526,15 @@
 
 .method public setCamera(Landroid/hardware/Camera;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/UnsupportedOperationException;
@@ -462,6 +553,14 @@
 
 .method public setCaptureRate(D)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fps"
+        }
+    .end annotation
 
     .line 469
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
@@ -471,19 +570,16 @@
     return-void
 .end method
 
-.method public setHalfFps()V
-    .locals 0
-
-    .line 1055
-    iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
-
-    invoke-virtual {p0}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setHalfFps()V
-
-    return-void
-.end method
-
 .method public setIframeInterval(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "iframeInterval"
+        }
+    .end annotation
 
     .line 580
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
@@ -495,6 +591,16 @@
 
 .method public setInputSurface(Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;Landroid/view/Surface;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "videoTrackId",
+            "surface"
+        }
+    .end annotation
 
     .line 373
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
@@ -506,6 +612,16 @@
 
 .method public setLocation(FF)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "latitude",
+            "longitude"
+        }
+    .end annotation
 
     .line 508
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
@@ -517,6 +633,15 @@
 
 .method public setMaxDuration(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "max_duration_ms"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -533,6 +658,15 @@
 
 .method public setMaxFileSize(J)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "max_filesize_bytes"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -549,6 +683,14 @@
 
 .method public setOnErrorListener(Landroid/media/MediaRecorder$OnErrorListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "l"
+        }
+    .end annotation
 
     .line 902
     iput-object p1, p0, Lcom/sonymobile/android/media/MediaRecorder;->mOnErrorListener:Landroid/media/MediaRecorder$OnErrorListener;
@@ -558,6 +700,14 @@
 
 .method public setOnInfoListener(Landroid/media/MediaRecorder$OnInfoListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 989
     iput-object p1, p0, Lcom/sonymobile/android/media/MediaRecorder;->mOnInfoListener:Landroid/media/MediaRecorder$OnInfoListener;
@@ -567,6 +717,16 @@
 
 .method public setOrientationHint(Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "videoTrackId",
+            "degrees"
+        }
+    .end annotation
 
     .line 488
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
@@ -578,6 +738,17 @@
 
 .method public setOutputFile(Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;Ljava/io/FileDescriptor;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "videoTrackId",
+            "fd"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -594,6 +765,15 @@
 
 .method public setOutputFormat(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "output_format"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -610,6 +790,14 @@
 
 .method public setPreferredDevice(Landroid/media/AudioDeviceInfo;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "audioDeviceInfo"
+        }
+    .end annotation
 
     .line 425
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
@@ -621,6 +809,14 @@
 
 .method public setPreviewDisplay(Landroid/view/Surface;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sv"
+        }
+    .end annotation
 
     .line 400
     new-instance p0, Ljava/lang/UnsupportedOperationException;
@@ -632,30 +828,16 @@
     throw p0
 .end method
 
-.method public setStreamingMode(Z)V
-    .locals 0
-
-    .line 1051
-    iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
-
-    invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setStreamingMode(Z)V
-
-    return-void
-.end method
-
-.method public setStreamingOrientation(I)V
-    .locals 0
-
-    .line 1059
-    iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
-
-    invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setStreamingOrientation(I)V
-
-    return-void
-.end method
-
 .method public setVideoBitRateMode(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mode"
+        }
+    .end annotation
 
     .line 573
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
@@ -667,6 +849,18 @@
 
 .method public setVideoColorAspects(III)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "standard",
+            "transfer",
+            "range"
+        }
+    .end annotation
 
     .line 587
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
@@ -678,6 +872,17 @@
 
 .method public setVideoEncoder(Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;Ljava/lang/Integer;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "videoTrackId",
+            "videoEncoder"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -694,6 +899,16 @@
 
 .method public setVideoEncodingBitRate(Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "videoTrackId",
+            "bitRate"
+        }
+    .end annotation
 
     .line 707
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
@@ -705,6 +920,16 @@
 
 .method public setVideoEncodingProfileLevel(II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "profile",
+            "level"
+        }
+    .end annotation
 
     .line 566
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
@@ -716,6 +941,15 @@
 
 .method public setVideoFrameRate(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "rate"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -732,6 +966,17 @@
 
 .method public setVideoSize(Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;Landroid/graphics/Rect;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "videoTrackId",
+            "videoSize"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -748,6 +993,15 @@
 
 .method public setVideoSource(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "video_source"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -764,8 +1018,16 @@
 
 .method public setWindNoiseReduction(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isWindNoiseReductionEnabled"
+        }
+    .end annotation
 
-    .line 1063
+    .line 1051
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setWindNoiseReduction(Z)V
@@ -877,6 +1139,14 @@
 
 .method public useIntelligentActive(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "use"
+        }
+    .end annotation
 
     .line 1039
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;

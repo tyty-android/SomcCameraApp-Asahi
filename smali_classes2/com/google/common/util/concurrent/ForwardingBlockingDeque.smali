@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/util/concurrent/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<E:",
@@ -24,7 +27,7 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 51
+    .line 55
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingDeque;-><init>()V
 
     return-void
@@ -35,7 +38,7 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 46
+    .line 48
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingBlockingDeque;->delegate()Ljava/util/concurrent/BlockingDeque;
 
     move-result-object p0
@@ -46,7 +49,7 @@
 .method protected bridge synthetic delegate()Ljava/util/Collection;
     .locals 0
 
-    .line 46
+    .line 48
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingBlockingDeque;->delegate()Ljava/util/concurrent/BlockingDeque;
 
     move-result-object p0
@@ -57,7 +60,7 @@
 .method protected bridge synthetic delegate()Ljava/util/Deque;
     .locals 0
 
-    .line 46
+    .line 48
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingBlockingDeque;->delegate()Ljava/util/concurrent/BlockingDeque;
 
     move-result-object p0
@@ -68,7 +71,7 @@
 .method protected bridge synthetic delegate()Ljava/util/Queue;
     .locals 0
 
-    .line 46
+    .line 48
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingBlockingDeque;->delegate()Ljava/util/concurrent/BlockingDeque;
 
     move-result-object p0
@@ -88,6 +91,15 @@
 
 .method public drainTo(Ljava/util/Collection;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -96,7 +108,7 @@
         }
     .end annotation
 
-    .line 123
+    .line 130
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingBlockingDeque;->delegate()Ljava/util/concurrent/BlockingDeque;
 
     move-result-object p0
@@ -110,6 +122,17 @@
 
 .method public drainTo(Ljava/util/Collection;I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "c",
+            "maxElements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -118,7 +141,7 @@
         }
     .end annotation
 
-    .line 128
+    .line 135
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingBlockingDeque;->delegate()Ljava/util/concurrent/BlockingDeque;
 
     move-result-object p0
@@ -132,6 +155,19 @@
 
 .method public offer(Ljava/lang/Object;JLjava/util/concurrent/TimeUnit;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "e",
+            "timeout",
+            "unit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;J",
@@ -146,7 +182,7 @@
         }
     .end annotation
 
-    .line 108
+    .line 114
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingBlockingDeque;->delegate()Ljava/util/concurrent/BlockingDeque;
 
     move-result-object p0
@@ -160,6 +196,19 @@
 
 .method public offerFirst(Ljava/lang/Object;JLjava/util/concurrent/TimeUnit;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "e",
+            "timeout",
+            "unit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;J",
@@ -174,7 +223,7 @@
         }
     .end annotation
 
-    .line 73
+    .line 77
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingBlockingDeque;->delegate()Ljava/util/concurrent/BlockingDeque;
 
     move-result-object p0
@@ -188,6 +237,19 @@
 
 .method public offerLast(Ljava/lang/Object;JLjava/util/concurrent/TimeUnit;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "e",
+            "timeout",
+            "unit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;J",
@@ -202,7 +264,7 @@
         }
     .end annotation
 
-    .line 78
+    .line 82
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingBlockingDeque;->delegate()Ljava/util/concurrent/BlockingDeque;
 
     move-result-object p0
@@ -216,6 +278,17 @@
 
 .method public poll(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "timeout",
+            "unit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(J",
@@ -230,7 +303,10 @@
         }
     .end annotation
 
-    .line 118
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 125
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingBlockingDeque;->delegate()Ljava/util/concurrent/BlockingDeque;
 
     move-result-object p0
@@ -244,6 +320,17 @@
 
 .method public pollFirst(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "timeout",
+            "unit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(J",
@@ -258,7 +345,10 @@
         }
     .end annotation
 
-    .line 93
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 98
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingBlockingDeque;->delegate()Ljava/util/concurrent/BlockingDeque;
 
     move-result-object p0
@@ -272,6 +362,17 @@
 
 .method public pollLast(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "timeout",
+            "unit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(J",
@@ -286,7 +387,10 @@
         }
     .end annotation
 
-    .line 98
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 104
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingBlockingDeque;->delegate()Ljava/util/concurrent/BlockingDeque;
 
     move-result-object p0
@@ -300,6 +404,15 @@
 
 .method public put(Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)V"
@@ -312,7 +425,7 @@
         }
     .end annotation
 
-    .line 103
+    .line 109
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingBlockingDeque;->delegate()Ljava/util/concurrent/BlockingDeque;
 
     move-result-object p0
@@ -324,6 +437,15 @@
 
 .method public putFirst(Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)V"
@@ -336,7 +458,7 @@
         }
     .end annotation
 
-    .line 63
+    .line 67
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingBlockingDeque;->delegate()Ljava/util/concurrent/BlockingDeque;
 
     move-result-object p0
@@ -348,6 +470,15 @@
 
 .method public putLast(Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)V"
@@ -360,7 +491,7 @@
         }
     .end annotation
 
-    .line 68
+    .line 72
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingBlockingDeque;->delegate()Ljava/util/concurrent/BlockingDeque;
 
     move-result-object p0
@@ -373,7 +504,7 @@
 .method public remainingCapacity()I
     .locals 0
 
-    .line 58
+    .line 62
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingBlockingDeque;->delegate()Ljava/util/concurrent/BlockingDeque;
 
     move-result-object p0
@@ -399,7 +530,7 @@
         }
     .end annotation
 
-    .line 113
+    .line 119
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingBlockingDeque;->delegate()Ljava/util/concurrent/BlockingDeque;
 
     move-result-object p0
@@ -425,7 +556,7 @@
         }
     .end annotation
 
-    .line 83
+    .line 87
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingBlockingDeque;->delegate()Ljava/util/concurrent/BlockingDeque;
 
     move-result-object p0
@@ -451,7 +582,7 @@
         }
     .end annotation
 
-    .line 88
+    .line 92
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingBlockingDeque;->delegate()Ljava/util/concurrent/BlockingDeque;
 
     move-result-object p0

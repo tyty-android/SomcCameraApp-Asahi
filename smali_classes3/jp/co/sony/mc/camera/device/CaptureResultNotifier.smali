@@ -6,7 +6,10 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Ljp/co/sony/mc/camera/device/CaptureResultNotifier$TripodFramingCroppedPosition;,
+        Ljp/co/sony/mc/camera/device/CaptureResultNotifier$AiSuggestionResultCallback;,
         Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;,
+        Ljp/co/sony/mc/camera/device/CaptureResultNotifier$TripodFramingCroppedPositionCallback;,
         Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPositionCallback;,
         Ljp/co/sony/mc/camera/device/CaptureResultNotifier$AutoFramingObjectTrackingCallback;,
         Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;,
@@ -50,7 +53,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 25
+    .line 27
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

@@ -35,8 +35,16 @@
 # direct methods
 .method private constructor <init>(Lcom/google/common/collect/StandardRowSortedTable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 93
+    .line 95
     iput-object p1, p0, Lcom/google/common/collect/StandardRowSortedTable$RowSortedMap;->this$0:Lcom/google/common/collect/StandardRowSortedTable;
 
     invoke-direct {p0, p1}, Lcom/google/common/collect/StandardTable$RowMap;-><init>(Lcom/google/common/collect/StandardTable;)V
@@ -47,7 +55,7 @@
 .method synthetic constructor <init>(Lcom/google/common/collect/StandardRowSortedTable;Lcom/google/common/collect/StandardRowSortedTable$1;)V
     .locals 0
 
-    .line 93
+    .line 95
     invoke-direct {p0, p1}, Lcom/google/common/collect/StandardRowSortedTable$RowSortedMap;-><init>(Lcom/google/common/collect/StandardRowSortedTable;)V
 
     return-void
@@ -65,7 +73,10 @@
         }
     .end annotation
 
-    .line 106
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 109
     iget-object p0, p0, Lcom/google/common/collect/StandardRowSortedTable$RowSortedMap;->this$0:Lcom/google/common/collect/StandardRowSortedTable;
 
     invoke-static {p0}, Lcom/google/common/collect/StandardRowSortedTable;->access$100(Lcom/google/common/collect/StandardRowSortedTable;)Ljava/util/SortedMap;
@@ -82,7 +93,7 @@
 .method bridge synthetic createKeySet()Ljava/util/Set;
     .locals 0
 
-    .line 92
+    .line 94
     invoke-virtual {p0}, Lcom/google/common/collect/StandardRowSortedTable$RowSortedMap;->createKeySet()Ljava/util/SortedSet;
 
     move-result-object p0
@@ -100,7 +111,7 @@
         }
     .end annotation
 
-    .line 101
+    .line 103
     new-instance v0, Lcom/google/common/collect/Maps$SortedKeySet;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/Maps$SortedKeySet;-><init>(Ljava/util/SortedMap;)V
@@ -116,7 +127,7 @@
         }
     .end annotation
 
-    .line 111
+    .line 114
     iget-object p0, p0, Lcom/google/common/collect/StandardRowSortedTable$RowSortedMap;->this$0:Lcom/google/common/collect/StandardRowSortedTable;
 
     invoke-static {p0}, Lcom/google/common/collect/StandardRowSortedTable;->access$100(Lcom/google/common/collect/StandardRowSortedTable;)Ljava/util/SortedMap;
@@ -132,6 +143,15 @@
 
 .method public headMap(Ljava/lang/Object;)Ljava/util/SortedMap;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "toKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TR;)",
@@ -142,10 +162,10 @@
         }
     .end annotation
 
-    .line 121
+    .line 124
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 122
+    .line 125
     new-instance v0, Lcom/google/common/collect/StandardRowSortedTable;
 
     iget-object v1, p0, Lcom/google/common/collect/StandardRowSortedTable$RowSortedMap;->this$0:Lcom/google/common/collect/StandardRowSortedTable;
@@ -164,7 +184,7 @@
 
     invoke-direct {v0, p1, p0}, Lcom/google/common/collect/StandardRowSortedTable;-><init>(Ljava/util/SortedMap;Lcom/google/common/base/Supplier;)V
 
-    .line 123
+    .line 126
     invoke-virtual {v0}, Lcom/google/common/collect/StandardRowSortedTable;->rowMap()Ljava/util/SortedMap;
 
     move-result-object p0
@@ -175,7 +195,7 @@
 .method public bridge synthetic keySet()Ljava/util/Set;
     .locals 0
 
-    .line 92
+    .line 94
     invoke-virtual {p0}, Lcom/google/common/collect/StandardRowSortedTable$RowSortedMap;->keySet()Ljava/util/SortedSet;
 
     move-result-object p0
@@ -193,7 +213,7 @@
         }
     .end annotation
 
-    .line 96
+    .line 98
     invoke-super {p0}, Lcom/google/common/collect/StandardTable$RowMap;->keySet()Ljava/util/Set;
 
     move-result-object p0
@@ -211,7 +231,7 @@
         }
     .end annotation
 
-    .line 116
+    .line 119
     iget-object p0, p0, Lcom/google/common/collect/StandardRowSortedTable$RowSortedMap;->this$0:Lcom/google/common/collect/StandardRowSortedTable;
 
     invoke-static {p0}, Lcom/google/common/collect/StandardRowSortedTable;->access$100(Lcom/google/common/collect/StandardRowSortedTable;)Ljava/util/SortedMap;
@@ -227,6 +247,17 @@
 
 .method public subMap(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedMap;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromKey",
+            "toKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TR;TR;)",
@@ -237,13 +268,13 @@
         }
     .end annotation
 
-    .line 128
+    .line 131
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 129
+    .line 132
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 130
+    .line 133
     new-instance v0, Lcom/google/common/collect/StandardRowSortedTable;
 
     iget-object v1, p0, Lcom/google/common/collect/StandardRowSortedTable$RowSortedMap;->this$0:Lcom/google/common/collect/StandardRowSortedTable;
@@ -262,7 +293,7 @@
 
     invoke-direct {v0, p1, p0}, Lcom/google/common/collect/StandardRowSortedTable;-><init>(Ljava/util/SortedMap;Lcom/google/common/base/Supplier;)V
 
-    .line 131
+    .line 134
     invoke-virtual {v0}, Lcom/google/common/collect/StandardRowSortedTable;->rowMap()Ljava/util/SortedMap;
 
     move-result-object p0
@@ -272,6 +303,15 @@
 
 .method public tailMap(Ljava/lang/Object;)Ljava/util/SortedMap;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fromKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TR;)",
@@ -282,10 +322,10 @@
         }
     .end annotation
 
-    .line 136
+    .line 139
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 137
+    .line 140
     new-instance v0, Lcom/google/common/collect/StandardRowSortedTable;
 
     iget-object v1, p0, Lcom/google/common/collect/StandardRowSortedTable$RowSortedMap;->this$0:Lcom/google/common/collect/StandardRowSortedTable;
@@ -304,7 +344,7 @@
 
     invoke-direct {v0, p1, p0}, Lcom/google/common/collect/StandardRowSortedTable;-><init>(Ljava/util/SortedMap;Lcom/google/common/base/Supplier;)V
 
-    .line 138
+    .line 141
     invoke-virtual {v0}, Lcom/google/common/collect/StandardRowSortedTable;->rowMap()Ljava/util/SortedMap;
 
     move-result-object p0

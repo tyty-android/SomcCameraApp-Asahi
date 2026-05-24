@@ -28,16 +28,28 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/Storage$StorageState;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "type",
+            "state"
+        }
+    .end annotation
 
-    .line 603
+    .line 628
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController$UpdateContentTask;->this$0:Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 604
+    .line 629
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController$UpdateContentTask;->mChangedStorageType:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
-    .line 605
+    .line 630
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController$UpdateContentTask;->mChangedStorageState:Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
     return-void
@@ -48,7 +60,7 @@
 .method public run()V
     .locals 2
 
-    .line 610
+    .line 635
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController$UpdateContentTask;->this$0:Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->-$$Nest$fgetmUpdateContentTaskList(Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;)Ljava/util/List;
@@ -57,7 +69,7 @@
 
     invoke-interface {v0, p0}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
-    .line 612
+    .line 637
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController$UpdateContentTask;->this$0:Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->-$$Nest$fgetmContentLoader(Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;)Ljp/co/sony/mc/camera/view/contentsview/ContentLoader;
@@ -68,7 +80,7 @@
 
     return-void
 
-    .line 616
+    .line 641
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController$UpdateContentTask;->mChangedStorageState:Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
@@ -90,7 +102,7 @@
 
     goto :goto_0
 
-    .line 621
+    .line 646
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController$UpdateContentTask;->this$0:Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;
 
@@ -108,14 +120,14 @@
 
     if-lez v0, :cond_2
 
-    .line 622
+    .line 647
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController$UpdateContentTask;->this$0:Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->-$$Nest$fgetmContentCache(Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;)Ljp/co/sony/mc/camera/view/contentsview/ContentCache;
 
     move-result-object v0
 
-    .line 623
+    .line 648
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentCache;->getContentList()Ljava/util/LinkedList;
 
     move-result-object v0
@@ -134,22 +146,22 @@
 
     move-result-object v1
 
-    .line 622
+    .line 647
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/storage/StorageUtil;->getVolumeType(Ljava/lang/String;Landroid/content/Context;)Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
     move-result-object v0
 
-    .line 624
+    .line 649
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController$UpdateContentTask;->mChangedStorageType:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
     if-ne v0, v1, :cond_2
 
-    .line 628
+    .line 653
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController$UpdateContentTask;->this$0:Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->clearContents()V
 
-    .line 633
+    .line 658
     :cond_2
     :goto_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController$UpdateContentTask;->this$0:Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;
@@ -160,7 +172,7 @@
 
     if-nez v0, :cond_3
 
-    .line 634
+    .line 659
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController$UpdateContentTask;->this$0:Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->-$$Nest$fgetmContentLoader(Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;)Ljp/co/sony/mc/camera/view/contentsview/ContentLoader;

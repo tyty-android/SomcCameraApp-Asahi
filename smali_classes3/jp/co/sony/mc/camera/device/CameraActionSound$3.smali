@@ -31,6 +31,18 @@
 # virtual methods
 .method public onLoadComplete(Landroid/media/SoundPool;II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "soundPool",
+            "sampleId",
+            "status"
+        }
+    .end annotation
 
     if-nez p3, :cond_0
 

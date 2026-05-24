@@ -147,28 +147,28 @@
 
     invoke-static {p7, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 874
+    .line 964
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 875
+    .line 965
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->mainCircleTranslationX:F
 
-    .line 876
+    .line 966
     iput p2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->seekBarWidth:F
 
-    .line 877
+    .line 967
     iput p3, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->contentContainerWidth:F
 
-    .line 878
+    .line 968
     iput p4, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->lineWidth:F
 
-    .line 879
+    .line 969
     iput-object p5, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->opticalRangeTranslationXList:Ljava/util/List;
 
-    .line 880
+    .line 970
     iput-object p6, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->opticalRangeWidthList:Ljava/util/List;
 
-    .line 881
+    .line 971
     iput-object p7, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->labelTranslationXList:Ljava/util/List;
 
     return-void
@@ -514,7 +514,7 @@
 .method public final getContentContainerWidth()F
     .locals 0
 
-    .line 877
+    .line 967
     iget p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->contentContainerWidth:F
 
     return p0
@@ -531,7 +531,7 @@
         }
     .end annotation
 
-    .line 881
+    .line 971
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->labelTranslationXList:Ljava/util/List;
 
     return-object p0
@@ -540,7 +540,7 @@
 .method public final getLineWidth()F
     .locals 0
 
-    .line 878
+    .line 968
     iget p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->lineWidth:F
 
     return p0
@@ -549,7 +549,7 @@
 .method public final getMainCircleTranslationX()F
     .locals 0
 
-    .line 875
+    .line 965
     iget p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->mainCircleTranslationX:F
 
     return p0
@@ -566,7 +566,7 @@
         }
     .end annotation
 
-    .line 879
+    .line 969
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->opticalRangeTranslationXList:Ljava/util/List;
 
     return-object p0
@@ -583,7 +583,7 @@
         }
     .end annotation
 
-    .line 880
+    .line 970
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->opticalRangeWidthList:Ljava/util/List;
 
     return-object p0
@@ -592,7 +592,7 @@
 .method public final getSeekBarWidth()F
     .locals 0
 
-    .line 876
+    .line 966
     iget p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->seekBarWidth:F
 
     return p0

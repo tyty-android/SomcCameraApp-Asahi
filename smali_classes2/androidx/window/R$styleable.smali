@@ -83,11 +83,11 @@
 
     sput-object v0, Landroidx/window/R$styleable;->ActivityRule:[I
 
-    const v0, 0x7f0403fa
+    const v0, 0x7f040400
 
-    const v1, 0x7f0403fb
+    const v1, 0x7f040401
 
-    const v2, 0x7f0403d3
+    const v2, 0x7f0403d8
 
     filled-new-array {v2, v0, v1}, [I
 
@@ -103,15 +103,15 @@
 
     sput-object v0, Landroidx/window/R$styleable;->SplitPairRule:[I
 
-    const v0, 0x7f0403b9
+    const v0, 0x7f0403be
 
-    const v1, 0x7f040432
+    const v1, 0x7f040438
 
-    const v2, 0x7f040433
+    const v2, 0x7f040439
 
-    const v3, 0x7f040434
+    const v3, 0x7f04043a
 
-    const v4, 0x7f040435
+    const v4, 0x7f04043b
 
     filled-new-array {v0, v1, v2, v3, v4}, [I
 
@@ -123,13 +123,13 @@
 
     :array_0
     .array-data 4
-        0x7f0400f1
-        0x7f040200
-        0x7f040201
-        0x7f040432
-        0x7f040433
-        0x7f040434
-        0x7f040435
+        0x7f0400f3
+        0x7f040203
+        0x7f040204
+        0x7f040438
+        0x7f040439
+        0x7f04043a
+        0x7f04043b
     .end array-data
 .end method
 

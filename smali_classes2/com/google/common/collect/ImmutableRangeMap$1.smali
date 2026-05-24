@@ -35,15 +35,29 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/ImmutableRangeMap;IILcom/google/common/collect/Range;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$len",
+            "val$off",
+            "val$range"
+        }
+    .end annotation
 
-    .line 316
-    iput-object p1, p0, Lcom/google/common/collect/ImmutableRangeMap$1;->this$0:Lcom/google/common/collect/ImmutableRangeMap;
-
+    .line 341
     iput p2, p0, Lcom/google/common/collect/ImmutableRangeMap$1;->val$len:I
 
     iput p3, p0, Lcom/google/common/collect/ImmutableRangeMap$1;->val$off:I
 
     iput-object p4, p0, Lcom/google/common/collect/ImmutableRangeMap$1;->val$range:Lcom/google/common/collect/Range;
+
+    iput-object p1, p0, Lcom/google/common/collect/ImmutableRangeMap$1;->this$0:Lcom/google/common/collect/ImmutableRangeMap;
 
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableList;-><init>()V
 
@@ -54,6 +68,15 @@
 # virtual methods
 .method public get(I)Lcom/google/common/collect/Range;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -62,14 +85,14 @@
         }
     .end annotation
 
-    .line 324
+    .line 349
     iget v0, p0, Lcom/google/common/collect/ImmutableRangeMap$1;->val$len:I
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkElementIndex(II)I
 
     if-eqz p1, :cond_1
 
-    .line 325
+    .line 350
     iget v0, p0, Lcom/google/common/collect/ImmutableRangeMap$1;->val$len:I
 
     add-int/lit8 v0, v0, -0x1
@@ -78,7 +101,7 @@
 
     goto :goto_0
 
-    .line 328
+    .line 353
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/ImmutableRangeMap$1;->this$0:Lcom/google/common/collect/ImmutableRangeMap;
 
@@ -98,7 +121,7 @@
 
     return-object p0
 
-    .line 326
+    .line 351
     :cond_1
     :goto_0
     iget-object v0, p0, Lcom/google/common/collect/ImmutableRangeMap$1;->this$0:Lcom/google/common/collect/ImmutableRangeMap;
@@ -128,8 +151,16 @@
 
 .method public bridge synthetic get(I)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
-    .line 316
+    .line 341
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableRangeMap$1;->get(I)Lcom/google/common/collect/Range;
 
     move-result-object p0
@@ -148,8 +179,19 @@
 .method public size()I
     .locals 0
 
-    .line 319
+    .line 344
     iget p0, p0, Lcom/google/common/collect/ImmutableRangeMap$1;->val$len:I
 
     return p0
+.end method
+
+.method writeReplace()Ljava/lang/Object;
+    .locals 0
+
+    .line 367
+    invoke-super {p0}, Lcom/google/common/collect/ImmutableList;->writeReplace()Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
 .end method

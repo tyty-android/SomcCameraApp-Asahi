@@ -14,7 +14,7 @@
 
 
 # static fields
-.field public static final item_touch_helper_previous_elevation:I = 0x7f090270
+.field public static final item_touch_helper_previous_elevation:I = 0x7f09027a
 
 
 # direct methods

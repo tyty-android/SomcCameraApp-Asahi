@@ -26,6 +26,16 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/DataConsentActivity;Ljp/co/sony/mc/camera/DataConsentActivity$DialogId;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "dialogId"
+        }
+    .end annotation
 
     .line 329
     iput-object p1, p0, Ljp/co/sony/mc/camera/DataConsentActivity$OnClickNegativeListener;->this$0:Ljp/co/sony/mc/camera/DataConsentActivity;
@@ -42,6 +52,16 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dialog",
+            "which"
+        }
+    .end annotation
 
     .line 335
     sget-object p1, Ljp/co/sony/mc/camera/DataConsentActivity$2;->$SwitchMap$jp$co$sony$mc$camera$DataConsentActivity$DialogId:[I

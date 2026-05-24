@@ -21,8 +21,16 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 2863
+    .line 3233
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$ConfigStateCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-direct {p0}, Landroid/hardware/camera2/CameraCaptureSession$StateCallback;-><init>()V
@@ -42,8 +50,16 @@
 # virtual methods
 .method public onClosed(Landroid/hardware/camera2/CameraCaptureSession;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "session"
+        }
+    .end annotation
 
-    .line 2900
+    .line 3270
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     const/4 p1, 0x0
@@ -60,7 +76,7 @@
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 2901
+    .line 3271
     :cond_0
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
@@ -80,8 +96,16 @@
 
 .method public onConfigureFailed(Landroid/hardware/camera2/CameraCaptureSession;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "session"
+        }
+    .end annotation
 
-    .line 2885
+    .line 3255
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     const/4 v0, 0x0
@@ -101,12 +125,12 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 2888
+    .line 3258
     filled-new-array {p1}, [Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 2889
+    .line 3259
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$ConfigStateCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fgetmDeviceStateMachine(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Ljp/co/sony/mc/camera/device/DeviceStateMachine;
@@ -117,7 +141,7 @@
 
     invoke-virtual {p0, v2, p1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->sendEvent(Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;[Ljava/lang/Object;)V
 
-    .line 2892
+    .line 3262
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_1
@@ -136,8 +160,16 @@
 
 .method public onConfigured(Landroid/hardware/camera2/CameraCaptureSession;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "session"
+        }
+    .end annotation
 
-    .line 2869
+    .line 3239
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     const/4 v1, 0x0
@@ -154,13 +186,13 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 2870
+    .line 3240
     :cond_0
     sget-object v0, Ljp/co/sony/mc/camera/util/PerfLog;->ON_CONFIGURED:Ljp/co/sony/mc/camera/util/PerfLog;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/util/PerfLog;->begin()V
 
-    .line 2873
+    .line 3243
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$ConfigStateCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fgetmDeviceStateMachine(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Ljp/co/sony/mc/camera/device/DeviceStateMachine;
@@ -175,12 +207,12 @@
 
     invoke-virtual {p0, v0, p1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->sendEvent(Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;[Ljava/lang/Object;)V
 
-    .line 2876
+    .line 3246
     sget-object p0, Ljp/co/sony/mc/camera/util/PerfLog;->ON_CONFIGURED:Ljp/co/sony/mc/camera/util/PerfLog;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/util/PerfLog;->end()V
 
-    .line 2877
+    .line 3247
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_1
@@ -199,8 +231,16 @@
 
 .method public onReady(Landroid/hardware/camera2/CameraCaptureSession;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "session"
+        }
+    .end annotation
 
-    .line 2909
+    .line 3279
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     const/4 v0, 0x1
@@ -217,7 +257,7 @@
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 2911
+    .line 3281
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$ConfigStateCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
@@ -229,7 +269,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 2912
+    .line 3282
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$ConfigStateCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fgetmDeviceStateMachine(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Ljp/co/sony/mc/camera/device/DeviceStateMachine;
@@ -242,7 +282,7 @@
 
     invoke-virtual {p0, p1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->sendEvent(Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;[Ljava/lang/Object;)V
 
-    .line 2915
+    .line 3285
     :cond_1
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 

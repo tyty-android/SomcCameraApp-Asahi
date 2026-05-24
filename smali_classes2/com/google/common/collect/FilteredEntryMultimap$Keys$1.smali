@@ -28,8 +28,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/FilteredEntryMultimap$Keys;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
-    .line 376
+    .line 386
     iput-object p1, p0, Lcom/google/common/collect/FilteredEntryMultimap$Keys$1;->this$1:Lcom/google/common/collect/FilteredEntryMultimap$Keys;
 
     invoke-direct {p0}, Lcom/google/common/collect/Multisets$EntrySet;-><init>()V
@@ -37,8 +45,47 @@
     return-void
 .end method
 
+.method static synthetic lambda$removeEntriesIf$0(Lcom/google/common/base/Predicate;Ljava/util/Map$Entry;)Z
+    .locals 1
+
+    .line 407
+    invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/util/Collection;
+
+    invoke-interface {p1}, Ljava/util/Collection;->size()I
+
+    move-result p1
+
+    invoke-static {v0, p1}, Lcom/google/common/collect/Multisets;->immutableEntry(Ljava/lang/Object;I)Lcom/google/common/collect/Multiset$Entry;
+
+    move-result-object p1
+
+    .line 406
+    invoke-interface {p0, p1}, Lcom/google/common/base/Predicate;->apply(Ljava/lang/Object;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
 .method private removeEntriesIf(Lcom/google/common/base/Predicate;)Z
-    .locals 2
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "predicate"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -49,16 +96,16 @@
         }
     .end annotation
 
-    .line 394
-    iget-object v0, p0, Lcom/google/common/collect/FilteredEntryMultimap$Keys$1;->this$1:Lcom/google/common/collect/FilteredEntryMultimap$Keys;
+    .line 404
+    iget-object p0, p0, Lcom/google/common/collect/FilteredEntryMultimap$Keys$1;->this$1:Lcom/google/common/collect/FilteredEntryMultimap$Keys;
 
-    iget-object v0, v0, Lcom/google/common/collect/FilteredEntryMultimap$Keys;->this$0:Lcom/google/common/collect/FilteredEntryMultimap;
+    iget-object p0, p0, Lcom/google/common/collect/FilteredEntryMultimap$Keys;->this$0:Lcom/google/common/collect/FilteredEntryMultimap;
 
-    new-instance v1, Lcom/google/common/collect/FilteredEntryMultimap$Keys$1$1;
+    new-instance v0, Lcom/google/common/collect/FilteredEntryMultimap$Keys$1$$ExternalSyntheticLambda0;
 
-    invoke-direct {v1, p0, p1}, Lcom/google/common/collect/FilteredEntryMultimap$Keys$1$1;-><init>(Lcom/google/common/collect/FilteredEntryMultimap$Keys$1;Lcom/google/common/base/Predicate;)V
+    invoke-direct {v0, p1}, Lcom/google/common/collect/FilteredEntryMultimap$Keys$1$$ExternalSyntheticLambda0;-><init>(Lcom/google/common/base/Predicate;)V
 
-    invoke-virtual {v0, v1}, Lcom/google/common/collect/FilteredEntryMultimap;->removeEntriesIf(Lcom/google/common/base/Predicate;)Z
+    invoke-virtual {p0, v0}, Lcom/google/common/collect/FilteredEntryMultimap;->removeEntriesIf(Lcom/google/common/base/Predicate;)Z
 
     move-result p0
 
@@ -78,7 +125,7 @@
         }
     .end annotation
 
-    .line 385
+    .line 395
     iget-object p0, p0, Lcom/google/common/collect/FilteredEntryMultimap$Keys$1;->this$1:Lcom/google/common/collect/FilteredEntryMultimap$Keys;
 
     invoke-virtual {p0}, Lcom/google/common/collect/FilteredEntryMultimap$Keys;->entryIterator()Ljava/util/Iterator;
@@ -98,7 +145,7 @@
         }
     .end annotation
 
-    .line 380
+    .line 390
     iget-object p0, p0, Lcom/google/common/collect/FilteredEntryMultimap$Keys$1;->this$1:Lcom/google/common/collect/FilteredEntryMultimap$Keys;
 
     return-object p0
@@ -106,6 +153,15 @@
 
 .method public removeAll(Ljava/util/Collection;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -114,7 +170,7 @@
         }
     .end annotation
 
-    .line 406
+    .line 412
     invoke-static {p1}, Lcom/google/common/base/Predicates;->in(Ljava/util/Collection;)Lcom/google/common/base/Predicate;
 
     move-result-object p1
@@ -128,6 +184,15 @@
 
 .method public retainAll(Ljava/util/Collection;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -136,7 +201,7 @@
         }
     .end annotation
 
-    .line 411
+    .line 417
     invoke-static {p1}, Lcom/google/common/base/Predicates;->in(Ljava/util/Collection;)Lcom/google/common/base/Predicate;
 
     move-result-object p1
@@ -155,7 +220,7 @@
 .method public size()I
     .locals 0
 
-    .line 390
+    .line 400
     iget-object p0, p0, Lcom/google/common/collect/FilteredEntryMultimap$Keys$1;->this$1:Lcom/google/common/collect/FilteredEntryMultimap$Keys;
 
     iget-object p0, p0, Lcom/google/common/collect/FilteredEntryMultimap$Keys;->this$0:Lcom/google/common/collect/FilteredEntryMultimap;

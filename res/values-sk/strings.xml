@@ -82,6 +82,7 @@ Dostanete upozornenia a dialógy. Pre všetky vyberte možnosť Párovať, potom
     <string name="call_notification_incoming_text">Prichádzajúci hovor</string>
     <string name="call_notification_ongoing_text">Prebiehajúci hovor</string>
     <string name="call_notification_screening_text">Preveruje sa prichádzajúci hovor</string>
+    <string name="camera_string_saving_process_hint_txt">Ukladanie... Počkajte na dokončenie ukladania.</string>
     <string name="camera_strings_accept_privacy_policy_txt">Naposledy ste vyjadrili svoj súhlas so zásadami ochrany osobných údajov, ale vždy si to môžete rozmyslieť.</string>
     <string name="camera_strings_accessibility_48_mega_pixel_txt">48 megapixlov</string>
     <string name="camera_strings_accessibility_adjust_bokeh_txt">Upraviť Bokeh</string>
@@ -92,6 +93,27 @@ Dostanete upozornenia a dialógy. Pre všetky vyberte možnosť Párovať, potom
     <string name="camera_strings_accessibility_adjust_framing_size_smaller_txt">Zmenšite rozmer snímky</string>
     <string name="camera_strings_accessibility_adjust_framing_size_txt">Upravte rozmer snímky</string>
     <string name="camera_strings_accessibility_adjust_shutter_speed_txt">Rýchlosť uzávierky</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_look_menu_txt">Tlačidlo Zavrieť. Zatvorí ponuku Vzhľad.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_menu_txt">Zatvorenie ponuky Vlastné</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_suggests_txt">Zavrieť navrhované úpravy</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_menu_txt">Momentálne použitý vlastný vzhľad. Otvorí ponuku na vykonanie úprav.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_txt">Vlastný vzhľad. Použije nastavenia vzhľadu, jasu a farieb zaregistrované v ponuke Vlastné.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_tab_txt">Karta Vlastné. Použije nastavenia vzhľadu, jasu a farieb zaregistrované v ponuke Vlastné.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_button_txt">Tlačidlo Vlastné. Otvorí sa ponuka, v ktorej môžete vykonať ďalšie úpravy po použití odporúčaných úprav.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_param_txt">%1$s má nastavenie %2$s</string>
+    <string name="camera_strings_accessibility_ai_suggestion_first_time_txt">AI asistent fotoaparátu. Táto funkcia navrhuje nastavenia, ako napríklad farbu, podľa scény.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_four_of_some_suggests_txt">Štvrtá navrhovaná úprava</string>
+    <string name="camera_strings_accessibility_ai_suggestion_look_menu_txt">"%1$s
+Otvorí ponuku Kreatívny vzhľad"</string>
+    <string name="camera_strings_accessibility_ai_suggestion_new_suggest_txt">Boli navrhnuté nové odporúčané úpravy</string>
+    <string name="camera_strings_accessibility_ai_suggestion_one_of_some_suggests_txt">Prvá navrhovaná úprava</string>
+    <string name="camera_strings_accessibility_ai_suggestion_open_suggests_txt">Rozšírenie navrhovaných úprav</string>
+    <string name="camera_strings_accessibility_ai_suggestion_reset_to_default_txt">Obnovenie nastavení pred návrhom</string>
+    <string name="camera_strings_accessibility_ai_suggestion_selected_suggest_txt">Použijú sa tieto odporúčané úpravy</string>
+    <string name="camera_strings_accessibility_ai_suggestion_suggest_lens_txt">Tlačidlo navrhovaného objektívu. Odporúča sa %1$sx.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_surface_of_some_suggests_txt">Navrhované úpravy. Potiahnutím prstom sprava doľava zobrazíte odporúčané úpravy.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_three_of_some_suggests_txt">Tretia navrhovaná úprava</string>
+    <string name="camera_strings_accessibility_ai_suggestion_two_of_some_suggests_txt">Druhá navrhovaná úprava</string>
     <string name="camera_strings_accessibility_arrow_left_button_txt">Šípka doľava</string>
     <string name="camera_strings_accessibility_arrow_right_button_txt">Šípka doprava</string>
     <string name="camera_strings_accessibility_audio_level_txt">Merač úrovne zvuku</string>
@@ -246,6 +268,45 @@ Dostanete upozornenia a dialógy. Pre všetky vyberte možnosť Párovať, potom
     <string name="camera_strings_advanced_setting_geo_tag_title_txt">Ukladanie údajov o polohe</string>
     <string name="camera_strings_ai_face_restore_description_txt">Môžete fotografovať s vyostrením čŕt tváre, vďaka čomu črty tváre vyniknú</string>
     <string name="camera_strings_ai_face_restore_txt">Zaostriť tváre</string>
+    <string name="camera_strings_ai_suggestion_introduce_hint_text_txt">[Tipy] AI asistent fotoaparátu</string>
+    <string name="camera_strings_aisuggestion_box_name1_txt">Vlastné</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_message_txt">Zaregistrujte aktuálne nastavenia vzhľadu, jasu a farieb do položky Vlastné.</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_overwrite_message_txt">Vzhľad je už zaregistrovaný v položke Vlastné. Prepísať?</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_title_txt">Zaregistrovanie vlastného vzhľadu</string>
+    <string name="camera_strings_aisuggestion_box_title_txt">Vlastné</string>
+    <string name="camera_strings_aisuggestion_custom_params_contrast_txt">Kontrast</string>
+    <string name="camera_strings_aisuggestion_custom_params_ev_txt">Jas</string>
+    <string name="camera_strings_aisuggestion_custom_params_register_txt">Registrovať</string>
+    <string name="camera_strings_aisuggestion_custom_params_saturation_txt">Sýtosť</string>
+    <string name="camera_strings_aisuggestion_custom_params_title_txt">Jas/farba</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbab_txt">Teplé</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbgm_txt">Tón</string>
+    <string name="camera_strings_aisuggestion_customlook_register_instruction_txt">Zaregistrované vlastné vzhľady môžete kedykoľvek použiť z karty Vlastný vzhľad</string>
+    <string name="camera_strings_aisuggestion_description_txt">"Umelá inteligencia automaticky identifikuje scénu a navrhuje optimalizované úpravy v miniatúrnej ukážke v pravom dolnom rohu.
+Ak ťuknete na túto miniatúrnu ukážku, scéne sa automaticky prispôsobia nasledujúce nastavenia:
+Vzhľad, Expozícia, Vyváženie bielej farby, Sýtosť, Kontrast, Bokeh
+*Táto funkcia je k dispozícii iba v režime fotografie.
+*Keď začnete nahrávať video stlačením a podržaním tlačidla uzávierky, nastavenia pre sýtosť, kontrast a bokeh sa nepoužijú."</string>
+    <string name="camera_strings_aisuggestion_guide_description1_txt">Odporúčané úpravy na základe scény identifikovanej umelou inteligenciou sa zobrazujú v miniatúrnej ukážke v pravom dolnom rohu (v pravom hornom rohu, ak je zariadenie držané horizontálne). Všetky tieto úpravy môžete naraz aplikovať ťuknutím na miniatúrnu ukážku.</string>
+    <string name="camera_strings_aisuggestion_guide_description2_txt">V závislosti od scény môže byť navrhnuté aj konkrétne nastavenie objektívu. V takom prípade môžete podľa svojich preferencií zmeniť nastavenie objektívu na navrhované.</string>
+    <string name="camera_strings_aisuggestion_guide_description3_txt">"Potiahnutím prstom doľava po miniatúrnej ukážke v pravom dolnom rohu (v pravom hornom rohu, ak je zariadenie držané horizontálne) môžete zobraziť alternatívne odporúčania na úpravu.
+Vybraný návrh sa uloží ako preferované nastavenie a bude zahrnutý do návrhov pri ďalšom fotografovaní v podobnej scéne."</string>
+    <string name="camera_strings_aisuggestion_guide_description4_txt">Ak návrhy nepotrebujete, môžete ich skryť ťuknutím na tlačidlo [>]. Keď sa identifikuje nová scéna, tlačidlo [&lt;] sa rozsvieti, aby vám ukázalo, že sú k dispozícii nové návrhy nastavení. Ak chcete návrhy znovu skontrolovať, ťuknite na tlačidlo [&lt;].</string>
+    <string name="camera_strings_aisuggestion_guide_description5_txt">Ak po výbere navrhovaných úprav ťuknete na tlačidlo úprav, môžete ďalej upravovať nastavenia, ako je jas a farba. Vaše nastavenia sa uložia v zariadení a pri najbližšom zistení podobnej scény sa použijú ako odporúčané nastavenia.</string>
+    <string name="camera_strings_aisuggestion_guide_description6_txt">Navrhované úpravy a úpravy, ktoré ste vykonali, je možné uložiť, čím ich môžete kedykoľvek načítať a fotografovať s rovnakými nastaveniami. Ťuknutím na [Registrovať] pridáte vlastný vzhľad do zoznamu dostupných vzhľadov.</string>
+    <string name="camera_strings_aisuggestion_guide_entry_txt">Ako používať AI asistenta fotoap.</string>
+    <string name="camera_strings_aisuggestion_guide_title_txt">Ako sa používa AI asistent fotoap.</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_message_txt">Obnoviť všetky nastavenia na predvolené hodnoty vrátane farby, jasu a vašich preferovaných nastavení?</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_title_txt">Obnovenie parametrov</string>
+    <string name="camera_strings_aisuggestion_params_reset_txt">Obnovenie parametrov</string>
+    <string name="camera_strings_aisuggestion_permitted_item_bokeh_txt">Bokeh</string>
+    <string name="camera_strings_aisuggestion_permitted_item_lens_txt">Objektív</string>
+    <string name="camera_strings_aisuggestion_permitted_item_title_txt">Zahrnúť do návrhov</string>
+    <string name="camera_strings_aisuggestion_recommend_lens_ratio_txt">Odporúča sa %1$s</string>
+    <string name="camera_strings_aisuggestion_return_to_default_txt">Vrátiť</string>
+    <string name="camera_strings_aisuggestion_simple_video_instruction_txt">Pri nahrávaní videa dlhým stlačením sa môžu nastavenia sýtosti, kontrastu a bokehu zobrazovať odlišne.</string>
+    <string name="camera_strings_aisuggestion_txt">AI asistent fotoaparátu</string>
+    <string name="camera_strings_aisuggestion_use_aissuggestion_txt">Použ. AI asistenta fotoap.</string>
     <string name="camera_strings_anonymous_analytics_txt">Anonymná analytika</string>
     <string name="camera_strings_application_name">Fotoaparát</string>
     <string name="camera_strings_application_name_google_lens_txt">Google Lens</string>
@@ -421,6 +482,7 @@ Zabezpečenie:
     <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Nedá sa pripojiť k Wi-Fi</string>
     <string name="camera_strings_dialog_user_data_collection_txt">Ak vyjadríte súhlas s ďalej uvedenými podmienkami, spoločnosť Sony bude zhromažďovať vaše &lt;b>&lt;a href=#personal-data>osobné údaje&lt;/a>&lt;/b> na poskytovanie prispôsobenej podpory a skvalitňovanie zariadení a služieb. Spoločnosť Sony bude s vašimi údajmi zaobchádzať v súlade s našimi &lt;b>&lt;a href=https://www.sonymobile.com/privacy/>zásadami ochrany osobných údajov&lt;/a>&lt;/b>.</string>
     <string name="camera_strings_dialog_video_hdr_hlg_supported_short_description_txt">Niektoré zariadenia a služby nemusia byť schopné reprodukovať pôvodné farby a jas obsahu vo formáte HDR. Ak si chcete užívať obsah vo formáte HDR naplno, používajte zariadenia a služby, ktoré tento formát podporujú.</string>
+    <string name="camera_strings_digital_tripod_hint_edge_txt">Kompozícia sa posunula. Nasmerujte fotoaparát na pôvodný predmet.</string>
     <string name="camera_strings_digital_zoom_type_description_txt">"Vyberte nastavenie digitálneho priblíženia.
 
 Štandardné digitálne priblíženie: Priblíženie pomocou digitálneho spracovania na základe údajov zobrazovacieho snímača.
@@ -484,6 +546,7 @@ Ak to chcete zmeniť, zastavte streamovanie a potom prejdite do aplikácie Faceb
     <string name="camera_strings_fast_capturing_screen_locked_settings_txt">Ak chcete otvoriť nastavenia, odomknite obrazovku.</string>
     <string name="camera_strings_fast_capturing_screen_locked_streaming_txt">Na spustenie streamovania odomknite obrazovku.</string>
     <string name="camera_strings_fast_capturing_screen_locked_title_txt">Obrazovka je zamknutá</string>
+    <string name="camera_strings_feature_creative_look_custom_description_txt">Môžete si zaregistrovať nastavenia vzhľadu a jasu/farby.</string>
     <string name="camera_strings_feature_creative_look_description_txt">"Môžete si vybrať povrchovú úpravu obrázkov (fotografií alebo filmov) výberom možnosti „vzhľad“.
 
 Kreatívny vzhľad ponúka 6 prednastavených vzhľadov. Každý z nich je optimalizovaný s inou kombináciou farebného tónu, sýtosti, kontrastu, ostrosti, jasu a ďalších prvkov obrazu, takže môžete nastaviť spracovanie obrazu s ideálnou rovnováhou týchto prvkov."</string>
@@ -567,6 +630,7 @@ Môžete zmeniť orientáciu a veľkosť rámu."</string>
     <string name="camera_strings_framing_orientation_description_txt">"Môžete si vybrať, či chcete predmet orezať v horizontálnej alebo vertikálnej snímke.
 Nastavte na [Automaticky], aby bola orientácia orezania rovnaká ako orientácia zariadenia."</string>
     <string name="camera_strings_framing_select_subject_to_track_txt">Ťuknite na subjekt, ktorého polohu chcete zafixovať</string>
+    <string name="camera_strings_framing_setting_guide_title_txt">O Automatickom zarámovaní</string>
     <string name="camera_strings_framing_setting_orientation_landscape_txt">Horizontálne</string>
     <string name="camera_strings_framing_setting_orientation_portrait_txt">Vertikálne</string>
     <string name="camera_strings_framing_setting_orientation_title_txt">Orientácia snímky</string>
@@ -574,6 +638,7 @@ Nastavte na [Automaticky], aby bola orientácia orezania rovnaká ako orientáci
 Orezané záznamy sa ukladajú v rozlíšení Full HD. Neorezané záznamy sa ukladajú v rozlíšení 4K."</string>
     <string name="camera_strings_framing_setting_save_original_video_off_txt">Záznam celej obrazovky: Vypnutý</string>
     <string name="camera_strings_framing_setting_save_original_video_title_txt">Záznam celej obrazovky</string>
+    <string name="camera_strings_framing_setting_snapshot_description_txt">Nezávisle od toho, či je funkcia [Záznam celej obrazovky] zapnutá alebo vypnutá, snímky zhotovené počas nahrávania videa sa ukladajú v režime celej obrazovky.</string>
     <string name="camera_strings_geotagging_description_txt">Uložte svoje fotografie a videá s údajmi o mieste, kde boli nasnímané</string>
     <string name="camera_strings_geotagging_txt">Ukladanie údajov o polohe</string>
     <string name="camera_strings_gimbal_mode_tab_label">Snímanie s AI</string>
@@ -592,6 +657,7 @@ Vďaka tomu môžete natáčať stabilné videá aj v situáciách s trasením, 
     <string name="camera_strings_gimbal_setting_assist_method_locking_hint_txt">Zafix. predmetu: Manuál.</string>
     <string name="camera_strings_gimbal_setting_assist_method_locking_txt">Manuálna</string>
     <string name="camera_strings_gimbal_setting_assist_method_title_txt">Zafixovanie predmetu</string>
+    <string name="camera_strings_gimbal_setting_guide_title_txt">O funkcii Snímanie s AI</string>
     <string name="camera_strings_gridline_description_txt">Nastavte, či sa majú zobrazovať čiary mriežky alebo nie, ktoré vám budú asistovať pri kompozícii záberov</string>
     <string name="camera_strings_gridline_txt">Mriežky</string>
     <string name="camera_strings_hand_shutter_description_updated_txt">Otočením dlane smerom k prednému fotoaparátu môžete spustiť odpočítavanie časovača. Kvôli ľahšiemu rozpoznaniu dlane vystrite prsty dohora.</string>
@@ -727,6 +793,7 @@ Snímky nasnímané počas nahrávania videa budú vždy používať štandardn�
     <string name="camera_strings_notification_channel_title_saving_process_txt">Proces ukladania</string>
     <string name="camera_strings_notification_text_saving_in_progress_txt">Počkajte na dokončenie ukladania</string>
     <string name="camera_strings_notification_title_saving_in_progress_txt">Ukladá sa</string>
+    <string name="camera_strings_notify_saving_process_cannot_launch_app_by_hw_shutter_txt">Stlačenie tlačidla uzávierky nemusí počas ukladania spustiť fotoaparát</string>
     <string name="camera_strings_ok_txt">OK</string>
     <string name="camera_strings_peaking_color_blue_txt">Modrá</string>
     <string name="camera_strings_peaking_color_red_txt">Červená</string>
@@ -735,6 +802,7 @@ Snímky nasnímané počas nahrávania videa budú vždy používať štandardn�
     <string name="camera_strings_peaking_color_yellow_txt">Žltá</string>
     <string name="camera_strings_peaking_txt">Obrysy</string>
     <string name="camera_strings_personal_data_txt">Osobné údaje</string>
+    <string name="camera_strings_photopro_setting_guide_title_txt">O funkcii Pro photo</string>
     <string name="camera_strings_privacy_policy_txt">Ochrana osobných údajov</string>
     <string name="camera_strings_pro_tips_computational_photo_description_txt">"Dokonca aj v režime P fotoaparát automaticky identifikuje scénu a vytvorí nádherné automatické zábery znížením rozmazania, šumu, preexponovania a podexponovania.
 Ak to nepoužívate, môžete ju vypnúť pomocou tlačidla Fn alebo cez MENU."</string>
@@ -965,6 +1033,7 @@ Ak chcete videá naďalej ukladať na SD kartu, použite vysokorýchlostnú SD k
     <string name="camera_strings_video_stabilization_description_sub_txt">Poznámka: Výberom vysokej kvality sa môže skrátiť trvanie záznamu v dôsledku zvýšenia teploty zariadenia.</string>
     <string name="camera_strings_video_stabilization_description_txt">Zariadenie Xperia obsahuje jedinečný hybridný systém stabilizácie, ktorý sa nazýva Optical SteadyShot - kombinujúci optickú stabilizáciu obrazu so súčasnou elektronickou stabilizáciou obrazu. Zaistí vám videá bez trasenia, ktoré sú plynulé, a to aj pri nahrávaní v pohybe.</string>
     <string name="camera_strings_video_stabilization_high_quality_images_txt">Vysoká kvalita</string>
+    <string name="camera_strings_videopro_setting_guide_title_txt">O funkcii Pro video</string>
     <string name="camera_strings_volume_distortion_correction_description_txt">Opravuje skreslenie tvárí, ktoré sa zobrazujú pri okraji obrazovky pri používaní ultra širokouhlého objektívu. To môže spôsobiť, že pozadie sa bude zdať skreslené alebo uhol zobrazenia bude zúžený.</string>
     <string name="camera_strings_volume_distortion_correction_front_description_txt">Opravuje skreslenie tvárí, ktoré sa zobrazujú pri okraji obrazovky. To môže spôsobiť, že pozadie sa bude zdať skreslené alebo uhol zobrazenia bude zúžený.</string>
     <string name="camera_strings_volume_distortion_correction_txt">Oprava skreslenia tváre</string>
@@ -1042,8 +1111,25 @@ Chýba pripojenie k sieti."</string>
     <string name="clear_text_end_icon_content_description">Vymazať text</string>
     <string name="close_drawer">Zavrieť navigačnú ponuku</string>
     <string name="close_sheet">Zavrieť hárok</string>
+    <string name="common_google_play_services_enable_button">Povoliť</string>
+    <string name="common_google_play_services_enable_text">Aplikácia %1$s bude fungovať až po povolení služieb Google Play.</string>
+    <string name="common_google_play_services_enable_title">Povoliť služby Google Play</string>
+    <string name="common_google_play_services_install_button">Inštalovať</string>
+    <string name="common_google_play_services_install_text">Na spustenie aplikácie %1$s sa vyžadujú služby Google Play, ktoré na zariadení nemáte.</string>
+    <string name="common_google_play_services_install_title">Inštalovať služby Google Play</string>
+    <string name="common_google_play_services_notification_channel_name">Dostupnosť služieb Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Chyba služieb Google Play</string>
+    <string name="common_google_play_services_unknown_issue">Aplikácia %1$s má problémy so službami Google Play. Skúste to znova.</string>
+    <string name="common_google_play_services_unsupported_text">Aplikáciu %1$s nebude možné spustiť bez služieb Google Play, ktoré vaše zariadenie nepodporuje.</string>
+    <string name="common_google_play_services_update_button">Aktualizovať</string>
+    <string name="common_google_play_services_update_text">Aplikáciu %1$s bude možné spustiť až po aktualizácii služieb Google Play.</string>
+    <string name="common_google_play_services_update_title">Aktualizácia služieb Google Play</string>
+    <string name="common_google_play_services_updating_text">Na spustenie aplikácie %1$s sa vyžadujú služby Google Play, ktoré sa momentálne aktualizujú.</string>
+    <string name="common_google_play_services_wear_update_text">Vyžaduje sa nová verzia služieb Google Play. Aktualizujú sa automaticky v najbližšom čase.</string>
+    <string name="common_open_on_phone">Otvoriť v telefóne</string>
+    <string name="common_signin_button_text">Prihlásiť sa</string>
+    <string name="common_signin_button_text_long">Prihlásiť sa do účtu Google</string>
     <string name="copy">Kopírovať</string>
-    <string name="copy_toast_msg">Odkaz bol skopírovaný do schránky</string>
     <string name="default_error_message">Neplatný vstup</string>
     <string name="default_popup_window_title">Vyskakovacie okno</string>
     <string name="dropdown_menu">Rozbaľovacia ponuka</string>
@@ -1054,9 +1140,6 @@ Chýba pripojenie k sieti."</string>
     <string name="external_display_connected_description_txt">Hľadáčik si môžete skontrolovať v monitore pre selfie videá</string>
     <string name="external_display_connected_title_txt">Monitor pre selfie videá je pripojený</string>
     <string name="external_display_note_about_external_mic_txt">Poznámka: Ak chcete používať externý mikrofón, pred nahrávaním ho pripojte k monitoru pre selfie videá. Ak ho pripojíte neskôr, budete musieť znova pripojiť monitor pre selfie videá.</string>
-    <string name="fallback_menu_item_copy_link">Kopírovať odkaz</string>
-    <string name="fallback_menu_item_open_in_browser">Otvoriť v prehliadači</string>
-    <string name="fallback_menu_item_share_link">Zdieľať odkaz</string>
     <string name="icon_content_description">Ikona dialógového okna</string>
     <string name="in_progress">Prebieha</string>
     <string name="indeterminate">Čiastočne začiarknuté</string>

@@ -30,8 +30,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/CompactHashMap;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 730
+    .line 811
     iput-object p1, p0, Lcom/google/common/collect/CompactHashMap$2;->this$0:Lcom/google/common/collect/CompactHashMap;
 
     const/4 v0, 0x0
@@ -45,8 +53,16 @@
 # virtual methods
 .method bridge synthetic getOutput(I)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "entry"
+        }
+    .end annotation
 
-    .line 730
+    .line 811
     invoke-virtual {p0, p1}, Lcom/google/common/collect/CompactHashMap$2;->getOutput(I)Ljava/util/Map$Entry;
 
     move-result-object p0
@@ -56,6 +72,15 @@
 
 .method getOutput(I)Ljava/util/Map$Entry;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "entry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -64,7 +89,7 @@
         }
     .end annotation
 
-    .line 733
+    .line 814
     new-instance v0, Lcom/google/common/collect/CompactHashMap$MapEntry;
 
     iget-object p0, p0, Lcom/google/common/collect/CompactHashMap$2;->this$0:Lcom/google/common/collect/CompactHashMap;

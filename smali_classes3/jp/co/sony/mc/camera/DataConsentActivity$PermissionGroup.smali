@@ -82,7 +82,7 @@
 
     const-string v3, "android.permission-group.CAMERA"
 
-    const v4, 0x7f1103d6
+    const v4, 0x7f110421
 
     invoke-direct {v0, v1, v2, v3, v4}, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -110,7 +110,7 @@
 
     const-string v3, "android.permission-group.MICROPHONE"
 
-    const v4, 0x7f1103d8
+    const v4, 0x7f110423
 
     invoke-direct {v0, v1, v2, v3, v4}, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -141,6 +141,21 @@
 
 .method private constructor <init>(Ljava/lang/String;ILjava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "name",
+            "descriptionId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -163,6 +178,14 @@
 
 .method private getPermissionGroupLabel(Landroid/content/Context;)Ljava/lang/String;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     const-string v0, "getPermissionGroupLabel label :"
 
@@ -192,7 +215,7 @@
 
     if-ne p0, v4, :cond_1
 
-    const p0, 0x7f1103e0
+    const p0, 0x7f11042b
 
     .line 387
     invoke-virtual {p1, p0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -207,7 +230,7 @@
 
     if-ne p0, v4, :cond_2
 
-    const p0, 0x7f1103df
+    const p0, 0x7f11042a
 
     .line 390
     invoke-virtual {p1, p0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -332,6 +355,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 359
     const-class v0, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;

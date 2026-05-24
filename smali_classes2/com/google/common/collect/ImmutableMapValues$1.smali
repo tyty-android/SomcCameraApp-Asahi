@@ -38,13 +38,21 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/ImmutableMapValues;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 46
+    .line 48
     iput-object p1, p0, Lcom/google/common/collect/ImmutableMapValues$1;->this$0:Lcom/google/common/collect/ImmutableMapValues;
 
     invoke-direct {p0}, Lcom/google/common/collect/UnmodifiableIterator;-><init>()V
 
-    .line 47
+    .line 49
     invoke-static {p1}, Lcom/google/common/collect/ImmutableMapValues;->access$000(Lcom/google/common/collect/ImmutableMapValues;)Lcom/google/common/collect/ImmutableMap;
 
     move-result-object p1
@@ -67,7 +75,7 @@
 .method public hasNext()Z
     .locals 0
 
-    .line 51
+    .line 53
     iget-object p0, p0, Lcom/google/common/collect/ImmutableMapValues$1;->entryItr:Lcom/google/common/collect/UnmodifiableIterator;
 
     invoke-virtual {p0}, Lcom/google/common/collect/UnmodifiableIterator;->hasNext()Z
@@ -85,7 +93,7 @@
         }
     .end annotation
 
-    .line 56
+    .line 58
     iget-object p0, p0, Lcom/google/common/collect/ImmutableMapValues$1;->entryItr:Lcom/google/common/collect/UnmodifiableIterator;
 
     invoke-virtual {p0}, Lcom/google/common/collect/UnmodifiableIterator;->next()Ljava/lang/Object;

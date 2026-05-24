@@ -24,130 +24,102 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0901f6
+    const v1, 0x7f0901fa
 
-    const/4 v2, 0x1
+    const/4 v2, 0x5
 
     .line 17
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090278
+    const v1, 0x7f090281
 
-    const/4 v2, 0x2
+    const/4 v2, 0x6
 
     .line 18
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090450
+    const v1, 0x7f090452
 
-    const/4 v2, 0x3
+    const/4 v2, 0x7
 
     .line 19
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09044c
+    const v1, 0x7f090453
 
-    const/4 v2, 0x4
+    const/16 v2, 0x8
 
     .line 20
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090451
+    const v1, 0x7f09027f
 
-    const/4 v2, 0x5
+    const/16 v2, 0x9
 
     .line 21
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0901bf
+    const v1, 0x7f0901ac
 
-    const/4 v2, 0x6
+    const/16 v2, 0xa
 
     .line 22
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090276
-
-    const/4 v2, 0x7
-
-    .line 23
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
-
-    const v1, 0x7f0901a8
-
-    const/16 v2, 0x8
-
-    .line 24
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
-
-    const v1, 0x7f0901aa
-
-    const/16 v2, 0x9
-
-    .line 25
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
-
-    const v1, 0x7f0901a9
-
-    const/16 v2, 0xa
-
-    .line 26
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
-
-    const v1, 0x7f0901a7
+    const v1, 0x7f0901af
 
     const/16 v2, 0xb
 
-    .line 27
+    .line 23
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
     const v1, 0x7f0901ae
 
     const/16 v2, 0xc
 
+    .line 24
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
+
+    const v1, 0x7f0901b4
+
+    const/16 v2, 0xd
+
+    .line 25
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
+
+    const v1, 0x7f090280
+
+    const/16 v2, 0xe
+
+    .line 26
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
+
+    const v1, 0x7f09026f
+
+    const/16 v2, 0xf
+
+    .line 27
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
+
+    const v1, 0x7f090271
+
+    const/16 v2, 0x10
+
     .line 28
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090277
+    const v1, 0x7f090270
 
-    const/16 v2, 0xd
+    const/16 v2, 0x11
 
     .line 29
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090262
-
-    const/16 v2, 0xe
-
-    .line 30
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
-
-    const v1, 0x7f090264
-
-    const/16 v2, 0xf
-
-    .line 31
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
-
-    const v1, 0x7f090263
-
-    const/16 v2, 0x10
-
-    .line 32
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
-
-    const v1, 0x7f090261
-
-    const/16 v2, 0x11
-
-    .line 33
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
-
-    const v1, 0x7f090266
+    const v1, 0x7f090273
 
     const/16 v2, 0x12
 
-    .line 34
+    .line 30
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
     return-void
@@ -155,8 +127,18 @@
 
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root"
+        }
+    .end annotation
 
-    .line 43
+    .line 39
     sget-object v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
 
     sget-object v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
@@ -174,6 +156,18 @@
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
     .locals 24
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root",
+            "bindings"
+        }
+    .end annotation
 
     move-object/from16 v3, p0
 
@@ -185,72 +179,72 @@
 
     const/4 v4, 0x0
 
-    .line 46
+    .line 42
     aget-object v4, p3, v4
 
     check-cast v4, Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    const/16 v5, 0xb
+    const/4 v5, 0x3
 
     aget-object v5, p3, v5
 
     check-cast v5, Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
 
-    const/16 v6, 0x8
+    const/16 v6, 0xa
 
     aget-object v6, p3, v6
 
     check-cast v6, Landroid/view/View;
 
-    const/16 v7, 0xa
+    const/16 v7, 0xc
 
     aget-object v7, p3, v7
 
     check-cast v7, Landroid/widget/ImageView;
 
-    const/16 v8, 0x9
+    const/16 v8, 0xb
 
     aget-object v8, p3, v8
 
     check-cast v8, Landroid/widget/RelativeLayout;
 
-    const/16 v9, 0xc
+    const/16 v9, 0xd
 
     aget-object v9, p3, v9
 
     check-cast v9, Landroid/view/View;
 
-    const/4 v10, 0x6
+    const/4 v10, 0x2
 
     aget-object v10, p3, v10
 
     check-cast v10, Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
 
-    const/4 v11, 0x1
+    const/4 v11, 0x5
 
     aget-object v11, p3, v11
 
     check-cast v11, Landroid/widget/ImageView;
 
-    const/16 v12, 0x11
+    const/4 v12, 0x4
 
     aget-object v12, p3, v12
 
     check-cast v12, Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
 
-    const/16 v13, 0xe
+    const/16 v13, 0xf
 
     aget-object v13, p3, v13
 
     check-cast v13, Landroid/view/View;
 
-    const/16 v14, 0x10
+    const/16 v14, 0x11
 
     aget-object v14, p3, v14
 
     check-cast v14, Landroid/widget/ImageView;
 
-    const/16 v15, 0xf
+    const/16 v15, 0x10
 
     aget-object v15, p3, v15
 
@@ -262,37 +256,37 @@
 
     check-cast v16, Landroid/view/View;
 
-    const/16 v17, 0x7
+    const/16 v17, 0x9
 
     aget-object v17, p3, v17
 
     check-cast v17, Landroid/widget/RelativeLayout;
 
-    const/16 v18, 0xd
+    const/16 v18, 0xe
 
     aget-object v18, p3, v18
 
     check-cast v18, Landroid/widget/RelativeLayout;
 
-    const/16 v19, 0x2
+    const/16 v19, 0x6
 
     aget-object v19, p3, v19
 
     check-cast v19, Landroid/widget/RelativeLayout;
 
-    const/16 v20, 0x4
+    const/16 v20, 0x1
 
     aget-object v20, p3, v20
 
     check-cast v20, Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
 
-    const/16 v21, 0x3
+    const/16 v21, 0x7
 
     aget-object v21, p3, v21
 
     check-cast v21, Landroid/view/View;
 
-    const/16 v22, 0x5
+    const/16 v22, 0x8
 
     aget-object v22, p3, v22
 
@@ -308,15 +302,35 @@
 
     move-object/from16 v2, p0
 
-    .line 116
+    .line 124
     iput-wide v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBindingImpl;->mDirtyFlags:J
 
-    .line 67
+    .line 63
     iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBindingImpl;->cameraStatusBarContainer:Landroidx/constraintlayout/widget/ConstraintLayout;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroidx/constraintlayout/widget/ConstraintLayout;->setTag(Ljava/lang/Object;)V
+
+    .line 64
+    iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBindingImpl;->ev:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
+
+    invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/widget/OutlineTextView;->setTag(Ljava/lang/Object;)V
+
+    .line 65
+    iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBindingImpl;->fNumber:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
+
+    invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/widget/OutlineTextView;->setTag(Ljava/lang/Object;)V
+
+    .line 66
+    iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBindingImpl;->iso:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
+
+    invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/widget/OutlineTextView;->setTag(Ljava/lang/Object;)V
+
+    .line 67
+    iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBindingImpl;->ss:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
+
+    invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/widget/OutlineTextView;->setTag(Ljava/lang/Object;)V
 
     move-object/from16 v0, p2
 
@@ -332,28 +346,116 @@
 
 # virtual methods
 .method protected executeBindings()V
-    .locals 2
+    .locals 6
 
     .line 107
     monitor-enter p0
 
-    const-wide/16 v0, 0x0
+    .line 108
+    :try_start_0
+    iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBindingImpl;->mDirtyFlags:J
+
+    const-wide/16 v2, 0x0
 
     .line 109
-    :try_start_0
-    iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBindingImpl;->mDirtyFlags:J
+    iput-wide v2, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBindingImpl;->mDirtyFlags:J
 
     .line 110
     monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    const-wide/16 v4, 0x1
+
+    and-long/2addr v0, v4
+
+    cmp-long v0, v0, v2
+
+    if-eqz v0, :cond_0
+
+    .line 115
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBindingImpl;->ev:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
+
+    iget-object v1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBindingImpl;->ev:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/widget/OutlineTextView;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    const v2, 0x7f0a0055
+
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getInteger(I)I
+
+    move-result v1
+
+    int-to-float v1, v1
+
+    const/high16 v3, 0x3f800000    # 1.0f
+
+    invoke-static {v0, v1, v3}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setLimitedFontSize(Landroid/widget/TextView;FF)V
+
+    .line 116
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBindingImpl;->fNumber:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
+
+    iget-object v1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBindingImpl;->fNumber:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/widget/OutlineTextView;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getInteger(I)I
+
+    move-result v1
+
+    int-to-float v1, v1
+
+    invoke-static {v0, v1, v3}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setLimitedFontSize(Landroid/widget/TextView;FF)V
+
+    .line 117
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBindingImpl;->iso:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
+
+    iget-object v1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBindingImpl;->iso:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/widget/OutlineTextView;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getInteger(I)I
+
+    move-result v1
+
+    int-to-float v1, v1
+
+    invoke-static {v0, v1, v3}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setLimitedFontSize(Landroid/widget/TextView;FF)V
+
+    .line 118
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBindingImpl;->ss:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBindingImpl;->ss:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/OutlineTextView;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p0
+
+    invoke-virtual {p0, v2}, Landroid/content/res/Resources;->getInteger(I)I
+
+    move-result p0
+
+    int-to-float p0, p0
+
+    invoke-static {v0, p0, v3}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setLimitedFontSize(Landroid/widget/TextView;FF)V
+
+    :cond_0
     return-void
 
     :catchall_0
     move-exception v0
 
+    .line 110
+    :try_start_1
     monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw v0
 .end method
@@ -435,6 +537,18 @@
 
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "localFieldId",
+            "object",
+            "fieldId"
+        }
+    .end annotation
 
     const/4 p0, 0x0
 
@@ -443,6 +557,16 @@
 
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "variableId",
+            "variable"
+        }
+    .end annotation
 
     const/4 p0, 0x1
 

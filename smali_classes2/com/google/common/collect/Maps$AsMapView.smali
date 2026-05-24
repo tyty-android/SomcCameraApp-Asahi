@@ -49,6 +49,17 @@
 # direct methods
 .method constructor <init>(Ljava/util/Set;Lcom/google/common/base/Function;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "set",
+            "function"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -59,10 +70,10 @@
         }
     .end annotation
 
-    .line 772
+    .line 895
     invoke-direct {p0}, Lcom/google/common/collect/Maps$ViewCachingAbstractMap;-><init>()V
 
-    .line 773
+    .line 896
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -71,7 +82,7 @@
 
     iput-object p1, p0, Lcom/google/common/collect/Maps$AsMapView;->set:Ljava/util/Set;
 
-    .line 774
+    .line 897
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -95,7 +106,7 @@
         }
     .end annotation
 
-    .line 769
+    .line 892
     iget-object p0, p0, Lcom/google/common/collect/Maps$AsMapView;->set:Ljava/util/Set;
 
     return-object p0
@@ -104,7 +115,7 @@
 .method public clear()V
     .locals 0
 
-    .line 821
+    .line 946
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$AsMapView;->backingSet()Ljava/util/Set;
 
     move-result-object p0
@@ -117,11 +128,19 @@
 .method public containsKey(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 794
+    .line 917
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$AsMapView;->backingSet()Ljava/util/Set;
 
     move-result-object p0
@@ -144,7 +163,7 @@
         }
     .end annotation
 
-    .line 838
+    .line 963
     new-instance v0, Lcom/google/common/collect/Maps$AsMapView$1EntrySetImpl;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/Maps$AsMapView$1EntrySetImpl;-><init>(Lcom/google/common/collect/Maps$AsMapView;)V
@@ -162,7 +181,7 @@
         }
     .end annotation
 
-    .line 779
+    .line 902
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$AsMapView;->backingSet()Ljava/util/Set;
 
     move-result-object p0
@@ -184,7 +203,7 @@
         }
     .end annotation
 
-    .line 784
+    .line 907
     iget-object v0, p0, Lcom/google/common/collect/Maps$AsMapView;->set:Ljava/util/Set;
 
     iget-object p0, p0, Lcom/google/common/collect/Maps$AsMapView;->function:Lcom/google/common/base/Function;
@@ -199,9 +218,18 @@
 .method public get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -210,7 +238,10 @@
         }
     .end annotation
 
-    .line 799
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 923
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$AsMapView;->backingSet()Ljava/util/Set;
 
     move-result-object v0
@@ -221,7 +252,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 802
+    .line 926
     iget-object p0, p0, Lcom/google/common/collect/Maps$AsMapView;->function:Lcom/google/common/base/Function;
 
     invoke-interface {p0, p1}, Lcom/google/common/base/Function;->apply(Ljava/lang/Object;)Ljava/lang/Object;
@@ -239,9 +270,18 @@
 .method public remove(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -250,7 +290,10 @@
         }
     .end annotation
 
-    .line 810
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 935
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$AsMapView;->backingSet()Ljava/util/Set;
 
     move-result-object v0
@@ -261,7 +304,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 813
+    .line 938
     iget-object p0, p0, Lcom/google/common/collect/Maps$AsMapView;->function:Lcom/google/common/base/Function;
 
     invoke-interface {p0, p1}, Lcom/google/common/base/Function;->apply(Ljava/lang/Object;)Ljava/lang/Object;
@@ -279,7 +322,7 @@
 .method public size()I
     .locals 0
 
-    .line 789
+    .line 912
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$AsMapView;->backingSet()Ljava/util/Set;
 
     move-result-object p0

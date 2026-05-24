@@ -4,12 +4,15 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/math/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/common/math/LinearTransformation$NaNLinearTransformation;,
+        Lcom/google/common/math/LinearTransformation$LinearTransformationBuilder;,
         Lcom/google/common/math/LinearTransformation$VerticalLinearTransformation;,
         Lcom/google/common/math/LinearTransformation$RegularLinearTransformation;,
-        Lcom/google/common/math/LinearTransformation$LinearTransformationBuilder;
+        Lcom/google/common/math/LinearTransformation$NaNLinearTransformation;
     }
 .end annotation
 
@@ -17,8 +20,10 @@
 # direct methods
 .method public constructor <init>()V
     .locals 0
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
 
-    .line 38
+    .line 47
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -27,7 +32,7 @@
 .method public static forNaN()Lcom/google/common/math/LinearTransformation;
     .locals 1
 
-    .line 126
+    .line 135
     sget-object v0, Lcom/google/common/math/LinearTransformation$NaNLinearTransformation;->INSTANCE:Lcom/google/common/math/LinearTransformation$NaNLinearTransformation;
 
     return-object v0
@@ -35,15 +40,23 @@
 
 .method public static horizontal(D)Lcom/google/common/math/LinearTransformation;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "y"
+        }
+    .end annotation
 
-    .line 114
+    .line 123
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleUtils;->isFinite(D)Z
 
     move-result v0
 
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 116
+    .line 125
     new-instance v0, Lcom/google/common/math/LinearTransformation$RegularLinearTransformation;
 
     const-wide/16 v1, 0x0
@@ -55,8 +68,18 @@
 
 .method public static mapping(DD)Lcom/google/common/math/LinearTransformation$LinearTransformationBuilder;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "x1",
+            "y1"
+        }
+    .end annotation
 
-    .line 46
+    .line 55
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleUtils;->isFinite(D)Z
 
     move-result v0
@@ -79,7 +102,7 @@
     :goto_0
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 47
+    .line 56
     new-instance v0, Lcom/google/common/math/LinearTransformation$LinearTransformationBuilder;
 
     const/4 v6, 0x0
@@ -97,15 +120,23 @@
 
 .method public static vertical(D)Lcom/google/common/math/LinearTransformation;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "x"
+        }
+    .end annotation
 
-    .line 105
+    .line 114
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleUtils;->isFinite(D)Z
 
     move-result v0
 
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 106
+    .line 115
     new-instance v0, Lcom/google/common/math/LinearTransformation$VerticalLinearTransformation;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/math/LinearTransformation$VerticalLinearTransformation;-><init>(D)V
@@ -128,4 +159,12 @@
 .end method
 
 .method public abstract transform(D)D
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "x"
+        }
+    .end annotation
 .end method

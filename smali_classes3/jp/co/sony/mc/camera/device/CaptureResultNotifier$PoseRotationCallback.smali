@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract onPoseRotationChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$PoseRotationResult;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "poseRotationResult"
+        }
+    .end annotation
 .end method

@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/collect/ImmutableEnumSet$EnumSerializedForm;
@@ -40,6 +43,15 @@
 # direct methods
 .method private constructor <init>(Ljava/util/EnumSet;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "delegate"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -48,10 +60,10 @@
         }
     .end annotation
 
-    .line 55
+    .line 61
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableSet;-><init>()V
 
-    .line 56
+    .line 62
     iput-object p1, p0, Lcom/google/common/collect/ImmutableEnumSet;->delegate:Ljava/util/EnumSet;
 
     return-void
@@ -60,7 +72,7 @@
 .method synthetic constructor <init>(Ljava/util/EnumSet;Lcom/google/common/collect/ImmutableEnumSet$1;)V
     .locals 0
 
-    .line 32
+    .line 39
     invoke-direct {p0, p1}, Lcom/google/common/collect/ImmutableEnumSet;-><init>(Ljava/util/EnumSet;)V
 
     return-void
@@ -68,8 +80,28 @@
 
 .method static asImmutable(Ljava/util/EnumSet;)Lcom/google/common/collect/ImmutableSet;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "set"
+        }
+    .end annotation
 
-    .line 35
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<E:",
+            "Ljava/lang/Enum<",
+            "TE;>;>(",
+            "Ljava/util/EnumSet<",
+            "TE;>;)",
+            "Lcom/google/common/collect/ImmutableSet<",
+            "TE;>;"
+        }
+    .end annotation
+
+    .line 41
     invoke-virtual {p0}, Ljava/util/EnumSet;->size()I
 
     move-result v0
@@ -80,18 +112,20 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 41
+    .line 47
     new-instance v0, Lcom/google/common/collect/ImmutableEnumSet;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/ImmutableEnumSet;-><init>(Ljava/util/EnumSet;)V
 
     return-object v0
 
-    .line 39
+    .line 45
     :cond_0
     invoke-static {p0}, Lcom/google/common/collect/Iterables;->getOnlyElement(Ljava/lang/Iterable;)Ljava/lang/Object;
 
     move-result-object p0
+
+    check-cast p0, Ljava/lang/Enum;
 
     invoke-static {p0}, Lcom/google/common/collect/ImmutableSet;->of(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSet;
 
@@ -99,7 +133,7 @@
 
     return-object p0
 
-    .line 37
+    .line 43
     :cond_1
     invoke-static {}, Lcom/google/common/collect/ImmutableSet;->of()Lcom/google/common/collect/ImmutableSet;
 
@@ -108,12 +142,51 @@
     return-object p0
 .end method
 
+.method private readObject(Ljava/io/ObjectInputStream;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stream"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/InvalidObjectException;
+        }
+    .end annotation
+
+    .line 136
+    new-instance p0, Ljava/io/InvalidObjectException;
+
+    const-string p1, "Use SerializedForm"
+
+    invoke-direct {p0, p1}, Ljava/io/InvalidObjectException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
 
 # virtual methods
 .method public contains(Ljava/lang/Object;)Z
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 76
+    .line 82
     iget-object p0, p0, Lcom/google/common/collect/ImmutableEnumSet;->delegate:Ljava/util/EnumSet;
 
     invoke-virtual {p0, p1}, Ljava/util/EnumSet;->contains(Ljava/lang/Object;)Z
@@ -125,6 +198,15 @@
 
 .method public containsAll(Ljava/util/Collection;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "collection"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -133,17 +215,17 @@
         }
     .end annotation
 
-    .line 81
+    .line 87
     instance-of v0, p1, Lcom/google/common/collect/ImmutableEnumSet;
 
     if-eqz v0, :cond_0
 
-    .line 82
+    .line 88
     check-cast p1, Lcom/google/common/collect/ImmutableEnumSet;
 
     iget-object p1, p1, Lcom/google/common/collect/ImmutableEnumSet;->delegate:Ljava/util/EnumSet;
 
-    .line 84
+    .line 90
     :cond_0
     iget-object p0, p0, Lcom/google/common/collect/ImmutableEnumSet;->delegate:Ljava/util/EnumSet;
 
@@ -156,6 +238,18 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
     if-ne p1, p0, :cond_0
 
@@ -163,18 +257,18 @@
 
     return p0
 
-    .line 97
+    .line 103
     :cond_0
     instance-of v0, p1, Lcom/google/common/collect/ImmutableEnumSet;
 
     if-eqz v0, :cond_1
 
-    .line 98
+    .line 104
     check-cast p1, Lcom/google/common/collect/ImmutableEnumSet;
 
     iget-object p1, p1, Lcom/google/common/collect/ImmutableEnumSet;->delegate:Ljava/util/EnumSet;
 
-    .line 100
+    .line 106
     :cond_1
     iget-object p0, p0, Lcom/google/common/collect/ImmutableEnumSet;->delegate:Ljava/util/EnumSet;
 
@@ -188,12 +282,12 @@
 .method public hashCode()I
     .locals 1
 
-    .line 112
+    .line 118
     iget v0, p0, Lcom/google/common/collect/ImmutableEnumSet;->hashCode:I
 
     if-nez v0, :cond_0
 
-    .line 113
+    .line 119
     iget-object v0, p0, Lcom/google/common/collect/ImmutableEnumSet;->delegate:Ljava/util/EnumSet;
 
     invoke-virtual {v0}, Ljava/util/EnumSet;->hashCode()I
@@ -209,7 +303,7 @@
 .method public isEmpty()Z
     .locals 0
 
-    .line 89
+    .line 95
     iget-object p0, p0, Lcom/google/common/collect/ImmutableEnumSet;->delegate:Ljava/util/EnumSet;
 
     invoke-virtual {p0}, Ljava/util/EnumSet;->isEmpty()Z
@@ -245,7 +339,7 @@
         }
     .end annotation
 
-    .line 66
+    .line 72
     iget-object p0, p0, Lcom/google/common/collect/ImmutableEnumSet;->delegate:Ljava/util/EnumSet;
 
     invoke-virtual {p0}, Ljava/util/EnumSet;->iterator()Ljava/util/Iterator;
@@ -262,7 +356,7 @@
 .method public bridge synthetic iterator()Ljava/util/Iterator;
     .locals 0
 
-    .line 30
+    .line 36
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableEnumSet;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p0
@@ -273,7 +367,7 @@
 .method public size()I
     .locals 0
 
-    .line 71
+    .line 77
     iget-object p0, p0, Lcom/google/common/collect/ImmutableEnumSet;->delegate:Ljava/util/EnumSet;
 
     invoke-virtual {p0}, Ljava/util/EnumSet;->size()I
@@ -286,7 +380,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 118
+    .line 124
     iget-object p0, p0, Lcom/google/common/collect/ImmutableEnumSet;->delegate:Ljava/util/EnumSet;
 
     invoke-virtual {p0}, Ljava/util/EnumSet;->toString()Ljava/lang/String;
@@ -299,7 +393,7 @@
 .method writeReplace()Ljava/lang/Object;
     .locals 1
 
-    .line 124
+    .line 131
     new-instance v0, Lcom/google/common/collect/ImmutableEnumSet$EnumSerializedForm;
 
     iget-object p0, p0, Lcom/google/common/collect/ImmutableEnumSet;->delegate:Ljava/util/EnumSet;

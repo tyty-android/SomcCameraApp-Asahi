@@ -23,6 +23,16 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/DataConsentActivity;Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "url"
+        }
+    .end annotation
 
     .line 271
     iput-object p1, p0, Ljp/co/sony/mc/camera/DataConsentActivity$CustomClickUrlSpan;->this$0:Ljp/co/sony/mc/camera/DataConsentActivity;
@@ -39,6 +49,14 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "widget"
+        }
+    .end annotation
 
     .line 277
     iget-object p1, p0, Ljp/co/sony/mc/camera/DataConsentActivity$CustomClickUrlSpan;->mUrl:Ljava/lang/String;

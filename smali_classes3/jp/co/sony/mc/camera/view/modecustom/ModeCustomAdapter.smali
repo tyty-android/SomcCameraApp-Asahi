@@ -313,15 +313,15 @@
 
     move-result p0
 
-    const v0, 0x7f0902fb
+    const v0, 0x7f090300
 
     if-ne p0, v0, :cond_1
 
-    const p0, 0x7f0902fa
+    const p0, 0x7f0902ff
 
-    const v0, 0x7f0902fd
+    const v0, 0x7f090302
 
-    const v1, 0x7f09018c
+    const v1, 0x7f090190
 
     const/4 v2, 0x0
 

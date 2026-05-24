@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation runtime Lcom/google/errorprone/annotations/DoNotMock;
     value = "Use ImmutableList.of or another implementation"
 .end annotation
@@ -33,6 +36,10 @@
 # static fields
 .field private static final EMPTY_ARRAY:[Ljava/lang/Object;
 
+.field static final SPLITERATOR_CHARACTERISTICS:I = 0x510
+
+.field private static final serialVersionUID:J = 0xdecafL
+
 
 # direct methods
 .method static constructor <clinit>()V
@@ -40,7 +47,7 @@
 
     const/4 v0, 0x0
 
-    .line 175
+    .line 201
     new-array v0, v0, [Ljava/lang/Object;
 
     sput-object v0, Lcom/google/common/collect/ImmutableCollection;->EMPTY_ARRAY:[Ljava/lang/Object;
@@ -51,16 +58,52 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 169
+    .line 187
     invoke-direct {p0}, Ljava/util/AbstractCollection;-><init>()V
 
     return-void
+.end method
+
+.method private readObject(Ljava/io/ObjectInputStream;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stream"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/InvalidObjectException;
+        }
+    .end annotation
+
+    .line 393
+    new-instance p0, Ljava/io/InvalidObjectException;
+
+    const-string p1, "Use SerializedForm"
+
+    invoke-direct {p0, p1}, Ljava/io/InvalidObjectException;-><init>(Ljava/lang/String;)V
+
+    throw p0
 .end method
 
 
 # virtual methods
 .method public final add(Ljava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)Z"
@@ -70,7 +113,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 237
+    .line 278
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -80,6 +123,15 @@
 
 .method public final addAll(Ljava/util/Collection;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "newElements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -91,7 +143,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 265
+    .line 306
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -109,7 +161,7 @@
         }
     .end annotation
 
-    .line 320
+    .line 361
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableCollection;->isEmpty()Z
 
     move-result v0
@@ -140,7 +192,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 306
+    .line 347
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -150,15 +202,33 @@
 
 .method public abstract contains(Ljava/lang/Object;)Z
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 .end method
 
 .method copyIntoArray([Ljava/lang/Object;I)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dst",
+            "offset"
+        }
+    .end annotation
 
-    .line 337
+    .line 378
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableCollection;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p0
@@ -176,7 +246,7 @@
 
     add-int/lit8 v1, p2, 0x1
 
-    .line 338
+    .line 379
     aput-object v0, p1, p2
 
     move p2, v1
@@ -189,7 +259,7 @@
 
 .method internalArray()[Ljava/lang/Object;
     .locals 0
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
     const/4 p0, 0x0
@@ -200,7 +270,7 @@
 .method internalArrayEnd()I
     .locals 0
 
-    .line 220
+    .line 261
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -211,7 +281,7 @@
 .method internalArrayStart()I
     .locals 0
 
-    .line 212
+    .line 253
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -235,7 +305,7 @@
 .method public bridge synthetic iterator()Ljava/util/Iterator;
     .locals 0
 
-    .line 162
+    .line 169
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableCollection;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p0
@@ -245,10 +315,23 @@
 
 .method public final remove(Ljava/lang/Object;)Z
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 251
+    .line 292
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -258,6 +341,15 @@
 
 .method public final removeAll(Ljava/util/Collection;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "oldElements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -269,7 +361,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 279
+    .line 320
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -279,6 +371,15 @@
 
 .method public final retainAll(Ljava/util/Collection;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elementsToKeep"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -290,7 +391,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 293
+    .line 334
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -298,10 +399,30 @@
     throw p0
 .end method
 
+.method public spliterator()Ljava/util/Spliterator;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Spliterator<",
+            "TE;>;"
+        }
+    .end annotation
+
+    const/16 v0, 0x510
+
+    .line 198
+    invoke-static {p0, v0}, Ljava/util/Spliterators;->spliterator(Ljava/util/Collection;I)Ljava/util/Spliterator;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public final toArray()[Ljava/lang/Object;
     .locals 1
 
-    .line 179
+    .line 206
     sget-object v0, Lcom/google/common/collect/ImmutableCollection;->EMPTY_ARRAY:[Ljava/lang/Object;
 
     invoke-virtual {p0, v0}, Lcom/google/common/collect/ImmutableCollection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
@@ -313,6 +434,15 @@
 
 .method public final toArray([Ljava/lang/Object;)[Ljava/lang/Object;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "other"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -321,27 +451,27 @@
         }
     .end annotation
 
-    .line 185
+    .line 225
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 186
+    .line 226
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableCollection;->size()I
 
     move-result v0
 
-    .line 188
+    .line 228
     array-length v1, p1
 
     if-ge v1, v0, :cond_1
 
-    .line 189
+    .line 229
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableCollection;->internalArray()[Ljava/lang/Object;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    .line 191
+    .line 231
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableCollection;->internalArrayStart()I
 
     move-result v0
@@ -356,7 +486,7 @@
 
     return-object p0
 
-    .line 193
+    .line 233
     :cond_0
     invoke-static {p1, v0}, Lcom/google/common/collect/ObjectArrays;->newArray([Ljava/lang/Object;I)[Ljava/lang/Object;
 
@@ -364,7 +494,7 @@
 
     goto :goto_0
 
-    .line 194
+    .line 234
     :cond_1
     array-length v1, p1
 
@@ -372,14 +502,14 @@
 
     const/4 v1, 0x0
 
-    .line 195
+    .line 235
     aput-object v1, p1, v0
 
     :cond_2
     :goto_0
     const/4 v0, 0x0
 
-    .line 197
+    .line 237
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/ImmutableCollection;->copyIntoArray([Ljava/lang/Object;I)I
 
     return-object p1
@@ -388,7 +518,7 @@
 .method writeReplace()Ljava/lang/Object;
     .locals 1
 
-    .line 345
+    .line 388
     new-instance v0, Lcom/google/common/collect/ImmutableList$SerializedForm;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableCollection;->toArray()[Ljava/lang/Object;

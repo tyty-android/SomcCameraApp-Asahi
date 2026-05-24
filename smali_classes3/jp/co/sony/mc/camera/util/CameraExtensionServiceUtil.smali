@@ -438,6 +438,14 @@
 
 .method public updateCameraStatus(Landroid/content/ContentValues;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "contentValues"
+        }
+    .end annotation
 
     .line 132
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/CameraExtensionServiceUtil;->mBackWorker:Ljava/util/concurrent/ExecutorService;

@@ -3,11 +3,16 @@
 .source "Queues.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # direct methods
 .method private constructor <init>()V
     .locals 0
 
-    .line 45
+    .line 50
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -15,6 +20,23 @@
 
 .method public static drain(Ljava/util/concurrent/BlockingQueue;Ljava/util/Collection;IJLjava/util/concurrent/TimeUnit;)I
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "q",
+            "buffer",
+            "numElements",
+            "timeout",
+            "unit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -35,10 +57,10 @@
         }
     .end annotation
 
-    .line 278
+    .line 327
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 284
+    .line 333
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 
     move-result-wide v0
@@ -57,7 +79,7 @@
 
     sub-int p4, p2, p3
 
-    .line 289
+    .line 338
     invoke-interface {p0, p1, p4}, Ljava/util/concurrent/BlockingQueue;->drainTo(Ljava/util/Collection;I)I
 
     move-result p4
@@ -66,7 +88,7 @@
 
     if-ge p3, p2, :cond_0
 
-    .line 291
+    .line 340
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 
     move-result-wide p4
@@ -83,7 +105,7 @@
 
     goto :goto_1
 
-    .line 295
+    .line 344
     :cond_1
     invoke-interface {p1, p4}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
@@ -96,8 +118,82 @@
     return p3
 .end method
 
+.method public static drain(Ljava/util/concurrent/BlockingQueue;Ljava/util/Collection;ILjava/time/Duration;)I
+    .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "q",
+            "buffer",
+            "numElements",
+            "timeout"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<E:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/concurrent/BlockingQueue<",
+            "TE;>;",
+            "Ljava/util/Collection<",
+            "-TE;>;I",
+            "Ljava/time/Duration;",
+            ")I"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/InterruptedException;
+        }
+    .end annotation
+
+    .line 301
+    invoke-virtual {p3}, Ljava/time/Duration;->toNanos()J
+
+    move-result-wide v3
+
+    sget-object v5, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move v2, p2
+
+    invoke-static/range {v0 .. v5}, Lcom/google/common/collect/Queues;->drain(Ljava/util/concurrent/BlockingQueue;Ljava/util/Collection;IJLjava/util/concurrent/TimeUnit;)I
+
+    move-result p0
+
+    return p0
+.end method
+
 .method public static drainUninterruptibly(Ljava/util/concurrent/BlockingQueue;Ljava/util/Collection;IJLjava/util/concurrent/TimeUnit;)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "q",
+            "buffer",
+            "numElements",
+            "timeout",
+            "unit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -112,10 +208,10 @@
         }
     .end annotation
 
-    .line 325
+    .line 398
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 326
+    .line 399
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 
     move-result-wide v0
@@ -136,7 +232,7 @@
 
     sub-int p5, p2, p3
 
-    .line 333
+    .line 406
     :try_start_0
     invoke-interface {p0, p1, p5}, Ljava/util/concurrent/BlockingQueue;->drainTo(Ljava/util/Collection;I)I
 
@@ -148,7 +244,7 @@
 
     if-ge p3, p2, :cond_0
 
-    .line 338
+    .line 411
     :goto_1
     :try_start_1
     invoke-static {}, Ljava/lang/System;->nanoTime()J
@@ -170,7 +266,7 @@
 
     goto :goto_2
 
-    .line 347
+    .line 420
     :cond_1
     :try_start_2
     invoke-interface {p1, p5}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
@@ -191,14 +287,14 @@
 
     if-eqz p4, :cond_2
 
-    .line 353
+    .line 426
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/Thread;->interrupt()V
 
-    .line 355
+    .line 428
     :cond_2
     throw p0
 
@@ -206,7 +302,7 @@
     :goto_2
     if-eqz p4, :cond_4
 
-    .line 353
+    .line 426
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object p0
@@ -217,8 +313,68 @@
     return p3
 .end method
 
+.method public static drainUninterruptibly(Ljava/util/concurrent/BlockingQueue;Ljava/util/Collection;ILjava/time/Duration;)I
+    .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "q",
+            "buffer",
+            "numElements",
+            "timeout"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<E:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/concurrent/BlockingQueue<",
+            "TE;>;",
+            "Ljava/util/Collection<",
+            "-TE;>;I",
+            "Ljava/time/Duration;",
+            ")I"
+        }
+    .end annotation
+
+    .line 372
+    invoke-virtual {p3}, Ljava/time/Duration;->toNanos()J
+
+    move-result-wide v3
+
+    sget-object v5, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move v2, p2
+
+    invoke-static/range {v0 .. v5}, Lcom/google/common/collect/Queues;->drainUninterruptibly(Ljava/util/concurrent/BlockingQueue;Ljava/util/Collection;IJLjava/util/concurrent/TimeUnit;)I
+
+    move-result p0
+
+    return p0
+.end method
+
 .method public static newArrayBlockingQueue(I)Ljava/util/concurrent/ArrayBlockingQueue;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "capacity"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -229,7 +385,7 @@
         }
     .end annotation
 
-    .line 55
+    .line 61
     new-instance v0, Ljava/util/concurrent/ArrayBlockingQueue;
 
     invoke-direct {v0, p0}, Ljava/util/concurrent/ArrayBlockingQueue;-><init>(I)V
@@ -249,7 +405,7 @@
         }
     .end annotation
 
-    .line 66
+    .line 72
     new-instance v0, Ljava/util/ArrayDeque;
 
     invoke-direct {v0}, Ljava/util/ArrayDeque;-><init>()V
@@ -259,6 +415,15 @@
 
 .method public static newArrayDeque(Ljava/lang/Iterable;)Ljava/util/ArrayDeque;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -271,12 +436,12 @@
         }
     .end annotation
 
-    .line 76
+    .line 82
     instance-of v0, p0, Ljava/util/Collection;
 
     if-eqz v0, :cond_0
 
-    .line 77
+    .line 83
     new-instance v0, Ljava/util/ArrayDeque;
 
     check-cast p0, Ljava/util/Collection;
@@ -285,13 +450,13 @@
 
     return-object v0
 
-    .line 79
+    .line 85
     :cond_0
     new-instance v0, Ljava/util/ArrayDeque;
 
     invoke-direct {v0}, Ljava/util/ArrayDeque;-><init>()V
 
-    .line 80
+    .line 86
     invoke-static {v0, p0}, Lcom/google/common/collect/Iterables;->addAll(Ljava/util/Collection;Ljava/lang/Iterable;)Z
 
     return-object v0
@@ -309,7 +474,7 @@
         }
     .end annotation
 
-    .line 89
+    .line 96
     new-instance v0, Ljava/util/concurrent/ConcurrentLinkedQueue;
 
     invoke-direct {v0}, Ljava/util/concurrent/ConcurrentLinkedQueue;-><init>()V
@@ -319,6 +484,15 @@
 
 .method public static newConcurrentLinkedQueue(Ljava/lang/Iterable;)Ljava/util/concurrent/ConcurrentLinkedQueue;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -331,12 +505,12 @@
         }
     .end annotation
 
-    .line 99
+    .line 107
     instance-of v0, p0, Ljava/util/Collection;
 
     if-eqz v0, :cond_0
 
-    .line 100
+    .line 108
     new-instance v0, Ljava/util/concurrent/ConcurrentLinkedQueue;
 
     check-cast p0, Ljava/util/Collection;
@@ -345,13 +519,13 @@
 
     return-object v0
 
-    .line 102
+    .line 110
     :cond_0
     new-instance v0, Ljava/util/concurrent/ConcurrentLinkedQueue;
 
     invoke-direct {v0}, Ljava/util/concurrent/ConcurrentLinkedQueue;-><init>()V
 
-    .line 103
+    .line 111
     invoke-static {v0, p0}, Lcom/google/common/collect/Iterables;->addAll(Ljava/util/Collection;Ljava/lang/Iterable;)Z
 
     return-object v0
@@ -369,7 +543,7 @@
         }
     .end annotation
 
-    .line 116
+    .line 125
     new-instance v0, Ljava/util/concurrent/LinkedBlockingDeque;
 
     invoke-direct {v0}, Ljava/util/concurrent/LinkedBlockingDeque;-><init>()V
@@ -379,6 +553,15 @@
 
 .method public static newLinkedBlockingDeque(I)Ljava/util/concurrent/LinkedBlockingDeque;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "capacity"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -389,7 +572,7 @@
         }
     .end annotation
 
-    .line 127
+    .line 137
     new-instance v0, Ljava/util/concurrent/LinkedBlockingDeque;
 
     invoke-direct {v0, p0}, Ljava/util/concurrent/LinkedBlockingDeque;-><init>(I)V
@@ -399,6 +582,15 @@
 
 .method public static newLinkedBlockingDeque(Ljava/lang/Iterable;)Ljava/util/concurrent/LinkedBlockingDeque;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -411,12 +603,12 @@
         }
     .end annotation
 
-    .line 139
+    .line 150
     instance-of v0, p0, Ljava/util/Collection;
 
     if-eqz v0, :cond_0
 
-    .line 140
+    .line 151
     new-instance v0, Ljava/util/concurrent/LinkedBlockingDeque;
 
     check-cast p0, Ljava/util/Collection;
@@ -425,13 +617,13 @@
 
     return-object v0
 
-    .line 142
+    .line 153
     :cond_0
     new-instance v0, Ljava/util/concurrent/LinkedBlockingDeque;
 
     invoke-direct {v0}, Ljava/util/concurrent/LinkedBlockingDeque;-><init>()V
 
-    .line 143
+    .line 154
     invoke-static {v0, p0}, Lcom/google/common/collect/Iterables;->addAll(Ljava/util/Collection;Ljava/lang/Iterable;)Z
 
     return-object v0
@@ -449,7 +641,7 @@
         }
     .end annotation
 
-    .line 152
+    .line 164
     new-instance v0, Ljava/util/concurrent/LinkedBlockingQueue;
 
     invoke-direct {v0}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>()V
@@ -459,6 +651,15 @@
 
 .method public static newLinkedBlockingQueue(I)Ljava/util/concurrent/LinkedBlockingQueue;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "capacity"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -469,7 +670,7 @@
         }
     .end annotation
 
-    .line 162
+    .line 175
     new-instance v0, Ljava/util/concurrent/LinkedBlockingQueue;
 
     invoke-direct {v0, p0}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>(I)V
@@ -479,6 +680,15 @@
 
 .method public static newLinkedBlockingQueue(Ljava/lang/Iterable;)Ljava/util/concurrent/LinkedBlockingQueue;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -491,12 +701,12 @@
         }
     .end annotation
 
-    .line 175
+    .line 189
     instance-of v0, p0, Ljava/util/Collection;
 
     if-eqz v0, :cond_0
 
-    .line 176
+    .line 190
     new-instance v0, Ljava/util/concurrent/LinkedBlockingQueue;
 
     check-cast p0, Ljava/util/Collection;
@@ -505,13 +715,13 @@
 
     return-object v0
 
-    .line 178
+    .line 192
     :cond_0
     new-instance v0, Ljava/util/concurrent/LinkedBlockingQueue;
 
     invoke-direct {v0}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>()V
 
-    .line 179
+    .line 193
     invoke-static {v0, p0}, Lcom/google/common/collect/Iterables;->addAll(Ljava/util/Collection;Ljava/lang/Iterable;)Z
 
     return-object v0
@@ -529,7 +739,7 @@
         }
     .end annotation
 
-    .line 195
+    .line 212
     new-instance v0, Ljava/util/concurrent/PriorityBlockingQueue;
 
     invoke-direct {v0}, Ljava/util/concurrent/PriorityBlockingQueue;-><init>()V
@@ -539,6 +749,15 @@
 
 .method public static newPriorityBlockingQueue(Ljava/lang/Iterable;)Ljava/util/concurrent/PriorityBlockingQueue;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E::",
@@ -551,12 +770,12 @@
         }
     .end annotation
 
-    .line 209
+    .line 229
     instance-of v0, p0, Ljava/util/Collection;
 
     if-eqz v0, :cond_0
 
-    .line 210
+    .line 230
     new-instance v0, Ljava/util/concurrent/PriorityBlockingQueue;
 
     check-cast p0, Ljava/util/Collection;
@@ -565,13 +784,13 @@
 
     return-object v0
 
-    .line 212
+    .line 232
     :cond_0
     new-instance v0, Ljava/util/concurrent/PriorityBlockingQueue;
 
     invoke-direct {v0}, Ljava/util/concurrent/PriorityBlockingQueue;-><init>()V
 
-    .line 213
+    .line 233
     invoke-static {v0, p0}, Lcom/google/common/collect/Iterables;->addAll(Ljava/util/Collection;Ljava/lang/Iterable;)Z
 
     return-object v0
@@ -589,7 +808,7 @@
         }
     .end annotation
 
-    .line 226
+    .line 248
     new-instance v0, Ljava/util/PriorityQueue;
 
     invoke-direct {v0}, Ljava/util/PriorityQueue;-><init>()V
@@ -599,6 +818,15 @@
 
 .method public static newPriorityQueue(Ljava/lang/Iterable;)Ljava/util/PriorityQueue;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E::",
@@ -611,12 +839,12 @@
         }
     .end annotation
 
-    .line 239
+    .line 263
     instance-of v0, p0, Ljava/util/Collection;
 
     if-eqz v0, :cond_0
 
-    .line 240
+    .line 264
     new-instance v0, Ljava/util/PriorityQueue;
 
     check-cast p0, Ljava/util/Collection;
@@ -625,13 +853,13 @@
 
     return-object v0
 
-    .line 242
+    .line 266
     :cond_0
     new-instance v0, Ljava/util/PriorityQueue;
 
     invoke-direct {v0}, Ljava/util/PriorityQueue;-><init>()V
 
-    .line 243
+    .line 267
     invoke-static {v0, p0}, Lcom/google/common/collect/Iterables;->addAll(Ljava/util/Collection;Ljava/lang/Iterable;)Z
 
     return-object v0
@@ -649,7 +877,7 @@
         }
     .end annotation
 
-    .line 252
+    .line 277
     new-instance v0, Ljava/util/concurrent/SynchronousQueue;
 
     invoke-direct {v0}, Ljava/util/concurrent/SynchronousQueue;-><init>()V
@@ -659,6 +887,15 @@
 
 .method public static synchronizedDeque(Ljava/util/Deque;)Ljava/util/Deque;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "deque"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -673,7 +910,7 @@
 
     const/4 v0, 0x0
 
-    .line 422
+    .line 497
     invoke-static {p0, v0}, Lcom/google/common/collect/Synchronized;->deque(Ljava/util/Deque;Ljava/lang/Object;)Ljava/util/Deque;
 
     move-result-object p0
@@ -683,6 +920,15 @@
 
 .method public static synchronizedQueue(Ljava/util/Queue;)Ljava/util/Queue;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "queue"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -697,7 +943,7 @@
 
     const/4 v0, 0x0
 
-    .line 389
+    .line 463
     invoke-static {p0, v0}, Lcom/google/common/collect/Synchronized;->queue(Ljava/util/Queue;Ljava/lang/Object;)Ljava/util/Queue;
 
     move-result-object p0

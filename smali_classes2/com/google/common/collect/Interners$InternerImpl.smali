@@ -44,11 +44,19 @@
 # direct methods
 .method private constructor <init>(Lcom/google/common/collect/MapMaker;)V
     .locals 1
-
-    .line 118
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mapMaker"
+        }
+    .end annotation
 
     .line 120
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 122
     invoke-static {}, Lcom/google/common/base/Equivalence;->equals()Lcom/google/common/base/Equivalence;
 
     move-result-object v0
@@ -69,7 +77,7 @@
 .method synthetic constructor <init>(Lcom/google/common/collect/MapMaker;Lcom/google/common/collect/Interners$1;)V
     .locals 0
 
-    .line 114
+    .line 116
     invoke-direct {p0, p1}, Lcom/google/common/collect/Interners$InternerImpl;-><init>(Lcom/google/common/collect/MapMaker;)V
 
     return-void
@@ -79,13 +87,22 @@
 # virtual methods
 .method public intern(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sample"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)TE;"
         }
     .end annotation
 
-    .line 127
+    .line 130
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/Interners$InternerImpl;->map:Lcom/google/common/collect/MapMakerInternalMap;
 
@@ -95,7 +112,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 129
+    .line 132
     invoke-interface {v0}, Lcom/google/common/collect/MapMakerInternalMap$InternalEntry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
@@ -104,7 +121,7 @@
 
     return-object v0
 
-    .line 136
+    .line 142
     :cond_1
     iget-object v0, p0, Lcom/google/common/collect/Interners$InternerImpl;->map:Lcom/google/common/collect/MapMakerInternalMap;
 

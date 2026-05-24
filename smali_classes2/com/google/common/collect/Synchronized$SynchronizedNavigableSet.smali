@@ -1,4 +1,4 @@
-.class Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;
+.class final Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;
 .super Lcom/google/common/collect/Synchronized$SynchronizedSortedSet;
 .source "Synchronized.java"
 
@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x18
     name = "SynchronizedNavigableSet"
 .end annotation
 
@@ -42,7 +42,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -51,9 +51,20 @@
 .method constructor <init>(Ljava/util/NavigableSet;Ljava/lang/Object;)V
     .locals 0
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "delegate",
+            "mutex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -64,7 +75,7 @@
         }
     .end annotation
 
-    .line 1275
+    .line 1325
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/Synchronized$SynchronizedSortedSet;-><init>(Ljava/util/SortedSet;Ljava/lang/Object;)V
 
     return-void
@@ -74,18 +85,30 @@
 # virtual methods
 .method public ceiling(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)TE;"
         }
     .end annotation
 
-    .line 1285
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1336
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1286
+    .line 1337
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->delegate()Ljava/util/NavigableSet;
 
@@ -102,7 +125,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1287
+    .line 1338
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -113,7 +136,7 @@
 .method bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 1270
+    .line 1320
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->delegate()Ljava/util/NavigableSet;
 
     move-result-object p0
@@ -124,7 +147,7 @@
 .method bridge synthetic delegate()Ljava/util/Collection;
     .locals 0
 
-    .line 1270
+    .line 1320
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->delegate()Ljava/util/NavigableSet;
 
     move-result-object p0
@@ -142,7 +165,7 @@
         }
     .end annotation
 
-    .line 1280
+    .line 1330
     invoke-super {p0}, Lcom/google/common/collect/Synchronized$SynchronizedSortedSet;->delegate()Ljava/util/SortedSet;
 
     move-result-object p0
@@ -155,7 +178,7 @@
 .method bridge synthetic delegate()Ljava/util/Set;
     .locals 0
 
-    .line 1270
+    .line 1320
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->delegate()Ljava/util/NavigableSet;
 
     move-result-object p0
@@ -166,7 +189,7 @@
 .method bridge synthetic delegate()Ljava/util/SortedSet;
     .locals 0
 
-    .line 1270
+    .line 1320
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->delegate()Ljava/util/NavigableSet;
 
     move-result-object p0
@@ -184,7 +207,7 @@
         }
     .end annotation
 
-    .line 1292
+    .line 1343
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->delegate()Ljava/util/NavigableSet;
 
     move-result-object p0
@@ -206,18 +229,18 @@
         }
     .end annotation
 
-    .line 1299
+    .line 1350
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1300
+    .line 1351
     :try_start_0
     iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->descendingSet:Ljava/util/NavigableSet;
 
     if-nez v1, :cond_0
 
-    .line 1301
+    .line 1352
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->delegate()Ljava/util/NavigableSet;
 
     move-result-object v1
@@ -232,15 +255,15 @@
 
     move-result-object v1
 
-    .line 1302
+    .line 1353
     iput-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->descendingSet:Ljava/util/NavigableSet;
 
-    .line 1303
+    .line 1354
     monitor-exit v0
 
     return-object v1
 
-    .line 1305
+    .line 1356
     :cond_0
     monitor-exit v0
 
@@ -249,7 +272,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1306
+    .line 1357
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -259,18 +282,30 @@
 
 .method public floor(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)TE;"
         }
     .end annotation
 
-    .line 1311
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1363
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1312
+    .line 1364
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->delegate()Ljava/util/NavigableSet;
 
@@ -287,7 +322,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1313
+    .line 1365
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -297,6 +332,17 @@
 
 .method public headSet(Ljava/lang/Object;Z)Ljava/util/NavigableSet;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "toElement",
+            "inclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;Z)",
@@ -305,12 +351,12 @@
         }
     .end annotation
 
-    .line 1318
+    .line 1370
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1319
+    .line 1371
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->delegate()Ljava/util/NavigableSet;
 
@@ -333,7 +379,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1320
+    .line 1372
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -343,6 +389,15 @@
 
 .method public headSet(Ljava/lang/Object;)Ljava/util/SortedSet;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "toElement"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)",
@@ -353,7 +408,7 @@
 
     const/4 v0, 0x0
 
-    .line 1325
+    .line 1377
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->headSet(Ljava/lang/Object;Z)Ljava/util/NavigableSet;
 
     move-result-object p0
@@ -363,18 +418,30 @@
 
 .method public higher(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)TE;"
         }
     .end annotation
 
-    .line 1330
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1383
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1331
+    .line 1384
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->delegate()Ljava/util/NavigableSet;
 
@@ -391,7 +458,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1332
+    .line 1385
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -401,18 +468,30 @@
 
 .method public lower(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)TE;"
         }
     .end annotation
 
-    .line 1337
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1391
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1338
+    .line 1392
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->delegate()Ljava/util/NavigableSet;
 
@@ -429,7 +508,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1339
+    .line 1393
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -445,12 +524,15 @@
         }
     .end annotation
 
-    .line 1344
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1399
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1345
+    .line 1400
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->delegate()Ljava/util/NavigableSet;
 
@@ -467,7 +549,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1346
+    .line 1401
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -483,12 +565,15 @@
         }
     .end annotation
 
-    .line 1351
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1407
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1352
+    .line 1408
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->delegate()Ljava/util/NavigableSet;
 
@@ -505,7 +590,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1353
+    .line 1409
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -515,6 +600,21 @@
 
 .method public subSet(Ljava/lang/Object;ZLjava/lang/Object;Z)Ljava/util/NavigableSet;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "fromElement",
+            "fromInclusive",
+            "toElement",
+            "toInclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;ZTE;Z)",
@@ -523,12 +623,12 @@
         }
     .end annotation
 
-    .line 1359
+    .line 1415
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1361
+    .line 1417
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->delegate()Ljava/util/NavigableSet;
 
@@ -540,7 +640,7 @@
 
     iget-object p0, p0, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->mutex:Ljava/lang/Object;
 
-    .line 1360
+    .line 1416
     invoke-static {p1, p0}, Lcom/google/common/collect/Synchronized;->navigableSet(Ljava/util/NavigableSet;Ljava/lang/Object;)Ljava/util/NavigableSet;
 
     move-result-object p0
@@ -552,7 +652,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1362
+    .line 1418
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -562,6 +662,17 @@
 
 .method public subSet(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromElement",
+            "toElement"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;TE;)",
@@ -574,7 +685,7 @@
 
     const/4 v1, 0x0
 
-    .line 1367
+    .line 1423
     invoke-virtual {p0, p1, v0, p2, v1}, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->subSet(Ljava/lang/Object;ZLjava/lang/Object;Z)Ljava/util/NavigableSet;
 
     move-result-object p0
@@ -584,6 +695,17 @@
 
 .method public tailSet(Ljava/lang/Object;Z)Ljava/util/NavigableSet;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromElement",
+            "inclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;Z)",
@@ -592,12 +714,12 @@
         }
     .end annotation
 
-    .line 1372
+    .line 1428
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1373
+    .line 1429
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->delegate()Ljava/util/NavigableSet;
 
@@ -620,7 +742,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1374
+    .line 1430
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -630,6 +752,15 @@
 
 .method public tailSet(Ljava/lang/Object;)Ljava/util/SortedSet;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fromElement"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)",
@@ -640,7 +771,7 @@
 
     const/4 v0, 0x1
 
-    .line 1379
+    .line 1435
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;->tailSet(Ljava/lang/Object;Z)Ljava/util/NavigableSet;
 
     move-result-object p0

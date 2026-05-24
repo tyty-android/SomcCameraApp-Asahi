@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/graph/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<N:",
@@ -25,6 +28,15 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/graph/NetworkBuilder;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "builder"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -33,7 +45,7 @@
         }
     .end annotation
 
-    .line 47
+    .line 49
     invoke-direct {p0, p1}, Lcom/google/common/graph/StandardNetwork;-><init>(Lcom/google/common/graph/NetworkBuilder;)V
 
     return-void
@@ -41,6 +53,15 @@
 
 .method private addNodeInternal(Ljava/lang/Object;)Lcom/google/common/graph/NetworkConnections;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)",
@@ -49,12 +70,12 @@
         }
     .end annotation
 
-    .line 70
+    .line 72
     invoke-direct {p0}, Lcom/google/common/graph/StandardMutableNetwork;->newConnections()Lcom/google/common/graph/NetworkConnections;
 
     move-result-object v0
 
-    .line 71
+    .line 73
     iget-object p0, p0, Lcom/google/common/graph/StandardMutableNetwork;->nodeConnections:Lcom/google/common/graph/MapIteratorCache;
 
     invoke-virtual {p0, p1, v0}, Lcom/google/common/graph/MapIteratorCache;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -86,28 +107,28 @@
         }
     .end annotation
 
-    .line 165
+    .line 168
     invoke-virtual {p0}, Lcom/google/common/graph/StandardMutableNetwork;->isDirected()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 166
+    .line 169
     invoke-virtual {p0}, Lcom/google/common/graph/StandardMutableNetwork;->allowsParallelEdges()Z
 
     move-result p0
 
     if-eqz p0, :cond_0
 
-    .line 167
+    .line 170
     invoke-static {}, Lcom/google/common/graph/DirectedMultiNetworkConnections;->of()Lcom/google/common/graph/DirectedMultiNetworkConnections;
 
     move-result-object p0
 
     goto :goto_0
 
-    .line 168
+    .line 171
     :cond_0
     invoke-static {}, Lcom/google/common/graph/DirectedNetworkConnections;->of()Lcom/google/common/graph/DirectedNetworkConnections;
 
@@ -115,7 +136,7 @@
 
     goto :goto_0
 
-    .line 169
+    .line 172
     :cond_1
     invoke-virtual {p0}, Lcom/google/common/graph/StandardMutableNetwork;->allowsParallelEdges()Z
 
@@ -123,14 +144,14 @@
 
     if-eqz p0, :cond_2
 
-    .line 170
+    .line 173
     invoke-static {}, Lcom/google/common/graph/UndirectedMultiNetworkConnections;->of()Lcom/google/common/graph/UndirectedMultiNetworkConnections;
 
     move-result-object p0
 
     goto :goto_0
 
-    .line 171
+    .line 174
     :cond_2
     invoke-static {}, Lcom/google/common/graph/UndirectedNetworkConnections;->of()Lcom/google/common/graph/UndirectedNetworkConnections;
 
@@ -144,6 +165,17 @@
 # virtual methods
 .method public addEdge(Lcom/google/common/graph/EndpointPair;Ljava/lang/Object;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "endpoints",
+            "edge"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -152,10 +184,10 @@
         }
     .end annotation
 
-    .line 122
+    .line 124
     invoke-virtual {p0, p1}, Lcom/google/common/graph/StandardMutableNetwork;->validateEndpoints(Lcom/google/common/graph/EndpointPair;)V
 
-    .line 123
+    .line 125
     invoke-virtual {p1}, Lcom/google/common/graph/EndpointPair;->nodeU()Ljava/lang/Object;
 
     move-result-object v0
@@ -173,28 +205,41 @@
 
 .method public addEdge(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "nodeU",
+            "nodeV",
+            "edge"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;TN;TE;)Z"
         }
     .end annotation
 
-    .line 78
+    .line 80
     const-string v0, "nodeU"
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 79
+    .line 81
     const-string v0, "nodeV"
 
     invoke-static {p2, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 80
+    .line 82
     const-string v0, "edge"
 
     invoke-static {p3, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 82
+    .line 84
     invoke-virtual {p0, p3}, Lcom/google/common/graph/StandardMutableNetwork;->containsEdge(Ljava/lang/Object;)Z
 
     move-result v0
@@ -203,29 +248,29 @@
 
     if-eqz v0, :cond_0
 
-    .line 83
+    .line 85
     invoke-virtual {p0, p3}, Lcom/google/common/graph/StandardMutableNetwork;->incidentNodes(Ljava/lang/Object;)Lcom/google/common/graph/EndpointPair;
 
     move-result-object v0
 
-    .line 84
+    .line 86
     invoke-static {p0, p1, p2}, Lcom/google/common/graph/EndpointPair;->of(Lcom/google/common/graph/Network;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/graph/EndpointPair;
 
     move-result-object p0
 
-    .line 86
+    .line 88
     invoke-virtual {v0, p0}, Lcom/google/common/graph/EndpointPair;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
     const-string p2, "Edge %s already exists between the following nodes: %s, so it cannot be reused to connect the following nodes: %s."
 
-    .line 85
+    .line 87
     invoke-static {p1, p2, p3, v0, p0}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     return v1
 
-    .line 93
+    .line 95
     :cond_0
     iget-object v0, p0, Lcom/google/common/graph/StandardMutableNetwork;->nodeConnections:Lcom/google/common/graph/MapIteratorCache;
 
@@ -235,7 +280,7 @@
 
     check-cast v0, Lcom/google/common/graph/NetworkConnections;
 
-    .line 94
+    .line 96
     invoke-virtual {p0}, Lcom/google/common/graph/StandardMutableNetwork;->allowsParallelEdges()Z
 
     move-result v2
@@ -246,7 +291,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 96
+    .line 98
     invoke-interface {v0}, Lcom/google/common/graph/NetworkConnections;->successors()Ljava/util/Set;
 
     move-result-object v2
@@ -263,16 +308,16 @@
     :cond_2
     const-string v2, "Nodes %s and %s are already connected by a different edge. To construct a graph that allows parallel edges, call allowsParallelEdges(true) on the Builder."
 
-    .line 95
+    .line 97
     invoke-static {v1, v2, p1, p2}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 101
+    .line 103
     :cond_3
     invoke-virtual {p1, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
-    .line 102
+    .line 104
     invoke-virtual {p0}, Lcom/google/common/graph/StandardMutableNetwork;->allowsSelfLoops()Z
 
     move-result v2
@@ -281,7 +326,7 @@
 
     xor-int/lit8 v2, v1, 0x1
 
-    .line 103
+    .line 105
     const-string v4, "Cannot add self-loop edge on node %s, as self-loops are not allowed. To construct a graph that allows self-loops, call allowsSelfLoops(true) on the Builder."
 
     invoke-static {v2, v4, p1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;)V
@@ -289,16 +334,16 @@
     :cond_4
     if-nez v0, :cond_5
 
-    .line 107
+    .line 109
     invoke-direct {p0, p1}, Lcom/google/common/graph/StandardMutableNetwork;->addNodeInternal(Ljava/lang/Object;)Lcom/google/common/graph/NetworkConnections;
 
     move-result-object v0
 
-    .line 109
+    .line 111
     :cond_5
     invoke-interface {v0, p3, p2}, Lcom/google/common/graph/NetworkConnections;->addOutEdge(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 110
+    .line 112
     iget-object v0, p0, Lcom/google/common/graph/StandardMutableNetwork;->nodeConnections:Lcom/google/common/graph/MapIteratorCache;
 
     invoke-virtual {v0, p2}, Lcom/google/common/graph/MapIteratorCache;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -309,16 +354,16 @@
 
     if-nez v0, :cond_6
 
-    .line 112
+    .line 114
     invoke-direct {p0, p2}, Lcom/google/common/graph/StandardMutableNetwork;->addNodeInternal(Ljava/lang/Object;)Lcom/google/common/graph/NetworkConnections;
 
     move-result-object v0
 
-    .line 114
+    .line 116
     :cond_6
     invoke-interface {v0, p3, p1, v1}, Lcom/google/common/graph/NetworkConnections;->addInEdge(Ljava/lang/Object;Ljava/lang/Object;Z)V
 
-    .line 115
+    .line 117
     iget-object p0, p0, Lcom/google/common/graph/StandardMutableNetwork;->edgeToReferenceNode:Lcom/google/common/graph/MapIteratorCache;
 
     invoke-virtual {p0, p3, p1}, Lcom/google/common/graph/MapIteratorCache;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -328,18 +373,27 @@
 
 .method public addNode(Ljava/lang/Object;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)Z"
         }
     .end annotation
 
-    .line 53
+    .line 55
     const-string v0, "node"
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 55
+    .line 57
     invoke-virtual {p0, p1}, Lcom/google/common/graph/StandardMutableNetwork;->containsNode(Ljava/lang/Object;)Z
 
     move-result v0
@@ -350,7 +404,7 @@
 
     return p0
 
-    .line 59
+    .line 61
     :cond_0
     invoke-direct {p0, p1}, Lcom/google/common/graph/StandardMutableNetwork;->addNodeInternal(Ljava/lang/Object;)Lcom/google/common/graph/NetworkConnections;
 
@@ -361,18 +415,27 @@
 
 .method public removeEdge(Ljava/lang/Object;)Z
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "edge"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)Z"
         }
     .end annotation
 
-    .line 148
+    .line 150
     const-string v0, "edge"
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 150
+    .line 152
     iget-object v0, p0, Lcom/google/common/graph/StandardMutableNetwork;->edgeToReferenceNode:Lcom/google/common/graph/MapIteratorCache;
 
     invoke-virtual {v0, p1}, Lcom/google/common/graph/MapIteratorCache;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -385,7 +448,7 @@
 
     return v1
 
-    .line 155
+    .line 158
     :cond_0
     iget-object v2, p0, Lcom/google/common/graph/StandardMutableNetwork;->nodeConnections:Lcom/google/common/graph/MapIteratorCache;
 
@@ -395,12 +458,18 @@
 
     check-cast v2, Lcom/google/common/graph/NetworkConnections;
 
-    .line 156
+    invoke-static {v2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/google/common/graph/NetworkConnections;
+
+    .line 159
     invoke-interface {v2, p1}, Lcom/google/common/graph/NetworkConnections;->adjacentNode(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 157
+    .line 160
     iget-object v4, p0, Lcom/google/common/graph/StandardMutableNetwork;->nodeConnections:Lcom/google/common/graph/MapIteratorCache;
 
     invoke-virtual {v4, v3}, Lcom/google/common/graph/MapIteratorCache;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -409,10 +478,16 @@
 
     check-cast v4, Lcom/google/common/graph/NetworkConnections;
 
-    .line 158
+    invoke-static {v4}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lcom/google/common/graph/NetworkConnections;
+
+    .line 161
     invoke-interface {v2, p1}, Lcom/google/common/graph/NetworkConnections;->removeOutEdge(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 159
+    .line 162
     invoke-virtual {p0}, Lcom/google/common/graph/StandardMutableNetwork;->allowsSelfLoops()Z
 
     move-result v2
@@ -432,7 +507,7 @@
     :cond_1
     invoke-interface {v4, p1, v1}, Lcom/google/common/graph/NetworkConnections;->removeInEdge(Ljava/lang/Object;Z)Ljava/lang/Object;
 
-    .line 160
+    .line 163
     iget-object p0, p0, Lcom/google/common/graph/StandardMutableNetwork;->edgeToReferenceNode:Lcom/google/common/graph/MapIteratorCache;
 
     invoke-virtual {p0, p1}, Lcom/google/common/graph/MapIteratorCache;->remove(Ljava/lang/Object;)Ljava/lang/Object;
@@ -442,18 +517,27 @@
 
 .method public removeNode(Ljava/lang/Object;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)Z"
         }
     .end annotation
 
-    .line 129
+    .line 131
     const-string v0, "node"
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 131
+    .line 133
     iget-object v0, p0, Lcom/google/common/graph/StandardMutableNetwork;->nodeConnections:Lcom/google/common/graph/MapIteratorCache;
 
     invoke-virtual {v0, p1}, Lcom/google/common/graph/MapIteratorCache;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -468,7 +552,7 @@
 
     return p0
 
-    .line 138
+    .line 140
     :cond_0
     invoke-interface {v0}, Lcom/google/common/graph/NetworkConnections;->incidentEdges()Ljava/util/Set;
 
@@ -493,12 +577,12 @@
 
     move-result-object v1
 
-    .line 139
+    .line 141
     invoke-virtual {p0, v1}, Lcom/google/common/graph/StandardMutableNetwork;->removeEdge(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 141
+    .line 143
     :cond_1
     iget-object p0, p0, Lcom/google/common/graph/StandardMutableNetwork;->nodeConnections:Lcom/google/common/graph/MapIteratorCache;
 

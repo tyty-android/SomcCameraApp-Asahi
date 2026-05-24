@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function5;
+.implements Lkotlin/jvm/functions/Function7;
 
 
 # instance fields
@@ -24,7 +24,7 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
@@ -36,11 +36,15 @@
 
     check-cast p3, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    check-cast p4, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
+    check-cast p4, Ljava/lang/Boolean;
 
-    check-cast p5, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+    check-cast p5, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
 
-    invoke-static/range {p0 .. p5}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->$r8$lambda$wTe_sFIHYv_uS5K6kfcItQcJtoQ(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Ljava/lang/Float;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljava/lang/String;
+    check-cast p6, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+
+    check-cast p7, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+
+    invoke-static/range {p0 .. p7}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->$r8$lambda$y992Y_sFWZGuypo-pQ5TuEZ6RvQ(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Ljava/lang/Float;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljava/lang/Boolean;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;)Ljava/lang/String;
 
     move-result-object p0
 

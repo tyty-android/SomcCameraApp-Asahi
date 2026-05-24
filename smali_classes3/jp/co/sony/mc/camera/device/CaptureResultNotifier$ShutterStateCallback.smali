@@ -19,13 +19,45 @@
 .end method
 
 .method public abstract onShutterProcessFail(I)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "captureId"
+        }
+    .end annotation
 .end method
 
 .method public abstract onShutterProcessFinish(II)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "captureId",
+            "captureNum"
+        }
+    .end annotation
 .end method
 
 .method public abstract onShutterProcessStart()V
 .end method
 
 .method public abstract onShutterProcessing(IIZLandroid/hardware/camera2/TotalCaptureResult;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "captureId",
+            "index",
+            "afSuccess",
+            "totalCaptureResult"
+        }
+    .end annotation
 .end method

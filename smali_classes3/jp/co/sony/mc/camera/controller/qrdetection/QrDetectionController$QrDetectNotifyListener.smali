@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract onDetectResult(Ljava/lang/String;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 .end method

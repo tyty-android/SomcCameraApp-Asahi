@@ -55,6 +55,14 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 53
     invoke-direct {p0, p1}, Landroidx/appcompat/widget/AppCompatImageView;-><init>(Landroid/content/Context;)V
@@ -99,6 +107,16 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "attrs"
+        }
+    .end annotation
 
     .line 49
     invoke-direct {p0, p1, p2}, Landroidx/appcompat/widget/AppCompatImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -143,6 +161,18 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "attrs",
+            "defStyle"
+        }
+    .end annotation
 
     .line 57
     invoke-direct {p0, p1, p2, p3}, Landroidx/appcompat/widget/AppCompatImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -187,6 +217,14 @@
 
 .method private getAnimationRatio(I)F
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "duration"
+        }
+    .end annotation
 
     const/high16 p0, 0x437a0000    # 250.0f
 
@@ -199,6 +237,14 @@
 
 .method private getDuration(Ljp/co/sony/mc/camera/setting/SelfTimerInterface;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "selfTimer"
+        }
+    .end annotation
 
     .line 188
     invoke-interface {p1}, Ljp/co/sony/mc/camera/setting/SelfTimerInterface;->getDurationInMillisecond()I
@@ -247,6 +293,14 @@
 
 .method private setAnimator(Ljp/co/sony/mc/camera/setting/SelfTimerInterface;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "selfTimer"
+        }
+    .end annotation
 
     .line 218
     invoke-interface {p1}, Ljp/co/sony/mc/camera/setting/SelfTimerInterface;->getCountDownIconId()I
@@ -402,6 +456,14 @@
 
 .method public onDraw(Landroid/graphics/Canvas;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "canvas"
+        }
+    .end annotation
 
     .line 62
     invoke-super {p0, p1}, Landroidx/appcompat/widget/AppCompatImageView;->onDraw(Landroid/graphics/Canvas;)V
@@ -424,7 +486,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f070812
+    const v2, 0x7f0707c8
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -437,7 +499,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f07080f
+    const v2, 0x7f0707c5
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -457,7 +519,7 @@
     .line 91
     iget-boolean v1, p0, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->mIsTenDigit:Z
 
-    const v4, 0x7f070810
+    const v4, 0x7f0707c6
 
     if-eqz v1, :cond_0
 
@@ -548,15 +610,15 @@
 
     const-string v1, "]"
 
-    const-string v4, "setImage() [Irregal Value = "
+    const-string/jumbo v4, "setImage() [Irregal Value = "
 
-    const-string v5, "setImage() : mCurrentCount = "
+    const-string/jumbo v5, "setImage() : mCurrentCount = "
 
-    const v6, 0x7f0802b3
+    const v6, 0x7f080339
 
-    const v7, 0x7f0802b2
+    const v7, 0x7f080338
 
-    const v8, 0x7f0802b1
+    const v8, 0x7f080337
 
     const/4 v9, 0x1
 
@@ -670,7 +732,7 @@
     goto :goto_1
 
     :pswitch_0
-    const v0, 0x7f0802b9
+    const v0, 0x7f08033f
 
     .line 141
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->setImageResource(I)V
@@ -678,7 +740,7 @@
     goto/16 :goto_2
 
     :pswitch_1
-    const v0, 0x7f0802b8
+    const v0, 0x7f08033e
 
     .line 144
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->setImageResource(I)V
@@ -686,7 +748,7 @@
     goto/16 :goto_2
 
     :pswitch_2
-    const v0, 0x7f0802b7
+    const v0, 0x7f08033d
 
     .line 147
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->setImageResource(I)V
@@ -694,7 +756,7 @@
     goto :goto_2
 
     :pswitch_3
-    const v0, 0x7f0802b6
+    const v0, 0x7f08033c
 
     .line 150
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->setImageResource(I)V
@@ -702,7 +764,7 @@
     goto :goto_2
 
     :pswitch_4
-    const v0, 0x7f0802b5
+    const v0, 0x7f08033b
 
     .line 153
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->setImageResource(I)V
@@ -710,7 +772,7 @@
     goto :goto_2
 
     :pswitch_5
-    const v0, 0x7f0802b4
+    const v0, 0x7f08033a
 
     .line 156
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->setImageResource(I)V
@@ -738,7 +800,7 @@
     :pswitch_9
     if-le v0, v3, :cond_a
 
-    const v0, 0x7f0802b0
+    const v0, 0x7f080336
 
     .line 169
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->setImageResource(I)V
@@ -828,6 +890,14 @@
 
 .method public setIsTenDigit(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isTenDigit"
+        }
+    .end annotation
 
     .line 81
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->mIsTenDigit:Z
@@ -837,6 +907,14 @@
 
 .method public setSelfTimer(Ljp/co/sony/mc/camera/setting/SelfTimerInterface;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "selfTimer"
+        }
+    .end annotation
 
     .line 203
     invoke-interface {p1}, Ljp/co/sony/mc/camera/setting/SelfTimerInterface;->getDurationInMillisecond()I
@@ -855,6 +933,14 @@
 
 .method public setVisibility(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "visibility"
+        }
+    .end annotation
 
     .line 214
     invoke-super {p0, p1}, Landroidx/appcompat/widget/AppCompatImageView;->setVisibility(I)V

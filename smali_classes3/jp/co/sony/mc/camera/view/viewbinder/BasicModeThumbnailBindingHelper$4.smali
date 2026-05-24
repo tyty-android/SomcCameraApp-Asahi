@@ -91,16 +91,22 @@
 
     move-result v0
 
-    if-ne v0, p2, :cond_0
+    const/4 v1, 0x1
 
     .line 91
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v2
+
+    if-ne v0, p2, :cond_0
+
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper$4;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->getOnClosed()Lkotlin/jvm/functions/Function0;
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->getOnClosed()Lkotlin/jvm/functions/Function1;
 
     move-result-object p0
 
-    invoke-interface {p0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+    invoke-interface {p0, v2}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
@@ -116,19 +122,13 @@
 
     move-result-object v0
 
-    const/4 v1, 0x1
-
     if-eqz v0, :cond_1
 
-    new-instance v2, Lkotlin/Pair;
+    new-instance v3, Lkotlin/Pair;
 
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-direct {v3, v2, p1}, Lkotlin/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    move-result-object v3
-
-    invoke-direct {v2, v3, p1}, Lkotlin/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
-
-    invoke-virtual {v0, v2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->onDialPickerScroll(Lkotlin/Pair;)V
+    invoke-virtual {v0, v3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->onDialPickerScroll(Lkotlin/Pair;)V
 
     :cond_1
     const/4 p1, -0x1

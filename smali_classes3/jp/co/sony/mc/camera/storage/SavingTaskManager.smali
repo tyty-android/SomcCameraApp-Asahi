@@ -35,8 +35,6 @@
 
 .field private mHandler:Landroid/os/Handler;
 
-.field private mImageCloseHandler:Landroid/os/Handler;
-
 .field private mInquiry:Ljp/co/sony/mc/camera/storage/SavingTaskInquiry;
 
 .field private mIsBurstPrimaryAvailable:Landroid/util/Pair;
@@ -83,14 +81,6 @@
 
 
 # direct methods
-.method static bridge synthetic -$$Nest$fgetmImageCloseHandler(Ljp/co/sony/mc/camera/storage/SavingTaskManager;)Landroid/os/Handler;
-    .locals 0
-
-    iget-object p0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mImageCloseHandler:Landroid/os/Handler;
-
-    return-object p0
-.end method
-
 .method static bridge synthetic -$$Nest$fgetmIsBurstPrimaryAvailable(Ljp/co/sony/mc/camera/storage/SavingTaskManager;)Landroid/util/Pair;
     .locals 0
 
@@ -182,7 +172,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 118
+    .line 122
     const-string v0, "SavingTask"
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/ThreadUtil;->buildExecutor(Ljava/lang/String;)Ljava/util/concurrent/ExecutorService;
@@ -196,6 +186,19 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljp/co/sony/mc/camera/storage/CameraStorageManager;Ljava/util/Map;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "storageManager",
+            "storageAccessSemaphoreMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -208,31 +211,28 @@
         }
     .end annotation
 
-    .line 716
+    .line 793
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 86
+    .line 90
     iput-object v0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mStorageManager:Ljp/co/sony/mc/camera/storage/CameraStorageManager;
 
-    .line 89
+    .line 93
     iput-object v0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mStoreVideoThread:Ljava/lang/Thread;
 
-    .line 93
+    .line 97
     new-instance v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$1;
 
     invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/storage/SavingTaskManager$1;-><init>(Ljp/co/sony/mc/camera/storage/SavingTaskManager;)V
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mInquiry:Ljp/co/sony/mc/camera/storage/SavingTaskInquiry;
 
-    .line 121
+    .line 125
     iput-object v0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mStoreDataHandler:Landroid/os/Handler;
 
-    .line 124
-    iput-object v0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mImageCloseHandler:Landroid/os/Handler;
-
-    .line 163
+    .line 164
     new-instance v0, Landroid/util/Pair;
 
     const/4 v1, -0x1
@@ -251,26 +251,26 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mIsBurstPrimaryAvailable:Landroid/util/Pair;
 
-    .line 718
+    .line 795
     iput-object p1, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mContext:Landroid/content/Context;
 
-    .line 719
+    .line 796
     iput-object p3, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mStorageAccessSemaphoreMap:Ljava/util/Map;
 
-    .line 723
+    .line 800
     iput-object p2, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mStorageManager:Ljp/co/sony/mc/camera/storage/CameraStorageManager;
 
-    .line 728
+    .line 805
     new-instance p2, Landroid/os/HandlerThread;
 
     const-string p3, "SavingTaskManager"
 
     invoke-direct {p2, p3}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
 
-    .line 729
+    .line 806
     invoke-virtual {p2}, Landroid/os/HandlerThread;->start()V
 
-    .line 730
+    .line 807
     new-instance p3, Landroid/os/Handler;
 
     invoke-virtual {p2}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
@@ -281,35 +281,14 @@
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mStoreDataHandler:Landroid/os/Handler;
 
-    .line 732
-    new-instance p2, Landroid/os/HandlerThread;
-
-    const-string p3, "ImageClose"
-
-    invoke-direct {p2, p3}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
-
-    .line 733
-    invoke-virtual {p2}, Landroid/os/HandlerThread;->start()V
-
-    .line 734
-    new-instance p3, Landroid/os/Handler;
-
-    invoke-virtual {p2}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
-
-    move-result-object p2
-
-    invoke-direct {p3, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
-
-    iput-object p3, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mImageCloseHandler:Landroid/os/Handler;
-
-    .line 736
+    .line 809
     new-instance p2, Ljp/co/sony/mc/camera/mediasaving/updator/MediaProviderUpdator;
 
     invoke-direct {p2, p1}, Ljp/co/sony/mc/camera/mediasaving/updator/MediaProviderUpdator;-><init>(Landroid/content/Context;)V
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mUpdator:Ljp/co/sony/mc/camera/mediasaving/updator/MediaProviderUpdator;
 
-    .line 738
+    .line 811
     new-instance p1, Landroid/os/Handler;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
@@ -320,14 +299,14 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mHandler:Landroid/os/Handler;
 
-    .line 740
+    .line 813
     new-instance p1, Ljava/util/HashMap;
 
     invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mSavingTaskQueueMap:Ljava/util/Map;
 
-    .line 741
+    .line 814
     invoke-static {}, Ljp/co/sony/mc/camera/storage/StorageUtil;->getMountableStorageTypes()Ljava/util/List;
 
     move-result-object p1
@@ -349,7 +328,7 @@
 
     check-cast p2, Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
-    .line 742
+    .line 815
     iget-object p3, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mSavingTaskQueueMap:Ljava/util/Map;
 
     new-instance v0, Ljava/util/concurrent/ConcurrentLinkedQueue;
@@ -367,7 +346,7 @@
 .method private static getUsedMemory()J
     .locals 4
 
-    .line 1038
+    .line 1111
     invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
 
     move-result-object v0
@@ -391,8 +370,16 @@
 
 .method private static isEnoughMemory(J)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "usedMemory"
+        }
+    .end annotation
 
-    .line 1048
+    .line 1121
     invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
 
     move-result-object v0
@@ -426,8 +413,22 @@
 
 .method private notifyStoreComplete(Ljp/co/sony/mc/camera/mediasaving/MediaSavingResult;Landroid/net/Uri;Ljp/co/sony/mc/camera/storage/SavingRequest;Ljava/lang/String;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "result",
+            "uri",
+            "request",
+            "filePath"
+        }
+    .end annotation
 
-    .line 798
+    .line 871
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     const/4 v1, 0x0
@@ -444,13 +445,13 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 800
+    .line 873
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mStoreDataHandler:Landroid/os/Handler;
 
     if-eqz v0, :cond_1
 
-    .line 801
+    .line 874
     new-instance v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$NotifyStoreCompletedTask;
 
     new-instance v2, Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;
@@ -467,7 +468,7 @@
 
     goto :goto_0
 
-    .line 804
+    .line 877
     :cond_1
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
@@ -488,8 +489,16 @@
 
 .method private popPhotoSavingTask(Ljp/co/sony/mc/camera/storage/SavingTaskManager$PhotoSavingTask;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "task"
+        }
+    .end annotation
 
-    .line 779
+    .line 852
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
@@ -506,7 +515,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 780
+    .line 853
     :cond_0
     invoke-static {}, Ljp/co/sony/mc/camera/storage/StorageUtil;->getMountableStorageTypes()Ljava/util/List;
 
@@ -529,7 +538,7 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
-    .line 781
+    .line 854
     iget-object v2, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mSavingTaskQueueMap:Ljava/util/Map;
 
     invoke-interface {v2, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -548,8 +557,16 @@
 
 .method private pushPhotoSavingTask(Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "request"
+        }
+    .end annotation
 
-    .line 771
+    .line 844
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
@@ -564,7 +581,7 @@
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 772
+    .line 845
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;->getRequestId()I
 
     move-result v2
@@ -581,16 +598,16 @@
 
     aput-object v1, v0, v2
 
-    .line 771
+    .line 844
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 773
+    .line 846
     :cond_0
     new-instance v0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$PhotoSavingTask;
 
     invoke-direct {v0, p0, p1}, Ljp/co/sony/mc/camera/storage/SavingTaskManager$PhotoSavingTask;-><init>(Ljp/co/sony/mc/camera/storage/SavingTaskManager;Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;)V
 
-    .line 774
+    .line 847
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mSavingTaskQueueMap:Ljava/util/Map;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;->getStorageType()Ljp/co/sony/mc/camera/storage/Storage$StorageType;
@@ -605,7 +622,7 @@
 
     invoke-interface {p0, v0}, Ljava/util/Queue;->add(Ljava/lang/Object;)Z
 
-    .line 775
+    .line 848
     sget-object p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mExecutor:Ljava/util/concurrent/ExecutorService;
 
     invoke-interface {p0, v0}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
@@ -615,8 +632,16 @@
 
 .method private runOnUiThread(Ljava/lang/Runnable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "runnable"
+        }
+    .end annotation
 
-    .line 1071
+    .line 1138
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {p0, p1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
@@ -628,8 +653,16 @@
 # virtual methods
 .method public canPushStoreTask(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)Z
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "storageType"
+        }
+    .end annotation
 
-    .line 1004
+    .line 1077
     invoke-static {}, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->getUsedMemory()J
 
     move-result-wide v0
@@ -644,7 +677,7 @@
 
     return v1
 
-    .line 1008
+    .line 1081
     :cond_0
     invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
 
@@ -652,7 +685,7 @@
 
     invoke-virtual {v0}, Ljava/lang/Runtime;->gc()V
 
-    .line 1010
+    .line 1083
     invoke-static {}, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->getUsedMemory()J
 
     move-result-wide v2
@@ -665,7 +698,7 @@
 
     return v1
 
-    .line 1014
+    .line 1087
     :cond_1
     new-array v0, v1, [Ljava/lang/String;
 
@@ -677,7 +710,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
-    .line 1016
+    .line 1089
     new-array v0, v1, [Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -702,7 +735,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
-    .line 1017
+    .line 1090
     new-array v0, v1, [Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -733,7 +766,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
-    .line 1018
+    .line 1091
     new-array v0, v1, [Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -766,7 +799,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
-    .line 1019
+    .line 1092
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_2
@@ -777,7 +810,7 @@
 
     if-nez p1, :cond_2
 
-    .line 1022
+    .line 1095
     :try_start_0
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -805,14 +838,14 @@
 
     move-result-object p0
 
-    .line 1024
+    .line 1097
     invoke-static {p0}, Landroid/os/Debug;->dumpHprofData(Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
-    .line 1026
+    .line 1099
     :catch_0
     new-array p0, v1, [Ljava/lang/String;
 
@@ -830,7 +863,7 @@
 .method public getInquiry()Ljp/co/sony/mc/camera/storage/SavingTaskInquiry;
     .locals 0
 
-    .line 786
+    .line 859
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mInquiry:Ljp/co/sony/mc/camera/storage/SavingTaskInquiry;
 
     return-object p0
@@ -838,8 +871,16 @@
 
 .method public getRemainQueueSize(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
-    .line 1079
+    .line 1146
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mSavingTaskQueueMap:Ljava/util/Map;
 
     invoke-interface {p0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -856,9 +897,9 @@
 .end method
 
 .method public release()V
-    .locals 3
+    .locals 2
 
-    .line 1052
+    .line 1125
     iget-object v0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mStoreDataHandler:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
@@ -871,7 +912,7 @@
 
     move-result-object v0
 
-    .line 1053
+    .line 1126
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
     move-result-object v1
@@ -882,7 +923,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 1054
+    .line 1127
     iget-object v0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mStoreDataHandler:Landroid/os/Handler;
 
     invoke-virtual {v0}, Landroid/os/Handler;->getLooper()Landroid/os/Looper;
@@ -894,53 +935,24 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 1056
+    .line 1129
     iput-object v0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mStoreDataHandler:Landroid/os/Handler;
-
-    .line 1058
-    iget-object v1, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mImageCloseHandler:Landroid/os/Handler;
-
-    if-eqz v1, :cond_1
-
-    invoke-virtual {v1}, Landroid/os/Handler;->getLooper()Landroid/os/Looper;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/os/Looper;->getThread()Ljava/lang/Thread;
-
-    move-result-object v1
-
-    .line 1059
-    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroid/os/Looper;->getThread()Ljava/lang/Thread;
-
-    move-result-object v2
-
-    if-eq v1, v2, :cond_1
-
-    .line 1060
-    iget-object v1, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mImageCloseHandler:Landroid/os/Handler;
-
-    invoke-virtual {v1}, Landroid/os/Handler;->getLooper()Landroid/os/Looper;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/os/Looper;->quitSafely()V
-
-    .line 1062
-    :cond_1
-    iput-object v0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mImageCloseHandler:Landroid/os/Handler;
 
     return-void
 .end method
 
 .method public storePicture(Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "request"
+        }
+    .end annotation
 
-    .line 761
+    .line 834
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     const/4 v1, 0x0
@@ -957,7 +969,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 762
+    .line 835
     :cond_0
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
@@ -971,18 +983,18 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 763
+    .line 836
     :cond_1
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;->log()V
 
-    .line 765
+    .line 838
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;->hasImageSource()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 766
+    .line 839
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->pushPhotoSavingTask(Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;)V
 
     :cond_2
@@ -991,8 +1003,16 @@
 
 .method public storeVideo(Ljp/co/sony/mc/camera/storage/VideoSavingRequest;)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "request"
+        }
+    .end annotation
 
-    .line 858
+    .line 931
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     const/4 v1, 0x0
@@ -1009,16 +1029,16 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 859
+    .line 932
     :cond_0
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/storage/VideoSavingRequest;->log()V
 
-    .line 862
+    .line 935
     iget-object v0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mStoreVideoThread:Ljava/lang/Thread;
 
     if-eqz v0, :cond_5
 
-    .line 863
+    .line 936
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_1
@@ -1034,7 +1054,7 @@
     :cond_1
     const/4 v0, 0x0
 
-    .line 865
+    .line 938
     :try_start_0
     sget-boolean v3, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
@@ -1048,7 +1068,7 @@
 
     invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 866
+    .line 939
     :cond_2
     iget-object v3, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mStoreVideoThread:Ljava/lang/Thread;
 
@@ -1056,12 +1076,12 @@
 
     invoke-virtual {v3, v4, v5}, Ljava/lang/Thread;->join(J)V
 
-    .line 867
+    .line 940
     iget-object v3, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mStoreVideoThread:Ljava/lang/Thread;
 
     if-eqz v3, :cond_3
 
-    .line 869
+    .line 942
     new-array v3, v2, [Ljava/lang/String;
 
     const-string/jumbo v4, "storeVideo: mStoreVideoThread timeout."
@@ -1070,12 +1090,12 @@
 
     invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
-    .line 872
+    .line 945
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/storage/VideoSavingRequest;->getStorageType()Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
     move-result-object v3
 
-    .line 873
+    .line 946
     iget-object v4, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mStorageManager:Ljp/co/sony/mc/camera/storage/CameraStorageManager;
 
     sget-object v5, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateInterval;->IMMEDIATE:Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateInterval;
@@ -1084,15 +1104,15 @@
 
     invoke-virtual {v4, v3, v5, v6}, Ljp/co/sony/mc/camera/storage/CameraStorageManager;->requestVolumeCheck(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateInterval;Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;)V
 
-    .line 875
+    .line 948
     iget-object v4, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mStorageManager:Ljp/co/sony/mc/camera/storage/CameraStorageManager;
 
     sget-object v5, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;->VIDEO_STORING_COMPLETED:Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
 
-    .line 876
+    .line 949
     invoke-virtual {v4, v3, v5}, Ljp/co/sony/mc/camera/storage/CameraStorageManager;->requestWriteCheck(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;)V
 
-    .line 877
+    .line 950
     iget-object v4, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mStorageManager:Ljp/co/sony/mc/camera/storage/CameraStorageManager;
 
     invoke-virtual {v4, v2, v3}, Ljp/co/sony/mc/camera/storage/CameraStorageManager;->checkRemain(ZLjp/co/sony/mc/camera/storage/Storage$StorageType;)J
@@ -1100,12 +1120,12 @@
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 884
+    .line 957
     iput-object v0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mStoreVideoThread:Ljava/lang/Thread;
 
     return-void
 
-    .line 880
+    .line 953
     :cond_3
     :try_start_1
     sget-boolean v3, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -1130,7 +1150,7 @@
 
     goto :goto_1
 
-    .line 882
+    .line 955
     :catch_0
     :try_start_2
     sget-boolean v3, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -1147,7 +1167,7 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 884
+    .line 957
     :cond_4
     :goto_0
     iput-object v0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mStoreVideoThread:Ljava/lang/Thread;
@@ -1157,17 +1177,17 @@
     :goto_1
     iput-object v0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mStoreVideoThread:Ljava/lang/Thread;
 
-    .line 885
+    .line 958
     throw p1
 
-    .line 888
+    .line 961
     :cond_5
     :goto_2
     new-instance v0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavingVideoTask;
 
     invoke-direct {v0, p0, p1}, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavingVideoTask;-><init>(Ljp/co/sony/mc/camera/storage/SavingTaskManager;Ljp/co/sony/mc/camera/storage/VideoSavingRequest;)V
 
-    .line 889
+    .line 962
     new-instance p1, Ljava/lang/Thread;
 
     const-string v1, "Store video thread"
@@ -1176,10 +1196,10 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mStoreVideoThread:Ljava/lang/Thread;
 
-    .line 890
+    .line 963
     invoke-virtual {p1, v2}, Ljava/lang/Thread;->setPriority(I)V
 
-    .line 891
+    .line 964
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mStoreVideoThread:Ljava/lang/Thread;
 
     invoke-virtual {p0}, Ljava/lang/Thread;->start()V

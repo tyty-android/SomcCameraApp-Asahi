@@ -181,7 +181,7 @@
 
     const/4 v0, 0x0
 
-    const-string v1, "selfie accessory not found"
+    const-string/jumbo v1, "selfie accessory not found"
 
     aput-object v1, p1, v0
 

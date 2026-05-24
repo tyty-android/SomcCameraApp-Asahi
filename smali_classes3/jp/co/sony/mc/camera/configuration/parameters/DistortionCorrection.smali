@@ -55,7 +55,7 @@
     .line 25
     new-instance v6, Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;
 
-    const v4, 0x7f1102e9
+    const v4, 0x7f110332
 
     const-string v5, "off"
 
@@ -74,7 +74,7 @@
     .line 29
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;
 
-    const v11, 0x7f1102ea
+    const v11, 0x7f110333
 
     const-string v12, "on"
 
@@ -102,6 +102,23 @@
 
 .method private constructor <init>(Ljava/lang/String;IIILjava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -127,6 +144,16 @@
 
 .method public static getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId"
+        }
+    .end annotation
 
     .line 127
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;
@@ -156,6 +183,16 @@
 
 .method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId"
+        }
+    .end annotation
 
     .line 107
     new-instance v0, Ljava/util/ArrayList;
@@ -212,6 +249,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 24
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;

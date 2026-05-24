@@ -53,7 +53,7 @@
     f = "ViewFinderUiState.kt"
     i = {}
     l = {
-        0x248
+        0x1d5
     }
     m = "invokeSuspend"
     n = {}
@@ -103,7 +103,7 @@
 .method private static final invokeSuspend$lambda$0(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)Lkotlin/Unit;
     .locals 2
 
-    .line 585
+    .line 470
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$getCameraSettingsModel$p(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     move-result-object v0
@@ -126,7 +126,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 586
+    .line 471
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$getCameraSettingsModel$p(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     move-result-object v0
@@ -152,7 +152,7 @@
 
     if-nez v0, :cond_1
 
-    .line 587
+    .line 472
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/FinderEvent$OnReset;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/FinderEvent$OnReset;
 
     check-cast v0, Ljp/co/sony/mc/camera/view/uistate/FinderEvent;
@@ -161,7 +161,7 @@
 
     goto :goto_1
 
-    .line 589
+    .line 474
     :cond_1
     :goto_0
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/FinderEvent$OnTransParentShowingItem;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/FinderEvent$OnTransParentShowingItem;
@@ -170,7 +170,7 @@
 
     invoke-static {p0, v0}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$occurEvent(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;Ljp/co/sony/mc/camera/view/uistate/FinderEvent;)V
 
-    .line 591
+    .line 476
     :goto_1
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
@@ -254,7 +254,7 @@
 
     move-result-object v0
 
-    .line 583
+    .line 468
     iget v1, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$occurEvent$2;->label:I
 
     const/4 v2, 0x1
@@ -279,7 +279,7 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 584
+    .line 469
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$occurEvent$2;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     new-instance v1, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$occurEvent$2$$ExternalSyntheticLambda0;
@@ -302,7 +302,7 @@
 
     return-object v0
 
-    .line 592
+    .line 477
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

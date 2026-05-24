@@ -52,7 +52,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
     .locals 11
 
-    .line 319
+    .line 318
     sget-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;->WITHIN_10_MS:Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
     sget-object v1, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;->WITHIN_50_MS:Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
@@ -85,7 +85,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 320
+    .line 319
     new-instance v0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
     const-string v1, "WITHIN_10_MS"
@@ -96,7 +96,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;->WITHIN_10_MS:Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
-    .line 321
+    .line 320
     new-instance v0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
     const-string v1, "WITHIN_50_MS"
@@ -107,7 +107,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;->WITHIN_50_MS:Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
-    .line 322
+    .line 321
     new-instance v0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
     const-string v1, "WITHIN_100_MS"
@@ -118,7 +118,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;->WITHIN_100_MS:Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
-    .line 323
+    .line 322
     new-instance v0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
     const-string v1, "WITHIN_200_MS"
@@ -129,7 +129,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;->WITHIN_200_MS:Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
-    .line 324
+    .line 323
     new-instance v0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
     const-string v1, "WITHIN_500_MS"
@@ -140,7 +140,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;->WITHIN_500_MS:Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
-    .line 325
+    .line 324
     new-instance v0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
     const-string v1, "WITHIN_1000_MS"
@@ -151,7 +151,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;->WITHIN_1000_MS:Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
-    .line 326
+    .line 325
     new-instance v0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
     const-string v1, "WITHIN_1500_MS"
@@ -162,7 +162,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;->WITHIN_1500_MS:Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
-    .line 327
+    .line 326
     new-instance v0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
     const-string v1, "WITHIN_2000_MS"
@@ -173,7 +173,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;->WITHIN_2000_MS:Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
-    .line 328
+    .line 327
     new-instance v0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
     const-string v1, "OVER_2000_MS"
@@ -184,7 +184,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;->OVER_2000_MS:Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
-    .line 329
+    .line 328
     new-instance v0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
     const-string v1, "CONTINUOUS_CAPTURE"
@@ -195,7 +195,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;->CONTINUOUS_CAPTURE:Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
-    .line 330
+    .line 329
     new-instance v0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
     const-string v1, "NOT_TARGET"
@@ -206,7 +206,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;->NOT_TARGET:Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
-    .line 319
+    .line 318
     invoke-static {}, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;->$values()[Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
     move-result-object v0
@@ -218,13 +218,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 319
+    .line 318
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -232,6 +243,14 @@
 
 .method public static getType(J)Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "time"
+        }
+    .end annotation
 
     const-wide/16 v0, 0x7d0
 
@@ -239,7 +258,7 @@
 
     if-ltz v0, :cond_0
 
-    .line 335
+    .line 334
     sget-object p0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;->OVER_2000_MS:Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
     return-object p0
@@ -251,7 +270,7 @@
 
     if-ltz v0, :cond_1
 
-    .line 337
+    .line 336
     sget-object p0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;->WITHIN_2000_MS:Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
     return-object p0
@@ -263,7 +282,7 @@
 
     if-ltz v0, :cond_2
 
-    .line 339
+    .line 338
     sget-object p0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;->WITHIN_1500_MS:Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
     return-object p0
@@ -275,7 +294,7 @@
 
     if-ltz v0, :cond_3
 
-    .line 341
+    .line 340
     sget-object p0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;->WITHIN_1000_MS:Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
     return-object p0
@@ -287,7 +306,7 @@
 
     if-ltz v0, :cond_4
 
-    .line 343
+    .line 342
     sget-object p0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;->WITHIN_500_MS:Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
     return-object p0
@@ -299,7 +318,7 @@
 
     if-ltz v0, :cond_5
 
-    .line 345
+    .line 344
     sget-object p0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;->WITHIN_200_MS:Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
     return-object p0
@@ -311,7 +330,7 @@
 
     if-ltz v0, :cond_6
 
-    .line 347
+    .line 346
     sget-object p0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;->WITHIN_100_MS:Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
     return-object p0
@@ -323,12 +342,12 @@
 
     if-ltz p0, :cond_7
 
-    .line 349
+    .line 348
     sget-object p0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;->WITHIN_50_MS:Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
     return-object p0
 
-    .line 351
+    .line 350
     :cond_7
     sget-object p0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;->WITHIN_10_MS:Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
@@ -337,8 +356,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 319
+    .line 318
     const-class v0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -353,7 +380,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
     .locals 1
 
-    .line 319
+    .line 318
     sget-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;->$VALUES:[Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/research/parameters/Event$TimeFromAfDoneToCaptureStart;->clone()Ljava/lang/Object;

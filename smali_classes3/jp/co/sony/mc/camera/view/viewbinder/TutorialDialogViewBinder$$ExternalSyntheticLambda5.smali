@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
@@ -24,15 +24,13 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke()Ljava/lang/Object;
     .locals 0
 
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder$$ExternalSyntheticLambda5;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;
 
-    check-cast p1, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
-
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;->$r8$lambda$PH5oGHk6zCDFMwFJt7Grw3WQoHo(Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)Lkotlin/Unit;
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;->$r8$lambda$oGTwudGyc63tMlAWOrYR5tKMK48(Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;)Lkotlin/Unit;
 
     move-result-object p0
 

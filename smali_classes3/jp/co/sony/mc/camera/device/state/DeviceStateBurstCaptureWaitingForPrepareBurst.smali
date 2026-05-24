@@ -14,6 +14,18 @@
 # direct methods
 .method constructor <init>(ZZZ)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "isFlashRequired",
+            "isAfLocked",
+            "isFinishBurstRequested"
+        }
+    .end annotation
 
     .line 33
     const-string v0, "StateBurstCaptureWaitingForPrepareBurst"
@@ -36,6 +48,14 @@
 # virtual methods
 .method public entry(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 45
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->setPrepareBurstStateChecker()Z
@@ -68,6 +88,16 @@
 
 .method public varargs handleCameraClose(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     const/4 p2, 0x1
 
@@ -86,6 +116,16 @@
 
 .method public varargs handleFinishBurst(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     const/4 p1, 0x1
 
@@ -97,6 +137,16 @@
 
 .method public varargs handleOnPrepareBurstDone(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -235,6 +285,16 @@
 
 .method public varargs handleStartObjectTracking(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     .line 110
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCaptureWaitingForPrepareBurst;->startObjectTracking(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
@@ -244,6 +304,16 @@
 
 .method public varargs handleStopObjectTracking(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     .line 118
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCaptureWaitingForPrepareBurst;->stopObjectTracking(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V

@@ -6,6 +6,8 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Ljp/co/sony/mc/camera/device/CameraParameterConverter$TripodFramingIndicatorMode;,
+        Ljp/co/sony/mc/camera/device/CameraParameterConverter$AiSuggestionMode;,
         Ljp/co/sony/mc/camera/device/CameraParameterConverter$FramingAssistPositionMode;,
         Ljp/co/sony/mc/camera/device/CameraParameterConverter$AutoFramingOrientation;,
         Ljp/co/sony/mc/camera/device/CameraParameterConverter$AutoFramingMode;,

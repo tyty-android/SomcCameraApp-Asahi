@@ -132,7 +132,7 @@
     .line 45
     invoke-direct {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/widget/FnButtonBase;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    const p1, 0x7f0904da
+    const p1, 0x7f0904d8
 
     .line 47
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/WhiteBalanceFnButton;->findViewById(I)Landroid/view/View;
@@ -145,7 +145,7 @@
 
     check-cast p1, Landroid/view/ViewStub;
 
-    const p2, 0x7f0c00a4
+    const p2, 0x7f0c009b
 
     .line 48
     invoke-virtual {p1, p2}, Landroid/view/ViewStub;->setLayoutResource(I)V
@@ -205,7 +205,7 @@
 .method private final getAbGmContainer()Landroid/widget/LinearLayout;
     .locals 1
 
-    const v0, 0x7f0904d5
+    const v0, 0x7f0904d4
 
     .line 26
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/widget/WhiteBalanceFnButton;->findViewById(I)Landroid/view/View;
@@ -220,7 +220,7 @@
 .method private final getAbTextView()Landroid/widget/TextView;
     .locals 1
 
-    const v0, 0x7f0904d4
+    const v0, 0x7f0904d3
 
     .line 29
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/widget/WhiteBalanceFnButton;->findViewById(I)Landroid/view/View;
@@ -235,7 +235,7 @@
 .method private final getGmTextView()Landroid/widget/TextView;
     .locals 1
 
-    const v0, 0x7f0904d8
+    const v0, 0x7f0904d6
 
     .line 32
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/widget/WhiteBalanceFnButton;->findViewById(I)Landroid/view/View;
@@ -250,7 +250,7 @@
 .method private final getTemperatureTextView()Landroid/widget/TextView;
     .locals 1
 
-    const v0, 0x7f0904db
+    const v0, 0x7f0904d9
 
     .line 35
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/widget/WhiteBalanceFnButton;->findViewById(I)Landroid/view/View;

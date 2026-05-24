@@ -28,11 +28,19 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/StandardTable$Column;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
-    .line 543
+    .line 603
     iput-object p1, p0, Lcom/google/common/collect/StandardTable$Column$KeySet;->this$1:Lcom/google/common/collect/StandardTable$Column;
 
-    .line 544
+    .line 604
     invoke-direct {p0, p1}, Lcom/google/common/collect/Maps$KeySet;-><init>(Ljava/util/Map;)V
 
     return-void
@@ -42,8 +50,20 @@
 # virtual methods
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
-    .line 549
+    .line 609
     iget-object v0, p0, Lcom/google/common/collect/StandardTable$Column$KeySet;->this$1:Lcom/google/common/collect/StandardTable$Column;
 
     iget-object v0, v0, Lcom/google/common/collect/StandardTable$Column;->this$0:Lcom/google/common/collect/StandardTable;
@@ -61,8 +81,20 @@
 
 .method public remove(Ljava/lang/Object;)Z
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
-    .line 554
+    .line 614
     iget-object v0, p0, Lcom/google/common/collect/StandardTable$Column$KeySet;->this$1:Lcom/google/common/collect/StandardTable$Column;
 
     iget-object v0, v0, Lcom/google/common/collect/StandardTable$Column;->this$0:Lcom/google/common/collect/StandardTable;
@@ -90,6 +122,15 @@
 
 .method public retainAll(Ljava/util/Collection;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "c"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -98,7 +139,7 @@
         }
     .end annotation
 
-    .line 559
+    .line 619
     iget-object p0, p0, Lcom/google/common/collect/StandardTable$Column$KeySet;->this$1:Lcom/google/common/collect/StandardTable$Column;
 
     invoke-static {p1}, Lcom/google/common/base/Predicates;->in(Ljava/util/Collection;)Lcom/google/common/base/Predicate;

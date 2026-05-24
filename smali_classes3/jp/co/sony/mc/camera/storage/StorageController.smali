@@ -222,6 +222,16 @@
 
 .method private notifyAvailableSize(Ljp/co/sony/mc/camera/storage/Storage$StorageType;J)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "availableSize"
+        }
+    .end annotation
 
     .line 253
     iget-object v0, p0, Ljp/co/sony/mc/camera/storage/StorageController;->mStateListenersLock:Ljava/lang/Object;
@@ -278,6 +288,16 @@
 
 .method private notifyReadyStateChanged(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/Storage$StorageReadyState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "state"
+        }
+    .end annotation
 
     .line 271
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
@@ -372,6 +392,14 @@
 
 .method private notifyStateChanged(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "storage"
+        }
+    .end annotation
 
     .line 221
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/storage/StorageController;->getStorageState(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)Ljp/co/sony/mc/camera/storage/Storage$StorageState;
@@ -516,6 +544,14 @@
 # virtual methods
 .method public addStorageListener(Ljp/co/sony/mc/camera/storage/Storage$StorageStateListener;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cb"
+        }
+    .end annotation
 
     .line 76
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -637,6 +673,14 @@
 
 .method public addStorageReadyStateListener(Ljp/co/sony/mc/camera/storage/Storage$StorageReadyStateListener;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 111
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
@@ -754,6 +798,14 @@
 
 .method public checkAndNotifyReadyStateChanged(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     .line 205
     iget-object v0, p0, Ljp/co/sony/mc/camera/storage/StorageController;->mStorageReadyStateMap:Ljava/util/Map;
@@ -788,6 +840,16 @@
 
 .method public checkAndNotifyStateChanged(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Z)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "storage",
+            "forceNotify"
+        }
+    .end annotation
 
     .line 183
     iget-object v0, p0, Ljp/co/sony/mc/camera/storage/StorageController;->mStorageStatus:Ljava/util/Map;
@@ -911,6 +973,14 @@
 
 .method public getAvailableStorageSize(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)J
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     .line 335
     iget-object v0, p0, Ljp/co/sony/mc/camera/storage/StorageController;->mAvailableSizeList:Ljava/util/Map;
@@ -945,6 +1015,14 @@
 
 .method getStorageReadyState(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)Ljp/co/sony/mc/camera/storage/Storage$StorageReadyState;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     .line 316
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/StorageController;->mStorageReadyStateMap:Ljava/util/Map;
@@ -960,6 +1038,14 @@
 
 .method public getStorageState(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)Ljp/co/sony/mc/camera/storage/Storage$StorageState;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     .line 305
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/StorageController;->mStorageStatus:Ljava/util/Map;
@@ -1031,6 +1117,14 @@
 
 .method public removeStorageListener(Ljp/co/sony/mc/camera/storage/Storage$StorageStateListener;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cb"
+        }
+    .end annotation
 
     .line 96
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -1109,6 +1203,14 @@
 
 .method public removeStorageReadyStateListener(Ljp/co/sony/mc/camera/storage/Storage$StorageReadyStateListener;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 131
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
@@ -1189,6 +1291,16 @@
 
 .method public setAvailableStorageSize(Ljp/co/sony/mc/camera/storage/Storage$StorageType;J)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "availableSize"
+        }
+    .end annotation
 
     .line 321
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -1201,7 +1313,7 @@
 
     new-instance v1, Ljava/lang/StringBuilder;
 
-    const-string v2, "setAvailableStorageSize: size = "
+    const-string/jumbo v2, "setAvailableStorageSize: size = "
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
@@ -1244,6 +1356,16 @@
 
 .method public setStorageReadyState(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/Storage$StorageReadyState;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "storage",
+            "state"
+        }
+    .end annotation
 
     .line 169
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
@@ -1311,6 +1433,16 @@
 
 .method public setStorageState(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "storage",
+            "state"
+        }
+    .end annotation
 
     .line 150
     invoke-static {}, Ljp/co/sony/mc/camera/storage/StorageUtil;->getMountableStorageTypes()Ljava/util/List;

@@ -4,11 +4,14 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/util/concurrent/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/common/util/concurrent/CombinedFuture$CallableInterruptibleTask;,
+        Lcom/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask;,
         Lcom/google/common/util/concurrent/CombinedFuture$AsyncCallableInterruptibleTask;,
-        Lcom/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask;
+        Lcom/google/common/util/concurrent/CombinedFuture$CallableInterruptibleTask;
     }
 .end annotation
 
@@ -26,11 +29,17 @@
 
 # instance fields
 .field private task:Lcom/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask;
+    .annotation runtime Lcom/google/errorprone/annotations/concurrent/LazyInit;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/common/util/concurrent/CombinedFuture<",
             "TV;>.CombinedFutureInterruptibleTask<*>;"
         }
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -38,6 +47,21 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/ImmutableCollection;ZLjava/util/concurrent/Executor;Lcom/google/common/util/concurrent/AsyncCallable;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "futures",
+            "allMustSucceed",
+            "listenerExecutor",
+            "callable"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -53,17 +77,17 @@
 
     const/4 v0, 0x0
 
-    .line 40
+    .line 45
     invoke-direct {p0, p1, p2, v0}, Lcom/google/common/util/concurrent/AggregateFuture;-><init>(Lcom/google/common/collect/ImmutableCollection;ZZ)V
 
-    .line 41
+    .line 46
     new-instance p1, Lcom/google/common/util/concurrent/CombinedFuture$AsyncCallableInterruptibleTask;
 
     invoke-direct {p1, p0, p4, p3}, Lcom/google/common/util/concurrent/CombinedFuture$AsyncCallableInterruptibleTask;-><init>(Lcom/google/common/util/concurrent/CombinedFuture;Lcom/google/common/util/concurrent/AsyncCallable;Ljava/util/concurrent/Executor;)V
 
     iput-object p1, p0, Lcom/google/common/util/concurrent/CombinedFuture;->task:Lcom/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask;
 
-    .line 42
+    .line 47
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/CombinedFuture;->init()V
 
     return-void
@@ -71,6 +95,21 @@
 
 .method constructor <init>(Lcom/google/common/collect/ImmutableCollection;ZLjava/util/concurrent/Executor;Ljava/util/concurrent/Callable;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "futures",
+            "allMustSucceed",
+            "listenerExecutor",
+            "callable"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -86,17 +125,17 @@
 
     const/4 v0, 0x0
 
-    .line 50
+    .line 55
     invoke-direct {p0, p1, p2, v0}, Lcom/google/common/util/concurrent/AggregateFuture;-><init>(Lcom/google/common/collect/ImmutableCollection;ZZ)V
 
-    .line 51
+    .line 56
     new-instance p1, Lcom/google/common/util/concurrent/CombinedFuture$CallableInterruptibleTask;
 
     invoke-direct {p1, p0, p4, p3}, Lcom/google/common/util/concurrent/CombinedFuture$CallableInterruptibleTask;-><init>(Lcom/google/common/util/concurrent/CombinedFuture;Ljava/util/concurrent/Callable;Ljava/util/concurrent/Executor;)V
 
     iput-object p1, p0, Lcom/google/common/util/concurrent/CombinedFuture;->task:Lcom/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask;
 
-    .line 52
+    .line 57
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/CombinedFuture;->init()V
 
     return-void
@@ -105,7 +144,7 @@
 .method static synthetic access$002(Lcom/google/common/util/concurrent/CombinedFuture;Lcom/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask;)Lcom/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask;
     .locals 0
 
-    .line 32
+    .line 36
     iput-object p1, p0, Lcom/google/common/util/concurrent/CombinedFuture;->task:Lcom/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask;
 
     return-object p1
@@ -116,9 +155,19 @@
 .method collectOneValue(ILjava/lang/Object;)V
     .locals 0
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "returnValue"
+        }
+    .end annotation
 
     return-void
 .end method
@@ -126,12 +175,12 @@
 .method handleAllCompleted()V
     .locals 0
 
-    .line 60
+    .line 65
     iget-object p0, p0, Lcom/google/common/util/concurrent/CombinedFuture;->task:Lcom/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask;
 
     if-eqz p0, :cond_0
 
-    .line 62
+    .line 67
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask;->execute()V
 
     :cond_0
@@ -141,12 +190,12 @@
 .method protected interruptTask()V
     .locals 0
 
-    .line 83
+    .line 88
     iget-object p0, p0, Lcom/google/common/util/concurrent/CombinedFuture;->task:Lcom/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask;
 
     if-eqz p0, :cond_0
 
-    .line 85
+    .line 90
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask;->interruptTask()V
 
     :cond_0
@@ -155,18 +204,26 @@
 
 .method releaseResources(Lcom/google/common/util/concurrent/AggregateFuture$ReleaseResourcesReason;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "reason"
+        }
+    .end annotation
 
-    .line 68
+    .line 73
     invoke-super {p0, p1}, Lcom/google/common/util/concurrent/AggregateFuture;->releaseResources(Lcom/google/common/util/concurrent/AggregateFuture$ReleaseResourcesReason;)V
 
-    .line 76
+    .line 81
     sget-object v0, Lcom/google/common/util/concurrent/AggregateFuture$ReleaseResourcesReason;->OUTPUT_FUTURE_DONE:Lcom/google/common/util/concurrent/AggregateFuture$ReleaseResourcesReason;
 
     if-ne p1, v0, :cond_0
 
     const/4 p1, 0x0
 
-    .line 77
+    .line 82
     iput-object p1, p0, Lcom/google/common/util/concurrent/CombinedFuture;->task:Lcom/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask;
 
     :cond_0

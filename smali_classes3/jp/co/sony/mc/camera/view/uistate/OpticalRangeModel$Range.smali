@@ -109,25 +109,25 @@
 
     const/4 v0, 0x0
 
-    .line 875
+    .line 1045
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 869
+    .line 1039
     iput p1, p0, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;->minStep:I
 
-    .line 870
+    .line 1040
     iput p2, p0, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;->maxStep:I
 
-    .line 871
+    .line 1041
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;->minText:Ljava/lang/String;
 
-    .line 872
+    .line 1042
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;->maxText:Ljava/lang/String;
 
-    .line 873
+    .line 1043
     iput-object p5, p0, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;->minContentDescription:Ljava/lang/String;
 
-    .line 874
+    .line 1044
     iput-object p6, p0, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;->maxContentDescription:Ljava/lang/String;
 
     return-void
@@ -396,7 +396,7 @@
 .method public final getMaxContentDescription()Ljava/lang/String;
     .locals 0
 
-    .line 874
+    .line 1044
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;->maxContentDescription:Ljava/lang/String;
 
     return-object p0
@@ -405,7 +405,7 @@
 .method public final getMaxStep()I
     .locals 0
 
-    .line 870
+    .line 1040
     iget p0, p0, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;->maxStep:I
 
     return p0
@@ -414,7 +414,7 @@
 .method public final getMaxText()Ljava/lang/String;
     .locals 0
 
-    .line 872
+    .line 1042
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;->maxText:Ljava/lang/String;
 
     return-object p0
@@ -423,7 +423,7 @@
 .method public final getMinContentDescription()Ljava/lang/String;
     .locals 0
 
-    .line 873
+    .line 1043
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;->minContentDescription:Ljava/lang/String;
 
     return-object p0
@@ -432,7 +432,7 @@
 .method public final getMinStep()I
     .locals 0
 
-    .line 869
+    .line 1039
     iget p0, p0, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;->minStep:I
 
     return p0
@@ -441,7 +441,7 @@
 .method public final getMinText()Ljava/lang/String;
     .locals 0
 
-    .line 871
+    .line 1041
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;->minText:Ljava/lang/String;
 
     return-object p0

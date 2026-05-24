@@ -30,7 +30,7 @@
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder$$ExternalSyntheticLambda6;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;->$r8$lambda$67kzhuTrP7jOfAswfmGfmNS50qQ(Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;)I
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;->$r8$lambda$rIG2b_6INq3SunjwxfnfujDspOw(Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;)I
 
     move-result p0
 

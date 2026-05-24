@@ -19,15 +19,47 @@
 .end method
 
 .method public abstract recordHits(I)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "count"
+        }
+    .end annotation
 .end method
 
 .method public abstract recordLoadException(J)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "loadTime"
+        }
+    .end annotation
 .end method
 
 .method public abstract recordLoadSuccess(J)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "loadTime"
+        }
+    .end annotation
 .end method
 
 .method public abstract recordMisses(I)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "count"
+        }
+    .end annotation
 .end method
 
 .method public abstract snapshot()Lcom/google/common/cache/CacheStats;

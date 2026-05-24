@@ -87,22 +87,22 @@
 
     invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 28
+    .line 22
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 29
+    .line 23
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingOptionItem;->value:Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
-    .line 30
+    .line 24
     iput p2, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingOptionItem;->textResId:I
 
-    .line 31
+    .line 25
     iput p3, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingOptionItem;->iconResId:I
 
-    .line 32
+    .line 26
     iput-boolean p4, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingOptionItem;->isSelected:Z
 
-    .line 33
+    .line 27
     iput-object p5, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingOptionItem;->appearance:Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
     return-void
@@ -321,7 +321,7 @@
 .method public final getAppearance()Ljp/co/sony/mc/camera/setting/SettingAppearance;
     .locals 0
 
-    .line 33
+    .line 27
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingOptionItem;->appearance:Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
     return-object p0
@@ -330,7 +330,7 @@
 .method public final getIconResId()I
     .locals 0
 
-    .line 31
+    .line 25
     iget p0, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingOptionItem;->iconResId:I
 
     return p0
@@ -339,7 +339,7 @@
 .method public final getTextResId()I
     .locals 0
 
-    .line 30
+    .line 24
     iget p0, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingOptionItem;->textResId:I
 
     return p0
@@ -348,7 +348,7 @@
 .method public final getValue()Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
     .locals 0
 
-    .line 29
+    .line 23
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingOptionItem;->value:Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     return-object p0
@@ -409,7 +409,7 @@
 .method public final isSelected()Z
     .locals 0
 
-    .line 32
+    .line 26
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingOptionItem;->isSelected:Z
 
     return p0

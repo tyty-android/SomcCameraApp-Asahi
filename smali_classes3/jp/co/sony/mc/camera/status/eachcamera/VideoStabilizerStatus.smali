@@ -50,6 +50,14 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/status/eachcamera/VideoStabilizerStatus$Value;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "val"
+        }
+    .end annotation
 
     .line 53
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/status/EnumValue;-><init>(Ljava/lang/Enum;)V
@@ -59,6 +67,14 @@
 
 .method public static fromCameraParameter(Ljava/lang/String;)Ljp/co/sony/mc/camera/status/eachcamera/VideoStabilizerStatus;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "param"
+        }
+    .end annotation
 
     .line 62
     const-string v0, "on"

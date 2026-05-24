@@ -14,7 +14,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nCaptureButtonTouchEventDispatcher.kt\nKotlin\n*S Kotlin\n*F\n+ 1 CaptureButtonTouchEventDispatcher.kt\njp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$gestureListener$1\n+ 2 Point.kt\nandroidx/core/graphics/PointKt\n*L\n1#1,238:1\n192#2:239\n192#2:240\n*S KotlinDebug\n*F\n+ 1 CaptureButtonTouchEventDispatcher.kt\njp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$gestureListener$1\n*L\n68#1:239\n76#1:240\n*E\n"
+    value = "SMAP\nCaptureButtonTouchEventDispatcher.kt\nKotlin\n*S Kotlin\n*F\n+ 1 CaptureButtonTouchEventDispatcher.kt\njp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$gestureListener$1\n+ 2 Point.kt\nandroidx/core/graphics/PointKt\n*L\n1#1,242:1\n192#2:243\n192#2:244\n*S KotlinDebug\n*F\n+ 1 CaptureButtonTouchEventDispatcher.kt\njp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$gestureListener$1\n*L\n68#1:243\n76#1:244\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -120,7 +120,7 @@
 
     invoke-direct {v1, v2, p1}, Landroid/graphics/PointF;-><init>(FF)V
 
-    .line 240
+    .line 244
     new-instance p1, Landroid/graphics/Point;
 
     iget v2, v1, Landroid/graphics/PointF;->x:F
@@ -178,7 +178,7 @@
 
     invoke-direct {v2, v3, p1}, Landroid/graphics/PointF;-><init>(FF)V
 
-    .line 239
+    .line 243
     new-instance p1, Landroid/graphics/Point;
 
     iget v3, v2, Landroid/graphics/PointF;->x:F

@@ -3,38 +3,34 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;
+.field public final synthetic f$0:Landroid/view/WindowInsetsController;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;)V
+.method public synthetic constructor <init>(Landroid/view/WindowInsetsController;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment$$ExternalSyntheticLambda24;->f$0:Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment$$ExternalSyntheticLambda24;->f$0:Landroid/view/WindowInsetsController;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final run()V
     .locals 0
 
     .line 0
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment$$ExternalSyntheticLambda24;->f$0:Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment$$ExternalSyntheticLambda24;->f$0:Landroid/view/WindowInsetsController;
 
-    check-cast p1, Landroid/util/Size;
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;->$r8$lambda$01x29OxhGF639H-UDTclzjIlCpE(Landroid/view/WindowInsetsController;)V
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;->$r8$lambda$YlTU0WwtVSBsugIkDnStAsSQQoY(Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;Landroid/util/Size;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
+    return-void
 .end method

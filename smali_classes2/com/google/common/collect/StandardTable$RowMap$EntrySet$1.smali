@@ -34,8 +34,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/StandardTable$RowMap$EntrySet;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$2"
+        }
+    .end annotation
 
-    .line 768
+    .line 832
     iput-object p1, p0, Lcom/google/common/collect/StandardTable$RowMap$EntrySet$1;->this$2:Lcom/google/common/collect/StandardTable$RowMap$EntrySet;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,8 +55,16 @@
 # virtual methods
 .method public bridge synthetic apply(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "rowKey"
+        }
+    .end annotation
 
-    .line 768
+    .line 832
     invoke-virtual {p0, p1}, Lcom/google/common/collect/StandardTable$RowMap$EntrySet$1;->apply(Ljava/lang/Object;)Ljava/util/Map;
 
     move-result-object p0
@@ -58,6 +74,15 @@
 
 .method public apply(Ljava/lang/Object;)Ljava/util/Map;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "rowKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TR;)",
@@ -66,7 +91,7 @@
         }
     .end annotation
 
-    .line 771
+    .line 835
     iget-object p0, p0, Lcom/google/common/collect/StandardTable$RowMap$EntrySet$1;->this$2:Lcom/google/common/collect/StandardTable$RowMap$EntrySet;
 
     iget-object p0, p0, Lcom/google/common/collect/StandardTable$RowMap$EntrySet;->this$1:Lcom/google/common/collect/StandardTable$RowMap;

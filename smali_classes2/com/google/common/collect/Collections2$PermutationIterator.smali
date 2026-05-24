@@ -45,6 +45,15 @@
 # direct methods
 .method constructor <init>(Ljava/util/List;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "list"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -53,44 +62,44 @@
         }
     .end annotation
 
-    .line 600
+    .line 618
     invoke-direct {p0}, Lcom/google/common/collect/AbstractIterator;-><init>()V
 
-    .line 601
+    .line 619
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0, p1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
     iput-object v0, p0, Lcom/google/common/collect/Collections2$PermutationIterator;->list:Ljava/util/List;
 
-    .line 602
+    .line 620
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result p1
 
-    .line 603
+    .line 621
     new-array v0, p1, [I
 
     iput-object v0, p0, Lcom/google/common/collect/Collections2$PermutationIterator;->c:[I
 
-    .line 604
+    .line 622
     new-array p1, p1, [I
 
     iput-object p1, p0, Lcom/google/common/collect/Collections2$PermutationIterator;->o:[I
 
     const/4 v1, 0x0
 
-    .line 605
+    .line 623
     invoke-static {v0, v1}, Ljava/util/Arrays;->fill([II)V
 
     const/4 v0, 0x1
 
-    .line 606
+    .line 624
     invoke-static {p1, v0}, Ljava/util/Arrays;->fill([II)V
 
     const p1, 0x7fffffff
 
-    .line 607
+    .line 625
     iput p1, p0, Lcom/google/common/collect/Collections2$PermutationIterator;->j:I
 
     return-void
@@ -101,7 +110,7 @@
 .method calculateNextPermutation()V
     .locals 5
 
-    .line 621
+    .line 640
     iget-object v0, p0, Lcom/google/common/collect/Collections2$PermutationIterator;->list:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -121,7 +130,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 631
+    .line 650
     :goto_0
     iget-object v1, p0, Lcom/google/common/collect/Collections2$PermutationIterator;->c:[I
 
@@ -137,7 +146,7 @@
 
     if-gez v3, :cond_1
 
-    .line 633
+    .line 652
     invoke-virtual {p0}, Lcom/google/common/collect/Collections2$PermutationIterator;->switchDirection()V
 
     goto :goto_0
@@ -154,12 +163,12 @@
     :cond_2
     add-int/lit8 v0, v0, 0x1
 
-    .line 641
+    .line 660
     invoke-virtual {p0}, Lcom/google/common/collect/Collections2$PermutationIterator;->switchDirection()V
 
     goto :goto_0
 
-    .line 645
+    .line 664
     :cond_3
     iget-object v4, p0, Lcom/google/common/collect/Collections2$PermutationIterator;->list:Ljava/util/List;
 
@@ -173,7 +182,7 @@
 
     invoke-static {v4, v1, v2}, Ljava/util/Collections;->swap(Ljava/util/List;II)V
 
-    .line 646
+    .line 665
     iget-object v0, p0, Lcom/google/common/collect/Collections2$PermutationIterator;->c:[I
 
     iget p0, p0, Lcom/google/common/collect/Collections2$PermutationIterator;->j:I
@@ -186,8 +195,10 @@
 
 .method protected bridge synthetic computeNext()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 
-    .line 594
+    .line 612
     invoke-virtual {p0}, Lcom/google/common/collect/Collections2$PermutationIterator;->computeNext()Ljava/util/List;
 
     move-result-object p0
@@ -205,12 +216,15 @@
         }
     .end annotation
 
-    .line 612
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 631
     iget v0, p0, Lcom/google/common/collect/Collections2$PermutationIterator;->j:I
 
     if-gtz v0, :cond_0
 
-    .line 613
+    .line 632
     invoke-virtual {p0}, Lcom/google/common/collect/Collections2$PermutationIterator;->endOfData()Ljava/lang/Object;
 
     move-result-object p0
@@ -219,7 +233,7 @@
 
     return-object p0
 
-    .line 615
+    .line 634
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/Collections2$PermutationIterator;->list:Ljava/util/List;
 
@@ -227,7 +241,7 @@
 
     move-result-object v0
 
-    .line 616
+    .line 635
     invoke-virtual {p0}, Lcom/google/common/collect/Collections2$PermutationIterator;->calculateNextPermutation()V
 
     return-object v0
@@ -236,7 +250,7 @@
 .method switchDirection()V
     .locals 3
 
-    .line 652
+    .line 671
     iget-object v0, p0, Lcom/google/common/collect/Collections2$PermutationIterator;->o:[I
 
     iget v1, p0, Lcom/google/common/collect/Collections2$PermutationIterator;->j:I
@@ -249,7 +263,7 @@
 
     add-int/lit8 v1, v1, -0x1
 
-    .line 653
+    .line 672
     iput v1, p0, Lcom/google/common/collect/Collections2$PermutationIterator;->j:I
 
     return-void

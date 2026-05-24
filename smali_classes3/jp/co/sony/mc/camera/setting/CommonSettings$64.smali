@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 826
+    .line 738
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,6 +31,21 @@
 # virtual methods
 .method public setValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljava/util/Map;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key",
+            "value",
+            "listenersMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -46,13 +61,13 @@
         }
     .end annotation
 
-    .line 830
+    .line 742
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 831
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/FastCapture;
+    .line 743
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$msetQuickLaunch(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljp/co/sony/mc/camera/configuration/parameters/FastCapture;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$msetProVideoDispCustomExtensionData(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;)Z
 
     move-result p0
 

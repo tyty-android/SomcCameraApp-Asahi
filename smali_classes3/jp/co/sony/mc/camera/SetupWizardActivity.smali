@@ -348,6 +348,14 @@
 
 .method private requestPermission(Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "request"
+        }
+    .end annotation
 
     .line 190
     iput-object p1, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->mPermissionRequest:Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
@@ -411,6 +419,14 @@
 
 .method private setGeoTagResult(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "on"
+        }
+    .end annotation
 
     .line 331
     iget-object p0, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->mResultData:Landroid/content/Intent;
@@ -473,6 +489,14 @@
 
 .method private static trace(Ljava/lang/String;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "message"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -525,6 +549,14 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "savedInstanceState"
+        }
+    .end annotation
 
     .line 127
     const-string v0, "onCreate() E"
@@ -600,6 +632,16 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "keyCode",
+            "event"
+        }
+    .end annotation
 
     const/16 v0, 0x1b
 
@@ -620,6 +662,16 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "keyCode",
+            "event"
+        }
+    .end annotation
 
     const/16 v0, 0x1b
 
@@ -655,6 +707,18 @@
 
 .method public onRequestPermissionsResult(I[Ljava/lang/String;[I)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "requestCode",
+            "permissions",
+            "grantResults"
+        }
+    .end annotation
 
     .line 264
     const-string v0, "onRequestPermissionsResult() E"

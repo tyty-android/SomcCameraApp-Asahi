@@ -83,13 +83,13 @@
 
     const/4 v0, 0x0
 
-    .line 180
+    .line 172
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 178
+    .line 170
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Range;->model:Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;
 
-    .line 179
+    .line 171
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Range;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;
 
     return-void
@@ -208,7 +208,7 @@
 .method public final getBinding()Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;
     .locals 0
 
-    .line 179
+    .line 171
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Range;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;
 
     return-object p0
@@ -217,7 +217,7 @@
 .method public final getModel()Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;
     .locals 0
 
-    .line 178
+    .line 170
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Range;->model:Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;
 
     return-object p0

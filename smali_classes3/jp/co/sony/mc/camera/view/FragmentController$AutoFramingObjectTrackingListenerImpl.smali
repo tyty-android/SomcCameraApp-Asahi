@@ -24,11 +24,19 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "controller"
+        }
+    .end annotation
 
-    .line 7984
+    .line 6868
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7985
+    .line 6869
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFramingObjectTrackingListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     return-void
@@ -38,8 +46,16 @@
 # virtual methods
 .method public onTrackResultChanged(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isLost"
+        }
+    .end annotation
 
-    .line 7990
+    .line 6874
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFramingObjectTrackingListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;

@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/graph/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<N:",
@@ -22,7 +25,7 @@
 
 
 # instance fields
-.field protected final incidentEdgeMap:Ljava/util/Map;
+.field final incidentEdgeMap:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -33,8 +36,17 @@
 
 
 # direct methods
-.method protected constructor <init>(Ljava/util/Map;)V
+.method constructor <init>(Ljava/util/Map;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "incidentEdgeMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -43,10 +55,10 @@
         }
     .end annotation
 
-    .line 37
+    .line 40
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 38
+    .line 41
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -62,6 +74,19 @@
 # virtual methods
 .method public addInEdge(Ljava/lang/Object;Ljava/lang/Object;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "edge",
+            "node",
+            "isSelfLoop"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;TN;Z)V"
@@ -70,7 +95,7 @@
 
     if-nez p3, :cond_0
 
-    .line 88
+    .line 94
     invoke-virtual {p0, p1, p2}, Lcom/google/common/graph/AbstractUndirectedNetworkConnections;->addOutEdge(Ljava/lang/Object;Ljava/lang/Object;)V
 
     :cond_0
@@ -79,13 +104,24 @@
 
 .method public addOutEdge(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "edge",
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;TN;)V"
         }
     .end annotation
 
-    .line 94
+    .line 100
     iget-object p0, p0, Lcom/google/common/graph/AbstractUndirectedNetworkConnections;->incidentEdgeMap:Ljava/util/Map;
 
     invoke-interface {p0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -101,7 +137,7 @@
     :cond_0
     const/4 p0, 0x0
 
-    .line 95
+    .line 101
     :goto_0
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkState(Z)V
 
@@ -110,20 +146,29 @@
 
 .method public adjacentNode(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "edge"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)TN;"
         }
     .end annotation
 
-    .line 68
+    .line 72
     iget-object p0, p0, Lcom/google/common/graph/AbstractUndirectedNetworkConnections;->incidentEdgeMap:Ljava/util/Map;
 
     invoke-interface {p0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
-    invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -140,7 +185,7 @@
         }
     .end annotation
 
-    .line 58
+    .line 61
     invoke-virtual {p0}, Lcom/google/common/graph/AbstractUndirectedNetworkConnections;->incidentEdges()Ljava/util/Set;
 
     move-result-object p0
@@ -158,7 +203,7 @@
         }
     .end annotation
 
-    .line 53
+    .line 56
     iget-object p0, p0, Lcom/google/common/graph/AbstractUndirectedNetworkConnections;->incidentEdgeMap:Ljava/util/Map;
 
     invoke-interface {p0}, Ljava/util/Map;->keySet()Ljava/util/Set;
@@ -182,7 +227,7 @@
         }
     .end annotation
 
-    .line 63
+    .line 66
     invoke-virtual {p0}, Lcom/google/common/graph/AbstractUndirectedNetworkConnections;->incidentEdges()Ljava/util/Set;
 
     move-result-object p0
@@ -200,7 +245,7 @@
         }
     .end annotation
 
-    .line 43
+    .line 46
     invoke-virtual {p0}, Lcom/google/common/graph/AbstractUndirectedNetworkConnections;->adjacentNodes()Ljava/util/Set;
 
     move-result-object p0
@@ -210,15 +255,29 @@
 
 .method public removeInEdge(Ljava/lang/Object;Z)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "edge",
+            "isSelfLoop"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;Z)TN;"
         }
     .end annotation
 
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
     if-nez p2, :cond_0
 
-    .line 74
+    .line 79
     invoke-virtual {p0, p1}, Lcom/google/common/graph/AbstractUndirectedNetworkConnections;->removeOutEdge(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -233,21 +292,30 @@
 
 .method public removeOutEdge(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "edge"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)TN;"
         }
     .end annotation
 
-    .line 81
+    .line 86
     iget-object p0, p0, Lcom/google/common/graph/AbstractUndirectedNetworkConnections;->incidentEdgeMap:Ljava/util/Map;
 
     invoke-interface {p0, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 82
-    invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 88
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -264,7 +332,7 @@
         }
     .end annotation
 
-    .line 48
+    .line 51
     invoke-virtual {p0}, Lcom/google/common/graph/AbstractUndirectedNetworkConnections;->adjacentNodes()Ljava/util/Set;
 
     move-result-object p0

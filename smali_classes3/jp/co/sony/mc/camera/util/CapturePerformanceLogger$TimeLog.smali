@@ -53,6 +53,14 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     .line 123
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

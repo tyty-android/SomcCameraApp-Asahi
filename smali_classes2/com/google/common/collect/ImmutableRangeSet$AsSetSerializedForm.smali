@@ -51,6 +51,17 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/ImmutableList;Lcom/google/common/collect/DiscreteDomain;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ranges",
+            "domain"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -62,13 +73,13 @@
         }
     .end annotation
 
-    .line 680
+    .line 732
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 681
+    .line 733
     iput-object p1, p0, Lcom/google/common/collect/ImmutableRangeSet$AsSetSerializedForm;->ranges:Lcom/google/common/collect/ImmutableList;
 
-    .line 682
+    .line 734
     iput-object p2, p0, Lcom/google/common/collect/ImmutableRangeSet$AsSetSerializedForm;->domain:Lcom/google/common/collect/DiscreteDomain;
 
     return-void
@@ -79,7 +90,7 @@
 .method readResolve()Ljava/lang/Object;
     .locals 2
 
-    .line 686
+    .line 738
     new-instance v0, Lcom/google/common/collect/ImmutableRangeSet;
 
     iget-object v1, p0, Lcom/google/common/collect/ImmutableRangeSet$AsSetSerializedForm;->ranges:Lcom/google/common/collect/ImmutableList;

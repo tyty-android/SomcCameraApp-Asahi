@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nIntSet.kt\nKotlin\n*S Kotlin\n*F\n+ 1 IntSet.kt\nandroidx/collection/IntSet\n+ 2 ScatterMap.kt\nandroidx/collection/ScatterMapKt\n+ 3 IntSet.kt\nandroidx/collection/IntSetKt\n*L\n1#1,837:1\n262#1,4:838\n232#1,7:842\n243#1,3:850\n246#1,2:854\n266#1,2:856\n249#1,6:858\n268#1:864\n262#1,4:865\n232#1,7:869\n243#1,3:877\n246#1,2:881\n266#1,2:883\n249#1,6:885\n268#1:891\n232#1,7:894\n243#1,3:902\n246#1,9:906\n262#1,4:915\n232#1,7:919\n243#1,3:927\n246#1,2:931\n266#1,2:933\n249#1,6:935\n268#1:941\n262#1,4:942\n232#1,7:946\n243#1,3:954\n246#1,2:958\n266#1,2:960\n249#1,6:962\n268#1:968\n262#1,4:969\n232#1,7:973\n243#1,3:981\n246#1,2:985\n266#1,2:987\n249#1,6:989\n268#1:995\n442#1:996\n443#1:1000\n445#1,2:1002\n447#1,3:1005\n450#1:1011\n451#1:1015\n452#1:1017\n453#1,4:1020\n459#1:1025\n460#1,8:1027\n262#1,4:1035\n232#1,7:1039\n243#1,3:1047\n246#1,2:1051\n266#1,2:1053\n249#1,6:1055\n268#1:1061\n262#1,4:1062\n232#1,7:1066\n243#1,3:1074\n246#1,2:1078\n266#1,2:1080\n249#1,6:1082\n268#1:1088\n262#1,4:1089\n232#1,7:1093\n243#1,3:1101\n246#1,2:1105\n266#1,2:1107\n249#1,6:1109\n268#1:1115\n262#1,4:1116\n232#1,7:1120\n243#1,3:1128\n246#1,2:1132\n266#1,2:1134\n249#1,6:1136\n268#1:1142\n262#1,4:1143\n232#1,7:1147\n243#1,3:1155\n246#1,2:1159\n266#1,2:1161\n249#1,6:1163\n268#1:1169\n365#1,11:1186\n262#1,4:1197\n232#1,7:1201\n243#1,3:1209\n246#1,2:1213\n266#1:1215\n376#1,10:1216\n267#1:1226\n249#1,6:1227\n268#1:1233\n386#1,2:1234\n365#1,11:1236\n262#1,4:1247\n232#1,7:1251\n243#1,3:1259\n246#1,2:1263\n266#1:1265\n376#1,10:1266\n267#1:1276\n249#1,6:1277\n268#1:1283\n386#1,2:1284\n365#1,11:1286\n262#1,4:1297\n232#1,7:1301\n243#1,3:1309\n246#1,2:1313\n266#1:1315\n376#1,10:1316\n267#1:1326\n249#1,6:1327\n268#1:1333\n386#1,2:1334\n365#1,11:1336\n262#1,4:1347\n232#1,7:1351\n243#1,3:1359\n246#1,2:1363\n266#1:1365\n376#1,10:1366\n267#1:1376\n249#1,6:1377\n268#1:1383\n386#1,2:1384\n365#1,11:1386\n262#1,4:1397\n232#1,7:1401\n243#1,3:1409\n246#1,2:1413\n266#1:1415\n376#1,10:1416\n267#1:1426\n249#1,6:1427\n268#1:1433\n386#1,2:1434\n1810#2:849\n1672#2:853\n1810#2:876\n1672#2:880\n1810#2:892\n1672#2:893\n1810#2:901\n1672#2:905\n1810#2:926\n1672#2:930\n1810#2:953\n1672#2:957\n1810#2:980\n1672#2:984\n1603#2:1001\n1599#2:1004\n1779#2,3:1008\n1793#2,3:1012\n1717#2:1016\n1705#2:1018\n1699#2:1019\n1712#2:1024\n1802#2:1026\n1810#2:1046\n1672#2:1050\n1810#2:1073\n1672#2:1077\n1810#2:1100\n1672#2:1104\n1810#2:1127\n1672#2:1131\n1810#2:1154\n1672#2:1158\n1603#2:1173\n1599#2:1174\n1779#2,3:1175\n1793#2,3:1178\n1717#2:1181\n1705#2:1182\n1699#2:1183\n1712#2:1184\n1802#2:1185\n1810#2:1208\n1672#2:1212\n1810#2:1258\n1672#2:1262\n1810#2:1308\n1672#2:1312\n1810#2:1358\n1672#2:1362\n1810#2:1408\n1672#2:1412\n833#3,3:997\n833#3,3:1170\n*S KotlinDebug\n*F\n+ 1 IntSet.kt\nandroidx/collection/IntSet\n*L\n203#1:838,4\n203#1:842,7\n203#1:850,3\n203#1:854,2\n203#1:856,2\n203#1:858,6\n203#1:864\n222#1:865,4\n222#1:869,7\n222#1:877,3\n222#1:881,2\n222#1:883,2\n222#1:885,6\n222#1:891\n265#1:894,7\n265#1:902,3\n265#1:906,9\n277#1:915,4\n277#1:919,7\n277#1:927,3\n277#1:931,2\n277#1:933,2\n277#1:935,6\n277#1:941\n290#1:942,4\n290#1:946,7\n290#1:954,3\n290#1:958,2\n290#1:960,2\n290#1:962,6\n290#1:968\n311#1:969,4\n311#1:973,7\n311#1:981,3\n311#1:985,2\n311#1:987,2\n311#1:989,6\n311#1:995\n322#1:996\n322#1:1000\n322#1:1002,2\n322#1:1005,3\n322#1:1011\n322#1:1015\n322#1:1017\n322#1:1020,4\n322#1:1025\n322#1:1027,8\n342#1:1035,4\n342#1:1039,7\n342#1:1047,3\n342#1:1051,2\n342#1:1053,2\n342#1:1055,6\n342#1:1061\n375#1:1062,4\n375#1:1066,7\n375#1:1074,3\n375#1:1078,2\n375#1:1080,2\n375#1:1082,6\n375#1:1088\n375#1:1089,4\n375#1:1093,7\n375#1:1101,3\n375#1:1105,2\n375#1:1107,2\n375#1:1109,6\n375#1:1115\n396#1:1116,4\n396#1:1120,7\n396#1:1128,3\n396#1:1132,2\n396#1:1134,2\n396#1:1136,6\n396#1:1142\n422#1:1143,4\n422#1:1147,7\n422#1:1155,3\n422#1:1159,2\n422#1:1161,2\n422#1:1163,6\n422#1:1169\n-1#1:1186,11\n-1#1:1197,4\n-1#1:1201,7\n-1#1:1209,3\n-1#1:1213,2\n-1#1:1215\n-1#1:1216,10\n-1#1:1226\n-1#1:1227,6\n-1#1:1233\n-1#1:1234,2\n-1#1:1236,11\n-1#1:1247,4\n-1#1:1251,7\n-1#1:1259,3\n-1#1:1263,2\n-1#1:1265\n-1#1:1266,10\n-1#1:1276\n-1#1:1277,6\n-1#1:1283\n-1#1:1284,2\n-1#1:1286,11\n-1#1:1297,4\n-1#1:1301,7\n-1#1:1309,3\n-1#1:1313,2\n-1#1:1315\n-1#1:1316,10\n-1#1:1326\n-1#1:1327,6\n-1#1:1333\n-1#1:1334,2\n-1#1:1336,11\n-1#1:1347,4\n-1#1:1351,7\n-1#1:1359,3\n-1#1:1363,2\n-1#1:1365\n-1#1:1366,10\n-1#1:1376\n-1#1:1377,6\n-1#1:1383\n-1#1:1384,2\n-1#1:1386,11\n-1#1:1397,4\n-1#1:1401,7\n-1#1:1409,3\n-1#1:1413,2\n-1#1:1415\n-1#1:1416,10\n-1#1:1426\n-1#1:1427,6\n-1#1:1433\n-1#1:1434,2\n203#1:849\n203#1:853\n222#1:876\n222#1:880\n238#1:892\n245#1:893\n265#1:901\n265#1:905\n277#1:926\n277#1:930\n290#1:953\n290#1:957\n311#1:980\n311#1:984\n322#1:1001\n322#1:1004\n322#1:1008,3\n322#1:1012,3\n322#1:1016\n322#1:1018\n322#1:1019\n322#1:1024\n322#1:1026\n342#1:1046\n342#1:1050\n375#1:1073\n375#1:1077\n375#1:1100\n375#1:1104\n396#1:1127\n396#1:1131\n422#1:1154\n422#1:1158\n443#1:1173\n446#1:1174\n449#1:1175,3\n450#1:1178,3\n451#1:1181\n452#1:1182\n452#1:1183\n456#1:1184\n459#1:1185\n-1#1:1208\n-1#1:1212\n-1#1:1258\n-1#1:1262\n-1#1:1308\n-1#1:1312\n-1#1:1358\n-1#1:1362\n-1#1:1408\n-1#1:1412\n322#1:997,3\n442#1:1170,3\n*E\n"
+    value = "SMAP\nIntSet.kt\nKotlin\n*S Kotlin\n*F\n+ 1 IntSet.kt\nandroidx/collection/IntSet\n+ 2 ScatterMap.kt\nandroidx/collection/ScatterMapKt\n+ 3 IntSet.kt\nandroidx/collection/IntSetKt\n*L\n1#1,853:1\n262#1,4:854\n232#1,7:858\n243#1,3:866\n246#1,2:870\n266#1,2:872\n249#1,6:874\n268#1:880\n262#1,4:881\n232#1,7:885\n243#1,3:893\n246#1,2:897\n266#1,2:899\n249#1,6:901\n268#1:907\n232#1,7:910\n243#1,3:918\n246#1,9:922\n262#1,4:931\n232#1,7:935\n243#1,3:943\n246#1,2:947\n266#1,2:949\n249#1,6:951\n268#1:957\n262#1,4:958\n232#1,7:962\n243#1,3:970\n246#1,2:974\n266#1,2:976\n249#1,6:978\n268#1:984\n262#1,4:985\n232#1,7:989\n243#1,3:997\n246#1,2:1001\n266#1,2:1003\n249#1,6:1005\n268#1:1011\n442#1:1012\n443#1:1016\n445#1,2:1018\n447#1,3:1021\n450#1:1027\n451#1:1031\n452#1:1033\n453#1,4:1036\n459#1:1041\n460#1,8:1043\n262#1,4:1051\n232#1,7:1055\n243#1,3:1063\n246#1,2:1067\n266#1,2:1069\n249#1,6:1071\n268#1:1077\n262#1,4:1078\n232#1,7:1082\n243#1,3:1090\n246#1,2:1094\n266#1,2:1096\n249#1,6:1098\n268#1:1104\n262#1,4:1105\n232#1,7:1109\n243#1,3:1117\n246#1,2:1121\n266#1,2:1123\n249#1,6:1125\n268#1:1131\n262#1,4:1132\n232#1,7:1136\n243#1,3:1144\n246#1,2:1148\n266#1,2:1150\n249#1,6:1152\n268#1:1158\n262#1,4:1159\n232#1,7:1163\n243#1,3:1171\n246#1,2:1175\n266#1,2:1177\n249#1,6:1179\n268#1:1185\n365#1,11:1202\n262#1,4:1213\n232#1,7:1217\n243#1,3:1225\n246#1,2:1229\n266#1:1231\n376#1,10:1232\n267#1:1242\n249#1,6:1243\n268#1:1249\n386#1,2:1250\n365#1,11:1252\n262#1,4:1263\n232#1,7:1267\n243#1,3:1275\n246#1,2:1279\n266#1:1281\n376#1,10:1282\n267#1:1292\n249#1,6:1293\n268#1:1299\n386#1,2:1300\n365#1,11:1302\n262#1,4:1313\n232#1,7:1317\n243#1,3:1325\n246#1,2:1329\n266#1:1331\n376#1,10:1332\n267#1:1342\n249#1,6:1343\n268#1:1349\n386#1,2:1350\n365#1,11:1352\n262#1,4:1363\n232#1,7:1367\n243#1,3:1375\n246#1,2:1379\n266#1:1381\n376#1,10:1382\n267#1:1392\n249#1,6:1393\n268#1:1399\n386#1,2:1400\n365#1,11:1402\n262#1,4:1413\n232#1,7:1417\n243#1,3:1425\n246#1,2:1429\n266#1:1431\n376#1,10:1432\n267#1:1442\n249#1,6:1443\n268#1:1449\n386#1,2:1450\n1826#2:865\n1688#2:869\n1826#2:892\n1688#2:896\n1826#2:908\n1688#2:909\n1826#2:917\n1688#2:921\n1826#2:942\n1688#2:946\n1826#2:969\n1688#2:973\n1826#2:996\n1688#2:1000\n1619#2:1017\n1615#2:1020\n1795#2,3:1024\n1809#2,3:1028\n1733#2:1032\n1721#2:1034\n1715#2:1035\n1728#2:1040\n1818#2:1042\n1826#2:1062\n1688#2:1066\n1826#2:1089\n1688#2:1093\n1826#2:1116\n1688#2:1120\n1826#2:1143\n1688#2:1147\n1826#2:1170\n1688#2:1174\n1619#2:1189\n1615#2:1190\n1795#2,3:1191\n1809#2,3:1194\n1733#2:1197\n1721#2:1198\n1715#2:1199\n1728#2:1200\n1818#2:1201\n1826#2:1224\n1688#2:1228\n1826#2:1274\n1688#2:1278\n1826#2:1324\n1688#2:1328\n1826#2:1374\n1688#2:1378\n1826#2:1424\n1688#2:1428\n849#3,3:1013\n849#3,3:1186\n*S KotlinDebug\n*F\n+ 1 IntSet.kt\nandroidx/collection/IntSet\n*L\n203#1:854,4\n203#1:858,7\n203#1:866,3\n203#1:870,2\n203#1:872,2\n203#1:874,6\n203#1:880\n222#1:881,4\n222#1:885,7\n222#1:893,3\n222#1:897,2\n222#1:899,2\n222#1:901,6\n222#1:907\n265#1:910,7\n265#1:918,3\n265#1:922,9\n277#1:931,4\n277#1:935,7\n277#1:943,3\n277#1:947,2\n277#1:949,2\n277#1:951,6\n277#1:957\n290#1:958,4\n290#1:962,7\n290#1:970,3\n290#1:974,2\n290#1:976,2\n290#1:978,6\n290#1:984\n311#1:985,4\n311#1:989,7\n311#1:997,3\n311#1:1001,2\n311#1:1003,2\n311#1:1005,6\n311#1:1011\n322#1:1012\n322#1:1016\n322#1:1018,2\n322#1:1021,3\n322#1:1027\n322#1:1031\n322#1:1033\n322#1:1036,4\n322#1:1041\n322#1:1043,8\n342#1:1051,4\n342#1:1055,7\n342#1:1063,3\n342#1:1067,2\n342#1:1069,2\n342#1:1071,6\n342#1:1077\n375#1:1078,4\n375#1:1082,7\n375#1:1090,3\n375#1:1094,2\n375#1:1096,2\n375#1:1098,6\n375#1:1104\n375#1:1105,4\n375#1:1109,7\n375#1:1117,3\n375#1:1121,2\n375#1:1123,2\n375#1:1125,6\n375#1:1131\n396#1:1132,4\n396#1:1136,7\n396#1:1144,3\n396#1:1148,2\n396#1:1150,2\n396#1:1152,6\n396#1:1158\n422#1:1159,4\n422#1:1163,7\n422#1:1171,3\n422#1:1175,2\n422#1:1177,2\n422#1:1179,6\n422#1:1185\n-1#1:1202,11\n-1#1:1213,4\n-1#1:1217,7\n-1#1:1225,3\n-1#1:1229,2\n-1#1:1231\n-1#1:1232,10\n-1#1:1242\n-1#1:1243,6\n-1#1:1249\n-1#1:1250,2\n-1#1:1252,11\n-1#1:1263,4\n-1#1:1267,7\n-1#1:1275,3\n-1#1:1279,2\n-1#1:1281\n-1#1:1282,10\n-1#1:1292\n-1#1:1293,6\n-1#1:1299\n-1#1:1300,2\n-1#1:1302,11\n-1#1:1313,4\n-1#1:1317,7\n-1#1:1325,3\n-1#1:1329,2\n-1#1:1331\n-1#1:1332,10\n-1#1:1342\n-1#1:1343,6\n-1#1:1349\n-1#1:1350,2\n-1#1:1352,11\n-1#1:1363,4\n-1#1:1367,7\n-1#1:1375,3\n-1#1:1379,2\n-1#1:1381\n-1#1:1382,10\n-1#1:1392\n-1#1:1393,6\n-1#1:1399\n-1#1:1400,2\n-1#1:1402,11\n-1#1:1413,4\n-1#1:1417,7\n-1#1:1425,3\n-1#1:1429,2\n-1#1:1431\n-1#1:1432,10\n-1#1:1442\n-1#1:1443,6\n-1#1:1449\n-1#1:1450,2\n203#1:865\n203#1:869\n222#1:892\n222#1:896\n238#1:908\n245#1:909\n265#1:917\n265#1:921\n277#1:942\n277#1:946\n290#1:969\n290#1:973\n311#1:996\n311#1:1000\n322#1:1017\n322#1:1020\n322#1:1024,3\n322#1:1028,3\n322#1:1032\n322#1:1034\n322#1:1035\n322#1:1040\n322#1:1042\n342#1:1062\n342#1:1066\n375#1:1089\n375#1:1093\n375#1:1116\n375#1:1120\n396#1:1143\n396#1:1147\n422#1:1170\n422#1:1174\n443#1:1189\n446#1:1190\n449#1:1191,3\n450#1:1194,3\n451#1:1197\n452#1:1198\n452#1:1199\n456#1:1200\n459#1:1201\n-1#1:1224\n-1#1:1228\n-1#1:1274\n-1#1:1278\n-1#1:1324\n-1#1:1328\n-1#1:1374\n-1#1:1378\n-1#1:1424\n-1#1:1428\n322#1:1013,3\n442#1:1186,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -334,13 +334,13 @@
     .line 373
     invoke-virtual {v7, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1090
+    .line 1106
     iget-object v3, v0, Landroidx/collection/IntSet;->elements:[I
 
-    .line 1094
+    .line 1110
     iget-object v0, v0, Landroidx/collection/IntSet;->metadata:[J
 
-    .line 1095
+    .line 1111
     array-length v8, v0
 
     add-int/lit8 v8, v8, -0x2
@@ -351,7 +351,7 @@
 
     const/4 v11, 0x0
 
-    .line 1098
+    .line 1114
     :goto_5
     aget-wide v12, v0, v10
 
@@ -400,7 +400,7 @@
 
     add-int v16, v16, v9
 
-    .line 1107
+    .line 1123
     aget v16, v3, v16
 
     if-ne v11, v5, :cond_5
@@ -497,13 +497,13 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 916
+    .line 932
     iget-object v0, p0, Landroidx/collection/IntSet;->elements:[I
 
-    .line 920
+    .line 936
     iget-object p0, p0, Landroidx/collection/IntSet;->metadata:[J
 
-    .line 921
+    .line 937
     array-length v1, p0
 
     add-int/lit8 v1, v1, -0x2
@@ -514,7 +514,7 @@
 
     move v3, v2
 
-    .line 924
+    .line 940
     :goto_0
     aget-wide v4, p0, v3
 
@@ -563,7 +563,7 @@
 
     add-int/2addr v9, v8
 
-    .line 933
+    .line 949
     aget v9, v0, v9
 
     .line 278
@@ -644,13 +644,13 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 943
+    .line 959
     iget-object v0, p0, Landroidx/collection/IntSet;->elements:[I
 
-    .line 947
+    .line 963
     iget-object p0, p0, Landroidx/collection/IntSet;->metadata:[J
 
-    .line 948
+    .line 964
     array-length v1, p0
 
     add-int/lit8 v1, v1, -0x2
@@ -661,7 +661,7 @@
 
     move v3, v2
 
-    .line 951
+    .line 967
     :goto_0
     aget-wide v4, p0, v3
 
@@ -710,7 +710,7 @@
 
     add-int/2addr v9, v8
 
-    .line 960
+    .line 976
     aget v9, v0, v9
 
     .line 291
@@ -760,7 +760,7 @@
 
     move-object/from16 v0, p0
 
-    .line 997
+    .line 1013
     invoke-static/range {p1 .. p1}, Ljava/lang/Integer;->hashCode(I)I
 
     move-result v1
@@ -775,7 +775,7 @@
 
     and-int/lit8 v2, v1, 0x7f
 
-    .line 1002
+    .line 1018
     iget v3, v0, Landroidx/collection/IntSet;->_capacity:I
 
     ushr-int/lit8 v1, v1, 0x7
@@ -786,7 +786,7 @@
 
     move v5, v4
 
-    .line 1007
+    .line 1023
     :goto_0
     iget-object v6, v0, Landroidx/collection/IntSet;->metadata:[J
 
@@ -796,7 +796,7 @@
 
     shl-int/lit8 v8, v8, 0x3
 
-    .line 1010
+    .line 1026
     aget-wide v9, v6, v7
 
     ushr-long/2addr v9, v8
@@ -848,7 +848,7 @@
 
     if-eqz v10, :cond_1
 
-    .line 1019
+    .line 1035
     invoke-static {v8, v9}, Ljava/lang/Long;->numberOfTrailingZeros(J)I
 
     move-result v10
@@ -859,7 +859,7 @@
 
     and-int/2addr v10, v3
 
-    .line 1020
+    .line 1036
     iget-object v14, v0, Landroidx/collection/IntSet;->elements:[I
 
     aget v14, v14, v10
@@ -940,13 +940,13 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 970
+    .line 986
     iget-object v0, p0, Landroidx/collection/IntSet;->elements:[I
 
-    .line 974
+    .line 990
     iget-object p0, p0, Landroidx/collection/IntSet;->metadata:[J
 
-    .line 975
+    .line 991
     array-length v1, p0
 
     add-int/lit8 v1, v1, -0x2
@@ -959,7 +959,7 @@
 
     move v4, v3
 
-    .line 978
+    .line 994
     :goto_0
     aget-wide v5, p0, v3
 
@@ -1008,7 +1008,7 @@
 
     add-int/2addr v10, v9
 
-    .line 987
+    .line 1003
     aget v10, v0, v10
 
     .line 312
@@ -1088,14 +1088,14 @@
 
     return v2
 
-    .line 1144
+    .line 1160
     :cond_2
     iget-object v1, p0, Landroidx/collection/IntSet;->elements:[I
 
-    .line 1148
+    .line 1164
     iget-object p0, p0, Landroidx/collection/IntSet;->metadata:[J
 
-    .line 1149
+    .line 1165
     array-length v3, p0
 
     add-int/lit8 v3, v3, -0x2
@@ -1104,7 +1104,7 @@
 
     move v4, v2
 
-    .line 1152
+    .line 1168
     :goto_0
     aget-wide v5, p0, v4
 
@@ -1153,7 +1153,7 @@
 
     add-int/2addr v10, v9
 
-    .line 1161
+    .line 1177
     aget v10, v1, v10
 
     .line 423
@@ -1189,7 +1189,7 @@
 .method public final findElementIndex$collection(I)I
     .locals 13
 
-    .line 1170
+    .line 1186
     invoke-static {p1}, Ljava/lang/Integer;->hashCode(I)I
 
     move-result v0
@@ -1223,7 +1223,7 @@
 
     shl-int/lit8 v6, v6, 0x3
 
-    .line 1177
+    .line 1193
     aget-wide v7, v4, v5
 
     ushr-long/2addr v7, v6
@@ -1273,7 +1273,7 @@
 
     if-eqz v12, :cond_1
 
-    .line 1183
+    .line 1199
     invoke-static {v6, v7}, Ljava/lang/Long;->numberOfTrailingZeros(J)I
 
     move-result v10
@@ -1334,13 +1334,13 @@
 .method public final first()I
     .locals 13
 
-    .line 839
+    .line 855
     iget-object v0, p0, Landroidx/collection/IntSet;->elements:[I
 
-    .line 843
+    .line 859
     iget-object p0, p0, Landroidx/collection/IntSet;->metadata:[J
 
-    .line 844
+    .line 860
     array-length v1, p0
 
     add-int/lit8 v1, v1, -0x2
@@ -1351,7 +1351,7 @@
 
     move v3, v2
 
-    .line 847
+    .line 863
     :goto_0
     aget-wide v4, p0, v3
 
@@ -1400,7 +1400,7 @@
 
     add-int/2addr p0, v8
 
-    .line 856
+    .line 872
     aget p0, v0, p0
 
     return p0
@@ -1450,13 +1450,13 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 866
+    .line 882
     iget-object v0, p0, Landroidx/collection/IntSet;->elements:[I
 
-    .line 870
+    .line 886
     iget-object p0, p0, Landroidx/collection/IntSet;->metadata:[J
 
-    .line 871
+    .line 887
     array-length v1, p0
 
     add-int/lit8 v1, v1, -0x2
@@ -1467,7 +1467,7 @@
 
     move v3, v2
 
-    .line 874
+    .line 890
     :goto_0
     aget-wide v4, p0, v3
 
@@ -1516,7 +1516,7 @@
 
     add-int/2addr v9, v8
 
-    .line 883
+    .line 899
     aget v9, v0, v9
 
     .line 222
@@ -1586,10 +1586,10 @@
     .line 263
     iget-object v0, p0, Landroidx/collection/IntSet;->elements:[I
 
-    .line 895
+    .line 911
     iget-object p0, p0, Landroidx/collection/IntSet;->metadata:[J
 
-    .line 896
+    .line 912
     array-length v1, p0
 
     add-int/lit8 v1, v1, -0x2
@@ -1600,7 +1600,7 @@
 
     move v3, v2
 
-    .line 899
+    .line 915
     :goto_0
     aget-wide v4, p0, v3
 
@@ -1810,13 +1810,13 @@
 .method public hashCode()I
     .locals 14
 
-    .line 1117
+    .line 1133
     iget-object v0, p0, Landroidx/collection/IntSet;->elements:[I
 
-    .line 1121
+    .line 1137
     iget-object p0, p0, Landroidx/collection/IntSet;->metadata:[J
 
-    .line 1122
+    .line 1138
     array-length v1, p0
 
     add-int/lit8 v1, v1, -0x2
@@ -1829,7 +1829,7 @@
 
     move v4, v3
 
-    .line 1125
+    .line 1141
     :goto_0
     aget-wide v5, p0, v3
 
@@ -1878,7 +1878,7 @@
 
     add-int/2addr v10, v9
 
-    .line 1134
+    .line 1150
     aget v10, v0, v10
 
     .line 397
@@ -2156,13 +2156,13 @@
     .line 340
     invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1036
+    .line 1052
     iget-object v2, v0, Landroidx/collection/IntSet;->elements:[I
 
-    .line 1040
+    .line 1056
     iget-object v0, v0, Landroidx/collection/IntSet;->metadata:[J
 
-    .line 1041
+    .line 1057
     array-length v6, v0
 
     add-int/lit8 v6, v6, -0x2
@@ -2173,7 +2173,7 @@
 
     const/4 v9, 0x0
 
-    .line 1044
+    .line 1060
     :goto_0
     aget-wide v10, v0, v8
 
@@ -2222,7 +2222,7 @@
 
     add-int/2addr v15, v14
 
-    .line 1053
+    .line 1069
     aget v15, v2, v15
 
     move/from16 v7, p4
@@ -2352,13 +2352,13 @@
     .line 373
     invoke-virtual {v6, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1063
+    .line 1079
     iget-object v2, v0, Landroidx/collection/IntSet;->elements:[I
 
-    .line 1067
+    .line 1083
     iget-object v0, v0, Landroidx/collection/IntSet;->metadata:[J
 
-    .line 1068
+    .line 1084
     array-length v7, v0
 
     add-int/lit8 v7, v7, -0x2
@@ -2369,7 +2369,7 @@
 
     const/4 v10, 0x0
 
-    .line 1071
+    .line 1087
     :goto_0
     aget-wide v11, v0, v9
 
@@ -2418,7 +2418,7 @@
 
     add-int v16, v16, v15
 
-    .line 1080
+    .line 1096
     aget v16, v2, v16
 
     move/from16 v8, p4
@@ -2545,26 +2545,26 @@
 
     invoke-static {v4, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1191
+    .line 1207
     const-string v5, "..."
 
     check-cast v5, Ljava/lang/CharSequence;
 
-    .line 1193
+    .line 1209
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 1194
+    .line 1210
     invoke-virtual {v6, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1198
+    .line 1214
     iget-object v2, v0, Landroidx/collection/IntSet;->elements:[I
 
-    .line 1202
+    .line 1218
     iget-object v0, v0, Landroidx/collection/IntSet;->metadata:[J
 
-    .line 1203
+    .line 1219
     array-length v7, v0
 
     add-int/lit8 v7, v7, -0x2
@@ -2575,7 +2575,7 @@
 
     const/4 v10, 0x0
 
-    .line 1206
+    .line 1222
     :goto_0
     aget-wide v11, v0, v9
 
@@ -2624,14 +2624,14 @@
 
     add-int v16, v16, v15
 
-    .line 1215
+    .line 1231
     aget v16, v2, v16
 
     move/from16 v8, p4
 
     if-ne v10, v8, :cond_0
 
-    .line 1217
+    .line 1233
     invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
     goto :goto_4
@@ -2639,10 +2639,10 @@
     :cond_0
     if-eqz v10, :cond_1
 
-    .line 1221
+    .line 1237
     invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1223
+    .line 1239
     :cond_1
     invoke-static/range {v16 .. v16}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2689,11 +2689,11 @@
 
     goto :goto_0
 
-    .line 1234
+    .line 1250
     :cond_5
     invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1193
+    .line 1209
     :goto_4
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2750,26 +2750,26 @@
 
     invoke-static {v4, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1241
+    .line 1257
     const-string v5, "..."
 
     check-cast v5, Ljava/lang/CharSequence;
 
-    .line 1243
+    .line 1259
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 1244
+    .line 1260
     invoke-virtual {v6, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1248
+    .line 1264
     iget-object v2, v0, Landroidx/collection/IntSet;->elements:[I
 
-    .line 1252
+    .line 1268
     iget-object v0, v0, Landroidx/collection/IntSet;->metadata:[J
 
-    .line 1253
+    .line 1269
     array-length v7, v0
 
     add-int/lit8 v7, v7, -0x2
@@ -2780,7 +2780,7 @@
 
     const/4 v10, 0x0
 
-    .line 1256
+    .line 1272
     :goto_0
     aget-wide v11, v0, v9
 
@@ -2829,14 +2829,14 @@
 
     add-int v16, v16, v15
 
-    .line 1265
+    .line 1281
     aget v16, v2, v16
 
     const/4 v8, -0x1
 
     if-ne v10, v8, :cond_0
 
-    .line 1267
+    .line 1283
     invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
     goto :goto_2
@@ -2844,10 +2844,10 @@
     :cond_0
     if-eqz v10, :cond_1
 
-    .line 1271
+    .line 1287
     invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1273
+    .line 1289
     :cond_1
     invoke-static/range {v16 .. v16}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2880,11 +2880,11 @@
 
     goto :goto_0
 
-    .line 1284
+    .line 1300
     :cond_5
     invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1243
+    .line 1259
     :goto_2
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2934,31 +2934,31 @@
 
     invoke-static {v3, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1289
+    .line 1305
     const-string v4, ""
 
     check-cast v4, Ljava/lang/CharSequence;
 
-    .line 1291
+    .line 1307
     const-string v5, "..."
 
     check-cast v5, Ljava/lang/CharSequence;
 
-    .line 1293
+    .line 1309
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 1294
+    .line 1310
     invoke-virtual {v6, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1298
+    .line 1314
     iget-object v2, v0, Landroidx/collection/IntSet;->elements:[I
 
-    .line 1302
+    .line 1318
     iget-object v0, v0, Landroidx/collection/IntSet;->metadata:[J
 
-    .line 1303
+    .line 1319
     array-length v7, v0
 
     add-int/lit8 v7, v7, -0x2
@@ -2969,7 +2969,7 @@
 
     const/4 v10, 0x0
 
-    .line 1306
+    .line 1322
     :goto_0
     aget-wide v11, v0, v9
 
@@ -3018,14 +3018,14 @@
 
     add-int v16, v16, v15
 
-    .line 1315
+    .line 1331
     aget v16, v2, v16
 
     const/4 v8, -0x1
 
     if-ne v10, v8, :cond_0
 
-    .line 1317
+    .line 1333
     invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
     goto :goto_2
@@ -3033,10 +3033,10 @@
     :cond_0
     if-eqz v10, :cond_1
 
-    .line 1321
+    .line 1337
     invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1323
+    .line 1339
     :cond_1
     invoke-static/range {v16 .. v16}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3069,11 +3069,11 @@
 
     goto :goto_0
 
-    .line 1334
+    .line 1350
     :cond_5
     invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1293
+    .line 1309
     :goto_2
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -3116,36 +3116,36 @@
 
     invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1338
+    .line 1354
     const-string v3, ""
 
     move-object v4, v3
 
     check-cast v4, Ljava/lang/CharSequence;
 
-    .line 1339
+    .line 1355
     check-cast v3, Ljava/lang/CharSequence;
 
-    .line 1341
+    .line 1357
     const-string v5, "..."
 
     check-cast v5, Ljava/lang/CharSequence;
 
-    .line 1343
+    .line 1359
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 1344
+    .line 1360
     invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1348
+    .line 1364
     iget-object v4, v0, Landroidx/collection/IntSet;->elements:[I
 
-    .line 1352
+    .line 1368
     iget-object v0, v0, Landroidx/collection/IntSet;->metadata:[J
 
-    .line 1353
+    .line 1369
     array-length v7, v0
 
     add-int/lit8 v7, v7, -0x2
@@ -3156,7 +3156,7 @@
 
     const/4 v10, 0x0
 
-    .line 1356
+    .line 1372
     :goto_0
     aget-wide v11, v0, v9
 
@@ -3205,14 +3205,14 @@
 
     add-int v16, v16, v15
 
-    .line 1365
+    .line 1381
     aget v16, v4, v16
 
     const/4 v8, -0x1
 
     if-ne v10, v8, :cond_0
 
-    .line 1367
+    .line 1383
     invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
     goto :goto_2
@@ -3220,10 +3220,10 @@
     :cond_0
     if-eqz v10, :cond_1
 
-    .line 1371
+    .line 1387
     invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1373
+    .line 1389
     :cond_1
     invoke-static/range {v16 .. v16}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3256,11 +3256,11 @@
 
     goto :goto_0
 
-    .line 1384
+    .line 1400
     :cond_5
     invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1343
+    .line 1359
     :goto_2
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -3296,41 +3296,41 @@
 
     invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1387
+    .line 1403
     const-string v2, ", "
 
     check-cast v2, Ljava/lang/CharSequence;
 
-    .line 1388
+    .line 1404
     const-string v3, ""
 
     move-object v4, v3
 
     check-cast v4, Ljava/lang/CharSequence;
 
-    .line 1389
+    .line 1405
     check-cast v3, Ljava/lang/CharSequence;
 
-    .line 1391
+    .line 1407
     const-string v5, "..."
 
     check-cast v5, Ljava/lang/CharSequence;
 
-    .line 1393
+    .line 1409
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 1394
+    .line 1410
     invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1398
+    .line 1414
     iget-object v4, v0, Landroidx/collection/IntSet;->elements:[I
 
-    .line 1402
+    .line 1418
     iget-object v0, v0, Landroidx/collection/IntSet;->metadata:[J
 
-    .line 1403
+    .line 1419
     array-length v7, v0
 
     add-int/lit8 v7, v7, -0x2
@@ -3341,7 +3341,7 @@
 
     const/4 v10, 0x0
 
-    .line 1406
+    .line 1422
     :goto_0
     aget-wide v11, v0, v9
 
@@ -3390,14 +3390,14 @@
 
     add-int v16, v16, v15
 
-    .line 1415
+    .line 1431
     aget v16, v4, v16
 
     const/4 v8, -0x1
 
     if-ne v10, v8, :cond_0
 
-    .line 1417
+    .line 1433
     invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
     goto :goto_2
@@ -3405,10 +3405,10 @@
     :cond_0
     if-eqz v10, :cond_1
 
-    .line 1421
+    .line 1437
     invoke-virtual {v6, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1423
+    .line 1439
     :cond_1
     invoke-static/range {v16 .. v16}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3441,11 +3441,11 @@
 
     goto :goto_0
 
-    .line 1434
+    .line 1450
     :cond_5
     invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
-    .line 1393
+    .line 1409
     :goto_2
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

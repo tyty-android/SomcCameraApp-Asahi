@@ -49,7 +49,7 @@
 .method public constructor <init>(F)V
     .locals 0
 
-    .line 365
+    .line 379
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;->gm:F
@@ -62,7 +62,7 @@
 .method public final getGm()F
     .locals 0
 
-    .line 365
+    .line 379
     iget p0, p0, Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;->gm:F
 
     return p0
@@ -71,7 +71,7 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 368
+    .line 382
     iget p0, p0, Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;->gm:F
 
     const/4 v0, 0x0
@@ -95,12 +95,12 @@
 
     if-nez v0, :cond_1
 
-    .line 369
+    .line 383
     const-string p0, "ZERO"
 
     goto :goto_0
 
-    .line 370
+    .line 384
     :cond_1
     invoke-static {p0}, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->getGmDisplayText(F)Ljava/lang/String;
 

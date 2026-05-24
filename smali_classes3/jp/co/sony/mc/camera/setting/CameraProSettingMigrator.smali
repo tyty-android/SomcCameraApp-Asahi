@@ -41,6 +41,18 @@
 
 .method static migrate(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/CameraProPreferences;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "capturingMode",
+            "cameraId",
+            "prefs"
+        }
+    .end annotation
 
     .line 50
     :try_start_0
@@ -67,6 +79,19 @@
 
 .method private static migrateCameraSettings(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/CameraProPreferences;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "capturingMode",
+            "cameraId",
+            "prefs"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -92,6 +117,18 @@
 
 .method private static removeInvalidSettings(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/CameraProPreferences;)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "capturingMode",
+            "cameraId",
+            "prefs"
+        }
+    .end annotation
 
     .line 97
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->getAll()Ljava/util/Map;

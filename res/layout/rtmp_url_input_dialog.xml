@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/camera_rtmpurl_margin_padding_top" android:paddingBottom="@dimen/camera_rtmpurl_margin_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/camera_rtmpurl_margin_padding_start" android:paddingEnd="@dimen/camera_rtmpurl_margin_padding_end">
-        <EditText android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" android:id="@id/edit_text" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:inputType="textVisiblePassword" android:imeOptions="flagNoFullscreen" />
-    </LinearLayout>
-</ScrollView>

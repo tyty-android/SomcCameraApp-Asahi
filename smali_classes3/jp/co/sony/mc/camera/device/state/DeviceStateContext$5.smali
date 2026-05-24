@@ -28,13 +28,26 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$processAdapter",
+            "val$captureId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 3517
+    .line 3878
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$5;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$5;->val$processAdapter:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;
@@ -51,7 +64,7 @@
 .method public run()V
     .locals 2
 
-    .line 3520
+    .line 3881
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$5;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fgetmCaptureProcessQueue(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Ljava/util/Deque;
@@ -66,7 +79,7 @@
 
     if-nez v0, :cond_0
 
-    .line 3521
+    .line 3882
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$5;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fgetmCaptureProcessQueue(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Ljava/util/Deque;
@@ -77,7 +90,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/Deque;->add(Ljava/lang/Object;)Z
 
-    .line 3522
+    .line 3883
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$5;->val$processAdapter:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;
 
     iget p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$5;->val$captureId:I

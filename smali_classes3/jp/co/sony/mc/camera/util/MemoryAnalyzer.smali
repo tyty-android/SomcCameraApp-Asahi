@@ -19,6 +19,18 @@
 
 .method public static declared-synchronized logMemoryInfo(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "procName",
+            "title"
+        }
+    .end annotation
 
     const-string p1, "System Memory Info : threshold = "
 

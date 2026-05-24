@@ -5,6 +5,14 @@
 
 # virtual methods
 .method public abstract launchCameraSettings(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "initialPosition"
+        }
+    .end annotation
 .end method
 
 .method public abstract launchGoogleLensActivity()V

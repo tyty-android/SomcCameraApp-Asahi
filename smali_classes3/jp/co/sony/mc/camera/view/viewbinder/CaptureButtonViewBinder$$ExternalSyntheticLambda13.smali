@@ -3,36 +3,30 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
-
-
-# instance fields
-.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;
+.implements Lkotlin/jvm/functions/Function2;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;)V
+.method public synthetic constructor <init>()V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder$$ExternalSyntheticLambda13;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder$$ExternalSyntheticLambda13;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;
+    check-cast p1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
-    check-cast p1, Lkotlin/Pair;
+    check-cast p2, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;->$r8$lambda$PgeIvbikrV54xpvv9K7PfDtKjzc(Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+    invoke-static {p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;->$r8$lambda$MGPD8YDPqxN8qxRfctlttQ4YNJg(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Lkotlin/Pair;
 
     move-result-object p0
 

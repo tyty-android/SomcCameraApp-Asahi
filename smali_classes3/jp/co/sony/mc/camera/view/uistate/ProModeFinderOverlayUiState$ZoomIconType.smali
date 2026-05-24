@@ -85,7 +85,7 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x7f0802d4
+    const v2, 0x7f080358
 
     const-string v3, "DIGITAL_ZOOM"
 
@@ -98,7 +98,7 @@
 
     const/4 v1, 0x1
 
-    const v2, 0x7f0802d3
+    const v2, 0x7f080357
 
     const-string v3, "AI_ZOOM"
 

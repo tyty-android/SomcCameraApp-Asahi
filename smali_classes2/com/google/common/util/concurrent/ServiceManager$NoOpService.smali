@@ -18,7 +18,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 812
+    .line 883
     invoke-direct {p0}, Lcom/google/common/util/concurrent/AbstractService;-><init>()V
 
     return-void
@@ -27,7 +27,7 @@
 .method synthetic constructor <init>(Lcom/google/common/util/concurrent/ServiceManager$1;)V
     .locals 0
 
-    .line 812
+    .line 883
     invoke-direct {p0}, Lcom/google/common/util/concurrent/ServiceManager$NoOpService;-><init>()V
 
     return-void
@@ -38,7 +38,7 @@
 .method protected doStart()V
     .locals 0
 
-    .line 815
+    .line 886
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ServiceManager$NoOpService;->notifyStarted()V
 
     return-void
@@ -47,7 +47,7 @@
 .method protected doStop()V
     .locals 0
 
-    .line 820
+    .line 891
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ServiceManager$NoOpService;->notifyStopped()V
 
     return-void

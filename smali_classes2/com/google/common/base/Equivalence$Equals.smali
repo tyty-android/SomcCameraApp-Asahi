@@ -36,7 +36,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 330
+    .line 350
     new-instance v0, Lcom/google/common/base/Equivalence$Equals;
 
     invoke-direct {v0}, Lcom/google/common/base/Equivalence$Equals;-><init>()V
@@ -49,7 +49,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 328
+    .line 348
     invoke-direct {p0}, Lcom/google/common/base/Equivalence;-><init>()V
 
     return-void
@@ -58,7 +58,7 @@
 .method private readResolve()Ljava/lang/Object;
     .locals 0
 
-    .line 343
+    .line 363
     sget-object p0, Lcom/google/common/base/Equivalence$Equals;->INSTANCE:Lcom/google/common/base/Equivalence$Equals;
 
     return-object p0
@@ -68,8 +68,18 @@
 # virtual methods
 .method protected doEquivalent(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b"
+        }
+    .end annotation
 
-    .line 334
+    .line 354
     invoke-virtual {p1, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -79,8 +89,16 @@
 
 .method protected doHash(Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 339
+    .line 359
     invoke-virtual {p1}, Ljava/lang/Object;->hashCode()I
 
     move-result p0

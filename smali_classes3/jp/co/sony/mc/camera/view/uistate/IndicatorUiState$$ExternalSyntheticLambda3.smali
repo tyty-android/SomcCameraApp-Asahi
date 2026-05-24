@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function4;
+.implements Lkotlin/jvm/functions/Function3;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
@@ -28,9 +28,7 @@
 
     check-cast p3, Ljava/lang/Boolean;
 
-    check-cast p4, Ljava/lang/Boolean;
-
-    invoke-static {p1, p2, p3, p4}, Ljp/co/sony/mc/camera/view/uistate/IndicatorUiState;->$r8$lambda$opcUoB2JkvVNSrK_EXVAll1Pfk4(Ljava/lang/Boolean;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljava/lang/Boolean;Ljava/lang/Boolean;)Z
+    invoke-static {p1, p2, p3}, Ljp/co/sony/mc/camera/view/uistate/IndicatorUiState;->$r8$lambda$vAR7B8e2xqxE-e77ce4wDSplTKQ(Ljava/lang/Boolean;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljava/lang/Boolean;)Z
 
     move-result p0
 

@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
-    .line 2150
+    .line 2160
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener$1;->this$1:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +46,7 @@
 .method public onFaceReflected()V
     .locals 0
 
-    .line 2153
+    .line 2163
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener$1;->this$1:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;

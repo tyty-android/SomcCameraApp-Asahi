@@ -16,6 +16,16 @@
 
 # virtual methods
 .method public abstract onInfo(II)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "info",
+            "extra"
+        }
+    .end annotation
 .end method
 
 .method public abstract onMaxDurationReached()V

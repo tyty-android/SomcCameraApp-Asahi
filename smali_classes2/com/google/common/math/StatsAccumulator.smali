@@ -3,6 +3,11 @@
 .source "StatsAccumulator.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/math/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # instance fields
 .field private count:J
 
@@ -19,28 +24,28 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 37
+    .line 43
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-wide/16 v0, 0x0
 
-    .line 41
+    .line 47
     iput-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->count:J
 
     const-wide/16 v0, 0x0
 
-    .line 42
+    .line 48
     iput-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->mean:D
 
-    .line 43
+    .line 49
     iput-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->sumOfSquaresOfDeltas:D
 
     const-wide/high16 v0, 0x7ff8000000000000L    # Double.NaN
 
-    .line 44
+    .line 50
     iput-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->min:D
 
-    .line 45
+    .line 51
     iput-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->max:D
 
     return-void
@@ -48,8 +53,18 @@
 
 .method static calculateNewMeanNonFinite(DD)D
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "previousMean",
+            "value"
+        }
+    .end annotation
 
-    .line 383
+    .line 426
     invoke-static {p0, p1}, Lcom/google/common/primitives/Doubles;->isFinite(D)Z
 
     move-result v0
@@ -58,7 +73,7 @@
 
     return-wide p2
 
-    .line 386
+    .line 429
     :cond_0
     invoke-static {p2, p3}, Lcom/google/common/primitives/Doubles;->isFinite(D)Z
 
@@ -82,6 +97,22 @@
 
 .method private merge(JDDDD)V
     .locals 17
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "otherCount",
+            "otherMean",
+            "otherSumOfSquaresOfDeltas",
+            "otherMin",
+            "otherMax"
+        }
+    .end annotation
 
     move-object/from16 v0, p0
 
@@ -95,7 +126,7 @@
 
     move-wide/from16 v9, p9
 
-    .line 161
+    .line 204
     iget-wide v11, v0, Lcom/google/common/math/StatsAccumulator;->count:J
 
     const-wide/16 v13, 0x0
@@ -104,19 +135,19 @@
 
     if-nez v13, :cond_0
 
-    .line 162
+    .line 205
     iput-wide v1, v0, Lcom/google/common/math/StatsAccumulator;->count:J
 
-    .line 163
+    .line 206
     iput-wide v3, v0, Lcom/google/common/math/StatsAccumulator;->mean:D
 
-    .line 164
+    .line 207
     iput-wide v5, v0, Lcom/google/common/math/StatsAccumulator;->sumOfSquaresOfDeltas:D
 
-    .line 165
+    .line 208
     iput-wide v7, v0, Lcom/google/common/math/StatsAccumulator;->min:D
 
-    .line 166
+    .line 209
     iput-wide v9, v0, Lcom/google/common/math/StatsAccumulator;->max:D
 
     goto :goto_1
@@ -124,10 +155,10 @@
     :cond_0
     add-long/2addr v11, v1
 
-    .line 168
+    .line 211
     iput-wide v11, v0, Lcom/google/common/math/StatsAccumulator;->count:J
 
-    .line 169
+    .line 212
     iget-wide v11, v0, Lcom/google/common/math/StatsAccumulator;->mean:D
 
     invoke-static {v11, v12}, Lcom/google/common/primitives/Doubles;->isFinite(D)Z
@@ -142,7 +173,7 @@
 
     if-eqz v11, :cond_1
 
-    .line 171
+    .line 214
     iget-wide v11, v0, Lcom/google/common/math/StatsAccumulator;->mean:D
 
     sub-double v13, v3, v11
@@ -151,7 +182,7 @@
 
     mul-double v15, v13, v1
 
-    .line 172
+    .line 215
     iget-wide v9, v0, Lcom/google/common/math/StatsAccumulator;->count:J
 
     long-to-double v9, v9
@@ -162,7 +193,7 @@
 
     iput-wide v11, v0, Lcom/google/common/math/StatsAccumulator;->mean:D
 
-    .line 173
+    .line 216
     iget-wide v9, v0, Lcom/google/common/math/StatsAccumulator;->sumOfSquaresOfDeltas:D
 
     sub-double/2addr v3, v11
@@ -179,7 +210,7 @@
 
     goto :goto_0
 
-    .line 175
+    .line 218
     :cond_1
     iget-wide v1, v0, Lcom/google/common/math/StatsAccumulator;->mean:D
 
@@ -191,10 +222,10 @@
 
     const-wide/high16 v1, 0x7ff8000000000000L    # Double.NaN
 
-    .line 176
+    .line 219
     iput-wide v1, v0, Lcom/google/common/math/StatsAccumulator;->sumOfSquaresOfDeltas:D
 
-    .line 178
+    .line 221
     :goto_0
     iget-wide v1, v0, Lcom/google/common/math/StatsAccumulator;->min:D
 
@@ -204,7 +235,7 @@
 
     iput-wide v1, v0, Lcom/google/common/math/StatsAccumulator;->min:D
 
-    .line 179
+    .line 222
     iget-wide v1, v0, Lcom/google/common/math/StatsAccumulator;->max:D
 
     move-wide/from16 v3, p9
@@ -223,8 +254,16 @@
 # virtual methods
 .method public add(D)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 49
+    .line 55
     iget-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->count:J
 
     const-wide/16 v2, 0x0
@@ -237,26 +276,26 @@
 
     if-nez v2, :cond_0
 
-    .line 50
+    .line 56
     iput-wide v5, p0, Lcom/google/common/math/StatsAccumulator;->count:J
 
-    .line 51
+    .line 57
     iput-wide p1, p0, Lcom/google/common/math/StatsAccumulator;->mean:D
 
-    .line 52
+    .line 58
     iput-wide p1, p0, Lcom/google/common/math/StatsAccumulator;->min:D
 
-    .line 53
+    .line 59
     iput-wide p1, p0, Lcom/google/common/math/StatsAccumulator;->max:D
 
-    .line 54
+    .line 60
     invoke-static {p1, p2}, Lcom/google/common/primitives/Doubles;->isFinite(D)Z
 
     move-result p1
 
     if-nez p1, :cond_2
 
-    .line 55
+    .line 61
     iput-wide v3, p0, Lcom/google/common/math/StatsAccumulator;->sumOfSquaresOfDeltas:D
 
     goto :goto_1
@@ -264,10 +303,10 @@
     :cond_0
     add-long/2addr v0, v5
 
-    .line 58
+    .line 64
     iput-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->count:J
 
-    .line 59
+    .line 65
     invoke-static {p1, p2}, Lcom/google/common/primitives/Doubles;->isFinite(D)Z
 
     move-result v0
@@ -282,12 +321,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 61
+    .line 67
     iget-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->mean:D
 
     sub-double v2, p1, v0
 
-    .line 62
+    .line 68
     iget-wide v4, p0, Lcom/google/common/math/StatsAccumulator;->count:J
 
     long-to-double v4, v4
@@ -298,7 +337,7 @@
 
     iput-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->mean:D
 
-    .line 63
+    .line 69
     iget-wide v4, p0, Lcom/google/common/math/StatsAccumulator;->sumOfSquaresOfDeltas:D
 
     sub-double v0, p1, v0
@@ -311,7 +350,7 @@
 
     goto :goto_0
 
-    .line 65
+    .line 71
     :cond_1
     iget-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->mean:D
 
@@ -321,10 +360,10 @@
 
     iput-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->mean:D
 
-    .line 66
+    .line 72
     iput-wide v3, p0, Lcom/google/common/math/StatsAccumulator;->sumOfSquaresOfDeltas:D
 
-    .line 68
+    .line 74
     :goto_0
     iget-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->min:D
 
@@ -334,7 +373,7 @@
 
     iput-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->min:D
 
-    .line 69
+    .line 75
     iget-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->max:D
 
     invoke-static {v0, v1, p1, p2}, Ljava/lang/Math;->max(DD)D
@@ -350,8 +389,16 @@
 
 .method public addAll(Lcom/google/common/math/Stats;)V
     .locals 12
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "values"
+        }
+    .end annotation
 
-    .line 136
+    .line 179
     invoke-virtual {p1}, Lcom/google/common/math/Stats;->count()J
 
     move-result-wide v0
@@ -364,7 +411,7 @@
 
     return-void
 
-    .line 139
+    .line 182
     :cond_0
     invoke-virtual {p1}, Lcom/google/common/math/Stats;->count()J
 
@@ -395,8 +442,16 @@
 
 .method public addAll(Lcom/google/common/math/StatsAccumulator;)V
     .locals 12
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "values"
+        }
+    .end annotation
 
-    .line 149
+    .line 192
     invoke-virtual {p1}, Lcom/google/common/math/StatsAccumulator;->count()J
 
     move-result-wide v0
@@ -409,7 +464,7 @@
 
     return-void
 
-    .line 152
+    .line 195
     :cond_0
     invoke-virtual {p1}, Lcom/google/common/math/StatsAccumulator;->count()J
 
@@ -440,6 +495,15 @@
 
 .method public addAll(Ljava/lang/Iterable;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "values"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -450,7 +514,7 @@
         }
     .end annotation
 
-    .line 80
+    .line 86
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -468,7 +532,7 @@
 
     check-cast v0, Ljava/lang/Number;
 
-    .line 81
+    .line 87
     invoke-virtual {v0}, Ljava/lang/Number;->doubleValue()D
 
     move-result-wide v0
@@ -483,6 +547,15 @@
 
 .method public addAll(Ljava/util/Iterator;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "values"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -493,7 +566,7 @@
         }
     .end annotation
 
-    .line 92
+    .line 98
     :goto_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -501,7 +574,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 93
+    .line 99
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
@@ -520,10 +593,123 @@
     return-void
 .end method
 
+.method public addAll(Ljava/util/stream/DoubleStream;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "values"
+        }
+    .end annotation
+
+    .line 146
+    new-instance v0, Lcom/google/common/math/Stats$$ExternalSyntheticLambda0;
+
+    invoke-direct {v0}, Lcom/google/common/math/Stats$$ExternalSyntheticLambda0;-><init>()V
+
+    new-instance v1, Lcom/google/common/math/Stats$$ExternalSyntheticLambda4;
+
+    invoke-direct {v1}, Lcom/google/common/math/Stats$$ExternalSyntheticLambda4;-><init>()V
+
+    new-instance v2, Lcom/google/common/math/Stats$$ExternalSyntheticLambda2;
+
+    invoke-direct {v2}, Lcom/google/common/math/Stats$$ExternalSyntheticLambda2;-><init>()V
+
+    invoke-interface {p1, v0, v1, v2}, Ljava/util/stream/DoubleStream;->collect(Ljava/util/function/Supplier;Ljava/util/function/ObjDoubleConsumer;Ljava/util/function/BiConsumer;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/google/common/math/StatsAccumulator;
+
+    invoke-virtual {p0, p1}, Lcom/google/common/math/StatsAccumulator;->addAll(Lcom/google/common/math/StatsAccumulator;)V
+
+    return-void
+.end method
+
+.method public addAll(Ljava/util/stream/IntStream;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "values"
+        }
+    .end annotation
+
+    .line 158
+    new-instance v0, Lcom/google/common/math/Stats$$ExternalSyntheticLambda0;
+
+    invoke-direct {v0}, Lcom/google/common/math/Stats$$ExternalSyntheticLambda0;-><init>()V
+
+    new-instance v1, Lcom/google/common/math/Stats$$ExternalSyntheticLambda3;
+
+    invoke-direct {v1}, Lcom/google/common/math/Stats$$ExternalSyntheticLambda3;-><init>()V
+
+    new-instance v2, Lcom/google/common/math/Stats$$ExternalSyntheticLambda2;
+
+    invoke-direct {v2}, Lcom/google/common/math/Stats$$ExternalSyntheticLambda2;-><init>()V
+
+    invoke-interface {p1, v0, v1, v2}, Ljava/util/stream/IntStream;->collect(Ljava/util/function/Supplier;Ljava/util/function/ObjIntConsumer;Ljava/util/function/BiConsumer;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/google/common/math/StatsAccumulator;
+
+    invoke-virtual {p0, p1}, Lcom/google/common/math/StatsAccumulator;->addAll(Lcom/google/common/math/StatsAccumulator;)V
+
+    return-void
+.end method
+
+.method public addAll(Ljava/util/stream/LongStream;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "values"
+        }
+    .end annotation
+
+    .line 171
+    new-instance v0, Lcom/google/common/math/Stats$$ExternalSyntheticLambda0;
+
+    invoke-direct {v0}, Lcom/google/common/math/Stats$$ExternalSyntheticLambda0;-><init>()V
+
+    new-instance v1, Lcom/google/common/math/Stats$$ExternalSyntheticLambda1;
+
+    invoke-direct {v1}, Lcom/google/common/math/Stats$$ExternalSyntheticLambda1;-><init>()V
+
+    new-instance v2, Lcom/google/common/math/Stats$$ExternalSyntheticLambda2;
+
+    invoke-direct {v2}, Lcom/google/common/math/Stats$$ExternalSyntheticLambda2;-><init>()V
+
+    invoke-interface {p1, v0, v1, v2}, Ljava/util/stream/LongStream;->collect(Ljava/util/function/Supplier;Ljava/util/function/ObjLongConsumer;Ljava/util/function/BiConsumer;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/google/common/math/StatsAccumulator;
+
+    invoke-virtual {p0, p1}, Lcom/google/common/math/StatsAccumulator;->addAll(Lcom/google/common/math/StatsAccumulator;)V
+
+    return-void
+.end method
+
 .method public varargs addAll([D)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "values"
+        }
+    .end annotation
 
-    .line 103
+    .line 109
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -533,7 +719,7 @@
 
     aget-wide v2, p1, v1
 
-    .line 104
+    .line 110
     invoke-virtual {p0, v2, v3}, Lcom/google/common/math/StatsAccumulator;->add(D)V
 
     add-int/lit8 v1, v1, 0x1
@@ -546,8 +732,16 @@
 
 .method public varargs addAll([I)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "values"
+        }
+    .end annotation
 
-    .line 114
+    .line 120
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -559,7 +753,7 @@
 
     int-to-double v2, v2
 
-    .line 115
+    .line 121
     invoke-virtual {p0, v2, v3}, Lcom/google/common/math/StatsAccumulator;->add(D)V
 
     add-int/lit8 v1, v1, 0x1
@@ -572,8 +766,16 @@
 
 .method public varargs addAll([J)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "values"
+        }
+    .end annotation
 
-    .line 126
+    .line 132
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -585,7 +787,7 @@
 
     long-to-double v2, v2
 
-    .line 127
+    .line 133
     invoke-virtual {p0, v2, v3}, Lcom/google/common/math/StatsAccumulator;->add(D)V
 
     add-int/lit8 v1, v1, 0x1
@@ -599,7 +801,7 @@
 .method public count()J
     .locals 2
 
-    .line 190
+    .line 233
     iget-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->count:J
 
     return-wide v0
@@ -608,7 +810,7 @@
 .method public max()D
     .locals 4
 
-    .line 356
+    .line 399
     iget-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->count:J
 
     const-wide/16 v2, 0x0
@@ -627,7 +829,7 @@
     :goto_0
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkState(Z)V
 
-    .line 357
+    .line 400
     iget-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->max:D
 
     return-wide v0
@@ -636,7 +838,7 @@
 .method public mean()D
     .locals 4
 
-    .line 212
+    .line 255
     iget-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->count:J
 
     const-wide/16 v2, 0x0
@@ -655,7 +857,7 @@
     :goto_0
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkState(Z)V
 
-    .line 213
+    .line 256
     iget-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->mean:D
 
     return-wide v0
@@ -664,7 +866,7 @@
 .method public min()D
     .locals 4
 
-    .line 338
+    .line 381
     iget-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->count:J
 
     const-wide/16 v2, 0x0
@@ -683,7 +885,7 @@
     :goto_0
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkState(Z)V
 
-    .line 339
+    .line 382
     iget-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->min:D
 
     return-wide v0
@@ -692,7 +894,7 @@
 .method public final populationStandardDeviation()D
     .locals 2
 
-    .line 275
+    .line 318
     invoke-virtual {p0}, Lcom/google/common/math/StatsAccumulator;->populationVariance()D
 
     move-result-wide v0
@@ -707,7 +909,7 @@
 .method public final populationVariance()D
     .locals 4
 
-    .line 248
+    .line 291
     iget-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->count:J
 
     const-wide/16 v2, 0x0
@@ -726,7 +928,7 @@
     :goto_0
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkState(Z)V
 
-    .line 249
+    .line 292
     iget-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->sumOfSquaresOfDeltas:D
 
     invoke-static {v0, v1}, Ljava/lang/Double;->isNaN(D)Z
@@ -739,7 +941,7 @@
 
     return-wide v0
 
-    .line 252
+    .line 295
     :cond_1
     iget-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->count:J
 
@@ -753,7 +955,7 @@
 
     return-wide v0
 
-    .line 255
+    .line 298
     :cond_2
     iget-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->sumOfSquaresOfDeltas:D
 
@@ -773,7 +975,7 @@
 .method public final sampleStandardDeviation()D
     .locals 2
 
-    .line 321
+    .line 364
     invoke-virtual {p0}, Lcom/google/common/math/StatsAccumulator;->sampleVariance()D
 
     move-result-wide v0
@@ -788,7 +990,7 @@
 .method public final sampleVariance()D
     .locals 6
 
-    .line 295
+    .line 338
     iget-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->count:J
 
     const-wide/16 v2, 0x1
@@ -807,7 +1009,7 @@
     :goto_0
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkState(Z)V
 
-    .line 296
+    .line 339
     iget-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->sumOfSquaresOfDeltas:D
 
     invoke-static {v0, v1}, Ljava/lang/Double;->isNaN(D)Z
@@ -820,7 +1022,7 @@
 
     return-wide v0
 
-    .line 299
+    .line 342
     :cond_1
     iget-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->sumOfSquaresOfDeltas:D
 
@@ -842,7 +1044,7 @@
 .method public snapshot()Lcom/google/common/math/Stats;
     .locals 12
 
-    .line 185
+    .line 228
     new-instance v11, Lcom/google/common/math/Stats;
 
     iget-wide v1, p0, Lcom/google/common/math/StatsAccumulator;->count:J
@@ -865,7 +1067,7 @@
 .method public final sum()D
     .locals 4
 
-    .line 229
+    .line 272
     iget-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->mean:D
 
     iget-wide v2, p0, Lcom/google/common/math/StatsAccumulator;->count:J
@@ -880,7 +1082,7 @@
 .method sumOfSquaresOfDeltas()D
     .locals 2
 
-    .line 361
+    .line 404
     iget-wide v0, p0, Lcom/google/common/math/StatsAccumulator;->sumOfSquaresOfDeltas:D
 
     return-wide v0

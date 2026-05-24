@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<C::",
@@ -23,7 +26,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 27
+    .line 29
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -33,6 +36,15 @@
 # virtual methods
 .method public add(Lcom/google/common/collect/Range;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "range"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -41,7 +53,7 @@
         }
     .end annotation
 
-    .line 44
+    .line 47
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -51,6 +63,15 @@
 
 .method public addAll(Lcom/google/common/collect/RangeSet;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "other"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -59,7 +80,7 @@
         }
     .end annotation
 
-    .line 74
+    .line 77
     invoke-interface {p1}, Lcom/google/common/collect/RangeSet;->asRanges()Ljava/util/Set;
 
     move-result-object p1
@@ -71,6 +92,15 @@
 
 .method public addAll(Ljava/lang/Iterable;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ranges"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -80,7 +110,7 @@
         }
     .end annotation
 
-    .line 79
+    .line 82
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -98,7 +128,7 @@
 
     check-cast v0, Lcom/google/common/collect/Range;
 
-    .line 80
+    .line 83
     invoke-virtual {p0, v0}, Lcom/google/common/collect/AbstractRangeSet;->add(Lcom/google/common/collect/Range;)V
 
     goto :goto_0
@@ -110,7 +140,7 @@
 .method public clear()V
     .locals 1
 
-    .line 54
+    .line 57
     invoke-static {}, Lcom/google/common/collect/Range;->all()Lcom/google/common/collect/Range;
 
     move-result-object v0
@@ -122,13 +152,22 @@
 
 .method public contains(Ljava/lang/Comparable;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TC;)Z"
         }
     .end annotation
 
-    .line 31
+    .line 33
     invoke-virtual {p0, p1}, Lcom/google/common/collect/AbstractRangeSet;->rangeContaining(Ljava/lang/Comparable;)Lcom/google/common/collect/Range;
 
     move-result-object p0
@@ -147,6 +186,15 @@
 .end method
 
 .method public abstract encloses(Lcom/google/common/collect/Range;)Z
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "otherRange"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -158,6 +206,15 @@
 
 .method public enclosesAll(Lcom/google/common/collect/RangeSet;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "other"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -166,7 +223,7 @@
         }
     .end annotation
 
-    .line 59
+    .line 62
     invoke-interface {p1}, Lcom/google/common/collect/RangeSet;->asRanges()Ljava/util/Set;
 
     move-result-object p1
@@ -180,6 +237,15 @@
 
 .method public enclosesAll(Ljava/lang/Iterable;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ranges"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -189,7 +255,7 @@
         }
     .end annotation
 
-    .line 64
+    .line 67
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -207,7 +273,7 @@
 
     check-cast v0, Lcom/google/common/collect/Range;
 
-    .line 65
+    .line 68
     invoke-virtual {p0, v0}, Lcom/google/common/collect/AbstractRangeSet;->encloses(Lcom/google/common/collect/Range;)Z
 
     move-result v0
@@ -227,9 +293,17 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
     if-ne p1, p0, :cond_0
 
@@ -237,16 +311,16 @@
 
     return p0
 
-    .line 108
+    .line 111
     :cond_0
     instance-of v0, p1, Lcom/google/common/collect/RangeSet;
 
     if-eqz v0, :cond_1
 
-    .line 109
+    .line 112
     check-cast p1, Lcom/google/common/collect/RangeSet;
 
-    .line 110
+    .line 113
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractRangeSet;->asRanges()Ljava/util/Set;
 
     move-result-object p0
@@ -270,7 +344,7 @@
 .method public final hashCode()I
     .locals 0
 
-    .line 117
+    .line 120
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractRangeSet;->asRanges()Ljava/util/Set;
 
     move-result-object p0
@@ -284,6 +358,15 @@
 
 .method public intersects(Lcom/google/common/collect/Range;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "otherRange"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -292,7 +375,7 @@
         }
     .end annotation
 
-    .line 98
+    .line 101
     invoke-virtual {p0, p1}, Lcom/google/common/collect/AbstractRangeSet;->subRangeSet(Lcom/google/common/collect/Range;)Lcom/google/common/collect/RangeSet;
 
     move-result-object p0
@@ -309,7 +392,7 @@
 .method public isEmpty()Z
     .locals 0
 
-    .line 39
+    .line 42
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractRangeSet;->asRanges()Ljava/util/Set;
 
     move-result-object p0
@@ -322,6 +405,15 @@
 .end method
 
 .method public abstract rangeContaining(Ljava/lang/Comparable;)Lcom/google/common/collect/Range;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TC;)",
@@ -329,10 +421,22 @@
             "TC;>;"
         }
     .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 .end method
 
 .method public remove(Lcom/google/common/collect/Range;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "range"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -341,7 +445,7 @@
         }
     .end annotation
 
-    .line 49
+    .line 52
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -351,6 +455,15 @@
 
 .method public removeAll(Lcom/google/common/collect/RangeSet;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "other"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -359,7 +472,7 @@
         }
     .end annotation
 
-    .line 86
+    .line 89
     invoke-interface {p1}, Lcom/google/common/collect/RangeSet;->asRanges()Ljava/util/Set;
 
     move-result-object p1
@@ -371,6 +484,15 @@
 
 .method public removeAll(Ljava/lang/Iterable;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ranges"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -380,7 +502,7 @@
         }
     .end annotation
 
-    .line 91
+    .line 94
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -398,7 +520,7 @@
 
     check-cast v0, Lcom/google/common/collect/Range;
 
-    .line 92
+    .line 95
     invoke-virtual {p0, v0}, Lcom/google/common/collect/AbstractRangeSet;->remove(Lcom/google/common/collect/Range;)V
 
     goto :goto_0
@@ -410,12 +532,12 @@
 .method public final toString()Ljava/lang/String;
     .locals 0
 
-    .line 122
+    .line 125
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractRangeSet;->asRanges()Ljava/util/Set;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-interface {p0}, Ljava/util/Set;->toString()Ljava/lang/String;
 
     move-result-object p0
 

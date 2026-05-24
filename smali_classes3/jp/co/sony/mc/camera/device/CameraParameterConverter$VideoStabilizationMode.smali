@@ -26,6 +26,14 @@
 
 .method static getVanillaValue(Ljava/lang/String;)Ljava/lang/Integer;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "videoStabilizationMode"
+        }
+    .end annotation
 
     .line 635
     invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
@@ -147,6 +155,14 @@
 
 .method static getVendorValue(Ljava/lang/String;)Ljava/lang/Integer;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "videoStabilizationMode"
+        }
+    .end annotation
 
     .line 610
     invoke-virtual {p0}, Ljava/lang/String;->hashCode()I

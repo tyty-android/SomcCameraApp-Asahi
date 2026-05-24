@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 47
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment$1;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;
@@ -37,6 +45,16 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dialogInterface",
+            "position"
+        }
+    .end annotation
 
     .line 50
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment$1;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;

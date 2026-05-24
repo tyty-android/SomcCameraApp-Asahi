@@ -3,6 +3,11 @@
 .source "Hashing.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # static fields
 .field private static final C1:J = -0x3361d2afL
 
@@ -15,7 +20,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 32
+    .line 35
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -23,15 +28,25 @@
 
 .method static closedTableSize(ID)I
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "expectedEntries",
+            "loadFactor"
+        }
+    .end annotation
 
     const/4 v0, 0x2
 
-    .line 62
+    .line 65
     invoke-static {p0, v0}, Ljava/lang/Math;->max(II)I
 
     move-result p0
 
-    .line 63
+    .line 66
     invoke-static {p0}, Ljava/lang/Integer;->highestOneBit(I)I
 
     move-result v0
@@ -62,6 +77,18 @@
 
 .method static needsResizing(IID)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "size",
+            "tableSize",
+            "loadFactor"
+        }
+    .end annotation
 
     int-to-double v0, p0
 
@@ -90,6 +117,14 @@
 
 .method static smear(I)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "hashCode"
+        }
+    .end annotation
 
     int-to-long v0, p0
 
@@ -101,7 +136,7 @@
 
     const/16 v0, 0xf
 
-    .line 50
+    .line 53
     invoke-static {p0, v0}, Ljava/lang/Integer;->rotateLeft(II)I
 
     move-result p0
@@ -120,9 +155,17 @@
 .method static smearedHash(Ljava/lang/Object;)I
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
     if-nez p0, :cond_0
 
@@ -130,7 +173,7 @@
 
     goto :goto_0
 
-    .line 54
+    .line 57
     :cond_0
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
 

@@ -21,11 +21,19 @@
 # direct methods
 .method constructor <init>(Ljava/util/regex/Matcher;)V
     .locals 0
-
-    .line 54
-    invoke-direct {p0}, Lcom/google/common/base/CommonMatcher;-><init>()V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "matcher"
+        }
+    .end annotation
 
     .line 55
+    invoke-direct {p0}, Lcom/google/common/base/CommonMatcher;-><init>()V
+
+    .line 56
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -42,7 +50,7 @@
 .method public end()I
     .locals 0
 
-    .line 80
+    .line 81
     iget-object p0, p0, Lcom/google/common/base/JdkPattern$JdkMatcher;->matcher:Ljava/util/regex/Matcher;
 
     invoke-virtual {p0}, Ljava/util/regex/Matcher;->end()I
@@ -55,7 +63,7 @@
 .method public find()Z
     .locals 0
 
-    .line 65
+    .line 66
     iget-object p0, p0, Lcom/google/common/base/JdkPattern$JdkMatcher;->matcher:Ljava/util/regex/Matcher;
 
     invoke-virtual {p0}, Ljava/util/regex/Matcher;->find()Z
@@ -67,8 +75,16 @@
 
 .method public find(I)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
-    .line 70
+    .line 71
     iget-object p0, p0, Lcom/google/common/base/JdkPattern$JdkMatcher;->matcher:Ljava/util/regex/Matcher;
 
     invoke-virtual {p0, p1}, Ljava/util/regex/Matcher;->find(I)Z
@@ -81,7 +97,7 @@
 .method public matches()Z
     .locals 0
 
-    .line 60
+    .line 61
     iget-object p0, p0, Lcom/google/common/base/JdkPattern$JdkMatcher;->matcher:Ljava/util/regex/Matcher;
 
     invoke-virtual {p0}, Ljava/util/regex/Matcher;->matches()Z
@@ -93,8 +109,16 @@
 
 .method public replaceAll(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "replacement"
+        }
+    .end annotation
 
-    .line 75
+    .line 76
     iget-object p0, p0, Lcom/google/common/base/JdkPattern$JdkMatcher;->matcher:Ljava/util/regex/Matcher;
 
     invoke-virtual {p0, p1}, Ljava/util/regex/Matcher;->replaceAll(Ljava/lang/String;)Ljava/lang/String;
@@ -107,7 +131,7 @@
 .method public start()I
     .locals 0
 
-    .line 85
+    .line 86
     iget-object p0, p0, Lcom/google/common/base/JdkPattern$JdkMatcher;->matcher:Ljava/util/regex/Matcher;
 
     invoke-virtual {p0}, Ljava/util/regex/Matcher;->start()I

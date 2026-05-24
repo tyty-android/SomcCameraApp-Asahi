@@ -24,6 +24,14 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/contentsview/ContentLoader;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 284
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentLoader$DataCallback;->this$0:Ljp/co/sony/mc/camera/view/contentsview/ContentLoader;
@@ -45,6 +53,23 @@
 # virtual methods
 .method public onDataLoaded(ZLjava/util/LinkedList;IZLandroid/graphics/Bitmap;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "result",
+            "infoList",
+            "requestId",
+            "isRegister",
+            "bitmap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z",

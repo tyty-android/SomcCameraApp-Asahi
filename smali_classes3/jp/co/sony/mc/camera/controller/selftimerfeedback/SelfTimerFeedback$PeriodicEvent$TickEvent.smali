@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract onTick(J)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elapsedTime"
+        }
+    .end annotation
 .end method

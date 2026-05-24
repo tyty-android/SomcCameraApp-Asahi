@@ -21,8 +21,18 @@
 # direct methods
 .method constructor <init>(Ljava/util/concurrent/ExecutorService;Lcom/google/common/base/Supplier;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x1010
+        }
+        names = {
+            "delegate",
+            "val$nameSupplier"
+        }
+    .end annotation
 
-    .line 892
+    .line 921
     iput-object p2, p0, Lcom/google/common/util/concurrent/MoreExecutors$3;->val$nameSupplier:Lcom/google/common/base/Supplier;
 
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/WrappingExecutorService;-><init>(Ljava/util/concurrent/ExecutorService;)V
@@ -34,8 +44,16 @@
 # virtual methods
 .method protected wrapTask(Ljava/lang/Runnable;)Ljava/lang/Runnable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "command"
+        }
+    .end annotation
 
-    .line 900
+    .line 929
     iget-object p0, p0, Lcom/google/common/util/concurrent/MoreExecutors$3;->val$nameSupplier:Lcom/google/common/base/Supplier;
 
     invoke-static {p1, p0}, Lcom/google/common/util/concurrent/Callables;->threadRenaming(Ljava/lang/Runnable;Lcom/google/common/base/Supplier;)Ljava/lang/Runnable;
@@ -47,6 +65,15 @@
 
 .method protected wrapTask(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Callable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "callable"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -59,7 +86,7 @@
         }
     .end annotation
 
-    .line 895
+    .line 924
     iget-object p0, p0, Lcom/google/common/util/concurrent/MoreExecutors$3;->val$nameSupplier:Lcom/google/common/base/Supplier;
 
     invoke-static {p1, p0}, Lcom/google/common/util/concurrent/Callables;->threadRenaming(Ljava/util/concurrent/Callable;Lcom/google/common/base/Supplier;)Ljava/util/concurrent/Callable;

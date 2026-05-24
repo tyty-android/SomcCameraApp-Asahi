@@ -25,17 +25,29 @@
 # direct methods
 .method public constructor <init>(III)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "standard",
+            "transfer",
+            "range"
+        }
+    .end annotation
 
-    .line 66
+    .line 65
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 67
+    .line 66
     iput p1, p0, Ljp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;->standard:I
 
-    .line 68
+    .line 67
     iput p2, p0, Ljp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;->transfer:I
 
-    .line 69
+    .line 68
     iput p3, p0, Ljp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;->range:I
 
     return-void
@@ -46,14 +58,14 @@
 .method public toString()Ljava/lang/String;
     .locals 4
 
-    .line 74
+    .line 73
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "["
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 76
+    .line 75
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string/jumbo v2, "standard:"
@@ -78,7 +90,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 77
+    .line 76
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string/jumbo v3, "transfer:"
@@ -101,7 +113,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 78
+    .line 77
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "range:"
@@ -122,10 +134,10 @@
 
     const/16 p0, 0x5d
 
-    .line 79
+    .line 78
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 80
+    .line 79
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0

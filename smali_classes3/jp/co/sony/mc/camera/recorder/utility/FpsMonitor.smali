@@ -24,6 +24,14 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "intervalCount"
+        }
+    .end annotation
 
     .line 28
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -53,6 +61,14 @@
 
 .method private addResult(J)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "tailSampleTime"
+        }
+    .end annotation
 
     .line 67
     iget-wide v0, p0, Ljp/co/sony/mc/camera/recorder/utility/FpsMonitor;->mHeadSampleTime:J
@@ -89,6 +105,14 @@
 # virtual methods
 .method public addSample(J)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "presentationTime"
+        }
+    .end annotation
 
     .line 49
     iget v0, p0, Ljp/co/sony/mc/camera/recorder/utility/FpsMonitor;->mSampleCount:I
@@ -127,6 +151,14 @@
 
 .method public addSampleMillis(J)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "presentationTime"
+        }
+    .end annotation
 
     const-wide/32 v0, 0xf4240
 

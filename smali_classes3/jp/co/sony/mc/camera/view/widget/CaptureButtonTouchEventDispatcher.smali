@@ -16,7 +16,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nCaptureButtonTouchEventDispatcher.kt\nKotlin\n*S Kotlin\n*F\n+ 1 CaptureButtonTouchEventDispatcher.kt\njp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher\n+ 2 Point.kt\nandroidx/core/graphics/PointKt\n*L\n1#1,238:1\n192#2:239\n192#2:240\n192#2:241\n*S KotlinDebug\n*F\n+ 1 CaptureButtonTouchEventDispatcher.kt\njp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher\n*L\n109#1:239\n138#1:240\n157#1:241\n*E\n"
+    value = "SMAP\nCaptureButtonTouchEventDispatcher.kt\nKotlin\n*S Kotlin\n*F\n+ 1 CaptureButtonTouchEventDispatcher.kt\njp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher\n+ 2 Point.kt\nandroidx/core/graphics/PointKt\n*L\n1#1,242:1\n192#2:243\n192#2:244\n192#2:245\n*S KotlinDebug\n*F\n+ 1 CaptureButtonTouchEventDispatcher.kt\njp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher\n*L\n113#1:243\n142#1:244\n161#1:245\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -172,9 +172,6 @@
     .line 36
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;->detectSwipe:Z
 
-    .line 41
-    iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;->detectLongPress:Z
-
     const/4 v1, 0x0
 
     const/4 v2, 0x5
@@ -211,6 +208,9 @@
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;->gestureDetector:Landroid/view/GestureDetector;
 
+    .line 84
+    invoke-virtual {v1, v3}, Landroid/view/GestureDetector;->setIsLongpressEnabled(Z)V
+
     return-void
 .end method
 
@@ -244,14 +244,14 @@
 .method private final distanceBetweenPoints(Landroid/graphics/PointF;Landroid/graphics/PointF;)F
     .locals 2
 
-    .line 165
+    .line 169
     iget p0, p2, Landroid/graphics/PointF;->x:F
 
     iget v0, p1, Landroid/graphics/PointF;->x:F
 
     sub-float/2addr p0, v0
 
-    .line 166
+    .line 170
     iget p2, p2, Landroid/graphics/PointF;->y:F
 
     iget p1, p1, Landroid/graphics/PointF;->y:F
@@ -264,7 +264,7 @@
 
     int-to-double v0, v0
 
-    .line 167
+    .line 171
     invoke-static {p0, p1, v0, v1}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide p0
@@ -311,12 +311,12 @@
 .method private final onDetectScrollAction(Landroid/view/MotionEvent;)V
     .locals 6
 
-    .line 146
+    .line 150
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;->lastScrollTouchPoint:Landroid/graphics/PointF;
 
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 147
+    .line 151
     new-instance v1, Landroid/graphics/PointF;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
@@ -329,7 +329,7 @@
 
     invoke-direct {v1, v2, p1}, Landroid/graphics/PointF;-><init>(FF)V
 
-    .line 149
+    .line 153
     iget p1, v1, Landroid/graphics/PointF;->y:F
 
     iget v2, v0, Landroid/graphics/PointF;->y:F
@@ -362,7 +362,7 @@
 
     move-result-wide v2
 
-    .line 150
+    .line 154
     sget-object p1, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;->Companion:Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction$Companion;
 
     double-to-float v2, v2
@@ -371,7 +371,7 @@
 
     move-result-object p1
 
-    .line 152
+    .line 156
     invoke-direct {p0, v0, v1}, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;->distanceBetweenPoints(Landroid/graphics/PointF;Landroid/graphics/PointF;)F
 
     move-result v2
@@ -384,11 +384,11 @@
 
     return-void
 
-    .line 156
+    .line 160
     :cond_0
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;->_gestureEventFlow:Lkotlinx/coroutines/flow/MutableSharedFlow;
 
-    .line 241
+    .line 245
     new-instance v3, Landroid/graphics/Point;
 
     iget v4, v1, Landroid/graphics/PointF;->x:F
@@ -413,15 +413,15 @@
 
     invoke-direct {v4, v5, v0}, Landroid/graphics/Point;-><init>(II)V
 
-    .line 157
+    .line 161
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$GestureEvent$Scroll;
 
     invoke-direct {v0, v4, v3, p1}, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$GestureEvent$Scroll;-><init>(Landroid/graphics/Point;Landroid/graphics/Point;Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;)V
 
-    .line 156
+    .line 160
     invoke-interface {v2, v0}, Lkotlinx/coroutines/flow/MutableSharedFlow;->tryEmit(Ljava/lang/Object;)Z
 
-    .line 159
+    .line 163
     iput-object v1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;->lastScrollTouchPoint:Landroid/graphics/PointF;
 
     return-void
@@ -430,12 +430,12 @@
 .method private final onDetectSwipeAction(Landroid/view/MotionEvent;)V
     .locals 5
 
-    .line 128
+    .line 132
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;->downTouchPoint:Landroid/graphics/PointF;
 
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 129
+    .line 133
     new-instance v1, Landroid/graphics/PointF;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
@@ -448,7 +448,7 @@
 
     invoke-direct {v1, v2, v3}, Landroid/graphics/PointF;-><init>(FF)V
 
-    .line 131
+    .line 135
     invoke-direct {p0, v0, v1}, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;->distanceBetweenPoints(Landroid/graphics/PointF;Landroid/graphics/PointF;)F
 
     move-result v2
@@ -459,7 +459,7 @@
 
     if-ltz v2, :cond_0
 
-    .line 133
+    .line 137
     iget v2, v1, Landroid/graphics/PointF;->y:F
 
     iget v3, v0, Landroid/graphics/PointF;->y:F
@@ -492,7 +492,7 @@
 
     move-result-wide v0
 
-    .line 134
+    .line 138
     sget-object v2, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;->Companion:Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction$Companion;
 
     double-to-float v0, v0
@@ -503,10 +503,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 137
+    .line 141
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;->_gestureEventFlow:Lkotlinx/coroutines/flow/MutableSharedFlow;
 
-    .line 138
+    .line 142
     new-instance v2, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$GestureEvent$Swipe;
 
     new-instance v3, Landroid/graphics/PointF;
@@ -521,7 +521,7 @@
 
     invoke-direct {v3, v4, p1}, Landroid/graphics/PointF;-><init>(FF)V
 
-    .line 240
+    .line 244
     new-instance p1, Landroid/graphics/Point;
 
     iget v4, v3, Landroid/graphics/PointF;->x:F
@@ -534,15 +534,15 @@
 
     invoke-direct {p1, v4, v3}, Landroid/graphics/Point;-><init>(II)V
 
-    .line 138
+    .line 142
     invoke-direct {v2, p1, v0}, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$GestureEvent$Swipe;-><init>(Landroid/graphics/Point;Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;)V
 
-    .line 137
+    .line 141
     invoke-interface {v1, v2}, Lkotlinx/coroutines/flow/MutableSharedFlow;->tryEmit(Ljava/lang/Object;)Z
 
     const/4 p1, 0x1
 
-    .line 140
+    .line 144
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;->isSwipeConfirmed:Z
 
     :cond_0
@@ -597,7 +597,7 @@
 
     invoke-static {p2, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 85
+    .line 89
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getActionMasked()I
 
     move-result p1
@@ -622,11 +622,11 @@
 
     goto :goto_0
 
-    .line 95
+    .line 99
     :cond_0
     invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;->onDetectScrollAction(Landroid/view/MotionEvent;)V
 
-    .line 97
+    .line 101
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;->detectSwipe:Z
 
     if-eqz p1, :cond_1
@@ -635,10 +635,10 @@
 
     if-nez p1, :cond_1
 
-    .line 98
+    .line 102
     invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;->onDetectSwipeAction(Landroid/view/MotionEvent;)V
 
-    .line 101
+    .line 105
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;->gestureDetector:Landroid/view/GestureDetector;
 
@@ -646,18 +646,18 @@
 
     goto :goto_0
 
-    .line 106
+    .line 110
     :cond_2
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;->gestureDetector:Landroid/view/GestureDetector;
 
     invoke-virtual {p1, p2}, Landroid/view/GestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
-    .line 108
+    .line 112
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;->isSingleTapConfirmed:Z
 
     if-nez p1, :cond_3
 
-    .line 109
+    .line 113
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;->_gestureEventFlow:Lkotlinx/coroutines/flow/MutableSharedFlow;
 
     new-instance v2, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$GestureEvent$Up;
@@ -674,7 +674,7 @@
 
     invoke-direct {v3, v4, p2}, Landroid/graphics/PointF;-><init>(FF)V
 
-    .line 239
+    .line 243
     new-instance p2, Landroid/graphics/Point;
 
     iget v4, v3, Landroid/graphics/PointF;->x:F
@@ -687,32 +687,32 @@
 
     invoke-direct {p2, v4, v3}, Landroid/graphics/Point;-><init>(II)V
 
-    .line 109
+    .line 113
     invoke-direct {v2, p2}, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$GestureEvent$Up;-><init>(Landroid/graphics/Point;)V
 
     invoke-interface {p1, v2}, Lkotlinx/coroutines/flow/MutableSharedFlow;->tryEmit(Ljava/lang/Object;)Z
 
-    .line 113
+    .line 117
     :cond_3
     iput-boolean v1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;->isLongPressConfirmed:Z
 
-    .line 114
+    .line 118
     iput-boolean v1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;->isSingleTapConfirmed:Z
 
     const/4 p1, 0x0
 
-    .line 115
+    .line 119
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;->lastScrollTouchPoint:Landroid/graphics/PointF;
 
-    .line 116
+    .line 120
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;->downTouchPoint:Landroid/graphics/PointF;
 
-    .line 117
+    .line 121
     iput-boolean v1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;->isSwipeConfirmed:Z
 
     goto :goto_0
 
-    .line 87
+    .line 91
     :cond_4
     new-instance p1, Landroid/graphics/PointF;
 
@@ -728,7 +728,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;->lastScrollTouchPoint:Landroid/graphics/PointF;
 
-    .line 88
+    .line 92
     new-instance p1, Landroid/graphics/PointF;
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
@@ -743,7 +743,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;->downTouchPoint:Landroid/graphics/PointF;
 
-    .line 90
+    .line 94
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;->gestureDetector:Landroid/view/GestureDetector;
 
     invoke-virtual {p0, p2}, Landroid/view/GestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z

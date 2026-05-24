@@ -183,14 +183,14 @@
 
     invoke-direct {v0, v1, p0}, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallViewBindHelper;-><init>(Landroid/content/Context;Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;)V
 
-    const p0, 0x7f0902d5
+    const p0, 0x7f0902da
 
     .line 54
     invoke-virtual {p1, p0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p0
 
-    const v1, 0x7f0902d7
+    const v1, 0x7f0902dc
 
     .line 55
     invoke-virtual {p0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -211,7 +211,7 @@
     .line 59
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallViewBindHelper;->setIso(Landroid/view/View;)V
 
-    const v1, 0x7f0902d6
+    const v1, 0x7f0902db
 
     .line 62
     invoke-virtual {p0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -232,7 +232,7 @@
     .line 66
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallViewBindHelper;->setFileFormat(Landroid/view/View;)V
 
-    const v1, 0x7f0902d9
+    const v1, 0x7f0902de
 
     .line 69
     invoke-virtual {p0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -265,7 +265,7 @@
     .line 77
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallViewBindHelper;->setFaceEye(Landroid/view/View;)V
 
-    const v1, 0x7f0902da
+    const v1, 0x7f0902df
 
     .line 80
     invoke-virtual {p0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -280,7 +280,7 @@
     .line 82
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallViewBindHelper;->setTemperature(Landroid/view/View;)V
 
-    const v1, 0x7f0902d8
+    const v1, 0x7f0902dd
 
     .line 85
     invoke-virtual {p0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -293,7 +293,7 @@
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallViewBindHelper;->setEV(Landroid/view/View;)V
 
-    const p0, 0x7f0902d3
+    const p0, 0x7f0902d8
 
     .line 88
     invoke-virtual {p1, p0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -381,7 +381,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c0096
+    const v0, 0x7f0c008d
 
     const/4 v1, 0x0
 

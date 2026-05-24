@@ -21,8 +21,20 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/base/Splitter$2;Lcom/google/common/base/Splitter;Ljava/lang/CharSequence;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "splitter",
+            "toSplit"
+        }
+    .end annotation
 
-    .line 177
+    .line 180
     iput-object p1, p0, Lcom/google/common/base/Splitter$2$1;->this$0:Lcom/google/common/base/Splitter$2;
 
     invoke-direct {p0, p2, p3}, Lcom/google/common/base/Splitter$SplittingIterator;-><init>(Lcom/google/common/base/Splitter;Ljava/lang/CharSequence;)V
@@ -34,8 +46,16 @@
 # virtual methods
 .method public separatorEnd(I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "separatorPosition"
+        }
+    .end annotation
 
-    .line 196
+    .line 199
     iget-object p0, p0, Lcom/google/common/base/Splitter$2$1;->this$0:Lcom/google/common/base/Splitter$2;
 
     iget-object p0, p0, Lcom/google/common/base/Splitter$2;->val$separator:Ljava/lang/String;
@@ -51,8 +71,16 @@
 
 .method public separatorStart(I)I
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "start"
+        }
+    .end annotation
 
-    .line 180
+    .line 183
     iget-object v0, p0, Lcom/google/common/base/Splitter$2$1;->this$0:Lcom/google/common/base/Splitter$2;
 
     iget-object v0, v0, Lcom/google/common/base/Splitter$2;->val$separator:Ljava/lang/String;
@@ -61,7 +89,7 @@
 
     move-result v0
 
-    .line 183
+    .line 186
     iget-object v1, p0, Lcom/google/common/base/Splitter$2$1;->toSplit:Ljava/lang/CharSequence;
 
     invoke-interface {v1}, Ljava/lang/CharSequence;->length()I
@@ -78,7 +106,7 @@
     :goto_1
     if-ge v2, v0, :cond_1
 
-    .line 185
+    .line 188
     iget-object v3, p0, Lcom/google/common/base/Splitter$2$1;->toSplit:Ljava/lang/CharSequence;
 
     add-int v4, v2, p1

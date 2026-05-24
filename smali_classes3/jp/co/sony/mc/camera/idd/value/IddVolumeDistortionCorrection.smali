@@ -62,7 +62,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 579
+    .line 624
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddVolumeDistortionCorrection;->value:Ljp/co/sony/mc/camera/configuration/parameters/VolumeDistortionCorrection;
@@ -75,7 +75,7 @@
 .method public final getValue()Ljp/co/sony/mc/camera/configuration/parameters/VolumeDistortionCorrection;
     .locals 0
 
-    .line 579
+    .line 624
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddVolumeDistortionCorrection;->value:Ljp/co/sony/mc/camera/configuration/parameters/VolumeDistortionCorrection;
 
     return-object p0
@@ -84,7 +84,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 580
+    .line 625
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddVolumeDistortionCorrection;->value:Ljp/co/sony/mc/camera/configuration/parameters/VolumeDistortionCorrection;
 
     sget-object v0, Ljp/co/sony/mc/camera/idd/value/IddVolumeDistortionCorrection$WhenMappings;->$EnumSwitchMapping$0:[I
@@ -103,18 +103,18 @@
 
     if-eq p0, v0, :cond_0
 
-    .line 583
+    .line 628
     const-string p0, "OFF"
 
     goto :goto_0
 
-    .line 582
+    .line 627
     :cond_0
     const-string p0, "VDC_ON"
 
     goto :goto_0
 
-    .line 581
+    .line 626
     :cond_1
     const-string p0, "VDC_AUTO"
 

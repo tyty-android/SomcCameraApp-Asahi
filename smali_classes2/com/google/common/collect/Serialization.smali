@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/collect/Serialization$FieldSetter;
@@ -15,7 +18,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 37
+    .line 41
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -23,6 +26,17 @@
 
 .method static getFieldSetter(Ljava/lang/Class;Ljava/lang/String;)Lcom/google/common/collect/Serialization$FieldSetter;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "clazz",
+            "fieldName"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -37,13 +51,13 @@
         }
     .end annotation
 
-    .line 187
+    .line 194
     :try_start_0
     invoke-virtual {p0, p1}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     move-result-object p0
 
-    .line 188
+    .line 195
     new-instance p1, Lcom/google/common/collect/Serialization$FieldSetter;
 
     const/4 v0, 0x0
@@ -57,7 +71,7 @@
     :catch_0
     move-exception p0
 
-    .line 190
+    .line 197
     new-instance p1, Ljava/lang/AssertionError;
 
     invoke-direct {p1, p0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
@@ -67,6 +81,17 @@
 
 .method static populateMap(Ljava/util/Map;Ljava/io/ObjectInputStream;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "map",
+            "stream"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -88,12 +113,12 @@
         }
     .end annotation
 
-    .line 71
+    .line 76
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readInt()I
 
     move-result v0
 
-    .line 72
+    .line 77
     invoke-static {p0, p1, v0}, Lcom/google/common/collect/Serialization;->populateMap(Ljava/util/Map;Ljava/io/ObjectInputStream;I)V
 
     return-void
@@ -101,6 +126,19 @@
 
 .method static populateMap(Ljava/util/Map;Ljava/io/ObjectInputStream;I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "map",
+            "stream",
+            "size"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -127,17 +165,17 @@
     :goto_0
     if-ge v0, p2, :cond_0
 
-    .line 83
+    .line 89
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readObject()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 85
+    .line 91
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readObject()Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 86
+    .line 92
     invoke-interface {p0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     add-int/lit8 v0, v0, 0x1
@@ -150,6 +188,17 @@
 
 .method static populateMultimap(Lcom/google/common/collect/Multimap;Ljava/io/ObjectInputStream;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "multimap",
+            "stream"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -171,12 +220,12 @@
         }
     .end annotation
 
-    .line 159
+    .line 166
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readInt()I
 
     move-result v0
 
-    .line 160
+    .line 167
     invoke-static {p0, p1, v0}, Lcom/google/common/collect/Serialization;->populateMultimap(Lcom/google/common/collect/Multimap;Ljava/io/ObjectInputStream;I)V
 
     return-void
@@ -184,6 +233,19 @@
 
 .method static populateMultimap(Lcom/google/common/collect/Multimap;Ljava/io/ObjectInputStream;I)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "multimap",
+            "stream",
+            "distinctKeys"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -212,17 +274,17 @@
     :goto_0
     if-ge v1, p2, :cond_1
 
-    .line 173
+    .line 180
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readObject()Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 174
+    .line 181
     invoke-interface {p0, v2}, Lcom/google/common/collect/Multimap;->get(Ljava/lang/Object;)Ljava/util/Collection;
 
     move-result-object v2
 
-    .line 175
+    .line 182
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readInt()I
 
     move-result v3
@@ -232,12 +294,12 @@
     :goto_1
     if-ge v4, v3, :cond_0
 
-    .line 178
+    .line 185
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readObject()Ljava/lang/Object;
 
     move-result-object v5
 
-    .line 179
+    .line 186
     invoke-interface {v2, v5}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v4, v4, 0x1
@@ -255,6 +317,17 @@
 
 .method static populateMultiset(Lcom/google/common/collect/Multiset;Ljava/io/ObjectInputStream;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "multiset",
+            "stream"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -274,12 +347,12 @@
         }
     .end annotation
 
-    .line 113
+    .line 119
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readInt()I
 
     move-result v0
 
-    .line 114
+    .line 120
     invoke-static {p0, p1, v0}, Lcom/google/common/collect/Serialization;->populateMultiset(Lcom/google/common/collect/Multiset;Ljava/io/ObjectInputStream;I)V
 
     return-void
@@ -287,6 +360,19 @@
 
 .method static populateMultiset(Lcom/google/common/collect/Multiset;Ljava/io/ObjectInputStream;I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "multiset",
+            "stream",
+            "distinctElements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -311,17 +397,17 @@
     :goto_0
     if-ge v0, p2, :cond_0
 
-    .line 127
+    .line 133
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readObject()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 128
+    .line 134
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readInt()I
 
     move-result v2
 
-    .line 129
+    .line 135
     invoke-interface {p0, v1, v2}, Lcom/google/common/collect/Multiset;->add(Ljava/lang/Object;I)I
 
     add-int/lit8 v0, v0, 0x1
@@ -334,13 +420,22 @@
 
 .method static readCount(Ljava/io/ObjectInputStream;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stream"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 47
+    .line 51
     invoke-virtual {p0}, Ljava/io/ObjectInputStream;->readInt()I
 
     move-result p0
@@ -350,6 +445,17 @@
 
 .method static writeMap(Ljava/util/Map;Ljava/io/ObjectOutputStream;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "map",
+            "stream"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -370,14 +476,14 @@
         }
     .end annotation
 
-    .line 58
+    .line 63
     invoke-interface {p0}, Ljava/util/Map;->size()I
 
     move-result v0
 
     invoke-virtual {p1, v0}, Ljava/io/ObjectOutputStream;->writeInt(I)V
 
-    .line 59
+    .line 64
     invoke-interface {p0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object p0
@@ -399,14 +505,14 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 60
+    .line 65
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v1
 
     invoke-virtual {p1, v1}, Ljava/io/ObjectOutputStream;->writeObject(Ljava/lang/Object;)V
 
-    .line 61
+    .line 66
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v0
@@ -421,6 +527,17 @@
 
 .method static writeMultimap(Lcom/google/common/collect/Multimap;Ljava/io/ObjectOutputStream;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "multimap",
+            "stream"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -441,7 +558,7 @@
         }
     .end annotation
 
-    .line 143
+    .line 149
     invoke-interface {p0}, Lcom/google/common/collect/Multimap;->asMap()Ljava/util/Map;
 
     move-result-object v0
@@ -452,7 +569,7 @@
 
     invoke-virtual {p1, v0}, Ljava/io/ObjectOutputStream;->writeInt(I)V
 
-    .line 144
+    .line 150
     invoke-interface {p0}, Lcom/google/common/collect/Multimap;->asMap()Ljava/util/Map;
 
     move-result-object p0
@@ -478,14 +595,14 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 145
+    .line 151
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v1
 
     invoke-virtual {p1, v1}, Ljava/io/ObjectOutputStream;->writeObject(Ljava/lang/Object;)V
 
-    .line 146
+    .line 152
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v1
@@ -498,7 +615,7 @@
 
     invoke-virtual {p1, v1}, Ljava/io/ObjectOutputStream;->writeInt(I)V
 
-    .line 147
+    .line 153
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v0
@@ -520,7 +637,7 @@
 
     move-result-object v1
 
-    .line 148
+    .line 154
     invoke-virtual {p1, v1}, Ljava/io/ObjectOutputStream;->writeObject(Ljava/lang/Object;)V
 
     goto :goto_0
@@ -531,6 +648,17 @@
 
 .method static writeMultiset(Lcom/google/common/collect/Multiset;Ljava/io/ObjectOutputStream;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "multiset",
+            "stream"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -549,7 +677,7 @@
         }
     .end annotation
 
-    .line 99
+    .line 105
     invoke-interface {p0}, Lcom/google/common/collect/Multiset;->entrySet()Ljava/util/Set;
 
     move-result-object v0
@@ -558,10 +686,10 @@
 
     move-result v0
 
-    .line 100
+    .line 106
     invoke-virtual {p1, v0}, Ljava/io/ObjectOutputStream;->writeInt(I)V
 
-    .line 101
+    .line 107
     invoke-interface {p0}, Lcom/google/common/collect/Multiset;->entrySet()Ljava/util/Set;
 
     move-result-object p0
@@ -583,14 +711,14 @@
 
     check-cast v0, Lcom/google/common/collect/Multiset$Entry;
 
-    .line 102
+    .line 108
     invoke-interface {v0}, Lcom/google/common/collect/Multiset$Entry;->getElement()Ljava/lang/Object;
 
     move-result-object v1
 
     invoke-virtual {p1, v1}, Ljava/io/ObjectOutputStream;->writeObject(Ljava/lang/Object;)V
 
-    .line 103
+    .line 109
     invoke-interface {v0}, Lcom/google/common/collect/Multiset$Entry;->getCount()I
 
     move-result v0

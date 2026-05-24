@@ -39,8 +39,6 @@
 
 .field public static final enum VIDEO_RECORDING:Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;
 
-.field public static final enum VIDEO_STREAMING:Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;
-
 
 # instance fields
 .field private final mStringExpression:Ljava/lang/String;
@@ -48,7 +46,7 @@
 
 # direct methods
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;
-    .locals 8
+    .locals 7
 
     .line 28
     sget-object v0, Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;->POWER_ON:Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;
@@ -63,11 +61,9 @@
 
     sget-object v5, Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;->VIDEO_RECORDING:Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;
 
-    sget-object v6, Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;->VIDEO_STREAMING:Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;
+    sget-object v6, Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;->PICTURE_TAKING_DURING_VIDEO_RECORDING:Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;
 
-    sget-object v7, Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;->PICTURE_TAKING_DURING_VIDEO_RECORDING:Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;
-
-    filled-new-array/range {v0 .. v7}, [Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;
+    filled-new-array/range {v0 .. v6}, [Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;
 
     move-result-object v0
 
@@ -160,19 +156,6 @@
 
     const/4 v1, 0x6
 
-    const-string/jumbo v2, "video_streaming"
-
-    const-string v3, "VIDEO_STREAMING"
-
-    invoke-direct {v0, v3, v1, v2}, Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;-><init>(Ljava/lang/String;ILjava/lang/String;)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;->VIDEO_STREAMING:Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;
-
-    .line 36
-    new-instance v0, Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;
-
-    const/4 v1, 0x7
-
     const-string v2, "picture_taking_during_video_recording"
 
     const-string v3, "PICTURE_TAKING_DURING_VIDEO_RECORDING"
@@ -193,6 +176,19 @@
 
 .method private constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "str"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -201,10 +197,10 @@
         }
     .end annotation
 
-    .line 40
+    .line 39
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 41
+    .line 40
     iput-object p3, p0, Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;->mStringExpression:Ljava/lang/String;
 
     return-void
@@ -212,6 +208,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 28
     const-class v0, Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;
@@ -245,7 +249,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 46
+    .line 45
     iget-object p0, p0, Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;->mStringExpression:Ljava/lang/String;
 
     return-object p0

@@ -25,8 +25,20 @@
 # direct methods
 .method constructor <init>(JJLjava/util/concurrent/TimeUnit;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "val$initialDelay",
+            "val$delay",
+            "val$unit"
+        }
+    .end annotation
 
-    .line 127
+    .line 152
     iput-wide p1, p0, Lcom/google/common/util/concurrent/AbstractScheduledService$Scheduler$1;->val$initialDelay:J
 
     iput-wide p3, p0, Lcom/google/common/util/concurrent/AbstractScheduledService$Scheduler$1;->val$delay:J
@@ -42,21 +54,24 @@
 
 
 # virtual methods
-.method public schedule(Lcom/google/common/util/concurrent/AbstractService;Ljava/util/concurrent/ScheduledExecutorService;Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
+.method public schedule(Lcom/google/common/util/concurrent/AbstractService;Ljava/util/concurrent/ScheduledExecutorService;Ljava/lang/Runnable;)Lcom/google/common/util/concurrent/AbstractScheduledService$Cancellable;
     .locals 7
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/google/common/util/concurrent/AbstractService;",
-            "Ljava/util/concurrent/ScheduledExecutorService;",
-            "Ljava/lang/Runnable;",
-            ")",
-            "Ljava/util/concurrent/Future<",
-            "*>;"
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "service",
+            "executor",
+            "task"
         }
     .end annotation
 
-    .line 131
+    .line 156
+    new-instance p1, Lcom/google/common/util/concurrent/AbstractScheduledService$FutureAsCancellable;
+
     iget-wide v2, p0, Lcom/google/common/util/concurrent/AbstractScheduledService$Scheduler$1;->val$initialDelay:J
 
     iget-wide v4, p0, Lcom/google/common/util/concurrent/AbstractScheduledService$Scheduler$1;->val$delay:J
@@ -67,9 +82,12 @@
 
     move-object v1, p3
 
+    .line 157
     invoke-interface/range {v0 .. v6}, Ljava/util/concurrent/ScheduledExecutorService;->scheduleWithFixedDelay(Ljava/lang/Runnable;JJLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
 
     move-result-object p0
 
-    return-object p0
+    invoke-direct {p1, p0}, Lcom/google/common/util/concurrent/AbstractScheduledService$FutureAsCancellable;-><init>(Ljava/util/concurrent/Future;)V
+
+    return-object p1
 .end method

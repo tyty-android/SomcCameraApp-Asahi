@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/eventbus/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/eventbus/SubscriberRegistry$MethodIdentifier;
@@ -57,45 +60,64 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$M8lZzkPTyzsQ5_fAswrRAg5kTrw(Ljava/lang/Class;)Lcom/google/common/collect/ImmutableList;
+    .locals 0
+
+    invoke-static {p0}, Lcom/google/common/eventbus/SubscriberRegistry;->getAnnotatedMethodsNotCached(Ljava/lang/Class;)Lcom/google/common/collect/ImmutableList;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 150
+    .line 149
     invoke-static {}, Lcom/google/common/cache/CacheBuilder;->newBuilder()Lcom/google/common/cache/CacheBuilder;
 
     move-result-object v0
 
-    .line 151
+    .line 150
     invoke-virtual {v0}, Lcom/google/common/cache/CacheBuilder;->weakKeys()Lcom/google/common/cache/CacheBuilder;
 
     move-result-object v0
 
-    new-instance v1, Lcom/google/common/eventbus/SubscriberRegistry$1;
+    new-instance v1, Lcom/google/common/eventbus/SubscriberRegistry$$ExternalSyntheticLambda0;
 
-    invoke-direct {v1}, Lcom/google/common/eventbus/SubscriberRegistry$1;-><init>()V
+    invoke-direct {v1}, Lcom/google/common/eventbus/SubscriberRegistry$$ExternalSyntheticLambda0;-><init>()V
 
-    .line 152
+    .line 151
+    invoke-static {v1}, Lcom/google/common/cache/CacheLoader;->from(Lcom/google/common/base/Function;)Lcom/google/common/cache/CacheLoader;
+
+    move-result-object v1
+
     invoke-virtual {v0, v1}, Lcom/google/common/cache/CacheBuilder;->build(Lcom/google/common/cache/CacheLoader;)Lcom/google/common/cache/LoadingCache;
 
     move-result-object v0
 
     sput-object v0, Lcom/google/common/eventbus/SubscriberRegistry;->subscriberMethodsCache:Lcom/google/common/cache/LoadingCache;
 
-    .line 219
+    .line 229
     invoke-static {}, Lcom/google/common/cache/CacheBuilder;->newBuilder()Lcom/google/common/cache/CacheBuilder;
 
     move-result-object v0
 
-    .line 220
+    .line 230
     invoke-virtual {v0}, Lcom/google/common/cache/CacheBuilder;->weakKeys()Lcom/google/common/cache/CacheBuilder;
 
     move-result-object v0
 
-    new-instance v1, Lcom/google/common/eventbus/SubscriberRegistry$2;
+    new-instance v1, Lcom/google/common/eventbus/SubscriberRegistry$$ExternalSyntheticLambda1;
 
-    invoke-direct {v1}, Lcom/google/common/eventbus/SubscriberRegistry$2;-><init>()V
+    invoke-direct {v1}, Lcom/google/common/eventbus/SubscriberRegistry$$ExternalSyntheticLambda1;-><init>()V
 
-    .line 221
+    .line 232
+    invoke-static {v1}, Lcom/google/common/cache/CacheLoader;->from(Lcom/google/common/base/Function;)Lcom/google/common/cache/CacheLoader;
+
+    move-result-object v1
+
+    .line 231
     invoke-virtual {v0, v1}, Lcom/google/common/cache/CacheBuilder;->build(Lcom/google/common/cache/CacheLoader;)Lcom/google/common/cache/LoadingCache;
 
     move-result-object v0
@@ -107,18 +129,26 @@
 
 .method constructor <init>(Lcom/google/common/eventbus/EventBus;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bus"
+        }
+    .end annotation
 
-    .line 70
+    .line 69
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 65
+    .line 64
     invoke-static {}, Lcom/google/common/collect/Maps;->newConcurrentMap()Ljava/util/concurrent/ConcurrentMap;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/common/eventbus/SubscriberRegistry;->subscribers:Ljava/util/concurrent/ConcurrentMap;
 
-    .line 71
+    .line 70
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -130,19 +160,17 @@
     return-void
 .end method
 
-.method static synthetic access$000(Ljava/lang/Class;)Lcom/google/common/collect/ImmutableList;
-    .locals 0
-
-    .line 56
-    invoke-static {p0}, Lcom/google/common/eventbus/SubscriberRegistry;->getAnnotatedMethodsNotCached(Ljava/lang/Class;)Lcom/google/common/collect/ImmutableList;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
 .method private findAllSubscribers(Ljava/lang/Object;)Lcom/google/common/collect/Multimap;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -156,17 +184,17 @@
         }
     .end annotation
 
-    .line 164
+    .line 157
     invoke-static {}, Lcom/google/common/collect/HashMultimap;->create()Lcom/google/common/collect/HashMultimap;
 
     move-result-object v0
 
-    .line 165
+    .line 158
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v1
 
-    .line 166
+    .line 159
     invoke-static {v1}, Lcom/google/common/eventbus/SubscriberRegistry;->getAnnotatedMethods(Ljava/lang/Class;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object v1
@@ -188,17 +216,17 @@
 
     check-cast v2, Ljava/lang/reflect/Method;
 
-    .line 167
+    .line 160
     invoke-virtual {v2}, Ljava/lang/reflect/Method;->getParameterTypes()[Ljava/lang/Class;
 
     move-result-object v3
 
     const/4 v4, 0x0
 
-    .line 168
+    .line 161
     aget-object v3, v3, v4
 
-    .line 169
+    .line 162
     iget-object v4, p0, Lcom/google/common/eventbus/SubscriberRegistry;->bus:Lcom/google/common/eventbus/EventBus;
 
     invoke-static {v4, p1, v2}, Lcom/google/common/eventbus/Subscriber;->create(Lcom/google/common/eventbus/EventBus;Ljava/lang/Object;Ljava/lang/reflect/Method;)Lcom/google/common/eventbus/Subscriber;
@@ -215,6 +243,15 @@
 
 .method static flattenHierarchy(Ljava/lang/Class;)Lcom/google/common/collect/ImmutableSet;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "concreteClass"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -226,8 +263,7 @@
         }
     .end annotation
 
-    .line 239
-    :try_start_0
+    .line 242
     sget-object v0, Lcom/google/common/eventbus/SubscriberRegistry;->flattenHierarchyCache:Lcom/google/common/cache/LoadingCache;
 
     invoke-interface {v0, p0}, Lcom/google/common/cache/LoadingCache;->getUnchecked(Ljava/lang/Object;)Ljava/lang/Object;
@@ -235,28 +271,21 @@
     move-result-object p0
 
     check-cast p0, Lcom/google/common/collect/ImmutableSet;
-    :try_end_0
-    .catch Lcom/google/common/util/concurrent/UncheckedExecutionException; {:try_start_0 .. :try_end_0} :catch_0
 
     return-object p0
-
-    :catch_0
-    move-exception p0
-
-    .line 241
-    invoke-virtual {p0}, Lcom/google/common/util/concurrent/UncheckedExecutionException;->getCause()Ljava/lang/Throwable;
-
-    move-result-object p0
-
-    invoke-static {p0}, Lcom/google/common/base/Throwables;->propagate(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
-
-    move-result-object p0
-
-    throw p0
 .end method
 
 .method private static getAnnotatedMethods(Ljava/lang/Class;)Lcom/google/common/collect/ImmutableList;
-    .locals 1
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "clazz"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -268,7 +297,7 @@
         }
     .end annotation
 
-    .line 176
+    .line 169
     :try_start_0
     sget-object v0, Lcom/google/common/eventbus/SubscriberRegistry;->subscriberMethodsCache:Lcom/google/common/cache/LoadingCache;
 
@@ -285,19 +314,50 @@
     :catch_0
     move-exception p0
 
-    .line 178
+    .line 171
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/UncheckedExecutionException;->getCause()Ljava/lang/Throwable;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/google/common/base/Throwables;->throwIfUnchecked(Ljava/lang/Throwable;)V
+    instance-of v0, v0, Ljava/lang/IllegalArgumentException;
 
-    .line 179
+    if-eqz v0, :cond_0
+
+    .line 180
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    invoke-virtual {p0}, Lcom/google/common/util/concurrent/UncheckedExecutionException;->getCause()Ljava/lang/Throwable;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p0}, Lcom/google/common/util/concurrent/UncheckedExecutionException;->getCause()Ljava/lang/Throwable;
+
+    move-result-object p0
+
+    invoke-direct {v0, v1, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v0
+
+    .line 189
+    :cond_0
     throw p0
 .end method
 
 .method private static getAnnotatedMethodsNotCached(Ljava/lang/Class;)Lcom/google/common/collect/ImmutableList;
     .locals 11
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "clazz"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -309,7 +369,7 @@
         }
     .end annotation
 
-    .line 184
+    .line 194
     invoke-static {p0}, Lcom/google/common/reflect/TypeToken;->of(Ljava/lang/Class;)Lcom/google/common/reflect/TypeToken;
 
     move-result-object p0
@@ -322,12 +382,12 @@
 
     move-result-object p0
 
-    .line 185
+    .line 195
     invoke-static {}, Lcom/google/common/collect/Maps;->newHashMap()Ljava/util/HashMap;
 
     move-result-object v0
 
-    .line 186
+    .line 196
     invoke-interface {p0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -345,7 +405,7 @@
 
     check-cast v1, Ljava/lang/Class;
 
-    .line 187
+    .line 197
     invoke-virtual {v1}, Ljava/lang/Class;->getDeclaredMethods()[Ljava/lang/reflect/Method;
 
     move-result-object v1
@@ -361,7 +421,7 @@
 
     aget-object v5, v1, v4
 
-    .line 188
+    .line 198
     const-class v6, Lcom/google/common/eventbus/Subscribe;
 
     invoke-virtual {v5, v6}, Ljava/lang/reflect/Method;->isAnnotationPresent(Ljava/lang/Class;)Z
@@ -376,12 +436,12 @@
 
     if-nez v6, :cond_2
 
-    .line 190
+    .line 200
     invoke-virtual {v5}, Ljava/lang/reflect/Method;->getParameterTypes()[Ljava/lang/Class;
 
     move-result-object v6
 
-    .line 191
+    .line 201
     array-length v7, v6
 
     const/4 v8, 0x1
@@ -402,10 +462,10 @@
 
     invoke-static {v7, v9, v5, v10}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;I)V
 
-    .line 198
+    .line 208
     aget-object v7, v6, v3
 
-    .line 199
+    .line 209
     invoke-virtual {v7}, Ljava/lang/Class;->isPrimitive()Z
 
     move-result v7
@@ -414,14 +474,14 @@
 
     aget-object v8, v6, v3
 
-    .line 204
+    .line 214
     invoke-virtual {v8}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v8
 
     aget-object v6, v6, v3
 
-    .line 205
+    .line 215
     invoke-static {v6}, Lcom/google/common/primitives/Primitives;->wrap(Ljava/lang/Class;)Ljava/lang/Class;
 
     move-result-object v6
@@ -430,24 +490,24 @@
 
     move-result-object v6
 
-    .line 198
+    .line 208
     const-string v9, "@Subscribe method %s\'s parameter is %s. Subscriber methods cannot accept primitives. Consider changing the parameter to %s."
 
     invoke-static {v7, v9, v5, v8, v6}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 207
+    .line 217
     new-instance v6, Lcom/google/common/eventbus/SubscriberRegistry$MethodIdentifier;
 
     invoke-direct {v6, v5}, Lcom/google/common/eventbus/SubscriberRegistry$MethodIdentifier;-><init>(Ljava/lang/reflect/Method;)V
 
-    .line 208
+    .line 218
     invoke-interface {v0, v6}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
     move-result v7
 
     if-nez v7, :cond_2
 
-    .line 209
+    .line 219
     invoke-interface {v0, v6, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_2
@@ -455,7 +515,7 @@
 
     goto :goto_0
 
-    .line 214
+    .line 224
     :cond_3
     invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
 
@@ -468,10 +528,42 @@
     return-object p0
 .end method
 
+.method static synthetic lambda$static$0(Ljava/lang/Class;)Lcom/google/common/collect/ImmutableSet;
+    .locals 0
+
+    .line 234
+    invoke-static {p0}, Lcom/google/common/reflect/TypeToken;->of(Ljava/lang/Class;)Lcom/google/common/reflect/TypeToken;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lcom/google/common/reflect/TypeToken;->getTypes()Lcom/google/common/reflect/TypeToken$TypeSet;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lcom/google/common/reflect/TypeToken$TypeSet;->rawTypes()Ljava/util/Set;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lcom/google/common/collect/ImmutableSet;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/ImmutableSet;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 
 # virtual methods
 .method getSubscribers(Ljava/lang/Object;)Ljava/util/Iterator;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -483,7 +575,7 @@
         }
     .end annotation
 
-    .line 127
+    .line 126
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p1
@@ -492,7 +584,7 @@
 
     move-result-object p1
 
-    .line 130
+    .line 129
     invoke-virtual {p1}, Lcom/google/common/collect/ImmutableSet;->size()I
 
     move-result v0
@@ -501,7 +593,7 @@
 
     move-result-object v0
 
-    .line 132
+    .line 131
     invoke-virtual {p1}, Lcom/google/common/collect/ImmutableSet;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p1
@@ -520,7 +612,7 @@
 
     check-cast v1, Ljava/lang/Class;
 
-    .line 133
+    .line 132
     iget-object v2, p0, Lcom/google/common/eventbus/SubscriberRegistry;->subscribers:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {v2, v1}, Ljava/util/concurrent/ConcurrentMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -531,7 +623,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 136
+    .line 135
     invoke-virtual {v1}, Ljava/util/concurrent/CopyOnWriteArraySet;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -540,7 +632,7 @@
 
     goto :goto_0
 
-    .line 140
+    .line 139
     :cond_1
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -555,6 +647,15 @@
 
 .method getSubscribersForTesting(Ljava/lang/Class;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "eventType"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -566,12 +667,14 @@
         }
     .end annotation
 
-    .line 119
+    .line 118
     iget-object p0, p0, Lcom/google/common/eventbus/SubscriberRegistry;->subscribers:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {p0, p1}, Ljava/util/concurrent/ConcurrentMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
+
+    check-cast p0, Ljava/util/AbstractCollection;
 
     invoke-static {}, Lcom/google/common/collect/ImmutableSet;->of()Lcom/google/common/collect/ImmutableSet;
 
@@ -588,13 +691,21 @@
 
 .method register(Ljava/lang/Object;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
-    .line 76
+    .line 75
     invoke-direct {p0, p1}, Lcom/google/common/eventbus/SubscriberRegistry;->findAllSubscribers(Ljava/lang/Object;)Lcom/google/common/collect/Multimap;
 
     move-result-object p1
 
-    .line 78
+    .line 77
     invoke-interface {p1}, Lcom/google/common/collect/Multimap;->asMap()Ljava/util/Map;
 
     move-result-object p1
@@ -620,21 +731,21 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 79
+    .line 78
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Ljava/lang/Class;
 
-    .line 80
+    .line 79
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/util/Collection;
 
-    .line 82
+    .line 81
     iget-object v2, p0, Lcom/google/common/eventbus/SubscriberRegistry;->subscribers:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {v2, v1}, Ljava/util/concurrent/ConcurrentMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -645,18 +756,20 @@
 
     if-nez v2, :cond_0
 
-    .line 85
+    .line 84
     new-instance v2, Ljava/util/concurrent/CopyOnWriteArraySet;
 
     invoke-direct {v2}, Ljava/util/concurrent/CopyOnWriteArraySet;-><init>()V
 
-    .line 86
+    .line 85
     iget-object v3, p0, Lcom/google/common/eventbus/SubscriberRegistry;->subscribers:Ljava/util/concurrent/ConcurrentMap;
 
-    .line 87
+    .line 86
     invoke-interface {v3, v1, v2}, Ljava/util/concurrent/ConcurrentMap;->putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
+
+    check-cast v1, Ljava/util/concurrent/CopyOnWriteArraySet;
 
     invoke-static {v1, v2}, Lcom/google/common/base/MoreObjects;->firstNonNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -666,7 +779,7 @@
 
     check-cast v2, Ljava/util/concurrent/CopyOnWriteArraySet;
 
-    .line 90
+    .line 89
     :cond_0
     invoke-virtual {v2, v0}, Ljava/util/concurrent/CopyOnWriteArraySet;->addAll(Ljava/util/Collection;)Z
 
@@ -678,13 +791,21 @@
 
 .method unregister(Ljava/lang/Object;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
-    .line 96
+    .line 95
     invoke-direct {p0, p1}, Lcom/google/common/eventbus/SubscriberRegistry;->findAllSubscribers(Ljava/lang/Object;)Lcom/google/common/collect/Multimap;
 
     move-result-object v0
 
-    .line 98
+    .line 97
     invoke-interface {v0}, Lcom/google/common/collect/Multimap;->asMap()Ljava/util/Map;
 
     move-result-object v0
@@ -710,21 +831,21 @@
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 99
+    .line 98
     invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Ljava/lang/Class;
 
-    .line 100
+    .line 99
     invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Ljava/util/Collection;
 
-    .line 102
+    .line 101
     iget-object v3, p0, Lcom/google/common/eventbus/SubscriberRegistry;->subscribers:Ljava/util/concurrent/ConcurrentMap;
 
     invoke-interface {v3, v2}, Ljava/util/concurrent/ConcurrentMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -735,7 +856,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 103
+    .line 102
     invoke-virtual {v2, v1}, Ljava/util/concurrent/CopyOnWriteArraySet;->removeAll(Ljava/util/Collection;)Z
 
     move-result v1
@@ -744,35 +865,17 @@
 
     goto :goto_0
 
-    .line 108
+    .line 107
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    move-result-object p1
+    const-string v1, "missing event subscriber for an annotated method. Is "
 
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, 0x41
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v0, "missing event subscriber for an annotated method. Is "
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 

@@ -21,11 +21,19 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/CharSequence;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "chars"
+        }
+    .end annotation
 
-    .line 1730
+    .line 1733
     invoke-direct {p0}, Lcom/google/common/base/CharMatcher;-><init>()V
 
-    .line 1731
+    .line 1734
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -36,7 +44,7 @@
 
     iput-object p1, p0, Lcom/google/common/base/CharMatcher$AnyOf;->chars:[C
 
-    .line 1732
+    .line 1735
     invoke-static {p1}, Ljava/util/Arrays;->sort([C)V
 
     return-void
@@ -46,10 +54,19 @@
 # virtual methods
 .method public bridge synthetic apply(Ljava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "character"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1726
+    .line 1729
     check-cast p1, Ljava/lang/Character;
 
     invoke-super {p0, p1}, Lcom/google/common/base/CharMatcher;->apply(Ljava/lang/Character;)Z
@@ -61,8 +78,16 @@
 
 .method public matches(C)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
 
-    .line 1737
+    .line 1740
     iget-object p0, p0, Lcom/google/common/base/CharMatcher$AnyOf;->chars:[C
 
     invoke-static {p0, p1}, Ljava/util/Arrays;->binarySearch([CC)I
@@ -84,8 +109,16 @@
 
 .method setBits(Ljava/util/BitSet;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "table"
+        }
+    .end annotation
 
-    .line 1743
+    .line 1746
     iget-object p0, p0, Lcom/google/common/base/CharMatcher$AnyOf;->chars:[C
 
     array-length v0, p0
@@ -97,7 +130,7 @@
 
     aget-char v2, p0, v1
 
-    .line 1744
+    .line 1747
     invoke-virtual {p1, v2}, Ljava/util/BitSet;->set(I)V
 
     add-int/lit8 v1, v1, 0x1
@@ -111,14 +144,14 @@
 .method public toString()Ljava/lang/String;
     .locals 4
 
-    .line 1750
+    .line 1753
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "CharMatcher.anyOf(\""
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 1751
+    .line 1754
     iget-object p0, p0, Lcom/google/common/base/CharMatcher$AnyOf;->chars:[C
 
     array-length v1, p0
@@ -130,7 +163,7 @@
 
     aget-char v3, p0, v2
 
-    .line 1752
+    .line 1755
     invoke-static {v3}, Lcom/google/common/base/CharMatcher;->access$100(C)Ljava/lang/String;
 
     move-result-object v3
@@ -141,13 +174,13 @@
 
     goto :goto_0
 
-    .line 1754
+    .line 1757
     :cond_0
     const-string p0, "\")"
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 1755
+    .line 1758
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0

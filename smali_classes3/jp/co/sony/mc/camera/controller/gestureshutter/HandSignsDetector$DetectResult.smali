@@ -72,6 +72,22 @@
 
 .method public setAreaAndStatus(IIIII)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "left",
+            "top",
+            "right",
+            "bottom",
+            "st"
+        }
+    .end annotation
 
     .line 353
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector$DetectResult;->mArea:Landroid/graphics/Rect;

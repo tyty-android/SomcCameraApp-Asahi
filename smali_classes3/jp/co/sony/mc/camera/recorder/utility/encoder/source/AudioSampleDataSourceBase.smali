@@ -46,6 +46,20 @@
 
 .method public constructor <init>(Landroid/media/MediaCodec;III)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "codec",
+            "sampleRate",
+            "channels",
+            "format"
+        }
+    .end annotation
 
     .line 52
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -163,6 +177,14 @@
 
 .method private bytesInFrame(I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "format"
+        }
+    .end annotation
 
     const/4 p0, 0x2
 
@@ -207,6 +229,14 @@
 
 .method private readSampleData(Z)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isEos"
+        }
+    .end annotation
 
     .line 215
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/source/AudioSampleDataSourceBase;->mAlreadyEos:Z
@@ -314,6 +344,14 @@
 
 .method private requestToReadSampleData(Z)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "eos"
+        }
+    .end annotation
 
     .line 194
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/source/AudioSampleDataSourceBase;->mWorker:Ljp/co/sony/mc/camera/util/BackgroundWorker;
@@ -335,6 +373,14 @@
 # virtual methods
 .method protected addSampleCount(J)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "count"
+        }
+    .end annotation
 
     .line 178
     iget-wide v0, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/source/AudioSampleDataSourceBase;->mSampleCount:J
@@ -406,6 +452,14 @@
 
 .method protected getPresentationTime(J)J
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "additionalSampleCount"
+        }
+    .end annotation
 
     .line 153
     iget-wide v0, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/source/AudioSampleDataSourceBase;->mSampleCount:J
@@ -445,12 +499,28 @@
 
 .method public onMarkerReached(Landroid/media/AudioRecord;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "recorder"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public onPeriodicNotification(Landroid/media/AudioRecord;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "recorder"
+        }
+    .end annotation
 
     const/4 p1, 0x0
 
@@ -461,6 +531,18 @@
 .end method
 
 .method protected abstract pushToEncoder([BIZ)J
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "rawData",
+            "rawDataBytes",
+            "eos"
+        }
+    .end annotation
 .end method
 
 .method public release()V

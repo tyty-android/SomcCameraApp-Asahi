@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<K:",
@@ -22,6 +25,17 @@
 
 
 # virtual methods
+.method public bridge synthetic entriesDiffering()Ljava/util/Map;
+    .locals 0
+
+    .line 29
+    invoke-interface {p0}, Lcom/google/common/collect/SortedMapDifference;->entriesDiffering()Ljava/util/SortedMap;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public abstract entriesDiffering()Ljava/util/SortedMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -34,6 +48,17 @@
     .end annotation
 .end method
 
+.method public bridge synthetic entriesInCommon()Ljava/util/Map;
+    .locals 0
+
+    .line 29
+    invoke-interface {p0}, Lcom/google/common/collect/SortedMapDifference;->entriesInCommon()Ljava/util/SortedMap;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public abstract entriesInCommon()Ljava/util/SortedMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -44,6 +69,17 @@
     .end annotation
 .end method
 
+.method public bridge synthetic entriesOnlyOnLeft()Ljava/util/Map;
+    .locals 0
+
+    .line 29
+    invoke-interface {p0}, Lcom/google/common/collect/SortedMapDifference;->entriesOnlyOnLeft()Ljava/util/SortedMap;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public abstract entriesOnlyOnLeft()Ljava/util/SortedMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -52,6 +88,17 @@
             "TK;TV;>;"
         }
     .end annotation
+.end method
+
+.method public bridge synthetic entriesOnlyOnRight()Ljava/util/Map;
+    .locals 0
+
+    .line 29
+    invoke-interface {p0}, Lcom/google/common/collect/SortedMapDifference;->entriesOnlyOnRight()Ljava/util/SortedMap;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
 .method public abstract entriesOnlyOnRight()Ljava/util/SortedMap;

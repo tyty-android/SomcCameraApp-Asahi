@@ -26,13 +26,23 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "parameter"
+        }
+    .end annotation
 
-    .line 348
+    .line 340
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$OnClickPositiveListener;->this$0:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 349
+    .line 341
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$OnClickPositiveListener;->mParameter:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
 
     return-void
@@ -42,13 +52,23 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dialog",
+            "which"
+        }
+    .end annotation
 
-    .line 354
+    .line 346
     const-string p1, "onClickPositiveListener onClick()"
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->-$$Nest$smtrace(Ljava/lang/String;)V
 
-    .line 356
+    .line 348
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$OnClickPositiveListener;->this$0:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->-$$Nest$fgetmOnClickPositiveListener(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;)Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$MessageDialogOnClickListener;

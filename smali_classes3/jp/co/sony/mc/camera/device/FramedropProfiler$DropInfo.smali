@@ -59,6 +59,18 @@
 
 .method constructor <init>(IJJ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "frameNumber",
+            "timestampNanos",
+            "durationNanos"
+        }
+    .end annotation
 
     .line 44
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

@@ -53,7 +53,7 @@
     .line 18
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/UltraHdr;
 
-    const v1, 0x7f1103f4
+    const v1, 0x7f11043f
 
     const-string v2, "auto"
 
@@ -68,7 +68,7 @@
     .line 21
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/UltraHdr;
 
-    const v1, 0x7f1103f3
+    const v1, 0x7f11043e
 
     const-string v2, "off"
 
@@ -92,6 +92,21 @@
 
 .method private constructor <init>(Ljava/lang/String;IILjava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "textId",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -114,6 +129,14 @@
 
 .method public static getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Ljp/co/sony/mc/camera/configuration/parameters/UltraHdr;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mode"
+        }
+    .end annotation
 
     .line 53
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isUltraHdrSupported()Z
@@ -136,6 +159,14 @@
 
 .method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)[Ljp/co/sony/mc/camera/configuration/parameters/UltraHdr;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mode"
+        }
+    .end annotation
 
     .line 44
     new-instance v0, Ljava/util/ArrayList;
@@ -176,6 +207,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/UltraHdr;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 17
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/UltraHdr;

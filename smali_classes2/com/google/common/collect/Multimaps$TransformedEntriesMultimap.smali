@@ -51,6 +51,17 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/Multimap;Lcom/google/common/collect/Maps$EntryTransformer;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x10
+        }
+        names = {
+            "fromMultimap",
+            "transformer"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -61,10 +72,10 @@
         }
     .end annotation
 
-    .line 1342
+    .line 1502
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMultimap;-><init>()V
 
-    .line 1343
+    .line 1503
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -73,7 +84,7 @@
 
     iput-object p1, p0, Lcom/google/common/collect/Multimaps$TransformedEntriesMultimap;->fromMultimap:Lcom/google/common/collect/Multimap;
 
-    .line 1344
+    .line 1504
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -90,7 +101,7 @@
 .method public clear()V
     .locals 0
 
-    .line 1370
+    .line 1523
     iget-object p0, p0, Lcom/google/common/collect/Multimaps$TransformedEntriesMultimap;->fromMultimap:Lcom/google/common/collect/Multimap;
 
     invoke-interface {p0}, Lcom/google/common/collect/Multimap;->clear()V
@@ -100,8 +111,20 @@
 
 .method public containsKey(Ljava/lang/Object;)Z
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 1375
+    .line 1528
     iget-object p0, p0, Lcom/google/common/collect/Multimaps$TransformedEntriesMultimap;->fromMultimap:Lcom/google/common/collect/Multimap;
 
     invoke-interface {p0, p1}, Lcom/google/common/collect/Multimap;->containsKey(Ljava/lang/Object;)Z
@@ -123,19 +146,17 @@
         }
     .end annotation
 
-    .line 1358
+    .line 1518
     iget-object v0, p0, Lcom/google/common/collect/Multimaps$TransformedEntriesMultimap;->fromMultimap:Lcom/google/common/collect/Multimap;
 
-    .line 1359
     invoke-interface {v0}, Lcom/google/common/collect/Multimap;->asMap()Ljava/util/Map;
 
     move-result-object v0
 
-    new-instance v1, Lcom/google/common/collect/Multimaps$TransformedEntriesMultimap$1;
+    new-instance v1, Lcom/google/common/collect/Multimaps$TransformedEntriesMultimap$$ExternalSyntheticLambda0;
 
-    invoke-direct {v1, p0}, Lcom/google/common/collect/Multimaps$TransformedEntriesMultimap$1;-><init>(Lcom/google/common/collect/Multimaps$TransformedEntriesMultimap;)V
+    invoke-direct {v1, p0}, Lcom/google/common/collect/Multimaps$TransformedEntriesMultimap$$ExternalSyntheticLambda0;-><init>(Lcom/google/common/collect/Multimaps$TransformedEntriesMultimap;)V
 
-    .line 1358
     invoke-static {v0, v1}, Lcom/google/common/collect/Maps;->transformEntries(Ljava/util/Map;Lcom/google/common/collect/Maps$EntryTransformer;)Ljava/util/Map;
 
     move-result-object p0
@@ -154,7 +175,7 @@
         }
     .end annotation
 
-    .line 1380
+    .line 1533
     new-instance v0, Lcom/google/common/collect/AbstractMultimap$Entries;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/AbstractMultimap$Entries;-><init>(Lcom/google/common/collect/AbstractMultimap;)V
@@ -172,7 +193,7 @@
         }
     .end annotation
 
-    .line 1401
+    .line 1554
     iget-object p0, p0, Lcom/google/common/collect/Multimaps$TransformedEntriesMultimap;->fromMultimap:Lcom/google/common/collect/Multimap;
 
     invoke-interface {p0}, Lcom/google/common/collect/Multimap;->keySet()Ljava/util/Set;
@@ -192,7 +213,7 @@
         }
     .end annotation
 
-    .line 1406
+    .line 1559
     iget-object p0, p0, Lcom/google/common/collect/Multimaps$TransformedEntriesMultimap;->fromMultimap:Lcom/google/common/collect/Multimap;
 
     invoke-interface {p0}, Lcom/google/common/collect/Multimap;->keys()Lcom/google/common/collect/Multiset;
@@ -212,10 +233,10 @@
         }
     .end annotation
 
-    .line 1448
+    .line 1601
     iget-object v0, p0, Lcom/google/common/collect/Multimaps$TransformedEntriesMultimap;->fromMultimap:Lcom/google/common/collect/Multimap;
 
-    .line 1449
+    .line 1602
     invoke-interface {v0}, Lcom/google/common/collect/Multimap;->entries()Ljava/util/Collection;
 
     move-result-object v0
@@ -226,7 +247,7 @@
 
     move-result-object p0
 
-    .line 1448
+    .line 1601
     invoke-static {v0, p0}, Lcom/google/common/collect/Collections2;->transform(Ljava/util/Collection;Lcom/google/common/base/Function;)Ljava/util/Collection;
 
     move-result-object p0
@@ -245,10 +266,10 @@
         }
     .end annotation
 
-    .line 1385
+    .line 1538
     iget-object v0, p0, Lcom/google/common/collect/Multimaps$TransformedEntriesMultimap;->fromMultimap:Lcom/google/common/collect/Multimap;
 
-    .line 1386
+    .line 1539
     invoke-interface {v0}, Lcom/google/common/collect/Multimap;->entries()Ljava/util/Collection;
 
     move-result-object v0
@@ -263,7 +284,7 @@
 
     move-result-object p0
 
-    .line 1385
+    .line 1538
     invoke-static {v0, p0}, Lcom/google/common/collect/Iterators;->transform(Ljava/util/Iterator;Lcom/google/common/base/Function;)Ljava/util/Iterator;
 
     move-result-object p0
@@ -273,6 +294,19 @@
 
 .method public get(Ljava/lang/Object;)Ljava/util/Collection;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -281,7 +315,7 @@
         }
     .end annotation
 
-    .line 1391
+    .line 1544
     iget-object v0, p0, Lcom/google/common/collect/Multimaps$TransformedEntriesMultimap;->fromMultimap:Lcom/google/common/collect/Multimap;
 
     invoke-interface {v0, p1}, Lcom/google/common/collect/Multimap;->get(Ljava/lang/Object;)Ljava/util/Collection;
@@ -298,7 +332,7 @@
 .method public isEmpty()Z
     .locals 0
 
-    .line 1396
+    .line 1549
     iget-object p0, p0, Lcom/google/common/collect/Multimaps$TransformedEntriesMultimap;->fromMultimap:Lcom/google/common/collect/Multimap;
 
     invoke-interface {p0}, Lcom/google/common/collect/Multimap;->isEmpty()Z
@@ -308,15 +342,45 @@
     return p0
 .end method
 
+.method synthetic lambda$createAsMap$0$com-google-common-collect-Multimaps$TransformedEntriesMultimap(Ljava/lang/Object;Ljava/util/Collection;)Ljava/util/Collection;
+    .locals 0
+
+    .line 1518
+    invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/Multimaps$TransformedEntriesMultimap;->transform(Ljava/lang/Object;Ljava/util/Collection;)Ljava/util/Collection;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public put(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV2;)Z"
         }
     .end annotation
 
-    .line 1411
+    .line 1564
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -326,6 +390,15 @@
 
 .method public putAll(Lcom/google/common/collect/Multimap;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "multimap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -334,7 +407,7 @@
         }
     .end annotation
 
-    .line 1421
+    .line 1574
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -344,6 +417,21 @@
 
 .method public putAll(Ljava/lang/Object;Ljava/lang/Iterable;)Z
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "values"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;",
@@ -352,7 +440,7 @@
         }
     .end annotation
 
-    .line 1416
+    .line 1569
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -362,8 +450,26 @@
 
 .method public remove(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
-    .line 1427
+    .line 1580
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Multimaps$TransformedEntriesMultimap;->get(Ljava/lang/Object;)Ljava/util/Collection;
 
     move-result-object p0
@@ -377,6 +483,19 @@
 
 .method public removeAll(Ljava/lang/Object;)Ljava/util/Collection;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -387,7 +506,7 @@
         }
     .end annotation
 
-    .line 1433
+    .line 1586
     iget-object v0, p0, Lcom/google/common/collect/Multimaps$TransformedEntriesMultimap;->fromMultimap:Lcom/google/common/collect/Multimap;
 
     invoke-interface {v0, p1}, Lcom/google/common/collect/Multimap;->removeAll(Ljava/lang/Object;)Ljava/util/Collection;
@@ -403,6 +522,21 @@
 
 .method public replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/Collection;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "values"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;",
@@ -413,7 +547,7 @@
         }
     .end annotation
 
-    .line 1438
+    .line 1591
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -424,7 +558,7 @@
 .method public size()I
     .locals 0
 
-    .line 1443
+    .line 1596
     iget-object p0, p0, Lcom/google/common/collect/Multimaps$TransformedEntriesMultimap;->fromMultimap:Lcom/google/common/collect/Multimap;
 
     invoke-interface {p0}, Lcom/google/common/collect/Multimap;->size()I
@@ -436,6 +570,21 @@
 
 .method transform(Ljava/lang/Object;Ljava/util/Collection;)Ljava/util/Collection;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "values"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;",
@@ -446,19 +595,19 @@
         }
     .end annotation
 
-    .line 1348
+    .line 1508
     iget-object p0, p0, Lcom/google/common/collect/Multimaps$TransformedEntriesMultimap;->transformer:Lcom/google/common/collect/Maps$EntryTransformer;
 
     invoke-static {p0, p1}, Lcom/google/common/collect/Maps;->asValueToValueFunction(Lcom/google/common/collect/Maps$EntryTransformer;Ljava/lang/Object;)Lcom/google/common/base/Function;
 
     move-result-object p0
 
-    .line 1349
+    .line 1509
     instance-of p1, p2, Ljava/util/List;
 
     if-eqz p1, :cond_0
 
-    .line 1350
+    .line 1510
     check-cast p2, Ljava/util/List;
 
     invoke-static {p2, p0}, Lcom/google/common/collect/Lists;->transform(Ljava/util/List;Lcom/google/common/base/Function;)Ljava/util/List;
@@ -467,7 +616,7 @@
 
     return-object p0
 
-    .line 1352
+    .line 1512
     :cond_0
     invoke-static {p2, p0}, Lcom/google/common/collect/Collections2;->transform(Ljava/util/Collection;Lcom/google/common/base/Function;)Ljava/util/Collection;
 

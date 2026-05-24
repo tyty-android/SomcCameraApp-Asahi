@@ -24,8 +24,16 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 413
+    .line 401
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$StartTask;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -48,14 +56,14 @@
 
     const-string v0, "Fail to verify state in StartTask. state:"
 
-    .line 417
+    .line 405
     iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$StartTask;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mStateLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 418
+    .line 406
     :try_start_0
     iget-object v2, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$StartTask;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
@@ -81,7 +89,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 419
+    .line 407
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -106,18 +114,18 @@
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->-$$Nest$smtrace(Ljava/lang/String;)V
 
-    .line 420
+    .line 408
     monitor-exit v1
 
     return-void
 
-    .line 422
+    .line 410
     :cond_0
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 424
+    .line 412
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$StartTask;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->-$$Nest$fgetmShouldWaitStartSound(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;)Z
@@ -132,12 +140,12 @@
 
     move-result-object v0
 
-    .line 425
+    .line 413
     invoke-virtual {v0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
-    .line 424
+    .line 412
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/RecordingUtil;->shouldWaitStartSound(Landroid/content/Context;)Z
 
     move-result v0
@@ -147,7 +155,7 @@
     :cond_1
     const-wide/16 v0, 0x1f4
 
-    .line 429
+    .line 417
     :try_start_1
     invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
     :try_end_1
@@ -155,7 +163,7 @@
 
     goto :goto_0
 
-    .line 431
+    .line 419
     :catch_0
     new-array v0, v6, [Ljava/lang/String;
 
@@ -165,7 +173,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
-    .line 436
+    .line 424
     :cond_2
     :goto_0
     :try_start_2
@@ -180,12 +188,12 @@
     :catch_1
     move-exception v0
 
-    .line 438
+    .line 426
     sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-nez v1, :cond_4
 
-    .line 440
+    .line 428
     :goto_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$StartTask;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
@@ -193,7 +201,7 @@
 
     monitor-enter v1
 
-    .line 441
+    .line 429
     :try_start_3
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$StartTask;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
@@ -209,14 +217,14 @@
 
     if-eqz v0, :cond_3
 
-    .line 442
+    .line 430
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$StartTask;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     sget-object v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;->RECORDING:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->changeTo(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;)V
 
-    .line 444
+    .line 432
     :cond_3
     monitor-exit v1
 
@@ -231,7 +239,7 @@
 
     throw p0
 
-    .line 438
+    .line 426
     :cond_4
     new-instance p0, Ljava/lang/RuntimeException;
 
@@ -242,7 +250,7 @@
     :catchall_1
     move-exception p0
 
-    .line 422
+    .line 410
     :try_start_4
     monitor-exit v1
     :try_end_4

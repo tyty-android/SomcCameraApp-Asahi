@@ -6,6 +6,24 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/CameraStorageManager;Ljp/co/sony/mc/camera/storage/SavingTaskInquiry;Ljava/util/concurrent/Semaphore;Ljp/co/sony/mc/camera/storage/updater/StorageUpdateTask$OnTaskFinishCallback;Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "storageType",
+            "storageManager",
+            "inquiry",
+            "semaphore",
+            "callback",
+            "reason"
+        }
+    .end annotation
 
     .line 31
     invoke-direct/range {p0 .. p6}, Ljp/co/sony/mc/camera/storage/updater/StorageUpdateTask;-><init>(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/CameraStorageManager;Ljp/co/sony/mc/camera/storage/SavingTaskInquiry;Ljava/util/concurrent/Semaphore;Ljp/co/sony/mc/camera/storage/updater/StorageUpdateTask$OnTaskFinishCallback;Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;)V

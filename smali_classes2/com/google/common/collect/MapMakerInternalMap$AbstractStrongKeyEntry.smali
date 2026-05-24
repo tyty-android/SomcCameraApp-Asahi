@@ -43,58 +43,51 @@
     .end annotation
 .end field
 
-.field final next:Lcom/google/common/collect/MapMakerInternalMap$InternalEntry;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "TE;"
-        }
-    .end annotation
-
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-    .end annotation
-.end field
-
 
 # direct methods
-.method constructor <init>(Ljava/lang/Object;ILcom/google/common/collect/MapMakerInternalMap$InternalEntry;)V
+.method constructor <init>(Ljava/lang/Object;I)V
     .locals 0
-    .param p3    # Lcom/google/common/collect/MapMakerInternalMap$InternalEntry;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TK;ITE;)V"
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "hash"
         }
     .end annotation
 
-    .line 344
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TK;I)V"
+        }
+    .end annotation
+
+    .line 349
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 345
+    .line 350
     iput-object p1, p0, Lcom/google/common/collect/MapMakerInternalMap$AbstractStrongKeyEntry;->key:Ljava/lang/Object;
 
-    .line 346
+    .line 351
     iput p2, p0, Lcom/google/common/collect/MapMakerInternalMap$AbstractStrongKeyEntry;->hash:I
-
-    .line 347
-    iput-object p3, p0, Lcom/google/common/collect/MapMakerInternalMap$AbstractStrongKeyEntry;->next:Lcom/google/common/collect/MapMakerInternalMap$InternalEntry;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public getHash()I
+.method public final getHash()I
     .locals 0
 
-    .line 357
+    .line 361
     iget p0, p0, Lcom/google/common/collect/MapMakerInternalMap$AbstractStrongKeyEntry;->hash:I
 
     return p0
 .end method
 
-.method public getKey()Ljava/lang/Object;
+.method public final getKey()Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -102,7 +95,7 @@
         }
     .end annotation
 
-    .line 352
+    .line 356
     iget-object p0, p0, Lcom/google/common/collect/MapMakerInternalMap$AbstractStrongKeyEntry;->key:Ljava/lang/Object;
 
     return-object p0
@@ -116,8 +109,10 @@
         }
     .end annotation
 
-    .line 362
-    iget-object p0, p0, Lcom/google/common/collect/MapMakerInternalMap$AbstractStrongKeyEntry;->next:Lcom/google/common/collect/MapMakerInternalMap$InternalEntry;
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    const/4 p0, 0x0
 
     return-object p0
 .end method

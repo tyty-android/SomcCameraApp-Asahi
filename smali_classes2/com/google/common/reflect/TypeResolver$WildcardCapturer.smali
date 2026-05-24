@@ -26,7 +26,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 449
+    .line 448
     new-instance v0, Lcom/google/common/reflect/TypeResolver$WildcardCapturer;
 
     invoke-direct {v0}, Lcom/google/common/reflect/TypeResolver$WildcardCapturer;-><init>()V
@@ -39,7 +39,7 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 454
+    .line 453
     new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
@@ -51,11 +51,19 @@
 
 .method private constructor <init>(Ljava/util/concurrent/atomic/AtomicInteger;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "id"
+        }
+    .end annotation
 
-    .line 457
+    .line 456
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 458
+    .line 457
     iput-object p1, p0, Lcom/google/common/reflect/TypeResolver$WildcardCapturer;->id:Ljava/util/concurrent/atomic/AtomicInteger;
 
     return-void
@@ -64,7 +72,7 @@
 .method synthetic constructor <init>(Ljava/util/concurrent/atomic/AtomicInteger;Lcom/google/common/reflect/TypeResolver$1;)V
     .locals 0
 
-    .line 447
+    .line 446
     invoke-direct {p0, p1}, Lcom/google/common/reflect/TypeResolver$WildcardCapturer;-><init>(Ljava/util/concurrent/atomic/AtomicInteger;)V
 
     return-void
@@ -73,9 +81,20 @@
 .method private captureNullable(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
     .locals 0
     .param p1    # Ljava/lang/reflect/Type;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 
     if-nez p1, :cond_0
 
@@ -94,6 +113,15 @@
 
 .method private forTypeVariable(Ljava/lang/reflect/TypeVariable;)Lcom/google/common/reflect/TypeResolver$WildcardCapturer;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "typeParam"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -103,7 +131,7 @@
         }
     .end annotation
 
-    .line 507
+    .line 506
     new-instance v0, Lcom/google/common/reflect/TypeResolver$WildcardCapturer$1;
 
     iget-object v1, p0, Lcom/google/common/reflect/TypeResolver$WildcardCapturer;->id:Ljava/util/concurrent/atomic/AtomicInteger;
@@ -116,7 +144,7 @@
 .method private notForTypeVariable()Lcom/google/common/reflect/TypeResolver$WildcardCapturer;
     .locals 1
 
-    .line 527
+    .line 526
     new-instance v0, Lcom/google/common/reflect/TypeResolver$WildcardCapturer;
 
     iget-object p0, p0, Lcom/google/common/reflect/TypeResolver$WildcardCapturer;->id:Ljava/util/concurrent/atomic/AtomicInteger;
@@ -130,18 +158,26 @@
 # virtual methods
 .method final capture(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
-    .line 462
+    .line 461
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 463
+    .line 462
     instance-of v0, p1, Ljava/lang/Class;
 
     if-eqz v0, :cond_0
 
     return-object p1
 
-    .line 466
+    .line 465
     :cond_0
     instance-of v0, p1, Ljava/lang/reflect/TypeVariable;
 
@@ -149,16 +185,16 @@
 
     return-object p1
 
-    .line 469
+    .line 468
     :cond_1
     instance-of v0, p1, Ljava/lang/reflect/GenericArrayType;
 
     if-eqz v0, :cond_2
 
-    .line 470
+    .line 469
     check-cast p1, Ljava/lang/reflect/GenericArrayType;
 
-    .line 472
+    .line 471
     invoke-direct {p0}, Lcom/google/common/reflect/TypeResolver$WildcardCapturer;->notForTypeVariable()Lcom/google/common/reflect/TypeResolver$WildcardCapturer;
 
     move-result-object p0
@@ -171,48 +207,48 @@
 
     move-result-object p0
 
-    .line 471
+    .line 470
     invoke-static {p0}, Lcom/google/common/reflect/Types;->newArrayType(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
 
     move-result-object p0
 
     return-object p0
 
-    .line 474
+    .line 473
     :cond_2
     instance-of v0, p1, Ljava/lang/reflect/ParameterizedType;
 
     if-eqz v0, :cond_4
 
-    .line 475
+    .line 474
     check-cast p1, Ljava/lang/reflect/ParameterizedType;
 
-    .line 476
+    .line 475
     invoke-interface {p1}, Ljava/lang/reflect/ParameterizedType;->getRawType()Ljava/lang/reflect/Type;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/Class;
 
-    .line 477
+    .line 476
     invoke-virtual {v0}, Ljava/lang/Class;->getTypeParameters()[Ljava/lang/reflect/TypeVariable;
 
     move-result-object v1
 
-    .line 478
+    .line 477
     invoke-interface {p1}, Ljava/lang/reflect/ParameterizedType;->getActualTypeArguments()[Ljava/lang/reflect/Type;
 
     move-result-object v2
 
     const/4 v3, 0x0
 
-    .line 479
+    .line 478
     :goto_0
     array-length v4, v2
 
     if-ge v3, v4, :cond_3
 
-    .line 480
+    .line 479
     aget-object v4, v1, v3
 
     invoke-direct {p0, v4}, Lcom/google/common/reflect/TypeResolver$WildcardCapturer;->forTypeVariable(Ljava/lang/reflect/TypeVariable;)Lcom/google/common/reflect/TypeResolver$WildcardCapturer;
@@ -231,7 +267,7 @@
 
     goto :goto_0
 
-    .line 483
+    .line 482
     :cond_3
     invoke-direct {p0}, Lcom/google/common/reflect/TypeResolver$WildcardCapturer;->notForTypeVariable()Lcom/google/common/reflect/TypeResolver$WildcardCapturer;
 
@@ -245,35 +281,35 @@
 
     move-result-object p0
 
-    .line 482
+    .line 481
     invoke-static {p0, v0, v2}, Lcom/google/common/reflect/Types;->newParameterizedTypeWithOwner(Ljava/lang/reflect/Type;Ljava/lang/Class;[Ljava/lang/reflect/Type;)Ljava/lang/reflect/ParameterizedType;
 
     move-result-object p0
 
     return-object p0
 
-    .line 487
+    .line 486
     :cond_4
     instance-of v0, p1, Ljava/lang/reflect/WildcardType;
 
     if-eqz v0, :cond_6
 
-    .line 488
+    .line 487
     move-object v0, p1
 
     check-cast v0, Ljava/lang/reflect/WildcardType;
 
-    .line 489
+    .line 488
     invoke-interface {v0}, Ljava/lang/reflect/WildcardType;->getLowerBounds()[Ljava/lang/reflect/Type;
 
     move-result-object v1
 
-    .line 490
+    .line 489
     array-length v1, v1
 
     if-nez v1, :cond_5
 
-    .line 491
+    .line 490
     invoke-interface {v0}, Ljava/lang/reflect/WildcardType;->getUpperBounds()[Ljava/lang/reflect/Type;
 
     move-result-object p1
@@ -287,7 +323,7 @@
     :cond_5
     return-object p1
 
-    .line 497
+    .line 496
     :cond_6
     new-instance p0, Ljava/lang/AssertionError;
 
@@ -299,7 +335,16 @@
 .end method
 
 .method captureAsTypeVariable([Ljava/lang/reflect/Type;)Ljava/lang/reflect/TypeVariable;
-    .locals 3
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "upperBounds"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
@@ -310,13 +355,29 @@
         }
     .end annotation
 
-    .line 501
+    .line 500
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "capture#"
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
     iget-object p0, p0, Lcom/google/common/reflect/TypeResolver$WildcardCapturer;->id:Ljava/util/concurrent/atomic/AtomicInteger;
 
-    .line 502
+    .line 501
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicInteger;->incrementAndGet()I
 
     move-result p0
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    const-string v0, "-of ? extends "
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
 
     const/16 v0, 0x26
 
@@ -328,36 +389,6 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    move-result v1
-
-    add-int/lit8 v1, v1, 0x21
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v1, "capture#"
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object p0
-
-    const-string v1, "-of ? extends "
-
-    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p0
-
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
@@ -366,7 +397,7 @@
 
     move-result-object p0
 
-    .line 503
+    .line 502
     const-class v0, Lcom/google/common/reflect/TypeResolver$WildcardCapturer;
 
     invoke-static {v0, p0, p1}, Lcom/google/common/reflect/Types;->newArtificialTypeVariable(Ljava/lang/reflect/GenericDeclaration;Ljava/lang/String;[Ljava/lang/reflect/Type;)Ljava/lang/reflect/TypeVariable;

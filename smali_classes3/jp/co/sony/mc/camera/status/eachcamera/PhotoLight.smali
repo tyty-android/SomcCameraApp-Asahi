@@ -50,6 +50,14 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/status/eachcamera/PhotoLight$Value;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "val"
+        }
+    .end annotation
 
     .line 51
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/status/EnumValue;-><init>(Ljava/lang/Enum;)V

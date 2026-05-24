@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/cache/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/cache/AbstractCache$SimpleStatsCounter;,
@@ -32,7 +35,7 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 44
+    .line 45
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -50,7 +53,7 @@
         }
     .end annotation
 
-    .line 124
+    .line 130
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -66,6 +69,17 @@
 
 .method public get(Ljava/lang/Object;Ljava/util/concurrent/Callable;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "valueLoader"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;",
@@ -80,7 +94,7 @@
         }
     .end annotation
 
-    .line 49
+    .line 50
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -90,22 +104,33 @@
 
 .method public getAllPresent(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableMap;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "keys"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/Iterable<",
-            "*>;)",
+            "+",
+            "Ljava/lang/Object;",
+            ">;)",
             "Lcom/google/common/collect/ImmutableMap<",
             "TK;TV;>;"
         }
     .end annotation
 
-    .line 63
+    .line 68
     invoke-static {}, Lcom/google/common/collect/Maps;->newLinkedHashMap()Ljava/util/LinkedHashMap;
 
     move-result-object v0
 
-    .line 64
+    .line 69
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -122,26 +147,26 @@
 
     move-result-object v1
 
-    .line 65
+    .line 70
     invoke-interface {v0, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-nez v2, :cond_0
 
-    .line 68
+    .line 73
     invoke-virtual {p0, v1}, Lcom/google/common/cache/AbstractCache;->getIfPresent(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
     if-eqz v2, :cond_0
 
-    .line 70
+    .line 75
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
-    .line 74
+    .line 79
     :cond_1
     invoke-static {v0}, Lcom/google/common/collect/ImmutableMap;->copyOf(Ljava/util/Map;)Lcom/google/common/collect/ImmutableMap;
 
@@ -152,8 +177,16 @@
 
 .method public invalidate(Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 101
+    .line 106
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -164,7 +197,7 @@
 .method public invalidateAll()V
     .locals 0
 
-    .line 114
+    .line 120
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -174,15 +207,26 @@
 
 .method public invalidateAll(Ljava/lang/Iterable;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "keys"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/Iterable<",
-            "*>;)V"
+            "+",
+            "Ljava/lang/Object;",
+            ">;)V"
         }
     .end annotation
 
-    .line 107
+    .line 113
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -198,7 +242,7 @@
 
     move-result-object v0
 
-    .line 108
+    .line 114
     invoke-virtual {p0, v0}, Lcom/google/common/cache/AbstractCache;->invalidate(Ljava/lang/Object;)V
 
     goto :goto_0
@@ -209,13 +253,24 @@
 
 .method public put(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV;)V"
         }
     .end annotation
 
-    .line 80
+    .line 85
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -225,6 +280,15 @@
 
 .method public putAll(Ljava/util/Map;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "m"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -233,7 +297,7 @@
         }
     .end annotation
 
-    .line 86
+    .line 91
     invoke-interface {p1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object p1
@@ -255,7 +319,7 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 87
+    .line 92
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v1
@@ -275,7 +339,7 @@
 .method public size()J
     .locals 0
 
-    .line 96
+    .line 101
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -286,7 +350,7 @@
 .method public stats()Lcom/google/common/cache/CacheStats;
     .locals 0
 
-    .line 119
+    .line 125
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V

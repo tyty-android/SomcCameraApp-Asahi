@@ -17,7 +17,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nView.kt\nKotlin\n*S Kotlin\n*F\n+ 1 View.kt\nandroidx/core/view/ViewKt$doOnAttach$1\n+ 2 CaptureButton.kt\njp/co/sony/mc/camera/view/widget/CaptureButton\n*L\n1#1,414:1\n128#2:415\n270#2,2:416\n*E\n"
+    value = "SMAP\nView.kt\nKotlin\n*S Kotlin\n*F\n+ 1 View.kt\nandroidx/core/view/ViewKt$doOnAttach$1\n+ 2 CaptureButton.kt\njp/co/sony/mc/camera/view/widget/CaptureButton\n*L\n1#1,414:1\n132#2:415\n285#2,2:416\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;

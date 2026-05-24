@@ -40,6 +40,15 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/graph/Network;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "network"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -48,10 +57,10 @@
         }
     .end annotation
 
-    .line 380
+    .line 416
     invoke-direct {p0}, Lcom/google/common/graph/ForwardingNetwork;-><init>()V
 
-    .line 381
+    .line 417
     iput-object p1, p0, Lcom/google/common/graph/Graphs$TransposedNetwork;->network:Lcom/google/common/graph/Network;
 
     return-void
@@ -60,7 +69,7 @@
 .method static synthetic access$200(Lcom/google/common/graph/Graphs$TransposedNetwork;)Lcom/google/common/graph/Network;
     .locals 0
 
-    .line 377
+    .line 413
     iget-object p0, p0, Lcom/google/common/graph/Graphs$TransposedNetwork;->network:Lcom/google/common/graph/Network;
 
     return-object p0
@@ -68,7 +77,7 @@
 
 
 # virtual methods
-.method protected delegate()Lcom/google/common/graph/Network;
+.method delegate()Lcom/google/common/graph/Network;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -78,7 +87,7 @@
         }
     .end annotation
 
-    .line 386
+    .line 422
     iget-object p0, p0, Lcom/google/common/graph/Graphs$TransposedNetwork;->network:Lcom/google/common/graph/Network;
 
     return-object p0
@@ -86,6 +95,15 @@
 
 .method public edgeConnectingOrNull(Lcom/google/common/graph/EndpointPair;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "endpoints"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -94,7 +112,10 @@
         }
     .end annotation
 
-    .line 442
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 480
     invoke-virtual {p0}, Lcom/google/common/graph/Graphs$TransposedNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -112,13 +133,27 @@
 
 .method public edgeConnectingOrNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "nodeU",
+            "nodeV"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;TN;)TE;"
         }
     .end annotation
 
-    .line 437
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 474
     invoke-virtual {p0}, Lcom/google/common/graph/Graphs$TransposedNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -132,6 +167,15 @@
 
 .method public edgesConnecting(Lcom/google/common/graph/EndpointPair;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "endpoints"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -142,7 +186,7 @@
         }
     .end annotation
 
-    .line 432
+    .line 468
     invoke-virtual {p0}, Lcom/google/common/graph/Graphs$TransposedNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -160,6 +204,17 @@
 
 .method public edgesConnecting(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "nodeU",
+            "nodeV"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;TN;)",
@@ -168,7 +223,7 @@
         }
     .end annotation
 
-    .line 427
+    .line 463
     invoke-virtual {p0}, Lcom/google/common/graph/Graphs$TransposedNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -182,6 +237,15 @@
 
 .method public hasEdgeConnecting(Lcom/google/common/graph/EndpointPair;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "endpoints"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -190,7 +254,7 @@
         }
     .end annotation
 
-    .line 452
+    .line 490
     invoke-virtual {p0}, Lcom/google/common/graph/Graphs$TransposedNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -208,13 +272,24 @@
 
 .method public hasEdgeConnecting(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "nodeU",
+            "nodeV"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;TN;)Z"
         }
     .end annotation
 
-    .line 447
+    .line 485
     invoke-virtual {p0}, Lcom/google/common/graph/Graphs$TransposedNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -228,13 +303,22 @@
 
 .method public inDegree(Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)I"
         }
     .end annotation
 
-    .line 401
+    .line 437
     invoke-virtual {p0}, Lcom/google/common/graph/Graphs$TransposedNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -248,6 +332,15 @@
 
 .method public inEdges(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)",
@@ -256,7 +349,7 @@
         }
     .end annotation
 
-    .line 411
+    .line 447
     invoke-virtual {p0}, Lcom/google/common/graph/Graphs$TransposedNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -270,6 +363,15 @@
 
 .method public incidentNodes(Ljava/lang/Object;)Lcom/google/common/graph/EndpointPair;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "edge"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)",
@@ -278,7 +380,7 @@
         }
     .end annotation
 
-    .line 421
+    .line 457
     invoke-virtual {p0}, Lcom/google/common/graph/Graphs$TransposedNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object v0
@@ -287,7 +389,7 @@
 
     move-result-object p1
 
-    .line 422
+    .line 458
     iget-object p0, p0, Lcom/google/common/graph/Graphs$TransposedNetwork;->network:Lcom/google/common/graph/Network;
 
     invoke-virtual {p1}, Lcom/google/common/graph/EndpointPair;->nodeV()Ljava/lang/Object;
@@ -307,13 +409,22 @@
 
 .method public outDegree(Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)I"
         }
     .end annotation
 
-    .line 406
+    .line 442
     invoke-virtual {p0}, Lcom/google/common/graph/Graphs$TransposedNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -327,6 +438,15 @@
 
 .method public outEdges(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)",
@@ -335,7 +455,7 @@
         }
     .end annotation
 
-    .line 416
+    .line 452
     invoke-virtual {p0}, Lcom/google/common/graph/Graphs$TransposedNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -349,8 +469,16 @@
 
 .method public bridge synthetic predecessors(Ljava/lang/Object;)Ljava/lang/Iterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "node"
+        }
+    .end annotation
 
-    .line 377
+    .line 413
     invoke-virtual {p0, p1}, Lcom/google/common/graph/Graphs$TransposedNetwork;->predecessors(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object p0
@@ -360,6 +488,15 @@
 
 .method public predecessors(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)",
@@ -368,7 +505,7 @@
         }
     .end annotation
 
-    .line 391
+    .line 427
     invoke-virtual {p0}, Lcom/google/common/graph/Graphs$TransposedNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -382,8 +519,16 @@
 
 .method public bridge synthetic successors(Ljava/lang/Object;)Ljava/lang/Iterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "node"
+        }
+    .end annotation
 
-    .line 377
+    .line 413
     invoke-virtual {p0, p1}, Lcom/google/common/graph/Graphs$TransposedNetwork;->successors(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object p0
@@ -393,6 +538,15 @@
 
 .method public successors(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)",
@@ -401,7 +555,7 @@
         }
     .end annotation
 
-    .line 396
+    .line 432
     invoke-virtual {p0}, Lcom/google/common/graph/Graphs$TransposedNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0

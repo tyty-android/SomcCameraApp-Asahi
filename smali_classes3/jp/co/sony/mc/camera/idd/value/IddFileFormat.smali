@@ -62,7 +62,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 193
+    .line 192
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddFileFormat;->value:Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
@@ -75,7 +75,7 @@
 .method public final getValue()Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
     .locals 0
 
-    .line 193
+    .line 192
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddFileFormat;->value:Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
 
     return-object p0
@@ -84,7 +84,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 194
+    .line 193
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddFileFormat;->value:Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
 
     sget-object v0, Ljp/co/sony/mc/camera/idd/value/IddFileFormat$WhenMappings;->$EnumSwitchMapping$0:[I
@@ -107,12 +107,12 @@
 
     if-ne p0, v0, :cond_0
 
-    .line 197
+    .line 196
     const-string p0, "RAWJ"
 
     goto :goto_0
 
-    .line 194
+    .line 193
     :cond_0
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
@@ -120,13 +120,13 @@
 
     throw p0
 
-    .line 196
+    .line 195
     :cond_1
     const-string p0, "RAW"
 
     goto :goto_0
 
-    .line 195
+    .line 194
     :cond_2
     const-string p0, "JPEG"
 

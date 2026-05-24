@@ -1,4 +1,4 @@
-.class Lcom/google/common/collect/Synchronized$SynchronizedRandomAccessList;
+.class final Lcom/google/common/collect/Synchronized$SynchronizedRandomAccessList;
 .super Lcom/google/common/collect/Synchronized$SynchronizedList;
 .source "Synchronized.java"
 
@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0xa
+    accessFlags = 0x18
     name = "SynchronizedRandomAccessList"
 .end annotation
 
@@ -36,9 +36,20 @@
 .method constructor <init>(Ljava/util/List;Ljava/lang/Object;)V
     .locals 0
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "list",
+            "mutex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -49,7 +60,7 @@
         }
     .end annotation
 
-    .line 408
+    .line 431
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/Synchronized$SynchronizedList;-><init>(Ljava/util/List;Ljava/lang/Object;)V
 
     return-void

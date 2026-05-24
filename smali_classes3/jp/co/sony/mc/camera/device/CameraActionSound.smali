@@ -105,6 +105,14 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "applicationContext"
+        }
+    .end annotation
 
     .line 86
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -287,6 +295,18 @@
 
 .method private static loadSound(Landroid/content/Context;Landroid/media/SoundPool;Ljp/co/sony/mc/camera/device/CameraActionSound$Type;)I
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "applicationContext",
+            "soundPool",
+            "type"
+        }
+    .end annotation
 
     .line 351
     invoke-static {p2}, Ljp/co/sony/mc/camera/device/CameraActionSound$Type;->-$$Nest$mgetSoundFile(Ljp/co/sony/mc/camera/device/CameraActionSound$Type;)Ljava/lang/String;
@@ -331,6 +351,16 @@
 
 .method private static playSoundBySampleId(Landroid/media/SoundPool;I)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "soundPool",
+            "sampleId"
+        }
+    .end annotation
 
     const/4 v5, 0x0
 
@@ -354,6 +384,16 @@
 
 .method private static playSoundByTemporarySoundPool(Landroid/content/Context;Ljp/co/sony/mc/camera/device/CameraActionSound$Type;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x10
+        }
+        names = {
+            "context",
+            "type"
+        }
+    .end annotation
 
     .line 217
     invoke-static {}, Ljp/co/sony/mc/camera/device/CameraActionSound;->createSoundPool()Landroid/media/SoundPool;
@@ -426,6 +466,14 @@
 
 .method private releaseDelay(Ljava/util/concurrent/ScheduledExecutorService;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "soundExecutor"
+        }
+    .end annotation
 
     .line 269
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraActionSound$5;
@@ -445,6 +493,14 @@
 # virtual methods
 .method public load(Ljp/co/sony/mc/camera/device/CameraActionSound$Type;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     const-string v0, "invoked isReleased:"
 
@@ -567,6 +623,16 @@
 
 .method public play(Ljp/co/sony/mc/camera/device/CameraActionSound$Type;Z)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x0
+        }
+        names = {
+            "type",
+            "sync"
+        }
+    .end annotation
 
     const-string v0, "invoked isReleased:"
 

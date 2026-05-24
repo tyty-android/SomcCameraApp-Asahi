@@ -29,6 +29,16 @@
 
 .method public static getRadianFrom2Vector(Landroid/graphics/PointF;Landroid/graphics/PointF;)F
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "vec0",
+            "vec1"
+        }
+    .end annotation
 
     .line 28
     invoke-virtual {p0}, Landroid/graphics/PointF;->length()F
@@ -115,6 +125,18 @@
 
 .method private static isNearlyEquals(FFF)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "target",
+            "actual",
+            "tolerance"
+        }
+    .end annotation
 
     sub-float/2addr p0, p1
 
@@ -140,6 +162,16 @@
 
 .method public static isParallel(Landroid/graphics/PointF;Landroid/graphics/PointF;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "vec0",
+            "vec1"
+        }
+    .end annotation
 
     .line 58
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/interaction/VectorCalculator;->getRadianFrom2Vector(Landroid/graphics/PointF;Landroid/graphics/PointF;)F
@@ -181,6 +213,16 @@
 
 .method public static isSquare(Landroid/graphics/PointF;Landroid/graphics/PointF;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "vec0",
+            "vec1"
+        }
+    .end annotation
 
     .line 47
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/interaction/VectorCalculator;->getRadianFrom2Vector(Landroid/graphics/PointF;Landroid/graphics/PointF;)F

@@ -30,8 +30,18 @@
 # direct methods
 .method constructor <init>(Ljava/util/Set;Ljava/util/Set;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x1010
+        }
+        names = {
+            "val$set1",
+            "val$set2"
+        }
+    .end annotation
 
-    .line 665
+    .line 751
     iput-object p1, p0, Lcom/google/common/collect/Sets$1;->val$set1:Ljava/util/Set;
 
     iput-object p2, p0, Lcom/google/common/collect/Sets$1;->val$set2:Ljava/util/Set;
@@ -47,8 +57,20 @@
 # virtual methods
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 706
+    .line 793
     iget-object v0, p0, Lcom/google/common/collect/Sets$1;->val$set1:Ljava/util/Set;
 
     invoke-interface {v0, p1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
@@ -82,6 +104,15 @@
 
 .method public copyInto(Ljava/util/Set;)Ljava/util/Set;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "set"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<S::",
@@ -90,12 +121,12 @@
         }
     .end annotation
 
-    .line 711
+    .line 798
     iget-object v0, p0, Lcom/google/common/collect/Sets$1;->val$set1:Ljava/util/Set;
 
     invoke-interface {p1, v0}, Ljava/util/Set;->addAll(Ljava/util/Collection;)Z
 
-    .line 712
+    .line 799
     iget-object p0, p0, Lcom/google/common/collect/Sets$1;->val$set2:Ljava/util/Set;
 
     invoke-interface {p1, p0}, Ljava/util/Set;->addAll(Ljava/util/Collection;)Z
@@ -103,44 +134,10 @@
     return-object p1
 .end method
 
-.method public immutableCopy()Lcom/google/common/collect/ImmutableSet;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lcom/google/common/collect/ImmutableSet<",
-            "TE;>;"
-        }
-    .end annotation
-
-    .line 718
-    new-instance v0, Lcom/google/common/collect/ImmutableSet$Builder;
-
-    invoke-direct {v0}, Lcom/google/common/collect/ImmutableSet$Builder;-><init>()V
-
-    iget-object v1, p0, Lcom/google/common/collect/Sets$1;->val$set1:Ljava/util/Set;
-
-    invoke-virtual {v0, v1}, Lcom/google/common/collect/ImmutableSet$Builder;->addAll(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableSet$Builder;
-
-    move-result-object v0
-
-    iget-object p0, p0, Lcom/google/common/collect/Sets$1;->val$set2:Ljava/util/Set;
-
-    invoke-virtual {v0, p0}, Lcom/google/common/collect/ImmutableSet$Builder;->addAll(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableSet$Builder;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Lcom/google/common/collect/ImmutableSet$Builder;->build()Lcom/google/common/collect/ImmutableSet;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
 .method public isEmpty()Z
     .locals 1
 
-    .line 679
+    .line 765
     iget-object v0, p0, Lcom/google/common/collect/Sets$1;->val$set1:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->isEmpty()Z
@@ -178,7 +175,7 @@
         }
     .end annotation
 
-    .line 684
+    .line 770
     new-instance v0, Lcom/google/common/collect/Sets$1$1;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/Sets$1$1;-><init>(Lcom/google/common/collect/Sets$1;)V
@@ -189,7 +186,7 @@
 .method public bridge synthetic iterator()Ljava/util/Iterator;
     .locals 0
 
-    .line 665
+    .line 751
     invoke-virtual {p0}, Lcom/google/common/collect/Sets$1;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p0
@@ -200,14 +197,14 @@
 .method public size()I
     .locals 4
 
-    .line 668
+    .line 754
     iget-object v0, p0, Lcom/google/common/collect/Sets$1;->val$set1:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->size()I
 
     move-result v0
 
-    .line 669
+    .line 755
     iget-object v1, p0, Lcom/google/common/collect/Sets$1;->val$set2:Ljava/util/Set;
 
     invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
@@ -226,7 +223,7 @@
 
     move-result-object v2
 
-    .line 670
+    .line 756
     iget-object v3, p0, Lcom/google/common/collect/Sets$1;->val$set1:Ljava/util/Set;
 
     invoke-interface {v3, v2}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
@@ -240,5 +237,26 @@
     goto :goto_0
 
     :cond_1
+    return v0
+.end method
+
+.method upperBoundSize()I
+    .locals 1
+
+    .line 805
+    iget-object v0, p0, Lcom/google/common/collect/Sets$1;->val$set1:Ljava/util/Set;
+
+    invoke-static {v0}, Lcom/google/common/collect/Sets$1;->upperBoundSize(Ljava/util/Set;)I
+
+    move-result v0
+
+    iget-object p0, p0, Lcom/google/common/collect/Sets$1;->val$set2:Ljava/util/Set;
+
+    invoke-static {p0}, Lcom/google/common/collect/Sets$1;->upperBoundSize(Ljava/util/Set;)I
+
+    move-result p0
+
+    add-int/2addr v0, p0
+
     return v0
 .end method

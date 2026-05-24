@@ -30,7 +30,7 @@
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->$r8$lambda$kJM6Wg-S_vXmSw0xFJZfqd2nh6A(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;)Lkotlin/Unit;
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->$r8$lambda$jHNciPGpk8mfTdylwC6QfgAq3Qk(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;)Lkotlin/Unit;
 
     move-result-object p0
 

@@ -17,6 +17,26 @@
 # virtual methods
 .method protected create(Landroid/content/Context;Ljp/co/sony/mc/camera/setting/MessageSettings;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;Landroid/content/DialogInterface$OnDismissListener;)Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "mMessageSettings",
+            "parameter",
+            "onPositiveListener",
+            "onNegativeListener",
+            "onCancelListener",
+            "onDismissListener"
+        }
+    .end annotation
 
     .line 38
     new-instance p2, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Builder;
@@ -61,7 +81,7 @@
 
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const p4, 0x7f1101df
+    const p4, 0x7f11022b
 
     invoke-virtual {p1, p4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -77,7 +97,7 @@
 
     move-result-object p0
 
-    const p4, 0x7f1101de
+    const p4, 0x7f11022a
 
     .line 48
     invoke-virtual {p1, p4}, Landroid/content/Context;->getString(I)Ljava/lang/String;

@@ -86,16 +86,16 @@
 
     const/4 v0, 0x0
 
-    .line 867
+    .line 1037
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 864
+    .line 1034
     iput p1, p0, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;->step:I
 
-    .line 865
+    .line 1035
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;->text:Ljava/lang/String;
 
-    .line 866
+    .line 1036
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;->contentDescription:Ljava/lang/String;
 
     return-void
@@ -238,7 +238,7 @@
 .method public final getContentDescription()Ljava/lang/String;
     .locals 0
 
-    .line 866
+    .line 1036
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;->contentDescription:Ljava/lang/String;
 
     return-object p0
@@ -247,7 +247,7 @@
 .method public final getStep()I
     .locals 0
 
-    .line 864
+    .line 1034
     iget p0, p0, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;->step:I
 
     return p0
@@ -256,7 +256,7 @@
 .method public final getText()Ljava/lang/String;
     .locals 0
 
-    .line 865
+    .line 1035
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;->text:Ljava/lang/String;
 
     return-object p0

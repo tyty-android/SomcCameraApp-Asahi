@@ -66,17 +66,17 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 73
+    .line 74
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 74
+    .line 75
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$BokehResult;->getStatus()I
 
     move-result v0
 
     iput v0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$BokehResult;->status:I
 
-    .line 75
+    .line 76
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$BokehResult;->getQuality()I
 
     move-result p1
@@ -91,7 +91,7 @@
 .method public final getQuality()I
     .locals 0
 
-    .line 75
+    .line 76
     iget p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$BokehResult;->quality:I
 
     return p0
@@ -100,7 +100,7 @@
 .method public final getStatus()I
     .locals 0
 
-    .line 74
+    .line 75
     iget p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$BokehResult;->status:I
 
     return p0

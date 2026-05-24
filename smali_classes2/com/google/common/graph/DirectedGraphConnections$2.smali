@@ -28,8 +28,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/graph/DirectedGraphConnections;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 273
+    .line 275
     iput-object p1, p0, Lcom/google/common/graph/DirectedGraphConnections$2;->this$0:Lcom/google/common/graph/DirectedGraphConnections;
 
     invoke-direct {p0}, Ljava/util/AbstractSet;-><init>()V
@@ -42,11 +50,19 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
-    .line 314
+    .line 318
     iget-object p0, p0, Lcom/google/common/graph/DirectedGraphConnections$2;->this$0:Lcom/google/common/graph/DirectedGraphConnections;
 
     invoke-static {p0}, Lcom/google/common/graph/DirectedGraphConnections;->access$100(Lcom/google/common/graph/DirectedGraphConnections;)Ljava/util/Map;
@@ -74,7 +90,7 @@
         }
     .end annotation
 
-    .line 276
+    .line 278
     iget-object v0, p0, Lcom/google/common/graph/DirectedGraphConnections$2;->this$0:Lcom/google/common/graph/DirectedGraphConnections;
 
     invoke-static {v0}, Lcom/google/common/graph/DirectedGraphConnections;->access$000(Lcom/google/common/graph/DirectedGraphConnections;)Ljava/util/List;
@@ -83,7 +99,7 @@
 
     if-nez v0, :cond_0
 
-    .line 277
+    .line 279
     iget-object v0, p0, Lcom/google/common/graph/DirectedGraphConnections$2;->this$0:Lcom/google/common/graph/DirectedGraphConnections;
 
     invoke-static {v0}, Lcom/google/common/graph/DirectedGraphConnections;->access$100(Lcom/google/common/graph/DirectedGraphConnections;)Ljava/util/Map;
@@ -98,14 +114,14 @@
 
     move-result-object v0
 
-    .line 278
+    .line 280
     new-instance v1, Lcom/google/common/graph/DirectedGraphConnections$2$1;
 
     invoke-direct {v1, p0, v0}, Lcom/google/common/graph/DirectedGraphConnections$2$1;-><init>(Lcom/google/common/graph/DirectedGraphConnections$2;Ljava/util/Iterator;)V
 
     return-object v1
 
-    .line 291
+    .line 294
     :cond_0
     iget-object v0, p0, Lcom/google/common/graph/DirectedGraphConnections$2;->this$0:Lcom/google/common/graph/DirectedGraphConnections;
 
@@ -117,7 +133,7 @@
 
     move-result-object v0
 
-    .line 292
+    .line 295
     new-instance v1, Lcom/google/common/graph/DirectedGraphConnections$2$2;
 
     invoke-direct {v1, p0, v0}, Lcom/google/common/graph/DirectedGraphConnections$2$2;-><init>(Lcom/google/common/graph/DirectedGraphConnections$2;Ljava/util/Iterator;)V
@@ -128,7 +144,7 @@
 .method public bridge synthetic iterator()Ljava/util/Iterator;
     .locals 0
 
-    .line 273
+    .line 275
     invoke-virtual {p0}, Lcom/google/common/graph/DirectedGraphConnections$2;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p0
@@ -139,7 +155,7 @@
 .method public size()I
     .locals 0
 
-    .line 309
+    .line 313
     iget-object p0, p0, Lcom/google/common/graph/DirectedGraphConnections$2;->this$0:Lcom/google/common/graph/DirectedGraphConnections;
 
     invoke-static {p0}, Lcom/google/common/graph/DirectedGraphConnections;->access$300(Lcom/google/common/graph/DirectedGraphConnections;)I

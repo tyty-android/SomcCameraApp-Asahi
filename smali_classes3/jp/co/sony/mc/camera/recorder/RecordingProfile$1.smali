@@ -17,8 +17,6 @@
 # static fields
 .field static final synthetic $SwitchMap$jp$co$sony$mc$camera$configuration$parameters$CaptureFps:[I
 
-.field static final synthetic $SwitchMap$jp$co$sony$mc$camera$configuration$parameters$VideoQuality:[I
-
 .field static final synthetic $SwitchMap$jp$co$sony$mc$camera$configuration$parameters$VideoSize:[I
 
 
@@ -26,8 +24,8 @@
 .method static constructor <clinit>()V
     .locals 7
 
-    .line 557
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;->values()[Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;
+    .line 368
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->values()[Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
 
     move-result-object v0
 
@@ -35,14 +33,14 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$VideoQuality:[I
+    sput-object v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$VideoSize:[I
 
     const/4 v1, 0x1
 
     :try_start_0
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;->HIGH:Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;
+    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->FOUR_K_UHD:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
 
-    invoke-virtual {v2}, Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;->ordinal()I
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->ordinal()I
 
     move-result v2
 
@@ -54,11 +52,11 @@
     const/4 v0, 0x2
 
     :try_start_1
-    sget-object v2, Ljp/co/sony/mc/camera/recorder/RecordingProfile$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$VideoQuality:[I
+    sget-object v2, Ljp/co/sony/mc/camera/recorder/RecordingProfile$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$VideoSize:[I
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;->MEDIUM:Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->FULL_HD:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
 
-    invoke-virtual {v3}, Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;->ordinal()I
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->ordinal()I
 
     move-result v3
 
@@ -70,57 +68,6 @@
     const/4 v2, 0x3
 
     :try_start_2
-    sget-object v3, Ljp/co/sony/mc/camera/recorder/RecordingProfile$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$VideoQuality:[I
-
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;->LOW:Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;
-
-    invoke-virtual {v4}, Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;->ordinal()I
-
-    move-result v4
-
-    aput v2, v3, v4
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    .line 414
-    :catch_2
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->values()[Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
-
-    move-result-object v3
-
-    array-length v3, v3
-
-    new-array v3, v3, [I
-
-    sput-object v3, Ljp/co/sony/mc/camera/recorder/RecordingProfile$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$VideoSize:[I
-
-    :try_start_3
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->FOUR_K_UHD:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
-
-    invoke-virtual {v4}, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->ordinal()I
-
-    move-result v4
-
-    aput v1, v3, v4
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
-    :catch_3
-    :try_start_4
-    sget-object v3, Ljp/co/sony/mc/camera/recorder/RecordingProfile$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$VideoSize:[I
-
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->FULL_HD:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
-
-    invoke-virtual {v4}, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->ordinal()I
-
-    move-result v4
-
-    aput v0, v3, v4
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
-
-    :catch_4
-    :try_start_5
     sget-object v3, Ljp/co/sony/mc/camera/recorder/RecordingProfile$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$VideoSize:[I
 
     sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->HD:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
@@ -130,13 +77,13 @@
     move-result v4
 
     aput v2, v3, v4
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
 
-    :catch_5
+    :catch_2
     const/4 v3, 0x4
 
-    :try_start_6
+    :try_start_3
     sget-object v4, Ljp/co/sony/mc/camera/recorder/RecordingProfile$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$VideoSize:[I
 
     sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->VGA:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
@@ -146,11 +93,11 @@
     move-result v5
 
     aput v3, v4, v5
-    :try_end_6
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
 
-    :catch_6
-    :try_start_7
+    :catch_3
+    :try_start_4
     sget-object v4, Ljp/co/sony/mc/camera/recorder/RecordingProfile$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$VideoSize:[I
 
     sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->MMS:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
@@ -162,11 +109,11 @@
     const/4 v6, 0x5
 
     aput v6, v4, v5
-    :try_end_7
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
 
-    .line 416
-    :catch_7
+    .line 370
+    :catch_4
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;->values()[Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
 
     move-result-object v4
@@ -177,7 +124,7 @@
 
     sput-object v4, Ljp/co/sony/mc/camera/recorder/RecordingProfile$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$CaptureFps:[I
 
-    :try_start_8
+    :try_start_5
     sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;->CAPTURE_FPS_120:Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
 
     invoke-virtual {v5}, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;->ordinal()I
@@ -185,11 +132,11 @@
     move-result v5
 
     aput v1, v4, v5
-    :try_end_8
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
 
-    :catch_8
-    :try_start_9
+    :catch_5
+    :try_start_6
     sget-object v1, Ljp/co/sony/mc/camera/recorder/RecordingProfile$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$CaptureFps:[I
 
     sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;->CAPTURE_FPS_60:Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
@@ -199,11 +146,11 @@
     move-result v4
 
     aput v0, v1, v4
-    :try_end_9
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
+    :try_end_6
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
 
-    :catch_9
-    :try_start_a
+    :catch_6
+    :try_start_7
     sget-object v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$CaptureFps:[I
 
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;->CAPTURE_FPS_30:Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
@@ -213,11 +160,11 @@
     move-result v1
 
     aput v2, v0, v1
-    :try_end_a
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
+    :try_end_7
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
 
-    :catch_a
-    :try_start_b
+    :catch_7
+    :try_start_8
     sget-object v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$CaptureFps:[I
 
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;->CAPTURE_FPS_24:Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
@@ -227,9 +174,9 @@
     move-result v1
 
     aput v3, v0, v1
-    :try_end_b
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_b .. :try_end_b} :catch_b
+    :try_end_8
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
 
-    :catch_b
+    :catch_8
     return-void
 .end method

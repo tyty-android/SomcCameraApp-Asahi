@@ -28,11 +28,19 @@
 # direct methods
 .method constructor <init>(J)V
     .locals 0
-
-    .line 178
-    invoke-direct {p0}, Lcom/google/common/hash/HashCode;-><init>()V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "hash"
+        }
+    .end annotation
 
     .line 179
+    invoke-direct {p0}, Lcom/google/common/hash/HashCode;-><init>()V
+
+    .line 180
     iput-wide p1, p0, Lcom/google/common/hash/HashCode$LongHashCode;->hash:J
 
     return-void
@@ -43,7 +51,7 @@
 .method public asBytes()[B
     .locals 10
 
-    .line 189
+    .line 190
     iget-wide v0, p0, Lcom/google/common/hash/HashCode$LongHashCode;->hash:J
 
     long-to-int p0, v0
@@ -146,7 +154,7 @@
 .method public asInt()I
     .locals 2
 
-    .line 203
+    .line 204
     iget-wide v0, p0, Lcom/google/common/hash/HashCode$LongHashCode;->hash:J
 
     long-to-int p0, v0
@@ -157,7 +165,7 @@
 .method public asLong()J
     .locals 2
 
-    .line 208
+    .line 209
     iget-wide v0, p0, Lcom/google/common/hash/HashCode$LongHashCode;->hash:J
 
     return-wide v0
@@ -173,8 +181,16 @@
 
 .method equalsSameBits(Lcom/google/common/hash/HashCode;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "that"
+        }
+    .end annotation
 
-    .line 225
+    .line 226
     iget-wide v0, p0, Lcom/google/common/hash/HashCode$LongHashCode;->hash:J
 
     invoke-virtual {p1}, Lcom/google/common/hash/HashCode;->asLong()J
@@ -199,7 +215,7 @@
 .method public padToLong()J
     .locals 2
 
-    .line 213
+    .line 214
     iget-wide v0, p0, Lcom/google/common/hash/HashCode$LongHashCode;->hash:J
 
     return-wide v0
@@ -207,6 +223,18 @@
 
 .method writeBytesToImpl([BII)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "dest",
+            "offset",
+            "maxLength"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -215,7 +243,7 @@
 
     add-int v1, p2, v0
 
-    .line 219
+    .line 220
     iget-wide v2, p0, Lcom/google/common/hash/HashCode$LongHashCode;->hash:J
 
     mul-int/lit8 v4, v0, 0x8

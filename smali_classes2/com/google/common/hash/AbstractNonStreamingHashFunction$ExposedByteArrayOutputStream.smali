@@ -17,8 +17,16 @@
 # direct methods
 .method constructor <init>(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "expectedInputSize"
+        }
+    .end annotation
 
-    .line 113
+    .line 114
     invoke-direct {p0, p1}, Ljava/io/ByteArrayOutputStream;-><init>(I)V
 
     return-void
@@ -29,7 +37,7 @@
 .method byteArray()[B
     .locals 0
 
-    .line 126
+    .line 127
     iget-object p0, p0, Lcom/google/common/hash/AbstractNonStreamingHashFunction$ExposedByteArrayOutputStream;->buf:[B
 
     return-object p0
@@ -38,7 +46,7 @@
 .method length()I
     .locals 0
 
-    .line 130
+    .line 131
     iget p0, p0, Lcom/google/common/hash/AbstractNonStreamingHashFunction$ExposedByteArrayOutputStream;->count:I
 
     return p0
@@ -46,13 +54,21 @@
 
 .method write(Ljava/nio/ByteBuffer;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "input"
+        }
+    .end annotation
 
-    .line 117
+    .line 118
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->remaining()I
 
     move-result v0
 
-    .line 118
+    .line 119
     iget v1, p0, Lcom/google/common/hash/AbstractNonStreamingHashFunction$ExposedByteArrayOutputStream;->count:I
 
     add-int/2addr v1, v0
@@ -63,7 +79,7 @@
 
     if-le v1, v2, :cond_0
 
-    .line 119
+    .line 120
     iget-object v1, p0, Lcom/google/common/hash/AbstractNonStreamingHashFunction$ExposedByteArrayOutputStream;->buf:[B
 
     iget v2, p0, Lcom/google/common/hash/AbstractNonStreamingHashFunction$ExposedByteArrayOutputStream;->count:I
@@ -76,7 +92,7 @@
 
     iput-object v1, p0, Lcom/google/common/hash/AbstractNonStreamingHashFunction$ExposedByteArrayOutputStream;->buf:[B
 
-    .line 121
+    .line 122
     :cond_0
     iget-object v1, p0, Lcom/google/common/hash/AbstractNonStreamingHashFunction$ExposedByteArrayOutputStream;->buf:[B
 
@@ -84,7 +100,7 @@
 
     invoke-virtual {p1, v1, v2, v0}, Ljava/nio/ByteBuffer;->get([BII)Ljava/nio/ByteBuffer;
 
-    .line 122
+    .line 123
     iget p1, p0, Lcom/google/common/hash/AbstractNonStreamingHashFunction$ExposedByteArrayOutputStream;->count:I
 
     add-int/2addr p1, v0

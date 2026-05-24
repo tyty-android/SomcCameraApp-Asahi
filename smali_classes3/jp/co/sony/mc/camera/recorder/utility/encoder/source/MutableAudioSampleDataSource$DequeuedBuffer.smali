@@ -49,6 +49,16 @@
 
 .method public constructor <init>(ILjava/nio/ByteBuffer;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "input"
+        }
+    .end annotation
 
     .line 333
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

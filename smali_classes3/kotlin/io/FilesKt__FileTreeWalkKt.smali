@@ -14,14 +14,14 @@
         "Ljava/io/File;",
         "direction",
         "Lkotlin/io/FileWalkDirection;",
-        "walkBottomUp",
         "walkTopDown",
+        "walkBottomUp",
         "kotlin-stdlib"
     }
     k = 0x5
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x31

@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<T:",
@@ -23,7 +26,7 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 42
+    .line 45
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingObject;-><init>()V
 
     return-void
@@ -34,7 +37,7 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 38
+    .line 39
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingIterator;->delegate()Ljava/util/Iterator;
 
     move-result-object p0
@@ -55,7 +58,7 @@
 .method public hasNext()Z
     .locals 0
 
-    .line 49
+    .line 52
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingIterator;->delegate()Ljava/util/Iterator;
 
     move-result-object p0
@@ -69,13 +72,16 @@
 
 .method public next()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TT;"
         }
     .end annotation
 
-    .line 55
+    .line 59
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingIterator;->delegate()Ljava/util/Iterator;
 
     move-result-object p0
@@ -90,7 +96,7 @@
 .method public remove()V
     .locals 0
 
-    .line 60
+    .line 64
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingIterator;->delegate()Ljava/util/Iterator;
 
     move-result-object p0

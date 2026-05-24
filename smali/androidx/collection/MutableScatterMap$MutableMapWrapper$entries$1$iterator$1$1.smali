@@ -34,7 +34,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nScatterMap.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ScatterMap.kt\nandroidx/collection/MutableScatterMap$MutableMapWrapper$entries$1$iterator$1$1\n+ 2 ScatterMap.kt\nandroidx/collection/ScatterMap\n+ 3 ScatterMap.kt\nandroidx/collection/ScatterMapKt\n*L\n1#1,1834:1\n363#2,6:1835\n373#2,3:1842\n376#2,9:1846\n1810#3:1841\n1672#3:1845\n*S KotlinDebug\n*F\n+ 1 ScatterMap.kt\nandroidx/collection/MutableScatterMap$MutableMapWrapper$entries$1$iterator$1$1\n*L\n1310#1:1835,6\n1310#1:1842,3\n1310#1:1846,9\n1310#1:1841\n1310#1:1845\n*E\n"
+    value = "SMAP\nScatterMap.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ScatterMap.kt\nandroidx/collection/MutableScatterMap$MutableMapWrapper$entries$1$iterator$1$1\n+ 2 ScatterMap.kt\nandroidx/collection/ScatterMap\n+ 3 ScatterMap.kt\nandroidx/collection/ScatterMapKt\n*L\n1#1,1850:1\n363#2,6:1851\n373#2,3:1858\n376#2,9:1862\n1826#3:1857\n1688#3:1861\n*S KotlinDebug\n*F\n+ 1 ScatterMap.kt\nandroidx/collection/MutableScatterMap$MutableMapWrapper$entries$1$iterator$1$1\n*L\n1326#1:1851,6\n1326#1:1858,3\n1326#1:1862,9\n1326#1:1857\n1326#1:1861\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -71,7 +71,7 @@
         0x0
     }
     l = {
-        0x520
+        0x530
     }
     m = "invokeSuspend"
     n = {
@@ -249,7 +249,7 @@
 
     move-result-object v1
 
-    .line 1309
+    .line 1325
     iget v2, v0, Landroidx/collection/MutableScatterMap$MutableMapWrapper$entries$1$iterator$1$1;->label:I
 
     const/16 v4, 0x8
@@ -308,7 +308,7 @@
 
     check-cast v2, Lkotlin/sequences/SequenceScope;
 
-    .line 1310
+    .line 1326
     iget-object v6, v0, Landroidx/collection/MutableScatterMap$MutableMapWrapper$entries$1$iterator$1$1;->this$0:Landroidx/collection/MutableScatterMap;
 
     move-object v7, v6
@@ -317,10 +317,10 @@
 
     iget-object v8, v0, Landroidx/collection/MutableScatterMap$MutableMapWrapper$entries$1$iterator$1$1;->this$1:Landroidx/collection/MutableScatterMap$MutableMapWrapper$entries$1$iterator$1;
 
-    .line 1835
+    .line 1851
     iget-object v7, v7, Landroidx/collection/ScatterMap;->metadata:[J
 
-    .line 1836
+    .line 1852
     array-length v9, v7
 
     add-int/lit8 v9, v9, -0x2
@@ -329,7 +329,7 @@
 
     const/4 v10, 0x0
 
-    .line 1839
+    .line 1855
     :goto_0
     aget-wide v11, v7, v10
 
@@ -396,27 +396,27 @@
 
     add-int/2addr v15, v2
 
-    .line 1311
+    .line 1327
     invoke-virtual {v13, v15}, Landroidx/collection/MutableScatterMap$MutableMapWrapper$entries$1$iterator$1;->setCurrent(I)V
 
-    .line 1313
+    .line 1329
     new-instance v15, Landroidx/collection/MutableMapEntry;
 
-    .line 1314
+    .line 1330
     iget-object v3, v12, Landroidx/collection/MutableScatterMap;->keys:[Ljava/lang/Object;
 
-    .line 1315
+    .line 1331
     iget-object v4, v12, Landroidx/collection/MutableScatterMap;->values:[Ljava/lang/Object;
 
-    .line 1316
+    .line 1332
     invoke-virtual {v13}, Landroidx/collection/MutableScatterMap$MutableMapWrapper$entries$1$iterator$1;->getCurrent()I
 
     move-result v5
 
-    .line 1313
+    .line 1329
     invoke-direct {v15, v3, v4, v5}, Landroidx/collection/MutableMapEntry;-><init>([Ljava/lang/Object;[Ljava/lang/Object;I)V
 
-    .line 1312
+    .line 1328
     iput-object v14, v0, Landroidx/collection/MutableScatterMap$MutableMapWrapper$entries$1$iterator$1$1;->L$0:Ljava/lang/Object;
 
     iput-object v13, v0, Landroidx/collection/MutableScatterMap$MutableMapWrapper$entries$1$iterator$1$1;->L$1:Ljava/lang/Object;
@@ -498,7 +498,7 @@
 
     goto :goto_0
 
-    .line 1320
+    .line 1336
     :cond_6
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

@@ -34,7 +34,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 373
+    .line 423
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,41 +42,56 @@
 
 .method static expandedCapacity(II)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "oldCapacity",
+            "minCapacity"
+        }
+    .end annotation
 
-    if-ltz p1, :cond_2
+    if-ltz p1, :cond_3
 
+    if-gt p1, p0, :cond_0
+
+    return p0
+
+    :cond_0
     shr-int/lit8 v0, p0, 0x1
 
     add-int/2addr p0, v0
 
     add-int/lit8 p0, p0, 0x1
 
-    if-ge p0, p1, :cond_0
+    if-ge p0, p1, :cond_1
 
     add-int/lit8 p1, p1, -0x1
 
-    .line 364
+    .line 414
     invoke-static {p1}, Ljava/lang/Integer;->highestOneBit(I)I
 
     move-result p0
 
     shl-int/lit8 p0, p0, 0x1
 
-    :cond_0
-    if-gez p0, :cond_1
+    :cond_1
+    if-gez p0, :cond_2
 
     const p0, 0x7fffffff
 
-    :cond_1
+    :cond_2
     return p0
 
-    .line 359
-    :cond_2
-    new-instance p0, Ljava/lang/AssertionError;
+    .line 407
+    :cond_3
+    new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    const-string p1, "cannot store more than MAX_VALUE elements"
+    const-string p1, "cannot store more than Integer.MAX_VALUE elements"
 
-    invoke-direct {p0, p1}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p0
 .end method
@@ -84,6 +99,15 @@
 
 # virtual methods
 .method public abstract add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableCollection$Builder;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "element"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)",
@@ -95,6 +119,15 @@
 
 .method public varargs add([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableCollection$Builder;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([TE;)",
@@ -103,7 +136,7 @@
         }
     .end annotation
 
-    .line 399
+    .line 449
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -113,7 +146,7 @@
 
     aget-object v2, p1, v1
 
-    .line 400
+    .line 450
     invoke-virtual {p0, v2}, Lcom/google/common/collect/ImmutableCollection$Builder;->add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableCollection$Builder;
 
     add-int/lit8 v1, v1, 0x1
@@ -126,6 +159,15 @@
 
 .method public addAll(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableCollection$Builder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -136,7 +178,7 @@
         }
     .end annotation
 
-    .line 417
+    .line 467
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -152,7 +194,7 @@
 
     move-result-object v0
 
-    .line 418
+    .line 468
     invoke-virtual {p0, v0}, Lcom/google/common/collect/ImmutableCollection$Builder;->add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableCollection$Builder;
 
     goto :goto_0
@@ -163,6 +205,15 @@
 
 .method public addAll(Ljava/util/Iterator;)Lcom/google/common/collect/ImmutableCollection$Builder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -173,7 +224,7 @@
         }
     .end annotation
 
-    .line 435
+    .line 485
     :goto_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -181,7 +232,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 436
+    .line 486
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0

@@ -133,13 +133,13 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f080200
+    const v3, 0x7f08025c
 
-    const v4, 0x7f0801af
+    const v4, 0x7f08020b
 
-    const v5, 0x7f110260
+    const v5, 0x7f1102a9
 
-    const v6, 0x7f11025c
+    const v6, 0x7f1102a5
 
     move-object v0, v9
 
@@ -158,13 +158,13 @@
 
     const/4 v12, 0x1
 
-    const v13, 0x7f080203
+    const v13, 0x7f08025f
 
-    const v14, 0x7f0801b2
+    const v14, 0x7f08020e
 
-    const v15, 0x7f110261
+    const v15, 0x7f1102aa
 
-    const v16, 0x7f11025d
+    const v16, 0x7f1102a6
 
     move-object v10, v0
 
@@ -183,13 +183,13 @@
 
     const/4 v3, 0x2
 
-    const v4, 0x7f080206
+    const v4, 0x7f080262
 
-    const v5, 0x7f0801b5
+    const v5, 0x7f080211
 
-    const v6, 0x7f110262
+    const v6, 0x7f1102ab
 
-    const v7, 0x7f11025e
+    const v7, 0x7f1102a7
 
     move-object v1, v0
 
@@ -206,13 +206,13 @@
 
     const/4 v12, 0x3
 
-    const v13, 0x7f0801fd
+    const v13, 0x7f080259
 
-    const v14, 0x7f0801ac
+    const v14, 0x7f080208
 
-    const v15, 0x7f11025f
+    const v15, 0x7f1102a8
 
-    const v16, 0x7f11025b
+    const v16, 0x7f1102a4
 
     move-object v10, v0
 
@@ -286,24 +286,14 @@
     return p0
 .end method
 
-.method public static getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingRecordingMode;)Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;
-    .locals 6
+.method public static getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;)Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;
+    .locals 1
     .annotation runtime Lkotlin/jvm/JvmStatic;
     .end annotation
 
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;->Companion:Ljp/co/sony/mc/camera/configuration/parameters/VideoFps$Companion;
 
-    move-object v1, p0
-
-    move-object v2, p1
-
-    move-object v3, p2
-
-    move-object v4, p3
-
-    move-object v5, p4
-
-    invoke-virtual/range {v0 .. v5}, Ljp/co/sony/mc/camera/configuration/parameters/VideoFps$Companion;->getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingRecordingMode;)Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;
+    invoke-virtual {v0, p0, p1, p2, p3}, Ljp/co/sony/mc/camera/configuration/parameters/VideoFps$Companion;->getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;)Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;
 
     move-result-object p0
 
@@ -326,24 +316,14 @@
     return-object v0
 .end method
 
-.method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingRecordingMode;)[Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;
-    .locals 6
+.method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;)[Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;
+    .locals 1
     .annotation runtime Lkotlin/jvm/JvmStatic;
     .end annotation
 
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;->Companion:Ljp/co/sony/mc/camera/configuration/parameters/VideoFps$Companion;
 
-    move-object v1, p0
-
-    move-object v2, p1
-
-    move-object v3, p2
-
-    move-object v4, p3
-
-    move-object v5, p4
-
-    invoke-virtual/range {v0 .. v5}, Ljp/co/sony/mc/camera/configuration/parameters/VideoFps$Companion;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingRecordingMode;)[Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;
+    invoke-virtual {v0, p0, p1, p2, p3}, Ljp/co/sony/mc/camera/configuration/parameters/VideoFps$Companion;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;)[Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;
 
     move-result-object p0
 
@@ -373,7 +353,7 @@
 
     move-result-object p0
 
-    .line 247
+    .line 219
     check-cast p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;
 
     return-object p0
@@ -388,7 +368,7 @@
 
     move-result-object v0
 
-    .line 247
+    .line 219
     check-cast v0, [Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;
 
     return-object v0
@@ -399,7 +379,7 @@
 .method public getBasicIconId()I
     .locals 0
 
-    .line 93
+    .line 86
     iget p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;->basicIconId:I
 
     return p0
@@ -408,7 +388,7 @@
 .method public final getFpsIntValue()I
     .locals 0
 
-    .line 136
+    .line 119
     iget p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;->fpsIntValue:I
 
     return p0
@@ -417,7 +397,7 @@
 .method public final getFpsValue()F
     .locals 2
 
-    .line 145
+    .line 126
     sget-object v0, Ljp/co/sony/mc/camera/util/FpsUtil;->INSTANCE:Ljp/co/sony/mc/camera/util/FpsUtil;
 
     iget v1, p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;->fpsIntValue:I
@@ -434,7 +414,7 @@
 .method public getIconId()I
     .locals 0
 
-    .line 84
+    .line 79
     iget p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;->fnIconId:I
 
     return p0
@@ -443,7 +423,7 @@
 .method public getName()Ljava/lang/String;
     .locals 1
 
-    .line 75
+    .line 72
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p0
@@ -469,7 +449,7 @@
         }
     .end annotation
 
-    .line 66
+    .line 65
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_FPS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     const-string v0, "VIDEO_FPS"
@@ -484,7 +464,7 @@
 .method public getShortTextId()I
     .locals 0
 
-    .line 111
+    .line 100
     iget p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;->shortTextId:I
 
     return p0
@@ -493,7 +473,7 @@
 .method public getTextId()I
     .locals 0
 
-    .line 102
+    .line 93
     iget p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;->textId:I
 
     return p0
@@ -502,7 +482,7 @@
 .method public getValue()Ljava/lang/String;
     .locals 0
 
-    .line 120
+    .line 107
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;->toString()Ljava/lang/String;
 
     move-result-object p0

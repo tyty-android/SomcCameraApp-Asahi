@@ -28,6 +28,19 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$SingleWaitRelease;Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;Landroid/view/MotionEvent;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$1",
+            "val$this$0",
+            "val$motionEvent"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"

@@ -16,6 +16,14 @@
 
 # virtual methods
 .method public abstract setPoseRotationListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$PoseRotationResultListener;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 .end method
 
 .method public abstract startMonitorPoseRotation()V

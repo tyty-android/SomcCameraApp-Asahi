@@ -49,7 +49,7 @@
 .method public constructor <init>(F)V
     .locals 0
 
-    .line 355
+    .line 369
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;->ab:F
@@ -62,7 +62,7 @@
 .method public final getAb()F
     .locals 0
 
-    .line 355
+    .line 369
     iget p0, p0, Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;->ab:F
 
     return p0
@@ -71,7 +71,7 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 358
+    .line 372
     iget p0, p0, Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;->ab:F
 
     const/4 v0, 0x0
@@ -95,12 +95,12 @@
 
     if-nez v0, :cond_1
 
-    .line 359
+    .line 373
     const-string p0, "ZERO"
 
     goto :goto_0
 
-    .line 360
+    .line 374
     :cond_1
     invoke-static {p0}, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->getAbDisplayText(F)Ljava/lang/String;
 

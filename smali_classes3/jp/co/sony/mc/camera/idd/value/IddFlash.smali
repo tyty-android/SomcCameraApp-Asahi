@@ -62,7 +62,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 201
+    .line 200
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddFlash;->value:Ljp/co/sony/mc/camera/configuration/parameters/Flash;
@@ -75,7 +75,7 @@
 .method public final getValue()Ljp/co/sony/mc/camera/configuration/parameters/Flash;
     .locals 0
 
-    .line 201
+    .line 200
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddFlash;->value:Ljp/co/sony/mc/camera/configuration/parameters/Flash;
 
     return-object p0
@@ -84,7 +84,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 202
+    .line 201
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddFlash;->value:Ljp/co/sony/mc/camera/configuration/parameters/Flash;
 
     sget-object v0, Ljp/co/sony/mc/camera/idd/value/IddFlash$WhenMappings;->$EnumSwitchMapping$0:[I
@@ -103,25 +103,25 @@
 
     throw p0
 
-    .line 206
+    .line 205
     :pswitch_0
     const-string p0, "FLASHLIGHT"
 
     goto :goto_0
 
-    .line 205
+    .line 204
     :pswitch_1
     const-string p0, "OFF"
 
     goto :goto_0
 
-    .line 204
+    .line 203
     :pswitch_2
     const-string p0, "FILL_FLASH"
 
     goto :goto_0
 
-    .line 203
+    .line 202
     :pswitch_3
     const-string p0, "AUTO"
 

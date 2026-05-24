@@ -167,7 +167,7 @@
 
     :catch_8
     :try_start_9
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FOURK_HIGH_SPEED_SD_RECOMMENDATION_ON_VIDEOSIZE_CHANGE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FOUR_K_HIGH_SPEED_SD_RECOMMENDATION_ON_VIDEO_SIZE_CHANGE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -181,7 +181,7 @@
 
     :catch_9
     :try_start_a
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FOURK_HIGH_SPEED_SD_RECOMMENDATION_ON_DESTINATION_CHANGE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FOUR_K_HIGH_SPEED_SD_RECOMMENDATION_ON_DESTINATION_CHANGE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -251,7 +251,7 @@
 
     :catch_e
     :try_start_f
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_FULL_PROPOSE_CHANGE_TO_SD:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_SD_UNAVAILABLE_FOR_CORRUPT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -265,7 +265,7 @@
 
     :catch_f
     :try_start_10
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_INTERNAL_UNAVAILABLE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_FULL_PROPOSE_CHANGE_TO_SD:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -279,7 +279,7 @@
 
     :catch_10
     :try_start_11
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_UNAVAILABLE_PROPOSE_CHANGE_TO_SD:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_INTERNAL_UNAVAILABLE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -293,7 +293,7 @@
 
     :catch_11
     :try_start_12
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->UNLOCK_REQUEST_FOR_OPENING_ADD_ON_APP:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_UNAVAILABLE_PROPOSE_CHANGE_TO_SD:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -307,7 +307,7 @@
 
     :catch_12
     :try_start_13
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->UNLOCK_REQUEST_FOR_SELFIE_ACCESSORY:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->UNLOCK_REQUEST_FOR_OPENING_ADD_ON_APP:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -321,7 +321,7 @@
 
     :catch_13
     :try_start_14
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->UNLOCK_REQUEST_FOR_OPENING_OPTION_MENU:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->UNLOCK_REQUEST_FOR_SELFIE_ACCESSORY:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -335,7 +335,7 @@
 
     :catch_14
     :try_start_15
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->COULD_NOT_SAVE_PHOTO:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->UNLOCK_REQUEST_FOR_OPENING_OPTION_MENU:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -349,7 +349,7 @@
 
     :catch_15
     :try_start_16
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->COULD_NOT_START_RECORDING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->COULD_NOT_SAVE_PHOTO:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -363,7 +363,7 @@
 
     :catch_16
     :try_start_17
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_PHOTO_RESOLUTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->COULD_NOT_START_RECORDING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -377,7 +377,7 @@
 
     :catch_17
     :try_start_18
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_ON_CURRENT_VIDEO_RESOLUTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_PHOTO_RESOLUTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -391,7 +391,7 @@
 
     :catch_18
     :try_start_19
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_ON_CURRENT_VIDEO_FRAME_RATE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_ON_CURRENT_VIDEO_RESOLUTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -405,7 +405,7 @@
 
     :catch_19
     :try_start_1a
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_ON_CURRENT_VIDEO_RESOLUTION_AND_FRAME_RATE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_ON_CURRENT_VIDEO_FRAME_RATE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -419,7 +419,7 @@
 
     :catch_1a
     :try_start_1b
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->LOW_BATTERY_CRITICAL_ON_PHOTO:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_ON_CURRENT_VIDEO_RESOLUTION_AND_FRAME_RATE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -433,7 +433,7 @@
 
     :catch_1b
     :try_start_1c
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->LOW_BATTERY_WARNING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->LOW_BATTERY_CRITICAL_ON_PHOTO:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -447,7 +447,7 @@
 
     :catch_1c
     :try_start_1d
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->HIGH_SPEED_SD_RECOMMENDATION_ON_SETTING_CHANGE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->LOW_BATTERY_WARNING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -461,7 +461,7 @@
 
     :catch_1d
     :try_start_1e
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_SD_UNAVAILABLE_FOR_CORRUPT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->HIGH_SPEED_SD_RECOMMENDATION_ON_SETTING_CHANGE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -503,7 +503,7 @@
 
     :catch_20
     :try_start_21
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->VIDEO_HDR_RESTRICTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESET_CONFIRMATION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -517,7 +517,7 @@
 
     :catch_21
     :try_start_22
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESET_CONFIRMATION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FLASH_UNABLE_FOR_LONG_EXPOSURE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -531,7 +531,7 @@
 
     :catch_22
     :try_start_23
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FLASH_UNABLE_FOR_LONG_EXPOSURE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FLASH_UNABLE_FOR_CONTINUOUS_SHOOTING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -545,7 +545,7 @@
 
     :catch_23
     :try_start_24
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FLASH_UNABLE_FOR_CONTINUOUS_SHOOTING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->HDR_UNABLE_FOR_CONTINUOUS_SHOOTING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -559,7 +559,7 @@
 
     :catch_24
     :try_start_25
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->HDR_UNABLE_FOR_CONTINUOUS_SHOOTING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_PHOTO_FORMAT_PHOTO_RESOLUTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -573,7 +573,7 @@
 
     :catch_25
     :try_start_26
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_PHOTOFORMAT_PHOTO_RESOLUTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->PHOTO_FORMAT_UNABLE_FOR_CONTINUOUS_SHOOTING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -587,7 +587,7 @@
 
     :catch_26
     :try_start_27
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->PHOTOFORMAT_UNABLE_FOR_CONTINUOUS_SHOOTING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CONTINUOUS_SHOOTING_UNABLE_FOR_CURRENT_PHOTO_FORMAT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -601,7 +601,7 @@
 
     :catch_27
     :try_start_28
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CONTINUOUS_SHOOTING_UNNABLE_FOR_CURRENT_PHOTOFORMAT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->PHOTO_FORMAT_UNABLE_FOR_CURRENT_ASPECT_RATIO:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -615,7 +615,7 @@
 
     :catch_28
     :try_start_29
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->PHOTOFORMAT_UNABLE_FOR_CURRENT_ASPECT_RATIO:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->PERSONAL_DATA:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -629,7 +629,7 @@
 
     :catch_29
     :try_start_2a
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->STREAMING_PERMISSIONS:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -643,7 +643,7 @@
 
     :catch_2a
     :try_start_2b
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->PERSONAL_DATA:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->COOLING_MODE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -657,7 +657,7 @@
 
     :catch_2b
     :try_start_2c
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->STREAMING_PRIVACY_POLICY_CHECK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->LOW_BATTERY_CRITICAL_ON_RECORDING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -671,7 +671,7 @@
 
     :catch_2c
     :try_start_2d
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MAX_FILE_SIZE_REACHED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -685,7 +685,7 @@
 
     :catch_2d
     :try_start_2e
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->COOLING_MODE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MAX_DURATION_REACHED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -699,7 +699,7 @@
 
     :catch_2e
     :try_start_2f
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->LOW_BATTERY_CRITICAL_ON_RECORDING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CONTINUOUS_SHOOTING_UNABLE_FOR_CURRENT_SUPER_RESOLUTION_ZOOM:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -713,7 +713,7 @@
 
     :catch_2f
     :try_start_30
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MAX_FILESIZE_REACHED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->HDR_UNABLE_FOR_FILE_FORMAT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -727,7 +727,7 @@
 
     :catch_30
     :try_start_31
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MAX_DURATION_REACHED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FILE_FORMAT_UNABLE_FOR_HDR:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -741,7 +741,7 @@
 
     :catch_31
     :try_start_32
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CONTINUOUS_SHOOTING_UNNABLE_FOR_CURRENT_SUPER_RESOLUTION_ZOOM:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MIC_RESTRICTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -755,7 +755,7 @@
 
     :catch_32
     :try_start_33
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->HDR_UNABLE_FOR_FILE_FORMAT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->HDR_CONTINUOUS_SHOOTING_RESTRICTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -769,7 +769,7 @@
 
     :catch_33
     :try_start_34
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FILE_FORMAT_UNABLE_FOR_HDR:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->VIDEO_HDR_RESTRICTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -783,7 +783,7 @@
 
     :catch_34
     :try_start_35
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->LENS_CORRECTION_ONLY_ON_SUPER_WIDE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_MULTI_FRAME_HDR:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -797,7 +797,7 @@
 
     :catch_35
     :try_start_36
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MIC_RESTRICTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_BOKEH_EFFECT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -811,7 +811,7 @@
 
     :catch_36
     :try_start_37
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->HDR_CONTINUOUS_SHOOTING_RESTRICTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->S_CINE_TONE_RESTRICTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -825,7 +825,7 @@
 
     :catch_37
     :try_start_38
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_MULTI_FRAME_HDR:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RAW_FORMAT_RESTRICTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -839,7 +839,7 @@
 
     :catch_38
     :try_start_39
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_BOKEH_EFFECT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->PRODUCT_SHOWCASE_RESTRICTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -867,7 +867,7 @@
 
     :catch_3a
     :try_start_3b
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->S_CINETONE_RESTRICTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_CHECK_SD_CARD:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -881,7 +881,7 @@
 
     :catch_3b
     :try_start_3c
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RAW_FORMAT_RESTRICTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->SHUTTER_SPEED_FOCUS_GUIDE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -895,7 +895,7 @@
 
     :catch_3c
     :try_start_3d
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->PRODUCT_SHOWCASE_RESTRICTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FOCUS_AREA_OBJECT_TRACKING_RESTRICTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -909,7 +909,7 @@
 
     :catch_3d
     :try_start_3e
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_CHECK_SD_CARD:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->COMPUTATIONAL_MODE_UNABLE_FOR_CURRENT_CAPTURING_MODE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -923,7 +923,7 @@
 
     :catch_3e
     :try_start_3f
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->SHUTTER_SPEED_FOCUS_GUIDE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->COMPUTATIONAL_MODE_UNABLE_FOR_CURRENT_DRIVE_MODE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -937,7 +937,7 @@
 
     :catch_3f
     :try_start_40
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FOCUS_AREA_OBJECT_TRACKING_RESTRICTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->COMPUTATIONAL_MODE_UNABLE_FOR_CURRENT_PHOTO_FORMAT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -951,7 +951,7 @@
 
     :catch_40
     :try_start_41
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->COMPUTATIONAL_MODE_UNABLE_FOR_CURRENT_CAPTURING_MODE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->HDR_UNABLE_FOR_CURRENT_COMPUTATIONAL_MODE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -965,7 +965,7 @@
 
     :catch_41
     :try_start_42
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->COMPUTATIONAL_MODE_UNABLE_FOR_CURRENT_DRIVE_MODE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_VALUE_ON_COMPUTATIONAL_MODE_OFF:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -979,7 +979,7 @@
 
     :catch_42
     :try_start_43
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->COMPUTATIONAL_MODE_UNABLE_FOR_CURRENT_PHOTO_FORMAT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_VALUE_ON_MANUAL_FOCUS_MODE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -993,7 +993,7 @@
 
     :catch_43
     :try_start_44
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->HDR_UNABLE_FOR_CURRENT_COMPUTATIONAL_MODE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->EXTEND_FPS_UNABLE_FOR_CURRENT_CAPTURING_MODE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1007,7 +1007,7 @@
 
     :catch_44
     :try_start_45
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_VALUE_ON_COMPUTATIONAL_MODE_OFF:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_VALUE_BY_OTHER_APP:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1021,7 +1021,7 @@
 
     :catch_45
     :try_start_46
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->EXTEND_FPS_UNABLE_FOR_CURRENT_CAPTURING_MODE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_CAPTURING_MODE_IN_HIGH_TEMPERATURE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1035,7 +1035,7 @@
 
     :catch_46
     :try_start_47
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->APPLICATION_NOTIFICATION_NETWORK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->LENS_CORRECTION_ONLY_ON_SUPER_WIDE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1049,7 +1049,7 @@
 
     :catch_47
     :try_start_48
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CONNECT_WIFI_SETTING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MODE_CUSTOMIZATION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1063,7 +1063,7 @@
 
     :catch_48
     :try_start_49
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_CTA:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->GIMBAL_INTRODUCTION_DIALOG:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1077,7 +1077,7 @@
 
     :catch_49
     :try_start_4a
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_PROBLEM:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->TRIPOD_FRAMING_INTRODUCTION_RESTRICTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1091,7 +1091,7 @@
 
     :catch_4a
     :try_start_4b
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_ALREADY_PAIRED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->TRIPOD_FRAMING_ASSISTANCE_RESTRICTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1105,7 +1105,7 @@
 
     :catch_4b
     :try_start_4c
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_BT_OFF:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->APPLICATION_NOTIFICATION_NETWORK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1119,7 +1119,7 @@
 
     :catch_4c
     :try_start_4d
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_TIMEOUT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CONNECT_WIFI_SETTING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1133,7 +1133,7 @@
 
     :catch_4d
     :try_start_4e
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_TO_USE_REMOTE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_CTA:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1147,7 +1147,7 @@
 
     :catch_4e
     :try_start_4f
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_TITLE_ATTENTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_PROBLEM:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1161,7 +1161,7 @@
 
     :catch_4f
     :try_start_50
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_ENABLE_REMOTE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_ALREADY_PAIRED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1175,7 +1175,7 @@
 
     :catch_50
     :try_start_51
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_TURN_ON_ENDURANCE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_BT_OFF:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1189,7 +1189,7 @@
 
     :catch_51
     :try_start_52
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_CONNECT_REMOTE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_TIMEOUT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1203,7 +1203,7 @@
 
     :catch_52
     :try_start_53
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_CONNECT_REMOTE_TO_CONTINUE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_TO_USE_REMOTE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1217,7 +1217,7 @@
 
     :catch_53
     :try_start_54
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->TO_CONNECT_NEARLY_DEVICES:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_TITLE_ATTENTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1231,7 +1231,7 @@
 
     :catch_54
     :try_start_55
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->STREAMING_NOTES_ON_USE_CHECK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_ENABLE_REMOTE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1245,7 +1245,7 @@
 
     :catch_55
     :try_start_56
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->STREAMING_PRIVACY_POLICY:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_TURN_ON_ENDURANCE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1259,7 +1259,7 @@
 
     :catch_56
     :try_start_57
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->STREAMING_NOTES_ON_USE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_CONNECT_REMOTE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1273,7 +1273,7 @@
 
     :catch_57
     :try_start_58
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->PREPARE_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_CONNECT_REMOTE_TO_CONTINUE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1287,7 +1287,7 @@
 
     :catch_58
     :try_start_59
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CONFIRM_STOP_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->TO_CONNECT_NEARLY_DEVICES:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1301,7 +1301,7 @@
 
     :catch_59
     :try_start_5a
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_SCREEN_LOCKED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DLG_INVALID:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1315,7 +1315,7 @@
 
     :catch_5a
     :try_start_5b
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_STREAM_URL_EMPTY:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ACCESSIBILITY_COMPLIANCE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1329,7 +1329,7 @@
 
     :catch_5b
     :try_start_5c
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_STREAM_KEY_EMPTY:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_DELETE_FILE_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1343,7 +1343,7 @@
 
     :catch_5c
     :try_start_5d
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_ACCOUNT_NOT_SETUP:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_CAMERA_DEVICE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1357,7 +1357,7 @@
 
     :catch_5d
     :try_start_5e
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_LIVE_EVENT_NOT_FOUND:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_CAMERA_DISABLED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1371,7 +1371,7 @@
 
     :catch_5e
     :try_start_5f
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_NETWORK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_CAMERA_IN_USE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1385,7 +1385,7 @@
 
     :catch_5f
     :try_start_60
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_WIFI:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_CAMERA_SERVICE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1399,7 +1399,7 @@
 
     :catch_60
     :try_start_61
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_SERVER_CONNECTION_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_MAX_CAMERAS_IN_USE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1413,7 +1413,7 @@
 
     :catch_61
     :try_start_62
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_NO_NETWORK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_RESUME_TIMEOUT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
 
@@ -1426,664 +1426,6 @@
     .catch Ljava/lang/NoSuchFieldError; {:try_start_62 .. :try_end_62} :catch_62
 
     :catch_62
-    :try_start_63
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->THERMAL_CRITICAL_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x64
-
-    aput v2, v0, v1
-    :try_end_63
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_63 .. :try_end_63} :catch_63
-
-    :catch_63
-    :try_start_64
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_ACCOUNT_ACTION_SELECT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x65
-
-    aput v2, v0, v1
-    :try_end_64
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_64 .. :try_end_64} :catch_64
-
-    :catch_64
-    :try_start_65
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->GET_YOUTUBE_LIVE_EVENT_PROCESSING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x66
-
-    aput v2, v0, v1
-    :try_end_65
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_65 .. :try_end_65} :catch_65
-
-    :catch_65
-    :try_start_66
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->SELECT_YOUTUBE_EVENT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x67
-
-    aput v2, v0, v1
-    :try_end_66
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_66 .. :try_end_66} :catch_66
-
-    :catch_66
-    :try_start_67
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x68
-
-    aput v2, v0, v1
-    :try_end_67
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_67 .. :try_end_67} :catch_67
-
-    :catch_67
-    :try_start_68
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->SELECTED_DUE_TO_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x69
-
-    aput v2, v0, v1
-    :try_end_68
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_68 .. :try_end_68} :catch_68
-
-    :catch_68
-    :try_start_69
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_EMPTY_TITLE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x6a
-
-    aput v2, v0, v1
-    :try_end_69
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_69 .. :try_end_69} :catch_69
-
-    :catch_69
-    :try_start_6a
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_AUDIENCE_UNSELECTED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x6b
-
-    aput v2, v0, v1
-    :try_end_6a
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6a .. :try_end_6a} :catch_6a
-
-    :catch_6a
-    :try_start_6b
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_EXECUTING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x6c
-
-    aput v2, v0, v1
-    :try_end_6b
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6b .. :try_end_6b} :catch_6b
-
-    :catch_6b
-    :try_start_6c
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_RESULT_NG:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x6d
-
-    aput v2, v0, v1
-    :try_end_6c
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6c .. :try_end_6c} :catch_6c
-
-    :catch_6c
-    :try_start_6d
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_RESULT_NETWORK_NG:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x6e
-
-    aput v2, v0, v1
-    :try_end_6d
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6d .. :try_end_6d} :catch_6d
-
-    :catch_6d
-    :try_start_6e
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_LIVE_EVENT_RETRIEVE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x6f
-
-    aput v2, v0, v1
-    :try_end_6e
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6e .. :try_end_6e} :catch_6e
-
-    :catch_6e
-    :try_start_6f
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_ACCOUNT_LOGIN:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x70
-
-    aput v2, v0, v1
-    :try_end_6f
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6f .. :try_end_6f} :catch_6f
-
-    :catch_6f
-    :try_start_70
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_LIVE_EVENT_NOT_SUPPORTED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x71
-
-    aput v2, v0, v1
-    :try_end_70
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_70 .. :try_end_70} :catch_70
-
-    :catch_70
-    :try_start_71
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_LIVE_EVENT_ALREADY_COMPLETE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x72
-
-    aput v2, v0, v1
-    :try_end_71
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_71 .. :try_end_71} :catch_71
-
-    :catch_71
-    :try_start_72
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->LOW_BATTERY_CRITICAL_ON_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x73
-
-    aput v2, v0, v1
-    :try_end_72
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_72 .. :try_end_72} :catch_72
-
-    :catch_72
-    :try_start_73
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FACEBOOK_LIVE_SELECT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x74
-
-    aput v2, v0, v1
-    :try_end_73
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_73 .. :try_end_73} :catch_73
-
-    :catch_73
-    :try_start_74
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_FACEBOOK_ACCOUNT_NOT_SETUP:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x75
-
-    aput v2, v0, v1
-    :try_end_74
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_74 .. :try_end_74} :catch_74
-
-    :catch_74
-    :try_start_75
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_FACEBOOK_LIVE_EVENT_ALREADY_COMPLETE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x76
-
-    aput v2, v0, v1
-    :try_end_75
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_75 .. :try_end_75} :catch_75
-
-    :catch_75
-    :try_start_76
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CREATE_FACEBOOK_LIVE_VIDEO_PROCESSING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x77
-
-    aput v2, v0, v1
-    :try_end_76
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_76 .. :try_end_76} :catch_76
-
-    :catch_76
-    :try_start_77
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_AUTHORIZATION_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x78
-
-    aput v2, v0, v1
-    :try_end_77
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_77 .. :try_end_77} :catch_77
-
-    :catch_77
-    :try_start_78
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->GOOGLE_CHROME_DISABLED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x79
-
-    aput v2, v0, v1
-    :try_end_78
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_78 .. :try_end_78} :catch_78
-
-    :catch_78
-    :try_start_79
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_RESULT_OK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x7a
-
-    aput v2, v0, v1
-    :try_end_79
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_79 .. :try_end_79} :catch_79
-
-    :catch_79
-    :try_start_7a
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FACEBOOK_LOGIN:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x7b
-
-    aput v2, v0, v1
-    :try_end_7a
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_7a .. :try_end_7a} :catch_7a
-
-    :catch_7a
-    :try_start_7b
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_LIVE_URL:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x7c
-
-    aput v2, v0, v1
-    :try_end_7b
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_7b .. :try_end_7b} :catch_7b
-
-    :catch_7b
-    :try_start_7c
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_LIVE_URL_DISABLED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x7d
-
-    aput v2, v0, v1
-    :try_end_7c
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_7c .. :try_end_7c} :catch_7c
-
-    :catch_7c
-    :try_start_7d
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_LIVE_CHAT_BAN_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x7e
-
-    aput v2, v0, v1
-    :try_end_7d
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_7d .. :try_end_7d} :catch_7d
-
-    :catch_7d
-    :try_start_7e
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_LIVE_CHAT_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x7f
-
-    aput v2, v0, v1
-    :try_end_7e
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_7e .. :try_end_7e} :catch_7e
-
-    :catch_7e
-    :try_start_7f
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CHECK_YOUTUBE_LIVE_EVENT_STATUS:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x80
-
-    aput v2, v0, v1
-    :try_end_7f
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_7f .. :try_end_7f} :catch_7f
-
-    :catch_7f
-    :try_start_80
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DLG_INVALID:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x81
-
-    aput v2, v0, v1
-    :try_end_80
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_80 .. :try_end_80} :catch_80
-
-    :catch_80
-    :try_start_81
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ACCESSIBILITY_COMPLIANCE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x82
-
-    aput v2, v0, v1
-    :try_end_81
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_81 .. :try_end_81} :catch_81
-
-    :catch_81
-    :try_start_82
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_DELETE_FILE_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x83
-
-    aput v2, v0, v1
-    :try_end_82
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_82 .. :try_end_82} :catch_82
-
-    :catch_82
-    :try_start_83
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_CAMERA_DEVICE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x84
-
-    aput v2, v0, v1
-    :try_end_83
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_83 .. :try_end_83} :catch_83
-
-    :catch_83
-    :try_start_84
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_CAMERA_DISABLED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x85
-
-    aput v2, v0, v1
-    :try_end_84
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_84 .. :try_end_84} :catch_84
-
-    :catch_84
-    :try_start_85
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_CAMERA_IN_USE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x86
-
-    aput v2, v0, v1
-    :try_end_85
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_85 .. :try_end_85} :catch_85
-
-    :catch_85
-    :try_start_86
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_CAMERA_SERVICE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x87
-
-    aput v2, v0, v1
-    :try_end_86
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_86 .. :try_end_86} :catch_86
-
-    :catch_86
-    :try_start_87
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_MAX_CAMERAS_IN_USE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x88
-
-    aput v2, v0, v1
-    :try_end_87
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_87 .. :try_end_87} :catch_87
-
-    :catch_87
-    :try_start_88
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_RESUME_TIMEOUT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x89
-
-    aput v2, v0, v1
-    :try_end_88
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_88 .. :try_end_88} :catch_88
-
-    :catch_88
-    :try_start_89
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RECOMMENDED_SETTINGS:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x8a
-
-    aput v2, v0, v1
-    :try_end_89
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_89 .. :try_end_89} :catch_89
-
-    :catch_89
-    :try_start_8a
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RECOMMENDED_SETTINGS_NOTHING_TO_CHANGE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x8b
-
-    aput v2, v0, v1
-    :try_end_8a
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_8a .. :try_end_8a} :catch_8a
-
-    :catch_8a
-    :try_start_8b
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_FACEBOOK_LIVE_ACCESS_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x8c
-
-    aput v2, v0, v1
-    :try_end_8b
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_8b .. :try_end_8b} :catch_8b
-
-    :catch_8b
-    :try_start_8c
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FACEBOOK_PRIVACY_SETTING_CONFLICT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x8d
-
-    aput v2, v0, v1
-    :try_end_8c
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_8c .. :try_end_8c} :catch_8c
-
-    :catch_8c
-    :try_start_8d
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_LIVE_CHAT_BAN:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x8e
-
-    aput v2, v0, v1
-    :try_end_8d
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_8d .. :try_end_8d} :catch_8d
-
-    :catch_8d
-    :try_start_8e
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_VALUE_ON_FRONT_CAMERA:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x8f
-
-    aput v2, v0, v1
-    :try_end_8e
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_8e .. :try_end_8e} :catch_8e
-
-    :catch_8e
-    :try_start_8f
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_VALUE_ON_CURRENT_LENS:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x90
-
-    aput v2, v0, v1
-    :try_end_8f
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_8f .. :try_end_8f} :catch_8f
-
-    :catch_8f
-    :try_start_90
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_STREAMING_SETTING_NOT_SETUP:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x91
-
-    aput v2, v0, v1
-    :try_end_90
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_90 .. :try_end_90} :catch_90
-
-    :catch_90
-    :try_start_91
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_VALUE_ON_MANUAL_FOCUS_MODE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x92
-
-    aput v2, v0, v1
-    :try_end_91
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_91 .. :try_end_91} :catch_91
-
-    :catch_91
     sput-object v0, Ljp/co/sony/mc/camera/idd/event/IddCloseDialogEvent$WhenMappings;->$EnumSwitchMapping$0:[I
 
     return-void

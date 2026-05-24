@@ -15,10 +15,10 @@
 
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/common/collect/StandardTable$Column$Values;,
+        Lcom/google/common/collect/StandardTable$Column$EntrySet;,
         Lcom/google/common/collect/StandardTable$Column$KeySet;,
-        Lcom/google/common/collect/StandardTable$Column$EntrySetIterator;,
-        Lcom/google/common/collect/StandardTable$Column$EntrySet;
+        Lcom/google/common/collect/StandardTable$Column$Values;,
+        Lcom/google/common/collect/StandardTable$Column$EntrySetIterator;
     }
 .end annotation
 
@@ -45,18 +45,29 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/StandardTable;Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "columnKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TC;)V"
         }
     .end annotation
 
-    .line 403
+    .line 444
     iput-object p1, p0, Lcom/google/common/collect/StandardTable$Column;->this$0:Lcom/google/common/collect/StandardTable;
 
     invoke-direct {p0}, Lcom/google/common/collect/Maps$ViewCachingAbstractMap;-><init>()V
 
-    .line 404
+    .line 445
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -70,8 +81,20 @@
 # virtual methods
 .method public containsKey(Ljava/lang/Object;)Z
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 419
+    .line 462
     iget-object v0, p0, Lcom/google/common/collect/StandardTable$Column;->this$0:Lcom/google/common/collect/StandardTable;
 
     iget-object p0, p0, Lcom/google/common/collect/StandardTable$Column;->columnKey:Ljava/lang/Object;
@@ -94,7 +117,7 @@
         }
     .end annotation
 
-    .line 449
+    .line 493
     new-instance v0, Lcom/google/common/collect/StandardTable$Column$EntrySet;
 
     const/4 v1, 0x0
@@ -114,7 +137,7 @@
         }
     .end annotation
 
-    .line 538
+    .line 598
     new-instance v0, Lcom/google/common/collect/StandardTable$Column$KeySet;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/StandardTable$Column$KeySet;-><init>(Lcom/google/common/collect/StandardTable$Column;)V
@@ -132,7 +155,7 @@
         }
     .end annotation
 
-    .line 565
+    .line 625
     new-instance v0, Lcom/google/common/collect/StandardTable$Column$Values;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/StandardTable$Column$Values;-><init>(Lcom/google/common/collect/StandardTable$Column;)V
@@ -142,6 +165,19 @@
 
 .method public get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -150,7 +186,10 @@
         }
     .end annotation
 
-    .line 414
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 457
     iget-object v0, p0, Lcom/google/common/collect/StandardTable$Column;->this$0:Lcom/google/common/collect/StandardTable;
 
     iget-object p0, p0, Lcom/google/common/collect/StandardTable$Column;->columnKey:Ljava/lang/Object;
@@ -164,13 +203,27 @@
 
 .method public put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TR;TV;)TV;"
         }
     .end annotation
 
-    .line 409
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 451
     iget-object v0, p0, Lcom/google/common/collect/StandardTable$Column;->this$0:Lcom/google/common/collect/StandardTable;
 
     iget-object p0, p0, Lcom/google/common/collect/StandardTable$Column;->columnKey:Ljava/lang/Object;
@@ -184,6 +237,19 @@
 
 .method public remove(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -192,7 +258,10 @@
         }
     .end annotation
 
-    .line 424
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 468
     iget-object v0, p0, Lcom/google/common/collect/StandardTable$Column;->this$0:Lcom/google/common/collect/StandardTable;
 
     iget-object p0, p0, Lcom/google/common/collect/StandardTable$Column;->columnKey:Ljava/lang/Object;
@@ -206,6 +275,15 @@
 
 .method removeFromColumnIf(Lcom/google/common/base/Predicate;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "predicate"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -216,7 +294,7 @@
         }
     .end annotation
 
-    .line 431
+    .line 475
     iget-object v0, p0, Lcom/google/common/collect/StandardTable$Column;->this$0:Lcom/google/common/collect/StandardTable;
 
     iget-object v0, v0, Lcom/google/common/collect/StandardTable;->backingMap:Ljava/util/Map;
@@ -231,7 +309,7 @@
 
     const/4 v1, 0x0
 
-    .line 432
+    .line 476
     :cond_0
     :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -240,21 +318,21 @@
 
     if-eqz v2, :cond_2
 
-    .line 433
+    .line 477
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 434
+    .line 478
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Ljava/util/Map;
 
-    .line 435
+    .line 479
     iget-object v4, p0, Lcom/google/common/collect/StandardTable$Column;->columnKey:Ljava/lang/Object;
 
     invoke-interface {v3, v4}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -263,7 +341,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 436
+    .line 480
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v2
@@ -278,19 +356,19 @@
 
     if-eqz v2, :cond_0
 
-    .line 437
+    .line 481
     iget-object v1, p0, Lcom/google/common/collect/StandardTable$Column;->columnKey:Ljava/lang/Object;
 
     invoke-interface {v3, v1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 439
+    .line 483
     invoke-interface {v3}, Ljava/util/Map;->isEmpty()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 440
+    .line 484
     invoke-interface {v0}, Ljava/util/Iterator;->remove()V
 
     :cond_1

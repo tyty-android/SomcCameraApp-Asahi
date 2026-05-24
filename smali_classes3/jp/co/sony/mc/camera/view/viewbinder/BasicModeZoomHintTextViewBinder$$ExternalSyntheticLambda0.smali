@@ -3,54 +3,54 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function5;
+.implements Landroid/view/View$OnLayoutChangeListener;
+
+
+# instance fields
+.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder;
 
 
 # direct methods
-.method public synthetic constructor <init>()V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public final onLayoutChange(Landroid/view/View;IIIIIIII)V
+    .locals 10
 
     .line 0
-    check-cast p1, Ljava/lang/Boolean;
+    move-object v0, p0
 
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+    iget-object v0, v0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder;
 
-    move-result p0
+    move-object v1, p1
 
-    check-cast p2, Ljava/lang/Boolean;
+    move v2, p2
 
-    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
+    move v3, p3
 
-    move-result p1
+    move v4, p4
 
-    check-cast p3, Ljava/lang/Boolean;
+    move v5, p5
 
-    invoke-virtual {p3}, Ljava/lang/Boolean;->booleanValue()Z
+    move/from16 v6, p6
 
-    move-result p2
+    move/from16 v7, p7
 
-    check-cast p4, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
+    move/from16 v8, p8
 
-    check-cast p5, Ljava/lang/Boolean;
+    move/from16 v9, p9
 
-    invoke-virtual {p5}, Ljava/lang/Boolean;->booleanValue()Z
+    invoke-static/range {v0 .. v9}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder;->$r8$lambda$meHQPfD7pP6oKNOJEpqLTQwWzwc(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder;Landroid/view/View;IIIIIIII)V
 
-    move-result p3
-
-    invoke-static {p0, p1, p2, p4, p3}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder;->$r8$lambda$wKRNGGcs00v9vgMiL-IkcNwgquo(ZZZLjp/co/sony/mc/camera/view/orientation/LayoutOrientation;Z)Ljp/co/sony/mc/camera/util/TuplesUtil$Quintuple;
-
-    move-result-object p0
-
-    return-object p0
+    return-void
 .end method

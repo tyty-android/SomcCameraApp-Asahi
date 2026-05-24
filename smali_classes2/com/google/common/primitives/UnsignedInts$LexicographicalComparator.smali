@@ -73,6 +73,17 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
@@ -87,6 +98,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/primitives/UnsignedInts$LexicographicalComparator;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 194
     const-class v0, Lcom/google/common/primitives/UnsignedInts$LexicographicalComparator;
@@ -119,6 +138,16 @@
 # virtual methods
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "left",
+            "right"
+        }
+    .end annotation
 
     .line 194
     check-cast p1, [I
@@ -134,8 +163,18 @@
 
 .method public compare([I[I)I
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "left",
+            "right"
+        }
+    .end annotation
 
-    .line 199
+    .line 201
     array-length p0, p1
 
     array-length v0, p2
@@ -149,14 +188,14 @@
     :goto_0
     if-ge v0, p0, :cond_1
 
-    .line 201
+    .line 203
     aget v1, p1, v0
 
     aget v2, p2, v0
 
     if-eq v1, v2, :cond_0
 
-    .line 202
+    .line 204
     invoke-static {v1, v2}, Lcom/google/common/primitives/UnsignedInts;->compare(II)I
 
     move-result p0
@@ -168,7 +207,7 @@
 
     goto :goto_0
 
-    .line 205
+    .line 207
     :cond_1
     array-length p0, p1
 
@@ -182,7 +221,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 210
+    .line 212
     const-string p0, "UnsignedInts.lexicographicalComparator()"
 
     return-object p0

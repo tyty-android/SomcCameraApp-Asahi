@@ -82,6 +82,7 @@ Du vil motta varsler og dialogbokser. Velg Par på alle, og trykk deretter på e
     <string name="call_notification_incoming_text">Innkommende anrop</string>
     <string name="call_notification_ongoing_text">Pågående samtale</string>
     <string name="call_notification_screening_text">Filtrerer et innkommende anrop</string>
+    <string name="camera_string_saving_process_hint_txt">Lagrer ... Vent til lagringen er ferdig.</string>
     <string name="camera_strings_accept_privacy_policy_txt">Du har tidligere godtatt personvernerklæringen, men du kan alltids endre mening.</string>
     <string name="camera_strings_accessibility_48_mega_pixel_txt">48 megapiksel</string>
     <string name="camera_strings_accessibility_adjust_bokeh_txt">Bokeh</string>
@@ -92,6 +93,27 @@ Du vil motta varsler og dialogbokser. Velg Par på alle, og trykk deretter på e
     <string name="camera_strings_accessibility_adjust_framing_size_smaller_txt">Reduser rammestørrelsen</string>
     <string name="camera_strings_accessibility_adjust_framing_size_txt">Juster rammestørrelsen</string>
     <string name="camera_strings_accessibility_adjust_shutter_speed_txt">Lukkerhastighet</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_look_menu_txt">Lukk-knapp. Lukker framtoning-menyen.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_menu_txt">Lukk tilpasset meny</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_suggests_txt">Lukk foreslåtte justeringer</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_menu_txt">For tiden brukt tilpasset framtoning. Åpner justeringsmenyen.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_txt">Tilpasset framtoning. Bruker innstillinger for framtoning, lysstyrke og farge som er registrert i det tilpassede menyen.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_tab_txt">Tilpasset fane. Bruker innstillinger for framtoning, lysstyrke og farge som er registrert i det tilpassede menyen.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_button_txt">Tilpasset knapp. Åpner en meny som lar deg foreta ytterligere justeringer når anbefalte justeringer er brukt.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_param_txt">%1$s er satt til %2$s</string>
+    <string name="camera_strings_accessibility_ai_suggestion_first_time_txt">KI-kameraassistent. Denne funksjonen foreslår innstillinger som farge i henhold til scenen.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_four_of_some_suggests_txt">Fjerde foreslåtte justering</string>
+    <string name="camera_strings_accessibility_ai_suggestion_look_menu_txt">"%1$s
+Åpner menyen for kreativt utseende"</string>
+    <string name="camera_strings_accessibility_ai_suggestion_new_suggest_txt">Nye anbefalte justeringer ble foreslått</string>
+    <string name="camera_strings_accessibility_ai_suggestion_one_of_some_suggests_txt">Første foreslåtte justering</string>
+    <string name="camera_strings_accessibility_ai_suggestion_open_suggests_txt">Utvid foreslåtte justeringer</string>
+    <string name="camera_strings_accessibility_ai_suggestion_reset_to_default_txt">Tilbakestill til innstillinger før forslag</string>
+    <string name="camera_strings_accessibility_ai_suggestion_selected_suggest_txt">Disse anbefalte justeringene blir brukt</string>
+    <string name="camera_strings_accessibility_ai_suggestion_suggest_lens_txt">Foreslått linseknapp. %1$sx anbefales.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_surface_of_some_suggests_txt">Foreslåtte justeringer. Sveip fra høyre til venstre for å vise anbefalte justeringer.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_three_of_some_suggests_txt">Tredje foreslåtte justering</string>
+    <string name="camera_strings_accessibility_ai_suggestion_two_of_some_suggests_txt">Andre foreslåtte justering</string>
     <string name="camera_strings_accessibility_arrow_left_button_txt">Venstrepil</string>
     <string name="camera_strings_accessibility_arrow_right_button_txt">Høyrepil</string>
     <string name="camera_strings_accessibility_audio_level_txt">Lydnivåmåler</string>
@@ -246,6 +268,45 @@ Du vil motta varsler og dialogbokser. Velg Par på alle, og trykk deretter på e
     <string name="camera_strings_advanced_setting_geo_tag_title_txt">Lagre sted</string>
     <string name="camera_strings_ai_face_restore_description_txt">Du kan ta bilder med ansiktsskarphet for å gjøre ansiktstrekk tydeligere</string>
     <string name="camera_strings_ai_face_restore_txt">Gjør ansikter skarpere</string>
+    <string name="camera_strings_ai_suggestion_introduce_hint_text_txt">[Tips] KI-kameraassist.</string>
+    <string name="camera_strings_aisuggestion_box_name1_txt">Egendef.</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_message_txt">Registrer gjeldende framtoning, lysstyrke og fargeinnstillinger som Tilpasset.</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_overwrite_message_txt">En framtoning er allerede registrert som Tilpasset. Vil du overskrive?</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_title_txt">Registrer som tilpasset framtoning</string>
+    <string name="camera_strings_aisuggestion_box_title_txt">Egendef.</string>
+    <string name="camera_strings_aisuggestion_custom_params_contrast_txt">Kontrast</string>
+    <string name="camera_strings_aisuggestion_custom_params_ev_txt">Lysstyrke</string>
+    <string name="camera_strings_aisuggestion_custom_params_register_txt">Registrer</string>
+    <string name="camera_strings_aisuggestion_custom_params_saturation_txt">Metning</string>
+    <string name="camera_strings_aisuggestion_custom_params_title_txt">Lysstyrke/farge</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbab_txt">Varme</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbgm_txt">Nyanse</string>
+    <string name="camera_strings_aisuggestion_customlook_register_instruction_txt">Du kan bruke registrerte tilpassede framtoninger når som helst fra fanen Tilpasset framtoning</string>
+    <string name="camera_strings_aisuggestion_description_txt">"KI-en identifiserer automatisk scenen og foreslår optimaliserte justeringer i miniforhåndsvisningen nederst til høyre.
+Hvis du trykker på denne miniforhåndsvisningen, vil følgende innstillinger automatisk justeres for å tilpasse seg scenen:
+Framtoning, eksponering, hvitbalanse, metning, kontrast, bokeh
+*Denne funksjonen er kun tilgjengelig i fotomodus.
+*Når du starter opptak av video ved å trykke og holde inne utløserknappen, vil ikke innstillingene for metning, kontrast og bokeh bli brukt."</string>
+    <string name="camera_strings_aisuggestion_guide_description1_txt">I miniforhåndsvisningen nederst til høyre (øverst til høyre når du holder telefonen horisontalt) vises anbefalte justeringer basert på scenen som er identifisert av KI. Du kan foreta alle disse justeringene umiddelbart ved å trykke på miniforhåndsvisningen.</string>
+    <string name="camera_strings_aisuggestion_guide_description2_txt">Det kan også foreslås en bestemt linseinnstilling avhengig av motivet. Avhengig av hva du foretrekker, kan du i dette tilfellet endre til den foreslåtte linseinnstillingen.</string>
+    <string name="camera_strings_aisuggestion_guide_description3_txt">"Du kan vise alternative justeringsanbefalinger ved å sveipe til venstre på miniforhåndsvisningen nederst til høyre (øverst til høyre når du holder telefonen horisontalt).
+Forslaget du velger, lagres som din ønskede justering og vil bli inkludert i forslagene neste gang du fotograferer i en lignende scene."</string>
+    <string name="camera_strings_aisuggestion_guide_description4_txt">Du kan trykke på [>]-knappen for å skjule forslag når du ikke trenger dem. Når en ny scene identifiseres, lyser [&lt;]-knappen for å vise at det er nye justeringsforslag. For å sjekke forslagene igjen, trykk på [&lt;]-knappen.</string>
+    <string name="camera_strings_aisuggestion_guide_description5_txt">Hvis du trykker på justeringsknappen etter å ha valgt foreslåtte justeringer, kan du justere innstillinger som lysstyrke og farge ytterligere. Justeringene dine lagres på enheten og legges til de foreslåtte justeringene neste gang en lignende scene oppdages.</string>
+    <string name="camera_strings_aisuggestion_guide_description6_txt">Foreslåtte justeringer og justeringer du har gjort kan registreres, slik at du kan laste dem inn når som helst for å ta bilder med de samme innstillingene. Trykk på [Registrer] for å legge til en tilpasset framtoning i listen over tilgjengelige framtoninger.</string>
+    <string name="camera_strings_aisuggestion_guide_entry_txt">Slik bruker du KI-kameraassistent</string>
+    <string name="camera_strings_aisuggestion_guide_title_txt">Slik bruker du KI-kameraassistenten</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_message_txt">Vil du tilbakestille alle innstillinger til standardverdiene, inkludert farge, lysstyrke, og dine ønskede justeringer?</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_title_txt">Tilbakestill parametere</string>
+    <string name="camera_strings_aisuggestion_params_reset_txt">Tilbakestill parametere</string>
+    <string name="camera_strings_aisuggestion_permitted_item_bokeh_txt">Bokeh</string>
+    <string name="camera_strings_aisuggestion_permitted_item_lens_txt">Linse</string>
+    <string name="camera_strings_aisuggestion_permitted_item_title_txt">Inkluder i anbefalinger</string>
+    <string name="camera_strings_aisuggestion_recommend_lens_ratio_txt">%1$s anbefalt</string>
+    <string name="camera_strings_aisuggestion_return_to_default_txt">Tilbakestill</string>
+    <string name="camera_strings_aisuggestion_simple_video_instruction_txt">Når du tar opp en video ved å trykke lenge, kan innstillingene for metning, kontrast og bokeh se annerledes ut.</string>
+    <string name="camera_strings_aisuggestion_txt">KI-kameraassistent</string>
+    <string name="camera_strings_aisuggestion_use_aissuggestion_txt">Bruk av KI-kameraassistent</string>
     <string name="camera_strings_anonymous_analytics_txt">Anonyme analysedata</string>
     <string name="camera_strings_application_name">Kamera</string>
     <string name="camera_strings_application_name_google_lens_txt">Google Lens</string>
@@ -421,6 +482,7 @@ Sikkerhet:
     <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Kan ikke koble til Wi-Fi</string>
     <string name="camera_strings_dialog_user_data_collection_txt">Hvis du godtar, henter Sony inn &lt;b>&lt;a href=#personal-data>personlige data&lt;/a>&lt;/b> for å gi deg tilpasset brukerstøtte og forbedre enheter og tjenester. Sony behandler dataene dine i henhold til &lt;b>&lt;a href=https://www.sonymobile.com/privacy/>personvernerklæringen vår&lt;/a>&lt;/b>.</string>
     <string name="camera_strings_dialog_video_hdr_hlg_supported_short_description_txt">Enkelte enheter/tjenester klarer kanskje ikke gjenskape den opprinnelige fargen og lysstyrken til HDR-innhold. Bruk enheter/tjenester som støtter HDR når du ser på HDR-innhold.</string>
+    <string name="camera_strings_digital_tripod_hint_edge_txt">Sammensetningen har endret seg. Rett kameraet mot det opprinnelige motivet.</string>
     <string name="camera_strings_digital_zoom_type_description_txt">"Velg en innstilling for digital zoom.
 
 Standard digital zoom: Zoom med digital behandling basert på bildets sensordata.
@@ -484,6 +546,7 @@ For å endre dette må du avslutte strømmingen og deretter gå til Facebook-app
     <string name="camera_strings_fast_capturing_screen_locked_settings_txt">Lås opp skjermen for å åpne innstillingene.</string>
     <string name="camera_strings_fast_capturing_screen_locked_streaming_txt">Lås opp skjermen for å starte strømmingen.</string>
     <string name="camera_strings_fast_capturing_screen_locked_title_txt">Skjermen er låst</string>
+    <string name="camera_strings_feature_creative_look_custom_description_txt">Du kan registrere framtoninger og innstillinger for lysstyrke/farge.</string>
     <string name="camera_strings_feature_creative_look_description_txt">"Du kan velge hvilken finish du vil ha på bildene (foto eller film) ved å velge et «utseende».
 
 Kreativt utseende har seks ferdige utseender. Hvert utseende har forskjellig fargetone, metning, kontrast, skarphet, lyshet og andre bildeelementer slik at du kan konfigurere bildebehandling slik du vil ha det."</string>
@@ -567,6 +630,7 @@ Trykk på motivet du vil spore."</string>
     <string name="camera_strings_framing_orientation_description_txt">"Du kan velge å beskjære motivet i enten en liggende eller stående ramme.
 Sett til [Auto] for å gjøre beskjæringsretningen den samme som enhetens orientering."</string>
     <string name="camera_strings_framing_select_subject_to_track_txt">Trykk på motivet du vil låse posisjonen til</string>
+    <string name="camera_strings_framing_setting_guide_title_txt">Om Automatisk innramming</string>
     <string name="camera_strings_framing_setting_orientation_landscape_txt">Liggende</string>
     <string name="camera_strings_framing_setting_orientation_portrait_txt">Stående</string>
     <string name="camera_strings_framing_setting_orientation_title_txt">Rammeorientering</string>
@@ -574,6 +638,7 @@ Sett til [Auto] for å gjøre beskjæringsretningen den samme som enhetens orien
 Beskårne opptak lagres i Full HD-oppløsning. Ubeskjærte opptak lagres i 4K."</string>
     <string name="camera_strings_framing_setting_save_original_video_off_txt">Fullskjermopptak: Av</string>
     <string name="camera_strings_framing_setting_save_original_video_title_txt">Fullskjermopptak</string>
+    <string name="camera_strings_framing_setting_snapshot_description_txt">Uansett om [Fullskjermopptak] er på eller av, lagres øyeblikksbilder mens du tar opp video med full skjerm.</string>
     <string name="camera_strings_geotagging_description_txt">Lagre bildene og videoene dine med stedene der de ble tatt</string>
     <string name="camera_strings_geotagging_txt">Lagre sted</string>
     <string name="camera_strings_gimbal_mode_tab_label">KI-kameraarbeid</string>
@@ -592,6 +657,7 @@ Dette lar deg ta opp stabil video selv i ustabile situasjoner som når du jogger
     <string name="camera_strings_gimbal_setting_assist_method_locking_hint_txt">Motivposisjonslås: Manuelt</string>
     <string name="camera_strings_gimbal_setting_assist_method_locking_txt">Manuelt</string>
     <string name="camera_strings_gimbal_setting_assist_method_title_txt">Motivposisjonslås</string>
+    <string name="camera_strings_gimbal_setting_guide_title_txt">Om KI-kameraarbeid</string>
     <string name="camera_strings_gridline_description_txt">Angi om rutenettlinjene skal vises for å hjelpe deg med å ta bilder</string>
     <string name="camera_strings_gridline_txt">Rutenettlinjer</string>
     <string name="camera_strings_hand_shutter_description_updated_txt">Du kan starte nedtellingen for tidsuret ved å snu håndflaten mot frontkameraet. Strekk fingrene oppover for å gjøre det enklere å registrere håndflaten din.</string>
@@ -727,6 +793,7 @@ Bilder som tas mens du spiller inn video, bruker alltid Standard dynamisk områd
     <string name="camera_strings_notification_channel_title_saving_process_txt">Lagringsprosess</string>
     <string name="camera_strings_notification_text_saving_in_progress_txt">Vent til lagringen er ferdig</string>
     <string name="camera_strings_notification_title_saving_in_progress_txt">Lagring pågår</string>
+    <string name="camera_strings_notify_saving_process_cannot_launch_app_by_hw_shutter_txt">Det kan hende at kameraet ikke starter når du trykker på utløserknappen mens du lagrer</string>
     <string name="camera_strings_ok_txt">OK</string>
     <string name="camera_strings_peaking_color_blue_txt">Blå</string>
     <string name="camera_strings_peaking_color_red_txt">Rød</string>
@@ -735,6 +802,7 @@ Bilder som tas mens du spiller inn video, bruker alltid Standard dynamisk områd
     <string name="camera_strings_peaking_color_yellow_txt">Gul</string>
     <string name="camera_strings_peaking_txt">Fremheving</string>
     <string name="camera_strings_personal_data_txt">Personlige data</string>
+    <string name="camera_strings_photopro_setting_guide_title_txt">Om Pro. bilde</string>
     <string name="camera_strings_privacy_policy_txt">Personvernerklæring</string>
     <string name="camera_strings_pro_tips_computational_photo_description_txt">"Selv i P-modus identifiserer kameraet automatisk motivet og tar vakre automatiske bilder ved å redusere uskarphet, støy, overeksponering og undereksponering.
 Hvis du ikke bruker dette, kan du slå det av fra Fn-knappen eller i MENY."</string>
@@ -965,6 +1033,7 @@ Hvis du fortsetter å bruke SD-kortet til datalagring, er det viktig at du bruke
     <string name="camera_strings_video_stabilization_description_sub_txt">Merk: Hvis du velger høy kvalitet, kan opptakstiden bli kortere fordi enhetstemperaturen stiger.</string>
     <string name="camera_strings_video_stabilization_description_txt">Xperia har et unikt hybridstabiliseringssystem som heter Optical SteadyShot. Det kombinerer optisk bildestabilisering og elektronisk bildestabilisering samtidig. Videoer blir jevne og fri for risting, selv når du tar opp video mens du er i bevegelse.</string>
     <string name="camera_strings_video_stabilization_high_quality_images_txt">Høy kvalitet</string>
+    <string name="camera_strings_videopro_setting_guide_title_txt">Om Pro video</string>
     <string name="camera_strings_volume_distortion_correction_description_txt">Korrigerer ansiktsforvrengninger som dukker opp nær kanten av skjermen når du bruker ultravidlinsen. Dette kan føre til at bakgrunnen ser forvrengt ut eller synsvinkelen virker innsnevret.</string>
     <string name="camera_strings_volume_distortion_correction_front_description_txt">Korrigerer forvrengning av ansikter som vises nær kanten av skjermen. Dette kan føre til at bakgrunnen ser forvrengt ut eller synsvinkelen virker innsnevret.</string>
     <string name="camera_strings_volume_distortion_correction_txt">Ansiktsforvrengningskorreksjon</string>
@@ -1042,8 +1111,25 @@ Ingen nettverkstilkobling."</string>
     <string name="clear_text_end_icon_content_description">Fjern teksten</string>
     <string name="close_drawer">Lukk navigasjonsmenyen</string>
     <string name="close_sheet">Lukk arket</string>
+    <string name="common_google_play_services_enable_button">Slå på</string>
+    <string name="common_google_play_services_enable_text">%1$s fungerer ikke med mindre du slår på Google Play-tjenester.</string>
+    <string name="common_google_play_services_enable_title">Slå på Google Play-tjenester</string>
+    <string name="common_google_play_services_install_button">Installer</string>
+    <string name="common_google_play_services_install_text">%1$s kan ikke kjøre uten Google Play-tjenester, som ikke er installert på enheten din.</string>
+    <string name="common_google_play_services_install_title">Installer Google Play-tjenester</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play Tjenester-tilgjengelighet</string>
+    <string name="common_google_play_services_notification_ticker">Google Play Tjenester-feil</string>
+    <string name="common_google_play_services_unknown_issue">%1$s har problemer med Google Play-tjenester. Prøv på nytt.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s kan ikke kjøre uten Google Play-tjenester, som ikke støttes av enheten din.</string>
+    <string name="common_google_play_services_update_button">Oppdater</string>
+    <string name="common_google_play_services_update_text">%1$s kjører ikke med mindre du oppdaterer Google Play Tjenester.</string>
+    <string name="common_google_play_services_update_title">Oppdater Google Play-tjenester</string>
+    <string name="common_google_play_services_updating_text">%1$s kjører ikke uten Google Play-tjenester, som oppdateres akkurat nå.</string>
+    <string name="common_google_play_services_wear_update_text">Du må installere en ny versjon av Google Play-tjenester. Appen oppdateres automatisk om en kort stund.</string>
+    <string name="common_open_on_phone">Åpne på telefonen</string>
+    <string name="common_signin_button_text">Logg på</string>
+    <string name="common_signin_button_text_long">Logg på med Google</string>
     <string name="copy">Kopiér</string>
-    <string name="copy_toast_msg">Linken er kopiert til utklippstavlen</string>
     <string name="default_error_message">Ugyldige inndata</string>
     <string name="default_popup_window_title">Forgrunnsvindu</string>
     <string name="dropdown_menu">Rullegardinmeny</string>
@@ -1054,9 +1140,6 @@ Ingen nettverkstilkobling."</string>
     <string name="external_display_connected_description_txt">Du kan se søkeren fra Vlog Monitor</string>
     <string name="external_display_connected_title_txt">Vlog Monitor er tilkoblet</string>
     <string name="external_display_note_about_external_mic_txt">Merk: For å bruke en ekstern mikrofon, koble den til Vlog Monitor før opptaket starter. Hvis du kobler den til etterpå, må du koble til Vlog Monitor på nytt.</string>
-    <string name="fallback_menu_item_copy_link">Kopiér linken</string>
-    <string name="fallback_menu_item_open_in_browser">Åpne i nettleseren</string>
-    <string name="fallback_menu_item_share_link">Del link</string>
     <string name="icon_content_description">Dialogboksikon</string>
     <string name="in_progress">Pågår</string>
     <string name="indeterminate">Delvis avmerket</string>

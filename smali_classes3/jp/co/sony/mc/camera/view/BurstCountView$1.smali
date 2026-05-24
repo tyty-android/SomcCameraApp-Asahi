@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/BurstCountView;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 24
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/BurstCountView$1;->this$0:Ljp/co/sony/mc/camera/view/BurstCountView;
@@ -37,6 +45,14 @@
 # virtual methods
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "animator"
+        }
+    .end annotation
 
     .line 39
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/BurstCountView$1;->this$0:Ljp/co/sony/mc/camera/view/BurstCountView;
@@ -57,6 +73,14 @@
 
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "animator"
+        }
+    .end annotation
 
     .line 33
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/BurstCountView$1;->this$0:Ljp/co/sony/mc/camera/view/BurstCountView;
@@ -77,12 +101,28 @@
 
 .method public onAnimationRepeat(Landroid/animation/Animator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "animator"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "animator"
+        }
+    .end annotation
 
     return-void
 .end method

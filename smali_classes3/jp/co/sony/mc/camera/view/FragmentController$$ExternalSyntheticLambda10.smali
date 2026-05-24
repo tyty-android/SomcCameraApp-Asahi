@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroidx/lifecycle/Observer;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
@@ -24,15 +24,13 @@
 
 
 # virtual methods
-.method public final onChanged(Ljava/lang/Object;)V
+.method public final run()V
     .locals 0
 
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$$ExternalSyntheticLambda10;->f$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    check-cast p1, Ljava/lang/Boolean;
-
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController;->$r8$lambda$4QIu3lroXPKgMOo7Xk9wSP4svoA(Ljp/co/sony/mc/camera/view/FragmentController;Ljava/lang/Boolean;)V
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->$r8$lambda$TkOzvnK8Sx06Hx4IA1nNq7MTa_Q(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
     return-void
 .end method

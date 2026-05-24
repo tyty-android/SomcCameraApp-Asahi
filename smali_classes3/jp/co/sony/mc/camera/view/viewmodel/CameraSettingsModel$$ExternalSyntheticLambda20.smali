@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements Lkotlin/jvm/functions/Function2;
 
 
 # instance fields
@@ -24,7 +24,7 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
@@ -32,7 +32,9 @@
 
     check-cast p1, Ljava/lang/Float;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->$r8$lambda$OZPasSo1QB2FaMN6zsLqF-_wlts(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;Ljava/lang/Float;)Z
+    check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->$r8$lambda$eyd6pHQM4sYdRZid4FZjU8RGL34(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;Ljava/lang/Float;Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;)Z
 
     move-result p0
 

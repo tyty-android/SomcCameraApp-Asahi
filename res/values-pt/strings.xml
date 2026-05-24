@@ -37,14 +37,10 @@
     <string name="close_drawer">Fechar menu de navegação</string>
     <string name="close_sheet">Fechar planilha</string>
     <string name="copy">Copiar</string>
-    <string name="copy_toast_msg">Link copiado para a área de transferência</string>
     <string name="default_error_message">Entrada inválida</string>
     <string name="default_popup_window_title">Janela pop-up</string>
     <string name="dropdown_menu">Menu suspenso</string>
     <string name="expand_button_title">Avançado</string>
-    <string name="fallback_menu_item_copy_link">Copiar link</string>
-    <string name="fallback_menu_item_open_in_browser">Abrir no navegador</string>
-    <string name="fallback_menu_item_share_link">Compartilhar link</string>
     <string name="in_progress">Em andamento</string>
     <string name="indeterminate">Parcialmente selecionada</string>
     <string name="navigation_menu">Menu de navegação</string>

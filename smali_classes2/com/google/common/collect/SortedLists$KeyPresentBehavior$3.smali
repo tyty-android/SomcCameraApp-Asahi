@@ -17,10 +17,20 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 81
+    .line 88
     invoke-direct {p0, p1, p2, v0}, Lcom/google/common/collect/SortedLists$KeyPresentBehavior;-><init>(Ljava/lang/String;ILcom/google/common/collect/SortedLists$1;)V
 
     return-void
@@ -30,6 +40,25 @@
 # virtual methods
 .method resultIndex(Ljava/util/Comparator;Ljava/lang/Object;Ljava/util/List;I)I
     .locals 2
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "comparator",
+            "key",
+            "list",
+            "foundIndex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -51,7 +80,7 @@
 
     ushr-int/lit8 v0, v0, 0x1
 
-    .line 93
+    .line 103
     invoke-interface {p3, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1

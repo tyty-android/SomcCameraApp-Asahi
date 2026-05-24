@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function5;
+.implements Lkotlin/jvm/functions/Function7;
 
 
 # instance fields
@@ -24,7 +24,7 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
@@ -46,9 +46,13 @@
 
     check-cast p4, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
 
-    check-cast p5, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+    check-cast p5, Ljava/lang/Boolean;
 
-    invoke-static/range {p0 .. p5}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->$r8$lambda$VgYIrfeVv9rdDAhTpthozG_Iq7U(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;ZZLjp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Z
+    check-cast p6, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+
+    check-cast p7, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+
+    invoke-static/range {p0 .. p7}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->$r8$lambda$Oq1W4XK-ujvIFdCLV9OeqHfaop4(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;ZZLjp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljava/lang/Boolean;Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Z
 
     move-result p0
 

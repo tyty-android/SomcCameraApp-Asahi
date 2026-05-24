@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1818
+    .line 2051
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,6 +31,21 @@
 # virtual methods
 .method public setValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljava/util/Map;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key",
+            "value",
+            "listenersMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -46,13 +61,13 @@
         }
     .end annotation
 
-    .line 1822
+    .line 2055
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1823
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/ComputationalMode;
+    .line 2056
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/SuperResolutionZoom;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetComputationalMode(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/ComputationalMode;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetSuperResolutionZoom(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/SuperResolutionZoom;)Z
 
     move-result p0
 

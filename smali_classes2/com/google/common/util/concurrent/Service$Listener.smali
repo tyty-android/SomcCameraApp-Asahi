@@ -18,7 +18,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 243
+    .line 215
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -28,6 +28,16 @@
 # virtual methods
 .method public failed(Lcom/google/common/util/concurrent/Service$State;Ljava/lang/Throwable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "from",
+            "failure"
+        }
+    .end annotation
 
     return-void
 .end method
@@ -46,12 +56,28 @@
 
 .method public stopping(Lcom/google/common/util/concurrent/Service$State;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "from"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public terminated(Lcom/google/common/util/concurrent/Service$State;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "from"
+        }
+    .end annotation
 
     return-void
 .end method

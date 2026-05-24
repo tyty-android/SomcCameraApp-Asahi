@@ -25,10 +25,18 @@
 # direct methods
 .method constructor <init>(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "permits"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 584
+    .line 550
     invoke-direct {p0, p1, v0}, Ljava/util/concurrent/Semaphore;-><init>(IZ)V
 
     return-void

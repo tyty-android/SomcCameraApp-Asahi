@@ -16,6 +16,20 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/mediasaving/MediaSavingResult;Landroid/net/Uri;Ljp/co/sony/mc/camera/storage/SavingRequest;Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "result",
+            "uri",
+            "request",
+            "filePath"
+        }
+    .end annotation
 
     .line 25
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -287,6 +301,14 @@
 
 .method public isSameSaveTimeForPredictiveCapture(Ljava/lang/String;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "captureTime"
+        }
+    .end annotation
 
     .line 111
     iget-object p0, p0, Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;->mSavingRequest:Ljp/co/sony/mc/camera/storage/SavingRequest;
@@ -321,4 +343,33 @@
 
     :goto_0
     return p0
+.end method
+
+.method public isYuvImage()Z
+    .locals 2
+
+    .line 119
+    iget-object p0, p0, Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;->mSavingRequest:Ljp/co/sony/mc/camera/storage/SavingRequest;
+
+    instance-of v0, p0, Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    check-cast p0, Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;
+
+    .line 120
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;->getImageFormat()I
+
+    move-result p0
+
+    const/16 v0, 0x11
+
+    if-ne p0, v0, :cond_0
+
+    const/4 v1, 0x1
+
+    :cond_0
+    return v1
 .end method

@@ -73,7 +73,7 @@
 
     const/4 v3, -0x1
 
-    const v4, 0x7f1102de
+    const v4, 0x7f110327
 
     const/4 v5, 0x1
 
@@ -96,7 +96,7 @@
 
     const/4 v12, -0x1
 
-    const v13, 0x7f1103f3
+    const v13, 0x7f11043e
 
     const/4 v14, 0x0
 
@@ -118,6 +118,27 @@
 
 .method private constructor <init>(Ljava/lang/String;IIIILjava/lang/String;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId",
+            "type",
+            "secureValue",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(III",
@@ -149,6 +170,14 @@
 
 .method public static fromSecureValue(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/FastCapture;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "secureValue"
+        }
+    .end annotation
 
     .line 160
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/FastCapture;->values()[Ljp/co/sony/mc/camera/configuration/parameters/FastCapture;
@@ -231,6 +260,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/FastCapture;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 17
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/FastCapture;

@@ -18,6 +18,28 @@
 # direct methods
 .method public constructor <init>([BIIIIIIZ)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "yuvData",
+            "dataWidth",
+            "dataHeight",
+            "left",
+            "top",
+            "width",
+            "height",
+            "reverseHorizontal"
+        }
+    .end annotation
 
     .line 47
     invoke-direct {p0, p6, p7}, Lcom/google/zxing/LuminanceSource;-><init>(II)V
@@ -66,6 +88,16 @@
 
 .method private reverseHorizontal(II)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "width",
+            "height"
+        }
+    .end annotation
 
     .line 136
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/qrdetection/PlanarYUVLuminanceSource;->yuvData:[B
@@ -213,6 +245,16 @@
 
 .method public getRow(I[B)[B
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "y",
+            "row"
+        }
+    .end annotation
 
     if-ltz p1, :cond_2
 

@@ -58,7 +58,7 @@
 .method private constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 113
+    .line 112
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddUserSettingDummyValue;->value:Ljava/lang/String;
@@ -79,7 +79,7 @@
 .method public getValue()Ljava/lang/String;
     .locals 0
 
-    .line 113
+    .line 112
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddUserSettingDummyValue;->value:Ljava/lang/String;
 
     return-object p0
@@ -88,7 +88,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 114
+    .line 113
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/value/IddUserSettingDummyValue;->getValue()Ljava/lang/String;
 
     move-result-object p0

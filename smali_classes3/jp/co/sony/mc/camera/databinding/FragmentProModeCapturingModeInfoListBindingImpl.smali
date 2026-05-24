@@ -13,9 +13,9 @@
 
 
 # instance fields
-.field private final mCallback65:Landroid/view/View$OnClickListener;
+.field private final mCallback56:Landroid/view/View$OnClickListener;
 
-.field private final mCallback66:Landroid/view/View$OnClickListener;
+.field private final mCallback57:Landroid/view/View$OnClickListener;
 
 .field private mDirtyFlags:J
 
@@ -33,14 +33,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeInfoListBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f090256
+    const v1, 0x7f090262
 
     const/4 v2, 0x3
 
     .line 17
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090255
+    const v1, 0x7f090261
 
     const/4 v2, 0x4
 
@@ -52,6 +52,16 @@
 
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root"
+        }
+    .end annotation
 
     .line 33
     sget-object v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeInfoListBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -71,6 +81,18 @@
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root",
+            "bindings"
+        }
+    .end annotation
 
     const/4 v0, 0x2
 
@@ -152,14 +174,14 @@
 
     invoke-direct {p2, p0, p1}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
 
-    iput-object p2, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeInfoListBindingImpl;->mCallback65:Landroid/view/View$OnClickListener;
+    iput-object p2, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeInfoListBindingImpl;->mCallback56:Landroid/view/View$OnClickListener;
 
     .line 49
     new-instance p1, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
 
     invoke-direct {p1, p0, v0}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
 
-    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeInfoListBindingImpl;->mCallback66:Landroid/view/View$OnClickListener;
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeInfoListBindingImpl;->mCallback57:Landroid/view/View$OnClickListener;
 
     .line 50
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeInfoListBindingImpl;->invalidateAll()V
@@ -169,6 +191,17 @@
 
 .method private onChangeOrientationViewModelLayoutOrientation(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "OrientationViewModelLayoutOrientation",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -217,6 +250,17 @@
 
 .method private onChangeProModeTopPaneUiStateCapturingModeInfoVisible(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ProModeTopPaneUiStateCapturingModeInfoVisible",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -267,6 +311,16 @@
 # virtual methods
 .method public final _internalCallbackOnClick(ILandroid/view/View;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sourceId",
+            "callbackArg_0"
+        }
+    .end annotation
 
     const/4 p2, 0x1
 
@@ -438,14 +492,14 @@
     .line 197
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeInfoListBindingImpl;->close:Landroid/widget/ImageButton;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeInfoListBindingImpl;->mCallback66:Landroid/view/View$OnClickListener;
+    iget-object v1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeInfoListBindingImpl;->mCallback57:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 198
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeInfoListBindingImpl;->descriptionInfoBackground:Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeInfoListBindingImpl;->mCallback65:Landroid/view/View$OnClickListener;
+    iget-object v1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeInfoListBindingImpl;->mCallback56:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v1}, Landroidx/constraintlayout/widget/ConstraintLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -557,6 +611,18 @@
 
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "localFieldId",
+            "object",
+            "fieldId"
+        }
+    .end annotation
 
     if-eqz p1, :cond_1
 
@@ -591,6 +657,14 @@
 
 .method public setOrientationViewModel(Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "OrientationViewModel"
+        }
+    .end annotation
 
     .line 95
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeInfoListBindingImpl;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
@@ -613,7 +687,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x16
+    const/16 p1, 0x19
 
     .line 99
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeInfoListBindingImpl;->notifyPropertyChanged(I)V
@@ -637,6 +711,14 @@
 
 .method public setProModeTopPaneUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ProModeTopPaneUiState"
+        }
+    .end annotation
 
     .line 87
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeInfoListBindingImpl;->mProModeTopPaneUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;
@@ -659,7 +741,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x1c
+    const/16 p1, 0x1f
 
     .line 91
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeInfoListBindingImpl;->notifyPropertyChanged(I)V
@@ -683,8 +765,18 @@
 
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "variableId",
+            "variable"
+        }
+    .end annotation
 
-    const/16 v0, 0x1c
+    const/16 v0, 0x1f
 
     if-ne v0, p1, :cond_0
 
@@ -696,7 +788,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x16
+    const/16 v0, 0x19
 
     if-ne v0, p1, :cond_1
 

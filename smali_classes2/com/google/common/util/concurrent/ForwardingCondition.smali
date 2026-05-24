@@ -6,11 +6,16 @@
 .implements Ljava/util/concurrent/locks/Condition;
 
 
+# annotations
+.annotation runtime Lcom/google/common/util/concurrent/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # direct methods
 .method constructor <init>()V
     .locals 0
 
-    .line 22
+    .line 25
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -26,7 +31,7 @@
         }
     .end annotation
 
-    .line 27
+    .line 30
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingCondition;->delegate()Ljava/util/concurrent/locks/Condition;
 
     move-result-object p0
@@ -38,13 +43,24 @@
 
 .method public await(JLjava/util/concurrent/TimeUnit;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "time",
+            "unit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
         }
     .end annotation
 
-    .line 32
+    .line 35
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingCondition;->delegate()Ljava/util/concurrent/locks/Condition;
 
     move-result-object p0
@@ -58,13 +74,22 @@
 
 .method public awaitNanos(J)J
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "nanosTimeout"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
         }
     .end annotation
 
-    .line 42
+    .line 45
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingCondition;->delegate()Ljava/util/concurrent/locks/Condition;
 
     move-result-object p0
@@ -79,7 +104,7 @@
 .method public awaitUninterruptibly()V
     .locals 0
 
-    .line 37
+    .line 40
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingCondition;->delegate()Ljava/util/concurrent/locks/Condition;
 
     move-result-object p0
@@ -91,13 +116,22 @@
 
 .method public awaitUntil(Ljava/util/Date;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "deadline"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
         }
     .end annotation
 
-    .line 47
+    .line 50
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingCondition;->delegate()Ljava/util/concurrent/locks/Condition;
 
     move-result-object p0
@@ -115,7 +149,7 @@
 .method public signal()V
     .locals 0
 
-    .line 52
+    .line 55
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingCondition;->delegate()Ljava/util/concurrent/locks/Condition;
 
     move-result-object p0
@@ -128,7 +162,7 @@
 .method public signalAll()V
     .locals 0
 
-    .line 57
+    .line 60
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingCondition;->delegate()Ljava/util/concurrent/locks/Condition;
 
     move-result-object p0

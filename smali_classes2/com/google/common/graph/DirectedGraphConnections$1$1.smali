@@ -22,6 +22,8 @@
 
 
 # instance fields
+.field final synthetic this$1:Lcom/google/common/graph/DirectedGraphConnections$1;
+
 .field final synthetic val$nodeConnections:Ljava/util/Iterator;
 
 .field final synthetic val$seenNodes:Ljava/util/Set;
@@ -30,11 +32,25 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/graph/DirectedGraphConnections$1;Ljava/util/Iterator;Ljava/util/Set;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$1",
+            "val$nodeConnections",
+            "val$seenNodes"
+        }
+    .end annotation
 
-    .line 243
+    .line 244
     iput-object p2, p0, Lcom/google/common/graph/DirectedGraphConnections$1$1;->val$nodeConnections:Ljava/util/Iterator;
 
     iput-object p3, p0, Lcom/google/common/graph/DirectedGraphConnections$1$1;->val$seenNodes:Ljava/util/Set;
+
+    iput-object p1, p0, Lcom/google/common/graph/DirectedGraphConnections$1$1;->this$1:Lcom/google/common/graph/DirectedGraphConnections$1;
 
     invoke-direct {p0}, Lcom/google/common/collect/AbstractIterator;-><init>()V
 
@@ -51,7 +67,10 @@
         }
     .end annotation
 
-    .line 246
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 248
     :cond_0
     iget-object v0, p0, Lcom/google/common/graph/DirectedGraphConnections$1$1;->val$nodeConnections:Ljava/util/Iterator;
 
@@ -61,7 +80,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 247
+    .line 249
     iget-object v0, p0, Lcom/google/common/graph/DirectedGraphConnections$1$1;->val$nodeConnections:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -70,7 +89,7 @@
 
     check-cast v0, Lcom/google/common/graph/DirectedGraphConnections$NodeConnection;
 
-    .line 248
+    .line 250
     iget-object v1, p0, Lcom/google/common/graph/DirectedGraphConnections$1$1;->val$seenNodes:Ljava/util/Set;
 
     iget-object v2, v0, Lcom/google/common/graph/DirectedGraphConnections$NodeConnection;->node:Ljava/lang/Object;
@@ -81,12 +100,12 @@
 
     if-eqz v1, :cond_0
 
-    .line 250
+    .line 252
     iget-object p0, v0, Lcom/google/common/graph/DirectedGraphConnections$NodeConnection;->node:Ljava/lang/Object;
 
     return-object p0
 
-    .line 253
+    .line 255
     :cond_1
     invoke-virtual {p0}, Lcom/google/common/graph/DirectedGraphConnections$1$1;->endOfData()Ljava/lang/Object;
 

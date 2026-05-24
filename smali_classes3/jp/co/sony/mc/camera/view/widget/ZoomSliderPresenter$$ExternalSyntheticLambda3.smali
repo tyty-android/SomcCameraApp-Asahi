@@ -3,15 +3,17 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
 .field public final synthetic f$0:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;
 
+.field public final synthetic f$1:Ljp/co/sony/mc/camera/view/widget/LabelView;
+
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;)V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/LabelView;)V
     .locals 0
 
     .line 0
@@ -19,18 +21,22 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda3;->f$0:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;
 
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda3;->f$1:Ljp/co/sony/mc/camera/view/widget/LabelView;
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
-    .locals 0
+.method public final onClick(Landroid/view/View;)V
+    .locals 1
 
     .line 0
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda3;->f$0:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda3;->f$0:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->$r8$lambda$kEMwpD5YCYMVVUnitFdKeP45yF0(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Landroid/animation/ValueAnimator;)V
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda3;->f$1:Ljp/co/sony/mc/camera/view/widget/LabelView;
+
+    invoke-static {v0, p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->$r8$lambda$4YP3advbuuG7kkEC4XUfw958EIY(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/LabelView;Landroid/view/View;)V
 
     return-void
 .end method

@@ -33,6 +33,17 @@
 # direct methods
 .method private constructor <init>(ILcom/google/common/base/Supplier;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "stripes",
+            "supplier"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -43,7 +54,7 @@
         }
     .end annotation
 
-    .line 410
+    .line 376
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/Striped$PowerOfTwoStriped;-><init>(I)V
 
     const/high16 v0, 0x40000000    # 2.0f
@@ -61,13 +72,13 @@
     :cond_0
     move p1, v1
 
-    .line 411
+    .line 377
     :goto_0
     const-string v0, "Stripes must be <= 2^30)"
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/Object;)V
 
-    .line 413
+    .line 379
     iget p1, p0, Lcom/google/common/util/concurrent/Striped$CompactStriped;->mask:I
 
     add-int/2addr p1, v2
@@ -76,7 +87,7 @@
 
     iput-object p1, p0, Lcom/google/common/util/concurrent/Striped$CompactStriped;->array:[Ljava/lang/Object;
 
-    .line 414
+    .line 380
     :goto_1
     iget-object p1, p0, Lcom/google/common/util/concurrent/Striped$CompactStriped;->array:[Ljava/lang/Object;
 
@@ -84,7 +95,7 @@
 
     if-ge v1, v0, :cond_1
 
-    .line 415
+    .line 381
     invoke-interface {p2}, Lcom/google/common/base/Supplier;->get()Ljava/lang/Object;
 
     move-result-object v0
@@ -102,7 +113,7 @@
 .method synthetic constructor <init>(ILcom/google/common/base/Supplier;Lcom/google/common/util/concurrent/Striped$1;)V
     .locals 0
 
-    .line 405
+    .line 371
     invoke-direct {p0, p1, p2}, Lcom/google/common/util/concurrent/Striped$CompactStriped;-><init>(ILcom/google/common/base/Supplier;)V
 
     return-void
@@ -112,6 +123,15 @@
 # virtual methods
 .method public getAt(I)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)T",
@@ -119,7 +139,7 @@
         }
     .end annotation
 
-    .line 422
+    .line 388
     iget-object p0, p0, Lcom/google/common/util/concurrent/Striped$CompactStriped;->array:[Ljava/lang/Object;
 
     aget-object p0, p0, p1
@@ -130,7 +150,7 @@
 .method public size()I
     .locals 0
 
-    .line 427
+    .line 393
     iget-object p0, p0, Lcom/google/common/util/concurrent/Striped$CompactStriped;->array:[Ljava/lang/Object;
 
     array-length p0, p0

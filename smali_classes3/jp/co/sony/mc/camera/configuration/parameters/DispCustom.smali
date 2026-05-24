@@ -61,7 +61,7 @@
     .line 16
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/DispCustom;
 
-    const v1, 0x7f11017f
+    const v1, 0x7f1101bc
 
     const-string v2, "HEADER"
 
@@ -78,7 +78,7 @@
 
     const/4 v1, 0x1
 
-    const v2, 0x7f11017e
+    const v2, 0x7f1101bb
 
     const-string v3, "LEVEL"
 
@@ -91,7 +91,7 @@
 
     const/4 v1, 0x2
 
-    const v2, 0x7f11017d
+    const v2, 0x7f1101ba
 
     const-string v3, "HISTOGRAM"
 
@@ -104,7 +104,7 @@
 
     const/4 v1, 0x3
 
-    const v2, 0x7f11017b
+    const v2, 0x7f1101b8
 
     const-string v3, "AUDIO"
 
@@ -124,6 +124,21 @@
 
 .method private constructor <init>(Ljava/lang/String;III)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)V"
@@ -155,6 +170,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/DispCustom;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 15
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/DispCustom;

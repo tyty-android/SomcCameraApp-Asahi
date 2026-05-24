@@ -54,7 +54,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$onCreateView$1;->this$0:Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;
 
-    .line 184
+    .line 181
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -65,7 +65,7 @@
 .method public onSurfaceFinalized(Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;)V
     .locals 1
 
-    .line 207
+    .line 204
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_0
@@ -89,7 +89,7 @@
 .method public onSurfaceInitialized(Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;II)V
     .locals 0
 
-    .line 187
+    .line 184
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p1, :cond_0
@@ -106,13 +106,13 @@
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 188
+    .line 185
     :cond_0
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p1
 
-    .line 190
+    .line 187
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$onCreateView$1;->this$0:Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;
 
     sget-object p2, Ljp/co/sony/mc/camera/setting/CommonSettings;->DISP_FLIP:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -137,7 +137,7 @@
 .method public onSurfaceSizeChanged(Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;II)V
     .locals 3
 
-    .line 195
+    .line 192
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
@@ -154,7 +154,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 196
+    .line 193
     :cond_0
     invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
@@ -164,12 +164,12 @@
 
     invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 197
+    .line 194
     new-instance v0, Landroid/util/Size;
 
     invoke-direct {v0, p2, p3}, Landroid/util/Size;-><init>(II)V
 
-    .line 198
+    .line 195
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$onCreateView$1;->this$0:Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->access$getMSurface$p(Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;)Landroid/view/Surface;
@@ -178,7 +178,7 @@
 
     if-nez p2, :cond_1
 
-    .line 199
+    .line 196
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$onCreateView$1;->this$0:Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->access$getMExternalDisplayCallBack$p(Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;)Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayCallBack;
@@ -189,7 +189,7 @@
 
     goto :goto_0
 
-    .line 201
+    .line 198
     :cond_1
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$onCreateView$1;->this$0:Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;
 
@@ -199,7 +199,7 @@
 
     invoke-interface {p2, p1, v0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayCallBack;->onExternalDisplaySurfaceChanged(Landroid/view/Surface;Landroid/util/Size;)V
 
-    .line 203
+    .line 200
     :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$onCreateView$1;->this$0:Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;
 

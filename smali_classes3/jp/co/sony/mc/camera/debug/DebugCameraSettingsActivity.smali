@@ -323,12 +323,12 @@
 
     if-eqz v0, :cond_2
 
-    const v0, 0x7f11034f
+    const v0, 0x7f110398
 
     goto :goto_0
 
     :cond_2
-    const v0, 0x7f1101e2
+    const v0, 0x7f11022e
 
     .line 487
     :goto_0
@@ -343,7 +343,7 @@
 
     invoke-direct {v1, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f1101e0
+    const v2, 0x7f11022c
 
     .line 489
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
@@ -362,7 +362,7 @@
 
     move-result-object v0
 
-    const v3, 0x7f110355
+    const v3, 0x7f11039f
 
     const/4 v4, 0x0
 
@@ -736,7 +736,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/debug/DebugCameraSettingsActivity;->settingsAdapter:Ljp/co/sony/mc/camera/debug/DebugCameraSettingsAdapter;
 
-    const v0, 0x7f090417
+    const v0, 0x7f09041a
 
     .line 139
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/debug/DebugCameraSettingsActivity;->findViewById(I)Landroid/view/View;
@@ -869,7 +869,7 @@
 
     check-cast v4, Landroid/app/Activity;
 
-    const v5, 0x7f1202ac
+    const v5, 0x7f1202b3
 
     invoke-virtual {v1, v3, v4, v5}, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->canSetGeotag(Ljp/co/sony/mc/camera/configuration/parameters/Geotag;Landroid/app/Activity;I)Z
 
@@ -1207,9 +1207,7 @@
     :goto_4
     new-instance v0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;
 
-    const/4 v3, 0x0
-
-    invoke-direct {v0, v3}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;-><init>(Z)V
+    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;-><init>()V
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getDebug()Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
@@ -1468,7 +1466,7 @@
     .line 313
     new-array v2, v0, [Ljava/lang/String;
 
-    const v6, 0x7f1102e2
+    const v6, 0x7f11032b
 
     invoke-virtual {p0, v6}, Ljp/co/sony/mc/camera/debug/DebugCameraSettingsActivity;->getString(I)Ljava/lang/String;
 
@@ -1476,7 +1474,7 @@
 
     aput-object v6, v2, v3
 
-    const v6, 0x7f1102e3
+    const v6, 0x7f11032c
 
     .line 314
     invoke-virtual {p0, v6}, Ljp/co/sony/mc/camera/debug/DebugCameraSettingsActivity;->getString(I)Ljava/lang/String;
@@ -1485,7 +1483,7 @@
 
     aput-object v6, v2, v4
 
-    const v4, 0x7f1102e5
+    const v4, 0x7f11032e
 
     .line 315
     invoke-virtual {p0, v4}, Ljp/co/sony/mc/camera/debug/DebugCameraSettingsActivity;->getString(I)Ljava/lang/String;
@@ -1641,7 +1639,7 @@
     .line 281
     new-array v2, v0, [Ljava/lang/String;
 
-    const v6, 0x7f110340
+    const v6, 0x7f110389
 
     invoke-virtual {p0, v6}, Ljp/co/sony/mc/camera/debug/DebugCameraSettingsActivity;->getString(I)Ljava/lang/String;
 
@@ -1649,7 +1647,7 @@
 
     aput-object v6, v2, v3
 
-    const v6, 0x7f110343
+    const v6, 0x7f11038c
 
     .line 282
     invoke-virtual {p0, v6}, Ljp/co/sony/mc/camera/debug/DebugCameraSettingsActivity;->getString(I)Ljava/lang/String;
@@ -1658,7 +1656,7 @@
 
     aput-object v6, v2, v4
 
-    const v4, 0x7f11033d
+    const v4, 0x7f110386
 
     .line 283
     invoke-virtual {p0, v4}, Ljp/co/sony/mc/camera/debug/DebugCameraSettingsActivity;->getString(I)Ljava/lang/String;
@@ -1911,12 +1909,12 @@
 
     invoke-direct {v0, v1}, Landroidx/appcompat/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f11038f
+    const v1, 0x7f1103da
 
     .line 361
     invoke-virtual {v0, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setTitle(I)Landroidx/appcompat/app/AlertDialog$Builder;
 
-    const v1, 0x7f11038e
+    const v1, 0x7f1103d9
 
     .line 362
     invoke-virtual {v0, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setMessage(I)Landroidx/appcompat/app/AlertDialog$Builder;
@@ -1926,7 +1924,7 @@
 
     invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/debug/DebugCameraSettingsActivity$$ExternalSyntheticLambda5;-><init>(Ljp/co/sony/mc/camera/debug/DebugCameraSettingsActivity;)V
 
-    const p0, 0x7f110355
+    const p0, 0x7f11039f
 
     invoke-virtual {v0, p0, v1}, Landroidx/appcompat/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/AlertDialog$Builder;
 

@@ -96,7 +96,7 @@
 
     const/4 v0, 0x4
 
-    .line 250
+    .line 376
     new-array v0, v0, [Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason;
 
     const/4 v1, 0x0
@@ -107,39 +107,39 @@
 
     const/4 v1, 0x1
 
-    .line 251
+    .line 377
     sget-object v2, Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$ZoomCurrentPositionClicked;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$ZoomCurrentPositionClicked;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x2
 
-    .line 252
+    .line 378
     sget-object v2, Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$BrightnessSliderDragged;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$BrightnessSliderDragged;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x3
 
-    .line 253
+    .line 379
     sget-object v2, Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$AmberBlueSliderDragged;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$AmberBlueSliderDragged;
 
     aput-object v2, v0, v1
 
-    .line 249
+    .line 375
     invoke-static {v0}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    .line 248
+    .line 374
     invoke-direct {p0, v0, v1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;-><init>(Ljava/util/List;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 241
+    .line 367
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$ColorToneProfile;->infoVisible:Z
 
-    .line 242
+    .line 368
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$ColorToneProfile;->closeInfoReasonList:Ljava/util/List;
 
     return-void
@@ -156,7 +156,7 @@
 
     const/4 p2, 0x4
 
-    .line 243
+    .line 369
     new-array p2, p2, [Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason;
 
     const/4 p3, 0x0
@@ -167,29 +167,29 @@
 
     const/4 p3, 0x1
 
-    .line 244
+    .line 370
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$FinderLongClicked;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$FinderLongClicked;
 
     aput-object v0, p2, p3
 
-    .line 245
+    .line 371
     sget-object p3, Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$ZoomStateChanged;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$ZoomStateChanged;
 
     aput-object p3, p2, p4
 
     const/4 p3, 0x3
 
-    .line 246
+    .line 372
     sget-object p4, Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$ZoomCurrentPositionClicked;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$ZoomCurrentPositionClicked;
 
     aput-object p4, p2, p3
 
-    .line 242
+    .line 368
     invoke-static {p2}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p2
 
-    .line 240
+    .line 366
     :cond_0
     invoke-direct {p0, p1, p2}, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$ColorToneProfile;-><init>(ZLjava/util/List;)V
 
@@ -327,7 +327,7 @@
         }
     .end annotation
 
-    .line 242
+    .line 368
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$ColorToneProfile;->closeInfoReasonList:Ljava/util/List;
 
     return-object p0
@@ -336,7 +336,7 @@
 .method public final getInfoVisible()Z
     .locals 0
 
-    .line 241
+    .line 367
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$ColorToneProfile;->infoVisible:Z
 
     return p0

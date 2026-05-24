@@ -96,7 +96,7 @@
 .method public onProgressChanged(Landroid/widget/SeekBar;IZ)V
     .locals 1
 
-    const-string v0, "seekBar"
+    const-string/jumbo v0, "seekBar"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -161,7 +161,7 @@
 .method public onStartTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 3
 
-    const-string v0, "seekBar"
+    const-string/jumbo v0, "seekBar"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -211,7 +211,7 @@
 .method public onStopTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 12
 
-    const-string v0, "seekBar"
+    const-string/jumbo v0, "seekBar"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 

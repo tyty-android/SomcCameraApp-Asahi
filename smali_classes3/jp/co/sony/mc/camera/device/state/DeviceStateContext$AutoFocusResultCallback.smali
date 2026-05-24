@@ -24,8 +24,16 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 3292
+    .line 3657
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$AutoFocusResultCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -45,8 +53,16 @@
 # virtual methods
 .method public onAutoFocusCanceled(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sessionId"
+        }
+    .end annotation
 
-    .line 3320
+    .line 3685
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$AutoFocusResultCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fgetmDeviceStateMachine(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Ljp/co/sony/mc/camera/device/DeviceStateMachine;
@@ -66,8 +82,20 @@
 
 .method public onAutoFocusDone(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;IZ)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "sessionId",
+            "requestId",
+            "isAfSuccess"
+        }
+    .end annotation
 
-    .line 3309
+    .line 3674
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p1, :cond_0
@@ -106,7 +134,7 @@
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 3311
+    .line 3676
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$AutoFocusResultCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
@@ -116,7 +144,7 @@
 
     sget-object p1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_AUTO_FOCUS_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    .line 3312
+    .line 3677
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p2
@@ -129,7 +157,7 @@
 
     move-result-object p2
 
-    .line 3311
+    .line 3676
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->sendEvent(Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;[Ljava/lang/Object;)V
 
     return-void
@@ -137,8 +165,18 @@
 
 .method public onAutoFocusLockRequested(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sessionId",
+            "requestId"
+        }
+    .end annotation
 
-    .line 3299
+    .line 3664
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p1, :cond_0
@@ -167,7 +205,7 @@
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 3300
+    .line 3665
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$AutoFocusResultCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
@@ -177,7 +215,7 @@
 
     sget-object p1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_AUTO_FOCUS_REQUESTED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    .line 3301
+    .line 3666
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p2
@@ -186,7 +224,7 @@
 
     move-result-object p2
 
-    .line 3300
+    .line 3665
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->sendEvent(Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;[Ljava/lang/Object;)V
 
     return-void

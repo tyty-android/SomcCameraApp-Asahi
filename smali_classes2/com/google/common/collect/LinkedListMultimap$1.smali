@@ -30,11 +30,21 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/LinkedListMultimap;Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$key"
+        }
+    .end annotation
 
-    .line 679
-    iput-object p1, p0, Lcom/google/common/collect/LinkedListMultimap$1;->this$0:Lcom/google/common/collect/LinkedListMultimap;
-
+    .line 715
     iput-object p2, p0, Lcom/google/common/collect/LinkedListMultimap$1;->val$key:Ljava/lang/Object;
+
+    iput-object p1, p0, Lcom/google/common/collect/LinkedListMultimap$1;->this$0:Lcom/google/common/collect/LinkedListMultimap;
 
     invoke-direct {p0}, Ljava/util/AbstractSequentialList;-><init>()V
 
@@ -45,6 +55,15 @@
 # virtual methods
 .method public listIterator(I)Ljava/util/ListIterator;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -53,7 +72,7 @@
         }
     .end annotation
 
-    .line 688
+    .line 724
     new-instance v0, Lcom/google/common/collect/LinkedListMultimap$ValueForKeyIterator;
 
     iget-object v1, p0, Lcom/google/common/collect/LinkedListMultimap$1;->this$0:Lcom/google/common/collect/LinkedListMultimap;
@@ -68,10 +87,10 @@
 .method public size()I
     .locals 1
 
-    .line 682
+    .line 718
     iget-object v0, p0, Lcom/google/common/collect/LinkedListMultimap$1;->this$0:Lcom/google/common/collect/LinkedListMultimap;
 
-    invoke-static {v0}, Lcom/google/common/collect/LinkedListMultimap;->access$600(Lcom/google/common/collect/LinkedListMultimap;)Ljava/util/Map;
+    invoke-static {v0}, Lcom/google/common/collect/LinkedListMultimap;->access$500(Lcom/google/common/collect/LinkedListMultimap;)Ljava/util/Map;
 
     move-result-object v0
 
@@ -89,7 +108,7 @@
 
     goto :goto_0
 
-    .line 683
+    .line 719
     :cond_0
     iget p0, p0, Lcom/google/common/collect/LinkedListMultimap$KeyList;->count:I
 

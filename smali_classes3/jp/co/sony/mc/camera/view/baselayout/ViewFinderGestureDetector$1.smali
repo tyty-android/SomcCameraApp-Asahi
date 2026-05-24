@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 311
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector$1;->this$0:Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector;
@@ -37,6 +45,14 @@
 # virtual methods
 .method public onDown(Landroid/view/MotionEvent;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
 
     const/4 p0, 0x0
 
@@ -45,6 +61,20 @@
 
 .method public onFling(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "e1",
+            "e2",
+            "distanceX",
+            "distanceY"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -176,12 +206,34 @@
 
 .method public onLongPress(Landroid/view/MotionEvent;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public onScroll(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "e1",
+            "e2",
+            "distanceX",
+            "distanceY"
+        }
+    .end annotation
 
     .line 328
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector$1;->this$0:Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector;
@@ -283,12 +335,28 @@
 
 .method public onShowPress(Landroid/view/MotionEvent;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public onSingleTapUp(Landroid/view/MotionEvent;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
 
     const/4 p0, 0x0
 

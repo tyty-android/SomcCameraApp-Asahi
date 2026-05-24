@@ -37,13 +37,21 @@
 # direct methods
 .method private constructor <init>(Lcom/google/common/collect/AbstractBiMap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 247
+    .line 269
     iput-object p1, p0, Lcom/google/common/collect/AbstractBiMap$ValueSet;->this$0:Lcom/google/common/collect/AbstractBiMap;
 
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingSet;-><init>()V
 
-    .line 248
+    .line 270
     iget-object p1, p1, Lcom/google/common/collect/AbstractBiMap;->inverse:Lcom/google/common/collect/AbstractBiMap;
 
     invoke-virtual {p1}, Lcom/google/common/collect/AbstractBiMap;->keySet()Ljava/util/Set;
@@ -58,7 +66,7 @@
 .method synthetic constructor <init>(Lcom/google/common/collect/AbstractBiMap;Lcom/google/common/collect/AbstractBiMap$1;)V
     .locals 0
 
-    .line 247
+    .line 269
     invoke-direct {p0, p1}, Lcom/google/common/collect/AbstractBiMap$ValueSet;-><init>(Lcom/google/common/collect/AbstractBiMap;)V
 
     return-void
@@ -69,7 +77,7 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 246
+    .line 268
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractBiMap$ValueSet;->delegate()Ljava/util/Set;
 
     move-result-object p0
@@ -80,7 +88,7 @@
 .method protected bridge synthetic delegate()Ljava/util/Collection;
     .locals 0
 
-    .line 246
+    .line 268
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractBiMap$ValueSet;->delegate()Ljava/util/Set;
 
     move-result-object p0
@@ -98,7 +106,7 @@
         }
     .end annotation
 
-    .line 252
+    .line 274
     iget-object p0, p0, Lcom/google/common/collect/AbstractBiMap$ValueSet;->valuesDelegate:Ljava/util/Set;
 
     return-object p0
@@ -114,7 +122,7 @@
         }
     .end annotation
 
-    .line 257
+    .line 279
     iget-object p0, p0, Lcom/google/common/collect/AbstractBiMap$ValueSet;->this$0:Lcom/google/common/collect/AbstractBiMap;
 
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractBiMap;->entrySet()Ljava/util/Set;
@@ -135,7 +143,7 @@
 .method public toArray()[Ljava/lang/Object;
     .locals 0
 
-    .line 262
+    .line 284
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractBiMap$ValueSet;->standardToArray()[Ljava/lang/Object;
 
     move-result-object p0
@@ -145,6 +153,15 @@
 
 .method public toArray([Ljava/lang/Object;)[Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "array"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -153,7 +170,7 @@
         }
     .end annotation
 
-    .line 267
+    .line 290
     invoke-virtual {p0, p1}, Lcom/google/common/collect/AbstractBiMap$ValueSet;->standardToArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object p0
@@ -164,7 +181,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 272
+    .line 295
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractBiMap$ValueSet;->standardToString()Ljava/lang/String;
 
     move-result-object p0

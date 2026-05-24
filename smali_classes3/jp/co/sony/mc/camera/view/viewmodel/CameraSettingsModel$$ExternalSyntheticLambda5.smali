@@ -22,9 +22,9 @@
     .locals 0
 
     .line 0
-    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->$r8$lambda$ZuzdSPSb-CBRD9QdwRfcUoXH6NQ(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
+    invoke-static {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->$r8$lambda$HIqmTA8ZE3miB0ehXD4AnpJXhsA(Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;)Z
 
     move-result p0
 

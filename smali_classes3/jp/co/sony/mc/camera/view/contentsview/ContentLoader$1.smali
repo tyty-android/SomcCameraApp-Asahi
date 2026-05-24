@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/contentsview/ContentLoader;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 49
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentLoader$1;->this$0:Ljp/co/sony/mc/camera/view/contentsview/ContentLoader;
@@ -37,6 +45,21 @@
 # virtual methods
 .method public onDataLoadCompleted(IZLjava/util/LinkedList;Landroid/graphics/Bitmap;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "requestId",
+            "isRegister",
+            "contentInfoList",
+            "bitmap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IZ",
@@ -84,6 +107,14 @@
 
 .method public onDataLoadFailed(I)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "requestId"
+        }
+    .end annotation
 
     .line 74
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentLoader$1;->this$0:Ljp/co/sony/mc/camera/view/contentsview/ContentLoader;
@@ -121,12 +152,32 @@
 
 .method public onLoadCompleted(Landroid/net/Uri;Landroid/graphics/Bitmap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "uri",
+            "bitmap"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public onLoadFailed(Landroid/net/Uri;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "uri",
+            "reason"
+        }
+    .end annotation
 
     return-void
 .end method

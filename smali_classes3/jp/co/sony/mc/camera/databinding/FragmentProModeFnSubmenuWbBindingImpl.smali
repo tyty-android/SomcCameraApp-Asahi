@@ -55,7 +55,7 @@
 
     move-result-object v3
 
-    const v5, 0x7f0c00aa
+    const v5, 0x7f0c00a1
 
     filled-new-array {v5}, [I
 
@@ -84,9 +84,9 @@
 
     move-result-object v5
 
-    const v6, 0x7f0c00ad
+    const v6, 0x7f0c00a4
 
-    const v7, 0x7f0c00ab
+    const v7, 0x7f0c00a2
 
     filled-new-array {v6, v7}, [I
 
@@ -107,7 +107,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0c00a9
+    const v6, 0x7f0c00a0
 
     filled-new-array {v6}, [I
 
@@ -128,7 +128,7 @@
 
     move-result-object v3
 
-    const v5, 0x7f0c00a8
+    const v5, 0x7f0c009f
 
     filled-new-array {v5}, [I
 
@@ -151,7 +151,7 @@
 
     move-result-object v3
 
-    const v5, 0x7f0c00a6
+    const v5, 0x7f0c009d
 
     filled-new-array {v5}, [I
 
@@ -174,7 +174,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0c00a7
+    const v3, 0x7f0c009e
 
     filled-new-array {v3}, [I
 
@@ -194,6 +194,16 @@
 
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root"
+        }
+    .end annotation
 
     .line 62
     sget-object v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -213,6 +223,18 @@
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
     .locals 12
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root",
+            "bindings"
+        }
+    .end annotation
 
     const/16 v0, 0xa
 
@@ -406,6 +428,17 @@
 
 .method private onChangeProModeCommonUiStateIsWbConfirmSubmenuOpened(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ProModeCommonUiStateIsWbConfirmSubmenuOpened",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -454,6 +487,17 @@
 
 .method private onChangeProModeCommonUiStateIsWbFailSubmenuOpened(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ProModeCommonUiStateIsWbFailSubmenuOpened",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -502,6 +546,17 @@
 
 .method private onChangeProModeCommonUiStateIsWbFetchSubmenuOpened(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ProModeCommonUiStateIsWbFetchSubmenuOpened",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -550,6 +605,17 @@
 
 .method private onChangeProModeCommonUiStateIsWbPalletSubmenuOpened(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ProModeCommonUiStateIsWbPalletSubmenuOpened",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -598,6 +664,17 @@
 
 .method private onChangeProModeCommonUiStateIsWbSelectedSubmenuOpened(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ProModeCommonUiStateIsWbSelectedSubmenuOpened",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -646,6 +723,17 @@
 
 .method private onChangeProModeCommonUiStateIsWbTemperatureSubmenuOpened(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ProModeCommonUiStateIsWbTemperatureSubmenuOpened",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -694,6 +782,17 @@
 
 .method private onChangeProModeCommonUiStateIsWhiteBalanceStateBarOpened(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ProModeCommonUiStateIsWhiteBalanceStateBarOpened",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -742,6 +841,16 @@
 
 .method private onChangeWbConfirm(Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbConfirmBinding;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "WbConfirm",
+            "fieldId"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
@@ -782,6 +891,16 @@
 
 .method private onChangeWbFail(Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbFailBinding;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "WbFail",
+            "fieldId"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
@@ -822,6 +941,16 @@
 
 .method private onChangeWbFetch(Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbFetchBinding;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "WbFetch",
+            "fieldId"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
@@ -862,6 +991,16 @@
 
 .method private onChangeWbPalette(Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbPaletteBinding;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "WbPalette",
+            "fieldId"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
@@ -902,6 +1041,16 @@
 
 .method private onChangeWbSelected(Ljp/co/sony/mc/camera/databinding/FragmentProModeOptionsDialBinding;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "WbSelected",
+            "fieldId"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
@@ -942,6 +1091,16 @@
 
 .method private onChangeWbStateBar(Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbStateBarBinding;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "WbStateBar",
+            "fieldId"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
@@ -982,6 +1141,16 @@
 
 .method private onChangeWbTemp(Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbTempBinding;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "WbTemp",
+            "fieldId"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
@@ -1802,6 +1971,18 @@
 
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "localFieldId",
+            "object",
+            "fieldId"
+        }
+    .end annotation
 
     packed-switch p1, :pswitch_data_0
 
@@ -1972,6 +2153,14 @@
 
 .method public setCameraStatusModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "CameraStatusModel"
+        }
+    .end annotation
 
     .line 168
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbBindingImpl;->mCameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
@@ -1981,6 +2170,14 @@
 
 .method public setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "lifecycleOwner"
+        }
+    .end annotation
 
     .line 173
     invoke-super {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
@@ -2025,6 +2222,14 @@
 
 .method public setProModeCommonUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ProModeCommonUiState"
+        }
+    .end annotation
 
     .line 160
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbBindingImpl;->mProModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
@@ -2047,7 +2252,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x18
+    const/16 p1, 0x1b
 
     .line 164
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbBindingImpl;->notifyPropertyChanged(I)V
@@ -2071,8 +2276,18 @@
 
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "variableId",
+            "variable"
+        }
+    .end annotation
 
-    const/16 v0, 0x18
+    const/16 v0, 0x1b
 
     if-ne v0, p1, :cond_0
 
@@ -2084,7 +2299,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x9
+    const/16 v0, 0xc
 
     if-ne v0, p1, :cond_1
 

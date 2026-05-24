@@ -30,7 +30,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 33
+    .line 35
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +41,7 @@
 .method public get()Lcom/google/common/hash/LongAddable;
     .locals 0
 
-    .line 36
+    .line 38
     new-instance p0, Lcom/google/common/hash/LongAdder;
 
     invoke-direct {p0}, Lcom/google/common/hash/LongAdder;-><init>()V
@@ -52,7 +52,7 @@
 .method public bridge synthetic get()Ljava/lang/Object;
     .locals 0
 
-    .line 33
+    .line 35
     invoke-virtual {p0}, Lcom/google/common/hash/LongAddables$1;->get()Lcom/google/common/hash/LongAddable;
 
     move-result-object p0

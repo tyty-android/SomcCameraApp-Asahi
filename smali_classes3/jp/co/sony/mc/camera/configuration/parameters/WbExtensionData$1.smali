@@ -40,6 +40,14 @@
 # virtual methods
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "in"
+        }
+    .end annotation
 
     .line 76
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData$1;->createFromParcel(Landroid/os/Parcel;)Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;
@@ -51,6 +59,14 @@
 
 .method public createFromParcel(Landroid/os/Parcel;)Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "in"
+        }
+    .end annotation
 
     .line 79
     new-instance p0, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;
@@ -64,6 +80,14 @@
 
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "size"
+        }
+    .end annotation
 
     .line 76
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData$1;->newArray(I)[Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;
@@ -75,6 +99,14 @@
 
 .method public newArray(I)[Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "size"
+        }
+    .end annotation
 
     .line 84
     new-array p0, p1, [Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;

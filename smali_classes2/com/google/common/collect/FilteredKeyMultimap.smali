@@ -7,11 +7,14 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/common/collect/FilteredKeyMultimap$Entries;,
+        Lcom/google/common/collect/FilteredKeyMultimap$AddRejectingSet;,
         Lcom/google/common/collect/FilteredKeyMultimap$AddRejectingList;,
-        Lcom/google/common/collect/FilteredKeyMultimap$AddRejectingSet;
+        Lcom/google/common/collect/FilteredKeyMultimap$Entries;
     }
 .end annotation
 
@@ -53,6 +56,17 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/Multimap;Lcom/google/common/base/Predicate;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "unfiltered",
+            "keyPredicate"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -63,10 +77,10 @@
         }
     .end annotation
 
-    .line 43
+    .line 47
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMultimap;-><init>()V
 
-    .line 44
+    .line 48
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -75,7 +89,7 @@
 
     iput-object p1, p0, Lcom/google/common/collect/FilteredKeyMultimap;->unfiltered:Lcom/google/common/collect/Multimap;
 
-    .line 45
+    .line 49
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -92,7 +106,7 @@
 .method public clear()V
     .locals 0
 
-    .line 92
+    .line 96
     invoke-virtual {p0}, Lcom/google/common/collect/FilteredKeyMultimap;->keySet()Ljava/util/Set;
 
     move-result-object p0
@@ -105,11 +119,19 @@
 .method public containsKey(Ljava/lang/Object;)Z
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 69
+    .line 73
     iget-object v0, p0, Lcom/google/common/collect/FilteredKeyMultimap;->unfiltered:Lcom/google/common/collect/Multimap;
 
     invoke-interface {v0, p1}, Lcom/google/common/collect/Multimap;->containsKey(Ljava/lang/Object;)Z
@@ -118,7 +140,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 72
+    .line 76
     iget-object p0, p0, Lcom/google/common/collect/FilteredKeyMultimap;->keyPredicate:Lcom/google/common/base/Predicate;
 
     invoke-interface {p0, p1}, Lcom/google/common/base/Predicate;->apply(Ljava/lang/Object;)Z
@@ -145,7 +167,7 @@
         }
     .end annotation
 
-    .line 213
+    .line 219
     iget-object v0, p0, Lcom/google/common/collect/FilteredKeyMultimap;->unfiltered:Lcom/google/common/collect/Multimap;
 
     invoke-interface {v0}, Lcom/google/common/collect/Multimap;->asMap()Ljava/util/Map;
@@ -172,7 +194,7 @@
         }
     .end annotation
 
-    .line 181
+    .line 187
     new-instance v0, Lcom/google/common/collect/FilteredKeyMultimap$Entries;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/FilteredKeyMultimap$Entries;-><init>(Lcom/google/common/collect/FilteredKeyMultimap;)V
@@ -190,7 +212,7 @@
         }
     .end annotation
 
-    .line 97
+    .line 101
     iget-object v0, p0, Lcom/google/common/collect/FilteredKeyMultimap;->unfiltered:Lcom/google/common/collect/Multimap;
 
     invoke-interface {v0}, Lcom/google/common/collect/Multimap;->keySet()Ljava/util/Set;
@@ -216,7 +238,7 @@
         }
     .end annotation
 
-    .line 218
+    .line 224
     iget-object v0, p0, Lcom/google/common/collect/FilteredKeyMultimap;->unfiltered:Lcom/google/common/collect/Multimap;
 
     invoke-interface {v0}, Lcom/google/common/collect/Multimap;->keys()Lcom/google/common/collect/Multiset;
@@ -242,7 +264,7 @@
         }
     .end annotation
 
-    .line 208
+    .line 214
     new-instance v0, Lcom/google/common/collect/FilteredMultimapValues;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/FilteredMultimapValues;-><init>(Lcom/google/common/collect/FilteredMultimap;)V
@@ -261,7 +283,7 @@
         }
     .end annotation
 
-    .line 176
+    .line 182
     new-instance p0, Ljava/lang/AssertionError;
 
     const-string v0, "should never be called"
@@ -283,7 +305,7 @@
         }
     .end annotation
 
-    .line 55
+    .line 59
     iget-object p0, p0, Lcom/google/common/collect/FilteredKeyMultimap;->keyPredicate:Lcom/google/common/base/Predicate;
 
     invoke-static {p0}, Lcom/google/common/collect/Maps;->keyPredicateOnEntries(Lcom/google/common/base/Predicate;)Lcom/google/common/base/Predicate;
@@ -295,6 +317,19 @@
 
 .method public get(Ljava/lang/Object;)Ljava/util/Collection;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -303,7 +338,7 @@
         }
     .end annotation
 
-    .line 102
+    .line 106
     iget-object v0, p0, Lcom/google/common/collect/FilteredKeyMultimap;->keyPredicate:Lcom/google/common/base/Predicate;
 
     invoke-interface {v0, p1}, Lcom/google/common/base/Predicate;->apply(Ljava/lang/Object;)Z
@@ -312,7 +347,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 103
+    .line 107
     iget-object p0, p0, Lcom/google/common/collect/FilteredKeyMultimap;->unfiltered:Lcom/google/common/collect/Multimap;
 
     invoke-interface {p0, p1}, Lcom/google/common/collect/Multimap;->get(Ljava/lang/Object;)Ljava/util/Collection;
@@ -321,7 +356,7 @@
 
     return-object p0
 
-    .line 104
+    .line 108
     :cond_0
     iget-object p0, p0, Lcom/google/common/collect/FilteredKeyMultimap;->unfiltered:Lcom/google/common/collect/Multimap;
 
@@ -329,14 +364,14 @@
 
     if-eqz p0, :cond_1
 
-    .line 105
+    .line 109
     new-instance p0, Lcom/google/common/collect/FilteredKeyMultimap$AddRejectingSet;
 
     invoke-direct {p0, p1}, Lcom/google/common/collect/FilteredKeyMultimap$AddRejectingSet;-><init>(Ljava/lang/Object;)V
 
     return-object p0
 
-    .line 107
+    .line 111
     :cond_1
     new-instance p0, Lcom/google/common/collect/FilteredKeyMultimap$AddRejectingList;
 
@@ -347,6 +382,19 @@
 
 .method public removeAll(Ljava/lang/Object;)Ljava/util/Collection;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -357,7 +405,7 @@
         }
     .end annotation
 
-    .line 79
+    .line 83
     invoke-virtual {p0, p1}, Lcom/google/common/collect/FilteredKeyMultimap;->containsKey(Ljava/lang/Object;)Z
 
     move-result v0
@@ -384,7 +432,7 @@
 .method public size()I
     .locals 2
 
-    .line 61
+    .line 65
     invoke-virtual {p0}, Lcom/google/common/collect/FilteredKeyMultimap;->asMap()Ljava/util/Map;
 
     move-result-object p0
@@ -412,7 +460,7 @@
 
     check-cast v1, Ljava/util/Collection;
 
-    .line 62
+    .line 66
     invoke-interface {v1}, Ljava/util/Collection;->size()I
 
     move-result v1
@@ -435,7 +483,7 @@
         }
     .end annotation
 
-    .line 50
+    .line 54
     iget-object p0, p0, Lcom/google/common/collect/FilteredKeyMultimap;->unfiltered:Lcom/google/common/collect/Multimap;
 
     return-object p0
@@ -451,23 +499,23 @@
         }
     .end annotation
 
-    .line 83
+    .line 87
     iget-object p0, p0, Lcom/google/common/collect/FilteredKeyMultimap;->unfiltered:Lcom/google/common/collect/Multimap;
 
     instance-of p0, p0, Lcom/google/common/collect/SetMultimap;
 
     if-eqz p0, :cond_0
 
-    .line 84
-    invoke-static {}, Lcom/google/common/collect/ImmutableSet;->of()Lcom/google/common/collect/ImmutableSet;
+    .line 88
+    invoke-static {}, Ljava/util/Collections;->emptySet()Ljava/util/Set;
 
     move-result-object p0
 
     return-object p0
 
-    .line 86
+    .line 90
     :cond_0
-    invoke-static {}, Lcom/google/common/collect/ImmutableList;->of()Lcom/google/common/collect/ImmutableList;
+    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     move-result-object p0
 

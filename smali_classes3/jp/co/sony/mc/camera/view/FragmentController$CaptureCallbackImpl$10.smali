@@ -32,13 +32,30 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;IIZZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$requestId",
+            "val$duration",
+            "val$isSoundDivided",
+            "val$isLongExposure"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 7592
+    .line 6472
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl$10;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;
 
     iput p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl$10;->val$requestId:I
@@ -59,7 +76,7 @@
 .method public run()V
     .locals 4
 
-    .line 7595
+    .line 6475
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl$10;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->-$$Nest$fgetmController(Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;)Ljp/co/sony/mc/camera/view/FragmentController;

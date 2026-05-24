@@ -30,11 +30,21 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/graph/MultiEdgesConnecting;Ljava/util/Iterator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$entries"
+        }
+    .end annotation
 
-    .line 51
-    iput-object p1, p0, Lcom/google/common/graph/MultiEdgesConnecting$1;->this$0:Lcom/google/common/graph/MultiEdgesConnecting;
-
+    .line 52
     iput-object p2, p0, Lcom/google/common/graph/MultiEdgesConnecting$1;->val$entries:Ljava/util/Iterator;
+
+    iput-object p1, p0, Lcom/google/common/graph/MultiEdgesConnecting$1;->this$0:Lcom/google/common/graph/MultiEdgesConnecting;
 
     invoke-direct {p0}, Lcom/google/common/collect/AbstractIterator;-><init>()V
 
@@ -51,7 +61,10 @@
         }
     .end annotation
 
-    .line 54
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 56
     :cond_0
     iget-object v0, p0, Lcom/google/common/graph/MultiEdgesConnecting$1;->val$entries:Ljava/util/Iterator;
 
@@ -61,7 +74,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 55
+    .line 57
     iget-object v0, p0, Lcom/google/common/graph/MultiEdgesConnecting$1;->val$entries:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -70,7 +83,7 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 56
+    .line 58
     iget-object v1, p0, Lcom/google/common/graph/MultiEdgesConnecting$1;->this$0:Lcom/google/common/graph/MultiEdgesConnecting;
 
     invoke-static {v1}, Lcom/google/common/graph/MultiEdgesConnecting;->access$000(Lcom/google/common/graph/MultiEdgesConnecting;)Ljava/lang/Object;
@@ -87,14 +100,14 @@
 
     if-eqz v1, :cond_0
 
-    .line 57
+    .line 59
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object p0
 
     return-object p0
 
-    .line 60
+    .line 62
     :cond_1
     invoke-virtual {p0}, Lcom/google/common/graph/MultiEdgesConnecting$1;->endOfData()Ljava/lang/Object;
 

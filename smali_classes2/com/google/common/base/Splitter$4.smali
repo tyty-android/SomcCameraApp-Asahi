@@ -24,8 +24,22 @@
 # direct methods
 .method constructor <init>(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "val$length"
+        }
+    .end annotation
 
-    .line 283
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .line 287
     iput p1, p0, Lcom/google/common/base/Splitter$4;->val$length:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,8 +51,18 @@
 # virtual methods
 .method public iterator(Lcom/google/common/base/Splitter;Ljava/lang/CharSequence;)Lcom/google/common/base/Splitter$SplittingIterator;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x0
+        }
+        names = {
+            "splitter",
+            "toSplit"
+        }
+    .end annotation
 
-    .line 286
+    .line 290
     new-instance v0, Lcom/google/common/base/Splitter$4$1;
 
     invoke-direct {v0, p0, p1, p2}, Lcom/google/common/base/Splitter$4$1;-><init>(Lcom/google/common/base/Splitter$4;Lcom/google/common/base/Splitter;Ljava/lang/CharSequence;)V
@@ -48,8 +72,18 @@
 
 .method public bridge synthetic iterator(Lcom/google/common/base/Splitter;Ljava/lang/CharSequence;)Ljava/util/Iterator;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x1000
+        }
+        names = {
+            "splitter",
+            "toSplit"
+        }
+    .end annotation
 
-    .line 283
+    .line 287
     invoke-virtual {p0, p1, p2}, Lcom/google/common/base/Splitter$4;->iterator(Lcom/google/common/base/Splitter;Ljava/lang/CharSequence;)Lcom/google/common/base/Splitter$SplittingIterator;
 
     move-result-object p0

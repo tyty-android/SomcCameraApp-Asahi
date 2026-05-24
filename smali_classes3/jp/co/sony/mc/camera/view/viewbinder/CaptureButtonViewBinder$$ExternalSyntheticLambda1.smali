@@ -30,9 +30,9 @@
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;
 
-    check-cast p1, Lkotlin/Triple;
+    check-cast p1, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;->$r8$lambda$uMgPd7yR4OHVV5bMge6KRxE4WrA(Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;Lkotlin/Triple;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;->$r8$lambda$9dfgOWGbQdI-6rthqB6RT7AGLAM(Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)Lkotlin/Unit;
 
     move-result-object p0
 

@@ -3,6 +3,11 @@
 .source "DeadEvent.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/eventbus/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # instance fields
 .field private final event:Ljava/lang/Object;
 
@@ -12,18 +17,28 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "source",
+            "event"
+        }
+    .end annotation
 
-    .line 43
+    .line 42
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 44
+    .line 43
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/google/common/eventbus/DeadEvent;->source:Ljava/lang/Object;
 
-    .line 45
+    .line 44
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -38,7 +53,7 @@
 .method public getEvent()Ljava/lang/Object;
     .locals 0
 
-    .line 65
+    .line 64
     iget-object p0, p0, Lcom/google/common/eventbus/DeadEvent;->event:Ljava/lang/Object;
 
     return-object p0
@@ -47,7 +62,7 @@
 .method public getSource()Ljava/lang/Object;
     .locals 0
 
-    .line 55
+    .line 54
     iget-object p0, p0, Lcom/google/common/eventbus/DeadEvent;->source:Ljava/lang/Object;
 
     return-object p0
@@ -56,7 +71,7 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 70
+    .line 69
     invoke-static {p0}, Lcom/google/common/base/MoreObjects;->toStringHelper(Ljava/lang/Object;)Lcom/google/common/base/MoreObjects$ToStringHelper;
 
     move-result-object v0

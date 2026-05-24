@@ -126,6 +126,14 @@
 
 .method private getDetailFragment(Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;)Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDetailFragment;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "item"
+        }
+    .end annotation
 
     .line 295
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;->getSettingLayoutType()Ljp/co/sony/mc/camera/view/setting/settingitem/SettingLayoutType;
@@ -158,6 +166,14 @@
 
 .method private getDetailFragmentTag(Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "item"
+        }
+    .end annotation
 
     .line 303
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;->getSettingLayoutType()Ljp/co/sony/mc/camera/view/setting/settingitem/SettingLayoutType;
@@ -274,6 +290,19 @@
 
 .method private onSettingValueChanged(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljp/co/sony/mc/camera/setting/SettingAppearance;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value",
+            "appearance"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -361,7 +390,7 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
 
-    const v2, 0x7f1202ac
+    const v2, 0x7f1202b3
 
     invoke-virtual {v0, v1, p0, v2}, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->canSetGeotag(Ljp/co/sony/mc/camera/configuration/parameters/Geotag;Landroid/app/Activity;I)Z
 
@@ -504,9 +533,7 @@
 
     new-instance v0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;
 
-    const/4 v1, 0x0
-
-    invoke-direct {v0, v1}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;-><init>(Z)V
+    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;-><init>()V
 
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
@@ -628,12 +655,12 @@
 
     if-eqz v0, :cond_4
 
-    const v0, 0x7f11034f
+    const v0, 0x7f110398
 
     goto :goto_0
 
     :cond_4
-    const v0, 0x7f1101e2
+    const v0, 0x7f11022e
 
     .line 253
     :goto_0
@@ -644,7 +671,7 @@
 
     invoke-direct {v1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f1101e0
+    const v2, 0x7f11022c
 
     .line 255
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
@@ -661,7 +688,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f110355
+    const v2, 0x7f11039f
 
     const/4 v3, 0x0
 
@@ -728,7 +755,7 @@
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/CameraApplication;->awaitCameraProSettingInitialized()V
 
-    const v0, 0x7f0c001d
+    const v0, 0x7f0c001e
 
     .line 272
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->setContentView(I)V
@@ -820,7 +847,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f090136
+    const v3, 0x7f090135
 
     invoke-virtual {v1, v3, v0, v2}, Landroidx/fragment/app/FragmentTransaction;->replace(ILandroidx/fragment/app/Fragment;Ljava/lang/String;)Landroidx/fragment/app/FragmentTransaction;
 
@@ -835,6 +862,14 @@
 
 .method private showSettingMessageDialog(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "request"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -909,6 +944,18 @@
 # virtual methods
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "requestCode",
+            "resultCode",
+            "data"
+        }
+    .end annotation
 
     .line 194
     invoke-super {p0, p1, p2, p3}, Landroidx/appcompat/app/AppCompatActivity;->onActivityResult(IILandroid/content/Intent;)V
@@ -1037,6 +1084,14 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "savedInstanceState"
+        }
+    .end annotation
 
     .line 87
     invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onCreate(Landroid/os/Bundle;)V
@@ -1121,6 +1176,16 @@
 
 .method public onDismiss(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "what"
+        }
+    .end annotation
 
     .line 368
     sget-object v0, Ljp/co/sony/mc/camera/SaveLocationSettingActivity$2;->$SwitchMap$jp$co$sony$mc$camera$view$messagedialog$DialogId:[I
@@ -1186,6 +1251,16 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "keyCode",
+            "event"
+        }
+    .end annotation
 
     .line 168
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/KeyEventTranslator;->translateKeyCode(I)Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
@@ -1214,6 +1289,14 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "intent"
+        }
+    .end annotation
 
     .line 113
     invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onNewIntent(Landroid/content/Intent;)V
@@ -1237,6 +1320,14 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "item"
+        }
+    .end annotation
 
     .line 185
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
@@ -1372,6 +1463,18 @@
 
 .method public onValueChanged(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;Ljp/co/sony/mc/camera/setting/SettingAppearance;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value",
+            "appearance"
+        }
+    .end annotation
 
     .line 363
     iget-object v0, p0, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->mMainHandler:Landroid/os/Handler;

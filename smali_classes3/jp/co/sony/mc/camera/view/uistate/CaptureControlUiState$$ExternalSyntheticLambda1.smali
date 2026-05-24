@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements Lkotlin/jvm/functions/Function3;
 
 
 # instance fields
@@ -24,15 +24,19 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
 
-    check-cast p1, Ljava/lang/Boolean;
+    check-cast p1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->$r8$lambda$RWBd44DnBMD_sYK5kHz_3INHyus(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;Ljava/lang/Boolean;)Z
+    check-cast p2, Ljava/lang/Boolean;
+
+    check-cast p3, Ljava/lang/Boolean;
+
+    invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->$r8$lambda$hPLr0mFfEIMYiYXIl9BMQMymB3g(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;Ljava/lang/Boolean;Ljava/lang/Boolean;)Z
 
     move-result p0
 

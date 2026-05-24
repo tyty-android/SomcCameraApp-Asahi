@@ -30,13 +30,23 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "cameraSessionId"
+        }
+    .end annotation
 
-    .line 7953
+    .line 7628
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$OnPreviewStartedListenerImpl;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7954
+    .line 7629
     iput-object p2, p0, Ljp/co/sony/mc/camera/controller/StateMachine$OnPreviewStartedListenerImpl;->mCameraSessionId:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
 
     return-void
@@ -52,16 +62,28 @@
 
 .method private constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;ZLjp/co/sony/mc/camera/CameraAccessor$PreviewCallback;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "isStartup",
+            "callback"
+        }
+    .end annotation
 
-    .line 7948
+    .line 7623
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$OnPreviewStartedListenerImpl;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7949
+    .line 7624
     iput-boolean p2, p0, Ljp/co/sony/mc/camera/controller/StateMachine$OnPreviewStartedListenerImpl;->mIsStartup:Z
 
-    .line 7950
+    .line 7625
     iput-object p3, p0, Ljp/co/sony/mc/camera/controller/StateMachine$OnPreviewStartedListenerImpl;->mCallback:Ljp/co/sony/mc/camera/CameraAccessor$PreviewCallback;
 
     return-void
@@ -79,15 +101,23 @@
 # virtual methods
 .method public onPreviewStarted(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sessionId"
+        }
+    .end annotation
 
-    .line 7959
+    .line 7634
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$OnPreviewStartedListenerImpl;->mCameraSessionId:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
 
     if-eqz v0, :cond_0
 
     if-ne v0, p1, :cond_0
 
-    .line 7960
+    .line 7635
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$OnPreviewStartedListenerImpl;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -98,16 +128,16 @@
 
     return-void
 
-    .line 7964
+    .line 7639
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$OnPreviewStartedListenerImpl;->mCallback:Ljp/co/sony/mc/camera/CameraAccessor$PreviewCallback;
 
     if-eqz p1, :cond_1
 
-    .line 7965
+    .line 7640
     invoke-interface {p1}, Ljp/co/sony/mc/camera/CameraAccessor$PreviewCallback;->onPreviewStarted()V
 
-    .line 7967
+    .line 7642
     :cond_1
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$OnPreviewStartedListenerImpl;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 

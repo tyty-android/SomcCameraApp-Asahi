@@ -46,6 +46,17 @@
 # direct methods
 .method constructor <init>(Ljava/util/Map;Lcom/google/common/base/Supplier;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "map",
+            "factory"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -60,10 +71,10 @@
         }
     .end annotation
 
-    .line 116
+    .line 221
     invoke-direct {p0, p1}, Lcom/google/common/collect/AbstractMapBasedMultimap;-><init>(Ljava/util/Map;)V
 
-    .line 117
+    .line 222
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -77,6 +88,15 @@
 
 .method private readObject(Ljava/io/ObjectInputStream;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stream"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -84,11 +104,15 @@
         }
     .end annotation
 
-    .line 179
+    .line 289
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->defaultReadObject()V
 
-    .line 180
+    .line 290
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readObject()Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -96,14 +120,18 @@
 
     iput-object v0, p0, Lcom/google/common/collect/Multimaps$CustomMultimap;->factory:Lcom/google/common/base/Supplier;
 
-    .line 181
+    .line 291
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readObject()Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, Ljava/util/Map;
 
-    .line 182
+    .line 292
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Multimaps$CustomMultimap;->setMap(Ljava/util/Map;)V
 
     return-void
@@ -111,21 +139,30 @@
 
 .method private writeObject(Ljava/io/ObjectOutputStream;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stream"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 171
+    .line 280
     invoke-virtual {p1}, Ljava/io/ObjectOutputStream;->defaultWriteObject()V
 
-    .line 172
+    .line 281
     iget-object v0, p0, Lcom/google/common/collect/Multimaps$CustomMultimap;->factory:Lcom/google/common/base/Supplier;
 
     invoke-virtual {p1, v0}, Ljava/io/ObjectOutputStream;->writeObject(Ljava/lang/Object;)V
 
-    .line 173
+    .line 282
     invoke-virtual {p0}, Lcom/google/common/collect/Multimaps$CustomMultimap;->backingMap()Ljava/util/Map;
 
     move-result-object p0
@@ -149,7 +186,7 @@
         }
     .end annotation
 
-    .line 127
+    .line 232
     invoke-virtual {p0}, Lcom/google/common/collect/Multimaps$CustomMultimap;->createMaybeNavigableAsMap()Ljava/util/Map;
 
     move-result-object p0
@@ -167,7 +204,7 @@
         }
     .end annotation
 
-    .line 132
+    .line 237
     iget-object p0, p0, Lcom/google/common/collect/Multimaps$CustomMultimap;->factory:Lcom/google/common/base/Supplier;
 
     invoke-interface {p0}, Lcom/google/common/base/Supplier;->get()Ljava/lang/Object;
@@ -189,7 +226,7 @@
         }
     .end annotation
 
-    .line 122
+    .line 227
     invoke-virtual {p0}, Lcom/google/common/collect/Multimaps$CustomMultimap;->createMaybeNavigableKeySet()Ljava/util/Set;
 
     move-result-object p0
@@ -199,6 +236,15 @@
 
 .method unmodifiableCollectionSubclass(Ljava/util/Collection;)Ljava/util/Collection;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "collection"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -211,12 +257,12 @@
         }
     .end annotation
 
-    .line 137
+    .line 243
     instance-of p0, p1, Ljava/util/NavigableSet;
 
     if-eqz p0, :cond_0
 
-    .line 138
+    .line 244
     check-cast p1, Ljava/util/NavigableSet;
 
     invoke-static {p1}, Lcom/google/common/collect/Sets;->unmodifiableNavigableSet(Ljava/util/NavigableSet;)Ljava/util/NavigableSet;
@@ -225,13 +271,13 @@
 
     return-object p0
 
-    .line 139
+    .line 245
     :cond_0
     instance-of p0, p1, Ljava/util/SortedSet;
 
     if-eqz p0, :cond_1
 
-    .line 140
+    .line 246
     check-cast p1, Ljava/util/SortedSet;
 
     invoke-static {p1}, Ljava/util/Collections;->unmodifiableSortedSet(Ljava/util/SortedSet;)Ljava/util/SortedSet;
@@ -240,13 +286,13 @@
 
     return-object p0
 
-    .line 141
+    .line 247
     :cond_1
     instance-of p0, p1, Ljava/util/Set;
 
     if-eqz p0, :cond_2
 
-    .line 142
+    .line 248
     check-cast p1, Ljava/util/Set;
 
     invoke-static {p1}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
@@ -255,13 +301,13 @@
 
     return-object p0
 
-    .line 143
+    .line 249
     :cond_2
     instance-of p0, p1, Ljava/util/List;
 
     if-eqz p0, :cond_3
 
-    .line 144
+    .line 250
     check-cast p1, Ljava/util/List;
 
     invoke-static {p1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
@@ -270,7 +316,7 @@
 
     return-object p0
 
-    .line 146
+    .line 252
     :cond_3
     invoke-static {p1}, Ljava/util/Collections;->unmodifiableCollection(Ljava/util/Collection;)Ljava/util/Collection;
 
@@ -281,6 +327,21 @@
 
 .method wrapCollection(Ljava/lang/Object;Ljava/util/Collection;)Ljava/util/Collection;
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "collection"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;",
@@ -291,14 +352,14 @@
         }
     .end annotation
 
-    .line 152
+    .line 258
     instance-of v0, p2, Ljava/util/List;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 153
+    .line 259
     check-cast p2, Ljava/util/List;
 
     invoke-virtual {p0, p1, p2, v1}, Lcom/google/common/collect/Multimaps$CustomMultimap;->wrapList(Ljava/lang/Object;Ljava/util/List;Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedCollection;)Ljava/util/List;
@@ -307,13 +368,13 @@
 
     return-object p0
 
-    .line 154
+    .line 260
     :cond_0
     instance-of v0, p2, Ljava/util/NavigableSet;
 
     if-eqz v0, :cond_1
 
-    .line 155
+    .line 261
     new-instance v0, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedNavigableSet;
 
     check-cast p2, Ljava/util/NavigableSet;
@@ -322,13 +383,13 @@
 
     return-object v0
 
-    .line 156
+    .line 262
     :cond_1
     instance-of v0, p2, Ljava/util/SortedSet;
 
     if-eqz v0, :cond_2
 
-    .line 157
+    .line 263
     new-instance v0, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedSortedSet;
 
     check-cast p2, Ljava/util/SortedSet;
@@ -337,13 +398,13 @@
 
     return-object v0
 
-    .line 158
+    .line 264
     :cond_2
     instance-of v0, p2, Ljava/util/Set;
 
     if-eqz v0, :cond_3
 
-    .line 159
+    .line 265
     new-instance v0, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedSet;
 
     check-cast p2, Ljava/util/Set;
@@ -352,7 +413,7 @@
 
     return-object v0
 
-    .line 161
+    .line 267
     :cond_3
     new-instance v0, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedCollection;
 

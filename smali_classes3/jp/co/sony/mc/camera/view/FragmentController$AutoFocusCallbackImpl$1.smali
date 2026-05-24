@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 7020
+    .line 5901
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl$1;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +46,7 @@
 .method public run()V
     .locals 0
 
-    .line 7023
+    .line 5904
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl$1;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;->-$$Nest$fgetmController(Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;)Ljp/co/sony/mc/camera/view/FragmentController;

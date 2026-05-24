@@ -32,11 +32,11 @@
 # instance fields
 .field private final mIconId:I
 
+.field private final mInfoDescriptionId:I
+
+.field private final mInfoImageId:I
+
 .field private final mTextId:I
-
-.field private final mTutorialDescriptionId:I
-
-.field private final mTutorialImageId:I
 
 
 # direct methods
@@ -63,17 +63,17 @@
     .line 21
     new-instance v7, Ljp/co/sony/mc/camera/configuration/parameters/Mic;
 
-    const v5, 0x7f11032d
+    const v5, 0x7f110376
 
-    const v6, 0x7f08035b
+    const v6, 0x7f0803d5
 
     const-string v1, "LR"
 
     const/4 v2, 0x0
 
-    const v3, 0x7f080260
+    const v3, 0x7f0802b8
 
-    const v4, 0x7f110333
+    const v4, 0x7f11037c
 
     move-object v0, v7
 
@@ -84,17 +84,17 @@
     .line 26
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Mic;
 
-    const v13, 0x7f11032e
+    const v13, 0x7f110377
 
-    const v14, 0x7f08035e
+    const v14, 0x7f0803d8
 
     const-string v9, "REAR"
 
     const/4 v10, 0x1
 
-    const v11, 0x7f080261
+    const v11, 0x7f0802b9
 
-    const v12, 0x7f110337
+    const v12, 0x7f110380
 
     move-object v8, v0
 
@@ -113,9 +113,9 @@
 
     const/4 v3, 0x2
 
-    const v4, 0x7f080261
+    const v4, 0x7f0802b9
 
-    const v5, 0x7f110336
+    const v5, 0x7f11037f
 
     move-object v1, v0
 
@@ -135,34 +135,61 @@
 
 .method private constructor <init>(Ljava/lang/String;IIIII)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId",
+            "infoDescriptionId",
+            "infoImageId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IIII)V"
         }
     .end annotation
 
-    .line 58
+    .line 60
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 59
+    .line 61
     iput p3, p0, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->mIconId:I
 
-    .line 60
+    .line 62
     iput p4, p0, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->mTextId:I
 
-    .line 61
-    iput p5, p0, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->mTutorialDescriptionId:I
+    .line 63
+    iput p5, p0, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->mInfoDescriptionId:I
 
-    .line 62
-    iput p6, p0, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->mTutorialImageId:I
+    .line 64
+    iput p6, p0, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->mInfoImageId:I
 
     return-void
 .end method
 
 .method public static getDefaultValue(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/Mic;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
-    .line 132
+    .line 134
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->isFront()Z
 
     move-result v0
@@ -175,12 +202,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 133
+    .line 135
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->REAR:Ljp/co/sony/mc/camera/configuration/parameters/Mic;
 
     return-object p0
 
-    .line 134
+    .line 136
     :cond_0
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->isFront()Z
 
@@ -194,12 +221,12 @@
 
     if-eqz p0, :cond_1
 
-    .line 135
+    .line 137
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->TOP:Ljp/co/sony/mc/camera/configuration/parameters/Mic;
 
     return-object p0
 
-    .line 137
+    .line 139
     :cond_1
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->LR:Ljp/co/sony/mc/camera/configuration/parameters/Mic;
 
@@ -208,8 +235,16 @@
 
 .method public static getOptions(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/Mic;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
-    .line 122
+    .line 124
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->isFront()Z
 
     move-result v0
@@ -222,7 +257,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 123
+    .line 125
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->LR:Ljp/co/sony/mc/camera/configuration/parameters/Mic;
 
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->REAR:Ljp/co/sony/mc/camera/configuration/parameters/Mic;
@@ -233,7 +268,7 @@
 
     return-object p0
 
-    .line 124
+    .line 126
     :cond_0
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->isFront()Z
 
@@ -247,7 +282,7 @@
 
     if-eqz p0, :cond_1
 
-    .line 125
+    .line 127
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->LR:Ljp/co/sony/mc/camera/configuration/parameters/Mic;
 
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->TOP:Ljp/co/sony/mc/camera/configuration/parameters/Mic;
@@ -258,7 +293,7 @@
 
     return-object p0
 
-    .line 127
+    .line 129
     :cond_1
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->LR:Ljp/co/sony/mc/camera/configuration/parameters/Mic;
 
@@ -271,6 +306,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/Mic;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 20
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/Mic;
@@ -304,8 +347,26 @@
 .method public getIconId()I
     .locals 0
 
-    .line 83
+    .line 85
     iget p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->mIconId:I
+
+    return p0
+.end method
+
+.method public getInfoDescriptionId()I
+    .locals 0
+
+    .line 105
+    iget p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->mInfoDescriptionId:I
+
+    return p0
+.end method
+
+.method public getInfoImageId()I
+    .locals 0
+
+    .line 115
+    iget p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->mInfoImageId:I
 
     return p0
 .end method
@@ -313,7 +374,7 @@
 .method public getName()Ljava/lang/String;
     .locals 0
 
-    .line 73
+    .line 75
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p0
@@ -328,7 +389,7 @@
 .method public getSettingKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
     .locals 0
 
-    .line 67
+    .line 69
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->MIC:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     return-object p0
@@ -337,26 +398,8 @@
 .method public getTextId()I
     .locals 0
 
-    .line 93
+    .line 95
     iget p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->mTextId:I
-
-    return p0
-.end method
-
-.method public getTutorialDescriptionId()I
-    .locals 0
-
-    .line 102
-    iget p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->mTutorialDescriptionId:I
-
-    return p0
-.end method
-
-.method public getTutorialImageId()I
-    .locals 0
-
-    .line 115
-    iget p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->mTutorialImageId:I
 
     return p0
 .end method
@@ -364,7 +407,7 @@
 .method public getValue()Ljava/lang/String;
     .locals 0
 
-    .line 118
+    .line 120
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->toString()Ljava/lang/String;
 
     move-result-object p0

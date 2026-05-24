@@ -47,7 +47,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment$audioResourceChangedListener$1;->this$0:Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;
 
-    .line 97
+    .line 100
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -58,7 +58,7 @@
 .method public onAudioResourceChanged()V
     .locals 0
 
-    .line 99
+    .line 102
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment$audioResourceChangedListener$1;->this$0:Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;->access$getCameraViewModel(Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;)Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;

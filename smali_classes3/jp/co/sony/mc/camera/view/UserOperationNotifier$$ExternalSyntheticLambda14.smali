@@ -9,13 +9,9 @@
 # instance fields
 .field public final synthetic f$0:Landroid/graphics/Point;
 
-.field public final synthetic f$1:Z
-
-.field public final synthetic f$2:Z
-
 
 # direct methods
-.method public synthetic constructor <init>(Landroid/graphics/Point;ZZ)V
+.method public synthetic constructor <init>(Landroid/graphics/Point;)V
     .locals 0
 
     .line 0
@@ -23,28 +19,20 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda14;->f$0:Landroid/graphics/Point;
 
-    iput-boolean p2, p0, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda14;->f$1:Z
-
-    iput-boolean p3, p0, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda14;->f$2:Z
-
     return-void
 .end method
 
 
 # virtual methods
 .method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+    .locals 0
 
     .line 0
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda14;->f$0:Landroid/graphics/Point;
-
-    iget-boolean v1, p0, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda14;->f$1:Z
-
-    iget-boolean p0, p0, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda14;->f$2:Z
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/UserOperationNotifier$$ExternalSyntheticLambda14;->f$0:Landroid/graphics/Point;
 
     check-cast p1, Ljp/co/sony/mc/camera/view/UserOperationListener;
 
-    invoke-static {v0, v1, p0, p1}, Ljp/co/sony/mc/camera/view/UserOperationNotifier;->$r8$lambda$mg15DbyYBqAEhh6Pa94puMtHRNk(Landroid/graphics/Point;ZZLjp/co/sony/mc/camera/view/UserOperationListener;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/UserOperationNotifier;->$r8$lambda$45SH399vWzsZ5HYldo6lnyF3_OA(Landroid/graphics/Point;Ljp/co/sony/mc/camera/view/UserOperationListener;)Lkotlin/Unit;
 
     move-result-object p0
 

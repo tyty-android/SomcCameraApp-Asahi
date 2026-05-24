@@ -60,7 +60,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
     .locals 15
 
-    .line 195
+    .line 197
     sget-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;->EVENT_AUTO_FOCUS_STARTED:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;->EVENT_ON_AUTO_FOCUS_DONE:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
@@ -101,7 +101,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 196
+    .line 198
     new-instance v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
     const-string v1, "EVENT_AUTO_FOCUS_STARTED"
@@ -112,7 +112,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;->EVENT_AUTO_FOCUS_STARTED:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
-    .line 197
+    .line 199
     new-instance v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
     const-string v1, "EVENT_ON_AUTO_FOCUS_DONE"
@@ -123,7 +123,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;->EVENT_ON_AUTO_FOCUS_DONE:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
-    .line 198
+    .line 200
     new-instance v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
     const-string v1, "EVENT_ON_AUTO_FOCUS_AREA_CHANGED"
@@ -134,7 +134,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;->EVENT_ON_AUTO_FOCUS_AREA_CHANGED:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
-    .line 199
+    .line 201
     new-instance v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
     const-string v1, "EVENT_ON_AUTO_FOCUS_CANCELED"
@@ -145,7 +145,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;->EVENT_ON_AUTO_FOCUS_CANCELED:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
-    .line 200
+    .line 202
     new-instance v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
     const-string v1, "EVENT_SET_FOCUS_POSITION"
@@ -156,7 +156,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;->EVENT_SET_FOCUS_POSITION:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
-    .line 201
+    .line 203
     new-instance v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
     const-string v1, "EVENT_CLEAR_FOCUS"
@@ -167,7 +167,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;->EVENT_CLEAR_FOCUS:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
-    .line 202
+    .line 204
     new-instance v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
     const-string v1, "EVENT_ON_OBJECT_TRACKED"
@@ -178,7 +178,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;->EVENT_ON_OBJECT_TRACKED:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
-    .line 203
+    .line 205
     new-instance v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
     const-string v1, "EVENT_FACE_DETECTION_STARTED"
@@ -189,7 +189,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;->EVENT_FACE_DETECTION_STARTED:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
-    .line 204
+    .line 206
     new-instance v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
     const-string v1, "EVENT_ON_FACE_DETECTED"
@@ -200,7 +200,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;->EVENT_ON_FACE_DETECTED:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
-    .line 205
+    .line 207
     new-instance v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
     const-string v1, "EVENT_ON_FACE_LOST"
@@ -211,7 +211,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;->EVENT_ON_FACE_LOST:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
-    .line 206
+    .line 208
     new-instance v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
     const-string v1, "EVENT_OBJECT_TRACKING_STARTED"
@@ -222,7 +222,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;->EVENT_OBJECT_TRACKING_STARTED:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
-    .line 207
+    .line 209
     new-instance v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
     const-string v1, "EVENT_OBJECT_TRACKING_STOPPED"
@@ -233,7 +233,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;->EVENT_OBJECT_TRACKING_STOPPED:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
-    .line 208
+    .line 210
     new-instance v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
     const-string v1, "EVENT_ON_FOCUS_MODE_CHANGED"
@@ -244,7 +244,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;->EVENT_ON_FOCUS_MODE_CHANGED:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
-    .line 209
+    .line 211
     new-instance v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
     const-string v1, "EVENT_ON_FOCUS_AREA_CHANGED"
@@ -255,7 +255,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;->EVENT_ON_FOCUS_AREA_CHANGED:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
-    .line 210
+    .line 212
     new-instance v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
     const-string v1, "EVENT_ON_ZOOM_STEP_CHANGED"
@@ -266,7 +266,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;->EVENT_ON_ZOOM_STEP_CHANGED:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
-    .line 195
+    .line 197
     invoke-static {}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;->$values()[Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
     move-result-object v0
@@ -278,13 +278,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 195
+    .line 197
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -292,8 +303,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 195
+    .line 197
     const-class v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -308,7 +327,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
     .locals 1
 
-    .line 195
+    .line 197
     sget-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;->$VALUES:[Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;->clone()Ljava/lang/Object;

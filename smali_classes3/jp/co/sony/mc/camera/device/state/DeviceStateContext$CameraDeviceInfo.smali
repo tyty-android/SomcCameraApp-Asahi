@@ -59,21 +59,33 @@
 
 .method private constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "cameraSessionId",
+            "cameraId"
+        }
+    .end annotation
 
-    .line 308
+    .line 282
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 p1, 0x0
 
-    .line 298
+    .line 272
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->device:Landroid/hardware/camera2/CameraDevice;
 
-    .line 309
+    .line 283
     iput-object p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->sessionId:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
 
-    .line 310
+    .line 284
     iput-object p3, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->cameraId:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     return-void
@@ -94,7 +106,7 @@
 
     const/4 v0, 0x0
 
-    .line 330
+    .line 304
     iput-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->device:Landroid/hardware/camera2/CameraDevice;
 
     return-void
@@ -103,7 +115,7 @@
 .method getCameraDevice()Landroid/hardware/camera2/CameraDevice;
     .locals 0
 
-    .line 322
+    .line 296
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->device:Landroid/hardware/camera2/CameraDevice;
 
     return-object p0
@@ -112,7 +124,7 @@
 .method getCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
     .locals 0
 
-    .line 318
+    .line 292
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->cameraId:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     return-object p0
@@ -121,7 +133,7 @@
 .method getSessionId()Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
     .locals 0
 
-    .line 314
+    .line 288
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->sessionId:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
 
     return-object p0
@@ -129,8 +141,16 @@
 
 .method updateCameraId(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
-    .line 326
+    .line 300
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->cameraId:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     return-void

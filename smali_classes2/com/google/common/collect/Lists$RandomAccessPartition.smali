@@ -31,6 +31,17 @@
 # direct methods
 .method constructor <init>(Ljava/util/List;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "list",
+            "size"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -39,7 +50,7 @@
         }
     .end annotation
 
-    .line 683
+    .line 725
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/Lists$Partition;-><init>(Ljava/util/List;I)V
 
     return-void

@@ -36,13 +36,13 @@
 .field private final count:I
 
 .field private final element:Ljava/lang/Object;
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TE;"
         }
-    .end annotation
-
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
     .end annotation
 .end field
 
@@ -51,25 +51,36 @@
 .method constructor <init>(Ljava/lang/Object;I)V
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "element",
+            "count"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;I)V"
         }
     .end annotation
 
-    .line 219
+    .line 260
     invoke-direct {p0}, Lcom/google/common/collect/Multisets$AbstractEntry;-><init>()V
 
-    .line 220
+    .line 261
     iput-object p1, p0, Lcom/google/common/collect/Multisets$ImmutableEntry;->element:Ljava/lang/Object;
 
-    .line 221
+    .line 262
     iput p2, p0, Lcom/google/common/collect/Multisets$ImmutableEntry;->count:I
 
-    .line 222
+    .line 263
     const-string p0, "count"
 
     invoke-static {p2, p0}, Lcom/google/common/collect/CollectPreconditions;->checkNonnegative(ILjava/lang/String;)I
@@ -82,7 +93,7 @@
 .method public final getCount()I
     .locals 0
 
-    .line 233
+    .line 274
     iget p0, p0, Lcom/google/common/collect/Multisets$ImmutableEntry;->count:I
 
     return p0
@@ -90,16 +101,16 @@
 
 .method public final getElement()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TE;"
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-    .end annotation
-
-    .line 228
+    .line 269
     iget-object p0, p0, Lcom/google/common/collect/Multisets$ImmutableEntry;->element:Ljava/lang/Object;
 
     return-object p0
@@ -113,6 +124,9 @@
             "Lcom/google/common/collect/Multisets$ImmutableEntry<",
             "TE;>;"
         }
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
     const/4 p0, 0x0

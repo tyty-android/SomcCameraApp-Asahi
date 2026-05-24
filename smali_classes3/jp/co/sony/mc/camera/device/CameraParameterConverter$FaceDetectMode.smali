@@ -26,6 +26,14 @@
 
 .method static getApi2Value(Ljava/lang/String;)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "valueApi1"
+        }
+    .end annotation
 
     .line 353
     invoke-virtual {p0}, Ljava/lang/String;->hashCode()I

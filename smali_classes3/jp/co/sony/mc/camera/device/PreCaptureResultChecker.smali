@@ -60,6 +60,26 @@
 
 .method public constructor <init>(Landroid/os/Handler;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Ljp/co/sony/mc/camera/device/CaptureResultNotifier$PreCaptureCallback;Ljp/co/sony/mc/camera/device/SnapshotRequest;ZZZ)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "handler",
+            "sessionId",
+            "callback",
+            "snapshotRequest",
+            "isAvailableResZeroShutterLag",
+            "isAvailableCaptureDuration",
+            "isAvailablePreviewLatency"
+        }
+    .end annotation
 
     .line 44
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/device/CaptureResultCheckerBase;-><init>(Landroid/os/Handler;)V
@@ -102,6 +122,14 @@
 
 .method private changeTo(Ljp/co/sony/mc/camera/device/PreCaptureResultChecker$State;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "next"
+        }
+    .end annotation
 
     .line 152
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/PreCaptureResultChecker;->mState:Ljp/co/sony/mc/camera/device/PreCaptureResultChecker$State;
@@ -167,6 +195,16 @@
 
 .method private check(Landroid/hardware/camera2/CaptureRequest;Landroid/hardware/camera2/CaptureResult;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "result"
+        }
+    .end annotation
 
     .line 95
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/PreCaptureResultChecker;->mState:Ljp/co/sony/mc/camera/device/PreCaptureResultChecker$State;
@@ -415,6 +453,14 @@
 
 .method private getCaptureStartPointWithVendorTag(Landroid/hardware/camera2/CaptureResult;)Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 
     .line 66
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;->INVALID:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;
@@ -455,6 +501,14 @@
 
 .method private getDurationWithVendorTag(Landroid/hardware/camera2/CaptureResult;)J
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 
     .line 81
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/device/PreCaptureResultChecker;->mIsAvailableCaptureDuration:Z
@@ -484,6 +538,14 @@
 
 .method private getPreviewLatencyWithVendorTag(Landroid/hardware/camera2/CaptureResult;)J
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 
     .line 88
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/device/PreCaptureResultChecker;->mIsAvailablePreviewLatency:Z
@@ -515,6 +577,16 @@
 # virtual methods
 .method public checkOnCompleted(Landroid/hardware/camera2/CaptureRequest;Ljp/co/sony/mc/camera/device/CaptureResultHolder;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "resultHolder"
+        }
+    .end annotation
 
     .line 61
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CaptureResultHolder;->getLatest()Landroid/hardware/camera2/CaptureResult;
@@ -528,6 +600,16 @@
 
 .method public checkOnPartial(Landroid/hardware/camera2/CaptureRequest;Landroid/hardware/camera2/CaptureResult;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "result"
+        }
+    .end annotation
 
     .line 56
     invoke-direct {p0, p1, p2}, Ljp/co/sony/mc/camera/device/PreCaptureResultChecker;->check(Landroid/hardware/camera2/CaptureRequest;Landroid/hardware/camera2/CaptureResult;)V

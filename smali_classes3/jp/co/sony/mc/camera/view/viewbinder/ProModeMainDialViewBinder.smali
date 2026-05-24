@@ -337,7 +337,7 @@
 
     if-eqz v0, :cond_0
 
-    const p1, 0x7f0901fe
+    const p1, 0x7f090206
 
     .line 61
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeMainDialViewBinder;->toggleMainControls(I)V
@@ -354,7 +354,7 @@
 
     if-eqz v0, :cond_1
 
-    const p1, 0x7f090200
+    const p1, 0x7f090208
 
     .line 65
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeMainDialViewBinder;->toggleMainControls(I)V
@@ -371,7 +371,7 @@
 
     if-eqz p1, :cond_2
 
-    const p1, 0x7f0901ff
+    const p1, 0x7f090207
 
     .line 69
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeMainDialViewBinder;->toggleMainControls(I)V
@@ -410,7 +410,7 @@
 
     move-result v3
 
-    const v4, 0x7f090278
+    const v4, 0x7f090281
 
     if-ne v3, v4, :cond_2
 
@@ -469,7 +469,7 @@
 
     move-result v3
 
-    const v4, 0x7f090276
+    const v4, 0x7f09027f
 
     if-ne v3, v4, :cond_4
 
@@ -508,7 +508,7 @@
 
     move-result p1
 
-    const v3, 0x7f090277
+    const v3, 0x7f090280
 
     if-ne p1, v3, :cond_7
 
@@ -757,7 +757,7 @@
 
     if-eqz p0, :cond_0
 
-    const p0, 0x7f070752
+    const p0, 0x7f0706ff
 
     .line 141
     invoke-virtual {p2, p0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -767,7 +767,7 @@
     goto :goto_0
 
     :cond_0
-    const p0, 0x7f070751
+    const p0, 0x7f0706fe
 
     .line 145
     invoke-virtual {p2, p0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -777,7 +777,7 @@
     goto :goto_0
 
     :cond_1
-    const p0, 0x7f070745
+    const p0, 0x7f0706f2
 
     .line 150
     invoke-virtual {p2, p0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -808,7 +808,7 @@
 
     if-eqz p0, :cond_0
 
-    const p0, 0x7f070753
+    const p0, 0x7f070700
 
     .line 157
     invoke-virtual {p1, p0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -818,7 +818,7 @@
     goto :goto_0
 
     :cond_0
-    const p0, 0x7f070746
+    const p0, 0x7f0706f3
 
     .line 160
     invoke-virtual {p1, p0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -1564,7 +1564,7 @@
 
     invoke-virtual {v1, v3}, Ljp/co/sony/mc/camera/view/widget/OutlineTextView;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    const v1, 0x7f11044a
+    const v1, 0x7f110495
 
     .line 237
     invoke-direct {v0, v1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeMainDialViewBinder;->updateTitle(I)V
@@ -1705,7 +1705,7 @@
     .line 284
     iget-object v3, v0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeMainDialViewBinder;->context:Landroid/content/Context;
 
-    const v5, 0x7f1102dc
+    const v5, 0x7f110325
 
     invoke-virtual {v3, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1863,7 +1863,7 @@
     return-void
 
     :pswitch_data_0
-    .packed-switch 0x7f0901fe
+    .packed-switch 0x7f090206
         :pswitch_2
         :pswitch_1
         :pswitch_0

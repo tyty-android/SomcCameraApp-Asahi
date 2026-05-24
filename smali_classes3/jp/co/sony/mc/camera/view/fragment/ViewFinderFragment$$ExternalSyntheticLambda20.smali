@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroidx/lifecycle/Observer;
+.implements Lkotlin/jvm/functions/Function4;
 
 
 # instance fields
@@ -24,15 +24,43 @@
 
 
 # virtual methods
-.method public final onChanged(Ljava/lang/Object;)V
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda20;->f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
-    check-cast p1, Ljp/co/sony/mc/camera/view/uistate/PreviewCoverState;
+    check-cast p1, Ljava/lang/Boolean;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->$r8$lambda$gm5RGD0yecVwDwLssXmS8CzzAqk(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Ljp/co/sony/mc/camera/view/uistate/PreviewCoverState;)V
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
-    return-void
+    move-result p1
+
+    check-cast p2, Ljava/lang/Boolean;
+
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p2
+
+    check-cast p3, Ljava/lang/Boolean;
+
+    invoke-virtual {p3}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p3
+
+    check-cast p4, Ljava/lang/Boolean;
+
+    invoke-virtual {p4}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p4
+
+    invoke-static {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->$r8$lambda$prLimm6mHagQZ0XH-Yia9FLCeLo(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;ZZZZ)F
+
+    move-result p0
+
+    invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object p0
+
+    return-object p0
 .end method

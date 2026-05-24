@@ -30,7 +30,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 38
+    .line 41
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -40,8 +40,16 @@
 # virtual methods
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "in"
+        }
+    .end annotation
 
-    .line 38
+    .line 41
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData$1;->createFromParcel(Landroid/os/Parcel;)Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData;
 
     move-result-object p0
@@ -51,8 +59,16 @@
 
 .method public createFromParcel(Landroid/os/Parcel;)Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "in"
+        }
+    .end annotation
 
-    .line 41
+    .line 44
     new-instance p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData;
 
     const/4 v0, 0x0
@@ -64,8 +80,16 @@
 
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "size"
+        }
+    .end annotation
 
-    .line 38
+    .line 41
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData$1;->newArray(I)[Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData;
 
     move-result-object p0
@@ -75,8 +99,16 @@
 
 .method public newArray(I)[Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "size"
+        }
+    .end annotation
 
-    .line 46
+    .line 49
     new-array p0, p1, [Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData;
 
     return-object p0

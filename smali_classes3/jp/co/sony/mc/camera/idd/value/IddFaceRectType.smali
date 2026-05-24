@@ -82,7 +82,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 87
+    .line 146
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddFaceRectType;
 
     const-string v1, "HUMAN_FACE"
@@ -93,7 +93,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddFaceRectType;->HUMAN_FACE:Ljp/co/sony/mc/camera/idd/value/IddFaceRectType;
 
-    .line 88
+    .line 147
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddFaceRectType;
 
     const-string v1, "HUMAN_BODY"
@@ -104,7 +104,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddFaceRectType;->HUMAN_BODY:Ljp/co/sony/mc/camera/idd/value/IddFaceRectType;
 
-    .line 89
+    .line 148
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddFaceRectType;
 
     const-string v1, "ANIMAL_FACE"
@@ -115,7 +115,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddFaceRectType;->ANIMAL_FACE:Ljp/co/sony/mc/camera/idd/value/IddFaceRectType;
 
-    .line 90
+    .line 149
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddFaceRectType;
 
     const-string v1, "ANIMAL_BODY"
@@ -159,7 +159,7 @@
         }
     .end annotation
 
-    .line 86
+    .line 145
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -190,7 +190,7 @@
 
     move-result-object p0
 
-    .line 102
+    .line 161
     check-cast p0, Ljp/co/sony/mc/camera/idd/value/IddFaceRectType;
 
     return-object p0
@@ -205,7 +205,7 @@
 
     move-result-object v0
 
-    .line 102
+    .line 161
     check-cast v0, [Ljp/co/sony/mc/camera/idd/value/IddFaceRectType;
 
     return-object v0

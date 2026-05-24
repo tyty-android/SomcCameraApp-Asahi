@@ -43,6 +43,20 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/recorder/utility/encoder/MediaMuxerWrapper;Landroid/media/MediaCodec;Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask$EncoderStateListener;Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "muxer",
+            "encoder",
+            "listener",
+            "name"
+        }
+    .end annotation
 
     .line 43
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

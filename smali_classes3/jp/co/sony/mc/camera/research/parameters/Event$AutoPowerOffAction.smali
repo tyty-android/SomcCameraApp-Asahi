@@ -31,23 +31,19 @@
 
 .field public static final enum DEFAULT:Ljp/co/sony/mc/camera/research/parameters/Event$AutoPowerOffAction;
 
-.field public static final enum ON_LOCKSCREEN:Ljp/co/sony/mc/camera/research/parameters/Event$AutoPowerOffAction;
-
 .field public static final enum REMOCON:Ljp/co/sony/mc/camera/research/parameters/Event$AutoPowerOffAction;
 
 
 # direct methods
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/research/parameters/Event$AutoPowerOffAction;
-    .locals 3
+    .locals 2
 
     .line 269
     sget-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$AutoPowerOffAction;->DEFAULT:Ljp/co/sony/mc/camera/research/parameters/Event$AutoPowerOffAction;
 
-    sget-object v1, Ljp/co/sony/mc/camera/research/parameters/Event$AutoPowerOffAction;->ON_LOCKSCREEN:Ljp/co/sony/mc/camera/research/parameters/Event$AutoPowerOffAction;
+    sget-object v1, Ljp/co/sony/mc/camera/research/parameters/Event$AutoPowerOffAction;->REMOCON:Ljp/co/sony/mc/camera/research/parameters/Event$AutoPowerOffAction;
 
-    sget-object v2, Ljp/co/sony/mc/camera/research/parameters/Event$AutoPowerOffAction;->REMOCON:Ljp/co/sony/mc/camera/research/parameters/Event$AutoPowerOffAction;
-
-    filled-new-array {v0, v1, v2}, [Ljp/co/sony/mc/camera/research/parameters/Event$AutoPowerOffAction;
+    filled-new-array {v0, v1}, [Ljp/co/sony/mc/camera/research/parameters/Event$AutoPowerOffAction;
 
     move-result-object v0
 
@@ -71,20 +67,9 @@
     .line 271
     new-instance v0, Ljp/co/sony/mc/camera/research/parameters/Event$AutoPowerOffAction;
 
-    const-string v1, "ON_LOCKSCREEN"
-
-    const/4 v2, 0x1
-
-    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/research/parameters/Event$AutoPowerOffAction;-><init>(Ljava/lang/String;I)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$AutoPowerOffAction;->ON_LOCKSCREEN:Ljp/co/sony/mc/camera/research/parameters/Event$AutoPowerOffAction;
-
-    .line 272
-    new-instance v0, Ljp/co/sony/mc/camera/research/parameters/Event$AutoPowerOffAction;
-
     const-string v1, "REMOCON"
 
-    const/4 v2, 0x2
+    const/4 v2, 0x1
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/research/parameters/Event$AutoPowerOffAction;-><init>(Ljava/lang/String;I)V
 
@@ -102,6 +87,17 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
@@ -116,6 +112,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/research/parameters/Event$AutoPowerOffAction;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 269
     const-class v0, Ljp/co/sony/mc/camera/research/parameters/Event$AutoPowerOffAction;

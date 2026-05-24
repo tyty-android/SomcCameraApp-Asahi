@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/util/concurrent/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/util/concurrent/ForwardingFuture$SimpleForwardingFuture;
@@ -29,7 +32,7 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 40
+    .line 42
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingObject;-><init>()V
 
     return-void
@@ -39,8 +42,16 @@
 # virtual methods
 .method public cancel(Z)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mayInterruptIfRunning"
+        }
+    .end annotation
 
-    .line 47
+    .line 50
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingFuture;->delegate()Ljava/util/concurrent/Future;
 
     move-result-object p0
@@ -55,7 +66,7 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 36
+    .line 37
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingFuture;->delegate()Ljava/util/concurrent/Future;
 
     move-result-object p0
@@ -75,6 +86,9 @@
 
 .method public get()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/util/concurrent/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TV;"
@@ -88,7 +102,7 @@
         }
     .end annotation
 
-    .line 62
+    .line 67
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingFuture;->delegate()Ljava/util/concurrent/Future;
 
     move-result-object p0
@@ -102,6 +116,20 @@
 
 .method public get(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/util/concurrent/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "timeout",
+            "unit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(J",
@@ -118,7 +146,7 @@
         }
     .end annotation
 
-    .line 68
+    .line 75
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingFuture;->delegate()Ljava/util/concurrent/Future;
 
     move-result-object p0
@@ -133,7 +161,7 @@
 .method public isCancelled()Z
     .locals 0
 
-    .line 52
+    .line 55
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingFuture;->delegate()Ljava/util/concurrent/Future;
 
     move-result-object p0
@@ -148,7 +176,7 @@
 .method public isDone()Z
     .locals 0
 
-    .line 57
+    .line 60
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingFuture;->delegate()Ljava/util/concurrent/Future;
 
     move-result-object p0

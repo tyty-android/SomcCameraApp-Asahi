@@ -53,7 +53,7 @@
     f = "CaptureButton.kt"
     i = {}
     l = {
-        0x11e
+        0x12d
     }
     m = "invokeSuspend"
     n = {}
@@ -167,7 +167,7 @@
 
     move-result-object v0
 
-    .line 285
+    .line 300
     iget v1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton$bindViews$1;->label:I
 
     const/4 v2, 0x1
@@ -192,7 +192,7 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 286
+    .line 301
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton$bindViews$1;->this$0:Ljp/co/sony/mc/camera/view/widget/CaptureButton;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->access$getButtonState$p(Ljp/co/sony/mc/camera/view/widget/CaptureButton;)Lkotlinx/coroutines/flow/MutableStateFlow;

@@ -40,6 +40,16 @@
 # virtual methods
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "o1",
+            "o2"
+        }
+    .end annotation
 
     .line 59
     check-cast p1, Ljp/co/sony/mc/camera/device/FramedropProfiler$DropInfo;
@@ -55,6 +65,16 @@
 
 .method public compare(Ljp/co/sony/mc/camera/device/FramedropProfiler$DropInfo;Ljp/co/sony/mc/camera/device/FramedropProfiler$DropInfo;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "o1",
+            "o2"
+        }
+    .end annotation
 
     .line 62
     invoke-static {p1}, Ljp/co/sony/mc/camera/device/FramedropProfiler$DropInfo;->-$$Nest$fgetdurationNanos(Ljp/co/sony/mc/camera/device/FramedropProfiler$DropInfo;)J

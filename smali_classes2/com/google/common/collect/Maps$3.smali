@@ -30,8 +30,18 @@
 # direct methods
 .method constructor <init>(Ljava/util/Iterator;Lcom/google/common/base/Function;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x1010
+        }
+        names = {
+            "backingIterator",
+            "val$function"
+        }
+    .end annotation
 
-    .line 844
+    .line 969
     iput-object p2, p0, Lcom/google/common/collect/Maps$3;->val$function:Lcom/google/common/base/Function;
 
     invoke-direct {p0, p1}, Lcom/google/common/collect/TransformedIterator;-><init>(Ljava/util/Iterator;)V
@@ -43,8 +53,20 @@
 # virtual methods
 .method bridge synthetic transform(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 844
+    .line 969
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Maps$3;->transform(Ljava/lang/Object;)Ljava/util/Map$Entry;
 
     move-result-object p0
@@ -54,6 +76,19 @@
 
 .method transform(Ljava/lang/Object;)Ljava/util/Map$Entry;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -62,7 +97,7 @@
         }
     .end annotation
 
-    .line 847
+    .line 972
     iget-object p0, p0, Lcom/google/common/collect/Maps$3;->val$function:Lcom/google/common/base/Function;
 
     invoke-interface {p0, p1}, Lcom/google/common/base/Function;->apply(Ljava/lang/Object;)Ljava/lang/Object;

@@ -48,6 +48,16 @@
 # virtual methods
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "item1",
+            "item2"
+        }
+    .end annotation
 
     .line 56
     check-cast p1, Ljp/co/sony/mc/camera/util/FaceDetectUtil$DistanceMapItem;
@@ -63,6 +73,16 @@
 
 .method public compare(Ljp/co/sony/mc/camera/util/FaceDetectUtil$DistanceMapItem;Ljp/co/sony/mc/camera/util/FaceDetectUtil$DistanceMapItem;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "item1",
+            "item2"
+        }
+    .end annotation
 
     .line 59
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/util/FaceDetectUtil$DistanceMapItem;->getDistance()I

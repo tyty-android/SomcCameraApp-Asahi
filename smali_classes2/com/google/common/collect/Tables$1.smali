@@ -36,7 +36,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 588
+    .line 698
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,8 +46,16 @@
 # virtual methods
 .method public bridge synthetic apply(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "input"
+        }
+    .end annotation
 
-    .line 588
+    .line 698
     check-cast p1, Ljava/util/Map;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Tables$1;->apply(Ljava/util/Map;)Ljava/util/Map;
@@ -59,6 +67,15 @@
 
 .method public apply(Ljava/util/Map;)Ljava/util/Map;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "input"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -73,7 +90,7 @@
         }
     .end annotation
 
-    .line 591
+    .line 701
     invoke-static {p1}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object p0

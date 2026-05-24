@@ -16,12 +16,28 @@
 
 # virtual methods
 .method public abstract onBatteryLevelChanged(I)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "level"
+        }
+    .end annotation
 .end method
 
 .method public abstract onLowBatteryRestored()V
 .end method
 
 .method public abstract onReachBatteryLimit(Z)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isOnStartup"
+        }
+    .end annotation
 .end method
 
 .method public abstract onReachLowBattery()V

@@ -55,6 +55,17 @@
 # direct methods
 .method private constructor <init>(Lcom/google/common/collect/ImmutableList;Lcom/google/common/collect/CartesianList;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "axes",
+            "delegate"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -66,13 +77,13 @@
         }
     .end annotation
 
-    .line 1330
+    .line 1460
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingCollection;-><init>()V
 
-    .line 1331
+    .line 1461
     iput-object p1, p0, Lcom/google/common/collect/Sets$CartesianSet;->axes:Lcom/google/common/collect/ImmutableList;
 
-    .line 1332
+    .line 1462
     iput-object p2, p0, Lcom/google/common/collect/Sets$CartesianSet;->delegate:Lcom/google/common/collect/CartesianList;
 
     return-void
@@ -80,6 +91,15 @@
 
 .method static create(Ljava/util/List;)Ljava/util/Set;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sets"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -95,7 +115,7 @@
         }
     .end annotation
 
-    .line 1301
+    .line 1422
     new-instance v0, Lcom/google/common/collect/ImmutableList$Builder;
 
     invoke-interface {p0}, Ljava/util/List;->size()I
@@ -104,7 +124,7 @@
 
     invoke-direct {v0, v1}, Lcom/google/common/collect/ImmutableList$Builder;-><init>(I)V
 
-    .line 1302
+    .line 1423
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -122,43 +142,43 @@
 
     check-cast v1, Ljava/util/Set;
 
-    .line 1303
+    .line 1424
     invoke-static {v1}, Lcom/google/common/collect/ImmutableSet;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/ImmutableSet;
 
     move-result-object v1
 
-    .line 1304
+    .line 1425
     invoke-virtual {v1}, Lcom/google/common/collect/ImmutableSet;->isEmpty()Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 1305
+    .line 1426
     invoke-static {}, Lcom/google/common/collect/ImmutableSet;->of()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object p0
 
     return-object p0
 
-    .line 1307
+    .line 1428
     :cond_0
     invoke-virtual {v0, v1}, Lcom/google/common/collect/ImmutableList$Builder;->add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList$Builder;
 
     goto :goto_0
 
-    .line 1309
+    .line 1430
     :cond_1
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableList$Builder;->build()Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
 
-    .line 1310
+    .line 1431
     new-instance v0, Lcom/google/common/collect/Sets$CartesianSet$1;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/Sets$CartesianSet$1;-><init>(Lcom/google/common/collect/ImmutableList;)V
 
-    .line 1327
+    .line 1457
     new-instance v1, Lcom/google/common/collect/Sets$CartesianSet;
 
     new-instance v2, Lcom/google/common/collect/CartesianList;
@@ -175,11 +195,19 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 4
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 1342
+    .line 1472
     instance-of v0, p1, Ljava/util/List;
 
     const/4 v1, 0x0
@@ -188,11 +216,11 @@
 
     return v1
 
-    .line 1345
+    .line 1475
     :cond_0
     check-cast p1, Ljava/util/List;
 
-    .line 1346
+    .line 1476
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v0
@@ -207,7 +235,7 @@
 
     return v1
 
-    .line 1350
+    .line 1480
     :cond_1
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -226,7 +254,7 @@
 
     move-result-object v2
 
-    .line 1351
+    .line 1481
     iget-object v3, p0, Lcom/google/common/collect/Sets$CartesianSet;->axes:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {v3, v0}, Lcom/google/common/collect/ImmutableList;->get(I)Ljava/lang/Object;
@@ -257,7 +285,7 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 1295
+    .line 1416
     invoke-virtual {p0}, Lcom/google/common/collect/Sets$CartesianSet;->delegate()Ljava/util/Collection;
 
     move-result-object p0
@@ -276,28 +304,36 @@
         }
     .end annotation
 
-    .line 1337
+    .line 1467
     iget-object p0, p0, Lcom/google/common/collect/Sets$CartesianSet;->delegate:Lcom/google/common/collect/CartesianList;
 
     return-object p0
 .end method
 
 .method public equals(Ljava/lang/Object;)Z
-    .locals 1
+    .locals 3
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 1363
+    .line 1493
     instance-of v0, p1, Lcom/google/common/collect/Sets$CartesianSet;
 
     if-eqz v0, :cond_0
 
-    .line 1364
+    .line 1494
     check-cast p1, Lcom/google/common/collect/Sets$CartesianSet;
 
-    .line 1365
+    .line 1495
     iget-object p0, p0, Lcom/google/common/collect/Sets$CartesianSet;->axes:Lcom/google/common/collect/ImmutableList;
 
     iget-object p1, p1, Lcom/google/common/collect/Sets$CartesianSet;->axes:Lcom/google/common/collect/ImmutableList;
@@ -308,19 +344,44 @@
 
     return p0
 
-    .line 1367
+    .line 1497
     :cond_0
-    invoke-super {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    instance-of v0, p1, Ljava/util/Set;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_1
+
+    .line 1498
+    check-cast p1, Ljava/util/Set;
+
+    .line 1499
+    invoke-virtual {p0}, Lcom/google/common/collect/Sets$CartesianSet;->size()I
+
+    move-result v0
+
+    invoke-interface {p1}, Ljava/util/Set;->size()I
+
+    move-result v2
+
+    if-ne v0, v2, :cond_1
+
+    invoke-virtual {p0, p1}, Lcom/google/common/collect/Sets$CartesianSet;->containsAll(Ljava/util/Collection;)Z
 
     move-result p0
 
-    return p0
+    if-eqz p0, :cond_1
+
+    const/4 v1, 0x1
+
+    :cond_1
+    return v1
 .end method
 
 .method public hashCode()I
     .locals 6
 
-    .line 1376
+    .line 1510
     invoke-virtual {p0}, Lcom/google/common/collect/Sets$CartesianSet;->size()I
 
     move-result v0
@@ -331,7 +392,7 @@
 
     const/4 v2, 0x0
 
-    .line 1377
+    .line 1511
     :goto_0
     iget-object v3, p0, Lcom/google/common/collect/Sets$CartesianSet;->axes:Lcom/google/common/collect/ImmutableList;
 
@@ -351,7 +412,7 @@
 
     goto :goto_0
 
-    .line 1383
+    .line 1517
     :cond_0
     iget-object v2, p0, Lcom/google/common/collect/Sets$CartesianSet;->axes:Lcom/google/common/collect/ImmutableList;
 
@@ -374,7 +435,7 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    .line 1384
+    .line 1518
     invoke-virtual {p0}, Lcom/google/common/collect/Sets$CartesianSet;->size()I
 
     move-result v4

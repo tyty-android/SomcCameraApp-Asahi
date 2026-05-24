@@ -155,6 +155,16 @@
 
 .method private varargs checkStorageState(Ljp/co/sony/mc/camera/storage/Storage$StorageType;[Ljp/co/sony/mc/camera/storage/Storage$StorageState;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "expectStates"
+        }
+    .end annotation
 
     .line 363
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/storage/StorageImpl;->getCurrentState(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)Ljp/co/sony/mc/camera/storage/Storage$StorageState;
@@ -413,6 +423,14 @@
 # virtual methods
 .method public addStorageReadyStateListener(Ljp/co/sony/mc/camera/storage/Storage$StorageReadyStateListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -427,6 +445,14 @@
 
 .method public addStorageStateListener(Ljp/co/sony/mc/camera/storage/Storage$StorageStateListener;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 305
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -503,6 +529,14 @@
 
 .method public canPushStoreRequest(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     .line 341
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/storage/StorageImpl;->areAllStoragesActivated()Z
@@ -570,6 +604,16 @@
 
 .method public createNotifier(Ljp/co/sony/mc/camera/storage/Storage$StorageType;I)Ljp/co/sony/mc/camera/storage/Storage$StorageWriteNotifier;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "governer"
+        }
+    .end annotation
 
     .line 426
     new-instance v0, Ljp/co/sony/mc/camera/storage/StorageWriteNotifierImpl;
@@ -583,6 +627,14 @@
 
 .method public deleteFile(Landroid/net/Uri;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "uri"
+        }
+    .end annotation
 
     .line 464
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/StorageImpl;->mContext:Landroid/content/Context;
@@ -686,6 +738,14 @@
 
 .method public getCurrentState(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)Ljp/co/sony/mc/camera/storage/Storage$StorageState;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     .line 323
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -739,6 +799,14 @@
 
 .method public getRemainStorage(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)J
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     .line 332
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -863,6 +931,14 @@
 
 .method public isStorageReadable(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     .line 389
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/StorageImpl;->mStorageController:Ljp/co/sony/mc/camera/storage/StorageController;
@@ -892,6 +968,14 @@
 
 .method public onWriteStorage(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     .line 435
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -938,6 +1022,14 @@
 
 .method public open(Landroid/content/Context;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 147
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -1116,6 +1208,14 @@
 
 .method public removeStorageReadyStateListener(Ljp/co/sony/mc/camera/storage/Storage$StorageReadyStateListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -1130,6 +1230,14 @@
 
 .method public removeStorageStateListener(Ljp/co/sony/mc/camera/storage/Storage$StorageStateListener;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 314
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -1160,6 +1268,18 @@
 
 .method public requestLoad(Landroid/net/Uri;ILjp/co/sony/mc/camera/storage/Storage$OnLoadCompletedListener;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x0,
+            0x10
+        }
+        names = {
+            "uri",
+            "orientation",
+            "listener"
+        }
+    .end annotation
 
     .line 284
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -1211,6 +1331,16 @@
 
 .method public requestStore(Ljp/co/sony/mc/camera/storage/SavingRequest;Ljp/co/sony/mc/camera/storage/Storage$StorageType;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "type"
+        }
+    .end annotation
 
     .line 249
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z

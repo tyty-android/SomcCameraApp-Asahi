@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements Landroid/view/accessibility/AccessibilityManager$TouchExplorationStateChangeListener;
 
 
 # instance fields
@@ -24,17 +24,13 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final onTouchExplorationStateChanged(Z)V
     .locals 0
 
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder$$ExternalSyntheticLambda14;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;
 
-    check-cast p1, Ljava/lang/Boolean;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;->$r8$lambda$kHd5zQJ9eUrP81bwjkeXX4LaiUg(Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;Z)V
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;->$r8$lambda$6MO2ziMr0BePYBdk7x441eg5AqA(Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
+    return-void
 .end method

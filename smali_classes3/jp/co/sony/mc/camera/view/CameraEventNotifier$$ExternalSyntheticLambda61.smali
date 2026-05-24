@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field public final synthetic f$0:Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;
+.field public final synthetic f$0:Z
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;)V
+.method public synthetic constructor <init>(Z)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda61;->f$0:Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;
+    iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda61;->f$0:Z
 
     return-void
 .end method
@@ -28,11 +28,11 @@
     .locals 0
 
     .line 0
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda61;->f$0:Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;
+    iget-boolean p0, p0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda61;->f$0:Z
 
     check-cast p1, Ljp/co/sony/mc/camera/view/CameraEventListener;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->$r8$lambda$DU37-OW3kfR2DJNORLDsuV5aMnc(Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->$r8$lambda$3IvyYYSj2EEF6lM3RRAWOqUvLkA(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 

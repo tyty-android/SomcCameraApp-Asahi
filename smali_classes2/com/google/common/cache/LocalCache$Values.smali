@@ -28,8 +28,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/cache/LocalCache;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 4418
+    .line 4460
     iput-object p1, p0, Lcom/google/common/cache/LocalCache$Values;->this$0:Lcom/google/common/cache/LocalCache;
 
     invoke-direct {p0}, Ljava/util/AbstractCollection;-><init>()V
@@ -42,7 +50,7 @@
 .method public clear()V
     .locals 0
 
-    .line 4431
+    .line 4473
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$Values;->this$0:Lcom/google/common/cache/LocalCache;
 
     invoke-virtual {p0}, Lcom/google/common/cache/LocalCache;->clear()V
@@ -52,8 +60,16 @@
 
 .method public contains(Ljava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 4441
+    .line 4483
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$Values;->this$0:Lcom/google/common/cache/LocalCache;
 
     invoke-virtual {p0, p1}, Lcom/google/common/cache/LocalCache;->containsValue(Ljava/lang/Object;)Z
@@ -66,7 +82,7 @@
 .method public isEmpty()Z
     .locals 0
 
-    .line 4426
+    .line 4468
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$Values;->this$0:Lcom/google/common/cache/LocalCache;
 
     invoke-virtual {p0}, Lcom/google/common/cache/LocalCache;->isEmpty()Z
@@ -86,7 +102,7 @@
         }
     .end annotation
 
-    .line 4436
+    .line 4478
     new-instance v0, Lcom/google/common/cache/LocalCache$ValueIterator;
 
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$Values;->this$0:Lcom/google/common/cache/LocalCache;
@@ -99,7 +115,7 @@
 .method public size()I
     .locals 0
 
-    .line 4421
+    .line 4463
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$Values;->this$0:Lcom/google/common/cache/LocalCache;
 
     invoke-virtual {p0}, Lcom/google/common/cache/LocalCache;->size()I
@@ -107,41 +123,4 @@
     move-result p0
 
     return p0
-.end method
-
-.method public toArray()[Ljava/lang/Object;
-    .locals 0
-
-    .line 4449
-    invoke-static {p0}, Lcom/google/common/cache/LocalCache;->access$200(Ljava/util/Collection;)Ljava/util/ArrayList;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/util/ArrayList;->toArray()[Ljava/lang/Object;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public toArray([Ljava/lang/Object;)[Ljava/lang/Object;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<E:",
-            "Ljava/lang/Object;",
-            ">([TE;)[TE;"
-        }
-    .end annotation
-
-    .line 4454
-    invoke-static {p0}, Lcom/google/common/cache/LocalCache;->access$200(Ljava/util/Collection;)Ljava/util/ArrayList;
-
-    move-result-object p0
-
-    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
-
-    move-result-object p0
-
-    return-object p0
 .end method

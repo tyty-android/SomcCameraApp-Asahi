@@ -30,6 +30,21 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/device/FocusMagnificationResultChecker;Ljava/lang/Float;Ljava/lang/Float;Landroid/graphics/Point;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$zoomRatio",
+            "val$resultFocusRatio",
+            "val$newPosition"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"

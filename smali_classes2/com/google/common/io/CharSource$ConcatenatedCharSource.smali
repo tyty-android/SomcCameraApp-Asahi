@@ -30,6 +30,15 @@
 # direct methods
 .method constructor <init>(Ljava/lang/Iterable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sources"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -40,10 +49,10 @@
         }
     .end annotation
 
-    .line 603
+    .line 709
     invoke-direct {p0}, Lcom/google/common/io/CharSource;-><init>()V
 
-    .line 604
+    .line 710
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -65,7 +74,7 @@
         }
     .end annotation
 
-    .line 614
+    .line 720
     iget-object p0, p0, Lcom/google/common/io/CharSource$ConcatenatedCharSource;->sources:Ljava/lang/Iterable;
 
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -85,7 +94,7 @@
 
     check-cast v0, Lcom/google/common/io/CharSource;
 
-    .line 615
+    .line 721
     invoke-virtual {v0}, Lcom/google/common/io/CharSource;->isEmpty()Z
 
     move-result v0
@@ -110,7 +119,7 @@
         }
     .end annotation
 
-    .line 638
+    .line 744
     iget-object p0, p0, Lcom/google/common/io/CharSource$ConcatenatedCharSource;->sources:Ljava/lang/Iterable;
 
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -132,7 +141,7 @@
 
     check-cast v2, Lcom/google/common/io/CharSource;
 
-    .line 639
+    .line 745
     invoke-virtual {v2}, Lcom/google/common/io/CharSource;->length()J
 
     move-result-wide v2
@@ -156,7 +165,7 @@
         }
     .end annotation
 
-    .line 625
+    .line 731
     iget-object p0, p0, Lcom/google/common/io/CharSource$ConcatenatedCharSource;->sources:Ljava/lang/Iterable;
 
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -178,26 +187,26 @@
 
     check-cast v2, Lcom/google/common/io/CharSource;
 
-    .line 626
+    .line 732
     invoke-virtual {v2}, Lcom/google/common/io/CharSource;->lengthIfKnown()Lcom/google/common/base/Optional;
 
     move-result-object v2
 
-    .line 627
+    .line 733
     invoke-virtual {v2}, Lcom/google/common/base/Optional;->isPresent()Z
 
     move-result v3
 
     if-nez v3, :cond_0
 
-    .line 628
+    .line 734
     invoke-static {}, Lcom/google/common/base/Optional;->absent()Lcom/google/common/base/Optional;
 
     move-result-object p0
 
     return-object p0
 
-    .line 630
+    .line 736
     :cond_0
     invoke-virtual {v2}, Lcom/google/common/base/Optional;->get()Ljava/lang/Object;
 
@@ -213,7 +222,7 @@
 
     goto :goto_0
 
-    .line 632
+    .line 738
     :cond_1
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -234,7 +243,7 @@
         }
     .end annotation
 
-    .line 609
+    .line 715
     new-instance v0, Lcom/google/common/io/MultiReader;
 
     iget-object p0, p0, Lcom/google/common/io/CharSource$ConcatenatedCharSource;->sources:Ljava/lang/Iterable;
@@ -251,34 +260,16 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 646
+    .line 752
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "CharSource.concat("
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
     iget-object p0, p0, Lcom/google/common/io/CharSource$ConcatenatedCharSource;->sources:Ljava/lang/Iterable;
 
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, 0x13
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v0, "CharSource.concat("
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 

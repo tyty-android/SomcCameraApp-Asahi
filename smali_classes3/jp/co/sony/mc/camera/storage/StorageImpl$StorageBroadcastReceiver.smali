@@ -21,6 +21,14 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/storage/StorageImpl;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 83
     iput-object p1, p0, Ljp/co/sony/mc/camera/storage/StorageImpl$StorageBroadcastReceiver;->this$0:Ljp/co/sony/mc/camera/storage/StorageImpl;
@@ -40,6 +48,18 @@
 
 .method private notifyStorageStatusChanged(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "action",
+            "path"
+        }
+    .end annotation
 
     .line 112
     invoke-static {}, Ljp/co/sony/mc/camera/storage/StorageUtil;->getMountableStorageTypes()Ljava/util/List;
@@ -170,6 +190,16 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "context",
+            "intent"
+        }
+    .end annotation
 
     .line 86
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;

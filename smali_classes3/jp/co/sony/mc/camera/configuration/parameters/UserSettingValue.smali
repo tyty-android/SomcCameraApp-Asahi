@@ -24,6 +24,28 @@
 .method public abstract getIconId()I
 .end method
 
+.method public getInfoDescriptionId()I
+    .locals 0
+
+    .line 66
+    invoke-interface {p0}, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;->getTextId()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public getInfoImageId()I
+    .locals 0
+
+    .line 82
+    invoke-interface {p0}, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;->getIconId()I
+
+    move-result p0
+
+    return p0
+.end method
+
 .method public abstract getName()Ljava/lang/String;
 .end method
 
@@ -42,28 +64,6 @@
 .end method
 
 .method public abstract getTextId()I
-.end method
-
-.method public getTutorialDescriptionId()I
-    .locals 0
-
-    .line 66
-    invoke-interface {p0}, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;->getTextId()I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public getTutorialImageId()I
-    .locals 0
-
-    .line 76
-    invoke-interface {p0}, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;->getIconId()I
-
-    move-result p0
-
-    return p0
 .end method
 
 .method public abstract getValue()Ljava/lang/String;

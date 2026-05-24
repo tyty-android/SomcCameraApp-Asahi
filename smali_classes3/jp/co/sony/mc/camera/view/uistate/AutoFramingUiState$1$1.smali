@@ -57,7 +57,7 @@
 .method public bridge synthetic emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
 
-    .line 88
+    .line 90
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;
 
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$1$1;->emit(Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -81,7 +81,7 @@
         }
     .end annotation
 
-    .line 89
+    .line 91
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$1$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;->access$get_isFramingObjectLost$p(Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;)Landroidx/lifecycle/MutableLiveData;
@@ -96,7 +96,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
-    .line 90
+    .line 92
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0

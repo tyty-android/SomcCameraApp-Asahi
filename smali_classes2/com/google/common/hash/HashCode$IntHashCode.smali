@@ -28,11 +28,19 @@
 # direct methods
 .method constructor <init>(I)V
     .locals 0
-
-    .line 121
-    invoke-direct {p0}, Lcom/google/common/hash/HashCode;-><init>()V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "hash"
+        }
+    .end annotation
 
     .line 122
+    invoke-direct {p0}, Lcom/google/common/hash/HashCode;-><init>()V
+
+    .line 123
     iput p1, p0, Lcom/google/common/hash/HashCode$IntHashCode;->hash:I
 
     return-void
@@ -43,7 +51,7 @@
 .method public asBytes()[B
     .locals 5
 
-    .line 132
+    .line 133
     iget p0, p0, Lcom/google/common/hash/HashCode$IntHashCode;->hash:I
 
     int-to-byte v0, p0
@@ -86,7 +94,7 @@
 .method public asInt()I
     .locals 0
 
-    .line 137
+    .line 138
     iget p0, p0, Lcom/google/common/hash/HashCode$IntHashCode;->hash:I
 
     return p0
@@ -95,7 +103,7 @@
 .method public asLong()J
     .locals 1
 
-    .line 142
+    .line 143
     new-instance p0, Ljava/lang/IllegalStateException;
 
     const-string v0, "this HashCode only has 32 bits; cannot create a long"
@@ -115,8 +123,16 @@
 
 .method equalsSameBits(Lcom/google/common/hash/HashCode;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "that"
+        }
+    .end annotation
 
-    .line 159
+    .line 160
     iget p0, p0, Lcom/google/common/hash/HashCode$IntHashCode;->hash:I
 
     invoke-virtual {p1}, Lcom/google/common/hash/HashCode;->asInt()I
@@ -139,7 +155,7 @@
 .method public padToLong()J
     .locals 2
 
-    .line 147
+    .line 148
     iget p0, p0, Lcom/google/common/hash/HashCode$IntHashCode;->hash:I
 
     invoke-static {p0}, Lcom/google/common/primitives/UnsignedInts;->toLong(I)J
@@ -151,6 +167,18 @@
 
 .method writeBytesToImpl([BII)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "dest",
+            "offset",
+            "maxLength"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -159,7 +187,7 @@
 
     add-int v1, p2, v0
 
-    .line 153
+    .line 154
     iget v2, p0, Lcom/google/common/hash/HashCode$IntHashCode;->hash:I
 
     mul-int/lit8 v3, v0, 0x8

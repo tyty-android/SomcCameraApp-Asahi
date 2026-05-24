@@ -6,18 +6,12 @@
 .implements Lkotlin/jvm/functions/Function1;
 
 
-# instance fields
-.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
-
-
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
+.method public synthetic constructor <init>()V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     return-void
 .end method
@@ -28,11 +22,9 @@
     .locals 0
 
     .line 0
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestionParameter;
 
-    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/FocusMagnification;
-
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->$r8$lambda$ZWNIfUA-YwRBiSk-cpDkVErSVKs(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;Ljp/co/sony/mc/camera/configuration/parameters/FocusMagnification;)Z
+    invoke-static {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->$r8$lambda$eJ5Se-msFNonAZhCYwH3HR-6bE8(Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestionParameter;)Z
 
     move-result p0
 

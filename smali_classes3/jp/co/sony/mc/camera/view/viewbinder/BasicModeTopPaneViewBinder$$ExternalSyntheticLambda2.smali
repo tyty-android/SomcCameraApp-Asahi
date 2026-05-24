@@ -3,38 +3,36 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function4;
+.implements Lkotlin/jvm/functions/Function1;
+
+
+# instance fields
+.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicModeTopPaneViewBinder;
 
 
 # direct methods
-.method public synthetic constructor <init>()V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeTopPaneViewBinder;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeTopPaneViewBinder$$ExternalSyntheticLambda2;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicModeTopPaneViewBinder;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
-    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeTopPaneViewBinder$$ExternalSyntheticLambda2;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicModeTopPaneViewBinder;
 
-    check-cast p2, Ljava/lang/Boolean;
+    check-cast p1, Lkotlin/Pair;
 
-    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result p0
-
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingRecordingMode;
-
-    check-cast p4, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
-
-    invoke-static {p1, p0, p3, p4}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeTopPaneViewBinder;->$r8$lambda$Qi1_Ugsgye2byUe-HIYF4uWgeBE(Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;ZLjp/co/sony/mc/camera/configuration/parameters/AutoFramingRecordingMode;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)Ljp/co/sony/mc/camera/util/TuplesUtil$Quadruple;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeTopPaneViewBinder;->$r8$lambda$9InrD4x5X9YXA4Voiw3YutlBM0I(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeTopPaneViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
 
     move-result-object p0
 

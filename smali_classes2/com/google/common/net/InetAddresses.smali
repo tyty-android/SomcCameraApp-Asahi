@@ -4,8 +4,12 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/net/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lcom/google/common/net/InetAddresses$Scope;,
         Lcom/google/common/net/InetAddresses$TeredoInfo;
     }
 .end annotation
@@ -35,7 +39,7 @@
 
     const/16 v0, 0x2e
 
-    .line 105
+    .line 112
     invoke-static {v0}, Lcom/google/common/base/CharMatcher;->is(C)Lcom/google/common/base/CharMatcher;
 
     move-result-object v0
@@ -44,14 +48,14 @@
 
     const/16 v0, 0x3a
 
-    .line 106
+    .line 113
     invoke-static {v0}, Lcom/google/common/base/CharMatcher;->is(C)Lcom/google/common/base/CharMatcher;
 
     move-result-object v0
 
     sput-object v0, Lcom/google/common/net/InetAddresses;->IPV6_DELIMITER_MATCHER:Lcom/google/common/base/CharMatcher;
 
-    .line 107
+    .line 114
     const-string v0, "127.0.0.1"
 
     invoke-static {v0}, Lcom/google/common/net/InetAddresses;->forString(Ljava/lang/String;)Ljava/net/InetAddress;
@@ -62,7 +66,7 @@
 
     sput-object v0, Lcom/google/common/net/InetAddresses;->LOOPBACK4:Ljava/net/Inet4Address;
 
-    .line 108
+    .line 115
     const-string v0, "0.0.0.0"
 
     invoke-static {v0}, Lcom/google/common/net/InetAddresses;->forString(Ljava/lang/String;)Ljava/net/InetAddress;
@@ -79,49 +83,180 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 110
+    .line 117
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method static synthetic access$000()Ljava/net/Inet4Address;
+.method static synthetic access$200()Ljava/net/Inet4Address;
     .locals 1
 
-    .line 100
+    .line 107
     sget-object v0, Lcom/google/common/net/InetAddresses;->ANY4:Ljava/net/Inet4Address;
 
     return-object v0
 .end method
 
-.method private static bytesToInetAddress([B)Ljava/net/InetAddress;
-    .locals 1
+.method private static bytesToInetAddress([BLjava/lang/String;)Ljava/net/InetAddress;
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "addr",
+            "scope"
+        }
+    .end annotation
 
-    .line 373
+    const-string v0, "No such interface: "
+
+    .line 427
     :try_start_0
     invoke-static {p0}, Ljava/net/InetAddress;->getByAddress([B)Ljava/net/InetAddress;
 
     move-result-object p0
-    :try_end_0
-    .catch Ljava/net/UnknownHostException; {:try_start_0 .. :try_end_0} :catch_0
+
+    if-nez p1, :cond_0
 
     return-object p0
+
+    .line 431
+    :cond_0
+    instance-of v1, p0, Ljava/net/Inet6Address;
+
+    const-string v2, "Unexpected state, scope should only appear for ipv6"
+
+    invoke-static {v1, v2}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/Object;)V
+
+    .line 433
+    check-cast p0, Ljava/net/Inet6Address;
+
+    .line 434
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    const/4 v2, 0x0
+
+    invoke-static {p1, v2, v1}, Lcom/google/common/net/InetAddresses;->tryParseDecimal(Ljava/lang/String;II)I
+
+    move-result v1
+
+    const/4 v2, -0x1
+
+    if-eq v1, v2, :cond_1
+
+    .line 437
+    invoke-virtual {p0}, Ljava/net/Inet6Address;->getHostAddress()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p0}, Ljava/net/Inet6Address;->getAddress()[B
+
+    move-result-object p0
+
+    .line 436
+    invoke-static {p1, p0, v1}, Ljava/net/Inet6Address;->getByAddress(Ljava/lang/String;[BI)Ljava/net/Inet6Address;
+
+    move-result-object p0
+    :try_end_0
+    .catch Ljava/net/UnknownHostException; {:try_start_0 .. :try_end_0} :catch_1
+
+    return-object p0
+
+    .line 440
+    :cond_1
+    :try_start_1
+    invoke-static {p1}, Ljava/net/NetworkInterface;->getByName(Ljava/lang/String;)Ljava/net/NetworkInterface;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_2
+
+    .line 445
+    invoke-virtual {p0}, Ljava/net/Inet6Address;->getHostAddress()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {p0}, Ljava/net/Inet6Address;->getAddress()[B
+
+    move-result-object p0
+
+    .line 444
+    invoke-static {v2, p0, v1}, Ljava/net/Inet6Address;->getByAddress(Ljava/lang/String;[BLjava/net/NetworkInterface;)Ljava/net/Inet6Address;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 442
+    :cond_2
+    const-string p0, "No such interface: \'%s\'"
+
+    filled-new-array {p1}, [Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-static {p0, v1}, Lcom/google/common/net/InetAddresses;->formatIllegalArgumentException(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/IllegalArgumentException;
+
+    move-result-object p0
+
+    throw p0
+    :try_end_1
+    .catch Ljava/net/SocketException; {:try_start_1 .. :try_end_1} :catch_0
+    .catch Ljava/net/UnknownHostException; {:try_start_1 .. :try_end_1} :catch_0
 
     :catch_0
     move-exception p0
 
-    .line 375
-    new-instance v0, Ljava/lang/AssertionError;
+    .line 447
+    :try_start_2
+    new-instance v1, Ljava/lang/IllegalArgumentException;
 
-    invoke-direct {v0, p0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    throw v0
+    invoke-direct {v2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v1, p1, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v1
+    :try_end_2
+    .catch Ljava/net/UnknownHostException; {:try_start_2 .. :try_end_2} :catch_1
+
+    :catch_1
+    move-exception p0
+
+    .line 450
+    new-instance p1, Ljava/lang/AssertionError;
+
+    invoke-direct {p1, p0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
+
+    throw p1
 .end method
 
 .method public static coerceToInteger(Ljava/net/InetAddress;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ip"
+        }
+    .end annotation
 
-    .line 953
+    .line 1067
     invoke-static {p0}, Lcom/google/common/net/InetAddresses;->getCoercedIPv4Address(Ljava/net/InetAddress;)Ljava/net/Inet4Address;
 
     move-result-object p0
@@ -143,6 +278,14 @@
 
 .method private static compressLongestRunOfZeroes([I)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "hextets"
+        }
+    .end annotation
 
     const/4 v0, -0x1
 
@@ -154,7 +297,7 @@
 
     move v4, v3
 
-    .line 422
+    .line 516
     :goto_0
     array-length v5, p0
 
@@ -162,7 +305,7 @@
 
     if-ge v1, v5, :cond_3
 
-    .line 423
+    .line 517
     array-length v5, p0
 
     if-ge v1, v5, :cond_0
@@ -204,7 +347,7 @@
 
     add-int/2addr v2, v3
 
-    .line 437
+    .line 531
     invoke-static {p0, v3, v2, v0}, Ljava/util/Arrays;->fill([IIII)V
 
     :cond_4
@@ -212,13 +355,22 @@
 .end method
 
 .method private static convertDottedQuadToHex(Ljava/lang/String;)Ljava/lang/String;
-    .locals 5
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ipString"
+        }
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
     const/16 v0, 0x3a
 
-    .line 307
+    .line 343
     invoke-virtual {p0, v0}, Ljava/lang/String;->lastIndexOf(I)I
 
     move-result v0
@@ -229,17 +381,17 @@
 
     const/4 v2, 0x0
 
-    .line 308
+    .line 344
     invoke-virtual {p0, v2, v0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 309
+    .line 345
     invoke-virtual {p0, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 310
+    .line 346
     invoke-static {p0}, Lcom/google/common/net/InetAddresses;->textToNumericFormatV4(Ljava/lang/String;)[B
 
     move-result-object p0
@@ -250,7 +402,7 @@
 
     return-object p0
 
-    .line 314
+    .line 350
     :cond_0
     aget-byte v0, p0, v2
 
@@ -258,71 +410,41 @@
 
     shl-int/lit8 v0, v0, 0x8
 
-    aget-byte v2, p0, v1
+    aget-byte v1, p0, v1
 
-    and-int/lit16 v2, v2, 0xff
+    and-int/lit16 v1, v1, 0xff
 
-    or-int/2addr v0, v2
+    or-int/2addr v0, v1
 
     invoke-static {v0}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    const/4 v2, 0x2
+    const/4 v1, 0x2
 
-    .line 315
-    aget-byte v2, p0, v2
+    .line 351
+    aget-byte v1, p0, v1
 
-    and-int/lit16 v2, v2, 0xff
+    and-int/lit16 v1, v1, 0xff
 
-    shl-int/lit8 v2, v2, 0x8
+    shl-int/lit8 v1, v1, 0x8
 
-    const/4 v4, 0x3
+    const/4 v2, 0x3
 
-    aget-byte p0, p0, v4
+    aget-byte p0, p0, v2
 
     and-int/lit16 p0, p0, 0xff
 
-    or-int/2addr p0, v2
+    or-int/2addr p0, v1
 
     invoke-static {p0}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 316
-    invoke-static {v3}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/String;->length()I
-
-    move-result v2
-
-    add-int/2addr v2, v1
-
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    move-result v1
-
-    add-int/2addr v2, v1
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    move-result v1
-
-    add-int/2addr v2, v1
-
+    .line 352
     new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(I)V
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -351,13 +473,21 @@
 
 .method public static decrement(Ljava/net/InetAddress;)Ljava/net/InetAddress;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "address"
+        }
+    .end annotation
 
-    .line 1072
+    .line 1186
     invoke-virtual {p0}, Ljava/net/InetAddress;->getAddress()[B
 
     move-result-object v0
 
-    .line 1073
+    .line 1187
     array-length v1, v0
 
     const/4 v2, 0x1
@@ -367,14 +497,14 @@
     :goto_0
     if-ltz v1, :cond_0
 
-    .line 1074
+    .line 1188
     aget-byte v3, v0, v1
 
     if-nez v3, :cond_0
 
     const/4 v3, -0x1
 
-    .line 1075
+    .line 1189
     aput-byte v3, v0, v1
 
     add-int/lit8 v1, v1, -0x1
@@ -391,13 +521,13 @@
     :cond_1
     const/4 v3, 0x0
 
-    .line 1079
+    .line 1193
     :goto_1
     const-string v4, "Decrementing %s would wrap."
 
     invoke-static {v3, v4, p0}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;)V
 
-    .line 1081
+    .line 1195
     aget-byte p0, v0, v1
 
     sub-int/2addr p0, v2
@@ -406,8 +536,10 @@
 
     aput-byte p0, v0, v1
 
-    .line 1082
-    invoke-static {v0}, Lcom/google/common/net/InetAddresses;->bytesToInetAddress([B)Ljava/net/InetAddress;
+    const/4 p0, 0x0
+
+    .line 1196
+    invoke-static {v0, p0}, Lcom/google/common/net/InetAddresses;->bytesToInetAddress([BLjava/lang/String;)Ljava/net/InetAddress;
 
     move-result-object p0
 
@@ -415,23 +547,42 @@
 .end method
 
 .method public static forString(Ljava/lang/String;)Ljava/net/InetAddress;
-    .locals 1
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ipString"
+        }
+    .end annotation
 
-    .line 142
-    invoke-static {p0}, Lcom/google/common/net/InetAddresses;->ipStringToBytes(Ljava/lang/String;)[B
+    .line 160
+    new-instance v0, Lcom/google/common/net/InetAddresses$Scope;
 
-    move-result-object v0
+    const/4 v1, 0x0
 
-    if-eqz v0, :cond_0
+    invoke-direct {v0, v1}, Lcom/google/common/net/InetAddresses$Scope;-><init>(Lcom/google/common/net/InetAddresses$1;)V
 
-    .line 149
-    invoke-static {v0}, Lcom/google/common/net/InetAddresses;->bytesToInetAddress([B)Ljava/net/InetAddress;
+    .line 161
+    invoke-static {p0, v0}, Lcom/google/common/net/InetAddresses;->ipStringToBytes(Ljava/lang/String;Lcom/google/common/net/InetAddresses$Scope;)[B
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    .line 168
+    invoke-static {v0}, Lcom/google/common/net/InetAddresses$Scope;->access$100(Lcom/google/common/net/InetAddresses$Scope;)Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {v1, p0}, Lcom/google/common/net/InetAddresses;->bytesToInetAddress([BLjava/lang/String;)Ljava/net/InetAddress;
 
     move-result-object p0
 
     return-object p0
 
-    .line 146
+    .line 165
     :cond_0
     const-string v0, "\'%s\' is not an IP string literal."
 
@@ -448,9 +599,19 @@
 
 .method public static forUriString(Ljava/lang/String;)Ljava/net/InetAddress;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "hostAddr"
+        }
+    .end annotation
 
-    .line 514
-    invoke-static {p0}, Lcom/google/common/net/InetAddresses;->forUriStringNoThrow(Ljava/lang/String;)Ljava/net/InetAddress;
+    const/4 v0, 0x1
+
+    .line 615
+    invoke-static {p0, v0}, Lcom/google/common/net/InetAddresses;->forUriStringOrNull(Ljava/lang/String;Z)Ljava/net/InetAddress;
 
     move-result-object v0
 
@@ -458,7 +619,7 @@
 
     return-object v0
 
-    .line 516
+    .line 617
     :cond_0
     const-string v0, "Not a valid URI IP literal: \'%s\'"
 
@@ -473,15 +634,26 @@
     throw p0
 .end method
 
-.method private static forUriStringNoThrow(Ljava/lang/String;)Ljava/net/InetAddress;
-    .locals 2
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+.method private static forUriStringOrNull(Ljava/lang/String;Z)Ljava/net/InetAddress;
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "hostAddr",
+            "parseScope"
+        }
     .end annotation
 
-    .line 524
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 625
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 529
+    .line 630
     const-string v0, "["
 
     invoke-virtual {p0, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
@@ -498,7 +670,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 530
+    .line 631
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -518,40 +690,70 @@
     :cond_0
     const/4 v0, 0x4
 
-    .line 538
     :goto_0
-    invoke-static {p0}, Lcom/google/common/net/InetAddresses;->ipStringToBytes(Ljava/lang/String;)[B
+    const/4 v1, 0x0
 
-    move-result-object p0
+    if-eqz p1, :cond_1
 
-    if-eqz p0, :cond_2
+    .line 639
+    new-instance p1, Lcom/google/common/net/InetAddresses$Scope;
 
-    .line 539
-    array-length v1, p0
-
-    if-eq v1, v0, :cond_1
+    invoke-direct {p1, v1}, Lcom/google/common/net/InetAddresses$Scope;-><init>(Lcom/google/common/net/InetAddresses$1;)V
 
     goto :goto_1
 
-    .line 543
     :cond_1
-    invoke-static {p0}, Lcom/google/common/net/InetAddresses;->bytesToInetAddress([B)Ljava/net/InetAddress;
+    move-object p1, v1
+
+    .line 640
+    :goto_1
+    invoke-static {p0, p1}, Lcom/google/common/net/InetAddresses;->ipStringToBytes(Ljava/lang/String;Lcom/google/common/net/InetAddresses$Scope;)[B
+
+    move-result-object p0
+
+    if-eqz p0, :cond_4
+
+    .line 641
+    array-length v2, p0
+
+    if-eq v2, v0, :cond_2
+
+    goto :goto_2
+
+    :cond_2
+    if-eqz p1, :cond_3
+
+    .line 645
+    invoke-static {p1}, Lcom/google/common/net/InetAddresses$Scope;->access$100(Lcom/google/common/net/InetAddresses$Scope;)Ljava/lang/String;
+
+    move-result-object v1
+
+    :cond_3
+    invoke-static {p0, v1}, Lcom/google/common/net/InetAddresses;->bytesToInetAddress([BLjava/lang/String;)Ljava/net/InetAddress;
 
     move-result-object p0
 
     return-object p0
 
-    :cond_2
-    :goto_1
-    const/4 p0, 0x0
-
-    return-object p0
+    :cond_4
+    :goto_2
+    return-object v1
 .end method
 
 .method private static varargs formatIllegalArgumentException(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/IllegalArgumentException;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "format",
+            "args"
+        }
+    .end annotation
 
-    .line 1128
+    .line 1242
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     sget-object v1, Ljava/util/Locale;->ROOT:Ljava/util/Locale;
@@ -567,8 +769,18 @@
 
 .method private static fromBigInteger(Ljava/math/BigInteger;Z)Ljava/net/InetAddress;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "address",
+            "isIpv6"
+        }
+    .end annotation
 
-    .line 1013
+    .line 1127
     invoke-virtual {p0}, Ljava/math/BigInteger;->signum()I
 
     move-result v0
@@ -598,16 +810,16 @@
     :cond_1
     const/4 p1, 0x4
 
-    .line 1017
+    .line 1131
     :goto_1
     invoke-virtual {p0}, Ljava/math/BigInteger;->toByteArray()[B
 
     move-result-object v0
 
-    .line 1018
+    .line 1132
     new-array v2, p1, [B
 
-    .line 1020
+    .line 1134
     array-length v3, v0
 
     sub-int/2addr v3, p1
@@ -616,7 +828,7 @@
 
     move-result v3
 
-    .line 1021
+    .line 1135
     array-length v4, v0
 
     sub-int/2addr v4, v3
@@ -626,7 +838,7 @@
     :goto_2
     if-ge v1, v3, :cond_3
 
-    .line 1026
+    .line 1140
     aget-byte v6, v0, v1
 
     if-nez v6, :cond_2
@@ -635,7 +847,7 @@
 
     goto :goto_2
 
-    .line 1030
+    .line 1144
     :cond_2
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -645,7 +857,7 @@
 
     move-result-object p0
 
-    .line 1027
+    .line 1141
     const-string p1, "BigInteger cannot be converted to InetAddress because it has more than %d bytes: %s"
 
     invoke-static {p1, p0}, Lcom/google/common/net/InetAddresses;->formatIllegalArgumentException(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/IllegalArgumentException;
@@ -654,11 +866,11 @@
 
     throw p0
 
-    .line 1035
+    .line 1149
     :cond_3
     invoke-static {v0, v3, v2, v5, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 1038
+    .line 1152
     :try_start_0
     invoke-static {v2}, Ljava/net/InetAddress;->getByAddress([B)Ljava/net/InetAddress;
 
@@ -671,7 +883,7 @@
     :catch_0
     move-exception p0
 
-    .line 1040
+    .line 1154
     new-instance p1, Ljava/lang/AssertionError;
 
     invoke-direct {p1, p0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
@@ -681,10 +893,18 @@
 
 .method public static fromIPv4BigInteger(Ljava/math/BigInteger;)Ljava/net/Inet4Address;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "address"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 988
+    .line 1102
     invoke-static {p0, v0}, Lcom/google/common/net/InetAddresses;->fromBigInteger(Ljava/math/BigInteger;Z)Ljava/net/InetAddress;
 
     move-result-object p0
@@ -696,10 +916,18 @@
 
 .method public static fromIPv6BigInteger(Ljava/math/BigInteger;)Ljava/net/Inet6Address;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "address"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
-    .line 999
+    .line 1113
     invoke-static {p0, v0}, Lcom/google/common/net/InetAddresses;->fromBigInteger(Ljava/math/BigInteger;Z)Ljava/net/InetAddress;
 
     move-result-object p0
@@ -711,8 +939,16 @@
 
 .method public static fromInteger(I)Ljava/net/Inet4Address;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "address"
+        }
+    .end annotation
 
-    .line 976
+    .line 1090
     invoke-static {p0}, Lcom/google/common/primitives/Ints;->toByteArray(I)[B
 
     move-result-object p0
@@ -726,26 +962,35 @@
 
 .method public static fromLittleEndianByteArray([B)Ljava/net/InetAddress;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "addr"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/UnknownHostException;
         }
     .end annotation
 
-    .line 1055
+    .line 1169
     array-length v0, p0
 
     new-array v0, v0, [B
 
     const/4 v1, 0x0
 
-    .line 1056
+    .line 1170
     :goto_0
     array-length v2, p0
 
     if-ge v1, v2, :cond_0
 
-    .line 1057
+    .line 1171
     array-length v2, p0
 
     sub-int/2addr v2, v1
@@ -760,7 +1005,7 @@
 
     goto :goto_0
 
-    .line 1059
+    .line 1173
     :cond_0
     invoke-static {v0}, Ljava/net/InetAddress;->getByAddress([B)Ljava/net/InetAddress;
 
@@ -771,8 +1016,16 @@
 
 .method public static get6to4IPv4Address(Ljava/net/Inet6Address;)Ljava/net/Inet4Address;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ip"
+        }
+    .end annotation
 
-    .line 630
+    .line 741
     invoke-static {p0}, Lcom/google/common/net/InetAddresses;->is6to4Address(Ljava/net/Inet6Address;)Z
 
     move-result v0
@@ -785,7 +1038,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;)V
 
-    .line 632
+    .line 743
     invoke-virtual {p0}, Ljava/net/Inet6Address;->getAddress()[B
 
     move-result-object p0
@@ -807,18 +1060,26 @@
 
 .method public static getCoercedIPv4Address(Ljava/net/InetAddress;)Ljava/net/Inet4Address;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ip"
+        }
+    .end annotation
 
-    .line 891
+    .line 1005
     instance-of v0, p0, Ljava/net/Inet4Address;
 
     if-eqz v0, :cond_0
 
-    .line 892
+    .line 1006
     check-cast p0, Ljava/net/Inet4Address;
 
     return-object p0
 
-    .line 896
+    .line 1010
     :cond_0
     invoke-virtual {p0}, Ljava/net/InetAddress;->getAddress()[B
 
@@ -835,7 +1096,7 @@
 
     if-ge v2, v3, :cond_2
 
-    .line 899
+    .line 1013
     aget-byte v5, v0, v2
 
     if-eqz v5, :cond_1
@@ -855,12 +1116,12 @@
     :goto_1
     if-eqz v2, :cond_3
 
-    .line 904
+    .line 1018
     aget-byte v5, v0, v3
 
     if-ne v5, v4, :cond_3
 
-    .line 905
+    .line 1019
     sget-object p0, Lcom/google/common/net/InetAddresses;->LOOPBACK4:Ljava/net/Inet4Address;
 
     return-object p0
@@ -868,28 +1129,28 @@
     :cond_3
     if-eqz v2, :cond_4
 
-    .line 906
+    .line 1020
     aget-byte v0, v0, v3
 
     if-nez v0, :cond_4
 
-    .line 907
+    .line 1021
     sget-object p0, Lcom/google/common/net/InetAddresses;->ANY4:Ljava/net/Inet4Address;
 
     return-object p0
 
-    .line 910
+    .line 1024
     :cond_4
     check-cast p0, Ljava/net/Inet6Address;
 
-    .line 912
+    .line 1026
     invoke-static {p0}, Lcom/google/common/net/InetAddresses;->hasEmbeddedIPv4ClientAddress(Ljava/net/Inet6Address;)Z
 
     move-result v0
 
     if-eqz v0, :cond_5
 
-    .line 913
+    .line 1027
     invoke-static {p0}, Lcom/google/common/net/InetAddresses;->getEmbeddedIPv4ClientAddress(Ljava/net/Inet6Address;)Ljava/net/Inet4Address;
 
     move-result-object p0
@@ -902,7 +1163,7 @@
 
     goto :goto_2
 
-    .line 916
+    .line 1030
     :cond_5
     invoke-virtual {p0}, Ljava/net/Inet6Address;->getAddress()[B
 
@@ -918,9 +1179,9 @@
 
     move-result-wide v0
 
-    .line 920
+    .line 1034
     :goto_2
-    invoke-static {}, Lcom/google/common/hash/Hashing;->murmur3_32()Lcom/google/common/hash/HashFunction;
+    invoke-static {}, Lcom/google/common/hash/Hashing;->murmur3_32_fixed()Lcom/google/common/hash/HashFunction;
 
     move-result-object p0
 
@@ -942,7 +1203,7 @@
 
     const/4 p0, -0x2
 
-    .line 931
+    .line 1045
     :cond_6
     invoke-static {p0}, Lcom/google/common/primitives/Ints;->toByteArray(I)[B
 
@@ -957,8 +1218,16 @@
 
 .method public static getCompatIPv4Address(Ljava/net/Inet6Address;)Ljava/net/Inet4Address;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ip"
+        }
+    .end annotation
 
-    .line 600
+    .line 711
     invoke-static {p0}, Lcom/google/common/net/InetAddresses;->isCompatIPv4Address(Ljava/net/Inet6Address;)Z
 
     move-result v0
@@ -969,10 +1238,10 @@
 
     move-result-object v2
 
-    .line 599
+    .line 710
     invoke-static {v0, v1, v2}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;)V
 
-    .line 602
+    .line 713
     invoke-virtual {p0}, Ljava/net/Inet6Address;->getAddress()[B
 
     move-result-object p0
@@ -994,22 +1263,30 @@
 
 .method public static getEmbeddedIPv4ClientAddress(Ljava/net/Inet6Address;)Ljava/net/Inet4Address;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ip"
+        }
+    .end annotation
 
-    .line 816
+    .line 926
     invoke-static {p0}, Lcom/google/common/net/InetAddresses;->isCompatIPv4Address(Ljava/net/Inet6Address;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 817
+    .line 927
     invoke-static {p0}, Lcom/google/common/net/InetAddresses;->getCompatIPv4Address(Ljava/net/Inet6Address;)Ljava/net/Inet4Address;
 
     move-result-object p0
 
     return-object p0
 
-    .line 820
+    .line 930
     :cond_0
     invoke-static {p0}, Lcom/google/common/net/InetAddresses;->is6to4Address(Ljava/net/Inet6Address;)Z
 
@@ -1017,14 +1294,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 821
+    .line 931
     invoke-static {p0}, Lcom/google/common/net/InetAddresses;->get6to4IPv4Address(Ljava/net/Inet6Address;)Ljava/net/Inet4Address;
 
     move-result-object p0
 
     return-object p0
 
-    .line 824
+    .line 934
     :cond_1
     invoke-static {p0}, Lcom/google/common/net/InetAddresses;->isTeredoAddress(Ljava/net/Inet6Address;)Z
 
@@ -1032,7 +1309,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 825
+    .line 935
     invoke-static {p0}, Lcom/google/common/net/InetAddresses;->getTeredoInfo(Ljava/net/Inet6Address;)Lcom/google/common/net/InetAddresses$TeredoInfo;
 
     move-result-object p0
@@ -1043,7 +1320,7 @@
 
     return-object p0
 
-    .line 828
+    .line 938
     :cond_2
     invoke-static {p0}, Lcom/google/common/net/InetAddresses;->toAddrString(Ljava/net/InetAddress;)Ljava/lang/String;
 
@@ -1064,8 +1341,16 @@
 
 .method private static getInet4Address([B)Ljava/net/Inet4Address;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bytes"
+        }
+    .end annotation
 
-    .line 120
+    .line 127
     array-length v0, p0
 
     const/4 v1, 0x4
@@ -1086,8 +1371,10 @@
 
     invoke-static {v0, v1, v2}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;I)V
 
-    .line 126
-    invoke-static {p0}, Lcom/google/common/net/InetAddresses;->bytesToInetAddress([B)Ljava/net/InetAddress;
+    const/4 v0, 0x0
+
+    .line 133
+    invoke-static {p0, v0}, Lcom/google/common/net/InetAddresses;->bytesToInetAddress([BLjava/lang/String;)Ljava/net/InetAddress;
 
     move-result-object p0
 
@@ -1098,8 +1385,16 @@
 
 .method public static getIsatapIPv4Address(Ljava/net/Inet6Address;)Ljava/net/Inet4Address;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ip"
+        }
+    .end annotation
 
-    .line 782
+    .line 892
     invoke-static {p0}, Lcom/google/common/net/InetAddresses;->isIsatapAddress(Ljava/net/Inet6Address;)Z
 
     move-result v0
@@ -1112,7 +1407,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;)V
 
-    .line 784
+    .line 894
     invoke-virtual {p0}, Ljava/net/Inet6Address;->getAddress()[B
 
     move-result-object p0
@@ -1134,8 +1429,16 @@
 
 .method public static getTeredoInfo(Ljava/net/Inet6Address;)Lcom/google/common/net/InetAddresses$TeredoInfo;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ip"
+        }
+    .end annotation
 
-    .line 721
+    .line 831
     invoke-static {p0}, Lcom/google/common/net/InetAddresses;->isTeredoAddress(Ljava/net/Inet6Address;)Z
 
     move-result v0
@@ -1148,7 +1451,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;)V
 
-    .line 723
+    .line 833
     invoke-virtual {p0}, Ljava/net/Inet6Address;->getAddress()[B
 
     move-result-object p0
@@ -1157,7 +1460,7 @@
 
     const/16 v1, 0x8
 
-    .line 724
+    .line 834
     invoke-static {p0, v0, v1}, Ljava/util/Arrays;->copyOfRange([BII)[B
 
     move-result-object v0
@@ -1166,7 +1469,7 @@
 
     move-result-object v0
 
-    .line 726
+    .line 836
     invoke-static {p0, v1}, Lcom/google/common/io/ByteStreams;->newDataInput([BI)Lcom/google/common/io/ByteArrayDataInput;
 
     move-result-object v1
@@ -1181,7 +1484,7 @@
 
     const/16 v3, 0xa
 
-    .line 729
+    .line 839
     invoke-static {p0, v3}, Lcom/google/common/io/ByteStreams;->newDataInput([BI)Lcom/google/common/io/ByteArrayDataInput;
 
     move-result-object v3
@@ -1198,20 +1501,20 @@
 
     const/16 v4, 0x10
 
-    .line 731
+    .line 841
     invoke-static {p0, v3, v4}, Ljava/util/Arrays;->copyOfRange([BII)[B
 
     move-result-object p0
 
     const/4 v3, 0x0
 
-    .line 732
+    .line 842
     :goto_0
     array-length v4, p0
 
     if-ge v3, v4, :cond_0
 
-    .line 734
+    .line 844
     aget-byte v4, p0, v3
 
     not-int v4, v4
@@ -1224,13 +1527,13 @@
 
     goto :goto_0
 
-    .line 736
+    .line 846
     :cond_0
     invoke-static {p0}, Lcom/google/common/net/InetAddresses;->getInet4Address([B)Ljava/net/Inet4Address;
 
     move-result-object p0
 
-    .line 738
+    .line 848
     new-instance v3, Lcom/google/common/net/InetAddresses$TeredoInfo;
 
     invoke-direct {v3, v0, p0, v2, v1}, Lcom/google/common/net/InetAddresses$TeredoInfo;-><init>(Ljava/net/Inet4Address;Ljava/net/Inet4Address;II)V
@@ -1240,8 +1543,16 @@
 
 .method public static hasEmbeddedIPv4ClientAddress(Ljava/net/Inet6Address;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ip"
+        }
+    .end annotation
 
-    .line 800
+    .line 910
     invoke-static {p0}, Lcom/google/common/net/InetAddresses;->isCompatIPv4Address(Ljava/net/Inet6Address;)Z
 
     move-result v0
@@ -1277,8 +1588,16 @@
 
 .method private static hextetsToIPv6String([I)Ljava/lang/String;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "hextets"
+        }
+    .end annotation
 
-    .line 454
+    .line 548
     new-instance v0, Ljava/lang/StringBuilder;
 
     const/16 v1, 0x27
@@ -1291,13 +1610,13 @@
 
     move v3, v2
 
-    .line 456
+    .line 550
     :goto_0
     array-length v4, p0
 
     if-ge v2, v4, :cond_5
 
-    .line 457
+    .line 551
     aget v4, p0, v2
 
     if-ltz v4, :cond_0
@@ -1316,10 +1635,10 @@
 
     const/16 v3, 0x3a
 
-    .line 460
+    .line 554
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 462
+    .line 556
     :cond_1
     aget v3, p0, v2
 
@@ -1336,7 +1655,7 @@
 
     if-eqz v3, :cond_4
 
-    .line 465
+    .line 559
     :cond_3
     const-string v3, "::"
 
@@ -1350,7 +1669,7 @@
 
     goto :goto_0
 
-    .line 470
+    .line 564
     :cond_5
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1361,13 +1680,21 @@
 
 .method public static increment(Ljava/net/InetAddress;)Ljava/net/InetAddress;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "address"
+        }
+    .end annotation
 
-    .line 1095
+    .line 1209
     invoke-virtual {p0}, Ljava/net/InetAddress;->getAddress()[B
 
     move-result-object v0
 
-    .line 1096
+    .line 1210
     array-length v1, v0
 
     const/4 v2, 0x1
@@ -1379,14 +1706,14 @@
 
     if-ltz v1, :cond_0
 
-    .line 1097
+    .line 1211
     aget-byte v4, v0, v1
 
     const/4 v5, -0x1
 
     if-ne v4, v5, :cond_0
 
-    .line 1098
+    .line 1212
     aput-byte v3, v0, v1
 
     add-int/lit8 v1, v1, -0x1
@@ -1398,13 +1725,13 @@
 
     move v3, v2
 
-    .line 1102
+    .line 1216
     :cond_1
     const-string v4, "Incrementing %s would wrap."
 
     invoke-static {v3, v4, p0}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;)V
 
-    .line 1104
+    .line 1218
     aget-byte p0, v0, v1
 
     add-int/2addr p0, v2
@@ -1413,17 +1740,30 @@
 
     aput-byte p0, v0, v1
 
-    .line 1105
-    invoke-static {v0}, Lcom/google/common/net/InetAddresses;->bytesToInetAddress([B)Ljava/net/InetAddress;
+    const/4 p0, 0x0
+
+    .line 1219
+    invoke-static {v0, p0}, Lcom/google/common/net/InetAddresses;->bytesToInetAddress([BLjava/lang/String;)Ljava/net/InetAddress;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method private static ipStringToBytes(Ljava/lang/String;)[B
+.method private static ipStringToBytes(Ljava/lang/String;Lcom/google/common/net/InetAddresses$Scope;)[B
     .locals 9
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ipStringParam",
+            "scope"
+        }
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
     const/4 v0, 0x0
@@ -1434,7 +1774,7 @@
 
     move v3, v2
 
-    .line 170
+    .line 203
     :goto_0
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -1446,7 +1786,7 @@
 
     if-ge v1, v4, :cond_5
 
-    .line 171
+    .line 204
     invoke-virtual {p0, v1}, Ljava/lang/String;->charAt(I)C
 
     move-result v4
@@ -1485,7 +1825,7 @@
     :cond_3
     const/16 v7, 0x10
 
-    .line 182
+    .line 215
     invoke-static {v4, v7}, Ljava/lang/Character;->digit(CI)I
 
     move-result v4
@@ -1504,11 +1844,11 @@
     move v1, v6
 
     :goto_2
-    if-eqz v3, :cond_8
+    if-eqz v3, :cond_9
 
     if-eqz v2, :cond_6
 
-    .line 190
+    .line 223
     invoke-static {p0}, Lcom/google/common/net/InetAddresses;->convertDottedQuadToHex(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -1518,51 +1858,71 @@
     return-object v5
 
     :cond_6
-    if-eq v1, v6, :cond_7
+    if-eq v1, v6, :cond_8
 
-    .line 196
+    if-eqz p1, :cond_7
+
+    add-int/lit8 v2, v1, 0x1
+
+    .line 230
+    invoke-virtual {p0, v2}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {p1, v2}, Lcom/google/common/net/InetAddresses$Scope;->access$102(Lcom/google/common/net/InetAddresses$Scope;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 232
+    :cond_7
     invoke-virtual {p0, v0, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 198
-    :cond_7
+    .line 234
+    :cond_8
     invoke-static {p0}, Lcom/google/common/net/InetAddresses;->textToNumericFormatV6(Ljava/lang/String;)[B
 
     move-result-object p0
 
     return-object p0
 
-    :cond_8
-    if-eqz v2, :cond_a
+    :cond_9
+    if-eqz v2, :cond_b
 
-    if-eq v1, v6, :cond_9
+    if-eq v1, v6, :cond_a
 
     return-object v5
 
-    .line 203
-    :cond_9
+    .line 239
+    :cond_a
     invoke-static {p0}, Lcom/google/common/net/InetAddresses;->textToNumericFormatV4(Ljava/lang/String;)[B
 
     move-result-object p0
 
     return-object p0
 
-    :cond_a
+    :cond_b
     return-object v5
 .end method
 
 .method public static is6to4Address(Ljava/net/Inet6Address;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ip"
+        }
+    .end annotation
 
-    .line 618
+    .line 729
     invoke-virtual {p0}, Ljava/net/Inet6Address;->getAddress()[B
 
     move-result-object p0
 
     const/4 v0, 0x0
 
-    .line 619
+    .line 730
     aget-byte v1, p0, v0
 
     const/16 v2, 0x20
@@ -1585,8 +1945,16 @@
 
 .method public static isCompatIPv4Address(Ljava/net/Inet6Address;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ip"
+        }
+    .end annotation
 
-    .line 576
+    .line 687
     invoke-virtual {p0}, Ljava/net/Inet6Address;->isIPv4CompatibleAddress()Z
 
     move-result v0
@@ -1597,7 +1965,7 @@
 
     return v1
 
-    .line 580
+    .line 691
     :cond_0
     invoke-virtual {p0}, Ljava/net/Inet6Address;->getAddress()[B
 
@@ -1605,7 +1973,7 @@
 
     const/16 v0, 0xc
 
-    .line 581
+    .line 692
     aget-byte v0, p0, v0
 
     const/4 v2, 0x1
@@ -1640,10 +2008,20 @@
 .end method
 
 .method public static isInetAddress(Ljava/lang/String;)Z
-    .locals 0
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ipString"
+        }
+    .end annotation
 
-    .line 160
-    invoke-static {p0}, Lcom/google/common/net/InetAddresses;->ipStringToBytes(Ljava/lang/String;)[B
+    const/4 v0, 0x0
+
+    .line 188
+    invoke-static {p0, v0}, Lcom/google/common/net/InetAddresses;->ipStringToBytes(Ljava/lang/String;Lcom/google/common/net/InetAddresses$Scope;)[B
 
     move-result-object p0
 
@@ -1662,8 +2040,16 @@
 
 .method public static isIsatapAddress(Ljava/net/Inet6Address;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ip"
+        }
+    .end annotation
 
-    .line 758
+    .line 868
     invoke-static {p0}, Lcom/google/common/net/InetAddresses;->isTeredoAddress(Ljava/net/Inet6Address;)Z
 
     move-result v0
@@ -1674,7 +2060,7 @@
 
     return v1
 
-    .line 762
+    .line 872
     :cond_0
     invoke-virtual {p0}, Ljava/net/Inet6Address;->getAddress()[B
 
@@ -1682,7 +2068,7 @@
 
     const/16 v0, 0x8
 
-    .line 764
+    .line 874
     aget-byte v0, p0, v0
 
     const/4 v2, 0x3
@@ -1696,7 +2082,7 @@
     :cond_1
     const/16 v0, 0x9
 
-    .line 771
+    .line 881
     aget-byte v0, p0, v0
 
     if-nez v0, :cond_2
@@ -1725,9 +2111,19 @@
 
 .method public static isMappedIPv4Address(Ljava/lang/String;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ipString"
+        }
+    .end annotation
 
-    .line 850
-    invoke-static {p0}, Lcom/google/common/net/InetAddresses;->ipStringToBytes(Ljava/lang/String;)[B
+    const/4 v0, 0x0
+
+    .line 964
+    invoke-static {p0, v0}, Lcom/google/common/net/InetAddresses;->ipStringToBytes(Ljava/lang/String;Lcom/google/common/net/InetAddresses$Scope;)[B
 
     move-result-object p0
 
@@ -1735,7 +2131,7 @@
 
     if-eqz p0, :cond_4
 
-    .line 851
+    .line 965
     array-length v1, p0
 
     const/16 v2, 0x10
@@ -1749,7 +2145,7 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 853
+    .line 967
     aget-byte v2, p0, v1
 
     if-eqz v2, :cond_0
@@ -1767,7 +2163,7 @@
 
     if-ge v2, v1, :cond_3
 
-    .line 858
+    .line 972
     aget-byte v1, p0, v2
 
     const/4 v3, -0x1
@@ -1791,34 +2187,41 @@
 .end method
 
 .method public static isMaximum(Ljava/net/InetAddress;)Z
-    .locals 4
+    .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "address"
+        }
+    .end annotation
 
-    .line 1117
+    .line 1231
     invoke-virtual {p0}, Ljava/net/InetAddress;->getAddress()[B
 
     move-result-object p0
 
-    const/4 v0, 0x0
+    .line 1232
+    array-length v0, p0
 
-    move v1, v0
+    const/4 v1, 0x0
 
-    .line 1118
+    move v2, v1
+
     :goto_0
-    array-length v2, p0
+    if-ge v2, v0, :cond_1
 
-    if-ge v1, v2, :cond_1
+    aget-byte v3, p0, v2
 
-    .line 1119
-    aget-byte v2, p0, v1
+    const/4 v4, -0x1
 
-    const/4 v3, -0x1
+    if-eq v3, v4, :cond_0
 
-    if-eq v2, v3, :cond_0
-
-    return v0
+    return v1
 
     :cond_0
-    add-int/lit8 v1, v1, 0x1
+    add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
@@ -1830,15 +2233,23 @@
 
 .method public static isTeredoAddress(Ljava/net/Inet6Address;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ip"
+        }
+    .end annotation
 
-    .line 706
+    .line 816
     invoke-virtual {p0}, Ljava/net/Inet6Address;->getAddress()[B
 
     move-result-object p0
 
     const/4 v0, 0x0
 
-    .line 707
+    .line 817
     aget-byte v1, p0, v0
 
     const/16 v2, 0x20
@@ -1870,28 +2281,45 @@
 .end method
 
 .method public static isUriInetAddress(Ljava/lang/String;)Z
-    .locals 0
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ipString"
+        }
+    .end annotation
 
-    .line 554
-    invoke-static {p0}, Lcom/google/common/net/InetAddresses;->forUriStringNoThrow(Ljava/lang/String;)Ljava/net/InetAddress;
+    const/4 v0, 0x0
+
+    .line 665
+    invoke-static {p0, v0}, Lcom/google/common/net/InetAddresses;->forUriStringOrNull(Ljava/lang/String;Z)Ljava/net/InetAddress;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    const/4 p0, 0x1
-
-    goto :goto_0
+    const/4 v0, 0x1
 
     :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
-    return p0
+    return v0
 .end method
 
 .method private static parseHextet(Ljava/lang/String;II)S
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "ipString",
+            "start",
+            "end"
+        }
+    .end annotation
 
     sub-int v0, p2, p1
 
@@ -1908,7 +2336,7 @@
 
     shl-int/lit8 v0, v0, 0x4
 
-    .line 356
+    .line 410
     invoke-virtual {p0, p1}, Ljava/lang/String;->charAt(I)C
 
     move-result v1
@@ -1930,7 +2358,7 @@
 
     return p0
 
-    .line 351
+    .line 405
     :cond_1
     new-instance p0, Ljava/lang/NumberFormatException;
 
@@ -1941,6 +2369,18 @@
 
 .method private static parseOctet(Ljava/lang/String;II)B
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "ipString",
+            "start",
+            "end"
+        }
+    .end annotation
 
     sub-int v0, p2, p1
 
@@ -1954,7 +2394,7 @@
 
     if-le v0, v1, :cond_1
 
-    .line 328
+    .line 364
     invoke-virtual {p0, p1}, Ljava/lang/String;->charAt(I)C
 
     move-result v0
@@ -1965,7 +2405,7 @@
 
     goto :goto_0
 
-    .line 329
+    .line 365
     :cond_0
     new-instance p0, Ljava/lang/NumberFormatException;
 
@@ -1982,7 +2422,7 @@
 
     mul-int/lit8 v0, v0, 0xa
 
-    .line 334
+    .line 370
     invoke-virtual {p0, p1}, Ljava/lang/String;->charAt(I)C
 
     move-result v1
@@ -2001,7 +2441,7 @@
 
     goto :goto_1
 
-    .line 336
+    .line 372
     :cond_2
     new-instance p0, Ljava/lang/NumberFormatException;
 
@@ -2018,7 +2458,7 @@
 
     return p0
 
-    .line 341
+    .line 377
     :cond_4
     new-instance p0, Ljava/lang/NumberFormatException;
 
@@ -2026,7 +2466,7 @@
 
     throw p0
 
-    .line 324
+    .line 360
     :cond_5
     new-instance p0, Ljava/lang/NumberFormatException;
 
@@ -2035,12 +2475,91 @@
     throw p0
 .end method
 
-.method private static textToNumericFormatV4(Ljava/lang/String;)[B
-    .locals 7
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+.method private static scopeWithDelimiter(Ljava/net/Inet6Address;)Ljava/lang/String;
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ip"
+        }
     .end annotation
 
-    .line 210
+    .line 493
+    invoke-virtual {p0}, Ljava/net/Inet6Address;->getScopedInterface()Ljava/net/NetworkInterface;
+
+    move-result-object v0
+
+    .line 494
+    const-string v1, "%"
+
+    if-eqz v0, :cond_0
+
+    .line 495
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    invoke-direct {p0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0}, Ljava/net/NetworkInterface;->getName()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 497
+    :cond_0
+    invoke-virtual {p0}, Ljava/net/Inet6Address;->getScopeId()I
+
+    move-result p0
+
+    if-eqz p0, :cond_1
+
+    .line 499
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 501
+    :cond_1
+    const-string p0, ""
+
+    return-object p0
+.end method
+
+.method private static textToNumericFormatV4(Ljava/lang/String;)[B
+    .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ipString"
+        }
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 246
     sget-object v0, Lcom/google/common/net/InetAddresses;->IPV4_DELIMITER_MATCHER:Lcom/google/common/base/CharMatcher;
 
     invoke-virtual {v0, p0}, Lcom/google/common/base/CharMatcher;->countIn(Ljava/lang/CharSequence;)I
@@ -2057,7 +2576,7 @@
 
     return-object v1
 
-    .line 214
+    .line 250
     :cond_0
     new-array v0, v2, [B
 
@@ -2070,7 +2589,7 @@
 
     const/16 v5, 0x2e
 
-    .line 219
+    .line 255
     invoke-virtual {p0, v5, v4}, Ljava/lang/String;->indexOf(II)I
 
     move-result v5
@@ -2079,12 +2598,12 @@
 
     if-ne v5, v6, :cond_1
 
-    .line 221
+    .line 257
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v5
 
-    .line 224
+    .line 260
     :cond_1
     :try_start_0
     invoke-static {p0, v4, v5}, Lcom/google/common/net/InetAddresses;->parseOctet(Ljava/lang/String;II)B
@@ -2110,10 +2629,19 @@
 
 .method private static textToNumericFormatV6(Ljava/lang/String;)[B
     .locals 11
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ipString"
+        }
     .end annotation
 
-    .line 237
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 273
     sget-object v0, Lcom/google/common/net/InetAddresses;->IPV6_DELIMITER_MATCHER:Lcom/google/common/base/CharMatcher;
 
     invoke-virtual {v0, p0}, Lcom/google/common/base/CharMatcher;->countIn(Ljava/lang/CharSequence;)I
@@ -2145,7 +2673,7 @@
 
     move v8, v7
 
-    .line 245
+    .line 281
     :goto_0
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -2157,7 +2685,7 @@
 
     if-ge v7, v9, :cond_5
 
-    .line 246
+    .line 282
     invoke-virtual {p0, v7}, Ljava/lang/String;->charAt(I)C
 
     move-result v9
@@ -2183,7 +2711,7 @@
 
     add-int/lit8 v8, v5, 0x2
 
-    .line 255
+    .line 291
     :cond_2
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -2205,7 +2733,7 @@
 
     goto :goto_0
 
-    .line 260
+    .line 296
     :cond_5
     invoke-virtual {p0, v6}, Ljava/lang/String;->charAt(I)C
 
@@ -2221,7 +2749,7 @@
 
     return-object v1
 
-    .line 263
+    .line 299
     :cond_6
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -2235,7 +2763,7 @@
 
     if-ne v7, v10, :cond_7
 
-    .line 264
+    .line 300
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v7
@@ -2267,12 +2795,12 @@
     :cond_9
     const/16 v0, 0x10
 
-    .line 274
+    .line 310
     invoke-static {v0}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
     move-result-object v0
 
-    .line 280
+    .line 316
     :try_start_0
     invoke-virtual {p0, v6}, Ljava/lang/String;->charAt(I)C
 
@@ -2285,7 +2813,7 @@
     :cond_a
     move v4, v6
 
-    .line 283
+    .line 319
     :goto_1
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -2293,7 +2821,7 @@
 
     if-ge v4, v2, :cond_e
 
-    .line 284
+    .line 320
     invoke-virtual {p0, v10, v4}, Ljava/lang/String;->indexOf(II)I
 
     move-result v2
@@ -2302,12 +2830,12 @@
 
     if-ne v2, v3, :cond_b
 
-    .line 286
+    .line 322
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v2
 
-    .line 288
+    .line 324
     :cond_b
     invoke-virtual {p0, v4}, Ljava/lang/String;->charAt(I)C
 
@@ -2320,14 +2848,14 @@
     :goto_2
     if-ge v3, v5, :cond_d
 
-    .line 291
+    .line 327
     invoke-virtual {v0, v6}, Ljava/nio/ByteBuffer;->putShort(S)Ljava/nio/ByteBuffer;
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_2
 
-    .line 295
+    .line 331
     :cond_c
     invoke-static {p0, v4, v2}, Lcom/google/common/net/InetAddresses;->parseHextet(Ljava/lang/String;II)S
 
@@ -2342,7 +2870,7 @@
 
     goto :goto_1
 
-    .line 302
+    .line 338
     :cond_e
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->array()[B
 
@@ -2357,71 +2885,102 @@
 .end method
 
 .method public static toAddrString(Ljava/net/InetAddress;)Ljava/lang/String;
-    .locals 6
+    .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ip"
+        }
+    .end annotation
 
-    .line 395
+    .line 473
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 396
+    .line 474
     instance-of v0, p0, Ljava/net/Inet4Address;
 
     if-eqz v0, :cond_0
 
-    .line 398
+    .line 477
     invoke-virtual {p0}, Ljava/net/InetAddress;->getHostAddress()Ljava/lang/String;
 
     move-result-object p0
 
-    return-object p0
-
-    .line 400
-    :cond_0
-    instance-of v0, p0, Ljava/net/Inet6Address;
-
-    invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
-
-    .line 401
-    invoke-virtual {p0}, Ljava/net/InetAddress;->getAddress()[B
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
-    const/16 v0, 0x8
+    check-cast p0, Ljava/lang/String;
 
-    .line 402
-    new-array v1, v0, [I
+    return-object p0
 
-    const/4 v2, 0x0
+    .line 479
+    :cond_0
+    invoke-virtual {p0}, Ljava/net/InetAddress;->getAddress()[B
 
-    move v3, v2
+    move-result-object v0
+
+    const/16 v1, 0x8
+
+    .line 480
+    new-array v2, v1, [I
+
+    const/4 v3, 0x0
+
+    move v4, v3
 
     :goto_0
-    if-ge v3, v0, :cond_1
+    if-ge v4, v1, :cond_1
 
-    mul-int/lit8 v4, v3, 0x2
+    mul-int/lit8 v5, v4, 0x2
 
-    .line 404
-    aget-byte v5, p0, v4
+    .line 482
+    aget-byte v6, v0, v5
+
+    add-int/lit8 v5, v5, 0x1
+
+    aget-byte v5, v0, v5
+
+    invoke-static {v3, v3, v6, v5}, Lcom/google/common/primitives/Ints;->fromBytes(BBBB)I
+
+    move-result v5
+
+    aput v5, v2, v4
 
     add-int/lit8 v4, v4, 0x1
 
-    aget-byte v4, p0, v4
-
-    invoke-static {v2, v2, v5, v4}, Lcom/google/common/primitives/Ints;->fromBytes(BBBB)I
-
-    move-result v4
-
-    aput v4, v1, v3
-
-    add-int/lit8 v3, v3, 0x1
-
     goto :goto_0
 
-    .line 406
+    .line 484
     :cond_1
-    invoke-static {v1}, Lcom/google/common/net/InetAddresses;->compressLongestRunOfZeroes([I)V
+    invoke-static {v2}, Lcom/google/common/net/InetAddresses;->compressLongestRunOfZeroes([I)V
 
-    .line 407
-    invoke-static {v1}, Lcom/google/common/net/InetAddresses;->hextetsToIPv6String([I)Ljava/lang/String;
+    .line 486
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-static {v2}, Lcom/google/common/net/InetAddresses;->hextetsToIPv6String([I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    check-cast p0, Ljava/net/Inet6Address;
+
+    invoke-static {p0}, Lcom/google/common/net/InetAddresses;->scopeWithDelimiter(Ljava/net/Inet6Address;)Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
@@ -2430,8 +2989,16 @@
 
 .method public static toBigInteger(Ljava/net/InetAddress;)Ljava/math/BigInteger;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "address"
+        }
+    .end annotation
 
-    .line 966
+    .line 1080
     new-instance v0, Ljava/math/BigInteger;
 
     const/4 v1, 0x1
@@ -2447,36 +3014,30 @@
 
 .method public static toUriString(Ljava/net/InetAddress;)Ljava/lang/String;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ip"
+        }
+    .end annotation
 
-    .line 493
+    .line 587
     instance-of v0, p0, Ljava/net/Inet6Address;
 
     if-eqz v0, :cond_0
 
-    .line 494
+    .line 588
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "["
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
     invoke-static {p0}, Lcom/google/common/net/InetAddresses;->toAddrString(Ljava/net/InetAddress;)Ljava/lang/String;
 
     move-result-object p0
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, 0x2
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v0, "["
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2494,11 +3055,68 @@
 
     return-object p0
 
-    .line 496
+    .line 590
     :cond_0
     invoke-static {p0}, Lcom/google/common/net/InetAddresses;->toAddrString(Ljava/net/InetAddress;)Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
+.end method
+
+.method private static tryParseDecimal(Ljava/lang/String;II)I
+    .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "string",
+            "start",
+            "end"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    :goto_0
+    if-ge p1, p2, :cond_2
+
+    const v1, 0xccccccc
+
+    const/4 v2, -0x1
+
+    if-le v0, v1, :cond_0
+
+    return v2
+
+    :cond_0
+    mul-int/lit8 v0, v0, 0xa
+
+    .line 391
+    invoke-virtual {p0, p1}, Ljava/lang/String;->charAt(I)C
+
+    move-result v1
+
+    const/16 v3, 0xa
+
+    invoke-static {v1, v3}, Ljava/lang/Character;->digit(CI)I
+
+    move-result v1
+
+    if-gez v1, :cond_1
+
+    return v2
+
+    :cond_1
+    add-int/2addr v0, v1
+
+    add-int/lit8 p1, p1, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    return v0
 .end method

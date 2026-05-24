@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/graph/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<N:",
@@ -21,7 +24,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 28
+    .line 30
     invoke-direct {p0}, Lcom/google/common/graph/AbstractNetwork;-><init>()V
 
     return-void
@@ -31,6 +34,15 @@
 # virtual methods
 .method public adjacentEdges(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "edge"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)",
@@ -39,7 +51,7 @@
         }
     .end annotation
 
-    .line 104
+    .line 106
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -53,6 +65,15 @@
 
 .method public adjacentNodes(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)",
@@ -61,7 +82,7 @@
         }
     .end annotation
 
-    .line 69
+    .line 71
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -76,7 +97,7 @@
 .method public allowsParallelEdges()Z
     .locals 0
 
-    .line 49
+    .line 51
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -91,7 +112,7 @@
 .method public allowsSelfLoops()Z
     .locals 0
 
-    .line 54
+    .line 56
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -105,13 +126,22 @@
 
 .method public degree(Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)I"
         }
     .end annotation
 
-    .line 109
+    .line 111
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -123,7 +153,7 @@
     return p0
 .end method
 
-.method protected abstract delegate()Lcom/google/common/graph/Network;
+.method abstract delegate()Lcom/google/common/graph/Network;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -135,6 +165,15 @@
 
 .method public edgeConnectingOrNull(Lcom/google/common/graph/EndpointPair;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "endpoints"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -143,7 +182,10 @@
         }
     .end annotation
 
-    .line 139
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 143
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -157,13 +199,27 @@
 
 .method public edgeConnectingOrNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "nodeU",
+            "nodeV"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;TN;)TE;"
         }
     .end annotation
 
-    .line 134
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 137
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -185,7 +241,7 @@
         }
     .end annotation
 
-    .line 64
+    .line 66
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -207,7 +263,7 @@
         }
     .end annotation
 
-    .line 39
+    .line 41
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -221,6 +277,15 @@
 
 .method public edgesConnecting(Lcom/google/common/graph/EndpointPair;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "endpoints"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -231,7 +296,7 @@
         }
     .end annotation
 
-    .line 129
+    .line 131
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -245,6 +310,17 @@
 
 .method public edgesConnecting(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "nodeU",
+            "nodeV"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;TN;)",
@@ -253,7 +329,7 @@
         }
     .end annotation
 
-    .line 124
+    .line 126
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -267,6 +343,15 @@
 
 .method public hasEdgeConnecting(Lcom/google/common/graph/EndpointPair;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "endpoints"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -275,7 +360,7 @@
         }
     .end annotation
 
-    .line 149
+    .line 153
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -289,13 +374,24 @@
 
 .method public hasEdgeConnecting(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "nodeU",
+            "nodeV"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;TN;)Z"
         }
     .end annotation
 
-    .line 144
+    .line 148
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -309,13 +405,22 @@
 
 .method public inDegree(Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)I"
         }
     .end annotation
 
-    .line 114
+    .line 116
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -329,6 +434,15 @@
 
 .method public inEdges(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)",
@@ -337,7 +451,7 @@
         }
     .end annotation
 
-    .line 89
+    .line 91
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -351,6 +465,15 @@
 
 .method public incidentEdges(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)",
@@ -359,7 +482,7 @@
         }
     .end annotation
 
-    .line 84
+    .line 86
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -373,6 +496,15 @@
 
 .method public incidentNodes(Ljava/lang/Object;)Lcom/google/common/graph/EndpointPair;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "edge"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)",
@@ -381,7 +513,7 @@
         }
     .end annotation
 
-    .line 99
+    .line 101
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -396,7 +528,7 @@
 .method public isDirected()Z
     .locals 0
 
-    .line 44
+    .line 46
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -418,7 +550,7 @@
         }
     .end annotation
 
-    .line 59
+    .line 61
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -440,7 +572,7 @@
         }
     .end annotation
 
-    .line 34
+    .line 36
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -454,13 +586,22 @@
 
 .method public outDegree(Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)I"
         }
     .end annotation
 
-    .line 119
+    .line 121
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -474,6 +615,15 @@
 
 .method public outEdges(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)",
@@ -482,7 +632,7 @@
         }
     .end annotation
 
-    .line 94
+    .line 96
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -496,8 +646,16 @@
 
 .method public bridge synthetic predecessors(Ljava/lang/Object;)Ljava/lang/Iterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "node"
+        }
+    .end annotation
 
-    .line 28
+    .line 29
     invoke-virtual {p0, p1}, Lcom/google/common/graph/ForwardingNetwork;->predecessors(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object p0
@@ -507,6 +665,15 @@
 
 .method public predecessors(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)",
@@ -515,7 +682,7 @@
         }
     .end annotation
 
-    .line 74
+    .line 76
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0
@@ -529,8 +696,16 @@
 
 .method public bridge synthetic successors(Ljava/lang/Object;)Ljava/lang/Iterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "node"
+        }
+    .end annotation
 
-    .line 28
+    .line 29
     invoke-virtual {p0, p1}, Lcom/google/common/graph/ForwardingNetwork;->successors(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object p0
@@ -540,6 +715,15 @@
 
 .method public successors(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)",
@@ -548,7 +732,7 @@
         }
     .end annotation
 
-    .line 79
+    .line 81
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingNetwork;->delegate()Lcom/google/common/graph/Network;
 
     move-result-object p0

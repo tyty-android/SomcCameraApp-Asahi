@@ -72,9 +72,22 @@
 .method constructor <init>(Ljava/lang/Object;ILcom/google/common/cache/ReferenceEntry;)V
     .locals 0
     .param p3    # Lcom/google/common/cache/ReferenceEntry;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "hash",
+            "next"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;I",
@@ -83,39 +96,39 @@
         }
     .end annotation
 
-    .line 1070
+    .line 1108
     invoke-direct {p0, p1, p2, p3}, Lcom/google/common/cache/LocalCache$StrongEntry;-><init>(Ljava/lang/Object;ILcom/google/common/cache/ReferenceEntry;)V
 
     const-wide p1, 0x7fffffffffffffffL
 
-    .line 1075
+    .line 1113
     iput-wide p1, p0, Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;->accessTime:J
 
-    .line 1088
+    .line 1126
     invoke-static {}, Lcom/google/common/cache/LocalCache;->nullEntry()Lcom/google/common/cache/ReferenceEntry;
 
     move-result-object p3
 
     iput-object p3, p0, Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;->nextAccess:Lcom/google/common/cache/ReferenceEntry;
 
-    .line 1101
+    .line 1139
     invoke-static {}, Lcom/google/common/cache/LocalCache;->nullEntry()Lcom/google/common/cache/ReferenceEntry;
 
     move-result-object p3
 
     iput-object p3, p0, Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;->previousAccess:Lcom/google/common/cache/ReferenceEntry;
 
-    .line 1115
+    .line 1153
     iput-wide p1, p0, Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;->writeTime:J
 
-    .line 1128
+    .line 1166
     invoke-static {}, Lcom/google/common/cache/LocalCache;->nullEntry()Lcom/google/common/cache/ReferenceEntry;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;->nextWrite:Lcom/google/common/cache/ReferenceEntry;
 
-    .line 1141
+    .line 1179
     invoke-static {}, Lcom/google/common/cache/LocalCache;->nullEntry()Lcom/google/common/cache/ReferenceEntry;
 
     move-result-object p1
@@ -130,7 +143,7 @@
 .method public getAccessTime()J
     .locals 2
 
-    .line 1079
+    .line 1117
     iget-wide v0, p0, Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;->accessTime:J
 
     return-wide v0
@@ -146,7 +159,7 @@
         }
     .end annotation
 
-    .line 1092
+    .line 1130
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;->nextAccess:Lcom/google/common/cache/ReferenceEntry;
 
     return-object p0
@@ -162,7 +175,7 @@
         }
     .end annotation
 
-    .line 1132
+    .line 1170
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;->nextWrite:Lcom/google/common/cache/ReferenceEntry;
 
     return-object p0
@@ -178,7 +191,7 @@
         }
     .end annotation
 
-    .line 1105
+    .line 1143
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;->previousAccess:Lcom/google/common/cache/ReferenceEntry;
 
     return-object p0
@@ -194,7 +207,7 @@
         }
     .end annotation
 
-    .line 1145
+    .line 1183
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;->previousWrite:Lcom/google/common/cache/ReferenceEntry;
 
     return-object p0
@@ -203,7 +216,7 @@
 .method public getWriteTime()J
     .locals 2
 
-    .line 1119
+    .line 1157
     iget-wide v0, p0, Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;->writeTime:J
 
     return-wide v0
@@ -211,8 +224,16 @@
 
 .method public setAccessTime(J)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "time"
+        }
+    .end annotation
 
-    .line 1084
+    .line 1122
     iput-wide p1, p0, Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;->accessTime:J
 
     return-void
@@ -220,6 +241,15 @@
 
 .method public setNextInAccessQueue(Lcom/google/common/cache/ReferenceEntry;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "next"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -228,7 +258,7 @@
         }
     .end annotation
 
-    .line 1097
+    .line 1135
     iput-object p1, p0, Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;->nextAccess:Lcom/google/common/cache/ReferenceEntry;
 
     return-void
@@ -236,6 +266,15 @@
 
 .method public setNextInWriteQueue(Lcom/google/common/cache/ReferenceEntry;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "next"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -244,7 +283,7 @@
         }
     .end annotation
 
-    .line 1137
+    .line 1175
     iput-object p1, p0, Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;->nextWrite:Lcom/google/common/cache/ReferenceEntry;
 
     return-void
@@ -252,6 +291,15 @@
 
 .method public setPreviousInAccessQueue(Lcom/google/common/cache/ReferenceEntry;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "previous"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -260,7 +308,7 @@
         }
     .end annotation
 
-    .line 1110
+    .line 1148
     iput-object p1, p0, Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;->previousAccess:Lcom/google/common/cache/ReferenceEntry;
 
     return-void
@@ -268,6 +316,15 @@
 
 .method public setPreviousInWriteQueue(Lcom/google/common/cache/ReferenceEntry;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "previous"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -276,7 +333,7 @@
         }
     .end annotation
 
-    .line 1150
+    .line 1188
     iput-object p1, p0, Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;->previousWrite:Lcom/google/common/cache/ReferenceEntry;
 
     return-void
@@ -284,8 +341,16 @@
 
 .method public setWriteTime(J)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "time"
+        }
+    .end annotation
 
-    .line 1124
+    .line 1162
     iput-wide p1, p0, Lcom/google/common/cache/LocalCache$StrongAccessWriteEntry;->writeTime:J
 
     return-void

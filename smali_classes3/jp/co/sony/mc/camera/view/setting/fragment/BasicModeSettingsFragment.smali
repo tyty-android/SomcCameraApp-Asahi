@@ -368,7 +368,7 @@
 
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    const v1, 0x7f090412
+    const v1, 0x7f090414
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -424,7 +424,7 @@
 
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    const v1, 0x7f090412
+    const v1, 0x7f090414
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -546,7 +546,7 @@
     .line 40
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSettingsFragment;->setHasOptionsMenu(Z)V
 
-    const v0, 0x7f0c006f
+    const v0, 0x7f0c006a
 
     const/4 v1, 0x0
 
@@ -581,7 +581,7 @@
     iput v2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSettingsFragment;->mPosition:I
 
     .line 48
-    const-string v2, "scroll_y"
+    const-string/jumbo v2, "scroll_y"
 
     invoke-virtual {p3, v2}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
 
@@ -618,7 +618,7 @@
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSettingsFragment;->mCategoryItems:Ljava/util/List;
 
     :cond_0
-    const p2, 0x7f0904a9
+    const p2, 0x7f0904aa
 
     .line 58
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -627,7 +627,7 @@
 
     check-cast p2, Landroid/widget/TextView;
 
-    const p3, 0x7f110327
+    const p3, 0x7f110370
 
     .line 59
     invoke-virtual {p2, p3}, Landroid/widget/TextView;->setText(I)V
@@ -647,7 +647,7 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSettingsFragment;->mAdapter:Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSettingsAdapter;
 
-    const p2, 0x7f090412
+    const p2, 0x7f090414
 
     .line 61
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -708,7 +708,7 @@
 
     invoke-virtual {p2, p3, v0}, Landroid/widget/ExpandableListView;->setSelectionFromTop(II)V
 
-    const p2, 0x7f0900a3
+    const p2, 0x7f0900ab
 
     .line 82
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -882,7 +882,7 @@
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 129
-    const-string v0, "scroll_y"
+    const-string/jumbo v0, "scroll_y"
 
     iget v1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSettingsFragment;->mScrollY:I
 

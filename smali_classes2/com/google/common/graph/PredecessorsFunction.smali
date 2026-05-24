@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/graph/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation runtime Lcom/google/errorprone/annotations/DoNotMock;
     value = "Implement with a lambda, or use GraphBuilder to build a Graph with the desired edges"
 .end annotation
@@ -20,6 +23,15 @@
 
 # virtual methods
 .method public abstract predecessors(Ljava/lang/Object;)Ljava/lang/Iterable;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)",

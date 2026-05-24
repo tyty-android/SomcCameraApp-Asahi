@@ -50,6 +50,15 @@
 # direct methods
 .method private constructor <init>(Ljava/util/List;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "components"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -60,10 +69,10 @@
         }
     .end annotation
 
-    .line 387
+    .line 398
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 388
+    .line 399
     iput-object p1, p0, Lcom/google/common/base/Predicates$OrPredicate;->components:Ljava/util/List;
 
     return-void
@@ -72,7 +81,7 @@
 .method synthetic constructor <init>(Ljava/util/List;Lcom/google/common/base/Predicates$1;)V
     .locals 0
 
-    .line 384
+    .line 394
     invoke-direct {p0, p1}, Lcom/google/common/base/Predicates$OrPredicate;-><init>(Ljava/util/List;)V
 
     return-void
@@ -83,9 +92,18 @@
 .method public apply(Ljava/lang/Object;)Z
     .locals 3
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/base/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "t"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)Z"
@@ -96,7 +114,7 @@
 
     move v1, v0
 
-    .line 394
+    .line 405
     :goto_0
     iget-object v2, p0, Lcom/google/common/base/Predicates$OrPredicate;->components:Ljava/util/List;
 
@@ -106,7 +124,7 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 395
+    .line 406
     iget-object v2, p0, Lcom/google/common/base/Predicates$OrPredicate;->components:Ljava/util/List;
 
     invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -137,19 +155,27 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
-    .line 410
+    .line 421
     instance-of v0, p1, Lcom/google/common/base/Predicates$OrPredicate;
 
     if-eqz v0, :cond_0
 
-    .line 411
+    .line 422
     check-cast p1, Lcom/google/common/base/Predicates$OrPredicate;
 
-    .line 412
+    .line 423
     iget-object p0, p0, Lcom/google/common/base/Predicates$OrPredicate;->components:Ljava/util/List;
 
     iget-object p1, p1, Lcom/google/common/base/Predicates$OrPredicate;->components:Ljava/util/List;
@@ -169,7 +195,7 @@
 .method public hashCode()I
     .locals 1
 
-    .line 405
+    .line 416
     iget-object p0, p0, Lcom/google/common/base/Predicates$OrPredicate;->components:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->hashCode()I
@@ -186,7 +212,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 419
+    .line 430
     const-string v0, "or"
 
     iget-object p0, p0, Lcom/google/common/base/Predicates$OrPredicate;->components:Ljava/util/List;

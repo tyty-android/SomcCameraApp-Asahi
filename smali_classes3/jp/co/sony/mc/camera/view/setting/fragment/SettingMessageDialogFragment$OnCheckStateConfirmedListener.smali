@@ -26,6 +26,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "parameter",
+            "fragment"
+        }
+    .end annotation
 
     .line 254
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,6 +53,14 @@
 # virtual methods
 .method public onCheckedStateConfirmed(Z)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isChecked"
+        }
+    .end annotation
 
     .line 260
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z

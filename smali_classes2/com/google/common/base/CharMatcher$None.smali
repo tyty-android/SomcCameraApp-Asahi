@@ -15,19 +15,19 @@
 
 
 # static fields
-.field static final INSTANCE:Lcom/google/common/base/CharMatcher$None;
+.field static final INSTANCE:Lcom/google/common/base/CharMatcher;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1107
+    .line 1110
     new-instance v0, Lcom/google/common/base/CharMatcher$None;
 
     invoke-direct {v0}, Lcom/google/common/base/CharMatcher$None;-><init>()V
 
-    sput-object v0, Lcom/google/common/base/CharMatcher$None;->INSTANCE:Lcom/google/common/base/CharMatcher$None;
+    sput-object v0, Lcom/google/common/base/CharMatcher$None;->INSTANCE:Lcom/google/common/base/CharMatcher;
 
     return-void
 .end method
@@ -35,7 +35,7 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 1110
+    .line 1113
     const-string v0, "CharMatcher.none()"
 
     invoke-direct {p0, v0}, Lcom/google/common/base/CharMatcher$NamedFastMatcher;-><init>(Ljava/lang/String;)V
@@ -47,8 +47,16 @@
 # virtual methods
 .method public and(Lcom/google/common/base/CharMatcher;)Lcom/google/common/base/CharMatcher;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "other"
+        }
+    .end annotation
 
-    .line 1192
+    .line 1195
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-object p0
@@ -56,8 +64,18 @@
 
 .method public collapseFrom(Ljava/lang/CharSequence;C)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sequence",
+            "replacement"
+        }
+    .end annotation
 
-    .line 1166
+    .line 1169
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -67,8 +85,16 @@
 
 .method public countIn(Ljava/lang/CharSequence;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sequence"
+        }
+    .end annotation
 
-    .line 1186
+    .line 1189
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 p0, 0x0
@@ -78,8 +104,16 @@
 
 .method public indexIn(Ljava/lang/CharSequence;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sequence"
+        }
+    .end annotation
 
-    .line 1120
+    .line 1123
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 p0, -0x1
@@ -89,13 +123,23 @@
 
 .method public indexIn(Ljava/lang/CharSequence;I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sequence",
+            "start"
+        }
+    .end annotation
 
-    .line 1126
+    .line 1129
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
     move-result p0
 
-    .line 1127
+    .line 1130
     invoke-static {p2, p0}, Lcom/google/common/base/Preconditions;->checkPositionIndex(II)I
 
     const/4 p0, -0x1
@@ -105,8 +149,16 @@
 
 .method public lastIndexIn(Ljava/lang/CharSequence;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sequence"
+        }
+    .end annotation
 
-    .line 1133
+    .line 1136
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 p0, -0x1
@@ -116,6 +168,14 @@
 
 .method public matches(C)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
 
     const/4 p0, 0x0
 
@@ -124,8 +184,16 @@
 
 .method public matchesAllOf(Ljava/lang/CharSequence;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sequence"
+        }
+    .end annotation
 
-    .line 1139
+    .line 1142
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
     move-result p0
@@ -145,8 +213,16 @@
 
 .method public matchesNoneOf(Ljava/lang/CharSequence;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sequence"
+        }
+    .end annotation
 
-    .line 1144
+    .line 1147
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 p0, 0x1
@@ -157,7 +233,7 @@
 .method public negate()Lcom/google/common/base/CharMatcher;
     .locals 0
 
-    .line 1203
+    .line 1206
     invoke-static {}, Lcom/google/common/base/CharMatcher$None;->any()Lcom/google/common/base/CharMatcher;
 
     move-result-object p0
@@ -167,8 +243,16 @@
 
 .method public or(Lcom/google/common/base/CharMatcher;)Lcom/google/common/base/CharMatcher;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "other"
+        }
+    .end annotation
 
-    .line 1198
+    .line 1201
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -180,8 +264,16 @@
 
 .method public removeFrom(Ljava/lang/CharSequence;)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sequence"
+        }
+    .end annotation
 
-    .line 1150
+    .line 1153
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -191,8 +283,18 @@
 
 .method public replaceFrom(Ljava/lang/CharSequence;C)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sequence",
+            "replacement"
+        }
+    .end annotation
 
-    .line 1155
+    .line 1158
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -202,11 +304,21 @@
 
 .method public replaceFrom(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sequence",
+            "replacement"
+        }
+    .end annotation
 
-    .line 1160
+    .line 1163
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1161
+    .line 1164
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -216,8 +328,16 @@
 
 .method public trimFrom(Ljava/lang/CharSequence;)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sequence"
+        }
+    .end annotation
 
-    .line 1171
+    .line 1174
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -227,8 +347,16 @@
 
 .method public trimLeadingFrom(Ljava/lang/CharSequence;)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sequence"
+        }
+    .end annotation
 
-    .line 1176
+    .line 1179
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -238,8 +366,16 @@
 
 .method public trimTrailingFrom(Ljava/lang/CharSequence;)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sequence"
+        }
+    .end annotation
 
-    .line 1181
+    .line 1184
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object p0

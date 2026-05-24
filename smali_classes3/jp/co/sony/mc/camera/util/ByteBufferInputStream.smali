@@ -10,6 +10,14 @@
 # direct methods
 .method public constructor <init>(Ljava/nio/ByteBuffer;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "buf"
+        }
+    .end annotation
 
     .line 14
     invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
@@ -71,6 +79,18 @@
 
 .method public read([BII)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bytes",
+            "off",
+            "len"
+        }
+    .end annotation
 
     .line 28
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/ByteBufferInputStream;->mBuf:Ljava/nio/ByteBuffer;

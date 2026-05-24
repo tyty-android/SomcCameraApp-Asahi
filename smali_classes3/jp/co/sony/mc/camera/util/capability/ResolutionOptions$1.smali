@@ -22,7 +22,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 185
+    .line 193
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;->values()[Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;
 
     move-result-object v0

@@ -25,10 +25,6 @@
 
 .field private final mFrontVideoOneShot:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
-.field private final mFrontVideoStreaming:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
-
-.field private final mIs4KVideoSizeSupported:Z
-
 .field private final mPhotoBasic:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
 .field private final mPhotoBokeh:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
@@ -59,31 +55,24 @@
 
 .field private final mVideoSlowMotion:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
-.field private final mVideoStreaming:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
-
 
 # direct methods
-.method public constructor <init>(Z)V
-    .locals 26
+.method public constructor <init>()V
+    .locals 27
 
     move-object/from16 v0, p0
 
-    .line 65
+    .line 61
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
-
-    move/from16 v1, p1
-
-    .line 66
-    iput-boolean v1, v0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mIs4KVideoSizeSupported:Z
 
     const/4 v1, 0x4
 
-    .line 71
+    .line 65
     new-array v2, v1, [Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
-    const v3, 0x7f110326
+    const v3, 0x7f11036f
 
-    .line 74
+    .line 68
     invoke-direct {v0, v3}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
 
     move-result-object v3
@@ -126,20 +115,20 @@
 
     aput-object v6, v5, v11
 
-    const v6, 0x7f08024f
+    const v6, 0x7f0802aa
 
-    const v12, 0x7f0603da
+    const v12, 0x7f0603c3
 
-    .line 72
+    .line 66
     invoke-direct {v0, v6, v3, v12, v5}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v3
 
     aput-object v3, v2, v7
 
-    const v3, 0x7f110323
+    const v3, 0x7f11036c
 
-    .line 87
+    .line 81
     invoke-direct {v0, v3}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
 
     move-result-object v3
@@ -166,20 +155,20 @@
 
     aput-object v6, v5, v1
 
-    const v6, 0x7f08024c
+    const v6, 0x7f0802a7
 
-    const v12, 0x7f0603d7
+    const v12, 0x7f0603c0
 
-    .line 85
+    .line 79
     invoke-direct {v0, v6, v3, v12, v5}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v3
 
     aput-object v3, v2, v8
 
-    const v3, 0x7f110324
+    const v3, 0x7f11036d
 
-    .line 97
+    .line 91
     invoke-direct {v0, v3}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
 
     move-result-object v3
@@ -216,25 +205,25 @@
 
     aput-object v12, v6, v4
 
-    const v12, 0x7f08024d
+    const v12, 0x7f0802a8
 
-    const v13, 0x7f0603d8
+    const v13, 0x7f0603c1
 
-    .line 95
+    .line 89
     invoke-direct {v0, v12, v3, v13, v6}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v3
 
     aput-object v3, v2, v9
 
-    const v3, 0x7f110325
+    const v3, 0x7f11036e
 
-    .line 109
+    .line 103
     invoke-direct {v0, v3}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
-    const/16 v12, 0x10
+    const/16 v12, 0x11
 
     new-array v13, v12, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -278,9 +267,9 @@
 
     sget-object v14, Ljp/co/sony/mc/camera/setting/CommonSettings;->QUICK_LAUNCH:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v16, 0x9
+    const/16 v12, 0x9
 
-    aput-object v14, v13, v16
+    aput-object v14, v13, v12
 
     sget-object v14, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -288,55 +277,61 @@
 
     aput-object v14, v13, v17
 
-    sget-object v14, Ljp/co/sony/mc/camera/setting/CommonSettings;->TIPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v14, Ljp/co/sony/mc/camera/setting/CommonSettings;->MODE_INTRODUCTION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const/16 v18, 0xb
 
     aput-object v14, v13, v18
 
-    sget-object v14, Ljp/co/sony/mc/camera/setting/CommonSettings;->ACCESSIBILITY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v14, Ljp/co/sony/mc/camera/setting/CommonSettings;->TIPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const/16 v12, 0xc
 
     aput-object v14, v13, v12
 
-    sget-object v14, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v14, Ljp/co/sony/mc/camera/setting/CommonSettings;->ACCESSIBILITY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const/16 v12, 0xd
 
     aput-object v14, v13, v12
 
-    sget-object v14, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v14, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const/16 v12, 0xe
 
     aput-object v14, v13, v12
 
-    sget-object v14, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v14, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const/16 v12, 0xf
 
     aput-object v14, v13, v12
 
-    const v14, 0x7f08024e
+    sget-object v14, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const v12, 0x7f0603d9
+    const/16 v12, 0x10
 
-    .line 107
+    aput-object v14, v13, v12
+
+    const v14, 0x7f0802a9
+
+    const v12, 0x7f0603c2
+
+    .line 101
     invoke-direct {v0, v14, v6, v12, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
     aput-object v6, v2, v10
 
-    .line 71
+    .line 65
     invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->group([Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     move-result-object v2
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mPhotoPro:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
-    .line 133
+    .line 128
     iget-object v6, v2, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;->categories:[Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     array-length v6, v6
@@ -345,9 +340,9 @@
 
     new-array v6, v6, [Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
-    const v12, 0x7f110508
+    const v12, 0x7f110567
 
-    .line 136
+    .line 131
     invoke-direct {v0, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
 
     move-result-object v12
@@ -370,14 +365,14 @@
 
     aput-object v14, v13, v10
 
-    .line 134
+    .line 129
     invoke-direct {v0, v7, v12, v7, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v12
 
     aput-object v12, v6, v7
 
-    .line 142
+    .line 137
     iget-object v12, v2, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;->categories:[Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     iget-object v2, v2, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;->categories:[Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
@@ -386,24 +381,24 @@
 
     invoke-static {v12, v7, v6, v8, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 144
+    .line 139
     invoke-direct {v0, v6}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->group([Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     move-result-object v2
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mPhotoProDebug:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
-    .line 149
+    .line 144
     new-array v2, v9, [Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
-    const v6, 0x7f11031f
+    const v6, 0x7f110368
 
-    .line 152
+    .line 147
     invoke-direct {v0, v6}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
 
     move-result-object v12
 
-    new-array v13, v9, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    new-array v13, v10, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
     sget-object v14, Ljp/co/sony/mc/camera/setting/CameraSettings;->FACE_DETECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -413,16 +408,20 @@
 
     aput-object v14, v13, v8
 
+    sget-object v14, Ljp/co/sony/mc/camera/setting/CameraSettings;->AI_SUGGESTION_DETECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    aput-object v14, v13, v9
+
     const/4 v14, -0x1
 
-    .line 150
+    .line 145
     invoke-direct {v0, v14, v12, v14, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v12
 
     aput-object v12, v2, v7
 
-    .line 158
+    .line 154
     invoke-direct {v0, v3}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
 
     move-result-object v12
@@ -431,790 +430,796 @@
 
     new-array v13, v13, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    sget-object v23, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASIC_MODE_FOCUS_DISPLAY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v25, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASIC_MODE_FOCUS_DISPLAY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v23, v13, v7
+    aput-object v25, v13, v7
 
-    sget-object v23, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASIC_MODE_SHUTTER_SPEED_DISPLAY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v25, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASIC_MODE_SHUTTER_SPEED_DISPLAY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v23, v13, v8
+    aput-object v25, v13, v8
 
-    sget-object v23, Ljp/co/sony/mc/camera/setting/CameraSettings;->OBJECT_TRACKING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v25, Ljp/co/sony/mc/camera/setting/CameraSettings;->OBJECT_TRACKING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v23, v13, v9
+    aput-object v25, v13, v9
 
-    sget-object v23, Ljp/co/sony/mc/camera/setting/CommonSettings;->GRID_LINE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v25, Ljp/co/sony/mc/camera/setting/CommonSettings;->GRID_LINE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v23, v13, v10
+    aput-object v25, v13, v10
 
-    sget-object v23, Ljp/co/sony/mc/camera/setting/CameraSettings;->ULTRA_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v25, Ljp/co/sony/mc/camera/setting/CameraSettings;->ULTRA_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v23, v13, v1
+    aput-object v25, v13, v1
 
-    sget-object v23, Ljp/co/sony/mc/camera/setting/CameraSettings;->VOLUME_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v25, Ljp/co/sony/mc/camera/setting/CameraSettings;->VOLUME_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v23, v13, v11
+    aput-object v25, v13, v11
 
-    sget-object v23, Ljp/co/sony/mc/camera/setting/CameraSettings;->MACRO_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v25, Ljp/co/sony/mc/camera/setting/CameraSettings;->MACRO_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v23, v13, v4
+    aput-object v25, v13, v4
 
-    sget-object v23, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASIC_MODE_LEVEL_METER_DISPLAY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v25, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASIC_MODE_LEVEL_METER_DISPLAY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v23, v13, v5
+    aput-object v25, v13, v5
 
-    sget-object v23, Ljp/co/sony/mc/camera/setting/CommonSettings;->HORIZONTAL_LEVEL_METER:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v25, Ljp/co/sony/mc/camera/setting/CommonSettings;->HORIZONTAL_LEVEL_METER:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v23, v13, v15
+    aput-object v25, v13, v15
 
-    sget-object v23, Ljp/co/sony/mc/camera/setting/CommonSettings;->VOLUME_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v25, Ljp/co/sony/mc/camera/setting/CommonSettings;->VOLUME_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v23, v13, v16
+    const/16 v19, 0x9
 
-    sget-object v23, Ljp/co/sony/mc/camera/setting/CommonSettings;->SHUTTER_SOUND:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    aput-object v25, v13, v19
 
-    aput-object v23, v13, v17
+    sget-object v25, Ljp/co/sony/mc/camera/setting/CommonSettings;->SHUTTER_SOUND:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    sget-object v23, Ljp/co/sony/mc/camera/setting/CommonSettings;->SAVE_DESTINATION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    aput-object v25, v13, v17
 
-    aput-object v23, v13, v18
+    sget-object v25, Ljp/co/sony/mc/camera/setting/CommonSettings;->SAVE_DESTINATION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    sget-object v23, Ljp/co/sony/mc/camera/setting/CommonSettings;->GEOTAG:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    aput-object v25, v13, v18
 
-    const/16 v19, 0xc
+    sget-object v25, Ljp/co/sony/mc/camera/setting/CommonSettings;->GEOTAG:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v23, v13, v19
+    const/16 v20, 0xc
 
-    sget-object v23, Ljp/co/sony/mc/camera/setting/CommonSettings;->QUICK_LAUNCH:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    aput-object v25, v13, v20
 
-    const/16 v20, 0xd
+    sget-object v25, Ljp/co/sony/mc/camera/setting/CommonSettings;->QUICK_LAUNCH:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v23, v13, v20
+    const/16 v21, 0xd
 
-    sget-object v23, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    aput-object v25, v13, v21
 
-    const/16 v21, 0xe
+    sget-object v25, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v23, v13, v21
+    const/16 v22, 0xe
 
-    sget-object v23, Ljp/co/sony/mc/camera/setting/CommonSettings;->TIPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    aput-object v25, v13, v22
 
-    const/16 v22, 0xf
+    sget-object v25, Ljp/co/sony/mc/camera/setting/CommonSettings;->TIPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v23, v13, v22
+    const/16 v23, 0xf
 
-    sget-object v23, Ljp/co/sony/mc/camera/setting/CommonSettings;->ACCESSIBILITY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    aput-object v25, v13, v23
+
+    sget-object v25, Ljp/co/sony/mc/camera/setting/CommonSettings;->ACCESSIBILITY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const/16 v24, 0x10
 
-    aput-object v23, v13, v24
+    aput-object v25, v13, v24
 
-    sget-object v23, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v25, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0x11
+    const/16 v16, 0x11
 
-    aput-object v23, v13, v15
+    aput-object v25, v13, v16
 
-    const/16 v23, 0x12
+    const/16 v25, 0x12
 
-    sget-object v25, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v26, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v25, v13, v23
+    aput-object v26, v13, v25
 
-    const/16 v23, 0x13
+    const/16 v25, 0x13
 
-    sget-object v25, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v26, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v25, v13, v23
+    aput-object v26, v13, v25
 
-    .line 156
+    .line 152
     invoke-direct {v0, v14, v12, v14, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v12
 
     aput-object v12, v2, v8
 
-    .line 149
+    .line 144
     invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->group([Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     move-result-object v2
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mPhotoBasic:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
-    .line 184
+    .line 180
     new-array v2, v9, [Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
-    const v12, 0x7f110319
+    const v12, 0x7f110362
 
-    .line 187
+    .line 183
     invoke-direct {v0, v12, v6}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(II)Ljava/lang/String;
 
     move-result-object v13
 
-    new-array v15, v9, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    new-array v6, v9, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    sget-object v25, Ljp/co/sony/mc/camera/setting/CameraSettings;->FRONT_SOFT_SKIN:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v26, Ljp/co/sony/mc/camera/setting/CameraSettings;->FRONT_SOFT_SKIN:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v25, v15, v7
+    aput-object v26, v6, v7
 
-    sget-object v25, Ljp/co/sony/mc/camera/setting/CameraSettings;->HAND_SHUTTER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v26, Ljp/co/sony/mc/camera/setting/CameraSettings;->HAND_SHUTTER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v25, v15, v8
+    aput-object v26, v6, v8
 
-    .line 185
-    invoke-direct {v0, v14, v13, v14, v15}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    .line 181
+    invoke-direct {v0, v14, v13, v14, v6}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
-    move-result-object v13
+    move-result-object v6
 
-    aput-object v13, v2, v7
+    aput-object v6, v2, v7
 
-    .line 194
+    .line 190
     invoke-direct {v0, v3}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
 
-    move-result-object v13
+    move-result-object v6
 
-    const/16 v15, 0xe
+    const/16 v13, 0xe
 
-    new-array v6, v15, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    new-array v12, v13, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/CommonSettings;->GRID_LINE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->GRID_LINE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v15, v6, v7
+    aput-object v13, v12, v7
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/CameraSettings;->ULTRA_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->ULTRA_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v15, v6, v8
+    aput-object v13, v12, v8
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/CameraSettings;->VOLUME_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->VOLUME_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v15, v6, v9
+    aput-object v13, v12, v9
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/CommonSettings;->VOLUME_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->VOLUME_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v15, v6, v10
+    aput-object v13, v12, v10
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/CommonSettings;->SHUTTER_SOUND:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->SHUTTER_SOUND:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v15, v6, v1
+    aput-object v13, v12, v1
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/CommonSettings;->SAVE_DESTINATION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->SAVE_DESTINATION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v15, v6, v11
+    aput-object v13, v12, v11
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/CommonSettings;->GEOTAG:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->GEOTAG:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v15, v6, v4
+    aput-object v13, v12, v4
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/CommonSettings;->QUICK_LAUNCH:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->QUICK_LAUNCH:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v15, v6, v5
+    aput-object v13, v12, v5
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v24, 0x8
+    aput-object v13, v12, v15
 
-    aput-object v15, v6, v24
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->TIPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/CommonSettings;->TIPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    const/16 v19, 0x9
 
-    aput-object v15, v6, v16
+    aput-object v13, v12, v19
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/CommonSettings;->ACCESSIBILITY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->ACCESSIBILITY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v15, v6, v17
+    aput-object v13, v12, v17
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v15, v6, v18
+    aput-object v13, v12, v18
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v19, 0xc
+    const/16 v20, 0xc
 
-    aput-object v15, v6, v19
+    aput-object v13, v12, v20
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v20, 0xd
+    const/16 v21, 0xd
 
-    aput-object v15, v6, v20
+    aput-object v13, v12, v21
 
-    .line 192
-    invoke-direct {v0, v14, v13, v14, v6}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    .line 188
+    invoke-direct {v0, v14, v6, v14, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
     aput-object v6, v2, v8
 
-    .line 184
+    .line 180
     invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->group([Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     move-result-object v2
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mFrontPhotoBasic:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
-    .line 214
+    .line 210
     new-array v2, v9, [Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
-    const v6, 0x7f110142
+    const v6, 0x7f11017f
 
-    .line 217
+    .line 213
     invoke-direct {v0, v6}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
-    new-array v13, v9, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    new-array v12, v9, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/CameraSettings;->FACE_DETECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->FACE_DETECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v15, v13, v7
+    aput-object v13, v12, v7
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/CameraSettings;->BACK_SOFT_SKIN:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->BACK_SOFT_SKIN:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v15, v13, v8
+    aput-object v13, v12, v8
 
-    .line 215
-    invoke-direct {v0, v14, v6, v14, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    .line 211
+    invoke-direct {v0, v14, v6, v14, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
     aput-object v6, v2, v7
 
-    .line 223
+    .line 219
     invoke-direct {v0, v3}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
-    const/16 v13, 0xf
+    const/16 v12, 0xf
 
-    new-array v15, v13, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    new-array v13, v12, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->OBJECT_TRACKING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CameraSettings;->OBJECT_TRACKING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v13, v15, v7
+    aput-object v12, v13, v7
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->GRID_LINE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->GRID_LINE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v8
+    aput-object v12, v13, v8
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASIC_MODE_LEVEL_METER_DISPLAY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASIC_MODE_LEVEL_METER_DISPLAY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v13, v15, v9
+    aput-object v12, v13, v9
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->HORIZONTAL_LEVEL_METER:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->HORIZONTAL_LEVEL_METER:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v10
+    aput-object v12, v13, v10
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->VOLUME_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->VOLUME_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v1
+    aput-object v12, v13, v1
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->SHUTTER_SOUND:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->SHUTTER_SOUND:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v11
+    aput-object v12, v13, v11
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->SAVE_DESTINATION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->SAVE_DESTINATION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v4
+    aput-object v12, v13, v4
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->GEOTAG:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->GEOTAG:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v5
+    aput-object v12, v13, v5
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->QUICK_LAUNCH:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->QUICK_LAUNCH:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v24, 0x8
+    aput-object v12, v13, v15
 
-    aput-object v13, v15, v24
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    const/16 v19, 0x9
 
-    aput-object v13, v15, v16
+    aput-object v12, v13, v19
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->TIPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->TIPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v17
+    aput-object v12, v13, v17
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->ACCESSIBILITY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->ACCESSIBILITY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v18
+    aput-object v12, v13, v18
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v19, 0xc
+    const/16 v20, 0xc
 
-    aput-object v13, v15, v19
+    aput-object v12, v13, v20
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v20, 0xd
+    const/16 v21, 0xd
 
-    aput-object v13, v15, v20
+    aput-object v12, v13, v21
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v21, 0xe
+    const/16 v22, 0xe
 
-    aput-object v13, v15, v21
+    aput-object v12, v13, v22
 
-    .line 221
-    invoke-direct {v0, v14, v6, v14, v15}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    .line 217
+    invoke-direct {v0, v14, v6, v14, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
     aput-object v6, v2, v8
 
-    .line 214
+    .line 210
     invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->group([Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     move-result-object v2
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mPhotoBokeh:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
-    .line 244
+    .line 240
     new-array v2, v9, [Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
-    const v6, 0x7f110142
+    const v6, 0x7f11017f
 
-    .line 247
+    const v12, 0x7f110362
+
+    .line 243
     invoke-direct {v0, v12, v6}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(II)Ljava/lang/String;
 
     move-result-object v6
 
-    new-array v13, v8, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    new-array v12, v8, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/CameraSettings;->FRONT_SOFT_SKIN:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->FRONT_SOFT_SKIN:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v15, v13, v7
+    aput-object v13, v12, v7
 
-    .line 245
-    invoke-direct {v0, v14, v6, v14, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    .line 241
+    invoke-direct {v0, v14, v6, v14, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
     aput-object v6, v2, v7
 
-    .line 253
+    .line 249
     invoke-direct {v0, v3}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
-    const/16 v13, 0xc
+    const/16 v12, 0xc
 
-    new-array v15, v13, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    new-array v13, v12, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->GRID_LINE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->GRID_LINE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v7
+    aput-object v12, v13, v7
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->VOLUME_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->VOLUME_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v8
+    aput-object v12, v13, v8
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->SHUTTER_SOUND:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->SHUTTER_SOUND:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v9
+    aput-object v12, v13, v9
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->SAVE_DESTINATION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->SAVE_DESTINATION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v10
+    aput-object v12, v13, v10
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->GEOTAG:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->GEOTAG:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v1
+    aput-object v12, v13, v1
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->QUICK_LAUNCH:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->QUICK_LAUNCH:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v11
+    aput-object v12, v13, v11
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v4
+    aput-object v12, v13, v4
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->TIPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->TIPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v5
+    aput-object v12, v13, v5
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->ACCESSIBILITY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->ACCESSIBILITY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v24, 0x8
+    aput-object v12, v13, v15
 
-    aput-object v13, v15, v24
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    const/16 v19, 0x9
 
-    aput-object v13, v15, v16
+    aput-object v12, v13, v19
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v17
+    aput-object v12, v13, v17
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v18
+    aput-object v12, v13, v18
 
-    .line 251
-    invoke-direct {v0, v14, v6, v14, v15}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    .line 247
+    invoke-direct {v0, v14, v6, v14, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
     aput-object v6, v2, v8
 
-    .line 244
+    .line 240
     invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->group([Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     move-result-object v2
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mFrontPhotoBokeh:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
-    .line 271
+    .line 267
     new-array v2, v9, [Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
-    const v6, 0x7f11031b
+    const v6, 0x7f110364
 
-    const v13, 0x7f11014d
+    const v12, 0x7f11018a
 
-    .line 274
-    invoke-direct {v0, v6, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(II)Ljava/lang/String;
+    .line 270
+    invoke-direct {v0, v6, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(II)Ljava/lang/String;
 
     move-result-object v6
 
-    new-array v13, v7, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    new-array v12, v7, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    .line 272
-    invoke-direct {v0, v14, v6, v14, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    .line 268
+    invoke-direct {v0, v14, v6, v14, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
     aput-object v6, v2, v7
 
-    .line 279
+    .line 275
     invoke-direct {v0, v3}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
-    const/16 v13, 0xf
+    const/16 v12, 0xf
 
-    new-array v15, v13, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    new-array v13, v12, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->GRID_LINE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->GRID_LINE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v7
+    aput-object v12, v13, v7
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->ULTRA_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CameraSettings;->ULTRA_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v13, v15, v8
+    aput-object v12, v13, v8
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASIC_MODE_LEVEL_METER_DISPLAY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASIC_MODE_LEVEL_METER_DISPLAY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v13, v15, v9
+    aput-object v12, v13, v9
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->HORIZONTAL_LEVEL_METER:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->HORIZONTAL_LEVEL_METER:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v10
+    aput-object v12, v13, v10
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->VOLUME_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->VOLUME_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v1
+    aput-object v12, v13, v1
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->SHUTTER_SOUND:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->SHUTTER_SOUND:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v11
+    aput-object v12, v13, v11
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->SAVE_DESTINATION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->SAVE_DESTINATION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v4
+    aput-object v12, v13, v4
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->GEOTAG:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->GEOTAG:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v5
+    aput-object v12, v13, v5
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->QUICK_LAUNCH:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->QUICK_LAUNCH:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v24, 0x8
+    aput-object v12, v13, v15
 
-    aput-object v13, v15, v24
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    const/16 v19, 0x9
 
-    aput-object v13, v15, v16
+    aput-object v12, v13, v19
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->TIPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->TIPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v17
+    aput-object v12, v13, v17
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->ACCESSIBILITY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->ACCESSIBILITY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v18
+    aput-object v12, v13, v18
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v19, 0xc
+    const/16 v20, 0xc
 
-    aput-object v13, v15, v19
+    aput-object v12, v13, v20
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v20, 0xd
+    const/16 v21, 0xd
 
-    aput-object v13, v15, v20
+    aput-object v12, v13, v21
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v21, 0xe
+    const/16 v22, 0xe
 
-    aput-object v13, v15, v21
+    aput-object v12, v13, v22
 
-    .line 277
-    invoke-direct {v0, v14, v6, v14, v15}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    .line 273
+    invoke-direct {v0, v14, v6, v14, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
     aput-object v6, v2, v8
 
-    .line 271
+    .line 267
     invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->group([Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     move-result-object v2
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mPhotoMacro:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
-    .line 300
+    .line 296
     new-array v2, v9, [Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
-    const v6, 0x7f110141
+    const v6, 0x7f11017e
 
-    .line 303
+    .line 299
     invoke-direct {v0, v6}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
-    new-array v13, v9, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    new-array v12, v9, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/CameraSettings;->FACE_DETECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->FACE_DETECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v15, v13, v7
+    aput-object v13, v12, v7
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/CameraSettings;->BACK_SOFT_SKIN:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->BACK_SOFT_SKIN:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v15, v13, v8
+    aput-object v13, v12, v8
 
-    .line 301
-    invoke-direct {v0, v14, v6, v14, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    .line 297
+    invoke-direct {v0, v14, v6, v14, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
     aput-object v6, v2, v7
 
-    .line 309
+    .line 305
     invoke-direct {v0, v3}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
-    const/16 v13, 0x10
+    const/16 v12, 0x10
 
-    new-array v15, v13, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    new-array v13, v12, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->OBJECT_TRACKING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CameraSettings;->OBJECT_TRACKING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v13, v15, v7
+    aput-object v12, v13, v7
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->GRID_LINE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->GRID_LINE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v8
+    aput-object v12, v13, v8
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->ULTRA_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CameraSettings;->ULTRA_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v13, v15, v9
+    aput-object v12, v13, v9
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASIC_MODE_LEVEL_METER_DISPLAY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASIC_MODE_LEVEL_METER_DISPLAY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v13, v15, v10
+    aput-object v12, v13, v10
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->HORIZONTAL_LEVEL_METER:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->HORIZONTAL_LEVEL_METER:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v1
+    aput-object v12, v13, v1
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->VOLUME_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->VOLUME_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v11
+    aput-object v12, v13, v11
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->SHUTTER_SOUND:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->SHUTTER_SOUND:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v4
+    aput-object v12, v13, v4
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->SAVE_DESTINATION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->SAVE_DESTINATION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v5
+    aput-object v12, v13, v5
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->GEOTAG:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->GEOTAG:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v24, 0x8
+    aput-object v12, v13, v15
 
-    aput-object v13, v15, v24
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->QUICK_LAUNCH:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->QUICK_LAUNCH:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    const/16 v19, 0x9
 
-    aput-object v13, v15, v16
+    aput-object v12, v13, v19
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v17
+    aput-object v12, v13, v17
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->TIPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->TIPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v15, v18
+    aput-object v12, v13, v18
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->ACCESSIBILITY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->ACCESSIBILITY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v19, 0xc
+    const/16 v20, 0xc
 
-    aput-object v13, v15, v19
+    aput-object v12, v13, v20
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v20, 0xd
+    const/16 v21, 0xd
 
-    aput-object v13, v15, v20
+    aput-object v12, v13, v21
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v21, 0xe
+    const/16 v22, 0xe
 
-    aput-object v13, v15, v21
+    aput-object v12, v13, v22
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v22, 0xf
+    const/16 v23, 0xf
 
-    aput-object v13, v15, v22
+    aput-object v12, v13, v23
 
-    .line 307
-    invoke-direct {v0, v14, v6, v14, v15}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    .line 303
+    invoke-direct {v0, v14, v6, v14, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
     aput-object v6, v2, v8
 
-    .line 300
+    .line 296
     invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->group([Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     move-result-object v2
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mPhotoHiResolution:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
-    .line 331
+    .line 327
     new-array v2, v8, [Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
-    const v6, 0x7f11031f
+    const v6, 0x7f110368
 
-    .line 334
+    .line 330
     invoke-direct {v0, v6}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
 
-    move-result-object v13
+    move-result-object v12
 
-    new-array v15, v9, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    new-array v13, v9, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
     sget-object v25, Ljp/co/sony/mc/camera/setting/CameraSettings;->FACE_DETECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v25, v15, v7
+    aput-object v25, v13, v7
 
     sget-object v25, Ljp/co/sony/mc/camera/setting/CameraSettings;->BACK_SOFT_SKIN:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v25, v15, v8
+    aput-object v25, v13, v8
 
-    .line 332
-    invoke-direct {v0, v14, v13, v14, v15}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    .line 328
+    invoke-direct {v0, v14, v12, v14, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
-    move-result-object v13
+    move-result-object v12
 
-    aput-object v13, v2, v7
+    aput-object v12, v2, v7
 
-    .line 331
+    .line 327
     invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->group([Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     move-result-object v2
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mPhotoOneShot:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
-    .line 342
+    .line 338
     new-array v2, v8, [Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
-    .line 345
+    const v12, 0x7f110362
+
+    .line 341
     invoke-direct {v0, v12, v6}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(II)Ljava/lang/String;
 
     move-result-object v6
 
-    new-array v13, v8, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    new-array v12, v8, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/CameraSettings;->FRONT_SOFT_SKIN:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->FRONT_SOFT_SKIN:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v15, v13, v7
+    aput-object v13, v12, v7
 
-    .line 343
-    invoke-direct {v0, v14, v6, v14, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    .line 339
+    invoke-direct {v0, v14, v6, v14, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
     aput-object v6, v2, v7
 
-    .line 342
+    .line 338
     invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->group([Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     move-result-object v2
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mFrontPhotoOneShot:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
-    .line 353
+    .line 349
     new-array v2, v1, [Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
-    const v6, 0x7f110326
+    const v6, 0x7f11036f
 
-    .line 356
+    .line 352
     invoke-direct {v0, v6}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
-    new-array v13, v4, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    new-array v12, v4, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_SIZE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_SIZE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v15, v13, v7
+    aput-object v13, v12, v7
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_FPS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_FPS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v15, v13, v8
+    aput-object v13, v12, v8
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/CameraSettings;->EXTEND_FPS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->EXTEND_FPS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v15, v13, v9
+    aput-object v13, v12, v9
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_STABILIZER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_STABILIZER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v15, v13, v10
+    aput-object v13, v12, v10
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/CameraSettings;->MIC:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->MIC:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v15, v13, v1
+    aput-object v13, v12, v1
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/CameraSettings;->RECOMMENDED_SETTINGS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->RECOMMENDED_SETTINGS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v15, v13, v11
+    aput-object v13, v12, v11
 
-    const v15, 0x7f080252
+    const v13, 0x7f0802ad
 
-    const v12, 0x7f0603da
+    const v14, 0x7f0603c3
 
-    .line 354
-    invoke-direct {v0, v15, v6, v12, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    .line 350
+    invoke-direct {v0, v13, v6, v14, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
     aput-object v6, v2, v7
 
-    const v6, 0x7f110323
+    const v6, 0x7f11036c
 
-    .line 367
+    .line 363
     invoke-direct {v0, v6}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
 
     move-result-object v6
@@ -1233,20 +1238,20 @@
 
     aput-object v13, v12, v9
 
-    const v13, 0x7f080250
+    const v13, 0x7f0802ab
 
-    const v15, 0x7f0603d7
+    const v14, 0x7f0603c0
 
-    .line 365
-    invoke-direct {v0, v13, v6, v15, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    .line 361
+    invoke-direct {v0, v13, v6, v14, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
     aput-object v6, v2, v8
 
-    const v6, 0x7f110324
+    const v6, 0x7f11036d
 
-    .line 375
+    .line 371
     invoke-direct {v0, v6}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
 
     move-result-object v6
@@ -1277,166 +1282,184 @@
 
     aput-object v13, v12, v11
 
-    const v13, 0x7f080251
+    const v13, 0x7f0802ac
 
-    const v15, 0x7f0603d8
+    const v14, 0x7f0603c1
 
-    .line 373
-    invoke-direct {v0, v13, v6, v15, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    .line 369
+    invoke-direct {v0, v13, v6, v14, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
     aput-object v6, v2, v9
 
-    .line 386
+    .line 382
     invoke-direct {v0, v3}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
-    const/16 v12, 0x11
+    const/16 v12, 0x12
 
-    new-array v13, v12, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    new-array v12, v12, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CameraSettings;->WIND_NOISE_REDUCTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->WIND_NOISE_REDUCTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v12, v13, v7
+    aput-object v13, v12, v7
 
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->GRID_LINE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->GRID_LINE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v12, v13, v8
+    aput-object v13, v12, v8
 
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->FUNCTION_CUSTOM:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->FUNCTION_CUSTOM:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v12, v13, v9
+    aput-object v13, v12, v9
 
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->DISP_CUSTOM:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->DISP_CUSTOM:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v12, v13, v10
+    aput-object v13, v12, v10
 
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->HORIZONTAL_LEVEL_METER:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->HORIZONTAL_LEVEL_METER:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v12, v13, v1
+    aput-object v13, v12, v1
 
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->VOLUME_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->VOLUME_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v12, v13, v11
+    aput-object v13, v12, v11
 
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->SHUTTER_SOUND:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->SHUTTER_SOUND:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v12, v13, v4
+    aput-object v13, v12, v4
 
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->SAVE_DESTINATION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->SAVE_DESTINATION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v12, v13, v5
+    aput-object v13, v12, v5
 
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->GEOTAG:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->GEOTAG:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0x8
+    aput-object v13, v12, v15
 
-    aput-object v12, v13, v15
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->QUICK_LAUNCH:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->QUICK_LAUNCH:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    const/16 v14, 0x9
 
-    aput-object v12, v13, v16
+    aput-object v13, v12, v14
 
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v12, v13, v17
+    aput-object v13, v12, v17
 
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->ENDURANCE_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->ENDURANCE_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v12, v13, v18
+    aput-object v13, v12, v18
 
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->TIPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->MODE_INTRODUCTION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0xc
+    const/16 v14, 0xc
 
-    aput-object v12, v13, v15
+    aput-object v13, v12, v14
 
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->ACCESSIBILITY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->TIPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0xd
+    const/16 v14, 0xd
 
-    aput-object v12, v13, v15
+    aput-object v13, v12, v14
 
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->ACCESSIBILITY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0xe
+    const/16 v14, 0xe
 
-    aput-object v12, v13, v15
+    aput-object v13, v12, v14
 
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0xf
+    const/16 v14, 0xf
 
-    aput-object v12, v13, v15
+    aput-object v13, v12, v14
 
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0x10
+    const/16 v14, 0x10
 
-    aput-object v12, v13, v15
+    aput-object v13, v12, v14
 
-    const v12, 0x7f08024e
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const v15, 0x7f0603d9
+    const/16 v14, 0x11
 
-    .line 384
-    invoke-direct {v0, v12, v6, v15, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    aput-object v13, v12, v14
+
+    const v13, 0x7f0802a9
+
+    const v14, 0x7f0603c2
+
+    .line 380
+    invoke-direct {v0, v13, v6, v14, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
     aput-object v6, v2, v10
 
-    .line 353
+    .line 349
     invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->group([Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     move-result-object v2
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mVideoPro:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
-    .line 411
+    .line 408
     new-array v2, v9, [Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
-    const v6, 0x7f110322
+    const v6, 0x7f11036b
 
-    .line 414
+    .line 411
     invoke-direct {v0, v6}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
-    new-array v12, v5, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    const/16 v12, 0x9
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    new-array v13, v12, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    aput-object v13, v12, v7
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_MF_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    aput-object v12, v13, v7
 
-    aput-object v13, v12, v8
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_MF_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->EXTEND_FPS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    aput-object v12, v13, v8
 
-    aput-object v13, v12, v9
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CameraSettings;->EXTEND_FPS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_STABILIZER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    aput-object v12, v13, v9
 
-    aput-object v13, v12, v10
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_STABILIZER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->FACE_DETECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    aput-object v12, v13, v10
 
-    aput-object v13, v12, v1
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CameraSettings;->FACE_DETECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->MIC:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    aput-object v12, v13, v1
 
-    aput-object v13, v12, v11
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CameraSettings;->MIC:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->RECOMMENDED_SETTINGS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    aput-object v12, v13, v11
 
-    aput-object v13, v12, v4
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CameraSettings;->RECOMMENDED_SETTINGS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    .line 412
-    invoke-direct {v0, v14, v6, v14, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    aput-object v12, v13, v4
+
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->TRIPOD_FRAMING_INTRODUCTION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+
+    aput-object v12, v13, v5
+
+    sget-object v12, Ljp/co/sony/mc/camera/setting/CameraSettings;->TRIPOD_FRAMING_ASSISTANCE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    aput-object v12, v13, v15
+
+    const/4 v12, -0x1
+
+    .line 409
+    invoke-direct {v0, v12, v6, v12, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
@@ -1485,13 +1508,13 @@
 
     sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->VOLUME_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0x8
-
     aput-object v13, v12, v15
 
     sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->SHUTTER_SOUND:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v13, v12, v16
+    const/16 v14, 0x9
+
+    aput-object v13, v12, v14
 
     sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->SAVE_DESTINATION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -1503,54 +1526,56 @@
 
     sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->QUICK_LAUNCH:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0xc
+    const/16 v14, 0xc
 
-    aput-object v13, v12, v15
+    aput-object v13, v12, v14
 
     sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0xd
+    const/16 v14, 0xd
 
-    aput-object v13, v12, v15
+    aput-object v13, v12, v14
 
     sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->TIPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0xe
+    const/16 v14, 0xe
 
-    aput-object v13, v12, v15
+    aput-object v13, v12, v14
 
     sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->ACCESSIBILITY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0xf
+    const/16 v14, 0xf
 
-    aput-object v13, v12, v15
+    aput-object v13, v12, v14
 
     sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0x10
+    const/16 v14, 0x10
 
-    aput-object v13, v12, v15
+    aput-object v13, v12, v14
 
     sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0x11
+    const/16 v14, 0x11
 
-    aput-object v13, v12, v15
+    aput-object v13, v12, v14
 
     const/16 v13, 0x12
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v14, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v15, v12, v13
+    aput-object v14, v12, v13
+
+    const/4 v13, -0x1
 
     .line 423
-    invoke-direct {v0, v14, v6, v14, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    invoke-direct {v0, v13, v6, v13, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
     aput-object v6, v2, v8
 
-    .line 411
+    .line 408
     invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->group([Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     move-result-object v2
@@ -1560,9 +1585,9 @@
     .line 450
     new-array v2, v9, [Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
-    const v6, 0x7f110322
+    const v6, 0x7f11036b
 
-    const v12, 0x7f110319
+    const v12, 0x7f110362
 
     .line 453
     invoke-direct {v0, v12, v6}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(II)Ljava/lang/String;
@@ -1595,8 +1620,10 @@
 
     aput-object v13, v12, v11
 
+    const/4 v13, -0x1
+
     .line 451
-    invoke-direct {v0, v14, v6, v14, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    invoke-direct {v0, v13, v6, v13, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
@@ -1645,13 +1672,13 @@
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->TIPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0x8
-
     aput-object v12, v13, v15
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->ACCESSIBILITY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v12, v13, v16
+    const/16 v14, 0x9
+
+    aput-object v12, v13, v14
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -1663,12 +1690,14 @@
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0xc
+    const/16 v14, 0xc
 
-    aput-object v12, v13, v15
+    aput-object v12, v13, v14
+
+    const/4 v12, -0x1
 
     .line 462
-    invoke-direct {v0, v14, v6, v14, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    invoke-direct {v0, v12, v6, v12, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
@@ -1684,7 +1713,7 @@
     .line 483
     new-array v2, v9, [Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
-    const v6, 0x7f110320
+    const v6, 0x7f110369
 
     .line 486
     invoke-direct {v0, v6}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
@@ -1701,8 +1730,10 @@
 
     aput-object v13, v12, v8
 
+    const/4 v13, -0x1
+
     .line 484
-    invoke-direct {v0, v14, v6, v14, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    invoke-direct {v0, v13, v6, v13, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
@@ -1751,13 +1782,13 @@
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->QUICK_LAUNCH:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0x8
-
     aput-object v12, v13, v15
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v12, v13, v16
+    const/16 v14, 0x9
+
+    aput-object v12, v13, v14
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->TIPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -1769,24 +1800,26 @@
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0xc
+    const/16 v14, 0xc
 
-    aput-object v12, v13, v15
+    aput-object v12, v13, v14
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0xd
+    const/16 v14, 0xd
 
-    aput-object v12, v13, v15
+    aput-object v12, v13, v14
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0xe
+    const/16 v14, 0xe
 
-    aput-object v12, v13, v15
+    aput-object v12, v13, v14
+
+    const/4 v12, -0x1
 
     .line 490
-    invoke-direct {v0, v14, v6, v14, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    invoke-direct {v0, v12, v6, v12, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
@@ -1802,7 +1835,7 @@
     .line 513
     new-array v2, v9, [Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
-    const v6, 0x7f110143
+    const v6, 0x7f110180
 
     .line 516
     invoke-direct {v0, v6}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
@@ -1839,8 +1872,10 @@
 
     aput-object v13, v12, v4
 
+    const/4 v13, -0x1
+
     .line 514
-    invoke-direct {v0, v14, v6, v14, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    invoke-direct {v0, v13, v6, v13, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
@@ -1889,13 +1924,13 @@
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->GEOTAG:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0x8
-
     aput-object v12, v13, v15
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->QUICK_LAUNCH:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v12, v13, v16
+    const/16 v14, 0x9
+
+    aput-object v12, v13, v14
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -1907,30 +1942,32 @@
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->ACCESSIBILITY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0xc
+    const/16 v14, 0xc
 
-    aput-object v12, v13, v15
+    aput-object v12, v13, v14
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0xd
+    const/16 v14, 0xd
 
-    aput-object v12, v13, v15
+    aput-object v12, v13, v14
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0xe
+    const/16 v14, 0xe
 
-    aput-object v12, v13, v15
+    aput-object v12, v13, v14
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0xf
+    const/16 v14, 0xf
 
-    aput-object v12, v13, v15
+    aput-object v12, v13, v14
+
+    const/4 v12, -0x1
 
     .line 525
-    invoke-direct {v0, v14, v6, v14, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    invoke-direct {v0, v12, v6, v12, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
@@ -1946,9 +1983,9 @@
     .line 549
     new-array v2, v9, [Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
-    const v6, 0x7f110143
+    const v6, 0x7f110180
 
-    const v12, 0x7f110319
+    const v12, 0x7f110362
 
     .line 552
     invoke-direct {v0, v12, v6}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(II)Ljava/lang/String;
@@ -1981,8 +2018,10 @@
 
     aput-object v13, v12, v11
 
+    const/4 v13, -0x1
+
     .line 550
-    invoke-direct {v0, v14, v6, v14, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    invoke-direct {v0, v13, v6, v13, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
@@ -2031,13 +2070,13 @@
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->TIPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0x8
-
     aput-object v12, v13, v15
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->ACCESSIBILITY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v12, v13, v16
+    const/16 v14, 0x9
+
+    aput-object v12, v13, v14
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -2049,12 +2088,14 @@
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0xc
+    const/16 v14, 0xc
 
-    aput-object v12, v13, v15
+    aput-object v12, v13, v14
+
+    const/4 v12, -0x1
 
     .line 561
-    invoke-direct {v0, v14, v6, v14, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    invoke-direct {v0, v12, v6, v12, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
@@ -2070,9 +2111,9 @@
     .line 582
     new-array v2, v9, [Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
-    const v6, 0x7f11031d
+    const v6, 0x7f110366
 
-    const v12, 0x7f11014d
+    const v12, 0x7f11018a
 
     .line 585
     invoke-direct {v0, v6, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(II)Ljava/lang/String;
@@ -2101,8 +2142,10 @@
 
     aput-object v13, v12, v1
 
+    const/4 v13, -0x1
+
     .line 583
-    invoke-direct {v0, v14, v6, v14, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    invoke-direct {v0, v13, v6, v13, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
@@ -2151,13 +2194,13 @@
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->QUICK_LAUNCH:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0x8
-
     aput-object v12, v13, v15
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v12, v13, v16
+    const/16 v14, 0x9
+
+    aput-object v12, v13, v14
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->TIPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -2169,24 +2212,26 @@
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0xc
+    const/16 v14, 0xc
 
-    aput-object v12, v13, v15
+    aput-object v12, v13, v14
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0xd
+    const/16 v14, 0xd
 
-    aput-object v12, v13, v15
+    aput-object v12, v13, v14
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0xe
+    const/16 v14, 0xe
 
-    aput-object v12, v13, v15
+    aput-object v12, v13, v14
+
+    const/4 v12, -0x1
 
     .line 593
-    invoke-direct {v0, v14, v6, v14, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    invoke-direct {v0, v12, v6, v12, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
@@ -2202,272 +2247,14 @@
     .line 617
     new-array v2, v9, [Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
-    const v6, 0x7f110144
+    const v6, 0x7f1102b0
 
     .line 620
     invoke-direct {v0, v6}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
-    new-array v12, v11, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
-
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_MF_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    aput-object v13, v12, v7
-
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_STABILIZER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    aput-object v13, v12, v8
-
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->FACE_DETECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    aput-object v13, v12, v9
-
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->MIC:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    aput-object v13, v12, v10
-
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->RECOMMENDED_SETTINGS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    aput-object v13, v12, v1
-
-    .line 618
-    invoke-direct {v0, v14, v6, v14, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
-
-    move-result-object v6
-
-    aput-object v6, v2, v7
-
-    .line 629
-    invoke-direct {v0, v3}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
-
-    move-result-object v6
-
-    const/16 v12, 0x11
-
-    new-array v13, v12, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CameraSettings;->OBJECT_TRACKING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    aput-object v12, v13, v7
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CameraSettings;->WIND_NOISE_REDUCTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    aput-object v12, v13, v8
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->GRID_LINE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    aput-object v12, v13, v9
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CameraSettings;->MACRO_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    aput-object v12, v13, v10
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASIC_MODE_LEVEL_METER_DISPLAY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    aput-object v12, v13, v1
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->HORIZONTAL_LEVEL_METER:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    aput-object v12, v13, v11
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->VOLUME_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    aput-object v12, v13, v4
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->SHUTTER_SOUND:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    aput-object v12, v13, v5
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->QUICK_LAUNCH:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    const/16 v15, 0x8
-
-    aput-object v12, v13, v15
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    aput-object v12, v13, v16
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->TIPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    aput-object v12, v13, v17
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->ACCESSIBILITY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    aput-object v12, v13, v18
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    const/16 v15, 0xc
-
-    aput-object v12, v13, v15
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_NOTES_ON_USE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    const/16 v15, 0xd
-
-    aput-object v12, v13, v15
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    const/16 v15, 0xe
-
-    aput-object v12, v13, v15
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    const/16 v15, 0xf
-
-    aput-object v12, v13, v15
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    const/16 v15, 0x10
-
-    aput-object v12, v13, v15
-
-    .line 627
-    invoke-direct {v0, v14, v6, v14, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
-
-    move-result-object v6
-
-    aput-object v6, v2, v8
-
-    .line 617
-    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->group([Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
-
-    move-result-object v2
-
-    iput-object v2, v0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mVideoStreaming:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
-
-    .line 652
-    new-array v2, v9, [Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
-
-    const v6, 0x7f110144
-
-    const v12, 0x7f110319
-
-    .line 655
-    invoke-direct {v0, v12, v6}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(II)Ljava/lang/String;
-
-    move-result-object v6
-
     new-array v12, v1, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
-
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_MF_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    aput-object v13, v12, v7
-
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_STABILIZER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    aput-object v13, v12, v8
-
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->MIC:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    aput-object v13, v12, v9
-
-    sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->RECOMMENDED_SETTINGS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    aput-object v13, v12, v10
-
-    .line 653
-    invoke-direct {v0, v14, v6, v14, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
-
-    move-result-object v6
-
-    aput-object v6, v2, v7
-
-    .line 664
-    invoke-direct {v0, v3}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
-
-    move-result-object v6
-
-    const/16 v12, 0xd
-
-    new-array v13, v12, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CameraSettings;->WIND_NOISE_REDUCTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    aput-object v12, v13, v7
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->GRID_LINE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    aput-object v12, v13, v8
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->VOLUME_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    aput-object v12, v13, v9
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->SHUTTER_SOUND:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    aput-object v12, v13, v10
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->QUICK_LAUNCH:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    aput-object v12, v13, v1
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    aput-object v12, v13, v11
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->TIPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    aput-object v12, v13, v4
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->ACCESSIBILITY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    aput-object v12, v13, v5
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    const/16 v15, 0x8
-
-    aput-object v12, v13, v15
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_NOTES_ON_USE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    aput-object v12, v13, v16
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    aput-object v12, v13, v17
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    aput-object v12, v13, v18
-
-    sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    const/16 v15, 0xc
-
-    aput-object v12, v13, v15
-
-    .line 662
-    invoke-direct {v0, v14, v6, v14, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
-
-    move-result-object v6
-
-    aput-object v6, v2, v8
-
-    .line 652
-    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->group([Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
-
-    move-result-object v2
-
-    iput-object v2, v0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mFrontVideoStreaming:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
-
-    .line 683
-    new-array v2, v9, [Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
-
-    const v6, 0x7f110267
-
-    .line 686
-    invoke-direct {v0, v6}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
-
-    move-result-object v6
-
-    new-array v12, v10, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
     sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->AUTO_FRAMING_RECORDING_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -2481,14 +2268,20 @@
 
     aput-object v13, v12, v9
 
-    .line 684
-    invoke-direct {v0, v14, v6, v14, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->MODE_INTRODUCTION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+
+    aput-object v13, v12, v10
+
+    const/4 v13, -0x1
+
+    .line 618
+    invoke-direct {v0, v13, v6, v13, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
     aput-object v6, v2, v7
 
-    .line 693
+    .line 629
     invoke-direct {v0, v3}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
 
     move-result-object v6
@@ -2531,13 +2324,13 @@
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0x8
-
     aput-object v12, v13, v15
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->TIPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v12, v13, v16
+    const/16 v14, 0x9
+
+    aput-object v12, v13, v14
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->ACCESSIBILITY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -2549,41 +2342,43 @@
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0xc
+    const/16 v14, 0xc
 
-    aput-object v12, v13, v15
+    aput-object v12, v13, v14
 
     sget-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v15, 0xd
+    const/16 v14, 0xd
 
-    aput-object v12, v13, v15
+    aput-object v12, v13, v14
 
-    .line 691
-    invoke-direct {v0, v14, v6, v14, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    const/4 v12, -0x1
+
+    .line 627
+    invoke-direct {v0, v12, v6, v12, v13}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
     aput-object v6, v2, v8
 
-    .line 683
+    .line 617
     invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->group([Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     move-result-object v2
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mVideoAutoFraming:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
-    .line 713
+    .line 649
     new-array v2, v9, [Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
-    const v6, 0x7f11027a
+    const v6, 0x7f1102c5
 
-    .line 716
+    .line 652
     invoke-direct {v0, v6}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
-    new-array v12, v9, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    new-array v12, v10, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
     sget-object v13, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -2593,14 +2388,20 @@
 
     aput-object v13, v12, v8
 
-    .line 714
-    invoke-direct {v0, v14, v6, v14, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->MODE_INTRODUCTION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+
+    aput-object v13, v12, v9
+
+    const/4 v13, -0x1
+
+    .line 650
+    invoke-direct {v0, v13, v6, v13, v12}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v6
 
     aput-object v6, v2, v7
 
-    .line 722
+    .line 660
     invoke-direct {v0, v3}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
 
     move-result-object v3
@@ -2643,13 +2444,13 @@
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->SAVE_DESTINATION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    const/16 v4, 0x8
-
-    aput-object v1, v6, v4
+    aput-object v1, v6, v15
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->GEOTAG:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    aput-object v1, v6, v16
+    const/16 v4, 0x9
+
+    aput-object v1, v6, v4
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->QUICK_LAUNCH:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -2689,26 +2490,28 @@
 
     aput-object v1, v6, v4
 
-    .line 720
-    invoke-direct {v0, v14, v3, v14, v6}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    const/4 v1, -0x1
 
-    move-result-object v1
+    .line 658
+    invoke-direct {v0, v1, v3, v1, v6}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
-    aput-object v1, v2, v8
+    move-result-object v3
 
-    .line 713
+    aput-object v3, v2, v8
+
+    .line 649
     invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->group([Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     move-result-object v1
 
     iput-object v1, v0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mVideoGimbal:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
-    .line 745
+    .line 683
     new-array v1, v8, [Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
-    const v2, 0x7f110322
+    const v2, 0x7f11036b
 
-    .line 748
+    .line 686
     invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
 
     move-result-object v2
@@ -2723,44 +2526,46 @@
 
     aput-object v4, v3, v8
 
-    .line 746
-    invoke-direct {v0, v14, v2, v14, v3}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    const/4 v4, -0x1
+
+    .line 684
+    invoke-direct {v0, v4, v2, v4, v3}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v2
 
     aput-object v2, v1, v7
 
-    .line 745
+    .line 683
     invoke-direct {v0, v1}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->group([Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     move-result-object v1
 
     iput-object v1, v0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mVideoOneShot:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
-    .line 757
+    .line 695
     new-array v1, v8, [Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
-    const v2, 0x7f110321
+    const v2, 0x7f11036a
 
-    .line 760
+    .line 698
     invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
     new-array v3, v8, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    sget-object v4, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_STABILIZER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v5, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_STABILIZER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    aput-object v4, v3, v7
+    aput-object v5, v3, v7
 
-    .line 758
-    invoke-direct {v0, v14, v2, v14, v3}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
+    .line 696
+    invoke-direct {v0, v4, v2, v4, v3}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     move-result-object v2
 
     aput-object v2, v1, v7
 
-    .line 757
+    .line 695
     invoke-direct {v0, v1}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->group([Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     move-result-object v1
@@ -2772,11 +2577,25 @@
 
 .method private varargs category(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "drawableResource",
+            "titleString",
+            "backgroundColor",
+            "keys"
+        }
+    .end annotation
 
-    .line 776
+    .line 714
     new-instance v0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
-    .line 777
+    .line 715
     invoke-direct {p0, p4}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->filterUnsupportedKeys([Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
     move-result-object p0
@@ -2788,8 +2607,16 @@
 
 .method private varargs filterUnsupportedKeys([Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljp/co/sony/mc/camera/setting/SettingKey$Key;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "keys"
+        }
+    .end annotation
 
-    .line 766
+    .line 704
     invoke-static {}, Ljp/co/sony/mc/camera/CameraApplication;->getContext()Landroid/content/Context;
 
     move-result-object p0
@@ -2800,7 +2627,7 @@
 
     if-nez p0, :cond_0
 
-    .line 767
+    .line 705
     invoke-static {p1}, Ljava/util/Arrays;->stream([Ljava/lang/Object;)Ljava/util/stream/Stream;
 
     move-result-object p0
@@ -2809,7 +2636,7 @@
 
     invoke-direct {p1}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$$ExternalSyntheticLambda0;-><init>()V
 
-    .line 768
+    .line 706
     invoke-interface {p0, p1}, Ljava/util/stream/Stream;->filter(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
 
     move-result-object p0
@@ -2832,8 +2659,16 @@
 
 .method private getString(I)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "resId"
+        }
+    .end annotation
 
-    .line 785
+    .line 723
     invoke-static {}, Ljp/co/sony/mc/camera/CameraApplication;->getContext()Landroid/content/Context;
 
     move-result-object p0
@@ -2847,8 +2682,18 @@
 
 .method private getString(II)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "resIdPrefix",
+            "resIdValue"
+        }
+    .end annotation
 
-    .line 790
+    .line 728
     invoke-static {}, Ljp/co/sony/mc/camera/CameraApplication;->getContext()Landroid/content/Context;
 
     move-result-object p0
@@ -2857,7 +2702,7 @@
 
     move-result-object p0
 
-    .line 791
+    .line 729
     invoke-static {}, Ljp/co/sony/mc/camera/CameraApplication;->getContext()Landroid/content/Context;
 
     move-result-object p1
@@ -2870,7 +2715,7 @@
 
     move-result-object p1
 
-    .line 789
+    .line 727
     invoke-static {p0, p1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
@@ -2880,8 +2725,16 @@
 
 .method private varargs group([Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "categories"
+        }
+    .end annotation
 
-    .line 781
+    .line 719
     new-instance p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;-><init>([Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;)V
@@ -2892,7 +2745,7 @@
 .method static synthetic lambda$filterUnsupportedKeys$0(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Z
     .locals 1
 
-    .line 768
+    .line 706
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->ENDURANCE_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     if-eq p0, v0, :cond_0
@@ -2911,7 +2764,7 @@
 .method static synthetic lambda$filterUnsupportedKeys$1(I)[Ljp/co/sony/mc/camera/setting/SettingKey$Key;
     .locals 0
 
-    .line 768
+    .line 706
     new-array p0, p0, [Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
     return-object p0
@@ -2921,8 +2774,18 @@
 # virtual methods
 .method public get(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId"
+        }
+    .end annotation
 
-    .line 800
+    .line 738
     sget-object v0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$CapturingMode:[I
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->ordinal()I
@@ -2933,7 +2796,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    .line 844
+    .line 780
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
     new-instance p2, Ljava/lang/StringBuilder;
@@ -2942,7 +2805,7 @@
 
     invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 845
+    .line 781
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->name()Ljava/lang/String;
 
     move-result-object p1
@@ -2959,19 +2822,19 @@
 
     throw p0
 
-    .line 841
+    .line 777
     :pswitch_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mVideoGimbal:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     return-object p0
 
-    .line 839
+    .line 775
     :pswitch_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mVideoAutoFraming:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     return-object p0
 
-    .line 837
+    .line 773
     :pswitch_2
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->isFront()Z
 
@@ -2989,109 +2852,109 @@
     :goto_0
     return-object p0
 
-    .line 835
+    .line 771
     :pswitch_3
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mVideoMacro:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
+
+    return-object p0
+
+    .line 769
+    :pswitch_4
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->isFront()Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mFrontVideoStreaming:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mFrontVideoBokeh:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     goto :goto_1
 
     :cond_1
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mVideoStreaming:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mVideoBokeh:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     :goto_1
     return-object p0
 
-    .line 833
-    :pswitch_4
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mVideoMacro:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
+    .line 767
+    :pswitch_5
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mVideoSlowMotion:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     return-object p0
 
-    .line 831
-    :pswitch_5
+    .line 765
+    :pswitch_6
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->isFront()Z
 
     move-result p1
 
     if-eqz p1, :cond_2
 
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mFrontVideoBokeh:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mFrontVideoBasic:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     goto :goto_2
 
     :cond_2
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mVideoBokeh:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mVideoBasic:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     :goto_2
     return-object p0
 
-    .line 829
-    :pswitch_6
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mVideoSlowMotion:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
+    .line 761
+    :pswitch_7
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mVideoPro:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     return-object p0
 
-    .line 827
-    :pswitch_7
+    .line 755
+    :pswitch_8
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->isFront()Z
 
     move-result p1
 
     if-eqz p1, :cond_3
 
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mFrontVideoBasic:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mFrontPhotoOneShot:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     goto :goto_3
 
     :cond_3
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mVideoBasic:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mPhotoOneShot:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     :goto_3
     return-object p0
 
-    .line 823
-    :pswitch_8
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mVideoPro:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
+    .line 753
+    :pswitch_9
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mPhotoHiResolution:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     return-object p0
 
-    .line 817
-    :pswitch_9
+    .line 751
+    :pswitch_a
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mPhotoMacro:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
+
+    return-object p0
+
+    .line 749
+    :pswitch_b
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->isFront()Z
 
     move-result p1
 
     if-eqz p1, :cond_4
 
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mFrontPhotoOneShot:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mFrontPhotoBokeh:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     goto :goto_4
 
     :cond_4
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mPhotoOneShot:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mPhotoBokeh:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     :goto_4
     return-object p0
 
-    .line 815
-    :pswitch_a
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mPhotoHiResolution:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
-
-    return-object p0
-
-    .line 813
-    :pswitch_b
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mPhotoMacro:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
-
-    return-object p0
-
-    .line 811
+    .line 747
     :pswitch_c
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->isFront()Z
 
@@ -3099,53 +2962,34 @@
 
     if-eqz p1, :cond_5
 
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mFrontPhotoBokeh:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mFrontPhotoBasic:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     goto :goto_5
 
     :cond_5
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mPhotoBokeh:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mPhotoBasic:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     :goto_5
     return-object p0
 
-    .line 809
+    .line 743
     :pswitch_d
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->isFront()Z
-
-    move-result p1
-
-    if-eqz p1, :cond_6
-
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mFrontPhotoBasic:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
-
-    goto :goto_6
-
-    :cond_6
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mPhotoBasic:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
-
-    :goto_6
-    return-object p0
-
-    .line 805
-    :pswitch_e
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mPhotoPro:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     return-object p0
 
     :pswitch_data_0
     .packed-switch 0x1
-        :pswitch_e
-        :pswitch_e
-        :pswitch_e
+        :pswitch_d
+        :pswitch_d
         :pswitch_d
         :pswitch_c
         :pswitch_b
         :pswitch_a
         :pswitch_9
         :pswitch_8
-        :pswitch_8
-        :pswitch_8
+        :pswitch_7
+        :pswitch_7
         :pswitch_7
         :pswitch_6
         :pswitch_5
@@ -3159,6 +3003,14 @@
 
 .method public get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
     const/4 p0, 0x0
 
@@ -3168,7 +3020,7 @@
 .method public getDebug()Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
     .locals 0
 
-    .line 796
+    .line 734
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->mPhotoProDebug:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     return-object p0

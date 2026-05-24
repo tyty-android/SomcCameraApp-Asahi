@@ -22,6 +22,20 @@
 # direct methods
 .method public constructor <init>(IIII)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "width",
+            "height",
+            "fpsMin",
+            "fpsMax"
+        }
+    .end annotation
 
     .line 23
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,6 +57,17 @@
 
 .method public static parse(Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "videoConfig",
+            "delimiter"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

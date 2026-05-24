@@ -54,7 +54,7 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$onCreate$12;->$vm:Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;
 
-    .line 198
+    .line 288
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -63,20 +63,16 @@
 
 # virtual methods
 .method public onZoomCurrentPositionClicked()V
-    .locals 1
+    .locals 0
 
-    .line 218
+    .line 311
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$onCreate$12;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->access$getLensUiState(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;)Ljp/co/sony/mc/camera/view/uistate/LensUiState;
 
     move-result-object p0
 
-    sget-object v0, Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$ZoomCurrentPositionClicked;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$ZoomCurrentPositionClicked;
-
-    check-cast v0, Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason;
-
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/uistate/LensUiState;->closeBasicModeMenu(Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason;)V
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/LensUiState;->onZoomCurrentPositionClicked()V
 
     return-void
 .end method
@@ -84,7 +80,7 @@
 .method public onZoomJumpClicked(I)V
     .locals 9
 
-    .line 200
+    .line 290
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$onCreate$12;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->access$getLensUiState(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;)Ljp/co/sony/mc/camera/view/uistate/LensUiState;
@@ -128,7 +124,7 @@
 
     if-eq v0, p1, :cond_2
 
-    .line 201
+    .line 291
     :goto_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$onCreate$12;->$vm:Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;
 
@@ -158,7 +154,7 @@
 
     goto :goto_2
 
-    .line 203
+    .line 293
     :cond_2
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$onCreate$12;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;
 
@@ -166,11 +162,11 @@
 
     move-result-object v0
 
-    sget-object v1, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->BOKEH:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
+    sget-object v1, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->VIDEO_BOKEH:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
 
     if-ne v0, v1, :cond_4
 
-    .line 204
+    .line 294
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$onCreate$12;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->access$getLensUiState(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;)Ljp/co/sony/mc/camera/view/uistate/LensUiState;
@@ -185,7 +181,7 @@
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/view/CameraOperator;->stopObjectTracking()V
 
-    .line 205
+    .line 295
     :cond_3
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$onCreate$12;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;
 
@@ -201,13 +197,13 @@
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/view/CameraOperator;->clearTouchFocus()V
 
-    .line 207
+    .line 297
     :cond_4
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$onCreate$12;->$vm:Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->onZoomProgressed(I)V
 
-    .line 208
+    .line 298
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$onCreate$12;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->access$getLensUiState(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;)Ljp/co/sony/mc/camera/view/uistate/LensUiState;
@@ -220,7 +216,7 @@
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/uistate/LensUiState;->closeBasicModeMenu(Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason;)V
 
-    .line 210
+    .line 300
     :goto_2
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$onCreate$12;->$vm:Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;
 
@@ -245,7 +241,7 @@
 
     if-eq p0, p1, :cond_6
 
-    .line 211
+    .line 301
     :goto_3
     new-instance p0, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
@@ -275,7 +271,7 @@
 
     move-result-object p0
 
-    .line 212
+    .line 302
     sget-object p1, Ljp/co/sony/mc/camera/setting/CameraSettings;->ZOOM_RATIO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     const-string v0, "ZOOM_RATIO"
@@ -288,7 +284,36 @@
 
     move-result-object p0
 
-    .line 213
+    .line 303
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->send()V
+
+    .line 304
+    new-instance p0, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v8}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;-><init>(Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddLauncher;Ljp/co/sony/mc/camera/idd/value/IddMode;Ljp/co/sony/mc/camera/idd/value/IddSettingKey;Ljp/co/sony/mc/camera/idd/value/IddSettingValue;Ljp/co/sony/mc/camera/idd/value/IddUserControl;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    sget-object p1, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->PREVIEW:Ljp/co/sony/mc/camera/idd/value/IddUserControl;
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->changeLocation(Ljp/co/sony/mc/camera/idd/value/IddUserControl;)Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
+
+    move-result-object p0
+
+    .line 305
+    sget-object p1, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAMERA_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+
+    const-string v0, "CAMERA_ID"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast p1, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->setting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
+
+    move-result-object p0
+
+    .line 306
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->send()V
 
     :cond_6

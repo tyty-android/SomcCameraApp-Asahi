@@ -26,6 +26,16 @@
 
 .method static getApi2Value(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljava/lang/String;)Ljava/lang/Integer;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "cameraId",
+            "hdrApi1"
+        }
+    .end annotation
 
     .line 373
     invoke-virtual {p1}, Ljava/lang/String;->hashCode()I

@@ -29,8 +29,18 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/ArrayTable;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "size"
+        }
+    .end annotation
 
-    .line 527
+    .line 557
     iput-object p1, p0, Lcom/google/common/collect/ArrayTable$1;->this$0:Lcom/google/common/collect/ArrayTable;
 
     invoke-direct {p0, p2}, Lcom/google/common/collect/AbstractIndexedListIterator;-><init>(I)V
@@ -42,6 +52,15 @@
 # virtual methods
 .method protected get(I)Lcom/google/common/collect/Table$Cell;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -50,7 +69,7 @@
         }
     .end annotation
 
-    .line 530
+    .line 560
     iget-object p0, p0, Lcom/google/common/collect/ArrayTable$1;->this$0:Lcom/google/common/collect/ArrayTable;
 
     invoke-static {p0, p1}, Lcom/google/common/collect/ArrayTable;->access$000(Lcom/google/common/collect/ArrayTable;I)Lcom/google/common/collect/Table$Cell;
@@ -62,8 +81,16 @@
 
 .method protected bridge synthetic get(I)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
-    .line 527
+    .line 557
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ArrayTable$1;->get(I)Lcom/google/common/collect/Table$Cell;
 
     move-result-object p0

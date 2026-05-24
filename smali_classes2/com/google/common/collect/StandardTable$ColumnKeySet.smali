@@ -28,8 +28,16 @@
 # direct methods
 .method private constructor <init>(Lcom/google/common/collect/StandardTable;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 613
+    .line 673
     iput-object p1, p0, Lcom/google/common/collect/StandardTable$ColumnKeySet;->this$0:Lcom/google/common/collect/StandardTable;
 
     const/4 v0, 0x0
@@ -42,7 +50,7 @@
 .method synthetic constructor <init>(Lcom/google/common/collect/StandardTable;Lcom/google/common/collect/StandardTable$1;)V
     .locals 0
 
-    .line 613
+    .line 673
     invoke-direct {p0, p1}, Lcom/google/common/collect/StandardTable$ColumnKeySet;-><init>(Lcom/google/common/collect/StandardTable;)V
 
     return-void
@@ -52,8 +60,20 @@
 # virtual methods
 .method public contains(Ljava/lang/Object;)Z
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
-    .line 681
+    .line 741
     iget-object p0, p0, Lcom/google/common/collect/StandardTable$ColumnKeySet;->this$0:Lcom/google/common/collect/StandardTable;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/StandardTable;->containsColumn(Ljava/lang/Object;)Z
@@ -73,7 +93,7 @@
         }
     .end annotation
 
-    .line 616
+    .line 676
     iget-object p0, p0, Lcom/google/common/collect/StandardTable$ColumnKeySet;->this$0:Lcom/google/common/collect/StandardTable;
 
     invoke-virtual {p0}, Lcom/google/common/collect/StandardTable;->createColumnKeyIterator()Ljava/util/Iterator;
@@ -85,6 +105,18 @@
 
 .method public remove(Ljava/lang/Object;)Z
     .locals 3
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -92,7 +124,7 @@
 
     return v0
 
-    .line 630
+    .line 690
     :cond_0
     iget-object p0, p0, Lcom/google/common/collect/StandardTable$ColumnKeySet;->this$0:Lcom/google/common/collect/StandardTable;
 
@@ -106,7 +138,7 @@
 
     move-result-object p0
 
-    .line 631
+    .line 691
     :cond_1
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
@@ -115,14 +147,14 @@
 
     if-eqz v1, :cond_3
 
-    .line 632
+    .line 692
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Ljava/util/Map;
 
-    .line 633
+    .line 693
     invoke-interface {v1}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
     move-result-object v2
@@ -133,14 +165,14 @@
 
     if-eqz v2, :cond_1
 
-    .line 635
+    .line 695
     invoke-interface {v1}, Ljava/util/Map;->isEmpty()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 636
+    .line 696
     invoke-interface {p0}, Ljava/util/Iterator;->remove()V
 
     :cond_2
@@ -154,6 +186,15 @@
 
 .method public removeAll(Ljava/util/Collection;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -162,10 +203,10 @@
         }
     .end annotation
 
-    .line 645
+    .line 705
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 647
+    .line 707
     iget-object p0, p0, Lcom/google/common/collect/StandardTable$ColumnKeySet;->this$0:Lcom/google/common/collect/StandardTable;
 
     iget-object p0, p0, Lcom/google/common/collect/StandardTable;->backingMap:Ljava/util/Map;
@@ -180,7 +221,7 @@
 
     const/4 v0, 0x0
 
-    .line 648
+    .line 708
     :cond_0
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
@@ -189,14 +230,14 @@
 
     if-eqz v1, :cond_2
 
-    .line 649
+    .line 709
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Ljava/util/Map;
 
-    .line 652
+    .line 712
     invoke-interface {v1}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
     move-result-object v2
@@ -211,14 +252,14 @@
 
     if-eqz v2, :cond_0
 
-    .line 654
+    .line 714
     invoke-interface {v1}, Ljava/util/Map;->isEmpty()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 655
+    .line 715
     invoke-interface {p0}, Ljava/util/Iterator;->remove()V
 
     :cond_1
@@ -232,6 +273,15 @@
 
 .method public retainAll(Ljava/util/Collection;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -240,10 +290,10 @@
         }
     .end annotation
 
-    .line 664
+    .line 724
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 666
+    .line 726
     iget-object p0, p0, Lcom/google/common/collect/StandardTable$ColumnKeySet;->this$0:Lcom/google/common/collect/StandardTable;
 
     iget-object p0, p0, Lcom/google/common/collect/StandardTable;->backingMap:Ljava/util/Map;
@@ -258,7 +308,7 @@
 
     const/4 v0, 0x0
 
-    .line 667
+    .line 727
     :cond_0
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
@@ -267,14 +317,14 @@
 
     if-eqz v1, :cond_2
 
-    .line 668
+    .line 728
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Ljava/util/Map;
 
-    .line 669
+    .line 729
     invoke-interface {v1}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
     move-result-object v2
@@ -285,14 +335,14 @@
 
     if-eqz v2, :cond_0
 
-    .line 671
+    .line 731
     invoke-interface {v1}, Ljava/util/Map;->isEmpty()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 672
+    .line 732
     invoke-interface {p0}, Ljava/util/Iterator;->remove()V
 
     :cond_1
@@ -307,7 +357,7 @@
 .method public size()I
     .locals 0
 
-    .line 621
+    .line 681
     invoke-virtual {p0}, Lcom/google/common/collect/StandardTable$ColumnKeySet;->iterator()Ljava/util/Iterator;
 
     move-result-object p0

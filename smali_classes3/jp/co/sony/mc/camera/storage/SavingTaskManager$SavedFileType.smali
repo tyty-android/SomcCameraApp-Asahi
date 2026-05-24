@@ -40,7 +40,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
     .locals 5
 
-    .line 147
+    .line 148
     sget-object v0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;->PHOTO:Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
 
     sget-object v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;->PHOTO_DURING_REC:Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
@@ -61,7 +61,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 148
+    .line 149
     new-instance v0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
 
     const-string v1, "PHOTO"
@@ -72,7 +72,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;->PHOTO:Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
 
-    .line 149
+    .line 150
     new-instance v0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
 
     const-string v1, "PHOTO_DURING_REC"
@@ -83,7 +83,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;->PHOTO_DURING_REC:Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
 
-    .line 150
+    .line 151
     new-instance v0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
 
     const-string v1, "VIDEO"
@@ -94,7 +94,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;->VIDEO:Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
 
-    .line 151
+    .line 152
     new-instance v0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
 
     const-string v1, "BURST"
@@ -105,7 +105,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;->BURST:Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
 
-    .line 152
+    .line 153
     new-instance v0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
 
     const-string v1, "TIME_SHIFT"
@@ -116,7 +116,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;->TIME_SHIFT:Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
 
-    .line 147
+    .line 148
     invoke-static {}, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;->$values()[Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
 
     move-result-object v0
@@ -128,13 +128,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 147
+    .line 148
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -142,8 +153,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 147
+    .line 148
     const-class v0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -158,7 +177,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
     .locals 1
 
-    .line 147
+    .line 148
     sget-object v0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;->$VALUES:[Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;->clone()Ljava/lang/Object;

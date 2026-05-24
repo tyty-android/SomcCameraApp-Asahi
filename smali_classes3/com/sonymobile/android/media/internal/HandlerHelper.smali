@@ -136,11 +136,19 @@
 
 .method public sendMessageAndAwaitResponse(Landroid/os/Message;)Ljava/lang/Object;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "msg"
+        }
+    .end annotation
 
     .line 59
     new-instance v0, Landroid/os/HandlerThread;
 
-    const-string v1, "sendMessageAndAwaitResponse"
+    const-string/jumbo v1, "sendMessageAndAwaitResponse"
 
     invoke-direct {v0, v1}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
 

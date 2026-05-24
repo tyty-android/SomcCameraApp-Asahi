@@ -50,7 +50,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
     .locals 10
 
-    .line 213
+    .line 215
     sget-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;->TYPE_NON_FOCUS:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;->TYPE_SINGLE_AUTO_FOCUS:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
@@ -81,7 +81,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 214
+    .line 216
     new-instance v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
     const-string v1, "TYPE_NON_FOCUS"
@@ -92,7 +92,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;->TYPE_NON_FOCUS:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
-    .line 215
+    .line 217
     new-instance v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
     const-string v1, "TYPE_SINGLE_AUTO_FOCUS"
@@ -103,7 +103,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;->TYPE_SINGLE_AUTO_FOCUS:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
-    .line 216
+    .line 218
     new-instance v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
     const-string v1, "TYPE_MULTI_AUTO_FOCUS"
@@ -114,7 +114,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;->TYPE_MULTI_AUTO_FOCUS:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
-    .line 217
+    .line 219
     new-instance v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
     const-string v1, "TYPE_TOUCH_FOCUS"
@@ -125,7 +125,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;->TYPE_TOUCH_FOCUS:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
-    .line 218
+    .line 220
     new-instance v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
     const-string v1, "TYPE_FACE_DETECTION"
@@ -136,7 +136,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;->TYPE_FACE_DETECTION:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
-    .line 219
+    .line 221
     new-instance v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
     const-string v1, "TYPE_BODY_DETECTION"
@@ -147,7 +147,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;->TYPE_BODY_DETECTION:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
-    .line 220
+    .line 222
     new-instance v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
     const-string v1, "TYPE_BODY_DETECTION_IN_FOCUS"
@@ -158,7 +158,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;->TYPE_BODY_DETECTION_IN_FOCUS:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
-    .line 221
+    .line 223
     new-instance v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
     const-string v1, "TYPE_TOUCH_FOCUS_IN_FACE_DETECTION"
@@ -169,7 +169,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;->TYPE_TOUCH_FOCUS_IN_FACE_DETECTION:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
-    .line 222
+    .line 224
     new-instance v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
     const-string v1, "TYPE_OBJECT_TRACKING"
@@ -180,7 +180,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;->TYPE_OBJECT_TRACKING:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
-    .line 223
+    .line 225
     new-instance v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
     const-string v1, "TYPE_OBJECT_TRACKING_IN_FOCUS"
@@ -191,7 +191,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;->TYPE_OBJECT_TRACKING_IN_FOCUS:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
-    .line 213
+    .line 215
     invoke-static {}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;->$values()[Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
     move-result-object v0
@@ -203,13 +203,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 213
+    .line 215
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -217,8 +228,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 213
+    .line 215
     const-class v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -233,7 +252,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
     .locals 1
 
-    .line 213
+    .line 215
     sget-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;->$VALUES:[Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;->clone()Ljava/lang/Object;

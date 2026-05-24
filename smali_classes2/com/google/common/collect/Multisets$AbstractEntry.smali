@@ -32,7 +32,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 792
+    .line 836
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -43,21 +43,29 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 799
+    .line 843
     instance-of v0, p1, Lcom/google/common/collect/Multiset$Entry;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 800
+    .line 844
     check-cast p1, Lcom/google/common/collect/Multiset$Entry;
 
-    .line 801
+    .line 845
     invoke-virtual {p0}, Lcom/google/common/collect/Multisets$AbstractEntry;->getCount()I
 
     move-result v0
@@ -68,7 +76,7 @@
 
     if-ne v0, v2, :cond_0
 
-    .line 802
+    .line 846
     invoke-virtual {p0}, Lcom/google/common/collect/Multisets$AbstractEntry;->getElement()Ljava/lang/Object;
 
     move-result-object p0
@@ -92,7 +100,7 @@
 .method public hashCode()I
     .locals 1
 
-    .line 813
+    .line 857
     invoke-virtual {p0}, Lcom/google/common/collect/Multisets$AbstractEntry;->getElement()Ljava/lang/Object;
 
     move-result-object v0
@@ -103,7 +111,7 @@
 
     goto :goto_0
 
-    .line 814
+    .line 858
     :cond_0
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -120,9 +128,9 @@
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 3
+    .locals 2
 
-    .line 825
+    .line 869
     invoke-virtual {p0}, Lcom/google/common/collect/Multisets$AbstractEntry;->getElement()Ljava/lang/Object;
 
     move-result-object v0
@@ -131,7 +139,7 @@
 
     move-result-object v0
 
-    .line 826
+    .line 870
     invoke-virtual {p0}, Lcom/google/common/collect/Multisets$AbstractEntry;->getCount()I
 
     move-result p0
@@ -142,23 +150,13 @@
 
     goto :goto_0
 
-    .line 827
+    .line 871
     :cond_0
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    move-result v1
-
-    add-int/lit8 v1, v1, 0xe
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 

@@ -34,13 +34,23 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/CameraApplication;Ljava/util/concurrent/ExecutorService;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "service"
+        }
+    .end annotation
 
-    .line 561
+    .line 586
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraApplication$CreateCameraProSettingThread;->this$0:Ljp/co/sony/mc/camera/CameraApplication;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 562
+    .line 587
     iput-object p2, p0, Ljp/co/sony/mc/camera/CameraApplication$CreateCameraProSettingThread;->mService:Ljava/util/concurrent/ExecutorService;
 
     return-void
@@ -56,7 +66,7 @@
         }
     .end annotation
 
-    .line 558
+    .line 583
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/CameraApplication$CreateCameraProSettingThread;->call()Ljava/lang/String;
 
     move-result-object p0
@@ -67,15 +77,15 @@
 .method public call()Ljava/lang/String;
     .locals 2
 
-    .line 567
+    .line 592
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
 
-    .line 568
+    .line 593
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->init()V
 
-    .line 569
+    .line 594
     new-instance v0, Ljava/lang/Thread;
 
     new-instance v1, Ljp/co/sony/mc/camera/CameraApplication$CreateCameraProSettingThread$1;
@@ -84,10 +94,10 @@
 
     invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
-    .line 574
+    .line 599
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
-    .line 575
+    .line 600
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraApplication$CreateCameraProSettingThread;->this$0:Ljp/co/sony/mc/camera/CameraApplication;
 
     const/4 v0, 0x0

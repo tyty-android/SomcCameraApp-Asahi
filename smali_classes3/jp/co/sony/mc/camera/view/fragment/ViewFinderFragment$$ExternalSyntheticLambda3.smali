@@ -3,36 +3,42 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function4;
+.implements Landroidx/lifecycle/Observer;
+
+
+# instance fields
+.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
+
+.field public final synthetic f$1:Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
 
 # direct methods
-.method public synthetic constructor <init>()V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda3;->f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
+
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda3;->f$1:Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public final onChanged(Ljava/lang/Object;)V
+    .locals 1
 
     .line 0
-    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda3;->f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
-    check-cast p2, Ljava/lang/Boolean;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda3;->f$1:Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
-    check-cast p3, Ljava/lang/Boolean;
+    check-cast p1, Ljava/lang/Boolean;
 
-    check-cast p4, Ljava/lang/Boolean;
+    invoke-static {v0, p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->$r8$lambda$cTD4RMw3MqHjEwfeRPYnT_um320(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;Ljava/lang/Boolean;)V
 
-    invoke-static {p1, p2, p3, p4}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->lambda$onViewCreated$18(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;)Ljava/lang/Boolean;
-
-    move-result-object p0
-
-    return-object p0
+    return-void
 .end method

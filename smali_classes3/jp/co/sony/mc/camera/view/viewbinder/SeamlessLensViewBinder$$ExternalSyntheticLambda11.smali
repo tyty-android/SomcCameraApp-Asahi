@@ -32,7 +32,7 @@
 
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->$r8$lambda$cYSqNfk20b3O_XO6VaZGFoOYjbk(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->$r8$lambda$HGd-bcLS0B0V8ZacPaAzfOzrFww(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Lkotlin/Unit;
 
     move-result-object p0
 

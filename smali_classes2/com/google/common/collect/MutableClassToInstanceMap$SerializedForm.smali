@@ -46,6 +46,15 @@
 # direct methods
 .method constructor <init>(Ljava/util/Map;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "backingMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -55,10 +64,10 @@
         }
     .end annotation
 
-    .line 160
+    .line 196
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 161
+    .line 197
     iput-object p1, p0, Lcom/google/common/collect/MutableClassToInstanceMap$SerializedForm;->backingMap:Ljava/util/Map;
 
     return-void
@@ -69,7 +78,7 @@
 .method readResolve()Ljava/lang/Object;
     .locals 0
 
-    .line 165
+    .line 201
     iget-object p0, p0, Lcom/google/common/collect/MutableClassToInstanceMap$SerializedForm;->backingMap:Ljava/util/Map;
 
     invoke-static {p0}, Lcom/google/common/collect/MutableClassToInstanceMap;->create(Ljava/util/Map;)Lcom/google/common/collect/MutableClassToInstanceMap;

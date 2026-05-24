@@ -38,8 +38,8 @@
     }
     k = 0x2
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x30
@@ -82,6 +82,7 @@
     .end annotation
 
     .annotation runtime Lkotlin/DeprecatedSinceKotlin;
+        errorSince = "2.1"
         warningSince = "1.9"
     .end annotation
 
@@ -136,8 +137,6 @@
     .line 98
     array-length v1, v0
 
-    const-string v3, "copyOf(...)"
-
     if-lt v2, v1, :cond_5
 
     .line 99
@@ -181,8 +180,6 @@
 
     move-result-object v0
 
-    invoke-static {v0, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     goto :goto_4
 
     .line 110
@@ -198,7 +195,9 @@
 
     move-result-object p0
 
-    invoke-static {p0, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v0, "copyOf(...)"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     :goto_3
     return-object p0
@@ -228,6 +227,7 @@
     .end annotation
 
     .annotation runtime Lkotlin/DeprecatedSinceKotlin;
+        errorSince = "2.1"
         warningSince = "1.9"
     .end annotation
 
@@ -322,8 +322,6 @@
     .line 120
     array-length v2, v0
 
-    const-string v4, "copyOf(...)"
-
     if-lt v3, v2, :cond_6
 
     .line 121
@@ -367,8 +365,6 @@
 
     move-result-object v0
 
-    invoke-static {v0, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     goto :goto_3
 
     .line 132
@@ -392,7 +388,9 @@
 
     move-result-object p0
 
-    invoke-static {p0, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string p1, "copyOf(...)"
+
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     move-object p1, p0
 
@@ -540,10 +538,6 @@
     invoke-static {p1, p2}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
     move-result-object p1
-
-    const-string p2, "copyOf(...)"
-
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     goto :goto_2
 

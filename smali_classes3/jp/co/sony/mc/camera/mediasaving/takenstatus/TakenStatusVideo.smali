@@ -20,6 +20,20 @@
 # direct methods
 .method public constructor <init>(JJZLandroid/media/AudioDeviceInfo;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x10,
+            0x10
+        }
+        names = {
+            "maxDurationMills_in",
+            "maxFileSizeBytes_in",
+            "isHdr",
+            "audioDeviceInfo"
+        }
+    .end annotation
 
     .line 34
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

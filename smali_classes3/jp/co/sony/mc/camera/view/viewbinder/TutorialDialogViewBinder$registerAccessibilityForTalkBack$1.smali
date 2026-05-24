@@ -47,7 +47,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder$registerAccessibilityForTalkBack$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;
 
-    .line 286
+    .line 300
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -58,7 +58,7 @@
 .method public onGlobalLayout()V
     .locals 3
 
-    .line 288
+    .line 302
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder$registerAccessibilityForTalkBack$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;->access$getBinding$p(Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;)Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;
@@ -79,7 +79,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->removeOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
-    .line 289
+    .line 303
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder$registerAccessibilityForTalkBack$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;->access$getTutorialDialogUiState(Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;)Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;
@@ -106,10 +106,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 290
+    .line 304
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder$registerAccessibilityForTalkBack$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;
 
-    .line 291
+    .line 305
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;->access$getCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;)Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     move-result-object v1
@@ -126,7 +126,7 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 292
+    .line 306
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder$registerAccessibilityForTalkBack$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;->access$getOrientationViewModel(Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;)Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
@@ -145,22 +145,22 @@
 
     check-cast v2, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
 
-    .line 290
+    .line 304
     invoke-static {v0, v1, v2}, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;->access$adjustLayout(Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
 
-    .line 294
+    .line 308
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder$registerAccessibilityForTalkBack$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;
 
     const/16 v1, 0x80
 
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;->access$setAccessibilityEvent$p(Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;I)V
 
-    .line 295
+    .line 309
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder$registerAccessibilityForTalkBack$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;->access$focusOnViewPagerContent(Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;)V
 
-    .line 296
+    .line 310
     sget-object v0, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->INSTANCE:Ljp/co/sony/mc/camera/util/AccessibilityUtil;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder$registerAccessibilityForTalkBack$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;

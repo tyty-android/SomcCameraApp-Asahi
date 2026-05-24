@@ -349,12 +349,12 @@
 
     if-eqz p0, :cond_0
 
-    const p0, 0x7f1100c0
+    const p0, 0x7f1100d4
 
     goto :goto_0
 
     :cond_0
-    const p0, 0x7f1100c1
+    const p0, 0x7f1100d5
 
     :goto_0
     return p0
@@ -414,12 +414,12 @@
 
     if-eqz p0, :cond_0
 
-    const p0, 0x7f0800fe
+    const p0, 0x7f080159
 
     goto :goto_0
 
     :cond_0
-    const p0, 0x7f0800fc
+    const p0, 0x7f080157
 
     :goto_0
     return p0

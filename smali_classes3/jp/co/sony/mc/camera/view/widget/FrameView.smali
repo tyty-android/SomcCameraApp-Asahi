@@ -80,6 +80,14 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 47
     invoke-direct {p0, p1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
@@ -136,6 +144,16 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "attrs"
+        }
+    .end annotation
 
     .line 52
     invoke-direct {p0, p1, p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -192,6 +210,18 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "attrs",
+            "defStyleAttr"
+        }
+    .end annotation
 
     .line 57
     invoke-direct {p0, p1, p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -248,6 +278,16 @@
 
 .method private init(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "attrs"
+        }
+    .end annotation
 
     .line 62
     sget-object v0, Ljp/co/sony/mc/camera/R$styleable;->FrameView:[I
@@ -331,6 +371,14 @@
 # virtual methods
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "canvas"
+        }
+    .end annotation
 
     .line 113
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
@@ -345,6 +393,22 @@
 
 .method protected onLayout(ZIIII)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "changed",
+            "left",
+            "top",
+            "right",
+            "bottom"
+        }
+    .end annotation
 
     .line 75
     invoke-super/range {p0 .. p5}, Landroid/view/View;->onLayout(ZIIII)V
@@ -672,6 +736,14 @@
 
 .method public setAspectRatio(F)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ratio"
+        }
+    .end annotation
 
     .line 143
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/FrameView;->mAspectRatio:F
@@ -684,6 +756,14 @@
 
 .method public setFrameType(Ljp/co/sony/mc/camera/view/widget/FrameView$FrameType;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     .line 168
     sget-object v0, Ljp/co/sony/mc/camera/view/widget/FrameView$1;->$SwitchMap$jp$co$sony$mc$camera$view$widget$FrameView$FrameType:[I
@@ -768,6 +848,14 @@
 
 .method public setInnerRadius(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "px"
+        }
+    .end annotation
 
     .line 153
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/FrameView;->mInnerRadius:I
@@ -780,6 +868,14 @@
 
 .method public setOuterRadius(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "px"
+        }
+    .end annotation
 
     .line 163
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/FrameView;->mOuterRadius:I
@@ -792,6 +888,14 @@
 
 .method public setStrokeColor(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "color"
+        }
+    .end annotation
 
     .line 123
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/FrameView;->mPaint:Landroid/graphics/Paint;
@@ -806,6 +910,14 @@
 
 .method public setStrokeWidth(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "px"
+        }
+    .end annotation
 
     .line 133
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/FrameView;->mPaint:Landroid/graphics/Paint;

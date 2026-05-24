@@ -30,9 +30,9 @@
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder$$ExternalSyntheticLambda3;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;
 
-    check-cast p1, Lkotlin/Unit;
+    check-cast p1, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;->$r8$lambda$dsNfGeqAcO6d76AtYWeOJkvaPAE(Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;Lkotlin/Unit;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;->$r8$lambda$_3Lzly0xPeb-2ZUh9ipMivWh7tA(Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)Lkotlin/Unit;
 
     move-result-object p0
 

@@ -17,6 +17,26 @@
 # virtual methods
 .method protected create(Landroid/content/Context;Ljp/co/sony/mc/camera/setting/MessageSettings;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;Landroid/content/DialogInterface$OnDismissListener;)Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "mMessageSettings",
+            "parameter",
+            "onPositiveListener",
+            "onNegativeListener",
+            "onCancelListener",
+            "onDismissListener"
+        }
+    .end annotation
 
     .line 44
     new-instance p2, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Builder;
@@ -235,6 +255,14 @@
 
 .method protected isLargeTextEnabled(Landroid/content/Context;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 106
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;

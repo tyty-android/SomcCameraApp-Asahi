@@ -30,6 +30,10 @@
 
 .field private static final SCROLL_SETTLING_INTERVAL_MS:I = 0x64
 
+.field private static final SELECT_ANIMATION_DELAY_TIME:J = 0x64L
+
+.field private static final SELECT_ANIMATION_DURATION:I = 0xfa
+
 .field public static final TARGET_POSITION_UNKNOWN:I = -0x1
 
 
@@ -50,11 +54,23 @@
 
 .field private mIsDeadZoneEnabled:Z
 
+.field private mIsSelectAnimationDelayedList:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 .field private mIsTouchEventBlocked:Z
 
 .field private mItemDecoration:Ljp/co/sony/mc/camera/view/widget/DialPicker$OffsetItemDecoration;
 
 .field private mLayoutManager:Ljp/co/sony/mc/camera/view/widget/DialPicker$SnapScrollingLayoutManager;
+
+.field private mOnTouchListener:Landroid/view/View$OnTouchListener;
 
 .field private mOnValueChangedListener:Ljp/co/sony/mc/camera/view/widget/DialPicker$OnValueChangedListener;
 
@@ -66,6 +82,14 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$8GP7Yuk1uo4_I-25swBD6X0PSCY(Ljp/co/sony/mc/camera/view/widget/DialPicker;I)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->lambda$requestItemAccessibilityFocus$1(I)V
+
+    return-void
+.end method
+
 .method public static synthetic $r8$lambda$e6Jmmw8BBG0Kbr2SVaJDhmto650(Ljp/co/sony/mc/camera/view/widget/DialPicker;Landroid/view/View;)V
     .locals 0
 
@@ -98,6 +122,14 @@
     return p0
 .end method
 
+.method static bridge synthetic -$$Nest$fgetmIsSelectAnimationDelayedList(Ljp/co/sony/mc/camera/view/widget/DialPicker;)Ljava/util/ArrayList;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsSelectAnimationDelayedList:Ljava/util/ArrayList;
+
+    return-object p0
+.end method
+
 .method static bridge synthetic -$$Nest$fgetmOnValueChangedListener(Ljp/co/sony/mc/camera/view/widget/DialPicker;)Ljp/co/sony/mc/camera/view/widget/DialPicker$OnValueChangedListener;
     .locals 0
 
@@ -126,18 +158,26 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
-    .line 144
+    .line 158
     invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;-><init>(Landroid/content/Context;)V
 
-    .line 74
+    .line 82
     new-instance p1, Ljp/co/sony/mc/camera/view/widget/DialPicker$1;
 
     invoke-direct {p1, p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker$1;-><init>(Ljp/co/sony/mc/camera/view/widget/DialPicker;)V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mStopValueChangeListenerCaller:Ljava/lang/Runnable;
 
-    .line 83
+    .line 91
     new-instance p1, Landroid/graphics/Paint;
 
     invoke-direct {p1}, Landroid/graphics/Paint;-><init>()V
@@ -146,32 +186,39 @@
 
     const/4 p1, -0x1
 
-    .line 85
+    .line 93
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mDispColumnCount:I
 
     const/4 p1, 0x0
 
-    .line 86
+    .line 94
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mCenterItemPosition:I
 
-    .line 87
+    .line 95
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mCurrentScrollState:I
 
-    .line 88
+    .line 96
     sget-object v0, Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;->LABEL:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mViewKind:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
-    .line 89
+    .line 97
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsClickScrolling:Z
 
-    .line 90
+    .line 98
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsTouchEventBlocked:Z
 
-    .line 92
+    .line 100
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsDeadZoneEnabled:Z
 
-    .line 145
+    .line 102
+    new-instance p1, Ljava/util/ArrayList;
+
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsSelectAnimationDelayedList:Ljava/util/ArrayList;
+
+    .line 159
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->initialize()V
 
     return-void
@@ -179,18 +226,28 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "attrs"
+        }
+    .end annotation
 
-    .line 149
+    .line 163
     invoke-direct {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 74
+    .line 82
     new-instance p1, Ljp/co/sony/mc/camera/view/widget/DialPicker$1;
 
     invoke-direct {p1, p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker$1;-><init>(Ljp/co/sony/mc/camera/view/widget/DialPicker;)V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mStopValueChangeListenerCaller:Ljava/lang/Runnable;
 
-    .line 83
+    .line 91
     new-instance p1, Landroid/graphics/Paint;
 
     invoke-direct {p1}, Landroid/graphics/Paint;-><init>()V
@@ -199,32 +256,39 @@
 
     const/4 p1, -0x1
 
-    .line 85
+    .line 93
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mDispColumnCount:I
 
     const/4 p1, 0x0
 
-    .line 86
+    .line 94
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mCenterItemPosition:I
 
-    .line 87
+    .line 95
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mCurrentScrollState:I
 
-    .line 88
+    .line 96
     sget-object p2, Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;->LABEL:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mViewKind:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
-    .line 89
+    .line 97
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsClickScrolling:Z
 
-    .line 90
+    .line 98
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsTouchEventBlocked:Z
 
-    .line 92
+    .line 100
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsDeadZoneEnabled:Z
 
-    .line 150
+    .line 102
+    new-instance p1, Ljava/util/ArrayList;
+
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsSelectAnimationDelayedList:Ljava/util/ArrayList;
+
+    .line 164
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->initialize()V
 
     return-void
@@ -232,18 +296,30 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "attrs",
+            "defStyleAttr"
+        }
+    .end annotation
 
-    .line 154
+    .line 168
     invoke-direct {p0, p1, p2, p3}, Landroidx/recyclerview/widget/RecyclerView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 74
+    .line 82
     new-instance p1, Ljp/co/sony/mc/camera/view/widget/DialPicker$1;
 
     invoke-direct {p1, p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker$1;-><init>(Ljp/co/sony/mc/camera/view/widget/DialPicker;)V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mStopValueChangeListenerCaller:Ljava/lang/Runnable;
 
-    .line 83
+    .line 91
     new-instance p1, Landroid/graphics/Paint;
 
     invoke-direct {p1}, Landroid/graphics/Paint;-><init>()V
@@ -252,32 +328,39 @@
 
     const/4 p1, -0x1
 
-    .line 85
+    .line 93
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mDispColumnCount:I
 
     const/4 p1, 0x0
 
-    .line 86
+    .line 94
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mCenterItemPosition:I
 
-    .line 87
+    .line 95
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mCurrentScrollState:I
 
-    .line 88
+    .line 96
     sget-object p2, Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;->LABEL:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mViewKind:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
-    .line 89
+    .line 97
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsClickScrolling:Z
 
-    .line 90
+    .line 98
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsTouchEventBlocked:Z
 
-    .line 92
+    .line 100
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsDeadZoneEnabled:Z
 
-    .line 155
+    .line 102
+    new-instance p1, Ljava/util/ArrayList;
+
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsSelectAnimationDelayedList:Ljava/util/ArrayList;
+
+    .line 169
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->initialize()V
 
     return-void
@@ -285,10 +368,18 @@
 
 .method private getCenterXCoordinate(Landroid/view/View;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
-    .line 667
+    .line 777
     invoke-virtual {p1}, Landroid/view/View;->getLeft()I
 
     move-result p0
@@ -313,7 +404,7 @@
 .method private getCurrentDisplayRotation()I
     .locals 0
 
-    .line 1216
+    .line 1428
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getContext()Landroid/content/Context;
 
     move-result-object p0
@@ -331,8 +422,16 @@
 
 .method private getHorizontalCenterView(Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "viewGroup"
+        }
+    .end annotation
 
-    .line 654
+    .line 764
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v0
@@ -342,17 +441,17 @@
     :goto_0
     if-ge v1, v0, :cond_1
 
-    .line 655
+    .line 765
     invoke-virtual {p1, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v2
 
-    .line 656
+    .line 766
     invoke-direct {p0, v2}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getCenterXCoordinate(Landroid/view/View;)I
 
     move-result v3
 
-    .line 657
+    .line 767
     iget v4, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mDialPickerWidth:I
 
     div-int/lit8 v4, v4, 0x2
@@ -365,7 +464,7 @@
 
     sub-int/2addr v4, v5
 
-    .line 658
+    .line 768
     iget v5, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mDialPickerWidth:I
 
     div-int/lit8 v5, v5, 0x2
@@ -398,7 +497,7 @@
 .method private initialize()V
     .locals 3
 
-    .line 159
+    .line 173
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/DialPicker$SnapScrollingLayoutManager;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getContext()Landroid/content/Context;
@@ -409,10 +508,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mLayoutManager:Ljp/co/sony/mc/camera/view/widget/DialPicker$SnapScrollingLayoutManager;
 
-    .line 160
+    .line 174
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->setLayoutManager(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)V
 
-    .line 162
+    .line 176
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;
 
     const/4 v1, 0x0
@@ -421,44 +520,44 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mSnapHelper:Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;
 
-    .line 163
+    .line 177
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mViewKind:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
     invoke-virtual {v0, v2}, Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;->setViewKind(Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;)V
 
-    .line 165
+    .line 179
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/DialPicker$OffsetItemDecoration;
 
     invoke-direct {v0, p0, v1}, Ljp/co/sony/mc/camera/view/widget/DialPicker$OffsetItemDecoration;-><init>(Ljp/co/sony/mc/camera/view/widget/DialPicker;Ljp/co/sony/mc/camera/view/widget/DialPicker$OffsetItemDecoration-IA;)V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mItemDecoration:Ljp/co/sony/mc/camera/view/widget/DialPicker$OffsetItemDecoration;
 
-    .line 166
+    .line 180
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->addItemDecoration(Landroidx/recyclerview/widget/RecyclerView$ItemDecoration;)V
 
-    .line 168
+    .line 182
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    new-instance v2, Ljp/co/sony/mc/camera/view/widget/DialPicker$$ExternalSyntheticLambda0;
+    new-instance v2, Ljp/co/sony/mc/camera/view/widget/DialPicker$$ExternalSyntheticLambda1;
 
-    invoke-direct {v2, p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/view/widget/DialPicker;)V
+    invoke-direct {v2, p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker$$ExternalSyntheticLambda1;-><init>(Ljp/co/sony/mc/camera/view/widget/DialPicker;)V
 
     invoke-direct {v0, p0, v1, v2}, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;-><init>(Ljp/co/sony/mc/camera/view/widget/DialPicker;Landroid/content/Context;Landroid/view/View$OnClickListener;)V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
 
-    .line 172
+    .line 186
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->isEnabled()Z
 
     move-result v1
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;->setEnabled(Z)V
 
-    .line 173
+    .line 187
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->isClickable()Z
@@ -467,19 +566,19 @@
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;->setClickable(Z)V
 
-    .line 174
+    .line 188
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$Adapter;)V
 
-    .line 176
+    .line 190
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mFadeMaskPaint:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 177
+    .line 191
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mFadeMaskPaint:Landroid/graphics/Paint;
 
     new-instance v0, Landroid/graphics/PorterDuffXfermode;
@@ -495,8 +594,16 @@
 
 .method private isDeadZone(F)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "posX"
+        }
+    .end annotation
 
-    .line 646
+    .line 756
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsDeadZoneEnabled:Z
 
     const/4 v1, 0x0
@@ -505,7 +612,7 @@
 
     return v1
 
-    .line 649
+    .line 759
     :cond_0
     iget p0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mDialPickerWidth:I
 
@@ -540,8 +647,16 @@
 
 .method private isValidWidth(I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "width"
+        }
+    .end annotation
 
-    .line 671
+    .line 781
     invoke-static {}, Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;
 
     move-result-object p0
@@ -552,7 +667,7 @@
 
     if-lez p1, :cond_0
 
-    .line 672
+    .line 782
     iget v0, p0, Landroid/util/DisplayMetrics;->heightPixels:I
 
     iget p0, p0, Landroid/util/DisplayMetrics;->widthPixels:I
@@ -577,21 +692,61 @@
 .method private synthetic lambda$initialize$0(Landroid/view/View;)V
     .locals 0
 
-    .line 169
+    .line 183
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getChildLayoutPosition(Landroid/view/View;)I
 
     move-result p1
 
-    .line 170
+    .line 184
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->performItemClick(I)V
 
     return-void
 .end method
 
+.method private synthetic lambda$requestItemAccessibilityFocus$1(I)V
+    .locals 1
+
+    .line 648
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mLayoutManager:Ljp/co/sony/mc/camera/view/widget/DialPicker$SnapScrollingLayoutManager;
+
+    invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker$SnapScrollingLayoutManager;->findViewByPosition(I)Landroid/view/View;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    .line 650
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getChildViewHolder(Landroid/view/View;)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
+
+    move-result-object p0
+
+    check-cast p0, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemViewHolder;
+
+    if-eqz p0, :cond_0
+
+    .line 652
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemViewHolder;->itemView:Landroid/view/View;
+
+    const/16 p1, 0x80
+
+    invoke-virtual {p0, p1}, Landroid/view/View;->sendAccessibilityEvent(I)V
+
+    :cond_0
+    return-void
+.end method
+
 .method private scrollTo(I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
-    .line 636
+    .line 746
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getMeasuredWidth()I
 
     move-result v0
@@ -603,7 +758,7 @@
     :cond_0
     const/4 v0, 0x1
 
-    .line 640
+    .line 750
     new-array v0, v0, [Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -626,10 +781,10 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 641
+    .line 751
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mLayoutManager:Ljp/co/sony/mc/camera/view/widget/DialPicker$SnapScrollingLayoutManager;
 
-    .line 642
+    .line 752
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getMeasuredWidth()I
 
     move-result v1
@@ -644,7 +799,7 @@
 
     div-int/lit8 v1, v1, 0x2
 
-    .line 641
+    .line 751
     invoke-virtual {v0, p1, v1}, Ljp/co/sony/mc/camera/view/widget/DialPicker$SnapScrollingLayoutManager;->scrollToPositionWithOffset(II)V
 
     return-void
@@ -652,8 +807,18 @@
 
 .method private setChildViewActivated(IZ)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "position",
+            "focused"
+        }
+    .end annotation
 
-    .line 622
+    .line 732
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mLayoutManager:Ljp/co/sony/mc/camera/view/widget/DialPicker$SnapScrollingLayoutManager;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker$SnapScrollingLayoutManager;->findViewByPosition(I)Landroid/view/View;
@@ -664,7 +829,7 @@
 
     return-void
 
-    .line 626
+    .line 736
     :cond_0
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getChildViewHolder(Landroid/view/View;)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
 
@@ -676,13 +841,13 @@
 
     return-void
 
-    .line 631
+    .line 741
     :cond_1
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemViewHolder;->itemView:Landroid/view/View;
 
     invoke-virtual {p1, p2}, Landroid/view/View;->setActivated(Z)V
 
-    .line 632
+    .line 742
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemViewHolder;->itemView:Landroid/view/View;
 
     invoke-virtual {p0, p2}, Landroid/view/View;->setSelected(Z)V
@@ -692,33 +857,155 @@
 
 .method private updateCenterItemPosition(IZ)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "position",
+            "notify"
+        }
+    .end annotation
 
-    .line 604
+    .line 693
     iget v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mCenterItemPosition:I
 
     if-eq v0, p1, :cond_0
 
-    .line 606
+    .line 695
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mCenterItemPosition:I
 
     if-eqz p2, :cond_0
 
-    .line 607
+    .line 696
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mOnValueChangedListener:Ljp/co/sony/mc/camera/view/widget/DialPicker$OnValueChangedListener;
 
     if-eqz p2, :cond_0
 
-    .line 608
+    .line 697
     invoke-interface {p2, p0, v0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker$OnValueChangedListener;->onValueChanged(Ljp/co/sony/mc/camera/view/widget/DialPicker;II)V
 
     :cond_0
     return-void
 .end method
 
+.method private updateItemContentDescriptions(I)V
+    .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
+
+    .line 711
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getChildCount()I
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    if-lt v0, v1, :cond_3
+
+    .line 712
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mLayoutManager:Ljp/co/sony/mc/camera/view/widget/DialPicker$SnapScrollingLayoutManager;
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/widget/DialPicker$SnapScrollingLayoutManager;->getItemCount()I
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    :goto_0
+    if-ge v1, v0, :cond_3
+
+    .line 713
+    iget-object v2, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mLayoutManager:Ljp/co/sony/mc/camera/view/widget/DialPicker$SnapScrollingLayoutManager;
+
+    invoke-virtual {v2, v1}, Ljp/co/sony/mc/camera/view/widget/DialPicker$SnapScrollingLayoutManager;->findViewByPosition(I)Landroid/view/View;
+
+    move-result-object v2
+
+    if-nez v2, :cond_0
+
+    goto :goto_1
+
+    .line 717
+    :cond_0
+    invoke-virtual {p0, v2}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getChildViewHolder(Landroid/view/View;)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
+
+    move-result-object v2
+
+    check-cast v2, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemViewHolder;
+
+    if-nez v2, :cond_1
+
+    goto :goto_1
+
+    :cond_1
+    if-ne p1, v1, :cond_2
+
+    .line 723
+    iget-object v2, v2, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemViewHolder;->itemView:Landroid/view/View;
+
+    iget-object v3, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
+
+    invoke-static {v3}, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;->-$$Nest$fgetmSelectedDescriptions(Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;)Ljava/util/List;
+
+    move-result-object v3
+
+    invoke-interface {v3, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/CharSequence;
+
+    invoke-virtual {v2, v3}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
+
+    goto :goto_1
+
+    .line 725
+    :cond_2
+    iget-object v2, v2, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemViewHolder;->itemView:Landroid/view/View;
+
+    iget-object v3, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
+
+    invoke-static {v3}, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;->-$$Nest$fgetmUnselectedDescriptions(Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;)Ljava/util/List;
+
+    move-result-object v3
+
+    invoke-interface {v3, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/CharSequence;
+
+    invoke-virtual {v2, v3}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
+
+    :goto_1
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_3
+    return-void
+.end method
+
 .method private updateItemTextColor(I)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
-    .line 614
+    .line 703
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getChildCount()I
 
     move-result v0
@@ -727,7 +1014,7 @@
 
     if-lt v0, v1, :cond_1
 
-    .line 615
+    .line 704
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mLayoutManager:Ljp/co/sony/mc/camera/view/widget/DialPicker$SnapScrollingLayoutManager;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/widget/DialPicker$SnapScrollingLayoutManager;->getItemCount()I
@@ -750,7 +1037,7 @@
     :cond_0
     move v4, v2
 
-    .line 616
+    .line 705
     :goto_1
     invoke-direct {p0, v3, v4}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->setChildViewActivated(IZ)V
 
@@ -764,60 +1051,68 @@
 
 .method private updateThumbnailIconStyle(I)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "selectedPosition"
+        }
+    .end annotation
 
-    .line 580
+    .line 669
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;->-$$Nest$fgetmIconTextColors(Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;)Ljava/util/List;
 
     move-result-object v0
 
-    .line 581
+    .line 670
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;->-$$Nest$fgetmIconTextBackgroundColors(Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;)Ljava/util/List;
 
     move-result-object v1
 
-    .line 582
+    .line 671
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
-    const v3, 0x7f06004f
+    const v3, 0x7f060055
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getColor(I)I
 
     move-result v2
 
-    .line 584
+    .line 673
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getContext()Landroid/content/Context;
 
     move-result-object v3
 
-    const v4, 0x7f06004e
+    const v4, 0x7f060054
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getColor(I)I
 
     move-result v3
 
-    .line 586
+    .line 675
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getContext()Landroid/content/Context;
 
     move-result-object v4
 
-    const v5, 0x7f060051
+    const v5, 0x7f060057
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getColor(I)I
 
     move-result v4
 
-    .line 588
+    .line 677
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getContext()Landroid/content/Context;
 
     move-result-object v5
 
-    const v6, 0x7f060050
+    const v6, 0x7f060056
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getColor(I)I
 
@@ -825,7 +1120,7 @@
 
     const/4 v6, 0x0
 
-    .line 590
+    .line 679
     :goto_0
     iget-object v7, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
 
@@ -837,14 +1132,14 @@
 
     if-ne v6, p1, :cond_0
 
-    .line 592
+    .line 681
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v7
 
     invoke-interface {v0, v6, v7}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
-    .line 593
+    .line 682
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v7
@@ -853,7 +1148,7 @@
 
     goto :goto_1
 
-    .line 595
+    .line 684
     :cond_0
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -861,7 +1156,7 @@
 
     invoke-interface {v0, v6, v7}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
-    .line 596
+    .line 685
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v7
@@ -873,13 +1168,13 @@
 
     goto :goto_0
 
-    .line 599
+    .line 688
     :cond_1
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
 
     invoke-static {p1, v0}, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;->-$$Nest$fputmIconTextColors(Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;Ljava/util/List;)V
 
-    .line 600
+    .line 689
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
 
     invoke-static {p0, v1}, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;->-$$Nest$fputmIconTextBackgroundColors(Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;Ljava/util/List;)V
@@ -891,8 +1186,16 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
 
-    .line 220
+    .line 234
     iget v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mDialPickerWidth:I
 
     int-to-float v4, v0
@@ -915,10 +1218,10 @@
 
     move-result v0
 
-    .line 221
+    .line 235
     invoke-super {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->draw(Landroid/graphics/Canvas;)V
 
-    .line 222
+    .line 236
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mViewKind:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
     sget-object v2, Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;->MODE_LABEL:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
@@ -931,13 +1234,13 @@
 
     if-ne v1, v2, :cond_1
 
-    .line 223
+    .line 237
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mFadeMaskPaint:Landroid/graphics/Paint;
 
     invoke-virtual {p1, p0}, Landroid/graphics/Canvas;->drawPaint(Landroid/graphics/Paint;)V
 
-    .line 225
+    .line 239
     :cond_1
     invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->restoreToCount(I)V
 
@@ -946,8 +1249,18 @@
 
 .method public fling(II)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "velocityX",
+            "velocityY"
+        }
+    .end annotation
 
-    .line 334
+    .line 378
     invoke-static {p1}, Ljava/lang/Math;->abs(I)I
 
     move-result v0
@@ -967,7 +1280,7 @@
     :cond_0
     move p1, v1
 
-    .line 337
+    .line 381
     :cond_1
     :goto_0
     invoke-static {p2}, Ljava/lang/Math;->abs(I)I
@@ -985,7 +1298,7 @@
     :cond_2
     move p2, v1
 
-    .line 340
+    .line 384
     :cond_3
     :goto_1
     invoke-super {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView;->fling(II)Z
@@ -997,8 +1310,18 @@
 
 .method public focusSearch(Landroid/view/View;I)Landroid/view/View;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "focused",
+            "direction"
+        }
+    .end annotation
 
-    .line 1204
+    .line 1416
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getCurrentDisplayRotation()I
 
     move-result v0
@@ -1007,7 +1330,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 1205
+    .line 1417
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getCurrentDisplayRotation()I
 
     move-result v0
@@ -1027,7 +1350,7 @@
 
     goto :goto_0
 
-    .line 1212
+    .line 1424
     :cond_1
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getCurrentDisplayRotation()I
 
@@ -1041,14 +1364,14 @@
 
     move-result p2
 
-    .line 1211
+    .line 1423
     invoke-super {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView;->focusSearch(Landroid/view/View;I)Landroid/view/View;
 
     move-result-object p0
 
     return-object p0
 
-    .line 1208
+    .line 1420
     :cond_2
     :goto_0
     invoke-super {p0}, Landroidx/recyclerview/widget/RecyclerView;->getParent()Landroid/view/ViewParent;
@@ -1065,7 +1388,7 @@
 .method public getSelectedItemPosition()I
     .locals 0
 
-    .line 468
+    .line 525
     iget p0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mCenterItemPosition:I
 
     return p0
@@ -1074,7 +1397,7 @@
 .method public isClickScrolling()Z
     .locals 0
 
-    .line 392
+    .line 440
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsClickScrolling:Z
 
     return p0
@@ -1083,7 +1406,7 @@
 .method public notifyDataSetChanged()V
     .locals 2
 
-    .line 406
+    .line 454
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
 
     const/4 v0, 0x0
@@ -1100,15 +1423,15 @@
 .method protected onAttachedToWindow()V
     .locals 1
 
-    .line 182
+    .line 196
     invoke-super {p0}, Landroidx/recyclerview/widget/RecyclerView;->onAttachedToWindow()V
 
-    .line 183
+    .line 197
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mSnapHelper:Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;->attachToRecyclerView(Landroidx/recyclerview/widget/RecyclerView;)V
 
-    .line 184
+    .line 198
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mLayoutManager:Ljp/co/sony/mc/camera/view/widget/DialPicker$SnapScrollingLayoutManager;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mSnapHelper:Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;
@@ -1121,19 +1444,19 @@
 .method protected onDetachedFromWindow()V
     .locals 2
 
-    .line 189
+    .line 203
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mLayoutManager:Ljp/co/sony/mc/camera/view/widget/DialPicker$SnapScrollingLayoutManager;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/widget/DialPicker$SnapScrollingLayoutManager;->setSnapHelper(Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;)V
 
-    .line 190
+    .line 204
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mSnapHelper:Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;->attachToRecyclerView(Landroidx/recyclerview/widget/RecyclerView;)V
 
-    .line 191
+    .line 205
     invoke-super {p0}, Landroidx/recyclerview/widget/RecyclerView;->onDetachedFromWindow()V
 
     return-void
@@ -1141,8 +1464,16 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
 
-    .line 345
+    .line 389
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->isShown()Z
 
     move-result v0
@@ -1169,7 +1500,7 @@
 
     if-nez v0, :cond_1
 
-    .line 346
+    .line 390
     invoke-super {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
 
     move-result p0
@@ -1193,16 +1524,32 @@
 
 .method protected onLayout(ZIIII)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "changed",
+            "l",
+            "t",
+            "r",
+            "b"
+        }
+    .end annotation
 
-    .line 210
+    .line 224
     invoke-super/range {p0 .. p5}, Landroidx/recyclerview/widget/RecyclerView;->onLayout(ZIIII)V
 
-    .line 211
+    .line 225
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mFadeMaskPaint:Landroid/graphics/Paint;
 
     new-instance p2, Landroid/graphics/LinearGradient;
 
-    .line 212
+    .line 226
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getHeight()I
 
     move-result p3
@@ -1245,7 +1592,7 @@
 
     invoke-direct/range {v0 .. v7}, Landroid/graphics/LinearGradient;-><init>(FFFF[I[FLandroid/graphics/Shader$TileMode;)V
 
-    .line 211
+    .line 225
     invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setShader(Landroid/graphics/Shader;)Landroid/graphics/Shader;
 
     return-void
@@ -1261,16 +1608,26 @@
 
 .method protected onMeasure(II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "widthSpec",
+            "heightSpec"
+        }
+    .end annotation
 
-    .line 196
+    .line 210
     invoke-super {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView;->onMeasure(II)V
 
-    .line 197
+    .line 211
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
     move-result p1
 
-    .line 198
+    .line 212
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->isValidWidth(I)Z
 
     move-result p2
@@ -1281,10 +1638,10 @@
 
     if-eq p2, p1, :cond_0
 
-    .line 199
+    .line 213
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mDialPickerWidth:I
 
-    .line 201
+    .line 215
     :cond_0
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsClickScrolling:Z
 
@@ -1292,7 +1649,7 @@
 
     const/4 p0, 0x1
 
-    .line 202
+    .line 216
     new-array p0, p0, [Ljava/lang/String;
 
     const/4 p1, 0x0
@@ -1305,7 +1662,7 @@
 
     goto :goto_0
 
-    .line 204
+    .line 218
     :cond_1
     iget p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mCenterItemPosition:I
 
@@ -1317,15 +1674,23 @@
 
 .method public onScrollStateChanged(I)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "newState"
+        }
+    .end annotation
 
-    .line 284
+    .line 302
     iget v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mCurrentScrollState:I
 
     const/4 v1, 0x1
 
     if-eq v0, p1, :cond_0
 
-    .line 285
+    .line 303
     new-array v0, v1, [Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1351,25 +1716,28 @@
     :cond_0
     if-ne p1, v1, :cond_1
 
-    .line 287
+    .line 306
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->updateSelectAnimationDelayedList()V
+
+    .line 307
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mOnValueChangedListener:Ljp/co/sony/mc/camera/view/widget/DialPicker$OnValueChangedListener;
 
     if-eqz v0, :cond_1
 
     const/4 v1, -0x1
 
-    .line 288
+    .line 308
     invoke-interface {v0, p0, v1}, Ljp/co/sony/mc/camera/view/widget/DialPicker$OnValueChangedListener;->onStartValueChange(Ljp/co/sony/mc/camera/view/widget/DialPicker;I)V
 
     :cond_1
     if-eqz p1, :cond_2
 
-    .line 291
+    .line 312
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mStopValueChangeListenerCaller:Ljava/lang/Runnable;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->removeCallbacks(Ljava/lang/Runnable;)Z
 
-    .line 293
+    .line 314
     :cond_2
     iget v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mCurrentScrollState:I
 
@@ -1379,12 +1747,12 @@
 
     if-nez p1, :cond_4
 
-    .line 294
+    .line 315
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mStopValueChangeListenerCaller:Ljava/lang/Runnable;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->removeCallbacks(Ljava/lang/Runnable;)Z
 
-    .line 295
+    .line 316
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mViewKind:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;->MODE_LABEL:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
@@ -1395,14 +1763,14 @@
 
     if-eqz v0, :cond_3
 
-    .line 296
+    .line 317
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mStopValueChangeListenerCaller:Ljava/lang/Runnable;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->post(Ljava/lang/Runnable;)Z
 
     goto :goto_0
 
-    .line 298
+    .line 319
     :cond_3
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mStopValueChangeListenerCaller:Ljava/lang/Runnable;
 
@@ -1410,7 +1778,7 @@
 
     invoke-virtual {p0, v0, v1, v2}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 301
+    .line 322
     :cond_4
     :goto_0
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mCurrentScrollState:I
@@ -1420,8 +1788,18 @@
 
 .method public onScrolled(II)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dx",
+            "dy"
+        }
+    .end annotation
 
-    .line 241
+    .line 259
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getWidth()I
 
     move-result p1
@@ -1434,7 +1812,7 @@
 
     return-void
 
-    .line 246
+    .line 264
     :cond_0
     invoke-direct {p0, p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getHorizontalCenterView(Landroid/view/ViewGroup;)Landroid/view/View;
 
@@ -1444,7 +1822,7 @@
 
     return-void
 
-    .line 252
+    .line 270
     :cond_1
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getChildAdapterPosition(Landroid/view/View;)I
 
@@ -1454,7 +1832,7 @@
 
     return-void
 
-    .line 258
+    .line 276
     :cond_2
     iget v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mCenterItemPosition:I
 
@@ -1473,17 +1851,17 @@
 
     if-ne v0, v1, :cond_6
 
-    .line 266
+    .line 284
     iget v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mDialPickerWidth:I
 
     div-int/lit8 v0, v0, 0x2
 
-    .line 267
+    .line 285
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getCenterXCoordinate(Landroid/view/View;)I
 
     move-result v2
 
-    .line 268
+    .line 286
     iget v3, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mCenterItemPosition:I
 
     if-ge v3, p2, :cond_4
@@ -1498,12 +1876,12 @@
     :cond_5
     sub-int/2addr v0, v2
 
-    .line 270
+    .line 288
     invoke-static {v0}, Ljava/lang/Math;->abs(I)I
 
     move-result v0
 
-    .line 271
+    .line 289
     invoke-virtual {p1}, Landroid/view/View;->getWidth()I
 
     move-result p1
@@ -1520,7 +1898,7 @@
 
     return-void
 
-    .line 278
+    .line 296
     :cond_6
     new-array p1, v1, [Ljava/lang/String;
 
@@ -1544,7 +1922,7 @@
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 279
+    .line 297
     invoke-direct {p0, p2, v1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->updateCenterItemPosition(IZ)V
 
     return-void
@@ -1552,8 +1930,25 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
 
-    .line 351
+    .line 395
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mOnTouchListener:Landroid/view/View$OnTouchListener;
+
+    if-eqz v0, :cond_0
+
+    .line 396
+    invoke-interface {v0, p0, p1}, Landroid/view/View$OnTouchListener;->onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
+
+    .line 399
+    :cond_0
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v0
@@ -1562,54 +1957,54 @@
 
     const/4 v2, 0x1
 
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_9
 
     const-wide/16 v3, 0x64
 
-    if-eq v0, v2, :cond_4
+    if-eq v0, v2, :cond_5
 
     const/4 v5, 0x3
 
-    if-eq v0, v5, :cond_3
+    if-eq v0, v5, :cond_4
 
-    .line 379
+    .line 427
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsTouchEventBlocked:Z
 
-    if-nez v0, :cond_2
+    if-nez v0, :cond_3
 
-    .line 380
+    .line 428
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->isShown()Z
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->isEnabled()Z
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsClickScrolling:Z
 
-    if-eqz v0, :cond_1
-
-    :cond_0
-    move v1, v2
+    if-eqz v0, :cond_2
 
     :cond_1
+    move v1, v2
+
+    :cond_2
     iput-boolean v1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsTouchEventBlocked:Z
 
-    .line 382
-    :cond_2
+    .line 430
+    :cond_3
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsTouchEventBlocked:Z
 
-    if-eqz v0, :cond_b
+    if-eqz v0, :cond_c
 
     return v2
 
-    .line 371
-    :cond_3
+    .line 419
+    :cond_4
     new-array p1, v2, [Ljava/lang/String;
 
     const-string v0, "Touch action: ACTION_CANCEL"
@@ -1618,26 +2013,26 @@
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 372
+    .line 420
     iput v1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mCurrentScrollState:I
 
-    .line 373
+    .line 421
     iput-boolean v1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsTouchEventBlocked:Z
 
-    .line 374
+    .line 422
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mStopValueChangeListenerCaller:Ljava/lang/Runnable;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->removeCallbacks(Ljava/lang/Runnable;)Z
 
-    .line 375
+    .line 423
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mStopValueChangeListenerCaller:Ljava/lang/Runnable;
 
     invoke-virtual {p0, p1, v3, v4}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->postDelayed(Ljava/lang/Runnable;J)Z
 
     return v2
 
-    .line 360
-    :cond_4
+    .line 408
+    :cond_5
     new-array v0, v2, [Ljava/lang/String;
 
     const-string v5, "Touch action: ACTION_UP"
@@ -1646,55 +2041,55 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 361
+    .line 409
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsTouchEventBlocked:Z
 
-    if-eqz v0, :cond_5
+    if-eqz v0, :cond_6
 
-    .line 362
+    .line 410
     iput-boolean v1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsTouchEventBlocked:Z
 
     return v2
 
-    .line 364
-    :cond_5
+    .line 412
+    :cond_6
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->isShown()Z
 
     move-result v0
 
-    if-eqz v0, :cond_7
+    if-eqz v0, :cond_8
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->isEnabled()Z
 
     move-result v0
 
-    if-eqz v0, :cond_7
+    if-eqz v0, :cond_8
 
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsClickScrolling:Z
 
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_7
 
     goto :goto_0
 
-    .line 367
-    :cond_6
+    .line 415
+    :cond_7
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mStopValueChangeListenerCaller:Ljava/lang/Runnable;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->removeCallbacks(Ljava/lang/Runnable;)Z
 
-    .line 368
+    .line 416
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mStopValueChangeListenerCaller:Ljava/lang/Runnable;
 
     invoke-virtual {p0, v0, v3, v4}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->postDelayed(Ljava/lang/Runnable;J)Z
 
     goto :goto_1
 
-    :cond_7
+    :cond_8
     :goto_0
     return v2
 
-    .line 353
-    :cond_8
+    .line 401
+    :cond_9
     new-array v0, v2, [Ljava/lang/String;
 
     const-string v3, "Touch action: ACTION_DOWN"
@@ -1703,29 +2098,29 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 354
+    .line 402
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsClickScrolling:Z
 
-    if-nez v0, :cond_9
+    if-nez v0, :cond_a
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->isEnabled()Z
 
     move-result v0
 
-    if-nez v0, :cond_a
-
-    :cond_9
-    move v1, v2
+    if-nez v0, :cond_b
 
     :cond_a
+    move v1, v2
+
+    :cond_b
     iput-boolean v1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsTouchEventBlocked:Z
 
-    if-eqz v1, :cond_b
+    if-eqz v1, :cond_c
 
     return v2
 
-    .line 388
-    :cond_b
+    .line 436
+    :cond_c
     :goto_1
     invoke-super {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
@@ -1736,10 +2131,18 @@
 
 .method public performItemClick(I)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
-    .line 425
+    .line 482
     new-array v1, v0, [Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1762,7 +2165,7 @@
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 426
+    .line 483
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->isShown()Z
 
     move-result v1
@@ -1775,25 +2178,25 @@
 
     goto :goto_0
 
-    .line 429
+    .line 486
     :cond_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mOnValueChangedListener:Ljp/co/sony/mc/camera/view/widget/DialPicker$OnValueChangedListener;
 
     if-eqz v1, :cond_1
 
-    .line 430
+    .line 487
     invoke-interface {v1, p0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker$OnValueChangedListener;->onStartValueChange(Ljp/co/sony/mc/camera/view/widget/DialPicker;I)V
 
-    .line 432
+    .line 489
     :cond_1
     iget v1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mCenterItemPosition:I
 
     if-eq v1, p1, :cond_2
 
-    .line 433
+    .line 490
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsClickScrolling:Z
 
-    .line 434
+    .line 491
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->smoothScrollToPosition(I)V
 
     :cond_2
@@ -1803,8 +2206,18 @@
 
 .method public requestFocus(ILandroid/graphics/Rect;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "direction",
+            "previouslyFocusedRect"
+        }
+    .end annotation
 
-    .line 1194
+    .line 1406
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mLayoutManager:Ljp/co/sony/mc/camera/view/widget/DialPicker$SnapScrollingLayoutManager;
 
     iget v1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mCenterItemPosition:I
@@ -1815,14 +2228,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 1196
+    .line 1408
     invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
 
     move-result p0
 
     return p0
 
-    .line 1198
+    .line 1410
     :cond_0
     invoke-super {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView;->requestFocus(ILandroid/graphics/Rect;)Z
 
@@ -1831,8 +2244,38 @@
     return p0
 .end method
 
+.method public requestItemAccessibilityFocus(I)V
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
+
+    .line 647
+    new-instance v0, Ljp/co/sony/mc/camera/view/widget/DialPicker$$ExternalSyntheticLambda0;
+
+    invoke-direct {v0, p0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/view/widget/DialPicker;I)V
+
+    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->post(Ljava/lang/Runnable;)Z
+
+    return-void
+.end method
+
 .method public setCapturingModeItems(Ljava/util/List;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "items"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1842,39 +2285,39 @@
         }
     .end annotation
 
-    .line 540
+    .line 615
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;->setCapturingUiModeItems(Ljava/util/List;)V
 
-    .line 541
+    .line 616
     sget-object p1, Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;->MODE_LABEL:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mViewKind:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
-    .line 542
+    .line 617
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mSnapHelper:Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;->setViewKind(Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;)V
 
-    .line 543
+    .line 618
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mViewKind:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;->setViewKind(Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;)V
 
-    .line 544
+    .line 619
     new-instance p1, Landroidx/recyclerview/widget/DefaultItemAnimator;
 
     invoke-direct {p1}, Landroidx/recyclerview/widget/DefaultItemAnimator;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 545
+    .line 620
     invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/DefaultItemAnimator;->setSupportsChangeAnimations(Z)V
 
-    .line 546
+    .line 621
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->setItemAnimator(Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;)V
 
     return-void
@@ -1882,11 +2325,19 @@
 
 .method public setClickable(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "clickable"
+        }
+    .end annotation
 
-    .line 328
+    .line 372
     invoke-super {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->setClickable(Z)V
 
-    .line 329
+    .line 373
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;->setClickable(Z)V
@@ -1896,8 +2347,16 @@
 
 .method public setDispColumnCount(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "count"
+        }
+    .end annotation
 
-    .line 445
+    .line 502
     rem-int/lit8 v0, p1, 0x2
 
     if-eqz v0, :cond_0
@@ -1906,15 +2365,15 @@
 
     if-le p1, v0, :cond_0
 
-    .line 449
+    .line 506
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mDispColumnCount:I
 
-    .line 450
+    .line 507
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->notifyDataSetChanged()V
 
     return-void
 
-    .line 446
+    .line 503
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1925,8 +2384,16 @@
 
 .method public setEnabled(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "enabled"
+        }
+    .end annotation
 
-    .line 306
+    .line 350
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->isEnabled()Z
 
     move-result v0
@@ -1935,16 +2402,16 @@
 
     return-void
 
-    .line 310
+    .line 354
     :cond_0
     invoke-super {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->setEnabled(Z)V
 
-    .line 312
+    .line 356
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;->setEnabled(Z)V
 
-    .line 313
+    .line 357
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
 
     if-eqz p1, :cond_1
@@ -1970,6 +2437,19 @@
 
 .method public setIconItems(Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "items",
+            "unavailableItems",
+            "contentDescriptions"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1985,39 +2465,39 @@
         }
     .end annotation
 
-    .line 508
+    .line 565
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
 
     invoke-virtual {v0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;->setIconItems(Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
 
-    .line 509
+    .line 566
     sget-object p1, Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;->ICON:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mViewKind:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
-    .line 510
+    .line 567
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
 
     invoke-virtual {p2, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;->setViewKind(Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;)V
 
-    .line 511
+    .line 568
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mSnapHelper:Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;
 
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mViewKind:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;->setViewKind(Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;)V
 
-    .line 512
+    .line 569
     new-instance p1, Landroidx/recyclerview/widget/DefaultItemAnimator;
 
     invoke-direct {p1}, Landroidx/recyclerview/widget/DefaultItemAnimator;-><init>()V
 
     const/4 p2, 0x0
 
-    .line 513
+    .line 570
     invoke-virtual {p1, p2}, Landroidx/recyclerview/widget/DefaultItemAnimator;->setSupportsChangeAnimations(Z)V
 
-    .line 514
+    .line 571
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->setItemAnimator(Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;)V
 
     return-void
@@ -2025,8 +2505,16 @@
 
 .method public setIsDeadZoneEnabled(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "enabled"
+        }
+    .end annotation
 
-    .line 576
+    .line 665
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsDeadZoneEnabled:Z
 
     return-void
@@ -2034,8 +2522,16 @@
 
 .method public setItemRotation(F)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "rotation"
+        }
+    .end annotation
 
-    .line 399
+    .line 447
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;->setRotation(F)V
@@ -2045,6 +2541,15 @@
 
 .method public setItemSize(Ljava/util/ArrayList;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "itemSizes"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2054,7 +2559,7 @@
         }
     .end annotation
 
-    .line 459
+    .line 516
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;->setItemSizes(Ljava/util/ArrayList;)V
@@ -2064,6 +2569,17 @@
 
 .method public setLabelItems(Ljava/util/List;Ljava/util/List;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "items",
+            "unavailableItems"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2076,7 +2592,7 @@
         }
     .end annotation
 
-    .line 478
+    .line 535
     invoke-virtual {p0, p1, p2, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->setLabelItems(Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
 
     return-void
@@ -2084,6 +2600,19 @@
 
 .method public setLabelItems(Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "items",
+            "unavailableItems",
+            "contentDescriptions"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2099,39 +2628,39 @@
         }
     .end annotation
 
-    .line 490
+    .line 547
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
 
     invoke-virtual {v0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;->setLabelItems(Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
 
-    .line 491
+    .line 548
     sget-object p1, Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;->LABEL:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mViewKind:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
-    .line 492
+    .line 549
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
 
     invoke-virtual {p2, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;->setViewKind(Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;)V
 
-    .line 493
+    .line 550
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mSnapHelper:Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;
 
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mViewKind:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;->setViewKind(Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;)V
 
-    .line 494
+    .line 551
     new-instance p1, Landroidx/recyclerview/widget/DefaultItemAnimator;
 
     invoke-direct {p1}, Landroidx/recyclerview/widget/DefaultItemAnimator;-><init>()V
 
     const/4 p2, 0x0
 
-    .line 495
+    .line 552
     invoke-virtual {p1, p2}, Landroidx/recyclerview/widget/DefaultItemAnimator;->setSupportsChangeAnimations(Z)V
 
-    .line 496
+    .line 553
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->setItemAnimator(Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;)V
 
     return-void
@@ -2139,35 +2668,68 @@
 
 .method public setLayoutFrozen(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "frozen"
+        }
+    .end annotation
 
-    .line 318
+    .line 362
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->isLayoutFrozen()Z
 
     move-result v0
 
     if-eq v0, p1, :cond_0
 
-    .line 320
+    .line 364
     iget v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mCenterItemPosition:I
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->scrollTo(I)V
 
-    .line 322
+    .line 366
     invoke-super {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutFrozen(Z)V
 
     :cond_0
     return-void
 .end method
 
+.method public setOnTouchListener(Landroid/view/View$OnTouchListener;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "onTouchListener"
+        }
+    .end annotation
+
+    .line 463
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mOnTouchListener:Landroid/view/View$OnTouchListener;
+
+    return-void
+.end method
+
 .method public setOnValueChangedListener(Ljp/co/sony/mc/camera/view/widget/DialPicker$OnValueChangedListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "onValueChangedListener"
+        }
+    .end annotation
 
-    .line 415
+    .line 472
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mOnValueChangedListener:Ljp/co/sony/mc/camera/view/widget/DialPicker$OnValueChangedListener;
 
     if-nez p1, :cond_0
 
-    .line 417
+    .line 474
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mStopValueChangeListenerCaller:Ljava/lang/Runnable;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->removeCallbacks(Ljava/lang/Runnable;)Z
@@ -2178,10 +2740,20 @@
 
 .method public setSelectedItem(IZ)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "selectedPosition",
+            "centering"
+        }
+    .end annotation
 
     if-ltz p1, :cond_1
 
-    .line 556
+    .line 631
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;->getItemCount()I
@@ -2192,22 +2764,22 @@
 
     const/4 v0, 0x0
 
-    .line 557
+    .line 632
     invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->updateCenterItemPosition(IZ)V
 
-    .line 558
+    .line 633
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
 
     invoke-virtual {v1, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;->setSelectedItemPosition(I)V
 
-    .line 559
+    .line 634
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mViewKind:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
     sget-object v2, Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;->THUMBNAIL_ICON:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
     if-ne v1, v2, :cond_0
 
-    .line 560
+    .line 635
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;->-$$Nest$fgetmSelectedPosition(Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;)I
@@ -2216,7 +2788,7 @@
 
     invoke-direct {p0, v1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->updateThumbnailIconStyle(I)V
 
-    .line 562
+    .line 637
     :cond_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
 
@@ -2226,23 +2798,53 @@
 
     invoke-virtual {v1, v0, v2}, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;->notifyItemRangeChanged(II)V
 
-    .line 563
+    .line 638
+    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->updateItemContentDescriptions(I)V
+
+    .line 639
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->updateItemTextColor(I)V
 
     if-eqz p2, :cond_1
 
-    .line 565
+    .line 641
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->scrollTo(I)V
 
     :cond_1
     return-void
 .end method
 
-.method public setThumbnailIconItems(Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
-    .locals 6
+.method public setThumbnailIconItems(Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
+    .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "foregroundThumbnails",
+            "backgroundThumbnails",
+            "unavailableItems",
+            "values",
+            "valueUnselectedDescriptions",
+            "valueSelectedDescriptions",
+            "iconTexts"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
+            "Ljava/util/List<",
+            "Ljava/lang/Integer;",
+            ">;",
+            "Ljava/util/List<",
+            "Ljava/lang/Integer;",
+            ">;",
             "Ljava/util/List<",
             "Ljava/lang/Integer;",
             ">;",
@@ -2261,7 +2863,7 @@
         }
     .end annotation
 
-    .line 526
+    .line 594
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
 
     move-object v1, p1
@@ -2274,19 +2876,23 @@
 
     move-object v5, p5
 
-    invoke-virtual/range {v0 .. v5}, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;->setThumbnailIconItems(Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
+    move-object v6, p6
 
-    .line 528
+    move-object v7, p7
+
+    invoke-virtual/range {v0 .. v7}, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;->setThumbnailIconItems(Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
+
+    .line 603
     sget-object p1, Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;->THUMBNAIL_ICON:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mViewKind:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
-    .line 529
+    .line 604
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
 
     invoke-virtual {p2, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;->setViewKind(Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;)V
 
-    .line 530
+    .line 605
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mSnapHelper:Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;
 
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mViewKind:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
@@ -2295,45 +2901,158 @@
 
     const/4 p1, 0x0
 
-    .line 531
+    .line 606
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->setItemAnimator(Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;)V
 
     return-void
 .end method
 
 .method public setVisibility(I)V
-    .locals 0
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "visibility"
+        }
+    .end annotation
 
-    .line 230
+    .line 244
     invoke-super {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->setVisibility(I)V
 
     if-eqz p1, :cond_1
 
-    .line 231
-    iget-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsClickScrolling:Z
+    .line 245
+    iget-boolean v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsClickScrolling:Z
 
-    if-nez p1, :cond_0
+    if-nez v0, :cond_0
 
-    iget p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mCurrentScrollState:I
+    iget v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mCurrentScrollState:I
 
-    if-eqz p1, :cond_1
+    if-eqz v0, :cond_1
 
     :cond_0
-    const/4 p1, 0x0
+    const/4 v0, 0x0
 
-    .line 233
-    iput p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mCurrentScrollState:I
+    .line 247
+    iput v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mCurrentScrollState:I
 
-    .line 234
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mStopValueChangeListenerCaller:Ljava/lang/Runnable;
+    .line 248
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mStopValueChangeListenerCaller:Ljava/lang/Runnable;
 
-    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->removeCallbacks(Ljava/lang/Runnable;)Z
 
-    .line 235
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mStopValueChangeListenerCaller:Ljava/lang/Runnable;
+    .line 249
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mStopValueChangeListenerCaller:Ljava/lang/Runnable;
 
-    invoke-interface {p0}, Ljava/lang/Runnable;->run()V
+    invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 
     :cond_1
+    if-eqz p1, :cond_2
+
+    .line 252
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->updateSelectAnimationDelayedList()V
+
+    .line 253
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;->cancelSelectAnimation()V
+
+    :cond_2
+    return-void
+.end method
+
+.method public updateSelectAnimationDelayedList()V
+    .locals 6
+
+    .line 326
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsSelectAnimationDelayedList:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
+
+    .line 328
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mViewKind:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
+
+    sget-object v1, Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;->THUMBNAIL_ICON:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
+
+    if-eq v0, v1, :cond_0
+
+    return-void
+
+    .line 332
+    :cond_0
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
+
+    move-result-object v0
+
+    check-cast v0, Landroidx/recyclerview/widget/LinearLayoutManager;
+
+    if-nez v0, :cond_1
+
+    return-void
+
+    .line 337
+    :cond_1
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/LinearLayoutManager;->findFirstVisibleItemPosition()I
+
+    move-result v1
+
+    .line 338
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/LinearLayoutManager;->findLastVisibleItemPosition()I
+
+    move-result v0
+
+    const/4 v2, 0x0
+
+    move v3, v2
+
+    .line 339
+    :goto_0
+    iget-object v4, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mAdapter:Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;
+
+    invoke-static {v4}, Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;->-$$Nest$fgetmForegroundThumbnails(Ljp/co/sony/mc/camera/view/widget/DialPicker$ItemAdapter;)Ljava/util/List;
+
+    move-result-object v4
+
+    invoke-interface {v4}, Ljava/util/List;->size()I
+
+    move-result v4
+
+    if-ge v3, v4, :cond_3
+
+    if-lt v3, v1, :cond_2
+
+    if-gt v3, v0, :cond_2
+
+    .line 341
+    iget-object v4, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsSelectAnimationDelayedList:Ljava/util/ArrayList;
+
+    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v3, v5}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
+
+    goto :goto_1
+
+    .line 343
+    :cond_2
+    iget-object v4, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker;->mIsSelectAnimationDelayedList:Ljava/util/ArrayList;
+
+    const/4 v5, 0x1
+
+    invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v3, v5}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
+
+    :goto_1
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_3
     return-void
 .end method

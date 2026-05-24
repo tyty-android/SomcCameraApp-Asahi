@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/DataConsentActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 181
     iput-object p1, p0, Ljp/co/sony/mc/camera/DataConsentActivity$1;->this$0:Ljp/co/sony/mc/camera/DataConsentActivity;
@@ -37,6 +45,18 @@
 # virtual methods
 .method public onKey(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "dialog",
+            "keyCode",
+            "event"
+        }
+    .end annotation
 
     const/16 p0, 0x1b
 

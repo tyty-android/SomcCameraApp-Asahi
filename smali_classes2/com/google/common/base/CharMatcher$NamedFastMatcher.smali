@@ -21,11 +21,19 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "description"
+        }
+    .end annotation
 
-    .line 956
+    .line 959
     invoke-direct {p0}, Lcom/google/common/base/CharMatcher$FastMatcher;-><init>()V
 
-    .line 957
+    .line 960
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -42,7 +50,7 @@
 .method public final toString()Ljava/lang/String;
     .locals 0
 
-    .line 962
+    .line 965
     iget-object p0, p0, Lcom/google/common/base/CharMatcher$NamedFastMatcher;->description:Ljava/lang/String;
 
     return-object p0

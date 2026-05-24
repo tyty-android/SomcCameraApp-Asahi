@@ -29,7 +29,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010*\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0005\u0008\u0092\u0004\u0018\u00002\u000c0\u0001R\u0008\u0012\u0004\u0012\u00028\u00000\u00022\u0008\u0012\u0004\u0012\u00028\u00000\u0003B\r\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006J\u0008\u0010\u0007\u001a\u00020\u0008H\u0016J\u0008\u0010\t\u001a\u00020\u0005H\u0016J\r\u0010\n\u001a\u00028\u0000H\u0016\u00a2\u0006\u0002\u0010\u000bJ\u0008\u0010\u000c\u001a\u00020\u0005H\u0016\u00a8\u0006\r"
+        "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010*\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0005\u0008\u0092\u0004\u0018\u00002\u000c0\u0001R\u0008\u0012\u0004\u0012\u00028\u00000\u00022\u0008\u0012\u0004\u0012\u00028\u00000\u0003B\u000f\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0004\u0008\u0006\u0010\u0007J\u0008\u0010\u0008\u001a\u00020\tH\u0016J\u0008\u0010\n\u001a\u00020\u0005H\u0016J\r\u0010\u000b\u001a\u00028\u0000H\u0016\u00a2\u0006\u0002\u0010\u000cJ\u0008\u0010\r\u001a\u00020\u0005H\u0016\u00a8\u0006\u000e"
     }
     d2 = {
         "Lkotlin/collections/AbstractList$ListIteratorImpl;",
@@ -38,6 +38,7 @@
         "",
         "index",
         "",
+        "<init>",
         "(Lkotlin/collections/AbstractList;I)V",
         "hasPrevious",
         "",
@@ -49,8 +50,8 @@
     }
     k = 0x1
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x30
@@ -77,12 +78,12 @@
         }
     .end annotation
 
-    .line 86
+    .line 91
     iput-object p1, p0, Lkotlin/collections/AbstractList$ListIteratorImpl;->this$0:Lkotlin/collections/AbstractList;
 
     invoke-direct {p0, p1}, Lkotlin/collections/AbstractList$IteratorImpl;-><init>(Lkotlin/collections/AbstractList;)V
 
-    .line 89
+    .line 94
     sget-object v0, Lkotlin/collections/AbstractList;->Companion:Lkotlin/collections/AbstractList$Companion;
 
     invoke-virtual {p1}, Lkotlin/collections/AbstractList;->size()I
@@ -91,7 +92,7 @@
 
     invoke-virtual {v0, p2, p1}, Lkotlin/collections/AbstractList$Companion;->checkPositionIndex$kotlin_stdlib(II)V
 
-    .line 90
+    .line 95
     invoke-virtual {p0, p2}, Lkotlin/collections/AbstractList$ListIteratorImpl;->setIndex(I)V
 
     return-void
@@ -119,7 +120,7 @@
 .method public hasPrevious()Z
     .locals 0
 
-    .line 93
+    .line 98
     invoke-virtual {p0}, Lkotlin/collections/AbstractList$ListIteratorImpl;->getIndex()I
 
     move-result p0
@@ -140,7 +141,7 @@
 .method public nextIndex()I
     .locals 0
 
-    .line 95
+    .line 100
     invoke-virtual {p0}, Lkotlin/collections/AbstractList$ListIteratorImpl;->getIndex()I
 
     move-result p0
@@ -156,14 +157,14 @@
         }
     .end annotation
 
-    .line 98
+    .line 103
     invoke-virtual {p0}, Lkotlin/collections/AbstractList$ListIteratorImpl;->hasPrevious()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 99
+    .line 104
     iget-object v0, p0, Lkotlin/collections/AbstractList$ListIteratorImpl;->this$0:Lkotlin/collections/AbstractList;
 
     invoke-virtual {p0}, Lkotlin/collections/AbstractList$ListIteratorImpl;->getIndex()I
@@ -184,7 +185,7 @@
 
     return-object p0
 
-    .line 98
+    .line 103
     :cond_0
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -196,7 +197,7 @@
 .method public previousIndex()I
     .locals 0
 
-    .line 102
+    .line 107
     invoke-virtual {p0}, Lkotlin/collections/AbstractList$ListIteratorImpl;->getIndex()I
 
     move-result p0

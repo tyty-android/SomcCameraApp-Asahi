@@ -22,7 +22,7 @@
     .locals 0
 
     .line 0
-    invoke-static {}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->$r8$lambda$BYl-mFURZ8QTgubc7rEGgiKzk_A()Lkotlin/Unit;
+    invoke-static {}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->$r8$lambda$1ZOO7NimP5yjcLW9M7N1rylklbs()Lkotlin/Unit;
 
     move-result-object p0
 

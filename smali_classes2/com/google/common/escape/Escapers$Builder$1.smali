@@ -16,6 +16,9 @@
 
 # instance fields
 .field private final replacementChars:[C
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+.end field
 
 .field final synthetic this$0:Lcom/google/common/escape/Escapers$Builder;
 
@@ -23,13 +26,27 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/escape/Escapers$Builder;Ljava/util/Map;CC)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "replacementMap",
+            "safeMin",
+            "safeMax"
+        }
+    .end annotation
 
     .line 153
     iput-object p1, p0, Lcom/google/common/escape/Escapers$Builder$1;->this$0:Lcom/google/common/escape/Escapers$Builder;
 
     invoke-direct {p0, p2, p3, p4}, Lcom/google/common/escape/ArrayBasedCharEscaper;-><init>(Ljava/util/Map;CC)V
 
-    .line 155
+    .line 156
     invoke-static {p1}, Lcom/google/common/escape/Escapers$Builder;->access$100(Lcom/google/common/escape/Escapers$Builder;)Ljava/lang/String;
 
     move-result-object p2
@@ -59,8 +76,19 @@
 # virtual methods
 .method protected escapeUnsafe(C)[C
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
 
-    .line 159
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 161
     iget-object p0, p0, Lcom/google/common/escape/Escapers$Builder$1;->replacementChars:[C
 
     return-object p0

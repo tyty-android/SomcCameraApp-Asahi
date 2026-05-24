@@ -28,8 +28,16 @@
 # direct methods
 .method constructor <init>(Ljava/util/Map$Entry;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "val$entry"
+        }
+    .end annotation
 
-    .line 1278
+    .line 1483
     iput-object p1, p0, Lcom/google/common/collect/Maps$7;->val$entry:Ljava/util/Map$Entry;
 
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMapEntry;-><init>()V
@@ -41,13 +49,16 @@
 # virtual methods
 .method public getKey()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TK;"
         }
     .end annotation
 
-    .line 1281
+    .line 1487
     iget-object p0, p0, Lcom/google/common/collect/Maps$7;->val$entry:Ljava/util/Map$Entry;
 
     invoke-interface {p0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
@@ -59,13 +70,16 @@
 
 .method public getValue()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TV;"
         }
     .end annotation
 
-    .line 1286
+    .line 1493
     iget-object p0, p0, Lcom/google/common/collect/Maps$7;->val$entry:Ljava/util/Map$Entry;
 
     invoke-interface {p0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;

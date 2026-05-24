@@ -62,7 +62,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 334
+    .line 348
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;->value:Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
@@ -75,7 +75,7 @@
 .method public final getValue()Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
     .locals 0
 
-    .line 334
+    .line 348
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;->value:Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
     return-object p0
@@ -84,7 +84,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 335
+    .line 349
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;->value:Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
     sget-object v0, Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance$WhenMappings;->$EnumSwitchMapping$0:[I
@@ -103,73 +103,73 @@
 
     throw p0
 
-    .line 347
+    .line 361
     :pswitch_0
     const-string p0, "CUSTOM_3"
 
     goto :goto_0
 
-    .line 346
+    .line 360
     :pswitch_1
     const-string p0, "CUSTOM_2"
 
     goto :goto_0
 
-    .line 345
+    .line 359
     :pswitch_2
     const-string p0, "CUSTOM_1"
 
     goto :goto_0
 
-    .line 344
+    .line 358
     :pswitch_3
     const-string p0, "TEMP_3"
 
     goto :goto_0
 
-    .line 343
+    .line 357
     :pswitch_4
     const-string p0, "TEMP_2"
 
     goto :goto_0
 
-    .line 342
+    .line 356
     :pswitch_5
     const-string p0, "TEMP_1"
 
     goto :goto_0
 
-    .line 341
+    .line 355
     :pswitch_6
     const-string p0, "FLUORESCENT"
 
     goto :goto_0
 
-    .line 340
+    .line 354
     :pswitch_7
     const-string p0, "INCANDESCENT"
 
     goto :goto_0
 
-    .line 339
+    .line 353
     :pswitch_8
     const-string p0, "CLOUDY"
 
     goto :goto_0
 
-    .line 338
+    .line 352
     :pswitch_9
     const-string p0, "SHADE"
 
     goto :goto_0
 
-    .line 337
+    .line 351
     :pswitch_a
     const-string p0, "DAYLIGHT"
 
     goto :goto_0
 
-    .line 336
+    .line 350
     :pswitch_b
     const-string p0, "AUTO"
 

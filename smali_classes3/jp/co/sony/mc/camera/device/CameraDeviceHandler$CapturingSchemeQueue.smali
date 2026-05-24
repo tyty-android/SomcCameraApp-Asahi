@@ -23,6 +23,8 @@
 # instance fields
 .field private mInvalidBurstId:Ljava/lang/String;
 
+.field private mIsOfflineSession:Z
+
 .field private final mJpegCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
 
 .field private mLastBurstId:Ljava/lang/String;
@@ -42,8 +44,6 @@
         }
     .end annotation
 .end field
-
-.field private mWaitForAllSnapshotLock:Ljava/util/concurrent/CountDownLatch;
 
 
 # direct methods
@@ -67,30 +67,30 @@
     return p0
 .end method
 
-.method static bridge synthetic -$$Nest$mswitchJpegAndRawToSavingRequest(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;)Ljava/util/List;
+.method static bridge synthetic -$$Nest$mswitchJpegAndRawToSavingRequest(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;I)Ljava/util/List;
     .locals 0
 
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->switchJpegAndRawToSavingRequest()Ljava/util/List;
+    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->switchJpegAndRawToSavingRequest(I)Ljava/util/List;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method static bridge synthetic -$$Nest$mswitchJpegToSavingRequest(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;)Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
+.method static bridge synthetic -$$Nest$mswitchJpegToSavingRequest(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;I)Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
     .locals 0
 
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->switchJpegToSavingRequest()Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
+    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->switchJpegToSavingRequest(I)Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method static bridge synthetic -$$Nest$mswitchRawToSavingRequest(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;)Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
+.method static bridge synthetic -$$Nest$mswitchRawToSavingRequest(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;I)Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
     .locals 0
 
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->switchRawToSavingRequest()Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
+    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->switchRawToSavingRequest(I)Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
 
     move-result-object p0
 
@@ -100,34 +100,37 @@
 .method constructor <init>()V
     .locals 2
 
-    .line 6022
+    .line 6350
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 5942
+    .line 6315
     iput v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRequestCountBetweenShutterDoneAndSnapshotDone:I
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    .line 5956
-    iput-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mQueueingCountChangedListener:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$QueueingCountChangedListener;
+    .line 6321
+    iput-object v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mQueueingCountChangedListener:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$QueueingCountChangedListener;
 
-    .line 6023
-    new-instance v1, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
+    .line 6323
+    iput-boolean v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mIsOfflineSession:Z
 
-    invoke-direct {v1, v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;-><init>(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue-IA;)V
+    .line 6351
+    new-instance v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
 
-    iput-object v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mJpegCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
+    invoke-direct {v0, v1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;-><init>(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue-IA;)V
 
-    .line 6024
-    new-instance v1, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
+    iput-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mJpegCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
 
-    invoke-direct {v1, v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;-><init>(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue-IA;)V
+    .line 6352
+    new-instance v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
 
-    iput-object v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRawCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
+    invoke-direct {v0, v1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;-><init>(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue-IA;)V
 
-    .line 6025
+    iput-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRawCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
+
+    .line 6353
     new-instance v0, Ljava/util/concurrent/ConcurrentLinkedDeque;
 
     invoke-direct {v0}, Ljava/util/concurrent/ConcurrentLinkedDeque;-><init>()V
@@ -139,10 +142,18 @@
 
 .method private checkIfJpegCaptureFinished(Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "builder"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
-    .line 6210
+    .line 6603
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->isImageDataAvailable()Z
 
     move-result p0
@@ -161,10 +172,18 @@
 
 .method private checkIfRawCaptureFinished(Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "builder"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
-    .line 6217
+    .line 6610
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->isImageDataAvailable()Z
 
     move-result p0
@@ -184,58 +203,72 @@
 .method private declared-synchronized dumpRequestQueueStatus()Ljava/lang/String;
     .locals 3
 
-    const-string v0, "requests ["
-
     monitor-enter p0
 
-    .line 6372
+    .line 6780
     :try_start_0
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 6374
-    iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mJpegCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
+    .line 6781
+    iget-boolean v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mIsOfflineSession:Z
 
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->size()I
+    if-eqz v1, :cond_0
 
-    move-result v0
+    .line 6782
+    const-string v1, "OfflineSession : "
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/16 v0, 0x2c
+    .line 6784
+    :cond_0
+    const-string v1, "requests ["
 
-    .line 6375
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 6376
+    .line 6785
+    iget-object v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mJpegCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->size()I
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const/16 v1, 0x2c
+
+    .line 6786
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 6787
     iget-object v2, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRawCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
 
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->size()I
 
     move-result v2
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 6377
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    .line 6788
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 6378
-    iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mSavingRequestQueue:Ljava/util/concurrent/ConcurrentLinkedDeque;
+    .line 6789
+    iget-object v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mSavingRequestQueue:Ljava/util/concurrent/ConcurrentLinkedDeque;
 
-    invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentLinkedDeque;->size()I
+    invoke-virtual {v1}, Ljava/util/concurrent/ConcurrentLinkedDeque;->size()I
 
-    move-result v0
+    move-result v1
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const/16 v0, 0x5d
+    const/16 v1, 0x5d
 
-    .line 6379
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    .line 6790
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 6380
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 6791
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
     :try_end_0
@@ -255,21 +288,29 @@
 
 .method private getBurstId(Ljava/nio/ByteBuffer;)Ljava/lang/String;
     .locals 13
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "byteBuffer"
+        }
+    .end annotation
 
-    .line 6134
+    .line 6506
     const-string p0, "Xmp"
 
-    .line 6135
+    .line 6507
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v0
 
-    .line 6136
+    .line 6508
     new-instance v2, Ljp/co/sony/mc/camera/util/ByteBufferInputStream;
 
     invoke-direct {v2, p1}, Ljp/co/sony/mc/camera/util/ByteBufferInputStream;-><init>(Ljava/nio/ByteBuffer;)V
 
-    .line 6138
+    .line 6510
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v3
@@ -280,30 +321,30 @@
 
     const-wide/16 v7, 0x0
 
-    .line 6141
+    .line 6513
     :try_start_0
     new-instance v9, Landroid/media/ExifInterface;
 
     invoke-direct {v9, v2}, Landroid/media/ExifInterface;-><init>(Ljava/io/InputStream;)V
 
-    .line 6142
+    .line 6514
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v7
 
-    .line 6143
+    .line 6515
     invoke-virtual {v9, p0}, Landroid/media/ExifInterface;->hasAttribute(Ljava/lang/String;)Z
 
     move-result v10
 
     if-eqz v10, :cond_2
 
-    .line 6144
+    .line 6516
     invoke-virtual {v9, p0}, Landroid/media/ExifInterface;->getAttributeBytes(Ljava/lang/String;)[B
 
     move-result-object p0
 
-    .line 6145
+    .line 6517
     new-instance v9, Ljava/io/ByteArrayInputStream;
 
     invoke-direct {v9, p0}, Ljava/io/ByteArrayInputStream;-><init>([B)V
@@ -312,18 +353,18 @@
     .catch Lorg/xmlpull/v1/XmlPullParserException; {:try_start_0 .. :try_end_0} :catch_2
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 6146
+    .line 6518
     :try_start_1
     invoke-static {}, Landroid/util/Xml;->newPullParser()Lorg/xmlpull/v1/XmlPullParser;
 
     move-result-object p0
 
-    .line 6147
+    .line 6519
     const-string v10, "UTF-8"
 
     invoke-interface {p0, v9, v10}, Lorg/xmlpull/v1/XmlPullParser;->setInput(Ljava/io/InputStream;Ljava/lang/String;)V
 
-    .line 6148
+    .line 6520
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->getEventType()I
 
     move-result v10
@@ -331,7 +372,7 @@
     :goto_0
     if-eq v10, v5, :cond_1
 
-    .line 6150
+    .line 6522
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
     move-result-object v11
@@ -340,7 +381,7 @@
 
     if-ne v10, v12, :cond_0
 
-    .line 6152
+    .line 6524
     const-string v10, "BurstID"
 
     invoke-virtual {v10, v11}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -349,14 +390,14 @@
 
     if-eqz v10, :cond_0
 
-    .line 6153
+    .line 6525
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->nextText()Ljava/lang/String;
 
     move-result-object p0
 
     goto :goto_1
 
-    .line 6149
+    .line 6521
     :cond_0
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
@@ -384,14 +425,14 @@
     :cond_2
     move-object p0, v6
 
-    .line 6163
+    .line 6535
     :goto_2
     :try_start_2
     invoke-virtual {v2}, Ljava/io/InputStream;->close()V
 
     if-eqz v6, :cond_3
 
-    .line 6165
+    .line 6537
     invoke-virtual {v6}, Ljava/io/ByteArrayInputStream;->close()V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
@@ -401,10 +442,10 @@
     :catch_1
     move-exception v2
 
-    .line 6168
+    .line 6540
     invoke-virtual {v2}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 6170
+    .line 6542
     :cond_3
     :goto_3
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->rewind()Ljava/nio/Buffer;
@@ -423,20 +464,20 @@
 
     move-object v9, v6
 
-    .line 6160
+    .line 6532
     :goto_4
     :try_start_3
     invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    .line 6163
+    .line 6535
     :try_start_4
     invoke-virtual {v2}, Ljava/io/InputStream;->close()V
 
     if-eqz v9, :cond_4
 
-    .line 6165
+    .line 6537
     invoke-virtual {v9}, Ljava/io/ByteArrayInputStream;->close()V
     :try_end_4
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_3
@@ -446,21 +487,21 @@
     :catch_3
     move-exception p0
 
-    .line 6168
+    .line 6540
     invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 6170
+    .line 6542
     :cond_4
     :goto_5
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->rewind()Ljava/nio/Buffer;
 
-    .line 6173
+    .line 6545
     :goto_6
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide p0
 
-    .line 6174
+    .line 6546
     new-array v2, v5, [Ljava/lang/String;
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -522,14 +563,14 @@
 
     move-object v6, v9
 
-    .line 6163
+    .line 6535
     :goto_7
     :try_start_5
     invoke-virtual {v2}, Ljava/io/InputStream;->close()V
 
     if-eqz v6, :cond_5
 
-    .line 6165
+    .line 6537
     invoke-virtual {v6}, Ljava/io/ByteArrayInputStream;->close()V
     :try_end_5
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_4
@@ -539,27 +580,27 @@
     :catch_4
     move-exception v0
 
-    .line 6168
+    .line 6540
     invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 6170
+    .line 6542
     :cond_5
     :goto_8
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->rewind()Ljava/nio/Buffer;
 
-    .line 6171
+    .line 6543
     throw p0
 .end method
 
 .method private onRequestQueueCountChanged()V
     .locals 1
 
-    .line 6405
+    .line 6795
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mQueueingCountChangedListener:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$QueueingCountChangedListener;
 
     if-eqz v0, :cond_0
 
-    .line 6406
+    .line 6796
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->getCount()I
 
     move-result p0
@@ -570,144 +611,255 @@
     return-void
 .end method
 
-.method private switchJpegAndRawToSavingRequest()Ljava/util/List;
-    .locals 4
+.method private switchJpegAndRawToSavingRequest(I)Ljava/util/List;
+    .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "requestId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "()",
+            "(I)",
             "Ljava/util/List<",
             "Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;",
             ">;"
         }
     .end annotation
 
-    .line 6193
+    .line 6573
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mJpegCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
 
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->poll()Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
-    .line 6194
-    iget-object v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRawCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->poll()Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
-
-    move-result-object v1
-
-    .line 6195
-    iget v2, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRequestCountBetweenShutterDoneAndSnapshotDone:I
-
-    if-lez v2, :cond_0
-
-    add-int/lit8 v2, v2, -0x2
-
-    .line 6196
-    iput v2, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRequestCountBetweenShutterDoneAndSnapshotDone:I
-
     :cond_0
-    if-eqz v0, :cond_1
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    const/4 v2, 0x0
 
     if-eqz v1, :cond_1
 
-    .line 6199
-    iget-object v2, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mSavingRequestQueue:Ljava/util/concurrent/ConcurrentLinkedDeque;
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    invoke-virtual {v2, v1}, Ljava/util/concurrent/ConcurrentLinkedDeque;->add(Ljava/lang/Object;)Z
+    move-result-object v1
 
-    .line 6200
-    iget-object v2, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mSavingRequestQueue:Ljava/util/concurrent/ConcurrentLinkedDeque;
+    check-cast v1, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
 
-    invoke-virtual {v2, v0}, Ljava/util/concurrent/ConcurrentLinkedDeque;->add(Ljava/lang/Object;)Z
+    .line 6574
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->getRequestId()I
 
-    .line 6202
+    move-result v3
+
+    if-ne v3, p1, :cond_0
+
+    .line 6576
+    iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mJpegCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
+
+    invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->remove(Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;)V
+
+    goto :goto_0
+
     :cond_1
-    sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+    move-object v1, v2
 
-    if-eqz v2, :cond_2
+    .line 6581
+    :goto_0
+    iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRawCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
 
-    const/4 v2, 0x1
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->iterator()Ljava/util/Iterator;
 
-    new-array v2, v2, [Ljava/lang/String;
+    move-result-object v0
 
-    const/4 v3, 0x0
+    :cond_2
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_3
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
+
+    .line 6582
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->getRequestId()I
+
+    move-result v4
+
+    if-ne v4, p1, :cond_2
+
+    .line 6584
+    iget-object p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRawCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
+
+    invoke-virtual {p1, v3}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->remove(Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;)V
+
+    move-object v2, v3
+
+    .line 6588
+    :cond_3
+    iget p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRequestCountBetweenShutterDoneAndSnapshotDone:I
+
+    if-lez p1, :cond_4
+
+    add-int/lit8 p1, p1, -0x2
+
+    .line 6589
+    iput p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRequestCountBetweenShutterDoneAndSnapshotDone:I
+
+    :cond_4
+    if-eqz v1, :cond_5
+
+    if-eqz v2, :cond_5
+
+    .line 6592
+    iget-object p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mSavingRequestQueue:Ljava/util/concurrent/ConcurrentLinkedDeque;
+
+    invoke-virtual {p1, v2}, Ljava/util/concurrent/ConcurrentLinkedDeque;->add(Ljava/lang/Object;)Z
+
+    .line 6593
+    iget-object p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mSavingRequestQueue:Ljava/util/concurrent/ConcurrentLinkedDeque;
+
+    invoke-virtual {p1, v1}, Ljava/util/concurrent/ConcurrentLinkedDeque;->add(Ljava/lang/Object;)Z
+
+    .line 6595
+    :cond_5
+    sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    if-eqz p1, :cond_6
+
+    const/4 p1, 0x1
+
+    new-array p1, p1, [Ljava/lang/String;
+
+    const/4 v0, 0x0
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->dumpRequestQueueStatus()Ljava/lang/String;
 
     move-result-object p0
 
-    aput-object p0, v2, v3
+    aput-object p0, p1, v0
 
-    invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 6203
-    :cond_2
+    .line 6596
+    :cond_6
     new-instance p0, Ljava/util/ArrayList;
 
     invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 6204
-    invoke-interface {p0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    .line 6597
+    invoke-interface {p0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 6205
-    invoke-interface {p0, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    .line 6598
+    invoke-interface {p0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     return-object p0
 .end method
 
-.method private switchJpegToSavingRequest()Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
+.method private switchJpegToSavingRequest(I)Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "requestId"
+        }
+    .end annotation
 
-    .line 6095
+    .line 6461
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mJpegCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
 
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->poll()Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
-    .line 6096
-    iget v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRequestCountBetweenShutterDoneAndSnapshotDone:I
-
-    const/4 v2, 0x1
-
-    if-lez v1, :cond_0
-
-    sub-int/2addr v1, v2
-
-    .line 6097
-    iput v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRequestCountBetweenShutterDoneAndSnapshotDone:I
-
     :cond_0
-    const/4 v1, 0x0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    if-eqz v0, :cond_6
+    move-result v1
 
-    .line 6101
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->getSavedFileType()Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_1
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
+
+    .line 6462
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->getRequestId()I
+
+    move-result v3
+
+    if-ne v3, p1, :cond_0
+
+    .line 6464
+    iget-object p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mJpegCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
+
+    invoke-virtual {p1, v1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->remove(Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;)V
+
+    goto :goto_0
+
+    :cond_1
+    move-object v1, v2
+
+    .line 6468
+    :goto_0
+    iget p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRequestCountBetweenShutterDoneAndSnapshotDone:I
+
+    const/4 v0, 0x1
+
+    if-lez p1, :cond_2
+
+    sub-int/2addr p1, v0
+
+    .line 6469
+    iput p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRequestCountBetweenShutterDoneAndSnapshotDone:I
+
+    :cond_2
+    const/4 p1, 0x0
+
+    if-eqz v1, :cond_7
+
+    .line 6473
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->getSavedFileType()Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
 
     move-result-object v3
 
     sget-object v4, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;->BURST:Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
 
-    if-ne v3, v4, :cond_3
+    if-ne v3, v4, :cond_5
 
-    .line 6102
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->getBurstType()Ljp/co/sony/mc/camera/configuration/parameters/DriveMode$BurstType;
+    .line 6474
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->getBurstType()Ljp/co/sony/mc/camera/configuration/parameters/DriveMode$BurstType;
 
     move-result-object v3
 
     sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode$BurstType;->NORMAL:Ljp/co/sony/mc/camera/configuration/parameters/DriveMode$BurstType;
 
-    if-eq v3, v4, :cond_3
+    if-eq v3, v4, :cond_5
 
-    .line 6103
+    .line 6475
     iget-object v3, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mLastBurstId:Ljava/lang/String;
 
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
 
-    if-nez v3, :cond_1
+    if-nez v3, :cond_3
 
     iget-object v3, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mLastBurstId:Ljava/lang/String;
 
@@ -717,15 +869,15 @@
 
     move-result v3
 
-    if-eqz v3, :cond_2
+    if-eqz v3, :cond_4
 
-    .line 6105
-    :cond_1
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->getImageSource()Ljp/co/sony/mc/camera/storage/PhotoSavingRequest$ImageSourceLifeCycleAdapter;
+    .line 6477
+    :cond_3
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->getImageSource()Ljp/co/sony/mc/camera/storage/PhotoSavingRequest$ImageSourceLifeCycleAdapter;
 
     move-result-object v3
 
-    .line 6106
+    .line 6478
     invoke-interface {v3}, Ljp/co/sony/mc/camera/storage/PhotoSavingRequest$ImageSourceLifeCycleAdapter;->getImageData()Ljava/nio/ByteBuffer;
 
     move-result-object v4
@@ -734,18 +886,18 @@
 
     move-result-object v4
 
-    .line 6107
+    .line 6479
     invoke-interface {v3}, Ljp/co/sony/mc/camera/storage/PhotoSavingRequest$ImageSourceLifeCycleAdapter;->releaseImageData()V
 
-    .line 6108
+    .line 6480
     iput-object v4, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mLastBurstId:Ljava/lang/String;
 
-    .line 6109
+    .line 6481
     invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
 
-    if-nez v3, :cond_2
+    if-nez v3, :cond_4
 
     iget-object v3, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mInvalidBurstId:Ljava/lang/String;
 
@@ -753,128 +905,172 @@
 
     move-result v3
 
-    if-eqz v3, :cond_2
+    if-eqz v3, :cond_4
 
-    move v3, v1
+    move v3, p1
 
-    goto :goto_0
+    goto :goto_1
 
-    :cond_2
-    move v3, v2
+    :cond_4
+    move v3, v0
 
-    .line 6113
-    :goto_0
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->isFinalInSavingGroup()Z
+    .line 6485
+    :goto_1
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->isFinalInSavingGroup()Z
 
     move-result v4
 
-    if-eqz v4, :cond_4
+    if-eqz v4, :cond_6
 
-    .line 6114
+    .line 6486
     iget-object v4, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mLastBurstId:Ljava/lang/String;
 
     iput-object v4, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mInvalidBurstId:Ljava/lang/String;
 
-    goto :goto_1
-
-    :cond_3
-    move v3, v2
-
-    :cond_4
-    :goto_1
-    if-eqz v3, :cond_5
-
-    .line 6118
-    iget-object v3, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mSavingRequestQueue:Ljava/util/concurrent/ConcurrentLinkedDeque;
-
-    invoke-virtual {v3, v0}, Ljava/util/concurrent/ConcurrentLinkedDeque;->add(Ljava/lang/Object;)Z
-
     goto :goto_2
 
     :cond_5
-    const/4 v0, 0x0
+    move v3, v0
 
-    .line 6123
     :cond_6
     :goto_2
-    sget-boolean v3, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+    if-eqz v3, :cond_8
 
-    if-eqz v3, :cond_7
+    .line 6490
+    iget-object v2, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mSavingRequestQueue:Ljava/util/concurrent/ConcurrentLinkedDeque;
 
-    new-array v2, v2, [Ljava/lang/String;
+    invoke-virtual {v2, v1}, Ljava/util/concurrent/ConcurrentLinkedDeque;->add(Ljava/lang/Object;)Z
+
+    :cond_7
+    move-object v2, v1
+
+    .line 6495
+    :cond_8
+    sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    if-eqz v1, :cond_9
+
+    new-array v0, v0, [Ljava/lang/String;
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->dumpRequestQueueStatus()Ljava/lang/String;
 
     move-result-object p0
 
-    aput-object p0, v2, v1
+    aput-object p0, v0, p1
 
-    invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    :cond_7
-    return-object v0
+    :cond_9
+    return-object v2
 .end method
 
-.method private switchRawToSavingRequest()Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
+.method private switchRawToSavingRequest(I)Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "requestId"
+        }
+    .end annotation
 
-    .line 6181
+    .line 6554
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRawCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
 
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->poll()Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
-    .line 6182
-    iget v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRequestCountBetweenShutterDoneAndSnapshotDone:I
-
-    const/4 v2, 0x1
-
-    if-lez v1, :cond_0
-
-    sub-int/2addr v1, v2
-
-    .line 6183
-    iput v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRequestCountBetweenShutterDoneAndSnapshotDone:I
-
     :cond_0
-    if-eqz v0, :cond_1
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    .line 6186
-    iget-object v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mSavingRequestQueue:Ljava/util/concurrent/ConcurrentLinkedDeque;
+    move-result v1
 
-    invoke-virtual {v1, v0}, Ljava/util/concurrent/ConcurrentLinkedDeque;->add(Ljava/lang/Object;)Z
+    if-eqz v1, :cond_1
 
-    .line 6188
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
+
+    .line 6555
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->getRequestId()I
+
+    move-result v2
+
+    if-ne v2, p1, :cond_0
+
+    .line 6557
+    iget-object p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRawCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
+
+    invoke-virtual {p1, v1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->remove(Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;)V
+
+    goto :goto_0
+
     :cond_1
-    sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+    const/4 v1, 0x0
 
-    if-eqz v1, :cond_2
+    .line 6561
+    :goto_0
+    iget p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRequestCountBetweenShutterDoneAndSnapshotDone:I
 
-    new-array v1, v2, [Ljava/lang/String;
+    const/4 v0, 0x1
 
-    const/4 v2, 0x0
+    if-lez p1, :cond_2
+
+    sub-int/2addr p1, v0
+
+    .line 6562
+    iput p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRequestCountBetweenShutterDoneAndSnapshotDone:I
+
+    :cond_2
+    if-eqz v1, :cond_3
+
+    .line 6565
+    iget-object p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mSavingRequestQueue:Ljava/util/concurrent/ConcurrentLinkedDeque;
+
+    invoke-virtual {p1, v1}, Ljava/util/concurrent/ConcurrentLinkedDeque;->add(Ljava/lang/Object;)Z
+
+    .line 6567
+    :cond_3
+    sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    if-eqz p1, :cond_4
+
+    new-array p1, v0, [Ljava/lang/String;
+
+    const/4 v0, 0x0
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->dumpRequestQueueStatus()Ljava/lang/String;
 
     move-result-object p0
 
-    aput-object p0, v1, v2
+    aput-object p0, p1, v0
 
-    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    :cond_2
-    return-object v0
+    :cond_4
+    return-object v1
 .end method
 
 
 # virtual methods
 .method declared-synchronized addRequestCountBetweenShutterDoneAndSnapshotDone(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "num"
+        }
+    .end annotation
 
     monitor-enter p0
 
-    .line 6356
+    .line 6769
     :try_start_0
     iget v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRequestCountBetweenShutterDoneAndSnapshotDone:I
 
@@ -884,7 +1080,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 6357
+    .line 6770
     monitor-exit p0
 
     return-void
@@ -902,7 +1098,7 @@
 
     monitor-enter p0
 
-    .line 6345
+    .line 6758
     :try_start_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mJpegCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
 
@@ -916,7 +1112,7 @@
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mSavingRequestQueue:Ljava/util/concurrent/ConcurrentLinkedDeque;
 
-    .line 6346
+    .line 6759
     invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentLinkedDeque;->size()I
 
     move-result v0
@@ -930,28 +1126,28 @@
     :cond_0
     move v0, v1
 
-    .line 6347
+    .line 6760
     :goto_0
     iget-object v2, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mJpegCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
 
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->clear()V
 
-    .line 6348
+    .line 6761
     iget-object v2, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRawCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
 
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->clear()V
 
-    .line 6349
+    .line 6762
     iput v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRequestCountBetweenShutterDoneAndSnapshotDone:I
 
     if-eqz v0, :cond_1
 
-    .line 6351
+    .line 6764
     invoke-direct {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->onRequestQueueCountChanged()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 6353
+    .line 6766
     :cond_1
     monitor-exit p0
 
@@ -965,111 +1161,164 @@
     throw v0
 .end method
 
-.method declared-synchronized dequeueSavingRequest()V
+.method declared-synchronized contains(I)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "captureRequestId"
+        }
+    .end annotation
 
     monitor-enter p0
 
-    .line 6329
+    .line 6631
     :try_start_0
-    iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mSavingRequestQueue:Ljava/util/concurrent/ConcurrentLinkedDeque;
+    iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mJpegCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
 
-    invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentLinkedDeque;->poll()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->iterator()Ljava/util/Iterator;
 
-    .line 6330
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->onRequestQueueCountChanged()V
+    move-result-object v0
 
-    .line 6331
-    sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+    :cond_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    if-eqz v0, :cond_0
+    move-result v1
 
-    const/4 v0, 0x1
+    const/4 v2, 0x1
 
-    new-array v0, v0, [Ljava/lang/String;
+    if-eqz v1, :cond_1
 
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->dumpRequestQueueStatus()Ljava/lang/String;
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
-    const/4 v2, 0x0
+    check-cast v1, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
 
-    aput-object v1, v0, v2
+    if-eqz v1, :cond_0
 
-    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    .line 6632
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->getRequestId()I
+
+    move-result v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 6332
-    :cond_0
+    if-ne v1, p1, :cond_0
+
+    .line 6633
     monitor-exit p0
 
-    return-void
+    return v2
 
-    :catchall_0
-    move-exception v0
+    .line 6637
+    :cond_1
+    :try_start_1
+    iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRawCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
 
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :cond_2
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
+
+    if-eqz v1, :cond_2
+
+    .line 6638
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->getRequestId()I
+
+    move-result v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    if-ne v1, p1, :cond_2
+
+    .line 6639
     monitor-exit p0
 
-    throw v0
-.end method
+    return v2
 
-.method dump(Ljava/lang/StringBuilder;)V
-    .locals 2
-
-    .line 6384
-    const-string v0, "mSavingRequestQueue:"
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 6385
+    .line 6643
+    :cond_3
+    :try_start_2
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mSavingRequestQueue:Ljava/util/concurrent/ConcurrentLinkedDeque;
 
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentLinkedDeque;->iterator()Ljava/util/Iterator;
 
-    .line 6386
-    const-string v0, "\n"
+    move-result-object v0
 
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :cond_4
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    .line 6387
-    const-string v1, "mJpegCaptureRequestQueue:"
+    move-result v1
 
-    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-eqz v1, :cond_5
 
-    .line 6388
-    iget-object v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mJpegCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    move-result-object v1
 
-    .line 6389
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    check-cast v1, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
 
-    .line 6390
-    const-string v1, "mRawCaptureRequestQueue:"
+    if-eqz v1, :cond_4
 
-    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 6644
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->getRequestId()I
 
-    .line 6391
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result v1
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 6392
-    iget-object p0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRawCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
+    if-ne v1, p1, :cond_4
 
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    .line 6645
+    monitor-exit p0
 
-    .line 6393
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    return v2
 
-    return-void
+    .line 6649
+    :cond_5
+    monitor-exit p0
+
+    const/4 p0, 0x0
+
+    return p0
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+
+    throw p1
 .end method
 
-.method declared-synchronized enqueueCaptureRequest(Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;)V
+.method declared-synchronized dequeueCaptureRequest(Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "builder"
+        }
+    .end annotation
 
     monitor-enter p0
 
-    .line 6035
+    .line 6380
     :try_start_0
     iget-object v0, p1, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->mCommonStatus:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
 
@@ -1098,14 +1347,14 @@
 
     if-eqz v0, :cond_2
 
-    .line 6037
+    .line 6382
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRawCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
 
-    invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->add(Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;)Z
+    invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->remove(Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;)V
 
     goto :goto_1
 
-    .line 6035
+    .line 6380
     :cond_1
     const-string v1, "image/jpeg"
 
@@ -1113,19 +1362,209 @@
 
     move-result v0
 
-    .line 6042
+    .line 6387
+    :cond_2
+    :goto_0
+    iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mJpegCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
+
+    invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->remove(Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;)V
+
+    .line 6390
+    :goto_1
+    sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    if-eqz p1, :cond_3
+
+    const/4 p1, 0x1
+
+    new-array p1, p1, [Ljava/lang/String;
+
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->dumpRequestQueueStatus()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    aput-object v0, p1, v1
+
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 6391
+    :cond_3
+    monitor-exit p0
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+
+    throw p1
+.end method
+
+.method declared-synchronized dequeueSavingRequest(I)Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "requestId"
+        }
+    .end annotation
+
+    monitor-enter p0
+
+    .line 6618
+    :try_start_0
+    iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mSavingRequestQueue:Ljava/util/concurrent/ConcurrentLinkedDeque;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentLinkedDeque;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :cond_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
+
+    .line 6619
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->getRequestId()I
+
+    move-result v2
+
+    if-ne v2, p1, :cond_0
+
+    .line 6621
+    iget-object p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mSavingRequestQueue:Ljava/util/concurrent/ConcurrentLinkedDeque;
+
+    invoke-virtual {p1, v1}, Ljava/util/concurrent/ConcurrentLinkedDeque;->remove(Ljava/lang/Object;)Z
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v1, 0x0
+
+    .line 6625
+    :goto_0
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->onRequestQueueCountChanged()V
+
+    .line 6626
+    sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    if-eqz p1, :cond_2
+
+    const/4 p1, 0x1
+
+    new-array p1, p1, [Ljava/lang/String;
+
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->dumpRequestQueueStatus()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/4 v2, 0x0
+
+    aput-object v0, p1, v2
+
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 6627
+    :cond_2
+    monitor-exit p0
+
+    return-object v1
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+
+    throw p1
+.end method
+
+.method declared-synchronized enqueueCaptureRequest(Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "builder"
+        }
+    .end annotation
+
+    monitor-enter p0
+
+    .line 6366
+    :try_start_0
+    iget-object v0, p1, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->mCommonStatus:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;->mimeType:Ljava/lang/String;
+
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    move-result v1
+
+    const v2, -0x58a7d764    # -2.9998036E-15f
+
+    if-eq v1, v2, :cond_1
+
+    const v2, -0x54d6098a
+
+    if-eq v1, v2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const-string v1, "image/x-adobe-dng"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    .line 6368
+    iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRawCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
+
+    invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->add(Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;)Z
+
+    goto :goto_1
+
+    .line 6366
+    :cond_1
+    const-string v1, "image/jpeg"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    .line 6373
     :cond_2
     :goto_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mJpegCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->add(Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;)Z
 
-    .line 6043
+    .line 6374
     invoke-direct {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->onRequestQueueCountChanged()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 6046
+    .line 6377
     :goto_1
     monitor-exit p0
 
@@ -1139,47 +1578,12 @@
     throw p1
 .end method
 
-.method declared-synchronized getCaptureRequestQueueCount()I
-    .locals 2
-
-    monitor-enter p0
-
-    .line 6368
-    :try_start_0
-    iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mJpegCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->size()I
-
-    move-result v0
-
-    iget-object v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRawCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->size()I
-
-    move-result v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    add-int/2addr v0, v1
-
-    monitor-exit p0
-
-    return v0
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
-.end method
-
 .method declared-synchronized getCount()I
     .locals 3
 
     monitor-enter p0
 
-    .line 6224
+    .line 6653
     :try_start_0
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
@@ -1199,7 +1603,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 6225
+    .line 6654
     :cond_0
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->getCount(Z)I
 
@@ -1221,10 +1625,18 @@
 
 .method declared-synchronized getCount(Z)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "exceptFastCapture"
+        }
+    .end annotation
 
     monitor-enter p0
 
-    .line 6229
+    .line 6658
     :try_start_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mJpegCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
 
@@ -1234,7 +1646,7 @@
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRawCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
 
-    .line 6230
+    .line 6659
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->size()I
 
     move-result v1
@@ -1243,7 +1655,7 @@
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mSavingRequestQueue:Ljava/util/concurrent/ConcurrentLinkedDeque;
 
-    .line 6231
+    .line 6660
     invoke-virtual {v1}, Ljava/util/concurrent/ConcurrentLinkedDeque;->size()I
 
     move-result v1
@@ -1254,12 +1666,12 @@
 
     if-nez p1, :cond_0
 
-    .line 6234
+    .line 6663
     monitor-exit p0
 
     return v0
 
-    .line 6237
+    .line 6666
     :cond_0
     :try_start_1
     iget-object p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mJpegCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
@@ -1284,7 +1696,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 6239
+    .line 6668
     iget-object v1, v1, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->mCommonStatus:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
 
     iget-boolean v1, v1, Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;->takenByFastCapture:Z
@@ -1295,7 +1707,7 @@
 
     goto :goto_0
 
-    .line 6246
+    .line 6675
     :cond_2
     iget-object p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRawCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
 
@@ -1319,7 +1731,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 6248
+    .line 6677
     iget-object v1, v1, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->mCommonStatus:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
 
     iget-boolean v1, v1, Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;->takenByFastCapture:Z
@@ -1330,7 +1742,7 @@
 
     goto :goto_1
 
-    .line 6255
+    .line 6684
     :cond_4
     iget-object p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mSavingRequestQueue:Ljava/util/concurrent/ConcurrentLinkedDeque;
 
@@ -1354,7 +1766,7 @@
 
     if-eqz v1, :cond_5
 
-    .line 6257
+    .line 6686
     iget-object v1, v1, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->mCommonStatus:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
 
     iget-boolean v1, v1, Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;->takenByFastCapture:Z
@@ -1367,7 +1779,7 @@
 
     goto :goto_2
 
-    .line 6264
+    .line 6693
     :cond_6
     monitor-exit p0
 
@@ -1383,10 +1795,22 @@
 
 .method declared-synchronized getCount(ZLjava/lang/String;Ljp/co/sony/mc/camera/storage/Storage$StorageType;)I
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "exceptFastCapture",
+            "mimeType",
+            "storageType"
+        }
+    .end annotation
 
     monitor-enter p0
 
-    .line 6275
+    .line 6704
     :try_start_0
     invoke-virtual {p2}, Ljava/lang/String;->hashCode()I
 
@@ -1445,7 +1869,7 @@
 
     goto/16 :goto_a
 
-    .line 6299
+    .line 6728
     :cond_3
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRawCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
 
@@ -1471,7 +1895,7 @@
 
     if-eqz v3, :cond_4
 
-    .line 6300
+    .line 6729
     invoke-virtual {v3}, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->getStorageType()Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
     move-result-object v4
@@ -1489,7 +1913,7 @@
 
     goto :goto_2
 
-    .line 6303
+    .line 6732
     :cond_5
     iget-object v3, v3, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->mCommonStatus:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
 
@@ -1499,7 +1923,7 @@
 
     goto :goto_3
 
-    .line 6308
+    .line 6737
     :cond_6
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mSavingRequestQueue:Ljava/util/concurrent/ConcurrentLinkedDeque;
 
@@ -1523,7 +1947,7 @@
 
     if-eqz v3, :cond_7
 
-    .line 6309
+    .line 6738
     iget-object v4, v3, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->mCommonStatus:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
 
     iget-object v4, v4, Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;->mimeType:Ljava/lang/String;
@@ -1534,7 +1958,7 @@
 
     if-eqz v4, :cond_7
 
-    .line 6310
+    .line 6739
     invoke-virtual {v3}, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->getStorageType()Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
     move-result-object v4
@@ -1552,7 +1976,7 @@
 
     goto :goto_4
 
-    .line 6313
+    .line 6742
     :cond_8
     iget-object v3, v3, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->mCommonStatus:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
 
@@ -1562,7 +1986,7 @@
 
     goto :goto_5
 
-    .line 6277
+    .line 6706
     :cond_9
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mJpegCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
 
@@ -1588,7 +2012,7 @@
 
     if-eqz v3, :cond_a
 
-    .line 6278
+    .line 6707
     invoke-virtual {v3}, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->getStorageType()Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
     move-result-object v4
@@ -1606,7 +2030,7 @@
 
     goto :goto_6
 
-    .line 6281
+    .line 6710
     :cond_b
     iget-object v3, v3, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->mCommonStatus:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
 
@@ -1616,7 +2040,7 @@
 
     goto :goto_7
 
-    .line 6286
+    .line 6715
     :cond_c
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mSavingRequestQueue:Ljava/util/concurrent/ConcurrentLinkedDeque;
 
@@ -1640,7 +2064,7 @@
 
     if-eqz v3, :cond_d
 
-    .line 6287
+    .line 6716
     iget-object v4, v3, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->mCommonStatus:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
 
     iget-object v4, v4, Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;->mimeType:Ljava/lang/String;
@@ -1651,7 +2075,7 @@
 
     if-eqz v4, :cond_d
 
-    .line 6288
+    .line 6717
     invoke-virtual {v3}, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->getStorageType()Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
     move-result-object v4
@@ -1669,7 +2093,7 @@
 
     goto :goto_8
 
-    .line 6291
+    .line 6720
     :cond_e
     iget-object v3, v3, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->mCommonStatus:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
 
@@ -1689,10 +2113,353 @@
     :goto_a
     add-int/2addr v2, p1
 
-    .line 6325
+    .line 6754
     monitor-exit p0
 
     return v2
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+
+    throw p1
+.end method
+
+.method declared-synchronized getJpegSavingPhotoRequest(I)Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "requestId"
+        }
+    .end annotation
+
+    monitor-enter p0
+
+    .line 6418
+    :try_start_0
+    iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mJpegCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :cond_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
+
+    .line 6419
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->getRequestId()I
+
+    move-result v2
+
+    if-ne v2, p1, :cond_0
+
+    .line 6420
+    sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    if-eqz p1, :cond_1
+
+    const/4 p1, 0x1
+
+    new-array p1, p1, [Ljava/lang/String;
+
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->dumpRequestQueueStatus()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/4 v2, 0x0
+
+    aput-object v0, p1, v2
+
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 6421
+    :cond_1
+    monitor-exit p0
+
+    return-object v1
+
+    .line 6424
+    :cond_2
+    monitor-exit p0
+
+    const/4 p0, 0x0
+
+    return-object p0
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+
+    throw p1
+.end method
+
+.method declared-synchronized getLastJpegSavingPhotoRequest(I)Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "requestId"
+        }
+    .end annotation
+
+    monitor-enter p0
+
+    .line 6394
+    :try_start_0
+    iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mJpegCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
+
+    .line 6395
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->descendingIterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :cond_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 6396
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
+
+    .line 6397
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->getRequestId()I
+
+    move-result v2
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    if-ne v2, p1, :cond_0
+
+    .line 6398
+    monitor-exit p0
+
+    return-object v1
+
+    .line 6401
+    :cond_1
+    :try_start_1
+    sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    if-eqz p1, :cond_2
+
+    const/4 p1, 0x1
+
+    new-array p1, p1, [Ljava/lang/String;
+
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->dumpRequestQueueStatus()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    aput-object v0, p1, v1
+
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 6402
+    :cond_2
+    monitor-exit p0
+
+    const/4 p0, 0x0
+
+    return-object p0
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+
+    throw p1
+.end method
+
+.method declared-synchronized getLastRawSavingPhotoRequest(I)Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "requestId"
+        }
+    .end annotation
+
+    monitor-enter p0
+
+    .line 6406
+    :try_start_0
+    iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRawCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
+
+    .line 6407
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->descendingIterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :cond_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    .line 6408
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
+
+    .line 6409
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->getRequestId()I
+
+    move-result v2
+
+    if-ne v2, p1, :cond_0
+
+    .line 6410
+    sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    if-eqz p1, :cond_1
+
+    const/4 p1, 0x1
+
+    new-array p1, p1, [Ljava/lang/String;
+
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->dumpRequestQueueStatus()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/4 v2, 0x0
+
+    aput-object v0, p1, v2
+
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 6411
+    :cond_1
+    monitor-exit p0
+
+    return-object v1
+
+    .line 6414
+    :cond_2
+    monitor-exit p0
+
+    const/4 p0, 0x0
+
+    return-object p0
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+
+    throw p1
+.end method
+
+.method declared-synchronized getRawSavingPhotoRequest(I)Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "requestId"
+        }
+    .end annotation
+
+    monitor-enter p0
+
+    .line 6428
+    :try_start_0
+    iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRawCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :cond_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
+
+    .line 6429
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->getRequestId()I
+
+    move-result v2
+
+    if-ne v2, p1, :cond_0
+
+    .line 6430
+    sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    if-eqz p1, :cond_1
+
+    const/4 p1, 0x1
+
+    new-array p1, p1, [Ljava/lang/String;
+
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->dumpRequestQueueStatus()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/4 v2, 0x0
+
+    aput-object v0, p1, v2
+
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 6431
+    :cond_1
+    monitor-exit p0
+
+    return-object v1
+
+    .line 6434
+    :cond_2
+    monitor-exit p0
+
+    const/4 p0, 0x0
+
+    return-object p0
 
     :catchall_0
     move-exception p1
@@ -1707,7 +2474,7 @@
 
     monitor-enter p0
 
-    .line 6360
+    .line 6773
     :try_start_0
     iget v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRequestCountBetweenShutterDoneAndSnapshotDone:I
 
@@ -1738,7 +2505,7 @@
 
     monitor-enter p0
 
-    .line 6364
+    .line 6776
     :try_start_0
     iget v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRequestCountBetweenShutterDoneAndSnapshotDone:I
     :try_end_0
@@ -1756,304 +2523,22 @@
     throw v0
 .end method
 
-.method declared-synchronized peekJpegSavingPhotoRequest()Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
-    .locals 4
+.method declared-synchronized setImageSource(Ljp/co/sony/mc/camera/storage/PhotoSavingRequest$ImageSourceLifeCycleAdapter;I)Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "adapter",
+            "requestId"
+        }
+    .end annotation
 
     monitor-enter p0
 
-    .line 6061
-    :try_start_0
-    iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mJpegCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->peek()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
-
-    .line 6062
-    sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
-
-    if-eqz v1, :cond_0
-
-    const/4 v1, 0x1
-
-    new-array v1, v1, [Ljava/lang/String;
-
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->dumpRequestQueueStatus()Ljava/lang/String;
-
-    move-result-object v2
-
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
-
-    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 6063
-    :cond_0
-    monitor-exit p0
-
-    return-object v0
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
-.end method
-
-.method declared-synchronized peekLastJpegSavingPhotoRequest()Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
-    .locals 4
-
-    monitor-enter p0
-
-    .line 6049
-    :try_start_0
-    iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mJpegCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->peekLast()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
-
-    .line 6050
-    sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
-
-    if-eqz v1, :cond_0
-
-    const/4 v1, 0x1
-
-    new-array v1, v1, [Ljava/lang/String;
-
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->dumpRequestQueueStatus()Ljava/lang/String;
-
-    move-result-object v2
-
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
-
-    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 6051
-    :cond_0
-    monitor-exit p0
-
-    return-object v0
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
-.end method
-
-.method declared-synchronized peekLastRawSavingPhotoRequest()Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
-    .locals 4
-
-    monitor-enter p0
-
-    .line 6055
-    :try_start_0
-    iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRawCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->peekLast()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
-
-    .line 6056
-    sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
-
-    if-eqz v1, :cond_0
-
-    const/4 v1, 0x1
-
-    new-array v1, v1, [Ljava/lang/String;
-
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->dumpRequestQueueStatus()Ljava/lang/String;
-
-    move-result-object v2
-
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
-
-    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 6057
-    :cond_0
-    monitor-exit p0
-
-    return-object v0
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
-.end method
-
-.method declared-synchronized peekRawSavingPhotoRequest()Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
-    .locals 4
-
-    monitor-enter p0
-
-    .line 6067
-    :try_start_0
-    iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRawCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->peek()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
-
-    .line 6068
-    sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
-
-    if-eqz v1, :cond_0
-
-    const/4 v1, 0x1
-
-    new-array v1, v1, [Ljava/lang/String;
-
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->dumpRequestQueueStatus()Ljava/lang/String;
-
-    move-result-object v2
-
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
-
-    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 6069
-    :cond_0
-    monitor-exit p0
-
-    return-object v0
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
-.end method
-
-.method declared-synchronized removeLastJpeg()V
-    .locals 3
-
-    monitor-enter p0
-
-    .line 6335
-    :try_start_0
-    iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mJpegCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->removeLast()Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
-
-    .line 6336
-    sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    new-array v0, v0, [Ljava/lang/String;
-
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->dumpRequestQueueStatus()Ljava/lang/String;
-
-    move-result-object v1
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 6337
-    :cond_0
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
-.end method
-
-.method declared-synchronized removeLastRaw()V
-    .locals 3
-
-    monitor-enter p0
-
-    .line 6340
-    :try_start_0
-    iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mRawCaptureRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->removeLast()Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
-
-    .line 6341
-    sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    new-array v0, v0, [Ljava/lang/String;
-
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->dumpRequestQueueStatus()Ljava/lang/String;
-
-    move-result-object v1
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 6342
-    :cond_0
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
-.end method
-
-.method declared-synchronized setImageSource(Ljp/co/sony/mc/camera/storage/PhotoSavingRequest$ImageSourceLifeCycleAdapter;)Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
-    .locals 3
-
-    monitor-enter p0
-
-    .line 6075
+    .line 6440
     :try_start_0
     invoke-interface {p1}, Ljp/co/sony/mc/camera/storage/PhotoSavingRequest$ImageSourceLifeCycleAdapter;->getImageFormat()I
 
@@ -2063,26 +2548,26 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 6084
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->peekJpegSavingPhotoRequest()Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
+    .line 6449
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->getJpegSavingPhotoRequest(I)Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
 
-    move-result-object v0
+    move-result-object p2
 
     goto :goto_0
 
-    .line 6077
+    .line 6442
     :cond_0
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->peekRawSavingPhotoRequest()Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->getRawSavingPhotoRequest(I)Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
 
-    move-result-object v0
+    move-result-object p2
 
     :goto_0
-    if-eqz v0, :cond_1
+    if-eqz p2, :cond_1
 
-    .line 6088
-    invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->setImageSource(Ljp/co/sony/mc/camera/storage/PhotoSavingRequest$ImageSourceLifeCycleAdapter;)V
+    .line 6453
+    invoke-virtual {p2, p1}, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->setImageSource(Ljp/co/sony/mc/camera/storage/PhotoSavingRequest$ImageSourceLifeCycleAdapter;)V
 
-    .line 6090
+    .line 6455
     :cond_1
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
@@ -2094,21 +2579,21 @@
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->dumpRequestQueueStatus()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
-    aput-object v1, p1, v2
+    aput-object v0, p1, v1
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 6091
+    .line 6456
     :cond_2
     monitor-exit p0
 
-    return-object v0
+    return-object p2
 
     :catchall_0
     move-exception p1
@@ -2118,26 +2603,36 @@
     throw p1
 .end method
 
-.method setQueueingCountChangedListener(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$QueueingCountChangedListener;)V
+.method setIsOfflineSession(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isOfflineSession"
+        }
+    .end annotation
 
-    .line 6030
-    iput-object p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mQueueingCountChangedListener:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$QueueingCountChangedListener;
+    .line 6362
+    iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mIsOfflineSession:Z
 
     return-void
 .end method
 
-.method public snapshotLockCountDown()V
+.method setQueueingCountChangedListener(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$QueueingCountChangedListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "queueingCountChangedListener"
+        }
+    .end annotation
 
-    .line 6399
-    iget-object p0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mWaitForAllSnapshotLock:Ljava/util/concurrent/CountDownLatch;
+    .line 6358
+    iput-object p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->mQueueingCountChangedListener:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$QueueingCountChangedListener;
 
-    if-eqz p0, :cond_0
-
-    .line 6400
-    invoke-virtual {p0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
-
-    :cond_0
     return-void
 .end method

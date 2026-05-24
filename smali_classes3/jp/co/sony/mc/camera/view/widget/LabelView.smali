@@ -71,13 +71,13 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 183
+    .line 175
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 184
+    .line 176
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/LabelView;->label:Ljp/co/sony/mc/camera/view/uistate/ZoomLabel;
 
-    .line 185
+    .line 177
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/widget/LabelView;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;
 
     return-void
@@ -196,7 +196,7 @@
 .method public final getBinding()Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;
     .locals 0
 
-    .line 185
+    .line 177
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/LabelView;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;
 
     return-object p0
@@ -205,7 +205,7 @@
 .method public final getLabel()Ljp/co/sony/mc/camera/view/uistate/ZoomLabel;
     .locals 0
 
-    .line 184
+    .line 176
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/LabelView;->label:Ljp/co/sony/mc/camera/view/uistate/ZoomLabel;
 
     return-object p0

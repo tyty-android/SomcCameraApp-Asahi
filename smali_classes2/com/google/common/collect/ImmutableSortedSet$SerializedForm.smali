@@ -47,6 +47,17 @@
 # direct methods
 .method public constructor <init>(Ljava/util/Comparator;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "comparator",
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -57,13 +68,13 @@
         }
     .end annotation
 
-    .line 728
+    .line 774
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 729
+    .line 775
     iput-object p1, p0, Lcom/google/common/collect/ImmutableSortedSet$SerializedForm;->comparator:Ljava/util/Comparator;
 
-    .line 730
+    .line 776
     iput-object p2, p0, Lcom/google/common/collect/ImmutableSortedSet$SerializedForm;->elements:[Ljava/lang/Object;
 
     return-void
@@ -74,7 +85,7 @@
 .method readResolve()Ljava/lang/Object;
     .locals 2
 
-    .line 735
+    .line 781
     new-instance v0, Lcom/google/common/collect/ImmutableSortedSet$Builder;
 
     iget-object v1, p0, Lcom/google/common/collect/ImmutableSortedSet$SerializedForm;->comparator:Ljava/util/Comparator;

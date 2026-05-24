@@ -14,21 +14,29 @@
 # direct methods
 .method constructor <init>(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isCaptureReady"
+        }
+    .end annotation
 
-    .line 35
+    .line 34
     const-string v0, "StateVideoPauseRecording"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;-><init>(Ljava/lang/String;)V
 
-    .line 36
+    .line 35
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->mIsCaptureReady:Z
 
     const/4 p1, 0x0
 
-    .line 37
+    .line 36
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->mIsRequestStop:Z
 
-    .line 38
+    .line 37
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->mIsNeedFlush:Z
 
     return-void
@@ -38,8 +46,16 @@
 # virtual methods
 .method public entry(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
-    .line 46
+    .line 45
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->needStopObjectTracking()Z
 
     move-result v0
@@ -48,12 +64,12 @@
 
     const/4 v0, 0x0
 
-    .line 47
+    .line 46
     new-array v1, v0, [Ljava/lang/Object;
 
     invoke-virtual {p0, p1, v1}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->handleStopObjectTracking(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
 
-    .line 48
+    .line 47
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->setNeedStopObjectTracking(Z)V
 
     :cond_0
@@ -61,74 +77,89 @@
 .end method
 
 .method public varargs handleCameraClose(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
-    .locals 2
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
-    const/4 v0, 0x1
+    .line 56
+    iget-boolean p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->mIsCaptureReady:Z
 
-    .line 57
-    aget-object p2, p2, v0
-
-    check-cast p2, Ljava/lang/Boolean;
-
-    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result p2
-
-    .line 59
-    iget-boolean v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->mIsCaptureReady:Z
-
-    if-nez v1, :cond_0
+    if-nez p2, :cond_0
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->hasSnapshotRequest(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Z
 
-    move-result v1
+    move-result p2
 
-    if-eqz v1, :cond_0
+    if-eqz p2, :cond_0
 
-    .line 60
+    .line 57
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->cancelCaptureRequest()V
 
+    .line 59
     :cond_0
-    if-nez p2, :cond_1
-
-    .line 63
     new-instance p1, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoStopRecording;
 
     iget-boolean p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->mIsNeedFlush:Z
+
+    const/4 v0, 0x1
 
     invoke-direct {p1, p2, v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoStopRecording;-><init>(ZZ)V
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->setNextState(Ljp/co/sony/mc/camera/device/state/DeviceState;)V
 
-    goto :goto_0
+    return-void
+.end method
 
-    .line 65
-    :cond_1
-    new-instance p1, Ljp/co/sony/mc/camera/device/state/DeviceStateCameraClosing;
+.method public varargs handleCancelSelectedFace(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
-    const/4 v0, 0x0
+    .line 141
+    invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->cancelSelectedFace(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
 
-    invoke-direct {p1, v0, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateCameraClosing;-><init>(ZZ)V
-
-    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->setNextState(Ljp/co/sony/mc/camera/device/state/DeviceState;)V
-
-    :goto_0
     return-void
 .end method
 
 .method public varargs handleCapture(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 74
+    .line 67
     aget-object v1, p2, v0
 
     check-cast v1, Ljp/co/sony/mc/camera/device/SnapshotRequest;
 
     const/4 v2, 0x1
 
-    .line 75
+    .line 68
     aget-object v3, p2, v2
 
     check-cast v3, Ljava/lang/Boolean;
@@ -139,7 +170,7 @@
 
     const/4 v4, 0x2
 
-    .line 76
+    .line 69
     aget-object p2, p2, v4
 
     check-cast p2, Ljava/lang/Integer;
@@ -148,20 +179,20 @@
 
     move-result p2
 
-    .line 78
+    .line 71
     invoke-virtual {p1, v1, v3, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->setSavingSnapshotRequestInfo(Ljp/co/sony/mc/camera/device/SnapshotRequest;ZI)V
 
-    .line 80
+    .line 73
     iget-boolean v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->mIsCaptureReady:Z
 
     if-eqz v1, :cond_0
 
-    .line 81
+    .line 74
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->doCapture(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;I)V
 
     goto :goto_0
 
-    .line 89
+    .line 82
     :cond_0
     new-array p0, v2, [Ljava/lang/String;
 
@@ -177,8 +208,18 @@
 
 .method public varargs handleChangeSelectedFace(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
-    .line 140
+    .line 133
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->changeSelectedFace(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
 
     return-void
@@ -186,28 +227,38 @@
 
 .method public varargs handleForceFallbackOn(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
-    .line 276
+    .line 269
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->copyCaptureRequestHolder()Ljp/co/sony/mc/camera/device/CaptureRequestHolder;
 
     move-result-object p2
 
-    .line 278
+    .line 271
     sget-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_LOGICAL_MULTI_CAMERA_FALLBACK_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
 
     const/4 v1, 0x2
 
-    .line 279
+    .line 272
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
 
-    .line 278
+    .line 271
     invoke-virtual {p2, v0, v1}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
     const/4 v0, 0x0
 
-    .line 280
+    .line 273
     invoke-virtual {p0, p1, p2, v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->setOneTimeRequest(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Ljp/co/sony/mc/camera/device/CaptureRequestHolder;Ljava/lang/Object;)V
 
     return-void
@@ -215,15 +266,25 @@
 
 .method public varargs handleOnCaptureCompleted(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
-    .line 247
+    .line 240
     iget-boolean p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->mIsCaptureReady:Z
 
     if-nez p2, :cond_1
 
     const/4 p2, 0x1
 
-    .line 248
+    .line 241
     new-array v0, p2, [Ljava/lang/String;
 
     const-string v1, "ready to shoot."
@@ -234,35 +295,35 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 249
+    .line 242
     iput-boolean p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->mIsCaptureReady:Z
 
-    .line 250
+    .line 243
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getSnapshotRequestInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;
 
     move-result-object p2
 
     if-eqz p2, :cond_0
 
-    .line 252
+    .line 245
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->hasSnapshotRequest(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 253
+    .line 246
     iget p2, p2, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;->captureTemplate:I
 
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->doCapture(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;I)V
 
-    .line 257
+    .line 250
     :cond_0
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->mIsRequestStop:Z
 
     if-eqz p1, :cond_1
 
-    .line 258
+    .line 251
     new-instance p1, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoStopRecording;
 
     iget-boolean p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->mIsNeedFlush:Z
@@ -277,10 +338,20 @@
 
 .method public varargs handleOnExposureDone(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     const/4 p0, 0x0
 
-    .line 209
+    .line 210
     aget-object p0, p2, p0
 
     check-cast p0, Ljava/lang/Integer;
@@ -291,7 +362,7 @@
 
     const/4 v0, 0x1
 
-    .line 210
+    .line 211
     aget-object v0, p2, v0
 
     check-cast v0, Ljava/lang/Integer;
@@ -302,7 +373,7 @@
 
     const/4 v1, 0x2
 
-    .line 211
+    .line 212
     aget-object v1, p2, v1
 
     check-cast v1, Ljava/lang/Boolean;
@@ -313,17 +384,17 @@
 
     const/4 v2, 0x3
 
-    .line 212
+    .line 213
     aget-object p2, p2, v2
 
     check-cast p2, Ljp/co/sony/mc/camera/device/SnapshotRequest;
 
-    .line 213
+    .line 214
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;
 
     move-result-object p1
 
-    .line 214
+    .line 215
     invoke-interface {p1, p0, v0, v1, p2}, Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;->onShutterDone(IIZLjp/co/sony/mc/camera/device/SnapshotRequest;)V
 
     return-void
@@ -331,45 +402,69 @@
 
 .method public varargs handleOnObjectTracked(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public varargs handleOnObjectTrackingLost(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
-
-    return-void
-.end method
-
-.method public varargs handleOnReleaseImage(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
-    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public varargs handleOnTakePictureDone(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     const/4 p0, 0x0
 
-    .line 222
+    .line 223
     aget-object p0, p2, p0
 
     check-cast p0, Ljava/util/List;
 
     const/4 v0, 0x1
 
-    .line 223
+    .line 224
     aget-object p2, p2, v0
 
     check-cast p2, Ljp/co/sony/mc/camera/device/SnapshotRequest;
 
-    .line 225
+    .line 226
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;
 
     move-result-object v0
 
-    .line 226
+    .line 227
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;
 
     move-result-object v1
@@ -378,10 +473,10 @@
 
     move-result-object v1
 
-    .line 225
+    .line 226
     invoke-interface {v0, v1, p0, p2}, Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;->onCaptureDone(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Ljava/util/List;Ljp/co/sony/mc/camera/device/SnapshotRequest;)V
 
-    .line 229
+    .line 230
     new-instance p0, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getApplicationContext()Landroid/content/Context;
@@ -404,12 +499,12 @@
 
     invoke-direct {p1, p2}, Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus;-><init>(Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;)V
 
-    .line 230
+    .line 231
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;->put(Ljp/co/sony/mc/camera/status/CameraStatusValue;)Ljp/co/sony/mc/camera/status/CameraStatusPublisher;
 
     move-result-object p0
 
-    .line 231
+    .line 232
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/status/CameraStatusPublisher;->publish()V
 
     return-void
@@ -417,15 +512,25 @@
 
 .method public varargs handleResumeRecording(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
-    .line 149
+    .line 150
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getVideoRecorder()Ljp/co/sony/mc/camera/recorder/RecorderController;
 
     move-result-object p2
 
     if-eqz p2, :cond_0
 
-    .line 151
+    .line 152
     :try_start_0
     invoke-interface {p2}, Ljp/co/sony/mc/camera/recorder/RecorderController;->isPaused()Z
 
@@ -433,12 +538,10 @@
 
     if-eqz v0, :cond_0
 
-    const/4 v0, 0x0
-
-    .line 152
-    invoke-interface {p2, v0}, Ljp/co/sony/mc/camera/recorder/RecorderController;->resume(Z)V
-
     .line 153
+    invoke-interface {p2}, Ljp/co/sony/mc/camera/recorder/RecorderController;->resume()V
+
+    .line 154
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;
 
     move-result-object p1
@@ -455,7 +558,7 @@
 
     goto :goto_0
 
-    .line 156
+    .line 157
     :catch_0
     new-instance p0, Ljava/lang/RuntimeException;
 
@@ -465,7 +568,7 @@
 
     throw p0
 
-    .line 158
+    .line 159
     :cond_0
     :goto_0
     new-instance p1, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoRecording;
@@ -481,8 +584,18 @@
 
 .method public varargs handleStartObjectTracking(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
-    .line 98
+    .line 91
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->startObjectTracking(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
 
     return-void
@@ -490,8 +603,18 @@
 
 .method public varargs handleStopAudioRecording(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
-    .line 166
+    .line 167
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->stopAudioRecording(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
 
     return-void
@@ -499,15 +622,25 @@
 
 .method public varargs handleStopFaceDetection(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
-    .line 130
+    .line 123
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->removeFaceDetectionResultChecker()Z
 
     move-result p0
 
     if-nez p0, :cond_0
 
-    .line 131
+    .line 124
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_0
@@ -530,8 +663,18 @@
 
 .method public varargs handleStopObjectTracking(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
-    .line 122
+    .line 115
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->stopObjectTracking(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
 
     return-void
@@ -539,16 +682,36 @@
 
 .method public varargs handleStopPreview(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public varargs handleStopRecording(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 182
+    .line 183
     aget-object p2, p2, v0
 
     check-cast p2, Ljava/lang/Boolean;
@@ -557,7 +720,7 @@
 
     move-result p2
 
-    .line 184
+    .line 185
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->mIsCaptureReady:Z
 
     if-nez v0, :cond_0
@@ -570,15 +733,15 @@
 
     const/4 p1, 0x1
 
-    .line 186
+    .line 187
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->mIsRequestStop:Z
 
-    .line 187
+    .line 188
     iput-boolean p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->mIsNeedFlush:Z
 
     goto :goto_0
 
-    .line 189
+    .line 190
     :cond_0
     new-instance p1, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoStopRecording;
 
@@ -592,8 +755,18 @@
 
 .method public varargs handleUpdateRequest(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
-    .line 201
+    .line 202
     iget-boolean p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->mIsCaptureReady:Z
 
     xor-int/lit8 p2, p2, 0x1

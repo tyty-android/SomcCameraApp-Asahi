@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/controller/qrdetection/QrDetector$DetectRunnable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
     .line 216
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/qrdetection/QrDetector$DetectRunnable$1;->this$1:Ljp/co/sony/mc/camera/controller/qrdetection/QrDetector$DetectRunnable;

@@ -3,7 +3,7 @@
 .source "CameraSettings.java"
 
 # interfaces
-.implements Ljp/co/sony/mc/camera/setting/SettingsBase$IsTempChangedCommand;
+.implements Ljp/co/sony/mc/camera/setting/SettingsBase$GetDefaultCommand;
 
 
 # annotations
@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 3517
+    .line 3752
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,8 +29,19 @@
 
 
 # virtual methods
-.method public isTempChanged(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Z
+.method public getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -38,31 +49,30 @@
             ">(",
             "Ljp/co/sony/mc/camera/setting/SettingsBase;",
             "Ljp/co/sony/mc/camera/setting/SettingKey$Key<",
-            "TT;>;)Z"
+            "TT;>;)TT;"
         }
     .end annotation
 
-    .line 3521
-    check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
+    const/4 p0, 0x2
 
-    .line 3522
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetCaptureFps(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
+    .line 3756
+    new-array p0, p0, [Ljava/lang/Integer;
 
-    move-result-object p0
+    const/4 p1, 0x0
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCaptureFps(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object p1
+    move-result-object p2
 
-    if-eq p0, p1, :cond_0
+    aput-object p2, p0, p1
 
-    const/4 p0, 0x1
+    const/4 p1, 0x1
 
-    goto :goto_0
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    :cond_0
-    const/4 p0, 0x0
+    move-result-object p2
 
-    :goto_0
-    return p0
+    aput-object p2, p0, p1
+
+    return-object p0
 .end method

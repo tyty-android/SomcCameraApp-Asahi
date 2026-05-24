@@ -260,7 +260,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f070758
+    const v1, 0x7f070705
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -276,7 +276,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f070748
+    const v1, 0x7f0706f5
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -458,7 +458,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f1104e8
+    const v0, 0x7f110535
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -476,7 +476,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f1104e7
+    const v0, 0x7f110534
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -608,7 +608,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v0, 0x7f0904dd
+    const v0, 0x7f0904e0
 
     const/4 v1, 0x3
 
@@ -630,7 +630,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v0, 0x7f090399
+    const v0, 0x7f090398
 
     const/4 v1, 0x3
 

@@ -4,11 +4,14 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/common/collect/LinkedHashMultimap$ValueSet;,
         Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;,
-        Lcom/google/common/collect/LinkedHashMultimap$ValueSetLink;
+        Lcom/google/common/collect/LinkedHashMultimap$ValueSetLink;,
+        Lcom/google/common/collect/LinkedHashMultimap$ValueSet;
     }
 .end annotation
 
@@ -50,9 +53,19 @@
 
 # direct methods
 .method private constructor <init>(II)V
-    .locals 1
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "keyCapacity",
+            "valueSetCapacity"
+        }
+    .end annotation
 
-    .line 219
+    .line 262
     invoke-static {p1}, Lcom/google/common/collect/Platform;->newLinkedHashMapWithExpectedSize(I)Ljava/util/Map;
 
     move-result-object p1
@@ -61,29 +74,25 @@
 
     const/4 p1, 0x2
 
-    .line 215
+    .line 258
     iput p1, p0, Lcom/google/common/collect/LinkedHashMultimap;->valueSetCapacity:I
 
-    .line 220
+    .line 263
     const-string p1, "expectedValuesPerKey"
 
     invoke-static {p2, p1}, Lcom/google/common/collect/CollectPreconditions;->checkNonnegative(ILjava/lang/String;)I
 
-    .line 222
+    .line 265
     iput p2, p0, Lcom/google/common/collect/LinkedHashMultimap;->valueSetCapacity:I
 
-    .line 223
-    new-instance p1, Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;
+    .line 266
+    invoke-static {}, Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;->newHeader()Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;
 
-    const/4 p2, 0x0
-
-    const/4 v0, 0x0
-
-    invoke-direct {p1, p2, p2, v0, p2}, Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;-><init>(Ljava/lang/Object;Ljava/lang/Object;ILcom/google/common/collect/LinkedHashMultimap$ValueEntry;)V
+    move-result-object p1
 
     iput-object p1, p0, Lcom/google/common/collect/LinkedHashMultimap;->multimapHeaderEntry:Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;
 
-    .line 224
+    .line 267
     invoke-static {p1, p1}, Lcom/google/common/collect/LinkedHashMultimap;->succeedsInMultimap(Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;)V
 
     return-void
@@ -92,7 +101,7 @@
 .method static synthetic access$200(Lcom/google/common/collect/LinkedHashMultimap$ValueSetLink;Lcom/google/common/collect/LinkedHashMultimap$ValueSetLink;)V
     .locals 0
 
-    .line 77
+    .line 84
     invoke-static {p0, p1}, Lcom/google/common/collect/LinkedHashMultimap;->succeedsInValueSet(Lcom/google/common/collect/LinkedHashMultimap$ValueSetLink;Lcom/google/common/collect/LinkedHashMultimap$ValueSetLink;)V
 
     return-void
@@ -101,7 +110,7 @@
 .method static synthetic access$300(Lcom/google/common/collect/LinkedHashMultimap;)Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;
     .locals 0
 
-    .line 77
+    .line 84
     iget-object p0, p0, Lcom/google/common/collect/LinkedHashMultimap;->multimapHeaderEntry:Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;
 
     return-object p0
@@ -110,7 +119,7 @@
 .method static synthetic access$400(Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;)V
     .locals 0
 
-    .line 77
+    .line 84
     invoke-static {p0, p1}, Lcom/google/common/collect/LinkedHashMultimap;->succeedsInMultimap(Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;)V
 
     return-void
@@ -119,7 +128,7 @@
 .method static synthetic access$500(Lcom/google/common/collect/LinkedHashMultimap$ValueSetLink;)V
     .locals 0
 
-    .line 77
+    .line 84
     invoke-static {p0}, Lcom/google/common/collect/LinkedHashMultimap;->deleteFromValueSet(Lcom/google/common/collect/LinkedHashMultimap$ValueSetLink;)V
 
     return-void
@@ -128,7 +137,7 @@
 .method static synthetic access$600(Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;)V
     .locals 0
 
-    .line 77
+    .line 84
     invoke-static {p0}, Lcom/google/common/collect/LinkedHashMultimap;->deleteFromMultimap(Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;)V
 
     return-void
@@ -148,7 +157,7 @@
         }
     .end annotation
 
-    .line 82
+    .line 90
     new-instance v0, Lcom/google/common/collect/LinkedHashMultimap;
 
     const/16 v1, 0x10
@@ -162,6 +171,17 @@
 
 .method public static create(II)Lcom/google/common/collect/LinkedHashMultimap;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "expectedKeys",
+            "expectedValuesPerKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -174,10 +194,10 @@
         }
     .end annotation
 
-    .line 95
+    .line 104
     new-instance v0, Lcom/google/common/collect/LinkedHashMultimap;
 
-    .line 96
+    .line 105
     invoke-static {p0}, Lcom/google/common/collect/Maps;->capacity(I)I
 
     move-result p0
@@ -193,6 +213,15 @@
 
 .method public static create(Lcom/google/common/collect/Multimap;)Lcom/google/common/collect/LinkedHashMultimap;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "multimap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -207,7 +236,7 @@
         }
     .end annotation
 
-    .line 109
+    .line 118
     invoke-interface {p0}, Lcom/google/common/collect/Multimap;->keySet()Ljava/util/Set;
 
     move-result-object v0
@@ -222,7 +251,7 @@
 
     move-result-object v0
 
-    .line 110
+    .line 119
     invoke-virtual {v0, p0}, Lcom/google/common/collect/LinkedHashMultimap;->putAll(Lcom/google/common/collect/Multimap;)Z
 
     return-object v0
@@ -230,6 +259,15 @@
 
 .method private static deleteFromMultimap(Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "entry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -242,7 +280,7 @@
         }
     .end annotation
 
-    .line 139
+    .line 152
     invoke-virtual {p0}, Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;->getPredecessorInMultimap()Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;
 
     move-result-object v0
@@ -258,6 +296,15 @@
 
 .method private static deleteFromValueSet(Lcom/google/common/collect/LinkedHashMultimap$ValueSetLink;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "entry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -270,7 +317,7 @@
         }
     .end annotation
 
-    .line 135
+    .line 147
     invoke-interface {p0}, Lcom/google/common/collect/LinkedHashMultimap$ValueSetLink;->getPredecessorInValueSet()Lcom/google/common/collect/LinkedHashMultimap$ValueSetLink;
 
     move-result-object v0
@@ -286,6 +333,15 @@
 
 .method private readObject(Ljava/io/ObjectInputStream;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stream"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -293,51 +349,49 @@
         }
     .end annotation
 
-    .line 566
+    .line 614
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->defaultReadObject()V
 
-    .line 567
-    new-instance v0, Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;
+    .line 615
+    invoke-static {}, Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;->newHeader()Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;
 
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    invoke-direct {v0, v1, v1, v2, v1}, Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;-><init>(Ljava/lang/Object;Ljava/lang/Object;ILcom/google/common/collect/LinkedHashMultimap$ValueEntry;)V
+    move-result-object v0
 
     iput-object v0, p0, Lcom/google/common/collect/LinkedHashMultimap;->multimapHeaderEntry:Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;
 
-    .line 568
+    .line 616
     invoke-static {v0, v0}, Lcom/google/common/collect/LinkedHashMultimap;->succeedsInMultimap(Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;)V
 
     const/4 v0, 0x2
 
-    .line 569
+    .line 617
     iput v0, p0, Lcom/google/common/collect/LinkedHashMultimap;->valueSetCapacity:I
 
-    .line 570
+    .line 618
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readInt()I
 
     move-result v0
 
     const/16 v1, 0xc
 
-    .line 571
+    .line 619
     invoke-static {v1}, Lcom/google/common/collect/Platform;->newLinkedHashMapWithExpectedSize(I)Ljava/util/Map;
 
     move-result-object v1
+
+    const/4 v2, 0x0
 
     move v3, v2
 
     :goto_0
     if-ge v3, v0, :cond_0
 
-    .line 574
+    .line 622
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readObject()Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 575
+    .line 623
     invoke-virtual {p0, v4}, Lcom/google/common/collect/LinkedHashMultimap;->createCollection(Ljava/lang/Object;)Ljava/util/Collection;
 
     move-result-object v5
@@ -348,7 +402,7 @@
 
     goto :goto_0
 
-    .line 577
+    .line 625
     :cond_0
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readInt()I
 
@@ -357,18 +411,24 @@
     :goto_1
     if-ge v2, v0, :cond_1
 
-    .line 580
+    .line 628
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readObject()Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 582
+    .line 630
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readObject()Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 583
+    .line 635
     invoke-interface {v1, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/util/Collection;
+
+    invoke-static {v3}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -380,7 +440,7 @@
 
     goto :goto_1
 
-    .line 585
+    .line 637
     :cond_1
     invoke-virtual {p0, v1}, Lcom/google/common/collect/LinkedHashMultimap;->setMap(Ljava/util/Map;)V
 
@@ -389,6 +449,17 @@
 
 .method private static succeedsInMultimap(Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "pred",
+            "succ"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -403,10 +474,10 @@
         }
     .end annotation
 
-    .line 130
+    .line 141
     invoke-virtual {p0, p1}, Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;->setSuccessorInMultimap(Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;)V
 
-    .line 131
+    .line 142
     invoke-virtual {p1, p0}, Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;->setPredecessorInMultimap(Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;)V
 
     return-void
@@ -414,6 +485,17 @@
 
 .method private static succeedsInValueSet(Lcom/google/common/collect/LinkedHashMultimap$ValueSetLink;Lcom/google/common/collect/LinkedHashMultimap$ValueSetLink;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "pred",
+            "succ"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -428,10 +510,10 @@
         }
     .end annotation
 
-    .line 125
+    .line 135
     invoke-interface {p0, p1}, Lcom/google/common/collect/LinkedHashMultimap$ValueSetLink;->setSuccessorInValueSet(Lcom/google/common/collect/LinkedHashMultimap$ValueSetLink;)V
 
-    .line 126
+    .line 136
     invoke-interface {p1, p0}, Lcom/google/common/collect/LinkedHashMultimap$ValueSetLink;->setPredecessorInValueSet(Lcom/google/common/collect/LinkedHashMultimap$ValueSetLink;)V
 
     return-void
@@ -439,16 +521,25 @@
 
 .method private writeObject(Ljava/io/ObjectOutputStream;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stream"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 552
+    .line 599
     invoke-virtual {p1}, Ljava/io/ObjectOutputStream;->defaultWriteObject()V
 
-    .line 553
+    .line 600
     invoke-virtual {p0}, Lcom/google/common/collect/LinkedHashMultimap;->keySet()Ljava/util/Set;
 
     move-result-object v0
@@ -459,7 +550,7 @@
 
     invoke-virtual {p1, v0}, Ljava/io/ObjectOutputStream;->writeInt(I)V
 
-    .line 554
+    .line 601
     invoke-virtual {p0}, Lcom/google/common/collect/LinkedHashMultimap;->keySet()Ljava/util/Set;
 
     move-result-object v0
@@ -479,12 +570,12 @@
 
     move-result-object v1
 
-    .line 555
+    .line 602
     invoke-virtual {p1, v1}, Ljava/io/ObjectOutputStream;->writeObject(Ljava/lang/Object;)V
 
     goto :goto_0
 
-    .line 557
+    .line 604
     :cond_0
     invoke-virtual {p0}, Lcom/google/common/collect/LinkedHashMultimap;->size()I
 
@@ -492,7 +583,7 @@
 
     invoke-virtual {p1, v0}, Ljava/io/ObjectOutputStream;->writeInt(I)V
 
-    .line 558
+    .line 605
     invoke-virtual {p0}, Lcom/google/common/collect/LinkedHashMultimap;->entries()Ljava/util/Set;
 
     move-result-object p0
@@ -514,14 +605,14 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 559
+    .line 606
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v1
 
     invoke-virtual {p1, v1}, Ljava/io/ObjectOutputStream;->writeObject(Ljava/lang/Object;)V
 
-    .line 560
+    .line 607
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v0
@@ -539,7 +630,7 @@
 .method public bridge synthetic asMap()Ljava/util/Map;
     .locals 0
 
-    .line 76
+    .line 82
     invoke-super {p0}, Lcom/google/common/collect/LinkedHashMultimapGwtSerializationDependencies;->asMap()Ljava/util/Map;
 
     move-result-object p0
@@ -550,10 +641,10 @@
 .method public clear()V
     .locals 0
 
-    .line 542
+    .line 588
     invoke-super {p0}, Lcom/google/common/collect/LinkedHashMultimapGwtSerializationDependencies;->clear()V
 
-    .line 543
+    .line 589
     iget-object p0, p0, Lcom/google/common/collect/LinkedHashMultimap;->multimapHeaderEntry:Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;
 
     invoke-static {p0, p0}, Lcom/google/common/collect/LinkedHashMultimap;->succeedsInMultimap(Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;Lcom/google/common/collect/LinkedHashMultimap$ValueEntry;)V
@@ -564,15 +655,25 @@
 .method public bridge synthetic containsEntry(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
-    .line 76
+    .line 82
     invoke-super {p0, p1, p2}, Lcom/google/common/collect/LinkedHashMultimapGwtSerializationDependencies;->containsEntry(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p0
@@ -583,11 +684,19 @@
 .method public bridge synthetic containsKey(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 76
+    .line 82
     invoke-super {p0, p1}, Lcom/google/common/collect/LinkedHashMultimapGwtSerializationDependencies;->containsKey(Ljava/lang/Object;)Z
 
     move-result p0
@@ -598,11 +707,19 @@
 .method public bridge synthetic containsValue(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 76
+    .line 82
     invoke-super {p0, p1}, Lcom/google/common/collect/LinkedHashMultimapGwtSerializationDependencies;->containsValue(Ljava/lang/Object;)Z
 
     move-result p0
@@ -613,7 +730,7 @@
 .method bridge synthetic createCollection()Ljava/util/Collection;
     .locals 0
 
-    .line 76
+    .line 82
     invoke-virtual {p0}, Lcom/google/common/collect/LinkedHashMultimap;->createCollection()Ljava/util/Set;
 
     move-result-object p0
@@ -623,6 +740,19 @@
 
 .method createCollection(Ljava/lang/Object;)Ljava/util/Collection;
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -631,7 +761,7 @@
         }
     .end annotation
 
-    .line 250
+    .line 293
     new-instance v0, Lcom/google/common/collect/LinkedHashMultimap$ValueSet;
 
     iget v1, p0, Lcom/google/common/collect/LinkedHashMultimap;->valueSetCapacity:I
@@ -651,7 +781,7 @@
         }
     .end annotation
 
-    .line 236
+    .line 279
     iget p0, p0, Lcom/google/common/collect/LinkedHashMultimap;->valueSetCapacity:I
 
     invoke-static {p0}, Lcom/google/common/collect/Platform;->newLinkedHashSetWithExpectedSize(I)Ljava/util/Set;
@@ -664,7 +794,7 @@
 .method public bridge synthetic entries()Ljava/util/Collection;
     .locals 0
 
-    .line 76
+    .line 82
     invoke-virtual {p0}, Lcom/google/common/collect/LinkedHashMultimap;->entries()Ljava/util/Set;
 
     move-result-object p0
@@ -683,7 +813,7 @@
         }
     .end annotation
 
-    .line 279
+    .line 322
     invoke-super {p0}, Lcom/google/common/collect/LinkedHashMultimapGwtSerializationDependencies;->entries()Ljava/util/Set;
 
     move-result-object p0
@@ -702,7 +832,7 @@
         }
     .end annotation
 
-    .line 506
+    .line 552
     new-instance v0, Lcom/google/common/collect/LinkedHashMultimap$1;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/LinkedHashMultimap$1;-><init>(Lcom/google/common/collect/LinkedHashMultimap;)V
@@ -713,11 +843,19 @@
 .method public bridge synthetic equals(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 76
+    .line 82
     invoke-super {p0, p1}, Lcom/google/common/collect/LinkedHashMultimapGwtSerializationDependencies;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -728,11 +866,19 @@
 .method public bridge synthetic get(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 76
+    .line 82
     invoke-super {p0, p1}, Lcom/google/common/collect/LinkedHashMultimapGwtSerializationDependencies;->get(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object p0
@@ -743,7 +889,7 @@
 .method public bridge synthetic hashCode()I
     .locals 0
 
-    .line 76
+    .line 82
     invoke-super {p0}, Lcom/google/common/collect/LinkedHashMultimapGwtSerializationDependencies;->hashCode()I
 
     move-result p0
@@ -754,7 +900,7 @@
 .method public bridge synthetic isEmpty()Z
     .locals 0
 
-    .line 76
+    .line 82
     invoke-super {p0}, Lcom/google/common/collect/LinkedHashMultimapGwtSerializationDependencies;->isEmpty()Z
 
     move-result p0
@@ -772,7 +918,7 @@
         }
     .end annotation
 
-    .line 294
+    .line 337
     invoke-super {p0}, Lcom/google/common/collect/LinkedHashMultimapGwtSerializationDependencies;->keySet()Ljava/util/Set;
 
     move-result-object p0
@@ -783,7 +929,7 @@
 .method public bridge synthetic keys()Lcom/google/common/collect/Multiset;
     .locals 0
 
-    .line 76
+    .line 82
     invoke-super {p0}, Lcom/google/common/collect/LinkedHashMultimapGwtSerializationDependencies;->keys()Lcom/google/common/collect/Multiset;
 
     move-result-object p0
@@ -794,15 +940,25 @@
 .method public bridge synthetic put(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
-    .line 76
+    .line 82
     invoke-super {p0, p1, p2}, Lcom/google/common/collect/LinkedHashMultimapGwtSerializationDependencies;->put(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p0
@@ -812,8 +968,16 @@
 
 .method public bridge synthetic putAll(Lcom/google/common/collect/Multimap;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "multimap"
+        }
+    .end annotation
 
-    .line 76
+    .line 82
     invoke-super {p0, p1}, Lcom/google/common/collect/LinkedHashMultimapGwtSerializationDependencies;->putAll(Lcom/google/common/collect/Multimap;)Z
 
     move-result p0
@@ -824,11 +988,21 @@
 .method public bridge synthetic putAll(Ljava/lang/Object;Ljava/lang/Iterable;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "key",
+            "values"
+        }
+    .end annotation
 
-    .line 76
+    .line 82
     invoke-super {p0, p1, p2}, Lcom/google/common/collect/LinkedHashMultimapGwtSerializationDependencies;->putAll(Ljava/lang/Object;Ljava/lang/Iterable;)Z
 
     move-result p0
@@ -839,15 +1013,25 @@
 .method public bridge synthetic remove(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
-    .line 76
+    .line 82
     invoke-super {p0, p1, p2}, Lcom/google/common/collect/LinkedHashMultimapGwtSerializationDependencies;->remove(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p0
@@ -858,11 +1042,19 @@
 .method public bridge synthetic removeAll(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 76
+    .line 82
     invoke-super {p0, p1}, Lcom/google/common/collect/LinkedHashMultimapGwtSerializationDependencies;->removeAll(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object p0
@@ -873,11 +1065,21 @@
 .method public bridge synthetic replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/Collection;
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "key",
+            "values"
+        }
+    .end annotation
 
-    .line 76
+    .line 82
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/LinkedHashMultimap;->replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/Set;
 
     move-result-object p0
@@ -888,9 +1090,20 @@
 .method public replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/Set;
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "values"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;",
@@ -901,7 +1114,7 @@
         }
     .end annotation
 
-    .line 263
+    .line 306
     invoke-super {p0, p1, p2}, Lcom/google/common/collect/LinkedHashMultimapGwtSerializationDependencies;->replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/Set;
 
     move-result-object p0
@@ -912,7 +1125,7 @@
 .method public bridge synthetic size()I
     .locals 0
 
-    .line 76
+    .line 82
     invoke-super {p0}, Lcom/google/common/collect/LinkedHashMultimapGwtSerializationDependencies;->size()I
 
     move-result p0
@@ -923,7 +1136,7 @@
 .method public bridge synthetic toString()Ljava/lang/String;
     .locals 0
 
-    .line 76
+    .line 82
     invoke-super {p0}, Lcom/google/common/collect/LinkedHashMultimapGwtSerializationDependencies;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -941,7 +1154,7 @@
         }
     .end annotation
 
-    .line 537
+    .line 583
     invoke-virtual {p0}, Lcom/google/common/collect/LinkedHashMultimap;->entryIterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -963,7 +1176,7 @@
         }
     .end annotation
 
-    .line 306
+    .line 349
     invoke-super {p0}, Lcom/google/common/collect/LinkedHashMultimapGwtSerializationDependencies;->values()Ljava/util/Collection;
 
     move-result-object p0

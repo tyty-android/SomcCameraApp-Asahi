@@ -4,13 +4,16 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/hash/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation runtime Lcom/google/errorprone/annotations/Immutable;
 .end annotation
 
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/common/hash/AbstractNonStreamingHashFunction$ExposedByteArrayOutputStream;,
-        Lcom/google/common/hash/AbstractNonStreamingHashFunction$BufferingHasher;
+        Lcom/google/common/hash/AbstractNonStreamingHashFunction$BufferingHasher;,
+        Lcom/google/common/hash/AbstractNonStreamingHashFunction$ExposedByteArrayOutputStream;
     }
 .end annotation
 
@@ -19,7 +22,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 33
+    .line 34
     invoke-direct {p0}, Lcom/google/common/hash/AbstractHashFunction;-><init>()V
 
     return-void
@@ -29,8 +32,16 @@
 # virtual methods
 .method public hashBytes(Ljava/nio/ByteBuffer;)Lcom/google/common/hash/HashCode;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "input"
+        }
+    .end annotation
 
-    .line 75
+    .line 76
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->remaining()I
 
     move-result v0
@@ -51,14 +62,34 @@
 .end method
 
 .method public abstract hashBytes([BII)Lcom/google/common/hash/HashCode;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "input",
+            "off",
+            "len"
+        }
+    .end annotation
 .end method
 
 .method public hashInt(I)Lcom/google/common/hash/HashCode;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "input"
+        }
+    .end annotation
 
     const/4 v0, 0x4
 
-    .line 47
+    .line 48
     invoke-static {v0}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
     move-result-object v0
@@ -86,10 +117,18 @@
 
 .method public hashLong(J)Lcom/google/common/hash/HashCode;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "input"
+        }
+    .end annotation
 
     const/16 v0, 0x8
 
-    .line 52
+    .line 53
     invoke-static {v0}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
     move-result-object v0
@@ -117,8 +156,18 @@
 
 .method public hashString(Ljava/lang/CharSequence;Ljava/nio/charset/Charset;)Lcom/google/common/hash/HashCode;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "input",
+            "charset"
+        }
+    .end annotation
 
-    .line 67
+    .line 68
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -136,15 +185,23 @@
 
 .method public hashUnencodedChars(Ljava/lang/CharSequence;)Lcom/google/common/hash/HashCode;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "input"
+        }
+    .end annotation
 
-    .line 57
+    .line 58
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
     move-result v0
 
     mul-int/lit8 v1, v0, 0x2
 
-    .line 58
+    .line 59
     invoke-static {v1}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
     move-result-object v1
@@ -160,7 +217,7 @@
     :goto_0
     if-ge v2, v0, :cond_0
 
-    .line 60
+    .line 61
     invoke-interface {p1, v2}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v3
@@ -171,7 +228,7 @@
 
     goto :goto_0
 
-    .line 62
+    .line 63
     :cond_0
     invoke-virtual {v1}, Ljava/nio/ByteBuffer;->array()[B
 
@@ -189,7 +246,7 @@
 
     const/16 v0, 0x20
 
-    .line 36
+    .line 37
     invoke-virtual {p0, v0}, Lcom/google/common/hash/AbstractNonStreamingHashFunction;->newHasher(I)Lcom/google/common/hash/Hasher;
 
     move-result-object p0
@@ -199,6 +256,14 @@
 
 .method public newHasher(I)Lcom/google/common/hash/Hasher;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "expectedInputSize"
+        }
+    .end annotation
 
     if-ltz p1, :cond_0
 
@@ -209,11 +274,11 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 41
+    .line 42
     :goto_0
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 42
+    .line 43
     new-instance v0, Lcom/google/common/hash/AbstractNonStreamingHashFunction$BufferingHasher;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/hash/AbstractNonStreamingHashFunction$BufferingHasher;-><init>(Lcom/google/common/hash/AbstractNonStreamingHashFunction;I)V

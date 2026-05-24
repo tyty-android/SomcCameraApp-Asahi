@@ -40,7 +40,7 @@
 .method private static synthetic $values()[Lcom/google/common/collect/SortedLists$KeyPresentBehavior;
     .locals 5
 
-    .line 46
+    .line 47
     sget-object v0, Lcom/google/common/collect/SortedLists$KeyPresentBehavior;->ANY_PRESENT:Lcom/google/common/collect/SortedLists$KeyPresentBehavior;
 
     sget-object v1, Lcom/google/common/collect/SortedLists$KeyPresentBehavior;->LAST_PRESENT:Lcom/google/common/collect/SortedLists$KeyPresentBehavior;
@@ -61,7 +61,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 51
+    .line 52
     new-instance v0, Lcom/google/common/collect/SortedLists$KeyPresentBehavior$1;
 
     const-string v1, "ANY_PRESENT"
@@ -72,7 +72,7 @@
 
     sput-object v0, Lcom/google/common/collect/SortedLists$KeyPresentBehavior;->ANY_PRESENT:Lcom/google/common/collect/SortedLists$KeyPresentBehavior;
 
-    .line 59
+    .line 63
     new-instance v0, Lcom/google/common/collect/SortedLists$KeyPresentBehavior$2;
 
     const-string v1, "LAST_PRESENT"
@@ -83,7 +83,7 @@
 
     sput-object v0, Lcom/google/common/collect/SortedLists$KeyPresentBehavior;->LAST_PRESENT:Lcom/google/common/collect/SortedLists$KeyPresentBehavior;
 
-    .line 81
+    .line 88
     new-instance v0, Lcom/google/common/collect/SortedLists$KeyPresentBehavior$3;
 
     const-string v1, "FIRST_PRESENT"
@@ -94,7 +94,7 @@
 
     sput-object v0, Lcom/google/common/collect/SortedLists$KeyPresentBehavior;->FIRST_PRESENT:Lcom/google/common/collect/SortedLists$KeyPresentBehavior;
 
-    .line 107
+    .line 117
     new-instance v0, Lcom/google/common/collect/SortedLists$KeyPresentBehavior$4;
 
     const-string v1, "FIRST_AFTER"
@@ -105,7 +105,7 @@
 
     sput-object v0, Lcom/google/common/collect/SortedLists$KeyPresentBehavior;->FIRST_AFTER:Lcom/google/common/collect/SortedLists$KeyPresentBehavior;
 
-    .line 118
+    .line 131
     new-instance v0, Lcom/google/common/collect/SortedLists$KeyPresentBehavior$5;
 
     const-string v1, "LAST_BEFORE"
@@ -116,7 +116,7 @@
 
     sput-object v0, Lcom/google/common/collect/SortedLists$KeyPresentBehavior;->LAST_BEFORE:Lcom/google/common/collect/SortedLists$KeyPresentBehavior;
 
-    .line 46
+    .line 47
     invoke-static {}, Lcom/google/common/collect/SortedLists$KeyPresentBehavior;->$values()[Lcom/google/common/collect/SortedLists$KeyPresentBehavior;
 
     move-result-object v0
@@ -128,13 +128,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 46
+    .line 47
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -143,7 +154,7 @@
 .method synthetic constructor <init>(Ljava/lang/String;ILcom/google/common/collect/SortedLists$1;)V
     .locals 0
 
-    .line 46
+    .line 47
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/SortedLists$KeyPresentBehavior;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -151,8 +162,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/collect/SortedLists$KeyPresentBehavior;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 46
+    .line 47
     const-class v0, Lcom/google/common/collect/SortedLists$KeyPresentBehavior;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -167,7 +186,7 @@
 .method public static values()[Lcom/google/common/collect/SortedLists$KeyPresentBehavior;
     .locals 1
 
-    .line 46
+    .line 47
     sget-object v0, Lcom/google/common/collect/SortedLists$KeyPresentBehavior;->$VALUES:[Lcom/google/common/collect/SortedLists$KeyPresentBehavior;
 
     invoke-virtual {v0}, [Lcom/google/common/collect/SortedLists$KeyPresentBehavior;->clone()Ljava/lang/Object;
@@ -182,6 +201,25 @@
 
 # virtual methods
 .method abstract resultIndex(Ljava/util/Comparator;Ljava/lang/Object;Ljava/util/List;I)I
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "comparator",
+            "key",
+            "list",
+            "foundIndex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",

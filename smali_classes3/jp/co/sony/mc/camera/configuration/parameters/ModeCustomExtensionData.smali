@@ -67,6 +67,14 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "in"
+        }
+    .end annotation
 
     .line 41
     invoke-direct {p0}, Ljp/co/sony/mc/camera/configuration/parameters/ExtensionData;-><init>()V
@@ -174,6 +182,17 @@
 
 .method public constructor <init>(Ljava/util/List;Ljava/util/List;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "commonModeList",
+            "moreModeList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -285,16 +304,11 @@
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 125
-    sget-object v2, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;->LIVE_STREAMING:Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;
-
-    invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 126
     sget-object v2, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;->PANORAMA:Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 128
+    .line 127
     new-instance v2, Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;
 
     invoke-direct {v2, v0, v1}, Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;-><init>(Ljava/util/List;Ljava/util/List;)V
@@ -306,6 +320,14 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -425,6 +447,16 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dest",
+            "flags"
+        }
+    .end annotation
 
     .line 72
     new-instance p2, Ljava/util/ArrayList;

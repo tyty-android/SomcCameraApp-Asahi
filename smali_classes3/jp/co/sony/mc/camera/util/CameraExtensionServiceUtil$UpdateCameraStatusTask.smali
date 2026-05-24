@@ -26,6 +26,16 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/util/CameraExtensionServiceUtil;Landroid/content/ContentValues;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "contentValues"
+        }
+    .end annotation
 
     .line 138
     iput-object p1, p0, Ljp/co/sony/mc/camera/util/CameraExtensionServiceUtil$UpdateCameraStatusTask;->this$0:Ljp/co/sony/mc/camera/util/CameraExtensionServiceUtil;

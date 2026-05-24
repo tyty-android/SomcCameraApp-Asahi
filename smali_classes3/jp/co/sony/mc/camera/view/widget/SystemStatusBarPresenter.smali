@@ -88,6 +88,18 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/databinding/FragmentProModeSystemStatusBarBinding;Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;Landroidx/lifecycle/LifecycleOwner;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "binding",
+            "viewFinderUiState",
+            "lifecycleOwner"
+        }
+    .end annotation
 
     .line 113
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -109,7 +121,7 @@
 
     move-result-object p1
 
-    const v1, 0x7f0c012c
+    const v1, 0x7f0c0126
 
     const/4 v2, 0x0
 
@@ -140,6 +152,16 @@
 
 .method private applySettingsToViews(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "holder",
+            "changedKeyName"
+        }
+    .end annotation
 
     .line 204
     sget-object p1, Ljp/co/sony/mc/camera/setting/CameraSettings;->COLOR_TONE_PROFILE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -255,6 +277,14 @@
 
 .method private createFreeSpaceText(J)Ljava/lang/String;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "bytes"
+        }
+    .end annotation
 
     const-wide/32 v0, 0xf4240
 
@@ -262,7 +292,7 @@
 
     if-ltz v2, :cond_0
 
-    const v2, 0x7f1102aa
+    const v2, 0x7f1102f3
 
     goto :goto_0
 
@@ -273,22 +303,22 @@
 
     if-ltz v2, :cond_1
 
-    const v2, 0x7f1102ac
+    const v2, 0x7f1102f5
 
     goto :goto_0
 
     :cond_1
     const-wide/16 v0, 0x1
 
-    const v2, 0x7f1102ab
+    const v2, 0x7f1102f4
 
-    .line 785
+    .line 784
     :goto_0
     div-long v3, p1, v0
 
     long-to-int v3, v3
 
-    .line 786
+    .line 785
     invoke-static {v3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object v3
@@ -301,26 +331,26 @@
 
     if-lt v3, v4, :cond_2
 
-    .line 788
+    .line 787
     sget-object v3, Ljava/math/RoundingMode;->DOWN:Ljava/math/RoundingMode;
 
     const/4 v4, 0x0
 
     goto :goto_1
 
-    .line 791
+    .line 790
     :cond_2
     sget-object v3, Ljava/math/RoundingMode;->HALF_UP:Ljava/math/RoundingMode;
 
     const/4 v4, 0x1
 
-    .line 794
+    .line 793
     :goto_1
     invoke-static {p1, p2}, Ljava/math/BigDecimal;->valueOf(J)Ljava/math/BigDecimal;
 
     move-result-object p1
 
-    .line 795
+    .line 794
     invoke-static {v0, v1}, Ljava/math/BigDecimal;->valueOf(J)Ljava/math/BigDecimal;
 
     move-result-object p2
@@ -329,7 +359,7 @@
 
     move-result-object p1
 
-    .line 796
+    .line 795
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->getContext()Landroid/content/Context;
 
     move-result-object p0
@@ -338,7 +368,7 @@
 
     move-result-object p0
 
-    .line 798
+    .line 797
     new-instance p2, Ljava/lang/StringBuilder;
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
@@ -394,8 +424,20 @@
 
 .method private hasEnoughFreeSpace(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/Storage$StorageState;Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "state",
+            "destination"
+        }
+    .end annotation
 
-    .line 803
+    .line 802
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;->getType()Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
     move-result-object p0
@@ -406,7 +448,7 @@
 
     if-ne p0, p1, :cond_1
 
-    .line 804
+    .line 803
     sget-object p0, Ljp/co/sony/mc/camera/storage/Storage$StorageState;->AVAILABLE:Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
     if-ne p2, p0, :cond_0
@@ -416,7 +458,7 @@
     :cond_0
     return p3
 
-    .line 806
+    .line 805
     :cond_1
     sget-object p0, Ljp/co/sony/mc/camera/storage/Storage$StorageState;->AVAILABLE:Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
@@ -436,12 +478,12 @@
 .method private isDisplayModeHidden()Z
     .locals 3
 
-    .line 811
+    .line 810
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p0
 
-    .line 812
+    .line 811
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->DISPLAY_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -450,7 +492,7 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
 
-    .line 814
+    .line 813
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object v1
@@ -461,7 +503,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 815
+    .line 814
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRO_VIDEO_DISP_CUSTOM_EXTENSION_DATA:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -472,7 +514,7 @@
 
     goto :goto_0
 
-    .line 817
+    .line 816
     :cond_0
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->DISP_CUSTOM_EXTENSION_DATA:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -482,7 +524,7 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
 
-    .line 819
+    .line 818
     :goto_0
     sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_MAGNIFICATION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -492,7 +534,7 @@
 
     check-cast p0, Ljp/co/sony/mc/camera/configuration/parameters/FocusMagnification;
 
-    .line 821
+    .line 820
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;->HIDDEN:Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
 
     if-eq v0, v2, :cond_2
@@ -507,7 +549,7 @@
 
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/DispCustom;->HEADER:Ljp/co/sony/mc/camera/configuration/parameters/DispCustom;
 
-    .line 822
+    .line 821
     invoke-virtual {v1, p0}, Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;->isChecked(Ljp/co/sony/mc/camera/configuration/parameters/DispCustom;)Z
 
     move-result p0
@@ -593,6 +635,16 @@
 
 .method private setDescription(Landroid/widget/ImageView;Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "description"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -605,6 +657,16 @@
 
 .method private setIconResource(Landroid/widget/ImageView;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "iconResId"
+        }
+    .end annotation
 
     if-eqz p1, :cond_1
 
@@ -638,13 +700,21 @@
 
 .method private updateBattery(I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "level"
+        }
+    .end annotation
 
-    .line 530
+    .line 529
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mPowerIcon:Landroid/widget/ImageView;
 
     if-eqz v0, :cond_1
 
-    .line 531
+    .line 530
     iget-boolean v1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mIsPowerConnected:Z
 
     if-eqz v1, :cond_0
@@ -659,7 +729,7 @@
     :goto_0
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 533
+    .line 532
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mBatteryIcon:Landroid/widget/ImageView;
 
@@ -669,12 +739,12 @@
 
     invoke-direct {p0, v0, v1}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->setIconResource(Landroid/widget/ImageView;I)V
 
-    .line 534
+    .line 533
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mBatteryText:Landroid/widget/TextView;
 
     if-eqz v0, :cond_2
 
-    .line 535
+    .line 534
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -695,26 +765,26 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 538
+    .line 537
     :cond_2
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mIsPowerConnected:Z
 
     if-eqz v0, :cond_3
 
-    .line 539
+    .line 538
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mBatteryGroup:Landroid/widget/LinearLayout;
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    const v2, 0x7f110077
+    const v2, 0x7f11008b
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 540
+    .line 539
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -723,7 +793,7 @@
 
     move-result-object p1
 
-    .line 539
+    .line 538
     invoke-static {v1, p1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
@@ -732,7 +802,7 @@
 
     goto :goto_1
 
-    .line 542
+    .line 541
     :cond_3
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mBatteryGroup:Landroid/widget/LinearLayout;
 
@@ -740,13 +810,13 @@
 
     move-result-object v1
 
-    const v2, 0x7f110078
+    const v2, 0x7f11008c
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 543
+    .line 542
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -755,14 +825,14 @@
 
     move-result-object p1
 
-    .line 542
+    .line 541
     invoke-static {v1, p1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
 
     invoke-virtual {v0, p1}, Landroid/widget/LinearLayout;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 546
+    .line 545
     :goto_1
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->getContext()Landroid/content/Context;
 
@@ -782,17 +852,17 @@
 
     if-lt p1, v0, :cond_4
 
-    .line 548
+    .line 547
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mBatteryImageGroup:Landroid/widget/LinearLayout;
 
-    .line 549
+    .line 548
     invoke-virtual {p1}, Landroid/widget/LinearLayout;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p1
 
     check-cast p1, Landroid/widget/LinearLayout$LayoutParams;
 
-    .line 551
+    .line 550
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->getContext()Landroid/content/Context;
 
     move-result-object p0
@@ -801,7 +871,7 @@
 
     move-result-object p0
 
-    const v0, 0x7f070238
+    const v0, 0x7f07023c
 
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -809,7 +879,7 @@
 
     float-to-int p0, p0
 
-    .line 550
+    .line 549
     invoke-virtual {p1, p0}, Landroid/widget/LinearLayout$LayoutParams;->setMarginStart(I)V
 
     :cond_4
@@ -818,18 +888,26 @@
 
 .method private updateCreativeLook(Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "colorToneProfile"
+        }
+    .end annotation
 
-    .line 712
+    .line 711
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mCreativeLook:Landroid/widget/TextView;
 
     if-eqz v0, :cond_0
 
-    .line 713
+    .line 712
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarResource;->getCreativeLookTextId(Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;)I
 
     move-result p1
 
-    .line 714
+    .line 713
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mCreativeLook:Landroid/widget/TextView;
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->getContext()Landroid/content/Context;
@@ -848,13 +926,21 @@
 
 .method private updateEnduranceMode(Ljp/co/sony/mc/camera/configuration/parameters/EnduranceMode;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "enduranceMode"
+        }
+    .end annotation
 
-    .line 665
+    .line 664
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/EnduranceMode;->ON:Ljp/co/sony/mc/camera/configuration/parameters/EnduranceMode;
 
     if-ne p1, v0, :cond_0
 
-    .line 666
+    .line 665
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mEnduranceMode:Landroid/widget/ImageView;
 
     const/4 p1, 0x0
@@ -863,13 +949,13 @@
 
     goto :goto_0
 
-    .line 668
+    .line 667
     :cond_0
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mIsVariableIconsShowInSecondLineArea:Z
 
     if-eqz p1, :cond_1
 
-    .line 669
+    .line 668
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mEnduranceMode:Landroid/widget/ImageView;
 
     const/16 p1, 0x8
@@ -878,7 +964,7 @@
 
     goto :goto_0
 
-    .line 671
+    .line 670
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mEnduranceMode:Landroid/widget/ImageView;
 
@@ -893,7 +979,7 @@
 .method private updateGeotag()V
     .locals 3
 
-    .line 516
+    .line 515
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mGeotagManager:Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;
 
     if-eqz v0, :cond_2
@@ -904,7 +990,7 @@
 
     goto :goto_0
 
-    .line 519
+    .line 518
     :cond_0
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
@@ -920,12 +1006,12 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 520
+    .line 519
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mGeotagIndicator:Ljp/co/sony/mc/camera/viewfinder/indicators/GeotagIndicator;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mGeotagManager:Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;
 
-    .line 521
+    .line 520
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->isGpsAcquired()Z
 
     move-result v1
@@ -938,24 +1024,24 @@
 
     or-int/2addr v1, v2
 
-    .line 520
+    .line 519
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/viewfinder/indicators/GeotagIndicator;->isAcquired(Z)V
 
-    .line 522
+    .line 521
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mGeotagIndicator:Ljp/co/sony/mc/camera/viewfinder/indicators/GeotagIndicator;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/viewfinder/indicators/GeotagIndicator;->set(Z)V
 
-    .line 523
+    .line 522
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mGeotagIndicator:Ljp/co/sony/mc/camera/viewfinder/indicators/GeotagIndicator;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/viewfinder/indicators/GeotagIndicator;->show()V
 
     goto :goto_0
 
-    .line 525
+    .line 524
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mGeotagIndicator:Ljp/co/sony/mc/camera/viewfinder/indicators/GeotagIndicator;
 
@@ -968,8 +1054,16 @@
 
 .method private updateHdr(Ljp/co/sony/mc/camera/configuration/parameters/Hdr;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "hdr"
+        }
+    .end annotation
 
-    .line 613
+    .line 612
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->isDisplayModeHidden()Z
 
     move-result v0
@@ -996,15 +1090,15 @@
 
     goto :goto_0
 
-    .line 618
+    .line 617
     :cond_0
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mIsAutoHdrRequired:Z
 
     if-eqz p1, :cond_1
 
-    const v1, 0x7f080230
+    const v1, 0x7f08028c
 
-    .line 621
+    .line 620
     :cond_1
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mHdrIcon:Landroid/widget/ImageView;
 
@@ -1012,7 +1106,7 @@
 
     return-void
 
-    .line 615
+    .line 614
     :cond_2
     :goto_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mHdrIcon:Landroid/widget/ImageView;
@@ -1025,43 +1119,43 @@
 .method private updateMemory()V
     .locals 3
 
-    .line 594
+    .line 593
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mStorage:Ljp/co/sony/mc/camera/storage/Storage;
 
     if-eqz v0, :cond_1
 
-    .line 595
+    .line 594
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->SAVE_DESTINATION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 596
+    .line 595
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;
 
-    .line 597
+    .line 596
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mStorage:Ljp/co/sony/mc/camera/storage/Storage;
 
     sget-object v2, Ljp/co/sony/mc/camera/storage/Storage$StorageType;->INTERNAL:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
-    .line 598
+    .line 597
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;->getType()Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
     move-result-object v0
 
-    .line 597
+    .line 596
     invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/storage/Storage$StorageType;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 598
+    .line 597
     sget-object v0, Ljp/co/sony/mc/camera/storage/Storage$StorageType;->INTERNAL:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
     goto :goto_0
@@ -1069,13 +1163,13 @@
     :cond_0
     sget-object v0, Ljp/co/sony/mc/camera/storage/Storage$StorageType;->EXTERNAL_CARD:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
-    .line 597
+    .line 596
     :goto_0
     invoke-interface {v1, v0}, Ljp/co/sony/mc/camera/storage/Storage;->getRemainStorage(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)J
 
     move-result-wide v0
 
-    .line 599
+    .line 598
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mMemoryText:Landroid/widget/TextView;
 
     invoke-direct {p0, v0, v1}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->createFreeSpaceText(J)Ljava/lang/String;
@@ -1090,23 +1184,31 @@
 
 .method private updatePhotoFormat(Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "photoFormat"
+        }
+    .end annotation
 
-    .line 625
+    .line 624
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarResource;->getPhotoFormatIconResId(Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;)I
 
     move-result v0
 
-    .line 626
+    .line 625
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarResource;->getPhotoFormatDescriptionId(Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;)I
 
     move-result p1
 
-    .line 627
+    .line 626
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mPhotoFormat:Landroid/widget/ImageView;
 
     invoke-direct {p0, v1, v0}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->setIconResource(Landroid/widget/ImageView;I)V
 
-    .line 628
+    .line 627
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mPhotoFormat:Landroid/widget/ImageView;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1117,7 +1219,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f11023e
+    const v3, 0x7f110287
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1127,7 +1229,7 @@
 
     move-result-object v1
 
-    .line 630
+    .line 629
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->getContext()Landroid/content/Context;
 
     move-result-object v2
@@ -1144,7 +1246,7 @@
 
     move-result-object p1
 
-    .line 628
+    .line 627
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->setDescription(Landroid/widget/ImageView;Ljava/lang/String;)V
 
     return-void
@@ -1152,13 +1254,21 @@
 
 .method private updateRemoteControl(Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "remoteControl"
+        }
+    .end annotation
 
-    .line 634
+    .line 633
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;->ON:Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;
 
     if-ne p1, v0, :cond_0
 
-    .line 635
+    .line 634
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mRemoteControl:Landroid/widget/ImageView;
 
     const/4 p1, 0x0
@@ -1167,13 +1277,13 @@
 
     goto :goto_0
 
-    .line 637
+    .line 636
     :cond_0
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mIsVariableIconsShowInSecondLineArea:Z
 
     if-eqz p1, :cond_1
 
-    .line 638
+    .line 637
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mRemoteControl:Landroid/widget/ImageView;
 
     const/16 p1, 0x8
@@ -1182,7 +1292,7 @@
 
     goto :goto_0
 
-    .line 640
+    .line 639
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mRemoteControl:Landroid/widget/ImageView;
 
@@ -1196,13 +1306,21 @@
 
 .method private updateResolution(Ljp/co/sony/mc/camera/configuration/parameters/Resolution;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "resolution"
+        }
+    .end annotation
 
-    .line 604
+    .line 603
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mResolution:Landroid/widget/TextView;
 
     if-eqz v0, :cond_3
 
-    .line 605
+    .line 604
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/Resolution;->getSizeId()I
 
     move-result v0
@@ -1220,7 +1338,7 @@
     :cond_0
     move v0, v2
 
-    .line 606
+    .line 605
     :goto_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mResolution:Landroid/widget/TextView;
 
@@ -1246,7 +1364,7 @@
     :goto_1
     invoke-virtual {v1, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 607
+    .line 606
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mResolution:Landroid/widget/TextView;
 
     if-eqz v0, :cond_2
@@ -1265,8 +1383,16 @@
 
 .method private updateStorage(Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "destination"
+        }
+    .end annotation
 
-    .line 582
+    .line 581
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeSystemStatusBarBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeSystemStatusBarBinding;->getRoot()Landroid/view/View;
@@ -1275,22 +1401,22 @@
 
     if-eqz v0, :cond_0
 
-    .line 584
+    .line 583
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarResource;->getStorageIconResId(Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;)I
 
     move-result v0
 
-    .line 585
+    .line 584
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarResource;->getStorageDescriptionId(Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;)I
 
     move-result p1
 
-    .line 586
+    .line 585
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mStorageIcon:Landroid/widget/ImageView;
 
     invoke-direct {p0, v1, v0}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->setIconResource(Landroid/widget/ImageView;I)V
 
-    .line 587
+    .line 586
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mStorageIcon:Landroid/widget/ImageView;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1301,7 +1427,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f1103eb
+    const v3, 0x7f110436
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1311,7 +1437,7 @@
 
     move-result-object v1
 
-    .line 589
+    .line 588
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->getContext()Landroid/content/Context;
 
     move-result-object v2
@@ -1328,7 +1454,7 @@
 
     move-result-object p1
 
-    .line 587
+    .line 586
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->setDescription(Landroid/widget/ImageView;Ljava/lang/String;)V
 
     :cond_0
@@ -1337,13 +1463,21 @@
 
 .method private updateVideoFps(Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "videoFps"
+        }
+    .end annotation
 
-    .line 691
+    .line 690
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mVideoFps:Landroid/widget/TextView;
 
     if-eqz v0, :cond_3
 
-    .line 692
+    .line 691
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;->getShortTextId()I
 
     move-result v0
@@ -1361,18 +1495,18 @@
     :cond_0
     move v0, v2
 
-    .line 693
+    .line 692
     :goto_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mVideoFps:Landroid/widget/TextView;
 
     if-eqz v0, :cond_1
 
-    .line 695
+    .line 694
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 694
+    .line 693
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->getContext()Landroid/content/Context;
 
     move-result-object v4
@@ -1389,12 +1523,12 @@
 
     move-result-object p1
 
-    .line 695
+    .line 694
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->getContext()Landroid/content/Context;
 
     move-result-object v3
 
-    const v4, 0x7f110451
+    const v4, 0x7f11049c
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1413,11 +1547,11 @@
     :cond_1
     const/4 p1, 0x0
 
-    .line 693
+    .line 692
     :goto_1
     invoke-virtual {v1, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 697
+    .line 696
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mVideoFps:Landroid/widget/TextView;
 
     if-eqz v0, :cond_2
@@ -1436,13 +1570,21 @@
 
 .method private updateVideoSize(Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "videoSize"
+        }
+    .end annotation
 
-    .line 702
+    .line 701
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mVideoSize:Landroid/widget/TextView;
 
     if-eqz v0, :cond_3
 
-    .line 703
+    .line 702
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->getShortTextId()I
 
     move-result v0
@@ -1460,13 +1602,13 @@
     :cond_0
     move v0, v2
 
-    .line 704
+    .line 703
     :goto_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mVideoSize:Landroid/widget/TextView;
 
     if-eqz v0, :cond_1
 
-    .line 705
+    .line 704
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->getContext()Landroid/content/Context;
 
     move-result-object v3
@@ -1484,11 +1626,11 @@
     :cond_1
     const/4 p1, 0x0
 
-    .line 704
+    .line 703
     :goto_1
     invoke-virtual {v1, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 707
+    .line 706
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mVideoSize:Landroid/widget/TextView;
 
     if-eqz v0, :cond_2
@@ -1507,13 +1649,21 @@
 
 .method private updateViews(Landroid/view/View;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
-    .line 719
+    .line 718
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
 
-    .line 720
+    .line 719
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result p1
@@ -1522,7 +1672,7 @@
 
     goto :goto_0
 
-    .line 746
+    .line 745
     :sswitch_0
     sget-object p1, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_SIZE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -1536,7 +1686,7 @@
 
     goto :goto_0
 
-    .line 743
+    .line 742
     :sswitch_1
     sget-object p1, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_FPS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -1550,7 +1700,7 @@
 
     goto :goto_0
 
-    .line 722
+    .line 721
     :sswitch_2
     sget-object p1, Ljp/co/sony/mc/camera/setting/CommonSettings;->SAVE_DESTINATION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -1564,7 +1714,7 @@
 
     goto :goto_0
 
-    .line 728
+    .line 727
     :sswitch_3
     sget-object p1, Ljp/co/sony/mc/camera/setting/CameraSettings;->RESOLUTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -1578,7 +1728,7 @@
 
     goto :goto_0
 
-    .line 737
+    .line 736
     :sswitch_4
     sget-object p1, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -1592,7 +1742,7 @@
 
     goto :goto_0
 
-    .line 734
+    .line 733
     :sswitch_5
     sget-object p1, Ljp/co/sony/mc/camera/setting/CameraSettings;->PHOTO_FORMAT:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -1606,19 +1756,19 @@
 
     goto :goto_0
 
-    .line 725
+    .line 724
     :sswitch_6
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->updateMemory()V
 
     goto :goto_0
 
-    .line 731
+    .line 730
     :sswitch_7
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->updateGeotag()V
 
     goto :goto_0
 
-    .line 740
+    .line 739
     :sswitch_8
     sget-object p1, Ljp/co/sony/mc/camera/setting/CommonSettings;->ENDURANCE_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -1632,7 +1782,7 @@
 
     goto :goto_0
 
-    .line 749
+    .line 748
     :sswitch_9
     sget-object p1, Ljp/co/sony/mc/camera/setting/CameraSettings;->COLOR_TONE_PROFILE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -1649,16 +1799,16 @@
 
     :sswitch_data_0
     .sparse-switch
-        0x7f09014a -> :sswitch_9
-        0x7f09019f -> :sswitch_8
-        0x7f09020a -> :sswitch_7
-        0x7f0902c6 -> :sswitch_6
-        0x7f090377 -> :sswitch_5
-        0x7f0903c0 -> :sswitch_4
-        0x7f0903c5 -> :sswitch_3
-        0x7f09045d -> :sswitch_2
-        0x7f0904e0 -> :sswitch_1
-        0x7f0904e8 -> :sswitch_0
+        0x7f09014f -> :sswitch_9
+        0x7f0901a2 -> :sswitch_8
+        0x7f090212 -> :sswitch_7
+        0x7f0902cb -> :sswitch_6
+        0x7f09037a -> :sswitch_5
+        0x7f0903bf -> :sswitch_4
+        0x7f0903c6 -> :sswitch_3
+        0x7f09045f -> :sswitch_2
+        0x7f0904e3 -> :sswitch_1
+        0x7f0904e6 -> :sswitch_0
     .end sparse-switch
 .end method
 
@@ -1666,6 +1816,14 @@
 # virtual methods
 .method public applySettingsToViews(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "holder"
+        }
+    .end annotation
 
     const/4 v0, 0x5
 
@@ -1746,6 +1904,17 @@
 
 .method public applySettingsToViews(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljava/util/List;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "holder",
+            "changedKeyNames"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1785,6 +1954,16 @@
 
 .method public applyStorageStateToUi(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/Storage$StorageState;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "type",
+            "state"
+        }
+    .end annotation
 
     .line 224
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->isDisplayModeHidden()Z
@@ -2016,30 +2195,21 @@
 
     move-result-object v10
 
-    invoke-virtual {v7, v10}, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->isStreaming(Ljava/lang/Boolean;)Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;
-
-    move-result-object v7
-
-    .line 438
-    invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v10
-
     invoke-virtual {v7, v10}, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->isAutoFraming(Ljava/lang/Boolean;)Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;
 
     move-result-object v7
 
-    .line 439
+    .line 438
     invoke-virtual {v7, v13}, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->captureFps(Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;)Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;
 
     move-result-object v7
 
-    .line 440
+    .line 439
     invoke-virtual {v7}, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->build()Ljp/co/sony/mc/camera/recorder/RecordingProfile;
 
     move-result-object v7
 
-    .line 441
+    .line 440
     invoke-virtual {v7}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->getVideoCodec()I
 
     move-result v7
@@ -2053,13 +2223,13 @@
     :cond_1
     move v7, v4
 
-    .line 442
+    .line 441
     :goto_0
     invoke-direct/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->isDisplayModeHidden()Z
 
     move-result v10
 
-    .line 443
+    .line 442
     iget-object v12, v0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mBurstCountIcon:Landroid/widget/ImageView;
 
     invoke-virtual {v12}, Landroid/widget/ImageView;->getVisibility()I
@@ -2075,13 +2245,13 @@
     :cond_2
     move v12, v4
 
-    .line 444
+    .line 443
     :goto_1
     sget-object v9, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_P:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-ne v15, v9, :cond_4
 
-    .line 445
+    .line 444
     invoke-virtual {v14}, Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;->getBooleanValue()Z
 
     move-result v9
@@ -2109,7 +2279,7 @@
 
     if-nez v10, :cond_5
 
-    .line 447
+    .line 446
     iget-boolean v14, v0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mIsSaving:Z
 
     if-nez v14, :cond_5
@@ -2164,7 +2334,7 @@
 
     if-nez v10, :cond_8
 
-    .line 470
+    .line 469
     invoke-virtual {v11}, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;->getBooleanValue()Z
 
     move-result v25
@@ -2181,7 +2351,7 @@
     :goto_6
     if-nez v10, :cond_9
 
-    .line 472
+    .line 471
     invoke-virtual {v11}, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;->getBooleanValue()Z
 
     move-result v11
@@ -2263,7 +2433,7 @@
     :goto_8
     if-ge v5, v1, :cond_c
 
-    .line 484
+    .line 483
     aget-object v8, v2, v5
 
     if-nez v8, :cond_a
@@ -2273,16 +2443,16 @@
 
     goto :goto_a
 
-    .line 488
+    .line 487
     :cond_a
     aget-boolean v9, v6, v5
 
     if-eqz v9, :cond_b
 
-    .line 489
+    .line 488
     invoke-virtual {v8, v4}, Landroid/view/View;->setVisibility(I)V
 
-    .line 490
+    .line 489
     invoke-direct {v0, v8}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->updateViews(Landroid/view/View;)V
 
     goto :goto_9
@@ -2290,7 +2460,7 @@
     :cond_b
     const/4 v9, 0x4
 
-    .line 492
+    .line 491
     invoke-virtual {v8, v9}, Landroid/view/View;->setVisibility(I)V
 
     :goto_a
@@ -2298,7 +2468,7 @@
 
     goto :goto_8
 
-    .line 496
+    .line 495
     :cond_c
     invoke-virtual {v15}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
 
@@ -2306,19 +2476,19 @@
 
     if-eqz v1, :cond_d
 
-    .line 497
+    .line 496
     iget-object v1, v0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mPhotoIconsArea:Landroid/widget/LinearLayout;
 
     const/16 v2, 0x8
 
     invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 498
+    .line 497
     iget-object v1, v0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mVideoIconsArea:Landroid/widget/LinearLayout;
 
     invoke-virtual {v1, v4}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 499
+    .line 498
     iget-object v1, v0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mVideoFormat:Landroid/widget/TextView;
 
     invoke-static {v7}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarResource;->getVideoFormatTextId(Z)I
@@ -2332,17 +2502,17 @@
     :cond_d
     const/16 v2, 0x8
 
-    .line 501
+    .line 500
     iget-object v1, v0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mVideoIconsArea:Landroid/widget/LinearLayout;
 
     invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 502
+    .line 501
     iget-object v1, v0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mPhotoIconsArea:Landroid/widget/LinearLayout;
 
     invoke-virtual {v1, v4}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 503
+    .line 502
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v3, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -2353,7 +2523,7 @@
 
     invoke-direct {v0, v1}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->updateHdr(Ljp/co/sony/mc/camera/configuration/parameters/Hdr;)V
 
-    .line 506
+    .line 505
     :goto_b
     iget-object v1, v0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mGeotagIndicator:Ljp/co/sony/mc/camera/viewfinder/indicators/GeotagIndicator;
 
@@ -2361,21 +2531,21 @@
 
     if-nez v10, :cond_e
 
-    .line 507
+    .line 506
     invoke-direct/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->isGeotagShown()Z
 
     move-result v1
 
     if-eqz v1, :cond_e
 
-    .line 508
+    .line 507
     iget-object v0, v0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mGeotagIndicator:Ljp/co/sony/mc/camera/viewfinder/indicators/GeotagIndicator;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/viewfinder/indicators/GeotagIndicator;->show()V
 
     goto :goto_c
 
-    .line 510
+    .line 509
     :cond_e
     iget-object v0, v0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mGeotagIndicator:Ljp/co/sony/mc/camera/viewfinder/indicators/GeotagIndicator;
 
@@ -2459,6 +2629,14 @@
 
 .method public notifyBatteryStatus(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "level"
+        }
+    .end annotation
 
     .line 335
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mBatteryText:Landroid/widget/TextView;
@@ -2481,6 +2659,14 @@
 
 .method public notifyPowerConnectionStatus(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isConnected"
+        }
+    .end annotation
 
     .line 347
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mIsPowerConnected:Z
@@ -2505,6 +2691,14 @@
 
 .method public onAutoHdrChanged(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isHdrRequired"
+        }
+    .end annotation
 
     .line 284
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mIsAutoHdrRequired:Z
@@ -2729,24 +2923,32 @@
 
 .method public onEnduranceModeActivationChanged(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "activate"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
-    .line 678
+    .line 677
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mEnduranceMode:Landroid/widget/ImageView;
 
-    const v0, 0x7f080226
+    const v0, 0x7f080282
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 680
+    .line 679
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mEnduranceMode:Landroid/widget/ImageView;
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->getContext()Landroid/content/Context;
 
     move-result-object p0
 
-    const v0, 0x7f110020
+    const v0, 0x7f11001f
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2756,22 +2958,22 @@
 
     goto :goto_0
 
-    .line 683
+    .line 682
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mEnduranceMode:Landroid/widget/ImageView;
 
-    const v0, 0x7f080227
+    const v0, 0x7f080283
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 685
+    .line 684
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mEnduranceMode:Landroid/widget/ImageView;
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->getContext()Landroid/content/Context;
 
     move-result-object p0
 
-    const v0, 0x7f110021
+    const v0, 0x7f110020
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2805,24 +3007,32 @@
 
 .method public onRemoteControlStateChanged(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isConnected"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
-    .line 647
+    .line 646
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mRemoteControl:Landroid/widget/ImageView;
 
-    const v0, 0x7f080223
+    const v0, 0x7f08027f
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 649
+    .line 648
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mRemoteControl:Landroid/widget/ImageView;
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->getContext()Landroid/content/Context;
 
     move-result-object p0
 
-    const v0, 0x7f11001e
+    const v0, 0x7f11001d
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2832,22 +3042,22 @@
 
     goto :goto_0
 
-    .line 652
+    .line 651
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mRemoteControl:Landroid/widget/ImageView;
 
-    const v0, 0x7f080224
+    const v0, 0x7f080280
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 654
+    .line 653
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mRemoteControl:Landroid/widget/ImageView;
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->getContext()Landroid/content/Context;
 
     move-result-object p0
 
-    const v0, 0x7f11001f
+    const v0, 0x7f11001e
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2870,6 +3080,14 @@
 
 .method public setBurstCount(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "count"
+        }
+    .end annotation
 
     .line 310
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mBurstCountText:Landroid/widget/TextView;
@@ -2889,11 +3107,19 @@
 
 .method public setSaving(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "saving"
+        }
+    .end annotation
 
-    .line 660
+    .line 659
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mIsSaving:Z
 
-    .line 661
+    .line 660
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->handleVisibility()V
 
     return-void
@@ -2901,6 +3127,14 @@
 
 .method public setShowIconsInSecondLine(Z)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isShowIconsInSecondLine"
+        }
+    .end annotation
 
     const/4 v0, -0x1
 
@@ -2910,10 +3144,10 @@
 
     const/4 p1, 0x1
 
-    .line 558
+    .line 557
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mIsVariableIconsShowInSecondLineArea:Z
 
-    .line 559
+    .line 558
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeSystemStatusBarBinding;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeSystemStatusBarBinding;->rightArea:Landroid/widget/LinearLayout;
@@ -2926,7 +3160,7 @@
 
     if-eq p1, v0, :cond_0
 
-    .line 560
+    .line 559
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeSystemStatusBarBinding;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeSystemStatusBarBinding;->rightArea:Landroid/widget/LinearLayout;
@@ -2935,7 +3169,7 @@
 
     invoke-virtual {p1, v2}, Landroid/widget/LinearLayout;->removeView(Landroid/view/View;)V
 
-    .line 562
+    .line 561
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeSystemStatusBarBinding;
 
@@ -2949,7 +3183,7 @@
 
     if-ne p1, v0, :cond_1
 
-    .line 563
+    .line 562
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeSystemStatusBarBinding;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeSystemStatusBarBinding;->secondLineArea:Landroid/widget/LinearLayout;
@@ -2958,7 +3192,7 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;I)V
 
-    .line 565
+    .line 564
     :cond_1
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeSystemStatusBarBinding;
 
@@ -2968,11 +3202,11 @@
 
     goto :goto_0
 
-    .line 567
+    .line 566
     :cond_2
     iput-boolean v1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mIsVariableIconsShowInSecondLineArea:Z
 
-    .line 568
+    .line 567
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeSystemStatusBarBinding;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeSystemStatusBarBinding;->secondLineArea:Landroid/widget/LinearLayout;
@@ -2985,7 +3219,7 @@
 
     if-eq p1, v0, :cond_3
 
-    .line 569
+    .line 568
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeSystemStatusBarBinding;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeSystemStatusBarBinding;->secondLineArea:Landroid/widget/LinearLayout;
@@ -2994,7 +3228,7 @@
 
     invoke-virtual {p1, v2}, Landroid/widget/LinearLayout;->removeView(Landroid/view/View;)V
 
-    .line 571
+    .line 570
     :cond_3
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeSystemStatusBarBinding;
 
@@ -3008,7 +3242,7 @@
 
     if-ne p1, v0, :cond_4
 
-    .line 572
+    .line 571
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeSystemStatusBarBinding;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeSystemStatusBarBinding;->rightArea:Landroid/widget/LinearLayout;
@@ -3017,7 +3251,7 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;I)V
 
-    .line 574
+    .line 573
     :cond_4
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeSystemStatusBarBinding;
 
@@ -3027,13 +3261,13 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 576
+    .line 575
     :goto_0
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p1
 
-    .line 577
+    .line 576
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -3044,7 +3278,7 @@
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->updateRemoteControl(Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;)V
 
-    .line 578
+    .line 577
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->ENDURANCE_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -3060,6 +3294,16 @@
 
 .method public setupSystemStatusBar(Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;Ljp/co/sony/mc/camera/storage/Storage;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "geotagManager",
+            "storage"
+        }
+    .end annotation
 
     .line 239
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/SystemStatusBarPresenter;->mGeotagManager:Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;

@@ -61,6 +61,17 @@
 
 .method public constructor <init>(Landroid/os/Handler;Ljava/util/List;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "handler",
+            "cameraIdList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -205,6 +216,16 @@
 
 .method private declared-synchronized setCameraAvailable(Ljava/lang/String;Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "cameraId",
+            "available"
+        }
+    .end annotation
 
     monitor-enter p0
 
@@ -364,6 +385,14 @@
 
 .method public onCameraAvailable(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
     .line 38
     invoke-super {p0, p1}, Landroid/hardware/camera2/CameraManager$AvailabilityCallback;->onCameraAvailable(Ljava/lang/String;)V
@@ -468,6 +497,14 @@
 
 .method public onCameraUnavailable(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
     .line 64
     invoke-super {p0, p1}, Landroid/hardware/camera2/CameraManager$AvailabilityCallback;->onCameraUnavailable(Ljava/lang/String;)V
@@ -482,6 +519,14 @@
 
 .method public runAfterCameraAvailable(Ljava/lang/Runnable;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "runnable"
+        }
+    .end annotation
 
     .line 70
     iget-object v0, p0, Ljp/co/sony/mc/camera/calibration/util/CameraServiceMonitor;->mLock:Ljava/lang/Object;
@@ -516,6 +561,14 @@
 
 .method public setErrorRunnable(Ljava/lang/Runnable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "runnable"
+        }
+    .end annotation
 
     .line 85
     iput-object p1, p0, Ljp/co/sony/mc/camera/calibration/util/CameraServiceMonitor;->mErrorRunnable:Ljava/lang/Runnable;

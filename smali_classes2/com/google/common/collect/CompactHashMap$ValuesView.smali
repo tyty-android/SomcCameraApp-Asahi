@@ -28,8 +28,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/CompactHashMap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 831
+    .line 922
     iput-object p1, p0, Lcom/google/common/collect/CompactHashMap$ValuesView;->this$0:Lcom/google/common/collect/CompactHashMap;
 
     invoke-direct {p0}, Ljava/util/AbstractCollection;-><init>()V
@@ -42,7 +50,7 @@
 .method public clear()V
     .locals 0
 
-    .line 839
+    .line 930
     iget-object p0, p0, Lcom/google/common/collect/CompactHashMap$ValuesView;->this$0:Lcom/google/common/collect/CompactHashMap;
 
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->clear()V
@@ -60,7 +68,7 @@
         }
     .end annotation
 
-    .line 844
+    .line 935
     iget-object p0, p0, Lcom/google/common/collect/CompactHashMap$ValuesView;->this$0:Lcom/google/common/collect/CompactHashMap;
 
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->valuesIterator()Ljava/util/Iterator;
@@ -73,7 +81,7 @@
 .method public size()I
     .locals 0
 
-    .line 834
+    .line 925
     iget-object p0, p0, Lcom/google/common/collect/CompactHashMap$ValuesView;->this$0:Lcom/google/common/collect/CompactHashMap;
 
     invoke-virtual {p0}, Lcom/google/common/collect/CompactHashMap;->size()I

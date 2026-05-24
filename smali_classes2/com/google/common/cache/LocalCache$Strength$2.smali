@@ -17,10 +17,20 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 391
+    .line 398
     invoke-direct {p0, p1, p2, v0}, Lcom/google/common/cache/LocalCache$Strength;-><init>(Ljava/lang/String;ILcom/google/common/cache/LocalCache$1;)V
 
     return-void
@@ -39,7 +49,7 @@
         }
     .end annotation
 
-    .line 403
+    .line 410
     invoke-static {}, Lcom/google/common/base/Equivalence;->identity()Lcom/google/common/base/Equivalence;
 
     move-result-object p0
@@ -49,6 +59,21 @@
 
 .method referenceValue(Lcom/google/common/cache/LocalCache$Segment;Lcom/google/common/cache/ReferenceEntry;Ljava/lang/Object;I)Lcom/google/common/cache/LocalCache$ValueReference;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "segment",
+            "entry",
+            "value",
+            "weight"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -69,7 +94,7 @@
 
     if-ne p4, p0, :cond_0
 
-    .line 396
+    .line 403
     new-instance p0, Lcom/google/common/cache/LocalCache$SoftValueReference;
 
     iget-object p1, p1, Lcom/google/common/cache/LocalCache$Segment;->valueReferenceQueue:Ljava/lang/ref/ReferenceQueue;
@@ -78,7 +103,7 @@
 
     goto :goto_0
 
-    .line 397
+    .line 404
     :cond_0
     new-instance p0, Lcom/google/common/cache/LocalCache$WeightedSoftValueReference;
 

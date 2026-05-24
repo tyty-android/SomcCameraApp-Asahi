@@ -31,6 +31,18 @@
 # virtual methods
 .method public onKey(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "dialog",
+            "keyCode",
+            "event"
+        }
+    .end annotation
 
     const/16 p0, 0x1b
 

@@ -23,6 +23,20 @@
 
 .method private static computeInitialSampleSize(DDII)I
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "w",
+            "h",
+            "minSideLength",
+            "maxNumOfPixels"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -104,6 +118,20 @@
 
 .method public static computeSampleSize(DDII)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "w",
+            "h",
+            "minSideLength",
+            "maxNumOfPixels"
+        }
+    .end annotation
 
     .line 75
     invoke-static/range {p0 .. p5}, Ljp/co/sony/mc/camera/util/OneShotUtility;->computeInitialSampleSize(DDII)I
@@ -137,6 +165,22 @@
 
 .method public static createResultIntent(Landroid/app/Activity;Landroid/net/Uri;Ljava/lang/String;ILandroid/graphics/Bitmap;)Landroid/content/Intent;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "activity",
+            "uri",
+            "mime",
+            "orientation",
+            "thumbnail"
+        }
+    .end annotation
 
     .line 45
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -178,6 +222,18 @@
 
 .method public static createResultIntent(Landroid/net/Uri;Ljava/lang/String;Landroid/graphics/Bitmap;)Landroid/content/Intent;
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "uri",
+            "mime",
+            "thumb"
+        }
+    .end annotation
 
     .line 51
     new-instance v0, Landroid/content/Intent;

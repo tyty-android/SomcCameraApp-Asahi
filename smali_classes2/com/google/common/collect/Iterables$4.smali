@@ -30,8 +30,18 @@
 # direct methods
 .method constructor <init>(Ljava/lang/Iterable;Lcom/google/common/base/Predicate;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x1010
+        }
+        names = {
+            "val$unfiltered",
+            "val$retainIfTrue"
+        }
+    .end annotation
 
-    .line 589
+    .line 613
     iput-object p1, p0, Lcom/google/common/collect/Iterables$4;->val$unfiltered:Ljava/lang/Iterable;
 
     iput-object p2, p0, Lcom/google/common/collect/Iterables$4;->val$retainIfTrue:Lcom/google/common/base/Predicate;
@@ -53,7 +63,7 @@
         }
     .end annotation
 
-    .line 592
+    .line 616
     iget-object v0, p0, Lcom/google/common/collect/Iterables$4;->val$unfiltered:Ljava/lang/Iterable;
 
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;

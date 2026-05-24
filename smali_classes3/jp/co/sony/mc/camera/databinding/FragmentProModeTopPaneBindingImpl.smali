@@ -13,17 +13,17 @@
 
 
 # instance fields
-.field private final mCallback33:Landroid/view/View$OnClickListener;
+.field private final mCallback27:Landroid/view/View$OnClickListener;
 
-.field private final mCallback34:Landroid/view/View$OnClickListener;
+.field private final mCallback28:Landroid/view/View$OnClickListener;
 
-.field private final mCallback35:Landroid/view/View$OnClickListener;
+.field private final mCallback29:Landroid/view/View$OnClickListener;
 
-.field private final mCallback36:Landroid/view/View$OnClickListener;
+.field private final mCallback30:Landroid/view/View$OnClickListener;
 
-.field private final mCallback37:Landroid/view/View$OnClickListener;
+.field private final mCallback31:Landroid/view/View$OnClickListener;
 
-.field private final mCallback38:Landroid/view/View$OnClickListener;
+.field private final mCallback32:Landroid/view/View$OnClickListener;
 
 .field private mDirtyFlags:J
 
@@ -41,14 +41,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0903ba
+    const v1, 0x7f0903b9
 
     const/16 v2, 0x9
 
     .line 17
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09043d
+    const v1, 0x7f09043f
 
     const/16 v2, 0xa
 
@@ -60,6 +60,16 @@
 
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root"
+        }
+    .end annotation
 
     .line 41
     sget-object v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -79,6 +89,18 @@
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
     .locals 21
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root",
+            "bindings"
+        }
+    .end annotation
 
     move-object/from16 v14, p0
 
@@ -171,9 +193,9 @@
 
     move-object/from16 v2, p2
 
-    move v15, v3
-
     move/from16 v3, v20
+
+    move v15, v10
 
     move-object/from16 v10, v16
 
@@ -187,7 +209,7 @@
 
     const-wide/16 v0, -0x1
 
-    .line 1072
+    .line 1073
     iput-wide v0, v14, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
     .line 56
@@ -254,7 +276,7 @@
 
     invoke-direct {v0, v14, v15}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
 
-    iput-object v0, v14, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback35:Landroid/view/View$OnClickListener;
+    iput-object v0, v14, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback27:Landroid/view/View$OnClickListener;
 
     .line 69
     new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
@@ -263,43 +285,43 @@
 
     invoke-direct {v0, v14, v1}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
 
-    iput-object v0, v14, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback36:Landroid/view/View$OnClickListener;
+    iput-object v0, v14, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback30:Landroid/view/View$OnClickListener;
 
     .line 70
-    new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
-
-    const/4 v1, 0x5
-
-    invoke-direct {v0, v14, v1}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
-
-    iput-object v0, v14, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback37:Landroid/view/View$OnClickListener;
-
-    .line 71
-    new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
-
-    const/4 v1, 0x1
-
-    invoke-direct {v0, v14, v1}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
-
-    iput-object v0, v14, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback33:Landroid/view/View$OnClickListener;
-
-    .line 72
-    new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
-
-    const/4 v1, 0x6
-
-    invoke-direct {v0, v14, v1}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
-
-    iput-object v0, v14, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback38:Landroid/view/View$OnClickListener;
-
-    .line 73
     new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
 
     const/4 v1, 0x2
 
     invoke-direct {v0, v14, v1}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
 
-    iput-object v0, v14, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback34:Landroid/view/View$OnClickListener;
+    iput-object v0, v14, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback28:Landroid/view/View$OnClickListener;
+
+    .line 71
+    new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
+
+    const/4 v1, 0x6
+
+    invoke-direct {v0, v14, v1}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
+
+    iput-object v0, v14, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback32:Landroid/view/View$OnClickListener;
+
+    .line 72
+    new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
+
+    const/4 v1, 0x5
+
+    invoke-direct {v0, v14, v1}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
+
+    iput-object v0, v14, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback31:Landroid/view/View$OnClickListener;
+
+    .line 73
+    new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
+
+    const/4 v1, 0x3
+
+    invoke-direct {v0, v14, v1}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
+
+    iput-object v0, v14, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback29:Landroid/view/View$OnClickListener;
 
     .line 74
     invoke-virtual/range {p0 .. p0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->invalidateAll()V
@@ -309,6 +331,17 @@
 
 .method private onChangeFlashUiStateFlashModeButtonSrc(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "FlashUiStateFlashModeButtonSrc",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -357,6 +390,17 @@
 
 .method private onChangeFlashUiStateFlashModeButtonVisible(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "FlashUiStateFlashModeButtonVisible",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -405,6 +449,17 @@
 
 .method private onChangeFlashUiStateIsFlashModeButtonClickable(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "FlashUiStateIsFlashModeButtonClickable",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -453,6 +508,17 @@
 
 .method private onChangeFlashUiStateIsFlashModeButtonEnabled(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "FlashUiStateIsFlashModeButtonEnabled",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -501,6 +567,17 @@
 
 .method private onChangeFlashUiStateIsPhotoLightButtonClickable(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "FlashUiStateIsPhotoLightButtonClickable",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -549,6 +626,17 @@
 
 .method private onChangeFlashUiStateIsPhotoLightButtonEnabled(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "FlashUiStateIsPhotoLightButtonEnabled",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -597,6 +685,17 @@
 
 .method private onChangeFlashUiStatePhotoLightButtonVisible(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "FlashUiStatePhotoLightButtonVisible",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -645,6 +744,17 @@
 
 .method private onChangeFlashUiStatePhotoLightModeButtonSrc(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "FlashUiStatePhotoLightModeButtonSrc",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -693,6 +803,17 @@
 
 .method private onChangeMacroFallbackUiStateIsMacroIndicatorVisible(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "MacroFallbackUiStateIsMacroIndicatorVisible",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -741,6 +862,17 @@
 
 .method private onChangeMacroFallbackUiStateMacroIndicatorContentDescription(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "MacroFallbackUiStateMacroIndicatorContentDescription",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -789,6 +921,17 @@
 
 .method private onChangeMacroFallbackUiStateMacroIndicatorEnable(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "MacroFallbackUiStateMacroIndicatorEnable",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -837,6 +980,17 @@
 
 .method private onChangeMacroFallbackUiStateMacroIndicatorImageSrc(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "MacroFallbackUiStateMacroIndicatorImageSrc",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -885,6 +1039,17 @@
 
 .method private onChangeModeDialUiStateProModeResourceId(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ModeDialUiStateProModeResourceId",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -933,6 +1098,17 @@
 
 .method private onChangeOrientationViewModelLayoutOrientation(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "OrientationViewModelLayoutOrientation",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -981,6 +1157,17 @@
 
 .method private onChangeProModeTopPaneUiStateCapturingModeButtonVisible(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ProModeTopPaneUiStateCapturingModeButtonVisible",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1029,6 +1216,17 @@
 
 .method private onChangeProModeTopPaneUiStateHideFnMenuCoverVisibility(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ProModeTopPaneUiStateHideFnMenuCoverVisibility",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1077,6 +1275,17 @@
 
 .method private onChangeProModeTopPaneUiStateIsSettingMenuEnabled(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ProModeTopPaneUiStateIsSettingMenuEnabled",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1125,6 +1334,17 @@
 
 .method private onChangeProModeTopPaneUiStateSettingMenuButtonVisible(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ProModeTopPaneUiStateSettingMenuButtonVisible",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1173,6 +1393,17 @@
 
 .method private onChangeViewFinderUiStateRecordingDuration(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ViewFinderUiStateRecordingDuration",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1223,73 +1454,83 @@
 # virtual methods
 .method public final _internalCallbackOnClick(ILandroid/view/View;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sourceId",
+            "callbackArg_0"
+        }
+    .end annotation
 
     packed-switch p1, :pswitch_data_0
 
     goto :goto_0
 
-    .line 1038
+    .line 1022
     :pswitch_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mProModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
 
     if-eqz p0, :cond_0
 
-    .line 1048
+    .line 1032
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;->closeAllSubmenu()V
 
     goto :goto_0
 
-    .line 1006
+    .line 1041
     :pswitch_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mLauncherModel:Ljp/co/sony/mc/camera/view/viewmodel/LauncherModel;
 
     if-eqz p0, :cond_0
 
-    .line 1014
+    .line 1049
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/viewmodel/LauncherModel;->showDetailSettings()V
 
     goto :goto_0
 
-    .line 987
+    .line 988
     :pswitch_2
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mMacroFallbackUiState:Ljp/co/sony/mc/camera/view/uistate/MacroFallbackUiState;
 
     if-eqz p0, :cond_0
 
-    .line 997
+    .line 998
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/MacroFallbackUiState;->toggleMacroIndicator()V
 
     goto :goto_0
 
-    .line 970
+    .line 1056
     :pswitch_3
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mFlashUiState:Ljp/co/sony/mc/camera/view/uistate/FlashUiState;
 
     if-eqz p0, :cond_0
 
-    .line 980
+    .line 1066
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->togglePhotoLightMode()V
 
     goto :goto_0
 
-    .line 1055
+    .line 1005
     :pswitch_4
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mFlashUiState:Ljp/co/sony/mc/camera/view/uistate/FlashUiState;
 
     if-eqz p0, :cond_0
 
-    .line 1065
+    .line 1015
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->toggleFlashMode()V
 
     goto :goto_0
 
-    .line 1021
+    .line 971
     :pswitch_5
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mProModeTopPaneUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;
 
     if-eqz p0, :cond_0
 
-    .line 1031
+    .line 981
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;->toggleCapturingModeMenuVisible()V
 
     :cond_0
@@ -2627,7 +2868,7 @@
     .line 878
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->flashMode:Landroid/widget/ImageButton;
 
-    iget-object v9, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback34:Landroid/view/View$OnClickListener;
+    iget-object v9, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback28:Landroid/view/View$OnClickListener;
 
     invoke-static {v0, v9, v5}, Landroidx/databinding/adapters/ViewBindingAdapter;->setOnClick(Landroid/view/View;Landroid/view/View$OnClickListener;Z)V
 
@@ -2655,28 +2896,49 @@
     .line 888
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->hideFnMenuCover:Landroid/view/View;
 
-    iget-object v4, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback38:Landroid/view/View$OnClickListener;
+    iget-object v4, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback32:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 889
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->macroIndicator:Landroid/widget/ImageButton;
 
-    iget-object v4, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback36:Landroid/view/View$OnClickListener;
+    iget-object v4, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback30:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v4}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 890
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->menu:Landroid/widget/Button;
 
-    iget-object v4, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback37:Landroid/view/View$OnClickListener;
+    iget-object v4, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback31:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v4}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 891
+    iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->menu:Landroid/widget/Button;
+
+    iget-object v4, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->menu:Landroid/widget/Button;
+
+    invoke-virtual {v4}, Landroid/widget/Button;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v4
+
+    const v5, 0x7f0a005a
+
+    invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getInteger(I)I
+
+    move-result v4
+
+    int-to-float v4, v4
+
+    const/high16 v5, 0x3f800000    # 1.0f
+
+    invoke-static {v0, v4, v5}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setLimitedFontSize(Landroid/widget/TextView;FF)V
+
+    .line 892
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mode:Landroid/widget/ImageButton;
 
-    iget-object v4, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback33:Landroid/view/View$OnClickListener;
+    iget-object v4, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback27:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v4}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -2689,7 +2951,7 @@
 
     if-eqz v0, :cond_41
 
-    .line 896
+    .line 897
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->macroIndicator:Landroid/widget/ImageButton;
 
     invoke-static {v0, v7}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setContentDescription(Landroid/view/View;I)V
@@ -2701,7 +2963,7 @@
 
     if-eqz v0, :cond_42
 
-    .line 901
+    .line 902
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->macroIndicator:Landroid/widget/ImageButton;
 
     invoke-static {v0, v8}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setImageResource(Landroid/widget/ImageView;I)V
@@ -2713,7 +2975,7 @@
 
     if-eqz v0, :cond_43
 
-    .line 906
+    .line 907
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->macroIndicator:Landroid/widget/ImageButton;
 
     invoke-static {v0, v6}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setVisible(Landroid/view/View;Z)V
@@ -2725,7 +2987,7 @@
 
     if-eqz v0, :cond_44
 
-    .line 911
+    .line 912
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->macroIndicator:Landroid/widget/ImageButton;
 
     invoke-static {v0, v15}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setEnabledWithAlpha(Landroid/view/View;Z)V
@@ -2737,14 +2999,14 @@
 
     if-eqz v0, :cond_45
 
-    .line 916
+    .line 917
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->menu:Landroid/widget/Button;
 
     move/from16 v14, v59
 
     invoke-static {v0, v14}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setEnabledWithAlpha(Landroid/view/View;Z)V
 
-    .line 917
+    .line 918
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mode:Landroid/widget/ImageButton;
 
     invoke-virtual {v0, v14}, Landroid/widget/ImageButton;->setEnabled(Z)V
@@ -2756,7 +3018,7 @@
 
     if-eqz v0, :cond_46
 
-    .line 922
+    .line 923
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->menu:Landroid/widget/Button;
 
     move/from16 v5, v57
@@ -2766,7 +3028,7 @@
     :cond_46
     if-eqz v58, :cond_47
 
-    .line 927
+    .line 928
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mode:Landroid/widget/ImageButton;
 
     invoke-static {v0, v10}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setImageResource(Landroid/widget/ImageView;I)V
@@ -2780,14 +3042,14 @@
 
     if-eqz v0, :cond_48
 
-    .line 932
+    .line 933
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mode:Landroid/widget/ImageButton;
 
     move/from16 v12, v55
 
     invoke-static {v0, v12}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setVisible(Landroid/view/View;Z)V
 
-    .line 933
+    .line 934
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->spaceForMode:Landroid/widget/Space;
 
     invoke-static {v0, v12}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setVisible(Landroid/view/View;Z)V
@@ -2799,7 +3061,7 @@
 
     if-eqz v0, :cond_49
 
-    .line 938
+    .line 939
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->photoLightMode:Landroid/widget/ImageButton;
 
     move/from16 v9, v56
@@ -2813,7 +3075,7 @@
 
     if-eqz v0, :cond_4a
 
-    .line 943
+    .line 944
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->photoLightMode:Landroid/widget/ImageButton;
 
     move/from16 v4, v64
@@ -2827,7 +3089,7 @@
 
     if-eqz v0, :cond_4b
 
-    .line 948
+    .line 949
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->photoLightMode:Landroid/widget/ImageButton;
 
     move/from16 v12, v65
@@ -2841,10 +3103,10 @@
 
     if-eqz v0, :cond_4c
 
-    .line 953
+    .line 954
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->photoLightMode:Landroid/widget/ImageButton;
 
-    iget-object v2, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback35:Landroid/view/View$OnClickListener;
+    iget-object v2, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback29:Landroid/view/View$OnClickListener;
 
     move/from16 v3, v66
 
@@ -2853,7 +3115,7 @@
     :cond_4c
     if-eqz v38, :cond_4d
 
-    .line 957
+    .line 958
     invoke-static {}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->getBuildSdkInt()I
 
     move-result v0
@@ -2862,7 +3124,7 @@
 
     if-lt v0, v2, :cond_4d
 
-    .line 959
+    .line 960
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->recordingDurationPortrait:Landroid/widget/LinearLayout;
 
     move-object/from16 v6, v37
@@ -2961,6 +3223,18 @@
 
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "localFieldId",
+            "object",
+            "fieldId"
+        }
+    .end annotation
 
     packed-switch p1, :pswitch_data_0
 
@@ -3184,6 +3458,14 @@
 
 .method public setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "CameraSettingsModel"
+        }
+    .end annotation
 
     .line 208
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
@@ -3193,6 +3475,14 @@
 
 .method public setCameraStatusModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "CameraStatusModel"
+        }
+    .end annotation
 
     .line 173
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
@@ -3202,6 +3492,14 @@
 
 .method public setCaptureControlUiState(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "CaptureControlUiState"
+        }
+    .end annotation
 
     .line 170
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCaptureControlUiState:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
@@ -3211,6 +3509,14 @@
 
 .method public setFlashUiState(Ljp/co/sony/mc/camera/view/uistate/FlashUiState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "FlashUiState"
+        }
+    .end annotation
 
     .line 184
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mFlashUiState:Ljp/co/sony/mc/camera/view/uistate/FlashUiState;
@@ -3233,7 +3539,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0xb
+    const/16 p1, 0xe
 
     .line 188
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->notifyPropertyChanged(I)V
@@ -3257,6 +3563,14 @@
 
 .method public setLauncherModel(Ljp/co/sony/mc/camera/view/viewmodel/LauncherModel;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "LauncherModel"
+        }
+    .end annotation
 
     .line 192
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mLauncherModel:Ljp/co/sony/mc/camera/view/viewmodel/LauncherModel;
@@ -3279,7 +3593,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x10
+    const/16 p1, 0x13
 
     .line 196
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->notifyPropertyChanged(I)V
@@ -3303,6 +3617,14 @@
 
 .method public setMacroFallbackUiState(Ljp/co/sony/mc/camera/view/uistate/MacroFallbackUiState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "MacroFallbackUiState"
+        }
+    .end annotation
 
     .line 176
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mMacroFallbackUiState:Ljp/co/sony/mc/camera/view/uistate/MacroFallbackUiState;
@@ -3325,7 +3647,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x12
+    const/16 p1, 0x15
 
     .line 180
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->notifyPropertyChanged(I)V
@@ -3349,6 +3671,14 @@
 
 .method public setModeDialUiState(Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ModeDialUiState"
+        }
+    .end annotation
 
     .line 200
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mModeDialUiState:Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;
@@ -3371,7 +3701,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x15
+    const/16 p1, 0x18
 
     .line 204
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->notifyPropertyChanged(I)V
@@ -3395,6 +3725,14 @@
 
 .method public setOrientationViewModel(Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "OrientationViewModel"
+        }
+    .end annotation
 
     .line 138
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
@@ -3417,7 +3755,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x16
+    const/16 p1, 0x19
 
     .line 142
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->notifyPropertyChanged(I)V
@@ -3441,6 +3779,14 @@
 
 .method public setProModeCommonUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ProModeCommonUiState"
+        }
+    .end annotation
 
     .line 162
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mProModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
@@ -3463,7 +3809,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x18
+    const/16 p1, 0x1b
 
     .line 166
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->notifyPropertyChanged(I)V
@@ -3487,6 +3833,14 @@
 
 .method public setProModeTopPaneUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ProModeTopPaneUiState"
+        }
+    .end annotation
 
     .line 154
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mProModeTopPaneUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;
@@ -3509,7 +3863,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x1c
+    const/16 p1, 0x1f
 
     .line 158
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->notifyPropertyChanged(I)V
@@ -3533,8 +3887,18 @@
 
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "variableId",
+            "variable"
+        }
+    .end annotation
 
-    const/16 v0, 0x16
+    const/16 v0, 0x19
 
     if-ne v0, p1, :cond_0
 
@@ -3546,7 +3910,7 @@
     goto/16 :goto_0
 
     :cond_0
-    const/16 v0, 0x25
+    const/16 v0, 0x28
 
     if-ne v0, p1, :cond_1
 
@@ -3558,7 +3922,7 @@
     goto :goto_0
 
     :cond_1
-    const/16 v0, 0x1c
+    const/16 v0, 0x1f
 
     if-ne v0, p1, :cond_2
 
@@ -3570,7 +3934,7 @@
     goto :goto_0
 
     :cond_2
-    const/16 v0, 0x18
+    const/16 v0, 0x1b
 
     if-ne v0, p1, :cond_3
 
@@ -3582,7 +3946,7 @@
     goto :goto_0
 
     :cond_3
-    const/16 v0, 0xa
+    const/16 v0, 0xd
 
     if-ne v0, p1, :cond_4
 
@@ -3594,7 +3958,7 @@
     goto :goto_0
 
     :cond_4
-    const/16 v0, 0x9
+    const/16 v0, 0xc
 
     if-ne v0, p1, :cond_5
 
@@ -3606,7 +3970,7 @@
     goto :goto_0
 
     :cond_5
-    const/16 v0, 0x12
+    const/16 v0, 0x15
 
     if-ne v0, p1, :cond_6
 
@@ -3618,7 +3982,7 @@
     goto :goto_0
 
     :cond_6
-    const/16 v0, 0xb
+    const/16 v0, 0xe
 
     if-ne v0, p1, :cond_7
 
@@ -3630,7 +3994,7 @@
     goto :goto_0
 
     :cond_7
-    const/16 v0, 0x10
+    const/16 v0, 0x13
 
     if-ne v0, p1, :cond_8
 
@@ -3642,7 +4006,7 @@
     goto :goto_0
 
     :cond_8
-    const/16 v0, 0x15
+    const/16 v0, 0x18
 
     if-ne v0, p1, :cond_9
 
@@ -3654,7 +4018,7 @@
     goto :goto_0
 
     :cond_9
-    const/16 v0, 0x8
+    const/16 v0, 0xb
 
     if-ne v0, p1, :cond_a
 
@@ -3677,6 +4041,14 @@
 
 .method public setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ViewFinderUiState"
+        }
+    .end annotation
 
     .line 146
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
@@ -3699,7 +4071,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x25
+    const/16 p1, 0x28
 
     .line 150
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->notifyPropertyChanged(I)V

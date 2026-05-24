@@ -33,10 +33,18 @@
 # direct methods
 .method constructor <init>(I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stripes"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 384
+    .line 350
     invoke-direct {p0, v0}, Lcom/google/common/util/concurrent/Striped;-><init>(Lcom/google/common/util/concurrent/Striped$1;)V
 
     const/4 v0, 0x1
@@ -50,7 +58,7 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 385
+    .line 351
     :goto_0
     const-string v2, "Stripes must be positive"
 
@@ -64,7 +72,7 @@
 
     goto :goto_1
 
-    .line 386
+    .line 352
     :cond_1
     invoke-static {p1}, Lcom/google/common/util/concurrent/Striped;->access$200(I)I
 
@@ -82,6 +90,15 @@
 # virtual methods
 .method public final get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -91,7 +108,7 @@
         }
     .end annotation
 
-    .line 397
+    .line 363
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/Striped$PowerOfTwoStriped;->indexFor(Ljava/lang/Object;)I
 
     move-result p1
@@ -105,8 +122,16 @@
 
 .method final indexFor(Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 391
+    .line 357
     invoke-virtual {p1}, Ljava/lang/Object;->hashCode()I
 
     move-result p1
@@ -115,7 +140,7 @@
 
     move-result p1
 
-    .line 392
+    .line 358
     iget p0, p0, Lcom/google/common/util/concurrent/Striped$PowerOfTwoStriped;->mask:I
 
     and-int/2addr p0, p1

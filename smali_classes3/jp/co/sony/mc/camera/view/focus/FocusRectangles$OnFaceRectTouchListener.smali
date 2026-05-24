@@ -26,93 +26,26 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 2053
+    .line 2058
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 p1, 0x0
 
-    .line 2054
+    .line 2059
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->mIsForceTouchCanceled:Z
 
     return-void
-.end method
-
-.method private isTouchAreaOnTouchCapture(Landroid/view/View;Landroid/view/MotionEvent;)Z
-    .locals 3
-
-    .line 2178
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
-
-    invoke-static {v0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmIsFaceTouchCaptureEnabled(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 2179
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
-
-    invoke-static {v0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmCaptureArea(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Landroid/view/View;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    .line 2180
-    new-instance v0, Landroid/graphics/Rect;
-
-    invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
-
-    .line 2181
-    invoke-virtual {p1, v0}, Landroid/view/View;->getGlobalVisibleRect(Landroid/graphics/Rect;)Z
-
-    .line 2182
-    new-instance p1, Landroid/graphics/Point;
-
-    .line 2183
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
-
-    move-result v1
-
-    float-to-int v1, v1
-
-    iget v2, v0, Landroid/graphics/Rect;->left:I
-
-    add-int/2addr v1, v2
-
-    .line 2184
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getY()F
-
-    move-result p2
-
-    float-to-int p2, p2
-
-    iget v0, v0, Landroid/graphics/Rect;->top:I
-
-    add-int/2addr p2, v0
-
-    invoke-direct {p1, v1, p2}, Landroid/graphics/Point;-><init>(II)V
-
-    .line 2185
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmCaptureArea(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Landroid/view/View;
-
-    move-result-object p0
-
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/util/CommonUtility;->isEventContainedInView(Landroid/view/View;Landroid/graphics/Point;)Z
-
-    move-result p0
-
-    return p0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    return p0
 .end method
 
 
@@ -122,7 +55,7 @@
 
     const/4 v0, 0x1
 
-    .line 2057
+    .line 2062
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->mIsForceTouchCanceled:Z
 
     return-void
@@ -130,8 +63,18 @@
 
 .method public onRectTouchCancel(Landroid/view/View;Landroid/view/MotionEvent;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "event"
+        }
+    .end annotation
 
-    .line 2168
+    .line 2177
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmPressedRectangle(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;
@@ -157,20 +100,20 @@
     :cond_0
     const/4 p2, 0x0
 
-    .line 2171
+    .line 2180
     invoke-virtual {p1, p2}, Landroid/view/View;->setPressed(Z)V
 
-    .line 2172
+    .line 2181
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     const/4 v0, 0x0
 
     invoke-static {p1, v0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fputmPressedRectangle(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;)V
 
-    .line 2173
+    .line 2182
     iput-boolean p2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->mIsForceTouchCanceled:Z
 
-    .line 2174
+    .line 2183
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmFocusEventListener(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Ljp/co/sony/mc/camera/view/focus/FocusActionListener;
@@ -185,9 +128,19 @@
 .end method
 
 .method public onRectTouchDown(Landroid/view/View;Landroid/view/MotionEvent;)V
-    .locals 5
+    .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "event"
+        }
+    .end annotation
 
-    .line 2062
+    .line 2067
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmPressedRectangle(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;
@@ -198,7 +151,7 @@
 
     return-void
 
-    .line 2065
+    .line 2070
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
@@ -214,78 +167,138 @@
 
     return-void
 
-    .line 2068
+    .line 2074
     :cond_1
-    invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
-    move-result-object v0
+    new-instance v1, Landroid/graphics/Point;
 
-    .line 2069
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
-
-    invoke-static {v1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Landroid/app/Activity;
-
-    move-result-object v1
-
-    .line 2070
-    invoke-static {v1}, Ljp/co/sony/mc/camera/view/viewmodel/ViewModelProviderExtensionsKt;->getViewModelProvider(Landroid/app/Activity;)Landroidx/lifecycle/ViewModelProvider;
-
-    move-result-object v1
-
-    const-class v2, Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
-
-    invoke-virtual {v1, v2}, Landroidx/lifecycle/ViewModelProvider;->get(Ljava/lang/Class;)Landroidx/lifecycle/ViewModel;
-
-    move-result-object v1
-
-    check-cast v1, Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
-
-    .line 2071
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->isFront()Z
+    .line 2075
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
 
     move-result v2
 
-    if-eqz v2, :cond_2
+    float-to-int v2, v2
 
-    .line 2072
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getY()F
 
-    move-result-object v0
+    move-result p2
 
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isBokeh()Z
+    float-to-int p2, p2
 
-    move-result v0
-
-    if-nez v0, :cond_3
-
-    .line 2073
-    :cond_2
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;->getSystemStatusModel()Ljp/co/sony/mc/camera/view/viewmodel/SystemStatusModel;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/SystemStatusModel;->isExternalDisplayConnected()Landroidx/lifecycle/LiveData;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/Boolean;
-
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_4
+    invoke-direct {v1, v2, p2}, Landroid/graphics/Point;-><init>(II)V
 
     .line 2074
+    invoke-static {v0, p1, v1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$mconvertPointCoordinatesFromThisViewToScreen(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;Landroid/view/View;Landroid/graphics/Point;)Landroid/graphics/Point;
+
+    move-result-object p2
+
+    .line 2076
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmTouchPositionAcceptableChecker(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Ljp/co/sony/mc/camera/view/FragmentController$TouchPositionAcceptableChecker;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p2}, Ljp/co/sony/mc/camera/view/FragmentController$TouchPositionAcceptableChecker;->isTouchPositionInPreciseFocusArea(Landroid/graphics/Point;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_2
+
+    return-void
+
+    .line 2079
+    :cond_2
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmTouchPositionAcceptableChecker(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Ljp/co/sony/mc/camera/view/FragmentController$TouchPositionAcceptableChecker;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p2}, Ljp/co/sony/mc/camera/view/FragmentController$TouchPositionAcceptableChecker;->isTouchPositionInAcceptableFocusArea(Landroid/graphics/Point;)Z
+
+    move-result p2
+
+    if-nez p2, :cond_3
+
+    return-void
+
+    .line 2082
     :cond_3
+    invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
+
+    move-result-object p2
+
+    .line 2083
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Landroid/app/Activity;
+
+    move-result-object v0
+
+    .line 2084
+    invoke-static {v0}, Ljp/co/sony/mc/camera/view/viewmodel/ViewModelProviderExtensionsKt;->getViewModelProvider(Landroid/app/Activity;)Landroidx/lifecycle/ViewModelProvider;
+
+    move-result-object v0
+
+    const-class v1, Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
+
+    invoke-virtual {v0, v1}, Landroidx/lifecycle/ViewModelProvider;->get(Ljava/lang/Class;)Landroidx/lifecycle/ViewModel;
+
+    move-result-object v0
+
+    check-cast v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
+
+    .line 2085
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->isFront()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_4
+
+    sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->BOKEH:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    invoke-virtual {p2, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, Ljava/lang/Boolean;
+
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p2
+
+    if-nez p2, :cond_5
+
+    .line 2086
+    :cond_4
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;->getSystemStatusModel()Ljp/co/sony/mc/camera/view/viewmodel/SystemStatusModel;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/SystemStatusModel;->isExternalDisplayConnected()Landroidx/lifecycle/LiveData;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, Ljava/lang/Boolean;
+
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p2
+
+    if-eqz p2, :cond_6
+
+    .line 2087
+    :cond_5
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmFocusEventListener(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Ljp/co/sony/mc/camera/view/focus/FocusActionListener;
@@ -296,165 +309,158 @@
 
     return-void
 
-    .line 2077
-    :cond_4
-    move-object v0, p1
+    .line 2090
+    :cond_6
+    move-object p2, p1
 
-    check-cast v0, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;
+    check-cast p2, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;
 
-    .line 2078
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->getRectangle()Ljp/co/sony/mc/camera/view/focus/RectangleView;
+    .line 2091
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->getRectangle()Ljp/co/sony/mc/camera/view/focus/RectangleView;
+
+    move-result-object p2
+
+    .line 2092
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/focus/RectangleView;->getVisibility()I
+
+    move-result p2
+
+    if-nez p2, :cond_b
+
+    .line 2093
+    iget-object p2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
+
+    invoke-static {p2}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmFaceRectangles(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Ljava/util/HashMap;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
+
+    move-result-object p2
+
+    invoke-interface {p2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object p2
+
+    :cond_7
+    invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_b
+
+    invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 2079
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/focus/RectangleView;->getVisibility()I
+    check-cast v0, Ljava/util/Map$Entry;
 
-    move-result v1
-
-    if-nez v1, :cond_9
-
-    .line 2080
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
-
-    invoke-static {v1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmFaceRectangles(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Ljava/util/HashMap;
+    .line 2094
+    invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
+    check-cast v1, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;
 
-    move-result-object v1
-
-    invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :cond_5
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+    .line 2095
+    invoke-virtual {v1, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_9
+    if-eqz v2, :cond_7
 
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    .line 2097
+    iget-object p2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
-    move-result-object v2
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->isTouchFocus()Z
 
-    check-cast v2, Ljava/util/Map$Entry;
+    move-result p2
 
-    .line 2081
-    invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    if-eqz p2, :cond_8
 
-    move-result-object v3
+    .line 2098
+    iget-object p2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
-    check-cast v3, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;
+    invoke-static {p2}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$mstartFaceDetection(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)V
 
-    .line 2082
-    invoke-virtual {v3, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    :cond_8
+    const/4 p2, 0x0
 
-    move-result v4
+    .line 2101
+    invoke-virtual {p1, p2}, Landroid/view/View;->setPressed(Z)V
 
-    if-eqz v4, :cond_5
-
-    .line 2084
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->isTouchFocus()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_6
-
-    .line 2085
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
-
-    invoke-static {v1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$mstartFaceDetection(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)V
-
-    :cond_6
-    const/4 v1, 0x0
-
-    .line 2088
-    invoke-virtual {p1, v1}, Landroid/view/View;->setPressed(Z)V
-
-    .line 2090
+    .line 2103
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
-    invoke-static {p1, v3}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fputmPressedRectangle(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;)V
+    invoke-static {p1, v1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fputmPressedRectangle(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;)V
 
-    .line 2096
+    .line 2109
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmIsFocusFramePlatformDraw(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Z
 
     move-result p1
 
-    if-nez p1, :cond_7
+    if-nez p1, :cond_9
 
-    .line 2097
-    invoke-virtual {v3}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->startRectanglePressAnimation()V
+    .line 2110
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->startRectanglePressAnimation()V
 
-    .line 2102
-    :cond_7
+    .line 2115
+    :cond_9
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmLatestSelectedFaceUuid(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Ljava/lang/String;
 
     move-result-object p1
 
-    if-eqz p1, :cond_8
+    if-eqz p1, :cond_a
 
-    .line 2103
+    .line 2116
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmLatestSelectedFaceUuid(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 2104
-    invoke-virtual {v3}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->getUuid()Ljava/lang/String;
+    .line 2117
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->getUuid()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v1
 
-    invoke-virtual {p1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
     goto :goto_0
 
-    :cond_8
-    move p1, v1
+    :cond_a
+    move p1, p2
 
-    .line 2108
+    .line 2121
     :goto_0
-    iget-object v3, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
-
-    invoke-static {v3}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmLastFaceDetectionResult(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;
-
-    move-result-object v4
-
-    invoke-static {v3, v4, v1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$mfaceResultToRectangles(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;Z)V
-
-    .line 2111
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
-    invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+    invoke-static {v1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmLastFaceDetectionResult(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;
 
     move-result-object v2
 
-    check-cast v2, Ljava/lang/String;
+    invoke-static {v1, v2, p2}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$mfaceResultToRectangles(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;Z)V
 
-    invoke-static {v1, v2}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$mchangeFacePriority(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;Ljava/lang/String;)V
+    .line 2124
+    iget-object p2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
-    .line 2115
-    invoke-direct {p0, v0, p2}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->isTouchAreaOnTouchCapture(Landroid/view/View;Landroid/view/MotionEvent;)Z
+    invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
-    move-result p2
+    move-result-object v0
 
-    if-eqz p2, :cond_9
+    check-cast v0, Ljava/lang/String;
 
-    if-eqz p1, :cond_9
+    invoke-static {p2, v0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$mchangeFacePriority(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;Ljava/lang/String;)V
 
-    .line 2118
+    if-eqz p1, :cond_b
+
+    .line 2130
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmFocusEventListener(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Ljp/co/sony/mc/camera/view/focus/FocusActionListener;
@@ -463,14 +469,24 @@
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/view/focus/FocusActionListener;->onTouched()V
 
-    :cond_9
+    :cond_b
     return-void
 .end method
 
 .method public onRectTouchLongPress(Landroid/view/View;Landroid/view/MotionEvent;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "event"
+        }
+    .end annotation
 
-    .line 2193
+    .line 2188
     sget-boolean p2, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     const/4 v0, 0x1
@@ -487,7 +503,7 @@
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 2195
+    .line 2190
     :cond_0
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
@@ -511,11 +527,11 @@
 
     goto :goto_0
 
-    .line 2199
+    .line 2194
     :cond_1
     invoke-virtual {p1, v0}, Landroid/view/View;->setPressed(Z)V
 
-    .line 2201
+    .line 2196
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmFocusEventListener(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Ljp/co/sony/mc/camera/view/focus/FocusActionListener;
@@ -530,53 +546,63 @@
 .end method
 
 .method public onRectTouchUp(Landroid/view/View;Landroid/view/MotionEvent;)V
-    .locals 3
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "event"
+        }
+    .end annotation
 
-    .line 2128
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
+    .line 2140
+    iget-object p2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
-    invoke-static {v0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmPressedRectangle(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;
+    invoke-static {p2}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmPressedRectangle(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;
 
-    move-result-object v0
+    move-result-object p2
 
-    if-eqz v0, :cond_4
+    if-eqz p2, :cond_4
 
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
+    iget-object p2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
-    invoke-static {v0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmPressedRectangle(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;
+    invoke-static {p2}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmPressedRectangle(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;
 
-    move-result-object v0
+    move-result-object p2
 
-    invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p2, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
-    move-result v0
+    move-result p2
 
-    if-nez v0, :cond_0
+    if-nez p2, :cond_0
 
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x0
+    const/4 p2, 0x0
 
-    .line 2131
-    invoke-virtual {p1, v0}, Landroid/view/View;->setPressed(Z)V
+    .line 2143
+    invoke-virtual {p1, p2}, Landroid/view/View;->setPressed(Z)V
 
-    .line 2133
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
+    .line 2145
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
-    invoke-static {v1, v2}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fputmPressedRectangle(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;)V
+    invoke-static {v0, v1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fputmPressedRectangle(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;)V
 
-    .line 2135
-    iget-boolean v1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->mIsForceTouchCanceled:Z
+    .line 2147
+    iget-boolean v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->mIsForceTouchCanceled:Z
 
-    if-eqz v1, :cond_1
+    if-eqz v0, :cond_1
 
-    .line 2136
-    iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->mIsForceTouchCanceled:Z
+    .line 2148
+    iput-boolean p2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->mIsForceTouchCanceled:Z
 
-    .line 2137
+    .line 2149
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmFocusEventListener(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Ljp/co/sony/mc/camera/view/focus/FocusActionListener;
@@ -587,67 +613,60 @@
 
     return-void
 
-    .line 2141
+    .line 2153
     :cond_1
-    move-object v0, p1
+    move-object p2, p1
 
-    check-cast v0, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;
+    check-cast p2, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;
 
-    .line 2142
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->getRectangle()Ljp/co/sony/mc/camera/view/focus/RectangleView;
+    .line 2154
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->getRectangle()Ljp/co/sony/mc/camera/view/focus/RectangleView;
+
+    move-result-object p2
+
+    .line 2155
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/focus/RectangleView;->getVisibility()I
+
+    move-result p2
+
+    if-nez p2, :cond_4
+
+    .line 2156
+    iget-object p2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
+
+    invoke-static {p2}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmFaceRectangles(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Ljava/util/HashMap;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/util/HashMap;->values()Ljava/util/Collection;
+
+    move-result-object p2
+
+    invoke-interface {p2}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
+
+    move-result-object p2
+
+    :cond_2
+    invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 2143
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/focus/RectangleView;->getVisibility()I
+    check-cast v0, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;
 
-    move-result v1
+    .line 2157
+    invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
-    if-nez v1, :cond_4
+    move-result v0
 
-    .line 2144
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
+    if-eqz v0, :cond_2
 
-    invoke-static {v1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmFaceRectangles(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Ljava/util/HashMap;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/util/HashMap;->values()Ljava/util/Collection;
-
-    move-result-object v1
-
-    invoke-interface {v1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :cond_2
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_4
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;
-
-    .line 2145
-    invoke-virtual {v2, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
-
-    .line 2148
-    invoke-direct {p0, v0, p2}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->isTouchAreaOnTouchCapture(Landroid/view/View;Landroid/view/MotionEvent;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_4
-
-    .line 2149
+    .line 2159
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmFaceReflectChecker(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker;
@@ -660,7 +679,7 @@
 
     if-eqz p1, :cond_3
 
-    .line 2150
+    .line 2160
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmFaceReflectChecker(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker;
@@ -675,7 +694,7 @@
 
     goto :goto_0
 
-    .line 2157
+    .line 2167
     :cond_3
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 

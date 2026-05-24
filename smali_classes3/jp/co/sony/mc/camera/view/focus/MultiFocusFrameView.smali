@@ -78,7 +78,7 @@
     .line 16
     invoke-direct {p0, p1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
-    const v0, 0x7f0803fa
+    const v0, 0x7f080484
 
     .line 18
     invoke-virtual {p1, v0}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;

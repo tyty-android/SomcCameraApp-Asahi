@@ -34,8 +34,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/Multimaps$MapMultimap$1;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
-    .line 1016
+    .line 1161
     iput-object p1, p0, Lcom/google/common/collect/Multimaps$MapMultimap$1$1;->this$1:Lcom/google/common/collect/Multimaps$MapMultimap$1;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -48,7 +56,7 @@
 .method public hasNext()Z
     .locals 1
 
-    .line 1021
+    .line 1166
     iget v0, p0, Lcom/google/common/collect/Multimaps$MapMultimap$1$1;->i:I
 
     if-nez v0, :cond_0
@@ -82,27 +90,30 @@
 
 .method public next()Ljava/lang/Object;
     .locals 1
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TV;"
         }
     .end annotation
 
-    .line 1026
+    .line 1172
     invoke-virtual {p0}, Lcom/google/common/collect/Multimaps$MapMultimap$1$1;->hasNext()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 1029
+    .line 1175
     iget v0, p0, Lcom/google/common/collect/Multimaps$MapMultimap$1$1;->i:I
 
     add-int/lit8 v0, v0, 0x1
 
     iput v0, p0, Lcom/google/common/collect/Multimaps$MapMultimap$1$1;->i:I
 
-    .line 1030
+    .line 1180
     iget-object v0, p0, Lcom/google/common/collect/Multimaps$MapMultimap$1$1;->this$1:Lcom/google/common/collect/Multimaps$MapMultimap$1;
 
     iget-object v0, v0, Lcom/google/common/collect/Multimaps$MapMultimap$1;->this$0:Lcom/google/common/collect/Multimaps$MapMultimap;
@@ -117,9 +128,13 @@
 
     move-result-object p0
 
+    invoke-static {p0}, Lcom/google/common/collect/NullnessCasts;->uncheckedCastNullableTToT(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
     return-object p0
 
-    .line 1027
+    .line 1173
     :cond_0
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -131,7 +146,7 @@
 .method public remove()V
     .locals 2
 
-    .line 1035
+    .line 1185
     iget v0, p0, Lcom/google/common/collect/Multimaps$MapMultimap$1$1;->i:I
 
     const/4 v1, 0x1
@@ -148,10 +163,10 @@
 
     const/4 v0, -0x1
 
-    .line 1036
+    .line 1186
     iput v0, p0, Lcom/google/common/collect/Multimaps$MapMultimap$1$1;->i:I
 
-    .line 1037
+    .line 1187
     iget-object v0, p0, Lcom/google/common/collect/Multimaps$MapMultimap$1$1;->this$1:Lcom/google/common/collect/Multimaps$MapMultimap$1;
 
     iget-object v0, v0, Lcom/google/common/collect/Multimaps$MapMultimap$1;->this$0:Lcom/google/common/collect/Multimaps$MapMultimap;

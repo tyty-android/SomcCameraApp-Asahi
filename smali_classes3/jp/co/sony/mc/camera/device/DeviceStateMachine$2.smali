@@ -22,7 +22,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 201
+    .line 216
     invoke-static {}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->values()[Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     move-result-object v0
@@ -130,7 +130,7 @@
     :try_start_6
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_EVF_PREPARED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_MAIN_PREVIEW_SURFACE_PREPARED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -146,7 +146,7 @@
     :try_start_7
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_CAMERA_DEVICE_OPENED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_SUB_PREVIEW_SURFACE_PREPARED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -162,7 +162,7 @@
     :try_start_8
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_CAMERA_DEVICE_CLOSED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_CAMERA_DEVICE_OPENED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -178,7 +178,7 @@
     :try_start_9
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_CAPTURE_SESSION_READY:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_CAMERA_DEVICE_CLOSED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -194,7 +194,7 @@
     :try_start_a
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_CAPTURE_SESSION_CONFIGURED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_CAMERA_DEVICE_CLOSED_BY_SWITCH_TO_OFFLINE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -210,7 +210,7 @@
     :try_start_b
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_CREATE_SESSION:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_CAPTURE_SESSION_READY:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -226,7 +226,7 @@
     :try_start_c
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_PREVIEW:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_CAPTURE_SESSION_CONFIGURED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -242,7 +242,7 @@
     :try_start_d
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_PREVIEW:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_CREATE_SESSION:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -258,7 +258,7 @@
     :try_start_e
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_UPDATE_REQUEST:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_PREVIEW:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -274,7 +274,7 @@
     :try_start_f
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_EVF_PREPARE_TIMEOUT:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_PREVIEW:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -290,7 +290,7 @@
     :try_start_10
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_REQUEST_PREPARE_SNAPSHOT:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_UPDATE_REQUEST:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -306,7 +306,7 @@
     :try_start_11
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_PREPARE_SNAPSHOT_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_EVF_PREPARE_TIMEOUT:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -322,7 +322,7 @@
     :try_start_12
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_REQUEST_AUTO_FOCUS:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_REQUEST_PREPARE_SNAPSHOT:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -338,7 +338,7 @@
     :try_start_13
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_CANCEL_AUTO_FOCUS:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_PREPARE_SNAPSHOT_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -354,7 +354,7 @@
     :try_start_14
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_AUTO_FOCUS_REQUESTED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_REQUEST_AUTO_FOCUS:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -370,7 +370,7 @@
     :try_start_15
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_AUTO_FOCUS_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_CANCEL_AUTO_FOCUS:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -386,7 +386,7 @@
     :try_start_16
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_AUTO_FOCUS_CANCELED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_AUTO_FOCUS_REQUESTED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -402,7 +402,7 @@
     :try_start_17
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_CAPTURE_AFTER_OBJECT_TRACKED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_AUTO_FOCUS_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -418,7 +418,7 @@
     :try_start_18
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_CAPTURE_BURST_AFTER_OBJECT_TRACKED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_AUTO_FOCUS_CANCELED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -434,7 +434,7 @@
     :try_start_19
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_OBJECT_TRACKING_LOST:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_CAPTURE_AFTER_OBJECT_TRACKED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -450,7 +450,7 @@
     :try_start_1a
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_OBJECT_TRACKED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_CAPTURE_BURST_AFTER_OBJECT_TRACKED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -466,7 +466,7 @@
     :try_start_1b
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_CAPTURE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_OBJECT_TRACKING_LOST:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -482,7 +482,7 @@
     :try_start_1c
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_CAPTURE_BURST:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_OBJECT_TRACKED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -498,7 +498,7 @@
     :try_start_1d
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_SLOW_DOWN_BURST_CAPTURE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_CAPTURE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -514,7 +514,7 @@
     :try_start_1e
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_FINISH_BURST:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_CAPTURE_BURST:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -530,7 +530,7 @@
     :try_start_1f
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_EXPOSURE_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_SLOW_DOWN_BURST_CAPTURE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -546,7 +546,7 @@
     :try_start_20
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_TAKE_PICTURE_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_FINISH_BURST:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -562,7 +562,7 @@
     :try_start_21
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_RELEASE_IMAGE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_EXPOSURE_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -578,7 +578,7 @@
     :try_start_22
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_SHUTTER_PROCESS_FAIL:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_TAKE_PICTURE_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -594,7 +594,7 @@
     :try_start_23
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_PREPARE_BURST_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_IMAGE_AVAILABLE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -610,7 +610,7 @@
     :try_start_24
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_BURST_CAPTURE_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_RELEASE_IMAGE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -626,7 +626,7 @@
     :try_start_25
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_POSEROTATION_START:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_SHUTTER_PROCESS_FAIL:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -642,7 +642,7 @@
     :try_start_26
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_POSEROTATION_STOP:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_PREPARE_BURST_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -658,7 +658,7 @@
     :try_start_27
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_CANCEL_PREPARE_SNAPSHOT:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_BURST_CAPTURE_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -674,7 +674,7 @@
     :try_start_28
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_PREPARE_SNAPSHOT_CANCELED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_POSEROTATION_START:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -690,7 +690,7 @@
     :try_start_29
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_PRE_CAPTURE_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_POSEROTATION_STOP:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -706,7 +706,7 @@
     :try_start_2a
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_CAPTURE_STARTED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_CANCEL_PREPARE_SNAPSHOT:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -722,7 +722,7 @@
     :try_start_2b
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_CAPTURE_COMPLETED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_PREPARE_SNAPSHOT_CANCELED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -738,7 +738,7 @@
     :try_start_2c
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_CHANGE_SELECTED_FACE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_PRE_CAPTURE_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -754,7 +754,7 @@
     :try_start_2d
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_OBJECT_TRACKING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_CAPTURE_STARTED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -770,7 +770,7 @@
     :try_start_2e
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_OBJECT_TRACKING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_CAPTURE_COMPLETED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -786,7 +786,7 @@
     :try_start_2f
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_FACE_DETECTION:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_CHANGE_SELECTED_FACE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -802,7 +802,7 @@
     :try_start_30
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_FACE_DETECTION:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_CANCEL_SELECTED_FACE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -818,7 +818,7 @@
     :try_start_31
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_AUTO_FLASH_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_OBJECT_TRACKING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -834,7 +834,7 @@
     :try_start_32
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_AUTO_FLASH_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_OBJECT_TRACKING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -850,7 +850,7 @@
     :try_start_33
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_AUTO_FOCUS_DISTANCE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_FACE_DETECTION:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -866,7 +866,7 @@
     :try_start_34
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_AUTO_FOCUS_DISTANCE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_FACE_DETECTION:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -882,7 +882,7 @@
     :try_start_35
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_FOCUS_MAGNIFICATION_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_AUTO_FLASH_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -898,7 +898,7 @@
     :try_start_36
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_FOCUS_MAGNIFICATION_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_AUTO_FLASH_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -914,7 +914,7 @@
     :try_start_37
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_AE_AWB_LOCK_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_AUTO_FOCUS_DISTANCE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -930,7 +930,7 @@
     :try_start_38
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_AE_AWB_LOCK_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_AUTO_FOCUS_DISTANCE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -946,7 +946,7 @@
     :try_start_39
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_BOKEH_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_FOCUS_MAGNIFICATION_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -962,7 +962,7 @@
     :try_start_3a
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_BOKEH_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_FOCUS_MAGNIFICATION_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -978,7 +978,7 @@
     :try_start_3b
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_REQUEST_PREVIEW_FRAME_PROVIDER:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_AE_AWB_LOCK_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -994,7 +994,7 @@
     :try_start_3c
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_HISTOGRAM_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_AE_AWB_LOCK_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1010,7 +1010,7 @@
     :try_start_3d
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_HISTOGRAM_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_BOKEH_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1026,7 +1026,7 @@
     :try_start_3e
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_REQUEST_HISTOGRAM_PREVIEW_FRAME:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_BOKEH_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1042,7 +1042,7 @@
     :try_start_3f
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_WB_CUSTOM:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_REQUEST_PREVIEW_FRAME_PROVIDER:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1058,7 +1058,7 @@
     :try_start_40
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_WB_CUSTOM:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_HISTOGRAM_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1074,7 +1074,7 @@
     :try_start_41
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_SEMIAUTO_ENABLED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_HISTOGRAM_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1090,7 +1090,7 @@
     :try_start_42
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_SEMIAUTO_DISABLED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_REQUEST_HISTOGRAM_PREVIEW_FRAME:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1106,7 +1106,7 @@
     :try_start_43
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_PREPARE_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_WB_CUSTOM:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1122,7 +1122,7 @@
     :try_start_44
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_RECORD_SET_OUTPUT_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_WB_CUSTOM:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1138,7 +1138,7 @@
     :try_start_45
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_SEMIAUTO_ENABLED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1154,7 +1154,7 @@
     :try_start_46
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_PAUSE_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_SEMIAUTO_DISABLED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1170,7 +1170,7 @@
     :try_start_47
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_RESUME_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_PREPARE_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1186,7 +1186,7 @@
     :try_start_48
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_AUDIO_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_RECORD_SET_OUTPUT_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1202,7 +1202,7 @@
     :try_start_49
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1218,7 +1218,7 @@
     :try_start_4a
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_VIDEO_RECORDING_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_PAUSE_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1234,7 +1234,7 @@
     :try_start_4b
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_LOW_LIGHT_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_RESUME_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1250,7 +1250,7 @@
     :try_start_4c
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_LOW_LIGHT_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_AUDIO_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1266,7 +1266,7 @@
     :try_start_4d
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_FALLBACK_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1282,7 +1282,7 @@
     :try_start_4e
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_FALLBACK_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_VIDEO_RECORDING_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1298,7 +1298,7 @@
     :try_start_4f
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_FORCE_FALLBACK_ON:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_LOW_LIGHT_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1314,7 +1314,7 @@
     :try_start_50
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_RECORDING_STOPPED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_LOW_LIGHT_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1330,7 +1330,7 @@
     :try_start_51
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_SET_STOP_RECORDING_VIBRATION:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_FALLBACK_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1346,7 +1346,7 @@
     :try_start_52
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_RECORDING_STARTED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_FALLBACK_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1362,7 +1362,7 @@
     :try_start_53
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_RECORD_READY:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_FORCE_FALLBACK_ON:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1378,7 +1378,7 @@
     :try_start_54
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_TRIGGER_SLOW_MOTION:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_RECORDING_STOPPED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1394,7 +1394,7 @@
     :try_start_55
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_RECORDING_ERROR:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_SET_STOP_RECORDING_VIBRATION:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1410,7 +1410,7 @@
     :try_start_56
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_RECORDING_SLOW_MOTION_BUTTON_RELEASE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_RECORDING_STARTED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1426,7 +1426,7 @@
     :try_start_57
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_HIGH_FRAME_RATE_RECORDING_START:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_RECORD_READY:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1442,7 +1442,7 @@
     :try_start_58
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_HIGH_FRAME_RATE_RECORDING_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_TRIGGER_SLOW_MOTION:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1458,7 +1458,7 @@
     :try_start_59
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_SET_HALF_FPS:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_RECORDING_ERROR:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1474,7 +1474,7 @@
     :try_start_5a
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_SET_COOL_MODE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_RECORDING_SLOW_MOTION_BUTTON_RELEASE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1490,7 +1490,7 @@
     :try_start_5b
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_REQUEST_UPDATE_AUDIO_DEVICE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_HIGH_FRAME_RATE_RECORDING_START:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1506,7 +1506,7 @@
     :try_start_5c
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_REQUEST_HIGH_PERFORMANCE_MODE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_HIGH_FRAME_RATE_RECORDING_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1522,7 +1522,7 @@
     :try_start_5d
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_SET_USER_SOUND_SETTING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_REQUEST_UPDATE_AUDIO_DEVICE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1538,7 +1538,7 @@
     :try_start_5e
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_UPDATE_CAMERA_PARAMETERS:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_REQUEST_HIGH_PERFORMANCE_MODE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1554,7 +1554,7 @@
     :try_start_5f
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_AUTO_FRAMING_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_SET_USER_SOUND_SETTING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1570,7 +1570,7 @@
     :try_start_60
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_AUTO_FRAMING_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_UPDATE_CAMERA_PARAMETERS:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1586,7 +1586,7 @@
     :try_start_61
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_FRAMING_ASSIST_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_AUTO_FRAMING_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1602,7 +1602,7 @@
     :try_start_62
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_FRAMING_ASSIST_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_AUTO_FRAMING_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
@@ -1615,5 +1615,133 @@
     .catch Ljava/lang/NoSuchFieldError; {:try_start_62 .. :try_end_62} :catch_62
 
     :catch_62
+    :try_start_63
+    sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
+
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_FRAMING_ASSIST_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x64
+
+    aput v2, v0, v1
+    :try_end_63
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_63 .. :try_end_63} :catch_63
+
+    :catch_63
+    :try_start_64
+    sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
+
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_FRAMING_ASSIST_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x65
+
+    aput v2, v0, v1
+    :try_end_64
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_64 .. :try_end_64} :catch_64
+
+    :catch_64
+    :try_start_65
+    sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
+
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_AI_SUGGESTION_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x66
+
+    aput v2, v0, v1
+    :try_end_65
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_65 .. :try_end_65} :catch_65
+
+    :catch_65
+    :try_start_66
+    sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
+
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_AI_SUGGESTION_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x67
+
+    aput v2, v0, v1
+    :try_end_66
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_66 .. :try_end_66} :catch_66
+
+    :catch_66
+    :try_start_67
+    sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
+
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_TRIPOD_FRAMING_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x68
+
+    aput v2, v0, v1
+    :try_end_67
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_67 .. :try_end_67} :catch_67
+
+    :catch_67
+    :try_start_68
+    sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
+
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_TRIPOD_FRAMING_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x69
+
+    aput v2, v0, v1
+    :try_end_68
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_68 .. :try_end_68} :catch_68
+
+    :catch_68
+    :try_start_69
+    sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
+
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_OFFLINE_SESSION_READY:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x6a
+
+    aput v2, v0, v1
+    :try_end_69
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_69 .. :try_end_69} :catch_69
+
+    :catch_69
+    :try_start_6a
+    sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
+
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_OFFLINE_SESSION_CLOSED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x6b
+
+    aput v2, v0, v1
+    :try_end_6a
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6a .. :try_end_6a} :catch_6a
+
+    :catch_6a
     return-void
 .end method

@@ -65,7 +65,7 @@
     .line 17
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;
 
-    const v1, 0x7f110028
+    const v1, 0x7f110027
 
     const-string v2, "FOCAL_LENGTH"
 
@@ -82,7 +82,7 @@
 
     const/4 v1, 0x1
 
-    const v2, 0x7f110029
+    const v2, 0x7f110028
 
     const-string v3, "CAPTURING_MODE"
 
@@ -95,7 +95,7 @@
 
     const/4 v1, 0x2
 
-    const v2, 0x7f11002b
+    const v2, 0x7f11002a
 
     const-string v3, "PHOTO_VIDEO"
 
@@ -108,7 +108,7 @@
 
     const/4 v1, 0x3
 
-    const v2, 0x7f11002a
+    const v2, 0x7f110029
 
     const-string v3, "FRONT"
 
@@ -121,7 +121,7 @@
 
     const/4 v1, 0x4
 
-    const v2, 0x7f110027
+    const v2, 0x7f110026
 
     const-string v3, "FOCUS_MODE"
 
@@ -141,6 +141,21 @@
 
 .method private constructor <init>(Ljava/lang/String;III)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)V"
@@ -181,6 +196,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 16
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;

@@ -162,6 +162,21 @@
 
 .method public static newInstance(Ljava/util/List;ZLjp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Boolean;)Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "items",
+            "shouldNotRemainRecentTask",
+            "initialPosition",
+            "isShowValueSettingDialog"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -197,6 +212,17 @@
 
 .method private scrollPositionByItemKey(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Z)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "itemKey",
+            "smooth"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -210,7 +236,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f09026c
+    const v1, 0x7f090277
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -288,13 +314,25 @@
 # virtual methods
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "inflater",
+            "container",
+            "savedInstanceState"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
     .line 77
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment;->setHasOptionsMenu(Z)V
 
-    const v1, 0x7f0c00ba
+    const v1, 0x7f0c00b1
 
     const/4 v2, 0x0
 
@@ -465,7 +503,7 @@
     goto :goto_2
 
     :cond_5
-    const p2, 0x7f0904a9
+    const p2, 0x7f0904aa
 
     .line 111
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -474,7 +512,7 @@
 
     check-cast p2, Landroid/widget/TextView;
 
-    const p3, 0x7f110327
+    const p3, 0x7f110370
 
     .line 112
     invoke-virtual {p2, p3}, Landroid/widget/TextView;->setText(I)V
@@ -505,7 +543,7 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment;->mItemAdapter:Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsItemAdapter;
 
-    const p2, 0x7f09026c
+    const p2, 0x7f090277
 
     .line 115
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -543,7 +581,7 @@
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment;->mCategoryAdapter:Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsCategoryAdapter;
 
-    const p3, 0x7f0900f7
+    const p3, 0x7f0900f9
 
     .line 141
     invoke-virtual {p1, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -609,7 +647,7 @@
     .line 154
     invoke-virtual {p3, v0}, Landroidx/recyclerview/widget/RecyclerView;->setItemAnimator(Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;)V
 
-    const p3, 0x7f0900a3
+    const p3, 0x7f0900ab
 
     .line 156
     invoke-virtual {p1, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -641,12 +679,29 @@
 
 .method public onItemChanged(Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "newItem"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public onItemListChanged(Ljava/util/List;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "newItems"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -819,6 +874,14 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "outState"
+        }
+    .end annotation
 
     .line 239
     const-string v0, "itemListChanged"

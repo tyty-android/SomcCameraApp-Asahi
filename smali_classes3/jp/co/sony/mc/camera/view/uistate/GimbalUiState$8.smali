@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;-><init>(Lkotlinx/coroutines/CoroutineScope;Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;Ljp/co/sony/mc/camera/view/uistate/MessageUiState;Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;Ljp/co/sony/mc/camera/view/uistate/ThermalUiState;Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;)V
+    value = Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;-><init>(Lkotlinx/coroutines/CoroutineScope;Ljp/co/sony/mc/camera/view/uistate/BasicModeSubmenuUiState;Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;Ljp/co/sony/mc/camera/view/uistate/MessageUiState;Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;Ljp/co/sony/mc/camera/view/uistate/ThermalUiState;Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -53,7 +53,7 @@
     f = "GimbalUiState.kt"
     i = {}
     l = {
-        0xee
+        0xeb
     }
     m = "invokeSuspend"
     n = {}
@@ -161,13 +161,13 @@
 .end method
 
 .method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 7
+    .locals 4
 
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 222
+    .line 234
     iget v1, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$8;->label:I
 
     const/4 v2, 0x1
@@ -192,10 +192,14 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 224
+    .line 235
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$8;->this$0:Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;
 
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->isFramingAssistEnabled()Landroidx/lifecycle/LiveData;
+    invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->access$getMessageUiState$p(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;)Ljp/co/sony/mc/camera/view/uistate/MessageUiState;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/MessageUiState;->isHintTextShown()Landroidx/lifecycle/LiveData;
 
     move-result-object p1
 
@@ -203,49 +207,11 @@
 
     move-result-object p1
 
-    .line 225
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$8;->this$0:Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;
+    new-instance v1, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$8$1;
 
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->isFramingAssistSwitched()Landroidx/lifecycle/LiveData;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroidx/lifecycle/FlowLiveDataConversions;->asFlow(Landroidx/lifecycle/LiveData;)Lkotlinx/coroutines/flow/Flow;
-
-    move-result-object v1
-
-    .line 226
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$8;->this$0:Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;
 
-    invoke-static {v3}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->access$getModeDialUiState$p(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;)Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;->isMoreModeSelectorOpened()Landroidx/lifecycle/LiveData;
-
-    move-result-object v3
-
-    invoke-static {v3}, Landroidx/lifecycle/FlowLiveDataConversions;->asFlow(Landroidx/lifecycle/LiveData;)Lkotlinx/coroutines/flow/Flow;
-
-    move-result-object v3
-
-    .line 223
-    new-instance v4, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$8$1;
-
-    iget-object v5, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$8;->this$0:Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;
-
-    const/4 v6, 0x0
-
-    invoke-direct {v4, v5, v6}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$8$1;-><init>(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;Lkotlin/coroutines/Continuation;)V
-
-    check-cast v4, Lkotlin/jvm/functions/Function4;
-
-    invoke-static {p1, v1, v3, v4}, Lkotlinx/coroutines/flow/FlowKt;->combine(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function4;)Lkotlinx/coroutines/flow/Flow;
-
-    move-result-object p1
-
-    .line 238
-    sget-object v1, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$8$2;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$8$2;
+    invoke-direct {v1, v3}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$8$1;-><init>(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;)V
 
     check-cast v1, Lkotlinx/coroutines/flow/FlowCollector;
 
@@ -263,7 +229,7 @@
 
     return-object v0
 
-    .line 239
+    .line 243
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

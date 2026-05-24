@@ -27,6 +27,20 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/GestureShutter;Landroid/graphics/Rect;II)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "initialFrame",
+            "detectionWidth",
+            "detectionHeight"
+        }
+    .end annotation
 
     .line 322
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/GestureShutter$StateRecognitionProceeding;->this$0:Ljp/co/sony/mc/camera/view/GestureShutter;
@@ -115,6 +129,14 @@
 
 .method handleDetectResult(Ljp/co/sony/mc/camera/CameraStatusNotifier$HandDetectionResult;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 
     .line 345
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/GestureShutter$StateRecognitionProceeding;->this$0:Ljp/co/sony/mc/camera/view/GestureShutter;

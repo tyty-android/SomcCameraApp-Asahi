@@ -42,6 +42,18 @@
 
 .method public constructor <init>(Landroid/os/Handler;Ljp/co/sony/mc/camera/device/CaptureResultNotifier$CropRegionCallback;Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "handler",
+            "callback",
+            "shouldWaitRequestMatch"
+        }
+    .end annotation
 
     .line 45
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/device/CaptureResultCheckerBase;-><init>(Landroid/os/Handler;)V
@@ -76,6 +88,18 @@
 
 .method private expectSimilarValues(IIF)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "actualValue",
+            "expectedValue",
+            "errorPercent"
+        }
+    .end annotation
 
     int-to-float p0, p1
 
@@ -124,6 +148,18 @@
 
 .method private expectedRectIsSimilar(Landroid/graphics/Rect;Landroid/graphics/Rect;F)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expected",
+            "actual",
+            "errorPercent"
+        }
+    .end annotation
 
     .line 114
     invoke-virtual {p2}, Landroid/graphics/Rect;->width()I
@@ -206,6 +242,16 @@
 
 .method private isCropRegionChanged(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "expected",
+            "actual"
+        }
+    .end annotation
 
     const v0, 0x3c23d70a    # 0.01f
 
@@ -223,6 +269,16 @@
 # virtual methods
 .method public checkOnCompleted(Landroid/hardware/camera2/CaptureRequest;Ljp/co/sony/mc/camera/device/CaptureResultHolder;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "resultHolder"
+        }
+    .end annotation
 
     .line 54
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CaptureResultHolder;->getLatest()Landroid/hardware/camera2/CaptureResult;

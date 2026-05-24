@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 273
     iput-object p1, p0, Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver$ServiceConnectionSysmon;->this$0:Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver;
@@ -37,6 +45,16 @@
 # virtual methods
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "name",
+            "service"
+        }
+    .end annotation
 
     .line 276
     iget-object p1, p0, Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver$ServiceConnectionSysmon;->this$0:Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver;
@@ -185,6 +203,14 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 320
     iget-object p0, p0, Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver$ServiceConnectionSysmon;->this$0:Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver;

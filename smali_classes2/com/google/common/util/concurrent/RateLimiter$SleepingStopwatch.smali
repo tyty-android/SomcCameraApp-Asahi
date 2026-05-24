@@ -18,7 +18,7 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 401
+    .line 470
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -27,7 +27,7 @@
 .method public static createFromSystemTimer()Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;
     .locals 1
 
-    .line 413
+    .line 482
     new-instance v0, Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch$1;
 
     invoke-direct {v0}, Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch$1;-><init>()V
@@ -41,4 +41,12 @@
 .end method
 
 .method protected abstract sleepMicrosUninterruptibly(J)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "micros"
+        }
+    .end annotation
 .end method

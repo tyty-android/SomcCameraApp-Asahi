@@ -20,6 +20,17 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;Ljava/util/ArrayList;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "tutorialDialogType",
+            "pageList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -46,6 +57,18 @@
 # virtual methods
 .method public destroyItem(Landroid/view/ViewGroup;ILjava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "container",
+            "position",
+            "object"
+        }
+    .end annotation
 
     .line 54
     check-cast p3, Landroid/view/View;
@@ -70,6 +93,14 @@
 
 .method public getPageView(I)Landroid/view/View;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
     .line 33
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogAdapter;->mPagesList:Ljava/util/ArrayList;
@@ -94,6 +125,16 @@
 
 .method public instantiateItem(Landroid/view/ViewGroup;I)Ljava/lang/Object;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "container",
+            "position"
+        }
+    .end annotation
 
     .line 48
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogAdapter;->mPagesList:Ljava/util/ArrayList;
@@ -118,6 +159,16 @@
 
 .method public isViewFromObject(Landroid/view/View;Ljava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "object"
+        }
+    .end annotation
 
     if-ne p1, p2, :cond_0
 

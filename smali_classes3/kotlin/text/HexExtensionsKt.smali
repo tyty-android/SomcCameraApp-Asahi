@@ -5,31 +5,48 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nHexExtensions.kt\nKotlin\n*S Kotlin\n*F\n+ 1 HexExtensions.kt\nkotlin/text/HexExtensionsKt\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 _Strings.kt\nkotlin/text/StringsKt___StringsKt\n*L\n1#1,1050:1\n998#1,7:1052\n998#1,7:1059\n998#1,7:1066\n998#1,7:1073\n998#1,7:1080\n998#1,7:1087\n998#1,7:1094\n998#1,7:1101\n1009#1,5:1108\n1009#1,5:1113\n998#1,7:1118\n998#1,7:1125\n1009#1,5:1132\n1018#1,5:1137\n1#2:1051\n1188#3,3:1142\n1188#3,3:1145\n1188#3,3:1148\n1188#3,3:1151\n*S KotlinDebug\n*F\n+ 1 HexExtensions.kt\nkotlin/text/HexExtensionsKt\n*L\n418#1:1052,7\n451#1:1059,7\n455#1:1066,7\n458#1:1073,7\n499#1:1080,7\n502#1:1087,7\n507#1:1094,7\n512#1:1101,7\n519#1:1108,5\n520#1:1113,5\n967#1:1118,7\n969#1:1125,7\n983#1:1132,5\n991#1:1137,5\n42#1:1142,3\n43#1:1145,3\n54#1:1148,3\n55#1:1151,3\n*E\n"
+    value = "SMAP\nHexExtensions.kt\nKotlin\n*S Kotlin\n*F\n+ 1 HexExtensions.kt\nkotlin/text/HexExtensionsKt\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 _Strings.kt\nkotlin/text/StringsKt___StringsKt\n*L\n1#1,1249:1\n1198#1,7:1251\n1198#1,7:1258\n1198#1,7:1265\n1198#1,7:1272\n1198#1,7:1279\n1198#1,7:1286\n1198#1,7:1293\n1198#1,7:1300\n1209#1,5:1307\n1209#1,5:1312\n1198#1,7:1317\n1198#1,7:1324\n1209#1,5:1331\n1218#1,5:1336\n1#2:1250\n1188#3,3:1341\n1188#3,3:1344\n1188#3,3:1347\n1188#3,3:1350\n*S KotlinDebug\n*F\n+ 1 HexExtensions.kt\nkotlin/text/HexExtensionsKt\n*L\n457#1:1251,7\n490#1:1258,7\n494#1:1265,7\n497#1:1272,7\n538#1:1279,7\n541#1:1286,7\n546#1:1293,7\n551#1:1300,7\n558#1:1307,5\n559#1:1312,5\n1153#1:1317,7\n1155#1:1324,7\n1183#1:1331,5\n1191#1:1336,5\n43#1:1341,3\n44#1:1344,3\n55#1:1347,3\n56#1:1350,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000v\n\u0000\n\u0002\u0010\u0015\n\u0002\u0008\u0003\n\u0002\u0010\u0016\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0002\n\u0002\u0010\t\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0013\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u0008\n\u0002\u0010\u0012\n\u0002\u0008\u0002\n\u0002\u0010\u0019\n\u0002\u0008\u0004\n\u0002\u0010\u0005\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0010\n\n\u0002\u0008\u0005\n\u0002\u0010\u0001\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0007\u001a \u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\u000c\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\rH\u0002\u001a\u0010\u0010\u000f\u001a\u00020\r2\u0006\u0010\u0010\u001a\u00020\nH\u0002\u001a(\u0010\u0011\u001a\u00020\r2\u0006\u0010\u0012\u001a\u00020\r2\u0006\u0010\u0013\u001a\u00020\r2\u0006\u0010\u0014\u001a\u00020\r2\u0006\u0010\u0015\u001a\u00020\rH\u0002\u001a@\u0010\u0011\u001a\u00020\r2\u0006\u0010\u0012\u001a\u00020\r2\u0006\u0010\u0016\u001a\u00020\r2\u0006\u0010\u0017\u001a\u00020\r2\u0006\u0010\u0018\u001a\u00020\r2\u0006\u0010\u0013\u001a\u00020\r2\u0006\u0010\u0014\u001a\u00020\r2\u0006\u0010\u0015\u001a\u00020\rH\u0000\u001a@\u0010\u0019\u001a\u00020\r2\u0006\u0010\u001a\u001a\u00020\r2\u0006\u0010\u0016\u001a\u00020\r2\u0006\u0010\u0017\u001a\u00020\r2\u0006\u0010\u0018\u001a\u00020\r2\u0006\u0010\u0013\u001a\u00020\r2\u0006\u0010\u0014\u001a\u00020\r2\u0006\u0010\u0015\u001a\u00020\rH\u0000\u001a \u0010\u001b\u001a\u00020\n2\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\u000e\u001a\u00020\rH\u0002\u001a5\u0010\u001c\u001a\u00020\r*\u00020\u00072\u0006\u0010\u001d\u001a\u00020\r2\u0006\u0010\u001e\u001a\u00020\r2\u0006\u0010\u001f\u001a\u00020\u00072\u0006\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020\u0007H\u0082\u0008\u001a$\u0010#\u001a\u00020$*\u00020\u00072\u0006\u0010%\u001a\u00020\r2\u0006\u0010\u001e\u001a\u00020\r2\u0006\u0010&\u001a\u00020\rH\u0002\u001a\u001c\u0010\'\u001a\u00020\r*\u00020\u00072\u0006\u0010\u001d\u001a\u00020\r2\u0006\u0010\u001e\u001a\u00020\rH\u0002\u001a<\u0010(\u001a\u00020$*\u00020\u00072\u0006\u0010%\u001a\u00020\r2\u0006\u0010\u001e\u001a\u00020\r2\u0006\u0010)\u001a\u00020\u00072\u0006\u0010*\u001a\u00020\u00072\u0006\u0010 \u001a\u00020!2\u0006\u0010&\u001a\u00020\rH\u0002\u001a\u0015\u0010+\u001a\u00020\r*\u00020\u00072\u0006\u0010\u001d\u001a\u00020\rH\u0082\u0008\u001a,\u0010,\u001a\u00020\r*\u00020-2\u0006\u0010\u001d\u001a\u00020\r2\u0006\u0010.\u001a\u00020\u00012\u0006\u0010/\u001a\u0002002\u0006\u00101\u001a\u00020\rH\u0002\u001a<\u0010,\u001a\u00020\r*\u00020-2\u0006\u0010\u001d\u001a\u00020\r2\u0006\u00102\u001a\u00020\u00072\u0006\u00103\u001a\u00020\u00072\u0006\u0010.\u001a\u00020\u00012\u0006\u0010/\u001a\u0002002\u0006\u00101\u001a\u00020\rH\u0002\u001a*\u00104\u001a\u000205*\u00020\u00072\u0008\u0008\u0002\u0010%\u001a\u00020\r2\u0008\u0008\u0002\u0010\u001e\u001a\u00020\r2\u0008\u0008\u0002\u00106\u001a\u000207H\u0003\u001a\u0016\u00104\u001a\u000205*\u00020\u00072\u0008\u0008\u0002\u00106\u001a\u000207H\u0007\u001a*\u00108\u001a\u00020-*\u00020\u00072\u0008\u0008\u0002\u0010%\u001a\u00020\r2\u0008\u0008\u0002\u0010\u001e\u001a\u00020\r2\u0008\u0008\u0002\u00106\u001a\u000207H\u0003\u001a\u0016\u00108\u001a\u00020-*\u00020\u00072\u0008\u0008\u0002\u00106\u001a\u000207H\u0007\u001a&\u00109\u001a\u0004\u0018\u00010-*\u00020\u00072\u0006\u0010%\u001a\u00020\r2\u0006\u0010\u001e\u001a\u00020\r2\u0006\u0010:\u001a\u00020;H\u0003\u001a&\u0010<\u001a\u0004\u0018\u00010-*\u00020\u00072\u0006\u0010%\u001a\u00020\r2\u0006\u0010\u001e\u001a\u00020\r2\u0006\u0010:\u001a\u00020;H\u0003\u001a&\u0010=\u001a\u0004\u0018\u00010-*\u00020\u00072\u0006\u0010%\u001a\u00020\r2\u0006\u0010\u001e\u001a\u00020\r2\u0006\u0010:\u001a\u00020;H\u0003\u001a$\u0010>\u001a\u00020-*\u00020\u00072\u0006\u0010%\u001a\u00020\r2\u0006\u0010\u001e\u001a\u00020\r2\u0006\u0010:\u001a\u00020;H\u0003\u001a*\u0010?\u001a\u00020\r*\u00020\u00072\u0008\u0008\u0002\u0010%\u001a\u00020\r2\u0008\u0008\u0002\u0010\u001e\u001a\u00020\r2\u0008\u0008\u0002\u00106\u001a\u000207H\u0003\u001a\u0016\u0010?\u001a\u00020\r*\u00020\u00072\u0008\u0008\u0002\u00106\u001a\u000207H\u0007\u001a,\u0010@\u001a\u00020\r*\u00020\u00072\u0006\u0010%\u001a\u00020\r2\u0006\u0010\u001e\u001a\u00020\r2\u0006\u00106\u001a\u0002072\u0006\u0010&\u001a\u00020\rH\u0003\u001a*\u0010A\u001a\u00020\n*\u00020\u00072\u0008\u0008\u0002\u0010%\u001a\u00020\r2\u0008\u0008\u0002\u0010\u001e\u001a\u00020\r2\u0008\u0008\u0002\u00106\u001a\u000207H\u0003\u001a\u0016\u0010A\u001a\u00020\n*\u00020\u00072\u0008\u0008\u0002\u00106\u001a\u000207H\u0007\u001a,\u0010B\u001a\u00020\n*\u00020\u00072\u0006\u0010%\u001a\u00020\r2\u0006\u0010\u001e\u001a\u00020\r2\u0006\u00106\u001a\u0002072\u0006\u0010&\u001a\u00020\rH\u0003\u001a*\u0010C\u001a\u00020D*\u00020\u00072\u0008\u0008\u0002\u0010%\u001a\u00020\r2\u0008\u0008\u0002\u0010\u001e\u001a\u00020\r2\u0008\u0008\u0002\u00106\u001a\u000207H\u0003\u001a\u0016\u0010C\u001a\u00020D*\u00020\u00072\u0008\u0008\u0002\u00106\u001a\u000207H\u0007\u001a\u0015\u0010E\u001a\u00020\n*\u00020\u00072\u0006\u0010\u001d\u001a\u00020\rH\u0082\u0008\u001a\u0014\u0010F\u001a\u000205*\u00020\u00072\u0006\u0010\u001d\u001a\u00020\rH\u0002\u001a\u001c\u0010G\u001a\u00020\r*\u00020\u00072\u0006\u0010%\u001a\u00020\r2\u0006\u0010\u001e\u001a\u00020\rH\u0002\u001a\u001c\u0010H\u001a\u00020\n*\u00020\u00072\u0006\u0010%\u001a\u00020\r2\u0006\u0010\u001e\u001a\u00020\rH\u0002\u001a\u0014\u0010I\u001a\u00020J*\u00020\u00072\u0006\u0010\u001d\u001a\u00020\rH\u0002\u001a,\u0010K\u001a\u00020$*\u00020\u00072\u0006\u0010%\u001a\u00020\r2\u0006\u0010\u001e\u001a\u00020\r2\u0006\u0010&\u001a\u00020\r2\u0006\u0010L\u001a\u00020!H\u0002\u001a,\u0010M\u001a\u00020$*\u00020\u00072\u0006\u0010%\u001a\u00020\r2\u0006\u0010\u001e\u001a\u00020\r2\u0006\u0010)\u001a\u00020\u00072\u0006\u0010*\u001a\u00020\u0007H\u0002\u001a,\u0010N\u001a\u00020$*\u00020\u00072\u0006\u0010\u001d\u001a\u00020\r2\u0006\u0010\u001e\u001a\u00020\r2\u0006\u0010\u001f\u001a\u00020\u00072\u0006\u0010\"\u001a\u00020\u0007H\u0002\u001a\u001c\u0010O\u001a\u00020\r*\u00020\u00072\u0006\u0010/\u001a\u0002002\u0006\u00101\u001a\u00020\rH\u0002\u001a\u0016\u0010P\u001a\u00020\u0007*\u0002052\u0008\u0008\u0002\u00106\u001a\u000207H\u0007\u001a*\u0010P\u001a\u00020\u0007*\u00020-2\u0008\u0008\u0002\u0010%\u001a\u00020\r2\u0008\u0008\u0002\u0010\u001e\u001a\u00020\r2\u0008\u0008\u0002\u00106\u001a\u000207H\u0007\u001a\u0016\u0010P\u001a\u00020\u0007*\u00020-2\u0008\u0008\u0002\u00106\u001a\u000207H\u0007\u001a\u0016\u0010P\u001a\u00020\u0007*\u00020\r2\u0008\u0008\u0002\u00106\u001a\u000207H\u0007\u001a\u0016\u0010P\u001a\u00020\u0007*\u00020\n2\u0008\u0008\u0002\u00106\u001a\u000207H\u0007\u001a\u0016\u0010P\u001a\u00020\u0007*\u00020D2\u0008\u0008\u0002\u00106\u001a\u000207H\u0007\u001a$\u0010Q\u001a\u00020\u0007*\u00020\n2\u0006\u0010R\u001a\u00020S2\u0006\u0010T\u001a\u00020\u00072\u0006\u0010U\u001a\u00020\rH\u0003\u001a,\u0010V\u001a\u00020\u0007*\u00020-2\u0006\u0010%\u001a\u00020\r2\u0006\u0010\u001e\u001a\u00020\r2\u0006\u0010:\u001a\u00020;2\u0006\u0010.\u001a\u00020\u0001H\u0003\u001a,\u0010W\u001a\u00020\u0007*\u00020-2\u0006\u0010%\u001a\u00020\r2\u0006\u0010\u001e\u001a\u00020\r2\u0006\u0010:\u001a\u00020;2\u0006\u0010.\u001a\u00020\u0001H\u0003\u001a,\u0010X\u001a\u00020\u0007*\u00020-2\u0006\u0010%\u001a\u00020\r2\u0006\u0010\u001e\u001a\u00020\r2\u0006\u0010:\u001a\u00020;2\u0006\u0010.\u001a\u00020\u0001H\u0003\u001a,\u0010Y\u001a\u00020\u0007*\u00020-2\u0006\u0010%\u001a\u00020\r2\u0006\u0010\u001e\u001a\u00020\r2\u0006\u0010:\u001a\u00020;2\u0006\u0010.\u001a\u00020\u0001H\u0003\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0001X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0003\u001a\u00020\u0001X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0006\u001a\u00020\u0007X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0008\u001a\u00020\u0007X\u0082T\u00a2\u0006\u0002\n\u0000\u00a8\u0006Z"
+        "\u0000r\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0002\n\u0002\u0010\u0015\n\u0002\u0008\u0007\n\u0002\u0010\u0016\n\u0000\n\u0002\u0010\u0012\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\t\n\u0002\u0010\u0019\n\u0002\u0008\u000b\n\u0002\u0010\t\n\u0002\u0008\u0006\n\u0002\u0010\u0005\n\u0002\u0008\t\n\u0002\u0010\n\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u000f\n\u0002\u0010\u0001\n\u0000\u001a\u0016\u0010\r\u001a\u00020\u0001*\u00020\u000e2\u0008\u0008\u0002\u0010\u000f\u001a\u00020\u0010H\u0007\u001a*\u0010\r\u001a\u00020\u0001*\u00020\u000e2\u0008\u0008\u0002\u0010\u0011\u001a\u00020\u00122\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u00122\u0008\u0008\u0002\u0010\u000f\u001a\u00020\u0010H\u0007\u001a,\u0010\u0014\u001a\u00020\u0001*\u00020\u000e2\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00122\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0004H\u0003\u001a,\u0010\u0018\u001a\u00020\u0001*\u00020\u000e2\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00122\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0004H\u0003\u001a,\u0010\u0019\u001a\u00020\u0001*\u00020\u000e2\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00122\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0004H\u0003\u001a,\u0010\u001a\u001a\u00020\u0001*\u00020\u000e2\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00122\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0004H\u0003\u001a<\u0010\u001b\u001a\u00020\u0012*\u00020\u000e2\u0006\u0010\u001c\u001a\u00020\u00122\u0006\u0010\u001d\u001a\u00020\u00012\u0006\u0010\u001e\u001a\u00020\u00012\u0006\u0010\u0017\u001a\u00020\u00042\u0006\u0010\u001f\u001a\u00020 2\u0006\u0010!\u001a\u00020\u0012H\u0002\u001a,\u0010\u001b\u001a\u00020\u0012*\u00020\u000e2\u0006\u0010\u001c\u001a\u00020\u00122\u0006\u0010\u0017\u001a\u00020\u00042\u0006\u0010\u001f\u001a\u00020 2\u0006\u0010!\u001a\u00020\u0012H\u0002\u001a(\u0010\"\u001a\u00020\u00122\u0006\u0010#\u001a\u00020\u00122\u0006\u0010$\u001a\u00020\u00122\u0006\u0010%\u001a\u00020\u00122\u0006\u0010&\u001a\u00020\u0012H\u0002\u001a@\u0010\"\u001a\u00020\u00122\u0006\u0010#\u001a\u00020\u00122\u0006\u0010\'\u001a\u00020\u00122\u0006\u0010(\u001a\u00020\u00122\u0006\u0010)\u001a\u00020\u00122\u0006\u0010$\u001a\u00020\u00122\u0006\u0010%\u001a\u00020\u00122\u0006\u0010&\u001a\u00020\u0012H\u0000\u001a\u0010\u0010*\u001a\u00020\u00122\u0006\u0010+\u001a\u00020,H\u0002\u001a\u0016\u0010-\u001a\u00020\u000e*\u00020\u00012\u0008\u0008\u0002\u0010\u000f\u001a\u00020\u0010H\u0007\u001a*\u0010-\u001a\u00020\u000e*\u00020\u00012\u0008\u0008\u0002\u0010\u0011\u001a\u00020\u00122\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u00122\u0008\u0008\u0002\u0010\u000f\u001a\u00020\u0010H\u0003\u001a&\u0010.\u001a\u0004\u0018\u00010\u000e*\u00020\u00012\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00122\u0006\u0010\u0015\u001a\u00020\u0016H\u0003\u001a&\u0010/\u001a\u0004\u0018\u00010\u000e*\u00020\u00012\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00122\u0006\u0010\u0015\u001a\u00020\u0016H\u0003\u001a&\u00100\u001a\u0004\u0018\u00010\u000e*\u00020\u00012\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00122\u0006\u0010\u0015\u001a\u00020\u0016H\u0003\u001a$\u00101\u001a\u00020\u000e*\u00020\u00012\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00122\u0006\u0010\u0015\u001a\u00020\u0016H\u0003\u001a\u0014\u00102\u001a\u000203*\u00020\u00012\u0006\u0010\u001c\u001a\u00020\u0012H\u0002\u001a@\u00104\u001a\u00020\u00122\u0006\u00105\u001a\u00020\u00122\u0006\u0010\'\u001a\u00020\u00122\u0006\u0010(\u001a\u00020\u00122\u0006\u0010)\u001a\u00020\u00122\u0006\u0010$\u001a\u00020\u00122\u0006\u0010%\u001a\u00020\u00122\u0006\u0010&\u001a\u00020\u0012H\u0000\u001a \u00106\u001a\u00020,2\u0006\u00107\u001a\u00020,2\u0006\u00108\u001a\u00020\u00122\u0006\u00109\u001a\u00020\u0012H\u0002\u001a \u0010:\u001a\u00020,2\u0006\u00106\u001a\u00020,2\u0006\u00107\u001a\u00020,2\u0006\u00109\u001a\u00020\u0012H\u0002\u001a\u001c\u0010;\u001a\u00020\u0012*\u00020\u00012\u0006\u0010\u001c\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0012H\u0002\u001a\u0016\u0010\r\u001a\u00020\u0001*\u0002032\u0008\u0008\u0002\u0010\u000f\u001a\u00020\u0010H\u0007\u001a\u0016\u0010<\u001a\u000203*\u00020\u00012\u0008\u0008\u0002\u0010\u000f\u001a\u00020\u0010H\u0007\u001a*\u0010<\u001a\u000203*\u00020\u00012\u0008\u0008\u0002\u0010\u0011\u001a\u00020\u00122\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u00122\u0008\u0008\u0002\u0010\u000f\u001a\u00020\u0010H\u0003\u001a\u0016\u0010\r\u001a\u00020\u0001*\u00020=2\u0008\u0008\u0002\u0010\u000f\u001a\u00020\u0010H\u0007\u001a\u0016\u0010>\u001a\u00020=*\u00020\u00012\u0008\u0008\u0002\u0010\u000f\u001a\u00020\u0010H\u0007\u001a*\u0010>\u001a\u00020=*\u00020\u00012\u0008\u0008\u0002\u0010\u0011\u001a\u00020\u00122\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u00122\u0008\u0008\u0002\u0010\u000f\u001a\u00020\u0010H\u0003\u001a\u0016\u0010\r\u001a\u00020\u0001*\u00020\u00122\u0008\u0008\u0002\u0010\u000f\u001a\u00020\u0010H\u0007\u001a\u0016\u0010?\u001a\u00020\u0012*\u00020\u00012\u0008\u0008\u0002\u0010\u000f\u001a\u00020\u0010H\u0007\u001a*\u0010?\u001a\u00020\u0012*\u00020\u00012\u0008\u0008\u0002\u0010\u0011\u001a\u00020\u00122\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u00122\u0008\u0008\u0002\u0010\u000f\u001a\u00020\u0010H\u0003\u001a\u0016\u0010\r\u001a\u00020\u0001*\u00020,2\u0008\u0008\u0002\u0010\u000f\u001a\u00020\u0010H\u0007\u001a\u0016\u0010@\u001a\u00020,*\u00020\u00012\u0008\u0008\u0002\u0010\u000f\u001a\u00020\u0010H\u0007\u001a*\u0010@\u001a\u00020,*\u00020\u00012\u0008\u0008\u0002\u0010\u0011\u001a\u00020\u00122\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u00122\u0008\u0008\u0002\u0010\u000f\u001a\u00020\u0010H\u0001\u001a$\u0010A\u001a\u00020\u0001*\u00020,2\u0006\u0010B\u001a\u00020C2\u0006\u0010D\u001a\u00020\u00012\u0006\u0010E\u001a\u00020\u0012H\u0003\u001a\u001c\u0010F\u001a\u00020\u0012*\u00020\u00012\u0006\u0010\u001f\u001a\u00020 2\u0006\u0010!\u001a\u00020\u0012H\u0002\u001a,\u0010G\u001a\u00020\u0012*\u00020\u00012\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00122\u0006\u0010\u000f\u001a\u00020\u00102\u0006\u0010H\u001a\u00020\u0012H\u0003\u001a,\u0010I\u001a\u00020,*\u00020\u00012\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00122\u0006\u0010\u000f\u001a\u00020\u00102\u0006\u0010H\u001a\u00020\u0012H\u0003\u001a<\u0010J\u001a\u00020K*\u00020\u00012\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00122\u0006\u0010L\u001a\u00020\u00012\u0006\u0010M\u001a\u00020\u00012\u0006\u0010N\u001a\u00020O2\u0006\u0010H\u001a\u00020\u0012H\u0002\u001a$\u0010P\u001a\u00020K*\u00020\u00012\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00122\u0006\u0010H\u001a\u00020\u0012H\u0002\u001a\u001c\u0010Q\u001a\u00020K*\u00020\u00012\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0012H\u0002\u001a\u001c\u0010R\u001a\u00020\u0012*\u00020\u00012\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0012H\u0002\u001a\u001c\u0010S\u001a\u00020,*\u00020\u00012\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0012H\u0002\u001a5\u0010T\u001a\u00020\u0012*\u00020\u00012\u0006\u0010\u001c\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00122\u0006\u0010U\u001a\u00020\u00012\u0006\u0010N\u001a\u00020O2\u0006\u0010V\u001a\u00020\u0001H\u0082\u0008\u001a\u0015\u0010W\u001a\u00020\u0012*\u00020\u00012\u0006\u0010\u001c\u001a\u00020\u0012H\u0082\u0008\u001a\u0015\u0010X\u001a\u00020,*\u00020\u00012\u0006\u0010\u001c\u001a\u00020\u0012H\u0082\u0008\u001a,\u0010Y\u001a\u00020K*\u00020\u00012\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00122\u0006\u0010Z\u001a\u00020\u00012\u0006\u0010[\u001a\u00020\u0012H\u0002\u001a,\u0010\\\u001a\u00020K*\u00020\u00012\u0006\u0010\u001c\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00122\u0006\u0010U\u001a\u00020\u00012\u0006\u0010V\u001a\u00020\u0001H\u0002\u001a,\u0010]\u001a\u00020K*\u00020\u00012\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00122\u0006\u0010L\u001a\u00020\u00012\u0006\u0010M\u001a\u00020\u0001H\u0002\u001a\u0014\u0010^\u001a\u00020_*\u00020\u00012\u0006\u0010\u001c\u001a\u00020\u0012H\u0002\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u001c\u0010\u0003\u001a\u00020\u00048\u0000X\u0081\u0004\u00a2\u0006\u000e\n\u0000\u0012\u0004\u0008\u0005\u0010\u0006\u001a\u0004\u0008\u0007\u0010\u0008\"\u000e\u0010\t\u001a\u00020\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\n\u001a\u00020\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u000b\u001a\u00020\u000cX\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006`"
     }
     d2 = {
+        "LOWER_CASE_HEX_DIGITS",
+        "",
+        "UPPER_CASE_HEX_DIGITS",
         "BYTE_TO_LOWER_CASE_HEX_DIGITS",
         "",
+        "getBYTE_TO_LOWER_CASE_HEX_DIGITS$annotations",
+        "()V",
+        "getBYTE_TO_LOWER_CASE_HEX_DIGITS",
+        "()[I",
         "BYTE_TO_UPPER_CASE_HEX_DIGITS",
         "HEX_DIGITS_TO_DECIMAL",
         "HEX_DIGITS_TO_LONG_DECIMAL",
         "",
-        "LOWER_CASE_HEX_DIGITS",
+        "toHexString",
         "",
-        "UPPER_CASE_HEX_DIGITS",
-        "charsPerSet",
+        "format",
+        "Lkotlin/text/HexFormat;",
+        "startIndex",
         "",
-        "charsPerElement",
-        "elementsPerSet",
+        "endIndex",
+        "toHexStringNoLineAndGroupSeparator",
+        "bytesFormat",
+        "Lkotlin/text/HexFormat$BytesHexFormat;",
+        "byteToDigits",
+        "toHexStringShortByteSeparatorNoPrefixAndSuffix",
+        "toHexStringNoLineAndGroupSeparatorSlowPath",
+        "toHexStringSlowPath",
+        "formatByteAt",
+        "index",
+        "bytePrefix",
+        "byteSuffix",
+        "destination",
         "",
-        "elementSeparatorLength",
-        "checkFormatLength",
-        "formatLength",
+        "destinationOffset",
         "formattedStringLength",
         "numberOfBytes",
         "byteSeparatorLength",
@@ -38,77 +55,66 @@
         "bytesPerLine",
         "bytesPerGroup",
         "groupSeparatorLength",
-        "parsedByteArrayMaxSize",
-        "stringLength",
-        "wholeElementsPerSet",
-        "checkContainsAt",
-        "index",
-        "endIndex",
-        "part",
-        "ignoreCase",
+        "checkFormatLength",
+        "formatLength",
         "",
-        "partName",
-        "checkMaxDigits",
-        "",
-        "startIndex",
-        "maxDigits",
-        "checkNewLineAt",
-        "checkPrefixSuffixMaxDigits",
-        "prefix",
-        "suffix",
-        "decimalFromHexDigitAt",
-        "formatByteAt",
-        "",
-        "byteToDigits",
-        "destination",
-        "",
-        "destinationOffset",
-        "bytePrefix",
-        "byteSuffix",
-        "hexToByte",
-        "",
-        "format",
-        "Lkotlin/text/HexFormat;",
         "hexToByteArray",
         "hexToByteArrayNoLineAndGroupSeparator",
-        "bytesFormat",
-        "Lkotlin/text/HexFormat$BytesHexFormat;",
-        "hexToByteArrayNoLineAndGroupSeparatorSlowPath",
         "hexToByteArrayShortByteSeparatorNoPrefixAndSuffix",
+        "hexToByteArrayNoLineAndGroupSeparatorSlowPath",
         "hexToByteArraySlowPath",
-        "hexToInt",
-        "hexToIntImpl",
-        "hexToLong",
-        "hexToLongImpl",
-        "hexToShort",
-        "",
-        "longDecimalFromHexDigitAt",
         "parseByteAt",
-        "parseInt",
-        "parseLong",
-        "throwInvalidDigitAt",
         "",
-        "throwInvalidNumberOfDigits",
-        "requireMaxLength",
-        "throwInvalidPrefixSuffix",
-        "throwNotContainedAt",
-        "toCharArrayIfNotEmpty",
-        "toHexString",
+        "parsedByteArrayMaxSize",
+        "stringLength",
+        "charsPerSet",
+        "charsPerElement",
+        "elementsPerSet",
+        "elementSeparatorLength",
+        "wholeElementsPerSet",
+        "checkNewLineAt",
+        "hexToByte",
+        "",
+        "hexToShort",
+        "hexToInt",
+        "hexToLong",
         "toHexStringImpl",
         "numberFormat",
         "Lkotlin/text/HexFormat$NumberHexFormat;",
         "digits",
         "bits",
-        "toHexStringNoLineAndGroupSeparator",
-        "toHexStringNoLineAndGroupSeparatorSlowPath",
-        "toHexStringShortByteSeparatorNoPrefixAndSuffix",
-        "toHexStringSlowPath",
+        "toCharArrayIfNotEmpty",
+        "hexToIntImpl",
+        "typeHexLength",
+        "hexToLongImpl",
+        "checkPrefixSuffixNumberOfDigits",
+        "",
+        "prefix",
+        "suffix",
+        "ignoreCase",
+        "",
+        "checkNumberOfDigits",
+        "checkZeroDigits",
+        "parseInt",
+        "parseLong",
+        "checkContainsAt",
+        "part",
+        "partName",
+        "decimalFromHexDigitAt",
+        "longDecimalFromHexDigitAt",
+        "throwInvalidNumberOfDigits",
+        "specifier",
+        "expected",
+        "throwNotContainedAt",
+        "throwInvalidPrefixSuffix",
+        "throwInvalidDigitAt",
+        "",
         "kotlin-stdlib"
     }
     k = 0x2
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x30
@@ -135,7 +141,7 @@
 
     const/16 v0, 0x100
 
-    .line 20
+    .line 21
     new-array v1, v0, [I
 
     const/4 v2, 0x0
@@ -149,7 +155,7 @@
 
     shr-int/lit8 v5, v3, 0x4
 
-    .line 21
+    .line 22
     invoke-virtual {v4, v5}, Ljava/lang/String;->charAt(I)C
 
     move-result v5
@@ -170,11 +176,11 @@
 
     goto :goto_0
 
-    .line 20
+    .line 21
     :cond_0
     sput-object v1, Lkotlin/text/HexExtensionsKt;->BYTE_TO_LOWER_CASE_HEX_DIGITS:[I
 
-    .line 29
+    .line 30
     new-array v1, v0, [I
 
     move v3, v2
@@ -186,7 +192,7 @@
 
     shr-int/lit8 v6, v3, 0x4
 
-    .line 30
+    .line 31
     invoke-virtual {v5, v6}, Ljava/lang/String;->charAt(I)C
 
     move-result v6
@@ -207,11 +213,11 @@
 
     goto :goto_1
 
-    .line 29
+    .line 30
     :cond_1
     sput-object v1, Lkotlin/text/HexExtensionsKt;->BYTE_TO_UPPER_CASE_HEX_DIGITS:[I
 
-    .line 41
+    .line 42
     new-array v1, v0, [I
 
     move v3, v2
@@ -227,7 +233,7 @@
 
     goto :goto_2
 
-    .line 42
+    .line 43
     :cond_2
     move-object v3, v4
 
@@ -237,7 +243,7 @@
 
     move v7, v6
 
-    .line 1143
+    .line 1342
     :goto_3
     invoke-interface {v3}, Ljava/lang/CharSequence;->length()I
 
@@ -251,7 +257,7 @@
 
     add-int/lit8 v9, v7, 0x1
 
-    .line 42
+    .line 43
     aput v7, v1, v8
 
     add-int/lit8 v6, v6, 0x1
@@ -260,7 +266,7 @@
 
     goto :goto_3
 
-    .line 43
+    .line 44
     :cond_3
     move-object v3, v5
 
@@ -270,7 +276,7 @@
 
     move v7, v6
 
-    .line 1146
+    .line 1345
     :goto_4
     invoke-interface {v3}, Ljava/lang/CharSequence;->length()I
 
@@ -284,7 +290,7 @@
 
     add-int/lit8 v9, v7, 0x1
 
-    .line 43
+    .line 44
     aput v7, v1, v8
 
     add-int/lit8 v6, v6, 0x1
@@ -293,11 +299,11 @@
 
     goto :goto_4
 
-    .line 41
+    .line 42
     :cond_4
     sput-object v1, Lkotlin/text/HexExtensionsKt;->HEX_DIGITS_TO_DECIMAL:[I
 
-    .line 53
+    .line 54
     new-array v1, v0, [J
 
     move v3, v2
@@ -313,7 +319,7 @@
 
     goto :goto_5
 
-    .line 54
+    .line 55
     :cond_5
     check-cast v4, Ljava/lang/CharSequence;
 
@@ -321,7 +327,7 @@
 
     move v3, v0
 
-    .line 1149
+    .line 1348
     :goto_6
     invoke-interface {v4}, Ljava/lang/CharSequence;->length()I
 
@@ -337,7 +343,7 @@
 
     int-to-long v8, v3
 
-    .line 54
+    .line 55
     aput-wide v8, v1, v6
 
     add-int/lit8 v0, v0, 0x1
@@ -346,13 +352,13 @@
 
     goto :goto_6
 
-    .line 55
+    .line 56
     :cond_6
     check-cast v5, Ljava/lang/CharSequence;
 
     move v0, v2
 
-    .line 1152
+    .line 1351
     :goto_7
     invoke-interface {v5}, Ljava/lang/CharSequence;->length()I
 
@@ -368,7 +374,7 @@
 
     int-to-long v6, v0
 
-    .line 55
+    .line 56
     aput-wide v6, v1, v3
 
     add-int/lit8 v2, v2, 0x1
@@ -377,7 +383,7 @@
 
     goto :goto_7
 
-    .line 53
+    .line 54
     :cond_7
     sput-object v1, Lkotlin/text/HexExtensionsKt;->HEX_DIGITS_TO_LONG_DECIMAL:[J
 
@@ -405,7 +411,7 @@
 
     return-wide p0
 
-    .line 583
+    .line 622
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -423,7 +429,7 @@
 .method private static final checkContainsAt(Ljava/lang/String;IILjava/lang/String;ZLjava/lang/String;)I
     .locals 4
 
-    .line 998
+    .line 1198
     move-object v0, p3
 
     check-cast v0, Ljava/lang/CharSequence;
@@ -436,7 +442,7 @@
 
     return p1
 
-    .line 999
+    .line 1199
     :cond_0
     invoke-interface {v0}, Ljava/lang/CharSequence;->length()I
 
@@ -447,7 +453,7 @@
     :goto_0
     if-ge v1, v0, :cond_2
 
-    .line 1000
+    .line 1200
     invoke-virtual {p3, v1}, Ljava/lang/String;->charAt(I)C
 
     move-result v2
@@ -464,7 +470,7 @@
 
     if-nez v2, :cond_1
 
-    .line 1001
+    .line 1201
     invoke-static {p0, p1, p2, p3, p5}, Lkotlin/text/HexExtensionsKt;->throwNotContainedAt(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;)V
 
     :cond_1
@@ -472,7 +478,7 @@
 
     goto :goto_0
 
-    .line 1004
+    .line 1204
     :cond_2
     invoke-virtual {p3}, Ljava/lang/String;->length()I
 
@@ -502,7 +508,7 @@
 
     return p0
 
-    .line 316
+    .line 341
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -533,29 +539,10 @@
     throw v0
 .end method
 
-.method private static final checkMaxDigits(Ljava/lang/String;III)V
-    .locals 1
-
-    if-ge p1, p2, :cond_0
-
-    sub-int v0, p2, p1
-
-    if-le v0, p3, :cond_1
-
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 976
-    invoke-static {p0, p1, p2, p3, v0}, Lkotlin/text/HexExtensionsKt;->throwInvalidNumberOfDigits(Ljava/lang/String;IIIZ)V
-
-    :cond_1
-    return-void
-.end method
-
 .method private static final checkNewLineAt(Ljava/lang/String;II)I
     .locals 3
 
-    .line 593
+    .line 632
     invoke-virtual {p0, p1}, Ljava/lang/String;->charAt(I)C
 
     move-result v0
@@ -570,7 +557,7 @@
 
     if-ge v0, p2, :cond_1
 
-    .line 594
+    .line 633
     invoke-virtual {p0, v0}, Ljava/lang/String;->charAt(I)C
 
     move-result p0
@@ -581,7 +568,7 @@
 
     goto :goto_0
 
-    .line 595
+    .line 634
     :cond_0
     invoke-virtual {p0, p1}, Ljava/lang/String;->charAt(I)C
 
@@ -595,7 +582,7 @@
     :goto_0
     return v0
 
-    .line 598
+    .line 637
     :cond_2
     new-instance p2, Ljava/lang/NumberFormatException;
 
@@ -632,12 +619,43 @@
     throw p2
 .end method
 
-.method private static final checkPrefixSuffixMaxDigits(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;ZI)V
+.method private static final checkNumberOfDigits(Ljava/lang/String;III)V
+    .locals 2
+
+    sub-int v0, p2, p1
+
+    const/4 v1, 0x1
+
+    if-ge v0, v1, :cond_0
+
+    .line 1163
+    const-string p3, "at least"
+
+    invoke-static {p0, p1, p2, p3, v1}, Lkotlin/text/HexExtensionsKt;->throwInvalidNumberOfDigits(Ljava/lang/String;IILjava/lang/String;I)V
+
+    goto :goto_0
+
+    :cond_0
+    if-le v0, p3, :cond_1
+
+    add-int/2addr v0, p1
+
+    sub-int/2addr v0, p3
+
+    .line 1165
+    invoke-static {p0, p1, v0}, Lkotlin/text/HexExtensionsKt;->checkZeroDigits(Ljava/lang/String;II)V
+
+    :cond_1
+    :goto_0
+    return-void
+.end method
+
+.method private static final checkPrefixSuffixNumberOfDigits(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;ZI)V
     .locals 5
 
     sub-int v0, p2, p1
 
-    .line 963
+    .line 1149
     invoke-virtual {p3}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -650,10 +668,10 @@
 
     if-gt v0, v1, :cond_0
 
-    .line 964
+    .line 1150
     invoke-static {p0, p1, p2, p3, p4}, Lkotlin/text/HexExtensionsKt;->throwInvalidPrefixSuffix(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;)V
 
-    .line 1118
+    .line 1317
     :cond_0
     move-object v0, p3
 
@@ -669,7 +687,7 @@
 
     goto :goto_1
 
-    .line 1119
+    .line 1318
     :cond_1
     invoke-interface {v0}, Ljava/lang/CharSequence;->length()I
 
@@ -680,7 +698,7 @@
     :goto_0
     if-ge v1, v0, :cond_3
 
-    .line 1120
+    .line 1319
     invoke-virtual {p3, v1}, Ljava/lang/String;->charAt(I)C
 
     move-result v3
@@ -697,7 +715,7 @@
 
     if-nez v3, :cond_2
 
-    .line 1121
+    .line 1320
     const-string v3, "prefix"
 
     invoke-static {p0, p1, p2, p3, v3}, Lkotlin/text/HexExtensionsKt;->throwNotContainedAt(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;)V
@@ -707,7 +725,7 @@
 
     goto :goto_0
 
-    .line 1124
+    .line 1323
     :cond_3
     invoke-virtual {p3}, Ljava/lang/String;->length()I
 
@@ -715,7 +733,7 @@
 
     add-int/2addr p1, p3
 
-    .line 968
+    .line 1154
     :goto_1
     invoke-virtual {p4}, Ljava/lang/String;->length()I
 
@@ -723,7 +741,7 @@
 
     sub-int p3, p2, p3
 
-    .line 1125
+    .line 1324
     move-object v0, p4
 
     check-cast v0, Ljava/lang/CharSequence;
@@ -736,7 +754,7 @@
 
     goto :goto_3
 
-    .line 1126
+    .line 1325
     :cond_4
     invoke-interface {v0}, Ljava/lang/CharSequence;->length()I
 
@@ -745,7 +763,7 @@
     :goto_2
     if-ge v2, v0, :cond_6
 
-    .line 1127
+    .line 1326
     invoke-virtual {p4, v2}, Ljava/lang/String;->charAt(I)C
 
     move-result v1
@@ -762,7 +780,7 @@
 
     if-nez v1, :cond_5
 
-    .line 1128
+    .line 1327
     const-string/jumbo v1, "suffix"
 
     invoke-static {p0, p3, p2, p4, v1}, Lkotlin/text/HexExtensionsKt;->throwNotContainedAt(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;)V
@@ -772,21 +790,88 @@
 
     goto :goto_2
 
-    .line 1131
+    .line 1330
     :cond_6
     invoke-virtual {p4}, Ljava/lang/String;->length()I
 
-    .line 971
+    .line 1157
     :goto_3
-    invoke-static {p0, p1, p3, p6}, Lkotlin/text/HexExtensionsKt;->checkMaxDigits(Ljava/lang/String;III)V
+    invoke-static {p0, p1, p3, p6}, Lkotlin/text/HexExtensionsKt;->checkNumberOfDigits(Ljava/lang/String;III)V
 
+    return-void
+.end method
+
+.method private static final checkZeroDigits(Ljava/lang/String;II)V
+    .locals 2
+
+    :goto_0
+    if-ge p1, p2, :cond_1
+
+    .line 1171
+    invoke-virtual {p0, p1}, Ljava/lang/String;->charAt(I)C
+
+    move-result v0
+
+    const/16 v1, 0x30
+
+    if-ne v0, v1, :cond_0
+
+    add-int/lit8 p1, p1, 0x1
+
+    goto :goto_0
+
+    .line 1172
+    :cond_0
+    new-instance p2, Ljava/lang/NumberFormatException;
+
+    .line 1173
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "Expected the hexadecimal digit \'0\' at index "
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", but was \'"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {p0, p1}, Ljava/lang/String;->charAt(I)C
+
+    move-result p0
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    const-string p1, "\'.\nThe result won\'t fit the type being parsed."
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    .line 1172
+    invoke-direct {p2, p0}, Ljava/lang/NumberFormatException;-><init>(Ljava/lang/String;)V
+
+    throw p2
+
+    :cond_1
     return-void
 .end method
 
 .method private static final decimalFromHexDigitAt(Ljava/lang/String;I)I
     .locals 2
 
-    .line 1009
+    .line 1209
     invoke-virtual {p0, p1}, Ljava/lang/String;->charAt(I)C
 
     move-result v0
@@ -795,7 +880,7 @@
 
     if-nez v1, :cond_0
 
-    .line 1010
+    .line 1210
     sget-object v1, Lkotlin/text/HexExtensionsKt;->HEX_DIGITS_TO_DECIMAL:[I
 
     aget v0, v1, v0
@@ -804,7 +889,7 @@
 
     return v0
 
-    .line 1013
+    .line 1213
     :cond_0
     invoke-static {p0, p1}, Lkotlin/text/HexExtensionsKt;->throwInvalidDigitAt(Ljava/lang/String;I)Ljava/lang/Void;
 
@@ -818,17 +903,17 @@
 .method private static final formatByteAt([BILjava/lang/String;Ljava/lang/String;[I[CI)I
     .locals 0
 
-    .line 247
+    .line 272
     invoke-static {p2, p5, p6}, Lkotlin/text/HexExtensionsKt;->toCharArrayIfNotEmpty(Ljava/lang/String;[CI)I
 
     move-result p2
 
-    .line 248
+    .line 273
     invoke-static {p0, p1, p4, p5, p2}, Lkotlin/text/HexExtensionsKt;->formatByteAt([BI[I[CI)I
 
     move-result p0
 
-    .line 249
+    .line 274
     invoke-static {p3, p5, p0}, Lkotlin/text/HexExtensionsKt;->toCharArrayIfNotEmpty(Ljava/lang/String;[CI)I
 
     move-result p0
@@ -839,19 +924,19 @@
 .method private static final formatByteAt([BI[I[CI)I
     .locals 0
 
-    .line 258
+    .line 283
     aget-byte p0, p0, p1
 
     and-int/lit16 p0, p0, 0xff
 
-    .line 259
+    .line 284
     aget p0, p2, p0
 
     shr-int/lit8 p1, p0, 0x8
 
     int-to-char p1, p1
 
-    .line 260
+    .line 285
     aput-char p1, p3, p4
 
     add-int/lit8 p1, p4, 0x1
@@ -860,7 +945,7 @@
 
     int-to-char p0, p0
 
-    .line 261
+    .line 286
     aput-char p0, p3, p1
 
     add-int/lit8 p4, p4, 0x2
@@ -893,14 +978,14 @@
 
     sub-long/2addr v0, p1
 
-    .line 275
+    .line 300
     invoke-static {v0, v1}, Lkotlin/text/HexExtensionsKt;->checkFormatLength(J)I
 
     move-result p0
 
     return p0
 
-    .line 271
+    .line 296
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -922,15 +1007,15 @@
 
     add-int/lit8 v0, p0, -0x1
 
-    .line 291
+    .line 316
     div-int v1, v0, p1
 
     add-int/lit8 v2, p1, -0x1
 
-    .line 293
+    .line 318
     div-int/2addr v2, p2
 
-    .line 294
+    .line 319
     rem-int v3, p0, p1
 
     if-nez v3, :cond_0
@@ -943,7 +1028,7 @@
     :goto_0
     add-int/lit8 p1, p1, -0x1
 
-    .line 295
+    .line 320
     div-int/2addr p1, p2
 
     mul-int/2addr v2, v1
@@ -988,14 +1073,14 @@
 
     add-long/2addr p1, p3
 
-    .line 310
+    .line 335
     invoke-static {p1, p2}, Lkotlin/text/HexExtensionsKt;->checkFormatLength(J)I
 
     move-result p0
 
     return p0
 
-    .line 288
+    .line 313
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1010,12 +1095,27 @@
     throw p0
 .end method
 
+.method public static final getBYTE_TO_LOWER_CASE_HEX_DIGITS()[I
+    .locals 1
+
+    .line 20
+    sget-object v0, Lkotlin/text/HexExtensionsKt;->BYTE_TO_LOWER_CASE_HEX_DIGITS:[I
+
+    return-object v0
+.end method
+
+.method public static synthetic getBYTE_TO_LOWER_CASE_HEX_DIGITS$annotations()V
+    .locals 0
+
+    return-void
+.end method
+
 .method private static final hexToByte(Ljava/lang/String;IILkotlin/text/HexFormat;)B
     .locals 1
 
     const/4 v0, 0x2
 
-    .line 663
+    .line 737
     invoke-static {p0, p1, p2, p3, v0}, Lkotlin/text/HexExtensionsKt;->hexToIntImpl(Ljava/lang/String;IILkotlin/text/HexFormat;I)I
 
     move-result p0
@@ -1038,7 +1138,7 @@
 
     const/4 v0, 0x0
 
-    .line 644
+    .line 708
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -1064,7 +1164,7 @@
 
     if-eqz p5, :cond_1
 
-    .line 662
+    .line 736
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result p2
@@ -1080,6 +1180,7 @@
 
     move-result-object p3
 
+    .line 734
     :cond_2
     invoke-static {p0, p1, p2, p3}, Lkotlin/text/HexExtensionsKt;->hexToByte(Ljava/lang/String;IILkotlin/text/HexFormat;)B
 
@@ -1095,13 +1196,14 @@
 
     if-eqz p2, :cond_0
 
-    .line 644
+    .line 708
     sget-object p1, Lkotlin/text/HexFormat;->Companion:Lkotlin/text/HexFormat$Companion;
 
     invoke-virtual {p1}, Lkotlin/text/HexFormat$Companion;->getDefault()Lkotlin/text/HexFormat;
 
     move-result-object p1
 
+    .line 706
     :cond_0
     invoke-static {p0, p1}, Lkotlin/text/HexExtensionsKt;->hexToByte(Ljava/lang/String;Lkotlin/text/HexFormat;)B
 
@@ -1113,7 +1215,7 @@
 .method private static final hexToByteArray(Ljava/lang/String;IILkotlin/text/HexFormat;)[B
     .locals 2
 
-    .line 358
+    .line 397
     sget-object v0, Lkotlin/collections/AbstractList;->Companion:Lkotlin/collections/AbstractList$Companion;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
@@ -1126,25 +1228,25 @@
 
     const/4 p0, 0x0
 
-    .line 360
+    .line 399
     new-array p0, p0, [B
 
     return-object p0
 
-    .line 364
+    .line 403
     :cond_0
     invoke-virtual {p3}, Lkotlin/text/HexFormat;->getBytes()Lkotlin/text/HexFormat$BytesHexFormat;
 
     move-result-object p3
 
-    .line 367
+    .line 406
     invoke-virtual {p3}, Lkotlin/text/HexFormat$BytesHexFormat;->getNoLineAndGroupSeparator$kotlin_stdlib()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 368
+    .line 407
     invoke-static {p0, p1, p2, p3}, Lkotlin/text/HexExtensionsKt;->hexToByteArrayNoLineAndGroupSeparator(Ljava/lang/String;IILkotlin/text/HexFormat$BytesHexFormat;)[B
 
     move-result-object v0
@@ -1153,7 +1255,7 @@
 
     return-object v0
 
-    .line 371
+    .line 410
     :cond_1
     invoke-static {p0, p1, p2, p3}, Lkotlin/text/HexExtensionsKt;->hexToByteArraySlowPath(Ljava/lang/String;IILkotlin/text/HexFormat$BytesHexFormat;)[B
 
@@ -1175,7 +1277,7 @@
 
     const/4 v0, 0x0
 
-    .line 334
+    .line 367
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -1201,7 +1303,7 @@
 
     if-eqz p5, :cond_1
 
-    .line 355
+    .line 394
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result p2
@@ -1211,14 +1313,14 @@
 
     if-eqz p4, :cond_2
 
-    .line 356
+    .line 395
     sget-object p3, Lkotlin/text/HexFormat;->Companion:Lkotlin/text/HexFormat$Companion;
 
     invoke-virtual {p3}, Lkotlin/text/HexFormat$Companion;->getDefault()Lkotlin/text/HexFormat;
 
     move-result-object p3
 
-    .line 353
+    .line 390
     :cond_2
     invoke-static {p0, p1, p2, p3}, Lkotlin/text/HexExtensionsKt;->hexToByteArray(Ljava/lang/String;IILkotlin/text/HexFormat;)[B
 
@@ -1234,13 +1336,14 @@
 
     if-eqz p2, :cond_0
 
-    .line 334
+    .line 367
     sget-object p1, Lkotlin/text/HexFormat;->Companion:Lkotlin/text/HexFormat$Companion;
 
     invoke-virtual {p1}, Lkotlin/text/HexFormat$Companion;->getDefault()Lkotlin/text/HexFormat;
 
     move-result-object p1
 
+    .line 365
     :cond_0
     invoke-static {p0, p1}, Lkotlin/text/HexExtensionsKt;->hexToByteArray(Ljava/lang/String;Lkotlin/text/HexFormat;)[B
 
@@ -1252,21 +1355,21 @@
 .method private static final hexToByteArrayNoLineAndGroupSeparator(Ljava/lang/String;IILkotlin/text/HexFormat$BytesHexFormat;)[B
     .locals 1
 
-    .line 381
+    .line 420
     invoke-virtual {p3}, Lkotlin/text/HexFormat$BytesHexFormat;->getShortByteSeparatorNoPrefixAndSuffix$kotlin_stdlib()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 382
+    .line 421
     invoke-static {p0, p1, p2, p3}, Lkotlin/text/HexExtensionsKt;->hexToByteArrayShortByteSeparatorNoPrefixAndSuffix(Ljava/lang/String;IILkotlin/text/HexFormat$BytesHexFormat;)[B
 
     move-result-object p0
 
     return-object p0
 
-    .line 385
+    .line 424
     :cond_0
     invoke-static {p0, p1, p2, p3}, Lkotlin/text/HexExtensionsKt;->hexToByteArrayNoLineAndGroupSeparatorSlowPath(Ljava/lang/String;IILkotlin/text/HexFormat$BytesHexFormat;)[B
 
@@ -1278,27 +1381,27 @@
 .method private static final hexToByteArrayNoLineAndGroupSeparatorSlowPath(Ljava/lang/String;IILkotlin/text/HexFormat$BytesHexFormat;)[B
     .locals 12
 
-    .line 433
+    .line 472
     invoke-virtual {p3}, Lkotlin/text/HexFormat$BytesHexFormat;->getBytePrefix()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 434
+    .line 473
     invoke-virtual {p3}, Lkotlin/text/HexFormat$BytesHexFormat;->getByteSuffix()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 435
+    .line 474
     invoke-virtual {p3}, Lkotlin/text/HexFormat$BytesHexFormat;->getByteSeparator()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 436
+    .line 475
     invoke-virtual {v2}, Ljava/lang/String;->length()I
 
     move-result v3
 
-    .line 437
+    .line 476
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v4
@@ -1327,7 +1430,7 @@
 
     add-long v10, v8, v6
 
-    .line 439
+    .line 478
     div-long/2addr v10, v4
 
     long-to-int v3, v10
@@ -1346,16 +1449,16 @@
 
     return-object p0
 
-    .line 446
+    .line 485
     :cond_0
     invoke-virtual {p3}, Lkotlin/text/HexFormat$BytesHexFormat;->getIgnoreCase$kotlin_stdlib()Z
 
     move-result p3
 
-    .line 448
+    .line 487
     new-array v4, v3, [B
 
-    .line 1059
+    .line 1258
     move-object v5, v0
 
     check-cast v5, Ljava/lang/CharSequence;
@@ -1370,7 +1473,7 @@
 
     goto :goto_1
 
-    .line 1060
+    .line 1259
     :cond_1
     invoke-interface {v5}, Ljava/lang/CharSequence;->length()I
 
@@ -1381,7 +1484,7 @@
     :goto_0
     if-ge v6, v5, :cond_3
 
-    .line 1061
+    .line 1260
     invoke-virtual {v0, v6}, Ljava/lang/String;->charAt(I)C
 
     move-result v8
@@ -1398,7 +1501,7 @@
 
     if-nez v8, :cond_2
 
-    .line 1062
+    .line 1261
     const-string v8, "byte prefix"
 
     invoke-static {p0, p1, p2, v0, v8}, Lkotlin/text/HexExtensionsKt;->throwNotContainedAt(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;)V
@@ -1408,7 +1511,7 @@
 
     goto :goto_0
 
-    .line 1065
+    .line 1264
     :cond_3
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
@@ -1416,7 +1519,7 @@
 
     add-int/2addr p1, v5
 
-    .line 452
+    .line 491
     :goto_1
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -1445,7 +1548,7 @@
     :goto_2
     if-ge v2, v3, :cond_7
 
-    .line 454
+    .line 493
     invoke-static {p0, p1}, Lkotlin/text/HexExtensionsKt;->parseByteAt(Ljava/lang/String;I)B
 
     move-result v5
@@ -1454,7 +1557,7 @@
 
     add-int/lit8 p1, p1, 0x2
 
-    .line 1066
+    .line 1265
     move-object v5, v0
 
     check-cast v5, Ljava/lang/CharSequence;
@@ -1467,7 +1570,7 @@
 
     goto :goto_4
 
-    .line 1067
+    .line 1266
     :cond_4
     invoke-interface {v5}, Ljava/lang/CharSequence;->length()I
 
@@ -1478,7 +1581,7 @@
     :goto_3
     if-ge v6, v5, :cond_6
 
-    .line 1068
+    .line 1267
     invoke-virtual {v0, v6}, Ljava/lang/String;->charAt(I)C
 
     move-result v8
@@ -1495,7 +1598,7 @@
 
     if-nez v8, :cond_5
 
-    .line 1069
+    .line 1268
     const-string v8, "byte suffix + byte separator + byte prefix"
 
     invoke-static {p0, p1, p2, v0, v8}, Lkotlin/text/HexExtensionsKt;->throwNotContainedAt(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;)V
@@ -1505,7 +1608,7 @@
 
     goto :goto_3
 
-    .line 1072
+    .line 1271
     :cond_6
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
@@ -1518,7 +1621,7 @@
 
     goto :goto_2
 
-    .line 457
+    .line 496
     :cond_7
     invoke-static {p0, p1}, Lkotlin/text/HexExtensionsKt;->parseByteAt(Ljava/lang/String;I)B
 
@@ -1528,7 +1631,7 @@
 
     add-int/lit8 p1, p1, 0x2
 
-    .line 1073
+    .line 1272
     move-object v0, v1
 
     check-cast v0, Ljava/lang/CharSequence;
@@ -1541,7 +1644,7 @@
 
     goto :goto_6
 
-    .line 1074
+    .line 1273
     :cond_8
     invoke-interface {v0}, Ljava/lang/CharSequence;->length()I
 
@@ -1550,7 +1653,7 @@
     :goto_5
     if-ge v7, v0, :cond_a
 
-    .line 1075
+    .line 1274
     invoke-virtual {v1, v7}, Ljava/lang/String;->charAt(I)C
 
     move-result v2
@@ -1567,7 +1670,7 @@
 
     if-nez v2, :cond_9
 
-    .line 1076
+    .line 1275
     const-string v2, "byte suffix"
 
     invoke-static {p0, p1, p2, v1, v2}, Lkotlin/text/HexExtensionsKt;->throwNotContainedAt(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;)V
@@ -1577,7 +1680,7 @@
 
     goto :goto_5
 
-    .line 1079
+    .line 1278
     :cond_a
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
@@ -1588,7 +1691,7 @@
 .method private static final hexToByteArrayShortByteSeparatorNoPrefixAndSuffix(Ljava/lang/String;IILkotlin/text/HexFormat$BytesHexFormat;)[B
     .locals 11
 
-    .line 394
+    .line 433
     invoke-virtual {p3}, Lkotlin/text/HexFormat$BytesHexFormat;->getByteSeparator()Ljava/lang/String;
 
     move-result-object v0
@@ -1620,7 +1723,7 @@
     :cond_0
     shr-int/2addr p1, v1
 
-    .line 403
+    .line 442
     new-array p2, p1, [B
 
     move p3, v4
@@ -1628,7 +1731,7 @@
     :goto_0
     if-ge v4, p1, :cond_1
 
-    .line 405
+    .line 444
     invoke-static {p0, p3}, Lkotlin/text/HexExtensionsKt;->parseByteAt(Ljava/lang/String;I)B
 
     move-result v0
@@ -1644,7 +1747,7 @@
     :cond_1
     return-object p2
 
-    .line 410
+    .line 449
     :cond_2
     rem-int/lit8 v0, p1, 0x3
 
@@ -1652,16 +1755,16 @@
 
     return-object v2
 
-    .line 411
+    .line 450
     :cond_3
     div-int/lit8 p1, p1, 0x3
 
     add-int/2addr p1, v1
 
-    .line 412
+    .line 451
     new-array v0, p1, [B
 
-    .line 413
+    .line 452
     invoke-virtual {p3}, Lkotlin/text/HexFormat$BytesHexFormat;->getByteSeparator()Ljava/lang/String;
 
     move-result-object v2
@@ -1670,7 +1773,7 @@
 
     move-result v2
 
-    .line 414
+    .line 453
     invoke-static {p0, v4}, Lkotlin/text/HexExtensionsKt;->parseByteAt(Ljava/lang/String;I)B
 
     move-result v5
@@ -1680,14 +1783,14 @@
     :goto_1
     if-ge v1, p1, :cond_8
 
-    .line 417
+    .line 456
     invoke-virtual {p0, v3}, Ljava/lang/String;->charAt(I)C
 
     move-result v5
 
     if-eq v5, v2, :cond_7
 
-    .line 418
+    .line 457
     invoke-virtual {p3}, Lkotlin/text/HexFormat$BytesHexFormat;->getByteSeparator()Ljava/lang/String;
 
     move-result-object v5
@@ -1696,7 +1799,7 @@
 
     move-result v6
 
-    .line 1052
+    .line 1251
     move-object v7, v5
 
     check-cast v7, Ljava/lang/CharSequence;
@@ -1709,7 +1812,7 @@
 
     goto :goto_3
 
-    .line 1053
+    .line 1252
     :cond_4
     invoke-interface {v7}, Ljava/lang/CharSequence;->length()I
 
@@ -1720,7 +1823,7 @@
     :goto_2
     if-ge v8, v7, :cond_6
 
-    .line 1054
+    .line 1253
     invoke-virtual {v5, v8}, Ljava/lang/String;->charAt(I)C
 
     move-result v9
@@ -1737,7 +1840,7 @@
 
     if-nez v9, :cond_5
 
-    .line 1055
+    .line 1254
     const-string v9, "byte separator"
 
     invoke-static {p0, v3, p2, v5, v9}, Lkotlin/text/HexExtensionsKt;->throwNotContainedAt(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;)V
@@ -1747,7 +1850,7 @@
 
     goto :goto_2
 
-    .line 1058
+    .line 1257
     :cond_6
     invoke-virtual {v5}, Ljava/lang/String;->length()I
 
@@ -1755,7 +1858,7 @@
     :goto_3
     add-int/lit8 v5, v3, 0x1
 
-    .line 420
+    .line 459
     invoke-static {p0, v5}, Lkotlin/text/HexExtensionsKt;->parseByteAt(Ljava/lang/String;I)B
 
     move-result v5
@@ -1771,7 +1874,7 @@
     :cond_8
     return-object v0
 
-    .line 395
+    .line 434
     :cond_9
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1787,65 +1890,65 @@
 .end method
 
 .method private static final hexToByteArraySlowPath(Ljava/lang/String;IILkotlin/text/HexFormat$BytesHexFormat;)[B
-    .locals 19
+    .locals 18
 
     move-object/from16 v0, p0
 
     move/from16 v1, p2
 
-    .line 469
+    .line 508
     invoke-virtual/range {p3 .. p3}, Lkotlin/text/HexFormat$BytesHexFormat;->getBytesPerLine()I
 
     move-result v9
 
-    .line 470
+    .line 509
     invoke-virtual/range {p3 .. p3}, Lkotlin/text/HexFormat$BytesHexFormat;->getBytesPerGroup()I
 
     move-result v10
 
-    .line 471
+    .line 510
     invoke-virtual/range {p3 .. p3}, Lkotlin/text/HexFormat$BytesHexFormat;->getBytePrefix()Ljava/lang/String;
 
     move-result-object v11
 
-    .line 472
+    .line 511
     invoke-virtual/range {p3 .. p3}, Lkotlin/text/HexFormat$BytesHexFormat;->getByteSuffix()Ljava/lang/String;
 
     move-result-object v12
 
-    .line 473
+    .line 512
     invoke-virtual/range {p3 .. p3}, Lkotlin/text/HexFormat$BytesHexFormat;->getByteSeparator()Ljava/lang/String;
 
     move-result-object v13
 
-    .line 474
+    .line 513
     invoke-virtual/range {p3 .. p3}, Lkotlin/text/HexFormat$BytesHexFormat;->getGroupSeparator()Ljava/lang/String;
 
     move-result-object v14
 
-    .line 475
+    .line 514
     invoke-virtual/range {p3 .. p3}, Lkotlin/text/HexFormat$BytesHexFormat;->getIgnoreCase$kotlin_stdlib()Z
 
     move-result v15
 
     sub-int v2, v1, p1
 
-    .line 481
+    .line 520
     invoke-virtual {v14}, Ljava/lang/String;->length()I
 
     move-result v5
 
-    .line 482
+    .line 521
     invoke-virtual {v13}, Ljava/lang/String;->length()I
 
     move-result v6
 
-    .line 483
+    .line 522
     invoke-virtual {v11}, Ljava/lang/String;->length()I
 
     move-result v7
 
-    .line 484
+    .line 523
     invoke-virtual {v12}, Ljava/lang/String;->length()I
 
     move-result v8
@@ -1854,12 +1957,12 @@
 
     move v4, v10
 
-    .line 477
+    .line 516
     invoke-static/range {v2 .. v8}, Lkotlin/text/HexExtensionsKt;->parsedByteArrayMaxSize(IIIIIII)I
 
     move-result v2
 
-    .line 486
+    .line 525
     new-array v3, v2, [B
 
     move/from16 v5, p1
@@ -1875,7 +1978,7 @@
 
     if-ne v7, v9, :cond_0
 
-    .line 495
+    .line 534
     invoke-static {v0, v5, v1}, Lkotlin/text/HexExtensionsKt;->checkNewLineAt(Ljava/lang/String;II)I
 
     move-result v5
@@ -1890,7 +1993,7 @@
     :cond_0
     if-ne v8, v10, :cond_4
 
-    .line 1080
+    .line 1279
     move-object v8, v14
 
     check-cast v8, Ljava/lang/CharSequence;
@@ -1905,7 +2008,7 @@
 
     goto :goto_3
 
-    .line 1081
+    .line 1280
     :cond_1
     invoke-interface {v8}, Ljava/lang/CharSequence;->length()I
 
@@ -1918,7 +2021,7 @@
 
     move/from16 v16, v7
 
-    .line 1082
+    .line 1281
     invoke-virtual {v14, v4}, Ljava/lang/String;->charAt(I)C
 
     move-result v7
@@ -1937,7 +2040,7 @@
 
     if-nez v7, :cond_2
 
-    .line 1083
+    .line 1282
     const-string v7, "group separator"
 
     invoke-static {v0, v5, v1, v14, v7}, Lkotlin/text/HexExtensionsKt;->throwNotContainedAt(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;)V
@@ -1954,7 +2057,7 @@
     :cond_3
     move/from16 v16, v7
 
-    .line 1086
+    .line 1285
     invoke-virtual {v14}, Ljava/lang/String;->length()I
 
     move-result v4
@@ -1971,7 +2074,7 @@
 
     if-eqz v8, :cond_8
 
-    .line 1087
+    .line 1286
     move-object v4, v13
 
     check-cast v4, Ljava/lang/CharSequence;
@@ -1986,7 +2089,7 @@
 
     goto :goto_5
 
-    .line 1088
+    .line 1287
     :cond_5
     invoke-interface {v4}, Ljava/lang/CharSequence;->length()I
 
@@ -1999,7 +2102,7 @@
 
     move/from16 p1, v4
 
-    .line 1089
+    .line 1288
     invoke-virtual {v13, v7}, Ljava/lang/String;->charAt(I)C
 
     move-result v4
@@ -2018,7 +2121,7 @@
 
     if-nez v4, :cond_6
 
-    .line 1090
+    .line 1289
     const-string v4, "byte separator"
 
     invoke-static {v0, v5, v1, v13, v4}, Lkotlin/text/HexExtensionsKt;->throwNotContainedAt(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;)V
@@ -2035,7 +2138,7 @@
     :cond_7
     move/from16 v17, v8
 
-    .line 1093
+    .line 1292
     invoke-virtual {v13}, Ljava/lang/String;->length()I
 
     move-result v4
@@ -2055,50 +2158,48 @@
     move/from16 v7, v16
 
     :goto_6
-    const/4 v4, 0x1
+    add-int/lit8 v7, v7, 0x1
 
-    add-int/2addr v7, v4
+    add-int/lit8 v8, v8, 0x1
 
-    add-int/2addr v8, v4
+    .line 1293
+    move-object v4, v11
 
-    .line 1094
-    move-object/from16 v16, v11
+    check-cast v4, Ljava/lang/CharSequence;
 
-    check-cast v16, Ljava/lang/CharSequence;
+    invoke-interface {v4}, Ljava/lang/CharSequence;->length()I
 
-    invoke-interface/range {v16 .. v16}, Ljava/lang/CharSequence;->length()I
+    move-result v16
 
-    move-result v17
+    if-nez v16, :cond_9
 
-    if-nez v17, :cond_9
+    move/from16 p1, v7
 
-    move/from16 v16, v7
-
-    move/from16 v18, v8
+    move/from16 v17, v8
 
     goto :goto_8
 
-    .line 1095
+    .line 1294
     :cond_9
-    invoke-interface/range {v16 .. v16}, Ljava/lang/CharSequence;->length()I
+    invoke-interface {v4}, Ljava/lang/CharSequence;->length()I
 
     move-result v4
 
-    move/from16 v16, v7
+    move/from16 p1, v7
 
     const/4 v7, 0x0
 
     :goto_7
     if-ge v7, v4, :cond_b
 
-    move/from16 v17, v4
+    move/from16 v16, v4
 
-    .line 1096
+    .line 1295
     invoke-virtual {v11, v7}, Ljava/lang/String;->charAt(I)C
 
     move-result v4
 
-    move/from16 v18, v8
+    move/from16 v17, v8
 
     add-int v8, v5, v7
 
@@ -2112,7 +2213,7 @@
 
     if-nez v4, :cond_a
 
-    .line 1097
+    .line 1296
     const-string v4, "byte prefix"
 
     invoke-static {v0, v5, v1, v11, v4}, Lkotlin/text/HexExtensionsKt;->throwNotContainedAt(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;)V
@@ -2120,16 +2221,16 @@
     :cond_a
     add-int/lit8 v7, v7, 0x1
 
-    move/from16 v4, v17
+    move/from16 v4, v16
 
-    move/from16 v8, v18
+    move/from16 v8, v17
 
     goto :goto_7
 
     :cond_b
-    move/from16 v18, v8
+    move/from16 v17, v8
 
-    .line 1100
+    .line 1299
     invoke-virtual {v11}, Ljava/lang/String;->length()I
 
     move-result v4
@@ -2141,17 +2242,17 @@
 
     if-ge v4, v5, :cond_c
 
-    const/4 v4, 0x2
+    .line 548
+    const-string v4, "exactly"
 
-    const/4 v7, 0x1
+    const/4 v7, 0x2
 
-    .line 509
-    invoke-static {v0, v5, v1, v4, v7}, Lkotlin/text/HexExtensionsKt;->throwInvalidNumberOfDigits(Ljava/lang/String;IIIZ)V
+    invoke-static {v0, v5, v1, v4, v7}, Lkotlin/text/HexExtensionsKt;->throwInvalidNumberOfDigits(Ljava/lang/String;IILjava/lang/String;I)V
 
     :cond_c
     add-int/lit8 v4, v6, 0x1
 
-    .line 511
+    .line 550
     invoke-static {v0, v5}, Lkotlin/text/HexExtensionsKt;->parseByteAt(Ljava/lang/String;I)B
 
     move-result v7
@@ -2160,7 +2261,7 @@
 
     add-int/lit8 v5, v5, 0x2
 
-    .line 1101
+    .line 1300
     move-object v6, v12
 
     check-cast v6, Ljava/lang/CharSequence;
@@ -2171,11 +2272,11 @@
 
     if-nez v7, :cond_d
 
-    move/from16 p1, v4
+    move/from16 v16, v4
 
     goto :goto_a
 
-    .line 1102
+    .line 1301
     :cond_d
     invoke-interface {v6}, Ljava/lang/CharSequence;->length()I
 
@@ -2186,12 +2287,12 @@
     :goto_9
     if-ge v7, v6, :cond_f
 
-    .line 1103
+    .line 1302
     invoke-virtual {v12, v7}, Ljava/lang/String;->charAt(I)C
 
     move-result v8
 
-    move/from16 p1, v4
+    move/from16 v16, v4
 
     add-int v4, v5, v7
 
@@ -2205,7 +2306,7 @@
 
     if-nez v4, :cond_e
 
-    .line 1104
+    .line 1303
     const-string v4, "byte suffix"
 
     invoke-static {v0, v5, v1, v12, v4}, Lkotlin/text/HexExtensionsKt;->throwNotContainedAt(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;)V
@@ -2213,14 +2314,14 @@
     :cond_e
     add-int/lit8 v7, v7, 0x1
 
-    move/from16 v4, p1
+    move/from16 v4, v16
 
     goto :goto_9
 
     :cond_f
-    move/from16 p1, v4
+    move/from16 v16, v4
 
-    .line 1107
+    .line 1306
     invoke-virtual {v12}, Ljava/lang/String;->length()I
 
     move-result v4
@@ -2228,11 +2329,11 @@
     add-int/2addr v5, v4
 
     :goto_a
-    move/from16 v6, p1
+    move/from16 v7, p1
 
-    move/from16 v7, v16
+    move/from16 v6, v16
 
-    move/from16 v8, v18
+    move/from16 v8, v17
 
     goto/16 :goto_0
 
@@ -2241,7 +2342,7 @@
 
     goto :goto_b
 
-    .line 515
+    .line 554
     :cond_11
     invoke-static {v3, v6}, Ljava/util/Arrays;->copyOf([BI)[B
 
@@ -2260,7 +2361,7 @@
 
     const/16 v0, 0x8
 
-    .line 797
+    .line 941
     invoke-static {p0, p1, p2, p3, v0}, Lkotlin/text/HexExtensionsKt;->hexToIntImpl(Ljava/lang/String;IILkotlin/text/HexFormat;I)I
 
     move-result p0
@@ -2281,7 +2382,7 @@
 
     const/4 v0, 0x0
 
-    .line 778
+    .line 912
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -2307,7 +2408,7 @@
 
     if-eqz p5, :cond_1
 
-    .line 796
+    .line 940
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result p2
@@ -2323,6 +2424,7 @@
 
     move-result-object p3
 
+    .line 938
     :cond_2
     invoke-static {p0, p1, p2, p3}, Lkotlin/text/HexExtensionsKt;->hexToInt(Ljava/lang/String;IILkotlin/text/HexFormat;)I
 
@@ -2338,13 +2440,14 @@
 
     if-eqz p2, :cond_0
 
-    .line 778
+    .line 912
     sget-object p1, Lkotlin/text/HexFormat;->Companion:Lkotlin/text/HexFormat$Companion;
 
     invoke-virtual {p1}, Lkotlin/text/HexFormat$Companion;->getDefault()Lkotlin/text/HexFormat;
 
     move-result-object p1
 
+    .line 910
     :cond_0
     invoke-static {p0, p1}, Lkotlin/text/HexExtensionsKt;->hexToInt(Ljava/lang/String;Lkotlin/text/HexFormat;)I
 
@@ -2356,7 +2459,7 @@
 .method private static final hexToIntImpl(Ljava/lang/String;IILkotlin/text/HexFormat;I)I
     .locals 9
 
-    .line 921
+    .line 1107
     sget-object v0, Lkotlin/collections/AbstractList;->Companion:Lkotlin/collections/AbstractList$Companion;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
@@ -2365,40 +2468,40 @@
 
     invoke-virtual {v0, p1, p2, v1}, Lkotlin/collections/AbstractList$Companion;->checkBoundsIndexes$kotlin_stdlib(III)V
 
-    .line 923
+    .line 1109
     invoke-virtual {p3}, Lkotlin/text/HexFormat;->getNumber()Lkotlin/text/HexFormat$NumberHexFormat;
 
     move-result-object p3
 
-    .line 926
+    .line 1112
     invoke-virtual {p3}, Lkotlin/text/HexFormat$NumberHexFormat;->isDigitsOnly$kotlin_stdlib()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 927
-    invoke-static {p0, p1, p2, p4}, Lkotlin/text/HexExtensionsKt;->checkMaxDigits(Ljava/lang/String;III)V
+    .line 1113
+    invoke-static {p0, p1, p2, p4}, Lkotlin/text/HexExtensionsKt;->checkNumberOfDigits(Ljava/lang/String;III)V
 
-    .line 928
+    .line 1114
     invoke-static {p0, p1, p2}, Lkotlin/text/HexExtensionsKt;->parseInt(Ljava/lang/String;II)I
 
     move-result p0
 
     return p0
 
-    .line 931
+    .line 1117
     :cond_0
     invoke-virtual {p3}, Lkotlin/text/HexFormat$NumberHexFormat;->getPrefix()Ljava/lang/String;
 
     move-result-object v7
 
-    .line 932
+    .line 1118
     invoke-virtual {p3}, Lkotlin/text/HexFormat$NumberHexFormat;->getSuffix()Ljava/lang/String;
 
     move-result-object v8
 
-    .line 933
+    .line 1119
     invoke-virtual {p3}, Lkotlin/text/HexFormat$NumberHexFormat;->getIgnoreCase$kotlin_stdlib()Z
 
     move-result v5
@@ -2415,9 +2518,9 @@
 
     move v6, p4
 
-    invoke-static/range {v0 .. v6}, Lkotlin/text/HexExtensionsKt;->checkPrefixSuffixMaxDigits(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;ZI)V
+    invoke-static/range {v0 .. v6}, Lkotlin/text/HexExtensionsKt;->checkPrefixSuffixNumberOfDigits(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;ZI)V
 
-    .line 934
+    .line 1120
     invoke-virtual {v7}, Ljava/lang/String;->length()I
 
     move-result p3
@@ -2437,12 +2540,20 @@
     return p0
 .end method
 
-.method private static final hexToLong(Ljava/lang/String;IILkotlin/text/HexFormat;)J
+.method public static final hexToLong(Ljava/lang/String;IILkotlin/text/HexFormat;)J
     .locals 1
+
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "format"
+
+    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/16 v0, 0x10
 
-    .line 874
+    .line 1053
     invoke-static {p0, p1, p2, p3, v0}, Lkotlin/text/HexExtensionsKt;->hexToLongImpl(Ljava/lang/String;IILkotlin/text/HexFormat;I)J
 
     move-result-wide p0
@@ -2463,7 +2574,7 @@
 
     const/4 v0, 0x0
 
-    .line 855
+    .line 1024
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -2475,7 +2586,7 @@
     return-wide p0
 .end method
 
-.method static synthetic hexToLong$default(Ljava/lang/String;IILkotlin/text/HexFormat;ILjava/lang/Object;)J
+.method public static synthetic hexToLong$default(Ljava/lang/String;IILkotlin/text/HexFormat;ILjava/lang/Object;)J
     .locals 0
 
     and-int/lit8 p5, p4, 0x1
@@ -2489,7 +2600,7 @@
 
     if-eqz p5, :cond_1
 
-    .line 873
+    .line 1052
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result p2
@@ -2505,6 +2616,7 @@
 
     move-result-object p3
 
+    .line 1050
     :cond_2
     invoke-static {p0, p1, p2, p3}, Lkotlin/text/HexExtensionsKt;->hexToLong(Ljava/lang/String;IILkotlin/text/HexFormat;)J
 
@@ -2520,13 +2632,14 @@
 
     if-eqz p2, :cond_0
 
-    .line 855
+    .line 1024
     sget-object p1, Lkotlin/text/HexFormat;->Companion:Lkotlin/text/HexFormat$Companion;
 
     invoke-virtual {p1}, Lkotlin/text/HexFormat$Companion;->getDefault()Lkotlin/text/HexFormat;
 
     move-result-object p1
 
+    .line 1022
     :cond_0
     invoke-static {p0, p1}, Lkotlin/text/HexExtensionsKt;->hexToLong(Ljava/lang/String;Lkotlin/text/HexFormat;)J
 
@@ -2538,7 +2651,7 @@
 .method private static final hexToLongImpl(Ljava/lang/String;IILkotlin/text/HexFormat;I)J
     .locals 9
 
-    .line 939
+    .line 1125
     sget-object v0, Lkotlin/collections/AbstractList;->Companion:Lkotlin/collections/AbstractList$Companion;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
@@ -2547,40 +2660,40 @@
 
     invoke-virtual {v0, p1, p2, v1}, Lkotlin/collections/AbstractList$Companion;->checkBoundsIndexes$kotlin_stdlib(III)V
 
-    .line 941
+    .line 1127
     invoke-virtual {p3}, Lkotlin/text/HexFormat;->getNumber()Lkotlin/text/HexFormat$NumberHexFormat;
 
     move-result-object p3
 
-    .line 944
+    .line 1130
     invoke-virtual {p3}, Lkotlin/text/HexFormat$NumberHexFormat;->isDigitsOnly$kotlin_stdlib()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 945
-    invoke-static {p0, p1, p2, p4}, Lkotlin/text/HexExtensionsKt;->checkMaxDigits(Ljava/lang/String;III)V
+    .line 1131
+    invoke-static {p0, p1, p2, p4}, Lkotlin/text/HexExtensionsKt;->checkNumberOfDigits(Ljava/lang/String;III)V
 
-    .line 946
+    .line 1132
     invoke-static {p0, p1, p2}, Lkotlin/text/HexExtensionsKt;->parseLong(Ljava/lang/String;II)J
 
     move-result-wide p0
 
     return-wide p0
 
-    .line 949
+    .line 1135
     :cond_0
     invoke-virtual {p3}, Lkotlin/text/HexFormat$NumberHexFormat;->getPrefix()Ljava/lang/String;
 
     move-result-object v7
 
-    .line 950
+    .line 1136
     invoke-virtual {p3}, Lkotlin/text/HexFormat$NumberHexFormat;->getSuffix()Ljava/lang/String;
 
     move-result-object v8
 
-    .line 951
+    .line 1137
     invoke-virtual {p3}, Lkotlin/text/HexFormat$NumberHexFormat;->getIgnoreCase$kotlin_stdlib()Z
 
     move-result v5
@@ -2597,9 +2710,9 @@
 
     move v6, p4
 
-    invoke-static/range {v0 .. v6}, Lkotlin/text/HexExtensionsKt;->checkPrefixSuffixMaxDigits(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;ZI)V
+    invoke-static/range {v0 .. v6}, Lkotlin/text/HexExtensionsKt;->checkPrefixSuffixNumberOfDigits(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;ZI)V
 
-    .line 952
+    .line 1138
     invoke-virtual {v7}, Ljava/lang/String;->length()I
 
     move-result p3
@@ -2624,7 +2737,7 @@
 
     const/4 v0, 0x4
 
-    .line 728
+    .line 837
     invoke-static {p0, p1, p2, p3, v0}, Lkotlin/text/HexExtensionsKt;->hexToIntImpl(Ljava/lang/String;IILkotlin/text/HexFormat;I)I
 
     move-result p0
@@ -2647,7 +2760,7 @@
 
     const/4 v0, 0x0
 
-    .line 709
+    .line 808
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -2673,7 +2786,7 @@
 
     if-eqz p5, :cond_1
 
-    .line 727
+    .line 836
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result p2
@@ -2689,6 +2802,7 @@
 
     move-result-object p3
 
+    .line 834
     :cond_2
     invoke-static {p0, p1, p2, p3}, Lkotlin/text/HexExtensionsKt;->hexToShort(Ljava/lang/String;IILkotlin/text/HexFormat;)S
 
@@ -2704,13 +2818,14 @@
 
     if-eqz p2, :cond_0
 
-    .line 709
+    .line 808
     sget-object p1, Lkotlin/text/HexFormat;->Companion:Lkotlin/text/HexFormat$Companion;
 
     invoke-virtual {p1}, Lkotlin/text/HexFormat$Companion;->getDefault()Lkotlin/text/HexFormat;
 
     move-result-object p1
 
+    .line 806
     :cond_0
     invoke-static {p0, p1}, Lkotlin/text/HexExtensionsKt;->hexToShort(Ljava/lang/String;Lkotlin/text/HexFormat;)S
 
@@ -2722,7 +2837,7 @@
 .method private static final longDecimalFromHexDigitAt(Ljava/lang/String;I)J
     .locals 4
 
-    .line 1018
+    .line 1218
     invoke-virtual {p0, p1}, Ljava/lang/String;->charAt(I)C
 
     move-result v0
@@ -2731,7 +2846,7 @@
 
     if-nez v1, :cond_0
 
-    .line 1019
+    .line 1219
     sget-object v1, Lkotlin/text/HexExtensionsKt;->HEX_DIGITS_TO_LONG_DECIMAL:[J
 
     aget-wide v0, v1, v0
@@ -2744,7 +2859,7 @@
 
     return-wide v0
 
-    .line 1022
+    .line 1222
     :cond_0
     invoke-static {p0, p1}, Lkotlin/text/HexExtensionsKt;->throwInvalidDigitAt(Ljava/lang/String;I)Ljava/lang/Void;
 
@@ -2758,7 +2873,7 @@
 .method private static final parseByteAt(Ljava/lang/String;I)B
     .locals 4
 
-    .line 1108
+    .line 1307
     invoke-virtual {p0, p1}, Ljava/lang/String;->charAt(I)C
 
     move-result v0
@@ -2767,7 +2882,7 @@
 
     if-nez v1, :cond_1
 
-    .line 1109
+    .line 1308
     sget-object v1, Lkotlin/text/HexExtensionsKt;->HEX_DIGITS_TO_DECIMAL:[I
 
     aget v0, v1, v0
@@ -2776,7 +2891,7 @@
 
     add-int/lit8 p1, p1, 0x1
 
-    .line 1113
+    .line 1312
     invoke-virtual {p0, p1}, Ljava/lang/String;->charAt(I)C
 
     move-result v2
@@ -2785,7 +2900,7 @@
 
     if-nez v3, :cond_0
 
-    .line 1114
+    .line 1313
     aget v1, v1, v2
 
     if-ltz v1, :cond_0
@@ -2798,7 +2913,7 @@
 
     return p0
 
-    .line 1117
+    .line 1316
     :cond_0
     invoke-static {p0, p1}, Lkotlin/text/HexExtensionsKt;->throwInvalidDigitAt(Ljava/lang/String;I)Ljava/lang/Void;
 
@@ -2808,7 +2923,7 @@
 
     throw p0
 
-    .line 1112
+    .line 1311
     :cond_1
     invoke-static {p0, p1}, Lkotlin/text/HexExtensionsKt;->throwInvalidDigitAt(Ljava/lang/String;I)Ljava/lang/Void;
 
@@ -2829,7 +2944,7 @@
 
     shl-int/lit8 v0, v0, 0x4
 
-    .line 1132
+    .line 1331
     invoke-virtual {p0, p1}, Ljava/lang/String;->charAt(I)C
 
     move-result v1
@@ -2838,7 +2953,7 @@
 
     if-nez v2, :cond_0
 
-    .line 1133
+    .line 1332
     sget-object v2, Lkotlin/text/HexExtensionsKt;->HEX_DIGITS_TO_DECIMAL:[I
 
     aget v1, v2, v1
@@ -2851,7 +2966,7 @@
 
     goto :goto_0
 
-    .line 1136
+    .line 1335
     :cond_0
     invoke-static {p0, p1}, Lkotlin/text/HexExtensionsKt;->throwInvalidDigitAt(Ljava/lang/String;I)Ljava/lang/Void;
 
@@ -2879,7 +2994,7 @@
 
     shl-long/2addr v2, v4
 
-    .line 1137
+    .line 1336
     invoke-virtual {p0, p1}, Ljava/lang/String;->charAt(I)C
 
     move-result v4
@@ -2888,7 +3003,7 @@
 
     if-nez v5, :cond_0
 
-    .line 1138
+    .line 1337
     sget-object v5, Lkotlin/text/HexExtensionsKt;->HEX_DIGITS_TO_LONG_DECIMAL:[J
 
     aget-wide v4, v5, v4
@@ -2903,7 +3018,7 @@
 
     goto :goto_0
 
-    .line 1141
+    .line 1340
     :cond_0
     invoke-static {p0, p1}, Lkotlin/text/HexExtensionsKt;->throwInvalidDigitAt(Ljava/lang/String;I)Ljava/lang/Void;
 
@@ -2946,30 +3061,30 @@
 
     add-long/2addr v5, v7
 
-    .line 544
+    .line 583
     invoke-static {v5, v6, v2, v4}, Lkotlin/text/HexExtensionsKt;->charsPerSet(JII)J
 
     move-result-wide v7
 
     if-gt v1, v2, :cond_0
 
-    .line 547
+    .line 586
     invoke-static {v5, v6, v1, v4}, Lkotlin/text/HexExtensionsKt;->charsPerSet(JII)J
 
     move-result-wide v9
 
     goto :goto_0
 
-    .line 549
+    .line 588
     :cond_0
     div-int v9, v1, v2
 
-    .line 550
+    .line 589
     invoke-static {v7, v8, v9, v3}, Lkotlin/text/HexExtensionsKt;->charsPerSet(JII)J
 
     move-result-wide v9
 
-    .line 551
+    .line 590
     rem-int v11, v1, v2
 
     if-eqz v11, :cond_1
@@ -2978,7 +3093,7 @@
 
     add-long/2addr v9, v12
 
-    .line 554
+    .line 593
     invoke-static {v5, v6, v11, v4}, Lkotlin/text/HexExtensionsKt;->charsPerSet(JII)J
 
     move-result-wide v11
@@ -2991,7 +3106,7 @@
 
     const/4 v0, 0x1
 
-    .line 562
+    .line 601
     invoke-static {v11, v12, v9, v10, v0}, Lkotlin/text/HexExtensionsKt;->wholeElementsPerSet(JJI)J
 
     move-result-wide v13
@@ -3004,7 +3119,7 @@
 
     sub-long/2addr v11, v9
 
-    .line 565
+    .line 604
     invoke-static {v11, v12, v7, v8, v3}, Lkotlin/text/HexExtensionsKt;->wholeElementsPerSet(JJI)J
 
     move-result-wide v9
@@ -3017,7 +3132,7 @@
 
     sub-long/2addr v11, v7
 
-    .line 568
+    .line 607
     invoke-static {v11, v12, v5, v6, v4}, Lkotlin/text/HexExtensionsKt;->wholeElementsPerSet(JJI)J
 
     move-result-wide v0
@@ -3068,7 +3183,7 @@
 
     return v0
 
-    .line 534
+    .line 573
     :cond_3
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -3086,7 +3201,7 @@
 .method private static final throwInvalidDigitAt(Ljava/lang/String;I)Ljava/lang/Void;
     .locals 3
 
-    .line 1048
+    .line 1247
     new-instance v0, Ljava/lang/NumberFormatException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3122,21 +3237,10 @@
     throw v0
 .end method
 
-.method private static final throwInvalidNumberOfDigits(Ljava/lang/String;IIIZ)V
+.method private static final throwInvalidNumberOfDigits(Ljava/lang/String;IILjava/lang/String;I)V
     .locals 3
 
-    if-eqz p4, :cond_0
-
-    .line 1026
-    const-string p4, "exactly"
-
-    goto :goto_0
-
-    :cond_0
-    const-string p4, "at most"
-
-    .line 1027
-    :goto_0
+    .line 1226
     const-string v0, "null cannot be cast to non-null type java.lang.String"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
@@ -3149,27 +3253,27 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1028
+    .line 1227
     new-instance v0, Ljava/lang/NumberFormatException;
 
-    .line 1029
+    .line 1228
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "Expected "
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v1, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p4
+    move-result-object p3
 
     const/16 v1, 0x20
 
-    invoke-virtual {p4, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {p3, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    move-result-object p4
+    move-result-object p3
 
-    invoke-virtual {p4, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p3, p4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object p3
 
@@ -3183,7 +3287,7 @@
 
     move-result-object p3
 
-    const-string p4, ", but was "
+    const-string p4, ", but was \""
 
     invoke-virtual {p3, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3193,7 +3297,7 @@
 
     move-result-object p0
 
-    const-string p3, " of length "
+    const-string p3, "\" of length "
 
     invoke-virtual {p0, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3209,7 +3313,7 @@
 
     move-result-object p0
 
-    .line 1028
+    .line 1227
     invoke-direct {v0, p0}, Ljava/lang/NumberFormatException;-><init>(Ljava/lang/String;)V
 
     throw v0
@@ -3218,7 +3322,7 @@
 .method private static final throwInvalidPrefixSuffix(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    .line 1041
+    .line 1240
     const-string v0, "null cannot be cast to non-null type java.lang.String"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
@@ -3231,10 +3335,10 @@
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1042
+    .line 1241
     new-instance p1, Ljava/lang/NumberFormatException;
 
-    .line 1043
+    .line 1242
     new-instance p2, Ljava/lang/StringBuilder;
 
     const-string v0, "Expected a hexadecimal number with prefix \""
@@ -3269,7 +3373,7 @@
 
     move-result-object p0
 
-    .line 1042
+    .line 1241
     invoke-direct {p1, p0}, Ljava/lang/NumberFormatException;-><init>(Ljava/lang/String;)V
 
     throw p1
@@ -3278,7 +3382,7 @@
 .method private static final throwNotContainedAt(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;)V
     .locals 2
 
-    .line 1034
+    .line 1233
     invoke-virtual {p3}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -3301,10 +3405,10 @@
 
     invoke-static {p0, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1035
+    .line 1234
     new-instance p2, Ljava/lang/NumberFormatException;
 
-    .line 1036
+    .line 1235
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Expected "
@@ -3349,7 +3453,7 @@
 
     move-result-object p0
 
-    .line 1035
+    .line 1234
     invoke-direct {p2, p0}, Ljava/lang/NumberFormatException;-><init>(Ljava/lang/String;)V
 
     throw p2
@@ -3358,7 +3462,7 @@
 .method private static final toCharArrayIfNotEmpty(Ljava/lang/String;[CI)I
     .locals 3
 
-    .line 911
+    .line 1097
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -3371,7 +3475,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 914
+    .line 1100
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -3384,7 +3488,7 @@
 
     goto :goto_0
 
-    .line 913
+    .line 1099
     :cond_0
     invoke-virtual {p0, v2}, Ljava/lang/String;->charAt(I)C
 
@@ -3392,7 +3496,7 @@
 
     aput-char v0, p1, p2
 
-    .line 916
+    .line 1102
     :cond_1
     :goto_0
     invoke-virtual {p0}, Ljava/lang/String;->length()I
@@ -3411,7 +3515,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 614
+    .line 666
     invoke-virtual {p1}, Lkotlin/text/HexFormat;->getUpperCase()Z
 
     move-result v0
@@ -3425,14 +3529,14 @@
     :cond_0
     const-string v0, "0123456789abcdef"
 
-    .line 615
+    .line 667
     :goto_0
     invoke-virtual {p1}, Lkotlin/text/HexFormat;->getNumber()Lkotlin/text/HexFormat$NumberHexFormat;
 
     move-result-object p1
 
-    .line 618
-    invoke-virtual {p1}, Lkotlin/text/HexFormat$NumberHexFormat;->isDigitsOnly$kotlin_stdlib()Z
+    .line 670
+    invoke-virtual {p1}, Lkotlin/text/HexFormat$NumberHexFormat;->isDigitsOnlyAndNoPadding$kotlin_stdlib()Z
 
     move-result v1
 
@@ -3442,14 +3546,14 @@
 
     and-int/lit8 v1, v1, 0xf
 
-    .line 621
+    .line 673
     invoke-virtual {v0, v1}, Ljava/lang/String;->charAt(I)C
 
     move-result v1
 
     and-int/lit8 v2, p0, 0xf
 
-    .line 622
+    .line 674
     invoke-virtual {v0, v2}, Ljava/lang/String;->charAt(I)C
 
     move-result v0
@@ -3466,7 +3570,7 @@
 
     aput-char v0, v3, v1
 
-    .line 623
+    .line 675
     invoke-virtual {p1}, Lkotlin/text/HexFormat$NumberHexFormat;->getRemoveLeadingZeros()Z
 
     move-result p1
@@ -3475,7 +3579,7 @@
 
     and-int/lit16 p0, p0, 0xff
 
-    .line 624
+    .line 676
     invoke-static {p0}, Ljava/lang/Integer;->numberOfLeadingZeros(I)I
 
     move-result p0
@@ -3496,7 +3600,7 @@
 
     goto :goto_1
 
-    .line 626
+    .line 678
     :cond_1
     invoke-static {v3}, Lkotlin/text/StringsKt;->concatToString([C)Ljava/lang/String;
 
@@ -3510,7 +3614,7 @@
 
     const/16 p0, 0x8
 
-    .line 629
+    .line 681
     invoke-static {v1, v2, p1, v0, p0}, Lkotlin/text/HexExtensionsKt;->toHexStringImpl(JLkotlin/text/HexFormat$NumberHexFormat;Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p0
@@ -3525,7 +3629,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 742
+    .line 864
     invoke-virtual {p1}, Lkotlin/text/HexFormat;->getUpperCase()Z
 
     move-result v0
@@ -3539,14 +3643,14 @@
     :cond_0
     const-string v0, "0123456789abcdef"
 
-    .line 743
+    .line 865
     :goto_0
     invoke-virtual {p1}, Lkotlin/text/HexFormat;->getNumber()Lkotlin/text/HexFormat$NumberHexFormat;
 
     move-result-object p1
 
-    .line 746
-    invoke-virtual {p1}, Lkotlin/text/HexFormat$NumberHexFormat;->isDigitsOnly$kotlin_stdlib()Z
+    .line 868
+    invoke-virtual {p1}, Lkotlin/text/HexFormat$NumberHexFormat;->isDigitsOnlyAndNoPadding$kotlin_stdlib()Z
 
     move-result v1
 
@@ -3556,7 +3660,7 @@
 
     and-int/lit8 v1, v1, 0xf
 
-    .line 749
+    .line 871
     invoke-virtual {v0, v1}, Ljava/lang/String;->charAt(I)C
 
     move-result v1
@@ -3565,7 +3669,7 @@
 
     and-int/lit8 v2, v2, 0xf
 
-    .line 750
+    .line 872
     invoke-virtual {v0, v2}, Ljava/lang/String;->charAt(I)C
 
     move-result v2
@@ -3574,7 +3678,7 @@
 
     and-int/lit8 v3, v3, 0xf
 
-    .line 751
+    .line 873
     invoke-virtual {v0, v3}, Ljava/lang/String;->charAt(I)C
 
     move-result v3
@@ -3583,7 +3687,7 @@
 
     and-int/lit8 v4, v4, 0xf
 
-    .line 752
+    .line 874
     invoke-virtual {v0, v4}, Ljava/lang/String;->charAt(I)C
 
     move-result v4
@@ -3592,7 +3696,7 @@
 
     and-int/lit8 v5, v5, 0xf
 
-    .line 753
+    .line 875
     invoke-virtual {v0, v5}, Ljava/lang/String;->charAt(I)C
 
     move-result v5
@@ -3601,7 +3705,7 @@
 
     and-int/lit8 v6, v6, 0xf
 
-    .line 754
+    .line 876
     invoke-virtual {v0, v6}, Ljava/lang/String;->charAt(I)C
 
     move-result v6
@@ -3610,14 +3714,14 @@
 
     and-int/lit8 v7, v7, 0xf
 
-    .line 755
+    .line 877
     invoke-virtual {v0, v7}, Ljava/lang/String;->charAt(I)C
 
     move-result v7
 
     and-int/lit8 v8, p0, 0xf
 
-    .line 756
+    .line 878
     invoke-virtual {v0, v8}, Ljava/lang/String;->charAt(I)C
 
     move-result v0
@@ -3658,14 +3762,14 @@
 
     aput-char v0, v8, v2
 
-    .line 757
+    .line 879
     invoke-virtual {p1}, Lkotlin/text/HexFormat$NumberHexFormat;->getRemoveLeadingZeros()Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
-    .line 758
+    .line 880
     invoke-static {p0}, Ljava/lang/Integer;->numberOfLeadingZeros(I)I
 
     move-result p0
@@ -3684,7 +3788,7 @@
 
     goto :goto_1
 
-    .line 760
+    .line 882
     :cond_1
     invoke-static {v8}, Lkotlin/text/StringsKt;->concatToString([C)Ljava/lang/String;
 
@@ -3698,7 +3802,7 @@
 
     const/16 p0, 0x20
 
-    .line 763
+    .line 885
     invoke-static {v1, v2, p1, v0, p0}, Lkotlin/text/HexExtensionsKt;->toHexStringImpl(JLkotlin/text/HexFormat$NumberHexFormat;Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p0
@@ -3717,7 +3821,7 @@
 
     invoke-static {v3, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 811
+    .line 968
     invoke-virtual/range {p2 .. p2}, Lkotlin/text/HexFormat;->getUpperCase()Z
 
     move-result v2
@@ -3731,14 +3835,14 @@
     :cond_0
     const-string v2, "0123456789abcdef"
 
-    .line 812
+    .line 969
     :goto_0
     invoke-virtual/range {p2 .. p2}, Lkotlin/text/HexFormat;->getNumber()Lkotlin/text/HexFormat$NumberHexFormat;
 
     move-result-object v3
 
-    .line 815
-    invoke-virtual {v3}, Lkotlin/text/HexFormat$NumberHexFormat;->isDigitsOnly$kotlin_stdlib()Z
+    .line 972
+    invoke-virtual {v3}, Lkotlin/text/HexFormat$NumberHexFormat;->isDigitsOnlyAndNoPadding$kotlin_stdlib()Z
 
     move-result v4
 
@@ -3754,7 +3858,7 @@
 
     long-to-int v4, v4
 
-    .line 818
+    .line 975
     invoke-virtual {v2, v4}, Ljava/lang/String;->charAt(I)C
 
     move-result v4
@@ -3767,7 +3871,7 @@
 
     long-to-int v5, v8
 
-    .line 819
+    .line 976
     invoke-virtual {v2, v5}, Ljava/lang/String;->charAt(I)C
 
     move-result v5
@@ -3780,7 +3884,7 @@
 
     long-to-int v8, v8
 
-    .line 820
+    .line 977
     invoke-virtual {v2, v8}, Ljava/lang/String;->charAt(I)C
 
     move-result v8
@@ -3793,7 +3897,7 @@
 
     long-to-int v9, v9
 
-    .line 821
+    .line 978
     invoke-virtual {v2, v9}, Ljava/lang/String;->charAt(I)C
 
     move-result v9
@@ -3806,7 +3910,7 @@
 
     long-to-int v10, v10
 
-    .line 822
+    .line 979
     invoke-virtual {v2, v10}, Ljava/lang/String;->charAt(I)C
 
     move-result v10
@@ -3819,7 +3923,7 @@
 
     long-to-int v11, v11
 
-    .line 823
+    .line 980
     invoke-virtual {v2, v11}, Ljava/lang/String;->charAt(I)C
 
     move-result v11
@@ -3832,7 +3936,7 @@
 
     long-to-int v12, v12
 
-    .line 824
+    .line 981
     invoke-virtual {v2, v12}, Ljava/lang/String;->charAt(I)C
 
     move-result v12
@@ -3845,7 +3949,7 @@
 
     long-to-int v13, v13
 
-    .line 825
+    .line 982
     invoke-virtual {v2, v13}, Ljava/lang/String;->charAt(I)C
 
     move-result v13
@@ -3858,7 +3962,7 @@
 
     long-to-int v14, v14
 
-    .line 826
+    .line 983
     invoke-virtual {v2, v14}, Ljava/lang/String;->charAt(I)C
 
     move-result v14
@@ -3873,7 +3977,7 @@
 
     long-to-int v14, v14
 
-    .line 827
+    .line 984
     invoke-virtual {v2, v14}, Ljava/lang/String;->charAt(I)C
 
     move-result v14
@@ -3888,7 +3992,7 @@
 
     long-to-int v14, v14
 
-    .line 828
+    .line 985
     invoke-virtual {v2, v14}, Ljava/lang/String;->charAt(I)C
 
     move-result v14
@@ -3905,7 +4009,7 @@
 
     long-to-int v13, v13
 
-    .line 829
+    .line 986
     invoke-virtual {v2, v13}, Ljava/lang/String;->charAt(I)C
 
     move-result v13
@@ -3918,7 +4022,7 @@
 
     long-to-int v14, v14
 
-    .line 830
+    .line 987
     invoke-virtual {v2, v14}, Ljava/lang/String;->charAt(I)C
 
     move-result v14
@@ -3935,7 +4039,7 @@
 
     long-to-int v13, v13
 
-    .line 831
+    .line 988
     invoke-virtual {v2, v13}, Ljava/lang/String;->charAt(I)C
 
     move-result v13
@@ -3948,7 +4052,7 @@
 
     long-to-int v14, v14
 
-    .line 832
+    .line 989
     invoke-virtual {v2, v14}, Ljava/lang/String;->charAt(I)C
 
     move-result v14
@@ -3957,7 +4061,7 @@
 
     long-to-int v6, v6
 
-    .line 833
+    .line 990
     invoke-virtual {v2, v6}, Ljava/lang/String;->charAt(I)C
 
     move-result v2
@@ -4030,14 +4134,14 @@
 
     aput-char v2, v6, v5
 
-    .line 834
+    .line 991
     invoke-virtual {v3}, Lkotlin/text/HexFormat$NumberHexFormat;->getRemoveLeadingZeros()Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
-    .line 835
+    .line 992
     invoke-static/range {p0 .. p1}, Ljava/lang/Long;->numberOfLeadingZeros(J)I
 
     move-result v0
@@ -4056,7 +4160,7 @@
 
     goto :goto_1
 
-    .line 837
+    .line 994
     :cond_1
     invoke-static {v6}, Lkotlin/text/StringsKt;->concatToString([C)Ljava/lang/String;
 
@@ -4068,7 +4172,7 @@
     :cond_2
     const/16 v4, 0x40
 
-    .line 840
+    .line 997
     invoke-static {v0, v1, v3, v2, v4}, Lkotlin/text/HexExtensionsKt;->toHexStringImpl(JLkotlin/text/HexFormat$NumberHexFormat;Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object v0
@@ -4083,7 +4187,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 677
+    .line 764
     invoke-virtual {p1}, Lkotlin/text/HexFormat;->getUpperCase()Z
 
     move-result v0
@@ -4097,14 +4201,14 @@
     :cond_0
     const-string v0, "0123456789abcdef"
 
-    .line 678
+    .line 765
     :goto_0
     invoke-virtual {p1}, Lkotlin/text/HexFormat;->getNumber()Lkotlin/text/HexFormat$NumberHexFormat;
 
     move-result-object p1
 
-    .line 681
-    invoke-virtual {p1}, Lkotlin/text/HexFormat$NumberHexFormat;->isDigitsOnly$kotlin_stdlib()Z
+    .line 768
+    invoke-virtual {p1}, Lkotlin/text/HexFormat$NumberHexFormat;->isDigitsOnlyAndNoPadding$kotlin_stdlib()Z
 
     move-result v1
 
@@ -4116,7 +4220,7 @@
 
     and-int/lit8 v1, v1, 0xf
 
-    .line 684
+    .line 771
     invoke-virtual {v0, v1}, Ljava/lang/String;->charAt(I)C
 
     move-result v1
@@ -4125,7 +4229,7 @@
 
     and-int/lit8 v3, v3, 0xf
 
-    .line 685
+    .line 772
     invoke-virtual {v0, v3}, Ljava/lang/String;->charAt(I)C
 
     move-result v3
@@ -4134,14 +4238,14 @@
 
     and-int/lit8 v4, v4, 0xf
 
-    .line 686
+    .line 773
     invoke-virtual {v0, v4}, Ljava/lang/String;->charAt(I)C
 
     move-result v4
 
     and-int/lit8 v5, p0, 0xf
 
-    .line 687
+    .line 774
     invoke-virtual {v0, v5}, Ljava/lang/String;->charAt(I)C
 
     move-result v0
@@ -4166,7 +4270,7 @@
 
     aput-char v0, v5, v3
 
-    .line 688
+    .line 775
     invoke-virtual {p1}, Lkotlin/text/HexFormat$NumberHexFormat;->getRemoveLeadingZeros()Z
 
     move-result p1
@@ -4177,7 +4281,7 @@
 
     and-int/2addr p0, p1
 
-    .line 689
+    .line 776
     invoke-static {p0}, Ljava/lang/Integer;->numberOfLeadingZeros(I)I
 
     move-result p0
@@ -4198,7 +4302,7 @@
 
     goto :goto_1
 
-    .line 691
+    .line 778
     :cond_1
     invoke-static {v5}, Lkotlin/text/StringsKt;->concatToString([C)Ljava/lang/String;
 
@@ -4210,7 +4314,7 @@
     :cond_2
     int-to-long v3, p0
 
-    .line 694
+    .line 781
     invoke-static {v3, v4, p1, v0, v2}, Lkotlin/text/HexExtensionsKt;->toHexStringImpl(JLkotlin/text/HexFormat$NumberHexFormat;Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p0
@@ -4229,7 +4333,7 @@
 
     invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 93
+    .line 118
     sget-object v0, Lkotlin/collections/AbstractList;->Companion:Lkotlin/collections/AbstractList$Companion;
 
     array-length v1, p0
@@ -4238,12 +4342,12 @@
 
     if-ne p1, p2, :cond_0
 
-    .line 96
+    .line 121
     const-string p0, ""
 
     return-object p0
 
-    .line 99
+    .line 124
     :cond_0
     invoke-virtual {p3}, Lkotlin/text/HexFormat;->getUpperCase()Z
 
@@ -4258,27 +4362,27 @@
     :cond_1
     sget-object v0, Lkotlin/text/HexExtensionsKt;->BYTE_TO_LOWER_CASE_HEX_DIGITS:[I
 
-    .line 100
+    .line 125
     :goto_0
     invoke-virtual {p3}, Lkotlin/text/HexFormat;->getBytes()Lkotlin/text/HexFormat$BytesHexFormat;
 
     move-result-object p3
 
-    .line 103
+    .line 128
     invoke-virtual {p3}, Lkotlin/text/HexFormat$BytesHexFormat;->getNoLineAndGroupSeparator$kotlin_stdlib()Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    .line 104
+    .line 129
     invoke-static {p0, p1, p2, p3, v0}, Lkotlin/text/HexExtensionsKt;->toHexStringNoLineAndGroupSeparator([BIILkotlin/text/HexFormat$BytesHexFormat;[I)Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 
-    .line 107
+    .line 132
     :cond_2
     invoke-static {p0, p1, p2, p3, v0}, Lkotlin/text/HexExtensionsKt;->toHexStringSlowPath([BIILkotlin/text/HexFormat$BytesHexFormat;[I)Ljava/lang/String;
 
@@ -4300,7 +4404,7 @@
 
     const/4 v0, 0x0
 
-    .line 71
+    .line 84
     array-length v1, p0
 
     invoke-static {p0, v0, v1, p1}, Lkotlin/text/HexExtensionsKt;->toHexString([BIILkotlin/text/HexFormat;)Ljava/lang/String;
@@ -4317,13 +4421,14 @@
 
     if-eqz p2, :cond_0
 
-    .line 613
+    .line 665
     sget-object p1, Lkotlin/text/HexFormat;->Companion:Lkotlin/text/HexFormat$Companion;
 
     invoke-virtual {p1}, Lkotlin/text/HexFormat$Companion;->getDefault()Lkotlin/text/HexFormat;
 
     move-result-object p1
 
+    .line 663
     :cond_0
     invoke-static {p0, p1}, Lkotlin/text/HexExtensionsKt;->toHexString(BLkotlin/text/HexFormat;)Ljava/lang/String;
 
@@ -4339,13 +4444,14 @@
 
     if-eqz p2, :cond_0
 
-    .line 741
+    .line 863
     sget-object p1, Lkotlin/text/HexFormat;->Companion:Lkotlin/text/HexFormat$Companion;
 
     invoke-virtual {p1}, Lkotlin/text/HexFormat$Companion;->getDefault()Lkotlin/text/HexFormat;
 
     move-result-object p1
 
+    .line 861
     :cond_0
     invoke-static {p0, p1}, Lkotlin/text/HexExtensionsKt;->toHexString(ILkotlin/text/HexFormat;)Ljava/lang/String;
 
@@ -4361,13 +4467,14 @@
 
     if-eqz p3, :cond_0
 
-    .line 810
+    .line 967
     sget-object p2, Lkotlin/text/HexFormat;->Companion:Lkotlin/text/HexFormat$Companion;
 
     invoke-virtual {p2}, Lkotlin/text/HexFormat$Companion;->getDefault()Lkotlin/text/HexFormat;
 
     move-result-object p2
 
+    .line 965
     :cond_0
     invoke-static {p0, p1, p2}, Lkotlin/text/HexExtensionsKt;->toHexString(JLkotlin/text/HexFormat;)Ljava/lang/String;
 
@@ -4383,13 +4490,14 @@
 
     if-eqz p2, :cond_0
 
-    .line 676
+    .line 763
     sget-object p1, Lkotlin/text/HexFormat;->Companion:Lkotlin/text/HexFormat$Companion;
 
     invoke-virtual {p1}, Lkotlin/text/HexFormat$Companion;->getDefault()Lkotlin/text/HexFormat;
 
     move-result-object p1
 
+    .line 761
     :cond_0
     invoke-static {p0, p1}, Lkotlin/text/HexExtensionsKt;->toHexString(SLkotlin/text/HexFormat;)Ljava/lang/String;
 
@@ -4412,7 +4520,7 @@
 
     if-eqz p5, :cond_1
 
-    .line 90
+    .line 115
     array-length p2, p0
 
     :cond_1
@@ -4420,14 +4528,14 @@
 
     if-eqz p4, :cond_2
 
-    .line 91
+    .line 116
     sget-object p3, Lkotlin/text/HexFormat;->Companion:Lkotlin/text/HexFormat$Companion;
 
     invoke-virtual {p3}, Lkotlin/text/HexFormat$Companion;->getDefault()Lkotlin/text/HexFormat;
 
     move-result-object p3
 
-    .line 88
+    .line 111
     :cond_2
     invoke-static {p0, p1, p2, p3}, Lkotlin/text/HexExtensionsKt;->toHexString([BIILkotlin/text/HexFormat;)Ljava/lang/String;
 
@@ -4443,13 +4551,14 @@
 
     if-eqz p2, :cond_0
 
-    .line 71
+    .line 84
     sget-object p1, Lkotlin/text/HexFormat;->Companion:Lkotlin/text/HexFormat$Companion;
 
     invoke-virtual {p1}, Lkotlin/text/HexFormat$Companion;->getDefault()Lkotlin/text/HexFormat;
 
     move-result-object p1
 
+    .line 82
     :cond_0
     invoke-static {p0, p1}, Lkotlin/text/HexExtensionsKt;->toHexString([BLkotlin/text/HexFormat;)Ljava/lang/String;
 
@@ -4459,151 +4568,174 @@
 .end method
 
 .method private static final toHexStringImpl(JLkotlin/text/HexFormat$NumberHexFormat;Ljava/lang/String;I)Ljava/lang/String;
-    .locals 14
+    .locals 16
 
-    and-int/lit8 v0, p4, 0x3
+    move-object/from16 v0, p3
 
-    if-nez v0, :cond_4
+    and-int/lit8 v1, p4, 0x3
 
-    shr-int/lit8 v0, p4, 0x2
+    if-nez v1, :cond_5
 
-    .line 885
-    invoke-virtual/range {p2 .. p2}, Lkotlin/text/HexFormat$NumberHexFormat;->getPrefix()Ljava/lang/String;
+    shr-int/lit8 v1, p4, 0x2
 
-    move-result-object v1
+    .line 1063
+    invoke-virtual/range {p2 .. p2}, Lkotlin/text/HexFormat$NumberHexFormat;->getMinLength()I
 
-    .line 886
-    invoke-virtual/range {p2 .. p2}, Lkotlin/text/HexFormat$NumberHexFormat;->getSuffix()Ljava/lang/String;
+    move-result v2
 
-    move-result-object v2
+    sub-int v3, v2, v1
 
-    .line 887
-    invoke-virtual/range {p2 .. p2}, Lkotlin/text/HexFormat$NumberHexFormat;->getRemoveLeadingZeros()Z
+    const/4 v4, 0x0
+
+    .line 1064
+    invoke-static {v3, v4}, Lkotlin/ranges/RangesKt;->coerceAtLeast(II)I
 
     move-result v3
 
-    .line 889
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
+    .line 1066
+    invoke-virtual/range {p2 .. p2}, Lkotlin/text/HexFormat$NumberHexFormat;->getPrefix()Ljava/lang/String;
 
-    move-result v4
+    move-result-object v5
 
-    int-to-long v4, v4
+    .line 1067
+    invoke-virtual/range {p2 .. p2}, Lkotlin/text/HexFormat$NumberHexFormat;->getSuffix()Ljava/lang/String;
 
-    int-to-long v6, v0
+    move-result-object v6
 
-    add-long/2addr v4, v6
+    .line 1068
+    invoke-virtual/range {p2 .. p2}, Lkotlin/text/HexFormat$NumberHexFormat;->getRemoveLeadingZeros()Z
 
-    invoke-virtual {v2}, Ljava/lang/String;->length()I
+    move-result v7
 
-    move-result v6
+    .line 1070
+    invoke-virtual {v5}, Ljava/lang/String;->length()I
 
-    int-to-long v6, v6
+    move-result v8
 
-    add-long/2addr v4, v6
+    int-to-long v8, v8
 
-    .line 890
-    invoke-static {v4, v5}, Lkotlin/text/HexExtensionsKt;->checkFormatLength(J)I
+    int-to-long v10, v3
 
-    move-result v4
+    add-long/2addr v8, v10
 
-    new-array v5, v4, [C
+    int-to-long v10, v1
 
-    const/4 v6, 0x0
+    add-long/2addr v8, v10
 
-    .line 892
-    invoke-static {v1, v5, v6}, Lkotlin/text/HexExtensionsKt;->toCharArrayIfNotEmpty(Ljava/lang/String;[CI)I
-
-    move-result v1
-
-    move v7, v3
-
-    move v8, v6
-
-    move v3, v1
-
-    move/from16 v1, p4
-
-    :goto_0
-    const/4 v9, 0x1
-
-    if-ge v8, v0, :cond_2
-
-    add-int/lit8 v1, v1, -0x4
-
-    shr-long v10, p0, v1
-
-    const-wide/16 v12, 0xf
-
-    and-long/2addr v10, v12
-
-    long-to-int v10, v10
-
-    if-eqz v7, :cond_0
-
-    if-nez v10, :cond_0
-
-    if-lez v1, :cond_0
-
-    move v7, v9
-
-    goto :goto_1
-
-    :cond_0
-    move v7, v6
-
-    :goto_1
-    if-nez v7, :cond_1
-
-    add-int/lit8 v9, v3, 0x1
-
-    move-object/from16 v11, p3
-
-    .line 900
-    invoke-virtual {v11, v10}, Ljava/lang/String;->charAt(I)C
+    invoke-virtual {v6}, Ljava/lang/String;->length()I
 
     move-result v10
 
-    aput-char v10, v5, v3
+    int-to-long v10, v10
 
-    move v3, v9
+    add-long/2addr v8, v10
 
-    goto :goto_2
+    .line 1071
+    invoke-static {v8, v9}, Lkotlin/text/HexExtensionsKt;->checkFormatLength(J)I
+
+    move-result v8
+
+    new-array v9, v8, [C
+
+    .line 1073
+    invoke-static {v5, v9, v4}, Lkotlin/text/HexExtensionsKt;->toCharArrayIfNotEmpty(Ljava/lang/String;[CI)I
+
+    move-result v5
+
+    if-lez v3, :cond_0
+
+    .line 1076
+    invoke-virtual {v0, v4}, Ljava/lang/String;->charAt(I)C
+
+    move-result v10
+
+    add-int/2addr v3, v5
+
+    invoke-static {v9, v10, v5, v3}, Lkotlin/collections/ArraysKt;->fill([CCII)V
+
+    move v5, v3
+
+    :cond_0
+    move/from16 v3, p4
+
+    move v10, v4
+
+    :goto_0
+    const/4 v11, 0x1
+
+    if-ge v10, v1, :cond_3
+
+    add-int/lit8 v3, v3, -0x4
+
+    shr-long v12, p0, v3
+
+    const-wide/16 v14, 0xf
+
+    and-long/2addr v12, v14
+
+    long-to-int v12, v12
+
+    if-eqz v7, :cond_1
+
+    if-nez v12, :cond_1
+
+    shr-int/lit8 v7, v3, 0x2
+
+    if-lt v7, v2, :cond_1
+
+    move v7, v11
+
+    goto :goto_1
 
     :cond_1
-    move-object/from16 v11, p3
+    move v7, v4
 
-    :goto_2
-    add-int/lit8 v8, v8, 0x1
+    :goto_1
+    if-nez v7, :cond_2
+
+    add-int/lit8 v11, v5, 0x1
+
+    .line 1086
+    invoke-virtual {v0, v12}, Ljava/lang/String;->charAt(I)C
+
+    move-result v12
+
+    aput-char v12, v9, v5
+
+    move v5, v11
+
+    :cond_2
+    add-int/lit8 v10, v10, 0x1
 
     goto :goto_0
 
-    .line 904
-    :cond_2
-    invoke-static {v2, v5, v3}, Lkotlin/text/HexExtensionsKt;->toCharArrayIfNotEmpty(Ljava/lang/String;[CI)I
+    .line 1090
+    :cond_3
+    invoke-static {v6, v9, v5}, Lkotlin/text/HexExtensionsKt;->toCharArrayIfNotEmpty(Ljava/lang/String;[CI)I
 
     move-result v0
 
-    if-ne v0, v4, :cond_3
+    if-ne v0, v8, :cond_4
 
-    .line 906
-    invoke-static {v5}, Lkotlin/text/StringsKt;->concatToString([C)Ljava/lang/String;
+    .line 1092
+    invoke-static {v9}, Lkotlin/text/StringsKt;->concatToString([C)Ljava/lang/String;
 
     move-result-object v0
 
-    goto :goto_3
+    goto :goto_2
 
-    :cond_3
+    :cond_4
     const/4 v1, 0x0
 
-    invoke-static {v5, v6, v0, v9, v1}, Lkotlin/text/StringsKt;->concatToString$default([CIIILjava/lang/Object;)Ljava/lang/String;
+    invoke-static {v9, v4, v0, v11, v1}, Lkotlin/text/StringsKt;->concatToString$default([CIIILjava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
-    :goto_3
+    :goto_2
     return-object v0
 
-    .line 880
-    :cond_4
+    .line 1059
+    :cond_5
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     const-string v1, "Failed requirement."
@@ -4620,21 +4752,21 @@
 .method private static final toHexStringNoLineAndGroupSeparator([BIILkotlin/text/HexFormat$BytesHexFormat;[I)Ljava/lang/String;
     .locals 1
 
-    .line 118
+    .line 143
     invoke-virtual {p3}, Lkotlin/text/HexFormat$BytesHexFormat;->getShortByteSeparatorNoPrefixAndSuffix$kotlin_stdlib()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 119
+    .line 144
     invoke-static {p0, p1, p2, p3, p4}, Lkotlin/text/HexExtensionsKt;->toHexStringShortByteSeparatorNoPrefixAndSuffix([BIILkotlin/text/HexFormat$BytesHexFormat;[I)Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 
-    .line 122
+    .line 147
     :cond_0
     invoke-static {p0, p1, p2, p3, p4}, Lkotlin/text/HexExtensionsKt;->toHexStringNoLineAndGroupSeparatorSlowPath([BIILkotlin/text/HexFormat$BytesHexFormat;[I)Ljava/lang/String;
 
@@ -4646,44 +4778,44 @@
 .method private static final toHexStringNoLineAndGroupSeparatorSlowPath([BIILkotlin/text/HexFormat$BytesHexFormat;[I)Ljava/lang/String;
     .locals 10
 
-    .line 165
+    .line 190
     invoke-virtual {p3}, Lkotlin/text/HexFormat$BytesHexFormat;->getBytePrefix()Ljava/lang/String;
 
     move-result-object v7
 
-    .line 166
+    .line 191
     invoke-virtual {p3}, Lkotlin/text/HexFormat$BytesHexFormat;->getByteSuffix()Ljava/lang/String;
 
     move-result-object v8
 
-    .line 167
+    .line 192
     invoke-virtual {p3}, Lkotlin/text/HexFormat$BytesHexFormat;->getByteSeparator()Ljava/lang/String;
 
     move-result-object p3
 
     sub-int v0, p2, p1
 
-    .line 171
+    .line 196
     invoke-virtual {p3}, Ljava/lang/String;->length()I
 
     move-result v1
 
-    .line 172
+    .line 197
     invoke-virtual {v7}, Ljava/lang/String;->length()I
 
     move-result v2
 
-    .line 173
+    .line 198
     invoke-virtual {v8}, Ljava/lang/String;->length()I
 
     move-result v3
 
-    .line 169
+    .line 194
     invoke-static {v0, v1, v2, v3}, Lkotlin/text/HexExtensionsKt;->formattedStringLength(IIII)I
 
     move-result v0
 
-    .line 175
+    .line 200
     new-array v9, v0, [C
 
     const/4 v6, 0x0
@@ -4700,7 +4832,7 @@
 
     move-object v5, v9
 
-    .line 178
+    .line 203
     invoke-static/range {v0 .. v6}, Lkotlin/text/HexExtensionsKt;->formatByteAt([BILjava/lang/String;Ljava/lang/String;[I[CI)I
 
     move-result v0
@@ -4710,7 +4842,7 @@
 
     if-ge p1, p2, :cond_0
 
-    .line 180
+    .line 205
     invoke-static {p3, v9, v0}, Lkotlin/text/HexExtensionsKt;->toCharArrayIfNotEmpty(Ljava/lang/String;[CI)I
 
     move-result v6
@@ -4727,14 +4859,14 @@
 
     move-object v5, v9
 
-    .line 181
+    .line 206
     invoke-static/range {v0 .. v6}, Lkotlin/text/HexExtensionsKt;->formatByteAt([BILjava/lang/String;Ljava/lang/String;[I[CI)I
 
     move-result v0
 
     goto :goto_0
 
-    .line 184
+    .line 209
     :cond_0
     invoke-static {v9}, Lkotlin/text/StringsKt;->concatToString([C)Ljava/lang/String;
 
@@ -4746,7 +4878,7 @@
 .method private static final toHexStringShortByteSeparatorNoPrefixAndSuffix([BIILkotlin/text/HexFormat$BytesHexFormat;[I)Ljava/lang/String;
     .locals 8
 
-    .line 132
+    .line 157
     invoke-virtual {p3}, Lkotlin/text/HexFormat$BytesHexFormat;->getByteSeparator()Ljava/lang/String;
 
     move-result-object v0
@@ -4771,7 +4903,7 @@
 
     mul-long/2addr v4, v0
 
-    .line 139
+    .line 164
     invoke-static {v4, v5}, Lkotlin/text/HexExtensionsKt;->checkFormatLength(J)I
 
     move-result p3
@@ -4781,7 +4913,7 @@
     :goto_0
     if-ge p1, p2, :cond_0
 
-    .line 141
+    .line 166
     invoke-static {p0, p1, p4, p3, v3}, Lkotlin/text/HexExtensionsKt;->formatByteAt([BI[I[CI)I
 
     move-result v3
@@ -4790,7 +4922,7 @@
 
     goto :goto_0
 
-    .line 143
+    .line 168
     :cond_0
     invoke-static {p3}, Lkotlin/text/StringsKt;->concatToString([C)Ljava/lang/String;
 
@@ -4809,14 +4941,14 @@
 
     sub-long/2addr v6, v4
 
-    .line 145
+    .line 170
     invoke-static {v6, v7}, Lkotlin/text/HexExtensionsKt;->checkFormatLength(J)I
 
     move-result v0
 
     new-array v0, v0, [C
 
-    .line 146
+    .line 171
     invoke-virtual {p3}, Lkotlin/text/HexFormat$BytesHexFormat;->getByteSeparator()Ljava/lang/String;
 
     move-result-object p3
@@ -4825,7 +4957,7 @@
 
     move-result p3
 
-    .line 148
+    .line 173
     invoke-static {p0, p1, p4, v0, v3}, Lkotlin/text/HexExtensionsKt;->formatByteAt([BI[I[CI)I
 
     move-result v2
@@ -4837,10 +4969,10 @@
 
     add-int/lit8 v1, v2, 0x1
 
-    .line 150
+    .line 175
     aput-char p3, v0, v2
 
-    .line 151
+    .line 176
     invoke-static {p0, p1, p4, v0, v1}, Lkotlin/text/HexExtensionsKt;->formatByteAt([BI[I[CI)I
 
     move-result v2
@@ -4849,7 +4981,7 @@
 
     goto :goto_1
 
-    .line 154
+    .line 179
     :cond_2
     invoke-static {v0}, Lkotlin/text/StringsKt;->concatToString([C)Ljava/lang/String;
 
@@ -4857,7 +4989,7 @@
 
     return-object p0
 
-    .line 133
+    .line 158
     :cond_3
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -4877,54 +5009,54 @@
 
     move/from16 v0, p2
 
-    .line 194
+    .line 219
     invoke-virtual/range {p3 .. p3}, Lkotlin/text/HexFormat$BytesHexFormat;->getBytesPerLine()I
 
     move-result v8
 
-    .line 195
+    .line 220
     invoke-virtual/range {p3 .. p3}, Lkotlin/text/HexFormat$BytesHexFormat;->getBytesPerGroup()I
 
     move-result v9
 
-    .line 196
+    .line 221
     invoke-virtual/range {p3 .. p3}, Lkotlin/text/HexFormat$BytesHexFormat;->getBytePrefix()Ljava/lang/String;
 
     move-result-object v10
 
-    .line 197
+    .line 222
     invoke-virtual/range {p3 .. p3}, Lkotlin/text/HexFormat$BytesHexFormat;->getByteSuffix()Ljava/lang/String;
 
     move-result-object v11
 
-    .line 198
+    .line 223
     invoke-virtual/range {p3 .. p3}, Lkotlin/text/HexFormat$BytesHexFormat;->getByteSeparator()Ljava/lang/String;
 
     move-result-object v12
 
-    .line 199
+    .line 224
     invoke-virtual/range {p3 .. p3}, Lkotlin/text/HexFormat$BytesHexFormat;->getGroupSeparator()Ljava/lang/String;
 
     move-result-object v13
 
     sub-int v1, v0, p1
 
-    .line 205
+    .line 230
     invoke-virtual {v13}, Ljava/lang/String;->length()I
 
     move-result v4
 
-    .line 206
+    .line 231
     invoke-virtual {v12}, Ljava/lang/String;->length()I
 
     move-result v5
 
-    .line 207
+    .line 232
     invoke-virtual {v10}, Ljava/lang/String;->length()I
 
     move-result v6
 
-    .line 208
+    .line 233
     invoke-virtual {v11}, Ljava/lang/String;->length()I
 
     move-result v7
@@ -4933,12 +5065,12 @@
 
     move v3, v9
 
-    .line 201
+    .line 226
     invoke-static/range {v1 .. v7}, Lkotlin/text/HexExtensionsKt;->formattedStringLength(IIIIIII)I
 
     move-result v14
 
-    .line 210
+    .line 235
     new-array v15, v14, [C
 
     const/16 v16, 0x0
@@ -4960,7 +5092,7 @@
 
     const/16 v3, 0xa
 
-    .line 218
+    .line 243
     aput-char v3, v15, v1
 
     move v1, v2
@@ -4974,7 +5106,7 @@
     :cond_0
     if-ne v3, v9, :cond_1
 
-    .line 222
+    .line 247
     invoke-static {v13, v15, v1}, Lkotlin/text/HexExtensionsKt;->toCharArrayIfNotEmpty(Ljava/lang/String;[CI)I
 
     move-result v1
@@ -4993,7 +5125,7 @@
     :goto_1
     if-eqz v18, :cond_2
 
-    .line 226
+    .line 251
     invoke-static {v12, v15, v1}, Lkotlin/text/HexExtensionsKt;->toCharArrayIfNotEmpty(Ljava/lang/String;[CI)I
 
     move-result v1
@@ -5017,7 +5149,7 @@
 
     move/from16 v7, v19
 
-    .line 229
+    .line 254
     invoke-static/range {v1 .. v7}, Lkotlin/text/HexExtensionsKt;->formatByteAt([BILjava/lang/String;Ljava/lang/String;[I[CI)I
 
     move-result v1
@@ -5033,22 +5165,18 @@
     :cond_3
     if-ne v1, v14, :cond_4
 
-    .line 236
+    .line 261
     invoke-static {v15}, Lkotlin/text/StringsKt;->concatToString([C)Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 
-    .line 235
+    .line 260
     :cond_4
     new-instance v0, Ljava/lang/IllegalStateException;
 
     const-string v1, "Check failed."
-
-    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object v1
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
@@ -5077,7 +5205,7 @@
 
     add-long/2addr p2, v0
 
-    .line 589
+    .line 628
     div-long v0, p0, p2
 
     :cond_1

@@ -7,21 +7,24 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;,
-        Lcom/google/common/collect/AbstractMapBasedMultimap$SortedAsMap;,
-        Lcom/google/common/collect/AbstractMapBasedMultimap$AsMap;,
-        Lcom/google/common/collect/AbstractMapBasedMultimap$Itr;,
-        Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableKeySet;,
-        Lcom/google/common/collect/AbstractMapBasedMultimap$SortedKeySet;,
-        Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet;,
+        Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedCollection;,
         Lcom/google/common/collect/AbstractMapBasedMultimap$RandomAccessWrappedList;,
         Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList;,
+        Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet;,
+        Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableKeySet;,
+        Lcom/google/common/collect/AbstractMapBasedMultimap$SortedKeySet;,
+        Lcom/google/common/collect/AbstractMapBasedMultimap$AsMap;,
+        Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;,
+        Lcom/google/common/collect/AbstractMapBasedMultimap$SortedAsMap;,
+        Lcom/google/common/collect/AbstractMapBasedMultimap$Itr;,
         Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedNavigableSet;,
         Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedSortedSet;,
-        Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedSet;,
-        Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedCollection;
+        Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedSet;
     }
 .end annotation
 
@@ -61,6 +64,15 @@
 # direct methods
 .method protected constructor <init>(Ljava/util/Map;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "map"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -71,17 +83,17 @@
         }
     .end annotation
 
-    .line 114
+    .line 120
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMultimap;-><init>()V
 
-    .line 115
+    .line 121
     invoke-interface {p1}, Ljava/util/Map;->isEmpty()Z
 
     move-result v0
 
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 116
+    .line 122
     iput-object p1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->map:Ljava/util/Map;
 
     return-void
@@ -90,7 +102,7 @@
 .method static synthetic access$000(Lcom/google/common/collect/AbstractMapBasedMultimap;)Ljava/util/Map;
     .locals 0
 
-    .line 84
+    .line 90
     iget-object p0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->map:Ljava/util/Map;
 
     return-object p0
@@ -99,7 +111,7 @@
 .method static synthetic access$100(Ljava/util/Collection;)Ljava/util/Iterator;
     .locals 0
 
-    .line 84
+    .line 90
     invoke-static {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap;->iteratorOrListIterator(Ljava/util/Collection;)Ljava/util/Iterator;
 
     move-result-object p0
@@ -110,7 +122,7 @@
 .method static synthetic access$208(Lcom/google/common/collect/AbstractMapBasedMultimap;)I
     .locals 2
 
-    .line 84
+    .line 90
     iget v0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->totalSize:I
 
     add-int/lit8 v1, v0, 0x1
@@ -123,7 +135,7 @@
 .method static synthetic access$210(Lcom/google/common/collect/AbstractMapBasedMultimap;)I
     .locals 2
 
-    .line 84
+    .line 90
     iget v0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->totalSize:I
 
     add-int/lit8 v1, v0, -0x1
@@ -136,7 +148,7 @@
 .method static synthetic access$212(Lcom/google/common/collect/AbstractMapBasedMultimap;I)I
     .locals 1
 
-    .line 84
+    .line 90
     iget v0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->totalSize:I
 
     add-int/2addr v0, p1
@@ -149,7 +161,7 @@
 .method static synthetic access$220(Lcom/google/common/collect/AbstractMapBasedMultimap;I)I
     .locals 1
 
-    .line 84
+    .line 90
     iget v0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->totalSize:I
 
     sub-int/2addr v0, p1
@@ -162,7 +174,7 @@
 .method static synthetic access$300(Lcom/google/common/collect/AbstractMapBasedMultimap;Ljava/lang/Object;)V
     .locals 0
 
-    .line 84
+    .line 90
     invoke-direct {p0, p1}, Lcom/google/common/collect/AbstractMapBasedMultimap;->removeValuesForKey(Ljava/lang/Object;)V
 
     return-void
@@ -171,9 +183,18 @@
 .method private getOrCreateCollection(Ljava/lang/Object;)Ljava/util/Collection;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -182,7 +203,7 @@
         }
     .end annotation
 
-    .line 201
+    .line 207
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->map:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -193,12 +214,12 @@
 
     if-nez v0, :cond_0
 
-    .line 203
+    .line 209
     invoke-virtual {p0, p1}, Lcom/google/common/collect/AbstractMapBasedMultimap;->createCollection(Ljava/lang/Object;)Ljava/util/Collection;
 
     move-result-object v0
 
-    .line 204
+    .line 210
     iget-object p0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->map:Ljava/util/Map;
 
     invoke-interface {p0, p1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -209,6 +230,15 @@
 
 .method private static iteratorOrListIterator(Ljava/util/Collection;)Ljava/util/Iterator;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "collection"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -221,12 +251,12 @@
         }
     .end annotation
 
-    .line 573
+    .line 586
     instance-of v0, p0, Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    .line 574
+    .line 587
     check-cast p0, Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->listIterator()Ljava/util/ListIterator;
@@ -235,7 +265,7 @@
 
     goto :goto_0
 
-    .line 575
+    .line 588
     :cond_0
     invoke-interface {p0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
@@ -247,8 +277,20 @@
 
 .method private removeValuesForKey(Ljava/lang/Object;)V
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 1102
+    .line 1150
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->map:Ljava/util/Map;
 
     invoke-static {v0, p1}, Lcom/google/common/collect/Maps;->safeRemove(Ljava/util/Map;Ljava/lang/Object;)Ljava/lang/Object;
@@ -259,15 +301,15 @@
 
     if-eqz p1, :cond_0
 
-    .line 1105
+    .line 1153
     invoke-interface {p1}, Ljava/util/Collection;->size()I
 
     move-result v0
 
-    .line 1106
+    .line 1154
     invoke-interface {p1}, Ljava/util/Collection;->clear()V
 
-    .line 1107
+    .line 1155
     iget p1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->totalSize:I
 
     sub-int/2addr p1, v0
@@ -292,7 +334,7 @@
         }
     .end annotation
 
-    .line 163
+    .line 169
     iget-object p0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->map:Ljava/util/Map;
 
     return-object p0
@@ -301,7 +343,7 @@
 .method public clear()V
     .locals 2
 
-    .line 268
+    .line 275
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->map:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
@@ -325,12 +367,12 @@
 
     check-cast v1, Ljava/util/Collection;
 
-    .line 269
+    .line 276
     invoke-interface {v1}, Ljava/util/Collection;->clear()V
 
     goto :goto_0
 
-    .line 271
+    .line 278
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->map:Ljava/util/Map;
 
@@ -338,7 +380,7 @@
 
     const/4 v0, 0x0
 
-    .line 272
+    .line 279
     iput v0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->totalSize:I
 
     return-void
@@ -347,11 +389,19 @@
 .method public containsKey(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 175
+    .line 181
     iget-object p0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->map:Ljava/util/Map;
 
     invoke-interface {p0, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
@@ -373,7 +423,7 @@
         }
     .end annotation
 
-    .line 1232
+    .line 1290
     new-instance v0, Lcom/google/common/collect/AbstractMapBasedMultimap$AsMap;
 
     iget-object v1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->map:Ljava/util/Map;
@@ -396,9 +446,18 @@
 .method createCollection(Ljava/lang/Object;)Ljava/util/Collection;
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -407,7 +466,7 @@
         }
     .end annotation
 
-    .line 159
+    .line 165
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap;->createCollection()Ljava/util/Collection;
 
     move-result-object p0
@@ -426,19 +485,19 @@
         }
     .end annotation
 
-    .line 1205
+    .line 1263
     instance-of v0, p0, Lcom/google/common/collect/SetMultimap;
 
     if-eqz v0, :cond_0
 
-    .line 1206
+    .line 1264
     new-instance v0, Lcom/google/common/collect/AbstractMultimap$EntrySet;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/AbstractMultimap$EntrySet;-><init>(Lcom/google/common/collect/AbstractMultimap;)V
 
     return-object v0
 
-    .line 1208
+    .line 1266
     :cond_0
     new-instance v0, Lcom/google/common/collect/AbstractMultimap$Entries;
 
@@ -457,7 +516,7 @@
         }
     .end annotation
 
-    .line 891
+    .line 925
     new-instance v0, Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet;
 
     iget-object v1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->map:Ljava/util/Map;
@@ -477,7 +536,7 @@
         }
     .end annotation
 
-    .line 1186
+    .line 1244
     new-instance v0, Lcom/google/common/collect/Multimaps$Keys;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/Multimaps$Keys;-><init>(Lcom/google/common/collect/Multimap;)V
@@ -497,14 +556,14 @@
         }
     .end annotation
 
-    .line 1236
+    .line 1294
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->map:Ljava/util/Map;
 
     instance-of v1, v0, Ljava/util/NavigableMap;
 
     if-eqz v1, :cond_0
 
-    .line 1237
+    .line 1295
     new-instance v0, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;
 
     iget-object v1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->map:Ljava/util/Map;
@@ -515,13 +574,13 @@
 
     return-object v0
 
-    .line 1238
+    .line 1296
     :cond_0
     instance-of v0, v0, Ljava/util/SortedMap;
 
     if-eqz v0, :cond_1
 
-    .line 1239
+    .line 1297
     new-instance v0, Lcom/google/common/collect/AbstractMapBasedMultimap$SortedAsMap;
 
     iget-object v1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->map:Ljava/util/Map;
@@ -532,7 +591,7 @@
 
     return-object v0
 
-    .line 1241
+    .line 1299
     :cond_1
     new-instance v0, Lcom/google/common/collect/AbstractMapBasedMultimap$AsMap;
 
@@ -553,14 +612,14 @@
         }
     .end annotation
 
-    .line 895
+    .line 929
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->map:Ljava/util/Map;
 
     instance-of v1, v0, Ljava/util/NavigableMap;
 
     if-eqz v1, :cond_0
 
-    .line 896
+    .line 930
     new-instance v0, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableKeySet;
 
     iget-object v1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->map:Ljava/util/Map;
@@ -571,13 +630,13 @@
 
     return-object v0
 
-    .line 897
+    .line 931
     :cond_0
     instance-of v0, v0, Ljava/util/SortedMap;
 
     if-eqz v0, :cond_1
 
-    .line 898
+    .line 932
     new-instance v0, Lcom/google/common/collect/AbstractMapBasedMultimap$SortedKeySet;
 
     iget-object v1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->map:Ljava/util/Map;
@@ -588,7 +647,7 @@
 
     return-object v0
 
-    .line 900
+    .line 934
     :cond_1
     new-instance v0, Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet;
 
@@ -609,7 +668,7 @@
         }
     .end annotation
 
-    .line 135
+    .line 141
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap;->createCollection()Ljava/util/Collection;
 
     move-result-object v0
@@ -631,7 +690,7 @@
         }
     .end annotation
 
-    .line 1165
+    .line 1222
     new-instance v0, Lcom/google/common/collect/AbstractMultimap$Values;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/AbstractMultimap$Values;-><init>(Lcom/google/common/collect/AbstractMultimap;)V
@@ -650,7 +709,7 @@
         }
     .end annotation
 
-    .line 1200
+    .line 1258
     invoke-super {p0}, Lcom/google/common/collect/AbstractMultimap;->entries()Ljava/util/Collection;
 
     move-result-object p0
@@ -669,7 +728,7 @@
         }
     .end annotation
 
-    .line 1222
+    .line 1280
     new-instance v0, Lcom/google/common/collect/AbstractMapBasedMultimap$2;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$2;-><init>(Lcom/google/common/collect/AbstractMapBasedMultimap;)V
@@ -680,9 +739,18 @@
 .method public get(Ljava/lang/Object;)Ljava/util/Collection;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -691,7 +759,7 @@
         }
     .end annotation
 
-    .line 284
+    .line 291
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->map:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -702,12 +770,12 @@
 
     if-nez v0, :cond_0
 
-    .line 286
+    .line 293
     invoke-virtual {p0, p1}, Lcom/google/common/collect/AbstractMapBasedMultimap;->createCollection(Ljava/lang/Object;)Ljava/util/Collection;
 
     move-result-object v0
 
-    .line 288
+    .line 295
     :cond_0
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/AbstractMapBasedMultimap;->wrapCollection(Ljava/lang/Object;Ljava/util/Collection;)Ljava/util/Collection;
 
@@ -719,20 +787,31 @@
 .method public put(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 2
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV;)Z"
         }
     .end annotation
 
-    .line 182
+    .line 188
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->map:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -745,33 +824,33 @@
 
     if-nez v0, :cond_1
 
-    .line 184
+    .line 190
     invoke-virtual {p0, p1}, Lcom/google/common/collect/AbstractMapBasedMultimap;->createCollection(Ljava/lang/Object;)Ljava/util/Collection;
 
     move-result-object v0
 
-    .line 185
+    .line 191
     invoke-interface {v0, p2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     move-result p2
 
     if-eqz p2, :cond_0
 
-    .line 186
+    .line 192
     iget p2, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->totalSize:I
 
     add-int/2addr p2, v1
 
     iput p2, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->totalSize:I
 
-    .line 187
+    .line 193
     iget-object p0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->map:Ljava/util/Map;
 
     invoke-interface {p0, p1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return v1
 
-    .line 190
+    .line 196
     :cond_0
     new-instance p0, Ljava/lang/AssertionError;
 
@@ -781,7 +860,7 @@
 
     throw p0
 
-    .line 192
+    .line 198
     :cond_1
     invoke-interface {v0, p2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
@@ -789,7 +868,7 @@
 
     if-eqz p1, :cond_2
 
-    .line 193
+    .line 199
     iget p1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->totalSize:I
 
     add-int/2addr p1, v1
@@ -807,9 +886,18 @@
 .method public removeAll(Ljava/lang/Object;)Ljava/util/Collection;
     .locals 3
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -820,7 +908,7 @@
         }
     .end annotation
 
-    .line 247
+    .line 253
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->map:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
@@ -831,23 +919,23 @@
 
     if-nez p1, :cond_0
 
-    .line 250
+    .line 256
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap;->createUnmodifiableEmptyCollection()Ljava/util/Collection;
 
     move-result-object p0
 
     return-object p0
 
-    .line 253
+    .line 259
     :cond_0
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap;->createCollection()Ljava/util/Collection;
 
     move-result-object v0
 
-    .line 254
+    .line 260
     invoke-interface {v0, p1}, Ljava/util/Collection;->addAll(Ljava/util/Collection;)Z
 
-    .line 255
+    .line 261
     iget v1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->totalSize:I
 
     invoke-interface {p1}, Ljava/util/Collection;->size()I
@@ -858,10 +946,10 @@
 
     iput v1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->totalSize:I
 
-    .line 256
+    .line 262
     invoke-interface {p1}, Ljava/util/Collection;->clear()V
 
-    .line 258
+    .line 264
     invoke-virtual {p0, v0}, Lcom/google/common/collect/AbstractMapBasedMultimap;->unmodifiableCollectionSubclass(Ljava/util/Collection;)Ljava/util/Collection;
 
     move-result-object p0
@@ -872,9 +960,20 @@
 .method public replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/Collection;
     .locals 3
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "values"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;",
@@ -885,40 +984,40 @@
         }
     .end annotation
 
-    .line 218
+    .line 224
     invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p2
 
-    .line 219
+    .line 225
     invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 220
+    .line 226
     invoke-virtual {p0, p1}, Lcom/google/common/collect/AbstractMapBasedMultimap;->removeAll(Ljava/lang/Object;)Ljava/util/Collection;
 
     move-result-object p0
 
     return-object p0
 
-    .line 224
+    .line 230
     :cond_0
     invoke-direct {p0, p1}, Lcom/google/common/collect/AbstractMapBasedMultimap;->getOrCreateCollection(Ljava/lang/Object;)Ljava/util/Collection;
 
     move-result-object p1
 
-    .line 225
+    .line 231
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap;->createCollection()Ljava/util/Collection;
 
     move-result-object v0
 
-    .line 226
+    .line 232
     invoke-interface {v0, p1}, Ljava/util/Collection;->addAll(Ljava/util/Collection;)Z
 
-    .line 228
+    .line 234
     iget v1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->totalSize:I
 
     invoke-interface {p1}, Ljava/util/Collection;->size()I
@@ -929,10 +1028,10 @@
 
     iput v1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->totalSize:I
 
-    .line 229
+    .line 235
     invoke-interface {p1}, Ljava/util/Collection;->clear()V
 
-    .line 231
+    .line 237
     :cond_1
     :goto_0
     invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
@@ -941,7 +1040,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 232
+    .line 238
     invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
@@ -952,7 +1051,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 233
+    .line 239
     iget v1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->totalSize:I
 
     add-int/lit8 v1, v1, 0x1
@@ -961,7 +1060,7 @@
 
     goto :goto_0
 
-    .line 237
+    .line 243
     :cond_2
     invoke-virtual {p0, v0}, Lcom/google/common/collect/AbstractMapBasedMultimap;->unmodifiableCollectionSubclass(Ljava/util/Collection;)Ljava/util/Collection;
 
@@ -972,6 +1071,15 @@
 
 .method final setMap(Ljava/util/Map;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "map"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -982,15 +1090,15 @@
         }
     .end annotation
 
-    .line 121
+    .line 127
     iput-object p1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->map:Ljava/util/Map;
 
     const/4 v0, 0x0
 
-    .line 122
+    .line 128
     iput v0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->totalSize:I
 
-    .line 123
+    .line 129
     invoke-interface {p1}, Ljava/util/Map;->values()Ljava/util/Collection;
 
     move-result-object p1
@@ -1012,7 +1120,7 @@
 
     check-cast v0, Ljava/util/Collection;
 
-    .line 124
+    .line 130
     invoke-interface {v0}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v1
@@ -1021,7 +1129,7 @@
 
     invoke-static {v1}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 125
+    .line 131
     iget v1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->totalSize:I
 
     invoke-interface {v0}, Ljava/util/Collection;->size()I
@@ -1041,7 +1149,7 @@
 .method public size()I
     .locals 0
 
-    .line 170
+    .line 176
     iget p0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap;->totalSize:I
 
     return p0
@@ -1049,6 +1157,15 @@
 
 .method unmodifiableCollectionSubclass(Ljava/util/Collection;)Ljava/util/Collection;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "collection"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -1061,7 +1178,7 @@
         }
     .end annotation
 
-    .line 262
+    .line 269
     invoke-static {p1}, Ljava/util/Collections;->unmodifiableCollection(Ljava/util/Collection;)Ljava/util/Collection;
 
     move-result-object p0
@@ -1079,7 +1196,7 @@
         }
     .end annotation
 
-    .line 1170
+    .line 1227
     new-instance v0, Lcom/google/common/collect/AbstractMapBasedMultimap$1;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$1;-><init>(Lcom/google/common/collect/AbstractMapBasedMultimap;)V
@@ -1097,7 +1214,7 @@
         }
     .end annotation
 
-    .line 1160
+    .line 1217
     invoke-super {p0}, Lcom/google/common/collect/AbstractMultimap;->values()Ljava/util/Collection;
 
     move-result-object p0
@@ -1108,9 +1225,20 @@
 .method wrapCollection(Ljava/lang/Object;Ljava/util/Collection;)Ljava/util/Collection;
     .locals 2
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "collection"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;",
@@ -1121,7 +1249,7 @@
         }
     .end annotation
 
-    .line 296
+    .line 303
     new-instance v0, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedCollection;
 
     const/4 v1, 0x0
@@ -1134,13 +1262,26 @@
 .method final wrapList(Ljava/lang/Object;Ljava/util/List;Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedCollection;)Ljava/util/List;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
     .param p3    # Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedCollection;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "list",
+            "ancestor"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;",
@@ -1153,19 +1294,19 @@
         }
     .end annotation
 
-    .line 301
+    .line 308
     instance-of v0, p2, Ljava/util/RandomAccess;
 
     if-eqz v0, :cond_0
 
-    .line 302
+    .line 309
     new-instance v0, Lcom/google/common/collect/AbstractMapBasedMultimap$RandomAccessWrappedList;
 
     invoke-direct {v0, p0, p1, p2, p3}, Lcom/google/common/collect/AbstractMapBasedMultimap$RandomAccessWrappedList;-><init>(Lcom/google/common/collect/AbstractMapBasedMultimap;Ljava/lang/Object;Ljava/util/List;Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedCollection;)V
 
     goto :goto_0
 
-    .line 303
+    .line 310
     :cond_0
     new-instance v0, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList;
 

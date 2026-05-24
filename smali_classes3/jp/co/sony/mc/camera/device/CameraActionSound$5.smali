@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/device/CameraActionSound;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 270
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/CameraActionSound$5;->this$0:Ljp/co/sony/mc/camera/device/CameraActionSound;

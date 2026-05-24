@@ -1,5 +1,5 @@
 version: 2.12.1
-apkFileName: SomcCameraApp-Shimanto.apk
+apkFileName: SomcCameraApp-Chikugo.apk
 usesFramework:
   ids:
   - 1
@@ -9,8 +9,8 @@ sdkInfo:
 packageInfo:
   forcedPackageId: 127
 versionInfo:
-  versionCode: 2236428
-  versionName: 1.1.1.A.0.12
+  versionCode: 2359327
+  versionName: 1.2.0.A.0.31
 doNotCompress:
 - arsc
 - dex
@@ -26,7 +26,6 @@ doNotCompress:
 - META-INF/androidx.appcompat_appcompat-resources.version
 - META-INF/androidx.appcompat_appcompat.version
 - META-INF/androidx.autofill_autofill.version
-- META-INF/androidx.browser_browser.version
 - META-INF/androidx.cardview_cardview.version
 - META-INF/androidx.compose.animation_animation-core.version
 - META-INF/androidx.compose.animation_animation.version
@@ -88,9 +87,13 @@ doNotCompress:
 - META-INF/androidx.print_print.version
 - META-INF/androidx.profileinstaller_profileinstaller.version
 - META-INF/androidx.recyclerview_recyclerview.version
+- META-INF/androidx.room_room-ktx.version
+- META-INF/androidx.room_room-runtime.version
 - META-INF/androidx.savedstate_savedstate-ktx.version
 - META-INF/androidx.savedstate_savedstate.version
 - META-INF/androidx.slidingpanelayout_slidingpanelayout.version
+- META-INF/androidx.sqlite_sqlite-framework.version
+- META-INF/androidx.sqlite_sqlite.version
 - META-INF/androidx.startup_startup-runtime.version
 - META-INF/androidx.tracing_tracing.version
 - META-INF/androidx.transition_transition.version
@@ -105,7 +108,4 @@ doNotCompress:
 - META-INF/kotlinx_coroutines_core.version
 - assets/dexopt/baseline.prof
 - assets/dexopt/baseline.profm
-- com/google/api/client/googleapis/google-api-client.properties
-- com/google/api/client/googleapis/google.p12
-- com/google/api/client/http/google-http-client.properties
 - res/raw/data1.raw

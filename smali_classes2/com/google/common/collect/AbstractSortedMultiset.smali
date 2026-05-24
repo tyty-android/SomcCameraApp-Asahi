@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<E:",
@@ -34,6 +37,9 @@
 .end field
 
 .field private transient descendingMultiset:Lcom/google/common/collect/SortedMultiset;
+    .annotation runtime Lcom/google/errorprone/annotations/concurrent/LazyInit;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/common/collect/SortedMultiset<",
@@ -41,7 +47,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -50,7 +56,7 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 42
+    .line 46
     invoke-static {}, Lcom/google/common/collect/Ordering;->natural()Lcom/google/common/collect/Ordering;
 
     move-result-object v0
@@ -62,6 +68,15 @@
 
 .method constructor <init>(Ljava/util/Comparator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "comparator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -70,10 +85,10 @@
         }
     .end annotation
 
-    .line 45
+    .line 49
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMultiset;-><init>()V
 
-    .line 46
+    .line 50
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -97,7 +112,7 @@
         }
     .end annotation
 
-    .line 61
+    .line 65
     iget-object p0, p0, Lcom/google/common/collect/AbstractSortedMultiset;->comparator:Ljava/util/Comparator;
 
     return-object p0
@@ -113,7 +128,7 @@
         }
     .end annotation
 
-    .line 144
+    .line 152
     new-instance v0, Lcom/google/common/collect/AbstractSortedMultiset$1DescendingMultisetImpl;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/AbstractSortedMultiset$1DescendingMultisetImpl;-><init>(Lcom/google/common/collect/AbstractSortedMultiset;)V
@@ -131,7 +146,7 @@
         }
     .end annotation
 
-    .line 56
+    .line 60
     new-instance v0, Lcom/google/common/collect/SortedMultisets$NavigableElementSet;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/SortedMultisets$NavigableElementSet;-><init>(Lcom/google/common/collect/SortedMultiset;)V
@@ -142,7 +157,7 @@
 .method bridge synthetic createElementSet()Ljava/util/Set;
     .locals 0
 
-    .line 35
+    .line 37
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractSortedMultiset;->createElementSet()Ljava/util/NavigableSet;
 
     move-result-object p0
@@ -171,7 +186,7 @@
         }
     .end annotation
 
-    .line 115
+    .line 123
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractSortedMultiset;->descendingMultiset()Lcom/google/common/collect/SortedMultiset;
 
     move-result-object p0
@@ -193,12 +208,12 @@
         }
     .end annotation
 
-    .line 122
+    .line 130
     iget-object v0, p0, Lcom/google/common/collect/AbstractSortedMultiset;->descendingMultiset:Lcom/google/common/collect/SortedMultiset;
 
     if-nez v0, :cond_0
 
-    .line 123
+    .line 131
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractSortedMultiset;->createDescendingMultiset()Lcom/google/common/collect/SortedMultiset;
 
     move-result-object v0
@@ -219,7 +234,7 @@
         }
     .end annotation
 
-    .line 51
+    .line 55
     invoke-super {p0}, Lcom/google/common/collect/AbstractMultiset;->elementSet()Ljava/util/Set;
 
     move-result-object p0
@@ -232,7 +247,7 @@
 .method public bridge synthetic elementSet()Ljava/util/Set;
     .locals 0
 
-    .line 35
+    .line 37
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractSortedMultiset;->elementSet()Ljava/util/NavigableSet;
 
     move-result-object p0
@@ -243,7 +258,7 @@
 .method public bridge synthetic elementSet()Ljava/util/SortedSet;
     .locals 0
 
-    .line 35
+    .line 37
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractSortedMultiset;->elementSet()Ljava/util/NavigableSet;
 
     move-result-object p0
@@ -261,12 +276,15 @@
         }
     .end annotation
 
-    .line 66
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 71
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractSortedMultiset;->entryIterator()Ljava/util/Iterator;
 
     move-result-object p0
 
-    .line 67
+    .line 72
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
@@ -298,12 +316,15 @@
         }
     .end annotation
 
-    .line 72
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 78
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractSortedMultiset;->descendingEntryIterator()Ljava/util/Iterator;
 
     move-result-object p0
 
-    .line 73
+    .line 79
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
@@ -335,26 +356,29 @@
         }
     .end annotation
 
-    .line 78
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 85
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractSortedMultiset;->entryIterator()Ljava/util/Iterator;
 
     move-result-object p0
 
-    .line 79
+    .line 86
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 80
+    .line 87
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/google/common/collect/Multiset$Entry;
 
-    .line 81
+    .line 88
     invoke-interface {v0}, Lcom/google/common/collect/Multiset$Entry;->getElement()Ljava/lang/Object;
 
     move-result-object v1
@@ -367,7 +391,7 @@
 
     move-result-object v0
 
-    .line 82
+    .line 89
     invoke-interface {p0}, Ljava/util/Iterator;->remove()V
 
     return-object v0
@@ -388,26 +412,29 @@
         }
     .end annotation
 
-    .line 90
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 98
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractSortedMultiset;->descendingEntryIterator()Ljava/util/Iterator;
 
     move-result-object p0
 
-    .line 91
+    .line 99
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 92
+    .line 100
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/google/common/collect/Multiset$Entry;
 
-    .line 93
+    .line 101
     invoke-interface {v0}, Lcom/google/common/collect/Multiset$Entry;->getElement()Ljava/lang/Object;
 
     move-result-object v1
@@ -420,7 +447,7 @@
 
     move-result-object v0
 
-    .line 94
+    .line 102
     invoke-interface {p0}, Ljava/util/Iterator;->remove()V
 
     return-object v0
@@ -434,13 +461,28 @@
 .method public subMultiset(Ljava/lang/Object;Lcom/google/common/collect/BoundType;Ljava/lang/Object;Lcom/google/common/collect/BoundType;)Lcom/google/common/collect/SortedMultiset;
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
     .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "fromElement",
+            "fromBoundType",
+            "toElement",
+            "toBoundType"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;",
@@ -453,13 +495,13 @@
         }
     .end annotation
 
-    .line 107
+    .line 115
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 108
+    .line 116
     invoke-static {p4}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 109
+    .line 117
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/AbstractSortedMultiset;->tailMultiset(Ljava/lang/Object;Lcom/google/common/collect/BoundType;)Lcom/google/common/collect/SortedMultiset;
 
     move-result-object p0

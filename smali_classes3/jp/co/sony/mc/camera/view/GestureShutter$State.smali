@@ -25,6 +25,18 @@
 # direct methods
 .method protected constructor <init>(Ljp/co/sony/mc/camera/view/GestureShutter;ZZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "canStartDetection",
+            "canStopDetection"
+        }
+    .end annotation
 
     .line 192
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/GestureShutter$State;->this$0:Ljp/co/sony/mc/camera/view/GestureShutter;
@@ -56,6 +68,14 @@
 
 .method handleDetectResult(Ljp/co/sony/mc/camera/CameraStatusNotifier$HandDetectionResult;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 
     return-void
 .end method
@@ -74,6 +94,14 @@
 
 .method setGestureShutterHost(Ljp/co/sony/mc/camera/view/GestureShutter$GestureShutterHost;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "host"
+        }
+    .end annotation
 
     return-void
 .end method

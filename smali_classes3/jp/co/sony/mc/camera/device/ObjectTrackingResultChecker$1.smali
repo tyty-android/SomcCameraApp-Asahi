@@ -28,6 +28,19 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/device/ObjectTrackingResultChecker;Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ObjectTrackingResult;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$objectTrackingResult",
+            "val$isAfLocked"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"

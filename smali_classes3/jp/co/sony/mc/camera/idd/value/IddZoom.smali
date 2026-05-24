@@ -68,7 +68,7 @@
 .method public constructor <init>(F)V
     .locals 0
 
-    .line 134
+    .line 193
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Ljp/co/sony/mc/camera/idd/value/IddZoom;->value:F
@@ -85,7 +85,7 @@
 
     const/high16 p1, 0x3f800000    # 1.0f
 
-    .line 134
+    .line 193
     :cond_0
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/idd/value/IddZoom;-><init>(F)V
 
@@ -97,7 +97,7 @@
 .method public final getValue()F
     .locals 0
 
-    .line 134
+    .line 193
     iget p0, p0, Ljp/co/sony/mc/camera/idd/value/IddZoom;->value:F
 
     return p0
@@ -108,7 +108,7 @@
 
     new-instance v0, Ljava/math/BigDecimal;
 
-    .line 135
+    .line 194
     iget p0, p0, Ljp/co/sony/mc/camera/idd/value/IddZoom;->value:F
 
     invoke-static {p0}, Ljava/lang/String;->valueOf(F)Ljava/lang/String;
@@ -137,7 +137,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 136
+    .line 195
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/value/IddZoom;->toNumber()Ljava/lang/Number;
 
     move-result-object p0

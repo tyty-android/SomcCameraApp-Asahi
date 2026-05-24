@@ -48,6 +48,15 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/Multimap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "multimap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -56,10 +65,10 @@
         }
     .end annotation
 
-    .line 1704
+    .line 1862
     invoke-direct {p0}, Lcom/google/common/collect/Maps$ViewCachingAbstractMap;-><init>()V
 
-    .line 1705
+    .line 1863
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -74,7 +83,7 @@
 .method static synthetic access$200(Lcom/google/common/collect/Multimaps$AsMap;)Lcom/google/common/collect/Multimap;
     .locals 0
 
-    .line 1701
+    .line 1858
     iget-object p0, p0, Lcom/google/common/collect/Multimaps$AsMap;->multimap:Lcom/google/common/collect/Multimap;
 
     return-object p0
@@ -85,7 +94,7 @@
 .method public clear()V
     .locals 0
 
-    .line 1780
+    .line 1934
     iget-object p0, p0, Lcom/google/common/collect/Multimaps$AsMap;->multimap:Lcom/google/common/collect/Multimap;
 
     invoke-interface {p0}, Lcom/google/common/collect/Multimap;->clear()V
@@ -95,8 +104,20 @@
 
 .method public containsKey(Ljava/lang/Object;)Z
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 1775
+    .line 1929
     iget-object p0, p0, Lcom/google/common/collect/Multimaps$AsMap;->multimap:Lcom/google/common/collect/Multimap;
 
     invoke-interface {p0, p1}, Lcom/google/common/collect/Multimap;->containsKey(Ljava/lang/Object;)Z
@@ -119,7 +140,7 @@
         }
     .end annotation
 
-    .line 1715
+    .line 1873
     new-instance v0, Lcom/google/common/collect/Multimaps$AsMap$EntrySet;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/Multimaps$AsMap$EntrySet;-><init>(Lcom/google/common/collect/Multimaps$AsMap;)V
@@ -129,8 +150,23 @@
 
 .method public bridge synthetic get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 1701
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1858
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Multimaps$AsMap;->get(Ljava/lang/Object;)Ljava/util/Collection;
 
     move-result-object p0
@@ -140,6 +176,19 @@
 
 .method public get(Ljava/lang/Object;)Ljava/util/Collection;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -150,7 +199,10 @@
         }
     .end annotation
 
-    .line 1755
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1908
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Multimaps$AsMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result v0
@@ -175,7 +227,7 @@
 .method public isEmpty()Z
     .locals 0
 
-    .line 1770
+    .line 1924
     iget-object p0, p0, Lcom/google/common/collect/Multimaps$AsMap;->multimap:Lcom/google/common/collect/Multimap;
 
     invoke-interface {p0}, Lcom/google/common/collect/Multimap;->isEmpty()Z
@@ -195,7 +247,7 @@
         }
     .end annotation
 
-    .line 1765
+    .line 1919
     iget-object p0, p0, Lcom/google/common/collect/Multimaps$AsMap;->multimap:Lcom/google/common/collect/Multimap;
 
     invoke-interface {p0}, Lcom/google/common/collect/Multimap;->keySet()Ljava/util/Set;
@@ -207,8 +259,23 @@
 
 .method public bridge synthetic remove(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 1701
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1858
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Multimaps$AsMap;->remove(Ljava/lang/Object;)Ljava/util/Collection;
 
     move-result-object p0
@@ -218,6 +285,19 @@
 
 .method public remove(Ljava/lang/Object;)Ljava/util/Collection;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -228,7 +308,10 @@
         }
     .end annotation
 
-    .line 1760
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1914
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Multimaps$AsMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result v0
@@ -252,8 +335,20 @@
 
 .method removeValuesForKey(Ljava/lang/Object;)V
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 1719
+    .line 1877
     iget-object p0, p0, Lcom/google/common/collect/Multimaps$AsMap;->multimap:Lcom/google/common/collect/Multimap;
 
     invoke-interface {p0}, Lcom/google/common/collect/Multimap;->keySet()Ljava/util/Set;
@@ -268,7 +363,7 @@
 .method public size()I
     .locals 0
 
-    .line 1710
+    .line 1868
     iget-object p0, p0, Lcom/google/common/collect/Multimaps$AsMap;->multimap:Lcom/google/common/collect/Multimap;
 
     invoke-interface {p0}, Lcom/google/common/collect/Multimap;->keySet()Ljava/util/Set;

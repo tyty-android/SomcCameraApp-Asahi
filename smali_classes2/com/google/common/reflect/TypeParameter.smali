@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/reflect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<T:",
@@ -30,22 +33,22 @@
 .method protected constructor <init>()V
     .locals 3
 
-    .line 42
+    .line 51
     invoke-direct {p0}, Lcom/google/common/reflect/TypeCapture;-><init>()V
 
-    .line 43
+    .line 52
     invoke-virtual {p0}, Lcom/google/common/reflect/TypeParameter;->capture()Ljava/lang/reflect/Type;
 
     move-result-object v0
 
-    .line 44
+    .line 53
     instance-of v1, v0, Ljava/lang/reflect/TypeVariable;
 
     const-string v2, "%s should be a type variable."
 
     invoke-static {v1, v2, v0}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;)V
 
-    .line 45
+    .line 54
     check-cast v0, Ljava/lang/reflect/TypeVariable;
 
     iput-object v0, p0, Lcom/google/common/reflect/TypeParameter;->typeVariable:Ljava/lang/reflect/TypeVariable;
@@ -58,24 +61,32 @@
 .method public final equals(Ljava/lang/Object;)Z
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 55
+    .line 64
     instance-of v0, p1, Lcom/google/common/reflect/TypeParameter;
 
     if-eqz v0, :cond_0
 
-    .line 56
+    .line 65
     check-cast p1, Lcom/google/common/reflect/TypeParameter;
 
-    .line 57
+    .line 66
     iget-object p0, p0, Lcom/google/common/reflect/TypeParameter;->typeVariable:Ljava/lang/reflect/TypeVariable;
 
     iget-object p1, p1, Lcom/google/common/reflect/TypeParameter;->typeVariable:Ljava/lang/reflect/TypeVariable;
 
-    invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    invoke-interface {p0, p1}, Ljava/lang/reflect/TypeVariable;->equals(Ljava/lang/Object;)Z
 
     move-result p0
 
@@ -90,10 +101,10 @@
 .method public final hashCode()I
     .locals 0
 
-    .line 50
+    .line 59
     iget-object p0, p0, Lcom/google/common/reflect/TypeParameter;->typeVariable:Ljava/lang/reflect/TypeVariable;
 
-    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
+    invoke-interface {p0}, Ljava/lang/reflect/TypeVariable;->hashCode()I
 
     move-result p0
 
@@ -103,10 +114,10 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 64
+    .line 73
     iget-object p0, p0, Lcom/google/common/reflect/TypeParameter;->typeVariable:Ljava/lang/reflect/TypeVariable;
 
-    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-interface {p0}, Ljava/lang/reflect/TypeVariable;->toString()Ljava/lang/String;
 
     move-result-object p0
 

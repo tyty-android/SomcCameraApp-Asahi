@@ -14,6 +14,8 @@
 
 .field public final groupIndex:I
 
+.field public isStoreYuv:Z
+
 .field public final launchAndCapture:Z
 
 .field public final location:Landroid/location/Location;
@@ -32,58 +34,91 @@
 
 
 # direct methods
-.method public constructor <init>(Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;IZLandroid/location/Location;Ljava/lang/String;IIILjp/co/sony/mc/camera/configuration/parameters/PhotoFormat;Ljp/co/sony/mc/camera/configuration/parameters/DriveMode$BurstType;J)V
+.method public constructor <init>(Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;IZLandroid/location/Location;Ljava/lang/String;IIILjp/co/sony/mc/camera/configuration/parameters/PhotoFormat;ZLjp/co/sony/mc/camera/configuration/parameters/DriveMode$BurstType;J)V
     .locals 0
-
-    .line 44
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 45
-    iput-object p1, p0, Ljp/co/sony/mc/camera/device/SnapshotRequest;->fileType:Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "fileType",
+            "orientation",
+            "launchAndCapture",
+            "location",
+            "groupId",
+            "groupIndex",
+            "thumbRequestId",
+            "captureNum",
+            "photoFormat",
+            "isStoreYuv",
+            "burstType",
+            "shutterTime"
+        }
+    .end annotation
 
     .line 46
-    iput p2, p0, Ljp/co/sony/mc/camera/device/SnapshotRequest;->orientation:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 47
-    iput-boolean p3, p0, Ljp/co/sony/mc/camera/device/SnapshotRequest;->launchAndCapture:Z
+    iput-object p1, p0, Ljp/co/sony/mc/camera/device/SnapshotRequest;->fileType:Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
 
     .line 48
-    iput-object p4, p0, Ljp/co/sony/mc/camera/device/SnapshotRequest;->location:Landroid/location/Location;
+    iput p2, p0, Ljp/co/sony/mc/camera/device/SnapshotRequest;->orientation:I
 
     .line 49
+    iput-boolean p3, p0, Ljp/co/sony/mc/camera/device/SnapshotRequest;->launchAndCapture:Z
+
+    .line 50
+    iput-object p4, p0, Ljp/co/sony/mc/camera/device/SnapshotRequest;->location:Landroid/location/Location;
+
+    .line 51
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide p1
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/device/SnapshotRequest;->systemClockUptimeMillis:J
 
-    .line 50
+    .line 52
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide p1
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/device/SnapshotRequest;->systemCurrentTimeMillis:J
 
-    .line 51
+    .line 53
     iput-object p5, p0, Ljp/co/sony/mc/camera/device/SnapshotRequest;->groupId:Ljava/lang/String;
 
-    .line 52
+    .line 54
     iput p6, p0, Ljp/co/sony/mc/camera/device/SnapshotRequest;->groupIndex:I
 
-    .line 53
+    .line 55
     iput p7, p0, Ljp/co/sony/mc/camera/device/SnapshotRequest;->thumbRequestId:I
 
-    .line 54
+    .line 56
     iput p8, p0, Ljp/co/sony/mc/camera/device/SnapshotRequest;->captureNum:I
 
-    .line 55
+    .line 57
     iput-object p9, p0, Ljp/co/sony/mc/camera/device/SnapshotRequest;->photoFormat:Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
 
-    .line 56
-    iput-object p10, p0, Ljp/co/sony/mc/camera/device/SnapshotRequest;->burstType:Ljp/co/sony/mc/camera/configuration/parameters/DriveMode$BurstType;
+    .line 58
+    iput-boolean p10, p0, Ljp/co/sony/mc/camera/device/SnapshotRequest;->isStoreYuv:Z
 
-    .line 57
-    iput-wide p11, p0, Ljp/co/sony/mc/camera/device/SnapshotRequest;->shutterTime:J
+    .line 59
+    iput-object p11, p0, Ljp/co/sony/mc/camera/device/SnapshotRequest;->burstType:Ljp/co/sony/mc/camera/configuration/parameters/DriveMode$BurstType;
+
+    .line 60
+    iput-wide p12, p0, Ljp/co/sony/mc/camera/device/SnapshotRequest;->shutterTime:J
 
     return-void
 .end method
@@ -91,10 +126,10 @@
 
 # virtual methods
 .method public convertToSingleCaptureRequest()Ljp/co/sony/mc/camera/device/SnapshotRequest;
-    .locals 14
+    .locals 15
 
-    .line 61
-    new-instance v13, Ljp/co/sony/mc/camera/device/SnapshotRequest;
+    .line 64
+    new-instance v14, Ljp/co/sony/mc/camera/device/SnapshotRequest;
 
     sget-object v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;->PHOTO:Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
 
@@ -112,15 +147,17 @@
 
     iget-object v9, p0, Ljp/co/sony/mc/camera/device/SnapshotRequest;->photoFormat:Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
 
-    iget-object v10, p0, Ljp/co/sony/mc/camera/device/SnapshotRequest;->burstType:Ljp/co/sony/mc/camera/configuration/parameters/DriveMode$BurstType;
+    iget-boolean v10, p0, Ljp/co/sony/mc/camera/device/SnapshotRequest;->isStoreYuv:Z
 
-    iget-wide v11, p0, Ljp/co/sony/mc/camera/device/SnapshotRequest;->shutterTime:J
+    iget-object v11, p0, Ljp/co/sony/mc/camera/device/SnapshotRequest;->burstType:Ljp/co/sony/mc/camera/configuration/parameters/DriveMode$BurstType;
+
+    iget-wide v12, p0, Ljp/co/sony/mc/camera/device/SnapshotRequest;->shutterTime:J
 
     const/4 v8, 0x1
 
-    move-object v0, v13
+    move-object v0, v14
 
-    invoke-direct/range {v0 .. v12}, Ljp/co/sony/mc/camera/device/SnapshotRequest;-><init>(Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;IZLandroid/location/Location;Ljava/lang/String;IIILjp/co/sony/mc/camera/configuration/parameters/PhotoFormat;Ljp/co/sony/mc/camera/configuration/parameters/DriveMode$BurstType;J)V
+    invoke-direct/range {v0 .. v13}, Ljp/co/sony/mc/camera/device/SnapshotRequest;-><init>(Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;IZLandroid/location/Location;Ljava/lang/String;IIILjp/co/sony/mc/camera/configuration/parameters/PhotoFormat;ZLjp/co/sony/mc/camera/configuration/parameters/DriveMode$BurstType;J)V
 
-    return-object v13
+    return-object v14
 .end method

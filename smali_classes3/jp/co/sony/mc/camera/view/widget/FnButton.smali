@@ -124,7 +124,7 @@
     .line 204
     invoke-direct {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/widget/FnButtonBase;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    const p1, 0x7f0904da
+    const p1, 0x7f0904d8
 
     .line 206
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/FnButton;->findViewById(I)Landroid/view/View;
@@ -137,7 +137,7 @@
 
     check-cast p1, Landroid/view/ViewStub;
 
-    const p2, 0x7f0c00a3
+    const p2, 0x7f0c009a
 
     .line 207
     invoke-virtual {p1, p2}, Landroid/view/ViewStub;->setLayoutResource(I)V
@@ -185,7 +185,7 @@
 .method private final getValueText()Landroid/widget/TextView;
     .locals 1
 
-    const v0, 0x7f0904d3
+    const v0, 0x7f0904d2
 
     .line 189
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/widget/FnButton;->findViewById(I)Landroid/view/View;

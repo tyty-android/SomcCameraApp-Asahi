@@ -53,7 +53,7 @@
     f = "BasicModeCommonUiState.kt"
     i = {}
     l = {
-        0x69
+        0xbb
     }
     m = "invokeSuspend"
     n = {}
@@ -167,7 +167,7 @@
 
     move-result-object v0
 
-    .line 103
+    .line 185
     iget v1, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState$1;->label:I
 
     const/4 v2, 0x1
@@ -192,7 +192,7 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 104
+    .line 186
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;->access$getCameraSettingsModel$p(Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;)Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
@@ -203,7 +203,7 @@
 
     move-result-object p1
 
-    .line 105
+    .line 187
     invoke-static {p1}, Landroidx/lifecycle/Transformations;->distinctUntilChanged(Landroidx/lifecycle/LiveData;)Landroidx/lifecycle/LiveData;
 
     move-result-object p1
@@ -236,7 +236,7 @@
 
     return-object v0
 
-    .line 108
+    .line 190
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

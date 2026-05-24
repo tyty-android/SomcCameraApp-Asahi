@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/hash/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation runtime Lcom/google/errorprone/annotations/Immutable;
 .end annotation
 
@@ -31,11 +34,23 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "algorithmName",
+            "bytes",
+            "toString"
+        }
+    .end annotation
 
-    .line 51
+    .line 54
     invoke-direct {p0}, Lcom/google/common/hash/AbstractHashFunction;-><init>()V
 
-    .line 52
+    .line 55
     invoke-static {p3}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p3
@@ -44,14 +59,14 @@
 
     iput-object p3, p0, Lcom/google/common/hash/MessageDigestHashFunction;->toString:Ljava/lang/String;
 
-    .line 53
+    .line 56
     invoke-static {p1}, Lcom/google/common/hash/MessageDigestHashFunction;->getMessageDigest(Ljava/lang/String;)Ljava/security/MessageDigest;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/google/common/hash/MessageDigestHashFunction;->prototype:Ljava/security/MessageDigest;
 
-    .line 54
+    .line 57
     invoke-virtual {p1}, Ljava/security/MessageDigest;->getDigestLength()I
 
     move-result p3
@@ -69,16 +84,16 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 55
+    .line 58
     :goto_0
     const-string v1, "bytes (%s) must be >= 4 and < %s"
 
     invoke-static {v0, v1, p2, p3}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;II)V
 
-    .line 57
+    .line 60
     iput p2, p0, Lcom/google/common/hash/MessageDigestHashFunction;->bytes:I
 
-    .line 58
+    .line 61
     invoke-static {p1}, Lcom/google/common/hash/MessageDigestHashFunction;->supportsClone(Ljava/security/MessageDigest;)Z
 
     move-result p1
@@ -90,25 +105,35 @@
 
 .method constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "algorithmName",
+            "toString"
+        }
+    .end annotation
 
-    .line 44
+    .line 47
     invoke-direct {p0}, Lcom/google/common/hash/AbstractHashFunction;-><init>()V
 
-    .line 45
+    .line 48
     invoke-static {p1}, Lcom/google/common/hash/MessageDigestHashFunction;->getMessageDigest(Ljava/lang/String;)Ljava/security/MessageDigest;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/google/common/hash/MessageDigestHashFunction;->prototype:Ljava/security/MessageDigest;
 
-    .line 46
+    .line 49
     invoke-virtual {p1}, Ljava/security/MessageDigest;->getDigestLength()I
 
     move-result v0
 
     iput v0, p0, Lcom/google/common/hash/MessageDigestHashFunction;->bytes:I
 
-    .line 47
+    .line 50
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p2
@@ -117,7 +142,7 @@
 
     iput-object p2, p0, Lcom/google/common/hash/MessageDigestHashFunction;->toString:Ljava/lang/String;
 
-    .line 48
+    .line 51
     invoke-static {p1}, Lcom/google/common/hash/MessageDigestHashFunction;->supportsClone(Ljava/security/MessageDigest;)Z
 
     move-result p1
@@ -129,8 +154,16 @@
 
 .method private static getMessageDigest(Ljava/lang/String;)Ljava/security/MessageDigest;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "algorithmName"
+        }
+    .end annotation
 
-    .line 82
+    .line 85
     :try_start_0
     invoke-static {p0}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
 
@@ -143,7 +176,7 @@
     :catch_0
     move-exception p0
 
-    .line 84
+    .line 87
     new-instance v0, Ljava/lang/AssertionError;
 
     invoke-direct {v0, p0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
@@ -151,10 +184,45 @@
     throw v0
 .end method
 
+.method private readObject(Ljava/io/ObjectInputStream;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stream"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/InvalidObjectException;
+        }
+    .end annotation
+
+    .line 126
+    new-instance p0, Ljava/io/InvalidObjectException;
+
+    const-string p1, "Use SerializedForm"
+
+    invoke-direct {p0, p1}, Ljava/io/InvalidObjectException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
 .method private static supportsClone(Ljava/security/MessageDigest;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "digest"
+        }
+    .end annotation
 
-    .line 63
+    .line 66
     :try_start_0
     invoke-virtual {p0}, Ljava/security/MessageDigest;->clone()Ljava/lang/Object;
     :try_end_0
@@ -175,7 +243,7 @@
 .method public bits()I
     .locals 0
 
-    .line 72
+    .line 75
     iget p0, p0, Lcom/google/common/hash/MessageDigestHashFunction;->bytes:I
 
     mul-int/lit8 p0, p0, 0x8
@@ -186,14 +254,14 @@
 .method public newHasher()Lcom/google/common/hash/Hasher;
     .locals 4
 
-    .line 90
+    .line 93
     iget-boolean v0, p0, Lcom/google/common/hash/MessageDigestHashFunction;->supportsClone:Z
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 92
+    .line 95
     :try_start_0
     new-instance v0, Lcom/google/common/hash/MessageDigestHashFunction$MessageDigestHasher;
 
@@ -213,7 +281,7 @@
 
     return-object v0
 
-    .line 97
+    .line 100
     :catch_0
     :cond_0
     new-instance v0, Lcom/google/common/hash/MessageDigestHashFunction$MessageDigestHasher;
@@ -238,7 +306,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 77
+    .line 80
     iget-object p0, p0, Lcom/google/common/hash/MessageDigestHashFunction;->toString:Ljava/lang/String;
 
     return-object p0
@@ -247,7 +315,7 @@
 .method writeReplace()Ljava/lang/Object;
     .locals 4
 
-    .line 119
+    .line 122
     new-instance v0, Lcom/google/common/hash/MessageDigestHashFunction$SerializedForm;
 
     iget-object v1, p0, Lcom/google/common/hash/MessageDigestHashFunction;->prototype:Ljava/security/MessageDigest;

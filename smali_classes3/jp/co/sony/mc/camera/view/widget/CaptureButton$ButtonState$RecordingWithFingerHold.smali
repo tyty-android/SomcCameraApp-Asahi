@@ -67,7 +67,7 @@
 .method public constructor <init>(Z)V
     .locals 0
 
-    .line 466
+    .line 481
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState$RecordingWithFingerHold;->isInLockedArea:Z
@@ -160,7 +160,7 @@
 .method public final isInLockedArea()Z
     .locals 0
 
-    .line 466
+    .line 481
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState$RecordingWithFingerHold;->isInLockedArea:Z
 
     return p0

@@ -20,6 +20,18 @@
 # virtual methods
 .method public onKey(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "dialog",
+            "keyCode",
+            "event"
+        }
+    .end annotation
 
     .line 20
     sget-object p0, Ljp/co/sony/mc/camera/view/KeyEventKiller$1;->$SwitchMap$jp$co$sony$mc$camera$util$KeyEventTranslator$TranslatedKeyCode:[I

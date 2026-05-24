@@ -3,98 +3,52 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
-
-
-# instance fields
-.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder;
-
-.field public final synthetic f$1:I
-
-.field public final synthetic f$10:I
-
-.field public final synthetic f$2:I
-
-.field public final synthetic f$3:I
-
-.field public final synthetic f$4:I
-
-.field public final synthetic f$5:I
-
-.field public final synthetic f$6:I
-
-.field public final synthetic f$7:I
-
-.field public final synthetic f$8:I
-
-.field public final synthetic f$9:I
+.implements Lkotlin/jvm/functions/Function5;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder;IIIIIIIIII)V
+.method public synthetic constructor <init>()V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder;
-
-    iput p2, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder$$ExternalSyntheticLambda1;->f$1:I
-
-    iput p3, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder$$ExternalSyntheticLambda1;->f$2:I
-
-    iput p4, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder$$ExternalSyntheticLambda1;->f$3:I
-
-    iput p5, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder$$ExternalSyntheticLambda1;->f$4:I
-
-    iput p6, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder$$ExternalSyntheticLambda1;->f$5:I
-
-    iput p7, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder$$ExternalSyntheticLambda1;->f$6:I
-
-    iput p8, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder$$ExternalSyntheticLambda1;->f$7:I
-
-    iput p9, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder$$ExternalSyntheticLambda1;->f$8:I
-
-    iput p10, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder$$ExternalSyntheticLambda1;->f$9:I
-
-    iput p11, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder$$ExternalSyntheticLambda1;->f$10:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 12
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 0
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder;
+    check-cast p1, Ljava/lang/Boolean;
 
-    iget v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder$$ExternalSyntheticLambda1;->f$1:I
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
-    iget v2, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder$$ExternalSyntheticLambda1;->f$2:I
+    move-result p0
 
-    iget v3, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder$$ExternalSyntheticLambda1;->f$3:I
+    check-cast p2, Ljava/lang/Boolean;
 
-    iget v4, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder$$ExternalSyntheticLambda1;->f$4:I
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
-    iget v5, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder$$ExternalSyntheticLambda1;->f$5:I
+    move-result p1
 
-    iget v6, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder$$ExternalSyntheticLambda1;->f$6:I
+    check-cast p3, Ljava/lang/Boolean;
 
-    iget v7, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder$$ExternalSyntheticLambda1;->f$7:I
+    invoke-virtual {p3}, Ljava/lang/Boolean;->booleanValue()Z
 
-    iget v8, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder$$ExternalSyntheticLambda1;->f$8:I
+    move-result p2
 
-    iget v9, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder$$ExternalSyntheticLambda1;->f$9:I
+    check-cast p4, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
 
-    iget v10, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder$$ExternalSyntheticLambda1;->f$10:I
+    check-cast p5, Ljava/lang/Boolean;
 
-    move-object v11, p1
+    invoke-virtual {p5}, Ljava/lang/Boolean;->booleanValue()Z
 
-    check-cast v11, Ljp/co/sony/mc/camera/util/TuplesUtil$Quintuple;
+    move-result p3
 
-    invoke-static/range {v0 .. v11}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder;->$r8$lambda$2mGHVFIiaKdMJ0GfAsud558Ma-k(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder;IIIIIIIIIILjp/co/sony/mc/camera/util/TuplesUtil$Quintuple;)Lkotlin/Unit;
+    invoke-static {p0, p1, p2, p4, p3}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeZoomHintTextViewBinder;->$r8$lambda$5C4c8MeJWeIaltETB27n2IXzdz0(ZZZLjp/co/sony/mc/camera/view/orientation/LayoutOrientation;Z)Ljp/co/sony/mc/camera/util/TuplesUtil$Quintuple;
 
     move-result-object p0
 

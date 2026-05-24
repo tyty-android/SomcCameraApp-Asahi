@@ -56,6 +56,34 @@
 
 .method public constructor <init>(Landroid/os/Handler;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Ljp/co/sony/mc/camera/device/CaptureResultNotifier$PrepareSnapshotCallback;Ljava/lang/String;ZZZZZZZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "handler",
+            "sessionId",
+            "callback",
+            "flashMode",
+            "isAvailableResZeroShutterLag",
+            "isAvailableCaptureDuration",
+            "isAvailableCaptureBurstQuality",
+            "isAvailableReqSnapshotPrepare",
+            "isAvailableResAfDriveMode",
+            "isYuvFrameDrawSupported",
+            "isAvailablePreviewLatency"
+        }
+    .end annotation
 
     .line 55
     invoke-direct {p0, p1, p9, p10}, Ljp/co/sony/mc/camera/device/AutoFocusSuccessChecker;-><init>(Landroid/os/Handler;ZZ)V
@@ -104,6 +132,14 @@
 
 .method private changeTo(Ljp/co/sony/mc/camera/device/PrepareSnapshotChecker$State;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "next"
+        }
+    .end annotation
 
     .line 299
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/PrepareSnapshotChecker;->mState:Ljp/co/sony/mc/camera/device/PrepareSnapshotChecker$State;
@@ -169,6 +205,16 @@
 
 .method private check(Landroid/hardware/camera2/CaptureRequest;Landroid/hardware/camera2/CaptureResult;)V
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "result"
+        }
+    .end annotation
 
     .line 123
     sget-object v0, Ljp/co/sony/mc/camera/device/PrepareSnapshotChecker$2;->$SwitchMap$jp$co$sony$mc$camera$device$PrepareSnapshotChecker$State:[I
@@ -665,6 +711,14 @@
 
 .method private checkAeState(Ljava/lang/Integer;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "aeState"
+        }
+    .end annotation
 
     const/4 p0, 0x0
 
@@ -721,6 +775,14 @@
 
 .method private checkAfState(Ljava/lang/Integer;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "afState"
+        }
+    .end annotation
 
     const/4 p0, 0x0
 
@@ -768,6 +830,14 @@
 
 .method private getBurstQualityWithVendorTag(Landroid/hardware/camera2/CaptureResult;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 
     .line 110
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/device/PrepareSnapshotChecker;->mIsAvailableCaptureBurstQuality:Z
@@ -797,6 +867,14 @@
 
 .method private getCaptureStartPointWithVendorTag(Landroid/hardware/camera2/CaptureResult;)Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 
     .line 81
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;->INVALID:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;
@@ -837,6 +915,14 @@
 
 .method private getDurationWithVendorTag(Landroid/hardware/camera2/CaptureResult;)J
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 
     .line 96
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/device/PrepareSnapshotChecker;->mIsAvailableCaptureDuration:Z
@@ -866,6 +952,14 @@
 
 .method private getPreviewLatencyWithVendorTag(Landroid/hardware/camera2/CaptureResult;)J
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 
     .line 103
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/device/PrepareSnapshotChecker;->mIsAvailablePreviewLatency:Z
@@ -895,6 +989,24 @@
 
 .method private notifyOnPrepareSnapshotDone(IILjp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;JIJ)V
     .locals 13
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x10,
+            0x0,
+            0x10,
+            0x0
+        }
+        names = {
+            "afState",
+            "aeState",
+            "startPoint",
+            "duration",
+            "burstType",
+            "previewLatency"
+        }
+    .end annotation
 
     move-object v1, p0
 
@@ -1098,6 +1210,16 @@
 # virtual methods
 .method public checkOnCompleted(Landroid/hardware/camera2/CaptureRequest;Ljp/co/sony/mc/camera/device/CaptureResultHolder;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "resultHolder"
+        }
+    .end annotation
 
     .line 75
     invoke-super {p0, p1, p2}, Ljp/co/sony/mc/camera/device/AutoFocusSuccessChecker;->checkOnCompleted(Landroid/hardware/camera2/CaptureRequest;Ljp/co/sony/mc/camera/device/CaptureResultHolder;)V
@@ -1114,6 +1236,16 @@
 
 .method public checkOnPartial(Landroid/hardware/camera2/CaptureRequest;Landroid/hardware/camera2/CaptureResult;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "result"
+        }
+    .end annotation
 
     .line 69
     invoke-super {p0, p1, p2}, Ljp/co/sony/mc/camera/device/AutoFocusSuccessChecker;->checkOnPartial(Landroid/hardware/camera2/CaptureRequest;Landroid/hardware/camera2/CaptureResult;)V

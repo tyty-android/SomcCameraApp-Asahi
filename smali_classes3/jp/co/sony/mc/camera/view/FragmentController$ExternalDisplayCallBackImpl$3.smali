@@ -28,13 +28,26 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController$ExternalDisplayCallBackImpl;Landroid/view/Surface;Landroid/util/Size;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$1",
+            "val$surface",
+            "val$surfaceSize"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 8929
+    .line 7805
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$ExternalDisplayCallBackImpl$3;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$ExternalDisplayCallBackImpl;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$ExternalDisplayCallBackImpl$3;->val$surface:Landroid/view/Surface;
@@ -51,7 +64,7 @@
 .method public run()V
     .locals 3
 
-    .line 8932
+    .line 7808
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
@@ -68,7 +81,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 8933
+    .line 7809
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ExternalDisplayCallBackImpl$3;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$ExternalDisplayCallBackImpl;
 
@@ -80,7 +93,7 @@
 
     if-nez v0, :cond_2
 
-    .line 8934
+    .line 7810
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ExternalDisplayCallBackImpl$3;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$ExternalDisplayCallBackImpl;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/view/FragmentController$ExternalDisplayCallBackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
@@ -91,7 +104,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 8935
+    .line 7811
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ExternalDisplayCallBackImpl$3;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$ExternalDisplayCallBackImpl;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/view/FragmentController$ExternalDisplayCallBackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
@@ -102,7 +115,7 @@
 
     if-nez v0, :cond_2
 
-    .line 8936
+    .line 7812
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ExternalDisplayCallBackImpl$3;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$ExternalDisplayCallBackImpl;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/view/FragmentController$ExternalDisplayCallBackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
@@ -111,11 +124,11 @@
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ExternalDisplayCallBackImpl$3;->val$surfaceSize:Landroid/util/Size;
 
-    invoke-static {v0, v1, p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$msetSurface(Ljp/co/sony/mc/camera/view/FragmentController;Landroid/view/Surface;Landroid/util/Size;)V
+    invoke-static {v0, v1, p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$msetMainPreviewSurface(Ljp/co/sony/mc/camera/view/FragmentController;Landroid/view/Surface;Landroid/util/Size;)V
 
     goto :goto_0
 
-    .line 8939
+    .line 7815
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ExternalDisplayCallBackImpl$3;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$ExternalDisplayCallBackImpl;
 
@@ -127,7 +140,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 8940
+    .line 7816
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ExternalDisplayCallBackImpl$3;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$ExternalDisplayCallBackImpl;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/view/FragmentController$ExternalDisplayCallBackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
@@ -136,7 +149,7 @@
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ExternalDisplayCallBackImpl$3;->val$surfaceSize:Landroid/util/Size;
 
-    invoke-static {v0, v1, p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$msetSurface(Ljp/co/sony/mc/camera/view/FragmentController;Landroid/view/Surface;Landroid/util/Size;)V
+    invoke-static {v0, v1, p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$msetMainPreviewSurface(Ljp/co/sony/mc/camera/view/FragmentController;Landroid/view/Surface;Landroid/util/Size;)V
 
     :cond_2
     :goto_0

@@ -22,7 +22,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 272
+    .line 281
     new-instance v0, Lcom/google/common/math/LinearTransformation$NaNLinearTransformation;
 
     invoke-direct {v0}, Lcom/google/common/math/LinearTransformation$NaNLinearTransformation;-><init>()V
@@ -35,7 +35,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 270
+    .line 279
     invoke-direct {p0}, Lcom/google/common/math/LinearTransformation;-><init>()V
 
     return-void
@@ -76,7 +76,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 301
+    .line 310
     const-string p0, "NaN"
 
     return-object p0
@@ -84,6 +84,14 @@
 
 .method public transform(D)D
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "x"
+        }
+    .end annotation
 
     const-wide/high16 p0, 0x7ff8000000000000L    # Double.NaN
 

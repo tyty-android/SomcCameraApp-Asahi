@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract onLayoutOrientationChanged(Ljp/co/sony/mc/camera/OrientationService$LayoutOrientation;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "changed"
+        }
+    .end annotation
 .end method

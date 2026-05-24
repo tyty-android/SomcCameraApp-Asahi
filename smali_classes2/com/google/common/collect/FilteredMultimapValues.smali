@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<K:",
@@ -31,6 +34,15 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/FilteredMultimap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "multimap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -39,10 +51,10 @@
         }
     .end annotation
 
-    .line 39
+    .line 43
     invoke-direct {p0}, Ljava/util/AbstractCollection;-><init>()V
 
-    .line 40
+    .line 44
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -59,7 +71,7 @@
 .method public clear()V
     .locals 0
 
-    .line 93
+    .line 96
     iget-object p0, p0, Lcom/google/common/collect/FilteredMultimapValues;->multimap:Lcom/google/common/collect/FilteredMultimap;
 
     invoke-interface {p0}, Lcom/google/common/collect/FilteredMultimap;->clear()V
@@ -70,11 +82,19 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 50
+    .line 54
     iget-object p0, p0, Lcom/google/common/collect/FilteredMultimapValues;->multimap:Lcom/google/common/collect/FilteredMultimap;
 
     invoke-interface {p0, p1}, Lcom/google/common/collect/FilteredMultimap;->containsValue(Ljava/lang/Object;)Z
@@ -94,7 +114,7 @@
         }
     .end annotation
 
-    .line 45
+    .line 49
     iget-object p0, p0, Lcom/google/common/collect/FilteredMultimapValues;->multimap:Lcom/google/common/collect/FilteredMultimap;
 
     invoke-interface {p0}, Lcom/google/common/collect/FilteredMultimap;->entries()Ljava/util/Collection;
@@ -115,18 +135,26 @@
 .method public remove(Ljava/lang/Object;)Z
     .locals 3
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 60
+    .line 64
     iget-object v0, p0, Lcom/google/common/collect/FilteredMultimapValues;->multimap:Lcom/google/common/collect/FilteredMultimap;
 
     invoke-interface {v0}, Lcom/google/common/collect/FilteredMultimap;->entryPredicate()Lcom/google/common/base/Predicate;
 
     move-result-object v0
 
-    .line 61
+    .line 65
     iget-object p0, p0, Lcom/google/common/collect/FilteredMultimapValues;->multimap:Lcom/google/common/collect/FilteredMultimap;
 
     invoke-interface {p0}, Lcom/google/common/collect/FilteredMultimap;->unfiltered()Lcom/google/common/collect/Multimap;
@@ -141,7 +169,7 @@
 
     move-result-object p0
 
-    .line 62
+    .line 66
     :cond_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -149,14 +177,14 @@
 
     if-eqz v1, :cond_1
 
-    .line 63
+    .line 67
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 64
+    .line 68
     invoke-interface {v0, v1}, Lcom/google/common/base/Predicate;->apply(Ljava/lang/Object;)Z
 
     move-result v2
@@ -173,7 +201,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 65
+    .line 69
     invoke-interface {p0}, Ljava/util/Iterator;->remove()V
 
     const/4 p0, 0x1
@@ -188,6 +216,15 @@
 
 .method public removeAll(Ljava/util/Collection;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -196,10 +233,10 @@
         }
     .end annotation
 
-    .line 74
+    .line 78
     iget-object v0, p0, Lcom/google/common/collect/FilteredMultimapValues;->multimap:Lcom/google/common/collect/FilteredMultimap;
 
-    .line 75
+    .line 79
     invoke-interface {v0}, Lcom/google/common/collect/FilteredMultimap;->unfiltered()Lcom/google/common/collect/Multimap;
 
     move-result-object v0
@@ -210,7 +247,7 @@
 
     iget-object p0, p0, Lcom/google/common/collect/FilteredMultimapValues;->multimap:Lcom/google/common/collect/FilteredMultimap;
 
-    .line 78
+    .line 82
     invoke-interface {p0}, Lcom/google/common/collect/FilteredMultimap;->entryPredicate()Lcom/google/common/base/Predicate;
 
     move-result-object p0
@@ -223,12 +260,12 @@
 
     move-result-object p1
 
-    .line 77
+    .line 81
     invoke-static {p0, p1}, Lcom/google/common/base/Predicates;->and(Lcom/google/common/base/Predicate;Lcom/google/common/base/Predicate;)Lcom/google/common/base/Predicate;
 
     move-result-object p0
 
-    .line 74
+    .line 78
     invoke-static {v0, p0}, Lcom/google/common/collect/Iterables;->removeIf(Ljava/lang/Iterable;Lcom/google/common/base/Predicate;)Z
 
     move-result p0
@@ -238,6 +275,15 @@
 
 .method public retainAll(Ljava/util/Collection;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -246,10 +292,10 @@
         }
     .end annotation
 
-    .line 83
+    .line 87
     iget-object v0, p0, Lcom/google/common/collect/FilteredMultimapValues;->multimap:Lcom/google/common/collect/FilteredMultimap;
 
-    .line 84
+    .line 88
     invoke-interface {v0}, Lcom/google/common/collect/FilteredMultimap;->unfiltered()Lcom/google/common/collect/Multimap;
 
     move-result-object v0
@@ -260,12 +306,11 @@
 
     iget-object p0, p0, Lcom/google/common/collect/FilteredMultimapValues;->multimap:Lcom/google/common/collect/FilteredMultimap;
 
-    .line 87
+    .line 91
     invoke-interface {p0}, Lcom/google/common/collect/FilteredMultimap;->entryPredicate()Lcom/google/common/base/Predicate;
 
     move-result-object p0
 
-    .line 88
     invoke-static {p1}, Lcom/google/common/base/Predicates;->in(Ljava/util/Collection;)Lcom/google/common/base/Predicate;
 
     move-result-object p1
@@ -278,12 +323,12 @@
 
     move-result-object p1
 
-    .line 86
+    .line 90
     invoke-static {p0, p1}, Lcom/google/common/base/Predicates;->and(Lcom/google/common/base/Predicate;Lcom/google/common/base/Predicate;)Lcom/google/common/base/Predicate;
 
     move-result-object p0
 
-    .line 83
+    .line 87
     invoke-static {v0, p0}, Lcom/google/common/collect/Iterables;->removeIf(Ljava/lang/Iterable;Lcom/google/common/base/Predicate;)Z
 
     move-result p0
@@ -294,7 +339,7 @@
 .method public size()I
     .locals 0
 
-    .line 55
+    .line 59
     iget-object p0, p0, Lcom/google/common/collect/FilteredMultimapValues;->multimap:Lcom/google/common/collect/FilteredMultimap;
 
     invoke-interface {p0}, Lcom/google/common/collect/FilteredMultimap;->size()I

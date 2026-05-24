@@ -24,8 +24,16 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 249
+    .line 254
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView$SurfaceViewCallback;->this$0:Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,8 +51,18 @@
 
 .method private isInvalidSurfaceSize(II)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "width",
+            "height"
+        }
+    .end annotation
 
-    .line 303
+    .line 308
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView$SurfaceViewCallback;->this$0:Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;->-$$Nest$fgetmIsReleased(Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;)Z
@@ -57,7 +75,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 304
+    .line 309
     new-array p0, v2, [Ljava/lang/String;
 
     const-string p1, "Surface view has been destroyed"
@@ -68,7 +86,7 @@
 
     return v2
 
-    .line 308
+    .line 313
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView$SurfaceViewCallback;->this$0:Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;
 
@@ -84,12 +102,12 @@
 
     move-result v0
 
-    .line 309
+    .line 314
     const-string v3, " actual = "
 
     if-eq p1, v0, :cond_1
 
-    .line 310
+    .line 315
     new-array p0, v2, [Ljava/lang/String;
 
     new-instance p2, Ljava/lang/StringBuilder;
@@ -120,7 +138,7 @@
 
     return v2
 
-    .line 315
+    .line 320
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView$SurfaceViewCallback;->this$0:Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;
 
@@ -138,7 +156,7 @@
 
     if-eq p2, p0, :cond_2
 
-    .line 317
+    .line 322
     new-array p1, v2, [Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -177,8 +195,22 @@
 # virtual methods
 .method public surfaceChanged(Landroid/view/SurfaceHolder;III)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "holder",
+            "format",
+            "width",
+            "height"
+        }
+    .end annotation
 
-    .line 275
+    .line 280
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     const/4 p2, 0x0
@@ -223,7 +255,7 @@
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 279
+    .line 284
     :cond_0
     invoke-direct {p0, p3, p4}, Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView$SurfaceViewCallback;->isInvalidSurfaceSize(II)Z
 
@@ -233,7 +265,7 @@
 
     return-void
 
-    .line 283
+    .line 288
     :cond_1
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView$SurfaceViewCallback;->this$0:Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;
 
@@ -243,7 +275,7 @@
 
     invoke-static {p1, v1}, Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;->-$$Nest$fputmSurfaceSize(Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;Landroid/util/Size;)V
 
-    .line 284
+    .line 289
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView$SurfaceViewCallback;->this$0:Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;->-$$Nest$fgetmLifeCycleCallback(Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;)Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView$LifeCycleCallback;
@@ -254,7 +286,7 @@
 
     invoke-interface {p1, p0, p3, p4}, Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView$LifeCycleCallback;->onSurfaceSizeChanged(Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;II)V
 
-    .line 286
+    .line 291
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_2
@@ -273,13 +305,21 @@
 
 .method public surfaceCreated(Landroid/view/SurfaceHolder;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "holder"
+        }
+    .end annotation
 
-    .line 252
+    .line 257
     invoke-interface {p1}, Landroid/view/SurfaceHolder;->getSurfaceFrame()Landroid/graphics/Rect;
 
     move-result-object v0
 
-    .line 254
+    .line 259
     sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     const/4 v2, 0x0
@@ -296,7 +336,7 @@
 
     invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 255
+    .line 260
     invoke-virtual {v0}, Landroid/graphics/Rect;->width()I
 
     move-result v5
@@ -311,7 +351,7 @@
 
     move-result-object v4
 
-    .line 256
+    .line 261
     invoke-virtual {v0}, Landroid/graphics/Rect;->height()I
 
     move-result v5
@@ -332,10 +372,10 @@
 
     aput-object v4, v1, v2
 
-    .line 254
+    .line 259
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 258
+    .line 263
     :cond_0
     invoke-virtual {v0}, Landroid/graphics/Rect;->width()I
 
@@ -353,13 +393,13 @@
 
     return-void
 
-    .line 261
+    .line 266
     :cond_1
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView$SurfaceViewCallback;->this$0:Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;
 
     invoke-static {v1, v3}, Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;->-$$Nest$msetSurfaceAvailability(Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;Z)V
 
-    .line 262
+    .line 267
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView$SurfaceViewCallback;->this$0:Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;
 
     invoke-interface {p1}, Landroid/view/SurfaceHolder;->getSurface()Landroid/view/Surface;
@@ -368,7 +408,7 @@
 
     invoke-static {v1, p1}, Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;->-$$Nest$msetSurfaceFrameRate(Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;Landroid/view/Surface;)V
 
-    .line 264
+    .line 269
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView$SurfaceViewCallback;->this$0:Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;
 
     new-instance v1, Landroid/util/Size;
@@ -385,7 +425,7 @@
 
     invoke-static {p1, v1}, Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;->-$$Nest$fputmSurfaceSize(Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;Landroid/util/Size;)V
 
-    .line 265
+    .line 270
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView$SurfaceViewCallback;->this$0:Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;->-$$Nest$fgetmLifeCycleCallback(Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;)Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView$LifeCycleCallback;
@@ -394,20 +434,20 @@
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView$SurfaceViewCallback;->this$0:Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;
 
-    .line 267
+    .line 272
     invoke-virtual {v0}, Landroid/graphics/Rect;->width()I
 
     move-result v1
 
-    .line 268
+    .line 273
     invoke-virtual {v0}, Landroid/graphics/Rect;->height()I
 
     move-result v0
 
-    .line 265
+    .line 270
     invoke-interface {p1, p0, v1, v0}, Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView$LifeCycleCallback;->onSurfaceInitialized(Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;II)V
 
-    .line 270
+    .line 275
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_2
@@ -426,8 +466,16 @@
 
 .method public surfaceDestroyed(Landroid/view/SurfaceHolder;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "holder"
+        }
+    .end annotation
 
-    .line 291
+    .line 296
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     const/4 v0, 0x1
@@ -444,20 +492,20 @@
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 293
+    .line 298
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView$SurfaceViewCallback;->this$0:Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;
 
     invoke-static {p1, v1}, Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;->-$$Nest$msetSurfaceAvailability(Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;Z)V
 
-    .line 295
+    .line 300
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView$SurfaceViewCallback;->this$0:Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;
 
     const/4 v2, 0x0
 
     invoke-static {p1, v2}, Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;->-$$Nest$fputmSurfaceSize(Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;Landroid/util/Size;)V
 
-    .line 296
+    .line 301
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView$SurfaceViewCallback;->this$0:Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;->-$$Nest$fgetmLifeCycleCallback(Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;)Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView$LifeCycleCallback;
@@ -468,7 +516,7 @@
 
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView$LifeCycleCallback;->onSurfaceFinalized(Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;)V
 
-    .line 298
+    .line 303
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_1

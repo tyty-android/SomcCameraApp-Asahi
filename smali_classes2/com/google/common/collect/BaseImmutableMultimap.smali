@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<K:",
@@ -21,7 +24,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 25
+    .line 26
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMultimap;-><init>()V
 
     return-void

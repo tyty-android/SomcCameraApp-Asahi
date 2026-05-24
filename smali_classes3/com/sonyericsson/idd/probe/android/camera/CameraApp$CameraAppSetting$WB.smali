@@ -74,7 +74,7 @@
 .method private static synthetic $values()[Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
     .locals 12
 
-    .line 2953
+    .line 3236
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->WB_AUTO:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     sget-object v1, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->DAYLIGHT:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
@@ -109,7 +109,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 2955
+    .line 3238
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     const-string v1, "WB_AUTO"
@@ -120,7 +120,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->WB_AUTO:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
-    .line 2956
+    .line 3239
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     const-string v1, "DAYLIGHT"
@@ -131,7 +131,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->DAYLIGHT:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
-    .line 2957
+    .line 3240
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     const-string v1, "SHADE"
@@ -142,7 +142,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->SHADE:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
-    .line 2958
+    .line 3241
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     const-string v1, "CLOUDY"
@@ -153,7 +153,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->CLOUDY:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
-    .line 2959
+    .line 3242
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     const-string v1, "INCANDESCENT"
@@ -164,7 +164,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->INCANDESCENT:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
-    .line 2960
+    .line 3243
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     const-string v1, "FLUORESCENT"
@@ -175,7 +175,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->FLUORESCENT:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
-    .line 2961
+    .line 3244
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     const-string v1, "CUSTOM_1"
@@ -186,7 +186,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->CUSTOM_1:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
-    .line 2962
+    .line 3245
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     const-string v1, "CUSTOM_2"
@@ -197,7 +197,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->CUSTOM_2:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
-    .line 2963
+    .line 3246
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     const-string v1, "CUSTOM_3"
@@ -208,7 +208,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->CUSTOM_3:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
-    .line 2964
+    .line 3247
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     const-string v1, "TEMP_1"
@@ -219,7 +219,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->TEMP_1:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
-    .line 2965
+    .line 3248
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     const-string v1, "TEMP_2"
@@ -230,7 +230,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->TEMP_2:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
-    .line 2966
+    .line 3249
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     const-string v1, "TEMP_3"
@@ -241,14 +241,14 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->TEMP_3:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
-    .line 2953
+    .line 3236
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->$values()[Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->$VALUES:[Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
-    .line 2995
+    .line 3278
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB$1;
 
     invoke-direct {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB$1;-><init>()V
@@ -260,19 +260,34 @@
 
 .method private constructor <init>(Ljava/lang/String;III)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "index",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)V"
         }
     .end annotation
 
-    .line 3004
+    .line 3287
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 3005
+    .line 3288
     iput p3, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->index:I
 
-    .line 3006
+    .line 3289
     iput p4, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->value:I
 
     return-void
@@ -289,7 +304,7 @@
         }
     .end annotation
 
-    .line 2992
+    .line 3275
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->internalValueMap:Lcom/google/protobuf/Internal$EnumLiteMap;
 
     return-object v0
@@ -297,6 +312,14 @@
 
 .method public static valueOf(I)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     packed-switch p0, :pswitch_data_0
 
@@ -304,73 +327,73 @@
 
     return-object p0
 
-    .line 2985
+    .line 3268
     :pswitch_0
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->TEMP_3:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     return-object p0
 
-    .line 2984
+    .line 3267
     :pswitch_1
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->TEMP_2:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     return-object p0
 
-    .line 2983
+    .line 3266
     :pswitch_2
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->TEMP_1:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     return-object p0
 
-    .line 2982
+    .line 3265
     :pswitch_3
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->CUSTOM_3:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     return-object p0
 
-    .line 2981
+    .line 3264
     :pswitch_4
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->CUSTOM_2:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     return-object p0
 
-    .line 2980
+    .line 3263
     :pswitch_5
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->CUSTOM_1:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     return-object p0
 
-    .line 2979
+    .line 3262
     :pswitch_6
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->FLUORESCENT:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     return-object p0
 
-    .line 2978
+    .line 3261
     :pswitch_7
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->INCANDESCENT:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     return-object p0
 
-    .line 2977
+    .line 3260
     :pswitch_8
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->CLOUDY:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     return-object p0
 
-    .line 2976
+    .line 3259
     :pswitch_9
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->SHADE:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     return-object p0
 
-    .line 2975
+    .line 3258
     :pswitch_a
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->DAYLIGHT:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     return-object p0
 
-    .line 2974
+    .line 3257
     :pswitch_b
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->WB_AUTO:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
@@ -397,8 +420,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 2953
+    .line 3236
     const-class v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -413,7 +444,7 @@
 .method public static values()[Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
     .locals 1
 
-    .line 2953
+    .line 3236
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->$VALUES:[Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     invoke-virtual {v0}, [Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->clone()Ljava/lang/Object;
@@ -430,7 +461,7 @@
 .method public final getNumber()I
     .locals 0
 
-    .line 2970
+    .line 3253
     iget p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->value:I
 
     return p0

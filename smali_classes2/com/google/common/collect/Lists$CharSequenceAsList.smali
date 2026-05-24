@@ -29,11 +29,19 @@
 # direct methods
 .method constructor <init>(Ljava/lang/CharSequence;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sequence"
+        }
+    .end annotation
 
-    .line 755
+    .line 805
     invoke-direct {p0}, Ljava/util/AbstractList;-><init>()V
 
-    .line 756
+    .line 806
     iput-object p1, p0, Lcom/google/common/collect/Lists$CharSequenceAsList;->sequence:Ljava/lang/CharSequence;
 
     return-void
@@ -43,15 +51,23 @@
 # virtual methods
 .method public get(I)Ljava/lang/Character;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
-    .line 761
+    .line 811
     invoke-virtual {p0}, Lcom/google/common/collect/Lists$CharSequenceAsList;->size()I
 
     move-result v0
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkElementIndex(II)I
 
-    .line 762
+    .line 812
     iget-object p0, p0, Lcom/google/common/collect/Lists$CharSequenceAsList;->sequence:Ljava/lang/CharSequence;
 
     invoke-interface {p0, p1}, Ljava/lang/CharSequence;->charAt(I)C
@@ -67,8 +83,16 @@
 
 .method public bridge synthetic get(I)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
-    .line 752
+    .line 802
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Lists$CharSequenceAsList;->get(I)Ljava/lang/Character;
 
     move-result-object p0
@@ -79,7 +103,7 @@
 .method public size()I
     .locals 0
 
-    .line 767
+    .line 817
     iget-object p0, p0, Lcom/google/common/collect/Lists$CharSequenceAsList;->sequence:Ljava/lang/CharSequence;
 
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I

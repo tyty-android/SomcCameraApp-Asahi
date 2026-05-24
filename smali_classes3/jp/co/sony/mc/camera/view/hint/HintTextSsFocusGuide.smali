@@ -35,6 +35,14 @@
 # virtual methods
 .method public canShow(Ljp/co/sony/mc/camera/setting/MessageSettings;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "messageSettings"
+        }
+    .end annotation
 
     .line 80
     sget-object p0, Ljp/co/sony/mc/camera/setting/MessageType;->SHUTTER_SPEED_FOCUS_GUIDE:Ljp/co/sony/mc/camera/setting/MessageType;
@@ -87,7 +95,7 @@
 .method public getLeftButtonResourceId()I
     .locals 0
 
-    const p0, 0x7f08010e
+    const p0, 0x7f080169
 
     return p0
 .end method
@@ -113,7 +121,7 @@
 
     move-result-object p0
 
-    const v0, 0x7f110474
+    const v0, 0x7f1104bd
 
     .line 36
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -144,7 +152,7 @@
 .method public getRightButtonResourceId()I
     .locals 0
 
-    const p0, 0x7f080236
+    const p0, 0x7f080292
 
     return p0
 .end method
@@ -160,6 +168,14 @@
 
 .method public setLeftButtonListener(Landroid/view/View$OnClickListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "leftButtonListener"
+        }
+    .end annotation
 
     .line 50
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextSsFocusGuide;->mLeftButtonListener:Landroid/view/View$OnClickListener;
@@ -169,6 +185,14 @@
 
 .method public setMessageListener(Landroid/view/View$OnClickListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "messageListener"
+        }
+    .end annotation
 
     .line 70
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextSsFocusGuide;->mMessageListener:Landroid/view/View$OnClickListener;
@@ -178,6 +202,14 @@
 
 .method public setRightButtonListener(Landroid/view/View$OnClickListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "rightButtonListener"
+        }
+    .end annotation
 
     .line 58
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextSsFocusGuide;->mRightButtonListener:Landroid/view/View$OnClickListener;

@@ -24,11 +24,19 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "controller"
+        }
+    .end annotation
 
-    .line 7780
+    .line 6664
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7781
+    .line 6665
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$RecordingProgressImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     return-void
@@ -38,8 +46,16 @@
 # virtual methods
 .method public onRecordingProgress(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "millis"
+        }
+    .end annotation
 
-    .line 7786
+    .line 6670
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$RecordingProgressImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;

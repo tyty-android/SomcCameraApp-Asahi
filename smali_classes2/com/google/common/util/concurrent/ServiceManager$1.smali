@@ -30,7 +30,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 124
+    .line 129
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -40,8 +40,16 @@
 # virtual methods
 .method public call(Lcom/google/common/util/concurrent/ServiceManager$Listener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
-    .line 127
+    .line 132
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/ServiceManager$Listener;->healthy()V
 
     return-void
@@ -49,8 +57,16 @@
 
 .method public bridge synthetic call(Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
-    .line 124
+    .line 129
     check-cast p1, Lcom/google/common/util/concurrent/ServiceManager$Listener;
 
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/ServiceManager$1;->call(Lcom/google/common/util/concurrent/ServiceManager$Listener;)V
@@ -61,7 +77,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 132
+    .line 137
     const-string p0, "healthy()"
 
     return-object p0

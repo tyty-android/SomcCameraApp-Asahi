@@ -20,8 +20,6 @@
 
 .field public static final debug_preferences:I = 0x7f140002
 
-.field public static final image_share_filepaths:I = 0x7f140003
-
 
 # direct methods
 .method private constructor <init>()V

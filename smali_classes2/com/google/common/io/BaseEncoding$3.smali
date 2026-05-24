@@ -23,8 +23,18 @@
 # direct methods
 .method constructor <init>(Ljava/io/Reader;Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x1010
+        }
+        names = {
+            "val$delegate",
+            "val$toIgnore"
+        }
+    .end annotation
 
-    .line 997
+    .line 1062
     iput-object p1, p0, Lcom/google/common/io/BaseEncoding$3;->val$delegate:Ljava/io/Reader;
 
     iput-object p2, p0, Lcom/google/common/io/BaseEncoding$3;->val$toIgnore:Ljava/lang/String;
@@ -44,7 +54,7 @@
         }
     .end annotation
 
-    .line 1014
+    .line 1079
     iget-object p0, p0, Lcom/google/common/io/BaseEncoding$3;->val$delegate:Ljava/io/Reader;
 
     invoke-virtual {p0}, Ljava/io/Reader;->close()V
@@ -60,7 +70,7 @@
         }
     .end annotation
 
-    .line 1002
+    .line 1067
     :cond_0
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$3;->val$delegate:Ljava/io/Reader;
 
@@ -72,7 +82,7 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 1003
+    .line 1068
     iget-object v1, p0, Lcom/google/common/io/BaseEncoding$3;->val$toIgnore:Ljava/lang/String;
 
     int-to-char v2, v0
@@ -89,13 +99,26 @@
 
 .method public read([CII)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "cbuf",
+            "off",
+            "len"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 1009
+    .line 1074
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V

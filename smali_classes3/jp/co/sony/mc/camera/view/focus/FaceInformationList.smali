@@ -47,6 +47,14 @@
 # virtual methods
 .method public addNamedFace(Ljp/co/sony/mc/camera/view/focus/NamedFace;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "namedFace"
+        }
+    .end annotation
 
     .line 26
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FaceInformationList;->mNamedFaceList:Ljava/util/List;
@@ -58,6 +66,14 @@
 
 .method public getNamedFace(I)Ljp/co/sony/mc/camera/view/focus/NamedFace;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
     .line 34
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FaceInformationList;->mNamedFaceList:Ljava/util/List;
@@ -138,6 +154,14 @@
 
 .method public setUserTouchUuid(Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "uuid"
+        }
+    .end annotation
 
     .line 22
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FaceInformationList;->mUserTouchUuid:Ljava/lang/String;

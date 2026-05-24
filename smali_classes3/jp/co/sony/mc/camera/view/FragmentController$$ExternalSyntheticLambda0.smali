@@ -44,7 +44,7 @@
 
     check-cast p1, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;
 
-    invoke-static {v0, v1, p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController;->$r8$lambda$4fggylDQav4cAmQJ13nKbpkhUwc(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;)V
+    invoke-static {v0, v1, p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController;->$r8$lambda$QFYFVev6qzlwGcIybMRaR2W8ICk(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;)V
 
     return-void
 .end method

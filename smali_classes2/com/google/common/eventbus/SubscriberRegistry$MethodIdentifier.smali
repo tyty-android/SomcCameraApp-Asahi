@@ -31,6 +31,14 @@
 # direct methods
 .method constructor <init>(Ljava/lang/reflect/Method;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "method"
+        }
+    .end annotation
 
     .line 250
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -61,9 +69,17 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
     .line 262
     instance-of v0, p1, Lcom/google/common/eventbus/SubscriberRegistry$MethodIdentifier;

@@ -31,8 +31,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/common/collect/Ordering<",
-            "Lcom/google/common/collect/Range<",
-            "*>;>;"
+            "*>;"
         }
     .end annotation
 .end field
@@ -44,7 +43,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 717
+    .line 705
     new-instance v0, Lcom/google/common/collect/Range$RangeLexOrdering;
 
     invoke-direct {v0}, Lcom/google/common/collect/Range$RangeLexOrdering;-><init>()V
@@ -57,7 +56,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 716
+    .line 704
     invoke-direct {p0}, Lcom/google/common/collect/Ordering;-><init>()V
 
     return-void
@@ -67,6 +66,17 @@
 # virtual methods
 .method public compare(Lcom/google/common/collect/Range;Lcom/google/common/collect/Range;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "left",
+            "right"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -77,7 +87,7 @@
         }
     .end annotation
 
-    .line 721
+    .line 709
     invoke-static {}, Lcom/google/common/collect/ComparisonChain;->start()Lcom/google/common/collect/ComparisonChain;
 
     move-result-object p0
@@ -86,7 +96,7 @@
 
     iget-object v1, p2, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
-    .line 722
+    .line 710
     invoke-virtual {p0, v0, v1}, Lcom/google/common/collect/ComparisonChain;->compare(Ljava/lang/Comparable;Ljava/lang/Comparable;)Lcom/google/common/collect/ComparisonChain;
 
     move-result-object p0
@@ -95,12 +105,12 @@
 
     iget-object p2, p2, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
 
-    .line 723
+    .line 711
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/ComparisonChain;->compare(Ljava/lang/Comparable;Ljava/lang/Comparable;)Lcom/google/common/collect/ComparisonChain;
 
     move-result-object p0
 
-    .line 724
+    .line 712
     invoke-virtual {p0}, Lcom/google/common/collect/ComparisonChain;->result()I
 
     move-result p0
@@ -110,8 +120,18 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "left",
+            "right"
+        }
+    .end annotation
 
-    .line 716
+    .line 704
     check-cast p1, Lcom/google/common/collect/Range;
 
     check-cast p2, Lcom/google/common/collect/Range;

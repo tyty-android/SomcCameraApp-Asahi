@@ -16,4 +16,14 @@
 
 # virtual methods
 .method public abstract onPress(Landroid/view/View;Z)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "v",
+            "pressed"
+        }
+    .end annotation
 .end method

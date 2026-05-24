@@ -36,11 +36,27 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/Lists$ReverseList;Ljava/util/ListIterator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$forwardIterator"
+        }
+    .end annotation
 
-    .line 867
-    iput-object p1, p0, Lcom/google/common/collect/Lists$ReverseList$1;->this$0:Lcom/google/common/collect/Lists$ReverseList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
 
+    .line 924
     iput-object p2, p0, Lcom/google/common/collect/Lists$ReverseList$1;->val$forwardIterator:Ljava/util/ListIterator;
+
+    iput-object p1, p0, Lcom/google/common/collect/Lists$ReverseList$1;->this$0:Lcom/google/common/collect/Lists$ReverseList;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,25 +67,38 @@
 # virtual methods
 .method public add(Ljava/lang/Object;)V
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)V"
         }
     .end annotation
 
-    .line 873
+    .line 930
     iget-object v0, p0, Lcom/google/common/collect/Lists$ReverseList$1;->val$forwardIterator:Ljava/util/ListIterator;
 
     invoke-interface {v0, p1}, Ljava/util/ListIterator;->add(Ljava/lang/Object;)V
 
-    .line 874
+    .line 931
     iget-object p1, p0, Lcom/google/common/collect/Lists$ReverseList$1;->val$forwardIterator:Ljava/util/ListIterator;
 
     invoke-interface {p1}, Ljava/util/ListIterator;->previous()Ljava/lang/Object;
 
     const/4 p1, 0x0
 
-    .line 875
+    .line 932
     iput-boolean p1, p0, Lcom/google/common/collect/Lists$ReverseList$1;->canRemoveOrSet:Z
 
     return-void
@@ -78,7 +107,7 @@
 .method public hasNext()Z
     .locals 0
 
-    .line 880
+    .line 937
     iget-object p0, p0, Lcom/google/common/collect/Lists$ReverseList$1;->val$forwardIterator:Ljava/util/ListIterator;
 
     invoke-interface {p0}, Ljava/util/ListIterator;->hasPrevious()Z
@@ -91,7 +120,7 @@
 .method public hasPrevious()Z
     .locals 0
 
-    .line 885
+    .line 942
     iget-object p0, p0, Lcom/google/common/collect/Lists$ReverseList$1;->val$forwardIterator:Ljava/util/ListIterator;
 
     invoke-interface {p0}, Ljava/util/ListIterator;->hasNext()Z
@@ -103,13 +132,16 @@
 
 .method public next()Ljava/lang/Object;
     .locals 1
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TT;"
         }
     .end annotation
 
-    .line 890
+    .line 948
     invoke-virtual {p0}, Lcom/google/common/collect/Lists$ReverseList$1;->hasNext()Z
 
     move-result v0
@@ -118,10 +150,10 @@
 
     const/4 v0, 0x1
 
-    .line 893
+    .line 951
     iput-boolean v0, p0, Lcom/google/common/collect/Lists$ReverseList$1;->canRemoveOrSet:Z
 
-    .line 894
+    .line 952
     iget-object p0, p0, Lcom/google/common/collect/Lists$ReverseList$1;->val$forwardIterator:Ljava/util/ListIterator;
 
     invoke-interface {p0}, Ljava/util/ListIterator;->previous()Ljava/lang/Object;
@@ -130,7 +162,7 @@
 
     return-object p0
 
-    .line 891
+    .line 949
     :cond_0
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -142,7 +174,7 @@
 .method public nextIndex()I
     .locals 1
 
-    .line 899
+    .line 957
     iget-object v0, p0, Lcom/google/common/collect/Lists$ReverseList$1;->this$0:Lcom/google/common/collect/Lists$ReverseList;
 
     iget-object p0, p0, Lcom/google/common/collect/Lists$ReverseList$1;->val$forwardIterator:Ljava/util/ListIterator;
@@ -160,13 +192,16 @@
 
 .method public previous()Ljava/lang/Object;
     .locals 1
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TT;"
         }
     .end annotation
 
-    .line 904
+    .line 963
     invoke-virtual {p0}, Lcom/google/common/collect/Lists$ReverseList$1;->hasPrevious()Z
 
     move-result v0
@@ -175,10 +210,10 @@
 
     const/4 v0, 0x1
 
-    .line 907
+    .line 966
     iput-boolean v0, p0, Lcom/google/common/collect/Lists$ReverseList$1;->canRemoveOrSet:Z
 
-    .line 908
+    .line 967
     iget-object p0, p0, Lcom/google/common/collect/Lists$ReverseList$1;->val$forwardIterator:Ljava/util/ListIterator;
 
     invoke-interface {p0}, Ljava/util/ListIterator;->next()Ljava/lang/Object;
@@ -187,7 +222,7 @@
 
     return-object p0
 
-    .line 905
+    .line 964
     :cond_0
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -199,7 +234,7 @@
 .method public previousIndex()I
     .locals 0
 
-    .line 913
+    .line 972
     invoke-virtual {p0}, Lcom/google/common/collect/Lists$ReverseList$1;->nextIndex()I
 
     move-result p0
@@ -212,19 +247,19 @@
 .method public remove()V
     .locals 1
 
-    .line 918
+    .line 977
     iget-boolean v0, p0, Lcom/google/common/collect/Lists$ReverseList$1;->canRemoveOrSet:Z
 
     invoke-static {v0}, Lcom/google/common/collect/CollectPreconditions;->checkRemove(Z)V
 
-    .line 919
+    .line 978
     iget-object v0, p0, Lcom/google/common/collect/Lists$ReverseList$1;->val$forwardIterator:Ljava/util/ListIterator;
 
     invoke-interface {v0}, Ljava/util/ListIterator;->remove()V
 
     const/4 v0, 0x0
 
-    .line 920
+    .line 979
     iput-boolean v0, p0, Lcom/google/common/collect/Lists$ReverseList$1;->canRemoveOrSet:Z
 
     return-void
@@ -232,18 +267,31 @@
 
 .method public set(Ljava/lang/Object;)V
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)V"
         }
     .end annotation
 
-    .line 925
+    .line 984
     iget-boolean v0, p0, Lcom/google/common/collect/Lists$ReverseList$1;->canRemoveOrSet:Z
 
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkState(Z)V
 
-    .line 926
+    .line 985
     iget-object p0, p0, Lcom/google/common/collect/Lists$ReverseList$1;->val$forwardIterator:Ljava/util/ListIterator;
 
     invoke-interface {p0, p1}, Ljava/util/ListIterator;->set(Ljava/lang/Object;)V

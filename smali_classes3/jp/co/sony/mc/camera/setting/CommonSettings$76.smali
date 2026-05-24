@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 917
+    .line 835
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,6 +31,21 @@
 # virtual methods
 .method public setValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljava/util/Map;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key",
+            "value",
+            "listenersMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -46,13 +61,17 @@
         }
     .end annotation
 
-    .line 921
+    .line 839
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 922
-    check-cast p3, Ljava/lang/Float;
+    .line 840
+    check-cast p3, Ljava/lang/Boolean;
 
-    invoke-virtual {p1, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->setLevelCalibration(Ljava/lang/Float;)Z
+    invoke-virtual {p3}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
+
+    invoke-virtual {p1, p0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->setLastAiSuggestionBokeh(Z)Z
 
     move-result p0
 

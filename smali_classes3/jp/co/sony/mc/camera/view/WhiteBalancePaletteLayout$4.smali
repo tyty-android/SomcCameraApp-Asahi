@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 136
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout$4;->this$0:Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout;
@@ -37,6 +45,14 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "v"
+        }
+    .end annotation
 
     .line 139
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout$4;->this$0:Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout;

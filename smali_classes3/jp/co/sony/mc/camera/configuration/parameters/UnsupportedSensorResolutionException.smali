@@ -10,6 +10,14 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "maxWidth"
+        }
+    .end annotation
 
     .line 22
     new-instance v0, Ljava/lang/StringBuilder;

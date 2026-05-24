@@ -30,13 +30,28 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/CameraSettingsActivity;Ljp/co/sony/mc/camera/setting/MessageSettings;Ljp/co/sony/mc/camera/view/messagedialog/DialogId;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$messageSettings",
+            "val$dialogId",
+            "val$isChecked"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 733
+    .line 735
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$5;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$5;->val$messageSettings:Ljp/co/sony/mc/camera/setting/MessageSettings;
@@ -55,7 +70,7 @@
 .method public run()V
     .locals 3
 
-    .line 736
+    .line 738
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$5;->val$messageSettings:Ljp/co/sony/mc/camera/setting/MessageSettings;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$5;->val$dialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
@@ -68,7 +83,7 @@
 
     invoke-interface {v0, v1, v2}, Ljp/co/sony/mc/camera/setting/MessageSettings;->setNeverShow(Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
-    .line 737
+    .line 739
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$5;->val$messageSettings:Ljp/co/sony/mc/camera/setting/MessageSettings;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/setting/MessageSettings;->save()V

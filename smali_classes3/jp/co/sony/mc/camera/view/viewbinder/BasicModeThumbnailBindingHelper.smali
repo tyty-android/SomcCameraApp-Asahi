@@ -5,12 +5,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nBasicModeThumbnailBindingHelper.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BasicModeThumbnailBindingHelper.kt\njp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,204:1\n1#2:205\n785#3:206\n796#3:207\n1872#3,2:208\n797#3,2:210\n1874#3:212\n799#3:213\n*S KotlinDebug\n*F\n+ 1 BasicModeThumbnailBindingHelper.kt\njp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper\n*L\n129#1:206\n129#1:207\n129#1:208,2\n129#1:210,2\n129#1:212\n129#1:213\n*E\n"
+    value = "SMAP\nBasicModeThumbnailBindingHelper.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BasicModeThumbnailBindingHelper.kt\njp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,250:1\n1#2:251\n785#3:252\n796#3:253\n1872#3,2:254\n797#3,2:256\n1874#3:258\n799#3:259\n*S KotlinDebug\n*F\n+ 1 BasicModeThumbnailBindingHelper.kt\njp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper\n*L\n153#1:252\n153#1:253\n153#1:254,2\n153#1:256,2\n153#1:258\n153#1:259\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000^\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0010\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u000e\n\u0002\u0010\u000b\n\u0002\u0008\u0006\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\t\u0008\u0007\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u008d\u0001\u00108\u001a\u00020\u00122\u000c\u00109\u001a\u0008\u0012\u0004\u0012\u000202012\u000c\u0010:\u001a\u0008\u0012\u0004\u0012\u00020\u000e012\u000c\u0010;\u001a\u0008\u0012\u0004\u0012\u00020\u000e012\u000c\u0010<\u001a\u0008\u0012\u0004\u0012\u00020\u000e012\u000c\u00104\u001a\u0008\u0012\u0004\u0012\u00020\u000e012\u0016\u0010=\u001a\u0012\u0012\u0004\u0012\u00020?0@j\u0008\u0012\u0004\u0012\u00020?`>2\u0006\u0010\u0011\u001a\u00020\u000e2\u000c\u0010A\u001a\u0008\u0012\u0004\u0012\u00020\u000e012\u000c\u0010B\u001a\u0008\u0012\u0004\u0012\u00020\u000e01\u00a2\u0006\u0002\u0010CJ\u0016\u0010D\u001a\u00020\u00122\u0006\u0010\u0011\u001a\u00020\u000e2\u0006\u0010E\u001a\u00020*J\u0006\u0010F\u001a\u00020\u0012J\u0010\u0010G\u001a\u00020\u00122\u0006\u0010\u0011\u001a\u00020\u000eH\u0002J\u0010\u0010H\u001a\u00020\u00122\u0006\u0010\u0011\u001a\u00020\u000eH\u0002R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0006\u0010\u0007R\u0014\u0010\u0008\u001a\u00020\t8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\n\u0010\u000bR5\u0010\u000c\u001a\u001d\u0012\u0013\u0012\u00110\u000e\u00a2\u0006\u000c\u0008\u000f\u0012\u0008\u0008\u0010\u0012\u0004\u0008\u0008(\u0011\u0012\u0004\u0012\u00020\u00120\rX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0013\u0010\u0014\"\u0004\u0008\u0015\u0010\u0016R5\u0010\u0017\u001a\u001d\u0012\u0013\u0012\u00110\u000e\u00a2\u0006\u000c\u0008\u000f\u0012\u0008\u0008\u0010\u0012\u0004\u0008\u0008(\u0011\u0012\u0004\u0012\u00020\u00120\rX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0018\u0010\u0014\"\u0004\u0008\u0019\u0010\u0016R \u0010\u001a\u001a\u0008\u0012\u0004\u0012\u00020\u00120\u001bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001c\u0010\u001d\"\u0004\u0008\u001e\u0010\u001fR \u0010 \u001a\u0008\u0012\u0004\u0012\u00020\u00120\u001bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008!\u0010\u001d\"\u0004\u0008\"\u0010\u001fR \u0010#\u001a\u0008\u0012\u0004\u0012\u00020\u00120\u001bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008$\u0010\u001d\"\u0004\u0008%\u0010\u001fR \u0010&\u001a\u0008\u0012\u0004\u0012\u00020\u00120\u001bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\'\u0010\u001d\"\u0004\u0008(\u0010\u001fR$\u0010+\u001a\u00020*2\u0006\u0010)\u001a\u00020*@FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008,\u0010-\"\u0004\u0008.\u0010/R\u0014\u00100\u001a\u0008\u0012\u0004\u0012\u00020201X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u00103\u001a\u00020\u000eX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u00104\u001a\u0008\u0012\u0004\u0012\u00020\u000e01X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u00105\u001a\u00020\u000eX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u00106\u001a\u0008\u0012\u0004\u0012\u00020\u000e01X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u00107\u001a\u0008\u0012\u0004\u0012\u00020\u000e01X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006I"
+        "\u0000^\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0010\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u0008\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0011\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0002\u0008\u000e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u000b\u0008\u0007\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u00b7\u0001\u00109\u001a\u00020\u00122\u000c\u0010:\u001a\u0008\u0012\u0004\u0012\u000203022\u000c\u0010;\u001a\u0008\u0012\u0004\u0012\u00020\u000e022\u000c\u0010<\u001a\u0008\u0012\u0004\u0012\u00020\u000e022\u000c\u0010=\u001a\u0008\u0012\u0004\u0012\u00020\u000e022\u000c\u0010>\u001a\u0008\u0012\u0004\u0012\u00020\u000e022\u000c\u0010?\u001a\u0008\u0012\u0004\u0012\u00020\u000e022\u000c\u0010@\u001a\u0008\u0012\u0004\u0012\u00020\u000e022\u000c\u00105\u001a\u0008\u0012\u0004\u0012\u00020\u000e022\u0016\u0010A\u001a\u0012\u0012\u0004\u0012\u00020C0Dj\u0008\u0012\u0004\u0012\u00020C`B2\u0006\u0010\u0011\u001a\u00020\u000e2\u000c\u0010E\u001a\u0008\u0012\u0004\u0012\u00020\u000e022\u000c\u0010F\u001a\u0008\u0012\u0004\u0012\u00020\u000e02\u00a2\u0006\u0002\u0010GJ\u0016\u0010H\u001a\u00020\u00122\u0006\u0010\u0011\u001a\u00020\u000e2\u0006\u0010I\u001a\u00020\u001bJ\u000e\u0010J\u001a\u00020\u00122\u0006\u0010\u0011\u001a\u00020\u000eJ\u0006\u0010K\u001a\u00020\u0012J\u0006\u0010L\u001a\u00020\u0012J\u0010\u0010M\u001a\u00020\u00122\u0006\u0010\u0011\u001a\u00020\u000eH\u0002J\u0010\u0010N\u001a\u00020\u00122\u0006\u0010\u0011\u001a\u00020\u000eH\u0002R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0006\u0010\u0007R\u0014\u0010\u0008\u001a\u00020\t8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\n\u0010\u000bR5\u0010\u000c\u001a\u001d\u0012\u0013\u0012\u00110\u000e\u00a2\u0006\u000c\u0008\u000f\u0012\u0008\u0008\u0010\u0012\u0004\u0008\u0008(\u0011\u0012\u0004\u0012\u00020\u00120\rX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0013\u0010\u0014\"\u0004\u0008\u0015\u0010\u0016R5\u0010\u0017\u001a\u001d\u0012\u0013\u0012\u00110\u000e\u00a2\u0006\u000c\u0008\u000f\u0012\u0008\u0008\u0010\u0012\u0004\u0008\u0008(\u0011\u0012\u0004\u0012\u00020\u00120\rX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0018\u0010\u0014\"\u0004\u0008\u0019\u0010\u0016R5\u0010\u001a\u001a\u001d\u0012\u0013\u0012\u00110\u001b\u00a2\u0006\u000c\u0008\u000f\u0012\u0008\u0008\u0010\u0012\u0004\u0008\u0008(\u001c\u0012\u0004\u0012\u00020\u00120\rX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001d\u0010\u0014\"\u0004\u0008\u001e\u0010\u0016R \u0010\u001f\u001a\u0008\u0012\u0004\u0012\u00020\u00120 X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008!\u0010\"\"\u0004\u0008#\u0010$R \u0010%\u001a\u0008\u0012\u0004\u0012\u00020\u00120 X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008&\u0010\"\"\u0004\u0008\'\u0010$R \u0010(\u001a\u0008\u0012\u0004\u0012\u00020\u00120 X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008)\u0010\"\"\u0004\u0008*\u0010$R$\u0010,\u001a\u00020\u001b2\u0006\u0010+\u001a\u00020\u001b@FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008-\u0010.\"\u0004\u0008/\u00100R\u0014\u00101\u001a\u0008\u0012\u0004\u0012\u00020302X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u00104\u001a\u00020\u000eX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u00105\u001a\u0008\u0012\u0004\u0012\u00020\u000e02X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u00106\u001a\u00020\u000eX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u00107\u001a\u0008\u0012\u0004\u0012\u00020\u000e02X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u00108\u001a\u0008\u0012\u0004\u0012\u00020\u000e02X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006O"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;",
@@ -40,14 +40,16 @@
         "getOnStopValueChange",
         "setOnStopValueChange",
         "onClosed",
-        "Lkotlin/Function0;",
+        "",
+        "isClosedByTapItem",
         "getOnClosed",
-        "()Lkotlin/jvm/functions/Function0;",
         "setOnClosed",
-        "(Lkotlin/jvm/functions/Function0;)V",
         "onInfoClicked",
+        "Lkotlin/Function0;",
         "getOnInfoClicked",
+        "()Lkotlin/jvm/functions/Function0;",
         "setOnInfoClicked",
+        "(Lkotlin/jvm/functions/Function0;)V",
         "onMainButtonClick",
         "getOnMainButtonClick",
         "setOnMainButtonClick",
@@ -55,7 +57,6 @@
         "getOnSubButtonClick",
         "setOnSubButtonClick",
         "value",
-        "",
         "enabled",
         "getEnabled",
         "()Z",
@@ -72,17 +73,22 @@
         "show",
         "names",
         "values",
-        "descriptions",
-        "icons",
+        "valueUnselectedDescriptions",
+        "valueSelectedDescriptions",
+        "infoDescriptions",
+        "foregroundThumbnails",
+        "backgroundThumbnails",
         "itemSize",
         "Lkotlin/collections/ArrayList;",
         "Landroid/util/Size;",
         "Ljava/util/ArrayList;",
         "infoImage",
         "iconTexts",
-        "(Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/ArrayList;ILjava/util/List;Ljava/util/List;)V",
+        "(Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/ArrayList;ILjava/util/List;Ljava/util/List;)V",
         "setSelectedItem",
         "centering",
+        "requestItemAccessibilityFocus",
+        "requestArrowAccessibilityFocus",
         "clearListener",
         "setArrowVisibility",
         "updateItemView",
@@ -139,10 +145,12 @@
     .end annotation
 .end field
 
-.field private onClosed:Lkotlin/jvm/functions/Function0;
+.field private onClosed:Lkotlin/jvm/functions/Function1;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lkotlin/jvm/functions/Function0<",
+            "Lkotlin/jvm/functions/Function1<",
+            "-",
+            "Ljava/lang/Boolean;",
             "Lkotlin/Unit;",
             ">;"
         }
@@ -217,6 +225,26 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$06wb0k1wjj4BZm4W_oc1xB8Hl1Q(I)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->clearListener$lambda$21(I)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$1ZOO7NimP5yjcLW9M7N1rylklbs()Lkotlin/Unit;
+    .locals 1
+
+    invoke-static {}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->clearListener$lambda$25()Lkotlin/Unit;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
 .method public static synthetic $r8$lambda$9YxpcWCEZJJBxlnZNAvBbNf6acM()Lkotlin/Unit;
     .locals 1
 
@@ -237,32 +265,22 @@
     return-object v0
 .end method
 
-.method public static synthetic $r8$lambda$BYl-mFURZ8QTgubc7rEGgiKzk_A()Lkotlin/Unit;
-    .locals 1
-
-    invoke-static {}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->clearListener$lambda$23()Lkotlin/Unit;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public static synthetic $r8$lambda$DQ8MR6AYnCm2Z_jj9IW0PppWxng(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;)Lkotlin/Unit;
-    .locals 0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->setArrowVisibility$lambda$30$lambda$29$lambda$27(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
 .method public static synthetic $r8$lambda$Dm8SpUFWyE2pW7_Pv8iYBoomQzw(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;Landroid/view/View;)V
     .locals 0
 
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->_init_$lambda$11(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;Landroid/view/View;)V
 
     return-void
+.end method
+
+.method public static synthetic $r8$lambda$E93uRrrl0-nM8Sr5xcoXxrSA0FI(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->setArrowVisibility$lambda$32$lambda$31$lambda$29(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
 .method public static synthetic $r8$lambda$HpQUqikc2RlXLwVT5eMvufKsPHE(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;Landroid/view/View;)V
@@ -273,34 +291,24 @@
     return-void
 .end method
 
-.method public static synthetic $r8$lambda$MMt2Rm1XB4_f4XiDQ7EQ0OJg70I(I)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$Pa9EWw39E-MgYGvnzBwRW4cHzAA(Z)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->clearListener$lambda$19(I)Lkotlin/Unit;
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->onClosed$lambda$2(Z)Lkotlin/Unit;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$QRYOc8htL52H5VVHWVt0xHoZpTA()Lkotlin/Unit;
-    .locals 1
+.method public static synthetic $r8$lambda$Tx3USINF5VydFAgRciEkzsNpqAg(I)Lkotlin/Unit;
+    .locals 0
 
-    invoke-static {}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->onClosed$lambda$2()Lkotlin/Unit;
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->clearListener$lambda$22(I)Lkotlin/Unit;
 
-    move-result-object v0
+    move-result-object p0
 
-    return-object v0
-.end method
-
-.method public static synthetic $r8$lambda$daL4KH97y7HjaroNaOVpS5Hq4gA()Lkotlin/Unit;
-    .locals 1
-
-    invoke-static {}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->clearListener$lambda$22()Lkotlin/Unit;
-
-    move-result-object v0
-
-    return-object v0
+    return-object p0
 .end method
 
 .method public static synthetic $r8$lambda$e0A1tXHBrh8kNGfsHOwmV6M_zb0()Lkotlin/Unit;
@@ -313,20 +321,10 @@
     return-object v0
 .end method
 
-.method public static synthetic $r8$lambda$j-O_Mv7_jCSMKNF9lUkhA3G5_pk()Lkotlin/Unit;
-    .locals 1
-
-    invoke-static {}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->clearListener$lambda$21()Lkotlin/Unit;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public static synthetic $r8$lambda$kJM6Wg-S_vXmSw0xFJZfqd2nh6A(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$jHNciPGpk8mfTdylwC6QfgAq3Qk(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->setArrowVisibility$lambda$30$lambda$29$lambda$25(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;)Lkotlin/Unit;
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->setArrowVisibility$lambda$32$lambda$31$lambda$27(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;)Lkotlin/Unit;
 
     move-result-object p0
 
@@ -353,10 +351,20 @@
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$t9uuvuZBNWOYm06YhaExY4eZai4(I)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$rhRx20M5_oFkEMpzQpL4O-ZSiaE()Lkotlin/Unit;
+    .locals 1
+
+    invoke-static {}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->clearListener$lambda$26()Lkotlin/Unit;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static synthetic $r8$lambda$tvJIKw2aLOmGDZzrx2o6COFyY48(Z)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->clearListener$lambda$20(I)Lkotlin/Unit;
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->clearListener$lambda$23(Z)Lkotlin/Unit;
 
     move-result-object p0
 
@@ -410,7 +418,7 @@
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper$$ExternalSyntheticLambda3;-><init>()V
 
-    iput-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->onClosed:Lkotlin/jvm/functions/Function0;
+    iput-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->onClosed:Lkotlin/jvm/functions/Function1;
 
     .line 31
     new-instance v0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper$$ExternalSyntheticLambda4;
@@ -634,55 +642,55 @@
     return-void
 .end method
 
-.method private static final clearListener$lambda$19(I)Lkotlin/Unit;
+.method private static final clearListener$lambda$21(I)Lkotlin/Unit;
     .locals 0
 
-    .line 146
+    .line 192
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 .end method
 
-.method private static final clearListener$lambda$20(I)Lkotlin/Unit;
+.method private static final clearListener$lambda$22(I)Lkotlin/Unit;
     .locals 0
 
-    .line 147
+    .line 193
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 .end method
 
-.method private static final clearListener$lambda$21()Lkotlin/Unit;
-    .locals 1
+.method private static final clearListener$lambda$23(Z)Lkotlin/Unit;
+    .locals 0
 
-    .line 148
-    sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+    .line 194
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
-    return-object v0
-.end method
-
-.method private static final clearListener$lambda$22()Lkotlin/Unit;
-    .locals 1
-
-    .line 149
-    sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
-
-    return-object v0
-.end method
-
-.method private static final clearListener$lambda$23()Lkotlin/Unit;
-    .locals 1
-
-    .line 150
-    sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
-
-    return-object v0
+    return-object p0
 .end method
 
 .method private static final clearListener$lambda$24()Lkotlin/Unit;
     .locals 1
 
-    .line 151
+    .line 195
+    sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object v0
+.end method
+
+.method private static final clearListener$lambda$25()Lkotlin/Unit;
+    .locals 1
+
+    .line 196
+    sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object v0
+.end method
+
+.method private static final clearListener$lambda$26()Lkotlin/Unit;
+    .locals 1
+
+    .line 197
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object v0
@@ -711,9 +719,15 @@
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 60
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->onClosed:Lkotlin/jvm/functions/Function0;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->onClosed:Lkotlin/jvm/functions/Function1;
 
-    invoke-interface {p0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+    const/4 p1, 0x0
+
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p1
+
+    invoke-interface {p0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
@@ -763,13 +777,13 @@
     return-void
 .end method
 
-.method private static final onClosed$lambda$2()Lkotlin/Unit;
-    .locals 1
+.method private static final onClosed$lambda$2(Z)Lkotlin/Unit;
+    .locals 0
 
     .line 29
-    sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
-    return-object v0
+    return-object p0
 .end method
 
 .method private static final onInfoClicked$lambda$3()Lkotlin/Unit;
@@ -820,15 +834,15 @@
 .method private final setArrowVisibility(I)V
     .locals 6
 
-    .line 155
+    .line 201
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;->valueArea:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;
 
-    .line 156
+    .line 202
     sget-object v1, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->INSTANCE:Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;
 
-    .line 157
+    .line 203
     iget-object v1, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;->arrowLeftButton:Landroid/widget/ImageButton;
 
     invoke-virtual {v1}, Landroid/widget/ImageButton;->isAccessibilityFocused()Z
@@ -839,7 +853,7 @@
 
     if-nez p1, :cond_0
 
-    .line 158
+    .line 204
     sget-object v1, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->INSTANCE:Ljp/co/sony/mc/camera/util/AccessibilityUtil;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;
@@ -872,7 +886,7 @@
     :cond_1
     move v3, v1
 
-    .line 165
+    .line 211
     :goto_0
     iget-object v4, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;->arrowLeftButton:Landroid/widget/ImageButton;
 
@@ -886,7 +900,7 @@
 
     invoke-static {v4, v5}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setInvisible(Landroid/view/View;Z)V
 
-    .line 166
+    .line 212
     iget-object v4, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;->arrowLeftIcon:Landroid/view/View;
 
     const-string v5, "arrowLeftIcon"
@@ -897,7 +911,7 @@
 
     invoke-static {v4, v3}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setInvisible(Landroid/view/View;Z)V
 
-    .line 168
+    .line 214
     iget-object v3, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;->arrowRightButton:Landroid/widget/ImageButton;
 
     invoke-virtual {v3}, Landroid/widget/ImageButton;->isAccessibilityFocused()Z
@@ -912,7 +926,7 @@
 
     if-ne p1, v3, :cond_2
 
-    .line 169
+    .line 215
     sget-object v3, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->INSTANCE:Ljp/co/sony/mc/camera/util/AccessibilityUtil;
 
     iget-object v4, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;
@@ -931,7 +945,7 @@
 
     invoke-virtual {v3, v4, v5}, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->watchFocused(Landroid/view/View;Lkotlin/jvm/functions/Function0;)V
 
-    .line 175
+    .line 221
     :cond_2
     iget p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->itemCount:I
 
@@ -941,7 +955,7 @@
 
     move v1, v2
 
-    .line 176
+    .line 222
     :cond_3
     iget-object p0, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;->arrowRightButton:Landroid/widget/ImageButton;
 
@@ -955,7 +969,7 @@
 
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setInvisible(Landroid/view/View;Z)V
 
-    .line 177
+    .line 223
     iget-object p0, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;->arrowRightIcon:Landroid/view/View;
 
     const-string p1, "arrowRightIcon"
@@ -969,41 +983,41 @@
     return-void
 .end method
 
-.method private static final setArrowVisibility$lambda$30$lambda$29$lambda$25(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;)Lkotlin/Unit;
+.method private static final setArrowVisibility$lambda$32$lambda$31$lambda$27(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;)Lkotlin/Unit;
     .locals 1
 
     const-string v0, "$this_apply"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 159
+    .line 205
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;->arrowRightButton:Landroid/widget/ImageButton;
 
     const/16 v0, 0x8
 
     invoke-virtual {p0, v0}, Landroid/widget/ImageButton;->sendAccessibilityEvent(I)V
 
-    .line 162
+    .line 208
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 .end method
 
-.method private static final setArrowVisibility$lambda$30$lambda$29$lambda$27(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;)Lkotlin/Unit;
+.method private static final setArrowVisibility$lambda$32$lambda$31$lambda$29(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;)Lkotlin/Unit;
     .locals 1
 
     const-string v0, "$this_apply"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 170
+    .line 216
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;->arrowLeftButton:Landroid/widget/ImageButton;
 
     const/16 v0, 0x8
 
     invoke-virtual {p0, v0}, Landroid/widget/ImageButton;->sendAccessibilityEvent(I)V
 
-    .line 173
+    .line 219
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
@@ -1012,12 +1026,12 @@
 .method private final updateItemView(I)V
     .locals 4
 
-    .line 184
+    .line 230
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;->infoArea:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBinding;
 
-    .line 185
+    .line 231
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->itemNames:Ljava/util/List;
 
     check-cast v1, Ljava/util/Collection;
@@ -1042,7 +1056,7 @@
 
     if-ge p1, v1, :cond_0
 
-    .line 186
+    .line 232
     iget-object v1, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBinding;->infoTitle:Landroid/widget/TextView;
 
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->itemNames:Ljava/util/List;
@@ -1055,7 +1069,7 @@
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 187
+    .line 233
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;->infoArea:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBinding;
@@ -1064,7 +1078,7 @@
 
     invoke-virtual {v1, v2, v2}, Landroid/widget/HorizontalScrollView;->scrollTo(II)V
 
-    .line 189
+    .line 235
     :cond_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->infoImages:Ljava/util/List;
 
@@ -1088,7 +1102,7 @@
 
     if-ge p1, v1, :cond_2
 
-    .line 190
+    .line 236
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->infoImages:Ljava/util/List;
 
     invoke-interface {v1, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -1105,7 +1119,7 @@
 
     if-ne v1, v3, :cond_1
 
-    .line 191
+    .line 237
     iget-object v1, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBinding;->infoImage:Landroid/widget/ImageView;
 
     const/4 v3, 0x0
@@ -1114,7 +1128,7 @@
 
     goto :goto_0
 
-    .line 193
+    .line 239
     :cond_1
     iget-object v1, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBinding;->infoImage:Landroid/widget/ImageView;
 
@@ -1132,7 +1146,7 @@
 
     invoke-virtual {v1, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 196
+    .line 242
     :cond_2
     :goto_0
     iget-object v1, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBinding;->infoImage:Landroid/widget/ImageView;
@@ -1155,7 +1169,7 @@
     :goto_1
     invoke-virtual {v1, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 197
+    .line 243
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->infoTexts:Ljava/util/List;
 
     check-cast v1, Ljava/util/Collection;
@@ -1178,7 +1192,7 @@
 
     if-ge p1, v1, :cond_4
 
-    .line 198
+    .line 244
     iget-object v1, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBinding;->infoDescription:Landroid/widget/TextView;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->infoTexts:Ljava/util/List;
@@ -1195,7 +1209,7 @@
 
     invoke-virtual {v1, p0}, Landroid/widget/TextView;->setText(I)V
 
-    .line 199
+    .line 245
     iget-object p0, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBinding;->infoDescription:Landroid/widget/TextView;
 
     invoke-virtual {p0, v2, v2}, Landroid/widget/TextView;->scrollTo(II)V
@@ -1209,42 +1223,42 @@
 .method public final clearListener()V
     .locals 1
 
-    .line 146
+    .line 192
     new-instance v0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper$$ExternalSyntheticLambda12;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper$$ExternalSyntheticLambda12;-><init>()V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->onValueChanged:Lkotlin/jvm/functions/Function1;
 
-    .line 147
+    .line 193
     new-instance v0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper$$ExternalSyntheticLambda13;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper$$ExternalSyntheticLambda13;-><init>()V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->onStopValueChange:Lkotlin/jvm/functions/Function1;
 
-    .line 148
+    .line 194
     new-instance v0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper$$ExternalSyntheticLambda14;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper$$ExternalSyntheticLambda14;-><init>()V
 
-    iput-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->onClosed:Lkotlin/jvm/functions/Function0;
+    iput-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->onClosed:Lkotlin/jvm/functions/Function1;
 
-    .line 149
+    .line 195
     new-instance v0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper$$ExternalSyntheticLambda15;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper$$ExternalSyntheticLambda15;-><init>()V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->onInfoClicked:Lkotlin/jvm/functions/Function0;
 
-    .line 150
+    .line 196
     new-instance v0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper$$ExternalSyntheticLambda16;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper$$ExternalSyntheticLambda16;-><init>()V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->onMainButtonClick:Lkotlin/jvm/functions/Function0;
 
-    .line 151
+    .line 197
     new-instance v0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper$$ExternalSyntheticLambda17;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper$$ExternalSyntheticLambda17;-><init>()V
@@ -1272,19 +1286,20 @@
     return p0
 .end method
 
-.method public final getOnClosed()Lkotlin/jvm/functions/Function0;
+.method public final getOnClosed()Lkotlin/jvm/functions/Function1;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lkotlin/jvm/functions/Function0<",
+            "Lkotlin/jvm/functions/Function1<",
+            "Ljava/lang/Boolean;",
             "Lkotlin/Unit;",
             ">;"
         }
     .end annotation
 
     .line 29
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->onClosed:Lkotlin/jvm/functions/Function0;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->onClosed:Lkotlin/jvm/functions/Function1;
 
     return-object p0
 .end method
@@ -1376,6 +1391,64 @@
     return-object p0
 .end method
 
+.method public final requestArrowAccessibilityFocus()V
+    .locals 2
+
+    .line 180
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;->valueArea:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;->arrowLeftButton:Landroid/widget/ImageButton;
+
+    invoke-virtual {v0}, Landroid/widget/ImageButton;->getVisibility()I
+
+    move-result v0
+
+    const/16 v1, 0x8
+
+    if-nez v0, :cond_0
+
+    .line 181
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;->valueArea:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;->arrowLeftButton:Landroid/widget/ImageButton;
+
+    invoke-virtual {p0, v1}, Landroid/widget/ImageButton;->sendAccessibilityEvent(I)V
+
+    goto :goto_0
+
+    .line 185
+    :cond_0
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;->valueArea:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;->arrowRightButton:Landroid/widget/ImageButton;
+
+    invoke-virtual {p0, v1}, Landroid/widget/ImageButton;->sendAccessibilityEvent(I)V
+
+    :goto_0
+    return-void
+.end method
+
+.method public final requestItemAccessibilityFocus(I)V
+    .locals 0
+
+    .line 176
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;->valueArea:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;->picker:Ljp/co/sony/mc/camera/view/widget/DialPicker;
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->requestItemAccessibilityFocus(I)V
+
+    return-void
+.end method
+
 .method public final setEnabled(Z)V
     .locals 1
 
@@ -1412,12 +1485,14 @@
     return-void
 .end method
 
-.method public final setOnClosed(Lkotlin/jvm/functions/Function0;)V
+.method public final setOnClosed(Lkotlin/jvm/functions/Function1;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlin/jvm/functions/Function0<",
+            "Lkotlin/jvm/functions/Function1<",
+            "-",
+            "Ljava/lang/Boolean;",
             "Lkotlin/Unit;",
             ">;)V"
         }
@@ -1428,7 +1503,7 @@
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 29
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->onClosed:Lkotlin/jvm/functions/Function0;
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->onClosed:Lkotlin/jvm/functions/Function1;
 
     return-void
 .end method
@@ -1545,10 +1620,10 @@
 .method public final setSelectedItem(IZ)V
     .locals 1
 
-    .line 139
+    .line 169
     iput p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->selectedItem:I
 
-    .line 140
+    .line 170
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;->valueArea:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;
@@ -1557,22 +1632,31 @@
 
     invoke-virtual {v0, p1, p2}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->setSelectedItem(IZ)V
 
-    .line 141
+    .line 171
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->setArrowVisibility(I)V
 
-    .line 142
+    .line 172
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->updateItemView(I)V
 
     return-void
 .end method
 
-.method public final show(Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/ArrayList;ILjava/util/List;Ljava/util/List;)V
-    .locals 6
+.method public final show(Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/ArrayList;ILjava/util/List;Ljava/util/List;)V
+    .locals 16
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/List<",
             "Ljava/lang/String;",
+            ">;",
+            "Ljava/util/List<",
+            "Ljava/lang/Integer;",
+            ">;",
+            "Ljava/util/List<",
+            "Ljava/lang/Integer;",
+            ">;",
+            "Ljava/util/List<",
+            "Ljava/lang/Integer;",
             ">;",
             "Ljava/util/List<",
             "Ljava/lang/Integer;",
@@ -1598,237 +1682,332 @@
         }
     .end annotation
 
-    const-string v0, "names"
+    move-object/from16 v0, p0
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object/from16 v1, p1
 
-    const-string/jumbo v0, "values"
+    move-object/from16 v2, p5
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object/from16 v3, p6
 
-    const-string v0, "descriptions"
+    move-object/from16 v4, p8
 
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object/from16 v5, p9
 
-    const-string v0, "icons"
+    move/from16 v9, p10
 
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object/from16 v6, p11
 
-    const-string/jumbo v0, "unavailableItems"
+    const-string v7, "names"
 
-    invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v7}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string v0, "itemSize"
+    const-string/jumbo v7, "values"
 
-    invoke-static {p6, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object/from16 v8, p2
 
-    const-string v0, "infoImage"
+    invoke-static {v8, v7}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {p8, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string/jumbo v7, "valueUnselectedDescriptions"
 
-    const-string v0, "iconTexts"
+    move-object/from16 v10, p3
 
-    invoke-static {p9, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v10, v7}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 118
-    invoke-interface {p1}, Ljava/util/List;->size()I
+    const-string/jumbo v7, "valueSelectedDescriptions"
 
-    move-result v0
+    move-object/from16 v11, p4
 
-    invoke-interface {p2}, Ljava/util/List;->size()I
+    invoke-static {v11, v7}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    move-result v1
+    const-string v7, "infoDescriptions"
 
-    if-ne v0, v1, :cond_5
+    invoke-static {v2, v7}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 119
-    invoke-interface {p1}, Ljava/util/List;->size()I
+    const-string v7, "foregroundThumbnails"
 
-    move-result v0
+    invoke-static {v3, v7}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-interface {p3}, Ljava/util/List;->size()I
+    const-string v7, "backgroundThumbnails"
 
-    move-result v1
+    move-object/from16 v12, p7
 
-    if-ne v0, v1, :cond_4
+    invoke-static {v12, v7}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 120
-    invoke-interface {p1}, Ljava/util/List;->size()I
+    const-string/jumbo v7, "unavailableItems"
 
-    move-result v0
+    invoke-static {v4, v7}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-interface {p4}, Ljava/util/List;->size()I
+    const-string v7, "itemSize"
 
-    move-result v1
+    invoke-static {v5, v7}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-ne v0, v1, :cond_3
+    const-string v7, "infoImage"
 
-    .line 121
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->itemNames:Ljava/util/List;
+    invoke-static {v6, v7}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 122
-    invoke-interface {p4}, Ljava/util/List;->size()I
+    const-string v7, "iconTexts"
 
-    move-result p1
+    move-object/from16 v13, p12
 
-    iput p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->itemCount:I
-
-    .line 123
-    iput-object p5, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->unavailableItems:Ljava/util/List;
-
-    .line 124
-    iput p7, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->selectedItem:I
-
-    .line 125
-    iput-object p8, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->infoImages:Ljava/util/List;
-
-    .line 126
-    iput-object p3, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->infoTexts:Ljava/util/List;
-
-    .line 127
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;->valueArea:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;->picker:Ljp/co/sony/mc/camera/view/widget/DialPicker;
-
-    .line 128
-    invoke-virtual {p1, p6}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->setItemSize(Ljava/util/ArrayList;)V
+    invoke-static {v13, v7}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 129
-    move-object p6, p4
+    invoke-interface/range {p1 .. p1}, Ljava/util/List;->size()I
 
-    check-cast p6, Ljava/lang/Iterable;
+    move-result v7
 
-    .line 206
-    new-instance p8, Ljava/util/ArrayList;
+    invoke-interface/range {p2 .. p2}, Ljava/util/List;->size()I
 
-    invoke-direct {p8}, Ljava/util/ArrayList;-><init>()V
+    move-result v14
 
-    check-cast p8, Ljava/util/Collection;
+    if-ne v7, v14, :cond_7
 
-    .line 209
-    invoke-interface {p6}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    .line 130
+    invoke-interface/range {p1 .. p1}, Ljava/util/List;->size()I
 
-    move-result-object p6
+    move-result v7
 
-    const/4 v0, 0x0
+    invoke-interface/range {p3 .. p3}, Ljava/util/List;->size()I
 
-    :goto_0
-    invoke-interface {p6}, Ljava/util/Iterator;->hasNext()Z
+    move-result v14
+
+    if-ne v7, v14, :cond_6
+
+    .line 133
+    invoke-interface/range {p1 .. p1}, Ljava/util/List;->size()I
+
+    move-result v7
+
+    invoke-interface/range {p4 .. p4}, Ljava/util/List;->size()I
+
+    move-result v14
+
+    if-ne v7, v14, :cond_5
+
+    .line 136
+    invoke-interface/range {p1 .. p1}, Ljava/util/List;->size()I
+
+    move-result v7
+
+    invoke-interface/range {p5 .. p5}, Ljava/util/List;->size()I
+
+    move-result v14
+
+    if-ne v7, v14, :cond_4
+
+    .line 139
+    invoke-interface/range {p1 .. p1}, Ljava/util/List;->size()I
+
+    move-result v7
+
+    invoke-interface/range {p6 .. p6}, Ljava/util/List;->size()I
+
+    move-result v14
+
+    if-ne v7, v14, :cond_3
+
+    .line 142
+    iput-object v1, v0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->itemNames:Ljava/util/List;
+
+    .line 143
+    invoke-interface/range {p6 .. p6}, Ljava/util/List;->size()I
 
     move-result v1
 
-    if-eqz v1, :cond_2
+    iput v1, v0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->itemCount:I
 
-    invoke-interface {p6}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    .line 144
+    iput-object v4, v0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->unavailableItems:Ljava/util/List;
+
+    .line 145
+    iput v9, v0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->selectedItem:I
+
+    .line 146
+    iput-object v6, v0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->infoImages:Ljava/util/List;
+
+    .line 147
+    iput-object v2, v0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->infoTexts:Ljava/util/List;
+
+    .line 148
+    iget-object v1, v0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;
+
+    iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;->valueArea:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;
+
+    iget-object v14, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;->picker:Ljp/co/sony/mc/camera/view/widget/DialPicker;
+
+    .line 149
+    invoke-virtual {v14, v5}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->setItemSize(Ljava/util/ArrayList;)V
+
+    .line 153
+    move-object v1, v3
+
+    check-cast v1, Ljava/lang/Iterable;
+
+    .line 252
+    new-instance v2, Ljava/util/ArrayList;
+
+    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
+
+    check-cast v2, Ljava/util/Collection;
+
+    .line 255
+    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
 
-    add-int/lit8 v2, v0, 0x1
+    const/4 v5, 0x0
 
-    if-gez v0, :cond_0
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v6
+
+    if-eqz v6, :cond_2
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v6
+
+    add-int/lit8 v7, v5, 0x1
+
+    if-gez v5, :cond_0
 
     invoke-static {}, Lkotlin/collections/CollectionsKt;->throwIndexOverflow()V
 
-    .line 210
+    .line 256
     :cond_0
-    move-object v3, v1
+    move-object v15, v6
 
-    check-cast v3, Ljava/lang/Number;
+    check-cast v15, Ljava/lang/Number;
 
-    invoke-virtual {v3}, Ljava/lang/Number;->intValue()I
+    invoke-virtual {v15}, Ljava/lang/Number;->intValue()I
 
-    .line 130
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    .line 154
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v0
+    move-result-object v5
 
-    invoke-interface {p5, v0}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+    invoke-interface {v4, v5}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
-    move-result v0
+    move-result v5
 
-    if-eqz v0, :cond_1
+    if-eqz v5, :cond_1
 
-    .line 210
-    invoke-interface {p8, v1}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    .line 256
+    invoke-interface {v2, v6}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     :cond_1
-    move v0, v2
+    move v5, v7
 
     goto :goto_0
 
-    .line 213
+    .line 259
     :cond_2
-    move-object v2, p8
+    move-object v4, v2
 
-    check-cast v2, Ljava/util/List;
+    check-cast v4, Ljava/util/List;
 
-    move-object v0, p1
+    move-object v1, v14
 
-    move-object v1, p4
+    move-object/from16 v2, p6
 
-    move-object v3, p2
+    move-object/from16 v3, p7
 
-    move-object v4, p3
+    move-object/from16 v5, p2
 
-    move-object v5, p9
+    move-object/from16 v6, p3
 
-    .line 129
-    invoke-virtual/range {v0 .. v5}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->setThumbnailIconItems(Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
+    move-object/from16 v7, p4
 
-    const/4 p2, 0x1
+    move-object/from16 v8, p12
 
-    .line 132
-    invoke-virtual {p1, p7, p2}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->setSelectedItem(IZ)V
+    .line 150
+    invoke-virtual/range {v1 .. v8}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->setThumbnailIconItems(Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
 
-    .line 134
-    invoke-direct {p0, p7}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->setArrowVisibility(I)V
+    const/4 v1, 0x1
 
-    .line 135
-    invoke-direct {p0, p7}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->updateItemView(I)V
+    .line 161
+    invoke-virtual {v14, v9, v1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->setSelectedItem(IZ)V
+
+    .line 163
+    invoke-direct {v0, v9}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->setArrowVisibility(I)V
+
+    .line 164
+    invoke-direct {v0, v9}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->updateItemView(I)V
+
+    .line 165
+    invoke-virtual/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->requestArrowAccessibilityFocus()V
 
     return-void
 
-    .line 120
+    .line 139
     :cond_3
-    new-instance p0, Ljava/lang/IllegalStateException;
+    new-instance v0, Ljava/lang/IllegalStateException;
 
-    const-string p1, "name and icon size must be equal."
+    const-string v1, "name and foreground thumbnail size must be equal."
 
-    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object v1
 
-    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    throw p0
+    throw v0
 
-    .line 119
+    .line 136
     :cond_4
-    new-instance p0, Ljava/lang/IllegalStateException;
+    new-instance v0, Ljava/lang/IllegalStateException;
 
-    const-string p1, "name and description size must be equal."
+    const-string v1, "name and info description size must be equal."
 
-    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object v1
 
-    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    throw p0
+    throw v0
 
-    .line 118
+    .line 133
     :cond_5
-    new-instance p0, Ljava/lang/IllegalStateException;
+    new-instance v0, Ljava/lang/IllegalStateException;
 
-    const-string p1, "name and value size must be equal."
+    const-string v1, "name and value selected description size must be equal."
 
-    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object v1
 
-    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    throw p0
+    throw v0
+
+    .line 130
+    :cond_6
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    const-string v1, "name and value unselected description size must be equal."
+
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    .line 129
+    :cond_7
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    const-string v1, "name and value size must be equal."
+
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
 .end method

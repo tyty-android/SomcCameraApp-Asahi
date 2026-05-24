@@ -162,12 +162,12 @@
 
     if-eqz p1, :cond_1
 
-    const p1, 0x7f1103f4
+    const p1, 0x7f11043f
 
     goto :goto_0
 
     :cond_1
-    const p1, 0x7f1103f3
+    const p1, 0x7f11043e
 
     :goto_0
     invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(I)V
@@ -288,7 +288,7 @@
     .line 39
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/memoryrecall/fragment/MemoryRecallItemAdapter;->layoutInflater:Landroid/view/LayoutInflater;
 
-    const v0, 0x7f0c0095
+    const v0, 0x7f0c008c
 
     const/4 v1, 0x0
 
@@ -299,7 +299,7 @@
     .line 41
     new-instance p3, Ljp/co/sony/mc/camera/view/memoryrecall/fragment/MemoryRecallItemAdapter$ViewHolder;
 
-    const v0, 0x7f0904a9
+    const v0, 0x7f0904aa
 
     .line 42
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -312,7 +312,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    const v2, 0x7f090472
+    const v2, 0x7f090466
 
     .line 43
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -375,7 +375,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f07057d
+    const v1, 0x7f070529
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -443,7 +443,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f1100d7
+    const p2, 0x7f1100eb
 
     invoke-virtual {p1, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

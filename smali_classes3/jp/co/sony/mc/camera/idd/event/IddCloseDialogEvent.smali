@@ -237,706 +237,481 @@
     goto/16 :goto_0
 
     :pswitch_0
-    const/16 p1, 0x395
-
-    goto/16 :goto_0
-
-    :pswitch_1
-    const/16 p1, 0x394
-
-    goto/16 :goto_0
-
-    :pswitch_2
-    const/16 p1, 0x393
-
-    goto/16 :goto_0
-
-    :pswitch_3
-    const/16 p1, 0x392
-
-    goto/16 :goto_0
-
-    :pswitch_4
-    const/16 p1, 0x391
-
-    goto/16 :goto_0
-
-    :pswitch_5
-    const/16 p1, 0x390
-
-    goto/16 :goto_0
-
-    :pswitch_6
-    const/16 p1, 0x38f
-
-    goto/16 :goto_0
-
-    :pswitch_7
-    const/16 p1, 0x38e
-
-    goto/16 :goto_0
-
-    :pswitch_8
-    const/16 p1, 0x38d
-
-    goto/16 :goto_0
-
-    :pswitch_9
     const/16 p1, 0x38c
 
     goto/16 :goto_0
 
-    :pswitch_a
+    :pswitch_1
     const/16 p1, 0x38b
 
     goto/16 :goto_0
 
-    :pswitch_b
+    :pswitch_2
     const/16 p1, 0x38a
 
     goto/16 :goto_0
 
-    :pswitch_c
+    :pswitch_3
     const/16 p1, 0x389
 
     goto/16 :goto_0
 
-    :pswitch_d
+    :pswitch_4
     const/16 p1, 0x388
 
     goto/16 :goto_0
 
-    :pswitch_e
+    :pswitch_5
     const/16 p1, 0x387
 
     goto/16 :goto_0
 
-    :pswitch_f
+    :pswitch_6
     const/16 p1, 0x386
 
     goto/16 :goto_0
 
-    :pswitch_10
+    :pswitch_7
     const/16 p1, 0x385
 
     goto/16 :goto_0
 
-    :pswitch_11
+    :pswitch_8
     const/16 p1, 0x384
 
     goto/16 :goto_0
 
-    :pswitch_12
-    const/16 p1, 0x2f0
-
-    goto/16 :goto_0
-
-    :pswitch_13
-    const/16 p1, 0x2ee
-
-    goto/16 :goto_0
-
-    :pswitch_14
-    const/16 p1, 0x2ed
-
-    goto/16 :goto_0
-
-    :pswitch_15
-    const/16 p1, 0x2e8
-
-    goto/16 :goto_0
-
-    :pswitch_16
-    const/16 p1, 0x2e7
-
-    goto/16 :goto_0
-
-    :pswitch_17
-    const/16 p1, 0x2eb
-
-    goto/16 :goto_0
-
-    :pswitch_18
-    const/16 p1, 0x2e6
-
-    goto/16 :goto_0
-
-    :pswitch_19
-    const/16 p1, 0x2e5
-
-    goto/16 :goto_0
-
-    :pswitch_1a
-    const/16 p1, 0x2e4
-
-    goto/16 :goto_0
-
-    :pswitch_1b
-    const/16 p1, 0x2e3
-
-    goto/16 :goto_0
-
-    :pswitch_1c
-    const/16 p1, 0x2e2
-
-    goto/16 :goto_0
-
-    :pswitch_1d
-    const/16 p1, 0x2e0
-
-    goto/16 :goto_0
-
-    :pswitch_1e
-    const/16 p1, 0x2de
-
-    goto/16 :goto_0
-
-    :pswitch_1f
-    const/16 p1, 0x2dd
-
-    goto/16 :goto_0
-
-    :pswitch_20
-    const/16 p1, 0x2dc
-
-    goto/16 :goto_0
-
-    :pswitch_21
-    const/16 p1, 0x2db
-
-    goto/16 :goto_0
-
-    :pswitch_22
-    const/16 p1, 0x2da
-
-    goto/16 :goto_0
-
-    :pswitch_23
-    const/16 p1, 0x2d9
-
-    goto/16 :goto_0
-
-    :pswitch_24
-    const/16 p1, 0x2d8
-
-    goto/16 :goto_0
-
-    :pswitch_25
-    const/16 p1, 0x2d6
-
-    goto/16 :goto_0
-
-    :pswitch_26
-    const/16 p1, 0x2d5
-
-    goto/16 :goto_0
-
-    :pswitch_27
-    const/16 p1, 0x2d4
-
-    goto/16 :goto_0
-
-    :pswitch_28
-    const/16 p1, 0x2d3
-
-    goto/16 :goto_0
-
-    :pswitch_29
-    const/16 p1, 0x2d2
-
-    goto/16 :goto_0
-
-    :pswitch_2a
-    const/16 p1, 0x2d1
-
-    goto/16 :goto_0
-
-    :pswitch_2b
-    const/16 p1, 0x2d0
-
-    goto/16 :goto_0
-
-    :pswitch_2c
-    const/16 p1, 0x2ce
-
-    goto/16 :goto_0
-
-    :pswitch_2d
-    const/16 p1, 0x2cd
-
-    goto/16 :goto_0
-
-    :pswitch_2e
-    const/16 p1, 0x2cc
-
-    goto/16 :goto_0
-
-    :pswitch_2f
-    const/16 p1, 0x2cb
-
-    goto/16 :goto_0
-
-    :pswitch_30
-    const/16 p1, 0x2ca
-
-    goto/16 :goto_0
-
-    :pswitch_31
-    const/16 p1, 0x2c9
-
-    goto/16 :goto_0
-
-    :pswitch_32
-    const/16 p1, 0x2c8
-
-    goto/16 :goto_0
-
-    :pswitch_33
-    const/16 p1, 0x2c6
-
-    goto/16 :goto_0
-
-    :pswitch_34
-    const/16 p1, 0x2c5
-
-    goto/16 :goto_0
-
-    :pswitch_35
-    const/16 p1, 0x2c4
-
-    goto/16 :goto_0
-
-    :pswitch_36
-    const/16 p1, 0x2c3
-
-    goto/16 :goto_0
-
-    :pswitch_37
-    const/16 p1, 0x2c1
-
-    goto/16 :goto_0
-
-    :pswitch_38
-    const/16 p1, 0x2bf
-
-    goto/16 :goto_0
-
-    :pswitch_39
-    const/16 p1, 0x2be
-
-    goto/16 :goto_0
-
-    :pswitch_3a
-    const/16 p1, 0x2bd
-
-    goto/16 :goto_0
-
-    :pswitch_3b
+    :pswitch_9
     const/16 p1, 0x1ff
 
     goto/16 :goto_0
 
-    :pswitch_3c
+    :pswitch_a
     const/16 p1, 0x1fe
 
     goto/16 :goto_0
 
-    :pswitch_3d
+    :pswitch_b
     const/16 p1, 0x1fd
 
     goto/16 :goto_0
 
-    :pswitch_3e
+    :pswitch_c
     const/16 p1, 0x1fc
 
     goto/16 :goto_0
 
-    :pswitch_3f
+    :pswitch_d
     const/16 p1, 0x1fb
 
     goto/16 :goto_0
 
-    :pswitch_40
+    :pswitch_e
     const/16 p1, 0x1fa
 
     goto/16 :goto_0
 
-    :pswitch_41
+    :pswitch_f
     const/16 p1, 0x1f9
 
     goto/16 :goto_0
 
-    :pswitch_42
+    :pswitch_10
     const/16 p1, 0x1f8
 
     goto/16 :goto_0
 
-    :pswitch_43
+    :pswitch_11
     const/16 p1, 0x1f7
 
     goto/16 :goto_0
 
-    :pswitch_44
+    :pswitch_12
     const/16 p1, 0x1f6
 
     goto/16 :goto_0
 
-    :pswitch_45
+    :pswitch_13
     const/16 p1, 0x1f5
 
     goto/16 :goto_0
 
-    :pswitch_46
+    :pswitch_14
     const/16 p1, 0x1f4
 
     goto/16 :goto_0
 
-    :pswitch_47
+    :pswitch_15
     const/16 p1, 0x12d
 
     goto/16 :goto_0
 
-    :pswitch_48
+    :pswitch_16
     const/16 p1, 0x12c
 
     goto/16 :goto_0
 
-    :pswitch_49
+    :pswitch_17
+    const/16 p1, 0xc0
+
+    goto/16 :goto_0
+
+    :pswitch_18
+    const/16 p1, 0xbf
+
+    goto/16 :goto_0
+
+    :pswitch_19
+    const/16 p1, 0xbe
+
+    goto/16 :goto_0
+
+    :pswitch_1a
+    const/16 p1, 0xbb
+
+    goto/16 :goto_0
+
+    :pswitch_1b
+    const/16 p1, 0xba
+
+    goto/16 :goto_0
+
+    :pswitch_1c
+    const/16 p1, 0xb9
+
+    goto/16 :goto_0
+
+    :pswitch_1d
+    const/16 p1, 0xb8
+
+    goto/16 :goto_0
+
+    :pswitch_1e
     const/16 p1, 0xb3
 
     goto/16 :goto_0
 
-    :pswitch_4a
+    :pswitch_1f
+    const/16 p1, 0xb2
+
+    goto/16 :goto_0
+
+    :pswitch_20
     const/16 p1, 0xb1
 
     goto/16 :goto_0
 
-    :pswitch_4b
+    :pswitch_21
     const/16 p1, 0xb0
 
     goto/16 :goto_0
 
-    :pswitch_4c
+    :pswitch_22
     const/16 p1, 0xaf
 
     goto/16 :goto_0
 
-    :pswitch_4d
+    :pswitch_23
     const/16 p1, 0xae
 
     goto/16 :goto_0
 
-    :pswitch_4e
+    :pswitch_24
     const/16 p1, 0xad
 
     goto/16 :goto_0
 
-    :pswitch_4f
+    :pswitch_25
     const/16 p1, 0xac
 
     goto/16 :goto_0
 
-    :pswitch_50
+    :pswitch_26
     const/16 p1, 0xab
 
     goto/16 :goto_0
 
-    :pswitch_51
+    :pswitch_27
     const/16 p1, 0xa9
 
     goto/16 :goto_0
 
-    :pswitch_52
+    :pswitch_28
+    const/16 p1, 0xa6
+
+    goto/16 :goto_0
+
+    :pswitch_29
     const/16 p1, 0xa5
 
     goto/16 :goto_0
 
-    :pswitch_53
+    :pswitch_2a
     const/16 p1, 0xa1
 
     goto/16 :goto_0
 
-    :pswitch_54
+    :pswitch_2b
     const/16 p1, 0xa0
 
     goto/16 :goto_0
 
-    :pswitch_55
-    const/16 p1, 0x9f
-
-    goto/16 :goto_0
-
-    :pswitch_56
+    :pswitch_2c
     const/16 p1, 0x9e
 
     goto/16 :goto_0
 
-    :pswitch_57
+    :pswitch_2d
     const/16 p1, 0x9d
 
     goto/16 :goto_0
 
-    :pswitch_58
+    :pswitch_2e
+    const/16 p1, 0x9b
+
+    goto/16 :goto_0
+
+    :pswitch_2f
     const/16 p1, 0x99
 
     goto/16 :goto_0
 
-    :pswitch_59
+    :pswitch_30
     const/16 p1, 0x96
 
     goto/16 :goto_0
 
-    :pswitch_5a
-    const/16 p1, 0x8c
-
-    goto/16 :goto_0
-
-    :pswitch_5b
+    :pswitch_31
     const/16 p1, 0x8a
 
     goto/16 :goto_0
 
-    :pswitch_5c
+    :pswitch_32
     const/16 p1, 0x89
 
     goto/16 :goto_0
 
-    :pswitch_5d
+    :pswitch_33
     const/16 p1, 0x86
 
     goto/16 :goto_0
 
-    :pswitch_5e
+    :pswitch_34
     const/16 p1, 0x81
 
     goto/16 :goto_0
 
-    :pswitch_5f
+    :pswitch_35
     const/16 p1, 0x80
 
     goto/16 :goto_0
 
-    :pswitch_60
+    :pswitch_36
     const/16 p1, 0x7f
 
     goto/16 :goto_0
 
-    :pswitch_61
+    :pswitch_37
     const/16 p1, 0x7b
 
     goto/16 :goto_0
 
-    :pswitch_62
+    :pswitch_38
     const/16 p1, 0x7a
 
     goto/16 :goto_0
 
-    :pswitch_63
+    :pswitch_39
     const/16 p1, 0x79
 
     goto/16 :goto_0
 
-    :pswitch_64
-    const/16 p1, 0x77
-
-    goto/16 :goto_0
-
-    :pswitch_65
+    :pswitch_3a
     const/16 p1, 0x76
 
     goto/16 :goto_0
 
-    :pswitch_66
+    :pswitch_3b
     const/16 p1, 0x75
 
     goto/16 :goto_0
 
-    :pswitch_67
+    :pswitch_3c
     const/16 p1, 0x74
 
     goto/16 :goto_0
 
-    :pswitch_68
+    :pswitch_3d
     const/16 p1, 0x71
 
     goto/16 :goto_0
 
-    :pswitch_69
+    :pswitch_3e
     const/16 p1, 0x70
 
     goto/16 :goto_0
 
-    :pswitch_6a
+    :pswitch_3f
     const/16 p1, 0x6f
 
     goto/16 :goto_0
 
-    :pswitch_6b
+    :pswitch_40
     const/16 p1, 0x66
 
     goto/16 :goto_0
 
-    :pswitch_6c
+    :pswitch_41
     const/16 p1, 0x62
 
     goto/16 :goto_0
 
-    :pswitch_6d
-    const/16 p1, 0x5f
-
-    goto/16 :goto_0
-
-    :pswitch_6e
+    :pswitch_42
     const/16 p1, 0x5e
 
     goto/16 :goto_0
 
-    :pswitch_6f
+    :pswitch_43
     const/16 p1, 0x5b
 
     goto/16 :goto_0
 
-    :pswitch_70
-    const/16 p1, 0x5a
-
-    goto/16 :goto_0
-
-    :pswitch_71
+    :pswitch_44
     const/16 p1, 0x57
 
     goto/16 :goto_0
 
-    :pswitch_72
+    :pswitch_45
     const/16 p1, 0x55
 
     goto/16 :goto_0
 
-    :pswitch_73
+    :pswitch_46
     const/16 p1, 0x54
 
     goto :goto_0
 
-    :pswitch_74
+    :pswitch_47
     const/16 p1, 0x4e
 
     goto :goto_0
 
-    :pswitch_75
+    :pswitch_48
     const/16 p1, 0x4d
 
     goto :goto_0
 
-    :pswitch_76
+    :pswitch_49
     const/16 p1, 0x4c
 
     goto :goto_0
 
-    :pswitch_77
+    :pswitch_4a
     const/16 p1, 0x4b
 
     goto :goto_0
 
-    :pswitch_78
+    :pswitch_4b
     const/16 p1, 0x43
 
     goto :goto_0
 
-    :pswitch_79
+    :pswitch_4c
     const/16 p1, 0x42
 
     goto :goto_0
 
-    :pswitch_7a
+    :pswitch_4d
     const/16 p1, 0x41
 
     goto :goto_0
 
-    :pswitch_7b
+    :pswitch_4e
     const/16 p1, 0x40
 
     goto :goto_0
 
-    :pswitch_7c
+    :pswitch_4f
     const/16 p1, 0x38
 
     goto :goto_0
 
-    :pswitch_7d
+    :pswitch_50
     const/16 p1, 0x37
 
     goto :goto_0
 
-    :pswitch_7e
+    :pswitch_51
     const/16 p1, 0x35
 
     goto :goto_0
 
-    :pswitch_7f
+    :pswitch_52
     const/16 p1, 0x34
 
     goto :goto_0
 
-    :pswitch_80
+    :pswitch_53
     const/16 p1, 0x33
 
     goto :goto_0
 
-    :pswitch_81
+    :pswitch_54
     const/16 p1, 0x32
 
     goto :goto_0
 
-    :pswitch_82
+    :pswitch_55
     const/16 p1, 0x31
 
     goto :goto_0
 
-    :pswitch_83
+    :pswitch_56
     const/16 p1, 0x17
 
     goto :goto_0
 
-    :pswitch_84
+    :pswitch_57
     const/16 p1, 0x16
 
     goto :goto_0
 
-    :pswitch_85
+    :pswitch_58
     const/16 p1, 0x13
 
     goto :goto_0
 
-    :pswitch_86
+    :pswitch_59
     const/16 p1, 0x12
 
     goto :goto_0
 
-    :pswitch_87
+    :pswitch_5a
     const/16 p1, 0x11
 
     goto :goto_0
 
-    :pswitch_88
+    :pswitch_5b
     const/16 p1, 0x10
 
     goto :goto_0
 
-    :pswitch_89
+    :pswitch_5c
     const/16 p1, 0xe
 
     goto :goto_0
 
-    :pswitch_8a
+    :pswitch_5d
     const/16 p1, 0xc
 
     goto :goto_0
 
-    :pswitch_8b
+    :pswitch_5e
     const/16 p1, 0xb
 
     goto :goto_0
 
-    :pswitch_8c
+    :pswitch_5f
     const/4 p1, 0x7
 
     :goto_0
@@ -948,54 +723,7 @@
 
     :pswitch_data_0
     .packed-switch 0x1
-        :pswitch_8c
-        :pswitch_8c
-        :pswitch_8b
-        :pswitch_8a
-        :pswitch_89
-        :pswitch_88
-        :pswitch_87
-        :pswitch_86
-        :pswitch_85
-        :pswitch_84
-        :pswitch_83
-        :pswitch_82
-        :pswitch_81
-        :pswitch_80
-        :pswitch_7f
-        :pswitch_7e
-        :pswitch_7d
-        :pswitch_7c
-        :pswitch_7b
-        :pswitch_7b
-        :pswitch_7a
-        :pswitch_79
-        :pswitch_78
-        :pswitch_77
-        :pswitch_76
-        :pswitch_75
-        :pswitch_74
-        :pswitch_73
-        :pswitch_72
-        :pswitch_71
-        :pswitch_70
-        :pswitch_6f
-        :pswitch_6e
-        :pswitch_6d
-        :pswitch_6c
-        :pswitch_6b
-        :pswitch_6a
-        :pswitch_69
-        :pswitch_68
-        :pswitch_67
-        :pswitch_66
-        :pswitch_65
-        :pswitch_64
-        :pswitch_63
-        :pswitch_62
-        :pswitch_62
-        :pswitch_61
-        :pswitch_60
+        :pswitch_5f
         :pswitch_5f
         :pswitch_5e
         :pswitch_5d
@@ -1010,9 +738,11 @@
         :pswitch_54
         :pswitch_53
         :pswitch_52
+        :pswitch_52
         :pswitch_51
         :pswitch_50
         :pswitch_4f
+        :pswitch_4e
         :pswitch_4e
         :pswitch_4d
         :pswitch_4c
@@ -1041,7 +771,6 @@
         :pswitch_35
         :pswitch_34
         :pswitch_33
-        :pswitch_33
         :pswitch_32
         :pswitch_31
         :pswitch_30
@@ -1065,7 +794,6 @@
         :pswitch_1e
         :pswitch_1d
         :pswitch_1c
-        :pswitch_1b
         :pswitch_1b
         :pswitch_1a
         :pswitch_19
@@ -1263,28 +991,6 @@
     return v0
 .end method
 
-.method public getCameraAppSetting(Ljp/co/sony/mc/camera/idd/value/IddSetting;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getCameraAppSetting(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljp/co/sony/mc/camera/idd/value/IddSetting;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getCameraMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
-    .locals 0
-
-    .line 12
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getCameraMode(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
 .method public final getDialogNum()I
     .locals 0
 
@@ -1292,28 +998,6 @@
     iget p0, p0, Ljp/co/sony/mc/camera/idd/event/IddCloseDialogEvent;->dialogNum:I
 
     return p0
-.end method
-
-.method public getEventData(Ljava/lang/String;)Ljava/lang/String;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getEventData(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getLaunchWithCameraKey(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LaunchWithCameraKey;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getLaunchWithCameraKey(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LaunchWithCameraKey;
-
-    move-result-object p0
-
-    return-object p0
 .end method
 
 .method public getLaunchedBy()Ljp/co/sony/mc/camera/idd/value/IddLauncher;
@@ -1334,157 +1018,25 @@
     return-object p0
 .end method
 
-.method public getProBrightness(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljava/lang/String;)I
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProBrightness(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljava/lang/String;)I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public getProColor(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljava/lang/String;)I
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProColor(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljava/lang/String;)I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public getProbeAspectRatio(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$AspectRatio;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeAspectRatio(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$AspectRatio;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeAudioSignals(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$AudioSignals;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeAudioSignals(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$AudioSignals;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeColorToneProfile(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeColorToneProfile(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeCommonAutoOff(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$AutoOff;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeCommonAutoOff(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$AutoOff;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeCommonOnOff(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeCommonOnOff(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeCommonOnOff(Z)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeCommonOnOff(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Z)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeConnectMode(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ConnectTo;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeConnectMode(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ConnectTo;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeDestinationToSave(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Storage;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeDestinationToSave(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Storage;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeDisp(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Disp;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeDisp(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Disp;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeDriveMode(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DriveMode;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeDriveMode(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DriveMode;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
 .method public getProbeDump()Ljava/lang/String;
     .locals 5
 
-    .line 185
+    .line 138
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddCloseDialogEvent;->getType()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 186
+    .line 139
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddCloseDialogEvent;->getLaunchedBy()Ljp/co/sony/mc/camera/idd/value/IddLauncher;
 
     move-result-object v1
 
-    .line 187
+    .line 140
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddCloseDialogEvent;->getMode()Ljp/co/sony/mc/camera/idd/value/IddMode;
 
     move-result-object v2
 
-    .line 188
+    .line 141
     iget p0, p0, Ljp/co/sony/mc/camera/idd/event/IddCloseDialogEvent;->dialogNum:I
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -1540,17 +1092,6 @@
     return-object p0
 .end method
 
-.method public getProbeEv(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Ev;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeEv(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Ev;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
 .method public bridge synthetic getProbeEvent()Lcom/google/protobuf/GeneratedMessageLite;
     .locals 0
 
@@ -1567,7 +1108,7 @@
 .method public getProbeEvent()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppDialogClosed;
     .locals 2
 
-    .line 173
+    .line 126
     :try_start_0
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppDialogClosed;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppDialogClosed$Builder;
 
@@ -1577,26 +1118,26 @@
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 174
+    .line 127
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddCloseDialogEvent;->getProbeLaunchBy()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$LaunchBy;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppDialogClosed$Builder;->setLaunchedBy(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$LaunchBy;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppDialogClosed$Builder;
 
-    .line 175
+    .line 128
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddCloseDialogEvent;->getCameraMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppDialogClosed$Builder;->setMode(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppDialogClosed$Builder;
 
-    .line 176
+    .line 129
     iget p0, p0, Ljp/co/sony/mc/camera/idd/event/IddCloseDialogEvent;->dialogNum:I
 
     invoke-virtual {v0, p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppDialogClosed$Builder;->setDlgNumber(I)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppDialogClosed$Builder;
 
-    .line 177
+    .line 130
     invoke-virtual {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppDialogClosed$Builder;->build()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppDialogClosed;
 
     move-result-object p0
@@ -1605,7 +1146,7 @@
 
     goto :goto_0
 
-    .line 179
+    .line 132
     :catch_0
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppDialogClosed;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppDialogClosed$Builder;
 
@@ -1616,380 +1157,6 @@
     move-result-object p0
 
     :goto_0
-    return-object p0
-.end method
-
-.method public getProbeFaceDetectionEyeAf(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FaceEyeAf;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeFaceDetectionEyeAf(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FaceEyeAf;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeFileFormat(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FileFormat;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeFileFormat(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FileFormat;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeFlash(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Flash;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeFlash(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Flash;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeFocusArea(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusArea;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeFocusArea(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusArea;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeFocusFrameColor(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusAreaColor;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeFocusFrameColor(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusAreaColor;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeFocusMode(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusMode;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeFocusMode(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusMode;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeFps(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Fps;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeFps(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Fps;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeFramingAssistMethod(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FramingAssistMethod;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeFramingAssistMethod(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FramingAssistMethod;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeHdrDro(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HdrDro;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeHdrDro(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HdrDro;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeHdrFormat(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HdrSdr;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeHdrFormat(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HdrSdr;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeHdrQuality(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DynamicRange;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeHdrQuality(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DynamicRange;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeIso(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeIso(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeLaunchBy()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$LaunchBy;
-    .locals 0
-
-    .line 12
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeLaunchBy(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$LaunchBy;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeLens(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Lens;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeLens(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Lens;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeLensCorrection(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LensCorrection;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeLensCorrection(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LensCorrection;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeLevelMeter(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LevelMeter;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeLevelMeter(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LevelMeter;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeManualFocus(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ManualFocus;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeManualFocus(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ManualFocus;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeMetering(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$MeteringMode;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeMetering(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$MeteringMode;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeMic(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Mic;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeMic(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Mic;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeNetworkUsage(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$NetworkUsage;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeNetworkUsage(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$NetworkUsage;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbePeakingColor(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$PeakingColor;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbePeakingColor(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$PeakingColor;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeResolution(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Resolution;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeResolution(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Resolution;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeSelfTimer(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$SelfTimer;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeSelfTimer(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$SelfTimer;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeShutterSpeed(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ShutterSpeed;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeShutterSpeed(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ShutterSpeed;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeStreamVideoQuality(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$StreamVideoQuality;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeStreamVideoQuality(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$StreamVideoQuality;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeStreamingMute(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$StreamMute;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeStreamingMute(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$StreamMute;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeSuperResolutionZoom(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DigitalZoom;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeSuperResolutionZoom(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DigitalZoom;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeTalkBack()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
-    .locals 0
-
-    .line 12
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeTalkBack(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeTouchToAdjust(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$TouchToAdjust;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeTouchToAdjust(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$TouchToAdjust;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeVideoStabilizer(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Stabilization;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeVideoStabilizer(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Stabilization;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeVolumeDistortionCorrection(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$VolumeDistortionCorrection;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeVolumeDistortionCorrection(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$VolumeDistortionCorrection;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeVolumeKey(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$VolumeKeyAs;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeVolumeKey(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$VolumeKeyAs;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeWhiteBalance(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeWhiteBalance(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public getProbeWindFilter(Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->getProbeWindFilter(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
-
-    move-result-object p0
-
     return-object p0
 .end method
 
@@ -2042,213 +1209,6 @@
     add-int/2addr v0, p0
 
     return v0
-.end method
-
-.method public isAutoFraming()Z
-    .locals 0
-
-    .line 12
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isAutoFraming(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isBokeh()Z
-    .locals 0
-
-    .line 12
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isBokeh(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isGimbal()Z
-    .locals 0
-
-    .line 12
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isGimbal(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isManualControlSupported()Z
-    .locals 0
-
-    .line 12
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isManualControlSupported(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isOneShot()Z
-    .locals 0
-
-    .line 12
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isOneShot(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isPhotoBasic()Z
-    .locals 0
-
-    .line 12
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isPhotoBasic(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isProMode()Z
-    .locals 0
-
-    .line 12
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isProMode(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isProPhoto()Z
-    .locals 0
-
-    .line 12
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isProPhoto(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isProVideo()Z
-    .locals 0
-
-    .line 12
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isProVideo(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isSendComputationalPhoto()Z
-    .locals 0
-
-    .line 12
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isSendComputationalPhoto(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isSendFaceEyeAf()Z
-    .locals 0
-
-    .line 12
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isSendFaceEyeAf(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isSendIsoValue()Z
-    .locals 0
-
-    .line 12
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isSendIsoValue(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isSendManualFocus(Ljava/lang/String;Ljava/lang/String;)Z
-    .locals 0
-
-    .line 12
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isSendManualFocus(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;Ljava/lang/String;Ljava/lang/String;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isSendMic()Z
-    .locals 0
-
-    .line 12
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isSendMic(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isSendTouchTracking()Z
-    .locals 0
-
-    .line 12
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isSendTouchTracking(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isSendUltraHdr()Z
-    .locals 0
-
-    .line 12
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isSendUltraHdr(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isStreaming()Z
-    .locals 0
-
-    .line 12
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isStreaming(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public isVideoBasic()Z
-    .locals 0
-
-    .line 12
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->isVideoBasic(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public send()V
-    .locals 0
-
-    .line 12
-    invoke-static {p0}, Ljp/co/sony/mc/camera/idd/event/IddBaseEvent$DefaultImpls;->send(Ljp/co/sony/mc/camera/idd/event/IddBaseEvent;)V
-
-    return-void
 .end method
 
 .method public final setDialogNum(I)V

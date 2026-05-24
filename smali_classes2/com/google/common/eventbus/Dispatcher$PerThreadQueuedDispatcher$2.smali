@@ -22,11 +22,25 @@
 .end annotation
 
 
+# instance fields
+.field final synthetic this$0:Lcom/google/common/eventbus/Dispatcher$PerThreadQueuedDispatcher;
+
+
 # direct methods
 .method constructor <init>(Lcom/google/common/eventbus/Dispatcher$PerThreadQueuedDispatcher;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 88
+    .line 90
+    iput-object p1, p0, Lcom/google/common/eventbus/Dispatcher$PerThreadQueuedDispatcher$2;->this$0:Lcom/google/common/eventbus/Dispatcher$PerThreadQueuedDispatcher;
+
     invoke-direct {p0}, Ljava/lang/ThreadLocal;-><init>()V
 
     return-void
@@ -39,7 +53,7 @@
 
     const/4 p0, 0x0
 
-    .line 91
+    .line 93
     invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0
@@ -50,7 +64,7 @@
 .method protected bridge synthetic initialValue()Ljava/lang/Object;
     .locals 0
 
-    .line 88
+    .line 90
     invoke-virtual {p0}, Lcom/google/common/eventbus/Dispatcher$PerThreadQueuedDispatcher$2;->initialValue()Ljava/lang/Boolean;
 
     move-result-object p0

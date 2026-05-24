@@ -17,7 +17,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nZoomScrollerPresenter.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ZoomScrollerPresenter.kt\njp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$UpdateContentDescriptionTask\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,1102:1\n1863#2,2:1103\n*S KotlinDebug\n*F\n+ 1 ZoomScrollerPresenter.kt\njp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$UpdateContentDescriptionTask\n*L\n762#1:1103,2\n*E\n"
+    value = "SMAP\nZoomScrollerPresenter.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ZoomScrollerPresenter.kt\njp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$UpdateContentDescriptionTask\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,1309:1\n1863#2,2:1310\n*S KotlinDebug\n*F\n+ 1 ZoomScrollerPresenter.kt\njp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$UpdateContentDescriptionTask\n*L\n969#1:1310,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -72,12 +72,12 @@
         }
     .end annotation
 
-    .line 746
+    .line 953
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$UpdateContentDescriptionTask;->this$0:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 747
+    .line 954
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
 
     move-result-object p1
@@ -92,10 +92,10 @@
 .method public run()V
     .locals 6
 
-    .line 754
+    .line 961
     sget-object v0, Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper;->Companion:Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper$Companion;
 
-    .line 755
+    .line 962
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$UpdateContentDescriptionTask;->this$0:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->access$getBinding$p(Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;)Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;
@@ -114,7 +114,7 @@
 
     invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 756
+    .line 963
     sget-object v2, Lkotlin/jvm/internal/StringCompanionObject;->INSTANCE:Lkotlin/jvm/internal/StringCompanionObject;
 
     sget-object v2, Ljava/util/Locale;->US:Ljava/util/Locale;
@@ -163,17 +163,17 @@
 
     const/4 v3, 0x0
 
-    .line 754
+    .line 961
     invoke-virtual {v0, v1, v2, v3}, Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper$Companion;->getLabelContentDescription(Landroid/content/Context;Ljava/lang/String;Z)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 762
+    .line 969
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$UpdateContentDescriptionTask;->targetViews:Ljava/util/List;
 
     check-cast v1, Ljava/lang/Iterable;
 
-    .line 1103
+    .line 1310
     invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -192,7 +192,7 @@
 
     check-cast v2, Landroid/view/View;
 
-    .line 763
+    .line 970
     invoke-virtual {v2}, Landroid/view/View;->getStateDescription()Ljava/lang/CharSequence;
 
     move-result-object v5
@@ -203,7 +203,7 @@
 
     if-nez v5, :cond_0
 
-    .line 764
+    .line 971
     move-object v4, v0
 
     check-cast v4, Ljava/lang/CharSequence;
@@ -217,7 +217,7 @@
     :cond_1
     if-nez v4, :cond_2
 
-    .line 770
+    .line 977
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$UpdateContentDescriptionTask;->this$0:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->access$getMainHandler$p(Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;)Landroid/os/Handler;
@@ -250,7 +250,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 750
+    .line 957
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$UpdateContentDescriptionTask;->targetViews:Ljava/util/List;
 
     return-void

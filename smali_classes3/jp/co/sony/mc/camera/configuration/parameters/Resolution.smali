@@ -89,11 +89,11 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f110186
+    const v3, 0x7f1101c3
 
-    const v4, 0x7f110118
+    const v4, 0x7f110154
 
-    const v5, 0x7f1102a5
+    const v5, 0x7f1102ee
 
     move-object v0, v7
 
@@ -116,11 +116,11 @@
 
     const/4 v11, 0x1
 
-    const v12, 0x7f110186
+    const v12, 0x7f1101c3
 
-    const v13, 0x7f110117
+    const v13, 0x7f110153
 
-    const v14, 0x7f1102a4
+    const v14, 0x7f1102ed
 
     move-object v9, v0
 
@@ -141,11 +141,11 @@
 
     const/16 v18, 0x2
 
-    const v19, 0x7f110186
+    const v19, 0x7f1101c3
 
-    const v20, 0x7f110115
+    const v20, 0x7f110151
 
-    const v21, 0x7f1102a3
+    const v21, 0x7f1102ec
 
     move-object/from16 v16, v0
 
@@ -168,9 +168,9 @@
 
     const/4 v11, 0x3
 
-    const v13, 0x7f110110
+    const v13, 0x7f11014c
 
-    const v14, 0x7f1102a6
+    const v14, 0x7f1102ef
 
     move-object v9, v0
 
@@ -189,9 +189,9 @@
 
     const/16 v18, 0x4
 
-    const v20, 0x7f110113
+    const v20, 0x7f11014f
 
-    const v21, 0x7f1102a6
+    const v21, 0x7f1102ef
 
     move-object/from16 v16, v0
 
@@ -216,9 +216,9 @@
 
     const/4 v11, 0x5
 
-    const v13, 0x7f110186
+    const v13, 0x7f1101c3
 
-    const v14, 0x7f110186
+    const v14, 0x7f1101c3
 
     move-object v9, v0
 
@@ -238,6 +238,25 @@
 
 .method private constructor <init>(Ljava/lang/String;IIIILandroid/graphics/Rect;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId",
+            "sizeId",
+            "pictureRect"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(III",
@@ -266,6 +285,17 @@
 
 .method private static findResolutionWithSameAspect([Ljp/co/sony/mc/camera/configuration/parameters/Resolution;Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;)Ljava/util/List;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "options",
+            "ratio"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
@@ -332,6 +362,16 @@
 
 .method public static getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/Resolution;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId"
+        }
+    .end annotation
 
     .line 190
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getCameraCapability(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;
@@ -435,6 +475,14 @@
 
 .method private static getExpectedOptions([Ljava/lang/String;)[Ljp/co/sony/mc/camera/configuration/parameters/Resolution;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "customizedOptions"
+        }
+    .end annotation
 
     .line 178
     new-instance v0, Ljava/util/ArrayList;
@@ -493,6 +541,16 @@
 
 .method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/Resolution;
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId"
+        }
+    .end annotation
 
     .line 137
     new-instance v0, Ljava/util/ArrayList;
@@ -680,6 +738,18 @@
 
 .method public static getValueFromAspectRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;)Ljp/co/sony/mc/camera/configuration/parameters/Resolution;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId",
+            "ratio"
+        }
+    .end annotation
 
     .line 258
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/Resolution;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/Resolution;
@@ -755,6 +825,16 @@
 
 .method private static isExistSameAspectPreviewSize(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Landroid/graphics/Rect;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "cameraId",
+            "pictureRect"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -775,6 +855,18 @@
 
 .method public static isSupportedValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/Resolution;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId",
+            "checkTarget"
+        }
+    .end annotation
 
     .line 241
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/Resolution;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/Resolution;
@@ -809,6 +901,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/Resolution;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 30
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/Resolution;

@@ -29,14 +29,10 @@
 
 .field public static final synthetic $EnumSwitchMapping$1:[I
 
-.field public static final synthetic $EnumSwitchMapping$2:[I
-
-.field public static final synthetic $EnumSwitchMapping$3:[I
-
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 9
+    .locals 6
 
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;->values()[Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;
 
@@ -125,236 +121,84 @@
 
     :catch_4
     :try_start_5
-    sget-object v5, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->OPEN_STARTED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->OPEN_STARTED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
-    invoke-virtual {v5}, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->ordinal()I
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->ordinal()I
 
-    move-result v5
+    move-result v1
 
-    aput v2, v0, v5
+    aput v2, v0, v1
     :try_end_5
     .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
 
     :catch_5
     :try_start_6
-    sget-object v5, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->PREVIEW_STARTED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->PREVIEW_STARTED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
-    invoke-virtual {v5}, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->ordinal()I
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->ordinal()I
 
-    move-result v5
+    move-result v1
 
-    aput v3, v0, v5
+    aput v3, v0, v1
     :try_end_6
     .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
 
     :catch_6
     :try_start_7
-    sget-object v5, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->CAPTURE_STARTED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->CAPTURE_STARTED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
-    invoke-virtual {v5}, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->ordinal()I
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->ordinal()I
 
-    move-result v5
+    move-result v1
 
-    aput v4, v0, v5
+    aput v4, v0, v1
     :try_end_7
     .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
 
     :catch_7
-    const/4 v5, 0x5
-
     :try_start_8
-    sget-object v6, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->BURST_STARTED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->BURST_STARTED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
-    invoke-virtual {v6}, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->ordinal()I
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->ordinal()I
 
-    move-result v6
+    move-result v1
 
-    aput v5, v0, v6
+    const/4 v2, 0x5
+
+    aput v2, v0, v1
     :try_end_8
     .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
 
     :catch_8
-    const/4 v6, 0x6
-
     :try_start_9
-    sget-object v7, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->RECORDING_STARTED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->RECORDING_STARTED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
-    invoke-virtual {v7}, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->ordinal()I
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->ordinal()I
 
-    move-result v7
+    move-result v1
 
-    aput v6, v0, v7
+    const/4 v2, 0x6
+
+    aput v2, v0, v1
     :try_end_9
     .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
 
     :catch_9
     :try_start_a
-    sget-object v7, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->SELFTIMER_STARTED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
+    sget-object v1, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->SELFTIMER_STARTED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
-    invoke-virtual {v7}, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->ordinal()I
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->ordinal()I
 
-    move-result v7
+    move-result v1
 
-    const/4 v8, 0x7
+    const/4 v2, 0x7
 
-    aput v8, v0, v7
+    aput v2, v0, v1
     :try_end_a
     .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
 
     :catch_a
     sput-object v0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$WhenMappings;->$EnumSwitchMapping$1:[I
-
-    invoke-static {}, Ljp/co/sony/mc/camera/rtmp/NetworkManager$ConnectLevel;->values()[Ljp/co/sony/mc/camera/rtmp/NetworkManager$ConnectLevel;
-
-    move-result-object v0
-
-    array-length v0, v0
-
-    new-array v0, v0, [I
-
-    :try_start_b
-    sget-object v7, Ljp/co/sony/mc/camera/rtmp/NetworkManager$ConnectLevel;->LEVEL_0:Ljp/co/sony/mc/camera/rtmp/NetworkManager$ConnectLevel;
-
-    invoke-virtual {v7}, Ljp/co/sony/mc/camera/rtmp/NetworkManager$ConnectLevel;->ordinal()I
-
-    move-result v7
-
-    aput v1, v0, v7
-    :try_end_b
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_b .. :try_end_b} :catch_b
-
-    :catch_b
-    :try_start_c
-    sget-object v7, Ljp/co/sony/mc/camera/rtmp/NetworkManager$ConnectLevel;->LEVEL_1:Ljp/co/sony/mc/camera/rtmp/NetworkManager$ConnectLevel;
-
-    invoke-virtual {v7}, Ljp/co/sony/mc/camera/rtmp/NetworkManager$ConnectLevel;->ordinal()I
-
-    move-result v7
-
-    aput v2, v0, v7
-    :try_end_c
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_c .. :try_end_c} :catch_c
-
-    :catch_c
-    :try_start_d
-    sget-object v7, Ljp/co/sony/mc/camera/rtmp/NetworkManager$ConnectLevel;->LEVEL_2:Ljp/co/sony/mc/camera/rtmp/NetworkManager$ConnectLevel;
-
-    invoke-virtual {v7}, Ljp/co/sony/mc/camera/rtmp/NetworkManager$ConnectLevel;->ordinal()I
-
-    move-result v7
-
-    aput v3, v0, v7
-    :try_end_d
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_d .. :try_end_d} :catch_d
-
-    :catch_d
-    :try_start_e
-    sget-object v7, Ljp/co/sony/mc/camera/rtmp/NetworkManager$ConnectLevel;->LEVEL_3:Ljp/co/sony/mc/camera/rtmp/NetworkManager$ConnectLevel;
-
-    invoke-virtual {v7}, Ljp/co/sony/mc/camera/rtmp/NetworkManager$ConnectLevel;->ordinal()I
-
-    move-result v7
-
-    aput v4, v0, v7
-    :try_end_e
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_e .. :try_end_e} :catch_e
-
-    :catch_e
-    :try_start_f
-    sget-object v7, Ljp/co/sony/mc/camera/rtmp/NetworkManager$ConnectLevel;->LEVEL_4:Ljp/co/sony/mc/camera/rtmp/NetworkManager$ConnectLevel;
-
-    invoke-virtual {v7}, Ljp/co/sony/mc/camera/rtmp/NetworkManager$ConnectLevel;->ordinal()I
-
-    move-result v7
-
-    aput v5, v0, v7
-    :try_end_f
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_f .. :try_end_f} :catch_f
-
-    :catch_f
-    sput-object v0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$WhenMappings;->$EnumSwitchMapping$2:[I
-
-    invoke-static {}, Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;->values()[Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;
-
-    move-result-object v0
-
-    array-length v0, v0
-
-    new-array v0, v0, [I
-
-    :try_start_10
-    sget-object v7, Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;->NO_NETWORK:Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;
-
-    invoke-virtual {v7}, Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;->ordinal()I
-
-    move-result v7
-
-    aput v1, v0, v7
-    :try_end_10
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_10 .. :try_end_10} :catch_10
-
-    :catch_10
-    :try_start_11
-    sget-object v1, Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;->VPN:Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;->ordinal()I
-
-    move-result v1
-
-    aput v2, v0, v1
-    :try_end_11
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_11 .. :try_end_11} :catch_11
-
-    :catch_11
-    :try_start_12
-    sget-object v1, Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;->ERROR:Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;->ordinal()I
-
-    move-result v1
-
-    aput v3, v0, v1
-    :try_end_12
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_12 .. :try_end_12} :catch_12
-
-    :catch_12
-    :try_start_13
-    sget-object v1, Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;->WIFI:Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;->ordinal()I
-
-    move-result v1
-
-    aput v4, v0, v1
-    :try_end_13
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_13 .. :try_end_13} :catch_13
-
-    :catch_13
-    :try_start_14
-    sget-object v1, Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;->CELLULAR:Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;->ordinal()I
-
-    move-result v1
-
-    aput v5, v0, v1
-    :try_end_14
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_14 .. :try_end_14} :catch_14
-
-    :catch_14
-    :try_start_15
-    sget-object v1, Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;->ETHERNET:Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;->ordinal()I
-
-    move-result v1
-
-    aput v6, v0, v1
-    :try_end_15
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_15 .. :try_end_15} :catch_15
-
-    :catch_15
-    sput-object v0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$WhenMappings;->$EnumSwitchMapping$3:[I
 
     return-void
 .end method

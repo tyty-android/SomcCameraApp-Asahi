@@ -80,16 +80,16 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 78
+    .line 79
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 79
+    .line 80
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$HandDetectionResult;->position:Landroid/graphics/Rect;
 
-    .line 80
+    .line 81
     iput p2, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$HandDetectionResult;->detectionWidth:I
 
-    .line 81
+    .line 82
     iput p3, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$HandDetectionResult;->detectionHeight:I
 
     return-void
@@ -224,7 +224,7 @@
 .method public final getDetectionHeight()I
     .locals 0
 
-    .line 81
+    .line 82
     iget p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$HandDetectionResult;->detectionHeight:I
 
     return p0
@@ -233,7 +233,7 @@
 .method public final getDetectionWidth()I
     .locals 0
 
-    .line 80
+    .line 81
     iget p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$HandDetectionResult;->detectionWidth:I
 
     return p0
@@ -242,7 +242,7 @@
 .method public final getPosition()Landroid/graphics/Rect;
     .locals 0
 
-    .line 79
+    .line 80
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$HandDetectionResult;->position:Landroid/graphics/Rect;
 
     return-object p0

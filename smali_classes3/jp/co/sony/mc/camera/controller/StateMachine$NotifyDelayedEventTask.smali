@@ -28,16 +28,28 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "event",
+            "args"
+        }
+    .end annotation
 
-    .line 2225
+    .line 2254
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$NotifyDelayedEventTask;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2226
+    .line 2255
     iput-object p2, p0, Ljp/co/sony/mc/camera/controller/StateMachine$NotifyDelayedEventTask;->mEvent:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 2227
+    .line 2256
     iput-object p3, p0, Ljp/co/sony/mc/camera/controller/StateMachine$NotifyDelayedEventTask;->mArgs:[Ljava/lang/Object;
 
     return-void
@@ -56,7 +68,7 @@
 .method public run()V
     .locals 3
 
-    .line 2232
+    .line 2261
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
@@ -73,7 +85,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 2233
+    .line 2262
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$NotifyDelayedEventTask;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 

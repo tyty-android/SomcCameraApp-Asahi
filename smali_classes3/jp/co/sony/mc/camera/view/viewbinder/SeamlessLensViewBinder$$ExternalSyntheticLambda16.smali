@@ -30,7 +30,7 @@
 
     check-cast p2, Ljava/lang/String;
 
-    invoke-static {p0, p2}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->$r8$lambda$M7KlQBRDfUljyYDVZjwZndouuT8(ZLjava/lang/String;)Lkotlin/Pair;
+    invoke-static {p0, p2}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->$r8$lambda$QL_740MuzVgHhYdDWPXMLJscOUs(ZLjava/lang/String;)Lkotlin/Pair;
 
     move-result-object p0
 

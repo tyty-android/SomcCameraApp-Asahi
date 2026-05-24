@@ -5,4 +5,16 @@
 
 # virtual methods
 .method public abstract onActivityResult(IILandroid/content/Intent;)Z
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "requestCode",
+            "resultCode",
+            "data"
+        }
+    .end annotation
 .end method

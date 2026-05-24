@@ -23,14 +23,24 @@
 # direct methods
 .method protected constructor <init>(Landroid/graphics/Rect;Z)V
     .locals 0
-
-    .line 560
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 561
-    iput-object p1, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ObjectTrackingResult;->mRectOfTrackedObject:Landroid/graphics/Rect;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "rect",
+            "isLost"
+        }
+    .end annotation
 
     .line 562
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 563
+    iput-object p1, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ObjectTrackingResult;->mRectOfTrackedObject:Landroid/graphics/Rect;
+
+    .line 564
     iput-boolean p2, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ObjectTrackingResult;->mIsLost:Z
 
     return-void

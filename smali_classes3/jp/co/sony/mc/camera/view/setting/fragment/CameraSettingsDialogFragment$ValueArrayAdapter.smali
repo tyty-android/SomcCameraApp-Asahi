@@ -25,6 +25,17 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Ljava/util/List;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -35,9 +46,9 @@
         }
     .end annotation
 
-    const v0, 0x7f0c00bc
+    const v0, 0x7f0c00b3
 
-    const v1, 0x7f09010a
+    const v1, 0x7f090107
 
     .line 178
     invoke-direct {p0, p1, v0, v1, p2}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;IILjava/util/List;)V
@@ -49,6 +60,18 @@
 # virtual methods
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "position",
+            "convertView",
+            "parent"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -63,7 +86,7 @@
 
     move-result-object p2
 
-    const v1, 0x7f0c00bc
+    const v1, 0x7f0c00b3
 
     .line 186
     invoke-virtual {p2, v1, p3, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
@@ -94,7 +117,7 @@
     return-object p2
 
     :cond_1
-    const v1, 0x7f09010a
+    const v1, 0x7f090107
 
     .line 197
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -129,7 +152,7 @@
     :goto_0
     invoke-virtual {v1, v2}, Landroid/widget/CheckedTextView;->setEnabled(Z)V
 
-    const v1, 0x7f090161
+    const v1, 0x7f090167
 
     .line 202
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -180,7 +203,7 @@
 
     move-result-object p0
 
-    const v0, 0x7f11007f
+    const v0, 0x7f110093
 
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -220,6 +243,14 @@
 
 .method public isEnabled(I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
     .line 228
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment$ValueArrayAdapter;->getItem(I)Ljava/lang/Object;

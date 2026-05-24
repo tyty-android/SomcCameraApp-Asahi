@@ -21,6 +21,21 @@
 # direct methods
 .method public constructor <init>(Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "surfaces",
+            "uris",
+            "profiles",
+            "builders"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -43,10 +58,10 @@
         }
     .end annotation
 
-    .line 184
+    .line 173
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 185
+    .line 174
     new-instance v6, Ljp/co/sony/mc/camera/recorder/RecorderParameters;
 
     const/4 v5, 0x0
@@ -73,7 +88,7 @@
 .method public build()Ljp/co/sony/mc/camera/recorder/RecorderParameters;
     .locals 0
 
-    .line 234
+    .line 218
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/RecorderParameters$Builder;->mParameters:Ljp/co/sony/mc/camera/recorder/RecorderParameters;
 
     return-object p0
@@ -81,8 +96,16 @@
 
 .method public setAudioDeviceInfo(Landroid/media/AudioDeviceInfo;)Ljp/co/sony/mc/camera/recorder/RecorderParameters$Builder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "audioDeviceInfo"
+        }
+    .end annotation
 
-    .line 224
+    .line 213
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/RecorderParameters$Builder;->mParameters:Ljp/co/sony/mc/camera/recorder/RecorderParameters;
 
     invoke-static {v0, p1}, Ljp/co/sony/mc/camera/recorder/RecorderParameters;->-$$Nest$fputmAudioDeviceInfo(Ljp/co/sony/mc/camera/recorder/RecorderParameters;Landroid/media/AudioDeviceInfo;)V
@@ -92,8 +115,16 @@
 
 .method public setDataSpace(Ljp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;)Ljp/co/sony/mc/camera/recorder/RecorderParameters$Builder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dataSpace"
+        }
+    .end annotation
 
-    .line 214
+    .line 203
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/RecorderParameters$Builder;->mParameters:Ljp/co/sony/mc/camera/recorder/RecorderParameters;
 
     invoke-static {v0, p1}, Ljp/co/sony/mc/camera/recorder/RecorderParameters;->-$$Nest$fputmDataSpace(Ljp/co/sony/mc/camera/recorder/RecorderParameters;Ljp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;)V
@@ -103,8 +134,16 @@
 
 .method public setHdr(Z)Ljp/co/sony/mc/camera/recorder/RecorderParameters$Builder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "enable"
+        }
+    .end annotation
 
-    .line 219
+    .line 208
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/RecorderParameters$Builder;->mParameters:Ljp/co/sony/mc/camera/recorder/RecorderParameters;
 
     invoke-static {v0, p1}, Ljp/co/sony/mc/camera/recorder/RecorderParameters;->-$$Nest$fputmIsHdr(Ljp/co/sony/mc/camera/recorder/RecorderParameters;Z)V
@@ -114,8 +153,16 @@
 
 .method public setLocation(Landroid/location/Location;)Ljp/co/sony/mc/camera/recorder/RecorderParameters$Builder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "location"
+        }
+    .end annotation
 
-    .line 189
+    .line 178
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/RecorderParameters$Builder;->mParameters:Ljp/co/sony/mc/camera/recorder/RecorderParameters;
 
     invoke-static {v0, p1}, Ljp/co/sony/mc/camera/recorder/RecorderParameters;->-$$Nest$fputmLocation(Ljp/co/sony/mc/camera/recorder/RecorderParameters;Landroid/location/Location;)V
@@ -125,8 +172,16 @@
 
 .method public setMaxDuration(I)Ljp/co/sony/mc/camera/recorder/RecorderParameters$Builder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 204
+    .line 193
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/RecorderParameters$Builder;->mParameters:Ljp/co/sony/mc/camera/recorder/RecorderParameters;
 
     invoke-static {v0, p1}, Ljp/co/sony/mc/camera/recorder/RecorderParameters;->-$$Nest$fputmMaxDuration(Ljp/co/sony/mc/camera/recorder/RecorderParameters;I)V
@@ -136,8 +191,16 @@
 
 .method public setMaxFileSize(J)Ljp/co/sony/mc/camera/recorder/RecorderParameters$Builder;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 199
+    .line 188
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/RecorderParameters$Builder;->mParameters:Ljp/co/sony/mc/camera/recorder/RecorderParameters;
 
     const-wide v1, 0x3b9aca0000L
@@ -153,8 +216,16 @@
 
 .method public setMicrophoneEnabled(Z)Ljp/co/sony/mc/camera/recorder/RecorderParameters$Builder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "enable"
+        }
+    .end annotation
 
-    .line 209
+    .line 198
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/RecorderParameters$Builder;->mParameters:Ljp/co/sony/mc/camera/recorder/RecorderParameters;
 
     invoke-static {v0, p1}, Ljp/co/sony/mc/camera/recorder/RecorderParameters;->-$$Nest$fputmIsMicrophoneEnabled(Ljp/co/sony/mc/camera/recorder/RecorderParameters;Z)V
@@ -164,6 +235,15 @@
 
 .method public setOrientationHints(Ljava/util/Map;)Ljp/co/sony/mc/camera/recorder/RecorderParameters$Builder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "values"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -175,21 +255,10 @@
         }
     .end annotation
 
-    .line 194
+    .line 183
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/RecorderParameters$Builder;->mParameters:Ljp/co/sony/mc/camera/recorder/RecorderParameters;
 
     invoke-static {v0, p1}, Ljp/co/sony/mc/camera/recorder/RecorderParameters;->-$$Nest$fputmOrientationHints(Ljp/co/sony/mc/camera/recorder/RecorderParameters;Ljava/util/Map;)V
-
-    return-object p0
-.end method
-
-.method public setStreamingOrientation(I)Ljp/co/sony/mc/camera/recorder/RecorderParameters$Builder;
-    .locals 1
-
-    .line 229
-    iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/RecorderParameters$Builder;->mParameters:Ljp/co/sony/mc/camera/recorder/RecorderParameters;
-
-    invoke-static {v0, p1}, Ljp/co/sony/mc/camera/recorder/RecorderParameters;->-$$Nest$fputmStreamingOrientation(Ljp/co/sony/mc/camera/recorder/RecorderParameters;I)V
 
     return-object p0
 .end method

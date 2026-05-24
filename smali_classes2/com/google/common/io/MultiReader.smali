@@ -3,9 +3,14 @@
 .source "MultiReader.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/io/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # instance fields
 .field private current:Ljava/io/Reader;
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -24,6 +29,15 @@
 # direct methods
 .method constructor <init>(Ljava/util/Iterator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "readers"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -40,13 +54,13 @@
         }
     .end annotation
 
-    .line 35
+    .line 40
     invoke-direct {p0}, Ljava/io/Reader;-><init>()V
 
-    .line 36
+    .line 41
     iput-object p1, p0, Lcom/google/common/io/MultiReader;->it:Ljava/util/Iterator;
 
-    .line 37
+    .line 42
     invoke-direct {p0}, Lcom/google/common/io/MultiReader;->advance()V
 
     return-void
@@ -60,10 +74,10 @@
         }
     .end annotation
 
-    .line 42
+    .line 47
     invoke-virtual {p0}, Lcom/google/common/io/MultiReader;->close()V
 
-    .line 43
+    .line 48
     iget-object v0, p0, Lcom/google/common/io/MultiReader;->it:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -72,7 +86,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 44
+    .line 49
     iget-object v0, p0, Lcom/google/common/io/MultiReader;->it:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -101,20 +115,20 @@
         }
     .end annotation
 
-    .line 83
+    .line 89
     iget-object v0, p0, Lcom/google/common/io/MultiReader;->current:Ljava/io/Reader;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x0
 
-    .line 85
+    .line 91
     :try_start_0
     invoke-virtual {v0}, Ljava/io/Reader;->close()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 87
+    .line 93
     iput-object v1, p0, Lcom/google/common/io/MultiReader;->current:Ljava/io/Reader;
 
     goto :goto_0
@@ -124,7 +138,7 @@
 
     iput-object v1, p0, Lcom/google/common/io/MultiReader;->current:Ljava/io/Reader;
 
-    .line 88
+    .line 94
     throw v0
 
     :cond_0
@@ -134,17 +148,29 @@
 
 .method public read([CII)I
     .locals 2
-    .param p1    # [C
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "cbuf",
+            "off",
+            "len"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 50
+    .line 55
+    invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 56
     iget-object v0, p0, Lcom/google/common/io/MultiReader;->current:Ljava/io/Reader;
 
     const/4 v1, -0x1
@@ -153,7 +179,7 @@
 
     return v1
 
-    .line 53
+    .line 59
     :cond_0
     invoke-virtual {v0, p1, p2, p3}, Ljava/io/Reader;->read([CII)I
 
@@ -161,10 +187,10 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 55
+    .line 61
     invoke-direct {p0}, Lcom/google/common/io/MultiReader;->advance()V
 
-    .line 56
+    .line 62
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/common/io/MultiReader;->read([CII)I
 
     move-result p0
@@ -183,7 +209,7 @@
         }
     .end annotation
 
-    .line 78
+    .line 84
     iget-object p0, p0, Lcom/google/common/io/MultiReader;->current:Ljava/io/Reader;
 
     if-eqz p0, :cond_0
@@ -207,6 +233,15 @@
 
 .method public skip(J)J
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "n"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -226,7 +261,7 @@
     :cond_0
     const/4 v3, 0x0
 
-    .line 63
+    .line 69
     :goto_0
     const-string v4, "n is negative"
 
@@ -234,13 +269,13 @@
 
     if-lez v2, :cond_2
 
-    .line 65
+    .line 71
     :goto_1
     iget-object v2, p0, Lcom/google/common/io/MultiReader;->current:Ljava/io/Reader;
 
     if-eqz v2, :cond_2
 
-    .line 66
+    .line 72
     invoke-virtual {v2, p1, p2}, Ljava/io/Reader;->skip(J)J
 
     move-result-wide v2
@@ -251,7 +286,7 @@
 
     return-wide v2
 
-    .line 70
+    .line 76
     :cond_1
     invoke-direct {p0}, Lcom/google/common/io/MultiReader;->advance()V
 

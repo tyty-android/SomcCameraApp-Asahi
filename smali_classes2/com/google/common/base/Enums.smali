@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/base/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/base/Enums$StringConverter;
@@ -35,7 +38,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 74
+    .line 77
     new-instance v0, Ljava/util/WeakHashMap;
 
     invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
@@ -48,7 +51,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 39
+    .line 41
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -56,6 +59,15 @@
 
 .method static getEnumConstants(Ljava/lang/Class;)Ljava/util/Map;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "enumClass"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -72,12 +84,12 @@
         }
     .end annotation
 
-    .line 90
+    .line 93
     sget-object v0, Lcom/google/common/base/Enums;->enumConstantCache:Ljava/util/Map;
 
     monitor-enter v0
 
-    .line 91
+    .line 94
     :try_start_0
     invoke-interface {v0, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -87,12 +99,12 @@
 
     if-nez v1, :cond_0
 
-    .line 93
+    .line 96
     invoke-static {p0}, Lcom/google/common/base/Enums;->populateCache(Ljava/lang/Class;)Ljava/util/Map;
 
     move-result-object v1
 
-    .line 95
+    .line 98
     :cond_0
     monitor-exit v0
 
@@ -101,7 +113,7 @@
     :catchall_0
     move-exception p0
 
-    .line 96
+    .line 99
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -111,6 +123,15 @@
 
 .method public static getField(Ljava/lang/Enum;)Ljava/lang/reflect/Field;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "enumValue"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -120,12 +141,12 @@
         }
     .end annotation
 
-    .line 50
+    .line 53
     invoke-virtual {p0}, Ljava/lang/Enum;->getDeclaringClass()Ljava/lang/Class;
 
     move-result-object v0
 
-    .line 52
+    .line 55
     :try_start_0
     invoke-virtual {p0}, Ljava/lang/Enum;->name()Ljava/lang/String;
 
@@ -142,7 +163,7 @@
     :catch_0
     move-exception p0
 
-    .line 54
+    .line 57
     new-instance v0, Ljava/lang/AssertionError;
 
     invoke-direct {v0, p0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
@@ -152,6 +173,17 @@
 
 .method public static getIfPresent(Ljava/lang/Class;Ljava/lang/String;)Lcom/google/common/base/Optional;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "enumClass",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -166,13 +198,13 @@
         }
     .end annotation
 
-    .line 67
+    .line 70
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 68
+    .line 71
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 69
+    .line 72
     invoke-static {p0, p1}, Lcom/google/common/base/Platform;->getEnumIfPresent(Ljava/lang/Class;Ljava/lang/String;)Lcom/google/common/base/Optional;
 
     move-result-object p0
@@ -182,6 +214,15 @@
 
 .method private static populateCache(Ljava/lang/Class;)Ljava/util/Map;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "enumClass"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -198,12 +239,12 @@
         }
     .end annotation
 
-    .line 79
+    .line 82
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 80
+    .line 83
     invoke-static {p0}, Ljava/util/EnumSet;->allOf(Ljava/lang/Class;)Ljava/util/EnumSet;
 
     move-result-object v1
@@ -225,7 +266,7 @@
 
     check-cast v2, Ljava/lang/Enum;
 
-    .line 81
+    .line 84
     invoke-virtual {v2}, Ljava/lang/Enum;->name()Ljava/lang/String;
 
     move-result-object v3
@@ -238,7 +279,7 @@
 
     goto :goto_0
 
-    .line 83
+    .line 86
     :cond_0
     sget-object v1, Lcom/google/common/base/Enums;->enumConstantCache:Ljava/util/Map;
 
@@ -249,6 +290,15 @@
 
 .method public static stringConverter(Ljava/lang/Class;)Lcom/google/common/base/Converter;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "enumClass"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -262,7 +312,7 @@
         }
     .end annotation
 
-    .line 108
+    .line 112
     new-instance v0, Lcom/google/common/base/Enums$StringConverter;
 
     invoke-direct {v0, p0}, Lcom/google/common/base/Enums$StringConverter;-><init>(Ljava/lang/Class;)V

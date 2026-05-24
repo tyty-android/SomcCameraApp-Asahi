@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field public final synthetic f$0:Z
+.field public final synthetic f$0:I
 
 
 # direct methods
-.method public synthetic constructor <init>(Z)V
+.method public synthetic constructor <init>(I)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda34;->f$0:Z
+    iput p1, p0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda34;->f$0:I
 
     return-void
 .end method
@@ -28,11 +28,11 @@
     .locals 0
 
     .line 0
-    iget-boolean p0, p0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda34;->f$0:Z
+    iget p0, p0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda34;->f$0:I
 
     check-cast p1, Ljp/co/sony/mc/camera/view/CameraEventListener;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->$r8$lambda$CbaWY9H3pwU-WOSUdueF0A020os(ZLjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->$r8$lambda$LEMI3cBi6YMNp9Sc4xMcW6RE6Is(ILjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 

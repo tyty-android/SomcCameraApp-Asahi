@@ -42,7 +42,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
     .locals 4
 
-    .line 715
+    .line 717
     sget-object v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;->INACTIVE:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
 
     sget-object v1, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;->SEARCHING:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
@@ -61,7 +61,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 716
+    .line 718
     new-instance v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
 
     const-string v1, "INACTIVE"
@@ -72,7 +72,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;->INACTIVE:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
 
-    .line 717
+    .line 719
     new-instance v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
 
     const-string v1, "SEARCHING"
@@ -83,7 +83,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;->SEARCHING:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
 
-    .line 718
+    .line 720
     new-instance v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
 
     const-string v1, "CONVERGED"
@@ -94,7 +94,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;->CONVERGED:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
 
-    .line 719
+    .line 721
     new-instance v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
 
     const-string v1, "FAILED"
@@ -105,7 +105,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;->FAILED:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
 
-    .line 715
+    .line 717
     invoke-static {}, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;->$values()[Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
 
     move-result-object v0
@@ -117,16 +117,29 @@
 
 .method private constructor <init>(Ljava/lang/String;II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "Status"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)V"
         }
     .end annotation
 
-    .line 723
+    .line 725
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 724
+    .line 726
     iput p3, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;->mStatus:I
 
     return-void
@@ -134,13 +147,21 @@
 
 .method public static getStatus(I)Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "status"
+        }
+    .end annotation
 
-    .line 732
+    .line 734
     invoke-static {}, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;->values()[Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
 
     move-result-object v0
 
-    .line 733
+    .line 735
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -150,14 +171,14 @@
 
     aget-object v3, v0, v2
 
-    .line 734
+    .line 736
     invoke-virtual {v3}, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;->getWbCustomStatus()I
 
     move-result v3
 
     if-ne v3, p0, :cond_0
 
-    .line 735
+    .line 737
     aget-object p0, v0, p0
 
     return-object p0
@@ -175,8 +196,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 715
+    .line 717
     const-class v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -191,7 +220,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
     .locals 1
 
-    .line 715
+    .line 717
     sget-object v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;->$VALUES:[Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;->clone()Ljava/lang/Object;
@@ -208,7 +237,7 @@
 .method public getWbCustomStatus()I
     .locals 0
 
-    .line 728
+    .line 730
     iget p0, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;->mStatus:I
 
     return p0

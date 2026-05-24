@@ -34,13 +34,23 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/CameraApplication;Ljava/util/concurrent/ExecutorService;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "service"
+        }
+    .end annotation
 
-    .line 516
+    .line 541
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraApplication$CreateStorageThread;->this$0:Ljp/co/sony/mc/camera/CameraApplication;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 517
+    .line 542
     iput-object p2, p0, Ljp/co/sony/mc/camera/CameraApplication$CreateStorageThread;->mService:Ljava/util/concurrent/ExecutorService;
 
     return-void
@@ -56,7 +66,7 @@
         }
     .end annotation
 
-    .line 513
+    .line 538
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/CameraApplication$CreateStorageThread;->call()Ljava/lang/String;
 
     move-result-object p0
@@ -67,7 +77,7 @@
 .method public call()Ljava/lang/String;
     .locals 2
 
-    .line 522
+    .line 547
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraApplication$CreateStorageThread;->this$0:Ljp/co/sony/mc/camera/CameraApplication;
 
     new-instance v1, Ljp/co/sony/mc/camera/storage/StorageImpl;
@@ -76,7 +86,7 @@
 
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/CameraApplication;->-$$Nest$fputmStorage(Ljp/co/sony/mc/camera/CameraApplication;Ljp/co/sony/mc/camera/storage/StorageImpl;)V
 
-    .line 523
+    .line 548
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraApplication$CreateStorageThread;->this$0:Ljp/co/sony/mc/camera/CameraApplication;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/CameraApplication;->-$$Nest$fgetmStorage(Ljp/co/sony/mc/camera/CameraApplication;)Ljp/co/sony/mc/camera/storage/StorageImpl;
@@ -91,7 +101,7 @@
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/storage/StorageImpl;->open(Landroid/content/Context;)V
 
-    .line 525
+    .line 550
     new-instance v0, Ljava/lang/Thread;
 
     new-instance v1, Ljp/co/sony/mc/camera/CameraApplication$CreateStorageThread$1;
@@ -100,10 +110,10 @@
 
     invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
-    .line 530
+    .line 555
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
-    .line 531
+    .line 556
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraApplication$CreateStorageThread;->this$0:Ljp/co/sony/mc/camera/CameraApplication;
 
     const/4 v0, 0x0

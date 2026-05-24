@@ -58,7 +58,7 @@
 
     const/16 v0, 0x9
 
-    .line 301
+    .line 425
     new-array v0, v0, [Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason;
 
     const/4 v1, 0x0
@@ -69,68 +69,68 @@
 
     const/4 v1, 0x1
 
-    .line 302
+    .line 426
     sget-object v2, Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$FinderLongClicked;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$FinderLongClicked;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x2
 
-    .line 303
+    .line 427
     sget-object v2, Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$FocusPressed;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$FocusPressed;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x3
 
-    .line 304
+    .line 428
     sget-object v2, Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$Capturing;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$Capturing;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x4
 
-    .line 305
+    .line 429
     sget-object v2, Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$ZoomStateChanged;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$ZoomStateChanged;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x5
 
-    .line 306
+    .line 430
     sget-object v2, Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$ZoomCurrentPositionClicked;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$ZoomCurrentPositionClicked;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x6
 
-    .line 307
+    .line 431
     sget-object v2, Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$BrightnessSliderDragged;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$BrightnessSliderDragged;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x7
 
-    .line 308
+    .line 432
     sget-object v2, Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$AmberBlueSliderDragged;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$AmberBlueSliderDragged;
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x8
 
-    .line 309
+    .line 433
     sget-object v2, Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$RemoconKeyPressed;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$RemoconKeyPressed;
 
     aput-object v2, v0, v1
 
-    .line 300
+    .line 424
     invoke-static {v0}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    .line 299
+    .line 423
     invoke-direct {p0, v0, v1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;-><init>(Ljava/util/List;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void

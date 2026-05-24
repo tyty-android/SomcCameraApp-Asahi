@@ -26,13 +26,24 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$QueueingCountChangedListener;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$1",
+            "val$savingCount"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 7933
+    .line 8548
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$QueueingCountChangedListener$1;->this$1:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$QueueingCountChangedListener;
 
     iput p2, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$QueueingCountChangedListener$1;->val$savingCount:I
@@ -47,7 +58,7 @@
 .method public run()V
     .locals 1
 
-    .line 7936
+    .line 8551
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$QueueingCountChangedListener$1;->this$1:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$QueueingCountChangedListener;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$QueueingCountChangedListener;->this$0:Ljp/co/sony/mc/camera/device/CameraDeviceHandler;
@@ -58,7 +69,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 7937
+    .line 8552
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$QueueingCountChangedListener$1;->this$1:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$QueueingCountChangedListener;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$QueueingCountChangedListener;->this$0:Ljp/co/sony/mc/camera/device/CameraDeviceHandler;

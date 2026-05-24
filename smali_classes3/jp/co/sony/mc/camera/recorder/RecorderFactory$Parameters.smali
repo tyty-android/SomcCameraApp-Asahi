@@ -15,11 +15,7 @@
 
 
 # instance fields
-.field private final mIsHalfFps:Z
-
 .field private final mIsShutterSoundOn:Z
-
-.field private final mIsStreamingMode:Z
 
 .field private final mListener:Ljp/co/sony/mc/camera/recorder/RecorderController$RecorderListener;
 
@@ -31,26 +27,10 @@
 
 
 # direct methods
-.method static bridge synthetic -$$Nest$fgetmIsHalfFps(Ljp/co/sony/mc/camera/recorder/RecorderFactory$Parameters;)Z
-    .locals 0
-
-    iget-boolean p0, p0, Ljp/co/sony/mc/camera/recorder/RecorderFactory$Parameters;->mIsHalfFps:Z
-
-    return p0
-.end method
-
 .method static bridge synthetic -$$Nest$fgetmIsShutterSoundOn(Ljp/co/sony/mc/camera/recorder/RecorderFactory$Parameters;)Z
     .locals 0
 
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/recorder/RecorderFactory$Parameters;->mIsShutterSoundOn:Z
-
-    return p0
-.end method
-
-.method static bridge synthetic -$$Nest$fgetmIsStreamingMode(Ljp/co/sony/mc/camera/recorder/RecorderFactory$Parameters;)Z
-    .locals 0
-
-    iget-boolean p0, p0, Ljp/co/sony/mc/camera/recorder/RecorderFactory$Parameters;->mIsStreamingMode:Z
 
     return p0
 .end method
@@ -87,32 +67,42 @@
     return-object p0
 .end method
 
-.method public constructor <init>(Ljp/co/sony/mc/camera/recorder/RecorderController$RecorderListener;IZLjava/lang/String;ZZZ)V
+.method public constructor <init>(Ljp/co/sony/mc/camera/recorder/RecorderController$RecorderListener;IZLjava/lang/String;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "listener",
+            "progressNotificationIntervalMillis",
+            "isShutterSoundOn",
+            "videoStabilizer",
+            "shouldWaitStartSound"
+        }
+    .end annotation
 
-    .line 39
+    .line 36
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 40
+    .line 37
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/RecorderFactory$Parameters;->mListener:Ljp/co/sony/mc/camera/recorder/RecorderController$RecorderListener;
 
-    .line 41
+    .line 38
     iput p2, p0, Ljp/co/sony/mc/camera/recorder/RecorderFactory$Parameters;->mProgressNotificationIntervalMillis:I
 
-    .line 42
+    .line 39
     iput-boolean p3, p0, Ljp/co/sony/mc/camera/recorder/RecorderFactory$Parameters;->mIsShutterSoundOn:Z
 
-    .line 43
+    .line 40
     iput-object p4, p0, Ljp/co/sony/mc/camera/recorder/RecorderFactory$Parameters;->mVideoStabilizer:Ljava/lang/String;
 
-    .line 44
-    iput-boolean p5, p0, Ljp/co/sony/mc/camera/recorder/RecorderFactory$Parameters;->mIsStreamingMode:Z
-
-    .line 45
-    iput-boolean p6, p0, Ljp/co/sony/mc/camera/recorder/RecorderFactory$Parameters;->mIsHalfFps:Z
-
-    .line 46
-    iput-boolean p7, p0, Ljp/co/sony/mc/camera/recorder/RecorderFactory$Parameters;->mShouldWaitStartSound:Z
+    .line 41
+    iput-boolean p5, p0, Ljp/co/sony/mc/camera/recorder/RecorderFactory$Parameters;->mShouldWaitStartSound:Z
 
     return-void
 .end method

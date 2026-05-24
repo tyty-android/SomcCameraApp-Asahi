@@ -1,77 +1,67 @@
-.class Lcom/google/common/graph/DirectedGraphConnections$5;
+.class synthetic Lcom/google/common/graph/DirectedGraphConnections$5;
 .super Ljava/lang/Object;
 .source "DirectedGraphConnections.java"
 
-# interfaces
-.implements Lcom/google/common/base/Function;
-
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/common/graph/DirectedGraphConnections;->incidentEdgeIterator(Ljava/lang/Object;)Ljava/util/Iterator;
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/common/graph/DirectedGraphConnections;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1008
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lcom/google/common/base/Function<",
-        "TN;",
-        "Lcom/google/common/graph/EndpointPair<",
-        "TN;>;>;"
-    }
-.end annotation
 
-
-# instance fields
-.field final synthetic val$thisNode:Ljava/lang/Object;
+# static fields
+.field static final synthetic $SwitchMap$com$google$common$graph$ElementOrder$Type:[I
 
 
 # direct methods
-.method constructor <init>(Lcom/google/common/graph/DirectedGraphConnections;Ljava/lang/Object;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
-    .line 385
-    iput-object p2, p0, Lcom/google/common/graph/DirectedGraphConnections$5;->val$thisNode:Ljava/lang/Object;
+    .line 161
+    invoke-static {}, Lcom/google/common/graph/ElementOrder$Type;->values()[Lcom/google/common/graph/ElementOrder$Type;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    move-result-object v0
 
+    array-length v0, v0
+
+    new-array v0, v0, [I
+
+    sput-object v0, Lcom/google/common/graph/DirectedGraphConnections$5;->$SwitchMap$com$google$common$graph$ElementOrder$Type:[I
+
+    :try_start_0
+    sget-object v1, Lcom/google/common/graph/ElementOrder$Type;->UNORDERED:Lcom/google/common/graph/ElementOrder$Type;
+
+    invoke-virtual {v1}, Lcom/google/common/graph/ElementOrder$Type;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    :try_start_1
+    sget-object v0, Lcom/google/common/graph/DirectedGraphConnections$5;->$SwitchMap$com$google$common$graph$ElementOrder$Type:[I
+
+    sget-object v1, Lcom/google/common/graph/ElementOrder$Type;->STABLE:Lcom/google/common/graph/ElementOrder$Type;
+
+    invoke-virtual {v1}, Lcom/google/common/graph/ElementOrder$Type;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x2
+
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    :catch_1
     return-void
-.end method
-
-
-# virtual methods
-.method public apply(Ljava/lang/Object;)Lcom/google/common/graph/EndpointPair;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TN;)",
-            "Lcom/google/common/graph/EndpointPair<",
-            "TN;>;"
-        }
-    .end annotation
-
-    .line 388
-    iget-object p0, p0, Lcom/google/common/graph/DirectedGraphConnections$5;->val$thisNode:Ljava/lang/Object;
-
-    invoke-static {p0, p1}, Lcom/google/common/graph/EndpointPair;->ordered(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/graph/EndpointPair;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public bridge synthetic apply(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
-
-    .line 385
-    invoke-virtual {p0, p1}, Lcom/google/common/graph/DirectedGraphConnections$5;->apply(Ljava/lang/Object;)Lcom/google/common/graph/EndpointPair;
-
-    move-result-object p0
-
-    return-object p0
 .end method

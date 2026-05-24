@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;-><init>(Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;Ljava/util/List;Ljava/util/List;)V
+    value = Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;-><init>(Landroidx/lifecycle/LifecycleOwner;Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;Ljava/util/List;Ljava/util/List;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -48,7 +48,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$4;->this$0:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;
 
-    .line 160
+    .line 177
     invoke-direct {p0}, Landroid/view/View$AccessibilityDelegate;-><init>()V
 
     return-void
@@ -67,10 +67,10 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 162
+    .line 179
     invoke-super {p0, p1, p2}, Landroid/view/View$AccessibilityDelegate;->onInitializeAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
 
-    .line 163
+    .line 180
     invoke-virtual {p2}, Landroid/view/accessibility/AccessibilityEvent;->getEventType()I
 
     move-result p1
@@ -79,7 +79,7 @@
 
     if-ne p1, v0, :cond_1
 
-    .line 164
+    .line 181
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$4;->this$0:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->access$getState$p(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;)Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
@@ -100,7 +100,7 @@
 
     if-ne p1, p2, :cond_3
 
-    .line 165
+    .line 182
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$4;->this$0:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;
 
@@ -116,7 +116,7 @@
 
     goto :goto_0
 
-    .line 167
+    .line 184
     :cond_1
     invoke-virtual {p2}, Landroid/view/accessibility/AccessibilityEvent;->getEventType()I
 
@@ -126,7 +126,7 @@
 
     if-ne p1, p2, :cond_3
 
-    .line 169
+    .line 186
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$4;->this$0:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->access$getState$p(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;)Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
@@ -147,7 +147,7 @@
 
     if-ne p1, p2, :cond_3
 
-    .line 170
+    .line 187
     :cond_2
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$4;->this$0:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;
 

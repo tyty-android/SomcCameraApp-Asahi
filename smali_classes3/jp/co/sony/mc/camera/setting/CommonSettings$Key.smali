@@ -27,6 +27,17 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;Ljava/lang/Class;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "name",
+            "type"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -36,10 +47,12 @@
         }
     .end annotation
 
-    const/4 v0, 0x0
+    .line 59
+    invoke-static {}, Ljava/util/List;->of()Ljava/util/List;
 
-    .line 77
-    invoke-direct {p0, p1, v0, p2}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;-><init>(Ljava/lang/String;ILjava/lang/Class;)V
+    move-result-object v0
+
+    invoke-direct {p0, p1, v0, p2}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;-><init>(Ljava/lang/String;Ljava/util/List;Ljava/lang/Class;)V
 
     return-void
 .end method

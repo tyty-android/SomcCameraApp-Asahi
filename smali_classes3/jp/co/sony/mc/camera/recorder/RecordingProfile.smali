@@ -6,7 +6,6 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Ljp/co/sony/mc/camera/recorder/RecordingProfile$StreamingBitrate;,
         Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;
     }
 .end annotation
@@ -18,8 +17,6 @@
 .field public static final GOOGLE_SLOW_MOTION_VIDEO_FRAME_RATE:I = 0x1e
 
 .field public static final I_FRAME_INTERVAL_SECONDS_FOR_RECORDING:I = 0x1
-
-.field public static final I_FRAME_INTERVAL_SECONDS_FOR_STREAMING:I = 0x2
 
 .field public static final MIN_RECORDING_DURATION:I = 0x1
 
@@ -153,8 +150,6 @@
 
 .field private final isMms:Z
 
-.field private final isStreaming:Z
-
 .field private final mimeType:Ljava/lang/String;
 
 .field private final minFileSize:J
@@ -206,7 +201,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 129
+    .line 108
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -216,152 +211,213 @@
     return-void
 .end method
 
-.method private constructor <init>(IIIIIIIIIIIIIIILjava/lang/String;Ljava/lang/String;JJILjp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;ZZZZ)V
+.method private constructor <init>(IIIIIIIIIIIIIIILjava/lang/String;Ljava/lang/String;JJILjp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;ZZZ)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "fileFormat",
+            "videoFrameRate",
+            "videoCaptureRate",
+            "videoFrameWidth",
+            "videoFrameHeight",
+            "videoBitRate",
+            "videoBitRateMode",
+            "videoCodec",
+            "videoIFrameInterval",
+            "quality",
+            "audioBitRate",
+            "audioChannels",
+            "audioSampleRate",
+            "audioCodec",
+            "operatingRate",
+            "ext",
+            "mimeType",
+            "averageFileSize",
+            "minFileSize",
+            "progressInterval",
+            "dataSpace",
+            "isMms",
+            "isHdr",
+            "isAutoFraming"
+        }
+    .end annotation
 
     move-object v0, p0
 
-    .line 190
+    .line 167
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     move v1, p1
 
-    .line 191
+    .line 168
     iput v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->fileFormat:I
 
     move v1, p2
 
-    .line 192
+    .line 169
     iput v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->videoFrameRate:I
 
     move v1, p3
 
-    .line 193
+    .line 170
     iput v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->videoCaptureRate:I
 
     move v1, p4
 
-    .line 194
+    .line 171
     iput v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->videoFrameWidth:I
 
     move v1, p5
 
-    .line 195
+    .line 172
     iput v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->videoFrameHeight:I
 
     move v1, p6
 
-    .line 196
+    .line 173
     iput v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->videoBitRate:I
 
     move v1, p7
 
-    .line 197
+    .line 174
     iput v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->videoBitRateMode:I
 
     move v1, p8
 
-    .line 198
+    .line 175
     iput v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->videoCodec:I
 
     move v1, p9
 
-    .line 199
+    .line 176
     iput v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->videoIFrameInterval:I
 
     move v1, p10
 
-    .line 200
+    .line 177
     iput v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->quality:I
 
     move v1, p11
 
-    .line 201
+    .line 178
     iput v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->audioBitRate:I
 
     move v1, p12
 
-    .line 202
+    .line 179
     iput v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->audioChannels:I
 
     move/from16 v1, p13
 
-    .line 203
+    .line 180
     iput v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->audioSampleRate:I
 
     move/from16 v1, p14
 
-    .line 204
+    .line 181
     iput v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->audioCodec:I
 
     move/from16 v1, p15
 
-    .line 205
+    .line 182
     iput v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->operatingRate:I
 
     move-object/from16 v1, p16
 
-    .line 206
+    .line 183
     iput-object v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->extension:Ljava/lang/String;
 
     move-object/from16 v1, p17
 
-    .line 207
+    .line 184
     iput-object v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->mimeType:Ljava/lang/String;
 
     move-wide/from16 v1, p18
 
-    .line 208
+    .line 185
     iput-wide v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->averageFileSize:J
 
     move-wide/from16 v1, p20
 
-    .line 209
+    .line 186
     iput-wide v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->minFileSize:J
 
     move/from16 v1, p22
 
-    .line 210
+    .line 187
     iput v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->progressInterval:I
 
     move-object/from16 v1, p23
 
-    .line 211
+    .line 188
     iput-object v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->dataSpace:Ljp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;
 
     move/from16 v1, p24
 
-    .line 212
+    .line 189
     iput-boolean v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->isMms:Z
 
     move/from16 v1, p25
 
-    .line 213
+    .line 190
     iput-boolean v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->isHdr:Z
 
     move/from16 v1, p26
 
-    .line 214
-    iput-boolean v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->isStreaming:Z
-
-    move/from16 v1, p27
-
-    .line 215
+    .line 191
     iput-boolean v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->isAutoFraming:Z
 
     return-void
 .end method
 
-.method synthetic constructor <init>(IIIIIIIIIIIIIIILjava/lang/String;Ljava/lang/String;JJILjp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;ZZZZLjp/co/sony/mc/camera/recorder/RecordingProfile-IA;)V
+.method synthetic constructor <init>(IIIIIIIIIIIIIIILjava/lang/String;Ljava/lang/String;JJILjp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;ZZZLjp/co/sony/mc/camera/recorder/RecordingProfile-IA;)V
     .locals 0
 
-    invoke-direct/range {p0 .. p27}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;-><init>(IIIIIIIIIIIIIIILjava/lang/String;Ljava/lang/String;JJILjp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;ZZZZ)V
+    invoke-direct/range {p0 .. p26}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;-><init>(IIIIIIIIIIIIIIILjava/lang/String;Ljava/lang/String;JJILjp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;ZZZ)V
 
     return-void
 .end method
 
 .method private static computeSize(JJJ)J
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "audioBitRate",
+            "bitRate",
+            "second"
+        }
+    .end annotation
 
     add-long/2addr p0, p2
 
@@ -369,7 +425,7 @@
 
     const-wide/16 p2, 0x8
 
-    .line 575
+    .line 500
     div-long/2addr p0, p2
 
     const-wide/16 p2, 0x3e8
@@ -379,10 +435,18 @@
     return-wide p0
 .end method
 
-.method private static createMediaFormat(Ljp/co/sony/mc/camera/recorder/RecordingProfile;I)Landroid/media/MediaFormat;
-    .locals 4
+.method private static createMediaFormat(Ljp/co/sony/mc/camera/recorder/RecordingProfile;)Landroid/media/MediaFormat;
+    .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "profile"
+        }
+    .end annotation
 
-    .line 833
+    .line 750
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->getVideoCodec()I
 
     move-result v0
@@ -391,199 +455,179 @@
 
     if-ne v0, v1, :cond_0
 
+    .line 751
     const-string/jumbo v0, "video/hevc"
 
     goto :goto_0
 
-    .line 834
     :cond_0
     const-string/jumbo v0, "video/avc"
 
-    .line 838
+    .line 753
     :goto_0
-    iget-boolean v1, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->isStreaming:Z
-
-    if-eqz v1, :cond_2
-
-    const/16 v1, 0x5a
-
-    if-eq p1, v1, :cond_1
-
-    const/16 v1, 0x10e
-
-    if-ne p1, v1, :cond_2
-
-    .line 839
-    :cond_1
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->getVideoFrameHeight()I
-
-    move-result p1
-
-    .line 840
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->getVideoFrameWidth()I
 
     move-result v1
 
-    goto :goto_1
-
-    .line 842
-    :cond_2
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->getVideoFrameWidth()I
-
-    move-result p1
-
-    .line 843
+    .line 754
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->getVideoFrameHeight()I
-
-    move-result v1
-
-    .line 845
-    :goto_1
-    invoke-static {v0, p1, v1}, Landroid/media/MediaFormat;->createVideoFormat(Ljava/lang/String;II)Landroid/media/MediaFormat;
-
-    move-result-object p1
-
-    .line 846
-    const-string v0, "color-format"
-
-    const v1, 0x7f000789
-
-    invoke-virtual {p1, v0, v1}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
-
-    .line 848
-    const-string v0, "bitrate"
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->getVideoBitRate()I
-
-    move-result v1
-
-    invoke-virtual {p1, v0, v1}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
-
-    .line 849
-    const-string v0, "i-frame-interval"
-
-    iget v1, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->videoIFrameInterval:I
-
-    invoke-virtual {p1, v0, v1}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
-
-    .line 850
-    const-string v0, "frame-rate"
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->getVideoFrameRate()I
-
-    move-result v1
-
-    invoke-virtual {p1, v0, v1}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
-
-    .line 851
-    const-string v0, "priority"
-
-    const/4 v1, 0x0
-
-    invoke-virtual {p1, v0, v1}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
-
-    .line 853
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->getIsSlowMotion()Z
 
     move-result v2
 
-    if-eqz v2, :cond_3
+    .line 753
+    invoke-static {v0, v1, v2}, Landroid/media/MediaFormat;->createVideoFormat(Ljava/lang/String;II)Landroid/media/MediaFormat;
 
-    .line 854
-    const-string v2, "capture-rate"
+    move-result-object v0
 
-    const/16 v3, 0x1e
+    .line 755
+    const-string v1, "color-format"
 
-    invoke-virtual {p1, v2, v3}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
+    const v2, 0x7f000789
 
-    .line 858
-    :cond_3
-    invoke-virtual {p1, v0, v1}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, v2}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
 
-    .line 860
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->getOperatingRate()I
+    .line 757
+    const-string v1, "bitrate"
 
-    move-result v0
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->getVideoBitRate()I
 
-    if-lez v0, :cond_4
+    move-result v2
 
-    .line 861
-    const-string v0, "operating-rate"
+    invoke-virtual {v0, v1, v2}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
 
-    .line 862
+    .line 758
+    const-string v1, "i-frame-interval"
+
+    iget v2, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->videoIFrameInterval:I
+
+    invoke-virtual {v0, v1, v2}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
+
+    .line 759
+    const-string v1, "frame-rate"
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->getVideoFrameRate()I
+
+    move-result v2
+
+    invoke-virtual {v0, v1, v2}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
+
+    .line 760
+    const-string v1, "priority"
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v1, v2}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
+
+    .line 762
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->getIsSlowMotion()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    .line 763
+    const-string v3, "capture-rate"
+
+    const/16 v4, 0x1e
+
+    invoke-virtual {v0, v3, v4}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
+
+    .line 767
+    :cond_1
+    invoke-virtual {v0, v1, v2}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
+
+    .line 769
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->getOperatingRate()I
 
     move-result v1
 
-    .line 861
-    invoke-virtual {p1, v0, v1}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
+    if-lez v1, :cond_2
 
-    .line 864
-    const-string/jumbo v0, "ts-schema"
+    .line 770
+    const-string v1, "operating-rate"
 
-    const-string v1, "none"
+    .line 771
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->getOperatingRate()I
 
-    invoke-virtual {p1, v0, v1}, Landroid/media/MediaFormat;->setString(Ljava/lang/String;Ljava/lang/String;)V
+    move-result v2
 
-    .line 867
-    :cond_4
-    const-string v0, "profile"
+    .line 770
+    invoke-virtual {v0, v1, v2}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
+
+    .line 773
+    const-string/jumbo v1, "ts-schema"
+
+    const-string v2, "none"
+
+    invoke-virtual {v0, v1, v2}, Landroid/media/MediaFormat;->setString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 776
+    :cond_2
+    const-string v1, "profile"
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->getVideoEncodingProfile()I
 
-    move-result v1
+    move-result v2
 
-    invoke-virtual {p1, v0, v1}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, v2}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
 
-    .line 868
-    const-string v0, "level"
+    .line 777
+    const-string v1, "level"
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->getVideoEncodingProfileLevel()I
 
-    move-result v1
+    move-result v2
 
-    invoke-virtual {p1, v0, v1}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, v2}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
 
-    .line 870
+    .line 779
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->getDataSpace()Ljp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;
 
-    move-result-object v0
+    move-result-object v1
 
-    iget v0, v0, Ljp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;->standard:I
+    iget v1, v1, Ljp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;->standard:I
 
-    const-string v1, "color-standard"
+    const-string v2, "color-standard"
 
-    invoke-virtual {p1, v1, v0}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
+    invoke-virtual {v0, v2, v1}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
 
-    .line 871
+    .line 780
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->getDataSpace()Ljp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;
 
-    move-result-object v0
+    move-result-object v1
 
-    iget v0, v0, Ljp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;->transfer:I
+    iget v1, v1, Ljp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;->transfer:I
 
-    const-string v1, "color-transfer"
+    const-string v2, "color-transfer"
 
-    invoke-virtual {p1, v1, v0}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
+    invoke-virtual {v0, v2, v1}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
 
-    .line 872
+    .line 781
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->getDataSpace()Ljp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;
 
     move-result-object p0
 
     iget p0, p0, Ljp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;->range:I
 
-    const-string v0, "color-range"
+    const-string v1, "color-range"
 
-    invoke-virtual {p1, v0, p0}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, p0}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
 
-    return-object p1
+    return-object v0
 .end method
 
 .method private static decideDefaultQuality(Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "videoSize"
+        }
+    .end annotation
 
-    .line 615
+    .line 540
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->MMS:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
 
     if-eq p0, v0, :cond_0
@@ -600,13 +644,21 @@
 
 .method private static decideQuality(Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "videoSize"
+        }
+    .end annotation
 
-    .line 581
+    .line 506
     const-string v0, "Don\'t set parameters."
 
     if-eqz p0, :cond_6
 
-    .line 585
+    .line 510
     sget-object v1, Ljp/co/sony/mc/camera/recorder/RecordingProfile$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$VideoSize:[I
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->ordinal()I
@@ -639,7 +691,7 @@
 
     goto :goto_0
 
-    .line 602
+    .line 527
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -660,22 +712,22 @@
     :cond_3
     const/16 v3, 0x64
 
-    .line 605
+    .line 530
     :cond_4
     :goto_0
     sget-object v0, Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent$Context;
 
     sget-object v1, Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;->Companion:Ljp/co/sony/mc/camera/idd/value/IddVideoQuality$Companion;
 
-    .line 606
+    .line 531
     invoke-virtual {v1, v3}, Ljp/co/sony/mc/camera/idd/value/IddVideoQuality$Companion;->getVideoQualityFromSetting(I)Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;
 
     move-result-object v1
 
-    .line 605
+    .line 530
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent$Context;->setVideoQuality(Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;)V
 
-    .line 607
+    .line 532
     invoke-static {v3}, Landroid/media/CamcorderProfile;->hasProfile(I)Z
 
     move-result v0
@@ -684,7 +736,7 @@
 
     return v3
 
-    .line 610
+    .line 535
     :cond_5
     invoke-static {p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->decideDefaultQuality(Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;)I
 
@@ -692,7 +744,7 @@
 
     return p0
 
-    .line 582
+    .line 507
     :cond_6
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -703,6 +755,16 @@
 
 .method private static dumpMediaFormatIntParameter(Ljava/lang/String;Landroid/media/MediaFormat;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "format"
+        }
+    .end annotation
 
     const-string v0, "##### "
 
@@ -710,7 +772,7 @@
 
     const/4 v2, 0x1
 
-    .line 932
+    .line 841
     :try_start_0
     new-array v3, v2, [Ljava/lang/String;
 
@@ -748,7 +810,7 @@
 
     goto :goto_0
 
-    .line 934
+    .line 843
     :catch_0
     new-array p1, v2, [Ljava/lang/String;
 
@@ -780,10 +842,18 @@
 
 .method public static dumpMediaFormatParameters(Landroid/media/MediaFormat;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "format"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
-    .line 913
+    .line 822
     new-array v0, v0, [Ljava/lang/String;
 
     const/4 v1, 0x0
@@ -794,72 +864,72 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 914
+    .line 823
     const-string v0, "color-format"
 
     invoke-static {v0, p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->dumpMediaFormatIntParameter(Ljava/lang/String;Landroid/media/MediaFormat;)V
 
-    .line 915
+    .line 824
     const-string v0, "bitrate"
 
     invoke-static {v0, p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->dumpMediaFormatIntParameter(Ljava/lang/String;Landroid/media/MediaFormat;)V
 
-    .line 916
+    .line 825
     const-string v0, "bitrate-mode"
 
     invoke-static {v0, p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->dumpMediaFormatIntParameter(Ljava/lang/String;Landroid/media/MediaFormat;)V
 
-    .line 917
+    .line 826
     const-string v0, "frame-rate"
 
     invoke-static {v0, p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->dumpMediaFormatIntParameter(Ljava/lang/String;Landroid/media/MediaFormat;)V
 
-    .line 918
+    .line 827
     const-string v0, "capture-rate"
 
     invoke-static {v0, p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->dumpMediaFormatIntParameter(Ljava/lang/String;Landroid/media/MediaFormat;)V
 
-    .line 919
+    .line 828
     const-string v0, "i-frame-interval"
 
     invoke-static {v0, p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->dumpMediaFormatIntParameter(Ljava/lang/String;Landroid/media/MediaFormat;)V
 
-    .line 920
+    .line 829
     const-string v0, "operating-rate"
 
     invoke-static {v0, p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->dumpMediaFormatIntParameter(Ljava/lang/String;Landroid/media/MediaFormat;)V
 
-    .line 921
+    .line 830
     const-string/jumbo v0, "ts-schema"
 
     invoke-static {v0, p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->dumpMediaFormatStringParameter(Ljava/lang/String;Landroid/media/MediaFormat;)V
 
-    .line 922
+    .line 831
     const-string v0, "profile"
 
     invoke-static {v0, p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->dumpMediaFormatIntParameter(Ljava/lang/String;Landroid/media/MediaFormat;)V
 
-    .line 923
+    .line 832
     const-string v0, "level"
 
     invoke-static {v0, p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->dumpMediaFormatIntParameter(Ljava/lang/String;Landroid/media/MediaFormat;)V
 
-    .line 924
+    .line 833
     const-string v0, "color-standard"
 
     invoke-static {v0, p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->dumpMediaFormatIntParameter(Ljava/lang/String;Landroid/media/MediaFormat;)V
 
-    .line 925
+    .line 834
     const-string v0, "color-transfer"
 
     invoke-static {v0, p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->dumpMediaFormatIntParameter(Ljava/lang/String;Landroid/media/MediaFormat;)V
 
-    .line 926
+    .line 835
     const-string v0, "color-range"
 
     invoke-static {v0, p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->dumpMediaFormatIntParameter(Ljava/lang/String;Landroid/media/MediaFormat;)V
 
-    .line 927
+    .line 836
     const-string v0, "priority"
 
     invoke-static {v0, p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->dumpMediaFormatIntParameter(Ljava/lang/String;Landroid/media/MediaFormat;)V
@@ -869,6 +939,16 @@
 
 .method private static dumpMediaFormatStringParameter(Ljava/lang/String;Landroid/media/MediaFormat;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "format"
+        }
+    .end annotation
 
     const-string v0, "##### "
 
@@ -876,7 +956,7 @@
 
     const/4 v2, 0x1
 
-    .line 940
+    .line 849
     :try_start_0
     new-array v3, v2, [Ljava/lang/String;
 
@@ -914,7 +994,7 @@
 
     goto :goto_0
 
-    .line 942
+    .line 851
     :catch_0
     new-array p1, v2, [Ljava/lang/String;
 
@@ -944,104 +1024,10 @@
     return-void
 .end method
 
-.method public static getStreamingBitrate(Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;)I
-    .locals 7
-
-    .line 547
-    sget-object v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$StreamingBitrate;->VIDEO_BIT_RATE_FULL_HD_SDR_AVC_30FPS_STREAMING:Ljp/co/sony/mc/camera/recorder/RecordingProfile$StreamingBitrate;
-
-    .line 549
-    invoke-static {}, Ljp/co/sony/mc/camera/recorder/RecordingProfile$StreamingBitrate;->values()[Ljp/co/sony/mc/camera/recorder/RecordingProfile$StreamingBitrate;
-
-    move-result-object v1
-
-    array-length v2, v1
-
-    const/4 v3, 0x0
-
-    move v4, v3
-
-    :goto_0
-    if-ge v4, v2, :cond_1
-
-    aget-object v5, v1, v4
-
-    .line 550
-    iget-object v6, v5, Ljp/co/sony/mc/camera/recorder/RecordingProfile$StreamingBitrate;->videoSize:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
-
-    invoke-virtual {v6, p0}, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->equals(Ljava/lang/Object;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_0
-
-    move-object v0, v5
-
-    goto :goto_1
-
-    :cond_0
-    add-int/lit8 v4, v4, 0x1
-
-    goto :goto_0
-
-    .line 557
-    :cond_1
-    :goto_1
-    sget-object p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$VideoQuality:[I
-
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;->ordinal()I
-
-    move-result p1
-
-    aget p0, p0, p1
-
-    const/4 p1, 0x1
-
-    if-eq p0, p1, :cond_4
-
-    const/4 v1, 0x2
-
-    if-eq p0, v1, :cond_3
-
-    const/4 v1, 0x3
-
-    if-eq p0, v1, :cond_2
-
-    .line 568
-    new-array p0, p1, [Ljava/lang/String;
-
-    const-string p1, "getBitrate() Bitrate is 0. Add enum."
-
-    aput-object p1, p0, v3
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
-
-    goto :goto_2
-
-    .line 565
-    :cond_2
-    iget v3, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$StreamingBitrate;->low:I
-
-    goto :goto_2
-
-    .line 562
-    :cond_3
-    iget v3, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$StreamingBitrate;->medium:I
-
-    goto :goto_2
-
-    .line 559
-    :cond_4
-    iget v3, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$StreamingBitrate;->high:I
-
-    :goto_2
-    return v3
-.end method
-
 .method public static releaseEncoder()V
     .locals 3
 
-    .line 815
+    .line 734
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
@@ -1058,7 +1044,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 817
+    .line 736
     :cond_0
     sget-object v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->sEncoders:Ljava/util/List;
 
@@ -1079,18 +1065,18 @@
 
     check-cast v1, Landroid/media/MediaCodec;
 
-    .line 818
+    .line 737
     invoke-virtual {v1}, Landroid/media/MediaCodec;->start()V
 
-    .line 819
+    .line 738
     invoke-virtual {v1}, Landroid/media/MediaCodec;->stop()V
 
-    .line 820
+    .line 739
     invoke-virtual {v1}, Landroid/media/MediaCodec;->release()V
 
     goto :goto_0
 
-    .line 822
+    .line 741
     :cond_1
     sget-object v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->sEncoders:Ljava/util/List;
 
@@ -1101,11 +1087,23 @@
 
 .method private static setupEncoder(Landroid/media/MediaFormat;Landroid/view/Surface;I)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "format",
+            "surface",
+            "bitRateMode"
+        }
+    .end annotation
 
-    .line 888
+    .line 797
     invoke-static {}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->releaseEncoder()V
 
-    .line 889
+    .line 798
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     const/4 v1, 0x1
@@ -1122,26 +1120,26 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 890
+    .line 799
     :cond_0
     new-instance v0, Landroid/media/MediaCodecList;
 
     invoke-direct {v0, v2}, Landroid/media/MediaCodecList;-><init>(I)V
 
-    .line 893
+    .line 802
     :try_start_0
     invoke-virtual {v0, p0}, Landroid/media/MediaCodecList;->findEncoderForFormat(Landroid/media/MediaFormat;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 892
+    .line 801
     invoke-static {v0}, Landroid/media/MediaCodec;->createByCodecName(Ljava/lang/String;)Landroid/media/MediaCodec;
 
     move-result-object v0
 
     if-ltz p2, :cond_1
 
-    .line 895
+    .line 804
     const-string v2, "bitrate-mode"
 
     invoke-virtual {p0, v2, p2}, Landroid/media/MediaFormat;->setInteger(Ljava/lang/String;I)V
@@ -1149,18 +1147,18 @@
     :cond_1
     const/4 p2, 0x0
 
-    .line 897
+    .line 806
     invoke-virtual {v0, p0, p2, p2, v1}, Landroid/media/MediaCodec;->configure(Landroid/media/MediaFormat;Landroid/view/Surface;Landroid/media/MediaCrypto;I)V
 
-    .line 898
+    .line 807
     invoke-virtual {v0, p1}, Landroid/media/MediaCodec;->setInputSurface(Landroid/view/Surface;)V
 
-    .line 899
+    .line 808
     sget-object p1, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->sEncoders:Ljava/util/List;
 
     invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 900
+    .line 809
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz p1, :cond_2
@@ -1175,14 +1173,14 @@
     :catch_0
     move-exception p1
 
-    .line 902
+    .line 811
     sget-boolean p2, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz p2, :cond_3
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->dumpMediaFormatParameters(Landroid/media/MediaFormat;)V
 
-    .line 903
+    .line 812
     :cond_3
     new-instance p0, Ljava/lang/RuntimeException;
 
@@ -1205,25 +1203,33 @@
     throw p0
 .end method
 
-.method public static setupRecordingSurface(Ljp/co/sony/mc/camera/recorder/RecordingProfile;I)Landroid/view/Surface;
-    .locals 1
+.method public static setupRecordingSurface(Ljp/co/sony/mc/camera/recorder/RecordingProfile;)Landroid/view/Surface;
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "profile"
+        }
+    .end annotation
 
-    .line 804
+    .line 723
     invoke-static {}, Landroid/media/MediaCodec;->createPersistentInputSurface()Landroid/view/Surface;
 
     move-result-object v0
 
-    .line 805
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->createMediaFormat(Ljp/co/sony/mc/camera/recorder/RecordingProfile;I)Landroid/media/MediaFormat;
+    .line 724
+    invoke-static {p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->createMediaFormat(Ljp/co/sony/mc/camera/recorder/RecordingProfile;)Landroid/media/MediaFormat;
 
-    move-result-object p1
+    move-result-object v1
 
-    .line 806
+    .line 725
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->getVideoBitRateMode()I
 
     move-result p0
 
-    invoke-static {p1, v0, p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->setupEncoder(Landroid/media/MediaFormat;Landroid/view/Surface;I)V
+    invoke-static {v1, v0, p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->setupEncoder(Landroid/media/MediaFormat;Landroid/view/Surface;I)V
 
     return-object v0
 .end method
@@ -1232,6 +1238,14 @@
 # virtual methods
 .method public compare(Ljp/co/sony/mc/camera/recorder/RecordingProfile;)Z
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "profile"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -1246,7 +1260,7 @@
 
     return v1
 
-    .line 756
+    .line 677
     :cond_1
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -1260,7 +1274,7 @@
 
     return v1
 
-    .line 759
+    .line 680
     :cond_2
     iget-object v2, p1, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->dataSpace:Ljp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;
 
@@ -1268,7 +1282,7 @@
 
     return v1
 
-    .line 763
+    .line 684
     :cond_3
     iget-boolean v2, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->isMms:Z
 
@@ -1279,12 +1293,6 @@
     iget-boolean v2, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->isHdr:Z
 
     iget-boolean v3, p1, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->isHdr:Z
-
-    if-ne v2, v3, :cond_5
-
-    iget-boolean v2, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->isStreaming:Z
-
-    iget-boolean v3, p1, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->isStreaming:Z
 
     if-ne v2, v3, :cond_5
 
@@ -1344,7 +1352,7 @@
 
     iget-object v3, p1, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->extension:Ljava/lang/String;
 
-    .line 773
+    .line 693
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
@@ -1355,7 +1363,7 @@
 
     iget-object v3, p1, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->mimeType:Ljava/lang/String;
 
-    .line 774
+    .line 694
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
@@ -1465,7 +1473,7 @@
 .method public getAudioBitRate()I
     .locals 0
 
-    .line 663
+    .line 588
     iget p0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->audioBitRate:I
 
     return p0
@@ -1474,7 +1482,7 @@
 .method public getAudioChannels()I
     .locals 0
 
-    .line 667
+    .line 592
     iget p0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->audioChannels:I
 
     return p0
@@ -1483,7 +1491,7 @@
 .method public getAudioCodec()I
     .locals 0
 
-    .line 675
+    .line 600
     iget p0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->audioCodec:I
 
     return p0
@@ -1492,7 +1500,7 @@
 .method public getAudioSampleRate()I
     .locals 0
 
-    .line 671
+    .line 596
     iget p0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->audioSampleRate:I
 
     return p0
@@ -1501,7 +1509,7 @@
 .method public getAverageFileSize()J
     .locals 2
 
-    .line 699
+    .line 620
     iget-wide v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->averageFileSize:J
 
     return-wide v0
@@ -1510,7 +1518,7 @@
 .method public getDataSpace()Ljp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;
     .locals 0
 
-    .line 735
+    .line 656
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->dataSpace:Ljp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;
 
     return-object p0
@@ -1519,7 +1527,7 @@
 .method public getExtension()Ljava/lang/String;
     .locals 0
 
-    .line 219
+    .line 195
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->extension:Ljava/lang/String;
 
     return-object p0
@@ -1528,7 +1536,7 @@
 .method public getFileFormat()I
     .locals 0
 
-    .line 623
+    .line 548
     iget p0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->fileFormat:I
 
     return p0
@@ -1537,7 +1545,7 @@
 .method public getIsHdr()Z
     .locals 0
 
-    .line 683
+    .line 608
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->isHdr:Z
 
     return p0
@@ -1546,7 +1554,7 @@
 .method public getIsMms()Z
     .locals 0
 
-    .line 679
+    .line 604
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->isMms:Z
 
     return p0
@@ -1555,7 +1563,7 @@
 .method public getIsSlowMotion()Z
     .locals 1
 
-    .line 695
+    .line 616
     iget v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->videoFrameRate:I
 
     iget p0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->videoCaptureRate:I
@@ -1573,19 +1581,10 @@
     return p0
 .end method
 
-.method public getIsStreaming()Z
-    .locals 0
-
-    .line 687
-    iget-boolean p0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->isStreaming:Z
-
-    return p0
-.end method
-
 .method public getMime()Ljava/lang/String;
     .locals 0
 
-    .line 223
+    .line 199
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->mimeType:Ljava/lang/String;
 
     return-object p0
@@ -1594,7 +1593,7 @@
 .method public getMinFileSize()J
     .locals 2
 
-    .line 703
+    .line 624
     iget-wide v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->minFileSize:J
 
     return-wide v0
@@ -1603,7 +1602,7 @@
 .method public getOperatingRate()I
     .locals 0
 
-    .line 739
+    .line 660
     iget p0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->operatingRate:I
 
     return p0
@@ -1612,7 +1611,7 @@
 .method public getProgressInterval()I
     .locals 0
 
-    .line 227
+    .line 203
     iget p0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->progressInterval:I
 
     return p0
@@ -1621,7 +1620,7 @@
 .method public getQuality()I
     .locals 0
 
-    .line 659
+    .line 584
     iget p0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->quality:I
 
     return p0
@@ -1630,7 +1629,7 @@
 .method public getVideoBitRate()I
     .locals 0
 
-    .line 643
+    .line 568
     iget p0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->videoBitRate:I
 
     return p0
@@ -1639,7 +1638,7 @@
 .method public getVideoBitRateMode()I
     .locals 0
 
-    .line 647
+    .line 572
     iget p0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->videoBitRateMode:I
 
     return p0
@@ -1648,7 +1647,7 @@
 .method public getVideoCaptureRate()I
     .locals 0
 
-    .line 631
+    .line 556
     iget p0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->videoCaptureRate:I
 
     return p0
@@ -1657,7 +1656,7 @@
 .method public getVideoCodec()I
     .locals 0
 
-    .line 651
+    .line 576
     iget p0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->videoCodec:I
 
     return p0
@@ -1666,22 +1665,22 @@
 .method public getVideoEncodingProfile()I
     .locals 5
 
-    .line 707
+    .line 628
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->getVideoFrameWidth()I
 
     move-result v0
 
-    .line 708
+    .line 629
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->getVideoFrameHeight()I
 
     move-result v1
 
-    .line 709
+    .line 630
     iget-boolean v2, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->isHdr:Z
 
     if-eqz v2, :cond_0
 
-    .line 710
+    .line 631
     invoke-static {}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getVideoHdrRecordingProfile()I
 
     move-result p0
@@ -1701,7 +1700,7 @@
 
     if-lt v1, v2, :cond_2
 
-    .line 712
+    .line 633
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->getVideoCodec()I
 
     move-result p0
@@ -1733,14 +1732,14 @@
 .method public getVideoEncodingProfileLevel()I
     .locals 8
 
-    .line 725
+    .line 646
     iget v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->videoCodec:I
 
     const/4 v1, 0x5
 
     if-ne v0, v1, :cond_0
 
-    .line 726
+    .line 647
     iget v2, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->videoFrameWidth:I
 
     iget v3, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->videoFrameHeight:I
@@ -1759,7 +1758,7 @@
 
     return p0
 
-    .line 729
+    .line 650
     :cond_0
     iget v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->videoFrameWidth:I
 
@@ -1783,7 +1782,7 @@
 .method public getVideoFrameHeight()I
     .locals 0
 
-    .line 639
+    .line 564
     iget p0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->videoFrameHeight:I
 
     return p0
@@ -1792,7 +1791,7 @@
 .method public getVideoFrameRate()I
     .locals 0
 
-    .line 627
+    .line 552
     iget p0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->videoFrameRate:I
 
     return p0
@@ -1801,7 +1800,7 @@
 .method public getVideoFrameWidth()I
     .locals 0
 
-    .line 635
+    .line 560
     iget p0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->videoFrameWidth:I
 
     return p0
@@ -1810,7 +1809,7 @@
 .method public getVideoIFrameInterval()I
     .locals 0
 
-    .line 655
+    .line 580
     iget p0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->videoIFrameInterval:I
 
     return p0
@@ -1819,7 +1818,7 @@
 .method public isAutoFraming()Z
     .locals 0
 
-    .line 691
+    .line 612
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->isAutoFraming:Z
 
     return p0

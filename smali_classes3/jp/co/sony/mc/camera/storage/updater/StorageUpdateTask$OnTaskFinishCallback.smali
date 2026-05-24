@@ -16,4 +16,14 @@
 
 # virtual methods
 .method public abstract onFinish(Ljp/co/sony/mc/camera/storage/Storage$StorageType;I)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "id"
+        }
+    .end annotation
 .end method

@@ -26,13 +26,23 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "parameter"
+        }
+    .end annotation
 
-    .line 390
+    .line 382
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$OnCancelListener;->this$0:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 391
+    .line 383
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$OnCancelListener;->mParameter:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
 
     return-void
@@ -42,13 +52,21 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dialog"
+        }
+    .end annotation
 
-    .line 396
+    .line 388
     const-string p1, "onCancelListener onCancel()"
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->-$$Nest$smtrace(Ljava/lang/String;)V
 
-    .line 398
+    .line 390
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$OnCancelListener;->this$0:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->-$$Nest$fgetmOnCancelListener(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;)Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$MessageDialogOnCancelListener;

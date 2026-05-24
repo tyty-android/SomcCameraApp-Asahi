@@ -25,6 +25,20 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/view/animation/AnimationRequest$AnimationType;Ljp/co/sony/mc/camera/view/animation/AnimationRequest$AnimationDegree;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "degree",
+            "from",
+            "target"
+        }
+    .end annotation
 
     .line 47
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

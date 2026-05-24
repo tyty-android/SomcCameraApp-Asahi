@@ -3,12 +3,12 @@
 .source "FragmentController.java"
 
 # interfaces
-.implements Ljp/co/sony/mc/camera/rtmp/YoutubeDataCallback;
+.implements Ljp/co/sony/mc/camera/qrdetection/QrCodeScanner;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ljp/co/sony/mc/camera/view/FragmentController;->requestExchangeYouTubeAccessToken()V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Ljp/co/sony/mc/camera/view/FragmentController;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 3043
+    .line 4719
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$11;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,32 +43,40 @@
 
 
 # virtual methods
-.method public onFailure(Ljp/co/sony/mc/camera/rtmp/ErrCode;)V
+.method public requestShowDialog(Ljp/co/sony/mc/camera/view/messagedialog/DialogId;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "id"
+        }
+    .end annotation
 
-    .line 3051
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$11;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
+    .line 4728
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$11;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
+    const/4 v0, 0x0
 
-    move-result-object p1
+    new-array v0, v0, [Ljava/lang/Object;
 
-    new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$11$1;
-
-    invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/FragmentController$11$1;-><init>(Ljp/co/sony/mc/camera/view/FragmentController$11;)V
-
-    invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/CameraActivity;->runOnUiThread(Ljava/lang/Runnable;)V
+    invoke-static {p0, p1, v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mshowMessageDialog(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/view/messagedialog/DialogId;[Ljava/lang/Object;)V
 
     return-void
 .end method
 
-.method public onSuccess()V
+.method public start()V
     .locals 0
 
-    .line 3046
+    .line 4723
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$11;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->requestYouTubeChannelName()V
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraAccessor(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraAccessor;
+
+    move-result-object p0
+
+    invoke-interface {p0}, Ljp/co/sony/mc/camera/CameraAccessor;->startQrScan()V
 
     return-void
 .end method

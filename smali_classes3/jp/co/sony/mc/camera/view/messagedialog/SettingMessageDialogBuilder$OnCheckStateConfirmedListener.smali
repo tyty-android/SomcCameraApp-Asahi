@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract onCheckedStateConfirmed(Z)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isChecked"
+        }
+    .end annotation
 .end method

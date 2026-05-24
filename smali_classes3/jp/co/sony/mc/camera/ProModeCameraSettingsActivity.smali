@@ -242,7 +242,7 @@
     .line 58
     invoke-super {p0, p1}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->onCreate(Landroid/os/Bundle;)V
 
-    const p1, 0x7f0c0025
+    const p1, 0x7f0c0026
 
     .line 60
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/ProModeCameraSettingsActivity;->setContentView(I)V
@@ -287,9 +287,7 @@
     .line 95
     new-instance v0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;
 
-    const/4 v1, 0x0
-
-    invoke-direct {v0, v1}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;-><init>(Z)V
+    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;-><init>()V
 
     .line 96
     new-instance v9, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;

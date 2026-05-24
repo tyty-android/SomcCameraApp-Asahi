@@ -19,12 +19,10 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
         "Ljava/lang/Object;",
         "Lcom/google/common/base/Predicate<",
-        "TT;>;",
+        "Ljava/lang/Object;",
+        ">;",
         "Ljava/io/Serializable;"
     }
 .end annotation
@@ -36,27 +34,24 @@
 
 # instance fields
 .field private final target:Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "TT;"
-        }
-    .end annotation
-.end field
 
 
 # direct methods
 .method private constructor <init>(Ljava/lang/Object;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;)V"
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "target"
         }
     .end annotation
 
-    .line 442
+    .line 453
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 443
+    .line 454
     iput-object p1, p0, Lcom/google/common/base/Predicates$IsEqualToPredicate;->target:Ljava/lang/Object;
 
     return-void
@@ -65,7 +60,7 @@
 .method synthetic constructor <init>(Ljava/lang/Object;Lcom/google/common/base/Predicates$1;)V
     .locals 0
 
-    .line 439
+    .line 450
     invoke-direct {p0, p1}, Lcom/google/common/base/Predicates$IsEqualToPredicate;-><init>(Ljava/lang/Object;)V
 
     return-void
@@ -75,13 +70,20 @@
 # virtual methods
 .method public apply(Ljava/lang/Object;)Z
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;)Z"
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
         }
     .end annotation
 
-    .line 448
+    .line 459
     iget-object p0, p0, Lcom/google/common/base/Predicates$IsEqualToPredicate;->target:Ljava/lang/Object;
 
     invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
@@ -94,19 +96,27 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
-    .line 458
+    .line 469
     instance-of v0, p1, Lcom/google/common/base/Predicates$IsEqualToPredicate;
 
     if-eqz v0, :cond_0
 
-    .line 459
+    .line 470
     check-cast p1, Lcom/google/common/base/Predicates$IsEqualToPredicate;
 
-    .line 460
+    .line 471
     iget-object p0, p0, Lcom/google/common/base/Predicates$IsEqualToPredicate;->target:Ljava/lang/Object;
 
     iget-object p1, p1, Lcom/google/common/base/Predicates$IsEqualToPredicate;->target:Ljava/lang/Object;
@@ -126,7 +136,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 453
+    .line 464
     iget-object p0, p0, Lcom/google/common/base/Predicates$IsEqualToPredicate;->target:Ljava/lang/Object;
 
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
@@ -139,34 +149,16 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 467
+    .line 478
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "Predicates.equalTo("
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
     iget-object p0, p0, Lcom/google/common/base/Predicates$IsEqualToPredicate;->target:Ljava/lang/Object;
 
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, 0x14
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v0, "Predicates.equalTo("
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -179,6 +171,21 @@
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
+
+    return-object p0
+.end method
+
+.method withNarrowedType()Lcom/google/common/base/Predicate;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">()",
+            "Lcom/google/common/base/Predicate<",
+            "TT;>;"
+        }
+    .end annotation
 
     return-object p0
 .end method

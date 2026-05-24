@@ -26,6 +26,16 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/recorder/utility/ReferenceClock;J)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "requestElapsedTime"
+        }
+    .end annotation
 
     .line 188
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/utility/ReferenceClock$NotifyTickEvent;->this$0:Ljp/co/sony/mc/camera/recorder/utility/ReferenceClock;

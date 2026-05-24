@@ -46,6 +46,22 @@
 # direct methods
 .method public constructor <init>(Landroid/os/Handler;IZZZ)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "handler",
+            "captureNum",
+            "shouldCheckFrameCaptureProgress",
+            "isManualFocus",
+            "isBurstCapture"
+        }
+    .end annotation
 
     .line 54
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/device/CaptureResultCheckerBase;-><init>(Landroid/os/Handler;)V
@@ -92,6 +108,14 @@
 
 .method private changeTo(Ljp/co/sony/mc/camera/device/SnapshotResultChecker$State;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "next"
+        }
+    .end annotation
 
     .line 272
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/SnapshotResultChecker;->mState:Ljp/co/sony/mc/camera/device/SnapshotResultChecker$State;
@@ -189,6 +213,14 @@
 
 .method private getCallback(Landroid/hardware/camera2/CaptureRequest;)Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ShutterStateCallback;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "request"
+        }
+    .end annotation
 
     .line 213
     invoke-virtual {p1}, Landroid/hardware/camera2/CaptureRequest;->getTag()Ljava/lang/Object;
@@ -213,6 +245,14 @@
 
 .method private notifyBurstShutterDone(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ShutterStateCallback;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "callback"
+        }
+    .end annotation
 
     .line 242
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/SnapshotResultChecker;->mHandler:Landroid/os/Handler;
@@ -228,6 +268,16 @@
 
 .method private notifyShutterProcessFail(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ShutterStateCallback;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "callback",
+            "captureId"
+        }
+    .end annotation
 
     .line 252
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/SnapshotResultChecker;->mHandler:Landroid/os/Handler;
@@ -243,6 +293,18 @@
 
 .method private notifyShutterProcessFinish(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ShutterStateCallback;II)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x10
+        }
+        names = {
+            "callback",
+            "captureId",
+            "captureNum"
+        }
+    .end annotation
 
     .line 263
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/SnapshotResultChecker;->mHandler:Landroid/os/Handler;
@@ -258,6 +320,14 @@
 
 .method private notifyShutterProcessStart(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ShutterStateCallback;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "callback"
+        }
+    .end annotation
 
     .line 222
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/SnapshotResultChecker;->mHandler:Landroid/os/Handler;
@@ -273,6 +343,22 @@
 
 .method private notifyShutterProcessing(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ShutterStateCallback;IIZLandroid/hardware/camera2/TotalCaptureResult;)V
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x10,
+            0x10,
+            0x10
+        }
+        names = {
+            "callback",
+            "captureId",
+            "index",
+            "afSuccess",
+            "totalCaptureResult"
+        }
+    .end annotation
 
     .line 233
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/SnapshotResultChecker;->mHandler:Landroid/os/Handler;
@@ -304,6 +390,18 @@
 # virtual methods
 .method public checkOnBufferLost(Landroid/hardware/camera2/CaptureRequest;Landroid/view/Surface;J)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "target",
+            "frameNumber"
+        }
+    .end annotation
 
     .line 191
     iget-boolean p2, p0, Ljp/co/sony/mc/camera/device/SnapshotResultChecker;->mIsBurstCapture:Z
@@ -331,6 +429,16 @@
 
 .method public checkOnCompleted(Landroid/hardware/camera2/CaptureRequest;Ljp/co/sony/mc/camera/device/CaptureResultHolder;)V
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "resultHolder"
+        }
+    .end annotation
 
     .line 77
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/device/SnapshotResultChecker;->getCallback(Landroid/hardware/camera2/CaptureRequest;)Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ShutterStateCallback;
@@ -681,6 +789,16 @@
 
 .method public checkOnFailed(Landroid/hardware/camera2/CaptureRequest;Landroid/hardware/camera2/CaptureFailure;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "failure"
+        }
+    .end annotation
 
     .line 165
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/device/SnapshotResultChecker;->getCallback(Landroid/hardware/camera2/CaptureRequest;)Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ShutterStateCallback;
@@ -745,6 +863,14 @@
 
 .method public checkOnStarted(Landroid/hardware/camera2/CaptureRequest;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "request"
+        }
+    .end annotation
 
     .line 64
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/SnapshotResultChecker;->mState:Ljp/co/sony/mc/camera/device/SnapshotResultChecker$State;
@@ -779,6 +905,14 @@
 
 .method public shutdown(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ShutterStateCallback;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "callback"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 

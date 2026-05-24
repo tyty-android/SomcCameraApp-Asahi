@@ -57,6 +57,17 @@
 # direct methods
 .method constructor <init>(Ljava/util/List;Lcom/google/common/base/Function;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromList",
+            "function"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -67,10 +78,10 @@
         }
     .end annotation
 
-    .line 538
+    .line 567
     invoke-direct {p0}, Ljava/util/AbstractSequentialList;-><init>()V
 
-    .line 539
+    .line 568
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -79,7 +90,7 @@
 
     iput-object p1, p0, Lcom/google/common/collect/Lists$TransformingSequentialList;->fromList:Ljava/util/List;
 
-    .line 540
+    .line 569
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -93,19 +104,30 @@
 
 
 # virtual methods
-.method public clear()V
+.method public isEmpty()Z
     .locals 0
 
-    .line 549
+    .line 588
     iget-object p0, p0, Lcom/google/common/collect/Lists$TransformingSequentialList;->fromList:Ljava/util/List;
 
-    invoke-interface {p0}, Ljava/util/List;->clear()V
+    invoke-interface {p0}, Ljava/util/List;->isEmpty()Z
 
-    return-void
+    move-result p0
+
+    return p0
 .end method
 
 .method public listIterator(I)Ljava/util/ListIterator;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -114,7 +136,7 @@
         }
     .end annotation
 
-    .line 559
+    .line 593
     new-instance v0, Lcom/google/common/collect/Lists$TransformingSequentialList$1;
 
     iget-object v1, p0, Lcom/google/common/collect/Lists$TransformingSequentialList;->fromList:Ljava/util/List;
@@ -128,10 +150,35 @@
     return-object v0
 .end method
 
+.method protected removeRange(II)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromIndex",
+            "toIndex"
+        }
+    .end annotation
+
+    .line 578
+    iget-object p0, p0, Lcom/google/common/collect/Lists$TransformingSequentialList;->fromList:Ljava/util/List;
+
+    invoke-interface {p0, p1, p2}, Ljava/util/List;->subList(II)Ljava/util/List;
+
+    move-result-object p0
+
+    invoke-interface {p0}, Ljava/util/List;->clear()V
+
+    return-void
+.end method
+
 .method public size()I
     .locals 0
 
-    .line 554
+    .line 583
     iget-object p0, p0, Lcom/google/common/collect/Lists$TransformingSequentialList;->fromList:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->size()I

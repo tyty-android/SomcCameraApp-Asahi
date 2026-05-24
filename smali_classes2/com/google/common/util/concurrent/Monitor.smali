@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/util/concurrent/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/util/concurrent/Monitor$Guard;
@@ -13,6 +16,9 @@
 
 # instance fields
 .field private activeGuards:Lcom/google/common/util/concurrent/Monitor$Guard;
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+.end field
 
 .field private final fair:Z
 
@@ -25,7 +31,7 @@
 
     const/4 v0, 0x0
 
-    .line 348
+    .line 352
     invoke-direct {p0, v0}, Lcom/google/common/util/concurrent/Monitor;-><init>(Z)V
 
     return-void
@@ -33,19 +39,27 @@
 
 .method public constructor <init>(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fair"
+        }
+    .end annotation
 
-    .line 357
+    .line 361
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 340
+    .line 343
     iput-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->activeGuards:Lcom/google/common/util/concurrent/Monitor$Guard;
 
-    .line 358
+    .line 362
     iput-boolean p1, p0, Lcom/google/common/util/concurrent/Monitor;->fair:Z
 
-    .line 359
+    .line 363
     new-instance v0, Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-direct {v0, p1}, Ljava/util/concurrent/locks/ReentrantLock;-><init>(Z)V
@@ -58,7 +72,7 @@
 .method static synthetic access$000(Lcom/google/common/util/concurrent/Monitor;)Ljava/util/concurrent/locks/ReentrantLock;
     .locals 0
 
-    .line 203
+    .line 207
     iget-object p0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     return-object p0
@@ -66,6 +80,17 @@
 
 .method private await(Lcom/google/common/util/concurrent/Monitor$Guard;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "guard",
+            "signalBeforeWaiting"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
@@ -74,21 +99,21 @@
 
     if-eqz p2, :cond_0
 
-    .line 1069
+    .line 1203
     invoke-direct {p0}, Lcom/google/common/util/concurrent/Monitor;->signalNextWaiter()V
 
-    .line 1071
+    .line 1205
     :cond_0
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/Monitor;->beginWaitingFor(Lcom/google/common/util/concurrent/Monitor$Guard;)V
 
-    .line 1074
+    .line 1208
     :cond_1
     :try_start_0
     iget-object p2, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->condition:Ljava/util/concurrent/locks/Condition;
 
     invoke-interface {p2}, Ljava/util/concurrent/locks/Condition;->await()V
 
-    .line 1075
+    .line 1209
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
 
     move-result p2
@@ -97,7 +122,7 @@
 
     if-eqz p2, :cond_1
 
-    .line 1077
+    .line 1211
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/Monitor;->endWaitingFor(Lcom/google/common/util/concurrent/Monitor$Guard;)V
 
     return-void
@@ -107,12 +132,25 @@
 
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/Monitor;->endWaitingFor(Lcom/google/common/util/concurrent/Monitor$Guard;)V
 
-    .line 1078
+    .line 1212
     throw p2
 .end method
 
 .method private awaitNanos(Lcom/google/common/util/concurrent/Monitor$Guard;JZ)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "guard",
+            "nanos",
+            "signalBeforeWaiting"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
@@ -134,7 +172,7 @@
 
     if-nez v1, :cond_1
 
-    .line 1118
+    .line 1252
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/Monitor;->endWaitingFor(Lcom/google/common/util/concurrent/Monitor$Guard;)V
 
     :cond_1
@@ -145,17 +183,17 @@
 
     if-eqz p4, :cond_3
 
-    .line 1108
+    .line 1242
     :try_start_0
     invoke-direct {p0}, Lcom/google/common/util/concurrent/Monitor;->signalNextWaiter()V
 
-    .line 1110
+    .line 1244
     :cond_3
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/Monitor;->beginWaitingFor(Lcom/google/common/util/concurrent/Monitor$Guard;)V
 
     move v1, v3
 
-    .line 1113
+    .line 1247
     :cond_4
     iget-object v2, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->condition:Ljava/util/concurrent/locks/Condition;
 
@@ -163,7 +201,7 @@
 
     move-result-wide p2
 
-    .line 1114
+    .line 1248
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
 
     move-result v2
@@ -174,7 +212,7 @@
 
     if-nez v1, :cond_5
 
-    .line 1118
+    .line 1252
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/Monitor;->endWaitingFor(Lcom/google/common/util/concurrent/Monitor$Guard;)V
 
     :cond_5
@@ -187,31 +225,41 @@
 
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/Monitor;->endWaitingFor(Lcom/google/common/util/concurrent/Monitor$Guard;)V
 
-    .line 1120
+    .line 1254
     :cond_6
     throw p2
 .end method
 
 .method private awaitUninterruptibly(Lcom/google/common/util/concurrent/Monitor$Guard;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "guard",
+            "signalBeforeWaiting"
+        }
+    .end annotation
 
     if-eqz p2, :cond_0
 
-    .line 1084
+    .line 1218
     invoke-direct {p0}, Lcom/google/common/util/concurrent/Monitor;->signalNextWaiter()V
 
-    .line 1086
+    .line 1220
     :cond_0
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/Monitor;->beginWaitingFor(Lcom/google/common/util/concurrent/Monitor$Guard;)V
 
-    .line 1089
+    .line 1223
     :cond_1
     :try_start_0
     iget-object p2, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->condition:Ljava/util/concurrent/locks/Condition;
 
     invoke-interface {p2}, Ljava/util/concurrent/locks/Condition;->awaitUninterruptibly()V
 
-    .line 1090
+    .line 1224
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
 
     move-result p2
@@ -220,7 +268,7 @@
 
     if-eqz p2, :cond_1
 
-    .line 1092
+    .line 1226
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/Monitor;->endWaitingFor(Lcom/google/common/util/concurrent/Monitor$Guard;)V
 
     return-void
@@ -230,14 +278,22 @@
 
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/Monitor;->endWaitingFor(Lcom/google/common/util/concurrent/Monitor$Guard;)V
 
-    .line 1093
+    .line 1227
     throw p2
 .end method
 
 .method private beginWaitingFor(Lcom/google/common/util/concurrent/Monitor$Guard;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "guard"
+        }
+    .end annotation
 
-    .line 1032
+    .line 1166
     iget v0, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->waiterCount:I
 
     add-int/lit8 v1, v0, 0x1
@@ -246,12 +302,12 @@
 
     if-nez v0, :cond_0
 
-    .line 1035
+    .line 1169
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->activeGuards:Lcom/google/common/util/concurrent/Monitor$Guard;
 
     iput-object v0, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->next:Lcom/google/common/util/concurrent/Monitor$Guard;
 
-    .line 1036
+    .line 1170
     iput-object p1, p0, Lcom/google/common/util/concurrent/Monitor;->activeGuards:Lcom/google/common/util/concurrent/Monitor$Guard;
 
     :cond_0
@@ -260,8 +316,16 @@
 
 .method private endWaitingFor(Lcom/google/common/util/concurrent/Monitor$Guard;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "guard"
+        }
+    .end annotation
 
-    .line 1043
+    .line 1177
     iget v0, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->waiterCount:I
 
     add-int/lit8 v0, v0, -0x1
@@ -270,7 +334,7 @@
 
     if-nez v0, :cond_2
 
-    .line 1046
+    .line 1180
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->activeGuards:Lcom/google/common/util/concurrent/Monitor$Guard;
 
     const/4 v1, 0x0
@@ -282,26 +346,26 @@
 
     if-nez v2, :cond_0
 
-    .line 1049
+    .line 1183
     iget-object p1, v0, Lcom/google/common/util/concurrent/Monitor$Guard;->next:Lcom/google/common/util/concurrent/Monitor$Guard;
 
     iput-object p1, p0, Lcom/google/common/util/concurrent/Monitor;->activeGuards:Lcom/google/common/util/concurrent/Monitor$Guard;
 
     goto :goto_1
 
-    .line 1051
+    .line 1185
     :cond_0
     iget-object p0, v0, Lcom/google/common/util/concurrent/Monitor$Guard;->next:Lcom/google/common/util/concurrent/Monitor$Guard;
 
     iput-object p0, v2, Lcom/google/common/util/concurrent/Monitor$Guard;->next:Lcom/google/common/util/concurrent/Monitor$Guard;
 
-    .line 1053
+    .line 1187
     :goto_1
     iput-object v1, v0, Lcom/google/common/util/concurrent/Monitor$Guard;->next:Lcom/google/common/util/concurrent/Monitor$Guard;
 
     goto :goto_2
 
-    .line 1046
+    .line 1180
     :cond_1
     iget-object v2, v0, Lcom/google/common/util/concurrent/Monitor$Guard;->next:Lcom/google/common/util/concurrent/Monitor$Guard;
 
@@ -320,6 +384,14 @@
 
 .method private static initNanoTime(J)J
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "timeoutNanos"
+        }
+    .end annotation
 
     const-wide/16 v0, 0x0
 
@@ -329,7 +401,7 @@
 
     return-wide v0
 
-    .line 935
+    .line 1068
     :cond_0
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 
@@ -347,8 +419,16 @@
 
 .method private isSatisfied(Lcom/google/common/util/concurrent/Monitor$Guard;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "guard"
+        }
+    .end annotation
 
-    .line 1014
+    .line 1147
     :try_start_0
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
 
@@ -361,15 +441,25 @@
     :catchall_0
     move-exception p1
 
-    .line 1016
+    .line 1150
     invoke-direct {p0}, Lcom/google/common/util/concurrent/Monitor;->signalAllWaiters()V
 
-    .line 1017
+    .line 1151
     throw p1
 .end method
 
 .method private static remainingNanos(JJ)J
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "startTime",
+            "timeoutNanos"
+        }
+    .end annotation
 
     const-wide/16 v0, 0x0
 
@@ -379,7 +469,7 @@
 
     goto :goto_0
 
-    .line 952
+    .line 1085
     :cond_0
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 
@@ -396,18 +486,18 @@
 .method private signalAllWaiters()V
     .locals 1
 
-    .line 1024
+    .line 1158
     iget-object p0, p0, Lcom/google/common/util/concurrent/Monitor;->activeGuards:Lcom/google/common/util/concurrent/Monitor$Guard;
 
     :goto_0
     if-eqz p0, :cond_0
 
-    .line 1025
+    .line 1159
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor$Guard;->condition:Ljava/util/concurrent/locks/Condition;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Condition;->signalAll()V
 
-    .line 1024
+    .line 1158
     iget-object p0, p0, Lcom/google/common/util/concurrent/Monitor$Guard;->next:Lcom/google/common/util/concurrent/Monitor$Guard;
 
     goto :goto_0
@@ -419,27 +509,27 @@
 .method private signalNextWaiter()V
     .locals 2
 
-    .line 981
+    .line 1114
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->activeGuards:Lcom/google/common/util/concurrent/Monitor$Guard;
 
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 982
+    .line 1115
     invoke-direct {p0, v0}, Lcom/google/common/util/concurrent/Monitor;->isSatisfied(Lcom/google/common/util/concurrent/Monitor$Guard;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 983
+    .line 1116
     iget-object p0, v0, Lcom/google/common/util/concurrent/Monitor$Guard;->condition:Ljava/util/concurrent/locks/Condition;
 
     invoke-interface {p0}, Ljava/util/concurrent/locks/Condition;->signal()V
 
     goto :goto_1
 
-    .line 981
+    .line 1114
     :cond_0
     iget-object v0, v0, Lcom/google/common/util/concurrent/Monitor$Guard;->next:Lcom/google/common/util/concurrent/Monitor$Guard;
 
@@ -452,8 +542,18 @@
 
 .method private static toSafeNanos(JLjava/util/concurrent/TimeUnit;)J
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "time",
+            "unit"
+        }
+    .end annotation
 
-    .line 923
+    .line 1056
     invoke-virtual {p2, p0, p1}, Ljava/util/concurrent/TimeUnit;->toNanos(J)J
 
     move-result-wide v0
@@ -462,7 +562,7 @@
 
     const-wide v4, 0x5ffffffffffffffdL    # 2.6815615859885185E154
 
-    .line 924
+    .line 1057
     invoke-static/range {v0 .. v5}, Lcom/google/common/primitives/Longs;->constrainToRange(JJJ)J
 
     move-result-wide p0
@@ -475,7 +575,7 @@
 .method public enter()V
     .locals 0
 
-    .line 364
+    .line 388
     iget-object p0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
@@ -485,16 +585,26 @@
 
 .method public enter(JLjava/util/concurrent/TimeUnit;)Z
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "time",
+            "unit"
+        }
+    .end annotation
 
-    .line 374
+    .line 410
     invoke-static {p1, p2, p3}, Lcom/google/common/util/concurrent/Monitor;->toSafeNanos(JLjava/util/concurrent/TimeUnit;)J
 
     move-result-wide p1
 
-    .line 375
+    .line 411
     iget-object p3, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 376
+    .line 412
     iget-boolean p0, p0, Lcom/google/common/util/concurrent/Monitor;->fair:Z
 
     const/4 v0, 0x1
@@ -509,13 +619,13 @@
 
     return v0
 
-    .line 379
+    .line 415
     :cond_0
     invoke-static {}, Ljava/lang/Thread;->interrupted()Z
 
     move-result p0
 
-    .line 381
+    .line 417
     :try_start_0
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 
@@ -525,7 +635,7 @@
 
     move-wide v3, p1
 
-    .line 384
+    .line 420
     :goto_0
     :try_start_1
     sget-object v5, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
@@ -539,7 +649,7 @@
 
     if-eqz p0, :cond_1
 
-    .line 392
+    .line 428
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object p0
@@ -549,7 +659,7 @@
     :cond_1
     return p1
 
-    .line 387
+    .line 423
     :catch_0
     :try_start_2
     invoke-static {v1, v2, p1, p2}, Lcom/google/common/util/concurrent/Monitor;->remainingNanos(JJ)J
@@ -575,33 +685,66 @@
     :goto_1
     if-eqz v0, :cond_2
 
-    .line 392
+    .line 428
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object p0
 
     invoke-virtual {p0}, Ljava/lang/Thread;->interrupt()V
 
-    .line 394
+    .line 430
     :cond_2
     throw p1
 .end method
 
+.method public enter(Ljava/time/Duration;)Z
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "time"
+        }
+    .end annotation
+
+    .line 400
+    invoke-static {p1}, Lcom/google/common/util/concurrent/Internal;->toNanosSaturated(Ljava/time/Duration;)J
+
+    move-result-wide v0
+
+    sget-object p1, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
+
+    invoke-virtual {p0, v0, v1, p1}, Lcom/google/common/util/concurrent/Monitor;->enter(JLjava/util/concurrent/TimeUnit;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
 .method public enterIf(Lcom/google/common/util/concurrent/Monitor$Guard;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "guard"
+        }
+    .end annotation
 
-    .line 610
+    .line 690
     iget-object v0, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     if-ne v0, p0, :cond_1
 
-    .line 613
+    .line 693
     iget-object p0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 614
+    .line 694
     invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
 
-    .line 618
+    .line 698
     :try_start_0
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
 
@@ -611,7 +754,7 @@
 
     if-nez p1, :cond_0
 
-    .line 621
+    .line 701
     invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
     :cond_0
@@ -622,10 +765,10 @@
 
     invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
-    .line 623
+    .line 703
     throw p1
 
-    .line 611
+    .line 691
     :cond_1
     new-instance p0, Ljava/lang/IllegalMonitorStateException;
 
@@ -636,13 +779,25 @@
 
 .method public enterIf(Lcom/google/common/util/concurrent/Monitor$Guard;JLjava/util/concurrent/TimeUnit;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "guard",
+            "time",
+            "unit"
+        }
+    .end annotation
 
-    .line 634
+    .line 727
     iget-object v0, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     if-ne v0, p0, :cond_2
 
-    .line 637
+    .line 730
     invoke-virtual {p0, p2, p3, p4}, Lcom/google/common/util/concurrent/Monitor;->enter(JLjava/util/concurrent/TimeUnit;)Z
 
     move-result p2
@@ -653,7 +808,7 @@
 
     return p0
 
-    .line 643
+    .line 736
     :cond_0
     :try_start_0
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
@@ -664,7 +819,7 @@
 
     if-nez p1, :cond_1
 
-    .line 646
+    .line 739
     iget-object p0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
@@ -679,10 +834,10 @@
 
     invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
-    .line 648
+    .line 741
     throw p1
 
-    .line 635
+    .line 728
     :cond_2
     new-instance p0, Ljava/lang/IllegalMonitorStateException;
 
@@ -691,26 +846,62 @@
     throw p0
 .end method
 
+.method public enterIf(Lcom/google/common/util/concurrent/Monitor$Guard;Ljava/time/Duration;)Z
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "guard",
+            "time"
+        }
+    .end annotation
+
+    .line 716
+    invoke-static {p2}, Lcom/google/common/util/concurrent/Internal;->toNanosSaturated(Ljava/time/Duration;)J
+
+    move-result-wide v0
+
+    sget-object p2, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
+
+    invoke-virtual {p0, p1, v0, v1, p2}, Lcom/google/common/util/concurrent/Monitor;->enterIf(Lcom/google/common/util/concurrent/Monitor$Guard;JLjava/util/concurrent/TimeUnit;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
 .method public enterIfInterruptibly(Lcom/google/common/util/concurrent/Monitor$Guard;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "guard"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
         }
     .end annotation
 
-    .line 659
+    .line 752
     iget-object v0, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     if-ne v0, p0, :cond_1
 
-    .line 662
+    .line 755
     iget-object p0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 663
+    .line 756
     invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->lockInterruptibly()V
 
-    .line 667
+    .line 760
     :try_start_0
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
 
@@ -720,7 +911,7 @@
 
     if-nez p1, :cond_0
 
-    .line 670
+    .line 763
     invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
     :cond_0
@@ -731,10 +922,10 @@
 
     invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
-    .line 672
+    .line 765
     throw p1
 
-    .line 660
+    .line 753
     :cond_1
     new-instance p0, Ljava/lang/IllegalMonitorStateException;
 
@@ -745,21 +936,34 @@
 
 .method public enterIfInterruptibly(Lcom/google/common/util/concurrent/Monitor$Guard;JLjava/util/concurrent/TimeUnit;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "guard",
+            "time",
+            "unit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
         }
     .end annotation
 
-    .line 684
+    .line 790
     iget-object v0, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     if-ne v0, p0, :cond_2
 
-    .line 687
+    .line 793
     iget-object p0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 688
+    .line 794
     invoke-virtual {p0, p2, p3, p4}, Ljava/util/concurrent/locks/ReentrantLock;->tryLock(JLjava/util/concurrent/TimeUnit;)Z
 
     move-result p2
@@ -770,7 +974,7 @@
 
     return p0
 
-    .line 694
+    .line 800
     :cond_0
     :try_start_0
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
@@ -781,7 +985,7 @@
 
     if-nez p1, :cond_1
 
-    .line 697
+    .line 803
     invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
     :cond_1
@@ -792,16 +996,49 @@
 
     invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
-    .line 699
+    .line 805
     throw p1
 
-    .line 685
+    .line 791
     :cond_2
     new-instance p0, Ljava/lang/IllegalMonitorStateException;
 
     invoke-direct {p0}, Ljava/lang/IllegalMonitorStateException;-><init>()V
 
     throw p0
+.end method
+
+.method public enterIfInterruptibly(Lcom/google/common/util/concurrent/Monitor$Guard;Ljava/time/Duration;)Z
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "guard",
+            "time"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/InterruptedException;
+        }
+    .end annotation
+
+    .line 778
+    invoke-static {p2}, Lcom/google/common/util/concurrent/Internal;->toNanosSaturated(Ljava/time/Duration;)J
+
+    move-result-wide v0
+
+    sget-object p2, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
+
+    invoke-virtual {p0, p1, v0, v1, p2}, Lcom/google/common/util/concurrent/Monitor;->enterIfInterruptibly(Lcom/google/common/util/concurrent/Monitor$Guard;JLjava/util/concurrent/TimeUnit;)Z
+
+    move-result p0
+
+    return p0
 .end method
 
 .method public enterInterruptibly()V
@@ -812,7 +1049,7 @@
         }
     .end annotation
 
-    .line 403
+    .line 439
     iget-object p0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->lockInterruptibly()V
@@ -822,13 +1059,24 @@
 
 .method public enterInterruptibly(JLjava/util/concurrent/TimeUnit;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "time",
+            "unit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
         }
     .end annotation
 
-    .line 414
+    .line 463
     iget-object p0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {p0, p1, p2, p3}, Ljava/util/concurrent/locks/ReentrantLock;->tryLock(JLjava/util/concurrent/TimeUnit;)Z
@@ -838,31 +1086,71 @@
     return p0
 .end method
 
-.method public enterWhen(Lcom/google/common/util/concurrent/Monitor$Guard;)V
+.method public enterInterruptibly(Ljava/time/Duration;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "time"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
         }
     .end annotation
 
-    .line 434
+    .line 452
+    invoke-static {p1}, Lcom/google/common/util/concurrent/Internal;->toNanosSaturated(Ljava/time/Duration;)J
+
+    move-result-wide v0
+
+    sget-object p1, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
+
+    invoke-virtual {p0, v0, v1, p1}, Lcom/google/common/util/concurrent/Monitor;->enterInterruptibly(JLjava/util/concurrent/TimeUnit;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public enterWhen(Lcom/google/common/util/concurrent/Monitor$Guard;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "guard"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/InterruptedException;
+        }
+    .end annotation
+
+    .line 483
     iget-object v0, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     if-ne v0, p0, :cond_1
 
-    .line 437
+    .line 486
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 438
+    .line 487
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->isHeldByCurrentThread()Z
 
     move-result v1
 
-    .line 439
+    .line 488
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->lockInterruptibly()V
 
-    .line 443
+    .line 492
     :try_start_0
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
 
@@ -870,7 +1158,7 @@
 
     if-nez v0, :cond_0
 
-    .line 444
+    .line 493
     invoke-direct {p0, p1, v1}, Lcom/google/common/util/concurrent/Monitor;->await(Lcom/google/common/util/concurrent/Monitor$Guard;Z)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -881,13 +1169,13 @@
     :catchall_0
     move-exception p1
 
-    .line 449
+    .line 498
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/Monitor;->leave()V
 
-    .line 451
+    .line 500
     throw p1
 
-    .line 435
+    .line 484
     :cond_1
     new-instance p0, Ljava/lang/IllegalMonitorStateException;
 
@@ -898,31 +1186,44 @@
 
 .method public enterWhen(Lcom/google/common/util/concurrent/Monitor$Guard;JLjava/util/concurrent/TimeUnit;)Z
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "guard",
+            "time",
+            "unit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
         }
     .end annotation
 
-    .line 464
+    .line 531
     invoke-static {p2, p3, p4}, Lcom/google/common/util/concurrent/Monitor;->toSafeNanos(JLjava/util/concurrent/TimeUnit;)J
 
     move-result-wide v0
 
-    .line 465
+    .line 532
     iget-object v2, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     if-ne v2, p0, :cond_8
 
-    .line 468
+    .line 535
     iget-object v2, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 469
+    .line 536
     invoke-virtual {v2}, Ljava/util/concurrent/locks/ReentrantLock;->isHeldByCurrentThread()Z
 
     move-result v3
 
-    .line 474
+    .line 541
     iget-boolean v4, p0, Lcom/google/common/util/concurrent/Monitor;->fair:Z
 
     const/4 v5, 0x0
@@ -931,14 +1232,14 @@
 
     if-nez v4, :cond_1
 
-    .line 476
+    .line 543
     invoke-static {}, Ljava/lang/Thread;->interrupted()Z
 
     move-result v4
 
     if-nez v4, :cond_0
 
-    .line 479
+    .line 546
     invoke-virtual {v2}, Ljava/util/concurrent/locks/ReentrantLock;->tryLock()Z
 
     move-result v4
@@ -949,7 +1250,7 @@
 
     goto :goto_0
 
-    .line 477
+    .line 544
     :cond_0
     new-instance p0, Ljava/lang/InterruptedException;
 
@@ -957,13 +1258,13 @@
 
     throw p0
 
-    .line 483
+    .line 550
     :cond_1
     invoke-static {v0, v1}, Lcom/google/common/util/concurrent/Monitor;->initNanoTime(J)J
 
     move-result-wide v8
 
-    .line 484
+    .line 551
     invoke-virtual {v2, p2, p3, p4}, Ljava/util/concurrent/locks/ReentrantLock;->tryLock(JLjava/util/concurrent/TimeUnit;)Z
 
     move-result p2
@@ -972,7 +1273,7 @@
 
     return v5
 
-    .line 493
+    .line 560
     :cond_2
     :goto_0
     :try_start_0
@@ -988,13 +1289,13 @@
 
     goto :goto_1
 
-    .line 496
+    .line 563
     :cond_3
     invoke-static {v8, v9, v0, v1}, Lcom/google/common/util/concurrent/Monitor;->remainingNanos(JJ)J
 
     move-result-wide v0
 
-    .line 494
+    .line 561
     :goto_1
     invoke-direct {p0, p1, v0, v1, v3}, Lcom/google/common/util/concurrent/Monitor;->awaitNanos(Lcom/google/common/util/concurrent/Monitor$Guard;JZ)Z
 
@@ -1010,7 +1311,7 @@
     :cond_5
     if-nez v5, :cond_6
 
-    .line 508
+    .line 575
     invoke-virtual {v2}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
     :cond_6
@@ -1021,7 +1322,7 @@
 
     if-nez v3, :cond_7
 
-    .line 505
+    .line 572
     :try_start_1
     invoke-direct {p0}, Lcom/google/common/util/concurrent/Monitor;->signalNextWaiter()V
     :try_end_1
@@ -1032,21 +1333,21 @@
     :catchall_1
     move-exception p0
 
-    .line 508
+    .line 575
     invoke-virtual {v2}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
-    .line 509
+    .line 576
     throw p0
 
-    .line 508
+    .line 575
     :cond_7
     :goto_2
     invoke-virtual {v2}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
-    .line 511
+    .line 578
     throw p1
 
-    .line 466
+    .line 533
     :cond_8
     new-instance p0, Ljava/lang/IllegalMonitorStateException;
 
@@ -1055,26 +1356,67 @@
     throw p0
 .end method
 
+.method public enterWhen(Lcom/google/common/util/concurrent/Monitor$Guard;Ljava/time/Duration;)Z
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "guard",
+            "time"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/InterruptedException;
+        }
+    .end annotation
+
+    .line 515
+    invoke-static {p2}, Lcom/google/common/util/concurrent/Internal;->toNanosSaturated(Ljava/time/Duration;)J
+
+    move-result-wide v0
+
+    sget-object p2, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
+
+    invoke-virtual {p0, p1, v0, v1, p2}, Lcom/google/common/util/concurrent/Monitor;->enterWhen(Lcom/google/common/util/concurrent/Monitor$Guard;JLjava/util/concurrent/TimeUnit;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
 .method public enterWhenUninterruptibly(Lcom/google/common/util/concurrent/Monitor$Guard;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "guard"
+        }
+    .end annotation
 
-    .line 516
+    .line 583
     iget-object v0, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     if-ne v0, p0, :cond_1
 
-    .line 519
+    .line 586
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 520
+    .line 587
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->isHeldByCurrentThread()Z
 
     move-result v1
 
-    .line 521
+    .line 588
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
 
-    .line 525
+    .line 592
     :try_start_0
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
 
@@ -1082,7 +1424,7 @@
 
     if-nez v0, :cond_0
 
-    .line 526
+    .line 593
     invoke-direct {p0, p1, v1}, Lcom/google/common/util/concurrent/Monitor;->awaitUninterruptibly(Lcom/google/common/util/concurrent/Monitor$Guard;Z)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -1093,13 +1435,13 @@
     :catchall_0
     move-exception p1
 
-    .line 531
+    .line 598
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/Monitor;->leave()V
 
-    .line 533
+    .line 600
     throw p1
 
-    .line 517
+    .line 584
     :cond_1
     new-instance p0, Ljava/lang/IllegalMonitorStateException;
 
@@ -1110,31 +1452,43 @@
 
 .method public enterWhenUninterruptibly(Lcom/google/common/util/concurrent/Monitor$Guard;JLjava/util/concurrent/TimeUnit;)Z
     .locals 11
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "guard",
+            "time",
+            "unit"
+        }
+    .end annotation
 
-    .line 544
+    .line 624
     invoke-static {p2, p3, p4}, Lcom/google/common/util/concurrent/Monitor;->toSafeNanos(JLjava/util/concurrent/TimeUnit;)J
 
     move-result-wide p2
 
-    .line 545
+    .line 625
     iget-object p4, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     if-ne p4, p0, :cond_9
 
-    .line 548
+    .line 628
     iget-object p4, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 550
+    .line 630
     invoke-virtual {p4}, Ljava/util/concurrent/locks/ReentrantLock;->isHeldByCurrentThread()Z
 
     move-result v0
 
-    .line 551
+    .line 631
     invoke-static {}, Ljava/lang/Thread;->interrupted()Z
 
     move-result v1
 
-    .line 553
+    .line 633
     :try_start_0
     iget-boolean v2, p0, Lcom/google/common/util/concurrent/Monitor;->fair:Z
 
@@ -1159,7 +1513,7 @@
 
     goto :goto_2
 
-    .line 554
+    .line 634
     :cond_1
     :goto_0
     invoke-static {p2, p3}, Lcom/google/common/util/concurrent/Monitor;->initNanoTime(J)J
@@ -1170,7 +1524,7 @@
 
     move-wide v9, p2
 
-    .line 557
+    .line 637
     :goto_1
     :try_start_1
     sget-object v2, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
@@ -1184,7 +1538,7 @@
 
     if-eqz v2, :cond_6
 
-    .line 573
+    .line 653
     :goto_2
     :try_start_2
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
@@ -1200,7 +1554,7 @@
 
     if-nez v2, :cond_3
 
-    .line 578
+    .line 658
     invoke-static {p2, p3}, Lcom/google/common/util/concurrent/Monitor;->initNanoTime(J)J
 
     move-result-wide v7
@@ -1209,13 +1563,13 @@
 
     goto :goto_3
 
-    .line 581
+    .line 661
     :cond_3
     invoke-static {v7, v8, p2, p3}, Lcom/google/common/util/concurrent/Monitor;->remainingNanos(JJ)J
 
     move-result-wide v9
 
-    .line 583
+    .line 663
     :goto_3
     invoke-direct {p0, p1, v9, v10, v0}, Lcom/google/common/util/concurrent/Monitor;->awaitNanos(Lcom/google/common/util/concurrent/Monitor$Guard;JZ)Z
 
@@ -1227,7 +1581,7 @@
     :goto_4
     if-nez v6, :cond_4
 
-    .line 593
+    .line 673
     :try_start_3
     invoke-virtual {p4}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
     :try_end_3
@@ -1236,7 +1590,7 @@
     :cond_4
     if-eqz v1, :cond_5
 
-    .line 598
+    .line 678
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object p0
@@ -1249,11 +1603,11 @@
     :catchall_0
     move-exception p0
 
-    .line 593
+    .line 673
     :try_start_4
     invoke-virtual {p4}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
-    .line 595
+    .line 675
     throw p0
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_2
@@ -1268,7 +1622,7 @@
     :cond_6
     if-eqz v1, :cond_7
 
-    .line 598
+    .line 678
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object p0
@@ -1278,7 +1632,7 @@
     :cond_7
     return v3
 
-    .line 564
+    .line 644
     :catch_1
     :try_start_5
     invoke-static {v7, v8, p2, p3}, Lcom/google/common/util/concurrent/Monitor;->remainingNanos(JJ)J
@@ -1304,18 +1658,18 @@
     :goto_5
     if-eqz v1, :cond_8
 
-    .line 598
+    .line 678
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/Thread;->interrupt()V
 
-    .line 600
+    .line 680
     :cond_8
     throw p0
 
-    .line 546
+    .line 626
     :cond_9
     new-instance p0, Ljava/lang/IllegalMonitorStateException;
 
@@ -1324,10 +1678,37 @@
     throw p0
 .end method
 
+.method public enterWhenUninterruptibly(Lcom/google/common/util/concurrent/Monitor$Guard;Ljava/time/Duration;)Z
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "guard",
+            "time"
+        }
+    .end annotation
+
+    .line 613
+    invoke-static {p2}, Lcom/google/common/util/concurrent/Internal;->toNanosSaturated(Ljava/time/Duration;)J
+
+    move-result-wide v0
+
+    sget-object p2, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
+
+    invoke-virtual {p0, p1, v0, v1, p2}, Lcom/google/common/util/concurrent/Monitor;->enterWhenUninterruptibly(Lcom/google/common/util/concurrent/Monitor$Guard;JLjava/util/concurrent/TimeUnit;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
 .method public getOccupiedDepth()I
     .locals 0
 
-    .line 856
+    .line 989
     iget-object p0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->getHoldCount()I
@@ -1340,7 +1721,7 @@
 .method public getQueueLength()I
     .locals 0
 
-    .line 866
+    .line 999
     iget-object p0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->getQueueLength()I
@@ -1352,24 +1733,32 @@
 
 .method public getWaitQueueLength(Lcom/google/common/util/concurrent/Monitor$Guard;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "guard"
+        }
+    .end annotation
 
-    .line 906
+    .line 1039
     iget-object v0, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     if-ne v0, p0, :cond_0
 
-    .line 909
+    .line 1042
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
 
-    .line 911
+    .line 1044
     :try_start_0
     iget p1, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->waiterCount:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 913
+    .line 1046
     iget-object p0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
@@ -1383,10 +1772,10 @@
 
     invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
-    .line 914
+    .line 1047
     throw p1
 
-    .line 907
+    .line 1040
     :cond_0
     new-instance p0, Ljava/lang/IllegalMonitorStateException;
 
@@ -1397,8 +1786,16 @@
 
 .method public hasQueuedThread(Ljava/lang/Thread;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "thread"
+        }
+    .end annotation
 
-    .line 886
+    .line 1019
     iget-object p0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {p0, p1}, Ljava/util/concurrent/locks/ReentrantLock;->hasQueuedThread(Ljava/lang/Thread;)Z
@@ -1411,7 +1808,7 @@
 .method public hasQueuedThreads()Z
     .locals 0
 
-    .line 876
+    .line 1009
     iget-object p0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->hasQueuedThreads()Z
@@ -1423,8 +1820,16 @@
 
 .method public hasWaiters(Lcom/google/common/util/concurrent/Monitor$Guard;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "guard"
+        }
+    .end annotation
 
-    .line 896
+    .line 1029
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/Monitor;->getWaitQueueLength(Lcom/google/common/util/concurrent/Monitor$Guard;)I
 
     move-result p0
@@ -1445,7 +1850,7 @@
 .method public isFair()Z
     .locals 0
 
-    .line 832
+    .line 965
     iget-boolean p0, p0, Lcom/google/common/util/concurrent/Monitor;->fair:Z
 
     return p0
@@ -1454,7 +1859,7 @@
 .method public isOccupied()Z
     .locals 0
 
-    .line 840
+    .line 973
     iget-object p0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->isLocked()Z
@@ -1467,7 +1872,7 @@
 .method public isOccupiedByCurrentThread()Z
     .locals 0
 
-    .line 848
+    .line 981
     iget-object p0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->isHeldByCurrentThread()Z
@@ -1480,10 +1885,10 @@
 .method public leave()V
     .locals 3
 
-    .line 819
+    .line 952
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 822
+    .line 955
     :try_start_0
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->getHoldCount()I
 
@@ -1493,12 +1898,12 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 823
+    .line 956
     invoke-direct {p0}, Lcom/google/common/util/concurrent/Monitor;->signalNextWaiter()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 826
+    .line 959
     :cond_0
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
@@ -1509,14 +1914,38 @@
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
-    .line 827
+    .line 960
     throw p0
+.end method
+
+.method public newGuard(Ljava/util/function/BooleanSupplier;)Lcom/google/common/util/concurrent/Monitor$Guard;
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "isSatisfied"
+        }
+    .end annotation
+
+    .line 377
+    const-string v0, "isSatisfied"
+
+    invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 378
+    new-instance v0, Lcom/google/common/util/concurrent/Monitor$1;
+
+    invoke-direct {v0, p0, p0, p1}, Lcom/google/common/util/concurrent/Monitor$1;-><init>(Lcom/google/common/util/concurrent/Monitor;Lcom/google/common/util/concurrent/Monitor;Ljava/util/function/BooleanSupplier;)V
+
+    return-object v0
 .end method
 
 .method public tryEnter()Z
     .locals 0
 
-    .line 425
+    .line 474
     iget-object p0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->tryLock()Z
@@ -1528,16 +1957,24 @@
 
 .method public tryEnterIf(Lcom/google/common/util/concurrent/Monitor$Guard;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "guard"
+        }
+    .end annotation
 
-    .line 711
+    .line 817
     iget-object v0, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     if-ne v0, p0, :cond_2
 
-    .line 714
+    .line 820
     iget-object p0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 715
+    .line 821
     invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->tryLock()Z
 
     move-result v0
@@ -1548,7 +1985,7 @@
 
     return p0
 
-    .line 721
+    .line 827
     :cond_0
     :try_start_0
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
@@ -1559,7 +1996,7 @@
 
     if-nez p1, :cond_1
 
-    .line 724
+    .line 830
     invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
     :cond_1
@@ -1570,10 +2007,10 @@
 
     invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
-    .line 726
+    .line 832
     throw p1
 
-    .line 712
+    .line 818
     :cond_2
     new-instance p0, Ljava/lang/IllegalMonitorStateException;
 
@@ -1583,53 +2020,52 @@
 .end method
 
 .method public waitFor(Lcom/google/common/util/concurrent/Monitor$Guard;)V
-    .locals 3
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "guard"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
         }
     .end annotation
 
-    .line 736
+    .line 842
     iget-object v0, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
-    const/4 v1, 0x1
+    if-ne v0, p0, :cond_1
 
-    if-ne v0, p0, :cond_0
+    iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    move v0, v1
+    invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->isHeldByCurrentThread()Z
 
-    goto :goto_0
+    move-result v0
 
-    :cond_0
-    const/4 v0, 0x0
+    if-eqz v0, :cond_1
 
-    :goto_0
-    iget-object v2, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
-
-    invoke-virtual {v2}, Ljava/util/concurrent/locks/ReentrantLock;->isHeldByCurrentThread()Z
-
-    move-result v2
-
-    and-int/2addr v0, v2
-
-    if-eqz v0, :cond_2
-
-    .line 739
+    .line 845
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
 
     move-result v0
 
-    if-nez v0, :cond_1
+    if-nez v0, :cond_0
 
-    .line 740
-    invoke-direct {p0, p1, v1}, Lcom/google/common/util/concurrent/Monitor;->await(Lcom/google/common/util/concurrent/Monitor$Guard;Z)V
+    const/4 v0, 0x1
 
-    :cond_1
+    .line 846
+    invoke-direct {p0, p1, v0}, Lcom/google/common/util/concurrent/Monitor;->await(Lcom/google/common/util/concurrent/Monitor$Guard;Z)V
+
+    :cond_0
     return-void
 
-    .line 737
-    :cond_2
+    .line 843
+    :cond_1
     new-instance p0, Ljava/lang/IllegalMonitorStateException;
 
     invoke-direct {p0}, Ljava/lang/IllegalMonitorStateException;-><init>()V
@@ -1638,77 +2074,80 @@
 .end method
 
 .method public waitFor(Lcom/google/common/util/concurrent/Monitor$Guard;JLjava/util/concurrent/TimeUnit;)Z
-    .locals 2
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "guard",
+            "time",
+            "unit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
         }
     .end annotation
 
-    .line 753
+    .line 873
     invoke-static {p2, p3, p4}, Lcom/google/common/util/concurrent/Monitor;->toSafeNanos(JLjava/util/concurrent/TimeUnit;)J
 
     move-result-wide p2
 
-    .line 754
+    .line 874
     iget-object p4, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
-    const/4 v0, 0x1
+    if-ne p4, p0, :cond_2
 
-    if-ne p4, p0, :cond_0
+    iget-object p4, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    move p4, v0
+    invoke-virtual {p4}, Ljava/util/concurrent/locks/ReentrantLock;->isHeldByCurrentThread()Z
 
-    goto :goto_0
+    move-result p4
 
-    :cond_0
-    const/4 p4, 0x0
+    if-eqz p4, :cond_2
 
-    :goto_0
-    iget-object v1, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
-
-    invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantLock;->isHeldByCurrentThread()Z
-
-    move-result v1
-
-    and-int/2addr p4, v1
-
-    if-eqz p4, :cond_3
-
-    .line 757
+    .line 877
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
 
     move-result p4
 
-    if-eqz p4, :cond_1
+    const/4 v0, 0x1
+
+    if-eqz p4, :cond_0
 
     return v0
 
-    .line 760
-    :cond_1
+    .line 880
+    :cond_0
     invoke-static {}, Ljava/lang/Thread;->interrupted()Z
 
     move-result p4
 
-    if-nez p4, :cond_2
+    if-nez p4, :cond_1
 
-    .line 763
+    .line 883
     invoke-direct {p0, p1, p2, p3, v0}, Lcom/google/common/util/concurrent/Monitor;->awaitNanos(Lcom/google/common/util/concurrent/Monitor$Guard;JZ)Z
 
     move-result p0
 
     return p0
 
-    .line 761
-    :cond_2
+    .line 881
+    :cond_1
     new-instance p0, Ljava/lang/InterruptedException;
 
     invoke-direct {p0}, Ljava/lang/InterruptedException;-><init>()V
 
     throw p0
 
-    .line 755
-    :cond_3
+    .line 875
+    :cond_2
     new-instance p0, Ljava/lang/IllegalMonitorStateException;
 
     invoke-direct {p0}, Ljava/lang/IllegalMonitorStateException;-><init>()V
@@ -1716,49 +2155,80 @@
     throw p0
 .end method
 
-.method public waitForUninterruptibly(Lcom/google/common/util/concurrent/Monitor$Guard;)V
-    .locals 3
+.method public waitFor(Lcom/google/common/util/concurrent/Monitor$Guard;Ljava/time/Duration;)Z
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "guard",
+            "time"
+        }
+    .end annotation
 
-    .line 771
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/InterruptedException;
+        }
+    .end annotation
+
+    .line 861
+    invoke-static {p2}, Lcom/google/common/util/concurrent/Internal;->toNanosSaturated(Ljava/time/Duration;)J
+
+    move-result-wide v0
+
+    sget-object p2, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
+
+    invoke-virtual {p0, p1, v0, v1, p2}, Lcom/google/common/util/concurrent/Monitor;->waitFor(Lcom/google/common/util/concurrent/Monitor$Guard;JLjava/util/concurrent/TimeUnit;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public waitForUninterruptibly(Lcom/google/common/util/concurrent/Monitor$Guard;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "guard"
+        }
+    .end annotation
+
+    .line 891
     iget-object v0, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
-    const/4 v1, 0x1
+    if-ne v0, p0, :cond_1
 
-    if-ne v0, p0, :cond_0
+    iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    move v0, v1
+    invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->isHeldByCurrentThread()Z
 
-    goto :goto_0
+    move-result v0
 
-    :cond_0
-    const/4 v0, 0x0
+    if-eqz v0, :cond_1
 
-    :goto_0
-    iget-object v2, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
-
-    invoke-virtual {v2}, Ljava/util/concurrent/locks/ReentrantLock;->isHeldByCurrentThread()Z
-
-    move-result v2
-
-    and-int/2addr v0, v2
-
-    if-eqz v0, :cond_2
-
-    .line 774
+    .line 894
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
 
     move-result v0
 
-    if-nez v0, :cond_1
+    if-nez v0, :cond_0
 
-    .line 775
-    invoke-direct {p0, p1, v1}, Lcom/google/common/util/concurrent/Monitor;->awaitUninterruptibly(Lcom/google/common/util/concurrent/Monitor$Guard;Z)V
+    const/4 v0, 0x1
 
-    :cond_1
+    .line 895
+    invoke-direct {p0, p1, v0}, Lcom/google/common/util/concurrent/Monitor;->awaitUninterruptibly(Lcom/google/common/util/concurrent/Monitor$Guard;Z)V
+
+    :cond_0
     return-void
 
-    .line 772
-    :cond_2
+    .line 892
+    :cond_1
     new-instance p0, Ljava/lang/IllegalMonitorStateException;
 
     invoke-direct {p0}, Ljava/lang/IllegalMonitorStateException;-><init>()V
@@ -1767,94 +2237,94 @@
 .end method
 
 .method public waitForUninterruptibly(Lcom/google/common/util/concurrent/Monitor$Guard;JLjava/util/concurrent/TimeUnit;)Z
-    .locals 7
+    .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "guard",
+            "time",
+            "unit"
+        }
+    .end annotation
 
-    .line 787
+    .line 920
     invoke-static {p2, p3, p4}, Lcom/google/common/util/concurrent/Monitor;->toSafeNanos(JLjava/util/concurrent/TimeUnit;)J
 
     move-result-wide p2
 
-    .line 788
+    .line 921
     iget-object p4, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
-    const/4 v0, 0x0
+    if-ne p4, p0, :cond_4
 
-    const/4 v1, 0x1
+    iget-object p4, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    if-ne p4, p0, :cond_0
+    invoke-virtual {p4}, Ljava/util/concurrent/locks/ReentrantLock;->isHeldByCurrentThread()Z
 
-    move p4, v1
+    move-result p4
 
-    goto :goto_0
+    if-eqz p4, :cond_4
 
-    :cond_0
-    move p4, v0
-
-    :goto_0
-    iget-object v2, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
-
-    invoke-virtual {v2}, Ljava/util/concurrent/locks/ReentrantLock;->isHeldByCurrentThread()Z
-
-    move-result v2
-
-    and-int/2addr p4, v2
-
-    if-eqz p4, :cond_5
-
-    .line 791
+    .line 924
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
 
     move-result p4
 
-    if-eqz p4, :cond_1
+    const/4 v0, 0x1
 
-    return v1
+    if-eqz p4, :cond_0
 
-    .line 795
-    :cond_1
+    return v0
+
+    .line 928
+    :cond_0
     invoke-static {p2, p3}, Lcom/google/common/util/concurrent/Monitor;->initNanoTime(J)J
 
-    move-result-wide v2
+    move-result-wide v1
 
-    .line 796
+    .line 929
     invoke-static {}, Ljava/lang/Thread;->interrupted()Z
 
     move-result p4
 
-    move-wide v4, p2
+    move-wide v3, p2
 
-    move v6, v1
+    move v5, v0
 
-    .line 800
-    :goto_1
+    .line 933
+    :goto_0
     :try_start_0
-    invoke-direct {p0, p1, v4, v5, v6}, Lcom/google/common/util/concurrent/Monitor;->awaitNanos(Lcom/google/common/util/concurrent/Monitor$Guard;JZ)Z
+    invoke-direct {p0, p1, v3, v4, v5}, Lcom/google/common/util/concurrent/Monitor;->awaitNanos(Lcom/google/common/util/concurrent/Monitor$Guard;JZ)Z
 
     move-result p0
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    if-eqz p4, :cond_2
+    if-eqz p4, :cond_1
 
-    .line 812
+    .line 945
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/Thread;->interrupt()V
 
-    :cond_2
+    :cond_1
     return p0
 
     :catchall_0
     move-exception p0
 
-    move v1, p4
+    move v0, p4
 
-    goto :goto_2
+    goto :goto_1
 
-    .line 803
+    .line 936
     :catch_0
     :try_start_1
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
@@ -1863,54 +2333,81 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    if-eqz p4, :cond_3
+    if-eqz p4, :cond_2
 
-    .line 812
+    .line 945
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object p0
 
     invoke-virtual {p0}, Ljava/lang/Thread;->interrupt()V
 
-    return v1
+    return v0
 
-    .line 807
-    :cond_3
+    .line 940
+    :cond_2
     :try_start_2
-    invoke-static {v2, v3, p2, p3}, Lcom/google/common/util/concurrent/Monitor;->remainingNanos(JJ)J
+    invoke-static {v1, v2, p2, p3}, Lcom/google/common/util/concurrent/Monitor;->remainingNanos(JJ)J
 
-    move-result-wide v4
+    move-result-wide v3
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    move v6, v0
+    const/4 v5, 0x0
 
-    move p4, v1
+    move p4, v0
 
-    goto :goto_1
+    goto :goto_0
 
     :catchall_1
     move-exception p0
 
-    :goto_2
-    if-eqz v1, :cond_4
+    :goto_1
+    if-eqz v0, :cond_3
 
-    .line 812
+    .line 945
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/Thread;->interrupt()V
 
-    .line 814
-    :cond_4
+    .line 947
+    :cond_3
     throw p0
 
-    .line 789
-    :cond_5
+    .line 922
+    :cond_4
     new-instance p0, Ljava/lang/IllegalMonitorStateException;
 
     invoke-direct {p0}, Ljava/lang/IllegalMonitorStateException;-><init>()V
 
     throw p0
+.end method
+
+.method public waitForUninterruptibly(Lcom/google/common/util/concurrent/Monitor$Guard;Ljava/time/Duration;)Z
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "guard",
+            "time"
+        }
+    .end annotation
+
+    .line 909
+    invoke-static {p2}, Lcom/google/common/util/concurrent/Internal;->toNanosSaturated(Ljava/time/Duration;)J
+
+    move-result-wide v0
+
+    sget-object p2, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
+
+    invoke-virtual {p0, p1, v0, v1, p2}, Lcom/google/common/util/concurrent/Monitor;->waitForUninterruptibly(Lcom/google/common/util/concurrent/Monitor$Guard;JLjava/util/concurrent/TimeUnit;)Z
+
+    move-result p0
+
+    return p0
 .end method

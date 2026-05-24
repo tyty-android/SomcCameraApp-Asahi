@@ -3,11 +3,16 @@
 .source "Verify.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/base/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # direct methods
 .method private constructor <init>()V
     .locals 0
 
-    .line 527
+    .line 511
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -15,12 +20,20 @@
 
 .method public static verify(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "expression"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 100
+    .line 102
     :cond_0
     new-instance p0, Lcom/google/common/base/VerifyException;
 
@@ -31,16 +44,24 @@
 
 .method public static verify(ZLjava/lang/String;C)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 139
+    .line 140
     :cond_0
     new-instance p0, Lcom/google/common/base/VerifyException;
 
@@ -63,16 +84,26 @@
 
 .method public static verify(ZLjava/lang/String;CC)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 198
+    .line 197
     :cond_0
     new-instance p0, Lcom/google/common/base/VerifyException;
 
@@ -99,16 +130,26 @@
 
 .method public static verify(ZLjava/lang/String;CI)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 261
+    .line 254
     :cond_0
     new-instance p0, Lcom/google/common/base/VerifyException;
 
@@ -135,16 +176,26 @@
 
 .method public static verify(ZLjava/lang/String;CJ)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 324
+    .line 311
     :cond_0
     new-instance p0, Lcom/google/common/base/VerifyException;
 
@@ -171,20 +222,30 @@
 
 .method public static verify(ZLjava/lang/String;CLjava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 390
+    .line 369
     :cond_0
     new-instance p0, Lcom/google/common/base/VerifyException;
 
@@ -207,16 +268,24 @@
 
 .method public static verify(ZLjava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 153
+    .line 154
     :cond_0
     new-instance p0, Lcom/google/common/base/VerifyException;
 
@@ -239,16 +308,26 @@
 
 .method public static verify(ZLjava/lang/String;IC)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 213
+    .line 211
     :cond_0
     new-instance p0, Lcom/google/common/base/VerifyException;
 
@@ -275,16 +354,26 @@
 
 .method public static verify(ZLjava/lang/String;II)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 276
+    .line 268
     :cond_0
     new-instance p0, Lcom/google/common/base/VerifyException;
 
@@ -311,16 +400,26 @@
 
 .method public static verify(ZLjava/lang/String;IJ)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 339
+    .line 325
     :cond_0
     new-instance p0, Lcom/google/common/base/VerifyException;
 
@@ -347,20 +446,30 @@
 
 .method public static verify(ZLjava/lang/String;ILjava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 408
+    .line 384
     :cond_0
     new-instance p0, Lcom/google/common/base/VerifyException;
 
@@ -383,10 +492,18 @@
 
 .method public static verify(ZLjava/lang/String;J)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
@@ -415,16 +532,26 @@
 
 .method public static verify(ZLjava/lang/String;JC)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 228
+    .line 225
     :cond_0
     new-instance p0, Lcom/google/common/base/VerifyException;
 
@@ -451,16 +578,26 @@
 
 .method public static verify(ZLjava/lang/String;JI)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 291
+    .line 282
     :cond_0
     new-instance p0, Lcom/google/common/base/VerifyException;
 
@@ -487,16 +624,26 @@
 
 .method public static verify(ZLjava/lang/String;JJ)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 354
+    .line 339
     :cond_0
     new-instance p0, Lcom/google/common/base/VerifyException;
 
@@ -523,20 +670,30 @@
 
 .method public static verify(ZLjava/lang/String;JLjava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p4    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 426
+    .line 399
     :cond_0
     new-instance p0, Lcom/google/common/base/VerifyException;
 
@@ -559,14 +716,22 @@
 
 .method public static verify(ZLjava/lang/String;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
@@ -591,20 +756,30 @@
 
 .method public static verify(ZLjava/lang/String;Ljava/lang/Object;C)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 246
+    .line 240
     :cond_0
     new-instance p0, Lcom/google/common/base/VerifyException;
 
@@ -627,20 +802,30 @@
 
 .method public static verify(ZLjava/lang/String;Ljava/lang/Object;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 309
+    .line 297
     :cond_0
     new-instance p0, Lcom/google/common/base/VerifyException;
 
@@ -663,20 +848,30 @@
 
 .method public static verify(ZLjava/lang/String;Ljava/lang/Object;J)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 372
+    .line 354
     :cond_0
     new-instance p0, Lcom/google/common/base/VerifyException;
 
@@ -699,24 +894,34 @@
 
 .method public static verify(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 444
+    .line 417
     :cond_0
     new-instance p0, Lcom/google/common/base/VerifyException;
 
@@ -735,28 +940,40 @@
 
 .method public static verify(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p4    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2",
+            "p3"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 463
+    .line 436
     :cond_0
     new-instance p0, Lcom/google/common/base/VerifyException;
 
@@ -775,32 +992,46 @@
 
 .method public static verify(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p4    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p5    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2",
+            "p3",
+            "p4"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 483
+    .line 456
     :cond_0
     new-instance p0, Lcom/google/common/base/VerifyException;
 
@@ -819,20 +1050,28 @@
 
 .method public static varargs verify(ZLjava/lang/String;[Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p2    # [Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "errorMessageArgs"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 124
+    .line 126
     :cond_0
     new-instance p0, Lcom/google/common/base/VerifyException;
 
@@ -848,9 +1087,18 @@
 .method public static verifyNotNull(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "reference"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -861,7 +1109,7 @@
 
     const/4 v0, 0x0
 
-    .line 497
+    .line 479
     new-array v0, v0, [Ljava/lang/Object;
 
     const-string v1, "expected a non-null reference"
@@ -874,19 +1122,28 @@
 .end method
 
 .method public static varargs verifyNotNull(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+    .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # [Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "reference",
+            "errorMessageTemplate",
+            "errorMessageArgs"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -901,16 +1158,17 @@
 
     if-eqz p0, :cond_0
 
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 520
-    :goto_0
-    invoke-static {v0, p1, p2}, Lcom/google/common/base/Verify;->verify(ZLjava/lang/String;[Ljava/lang/Object;)V
-
     return-object p0
+
+    .line 503
+    :cond_0
+    new-instance p0, Lcom/google/common/base/VerifyException;
+
+    invoke-static {p1, p2}, Lcom/google/common/base/Strings;->lenientFormat(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Lcom/google/common/base/VerifyException;-><init>(Ljava/lang/String;)V
+
+    throw p0
 .end method

@@ -7,11 +7,14 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/base/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<T:",
+        "<E:",
         "Ljava/lang/Object;",
-        ">",
+        "T:TE;>",
         "Lcom/google/common/base/Equivalence<",
         "Ljava/lang/Iterable<",
         "TT;>;>;",
@@ -29,7 +32,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/common/base/Equivalence<",
-            "-TT;>;"
+            "TE;>;"
         }
     .end annotation
 .end field
@@ -38,18 +41,27 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/base/Equivalence;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elementEquivalence"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/google/common/base/Equivalence<",
-            "-TT;>;)V"
+            "TE;>;)V"
         }
     .end annotation
 
-    .line 27
+    .line 29
     invoke-direct {p0}, Lcom/google/common/base/Equivalence;-><init>()V
 
-    .line 28
+    .line 30
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -65,6 +77,17 @@
 # virtual methods
 .method protected doEquivalent(Ljava/lang/Iterable;Ljava/lang/Iterable;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "iterableA",
+            "iterableB"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -75,17 +98,17 @@
         }
     .end annotation
 
-    .line 33
+    .line 35
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
 
-    .line 34
+    .line 36
     invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p2
 
-    .line 36
+    .line 38
     :cond_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -101,7 +124,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 37
+    .line 39
     iget-object v0, p0, Lcom/google/common/base/PairwiseEquivalence;->elementEquivalence:Lcom/google/common/base/Equivalence;
 
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -120,7 +143,7 @@
 
     return v1
 
-    .line 42
+    .line 44
     :cond_1
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -142,8 +165,18 @@
 
 .method protected bridge synthetic doEquivalent(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "iterableA",
+            "iterableB"
+        }
+    .end annotation
 
-    .line 22
+    .line 23
     check-cast p1, Ljava/lang/Iterable;
 
     check-cast p2, Ljava/lang/Iterable;
@@ -157,6 +190,15 @@
 
 .method protected doHash(Ljava/lang/Iterable;)I
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "iterable"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -165,7 +207,7 @@
         }
     .end annotation
 
-    .line 48
+    .line 50
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -185,7 +227,7 @@
 
     mul-int/lit16 v0, v0, 0x616f
 
-    .line 49
+    .line 51
     iget-object v2, p0, Lcom/google/common/base/PairwiseEquivalence;->elementEquivalence:Lcom/google/common/base/Equivalence;
 
     invoke-virtual {v2, v1}, Lcom/google/common/base/Equivalence;->hash(Ljava/lang/Object;)I
@@ -202,8 +244,16 @@
 
 .method protected bridge synthetic doHash(Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "iterable"
+        }
+    .end annotation
 
-    .line 22
+    .line 23
     check-cast p1, Ljava/lang/Iterable;
 
     invoke-virtual {p0, p1}, Lcom/google/common/base/PairwiseEquivalence;->doHash(Ljava/lang/Iterable;)I
@@ -216,19 +266,27 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 56
+    .line 58
     instance-of v0, p1, Lcom/google/common/base/PairwiseEquivalence;
 
     if-eqz v0, :cond_0
 
-    .line 57
+    .line 60
     check-cast p1, Lcom/google/common/base/PairwiseEquivalence;
 
-    .line 58
+    .line 61
     iget-object p0, p0, Lcom/google/common/base/PairwiseEquivalence;->elementEquivalence:Lcom/google/common/base/Equivalence;
 
     iget-object p1, p1, Lcom/google/common/base/PairwiseEquivalence;->elementEquivalence:Lcom/google/common/base/Equivalence;
@@ -248,7 +306,7 @@
 .method public hashCode()I
     .locals 1
 
-    .line 66
+    .line 69
     iget-object p0, p0, Lcom/google/common/base/PairwiseEquivalence;->elementEquivalence:Lcom/google/common/base/Equivalence;
 
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
@@ -263,30 +321,16 @@
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 2
+    .locals 1
 
-    .line 71
+    .line 74
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
     iget-object p0, p0, Lcom/google/common/base/PairwiseEquivalence;->elementEquivalence:Lcom/google/common/base/Equivalence;
 
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, 0xb
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 

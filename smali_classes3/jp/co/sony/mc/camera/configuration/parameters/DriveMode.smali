@@ -333,6 +333,21 @@
 
 .method private constructor <init>(Ljava/lang/String;IILjp/co/sony/mc/camera/configuration/parameters/DriveMode$BurstType;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "selftimerDelaysMs",
+            "burstType"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -355,6 +370,16 @@
 
 .method public static adjustToSupportedValue(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;)Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "cameraId",
+            "value"
+        }
+    .end annotation
 
     .line 408
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;->isSupportedValue(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;)Z
@@ -436,6 +461,16 @@
 
 .method public static getBurstFps(Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)I
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "driveMode",
+            "cameraId"
+        }
+    .end annotation
 
     .line 275
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;->getBurstType()Ljp/co/sony/mc/camera/configuration/parameters/DriveMode$BurstType;
@@ -673,6 +708,14 @@
 
 .method public static getOptions(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
     .line 136
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;->sDetailOptions:Ljava/util/ArrayList;
@@ -686,6 +729,17 @@
 
 .method private static getOptions(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljava/util/ArrayList;)[Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "cameraId",
+            "expectedOptions"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -788,6 +842,14 @@
 
 .method public static getOptionsForFn(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
     .line 145
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;->sFnOptions:Ljava/util/ArrayList;
@@ -801,6 +863,15 @@
 
 .method private static getSupportedBurstDriveModes(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/util/ArrayList;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -937,6 +1008,15 @@
 
 .method private static getSupportedHdrBurstDriveModes(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/util/ArrayList;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1098,6 +1178,14 @@
 
 .method private static isBurstFpsHighPlusSupportedForCameraId(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
     .line 236
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSupportedBurstFps(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/util/List;
@@ -1125,6 +1213,14 @@
 
 .method private static isBurstFpsSupportedForCameraId(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
     .line 232
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSupportedBurstFps(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/util/List;
@@ -1150,6 +1246,14 @@
 
 .method private static isHdrBurstHighPlusSupportedForCameraId(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
     .line 248
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSupportedHdrBurstFps(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/util/List;
@@ -1177,6 +1281,14 @@
 
 .method private static isHdrBurstHighSupportedForCameraId(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
     .line 244
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSupportedHdrBurstFps(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/util/List;
@@ -1202,6 +1314,14 @@
 
 .method private static isHdrBurstSupportedForCameraId(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
     .line 240
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSupportedHdrBurstFps(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/util/List;
@@ -1227,6 +1347,16 @@
 
 .method public static isSupportedValue(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "cameraId",
+            "value"
+        }
+    .end annotation
 
     .line 256
     invoke-static {p0}, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;->getOptions(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;
@@ -1328,6 +1458,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 22
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;
@@ -1360,6 +1498,14 @@
 # virtual methods
 .method public convertToBokehSupportedValue(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
     .line 338
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;->isBurstMode()Z

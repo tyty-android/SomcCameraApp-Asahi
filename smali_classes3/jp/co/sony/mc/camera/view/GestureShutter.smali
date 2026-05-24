@@ -115,6 +115,16 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/view/GestureShutter$GestureShutterHost;Ljp/co/sony/mc/camera/view/CameraOperator;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "gestureShutterHost",
+            "camraOperator"
+        }
+    .end annotation
 
     .line 113
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -173,6 +183,14 @@
 
 .method private changeState(Ljp/co/sony/mc/camera/view/GestureShutter$State;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "newState"
+        }
+    .end annotation
 
     .line 128
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -375,6 +393,14 @@
 # virtual methods
 .method public onDetected(Ljp/co/sony/mc/camera/CameraStatusNotifier$HandDetectionResult;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 
     .line 171
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/GestureShutter;->mUIScheduler:Landroid/os/Handler;
@@ -405,6 +431,14 @@
 
 .method public setEnabled(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "enable"
+        }
+    .end annotation
 
     .line 121
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/GestureShutter;->mIsEnabled:Z

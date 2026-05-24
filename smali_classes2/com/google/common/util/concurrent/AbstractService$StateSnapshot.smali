@@ -16,7 +16,7 @@
 
 # instance fields
 .field final failure:Ljava/lang/Throwable;
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -28,12 +28,20 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/util/concurrent/Service$State;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "internalState"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
     const/4 v1, 0x0
 
-    .line 581
+    .line 586
     invoke-direct {p0, p1, v0, v1}, Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;-><init>(Lcom/google/common/util/concurrent/Service$State;ZLjava/lang/Throwable;)V
 
     return-void
@@ -42,11 +50,23 @@
 .method constructor <init>(Lcom/google/common/util/concurrent/Service$State;ZLjava/lang/Throwable;)V
     .locals 4
     .param p3    # Ljava/lang/Throwable;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "internalState",
+            "shutdownWhenStartupFinishes",
+            "failure"
+        }
+    .end annotation
 
-    .line 585
+    .line 590
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
@@ -55,7 +75,7 @@
 
     if-eqz p2, :cond_1
 
-    .line 586
+    .line 591
     sget-object v2, Lcom/google/common/util/concurrent/Service$State;->STARTING:Lcom/google/common/util/concurrent/Service$State;
 
     if-ne p1, v2, :cond_0
@@ -85,30 +105,36 @@
     :cond_2
     move v2, v0
 
-    .line 590
+    .line 595
     :goto_2
     sget-object v3, Lcom/google/common/util/concurrent/Service$State;->FAILED:Lcom/google/common/util/concurrent/Service$State;
 
     if-ne p1, v3, :cond_3
 
-    move v0, v1
+    move v3, v1
+
+    goto :goto_3
 
     :cond_3
-    xor-int/2addr v0, v2
+    move v3, v0
 
-    xor-int/2addr v0, v1
+    :goto_3
+    if-ne v2, v3, :cond_4
 
+    move v0, v1
+
+    :cond_4
     const-string v1, "A failure cause should be set if and only if the state is failed.  Got %s and %s instead."
 
     invoke-static {v0, v1, p1, p3}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 596
+    .line 601
     iput-object p1, p0, Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;->state:Lcom/google/common/util/concurrent/Service$State;
 
-    .line 597
+    .line 602
     iput-boolean p2, p0, Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;->shutdownWhenStartupFinishes:Z
 
-    .line 598
+    .line 603
     iput-object p3, p0, Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;->failure:Ljava/lang/Throwable;
 
     return-void
@@ -119,7 +145,7 @@
 .method externalState()Lcom/google/common/util/concurrent/Service$State;
     .locals 2
 
-    .line 603
+    .line 608
     iget-boolean v0, p0, Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;->shutdownWhenStartupFinishes:Z
 
     if-eqz v0, :cond_0
@@ -130,12 +156,12 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 604
+    .line 609
     sget-object p0, Lcom/google/common/util/concurrent/Service$State;->STOPPING:Lcom/google/common/util/concurrent/Service$State;
 
     return-object p0
 
-    .line 606
+    .line 611
     :cond_0
     iget-object p0, p0, Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;->state:Lcom/google/common/util/concurrent/Service$State;
 
@@ -145,7 +171,7 @@
 .method failureCause()Ljava/lang/Throwable;
     .locals 3
 
-    .line 612
+    .line 617
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;->state:Lcom/google/common/util/concurrent/Service$State;
 
     sget-object v1, Lcom/google/common/util/concurrent/Service$State;->FAILED:Lcom/google/common/util/concurrent/Service$State;
@@ -166,8 +192,14 @@
 
     invoke-static {v0, v1, v2}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/String;Ljava/lang/Object;)V
 
-    .line 616
+    .line 622
     iget-object p0, p0, Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;->failure:Ljava/lang/Throwable;
+
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Throwable;
 
     return-object p0
 .end method

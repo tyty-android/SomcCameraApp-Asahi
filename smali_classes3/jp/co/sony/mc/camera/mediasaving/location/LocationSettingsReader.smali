@@ -25,6 +25,16 @@
 
 .method public static isLocationProviderAllowed(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x10
+        }
+        names = {
+            "context",
+            "provider"
+        }
+    .end annotation
 
     .line 39
     const-string v0, "location"
@@ -57,6 +67,14 @@
 
 .method private setIsGpsLocationAllowed(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isGpsLocationAllowed"
+        }
+    .end annotation
 
     .line 45
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/mediasaving/location/LocationSettingsReader;->mIsGpsLocationAllowed:Z
@@ -66,6 +84,14 @@
 
 .method private setIsNetworkLocationAllowed(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isNetworkLocationAllowed"
+        }
+    .end annotation
 
     .line 49
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/mediasaving/location/LocationSettingsReader;->mIsNetworkLocationAllowed:Z
@@ -95,6 +121,14 @@
 
 .method public readLocationSettings(Landroid/content/Context;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 25
     const-string v0, "gps"

@@ -55,7 +55,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder$onCreate$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;
 
-    .line 69
+    .line 72
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -78,7 +78,7 @@
 .method public onPageSelected(I)V
     .locals 2
 
-    .line 75
+    .line 78
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder$onCreate$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;->access$getBinding$p(Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;)Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;
@@ -89,7 +89,7 @@
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/view/widget/DialogPageIndicator;->setCurrentIndex(I)V
 
-    .line 77
+    .line 80
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder$onCreate$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;->access$getBinding$p(Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;)Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;
@@ -110,7 +110,7 @@
     :goto_0
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setVisibility(I)V
 
-    .line 79
+    .line 82
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder$onCreate$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;->access$getBinding$p(Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;)Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;
@@ -131,16 +131,36 @@
 
     add-int/lit8 v1, v1, -0x1
 
+    if-ne p1, v1, :cond_2
+
+    .line 83
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder$onCreate$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;
+
+    invoke-static {p1}, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;->access$getTutorialDialogUiState(Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;)Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/TutorialDialogUiState;->getTutorialDialogType()Landroidx/lifecycle/LiveData;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object p1
+
+    .line 84
+    sget-object v1, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->DIGITAL_TRIPOD_FIRST_IN:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+
     if-ne p1, v1, :cond_1
 
-    .line 80
+    .line 86
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder$onCreate$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;->access$getContext$p(Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;)Landroid/content/Context;
 
     move-result-object p1
 
-    const v1, 0x7f110484
+    const v1, 0x7f11039f
 
     invoke-virtual {p1, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -148,7 +168,7 @@
 
     goto :goto_1
 
-    .line 84
+    .line 88
     :cond_1
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder$onCreate$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;
 
@@ -156,7 +176,23 @@
 
     move-result-object p1
 
-    const v1, 0x7f110485
+    const v1, 0x7f1104d1
+
+    invoke-virtual {p1, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    goto :goto_1
+
+    .line 91
+    :cond_2
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder$onCreate$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;
+
+    invoke-static {p1}, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;->access$getContext$p(Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;)Landroid/content/Context;
+
+    move-result-object p1
+
+    const v1, 0x7f1104d2
 
     invoke-virtual {p1, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -165,10 +201,10 @@
     :goto_1
     check-cast p1, Ljava/lang/CharSequence;
 
-    .line 79
+    .line 82
     invoke-virtual {v0, p1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 89
+    .line 96
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder$onCreate$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;->access$focusOnViewPagerContent(Ljp/co/sony/mc/camera/view/viewbinder/TutorialDialogViewBinder;)V

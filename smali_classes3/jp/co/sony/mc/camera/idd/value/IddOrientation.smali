@@ -82,7 +82,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 109
+    .line 168
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddOrientation;
 
     const-string v1, "ORIENTATION_0"
@@ -93,7 +93,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddOrientation;->ORIENTATION_0:Ljp/co/sony/mc/camera/idd/value/IddOrientation;
 
-    .line 110
+    .line 169
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddOrientation;
 
     const-string v1, "ORIENTATION_90"
@@ -104,7 +104,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddOrientation;->ORIENTATION_90:Ljp/co/sony/mc/camera/idd/value/IddOrientation;
 
-    .line 111
+    .line 170
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddOrientation;
 
     const-string v1, "ORIENTATION_180"
@@ -115,7 +115,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddOrientation;->ORIENTATION_180:Ljp/co/sony/mc/camera/idd/value/IddOrientation;
 
-    .line 112
+    .line 171
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddOrientation;
 
     const-string v1, "ORIENTATION_270"
@@ -159,7 +159,7 @@
         }
     .end annotation
 
-    .line 108
+    .line 167
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -190,7 +190,7 @@
 
     move-result-object p0
 
-    .line 124
+    .line 183
     check-cast p0, Ljp/co/sony/mc/camera/idd/value/IddOrientation;
 
     return-object p0
@@ -205,7 +205,7 @@
 
     move-result-object v0
 
-    .line 124
+    .line 183
     check-cast v0, [Ljp/co/sony/mc/camera/idd/value/IddOrientation;
 
     return-object v0

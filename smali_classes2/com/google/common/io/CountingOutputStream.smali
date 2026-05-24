@@ -3,6 +3,11 @@
 .source "CountingOutputStream.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/io/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # instance fields
 .field private count:J
 
@@ -10,8 +15,16 @@
 # direct methods
 .method public constructor <init>(Ljava/io/OutputStream;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "out"
+        }
+    .end annotation
 
-    .line 41
+    .line 44
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -33,7 +46,7 @@
         }
     .end annotation
 
-    .line 66
+    .line 69
     iget-object p0, p0, Lcom/google/common/io/CountingOutputStream;->out:Ljava/io/OutputStream;
 
     invoke-virtual {p0}, Ljava/io/OutputStream;->close()V
@@ -44,7 +57,7 @@
 .method public getCount()J
     .locals 2
 
-    .line 46
+    .line 49
     iget-wide v0, p0, Lcom/google/common/io/CountingOutputStream;->count:J
 
     return-wide v0
@@ -52,18 +65,27 @@
 
 .method public write(I)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "b"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 57
+    .line 60
     iget-object v0, p0, Lcom/google/common/io/CountingOutputStream;->out:Ljava/io/OutputStream;
 
     invoke-virtual {v0, p1}, Ljava/io/OutputStream;->write(I)V
 
-    .line 58
+    .line 61
     iget-wide v0, p0, Lcom/google/common/io/CountingOutputStream;->count:J
 
     const-wide/16 v2, 0x1
@@ -77,18 +99,31 @@
 
 .method public write([BII)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "b",
+            "off",
+            "len"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 51
+    .line 54
     iget-object v0, p0, Lcom/google/common/io/CountingOutputStream;->out:Ljava/io/OutputStream;
 
     invoke-virtual {v0, p1, p2, p3}, Ljava/io/OutputStream;->write([BII)V
 
-    .line 52
+    .line 55
     iget-wide p1, p0, Lcom/google/common/io/CountingOutputStream;->count:J
 
     int-to-long v0, p3

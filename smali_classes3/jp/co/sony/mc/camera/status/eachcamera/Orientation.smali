@@ -38,6 +38,14 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/status/eachcamera/Orientation$Value;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     .line 34
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/status/EnumValue;-><init>(Ljava/lang/Enum;)V
@@ -47,6 +55,14 @@
 
 .method public static fromCameraParameter(I)Ljp/co/sony/mc/camera/status/eachcamera/Orientation;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "param"
+        }
+    .end annotation
 
     if-nez p0, :cond_0
 

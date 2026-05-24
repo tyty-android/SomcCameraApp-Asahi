@@ -7,17 +7,18 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/io/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/common/io/Closer$SuppressingSuppressor;,
-        Lcom/google/common/io/Closer$LoggingSuppressor;,
         Lcom/google/common/io/Closer$Suppressor;
     }
 .end annotation
 
 
 # static fields
-.field private static final SUPPRESSOR:Lcom/google/common/io/Closer$Suppressor;
+.field private static final SUPPRESSING_SUPPRESSOR:Lcom/google/common/io/Closer$Suppressor;
 
 
 # instance fields
@@ -34,7 +35,7 @@
 .field final suppressor:Lcom/google/common/io/Closer$Suppressor;
 
 .field private thrown:Ljava/lang/Throwable;
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -43,35 +44,31 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 95
-    invoke-static {}, Lcom/google/common/io/Closer$SuppressingSuppressor;->isAvailable()Z
+    .line 237
+    new-instance v0, Lcom/google/common/io/Closer$$ExternalSyntheticLambda0;
 
-    move-result v0
+    invoke-direct {v0}, Lcom/google/common/io/Closer$$ExternalSyntheticLambda0;-><init>()V
 
-    if-eqz v0, :cond_0
-
-    .line 96
-    sget-object v0, Lcom/google/common/io/Closer$SuppressingSuppressor;->INSTANCE:Lcom/google/common/io/Closer$SuppressingSuppressor;
-
-    goto :goto_0
-
-    .line 97
-    :cond_0
-    sget-object v0, Lcom/google/common/io/Closer$LoggingSuppressor;->INSTANCE:Lcom/google/common/io/Closer$LoggingSuppressor;
-
-    :goto_0
-    sput-object v0, Lcom/google/common/io/Closer;->SUPPRESSOR:Lcom/google/common/io/Closer$Suppressor;
+    sput-object v0, Lcom/google/common/io/Closer;->SUPPRESSING_SUPPRESSOR:Lcom/google/common/io/Closer$Suppressor;
 
     return-void
 .end method
 
 .method constructor <init>(Lcom/google/common/io/Closer$Suppressor;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "suppressor"
+        }
+    .end annotation
 
-    .line 111
+    .line 98
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 107
+    .line 94
     new-instance v0, Ljava/util/ArrayDeque;
 
     const/4 v1, 0x4
@@ -80,7 +77,7 @@
 
     iput-object v0, p0, Lcom/google/common/io/Closer;->stack:Ljava/util/Deque;
 
-    .line 112
+    .line 99
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -95,14 +92,56 @@
 .method public static create()Lcom/google/common/io/Closer;
     .locals 2
 
-    .line 101
+    .line 88
     new-instance v0, Lcom/google/common/io/Closer;
 
-    sget-object v1, Lcom/google/common/io/Closer;->SUPPRESSOR:Lcom/google/common/io/Closer$Suppressor;
+    sget-object v1, Lcom/google/common/io/Closer;->SUPPRESSING_SUPPRESSOR:Lcom/google/common/io/Closer$Suppressor;
 
     invoke-direct {v0, v1}, Lcom/google/common/io/Closer;-><init>(Lcom/google/common/io/Closer$Suppressor;)V
 
     return-object v0
+.end method
+
+.method static synthetic lambda$static$0(Ljava/io/Closeable;Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+    .locals 3
+
+    if-ne p1, p2, :cond_0
+
+    return-void
+
+    .line 244
+    :cond_0
+    :try_start_0
+    invoke-virtual {p1, p2}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    .line 252
+    :catchall_0
+    sget-object p1, Lcom/google/common/io/Closeables;->logger:Ljava/util/logging/Logger;
+
+    sget-object v0, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v2, "Suppressing exception thrown when closing "
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {p1, v0, p0, p2}, Ljava/util/logging/Logger;->log(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    :goto_0
+    return-void
 .end method
 
 
@@ -115,10 +154,10 @@
         }
     .end annotation
 
-    .line 207
+    .line 199
     iget-object v0, p0, Lcom/google/common/io/Closer;->thrown:Ljava/lang/Throwable;
 
-    .line 210
+    .line 202
     :goto_0
     iget-object v1, p0, Lcom/google/common/io/Closer;->stack:Ljava/util/Deque;
 
@@ -128,7 +167,7 @@
 
     if-nez v1, :cond_1
 
-    .line 211
+    .line 203
     iget-object v1, p0, Lcom/google/common/io/Closer;->stack:Ljava/util/Deque;
 
     invoke-interface {v1}, Ljava/util/Deque;->removeFirst()Ljava/lang/Object;
@@ -137,7 +176,7 @@
 
     check-cast v1, Ljava/io/Closeable;
 
-    .line 213
+    .line 205
     :try_start_0
     invoke-interface {v1}, Ljava/io/Closeable;->close()V
     :try_end_0
@@ -154,7 +193,7 @@
 
     goto :goto_0
 
-    .line 218
+    .line 210
     :cond_0
     iget-object v3, p0, Lcom/google/common/io/Closer;->suppressor:Lcom/google/common/io/Closer$Suppressor;
 
@@ -162,7 +201,7 @@
 
     goto :goto_0
 
-    .line 223
+    .line 215
     :cond_1
     iget-object p0, p0, Lcom/google/common/io/Closer;->thrown:Ljava/lang/Throwable;
 
@@ -172,13 +211,16 @@
 
     goto :goto_1
 
-    .line 224
+    .line 216
     :cond_2
     const-class p0, Ljava/io/IOException;
 
-    invoke-static {v0, p0}, Lcom/google/common/base/Throwables;->propagateIfPossible(Ljava/lang/Throwable;Ljava/lang/Class;)V
+    invoke-static {v0, p0}, Lcom/google/common/base/Throwables;->throwIfInstanceOf(Ljava/lang/Throwable;Ljava/lang/Class;)V
 
-    .line 225
+    .line 217
+    invoke-static {v0}, Lcom/google/common/base/Throwables;->throwIfUnchecked(Ljava/lang/Throwable;)V
+
+    .line 218
     new-instance p0, Ljava/lang/AssertionError;
 
     invoke-direct {p0, v0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
@@ -193,9 +235,21 @@
 .method public register(Ljava/io/Closeable;)Ljava/io/Closeable;
     .locals 0
     .param p1    # Ljava/io/Closeable;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/io/ParametricNullness;
         .end annotation
     .end param
+    .annotation runtime Lcom/google/common/io/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "closeable"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<C::",
@@ -206,7 +260,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 125
+    .line 113
     iget-object p0, p0, Lcom/google/common/io/Closer;->stack:Ljava/util/Deque;
 
     invoke-interface {p0, p1}, Ljava/util/Deque;->addFirst(Ljava/lang/Object;)V
@@ -217,24 +271,36 @@
 
 .method public rethrow(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 145
+    .line 133
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 146
+    .line 134
     iput-object p1, p0, Lcom/google/common/io/Closer;->thrown:Ljava/lang/Throwable;
 
-    .line 147
+    .line 135
     const-class p0, Ljava/io/IOException;
 
-    invoke-static {p1, p0}, Lcom/google/common/base/Throwables;->propagateIfPossible(Ljava/lang/Throwable;Ljava/lang/Class;)V
+    invoke-static {p1, p0}, Lcom/google/common/base/Throwables;->throwIfInstanceOf(Ljava/lang/Throwable;Ljava/lang/Class;)V
 
-    .line 148
+    .line 136
+    invoke-static {p1}, Lcom/google/common/base/Throwables;->throwIfUnchecked(Ljava/lang/Throwable;)V
+
+    .line 137
     new-instance p0, Ljava/lang/RuntimeException;
 
     invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
@@ -244,6 +310,17 @@
 
 .method public rethrow(Ljava/lang/Throwable;Ljava/lang/Class;)Ljava/lang/RuntimeException;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "e",
+            "declaredType"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<X:",
@@ -266,21 +343,24 @@
         }
     .end annotation
 
-    .line 167
+    .line 156
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 168
+    .line 157
     iput-object p1, p0, Lcom/google/common/io/Closer;->thrown:Ljava/lang/Throwable;
 
-    .line 169
+    .line 158
     const-class p0, Ljava/io/IOException;
 
-    invoke-static {p1, p0}, Lcom/google/common/base/Throwables;->propagateIfPossible(Ljava/lang/Throwable;Ljava/lang/Class;)V
+    invoke-static {p1, p0}, Lcom/google/common/base/Throwables;->throwIfInstanceOf(Ljava/lang/Throwable;Ljava/lang/Class;)V
 
-    .line 170
-    invoke-static {p1, p2}, Lcom/google/common/base/Throwables;->propagateIfPossible(Ljava/lang/Throwable;Ljava/lang/Class;)V
+    .line 159
+    invoke-static {p1, p2}, Lcom/google/common/base/Throwables;->throwIfInstanceOf(Ljava/lang/Throwable;Ljava/lang/Class;)V
 
-    .line 171
+    .line 160
+    invoke-static {p1}, Lcom/google/common/base/Throwables;->throwIfUnchecked(Ljava/lang/Throwable;)V
+
+    .line 161
     new-instance p0, Ljava/lang/RuntimeException;
 
     invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
@@ -290,6 +370,19 @@
 
 .method public rethrow(Ljava/lang/Throwable;Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/RuntimeException;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "e",
+            "declaredType1",
+            "declaredType2"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<X1:",
@@ -317,21 +410,27 @@
         }
     .end annotation
 
-    .line 191
+    .line 181
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 192
+    .line 182
     iput-object p1, p0, Lcom/google/common/io/Closer;->thrown:Ljava/lang/Throwable;
 
-    .line 193
+    .line 183
     const-class p0, Ljava/io/IOException;
 
-    invoke-static {p1, p0}, Lcom/google/common/base/Throwables;->propagateIfPossible(Ljava/lang/Throwable;Ljava/lang/Class;)V
+    invoke-static {p1, p0}, Lcom/google/common/base/Throwables;->throwIfInstanceOf(Ljava/lang/Throwable;Ljava/lang/Class;)V
 
-    .line 194
-    invoke-static {p1, p2, p3}, Lcom/google/common/base/Throwables;->propagateIfPossible(Ljava/lang/Throwable;Ljava/lang/Class;Ljava/lang/Class;)V
+    .line 184
+    invoke-static {p1, p2}, Lcom/google/common/base/Throwables;->throwIfInstanceOf(Ljava/lang/Throwable;Ljava/lang/Class;)V
 
-    .line 195
+    .line 185
+    invoke-static {p1, p3}, Lcom/google/common/base/Throwables;->throwIfInstanceOf(Ljava/lang/Throwable;Ljava/lang/Class;)V
+
+    .line 186
+    invoke-static {p1}, Lcom/google/common/base/Throwables;->throwIfUnchecked(Ljava/lang/Throwable;)V
+
+    .line 187
     new-instance p0, Ljava/lang/RuntimeException;
 
     invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V

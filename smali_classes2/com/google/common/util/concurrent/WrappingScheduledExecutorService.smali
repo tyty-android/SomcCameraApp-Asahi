@@ -6,6 +6,11 @@
 .implements Ljava/util/concurrent/ScheduledExecutorService;
 
 
+# annotations
+.annotation runtime Lcom/google/common/util/concurrent/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # instance fields
 .field final delegate:Ljava/util/concurrent/ScheduledExecutorService;
 
@@ -13,11 +18,19 @@
 # direct methods
 .method protected constructor <init>(Ljava/util/concurrent/ScheduledExecutorService;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "delegate"
+        }
+    .end annotation
 
-    .line 39
+    .line 41
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/WrappingExecutorService;-><init>(Ljava/util/concurrent/ExecutorService;)V
 
-    .line 40
+    .line 42
     iput-object p1, p0, Lcom/google/common/util/concurrent/WrappingScheduledExecutorService;->delegate:Ljava/util/concurrent/ScheduledExecutorService;
 
     return-void
@@ -27,6 +40,19 @@
 # virtual methods
 .method public final schedule(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "command",
+            "delay",
+            "unit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -39,7 +65,7 @@
         }
     .end annotation
 
-    .line 45
+    .line 47
     iget-object v0, p0, Lcom/google/common/util/concurrent/WrappingScheduledExecutorService;->delegate:Ljava/util/concurrent/ScheduledExecutorService;
 
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/WrappingScheduledExecutorService;->wrapTask(Ljava/lang/Runnable;)Ljava/lang/Runnable;
@@ -55,6 +81,19 @@
 
 .method public final schedule(Ljava/util/concurrent/Callable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "task",
+            "delay",
+            "unit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<V:",
@@ -69,7 +108,7 @@
         }
     .end annotation
 
-    .line 50
+    .line 53
     iget-object v0, p0, Lcom/google/common/util/concurrent/WrappingScheduledExecutorService;->delegate:Ljava/util/concurrent/ScheduledExecutorService;
 
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/WrappingScheduledExecutorService;->wrapTask(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Callable;
@@ -85,6 +124,21 @@
 
 .method public final scheduleAtFixedRate(Ljava/lang/Runnable;JJLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "command",
+            "initialDelay",
+            "period",
+            "unit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -97,7 +151,7 @@
         }
     .end annotation
 
-    .line 56
+    .line 59
     iget-object v0, p0, Lcom/google/common/util/concurrent/WrappingScheduledExecutorService;->delegate:Ljava/util/concurrent/ScheduledExecutorService;
 
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/WrappingScheduledExecutorService;->wrapTask(Ljava/lang/Runnable;)Ljava/lang/Runnable;
@@ -119,6 +173,21 @@
 
 .method public final scheduleWithFixedDelay(Ljava/lang/Runnable;JJLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "command",
+            "initialDelay",
+            "delay",
+            "unit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -131,7 +200,7 @@
         }
     .end annotation
 
-    .line 62
+    .line 65
     iget-object v0, p0, Lcom/google/common/util/concurrent/WrappingScheduledExecutorService;->delegate:Ljava/util/concurrent/ScheduledExecutorService;
 
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/WrappingScheduledExecutorService;->wrapTask(Ljava/lang/Runnable;)Ljava/lang/Runnable;

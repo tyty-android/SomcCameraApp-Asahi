@@ -22,11 +22,11 @@
     .locals 0
 
     .line 0
-    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/Mic;
 
     check-cast p2, Ljava/lang/Boolean;
 
-    invoke-static {p1, p2}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->lambda$onViewCreated$20(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljava/lang/Boolean;)Ljava/lang/Boolean;
+    invoke-static {p1, p2}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->$r8$lambda$thpJVqS0VzgoQAfYRj447hzZGPc(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     move-result-object p0
 

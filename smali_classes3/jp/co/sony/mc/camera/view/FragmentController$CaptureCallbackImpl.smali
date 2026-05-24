@@ -42,11 +42,19 @@
 
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "controller"
+        }
+    .end annotation
 
-    .line 7467
+    .line 6347
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7468
+    .line 6348
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     return-void
@@ -56,8 +64,16 @@
 # virtual methods
 .method public onBurstCaptureDone(I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "requestId"
+        }
+    .end annotation
 
-    .line 7535
+    .line 6415
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
@@ -74,7 +90,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7536
+    .line 6416
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -93,8 +109,18 @@
 
 .method public onBurstCaptureRejected(II)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "requestId",
+            "burstQuality"
+        }
+    .end annotation
 
-    .line 7547
+    .line 6427
     sget-boolean p2, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p2, :cond_0
@@ -111,7 +137,7 @@
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7548
+    .line 6428
     :cond_0
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -130,8 +156,16 @@
 
 .method public onBurstShutterAction(I)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "requestId"
+        }
+    .end annotation
 
-    .line 7513
+    .line 6393
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     const/4 v1, 0x1
@@ -148,7 +182,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7514
+    .line 6394
     :cond_0
     iget v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mBurstCount:I
 
@@ -156,7 +190,7 @@
 
     iput v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mBurstCount:I
 
-    .line 7515
+    .line 6395
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -174,8 +208,16 @@
 
 .method public onBurstShutterDone(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "requestId"
+        }
+    .end annotation
 
-    .line 7525
+    .line 6405
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -193,8 +235,16 @@
 
 .method public onCapturingFinished(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "requestId"
+        }
+    .end annotation
 
-    .line 7634
+    .line 6514
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     const/4 v0, 0x0
@@ -211,7 +261,7 @@
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7635
+    .line 6515
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -221,7 +271,7 @@
 
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/DisplayFlashController;->enable(Z)V
 
-    .line 7636
+    .line 6516
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmDisplayFlashController(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/DisplayFlashController;
@@ -230,7 +280,7 @@
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/DisplayFlashController;->hide()V
 
-    .line 7637
+    .line 6517
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmIsRemoconConnected(Ljp/co/sony/mc/camera/view/FragmentController;)Z
@@ -239,7 +289,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 7638
+    .line 6518
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmRemoconManager(Ljp/co/sony/mc/camera/view/FragmentController;)Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;
@@ -255,7 +305,7 @@
 .method public onChangeToReady()V
     .locals 3
 
-    .line 7615
+    .line 6495
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
@@ -272,7 +322,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7616
+    .line 6496
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -291,8 +341,16 @@
 
 .method public onDiscardedSnapshotRequest(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "requestId"
+        }
+    .end annotation
 
-    .line 7496
+    .line 6376
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_0
@@ -315,8 +373,16 @@
 
 .method public onExposureDone(I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "requestId"
+        }
+    .end annotation
 
-    .line 7603
+    .line 6483
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
@@ -333,7 +399,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7604
+    .line 6484
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -352,8 +418,22 @@
 
 .method public onExposureStarted(IIZZ)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x10,
+            0x10
+        }
+        names = {
+            "requestId",
+            "duration",
+            "isSoundDivided",
+            "isLongExposure"
+        }
+    .end annotation
 
-    .line 7591
+    .line 6471
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
@@ -382,7 +462,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7592
+    .line 6472
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -413,8 +493,16 @@
 
 .method public onPreCaptureRequested(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "requestId"
+        }
+    .end annotation
 
-    .line 7627
+    .line 6507
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p1, :cond_0
@@ -431,7 +519,7 @@
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7628
+    .line 6508
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -439,7 +527,7 @@
 
     move-result-object p0
 
-    .line 7629
+    .line 6509
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p1
@@ -448,7 +536,7 @@
 
     move-result-object p1
 
-    .line 7628
+    .line 6508
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/DisplayFlashController;->show(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
 
     return-void
@@ -456,8 +544,16 @@
 
 .method public onPrepareBurstDone(I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "requestId"
+        }
+    .end annotation
 
-    .line 7501
+    .line 6381
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     const/4 v1, 0x0
@@ -474,11 +570,11 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7502
+    .line 6382
     :cond_0
     iput v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mBurstCount:I
 
-    .line 7503
+    .line 6383
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -496,8 +592,16 @@
 
 .method public onShutterAction(I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "requestId"
+        }
+    .end annotation
 
-    .line 7485
+    .line 6365
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
@@ -514,7 +618,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7486
+    .line 6366
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -533,8 +637,18 @@
 
 .method public onSnapshotRequestDone(ILandroid/graphics/Bitmap;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "requestId",
+            "bitmap"
+        }
+    .end annotation
 
-    .line 7473
+    .line 6353
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
@@ -563,7 +677,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7474
+    .line 6354
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -582,8 +696,18 @@
 
 .method public onStoreError(ILjp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "requestId",
+            "result"
+        }
+    .end annotation
 
-    .line 7574
+    .line 6454
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     const/4 v1, 0x0
@@ -600,7 +724,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7575
+    .line 6455
     :cond_0
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;->getMediaSavingResult()Ljp/co/sony/mc/camera/mediasaving/MediaSavingResult;
 
@@ -610,7 +734,7 @@
 
     if-eq p2, v0, :cond_1
 
-    .line 7576
+    .line 6456
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->COULD_NOT_SAVE_PHOTO:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
@@ -619,7 +743,7 @@
 
     invoke-static {p2, v0, v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mshowMessageDialog(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/view/messagedialog/DialogId;[Ljava/lang/Object;)V
 
-    .line 7579
+    .line 6459
     :cond_1
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -638,8 +762,18 @@
 
 .method public onStoreFinished(ILjp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "requestId",
+            "result"
+        }
+    .end annotation
 
-    .line 7558
+    .line 6438
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     const/4 v1, 0x0
@@ -672,7 +806,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7559
+    .line 6439
     :cond_0
     new-array v0, v2, [Ljava/lang/String;
 
@@ -682,7 +816,7 @@
 
     invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 7560
+    .line 6440
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtimeNanos()J
 
     move-result-wide v3
@@ -697,10 +831,10 @@
 
     aput-object v2, v0, v1
 
-    .line 7559
+    .line 6439
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7561
+    .line 6441
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;

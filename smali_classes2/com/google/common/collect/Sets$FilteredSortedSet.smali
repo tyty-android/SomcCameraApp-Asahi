@@ -32,6 +32,17 @@
 # direct methods
 .method constructor <init>(Ljava/util/SortedSet;Lcom/google/common/base/Predicate;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "unfiltered",
+            "predicate"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -42,7 +53,7 @@
         }
     .end annotation
 
-    .line 1062
+    .line 1172
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/Sets$FilteredSet;-><init>(Ljava/util/Set;Lcom/google/common/base/Predicate;)V
 
     return-void
@@ -60,7 +71,10 @@
         }
     .end annotation
 
-    .line 1067
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1178
     iget-object p0, p0, Lcom/google/common/collect/Sets$FilteredSortedSet;->unfiltered:Ljava/util/Collection;
 
     check-cast p0, Ljava/util/SortedSet;
@@ -74,13 +88,16 @@
 
 .method public first()Ljava/lang/Object;
     .locals 1
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TE;"
         }
     .end annotation
 
-    .line 1088
+    .line 1200
     iget-object v0, p0, Lcom/google/common/collect/Sets$FilteredSortedSet;->unfiltered:Ljava/util/Collection;
 
     invoke-interface {v0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
@@ -98,6 +115,19 @@
 
 .method public headSet(Ljava/lang/Object;)Ljava/util/SortedSet;
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "toElement"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)",
@@ -106,7 +136,7 @@
         }
     .end annotation
 
-    .line 1078
+    .line 1189
     new-instance v0, Lcom/google/common/collect/Sets$FilteredSortedSet;
 
     iget-object v1, p0, Lcom/google/common/collect/Sets$FilteredSortedSet;->unfiltered:Ljava/util/Collection;
@@ -126,24 +156,27 @@
 
 .method public last()Ljava/lang/Object;
     .locals 3
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TE;"
         }
     .end annotation
 
-    .line 1093
+    .line 1206
     iget-object v0, p0, Lcom/google/common/collect/Sets$FilteredSortedSet;->unfiltered:Ljava/util/Collection;
 
     check-cast v0, Ljava/util/SortedSet;
 
-    .line 1095
+    .line 1208
     :goto_0
     invoke-interface {v0}, Ljava/util/SortedSet;->last()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 1096
+    .line 1209
     iget-object v2, p0, Lcom/google/common/collect/Sets$FilteredSortedSet;->predicate:Lcom/google/common/base/Predicate;
 
     invoke-interface {v2, v1}, Lcom/google/common/base/Predicate;->apply(Ljava/lang/Object;)Z
@@ -154,7 +187,7 @@
 
     return-object v1
 
-    .line 1099
+    .line 1212
     :cond_0
     invoke-interface {v0, v1}, Ljava/util/SortedSet;->headSet(Ljava/lang/Object;)Ljava/util/SortedSet;
 
@@ -165,6 +198,25 @@
 
 .method public subSet(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromElement",
+            "toElement"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;TE;)",
@@ -173,14 +225,14 @@
         }
     .end annotation
 
-    .line 1072
+    .line 1183
     new-instance v0, Lcom/google/common/collect/Sets$FilteredSortedSet;
 
     iget-object v1, p0, Lcom/google/common/collect/Sets$FilteredSortedSet;->unfiltered:Ljava/util/Collection;
 
     check-cast v1, Ljava/util/SortedSet;
 
-    .line 1073
+    .line 1184
     invoke-interface {v1, p1, p2}, Ljava/util/SortedSet;->subSet(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;
 
     move-result-object p1
@@ -194,6 +246,19 @@
 
 .method public tailSet(Ljava/lang/Object;)Ljava/util/SortedSet;
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fromElement"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)",
@@ -202,7 +267,7 @@
         }
     .end annotation
 
-    .line 1083
+    .line 1194
     new-instance v0, Lcom/google/common/collect/Sets$FilteredSortedSet;
 
     iget-object v1, p0, Lcom/google/common/collect/Sets$FilteredSortedSet;->unfiltered:Ljava/util/Collection;

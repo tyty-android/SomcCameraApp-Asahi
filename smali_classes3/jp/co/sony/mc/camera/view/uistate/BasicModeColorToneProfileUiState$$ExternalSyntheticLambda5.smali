@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements Lkotlin/jvm/functions/Function2;
 
 
 # direct methods
@@ -18,17 +18,19 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
-    check-cast p1, Ljava/lang/Boolean;
+    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;
 
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+    check-cast p2, Ljava/lang/Boolean;
+
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p0
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;->$r8$lambda$bbxcbYr3TaXIniZPjgQ8DLWS2Ow(Z)I
+    invoke-static {p1, p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;->$r8$lambda$AtD8HFBZZcU6YVTB92p_da4z8cY(Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;Z)I
 
     move-result p0
 

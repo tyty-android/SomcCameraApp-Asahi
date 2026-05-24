@@ -25,7 +25,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 239
+    .line 289
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -43,10 +43,10 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
-    .line 247
+    .line 297
     sget-boolean p0, Lcom/google/common/base/FinalizableReferenceQueue$SystemLoader;->disabled:Z
 
     const/4 v0, 0x0
@@ -55,7 +55,7 @@
 
     return-object v0
 
-    .line 252
+    .line 302
     :cond_0
     :try_start_0
     invoke-static {}, Ljava/lang/ClassLoader;->getSystemClassLoader()Ljava/lang/ClassLoader;
@@ -66,7 +66,7 @@
 
     if-eqz p0, :cond_1
 
-    .line 259
+    .line 309
     :try_start_1
     const-string v1, "com.google.common.base.internal.Finalizer"
 
@@ -82,7 +82,7 @@
     :cond_1
     return-object v0
 
-    .line 254
+    .line 304
     :catch_1
     invoke-static {}, Lcom/google/common/base/FinalizableReferenceQueue;->access$000()Ljava/util/logging/Logger;
 

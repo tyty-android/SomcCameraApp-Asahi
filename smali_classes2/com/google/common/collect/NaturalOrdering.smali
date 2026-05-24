@@ -7,11 +7,14 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/google/common/collect/Ordering<",
-        "Ljava/lang/Comparable;",
-        ">;",
+        "Ljava/lang/Comparable<",
+        "*>;>;",
         "Ljava/io/Serializable;"
     }
 .end annotation
@@ -25,28 +28,34 @@
 
 # instance fields
 .field private transient nullsFirst:Lcom/google/common/collect/Ordering;
+    .annotation runtime Lcom/google/errorprone/annotations/concurrent/LazyInit;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/common/collect/Ordering<",
-            "Ljava/lang/Comparable;",
-            ">;"
+            "Ljava/lang/Comparable<",
+            "*>;>;"
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
 .field private transient nullsLast:Lcom/google/common/collect/Ordering;
+    .annotation runtime Lcom/google/errorprone/annotations/concurrent/LazyInit;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/common/collect/Ordering<",
-            "Ljava/lang/Comparable;",
-            ">;"
+            "Ljava/lang/Comparable<",
+            "*>;>;"
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -55,7 +64,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 29
+    .line 32
     new-instance v0, Lcom/google/common/collect/NaturalOrdering;
 
     invoke-direct {v0}, Lcom/google/common/collect/NaturalOrdering;-><init>()V
@@ -68,7 +77,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 74
+    .line 78
     invoke-direct {p0}, Lcom/google/common/collect/Ordering;-><init>()V
 
     return-void
@@ -77,7 +86,7 @@
 .method private readResolve()Ljava/lang/Object;
     .locals 0
 
-    .line 66
+    .line 70
     sget-object p0, Lcom/google/common/collect/NaturalOrdering;->INSTANCE:Lcom/google/common/collect/NaturalOrdering;
 
     return-object p0
@@ -87,14 +96,34 @@
 # virtual methods
 .method public compare(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "left",
+            "right"
+        }
+    .end annotation
 
-    .line 36
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Comparable<",
+            "*>;",
+            "Ljava/lang/Comparable<",
+            "*>;)I"
+        }
+    .end annotation
+
+    .line 40
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 37
+    .line 41
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 38
+    .line 42
     invoke-interface {p1, p2}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
 
     move-result p0
@@ -104,8 +133,18 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "left",
+            "right"
+        }
+    .end annotation
 
-    .line 26
+    .line 28
     check-cast p1, Ljava/lang/Comparable;
 
     check-cast p2, Ljava/lang/Comparable;
@@ -122,19 +161,19 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<S::",
-            "Ljava/lang/Comparable;",
-            ">()",
+            "Ljava/lang/Comparable<",
+            "*>;>()",
             "Lcom/google/common/collect/Ordering<",
             "TS;>;"
         }
     .end annotation
 
-    .line 43
+    .line 47
     iget-object v0, p0, Lcom/google/common/collect/NaturalOrdering;->nullsFirst:Lcom/google/common/collect/Ordering;
 
     if-nez v0, :cond_0
 
-    .line 45
+    .line 49
     invoke-super {p0}, Lcom/google/common/collect/Ordering;->nullsFirst()Lcom/google/common/collect/Ordering;
 
     move-result-object v0
@@ -150,19 +189,19 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<S::",
-            "Ljava/lang/Comparable;",
-            ">()",
+            "Ljava/lang/Comparable<",
+            "*>;>()",
             "Lcom/google/common/collect/Ordering<",
             "TS;>;"
         }
     .end annotation
 
-    .line 52
+    .line 56
     iget-object v0, p0, Lcom/google/common/collect/NaturalOrdering;->nullsLast:Lcom/google/common/collect/Ordering;
 
     if-nez v0, :cond_0
 
-    .line 54
+    .line 58
     invoke-super {p0}, Lcom/google/common/collect/Ordering;->nullsLast()Lcom/google/common/collect/Ordering;
 
     move-result-object v0
@@ -178,14 +217,14 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<S::",
-            "Ljava/lang/Comparable;",
-            ">()",
+            "Ljava/lang/Comparable<",
+            "*>;>()",
             "Lcom/google/common/collect/Ordering<",
             "TS;>;"
         }
     .end annotation
 
-    .line 61
+    .line 65
     sget-object p0, Lcom/google/common/collect/ReverseNaturalOrdering;->INSTANCE:Lcom/google/common/collect/ReverseNaturalOrdering;
 
     return-object p0
@@ -194,7 +233,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 71
+    .line 75
     const-string p0, "Ordering.natural()"
 
     return-object p0

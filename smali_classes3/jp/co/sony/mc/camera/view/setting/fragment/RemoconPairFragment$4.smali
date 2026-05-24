@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 190
+    .line 188
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$4;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,8 +45,18 @@
 # virtual methods
 .method public onKeyDown(Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;Ljava/lang/Integer;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "keyCode",
+            "keyLevel"
+        }
+    .end annotation
 
-    .line 199
+    .line 197
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$4;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
@@ -56,6 +74,16 @@
 
 .method public onKeyUp(Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;Ljava/lang/Integer;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "keyCode",
+            "keyLevel"
+        }
+    .end annotation
 
     return-void
 .end method

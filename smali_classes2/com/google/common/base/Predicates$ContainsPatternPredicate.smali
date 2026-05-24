@@ -39,11 +39,19 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/base/CommonPattern;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "pattern"
+        }
+    .end annotation
 
-    .line 627
+    .line 653
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 628
+    .line 654
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -59,8 +67,16 @@
 # virtual methods
 .method public apply(Ljava/lang/CharSequence;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "t"
+        }
+    .end annotation
 
-    .line 633
+    .line 659
     iget-object p0, p0, Lcom/google/common/base/Predicates$ContainsPatternPredicate;->pattern:Lcom/google/common/base/CommonPattern;
 
     invoke-virtual {p0, p1}, Lcom/google/common/base/CommonPattern;->matcher(Ljava/lang/CharSequence;)Lcom/google/common/base/CommonMatcher;
@@ -76,8 +92,16 @@
 
 .method public bridge synthetic apply(Ljava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "t"
+        }
+    .end annotation
 
-    .line 623
+    .line 649
     check-cast p1, Ljava/lang/CharSequence;
 
     invoke-virtual {p0, p1}, Lcom/google/common/base/Predicates$ContainsPatternPredicate;->apply(Ljava/lang/CharSequence;)Z
@@ -90,21 +114,29 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
-    .line 646
+    .line 672
     instance-of v0, p1, Lcom/google/common/base/Predicates$ContainsPatternPredicate;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 647
+    .line 673
     check-cast p1, Lcom/google/common/base/Predicates$ContainsPatternPredicate;
 
-    .line 651
+    .line 677
     iget-object v0, p0, Lcom/google/common/base/Predicates$ContainsPatternPredicate;->pattern:Lcom/google/common/base/CommonPattern;
 
     invoke-virtual {v0}, Lcom/google/common/base/CommonPattern;->pattern()Ljava/lang/String;
@@ -125,7 +157,7 @@
 
     iget-object p0, p0, Lcom/google/common/base/Predicates$ContainsPatternPredicate;->pattern:Lcom/google/common/base/CommonPattern;
 
-    .line 652
+    .line 678
     invoke-virtual {p0}, Lcom/google/common/base/CommonPattern;->flags()I
 
     move-result p0
@@ -147,7 +179,7 @@
 .method public hashCode()I
     .locals 1
 
-    .line 641
+    .line 667
     iget-object v0, p0, Lcom/google/common/base/Predicates$ContainsPatternPredicate;->pattern:Lcom/google/common/base/CommonPattern;
 
     invoke-virtual {v0}, Lcom/google/common/base/CommonPattern;->pattern()Ljava/lang/String;
@@ -178,17 +210,17 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 659
+    .line 685
     iget-object v0, p0, Lcom/google/common/base/Predicates$ContainsPatternPredicate;->pattern:Lcom/google/common/base/CommonPattern;
 
-    .line 660
+    .line 686
     invoke-static {v0}, Lcom/google/common/base/MoreObjects;->toStringHelper(Ljava/lang/Object;)Lcom/google/common/base/MoreObjects$ToStringHelper;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/google/common/base/Predicates$ContainsPatternPredicate;->pattern:Lcom/google/common/base/CommonPattern;
 
-    .line 661
+    .line 687
     invoke-virtual {v1}, Lcom/google/common/base/CommonPattern;->pattern()Ljava/lang/String;
 
     move-result-object v1
@@ -201,7 +233,7 @@
 
     iget-object p0, p0, Lcom/google/common/base/Predicates$ContainsPatternPredicate;->pattern:Lcom/google/common/base/CommonPattern;
 
-    .line 662
+    .line 688
     invoke-virtual {p0}, Lcom/google/common/base/CommonPattern;->flags()I
 
     move-result p0
@@ -212,31 +244,17 @@
 
     move-result-object p0
 
-    .line 663
+    .line 689
     invoke-virtual {p0}, Lcom/google/common/base/MoreObjects$ToStringHelper;->toString()Ljava/lang/String;
 
     move-result-object p0
 
-    .line 664
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    .line 690
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    const-string v1, "Predicates.contains("
 
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, 0x15
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v0, "Predicates.contains("
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

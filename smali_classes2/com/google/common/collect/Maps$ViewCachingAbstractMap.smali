@@ -28,6 +28,9 @@
 
 # instance fields
 .field private transient entrySet:Ljava/util/Set;
+    .annotation runtime Lcom/google/errorprone/annotations/concurrent/LazyInit;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
@@ -36,11 +39,14 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
 .field private transient keySet:Ljava/util/Set;
+    .annotation runtime Lcom/google/errorprone/annotations/concurrent/LazyInit;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
@@ -48,11 +54,14 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
 .field private transient values:Ljava/util/Collection;
+    .annotation runtime Lcom/google/errorprone/annotations/concurrent/LazyInit;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Collection<",
@@ -60,7 +69,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -69,7 +78,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 3327
+    .line 3659
     invoke-direct {p0}, Ljava/util/AbstractMap;-><init>()V
 
     return-void
@@ -98,7 +107,7 @@
         }
     .end annotation
 
-    .line 3351
+    .line 3685
     new-instance v0, Lcom/google/common/collect/Maps$KeySet;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/Maps$KeySet;-><init>(Ljava/util/Map;)V
@@ -116,7 +125,7 @@
         }
     .end annotation
 
-    .line 3363
+    .line 3697
     new-instance v0, Lcom/google/common/collect/Maps$Values;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/Maps$Values;-><init>(Ljava/util/Map;)V
@@ -135,12 +144,12 @@
         }
     .end annotation
 
-    .line 3338
+    .line 3672
     iget-object v0, p0, Lcom/google/common/collect/Maps$ViewCachingAbstractMap;->entrySet:Ljava/util/Set;
 
     if-nez v0, :cond_0
 
-    .line 3339
+    .line 3673
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$ViewCachingAbstractMap;->createEntrySet()Ljava/util/Set;
 
     move-result-object v0
@@ -161,12 +170,12 @@
         }
     .end annotation
 
-    .line 3346
+    .line 3680
     iget-object v0, p0, Lcom/google/common/collect/Maps$ViewCachingAbstractMap;->keySet:Ljava/util/Set;
 
     if-nez v0, :cond_0
 
-    .line 3347
+    .line 3681
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$ViewCachingAbstractMap;->createKeySet()Ljava/util/Set;
 
     move-result-object v0
@@ -187,12 +196,12 @@
         }
     .end annotation
 
-    .line 3358
+    .line 3692
     iget-object v0, p0, Lcom/google/common/collect/Maps$ViewCachingAbstractMap;->values:Ljava/util/Collection;
 
     if-nez v0, :cond_0
 
-    .line 3359
+    .line 3693
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$ViewCachingAbstractMap;->createValues()Ljava/util/Collection;
 
     move-result-object v0

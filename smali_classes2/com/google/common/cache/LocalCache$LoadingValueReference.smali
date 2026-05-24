@@ -56,7 +56,7 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 3392
+    .line 3430
     invoke-static {}, Lcom/google/common/cache/LocalCache;->unset()Lcom/google/common/cache/LocalCache$ValueReference;
 
     move-result-object v0
@@ -68,6 +68,15 @@
 
 .method public constructor <init>(Lcom/google/common/cache/LocalCache$ValueReference;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "oldValue"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -76,24 +85,24 @@
         }
     .end annotation
 
-    .line 3395
+    .line 3438
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3388
+    .line 3426
     invoke-static {}, Lcom/google/common/util/concurrent/SettableFuture;->create()Lcom/google/common/util/concurrent/SettableFuture;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/common/cache/LocalCache$LoadingValueReference;->futureValue:Lcom/google/common/util/concurrent/SettableFuture;
 
-    .line 3389
+    .line 3427
     invoke-static {}, Lcom/google/common/base/Stopwatch;->createUnstarted()Lcom/google/common/base/Stopwatch;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/common/cache/LocalCache$LoadingValueReference;->stopwatch:Lcom/google/common/base/Stopwatch;
 
-    .line 3396
+    .line 3439
     iput-object p1, p0, Lcom/google/common/cache/LocalCache$LoadingValueReference;->oldValue:Lcom/google/common/cache/LocalCache$ValueReference;
 
     return-void
@@ -101,6 +110,15 @@
 
 .method private fullyFailedFuture(Ljava/lang/Throwable;)Lcom/google/common/util/concurrent/ListenableFuture;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "t"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -111,7 +129,7 @@
         }
     .end annotation
 
-    .line 3423
+    .line 3468
     invoke-static {p1}, Lcom/google/common/util/concurrent/Futures;->immediateFailedFuture(Ljava/lang/Throwable;)Lcom/google/common/util/concurrent/ListenableFuture;
 
     move-result-object p0
@@ -124,9 +142,22 @@
 .method public copyFor(Ljava/lang/ref/ReferenceQueue;Ljava/lang/Object;Lcom/google/common/cache/ReferenceEntry;)Lcom/google/common/cache/LocalCache$ValueReference;
     .locals 0
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "queue",
+            "value",
+            "entry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -145,7 +176,7 @@
 .method public elapsedNanos()J
     .locals 2
 
-    .line 3474
+    .line 3516
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$LoadingValueReference;->stopwatch:Lcom/google/common/base/Stopwatch;
 
     sget-object v0, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
@@ -165,7 +196,7 @@
         }
     .end annotation
 
-    .line 3484
+    .line 3526
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$LoadingValueReference;->oldValue:Lcom/google/common/cache/LocalCache$ValueReference;
 
     invoke-interface {p0}, Lcom/google/common/cache/LocalCache$ValueReference;->get()Ljava/lang/Object;
@@ -200,7 +231,7 @@
         }
     .end annotation
 
-    .line 3488
+    .line 3530
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$LoadingValueReference;->oldValue:Lcom/google/common/cache/LocalCache$ValueReference;
 
     return-object p0
@@ -209,7 +240,7 @@
 .method public getWeight()I
     .locals 0
 
-    .line 3411
+    .line 3454
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$LoadingValueReference;->oldValue:Lcom/google/common/cache/LocalCache$ValueReference;
 
     invoke-interface {p0}, Lcom/google/common/cache/LocalCache$ValueReference;->getWeight()I
@@ -222,7 +253,7 @@
 .method public isActive()Z
     .locals 0
 
-    .line 3406
+    .line 3449
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$LoadingValueReference;->oldValue:Lcom/google/common/cache/LocalCache$ValueReference;
 
     invoke-interface {p0}, Lcom/google/common/cache/LocalCache$ValueReference;->isActive()Z
@@ -240,8 +271,28 @@
     return p0
 .end method
 
+.method synthetic lambda$loadFuture$0$com-google-common-cache-LocalCache$LoadingValueReference(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 3502
+    invoke-virtual {p0, p1}, Lcom/google/common/cache/LocalCache$LoadingValueReference;->set(Ljava/lang/Object;)Z
+
+    return-object p1
+.end method
+
 .method public loadFuture(Ljava/lang/Object;Lcom/google/common/cache/CacheLoader;)Lcom/google/common/util/concurrent/ListenableFuture;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "loader"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;",
@@ -252,13 +303,13 @@
         }
     .end annotation
 
-    .line 3442
+    .line 3487
     :try_start_0
     iget-object v0, p0, Lcom/google/common/cache/LocalCache$LoadingValueReference;->stopwatch:Lcom/google/common/base/Stopwatch;
 
     invoke-virtual {v0}, Lcom/google/common/base/Stopwatch;->start()Lcom/google/common/base/Stopwatch;
 
-    .line 3443
+    .line 3488
     iget-object v0, p0, Lcom/google/common/cache/LocalCache$LoadingValueReference;->oldValue:Lcom/google/common/cache/LocalCache$ValueReference;
 
     invoke-interface {v0}, Lcom/google/common/cache/LocalCache$ValueReference;->get()Ljava/lang/Object;
@@ -267,12 +318,12 @@
 
     if-nez v0, :cond_1
 
-    .line 3445
+    .line 3490
     invoke-virtual {p2, p1}, Lcom/google/common/cache/CacheLoader;->load(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 3446
+    .line 3491
     invoke-virtual {p0, p1}, Lcom/google/common/cache/LocalCache$LoadingValueReference;->set(Ljava/lang/Object;)Z
 
     move-result p2
@@ -291,7 +342,7 @@
     :goto_0
     return-object p0
 
-    .line 3448
+    .line 3493
     :cond_1
     invoke-virtual {p2, p1, v0}, Lcom/google/common/cache/CacheLoader;->reload(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/util/concurrent/ListenableFuture;
 
@@ -301,25 +352,25 @@
 
     const/4 p1, 0x0
 
-    .line 3450
+    .line 3495
     invoke-static {p1}, Lcom/google/common/util/concurrent/Futures;->immediateFuture(Ljava/lang/Object;)Lcom/google/common/util/concurrent/ListenableFuture;
 
     move-result-object p0
 
     return-object p0
 
-    .line 3454
+    .line 3499
     :cond_2
-    new-instance p2, Lcom/google/common/cache/LocalCache$LoadingValueReference$1;
+    new-instance p2, Lcom/google/common/cache/LocalCache$LoadingValueReference$$ExternalSyntheticLambda0;
 
-    invoke-direct {p2, p0}, Lcom/google/common/cache/LocalCache$LoadingValueReference$1;-><init>(Lcom/google/common/cache/LocalCache$LoadingValueReference;)V
+    invoke-direct {p2, p0}, Lcom/google/common/cache/LocalCache$LoadingValueReference$$ExternalSyntheticLambda0;-><init>(Lcom/google/common/cache/LocalCache$LoadingValueReference;)V
 
-    .line 3463
+    .line 3505
     invoke-static {}, Lcom/google/common/util/concurrent/MoreExecutors;->directExecutor()Ljava/util/concurrent/Executor;
 
     move-result-object v0
 
-    .line 3454
+    .line 3499
     invoke-static {p1, p2, v0}, Lcom/google/common/util/concurrent/Futures;->transform(Lcom/google/common/util/concurrent/ListenableFuture;Lcom/google/common/base/Function;Ljava/util/concurrent/Executor;)Lcom/google/common/util/concurrent/ListenableFuture;
 
     move-result-object p0
@@ -331,7 +382,7 @@
     :catchall_0
     move-exception p1
 
-    .line 3465
+    .line 3507
     invoke-virtual {p0, p1}, Lcom/google/common/cache/LocalCache$LoadingValueReference;->setException(Ljava/lang/Throwable;)Z
 
     move-result p2
@@ -347,13 +398,13 @@
 
     move-result-object p0
 
-    .line 3466
+    .line 3508
     :goto_1
     instance-of p1, p1, Ljava/lang/InterruptedException;
 
     if-eqz p1, :cond_4
 
-    .line 3467
+    .line 3509
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object p1
@@ -367,9 +418,18 @@
 .method public notifyNewValue(Ljava/lang/Object;)V
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "newValue"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TV;)V"
@@ -378,12 +438,12 @@
 
     if-eqz p1, :cond_0
 
-    .line 3431
+    .line 3476
     invoke-virtual {p0, p1}, Lcom/google/common/cache/LocalCache$LoadingValueReference;->set(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 3434
+    .line 3479
     :cond_0
     invoke-static {}, Lcom/google/common/cache/LocalCache;->unset()Lcom/google/common/cache/LocalCache$ValueReference;
 
@@ -398,16 +458,25 @@
 .method public set(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "newValue"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TV;)Z"
         }
     .end annotation
 
-    .line 3415
+    .line 3459
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$LoadingValueReference;->futureValue:Lcom/google/common/util/concurrent/SettableFuture;
 
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/SettableFuture;->set(Ljava/lang/Object;)Z
@@ -419,8 +488,16 @@
 
 .method public setException(Ljava/lang/Throwable;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "t"
+        }
+    .end annotation
 
-    .line 3419
+    .line 3464
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$LoadingValueReference;->futureValue:Lcom/google/common/util/concurrent/SettableFuture;
 
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/SettableFuture;->setException(Ljava/lang/Throwable;)Z
@@ -444,7 +521,7 @@
         }
     .end annotation
 
-    .line 3479
+    .line 3521
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$LoadingValueReference;->futureValue:Lcom/google/common/util/concurrent/SettableFuture;
 
     invoke-static {p0}, Lcom/google/common/util/concurrent/Uninterruptibles;->getUninterruptibly(Ljava/util/concurrent/Future;)Ljava/lang/Object;

@@ -14,7 +14,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nAvailablePreviewFpsMap.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AvailablePreviewFpsMap.kt\njp/co/sony/mc/camera/util/capability/AvailablePreviewFpsMap$Companion\n+ 2 ArraysJVM.kt\nkotlin/collections/ArraysKt__ArraysJVMKt\n*L\n1#1,57:1\n37#2,2:58\n*S KotlinDebug\n*F\n+ 1 AvailablePreviewFpsMap.kt\njp/co/sony/mc/camera/util/capability/AvailablePreviewFpsMap$Companion\n*L\n41#1:58,2\n*E\n"
+    value = "SMAP\nAvailablePreviewFpsMap.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AvailablePreviewFpsMap.kt\njp/co/sony/mc/camera/util/capability/AvailablePreviewFpsMap$Companion\n+ 2 ArraysJVM.kt\nkotlin/collections/ArraysKt__ArraysJVMKt\n*L\n1#1,57:1\n37#2:58\n36#2,3:59\n*S KotlinDebug\n*F\n+ 1 AvailablePreviewFpsMap.kt\njp/co/sony/mc/camera/util/capability/AvailablePreviewFpsMap$Companion\n*L\n41#1:58\n41#1:59,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -124,7 +124,7 @@
 
     check-cast p2, Ljava/util/Collection;
 
-    .line 59
+    .line 61
     new-array v0, v6, [Ljava/lang/String;
 
     invoke-interface {p2, v0}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;

@@ -39,13 +39,21 @@
 
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 2398
+    .line 2393
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2401
+    .line 2396
     new-instance p1, Landroid/graphics/Point;
 
     const/4 v0, -0x1
@@ -54,7 +62,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker;->mFaceAreaTriggerPoint:Landroid/graphics/Point;
 
-    .line 2405
+    .line 2400
     new-instance p1, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker$1;
 
     invoke-direct {p1, p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker$1;-><init>(Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker;)V
@@ -75,32 +83,32 @@
 .method private notifyFaceReflected()V
     .locals 2
 
-    .line 2433
+    .line 2428
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker;->mFaceAreaTriggerPoint:Landroid/graphics/Point;
 
     const/4 v1, -0x1
 
     iput v1, v0, Landroid/graphics/Point;->x:I
 
-    .line 2434
+    .line 2429
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker;->mFaceAreaTriggerPoint:Landroid/graphics/Point;
 
     iput v1, v0, Landroid/graphics/Point;->y:I
 
-    .line 2435
+    .line 2430
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker;->mCallback:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectedCallback;
 
     if-eqz v0, :cond_0
 
-    .line 2436
+    .line 2431
     invoke-interface {v0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectedCallback;->onFaceReflected()V
 
     const/4 v0, 0x0
 
-    .line 2437
+    .line 2432
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker;->setFaceReflectCb(Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectedCallback;)V
 
-    .line 2439
+    .line 2434
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
@@ -119,15 +127,23 @@
 # virtual methods
 .method public check(Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 
-    .line 2422
+    .line 2417
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/FaceDetectUtil;->isValidFaceDetectionResult(Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2423
+    .line 2418
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->getFaceList()Ljava/util/List;
 
     move-result-object v0
@@ -160,12 +176,12 @@
 
     if-eqz p1, :cond_1
 
-    .line 2425
+    .line 2420
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker;->notifyFaceReflected()V
 
     goto :goto_0
 
-    .line 2428
+    .line 2423
     :cond_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker;->notifyFaceReflected()V
 
@@ -177,7 +193,7 @@
 .method public isWaitingForCapturing()Z
     .locals 0
 
-    .line 2447
+    .line 2442
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker;->mCallback:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectedCallback;
 
     if-eqz p0, :cond_0
@@ -196,7 +212,7 @@
 .method public isWaitingForFaceReflected()Z
     .locals 1
 
-    .line 2443
+    .line 2438
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker;->mFaceAreaTriggerPoint:Landroid/graphics/Point;
 
     iget v0, v0, Landroid/graphics/Point;->x:I
@@ -222,8 +238,16 @@
 
 .method public requestToWaitForFaceReflected(Landroid/graphics/Point;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "point"
+        }
+    .end annotation
 
-    .line 2413
+    .line 2408
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmIsFaceTouchCaptureEnabled(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Z
@@ -234,11 +258,11 @@
 
     return-void
 
-    .line 2416
+    .line 2411
     :cond_0
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker;->mFaceAreaTriggerPoint:Landroid/graphics/Point;
 
-    .line 2417
+    .line 2412
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmHandler(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Landroid/os/Handler;
@@ -249,7 +273,7 @@
 
     invoke-virtual {p1, v0}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 2418
+    .line 2413
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmHandler(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Landroid/os/Handler;
@@ -267,8 +291,16 @@
 
 .method public setFaceReflectCb(Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectedCallback;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "callback"
+        }
+    .end annotation
 
-    .line 2451
+    .line 2446
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectChecker;->mCallback:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FaceReflectedCallback;
 
     return-void

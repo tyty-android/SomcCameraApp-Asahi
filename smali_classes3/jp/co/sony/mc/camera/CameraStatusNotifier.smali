@@ -7,6 +7,7 @@
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Ljp/co/sony/mc/camera/CameraStatusNotifier$AeAwbLockStateListener;,
+        Ljp/co/sony/mc/camera/CameraStatusNotifier$AiSuggestionParameterIndexListener;,
         Ljp/co/sony/mc/camera/CameraStatusNotifier$ApertureDetectListener;,
         Ljp/co/sony/mc/camera/CameraStatusNotifier$AutoFlashListener;,
         Ljp/co/sony/mc/camera/CameraStatusNotifier$AutoFramingObjectTrackingListener;,
@@ -27,16 +28,18 @@
         Ljp/co/sony/mc/camera/CameraStatusNotifier$HandShutterDetectionListener;,
         Ljp/co/sony/mc/camera/CameraStatusNotifier$HistogramUpdateListener;,
         Ljp/co/sony/mc/camera/CameraStatusNotifier$LowLightStateListener;,
+        Ljp/co/sony/mc/camera/CameraStatusNotifier$OfflineSessionListener;,
         Ljp/co/sony/mc/camera/CameraStatusNotifier$PoseRotationResultListener;,
         Ljp/co/sony/mc/camera/CameraStatusNotifier$QrCodeDetectListener;,
         Ljp/co/sony/mc/camera/CameraStatusNotifier$RecordingProgressListener;,
-        Ljp/co/sony/mc/camera/CameraStatusNotifier$SsIsoEvDetectListener;
+        Ljp/co/sony/mc/camera/CameraStatusNotifier$SsIsoEvDetectListener;,
+        Ljp/co/sony/mc/camera/CameraStatusNotifier$TripodFramingCroppedPositionListener;
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u001a\u0008f\u0018\u00002\u00020\u0001:\u0019\u0002\u0003\u0004\u0005\u0006\u0007\u0008\t\n\u000b\u000c\r\u000e\u000f\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001a\u00a8\u0006\u001b"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u001d\u0008f\u0018\u00002\u00020\u0001:\u001c\u0002\u0003\u0004\u0005\u0006\u0007\u0008\t\n\u000b\u000c\r\u000e\u000f\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001a\u001b\u001c\u001d\u00f8\u0001\u0000\u0082\u0002\u0006\n\u0004\u0008!0\u0001\u00a8\u0006\u001e\u00c0\u0006\u0001"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/CameraStatusNotifier;",
@@ -66,6 +69,9 @@
         "FallbackStateListener",
         "AutoFramingObjectTrackingListener",
         "FramingAssistCroppedPositionListener",
+        "AiSuggestionParameterIndexListener",
+        "TripodFramingCroppedPositionListener",
+        "OfflineSessionListener",
         "SomcCamera_release"
     }
     k = 0x1

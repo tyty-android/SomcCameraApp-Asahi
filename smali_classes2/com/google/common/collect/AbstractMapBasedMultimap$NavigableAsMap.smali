@@ -1,4 +1,4 @@
-.class Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;
+.class final Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;
 .super Lcom/google/common/collect/AbstractMapBasedMultimap$SortedAsMap;
 .source "AbstractMapBasedMultimap.java"
 
@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x12
     name = "NavigableAsMap"
 .end annotation
 
@@ -35,6 +35,17 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/AbstractMapBasedMultimap;Ljava/util/NavigableMap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "submap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -45,10 +56,10 @@
         }
     .end annotation
 
-    .line 1449
+    .line 1514
     iput-object p1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->this$0:Lcom/google/common/collect/AbstractMapBasedMultimap;
 
-    .line 1450
+    .line 1515
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/AbstractMapBasedMultimap$SortedAsMap;-><init>(Lcom/google/common/collect/AbstractMapBasedMultimap;Ljava/util/SortedMap;)V
 
     return-void
@@ -58,6 +69,19 @@
 # virtual methods
 .method public ceilingEntry(Ljava/lang/Object;)Ljava/util/Map$Entry;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -68,7 +92,10 @@
         }
     .end annotation
 
-    .line 1482
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1552
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->sortedMap()Ljava/util/NavigableMap;
 
     move-result-object v0
@@ -83,7 +110,7 @@
 
     goto :goto_0
 
-    .line 1483
+    .line 1553
     :cond_0
     invoke-virtual {p0, p1}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->wrapEntry(Ljava/util/Map$Entry;)Ljava/util/Map$Entry;
 
@@ -95,13 +122,29 @@
 
 .method public ceilingKey(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)TK;"
         }
     .end annotation
 
-    .line 1488
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1559
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->sortedMap()Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -123,7 +166,7 @@
         }
     .end annotation
 
-    .line 1547
+    .line 1625
     new-instance v0, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableKeySet;
 
     iget-object v1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->this$0:Lcom/google/common/collect/AbstractMapBasedMultimap;
@@ -140,7 +183,7 @@
 .method bridge synthetic createKeySet()Ljava/util/Set;
     .locals 0
 
-    .line 1447
+    .line 1512
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->createKeySet()Ljava/util/NavigableSet;
 
     move-result-object p0
@@ -151,7 +194,7 @@
 .method bridge synthetic createKeySet()Ljava/util/SortedSet;
     .locals 0
 
-    .line 1447
+    .line 1512
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->createKeySet()Ljava/util/NavigableSet;
 
     move-result-object p0
@@ -169,7 +212,7 @@
         }
     .end annotation
 
-    .line 1557
+    .line 1635
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->descendingMap()Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -193,7 +236,7 @@
         }
     .end annotation
 
-    .line 1537
+    .line 1615
     new-instance v0, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;
 
     iget-object v1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->this$0:Lcom/google/common/collect/AbstractMapBasedMultimap;
@@ -223,7 +266,10 @@
         }
     .end annotation
 
-    .line 1504
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1578
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->sortedMap()Ljava/util/NavigableMap;
 
     move-result-object v0
@@ -238,7 +284,7 @@
 
     goto :goto_0
 
-    .line 1505
+    .line 1579
     :cond_0
     invoke-virtual {p0, v0}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->wrapEntry(Ljava/util/Map$Entry;)Ljava/util/Map$Entry;
 
@@ -250,6 +296,19 @@
 
 .method public floorEntry(Ljava/lang/Object;)Ljava/util/Map$Entry;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -260,7 +319,10 @@
         }
     .end annotation
 
-    .line 1471
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1539
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->sortedMap()Ljava/util/NavigableMap;
 
     move-result-object v0
@@ -275,7 +337,7 @@
 
     goto :goto_0
 
-    .line 1472
+    .line 1540
     :cond_0
     invoke-virtual {p0, p1}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->wrapEntry(Ljava/util/Map$Entry;)Ljava/util/Map$Entry;
 
@@ -287,13 +349,29 @@
 
 .method public floorKey(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)TK;"
         }
     .end annotation
 
-    .line 1477
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1546
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->sortedMap()Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -307,6 +385,19 @@
 
 .method public headMap(Ljava/lang/Object;)Ljava/util/NavigableMap;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "toKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -319,7 +410,7 @@
 
     const/4 v0, 0x0
 
-    .line 1573
+    .line 1655
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->headMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -329,6 +420,21 @@
 
 .method public headMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "toKey",
+            "inclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;Z)",
@@ -339,7 +445,7 @@
         }
     .end annotation
 
-    .line 1578
+    .line 1660
     new-instance v0, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;
 
     iget-object v1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->this$0:Lcom/google/common/collect/AbstractMapBasedMultimap;
@@ -359,8 +465,20 @@
 
 .method public bridge synthetic headMap(Ljava/lang/Object;)Ljava/util/SortedMap;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "toKey"
+        }
+    .end annotation
 
-    .line 1447
+    .line 1512
     invoke-virtual {p0, p1}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->headMap(Ljava/lang/Object;)Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -370,6 +488,19 @@
 
 .method public higherEntry(Ljava/lang/Object;)Ljava/util/Map$Entry;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -380,7 +511,10 @@
         }
     .end annotation
 
-    .line 1493
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1565
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->sortedMap()Ljava/util/NavigableMap;
 
     move-result-object v0
@@ -395,7 +529,7 @@
 
     goto :goto_0
 
-    .line 1494
+    .line 1566
     :cond_0
     invoke-virtual {p0, p1}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->wrapEntry(Ljava/util/Map$Entry;)Ljava/util/Map$Entry;
 
@@ -407,13 +541,29 @@
 
 .method public higherKey(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)TK;"
         }
     .end annotation
 
-    .line 1499
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1572
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->sortedMap()Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -435,7 +585,7 @@
         }
     .end annotation
 
-    .line 1542
+    .line 1620
     invoke-super {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$SortedAsMap;->keySet()Ljava/util/SortedSet;
 
     move-result-object p0
@@ -448,7 +598,7 @@
 .method public bridge synthetic keySet()Ljava/util/Set;
     .locals 0
 
-    .line 1447
+    .line 1512
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->keySet()Ljava/util/NavigableSet;
 
     move-result-object p0
@@ -459,7 +609,7 @@
 .method public bridge synthetic keySet()Ljava/util/SortedSet;
     .locals 0
 
-    .line 1447
+    .line 1512
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->keySet()Ljava/util/NavigableSet;
 
     move-result-object p0
@@ -479,7 +629,10 @@
         }
     .end annotation
 
-    .line 1510
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1585
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->sortedMap()Ljava/util/NavigableMap;
 
     move-result-object v0
@@ -494,7 +647,7 @@
 
     goto :goto_0
 
-    .line 1511
+    .line 1586
     :cond_0
     invoke-virtual {p0, v0}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->wrapEntry(Ljava/util/Map$Entry;)Ljava/util/Map$Entry;
 
@@ -506,6 +659,19 @@
 
 .method public lowerEntry(Ljava/lang/Object;)Ljava/util/Map$Entry;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -516,7 +682,10 @@
         }
     .end annotation
 
-    .line 1460
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1526
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->sortedMap()Ljava/util/NavigableMap;
 
     move-result-object v0
@@ -531,7 +700,7 @@
 
     goto :goto_0
 
-    .line 1461
+    .line 1527
     :cond_0
     invoke-virtual {p0, p1}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->wrapEntry(Ljava/util/Map$Entry;)Ljava/util/Map$Entry;
 
@@ -543,13 +712,29 @@
 
 .method public lowerKey(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)TK;"
         }
     .end annotation
 
-    .line 1466
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1533
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->sortedMap()Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -571,7 +756,7 @@
         }
     .end annotation
 
-    .line 1552
+    .line 1630
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->keySet()Ljava/util/NavigableSet;
 
     move-result-object p0
@@ -581,6 +766,15 @@
 
 .method pollAsMapEntry(Ljava/util/Iterator;)Ljava/util/Map$Entry;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "entryIterator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -596,7 +790,10 @@
         }
     .end annotation
 
-    .line 1525
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1603
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
@@ -607,7 +804,7 @@
 
     return-object p0
 
-    .line 1528
+    .line 1606
     :cond_0
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -615,14 +812,14 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 1529
+    .line 1607
     iget-object v1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->this$0:Lcom/google/common/collect/AbstractMapBasedMultimap;
 
     invoke-virtual {v1}, Lcom/google/common/collect/AbstractMapBasedMultimap;->createCollection()Ljava/util/Collection;
 
     move-result-object v1
 
-    .line 1530
+    .line 1608
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v2
@@ -631,10 +828,10 @@
 
     invoke-interface {v1, v2}, Ljava/util/Collection;->addAll(Ljava/util/Collection;)Z
 
-    .line 1531
+    .line 1609
     invoke-interface {p1}, Ljava/util/Iterator;->remove()V
 
-    .line 1532
+    .line 1610
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object p1
@@ -664,7 +861,10 @@
         }
     .end annotation
 
-    .line 1516
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1592
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->entrySet()Ljava/util/Set;
 
     move-result-object v0
@@ -692,7 +892,10 @@
         }
     .end annotation
 
-    .line 1521
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1598
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->descendingMap()Ljava/util/NavigableMap;
 
     move-result-object v0
@@ -724,7 +927,7 @@
         }
     .end annotation
 
-    .line 1455
+    .line 1520
     invoke-super {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$SortedAsMap;->sortedMap()Ljava/util/SortedMap;
 
     move-result-object p0
@@ -737,7 +940,7 @@
 .method bridge synthetic sortedMap()Ljava/util/SortedMap;
     .locals 0
 
-    .line 1447
+    .line 1512
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->sortedMap()Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -747,6 +950,25 @@
 
 .method public subMap(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/NavigableMap;
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromKey",
+            "toKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TK;)",
@@ -761,7 +983,7 @@
 
     const/4 v1, 0x0
 
-    .line 1562
+    .line 1641
     invoke-virtual {p0, p1, v0, p2, v1}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->subMap(Ljava/lang/Object;ZLjava/lang/Object;Z)Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -771,6 +993,29 @@
 
 .method public subMap(Ljava/lang/Object;ZLjava/lang/Object;Z)Ljava/util/NavigableMap;
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .param p3    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "fromKey",
+            "fromInclusive",
+            "toKey",
+            "toInclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;ZTK;Z)",
@@ -781,7 +1026,7 @@
         }
     .end annotation
 
-    .line 1568
+    .line 1650
     new-instance v0, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;
 
     iget-object v1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->this$0:Lcom/google/common/collect/AbstractMapBasedMultimap;
@@ -801,8 +1046,26 @@
 
 .method public bridge synthetic subMap(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedMap;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "fromKey",
+            "toKey"
+        }
+    .end annotation
 
-    .line 1447
+    .line 1512
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->subMap(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -812,6 +1075,19 @@
 
 .method public tailMap(Ljava/lang/Object;)Ljava/util/NavigableMap;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fromKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -824,7 +1100,7 @@
 
     const/4 v0, 0x1
 
-    .line 1583
+    .line 1665
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->tailMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -834,6 +1110,21 @@
 
 .method public tailMap(Ljava/lang/Object;Z)Ljava/util/NavigableMap;
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromKey",
+            "inclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;Z)",
@@ -844,7 +1135,7 @@
         }
     .end annotation
 
-    .line 1588
+    .line 1671
     new-instance v0, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;
 
     iget-object v1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->this$0:Lcom/google/common/collect/AbstractMapBasedMultimap;
@@ -864,8 +1155,20 @@
 
 .method public bridge synthetic tailMap(Ljava/lang/Object;)Ljava/util/SortedMap;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "fromKey"
+        }
+    .end annotation
 
-    .line 1447
+    .line 1512
     invoke-virtual {p0, p1}, Lcom/google/common/collect/AbstractMapBasedMultimap$NavigableAsMap;->tailMap(Ljava/lang/Object;)Ljava/util/NavigableMap;
 
     move-result-object p0

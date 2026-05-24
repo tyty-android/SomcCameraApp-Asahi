@@ -22,6 +22,14 @@
 .end method
 
 .method public abstract onProgress(J)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "presentationTimeUs"
+        }
+    .end annotation
 .end method
 
 .method public abstract onStorageFull()V

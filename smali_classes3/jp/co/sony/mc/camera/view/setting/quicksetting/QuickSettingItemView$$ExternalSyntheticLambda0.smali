@@ -30,7 +30,7 @@
 
     move-result p0
 
-    invoke-static {p1, p0}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->$r8$lambda$BttSwfh96zXc3szX1meUHLlB-wk(Landroidx/constraintlayout/widget/ConstraintSet;I)Lkotlin/Unit;
+    invoke-static {p1, p0}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->$r8$lambda$SHjWN8Bc4qCaZgWC-V5qFqrF4CI(Landroidx/constraintlayout/widget/ConstraintSet;I)Lkotlin/Unit;
 
     move-result-object p0
 

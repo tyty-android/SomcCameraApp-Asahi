@@ -163,6 +163,17 @@
 
 .method private static final isLastMeasuredTime(Ljava/util/List;I)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x10
+        }
+        names = {
+            "timeList",
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -227,6 +238,14 @@
 
 .method public static final measureResource(I)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "aId"
+        }
+    .end annotation
 
     .line 318
     sget-boolean p0, Ljp/co/sony/mc/camera/util/MeasurePerformance;->sMemoryFlag:Z
@@ -274,6 +293,14 @@
 
 .method public static final measureResource(Ljava/lang/String;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "tag"
+        }
+    .end annotation
 
     .line 335
     sget-boolean v0, Ljp/co/sony/mc/camera/util/MeasurePerformance;->sMemoryFlag:Z
@@ -324,6 +351,18 @@
 
 .method private static final measureTime(Ljp/co/sony/mc/camera/util/MeasurePerformance$PerformanceIds;Ljp/co/sony/mc/camera/util/MeasurePerformance$MeasureKind;Ljava/lang/String;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x10
+        }
+        names = {
+            "id",
+            "aKind",
+            "comment"
+        }
+    .end annotation
 
     .line 231
     sget-boolean v0, Ljp/co/sony/mc/camera/util/MeasurePerformance;->sTimerFlag:Z
@@ -367,6 +406,16 @@
 
 .method public static final measureTime(Ljp/co/sony/mc/camera/util/MeasurePerformance$PerformanceIds;Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "id",
+            "isStart"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -389,6 +438,18 @@
 
 .method public static final measureTime(Ljp/co/sony/mc/camera/util/MeasurePerformance$PerformanceIds;ZLjava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x10
+        }
+        names = {
+            "id",
+            "isStart",
+            "comment"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -409,6 +470,16 @@
 
 .method public static final measureTimeOverwrite(Ljp/co/sony/mc/camera/util/MeasurePerformance$PerformanceIds;Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "id",
+            "isStart"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -521,12 +592,28 @@
 
 .method public static final outResultDelay(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "delayMillis"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public static final setMemoryFlag(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "flag"
+        }
+    .end annotation
 
     .line 226
     sput-boolean p0, Ljp/co/sony/mc/camera/util/MeasurePerformance;->sMemoryFlag:Z
@@ -536,6 +623,15 @@
 
 .method private static setResultResource(Ljava/util/List;)Ljava/lang/String;
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "resultResourceList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -659,6 +755,15 @@
 
 .method private static setResultTime(Ljava/util/List;)Ljava/lang/String;
     .locals 17
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "resultTimeList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1158,6 +1263,14 @@
 
 .method public static final setTimerFlag(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "flag"
+        }
+    .end annotation
 
     .line 217
     sput-boolean p0, Ljp/co/sony/mc/camera/util/MeasurePerformance;->sTimerFlag:Z
@@ -1167,6 +1280,14 @@
 
 .method private static writeFile(Ljava/lang/String;)V
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "aResult"
+        }
+    .end annotation
 
     .line 494
     const-string v0, "[MeasurePerformance::writeFile]:Error = "

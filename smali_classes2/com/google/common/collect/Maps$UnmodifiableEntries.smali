@@ -42,6 +42,15 @@
 # direct methods
 .method constructor <init>(Ljava/util/Collection;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "entries"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -51,10 +60,10 @@
         }
     .end annotation
 
-    .line 1310
+    .line 1519
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingCollection;-><init>()V
 
-    .line 1311
+    .line 1520
     iput-object p1, p0, Lcom/google/common/collect/Maps$UnmodifiableEntries;->entries:Ljava/util/Collection;
 
     return-void
@@ -65,7 +74,7 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 1307
+    .line 1515
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$UnmodifiableEntries;->delegate()Ljava/util/Collection;
 
     move-result-object p0
@@ -84,7 +93,7 @@
         }
     .end annotation
 
-    .line 1316
+    .line 1525
     iget-object p0, p0, Lcom/google/common/collect/Maps$UnmodifiableEntries;->entries:Ljava/util/Collection;
 
     return-object p0
@@ -101,7 +110,7 @@
         }
     .end annotation
 
-    .line 1321
+    .line 1530
     iget-object p0, p0, Lcom/google/common/collect/Maps$UnmodifiableEntries;->entries:Ljava/util/Collection;
 
     invoke-interface {p0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
@@ -118,7 +127,7 @@
 .method public toArray()[Ljava/lang/Object;
     .locals 0
 
-    .line 1328
+    .line 1543
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$UnmodifiableEntries;->standardToArray()[Ljava/lang/Object;
 
     move-result-object p0
@@ -128,6 +137,15 @@
 
 .method public toArray([Ljava/lang/Object;)[Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "array"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -136,7 +154,7 @@
         }
     .end annotation
 
-    .line 1333
+    .line 1549
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Maps$UnmodifiableEntries;->standardToArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object p0

@@ -256,6 +256,11 @@
         <enum name="add" value="16" />
     </attr>
     <attr name="buttonPanelSideLayout" format="reference" />
+    <attr name="buttonSize" format="reference">
+        <enum name="standard" value="0" />
+        <enum name="wide" value="1" />
+        <enum name="icon_only" value="2" />
+    </attr>
     <attr name="buttonStyle" format="reference" />
     <attr name="buttonStyleSmall" format="reference" />
     <attr name="buttonTint" format="color" />
@@ -349,6 +354,7 @@
     <attr name="chipStrokeWidth" format="dimension" />
     <attr name="chipStyle" format="reference" />
     <attr name="chipSurfaceColor" format="color" />
+    <attr name="circleCrop" format="boolean" />
     <attr name="circleRadius" format="dimension" />
     <attr name="circularProgressIndicatorStyle" format="reference" />
     <attr name="circularflow_angles" format="string" />
@@ -440,6 +446,11 @@
     <attr name="colorPrimaryInverse" format="color" />
     <attr name="colorPrimarySurface" format="color" />
     <attr name="colorPrimaryVariant" format="color" />
+    <attr name="colorScheme" format="reference">
+        <enum name="dark" value="0" />
+        <enum name="light" value="1" />
+        <enum name="auto" value="2" />
+    </attr>
     <attr name="colorSecondary" format="color" />
     <attr name="colorSecondaryContainer" format="color" />
     <attr name="colorSecondaryFixed" format="color" />
@@ -915,6 +926,12 @@
     <attr name="iconifiedByDefault" format="boolean" />
     <attr name="ifTagNotSet" format="reference" />
     <attr name="ifTagSet" format="reference" />
+    <attr name="imageAspectRatio" format="float" />
+    <attr name="imageAspectRatioAdjust">
+        <enum name="none" value="0" />
+        <enum name="adjust_width" value="1" />
+        <enum name="adjust_height" value="2" />
+    </attr>
     <attr name="imageButtonStyle" format="reference" />
     <attr name="imagePanX" format="float" />
     <attr name="imagePanY" format="float" />
@@ -1576,6 +1593,7 @@
     <attr name="rows" format="integer" />
     <attr name="saturation" format="float" />
     <attr name="scaleFromTextSize" format="dimension" />
+    <attr name="scopeUris" format="reference|string" />
     <attr name="scrimAnimationDuration" format="integer" />
     <attr name="scrimBackground" format="reference|color" />
     <attr name="scrimVisibleHeightTrigger" format="dimension" />

@@ -22,15 +22,29 @@
 
 
 # instance fields
+.field final synthetic this$1:Lcom/google/common/collect/Multimaps$Keys$1;
+
 .field final synthetic val$backingEntry:Ljava/util/Map$Entry;
 
 
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/Multimaps$Keys$1;Ljava/util/Map$Entry;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$1",
+            "val$backingEntry"
+        }
+    .end annotation
 
-    .line 1584
+    .line 1739
     iput-object p2, p0, Lcom/google/common/collect/Multimaps$Keys$1$1;->val$backingEntry:Ljava/util/Map$Entry;
+
+    iput-object p1, p0, Lcom/google/common/collect/Multimaps$Keys$1$1;->this$1:Lcom/google/common/collect/Multimaps$Keys$1;
 
     invoke-direct {p0}, Lcom/google/common/collect/Multisets$AbstractEntry;-><init>()V
 
@@ -42,7 +56,7 @@
 .method public getCount()I
     .locals 0
 
-    .line 1592
+    .line 1748
     iget-object p0, p0, Lcom/google/common/collect/Multimaps$Keys$1$1;->val$backingEntry:Ljava/util/Map$Entry;
 
     invoke-interface {p0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -60,13 +74,16 @@
 
 .method public getElement()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TK;"
         }
     .end annotation
 
-    .line 1587
+    .line 1743
     iget-object p0, p0, Lcom/google/common/collect/Multimaps$Keys$1$1;->val$backingEntry:Ljava/util/Map$Entry;
 
     invoke-interface {p0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;

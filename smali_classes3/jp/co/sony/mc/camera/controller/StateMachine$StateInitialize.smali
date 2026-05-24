@@ -25,23 +25,33 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "settingsHolder"
+        }
+    .end annotation
 
-    .line 2154
+    .line 2189
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateInitialize;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/controller/StateMachine$State;-><init>(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/controller/StateMachine$State-IA;)V
 
-    .line 2155
+    .line 2190
     sget-object v1, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_INITIALIZE:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateInitialize;->mCaptureState:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 2156
+    .line 2191
     invoke-static {p1, v0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fputmCameraSettingsHolder(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;)V
 
-    .line 2157
+    .line 2192
     invoke-static {p1, v0, p2}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mupdateCameraSettingsHolder(Ljp/co/sony/mc/camera/controller/StateMachine;Ljava/util/List;Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;)V
 
     return-void
@@ -60,7 +70,7 @@
 .method public entry()V
     .locals 2
 
-    .line 2163
+    .line 2198
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateInitialize;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmCameraSettingsHolder(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
@@ -69,7 +79,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 2164
+    .line 2199
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateInitialize;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmCameraDeviceHandler(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/device/CameraDeviceHandler;
@@ -92,50 +102,32 @@
 
     move-result-object p0
 
-    .line 2165
+    .line 2200
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     move-result-object p0
 
-    .line 2164
+    .line 2199
     invoke-virtual {v0, v1, p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler;->preloadCamera(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
 
     :cond_0
     return-void
 .end method
 
-.method public varargs handleOnPreShutterDone([Ljava/lang/Object;)V
+.method public varargs handleOnMainPreviewSurfacePrepared([Ljava/lang/Object;)V
     .locals 1
-
-    .line 2187
-    iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateInitialize;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
-
-    sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_PRE_SHUTTER_DONE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
-
-    invoke-static {p0, v0, p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mnotifyDelayedEvent(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;[Ljava/lang/Object;)Ljp/co/sony/mc/camera/controller/StateMachine$NotifyDelayedEventTask;
-
-    return-void
-.end method
-
-.method public varargs handleOnPreTakePictureDone([Ljava/lang/Object;)V
-    .locals 1
-
-    .line 2193
-    iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateInitialize;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
-
-    sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_PRE_TAKE_PICTURE_DONE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
-
-    invoke-static {p0, v0, p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mnotifyDelayedEvent(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;[Ljava/lang/Object;)Ljp/co/sony/mc/camera/controller/StateMachine$NotifyDelayedEventTask;
-
-    return-void
-.end method
-
-.method public varargs handleOnSurfacePrepared([Ljava/lang/Object;)V
-    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "objects"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 2203
+    .line 2232
     aget-object v0, p1, v0
 
     check-cast v0, Landroid/view/Surface;
@@ -144,7 +136,7 @@
 
     const/4 v0, 0x1
 
-    .line 2204
+    .line 2233
     aget-object p1, p1, v0
 
     check-cast p1, Landroid/util/Size;
@@ -154,10 +146,39 @@
     return-void
 .end method
 
+.method public varargs handleOnPreShutterDone([Ljava/lang/Object;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "objects"
+        }
+    .end annotation
+
+    .line 2222
+    iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateInitialize;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
+
+    sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_PRE_SHUTTER_DONE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
+
+    invoke-static {p0, v0, p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mnotifyDelayedEvent(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;[Ljava/lang/Object;)Ljp/co/sony/mc/camera/controller/StateMachine$NotifyDelayedEventTask;
+
+    return-void
+.end method
+
 .method public varargs handlePause([Ljava/lang/Object;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "objects"
+        }
+    .end annotation
 
-    .line 2198
+    .line 2227
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateInitialize;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     new-instance v1, Ljp/co/sony/mc/camera/controller/StateMachine$StatePause;
@@ -175,10 +196,18 @@
 
 .method public varargs handleRequestSwitchModeAndCamera([Ljava/lang/Object;)V
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "objects"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 2171
+    .line 2206
     aget-object v1, p1, v0
 
     move-object v6, v1
@@ -187,14 +216,14 @@
 
     const/4 v1, 0x1
 
-    .line 2172
+    .line 2207
     aget-object p1, p1, v1
 
     move-object v7, p1
 
     check-cast v7, Ljp/co/sony/mc/camera/CameraAccessor$ModeAndCameraSwitchCallback;
 
-    .line 2175
+    .line 2210
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateInitialize;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmCameraDeviceHandler(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/device/CameraDeviceHandler;
@@ -207,12 +236,12 @@
 
     if-eqz p1, :cond_0
 
-    .line 2177
+    .line 2212
     invoke-interface {v7}, Ljp/co/sony/mc/camera/CameraAccessor$ModeAndCameraSwitchCallback;->onDenied()V
 
     return-void
 
-    .line 2181
+    .line 2216
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateInitialize;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 

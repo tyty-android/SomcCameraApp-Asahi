@@ -38,6 +38,14 @@
 # direct methods
 .method constructor <init>(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "expectedValuesPerKey"
+        }
+    .end annotation
 
     .line 186
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -59,7 +67,7 @@
 .method public bridge synthetic get()Ljava/lang/Object;
     .locals 0
 
-    .line 183
+    .line 182
     invoke-virtual {p0}, Lcom/google/common/collect/MultimapBuilder$ArrayListSupplier;->get()Ljava/util/List;
 
     move-result-object p0

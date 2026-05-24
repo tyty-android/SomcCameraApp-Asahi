@@ -66,7 +66,7 @@
     .line 66
     new-instance v7, Ljp/co/sony/mc/camera/DataConsentActivity$DialogId;
 
-    const v5, 0x7f11013c
+    const v5, 0x7f110179
 
     const/4 v6, 0x0
 
@@ -74,9 +74,9 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f110477
+    const v3, 0x7f1104c0
 
-    const v4, 0x7f11013a
+    const v4, 0x7f110177
 
     move-object v0, v7
 
@@ -87,7 +87,7 @@
     .line 72
     new-instance v0, Ljp/co/sony/mc/camera/DataConsentActivity$DialogId;
 
-    const v13, 0x7f110471
+    const v13, 0x7f1104ba
 
     const/4 v14, 0x0
 
@@ -95,9 +95,9 @@
 
     const/4 v10, 0x1
 
-    const v11, 0x7f11035d
+    const v11, 0x7f1103a8
 
-    const v12, 0x7f110470
+    const v12, 0x7f1104b9
 
     move-object v8, v0
 
@@ -116,9 +116,9 @@
 
     const/4 v3, 0x2
 
-    const v4, 0x7f11035c
+    const v4, 0x7f1103a6
 
-    const v5, 0x7f110355
+    const v5, 0x7f11039f
 
     move-object v1, v0
 
@@ -138,6 +138,25 @@
 
 .method private constructor <init>(Ljava/lang/String;IIIIZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "titleResourceID",
+            "positiveButtonResourceID",
+            "negativeButtonResourceID",
+            "isCancelable"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IIIZ)V"
@@ -164,6 +183,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/DataConsentActivity$DialogId;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 64
     const-class v0, Ljp/co/sony/mc/camera/DataConsentActivity$DialogId;

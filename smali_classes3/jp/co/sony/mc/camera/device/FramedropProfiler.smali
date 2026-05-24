@@ -39,6 +39,16 @@
 # direct methods
 .method public constructor <init>(II)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "videoFrameRate",
+            "maxBins"
+        }
+    .end annotation
 
     .line 66
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -93,6 +103,14 @@
 # virtual methods
 .method public declared-synchronized add(J)V
     .locals 16
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "capturedNanos"
+        }
+    .end annotation
 
     move-object/from16 v1, p0
 

@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 2866
+    .line 3056
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,6 +31,17 @@
 # virtual methods
 .method public getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -42,8 +53,10 @@
         }
     .end annotation
 
-    .line 2870
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
+    const/high16 p0, 0x3f800000    # 1.0f
+
+    .line 3060
+    invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p0
 

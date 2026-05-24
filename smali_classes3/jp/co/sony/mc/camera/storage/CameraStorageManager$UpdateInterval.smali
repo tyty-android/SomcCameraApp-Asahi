@@ -125,6 +125,19 @@
 
 .method private constructor <init>(Ljava/lang/String;II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "intervalSec"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)V"
@@ -142,6 +155,14 @@
 
 .method public static decide(J)Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateInterval;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "remainStorageSize"
+        }
+    .end annotation
 
     const-wide/32 v0, 0x493e0
 
@@ -175,6 +196,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateInterval;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 93
     const-class v0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateInterval;

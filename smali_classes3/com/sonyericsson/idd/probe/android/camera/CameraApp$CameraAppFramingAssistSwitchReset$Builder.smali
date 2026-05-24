@@ -51,7 +51,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 16708
+    .line 17808
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;-><init>()V
 
     return-void
@@ -65,21 +65,21 @@
         }
     .end annotation
 
-    .line 16749
+    .line 17849
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->isInitialized()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 16753
+    .line 17853
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->buildPartial()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
     move-result-object p0
 
     return-object p0
 
-    .line 16750
+    .line 17850
     :cond_0
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
@@ -87,7 +87,7 @@
 
     move-result-object p0
 
-    .line 16751
+    .line 17851
     invoke-virtual {p0}, Lcom/google/protobuf/UninitializedMessageException;->asInvalidProtocolBufferException()Lcom/google/protobuf/InvalidProtocolBufferException;
 
     move-result-object p0
@@ -98,12 +98,12 @@
 .method private static create()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;
     .locals 3
 
-    .line 16711
+    .line 17811
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;
 
     invoke-direct {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;-><init>()V
 
-    .line 16712
+    .line 17812
     new-instance v1, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
     const/4 v2, 0x0
@@ -120,7 +120,7 @@
 .method public bridge synthetic build()Lcom/google/protobuf/MessageLite;
     .locals 0
 
-    .line 16702
+    .line 17802
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->build()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
     move-result-object p0
@@ -131,7 +131,7 @@
 .method public build()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
     .locals 1
 
-    .line 16741
+    .line 17841
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
     if-eqz v0, :cond_1
@@ -144,7 +144,7 @@
 
     goto :goto_0
 
-    .line 16742
+    .line 17842
     :cond_0
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
@@ -154,7 +154,7 @@
 
     throw p0
 
-    .line 16744
+    .line 17844
     :cond_1
     :goto_0
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->buildPartial()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
@@ -167,7 +167,7 @@
 .method public bridge synthetic buildPartial()Lcom/google/protobuf/MessageLite;
     .locals 0
 
-    .line 16702
+    .line 17802
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->buildPartial()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
     move-result-object p0
@@ -178,19 +178,19 @@
 .method public buildPartial()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
     .locals 2
 
-    .line 16757
+    .line 17857
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x0
 
-    .line 16762
+    .line 17862
     iput-object v1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
     return-object v0
 
-    .line 16758
+    .line 17858
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -204,7 +204,7 @@
 .method public bridge synthetic clear()Lcom/google/protobuf/MessageLite$Builder;
     .locals 0
 
-    .line 16702
+    .line 17802
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->clear()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;
 
     move-result-object p0
@@ -215,12 +215,12 @@
 .method public clear()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;
     .locals 2
 
-    .line 16721
+    .line 17821
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
     if-eqz v0, :cond_0
 
-    .line 16725
+    .line 17825
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
     const/4 v1, 0x0
@@ -231,7 +231,7 @@
 
     return-object p0
 
-    .line 16722
+    .line 17822
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -245,14 +245,14 @@
 .method public clearFramingAssistSwitchReset()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;
     .locals 2
 
-    .line 16843
+    .line 17943
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;->-$$Nest$fputhasFramingAssistSwitchReset(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;Z)V
 
-    .line 16844
+    .line 17944
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
     invoke-static {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;->-$$Nest$fputframingAssistSwitchReset_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;Z)V
@@ -263,14 +263,14 @@
 .method public clearMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;
     .locals 2
 
-    .line 16825
+    .line 17925
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;->-$$Nest$fputhasMode(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;Z)V
 
-    .line 16826
+    .line 17926
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
     sget-object v1, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->UNKNOWN:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
@@ -283,7 +283,7 @@
 .method public bridge synthetic clone()Lcom/google/protobuf/AbstractMessageLite$Builder;
     .locals 0
 
-    .line 16702
+    .line 17802
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->clone()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;
 
     move-result-object p0
@@ -294,7 +294,7 @@
 .method public bridge synthetic clone()Lcom/google/protobuf/GeneratedMessageLite$Builder;
     .locals 0
 
-    .line 16702
+    .line 17802
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->clone()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;
 
     move-result-object p0
@@ -305,7 +305,7 @@
 .method public bridge synthetic clone()Lcom/google/protobuf/MessageLite$Builder;
     .locals 0
 
-    .line 16702
+    .line 17802
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->clone()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;
 
     move-result-object p0
@@ -316,7 +316,7 @@
 .method public clone()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;
     .locals 1
 
-    .line 16730
+    .line 17830
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->create()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;
 
     move-result-object v0
@@ -338,7 +338,7 @@
         }
     .end annotation
 
-    .line 16702
+    .line 17802
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->clone()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;
 
     move-result-object p0
@@ -349,7 +349,7 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/GeneratedMessageLite;
     .locals 0
 
-    .line 16702
+    .line 17802
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->getDefaultInstanceForType()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
     move-result-object p0
@@ -360,7 +360,7 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/MessageLite;
     .locals 0
 
-    .line 16702
+    .line 17802
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->getDefaultInstanceForType()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
     move-result-object p0
@@ -371,7 +371,7 @@
 .method public getDefaultInstanceForType()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
     .locals 0
 
-    .line 16734
+    .line 17834
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;->getDefaultInstance()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
     move-result-object p0
@@ -382,7 +382,7 @@
 .method public getFramingAssistSwitchReset()Z
     .locals 0
 
-    .line 16835
+    .line 17935
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;->getFramingAssistSwitchReset()Z
@@ -395,7 +395,7 @@
 .method public getMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
     .locals 0
 
-    .line 16814
+    .line 17914
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;->getMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
@@ -408,7 +408,7 @@
 .method public hasFramingAssistSwitchReset()Z
     .locals 0
 
-    .line 16832
+    .line 17932
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;->hasFramingAssistSwitchReset()Z
@@ -421,7 +421,7 @@
 .method public hasMode()Z
     .locals 0
 
-    .line 16811
+    .line 17911
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;->hasMode()Z
@@ -434,7 +434,7 @@
 .method protected bridge synthetic internalGetResult()Lcom/google/protobuf/GeneratedMessageLite;
     .locals 0
 
-    .line 16702
+    .line 17802
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->internalGetResult()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
     move-result-object p0
@@ -445,7 +445,7 @@
 .method protected internalGetResult()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
     .locals 0
 
-    .line 16717
+    .line 17817
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
     return-object p0
@@ -454,7 +454,7 @@
 .method public isInitialized()Z
     .locals 0
 
-    .line 16738
+    .line 17838
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;->isInitialized()Z
@@ -466,13 +466,24 @@
 
 .method public bridge synthetic mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/AbstractMessageLite$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "input",
+            "extensionRegistry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 16702
+    .line 17802
     invoke-virtual {p0, p1, p2}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;
 
     move-result-object p0
@@ -482,8 +493,16 @@
 
 .method public bridge synthetic mergeFrom(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "other"
+        }
+    .end annotation
 
-    .line 16702
+    .line 17802
     check-cast p1, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
     invoke-virtual {p0, p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->mergeFrom(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;
@@ -495,13 +514,24 @@
 
 .method public bridge synthetic mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/MessageLite$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "input",
+            "extensionRegistry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 16702
+    .line 17802
     invoke-virtual {p0, p1, p2}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;
 
     move-result-object p0
@@ -511,13 +541,24 @@
 
 .method public mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "input",
+            "extensionRegistry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 16782
+    .line 17882
     :cond_0
     :goto_0
     invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->readTag()I
@@ -534,7 +575,7 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 16787
+    .line 17887
     invoke-virtual {p0, p1, p2, v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->parseUnknownField(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;I)Z
 
     move-result v0
@@ -543,7 +584,7 @@
 
     return-object p0
 
-    .line 16801
+    .line 17901
     :cond_1
     invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->readBool()Z
 
@@ -553,20 +594,20 @@
 
     goto :goto_0
 
-    .line 16793
+    .line 17893
     :cond_2
     invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->readEnum()I
 
     move-result v0
 
-    .line 16794
+    .line 17894
     invoke-static {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->valueOf(I)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 16796
+    .line 17896
     invoke-virtual {p0, v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->setMode(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;
 
     goto :goto_0
@@ -577,8 +618,16 @@
 
 .method public mergeFrom(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "other"
+        }
+    .end annotation
 
-    .line 16767
+    .line 17867
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;->getDefaultInstance()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
     move-result-object v0
@@ -587,7 +636,7 @@
 
     return-object p0
 
-    .line 16768
+    .line 17868
     :cond_0
     invoke-virtual {p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;->hasMode()Z
 
@@ -595,14 +644,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 16769
+    .line 17869
     invoke-virtual {p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;->getMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->setMode(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;
 
-    .line 16771
+    .line 17871
     :cond_1
     invoke-virtual {p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;->hasFramingAssistSwitchReset()Z
 
@@ -610,7 +659,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 16772
+    .line 17872
     invoke-virtual {p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;->getFramingAssistSwitchReset()Z
 
     move-result p1
@@ -623,15 +672,23 @@
 
 .method public setFramingAssistSwitchReset(Z)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 16838
+    .line 17938
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;->-$$Nest$fputhasFramingAssistSwitchReset(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;Z)V
 
-    .line 16839
+    .line 17939
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
     invoke-static {v0, p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;->-$$Nest$fputframingAssistSwitchReset_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;Z)V
@@ -641,18 +698,26 @@
 
 .method public setMode(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 16818
+    .line 17918
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 16820
+    .line 17920
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;->-$$Nest$fputhasMode(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;Z)V
 
-    .line 16821
+    .line 17921
     iget-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset$Builder;->result:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;
 
     invoke-static {v0, p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;->-$$Nest$fputmode_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppFramingAssistSwitchReset;Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;)V

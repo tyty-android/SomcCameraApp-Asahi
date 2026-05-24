@@ -87,6 +87,20 @@
 
 .method public constructor <init>(Landroid/os/Handler;Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback$PeriodicEvent$TickEvent;JI)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "handler",
+            "callback",
+            "interval",
+            "duration"
+        }
+    .end annotation
 
     .line 154
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -140,6 +154,14 @@
 # virtual methods
 .method public start(J)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "delay"
+        }
+    .end annotation
 
     .line 162
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J

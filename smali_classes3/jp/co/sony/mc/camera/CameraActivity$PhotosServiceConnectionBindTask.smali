@@ -24,8 +24,16 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/CameraActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 1318
+    .line 1305
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$PhotosServiceConnectionBindTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +54,7 @@
 .method public run()V
     .locals 2
 
-    .line 1321
+    .line 1308
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraActivity$PhotosServiceConnectionBindTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmBackgroundWorkLock(Ljp/co/sony/mc/camera/CameraActivity;)Ljava/lang/Object;
@@ -55,7 +63,7 @@
 
     monitor-enter v0
 
-    .line 1322
+    .line 1309
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/CameraActivity$PhotosServiceConnectionBindTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
@@ -65,7 +73,7 @@
 
     if-nez v1, :cond_0
 
-    .line 1323
+    .line 1310
     iget-object v1, p0, Ljp/co/sony/mc/camera/CameraActivity$PhotosServiceConnectionBindTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmPhotosServiceConnection(Ljp/co/sony/mc/camera/CameraActivity;)Ljp/co/sony/mc/camera/systemmonitor/PhotosServiceConnection;
@@ -74,7 +82,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1324
+    .line 1311
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$PhotosServiceConnectionBindTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmPhotosServiceConnection(Ljp/co/sony/mc/camera/CameraActivity;)Ljp/co/sony/mc/camera/systemmonitor/PhotosServiceConnection;
@@ -83,7 +91,7 @@
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/systemmonitor/PhotosServiceConnection;->bindService()V
 
-    .line 1327
+    .line 1314
     :cond_0
     monitor-exit v0
 

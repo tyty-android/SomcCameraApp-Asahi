@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 173
+    .line 175
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$1;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,8 +45,16 @@
 # virtual methods
 .method public onClick(Ljp/co/sony/mc/camera/view/widget/FocusControlButton$ButtonType;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "buttonType"
+        }
+    .end annotation
 
-    .line 176
+    .line 178
     sget-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$2;->$SwitchMap$jp$co$sony$mc$camera$view$widget$FocusControlButton$ButtonType:[I
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/widget/FocusControlButton$ButtonType;->ordinal()I
@@ -61,7 +77,7 @@
 
     goto :goto_0
 
-    .line 182
+    .line 184
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$1;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
@@ -73,7 +89,7 @@
 
     goto :goto_0
 
-    .line 179
+    .line 181
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$1;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 

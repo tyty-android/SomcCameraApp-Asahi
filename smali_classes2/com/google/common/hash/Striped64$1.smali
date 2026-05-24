@@ -30,7 +30,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 295
+    .line 303
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,7 +46,7 @@
         }
     .end annotation
 
-    .line 295
+    .line 303
     invoke-virtual {p0}, Lcom/google/common/hash/Striped64$1;->run()Lsun/misc/Unsafe;
 
     move-result-object p0
@@ -62,10 +62,10 @@
         }
     .end annotation
 
-    .line 298
+    .line 306
     const-class p0, Lsun/misc/Unsafe;
 
-    .line 299
+    .line 307
     invoke-virtual {p0}, Ljava/lang/Class;->getDeclaredFields()[Ljava/lang/reflect/Field;
 
     move-result-object v0
@@ -81,17 +81,17 @@
 
     const/4 v4, 0x1
 
-    .line 300
+    .line 308
     invoke-virtual {v3, v4}, Ljava/lang/reflect/Field;->setAccessible(Z)V
 
     const/4 v4, 0x0
 
-    .line 301
+    .line 309
     invoke-virtual {v3, v4}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 302
+    .line 310
     invoke-virtual {p0, v3}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
 
     move-result v4
@@ -111,7 +111,7 @@
 
     goto :goto_0
 
-    .line 304
+    .line 312
     :cond_1
     new-instance p0, Ljava/lang/NoSuchFieldError;
 

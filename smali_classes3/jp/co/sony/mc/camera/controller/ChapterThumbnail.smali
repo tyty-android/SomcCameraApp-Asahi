@@ -16,6 +16,18 @@
 # direct methods
 .method public constructor <init>([BLjava/lang/Integer;Landroid/graphics/Rect;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "yuvData",
+            "format",
+            "rect"
+        }
+    .end annotation
 
     .line 25
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,6 +62,14 @@
 
 .method public setOrientation(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "orientation"
+        }
+    .end annotation
 
     .line 37
     iput p1, p0, Ljp/co/sony/mc/camera/controller/ChapterThumbnail;->mOrientation:I

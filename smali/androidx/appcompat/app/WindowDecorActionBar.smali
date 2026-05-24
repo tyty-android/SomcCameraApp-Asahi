@@ -3251,7 +3251,7 @@
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
-    const-string/jumbo p1, "setSelectedNavigationIndex not valid for current navigation mode"
+    const-string p1, "setSelectedNavigationIndex not valid for current navigation mode"
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 

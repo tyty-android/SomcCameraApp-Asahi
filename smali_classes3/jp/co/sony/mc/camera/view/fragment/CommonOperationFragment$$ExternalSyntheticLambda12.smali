@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function2;
+.implements Lkotlin/jvm/functions/Function3;
 
 
 # direct methods
@@ -18,19 +18,25 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
-    check-cast p1, Ljava/lang/Boolean;
+    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
+    check-cast p2, Ljava/lang/Boolean;
 
-    invoke-static {p1, p2}, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;->$r8$lambda$QniM85mh05bOrdVaD7tix1Wycf0(Ljava/lang/Boolean;Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;)Z
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p0
 
-    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    check-cast p3, Ljava/lang/Boolean;
+
+    invoke-virtual {p3}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p2
+
+    invoke-static {p1, p0, p2}, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;->$r8$lambda$PwowgdKHkrCNET3fcTYbJlWsUgU(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;ZZ)Lkotlin/Triple;
 
     move-result-object p0
 

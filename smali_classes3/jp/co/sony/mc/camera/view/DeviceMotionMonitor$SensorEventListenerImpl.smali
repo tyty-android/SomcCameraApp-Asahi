@@ -42,6 +42,14 @@
 
 .method constructor <init>(Ljp/co/sony/mc/camera/view/DeviceMotionMonitor;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "deviceMotionMonitor"
+        }
+    .end annotation
 
     .line 158
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -80,12 +88,30 @@
 # virtual methods
 .method public onAccuracyChanged(Landroid/hardware/Sensor;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sensor",
+            "accuracy"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public onSensorChanged(Landroid/hardware/SensorEvent;)V
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
 
     .line 165
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z

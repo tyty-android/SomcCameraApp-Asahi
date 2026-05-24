@@ -30,8 +30,18 @@
 # direct methods
 .method constructor <init>(Ljava/lang/Iterable;Ljava/util/Comparator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x1010
+        }
+        names = {
+            "val$iterables",
+            "val$comparator"
+        }
+    .end annotation
 
-    .line 1006
+    .line 1061
     iput-object p1, p0, Lcom/google/common/collect/Iterables$9;->val$iterables:Ljava/lang/Iterable;
 
     iput-object p2, p0, Lcom/google/common/collect/Iterables$9;->val$comparator:Ljava/util/Comparator;
@@ -53,21 +63,21 @@
         }
     .end annotation
 
-    .line 1009
+    .line 1064
     iget-object v0, p0, Lcom/google/common/collect/Iterables$9;->val$iterables:Ljava/lang/Iterable;
 
-    .line 1010
-    invoke-static {}, Lcom/google/common/collect/Iterables;->toIterator()Lcom/google/common/base/Function;
+    new-instance v1, Lcom/google/common/collect/FluentIterable$2$$ExternalSyntheticLambda0;
 
-    move-result-object v1
+    invoke-direct {v1}, Lcom/google/common/collect/FluentIterable$2$$ExternalSyntheticLambda0;-><init>()V
 
+    .line 1065
     invoke-static {v0, v1}, Lcom/google/common/collect/Iterables;->transform(Ljava/lang/Iterable;Lcom/google/common/base/Function;)Ljava/lang/Iterable;
 
     move-result-object v0
 
     iget-object p0, p0, Lcom/google/common/collect/Iterables$9;->val$comparator:Ljava/util/Comparator;
 
-    .line 1009
+    .line 1064
     invoke-static {v0, p0}, Lcom/google/common/collect/Iterators;->mergeSorted(Ljava/lang/Iterable;Ljava/util/Comparator;)Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p0

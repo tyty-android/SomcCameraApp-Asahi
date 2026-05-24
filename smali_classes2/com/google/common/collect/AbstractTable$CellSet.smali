@@ -29,8 +29,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/AbstractTable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 124
+    .line 135
     iput-object p1, p0, Lcom/google/common/collect/AbstractTable$CellSet;->this$0:Lcom/google/common/collect/AbstractTable;
 
     invoke-direct {p0}, Ljava/util/AbstractSet;-><init>()V
@@ -43,7 +51,7 @@
 .method public clear()V
     .locals 0
 
-    .line 151
+    .line 162
     iget-object p0, p0, Lcom/google/common/collect/AbstractTable$CellSet;->this$0:Lcom/google/common/collect/AbstractTable;
 
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractTable;->clear()V
@@ -53,18 +61,30 @@
 
 .method public contains(Ljava/lang/Object;)Z
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 127
+    .line 138
     instance-of v0, p1, Lcom/google/common/collect/Table$Cell;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 128
+    .line 139
     check-cast p1, Lcom/google/common/collect/Table$Cell;
 
-    .line 129
+    .line 140
     iget-object p0, p0, Lcom/google/common/collect/AbstractTable$CellSet;->this$0:Lcom/google/common/collect/AbstractTable;
 
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractTable;->rowMap()Ljava/util/Map;
@@ -83,7 +103,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 132
+    .line 143
     invoke-interface {p0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object p0
@@ -100,7 +120,7 @@
 
     move-result-object p1
 
-    .line 131
+    .line 142
     invoke-static {p0, p1}, Lcom/google/common/collect/Collections2;->safeContains(Ljava/util/Collection;Ljava/lang/Object;)Z
 
     move-result p0
@@ -124,7 +144,7 @@
         }
     .end annotation
 
-    .line 156
+    .line 167
     iget-object p0, p0, Lcom/google/common/collect/AbstractTable$CellSet;->this$0:Lcom/google/common/collect/AbstractTable;
 
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractTable;->cellIterator()Ljava/util/Iterator;
@@ -137,21 +157,29 @@
 .method public remove(Ljava/lang/Object;)Z
     .locals 2
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 139
+    .line 150
     instance-of v0, p1, Lcom/google/common/collect/Table$Cell;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 140
+    .line 151
     check-cast p1, Lcom/google/common/collect/Table$Cell;
 
-    .line 141
+    .line 152
     iget-object p0, p0, Lcom/google/common/collect/AbstractTable$CellSet;->this$0:Lcom/google/common/collect/AbstractTable;
 
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractTable;->rowMap()Ljava/util/Map;
@@ -170,7 +198,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 144
+    .line 155
     invoke-interface {p0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object p0
@@ -187,7 +215,7 @@
 
     move-result-object p1
 
-    .line 143
+    .line 154
     invoke-static {p0, p1}, Lcom/google/common/collect/Collections2;->safeRemove(Ljava/util/Collection;Ljava/lang/Object;)Z
 
     move-result p0
@@ -203,7 +231,7 @@
 .method public size()I
     .locals 0
 
-    .line 161
+    .line 172
     iget-object p0, p0, Lcom/google/common/collect/AbstractTable$CellSet;->this$0:Lcom/google/common/collect/AbstractTable;
 
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractTable;->size()I

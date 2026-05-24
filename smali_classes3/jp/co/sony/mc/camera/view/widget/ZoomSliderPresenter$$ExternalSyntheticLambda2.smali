@@ -9,11 +9,11 @@
 # instance fields
 .field public final synthetic f$0:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;
 
-.field public final synthetic f$1:Ljp/co/sony/mc/camera/view/widget/LabelView;
+.field public final synthetic f$1:Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/LabelView;)V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;)V
     .locals 0
 
     .line 0
@@ -21,7 +21,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda2;->f$0:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;
 
-    iput-object p2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda2;->f$1:Ljp/co/sony/mc/camera/view/widget/LabelView;
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda2;->f$1:Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;
 
     return-void
 .end method
@@ -34,9 +34,9 @@
     .line 0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda2;->f$0:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;
 
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda2;->f$1:Ljp/co/sony/mc/camera/view/widget/LabelView;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda2;->f$1:Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;
 
-    invoke-static {v0, p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->$r8$lambda$3bcK0IcTER004be30vWJtwvJQ0g(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/LabelView;Landroid/view/View;)V
+    invoke-static {v0, p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->$r8$lambda$LsqpSP9K2FuV-ZzGTdTyUyvM-jM(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;Landroid/view/View;)V
 
     return-void
 .end method

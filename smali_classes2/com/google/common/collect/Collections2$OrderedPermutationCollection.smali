@@ -50,6 +50,17 @@
 # direct methods
 .method constructor <init>(Ljava/lang/Iterable;Ljava/util/Comparator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "input",
+            "comparator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -60,20 +71,20 @@
         }
     .end annotation
 
-    .line 417
+    .line 420
     invoke-direct {p0}, Ljava/util/AbstractCollection;-><init>()V
 
-    .line 418
+    .line 421
     invoke-static {p2, p1}, Lcom/google/common/collect/ImmutableList;->sortedCopyOf(Ljava/util/Comparator;Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/google/common/collect/Collections2$OrderedPermutationCollection;->inputList:Lcom/google/common/collect/ImmutableList;
 
-    .line 419
+    .line 422
     iput-object p2, p0, Lcom/google/common/collect/Collections2$OrderedPermutationCollection;->comparator:Ljava/util/Comparator;
 
-    .line 420
+    .line 423
     invoke-static {p1, p2}, Lcom/google/common/collect/Collections2$OrderedPermutationCollection;->calculateSize(Ljava/util/List;Ljava/util/Comparator;)I
 
     move-result p1
@@ -85,6 +96,17 @@
 
 .method private static calculateSize(Ljava/util/List;Ljava/util/Comparator;)I
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sortedInputList",
+            "comparator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -105,7 +127,7 @@
 
     move v3, v2
 
-    .line 437
+    .line 440
     :goto_0
     invoke-interface {p0}, Ljava/util/List;->size()I
 
@@ -115,7 +137,7 @@
 
     add-int/lit8 v4, v1, -0x1
 
-    .line 438
+    .line 441
     invoke-interface {p0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
@@ -130,7 +152,7 @@
 
     if-gez v4, :cond_1
 
-    .line 441
+    .line 444
     invoke-static {v1, v3}, Lcom/google/common/math/IntMath;->binomial(II)I
 
     move-result v3
@@ -155,7 +177,7 @@
 
     goto :goto_0
 
-    .line 450
+    .line 453
     :cond_2
     invoke-static {v1, v3}, Lcom/google/common/math/IntMath;->binomial(II)I
 
@@ -173,19 +195,27 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
-    .line 470
+    .line 473
     instance-of v0, p1, Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    .line 471
+    .line 474
     check-cast p1, Ljava/util/List;
 
-    .line 472
+    .line 475
     iget-object p0, p0, Lcom/google/common/collect/Collections2$OrderedPermutationCollection;->inputList:Lcom/google/common/collect/ImmutableList;
 
     invoke-static {p0, p1}, Lcom/google/common/collect/Collections2;->access$000(Ljava/util/List;Ljava/util/List;)Z
@@ -219,7 +249,7 @@
         }
     .end annotation
 
-    .line 465
+    .line 468
     new-instance v0, Lcom/google/common/collect/Collections2$OrderedPermutationIterator;
 
     iget-object v1, p0, Lcom/google/common/collect/Collections2$OrderedPermutationCollection;->inputList:Lcom/google/common/collect/ImmutableList;
@@ -234,7 +264,7 @@
 .method public size()I
     .locals 0
 
-    .line 455
+    .line 458
     iget p0, p0, Lcom/google/common/collect/Collections2$OrderedPermutationCollection;->size:I
 
     return p0
@@ -243,34 +273,16 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 479
+    .line 482
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "orderedPermutationCollection("
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
     iget-object p0, p0, Lcom/google/common/collect/Collections2$OrderedPermutationCollection;->inputList:Lcom/google/common/collect/ImmutableList;
 
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, 0x1e
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v0, "orderedPermutationCollection("
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 

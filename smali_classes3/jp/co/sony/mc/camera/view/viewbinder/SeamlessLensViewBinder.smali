@@ -15,7 +15,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSeamlessLensViewBinder.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SeamlessLensViewBinder.kt\njp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,465:1\n1863#2,2:466\n1863#2,2:468\n*S KotlinDebug\n*F\n+ 1 SeamlessLensViewBinder.kt\njp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder\n*L\n94#1:466,2\n332#1:468,2\n*E\n"
+    value = "SMAP\nSeamlessLensViewBinder.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SeamlessLensViewBinder.kt\njp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,569:1\n230#2,2:570\n1863#2,2:572\n1863#2,2:574\n*S KotlinDebug\n*F\n+ 1 SeamlessLensViewBinder.kt\njp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder\n*L\n113#1:570,2\n138#1:572,2\n425#1:574,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -97,16 +97,6 @@
 
 
 # direct methods
-.method public static synthetic $r8$lambda$2M9Aw1fORMyY02RH8HHP1zC_SyA(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/Unit;)Lkotlin/Unit;
-    .locals 0
-
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$6(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/Unit;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
 .method public static synthetic $r8$lambda$3rjUhEngJfq280LSdr26idPTYWo(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/Unit;)Lkotlin/Unit;
     .locals 0
 
@@ -117,126 +107,136 @@
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$FwTguE_uqdr6FUonHP9Q9_Fix3U(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Landroid/view/View;)V
+.method public static synthetic $r8$lambda$AmvyHJWwL8UEVw8KufGRdOWRUrQ(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;Z)Lkotlin/Pair;
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$13(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Landroid/view/View;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$11(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;Z)Lkotlin/Pair;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$HGd-bcLS0B0V8ZacPaAzfOzrFww(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$17(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$K1STYh0TZksp0Q8kE2iFKaEDWJI(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$10(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Ljava/lang/Boolean;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$PQHFGE94u10G7RXtFz-xpBr7h3w(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$4(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$QL_740MuzVgHhYdDWPXMLJscOUs(ZLjava/lang/String;)Lkotlin/Pair;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$5(ZLjava/lang/String;)Lkotlin/Pair;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$QVNd7hGb987ICbIHrPtYqrwZKv0(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Ljava/util/ArrayList;Lkotlin/Unit;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$20(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Ljava/util/ArrayList;Lkotlin/Unit;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$VNpVem4WHN4lsWL2rlFOAYGCO1s(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Landroid/view/View;)V
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$14(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Landroid/view/View;)V
 
     return-void
 .end method
 
-.method public static synthetic $r8$lambda$Hmb0iyp2UzKWo6lnI0-aphmqVxc(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Ljava/util/ArrayList;Lkotlin/Unit;)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$Yjt9N1Sya6qSu46AToN3ammstP4(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$19(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Ljava/util/ArrayList;Lkotlin/Unit;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$21(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$M6sU-lLR09--Ono3dqAxEG5DVME(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Ljava/lang/Boolean;)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$jIchwFfLpHDTx8kgsvyDlxFAFr0(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Lkotlin/jvm/internal/Ref$BooleanRef;Lkotlin/jvm/internal/Ref$BooleanRef;Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/jvm/internal/Ref$FloatRef;Lkotlin/jvm/internal/Ref$FloatRef;JILkotlin/jvm/internal/Ref$FloatRef;Lkotlin/jvm/internal/Ref$FloatRef;Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$9(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Ljava/lang/Boolean;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static synthetic $r8$lambda$M7KlQBRDfUljyYDVZjwZndouuT8(ZLjava/lang/String;)Lkotlin/Pair;
-    .locals 0
-
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$4(ZLjava/lang/String;)Lkotlin/Pair;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static synthetic $r8$lambda$SzaB06qoHumUHN4IuQJTIH3Wy6E(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
-    .locals 0
-
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$11(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static synthetic $r8$lambda$WZQlvOJw6VRohZuhpWjhs8eIlmo(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Lkotlin/jvm/internal/Ref$BooleanRef;Lkotlin/jvm/internal/Ref$BooleanRef;Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/jvm/internal/Ref$FloatRef;Lkotlin/jvm/internal/Ref$FloatRef;JILkotlin/jvm/internal/Ref$FloatRef;Lkotlin/jvm/internal/Ref$FloatRef;Landroid/view/View;Landroid/view/MotionEvent;)Z
-    .locals 0
-
-    invoke-static/range {p0 .. p12}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$15(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Lkotlin/jvm/internal/Ref$BooleanRef;Lkotlin/jvm/internal/Ref$BooleanRef;Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/jvm/internal/Ref$FloatRef;Lkotlin/jvm/internal/Ref$FloatRef;JILkotlin/jvm/internal/Ref$FloatRef;Lkotlin/jvm/internal/Ref$FloatRef;Landroid/view/View;Landroid/view/MotionEvent;)Z
+    invoke-static/range {p0 .. p12}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$16(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Lkotlin/jvm/internal/Ref$BooleanRef;Lkotlin/jvm/internal/Ref$BooleanRef;Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/jvm/internal/Ref$FloatRef;Lkotlin/jvm/internal/Ref$FloatRef;JILkotlin/jvm/internal/Ref$FloatRef;Lkotlin/jvm/internal/Ref$FloatRef;Landroid/view/View;Landroid/view/MotionEvent;)Z
 
     move-result p0
 
     return p0
 .end method
 
-.method public static synthetic $r8$lambda$cV1SX9vQxkrZd13IJ50ZpaIRGlQ(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$jO_RO6SMBDEngQtXh9_uJ4cIxDw(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/Unit;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$20(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$9(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/Unit;)Lkotlin/Unit;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$cYSqNfk20b3O_XO6VaZGFoOYjbk(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$mw6ViZdFYA01mkY6O30pfIggECY(ZI)Lkotlin/Pair;
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$16(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$3(ZI)Lkotlin/Pair;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$gEIksUWOOcqdBgKat7snXPhsZdI(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;)V
+.method public static synthetic $r8$lambda$p4t69Hs402WxlhpfQaw1br0MwGQ(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$12(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$12(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$p8zreMplq6qltsejQJ5m593HUc0(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;)V
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$13(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;)V
 
     return-void
 .end method
 
-.method public static synthetic $r8$lambda$iK59ECRRHTzk0S7D0OInU-sWLz4(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$qbuul2Ehgu96SU94Ppp5YumGP7I(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$17(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static synthetic $r8$lambda$iVx-l4GWKfObkIz3WYf6TKXOAP4(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
-    .locals 0
-
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$5(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static synthetic $r8$lambda$ppKKx8E1YQ_zm9un6RXz55J2iRo(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
-    .locals 0
-
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$3(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static synthetic $r8$lambda$q14GoxFLWx2HRyxIFi_gpAVTKXU(ZI)Lkotlin/Pair;
-    .locals 0
-
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$2(ZI)Lkotlin/Pair;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$6(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
 
     move-result-object p0
 
@@ -253,10 +253,10 @@
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$sInag5P-1f8qDVPN_VYvPW8gxp8(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;Z)Lkotlin/Pair;
+.method public static synthetic $r8$lambda$yNl3-7oLAHr5ewAukxsGto4K59A(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$10(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;Z)Lkotlin/Pair;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->onCreate$lambda$18(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
 
     move-result-object p0
 
@@ -280,16 +280,16 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 46
+    .line 48
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 47
+    .line 49
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;
 
-    .line 48
+    .line 50
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
 
-    .line 61
+    .line 101
     new-instance p1, Landroid/os/Handler;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
@@ -300,7 +300,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->mHandler:Landroid/os/Handler;
 
-    .line 65
+    .line 105
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getLifecycleOwner()Landroidx/lifecycle/LifecycleOwner;
 
     move-result-object p1
@@ -319,7 +319,7 @@
 .method public static final synthetic access$getLensUiState(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;)Ljp/co/sony/mc/camera/view/uistate/LensUiState;
     .locals 0
 
-    .line 46
+    .line 48
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getLensUiState()Ljp/co/sony/mc/camera/view/uistate/LensUiState;
 
     move-result-object p0
@@ -330,7 +330,7 @@
 .method public static final synthetic access$getType$p(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;)Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
     .locals 0
 
-    .line 46
+    .line 48
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
 
     return-object p0
@@ -339,7 +339,7 @@
 .method private final getBasicModeCommonUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
     .locals 0
 
-    .line 60
+    .line 100
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->getBasicModeCommonUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
@@ -354,7 +354,7 @@
 .method private final getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
     .locals 0
 
-    .line 57
+    .line 97
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
@@ -369,7 +369,7 @@
 .method private final getCameraStatusModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
     .locals 0
 
-    .line 56
+    .line 96
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->getCameraStatusModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
@@ -384,7 +384,7 @@
 .method private final getLensUiState()Ljp/co/sony/mc/camera/view/uistate/LensUiState;
     .locals 0
 
-    .line 59
+    .line 99
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->getLensUiState()Ljp/co/sony/mc/camera/view/uistate/LensUiState;
@@ -399,7 +399,7 @@
 .method private final getLifecycleOwner()Landroidx/lifecycle/LifecycleOwner;
     .locals 0
 
-    .line 55
+    .line 95
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->getLifecycleOwner()Landroidx/lifecycle/LifecycleOwner;
@@ -414,7 +414,7 @@
 .method private final getOrientationViewModel()Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
     .locals 0
 
-    .line 58
+    .line 98
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->getOrientationViewModel()Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
@@ -426,14 +426,37 @@
     return-object p0
 .end method
 
-.method private static final onCreate$lambda$10(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;Z)Lkotlin/Pair;
+.method private static final onCreate$lambda$10(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 1
+
+    const-string v0, "$vm"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 267
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->closeSlider()V
+
+    .line 268
+    :cond_0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$11(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;Z)Lkotlin/Pair;
     .locals 1
 
     const-string v0, "orientation"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 183
+    .line 273
     new-instance v0, Lkotlin/Pair;
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -445,14 +468,14 @@
     return-object v0
 .end method
 
-.method private static final onCreate$lambda$11(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+.method private static final onCreate$lambda$12(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
     .locals 1
 
     const-string/jumbo v0, "this$0"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 184
+    .line 274
     invoke-virtual {p1}, Lkotlin/Pair;->component1()Ljava/lang/Object;
 
     move-result-object v0
@@ -471,7 +494,7 @@
 
     if-nez p1, :cond_0
 
-    .line 186
+    .line 276
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
     if-eqz p0, :cond_0
@@ -482,14 +505,14 @@
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->setRotation(F)V
 
-    .line 188
+    .line 278
     :cond_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 .end method
 
-.method private static final onCreate$lambda$12(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;)V
+.method private static final onCreate$lambda$13(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;)V
     .locals 1
 
     const-string/jumbo v0, "this$0"
@@ -500,7 +523,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 223
+    .line 316
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -519,10 +542,10 @@
 
     const/4 v0, 0x0
 
-    .line 224
+    .line 317
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->openSlider(Z)V
 
-    .line 225
+    .line 318
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getLensUiState()Ljp/co/sony/mc/camera/view/uistate/LensUiState;
 
     move-result-object p0
@@ -537,17 +560,17 @@
     return-void
 .end method
 
-.method private static final onCreate$lambda$13(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Landroid/view/View;)V
+.method private static final onCreate$lambda$14(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Landroid/view/View;)V
     .locals 0
 
     const-string/jumbo p1, "this$0"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 233
+    .line 326
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->removeOpenSliderTask()V
 
-    .line 234
+    .line 327
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->mHandler:Landroid/os/Handler;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->openSliderTask:Ljava/lang/Runnable;
@@ -566,7 +589,7 @@
     return-void
 .end method
 
-.method private static final onCreate$lambda$15(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Lkotlin/jvm/internal/Ref$BooleanRef;Lkotlin/jvm/internal/Ref$BooleanRef;Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/jvm/internal/Ref$FloatRef;Lkotlin/jvm/internal/Ref$FloatRef;JILkotlin/jvm/internal/Ref$FloatRef;Lkotlin/jvm/internal/Ref$FloatRef;Landroid/view/View;Landroid/view/MotionEvent;)Z
+.method private static final onCreate$lambda$16(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Lkotlin/jvm/internal/Ref$BooleanRef;Lkotlin/jvm/internal/Ref$BooleanRef;Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/jvm/internal/Ref$FloatRef;Lkotlin/jvm/internal/Ref$FloatRef;JILkotlin/jvm/internal/Ref$FloatRef;Lkotlin/jvm/internal/Ref$FloatRef;Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 16
 
     move-object/from16 v0, p1
@@ -617,7 +640,7 @@
 
     invoke-static {v6, v7}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 248
+    .line 341
     invoke-virtual/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getSelected()Landroidx/lifecycle/LiveData;
 
     move-result-object v7
@@ -640,7 +663,7 @@
 
     return v9
 
-    .line 251
+    .line 344
     :cond_0
     invoke-virtual/range {p12 .. p12}, Landroid/view/MotionEvent;->getAction()I
 
@@ -666,7 +689,7 @@
 
     goto/16 :goto_8
 
-    .line 271
+    .line 364
     :cond_1
     invoke-virtual/range {p12 .. p12}, Landroid/view/MotionEvent;->getRawX()F
 
@@ -688,7 +711,7 @@
 
     if-gtz v3, :cond_2
 
-    .line 272
+    .line 365
     invoke-virtual/range {p12 .. p12}, Landroid/view/MotionEvent;->getRawY()F
 
     move-result v3
@@ -705,11 +728,11 @@
 
     if-lez v3, :cond_4
 
-    .line 275
+    .line 368
     :cond_2
     iput-boolean v12, v1, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
 
-    .line 279
+    .line 372
     iget-object v1, v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
     invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -726,7 +749,7 @@
 
     if-nez v1, :cond_4
 
-    .line 280
+    .line 373
     invoke-direct/range {p3 .. p3}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getLensUiState()Ljp/co/sony/mc/camera/view/uistate/LensUiState;
 
     move-result-object v1
@@ -743,10 +766,10 @@
 
     if-ne v1, v12, :cond_4
 
-    .line 281
+    .line 374
     invoke-direct/range {p3 .. p3}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->removeOpenSliderTask()V
 
-    .line 282
+    .line 375
     iget-object v1, v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->mHandler:Landroid/os/Handler;
 
     iget-object v3, v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->openSliderTask:Ljava/lang/Runnable;
@@ -763,7 +786,7 @@
     :goto_0
     invoke-virtual {v1, v10}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    .line 287
+    .line 380
     :cond_4
     invoke-virtual/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->isSliderOpened()Z
 
@@ -771,7 +794,7 @@
 
     if-eqz v1, :cond_18
 
-    .line 290
+    .line 383
     invoke-virtual/range {p12 .. p12}, Landroid/view/MotionEvent;->getRawX()F
 
     move-result v1
@@ -780,21 +803,27 @@
 
     sub-float/2addr v1, v3
 
-    .line 291
+    int-to-float v3, v15
+
+    mul-float/2addr v1, v3
+
+    .line 384
     invoke-virtual/range {p12 .. p12}, Landroid/view/MotionEvent;->getRawY()F
 
-    move-result v3
+    move-result v4
 
-    iget v4, v6, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
+    iget v7, v6, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
-    sub-float/2addr v3, v4
+    sub-float/2addr v4, v7
 
-    .line 293
-    iget-object v4, v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
+    mul-float/2addr v4, v3
 
-    invoke-static {v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    .line 386
+    iget-object v3, v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
-    .line 294
+    invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    .line 387
     invoke-virtual/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getZoomStep()Landroidx/lifecycle/LiveData;
 
     move-result-object v7
@@ -811,18 +840,18 @@
 
     move-result v7
 
-    invoke-virtual {v4, v7}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->calculateScrollForStep(I)Ljava/lang/Integer;
+    invoke-virtual {v3, v7}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->calculateScrollForStep(I)Ljava/lang/Integer;
 
-    move-result-object v4
+    move-result-object v3
 
-    if-eqz v4, :cond_a
+    if-eqz v3, :cond_a
 
-    .line 293
-    invoke-virtual {v4}, Ljava/lang/Integer;->intValue()I
+    .line 386
+    invoke-virtual {v3}, Ljava/lang/Integer;->intValue()I
 
-    move-result v4
+    move-result v3
 
-    .line 296
+    .line 389
     iget-object v7, v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
     invoke-static {v7}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -831,7 +860,7 @@
 
     move-result v7
 
-    .line 299
+    .line 392
     invoke-direct/range {p3 .. p3}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getOrientationViewModel()Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
     move-result-object v8
@@ -871,34 +900,34 @@
     goto :goto_2
 
     :cond_6
-    int-to-float v1, v4
+    int-to-float v1, v3
 
-    sub-float v3, v1, v3
+    sub-float v3, v1, v4
 
     goto :goto_3
 
     :cond_7
-    int-to-float v1, v4
+    int-to-float v1, v3
 
-    add-float/2addr v3, v1
+    add-float v3, v1, v4
 
     goto :goto_3
 
     :cond_8
     :goto_2
-    int-to-float v3, v4
+    int-to-float v3, v3
 
     sub-float/2addr v3, v1
 
     :goto_3
     const/4 v1, 0x0
 
-    .line 305
+    .line 398
     invoke-static {v3, v1, v7}, Landroidx/core/math/MathUtils;->clamp(FFF)F
 
     move-result v1
 
-    .line 310
+    .line 403
     iget-object v3, v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
     invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -909,7 +938,7 @@
 
     if-eqz v3, :cond_9
 
-    .line 311
+    .line 404
     invoke-virtual/range {p11 .. p11}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v3
@@ -918,7 +947,7 @@
 
     invoke-interface {v3, v12}, Landroid/view/ViewParent;->requestDisallowInterceptTouchEvent(Z)V
 
-    .line 313
+    .line 406
     :cond_9
     iget-object v2, v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
@@ -932,7 +961,7 @@
 
     goto/16 :goto_8
 
-    .line 295
+    .line 388
     :cond_a
     iget-boolean v0, v0, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
 
@@ -940,7 +969,7 @@
 
     return v0
 
-    .line 317
+    .line 410
     :cond_b
     iget-object v3, v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
@@ -948,10 +977,10 @@
 
     invoke-virtual {v3}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->notifyScrollStop()V
 
-    .line 318
+    .line 411
     invoke-direct/range {p3 .. p3}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->removeOpenSliderTask()V
 
-    .line 321
+    .line 414
     iget-object v3, v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
     invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -966,7 +995,7 @@
 
     if-nez v1, :cond_18
 
-    .line 323
+    .line 416
     iget-object v1, v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
     invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -975,7 +1004,7 @@
 
     move-result-object v1
 
-    .line 324
+    .line 417
     invoke-virtual/range {p12 .. p12}, Landroid/view/MotionEvent;->getRawX()F
 
     move-result v3
@@ -990,7 +1019,7 @@
 
     if-eqz v1, :cond_d
 
-    .line 326
+    .line 419
     iget-object v1, v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->mHandler:Landroid/os/Handler;
 
     iget-object v2, v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->openSliderTask:Ljava/lang/Runnable;
@@ -1007,14 +1036,14 @@
     :goto_4
     invoke-virtual {v1, v10}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    .line 327
+    .line 420
     iget-boolean v0, v0, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
 
     xor-int/2addr v0, v12
 
     return v0
 
-    .line 331
+    .line 424
     :cond_d
     iget-object v1, v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
@@ -1024,10 +1053,10 @@
 
     move-result-object v1
 
-    .line 332
+    .line 425
     check-cast v1, Ljava/lang/Iterable;
 
-    .line 468
+    .line 574
     invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -1045,10 +1074,10 @@
 
     check-cast v3, Lkotlin/Pair;
 
-    .line 333
+    .line 426
     new-array v4, v15, [I
 
-    .line 334
+    .line 427
     invoke-virtual {v3}, Lkotlin/Pair;->getFirst()Ljava/lang/Object;
 
     move-result-object v7
@@ -1057,7 +1086,7 @@
 
     invoke-virtual {v7, v4}, Landroid/view/View;->getLocationOnScreen([I)V
 
-    .line 335
+    .line 428
     invoke-direct/range {p3 .. p3}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getOrientationViewModel()Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
     move-result-object v7
@@ -1094,20 +1123,20 @@
 
     if-eq v7, v14, :cond_10
 
-    .line 354
+    .line 447
     new-instance v7, Landroid/graphics/RectF;
 
-    .line 355
+    .line 448
     aget v8, v4, v9
 
     int-to-float v10, v8
 
-    .line 356
+    .line 449
     aget v11, v4, v12
 
     int-to-float v11, v11
 
-    .line 357
+    .line 450
     iget-object v13, v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;
 
     iget-object v13, v13, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->mainCircle:Landroid/view/View;
@@ -1120,7 +1149,7 @@
 
     int-to-float v8, v8
 
-    .line 358
+    .line 451
     aget v4, v4, v12
 
     iget-object v13, v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;
@@ -1135,16 +1164,16 @@
 
     int-to-float v4, v4
 
-    .line 354
+    .line 447
     invoke-direct {v7, v10, v11, v8, v4}, Landroid/graphics/RectF;-><init>(FFFF)V
 
     goto :goto_6
 
-    .line 348
+    .line 441
     :cond_10
     new-instance v7, Landroid/graphics/RectF;
 
-    .line 349
+    .line 442
     aget v8, v4, v9
 
     iget-object v10, v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;
@@ -1159,17 +1188,17 @@
 
     int-to-float v8, v8
 
-    .line 350
+    .line 443
     aget v10, v4, v12
 
     int-to-float v11, v10
 
-    .line 351
+    .line 444
     aget v4, v4, v9
 
     int-to-float v4, v4
 
-    .line 352
+    .line 445
     iget-object v13, v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;
 
     iget-object v13, v13, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->mainCircle:Landroid/view/View;
@@ -1182,21 +1211,21 @@
 
     int-to-float v10, v10
 
-    .line 348
+    .line 441
     invoke-direct {v7, v8, v11, v4, v10}, Landroid/graphics/RectF;-><init>(FFFF)V
 
     goto :goto_6
 
-    .line 342
+    .line 435
     :cond_11
     new-instance v7, Landroid/graphics/RectF;
 
-    .line 343
+    .line 436
     aget v8, v4, v9
 
     int-to-float v8, v8
 
-    .line 344
+    .line 437
     aget v10, v4, v12
 
     iget-object v11, v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;
@@ -1211,7 +1240,7 @@
 
     int-to-float v10, v10
 
-    .line 345
+    .line 438
     aget v11, v4, v9
 
     iget-object v13, v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;
@@ -1226,31 +1255,31 @@
 
     int-to-float v11, v11
 
-    .line 346
+    .line 439
     aget v4, v4, v12
 
     int-to-float v4, v4
 
-    .line 342
+    .line 435
     invoke-direct {v7, v8, v10, v11, v4}, Landroid/graphics/RectF;-><init>(FFFF)V
 
     goto :goto_6
 
-    .line 336
+    .line 429
     :cond_12
     new-instance v7, Landroid/graphics/RectF;
 
-    .line 337
+    .line 430
     aget v8, v4, v9
 
     int-to-float v10, v8
 
-    .line 338
+    .line 431
     aget v11, v4, v12
 
     int-to-float v11, v11
 
-    .line 339
+    .line 432
     iget-object v13, v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;
 
     iget-object v13, v13, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->mainCircle:Landroid/view/View;
@@ -1263,7 +1292,7 @@
 
     int-to-float v8, v8
 
-    .line 340
+    .line 433
     aget v4, v4, v12
 
     iget-object v13, v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;
@@ -1278,10 +1307,10 @@
 
     int-to-float v4, v4
 
-    .line 336
+    .line 429
     invoke-direct {v7, v10, v11, v8, v4}, Landroid/graphics/RectF;-><init>(FFFF)V
 
-    .line 361
+    .line 454
     :goto_6
     invoke-virtual/range {p12 .. p12}, Landroid/view/MotionEvent;->getRawX()F
 
@@ -1297,7 +1326,7 @@
 
     if-eqz v4, :cond_e
 
-    .line 363
+    .line 456
     invoke-virtual {v3}, Lkotlin/Pair;->getSecond()Ljava/lang/Object;
 
     move-result-object v1
@@ -1308,7 +1337,7 @@
 
     move-result v1
 
-    .line 364
+    .line 457
     iget-object v2, v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
     if-eqz v2, :cond_13
@@ -1321,7 +1350,7 @@
 
     invoke-interface {v2, v1}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$OnZoomButtonClickListener;->onZoomJumpClicked(I)V
 
-    .line 365
+    .line 458
     :cond_13
     iget-boolean v0, v0, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
 
@@ -1329,7 +1358,7 @@
 
     return v0
 
-    .line 253
+    .line 346
     :cond_14
     invoke-virtual/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->isSliderOpened()Z
 
@@ -1337,15 +1366,15 @@
 
     iput-boolean v7, v0, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
 
-    .line 254
+    .line 347
     iput-boolean v9, v1, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
 
-    .line 255
+    .line 348
     iget-boolean v1, v0, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
 
     if-eqz v1, :cond_15
 
-    .line 258
+    .line 351
     invoke-direct/range {p3 .. p3}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getLensUiState()Ljp/co/sony/mc/camera/view/uistate/LensUiState;
 
     move-result-object v0
@@ -1354,7 +1383,7 @@
 
     return v9
 
-    .line 261
+    .line 354
     :cond_15
     invoke-virtual/range {p12 .. p12}, Landroid/view/MotionEvent;->getRawX()F
 
@@ -1362,14 +1391,14 @@
 
     iput v1, v3, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
-    .line 262
+    .line 355
     invoke-virtual/range {p12 .. p12}, Landroid/view/MotionEvent;->getRawY()F
 
     move-result v1
 
     iput v1, v4, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
-    .line 265
+    .line 358
     iget-object v1, v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->mHandler:Landroid/os/Handler;
 
     iget-object v3, v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->openSliderTask:Ljava/lang/Runnable;
@@ -1387,7 +1416,7 @@
 
     if-nez v1, :cond_18
 
-    .line 266
+    .line 359
     iget-object v1, v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->mHandler:Landroid/os/Handler;
 
     iget-object v2, v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->openSliderTask:Ljava/lang/Runnable;
@@ -1406,7 +1435,7 @@
 
     invoke-virtual {v1, v10, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 371
+    .line 464
     :cond_18
     :goto_8
     invoke-virtual/range {p12 .. p12}, Landroid/view/MotionEvent;->getRawX()F
@@ -1415,14 +1444,14 @@
 
     iput v1, v5, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
-    .line 372
+    .line 465
     invoke-virtual/range {p12 .. p12}, Landroid/view/MotionEvent;->getRawY()F
 
     move-result v1
 
     iput v1, v6, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
-    .line 373
+    .line 466
     iget-boolean v0, v0, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
 
     xor-int/2addr v0, v12
@@ -1430,42 +1459,42 @@
     return v0
 .end method
 
-.method private static final onCreate$lambda$16(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Lkotlin/Unit;
+.method private static final onCreate$lambda$17(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Lkotlin/Unit;
     .locals 0
 
     const-string/jumbo p1, "this$0"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 389
+    .line 482
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
     if-eqz p0, :cond_0
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->closeImmediately()V
 
-    .line 390
+    .line 483
     :cond_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 .end method
 
-.method private static final onCreate$lambda$17(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+.method private static final onCreate$lambda$18(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
     .locals 1
 
     const-string/jumbo v0, "this$0"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 393
+    .line 486
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 394
+    .line 487
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
     if-eqz p0, :cond_1
@@ -1474,7 +1503,7 @@
 
     goto :goto_0
 
-    .line 396
+    .line 489
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
@@ -1482,7 +1511,7 @@
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->disableZoomingTouch()V
 
-    .line 398
+    .line 491
     :cond_1
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1490,8 +1519,8 @@
     return-object p0
 .end method
 
-.method private static final onCreate$lambda$19(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Ljava/util/ArrayList;Lkotlin/Unit;)Lkotlin/Unit;
-    .locals 7
+.method private static final onCreate$lambda$20(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Ljava/util/ArrayList;Lkotlin/Unit;)Lkotlin/Unit;
+    .locals 9
 
     const-string/jumbo v0, "this$0"
 
@@ -1509,12 +1538,12 @@
 
     invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 405
+    .line 498
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     move-result-object p3
 
-    invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->isSeamless()Landroidx/lifecycle/LiveData;
+    invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
 
     move-result-object p3
 
@@ -1522,19 +1551,17 @@
 
     move-result-object p3
 
-    const/4 v0, 0x0
+    invoke-static {p3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v1
-
-    invoke-static {p3, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {p3}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isSeamlessZoom()Z
 
     move-result p3
 
-    if-nez p3, :cond_d
+    if-eqz p3, :cond_8
 
-    .line 406
+    .line 499
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     move-result-object p3
@@ -1555,11 +1582,11 @@
 
     move-result-object p3
 
-    sget-object v2, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->FRONT:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->FRONT:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    if-eq p3, v2, :cond_d
+    if-eq p3, v0, :cond_8
 
-    .line 407
+    .line 500
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getLensUiState()Ljp/co/sony/mc/camera/view/uistate/LensUiState;
 
     move-result-object p3
@@ -1572,19 +1599,25 @@
 
     move-result-object p3
 
+    const/4 v0, 0x0
+
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v1
+
     invoke-static {p3, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p3
 
     if-eqz p3, :cond_0
 
-    goto/16 :goto_5
+    goto/16 :goto_3
 
-    .line 412
+    .line 505
     :cond_0
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio;->Companion:Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio$Companion;
 
-    .line 413
+    .line 506
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     move-result-object p3
@@ -1603,10 +1636,10 @@
 
     check-cast v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 414
+    .line 507
     sget-object v3, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 415
+    .line 508
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getZoomStep()Landroidx/lifecycle/LiveData;
 
     move-result-object p3
@@ -1623,7 +1656,47 @@
 
     move-result v4
 
-    .line 416
+    .line 509
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+    move-result-object p3
+
+    invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getBokeh()Landroidx/lifecycle/LiveData;
+
+    move-result-object p3
+
+    invoke-virtual {p3}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object p3
+
+    invoke-static {p3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    check-cast p3, Ljava/lang/Boolean;
+
+    invoke-virtual {p3}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v5
+
+    .line 510
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+    move-result-object p3
+
+    invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getVideoStabilizer()Landroidx/lifecycle/LiveData;
+
+    move-result-object p3
+
+    invoke-virtual {p3}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object p3
+
+    invoke-static {p3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    move-object v6, p3
+
+    check-cast v6, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+
+    .line 511
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     move-result-object p3
@@ -1638,11 +1711,11 @@
 
     invoke-static {p3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    move-object v5, p3
+    move-object v7, p3
 
-    check-cast v5, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+    check-cast v7, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
 
-    .line 417
+    .line 512
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     move-result-object p3
@@ -1661,14 +1734,14 @@
 
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;->isHfr()Z
 
-    move-result v6
+    move-result v8
 
-    .line 412
-    invoke-virtual/range {v1 .. v6}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio$Companion;->getBaseZoomRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ILjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)F
+    .line 505
+    invoke-virtual/range {v1 .. v8}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio$Companion;->getBaseZoomRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;IZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)F
 
     move-result p3
 
-    .line 419
+    .line 514
     invoke-static {p3}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p3
@@ -1681,7 +1754,7 @@
 
     add-int/2addr p3, v1
 
-    .line 420
+    .line 515
     invoke-virtual {p2}, Ljava/util/ArrayList;->size()I
 
     move-result v2
@@ -1690,7 +1763,7 @@
 
     move p3, v0
 
-    .line 423
+    .line 518
     :cond_1
     invoke-virtual {p2, p3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1710,52 +1783,77 @@
 
     move-result p2
 
-    .line 424
+    .line 519
     iget-object p3, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
 
-    sget-object v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->NORMAL:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
+    sget-object v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->VIDEO_BOKEH:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
 
     if-ne p3, v2, :cond_2
-
-    move p3, v1
 
     goto :goto_0
 
     :cond_2
-    move p3, v0
+    move v1, v0
 
-    .line 425
+    .line 520
     :goto_0
-    iget-object v2, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
-    sget-object v3, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->VIDEO_MFHDR:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
+    move-result-object p3
 
-    if-ne v2, v3, :cond_3
+    invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->isBokehVideo()Landroidx/lifecycle/LiveData;
 
-    move v2, v1
+    move-result-object p3
 
-    goto :goto_1
+    invoke-virtual {p3}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
-    :cond_3
-    move v2, v0
+    move-result-object p3
 
-    .line 426
-    :goto_1
-    iget-object v3, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
+    invoke-static {p3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    sget-object v4, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->BOKEH:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
+    check-cast p3, Ljava/lang/Boolean;
 
-    if-ne v3, v4, :cond_4
+    invoke-virtual {p3}, Ljava/lang/Boolean;->booleanValue()Z
 
-    move v3, v1
+    move-result p3
 
-    goto :goto_2
+    .line 521
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
-    :cond_4
-    move v3, v0
+    move-result-object v2
 
-    .line 428
-    :goto_2
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    check-cast v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
+
+    move-result v2
+
+    .line 522
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getVideoStabilizer()Landroidx/lifecycle/LiveData;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+
+    .line 523
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     move-result-object v4
@@ -1768,52 +1866,58 @@
 
     move-result-object v4
 
-    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_ON:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+    check-cast v4, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
 
-    if-ne v4, v5, :cond_5
+    .line 524
+    iget-object v5, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
 
-    move v4, v1
+    sget-object v6, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$WhenMappings;->$EnumSwitchMapping$0:[I
 
-    goto :goto_3
+    invoke-virtual {v5}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->ordinal()I
 
-    :cond_5
-    move v4, v0
+    move-result v5
 
-    .line 429
-    :goto_3
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+    aget v5, v6, v5
 
-    move-result-object v5
+    packed-switch v5, :pswitch_data_0
 
-    invoke-virtual {v5}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->isBokeh()Landroidx/lifecycle/LiveData;
+    new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
-    move-result-object v5
+    invoke-direct {p0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
 
-    invoke-virtual {v5}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+    throw p0
 
-    move-result-object v5
+    :pswitch_0
+    if-eqz v2, :cond_4
 
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    if-nez p3, :cond_4
 
-    move-result-object v1
+    .line 531
+    iget-object v2, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
 
-    invoke-static {v5, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->getVideoStabilizer()Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
-    move-result v1
+    move-result-object v2
 
-    if-eqz p3, :cond_6
+    if-ne v3, v2, :cond_4
 
-    if-eqz v4, :cond_7
+    iget-object v2, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
 
-    :cond_6
-    if-eqz v2, :cond_9
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->getVideoMfHdr()Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
 
-    if-eqz v4, :cond_9
+    move-result-object v2
 
-    :cond_7
-    if-nez v1, :cond_9
+    if-ne v4, v2, :cond_4
 
-    .line 432
+    goto :goto_1
+
+    :pswitch_1
+    if-nez v2, :cond_4
+
+    if-nez p3, :cond_4
+
+    .line 536
+    :goto_1
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getZoomStep()Landroidx/lifecycle/LiveData;
 
     move-result-object p0
@@ -1824,25 +1928,24 @@
 
     check-cast p0, Ljava/lang/Integer;
 
-    if-eqz p0, :cond_8
+    if-eqz p0, :cond_3
 
     invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
 
-    :cond_8
+    :cond_3
     invoke-virtual {p1, v0, p2}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->onJumpZoomStep(II)V
 
-    goto :goto_4
+    goto :goto_2
 
-    :cond_9
-    if-eqz v3, :cond_c
+    :cond_4
+    :pswitch_2
+    if-eqz v1, :cond_7
 
-    if-eqz v1, :cond_c
+    if-eqz p3, :cond_7
 
-    if-nez v4, :cond_c
-
-    .line 434
+    .line 538
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getLensUiState()Ljp/co/sony/mc/camera/view/uistate/LensUiState;
 
     move-result-object p3
@@ -1851,12 +1954,12 @@
 
     move-result-object p3
 
-    if-eqz p3, :cond_a
+    if-eqz p3, :cond_5
 
     invoke-interface {p3}, Ljp/co/sony/mc/camera/view/CameraOperator;->stopObjectTracking()V
 
-    .line 435
-    :cond_a
+    .line 539
+    :cond_5
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getLensUiState()Ljp/co/sony/mc/camera/view/uistate/LensUiState;
 
     move-result-object p0
@@ -1865,56 +1968,48 @@
 
     move-result-object p0
 
-    if-eqz p0, :cond_b
+    if-eqz p0, :cond_6
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/view/CameraOperator;->clearTouchFocus()V
 
-    .line 436
-    :cond_b
+    .line 540
+    :cond_6
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->onZoomProgressed(I)V
 
-    .line 438
-    :cond_c
-    :goto_4
+    .line 542
+    :cond_7
+    :goto_2
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 
-    .line 409
-    :cond_d
-    :goto_5
+    .line 502
+    :cond_8
+    :goto_3
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_1
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_2
+    .end packed-switch
 .end method
 
-.method private static final onCreate$lambda$2(ZI)Lkotlin/Pair;
-    .locals 1
-
-    .line 143
-    new-instance v0, Lkotlin/Pair;
-
-    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object p0
-
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p1
-
-    invoke-direct {v0, p0, p1}, Lkotlin/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
-
-    return-object v0
-.end method
-
-.method private static final onCreate$lambda$20(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+.method private static final onCreate$lambda$21(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
     .locals 1
 
     const-string/jumbo v0, "this$0"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 442
+    .line 546
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->scrollView:Ljp/co/sony/mc/camera/view/widget/FlingLimitedHorizontalScrollView;
@@ -1935,20 +2030,39 @@
     :goto_0
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/FlingLimitedHorizontalScrollView;->setDescendantFocusability(I)V
 
-    .line 447
+    .line 551
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 .end method
 
-.method private static final onCreate$lambda$3(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+.method private static final onCreate$lambda$3(ZI)Lkotlin/Pair;
+    .locals 1
+
+    .line 233
+    new-instance v0, Lkotlin/Pair;
+
+    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p0
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    invoke-direct {v0, p0, p1}, Lkotlin/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    return-object v0
+.end method
+
+.method private static final onCreate$lambda$4(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
     .locals 1
 
     const-string/jumbo v0, "this$0"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 144
+    .line 234
     invoke-virtual {p1}, Lkotlin/Pair;->component1()Ljava/lang/Object;
 
     move-result-object v0
@@ -1971,28 +2085,28 @@
 
     if-nez v0, :cond_0
 
-    .line 146
+    .line 236
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
     if-eqz p0, :cond_0
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->setZoomStep(I)V
 
-    .line 148
+    .line 238
     :cond_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 .end method
 
-.method private static final onCreate$lambda$4(ZLjava/lang/String;)Lkotlin/Pair;
+.method private static final onCreate$lambda$5(ZLjava/lang/String;)Lkotlin/Pair;
     .locals 1
 
     const-string/jumbo v0, "zoomRatioLabel"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 154
+    .line 244
     new-instance v0, Lkotlin/Pair;
 
     invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -2004,14 +2118,14 @@
     return-object v0
 .end method
 
-.method private static final onCreate$lambda$5(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+.method private static final onCreate$lambda$6(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
     .locals 2
 
     const-string/jumbo v0, "this$0"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 155
+    .line 245
     invoke-virtual {p1}, Lkotlin/Pair;->component1()Ljava/lang/Object;
 
     move-result-object v0
@@ -2030,7 +2144,7 @@
 
     if-nez v0, :cond_0
 
-    .line 156
+    .line 246
     move-object v0, p1
 
     check-cast v0, Ljava/lang/CharSequence;
@@ -2041,7 +2155,7 @@
 
     if-lez v0, :cond_0
 
-    .line 157
+    .line 247
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
     if-eqz v0, :cond_0
@@ -2056,42 +2170,21 @@
 
     move-result-object p0
 
-    const v1, 0x7f1102f2
+    const v1, 0x7f11033b
 
-    .line 159
+    .line 249
     filled-new-array {p1}, [Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 157
+    .line 247
     invoke-virtual {p0, v1, p1}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->setZoomRatioText(Ljava/lang/String;)V
 
-    .line 162
-    :cond_0
-    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
-
-    return-object p0
-.end method
-
-.method private static final onCreate$lambda$6(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/Unit;)Lkotlin/Unit;
-    .locals 0
-
-    const-string/jumbo p1, "this$0"
-
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 165
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
-
-    if-eqz p0, :cond_0
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->open()V
-
-    .line 166
+    .line 252
     :cond_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
@@ -2105,14 +2198,14 @@
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 169
+    .line 255
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
     if-eqz p0, :cond_0
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->close()V
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->open()V
 
-    .line 170
+    .line 256
     :cond_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
@@ -2126,37 +2219,35 @@
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 173
+    .line 259
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
     if-eqz p0, :cond_0
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->closeImmediately()V
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->close()V
 
-    .line 174
+    .line 260
     :cond_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 .end method
 
-.method private static final onCreate$lambda$9(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Ljava/lang/Boolean;)Lkotlin/Unit;
-    .locals 1
+.method private static final onCreate$lambda$9(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/Unit;)Lkotlin/Unit;
+    .locals 0
 
-    const-string v0, "$vm"
+    const-string/jumbo p1, "this$0"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 177
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+    .line 263
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
-    move-result p1
+    if-eqz p0, :cond_0
 
-    if-nez p1, :cond_0
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->closeImmediately()V
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->closeSlider()V
-
-    .line 178
+    .line 264
     :cond_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
@@ -2166,7 +2257,7 @@
 .method private final removeOpenSliderTask()V
     .locals 4
 
-    .line 460
+    .line 564
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->mHandler:Landroid/os/Handler;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->openSliderTask:Ljava/lang/Runnable;
@@ -2188,7 +2279,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 461
+    .line 565
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->mHandler:Landroid/os/Handler;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->openSliderTask:Ljava/lang/Runnable;
@@ -2222,7 +2313,7 @@
 
     invoke-static {v1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 73
+    .line 113
     invoke-direct/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getLensUiState()Ljp/co/sony/mc/camera/view/uistate/LensUiState;
 
     move-result-object v0
@@ -2231,120 +2322,57 @@
 
     move-result-object v0
 
-    .line 74
-    new-instance v1, Lkotlin/Pair;
-
-    .line 75
-    sget-object v2, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    .line 77
-    sget-object v3, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    .line 78
-    invoke-direct/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getVideoMfHdr()Landroidx/lifecycle/LiveData;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
-
-    .line 79
-    invoke-direct/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
-
-    move-result-object v5
-
-    invoke-virtual {v5}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCaptureFps()Landroidx/lifecycle/LiveData;
-
-    move-result-object v5
-
-    invoke-virtual {v5}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
-
-    move-result-object v5
-
-    invoke-static {v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
-    check-cast v5, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
-
-    invoke-virtual {v5}, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;->isHfr()Z
-
-    move-result v5
-
-    .line 80
-    invoke-direct/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
-
-    move-result-object v6
-
-    invoke-virtual {v6}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->isAutoFraming()Landroidx/lifecycle/LiveData;
-
-    move-result-object v6
-
-    invoke-virtual {v6}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
-
-    move-result-object v6
-
-    invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
-    check-cast v6, Ljava/lang/Boolean;
-
-    invoke-virtual {v6}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v6
-
-    .line 81
-    invoke-direct/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
-
-    move-result-object v7
-
-    invoke-virtual {v7}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->isGimbal()Landroidx/lifecycle/LiveData;
-
-    move-result-object v7
-
-    invoke-virtual {v7}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
-
-    move-result-object v7
-
-    invoke-static {v7}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
-    check-cast v7, Ljava/lang/Boolean;
-
-    invoke-virtual {v7}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v7
-
-    .line 76
-    invoke-static {v3, v4, v5, v6, v7}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSwitchPointZoomRatio(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;ZZZ)Ljava/util/List;
-
-    move-result-object v3
-
-    const/4 v13, 0x0
-
-    invoke-interface {v3, v13}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v3
-
-    .line 74
-    invoke-direct {v1, v2, v3}, Lkotlin/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
-
-    .line 73
-    invoke-interface {v0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object v0
 
-    if-eqz v0, :cond_10
+    check-cast v0, Ljava/lang/Iterable;
 
-    .line 72
-    move-object v14, v0
+    .line 570
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    check-cast v14, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;
+    move-result-object v0
 
-    .line 87
+    :cond_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_c
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/util/Map$Entry;
+
+    .line 113
+    invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lkotlin/Pair;
+
+    invoke-virtual {v2}, Lkotlin/Pair;->getFirst()Ljava/lang/Object;
+
+    move-result-object v2
+
+    sget-object v3, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    if-ne v2, v3, :cond_0
+
+    invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_b
+
+    .line 112
+    move-object v13, v0
+
+    check-cast v13, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;
+
+    .line 116
     iget-object v0, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$WhenMappings;->$EnumSwitchMapping$0:[I
@@ -2355,312 +2383,539 @@
 
     aget v0, v1, v0
 
-    const/4 v1, 0x3
+    packed-switch v0, :pswitch_data_0
 
-    const/4 v2, 0x2
-
-    const/4 v3, 0x1
-
-    if-eq v0, v3, :cond_2
-
-    if-eq v0, v2, :cond_1
-
-    if-ne v0, v1, :cond_0
-
-    .line 90
-    invoke-virtual {v14}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getOpticalRangesBokeh()Ljava/util/List;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    .line 87
-    :cond_0
     new-instance v0, Lkotlin/NoWhenBranchMatchedException;
 
     invoke-direct {v0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
 
     throw v0
 
-    .line 89
-    :cond_1
-    invoke-virtual {v14}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getOpticalRangesVideoMfHdr()Ljava/util/List;
+    .line 123
+    :pswitch_0
+    invoke-virtual {v13}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getOpticalRangesVideoBokeh()Ljava/util/List;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 88
-    :cond_2
-    invoke-virtual {v14}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getOpticalRangesNormal()Ljava/util/List;
+    .line 122
+    :pswitch_1
+    invoke-virtual {v13}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getOpticalRangesVideoSteadyShotMfHdr()Ljava/util/List;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 121
+    :pswitch_2
+    invoke-virtual {v13}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getOpticalRangesVideoMfHdr()Ljava/util/List;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 120
+    :pswitch_3
+    invoke-virtual {v13}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getOpticalRangesVideoIntelligentActive()Ljava/util/List;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 119
+    :pswitch_4
+    invoke-virtual {v13}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getOpticalRangesVideoSteadyShot()Ljava/util/List;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 118
+    :pswitch_5
+    invoke-virtual {v13}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getOpticalRangesVideo()Ljava/util/List;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 117
+    :pswitch_6
+    invoke-virtual {v13}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getOpticalRangesPhoto()Ljava/util/List;
 
     move-result-object v0
 
     :goto_0
-    move-object v9, v0
+    move-object v6, v0
 
-    .line 93
-    new-instance v15, Ljava/util/ArrayList;
-
-    invoke-direct {v15}, Ljava/util/ArrayList;-><init>()V
-
-    .line 94
-    move-object v0, v9
-
-    check-cast v0, Ljava/lang/Iterable;
-
-    .line 466
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :goto_1
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_5
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel;
-
-    .line 96
-    instance-of v5, v4, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;
-
-    if-eqz v5, :cond_3
-
-    check-cast v4, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;
-
-    invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;->getStep()I
-
-    move-result v4
-
-    invoke-static {v4}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getZoomRatio(I)F
-
-    move-result v4
-
-    invoke-static {v4}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v4
-
-    invoke-virtual {v15, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_1
-
-    .line 97
-    :cond_3
-    instance-of v5, v4, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;
-
-    if-eqz v5, :cond_4
-
-    .line 98
-    check-cast v4, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;
-
-    invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;->getMinStep()I
-
-    move-result v5
-
-    invoke-static {v5}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getZoomRatio(I)F
-
-    move-result v5
-
-    invoke-static {v5}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v5
-
-    invoke-virtual {v15, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 99
-    invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;->getMaxStep()I
-
-    move-result v4
-
-    invoke-static {v4}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getZoomRatio(I)F
-
-    move-result v4
-
-    invoke-static {v4}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v4
-
-    invoke-virtual {v15, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_1
-
-    .line 95
-    :cond_4
-    new-instance v0, Lkotlin/NoWhenBranchMatchedException;
-
-    invoke-direct {v0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
-
-    throw v0
-
-    .line 105
-    :cond_5
-    new-instance v0, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
-
-    .line 106
-    invoke-direct/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getLifecycleOwner()Landroidx/lifecycle/LifecycleOwner;
-
-    move-result-object v5
-
-    .line 107
-    iget-object v6, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;
-
-    .line 108
-    sget-object v4, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    invoke-static {v4}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getMinZoomRatio(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)F
-
-    move-result v4
-
-    invoke-static {v4}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getZoomStep(F)I
-
-    move-result v7
-
-    .line 110
-    iget-object v4, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
-
-    sget-object v8, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->VIDEO_MFHDR:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
-
-    if-ne v4, v8, :cond_6
-
-    .line 111
-    sget-object v4, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    invoke-static {v4}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isHybridZoomSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_6
-
-    .line 112
-    sget-object v4, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    invoke-static {v4}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isCameraSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
-
-    move-result v4
-
-    if-nez v4, :cond_6
-
-    .line 115
-    sget-object v16, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    .line 116
-    sget-object v17, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    .line 117
-    sget-object v19, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_ON:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
-
-    const/16 v21, 0x14
-
-    const/16 v22, 0x0
-
-    const/16 v18, 0x0
-
-    const/16 v20, 0x0
-
-    .line 114
-    invoke-static/range {v16 .. v22}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getMaxZoomRatio$default(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;ZILjava/lang/Object;)F
-
-    move-result v4
-
-    goto :goto_2
-
-    .line 120
-    :cond_6
-    sget-object v4, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    invoke-static {v4}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getMaxZoomRatio(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)F
-
-    move-result v4
-
-    .line 109
-    :goto_2
-    invoke-static {v4}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getZoomStep(F)I
-
-    move-result v8
-
-    .line 124
-    iget-object v4, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
-
-    sget-object v10, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->VIDEO_MFHDR:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
-
-    if-ne v4, v10, :cond_7
-
-    .line 125
-    sget-object v4, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    invoke-static {v4}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isHybridZoomSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_7
-
-    .line 127
-    invoke-virtual {v14}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getLabelsForVideoMfHdr()Ljava/util/List;
-
-    move-result-object v4
-
-    goto :goto_3
-
-    .line 129
-    :cond_7
-    invoke-virtual {v14}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getLabelsForSeamlessLens()Ljava/util/List;
-
-    move-result-object v4
-
-    :goto_3
-    move-object v10, v4
-
-    move-object v4, v0
-
-    .line 105
-    invoke-direct/range {v4 .. v10}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;-><init>(Landroidx/lifecycle/LifecycleOwner;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;IILjava/util/List;Ljava/util/List;)V
-
-    iput-object v0, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
-
-    .line 133
+    .line 126
     iget-object v0, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
 
-    sget-object v4, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$WhenMappings;->$EnumSwitchMapping$0:[I
+    sget-object v1, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$WhenMappings;->$EnumSwitchMapping$0:[I
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->ordinal()I
 
     move-result v0
 
-    aget v0, v4, v0
+    aget v0, v1, v0
 
-    if-eq v0, v3, :cond_a
+    packed-switch v0, :pswitch_data_1
 
-    if-eq v0, v2, :cond_9
-
-    if-ne v0, v1, :cond_8
-
-    .line 136
-    invoke-direct/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getBasicModeCommonUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;->isBokehSeamlessLensGone()Landroidx/lifecycle/LiveData;
-
-    move-result-object v0
-
-    goto :goto_4
-
-    .line 133
-    :cond_8
     new-instance v0, Lkotlin/NoWhenBranchMatchedException;
 
     invoke-direct {v0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
 
     throw v0
 
-    .line 135
-    :cond_9
+    .line 134
+    :pswitch_7
+    invoke-virtual {v13}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getLabelsForVideoSteadyShotMfHdr()Ljava/util/List;
+
+    move-result-object v0
+
+    goto :goto_1
+
+    .line 133
+    :pswitch_8
+    invoke-virtual {v13}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getLabelsForVideoMfHdr()Ljava/util/List;
+
+    move-result-object v0
+
+    goto :goto_1
+
+    .line 132
+    :pswitch_9
+    invoke-virtual {v13}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getLabelsForVideoIntelligentActiveSeamlessLens()Ljava/util/List;
+
+    move-result-object v0
+
+    goto :goto_1
+
+    .line 130
+    :pswitch_a
+    invoke-virtual {v13}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getLabelsForVideoSteadyShotSeamlessLens()Ljava/util/List;
+
+    move-result-object v0
+
+    goto :goto_1
+
+    .line 129
+    :pswitch_b
+    invoke-virtual {v13}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getLabelsForVideoSeamlessLens()Ljava/util/List;
+
+    move-result-object v0
+
+    goto :goto_1
+
+    .line 128
+    :pswitch_c
+    invoke-virtual {v13}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getLabelsForPhotoSeamlessLens()Ljava/util/List;
+
+    move-result-object v0
+
+    :goto_1
+    move-object v7, v0
+
+    .line 137
+    new-instance v14, Ljava/util/ArrayList;
+
+    invoke-direct {v14}, Ljava/util/ArrayList;-><init>()V
+
+    .line 138
+    move-object v0, v6
+
+    check-cast v0, Ljava/lang/Iterable;
+
+    .line 572
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_2
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel;
+
+    .line 140
+    instance-of v2, v1, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;
+
+    if-eqz v2, :cond_1
+
+    .line 143
+    iget-object v2, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
+
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->getMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    move-result-object v15
+
+    .line 144
+    sget-object v16, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    .line 146
+    check-cast v1, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;->getStep()I
+
+    move-result v18
+
+    .line 147
+    iget-object v1, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->getMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isBokeh()Z
+
+    move-result v19
+
+    .line 148
+    iget-object v1, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->getVideoStabilizer()Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+
+    move-result-object v20
+
+    .line 149
+    iget-object v1, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->getVideoMfHdr()Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+
+    move-result-object v21
+
+    const/16 v22, 0x0
+
+    const/high16 v17, 0x3f800000    # 1.0f
+
+    .line 142
+    invoke-static/range {v15 .. v22}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getZoomRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FIZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)F
+
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v1
+
+    .line 141
+    invoke-virtual {v14, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_2
+
+    .line 153
+    :cond_1
+    instance-of v2, v1, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;
+
+    if-eqz v2, :cond_2
+
+    .line 156
+    iget-object v2, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
+
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->getMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    move-result-object v15
+
+    .line 157
+    sget-object v16, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    .line 159
+    check-cast v1, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;->getMinStep()I
+
+    move-result v18
+
+    .line 160
+    iget-object v2, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
+
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->getMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isBokeh()Z
+
+    move-result v19
+
+    .line 161
+    iget-object v2, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
+
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->getVideoStabilizer()Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+
+    move-result-object v20
+
+    .line 162
+    iget-object v2, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
+
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->getVideoMfHdr()Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+
+    move-result-object v21
+
+    const/16 v22, 0x0
+
+    const/high16 v17, 0x3f800000    # 1.0f
+
+    .line 155
+    invoke-static/range {v15 .. v22}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getZoomRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FIZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)F
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v2
+
+    .line 154
+    invoke-virtual {v14, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 168
+    iget-object v2, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
+
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->getMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    move-result-object v15
+
+    .line 169
+    sget-object v16, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    .line 171
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;->getMaxStep()I
+
+    move-result v18
+
+    .line 172
+    iget-object v1, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->getMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isBokeh()Z
+
+    move-result v19
+
+    .line 173
+    iget-object v1, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->getVideoStabilizer()Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+
+    move-result-object v20
+
+    .line 174
+    iget-object v1, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->getVideoMfHdr()Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+
+    move-result-object v21
+
+    .line 167
+    invoke-static/range {v15 .. v22}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getZoomRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FIZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)F
+
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v1
+
+    .line 166
+    invoke-virtual {v14, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto/16 :goto_2
+
+    .line 139
+    :cond_2
+    new-instance v0, Lkotlin/NoWhenBranchMatchedException;
+
+    invoke-direct {v0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
+
+    throw v0
+
+    .line 183
+    :cond_3
+    new-instance v0, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
+
+    .line 184
+    invoke-direct/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getLifecycleOwner()Landroidx/lifecycle/LifecycleOwner;
+
+    move-result-object v2
+
+    .line 185
+    iget-object v3, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;
+
+    .line 188
+    sget-object v1, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    .line 189
+    iget-object v4, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
+
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->getMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
+
+    move-result v4
+
+    .line 190
+    iget-object v5, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
+
+    invoke-virtual {v5}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->getMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isBokeh()Z
+
+    move-result v5
+
+    .line 191
+    iget-object v8, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
+
+    invoke-virtual {v8}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->getVideoStabilizer()Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+
+    move-result-object v8
+
+    invoke-virtual {v8}, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->getValue()Ljava/lang/String;
+
+    move-result-object v8
+
+    .line 187
+    invoke-static {v1, v4, v5, v8}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getMinZoomRatio(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZZLjava/lang/String;)F
+
+    move-result v1
+
+    .line 186
+    invoke-static {v1}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getZoomStep(F)I
+
+    move-result v4
+
+    .line 196
+    sget-object v15, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio;->Companion:Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio$Companion;
+
+    .line 197
+    sget-object v16, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    .line 198
+    sget-object v17, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    .line 200
+    iget-object v1, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->getMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isBokeh()Z
+
+    move-result v19
+
+    .line 201
+    iget-object v1, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->getVideoStabilizer()Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+
+    move-result-object v20
+
+    .line 202
+    iget-object v1, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->VIDEO_MF_HDR:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
+
+    if-eq v1, v5, :cond_5
+
+    .line 203
+    iget-object v1, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->VIDEO_STEADY_SHOT_MF_HDR:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
+
+    if-ne v1, v5, :cond_4
+
+    goto :goto_3
+
+    .line 207
+    :cond_4
+    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+
+    goto :goto_4
+
+    .line 205
+    :cond_5
+    :goto_3
+    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_ON:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+
+    :goto_4
+    move-object/from16 v21, v1
+
+    const/16 v22, 0x0
+
+    const/high16 v18, 0x3f800000    # 1.0f
+
+    .line 196
+    invoke-virtual/range {v15 .. v22}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio$Companion;->getMaxZoomRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)F
+
+    move-result v1
+
+    .line 195
+    invoke-static {v1}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getZoomStep(F)I
+
+    move-result v5
+
+    move-object v1, v0
+
+    .line 183
+    invoke-direct/range {v1 .. v7}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;-><init>(Landroidx/lifecycle/LifecycleOwner;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;IILjava/util/List;Ljava/util/List;)V
+
+    iput-object v0, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
+
+    .line 215
+    iget-object v0, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->type:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;
+
+    sget-object v1, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$WhenMappings;->$EnumSwitchMapping$0:[I
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$SeamlessSliderType;->ordinal()I
+
+    move-result v0
+
+    aget v0, v1, v0
+
+    packed-switch v0, :pswitch_data_2
+
+    new-instance v0, Lkotlin/NoWhenBranchMatchedException;
+
+    invoke-direct {v0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
+
+    throw v0
+
+    .line 226
+    :pswitch_d
+    invoke-direct/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getBasicModeCommonUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;->isVideoBokehSeamlessLensGone()Landroidx/lifecycle/LiveData;
+
+    move-result-object v0
+
+    goto :goto_5
+
+    .line 225
+    :pswitch_e
+    invoke-direct/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getBasicModeCommonUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;->isVideoSteadyShotMfHdrSeamlessLensGone()Landroidx/lifecycle/LiveData;
+
+    move-result-object v0
+
+    goto :goto_5
+
+    .line 223
+    :pswitch_f
     invoke-direct/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getBasicModeCommonUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
 
     move-result-object v0
@@ -2669,24 +2924,60 @@
 
     move-result-object v0
 
-    goto :goto_4
+    goto :goto_5
 
-    .line 134
-    :cond_a
+    .line 221
+    :pswitch_10
     invoke-direct/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getBasicModeCommonUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;->isNormalSeamlessLensGone()Landroidx/lifecycle/LiveData;
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;->isVideoIntelligentActiveSeamlessLensGone()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
-    .line 139
-    :goto_4
+    goto :goto_5
+
+    .line 219
+    :pswitch_11
+    invoke-direct/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getBasicModeCommonUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;->isVideoSteadyShotSeamlessLensGone()Landroidx/lifecycle/LiveData;
+
+    move-result-object v0
+
+    goto :goto_5
+
+    .line 217
+    :pswitch_12
+    invoke-direct/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getBasicModeCommonUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;->isVideoSeamlessLensGone()Landroidx/lifecycle/LiveData;
+
+    move-result-object v0
+
+    goto :goto_5
+
+    .line 216
+    :pswitch_13
+    invoke-direct/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getBasicModeCommonUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;->isPhotoSeamlessLensGone()Landroidx/lifecycle/LiveData;
+
+    move-result-object v0
+
+    .line 229
+    :goto_5
     sget-object v1, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 141
-    invoke-virtual {v14}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getZoomStep()Landroidx/lifecycle/LiveData;
+    .line 231
+    invoke-virtual {v13}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getZoomStep()Landroidx/lifecycle/LiveData;
 
     move-result-object v2
 
@@ -2694,12 +2985,12 @@
 
     invoke-direct {v3}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$$ExternalSyntheticLambda0;-><init>()V
 
-    .line 139
+    .line 229
     invoke-virtual {v1, v0, v2, v3}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object v1
 
-    .line 144
+    .line 234
     invoke-direct/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getLifecycleOwner()Landroidx/lifecycle/LifecycleOwner;
 
     move-result-object v2
@@ -2716,11 +3007,11 @@
 
     invoke-virtual {v1, v2, v4}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
-    .line 150
+    .line 240
     sget-object v1, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 152
-    invoke-virtual {v14}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getZoomRatioLabel()Landroidx/lifecycle/LiveData;
+    .line 242
+    invoke-virtual {v13}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getZoomRatioLabel()Landroidx/lifecycle/LiveData;
 
     move-result-object v2
 
@@ -2728,12 +3019,12 @@
 
     invoke-direct {v3}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$$ExternalSyntheticLambda16;-><init>()V
 
-    .line 150
+    .line 240
     invoke-virtual {v1, v0, v2, v3}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
-    .line 155
+    .line 245
     invoke-direct/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getLifecycleOwner()Landroidx/lifecycle/LifecycleOwner;
 
     move-result-object v1
@@ -2750,8 +3041,8 @@
 
     invoke-virtual {v0, v1, v3}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
-    .line 164
-    invoke-virtual {v14}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getOnOpenSlider()Landroidx/lifecycle/LiveData;
+    .line 254
+    invoke-virtual {v13}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getOnOpenSlider()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
@@ -2771,8 +3062,8 @@
 
     invoke-virtual {v0, v1, v3}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
-    .line 168
-    invoke-virtual {v14}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getOnCloseSlider()Landroidx/lifecycle/LiveData;
+    .line 258
+    invoke-virtual {v13}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getOnCloseSlider()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
@@ -2792,8 +3083,8 @@
 
     invoke-virtual {v0, v1, v3}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
-    .line 172
-    invoke-virtual {v14}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getOnCloseSliderImmediately()Landroidx/lifecycle/LiveData;
+    .line 262
+    invoke-virtual {v13}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getOnCloseSliderImmediately()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
@@ -2813,8 +3104,8 @@
 
     invoke-virtual {v0, v1, v3}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
-    .line 176
-    invoke-virtual {v14}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getSelected()Landroidx/lifecycle/LiveData;
+    .line 266
+    invoke-virtual {v13}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getSelected()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
@@ -2824,7 +3115,7 @@
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$$ExternalSyntheticLambda5;
 
-    invoke-direct {v2, v14}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$$ExternalSyntheticLambda5;-><init>(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;)V
+    invoke-direct {v2, v13}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$$ExternalSyntheticLambda5;-><init>(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;)V
 
     new-instance v3, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -2834,10 +3125,10 @@
 
     invoke-virtual {v0, v1, v3}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
-    .line 180
+    .line 270
     sget-object v0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 181
+    .line 271
     invoke-direct/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getOrientationViewModel()Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
     move-result-object v1
@@ -2846,7 +3137,7 @@
 
     move-result-object v1
 
-    .line 182
+    .line 272
     invoke-direct/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getCameraStatusModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     move-result-object v2
@@ -2859,12 +3150,12 @@
 
     invoke-direct {v3}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$$ExternalSyntheticLambda6;-><init>()V
 
-    .line 180
+    .line 270
     invoke-virtual {v0, v1, v2, v3}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
-    .line 183
+    .line 273
     invoke-direct/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getLifecycleOwner()Landroidx/lifecycle/LifecycleOwner;
 
     move-result-object v1
@@ -2881,45 +3172,45 @@
 
     invoke-virtual {v0, v1, v3}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
-    .line 190
+    .line 280
     iget-object v0, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
-    if-eqz v0, :cond_b
+    if-eqz v0, :cond_6
 
     new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$onCreate$11;
 
-    invoke-direct {v1, v14}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$onCreate$11;-><init>(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;)V
+    invoke-direct {v1, v13}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$onCreate$11;-><init>(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;)V
 
     check-cast v1, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$OnZoomedListener;
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->setOnZoomedListener(Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$OnZoomedListener;)V
 
-    .line 198
-    :cond_b
+    .line 288
+    :cond_6
     iget-object v0, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
-    if-eqz v0, :cond_c
+    if-eqz v0, :cond_7
 
     new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$onCreate$12;
 
-    invoke-direct {v1, v12, v14}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$onCreate$12;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;)V
+    invoke-direct {v1, v12, v13}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$onCreate$12;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;)V
 
     check-cast v1, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$OnZoomButtonClickListener;
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->setOnZoomButtonClickListener(Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$OnZoomButtonClickListener;)V
 
-    .line 222
-    :cond_c
+    .line 315
+    :cond_7
     new-instance v0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$$ExternalSyntheticLambda8;
 
-    invoke-direct {v0, v12, v14}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$$ExternalSyntheticLambda8;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;)V
+    invoke-direct {v0, v12, v13}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$$ExternalSyntheticLambda8;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;)V
 
     iput-object v0, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->openSliderTask:Ljava/lang/Runnable;
 
-    .line 229
+    .line 322
     iget-object v0, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
-    if-eqz v0, :cond_d
+    if-eqz v0, :cond_8
 
     new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$$ExternalSyntheticLambda9;
 
@@ -2927,33 +3218,33 @@
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->setOnMainButtonClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 237
-    :cond_d
+    .line 330
+    :cond_8
     new-instance v2, Lkotlin/jvm/internal/Ref$BooleanRef;
 
     invoke-direct {v2}, Lkotlin/jvm/internal/Ref$BooleanRef;-><init>()V
 
-    .line 238
+    .line 331
     new-instance v10, Lkotlin/jvm/internal/Ref$FloatRef;
 
     invoke-direct {v10}, Lkotlin/jvm/internal/Ref$FloatRef;-><init>()V
 
-    .line 239
+    .line 332
     new-instance v11, Lkotlin/jvm/internal/Ref$FloatRef;
 
     invoke-direct {v11}, Lkotlin/jvm/internal/Ref$FloatRef;-><init>()V
 
-    .line 240
+    .line 333
     new-instance v5, Lkotlin/jvm/internal/Ref$FloatRef;
 
     invoke-direct {v5}, Lkotlin/jvm/internal/Ref$FloatRef;-><init>()V
 
-    .line 241
+    .line 334
     new-instance v6, Lkotlin/jvm/internal/Ref$FloatRef;
 
     invoke-direct {v6}, Lkotlin/jvm/internal/Ref$FloatRef;-><init>()V
 
-    .line 242
+    .line 335
     iget-object v0, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->getRoot()Landroid/view/View;
@@ -2972,40 +3263,36 @@
 
     move-result v9
 
-    .line 244
+    .line 337
     new-instance v3, Lkotlin/jvm/internal/Ref$BooleanRef;
 
     invoke-direct {v3}, Lkotlin/jvm/internal/Ref$BooleanRef;-><init>()V
 
-    .line 247
-    new-instance v7, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$$ExternalSyntheticLambda10;
+    .line 340
+    new-instance v15, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$$ExternalSyntheticLambda10;
 
-    const-wide/16 v16, 0xc8
+    const-wide/16 v7, 0xc8
 
-    move-object v0, v7
+    move-object v0, v15
 
-    move-object v1, v14
+    move-object v1, v13
 
     move-object/from16 v4, p0
 
-    move-object v13, v7
-
-    move-wide/from16 v7, v16
-
     invoke-direct/range {v0 .. v11}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$$ExternalSyntheticLambda10;-><init>(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Lkotlin/jvm/internal/Ref$BooleanRef;Lkotlin/jvm/internal/Ref$BooleanRef;Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Lkotlin/jvm/internal/Ref$FloatRef;Lkotlin/jvm/internal/Ref$FloatRef;JILkotlin/jvm/internal/Ref$FloatRef;Lkotlin/jvm/internal/Ref$FloatRef;)V
 
-    .line 376
+    .line 469
     iget-object v0, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
-    if-eqz v0, :cond_e
+    if-eqz v0, :cond_9
 
-    invoke-virtual {v0, v13}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->setControlViewTouchListener(Landroid/view/View$OnTouchListener;)V
+    invoke-virtual {v0, v15}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->setControlViewTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    .line 378
-    :cond_e
+    .line 471
+    :cond_9
     iget-object v0, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
-    if-eqz v0, :cond_f
+    if-eqz v0, :cond_a
 
     new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$onCreate$15;
 
@@ -3015,8 +3302,8 @@
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->setOnZoomStateChangeListener(Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$OnZoomStateChangeListener;)V
 
-    .line 388
-    :cond_f
+    .line 481
+    :cond_a
     invoke-direct/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     move-result-object v0
@@ -3045,7 +3332,7 @@
 
     invoke-virtual {v0, v1, v3}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
-    .line 392
+    .line 485
     invoke-direct/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getLensUiState()Ljp/co/sony/mc/camera/view/uistate/LensUiState;
 
     move-result-object v0
@@ -3074,13 +3361,13 @@
 
     invoke-virtual {v0, v1, v3}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
-    .line 400
+    .line 493
     iget-object v0, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;
 
-    .line 401
-    invoke-virtual {v0, v14}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->setSinglelensModel(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;)V
+    .line 494
+    invoke-virtual {v0, v13}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->setSinglelensModel(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;)V
 
-    .line 404
+    .line 497
     invoke-direct/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getLensUiState()Ljp/co/sony/mc/camera/view/uistate/LensUiState;
 
     move-result-object v0
@@ -3095,7 +3382,7 @@
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$$ExternalSyntheticLambda13;
 
-    invoke-direct {v2, v12, v14, v15}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$$ExternalSyntheticLambda13;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Ljava/util/ArrayList;)V
+    invoke-direct {v2, v12, v13, v14}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$$ExternalSyntheticLambda13;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Ljava/util/ArrayList;)V
 
     new-instance v3, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -3105,7 +3392,7 @@
 
     invoke-virtual {v0, v1, v3}, Ljp/co/sony/mc/camera/view/viewmodel/LiveEvent;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
-    .line 440
+    .line 544
     iget-object v0, v12, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->scrollView:Ljp/co/sony/mc/camera/view/widget/FlingLimitedHorizontalScrollView;
@@ -3114,7 +3401,7 @@
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/widget/FlingLimitedHorizontalScrollView;->setFocusable(I)V
 
-    .line 441
+    .line 545
     invoke-direct/range {p0 .. p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->getLensUiState()Ljp/co/sony/mc/camera/view/uistate/LensUiState;
 
     move-result-object v0
@@ -3141,8 +3428,8 @@
 
     return-void
 
-    .line 73
-    :cond_10
+    .line 112
+    :cond_b
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     const-string v1, "Required value was null."
@@ -3154,6 +3441,51 @@
     invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw v0
+
+    .line 571
+    :cond_c
+    new-instance v0, Ljava/util/NoSuchElementException;
+
+    const-string v1, "Collection contains no element matching the predicate."
+
+    invoke-direct {v0, v1}, Ljava/util/NoSuchElementException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+
+    :pswitch_data_1
+    .packed-switch 0x1
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_c
+    .end packed-switch
+
+    :pswitch_data_2
+    .packed-switch 0x1
+        :pswitch_13
+        :pswitch_12
+        :pswitch_11
+        :pswitch_10
+        :pswitch_f
+        :pswitch_e
+        :pswitch_d
+    .end packed-switch
 .end method
 
 .method public onDestroy(Landroidx/lifecycle/LifecycleOwner;)V
@@ -3163,7 +3495,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 455
+    .line 559
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
     if-eqz p1, :cond_0
@@ -3173,7 +3505,7 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 456
+    .line 560
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
     return-void
@@ -3186,7 +3518,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 451
+    .line 555
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
     if-eqz p0, :cond_0

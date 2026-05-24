@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/base/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/base/JdkPattern$JdkMatcher;
@@ -25,11 +28,19 @@
 # direct methods
 .method constructor <init>(Ljava/util/regex/Pattern;)V
     .locals 0
-
-    .line 27
-    invoke-direct {p0}, Lcom/google/common/base/CommonPattern;-><init>()V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "pattern"
+        }
+    .end annotation
 
     .line 28
+    invoke-direct {p0}, Lcom/google/common/base/CommonPattern;-><init>()V
+
+    .line 29
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -46,7 +57,7 @@
 .method public flags()I
     .locals 0
 
-    .line 43
+    .line 44
     iget-object p0, p0, Lcom/google/common/base/JdkPattern;->pattern:Ljava/util/regex/Pattern;
 
     invoke-virtual {p0}, Ljava/util/regex/Pattern;->flags()I
@@ -58,8 +69,16 @@
 
 .method public matcher(Ljava/lang/CharSequence;)Lcom/google/common/base/CommonMatcher;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "t"
+        }
+    .end annotation
 
-    .line 33
+    .line 34
     new-instance v0, Lcom/google/common/base/JdkPattern$JdkMatcher;
 
     iget-object p0, p0, Lcom/google/common/base/JdkPattern;->pattern:Ljava/util/regex/Pattern;
@@ -76,7 +95,7 @@
 .method public pattern()Ljava/lang/String;
     .locals 0
 
-    .line 38
+    .line 39
     iget-object p0, p0, Lcom/google/common/base/JdkPattern;->pattern:Ljava/util/regex/Pattern;
 
     invoke-virtual {p0}, Ljava/util/regex/Pattern;->pattern()Ljava/lang/String;
@@ -89,7 +108,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 48
+    .line 49
     iget-object p0, p0, Lcom/google/common/base/JdkPattern;->pattern:Ljava/util/regex/Pattern;
 
     invoke-virtual {p0}, Ljava/util/regex/Pattern;->toString()Ljava/lang/String;

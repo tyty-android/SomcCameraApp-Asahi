@@ -107,15 +107,15 @@
     .line 22
     new-instance v6, Ljp/co/sony/mc/camera/configuration/parameters/SelfTimer;
 
-    const v4, 0x7f1103f3
+    const v4, 0x7f11043e
 
-    const v5, 0x7f0802ba
+    const v5, 0x7f080340
 
     const-string v1, "OFF"
 
     const/4 v2, 0x0
 
-    const v3, 0x7f1103f3
+    const v3, 0x7f11043e
 
     move-object v0, v6
 
@@ -126,15 +126,15 @@
     .line 27
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/SelfTimer;
 
-    const v11, 0x7f1103f0
+    const v11, 0x7f11043b
 
-    const v12, 0x7f0802a9
+    const v12, 0x7f08032f
 
     const-string v8, "SELF_TIMER_3SEC"
 
     const/4 v9, 0x1
 
-    const v10, 0x7f1101d3
+    const v10, 0x7f11021f
 
     move-object v7, v0
 
@@ -145,15 +145,15 @@
     .line 32
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/SelfTimer;
 
-    const v5, 0x7f1103ef
+    const v5, 0x7f11043a
 
-    const v6, 0x7f0802a6
+    const v6, 0x7f08032c
 
     const-string v2, "SELF_TIMER_10SEC"
 
     const/4 v3, 0x2
 
-    const v4, 0x7f1101d2
+    const v4, 0x7f11021e
 
     move-object v1, v0
 

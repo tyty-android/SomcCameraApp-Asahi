@@ -27,21 +27,29 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 337
+    .line 311
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 p1, 0x0
 
-    .line 338
+    .line 312
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;->mIsCameraEvicted:Z
 
-    .line 339
+    .line 313
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;->mIsCameraError:Z
 
-    .line 340
+    .line 314
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;->mIsOtherError:Z
 
     return-void
@@ -58,7 +66,7 @@
 
     const/4 v1, 0x1
 
-    .line 355
+    .line 329
     :try_start_0
     new-array v2, v1, [Ljava/lang/String;
 
@@ -106,7 +114,7 @@
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
 
-    .line 359
+    .line 333
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;->mIsCameraEvicted:Z
 
     if-nez v0, :cond_1
@@ -147,13 +155,13 @@
 
     const/4 v0, 0x1
 
-    .line 347
+    .line 321
     :try_start_0
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;->mIsCameraError:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 348
+    .line 322
     monitor-exit p0
 
     return-void
@@ -173,13 +181,13 @@
 
     const/4 v0, 0x1
 
-    .line 343
+    .line 317
     :try_start_0
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;->mIsCameraEvicted:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 344
+    .line 318
     monitor-exit p0
 
     return-void
@@ -199,13 +207,13 @@
 
     const/4 v0, 0x1
 
-    .line 351
+    .line 325
     :try_start_0
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;->mIsOtherError:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 352
+    .line 326
     monitor-exit p0
 
     return-void

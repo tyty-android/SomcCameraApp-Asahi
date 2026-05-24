@@ -38,6 +38,15 @@
 # direct methods
 .method private constructor <init>(Ljava/lang/Iterable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "iterable"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -46,10 +55,10 @@
         }
     .end annotation
 
-    .line 92
+    .line 96
     invoke-direct {p0}, Lcom/google/common/collect/FluentIterable;-><init>()V
 
-    .line 93
+    .line 97
     iput-object p1, p0, Lcom/google/common/collect/Iterables$UnmodifiableIterable;->iterable:Ljava/lang/Iterable;
 
     return-void
@@ -58,7 +67,7 @@
 .method synthetic constructor <init>(Ljava/lang/Iterable;Lcom/google/common/collect/Iterables$1;)V
     .locals 0
 
-    .line 89
+    .line 92
     invoke-direct {p0, p1}, Lcom/google/common/collect/Iterables$UnmodifiableIterable;-><init>(Ljava/lang/Iterable;)V
 
     return-void
@@ -76,7 +85,7 @@
         }
     .end annotation
 
-    .line 98
+    .line 102
     iget-object p0, p0, Lcom/google/common/collect/Iterables$UnmodifiableIterable;->iterable:Ljava/lang/Iterable;
 
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -93,10 +102,10 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 103
+    .line 107
     iget-object p0, p0, Lcom/google/common/collect/Iterables$UnmodifiableIterable;->iterable:Ljava/lang/Iterable;
 
-    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-interface {p0}, Ljava/lang/Iterable;->toString()Ljava/lang/String;
 
     move-result-object p0
 

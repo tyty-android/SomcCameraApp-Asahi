@@ -30,7 +30,7 @@
 .method static constructor <clinit>()V
     .locals 10
 
-    .line 2517
+    .line 2512
     invoke-static {}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;->values()[Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
     move-result-object v0
@@ -166,7 +166,7 @@
     :try_end_7
     .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
 
-    .line 1881
+    .line 1886
     :catch_7
     invoke-static {}, Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusState;->values()[Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusState;
 
@@ -245,7 +245,7 @@
     :try_end_c
     .catch Ljava/lang/NoSuchFieldError; {:try_start_c .. :try_end_c} :catch_c
 
-    .line 1715
+    .line 1720
     :catch_c
     invoke-static {}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;->values()[Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
@@ -478,7 +478,7 @@
     :try_end_1b
     .catch Ljava/lang/NoSuchFieldError; {:try_start_1b .. :try_end_1b} :catch_1b
 
-    .line 566
+    .line 571
     :catch_1b
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;->values()[Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;
 
@@ -529,7 +529,7 @@
     :try_end_1e
     .catch Ljava/lang/NoSuchFieldError; {:try_start_1e .. :try_end_1e} :catch_1e
 
-    .line 176
+    .line 178
     :catch_1e
     invoke-static {}, Ljp/co/sony/mc/camera/view/widget/FocusControlButton$ButtonType;->values()[Ljp/co/sony/mc/camera/view/widget/FocusControlButton$ButtonType;
 

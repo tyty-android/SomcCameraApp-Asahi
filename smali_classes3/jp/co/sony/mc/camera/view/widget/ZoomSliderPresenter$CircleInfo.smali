@@ -69,13 +69,13 @@
 .method public constructor <init>(II)V
     .locals 0
 
-    .line 884
+    .line 974
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 885
+    .line 975
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$CircleInfo;->total:I
 
-    .line 886
+    .line 976
     iput p2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$CircleInfo;->activeIndex:I
 
     return-void
@@ -178,7 +178,7 @@
 .method public final getActiveIndex()I
     .locals 0
 
-    .line 886
+    .line 976
     iget p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$CircleInfo;->activeIndex:I
 
     return p0
@@ -187,7 +187,7 @@
 .method public final getTotal()I
     .locals 0
 
-    .line 885
+    .line 975
     iget p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$CircleInfo;->total:I
 
     return p0

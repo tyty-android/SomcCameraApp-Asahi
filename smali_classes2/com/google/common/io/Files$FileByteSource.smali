@@ -21,11 +21,19 @@
 # direct methods
 .method private constructor <init>(Ljava/io/File;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "file"
+        }
+    .end annotation
 
-    .line 124
+    .line 128
     invoke-direct {p0}, Lcom/google/common/io/ByteSource;-><init>()V
 
-    .line 125
+    .line 129
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -40,7 +48,7 @@
 .method synthetic constructor <init>(Ljava/io/File;Lcom/google/common/io/Files$1;)V
     .locals 0
 
-    .line 120
+    .line 122
     invoke-direct {p0, p1}, Lcom/google/common/io/Files$FileByteSource;-><init>(Ljava/io/File;)V
 
     return-void
@@ -56,7 +64,7 @@
         }
     .end annotation
 
-    .line 130
+    .line 134
     new-instance v0, Ljava/io/FileInputStream;
 
     iget-object p0, p0, Lcom/google/common/io/Files$FileByteSource;->file:Ljava/io/File;
@@ -74,7 +82,7 @@
         }
     .end annotation
 
-    .line 120
+    .line 122
     invoke-virtual {p0}, Lcom/google/common/io/Files$FileByteSource;->openStream()Ljava/io/FileInputStream;
 
     move-result-object p0
@@ -90,12 +98,12 @@
         }
     .end annotation
 
-    .line 152
+    .line 156
     invoke-static {}, Lcom/google/common/io/Closer;->create()Lcom/google/common/io/Closer;
 
     move-result-object v0
 
-    .line 154
+    .line 158
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/io/Files$FileByteSource;->openStream()Ljava/io/FileInputStream;
 
@@ -107,7 +115,7 @@
 
     check-cast p0, Ljava/io/FileInputStream;
 
-    .line 155
+    .line 159
     invoke-virtual {p0}, Ljava/io/FileInputStream;->getChannel()Ljava/nio/channels/FileChannel;
 
     move-result-object v1
@@ -122,7 +130,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 159
+    .line 163
     invoke-virtual {v0}, Lcom/google/common/io/Closer;->close()V
 
     return-object p0
@@ -130,7 +138,7 @@
     :catchall_0
     move-exception p0
 
-    .line 157
+    .line 161
     :try_start_1
     invoke-virtual {v0, p0}, Lcom/google/common/io/Closer;->rethrow(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
 
@@ -143,10 +151,10 @@
     :catchall_1
     move-exception p0
 
-    .line 159
+    .line 163
     invoke-virtual {v0}, Lcom/google/common/io/Closer;->close()V
 
-    .line 160
+    .line 164
     throw p0
 .end method
 
@@ -158,7 +166,7 @@
         }
     .end annotation
 
-    .line 144
+    .line 148
     iget-object v0, p0, Lcom/google/common/io/Files$FileByteSource;->file:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->isFile()Z
@@ -167,7 +175,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 147
+    .line 151
     iget-object p0, p0, Lcom/google/common/io/Files$FileByteSource;->file:Ljava/io/File;
 
     invoke-virtual {p0}, Ljava/io/File;->length()J
@@ -176,7 +184,7 @@
 
     return-wide v0
 
-    .line 145
+    .line 149
     :cond_0
     new-instance v0, Ljava/io/FileNotFoundException;
 
@@ -202,7 +210,7 @@
         }
     .end annotation
 
-    .line 135
+    .line 139
     iget-object v0, p0, Lcom/google/common/io/Files$FileByteSource;->file:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->isFile()Z
@@ -211,7 +219,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 136
+    .line 140
     iget-object p0, p0, Lcom/google/common/io/Files$FileByteSource;->file:Ljava/io/File;
 
     invoke-virtual {p0}, Ljava/io/File;->length()J
@@ -228,7 +236,7 @@
 
     return-object p0
 
-    .line 138
+    .line 142
     :cond_0
     invoke-static {}, Lcom/google/common/base/Optional;->absent()Lcom/google/common/base/Optional;
 
@@ -240,34 +248,16 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 165
+    .line 169
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "Files.asByteSource("
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
     iget-object p0, p0, Lcom/google/common/io/Files$FileByteSource;->file:Ljava/io/File;
 
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, 0x14
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v0, "Files.asByteSource("
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 

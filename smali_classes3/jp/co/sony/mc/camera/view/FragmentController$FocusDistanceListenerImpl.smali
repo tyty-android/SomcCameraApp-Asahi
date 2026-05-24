@@ -21,7 +21,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 7887
+    .line 6771
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -39,13 +39,21 @@
 # virtual methods
 .method public onFocusDistanceChanged(F)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "focusDistance"
+        }
+    .end annotation
 
-    .line 7892
+    .line 6776
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p0
 
-    .line 7893
+    .line 6777
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -54,14 +62,14 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
-    .line 7894
+    .line 6778
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->isAf()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 7895
+    .line 6779
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_DISTANCE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -80,7 +88,7 @@
 
     if-nez v0, :cond_0
 
-    .line 7896
+    .line 6780
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_DISTANCE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;

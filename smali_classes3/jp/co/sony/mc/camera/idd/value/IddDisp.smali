@@ -62,7 +62,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 143
+    .line 142
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddDisp;->value:Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
@@ -75,7 +75,7 @@
 .method public final getValue()Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
     .locals 0
 
-    .line 143
+    .line 142
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddDisp;->value:Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
 
     return-object p0
@@ -84,7 +84,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 144
+    .line 143
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddDisp;->value:Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
 
     sget-object v0, Ljp/co/sony/mc/camera/idd/value/IddDisp$WhenMappings;->$EnumSwitchMapping$0:[I
@@ -107,12 +107,12 @@
 
     if-ne p0, v0, :cond_0
 
-    .line 147
+    .line 146
     const-string p0, "CUSTOM"
 
     goto :goto_0
 
-    .line 144
+    .line 143
     :cond_0
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
@@ -120,13 +120,13 @@
 
     throw p0
 
-    .line 146
+    .line 145
     :cond_1
     const-string p0, "OFF"
 
     goto :goto_0
 
-    .line 145
+    .line 144
     :cond_2
     const-string p0, "HEADER_ONLY"
 

@@ -16,9 +16,25 @@
 
 # virtual methods
 .method public abstract onHintTextHidden(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "content"
+        }
+    .end annotation
 .end method
 
 .method public abstract onHintTextShown(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "content"
+        }
+    .end annotation
 .end method
 
 .method public abstract onStateChanged()V

@@ -28,20 +28,6 @@
 .end annotation
 
 
-# static fields
-.field private static final TRANSPOSE_CELL:Lcom/google/common/base/Function;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/google/common/base/Function<",
-            "Lcom/google/common/collect/Table$Cell<",
-            "***>;",
-            "Lcom/google/common/collect/Table$Cell<",
-            "***>;>;"
-        }
-    .end annotation
-.end field
-
-
 # instance fields
 .field final original:Lcom/google/common/collect/Table;
     .annotation system Ldalvik/annotation/Signature;
@@ -54,21 +40,17 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    .line 235
-    new-instance v0, Lcom/google/common/collect/Tables$TransposeTable$1;
-
-    invoke-direct {v0}, Lcom/google/common/collect/Tables$TransposeTable$1;-><init>()V
-
-    sput-object v0, Lcom/google/common/collect/Tables$TransposeTable;->TRANSPOSE_CELL:Lcom/google/common/base/Function;
-
-    return-void
-.end method
-
 .method constructor <init>(Lcom/google/common/collect/Table;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "original"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -77,10 +59,10 @@
         }
     .end annotation
 
-    .line 145
+    .line 227
     invoke-direct {p0}, Lcom/google/common/collect/AbstractTable;-><init>()V
 
-    .line 146
+    .line 228
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -90,6 +72,17 @@
     iput-object p1, p0, Lcom/google/common/collect/Tables$TransposeTable;->original:Lcom/google/common/collect/Table;
 
     return-void
+.end method
+
+.method static synthetic lambda$cellIterator$0(Lcom/google/common/collect/Table$Cell;)Lcom/google/common/collect/Table$Cell;
+    .locals 0
+
+    .line 324
+    invoke-static {p0}, Lcom/google/common/collect/Tables;->access$000(Lcom/google/common/collect/Table$Cell;)Lcom/google/common/collect/Table$Cell;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
 
@@ -105,7 +98,7 @@
         }
     .end annotation
 
-    .line 246
+    .line 324
     iget-object p0, p0, Lcom/google/common/collect/Tables$TransposeTable;->original:Lcom/google/common/collect/Table;
 
     invoke-interface {p0}, Lcom/google/common/collect/Table;->cellSet()Ljava/util/Set;
@@ -116,7 +109,9 @@
 
     move-result-object p0
 
-    sget-object v0, Lcom/google/common/collect/Tables$TransposeTable;->TRANSPOSE_CELL:Lcom/google/common/base/Function;
+    new-instance v0, Lcom/google/common/collect/Tables$TransposeTable$$ExternalSyntheticLambda0;
+
+    invoke-direct {v0}, Lcom/google/common/collect/Tables$TransposeTable$$ExternalSyntheticLambda0;-><init>()V
 
     invoke-static {p0, v0}, Lcom/google/common/collect/Iterators;->transform(Ljava/util/Iterator;Lcom/google/common/base/Function;)Ljava/util/Iterator;
 
@@ -128,7 +123,7 @@
 .method public clear()V
     .locals 0
 
-    .line 151
+    .line 233
     iget-object p0, p0, Lcom/google/common/collect/Tables$TransposeTable;->original:Lcom/google/common/collect/Table;
 
     invoke-interface {p0}, Lcom/google/common/collect/Table;->clear()V
@@ -138,6 +133,19 @@
 
 .method public column(Ljava/lang/Object;)Ljava/util/Map;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "columnKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TR;)",
@@ -146,7 +154,7 @@
         }
     .end annotation
 
-    .line 156
+    .line 238
     iget-object p0, p0, Lcom/google/common/collect/Tables$TransposeTable;->original:Lcom/google/common/collect/Table;
 
     invoke-interface {p0, p1}, Lcom/google/common/collect/Table;->row(Ljava/lang/Object;)Ljava/util/Map;
@@ -166,7 +174,7 @@
         }
     .end annotation
 
-    .line 161
+    .line 243
     iget-object p0, p0, Lcom/google/common/collect/Tables$TransposeTable;->original:Lcom/google/common/collect/Table;
 
     invoke-interface {p0}, Lcom/google/common/collect/Table;->rowKeySet()Ljava/util/Set;
@@ -188,7 +196,7 @@
         }
     .end annotation
 
-    .line 166
+    .line 248
     iget-object p0, p0, Lcom/google/common/collect/Tables$TransposeTable;->original:Lcom/google/common/collect/Table;
 
     invoke-interface {p0}, Lcom/google/common/collect/Table;->rowMap()Ljava/util/Map;
@@ -201,15 +209,25 @@
 .method public contains(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "rowKey",
+            "columnKey"
+        }
+    .end annotation
 
-    .line 171
+    .line 253
     iget-object p0, p0, Lcom/google/common/collect/Tables$TransposeTable;->original:Lcom/google/common/collect/Table;
 
     invoke-interface {p0, p2, p1}, Lcom/google/common/collect/Table;->contains(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -222,11 +240,19 @@
 .method public containsColumn(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "columnKey"
+        }
+    .end annotation
 
-    .line 176
+    .line 258
     iget-object p0, p0, Lcom/google/common/collect/Tables$TransposeTable;->original:Lcom/google/common/collect/Table;
 
     invoke-interface {p0, p1}, Lcom/google/common/collect/Table;->containsRow(Ljava/lang/Object;)Z
@@ -239,11 +265,19 @@
 .method public containsRow(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "rowKey"
+        }
+    .end annotation
 
-    .line 181
+    .line 263
     iget-object p0, p0, Lcom/google/common/collect/Tables$TransposeTable;->original:Lcom/google/common/collect/Table;
 
     invoke-interface {p0, p1}, Lcom/google/common/collect/Table;->containsColumn(Ljava/lang/Object;)Z
@@ -256,11 +290,19 @@
 .method public containsValue(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 186
+    .line 268
     iget-object p0, p0, Lcom/google/common/collect/Tables$TransposeTable;->original:Lcom/google/common/collect/Table;
 
     invoke-interface {p0, p1}, Lcom/google/common/collect/Table;->containsValue(Ljava/lang/Object;)Z
@@ -273,13 +315,24 @@
 .method public get(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "rowKey",
+            "columnKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -289,7 +342,10 @@
         }
     .end annotation
 
-    .line 191
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 274
     iget-object p0, p0, Lcom/google/common/collect/Tables$TransposeTable;->original:Lcom/google/common/collect/Table;
 
     invoke-interface {p0, p2, p1}, Lcom/google/common/collect/Table;->get(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -301,13 +357,41 @@
 
 .method public put(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .param p3    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "rowKey",
+            "columnKey",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TC;TR;TV;)TV;"
         }
     .end annotation
 
-    .line 196
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 283
     iget-object p0, p0, Lcom/google/common/collect/Tables$TransposeTable;->original:Lcom/google/common/collect/Table;
 
     invoke-interface {p0, p2, p1, p3}, Lcom/google/common/collect/Table;->put(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -319,6 +403,15 @@
 
 .method public putAll(Lcom/google/common/collect/Table;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "table"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -327,7 +420,7 @@
         }
     .end annotation
 
-    .line 201
+    .line 288
     iget-object p0, p0, Lcom/google/common/collect/Tables$TransposeTable;->original:Lcom/google/common/collect/Table;
 
     invoke-static {p1}, Lcom/google/common/collect/Tables;->transpose(Lcom/google/common/collect/Table;)Lcom/google/common/collect/Table;
@@ -342,13 +435,24 @@
 .method public remove(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "rowKey",
+            "columnKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -358,7 +462,10 @@
         }
     .end annotation
 
-    .line 206
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 294
     iget-object p0, p0, Lcom/google/common/collect/Tables$TransposeTable;->original:Lcom/google/common/collect/Table;
 
     invoke-interface {p0, p2, p1}, Lcom/google/common/collect/Table;->remove(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -370,6 +477,19 @@
 
 .method public row(Ljava/lang/Object;)Ljava/util/Map;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "rowKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TC;)",
@@ -378,7 +498,7 @@
         }
     .end annotation
 
-    .line 211
+    .line 299
     iget-object p0, p0, Lcom/google/common/collect/Tables$TransposeTable;->original:Lcom/google/common/collect/Table;
 
     invoke-interface {p0, p1}, Lcom/google/common/collect/Table;->column(Ljava/lang/Object;)Ljava/util/Map;
@@ -398,7 +518,7 @@
         }
     .end annotation
 
-    .line 216
+    .line 304
     iget-object p0, p0, Lcom/google/common/collect/Tables$TransposeTable;->original:Lcom/google/common/collect/Table;
 
     invoke-interface {p0}, Lcom/google/common/collect/Table;->columnKeySet()Ljava/util/Set;
@@ -420,7 +540,7 @@
         }
     .end annotation
 
-    .line 221
+    .line 309
     iget-object p0, p0, Lcom/google/common/collect/Tables$TransposeTable;->original:Lcom/google/common/collect/Table;
 
     invoke-interface {p0}, Lcom/google/common/collect/Table;->columnMap()Ljava/util/Map;
@@ -433,7 +553,7 @@
 .method public size()I
     .locals 0
 
-    .line 226
+    .line 314
     iget-object p0, p0, Lcom/google/common/collect/Tables$TransposeTable;->original:Lcom/google/common/collect/Table;
 
     invoke-interface {p0}, Lcom/google/common/collect/Table;->size()I
@@ -453,7 +573,7 @@
         }
     .end annotation
 
-    .line 231
+    .line 319
     iget-object p0, p0, Lcom/google/common/collect/Tables$TransposeTable;->original:Lcom/google/common/collect/Table;
 
     invoke-interface {p0}, Lcom/google/common/collect/Table;->values()Ljava/util/Collection;

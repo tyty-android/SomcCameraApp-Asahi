@@ -16,7 +16,25 @@
 
 # virtual methods
 .method public abstract onFocusAreaUpdate(Z[Landroid/hardware/camera2/params/MeteringRectangle;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "isAfSuccess",
+            "focusRegions"
+        }
+    .end annotation
 .end method
 
 .method public abstract onFocusStateChanged(Z)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isAfSuccess"
+        }
+    .end annotation
 .end method

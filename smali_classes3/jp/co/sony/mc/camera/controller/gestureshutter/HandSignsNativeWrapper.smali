@@ -104,19 +104,95 @@
 .end method
 
 .method private native nativeDetect(JIILjava/nio/ByteBuffer;ILjp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector$DetectResult;)Z
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "handle",
+            "width",
+            "height",
+            "yuvBuffer",
+            "lRoll",
+            "result"
+        }
+    .end annotation
 .end method
 
 .method private native nativeDetect(JII[BILjp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector$DetectResult;)Z
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "handle",
+            "width",
+            "height",
+            "yuvImage",
+            "lRoll",
+            "result"
+        }
+    .end annotation
 .end method
 
 .method private native nativeRelease(J)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "handle"
+        }
+    .end annotation
 .end method
 
 .method private static final native nativeShrinkByteArrayYvu420Sp([BII[BI)I
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "srcYvu",
+            "frameWidth",
+            "frameHeight",
+            "dstYvu",
+            "sampleSize"
+        }
+    .end annotation
 .end method
 
 .method public static final shrinkYvu420Sp([BII[BLjp/co/sony/mc/camera/controller/gestureshutter/HandSignsNativeWrapper$ShrinkRatio;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "srcYvu",
+            "frameWidth",
+            "frameHeight",
+            "dstYvu",
+            "shrinkRatio"
+        }
+    .end annotation
 
     .line 103
     iget p4, p4, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsNativeWrapper$ShrinkRatio;->shrinkSize:I
@@ -156,6 +232,22 @@
 # virtual methods
 .method public declared-synchronized detect(IILjava/nio/ByteBuffer;ILjp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector$DetectResult;)Z
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "width",
+            "height",
+            "yuvBuffer",
+            "lRoll",
+            "result"
+        }
+    .end annotation
 
     monitor-enter p0
 
@@ -210,6 +302,22 @@
 
 .method public declared-synchronized detect(II[BILjp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector$DetectResult;)Z
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "width",
+            "height",
+            "yuvImage",
+            "lRoll",
+            "result"
+        }
+    .end annotation
 
     monitor-enter p0
 

@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/graph/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<E:",
@@ -31,6 +34,17 @@
 # direct methods
 .method constructor <init>(Ljava/util/Map;Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "nodeToEdgeMap",
+            "targetNode"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -41,10 +55,10 @@
         }
     .end annotation
 
-    .line 42
+    .line 43
     invoke-direct {p0}, Ljava/util/AbstractSet;-><init>()V
 
-    .line 43
+    .line 44
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -53,7 +67,7 @@
 
     iput-object p1, p0, Lcom/google/common/graph/EdgesConnecting;->nodeToOutEdge:Ljava/util/Map;
 
-    .line 44
+    .line 45
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -71,10 +85,10 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
-    .line 68
+    .line 69
     iget-object v0, p0, Lcom/google/common/graph/EdgesConnecting;->nodeToOutEdge:Ljava/util/Map;
 
     iget-object p0, p0, Lcom/google/common/graph/EdgesConnecting;->targetNode:Ljava/lang/Object;
@@ -91,18 +105,26 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "edge"
+        }
+    .end annotation
 
-    .line 62
+    .line 63
     invoke-direct {p0}, Lcom/google/common/graph/EdgesConnecting;->getConnectingEdge()Ljava/lang/Object;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 63
+    .line 64
     invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -130,14 +152,14 @@
         }
     .end annotation
 
-    .line 49
+    .line 50
     invoke-direct {p0}, Lcom/google/common/graph/EdgesConnecting;->getConnectingEdge()Ljava/lang/Object;
 
     move-result-object p0
 
     if-nez p0, :cond_0
 
-    .line 51
+    .line 52
     invoke-static {}, Lcom/google/common/collect/ImmutableSet;->of()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object p0
@@ -148,7 +170,7 @@
 
     goto :goto_0
 
-    .line 52
+    .line 53
     :cond_0
     invoke-static {p0}, Lcom/google/common/collect/Iterators;->singletonIterator(Ljava/lang/Object;)Lcom/google/common/collect/UnmodifiableIterator;
 
@@ -172,7 +194,7 @@
 .method public size()I
     .locals 0
 
-    .line 57
+    .line 58
     invoke-direct {p0}, Lcom/google/common/graph/EdgesConnecting;->getConnectingEdge()Ljava/lang/Object;
 
     move-result-object p0

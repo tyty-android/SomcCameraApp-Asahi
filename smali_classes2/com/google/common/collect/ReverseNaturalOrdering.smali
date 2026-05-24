@@ -7,11 +7,14 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/google/common/collect/Ordering<",
-        "Ljava/lang/Comparable;",
-        ">;",
+        "Ljava/lang/Comparable<",
+        "*>;>;",
         "Ljava/io/Serializable;"
     }
 .end annotation
@@ -27,7 +30,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 29
+    .line 30
     new-instance v0, Lcom/google/common/collect/ReverseNaturalOrdering;
 
     invoke-direct {v0}, Lcom/google/common/collect/ReverseNaturalOrdering;-><init>()V
@@ -40,7 +43,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 98
+    .line 99
     invoke-direct {p0}, Lcom/google/common/collect/Ordering;-><init>()V
 
     return-void
@@ -49,7 +52,7 @@
 .method private readResolve()Ljava/lang/Object;
     .locals 0
 
-    .line 90
+    .line 91
     sget-object p0, Lcom/google/common/collect/ReverseNaturalOrdering;->INSTANCE:Lcom/google/common/collect/ReverseNaturalOrdering;
 
     return-object p0
@@ -59,8 +62,28 @@
 # virtual methods
 .method public compare(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "left",
+            "right"
+        }
+    .end annotation
 
-    .line 33
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Comparable<",
+            "*>;",
+            "Ljava/lang/Comparable<",
+            "*>;)I"
+        }
+    .end annotation
+
+    .line 34
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     if-ne p1, p2, :cond_0
@@ -69,7 +92,7 @@
 
     return p0
 
-    .line 38
+    .line 39
     :cond_0
     invoke-interface {p2, p1}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
 
@@ -80,6 +103,16 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "left",
+            "right"
+        }
+    .end annotation
 
     .line 26
     check-cast p1, Ljava/lang/Comparable;
@@ -95,15 +128,26 @@
 
 .method public max(Ljava/lang/Comparable;Ljava/lang/Comparable;)Ljava/lang/Comparable;
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<E::",
-            "Ljava/lang/Comparable;",
-            ">(TE;TE;)TE;"
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b"
         }
     .end annotation
 
-    .line 70
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<E::",
+            "Ljava/lang/Comparable<",
+            "*>;>(TE;TE;)TE;"
+        }
+    .end annotation
+
+    .line 71
     sget-object p0, Lcom/google/common/collect/NaturalOrdering;->INSTANCE:Lcom/google/common/collect/NaturalOrdering;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/NaturalOrdering;->min(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -117,15 +161,30 @@
 
 .method public varargs max(Ljava/lang/Comparable;Ljava/lang/Comparable;Ljava/lang/Comparable;[Ljava/lang/Comparable;)Ljava/lang/Comparable;
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<E::",
-            "Ljava/lang/Comparable;",
-            ">(TE;TE;TE;[TE;)TE;"
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b",
+            "c",
+            "rest"
         }
     .end annotation
 
-    .line 75
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<E::",
+            "Ljava/lang/Comparable<",
+            "*>;>(TE;TE;TE;[TE;)TE;"
+        }
+    .end annotation
+
+    .line 76
     sget-object p0, Lcom/google/common/collect/NaturalOrdering;->INSTANCE:Lcom/google/common/collect/NaturalOrdering;
 
     invoke-virtual {p0, p1, p2, p3, p4}, Lcom/google/common/collect/NaturalOrdering;->min(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
@@ -139,17 +198,26 @@
 
 .method public max(Ljava/lang/Iterable;)Ljava/lang/Comparable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "iterable"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E::",
-            "Ljava/lang/Comparable;",
-            ">(",
+            "Ljava/lang/Comparable<",
+            "*>;>(",
             "Ljava/lang/Iterable<",
             "TE;>;)TE;"
         }
     .end annotation
 
-    .line 85
+    .line 86
     sget-object p0, Lcom/google/common/collect/NaturalOrdering;->INSTANCE:Lcom/google/common/collect/NaturalOrdering;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/NaturalOrdering;->min(Ljava/lang/Iterable;)Ljava/lang/Object;
@@ -163,17 +231,26 @@
 
 .method public max(Ljava/util/Iterator;)Ljava/lang/Comparable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "iterator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E::",
-            "Ljava/lang/Comparable;",
-            ">(",
+            "Ljava/lang/Comparable<",
+            "*>;>(",
             "Ljava/util/Iterator<",
             "TE;>;)TE;"
         }
     .end annotation
 
-    .line 80
+    .line 81
     sget-object p0, Lcom/google/common/collect/NaturalOrdering;->INSTANCE:Lcom/google/common/collect/NaturalOrdering;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/NaturalOrdering;->min(Ljava/util/Iterator;)Ljava/lang/Object;
@@ -187,6 +264,14 @@
 
 .method public bridge synthetic max(Ljava/lang/Iterable;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "iterable"
+        }
+    .end annotation
 
     .line 26
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ReverseNaturalOrdering;->max(Ljava/lang/Iterable;)Ljava/lang/Comparable;
@@ -198,6 +283,16 @@
 
 .method public bridge synthetic max(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "a",
+            "b"
+        }
+    .end annotation
 
     .line 26
     check-cast p1, Ljava/lang/Comparable;
@@ -213,6 +308,20 @@
 
 .method public bridge synthetic max(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x1000,
+            0x1000
+        }
+        names = {
+            "a",
+            "b",
+            "c",
+            "rest"
+        }
+    .end annotation
 
     .line 26
     check-cast p1, Ljava/lang/Comparable;
@@ -232,6 +341,14 @@
 
 .method public bridge synthetic max(Ljava/util/Iterator;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "iterator"
+        }
+    .end annotation
 
     .line 26
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ReverseNaturalOrdering;->max(Ljava/util/Iterator;)Ljava/lang/Comparable;
@@ -243,15 +360,26 @@
 
 .method public min(Ljava/lang/Comparable;Ljava/lang/Comparable;)Ljava/lang/Comparable;
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<E::",
-            "Ljava/lang/Comparable;",
-            ">(TE;TE;)TE;"
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b"
         }
     .end annotation
 
-    .line 50
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<E::",
+            "Ljava/lang/Comparable<",
+            "*>;>(TE;TE;)TE;"
+        }
+    .end annotation
+
+    .line 51
     sget-object p0, Lcom/google/common/collect/NaturalOrdering;->INSTANCE:Lcom/google/common/collect/NaturalOrdering;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/NaturalOrdering;->max(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -265,15 +393,30 @@
 
 .method public varargs min(Ljava/lang/Comparable;Ljava/lang/Comparable;Ljava/lang/Comparable;[Ljava/lang/Comparable;)Ljava/lang/Comparable;
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<E::",
-            "Ljava/lang/Comparable;",
-            ">(TE;TE;TE;[TE;)TE;"
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b",
+            "c",
+            "rest"
         }
     .end annotation
 
-    .line 55
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<E::",
+            "Ljava/lang/Comparable<",
+            "*>;>(TE;TE;TE;[TE;)TE;"
+        }
+    .end annotation
+
+    .line 56
     sget-object p0, Lcom/google/common/collect/NaturalOrdering;->INSTANCE:Lcom/google/common/collect/NaturalOrdering;
 
     invoke-virtual {p0, p1, p2, p3, p4}, Lcom/google/common/collect/NaturalOrdering;->max(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
@@ -287,17 +430,26 @@
 
 .method public min(Ljava/lang/Iterable;)Ljava/lang/Comparable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "iterable"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E::",
-            "Ljava/lang/Comparable;",
-            ">(",
+            "Ljava/lang/Comparable<",
+            "*>;>(",
             "Ljava/lang/Iterable<",
             "TE;>;)TE;"
         }
     .end annotation
 
-    .line 65
+    .line 66
     sget-object p0, Lcom/google/common/collect/NaturalOrdering;->INSTANCE:Lcom/google/common/collect/NaturalOrdering;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/NaturalOrdering;->max(Ljava/lang/Iterable;)Ljava/lang/Object;
@@ -311,17 +463,26 @@
 
 .method public min(Ljava/util/Iterator;)Ljava/lang/Comparable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "iterator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E::",
-            "Ljava/lang/Comparable;",
-            ">(",
+            "Ljava/lang/Comparable<",
+            "*>;>(",
             "Ljava/util/Iterator<",
             "TE;>;)TE;"
         }
     .end annotation
 
-    .line 60
+    .line 61
     sget-object p0, Lcom/google/common/collect/NaturalOrdering;->INSTANCE:Lcom/google/common/collect/NaturalOrdering;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/NaturalOrdering;->max(Ljava/util/Iterator;)Ljava/lang/Object;
@@ -335,6 +496,14 @@
 
 .method public bridge synthetic min(Ljava/lang/Iterable;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "iterable"
+        }
+    .end annotation
 
     .line 26
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ReverseNaturalOrdering;->min(Ljava/lang/Iterable;)Ljava/lang/Comparable;
@@ -346,6 +515,16 @@
 
 .method public bridge synthetic min(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "a",
+            "b"
+        }
+    .end annotation
 
     .line 26
     check-cast p1, Ljava/lang/Comparable;
@@ -361,6 +540,20 @@
 
 .method public bridge synthetic min(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x1000,
+            0x1000
+        }
+        names = {
+            "a",
+            "b",
+            "c",
+            "rest"
+        }
+    .end annotation
 
     .line 26
     check-cast p1, Ljava/lang/Comparable;
@@ -380,6 +573,14 @@
 
 .method public bridge synthetic min(Ljava/util/Iterator;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "iterator"
+        }
+    .end annotation
 
     .line 26
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ReverseNaturalOrdering;->min(Ljava/util/Iterator;)Ljava/lang/Comparable;
@@ -394,14 +595,14 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<S::",
-            "Ljava/lang/Comparable;",
-            ">()",
+            "Ljava/lang/Comparable<",
+            "*>;>()",
             "Lcom/google/common/collect/Ordering<",
             "TS;>;"
         }
     .end annotation
 
-    .line 43
+    .line 44
     invoke-static {}, Lcom/google/common/collect/Ordering;->natural()Lcom/google/common/collect/Ordering;
 
     move-result-object p0
@@ -412,7 +613,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 95
+    .line 96
     const-string p0, "Ordering.natural().reverse()"
 
     return-object p0

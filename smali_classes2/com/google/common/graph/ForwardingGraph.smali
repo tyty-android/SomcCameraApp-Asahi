@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/graph/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<N:",
@@ -19,7 +22,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 27
+    .line 28
     invoke-direct {p0}, Lcom/google/common/graph/AbstractGraph;-><init>()V
 
     return-void
@@ -29,6 +32,15 @@
 # virtual methods
 .method public adjacentNodes(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)",
@@ -37,7 +49,7 @@
         }
     .end annotation
 
-    .line 67
+    .line 68
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingGraph;->delegate()Lcom/google/common/graph/BaseGraph;
 
     move-result-object p0
@@ -52,7 +64,7 @@
 .method public allowsSelfLoops()Z
     .locals 0
 
-    .line 52
+    .line 53
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingGraph;->delegate()Lcom/google/common/graph/BaseGraph;
 
     move-result-object p0
@@ -66,13 +78,22 @@
 
 .method public degree(Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)I"
         }
     .end annotation
 
-    .line 87
+    .line 88
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingGraph;->delegate()Lcom/google/common/graph/BaseGraph;
 
     move-result-object p0
@@ -84,7 +105,7 @@
     return p0
 .end method
 
-.method protected abstract delegate()Lcom/google/common/graph/BaseGraph;
+.method abstract delegate()Lcom/google/common/graph/BaseGraph;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -97,7 +118,7 @@
 .method protected edgeCount()J
     .locals 2
 
-    .line 42
+    .line 43
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingGraph;->delegate()Lcom/google/common/graph/BaseGraph;
 
     move-result-object p0
@@ -117,6 +138,15 @@
 
 .method public hasEdgeConnecting(Lcom/google/common/graph/EndpointPair;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "endpoints"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -125,7 +155,7 @@
         }
     .end annotation
 
-    .line 107
+    .line 108
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingGraph;->delegate()Lcom/google/common/graph/BaseGraph;
 
     move-result-object p0
@@ -139,13 +169,24 @@
 
 .method public hasEdgeConnecting(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "nodeU",
+            "nodeV"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;TN;)Z"
         }
     .end annotation
 
-    .line 102
+    .line 103
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingGraph;->delegate()Lcom/google/common/graph/BaseGraph;
 
     move-result-object p0
@@ -159,13 +200,22 @@
 
 .method public inDegree(Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)I"
         }
     .end annotation
 
-    .line 92
+    .line 93
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingGraph;->delegate()Lcom/google/common/graph/BaseGraph;
 
     move-result-object p0
@@ -187,7 +237,7 @@
         }
     .end annotation
 
-    .line 62
+    .line 63
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingGraph;->delegate()Lcom/google/common/graph/BaseGraph;
 
     move-result-object p0
@@ -201,6 +251,15 @@
 
 .method public incidentEdges(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)",
@@ -210,7 +269,7 @@
         }
     .end annotation
 
-    .line 82
+    .line 83
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingGraph;->delegate()Lcom/google/common/graph/BaseGraph;
 
     move-result-object p0
@@ -225,7 +284,7 @@
 .method public isDirected()Z
     .locals 0
 
-    .line 47
+    .line 48
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingGraph;->delegate()Lcom/google/common/graph/BaseGraph;
 
     move-result-object p0
@@ -247,7 +306,7 @@
         }
     .end annotation
 
-    .line 57
+    .line 58
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingGraph;->delegate()Lcom/google/common/graph/BaseGraph;
 
     move-result-object p0
@@ -269,7 +328,7 @@
         }
     .end annotation
 
-    .line 33
+    .line 34
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingGraph;->delegate()Lcom/google/common/graph/BaseGraph;
 
     move-result-object p0
@@ -283,13 +342,22 @@
 
 .method public outDegree(Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)I"
         }
     .end annotation
 
-    .line 97
+    .line 98
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingGraph;->delegate()Lcom/google/common/graph/BaseGraph;
 
     move-result-object p0
@@ -303,6 +371,14 @@
 
 .method public bridge synthetic predecessors(Ljava/lang/Object;)Ljava/lang/Iterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "node"
+        }
+    .end annotation
 
     .line 27
     invoke-virtual {p0, p1}, Lcom/google/common/graph/ForwardingGraph;->predecessors(Ljava/lang/Object;)Ljava/util/Set;
@@ -314,6 +390,15 @@
 
 .method public predecessors(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)",
@@ -322,7 +407,7 @@
         }
     .end annotation
 
-    .line 72
+    .line 73
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingGraph;->delegate()Lcom/google/common/graph/BaseGraph;
 
     move-result-object p0
@@ -336,6 +421,14 @@
 
 .method public bridge synthetic successors(Ljava/lang/Object;)Ljava/lang/Iterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "node"
+        }
+    .end annotation
 
     .line 27
     invoke-virtual {p0, p1}, Lcom/google/common/graph/ForwardingGraph;->successors(Ljava/lang/Object;)Ljava/util/Set;
@@ -347,6 +440,15 @@
 
 .method public successors(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TN;)",
@@ -355,7 +457,7 @@
         }
     .end annotation
 
-    .line 77
+    .line 78
     invoke-virtual {p0}, Lcom/google/common/graph/ForwardingGraph;->delegate()Lcom/google/common/graph/BaseGraph;
 
     move-result-object p0

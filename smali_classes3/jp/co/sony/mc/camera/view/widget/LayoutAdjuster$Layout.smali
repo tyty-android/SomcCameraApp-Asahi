@@ -162,37 +162,37 @@
 
     invoke-static {p9, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 892
+    .line 1099
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 893
+    .line 1100
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->openRatio:F
 
-    .line 894
+    .line 1101
     iput p2, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->backgroundWidth:F
 
-    .line 895
+    .line 1102
     iput p3, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->scrollViewWidth:F
 
-    .line 896
+    .line 1103
     iput p4, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->scrollContentWidth:F
 
-    .line 897
+    .line 1104
     iput p5, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->lineTranslationX:F
 
-    .line 898
+    .line 1105
     iput p6, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->lineWidth:F
 
-    .line 899
+    .line 1106
     iput-object p7, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->opticalRangeTranslationXList:Ljava/util/List;
 
-    .line 900
+    .line 1107
     iput-object p8, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->opticalRangeWidthList:Ljava/util/List;
 
-    .line 901
+    .line 1108
     iput-object p9, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->labelTranslationXList:Ljava/util/List;
 
-    .line 902
+    .line 1109
     iput p10, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->mainCircleTranslationX:F
 
     return-void
@@ -674,7 +674,7 @@
 .method public final getBackgroundWidth()F
     .locals 0
 
-    .line 894
+    .line 1101
     iget p0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->backgroundWidth:F
 
     return p0
@@ -691,7 +691,7 @@
         }
     .end annotation
 
-    .line 901
+    .line 1108
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->labelTranslationXList:Ljava/util/List;
 
     return-object p0
@@ -700,7 +700,7 @@
 .method public final getLineTranslationX()F
     .locals 0
 
-    .line 897
+    .line 1104
     iget p0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->lineTranslationX:F
 
     return p0
@@ -709,7 +709,7 @@
 .method public final getLineWidth()F
     .locals 0
 
-    .line 898
+    .line 1105
     iget p0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->lineWidth:F
 
     return p0
@@ -718,7 +718,7 @@
 .method public final getMainCircleTranslationX()F
     .locals 0
 
-    .line 902
+    .line 1109
     iget p0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->mainCircleTranslationX:F
 
     return p0
@@ -727,7 +727,7 @@
 .method public final getOpenRatio()F
     .locals 0
 
-    .line 893
+    .line 1100
     iget p0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->openRatio:F
 
     return p0
@@ -744,7 +744,7 @@
         }
     .end annotation
 
-    .line 899
+    .line 1106
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->opticalRangeTranslationXList:Ljava/util/List;
 
     return-object p0
@@ -761,7 +761,7 @@
         }
     .end annotation
 
-    .line 900
+    .line 1107
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->opticalRangeWidthList:Ljava/util/List;
 
     return-object p0
@@ -770,7 +770,7 @@
 .method public final getScrollContentWidth()F
     .locals 0
 
-    .line 896
+    .line 1103
     iget p0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->scrollContentWidth:F
 
     return p0
@@ -779,7 +779,7 @@
 .method public final getScrollViewWidth()F
     .locals 0
 
-    .line 895
+    .line 1102
     iget p0, p0, Ljp/co/sony/mc/camera/view/widget/LayoutAdjuster$Layout;->scrollViewWidth:F
 
     return p0

@@ -26,6 +26,14 @@
 
 .method public static getApi1Value(I)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "peakingMode"
+        }
+    .end annotation
 
     if-eqz p0, :cond_4
 
@@ -83,6 +91,14 @@
 
 .method static getApi2Value(Ljava/lang/String;)Ljava/lang/Integer;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "peakingMode"
+        }
+    .end annotation
 
     .line 775
     invoke-virtual {p0}, Ljava/lang/String;->hashCode()I

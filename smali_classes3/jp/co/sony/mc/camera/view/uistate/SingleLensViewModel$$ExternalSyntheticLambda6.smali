@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function2;
+.implements Lkotlin/jvm/functions/Function3;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
@@ -28,13 +28,11 @@
 
     move-result p0
 
-    check-cast p2, Ljava/lang/Boolean;
+    check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
+    check-cast p3, Ljava/lang/Boolean;
 
-    move-result p1
-
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->$r8$lambda$6P9v6IN3YdkYQ86AGGrqbkS5lf8(ZZ)Z
+    invoke-static {p0, p2, p3}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->$r8$lambda$U5U4mKUfw5cNAli9EY326YZ5Bqc(ZLjp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljava/lang/Boolean;)Z
 
     move-result p0
 

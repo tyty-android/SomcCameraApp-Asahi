@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements Lkotlin/jvm/functions/Function4;
 
 
 # instance fields
@@ -24,15 +24,21 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;
 
-    check-cast p1, Lkotlin/Pair;
+    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->$r8$lambda$CKMWB9jwacJsUX-fBAxg0MBIvfE(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Lkotlin/Pair;)Z
+    check-cast p2, Lkotlin/Pair;
+
+    check-cast p3, Ljava/lang/Boolean;
+
+    check-cast p4, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+
+    invoke-static {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->$r8$lambda$n5QoOJOMfNCy4poByu_bJ0SDShE(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Lkotlin/Pair;Ljava/lang/Boolean;Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;)Z
 
     move-result p0
 

@@ -7,4 +7,7 @@
     <FrameLayout android:id="@id/content_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
     <View android:id="@id/main_circle" android:tag="binding_2" android:background="@drawable/camera_circle_lens_button" android:layout_width="@dimen/auto_mode_zoom_circle_size" android:layout_height="@dimen/auto_mode_zoom_circle_size" android:soundEffectsEnabled="false" android:hapticFeedbackEnabled="false" />
     <TextView android:gravity="center" android:id="@id/main_label" android:tag="binding_3" android:layout_width="@dimen/auto_mode_zoom_label_size" android:layout_height="@dimen/auto_mode_zoom_label_size" android:layout_marginTop="@dimen/auto_mode_zoom_label_margin" android:text="1x" android:importantForAccessibility="no" android:layout_marginStart="@dimen/auto_mode_zoom_label_margin" style="@style/TextAppearance.ZoomLabel" />
+    <FrameLayout android:clipChildren="false" android:layout_width="@dimen/auto_mode_zoom_circle_size" android:layout_height="@dimen/auto_mode_zoom_circle_size">
+        <ImageView android:layout_gravity="center" android:id="@id/highlight_circle" android:visibility="gone" android:layout_width="@dimen/auto_mode_zoom_highlight_circle_size" android:layout_height="@dimen/auto_mode_zoom_highlight_circle_size" android:src="@drawable/camera_ai_suggestion_recommended_lens_animation" android:scaleType="center" android:soundEffectsEnabled="false" android:hapticFeedbackEnabled="false" />
+    </FrameLayout>
 </jp.co.sony.mc.camera.view.widget.InterceptDragEventLayout>

@@ -68,7 +68,7 @@
         }
     .end annotation
 
-    .line 363
+    .line 243
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$6$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$getCameraSettingsModel$p(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
@@ -97,16 +97,16 @@
 
     move-result p1
 
-    if-eqz p1, :cond_0
+    if-nez p1, :cond_0
 
-    .line 364
+    .line 244
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$6$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
-    const/4 p1, 0x1
+    const/4 p1, 0x0
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->onTouchAdjustStateChange(Z)V
 
-    .line 366
+    .line 246
     :cond_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
@@ -116,7 +116,7 @@
 .method public bridge synthetic emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
 
-    .line 362
+    .line 242
     check-cast p1, Ljava/lang/Boolean;
 
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$6$1;->emit(Ljava/lang/Boolean;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;

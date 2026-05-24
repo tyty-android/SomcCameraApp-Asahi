@@ -46,6 +46,14 @@
 
 .method private readIntent(Landroid/content/Intent;)V
     .locals 11
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "intent"
+        }
+    .end annotation
 
     .line 73
     invoke-virtual {p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
@@ -387,6 +395,14 @@
 
 .method private setVideoMaxDurationInMillisecs(J)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "videoMaxDurationInMillisecs"
+        }
+    .end annotation
 
     .line 135
     iput-wide p1, p0, Ljp/co/sony/mc/camera/configuration/IntentReader;->mVideoMaxDurationInMillisecs:J
@@ -408,6 +424,14 @@
 
 .method private setVideoMaxFileSizeInBytes(J)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "videoMaxFileSizeInBytes"
+        }
+    .end annotation
 
     .line 128
     iput-wide p1, p0, Ljp/co/sony/mc/camera/configuration/IntentReader;->mVideoMaxFileSizeInBytes:J
@@ -429,6 +453,18 @@
 
 .method private setVideoQuality(JJJ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "videoQuality",
+            "maxFileSize",
+            "maxDuration"
+        }
+    .end annotation
 
     const-wide/16 p3, 0x0
 
@@ -497,6 +533,14 @@
 # virtual methods
 .method public getVideoQualityConfigurations(Landroid/content/Intent;)Ljp/co/sony/mc/camera/configuration/IntentReader$VideoQualityConfigurations;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "intent"
+        }
+    .end annotation
 
     .line 67
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/configuration/IntentReader;->readIntent(Landroid/content/Intent;)V

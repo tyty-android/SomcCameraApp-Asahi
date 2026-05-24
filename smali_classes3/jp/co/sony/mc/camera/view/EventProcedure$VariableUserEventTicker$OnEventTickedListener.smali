@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract onTicked(Ljp/co/sony/mc/camera/view/EventProcedure$VariableUserEventTicker;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ticker"
+        }
+    .end annotation
 .end method

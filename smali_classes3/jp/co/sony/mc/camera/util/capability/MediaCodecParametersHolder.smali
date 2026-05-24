@@ -129,6 +129,14 @@
 
 .method private findEncoderCodec(Ljava/lang/String;)Landroid/media/MediaCodecInfo;
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mimeType"
+        }
+    .end annotation
 
     .line 153
     new-instance p0, Landroid/media/MediaCodecList;
@@ -300,6 +308,15 @@
 
 .method private getSupportedEncoderProfiles(Ljava/lang/String;)Ljava/util/List;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mimeType"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

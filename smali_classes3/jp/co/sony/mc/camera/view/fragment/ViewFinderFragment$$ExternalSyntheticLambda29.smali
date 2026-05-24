@@ -3,15 +3,17 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnLayoutChangeListener;
+.implements Landroidx/lifecycle/Observer;
 
 
 # instance fields
 .field public final synthetic f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
+.field public final synthetic f$1:Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
+
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;)V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;)V
     .locals 0
 
     .line 0
@@ -19,38 +21,24 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda29;->f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda29;->f$1:Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final onLayoutChange(Landroid/view/View;IIIIIIII)V
-    .locals 10
+.method public final onChanged(Ljava/lang/Object;)V
+    .locals 1
 
     .line 0
-    move-object v0, p0
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda29;->f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
-    iget-object v0, v0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda29;->f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda29;->f$1:Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
-    move-object v1, p1
+    check-cast p1, Ljava/lang/Boolean;
 
-    move v2, p2
-
-    move v3, p3
-
-    move v4, p4
-
-    move v5, p5
-
-    move/from16 v6, p6
-
-    move/from16 v7, p7
-
-    move/from16 v8, p8
-
-    move/from16 v9, p9
-
-    invoke-static/range {v0 .. v9}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->$r8$lambda$NWPgRYaAbvZj6lDDqQuipaPcEZ4(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Landroid/view/View;IIIIIIII)V
+    invoke-static {v0, p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->$r8$lambda$IN4V_yGe2IPf-4Ojw3uFB5jVn1w(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;Ljava/lang/Boolean;)V
 
     return-void
 .end method

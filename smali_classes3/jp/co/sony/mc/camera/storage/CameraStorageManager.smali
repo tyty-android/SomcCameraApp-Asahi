@@ -110,6 +110,16 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljp/co/sony/mc/camera/storage/StorageController;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "storageController"
+        }
+    .end annotation
 
     .line 176
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -211,6 +221,18 @@
 
 .method private changeReadyStateTo(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/Storage$StorageReadyState;Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;)Z
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "nextReadyState",
+            "reason"
+        }
+    .end annotation
 
     .line 819
     iget-object v0, p0, Ljp/co/sony/mc/camera/storage/CameraStorageManager;->mStorageController:Ljp/co/sony/mc/camera/storage/StorageController;
@@ -512,6 +534,14 @@
 
 .method private decideForceFsWritingCheck(Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "reason"
+        }
+    .end annotation
 
     .line 450
     sget-object p0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$1;->$SwitchMap$jp$co$sony$mc$camera$storage$CameraStorageManager$UpdateRequestReason:[I
@@ -547,6 +577,14 @@
 
 .method private getLastStorageState(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     .line 578
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/CameraStorageManager;->mLastStorageStates:Ljava/util/Map;
@@ -562,6 +600,14 @@
 
 .method private getNextStateFromRemain(J)Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "availableSize"
+        }
+    .end annotation
 
     const-wide/32 v0, 0x493e0
 
@@ -614,6 +660,14 @@
 
 .method private getNextStateFromVolume(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "storage"
+        }
+    .end annotation
 
     .line 418
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/CameraStorageManager;->mContext:Landroid/content/Context;
@@ -806,6 +860,14 @@
 
 .method private getNextStateFromWritable(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     const-string v0, "getNextStateFromWritable: timed out or fatal error, type = "
 
@@ -918,6 +980,14 @@
 
 .method private isReadable(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "storage"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -968,6 +1038,14 @@
 
 .method private isWritableCheckNeeded(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "storage"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -1124,6 +1202,16 @@
 
 .method private setLastStorageState(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "storage",
+            "state"
+        }
+    .end annotation
 
     .line 529
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
@@ -1191,6 +1279,14 @@
 # virtual methods
 .method public calculateNextPollingInterval(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateInterval;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     .line 763
     sget-object v0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$1;->$SwitchMap$jp$co$sony$mc$camera$storage$Storage$StorageReadyState:[I
@@ -1251,6 +1347,14 @@
 
 .method public checkAndNotifyStateChanged(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     .line 573
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -1292,6 +1396,16 @@
 
 .method public checkRemain(ZLjp/co/sony/mc/camera/storage/Storage$StorageType;)J
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "forceNotify",
+            "type"
+        }
+    .end annotation
 
     .line 561
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -1663,6 +1777,14 @@
 
 .method public getStatFs(Ljava/lang/String;)Landroid/os/StatFs;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "path"
+        }
+    .end annotation
 
     .line 588
     const-string p0, "GetStatFsTask failed."
@@ -1794,6 +1916,16 @@
 
 .method public getVideoPath(Ljp/co/sony/mc/camera/recorder/RecordingProfile;J)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "profile",
+            "dateTaken"
+        }
+    .end annotation
 
     .line 745
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/CameraStorageManager;->mPathBuilder:Ljp/co/sony/mc/camera/storage/PathBuilder;
@@ -1818,6 +1950,17 @@
 
 .method initialize(Ljp/co/sony/mc/camera/storage/SavingTaskInquiry;Ljava/util/Map;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "inquiry",
+            "storageAccessSemaphoreMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2002,6 +2145,18 @@
 
 .method public requestVolumeCheck(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateInterval;Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "interval",
+            "reason"
+        }
+    .end annotation
 
     .line 253
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/CameraStorageManager;->mStorageUpdaterMap:Ljava/util/Map;
@@ -2019,6 +2174,16 @@
 
 .method public requestWriteCheck(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "reason"
+        }
+    .end annotation
 
     .line 262
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/CameraStorageManager;->mStorageUpdaterMap:Ljava/util/Map;
@@ -2036,6 +2201,16 @@
 
 .method public updateAvailableStorageSize(Ljp/co/sony/mc/camera/storage/Storage$StorageType;J)J
     .locals 16
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "storage",
+            "reservedSize"
+        }
+    .end annotation
 
     move-object/from16 v0, p0
 
@@ -2337,6 +2512,18 @@
 
 .method public declared-synchronized updateStateByVolumeInfo(Ljp/co/sony/mc/camera/storage/Storage$StorageType;JLjp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;)Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x0,
+            0x0
+        }
+        names = {
+            "storage",
+            "reservedSize",
+            "reason"
+        }
+    .end annotation
 
     const-string v0, "lastState = "
 
@@ -2662,6 +2849,16 @@
 
 .method public updateStorageState(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x0
+        }
+        names = {
+            "type",
+            "reason"
+        }
+    .end annotation
 
     .line 272
     sget-object v0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;->RECEIVE_STORAGE_MOUNTED:Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
@@ -2735,6 +2932,16 @@
 
 .method updateStorageStateByAction(Ljava/lang/String;Ljp/co/sony/mc/camera/storage/Storage$StorageType;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "event",
+            "type"
+        }
+    .end annotation
 
     .line 230
     const-string v0, "android.intent.action.MEDIA_MOUNTED"
@@ -2822,6 +3029,16 @@
 
 .method public declared-synchronized updateStorageStateByWriting(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "reason"
+        }
+    .end annotation
 
     const-string v0, "isWritable: "
 

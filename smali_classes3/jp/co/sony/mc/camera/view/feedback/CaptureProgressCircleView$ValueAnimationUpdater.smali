@@ -26,6 +26,14 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/feedback/CaptureProgressCircleView;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 130
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/feedback/CaptureProgressCircleView$ValueAnimationUpdater;->this$0:Ljp/co/sony/mc/camera/view/feedback/CaptureProgressCircleView;
@@ -52,6 +60,14 @@
 # virtual methods
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "arg0"
+        }
+    .end annotation
 
     .line 135
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/feedback/CaptureProgressCircleView$ValueAnimationUpdater;->this$0:Ljp/co/sony/mc/camera/view/feedback/CaptureProgressCircleView;

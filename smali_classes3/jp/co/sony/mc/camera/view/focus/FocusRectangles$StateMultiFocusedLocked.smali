@@ -21,8 +21,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 659
+    .line 664
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateMultiFocusedLocked;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;-><init>(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)V
@@ -35,7 +43,7 @@
 .method public entry()V
     .locals 2
 
-    .line 663
+    .line 668
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateMultiFocusedLocked;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmIsZooming(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Z
@@ -44,14 +52,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 664
+    .line 669
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateMultiFocusedLocked;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;->TYPE_SINGLE_AUTO_FOCUS:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fputmNextFocusType(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;)V
 
-    .line 665
+    .line 670
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateMultiFocusedLocked;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusState;->FOCUSED:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusState;
@@ -60,7 +68,7 @@
 
     goto :goto_0
 
-    .line 666
+    .line 671
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateMultiFocusedLocked;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
@@ -70,14 +78,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 667
+    .line 672
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateMultiFocusedLocked;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;->TYPE_MULTI_AUTO_FOCUS:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;
 
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fputmNextFocusType(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;)V
 
-    .line 668
+    .line 673
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateMultiFocusedLocked;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusState;->FOCUSED:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusState;
@@ -86,7 +94,7 @@
 
     goto :goto_0
 
-    .line 670
+    .line 675
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateMultiFocusedLocked;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
@@ -94,7 +102,7 @@
 
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fputmNextFocusType(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;Ljp/co/sony/mc/camera/view/focus/FocusRectangles$FocusType;)V
 
-    .line 671
+    .line 676
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateMultiFocusedLocked;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusState;->NORMAL:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusState;
@@ -108,7 +116,7 @@
 .method public handleOnAutoFocusCanceled()V
     .locals 2
 
-    .line 677
+    .line 682
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateMultiFocusedLocked;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmFocusArea(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;
@@ -127,7 +135,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 678
+    .line 683
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateMultiFocusedLocked;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     new-instance v1, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateAfTouchFocus;
@@ -140,7 +148,7 @@
 
     goto :goto_0
 
-    .line 680
+    .line 685
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateMultiFocusedLocked;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
@@ -158,8 +166,16 @@
 
 .method public handleOnFaceDetected(Z)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isAfSuccess"
+        }
+    .end annotation
 
-    .line 686
+    .line 691
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateMultiFocusedLocked;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$misAvailableFramePlatformDrawing(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Z
@@ -186,7 +202,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 687
+    .line 692
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateMultiFocusedLocked;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     new-instance v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateFaceDetectedAfterAfLocked;
@@ -201,7 +217,7 @@
 
     return-void
 
-    .line 690
+    .line 695
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateMultiFocusedLocked;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
@@ -215,7 +231,7 @@
 
     return-void
 
-    .line 694
+    .line 699
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateMultiFocusedLocked;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
@@ -225,7 +241,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 695
+    .line 700
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateMultiFocusedLocked;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     if-eqz p1, :cond_2
@@ -238,7 +254,7 @@
 
     goto :goto_0
 
-    .line 696
+    .line 701
     :cond_2
     new-instance p1, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateBodyDetectionOutFocus;
 
@@ -246,13 +262,13 @@
 
     invoke-direct {p1, p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateBodyDetectionOutFocus;-><init>(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)V
 
-    .line 695
+    .line 700
     :goto_0
     invoke-static {v0, p1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$mchangeState(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;)V
 
     goto :goto_2
 
-    .line 698
+    .line 703
     :cond_3
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateMultiFocusedLocked;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
@@ -266,7 +282,7 @@
 
     goto :goto_1
 
-    .line 699
+    .line 704
     :cond_4
     new-instance p1, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateFaceDetectionOutFocus;
 
@@ -274,7 +290,7 @@
 
     invoke-direct {p1, p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateFaceDetectionOutFocus;-><init>(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)V
 
-    .line 698
+    .line 703
     :goto_1
     invoke-static {v0, p1}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$mchangeState(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;Ljp/co/sony/mc/camera/view/focus/FocusRectangles$State;)V
 
@@ -285,7 +301,7 @@
 .method public handleStartObjectTracking()V
     .locals 2
 
-    .line 718
+    .line 723
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateMultiFocusedLocked;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     new-instance v1, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateObjectTrackingInLocked;
@@ -301,8 +317,16 @@
 
 .method public handleUpdateFocusStatus(Z)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "isAfSuccess"
+        }
+    .end annotation
 
-    .line 705
+    .line 710
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateMultiFocusedLocked;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->-$$Nest$fgetmFocusMode(Ljp/co/sony/mc/camera/view/focus/FocusRectangles;)Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
@@ -315,7 +339,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 709
+    .line 714
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateMultiFocusedLocked;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 
     new-instance p1, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateMultiFocusedLocked;
@@ -326,7 +350,7 @@
 
     goto :goto_0
 
-    .line 711
+    .line 716
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$StateMultiFocusedLocked;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;
 

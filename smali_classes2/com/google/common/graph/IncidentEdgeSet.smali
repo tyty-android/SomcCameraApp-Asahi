@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/graph/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<N:",
@@ -17,7 +20,7 @@
 
 
 # instance fields
-.field protected final graph:Lcom/google/common/graph/BaseGraph;
+.field final graph:Lcom/google/common/graph/BaseGraph;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/common/graph/BaseGraph<",
@@ -26,7 +29,7 @@
     .end annotation
 .end field
 
-.field protected final node:Ljava/lang/Object;
+.field final node:Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TN;"
@@ -38,6 +41,17 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/graph/BaseGraph;Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "graph",
+            "node"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -46,13 +60,13 @@
         }
     .end annotation
 
-    .line 31
+    .line 32
     invoke-direct {p0}, Ljava/util/AbstractSet;-><init>()V
 
-    .line 32
+    .line 33
     iput-object p1, p0, Lcom/google/common/graph/IncidentEdgeSet;->graph:Lcom/google/common/graph/BaseGraph;
 
-    .line 33
+    .line 34
     iput-object p2, p0, Lcom/google/common/graph/IncidentEdgeSet;->node:Ljava/lang/Object;
 
     return-void
@@ -63,11 +77,19 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 5
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
-    .line 54
+    .line 55
     instance-of v0, p1, Lcom/google/common/graph/EndpointPair;
 
     const/4 v1, 0x0
@@ -76,11 +98,11 @@
 
     return v1
 
-    .line 57
+    .line 58
     :cond_0
     check-cast p1, Lcom/google/common/graph/EndpointPair;
 
-    .line 59
+    .line 60
     iget-object v0, p0, Lcom/google/common/graph/IncidentEdgeSet;->graph:Lcom/google/common/graph/BaseGraph;
 
     invoke-interface {v0}, Lcom/google/common/graph/BaseGraph;->isDirected()Z
@@ -91,7 +113,7 @@
 
     if-eqz v0, :cond_5
 
-    .line 60
+    .line 61
     invoke-virtual {p1}, Lcom/google/common/graph/EndpointPair;->isOrdered()Z
 
     move-result v0
@@ -100,18 +122,18 @@
 
     return v1
 
-    .line 64
+    .line 65
     :cond_1
     invoke-virtual {p1}, Lcom/google/common/graph/EndpointPair;->source()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 65
+    .line 66
     invoke-virtual {p1}, Lcom/google/common/graph/EndpointPair;->target()Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 66
+    .line 67
     iget-object v3, p0, Lcom/google/common/graph/IncidentEdgeSet;->node:Ljava/lang/Object;
 
     invoke-virtual {v3, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
@@ -137,7 +159,7 @@
     :cond_2
     iget-object v3, p0, Lcom/google/common/graph/IncidentEdgeSet;->node:Ljava/lang/Object;
 
-    .line 67
+    .line 68
     invoke-virtual {v3, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result p1
@@ -164,7 +186,7 @@
     :cond_4
     return v1
 
-    .line 69
+    .line 70
     :cond_5
     invoke-virtual {p1}, Lcom/google/common/graph/EndpointPair;->isOrdered()Z
 
@@ -174,7 +196,7 @@
 
     return v1
 
-    .line 72
+    .line 73
     :cond_6
     iget-object v0, p0, Lcom/google/common/graph/IncidentEdgeSet;->graph:Lcom/google/common/graph/BaseGraph;
 
@@ -184,17 +206,17 @@
 
     move-result-object v0
 
-    .line 73
+    .line 74
     invoke-virtual {p1}, Lcom/google/common/graph/EndpointPair;->nodeU()Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 74
+    .line 75
     invoke-virtual {p1}, Lcom/google/common/graph/EndpointPair;->nodeV()Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 76
+    .line 77
     iget-object v4, p0, Lcom/google/common/graph/IncidentEdgeSet;->node:Ljava/lang/Object;
 
     invoke-virtual {v4, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
@@ -212,7 +234,7 @@
     :cond_7
     iget-object p0, p0, Lcom/google/common/graph/IncidentEdgeSet;->node:Ljava/lang/Object;
 
-    .line 77
+    .line 78
     invoke-virtual {p0, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -234,8 +256,20 @@
 
 .method public remove(Ljava/lang/Object;)Z
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 38
+    .line 39
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -246,7 +280,7 @@
 .method public size()I
     .locals 3
 
-    .line 43
+    .line 44
     iget-object v0, p0, Lcom/google/common/graph/IncidentEdgeSet;->graph:Lcom/google/common/graph/BaseGraph;
 
     invoke-interface {v0}, Lcom/google/common/graph/BaseGraph;->isDirected()Z
@@ -255,7 +289,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 44
+    .line 45
     iget-object v0, p0, Lcom/google/common/graph/IncidentEdgeSet;->graph:Lcom/google/common/graph/BaseGraph;
 
     iget-object v1, p0, Lcom/google/common/graph/IncidentEdgeSet;->node:Ljava/lang/Object;
@@ -268,14 +302,14 @@
 
     iget-object v2, p0, Lcom/google/common/graph/IncidentEdgeSet;->node:Ljava/lang/Object;
 
-    .line 45
+    .line 46
     invoke-interface {v1, v2}, Lcom/google/common/graph/BaseGraph;->outDegree(Ljava/lang/Object;)I
 
     move-result v1
 
     add-int/2addr v0, v1
 
-    .line 46
+    .line 47
     iget-object v1, p0, Lcom/google/common/graph/IncidentEdgeSet;->graph:Lcom/google/common/graph/BaseGraph;
 
     iget-object v2, p0, Lcom/google/common/graph/IncidentEdgeSet;->node:Ljava/lang/Object;
@@ -294,7 +328,7 @@
 
     return v0
 
-    .line 48
+    .line 49
     :cond_0
     iget-object v0, p0, Lcom/google/common/graph/IncidentEdgeSet;->graph:Lcom/google/common/graph/BaseGraph;
 

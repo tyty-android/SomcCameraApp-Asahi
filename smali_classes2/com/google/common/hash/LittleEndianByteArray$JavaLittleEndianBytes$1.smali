@@ -17,10 +17,20 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 207
+    .line 213
     invoke-direct {p0, p1, p2, v0}, Lcom/google/common/hash/LittleEndianByteArray$JavaLittleEndianBytes;-><init>(Ljava/lang/String;ILcom/google/common/hash/LittleEndianByteArray$1;)V
 
     return-void
@@ -30,10 +40,20 @@
 # virtual methods
 .method public getLongLittleEndian([BI)J
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "source",
+            "offset"
+        }
+    .end annotation
 
     add-int/lit8 p0, p2, 0x7
 
-    .line 210
+    .line 216
     aget-byte v0, p1, p0
 
     add-int/lit8 p0, p2, 0x6
@@ -71,6 +91,18 @@
 
 .method public putLongLittleEndian([BIJ)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "sink",
+            "offset",
+            "value"
+        }
+    .end annotation
 
     const-wide/16 v0, 0xff
 
@@ -93,7 +125,7 @@
 
     int-to-byte v4, v4
 
-    .line 225
+    .line 231
     aput-byte v4, p1, v3
 
     shl-long/2addr v0, v2

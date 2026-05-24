@@ -46,7 +46,7 @@
 .method private static synthetic $values()[Lcom/google/common/primitives/Booleans$BooleanComparator;
     .locals 2
 
-    .line 49
+    .line 51
     sget-object v0, Lcom/google/common/primitives/Booleans$BooleanComparator;->TRUE_FIRST:Lcom/google/common/primitives/Booleans$BooleanComparator;
 
     sget-object v1, Lcom/google/common/primitives/Booleans$BooleanComparator;->FALSE_FIRST:Lcom/google/common/primitives/Booleans$BooleanComparator;
@@ -61,7 +61,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    .line 50
+    .line 52
     new-instance v0, Lcom/google/common/primitives/Booleans$BooleanComparator;
 
     const-string v1, "Booleans.trueFirst()"
@@ -76,7 +76,7 @@
 
     sput-object v0, Lcom/google/common/primitives/Booleans$BooleanComparator;->TRUE_FIRST:Lcom/google/common/primitives/Booleans$BooleanComparator;
 
-    .line 51
+    .line 53
     new-instance v0, Lcom/google/common/primitives/Booleans$BooleanComparator;
 
     const/4 v1, -0x1
@@ -89,7 +89,7 @@
 
     sput-object v0, Lcom/google/common/primitives/Booleans$BooleanComparator;->FALSE_FIRST:Lcom/google/common/primitives/Booleans$BooleanComparator;
 
-    .line 49
+    .line 51
     invoke-static {}, Lcom/google/common/primitives/Booleans$BooleanComparator;->$values()[Lcom/google/common/primitives/Booleans$BooleanComparator;
 
     move-result-object v0
@@ -101,6 +101,21 @@
 
 .method private constructor <init>(Ljava/lang/String;IILjava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "trueValue",
+            "toString"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -109,13 +124,13 @@
         }
     .end annotation
 
-    .line 56
+    .line 58
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 57
+    .line 59
     iput p3, p0, Lcom/google/common/primitives/Booleans$BooleanComparator;->trueValue:I
 
-    .line 58
+    .line 60
     iput-object p4, p0, Lcom/google/common/primitives/Booleans$BooleanComparator;->toString:Ljava/lang/String;
 
     return-void
@@ -123,8 +138,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/primitives/Booleans$BooleanComparator;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 49
+    .line 51
     const-class v0, Lcom/google/common/primitives/Booleans$BooleanComparator;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -139,7 +162,7 @@
 .method public static values()[Lcom/google/common/primitives/Booleans$BooleanComparator;
     .locals 1
 
-    .line 49
+    .line 51
     sget-object v0, Lcom/google/common/primitives/Booleans$BooleanComparator;->$VALUES:[Lcom/google/common/primitives/Booleans$BooleanComparator;
 
     invoke-virtual {v0}, [Lcom/google/common/primitives/Booleans$BooleanComparator;->clone()Ljava/lang/Object;
@@ -155,8 +178,18 @@
 # virtual methods
 .method public compare(Ljava/lang/Boolean;Ljava/lang/Boolean;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b"
+        }
+    .end annotation
 
-    .line 63
+    .line 65
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p1
@@ -172,7 +205,7 @@
     :cond_0
     move p1, v0
 
-    .line 64
+    .line 66
     :goto_0
     invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -190,8 +223,18 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "a",
+            "b"
+        }
+    .end annotation
 
-    .line 49
+    .line 51
     check-cast p1, Ljava/lang/Boolean;
 
     check-cast p2, Ljava/lang/Boolean;
@@ -206,7 +249,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 70
+    .line 72
     iget-object p0, p0, Lcom/google/common/primitives/Booleans$BooleanComparator;->toString:Ljava/lang/String;
 
     return-object p0

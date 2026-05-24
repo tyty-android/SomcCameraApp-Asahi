@@ -21,15 +21,23 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 5584
+    .line 5359
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFinalize;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/controller/StateMachine$State;-><init>(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/controller/StateMachine$State-IA;)V
 
-    .line 5585
+    .line 5360
     sget-object p1, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_FINALIZE:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFinalize;->mCaptureState:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
@@ -50,7 +58,7 @@
 .method public entry()V
     .locals 3
 
-    .line 5590
+    .line 5365
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
@@ -67,7 +75,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 5591
+    .line 5366
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFinalize;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
@@ -77,7 +85,7 @@
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->release()V
 
-    .line 5592
+    .line 5367
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFinalize;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmQrDetectionController(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/controller/qrdetection/QrDetectionController;
@@ -86,7 +94,7 @@
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/controller/qrdetection/QrDetectionController;->release()V
 
-    .line 5595
+    .line 5370
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFinalize;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mstoreSavingRequestList(Ljp/co/sony/mc/camera/controller/StateMachine;)V
@@ -96,15 +104,23 @@
 
 .method public varargs handleOnTakePictureDone([Ljava/lang/Object;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "objects"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 5601
+    .line 5376
     aget-object p1, p1, v0
 
     check-cast p1, Ljava/util/List;
 
-    .line 5603
+    .line 5378
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -122,7 +138,7 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
 
-    .line 5604
+    .line 5379
     sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v2, :cond_0
@@ -151,7 +167,7 @@
 
     move-result-object v3
 
-    .line 5605
+    .line 5380
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->getMimeType()Ljava/lang/String;
 
     move-result-object v4
@@ -166,10 +182,10 @@
 
     aput-object v3, v2, v0
 
-    .line 5604
+    .line 5379
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 5606
+    .line 5381
     :cond_0
     iget-object v2, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFinalize;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
@@ -183,6 +199,14 @@
 
 .method public varargs handleRequestStopPreview([Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "objects"
+        }
+    .end annotation
 
     return-void
 .end method

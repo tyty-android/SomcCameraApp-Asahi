@@ -16,6 +16,9 @@
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;,
+        Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$HumanType;,
+        Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$WeatherType;,
+        Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$SituationType;,
         Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$AutoOff;,
         Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;,
         Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$LaunchBy;,
@@ -36,7 +39,7 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 424
+    .line 623
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;
 
     const/4 v1, 0x1
@@ -45,10 +48,10 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->defaultInstance:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;
 
-    .line 425
+    .line 624
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp;->internalForceInit()V
 
-    .line 426
+    .line 625
     invoke-direct {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->initFields()V
 
     return-void
@@ -62,7 +65,7 @@
 
     const/4 v0, -0x1
 
-    .line 247
+    .line 446
     iput v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->memoizedSerializedSize:I
 
     .line 15
@@ -81,13 +84,21 @@
 
 .method private constructor <init>(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "noInit"
+        }
+    .end annotation
 
     .line 17
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageLite;-><init>()V
 
     const/4 p1, -0x1
 
-    .line 247
+    .line 446
     iput p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->memoizedSerializedSize:I
 
     return-void
@@ -111,7 +122,7 @@
 .method public static newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
     .locals 1
 
-    .line 324
+    .line 523
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;->-$$Nest$smcreate()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
     move-result-object v0
@@ -121,8 +132,16 @@
 
 .method public static newBuilder(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "prototype"
+        }
+    .end annotation
 
-    .line 327
+    .line 526
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
     move-result-object v0
@@ -136,25 +155,34 @@
 
 .method public static parseDelimitedFrom(Ljava/io/InputStream;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "input"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 293
+    .line 492
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
     move-result-object v0
 
-    .line 294
+    .line 493
     invoke-virtual {v0, p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;->mergeDelimitedFrom(Ljava/io/InputStream;)Z
 
     move-result p0
 
     if-eqz p0, :cond_0
 
-    .line 295
+    .line 494
     invoke-static {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;->-$$Nest$mbuildParsed(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;
 
     move-result-object p0
@@ -169,25 +197,36 @@
 
 .method public static parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "input",
+            "extensionRegistry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 304
+    .line 503
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
     move-result-object v0
 
-    .line 305
+    .line 504
     invoke-virtual {v0, p0, p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;->mergeDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Z
 
     move-result p0
 
     if-eqz p0, :cond_0
 
-    .line 306
+    .line 505
     invoke-static {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;->-$$Nest$mbuildParsed(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;
 
     move-result-object p0
@@ -202,13 +241,22 @@
 
 .method public static parseFrom(Lcom/google/protobuf/ByteString;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "data"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/protobuf/InvalidProtocolBufferException;
         }
     .end annotation
 
-    .line 260
+    .line 459
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
     move-result-object v0
@@ -228,13 +276,24 @@
 
 .method public static parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "data",
+            "extensionRegistry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/protobuf/InvalidProtocolBufferException;
         }
     .end annotation
 
-    .line 266
+    .line 465
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
     move-result-object v0
@@ -245,7 +304,7 @@
 
     check-cast p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
-    .line 267
+    .line 466
     invoke-static {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;->-$$Nest$mbuildParsed(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;
 
     move-result-object p0
@@ -255,13 +314,22 @@
 
 .method public static parseFrom(Lcom/google/protobuf/CodedInputStream;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "input"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 314
+    .line 513
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
     move-result-object v0
@@ -281,13 +349,24 @@
 
 .method public static parseFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "input",
+            "extensionRegistry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 320
+    .line 519
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
     move-result-object v0
@@ -296,7 +375,7 @@
 
     move-result-object p0
 
-    .line 321
+    .line 520
     invoke-static {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;->-$$Nest$mbuildParsed(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;
 
     move-result-object p0
@@ -306,13 +385,22 @@
 
 .method public static parseFrom(Ljava/io/InputStream;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "input"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 282
+    .line 481
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
     move-result-object v0
@@ -332,13 +420,24 @@
 
 .method public static parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "input",
+            "extensionRegistry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 288
+    .line 487
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
     move-result-object v0
@@ -349,7 +448,7 @@
 
     check-cast p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
-    .line 289
+    .line 488
     invoke-static {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;->-$$Nest$mbuildParsed(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;
 
     move-result-object p0
@@ -359,13 +458,22 @@
 
 .method public static parseFrom([B)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "data"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/protobuf/InvalidProtocolBufferException;
         }
     .end annotation
 
-    .line 271
+    .line 470
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
     move-result-object v0
@@ -385,13 +493,24 @@
 
 .method public static parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "data",
+            "extensionRegistry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/protobuf/InvalidProtocolBufferException;
         }
     .end annotation
 
-    .line 277
+    .line 476
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
     move-result-object v0
@@ -402,7 +521,7 @@
 
     check-cast p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
-    .line 278
+    .line 477
     invoke-static {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;->-$$Nest$mbuildParsed(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;
 
     move-result-object p0
@@ -435,7 +554,7 @@
 .method public getSerializedSize()I
     .locals 2
 
-    .line 249
+    .line 448
     iget v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->memoizedSerializedSize:I
 
     const/4 v1, -0x1
@@ -447,7 +566,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 253
+    .line 452
     iput v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->memoizedSerializedSize:I
 
     return v0
@@ -475,7 +594,7 @@
 .method public newBuilderForType()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
     .locals 0
 
-    .line 325
+    .line 524
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
     move-result-object p0
@@ -497,7 +616,7 @@
 .method public toBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
     .locals 0
 
-    .line 329
+    .line 528
     invoke-static {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->newBuilder(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
     move-result-object p0
@@ -507,13 +626,22 @@
 
 .method public writeTo(Lcom/google/protobuf/CodedOutputStream;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "output"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 244
+    .line 443
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->getSerializedSize()I
 
     return-void

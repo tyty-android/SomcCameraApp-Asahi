@@ -3,32 +3,36 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function2;
+.implements Landroidx/lifecycle/Observer;
+
+
+# instance fields
+.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
 
 # direct methods
-.method public synthetic constructor <init>()V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$$ExternalSyntheticLambda6;->f$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final onChanged(Ljava/lang/Object;)V
     .locals 0
 
     .line 0
-    check-cast p1, Ljava/lang/Boolean;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$$ExternalSyntheticLambda6;->f$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    check-cast p2, Lkotlin/Pair;
+    check-cast p1, Landroid/util/Pair;
 
-    invoke-static {p1, p2}, Ljp/co/sony/mc/camera/view/FragmentController;->$r8$lambda$kkWvZ7lCBh7BIcfMAyuxuCXP98c(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController;->$r8$lambda$_Y4zzzLRF2_OEVMW3GfVd7TvWpk(Ljp/co/sony/mc/camera/view/FragmentController;Landroid/util/Pair;)V
 
-    move-result-object p0
-
-    return-object p0
+    return-void
 .end method

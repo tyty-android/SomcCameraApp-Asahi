@@ -26,13 +26,23 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;J)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "timeMillis"
+        }
+    .end annotation
 
-    .line 451
+    .line 439
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$NotifyProgressTask;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 452
+    .line 440
     iput-wide p2, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$NotifyProgressTask;->mRecordingTimeMillis:J
 
     return-void
@@ -43,7 +53,7 @@
 .method public run()V
     .locals 3
 
-    .line 457
+    .line 445
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$NotifyProgressTask;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->-$$Nest$fgetmStorageWriteNotifier(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;)Ljp/co/sony/mc/camera/storage/Storage$StorageWriteNotifier;
@@ -52,7 +62,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 458
+    .line 446
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$NotifyProgressTask;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->-$$Nest$fgetmStorageWriteNotifier(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;)Ljp/co/sony/mc/camera/storage/Storage$StorageWriteNotifier;
@@ -61,7 +71,7 @@
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/storage/Storage$StorageWriteNotifier;->notifyWriteStorage()V
 
-    .line 460
+    .line 448
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$NotifyProgressTask;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 

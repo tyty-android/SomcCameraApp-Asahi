@@ -26,7 +26,7 @@
 
     check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;
 
-    invoke-static {p1, p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->$r8$lambda$pWd8v2kWTIXhZptcN34c54_qjqQ(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;)Z
+    invoke-static {p1, p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->$r8$lambda$GM7UlfCsaUlfGJDoJhZQs3Wo8kA(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;)Z
 
     move-result p0
 

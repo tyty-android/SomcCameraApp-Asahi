@@ -43,10 +43,18 @@
 # direct methods
 .method constructor <init>([S)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "array"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 569
+    .line 631
     array-length v1, p1
 
     invoke-direct {p0, p1, v0, v1}, Lcom/google/common/primitives/Shorts$ShortArrayAsList;-><init>([SII)V
@@ -56,17 +64,29 @@
 
 .method constructor <init>([SII)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "array",
+            "start",
+            "end"
+        }
+    .end annotation
 
-    .line 572
+    .line 634
     invoke-direct {p0}, Ljava/util/AbstractList;-><init>()V
 
-    .line 573
+    .line 635
     iput-object p1, p0, Lcom/google/common/primitives/Shorts$ShortArrayAsList;->array:[S
 
-    .line 574
+    .line 636
     iput p2, p0, Lcom/google/common/primitives/Shorts$ShortArrayAsList;->start:I
 
-    .line 575
+    .line 637
     iput p3, p0, Lcom/google/common/primitives/Shorts$ShortArrayAsList;->end:I
 
     return-void
@@ -77,11 +97,19 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 2
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "target"
+        }
+    .end annotation
 
-    .line 597
+    .line 659
     instance-of v0, p1, Ljava/lang/Short;
 
     if-eqz v0, :cond_0
@@ -120,9 +148,17 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 7
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -130,21 +166,21 @@
 
     return v0
 
-    .line 648
+    .line 710
     :cond_0
     instance-of v1, p1, Lcom/google/common/primitives/Shorts$ShortArrayAsList;
 
     if-eqz v1, :cond_4
 
-    .line 649
+    .line 711
     check-cast p1, Lcom/google/common/primitives/Shorts$ShortArrayAsList;
 
-    .line 650
+    .line 712
     invoke-virtual {p0}, Lcom/google/common/primitives/Shorts$ShortArrayAsList;->size()I
 
     move-result v1
 
-    .line 651
+    .line 713
     invoke-virtual {p1}, Lcom/google/common/primitives/Shorts$ShortArrayAsList;->size()I
 
     move-result v2
@@ -161,7 +197,7 @@
     :goto_0
     if-ge v2, v1, :cond_3
 
-    .line 655
+    .line 717
     iget-object v4, p0, Lcom/google/common/primitives/Shorts$ShortArrayAsList;->array:[S
 
     iget v5, p0, Lcom/google/common/primitives/Shorts$ShortArrayAsList;->start:I
@@ -190,7 +226,7 @@
     :cond_3
     return v0
 
-    .line 661
+    .line 723
     :cond_4
     invoke-super {p0, p1}, Ljava/util/AbstractList;->equals(Ljava/lang/Object;)Z
 
@@ -201,8 +237,16 @@
 
 .method public bridge synthetic get(I)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
-    .line 561
+    .line 623
     invoke-virtual {p0, p1}, Lcom/google/common/primitives/Shorts$ShortArrayAsList;->get(I)Ljava/lang/Short;
 
     move-result-object p0
@@ -212,15 +256,23 @@
 
 .method public get(I)Ljava/lang/Short;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
-    .line 590
+    .line 652
     invoke-virtual {p0}, Lcom/google/common/primitives/Shorts$ShortArrayAsList;->size()I
 
     move-result v0
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkElementIndex(II)I
 
-    .line 591
+    .line 653
     iget-object v0, p0, Lcom/google/common/primitives/Shorts$ShortArrayAsList;->array:[S
 
     iget p0, p0, Lcom/google/common/primitives/Shorts$ShortArrayAsList;->start:I
@@ -239,7 +291,7 @@
 .method public hashCode()I
     .locals 3
 
-    .line 667
+    .line 729
     iget v0, p0, Lcom/google/common/primitives/Shorts$ShortArrayAsList;->start:I
 
     const/4 v1, 0x1
@@ -251,7 +303,7 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    .line 668
+    .line 730
     iget-object v2, p0, Lcom/google/common/primitives/Shorts$ShortArrayAsList;->array:[S
 
     aget-short v2, v2, v0
@@ -273,16 +325,24 @@
 .method public indexOf(Ljava/lang/Object;)I
     .locals 3
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "target"
+        }
+    .end annotation
 
-    .line 603
+    .line 665
     instance-of v0, p1, Ljava/lang/Short;
 
     if-eqz v0, :cond_0
 
-    .line 604
+    .line 666
     iget-object v0, p0, Lcom/google/common/primitives/Shorts$ShortArrayAsList;->array:[S
 
     check-cast p1, Ljava/lang/Short;
@@ -301,7 +361,7 @@
 
     if-ltz p1, :cond_0
 
-    .line 606
+    .line 668
     iget p0, p0, Lcom/google/common/primitives/Shorts$ShortArrayAsList;->start:I
 
     sub-int/2addr p1, p0
@@ -325,16 +385,24 @@
 .method public lastIndexOf(Ljava/lang/Object;)I
     .locals 3
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "target"
+        }
+    .end annotation
 
-    .line 615
+    .line 677
     instance-of v0, p1, Ljava/lang/Short;
 
     if-eqz v0, :cond_0
 
-    .line 616
+    .line 678
     iget-object v0, p0, Lcom/google/common/primitives/Shorts$ShortArrayAsList;->array:[S
 
     check-cast p1, Ljava/lang/Short;
@@ -353,7 +421,7 @@
 
     if-ltz p1, :cond_0
 
-    .line 618
+    .line 680
     iget p0, p0, Lcom/google/common/primitives/Shorts$ShortArrayAsList;->start:I
 
     sub-int/2addr p1, p0
@@ -368,8 +436,18 @@
 
 .method public bridge synthetic set(ILjava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "index",
+            "element"
+        }
+    .end annotation
 
-    .line 561
+    .line 623
     check-cast p2, Ljava/lang/Short;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/common/primitives/Shorts$ShortArrayAsList;->set(ILjava/lang/Short;)Ljava/lang/Short;
@@ -381,15 +459,25 @@
 
 .method public set(ILjava/lang/Short;)Ljava/lang/Short;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "element"
+        }
+    .end annotation
 
-    .line 626
+    .line 688
     invoke-virtual {p0}, Lcom/google/common/primitives/Shorts$ShortArrayAsList;->size()I
 
     move-result v0
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkElementIndex(II)I
 
-    .line 627
+    .line 689
     iget-object v0, p0, Lcom/google/common/primitives/Shorts$ShortArrayAsList;->array:[S
 
     iget p0, p0, Lcom/google/common/primitives/Shorts$ShortArrayAsList;->start:I
@@ -400,7 +488,7 @@
 
     add-int/2addr p0, p1
 
-    .line 629
+    .line 691
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -413,7 +501,7 @@
 
     aput-short p1, v0, p0
 
-    .line 630
+    .line 692
     invoke-static {v1}, Ljava/lang/Short;->valueOf(S)Ljava/lang/Short;
 
     move-result-object p0
@@ -424,7 +512,7 @@
 .method public size()I
     .locals 1
 
-    .line 580
+    .line 642
     iget v0, p0, Lcom/google/common/primitives/Shorts$ShortArrayAsList;->end:I
 
     iget p0, p0, Lcom/google/common/primitives/Shorts$ShortArrayAsList;->start:I
@@ -436,6 +524,17 @@
 
 .method public subList(II)Ljava/util/List;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromIndex",
+            "toIndex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -445,24 +544,24 @@
         }
     .end annotation
 
-    .line 635
+    .line 697
     invoke-virtual {p0}, Lcom/google/common/primitives/Shorts$ShortArrayAsList;->size()I
 
     move-result v0
 
-    .line 636
+    .line 698
     invoke-static {p1, p2, v0}, Lcom/google/common/base/Preconditions;->checkPositionIndexes(III)V
 
     if-ne p1, p2, :cond_0
 
-    .line 638
+    .line 700
     invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     move-result-object p0
 
     return-object p0
 
-    .line 640
+    .line 702
     :cond_0
     new-instance v0, Lcom/google/common/primitives/Shorts$ShortArrayAsList;
 
@@ -482,7 +581,7 @@
 .method toShortArray()[S
     .locals 2
 
-    .line 684
+    .line 746
     iget-object v0, p0, Lcom/google/common/primitives/Shorts$ShortArrayAsList;->array:[S
 
     iget v1, p0, Lcom/google/common/primitives/Shorts$ShortArrayAsList;->start:I
@@ -499,7 +598,7 @@
 .method public toString()Ljava/lang/String;
     .locals 4
 
-    .line 675
+    .line 737
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-virtual {p0}, Lcom/google/common/primitives/Shorts$ShortArrayAsList;->size()I
@@ -512,7 +611,7 @@
 
     const/16 v1, 0x5b
 
-    .line 676
+    .line 738
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     move-result-object v1
@@ -525,7 +624,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 677
+    .line 739
     iget v1, p0, Lcom/google/common/primitives/Shorts$ShortArrayAsList;->start:I
 
     :goto_0
@@ -535,7 +634,7 @@
 
     if-ge v1, v2, :cond_0
 
-    .line 678
+    .line 740
     const-string v2, ", "
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -553,7 +652,7 @@
     :cond_0
     const/16 p0, 0x5d
 
-    .line 680
+    .line 742
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     move-result-object p0

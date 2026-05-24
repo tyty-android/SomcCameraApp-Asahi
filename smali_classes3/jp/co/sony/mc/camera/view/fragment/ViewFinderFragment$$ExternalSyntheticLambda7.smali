@@ -3,36 +3,40 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroidx/lifecycle/Observer;
-
-
-# instance fields
-.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
+.implements Lkotlin/jvm/functions/Function5;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;)V
+.method public synthetic constructor <init>()V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda7;->f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onChanged(Ljava/lang/Object;)V
-    .locals 0
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 0
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda7;->f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
+    new-instance v0, Ljp/co/sony/mc/camera/util/TuplesUtil$Quintuple;
 
-    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
+    check-cast p1, Ljava/lang/Boolean;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->$r8$lambda$qKxbRJ5P1e_MuCAEACtgxOzC1_8(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;)V
+    check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestionParameter;
 
-    return-void
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestionParameter;
+
+    check-cast p4, [Ljava/lang/Integer;
+
+    check-cast p5, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
+
+    move-object p0, v0
+
+    invoke-direct/range {p0 .. p5}, Ljp/co/sony/mc/camera/util/TuplesUtil$Quintuple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    return-object v0
 .end method

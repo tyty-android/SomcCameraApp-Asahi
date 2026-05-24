@@ -57,7 +57,7 @@
     .line 16
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/BasicModeLevelMeterDisplay;
 
-    const v1, 0x7f1103f3
+    const v1, 0x7f11043e
 
     const-string v2, "OFF"
 
@@ -74,7 +74,7 @@
 
     const/4 v1, 0x1
 
-    const v2, 0x7f1102f9
+    const v2, 0x7f110342
 
     const-string v3, "ON"
 
@@ -87,7 +87,7 @@
 
     const/4 v1, 0x2
 
-    const v2, 0x7f1102fa
+    const v2, 0x7f110343
 
     const-string v3, "LEVEL_METER_ONLY"
 
@@ -107,6 +107,21 @@
 
 .method private constructor <init>(Ljava/lang/String;III)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)V"
@@ -147,6 +162,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/BasicModeLevelMeterDisplay;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 15
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/BasicModeLevelMeterDisplay;

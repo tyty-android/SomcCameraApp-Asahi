@@ -15,7 +15,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nMoreModeSelectionFragment.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MoreModeSelectionFragment.kt\njp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment\n+ 2 View.kt\nandroidx/core/view/ViewKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,292:1\n326#2,4:293\n1557#3:297\n1628#3,3:298\n*S KotlinDebug\n*F\n+ 1 MoreModeSelectionFragment.kt\njp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment\n*L\n250#1:293,4\n173#1:297\n173#1:298,3\n*E\n"
+    value = "SMAP\nMoreModeSelectionFragment.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MoreModeSelectionFragment.kt\njp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment\n+ 2 View.kt\nandroidx/core/view/ViewKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,296:1\n326#2,4:297\n1557#3:301\n1628#3,3:302\n*S KotlinDebug\n*F\n+ 1 MoreModeSelectionFragment.kt\njp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment\n*L\n254#1:297,4\n172#1:301\n172#1:302,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -214,17 +214,17 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 58
+    .line 57
     invoke-direct {p0}, Landroidx/fragment/app/Fragment;-><init>()V
 
-    .line 63
+    .line 62
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->setting:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
-    .line 77
+    .line 76
     new-instance v0, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment$$ExternalSyntheticLambda2;
 
     invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment$$ExternalSyntheticLambda2;-><init>(Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;)V
@@ -237,28 +237,28 @@
 .method private final changeModeSelectorLayout(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
     .locals 6
 
-    .line 248
+    .line 252
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getBinding()Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBinding;
 
     move-result-object p0
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBinding;->modeSelectorScrollView:Landroidx/core/widget/NestedScrollView;
 
-    .line 249
+    .line 253
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientationKt;->toRotation(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)F
 
     move-result v0
 
     invoke-virtual {p0, v0}, Landroidx/core/widget/NestedScrollView;->setRotation(F)V
 
-    .line 250
+    .line 254
     invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     move-object v0, p0
 
     check-cast v0, Landroid/view/View;
 
-    .line 293
+    .line 297
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v1
@@ -269,34 +269,34 @@
 
     check-cast v1, Landroid/view/ViewGroup$LayoutParams;
 
-    .line 294
+    .line 298
     move-object v2, v1
 
     check-cast v2, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;
 
-    .line 251
+    .line 255
     invoke-virtual {p0}, Landroidx/core/widget/NestedScrollView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
-    const v4, 0x7f07016c
+    const v4, 0x7f0701aa
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v3
 
-    .line 254
+    .line 258
     invoke-virtual {p0}, Landroidx/core/widget/NestedScrollView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
-    const v5, 0x7f070172
+    const v5, 0x7f0701b0
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v4
 
-    .line 257
+    .line 261
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;->isPortrait()Z
 
     move-result v5
@@ -317,10 +317,10 @@
 
     iput v3, v2, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->matchConstraintMaxHeight:I
 
-    .line 295
+    .line 299
     invoke-virtual {v0, v1}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 263
+    .line 267
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;->isPortrait()Z
 
     move-result p1
@@ -331,7 +331,7 @@
 
     goto :goto_1
 
-    .line 266
+    .line 270
     :cond_1
     invoke-virtual {p0}, Landroidx/core/widget/NestedScrollView;->getMeasuredHeight()I
 
@@ -349,13 +349,13 @@
 
     div-float/2addr p1, v0
 
-    .line 263
+    .line 267
     :goto_1
     invoke-virtual {p0, p1}, Landroidx/core/widget/NestedScrollView;->setTranslationY(F)V
 
     return-void
 
-    .line 293
+    .line 297
     :cond_2
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -369,7 +369,7 @@
 .method private final getBinding()Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBinding;
     .locals 0
 
-    .line 61
+    .line 60
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->_binding:Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBinding;
 
     invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -380,7 +380,7 @@
 .method private final getCameraViewModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
     .locals 1
 
-    .line 72
+    .line 71
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object p0
@@ -409,7 +409,7 @@
 .method private final getOrientationViewModel()Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
     .locals 1
 
-    .line 74
+    .line 73
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object p0
@@ -442,7 +442,7 @@
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 78
+    .line 77
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getOrientationViewModel()Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
     move-result-object p1
@@ -459,7 +459,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 79
+    .line 78
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->changeModeSelectorLayout(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
 
     :cond_0
@@ -483,7 +483,7 @@
 .method private final onItemClicked(Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;)V
     .locals 10
 
-    .line 196
+    .line 195
     sget-object v0, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment$WhenMappings;->$EnumSwitchMapping$0:[I
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;->ordinal()I
@@ -504,7 +504,7 @@
 
     if-eq v0, v2, :cond_0
 
-    .line 242
+    .line 246
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getCameraOperator()Ljp/co/sony/mc/camera/view/CameraOperator;
 
     move-result-object p0
@@ -517,7 +517,7 @@
 
     goto/16 :goto_1
 
-    .line 231
+    .line 235
     :cond_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getCameraViewModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
@@ -545,7 +545,7 @@
 
     if-nez v0, :cond_2
 
-    .line 232
+    .line 236
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getCameraViewModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
     move-result-object v0
@@ -574,7 +574,7 @@
 
     goto :goto_0
 
-    .line 237
+    .line 241
     :cond_1
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getCameraOperator()Ljp/co/sony/mc/camera/view/CameraOperator;
 
@@ -588,7 +588,7 @@
 
     goto/16 :goto_1
 
-    .line 233
+    .line 237
     :cond_2
     :goto_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getCameraViewModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
@@ -599,15 +599,15 @@
 
     move-result-object p0
 
-    .line 234
+    .line 238
     sget-object p1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_CAPTURING_MODE_IN_HIGH_TEMPERATURE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 233
+    .line 237
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/MessageUiState;->showDialog(Ljp/co/sony/mc/camera/view/messagedialog/DialogId;)V
 
     goto/16 :goto_1
 
-    .line 198
+    .line 197
     :cond_3
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
 
@@ -619,37 +619,37 @@
 
     check-cast p1, Ljp/co/sony/mc/camera/CameraActivity;
 
-    .line 199
+    .line 198
     invoke-static {}, Ljp/co/sony/mc/camera/view/modeselector/LaunchCameraIntentBuilder;->create()Ljp/co/sony/mc/camera/view/modeselector/LaunchCameraIntentBuilder;
 
     move-result-object v0
 
-    .line 200
+    .line 199
     const-string v1, "capturing_mode_sweep_panorama"
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/modeselector/LaunchCameraIntentBuilder;->mode(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/modeselector/LaunchCameraIntentBuilder;
 
     move-result-object v0
 
-    .line 202
+    .line 201
     const-string v1, "com.sonyericsson.android.camera3d"
 
-    .line 203
+    .line 202
     const-string v2, "com.sonyericsson.android.camera3d.Camera2App"
 
-    .line 201
+    .line 200
     invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/view/modeselector/LaunchCameraIntentBuilder;->activity(Ljava/lang/String;Ljava/lang/String;)Ljp/co/sony/mc/camera/view/modeselector/LaunchCameraIntentBuilder;
 
     move-result-object v0
 
-    .line 205
+    .line 204
     const-string v1, "android.intent.category.MONKEY"
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/modeselector/LaunchCameraIntentBuilder;->category(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/modeselector/LaunchCameraIntentBuilder;
 
     move-result-object v0
 
-    .line 206
+    .line 205
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->setting:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     sget-object v2, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -670,7 +670,7 @@
 
     move-result-object v0
 
-    .line 207
+    .line 206
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/CameraActivity;->getPackageName()Ljava/lang/String;
 
     move-result-object v1
@@ -685,12 +685,12 @@
 
     move-result-object v0
 
-    .line 208
+    .line 207
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/modeselector/LaunchCameraIntentBuilder;->commit()Landroid/content/Intent;
 
     move-result-object v0
 
-    .line 210
+    .line 209
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/CameraActivity;->isDeviceInSecurityLock()Z
 
     move-result v1
@@ -699,15 +699,15 @@
 
     if-eqz v1, :cond_4
 
-    .line 211
+    .line 210
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getMessageController()Ljp/co/sony/mc/camera/view/MessageController;
 
     move-result-object p0
 
-    .line 212
+    .line 211
     sget-object p1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->UNLOCK_REQUEST_FOR_OPENING_ADD_ON_APP:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 214
+    .line 213
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -716,12 +716,12 @@
 
     move-result-object v0
 
-    .line 211
+    .line 210
     invoke-interface {p0, p1, v0}, Ljp/co/sony/mc/camera/view/MessageController;->showDialog(Ljp/co/sony/mc/camera/view/messagedialog/DialogId;[Ljava/lang/Object;)V
 
     goto :goto_1
 
-    .line 217
+    .line 216
     :cond_4
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getCameraOperator()Ljp/co/sony/mc/camera/view/CameraOperator;
 
@@ -733,7 +733,7 @@
 
     invoke-interface {v1, v3}, Ljp/co/sony/mc/camera/view/CameraOperator;->closeCamera(Ljava/lang/Runnable;)V
 
-    .line 223
+    .line 227
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddContext;->INSTANCE:Ljp/co/sony/mc/camera/idd/event/IddContext;
 
     sget-object p1, Ljp/co/sony/mc/camera/idd/value/IddMode$PANORAMA;->INSTANCE:Ljp/co/sony/mc/camera/idd/value/IddMode$PANORAMA;
@@ -742,14 +742,14 @@
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddContext;->mode(Ljp/co/sony/mc/camera/idd/value/IddMode;)Ljp/co/sony/mc/camera/idd/event/IddContext;
 
-    .line 224
+    .line 228
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddContext;->INSTANCE:Ljp/co/sony/mc/camera/idd/event/IddContext;
 
     sget-object p1, Ljp/co/sony/mc/camera/LaunchTrigger;->OTHER:Ljp/co/sony/mc/camera/LaunchTrigger;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddContext;->launchedBy(Ljp/co/sony/mc/camera/LaunchTrigger;)Ljp/co/sony/mc/camera/idd/event/IddContext;
 
-    .line 225
+    .line 229
     new-instance p0, Ljp/co/sony/mc/camera/idd/event/IddLaunchEvent;
 
     const/16 v8, 0x7f
@@ -781,7 +781,7 @@
 .end method
 
 .method private static final onItemClicked$lambda$16(Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;Ljp/co/sony/mc/camera/CameraActivity;Landroid/content/Intent;I)V
-    .locals 3
+    .locals 4
 
     const-string/jumbo v0, "this$0"
 
@@ -791,33 +791,59 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 218
+    .line 217
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->setting:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    .line 218
+    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getDefaultCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    move-result-object v2
+
+    .line 217
     invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->changeCameraSetting(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
 
-    .line 219
+    .line 220
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->setting:Ljp/co/sony/mc/camera/setting/CameraProSetting;
+
+    sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->HYBRID_ZOOM:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    check-cast v1, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+
+    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;
+
+    const/4 v3, 0x0
+
+    invoke-virtual {v0, v1, v2, v3}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Z)V
+
+    .line 221
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->setting:Ljp/co/sony/mc/camera/setting/CameraProSetting;
+
+    sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASE_ZOOM_RATIO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    check-cast v1, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+
+    const/high16 v2, 0x3f800000    # 1.0f
+
+    invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2, v3}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Z)V
+
+    .line 223
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->setting:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->ZOOM_RATIO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    const/high16 v1, 0x3f800000    # 1.0f
+    invoke-virtual {p0, v0, v2, v3}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Z)V
 
-    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v1
-
-    const/4 v2, 0x0
-
-    invoke-virtual {p0, v0, v1, v2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Z)V
-
-    .line 220
+    .line 224
     invoke-virtual {p1, p2, p3}, Ljp/co/sony/mc/camera/CameraActivity;->startActivityForResult(Landroid/content/Intent;I)V
 
     return-void
@@ -830,7 +856,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 147
+    .line 146
     invoke-virtual {p1}, Lkotlin/Triple;->component1()Ljava/lang/Object;
 
     move-result-object v0
@@ -857,7 +883,7 @@
 
     check-cast p1, Ljava/lang/Boolean;
 
-    .line 148
+    .line 147
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p1
@@ -866,7 +892,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 150
+    .line 149
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getCameraViewModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
     move-result-object p1
@@ -887,7 +913,7 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 152
+    .line 151
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getCameraOperator()Ljp/co/sony/mc/camera/view/CameraOperator;
 
     move-result-object p1
@@ -903,7 +929,7 @@
     :cond_0
     if-eqz v1, :cond_1
 
-    .line 155
+    .line 154
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getCameraViewModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
     move-result-object p1
@@ -924,7 +950,7 @@
 
     if-ne p1, v0, :cond_1
 
-    .line 157
+    .line 156
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getCameraOperator()Ljp/co/sony/mc/camera/view/CameraOperator;
 
     move-result-object p0
@@ -937,7 +963,7 @@
 
     invoke-interface {p0, p1, v0}, Ljp/co/sony/mc/camera/view/CameraOperator;->setSetting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    .line 160
+    .line 159
     :cond_1
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
@@ -951,7 +977,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 168
+    .line 167
     new-instance v0, Ljp/co/sony/mc/camera/util/TuplesUtil$Quadruple;
 
     invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -974,7 +1000,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 170
+    .line 169
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/util/TuplesUtil$Quadruple;->component1()Ljava/lang/Object;
 
     move-result-object v0
@@ -1009,17 +1035,17 @@
 
     if-nez v0, :cond_4
 
-    .line 172
+    .line 171
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getBinding()Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBinding;
 
     move-result-object v0
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBinding;->modeSelector:Landroidx/recyclerview/widget/RecyclerView;
 
-    .line 173
+    .line 172
     check-cast v1, Ljava/lang/Iterable;
 
-    .line 297
+    .line 301
     new-instance v3, Ljava/util/ArrayList;
 
     const/16 v4, 0xa
@@ -1032,7 +1058,7 @@
 
     check-cast v3, Ljava/util/Collection;
 
-    .line 298
+    .line 302
     invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -1048,35 +1074,35 @@
 
     move-result-object v4
 
-    .line 299
+    .line 303
     check-cast v4, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;
 
-    .line 174
+    .line 173
     new-instance v11, Ljp/co/sony/mc/camera/view/addon/AddonItem;
 
-    .line 175
+    .line 174
     invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;->getLabelResId()I
 
     move-result v6
 
-    .line 176
+    .line 175
     invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;->getContentDescriptionResId()I
 
     move-result v7
 
-    .line 177
+    .line 176
     invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;->getIconResId()I
 
     move-result v8
 
-    .line 178
+    .line 177
     sget-object v5, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;->VIDEO_AUTO_FRAMING:Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;
 
     const/4 v9, 0x0
 
     if-eq v4, v5, :cond_0
 
-    .line 179
+    .line 178
     sget-object v5, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;->VIDEO_GIMBAL:Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;
 
     if-ne v4, v5, :cond_2
@@ -1084,7 +1110,7 @@
     :cond_0
     if-nez v2, :cond_1
 
-    .line 180
+    .line 179
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v5
@@ -1096,7 +1122,7 @@
 
     move v9, v5
 
-    .line 181
+    .line 180
     :cond_2
     new-instance v10, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment$$ExternalSyntheticLambda1;
 
@@ -1104,19 +1130,19 @@
 
     move-object v5, v11
 
-    .line 174
+    .line 173
     invoke-direct/range {v5 .. v10}, Ljp/co/sony/mc/camera/view/addon/AddonItem;-><init>(IIIZLandroid/view/View$OnClickListener;)V
 
-    .line 299
+    .line 303
     invoke-interface {v3, v11}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 300
+    .line 304
     :cond_3
     check-cast v3, Ljava/util/List;
 
-    .line 186
+    .line 185
     new-instance p0, Landroidx/recyclerview/widget/GridLayoutManager;
 
     invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getContext()Landroid/content/Context;
@@ -1131,7 +1157,7 @@
 
     invoke-virtual {v0, p0}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutManager(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)V
 
-    .line 187
+    .line 186
     new-instance p0, Ljp/co/sony/mc/camera/view/addon/AddonAdapter;
 
     invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getContext()Landroid/content/Context;
@@ -1144,7 +1170,7 @@
 
     invoke-virtual {v0, p0}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$Adapter;)V
 
-    .line 190
+    .line 189
     :cond_4
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
@@ -1158,7 +1184,7 @@
 
     invoke-static {p0, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 182
+    .line 181
     invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->onItemClicked(Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;)V
@@ -1173,12 +1199,12 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 137
+    .line 136
     invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->changeModeSelectorLayout(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
 
-    .line 138
+    .line 137
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
@@ -1187,7 +1213,7 @@
 .method private static final onViewCreated$lambda$9(ZZLjava/lang/Boolean;)Lkotlin/Triple;
     .locals 1
 
-    .line 145
+    .line 144
     new-instance v0, Lkotlin/Triple;
 
     invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -1208,7 +1234,7 @@
 .method public final getCameraOperator()Ljp/co/sony/mc/camera/view/CameraOperator;
     .locals 0
 
-    .line 65
+    .line 64
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->cameraOperator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     if-eqz p0, :cond_0
@@ -1228,7 +1254,7 @@
 .method public final getMessageController()Ljp/co/sony/mc/camera/view/MessageController;
     .locals 0
 
-    .line 69
+    .line 68
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->messageController:Ljp/co/sony/mc/camera/view/MessageController;
 
     if-eqz p0, :cond_0
@@ -1248,7 +1274,7 @@
 .method public final getScreenLauncher()Ljp/co/sony/mc/camera/view/ScreenLauncher;
     .locals 0
 
-    .line 67
+    .line 66
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->screenLauncher:Ljp/co/sony/mc/camera/view/ScreenLauncher;
 
     if-eqz p0, :cond_0
@@ -1256,7 +1282,7 @@
     return-object p0
 
     :cond_0
-    const-string p0, "screenLauncher"
+    const-string/jumbo p0, "screenLauncher"
 
     invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
@@ -1268,7 +1294,7 @@
 .method public onBackPressed()Z
     .locals 2
 
-    .line 280
+    .line 284
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getCameraViewModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
     move-result-object v0
@@ -1297,7 +1323,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 281
+    .line 285
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getCameraViewModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
     move-result-object p0
@@ -1325,14 +1351,14 @@
 
     const/4 p3, 0x0
 
-    .line 88
+    .line 87
     invoke-static {p1, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBinding;->inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBinding;
 
     move-result-object p1
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->_binding:Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBinding;
 
-    .line 89
+    .line 88
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getBinding()Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBinding;
 
     move-result-object p0
@@ -1351,23 +1377,23 @@
 .method public onDestroyView()V
     .locals 2
 
-    .line 272
+    .line 276
     invoke-super {p0}, Landroidx/fragment/app/Fragment;->onDestroyView()V
 
-    .line 273
+    .line 277
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getBinding()Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBinding;
 
     move-result-object v0
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBinding;->modeSelectorScrollView:Landroidx/core/widget/NestedScrollView;
 
-    .line 274
+    .line 278
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->modeSelectorLayoutChangeListener:Landroid/view/View$OnLayoutChangeListener;
 
-    .line 273
+    .line 277
     invoke-virtual {v0, v1}, Landroidx/core/widget/NestedScrollView;->removeOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
 
-    .line 276
+    .line 280
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getBinding()Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBinding;
 
     move-result-object p0
@@ -1381,141 +1407,6 @@
     return-void
 .end method
 
-.method public onExternalDisplayConnected()V
-    .locals 0
-
-    .line 58
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/UserOperationListener$DefaultImpls;->onExternalDisplayConnected(Ljp/co/sony/mc/camera/view/UserOperationListener;)V
-
-    return-void
-.end method
-
-.method public onExternalDisplayDisconnected()V
-    .locals 0
-
-    .line 58
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/UserOperationListener$DefaultImpls;->onExternalDisplayDisconnected(Ljp/co/sony/mc/camera/view/UserOperationListener;)V
-
-    return-void
-.end method
-
-.method public onFinderClick(Landroid/graphics/Point;Z)V
-    .locals 0
-
-    .line 58
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/UserOperationListener$DefaultImpls;->onFinderClick(Ljp/co/sony/mc/camera/view/UserOperationListener;Landroid/graphics/Point;Z)V
-
-    return-void
-.end method
-
-.method public onFinderDoubleClick(Landroid/graphics/Point;Z)V
-    .locals 0
-
-    .line 58
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/UserOperationListener$DefaultImpls;->onFinderDoubleClick(Ljp/co/sony/mc/camera/view/UserOperationListener;Landroid/graphics/Point;Z)V
-
-    return-void
-.end method
-
-.method public onFinderLongClick(Landroid/graphics/Point;ZZ)V
-    .locals 0
-
-    .line 58
-    invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/UserOperationListener$DefaultImpls;->onFinderLongClick(Ljp/co/sony/mc/camera/view/UserOperationListener;Landroid/graphics/Point;ZZ)V
-
-    return-void
-.end method
-
-.method public onFinderSwipe(Landroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
-    .locals 0
-
-    .line 58
-    invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/UserOperationListener$DefaultImpls;->onFinderSwipe(Ljp/co/sony/mc/camera/view/UserOperationListener;Landroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
-
-    return-void
-.end method
-
-.method public onFinderTouchUp()V
-    .locals 0
-
-    .line 58
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/UserOperationListener$DefaultImpls;->onFinderTouchUp(Ljp/co/sony/mc/camera/view/UserOperationListener;)V
-
-    return-void
-.end method
-
-.method public onFocusPressed()V
-    .locals 0
-
-    .line 58
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/UserOperationListener$DefaultImpls;->onFocusPressed(Ljp/co/sony/mc/camera/view/UserOperationListener;)V
-
-    return-void
-.end method
-
-.method public onFocusPressedDuringSelftimer()V
-    .locals 0
-
-    .line 58
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/UserOperationListener$DefaultImpls;->onFocusPressedDuringSelftimer(Ljp/co/sony/mc/camera/view/UserOperationListener;)V
-
-    return-void
-.end method
-
-.method public onFocusPressedDuringVideo()V
-    .locals 0
-
-    .line 58
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/UserOperationListener$DefaultImpls;->onFocusPressedDuringVideo(Ljp/co/sony/mc/camera/view/UserOperationListener;)V
-
-    return-void
-.end method
-
-.method public onHardwareKeyHeld(Ljp/co/sony/mc/camera/view/EventProcedure$EventSource;)V
-    .locals 0
-
-    .line 58
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/UserOperationListener$DefaultImpls;->onHardwareKeyHeld(Ljp/co/sony/mc/camera/view/UserOperationListener;Ljp/co/sony/mc/camera/view/EventProcedure$EventSource;)V
-
-    return-void
-.end method
-
-.method public onHardwareKeyReleased()V
-    .locals 0
-
-    .line 58
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/UserOperationListener$DefaultImpls;->onHardwareKeyReleased(Ljp/co/sony/mc/camera/view/UserOperationListener;)V
-
-    return-void
-.end method
-
-.method public onRemoconKeyPressed()V
-    .locals 0
-
-    .line 58
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/UserOperationListener$DefaultImpls;->onRemoconKeyPressed(Ljp/co/sony/mc/camera/view/UserOperationListener;)V
-
-    return-void
-.end method
-
-.method public onShutterPressedDuringSelftimer()V
-    .locals 0
-
-    .line 58
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/UserOperationListener$DefaultImpls;->onShutterPressedDuringSelftimer(Ljp/co/sony/mc/camera/view/UserOperationListener;)V
-
-    return-void
-.end method
-
-.method public onShutterPressedDuringVideo()V
-    .locals 0
-
-    .line 58
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/UserOperationListener$DefaultImpls;->onShutterPressedDuringVideo(Ljp/co/sony/mc/camera/view/UserOperationListener;)V
-
-    return-void
-.end method
-
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 8
 
@@ -1523,22 +1414,22 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 94
+    .line 93
     invoke-super {p0, p1, p2}, Landroidx/fragment/app/Fragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
-    .line 96
+    .line 95
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getBinding()Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBinding;
 
     move-result-object p1
 
-    .line 97
+    .line 96
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getViewLifecycleOwner()Landroidx/lifecycle/LifecycleOwner;
 
     move-result-object p2
 
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 98
+    .line 97
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getCameraViewModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
     move-result-object p2
@@ -1549,41 +1440,41 @@
 
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBinding;->setModeCustomUiState(Ljp/co/sony/mc/camera/view/uistate/ModeCustomUiState;)V
 
-    .line 101
+    .line 100
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getBinding()Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBinding;
 
     move-result-object p1
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBinding;->modeSelectorScrollView:Landroidx/core/widget/NestedScrollView;
 
-    .line 102
+    .line 101
     invoke-virtual {p1}, Landroidx/core/widget/NestedScrollView;->getResources()Landroid/content/res/Resources;
 
     move-result-object p2
 
-    const v0, 0x7f07016c
+    const v0, 0x7f0701aa
 
     invoke-virtual {p2, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result p2
 
-    .line 105
+    .line 104
     invoke-virtual {p1}, Landroidx/core/widget/NestedScrollView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    const v1, 0x7f070171
+    const v1, 0x7f0701af
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v0
 
-    .line 108
+    .line 107
     invoke-virtual {p1}, Landroidx/core/widget/NestedScrollView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    const v2, 0x7f070172
+    const v2, 0x7f0701b0
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1595,31 +1486,31 @@
 
     add-int/2addr v2, v0
 
-    .line 111
+    .line 110
     invoke-virtual {p1, v2}, Landroidx/core/widget/NestedScrollView;->setMinimumWidth(I)V
 
     mul-int/lit8 v1, v1, 0x2
 
     add-int/2addr p2, v1
 
-    .line 113
+    .line 112
     invoke-virtual {p1, p2}, Landroidx/core/widget/NestedScrollView;->setMinimumHeight(I)V
 
-    .line 116
+    .line 115
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getBinding()Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBinding;
 
     move-result-object p1
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBinding;->moreIndicator:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;
 
-    .line 117
+    .line 116
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getViewLifecycleOwner()Landroidx/lifecycle/LifecycleOwner;
 
     move-result-object p2
 
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 118
+    .line 117
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getCameraViewModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
     move-result-object p2
@@ -1630,14 +1521,14 @@
 
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;->setSystemStatusModel(Ljp/co/sony/mc/camera/view/viewmodel/SystemStatusModel;)V
 
-    .line 119
+    .line 118
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getOrientationViewModel()Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
     move-result-object p2
 
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;->setOrientationViewModel(Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V
 
-    .line 120
+    .line 119
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getCameraViewModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
     move-result-object p2
@@ -1648,7 +1539,7 @@
 
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;->setIndicatorUiState(Ljp/co/sony/mc/camera/view/uistate/IndicatorUiState;)V
 
-    .line 121
+    .line 120
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getCameraViewModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
     move-result-object p2
@@ -1659,28 +1550,28 @@
 
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;->setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
 
-    .line 123
+    .line 122
     new-instance p2, Ljp/co/sony/mc/camera/view/viewbinder/StatusIndicatorViewBinder;
 
     invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-direct {p2, p1}, Ljp/co/sony/mc/camera/view/viewbinder/StatusIndicatorViewBinder;-><init>(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;)V
 
-    .line 126
+    .line 125
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getBinding()Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBinding;
 
     move-result-object p1
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBinding;->modeCustomLayout:Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBinding;
 
-    .line 127
+    .line 126
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getViewLifecycleOwner()Landroidx/lifecycle/LifecycleOwner;
 
     move-result-object p2
 
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 128
+    .line 127
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getCameraViewModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
     move-result-object p2
@@ -1691,7 +1582,7 @@
 
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBinding;->setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
 
-    .line 129
+    .line 128
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getCameraViewModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
     move-result-object p2
@@ -1702,7 +1593,7 @@
 
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBinding;->setModeCustomUiState(Ljp/co/sony/mc/camera/view/uistate/ModeCustomUiState;)V
 
-    .line 130
+    .line 129
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getCameraViewModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
     move-result-object p2
@@ -1713,21 +1604,21 @@
 
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBinding;->setModeDialUiState(Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;)V
 
-    .line 131
+    .line 130
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getOrientationViewModel()Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
     move-result-object p2
 
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBinding;->setOrientationViewModel(Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V
 
-    .line 133
+    .line 132
     new-instance p2, Ljp/co/sony/mc/camera/view/viewbinder/ModeCustomViewBinder;
 
     invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-direct {p2, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ModeCustomViewBinder;-><init>(Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBinding;)V
 
-    .line 136
+    .line 135
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getOrientationViewModel()Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
     move-result-object p1
@@ -1752,10 +1643,10 @@
 
     invoke-virtual {p1, p2, v1}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
-    .line 140
+    .line 139
     sget-object p1, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 141
+    .line 140
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getCameraViewModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
     move-result-object p2
@@ -1768,7 +1659,7 @@
 
     move-result-object p2
 
-    .line 142
+    .line 141
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getCameraViewModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
     move-result-object v0
@@ -1781,7 +1672,7 @@
 
     move-result-object v0
 
-    .line 143
+    .line 142
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getCameraViewModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
     move-result-object v1
@@ -1798,12 +1689,12 @@
 
     invoke-direct {v2}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment$$ExternalSyntheticLambda4;-><init>()V
 
-    .line 140
+    .line 139
     invoke-virtual {p1, p2, v0, v1, v2}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function3;)Landroidx/lifecycle/LiveData;
 
     move-result-object p1
 
-    .line 146
+    .line 145
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getViewLifecycleOwner()Landroidx/lifecycle/LifecycleOwner;
 
     move-result-object p2
@@ -1820,10 +1711,10 @@
 
     invoke-virtual {p1, p2, v1}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
-    .line 162
+    .line 161
     sget-object v2, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 163
+    .line 162
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getCameraViewModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
     move-result-object p1
@@ -1840,7 +1731,7 @@
 
     move-result-object v3
 
-    .line 164
+    .line 163
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getCameraViewModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
     move-result-object p1
@@ -1853,7 +1744,7 @@
 
     move-result-object v4
 
-    .line 165
+    .line 164
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getCameraViewModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
     move-result-object p1
@@ -1866,7 +1757,7 @@
 
     move-result-object v5
 
-    .line 166
+    .line 165
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getCameraViewModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
     move-result-object p1
@@ -1883,12 +1774,12 @@
 
     invoke-direct {v7}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment$$ExternalSyntheticLambda6;-><init>()V
 
-    .line 162
+    .line 161
     invoke-virtual/range {v2 .. v7}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function4;)Landroidx/lifecycle/LiveData;
 
     move-result-object p1
 
-    .line 169
+    .line 168
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getViewLifecycleOwner()Landroidx/lifecycle/LifecycleOwner;
 
     move-result-object p2
@@ -1905,7 +1796,7 @@
 
     invoke-virtual {p1, p2, v1}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
-    .line 192
+    .line 191
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->getBinding()Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBinding;
 
     move-result-object p1
@@ -1926,7 +1817,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 65
+    .line 64
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->cameraOperator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     return-void
@@ -1939,7 +1830,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 69
+    .line 68
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->messageController:Ljp/co/sony/mc/camera/view/MessageController;
 
     return-void
@@ -1952,7 +1843,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 67
+    .line 66
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->screenLauncher:Ljp/co/sony/mc/camera/view/ScreenLauncher;
 
     return-void

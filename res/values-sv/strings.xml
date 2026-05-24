@@ -82,6 +82,7 @@ Du får aviseringar och dialogrutor. Välj Parkoppla på samtliga och tryck seda
     <string name="call_notification_incoming_text">Inkommande samtal</string>
     <string name="call_notification_ongoing_text">Pågående samtal</string>
     <string name="call_notification_screening_text">Ett inkommande samtal filtreras</string>
+    <string name="camera_string_saving_process_hint_txt">Sparar... Vänta tills allt är sparat.</string>
     <string name="camera_strings_accept_privacy_policy_txt">Du har tidigare godkänt sekretesspolicyn men kan alltid ändra dig.</string>
     <string name="camera_strings_accessibility_48_mega_pixel_txt">48 megapixel</string>
     <string name="camera_strings_accessibility_adjust_bokeh_txt">Anpassa Bokeh</string>
@@ -92,6 +93,27 @@ Du får aviseringar och dialogrutor. Välj Parkoppla på samtliga och tryck seda
     <string name="camera_strings_accessibility_adjust_framing_size_smaller_txt">Minska storlek på ram</string>
     <string name="camera_strings_accessibility_adjust_framing_size_txt">Anpassa storlek på ram</string>
     <string name="camera_strings_accessibility_adjust_shutter_speed_txt">Slutarhastighet</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_look_menu_txt">Stäng-knapp. Stänger stilmenyn.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_menu_txt">Stäng anpassad meny</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_suggests_txt">Stäng föreslagna justeringar</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_menu_txt">För närvarande tillämpat Anpassad stil. Öppnar justeringsmenyn.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_txt">Anpassad stil. Applicerar stil, ljusstyrka och färginställningar som är registrerade i den anpassade menyn.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_tab_txt">Anpassad flik. Applicerar stil, ljusstyrka och färginställningar som är registrerade i den anpassade menyn.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_button_txt">Anpassad knapp. Öppnar en meny där du kan göra ytterligare justeringar när rekommenderade justeringar tillämpas.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_param_txt">%1$s är inställd på %2$s</string>
+    <string name="camera_strings_accessibility_ai_suggestion_first_time_txt">AI-Kameraassistent. Denna funktion föreslår inställningar som färg utifrån scenen.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_four_of_some_suggests_txt">Fjärde föreslagna justeringen</string>
+    <string name="camera_strings_accessibility_ai_suggestion_look_menu_txt">"%1$s
+Öppnar menyn för kreativ stil"</string>
+    <string name="camera_strings_accessibility_ai_suggestion_new_suggest_txt">Nya rekommenderade justeringar har föreslagits</string>
+    <string name="camera_strings_accessibility_ai_suggestion_one_of_some_suggests_txt">Första föreslagna justeringen</string>
+    <string name="camera_strings_accessibility_ai_suggestion_open_suggests_txt">Expandera föreslagna justeringar</string>
+    <string name="camera_strings_accessibility_ai_suggestion_reset_to_default_txt">Återställ till inställningar före förslag</string>
+    <string name="camera_strings_accessibility_ai_suggestion_selected_suggest_txt">Dessa rekommenderade justeringar tillämpas</string>
+    <string name="camera_strings_accessibility_ai_suggestion_suggest_lens_txt">Knapp för föreslagen lins. %1$sx rekommenderas.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_surface_of_some_suggests_txt">Föreslagna justeringar. Svep från höger till vänster för att visa rekommenderade justeringar.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_three_of_some_suggests_txt">Tredje föreslagna justeringen</string>
+    <string name="camera_strings_accessibility_ai_suggestion_two_of_some_suggests_txt">Andra föreslagna justeringen</string>
     <string name="camera_strings_accessibility_arrow_left_button_txt">Vänsterpil</string>
     <string name="camera_strings_accessibility_arrow_right_button_txt">Högerpil</string>
     <string name="camera_strings_accessibility_audio_level_txt">Ljudnivåmätare</string>
@@ -246,6 +268,45 @@ Du får aviseringar och dialogrutor. Välj Parkoppla på samtliga och tryck seda
     <string name="camera_strings_advanced_setting_geo_tag_title_txt">Spara plats</string>
     <string name="camera_strings_ai_face_restore_description_txt">Du kan ta bilder med Ansiktsskärpa för att göra ansiktsdrag tydligare</string>
     <string name="camera_strings_ai_face_restore_txt">Öka ansiktsskärpa</string>
+    <string name="camera_strings_ai_suggestion_introduce_hint_text_txt">[Tips] AI-kameraassistent</string>
+    <string name="camera_strings_aisuggestion_box_name1_txt">Anpassad</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_message_txt">Registrera nuvarande stil, ljusstyrka och färginställningar till Anpassad.</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_overwrite_message_txt">En stil är redan registrerad i Anpassad. Skriv över?</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_title_txt">Registrera som Anpassad stil</string>
+    <string name="camera_strings_aisuggestion_box_title_txt">Anpassad</string>
+    <string name="camera_strings_aisuggestion_custom_params_contrast_txt">Kontrast</string>
+    <string name="camera_strings_aisuggestion_custom_params_ev_txt">Ljusnivå</string>
+    <string name="camera_strings_aisuggestion_custom_params_register_txt">Registrera</string>
+    <string name="camera_strings_aisuggestion_custom_params_saturation_txt">Mättnad</string>
+    <string name="camera_strings_aisuggestion_custom_params_title_txt">Ljusstyrka/Färg</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbab_txt">Värme</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbgm_txt">Toning</string>
+    <string name="camera_strings_aisuggestion_customlook_register_instruction_txt">Du kan använda registrerade anpassade stilar när som helst från fliken Anpassad stil</string>
+    <string name="camera_strings_aisuggestion_description_txt">"AI identifierar automatiskt scenen och föreslår optimerade justeringar i miniförhandsvisningen längst ned till höger.
+Om du trycker på miniförhandsvisningen justeras följande inställningar automatiskt för att passa scenen:
+Stil, Exponering, Vitbalans, Mättnad, Kontrast, Bokeh
+*Denna Funktion stöds endast i fotoläget.
+*När du börjar spela in en video genom att trycka ned slutarknappen och hålla den intryckt kommer inställningarna för mättnad, kontrast och bokeh inte att tillämpas."</string>
+    <string name="camera_strings_aisuggestion_guide_description1_txt">Rekommenderade justeringar baserade på den scen som identifierats av AI visas i miniförhandsvisningen längst ned till höger (längst upp till höger när du håller enheten horisontellt). Du kan tillämpa alla dessa justeringar samtidigt genom att trycka på miniförhandsvisningen.</string>
+    <string name="camera_strings_aisuggestion_guide_description2_txt">Beroende på motivet kan även en specifik linsinställning föreslås. I detta fall kan du ändra till den föreslagna linsinställningen beroende på dina preferenser.</string>
+    <string name="camera_strings_aisuggestion_guide_description3_txt">"Genom att svepa vänster på miniförhandsvisningen längst ned till höger (längst upp till höger när du håller enheten horisontellt), kan du visa alternativa justeringsrekommendationer.
+Det förslag du väljer sparas som din önskade justering och kommer att inkluderas i förslagen nästa gång du fotograferar i en liknande scen."</string>
+    <string name="camera_strings_aisuggestion_guide_description4_txt">Du kan trycka på knappen [>] för att dölja förslag när de inte behövs. När en ny scen identifieras tänds knappen [&lt;] för att visa att det finns nya justeringsförslag. För att kontrollera förslagen igen, tryck på knappen [&lt;].</string>
+    <string name="camera_strings_aisuggestion_guide_description5_txt">Om du trycker på justeringsknappen efter att ha valt föreslagna justeringar kan du justera inställningar som ljusstyrka och färg ytterligare. Dina justeringar sparas på enheten och tillämpas på de föreslagna justeringarna nästa gång en liknande scen upptäcks.</string>
+    <string name="camera_strings_aisuggestion_guide_description6_txt">Föreslagna justeringar och justeringar som du har gjort kan registreras, så att du kan ladda dem när som helst för att ta bilder med samma inställningar. Tryck på [Registrera] för att lägga till en anpassad stil i listan över tillgängliga stilar.</string>
+    <string name="camera_strings_aisuggestion_guide_entry_txt">Se hur du använder AI-Kameraassistent</string>
+    <string name="camera_strings_aisuggestion_guide_title_txt">Hur du använder AI-Kameraassistent</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_message_txt">Återställa alla inställningar till standardvärdena, inklusive färg, ljusstyrka och dina önskade justeringar?</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_title_txt">Återställ parametrar</string>
+    <string name="camera_strings_aisuggestion_params_reset_txt">Återställ parametrar</string>
+    <string name="camera_strings_aisuggestion_permitted_item_bokeh_txt">Bokeh</string>
+    <string name="camera_strings_aisuggestion_permitted_item_lens_txt">Lins</string>
+    <string name="camera_strings_aisuggestion_permitted_item_title_txt">Inkludera i förslag</string>
+    <string name="camera_strings_aisuggestion_recommend_lens_ratio_txt">%1$s rekommenderas</string>
+    <string name="camera_strings_aisuggestion_return_to_default_txt">Återgå</string>
+    <string name="camera_strings_aisuggestion_simple_video_instruction_txt">När du spelar in en video genom att trycka ned kan mättnad, kontrast och bokehinställningar se olika ut.</string>
+    <string name="camera_strings_aisuggestion_txt">AI-Kameraassistent</string>
+    <string name="camera_strings_aisuggestion_use_aissuggestion_txt">Anv. AI-Kameraassistent</string>
     <string name="camera_strings_anonymous_analytics_txt">Anonym analys</string>
     <string name="camera_strings_application_name">Kamera</string>
     <string name="camera_strings_application_name_google_lens_txt">Google Lens</string>
@@ -421,6 +482,7 @@ Säkerhet:
     <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Det går inte att ansluta till Wi-Fi</string>
     <string name="camera_strings_dialog_user_data_collection_txt">Om du godkänner nedan kommer Sony att samla in dina &lt;b>&lt;a href=#personal-data>personliga data&lt;/a>&lt;/b> för att ge anpassad support och förbättra enheter och tjänster. Sony kommer att behandla dina data enligt vår &lt;b>&lt;a href=https://www.sonymobile.com/privacy/>sekretesspolicy&lt;/a>&lt;/b>.</string>
     <string name="camera_strings_dialog_video_hdr_hlg_supported_short_description_txt">Vissa enheter/tjänster kanske inte kan återge ursprunglig färg och ljusstyrka för HDR-innehåll. Använd enheter/tjänster som har stöd för HDR för att titta på HDR-innehåll.</string>
+    <string name="camera_strings_digital_tripod_hint_edge_txt">Kompositionen har förändrats. Rikta kameran mot det ursprungliga motivet.</string>
     <string name="camera_strings_digital_zoom_type_description_txt">"Välj en inställning för digital zoom.
 
 Standard digital zoom: Zooma med digital bearbetning baserat på bildens sensordata.
@@ -484,6 +546,7 @@ Du kan ändra det genom att avsluta streaming och ändra sekretessinställningar
     <string name="camera_strings_fast_capturing_screen_locked_settings_txt">Lås upp skärmen om du vill öppna inställningarna.</string>
     <string name="camera_strings_fast_capturing_screen_locked_streaming_txt">Lås upp skärmen för att börja strömma.</string>
     <string name="camera_strings_fast_capturing_screen_locked_title_txt">Skärmen är låst</string>
+    <string name="camera_strings_feature_creative_look_custom_description_txt">Du kan registrera stilar, ljusstyrka och färginställningar till Anpassad.</string>
     <string name="camera_strings_feature_creative_look_description_txt">"Du kan välja finish för bilder (foton eller filmer) genom att välja en \"stil\".
 
 Kreativ stil har 6 förinställda utseenden. Varje utseende är optimerat med en egen kombination av färgton, mättnad, kontrast, skärpa, ljusstyrka och andra bildelement, så att du kan ställa in bildbehandling med en idealisk balans mellan dessa element."</string>
@@ -567,6 +630,7 @@ Tryck på objektet du vill spåra."</string>
     <string name="camera_strings_framing_orientation_description_txt">"Du kan välja att beskära motivet i antingen en horisontell eller vertikal ram.
 Välj [Auto] för att beskära i samma riktning som telefonens riktning."</string>
     <string name="camera_strings_framing_select_subject_to_track_txt">Tryck på objektet vars position du vill låsa</string>
+    <string name="camera_strings_framing_setting_guide_title_txt">Om Automatisk Inramning</string>
     <string name="camera_strings_framing_setting_orientation_landscape_txt">Horisontell</string>
     <string name="camera_strings_framing_setting_orientation_portrait_txt">Vertikal</string>
     <string name="camera_strings_framing_setting_orientation_title_txt">Bildriktning</string>
@@ -574,6 +638,7 @@ Välj [Auto] för att beskära i samma riktning som telefonens riktning."</strin
 Beskurna inspelningar sparas i Full HD. Obeskurna inspelningar sparas i 4K."</string>
     <string name="camera_strings_framing_setting_save_original_video_off_txt">Spela in helskärm: Av</string>
     <string name="camera_strings_framing_setting_save_original_video_title_txt">Spela in helskärm</string>
+    <string name="camera_strings_framing_setting_snapshot_description_txt">Oavsett om [Spela in helskärm] är på eller av sparas stillbilder som tas under videoinspelning med helskärm.</string>
     <string name="camera_strings_geotagging_description_txt">Spara foton och videor med platsen där de togs</string>
     <string name="camera_strings_geotagging_txt">Spara plats</string>
     <string name="camera_strings_gimbal_mode_tab_label">AI-Kamerajobb</string>
@@ -592,6 +657,7 @@ Detta låter dig filma stabila filmklipp även i situationer som normalt är ska
     <string name="camera_strings_gimbal_setting_assist_method_locking_hint_txt">Positionslås för motiv: Manuellt</string>
     <string name="camera_strings_gimbal_setting_assist_method_locking_txt">Manuellt</string>
     <string name="camera_strings_gimbal_setting_assist_method_title_txt">Positionslås för motiv</string>
+    <string name="camera_strings_gimbal_setting_guide_title_txt">Om AI-Kamerajobb</string>
     <string name="camera_strings_gridline_description_txt">Ställ in om du vill visa eller inte visa rutnätslinjer som hjälp för att komponera bilder</string>
     <string name="camera_strings_gridline_txt">Rutnät</string>
     <string name="camera_strings_hand_shutter_description_updated_txt">Du kan starta nedräkningen genom att vända handflatan mot främre kameran. För att göra identifieringen enklare ska du räta ut fingrarna.</string>
@@ -727,6 +793,7 @@ För ögonblicksbilder som tas under inspelning av video används alltid det dyn
     <string name="camera_strings_notification_channel_title_saving_process_txt">Sparaprocess</string>
     <string name="camera_strings_notification_text_saving_in_progress_txt">Vänta tills det är sparat</string>
     <string name="camera_strings_notification_title_saving_in_progress_txt">Sparar</string>
+    <string name="camera_strings_notify_saving_process_cannot_launch_app_by_hw_shutter_txt">Om du trycker på slutarknappen kanske kameran inte startar medan du sparar</string>
     <string name="camera_strings_ok_txt">OK</string>
     <string name="camera_strings_peaking_color_blue_txt">Blå</string>
     <string name="camera_strings_peaking_color_red_txt">Röd</string>
@@ -735,6 +802,7 @@ För ögonblicksbilder som tas under inspelning av video används alltid det dyn
     <string name="camera_strings_peaking_color_yellow_txt">Gul</string>
     <string name="camera_strings_peaking_txt">Konturframhävning</string>
     <string name="camera_strings_personal_data_txt">Personliga data</string>
+    <string name="camera_strings_photopro_setting_guide_title_txt">Om Proffsfoto</string>
     <string name="camera_strings_privacy_policy_txt">Sekretesspolicy</string>
     <string name="camera_strings_pro_tips_computational_photo_description_txt">"Även i P-läget identifierar kameran automatiskt motivet och tar vackra automatiska bilder genom att minska oskärpa, brus, överexponering och underexponering.
 Om du inte använder den kan du stänga av den med Fn-knappen eller i MENY."</string>
@@ -965,6 +1033,7 @@ Om du fortsätter att använda SD-kort som lagringsmedium ska ett höghastighets
     <string name="camera_strings_video_stabilization_description_sub_txt">Obs! Om du väljer Hög kvalitet kan inspelningstiden kortas på grund av högre temperatur på enheten.</string>
     <string name="camera_strings_video_stabilization_description_txt">Xperia har ett unikt hybridsystem för stabilisering som heter Optical SteadyShot – det kombinerar samtidig optisk och elektronisk bildstabilisering. Det ger skakningsfria och jämna videor när du rör dig under inspelning.</string>
     <string name="camera_strings_video_stabilization_high_quality_images_txt">Hög kvalitet</string>
+    <string name="camera_strings_videopro_setting_guide_title_txt">Om Pro video</string>
     <string name="camera_strings_volume_distortion_correction_description_txt">Korrigerar förvrängning av ansikten som uppstår nära skärmens kant när vidvinkelobjektiv används. Detta kan få bakgrunden att verka förvrängd eller att betraktningsvinkeln verkar smalare.</string>
     <string name="camera_strings_volume_distortion_correction_front_description_txt">Korrigerar ansiktsförvrängningar som uppstår nära skärmens kant. Detta kan få bakgrunden att verka förvrängd eller att betraktningsvinkeln verkar smalare.</string>
     <string name="camera_strings_volume_distortion_correction_txt">Korrigering av ansiktsförvrängning</string>
@@ -1042,8 +1111,25 @@ Ingen nätverksanslutning."</string>
     <string name="clear_text_end_icon_content_description">Rensa text</string>
     <string name="close_drawer">Stäng navigeringsmenyn</string>
     <string name="close_sheet">Stäng kalkylarket</string>
+    <string name="common_google_play_services_enable_button">Aktivera</string>
+    <string name="common_google_play_services_enable_text">%1$s fungerar inte om du inte aktiverar Google Play-tjänster.</string>
+    <string name="common_google_play_services_enable_title">Aktivera Google Play-tjänster</string>
+    <string name="common_google_play_services_install_button">Installera</string>
+    <string name="common_google_play_services_install_text">%1$s kan inte köras utan Google Play-tjänsterna, som saknas på enheten.</string>
+    <string name="common_google_play_services_install_title">Hämta Google Play-tjänster</string>
+    <string name="common_google_play_services_notification_channel_name">Tillgänglighet för Google Plays tjänster</string>
+    <string name="common_google_play_services_notification_ticker">Fel på Google Play-tjänster</string>
+    <string name="common_google_play_services_unknown_issue">Det har uppstått ett fel mellan %1$s och Google Play-tjänsterna. Försök igen.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s fungerar inte utan Google Play-tjänsterna, som inte stöds på enheten.</string>
+    <string name="common_google_play_services_update_button">Uppdatera</string>
+    <string name="common_google_play_services_update_text">%1$s kan inte köras om du inte uppdaterar Google Play-tjänsterna.</string>
+    <string name="common_google_play_services_update_title">Uppdatera Google Play-tjänster</string>
+    <string name="common_google_play_services_updating_text">%1$s kan inte köras utan Google Play-tjänster, och dessa uppdateras för närvarande.</string>
+    <string name="common_google_play_services_wear_update_text">En ny version av Google Play-tjänster krävs. Den uppdateras automatiskt inom kort.</string>
+    <string name="common_open_on_phone">Öppna på mobilen</string>
+    <string name="common_signin_button_text">Logga in</string>
+    <string name="common_signin_button_text_long">Logga in med Google</string>
     <string name="copy">Kopiera</string>
-    <string name="copy_toast_msg">Länk kopierad till Urklipp</string>
     <string name="default_error_message">Ogiltiga indata</string>
     <string name="default_popup_window_title">Popup-fönster</string>
     <string name="dropdown_menu">Rullgardinsmeny</string>
@@ -1054,9 +1140,6 @@ Ingen nätverksanslutning."</string>
     <string name="external_display_connected_description_txt">Du kan kontrollera sökaren från Vlog Monitor</string>
     <string name="external_display_connected_title_txt">Vlog Monitor ansluten</string>
     <string name="external_display_note_about_external_mic_txt">Obs! För att använda extern mikrofon ska den anslutas till Vlog Monitor före inspelning. Om du ansluter den efteråt måste du ansluta på nytt till Vlog Monitor.</string>
-    <string name="fallback_menu_item_copy_link">Kopiera länk</string>
-    <string name="fallback_menu_item_open_in_browser">Öppna i webbläsaren</string>
-    <string name="fallback_menu_item_share_link">Dela länk</string>
     <string name="icon_content_description">Dialogikon</string>
     <string name="in_progress">Pågår</string>
     <string name="indeterminate">Delvis markerad</string>

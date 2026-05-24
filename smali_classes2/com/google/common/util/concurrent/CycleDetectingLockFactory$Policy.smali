@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract handlePotentialDeadlock(Lcom/google/common/util/concurrent/CycleDetectingLockFactory$PotentialDeadlockException;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "exception"
+        }
+    .end annotation
 .end method

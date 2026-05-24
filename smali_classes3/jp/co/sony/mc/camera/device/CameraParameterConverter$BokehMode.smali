@@ -26,6 +26,18 @@
 
 .method static getApi2Value(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZLjava/lang/String;)Ljava/lang/Integer;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "cameraId",
+            "isVideo",
+            "bokehModeApi1"
+        }
+    .end annotation
 
     .line 543
     invoke-virtual {p2}, Ljava/lang/String;->hashCode()I

@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 3637
+    .line 3879
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,6 +31,17 @@
 # virtual methods
 .method public isTempChanged(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -42,15 +53,15 @@
         }
     .end annotation
 
-    .line 3641
+    .line 3883
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 3642
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->getGreenMagenta()Ljava/lang/Float;
+    .line 3884
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetFocusMagnification(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/FocusMagnification;
 
     move-result-object p0
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmGreenMagenta(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljava/lang/Float;
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmFocusMagnification(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/FocusMagnification;
 
     move-result-object p1
 

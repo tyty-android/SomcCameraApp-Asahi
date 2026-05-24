@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <Button android:textSize="@dimen/camera_youtube_live_event_save_button_text_size" android:textColor="@color/camera_menu_gray00_color" android:id="@id/save" android:background="@drawable/camera_button_disable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_strings_button_save_txt" android:textAllCaps="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>

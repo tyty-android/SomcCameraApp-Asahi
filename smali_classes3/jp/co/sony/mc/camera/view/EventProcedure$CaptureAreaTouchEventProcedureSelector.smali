@@ -31,6 +31,14 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/EventProcedure;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 251
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$CaptureAreaTouchEventProcedureSelector;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
@@ -121,6 +129,14 @@
 
 .method doClick(Landroid/graphics/Point;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "point"
+        }
+    .end annotation
 
     .line 296
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
@@ -179,6 +195,14 @@
 
 .method doDoubleClick(Landroid/graphics/Point;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "point"
+        }
+    .end annotation
 
     .line 305
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
@@ -237,6 +261,14 @@
 
 .method doLongClick(Landroid/graphics/Point;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "point"
+        }
+    .end annotation
 
     .line 324
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
@@ -295,6 +327,18 @@
 
 .method doTouchAreaMove(Landroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "currentPoint",
+            "lastPoint",
+            "downPoint"
+        }
+    .end annotation
 
     .line 314
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
@@ -391,6 +435,14 @@
 
 .method doTouchAreaScaling(F)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "scaleLength"
+        }
+    .end annotation
 
     .line 346
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z

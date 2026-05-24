@@ -38,7 +38,7 @@
 .method private static synthetic $values()[Lcom/google/common/collect/AbstractIterator$State;
     .locals 4
 
-    .line 70
+    .line 73
     sget-object v0, Lcom/google/common/collect/AbstractIterator$State;->READY:Lcom/google/common/collect/AbstractIterator$State;
 
     sget-object v1, Lcom/google/common/collect/AbstractIterator$State;->NOT_READY:Lcom/google/common/collect/AbstractIterator$State;
@@ -57,7 +57,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 72
+    .line 75
     new-instance v0, Lcom/google/common/collect/AbstractIterator$State;
 
     const-string v1, "READY"
@@ -68,7 +68,7 @@
 
     sput-object v0, Lcom/google/common/collect/AbstractIterator$State;->READY:Lcom/google/common/collect/AbstractIterator$State;
 
-    .line 75
+    .line 78
     new-instance v0, Lcom/google/common/collect/AbstractIterator$State;
 
     const-string v1, "NOT_READY"
@@ -79,7 +79,7 @@
 
     sput-object v0, Lcom/google/common/collect/AbstractIterator$State;->NOT_READY:Lcom/google/common/collect/AbstractIterator$State;
 
-    .line 78
+    .line 81
     new-instance v0, Lcom/google/common/collect/AbstractIterator$State;
 
     const-string v1, "DONE"
@@ -90,7 +90,7 @@
 
     sput-object v0, Lcom/google/common/collect/AbstractIterator$State;->DONE:Lcom/google/common/collect/AbstractIterator$State;
 
-    .line 81
+    .line 84
     new-instance v0, Lcom/google/common/collect/AbstractIterator$State;
 
     const-string v1, "FAILED"
@@ -101,7 +101,7 @@
 
     sput-object v0, Lcom/google/common/collect/AbstractIterator$State;->FAILED:Lcom/google/common/collect/AbstractIterator$State;
 
-    .line 70
+    .line 73
     invoke-static {}, Lcom/google/common/collect/AbstractIterator$State;->$values()[Lcom/google/common/collect/AbstractIterator$State;
 
     move-result-object v0
@@ -113,13 +113,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 70
+    .line 73
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -127,8 +138,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/collect/AbstractIterator$State;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 70
+    .line 73
     const-class v0, Lcom/google/common/collect/AbstractIterator$State;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -143,7 +162,7 @@
 .method public static values()[Lcom/google/common/collect/AbstractIterator$State;
     .locals 1
 
-    .line 70
+    .line 73
     sget-object v0, Lcom/google/common/collect/AbstractIterator$State;->$VALUES:[Lcom/google/common/collect/AbstractIterator$State;
 
     invoke-virtual {v0}, [Lcom/google/common/collect/AbstractIterator$State;->clone()Ljava/lang/Object;

@@ -13,6 +13,16 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Ljp/co/sony/mc/camera/storage/Storage;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "storage"
+        }
+    .end annotation
 
     .line 18
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -31,6 +41,14 @@
 # virtual methods
 .method public clearAllSettings(Ljp/co/sony/mc/camera/storage/Storage;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "storage"
+        }
+    .end annotation
 
     .line 29
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/StoredSettingsProxy;->mMessageSettingManager:Ljp/co/sony/mc/camera/setting/MessageSettings;

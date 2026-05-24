@@ -6,12 +6,18 @@
 .implements Lkotlin/jvm/functions/Function1;
 
 
+# instance fields
+.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+
+
 # direct methods
-.method public synthetic constructor <init>()V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$$ExternalSyntheticLambda4;->f$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     return-void
 .end method
@@ -22,13 +28,15 @@
     .locals 0
 
     .line 0
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$$ExternalSyntheticLambda4;->f$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+
     check-cast p1, Ljava/lang/Boolean;
 
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
-    move-result p0
+    move-result p1
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->$r8$lambda$Un_wwvmHfcqyEM7VkYfOipSxdlU(Z)Z
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->$r8$lambda$Ocqd96l-Z_dUT8g59RpiDoR5dtE(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;Z)Z
 
     move-result p0
 

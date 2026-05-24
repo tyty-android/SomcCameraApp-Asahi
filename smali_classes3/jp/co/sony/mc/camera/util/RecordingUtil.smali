@@ -27,6 +27,16 @@
 
 .method public static getDurationMillsFromAverage(JJ)J
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "availableSizeKbyte",
+            "averageSizeKBytePerMin"
+        }
+    .end annotation
 
     long-to-double v0, p0
 
@@ -134,6 +144,16 @@
 
 .method public static getRecordableSizeKBytes(Ljp/co/sony/mc/camera/storage/Storage;Ljp/co/sony/mc/camera/storage/Storage$StorageType;)J
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "storage",
+            "type"
+        }
+    .end annotation
 
     .line 65
     invoke-interface {p0, p1}, Ljp/co/sony/mc/camera/storage/Storage;->getRemainStorage(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)J
@@ -158,6 +178,14 @@
 
 .method public static isAudioPolicyActive(Landroid/content/Context;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 85
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -197,6 +225,14 @@
 
 .method public static shouldWaitStartSound(Landroid/content/Context;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 100
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;

@@ -23,7 +23,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0008\u0007\u0008\u0086\u0081\u0002\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u0001B\t\u0008\u0002\u00a2\u0006\u0004\u0008\u0002\u0010\u0003j\u0002\u0008\u0004j\u0002\u0008\u0005j\u0002\u0008\u0006j\u0002\u0008\u0007\u00a8\u0006\u0008"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0008\n\u0008\u0086\u0081\u0002\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u0001B\t\u0008\u0002\u00a2\u0006\u0004\u0008\u0002\u0010\u0003j\u0002\u0008\u0004j\u0002\u0008\u0005j\u0002\u0008\u0006j\u0002\u0008\u0007j\u0002\u0008\u0008j\u0002\u0008\tj\u0002\u0008\n\u00a8\u0006\u000b"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;",
@@ -33,7 +33,10 @@
         "NORMAL",
         "PRO_PHOTO",
         "PRO_VIDEO",
+        "PRO_VIDEO_WITHOUT_HYBRID",
         "MACRO",
+        "VIDEO_AUTO_FRAMING",
+        "PHOTO_BOKEH",
         "SomcCamera_release"
     }
     k = 0x1
@@ -55,14 +58,20 @@
 
 .field public static final enum NORMAL:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
 
+.field public static final enum PHOTO_BOKEH:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
+
 .field public static final enum PRO_PHOTO:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
 
 .field public static final enum PRO_VIDEO:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
 
+.field public static final enum PRO_VIDEO_WITHOUT_HYBRID:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
+
+.field public static final enum VIDEO_AUTO_FRAMING:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
+
 
 # direct methods
 .method private static final synthetic $values()[Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
-    .locals 4
+    .locals 7
 
     sget-object v0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->NORMAL:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
 
@@ -70,9 +79,15 @@
 
     sget-object v2, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->PRO_VIDEO:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
 
-    sget-object v3, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->MACRO:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
+    sget-object v3, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->PRO_VIDEO_WITHOUT_HYBRID:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
 
-    filled-new-array {v0, v1, v2, v3}, [Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
+    sget-object v4, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->MACRO:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->VIDEO_AUTO_FRAMING:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
+
+    sget-object v6, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->PHOTO_BOKEH:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
+
+    filled-new-array/range {v0 .. v6}, [Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
 
     move-result-object v0
 
@@ -82,7 +97,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 42
+    .line 43
     new-instance v0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
 
     const-string v1, "NORMAL"
@@ -93,6 +108,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->NORMAL:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
 
+    .line 44
     new-instance v0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
 
     const-string v1, "PRO_PHOTO"
@@ -103,6 +119,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->PRO_PHOTO:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
 
+    .line 45
     new-instance v0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
 
     const-string v1, "PRO_VIDEO"
@@ -113,15 +130,49 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->PRO_VIDEO:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
 
+    .line 46
     new-instance v0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
 
-    const-string v1, "MACRO"
+    const-string v1, "PRO_VIDEO_WITHOUT_HYBRID"
 
     const/4 v2, 0x3
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;-><init>(Ljava/lang/String;I)V
 
+    sput-object v0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->PRO_VIDEO_WITHOUT_HYBRID:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
+
+    .line 47
+    new-instance v0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
+
+    const-string v1, "MACRO"
+
+    const/4 v2, 0x4
+
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;-><init>(Ljava/lang/String;I)V
+
     sput-object v0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->MACRO:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
+
+    .line 48
+    new-instance v0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
+
+    const-string v1, "VIDEO_AUTO_FRAMING"
+
+    const/4 v2, 0x5
+
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->VIDEO_AUTO_FRAMING:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
+
+    .line 49
+    new-instance v0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
+
+    const-string v1, "PHOTO_BOKEH"
+
+    const/4 v2, 0x6
+
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->PHOTO_BOKEH:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
 
     invoke-static {}, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->$values()[Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
 
@@ -148,7 +199,7 @@
         }
     .end annotation
 
-    .line 41
+    .line 42
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -179,7 +230,7 @@
 
     move-result-object p0
 
-    .line 43
+    .line 50
     check-cast p0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
 
     return-object p0
@@ -194,7 +245,7 @@
 
     move-result-object v0
 
-    .line 43
+    .line 50
     check-cast v0, [Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
 
     return-object v0

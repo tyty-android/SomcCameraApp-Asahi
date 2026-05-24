@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/collect/FluentIterable$FromIterableFunction;
@@ -41,10 +44,10 @@
 .method protected constructor <init>()V
     .locals 1
 
-    .line 121
+    .line 125
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 122
+    .line 126
     invoke-static {}, Lcom/google/common/base/Optional;->absent()Lcom/google/common/base/Optional;
 
     move-result-object v0
@@ -56,6 +59,15 @@
 
 .method constructor <init>(Ljava/lang/Iterable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "iterable"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -64,22 +76,11 @@
         }
     .end annotation
 
-    .line 125
+    .line 129
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 126
-    invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
-
-    if-eq p0, p1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x0
-
-    .line 127
-    :goto_0
-    invoke-static {p1}, Lcom/google/common/base/Optional;->fromNullable(Ljava/lang/Object;)Lcom/google/common/base/Optional;
+    .line 130
+    invoke-static {p1}, Lcom/google/common/base/Optional;->of(Ljava/lang/Object;)Lcom/google/common/base/Optional;
 
     move-result-object p1
 
@@ -90,6 +91,15 @@
 
 .method public static concat(Ljava/lang/Iterable;)Lcom/google/common/collect/FluentIterable;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "inputs"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -104,10 +114,10 @@
         }
     .end annotation
 
-    .line 276
+    .line 279
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 277
+    .line 280
     new-instance v0, Lcom/google/common/collect/FluentIterable$2;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/FluentIterable$2;-><init>(Ljava/lang/Iterable;)V
@@ -117,6 +127,17 @@
 
 .method public static concat(Ljava/lang/Iterable;Ljava/lang/Iterable;)Lcom/google/common/collect/FluentIterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -131,7 +152,7 @@
         }
     .end annotation
 
-    .line 194
+    .line 199
     filled-new-array {p0, p1}, [Ljava/lang/Iterable;
 
     move-result-object p0
@@ -145,6 +166,19 @@
 
 .method public static concat(Ljava/lang/Iterable;Ljava/lang/Iterable;Ljava/lang/Iterable;)Lcom/google/common/collect/FluentIterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b",
+            "c"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -161,7 +195,7 @@
         }
     .end annotation
 
-    .line 213
+    .line 217
     filled-new-array {p0, p1, p2}, [Ljava/lang/Iterable;
 
     move-result-object p0
@@ -175,6 +209,21 @@
 
 .method public static concat(Ljava/lang/Iterable;Ljava/lang/Iterable;Ljava/lang/Iterable;Ljava/lang/Iterable;)Lcom/google/common/collect/FluentIterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b",
+            "c",
+            "d"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -193,7 +242,7 @@
         }
     .end annotation
 
-    .line 236
+    .line 239
     filled-new-array {p0, p1, p2, p3}, [Ljava/lang/Iterable;
 
     move-result-object p0
@@ -207,6 +256,15 @@
 
 .method public static varargs concat([Ljava/lang/Iterable;)Lcom/google/common/collect/FluentIterable;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "inputs"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -219,7 +277,10 @@
         }
     .end annotation
 
-    .line 256
+    .annotation runtime Ljava/lang/SafeVarargs;
+    .end annotation
+
+    .line 260
     array-length v0, p0
 
     invoke-static {p0, v0}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
@@ -237,6 +298,15 @@
 
 .method private static varargs concatNoDefensiveCopy([Ljava/lang/Iterable;)Lcom/google/common/collect/FluentIterable;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "inputs"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -249,7 +319,7 @@
         }
     .end annotation
 
-    .line 288
+    .line 291
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -259,14 +329,14 @@
 
     aget-object v2, p0, v1
 
-    .line 289
+    .line 292
     invoke-static {v2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 291
+    .line 294
     :cond_0
     new-instance v0, Lcom/google/common/collect/FluentIterable$3;
 
@@ -277,6 +347,15 @@
 
 .method public static from(Lcom/google/common/collect/FluentIterable;)Lcom/google/common/collect/FluentIterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "iterable"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -292,7 +371,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 177
+    .line 182
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -304,6 +383,15 @@
 
 .method public static from(Ljava/lang/Iterable;)Lcom/google/common/collect/FluentIterable;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "iterable"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -316,17 +404,17 @@
         }
     .end annotation
 
-    .line 142
+    .line 145
     instance-of v0, p0, Lcom/google/common/collect/FluentIterable;
 
     if-eqz v0, :cond_0
 
-    .line 143
+    .line 146
     check-cast p0, Lcom/google/common/collect/FluentIterable;
 
     goto :goto_0
 
-    .line 144
+    .line 147
     :cond_0
     new-instance v0, Lcom/google/common/collect/FluentIterable$1;
 
@@ -340,6 +428,15 @@
 
 .method public static from([Ljava/lang/Object;)Lcom/google/common/collect/FluentIterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -350,7 +447,7 @@
         }
     .end annotation
 
-    .line 164
+    .line 166
     invoke-static {p0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
@@ -372,7 +469,7 @@
         }
     .end annotation
 
-    .line 131
+    .line 134
     iget-object v0, p0, Lcom/google/common/collect/FluentIterable;->iterableDelegate:Lcom/google/common/base/Optional;
 
     invoke-virtual {v0, p0}, Lcom/google/common/base/Optional;->or(Ljava/lang/Object;)Ljava/lang/Object;
@@ -396,8 +493,8 @@
         }
     .end annotation
 
-    .line 315
-    invoke-static {}, Lcom/google/common/collect/ImmutableList;->of()Lcom/google/common/collect/ImmutableList;
+    .line 317
+    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     move-result-object v0
 
@@ -411,9 +508,20 @@
 .method public static varargs of(Ljava/lang/Object;[Ljava/lang/Object;)Lcom/google/common/collect/FluentIterable;
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "element",
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -424,7 +532,7 @@
         }
     .end annotation
 
-    .line 328
+    .line 330
     invoke-static {p0, p1}, Lcom/google/common/collect/Lists;->asList(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
@@ -440,6 +548,15 @@
 # virtual methods
 .method public final allMatch(Lcom/google/common/base/Predicate;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "predicate"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -462,6 +579,15 @@
 
 .method public final anyMatch(Lcom/google/common/base/Predicate;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "predicate"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -484,6 +610,15 @@
 
 .method public final append(Ljava/lang/Iterable;)Lcom/google/common/collect/FluentIterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "other"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -494,7 +629,7 @@
         }
     .end annotation
 
-    .line 396
+    .line 397
     invoke-direct {p0}, Lcom/google/common/collect/FluentIterable;->getDelegate()Ljava/lang/Iterable;
 
     move-result-object p0
@@ -508,6 +643,15 @@
 
 .method public final varargs append([Ljava/lang/Object;)Lcom/google/common/collect/FluentIterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([TE;)",
@@ -535,11 +679,19 @@
 .method public final contains(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "target"
+        }
+    .end annotation
 
-    .line 359
+    .line 361
     invoke-direct {p0}, Lcom/google/common/collect/FluentIterable;->getDelegate()Ljava/lang/Iterable;
 
     move-result-object p0
@@ -553,6 +705,15 @@
 
 .method public final copyInto(Ljava/util/Collection;)Ljava/util/Collection;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "collection"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<C::",
@@ -561,27 +722,27 @@
         }
     .end annotation
 
-    .line 794
+    .line 806
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 795
+    .line 807
     invoke-direct {p0}, Lcom/google/common/collect/FluentIterable;->getDelegate()Ljava/lang/Iterable;
 
     move-result-object p0
 
-    .line 796
+    .line 808
     instance-of v0, p0, Ljava/util/Collection;
 
     if-eqz v0, :cond_0
 
-    .line 797
+    .line 809
     check-cast p0, Ljava/util/Collection;
 
     invoke-interface {p1, p0}, Ljava/util/Collection;->addAll(Ljava/util/Collection;)Z
 
     goto :goto_1
 
-    .line 799
+    .line 811
     :cond_0
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -598,7 +759,7 @@
 
     move-result-object v0
 
-    .line 800
+    .line 812
     invoke-interface {p1, v0}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
@@ -618,7 +779,7 @@
         }
     .end annotation
 
-    .line 380
+    .line 382
     invoke-direct {p0}, Lcom/google/common/collect/FluentIterable;->getDelegate()Ljava/lang/Iterable;
 
     move-result-object p0
@@ -636,6 +797,15 @@
 
 .method public final filter(Lcom/google/common/base/Predicate;)Lcom/google/common/collect/FluentIterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "predicate"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -664,6 +834,15 @@
 
 .method public final filter(Ljava/lang/Class;)Lcom/google/common/collect/FluentIterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -702,7 +881,7 @@
         }
     .end annotation
 
-    .line 515
+    .line 518
     invoke-direct {p0}, Lcom/google/common/collect/FluentIterable;->getDelegate()Ljava/lang/Iterable;
 
     move-result-object p0
@@ -711,7 +890,7 @@
 
     move-result-object p0
 
-    .line 516
+    .line 519
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
@@ -739,6 +918,15 @@
 
 .method public final firstMatch(Lcom/google/common/base/Predicate;)Lcom/google/common/base/Optional;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "predicate"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -749,7 +937,7 @@
         }
     .end annotation
 
-    .line 469
+    .line 470
     invoke-direct {p0}, Lcom/google/common/collect/FluentIterable;->getDelegate()Ljava/lang/Iterable;
 
     move-result-object p0
@@ -763,13 +951,25 @@
 
 .method public final get(I)Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TE;"
         }
     .end annotation
 
-    .line 835
+    .line 846
     invoke-direct {p0}, Lcom/google/common/collect/FluentIterable;->getDelegate()Ljava/lang/Iterable;
 
     move-result-object p0
@@ -783,6 +983,15 @@
 
 .method public final index(Lcom/google/common/base/Function;)Lcom/google/common/collect/ImmutableListMultimap;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "keyFunction"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -795,7 +1004,7 @@
         }
     .end annotation
 
-    .line 725
+    .line 736
     invoke-direct {p0}, Lcom/google/common/collect/FluentIterable;->getDelegate()Ljava/lang/Iterable;
 
     move-result-object p0
@@ -810,7 +1019,7 @@
 .method public final isEmpty()Z
     .locals 0
 
-    .line 606
+    .line 610
     invoke-direct {p0}, Lcom/google/common/collect/FluentIterable;->getDelegate()Ljava/lang/Iterable;
 
     move-result-object p0
@@ -830,8 +1039,16 @@
 
 .method public final join(Lcom/google/common/base/Joiner;)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "joiner"
+        }
+    .end annotation
 
-    .line 818
+    .line 829
     invoke-virtual {p1, p0}, Lcom/google/common/base/Joiner;->join(Ljava/lang/Iterable;)Ljava/lang/String;
 
     move-result-object p0
@@ -849,34 +1066,34 @@
         }
     .end annotation
 
-    .line 534
+    .line 538
     invoke-direct {p0}, Lcom/google/common/collect/FluentIterable;->getDelegate()Ljava/lang/Iterable;
 
     move-result-object p0
 
-    .line 535
+    .line 539
     instance-of v0, p0, Ljava/util/List;
 
     if-eqz v0, :cond_1
 
-    .line 536
+    .line 540
     check-cast p0, Ljava/util/List;
 
-    .line 537
+    .line 541
     invoke-interface {p0}, Ljava/util/List;->isEmpty()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 538
+    .line 542
     invoke-static {}, Lcom/google/common/base/Optional;->absent()Lcom/google/common/base/Optional;
 
     move-result-object p0
 
     return-object p0
 
-    .line 540
+    .line 544
     :cond_0
     invoke-interface {p0}, Ljava/util/List;->size()I
 
@@ -894,36 +1111,36 @@
 
     return-object p0
 
-    .line 542
+    .line 546
     :cond_1
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
-    .line 543
+    .line 547
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
 
     if-nez v1, :cond_2
 
-    .line 544
+    .line 548
     invoke-static {}, Lcom/google/common/base/Optional;->absent()Lcom/google/common/base/Optional;
 
     move-result-object p0
 
     return-object p0
 
-    .line 551
+    .line 555
     :cond_2
     instance-of v1, p0, Ljava/util/SortedSet;
 
     if-eqz v1, :cond_3
 
-    .line 552
+    .line 556
     check-cast p0, Ljava/util/SortedSet;
 
-    .line 553
+    .line 557
     invoke-interface {p0}, Ljava/util/SortedSet;->last()Ljava/lang/Object;
 
     move-result-object p0
@@ -934,20 +1151,20 @@
 
     return-object p0
 
-    .line 557
+    .line 561
     :cond_3
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 558
+    .line 562
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
 
     if-nez v1, :cond_3
 
-    .line 559
+    .line 563
     invoke-static {p0}, Lcom/google/common/base/Optional;->of(Ljava/lang/Object;)Lcom/google/common/base/Optional;
 
     move-result-object p0
@@ -957,6 +1174,15 @@
 
 .method public final limit(I)Lcom/google/common/collect/FluentIterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "maxSize"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -965,7 +1191,7 @@
         }
     .end annotation
 
-    .line 597
+    .line 601
     invoke-direct {p0}, Lcom/google/common/collect/FluentIterable;->getDelegate()Ljava/lang/Iterable;
 
     move-result-object p0
@@ -984,7 +1210,7 @@
 .method public final size()I
     .locals 0
 
-    .line 349
+    .line 351
     invoke-direct {p0}, Lcom/google/common/collect/FluentIterable;->getDelegate()Ljava/lang/Iterable;
 
     move-result-object p0
@@ -998,6 +1224,15 @@
 
 .method public final skip(I)Lcom/google/common/collect/FluentIterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "numberToSkip"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1006,7 +1241,7 @@
         }
     .end annotation
 
-    .line 582
+    .line 586
     invoke-direct {p0}, Lcom/google/common/collect/FluentIterable;->getDelegate()Ljava/lang/Iterable;
 
     move-result-object p0
@@ -1024,6 +1259,15 @@
 
 .method public final toArray(Ljava/lang/Class;)[Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1032,7 +1276,7 @@
         }
     .end annotation
 
-    .line 778
+    .line 790
     invoke-direct {p0}, Lcom/google/common/collect/FluentIterable;->getDelegate()Ljava/lang/Iterable;
 
     move-result-object p0
@@ -1054,7 +1298,7 @@
         }
     .end annotation
 
-    .line 620
+    .line 625
     invoke-direct {p0}, Lcom/google/common/collect/FluentIterable;->getDelegate()Ljava/lang/Iterable;
 
     move-result-object p0
@@ -1068,6 +1312,15 @@
 
 .method public final toMap(Lcom/google/common/base/Function;)Lcom/google/common/collect/ImmutableMap;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "valueFunction"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<V:",
@@ -1080,7 +1333,7 @@
         }
     .end annotation
 
-    .line 703
+    .line 713
     invoke-direct {p0}, Lcom/google/common/collect/FluentIterable;->getDelegate()Ljava/lang/Iterable;
 
     move-result-object p0
@@ -1102,7 +1355,7 @@
         }
     .end annotation
 
-    .line 682
+    .line 691
     invoke-direct {p0}, Lcom/google/common/collect/FluentIterable;->getDelegate()Ljava/lang/Iterable;
 
     move-result-object p0
@@ -1124,7 +1377,7 @@
         }
     .end annotation
 
-    .line 651
+    .line 658
     invoke-direct {p0}, Lcom/google/common/collect/FluentIterable;->getDelegate()Ljava/lang/Iterable;
 
     move-result-object p0
@@ -1138,6 +1391,15 @@
 
 .method public final toSortedList(Ljava/util/Comparator;)Lcom/google/common/collect/ImmutableList;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "comparator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1148,7 +1410,7 @@
         }
     .end annotation
 
-    .line 637
+    .line 643
     invoke-static {p1}, Lcom/google/common/collect/Ordering;->from(Ljava/util/Comparator;)Lcom/google/common/collect/Ordering;
 
     move-result-object p1
@@ -1166,6 +1428,15 @@
 
 .method public final toSortedSet(Ljava/util/Comparator;)Lcom/google/common/collect/ImmutableSortedSet;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "comparator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1176,7 +1447,7 @@
         }
     .end annotation
 
-    .line 669
+    .line 677
     invoke-direct {p0}, Lcom/google/common/collect/FluentIterable;->getDelegate()Ljava/lang/Iterable;
 
     move-result-object p0
@@ -1191,7 +1462,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 340
+    .line 342
     invoke-direct {p0}, Lcom/google/common/collect/FluentIterable;->getDelegate()Ljava/lang/Iterable;
 
     move-result-object p0
@@ -1205,6 +1476,15 @@
 
 .method public final transform(Lcom/google/common/base/Function;)Lcom/google/common/collect/FluentIterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "function"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1217,7 +1497,7 @@
         }
     .end annotation
 
-    .line 483
+    .line 485
     invoke-direct {p0}, Lcom/google/common/collect/FluentIterable;->getDelegate()Ljava/lang/Iterable;
 
     move-result-object p0
@@ -1235,6 +1515,15 @@
 
 .method public transformAndConcat(Lcom/google/common/base/Function;)Lcom/google/common/collect/FluentIterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "function"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1249,7 +1538,7 @@
         }
     .end annotation
 
-    .line 501
+    .line 503
     invoke-virtual {p0, p1}, Lcom/google/common/collect/FluentIterable;->transform(Lcom/google/common/base/Function;)Lcom/google/common/collect/FluentIterable;
 
     move-result-object p0
@@ -1263,6 +1552,15 @@
 
 .method public final uniqueIndex(Lcom/google/common/base/Function;)Lcom/google/common/collect/ImmutableMap;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "keyFunction"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -1275,7 +1573,7 @@
         }
     .end annotation
 
-    .line 761
+    .line 773
     invoke-direct {p0}, Lcom/google/common/collect/FluentIterable;->getDelegate()Ljava/lang/Iterable;
 
     move-result-object p0

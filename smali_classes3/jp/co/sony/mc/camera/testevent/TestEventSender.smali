@@ -43,6 +43,14 @@
 
 .method public static onCapturedFrameStored(J)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "timeStamp"
+        }
+    .end annotation
 
     .line 48
     sget-object v0, Ljp/co/sony/mc/camera/testevent/TestEventSender;->sListener:Ljp/co/sony/mc/camera/testevent/TestEventListener;
@@ -65,6 +73,14 @@
 
 .method public static setListener(Ljp/co/sony/mc/camera/testevent/TestEventListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     if-nez p0, :cond_0
 

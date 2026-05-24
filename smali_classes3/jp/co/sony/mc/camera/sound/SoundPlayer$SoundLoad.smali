@@ -23,6 +23,16 @@
 # direct methods
 .method public constructor <init>(IZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "soundID",
+            "isLoaded"
+        }
+    .end annotation
 
     .line 176
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

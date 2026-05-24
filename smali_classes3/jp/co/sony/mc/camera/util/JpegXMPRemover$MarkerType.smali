@@ -318,6 +318,21 @@
 
 .method private constructor <init>(Ljava/lang/String;I[B[B)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "startMarker",
+            "signature"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([B[B)V"
@@ -338,6 +353,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 33
     const-class v0, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;
@@ -370,6 +393,14 @@
 # virtual methods
 .method varargs byteToInt([B)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bytes"
+        }
+    .end annotation
 
     const/4 p0, 0x0
 
@@ -419,6 +450,16 @@
 
 .method calculateDataSize(Ljava/nio/ByteBuffer;I)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "byteBuffer",
+            "markerIndex"
+        }
+    .end annotation
 
     const/4 v0, -0x1
 
@@ -459,6 +500,16 @@
 
 .method calculateSegmentSize(Ljava/nio/ByteBuffer;I)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "byteBuffer",
+            "markerIndex"
+        }
+    .end annotation
 
     const/4 v0, -0x1
 
@@ -486,6 +537,14 @@
 
 .method compareMarker([B)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "marker"
+        }
+    .end annotation
 
     .line 78
     iget-object p0, p0, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;->mMarker:[B
@@ -499,6 +558,16 @@
 
 .method compareSignature(Ljava/nio/ByteBuffer;I)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "byteBuffer",
+            "markerIndex"
+        }
+    .end annotation
 
     .line 82
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;->mSignature:[B
@@ -553,6 +622,14 @@
 
 .method getDataSizeIndex(I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "markerIndex"
+        }
+    .end annotation
 
     .line 101
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;->markerLength()I
@@ -566,6 +643,16 @@
 
 .method getInfo(Ljava/nio/ByteBuffer;I)Ljava/lang/Object;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "byteBuffer",
+            "markerIndex"
+        }
+    .end annotation
 
     .line 140
     sget-object v0, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;->SOF:Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;
@@ -601,6 +688,14 @@
 
 .method getSignatureIndex(I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "markerIndex"
+        }
+    .end annotation
 
     .line 97
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;->markerLength()I
@@ -635,6 +730,16 @@
 
 .method readInt(Ljava/nio/ByteBuffer;I)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "byteBuffer",
+            "position"
+        }
+    .end annotation
 
     const/4 v0, 0x2
 

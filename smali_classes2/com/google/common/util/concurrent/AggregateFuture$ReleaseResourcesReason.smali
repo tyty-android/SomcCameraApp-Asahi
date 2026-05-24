@@ -34,7 +34,7 @@
 .method private static synthetic $values()[Lcom/google/common/util/concurrent/AggregateFuture$ReleaseResourcesReason;
     .locals 2
 
-    .line 317
+    .line 354
     sget-object v0, Lcom/google/common/util/concurrent/AggregateFuture$ReleaseResourcesReason;->OUTPUT_FUTURE_DONE:Lcom/google/common/util/concurrent/AggregateFuture$ReleaseResourcesReason;
 
     sget-object v1, Lcom/google/common/util/concurrent/AggregateFuture$ReleaseResourcesReason;->ALL_INPUT_FUTURES_PROCESSED:Lcom/google/common/util/concurrent/AggregateFuture$ReleaseResourcesReason;
@@ -49,7 +49,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 318
+    .line 355
     new-instance v0, Lcom/google/common/util/concurrent/AggregateFuture$ReleaseResourcesReason;
 
     const-string v1, "OUTPUT_FUTURE_DONE"
@@ -60,7 +60,7 @@
 
     sput-object v0, Lcom/google/common/util/concurrent/AggregateFuture$ReleaseResourcesReason;->OUTPUT_FUTURE_DONE:Lcom/google/common/util/concurrent/AggregateFuture$ReleaseResourcesReason;
 
-    .line 319
+    .line 356
     new-instance v0, Lcom/google/common/util/concurrent/AggregateFuture$ReleaseResourcesReason;
 
     const-string v1, "ALL_INPUT_FUTURES_PROCESSED"
@@ -71,7 +71,7 @@
 
     sput-object v0, Lcom/google/common/util/concurrent/AggregateFuture$ReleaseResourcesReason;->ALL_INPUT_FUTURES_PROCESSED:Lcom/google/common/util/concurrent/AggregateFuture$ReleaseResourcesReason;
 
-    .line 317
+    .line 354
     invoke-static {}, Lcom/google/common/util/concurrent/AggregateFuture$ReleaseResourcesReason;->$values()[Lcom/google/common/util/concurrent/AggregateFuture$ReleaseResourcesReason;
 
     move-result-object v0
@@ -83,13 +83,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 317
+    .line 354
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -97,8 +108,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/util/concurrent/AggregateFuture$ReleaseResourcesReason;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 317
+    .line 354
     const-class v0, Lcom/google/common/util/concurrent/AggregateFuture$ReleaseResourcesReason;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -113,7 +132,7 @@
 .method public static values()[Lcom/google/common/util/concurrent/AggregateFuture$ReleaseResourcesReason;
     .locals 1
 
-    .line 317
+    .line 354
     sget-object v0, Lcom/google/common/util/concurrent/AggregateFuture$ReleaseResourcesReason;->$VALUES:[Lcom/google/common/util/concurrent/AggregateFuture$ReleaseResourcesReason;
 
     invoke-virtual {v0}, [Lcom/google/common/util/concurrent/AggregateFuture$ReleaseResourcesReason;->clone()Ljava/lang/Object;

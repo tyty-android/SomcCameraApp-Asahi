@@ -41,13 +41,21 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/base/Converter$1;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
-    .line 206
+    .line 277
     iput-object p1, p0, Lcom/google/common/base/Converter$1$1;->this$1:Lcom/google/common/base/Converter$1;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 207
+    .line 278
     iget-object p1, p1, Lcom/google/common/base/Converter$1;->val$fromIterable:Ljava/lang/Iterable;
 
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -64,7 +72,7 @@
 .method public hasNext()Z
     .locals 0
 
-    .line 211
+    .line 282
     iget-object p0, p0, Lcom/google/common/base/Converter$1$1;->fromIterator:Ljava/util/Iterator;
 
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
@@ -82,7 +90,7 @@
         }
     .end annotation
 
-    .line 216
+    .line 287
     iget-object v0, p0, Lcom/google/common/base/Converter$1$1;->this$1:Lcom/google/common/base/Converter$1;
 
     iget-object v0, v0, Lcom/google/common/base/Converter$1;->this$0:Lcom/google/common/base/Converter;
@@ -103,7 +111,7 @@
 .method public remove()V
     .locals 0
 
-    .line 221
+    .line 292
     iget-object p0, p0, Lcom/google/common/base/Converter$1$1;->fromIterator:Ljava/util/Iterator;
 
     invoke-interface {p0}, Ljava/util/Iterator;->remove()V

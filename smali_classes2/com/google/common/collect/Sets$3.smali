@@ -30,8 +30,18 @@
 # direct methods
 .method constructor <init>(Ljava/util/Set;Ljava/util/Set;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x1010
+        }
+        names = {
+            "val$set1",
+            "val$set2"
+        }
+    .end annotation
 
-    .line 815
+    .line 910
     iput-object p1, p0, Lcom/google/common/collect/Sets$3;->val$set1:Ljava/util/Set;
 
     iput-object p2, p0, Lcom/google/common/collect/Sets$3;->val$set2:Ljava/util/Set;
@@ -47,8 +57,20 @@
 # virtual methods
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "element"
+        }
+    .end annotation
 
-    .line 852
+    .line 948
     iget-object v0, p0, Lcom/google/common/collect/Sets$3;->val$set1:Ljava/util/Set;
 
     invoke-interface {v0, p1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
@@ -79,7 +101,7 @@
 .method public isEmpty()Z
     .locals 1
 
-    .line 847
+    .line 943
     iget-object v0, p0, Lcom/google/common/collect/Sets$3;->val$set2:Ljava/util/Set;
 
     iget-object p0, p0, Lcom/google/common/collect/Sets$3;->val$set1:Ljava/util/Set;
@@ -101,7 +123,7 @@
         }
     .end annotation
 
-    .line 818
+    .line 913
     new-instance v0, Lcom/google/common/collect/Sets$3$1;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/Sets$3$1;-><init>(Lcom/google/common/collect/Sets$3;)V
@@ -112,7 +134,7 @@
 .method public bridge synthetic iterator()Ljava/util/Iterator;
     .locals 0
 
-    .line 815
+    .line 910
     invoke-virtual {p0}, Lcom/google/common/collect/Sets$3;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p0
@@ -123,7 +145,7 @@
 .method public size()I
     .locals 4
 
-    .line 837
+    .line 933
     iget-object v0, p0, Lcom/google/common/collect/Sets$3;->val$set1:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
@@ -144,7 +166,7 @@
 
     move-result-object v2
 
-    .line 838
+    .line 934
     iget-object v3, p0, Lcom/google/common/collect/Sets$3;->val$set2:Ljava/util/Set;
 
     invoke-interface {v3, v2}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
@@ -159,4 +181,17 @@
 
     :cond_1
     return v1
+.end method
+
+.method upperBoundSize()I
+    .locals 0
+
+    .line 953
+    iget-object p0, p0, Lcom/google/common/collect/Sets$3;->val$set1:Ljava/util/Set;
+
+    invoke-static {p0}, Lcom/google/common/collect/Sets$3;->upperBoundSize(Ljava/util/Set;)I
+
+    move-result p0
+
+    return p0
 .end method

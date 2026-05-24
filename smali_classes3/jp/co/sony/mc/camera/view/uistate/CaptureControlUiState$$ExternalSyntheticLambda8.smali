@@ -3,32 +3,36 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function3;
+.implements Lkotlin/jvm/functions/Function1;
+
+
+# instance fields
+.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
 
 
 # direct methods
-.method public synthetic constructor <init>()V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda8;->f$0:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
-    check-cast p1, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$$ExternalSyntheticLambda8;->f$0:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
 
-    check-cast p2, Ljava/lang/Boolean;
+    check-cast p1, Ljava/lang/Boolean;
 
-    check-cast p3, Ljava/lang/Boolean;
-
-    invoke-static {p1, p2, p3}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->$r8$lambda$vcLBXDXnCdMznNOVI7GleIj0viA(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;Ljava/lang/Boolean;Ljava/lang/Boolean;)Z
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->$r8$lambda$RWBd44DnBMD_sYK5kHz_3INHyus(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;Ljava/lang/Boolean;)Z
 
     move-result p0
 

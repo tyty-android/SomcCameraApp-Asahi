@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<R:",
@@ -24,6 +27,17 @@
 
 
 # virtual methods
+.method public bridge synthetic rowKeySet()Ljava/util/Set;
+    .locals 0
+
+    .line 36
+    invoke-interface {p0}, Lcom/google/common/collect/RowSortedTable;->rowKeySet()Ljava/util/SortedSet;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public abstract rowKeySet()Ljava/util/SortedSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -32,6 +46,17 @@
             "TR;>;"
         }
     .end annotation
+.end method
+
+.method public bridge synthetic rowMap()Ljava/util/Map;
+    .locals 0
+
+    .line 36
+    invoke-interface {p0}, Lcom/google/common/collect/RowSortedTable;->rowMap()Ljava/util/SortedMap;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
 .method public abstract rowMap()Ljava/util/SortedMap;

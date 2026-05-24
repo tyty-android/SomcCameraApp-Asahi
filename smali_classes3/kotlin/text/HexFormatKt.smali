@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nHexFormat.kt\nKotlin\n*S Kotlin\n*F\n+ 1 HexFormat.kt\nkotlin/text/HexFormatKt\n+ 2 _Strings.kt\nkotlin/text/StringsKt___StringsKt\n*L\n1#1,441:1\n1088#2,2:442\n*S KotlinDebug\n*F\n+ 1 HexFormat.kt\nkotlin/text/HexFormatKt\n*L\n440#1:442,2\n*E\n"
+    value = "SMAP\nHexFormat.kt\nKotlin\n*S Kotlin\n*F\n+ 1 HexFormat.kt\nkotlin/text/HexFormatKt\n+ 2 _Strings.kt\nkotlin/text/StringsKt___StringsKt\n*L\n1#1,844:1\n1088#2,2:845\n*S KotlinDebug\n*F\n+ 1 HexFormat.kt\nkotlin/text/HexFormatKt\n*L\n843#1:845,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -27,8 +27,8 @@
     }
     k = 0x2
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x30
@@ -54,7 +54,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 434
+    .line 837
     new-instance v0, Lkotlin/text/HexFormat$Builder;
 
     invoke-direct {v0}, Lkotlin/text/HexFormat$Builder;-><init>()V
@@ -82,14 +82,14 @@
 .method private static final isCaseSensitive(Ljava/lang/String;)Z
     .locals 4
 
-    .line 440
+    .line 843
     check-cast p0, Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
     move v1, v0
 
-    .line 442
+    .line 845
     :goto_0
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
@@ -103,7 +103,7 @@
 
     const/16 v3, 0x80
 
-    .line 440
+    .line 843
     invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->compare(II)I
 
     move-result v3

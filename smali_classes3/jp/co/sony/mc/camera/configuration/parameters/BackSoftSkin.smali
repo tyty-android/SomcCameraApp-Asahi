@@ -57,7 +57,7 @@
     .line 26
     new-instance v6, Ljp/co/sony/mc/camera/configuration/parameters/BackSoftSkin;
 
-    const v4, 0x7f1103f4
+    const v4, 0x7f11043f
 
     const/high16 v5, 0x3f000000    # 0.5f
 
@@ -65,7 +65,7 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f0800c8
+    const v3, 0x7f08012b
 
     move-object v0, v6
 
@@ -76,7 +76,7 @@
     .line 30
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/BackSoftSkin;
 
-    const v11, 0x7f1103f3
+    const v11, 0x7f11043e
 
     const/4 v12, 0x0
 
@@ -84,7 +84,7 @@
 
     const/4 v9, 0x1
 
-    const v10, 0x7f0800c7
+    const v10, 0x7f08012a
 
     move-object v7, v0
 
@@ -104,6 +104,23 @@
 
 .method private constructor <init>(Ljava/lang/String;IIIF)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IIF)V"
@@ -127,6 +144,18 @@
 
 .method public static getDefaultValue(Landroid/content/Context;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/BackSoftSkin;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "mode",
+            "cameraId"
+        }
+    .end annotation
 
     .line 122
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
@@ -159,7 +188,7 @@
 
     move-result-object p0
 
-    const p1, 0x7f11050a
+    const p1, 0x7f110569
 
     .line 125
     invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -182,6 +211,16 @@
 
 .method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/BackSoftSkin;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId"
+        }
+    .end annotation
 
     .line 105
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
@@ -237,6 +276,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/BackSoftSkin;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 25
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/BackSoftSkin;
@@ -297,6 +344,14 @@
 
 .method public getLevel(I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "maxLevel"
+        }
+    .end annotation
 
     .line 117
     iget p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/BackSoftSkin;->mValue:F

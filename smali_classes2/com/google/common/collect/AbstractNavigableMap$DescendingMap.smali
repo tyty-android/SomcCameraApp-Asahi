@@ -28,8 +28,16 @@
 # direct methods
 .method private constructor <init>(Lcom/google/common/collect/AbstractNavigableMap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 167
+    .line 175
     iput-object p1, p0, Lcom/google/common/collect/AbstractNavigableMap$DescendingMap;->this$0:Lcom/google/common/collect/AbstractNavigableMap;
 
     invoke-direct {p0}, Lcom/google/common/collect/Maps$DescendingMap;-><init>()V
@@ -40,7 +48,7 @@
 .method synthetic constructor <init>(Lcom/google/common/collect/AbstractNavigableMap;Lcom/google/common/collect/AbstractNavigableMap$1;)V
     .locals 0
 
-    .line 167
+    .line 175
     invoke-direct {p0, p1}, Lcom/google/common/collect/AbstractNavigableMap$DescendingMap;-><init>(Lcom/google/common/collect/AbstractNavigableMap;)V
 
     return-void
@@ -59,7 +67,7 @@
         }
     .end annotation
 
-    .line 175
+    .line 183
     iget-object p0, p0, Lcom/google/common/collect/AbstractNavigableMap$DescendingMap;->this$0:Lcom/google/common/collect/AbstractNavigableMap;
 
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractNavigableMap;->descendingEntryIterator()Ljava/util/Iterator;
@@ -79,7 +87,7 @@
         }
     .end annotation
 
-    .line 170
+    .line 178
     iget-object p0, p0, Lcom/google/common/collect/AbstractNavigableMap$DescendingMap;->this$0:Lcom/google/common/collect/AbstractNavigableMap;
 
     return-object p0

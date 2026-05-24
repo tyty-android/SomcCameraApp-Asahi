@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<E:",
@@ -24,10 +27,18 @@
 # direct methods
 .method protected constructor <init>(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "size"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 48
+    .line 52
     invoke-direct {p0, p1, v0}, Lcom/google/common/collect/AbstractIndexedListIterator;-><init>(II)V
 
     return-void
@@ -35,17 +46,27 @@
 
 .method protected constructor <init>(II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "size",
+            "position"
+        }
+    .end annotation
 
-    .line 61
+    .line 65
     invoke-direct {p0}, Lcom/google/common/collect/UnmodifiableListIterator;-><init>()V
 
-    .line 62
+    .line 66
     invoke-static {p2, p1}, Lcom/google/common/base/Preconditions;->checkPositionIndex(II)I
 
-    .line 63
+    .line 67
     iput p1, p0, Lcom/google/common/collect/AbstractIndexedListIterator;->size:I
 
-    .line 64
+    .line 68
     iput p2, p0, Lcom/google/common/collect/AbstractIndexedListIterator;->position:I
 
     return-void
@@ -54,6 +75,18 @@
 
 # virtual methods
 .method protected abstract get(I)Ljava/lang/Object;
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TE;"
@@ -64,7 +97,7 @@
 .method public final hasNext()Z
     .locals 1
 
-    .line 69
+    .line 73
     iget v0, p0, Lcom/google/common/collect/AbstractIndexedListIterator;->position:I
 
     iget p0, p0, Lcom/google/common/collect/AbstractIndexedListIterator;->size:I
@@ -85,7 +118,7 @@
 .method public final hasPrevious()Z
     .locals 0
 
-    .line 87
+    .line 92
     iget p0, p0, Lcom/google/common/collect/AbstractIndexedListIterator;->position:I
 
     if-lez p0, :cond_0
@@ -103,20 +136,23 @@
 
 .method public final next()Ljava/lang/Object;
     .locals 2
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TE;"
         }
     .end annotation
 
-    .line 74
+    .line 79
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractIndexedListIterator;->hasNext()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 77
+    .line 82
     iget v0, p0, Lcom/google/common/collect/AbstractIndexedListIterator;->position:I
 
     add-int/lit8 v1, v0, 0x1
@@ -129,7 +165,7 @@
 
     return-object p0
 
-    .line 75
+    .line 80
     :cond_0
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -141,7 +177,7 @@
 .method public final nextIndex()I
     .locals 0
 
-    .line 82
+    .line 87
     iget p0, p0, Lcom/google/common/collect/AbstractIndexedListIterator;->position:I
 
     return p0
@@ -149,20 +185,23 @@
 
 .method public final previous()Ljava/lang/Object;
     .locals 1
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TE;"
         }
     .end annotation
 
-    .line 92
+    .line 98
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractIndexedListIterator;->hasPrevious()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 95
+    .line 101
     iget v0, p0, Lcom/google/common/collect/AbstractIndexedListIterator;->position:I
 
     add-int/lit8 v0, v0, -0x1
@@ -175,7 +214,7 @@
 
     return-object p0
 
-    .line 93
+    .line 99
     :cond_0
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -187,7 +226,7 @@
 .method public final previousIndex()I
     .locals 0
 
-    .line 100
+    .line 106
     iget p0, p0, Lcom/google/common/collect/AbstractIndexedListIterator;->position:I
 
     add-int/lit8 p0, p0, -0x1

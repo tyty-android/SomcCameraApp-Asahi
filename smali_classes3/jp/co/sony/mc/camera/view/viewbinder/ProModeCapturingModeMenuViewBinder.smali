@@ -14,7 +14,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nProModeCapturingModeMenuViewBinder.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ProModeCapturingModeMenuViewBinder.kt\njp/co/sony/mc/camera/view/viewbinder/ProModeCapturingModeMenuViewBinder\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,187:1\n1557#2:188\n1628#2,3:189\n*S KotlinDebug\n*F\n+ 1 ProModeCapturingModeMenuViewBinder.kt\njp/co/sony/mc/camera/view/viewbinder/ProModeCapturingModeMenuViewBinder\n*L\n182#1:188\n182#1:189,3\n*E\n"
+    value = "SMAP\nProModeCapturingModeMenuViewBinder.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ProModeCapturingModeMenuViewBinder.kt\njp/co/sony/mc/camera/view/viewbinder/ProModeCapturingModeMenuViewBinder\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,188:1\n1557#2:189\n1628#2,3:190\n*S KotlinDebug\n*F\n+ 1 ProModeCapturingModeMenuViewBinder.kt\njp/co/sony/mc/camera/view/viewbinder/ProModeCapturingModeMenuViewBinder\n*L\n183#1:189\n183#1:190,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -337,7 +337,7 @@
         }
     .end annotation
 
-    .line 169
+    .line 170
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
 
     move-result p0
@@ -352,31 +352,31 @@
 
     if-eqz p0, :cond_0
 
-    .line 171
+    .line 172
     new-array p0, v1, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_P:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     aput-object v1, p0, v3
 
-    .line 172
+    .line 173
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     aput-object v1, p0, v2
 
-    .line 173
+    .line 174
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     aput-object v1, p0, v0
 
-    .line 170
+    .line 171
     invoke-static {p0}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
 
     goto :goto_0
 
-    .line 177
+    .line 178
     :cond_0
     new-array p0, v1, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
@@ -384,26 +384,26 @@
 
     aput-object v1, p0, v3
 
-    .line 178
+    .line 179
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     aput-object v1, p0, v2
 
-    .line 179
+    .line 180
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     aput-object v1, p0, v0
 
-    .line 176
+    .line 177
     invoke-static {p0}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
 
-    .line 182
+    .line 183
     :goto_0
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 188
+    .line 189
     new-instance v0, Ljava/util/ArrayList;
 
     const/16 v1, 0xa
@@ -416,7 +416,7 @@
 
     check-cast v0, Ljava/util/Collection;
 
-    .line 189
+    .line 190
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -432,10 +432,10 @@
 
     move-result-object v1
 
-    .line 190
+    .line 191
     check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 183
+    .line 184
     new-instance v4, Ljp/co/sony/mc/camera/view/widget/CapturingModeMenuAdapter$CapturingModeItem;
 
     if-ne v1, p1, :cond_1
@@ -450,12 +450,12 @@
     :goto_2
     invoke-direct {v4, v1, v5}, Ljp/co/sony/mc/camera/view/widget/CapturingModeMenuAdapter$CapturingModeItem;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Z)V
 
-    .line 190
+    .line 191
     invoke-interface {v0, v4}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 191
+    .line 192
     :cond_2
     check-cast v0, Ljava/util/List;
 
@@ -841,7 +841,7 @@
 .method private final rotateContainer(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
     .locals 3
 
-    .line 149
+    .line 150
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeCapturingModeMenuViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBinding;->getRoot()Landroid/view/View;
@@ -852,7 +852,7 @@
 
     move-result v0
 
-    .line 150
+    .line 151
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeCapturingModeMenuViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBinding;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBinding;->getRoot()Landroid/view/View;
@@ -863,7 +863,7 @@
 
     move-result v1
 
-    .line 151
+    .line 152
     sget-object v2, Ljp/co/sony/mc/camera/view/viewbinder/ProModeCapturingModeMenuViewBinder$WhenMappings;->$EnumSwitchMapping$0:[I
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;->ordinal()I
@@ -920,7 +920,7 @@
 
     move v0, p1
 
-    .line 161
+    .line 162
     :goto_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeCapturingModeMenuViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBinding;
 
@@ -928,10 +928,10 @@
 
     move-result-object p0
 
-    .line 162
+    .line 163
     invoke-virtual {p0, p1}, Landroid/view/View;->setTranslationX(F)V
 
-    .line 163
+    .line 164
     invoke-virtual {p0, v0}, Landroid/view/View;->setTranslationY(F)V
 
     return-void
@@ -1206,9 +1206,16 @@
 
     move-result-object p1
 
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeCapturingModeMenuViewBinder;->layoutChangeListener:Landroid/view/View$OnLayoutChangeListener;
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeCapturingModeMenuViewBinder;->layoutChangeListener:Landroid/view/View$OnLayoutChangeListener;
 
-    invoke-virtual {p1, p0}, Landroid/view/View;->removeOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
+    invoke-virtual {p1, v0}, Landroid/view/View;->removeOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
+
+    .line 144
+    sget-object p1, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->INSTANCE:Ljp/co/sony/mc/camera/util/AccessibilityUtil;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeCapturingModeMenuViewBinder;->touchExplorationStateChangeListener:Landroid/view/accessibility/AccessibilityManager$TouchExplorationStateChangeListener;
+
+    invoke-virtual {p1, p0}, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->unregister(Ljava/lang/Object;)V
 
     return-void
 .end method

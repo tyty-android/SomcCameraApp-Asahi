@@ -3,6 +3,11 @@
 .source "CharEscaper.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/escape/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # static fields
 .field private static final DEST_PAD_MULTIPLIER:I = 0x2
 
@@ -19,23 +24,35 @@
 
 .method private static growBuffer([CII)[C
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "dest",
+            "index",
+            "size"
+        }
+    .end annotation
 
     if-ltz p2, :cond_1
 
-    .line 166
+    .line 167
     new-array p2, p2, [C
 
     if-lez p1, :cond_0
 
     const/4 v0, 0x0
 
-    .line 168
+    .line 169
     invoke-static {p0, v0, p2, v0, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     :cond_0
     return-object p2
 
-    .line 164
+    .line 165
     :cond_1
     new-instance p0, Ljava/lang/AssertionError;
 
@@ -50,6 +67,14 @@
 # virtual methods
 .method public escape(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "string"
+        }
+    .end annotation
 
     .line 57
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -92,22 +117,43 @@
 .end method
 
 .method protected abstract escape(C)[C
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 .end method
 
 .method protected final escapeSlow(Ljava/lang/String;I)Ljava/lang/String;
     .locals 11
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "s",
+            "index"
+        }
+    .end annotation
 
-    .line 97
+    .line 98
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v0
 
-    .line 100
+    .line 101
     invoke-static {}, Lcom/google/common/escape/Platform;->charBufferFromThreadLocal()[C
 
     move-result-object v1
 
-    .line 101
+    .line 102
     array-length v2, v1
 
     const/4 v3, 0x0
@@ -119,7 +165,7 @@
     :goto_0
     if-ge p2, v0, :cond_4
 
-    .line 110
+    .line 111
     invoke-virtual {p1, p2}, Ljava/lang/String;->charAt(I)C
 
     move-result v6
@@ -132,7 +178,7 @@
 
     goto :goto_1
 
-    .line 117
+    .line 118
     :cond_0
     array-length v7, v6
 
@@ -150,7 +196,7 @@
 
     add-int/2addr v2, v10
 
-    .line 126
+    .line 127
     invoke-static {v1, v5, v2}, Lcom/google/common/escape/CharEscaper;->growBuffer([CII)[C
 
     move-result-object v1
@@ -158,7 +204,7 @@
     :cond_1
     if-lez v8, :cond_2
 
-    .line 131
+    .line 132
     invoke-virtual {p1, v4, p2, v1, v5}, Ljava/lang/String;->getChars(II[CI)V
 
     move v5, v9
@@ -166,7 +212,7 @@
     :cond_2
     if-lez v7, :cond_3
 
-    .line 137
+    .line 138
     invoke-static {v6, v3, v1, v5, v7}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     add-int/2addr v5, v7
@@ -188,20 +234,20 @@
 
     if-ge v2, p0, :cond_5
 
-    .line 150
+    .line 151
     invoke-static {v1, v5, p0}, Lcom/google/common/escape/CharEscaper;->growBuffer([CII)[C
 
     move-result-object p2
 
     move-object v1, p2
 
-    .line 152
+    .line 153
     :cond_5
     invoke-virtual {p1, v4, v0, v1, v5}, Ljava/lang/String;->getChars(II[CI)V
 
     move v5, p0
 
-    .line 155
+    .line 156
     :cond_6
     new-instance p0, Ljava/lang/String;
 

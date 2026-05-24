@@ -72,7 +72,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 121
+    .line 84
     new-instance v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$RecordingMicType;
 
     const-string v1, "INTERNAL"
@@ -83,7 +83,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$RecordingMicType;->INTERNAL:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$RecordingMicType;
 
-    .line 122
+    .line 85
     new-instance v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$RecordingMicType;
 
     const-string v1, "EXTERNAL"
@@ -119,7 +119,7 @@
         }
     .end annotation
 
-    .line 120
+    .line 83
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -150,7 +150,7 @@
 
     move-result-object p0
 
-    .line 123
+    .line 86
     check-cast p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$RecordingMicType;
 
     return-object p0
@@ -165,7 +165,7 @@
 
     move-result-object v0
 
-    .line 123
+    .line 86
     check-cast v0, [Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$RecordingMicType;
 
     return-object v0

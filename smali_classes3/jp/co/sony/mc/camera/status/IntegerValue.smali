@@ -13,6 +13,14 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     .line 26
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,6 +48,16 @@
 
 .method public putInto(Landroid/content/ContentValues;Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "cv",
+            "keyPrefix"
+        }
+    .end annotation
 
     .line 45
     new-instance v0, Ljava/lang/StringBuilder;

@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 85
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback$1;->this$0:Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback;
@@ -37,6 +45,14 @@
 # virtual methods
 .method public onTick(J)V
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elapsedTime"
+        }
+    .end annotation
 
     .line 94
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback$1;->this$0:Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback;

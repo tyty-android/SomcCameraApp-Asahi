@@ -153,6 +153,20 @@
 
 .method public constructor <init>(ILjp/co/sony/mc/camera/controller/selftimerfeedback/LedLight;ZLjp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback$SelfTimerFeedbackListener;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "duration",
+            "ledLight",
+            "isBlinkNeeded",
+            "listener"
+        }
+    .end annotation
 
     .line 56
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -234,6 +248,14 @@
 # virtual methods
 .method public start(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "delay"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 

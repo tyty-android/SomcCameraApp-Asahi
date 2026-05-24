@@ -36,7 +36,7 @@
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda0;->f$1:Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;
 
-    invoke-static {v0, p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->$r8$lambda$F4RD7u8ZEeBFyRPtmjoCJ1WA-8g(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;Landroid/view/View;)V
+    invoke-static {v0, p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->$r8$lambda$f5PoEtPzBzJqfgMF3d22hn2DNsA(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;Landroid/view/View;)V
 
     return-void
 .end method

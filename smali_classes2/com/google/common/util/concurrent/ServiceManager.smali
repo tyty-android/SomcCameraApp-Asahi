@@ -7,13 +7,17 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/util/concurrent/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/util/concurrent/ServiceManager$EmptyServiceManagerWarning;,
         Lcom/google/common/util/concurrent/ServiceManager$NoOpService;,
-        Lcom/google/common/util/concurrent/ServiceManager$ServiceListener;,
         Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;,
-        Lcom/google/common/util/concurrent/ServiceManager$Listener;
+        Lcom/google/common/util/concurrent/ServiceManager$ServiceListener;,
+        Lcom/google/common/util/concurrent/ServiceManager$Listener;,
+        Lcom/google/common/util/concurrent/ServiceManager$FailedService;
     }
 .end annotation
 
@@ -39,7 +43,7 @@
     .end annotation
 .end field
 
-.field private static final logger:Ljava/util/logging/Logger;
+.field private static final logger:Lcom/google/common/util/concurrent/LazyLogger;
 
 
 # instance fields
@@ -57,30 +61,36 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$q5jTZ26-2dI7YYHKKwxIi4IjpYs(J)Ljava/time/Duration;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljava/time/Duration;->ofMillis(J)Ljava/time/Duration;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 2
 
-    .line 122
-    const-class v0, Lcom/google/common/util/concurrent/ServiceManager;
+    .line 127
+    new-instance v0, Lcom/google/common/util/concurrent/LazyLogger;
 
-    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+    const-class v1, Lcom/google/common/util/concurrent/ServiceManager;
 
-    move-result-object v0
+    invoke-direct {v0, v1}, Lcom/google/common/util/concurrent/LazyLogger;-><init>(Ljava/lang/Class;)V
 
-    invoke-static {v0}, Ljava/util/logging/Logger;->getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;
+    sput-object v0, Lcom/google/common/util/concurrent/ServiceManager;->logger:Lcom/google/common/util/concurrent/LazyLogger;
 
-    move-result-object v0
-
-    sput-object v0, Lcom/google/common/util/concurrent/ServiceManager;->logger:Ljava/util/logging/Logger;
-
-    .line 123
+    .line 128
     new-instance v0, Lcom/google/common/util/concurrent/ServiceManager$1;
 
     invoke-direct {v0}, Lcom/google/common/util/concurrent/ServiceManager$1;-><init>()V
 
     sput-object v0, Lcom/google/common/util/concurrent/ServiceManager;->HEALTHY_EVENT:Lcom/google/common/util/concurrent/ListenerCallQueue$Event;
 
-    .line 135
+    .line 140
     new-instance v0, Lcom/google/common/util/concurrent/ServiceManager$2;
 
     invoke-direct {v0}, Lcom/google/common/util/concurrent/ServiceManager$2;-><init>()V
@@ -92,6 +102,15 @@
 
 .method public constructor <init>(Ljava/lang/Iterable;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "services"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -102,23 +121,28 @@
         }
     .end annotation
 
-    .line 200
+    .line 208
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 201
+    .line 209
     invoke-static {p1}, Lcom/google/common/collect/ImmutableList;->copyOf(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p1
 
-    .line 202
+    .line 210
     invoke-virtual {p1}, Lcom/google/common/collect/ImmutableList;->isEmpty()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 205
-    sget-object p1, Lcom/google/common/util/concurrent/ServiceManager;->logger:Ljava/util/logging/Logger;
+    .line 213
+    sget-object p1, Lcom/google/common/util/concurrent/ServiceManager;->logger:Lcom/google/common/util/concurrent/LazyLogger;
+
+    .line 214
+    invoke-virtual {p1}, Lcom/google/common/util/concurrent/LazyLogger;->get()Ljava/util/logging/Logger;
+
+    move-result-object p1
 
     sget-object v0, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
 
@@ -128,11 +152,12 @@
 
     invoke-direct {v1, v2}, Lcom/google/common/util/concurrent/ServiceManager$EmptyServiceManagerWarning;-><init>(Lcom/google/common/util/concurrent/ServiceManager$1;)V
 
+    .line 215
     const-string v3, "ServiceManager configured with no services.  Is your application configured properly?"
 
     invoke-virtual {p1, v0, v3, v1}, Ljava/util/logging/Logger;->log(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 209
+    .line 220
     new-instance p1, Lcom/google/common/util/concurrent/ServiceManager$NoOpService;
 
     invoke-direct {p1, v2}, Lcom/google/common/util/concurrent/ServiceManager$NoOpService;-><init>(Lcom/google/common/util/concurrent/ServiceManager$1;)V
@@ -141,7 +166,7 @@
 
     move-result-object p1
 
-    .line 211
+    .line 222
     :cond_0
     new-instance v0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;
 
@@ -149,15 +174,15 @@
 
     iput-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager;->state:Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;
 
-    .line 212
+    .line 223
     iput-object p1, p0, Lcom/google/common/util/concurrent/ServiceManager;->services:Lcom/google/common/collect/ImmutableList;
 
-    .line 213
+    .line 224
     new-instance v1, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v1, v0}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    .line 214
+    .line 225
     invoke-virtual {p1}, Lcom/google/common/collect/ImmutableList;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p1
@@ -175,7 +200,7 @@
 
     check-cast v0, Lcom/google/common/util/concurrent/Service;
 
-    .line 215
+    .line 226
     new-instance v2, Lcom/google/common/util/concurrent/ServiceManager$ServiceListener;
 
     invoke-direct {v2, v0, v1}, Lcom/google/common/util/concurrent/ServiceManager$ServiceListener;-><init>(Lcom/google/common/util/concurrent/Service;Ljava/lang/ref/WeakReference;)V
@@ -186,7 +211,7 @@
 
     invoke-interface {v0, v2, v3}, Lcom/google/common/util/concurrent/Service;->addListener(Lcom/google/common/util/concurrent/Service$Listener;Ljava/util/concurrent/Executor;)V
 
-    .line 218
+    .line 229
     invoke-interface {v0}, Lcom/google/common/util/concurrent/Service;->state()Lcom/google/common/util/concurrent/Service$State;
 
     move-result-object v2
@@ -209,7 +234,7 @@
 
     goto :goto_0
 
-    .line 222
+    .line 233
     :cond_2
     iget-object p0, p0, Lcom/google/common/util/concurrent/ServiceManager;->state:Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;
 
@@ -218,11 +243,11 @@
     return-void
 .end method
 
-.method static synthetic access$200()Ljava/util/logging/Logger;
+.method static synthetic access$200()Lcom/google/common/util/concurrent/LazyLogger;
     .locals 1
 
-    .line 121
-    sget-object v0, Lcom/google/common/util/concurrent/ServiceManager;->logger:Ljava/util/logging/Logger;
+    .line 126
+    sget-object v0, Lcom/google/common/util/concurrent/ServiceManager;->logger:Lcom/google/common/util/concurrent/LazyLogger;
 
     return-object v0
 .end method
@@ -230,7 +255,7 @@
 .method static synthetic access$300()Lcom/google/common/util/concurrent/ListenerCallQueue$Event;
     .locals 1
 
-    .line 121
+    .line 126
     sget-object v0, Lcom/google/common/util/concurrent/ServiceManager;->STOPPED_EVENT:Lcom/google/common/util/concurrent/ListenerCallQueue$Event;
 
     return-object v0
@@ -239,7 +264,7 @@
 .method static synthetic access$400()Lcom/google/common/util/concurrent/ListenerCallQueue$Event;
     .locals 1
 
-    .line 121
+    .line 126
     sget-object v0, Lcom/google/common/util/concurrent/ServiceManager;->HEALTHY_EVENT:Lcom/google/common/util/concurrent/ListenerCallQueue$Event;
 
     return-object v0
@@ -249,8 +274,18 @@
 # virtual methods
 .method public addListener(Lcom/google/common/util/concurrent/ServiceManager$Listener;Ljava/util/concurrent/Executor;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "listener",
+            "executor"
+        }
+    .end annotation
 
-    .line 250
+    .line 261
     iget-object p0, p0, Lcom/google/common/util/concurrent/ServiceManager;->state:Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->addListener(Lcom/google/common/util/concurrent/ServiceManager$Listener;Ljava/util/concurrent/Executor;)V
@@ -261,7 +296,7 @@
 .method public awaitHealthy()V
     .locals 0
 
-    .line 291
+    .line 301
     iget-object p0, p0, Lcom/google/common/util/concurrent/ServiceManager;->state:Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;
 
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->awaitHealthy()V
@@ -271,13 +306,24 @@
 
 .method public awaitHealthy(JLjava/util/concurrent/TimeUnit;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "timeout",
+            "unit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/util/concurrent/TimeoutException;
         }
     .end annotation
 
-    .line 307
+    .line 334
     iget-object p0, p0, Lcom/google/common/util/concurrent/ServiceManager;->state:Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->awaitHealthy(JLjava/util/concurrent/TimeUnit;)V
@@ -285,10 +331,39 @@
     return-void
 .end method
 
+.method public awaitHealthy(Ljava/time/Duration;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "timeout"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/util/concurrent/TimeoutException;
+        }
+    .end annotation
+
+    .line 318
+    invoke-static {p1}, Lcom/google/common/util/concurrent/Internal;->toNanosSaturated(Ljava/time/Duration;)J
+
+    move-result-wide v0
+
+    sget-object p1, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
+
+    invoke-virtual {p0, v0, v1, p1}, Lcom/google/common/util/concurrent/ServiceManager;->awaitHealthy(JLjava/util/concurrent/TimeUnit;)V
+
+    return-void
+.end method
+
 .method public awaitStopped()V
     .locals 0
 
-    .line 330
+    .line 357
     iget-object p0, p0, Lcom/google/common/util/concurrent/ServiceManager;->state:Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;
 
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->awaitStopped()V
@@ -298,13 +373,24 @@
 
 .method public awaitStopped(JLjava/util/concurrent/TimeUnit;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "timeout",
+            "unit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/util/concurrent/TimeoutException;
         }
     .end annotation
 
-    .line 344
+    .line 386
     iget-object p0, p0, Lcom/google/common/util/concurrent/ServiceManager;->state:Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->awaitStopped(JLjava/util/concurrent/TimeUnit;)V
@@ -312,10 +398,39 @@
     return-void
 .end method
 
+.method public awaitStopped(Ljava/time/Duration;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "timeout"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/util/concurrent/TimeoutException;
+        }
+    .end annotation
+
+    .line 372
+    invoke-static {p1}, Lcom/google/common/util/concurrent/Internal;->toNanosSaturated(Ljava/time/Duration;)J
+
+    move-result-wide v0
+
+    sget-object p1, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
+
+    invoke-virtual {p0, v0, v1, p1}, Lcom/google/common/util/concurrent/ServiceManager;->awaitStopped(JLjava/util/concurrent/TimeUnit;)V
+
+    return-void
+.end method
+
 .method public isHealthy()Z
     .locals 1
 
-    .line 354
+    .line 396
     iget-object p0, p0, Lcom/google/common/util/concurrent/ServiceManager;->services:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableList;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
@@ -335,7 +450,7 @@
 
     check-cast v0, Lcom/google/common/util/concurrent/Service;
 
-    .line 355
+    .line 397
     invoke-interface {v0}, Lcom/google/common/util/concurrent/Service;->isRunning()Z
 
     move-result v0
@@ -355,7 +470,7 @@
 .method public bridge synthetic servicesByState()Lcom/google/common/collect/ImmutableMultimap;
     .locals 0
 
-    .line 120
+    .line 123
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ServiceManager;->servicesByState()Lcom/google/common/collect/ImmutableSetMultimap;
 
     move-result-object p0
@@ -375,7 +490,7 @@
         }
     .end annotation
 
-    .line 372
+    .line 414
     iget-object p0, p0, Lcom/google/common/util/concurrent/ServiceManager;->state:Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;
 
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->servicesByState()Lcom/google/common/collect/ImmutableSetMultimap;
@@ -388,7 +503,7 @@
 .method public startAsync()Lcom/google/common/util/concurrent/ServiceManager;
     .locals 7
 
-    .line 263
+    .line 274
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager;->services:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableList;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
@@ -408,31 +523,30 @@
 
     check-cast v1, Lcom/google/common/util/concurrent/Service;
 
-    .line 264
+    .line 275
     invoke-interface {v1}, Lcom/google/common/util/concurrent/Service;->state()Lcom/google/common/util/concurrent/Service$State;
 
-    move-result-object v2
+    move-result-object v1
 
-    .line 265
-    sget-object v3, Lcom/google/common/util/concurrent/Service$State;->NEW:Lcom/google/common/util/concurrent/Service$State;
+    sget-object v2, Lcom/google/common/util/concurrent/Service$State;->NEW:Lcom/google/common/util/concurrent/Service$State;
 
-    if-ne v2, v3, :cond_0
+    if-ne v1, v2, :cond_0
 
-    const/4 v3, 0x1
+    const/4 v1, 0x1
 
     goto :goto_1
 
     :cond_0
-    const/4 v3, 0x0
+    const/4 v1, 0x0
 
     :goto_1
-    const-string v4, "Service %s is %s, cannot start it."
+    const-string v2, "Not all services are NEW, cannot start %s"
 
-    invoke-static {v3, v4, v1, v2}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {v1, v2, p0}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/String;Ljava/lang/Object;)V
 
     goto :goto_0
 
-    .line 267
+    .line 277
     :cond_1
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager;->services:Lcom/google/common/collect/ImmutableList;
 
@@ -453,13 +567,13 @@
 
     check-cast v1, Lcom/google/common/util/concurrent/Service;
 
-    .line 269
+    .line 279
     :try_start_0
     iget-object v2, p0, Lcom/google/common/util/concurrent/ServiceManager;->state:Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;
 
     invoke-virtual {v2, v1}, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->tryStartTiming(Lcom/google/common/util/concurrent/Service;)V
 
-    .line 270
+    .line 280
     invoke-interface {v1}, Lcom/google/common/util/concurrent/Service;->startAsync()Lcom/google/common/util/concurrent/Service;
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
@@ -469,36 +583,22 @@
     :catch_0
     move-exception v2
 
-    .line 276
-    sget-object v3, Lcom/google/common/util/concurrent/ServiceManager;->logger:Ljava/util/logging/Logger;
+    .line 286
+    sget-object v3, Lcom/google/common/util/concurrent/ServiceManager;->logger:Lcom/google/common/util/concurrent/LazyLogger;
+
+    invoke-virtual {v3}, Lcom/google/common/util/concurrent/LazyLogger;->get()Ljava/util/logging/Logger;
+
+    move-result-object v3
 
     sget-object v4, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
 
-    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    const-string v6, "Unable to start Service "
 
-    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v5
-
-    invoke-virtual {v5}, Ljava/lang/String;->length()I
-
-    move-result v5
-
-    add-int/lit8 v5, v5, 0x18
-
-    new-instance v6, Ljava/lang/StringBuilder;
-
-    invoke-direct {v6, v5}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v5, "Unable to start Service "
-
-    invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -514,6 +614,39 @@
     return-object p0
 .end method
 
+.method public startupDurations()Lcom/google/common/collect/ImmutableMap;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/common/collect/ImmutableMap<",
+            "Lcom/google/common/util/concurrent/Service;",
+            "Ljava/time/Duration;",
+            ">;"
+        }
+    .end annotation
+
+    .line 442
+    invoke-virtual {p0}, Lcom/google/common/util/concurrent/ServiceManager;->startupTimes()Lcom/google/common/collect/ImmutableMap;
+
+    move-result-object p0
+
+    new-instance v0, Lcom/google/common/util/concurrent/ServiceManager$$ExternalSyntheticLambda0;
+
+    invoke-direct {v0}, Lcom/google/common/util/concurrent/ServiceManager$$ExternalSyntheticLambda0;-><init>()V
+
+    invoke-static {p0, v0}, Lcom/google/common/collect/Maps;->transformValues(Ljava/util/Map;Lcom/google/common/base/Function;)Ljava/util/Map;
+
+    move-result-object p0
+
+    .line 441
+    invoke-static {p0}, Lcom/google/common/collect/ImmutableMap;->copyOf(Ljava/util/Map;)Lcom/google/common/collect/ImmutableMap;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public startupTimes()Lcom/google/common/collect/ImmutableMap;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
@@ -526,7 +659,7 @@
         }
     .end annotation
 
-    .line 383
+    .line 425
     iget-object p0, p0, Lcom/google/common/util/concurrent/ServiceManager;->state:Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;
 
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->startupTimes()Lcom/google/common/collect/ImmutableMap;
@@ -539,7 +672,7 @@
 .method public stopAsync()Lcom/google/common/util/concurrent/ServiceManager;
     .locals 2
 
-    .line 318
+    .line 345
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager;->services:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableList;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
@@ -559,7 +692,7 @@
 
     check-cast v1, Lcom/google/common/util/concurrent/Service;
 
-    .line 319
+    .line 346
     invoke-interface {v1}, Lcom/google/common/util/concurrent/Service;->stopAsync()Lcom/google/common/util/concurrent/Service;
 
     goto :goto_0
@@ -571,7 +704,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 388
+    .line 447
     const-class v0, Lcom/google/common/util/concurrent/ServiceManager;
 
     invoke-static {v0}, Lcom/google/common/base/MoreObjects;->toStringHelper(Ljava/lang/Class;)Lcom/google/common/base/MoreObjects$ToStringHelper;
@@ -582,7 +715,7 @@
 
     const-class v1, Lcom/google/common/util/concurrent/ServiceManager$NoOpService;
 
-    .line 389
+    .line 448
     invoke-static {v1}, Lcom/google/common/base/Predicates;->instanceOf(Ljava/lang/Class;)Lcom/google/common/base/Predicate;
 
     move-result-object v1
@@ -601,7 +734,7 @@
 
     move-result-object p0
 
-    .line 390
+    .line 449
     invoke-virtual {p0}, Lcom/google/common/base/MoreObjects$ToStringHelper;->toString()Ljava/lang/String;
 
     move-result-object p0

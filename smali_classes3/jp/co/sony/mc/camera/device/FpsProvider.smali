@@ -47,6 +47,17 @@
 
 .method private static getFpsRange(ILjava/util/List;)[I
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "targetFps",
+            "candidates"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -239,6 +250,14 @@
 
 .method public static getFpsRangeForBokeh(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
     .line 116
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSupportedPreviewFpsRange(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/util/List;
@@ -257,6 +276,16 @@
 
 .method public static getFpsRangeForStillPreview(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Landroid/graphics/Rect;)[I
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "cameraId",
+            "previewSize"
+        }
+    .end annotation
 
     .line 81
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSupportedPreviewFpsRange(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/util/List;
@@ -344,6 +373,18 @@
 
 .method static getFpsRangeForVideoPreview(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;I)[I
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "cameraId",
+            "videoSize",
+            "targetFps"
+        }
+    .end annotation
 
     .line 130
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -538,6 +579,15 @@
 
 .method public static getFpsRangeForVideoRecording(I)Landroid/util/Range;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "targetFps"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -595,6 +645,14 @@
 
 .method public static isHighSpeedFps(I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fps"
+        }
+    .end annotation
 
     const/16 v0, 0x78
 

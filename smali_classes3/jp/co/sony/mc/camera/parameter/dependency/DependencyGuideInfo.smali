@@ -192,6 +192,14 @@
 
 .method private varargs modeGroup([Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingValueGroup;)Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$ModeGroup;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "valueGroup"
+        }
+    .end annotation
 
     .line 97
     new-instance p0, Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$ModeGroup;
@@ -203,6 +211,16 @@
 
 .method private varargs settingDependencyGroup(Ljp/co/sony/mc/camera/setting/SettingKey$Key;[Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingDependencyGroup;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "values"
+        }
+    .end annotation
 
     .line 107
     new-instance p0, Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingDependencyGroup;
@@ -214,6 +232,16 @@
 
 .method private varargs settingValueGroup(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;[Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingDependencyGroup;)Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingValueGroup;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "value",
+            "settingDependencyGroup"
+        }
+    .end annotation
 
     .line 102
     new-instance p0, Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingValueGroup;
@@ -227,6 +255,17 @@
 # virtual methods
 .method getModeGroup(Landroid/util/Pair;Z)Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$ModeGroup;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "isOneShot"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 3121
+    .line 3356
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,6 +31,17 @@
 # virtual methods
 .method public getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -42,10 +53,8 @@
         }
     .end annotation
 
-    .line 3125
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;
-
-    move-result-object p0
+    .line 3360
+    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/AutoExposureLock;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/AutoExposureLock;
 
     return-object p0
 .end method

@@ -16,6 +16,7 @@
         <SwitchPreference android:title="@string/debug_preference_entry_title_enable_virtual_remain_size" android:key="@string/key_debug_enable_virtual_remain_size" />
         <SeekBarPreference android:max="1000" android:title="@string/debug_preference_entry_title_set_virtual_remain_size" android:key="@string/key_debug_set_virtual_remain_size" android:defaultValue="300" android:min="0" app:showSeekBarValue="true" />
         <SwitchPreference android:title="@string/debug_preference_entry_title_endurance_mode_without_remote_controller" android:key="@string/key_debug_endurance_mode_without_remote_controller" />
+        <SwitchPreference android:title="@string/debug_preference_entry_title_sub_preview_repeat_fold_collapse" android:key="@string/key_debug_sub_preview_repeat_fold_collapse" />
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/debug_preference_title_handling_warning">
         <SwitchPreference android:title="@string/debug_preference_entry_title_force_activate_cool_mode" android:key="@string/key_debug_force_activate_cool_mode" />

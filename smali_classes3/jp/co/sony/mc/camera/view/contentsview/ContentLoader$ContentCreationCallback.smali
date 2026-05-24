@@ -16,6 +16,18 @@
 
 # virtual methods
 .method public abstract onContentCreated(ILjp/co/sony/mc/camera/view/contentsview/contents/Content;Landroid/graphics/Bitmap;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "requestId",
+            "content",
+            "bitmap"
+        }
+    .end annotation
 .end method
 
 .method public abstract onNoContentLoaded()V

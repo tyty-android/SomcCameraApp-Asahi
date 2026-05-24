@@ -18,7 +18,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 907
+    .line 909
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -26,6 +26,14 @@
 
 .method public static getApi1Value(I)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "hybridZoom"
+        }
+    .end annotation
 
     if-eqz p0, :cond_1
 
@@ -37,13 +45,13 @@
 
     goto :goto_0
 
-    .line 916
+    .line 918
     :cond_0
     const-string p0, "auto"
 
     goto :goto_0
 
-    .line 913
+    .line 915
     :cond_1
     const-string p0, "off"
 
@@ -53,8 +61,16 @@
 
 .method static getApi2Value(Ljava/lang/String;)Ljava/lang/Integer;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "hybridZoom"
+        }
+    .end annotation
 
-    .line 925
+    .line 927
     invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
 
     const-string v0, "off"
@@ -80,7 +96,7 @@
     :cond_0
     const/4 p0, 0x1
 
-    .line 930
+    .line 932
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -90,7 +106,7 @@
     :cond_1
     const/4 p0, 0x0
 
-    .line 927
+    .line 929
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0

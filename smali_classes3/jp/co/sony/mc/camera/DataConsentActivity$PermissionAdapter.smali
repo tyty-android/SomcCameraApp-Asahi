@@ -49,6 +49,14 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
     .line 426
     invoke-static {}, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;->values()[Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;
@@ -62,6 +70,14 @@
 
 .method public getItemId(I)J
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
     const-wide/16 p0, 0x0
 
@@ -70,6 +86,18 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "position",
+            "convertView",
+            "parent"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
@@ -82,7 +110,7 @@
 
     move-result-object p2
 
-    const v0, 0x7f0c00d5
+    const v0, 0x7f0c00cf
 
     const/4 v1, 0x0
 
@@ -99,7 +127,7 @@
 
     check-cast p0, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;
 
-    const p1, 0x7f09032c
+    const p1, 0x7f090331
 
     .line 443
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -108,7 +136,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    const v0, 0x7f090161
+    const v0, 0x7f090167
 
     .line 444
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -138,6 +166,14 @@
 
 .method public isEnabled(I)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
     const/4 p0, 0x0
 

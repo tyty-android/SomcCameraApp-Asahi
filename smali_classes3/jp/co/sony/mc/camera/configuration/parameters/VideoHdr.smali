@@ -57,7 +57,7 @@
     .line 21
     new-instance v7, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
-    const v5, 0x7f1102a2
+    const v5, 0x7f1102eb
 
     const-string v6, "on-video-hdr"
 
@@ -65,9 +65,9 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f08030b
+    const v3, 0x7f08037b
 
-    const v4, 0x7f110299
+    const v4, 0x7f1102e2
 
     move-object v0, v7
 
@@ -78,7 +78,7 @@
     .line 26
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
-    const v13, 0x7f1103ee
+    const v13, 0x7f110439
 
     const-string v14, "off"
 
@@ -86,9 +86,9 @@
 
     const/4 v10, 0x1
 
-    const v11, 0x7f08030a
+    const v11, 0x7f08037a
 
-    const v12, 0x7f11029a
+    const v12, 0x7f1102e3
 
     move-object v8, v0
 
@@ -108,6 +108,25 @@
 
 .method private constructor <init>(Ljava/lang/String;IIIILjava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId",
+            "shortTextId",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(III",
@@ -145,6 +164,16 @@
 
 .method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId"
+        }
+    .end annotation
 
     .line 108
     new-instance v0, Ljava/util/ArrayList;
@@ -233,6 +262,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 20
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;

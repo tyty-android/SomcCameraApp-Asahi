@@ -38,6 +38,21 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/RequestPermissionActivity;Landroid/content/Context;ILjava/util/List;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "context",
+            "id",
+            "data"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -99,6 +114,14 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "i"
+        }
+    .end annotation
 
     .line 793
     iget-object p0, p0, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionAdapter;->mGroupList:Ljava/util/List;
@@ -120,6 +143,14 @@
 
 .method public getItemId(I)J
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "i"
+        }
+    .end annotation
 
     int-to-long p0, p1
 
@@ -128,6 +159,14 @@
 
 .method public getItemViewType(I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "i"
+        }
+    .end annotation
 
     const/4 p0, 0x0
 
@@ -136,6 +175,18 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "position",
+            "convertView",
+            "parent"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
@@ -146,7 +197,7 @@
 
     move-result-object p2
 
-    const p3, 0x7f0c00d5
+    const p3, 0x7f0c00cf
 
     const/4 v0, 0x0
 
@@ -163,7 +214,7 @@
 
     check-cast p1, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
 
-    const p3, 0x7f09032c
+    const p3, 0x7f090331
 
     .line 819
     invoke-virtual {p2, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -172,7 +223,7 @@
 
     check-cast p3, Landroid/widget/TextView;
 
-    const v0, 0x7f090161
+    const v0, 0x7f090167
 
     .line 820
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -320,6 +371,14 @@
 
 .method public isEnabled(I)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "i"
+        }
+    .end annotation
 
     const/4 p0, 0x0
 
@@ -328,12 +387,28 @@
 
 .method public registerDataSetObserver(Landroid/database/DataSetObserver;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dataSetObserver"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public unregisterDataSetObserver(Landroid/database/DataSetObserver;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dataSetObserver"
+        }
+    .end annotation
 
     return-void
 .end method

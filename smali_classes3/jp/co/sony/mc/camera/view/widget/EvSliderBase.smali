@@ -177,7 +177,7 @@
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/widget/EvSliderBase;->mTextPaintStroke:Landroid/graphics/Paint;
 
-    const v0, 0x7f080169
+    const v0, 0x7f0801c5
 
     .line 38
     invoke-virtual {p1, v0}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
@@ -186,7 +186,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/widget/EvSliderBase;->mTickBarDrawable:Landroid/graphics/drawable/Drawable;
 
-    const v1, 0x7f08016a
+    const v1, 0x7f0801c6
 
     .line 40
     invoke-virtual {p1, v1}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
@@ -248,7 +248,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f07014a
+    const v0, 0x7f07018b
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -274,7 +274,7 @@
 
     move-result-object p1
 
-    const v1, 0x7f060056
+    const v1, 0x7f06005c
 
     const/4 v2, 0x0
 
@@ -305,7 +305,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f060098
+    const p2, 0x7f060085
 
     invoke-virtual {p1, p2, v2}, Landroid/content/res/Resources;->getColor(ILandroid/content/res/Resources$Theme;)I
 
@@ -318,7 +318,7 @@
 
     move-result-object p0
 
-    const p1, 0x7f070149
+    const p1, 0x7f07018a
 
     invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -351,7 +351,7 @@
 
     if-eqz p4, :cond_1
 
-    const p3, 0x7f0403fe
+    const p3, 0x7f040404
 
     .line 22
     :cond_1
@@ -680,7 +680,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f070148
+    const v2, 0x7f070189
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -691,7 +691,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f08029f
+    const v3, 0x7f080322
 
     invoke-static {v2, v3}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 

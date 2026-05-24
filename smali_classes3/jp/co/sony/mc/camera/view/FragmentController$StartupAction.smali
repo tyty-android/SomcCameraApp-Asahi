@@ -36,7 +36,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/view/FragmentController$StartupAction;
     .locals 3
 
-    .line 500
+    .line 462
     sget-object v0, Ljp/co/sony/mc/camera/view/FragmentController$StartupAction;->NONE:Ljp/co/sony/mc/camera/view/FragmentController$StartupAction;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/FragmentController$StartupAction;->CAPTURE:Ljp/co/sony/mc/camera/view/FragmentController$StartupAction;
@@ -53,7 +53,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 501
+    .line 463
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$StartupAction;
 
     const-string v1, "NONE"
@@ -64,7 +64,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/FragmentController$StartupAction;->NONE:Ljp/co/sony/mc/camera/view/FragmentController$StartupAction;
 
-    .line 502
+    .line 464
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$StartupAction;
 
     const-string v1, "CAPTURE"
@@ -75,7 +75,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/FragmentController$StartupAction;->CAPTURE:Ljp/co/sony/mc/camera/view/FragmentController$StartupAction;
 
-    .line 503
+    .line 465
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$StartupAction;
 
     const-string v1, "RECORD"
@@ -86,7 +86,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/FragmentController$StartupAction;->RECORD:Ljp/co/sony/mc/camera/view/FragmentController$StartupAction;
 
-    .line 500
+    .line 462
     invoke-static {}, Ljp/co/sony/mc/camera/view/FragmentController$StartupAction;->$values()[Ljp/co/sony/mc/camera/view/FragmentController$StartupAction;
 
     move-result-object v0
@@ -98,13 +98,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 500
+    .line 462
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -112,8 +123,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/FragmentController$StartupAction;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 500
+    .line 462
     const-class v0, Ljp/co/sony/mc/camera/view/FragmentController$StartupAction;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -128,7 +147,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/view/FragmentController$StartupAction;
     .locals 1
 
-    .line 500
+    .line 462
     sget-object v0, Ljp/co/sony/mc/camera/view/FragmentController$StartupAction;->$VALUES:[Ljp/co/sony/mc/camera/view/FragmentController$StartupAction;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/view/FragmentController$StartupAction;->clone()Ljava/lang/Object;

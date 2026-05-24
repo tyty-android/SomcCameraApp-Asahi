@@ -41,13 +41,21 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/ConcurrentHashMultiset;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 505
+    .line 511
     iput-object p1, p0, Lcom/google/common/collect/ConcurrentHashMultiset$2;->this$0:Lcom/google/common/collect/ConcurrentHashMultiset;
 
     invoke-direct {p0}, Lcom/google/common/collect/AbstractIterator;-><init>()V
 
-    .line 507
+    .line 513
     invoke-static {p1}, Lcom/google/common/collect/ConcurrentHashMultiset;->access$100(Lcom/google/common/collect/ConcurrentHashMultiset;)Ljava/util/concurrent/ConcurrentMap;
 
     move-result-object p1
@@ -77,7 +85,10 @@
         }
     .end annotation
 
-    .line 512
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 519
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/ConcurrentHashMultiset$2;->mapEntries:Ljava/util/Iterator;
 
@@ -87,7 +98,7 @@
 
     if-nez v0, :cond_1
 
-    .line 513
+    .line 520
     invoke-virtual {p0}, Lcom/google/common/collect/ConcurrentHashMultiset$2;->endOfData()Ljava/lang/Object;
 
     move-result-object p0
@@ -96,7 +107,7 @@
 
     return-object p0
 
-    .line 515
+    .line 522
     :cond_1
     iget-object v0, p0, Lcom/google/common/collect/ConcurrentHashMultiset$2;->mapEntries:Ljava/util/Iterator;
 
@@ -106,7 +117,7 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 516
+    .line 523
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v1
@@ -119,7 +130,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 518
+    .line 525
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object p0
@@ -133,8 +144,10 @@
 
 .method protected bridge synthetic computeNext()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 
-    .line 505
+    .line 511
     invoke-virtual {p0}, Lcom/google/common/collect/ConcurrentHashMultiset$2;->computeNext()Lcom/google/common/collect/Multiset$Entry;
 
     move-result-object p0

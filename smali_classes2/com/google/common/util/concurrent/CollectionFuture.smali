@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/util/concurrent/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/util/concurrent/CollectionFuture$Present;,
@@ -26,6 +29,9 @@
 
 # instance fields
 .field private values:Ljava/util/List;
+    .annotation runtime Lcom/google/errorprone/annotations/concurrent/LazyInit;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -33,12 +39,26 @@
             "TV;>;>;"
         }
     .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 .end field
 
 
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/ImmutableCollection;Z)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "futures",
+            "allMustSucceed"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -51,24 +71,24 @@
 
     const/4 v0, 0x1
 
-    .line 41
+    .line 46
     invoke-direct {p0, p1, p2, v0}, Lcom/google/common/util/concurrent/AggregateFuture;-><init>(Lcom/google/common/collect/ImmutableCollection;ZZ)V
 
-    .line 44
+    .line 49
     invoke-virtual {p1}, Lcom/google/common/collect/ImmutableCollection;->isEmpty()Z
 
     move-result p2
 
     if-eqz p2, :cond_0
 
-    .line 45
-    invoke-static {}, Lcom/google/common/collect/ImmutableList;->of()Lcom/google/common/collect/ImmutableList;
+    .line 50
+    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     move-result-object p2
 
     goto :goto_0
 
-    .line 46
+    .line 51
     :cond_0
     invoke-virtual {p1}, Lcom/google/common/collect/ImmutableCollection;->size()I
 
@@ -79,11 +99,9 @@
     move-result-object p2
 
     :goto_0
-    check-cast p2, Ljava/util/List;
-
     const/4 v0, 0x0
 
-    .line 49
+    .line 54
     :goto_1
     invoke-virtual {p1}, Lcom/google/common/collect/ImmutableCollection;->size()I
 
@@ -93,14 +111,14 @@
 
     const/4 v1, 0x0
 
-    .line 50
+    .line 55
     invoke-interface {p2, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_1
 
-    .line 53
+    .line 58
     :cond_1
     iput-object p2, p0, Lcom/google/common/util/concurrent/CollectionFuture;->values:Ljava/util/List;
 
@@ -112,21 +130,32 @@
 .method final collectOneValue(ILjava/lang/Object;)V
     .locals 1
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/util/concurrent/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "returnValue"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(ITV;)V"
         }
     .end annotation
 
-    .line 58
+    .line 63
     iget-object p0, p0, Lcom/google/common/util/concurrent/CollectionFuture;->values:Ljava/util/List;
 
     if-eqz p0, :cond_0
 
-    .line 60
+    .line 65
     new-instance v0, Lcom/google/common/util/concurrent/CollectionFuture$Present;
 
     invoke-direct {v0, p2}, Lcom/google/common/util/concurrent/CollectionFuture$Present;-><init>(Ljava/lang/Object;)V
@@ -138,6 +167,15 @@
 .end method
 
 .method abstract combine(Ljava/util/List;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "values"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -151,12 +189,12 @@
 .method final handleAllCompleted()V
     .locals 1
 
-    .line 66
+    .line 71
     iget-object v0, p0, Lcom/google/common/util/concurrent/CollectionFuture;->values:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    .line 68
+    .line 73
     invoke-virtual {p0, v0}, Lcom/google/common/util/concurrent/CollectionFuture;->combine(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object v0
@@ -169,13 +207,21 @@
 
 .method releaseResources(Lcom/google/common/util/concurrent/AggregateFuture$ReleaseResourcesReason;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "reason"
+        }
+    .end annotation
 
-    .line 74
+    .line 79
     invoke-super {p0, p1}, Lcom/google/common/util/concurrent/AggregateFuture;->releaseResources(Lcom/google/common/util/concurrent/AggregateFuture$ReleaseResourcesReason;)V
 
     const/4 p1, 0x0
 
-    .line 75
+    .line 80
     iput-object p1, p0, Lcom/google/common/util/concurrent/CollectionFuture;->values:Ljava/util/List;
 
     return-void

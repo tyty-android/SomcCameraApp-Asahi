@@ -11,7 +11,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nZoomScrollerPresenter.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ZoomScrollerPresenter.kt\njp/co/sony/mc/camera/view/widget/AnimationManager\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,1102:1\n1#2:1103\n*E\n"
+    value = "SMAP\nZoomScrollerPresenter.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ZoomScrollerPresenter.kt\njp/co/sony/mc/camera/view/widget/AnimationManager\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,1309:1\n1#2:1310\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -92,10 +92,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 822
+    .line 1029
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 823
+    .line 1030
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/AnimationManager;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
     return-void
@@ -104,7 +104,7 @@
 .method public static final synthetic access$setAnimator$p(Ljp/co/sony/mc/camera/view/widget/AnimationManager;Landroid/animation/ValueAnimator;)V
     .locals 0
 
-    .line 822
+    .line 1029
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/AnimationManager;->animator:Landroid/animation/ValueAnimator;
 
     return-void
@@ -115,7 +115,7 @@
 
     const/4 v0, 0x2
 
-    .line 845
+    .line 1052
     new-array v0, v0, [F
 
     const/4 v1, 0x0
@@ -132,10 +132,10 @@
 
     const-wide/16 v0, 0xc8
 
-    .line 846
+    .line 1053
     invoke-virtual {p2, v0, v1}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    .line 848
+    .line 1055
     new-instance v0, Landroid/view/animation/AccelerateDecelerateInterpolator;
 
     invoke-direct {v0}, Landroid/view/animation/AccelerateDecelerateInterpolator;-><init>()V
@@ -144,14 +144,14 @@
 
     invoke-virtual {p2, v0}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
-    .line 849
+    .line 1056
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/AnimationManager$$ExternalSyntheticLambda0;
 
     invoke-direct {v0, p1, p0}, Ljp/co/sony/mc/camera/view/widget/AnimationManager$$ExternalSyntheticLambda0;-><init>(FLjp/co/sony/mc/camera/view/widget/AnimationManager;)V
 
     invoke-virtual {p2, v0}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    .line 855
+    .line 1062
     new-instance p1, Ljp/co/sony/mc/camera/view/widget/AnimationManager$buildAnimator$1$2;
 
     invoke-direct {p1, p0}, Ljp/co/sony/mc/camera/view/widget/AnimationManager$buildAnimator$1$2;-><init>(Ljp/co/sony/mc/camera/view/widget/AnimationManager;)V
@@ -160,7 +160,7 @@
 
     invoke-virtual {p2, p1}, Landroid/animation/ValueAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
-    .line 845
+    .line 1052
     const-string p0, "apply(...)"
 
     invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
@@ -179,7 +179,7 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 850
+    .line 1057
     invoke-virtual {p2}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
     move-result-object p2
@@ -200,7 +200,7 @@
 
     goto :goto_0
 
-    .line 852
+    .line 1059
     :cond_0
     iget-object p0, p1, Ljp/co/sony/mc/camera/view/widget/AnimationManager;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
@@ -215,7 +215,7 @@
 .method public final close()V
     .locals 2
 
-    .line 835
+    .line 1042
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AnimationManager;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->isOpened()Z
@@ -226,7 +226,7 @@
 
     return-void
 
-    .line 836
+    .line 1043
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AnimationManager;->animator:Landroid/animation/ValueAnimator;
 
@@ -239,7 +239,7 @@
 
     const/4 v1, 0x0
 
-    .line 837
+    .line 1044
     invoke-direct {p0, v0, v1}, Ljp/co/sony/mc/camera/view/widget/AnimationManager;->buildAnimator(FF)Landroid/animation/ValueAnimator;
 
     move-result-object v0
@@ -254,7 +254,7 @@
 .method public final closeImmediately()V
     .locals 1
 
-    .line 863
+    .line 1070
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AnimationManager;->animator:Landroid/animation/ValueAnimator;
 
     if-eqz v0, :cond_0
@@ -264,10 +264,10 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 864
+    .line 1071
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AnimationManager;->animator:Landroid/animation/ValueAnimator;
 
-    .line 865
+    .line 1072
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/AnimationManager;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
     const/4 v0, 0x0
@@ -280,7 +280,7 @@
 .method public final isAnimationRunning()Z
     .locals 2
 
-    .line 841
+    .line 1048
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/AnimationManager;->animator:Landroid/animation/ValueAnimator;
 
     const/4 v0, 0x0
@@ -304,7 +304,7 @@
 .method public final open()V
     .locals 2
 
-    .line 829
+    .line 1036
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AnimationManager;->presenter:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->isClosed()Z
@@ -315,7 +315,7 @@
 
     return-void
 
-    .line 830
+    .line 1037
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AnimationManager;->animator:Landroid/animation/ValueAnimator;
 
@@ -328,7 +328,7 @@
 
     const/high16 v1, 0x3f800000    # 1.0f
 
-    .line 831
+    .line 1038
     invoke-direct {p0, v0, v1}, Ljp/co/sony/mc/camera/view/widget/AnimationManager;->buildAnimator(FF)Landroid/animation/ValueAnimator;
 
     move-result-object v0

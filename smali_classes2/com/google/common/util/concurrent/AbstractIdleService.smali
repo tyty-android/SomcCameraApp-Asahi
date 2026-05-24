@@ -7,10 +7,13 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/util/concurrent/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/common/util/concurrent/AbstractIdleService$DelegateService;,
-        Lcom/google/common/util/concurrent/AbstractIdleService$ThreadNameSupplier;
+        Lcom/google/common/util/concurrent/AbstractIdleService$ThreadNameSupplier;,
+        Lcom/google/common/util/concurrent/AbstractIdleService$DelegateService;
     }
 .end annotation
 
@@ -33,10 +36,10 @@
 .method protected constructor <init>()V
     .locals 2
 
-    .line 93
+    .line 94
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 37
+    .line 42
     new-instance v0, Lcom/google/common/util/concurrent/AbstractIdleService$ThreadNameSupplier;
 
     const/4 v1, 0x0
@@ -45,7 +48,7 @@
 
     iput-object v0, p0, Lcom/google/common/util/concurrent/AbstractIdleService;->threadNameSupplier:Lcom/google/common/base/Supplier;
 
-    .line 48
+    .line 53
     new-instance v0, Lcom/google/common/util/concurrent/AbstractIdleService$DelegateService;
 
     invoke-direct {v0, p0, v1}, Lcom/google/common/util/concurrent/AbstractIdleService$DelegateService;-><init>(Lcom/google/common/util/concurrent/AbstractIdleService;Lcom/google/common/util/concurrent/AbstractIdleService$1;)V
@@ -58,7 +61,7 @@
 .method static synthetic access$200(Lcom/google/common/util/concurrent/AbstractIdleService;)Lcom/google/common/base/Supplier;
     .locals 0
 
-    .line 34
+    .line 39
     iget-object p0, p0, Lcom/google/common/util/concurrent/AbstractIdleService;->threadNameSupplier:Lcom/google/common/base/Supplier;
 
     return-object p0
@@ -68,8 +71,18 @@
 # virtual methods
 .method public final addListener(Lcom/google/common/util/concurrent/Service$Listener;Ljava/util/concurrent/Executor;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "listener",
+            "executor"
+        }
+    .end annotation
 
-    .line 135
+    .line 131
     iget-object p0, p0, Lcom/google/common/util/concurrent/AbstractIdleService;->delegate:Lcom/google/common/util/concurrent/Service;
 
     invoke-interface {p0, p1, p2}, Lcom/google/common/util/concurrent/Service;->addListener(Lcom/google/common/util/concurrent/Service$Listener;Ljava/util/concurrent/Executor;)V
@@ -80,7 +93,7 @@
 .method public final awaitRunning()V
     .locals 0
 
-    .line 163
+    .line 159
     iget-object p0, p0, Lcom/google/common/util/concurrent/AbstractIdleService;->delegate:Lcom/google/common/util/concurrent/Service;
 
     invoke-interface {p0}, Lcom/google/common/util/concurrent/Service;->awaitRunning()V
@@ -90,13 +103,24 @@
 
 .method public final awaitRunning(JLjava/util/concurrent/TimeUnit;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "timeout",
+            "unit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/util/concurrent/TimeoutException;
         }
     .end annotation
 
-    .line 169
+    .line 165
     iget-object p0, p0, Lcom/google/common/util/concurrent/AbstractIdleService;->delegate:Lcom/google/common/util/concurrent/Service;
 
     invoke-interface {p0, p1, p2, p3}, Lcom/google/common/util/concurrent/Service;->awaitRunning(JLjava/util/concurrent/TimeUnit;)V
@@ -107,7 +131,7 @@
 .method public final awaitTerminated()V
     .locals 0
 
-    .line 175
+    .line 171
     iget-object p0, p0, Lcom/google/common/util/concurrent/AbstractIdleService;->delegate:Lcom/google/common/util/concurrent/Service;
 
     invoke-interface {p0}, Lcom/google/common/util/concurrent/Service;->awaitTerminated()V
@@ -117,13 +141,24 @@
 
 .method public final awaitTerminated(JLjava/util/concurrent/TimeUnit;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "timeout",
+            "unit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/util/concurrent/TimeoutException;
         }
     .end annotation
 
-    .line 181
+    .line 177
     iget-object p0, p0, Lcom/google/common/util/concurrent/AbstractIdleService;->delegate:Lcom/google/common/util/concurrent/Service;
 
     invoke-interface {p0, p1, p2, p3}, Lcom/google/common/util/concurrent/Service;->awaitTerminated(JLjava/util/concurrent/TimeUnit;)V
@@ -134,10 +169,10 @@
 .method protected executor()Ljava/util/concurrent/Executor;
     .locals 1
 
-    .line 109
-    new-instance v0, Lcom/google/common/util/concurrent/AbstractIdleService$1;
+    .line 110
+    new-instance v0, Lcom/google/common/util/concurrent/AbstractIdleService$$ExternalSyntheticLambda0;
 
-    invoke-direct {v0, p0}, Lcom/google/common/util/concurrent/AbstractIdleService$1;-><init>(Lcom/google/common/util/concurrent/AbstractIdleService;)V
+    invoke-direct {v0, p0}, Lcom/google/common/util/concurrent/AbstractIdleService$$ExternalSyntheticLambda0;-><init>(Lcom/google/common/util/concurrent/AbstractIdleService;)V
 
     return-object v0
 .end method
@@ -145,7 +180,7 @@
 .method public final failureCause()Ljava/lang/Throwable;
     .locals 0
 
-    .line 141
+    .line 137
     iget-object p0, p0, Lcom/google/common/util/concurrent/AbstractIdleService;->delegate:Lcom/google/common/util/concurrent/Service;
 
     invoke-interface {p0}, Lcom/google/common/util/concurrent/Service;->failureCause()Ljava/lang/Throwable;
@@ -158,7 +193,7 @@
 .method public final isRunning()Z
     .locals 0
 
-    .line 124
+    .line 120
     iget-object p0, p0, Lcom/google/common/util/concurrent/AbstractIdleService;->delegate:Lcom/google/common/util/concurrent/Service;
 
     invoke-interface {p0}, Lcom/google/common/util/concurrent/Service;->isRunning()Z
@@ -168,10 +203,31 @@
     return p0
 .end method
 
+.method synthetic lambda$executor$0$com-google-common-util-concurrent-AbstractIdleService(Ljava/lang/Runnable;)V
+    .locals 0
+
+    .line 110
+    iget-object p0, p0, Lcom/google/common/util/concurrent/AbstractIdleService;->threadNameSupplier:Lcom/google/common/base/Supplier;
+
+    invoke-interface {p0}, Lcom/google/common/base/Supplier;->get()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/String;
+
+    invoke-static {p0, p1}, Lcom/google/common/util/concurrent/MoreExecutors;->newThread(Ljava/lang/String;Ljava/lang/Runnable;)Ljava/lang/Thread;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/Thread;->start()V
+
+    return-void
+.end method
+
 .method protected serviceName()Ljava/lang/String;
     .locals 0
 
-    .line 191
+    .line 187
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p0
@@ -194,7 +250,7 @@
 .method public final startAsync()Lcom/google/common/util/concurrent/Service;
     .locals 1
 
-    .line 148
+    .line 144
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractIdleService;->delegate:Lcom/google/common/util/concurrent/Service;
 
     invoke-interface {v0}, Lcom/google/common/util/concurrent/Service;->startAsync()Lcom/google/common/util/concurrent/Service;
@@ -213,7 +269,7 @@
 .method public final state()Lcom/google/common/util/concurrent/Service$State;
     .locals 0
 
-    .line 129
+    .line 125
     iget-object p0, p0, Lcom/google/common/util/concurrent/AbstractIdleService;->delegate:Lcom/google/common/util/concurrent/Service;
 
     invoke-interface {p0}, Lcom/google/common/util/concurrent/Service;->state()Lcom/google/common/util/concurrent/Service$State;
@@ -226,7 +282,7 @@
 .method public final stopAsync()Lcom/google/common/util/concurrent/Service;
     .locals 1
 
-    .line 156
+    .line 152
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractIdleService;->delegate:Lcom/google/common/util/concurrent/Service;
 
     invoke-interface {v0}, Lcom/google/common/util/concurrent/Service;->stopAsync()Lcom/google/common/util/concurrent/Service;
@@ -235,46 +291,18 @@
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 3
+    .locals 2
 
-    .line 119
+    .line 115
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/AbstractIdleService;->serviceName()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p0}, Lcom/google/common/util/concurrent/AbstractIdleService;->state()Lcom/google/common/util/concurrent/Service$State;
-
-    move-result-object p0
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    move-result v1
-
-    add-int/lit8 v1, v1, 0x3
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/String;->length()I
-
-    move-result v2
-
-    add-int/2addr v1, v2
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -284,7 +312,11 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0}, Lcom/google/common/util/concurrent/AbstractIdleService;->state()Lcom/google/common/util/concurrent/Service$State;
+
+    move-result-object p0
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 

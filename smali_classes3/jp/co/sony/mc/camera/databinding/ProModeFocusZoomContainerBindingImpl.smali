@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field private final mCallback32:Landroid/view/View$OnClickListener;
+.field private final mCallback26:Landroid/view/View$OnClickListener;
 
 .field private mDirtyFlags:J
 
@@ -27,6 +27,16 @@
 
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root"
+        }
+    .end annotation
 
     .line 27
     sget-object v0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -46,6 +56,18 @@
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root",
+            "bindings"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -112,7 +134,7 @@
 
     invoke-direct {p1, p0, v0}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
 
-    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mCallback32:Landroid/view/View$OnClickListener;
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mCallback26:Landroid/view/View$OnClickListener;
 
     .line 41
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->invalidateAll()V
@@ -122,6 +144,17 @@
 
 .method private onChangeCameraSettingsModelFocusMode(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "CameraSettingsModelFocusMode",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -170,6 +203,17 @@
 
 .method private onChangeOrientationViewModelLayoutOrientation(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "OrientationViewModelLayoutOrientation",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -218,6 +262,17 @@
 
 .method private onChangeProModeBottomPaneUiStateProModeUiEnabled(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ProModeBottomPaneUiStateProModeUiEnabled",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -266,6 +321,17 @@
 
 .method private onChangeProModeCommonUiStateIsFocusMagMenuOpened(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ProModeCommonUiStateIsFocusMagMenuOpened",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -314,6 +380,17 @@
 
 .method private onChangeViewFinderUiStateIsViewFinderItemClickable(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ViewFinderUiStateIsViewFinderItemClickable",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -364,6 +441,16 @@
 # virtual methods
 .method public final _internalCallbackOnClick(ILandroid/view/View;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sourceId",
+            "callbackArg_0"
+        }
+    .end annotation
 
     .line 370
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mFocusMagnificationUiState:Ljp/co/sony/mc/camera/view/uistate/FocusMagnificationUiState;
@@ -691,7 +778,7 @@
     .line 335
     iget-object v2, v1, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->focusMagBtn:Landroid/widget/ImageButton;
 
-    iget-object v3, v1, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mCallback32:Landroid/view/View$OnClickListener;
+    iget-object v3, v1, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mCallback26:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -839,6 +926,18 @@
 
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "localFieldId",
+            "object",
+            "fieldId"
+        }
+    .end annotation
 
     if-eqz p1, :cond_4
 
@@ -915,6 +1014,14 @@
 
 .method public setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "CameraSettingsModel"
+        }
+    .end annotation
 
     .line 130
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mCameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
@@ -937,7 +1044,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x8
+    const/16 p1, 0xb
 
     .line 134
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->notifyPropertyChanged(I)V
@@ -961,6 +1068,14 @@
 
 .method public setFocusMagnificationUiState(Ljp/co/sony/mc/camera/view/uistate/FocusMagnificationUiState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "FocusMagnificationUiState"
+        }
+    .end annotation
 
     .line 106
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mFocusMagnificationUiState:Ljp/co/sony/mc/camera/view/uistate/FocusMagnificationUiState;
@@ -983,7 +1098,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0xc
+    const/16 p1, 0xf
 
     .line 110
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->notifyPropertyChanged(I)V
@@ -1007,6 +1122,14 @@
 
 .method public setOrientationViewModel(Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "OrientationViewModel"
+        }
+    .end annotation
 
     .line 90
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
@@ -1029,7 +1152,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x16
+    const/16 p1, 0x19
 
     .line 94
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->notifyPropertyChanged(I)V
@@ -1053,6 +1176,14 @@
 
 .method public setProModeBottomPaneUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ProModeBottomPaneUiState"
+        }
+    .end annotation
 
     .line 114
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mProModeBottomPaneUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;
@@ -1075,7 +1206,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x17
+    const/16 p1, 0x1a
 
     .line 118
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->notifyPropertyChanged(I)V
@@ -1099,6 +1230,14 @@
 
 .method public setProModeCommonUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ProModeCommonUiState"
+        }
+    .end annotation
 
     .line 122
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mProModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
@@ -1121,7 +1260,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x18
+    const/16 p1, 0x1b
 
     .line 126
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->notifyPropertyChanged(I)V
@@ -1145,8 +1284,18 @@
 
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "variableId",
+            "variable"
+        }
+    .end annotation
 
-    const/16 v0, 0x16
+    const/16 v0, 0x19
 
     if-ne v0, p1, :cond_0
 
@@ -1158,7 +1307,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x25
+    const/16 v0, 0x28
 
     if-ne v0, p1, :cond_1
 
@@ -1170,7 +1319,7 @@
     goto :goto_0
 
     :cond_1
-    const/16 v0, 0xc
+    const/16 v0, 0xf
 
     if-ne v0, p1, :cond_2
 
@@ -1182,7 +1331,7 @@
     goto :goto_0
 
     :cond_2
-    const/16 v0, 0x17
+    const/16 v0, 0x1a
 
     if-ne v0, p1, :cond_3
 
@@ -1194,7 +1343,7 @@
     goto :goto_0
 
     :cond_3
-    const/16 v0, 0x18
+    const/16 v0, 0x1b
 
     if-ne v0, p1, :cond_4
 
@@ -1206,7 +1355,7 @@
     goto :goto_0
 
     :cond_4
-    const/16 v0, 0x8
+    const/16 v0, 0xb
 
     if-ne v0, p1, :cond_5
 
@@ -1229,6 +1378,14 @@
 
 .method public setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ViewFinderUiState"
+        }
+    .end annotation
 
     .line 98
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
@@ -1251,7 +1408,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x25
+    const/16 p1, 0x28
 
     .line 102
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->notifyPropertyChanged(I)V

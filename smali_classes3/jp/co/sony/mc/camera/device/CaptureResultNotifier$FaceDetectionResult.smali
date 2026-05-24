@@ -34,10 +34,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 466
+    .line 468
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 468
+    .line 470
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -51,28 +51,44 @@
 # virtual methods
 .method addFaceResult(ILandroid/graphics/Rect;Landroid/graphics/Point;ILjp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "id",
+            "faceRectangle",
+            "eyePosition",
+            "trackingId",
+            "faceRectType"
+        }
+    .end annotation
 
-    .line 484
+    .line 486
     new-instance v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ExtFace;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ExtFace;-><init>()V
 
-    .line 485
+    .line 487
     iput p1, v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ExtFace;->id:I
 
-    .line 486
+    .line 488
     iput-object p2, v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ExtFace;->rect:Landroid/graphics/Rect;
 
-    .line 487
+    .line 489
     iput-object p3, v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ExtFace;->eyePosition:Landroid/graphics/Point;
 
-    .line 488
+    .line 490
     iput p4, v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ExtFace;->trackingId:I
 
-    .line 489
+    .line 491
     iput-object p5, v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ExtFace;->faceRectType:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
 
-    .line 491
+    .line 493
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceDetectionResult;->extFaceList:Ljava/util/List;
 
     invoke-interface {p0, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -82,8 +98,16 @@
 
 .method setFrameResult(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "indexOfSelectedFaceIn"
+        }
+    .end annotation
 
-    .line 473
+    .line 475
     iput p1, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceDetectionResult;->indexOfSelectedFace:I
 
     return-void
@@ -92,32 +116,32 @@
 .method public toString()Ljava/lang/String;
     .locals 5
 
-    .line 505
+    .line 507
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "["
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 507
+    .line 509
     iget v1, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceDetectionResult;->faceNum:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     const/16 v1, 0x2c
 
-    .line 508
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    .line 509
-    iget v2, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceDetectionResult;->indexOfSelectedFace:I
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
     .line 510
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 511
+    iget v2, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceDetectionResult;->indexOfSelectedFace:I
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 512
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 513
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceDetectionResult;->extFaceList:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -139,26 +163,26 @@
 
     const/16 v3, 0x5b
 
-    .line 512
+    .line 514
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
     iget v4, v2, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ExtFace;->id:I
 
-    .line 513
+    .line 515
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
-    .line 514
+    .line 516
     invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
     iget-object v4, v2, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ExtFace;->rect:Landroid/graphics/Rect;
 
-    .line 515
+    .line 517
     invoke-virtual {v4}, Landroid/graphics/Rect;->toString()Ljava/lang/String;
 
     move-result-object v4
@@ -167,25 +191,25 @@
 
     move-result-object v3
 
-    .line 516
+    .line 518
     invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 517
+    .line 519
     iget-object v3, v2, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ExtFace;->eyePosition:Landroid/graphics/Point;
 
     if-eqz v3, :cond_0
 
-    .line 518
+    .line 520
     iget-object v3, v2, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ExtFace;->eyePosition:Landroid/graphics/Point;
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
-    .line 519
+    .line 521
     invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 521
+    .line 523
     :cond_0
     iget-object v2, v2, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ExtFace;->faceRectType:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
 
@@ -195,7 +219,7 @@
 
     const-string v3, "]"
 
-    .line 522
+    .line 524
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_0
@@ -203,10 +227,10 @@
     :cond_1
     const/16 p0, 0x5d
 
-    .line 524
+    .line 526
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 525
+    .line 527
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0

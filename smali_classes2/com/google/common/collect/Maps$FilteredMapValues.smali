@@ -51,6 +51,19 @@
 # direct methods
 .method constructor <init>(Ljava/util/Map;Ljava/util/Map;Lcom/google/common/base/Predicate;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "filteredMap",
+            "unfiltered",
+            "predicate"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -65,13 +78,13 @@
         }
     .end annotation
 
-    .line 2613
+    .line 2901
     invoke-direct {p0, p1}, Lcom/google/common/collect/Maps$Values;-><init>(Ljava/util/Map;)V
 
-    .line 2614
+    .line 2902
     iput-object p2, p0, Lcom/google/common/collect/Maps$FilteredMapValues;->unfiltered:Ljava/util/Map;
 
-    .line 2615
+    .line 2903
     iput-object p3, p0, Lcom/google/common/collect/Maps$FilteredMapValues;->predicate:Lcom/google/common/base/Predicate;
 
     return-void
@@ -81,8 +94,20 @@
 # virtual methods
 .method public remove(Ljava/lang/Object;)Z
     .locals 3
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 2620
+    .line 2908
     iget-object v0, p0, Lcom/google/common/collect/Maps$FilteredMapValues;->unfiltered:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
@@ -93,7 +118,7 @@
 
     move-result-object v0
 
-    .line 2621
+    .line 2909
     :cond_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -101,14 +126,14 @@
 
     if-eqz v1, :cond_1
 
-    .line 2622
+    .line 2910
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 2623
+    .line 2911
     iget-object v2, p0, Lcom/google/common/collect/Maps$FilteredMapValues;->predicate:Lcom/google/common/base/Predicate;
 
     invoke-interface {v2, v1}, Lcom/google/common/base/Predicate;->apply(Ljava/lang/Object;)Z
@@ -127,7 +152,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 2624
+    .line 2912
     invoke-interface {v0}, Ljava/util/Iterator;->remove()V
 
     const/4 p0, 0x1
@@ -142,6 +167,15 @@
 
 .method public removeAll(Ljava/util/Collection;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "collection"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -150,7 +184,7 @@
         }
     .end annotation
 
-    .line 2633
+    .line 2921
     iget-object v0, p0, Lcom/google/common/collect/Maps$FilteredMapValues;->unfiltered:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
@@ -163,7 +197,7 @@
 
     const/4 v1, 0x0
 
-    .line 2635
+    .line 2923
     :cond_0
     :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -172,14 +206,14 @@
 
     if-eqz v2, :cond_1
 
-    .line 2636
+    .line 2924
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 2637
+    .line 2925
     iget-object v3, p0, Lcom/google/common/collect/Maps$FilteredMapValues;->predicate:Lcom/google/common/base/Predicate;
 
     invoke-interface {v3, v2}, Lcom/google/common/base/Predicate;->apply(Ljava/lang/Object;)Z
@@ -198,7 +232,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 2638
+    .line 2926
     invoke-interface {v0}, Ljava/util/Iterator;->remove()V
 
     const/4 v1, 0x1
@@ -211,6 +245,15 @@
 
 .method public retainAll(Ljava/util/Collection;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "collection"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -219,7 +262,7 @@
         }
     .end annotation
 
-    .line 2647
+    .line 2935
     iget-object v0, p0, Lcom/google/common/collect/Maps$FilteredMapValues;->unfiltered:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
@@ -232,7 +275,7 @@
 
     const/4 v1, 0x0
 
-    .line 2649
+    .line 2937
     :cond_0
     :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -241,14 +284,14 @@
 
     if-eqz v2, :cond_1
 
-    .line 2650
+    .line 2938
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 2651
+    .line 2939
     iget-object v3, p0, Lcom/google/common/collect/Maps$FilteredMapValues;->predicate:Lcom/google/common/base/Predicate;
 
     invoke-interface {v3, v2}, Lcom/google/common/base/Predicate;->apply(Ljava/lang/Object;)Z
@@ -267,7 +310,7 @@
 
     if-nez v2, :cond_0
 
-    .line 2652
+    .line 2940
     invoke-interface {v0}, Ljava/util/Iterator;->remove()V
 
     const/4 v1, 0x1
@@ -281,7 +324,7 @@
 .method public toArray()[Ljava/lang/Object;
     .locals 0
 
-    .line 2662
+    .line 2950
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$FilteredMapValues;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -299,6 +342,15 @@
 
 .method public toArray([Ljava/lang/Object;)[Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "array"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -307,7 +359,7 @@
         }
     .end annotation
 
-    .line 2667
+    .line 2956
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$FilteredMapValues;->iterator()Ljava/util/Iterator;
 
     move-result-object p0

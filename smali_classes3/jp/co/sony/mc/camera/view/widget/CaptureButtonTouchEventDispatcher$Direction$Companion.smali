@@ -14,7 +14,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nCaptureButtonTouchEventDispatcher.kt\nKotlin\n*S Kotlin\n*F\n+ 1 CaptureButtonTouchEventDispatcher.kt\njp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction$Companion\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,238:1\n1310#2,2:239\n*S KotlinDebug\n*F\n+ 1 CaptureButtonTouchEventDispatcher.kt\njp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction$Companion\n*L\n182#1:239,2\n*E\n"
+    value = "SMAP\nCaptureButtonTouchEventDispatcher.kt\nKotlin\n*S Kotlin\n*F\n+ 1 CaptureButtonTouchEventDispatcher.kt\njp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction$Companion\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,242:1\n1310#2,2:243\n*S KotlinDebug\n*F\n+ 1 CaptureButtonTouchEventDispatcher.kt\njp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction$Companion\n*L\n186#1:243,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -46,7 +46,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 180
+    .line 184
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -65,12 +65,12 @@
 .method public final getDirection(F)Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;
     .locals 5
 
-    .line 182
+    .line 186
     invoke-static {}, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;->values()[Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;
 
     move-result-object p0
 
-    .line 239
+    .line 243
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -80,7 +80,7 @@
 
     aget-object v2, p0, v1
 
-    .line 183
+    .line 187
     invoke-static {v2}, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;->access$getDetectDegreeRange$p(Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;)Lkotlin/ranges/ClosedFloatingPointRange;
 
     move-result-object v3
@@ -97,7 +97,7 @@
 
     if-nez v3, :cond_2
 
-    .line 184
+    .line 188
     invoke-static {v2}, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;->access$getDetectDegreeRange$p(Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;)Lkotlin/ranges/ClosedFloatingPointRange;
 
     move-result-object v3

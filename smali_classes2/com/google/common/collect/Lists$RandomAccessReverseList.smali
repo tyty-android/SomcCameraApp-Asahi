@@ -31,6 +31,15 @@
 # direct methods
 .method constructor <init>(Ljava/util/List;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "forwardList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -39,7 +48,7 @@
         }
     .end annotation
 
-    .line 934
+    .line 994
     invoke-direct {p0, p1}, Lcom/google/common/collect/Lists$ReverseList;-><init>(Ljava/util/List;)V
 
     return-void

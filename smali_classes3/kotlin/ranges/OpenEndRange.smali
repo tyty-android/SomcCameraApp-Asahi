@@ -28,11 +28,11 @@
         "T",
         "",
         "",
-        "endExclusive",
-        "getEndExclusive",
-        "()Ljava/lang/Comparable;",
         "start",
         "getStart",
+        "()Ljava/lang/Comparable;",
+        "endExclusive",
+        "getEndExclusive",
         "contains",
         "",
         "value",
@@ -42,8 +42,8 @@
     }
     k = 0x1
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x30

@@ -24,6 +24,14 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 93
     iput-object p1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$PoseRotationListenerImpl;->this$0:Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;
@@ -45,6 +53,16 @@
 # virtual methods
 .method public onPoseRotationResultChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$PoseRotationResult;Ljava/lang/String;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "poseRotationResult",
+            "cameraId"
+        }
+    .end annotation
 
     if-eqz p1, :cond_2
 

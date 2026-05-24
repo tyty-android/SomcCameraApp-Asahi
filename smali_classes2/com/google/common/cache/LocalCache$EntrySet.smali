@@ -30,8 +30,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/cache/LocalCache;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 4458
+    .line 4487
     iput-object p1, p0, Lcom/google/common/cache/LocalCache$EntrySet;->this$0:Lcom/google/common/cache/LocalCache;
 
     invoke-direct {p0, p1}, Lcom/google/common/cache/LocalCache$AbstractCacheSet;-><init>(Lcom/google/common/cache/LocalCache;)V
@@ -43,8 +51,16 @@
 # virtual methods
 .method public contains(Ljava/lang/Object;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 4467
+    .line 4496
     instance-of v0, p1, Ljava/util/Map$Entry;
 
     const/4 v1, 0x0
@@ -53,11 +69,11 @@
 
     return v1
 
-    .line 4470
+    .line 4499
     :cond_0
     check-cast p1, Ljava/util/Map$Entry;
 
-    .line 4471
+    .line 4500
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
@@ -66,7 +82,7 @@
 
     return v1
 
-    .line 4475
+    .line 4504
     :cond_1
     iget-object v2, p0, Lcom/google/common/cache/LocalCache$EntrySet;->this$0:Lcom/google/common/cache/LocalCache;
 
@@ -76,7 +92,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 4477
+    .line 4506
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$EntrySet;->this$0:Lcom/google/common/cache/LocalCache;
 
     iget-object p0, p0, Lcom/google/common/cache/LocalCache;->valueEquivalence:Lcom/google/common/base/Equivalence;
@@ -108,7 +124,7 @@
         }
     .end annotation
 
-    .line 4462
+    .line 4491
     new-instance v0, Lcom/google/common/cache/LocalCache$EntryIterator;
 
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$EntrySet;->this$0:Lcom/google/common/cache/LocalCache;
@@ -120,8 +136,16 @@
 
 .method public remove(Ljava/lang/Object;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 4482
+    .line 4511
     instance-of v0, p1, Ljava/util/Map$Entry;
 
     const/4 v1, 0x0
@@ -130,18 +154,18 @@
 
     return v1
 
-    .line 4485
+    .line 4514
     :cond_0
     check-cast p1, Ljava/util/Map$Entry;
 
-    .line 4486
+    .line 4515
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    .line 4487
+    .line 4516
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$EntrySet;->this$0:Lcom/google/common/cache/LocalCache;
 
     invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;

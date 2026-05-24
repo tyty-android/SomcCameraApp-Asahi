@@ -27,19 +27,27 @@
 
 
 # static fields
-.field static final INSTANCE:Lcom/google/common/collect/Multisets$DecreasingCount;
+.field static final INSTANCE:Ljava/util/Comparator;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Comparator<",
+            "Lcom/google/common/collect/Multiset$Entry<",
+            "*>;>;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1122
+    .line 1178
     new-instance v0, Lcom/google/common/collect/Multisets$DecreasingCount;
 
     invoke-direct {v0}, Lcom/google/common/collect/Multisets$DecreasingCount;-><init>()V
 
-    sput-object v0, Lcom/google/common/collect/Multisets$DecreasingCount;->INSTANCE:Lcom/google/common/collect/Multisets$DecreasingCount;
+    sput-object v0, Lcom/google/common/collect/Multisets$DecreasingCount;->INSTANCE:Ljava/util/Comparator;
 
     return-void
 .end method
@@ -47,7 +55,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1121
+    .line 1177
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -57,6 +65,17 @@
 # virtual methods
 .method public compare(Lcom/google/common/collect/Multiset$Entry;Lcom/google/common/collect/Multiset$Entry;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "entry1",
+            "entry2"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -67,7 +86,7 @@
         }
     .end annotation
 
-    .line 1126
+    .line 1182
     invoke-interface {p2}, Lcom/google/common/collect/Multiset$Entry;->getCount()I
 
     move-result p0
@@ -83,8 +102,18 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "entry1",
+            "entry2"
+        }
+    .end annotation
 
-    .line 1121
+    .line 1177
     check-cast p1, Lcom/google/common/collect/Multiset$Entry;
 
     check-cast p2, Lcom/google/common/collect/Multiset$Entry;

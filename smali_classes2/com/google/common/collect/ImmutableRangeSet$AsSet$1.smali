@@ -47,13 +47,21 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/ImmutableRangeSet$AsSet;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
-    .line 558
+    .line 602
     iput-object p1, p0, Lcom/google/common/collect/ImmutableRangeSet$AsSet$1;->this$1:Lcom/google/common/collect/ImmutableRangeSet$AsSet;
 
     invoke-direct {p0}, Lcom/google/common/collect/AbstractIterator;-><init>()V
 
-    .line 559
+    .line 603
     iget-object p1, p1, Lcom/google/common/collect/ImmutableRangeSet$AsSet;->this$0:Lcom/google/common/collect/ImmutableRangeSet;
 
     invoke-static {p1}, Lcom/google/common/collect/ImmutableRangeSet;->access$000(Lcom/google/common/collect/ImmutableRangeSet;)Lcom/google/common/collect/ImmutableList;
@@ -66,7 +74,7 @@
 
     iput-object p1, p0, Lcom/google/common/collect/ImmutableRangeSet$AsSet$1;->rangeItr:Ljava/util/Iterator;
 
-    .line 560
+    .line 604
     invoke-static {}, Lcom/google/common/collect/Iterators;->emptyIterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p1
@@ -86,7 +94,10 @@
         }
     .end annotation
 
-    .line 564
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 609
     :goto_0
     iget-object v0, p0, Lcom/google/common/collect/ImmutableRangeSet$AsSet$1;->elemItr:Ljava/util/Iterator;
 
@@ -96,7 +107,7 @@
 
     if-nez v0, :cond_1
 
-    .line 565
+    .line 610
     iget-object v0, p0, Lcom/google/common/collect/ImmutableRangeSet$AsSet$1;->rangeItr:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -105,7 +116,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 566
+    .line 611
     iget-object v0, p0, Lcom/google/common/collect/ImmutableRangeSet$AsSet$1;->rangeItr:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -132,7 +143,7 @@
 
     goto :goto_0
 
-    .line 568
+    .line 613
     :cond_0
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableRangeSet$AsSet$1;->endOfData()Ljava/lang/Object;
 
@@ -142,7 +153,7 @@
 
     return-object p0
 
-    .line 571
+    .line 616
     :cond_1
     iget-object p0, p0, Lcom/google/common/collect/ImmutableRangeSet$AsSet$1;->elemItr:Ljava/util/Iterator;
 
@@ -157,8 +168,10 @@
 
 .method protected bridge synthetic computeNext()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 
-    .line 558
+    .line 602
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableRangeSet$AsSet$1;->computeNext()Ljava/lang/Comparable;
 
     move-result-object p0

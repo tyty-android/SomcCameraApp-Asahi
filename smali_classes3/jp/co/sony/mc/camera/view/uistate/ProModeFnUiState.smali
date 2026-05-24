@@ -331,9 +331,9 @@
     .line 248
     instance-of v8, v10, Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;
 
-    const v6, 0x7f110178
+    const v6, 0x7f1101b5
 
-    const v5, 0x7f110177
+    const v5, 0x7f1101b4
 
     const-string v2, "format(...)"
 
@@ -605,7 +605,7 @@
 
     check-cast v3, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;
 
-    invoke-virtual {v3}, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;->getValueDescriptionId()I
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;->getProValueDescriptionId()I
 
     move-result v7
 
@@ -650,7 +650,7 @@
     invoke-static {v5, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 278
-    invoke-virtual {v3}, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;->getTutorialDescriptionId()I
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;->getInfoDescriptionId()I
 
     move-result v6
 
@@ -685,7 +685,7 @@
     move-result-object v5
 
     .line 279
-    invoke-virtual {v3}, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;->getTutorialImageId()I
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;->getInfoImageId()I
 
     move-result v6
 
@@ -694,7 +694,7 @@
     .line 280
     new-array v8, v7, [I
 
-    invoke-virtual {v3}, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;->getTutorialDescriptionId()I
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;->getInfoDescriptionId()I
 
     move-result v7
 
@@ -728,7 +728,7 @@
 
     move-object/from16 v18, v1
 
-    const v7, 0x7f110177
+    const v7, 0x7f1101b4
 
     .line 285
     invoke-direct {v0, v7}, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState;->getString(I)Ljava/lang/String;
@@ -737,7 +737,7 @@
 
     move-object/from16 v19, v5
 
-    const v7, 0x7f110178
+    const v7, 0x7f1101b5
 
     .line 286
     invoke-direct {v0, v7}, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState;->getString(I)Ljava/lang/String;
@@ -839,7 +839,7 @@
 
     if-eqz v5, :cond_7
 
-    const v3, 0x7f110161
+    const v3, 0x7f11019e
 
     .line 293
     invoke-direct {v0, v3}, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState;->getString(I)Ljava/lang/String;
@@ -851,7 +851,7 @@
     .line 295
     new-array v6, v5, [I
 
-    const v5, 0x7f110160
+    const v5, 0x7f11019d
 
     const/4 v8, 0x0
 
@@ -879,7 +879,7 @@
 
     if-eqz v5, :cond_8
 
-    const v3, 0x7f11036f
+    const v3, 0x7f1103ba
 
     .line 297
     invoke-direct {v0, v3}, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState;->getString(I)Ljava/lang/String;
@@ -891,11 +891,11 @@
     .line 299
     new-array v6, v5, [I
 
-    const v5, 0x7f11036c
+    const v5, 0x7f1103b7
 
     aput v5, v6, v8
 
-    const v5, 0x7f11036b
+    const v5, 0x7f1103b6
 
     const/4 v8, 0x1
 
@@ -917,7 +917,7 @@
 
     check-cast v3, Ljp/co/sony/mc/camera/configuration/parameters/Mic;
 
-    invoke-virtual {v3}, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->getTutorialDescriptionId()I
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->getInfoDescriptionId()I
 
     move-result v5
 
@@ -935,7 +935,7 @@
     move-result-object v6
 
     .line 305
-    invoke-virtual {v3}, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->getTutorialImageId()I
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->getInfoImageId()I
 
     move-result v7
 
@@ -944,7 +944,7 @@
     .line 306
     new-array v1, v8, [I
 
-    invoke-virtual {v3}, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->getTutorialDescriptionId()I
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->getInfoDescriptionId()I
 
     move-result v3
 
@@ -987,7 +987,7 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;
 
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;->getValueDescriptionId()I
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;->getProValueDescriptionId()I
 
     move-result v6
 
@@ -1060,14 +1060,14 @@
     .line 314
     sget-object v1, Lkotlin/jvm/internal/StringCompanionObject;->INSTANCE:Lkotlin/jvm/internal/StringCompanionObject;
 
-    const v1, 0x7f110177
+    const v1, 0x7f1101b4
 
     .line 315
     invoke-direct {v0, v1}, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    const v6, 0x7f110178
+    const v6, 0x7f1101b5
 
     .line 316
     invoke-direct {v0, v6}, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState;->getString(I)Ljava/lang/String;
@@ -1079,7 +1079,7 @@
 
     check-cast v11, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;
 
-    invoke-virtual {v11}, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;->getValueDescriptionId()I
+    invoke-virtual {v11}, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;->getProValueDescriptionId()I
 
     move-result v12
 

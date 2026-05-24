@@ -36,6 +36,14 @@
 # virtual methods
 .method public getInterpolation(F)F
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "input"
+        }
+    .end annotation
 
     const v0, 0x3fd55555
 

@@ -31,6 +31,9 @@
 .field private safeMin:C
 
 .field private unsafeReplacement:Ljava/lang/String;
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+.end field
 
 
 # direct methods
@@ -87,6 +90,16 @@
 # virtual methods
 .method public addEscape(CLjava/lang/String;)Lcom/google/common/escape/Escapers$Builder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "c",
+            "replacement"
+        }
+    .end annotation
 
     .line 145
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -122,6 +135,16 @@
 
 .method public setSafeRange(CC)Lcom/google/common/escape/Escapers$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "safeMin",
+            "safeMax"
+        }
+    .end annotation
 
     .line 114
     iput-char p1, p0, Lcom/google/common/escape/Escapers$Builder;->safeMin:C
@@ -134,10 +157,14 @@
 
 .method public setUnsafeReplacement(Ljava/lang/String;)Lcom/google/common/escape/Escapers$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "unsafeReplacement"
+        }
+    .end annotation
 
     .line 129
     iput-object p1, p0, Lcom/google/common/escape/Escapers$Builder;->unsafeReplacement:Ljava/lang/String;

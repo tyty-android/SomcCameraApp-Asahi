@@ -35,6 +35,7 @@
         "toString",
         "",
         "Ljp/co/sony/mc/camera/idd/value/IddAel;",
+        "Ljp/co/sony/mc/camera/idd/value/IddAiSuggestionDetection;",
         "Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;",
         "Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;",
         "Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;",
@@ -50,7 +51,6 @@
         "Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;",
         "Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;",
         "Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;",
-        "Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;",
         "Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;",
         "Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;",
         "Ljp/co/sony/mc/camera/idd/value/IddUltraHdr;",
@@ -96,7 +96,7 @@
         }
     .end annotation
 
-    .line 117
+    .line 116
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddUserSettingBooleanValue;->value:Ljp/co/sony/mc/camera/configuration/parameters/UserSettingBooleanValue;
@@ -122,7 +122,7 @@
         }
     .end annotation
 
-    .line 117
+    .line 116
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddUserSettingBooleanValue;->value:Ljp/co/sony/mc/camera/configuration/parameters/UserSettingBooleanValue;
 
     return-object p0
@@ -131,7 +131,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 119
+    .line 118
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/value/IddUserSettingBooleanValue;->getValue()Ljp/co/sony/mc/camera/configuration/parameters/UserSettingBooleanValue;
 
     move-result-object p0

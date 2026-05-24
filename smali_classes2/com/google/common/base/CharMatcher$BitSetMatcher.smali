@@ -21,11 +21,21 @@
 # direct methods
 .method private constructor <init>(Ljava/util/BitSet;Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "table",
+            "description"
+        }
+    .end annotation
 
-    .line 986
+    .line 989
     invoke-direct {p0, p2}, Lcom/google/common/base/CharMatcher$NamedFastMatcher;-><init>(Ljava/lang/String;)V
 
-    .line 987
+    .line 990
     invoke-virtual {p1}, Ljava/util/BitSet;->length()I
 
     move-result p2
@@ -38,14 +48,14 @@
 
     if-ge p2, v0, :cond_0
 
-    .line 988
+    .line 991
     invoke-virtual {p1}, Ljava/util/BitSet;->clone()Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, Ljava/util/BitSet;
 
-    .line 991
+    .line 994
     :cond_0
     iput-object p1, p0, Lcom/google/common/base/CharMatcher$BitSetMatcher;->table:Ljava/util/BitSet;
 
@@ -55,7 +65,7 @@
 .method synthetic constructor <init>(Ljava/util/BitSet;Ljava/lang/String;Lcom/google/common/base/CharMatcher$1;)V
     .locals 0
 
-    .line 981
+    .line 984
     invoke-direct {p0, p1, p2}, Lcom/google/common/base/CharMatcher$BitSetMatcher;-><init>(Ljava/util/BitSet;Ljava/lang/String;)V
 
     return-void
@@ -65,8 +75,16 @@
 # virtual methods
 .method public matches(C)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
 
-    .line 996
+    .line 999
     iget-object p0, p0, Lcom/google/common/base/CharMatcher$BitSetMatcher;->table:Ljava/util/BitSet;
 
     invoke-virtual {p0, p1}, Ljava/util/BitSet;->get(I)Z
@@ -78,8 +96,16 @@
 
 .method setBits(Ljava/util/BitSet;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bitSet"
+        }
+    .end annotation
 
-    .line 1001
+    .line 1004
     iget-object p0, p0, Lcom/google/common/base/CharMatcher$BitSetMatcher;->table:Ljava/util/BitSet;
 
     invoke-virtual {p1, p0}, Ljava/util/BitSet;->or(Ljava/util/BitSet;)V

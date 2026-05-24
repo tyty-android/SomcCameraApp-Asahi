@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1834
+    .line 2067
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,6 +31,21 @@
 # virtual methods
 .method public setValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljava/util/Map;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key",
+            "value",
+            "listenersMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -46,13 +61,13 @@
         }
     .end annotation
 
-    .line 1838
+    .line 2071
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1839
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/BasicModeShutterSpeedDisplay;
+    .line 2072
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/Peaking;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetBasicModeShutterSpeedDisplay(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/BasicModeShutterSpeedDisplay;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetPeaking(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/Peaking;)Z
 
     move-result p0
 

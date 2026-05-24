@@ -30,9 +30,9 @@
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder$$ExternalSyntheticLambda8;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder;
 
-    check-cast p1, Ljava/lang/Boolean;
+    check-cast p1, Lkotlin/Triple;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder;->$r8$lambda$VKR4lWyBqM5Uowd_bpKnjyegG4Q(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder;->$r8$lambda$9GyYKVEU0uGhwKMT6CJsyD8lsc4(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeColorToneProfileViewBinder;Lkotlin/Triple;)Lkotlin/Unit;
 
     move-result-object p0
 

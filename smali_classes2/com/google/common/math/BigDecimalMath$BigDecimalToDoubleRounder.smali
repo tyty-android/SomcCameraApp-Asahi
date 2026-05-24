@@ -30,7 +30,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 57
+    .line 60
     new-instance v0, Lcom/google/common/math/BigDecimalMath$BigDecimalToDoubleRounder;
 
     invoke-direct {v0}, Lcom/google/common/math/BigDecimalMath$BigDecimalToDoubleRounder;-><init>()V
@@ -43,7 +43,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 59
+    .line 62
     invoke-direct {p0}, Lcom/google/common/math/ToDoubleRounder;-><init>()V
 
     return-void
@@ -53,8 +53,18 @@
 # virtual methods
 .method bridge synthetic minus(Ljava/lang/Number;Ljava/lang/Number;)Ljava/lang/Number;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "a",
+            "b"
+        }
+    .end annotation
 
-    .line 56
+    .line 59
     check-cast p1, Ljava/math/BigDecimal;
 
     check-cast p2, Ljava/math/BigDecimal;
@@ -68,8 +78,18 @@
 
 .method minus(Ljava/math/BigDecimal;Ljava/math/BigDecimal;)Ljava/math/BigDecimal;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b"
+        }
+    .end annotation
 
-    .line 78
+    .line 81
     invoke-virtual {p1, p2}, Ljava/math/BigDecimal;->subtract(Ljava/math/BigDecimal;)Ljava/math/BigDecimal;
 
     move-result-object p0
@@ -79,8 +99,16 @@
 
 .method bridge synthetic roundToDoubleArbitrarily(Ljava/lang/Number;)D
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "bigDecimal"
+        }
+    .end annotation
 
-    .line 56
+    .line 59
     check-cast p1, Ljava/math/BigDecimal;
 
     invoke-virtual {p0, p1}, Lcom/google/common/math/BigDecimalMath$BigDecimalToDoubleRounder;->roundToDoubleArbitrarily(Ljava/math/BigDecimal;)D
@@ -92,8 +120,16 @@
 
 .method roundToDoubleArbitrarily(Ljava/math/BigDecimal;)D
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bigDecimal"
+        }
+    .end annotation
 
-    .line 63
+    .line 66
     invoke-virtual {p1}, Ljava/math/BigDecimal;->doubleValue()D
 
     move-result-wide p0
@@ -103,8 +139,16 @@
 
 .method bridge synthetic sign(Ljava/lang/Number;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "bigDecimal"
+        }
+    .end annotation
 
-    .line 56
+    .line 59
     check-cast p1, Ljava/math/BigDecimal;
 
     invoke-virtual {p0, p1}, Lcom/google/common/math/BigDecimalMath$BigDecimalToDoubleRounder;->sign(Ljava/math/BigDecimal;)I
@@ -116,8 +160,16 @@
 
 .method sign(Ljava/math/BigDecimal;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bigDecimal"
+        }
+    .end annotation
 
-    .line 68
+    .line 71
     invoke-virtual {p1}, Ljava/math/BigDecimal;->signum()I
 
     move-result p0
@@ -127,8 +179,18 @@
 
 .method bridge synthetic toX(DLjava/math/RoundingMode;)Ljava/lang/Number;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "d",
+            "mode"
+        }
+    .end annotation
 
-    .line 56
+    .line 59
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/common/math/BigDecimalMath$BigDecimalToDoubleRounder;->toX(DLjava/math/RoundingMode;)Ljava/math/BigDecimal;
 
     move-result-object p0
@@ -138,8 +200,18 @@
 
 .method toX(DLjava/math/RoundingMode;)Ljava/math/BigDecimal;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "d",
+            "mode"
+        }
+    .end annotation
 
-    .line 73
+    .line 76
     new-instance p0, Ljava/math/BigDecimal;
 
     invoke-direct {p0, p1, p2}, Ljava/math/BigDecimal;-><init>(D)V

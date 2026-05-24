@@ -28,8 +28,16 @@
 # direct methods
 .method constructor <init>(Ljava/util/Iterator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "val$iterator"
+        }
+    .end annotation
 
-    .line 950
+    .line 1001
     iput-object p1, p0, Lcom/google/common/collect/Iterators$8;->val$iterator:Ljava/util/Iterator;
 
     invoke-direct {p0}, Lcom/google/common/collect/UnmodifiableIterator;-><init>()V
@@ -42,7 +50,7 @@
 .method public hasNext()Z
     .locals 0
 
-    .line 953
+    .line 1004
     iget-object p0, p0, Lcom/google/common/collect/Iterators$8;->val$iterator:Ljava/util/Iterator;
 
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
@@ -54,20 +62,23 @@
 
 .method public next()Ljava/lang/Object;
     .locals 1
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TT;"
         }
     .end annotation
 
-    .line 958
+    .line 1010
     iget-object v0, p0, Lcom/google/common/collect/Iterators$8;->val$iterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 959
+    .line 1011
     iget-object p0, p0, Lcom/google/common/collect/Iterators$8;->val$iterator:Ljava/util/Iterator;
 
     invoke-interface {p0}, Ljava/util/Iterator;->remove()V
@@ -78,7 +89,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 965
+    .line 1017
     const-string p0, "Iterators.consumingIterator(...)"
 
     return-object p0

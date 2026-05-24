@@ -132,7 +132,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v0, 0x7f0403fe
+    const v0, 0x7f040404
 
     .line 27
     invoke-direct {p0, p1, p2, v0}, Ljp/co/sony/mc/camera/view/widget/StraightZoomRuler;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -187,7 +187,7 @@
 
     move-result-object p3
 
-    const v0, 0x7f0603de
+    const v0, 0x7f0603c7
 
     const/4 v1, 0x0
 
@@ -209,7 +209,7 @@
 
     move-result-object p0
 
-    const p3, 0x7f070721
+    const p3, 0x7f0706cd
 
     invoke-virtual {p0, p3}, Landroid/content/res/Resources;->getDimension(I)F
 

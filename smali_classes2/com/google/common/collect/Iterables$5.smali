@@ -30,8 +30,18 @@
 # direct methods
 .method constructor <init>(Ljava/lang/Iterable;Lcom/google/common/base/Function;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x1010
+        }
+        names = {
+            "val$fromIterable",
+            "val$function"
+        }
+    .end annotation
 
-    .line 715
+    .line 759
     iput-object p1, p0, Lcom/google/common/collect/Iterables$5;->val$fromIterable:Ljava/lang/Iterable;
 
     iput-object p2, p0, Lcom/google/common/collect/Iterables$5;->val$function:Lcom/google/common/base/Function;
@@ -53,7 +63,7 @@
         }
     .end annotation
 
-    .line 718
+    .line 762
     iget-object v0, p0, Lcom/google/common/collect/Iterables$5;->val$fromIterable:Ljava/lang/Iterable;
 
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;

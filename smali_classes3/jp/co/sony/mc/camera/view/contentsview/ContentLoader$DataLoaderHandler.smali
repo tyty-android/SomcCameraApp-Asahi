@@ -43,6 +43,14 @@
 
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/contentsview/ContentLoader;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 227
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentLoader$DataLoaderHandler;->this$0:Ljp/co/sony/mc/camera/view/contentsview/ContentLoader;
@@ -62,6 +70,16 @@
 
 .method private notifyContentLoaded(ILjp/co/sony/mc/camera/view/contentsview/ContentLoader$DataLoadResult;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "requestId",
+            "dataLoadResult"
+        }
+    .end annotation
 
     .line 260
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -131,6 +149,14 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "msg"
+        }
+    .end annotation
 
     .line 235
     iget v0, p1, Landroid/os/Message;->what:I

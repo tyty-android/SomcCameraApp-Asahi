@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<K:",
@@ -22,7 +25,7 @@
 
 
 # instance fields
-.field private transient keyType:Ljava/lang/Class;
+.field transient keyTypeOrObjectUnderJ2cl:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
@@ -31,7 +34,7 @@
     .end annotation
 .end field
 
-.field private transient valueType:Ljava/lang/Class;
+.field transient valueTypeOrObjectUnderJ2cl:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
@@ -44,6 +47,17 @@
 # direct methods
 .method private constructor <init>(Ljava/lang/Class;Ljava/lang/Class;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "keyTypeOrObjectUnderJ2cl",
+            "valueTypeOrObjectUnderJ2cl"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -54,7 +68,7 @@
         }
     .end annotation
 
-    .line 72
+    .line 92
     new-instance v0, Ljava/util/EnumMap;
 
     invoke-direct {v0, p1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
@@ -65,17 +79,28 @@
 
     invoke-direct {p0, v0, v1}, Lcom/google/common/collect/AbstractBiMap;-><init>(Ljava/util/Map;Ljava/util/Map;)V
 
-    .line 73
-    iput-object p1, p0, Lcom/google/common/collect/EnumBiMap;->keyType:Ljava/lang/Class;
+    .line 94
+    iput-object p1, p0, Lcom/google/common/collect/EnumBiMap;->keyTypeOrObjectUnderJ2cl:Ljava/lang/Class;
 
-    .line 74
-    iput-object p2, p0, Lcom/google/common/collect/EnumBiMap;->valueType:Ljava/lang/Class;
+    .line 95
+    iput-object p2, p0, Lcom/google/common/collect/EnumBiMap;->valueTypeOrObjectUnderJ2cl:Ljava/lang/Class;
 
     return-void
 .end method
 
 .method public static create(Ljava/lang/Class;Ljava/lang/Class;)Lcom/google/common/collect/EnumBiMap;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "keyType",
+            "valueType"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -92,7 +117,7 @@
         }
     .end annotation
 
-    .line 53
+    .line 72
     new-instance v0, Lcom/google/common/collect/EnumBiMap;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/EnumBiMap;-><init>(Ljava/lang/Class;Ljava/lang/Class;)V
@@ -102,6 +127,15 @@
 
 .method public static create(Ljava/util/Map;)Lcom/google/common/collect/EnumBiMap;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "map"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -116,12 +150,12 @@
         }
     .end annotation
 
-    .line 66
-    invoke-static {p0}, Lcom/google/common/collect/EnumBiMap;->inferKeyType(Ljava/util/Map;)Ljava/lang/Class;
+    .line 86
+    invoke-static {p0}, Lcom/google/common/collect/EnumBiMap;->inferKeyTypeOrObjectUnderJ2cl(Ljava/util/Map;)Ljava/lang/Class;
 
     move-result-object v0
 
-    invoke-static {p0}, Lcom/google/common/collect/EnumBiMap;->inferValueType(Ljava/util/Map;)Ljava/lang/Class;
+    invoke-static {p0}, Lcom/google/common/collect/EnumBiMap;->inferValueTypeOrObjectUnderJ2cl(Ljava/util/Map;)Ljava/lang/Class;
 
     move-result-object v1
 
@@ -129,14 +163,23 @@
 
     move-result-object v0
 
-    .line 67
+    .line 87
     invoke-virtual {v0, p0}, Lcom/google/common/collect/EnumBiMap;->putAll(Ljava/util/Map;)V
 
     return-object v0
 .end method
 
-.method static inferKeyType(Ljava/util/Map;)Ljava/lang/Class;
+.method static inferKeyTypeOrObjectUnderJ2cl(Ljava/util/Map;)Ljava/lang/Class;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "map"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -149,36 +192,32 @@
         }
     .end annotation
 
-    .line 78
+    .line 99
     instance-of v0, p0, Lcom/google/common/collect/EnumBiMap;
 
     if-eqz v0, :cond_0
 
-    .line 79
+    .line 100
     check-cast p0, Lcom/google/common/collect/EnumBiMap;
 
-    invoke-virtual {p0}, Lcom/google/common/collect/EnumBiMap;->keyType()Ljava/lang/Class;
-
-    move-result-object p0
+    iget-object p0, p0, Lcom/google/common/collect/EnumBiMap;->keyTypeOrObjectUnderJ2cl:Ljava/lang/Class;
 
     return-object p0
 
-    .line 81
+    .line 102
     :cond_0
     instance-of v0, p0, Lcom/google/common/collect/EnumHashBiMap;
 
     if-eqz v0, :cond_1
 
-    .line 82
+    .line 103
     check-cast p0, Lcom/google/common/collect/EnumHashBiMap;
 
-    invoke-virtual {p0}, Lcom/google/common/collect/EnumHashBiMap;->keyType()Ljava/lang/Class;
-
-    move-result-object p0
+    iget-object p0, p0, Lcom/google/common/collect/EnumHashBiMap;->keyTypeOrObjectUnderJ2cl:Ljava/lang/Class;
 
     return-object p0
 
-    .line 84
+    .line 105
     :cond_1
     invoke-interface {p0}, Ljava/util/Map;->isEmpty()Z
 
@@ -188,7 +227,7 @@
 
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 85
+    .line 106
     invoke-interface {p0}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
     move-result-object p0
@@ -203,15 +242,24 @@
 
     check-cast p0, Ljava/lang/Enum;
 
-    invoke-virtual {p0}, Ljava/lang/Enum;->getDeclaringClass()Ljava/lang/Class;
+    invoke-static {p0}, Lcom/google/common/collect/Platform;->getDeclaringClassOrObjectForJ2cl(Ljava/lang/Enum;)Ljava/lang/Class;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method private static inferValueType(Ljava/util/Map;)Ljava/lang/Class;
+.method private static inferValueTypeOrObjectUnderJ2cl(Ljava/util/Map;)Ljava/lang/Class;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "map"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<V:",
@@ -224,19 +272,19 @@
         }
     .end annotation
 
-    .line 89
+    .line 110
     instance-of v0, p0, Lcom/google/common/collect/EnumBiMap;
 
     if-eqz v0, :cond_0
 
-    .line 90
+    .line 111
     check-cast p0, Lcom/google/common/collect/EnumBiMap;
 
-    iget-object p0, p0, Lcom/google/common/collect/EnumBiMap;->valueType:Ljava/lang/Class;
+    iget-object p0, p0, Lcom/google/common/collect/EnumBiMap;->valueTypeOrObjectUnderJ2cl:Ljava/lang/Class;
 
     return-object p0
 
-    .line 92
+    .line 113
     :cond_0
     invoke-interface {p0}, Ljava/util/Map;->isEmpty()Z
 
@@ -246,7 +294,7 @@
 
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 93
+    .line 114
     invoke-interface {p0}, Ljava/util/Map;->values()Ljava/util/Collection;
 
     move-result-object p0
@@ -261,7 +309,7 @@
 
     check-cast p0, Ljava/lang/Enum;
 
-    invoke-virtual {p0}, Ljava/lang/Enum;->getDeclaringClass()Ljava/lang/Class;
+    invoke-static {p0}, Lcom/google/common/collect/Platform;->getDeclaringClassOrObjectForJ2cl(Ljava/lang/Enum;)Ljava/lang/Class;
 
     move-result-object p0
 
@@ -270,6 +318,15 @@
 
 .method private readObject(Ljava/io/ObjectInputStream;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stream"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -277,43 +334,51 @@
         }
     .end annotation
 
-    .line 131
+    .line 154
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->defaultReadObject()V
 
-    .line 132
+    .line 155
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readObject()Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/Class;
 
-    iput-object v0, p0, Lcom/google/common/collect/EnumBiMap;->keyType:Ljava/lang/Class;
+    iput-object v0, p0, Lcom/google/common/collect/EnumBiMap;->keyTypeOrObjectUnderJ2cl:Ljava/lang/Class;
 
-    .line 133
+    .line 156
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readObject()Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/Class;
 
-    iput-object v0, p0, Lcom/google/common/collect/EnumBiMap;->valueType:Ljava/lang/Class;
+    iput-object v0, p0, Lcom/google/common/collect/EnumBiMap;->valueTypeOrObjectUnderJ2cl:Ljava/lang/Class;
 
-    .line 134
+    .line 157
     new-instance v0, Ljava/util/EnumMap;
 
-    iget-object v1, p0, Lcom/google/common/collect/EnumBiMap;->keyType:Ljava/lang/Class;
+    iget-object v1, p0, Lcom/google/common/collect/EnumBiMap;->keyTypeOrObjectUnderJ2cl:Ljava/lang/Class;
 
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     new-instance v1, Ljava/util/EnumMap;
 
-    iget-object v2, p0, Lcom/google/common/collect/EnumBiMap;->valueType:Ljava/lang/Class;
+    iget-object v2, p0, Lcom/google/common/collect/EnumBiMap;->valueTypeOrObjectUnderJ2cl:Ljava/lang/Class;
 
     invoke-direct {v1, v2}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
     invoke-virtual {p0, v0, v1}, Lcom/google/common/collect/EnumBiMap;->setDelegates(Ljava/util/Map;Ljava/util/Map;)V
 
-    .line 135
+    .line 159
     invoke-static {p0, p1}, Lcom/google/common/collect/Serialization;->populateMap(Ljava/util/Map;Ljava/io/ObjectInputStream;)V
 
     return-void
@@ -321,26 +386,35 @@
 
 .method private writeObject(Ljava/io/ObjectOutputStream;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stream"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 122
+    .line 145
     invoke-virtual {p1}, Ljava/io/ObjectOutputStream;->defaultWriteObject()V
 
-    .line 123
-    iget-object v0, p0, Lcom/google/common/collect/EnumBiMap;->keyType:Ljava/lang/Class;
+    .line 146
+    iget-object v0, p0, Lcom/google/common/collect/EnumBiMap;->keyTypeOrObjectUnderJ2cl:Ljava/lang/Class;
 
     invoke-virtual {p1, v0}, Ljava/io/ObjectOutputStream;->writeObject(Ljava/lang/Object;)V
 
-    .line 124
-    iget-object v0, p0, Lcom/google/common/collect/EnumBiMap;->valueType:Ljava/lang/Class;
+    .line 147
+    iget-object v0, p0, Lcom/google/common/collect/EnumBiMap;->valueTypeOrObjectUnderJ2cl:Ljava/lang/Class;
 
     invoke-virtual {p1, v0}, Ljava/io/ObjectOutputStream;->writeObject(Ljava/lang/Object;)V
 
-    .line 125
+    .line 148
     invoke-static {p0, p1}, Lcom/google/common/collect/Serialization;->writeMap(Ljava/util/Map;Ljava/io/ObjectOutputStream;)V
 
     return-void
@@ -350,13 +424,22 @@
 # virtual methods
 .method checkKey(Ljava/lang/Enum;)Ljava/lang/Enum;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)TK;"
         }
     .end annotation
 
-    .line 108
+    .line 131
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -368,8 +451,16 @@
 
 .method bridge synthetic checkKey(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 40
+    .line 43
     check-cast p1, Ljava/lang/Enum;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/EnumBiMap;->checkKey(Ljava/lang/Enum;)Ljava/lang/Enum;
@@ -381,13 +472,22 @@
 
 .method checkValue(Ljava/lang/Enum;)Ljava/lang/Enum;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TV;)TV;"
         }
     .end annotation
 
-    .line 113
+    .line 136
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -399,8 +499,16 @@
 
 .method bridge synthetic checkValue(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 40
+    .line 43
     check-cast p1, Ljava/lang/Enum;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/EnumBiMap;->checkValue(Ljava/lang/Enum;)Ljava/lang/Enum;
@@ -413,7 +521,7 @@
 .method public bridge synthetic clear()V
     .locals 0
 
-    .line 40
+    .line 43
     invoke-super {p0}, Lcom/google/common/collect/AbstractBiMap;->clear()V
 
     return-void
@@ -422,11 +530,19 @@
 .method public bridge synthetic containsValue(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 40
+    .line 43
     invoke-super {p0, p1}, Lcom/google/common/collect/AbstractBiMap;->containsValue(Ljava/lang/Object;)Z
 
     move-result p0
@@ -437,7 +553,7 @@
 .method public bridge synthetic entrySet()Ljava/util/Set;
     .locals 0
 
-    .line 40
+    .line 43
     invoke-super {p0}, Lcom/google/common/collect/AbstractBiMap;->entrySet()Ljava/util/Set;
 
     move-result-object p0
@@ -448,15 +564,28 @@
 .method public bridge synthetic forcePut(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
-    .line 40
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 43
     invoke-super {p0, p1, p2}, Lcom/google/common/collect/AbstractBiMap;->forcePut(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -467,7 +596,7 @@
 .method public bridge synthetic inverse()Lcom/google/common/collect/BiMap;
     .locals 0
 
-    .line 40
+    .line 43
     invoke-super {p0}, Lcom/google/common/collect/AbstractBiMap;->inverse()Lcom/google/common/collect/BiMap;
 
     move-result-object p0
@@ -478,7 +607,7 @@
 .method public bridge synthetic keySet()Ljava/util/Set;
     .locals 0
 
-    .line 40
+    .line 43
     invoke-super {p0}, Lcom/google/common/collect/AbstractBiMap;->keySet()Ljava/util/Set;
 
     move-result-object p0
@@ -496,8 +625,8 @@
         }
     .end annotation
 
-    .line 98
-    iget-object p0, p0, Lcom/google/common/collect/EnumBiMap;->keyType:Ljava/lang/Class;
+    .line 120
+    iget-object p0, p0, Lcom/google/common/collect/EnumBiMap;->keyTypeOrObjectUnderJ2cl:Ljava/lang/Class;
 
     return-object p0
 .end method
@@ -505,15 +634,28 @@
 .method public bridge synthetic put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
-    .line 40
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 43
     invoke-super {p0, p1, p2}, Lcom/google/common/collect/AbstractBiMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -523,8 +665,16 @@
 
 .method public bridge synthetic putAll(Ljava/util/Map;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "map"
+        }
+    .end annotation
 
-    .line 40
+    .line 43
     invoke-super {p0, p1}, Lcom/google/common/collect/AbstractBiMap;->putAll(Ljava/util/Map;)V
 
     return-void
@@ -533,11 +683,22 @@
 .method public bridge synthetic remove(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 40
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 43
     invoke-super {p0, p1}, Lcom/google/common/collect/AbstractBiMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -555,8 +716,8 @@
         }
     .end annotation
 
-    .line 103
-    iget-object p0, p0, Lcom/google/common/collect/EnumBiMap;->valueType:Ljava/lang/Class;
+    .line 126
+    iget-object p0, p0, Lcom/google/common/collect/EnumBiMap;->valueTypeOrObjectUnderJ2cl:Ljava/lang/Class;
 
     return-object p0
 .end method
@@ -564,7 +725,7 @@
 .method public bridge synthetic values()Ljava/util/Set;
     .locals 0
 
-    .line 40
+    .line 43
     invoke-super {p0}, Lcom/google/common/collect/AbstractBiMap;->values()Ljava/util/Set;
 
     move-result-object p0

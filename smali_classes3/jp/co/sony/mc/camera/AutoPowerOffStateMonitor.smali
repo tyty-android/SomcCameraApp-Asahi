@@ -13,7 +13,23 @@
 
 # virtual methods
 .method public abstract registerAutoPowerOffStateListener(Ljp/co/sony/mc/camera/AutoPowerOffStateMonitor$AutoPowerOffStateListener;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 .end method
 
 .method public abstract unregisterAutoPowerOffStateListener(Ljp/co/sony/mc/camera/AutoPowerOffStateMonitor$AutoPowerOffStateListener;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 .end method

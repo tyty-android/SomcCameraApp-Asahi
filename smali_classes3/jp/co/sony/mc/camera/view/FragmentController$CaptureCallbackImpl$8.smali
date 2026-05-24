@@ -28,13 +28,26 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$result",
+            "val$requestId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 7561
+    .line 6441
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl$8;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl$8;->val$result:Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;
@@ -51,7 +64,7 @@
 .method public run()V
     .locals 2
 
-    .line 7564
+    .line 6444
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl$8;->val$result:Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;->isFinalInSavingGroup()Z
@@ -60,7 +73,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 7565
+    .line 6445
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl$8;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->-$$Nest$fgetmController(Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -71,7 +84,7 @@
 
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mhandleStoreFinished(Ljp/co/sony/mc/camera/view/FragmentController;I)V
 
-    .line 7567
+    .line 6447
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl$8;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;
 

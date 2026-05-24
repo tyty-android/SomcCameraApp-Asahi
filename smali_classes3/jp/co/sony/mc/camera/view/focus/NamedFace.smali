@@ -18,6 +18,22 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Landroid/graphics/Rect;Landroid/graphics/Point;Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "name",
+            "uuid",
+            "facePosition",
+            "eyePosition",
+            "faceRectType"
+        }
+    .end annotation
 
     .line 23
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

@@ -30,11 +30,21 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/EnumMultiset$2;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$1",
+            "val$index"
+        }
+    .end annotation
 
-    .line 262
-    iput-object p1, p0, Lcom/google/common/collect/EnumMultiset$2$1;->this$1:Lcom/google/common/collect/EnumMultiset$2;
-
+    .line 267
     iput p2, p0, Lcom/google/common/collect/EnumMultiset$2$1;->val$index:I
+
+    iput-object p1, p0, Lcom/google/common/collect/EnumMultiset$2$1;->this$1:Lcom/google/common/collect/EnumMultiset$2;
 
     invoke-direct {p0}, Lcom/google/common/collect/Multisets$AbstractEntry;-><init>()V
 
@@ -46,7 +56,7 @@
 .method public getCount()I
     .locals 1
 
-    .line 270
+    .line 275
     iget-object v0, p0, Lcom/google/common/collect/EnumMultiset$2$1;->this$1:Lcom/google/common/collect/EnumMultiset$2;
 
     iget-object v0, v0, Lcom/google/common/collect/EnumMultiset$2;->this$0:Lcom/google/common/collect/EnumMultiset;
@@ -70,7 +80,7 @@
         }
     .end annotation
 
-    .line 265
+    .line 270
     iget-object v0, p0, Lcom/google/common/collect/EnumMultiset$2$1;->this$1:Lcom/google/common/collect/EnumMultiset$2;
 
     iget-object v0, v0, Lcom/google/common/collect/EnumMultiset$2;->this$0:Lcom/google/common/collect/EnumMultiset;
@@ -89,7 +99,7 @@
 .method public bridge synthetic getElement()Ljava/lang/Object;
     .locals 0
 
-    .line 262
+    .line 267
     invoke-virtual {p0}, Lcom/google/common/collect/EnumMultiset$2$1;->getElement()Ljava/lang/Enum;
 
     move-result-object p0

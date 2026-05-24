@@ -92,6 +92,14 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "savedInstanceState"
+        }
+    .end annotation
 
     .line 41
     invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onCreate(Landroid/os/Bundle;)V
@@ -122,7 +130,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/Window;->requestFeature(I)Z
 
-    const v0, 0x7f0c0026
+    const v0, 0x7f0c0027
 
     .line 47
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/RecommendedSettingsActivity;->setContentView(I)V
@@ -362,7 +370,7 @@
 
     const-string v2, "recommended_settings_fragment"
 
-    const v3, 0x7f090136
+    const v3, 0x7f090135
 
     invoke-virtual {p1, v3, v0, v2}, Landroidx/fragment/app/FragmentTransaction;->add(ILandroidx/fragment/app/Fragment;Ljava/lang/String;)Landroidx/fragment/app/FragmentTransaction;
 
@@ -397,6 +405,16 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "keyCode",
+            "event"
+        }
+    .end annotation
 
     const/16 v0, 0x50
 
@@ -432,6 +450,16 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "keyCode",
+            "event"
+        }
+    .end annotation
 
     .line 115
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/KeyEventTranslator;->translateKeyCode(I)Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
@@ -460,6 +488,14 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "item"
+        }
+    .end annotation
 
     .line 95
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I

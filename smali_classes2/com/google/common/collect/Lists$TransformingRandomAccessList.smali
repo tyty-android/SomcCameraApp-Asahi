@@ -59,6 +59,17 @@
 # direct methods
 .method constructor <init>(Ljava/util/List;Lcom/google/common/base/Function;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromList",
+            "function"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -69,10 +80,10 @@
         }
     .end annotation
 
-    .line 582
+    .line 618
     invoke-direct {p0}, Ljava/util/AbstractList;-><init>()V
 
-    .line 583
+    .line 619
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -81,7 +92,7 @@
 
     iput-object p1, p0, Lcom/google/common/collect/Lists$TransformingRandomAccessList;->fromList:Ljava/util/List;
 
-    .line 584
+    .line 620
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -95,26 +106,27 @@
 
 
 # virtual methods
-.method public clear()V
-    .locals 0
-
-    .line 589
-    iget-object p0, p0, Lcom/google/common/collect/Lists$TransformingRandomAccessList;->fromList:Ljava/util/List;
-
-    invoke-interface {p0}, Ljava/util/List;->clear()V
-
-    return-void
-.end method
-
 .method public get(I)Ljava/lang/Object;
     .locals 1
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TT;"
         }
     .end annotation
 
-    .line 594
+    .line 635
     iget-object v0, p0, Lcom/google/common/collect/Lists$TransformingRandomAccessList;->function:Lcom/google/common/base/Function;
 
     iget-object p0, p0, Lcom/google/common/collect/Lists$TransformingRandomAccessList;->fromList:Ljava/util/List;
@@ -133,7 +145,7 @@
 .method public isEmpty()Z
     .locals 0
 
-    .line 614
+    .line 655
     iget-object p0, p0, Lcom/google/common/collect/Lists$TransformingRandomAccessList;->fromList:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->isEmpty()Z
@@ -153,7 +165,7 @@
         }
     .end annotation
 
-    .line 599
+    .line 640
     invoke-virtual {p0}, Lcom/google/common/collect/Lists$TransformingRandomAccessList;->listIterator()Ljava/util/ListIterator;
 
     move-result-object p0
@@ -163,6 +175,15 @@
 
 .method public listIterator(I)Ljava/util/ListIterator;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -171,7 +192,7 @@
         }
     .end annotation
 
-    .line 604
+    .line 645
     new-instance v0, Lcom/google/common/collect/Lists$TransformingRandomAccessList$1;
 
     iget-object v1, p0, Lcom/google/common/collect/Lists$TransformingRandomAccessList;->fromList:Ljava/util/List;
@@ -187,13 +208,22 @@
 
 .method public remove(I)Ljava/lang/Object;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TT;"
         }
     .end annotation
 
-    .line 619
+    .line 660
     iget-object v0, p0, Lcom/google/common/collect/Lists$TransformingRandomAccessList;->function:Lcom/google/common/base/Function;
 
     iget-object p0, p0, Lcom/google/common/collect/Lists$TransformingRandomAccessList;->fromList:Ljava/util/List;
@@ -209,10 +239,35 @@
     return-object p0
 .end method
 
+.method protected removeRange(II)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromIndex",
+            "toIndex"
+        }
+    .end annotation
+
+    .line 629
+    iget-object p0, p0, Lcom/google/common/collect/Lists$TransformingRandomAccessList;->fromList:Ljava/util/List;
+
+    invoke-interface {p0, p1, p2}, Ljava/util/List;->subList(II)Ljava/util/List;
+
+    move-result-object p0
+
+    invoke-interface {p0}, Ljava/util/List;->clear()V
+
+    return-void
+.end method
+
 .method public size()I
     .locals 0
 
-    .line 624
+    .line 665
     iget-object p0, p0, Lcom/google/common/collect/Lists$TransformingRandomAccessList;->fromList:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->size()I

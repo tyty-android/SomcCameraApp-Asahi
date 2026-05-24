@@ -19,6 +19,16 @@
 # virtual methods
 .method public varargs handleInitialize(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "objects"
+        }
+    .end annotation
 
     .line 30
     sget-object v0, Ljp/co/sony/mc/camera/util/PerfLog;->HANDLE_INITIALIZE:Ljp/co/sony/mc/camera/util/PerfLog;

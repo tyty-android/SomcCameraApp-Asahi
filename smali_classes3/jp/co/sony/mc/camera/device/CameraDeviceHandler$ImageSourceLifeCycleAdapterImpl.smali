@@ -30,6 +30,8 @@
 
 .field private mIsImageDataAvailable:Z
 
+.field public final mRequestId:I
+
 .field private final mSavingPhotoRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;
 
 .field private mSessionId:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
@@ -38,42 +40,59 @@
 
 
 # direct methods
-.method constructor <init>(Ljp/co/sony/mc/camera/device/CameraDeviceHandler;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageDataInfo;)V
+.method constructor <init>(Ljp/co/sony/mc/camera/device/CameraDeviceHandler;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;ILjp/co/sony/mc/camera/device/CameraDeviceHandler$ImageDataInfo;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "sessionId",
+            "requestId",
+            "imageDataInfo"
+        }
+    .end annotation
 
-    .line 4172
+    .line 4441
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->this$0:Ljp/co/sony/mc/camera/device/CameraDeviceHandler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 4166
+    .line 4434
     iput v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->mByteBufferRefCount:I
 
-    .line 4167
+    .line 4435
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->mIsCloseRequested:Z
 
-    .line 4173
+    .line 4442
     iput-object p2, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->mSessionId:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
 
-    .line 4174
-    iget-object p2, p3, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageDataInfo;->image:Landroid/media/Image;
+    .line 4443
+    iput p3, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->mRequestId:I
+
+    .line 4444
+    iget-object p2, p4, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageDataInfo;->image:Landroid/media/Image;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->mImage:Landroid/media/Image;
 
-    .line 4175
-    iget-object p2, p3, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageDataInfo;->byteBuffer:Ljava/nio/ByteBuffer;
+    .line 4445
+    iget-object p2, p4, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageDataInfo;->byteBuffer:Ljava/nio/ByteBuffer;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->mBuffer:Ljava/nio/ByteBuffer;
 
-    .line 4176
-    iget p2, p3, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageDataInfo;->imageFormat:I
+    .line 4446
+    iget p2, p4, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageDataInfo;->imageFormat:I
 
     iput p2, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->mImageFormat:I
 
-    .line 4177
-    invoke-static {p1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler;->-$$Nest$fgetmCapturingSchemeQueue(Ljp/co/sony/mc/camera/device/CameraDeviceHandler;)Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;
+    .line 4447
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler;->-$$Nest$mgetCapturingSchemeQueue(Ljp/co/sony/mc/camera/device/CameraDeviceHandler;I)Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;
 
     move-result-object p1
 
@@ -81,7 +100,7 @@
 
     const/4 p1, 0x1
 
-    .line 4178
+    .line 4448
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->mIsImageDataAvailable:Z
 
     return-void
@@ -90,7 +109,7 @@
 .method private releaseImageSource()V
     .locals 8
 
-    .line 4209
+    .line 4479
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->mImage:Landroid/media/Image;
 
     const/4 v1, 0x0
@@ -101,7 +120,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 4210
+    .line 4480
     new-array v0, v2, [Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -124,24 +143,24 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 4211
+    .line 4481
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v4
 
-    .line 4212
+    .line 4482
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->mImage:Landroid/media/Image;
 
     invoke-virtual {v0}, Landroid/media/Image;->close()V
 
-    .line 4213
+    .line 4483
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v6
 
     sub-long/2addr v6, v4
 
-    .line 4214
+    .line 4484
     new-array v0, v2, [Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -168,33 +187,37 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 4216
+    .line 4486
     iput-object v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->mImage:Landroid/media/Image;
 
     goto :goto_0
 
-    .line 4217
+    .line 4487
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->mBuffer:Ljava/nio/ByteBuffer;
 
     if-eqz v0, :cond_1
 
-    .line 4218
+    .line 4488
     iput-object v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->mBuffer:Ljava/nio/ByteBuffer;
 
-    .line 4221
+    .line 4491
     :cond_1
     :goto_0
+    iget v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->mImageFormat:I
+
+    const/16 v1, 0x11
+
+    if-eq v0, v1, :cond_3
+
+    .line 4492
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->mSavingPhotoRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;
 
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->dequeueSavingRequest()V
+    iget v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->mRequestId:I
 
-    .line 4226
-    iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->mSavingPhotoRequestQueue:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;
+    invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->dequeueSavingRequest(I)Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
 
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue;->snapshotLockCountDown()V
-
-    .line 4228
+    .line 4494
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->this$0:Ljp/co/sony/mc/camera/device/CameraDeviceHandler;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler;->-$$Nest$fgetmDeviceStateMachineSet(Ljp/co/sony/mc/camera/device/CameraDeviceHandler;)Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineSet;
@@ -209,7 +232,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 4230
+    .line 4496
     sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_RELEASE_IMAGE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     new-array v2, v3, [Ljava/lang/Object;
@@ -218,7 +241,7 @@
 
     goto :goto_1
 
-    .line 4232
+    .line 4498
     :cond_2
     new-array v0, v2, [Ljava/lang/String;
 
@@ -228,7 +251,8 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
-    .line 4235
+    .line 4502
+    :cond_3
     :goto_1
     iput-boolean v3, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->mIsImageDataAvailable:Z
 
@@ -248,7 +272,7 @@
 .method public capacity()I
     .locals 1
 
-    .line 4240
+    .line 4507
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->getImageData()Ljava/nio/ByteBuffer;
 
     move-result-object v0
@@ -257,7 +281,7 @@
 
     move-result v0
 
-    .line 4241
+    .line 4508
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->releaseImageData()V
 
     return v0
@@ -268,10 +292,10 @@
 
     const/4 v0, 0x1
 
-    .line 4252
+    .line 4519
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->mIsCloseRequested:Z
 
-    .line 4253
+    .line 4520
     new-array v0, v0, [Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -296,14 +320,14 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 4254
+    .line 4521
     iget v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->mByteBufferRefCount:I
 
     if-lez v0, :cond_0
 
     return-void
 
-    .line 4257
+    .line 4524
     :cond_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->releaseImageSource()V
 
@@ -313,7 +337,7 @@
 .method public getImageData()Ljava/nio/ByteBuffer;
     .locals 3
 
-    .line 4183
+    .line 4453
     iget v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->mByteBufferRefCount:I
 
     const/4 v1, 0x1
@@ -322,7 +346,7 @@
 
     iput v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->mByteBufferRefCount:I
 
-    .line 4184
+    .line 4454
     new-array v0, v1, [Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -347,7 +371,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 4185
+    .line 4455
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->mBuffer:Ljava/nio/ByteBuffer;
 
     return-object p0
@@ -356,7 +380,7 @@
 .method public getImageFormat()I
     .locals 0
 
-    .line 4199
+    .line 4469
     iget p0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->mImageFormat:I
 
     return p0
@@ -365,7 +389,7 @@
 .method public isImageDataAvailable()Z
     .locals 0
 
-    .line 4204
+    .line 4474
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->mIsImageDataAvailable:Z
 
     return p0
@@ -374,7 +398,7 @@
 .method public releaseImageData()V
     .locals 3
 
-    .line 4190
+    .line 4460
     iget v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->mByteBufferRefCount:I
 
     const/4 v1, 0x1
@@ -383,7 +407,7 @@
 
     iput v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->mByteBufferRefCount:I
 
-    .line 4191
+    .line 4461
     new-array v0, v1, [Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -408,7 +432,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 4192
+    .line 4462
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->mIsCloseRequested:Z
 
     if-eqz v0, :cond_0
@@ -417,7 +441,7 @@
 
     if-gtz v0, :cond_0
 
-    .line 4193
+    .line 4463
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageSourceLifeCycleAdapterImpl;->close()V
 
     :cond_0

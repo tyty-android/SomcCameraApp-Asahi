@@ -40,7 +40,7 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 192
+    .line 208
     new-instance v0, Lcom/google/common/collect/DiscreteDomain$BigIntegerDomain;
 
     invoke-direct {v0}, Lcom/google/common/collect/DiscreteDomain$BigIntegerDomain;-><init>()V
@@ -49,7 +49,7 @@
 
     const-wide/high16 v0, -0x8000000000000000L
 
-    .line 198
+    .line 214
     invoke-static {v0, v1}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
     move-result-object v0
@@ -58,7 +58,7 @@
 
     const-wide v0, 0x7fffffffffffffffL
 
-    .line 199
+    .line 215
     invoke-static {v0, v1}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
     move-result-object v0
@@ -75,7 +75,7 @@
 
     const/4 v1, 0x0
 
-    .line 195
+    .line 211
     invoke-direct {p0, v0, v1}, Lcom/google/common/collect/DiscreteDomain;-><init>(ZLcom/google/common/collect/DiscreteDomain$1;)V
 
     return-void
@@ -84,7 +84,7 @@
 .method static synthetic access$300()Lcom/google/common/collect/DiscreteDomain$BigIntegerDomain;
     .locals 1
 
-    .line 190
+    .line 206
     sget-object v0, Lcom/google/common/collect/DiscreteDomain$BigIntegerDomain;->INSTANCE:Lcom/google/common/collect/DiscreteDomain$BigIntegerDomain;
 
     return-object v0
@@ -93,7 +93,7 @@
 .method private readResolve()Ljava/lang/Object;
     .locals 0
 
-    .line 223
+    .line 239
     sget-object p0, Lcom/google/common/collect/DiscreteDomain$BigIntegerDomain;->INSTANCE:Lcom/google/common/collect/DiscreteDomain$BigIntegerDomain;
 
     return-object p0
@@ -103,8 +103,18 @@
 # virtual methods
 .method public bridge synthetic distance(Ljava/lang/Comparable;Ljava/lang/Comparable;)J
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "start",
+            "end"
+        }
+    .end annotation
 
-    .line 190
+    .line 206
     check-cast p1, Ljava/math/BigInteger;
 
     check-cast p2, Ljava/math/BigInteger;
@@ -118,8 +128,18 @@
 
 .method public distance(Ljava/math/BigInteger;Ljava/math/BigInteger;)J
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "start",
+            "end"
+        }
+    .end annotation
 
-    .line 219
+    .line 235
     invoke-virtual {p2, p1}, Ljava/math/BigInteger;->subtract(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object p0
@@ -145,8 +165,16 @@
 
 .method public bridge synthetic next(Ljava/lang/Comparable;)Ljava/lang/Comparable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 190
+    .line 206
     check-cast p1, Ljava/math/BigInteger;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/DiscreteDomain$BigIntegerDomain;->next(Ljava/math/BigInteger;)Ljava/math/BigInteger;
@@ -158,8 +186,16 @@
 
 .method public next(Ljava/math/BigInteger;)Ljava/math/BigInteger;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 203
+    .line 219
     sget-object p0, Ljava/math/BigInteger;->ONE:Ljava/math/BigInteger;
 
     invoke-virtual {p1, p0}, Ljava/math/BigInteger;->add(Ljava/math/BigInteger;)Ljava/math/BigInteger;
@@ -171,8 +207,18 @@
 
 .method bridge synthetic offset(Ljava/lang/Comparable;J)Ljava/lang/Comparable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "origin",
+            "distance"
+        }
+    .end annotation
 
-    .line 190
+    .line 206
     check-cast p1, Ljava/math/BigInteger;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/common/collect/DiscreteDomain$BigIntegerDomain;->offset(Ljava/math/BigInteger;J)Ljava/math/BigInteger;
@@ -184,13 +230,23 @@
 
 .method offset(Ljava/math/BigInteger;J)Ljava/math/BigInteger;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "origin",
+            "distance"
+        }
+    .end annotation
 
-    .line 213
+    .line 229
     const-string p0, "distance"
 
     invoke-static {p2, p3, p0}, Lcom/google/common/collect/CollectPreconditions;->checkNonnegative(JLjava/lang/String;)J
 
-    .line 214
+    .line 230
     invoke-static {p2, p3}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
     move-result-object p0
@@ -204,8 +260,16 @@
 
 .method public bridge synthetic previous(Ljava/lang/Comparable;)Ljava/lang/Comparable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 190
+    .line 206
     check-cast p1, Ljava/math/BigInteger;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/DiscreteDomain$BigIntegerDomain;->previous(Ljava/math/BigInteger;)Ljava/math/BigInteger;
@@ -217,8 +281,16 @@
 
 .method public previous(Ljava/math/BigInteger;)Ljava/math/BigInteger;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 208
+    .line 224
     sget-object p0, Ljava/math/BigInteger;->ONE:Ljava/math/BigInteger;
 
     invoke-virtual {p1, p0}, Ljava/math/BigInteger;->subtract(Ljava/math/BigInteger;)Ljava/math/BigInteger;
@@ -231,7 +303,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 228
+    .line 244
     const-string p0, "DiscreteDomain.bigIntegers()"
 
     return-object p0

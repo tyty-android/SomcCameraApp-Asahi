@@ -18,7 +18,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 468
+    .line 482
     invoke-direct {p0}, Lcom/google/common/cache/CacheBuilderSpec$DurationParser;-><init>()V
 
     return-void
@@ -28,8 +28,20 @@
 # virtual methods
 .method protected parseDuration(Lcom/google/common/cache/CacheBuilderSpec;JLjava/util/concurrent/TimeUnit;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "spec",
+            "duration",
+            "unit"
+        }
+    .end annotation
 
-    .line 471
+    .line 485
     iget-object p0, p1, Lcom/google/common/cache/CacheBuilderSpec;->refreshTimeUnit:Ljava/util/concurrent/TimeUnit;
 
     if-nez p0, :cond_0
@@ -46,10 +58,10 @@
 
     invoke-static {p0, v0}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/Object;)V
 
-    .line 472
+    .line 486
     iput-wide p2, p1, Lcom/google/common/cache/CacheBuilderSpec;->refreshDuration:J
 
-    .line 473
+    .line 487
     iput-object p4, p1, Lcom/google/common/cache/CacheBuilderSpec;->refreshTimeUnit:Ljava/util/concurrent/TimeUnit;
 
     return-void

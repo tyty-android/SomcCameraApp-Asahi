@@ -27,7 +27,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nScatterMap.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ScatterMap.kt\nandroidx/collection/MutableScatterMap$MutableMapWrapper$values$1\n+ 2 ScatterMap.kt\nandroidx/collection/ScatterMap\n+ 3 ScatterMap.kt\nandroidx/collection/ScatterMapKt\n+ 4 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,1834:1\n363#2,6:1835\n373#2,3:1842\n376#2,9:1846\n363#2,6:1855\n373#2,3:1862\n376#2,9:1866\n363#2,6:1875\n373#2,3:1882\n376#2,9:1886\n1810#3:1841\n1672#3:1845\n1810#3:1861\n1672#3:1865\n1810#3:1881\n1672#3:1885\n1726#4,3:1895\n*S KotlinDebug\n*F\n+ 1 ScatterMap.kt\nandroidx/collection/MutableScatterMap$MutableMapWrapper$values$1\n*L\n1530#1:1835,6\n1530#1:1842,3\n1530#1:1846,9\n1541#1:1855,6\n1541#1:1862,3\n1541#1:1866,9\n1551#1:1875,6\n1551#1:1882,3\n1551#1:1886,9\n1530#1:1841\n1530#1:1845\n1541#1:1861\n1541#1:1865\n1551#1:1881\n1551#1:1885\n1561#1:1895,3\n*E\n"
+    value = "SMAP\nScatterMap.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ScatterMap.kt\nandroidx/collection/MutableScatterMap$MutableMapWrapper$values$1\n+ 2 ScatterMap.kt\nandroidx/collection/ScatterMap\n+ 3 ScatterMap.kt\nandroidx/collection/ScatterMapKt\n+ 4 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,1850:1\n363#2,6:1851\n373#2,3:1858\n376#2,9:1862\n363#2,6:1871\n373#2,3:1878\n376#2,9:1882\n363#2,6:1891\n373#2,3:1898\n376#2,9:1902\n1826#3:1857\n1688#3:1861\n1826#3:1877\n1688#3:1881\n1826#3:1897\n1688#3:1901\n1726#4,3:1911\n*S KotlinDebug\n*F\n+ 1 ScatterMap.kt\nandroidx/collection/MutableScatterMap$MutableMapWrapper$values$1\n*L\n1546#1:1851,6\n1546#1:1858,3\n1546#1:1862,9\n1557#1:1871,6\n1557#1:1878,3\n1557#1:1882,9\n1567#1:1891,6\n1567#1:1898,3\n1567#1:1902,9\n1546#1:1857\n1546#1:1861\n1557#1:1877\n1557#1:1881\n1567#1:1897\n1567#1:1901\n1577#1:1911,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -94,7 +94,7 @@
 
     iput-object p1, p0, Landroidx/collection/MutableScatterMap$MutableMapWrapper$values$1;->this$0:Landroidx/collection/MutableScatterMap;
 
-    .line 1487
+    .line 1503
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -110,7 +110,7 @@
         }
     .end annotation
 
-    .line 1525
+    .line 1541
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -132,7 +132,7 @@
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1521
+    .line 1537
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -143,7 +143,7 @@
 .method public clear()V
     .locals 0
 
-    .line 1517
+    .line 1533
     iget-object p0, p0, Landroidx/collection/MutableScatterMap$MutableMapWrapper$values$1;->this$0:Landroidx/collection/MutableScatterMap;
 
     invoke-virtual {p0}, Landroidx/collection/MutableScatterMap;->clear()V
@@ -154,7 +154,7 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 1564
+    .line 1580
     iget-object p0, p0, Landroidx/collection/MutableScatterMap$MutableMapWrapper$values$1;->this$0:Landroidx/collection/MutableScatterMap;
 
     invoke-virtual {p0, p1}, Landroidx/collection/MutableScatterMap;->containsValue(Ljava/lang/Object;)Z
@@ -180,12 +180,12 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1561
+    .line 1577
     check-cast p1, Ljava/lang/Iterable;
 
     iget-object p0, p0, Landroidx/collection/MutableScatterMap$MutableMapWrapper$values$1;->this$0:Landroidx/collection/MutableScatterMap;
 
-    .line 1895
+    .line 1911
     move-object v0, p1
 
     check-cast v0, Ljava/util/Collection;
@@ -200,7 +200,7 @@
 
     goto :goto_0
 
-    .line 1896
+    .line 1912
     :cond_0
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -217,7 +217,7 @@
 
     move-result-object v0
 
-    .line 1561
+    .line 1577
     invoke-virtual {p0, v0}, Landroidx/collection/MutableScatterMap;->containsValue(Ljava/lang/Object;)Z
 
     move-result v0
@@ -234,7 +234,7 @@
 .method public getSize()I
     .locals 0
 
-    .line 1488
+    .line 1504
     iget-object p0, p0, Landroidx/collection/MutableScatterMap$MutableMapWrapper$values$1;->this$0:Landroidx/collection/MutableScatterMap;
 
     iget p0, p0, Landroidx/collection/MutableScatterMap;->_size:I
@@ -245,7 +245,7 @@
 .method public isEmpty()Z
     .locals 0
 
-    .line 1490
+    .line 1506
     iget-object p0, p0, Landroidx/collection/MutableScatterMap$MutableMapWrapper$values$1;->this$0:Landroidx/collection/MutableScatterMap;
 
     invoke-virtual {p0}, Landroidx/collection/MutableScatterMap;->isEmpty()Z
@@ -265,7 +265,7 @@
         }
     .end annotation
 
-    .line 1492
+    .line 1508
     new-instance v0, Landroidx/collection/MutableScatterMap$MutableMapWrapper$values$1$iterator$1;
 
     iget-object p0, p0, Landroidx/collection/MutableScatterMap$MutableMapWrapper$values$1;->this$0:Landroidx/collection/MutableScatterMap;
@@ -280,17 +280,17 @@
 .method public remove(Ljava/lang/Object;)Z
     .locals 13
 
-    .line 1551
+    .line 1567
     iget-object p0, p0, Landroidx/collection/MutableScatterMap$MutableMapWrapper$values$1;->this$0:Landroidx/collection/MutableScatterMap;
 
     move-object v0, p0
 
     check-cast v0, Landroidx/collection/ScatterMap;
 
-    .line 1875
+    .line 1891
     iget-object v0, v0, Landroidx/collection/ScatterMap;->metadata:[J
 
-    .line 1876
+    .line 1892
     array-length v1, v0
 
     add-int/lit8 v1, v1, -0x2
@@ -301,7 +301,7 @@
 
     move v3, v2
 
-    .line 1879
+    .line 1895
     :goto_0
     aget-wide v4, v0, v3
 
@@ -350,7 +350,7 @@
 
     add-int/2addr v9, v8
 
-    .line 1552
+    .line 1568
     iget-object v10, p0, Landroidx/collection/MutableScatterMap;->values:[Ljava/lang/Object;
 
     aget-object v10, v10, v9
@@ -361,7 +361,7 @@
 
     if-eqz v10, :cond_0
 
-    .line 1553
+    .line 1569
     invoke-virtual {p0, v9}, Landroidx/collection/MutableScatterMap;->removeValueAt(I)Ljava/lang/Object;
 
     const/4 p0, 0x1
@@ -405,17 +405,17 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1541
+    .line 1557
     iget-object p0, p0, Landroidx/collection/MutableScatterMap$MutableMapWrapper$values$1;->this$0:Landroidx/collection/MutableScatterMap;
 
     move-object v0, p0
 
     check-cast v0, Landroidx/collection/ScatterMap;
 
-    .line 1855
+    .line 1871
     iget-object v0, v0, Landroidx/collection/ScatterMap;->metadata:[J
 
-    .line 1856
+    .line 1872
     array-length v1, v0
 
     add-int/lit8 v1, v1, -0x2
@@ -428,7 +428,7 @@
 
     move v4, v3
 
-    .line 1859
+    .line 1875
     :goto_0
     aget-wide v5, v0, v3
 
@@ -477,7 +477,7 @@
 
     add-int/2addr v10, v9
 
-    .line 1542
+    .line 1558
     move-object v11, p1
 
     check-cast v11, Ljava/lang/Iterable;
@@ -492,7 +492,7 @@
 
     if-eqz v11, :cond_0
 
-    .line 1543
+    .line 1559
     invoke-virtual {p0, v10}, Landroidx/collection/MutableScatterMap;->removeValueAt(I)Ljava/lang/Object;
 
     const/4 v4, 0x1
@@ -540,17 +540,17 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1530
+    .line 1546
     iget-object p0, p0, Landroidx/collection/MutableScatterMap$MutableMapWrapper$values$1;->this$0:Landroidx/collection/MutableScatterMap;
 
     move-object v0, p0
 
     check-cast v0, Landroidx/collection/ScatterMap;
 
-    .line 1835
+    .line 1851
     iget-object v0, v0, Landroidx/collection/ScatterMap;->metadata:[J
 
-    .line 1836
+    .line 1852
     array-length v1, v0
 
     add-int/lit8 v1, v1, -0x2
@@ -563,7 +563,7 @@
 
     move v4, v3
 
-    .line 1839
+    .line 1855
     :goto_0
     aget-wide v5, v0, v3
 
@@ -612,7 +612,7 @@
 
     add-int/2addr v10, v9
 
-    .line 1531
+    .line 1547
     move-object v11, p1
 
     check-cast v11, Ljava/lang/Iterable;
@@ -627,7 +627,7 @@
 
     if-nez v11, :cond_0
 
-    .line 1532
+    .line 1548
     invoke-virtual {p0, v10}, Landroidx/collection/MutableScatterMap;->removeValueAt(I)Ljava/lang/Object;
 
     const/4 v4, 0x1
@@ -662,7 +662,7 @@
 .method public final bridge size()I
     .locals 0
 
-    .line 1487
+    .line 1503
     invoke-virtual {p0}, Landroidx/collection/MutableScatterMap$MutableMapWrapper$values$1;->getSize()I
 
     move-result p0

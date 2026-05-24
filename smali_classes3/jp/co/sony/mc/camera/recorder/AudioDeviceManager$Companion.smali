@@ -43,7 +43,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 25
+    .line 24
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -70,7 +70,7 @@
 .method public final getInstance()Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;
     .locals 0
 
-    .line 26
+    .line 25
     invoke-static {}, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->access$getInstance$cp()Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;
 
     move-result-object p0

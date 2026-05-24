@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/escape/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation runtime Lcom/google/errorprone/annotations/DoNotMock;
     value = "Use Escapers.nullEscaper() or another methods from the *Escapers classes"
 .end annotation
@@ -26,13 +29,13 @@
 .method protected constructor <init>()V
     .locals 1
 
-    .line 62
+    .line 63
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 87
-    new-instance v0, Lcom/google/common/escape/Escaper$1;
+    .line 88
+    new-instance v0, Lcom/google/common/escape/Escaper$$ExternalSyntheticLambda0;
 
-    invoke-direct {v0, p0}, Lcom/google/common/escape/Escaper$1;-><init>(Lcom/google/common/escape/Escaper;)V
+    invoke-direct {v0, p0}, Lcom/google/common/escape/Escaper$$ExternalSyntheticLambda0;-><init>(Lcom/google/common/escape/Escaper;)V
 
     iput-object v0, p0, Lcom/google/common/escape/Escaper;->asFunction:Lcom/google/common/base/Function;
 
@@ -53,11 +56,19 @@
         }
     .end annotation
 
-    .line 97
+    .line 92
     iget-object p0, p0, Lcom/google/common/escape/Escaper;->asFunction:Lcom/google/common/base/Function;
 
     return-object p0
 .end method
 
 .method public abstract escape(Ljava/lang/String;)Ljava/lang/String;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "string"
+        }
+    .end annotation
 .end method

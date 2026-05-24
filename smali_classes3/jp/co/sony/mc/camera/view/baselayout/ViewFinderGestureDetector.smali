@@ -182,6 +182,14 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 129
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -236,7 +244,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a005a
+    const v1, 0x7f0a0066
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -251,7 +259,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f070814
+    const v1, 0x7f0707ca
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -271,7 +279,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f07035a
+    const v0, 0x7f070304
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -284,6 +292,16 @@
 
 .method private static computeDistance(Landroid/graphics/Point;Landroid/graphics/Point;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "startPoint",
+            "currentPoint"
+        }
+    .end annotation
 
     .line 498
     iget v0, p1, Landroid/graphics/Point;->x:I
@@ -320,6 +338,16 @@
 
 .method private computeDraggingDirection(FF)Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector$Direction;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "distanceX",
+            "distanceY"
+        }
+    .end annotation
 
     .line 488
     invoke-static {p1}, Ljava/lang/Math;->abs(F)F
@@ -367,6 +395,14 @@
 
 .method private isAccepted(Landroid/view/MotionEvent;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
 
     .line 446
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector;->mTriggerEvent:Landroid/view/MotionEvent;
@@ -420,6 +456,14 @@
 
 .method private isDraggingAccepted(Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector$Direction;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "direction"
+        }
+    .end annotation
 
     .line 438
     sget-object v0, Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector$Direction;->NONE:Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector$Direction;
@@ -473,6 +517,14 @@
 
 .method private isExclusiveViewEvent(Landroid/view/MotionEvent;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
 
     .line 456
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector;->mExclusiveViews:Ljava/util/List;
@@ -536,6 +588,16 @@
 
 .method private isStartDraggingAccepted(Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector$Direction;Landroid/view/MotionEvent;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "direction",
+            "e"
+        }
+    .end annotation
 
     .line 407
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector;->mTriggerEvent:Landroid/view/MotionEvent;
@@ -653,6 +715,16 @@
 
 .method private notifyOnDragging(Landroid/view/MotionEvent;Landroid/view/MotionEvent;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "start",
+            "current"
+        }
+    .end annotation
 
     .line 504
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector;->mListener:Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector$OnViewFinderGestureDetectorListener;
@@ -676,6 +748,18 @@
 
 .method private notifyOnFinishDragging(Landroid/view/MotionEvent;Landroid/view/MotionEvent;Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector$FinishReason;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "start",
+            "current",
+            "reason"
+        }
+    .end annotation
 
     .line 520
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector;->mListener:Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector$OnViewFinderGestureDetectorListener;
@@ -699,6 +783,16 @@
 
 .method private notifyOnStartDragging(Landroid/view/MotionEvent;Landroid/view/MotionEvent;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "trigger",
+            "start"
+        }
+    .end annotation
 
     .line 512
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector;->mListener:Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector$OnViewFinderGestureDetectorListener;
@@ -722,6 +816,14 @@
 
 .method private resetDragStartEvent(Landroid/view/MotionEvent;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
 
     .line 478
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector;->mDragStartEvent:Landroid/view/MotionEvent;
@@ -752,6 +854,14 @@
 
 .method private resetTriggerEvent(Landroid/view/MotionEvent;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
 
     .line 468
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector;->mTriggerEvent:Landroid/view/MotionEvent;
@@ -782,6 +892,14 @@
 
 .method private trace(Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "msg"
+        }
+    .end annotation
 
     const/4 p0, 0x1
 
@@ -801,6 +919,14 @@
 # virtual methods
 .method public addExclusiveView(Landroid/view/View;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
     .line 174
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector;->mExclusiveViews:Ljava/util/List;
@@ -812,6 +938,14 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
 
     .line 185
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
@@ -1027,6 +1161,14 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -1142,6 +1284,14 @@
 
 .method public varargs setAcceptDragDirection([Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector$Direction;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "directions"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -1192,6 +1342,14 @@
 
 .method public setOnGestureDetectorListener(Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector$OnViewFinderGestureDetectorListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 167
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector;->mListener:Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector$OnViewFinderGestureDetectorListener;
@@ -1201,6 +1359,14 @@
 
 .method public setStartDraggingSlopEnabled(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "enabled"
+        }
+    .end annotation
 
     .line 148
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/baselayout/ViewFinderGestureDetector;->mIsStartDraggingSlopEnabled:Z

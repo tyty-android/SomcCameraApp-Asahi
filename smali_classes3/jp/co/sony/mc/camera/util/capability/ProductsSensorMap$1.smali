@@ -27,10 +27,10 @@
 .method constructor <init>()V
     .locals 7
 
-    .line 28
+    .line 29
     invoke-direct {p0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
-    .line 29
+    .line 30
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     new-instance v1, Ljp/co/sony/mc/camera/device/CameraInfo;
@@ -45,7 +45,7 @@
 
     invoke-virtual {p0, v0, v1}, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 31
+    .line 32
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->FRONT:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     new-instance v1, Ljp/co/sony/mc/camera/device/CameraInfo;
@@ -58,7 +58,7 @@
 
     invoke-virtual {p0, v0, v1}, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 33
+    .line 34
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     new-instance v1, Ljp/co/sony/mc/camera/device/CameraInfo;
@@ -69,7 +69,7 @@
 
     invoke-virtual {p0, v0, v1}, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 35
+    .line 36
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     new-instance v1, Ljp/co/sony/mc/camera/device/CameraInfo;
@@ -80,7 +80,7 @@
 
     invoke-virtual {p0, v0, v1}, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 37
+    .line 38
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->ULTRA_WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     new-instance v1, Ljp/co/sony/mc/camera/device/CameraInfo;

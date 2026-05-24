@@ -34,7 +34,7 @@
 
 .field private static final TEXT_ID_SS:I = -0x1
 
-.field private static final TEXT_ID_VS:I = 0x7f110450
+.field private static final TEXT_ID_VS:I = 0x7f11049b
 
 
 # instance fields
@@ -81,9 +81,9 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f0801bb
+    const v3, 0x7f080217
 
-    const v4, 0x7f1103f3
+    const v4, 0x7f11043e
 
     move-object v0, v7
 
@@ -102,9 +102,9 @@
 
     const/4 v10, 0x1
 
-    const v11, 0x7f0801be
+    const v11, 0x7f08021a
 
-    const v12, 0x7f1103f5
+    const v12, 0x7f110440
 
     move-object v8, v0
 
@@ -123,9 +123,9 @@
 
     const/4 v3, 0x2
 
-    const v4, 0x7f0801b8
+    const v4, 0x7f080214
 
-    const v5, 0x7f110499
+    const v5, 0x7f1104e7
 
     move-object v1, v0
 
@@ -144,9 +144,9 @@
 
     const/4 v10, 0x3
 
-    const v11, 0x7f0801b8
+    const v11, 0x7f080214
 
-    const v12, 0x7f1103f1
+    const v12, 0x7f11043c
 
     move-object v8, v0
 
@@ -166,6 +166,25 @@
 
 .method private constructor <init>(Ljava/lang/String;IIILjava/lang/String;Ljp/co/sony/mc/camera/configuration/parameters/PowerLevel;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId",
+            "value",
+            "powerLevel"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -195,6 +214,22 @@
 
 .method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;)[Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId",
+            "videoSize",
+            "captureFps",
+            "videoHdr"
+        }
+    .end annotation
 
     .line 129
     invoke-static {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->getVideoStabilizerOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;)[Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
@@ -207,7 +242,7 @@
 .method public static getParameterKeyTitleText()I
     .locals 1
 
-    const v0, 0x7f110450
+    const v0, 0x7f11049b
 
     return v0
 .end method
@@ -223,6 +258,24 @@
 
 .method public static getRecommendedVideoStabilizerValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId",
+            "videoSize",
+            "captureFps",
+            "videoHdr",
+            "videoMfHdr"
+        }
+    .end annotation
 
     .line 193
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -375,6 +428,22 @@
 
 .method public static getVideoStabilizerOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;)[Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId",
+            "videoSize",
+            "captureFps",
+            "videoHdr"
+        }
+    .end annotation
 
     .line 146
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$CapturingMode:[I
@@ -513,6 +582,22 @@
 
 .method public static isVideoStabilizerSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "cameraId",
+            "videoSize",
+            "captureFps",
+            "videoHdr",
+            "videoMfHdr"
+        }
+    .end annotation
 
     .line 232
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -621,6 +706,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 25
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;

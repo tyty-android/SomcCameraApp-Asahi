@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/ai_suggestion_sub_preview_placeholder_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/sub_placeholder_layout" android:background="@drawable/camera_ai_suggestion_sub_preview_border_background" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/ai_suggestion_sub_preview_layout_margin" android:elevation="0.0dip" app:cardCornerRadius="4.0dip">
+            <ImageView android:id="@id/sub_placeholder_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+    <FrameLayout android:id="@id/sub_placeholder_layout_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/border_gradient" />
+</FrameLayout>

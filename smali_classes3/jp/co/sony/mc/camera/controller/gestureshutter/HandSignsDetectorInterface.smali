@@ -26,9 +26,25 @@
 .end method
 
 .method public abstract setLayoutOrientation(Ljp/co/sony/mc/camera/OrientationService$LayoutOrientation;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "orientation"
+        }
+    .end annotation
 .end method
 
 .method public abstract startDetect(Ljp/co/sony/mc/camera/device/PreviewFrameProvider;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "provider"
+        }
+    .end annotation
 .end method
 
 .method public abstract stopDetect()V

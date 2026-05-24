@@ -3,6 +3,11 @@
 .source "UnicodeEscaper.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/escape/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # static fields
 .field private static final DEST_PAD:I = 0x20
 
@@ -19,15 +24,27 @@
 
 .method protected static codePointAt(Ljava/lang/CharSequence;II)I
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "seq",
+            "index",
+            "end"
+        }
+    .end annotation
 
-    .line 246
+    .line 247
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     if-ge p1, p2, :cond_5
 
     add-int/lit8 v0, p1, 0x1
 
-    .line 248
+    .line 249
     invoke-interface {p0, p1}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v1
@@ -45,7 +62,7 @@
     :cond_0
     const v2, 0xdbff
 
-    .line 252
+    .line 253
     const-string v3, "\'"
 
     const-string v4, " in \'"
@@ -62,53 +79,35 @@
 
     return p0
 
-    .line 258
+    .line 259
     :cond_1
     invoke-interface {p0, v0}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result p1
 
-    .line 259
+    .line 260
     invoke-static {p1}, Ljava/lang/Character;->isLowSurrogate(C)Z
 
     move-result p2
 
     if-eqz p2, :cond_2
 
-    .line 260
+    .line 261
     invoke-static {v1, p1}, Ljava/lang/Character;->toCodePoint(CC)I
 
     move-result p0
 
     return p0
 
-    .line 262
+    .line 263
     :cond_2
     new-instance p2, Ljava/lang/IllegalArgumentException;
 
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    move-result-object p0
+    const-string v2, "Expected low surrogate but got char \'"
 
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    move-result v1
-
-    add-int/lit8 v1, v1, 0x59
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v1, "Expected low surrogate but got char \'"
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
@@ -134,7 +133,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -150,33 +149,15 @@
 
     throw p2
 
-    .line 273
+    .line 274
     :cond_3
     new-instance p2, Ljava/lang/IllegalArgumentException;
 
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    move-result-object p0
+    const-string v2, "Unexpected low surrogate character \'"
 
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, 0x58
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v0, "Unexpected low surrogate character \'"
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
+    invoke-direct {v0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
@@ -202,7 +183,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -222,7 +203,7 @@
     :goto_0
     return v1
 
-    .line 285
+    .line 286
     :cond_5
     new-instance p0, Ljava/lang/IndexOutOfBoundsException;
 
@@ -235,23 +216,35 @@
 
 .method private static growBuffer([CII)[C
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "dest",
+            "index",
+            "size"
+        }
+    .end annotation
 
     if-ltz p2, :cond_1
 
-    .line 296
+    .line 297
     new-array p2, p2, [C
 
     if-lez p1, :cond_0
 
     const/4 v0, 0x0
 
-    .line 298
+    .line 299
     invoke-static {p0, v0, p2, v0, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     :cond_0
     return-object p2
 
-    .line 294
+    .line 295
     :cond_1
     new-instance p0, Ljava/lang/AssertionError;
 
@@ -266,18 +259,26 @@
 # virtual methods
 .method public escape(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-
-    .line 102
-    invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "string"
+        }
+    .end annotation
 
     .line 103
+    invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 104
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v0
 
     const/4 v1, 0x0
 
-    .line 104
+    .line 105
     invoke-virtual {p0, p1, v1, v0}, Lcom/google/common/escape/UnicodeEscaper;->nextEscapeIndex(Ljava/lang/CharSequence;II)I
 
     move-result v1
@@ -286,7 +287,7 @@
 
     goto :goto_0
 
-    .line 105
+    .line 106
     :cond_0
     invoke-virtual {p0, p1, v1}, Lcom/google/common/escape/UnicodeEscaper;->escapeSlow(Ljava/lang/String;I)Ljava/lang/String;
 
@@ -297,17 +298,38 @@
 .end method
 
 .method protected abstract escape(I)[C
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cp"
+        }
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 .end method
 
 .method protected final escapeSlow(Ljava/lang/String;I)Ljava/lang/String;
     .locals 11
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "s",
+            "index"
+        }
+    .end annotation
 
-    .line 158
+    .line 159
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v0
 
-    .line 161
+    .line 162
     invoke-static {}, Lcom/google/common/escape/Platform;->charBufferFromThreadLocal()[C
 
     move-result-object v1
@@ -321,19 +343,19 @@
     :goto_0
     if-ge p2, v0, :cond_6
 
-    .line 166
+    .line 167
     invoke-static {p1, p2, v0}, Lcom/google/common/escape/UnicodeEscaper;->codePointAt(Ljava/lang/CharSequence;II)I
 
     move-result v5
 
     if-ltz v5, :cond_5
 
-    .line 173
+    .line 174
     invoke-virtual {p0, v5}, Lcom/google/common/escape/UnicodeEscaper;->escape(I)[C
 
     move-result-object v6
 
-    .line 174
+    .line 175
     invoke-static {v5}, Ljava/lang/Character;->isSupplementaryCodePoint(I)Z
 
     move-result v5
@@ -356,12 +378,12 @@
 
     add-int v8, v4, v7
 
-    .line 180
+    .line 181
     array-length v9, v6
 
     add-int/2addr v9, v8
 
-    .line 181
+    .line 182
     array-length v10, v1
 
     if-ge v10, v9, :cond_1
@@ -372,7 +394,7 @@
 
     add-int/lit8 v9, v9, 0x20
 
-    .line 183
+    .line 184
     invoke-static {v1, v4, v9}, Lcom/google/common/escape/UnicodeEscaper;->growBuffer([CII)[C
 
     move-result-object v1
@@ -380,23 +402,23 @@
     :cond_1
     if-lez v7, :cond_2
 
-    .line 187
+    .line 188
     invoke-virtual {p1, v3, p2, v1, v4}, Ljava/lang/String;->getChars(II[CI)V
 
     move v4, v8
 
-    .line 190
+    .line 191
     :cond_2
     array-length p2, v6
 
     if-lez p2, :cond_3
 
-    .line 191
+    .line 192
     array-length p2, v6
 
     invoke-static {v6, v2, v1, v4, p2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 192
+    .line 193
     array-length p2, v6
 
     add-int/2addr v4, p2
@@ -404,7 +426,7 @@
     :cond_3
     move v3, v5
 
-    .line 197
+    .line 198
     :cond_4
     invoke-virtual {p0, p1, v5, v0}, Lcom/google/common/escape/UnicodeEscaper;->nextEscapeIndex(Ljava/lang/CharSequence;II)I
 
@@ -412,7 +434,7 @@
 
     goto :goto_0
 
-    .line 168
+    .line 169
     :cond_5
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -429,25 +451,25 @@
 
     add-int/2addr p0, v4
 
-    .line 205
+    .line 206
     array-length p2, v1
 
     if-ge p2, p0, :cond_7
 
-    .line 206
+    .line 207
     invoke-static {v1, v4, p0}, Lcom/google/common/escape/UnicodeEscaper;->growBuffer([CII)[C
 
     move-result-object p2
 
     move-object v1, p2
 
-    .line 208
+    .line 209
     :cond_7
     invoke-virtual {p1, v3, v0, v1, v4}, Ljava/lang/String;->getChars(II[CI)V
 
     move v4, p0
 
-    .line 211
+    .line 212
     :cond_8
     new-instance p0, Ljava/lang/String;
 
@@ -458,18 +480,30 @@
 
 .method protected nextEscapeIndex(Ljava/lang/CharSequence;II)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "csq",
+            "start",
+            "end"
+        }
+    .end annotation
 
     :goto_0
     if-ge p2, p3, :cond_2
 
-    .line 133
+    .line 134
     invoke-static {p1, p2, p3}, Lcom/google/common/escape/UnicodeEscaper;->codePointAt(Ljava/lang/CharSequence;II)I
 
     move-result v0
 
     if-ltz v0, :cond_2
 
-    .line 134
+    .line 135
     invoke-virtual {p0, v0}, Lcom/google/common/escape/UnicodeEscaper;->escape(I)[C
 
     move-result-object v1
@@ -478,7 +512,7 @@
 
     goto :goto_2
 
-    .line 137
+    .line 138
     :cond_0
     invoke-static {v0}, Ljava/lang/Character;->isSupplementaryCodePoint(I)Z
 

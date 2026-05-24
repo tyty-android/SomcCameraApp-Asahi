@@ -121,7 +121,7 @@
     .line 29
     new-instance v6, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
-    const v4, 0x7f1104a6
+    const v4, 0x7f1104f5
 
     const-string v5, "auto"
 
@@ -129,7 +129,7 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f08031b
+    const v3, 0x7f08038b
 
     move-object v0, v6
 
@@ -140,7 +140,7 @@
     .line 33
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
-    const v11, 0x7f1104ab
+    const v11, 0x7f1104fa
 
     const-string v12, "cloudy-daylight"
 
@@ -148,7 +148,7 @@
 
     const/4 v9, 0x1
 
-    const v10, 0x7f08031e
+    const v10, 0x7f08038e
 
     move-object v7, v0
 
@@ -159,7 +159,7 @@
     .line 37
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
-    const v5, 0x7f1104b3
+    const v5, 0x7f110502
 
     const-string v6, "daylight"
 
@@ -167,7 +167,7 @@
 
     const/4 v3, 0x2
 
-    const v4, 0x7f08032b
+    const v4, 0x7f08039b
 
     move-object v1, v0
 
@@ -178,7 +178,7 @@
     .line 41
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
-    const v11, 0x7f1104b4
+    const v11, 0x7f110503
 
     const-string v12, "fluorescent"
 
@@ -186,7 +186,7 @@
 
     const/4 v9, 0x3
 
-    const v10, 0x7f08032e
+    const v10, 0x7f08039e
 
     move-object v7, v0
 
@@ -197,7 +197,7 @@
     .line 45
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
-    const v5, 0x7f1104b5
+    const v5, 0x7f110504
 
     const-string v6, "incandescent"
 
@@ -205,7 +205,7 @@
 
     const/4 v3, 0x4
 
-    const v4, 0x7f080331
+    const v4, 0x7f0803a1
 
     move-object v1, v0
 
@@ -216,7 +216,7 @@
     .line 49
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
-    const v11, 0x7f1104b6
+    const v11, 0x7f110505
 
     const-string/jumbo v12, "shade"
 
@@ -224,7 +224,7 @@
 
     const/4 v9, 0x5
 
-    const v10, 0x7f080334
+    const v10, 0x7f0803a4
 
     move-object v7, v0
 
@@ -235,7 +235,7 @@
     .line 53
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
-    const v5, 0x7f1104b7
+    const v5, 0x7f110506
 
     const-string/jumbo v6, "temperature1"
 
@@ -243,7 +243,7 @@
 
     const/4 v3, 0x6
 
-    const v4, 0x7f08033d
+    const v4, 0x7f0803ad
 
     move-object v1, v0
 
@@ -254,7 +254,7 @@
     .line 57
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
-    const v11, 0x7f1104b8
+    const v11, 0x7f110507
 
     const-string/jumbo v12, "temperature2"
 
@@ -262,7 +262,7 @@
 
     const/4 v9, 0x7
 
-    const v10, 0x7f08033e
+    const v10, 0x7f0803ae
 
     move-object v7, v0
 
@@ -273,7 +273,7 @@
     .line 61
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
-    const v5, 0x7f1104b9
+    const v5, 0x7f110508
 
     const-string/jumbo v6, "temperature3"
 
@@ -281,7 +281,7 @@
 
     const/16 v3, 0x8
 
-    const v4, 0x7f08033f
+    const v4, 0x7f0803af
 
     move-object v1, v0
 
@@ -292,7 +292,7 @@
     .line 65
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
-    const v11, 0x7f1104ac
+    const v11, 0x7f1104fb
 
     const-string v12, "custom1"
 
@@ -300,7 +300,7 @@
 
     const/16 v9, 0x9
 
-    const v10, 0x7f080321
+    const v10, 0x7f080391
 
     move-object v7, v0
 
@@ -311,7 +311,7 @@
     .line 69
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
-    const v5, 0x7f1104ad
+    const v5, 0x7f1104fc
 
     const-string v6, "custom2"
 
@@ -319,7 +319,7 @@
 
     const/16 v3, 0xa
 
-    const v4, 0x7f080324
+    const v4, 0x7f080394
 
     move-object v1, v0
 
@@ -330,7 +330,7 @@
     .line 73
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
-    const v11, 0x7f1104ae
+    const v11, 0x7f1104fd
 
     const-string v12, "custom3"
 
@@ -338,7 +338,7 @@
 
     const/16 v9, 0xb
 
-    const v10, 0x7f080327
+    const v10, 0x7f080397
 
     move-object v7, v0
 
@@ -393,6 +393,23 @@
 
 .method private constructor <init>(Ljava/lang/String;IIILjava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -418,6 +435,16 @@
 
 .method public static constrainCustomGmFloatValue(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;F)F
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "cameraId",
+            "gmValue"
+        }
+    .end annotation
 
     .line 275
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getMaxAwbColorCompensationGmFloat(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/lang/Float;
@@ -505,6 +532,14 @@
 
 .method public static convertAbGmValuesToAbValue(Ljava/lang/String;)F
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "abGmValues"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -540,6 +575,14 @@
 
 .method public static convertAbGmValuesToGmValue(Ljava/lang/String;)F
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "abGmValues"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -575,6 +618,14 @@
 
 .method public static convertRatioValuesToX(Ljava/lang/String;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "x"
+        }
+    .end annotation
 
     .line 391
     new-instance v0, Lcom/google/gson/Gson;
@@ -600,6 +651,14 @@
 
 .method public static convertRatioValuesToY(Ljava/lang/String;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "y"
+        }
+    .end annotation
 
     .line 403
     new-instance v0, Lcom/google/gson/Gson;
@@ -625,6 +684,14 @@
 
 .method public static getAbDisplayText(F)Ljava/lang/String;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ab"
+        }
+    .end annotation
 
     .line 366
     invoke-static {p0}, Ljava/lang/Math;->abs(F)F
@@ -704,6 +771,14 @@
 
 .method public static getGmDisplayText(F)Ljava/lang/String;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "gm"
+        }
+    .end annotation
 
     .line 379
     invoke-static {p0}, Ljava/lang/Math;->abs(F)F
@@ -774,6 +849,16 @@
 
 .method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId"
+        }
+    .end annotation
 
     .line 175
     new-instance v0, Ljava/util/ArrayList;
@@ -872,8 +957,20 @@
 
 .method public static getTemperatureDescriptionText(Landroid/content/Context;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;F)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "cameraId",
+            "temperature"
+        }
+    .end annotation
 
-    const v0, 0x7f110084
+    const v0, 0x7f110098
 
     .line 309
     invoke-static {p0, p1, p2, v0}, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->getTemperatureText(Landroid/content/Context;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FI)Ljava/lang/String;
@@ -885,8 +982,20 @@
 
 .method public static getTemperatureDisplayText(Landroid/content/Context;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;F)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "cameraId",
+            "temperature"
+        }
+    .end annotation
 
-    const v0, 0x7f11015a
+    const v0, 0x7f110197
 
     .line 298
     invoke-static {p0, p1, p2, v0}, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->getTemperatureText(Landroid/content/Context;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FI)Ljava/lang/String;
@@ -898,6 +1007,14 @@
 
 .method public static getTemperatureOptions(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljava/lang/Float;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
     .line 218
     new-instance v0, Ljava/util/ArrayList;
@@ -959,6 +1076,20 @@
 
 .method private static getTemperatureText(Landroid/content/Context;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FI)Ljava/lang/String;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "cameraId",
+            "temperature",
+            "suffixStringId"
+        }
+    .end annotation
 
     if-nez p0, :cond_0
 
@@ -1076,6 +1207,18 @@
 
 .method public static isSupportedValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId",
+            "checkTarget"
+        }
+    .end annotation
 
     .line 200
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
@@ -1110,6 +1253,14 @@
 
 .method public static isWhiteBalanceCustom(Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "whiteBalance"
+        }
+    .end annotation
 
     .line 209
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->CUSTOM1:Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
@@ -1141,6 +1292,14 @@
 
 .method public static isWhiteBalanceTemperature(Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "whiteBalance"
+        }
+    .end annotation
 
     .line 213
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->TEMPERATURE1:Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
@@ -1172,6 +1331,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 28
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;

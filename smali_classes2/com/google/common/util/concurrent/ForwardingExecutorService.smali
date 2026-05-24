@@ -6,11 +6,16 @@
 .implements Ljava/util/concurrent/ExecutorService;
 
 
+# annotations
+.annotation runtime Lcom/google/common/util/concurrent/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # direct methods
 .method protected constructor <init>()V
     .locals 0
 
-    .line 42
+    .line 50
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingObject;-><init>()V
 
     return-void
@@ -20,13 +25,27 @@
 # virtual methods
 .method public awaitTermination(JLjava/util/concurrent/TimeUnit;)Z
     .locals 0
+    .annotation runtime Lcom/google/errorprone/annotations/CheckReturnValue;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "timeout",
+            "unit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
         }
     .end annotation
 
-    .line 49
+    .line 58
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingExecutorService;->delegate()Ljava/util/concurrent/ExecutorService;
 
     move-result-object p0
@@ -41,7 +60,7 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 37
+    .line 44
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingExecutorService;->delegate()Ljava/util/concurrent/ExecutorService;
 
     move-result-object p0
@@ -54,8 +73,16 @@
 
 .method public execute(Ljava/lang/Runnable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "command"
+        }
+    .end annotation
 
-    .line 99
+    .line 110
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingExecutorService;->delegate()Ljava/util/concurrent/ExecutorService;
 
     move-result-object p0
@@ -67,6 +94,15 @@
 
 .method public invokeAll(Ljava/util/Collection;)Ljava/util/List;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "tasks"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -88,7 +124,7 @@
         }
     .end annotation
 
-    .line 55
+    .line 64
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingExecutorService;->delegate()Ljava/util/concurrent/ExecutorService;
 
     move-result-object p0
@@ -102,6 +138,19 @@
 
 .method public invokeAll(Ljava/util/Collection;JLjava/util/concurrent/TimeUnit;)Ljava/util/List;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "tasks",
+            "timeout",
+            "unit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -125,7 +174,7 @@
         }
     .end annotation
 
-    .line 62
+    .line 71
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingExecutorService;->delegate()Ljava/util/concurrent/ExecutorService;
 
     move-result-object p0
@@ -139,6 +188,15 @@
 
 .method public invokeAny(Ljava/util/Collection;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "tasks"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -158,7 +216,7 @@
         }
     .end annotation
 
-    .line 68
+    .line 77
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingExecutorService;->delegate()Ljava/util/concurrent/ExecutorService;
 
     move-result-object p0
@@ -172,6 +230,19 @@
 
 .method public invokeAny(Ljava/util/Collection;JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "tasks",
+            "timeout",
+            "unit"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -194,7 +265,7 @@
         }
     .end annotation
 
-    .line 74
+    .line 84
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingExecutorService;->delegate()Ljava/util/concurrent/ExecutorService;
 
     move-result-object p0
@@ -209,7 +280,7 @@
 .method public isShutdown()Z
     .locals 0
 
-    .line 79
+    .line 89
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingExecutorService;->delegate()Ljava/util/concurrent/ExecutorService;
 
     move-result-object p0
@@ -224,7 +295,7 @@
 .method public isTerminated()Z
     .locals 0
 
-    .line 84
+    .line 94
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingExecutorService;->delegate()Ljava/util/concurrent/ExecutorService;
 
     move-result-object p0
@@ -239,7 +310,7 @@
 .method public shutdown()V
     .locals 0
 
-    .line 89
+    .line 99
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingExecutorService;->delegate()Ljava/util/concurrent/ExecutorService;
 
     move-result-object p0
@@ -260,7 +331,7 @@
         }
     .end annotation
 
-    .line 94
+    .line 105
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingExecutorService;->delegate()Ljava/util/concurrent/ExecutorService;
 
     move-result-object p0
@@ -274,6 +345,15 @@
 
 .method public submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "task"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -284,7 +364,7 @@
         }
     .end annotation
 
-    .line 109
+    .line 120
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingExecutorService;->delegate()Ljava/util/concurrent/ExecutorService;
 
     move-result-object p0
@@ -298,6 +378,21 @@
 
 .method public submit(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/Future;
     .locals 0
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/util/concurrent/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "task",
+            "result"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -310,7 +405,7 @@
         }
     .end annotation
 
-    .line 114
+    .line 126
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingExecutorService;->delegate()Ljava/util/concurrent/ExecutorService;
 
     move-result-object p0
@@ -324,6 +419,15 @@
 
 .method public submit(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "task"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -336,7 +440,7 @@
         }
     .end annotation
 
-    .line 104
+    .line 115
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingExecutorService;->delegate()Ljava/util/concurrent/ExecutorService;
 
     move-result-object p0

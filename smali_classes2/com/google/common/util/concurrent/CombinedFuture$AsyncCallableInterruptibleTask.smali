@@ -39,6 +39,19 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/util/concurrent/CombinedFuture;Lcom/google/common/util/concurrent/AsyncCallable;Ljava/util/concurrent/Executor;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "callable",
+            "listenerExecutor"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -49,13 +62,13 @@
         }
     .end annotation
 
-    .line 146
+    .line 160
     iput-object p1, p0, Lcom/google/common/util/concurrent/CombinedFuture$AsyncCallableInterruptibleTask;->this$0:Lcom/google/common/util/concurrent/CombinedFuture;
 
-    .line 147
+    .line 161
     invoke-direct {p0, p1, p3}, Lcom/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask;-><init>(Lcom/google/common/util/concurrent/CombinedFuture;Ljava/util/concurrent/Executor;)V
 
-    .line 148
+    .line 162
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -85,14 +98,14 @@
         }
     .end annotation
 
-    .line 153
+    .line 167
     iget-object v0, p0, Lcom/google/common/util/concurrent/CombinedFuture$AsyncCallableInterruptibleTask;->callable:Lcom/google/common/util/concurrent/AsyncCallable;
 
     invoke-interface {v0}, Lcom/google/common/util/concurrent/AsyncCallable;->call()Lcom/google/common/util/concurrent/ListenableFuture;
 
     move-result-object v0
 
-    .line 154
+    .line 168
     const-string v1, "AsyncCallable.call returned null instead of a Future. Did you mean to return immediateFuture(null)? %s"
 
     iget-object p0, p0, Lcom/google/common/util/concurrent/CombinedFuture$AsyncCallableInterruptibleTask;->callable:Lcom/google/common/util/concurrent/AsyncCallable;
@@ -114,7 +127,7 @@
         }
     .end annotation
 
-    .line 141
+    .line 155
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/CombinedFuture$AsyncCallableInterruptibleTask;->runInterruptibly()Lcom/google/common/util/concurrent/ListenableFuture;
 
     move-result-object p0
@@ -124,6 +137,15 @@
 
 .method setValue(Lcom/google/common/util/concurrent/ListenableFuture;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -132,7 +154,7 @@
         }
     .end annotation
 
-    .line 163
+    .line 177
     iget-object p0, p0, Lcom/google/common/util/concurrent/CombinedFuture$AsyncCallableInterruptibleTask;->this$0:Lcom/google/common/util/concurrent/CombinedFuture;
 
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/CombinedFuture;->setFuture(Lcom/google/common/util/concurrent/ListenableFuture;)Z
@@ -142,8 +164,16 @@
 
 .method bridge synthetic setValue(Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 141
+    .line 155
     check-cast p1, Lcom/google/common/util/concurrent/ListenableFuture;
 
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/CombinedFuture$AsyncCallableInterruptibleTask;->setValue(Lcom/google/common/util/concurrent/ListenableFuture;)V
@@ -154,10 +184,10 @@
 .method toPendingString()Ljava/lang/String;
     .locals 0
 
-    .line 168
+    .line 182
     iget-object p0, p0, Lcom/google/common/util/concurrent/CombinedFuture$AsyncCallableInterruptibleTask;->callable:Lcom/google/common/util/concurrent/AsyncCallable;
 
-    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-interface {p0}, Lcom/google/common/util/concurrent/AsyncCallable;->toString()Ljava/lang/String;
 
     move-result-object p0
 

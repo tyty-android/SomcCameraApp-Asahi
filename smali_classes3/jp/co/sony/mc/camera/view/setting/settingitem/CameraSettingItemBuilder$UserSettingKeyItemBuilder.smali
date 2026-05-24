@@ -154,6 +154,14 @@
 
 .method setAdditionalTextForAccessibility(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "additionalTextForAccessibility"
+        }
+    .end annotation
 
     .line 557
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->mAdditionalTextForAccessibility:Ljava/lang/String;
@@ -163,6 +171,14 @@
 
 .method setChoiceMode(I)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "choiceMode"
+        }
+    .end annotation
 
     .line 592
     iput p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->mChoiceMode:I
@@ -172,6 +188,15 @@
 
 .method setDescriptionResIdList(Ljava/util/List;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "descriptionResIdList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -190,6 +215,14 @@
 
 .method setImageResId(I)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "imageResId"
+        }
+    .end annotation
 
     .line 587
     iput p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->mImageResId:I
@@ -199,6 +232,14 @@
 
 .method setInformationResId(I)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "informationResId"
+        }
+    .end annotation
 
     .line 551
     iput p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->mInformationResId:I
@@ -208,6 +249,14 @@
 
 .method setIsExclusionInfo(Z)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isExclusionInfo"
+        }
+    .end annotation
 
     .line 546
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->mIsExclusionInfo:Z
@@ -217,6 +266,14 @@
 
 .method setIsRestricted(Z)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isRestricted"
+        }
+    .end annotation
 
     .line 567
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->mIsRestricted:Z
@@ -226,6 +283,15 @@
 
 .method setOptions(Ljava/util/List;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "options"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -244,6 +310,14 @@
 
 .method setRestrictMessageDialogId(Ljp/co/sony/mc/camera/view/messagedialog/DialogId;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dialogId"
+        }
+    .end annotation
 
     .line 572
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->mRestrictMessageDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
@@ -253,6 +327,14 @@
 
 .method setSettingLayoutType(Ljp/co/sony/mc/camera/view/setting/settingitem/SettingLayoutType;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "layoutType"
+        }
+    .end annotation
 
     .line 562
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->mLayoutType:Ljp/co/sony/mc/camera/view/setting/settingitem/SettingLayoutType;
@@ -262,6 +344,14 @@
 
 .method setSubCategoryTitleId(I)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "subclassTitleGroupTitleId"
+        }
+    .end annotation
 
     .line 521
     iput p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->mSubCategoryTitleId:I
@@ -271,6 +361,15 @@
 
 .method setSubDescriptionResIdList(Ljava/util/List;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "subDescriptionResIdList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -289,6 +388,14 @@
 
 .method setTitleText(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "titleText"
+        }
+    .end annotation
 
     .line 526
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->mTitleText:Ljava/lang/String;
@@ -298,6 +405,14 @@
 
 .method setUserSettingKey(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
     .line 516
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->mKey:Ljp/co/sony/mc/camera/setting/SettingKey$Key;
@@ -307,6 +422,14 @@
 
 .method setValueText(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "valueText"
+        }
+    .end annotation
 
     .line 531
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->mValueText:Ljava/lang/String;

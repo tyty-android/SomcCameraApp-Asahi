@@ -5,11 +5,6 @@
         <item>READ-ONLY</item>
         <item>BROKEN</item>
     </string-array>
-    <string-array name="facebook_privacy_values">
-        <item>@string/camera_strings_facebook_live_privacy_public_txt</item>
-        <item>@string/camera_strings_facebook_live_privacy_friends_txt</item>
-        <item>@string/camera_strings_facebook_live_privacy_only_me_txt</item>
-    </string-array>
     <string-array name="license_file_list">
         <item>android_open_source_project.txt</item>
         <item>android_annotations_support_library.txt</item>
@@ -22,7 +17,6 @@
         <item>material_components_for_android.txt</item>
         <item>live_event.txt</item>
         <item>renderscript_toolkit_for_android.txt</item>
-        <item>rtmp_rtsp_stream_client_java.txt</item>
         <item>presentation_fragment.txt</item>
         <item>protobuf_nano.txt</item>
         <item>spotbugs_gradle_plugin.txt</item>
@@ -43,7 +37,6 @@
         <item>_1_1_9MP</item>
     </string-array>
     <string-array name="ux_recommended_video_size_array">
-        <item>HD</item>
         <item>FULL_HD</item>
         <item>FOUR_K_UHD</item>
     </string-array>
@@ -52,6 +45,10 @@
         <item>10.0</item>
     </string-array>
     <string-array name="zoom_slider_label_zoom_ratio_pdx_256">
+        <item>2.0</item>
+        <item>10.0</item>
+    </string-array>
+    <string-array name="zoom_slider_label_zoom_ratio_pdx_267">
         <item>2.0</item>
         <item>10.0</item>
     </string-array>

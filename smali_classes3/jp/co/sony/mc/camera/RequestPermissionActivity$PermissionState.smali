@@ -35,6 +35,19 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/RequestPermissionActivity;Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionCategory;Ljava/util/List;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "category",
+            "groupList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

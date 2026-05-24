@@ -405,7 +405,7 @@
     .line 104
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/CapturingModeMenuAdapter$ViewHolder;->context:Landroid/content/Context;
 
-    const v1, 0x7f1100ee
+    const v1, 0x7f110102
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

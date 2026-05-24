@@ -21,16 +21,18 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nZoomSliderPresenter.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ZoomSliderPresenter.kt\njp/co/sony/mc/camera/view/widget/ZoomSliderPresenter\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,889:1\n1557#2:890\n1628#2,3:891\n1557#2:894\n1628#2,3:895\n1863#2,2:898\n1557#2:900\n1628#2,3:901\n1557#2:904\n1628#2,3:905\n1863#2,2:908\n1863#2,2:910\n1567#2:912\n1598#2,4:913\n1557#2:917\n1628#2,3:918\n1557#2:921\n1628#2,3:922\n1557#2:925\n1628#2,3:926\n1557#2:929\n1628#2,3:930\n1557#2:933\n1628#2,3:934\n1863#2,2:938\n1863#2,2:940\n1863#2,2:942\n1863#2,2:944\n1863#2,2:946\n1#3:937\n*S KotlinDebug\n*F\n+ 1 ZoomSliderPresenter.kt\njp/co/sony/mc/camera/view/widget/ZoomSliderPresenter\n*L\n121#1:890\n121#1:891,3\n140#1:894\n140#1:895,3\n151#1:898,2\n188#1:900\n188#1:901,3\n191#1:904\n191#1:905,3\n421#1:908,2\n444#1:910,2\n515#1:912\n515#1:913,4\n521#1:917\n521#1:918,3\n528#1:921\n528#1:922,3\n549#1:925\n549#1:926,3\n556#1:929\n556#1:930,3\n563#1:933\n563#1:934,3\n766#1:938,2\n787#1:940,2\n822#1:942,2\n832#1:944,2\n840#1:946,2\n*E\n"
+    value = "SMAP\nZoomSliderPresenter.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ZoomSliderPresenter.kt\njp/co/sony/mc/camera/view/widget/ZoomSliderPresenter\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,979:1\n1557#2:980\n1628#2,3:981\n1557#2:984\n1628#2,3:985\n1863#2,2:988\n1557#2:990\n1628#2,3:991\n1557#2:994\n1628#2,3:995\n1863#2,2:998\n1863#2,2:1000\n1567#2:1002\n1598#2,4:1003\n1557#2:1007\n1628#2,3:1008\n1557#2:1011\n1628#2,3:1012\n1557#2:1015\n1628#2,3:1016\n1557#2:1019\n1628#2,3:1020\n1557#2:1023\n1628#2,3:1024\n1863#2,2:1028\n1863#2,2:1030\n1863#2,2:1032\n1863#2,2:1034\n1863#2,2:1036\n1#3:1027\n*S KotlinDebug\n*F\n+ 1 ZoomSliderPresenter.kt\njp/co/sony/mc/camera/view/widget/ZoomSliderPresenter\n*L\n133#1:980\n133#1:981,3\n156#1:984\n156#1:985,3\n168#1:988,2\n275#1:990\n275#1:991,3\n278#1:994\n278#1:995,3\n511#1:998,2\n534#1:1000,2\n605#1:1002\n605#1:1003,4\n611#1:1007\n611#1:1008,3\n618#1:1011\n618#1:1012,3\n639#1:1015\n639#1:1016,3\n646#1:1019\n646#1:1020,3\n653#1:1023\n653#1:1024,3\n856#1:1028,2\n877#1:1030,2\n912#1:1032,2\n922#1:1034,2\n930#1:1036,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u00ba\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0013\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0010\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u000e\n\u0002\u0008\u000c\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0008\u0008\u0007\u0018\u0000 \u008d\u00012\u00020\u0001:\u000e\u008d\u0001\u008e\u0001\u008f\u0001\u0090\u0001\u0091\u0001\u0092\u0001\u0093\u0001B3\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u000c\u0010\u0006\u001a\u0008\u0012\u0004\u0012\u00020\u00080\u0007\u0012\u000c\u0010\t\u001a\u0008\u0012\u0004\u0012\u00020\n0\u0007\u00a2\u0006\u0004\u0008\u000b\u0010\u000cJ\u0016\u0010Q\u001a\u00020\u00162\u0006\u0010>\u001a\u00020\u00182\u0006\u0010A\u001a\u00020\u0018J\u000e\u0010R\u001a\u00020S2\u0006\u0010T\u001a\u00020\u0018J\u0008\u0010U\u001a\u00020SH\u0002J\u000e\u0010V\u001a\u00020S2\u0006\u0010W\u001a\u00020\u001aJ\u000e\u0010X\u001a\u00020S2\u0006\u0010W\u001a\u00020\u001aJ\"\u0010Y\u001a\u00020S2\u0008\u0010Z\u001a\u0004\u0018\u00010[2\u0006\u0010T\u001a\u00020\u00182\u0006\u0010\\\u001a\u00020\u0016H\u0016J\u0012\u0010]\u001a\u00020S2\u0008\u0010Z\u001a\u0004\u0018\u00010[H\u0016J\u0012\u0010^\u001a\u00020S2\u0008\u0010Z\u001a\u0004\u0018\u00010[H\u0016J\u001a\u0010_\u001a\u00020S2\u0008\u0010`\u001a\u0004\u0018\u00010a2\u0008\u0010b\u001a\u0004\u0018\u00010aJ\u0006\u0010c\u001a\u00020SJ\u0006\u0010d\u001a\u00020SJ\u0006\u0010e\u001a\u00020SJ\u0010\u0010f\u001a\u00020S2\u0006\u0010g\u001a\u00020\u0016H\u0002J\u000e\u0010h\u001a\u00020S2\u0006\u0010i\u001a\u00020\u0016J\u0008\u0010j\u001a\u00020SH\u0002J\u0008\u0010k\u001a\u00020SH\u0002J\u000e\u0010l\u001a\u00020S2\u0006\u0010m\u001a\u00020nJ\u0008\u0010o\u001a\u00020SH\u0002J\u0006\u0010p\u001a\u00020SJ\u0006\u0010q\u001a\u00020SJ\u0008\u0010r\u001a\u00020\u0016H\u0002J\u0010\u0010s\u001a\u00020S2\u0006\u0010t\u001a\u00020\u0018H\u0002J\u0010\u0010u\u001a\u00020S2\u0006\u0010T\u001a\u00020\u0018H\u0002J\u0010\u0010v\u001a\u00020\u001a2\u0006\u0010w\u001a\u00020\u0018H\u0002J\u0008\u0010x\u001a\u00020\u0018H\u0002J\u0008\u0010y\u001a\u00020zH\u0002J\u0008\u0010{\u001a\u00020zH\u0002J\u000e\u0010|\u001a\u00020z2\u0006\u0010}\u001a\u00020\u001aJ\u0010\u0010~\u001a\u00020S2\u0006\u0010\u007f\u001a\u00020zH\u0002J\t\u0010\u0080\u0001\u001a\u00020SH\u0002J\t\u0010\u0081\u0001\u001a\u00020SH\u0002J\u001d\u0010\u0082\u0001\u001a\u0016\u0012\u0012\u0012\u0010\u0012\u0005\u0012\u00030\u0084\u0001\u0012\u0004\u0012\u00020\u00180\u0083\u00010\u0007H\u0002J\u0012\u0010\u0085\u0001\u001a\u00020S2\u0007\u0010\u0086\u0001\u001a\u00020\u0016H\u0002J\u0012\u0010\u0087\u0001\u001a\u00020S2\u0007\u0010\u0086\u0001\u001a\u00020\u0016H\u0002J\u0011\u0010\u0088\u0001\u001a\u00020S2\u0006\u0010:\u001a\u00020\u0016H\u0002J\u0010\u0010\u0089\u0001\u001a\u00020S2\u0007\u0010\u008a\u0001\u001a\u00020\u001aJ\u0012\u0010\u008b\u0001\u001a\u00030\u008c\u00012\u0006\u0010w\u001a\u00020\u0018H\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0017\u0010\u0006\u001a\u0008\u0012\u0004\u0012\u00020\u00080\u0007\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\r\u0010\u000eR\u0017\u0010\t\u001a\u0008\u0012\u0004\u0012\u00020\n0\u0007\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000f\u0010\u000eR\u001e\u0010\u0012\u001a\u00020\u00112\u0006\u0010\u0010\u001a\u00020\u0011@BX\u0082\u000e\u00a2\u0006\u0008\n\u0000\"\u0004\u0008\u0013\u0010\u0014R\u000e\u0010\u0015\u001a\u00020\u0016X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\u0018X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0019\u001a\u00020\u001aX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u001b\u001a\u0004\u0018\u00010\u001cX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001d\u0010\u001e\"\u0004\u0008\u001f\u0010 R\u001c\u0010!\u001a\u0004\u0018\u00010\"X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008#\u0010$\"\u0004\u0008%\u0010&R\u001c\u0010\'\u001a\u0004\u0018\u00010(X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008)\u0010*\"\u0004\u0008+\u0010,R\u001c\u0010-\u001a\u0004\u0018\u00010.X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008/\u00100\"\u0004\u00081\u00102R\u001c\u00103\u001a\u0004\u0018\u000104X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u00085\u00106\"\u0004\u00087\u00108R\u000e\u00109\u001a\u00020\u0016X\u0082\u0004\u00a2\u0006\u0002\n\u0000R$\u0010:\u001a\u00020\u00162\u0006\u0010\u0010\u001a\u00020\u0016@FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008:\u0010;\"\u0004\u0008<\u0010=R\u0014\u0010>\u001a\u00020\u00188BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008?\u0010@R\u0014\u0010A\u001a\u00020\u00188BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008B\u0010@R\u0014\u0010C\u001a\u00020\u00188BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008D\u0010@R\u0014\u0010E\u001a\u00020\u00188BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008F\u0010@R\u0014\u0010G\u001a\u0008\u0012\u0004\u0012\u00020H0\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010I\u001a\u0008\u0012\u0004\u0012\u00020J0\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010K\u001a\u0008\u0012\u0004\u0012\u00020L0\u0007X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010M\u001a\u0008\u0012\u0004\u0012\u00020L0\u0007X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010N\u001a\u00020\u001aX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010O\u001a\u00020\u001aX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010P\u001a\u00020\u001aX\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0094\u0001"
+        "\u0000\u00d8\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0013\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0002\n\u0002\u0008\n\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u000e\n\u0002\u0008\u000c\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0008\u0008\u0007\u0018\u0000 \u009d\u00012\u00020\u0001:\u000e\u009d\u0001\u009e\u0001\u009f\u0001\u00a0\u0001\u00a1\u0001\u00a2\u0001\u00a3\u0001B;\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u000c\u0010\u0008\u001a\u0008\u0012\u0004\u0012\u00020\n0\t\u0012\u000c\u0010\u000b\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\t\u00a2\u0006\u0004\u0008\r\u0010\u000eJ\u0008\u0010_\u001a\u00020`H\u0002J%\u0010a\u001a\u00020$2\u0006\u0010L\u001a\u00020&2\u0006\u0010O\u001a\u00020&2\u0008\u0010S\u001a\u0004\u0018\u00010&\u00a2\u0006\u0002\u0010bJ\u000e\u0010c\u001a\u00020`2\u0006\u0010d\u001a\u00020&J\u0008\u0010e\u001a\u00020`H\u0002J\u000e\u0010f\u001a\u00020`2\u0006\u0010g\u001a\u00020(J\u000e\u0010h\u001a\u00020`2\u0006\u0010g\u001a\u00020(J\"\u0010i\u001a\u00020`2\u0008\u0010j\u001a\u0004\u0018\u00010k2\u0006\u0010d\u001a\u00020&2\u0006\u0010l\u001a\u00020$H\u0016J\u0012\u0010m\u001a\u00020`2\u0008\u0010j\u001a\u0004\u0018\u00010kH\u0016J\u0012\u0010n\u001a\u00020`2\u0008\u0010j\u001a\u0004\u0018\u00010kH\u0016J\u001a\u0010o\u001a\u00020`2\u0008\u0010p\u001a\u0004\u0018\u00010q2\u0008\u0010r\u001a\u0004\u0018\u00010qJ\u0006\u0010s\u001a\u00020`J\u0006\u0010t\u001a\u00020`J\u0006\u0010u\u001a\u00020`J\u0010\u0010v\u001a\u00020`2\u0006\u0010w\u001a\u00020$H\u0002J\u000e\u0010x\u001a\u00020`2\u0006\u0010y\u001a\u00020$J\u0008\u0010z\u001a\u00020`H\u0002J\u0008\u0010{\u001a\u00020`H\u0002J\u000e\u0010|\u001a\u00020`2\u0006\u0010}\u001a\u00020~J\u0008\u0010\u007f\u001a\u00020`H\u0002J\u0007\u0010\u0080\u0001\u001a\u00020`J\u0007\u0010\u0081\u0001\u001a\u00020`J\t\u0010\u0082\u0001\u001a\u00020$H\u0002J\u0012\u0010\u0083\u0001\u001a\u00020`2\u0007\u0010\u0084\u0001\u001a\u00020&H\u0002J\u0011\u0010\u0085\u0001\u001a\u00020`2\u0006\u0010d\u001a\u00020&H\u0002J\u0012\u0010\u0086\u0001\u001a\u00020(2\u0007\u0010\u0087\u0001\u001a\u00020&H\u0002J\t\u0010\u0088\u0001\u001a\u00020&H\u0002J\n\u0010\u0089\u0001\u001a\u00030\u008a\u0001H\u0002J\n\u0010\u008b\u0001\u001a\u00030\u008a\u0001H\u0002J\u0011\u0010\u008c\u0001\u001a\u00030\u008a\u00012\u0007\u0010\u008d\u0001\u001a\u00020(J\u0013\u0010\u008e\u0001\u001a\u00020`2\u0008\u0010\u008f\u0001\u001a\u00030\u008a\u0001H\u0002J\t\u0010\u0090\u0001\u001a\u00020`H\u0002J\t\u0010\u0091\u0001\u001a\u00020`H\u0002J\u001d\u0010\u0092\u0001\u001a\u0016\u0012\u0012\u0012\u0010\u0012\u0005\u0012\u00030\u0094\u0001\u0012\u0004\u0012\u00020&0\u0093\u00010\tH\u0002J\u0012\u0010\u0095\u0001\u001a\u00020`2\u0007\u0010\u0096\u0001\u001a\u00020$H\u0002J\u0012\u0010\u0097\u0001\u001a\u00020`2\u0007\u0010\u0096\u0001\u001a\u00020$H\u0002J\u0011\u0010\u0098\u0001\u001a\u00020`2\u0006\u0010H\u001a\u00020$H\u0002J\u0010\u0010\u0099\u0001\u001a\u00020`2\u0007\u0010\u009a\u0001\u001a\u00020(J\u0013\u0010\u009b\u0001\u001a\u00030\u009c\u00012\u0007\u0010\u0087\u0001\u001a\u00020&H\u0002R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0017\u0010\u0008\u001a\u0008\u0012\u0004\u0012\u00020\n0\t\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000f\u0010\u0010R\u0017\u0010\u000b\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\t\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0011\u0010\u0010R\u0014\u0010\u0012\u001a\u00020\u00138BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0014\u0010\u0015R\u0014\u0010\u0016\u001a\u00020\u00178BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0018\u0010\u0019R\u0014\u0010\u001a\u001a\u00020\u001b8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u001c\u0010\u001dR\u001e\u0010 \u001a\u00020\u001f2\u0006\u0010\u001e\u001a\u00020\u001f@BX\u0082\u000e\u00a2\u0006\u0008\n\u0000\"\u0004\u0008!\u0010\"R\u000e\u0010#\u001a\u00020$X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010%\u001a\u00020&X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\'\u001a\u00020(X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001c\u0010)\u001a\u0004\u0018\u00010*X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008+\u0010,\"\u0004\u0008-\u0010.R\u001c\u0010/\u001a\u0004\u0018\u000100X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u00081\u00102\"\u0004\u00083\u00104R\u001c\u00105\u001a\u0004\u0018\u000106X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u00087\u00108\"\u0004\u00089\u0010:R\u001c\u0010;\u001a\u0004\u0018\u00010<X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008=\u0010>\"\u0004\u0008?\u0010@R\u001c\u0010A\u001a\u0004\u0018\u00010BX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008C\u0010D\"\u0004\u0008E\u0010FR\u000e\u0010G\u001a\u00020$X\u0082\u0004\u00a2\u0006\u0002\n\u0000R$\u0010H\u001a\u00020$2\u0006\u0010\u001e\u001a\u00020$@FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008H\u0010I\"\u0004\u0008J\u0010KR\u0014\u0010L\u001a\u00020&8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008M\u0010NR\u0014\u0010O\u001a\u00020&8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008P\u0010NR\u0014\u0010Q\u001a\u00020&8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008R\u0010NR\u0014\u0010S\u001a\u00020&8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008T\u0010NR\u0014\u0010U\u001a\u0008\u0012\u0004\u0012\u00020V0\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010W\u001a\u0008\u0012\u0004\u0012\u00020X0\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010Y\u001a\u0008\u0012\u0004\u0012\u00020Z0\tX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010[\u001a\u0008\u0012\u0004\u0012\u00020Z0\tX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\\\u001a\u00020(X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010]\u001a\u00020(X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010^\u001a\u00020(X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u00a4\u0001"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;",
         "Landroid/widget/SeekBar$OnSeekBarChangeListener;",
+        "lifecycleOwner",
+        "Landroidx/lifecycle/LifecycleOwner;",
         "binding",
         "Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;",
         "type",
@@ -41,10 +43,22 @@
         "labels",
         "Ljp/co/sony/mc/camera/view/uistate/ZoomLabel;",
         "<init>",
-        "(Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;Ljava/util/List;Ljava/util/List;)V",
+        "(Landroidx/lifecycle/LifecycleOwner;Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;Ljava/util/List;Ljava/util/List;)V",
         "getOpticalRanges",
         "()Ljava/util/List;",
         "getLabels",
+        "cameraSettingsModel",
+        "Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;",
+        "getCameraSettingsModel",
+        "()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;",
+        "cameraStatusModel",
+        "Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;",
+        "getCameraStatusModel",
+        "()Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;",
+        "lensUiState",
+        "Ljp/co/sony/mc/camera/view/uistate/LensUiState;",
+        "getLensUiState",
+        "()Ljp/co/sony/mc/camera/view/uistate/LensUiState;",
         "value",
         "Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;",
         "state",
@@ -110,9 +124,11 @@
         "circleWidth",
         "oneZoomStepLineLength",
         "zoomRatio1p5LineLength",
-        "setStepRange",
-        "setProgress",
+        "hideHighlightCircle",
         "",
+        "setStepRange",
+        "(IILjava/lang/Integer;)Z",
+        "setProgress",
         "progress",
         "updateTotalLineLength",
         "setOneZoomStepLineLength",
@@ -300,42 +316,102 @@
 
 
 # direct methods
-.method public static synthetic $r8$lambda$3bcK0IcTER004be30vWJtwvJQ0g(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/LabelView;Landroid/view/View;)V
+.method public static synthetic $r8$lambda$4-dmhAubPTdrsJutCfqAl4FehM0(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljava/lang/Boolean;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->enableJumpButtonClick$lambda$18$lambda$17(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/LabelView;Landroid/view/View;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->_init_$lambda$9(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljava/lang/Boolean;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$4YP3advbuuG7kkEC4XUfw958EIY(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/LabelView;Landroid/view/View;)V
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->enableJumpButtonClick$lambda$24$lambda$23(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/LabelView;Landroid/view/View;)V
 
     return-void
 .end method
 
-.method public static synthetic $r8$lambda$Az0I7a285xzJ48-e13JWhbuPB9U(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Landroid/view/View;)V
+.method public static synthetic $r8$lambda$6jsQbCPQLKkxpkhlbY9CYHedzxM(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Landroid/animation/ValueAnimator;)V
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->sendAccessibilityEventToSeekBar$lambda$10$lambda$9(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Landroid/view/View;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->startAnimation$lambda$14$lambda$13(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Landroid/animation/ValueAnimator;)V
 
     return-void
 .end method
 
-.method public static synthetic $r8$lambda$F4RD7u8ZEeBFyRPtmjoCJ1WA-8g(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;Landroid/view/View;)V
+.method public static synthetic $r8$lambda$DaLQC8WjGftylJuOxS2ACRtwS68(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Lkotlin/Pair;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->enableJumpButtonClick$lambda$16$lambda$15$lambda$13(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;Landroid/view/View;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->_init_$lambda$6(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Lkotlin/Pair;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$HqVzZmQe11H0tYMLHh7nX4Ck5cY(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Lkotlin/Unit;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->_init_$lambda$10(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Lkotlin/Unit;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$Jj9fpAFlZLzUtPZtPjjfyc7XXxI(ZI)Lkotlin/Pair;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->_init_$lambda$5(ZI)Lkotlin/Pair;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$LsqpSP9K2FuV-ZzGTdTyUyvM-jM(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;Landroid/view/View;)V
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->enableJumpButtonClick$lambda$22$lambda$21$lambda$20(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;Landroid/view/View;)V
 
     return-void
 .end method
 
-.method public static synthetic $r8$lambda$kEMwpD5YCYMVVUnitFdKeP45yF0(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Landroid/animation/ValueAnimator;)V
+.method public static synthetic $r8$lambda$PYgNBp5aWe1QGKAa2kKmmqSGncE(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/util/TuplesUtil$Quintuple;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->startAnimation$lambda$8$lambda$7(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Landroid/animation/ValueAnimator;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->_init_$lambda$8(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/util/TuplesUtil$Quintuple;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$TMmuAlimvpPbS1Ce8iU5iWOoGl8(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Landroid/view/View;)V
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->sendAccessibilityEventToSeekBar$lambda$16$lambda$15(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Landroid/view/View;)V
 
     return-void
 .end method
 
-.method public static synthetic $r8$lambda$u6TqzHoq89942uqalRyX0J-7d40(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;Landroid/view/View;)V
+.method public static synthetic $r8$lambda$bLZzV_xG9PI7BygVInLddZraOyI(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljava/lang/Float;ZZ)Ljp/co/sony/mc/camera/util/TuplesUtil$Quintuple;
     .locals 0
 
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->enableJumpButtonClick$lambda$16$lambda$15$lambda$14(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;Landroid/view/View;)V
+    invoke-static {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->_init_$lambda$7(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljava/lang/Float;ZZ)Ljp/co/sony/mc/camera/util/TuplesUtil$Quintuple;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$f5PoEtPzBzJqfgMF3d22hn2DNsA(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;Landroid/view/View;)V
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->enableJumpButtonClick$lambda$22$lambda$21$lambda$19(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;Landroid/view/View;)V
 
     return-void
 .end method
@@ -358,11 +434,12 @@
     return-void
 .end method
 
-.method public constructor <init>(Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;Ljava/util/List;Ljava/util/List;)V
-    .locals 4
+.method public constructor <init>(Landroidx/lifecycle/LifecycleOwner;Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;Ljava/util/List;Ljava/util/List;)V
+    .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
+            "Landroidx/lifecycle/LifecycleOwner;",
             "Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;",
             "Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;",
             "Ljava/util/List<",
@@ -375,121 +452,125 @@
         }
     .end annotation
 
-    const-string v0, "binding"
+    const-string v0, "lifecycleOwner"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string/jumbo v0, "type"
+    const-string v0, "binding"
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string v0, "opticalRanges"
+    const-string/jumbo v0, "type"
 
     invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string v0, "labels"
+    const-string v0, "opticalRanges"
 
     invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 38
+    const-string v0, "labels"
+
+    invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 45
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 39
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+    .line 47
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
-    .line 40
-    iput-object p2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->type:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
+    .line 48
+    iput-object p3, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->type:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
 
-    .line 41
-    iput-object p3, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->opticalRanges:Ljava/util/List;
+    .line 49
+    iput-object p4, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->opticalRanges:Ljava/util/List;
 
-    .line 42
-    iput-object p4, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->labels:Ljava/util/List;
+    .line 50
+    iput-object p5, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->labels:Ljava/util/List;
 
-    .line 51
-    sget-object p2, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;->CLOSED:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
+    .line 63
+    sget-object p3, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;->CLOSED:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
 
-    iput-object p2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->state:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
+    iput-object p3, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->state:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
 
-    .line 110
+    .line 122
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
-
-    move-result-object p2
-
-    iput-object p2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->opticalRangeAreasInRatio:Ljava/util/List;
-
-    .line 111
-    invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
-
-    move-result-object p2
-
-    iput-object p2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->labelAreasInRatio:Ljava/util/List;
-
-    .line 113
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->getRoot()Landroid/view/View;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object p1
-
-    const p2, 0x7f0700b4
-
-    .line 114
-    invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimension(I)F
-
-    move-result p1
-
-    iput p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->circleWidth:F
-
-    .line 121
-    check-cast p3, Ljava/lang/Iterable;
-
-    .line 890
-    new-instance p1, Ljava/util/ArrayList;
-
-    const/16 p2, 0xa
-
-    invoke-static {p3, p2}, Lkotlin/collections/CollectionsKt;->collectionSizeOrDefault(Ljava/lang/Iterable;I)I
-
-    move-result p4
-
-    invoke-direct {p1, p4}, Ljava/util/ArrayList;-><init>(I)V
-
-    check-cast p1, Ljava/util/Collection;
-
-    .line 891
-    invoke-interface {p3}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p3
 
-    :goto_0
-    invoke-interface {p3}, Ljava/util/Iterator;->hasNext()Z
+    iput-object p3, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->opticalRangeAreasInRatio:Ljava/util/List;
 
-    move-result p4
+    .line 123
+    invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
+
+    move-result-object p3
+
+    iput-object p3, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->labelAreasInRatio:Ljava/util/List;
+
+    .line 125
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->getRoot()Landroid/view/View;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p2
+
+    const p3, 0x7f0700f7
+
+    .line 126
+    invoke-virtual {p2, p3}, Landroid/content/res/Resources;->getDimension(I)F
+
+    move-result p2
+
+    iput p2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->circleWidth:F
+
+    .line 133
+    check-cast p4, Ljava/lang/Iterable;
+
+    .line 980
+    new-instance p2, Ljava/util/ArrayList;
+
+    const/16 p3, 0xa
+
+    invoke-static {p4, p3}, Lkotlin/collections/CollectionsKt;->collectionSizeOrDefault(Ljava/lang/Iterable;I)I
+
+    move-result p5
+
+    invoke-direct {p2, p5}, Ljava/util/ArrayList;-><init>(I)V
+
+    check-cast p2, Ljava/util/Collection;
+
+    .line 981
+    invoke-interface {p4}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object p4
+
+    :goto_0
+    invoke-interface {p4}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result p5
 
     const-string v0, "contentContainer"
 
     const-string v1, "getContext(...)"
 
-    if-eqz p4, :cond_2
+    if-eqz p5, :cond_2
 
-    invoke-interface {p3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {p4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object p4
+    move-result-object p5
 
-    .line 892
-    check-cast p4, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel;
+    .line 982
+    check-cast p5, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel;
 
-    .line 122
+    .line 134
     sget-object v2, Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper;->Companion:Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper$Companion;
 
-    .line 123
+    .line 135
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-virtual {v3}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->getRoot()Landroid/view/View;
@@ -502,29 +583,29 @@
 
     invoke-static {v3, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 125
+    .line 137
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->contentContainer:Landroid/widget/FrameLayout;
 
     invoke-static {v1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 122
-    invoke-virtual {v2, v3, p4, v1}, Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper$Companion;->inflateOpticalRangeView(Landroid/content/Context;Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel;Landroid/widget/FrameLayout;)Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;
+    .line 134
+    invoke-virtual {v2, v3, p5, v1}, Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper$Companion;->inflateOpticalRangeView(Landroid/content/Context;Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel;Landroid/widget/FrameLayout;)Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;
 
-    move-result-object p4
+    move-result-object p5
 
-    .line 128
-    instance-of v0, p4, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Range;
+    .line 140
+    instance-of v0, p5, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Range;
 
     if-eqz v0, :cond_0
 
-    .line 130
-    move-object v0, p4
+    .line 143
+    move-object v0, p5
 
     check-cast v0, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Range;
 
-    .line 129
+    .line 141
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Range;->getBinding()Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;
 
     move-result-object v1
@@ -537,33 +618,48 @@
 
     invoke-virtual {v1, v2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 130
+    .line 142
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Range;->getBinding()Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;
+
+    move-result-object v1
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->getLensUiState()Ljp/co/sony/mc/camera/view/uistate/LensUiState;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;->setLensUiState(Ljp/co/sony/mc/camera/view/uistate/LensUiState;)V
+
+    .line 143
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Range;->getBinding()Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;
 
     move-result-object v0
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->getLensUiState()Ljp/co/sony/mc/camera/view/uistate/LensUiState;
+    .line 144
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;->setLensUiState(Ljp/co/sony/mc/camera/view/uistate/LensUiState;)V
+    .line 143
+    invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;->setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
 
     goto :goto_1
 
-    .line 132
+    .line 146
     :cond_0
-    instance-of v0, p4, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Point;
+    instance-of v0, p5, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Point;
 
     if-eqz v0, :cond_1
 
-    .line 134
-    move-object v0, p4
+    .line 149
+    move-object v0, p5
 
     check-cast v0, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Point;
 
-    .line 133
+    .line 147
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Point;->getBinding()Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;
 
     move-result-object v1
@@ -576,26 +672,41 @@
 
     invoke-virtual {v1, v2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 134
+    .line 148
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Point;->getBinding()Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;
+
+    move-result-object v1
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->getLensUiState()Ljp/co/sony/mc/camera/view/uistate/LensUiState;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;->setLensUiState(Ljp/co/sony/mc/camera/view/uistate/LensUiState;)V
+
+    .line 149
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Point;->getBinding()Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;
 
     move-result-object v0
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->getLensUiState()Ljp/co/sony/mc/camera/view/uistate/LensUiState;
+    .line 150
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;->setLensUiState(Ljp/co/sony/mc/camera/view/uistate/LensUiState;)V
+    .line 149
+    invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;->setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
 
-    .line 892
+    .line 982
     :goto_1
-    invoke-interface {p1, p4}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    invoke-interface {p2, p5}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
-    goto :goto_0
+    goto/16 :goto_0
 
-    .line 127
+    .line 139
     :cond_1
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
@@ -603,52 +714,52 @@
 
     throw p0
 
-    .line 893
+    .line 983
     :cond_2
-    check-cast p1, Ljava/util/List;
+    check-cast p2, Ljava/util/List;
 
-    .line 121
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->opticalRangeViews:Ljava/util/List;
+    .line 133
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->opticalRangeViews:Ljava/util/List;
 
-    .line 140
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->labels:Ljava/util/List;
+    .line 156
+    iget-object p2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->labels:Ljava/util/List;
 
-    check-cast p1, Ljava/lang/Iterable;
+    check-cast p2, Ljava/lang/Iterable;
 
-    .line 894
-    new-instance p3, Ljava/util/ArrayList;
+    .line 984
+    new-instance p4, Ljava/util/ArrayList;
 
-    invoke-static {p1, p2}, Lkotlin/collections/CollectionsKt;->collectionSizeOrDefault(Ljava/lang/Iterable;I)I
+    invoke-static {p2, p3}, Lkotlin/collections/CollectionsKt;->collectionSizeOrDefault(Ljava/lang/Iterable;I)I
 
-    move-result p2
+    move-result p3
 
-    invoke-direct {p3, p2}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-direct {p4, p3}, Ljava/util/ArrayList;-><init>(I)V
 
-    check-cast p3, Ljava/util/Collection;
+    check-cast p4, Ljava/util/Collection;
 
-    .line 895
-    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object p1
-
-    :goto_2
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result p2
-
-    if-eqz p2, :cond_3
-
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    .line 985
+    invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p2
 
-    .line 896
-    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/ZoomLabel;
+    :goto_2
+    invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
 
-    .line 141
-    sget-object p4, Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper;->Companion:Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper$Companion;
+    move-result p3
 
-    .line 142
+    if-eqz p3, :cond_3
+
+    invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object p3
+
+    .line 986
+    check-cast p3, Ljp/co/sony/mc/camera/view/uistate/ZoomLabel;
+
+    .line 157
+    sget-object p5, Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper;->Companion:Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper$Companion;
+
+    .line 158
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->getRoot()Landroid/view/View;
@@ -661,22 +772,22 @@
 
     invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 144
+    .line 160
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object v3, v3, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->contentContainer:Landroid/widget/FrameLayout;
 
     invoke-static {v3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 141
-    invoke-virtual {p4, v2, p2, v3}, Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper$Companion;->inflateLabelView(Landroid/content/Context;Ljp/co/sony/mc/camera/view/uistate/ZoomLabel;Landroid/widget/FrameLayout;)Ljp/co/sony/mc/camera/view/widget/LabelView;
+    .line 157
+    invoke-virtual {p5, v2, p3, v3}, Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper$Companion;->inflateLabelView(Landroid/content/Context;Ljp/co/sony/mc/camera/view/uistate/ZoomLabel;Landroid/widget/FrameLayout;)Ljp/co/sony/mc/camera/view/widget/LabelView;
 
-    move-result-object p2
+    move-result-object p3
 
-    .line 146
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/widget/LabelView;->getBinding()Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;
+    .line 162
+    invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/widget/LabelView;->getBinding()Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;
 
-    move-result-object p4
+    move-result-object p5
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
@@ -684,12 +795,12 @@
 
     move-result-object v2
 
-    invoke-virtual {p4, v2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
+    invoke-virtual {p5, v2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 147
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/widget/LabelView;->getBinding()Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;
+    .line 163
+    invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/widget/LabelView;->getBinding()Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;
 
-    move-result-object p4
+    move-result-object p5
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
@@ -697,87 +808,662 @@
 
     move-result-object v2
 
-    invoke-virtual {p4, v2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;->setLensUiState(Ljp/co/sony/mc/camera/view/uistate/LensUiState;)V
+    invoke-virtual {p5, v2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;->setLensUiState(Ljp/co/sony/mc/camera/view/uistate/LensUiState;)V
 
-    .line 896
-    invoke-interface {p3, p2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    .line 164
+    invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/widget/LabelView;->getBinding()Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;
+
+    move-result-object p5
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+    move-result-object v2
+
+    invoke-virtual {p5, v2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;->setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
+
+    .line 986
+    invoke-interface {p4, p3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_2
 
-    .line 897
+    .line 987
     :cond_3
-    check-cast p3, Ljava/util/List;
+    check-cast p4, Ljava/util/List;
 
-    .line 140
-    iput-object p3, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->labelViews:Ljava/util/List;
+    .line 156
+    iput-object p4, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->labelViews:Ljava/util/List;
 
-    .line 151
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->opticalRanges:Ljava/util/List;
+    .line 168
+    iget-object p2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->opticalRanges:Ljava/util/List;
 
-    check-cast p1, Ljava/lang/Iterable;
+    check-cast p2, Ljava/lang/Iterable;
 
-    .line 898
-    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    .line 988
+    invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    move-result-object p1
+    move-result-object p2
 
-    const/4 p2, 0x0
+    const/4 p3, 0x0
 
     :cond_4
     :goto_3
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result p3
+    move-result p4
 
-    if-eqz p3, :cond_5
+    if-eqz p4, :cond_5
 
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object p3
+    move-result-object p4
 
-    check-cast p3, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel;
+    check-cast p4, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel;
 
-    .line 152
-    instance-of p3, p3, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;
+    .line 169
+    instance-of p4, p4, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;
 
-    if-eqz p3, :cond_4
+    if-eqz p4, :cond_4
 
-    const/4 p2, 0x1
+    const/4 p3, 0x1
 
     goto :goto_3
 
-    .line 157
+    .line 174
     :cond_5
-    iput-boolean p2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->hasOpticalRange:Z
+    iput-boolean p3, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->hasOpticalRange:Z
 
-    .line 158
-    iget-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->isSelected:Z
+    .line 175
+    iget-boolean p2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->isSelected:Z
 
-    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->setMainButtonVisibility(Z)V
+    invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->setMainButtonVisibility(Z)V
 
-    .line 159
+    .line 176
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->enableJumpButtonClick()V
 
-    .line 160
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+    .line 177
+    iget-object p2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->seekBar:Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;
+    iget-object p2, p2, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->seekBar:Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;
 
-    new-instance p2, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$4;
+    new-instance p3, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$4;
 
-    invoke-direct {p2, p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$4;-><init>(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;)V
+    invoke-direct {p3, p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$4;-><init>(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;)V
 
-    check-cast p2, Landroid/view/View$AccessibilityDelegate;
+    check-cast p3, Landroid/view/View$AccessibilityDelegate;
 
-    invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;->setAccessibilityDelegate(Landroid/view/View$AccessibilityDelegate;)V
+    invoke-virtual {p2, p3}, Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;->setAccessibilityDelegate(Landroid/view/View$AccessibilityDelegate;)V
+
+    .line 193
+    sget-object p2, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
+
+    .line 194
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+    move-result-object p3
+
+    invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->isAiSuggestionParameterApplied()Landroidx/lifecycle/LiveData;
+
+    move-result-object p3
+
+    .line 195
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+    move-result-object p4
+
+    invoke-virtual {p4}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getAiSuggestionParameterIndex()Landroidx/lifecycle/LiveData;
+
+    move-result-object p4
+
+    new-instance p5, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda5;
+
+    invoke-direct {p5}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda5;-><init>()V
+
+    .line 193
+    invoke-virtual {p2, p3, p4, p5}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
+
+    move-result-object p2
+
+    .line 198
+    new-instance p3, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda6;
+
+    invoke-direct {p3, p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda6;-><init>(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;)V
+
+    new-instance p4, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$sam$androidx_lifecycle_Observer$0;
+
+    invoke-direct {p4, p3}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$sam$androidx_lifecycle_Observer$0;-><init>(Lkotlin/jvm/functions/Function1;)V
+
+    check-cast p4, Landroidx/lifecycle/Observer;
+
+    invoke-virtual {p2, p1, p4}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
+
+    .line 229
+    sget-object v0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
+
+    .line 230
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
+
+    move-result-object p2
+
+    invoke-static {p2}, Landroidx/lifecycle/Transformations;->distinctUntilChanged(Landroidx/lifecycle/LiveData;)Landroidx/lifecycle/LiveData;
+
+    move-result-object v1
+
+    .line 231
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCameraId()Landroidx/lifecycle/LiveData;
+
+    move-result-object p2
+
+    invoke-static {p2}, Landroidx/lifecycle/Transformations;->distinctUntilChanged(Landroidx/lifecycle/LiveData;)Landroidx/lifecycle/LiveData;
+
+    move-result-object v2
+
+    .line 232
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getZoomRatio()Landroidx/lifecycle/LiveData;
+
+    move-result-object p2
+
+    invoke-static {p2}, Landroidx/lifecycle/Transformations;->distinctUntilChanged(Landroidx/lifecycle/LiveData;)Landroidx/lifecycle/LiveData;
+
+    move-result-object v3
+
+    .line 233
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getCameraStatusModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getCapturing()Landroidx/lifecycle/LiveData;
+
+    move-result-object p2
+
+    invoke-static {p2}, Landroidx/lifecycle/Transformations;->distinctUntilChanged(Landroidx/lifecycle/LiveData;)Landroidx/lifecycle/LiveData;
+
+    move-result-object v4
+
+    .line 234
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getCameraStatusModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getSelftimering()Landroidx/lifecycle/LiveData;
+
+    move-result-object p2
+
+    invoke-static {p2}, Landroidx/lifecycle/Transformations;->distinctUntilChanged(Landroidx/lifecycle/LiveData;)Landroidx/lifecycle/LiveData;
+
+    move-result-object v5
+
+    new-instance v6, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda7;
+
+    invoke-direct {v6}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda7;-><init>()V
+
+    .line 229
+    invoke-virtual/range {v0 .. v6}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function5;)Landroidx/lifecycle/LiveData;
+
+    move-result-object p2
+
+    .line 237
+    new-instance p3, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda8;
+
+    invoke-direct {p3, p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda8;-><init>(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;)V
+
+    new-instance p4, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$sam$androidx_lifecycle_Observer$0;
+
+    invoke-direct {p4, p3}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$sam$androidx_lifecycle_Observer$0;-><init>(Lkotlin/jvm/functions/Function1;)V
+
+    check-cast p4, Landroidx/lifecycle/Observer;
+
+    invoke-virtual {p2, p1, p4}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
+
+    .line 241
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getLensUiState()Ljp/co/sony/mc/camera/view/uistate/LensUiState;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/uistate/LensUiState;->getZoomSliderOpened()Landroidx/lifecycle/MutableLiveData;
+
+    move-result-object p2
+
+    check-cast p2, Landroidx/lifecycle/LiveData;
+
+    invoke-static {p2}, Landroidx/lifecycle/Transformations;->distinctUntilChanged(Landroidx/lifecycle/LiveData;)Landroidx/lifecycle/LiveData;
+
+    move-result-object p2
+
+    .line 242
+    new-instance p3, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda9;
+
+    invoke-direct {p3, p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda9;-><init>(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;)V
+
+    new-instance p4, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$sam$androidx_lifecycle_Observer$0;
+
+    invoke-direct {p4, p3}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$sam$androidx_lifecycle_Observer$0;-><init>(Lkotlin/jvm/functions/Function1;)V
+
+    check-cast p4, Landroidx/lifecycle/Observer;
+
+    invoke-virtual {p2, p1, p4}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
+
+    .line 248
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getLensUiState()Ljp/co/sony/mc/camera/view/uistate/LensUiState;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/uistate/LensUiState;->getZoomSliderManualClosed()Landroidx/lifecycle/LiveData;
+
+    move-result-object p2
+
+    new-instance p3, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda10;
+
+    invoke-direct {p3, p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda10;-><init>(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;)V
+
+    new-instance p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$sam$androidx_lifecycle_Observer$0;
+
+    invoke-direct {p0, p3}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$sam$androidx_lifecycle_Observer$0;-><init>(Lkotlin/jvm/functions/Function1;)V
+
+    check-cast p0, Landroidx/lifecycle/Observer;
+
+    invoke-virtual {p2, p1, p0}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
     return-void
+.end method
+
+.method private static final _init_$lambda$10(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Lkotlin/Unit;)Lkotlin/Unit;
+    .locals 0
+
+    const-string/jumbo p1, "this$0"
+
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 249
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->hideHighlightCircle()V
+
+    .line 250
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final _init_$lambda$5(ZI)Lkotlin/Pair;
+    .locals 0
+
+    .line 197
+    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p0
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    invoke-static {p0, p1}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method private static final _init_$lambda$6(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Lkotlin/Pair;)Lkotlin/Unit;
+    .locals 6
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 198
+    invoke-virtual {p1}, Lkotlin/Pair;->component1()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Boolean;
+
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    .line 199
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getZoomRatio()Landroidx/lifecycle/LiveData;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    check-cast v0, Ljava/lang/Number;
+
+    invoke-virtual {v0}, Ljava/lang/Number;->floatValue()F
+
+    move-result v0
+
+    .line 200
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getAiSuggestionParameterForMainPreview()Landroidx/lifecycle/LiveData;
+
+    move-result-object v1
+
+    .line 201
+    invoke-virtual {v1}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestionParameter;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestionParameter;->getRecommendedZoomRatios()Ljava/util/List;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    const/4 v3, 0x0
+
+    if-eqz p1, :cond_2
+
+    .line 204
+    move-object p1, v1
+
+    check-cast p1, Ljava/util/Collection;
+
+    invoke-interface {p1}, Ljava/util/Collection;->isEmpty()Z
+
+    move-result p1
+
+    xor-int/2addr p1, v2
+
+    if-eqz p1, :cond_2
+
+    .line 205
+    invoke-interface {v1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Number;
+
+    invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F
+
+    move-result p1
+
+    const/4 v4, 0x0
+
+    cmpg-float p1, p1, v4
+
+    if-nez p1, :cond_0
+
+    goto :goto_0
+
+    .line 206
+    :cond_0
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getMinStep()I
+
+    move-result p1
+
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getMaxStep()I
+
+    move-result v4
+
+    invoke-interface {v1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Ljava/lang/Number;
+
+    invoke-virtual {v5}, Ljava/lang/Number;->floatValue()F
+
+    move-result v5
+
+    invoke-static {v5}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getZoomStep(F)I
+
+    move-result v5
+
+    if-gt p1, v5, :cond_2
+
+    if-ge v5, v4, :cond_2
+
+    .line 207
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getMinStep()I
+
+    move-result p1
+
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getMaxStep()I
+
+    move-result v4
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getZoomStep(F)I
+
+    move-result v0
+
+    if-gt p1, v0, :cond_1
+
+    if-ge v0, v4, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    move p1, v2
+
+    goto :goto_1
+
+    :cond_2
+    :goto_0
+    move p1, v3
+
+    .line 209
+    :goto_1
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->highlightCircle:Landroid/widget/ImageView;
+
+    const-string v4, "highlightCircle"
+
+    invoke-static {v0, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 210
+    invoke-virtual {v0}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v4
+
+    const-string v5, "null cannot be cast to non-null type android.graphics.drawable.AnimationDrawable"
+
+    invoke-static {v4, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v4, Landroid/graphics/drawable/AnimationDrawable;
+
+    if-eqz p1, :cond_3
+
+    .line 212
+    invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setVisibility(I)V
+
+    .line 213
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->mainCircle:Landroid/view/View;
+
+    .line 214
+    invoke-static {}, Ljp/co/sony/mc/camera/CameraApplication;->getContext()Landroid/content/Context;
+
+    move-result-object p1
+
+    .line 217
+    sget-object v0, Lkotlin/jvm/internal/StringCompanionObject;->INSTANCE:Lkotlin/jvm/internal/StringCompanionObject;
+
+    sget-object v0, Ljava/util/Locale;->US:Ljava/util/Locale;
+
+    invoke-interface {v1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    filled-new-array {v1}, [Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-static {v1, v2}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+
+    move-result-object v1
+
+    const-string v2, "%.1f"
+
+    invoke-static {v0, v2, v1}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "format(...)"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    filled-new-array {v0}, [Ljava/lang/Object;
+
+    move-result-object v0
+
+    const v1, 0x7f11007a
+
+    .line 214
+    invoke-virtual {p1, v1, v0}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/CharSequence;
+
+    .line 213
+    invoke-virtual {p0, p1}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
+
+    .line 219
+    invoke-virtual {v4}, Landroid/graphics/drawable/AnimationDrawable;->start()V
+
+    goto :goto_2
+
+    .line 221
+    :cond_3
+    invoke-virtual {v4}, Landroid/graphics/drawable/AnimationDrawable;->isRunning()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_4
+
+    .line 222
+    invoke-virtual {v4}, Landroid/graphics/drawable/AnimationDrawable;->stop()V
+
+    :cond_4
+    const/16 p1, 0x8
+
+    .line 224
+    invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setVisibility(I)V
+
+    .line 225
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->mainCircle:Landroid/view/View;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->seekBar:Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;->getContentDescription()Ljava/lang/CharSequence;
+
+    move-result-object p0
+
+    invoke-virtual {p1, p0}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
+
+    .line 227
+    :goto_2
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final _init_$lambda$7(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljava/lang/Float;ZZ)Ljp/co/sony/mc/camera/util/TuplesUtil$Quintuple;
+    .locals 7
+
+    .line 236
+    new-instance v6, Ljp/co/sony/mc/camera/util/TuplesUtil$Quintuple;
+
+    invoke-static {p3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v4
+
+    invoke-static {p4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v5
+
+    move-object v0, v6
+
+    move-object v1, p0
+
+    move-object v2, p1
+
+    move-object v3, p2
+
+    invoke-direct/range {v0 .. v5}, Ljp/co/sony/mc/camera/util/TuplesUtil$Quintuple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    return-object v6
+.end method
+
+.method private static final _init_$lambda$8(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/util/TuplesUtil$Quintuple;)Lkotlin/Unit;
+    .locals 0
+
+    const-string/jumbo p1, "this$0"
+
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 238
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->hideHighlightCircle()V
+
+    .line 239
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final _init_$lambda$9(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 243
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 244
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->hideHighlightCircle()V
+
+    .line 246
+    :cond_0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
 .end method
 
 .method public static final synthetic access$applyLayout(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;)V
     .locals 0
 
-    .line 37
+    .line 44
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->applyLayout(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;)V
 
     return-void
@@ -786,7 +1472,7 @@
 .method public static final synthetic access$getBinding$p(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;)Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
     .locals 0
 
-    .line 37
+    .line 44
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     return-object p0
@@ -795,7 +1481,7 @@
 .method public static final synthetic access$getCloseLayout(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;)Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;
     .locals 0
 
-    .line 37
+    .line 44
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getCloseLayout()Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;
 
     move-result-object p0
@@ -806,7 +1492,7 @@
 .method public static final synthetic access$getOpenLayout(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;)Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;
     .locals 0
 
-    .line 37
+    .line 44
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getOpenLayout()Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;
 
     move-result-object p0
@@ -817,7 +1503,7 @@
 .method public static final synthetic access$getState$p(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;)Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
     .locals 0
 
-    .line 37
+    .line 44
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->state:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
 
     return-object p0
@@ -826,7 +1512,7 @@
 .method public static final synthetic access$setState(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;)V
     .locals 0
 
-    .line 37
+    .line 44
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->setState(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;)V
 
     return-void
@@ -835,7 +1521,7 @@
 .method private final applyLayout(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;)V
     .locals 10
 
-    .line 631
+    .line 721
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->state:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;->CLOSED:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
@@ -846,26 +1532,26 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 632
+    .line 722
     invoke-direct {p0, v3}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->setOpticalButtonsFocusable(Z)V
 
-    .line 633
+    .line 723
     invoke-direct {p0, v3}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->setMainCircleFocusable(Z)V
 
     goto :goto_0
 
-    .line 635
+    .line 725
     :cond_0
     invoke-direct {p0, v2}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->setOpticalButtonsFocusable(Z)V
 
-    .line 636
+    .line 726
     invoke-direct {p0, v2}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->setMainCircleFocusable(Z)V
 
-    .line 638
+    .line 728
     :goto_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
-    .line 639
+    .line 729
     iget-object v1, v0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->mainCircle:Landroid/view/View;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->getMainCircleTranslationX()F
@@ -874,7 +1560,7 @@
 
     invoke-virtual {v1, v4}, Landroid/view/View;->setTranslationX(F)V
 
-    .line 640
+    .line 730
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->mainLabel:Landroid/widget/TextView;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->getMainCircleTranslationX()F
@@ -883,12 +1569,12 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTranslationX(F)V
 
-    .line 642
+    .line 732
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->mainCircle:Landroid/view/View;
 
-    .line 643
+    .line 733
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->state:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$WhenMappings;->$EnumSwitchMapping$0:[I
@@ -901,12 +1587,12 @@
 
     if-ne v0, v3, :cond_1
 
-    .line 644
+    .line 734
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->enableMainCircleClick()V
 
     goto :goto_1
 
-    .line 646
+    .line 736
     :cond_1
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->hasLabelOrOpticalRange()Z
 
@@ -914,29 +1600,29 @@
 
     if-nez v0, :cond_2
 
-    .line 647
+    .line 737
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->disableMainCircleClick()V
 
-    .line 652
+    .line 742
     :cond_2
     :goto_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->seekBar:Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;
 
-    .line 653
+    .line 743
     move-object v1, p0
 
     check-cast v1, Landroid/widget/SeekBar$OnSeekBarChangeListener;
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;->setOnSeekBarChangeListener(Landroid/widget/SeekBar$OnSeekBarChangeListener;)V
 
-    .line 654
+    .line 744
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    const v4, 0x7f0700b3
+    const v4, 0x7f0700f6
 
     invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -946,12 +1632,12 @@
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;->setThumbMargin(I)V
 
-    .line 655
+    .line 745
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v1
 
-    .line 656
+    .line 746
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->getSeekBarWidth()F
 
     move-result v4
@@ -962,10 +1648,10 @@
 
     iput v4, v1, Landroid/view/ViewGroup$LayoutParams;->width:I
 
-    .line 655
+    .line 745
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 658
+    .line 748
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->state:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
 
     sget-object v4, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$WhenMappings;->$EnumSwitchMapping$0:[I
@@ -988,7 +1674,7 @@
     :goto_2
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;->setVisibility(I)V
 
-    .line 662
+    .line 752
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->mainCircle:Landroid/view/View;
@@ -1005,23 +1691,23 @@
 
     if-ne v1, v4, :cond_4
 
-    .line 663
+    .line 753
     check-cast v0, Landroid/widget/SeekBar;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->onStopTrackingTouch(Landroid/widget/SeekBar;)V
 
-    .line 666
+    .line 756
     :cond_4
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->contentContainer:Landroid/widget/FrameLayout;
 
-    .line 667
+    .line 757
     invoke-virtual {v0}, Landroid/widget/FrameLayout;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v1
 
-    .line 668
+    .line 758
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->getContentContainerWidth()F
 
     move-result v4
@@ -1032,10 +1718,10 @@
 
     iput v4, v1, Landroid/view/ViewGroup$LayoutParams;->width:I
 
-    .line 667
+    .line 757
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 671
+    .line 761
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->opticalRangeViews:Ljava/util/List;
 
     check-cast v0, Ljava/util/Collection;
@@ -1051,7 +1737,7 @@
 
     if-ge v1, v0, :cond_9
 
-    .line 672
+    .line 762
     iget-object v5, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->opticalRangeViews:Ljava/util/List;
 
     invoke-interface {v5, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -1060,7 +1746,7 @@
 
     check-cast v5, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;
 
-    .line 673
+    .line 763
     instance-of v6, v5, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Point;
 
     if-eqz v6, :cond_5
@@ -1077,7 +1763,7 @@
 
     goto :goto_4
 
-    .line 674
+    .line 764
     :cond_5
     instance-of v6, v5, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Range;
 
@@ -1096,7 +1782,7 @@
     :goto_4
     invoke-static {v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 677
+    .line 767
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->getOpticalRangeTranslationXList()Ljava/util/List;
 
     move-result-object v6
@@ -1116,7 +1802,7 @@
     :cond_6
     invoke-virtual {v5, v4}, Landroid/view/View;->setTranslationX(F)V
 
-    .line 678
+    .line 768
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->getOpticalRangeWidthList()Ljava/util/List;
 
     move-result-object v4
@@ -1129,7 +1815,7 @@
 
     if-eqz v4, :cond_7
 
-    .line 681
+    .line 771
     invoke-virtual {v5}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v6
@@ -1151,7 +1837,7 @@
 
     goto :goto_3
 
-    .line 672
+    .line 762
     :cond_8
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
@@ -1159,7 +1845,7 @@
 
     throw p0
 
-    .line 685
+    .line 775
     :cond_9
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->labelViews:Ljava/util/List;
 
@@ -1178,7 +1864,7 @@
 
     if-ge v1, v0, :cond_c
 
-    .line 686
+    .line 776
     iget-object v7, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->labelViews:Ljava/util/List;
 
     invoke-interface {v7, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -1195,7 +1881,7 @@
 
     move-result-object v7
 
-    .line 687
+    .line 777
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->getLabelTranslationXList()Ljava/util/List;
 
     move-result-object v8
@@ -1220,7 +1906,7 @@
     :goto_6
     invoke-virtual {v7, v8}, Landroid/view/View;->setTranslationX(F)V
 
-    .line 688
+    .line 778
     iget-object v8, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->state:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
 
     sget-object v9, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$WhenMappings;->$EnumSwitchMapping$0:[I
@@ -1244,13 +1930,13 @@
 
     goto :goto_5
 
-    .line 694
+    .line 784
     :cond_c
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->listviewForTalkback:Landroid/widget/ListView;
 
-    .line 695
+    .line 785
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->state:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
 
     sget-object v4, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$WhenMappings;->$EnumSwitchMapping$0:[I
@@ -1273,17 +1959,17 @@
     :goto_7
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setVisibility(I)V
 
-    .line 700
+    .line 790
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->line:Ljp/co/sony/mc/camera/view/widget/TransparentAreaImageView;
 
-    .line 701
+    .line 791
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/widget/TransparentAreaImageView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v1
 
-    .line 702
+    .line 792
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->getLineWidth()F
 
     move-result p1
@@ -1294,7 +1980,7 @@
 
     iput p1, v1, Landroid/view/ViewGroup$LayoutParams;->width:I
 
-    .line 705
+    .line 795
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/widget/TransparentAreaImageView;->getContext()Landroid/content/Context;
 
     move-result-object p1
@@ -1303,40 +1989,40 @@
 
     move-result-object p1
 
-    const v1, 0x7f0700b6
+    const v1, 0x7f0700f9
 
     invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getDimension(I)F
 
     move-result p1
 
-    .line 704
+    .line 794
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/view/widget/TransparentAreaImageView;->setTransparentAreaMargin(F)V
 
-    .line 707
+    .line 797
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
     check-cast p1, Ljava/util/List;
 
-    .line 708
+    .line 798
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->opticalRangeAreasInRatio:Ljava/util/List;
 
     check-cast v1, Ljava/util/Collection;
 
     invoke-interface {p1, v1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
-    .line 709
+    .line 799
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->labelAreasInRatio:Ljava/util/List;
 
     check-cast v1, Ljava/util/Collection;
 
     invoke-interface {p1, v1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
-    .line 707
+    .line 797
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/view/widget/TransparentAreaImageView;->setTransparentAreaInRatio(Ljava/util/List;)V
 
-    .line 711
+    .line 801
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->state:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
 
     sget-object p1, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$WhenMappings;->$EnumSwitchMapping$0:[I
@@ -1365,7 +2051,7 @@
 .method private final applyListViewItemsForTalkBack(I)V
     .locals 3
 
-    .line 480
+    .line 570
     div-int/lit8 p1, p1, 0x6
 
     new-array v0, p1, [Ljava/lang/String;
@@ -1375,7 +2061,7 @@
     :goto_0
     if-ge v1, p1, :cond_0
 
-    .line 483
+    .line 573
     invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object v2
@@ -1386,13 +2072,13 @@
 
     goto :goto_0
 
-    .line 485
+    .line 575
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->listviewForTalkback:Landroid/widget/ListView;
 
-    .line 486
+    .line 576
     new-instance p1, Landroid/widget/ArrayAdapter;
 
     invoke-virtual {p0}, Landroid/widget/ListView;->getContext()Landroid/content/Context;
@@ -1413,7 +2099,7 @@
 .method private final calcStepRatio(I)F
     .locals 1
 
-    .line 499
+    .line 589
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getTotalStep()I
 
     move-result v0
@@ -1448,12 +2134,12 @@
 .method private final disableMainCircleClick()V
     .locals 1
 
-    .line 407
+    .line 497
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->mainCircle:Landroid/view/View;
 
-    .line 408
+    .line 498
     invoke-virtual {p0}, Landroid/view/View;->isClickable()Z
 
     move-result v0
@@ -1462,15 +2148,15 @@
 
     const/4 v0, 0x0
 
-    .line 409
+    .line 499
     invoke-virtual {p0, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     const/4 v0, 0x0
 
-    .line 410
+    .line 500
     invoke-virtual {p0, v0}, Landroid/view/View;->setClickable(Z)V
 
-    .line 411
+    .line 501
     invoke-virtual {p0, v0}, Landroid/view/View;->setPressed(Z)V
 
     :cond_0
@@ -1480,12 +2166,12 @@
 .method private final enableJumpButtonClick()V
     .locals 5
 
-    .line 421
+    .line 511
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->opticalRangeViews:Ljava/util/List;
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 908
+    .line 998
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -1504,12 +2190,12 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;
 
-    .line 423
+    .line 513
     instance-of v2, v1, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Range;
 
     if-eqz v2, :cond_0
 
-    .line 424
+    .line 514
     move-object v2, v1
 
     check-cast v2, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Range;
@@ -1518,7 +2204,7 @@
 
     move-result-object v2
 
-    .line 425
+    .line 515
     iget-object v3, v2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;->circleStart:Landroid/view/View;
 
     new-instance v4, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda0;
@@ -1527,24 +2213,24 @@
 
     invoke-virtual {v3, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 432
+    .line 522
     iget-object v2, v2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;->circleEnd:Landroid/view/View;
 
-    new-instance v3, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda1;
+    new-instance v3, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda2;
 
-    invoke-direct {v3, p0, v1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda1;-><init>(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;)V
+    invoke-direct {v3, p0, v1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda2;-><init>(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;)V
 
     invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     goto :goto_0
 
-    .line 444
+    .line 534
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->labelViews:Ljava/util/List;
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 910
+    .line 1000
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -1562,16 +2248,16 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/view/widget/LabelView;
 
-    .line 445
+    .line 535
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/widget/LabelView;->getBinding()Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;
 
     move-result-object v2
 
     iget-object v2, v2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;->circle:Landroid/view/View;
 
-    new-instance v3, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda2;
+    new-instance v3, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda3;
 
-    invoke-direct {v3, p0, v1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda2;-><init>(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/LabelView;)V
+    invoke-direct {v3, p0, v1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda3;-><init>(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/LabelView;)V
 
     invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -1581,7 +2267,7 @@
     return-void
 .end method
 
-.method private static final enableJumpButtonClick$lambda$16$lambda$15$lambda$13(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;Landroid/view/View;)V
+.method private static final enableJumpButtonClick$lambda$22$lambda$21$lambda$19(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;Landroid/view/View;)V
     .locals 1
 
     const-string/jumbo p2, "this$0"
@@ -1592,7 +2278,7 @@
 
     invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 426
+    .line 516
     iget-boolean p2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->isSelected:Z
 
     if-eqz p2, :cond_0
@@ -1615,12 +2301,12 @@
 
     if-ne p2, v0, :cond_0
 
-    .line 427
+    .line 517
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->close()V
 
     goto :goto_0
 
-    .line 429
+    .line 519
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->onZoomButtonClickListener:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$OnZoomButtonClickListener;
 
@@ -1643,7 +2329,7 @@
     return-void
 .end method
 
-.method private static final enableJumpButtonClick$lambda$16$lambda$15$lambda$14(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;Landroid/view/View;)V
+.method private static final enableJumpButtonClick$lambda$22$lambda$21$lambda$20(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;Landroid/view/View;)V
     .locals 1
 
     const-string/jumbo p2, "this$0"
@@ -1654,7 +2340,7 @@
 
     invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 433
+    .line 523
     iget-boolean p2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->isSelected:Z
 
     if-eqz p2, :cond_0
@@ -1677,12 +2363,12 @@
 
     if-ne p2, v0, :cond_0
 
-    .line 434
+    .line 524
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->close()V
 
     goto :goto_0
 
-    .line 436
+    .line 526
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->onZoomButtonClickListener:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$OnZoomButtonClickListener;
 
@@ -1705,7 +2391,7 @@
     return-void
 .end method
 
-.method private static final enableJumpButtonClick$lambda$18$lambda$17(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/LabelView;Landroid/view/View;)V
+.method private static final enableJumpButtonClick$lambda$24$lambda$23(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Ljp/co/sony/mc/camera/view/widget/LabelView;Landroid/view/View;)V
     .locals 1
 
     const-string/jumbo p2, "this$0"
@@ -1716,7 +2402,7 @@
 
     invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 446
+    .line 536
     iget-boolean p2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->isSelected:Z
 
     if-eqz p2, :cond_0
@@ -1735,12 +2421,12 @@
 
     if-ne p2, v0, :cond_0
 
-    .line 447
+    .line 537
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->close()V
 
     goto :goto_0
 
-    .line 449
+    .line 539
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->onZoomButtonClickListener:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$OnZoomButtonClickListener;
 
@@ -1764,12 +2450,12 @@
 .method private final enableMainCircleClick()V
     .locals 1
 
-    .line 401
+    .line 491
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->mainCircle:Landroid/view/View;
 
-    .line 402
+    .line 492
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->onMainButtonClickListener:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
@@ -1780,7 +2466,7 @@
 .method private final focusAccessibilityOnMainCircle()V
     .locals 2
 
-    .line 719
+    .line 809
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->isSelected:Z
 
     if-eqz v0, :cond_0
@@ -1791,7 +2477,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 720
+    .line 810
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->mainCircle:Landroid/view/View;
@@ -1804,15 +2490,45 @@
     return-void
 .end method
 
+.method private final getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+    .locals 0
+
+    .line 59
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    return-object p0
+.end method
+
+.method private final getCameraStatusModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
+    .locals 0
+
+    .line 60
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->getCameraStatusModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    return-object p0
+.end method
+
 .method private final getCircleInfo(I)Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$CircleInfo;
     .locals 4
 
-    .line 840
+    .line 930
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->opticalRanges:Ljava/util/List;
 
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 946
+    .line 1036
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -1835,12 +2551,12 @@
 
     check-cast v2, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel;
 
-    .line 842
+    .line 932
     instance-of v3, v2, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;
 
     if-eqz v3, :cond_0
 
-    .line 843
+    .line 933
     check-cast v2, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;
 
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;->getMinStep()I
@@ -1857,7 +2573,7 @@
 
     move v1, v0
 
-    .line 844
+    .line 934
     :cond_1
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;->getMaxStep()I
 
@@ -1872,7 +2588,7 @@
 
     goto :goto_0
 
-    .line 852
+    .line 942
     :cond_3
     new-instance p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$CircleInfo;
 
@@ -1884,7 +2600,7 @@
 .method private final getCloseLayout()Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;
     .locals 11
 
-    .line 506
+    .line 596
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getCurrentStep()I
 
     move-result v0
@@ -1893,7 +2609,7 @@
 
     move-result-object v0
 
-    .line 507
+    .line 597
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$CircleInfo;->getActiveIndex()I
 
     move-result v1
@@ -1904,14 +2620,14 @@
 
     mul-float v4, v1, v2
 
-    .line 508
+    .line 598
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$CircleInfo;->getTotal()I
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 509
+    .line 599
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$CircleInfo;->getTotal()I
 
     move-result v0
@@ -1924,7 +2640,7 @@
 
     goto :goto_0
 
-    .line 511
+    .line 601
     :cond_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getSeekBarPadding()I
 
@@ -1935,12 +2651,12 @@
     :goto_0
     move v7, v0
 
-    .line 515
+    .line 605
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->opticalRanges:Ljava/util/List;
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 912
+    .line 1002
     new-instance v1, Ljava/util/ArrayList;
 
     const/16 v2, 0xa
@@ -1953,7 +2669,7 @@
 
     check-cast v1, Ljava/util/Collection;
 
-    .line 914
+    .line 1004
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -1979,20 +2695,20 @@
 
     if-gez v3, :cond_1
 
-    .line 915
+    .line 1005
     invoke-static {}, Lkotlin/collections/CollectionsKt;->throwIndexOverflow()V
 
     :cond_1
     check-cast v5, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel;
 
-    .line 517
+    .line 607
     instance-of v10, v5, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;
 
     if-eqz v10, :cond_2
 
     goto :goto_2
 
-    .line 518
+    .line 608
     :cond_2
     instance-of v5, v5, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;
 
@@ -2008,20 +2724,20 @@
 
     mul-float v8, v3, v5
 
-    .line 519
+    .line 609
     :goto_2
     invoke-static {v8}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v3
 
-    .line 915
+    .line 1005
     invoke-interface {v1, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     move v3, v9
 
     goto :goto_1
 
-    .line 516
+    .line 606
     :cond_3
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
@@ -2029,18 +2745,18 @@
 
     throw p0
 
-    .line 916
+    .line 1006
     :cond_4
     move-object v0, v1
 
     check-cast v0, Ljava/util/List;
 
-    .line 521
+    .line 611
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->opticalRanges:Ljava/util/List;
 
     check-cast v1, Ljava/lang/Iterable;
 
-    .line 917
+    .line 1007
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-static {v1, v2}, Lkotlin/collections/CollectionsKt;->collectionSizeOrDefault(Ljava/lang/Iterable;I)I
@@ -2051,7 +2767,7 @@
 
     check-cast v3, Ljava/util/Collection;
 
-    .line 918
+    .line 1008
     invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -2067,10 +2783,10 @@
 
     move-result-object v5
 
-    .line 919
+    .line 1009
     check-cast v5, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel;
 
-    .line 523
+    .line 613
     instance-of v9, v5, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;
 
     if-eqz v9, :cond_5
@@ -2079,31 +2795,31 @@
 
     goto :goto_4
 
-    .line 524
+    .line 614
     :cond_5
     instance-of v5, v5, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;
 
     if-eqz v5, :cond_6
 
-    .line 525
+    .line 615
     iget v5, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->circleWidth:F
 
     int-to-float v9, v6
 
     mul-float/2addr v5, v9
 
-    .line 526
+    .line 616
     :goto_4
     invoke-static {v5}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v5
 
-    .line 919
+    .line 1009
     invoke-interface {v3, v5}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_3
 
-    .line 522
+    .line 612
     :cond_6
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
@@ -2111,18 +2827,18 @@
 
     throw p0
 
-    .line 920
+    .line 1010
     :cond_7
     move-object v9, v3
 
     check-cast v9, Ljava/util/List;
 
-    .line 528
+    .line 618
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->labels:Ljava/util/List;
 
     check-cast v1, Ljava/lang/Iterable;
 
-    .line 921
+    .line 1011
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-static {v1, v2}, Lkotlin/collections/CollectionsKt;->collectionSizeOrDefault(Ljava/lang/Iterable;I)I
@@ -2133,7 +2849,7 @@
 
     check-cast v3, Ljava/util/Collection;
 
-    .line 922
+    .line 1012
     invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -2149,10 +2865,10 @@
 
     move-result-object v2
 
-    .line 923
+    .line 1013
     check-cast v2, Ljp/co/sony/mc/camera/view/uistate/ZoomLabel;
 
-    .line 529
+    .line 619
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/view/uistate/ZoomLabel;->getStep()I
 
     move-result v2
@@ -2175,18 +2891,18 @@
 
     move-result-object v2
 
-    .line 923
+    .line 1013
     invoke-interface {v3, v2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_5
 
-    .line 924
+    .line 1014
     :cond_8
     move-object v10, v3
 
     check-cast v10, Ljava/util/List;
 
-    .line 532
+    .line 622
     new-instance p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;
 
     move-object v3, p0
@@ -2205,7 +2921,7 @@
 .method private final getCurrentStep()I
     .locals 0
 
-    .line 105
+    .line 117
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->seekBar:Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;
@@ -2217,10 +2933,25 @@
     return p0
 .end method
 
+.method private final getLensUiState()Ljp/co/sony/mc/camera/view/uistate/LensUiState;
+    .locals 0
+
+    .line 61
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->getLensUiState()Ljp/co/sony/mc/camera/view/uistate/LensUiState;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    return-object p0
+.end method
+
 .method private final getMaxStep()I
     .locals 0
 
-    .line 99
+    .line 111
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->seekBar:Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;
@@ -2235,7 +2966,7 @@
 .method private final getMinStep()I
     .locals 0
 
-    .line 96
+    .line 108
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->seekBar:Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;
@@ -2250,7 +2981,7 @@
 .method private final getOpenLayout()Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;
     .locals 10
 
-    .line 544
+    .line 634
     iget v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->lineLength:F
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getCurrentStep()I
@@ -2263,7 +2994,7 @@
 
     mul-float v3, v0, v1
 
-    .line 545
+    .line 635
     iget v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->lineLength:F
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getSeekBarPadding()I
@@ -2274,12 +3005,12 @@
 
     add-float v6, v0, v1
 
-    .line 549
+    .line 639
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->opticalRanges:Ljava/util/List;
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 925
+    .line 1015
     new-instance v1, Ljava/util/ArrayList;
 
     const/16 v2, 0xa
@@ -2292,7 +3023,7 @@
 
     check-cast v1, Ljava/util/Collection;
 
-    .line 926
+    .line 1016
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -2310,23 +3041,23 @@
 
     move-result-object v4
 
-    .line 927
+    .line 1017
     check-cast v4, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel;
 
-    .line 551
+    .line 641
     instance-of v7, v4, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;
 
     if-eqz v7, :cond_0
 
     goto :goto_1
 
-    .line 552
+    .line 642
     :cond_0
     instance-of v5, v4, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;
 
     if-eqz v5, :cond_1
 
-    .line 553
+    .line 643
     iget v5, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->lineLength:F
 
     check-cast v4, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;
@@ -2341,18 +3072,18 @@
 
     mul-float/2addr v5, v4
 
-    .line 554
+    .line 644
     :goto_1
     invoke-static {v5}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v4
 
-    .line 927
+    .line 1017
     invoke-interface {v1, v4}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 550
+    .line 640
     :cond_1
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
@@ -2360,18 +3091,18 @@
 
     throw p0
 
-    .line 928
+    .line 1018
     :cond_2
     move-object v7, v1
 
     check-cast v7, Ljava/util/List;
 
-    .line 556
+    .line 646
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->opticalRanges:Ljava/util/List;
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 929
+    .line 1019
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-static {v0, v2}, Lkotlin/collections/CollectionsKt;->collectionSizeOrDefault(Ljava/lang/Iterable;I)I
@@ -2382,7 +3113,7 @@
 
     check-cast v1, Ljava/util/Collection;
 
-    .line 930
+    .line 1020
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -2398,10 +3129,10 @@
 
     move-result-object v4
 
-    .line 931
+    .line 1021
     check-cast v4, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel;
 
-    .line 558
+    .line 648
     instance-of v8, v4, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Point;
 
     if-eqz v8, :cond_3
@@ -2410,13 +3141,13 @@
 
     goto :goto_3
 
-    .line 559
+    .line 649
     :cond_3
     instance-of v8, v4, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;
 
     if-eqz v8, :cond_4
 
-    .line 560
+    .line 650
     iget v8, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->lineLength:F
 
     check-cast v4, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel$Range;
@@ -2447,18 +3178,18 @@
 
     add-float/2addr v8, v4
 
-    .line 561
+    .line 651
     :goto_3
     invoke-static {v8}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v4
 
-    .line 931
+    .line 1021
     invoke-interface {v1, v4}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_2
 
-    .line 557
+    .line 647
     :cond_4
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
@@ -2466,18 +3197,18 @@
 
     throw p0
 
-    .line 932
+    .line 1022
     :cond_5
     move-object v8, v1
 
     check-cast v8, Ljava/util/List;
 
-    .line 563
+    .line 653
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->labels:Ljava/util/List;
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 933
+    .line 1023
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-static {v0, v2}, Lkotlin/collections/CollectionsKt;->collectionSizeOrDefault(Ljava/lang/Iterable;I)I
@@ -2488,7 +3219,7 @@
 
     check-cast v1, Ljava/util/Collection;
 
-    .line 934
+    .line 1024
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -2504,10 +3235,10 @@
 
     move-result-object v2
 
-    .line 935
+    .line 1025
     check-cast v2, Ljp/co/sony/mc/camera/view/uistate/ZoomLabel;
 
-    .line 564
+    .line 654
     iget v4, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->lineLength:F
 
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/view/uistate/ZoomLabel;->getStep()I
@@ -2524,18 +3255,18 @@
 
     move-result-object v2
 
-    .line 935
+    .line 1025
     invoke-interface {v1, v2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_4
 
-    .line 936
+    .line 1026
     :cond_6
     move-object v9, v1
 
     check-cast v9, Ljava/util/List;
 
-    .line 567
+    .line 657
     new-instance p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;
 
     move-object v2, p0
@@ -2562,19 +3293,19 @@
         }
     .end annotation
 
-    .line 765
+    .line 855
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v0, Ljava/util/List;
 
-    .line 766
+    .line 856
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->opticalRangeViews:Ljava/util/List;
 
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 938
+    .line 1028
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -2593,12 +3324,12 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;
 
-    .line 768
+    .line 858
     instance-of v2, v1, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Range;
 
     if-eqz v2, :cond_0
 
-    .line 769
+    .line 859
     new-instance v2, Lkotlin/Pair;
 
     check-cast v1, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Range;
@@ -2625,7 +3356,7 @@
 
     invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 770
+    .line 860
     new-instance v2, Lkotlin/Pair;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Range;->getBinding()Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;
@@ -2659,7 +3390,7 @@
 .method private final getSeekBarPadding()I
     .locals 1
 
-    .line 502
+    .line 592
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->seekBar:Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;
@@ -2684,7 +3415,7 @@
 .method private final getTotalStep()I
     .locals 1
 
-    .line 102
+    .line 114
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getMaxStep()I
 
     move-result v0
@@ -2701,7 +3432,7 @@
 .method private final hasLabelOrOpticalRange()Z
     .locals 2
 
-    .line 473
+    .line 563
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->labels:Ljava/util/List;
 
     check-cast v0, Ljava/util/Collection;
@@ -2738,10 +3469,67 @@
     return v1
 .end method
 
+.method private final hideHighlightCircle()V
+    .locals 3
+
+    .line 254
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->highlightCircle:Landroid/widget/ImageView;
+
+    const-string v1, "highlightCircle"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 255
+    invoke-virtual {v0}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v1
+
+    const-string v2, "null cannot be cast to non-null type android.graphics.drawable.AnimationDrawable"
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v1, Landroid/graphics/drawable/AnimationDrawable;
+
+    .line 256
+    invoke-virtual {v1}, Landroid/graphics/drawable/AnimationDrawable;->isRunning()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    .line 257
+    invoke-virtual {v1}, Landroid/graphics/drawable/AnimationDrawable;->stop()V
+
+    :cond_0
+    const/16 v1, 0x8
+
+    .line 259
+    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
+
+    .line 260
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->mainCircle:Landroid/view/View;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->seekBar:Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;->getContentDescription()Ljava/lang/CharSequence;
+
+    move-result-object p0
+
+    invoke-virtual {v0, p0}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
+
+    return-void
+.end method
+
 .method private final playScrollSoundForTalkBack(I)V
     .locals 1
 
-    .line 494
+    .line 584
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getMinStep()I
 
     move-result v0
@@ -2750,7 +3538,7 @@
 
     div-int/lit8 p1, p1, 0x6
 
-    .line 495
+    .line 585
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->listviewForTalkback:Landroid/widget/ListView;
@@ -2760,14 +3548,14 @@
     return-void
 .end method
 
-.method private static final sendAccessibilityEventToSeekBar$lambda$10$lambda$9(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Landroid/view/View;)V
+.method private static final sendAccessibilityEventToSeekBar$lambda$16$lambda$15(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Landroid/view/View;)V
     .locals 1
 
     const-string/jumbo p1, "this$0"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 385
+    .line 475
     sget-object p1, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->INSTANCE:Ljp/co/sony/mc/camera/util/AccessibilityUtil;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->isTalkBackEnabled()Z
@@ -2778,7 +3566,7 @@
 
     return-void
 
-    .line 389
+    .line 479
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->state:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
 
@@ -2792,7 +3580,7 @@
 
     if-ne p1, v0, :cond_2
 
-    .line 390
+    .line 480
     :cond_1
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
@@ -2811,7 +3599,7 @@
 
     if-nez p1, :cond_0
 
-    .line 809
+    .line 899
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->opticalRanges:Ljava/util/List;
 
     check-cast p1, Ljava/util/Collection;
@@ -2831,16 +3619,16 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 814
+    .line 904
     :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
-    .line 815
+    .line 905
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->mainCircle:Landroid/view/View;
 
     invoke-virtual {v0, p1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 816
+    .line 906
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->mainLabel:Landroid/widget/TextView;
 
     invoke-virtual {p0, p1}, Landroid/widget/TextView;->setVisibility(I)V
@@ -2851,7 +3639,7 @@
 .method private final setMainCircleFocusable(Z)V
     .locals 0
 
-    .line 801
+    .line 891
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->mainCircle:Landroid/view/View;
@@ -2864,12 +3652,12 @@
 .method private final setOpticalButtonsFocusable(Z)V
     .locals 2
 
-    .line 787
+    .line 877
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->opticalRangeViews:Ljava/util/List;
 
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 940
+    .line 1030
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -2888,12 +3676,12 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;
 
-    .line 789
+    .line 879
     instance-of v1, v0, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Range;
 
     if-eqz v1, :cond_0
 
-    .line 790
+    .line 880
     check-cast v0, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Range;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Range;->getBinding()Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;
@@ -2904,7 +3692,7 @@
 
     invoke-virtual {v1, p1}, Landroid/view/View;->setFocusable(I)V
 
-    .line 791
+    .line 881
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Range;->getBinding()Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;
 
     move-result-object v0
@@ -2922,15 +3710,15 @@
 .method private final setState(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;)V
     .locals 1
 
-    .line 53
+    .line 65
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->state:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
 
     if-eq v0, p1, :cond_3
 
-    .line 54
+    .line 66
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->state:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
 
-    .line 55
+    .line 67
     sget-object v0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;->OPENED:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
 
     if-eq p1, v0, :cond_0
@@ -2939,22 +3727,22 @@
 
     if-ne p1, v0, :cond_3
 
-    .line 56
+    .line 68
     :cond_0
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->hasOpticalRange:Z
 
     if-eqz p1, :cond_1
 
-    .line 57
+    .line 69
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->sortOpticalButtonsAccessibility()V
 
-    .line 59
+    .line 71
     :cond_1
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->onZoomSliderStateChangedListener:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$OnZoomSliderStateChangedListener;
 
     if-eqz p1, :cond_3
 
-    .line 60
+    .line 72
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->state:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;->OPENED:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
@@ -2968,7 +3756,7 @@
     :cond_2
     const/4 p0, 0x0
 
-    .line 59
+    .line 71
     :goto_0
     invoke-interface {p1, p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$OnZoomSliderStateChangedListener;->onZoomSliderStateChanged(Z)V
 
@@ -2979,20 +3767,20 @@
 .method private final sortOpticalButtonsAccessibility()V
     .locals 8
 
-    .line 733
+    .line 823
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->hasOpticalRange:Z
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 735
+    .line 825
     :cond_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getOpticalButtons()Ljava/util/List;
 
     move-result-object v0
 
-    .line 736
+    .line 826
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getCurrentStep()I
 
     move-result v1
@@ -3001,7 +3789,7 @@
 
     move-result-object v1
 
-    .line 737
+    .line 827
     move-object v2, v0
 
     check-cast v2, Ljava/util/Collection;
@@ -3015,28 +3803,28 @@
     :goto_0
     if-ge v3, v2, :cond_4
 
-    .line 739
+    .line 829
     iget-boolean v4, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->isSelected:Z
 
     const/4 v5, 0x1
 
     if-eqz v4, :cond_3
 
-    .line 740
+    .line 830
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$CircleInfo;->getActiveIndex()I
 
     move-result v4
 
     if-ne v4, v3, :cond_3
 
-    .line 741
+    .line 831
     iget-object v4, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->state:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
 
     sget-object v6, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;->CLOSED:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
 
     if-ne v4, v6, :cond_3
 
-    .line 743
+    .line 833
     invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
@@ -3053,7 +3841,7 @@
 
     invoke-virtual {v4, v6}, Landroid/view/View;->setImportantForAccessibility(I)V
 
-    .line 745
+    .line 835
     iget-object v4, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object v4, v4, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->mainCircle:Landroid/view/View;
@@ -3062,11 +3850,11 @@
 
     if-gez v6, :cond_1
 
-    const v6, 0x7f09011b
+    const v6, 0x7f090118
 
     goto :goto_1
 
-    .line 749
+    .line 839
     :cond_1
     invoke-interface {v0, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -3084,13 +3872,13 @@
 
     move-result v6
 
-    .line 746
+    .line 836
     :goto_1
     invoke-virtual {v4, v6}, Landroid/view/View;->setAccessibilityTraversalAfter(I)V
 
     add-int/lit8 v6, v3, 0x1
 
-    .line 751
+    .line 841
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v7
@@ -3103,7 +3891,7 @@
 
     goto :goto_2
 
-    .line 754
+    .line 844
     :cond_2
     invoke-interface {v0, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -3121,16 +3909,16 @@
 
     move-result v5
 
-    .line 751
+    .line 841
     :goto_2
     invoke-virtual {v4, v5}, Landroid/view/View;->setAccessibilityTraversalBefore(I)V
 
-    .line 742
+    .line 832
     invoke-static {v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     goto :goto_3
 
-    .line 758
+    .line 848
     :cond_3
     invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -3158,7 +3946,7 @@
 .method private final startAnimation(Z)V
     .locals 6
 
-    .line 322
+    .line 412
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->animator:Landroid/animation/ValueAnimator;
 
     if-eqz v0, :cond_0
@@ -3172,7 +3960,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 328
+    .line 418
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->state:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
 
     sget-object v3, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;->OPENED:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
@@ -3183,7 +3971,7 @@
 
     goto :goto_0
 
-    .line 335
+    .line 425
     :cond_1
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->state:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
 
@@ -3204,7 +3992,7 @@
     :goto_0
     const/4 v2, 0x2
 
-    .line 343
+    .line 433
     new-array v2, v2, [F
 
     const/4 v3, 0x0
@@ -3221,10 +4009,10 @@
 
     const-wide/16 v3, 0xc8
 
-    .line 346
+    .line 436
     invoke-virtual {v2, v3, v4}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    .line 347
+    .line 437
     new-instance v3, Landroid/view/animation/AccelerateDecelerateInterpolator;
 
     invoke-direct {v3}, Landroid/view/animation/AccelerateDecelerateInterpolator;-><init>()V
@@ -3233,14 +4021,14 @@
 
     invoke-virtual {v2, v3}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
-    .line 348
-    new-instance v3, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda3;
+    .line 438
+    new-instance v3, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda4;
 
-    invoke-direct {v3, p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda3;-><init>(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;)V
+    invoke-direct {v3, p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda4;-><init>(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;)V
 
     invoke-virtual {v2, v3}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    .line 352
+    .line 442
     new-instance v3, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$startAnimation$1$2;
 
     invoke-direct {v3, p0, p1, v0, v1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$startAnimation$1$2;-><init>(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;ZFF)V
@@ -3255,18 +4043,18 @@
 
     goto :goto_1
 
-    .line 375
+    .line 465
     :cond_4
     invoke-virtual {v2}, Landroid/animation/ValueAnimator;->start()V
 
-    .line 345
+    .line 435
     :goto_1
     iput-object v2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->animator:Landroid/animation/ValueAnimator;
 
     return-void
 .end method
 
-.method private static final startAnimation$lambda$8$lambda$7(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Landroid/animation/ValueAnimator;)V
+.method private static final startAnimation$lambda$14$lambda$13(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Landroid/animation/ValueAnimator;)V
     .locals 1
 
     const-string/jumbo v0, "this$0"
@@ -3277,7 +4065,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 349
+    .line 439
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
     move-result-object p1
@@ -3304,7 +4092,7 @@
 .method private final updateTotalLineLength()V
     .locals 4
 
-    .line 229
+    .line 319
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getTotalStep()I
 
     move-result v0
@@ -3327,15 +4115,15 @@
 
     const/high16 v0, 0x3fc00000    # 1.5f
 
-    .line 230
+    .line 320
     invoke-static {v0}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getZoomStep(F)I
 
     move-result v0
 
-    .line 231
+    .line 321
     iget v1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->zoomRatio1p5LineLength:F
 
-    .line 232
+    .line 322
     iget v2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->oneZoomStepLineLength:F
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getTotalStep()I
@@ -3350,7 +4138,7 @@
 
     add-float/2addr v1, v2
 
-    .line 231
+    .line 321
     iput v1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->lineLength:F
 
     :cond_0
@@ -3362,7 +4150,7 @@
 .method public final close()V
     .locals 2
 
-    .line 307
+    .line 397
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->state:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;->CLOSING:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
@@ -3371,7 +4159,7 @@
 
     const/4 v0, 0x0
 
-    .line 308
+    .line 398
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->startAnimation(Z)V
 
     :cond_0
@@ -3381,20 +4169,20 @@
 .method public final closeImmediately()V
     .locals 1
 
-    .line 316
+    .line 406
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->animator:Landroid/animation/ValueAnimator;
 
     if-eqz v0, :cond_0
 
     invoke-virtual {v0}, Landroid/animation/ValueAnimator;->cancel()V
 
-    .line 317
+    .line 407
     :cond_0
     sget-object v0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;->CLOSED:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->setState(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;)V
 
-    .line 318
+    .line 408
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getCloseLayout()Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;
 
     move-result-object v0
@@ -3407,7 +4195,7 @@
 .method public final disableSeekBarDrag()V
     .locals 2
 
-    .line 468
+    .line 558
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->interceptDrag:Ljp/co/sony/mc/camera/view/widget/InterceptDragEventLayout;
@@ -3416,7 +4204,7 @@
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/widget/InterceptDragEventLayout;->setInterceptEnable(Z)V
 
-    .line 469
+    .line 559
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->interceptDrag:Ljp/co/sony/mc/camera/view/widget/InterceptDragEventLayout;
@@ -3431,14 +4219,14 @@
 .method public final enableSeekBarDrag()V
     .locals 2
 
-    .line 456
+    .line 546
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->hasLabelOrOpticalRange()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 457
+    .line 547
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->interceptDrag:Ljp/co/sony/mc/camera/view/widget/InterceptDragEventLayout;
@@ -3447,19 +4235,19 @@
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/widget/InterceptDragEventLayout;->setInterceptEnable(Z)V
 
-    .line 458
+    .line 548
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->interceptDrag:Ljp/co/sony/mc/camera/view/widget/InterceptDragEventLayout;
 
-    .line 459
+    .line 549
     new-instance v1, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$enableSeekBarDrag$1;
 
     invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$enableSeekBarDrag$1;-><init>(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;)V
 
     check-cast v1, Ljp/co/sony/mc/camera/view/widget/InterceptDragEventLayout$OnTransferTouchEventListener;
 
-    .line 458
+    .line 548
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/widget/InterceptDragEventLayout;->setTransferTouchEventListener(Ljp/co/sony/mc/camera/view/widget/InterceptDragEventLayout$OnTransferTouchEventListener;)V
 
     :cond_0
@@ -3469,7 +4257,7 @@
 .method public final getAnimator()Landroid/animation/ValueAnimator;
     .locals 0
 
-    .line 79
+    .line 91
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->animator:Landroid/animation/ValueAnimator;
 
     return-object p0
@@ -3486,7 +4274,7 @@
         }
     .end annotation
 
-    .line 42
+    .line 50
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->labels:Ljava/util/List;
 
     return-object p0
@@ -3495,12 +4283,12 @@
 .method public final getLayout(F)Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;
     .locals 12
 
-    .line 579
+    .line 669
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getCloseLayout()Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;
 
     move-result-object v0
 
-    .line 580
+    .line 670
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getOpenLayout()Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;
 
     move-result-object p0
@@ -3509,14 +4297,14 @@
 
     sub-float/2addr v1, p1
 
-    .line 584
+    .line 674
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->getMainCircleTranslationX()F
 
     move-result v2
 
     mul-float/2addr v2, v1
 
-    .line 585
+    .line 675
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->getMainCircleTranslationX()F
 
     move-result v3
@@ -3525,7 +4313,7 @@
 
     add-float v5, v2, v3
 
-    .line 589
+    .line 679
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->getSeekBarWidth()F
 
     move-result v2
@@ -3540,14 +4328,14 @@
 
     add-float v6, v2, v3
 
-    .line 592
+    .line 682
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->getContentContainerWidth()F
 
     move-result v2
 
     mul-float/2addr v2, v1
 
-    .line 593
+    .line 683
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->getContentContainerWidth()F
 
     move-result v3
@@ -3556,7 +4344,7 @@
 
     add-float v7, v2, v3
 
-    .line 597
+    .line 687
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->getLineWidth()F
 
     move-result v2
@@ -3571,61 +4359,61 @@
 
     add-float v8, v2, v3
 
-    .line 599
+    .line 689
     sget-object v2, Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper;->Companion:Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper$Companion;
 
-    .line 600
+    .line 690
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->getOpticalRangeTranslationXList()Ljava/util/List;
 
     move-result-object v3
 
-    .line 601
+    .line 691
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->getOpticalRangeTranslationXList()Ljava/util/List;
 
     move-result-object v4
 
-    .line 599
+    .line 689
     invoke-virtual {v2, v3, v4, v1, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper$Companion;->mergeFloatList(Ljava/util/List;Ljava/util/List;FF)Ljava/util/List;
 
     move-result-object v9
 
-    .line 606
+    .line 696
     sget-object v2, Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper;->Companion:Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper$Companion;
 
-    .line 607
+    .line 697
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->getOpticalRangeWidthList()Ljava/util/List;
 
     move-result-object v3
 
-    .line 608
+    .line 698
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->getOpticalRangeWidthList()Ljava/util/List;
 
     move-result-object v4
 
-    .line 606
+    .line 696
     invoke-virtual {v2, v3, v4, v1, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper$Companion;->mergeFloatList(Ljava/util/List;Ljava/util/List;FF)Ljava/util/List;
 
     move-result-object v10
 
-    .line 613
+    .line 703
     sget-object v2, Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper;->Companion:Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper$Companion;
 
-    .line 614
+    .line 704
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->getLabelTranslationXList()Ljava/util/List;
 
     move-result-object v0
 
-    .line 615
+    .line 705
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->getLabelTranslationXList()Ljava/util/List;
 
     move-result-object p0
 
-    .line 613
+    .line 703
     invoke-virtual {v2, v0, p0, v1, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper$Companion;->mergeFloatList(Ljava/util/List;Ljava/util/List;FF)Ljava/util/List;
 
     move-result-object v11
 
-    .line 619
+    .line 709
     new-instance p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;
 
     move-object v4, p0
@@ -3638,7 +4426,7 @@
 .method public final getOnMainButtonClickListener()Landroid/view/View$OnClickListener;
     .locals 0
 
-    .line 75
+    .line 87
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->onMainButtonClickListener:Landroid/view/View$OnClickListener;
 
     return-object p0
@@ -3647,7 +4435,7 @@
 .method public final getOnZoomButtonClickListener()Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$OnZoomButtonClickListener;
     .locals 0
 
-    .line 77
+    .line 89
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->onZoomButtonClickListener:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$OnZoomButtonClickListener;
 
     return-object p0
@@ -3656,7 +4444,7 @@
 .method public final getOnZoomSliderStateChangedListener()Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$OnZoomSliderStateChangedListener;
     .locals 0
 
-    .line 76
+    .line 88
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->onZoomSliderStateChangedListener:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$OnZoomSliderStateChangedListener;
 
     return-object p0
@@ -3665,7 +4453,7 @@
 .method public final getOnZoomStepChangedListener()Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$OnZoomStepChangedListener;
     .locals 0
 
-    .line 74
+    .line 86
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->onZoomStepChangedListener:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$OnZoomStepChangedListener;
 
     return-object p0
@@ -3682,7 +4470,7 @@
         }
     .end annotation
 
-    .line 41
+    .line 49
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->opticalRanges:Ljava/util/List;
 
     return-object p0
@@ -3691,7 +4479,7 @@
 .method public final isSelected()Z
     .locals 0
 
-    .line 83
+    .line 95
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->isSelected:Z
 
     return p0
@@ -3702,24 +4490,24 @@
 
     if-eqz p3, :cond_1
 
-    .line 258
+    .line 348
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->progressChanged:Z
 
     if-nez p1, :cond_0
 
     const/4 p1, 0x1
 
-    .line 259
+    .line 349
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->progressChanged:Z
 
-    .line 260
+    .line 350
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->onZoomStepChangedListener:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$OnZoomStepChangedListener;
 
     if-eqz p1, :cond_0
 
     invoke-interface {p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$OnZoomStepChangedListener;->onStartChanged()V
 
-    .line 262
+    .line 352
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->onZoomStepChangedListener:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$OnZoomStepChangedListener;
 
@@ -3734,7 +4522,7 @@
 .method public onStartTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 2
 
-    .line 267
+    .line 357
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->mainCircle:Landroid/view/View;
@@ -3745,12 +4533,12 @@
 
     const/4 v0, 0x0
 
-    .line 268
+    .line 358
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->progressChanged:Z
 
     if-eqz p1, :cond_0
 
-    .line 269
+    .line 359
     invoke-virtual {p1}, Landroid/widget/SeekBar;->getProgress()I
 
     move-result p1
@@ -3779,7 +4567,7 @@
 .method public onStopTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 10
 
-    .line 273
+    .line 363
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->mainCircle:Landroid/view/View;
@@ -3788,12 +4576,12 @@
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setPressed(Z)V
 
-    .line 274
+    .line 364
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->progressChanged:Z
 
     if-nez p1, :cond_1
 
-    .line 275
+    .line 365
     sget-object p1, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->INSTANCE:Ljp/co/sony/mc/camera/util/AccessibilityUtil;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->isTalkBackEnabled()Z
@@ -3812,11 +4600,11 @@
 
     if-eqz p1, :cond_2
 
-    .line 276
+    .line 366
     :cond_0
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->close()V
 
-    .line 277
+    .line 367
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->onZoomButtonClickListener:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$OnZoomButtonClickListener;
 
     if-eqz p1, :cond_2
@@ -3825,7 +4613,7 @@
 
     goto :goto_0
 
-    .line 280
+    .line 370
     :cond_1
     new-instance p1, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
@@ -3855,7 +4643,7 @@
 
     move-result-object p1
 
-    .line 281
+    .line 371
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->ZOOM_RATIO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     const-string v2, "ZOOM_RATIO"
@@ -3868,17 +4656,17 @@
 
     move-result-object p1
 
-    .line 282
+    .line 372
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->send()V
 
-    .line 283
+    .line 373
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->onZoomStepChangedListener:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$OnZoomStepChangedListener;
 
     if-eqz p1, :cond_2
 
     invoke-interface {p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$OnZoomStepChangedListener;->onStopChanged()V
 
-    .line 285
+    .line 375
     :cond_2
     :goto_0
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->progressChanged:Z
@@ -3889,7 +4677,7 @@
 .method public final open()V
     .locals 2
 
-    .line 298
+    .line 388
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->state:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;->OPENING:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
@@ -3898,7 +4686,7 @@
 
     const/4 v0, 0x1
 
-    .line 299
+    .line 389
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->startAnimation(Z)V
 
     :cond_0
@@ -3908,7 +4696,7 @@
 .method public final sendAccessibilityEventToSeekBar(Z)V
     .locals 1
 
-    .line 381
+    .line 471
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->seekBar:Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;
@@ -3917,13 +4705,13 @@
 
     const/16 p1, 0x80
 
-    .line 383
+    .line 473
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;->sendAccessibilityEvent(I)V
 
-    .line 384
-    new-instance p1, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda4;
+    .line 474
+    new-instance p1, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda1;
 
-    invoke-direct {p1, p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda4;-><init>(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;)V
+    invoke-direct {p1, p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$$ExternalSyntheticLambda1;-><init>(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;)V
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -3932,12 +4720,12 @@
     :cond_0
     const/high16 p0, 0x10000
 
-    .line 394
+    .line 484
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;->sendAccessibilityEvent(I)V
 
     const/4 p0, 0x0
 
-    .line 395
+    .line 485
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :goto_0
@@ -3947,7 +4735,7 @@
 .method public final setAnimator(Landroid/animation/ValueAnimator;)V
     .locals 0
 
-    .line 79
+    .line 91
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->animator:Landroid/animation/ValueAnimator;
 
     return-void
@@ -3960,7 +4748,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 417
+    .line 507
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->mainCircle:Landroid/view/View;
@@ -3973,7 +4761,7 @@
 .method public final setOnMainButtonClickListener(Landroid/view/View$OnClickListener;)V
     .locals 0
 
-    .line 75
+    .line 87
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->onMainButtonClickListener:Landroid/view/View$OnClickListener;
 
     return-void
@@ -3982,7 +4770,7 @@
 .method public final setOnZoomButtonClickListener(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$OnZoomButtonClickListener;)V
     .locals 0
 
-    .line 77
+    .line 89
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->onZoomButtonClickListener:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$OnZoomButtonClickListener;
 
     return-void
@@ -3991,7 +4779,7 @@
 .method public final setOnZoomSliderStateChangedListener(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$OnZoomSliderStateChangedListener;)V
     .locals 0
 
-    .line 76
+    .line 88
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->onZoomSliderStateChangedListener:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$OnZoomSliderStateChangedListener;
 
     return-void
@@ -4000,7 +4788,7 @@
 .method public final setOnZoomStepChangedListener(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$OnZoomStepChangedListener;)V
     .locals 0
 
-    .line 74
+    .line 86
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->onZoomStepChangedListener:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$OnZoomStepChangedListener;
 
     return-void
@@ -4009,7 +4797,7 @@
 .method public final setOneZoomStepLineLength(F)V
     .locals 1
 
-    .line 240
+    .line 330
     iget v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->oneZoomStepLineLength:F
 
     cmpg-float v0, v0, p1
@@ -4018,11 +4806,11 @@
 
     goto :goto_0
 
-    .line 241
+    .line 331
     :cond_0
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->oneZoomStepLineLength:F
 
-    .line 242
+    .line 332
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->updateTotalLineLength()V
 
     :goto_0
@@ -4032,7 +4820,7 @@
 .method public final setProgress(I)V
     .locals 3
 
-    .line 202
+    .line 292
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->seekBar:Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;
@@ -4041,14 +4829,14 @@
 
     move-result v0
 
-    .line 203
+    .line 293
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->seekBar:Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;
 
     invoke-virtual {v1, p1}, Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;->setProgress(I)V
 
-    .line 204
+    .line 294
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->state:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$State;
 
     sget-object v2, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$WhenMappings;->$EnumSwitchMapping$0:[I
@@ -4063,24 +4851,24 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 206
+    .line 296
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getCloseLayout()Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;
 
     move-result-object v1
 
     invoke-direct {p0, v1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->applyLayout(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;)V
 
-    .line 208
+    .line 298
     iget-boolean v1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->hasOpticalRange:Z
 
     if-eqz v1, :cond_1
 
-    .line 209
+    .line 299
     iget-boolean v1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->isSelected:Z
 
     if-eqz v1, :cond_1
 
-    .line 210
+    .line 300
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getCircleInfo(I)Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$CircleInfo;
 
     move-result-object v0
@@ -4099,12 +4887,12 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 212
+    .line 302
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->sortOpticalButtonsAccessibility()V
 
     goto :goto_0
 
-    .line 215
+    .line 305
     :cond_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getOpenLayout()Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;
 
@@ -4112,12 +4900,12 @@
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->applyLayout(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;)V
 
-    .line 217
+    .line 307
     :cond_1
     :goto_0
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->playScrollSoundForTalkBack(I)V
 
-    .line 218
+    .line 308
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->focusAccessibilityOnMainCircle()V
 
     return-void
@@ -4126,19 +4914,19 @@
 .method public final setRotation(F)V
     .locals 3
 
-    .line 821
+    .line 911
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->mainLabel:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setRotation(F)V
 
-    .line 822
+    .line 912
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->opticalRangeViews:Ljava/util/List;
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 942
+    .line 1032
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -4157,12 +4945,12 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView;
 
-    .line 824
+    .line 914
     instance-of v2, v1, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Range;
 
     if-eqz v2, :cond_0
 
-    .line 825
+    .line 915
     check-cast v1, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Range;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Range;->getBinding()Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;
@@ -4173,7 +4961,7 @@
 
     invoke-virtual {v2, p1}, Landroid/widget/TextView;->setRotation(F)V
 
-    .line 826
+    .line 916
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/widget/OpticalRangeView$Range;->getBinding()Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBinding;
 
     move-result-object v1
@@ -4184,13 +4972,13 @@
 
     goto :goto_0
 
-    .line 832
+    .line 922
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->labelViews:Ljava/util/List;
 
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 944
+    .line 1034
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -4208,7 +4996,7 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/view/widget/LabelView;
 
-    .line 833
+    .line 923
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/widget/LabelView;->getBinding()Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBinding;
 
     move-result-object v0
@@ -4226,26 +5014,26 @@
 .method public final setSelected(Z)V
     .locals 1
 
-    .line 85
+    .line 97
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->isSelected:Z
 
     if-eq v0, p1, :cond_1
 
-    .line 86
+    .line 98
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->isSelected:Z
 
-    .line 87
+    .line 99
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->setMainButtonVisibility(Z)V
 
-    .line 88
+    .line 100
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->hasOpticalRange:Z
 
     if-eqz p1, :cond_0
 
-    .line 89
+    .line 101
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->sortOpticalButtonsAccessibility()V
 
-    .line 91
+    .line 103
     :cond_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->focusAccessibilityOnMainCircle()V
 
@@ -4253,10 +5041,10 @@
     return-void
 .end method
 
-.method public final setStepRange(II)Z
-    .locals 5
+.method public final setStepRange(IILjava/lang/Integer;)Z
+    .locals 6
 
-    .line 181
+    .line 267
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->seekBar:Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;
@@ -4281,43 +5069,52 @@
 
     return p0
 
-    .line 185
+    .line 271
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->seekBar:Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;
 
-    invoke-virtual {v0, p2}, Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;->setMax(I)V
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;->getMax()I
 
-    .line 186
+    move-result v0
+
+    .line 272
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->seekBar:Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;
+
+    invoke-virtual {v1, p2}, Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;->setMax(I)V
+
+    .line 273
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object p2, p2, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->seekBar:Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;
 
     invoke-virtual {p2, p1}, Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;->setMin(I)V
 
-    .line 187
+    .line 274
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->updateTotalLineLength()V
 
-    .line 188
+    .line 275
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->opticalRanges:Ljava/util/List;
 
     check-cast p2, Ljava/lang/Iterable;
 
-    .line 900
-    new-instance v0, Ljava/util/ArrayList;
+    .line 990
+    new-instance v1, Ljava/util/ArrayList;
 
-    const/16 v1, 0xa
+    const/16 v2, 0xa
 
-    invoke-static {p2, v1}, Lkotlin/collections/CollectionsKt;->collectionSizeOrDefault(Ljava/lang/Iterable;I)I
+    invoke-static {p2, v2}, Lkotlin/collections/CollectionsKt;->collectionSizeOrDefault(Ljava/lang/Iterable;I)I
 
-    move-result v2
+    move-result v3
 
-    invoke-direct {v0, v2}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-direct {v1, v3}, Ljava/util/ArrayList;-><init>(I)V
 
-    check-cast v0, Ljava/util/Collection;
+    check-cast v1, Ljava/util/Collection;
 
-    .line 901
+    .line 991
     invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p2
@@ -4325,57 +5122,57 @@
     :goto_0
     invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v2
+    move-result v3
 
-    if-eqz v2, :cond_1
+    if-eqz v3, :cond_1
 
     invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v3
 
-    .line 902
-    check-cast v2, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel;
+    .line 992
+    check-cast v3, Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel;
 
-    .line 189
-    sget-object v3, Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper;->Companion:Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper$Companion;
+    .line 276
+    sget-object v4, Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper;->Companion:Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper$Companion;
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getTotalStep()I
 
-    move-result v4
+    move-result v5
 
-    invoke-virtual {v3, v2, p1, v4}, Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper$Companion;->getOpticalRangeAreaInRatio(Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel;II)Landroid/graphics/RectF;
+    invoke-virtual {v4, v3, p1, v5}, Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper$Companion;->getOpticalRangeAreaInRatio(Ljp/co/sony/mc/camera/view/uistate/OpticalRangeModel;II)Landroid/graphics/RectF;
 
-    move-result-object v2
+    move-result-object v3
 
-    .line 902
-    invoke-interface {v0, v2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    .line 992
+    invoke-interface {v1, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 903
+    .line 993
     :cond_1
-    check-cast v0, Ljava/util/List;
+    check-cast v1, Ljava/util/List;
 
-    .line 188
-    iput-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->opticalRangeAreasInRatio:Ljava/util/List;
+    .line 275
+    iput-object v1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->opticalRangeAreasInRatio:Ljava/util/List;
 
-    .line 191
+    .line 278
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->labels:Ljava/util/List;
 
     check-cast p2, Ljava/lang/Iterable;
 
-    .line 904
-    new-instance v0, Ljava/util/ArrayList;
+    .line 994
+    new-instance v1, Ljava/util/ArrayList;
 
-    invoke-static {p2, v1}, Lkotlin/collections/CollectionsKt;->collectionSizeOrDefault(Ljava/lang/Iterable;I)I
+    invoke-static {p2, v2}, Lkotlin/collections/CollectionsKt;->collectionSizeOrDefault(Ljava/lang/Iterable;I)I
 
-    move-result v1
+    move-result v2
 
-    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
 
-    check-cast v0, Ljava/util/Collection;
+    check-cast v1, Ljava/util/Collection;
 
-    .line 905
+    .line 995
     invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p2
@@ -4383,47 +5180,64 @@
     :goto_1
     invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v1
+    move-result v2
 
-    if-eqz v1, :cond_2
+    if-eqz v2, :cond_2
 
     invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v1
+    move-result-object v2
 
-    .line 906
-    check-cast v1, Ljp/co/sony/mc/camera/view/uistate/ZoomLabel;
+    .line 996
+    check-cast v2, Ljp/co/sony/mc/camera/view/uistate/ZoomLabel;
 
-    .line 192
-    sget-object v2, Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper;->Companion:Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper$Companion;
+    .line 279
+    sget-object v3, Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper;->Companion:Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper$Companion;
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getTotalStep()I
 
-    move-result v3
+    move-result v4
 
-    invoke-virtual {v2, v1, p1, v3}, Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper$Companion;->getLabelAreaInRatio(Ljp/co/sony/mc/camera/view/uistate/ZoomLabel;II)Landroid/graphics/RectF;
+    invoke-virtual {v3, v2, p1, v4}, Ljp/co/sony/mc/camera/view/widget/ZoomViewHelper$Companion;->getLabelAreaInRatio(Ljp/co/sony/mc/camera/view/uistate/ZoomLabel;II)Landroid/graphics/RectF;
 
-    move-result-object v1
+    move-result-object v2
 
-    .line 906
-    invoke-interface {v0, v1}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    .line 996
+    invoke-interface {v1, v2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 907
+    .line 997
     :cond_2
-    check-cast v0, Ljava/util/List;
+    check-cast v1, Ljava/util/List;
 
-    .line 191
-    iput-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->labelAreasInRatio:Ljava/util/List;
+    .line 278
+    iput-object v1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->labelAreasInRatio:Ljava/util/List;
 
-    .line 194
+    .line 281
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->getTotalStep()I
 
     move-result p1
 
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->applyListViewItemsForTalkBack(I)V
 
+    if-eqz p3, :cond_3
+
+    .line 282
+    invoke-virtual {p3}, Ljava/lang/Integer;->intValue()I
+
+    move-result p1
+
+    if-le p1, v0, :cond_3
+
+    .line 283
+    invoke-virtual {p3}, Ljava/lang/Integer;->intValue()I
+
+    move-result p1
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->setProgress(I)V
+
+    :cond_3
     const/4 p0, 0x1
 
     return p0
@@ -4432,7 +5246,7 @@
 .method public final setZoomRatio1p5LineLength(F)V
     .locals 1
 
-    .line 250
+    .line 340
     iget v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->zoomRatio1p5LineLength:F
 
     cmpg-float v0, v0, p1
@@ -4441,11 +5255,11 @@
 
     goto :goto_0
 
-    .line 251
+    .line 341
     :cond_0
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->zoomRatio1p5LineLength:F
 
-    .line 252
+    .line 342
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->updateTotalLineLength()V
 
     :goto_0
@@ -4455,7 +5269,7 @@
 .method public final setZoomRatioLabel(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    .line 289
+    .line 379
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->mainLabel:Landroid/widget/TextView;
@@ -4464,7 +5278,7 @@
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 290
+    .line 380
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->seekBar:Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;
@@ -4473,7 +5287,7 @@
 
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/view/widget/DragOnlySeekBar;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 291
+    .line 381
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->binding:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->mainCircle:Landroid/view/View;

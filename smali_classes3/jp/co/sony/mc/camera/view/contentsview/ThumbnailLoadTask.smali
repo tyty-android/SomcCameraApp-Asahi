@@ -130,18 +130,18 @@
 
     invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 95
+    .line 96
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 27
+    .line 28
     const-string v0, "ThumbnailLoadTask"
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->TAG:Ljava/lang/String;
 
-    .line 96
+    .line 97
     iput p1, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mRequestId:I
 
-    .line 98
+    .line 99
     :try_start_0
     invoke-virtual {p2}, Landroid/net/Uri;->getLastPathSegment()Ljava/lang/String;
 
@@ -162,7 +162,7 @@
     :catch_0
     const/4 p1, 0x1
 
-    .line 100
+    .line 101
     new-array p1, p1, [Ljava/lang/String;
 
     const/4 p2, 0x0
@@ -173,21 +173,21 @@
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
-    .line 102
+    .line 103
     :goto_0
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mContext:Landroid/content/Context;
 
-    .line 103
+    .line 104
     invoke-virtual {p3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object p1
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mResolver:Landroid/content/ContentResolver;
 
-    .line 104
+    .line 105
     iput-object p5, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mDataLoadCallback:Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask$QueryCompleteListener;
 
-    .line 105
+    .line 106
     iput-boolean p4, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mIsRegisterCache:Z
 
     return-void
@@ -215,30 +215,30 @@
 
     invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 76
+    .line 77
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 27
+    .line 28
     const-string v0, "ThumbnailLoadTask"
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->TAG:Ljava/lang/String;
 
     const/4 v0, -0x1
 
-    .line 77
+    .line 78
     iput v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mRequestId:I
 
-    .line 78
+    .line 79
     invoke-static {p2, p3}, Ljp/co/sony/mc/camera/view/contentsview/PhotoStackQueryHelper;->setupQueryParam(Ljava/util/List;I)Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;
 
     move-result-object p2
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mParam:Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;
 
-    .line 79
+    .line 80
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mContext:Landroid/content/Context;
 
-    .line 80
+    .line 81
     invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -247,10 +247,10 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mResolver:Landroid/content/ContentResolver;
 
-    .line 81
+    .line 82
     iput-object p5, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mDataLoadCallback:Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask$QueryCompleteListener;
 
-    .line 82
+    .line 83
     iput-boolean p4, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mIsRegisterCache:Z
 
     return-void
@@ -259,11 +259,11 @@
 
 # virtual methods
 .method public call()Ljava/lang/Long;
-    .locals 9
+    .locals 10
 
     const-string v0, "cursor count = "
 
-    .line 109
+    .line 110
     sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     const/4 v2, 0x0
@@ -280,18 +280,18 @@
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 112
+    .line 113
     :cond_0
     new-instance v1, Ljava/util/LinkedList;
 
     invoke-direct {v1}, Ljava/util/LinkedList;-><init>()V
 
-    .line 115
+    .line 116
     iget-object v4, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mParam:Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;
 
     if-eqz v4, :cond_1
 
-    .line 116
+    .line 117
     iget-object v5, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mResolver:Landroid/content/ContentResolver;
 
     invoke-static {v5, v4}, Ljp/co/sony/mc/camera/view/contentsview/PhotoStackQueryHelper;->getLatestImageInfo(Landroid/content/ContentResolver;Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;)Landroid/database/Cursor;
@@ -300,13 +300,13 @@
 
     goto :goto_0
 
-    .line 117
+    .line 118
     :cond_1
     iget-object v4, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mMediaUris:Ljava/util/ArrayList;
 
     if-eqz v4, :cond_2
 
-    .line 118
+    .line 119
     iget-object v5, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mResolver:Landroid/content/ContentResolver;
 
     invoke-static {v5, v4}, Ljp/co/sony/mc/camera/view/contentsview/PhotoStackQueryHelper;->getImagesInfo(Landroid/content/ContentResolver;Ljava/util/ArrayList;)Landroid/database/Cursor;
@@ -315,7 +315,7 @@
 
     goto :goto_0
 
-    .line 120
+    .line 121
     :cond_2
     iget-object v4, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mResolver:Landroid/content/ContentResolver;
 
@@ -328,10 +328,75 @@
     :goto_0
     const/4 v5, 0x0
 
-    .line 124
+    if-nez v4, :cond_4
+
+    .line 125
+    invoke-static {}, Ljp/co/sony/mc/camera/storage/ProcessingMediaManager;->getInstance()Ljp/co/sony/mc/camera/storage/ProcessingMediaManager;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Ljp/co/sony/mc/camera/storage/ProcessingMediaManager;->getMediaDeque()Ljava/util/Deque;
+
+    move-result-object v6
+
+    invoke-interface {v6}, Ljava/util/Deque;->peekLast()Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Ljp/co/sony/mc/camera/storage/ProcessingMediaManager$ProcessingMedia;
+
+    .line 126
+    sget-boolean v7, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    if-eqz v7, :cond_3
+
+    new-array v7, v3, [Ljava/lang/String;
+
+    new-instance v8, Ljava/lang/StringBuilder;
+
+    const-string v9, "ProcessingMedia peekLast:"
+
+    invoke-direct {v8, v9}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v8, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v8
+
+    aput-object v8, v7, v2
+
+    invoke-static {v7}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    :cond_3
+    if-eqz v6, :cond_4
+
+    .line 128
+    iget-object v4, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mResolver:Landroid/content/ContentResolver;
+
+    invoke-static {v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-virtual {v6}, Ljp/co/sony/mc/camera/storage/ProcessingMediaManager$ProcessingMedia;->getStoreUri()Landroid/net/Uri;
+
+    move-result-object v6
+
+    invoke-virtual {v4, v6, v5, v5, v5}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Landroid/os/Bundle;Landroid/os/CancellationSignal;)Landroid/database/Cursor;
+
+    move-result-object v4
+
+    if-eqz v4, :cond_4
+
+    .line 129
+    invoke-interface {v4}, Landroid/database/Cursor;->moveToFirst()Z
+
+    .line 134
+    :cond_4
     :try_start_0
     check-cast v4, Ljava/io/Closeable;
     :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_4
 
     :try_start_1
@@ -339,14 +404,14 @@
 
     check-cast v6, Landroid/database/Cursor;
 
-    if-eqz v6, :cond_8
+    if-eqz v6, :cond_a
 
-    .line 126
+    .line 136
     sget-boolean v7, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
-    if-eqz v7, :cond_3
+    if-eqz v7, :cond_5
 
-    .line 127
+    .line 137
     new-array v3, v3, [Ljava/lang/String;
 
     invoke-interface {v6}, Landroid/database/Cursor;->getCount()I
@@ -369,64 +434,64 @@
 
     invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 130
-    :cond_3
+    .line 140
+    :cond_5
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mMediaUris:Ljava/util/ArrayList;
 
-    if-eqz v0, :cond_5
+    if-eqz v0, :cond_7
 
-    .line 131
+    .line 141
     :goto_1
     invoke-interface {v6}, Landroid/database/Cursor;->isAfterLast()Z
 
     move-result v0
 
-    if-nez v0, :cond_8
+    if-nez v0, :cond_a
 
-    .line 133
+    .line 143
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mResolver:Landroid/content/ContentResolver;
 
     invoke-static {v0, v6}, Ljp/co/sony/mc/camera/view/contentsview/PhotoStackQueryHelper;->createContentInfoForMediaUris(Landroid/content/ContentResolver;Landroid/database/Cursor;)Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;
 
     move-result-object v0
 
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_6
 
-    .line 135
+    .line 145
     invoke-virtual {v1, v0}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
 
-    .line 137
-    :cond_4
+    .line 147
+    :cond_6
     invoke-interface {v6}, Landroid/database/Cursor;->moveToNext()Z
 
     goto :goto_1
 
-    .line 140
-    :cond_5
+    .line 150
+    :cond_7
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mResolver:Landroid/content/ContentResolver;
 
     invoke-static {v0, v6}, Ljp/co/sony/mc/camera/view/contentsview/PhotoStackQueryHelper;->createContentInfo(Landroid/content/ContentResolver;Landroid/database/Cursor;)Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;
 
     move-result-object v0
 
-    if-eqz v0, :cond_7
+    if-eqz v0, :cond_9
 
-    .line 142
+    .line 152
     iget-object v2, v0, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mOriginalPath:Ljava/lang/String;
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/storage/PathBuilder;->isBurstFilePath(Ljava/lang/String;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_7
+    if-eqz v2, :cond_9
 
-    .line 143
+    .line 153
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mResolver:Landroid/content/ContentResolver;
 
-    .line 144
+    .line 154
     iget v3, v0, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mBucketId:I
 
-    .line 143
+    .line 153
     invoke-static {v2, v3}, Ljp/co/sony/mc/camera/view/contentsview/PhotoStackQueryHelper;->getBurstCaptureImageInfo(Landroid/content/ContentResolver;I)Landroid/database/Cursor;
 
     move-result-object v2
@@ -435,28 +500,28 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
-    .line 144
+    .line 154
     :try_start_2
     move-object v3, v2
 
     check-cast v3, Landroid/database/Cursor;
 
-    if-eqz v3, :cond_6
+    if-eqz v3, :cond_8
 
-    .line 147
+    .line 157
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mResolver:Landroid/content/ContentResolver;
 
     invoke-static {v0, v3}, Ljp/co/sony/mc/camera/view/contentsview/PhotoStackQueryHelper;->createContentInfo(Landroid/content/ContentResolver;Landroid/database/Cursor;)Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;
 
     move-result-object v0
 
-    .line 150
-    :cond_6
+    .line 160
+    :cond_8
     sget-object v3, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 144
+    .line 154
     :try_start_3
     invoke-static {v2, v5}, Lkotlin/io/CloseableKt;->closeFinally(Ljava/io/Closeable;Ljava/lang/Throwable;)V
     :try_end_3
@@ -473,46 +538,83 @@
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
     :catchall_1
-    move-exception v1
+    move-exception v3
 
     :try_start_5
     invoke-static {v2, v0}, Lkotlin/io/CloseableKt;->closeFinally(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
-    throw v1
+    throw v3
 
-    :cond_7
+    :cond_9
     :goto_2
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_a
 
-    .line 154
+    .line 164
     invoke-virtual {v1, v0}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
 
-    .line 158
-    :cond_8
+    .line 168
+    :cond_a
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_2
 
-    .line 124
+    .line 134
     :try_start_6
     invoke-static {v4, v5}, Lkotlin/io/CloseableKt;->closeFinally(Ljava/io/Closeable;Ljava/lang/Throwable;)V
     :try_end_6
+    .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_0
     .catchall {:try_start_6 .. :try_end_6} :catchall_4
 
-    .line 160
+    goto :goto_3
+
+    :catchall_2
+    move-exception v0
+
+    :try_start_7
+    throw v0
+    :try_end_7
+    .catchall {:try_start_7 .. :try_end_7} :catchall_3
+
+    :catchall_3
+    move-exception v2
+
+    :try_start_8
+    invoke-static {v4, v0}, Lkotlin/io/CloseableKt;->closeFinally(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+
+    throw v2
+    :try_end_8
+    .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_0
+    .catchall {:try_start_8 .. :try_end_8} :catchall_4
+
+    :catchall_4
+    move-exception v0
+
+    goto :goto_5
+
+    :catch_0
+    move-exception v0
+
+    .line 170
+    :try_start_9
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+    :try_end_9
+    .catchall {:try_start_9 .. :try_end_9} :catchall_4
+
+    .line 172
+    :goto_3
     iput-object v5, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mParam:Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;
 
-    .line 161
+    .line 173
     iput-object v5, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mMediaUris:Ljava/util/ArrayList;
 
-    .line 164
+    .line 176
     invoke-virtual {v1}, Ljava/util/LinkedList;->isEmpty()Z
 
     move-result v0
 
-    if-nez v0, :cond_9
+    if-nez v0, :cond_b
 
-    .line 165
+    .line 177
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mDataLoadCallback:Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask$QueryCompleteListener;
 
     iget v2, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mRequestId:I
@@ -521,52 +623,31 @@
 
     invoke-interface {v0, v2, p0, v1}, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask$QueryCompleteListener;->onQueryCompleted(IZLjava/util/LinkedList;)V
 
-    goto :goto_3
+    goto :goto_4
 
-    .line 167
-    :cond_9
+    .line 179
+    :cond_b
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mDataLoadCallback:Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask$QueryCompleteListener;
 
     iget p0, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mRequestId:I
 
     invoke-interface {v0, p0}, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask$QueryCompleteListener;->onQueryFailed(I)V
 
-    :goto_3
+    :goto_4
     const-wide/16 v0, 0x0
 
-    .line 169
+    .line 181
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
 
     return-object p0
 
-    :catchall_2
-    move-exception v0
-
-    .line 124
-    :try_start_7
-    throw v0
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_3
-
-    :catchall_3
-    move-exception v1
-
-    :try_start_8
-    invoke-static {v4, v0}, Lkotlin/io/CloseableKt;->closeFinally(Ljava/io/Closeable;Ljava/lang/Throwable;)V
-
-    throw v1
-    :try_end_8
-    .catchall {:try_start_8 .. :try_end_8} :catchall_4
-
-    :catchall_4
-    move-exception v0
-
-    .line 160
+    .line 172
+    :goto_5
     iput-object v5, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mParam:Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;
 
-    .line 161
+    .line 173
     iput-object v5, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->mMediaUris:Ljava/util/ArrayList;
 
     throw v0
@@ -575,7 +656,7 @@
 .method public bridge synthetic call()Ljava/lang/Object;
     .locals 0
 
-    .line 22
+    .line 23
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->call()Ljava/lang/Long;
 
     move-result-object p0
@@ -586,7 +667,7 @@
 .method public final getTAG()Ljava/lang/String;
     .locals 0
 
-    .line 27
+    .line 28
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailLoadTask;->TAG:Ljava/lang/String;
 
     return-object p0

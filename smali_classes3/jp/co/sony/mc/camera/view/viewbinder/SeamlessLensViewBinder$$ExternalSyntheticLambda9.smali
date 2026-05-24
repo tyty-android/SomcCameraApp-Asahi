@@ -30,7 +30,7 @@
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$$ExternalSyntheticLambda9;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->$r8$lambda$FwTguE_uqdr6FUonHP9Q9_Fix3U(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Landroid/view/View;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->$r8$lambda$VNpVem4WHN4lsWL2rlFOAYGCO1s(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;Landroid/view/View;)V
 
     return-void
 .end method

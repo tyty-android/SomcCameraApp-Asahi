@@ -24,11 +24,19 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "controller"
+        }
+    .end annotation
 
-    .line 7861
+    .line 6745
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7862
+    .line 6746
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$SsIsoEvDetectListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     return-void
@@ -38,8 +46,20 @@
 # virtual methods
 .method public onSsIsoEvDetected(JII)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "ss",
+            "iso",
+            "ev"
+        }
+    .end annotation
 
-    .line 7868
+    .line 6752
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SsIsoEvDetectListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;
@@ -48,7 +68,7 @@
 
     invoke-interface {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onSsIsoEvDetected(JII)V
 
-    .line 7869
+    .line 6753
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent$Context;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent$Context;->getEnv()Ljp/co/sony/mc/camera/idd/value/IddEnvironment;

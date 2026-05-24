@@ -65,6 +65,16 @@
 
 .method private static appendTag(Ljava/lang/StringBuilder;Ljava/lang/StackTraceElement;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "builder",
+            "stackTrace"
+        }
+    .end annotation
 
     const/16 v0, 0x5b
 
@@ -92,6 +102,16 @@
 
 .method private static appendTraceInfo(Ljava/lang/StringBuilder;Ljava/lang/StackTraceElement;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "builder",
+            "stackTrace"
+        }
+    .end annotation
 
     .line 150
     invoke-virtual {p1}, Ljava/lang/StackTraceElement;->getMethodName()Ljava/lang/String;
@@ -122,6 +142,16 @@
 
 .method public static d(Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "message",
+            "e"
+        }
+    .end annotation
 
     .line 75
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
@@ -160,6 +190,14 @@
 
 .method public static varargs d([Ljava/lang/String;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "message"
+        }
+    .end annotation
 
     .line 62
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
@@ -190,6 +228,16 @@
 
 .method public static e(Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "message",
+            "e"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -213,6 +261,14 @@
 
 .method public static varargs e([Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "message"
+        }
+    .end annotation
 
     .line 112
     const-string v0, "CameraApp"
@@ -228,6 +284,16 @@
 
 .method public static i(Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "message",
+            "e"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -251,6 +317,14 @@
 
 .method public static varargs i([Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "message"
+        }
+    .end annotation
 
     .line 84
     const-string v0, "CameraApp"
@@ -266,6 +340,14 @@
 
 .method private static varargs makeLogStringWithLongInfo([Ljava/lang/String;)Ljava/lang/String;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "message"
+        }
+    .end annotation
 
     .line 123
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
@@ -319,6 +401,14 @@
 
 .method private static varargs makeLogStringWithShortInfo([Ljava/lang/String;)Ljava/lang/String;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "message"
+        }
+    .end annotation
 
     .line 134
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
@@ -369,6 +459,14 @@
 
 .method private static suppressFileExtension(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "filename"
+        }
+    .end annotation
 
     const/16 v0, 0x2e
 
@@ -399,6 +497,16 @@
 
 .method public static v(Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "message",
+            "e"
+        }
+    .end annotation
 
     .line 53
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -428,6 +536,14 @@
 
 .method public static varargs v([Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "message"
+        }
+    .end annotation
 
     .line 44
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -449,6 +565,16 @@
 
 .method public static w(Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "message",
+            "e"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -472,6 +598,14 @@
 
 .method public static varargs w([Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "message"
+        }
+    .end annotation
 
     .line 98
     const-string v0, "CameraApp"

@@ -17,6 +17,16 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;Landroid/content/SharedPreferences;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "name",
+            "prefs"
+        }
+    .end annotation
 
     .line 30
     invoke-direct {p0, p1, p2}, Ljp/co/sony/mc/camera/util/capability/CapabilityItem;-><init>(Ljava/lang/String;Landroid/content/SharedPreferences;)V
@@ -26,6 +36,17 @@
 
 .method constructor <init>(Ljava/lang/String;Ljava/util/List;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "name",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -76,6 +97,16 @@
 
 .method public bridge synthetic read(Landroid/content/SharedPreferences;Ljava/lang/String;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "prefs",
+            "key"
+        }
+    .end annotation
 
     .line 23
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/util/capability/RectListCapabilityItem;->read(Landroid/content/SharedPreferences;Ljava/lang/String;)Ljava/util/List;
@@ -87,6 +118,17 @@
 
 .method public read(Landroid/content/SharedPreferences;Ljava/lang/String;)Ljava/util/List;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "prefs",
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -131,6 +173,14 @@
 
 .method public write(Landroid/content/SharedPreferences$Editor;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "editor"
+        }
+    .end annotation
 
     .line 44
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/util/capability/RectListCapabilityItem;->get()Ljava/lang/Object;

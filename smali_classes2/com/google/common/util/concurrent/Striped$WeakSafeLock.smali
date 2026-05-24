@@ -23,14 +23,24 @@
 # direct methods
 .method constructor <init>(Ljava/util/concurrent/locks/Lock;Lcom/google/common/util/concurrent/Striped$WeakSafeReadWriteLock;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "delegate",
+            "strongReference"
+        }
+    .end annotation
 
-    .line 346
+    .line 312
     invoke-direct {p0}, Lcom/google/common/util/concurrent/ForwardingLock;-><init>()V
 
-    .line 347
+    .line 313
     iput-object p1, p0, Lcom/google/common/util/concurrent/Striped$WeakSafeLock;->delegate:Ljava/util/concurrent/locks/Lock;
 
-    .line 348
+    .line 314
     iput-object p2, p0, Lcom/google/common/util/concurrent/Striped$WeakSafeLock;->strongReference:Lcom/google/common/util/concurrent/Striped$WeakSafeReadWriteLock;
 
     return-void
@@ -41,7 +51,7 @@
 .method delegate()Ljava/util/concurrent/locks/Lock;
     .locals 0
 
-    .line 353
+    .line 319
     iget-object p0, p0, Lcom/google/common/util/concurrent/Striped$WeakSafeLock;->delegate:Ljava/util/concurrent/locks/Lock;
 
     return-object p0
@@ -50,7 +60,7 @@
 .method public newCondition()Ljava/util/concurrent/locks/Condition;
     .locals 2
 
-    .line 358
+    .line 324
     new-instance v0, Lcom/google/common/util/concurrent/Striped$WeakSafeCondition;
 
     iget-object v1, p0, Lcom/google/common/util/concurrent/Striped$WeakSafeLock;->delegate:Ljava/util/concurrent/locks/Lock;

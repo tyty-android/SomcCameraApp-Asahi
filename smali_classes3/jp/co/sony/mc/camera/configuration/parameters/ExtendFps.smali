@@ -55,7 +55,7 @@
     .line 30
     new-instance v6, Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;
 
-    const v4, 0x7f1103f4
+    const v4, 0x7f11043f
 
     const-string v5, "auto"
 
@@ -74,7 +74,7 @@
     .line 35
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;
 
-    const v11, 0x7f1103f3
+    const v11, 0x7f11043e
 
     const-string v12, "off"
 
@@ -102,6 +102,23 @@
 
 .method private constructor <init>(Ljava/lang/String;IIILjava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -127,6 +144,16 @@
 
 .method public static getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId"
+        }
+    .end annotation
 
     .line 140
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;
@@ -163,6 +190,16 @@
 
 .method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId"
+        }
+    .end annotation
 
     .line 122
     new-instance v0, Ljava/util/ArrayList;
@@ -188,19 +225,13 @@
 
     if-nez v1, :cond_0
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isStreaming()Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    .line 124
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoFraming()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
+    .line 124
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isGimbal()Z
 
     move-result p0
@@ -241,6 +272,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 28
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;
@@ -351,6 +390,16 @@
 
 .method public isSupportedValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId"
+        }
+    .end annotation
 
     .line 155
     invoke-static {p1, p2}, Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;-><init>(Landroid/content/Context;Landroidx/fragment/app/FragmentManager;Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayCallBack;Ljp/co/sony/mc/camera/storage/Storage;Ljp/co/sony/mc/camera/view/contentsview/ContentCache;)V
+    value = Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;-><init>(Landroid/content/Context;Landroidx/fragment/app/FragmentManager;Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayCallBack;Ljp/co/sony/mc/camera/storage/Storage;Ljp/co/sony/mc/camera/view/contentsview/ContentCache;Ljp/co/sony/mc/camera/view/contentsview/CaptureRequestRecorder;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -51,7 +51,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$mDisplayListener$1;->this$0:Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;
 
-    .line 154
+    .line 151
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -62,7 +62,7 @@
 .method public onDisplayAdded(I)V
     .locals 3
 
-    .line 156
+    .line 153
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$mDisplayListener$1;->this$0:Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->access$getMDisplayManager$p(Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;)Landroid/hardware/display/DisplayManager;
@@ -75,7 +75,7 @@
 
     move-result-object v0
 
-    .line 157
+    .line 154
     array-length v1, v0
 
     const/4 v2, 0x1
@@ -98,7 +98,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 158
+    .line 155
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$mDisplayListener$1;->this$0:Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;
 
     const/4 v2, 0x0
@@ -111,7 +111,7 @@
 
     invoke-static {v1, v0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->access$startPresentation(Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;Landroid/view/Display;)V
 
-    .line 159
+    .line 156
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$mDisplayListener$1;->this$0:Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;
 
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->access$setMDisplayId$p(Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;I)V
@@ -129,7 +129,7 @@
 .method public onDisplayRemoved(I)V
     .locals 1
 
-    .line 163
+    .line 160
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$mDisplayListener$1;->this$0:Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->access$isShowing(Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;)Z
@@ -146,12 +146,12 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 164
+    .line 161
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$mDisplayListener$1;->this$0:Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->access$stopPresentation(Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;)V
 
-    .line 165
+    .line 162
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$mDisplayListener$1;->this$0:Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->access$getMExternalDisplayCallBack$p(Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;)Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayCallBack;

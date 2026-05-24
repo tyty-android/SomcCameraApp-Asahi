@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/hash/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation runtime Lcom/google/errorprone/annotations/Immutable;
 .end annotation
 
@@ -22,7 +25,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 28
+    .line 29
     new-instance v0, Lcom/google/common/hash/Crc32cHashFunction;
 
     invoke-direct {v0}, Lcom/google/common/hash/Crc32cHashFunction;-><init>()V
@@ -35,7 +38,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 27
+    .line 28
     invoke-direct {p0}, Lcom/google/common/hash/AbstractHashFunction;-><init>()V
 
     return-void
@@ -54,7 +57,7 @@
 .method public newHasher()Lcom/google/common/hash/Hasher;
     .locals 0
 
-    .line 37
+    .line 38
     new-instance p0, Lcom/google/common/hash/Crc32cHashFunction$Crc32cHasher;
 
     invoke-direct {p0}, Lcom/google/common/hash/Crc32cHashFunction$Crc32cHasher;-><init>()V
@@ -65,7 +68,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 42
+    .line 43
     const-string p0, "Hashing.crc32c()"
 
     return-object p0

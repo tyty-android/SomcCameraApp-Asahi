@@ -26,11 +26,27 @@
 .end annotation
 
 
+# instance fields
+.field final synthetic this$1:Lcom/google/common/collect/MutableClassToInstanceMap$2;
+
+
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/MutableClassToInstanceMap$2;Ljava/util/Iterator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$1",
+            "backingIterator"
+        }
+    .end annotation
 
-    .line 101
+    .line 118
+    iput-object p1, p0, Lcom/google/common/collect/MutableClassToInstanceMap$2$1;->this$1:Lcom/google/common/collect/MutableClassToInstanceMap$2;
+
     invoke-direct {p0, p2}, Lcom/google/common/collect/TransformedIterator;-><init>(Ljava/util/Iterator;)V
 
     return-void
@@ -40,8 +56,16 @@
 # virtual methods
 .method bridge synthetic transform(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "from"
+        }
+    .end annotation
 
-    .line 101
+    .line 118
     check-cast p1, Ljava/util/Map$Entry;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/MutableClassToInstanceMap$2$1;->transform(Ljava/util/Map$Entry;)Ljava/util/Map$Entry;
@@ -53,6 +77,15 @@
 
 .method transform(Ljava/util/Map$Entry;)Ljava/util/Map$Entry;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "from"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -65,8 +98,8 @@
         }
     .end annotation
 
-    .line 104
-    invoke-static {p1}, Lcom/google/common/collect/MutableClassToInstanceMap;->checkedEntry(Ljava/util/Map$Entry;)Ljava/util/Map$Entry;
+    .line 122
+    invoke-static {p1}, Lcom/google/common/collect/MutableClassToInstanceMap;->access$100(Ljava/util/Map$Entry;)Ljava/util/Map$Entry;
 
     move-result-object p0
 

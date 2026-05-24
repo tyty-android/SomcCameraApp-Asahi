@@ -30,6 +30,20 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector;IILjava/nio/ByteBuffer;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "w",
+            "h",
+            "byteBuffer"
+        }
+    .end annotation
 
     .line 384
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector$DetectRunnable;->this$0:Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector;

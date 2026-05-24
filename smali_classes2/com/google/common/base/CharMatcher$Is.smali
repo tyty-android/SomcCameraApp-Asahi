@@ -21,11 +21,19 @@
 # direct methods
 .method constructor <init>(C)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "match"
+        }
+    .end annotation
 
-    .line 1609
+    .line 1612
     invoke-direct {p0}, Lcom/google/common/base/CharMatcher$FastMatcher;-><init>()V
 
-    .line 1610
+    .line 1613
     iput-char p1, p0, Lcom/google/common/base/CharMatcher$Is;->match:C
 
     return-void
@@ -35,8 +43,16 @@
 # virtual methods
 .method public and(Lcom/google/common/base/CharMatcher;)Lcom/google/common/base/CharMatcher;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "other"
+        }
+    .end annotation
 
-    .line 1625
+    .line 1628
     iget-char v0, p0, Lcom/google/common/base/CharMatcher$Is;->match:C
 
     invoke-virtual {p1, v0}, Lcom/google/common/base/CharMatcher;->matches(C)Z
@@ -58,8 +74,16 @@
 
 .method public matches(C)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
 
-    .line 1615
+    .line 1618
     iget-char p0, p0, Lcom/google/common/base/CharMatcher$Is;->match:C
 
     if-ne p1, p0, :cond_0
@@ -78,7 +102,7 @@
 .method public negate()Lcom/google/common/base/CharMatcher;
     .locals 0
 
-    .line 1635
+    .line 1638
     iget-char p0, p0, Lcom/google/common/base/CharMatcher$Is;->match:C
 
     invoke-static {p0}, Lcom/google/common/base/CharMatcher$Is;->isNot(C)Lcom/google/common/base/CharMatcher;
@@ -90,8 +114,16 @@
 
 .method public or(Lcom/google/common/base/CharMatcher;)Lcom/google/common/base/CharMatcher;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "other"
+        }
+    .end annotation
 
-    .line 1630
+    .line 1633
     iget-char v0, p0, Lcom/google/common/base/CharMatcher$Is;->match:C
 
     invoke-virtual {p1, v0}, Lcom/google/common/base/CharMatcher;->matches(C)Z
@@ -113,8 +145,18 @@
 
 .method public replaceFrom(Ljava/lang/CharSequence;C)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sequence",
+            "replacement"
+        }
+    .end annotation
 
-    .line 1620
+    .line 1623
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -130,8 +172,16 @@
 
 .method setBits(Ljava/util/BitSet;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "table"
+        }
+    .end annotation
 
-    .line 1641
+    .line 1644
     iget-char p0, p0, Lcom/google/common/base/CharMatcher$Is;->match:C
 
     invoke-virtual {p1, p0}, Ljava/util/BitSet;->set(I)V
@@ -142,32 +192,18 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1646
+    .line 1649
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "CharMatcher.is(\'"
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
     iget-char p0, p0, Lcom/google/common/base/CharMatcher$Is;->match:C
 
     invoke-static {p0}, Lcom/google/common/base/CharMatcher;->access$100(C)Ljava/lang/String;
 
     move-result-object p0
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, 0x12
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v0, "CharMatcher.is(\'"
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

@@ -82,6 +82,7 @@ Tiks parādīti paziņojumi un dialogi. Visos atlasiet Savienot pārī, tad nosp
     <string name="call_notification_incoming_text">Ienākošais zvans</string>
     <string name="call_notification_ongoing_text">Pašreizējais zvans</string>
     <string name="call_notification_screening_text">Ienākošā zvana filtrēšana</string>
+    <string name="camera_string_saving_process_hint_txt">Saglabā... Lūdzu, uzgaidiet, kamēr saglabāšana ir beigusies.</string>
     <string name="camera_strings_accept_privacy_policy_txt">Esat iepriekš akceptējis konfidencialitātes politiku, bet jebkurā laikā varat pārdomāt.</string>
     <string name="camera_strings_accessibility_48_mega_pixel_txt">48 megapikseļi</string>
     <string name="camera_strings_accessibility_adjust_bokeh_txt">Pielāgot funkciju Fona pludināšana</string>
@@ -92,6 +93,27 @@ Tiks parādīti paziņojumi un dialogi. Visos atlasiet Savienot pārī, tad nosp
     <string name="camera_strings_accessibility_adjust_framing_size_smaller_txt">Kadra izmēra samazināšana</string>
     <string name="camera_strings_accessibility_adjust_framing_size_txt">Kadra izmēra pielāgošana</string>
     <string name="camera_strings_accessibility_adjust_shutter_speed_txt">Aizslēga ātrums</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_look_menu_txt">Aizvēršanas poga. Aizver izskata izvēlni.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_menu_txt">Aizvērt pielāgošanas izvēlni</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_suggests_txt">Aizvērt ieteiktos labojumus</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_menu_txt">Pašlaik pielietotais pielāgotais skats. Atver pielāgošanas izvēlni.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_txt">Pielāgots skats. Pielieto skata, spilgtuma un krāsu iestatījumus, kas reģistrēti pielāgotajā izvēlnē.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_tab_txt">Pielāgošanas cilne. Pielieto skata, spilgtuma un krāsu iestatījumus, kas reģistrēti pielāgotajā izvēlnē.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_button_txt">Pielāgošanas poga. Atver izvēlni, kurā varat veikt papildu labojumus, kad ir pielietoti ieteiktie labojumi.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_param_txt">%1$s ir iestatīt uz %2$s</string>
+    <string name="camera_strings_accessibility_ai_suggestion_first_time_txt">MI kameras asistents. Šī funkcija iesaka iestatījumus, piemēram, krāsas, atbilstoši ainai.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_four_of_some_suggests_txt">Ceturtais ieteiktais labojums</string>
+    <string name="camera_strings_accessibility_ai_suggestion_look_menu_txt">"%1$s
+Atver radošā skata izvēlni"</string>
+    <string name="camera_strings_accessibility_ai_suggestion_new_suggest_txt">Ir piedāvāti jauni ieteiktie labojumi</string>
+    <string name="camera_strings_accessibility_ai_suggestion_one_of_some_suggests_txt">Pirmais ieteiktais labojums</string>
+    <string name="camera_strings_accessibility_ai_suggestion_open_suggests_txt">Izvērst ieteiktos labojumus</string>
+    <string name="camera_strings_accessibility_ai_suggestion_reset_to_default_txt">Atiestatīt uz iestatījumiem pirms ieteikuma</string>
+    <string name="camera_strings_accessibility_ai_suggestion_selected_suggest_txt">Šie ieteiktie labojumi ir pielietoti</string>
+    <string name="camera_strings_accessibility_ai_suggestion_suggest_lens_txt">Ieteiktā objektīva poga. Ieteicams %1$sx.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_surface_of_some_suggests_txt">Ieteiktie labojumi. Pavelciet no labās puses uz kreiso, lai parādītu ieteiktos labojumus.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_three_of_some_suggests_txt">Trešais ieteiktais labojums</string>
+    <string name="camera_strings_accessibility_ai_suggestion_two_of_some_suggests_txt">Otrais ieteiktais labojums</string>
     <string name="camera_strings_accessibility_arrow_left_button_txt">Bultiņa pa kreisi</string>
     <string name="camera_strings_accessibility_arrow_right_button_txt">Bultiņa pa labi</string>
     <string name="camera_strings_accessibility_audio_level_txt">Audio līmeņa mērītājs</string>
@@ -246,6 +268,45 @@ Tiks parādīti paziņojumi un dialogi. Visos atlasiet Savienot pārī, tad nosp
     <string name="camera_strings_advanced_setting_geo_tag_title_txt">Atrašanās vietas saglabāšana</string>
     <string name="camera_strings_ai_face_restore_description_txt">Lai padarītu sejas iezīmes skaidrākas, jūs varat uzņemt fotoattēlus, uzlabojot sejas asumu</string>
     <string name="camera_strings_ai_face_restore_txt">Padarīt sejas asākas</string>
+    <string name="camera_strings_ai_suggestion_introduce_hint_text_txt">[Padomi] MI kameras asistents</string>
+    <string name="camera_strings_aisuggestion_box_name1_txt">Pielāgots</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_message_txt">Reģistrēt pašreizējos skata, spilgtuma un krāsu iestatījumus kā Pielāgotu skatu.</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_overwrite_message_txt">Skats jau ir reģistrēts kā Pielāgots. Vai pārrakstīt?</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_title_txt">Reģistrēt kā Pielāgotu skatu</string>
+    <string name="camera_strings_aisuggestion_box_title_txt">Pielāgots</string>
+    <string name="camera_strings_aisuggestion_custom_params_contrast_txt">Kontr.</string>
+    <string name="camera_strings_aisuggestion_custom_params_ev_txt">Spilgtums</string>
+    <string name="camera_strings_aisuggestion_custom_params_register_txt">Reģistrēt</string>
+    <string name="camera_strings_aisuggestion_custom_params_saturation_txt">Piesāt.</string>
+    <string name="camera_strings_aisuggestion_custom_params_title_txt">Spilgtums/krāsa</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbab_txt">Siltums</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbgm_txt">Tonis</string>
+    <string name="camera_strings_aisuggestion_customlook_register_instruction_txt">Varat jebkurā laikā izmantot reģistrētu pielāgoto izskatu no cilnes Pielāgots skats</string>
+    <string name="camera_strings_aisuggestion_description_txt">"MI automātiski identificē ainu un iesaka optimizētus pielāgojumus mazā priekšskatījumā apakšā pa labi.
+Ja piesitat pie šī mazā priekšskatījuma, automātiski tiek pielāgoti tālāk minētie iestatījumi, lai tie atbilstu ainai:
+Skats, Ekspozīcija, Baltā balanss, Piesātinājums, Kontrasts, Bokē
+*Šī funkcija ir pieejama tikai Foto režīmā.
+*Kad sākat ierakstīt video, nospiežot un pieturot aizslēga pogu, piesātinājuma, kontrasta un bokē iestatījumi netiek pielietoti."</string>
+    <string name="camera_strings_aisuggestion_guide_description1_txt">Ieteicamie pielāgojumi, balstoties uz MI ainas identifikāciju, tiek rādīti mazajā priekšskatījumā apakšā pa labi (augšā pa labi, ja turat horizontāli). Varat pielietot visus šos pielāgojumus uzreiz, piesitot pie mazā priekšskatījuma.</string>
+    <string name="camera_strings_aisuggestion_guide_description2_txt">Atkarībā no ainas var tikt ieteikts arī konkrēts objektīva iestatījums. Šajā gadījumā pēc savas vēlēšanās varat izvēlēties ieteikto objektīva iestatījumu.</string>
+    <string name="camera_strings_aisuggestion_guide_description3_txt">"Pavelkot pa kreisi mazajā priekšskatījumā apakšā pa labi (augšā pa labi, ja turat horizontāli), varat parādīt citus pielāgojumu ieteikumus.
+Jūsu atlasītais ieteikums tiek saglabāts kā jūsu vēlamais pielāgojums un tiek iekļauts ieteikumos nākamreiz, kad uzņemat līdzīgu ainu."</string>
+    <string name="camera_strings_aisuggestion_guide_description4_txt">Varat piesist pie pogas [>], lai paslēptu ieteikumus, ja tie nav vajadzīgi. Kad tiek identificēta jauna aina, poga [&lt;] iedegas, lai parādītu jums, ka ir jauni pielāgojumu ieteikumi. Lai vēlreiz pārbaudītu ieteikumus, piesitiet pie pogas [&lt;].</string>
+    <string name="camera_strings_aisuggestion_guide_description5_txt">Ja jūs piesitat pie pielāgojumu pogas pēc tam, kad esat atlasījis ieteiktos pielāgojumus, varat turpināt pielāgot iestatījumus, piemēram, spilgtumu un krāsu. Jūsu pielāgojumi tiek saglabāti ierīcē un pielietoti ieteiktajiem pielāgojumiem nākamreiz, kad tiek konstatēta līdzīga aina.</string>
+    <string name="camera_strings_aisuggestion_guide_description6_txt">Ieteiktos pielāgojumus un jūsu veiktos pielāgojumus var reģistrēt, lai jūs varētu tos jebkurā laikā ielādēt un uzņemt fotoattēlus ar tiem pašiem iestatījumiem. Piesitiet pie [Reģistrēt], lai pievienotu Pielāgotu skatu pieejamo skatu sarakstam.</string>
+    <string name="camera_strings_aisuggestion_guide_entry_txt">Kā lietot MI kameras asistentu</string>
+    <string name="camera_strings_aisuggestion_guide_title_txt">Kā lietot MI kameras asistentu</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_message_txt">Vai atiestatīt visus parametrus uz noklusējuma parametriem, tostarp krāsas, spilgtuma un jūsu vēlamos pielāgojumus?</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_title_txt">Atiestatīt parametrus</string>
+    <string name="camera_strings_aisuggestion_params_reset_txt">Atiestatīt parametrus</string>
+    <string name="camera_strings_aisuggestion_permitted_item_bokeh_txt">Bokē</string>
+    <string name="camera_strings_aisuggestion_permitted_item_lens_txt">Objektīvs</string>
+    <string name="camera_strings_aisuggestion_permitted_item_title_txt">Iekļaut ieteikumos</string>
+    <string name="camera_strings_aisuggestion_recommend_lens_ratio_txt">Ieteicams %1$s</string>
+    <string name="camera_strings_aisuggestion_return_to_default_txt">Atgriezt</string>
+    <string name="camera_strings_aisuggestion_simple_video_instruction_txt">Kad ierakstāt video, ilgi pieturot aizslēga pogu, piesātinājums, kontrasts un bokē var izskatīties citādi.</string>
+    <string name="camera_strings_aisuggestion_txt">MI kameras asistents</string>
+    <string name="camera_strings_aisuggestion_use_aissuggestion_txt">MI kameras asistents</string>
     <string name="camera_strings_anonymous_analytics_txt">Anonīma analītika</string>
     <string name="camera_strings_application_name">Kamera</string>
     <string name="camera_strings_application_name_google_lens_txt">Google Lens</string>
@@ -421,6 +482,7 @@ Drošība:
     <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Nevar izveidot savienojumu ar Wi-Fi</string>
     <string name="camera_strings_dialog_user_data_collection_txt">Ja tālāk apliecināt savu piekrišanu, Sony apkopos jūsu &lt;b>&lt;a href=#personas-datus>personas datus&lt;/a>&lt;/b>, lai nodrošinātu pielāgotu atbalstu un uzlabotu ierīces un pakalpojumus. Sony rīkosies ar jūsu datiem saskaņā ar mūsu &lt;b>&lt;a href=https://www.sonymobile.com/privacy/>Privacy Policy&lt;/a>&lt;/b>.</string>
     <string name="camera_strings_dialog_video_hdr_hlg_supported_short_description_txt">Dažas ierīces/pakalpojumi var nespēt reproducēt HDR satura oriģinālo krāsu un spilgtumu. Lai baudītu HDR saturu, lūdzu, izmantojiet ierīces/pakalpojumus, kas atbalsta HDR.</string>
+    <string name="camera_strings_digital_tripod_hint_edge_txt">Kompozīcija ir novirzījusies. Pavērsiet kameru pret sākotnējo subjektu.</string>
     <string name="camera_strings_digital_zoom_type_description_txt">"Atlasiet digitālās tālummaiņas iestatījumu.
 
 Standarta digitālā tālummaiņa: regulējiet tālummaiņu, izmantojot digitālo apstrādi atkarībā no attēlu sensora datiem.
@@ -484,6 +546,7 @@ Lai to mainītu, pārtrauciet straumēšanu, pēc tam pārejiet uz lietotni Face
     <string name="camera_strings_fast_capturing_screen_locked_settings_txt">Lai atvērtu iestatījumus, atbloķējiet ekrānu.</string>
     <string name="camera_strings_fast_capturing_screen_locked_streaming_txt">Lai sāktu straumēšanu, atbloķējiet ekrānu.</string>
     <string name="camera_strings_fast_capturing_screen_locked_title_txt">Ekrāns bloķēts</string>
+    <string name="camera_strings_feature_creative_look_custom_description_txt">Jūs varat reģistrēt skata un spilgtuma/krāsu iestatījumus.</string>
     <string name="camera_strings_feature_creative_look_description_txt">"Varat izvēlēties attēlu apstrādi (attēlu vai filmu), atlasot \"skats\".
 
 Radošs skats piedāvā 6 iestatījuma skatus. Visi ir optimizēti ar atšķirīgu krāsu toņa, piesātinājuma, kontrasta, asuma, spilgtuma un citu attēla elementu kombināciju, lai jūs varētu iestatīt attēlu apstrādi ar sev vistīkamāko šo elementu balansu."</string>
@@ -567,6 +630,7 @@ Piesitiet pie subjekta, kuram gribat sekot."</string>
     <string name="camera_strings_framing_orientation_description_txt">"Jūs varat izvēlēties apgriezt subjektu vai nu horizontālā vai vertikālā kadrā.
 Iestatiet uz [Automātiski], lai padarītu apgriešanas orientāciju tādu pašu kā ierīces orientāciju."</string>
     <string name="camera_strings_framing_select_subject_to_track_txt">Piesitiet subjektam, kura pozīciju vēlaties bloķēt</string>
+    <string name="camera_strings_framing_setting_guide_title_txt">Par funkciju Automā. kadru veidošana</string>
     <string name="camera_strings_framing_setting_orientation_landscape_txt">Horizontāli</string>
     <string name="camera_strings_framing_setting_orientation_portrait_txt">Vertikāli</string>
     <string name="camera_strings_framing_setting_orientation_title_txt">Kadra orientācija</string>
@@ -574,6 +638,7 @@ Iestatiet uz [Automātiski], lai padarītu apgriešanas orientāciju tādu pašu
 Apgrieztie ieraksti tiek saglabāti pilnā HD režīma izšķirtspējā. Neapgrieztie ieraksti tiek saglabāti kā 4K."</string>
     <string name="camera_strings_framing_setting_save_original_video_off_txt">Pilna ekrāna ieraksts: izslēgts</string>
     <string name="camera_strings_framing_setting_save_original_video_title_txt">Pilna ekrāna ieraksts</string>
+    <string name="camera_strings_framing_setting_snapshot_description_txt">Neatkarīgi no tā vai funkcija [Pilna ekrāna ieraksts] ir ieslēgta vai izslēgta, momentuzņēmumi, kas uzņemti video uzņemšanas laikā, tiek saglabāti pilnekrāna režīmā.</string>
     <string name="camera_strings_geotagging_description_txt">Saglabājiet savus fotoattēlus un video kopā ar informāciju par to uzņemšanas vietām</string>
     <string name="camera_strings_geotagging_txt">Atrašanās vietas saglabāšana</string>
     <string name="camera_strings_gimbal_mode_tab_label">MI veikta uzņemšana</string>
@@ -592,6 +657,7 @@ Tas dod iespēju uzņemt stabilu video pat nestabilās situācijās, piemēram, 
     <string name="camera_strings_gimbal_setting_assist_method_locking_hint_txt">Sub. pozīcijas bloķētājs: man.</string>
     <string name="camera_strings_gimbal_setting_assist_method_locking_txt">Manuāli</string>
     <string name="camera_strings_gimbal_setting_assist_method_title_txt">Subj. poz. bloķētājs</string>
+    <string name="camera_strings_gimbal_setting_guide_title_txt">Par funkciju MI veikta uzņemšana</string>
     <string name="camera_strings_gridline_description_txt">Iestatiet, vai parādīt vai paslēpt režģlīnijas, kas jums palīdz izveidot attēla kompozīciju</string>
     <string name="camera_strings_gridline_txt">Režģlīnijas</string>
     <string name="camera_strings_hand_shutter_description_updated_txt">Varat uzsākt taimera laika atskaiti, pavēršot savu plaukstu pret priekšējo kameru. Lai atvieglotu noteikšanu, izvērsiet pirkstus uz augšu.</string>
@@ -727,6 +793,7 @@ Momentuzņēmumos, kuri uzņemti video ierakstīšanas laikā, vienmēr tiek izm
     <string name="camera_strings_notification_channel_title_saving_process_txt">Saglabāšanas process</string>
     <string name="camera_strings_notification_text_saving_in_progress_txt">Lūdzu, uzgaidiet, līdz saglabāšana ir pabeigta</string>
     <string name="camera_strings_notification_title_saving_in_progress_txt">Saglabā</string>
+    <string name="camera_strings_notify_saving_process_cannot_launch_app_by_hw_shutter_txt">Aizslēga pogas nospiešana var nepalaist kameru saglabāšanas laikā</string>
     <string name="camera_strings_ok_txt">Labi</string>
     <string name="camera_strings_peaking_color_blue_txt">Zils</string>
     <string name="camera_strings_peaking_color_red_txt">Sarkana</string>
@@ -735,6 +802,7 @@ Momentuzņēmumos, kuri uzņemti video ierakstīšanas laikā, vienmēr tiek izm
     <string name="camera_strings_peaking_color_yellow_txt">Dzeltens</string>
     <string name="camera_strings_peaking_txt">Kontūru izcelšana</string>
     <string name="camera_strings_personal_data_txt">Personiskie dati</string>
+    <string name="camera_strings_photopro_setting_guide_title_txt">Par funkciju Pro fotoattēls</string>
     <string name="camera_strings_privacy_policy_txt">Konfidencialitātes politika</string>
     <string name="camera_strings_pro_tips_computational_photo_description_txt">"Pat P režīmā kamera automātiski nosaka sižetu un uzņem skaistus automātiskos uzņēmumus, samazinot izplūšanu, troksni, pārāk lielu un pārāk mazu ekspozīciju.
 Ja jūs to neizmantojat, varat to izslēgt, izmantojot Fn pogu vai IZVĒLNĒ."</string>
@@ -965,6 +1033,7 @@ Ja joprojām vēlaties kā datu krātuvi izmantot SD karti, izmantojiet ātrdarb
     <string name="camera_strings_video_stabilization_description_sub_txt">Piezīme. Augsta kvalitāte var samazināt ieraksta ilgumu ierīces temperatūras paaugstināšanās dēļ.</string>
     <string name="camera_strings_video_stabilization_description_txt">Xperia ir unikāla hibrīda stabilizācijas sistēma, ko sauc par Optical SteadyShot — tā vienlaikus apvieno optisko attēla stabilizāciju un elektronisko attēla stabilizāciju. Tā jums sniedz stabilus un vienmērīgus video, pat ierakstot tos, kad atrodaties kustībā.</string>
     <string name="camera_strings_video_stabilization_high_quality_images_txt">Augsta kvalitāte</string>
+    <string name="camera_strings_videopro_setting_guide_title_txt">Par funkciju Pro video</string>
     <string name="camera_strings_volume_distortion_correction_description_txt">Koriģē seju deformācijas, kas veidojas ekrāna malu tuvumā, izmantojot īpaši platu objektīvu. Tādēļ fons var izskatīties izkropļots vai skata leņķis var izskatīties sašaurināts.</string>
     <string name="camera_strings_volume_distortion_correction_front_description_txt">Koriģē seju izkropļojumus, kas veidojas ekrāna malu tuvumā. Tādēļ fons var izskatīties izkropļots vai skata leņķis var izskatīties sašaurināts.</string>
     <string name="camera_strings_volume_distortion_correction_txt">Sejas deformācijas korekcija</string>
@@ -1042,8 +1111,25 @@ Nav tīkla savienojuma."</string>
     <string name="clear_text_end_icon_content_description">Notīrīt tekstu</string>
     <string name="close_drawer">Aizvērt navigācijas izvēlni</string>
     <string name="close_sheet">Aizvērt izklājlapu</string>
+    <string name="common_google_play_services_enable_button">Iespējot</string>
+    <string name="common_google_play_services_enable_text">Lai lietotne %1$s darbotos, ir jāiespējo Google Play pakalpojumi.</string>
+    <string name="common_google_play_services_enable_title">Google Play pakalpojumu iespējošana</string>
+    <string name="common_google_play_services_install_button">Instalēt</string>
+    <string name="common_google_play_services_install_text">Lai lietotne %1$s darbotos, ierīcē ir jāinstalē Google Play pakalpojumi.</string>
+    <string name="common_google_play_services_install_title">Google Play pakalpojumu iegūšana</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play pakalpojumu pieejamība</string>
+    <string name="common_google_play_services_notification_ticker">Google Play pakalpojumu kļūda</string>
+    <string name="common_google_play_services_unknown_issue">Lietotnē %1$s ir radusies problēma ar Google Play pakalpojumu darbību. Lūdzu, mēģiniet vēlreiz.</string>
+    <string name="common_google_play_services_unsupported_text">Lai lietotne %1$s darbotos, ir nepieciešami Google Play pakalpojumi, taču jūsu ierīce tos neatbalsta.</string>
+    <string name="common_google_play_services_update_button">Atjaunināt</string>
+    <string name="common_google_play_services_update_text">Lai lietotne %1$s darbotos, jums ir jāatjaunina Google Play pakalpojumi.</string>
+    <string name="common_google_play_services_update_title">Google Play pakalpojumu atjaunināšana</string>
+    <string name="common_google_play_services_updating_text">Lai lietotne %1$s darbotos, ir jāinstalē Google Play pakalpojumi. Pašlaik notiek to atjaunināšana.</string>
+    <string name="common_google_play_services_wear_update_text">Ir nepieciešama jauna Google Play pakalpojumu versija. Drīzumā tā tiks instalēta.</string>
+    <string name="common_open_on_phone">Atvērt tālrunī</string>
+    <string name="common_signin_button_text">Pierakstīties</string>
+    <string name="common_signin_button_text_long">Pierakstīties ar Google kontu</string>
     <string name="copy">Kopēt</string>
-    <string name="copy_toast_msg">Saite ir kopēta starpliktuvē.</string>
     <string name="default_error_message">Nederīga ievade</string>
     <string name="default_popup_window_title">Uznirstošais logs</string>
     <string name="dropdown_menu">Nolaižamā izvēlne</string>
@@ -1054,9 +1140,6 @@ Nav tīkla savienojuma."</string>
     <string name="external_display_connected_description_txt">Skatu meklētāju var izmantot videoemuāru monitorā</string>
     <string name="external_display_connected_title_txt">Videoemuāru monitors pievienots</string>
     <string name="external_display_note_about_external_mic_txt">Piezīme: lai izmantotu ārējo mikrofonu, lūdzu, pirms ierakstīšanas pieslēdziet to videomemuāru monitoram. Ja to pieslēgsiet vēlāk, jums var būt no jauna jāpieslēdz videomemuāru monitors.</string>
-    <string name="fallback_menu_item_copy_link">Kopēt saiti</string>
-    <string name="fallback_menu_item_open_in_browser">Atvērt pārlūkprogrammā</string>
-    <string name="fallback_menu_item_share_link">Kopīgot saiti</string>
     <string name="icon_content_description">Dialoglodziņa ikona</string>
     <string name="in_progress">Notiek apstrāde</string>
     <string name="indeterminate">Daļēji atzīmēta</string>

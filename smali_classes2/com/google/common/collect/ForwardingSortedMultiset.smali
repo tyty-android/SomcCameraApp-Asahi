@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/collect/ForwardingSortedMultiset$StandardDescendingMultiset;,
@@ -31,7 +34,7 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 50
+    .line 51
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingMultiset;-><init>()V
 
     return-void
@@ -49,7 +52,7 @@
         }
     .end annotation
 
-    .line 82
+    .line 83
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedMultiset;->delegate()Lcom/google/common/collect/SortedMultiset;
 
     move-result-object p0
@@ -64,7 +67,7 @@
 .method protected bridge synthetic delegate()Lcom/google/common/collect/Multiset;
     .locals 0
 
-    .line 45
+    .line 46
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedMultiset;->delegate()Lcom/google/common/collect/SortedMultiset;
 
     move-result-object p0
@@ -85,7 +88,7 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 45
+    .line 46
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedMultiset;->delegate()Lcom/google/common/collect/SortedMultiset;
 
     move-result-object p0
@@ -96,7 +99,7 @@
 .method protected bridge synthetic delegate()Ljava/util/Collection;
     .locals 0
 
-    .line 45
+    .line 46
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedMultiset;->delegate()Lcom/google/common/collect/SortedMultiset;
 
     move-result-object p0
@@ -114,7 +117,7 @@
         }
     .end annotation
 
-    .line 87
+    .line 88
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedMultiset;->delegate()Lcom/google/common/collect/SortedMultiset;
 
     move-result-object p0
@@ -136,7 +139,7 @@
         }
     .end annotation
 
-    .line 57
+    .line 58
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedMultiset;->delegate()Lcom/google/common/collect/SortedMultiset;
 
     move-result-object p0
@@ -151,7 +154,7 @@
 .method public bridge synthetic elementSet()Ljava/util/Set;
     .locals 0
 
-    .line 45
+    .line 46
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedMultiset;->elementSet()Ljava/util/NavigableSet;
 
     move-result-object p0
@@ -162,7 +165,7 @@
 .method public bridge synthetic elementSet()Ljava/util/SortedSet;
     .locals 0
 
-    .line 45
+    .line 46
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedMultiset;->elementSet()Ljava/util/NavigableSet;
 
     move-result-object p0
@@ -180,7 +183,10 @@
         }
     .end annotation
 
-    .line 114
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 116
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedMultiset;->delegate()Lcom/google/common/collect/SortedMultiset;
 
     move-result-object p0
@@ -194,6 +200,21 @@
 
 .method public headMultiset(Ljava/lang/Object;Lcom/google/common/collect/BoundType;)Lcom/google/common/collect/SortedMultiset;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "upperBound",
+            "boundType"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;",
@@ -204,7 +225,7 @@
         }
     .end annotation
 
-    .line 200
+    .line 209
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedMultiset;->delegate()Lcom/google/common/collect/SortedMultiset;
 
     move-result-object p0
@@ -226,7 +247,10 @@
         }
     .end annotation
 
-    .line 134
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 138
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedMultiset;->delegate()Lcom/google/common/collect/SortedMultiset;
 
     move-result-object p0
@@ -248,7 +272,10 @@
         }
     .end annotation
 
-    .line 155
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 161
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedMultiset;->delegate()Lcom/google/common/collect/SortedMultiset;
 
     move-result-object p0
@@ -270,7 +297,10 @@
         }
     .end annotation
 
-    .line 177
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 185
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedMultiset;->delegate()Lcom/google/common/collect/SortedMultiset;
 
     move-result-object p0
@@ -292,7 +322,10 @@
         }
     .end annotation
 
-    .line 124
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 127
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedMultiset;->entrySet()Ljava/util/Set;
 
     move-result-object p0
@@ -301,7 +334,7 @@
 
     move-result-object p0
 
-    .line 125
+    .line 128
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
@@ -312,7 +345,7 @@
 
     return-object p0
 
-    .line 128
+    .line 131
     :cond_0
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -320,7 +353,7 @@
 
     check-cast p0, Lcom/google/common/collect/Multiset$Entry;
 
-    .line 129
+    .line 132
     invoke-interface {p0}, Lcom/google/common/collect/Multiset$Entry;->getElement()Ljava/lang/Object;
 
     move-result-object v0
@@ -346,7 +379,10 @@
         }
     .end annotation
 
-    .line 145
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 150
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedMultiset;->descendingMultiset()Lcom/google/common/collect/SortedMultiset;
 
     move-result-object p0
@@ -359,7 +395,7 @@
 
     move-result-object p0
 
-    .line 146
+    .line 151
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
@@ -370,7 +406,7 @@
 
     return-object p0
 
-    .line 149
+    .line 154
     :cond_0
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -378,7 +414,7 @@
 
     check-cast p0, Lcom/google/common/collect/Multiset$Entry;
 
-    .line 150
+    .line 155
     invoke-interface {p0}, Lcom/google/common/collect/Multiset$Entry;->getElement()Ljava/lang/Object;
 
     move-result-object v0
@@ -404,7 +440,10 @@
         }
     .end annotation
 
-    .line 165
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 172
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedMultiset;->entrySet()Ljava/util/Set;
 
     move-result-object p0
@@ -413,7 +452,7 @@
 
     move-result-object p0
 
-    .line 166
+    .line 173
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
@@ -424,7 +463,7 @@
 
     return-object p0
 
-    .line 169
+    .line 176
     :cond_0
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -432,7 +471,7 @@
 
     check-cast v0, Lcom/google/common/collect/Multiset$Entry;
 
-    .line 170
+    .line 177
     invoke-interface {v0}, Lcom/google/common/collect/Multiset$Entry;->getElement()Ljava/lang/Object;
 
     move-result-object v1
@@ -445,7 +484,7 @@
 
     move-result-object v0
 
-    .line 171
+    .line 178
     invoke-interface {p0}, Ljava/util/Iterator;->remove()V
 
     return-object v0
@@ -461,7 +500,10 @@
         }
     .end annotation
 
-    .line 188
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 197
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedMultiset;->descendingMultiset()Lcom/google/common/collect/SortedMultiset;
 
     move-result-object p0
@@ -474,7 +516,7 @@
 
     move-result-object p0
 
-    .line 189
+    .line 198
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
@@ -485,7 +527,7 @@
 
     return-object p0
 
-    .line 192
+    .line 201
     :cond_0
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -493,7 +535,7 @@
 
     check-cast v0, Lcom/google/common/collect/Multiset$Entry;
 
-    .line 193
+    .line 202
     invoke-interface {v0}, Lcom/google/common/collect/Multiset$Entry;->getElement()Ljava/lang/Object;
 
     move-result-object v1
@@ -506,7 +548,7 @@
 
     move-result-object v0
 
-    .line 194
+    .line 203
     invoke-interface {p0}, Ljava/util/Iterator;->remove()V
 
     return-object v0
@@ -514,6 +556,29 @@
 
 .method protected standardSubMultiset(Ljava/lang/Object;Lcom/google/common/collect/BoundType;Ljava/lang/Object;Lcom/google/common/collect/BoundType;)Lcom/google/common/collect/SortedMultiset;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .param p3    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "lowerBound",
+            "lowerBoundType",
+            "upperBound",
+            "upperBoundType"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;",
@@ -526,7 +591,7 @@
         }
     .end annotation
 
-    .line 219
+    .line 234
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/ForwardingSortedMultiset;->tailMultiset(Ljava/lang/Object;Lcom/google/common/collect/BoundType;)Lcom/google/common/collect/SortedMultiset;
 
     move-result-object p0
@@ -540,6 +605,29 @@
 
 .method public subMultiset(Ljava/lang/Object;Lcom/google/common/collect/BoundType;Ljava/lang/Object;Lcom/google/common/collect/BoundType;)Lcom/google/common/collect/SortedMultiset;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .param p3    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "lowerBound",
+            "lowerBoundType",
+            "upperBound",
+            "upperBoundType"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;",
@@ -552,7 +640,7 @@
         }
     .end annotation
 
-    .line 206
+    .line 218
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedMultiset;->delegate()Lcom/google/common/collect/SortedMultiset;
 
     move-result-object p0
@@ -566,6 +654,21 @@
 
 .method public tailMultiset(Ljava/lang/Object;Lcom/google/common/collect/BoundType;)Lcom/google/common/collect/SortedMultiset;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "lowerBound",
+            "boundType"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;",
@@ -576,7 +679,7 @@
         }
     .end annotation
 
-    .line 224
+    .line 239
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedMultiset;->delegate()Lcom/google/common/collect/SortedMultiset;
 
     move-result-object p0

@@ -53,6 +53,16 @@
 
 .method private isAvailableNow(Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;Ljp/co/sony/mc/camera/util/KeyEventTranslator$KeyAction;)Z
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "code",
+            "action"
+        }
+    .end annotation
 
     .line 242
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/KeyEventTranslator;->mCurrentKeyType:Ljp/co/sony/mc/camera/util/KeyEventTranslator$KeyType;
@@ -272,6 +282,23 @@
 
 .method private isExpectedKeyType(Ljp/co/sony/mc/camera/util/KeyEventTranslator$KeyAction;Ljava/util/EnumSet;Ljp/co/sony/mc/camera/util/KeyEventTranslator$KeyType;Ljava/util/EnumSet;Ljp/co/sony/mc/camera/util/KeyEventTranslator$KeyType;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "action",
+            "expectedTypeOnDown",
+            "currentTypeOnDown",
+            "expectedTypeOnUp",
+            "currentTypeOnUp"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -385,6 +412,14 @@
 
 .method public static translateKeyCode(I)Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "keyCode"
+        }
+    .end annotation
 
     const/4 v0, 0x4
 
@@ -622,6 +657,14 @@
 
 .method private static translateZoomKey(I)Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "keyCode"
+        }
+    .end annotation
 
     const/16 v0, 0x18
 
@@ -681,6 +724,14 @@
 
 .method public setKeyEventMonitorListener(Ljp/co/sony/mc/camera/util/KeyEventTranslator$KeyEventMonitorListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 101
     iput-object p1, p0, Ljp/co/sony/mc/camera/util/KeyEventTranslator;->mKeyHandleListener:Ljp/co/sony/mc/camera/util/KeyEventTranslator$KeyEventMonitorListener;
@@ -690,6 +741,14 @@
 
 .method public translateKeyCodeOnDown(I)Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "keyCode"
+        }
+    .end annotation
 
     .line 204
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/KeyEventTranslator;->translateKeyCode(I)Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
@@ -714,6 +773,14 @@
 
 .method public translateKeyCodeOnLongPress(I)Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "keyCode"
+        }
+    .end annotation
 
     .line 228
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/KeyEventTranslator;->translateKeyCode(I)Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
@@ -738,6 +805,14 @@
 
 .method public translateKeyCodeOnUp(I)Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "keyCode"
+        }
+    .end annotation
 
     .line 216
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/KeyEventTranslator;->translateKeyCode(I)Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;

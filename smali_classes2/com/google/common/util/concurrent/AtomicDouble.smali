@@ -6,6 +6,11 @@
 .implements Ljava/io/Serializable;
 
 
+# annotations
+.annotation runtime Lcom/google/common/util/concurrent/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # static fields
 .field private static final serialVersionUID:J
 
@@ -20,7 +25,7 @@
 
     const-wide/16 v0, 0x0
 
-    .line 69
+    .line 74
     invoke-direct {p0, v0, v1}, Lcom/google/common/util/concurrent/AtomicDouble;-><init>(D)V
 
     return-void
@@ -28,11 +33,19 @@
 
 .method public constructor <init>(D)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "initialValue"
+        }
+    .end annotation
 
-    .line 63
+    .line 68
     invoke-direct {p0}, Ljava/lang/Number;-><init>()V
 
-    .line 64
+    .line 69
     new-instance v0, Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-static {p1, p2}, Ljava/lang/Double;->doubleToRawLongBits(D)J
@@ -48,6 +61,15 @@
 
 .method private readObject(Ljava/io/ObjectInputStream;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "s"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -55,17 +77,17 @@
         }
     .end annotation
 
-    .line 237
+    .line 242
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->defaultReadObject()V
 
-    .line 238
+    .line 243
     new-instance v0, Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicLong;-><init>()V
 
     iput-object v0, p0, Lcom/google/common/util/concurrent/AtomicDouble;->value:Ljava/util/concurrent/atomic/AtomicLong;
 
-    .line 239
+    .line 244
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readDouble()D
 
     move-result-wide v0
@@ -77,16 +99,25 @@
 
 .method private writeObject(Ljava/io/ObjectOutputStream;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "s"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 229
+    .line 235
     invoke-virtual {p1}, Ljava/io/ObjectOutputStream;->defaultWriteObject()V
 
-    .line 231
+    .line 237
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/AtomicDouble;->get()D
 
     move-result-wide v0
@@ -100,8 +131,16 @@
 # virtual methods
 .method public final addAndGet(D)D
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "delta"
+        }
+    .end annotation
 
-    .line 170
+    .line 176
     :cond_0
     iget-object v0, p0, Lcom/google/common/util/concurrent/AtomicDouble;->value:Ljava/util/concurrent/atomic/AtomicLong;
 
@@ -109,19 +148,19 @@
 
     move-result-wide v0
 
-    .line 171
+    .line 177
     invoke-static {v0, v1}, Ljava/lang/Double;->longBitsToDouble(J)D
 
     move-result-wide v2
 
     add-double/2addr v2, p1
 
-    .line 173
+    .line 179
     invoke-static {v2, v3}, Ljava/lang/Double;->doubleToRawLongBits(D)J
 
     move-result-wide v4
 
-    .line 174
+    .line 180
     iget-object v6, p0, Lcom/google/common/util/concurrent/AtomicDouble;->value:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {v6, v0, v1, v4, v5}, Ljava/util/concurrent/atomic/AtomicLong;->compareAndSet(JJ)Z
@@ -135,8 +174,18 @@
 
 .method public final compareAndSet(DD)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "expect",
+            "update"
+        }
+    .end annotation
 
-    .line 122
+    .line 127
     iget-object p0, p0, Lcom/google/common/util/concurrent/AtomicDouble;->value:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-static {p1, p2}, Ljava/lang/Double;->doubleToRawLongBits(D)J
@@ -157,7 +206,7 @@
 .method public doubleValue()D
     .locals 2
 
-    .line 220
+    .line 226
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/AtomicDouble;->get()D
 
     move-result-wide v0
@@ -168,7 +217,7 @@
 .method public floatValue()F
     .locals 2
 
-    .line 214
+    .line 220
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/AtomicDouble;->get()D
 
     move-result-wide v0
@@ -181,7 +230,7 @@
 .method public final get()D
     .locals 2
 
-    .line 78
+    .line 83
     iget-object p0, p0, Lcom/google/common/util/concurrent/AtomicDouble;->value:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
@@ -197,8 +246,16 @@
 
 .method public final getAndAdd(D)D
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "delta"
+        }
+    .end annotation
 
-    .line 151
+    .line 156
     :cond_0
     iget-object v0, p0, Lcom/google/common/util/concurrent/AtomicDouble;->value:Ljava/util/concurrent/atomic/AtomicLong;
 
@@ -206,19 +263,19 @@
 
     move-result-wide v0
 
-    .line 152
+    .line 157
     invoke-static {v0, v1}, Ljava/lang/Double;->longBitsToDouble(J)D
 
     move-result-wide v2
 
     add-double v4, v2, p1
 
-    .line 154
+    .line 159
     invoke-static {v4, v5}, Ljava/lang/Double;->doubleToRawLongBits(D)J
 
     move-result-wide v4
 
-    .line 155
+    .line 160
     iget-object v6, p0, Lcom/google/common/util/concurrent/AtomicDouble;->value:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {v6, v0, v1, v4, v5}, Ljava/util/concurrent/atomic/AtomicLong;->compareAndSet(JJ)Z
@@ -232,13 +289,21 @@
 
 .method public final getAndSet(D)D
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "newValue"
+        }
+    .end annotation
 
-    .line 108
+    .line 113
     invoke-static {p1, p2}, Ljava/lang/Double;->doubleToRawLongBits(D)J
 
     move-result-wide p1
 
-    .line 109
+    .line 114
     iget-object p0, p0, Lcom/google/common/util/concurrent/AtomicDouble;->value:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {p0, p1, p2}, Ljava/util/concurrent/atomic/AtomicLong;->getAndSet(J)J
@@ -255,7 +320,7 @@
 .method public intValue()I
     .locals 2
 
-    .line 196
+    .line 202
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/AtomicDouble;->get()D
 
     move-result-wide v0
@@ -267,13 +332,21 @@
 
 .method public final lazySet(D)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "newValue"
+        }
+    .end annotation
 
-    .line 97
+    .line 102
     invoke-static {p1, p2}, Ljava/lang/Double;->doubleToRawLongBits(D)J
 
     move-result-wide p1
 
-    .line 98
+    .line 103
     iget-object p0, p0, Lcom/google/common/util/concurrent/AtomicDouble;->value:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {p0, p1, p2}, Ljava/util/concurrent/atomic/AtomicLong;->lazySet(J)V
@@ -284,7 +357,7 @@
 .method public longValue()J
     .locals 2
 
-    .line 205
+    .line 211
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/AtomicDouble;->get()D
 
     move-result-wide v0
@@ -296,13 +369,21 @@
 
 .method public final set(D)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "newValue"
+        }
+    .end annotation
 
-    .line 87
+    .line 92
     invoke-static {p1, p2}, Ljava/lang/Double;->doubleToRawLongBits(D)J
 
     move-result-wide p1
 
-    .line 88
+    .line 93
     iget-object p0, p0, Lcom/google/common/util/concurrent/AtomicDouble;->value:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {p0, p1, p2}, Ljava/util/concurrent/atomic/AtomicLong;->set(J)V
@@ -313,7 +394,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 187
+    .line 193
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/AtomicDouble;->get()D
 
     move-result-wide v0
@@ -327,8 +408,18 @@
 
 .method public final weakCompareAndSet(DD)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "expect",
+            "update"
+        }
+    .end annotation
 
-    .line 139
+    .line 144
     iget-object p0, p0, Lcom/google/common/util/concurrent/AtomicDouble;->value:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-static {p1, p2}, Ljava/lang/Double;->doubleToRawLongBits(D)J

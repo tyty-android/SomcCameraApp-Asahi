@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<T:",
@@ -43,7 +46,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -51,6 +54,17 @@
 # direct methods
 .method private constructor <init>(Ljava/util/Comparator;I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "comparator",
+            "k"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -59,10 +73,10 @@
         }
     .end annotation
 
-    .line 115
+    .line 125
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 116
+    .line 126
     const-string v0, "comparator"
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -73,7 +87,7 @@
 
     iput-object p1, p0, Lcom/google/common/collect/TopKSelector;->comparator:Ljava/util/Comparator;
 
-    .line 117
+    .line 127
     iput p2, p0, Lcom/google/common/collect/TopKSelector;->k:I
 
     const/4 p1, 0x1
@@ -89,7 +103,7 @@
     :cond_0
     move v1, v0
 
-    .line 118
+    .line 128
     :goto_0
     const-string v2, "k (%s) must be >= 0"
 
@@ -104,7 +118,7 @@
     :cond_1
     move p1, v0
 
-    .line 119
+    .line 129
     :goto_1
     const-string v1, "k (%s) must be <= Integer.MAX_VALUE / 2"
 
@@ -112,7 +126,7 @@
 
     const/4 p1, 0x2
 
-    .line 120
+    .line 130
     invoke-static {p2, p1}, Lcom/google/common/math/IntMath;->checkedMultiply(II)I
 
     move-result p1
@@ -121,12 +135,12 @@
 
     iput-object p1, p0, Lcom/google/common/collect/TopKSelector;->buffer:[Ljava/lang/Object;
 
-    .line 121
+    .line 131
     iput v0, p0, Lcom/google/common/collect/TopKSelector;->bufferSize:I
 
     const/4 p1, 0x0
 
-    .line 122
+    .line 132
     iput-object p1, p0, Lcom/google/common/collect/TopKSelector;->threshold:Ljava/lang/Object;
 
     return-void
@@ -134,6 +148,15 @@
 
 .method public static greatest(I)Lcom/google/common/collect/TopKSelector;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "k"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T::",
@@ -144,7 +167,7 @@
         }
     .end annotation
 
-    .line 85
+    .line 93
     invoke-static {}, Lcom/google/common/collect/Ordering;->natural()Lcom/google/common/collect/Ordering;
 
     move-result-object v0
@@ -158,6 +181,17 @@
 
 .method public static greatest(ILjava/util/Comparator;)Lcom/google/common/collect/TopKSelector;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "k",
+            "comparator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -170,7 +204,7 @@
         }
     .end annotation
 
-    .line 95
+    .line 104
     new-instance v0, Lcom/google/common/collect/TopKSelector;
 
     invoke-static {p1}, Lcom/google/common/collect/Ordering;->from(Ljava/util/Comparator;)Lcom/google/common/collect/Ordering;
@@ -188,6 +222,15 @@
 
 .method public static least(I)Lcom/google/common/collect/TopKSelector;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "k"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T::",
@@ -198,7 +241,7 @@
         }
     .end annotation
 
-    .line 64
+    .line 71
     invoke-static {}, Lcom/google/common/collect/Ordering;->natural()Lcom/google/common/collect/Ordering;
 
     move-result-object v0
@@ -212,6 +255,17 @@
 
 .method public static least(ILjava/util/Comparator;)Lcom/google/common/collect/TopKSelector;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "k",
+            "comparator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -224,7 +278,7 @@
         }
     .end annotation
 
-    .line 74
+    .line 82
     new-instance v0, Lcom/google/common/collect/TopKSelector;
 
     invoke-direct {v0, p1, p0}, Lcom/google/common/collect/TopKSelector;-><init>(Ljava/util/Comparator;I)V
@@ -234,36 +288,58 @@
 
 .method private partition(III)I
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "left",
+            "right",
+            "pivotIndex"
+        }
+    .end annotation
 
-    .line 201
+    .line 217
     iget-object v0, p0, Lcom/google/common/collect/TopKSelector;->buffer:[Ljava/lang/Object;
 
-    aget-object v1, v0, p3
+    aget-object v0, v0, p3
 
-    .line 202
-    aget-object v2, v0, p2
+    invoke-static {v0}, Lcom/google/common/collect/NullnessCasts;->uncheckedCastNullableTToT(Ljava/lang/Object;)Ljava/lang/Object;
 
-    aput-object v2, v0, p3
+    move-result-object v0
+
+    .line 218
+    iget-object v1, p0, Lcom/google/common/collect/TopKSelector;->buffer:[Ljava/lang/Object;
+
+    aget-object v2, v1, p2
+
+    aput-object v2, v1, p3
 
     move p3, p1
 
     :goto_0
     if-ge p1, p2, :cond_1
 
-    .line 206
-    iget-object v0, p0, Lcom/google/common/collect/TopKSelector;->comparator:Ljava/util/Comparator;
+    .line 222
+    iget-object v1, p0, Lcom/google/common/collect/TopKSelector;->comparator:Ljava/util/Comparator;
 
     iget-object v2, p0, Lcom/google/common/collect/TopKSelector;->buffer:[Ljava/lang/Object;
 
     aget-object v2, v2, p1
 
-    invoke-interface {v0, v2, v1}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    invoke-static {v2}, Lcom/google/common/collect/NullnessCasts;->uncheckedCastNullableTToT(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result v0
+    move-result-object v2
 
-    if-gez v0, :cond_0
+    invoke-interface {v1, v2, v0}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
-    .line 207
+    move-result v1
+
+    if-gez v1, :cond_0
+
+    .line 223
     invoke-direct {p0, p3, p1}, Lcom/google/common/collect/TopKSelector;->swap(II)V
 
     add-int/lit8 p3, p3, 0x1
@@ -273,7 +349,7 @@
 
     goto :goto_0
 
-    .line 211
+    .line 227
     :cond_1
     iget-object p0, p0, Lcom/google/common/collect/TopKSelector;->buffer:[Ljava/lang/Object;
 
@@ -281,26 +357,36 @@
 
     aput-object p1, p0, p2
 
-    .line 212
-    aput-object v1, p0, p3
+    .line 228
+    aput-object v0, p0, p3
 
     return p3
 .end method
 
 .method private swap(II)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "i",
+            "j"
+        }
+    .end annotation
 
-    .line 217
+    .line 233
     iget-object p0, p0, Lcom/google/common/collect/TopKSelector;->buffer:[Ljava/lang/Object;
 
     aget-object v0, p0, p1
 
-    .line 218
+    .line 234
     aget-object v1, p0, p2
 
     aput-object v1, p0, p1
 
-    .line 219
+    .line 235
     aput-object v0, p0, p2
 
     return-void
@@ -309,14 +395,14 @@
 .method private trim()V
     .locals 7
 
-    .line 156
+    .line 168
     iget v0, p0, Lcom/google/common/collect/TopKSelector;->k:I
 
     mul-int/lit8 v0, v0, 0x2
 
     add-int/lit8 v0, v0, -0x1
 
-    .line 163
+    .line 175
     sget-object v1, Ljava/math/RoundingMode;->CEILING:Ljava/math/RoundingMode;
 
     invoke-static {v0, v1}, Lcom/google/common/math/IntMath;->log2(ILjava/math/RoundingMode;)I
@@ -340,12 +426,12 @@
 
     ushr-int/lit8 v5, v5, 0x1
 
-    .line 167
+    .line 179
     invoke-direct {p0, v2, v0, v5}, Lcom/google/common/collect/TopKSelector;->partition(III)I
 
     move-result v5
 
-    .line 169
+    .line 181
     iget v6, p0, Lcom/google/common/collect/TopKSelector;->k:I
 
     if-le v5, v6, :cond_1
@@ -361,7 +447,7 @@
 
     add-int/lit8 v2, v2, 0x1
 
-    .line 172
+    .line 184
     invoke-static {v5, v2}, Ljava/lang/Math;->max(II)I
 
     move-result v2
@@ -373,50 +459,67 @@
 
     if-lt v3, v1, :cond_0
 
-    .line 180
+    .line 192
     iget-object v1, p0, Lcom/google/common/collect/TopKSelector;->buffer:[Ljava/lang/Object;
 
+    add-int/lit8 v0, v0, 0x1
+
+    .line 194
     iget-object v3, p0, Lcom/google/common/collect/TopKSelector;->comparator:Ljava/util/Comparator;
 
     invoke-static {v1, v2, v0, v3}, Ljava/util/Arrays;->sort([Ljava/lang/Object;IILjava/util/Comparator;)V
 
-    .line 184
+    .line 198
     :cond_2
     iget v0, p0, Lcom/google/common/collect/TopKSelector;->k:I
 
     iput v0, p0, Lcom/google/common/collect/TopKSelector;->bufferSize:I
 
-    .line 186
+    .line 200
     iget-object v0, p0, Lcom/google/common/collect/TopKSelector;->buffer:[Ljava/lang/Object;
 
     aget-object v0, v0, v4
+
+    invoke-static {v0}, Lcom/google/common/collect/NullnessCasts;->uncheckedCastNullableTToT(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
 
     iput-object v0, p0, Lcom/google/common/collect/TopKSelector;->threshold:Ljava/lang/Object;
 
     :goto_1
     add-int/lit8 v4, v4, 0x1
 
-    .line 187
+    .line 201
     iget v0, p0, Lcom/google/common/collect/TopKSelector;->k:I
 
     if-ge v4, v0, :cond_4
 
-    .line 188
+    .line 202
     iget-object v0, p0, Lcom/google/common/collect/TopKSelector;->comparator:Ljava/util/Comparator;
 
     iget-object v1, p0, Lcom/google/common/collect/TopKSelector;->buffer:[Ljava/lang/Object;
 
     aget-object v1, v1, v4
 
+    .line 203
+    invoke-static {v1}, Lcom/google/common/collect/NullnessCasts;->uncheckedCastNullableTToT(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
     iget-object v2, p0, Lcom/google/common/collect/TopKSelector;->threshold:Ljava/lang/Object;
 
+    invoke-static {v2}, Lcom/google/common/collect/NullnessCasts;->uncheckedCastNullableTToT(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    .line 202
     invoke-interface {v0, v1, v2}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result v0
 
     if-lez v0, :cond_3
 
-    .line 189
+    .line 205
     iget-object v0, p0, Lcom/google/common/collect/TopKSelector;->buffer:[Ljava/lang/Object;
 
     aget-object v0, v0, v4
@@ -432,44 +535,101 @@
 
 
 # virtual methods
+.method combine(Lcom/google/common/collect/TopKSelector;)Lcom/google/common/collect/TopKSelector;
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "other"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/common/collect/TopKSelector<",
+            "TT;>;)",
+            "Lcom/google/common/collect/TopKSelector<",
+            "TT;>;"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    .line 239
+    :goto_0
+    iget v1, p1, Lcom/google/common/collect/TopKSelector;->bufferSize:I
+
+    if-ge v0, v1, :cond_0
+
+    .line 240
+    iget-object v1, p1, Lcom/google/common/collect/TopKSelector;->buffer:[Ljava/lang/Object;
+
+    aget-object v1, v1, v0
+
+    invoke-static {v1}, Lcom/google/common/collect/NullnessCasts;->uncheckedCastNullableTToT(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-virtual {p0, v1}, Lcom/google/common/collect/TopKSelector;->offer(Ljava/lang/Object;)V
+
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    return-object p0
+.end method
+
 .method public offer(Ljava/lang/Object;)V
     .locals 3
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elem"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)V"
         }
     .end annotation
 
-    .line 130
+    .line 140
     iget v0, p0, Lcom/google/common/collect/TopKSelector;->k:I
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 132
+    .line 142
     :cond_0
     iget v1, p0, Lcom/google/common/collect/TopKSelector;->bufferSize:I
 
     if-nez v1, :cond_1
 
-    .line 133
+    .line 143
     iget-object v0, p0, Lcom/google/common/collect/TopKSelector;->buffer:[Ljava/lang/Object;
 
     const/4 v1, 0x0
 
     aput-object p1, v0, v1
 
-    .line 134
+    .line 144
     iput-object p1, p0, Lcom/google/common/collect/TopKSelector;->threshold:Ljava/lang/Object;
 
     const/4 p1, 0x1
 
-    .line 135
+    .line 145
     iput p1, p0, Lcom/google/common/collect/TopKSelector;->bufferSize:I
 
     goto :goto_0
@@ -477,7 +637,7 @@
     :cond_1
     if-ge v1, v0, :cond_2
 
-    .line 137
+    .line 147
     iget-object v0, p0, Lcom/google/common/collect/TopKSelector;->buffer:[Ljava/lang/Object;
 
     add-int/lit8 v2, v1, 0x1
@@ -486,10 +646,14 @@
 
     aput-object p1, v0, v1
 
-    .line 138
+    .line 149
     iget-object v0, p0, Lcom/google/common/collect/TopKSelector;->comparator:Ljava/util/Comparator;
 
     iget-object v1, p0, Lcom/google/common/collect/TopKSelector;->threshold:Ljava/lang/Object;
+
+    invoke-static {v1}, Lcom/google/common/collect/NullnessCasts;->uncheckedCastNullableTToT(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
 
     invoke-interface {v0, p1, v1}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
@@ -497,16 +661,20 @@
 
     if-lez v0, :cond_3
 
-    .line 139
+    .line 150
     iput-object p1, p0, Lcom/google/common/collect/TopKSelector;->threshold:Ljava/lang/Object;
 
     goto :goto_0
 
-    .line 141
+    .line 153
     :cond_2
     iget-object v0, p0, Lcom/google/common/collect/TopKSelector;->comparator:Ljava/util/Comparator;
 
     iget-object v1, p0, Lcom/google/common/collect/TopKSelector;->threshold:Ljava/lang/Object;
+
+    invoke-static {v1}, Lcom/google/common/collect/NullnessCasts;->uncheckedCastNullableTToT(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
 
     invoke-interface {v0, p1, v1}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
@@ -514,7 +682,7 @@
 
     if-gez v0, :cond_3
 
-    .line 143
+    .line 155
     iget-object v0, p0, Lcom/google/common/collect/TopKSelector;->buffer:[Ljava/lang/Object;
 
     iget v1, p0, Lcom/google/common/collect/TopKSelector;->bufferSize:I
@@ -525,14 +693,14 @@
 
     aput-object p1, v0, v1
 
-    .line 144
+    .line 156
     iget p1, p0, Lcom/google/common/collect/TopKSelector;->k:I
 
     mul-int/lit8 p1, p1, 0x2
 
     if-ne v2, p1, :cond_3
 
-    .line 145
+    .line 157
     invoke-direct {p0}, Lcom/google/common/collect/TopKSelector;->trim()V
 
     :cond_3
@@ -542,6 +710,15 @@
 
 .method public offerAll(Ljava/lang/Iterable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -550,7 +727,7 @@
         }
     .end annotation
 
-    .line 230
+    .line 253
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -562,6 +739,15 @@
 
 .method public offerAll(Ljava/util/Iterator;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -570,7 +756,7 @@
         }
     .end annotation
 
-    .line 242
+    .line 265
     :goto_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -578,7 +764,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 243
+    .line 266
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
@@ -592,7 +778,7 @@
 .end method
 
 .method public topK()Ljava/util/List;
-    .locals 4
+    .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -601,9 +787,10 @@
         }
     .end annotation
 
-    .line 256
+    .line 280
     iget-object v0, p0, Lcom/google/common/collect/TopKSelector;->buffer:[Ljava/lang/Object;
 
+    .line 281
     iget v1, p0, Lcom/google/common/collect/TopKSelector;->bufferSize:I
 
     iget-object v2, p0, Lcom/google/common/collect/TopKSelector;->comparator:Ljava/util/Comparator;
@@ -612,46 +799,45 @@
 
     invoke-static {v0, v3, v1, v2}, Ljava/util/Arrays;->sort([Ljava/lang/Object;IILjava/util/Comparator;)V
 
-    .line 257
-    iget v0, p0, Lcom/google/common/collect/TopKSelector;->bufferSize:I
+    .line 282
+    iget v1, p0, Lcom/google/common/collect/TopKSelector;->bufferSize:I
 
-    iget v1, p0, Lcom/google/common/collect/TopKSelector;->k:I
+    iget v2, p0, Lcom/google/common/collect/TopKSelector;->k:I
 
-    if-le v0, v1, :cond_0
+    if-le v1, v2, :cond_0
 
-    .line 258
-    iget-object v0, p0, Lcom/google/common/collect/TopKSelector;->buffer:[Ljava/lang/Object;
-
-    array-length v2, v0
-
-    const/4 v3, 0x0
-
-    invoke-static {v0, v1, v2, v3}, Ljava/util/Arrays;->fill([Ljava/lang/Object;IILjava/lang/Object;)V
-
-    .line 259
-    iget v0, p0, Lcom/google/common/collect/TopKSelector;->k:I
-
-    iput v0, p0, Lcom/google/common/collect/TopKSelector;->bufferSize:I
-
-    .line 260
+    .line 283
     iget-object v1, p0, Lcom/google/common/collect/TopKSelector;->buffer:[Ljava/lang/Object;
 
-    add-int/lit8 v0, v0, -0x1
+    array-length v3, v1
 
-    aget-object v0, v1, v0
+    const/4 v4, 0x0
 
-    iput-object v0, p0, Lcom/google/common/collect/TopKSelector;->threshold:Ljava/lang/Object;
+    invoke-static {v1, v2, v3, v4}, Ljava/util/Arrays;->fill([Ljava/lang/Object;IILjava/lang/Object;)V
 
-    .line 263
+    .line 284
+    iget v1, p0, Lcom/google/common/collect/TopKSelector;->k:I
+
+    iput v1, p0, Lcom/google/common/collect/TopKSelector;->bufferSize:I
+
+    .line 285
+    iget-object v2, p0, Lcom/google/common/collect/TopKSelector;->buffer:[Ljava/lang/Object;
+
+    add-int/lit8 v1, v1, -0x1
+
+    aget-object v1, v2, v1
+
+    iput-object v1, p0, Lcom/google/common/collect/TopKSelector;->threshold:Ljava/lang/Object;
+
+    .line 288
     :cond_0
-    iget-object v0, p0, Lcom/google/common/collect/TopKSelector;->buffer:[Ljava/lang/Object;
-
     iget p0, p0, Lcom/google/common/collect/TopKSelector;->bufferSize:I
 
     invoke-static {v0, p0}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
     move-result-object p0
 
+    .line 290
     invoke-static {p0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0

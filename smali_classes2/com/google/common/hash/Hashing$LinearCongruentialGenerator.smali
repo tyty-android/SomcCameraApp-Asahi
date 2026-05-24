@@ -21,11 +21,19 @@
 # direct methods
 .method public constructor <init>(J)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "seed"
+        }
+    .end annotation
 
-    .line 657
+    .line 740
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 658
+    .line 741
     iput-wide p1, p0, Lcom/google/common/hash/Hashing$LinearCongruentialGenerator;->state:J
 
     return-void
@@ -38,7 +46,7 @@
 
     const-wide v0, 0x27bb2ee687b0b0fdL    # 2.694898184339827E-117
 
-    .line 662
+    .line 745
     iget-wide v2, p0, Lcom/google/common/hash/Hashing$LinearCongruentialGenerator;->state:J
 
     mul-long/2addr v2, v0

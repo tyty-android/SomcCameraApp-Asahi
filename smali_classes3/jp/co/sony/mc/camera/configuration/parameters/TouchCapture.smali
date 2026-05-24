@@ -73,7 +73,7 @@
 
     const/4 v3, -0x1
 
-    const v4, 0x7f1103f4
+    const v4, 0x7f11043f
 
     move-object v0, v7
 
@@ -115,7 +115,7 @@
 
     const/4 v4, -0x1
 
-    const v5, 0x7f1103f3
+    const v5, 0x7f11043e
 
     move-object v1, v0
 
@@ -135,6 +135,25 @@
 
 .method private constructor <init>(Ljava/lang/String;IIIIZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId",
+            "notificationId",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IIIZ)V"
@@ -172,6 +191,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/TouchCapture;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 15
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/TouchCapture;

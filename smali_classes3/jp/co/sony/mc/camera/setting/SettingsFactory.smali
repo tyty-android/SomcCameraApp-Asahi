@@ -15,6 +15,16 @@
 
 .method public static create(Landroid/content/Context;Ljp/co/sony/mc/camera/storage/Storage;)Ljp/co/sony/mc/camera/setting/StoredSettings;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "storage"
+        }
+    .end annotation
 
     .line 16
     new-instance v0, Ljp/co/sony/mc/camera/setting/StoredSettingsProxy;

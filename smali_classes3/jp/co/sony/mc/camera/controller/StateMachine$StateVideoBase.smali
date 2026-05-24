@@ -21,8 +21,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 4906
+    .line 4687
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateVideoBase;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     const/4 v0, 0x0
@@ -36,17 +44,25 @@
 # virtual methods
 .method public varargs handleClearFocus([Ljava/lang/Object;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "objects"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
     if-eqz p1, :cond_0
 
-    .line 4969
+    .line 4750
     array-length v1, p1
 
     if-eqz v1, :cond_0
 
-    .line 4970
+    .line 4751
     iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateVideoBase;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmCameraDeviceHandler(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/device/CameraDeviceHandler;
@@ -59,7 +75,7 @@
 
     invoke-virtual {v1, v2}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler;->resetFocusModeAndCommit(Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;)V
 
-    .line 4971
+    .line 4752
     array-length v1, p1
 
     const/4 v2, 0x2
@@ -68,12 +84,12 @@
 
     const/4 v1, 0x1
 
-    .line 4972
+    .line 4753
     aget-object v1, p1, v1
 
     check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/Metering;
 
-    .line 4973
+    .line 4754
     aget-object p1, p1, v2
 
     check-cast p1, Ljava/lang/Boolean;
@@ -84,7 +100,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 4975
+    .line 4756
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateVideoBase;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmCameraDeviceHandler(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/device/CameraDeviceHandler;
@@ -95,7 +111,7 @@
 
     invoke-virtual {p1, v2, v1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler;->setMeteringAreaAndCommit(Landroid/graphics/Rect;Ljp/co/sony/mc/camera/configuration/parameters/Metering;)V
 
-    .line 4980
+    .line 4761
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateVideoBase;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
@@ -106,8 +122,16 @@
 
 .method public varargs handleOnAutoHdrChanged([Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "objects"
+        }
+    .end annotation
 
-    .line 4949
+    .line 4730
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateVideoBase;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmCameraStatusNotifier(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;
@@ -123,8 +147,16 @@
 
 .method public varargs handleOnHeatedOverCritical([Ljava/lang/Object;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "objects"
+        }
+    .end annotation
 
-    .line 4940
+    .line 4721
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateVideoBase;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmIsVideoRecording(Ljp/co/sony/mc/camera/controller/StateMachine;)Z
@@ -133,14 +165,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 4941
+    .line 4722
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateVideoBase;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mdoStopRecording(Ljp/co/sony/mc/camera/controller/StateMachine;Z)V
 
-    .line 4943
+    .line 4724
     :cond_0
     invoke-super {p0, p1}, Ljp/co/sony/mc/camera/controller/StateMachine$State;->handleOnHeatedOverCritical([Ljava/lang/Object;)V
 
@@ -149,8 +181,16 @@
 
 .method public varargs handleOnOnePreviewFrameUpdated([Ljava/lang/Object;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "objects"
+        }
+    .end annotation
 
-    .line 4910
+    .line 4691
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateVideoBase;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     new-instance v0, Ljp/co/sony/mc/camera/controller/ChapterThumbnail;
@@ -182,8 +222,16 @@
 
 .method public varargs handleOnRecordingError([Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "objects"
+        }
+    .end annotation
 
-    .line 4935
+    .line 4716
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateVideoBase;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mdoHandleRecordingError(Ljp/co/sony/mc/camera/controller/StateMachine;)V
@@ -193,18 +241,26 @@
 
 .method public varargs handleOnStoreCompleted([Ljava/lang/Object;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "objects"
+        }
+    .end annotation
 
-    .line 4918
+    .line 4699
     invoke-super {p0, p1}, Ljp/co/sony/mc/camera/controller/StateMachine$State;->handleOnStoreCompleted([Ljava/lang/Object;)V
 
     const/4 v0, 0x0
 
-    .line 4920
+    .line 4701
     aget-object p1, p1, v0
 
     check-cast p1, Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;
 
-    .line 4922
+    .line 4703
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateVideoBase;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmLaunchCondition(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/LaunchCondition;
@@ -217,12 +273,22 @@
 
     if-eqz v0, :cond_0
 
-    .line 4923
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;->getSavingRequest()Ljp/co/sony/mc/camera/storage/SavingRequest;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/storage/SavingRequest;->isOneShot()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 4704
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateVideoBase;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {v0, p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$monOneShotStoreCompleted(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
 
-    .line 4926
+    .line 4707
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateVideoBase;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
@@ -240,7 +306,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 4927
+    .line 4708
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateVideoBase;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmSurfaceSwitchCallback(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/CameraAccessor$SurfaceSwitchCallback;
@@ -249,7 +315,7 @@
 
     invoke-interface {p1}, Ljp/co/sony/mc/camera/CameraAccessor$SurfaceSwitchCallback;->onPrepared()V
 
-    .line 4928
+    .line 4709
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateVideoBase;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     const/4 p1, 0x0
@@ -262,8 +328,16 @@
 
 .method public varargs handleSetTouchedPosition([Ljava/lang/Object;)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "objects"
+        }
+    .end annotation
 
-    .line 4960
+    .line 4741
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateVideoBase;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     const/4 v1, 0x0
@@ -314,7 +388,7 @@
 
     invoke-static/range {v0 .. v6}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$msetFocusPosition(Ljp/co/sony/mc/camera/controller/StateMachine;Landroid/graphics/Rect;ZZLjp/co/sony/mc/camera/configuration/parameters/Metering;Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;Ljp/co/sony/mc/camera/CameraAccessor$AutoFocusCallback;)V
 
-    .line 4963
+    .line 4744
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateVideoBase;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p0, v7}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fputmIsTouchFocus(Ljp/co/sony/mc/camera/controller/StateMachine;Z)V

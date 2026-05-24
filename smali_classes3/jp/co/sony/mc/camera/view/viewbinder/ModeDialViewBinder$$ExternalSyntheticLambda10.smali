@@ -3,34 +3,38 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function2;
+.implements Lkotlin/jvm/functions/Function0;
+
+
+# instance fields
+.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;
 
 
 # direct methods
-.method public synthetic constructor <init>()V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder$$ExternalSyntheticLambda10;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke()Ljava/lang/Object;
     .locals 0
 
     .line 0
-    check-cast p1, Ljava/lang/Boolean;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder$$ExternalSyntheticLambda10;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;
 
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;->$r8$lambda$YpEy2hqN0vvIRYmvdxCHPaGpIrw(Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;)I
 
     move-result p0
 
-    check-cast p2, Ljava/util/List;
-
-    invoke-static {p0, p2}, Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;->$r8$lambda$roMTPtCMNQ_nyMpO6A7DXRShlxs(ZLjava/util/List;)Lkotlin/Pair;
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 

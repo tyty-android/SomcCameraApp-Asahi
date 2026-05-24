@@ -3,12 +3,12 @@
 .source "CommonSettings.java"
 
 # interfaces
-.implements Ljp/co/sony/mc/camera/setting/SettingsBase$GetOptionsCommand;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Ljp/co/sony/mc/camera/setting/CommonSettings;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ljp/co/sony/mc/camera/setting/CommonSettings;->onSettingChanged(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljava/util/Map;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,11 +17,49 @@
 .end annotation
 
 
-# direct methods
-.method constructor <init>()V
-    .locals 0
+# instance fields
+.field final synthetic this$0:Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 1433
+.field final synthetic val$entry:Ljava/util/Map$Entry;
+
+.field final synthetic val$key:Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+
+.field final synthetic val$value:Ljava/lang/Object;
+
+
+# direct methods
+.method constructor <init>(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljava/util/Map$Entry;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$entry",
+            "val$key",
+            "val$value"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .line 2143
+    iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings$144;->this$0:Ljp/co/sony/mc/camera/setting/CommonSettings;
+
+    iput-object p2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings$144;->val$entry:Ljava/util/Map$Entry;
+
+    iput-object p3, p0, Ljp/co/sony/mc/camera/setting/CommonSettings$144;->val$key:Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+
+    iput-object p4, p0, Ljp/co/sony/mc/camera/setting/CommonSettings$144;->val$value:Ljava/lang/Object;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,25 +67,25 @@
 
 
 # virtual methods
-.method public getOptions(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljp/co/sony/mc/camera/setting/SettingsBase;",
-            "Ljp/co/sony/mc/camera/setting/SettingKey$Key<",
-            "TT;>;)[TT;"
-        }
-    .end annotation
+.method public run()V
+    .locals 2
 
-    .line 1437
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/YoutubeAuthorizationState;->values()[Ljp/co/sony/mc/camera/configuration/parameters/YoutubeAuthorizationState;
+    .line 2146
+    iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings$144;->val$entry:Ljava/util/Map$Entry;
 
-    move-result-object p0
+    invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
-    check-cast p0, [Ljava/lang/Object;
+    move-result-object v0
 
-    return-object p0
+    check-cast v0, Ljp/co/sony/mc/camera/setting/CameraProSettingChangedListener;
+
+    iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings$144;->val$key:Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+
+    check-cast v1, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings$144;->val$value:Ljava/lang/Object;
+
+    invoke-interface {v0, v1, p0}, Ljp/co/sony/mc/camera/setting/CameraProSettingChangedListener;->onCommonSettingChanged(Ljp/co/sony/mc/camera/setting/CommonSettings$Key;Ljava/lang/Object;)V
+
+    return-void
 .end method

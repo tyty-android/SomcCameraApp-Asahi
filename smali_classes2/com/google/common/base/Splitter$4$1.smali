@@ -21,8 +21,20 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/base/Splitter$4;Lcom/google/common/base/Splitter;Ljava/lang/CharSequence;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "splitter",
+            "toSplit"
+        }
+    .end annotation
 
-    .line 286
+    .line 290
     iput-object p1, p0, Lcom/google/common/base/Splitter$4$1;->this$0:Lcom/google/common/base/Splitter$4;
 
     invoke-direct {p0, p2, p3}, Lcom/google/common/base/Splitter$SplittingIterator;-><init>(Lcom/google/common/base/Splitter;Ljava/lang/CharSequence;)V
@@ -34,21 +46,37 @@
 # virtual methods
 .method public separatorEnd(I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "separatorPosition"
+        }
+    .end annotation
 
     return p1
 .end method
 
 .method public separatorStart(I)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "start"
+        }
+    .end annotation
 
-    .line 289
+    .line 293
     iget-object v0, p0, Lcom/google/common/base/Splitter$4$1;->this$0:Lcom/google/common/base/Splitter$4;
 
     iget v0, v0, Lcom/google/common/base/Splitter$4;->val$length:I
 
     add-int/2addr p1, v0
 
-    .line 290
+    .line 294
     iget-object p0, p0, Lcom/google/common/base/Splitter$4$1;->toSplit:Ljava/lang/CharSequence;
 
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I

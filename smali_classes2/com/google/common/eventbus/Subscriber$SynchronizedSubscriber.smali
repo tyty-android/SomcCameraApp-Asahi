@@ -17,10 +17,22 @@
 # direct methods
 .method private constructor <init>(Lcom/google/common/eventbus/EventBus;Ljava/lang/Object;Ljava/lang/reflect/Method;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bus",
+            "target",
+            "method"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 138
+    .line 136
     invoke-direct {p0, p1, p2, p3, v0}, Lcom/google/common/eventbus/Subscriber;-><init>(Lcom/google/common/eventbus/EventBus;Ljava/lang/Object;Ljava/lang/reflect/Method;Lcom/google/common/eventbus/Subscriber$1;)V
 
     return-void
@@ -29,7 +41,7 @@
 .method synthetic constructor <init>(Lcom/google/common/eventbus/EventBus;Ljava/lang/Object;Ljava/lang/reflect/Method;Lcom/google/common/eventbus/Subscriber$1;)V
     .locals 0
 
-    .line 135
+    .line 133
     invoke-direct {p0, p1, p2, p3}, Lcom/google/common/eventbus/Subscriber$SynchronizedSubscriber;-><init>(Lcom/google/common/eventbus/EventBus;Ljava/lang/Object;Ljava/lang/reflect/Method;)V
 
     return-void
@@ -39,20 +51,29 @@
 # virtual methods
 .method invokeSubscriberMethod(Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/reflect/InvocationTargetException;
         }
     .end annotation
 
-    .line 143
+    .line 141
     monitor-enter p0
 
-    .line 144
+    .line 142
     :try_start_0
     invoke-super {p0, p1}, Lcom/google/common/eventbus/Subscriber;->invokeSubscriberMethod(Ljava/lang/Object;)V
 
-    .line 145
+    .line 143
     monitor-exit p0
 
     return-void

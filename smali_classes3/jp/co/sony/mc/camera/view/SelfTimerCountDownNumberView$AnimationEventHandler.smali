@@ -24,6 +24,14 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 241
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView$AnimationEventHandler;->this$0:Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;
@@ -45,12 +53,28 @@
 # virtual methods
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "arg0"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "arg0"
+        }
+    .end annotation
 
     .line 254
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView$AnimationEventHandler;->this$0:Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;
@@ -64,6 +88,14 @@
 
 .method public onAnimationRepeat(Landroid/animation/Animator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "arg0"
+        }
+    .end annotation
 
     .line 249
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView$AnimationEventHandler;->this$0:Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;
@@ -77,6 +109,14 @@
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "arg0"
+        }
+    .end annotation
 
     .line 244
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView$AnimationEventHandler;->this$0:Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;

@@ -26,6 +26,17 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/MultiWindowActivity;[Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$permissions"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
@@ -46,6 +57,18 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "requestCode",
+            "resultCode",
+            "data"
+        }
+    .end annotation
 
     const/16 p3, 0xc
 

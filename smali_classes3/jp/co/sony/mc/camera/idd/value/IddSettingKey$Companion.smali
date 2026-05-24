@@ -916,7 +916,7 @@
 
     .line 165
     :cond_3b
-    sget-object p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_CONNECT_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASIC_MODE_FOCUS_DISPLAY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -924,13 +924,13 @@
 
     if-eqz p0, :cond_3c
 
-    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->CONNECT_TO:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FOCUS_UI:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     goto/16 :goto_0
 
     .line 166
     :cond_3c
-    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASIC_MODE_FOCUS_DISPLAY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->LEVEL_CALIBRATION_OFFSET:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -938,13 +938,13 @@
 
     if-eqz p0, :cond_3d
 
-    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FOCUS_UI:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->LEVEL_CALIBRATION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     goto/16 :goto_0
 
     .line 167
     :cond_3d
-    sget-object p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->LEVEL_CALIBRATION_OFFSET:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->SELF_TIMER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -952,13 +952,13 @@
 
     if-eqz p0, :cond_3e
 
-    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->LEVEL_CALIBRATION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SELF_TIMER:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     goto/16 :goto_0
 
     .line 168
     :cond_3e
-    sget-object p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->NETWORK_USAGE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->BOKEH_STRENGTH:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -966,13 +966,13 @@
 
     if-eqz p0, :cond_3f
 
-    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->NETWORK_USAGE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->BOKEH:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     goto/16 :goto_0
 
     .line 169
     :cond_3f
-    sget-object p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASIC_MODE_SHUTTER_SPEED_DISPLAY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -980,13 +980,13 @@
 
     if-eqz p0, :cond_40
 
-    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SS_UI:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     goto/16 :goto_0
 
     .line 170
     :cond_40
-    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->SELF_TIMER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -994,13 +994,13 @@
 
     if-eqz p0, :cond_41
 
-    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SELF_TIMER:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SW_LICENSE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     goto/16 :goto_0
 
     .line 171
     :cond_41
-    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->BOKEH_STRENGTH:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->OBJECT_TRACKING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -1008,13 +1008,13 @@
 
     if-eqz p0, :cond_42
 
-    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->BOKEH:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->TOUCH_TRACKING:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     goto/16 :goto_0
 
     .line 172
     :cond_42
-    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASIC_MODE_SHUTTER_SPEED_DISPLAY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_DISTANCE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -1022,13 +1022,13 @@
 
     if-eqz p0, :cond_43
 
-    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SS_UI:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->MANUAL_FOCUS:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     goto/16 :goto_0
 
     .line 173
     :cond_43
-    sget-object p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_AUDIO_MUTE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->ACCESSIBILITY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -1036,13 +1036,13 @@
 
     if-eqz p0, :cond_44
 
-    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->STREAM_MUTE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ACCESSIBILITY:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     goto/16 :goto_0
 
     .line 174
     :cond_44
-    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_QUALITY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->AUTO_FRAMING_ORIENTATION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -1050,13 +1050,13 @@
 
     if-eqz p0, :cond_45
 
-    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->STREAM_VIDEO_QUALITY:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->AUTO_FRAMING_ORIENTATION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     goto/16 :goto_0
 
     .line 175
     :cond_45
-    sget-object p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->AUTO_FRAMING_SIZE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -1064,13 +1064,13 @@
 
     if-eqz p0, :cond_46
 
-    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SW_LICENSE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->AFR_SHORTCUT:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     goto/16 :goto_0
 
     .line 176
     :cond_46
-    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->OBJECT_TRACKING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FRAMING_ASSIST_SWITCH:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -1078,13 +1078,13 @@
 
     if-eqz p0, :cond_47
 
-    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->TOUCH_TRACKING:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FRAMING_ASSIST:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     goto/16 :goto_0
 
     .line 177
     :cond_47
-    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_DISTANCE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FRAMING_ASSIST_POSITION_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -1092,13 +1092,13 @@
 
     if-eqz p0, :cond_48
 
-    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->MANUAL_FOCUS:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FRAMING_ASSIST_METHOD:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    goto/16 :goto_0
+    goto :goto_0
 
     .line 178
     :cond_48
-    sget-object p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->ACCESSIBILITY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASIC_MODE_LEVEL_METER_DISPLAY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -1106,13 +1106,13 @@
 
     if-eqz p0, :cond_49
 
-    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ACCESSIBILITY:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->LEVEL_METER:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     goto :goto_0
 
     .line 179
     :cond_49
-    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->AUTO_FRAMING_ORIENTATION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->AUTO_FRAMING_RECORDING_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -1120,13 +1120,13 @@
 
     if-eqz p0, :cond_4a
 
-    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->AUTO_FRAMING_ORIENTATION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SAVE_FULL_SCREEN_VIDEO:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     goto :goto_0
 
     .line 180
     :cond_4a
-    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->AUTO_FRAMING_SIZE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->ULTRA_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -1134,13 +1134,13 @@
 
     if-eqz p0, :cond_4b
 
-    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->AFR_SHORTCUT:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ULTRA_HDR:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     goto :goto_0
 
     .line 181
     :cond_4b
-    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FRAMING_ASSIST_SWITCH:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VOLUME_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -1148,13 +1148,13 @@
 
     if-eqz p0, :cond_4c
 
-    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FRAMING_ASSIST:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VOLUME_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     goto :goto_0
 
     .line 182
     :cond_4c
-    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FRAMING_ASSIST_POSITION_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->DISP_FLIP:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -1162,13 +1162,13 @@
 
     if-eqz p0, :cond_4d
 
-    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FRAMING_ASSIST_METHOD:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ACCESSARY_FLIP:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     goto :goto_0
 
     .line 183
     :cond_4d
-    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASIC_MODE_LEVEL_METER_DISPLAY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->AI_SUGGESTION_DETECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -1176,13 +1176,13 @@
 
     if-eqz p0, :cond_4e
 
-    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->LEVEL_METER:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->AI_SUGGESTION_DETECTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     goto :goto_0
 
     .line 184
     :cond_4e
-    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->AUTO_FRAMING_RECORDING_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->AUTO_FRAMING_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -1190,13 +1190,13 @@
 
     if-eqz p0, :cond_4f
 
-    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SAVE_FULL_SCREEN_VIDEO:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->DIGITAL_TRIPOD_FRAMING:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     goto :goto_0
 
     .line 185
     :cond_4f
-    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->ULTRA_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->AI_SUGGESTION_CUSTOM_EXTENSION_DATA:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -1204,13 +1204,14 @@
 
     if-eqz p0, :cond_50
 
-    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ULTRA_HDR:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    .line 186
+    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->AI_SUGGESTION_CUSTOM_EXTENSION_DATA:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     goto :goto_0
 
-    .line 186
+    .line 187
     :cond_50
-    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VOLUME_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->TRIPOD_FRAMING_ASSISTANCE_EXTENSION_DATA:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -1218,27 +1219,14 @@
 
     if-eqz p0, :cond_51
 
-    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VOLUME_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
-
-    goto :goto_0
-
-    .line 187
-    :cond_51
-    sget-object p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->DISP_FLIP:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_52
-
-    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ACCESSARY_FLIP:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    .line 188
+    sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->DIGITAL_TRIPOD_FRAMING_ASSISTANCE_EXTENSION_DATA:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     :goto_0
     return-object p0
 
-    .line 188
-    :cond_52
+    .line 189
+    :cond_51
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
     invoke-direct {p0}, Ljava/lang/IllegalArgumentException;-><init>()V

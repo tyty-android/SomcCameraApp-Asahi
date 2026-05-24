@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/cache/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<K:",
@@ -26,7 +29,7 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 45
+    .line 47
     invoke-direct {p0}, Lcom/google/common/cache/AbstractCache;-><init>()V
 
     return-void
@@ -36,13 +39,22 @@
 # virtual methods
 .method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)TV;"
         }
     .end annotation
 
-    .line 69
+    .line 72
     invoke-virtual {p0, p1}, Lcom/google/common/cache/AbstractLoadingCache;->getUnchecked(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -52,6 +64,15 @@
 
 .method public getAll(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableMap;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "keys"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -68,12 +89,12 @@
         }
     .end annotation
 
-    .line 58
+    .line 61
     invoke-static {}, Lcom/google/common/collect/Maps;->newLinkedHashMap()Ljava/util/LinkedHashMap;
 
     move-result-object v0
 
-    .line 59
+    .line 62
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -90,14 +111,14 @@
 
     move-result-object v1
 
-    .line 60
+    .line 63
     invoke-interface {v0, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-nez v2, :cond_0
 
-    .line 61
+    .line 64
     invoke-virtual {p0, v1}, Lcom/google/common/cache/AbstractLoadingCache;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -106,7 +127,7 @@
 
     goto :goto_0
 
-    .line 64
+    .line 67
     :cond_1
     invoke-static {v0}, Lcom/google/common/collect/ImmutableMap;->copyOf(Ljava/util/Map;)Lcom/google/common/collect/ImmutableMap;
 
@@ -117,13 +138,22 @@
 
 .method public getUnchecked(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)TV;"
         }
     .end annotation
 
-    .line 50
+    .line 53
     :try_start_0
     invoke-virtual {p0, p1}, Lcom/google/common/cache/AbstractLoadingCache;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -136,7 +166,7 @@
     :catch_0
     move-exception p0
 
-    .line 52
+    .line 55
     new-instance p1, Lcom/google/common/util/concurrent/UncheckedExecutionException;
 
     invoke-virtual {p0}, Ljava/util/concurrent/ExecutionException;->getCause()Ljava/lang/Throwable;
@@ -150,13 +180,22 @@
 
 .method public refresh(Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)V"
         }
     .end annotation
 
-    .line 74
+    .line 77
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V

@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<E:",
@@ -18,8 +21,16 @@
 # direct methods
 .method constructor <init>(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "distinctElements"
+        }
+    .end annotation
 
-    .line 69
+    .line 72
     invoke-direct {p0, p1}, Lcom/google/common/collect/AbstractMapBasedMultiset;-><init>(I)V
 
     return-void
@@ -39,7 +50,7 @@
 
     const/4 v0, 0x3
 
-    .line 41
+    .line 43
     invoke-static {v0}, Lcom/google/common/collect/LinkedHashMultiset;->create(I)Lcom/google/common/collect/LinkedHashMultiset;
 
     move-result-object v0
@@ -49,6 +60,15 @@
 
 .method public static create(I)Lcom/google/common/collect/LinkedHashMultiset;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "distinctElements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -59,7 +79,7 @@
         }
     .end annotation
 
-    .line 52
+    .line 54
     new-instance v0, Lcom/google/common/collect/LinkedHashMultiset;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/LinkedHashMultiset;-><init>(I)V
@@ -69,6 +89,15 @@
 
 .method public static create(Ljava/lang/Iterable;)Lcom/google/common/collect/LinkedHashMultiset;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -81,7 +110,7 @@
         }
     .end annotation
 
-    .line 63
+    .line 66
     invoke-static {p0}, Lcom/google/common/collect/Multisets;->inferDistinctElements(Ljava/lang/Iterable;)I
 
     move-result v0
@@ -90,7 +119,7 @@
 
     move-result-object v0
 
-    .line 64
+    .line 67
     invoke-static {v0, p0}, Lcom/google/common/collect/Iterables;->addAll(Ljava/util/Collection;Ljava/lang/Iterable;)Z
 
     return-object v0
@@ -101,9 +130,17 @@
 .method public bridge synthetic contains(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "element"
+        }
+    .end annotation
 
     .line 36
     invoke-super {p0, p1}, Lcom/google/common/collect/AbstractMapBasedMultiset;->contains(Ljava/lang/Object;)Z
@@ -135,19 +172,6 @@
     return-object p0
 .end method
 
-.method init(I)V
-    .locals 1
-
-    .line 74
-    new-instance v0, Lcom/google/common/collect/ObjectCountLinkedHashMap;
-
-    invoke-direct {v0, p1}, Lcom/google/common/collect/ObjectCountLinkedHashMap;-><init>(I)V
-
-    iput-object v0, p0, Lcom/google/common/collect/LinkedHashMultiset;->backingMap:Lcom/google/common/collect/ObjectCountHashMap;
-
-    return-void
-.end method
-
 .method public bridge synthetic isEmpty()Z
     .locals 0
 
@@ -157,4 +181,31 @@
     move-result p0
 
     return p0
+.end method
+
+.method newBackingMap(I)Lcom/google/common/collect/ObjectCountHashMap;
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "distinctElements"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I)",
+            "Lcom/google/common/collect/ObjectCountHashMap<",
+            "TE;>;"
+        }
+    .end annotation
+
+    .line 77
+    new-instance p0, Lcom/google/common/collect/ObjectCountLinkedHashMap;
+
+    invoke-direct {p0, p1}, Lcom/google/common/collect/ObjectCountLinkedHashMap;-><init>(I)V
+
+    return-object p0
 .end method

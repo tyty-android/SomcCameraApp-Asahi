@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/CameraApplication$CreateCameraProSettingThread;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
-    .line 569
+    .line 594
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraApplication$CreateCameraProSettingThread$1;->this$1:Ljp/co/sony/mc/camera/CameraApplication$CreateCameraProSettingThread;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +46,7 @@
 .method public run()V
     .locals 0
 
-    .line 572
+    .line 597
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraApplication$CreateCameraProSettingThread$1;->this$1:Ljp/co/sony/mc/camera/CameraApplication$CreateCameraProSettingThread;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/CameraApplication$CreateCameraProSettingThread;->-$$Nest$fgetmService(Ljp/co/sony/mc/camera/CameraApplication$CreateCameraProSettingThread;)Ljava/util/concurrent/ExecutorService;

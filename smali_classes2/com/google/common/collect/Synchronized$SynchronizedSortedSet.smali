@@ -37,9 +37,20 @@
 .method constructor <init>(Ljava/util/SortedSet;Ljava/lang/Object;)V
     .locals 0
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "delegate",
+            "mutex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -50,7 +61,7 @@
         }
     .end annotation
 
-    .line 250
+    .line 270
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/Synchronized$SynchronizedSet;-><init>(Ljava/util/Set;Ljava/lang/Object;)V
 
     return-void
@@ -68,12 +79,15 @@
         }
     .end annotation
 
-    .line 260
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 281
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedSortedSet;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 261
+    .line 282
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedSortedSet;->delegate()Ljava/util/SortedSet;
 
@@ -90,7 +104,7 @@
     :catchall_0
     move-exception p0
 
-    .line 262
+    .line 283
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -101,7 +115,7 @@
 .method bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 248
+    .line 267
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedSortedSet;->delegate()Ljava/util/SortedSet;
 
     move-result-object p0
@@ -112,7 +126,7 @@
 .method bridge synthetic delegate()Ljava/util/Collection;
     .locals 0
 
-    .line 248
+    .line 267
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedSortedSet;->delegate()Ljava/util/SortedSet;
 
     move-result-object p0
@@ -123,7 +137,7 @@
 .method bridge synthetic delegate()Ljava/util/Set;
     .locals 0
 
-    .line 248
+    .line 267
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedSortedSet;->delegate()Ljava/util/SortedSet;
 
     move-result-object p0
@@ -141,7 +155,7 @@
         }
     .end annotation
 
-    .line 255
+    .line 275
     invoke-super {p0}, Lcom/google/common/collect/Synchronized$SynchronizedSet;->delegate()Ljava/util/Set;
 
     move-result-object p0
@@ -159,12 +173,12 @@
         }
     .end annotation
 
-    .line 288
+    .line 309
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedSortedSet;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 289
+    .line 310
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedSortedSet;->delegate()Ljava/util/SortedSet;
 
@@ -181,7 +195,7 @@
     :catchall_0
     move-exception p0
 
-    .line 290
+    .line 311
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -191,6 +205,15 @@
 
 .method public headSet(Ljava/lang/Object;)Ljava/util/SortedSet;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "toElement"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)",
@@ -199,12 +222,12 @@
         }
     .end annotation
 
-    .line 274
+    .line 295
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedSortedSet;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 275
+    .line 296
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedSortedSet;->delegate()Ljava/util/SortedSet;
 
@@ -227,7 +250,7 @@
     :catchall_0
     move-exception p0
 
-    .line 276
+    .line 297
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -243,12 +266,12 @@
         }
     .end annotation
 
-    .line 295
+    .line 316
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedSortedSet;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 296
+    .line 317
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedSortedSet;->delegate()Ljava/util/SortedSet;
 
@@ -265,7 +288,7 @@
     :catchall_0
     move-exception p0
 
-    .line 297
+    .line 318
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -275,6 +298,17 @@
 
 .method public subSet(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromElement",
+            "toElement"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;TE;)",
@@ -283,12 +317,12 @@
         }
     .end annotation
 
-    .line 267
+    .line 288
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedSortedSet;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 268
+    .line 289
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedSortedSet;->delegate()Ljava/util/SortedSet;
 
@@ -311,7 +345,7 @@
     :catchall_0
     move-exception p0
 
-    .line 269
+    .line 290
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -321,6 +355,15 @@
 
 .method public tailSet(Ljava/lang/Object;)Ljava/util/SortedSet;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fromElement"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)",
@@ -329,12 +372,12 @@
         }
     .end annotation
 
-    .line 281
+    .line 302
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedSortedSet;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 282
+    .line 303
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedSortedSet;->delegate()Ljava/util/SortedSet;
 
@@ -357,7 +400,7 @@
     :catchall_0
     move-exception p0
 
-    .line 283
+    .line 304
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

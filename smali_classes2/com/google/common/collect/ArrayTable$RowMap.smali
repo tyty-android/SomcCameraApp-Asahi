@@ -30,11 +30,19 @@
 # direct methods
 .method private constructor <init>(Lcom/google/common/collect/ArrayTable;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 714
+    .line 759
     iput-object p1, p0, Lcom/google/common/collect/ArrayTable$RowMap;->this$0:Lcom/google/common/collect/ArrayTable;
 
-    .line 715
+    .line 760
     invoke-static {p1}, Lcom/google/common/collect/ArrayTable;->access$300(Lcom/google/common/collect/ArrayTable;)Lcom/google/common/collect/ImmutableMap;
 
     move-result-object p1
@@ -49,7 +57,7 @@
 .method synthetic constructor <init>(Lcom/google/common/collect/ArrayTable;Lcom/google/common/collect/ArrayTable$1;)V
     .locals 0
 
-    .line 713
+    .line 758
     invoke-direct {p0, p1}, Lcom/google/common/collect/ArrayTable$RowMap;-><init>(Lcom/google/common/collect/ArrayTable;)V
 
     return-void
@@ -60,7 +68,7 @@
 .method getKeyRole()Ljava/lang/String;
     .locals 0
 
-    .line 720
+    .line 765
     const-string p0, "Row"
 
     return-object p0
@@ -68,8 +76,16 @@
 
 .method bridge synthetic getValue(I)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
-    .line 712
+    .line 757
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ArrayTable$RowMap;->getValue(I)Ljava/util/Map;
 
     move-result-object p0
@@ -79,6 +95,15 @@
 
 .method getValue(I)Ljava/util/Map;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -87,7 +112,7 @@
         }
     .end annotation
 
-    .line 725
+    .line 770
     new-instance v0, Lcom/google/common/collect/ArrayTable$Row;
 
     iget-object p0, p0, Lcom/google/common/collect/ArrayTable$RowMap;->this$0:Lcom/google/common/collect/ArrayTable;
@@ -99,8 +124,21 @@
 
 .method public bridge synthetic put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
-    .line 712
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 757
     check-cast p2, Ljava/util/Map;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/ArrayTable$RowMap;->put(Ljava/lang/Object;Ljava/util/Map;)Ljava/util/Map;
@@ -112,6 +150,17 @@
 
 .method public put(Ljava/lang/Object;Ljava/util/Map;)Ljava/util/Map;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TR;",
@@ -122,7 +171,10 @@
         }
     .end annotation
 
-    .line 735
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 781
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -132,8 +184,18 @@
 
 .method bridge synthetic setValue(ILjava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "index",
+            "newValue"
+        }
+    .end annotation
 
-    .line 712
+    .line 757
     check-cast p2, Ljava/util/Map;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/ArrayTable$RowMap;->setValue(ILjava/util/Map;)Ljava/util/Map;
@@ -145,6 +207,17 @@
 
 .method setValue(ILjava/util/Map;)Ljava/util/Map;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "newValue"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -155,7 +228,7 @@
         }
     .end annotation
 
-    .line 730
+    .line 775
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V

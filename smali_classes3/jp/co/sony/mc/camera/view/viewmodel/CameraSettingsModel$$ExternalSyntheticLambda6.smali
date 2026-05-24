@@ -22,13 +22,9 @@
     .locals 0
 
     .line 0
-    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    check-cast p1, Lkotlin/Pair;
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->$r8$lambda$0e0GU9NdJblVYtUwdTDuJHyCMps(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
-
-    move-result p0
-
-    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->$r8$lambda$C_ddPP1ICH9Phr3XLU4GLzg_PdA(Lkotlin/Pair;)Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     move-result-object p0
 

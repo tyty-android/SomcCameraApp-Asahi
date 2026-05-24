@@ -24,20 +24,32 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Ljava/lang/String;Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "name",
+            "isAutoApply"
+        }
+    .end annotation
 
-    .line 68
+    .line 71
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 69
+    .line 72
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object p1
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
-    .line 70
+    .line 73
     iput-boolean p3, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mIsAutoApply:Z
 
     return-void
@@ -45,8 +57,20 @@
 
 .method private getBoolean(Landroid/content/SharedPreferences;Ljava/lang/String;Z)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "preferences",
+            "key",
+            "defaultValue"
+        }
+    .end annotation
 
-    .line 347
+    .line 379
     :try_start_0
     invoke-interface {p1, p2, p3}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
 
@@ -59,7 +83,7 @@
     :catch_0
     const/4 p0, 0x1
 
-    .line 349
+    .line 381
     new-array p0, p0, [Ljava/lang/String;
 
     new-instance p1, Ljava/lang/StringBuilder;
@@ -87,8 +111,18 @@
 
 .method static getCameraSettingPreferencesName(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "capturingMode",
+            "cameraId"
+        }
+    .end annotation
 
-    .line 50
+    .line 53
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -131,7 +165,7 @@
 .method static getCommonPreferencesName()Ljava/lang/String;
     .locals 1
 
-    .line 45
+    .line 48
     const-string v0, "common_preferences"
 
     return-object v0
@@ -139,20 +173,28 @@
 
 .method private getEditor(Landroid/content/SharedPreferences;)Landroid/content/SharedPreferences$Editor;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "preferences"
+        }
+    .end annotation
 
-    .line 410
+    .line 442
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mEditor:Landroid/content/SharedPreferences$Editor;
 
     if-nez v0, :cond_0
 
-    .line 411
+    .line 443
     invoke-interface {p1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object p1
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mEditor:Landroid/content/SharedPreferences$Editor;
 
-    .line 413
+    .line 445
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mEditor:Landroid/content/SharedPreferences$Editor;
 
@@ -161,8 +203,20 @@
 
 .method private getFloat(Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/Float;)Ljava/lang/Float;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "preferences",
+            "key",
+            "defaultValue"
+        }
+    .end annotation
 
-    .line 378
+    .line 410
     :try_start_0
     invoke-virtual {p3}, Ljava/lang/Float;->floatValue()F
 
@@ -183,7 +237,7 @@
     :catch_0
     const/4 p0, 0x1
 
-    .line 380
+    .line 412
     new-array p0, p0, [Ljava/lang/String;
 
     new-instance p1, Ljava/lang/StringBuilder;
@@ -211,8 +265,20 @@
 
 .method private getInt(Landroid/content/SharedPreferences;Ljava/lang/String;I)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "preferences",
+            "key",
+            "defaultValue"
+        }
+    .end annotation
 
-    .line 285
+    .line 317
     :try_start_0
     invoke-interface {p1, p2, p3}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
 
@@ -225,7 +291,7 @@
     :catch_0
     const/4 p0, 0x1
 
-    .line 287
+    .line 319
     new-array p0, p0, [Ljava/lang/String;
 
     new-instance p1, Ljava/lang/StringBuilder;
@@ -253,8 +319,20 @@
 
 .method private getLong(Landroid/content/SharedPreferences;Ljava/lang/String;J)J
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "preferences",
+            "key",
+            "defaultValue"
+        }
+    .end annotation
 
-    .line 316
+    .line 348
     :try_start_0
     invoke-interface {p1, p2, p3, p4}, Landroid/content/SharedPreferences;->getLong(Ljava/lang/String;J)J
 
@@ -267,7 +345,7 @@
     :catch_0
     const/4 p0, 0x1
 
-    .line 318
+    .line 350
     new-array p0, p0, [Ljava/lang/String;
 
     new-instance p1, Ljava/lang/StringBuilder;
@@ -295,8 +373,16 @@
 
 .method static getMrOriginSettingPreferencesName(Ljp/co/sony/mc/camera/configuration/parameters/MrMode;)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mrMode"
+        }
+    .end annotation
 
-    .line 55
+    .line 58
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -324,8 +410,20 @@
 
 .method private getString(Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "preferences",
+            "key",
+            "defaultValue"
+        }
+    .end annotation
 
-    .line 254
+    .line 286
     :try_start_0
     invoke-interface {p1, p2, p3}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -338,7 +436,7 @@
     :catch_0
     const/4 p0, 0x1
 
-    .line 256
+    .line 288
     new-array p0, p0, [Ljava/lang/String;
 
     new-instance p1, Ljava/lang/StringBuilder;
@@ -366,20 +464,32 @@
 
 .method private setBoolean(Landroid/content/SharedPreferences;Ljava/lang/String;Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "preferences",
+            "key",
+            "value"
+        }
+    .end annotation
 
-    .line 362
+    .line 394
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->getEditor(Landroid/content/SharedPreferences;)Landroid/content/SharedPreferences$Editor;
 
     move-result-object v0
 
     invoke-interface {v0, p2, p3}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
 
-    .line 363
+    .line 395
     iget-boolean p2, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mIsAutoApply:Z
 
     if-eqz p2, :cond_0
 
-    .line 364
+    .line 396
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->getEditor(Landroid/content/SharedPreferences;)Landroid/content/SharedPreferences$Editor;
 
     move-result-object p0
@@ -392,8 +502,20 @@
 
 .method private setFloat(Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/Float;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "preferences",
+            "key",
+            "value"
+        }
+    .end annotation
 
-    .line 393
+    .line 425
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->getEditor(Landroid/content/SharedPreferences;)Landroid/content/SharedPreferences$Editor;
 
     move-result-object v0
@@ -404,12 +526,12 @@
 
     invoke-interface {v0, p2, p3}, Landroid/content/SharedPreferences$Editor;->putFloat(Ljava/lang/String;F)Landroid/content/SharedPreferences$Editor;
 
-    .line 394
+    .line 426
     iget-boolean p2, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mIsAutoApply:Z
 
     if-eqz p2, :cond_0
 
-    .line 395
+    .line 427
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->getEditor(Landroid/content/SharedPreferences;)Landroid/content/SharedPreferences$Editor;
 
     move-result-object p0
@@ -422,20 +544,32 @@
 
 .method private setInt(Landroid/content/SharedPreferences;Ljava/lang/String;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "preferences",
+            "key",
+            "value"
+        }
+    .end annotation
 
-    .line 300
+    .line 332
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->getEditor(Landroid/content/SharedPreferences;)Landroid/content/SharedPreferences$Editor;
 
     move-result-object v0
 
     invoke-interface {v0, p2, p3}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
-    .line 301
+    .line 333
     iget-boolean p2, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mIsAutoApply:Z
 
     if-eqz p2, :cond_0
 
-    .line 302
+    .line 334
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->getEditor(Landroid/content/SharedPreferences;)Landroid/content/SharedPreferences$Editor;
 
     move-result-object p0
@@ -448,20 +582,32 @@
 
 .method private setLong(Landroid/content/SharedPreferences;Ljava/lang/String;J)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "preferences",
+            "key",
+            "value"
+        }
+    .end annotation
 
-    .line 331
+    .line 363
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->getEditor(Landroid/content/SharedPreferences;)Landroid/content/SharedPreferences$Editor;
 
     move-result-object v0
 
     invoke-interface {v0, p2, p3, p4}, Landroid/content/SharedPreferences$Editor;->putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor;
 
-    .line 332
+    .line 364
     iget-boolean p2, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mIsAutoApply:Z
 
     if-eqz p2, :cond_0
 
-    .line 333
+    .line 365
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->getEditor(Landroid/content/SharedPreferences;)Landroid/content/SharedPreferences$Editor;
 
     move-result-object p0
@@ -474,20 +620,32 @@
 
 .method private setString(Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "preferences",
+            "key",
+            "value"
+        }
+    .end annotation
 
-    .line 269
+    .line 301
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->getEditor(Landroid/content/SharedPreferences;)Landroid/content/SharedPreferences$Editor;
 
     move-result-object p1
 
     invoke-interface {p1, p2, p3}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 270
+    .line 302
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mIsAutoApply:Z
 
     if-eqz p1, :cond_0
 
-    .line 271
+    .line 303
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->apply()V
 
     :cond_0
@@ -499,7 +657,7 @@
 .method apply()V
     .locals 1
 
-    .line 213
+    .line 245
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->getEditor(Landroid/content/SharedPreferences;)Landroid/content/SharedPreferences$Editor;
@@ -514,7 +672,7 @@
 .method commit()Z
     .locals 1
 
-    .line 220
+    .line 252
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->getEditor(Landroid/content/SharedPreferences;)Landroid/content/SharedPreferences$Editor;
@@ -530,6 +688,17 @@
 
 .method get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "defaultValue"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -540,7 +709,7 @@
         }
     .end annotation
 
-    .line 82
+    .line 85
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
     if-nez v0, :cond_0
@@ -549,7 +718,7 @@
 
     return-object p0
 
-    .line 86
+    .line 89
     :cond_0
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
 
@@ -563,7 +732,7 @@
 
     return-object p2
 
-    .line 90
+    .line 93
     :cond_1
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
 
@@ -579,7 +748,7 @@
 
     if-eqz p2, :cond_2
 
-    .line 93
+    .line 96
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
@@ -596,7 +765,7 @@
 
     goto :goto_0
 
-    .line 94
+    .line 97
     :cond_2
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
@@ -613,7 +782,7 @@
     :goto_0
     const/4 v0, 0x1
 
-    .line 96
+    .line 99
     :try_start_0
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
 
@@ -628,7 +797,7 @@
 
     goto :goto_1
 
-    .line 101
+    .line 104
     :catch_0
     new-array v0, v0, [Ljava/lang/String;
 
@@ -662,7 +831,7 @@
 
     goto :goto_1
 
-    .line 98
+    .line 101
     :catch_1
     new-array p0, v0, [Ljava/lang/String;
 
@@ -687,7 +856,7 @@
     :goto_1
     return-object p2
 
-    .line 106
+    .line 109
     :cond_3
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
 
@@ -711,7 +880,7 @@
 
     if-nez p2, :cond_4
 
-    .line 108
+    .line 111
     iget-object p2, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
@@ -728,7 +897,7 @@
 
     return-object p0
 
-    .line 110
+    .line 113
     :cond_4
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
@@ -752,7 +921,7 @@
 
     return-object p0
 
-    .line 111
+    .line 114
     :cond_5
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
 
@@ -774,7 +943,7 @@
 
     if-eqz v0, :cond_6
 
-    .line 112
+    .line 115
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
@@ -789,7 +958,7 @@
 
     return-object p0
 
-    .line 113
+    .line 116
     :cond_6
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
 
@@ -813,7 +982,7 @@
 
     if-nez p2, :cond_7
 
-    .line 115
+    .line 118
     iget-object p2, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
@@ -832,7 +1001,7 @@
 
     return-object p0
 
-    .line 117
+    .line 120
     :cond_7
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
@@ -856,7 +1025,7 @@
 
     return-object p0
 
-    .line 118
+    .line 121
     :cond_8
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
 
@@ -880,7 +1049,7 @@
 
     if-nez p2, :cond_9
 
-    .line 120
+    .line 123
     iget-object p2, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
@@ -897,7 +1066,7 @@
 
     return-object p0
 
-    .line 122
+    .line 125
     :cond_9
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
@@ -907,12 +1076,12 @@
 
     check-cast p2, Ljava/lang/Boolean;
 
-    .line 123
+    .line 126
     invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p2
 
-    .line 122
+    .line 125
     invoke-direct {p0, v0, p1, p2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->getBoolean(Landroid/content/SharedPreferences;Ljava/lang/String;Z)Z
 
     move-result p0
@@ -923,7 +1092,7 @@
 
     return-object p0
 
-    .line 124
+    .line 127
     :cond_a
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
 
@@ -947,7 +1116,7 @@
 
     if-nez p2, :cond_b
 
-    .line 126
+    .line 129
     iget-object p2, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
@@ -974,7 +1143,7 @@
 
     return-object p0
 
-    .line 128
+    .line 131
     :cond_b
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
@@ -998,7 +1167,7 @@
 
     return-object p0
 
-    .line 130
+    .line 133
     :cond_c
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
 
@@ -1020,36 +1189,36 @@
 
     if-eqz v0, :cond_d
 
-    .line 131
+    .line 134
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
-    .line 132
+    .line 135
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
 
     move-result-object p1
 
     check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;
 
-    .line 133
+    .line 136
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;->serialize()Ljava/lang/String;
 
     move-result-object p2
 
-    .line 132
+    .line 135
     invoke-direct {p0, v0, p1, p2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->getString(Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
     const-class p1, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;
 
-    .line 131
+    .line 134
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/ExtensionData;->deserialize(Ljava/lang/String;Ljava/lang/Class;)Ljp/co/sony/mc/camera/configuration/parameters/ExtensionData;
 
     move-result-object p0
 
     return-object p0
 
-    .line 135
+    .line 138
     :cond_d
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
 
@@ -1071,36 +1240,36 @@
 
     if-eqz v0, :cond_e
 
-    .line 136
+    .line 139
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
-    .line 137
+    .line 140
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
 
     move-result-object p1
 
     check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData;
 
-    .line 138
+    .line 141
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData;->serialize()Ljava/lang/String;
 
     move-result-object p2
 
-    .line 137
+    .line 140
     invoke-direct {p0, v0, p1, p2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->getString(Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
     const-class p1, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData;
 
-    .line 136
+    .line 139
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/ExtensionData;->deserialize(Ljava/lang/String;Ljava/lang/Class;)Ljp/co/sony/mc/camera/configuration/parameters/ExtensionData;
 
     move-result-object p0
 
     return-object p0
 
-    .line 140
+    .line 143
     :cond_e
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
 
@@ -1122,36 +1291,36 @@
 
     if-eqz v0, :cond_f
 
-    .line 141
+    .line 144
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
-    .line 142
+    .line 145
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
 
     move-result-object p1
 
     check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;
 
-    .line 143
+    .line 146
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;->serialize()Ljava/lang/String;
 
     move-result-object p2
 
-    .line 142
+    .line 145
     invoke-direct {p0, v0, p1, p2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->getString(Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
     const-class p1, Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;
 
-    .line 141
+    .line 144
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/ExtensionData;->deserialize(Ljava/lang/String;Ljava/lang/Class;)Ljp/co/sony/mc/camera/configuration/parameters/ExtensionData;
 
     move-result-object p0
 
     return-object p0
 
-    .line 145
+    .line 148
     :cond_f
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
 
@@ -1173,36 +1342,36 @@
 
     if-eqz v0, :cond_10
 
-    .line 146
+    .line 149
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
-    .line 147
+    .line 150
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
 
     move-result-object p1
 
     check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
 
-    .line 148
+    .line 151
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;->serialize()Ljava/lang/String;
 
     move-result-object p2
 
-    .line 147
+    .line 150
     invoke-direct {p0, v0, p1, p2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->getString(Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
     const-class p1, Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
 
-    .line 146
+    .line 149
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/ExtensionData;->deserialize(Ljava/lang/String;Ljava/lang/Class;)Ljp/co/sony/mc/camera/configuration/parameters/ExtensionData;
 
     move-result-object p0
 
     return-object p0
 
-    .line 150
+    .line 153
     :cond_10
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
 
@@ -1224,36 +1393,36 @@
 
     if-eqz v0, :cond_11
 
-    .line 151
+    .line 154
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
-    .line 152
+    .line 155
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
 
     move-result-object p1
 
     check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/MemoryRecallData;
 
-    .line 153
+    .line 156
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/MemoryRecallData;->serialize()Ljava/lang/String;
 
     move-result-object p2
 
-    .line 152
+    .line 155
     invoke-direct {p0, v0, p1, p2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->getString(Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
     const-class p1, Ljp/co/sony/mc/camera/configuration/parameters/MemoryRecallData;
 
-    .line 151
+    .line 154
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/ExtensionData;->deserialize(Ljava/lang/String;Ljava/lang/Class;)Ljp/co/sony/mc/camera/configuration/parameters/ExtensionData;
 
     move-result-object p0
 
     return-object p0
 
-    .line 155
+    .line 158
     :cond_11
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
 
@@ -1275,37 +1444,196 @@
 
     if-eqz v0, :cond_12
 
-    .line 156
+    .line 159
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
-    .line 157
+    .line 160
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
 
     move-result-object p1
 
     check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/LastBackVideoFps;
 
-    .line 158
+    .line 161
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/LastBackVideoFps;->serialize()Ljava/lang/String;
 
     move-result-object p2
 
-    .line 157
+    .line 160
     invoke-direct {p0, v0, p1, p2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->getString(Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
     const-class p1, Ljp/co/sony/mc/camera/configuration/parameters/LastBackVideoFps;
 
-    .line 156
+    .line 159
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/ExtensionData;->deserialize(Ljava/lang/String;Ljava/lang/Class;)Ljp/co/sony/mc/camera/configuration/parameters/ExtensionData;
 
     move-result-object p0
 
     return-object p0
 
-    .line 161
+    .line 163
     :cond_12
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-class v1, Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestionCustomExtensionData;
+
+    .line 164
+    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 163
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_13
+
+    .line 165
+    iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
+
+    .line 166
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
+
+    move-result-object p1
+
+    check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestionCustomExtensionData;
+
+    .line 167
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestionCustomExtensionData;->serialize()Ljava/lang/String;
+
+    move-result-object p2
+
+    .line 166
+    invoke-direct {p0, v0, p1, p2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->getString(Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    const-class p1, Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestionCustomExtensionData;
+
+    .line 165
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/ExtensionData;->deserialize(Ljava/lang/String;Ljava/lang/Class;)Ljp/co/sony/mc/camera/configuration/parameters/ExtensionData;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 169
+    :cond_13
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-class v1, Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestionParameter;
+
+    .line 170
+    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 169
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_14
+
+    .line 171
+    iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
+
+    .line 172
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
+
+    move-result-object p1
+
+    check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestionParameter;
+
+    .line 173
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestionParameter;->serialize()Ljava/lang/String;
+
+    move-result-object p2
+
+    .line 172
+    invoke-direct {p0, v0, p1, p2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->getString(Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    const-class p1, Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestionParameter;
+
+    .line 171
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/ExtensionData;->deserialize(Ljava/lang/String;Ljava/lang/Class;)Ljp/co/sony/mc/camera/configuration/parameters/ExtensionData;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 175
+    :cond_14
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-class v1, Ljp/co/sony/mc/camera/configuration/parameters/TripodFramingAssistanceExtensionData;
+
+    .line 176
+    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 175
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_15
+
+    .line 177
+    iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
+
+    .line 178
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
+
+    move-result-object p1
+
+    check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/TripodFramingAssistanceExtensionData;
+
+    .line 179
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/TripodFramingAssistanceExtensionData;->serialize()Ljava/lang/String;
+
+    move-result-object p2
+
+    .line 178
+    invoke-direct {p0, v0, p1, p2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->getString(Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    const-class p1, Ljp/co/sony/mc/camera/configuration/parameters/TripodFramingAssistanceExtensionData;
+
+    .line 177
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/ExtensionData;->deserialize(Ljava/lang/String;Ljava/lang/Class;)Ljp/co/sony/mc/camera/configuration/parameters/ExtensionData;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 182
+    :cond_15
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
     new-instance p2, Ljava/lang/StringBuilder;
@@ -1338,7 +1666,7 @@
         }
     .end annotation
 
-    .line 241
+    .line 273
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
     invoke-interface {p0}, Landroid/content/SharedPreferences;->getAll()Ljava/util/Map;
@@ -1350,8 +1678,16 @@
 
 .method remove(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 229
+    .line 261
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->getEditor(Landroid/content/SharedPreferences;)Landroid/content/SharedPreferences$Editor;
@@ -1364,12 +1700,12 @@
 
     invoke-interface {v0, p1}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 230
+    .line 262
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mIsAutoApply:Z
 
     if-eqz p1, :cond_0
 
-    .line 231
+    .line 263
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->apply()V
 
     :cond_0
@@ -1378,6 +1714,17 @@
 
 .method set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1388,14 +1735,14 @@
         }
     .end annotation
 
-    .line 172
+    .line 193
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 176
+    .line 197
     :cond_0
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
 
@@ -1407,7 +1754,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 177
+    .line 198
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
@@ -1424,7 +1771,7 @@
 
     goto/16 :goto_0
 
-    .line 178
+    .line 199
     :cond_1
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
 
@@ -1446,7 +1793,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 179
+    .line 200
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
@@ -1463,7 +1810,7 @@
 
     goto/16 :goto_0
 
-    .line 180
+    .line 201
     :cond_2
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
 
@@ -1485,7 +1832,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 181
+    .line 202
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
@@ -1498,7 +1845,7 @@
 
     goto/16 :goto_0
 
-    .line 182
+    .line 203
     :cond_3
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
 
@@ -1520,7 +1867,7 @@
 
     if-eqz v0, :cond_4
 
-    .line 183
+    .line 204
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
@@ -1537,7 +1884,7 @@
 
     goto/16 :goto_0
 
-    .line 184
+    .line 205
     :cond_4
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
 
@@ -1559,7 +1906,7 @@
 
     if-eqz v0, :cond_5
 
-    .line 185
+    .line 206
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
@@ -1576,7 +1923,7 @@
 
     goto/16 :goto_0
 
-    .line 186
+    .line 207
     :cond_5
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
 
@@ -1598,7 +1945,7 @@
 
     if-eqz v0, :cond_6
 
-    .line 187
+    .line 208
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
@@ -1611,7 +1958,7 @@
 
     goto/16 :goto_0
 
-    .line 188
+    .line 209
     :cond_6
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
 
@@ -1633,7 +1980,7 @@
 
     if-eqz v0, :cond_7
 
-    .line 189
+    .line 210
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
@@ -1650,7 +1997,7 @@
 
     goto/16 :goto_0
 
-    .line 190
+    .line 211
     :cond_7
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
 
@@ -1672,7 +2019,7 @@
 
     if-eqz v0, :cond_8
 
-    .line 191
+    .line 212
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
@@ -1681,17 +2028,17 @@
 
     check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData;
 
-    .line 192
+    .line 213
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData;->serialize()Ljava/lang/String;
 
     move-result-object p2
 
-    .line 191
+    .line 212
     invoke-direct {p0, v0, p1, p2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->setString(Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_0
 
-    .line 193
+    .line 214
     :cond_8
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
 
@@ -1713,7 +2060,7 @@
 
     if-eqz v0, :cond_9
 
-    .line 194
+    .line 215
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
@@ -1722,17 +2069,17 @@
 
     check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;
 
-    .line 195
+    .line 216
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;->serialize()Ljava/lang/String;
 
     move-result-object p2
 
-    .line 194
+    .line 215
     invoke-direct {p0, v0, p1, p2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->setString(Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_0
 
-    .line 196
+    .line 217
     :cond_9
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
 
@@ -1754,7 +2101,7 @@
 
     if-eqz v0, :cond_a
 
-    .line 197
+    .line 218
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
@@ -1769,9 +2116,9 @@
 
     invoke-direct {p0, v0, p1, p2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->setString(Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/String;)V
 
-    goto :goto_0
+    goto/16 :goto_0
 
-    .line 198
+    .line 219
     :cond_a
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
 
@@ -1793,7 +2140,7 @@
 
     if-eqz v0, :cond_b
 
-    .line 199
+    .line 220
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
@@ -1808,9 +2155,9 @@
 
     invoke-direct {p0, v0, p1, p2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->setString(Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/String;)V
 
-    goto :goto_0
+    goto/16 :goto_0
 
-    .line 200
+    .line 221
     :cond_b
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
 
@@ -1832,7 +2179,7 @@
 
     if-eqz v0, :cond_c
 
-    .line 201
+    .line 222
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
@@ -1847,9 +2194,9 @@
 
     invoke-direct {p0, v0, p1, p2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->setString(Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/String;)V
 
-    goto :goto_0
+    goto/16 :goto_0
 
-    .line 202
+    .line 223
     :cond_c
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
 
@@ -1871,7 +2218,7 @@
 
     if-eqz v0, :cond_d
 
-    .line 203
+    .line 224
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
@@ -1886,11 +2233,138 @@
 
     invoke-direct {p0, v0, p1, p2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->setString(Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/String;)V
 
+    goto :goto_0
+
+    .line 225
+    :cond_d
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-class v1, Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestionCustomExtensionData;
+
+    .line 226
+    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 225
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_e
+
+    .line 227
+    iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
+
+    move-result-object p1
+
+    check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestionCustomExtensionData;
+
+    .line 228
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestionCustomExtensionData;->serialize()Ljava/lang/String;
+
+    move-result-object p2
+
+    .line 227
+    invoke-direct {p0, v0, p1, p2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->setString(Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_0
+
+    .line 229
+    :cond_e
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-class v1, Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestionParameter;
+
+    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_f
+
+    .line 230
+    iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
+
+    move-result-object p1
+
+    check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestionParameter;
+
+    .line 231
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestionParameter;->serialize()Ljava/lang/String;
+
+    move-result-object p2
+
+    .line 230
+    invoke-direct {p0, v0, p1, p2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->setString(Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_0
+
+    .line 232
+    :cond_f
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getType()Ljava/lang/Class;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-class v1, Ljp/co/sony/mc/camera/configuration/parameters/TripodFramingAssistanceExtensionData;
+
+    .line 233
+    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 232
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_10
+
+    .line 234
+    iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->mPreferences:Landroid/content/SharedPreferences;
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
+
+    move-result-object p1
+
+    check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/TripodFramingAssistanceExtensionData;
+
+    .line 235
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/TripodFramingAssistanceExtensionData;->serialize()Ljava/lang/String;
+
+    move-result-object p2
+
+    .line 234
+    invoke-direct {p0, v0, p1, p2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->setString(Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/String;)V
+
     :goto_0
     return-void
 
-    .line 205
-    :cond_d
+    .line 237
+    :cond_10
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
     new-instance p2, Ljava/lang/StringBuilder;

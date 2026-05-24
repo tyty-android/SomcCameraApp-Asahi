@@ -26,7 +26,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 893
+    .line 929
     invoke-direct {p0}, Ljava/util/AbstractQueue;-><init>()V
 
     return-void
@@ -45,7 +45,7 @@
         }
     .end annotation
 
-    .line 916
+    .line 954
     invoke-static {}, Lcom/google/common/collect/ImmutableSet;->of()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object p0
@@ -59,6 +59,14 @@
 
 .method public offer(Ljava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
     const/4 p0, 0x1
 
@@ -67,6 +75,8 @@
 
 .method public peek()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 
     const/4 p0, 0x0
 
@@ -75,6 +85,8 @@
 
 .method public poll()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 
     const/4 p0, 0x0
 

@@ -33,13 +33,23 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/util/concurrent/CombinedFuture;Ljava/util/concurrent/Executor;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "listenerExecutor"
+        }
+    .end annotation
 
-    .line 93
+    .line 99
     iput-object p1, p0, Lcom/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask;->this$0:Lcom/google/common/util/concurrent/CombinedFuture;
 
     invoke-direct {p0}, Lcom/google/common/util/concurrent/InterruptibleTask;-><init>()V
 
-    .line 94
+    .line 100
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -53,34 +63,35 @@
 
 
 # virtual methods
-.method final afterRanInterruptibly(Ljava/lang/Object;Ljava/lang/Throwable;)V
+.method final afterRanInterruptiblyFailure(Ljava/lang/Throwable;)V
     .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;",
-            "Ljava/lang/Throwable;",
-            ")V"
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "error"
         }
     .end annotation
 
-    .line 123
+    .line 137
     iget-object v0, p0, Lcom/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask;->this$0:Lcom/google/common/util/concurrent/CombinedFuture;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/google/common/util/concurrent/CombinedFuture;->access$002(Lcom/google/common/util/concurrent/CombinedFuture;Lcom/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask;)Lcom/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask;
 
-    if-eqz p2, :cond_2
+    .line 139
+    instance-of v0, p1, Ljava/util/concurrent/ExecutionException;
 
-    .line 126
-    instance-of p1, p2, Ljava/util/concurrent/ExecutionException;
+    if-eqz v0, :cond_0
 
-    if-eqz p1, :cond_0
-
-    .line 127
+    .line 144
     iget-object p0, p0, Lcom/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask;->this$0:Lcom/google/common/util/concurrent/CombinedFuture;
 
-    invoke-virtual {p2}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
+    check-cast p1, Ljava/util/concurrent/ExecutionException;
+
+    invoke-virtual {p1}, Ljava/util/concurrent/ExecutionException;->getCause()Ljava/lang/Throwable;
 
     move-result-object p1
 
@@ -88,13 +99,13 @@
 
     goto :goto_0
 
-    .line 128
+    .line 145
     :cond_0
-    instance-of p1, p2, Ljava/util/concurrent/CancellationException;
+    instance-of v0, p1, Ljava/util/concurrent/CancellationException;
 
-    if-eqz p1, :cond_1
+    if-eqz v0, :cond_1
 
-    .line 129
+    .line 146
     iget-object p0, p0, Lcom/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask;->this$0:Lcom/google/common/util/concurrent/CombinedFuture;
 
     const/4 p1, 0x0
@@ -103,26 +114,54 @@
 
     goto :goto_0
 
-    .line 131
+    .line 148
     :cond_1
     iget-object p0, p0, Lcom/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask;->this$0:Lcom/google/common/util/concurrent/CombinedFuture;
 
-    invoke-virtual {p0, p2}, Lcom/google/common/util/concurrent/CombinedFuture;->setException(Ljava/lang/Throwable;)Z
-
-    goto :goto_0
-
-    .line 134
-    :cond_2
-    invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask;->setValue(Ljava/lang/Object;)V
+    invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/CombinedFuture;->setException(Ljava/lang/Throwable;)Z
 
     :goto_0
+    return-void
+.end method
+
+.method final afterRanInterruptiblySuccess(Ljava/lang/Object;)V
+    .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/util/concurrent/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)V"
+        }
+    .end annotation
+
+    .line 129
+    iget-object v0, p0, Lcom/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask;->this$0:Lcom/google/common/util/concurrent/CombinedFuture;
+
+    const/4 v1, 0x0
+
+    invoke-static {v0, v1}, Lcom/google/common/util/concurrent/CombinedFuture;->access$002(Lcom/google/common/util/concurrent/CombinedFuture;Lcom/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask;)Lcom/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask;
+
+    .line 131
+    invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask;->setValue(Ljava/lang/Object;)V
+
     return-void
 .end method
 
 .method final execute()V
     .locals 1
 
-    .line 104
+    .line 110
     :try_start_0
     iget-object v0, p0, Lcom/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask;->listenerExecutor:Ljava/util/concurrent/Executor;
 
@@ -135,7 +174,7 @@
     :catch_0
     move-exception v0
 
-    .line 106
+    .line 112
     iget-object p0, p0, Lcom/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask;->this$0:Lcom/google/common/util/concurrent/CombinedFuture;
 
     invoke-virtual {p0, v0}, Lcom/google/common/util/concurrent/CombinedFuture;->setException(Ljava/lang/Throwable;)Z
@@ -147,7 +186,7 @@
 .method final isDone()Z
     .locals 0
 
-    .line 99
+    .line 105
     iget-object p0, p0, Lcom/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask;->this$0:Lcom/google/common/util/concurrent/CombinedFuture;
 
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/CombinedFuture;->isDone()Z
@@ -158,6 +197,19 @@
 .end method
 
 .method abstract setValue(Ljava/lang/Object;)V
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/util/concurrent/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)V"

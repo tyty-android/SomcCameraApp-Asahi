@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/graph/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<N:",
@@ -20,8 +23,16 @@
 # direct methods
 .method private constructor <init>(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "directed"
+        }
+    .end annotation
 
-    .line 73
+    .line 81
     invoke-direct {p0, p1}, Lcom/google/common/graph/AbstractGraphBuilder;-><init>(Z)V
 
     return-void
@@ -52,7 +63,7 @@
         }
     .end annotation
 
-    .line 78
+    .line 86
     new-instance v0, Lcom/google/common/graph/ValueGraphBuilder;
 
     const/4 v1, 0x1
@@ -64,6 +75,15 @@
 
 .method public static from(Lcom/google/common/graph/ValueGraph;)Lcom/google/common/graph/ValueGraphBuilder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "graph"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N:",
@@ -78,7 +98,7 @@
         }
     .end annotation
 
-    .line 95
+    .line 103
     new-instance v0, Lcom/google/common/graph/ValueGraphBuilder;
 
     invoke-interface {p0}, Lcom/google/common/graph/ValueGraph;->isDirected()Z
@@ -87,7 +107,7 @@
 
     invoke-direct {v0, v1}, Lcom/google/common/graph/ValueGraphBuilder;-><init>(Z)V
 
-    .line 96
+    .line 104
     invoke-interface {p0}, Lcom/google/common/graph/ValueGraph;->allowsSelfLoops()Z
 
     move-result v1
@@ -96,7 +116,7 @@
 
     move-result-object v0
 
-    .line 97
+    .line 105
     invoke-interface {p0}, Lcom/google/common/graph/ValueGraph;->nodeOrder()Lcom/google/common/graph/ElementOrder;
 
     move-result-object v1
@@ -105,7 +125,7 @@
 
     move-result-object v0
 
-    .line 98
+    .line 106
     invoke-interface {p0}, Lcom/google/common/graph/ValueGraph;->incidentEdgeOrder()Lcom/google/common/graph/ElementOrder;
 
     move-result-object p0
@@ -129,7 +149,7 @@
         }
     .end annotation
 
-    .line 83
+    .line 91
     new-instance v0, Lcom/google/common/graph/ValueGraphBuilder;
 
     const/4 v1, 0x0
@@ -143,6 +163,15 @@
 # virtual methods
 .method public allowsSelfLoops(Z)Lcom/google/common/graph/ValueGraphBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "allowsSelfLoops"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -151,7 +180,7 @@
         }
     .end annotation
 
-    .line 125
+    .line 134
     iput-boolean p1, p0, Lcom/google/common/graph/ValueGraphBuilder;->allowsSelfLoops:Z
 
     return-object p0
@@ -167,7 +196,7 @@
         }
     .end annotation
 
-    .line 180
+    .line 190
     new-instance v0, Lcom/google/common/graph/StandardMutableValueGraph;
 
     invoke-direct {v0, p0}, Lcom/google/common/graph/StandardMutableValueGraph;-><init>(Lcom/google/common/graph/AbstractGraphBuilder;)V
@@ -185,29 +214,29 @@
         }
     .end annotation
 
-    .line 184
+    .line 194
     new-instance v0, Lcom/google/common/graph/ValueGraphBuilder;
 
     iget-boolean v1, p0, Lcom/google/common/graph/ValueGraphBuilder;->directed:Z
 
     invoke-direct {v0, v1}, Lcom/google/common/graph/ValueGraphBuilder;-><init>(Z)V
 
-    .line 185
+    .line 195
     iget-boolean v1, p0, Lcom/google/common/graph/ValueGraphBuilder;->allowsSelfLoops:Z
 
     iput-boolean v1, v0, Lcom/google/common/graph/ValueGraphBuilder;->allowsSelfLoops:Z
 
-    .line 186
+    .line 196
     iget-object v1, p0, Lcom/google/common/graph/ValueGraphBuilder;->nodeOrder:Lcom/google/common/graph/ElementOrder;
 
     iput-object v1, v0, Lcom/google/common/graph/ValueGraphBuilder;->nodeOrder:Lcom/google/common/graph/ElementOrder;
 
-    .line 187
+    .line 197
     iget-object v1, p0, Lcom/google/common/graph/ValueGraphBuilder;->expectedNodeCount:Lcom/google/common/base/Optional;
 
     iput-object v1, v0, Lcom/google/common/graph/ValueGraphBuilder;->expectedNodeCount:Lcom/google/common/base/Optional;
 
-    .line 188
+    .line 198
     iget-object p0, p0, Lcom/google/common/graph/ValueGraphBuilder;->incidentEdgeOrder:Lcom/google/common/graph/ElementOrder;
 
     iput-object p0, v0, Lcom/google/common/graph/ValueGraphBuilder;->incidentEdgeOrder:Lcom/google/common/graph/ElementOrder;
@@ -217,6 +246,15 @@
 
 .method public expectedNodeCount(I)Lcom/google/common/graph/ValueGraphBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "expectedNodeCount"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -225,7 +263,7 @@
         }
     .end annotation
 
-    .line 135
+    .line 145
     invoke-static {p1}, Lcom/google/common/graph/Graphs;->checkNonNegative(I)I
 
     move-result p1
@@ -253,12 +291,12 @@
         }
     .end annotation
 
-    .line 113
+    .line 121
     invoke-direct {p0}, Lcom/google/common/graph/ValueGraphBuilder;->cast()Lcom/google/common/graph/ValueGraphBuilder;
 
     move-result-object p0
 
-    .line 114
+    .line 122
     new-instance v0, Lcom/google/common/graph/ImmutableValueGraph$Builder;
 
     invoke-direct {v0, p0}, Lcom/google/common/graph/ImmutableValueGraph$Builder;-><init>(Lcom/google/common/graph/ValueGraphBuilder;)V
@@ -268,6 +306,15 @@
 
 .method public incidentEdgeOrder(Lcom/google/common/graph/ElementOrder;)Lcom/google/common/graph/ValueGraphBuilder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "incidentEdgeOrder"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N1:TN;>(",
@@ -278,7 +325,7 @@
         }
     .end annotation
 
-    .line 166
+    .line 176
     invoke-virtual {p1}, Lcom/google/common/graph/ElementOrder;->type()Lcom/google/common/graph/ElementOrder$Type;
 
     move-result-object v0
@@ -287,7 +334,7 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 167
+    .line 177
     invoke-virtual {p1}, Lcom/google/common/graph/ElementOrder;->type()Lcom/google/common/graph/ElementOrder$Type;
 
     move-result-object v0
@@ -310,15 +357,15 @@
     :goto_1
     const-string v1, "The given elementOrder (%s) is unsupported. incidentEdgeOrder() only supports ElementOrder.unordered() and ElementOrder.stable()."
 
-    .line 165
+    .line 175
     invoke-static {v0, v1, p1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;)V
 
-    .line 171
+    .line 181
     invoke-direct {p0}, Lcom/google/common/graph/ValueGraphBuilder;->cast()Lcom/google/common/graph/ValueGraphBuilder;
 
     move-result-object p0
 
-    .line 172
+    .line 182
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -332,6 +379,15 @@
 
 .method public nodeOrder(Lcom/google/common/graph/ElementOrder;)Lcom/google/common/graph/ValueGraphBuilder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "nodeOrder"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<N1:TN;>(",
@@ -342,12 +398,12 @@
         }
     .end annotation
 
-    .line 145
+    .line 155
     invoke-direct {p0}, Lcom/google/common/graph/ValueGraphBuilder;->cast()Lcom/google/common/graph/ValueGraphBuilder;
 
     move-result-object p0
 
-    .line 146
+    .line 156
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1

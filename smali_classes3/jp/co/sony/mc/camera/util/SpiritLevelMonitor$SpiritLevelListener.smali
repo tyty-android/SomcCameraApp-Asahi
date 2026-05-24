@@ -16,4 +16,16 @@
 
 # virtual methods
 .method public abstract onSpiritLevelChanged(IFF)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "orientation",
+            "pitch",
+            "roll"
+        }
+    .end annotation
 .end method

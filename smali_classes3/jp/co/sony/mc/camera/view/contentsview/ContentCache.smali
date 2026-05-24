@@ -10,6 +10,10 @@
     }
 .end annotation
 
+.annotation system Ldalvik/annotation/SourceDebugExtension;
+    value = "SMAP\nContentCache.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ContentCache.kt\njp/co/sony/mc/camera/view/contentsview/ContentCache\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,82:1\n360#2,7:83\n*S KotlinDebug\n*F\n+ 1 ContentCache.kt\njp/co/sony/mc/camera/view/contentsview/ContentCache\n*L\n53#1:83,7\n*E\n"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     d1 = {
         "\u00002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0006\u0008\u0007\u0018\u0000 \u00162\u00020\u0001:\u0001\u0016B\t\u0008\u0007\u00a2\u0006\u0004\u0008\u0002\u0010\u0003J\u0006\u0010\u0007\u001a\u00020\u0008J\u0014\u0010\t\u001a\u0010\u0012\u000c\u0012\n \n*\u0004\u0018\u00010\u00060\u00060\u0005J(\u0010\u000b\u001a\u00020\u00082\u0006\u0010\u000c\u001a\u00020\r2\u0018\u0010\u000e\u001a\u0014\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00060\u0005\u0012\u0004\u0012\u00020\u00080\u000fJ\u0016\u0010\u0010\u001a\u00020\u00112\u000c\u0010\u0012\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u0005H\u0002J\u0014\u0010\u0013\u001a\u00020\u00082\u000c\u0010\u0014\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u0005J\u0016\u0010\u0015\u001a\u00020\u00112\u000c\u0010\u0014\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u0005H\u0002R\u0014\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0017"
@@ -129,7 +133,7 @@
         }
     .end annotation
 
-    .line 67
+    .line 69
     invoke-virtual {p1}, Ljava/util/LinkedList;->size()I
 
     move-result p0
@@ -142,7 +146,7 @@
 
     return v0
 
-    .line 71
+    .line 73
     :cond_0
     invoke-virtual {p1}, Ljava/util/LinkedList;->iterator()Ljava/util/Iterator;
 
@@ -173,7 +177,7 @@
 
     check-cast v3, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;
 
-    .line 72
+    .line 74
     iget-object v4, v3, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mContentType:Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentsType;
 
     sget-object v5, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentsType;->BURST:Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentsType;
@@ -184,7 +188,7 @@
 
     if-lez v4, :cond_1
 
-    .line 73
+    .line 75
     iget v3, v3, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mGroupedImage:I
 
     add-int/2addr v2, v3
@@ -255,7 +259,7 @@
 
 # virtual methods
 .method public final addContent(Ljava/util/LinkedList;)V
-    .locals 6
+    .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -274,60 +278,91 @@
 
     .line 52
     :try_start_0
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentCache;->contentList:Ljava/util/LinkedList;
-
-    invoke-virtual {v0}, Ljava/util/LinkedList;->isEmpty()Z
+    invoke-virtual {p1}, Ljava/util/LinkedList;->size()I
 
     move-result v0
 
     const/4 v1, 0x0
 
-    if-nez v0, :cond_0
-
-    invoke-virtual {p1}, Ljava/util/LinkedList;->size()I
-
-    move-result v0
-
     const/4 v2, 0x1
 
-    if-ne v0, v2, :cond_0
+    if-ne v0, v2, :cond_2
 
     .line 53
-    invoke-virtual {p1}, Ljava/util/LinkedList;->getFirst()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;
-
-    iget-wide v2, v0, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mId:J
-
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentCache;->contentList:Ljava/util/LinkedList;
 
-    invoke-virtual {v0}, Ljava/util/LinkedList;->getFirst()Ljava/lang/Object;
+    check-cast v0, Ljava/util/List;
+
+    .line 84
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
-    check-cast v0, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;
+    move v2, v1
 
-    iget-wide v4, v0, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mId:J
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    cmp-long v0, v2, v4
+    move-result v3
 
-    if-nez v0, :cond_0
+    const/4 v4, -0x1
 
-    .line 54
+    if-eqz v3, :cond_1
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    .line 85
+    check-cast v3, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;
+
+    .line 53
+    iget-wide v5, v3, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mId:J
+
+    invoke-virtual {p1}, Ljava/util/LinkedList;->getFirst()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;
+
+    iget-wide v7, v3, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mId:J
+
+    cmp-long v3, v5, v7
+
+    if-nez v3, :cond_0
+
+    goto :goto_1
+
+    :cond_0
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    move v2, v4
+
+    :goto_1
+    if-eq v2, v4, :cond_2
+
+    .line 55
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentCache;->contentList:Ljava/util/LinkedList;
 
     invoke-virtual {p1}, Ljava/util/LinkedList;->getFirst()Ljava/lang/Object;
 
     move-result-object p1
 
-    invoke-virtual {v0, v1, p1}, Ljava/util/LinkedList;->set(ILjava/lang/Object;)Ljava/lang/Object;
-
-    goto :goto_1
+    invoke-virtual {v0, v2, p1}, Ljava/util/LinkedList;->set(ILjava/lang/Object;)Ljava/lang/Object;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 56
-    :cond_0
+    monitor-exit p0
+
+    return-void
+
+    .line 59
+    :cond_2
+    :try_start_1
     invoke-virtual {p1}, Ljava/util/LinkedList;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -336,13 +371,13 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    :cond_1
-    :goto_0
+    :cond_3
+    :goto_2
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_4
 
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -354,33 +389,32 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;
 
-    .line 57
+    .line 60
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentCache;->contentList:Ljava/util/LinkedList;
 
     invoke-virtual {v2, v1, v0}, Ljava/util/LinkedList;->add(ILjava/lang/Object;)V
 
-    .line 58
+    .line 61
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentCache;->contentList:Ljava/util/LinkedList;
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentCache;->overLimitSize(Ljava/util/LinkedList;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_3
 
-    .line 59
+    .line 62
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentCache;->contentList:Ljava/util/LinkedList;
 
     invoke-virtual {v0}, Ljava/util/LinkedList;->removeLast()Ljava/lang/Object;
 
-    goto :goto_0
+    goto :goto_2
 
-    .line 63
-    :cond_2
-    :goto_1
+    .line 65
+    :cond_4
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 51
     monitor-exit p0

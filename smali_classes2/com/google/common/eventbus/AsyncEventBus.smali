@@ -3,11 +3,26 @@
 .source "AsyncEventBus.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/eventbus/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/util/concurrent/Executor;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "identifier",
+            "executor"
+        }
+    .end annotation
 
-    .line 39
+    .line 38
     invoke-static {}, Lcom/google/common/eventbus/Dispatcher;->legacyAsync()Lcom/google/common/eventbus/Dispatcher;
 
     move-result-object v0
@@ -21,8 +36,16 @@
 
 .method public constructor <init>(Ljava/util/concurrent/Executor;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "executor"
+        }
+    .end annotation
 
-    .line 62
+    .line 61
     invoke-static {}, Lcom/google/common/eventbus/Dispatcher;->legacyAsync()Lcom/google/common/eventbus/Dispatcher;
 
     move-result-object v0
@@ -38,8 +61,18 @@
 
 .method public constructor <init>(Ljava/util/concurrent/Executor;Lcom/google/common/eventbus/SubscriberExceptionHandler;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "executor",
+            "subscriberExceptionHandler"
+        }
+    .end annotation
 
-    .line 52
+    .line 51
     const-string v0, "default"
 
     invoke-static {}, Lcom/google/common/eventbus/Dispatcher;->legacyAsync()Lcom/google/common/eventbus/Dispatcher;

@@ -62,7 +62,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 440
+    .line 454
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;->value:Ljp/co/sony/mc/camera/configuration/parameters/ComputationalMode;
@@ -75,7 +75,7 @@
 .method public final getValue()Ljp/co/sony/mc/camera/configuration/parameters/ComputationalMode;
     .locals 0
 
-    .line 440
+    .line 454
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;->value:Ljp/co/sony/mc/camera/configuration/parameters/ComputationalMode;
 
     return-object p0
@@ -84,7 +84,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 441
+    .line 455
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;->value:Ljp/co/sony/mc/camera/configuration/parameters/ComputationalMode;
 
     sget-object v0, Ljp/co/sony/mc/camera/idd/value/IddComputationalMode$WhenMappings;->$EnumSwitchMapping$0:[I
@@ -99,12 +99,12 @@
 
     if-ne p0, v0, :cond_0
 
-    .line 442
+    .line 456
     const-string p0, "AUTO"
 
     goto :goto_0
 
-    .line 443
+    .line 457
     :cond_0
     const-string p0, "OFF"
 

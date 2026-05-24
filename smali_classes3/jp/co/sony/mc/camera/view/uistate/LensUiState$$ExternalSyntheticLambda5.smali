@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function4;
+.implements Lkotlin/jvm/functions/Function3;
 
 
 # direct methods
@@ -18,23 +18,17 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
-    check-cast p1, Ljava/lang/Boolean;
+    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    check-cast p2, Ljava/lang/Boolean;
+    check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;
 
-    check-cast p3, Ljava/lang/Boolean;
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
 
-    invoke-virtual {p3}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result p0
-
-    check-cast p4, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
-
-    invoke-static {p1, p2, p0, p4}, Ljp/co/sony/mc/camera/view/uistate/LensUiState;->$r8$lambda$h7xb15oqQHdL2b6lCcmfV_SDNmo(Ljava/lang/Boolean;Ljava/lang/Boolean;ZLjp/co/sony/mc/camera/view/orientation/LayoutOrientation;)Z
+    invoke-static {p1, p2, p3}, Ljp/co/sony/mc/camera/view/uistate/LensUiState;->$r8$lambda$t1Aja8GRSILcSKm18D8Bg2ciH6E(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;)Z
 
     move-result p0
 

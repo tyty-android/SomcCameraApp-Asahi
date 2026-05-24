@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 2699
+    .line 2725
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$5;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +46,7 @@
 .method public run()V
     .locals 3
 
-    .line 2703
+    .line 2729
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     const/4 v1, 0x0
@@ -55,7 +63,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 2704
+    .line 2730
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$5;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 

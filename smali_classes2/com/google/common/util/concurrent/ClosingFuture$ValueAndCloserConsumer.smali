@@ -25,6 +25,15 @@
 
 # virtual methods
 .method public abstract accept(Lcom/google/common/util/concurrent/ClosingFuture$ValueAndCloser;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "valueAndCloser"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<K:",
@@ -25,6 +28,17 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/SetMultimap;Lcom/google/common/base/Predicate;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "unfiltered",
+            "predicate"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -37,7 +51,7 @@
         }
     .end annotation
 
-    .line 34
+    .line 37
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/FilteredEntryMultimap;-><init>(Lcom/google/common/collect/Multimap;Lcom/google/common/base/Predicate;)V
 
     return-void
@@ -48,7 +62,7 @@
 .method bridge synthetic createEntries()Ljava/util/Collection;
     .locals 0
 
-    .line 29
+    .line 31
     invoke-virtual {p0}, Lcom/google/common/collect/FilteredEntrySetMultimap;->createEntries()Ljava/util/Set;
 
     move-result-object p0
@@ -67,7 +81,7 @@
         }
     .end annotation
 
-    .line 59
+    .line 62
     invoke-virtual {p0}, Lcom/google/common/collect/FilteredEntrySetMultimap;->unfiltered()Lcom/google/common/collect/SetMultimap;
 
     move-result-object v0
@@ -90,7 +104,7 @@
 .method public bridge synthetic entries()Ljava/util/Collection;
     .locals 0
 
-    .line 29
+    .line 31
     invoke-virtual {p0}, Lcom/google/common/collect/FilteredEntrySetMultimap;->entries()Ljava/util/Set;
 
     move-result-object p0
@@ -109,7 +123,7 @@
         }
     .end annotation
 
-    .line 64
+    .line 67
     invoke-super {p0}, Lcom/google/common/collect/FilteredEntryMultimap;->entries()Ljava/util/Collection;
 
     move-result-object p0
@@ -121,8 +135,20 @@
 
 .method public bridge synthetic get(Ljava/lang/Object;)Ljava/util/Collection;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 29
+    .line 31
     invoke-virtual {p0, p1}, Lcom/google/common/collect/FilteredEntrySetMultimap;->get(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object p0
@@ -132,6 +158,19 @@
 
 .method public get(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -140,7 +179,7 @@
         }
     .end annotation
 
-    .line 44
+    .line 47
     invoke-super {p0, p1}, Lcom/google/common/collect/FilteredEntryMultimap;->get(Ljava/lang/Object;)Ljava/util/Collection;
 
     move-result-object p0
@@ -152,8 +191,20 @@
 
 .method public bridge synthetic removeAll(Ljava/lang/Object;)Ljava/util/Collection;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 29
+    .line 31
     invoke-virtual {p0, p1}, Lcom/google/common/collect/FilteredEntrySetMultimap;->removeAll(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object p0
@@ -163,6 +214,19 @@
 
 .method public removeAll(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -173,7 +237,7 @@
         }
     .end annotation
 
-    .line 49
+    .line 52
     invoke-super {p0, p1}, Lcom/google/common/collect/FilteredEntryMultimap;->removeAll(Ljava/lang/Object;)Ljava/util/Collection;
 
     move-result-object p0
@@ -185,8 +249,22 @@
 
 .method public bridge synthetic replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/Collection;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "key",
+            "values"
+        }
+    .end annotation
 
-    .line 29
+    .line 31
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/FilteredEntrySetMultimap;->replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/Set;
 
     move-result-object p0
@@ -196,6 +274,21 @@
 
 .method public replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/Set;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "values"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;",
@@ -206,7 +299,7 @@
         }
     .end annotation
 
-    .line 54
+    .line 57
     invoke-super {p0, p1, p2}, Lcom/google/common/collect/FilteredEntryMultimap;->replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/Collection;
 
     move-result-object p0
@@ -219,7 +312,7 @@
 .method public bridge synthetic unfiltered()Lcom/google/common/collect/Multimap;
     .locals 0
 
-    .line 29
+    .line 31
     invoke-virtual {p0}, Lcom/google/common/collect/FilteredEntrySetMultimap;->unfiltered()Lcom/google/common/collect/SetMultimap;
 
     move-result-object p0
@@ -237,7 +330,7 @@
         }
     .end annotation
 
-    .line 39
+    .line 42
     iget-object p0, p0, Lcom/google/common/collect/FilteredEntrySetMultimap;->unfiltered:Lcom/google/common/collect/Multimap;
 
     check-cast p0, Lcom/google/common/collect/SetMultimap;

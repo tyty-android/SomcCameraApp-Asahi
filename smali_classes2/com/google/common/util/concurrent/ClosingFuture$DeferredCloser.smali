@@ -21,6 +21,14 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/util/concurrent/ClosingFuture$CloseableList;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "list"
+        }
+    .end annotation
 
     .line 207
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,37 +44,48 @@
 .method public eventuallyClose(Ljava/lang/Object;Ljava/util/concurrent/Executor;)Ljava/lang/Object;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/util/concurrent/ParametricNullness;
         .end annotation
     .end param
+    .annotation runtime Lcom/google/common/util/concurrent/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "closeable",
+            "closingExecutor"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<C:",
             "Ljava/lang/Object;",
             ":",
-            "Ljava/io/Closeable;",
+            "Ljava/lang/AutoCloseable;",
             ">(TC;",
             "Ljava/util/concurrent/Executor;",
             ")TC;"
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-    .end annotation
-
-    .line 239
+    .line 238
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     if-eqz p1, :cond_0
 
-    .line 241
+    .line 240
     iget-object p0, p0, Lcom/google/common/util/concurrent/ClosingFuture$DeferredCloser;->list:Lcom/google/common/util/concurrent/ClosingFuture$CloseableList;
 
     move-object v0, p1
 
-    check-cast v0, Ljava/io/Closeable;
+    check-cast v0, Ljava/lang/AutoCloseable;
 
-    invoke-virtual {p0, v0, p2}, Lcom/google/common/util/concurrent/ClosingFuture$CloseableList;->add(Ljava/io/Closeable;Ljava/util/concurrent/Executor;)V
+    invoke-virtual {p0, v0, p2}, Lcom/google/common/util/concurrent/ClosingFuture$CloseableList;->add(Ljava/lang/AutoCloseable;Ljava/util/concurrent/Executor;)V
 
     :cond_0
     return-object p1

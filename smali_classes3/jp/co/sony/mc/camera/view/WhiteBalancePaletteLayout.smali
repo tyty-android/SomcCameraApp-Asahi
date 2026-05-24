@@ -110,6 +110,14 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 45
     invoke-direct {p0, p1}, Landroidx/constraintlayout/widget/ConstraintLayout;-><init>(Landroid/content/Context;)V
@@ -133,6 +141,16 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "attrs"
+        }
+    .end annotation
 
     .line 49
     invoke-direct {p0, p1, p2}, Landroidx/constraintlayout/widget/ConstraintLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -156,6 +174,18 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "attrs",
+            "defStyleAttr"
+        }
+    .end annotation
 
     .line 53
     invoke-direct {p0, p1, p2, p3}, Landroidx/constraintlayout/widget/ConstraintLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -179,6 +209,14 @@
 
 .method private contains(Landroid/view/MotionEvent;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
 
     .line 185
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout;->mRect:Landroid/graphics/Rect;
@@ -224,6 +262,16 @@
 
 .method public static convertAbToX(FZ)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ab",
+            "isAbGmFloatSupported"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -243,6 +291,16 @@
 
 .method public static convertGmToY(FZ)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "gm",
+            "isAbGmFloatSupported"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -265,6 +323,16 @@
 
 .method public static convertXToAb(IZ)F
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "x",
+            "isAbGmFloatSupported"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -284,6 +352,16 @@
 
 .method public static convertYToGm(IZ)F
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "y",
+            "isAbGmFloatSupported"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -307,6 +385,18 @@
 
 .method private translate(FFLandroid/graphics/Point;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "x",
+            "y",
+            "out"
+        }
+    .end annotation
 
     .line 155
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout;->mBg:Landroid/view/View;
@@ -548,6 +638,16 @@
 
 .method private updateThumb(FF)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "x",
+            "y"
+        }
+    .end annotation
 
     .line 190
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout;->mPoint:Landroid/graphics/Point;
@@ -737,7 +837,7 @@
     sput v1, Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout;->Y_STEP_NUM:I
 
     :goto_0
-    const v0, 0x7f090508
+    const v0, 0x7f090510
 
     .line 94
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout;->findViewById(I)Landroid/view/View;
@@ -746,7 +846,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout;->mThumb:Landroid/view/View;
 
-    const v0, 0x7f090507
+    const v0, 0x7f09050f
 
     .line 95
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout;->findViewById(I)Landroid/view/View;
@@ -762,7 +862,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    const v0, 0x7f090501
+    const v0, 0x7f090509
 
     .line 120
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout;->findViewById(I)Landroid/view/View;
@@ -775,7 +875,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f090500
+    const v0, 0x7f090508
 
     .line 128
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout;->findViewById(I)Landroid/view/View;
@@ -788,7 +888,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f090502
+    const v0, 0x7f09050a
 
     .line 136
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout;->findViewById(I)Landroid/view/View;
@@ -801,7 +901,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f0904ff
+    const v0, 0x7f090507
 
     .line 144
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout;->findViewById(I)Landroid/view/View;
@@ -831,6 +931,22 @@
 
 .method protected onLayout(ZIIII)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "changed",
+            "left",
+            "top",
+            "right",
+            "bottom"
+        }
+    .end annotation
 
     .line 64
     invoke-super/range {p0 .. p5}, Landroidx/constraintlayout/widget/ConstraintLayout;->onLayout(ZIIII)V
@@ -850,6 +966,14 @@
 
 .method public setOnPositionChangedListener(Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout$OnPositionChangedListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "l"
+        }
+    .end annotation
 
     .line 214
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout;->mOnPositionChangedListener:Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout$OnPositionChangedListener;
@@ -859,6 +983,16 @@
 
 .method public updateThumbByPosition(II)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "px",
+            "py"
+        }
+    .end annotation
 
     .line 195
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout;->mBg:Landroid/view/View;

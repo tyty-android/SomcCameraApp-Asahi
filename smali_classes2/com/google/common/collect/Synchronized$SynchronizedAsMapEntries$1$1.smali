@@ -32,11 +32,21 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/Synchronized$SynchronizedAsMapEntries$1;Ljava/util/Map$Entry;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$1",
+            "val$entry"
+        }
+    .end annotation
 
-    .line 879
-    iput-object p1, p0, Lcom/google/common/collect/Synchronized$SynchronizedAsMapEntries$1$1;->this$1:Lcom/google/common/collect/Synchronized$SynchronizedAsMapEntries$1;
-
+    .line 911
     iput-object p2, p0, Lcom/google/common/collect/Synchronized$SynchronizedAsMapEntries$1$1;->val$entry:Ljava/util/Map$Entry;
+
+    iput-object p1, p0, Lcom/google/common/collect/Synchronized$SynchronizedAsMapEntries$1$1;->this$1:Lcom/google/common/collect/Synchronized$SynchronizedAsMapEntries$1;
 
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingMapEntry;-><init>()V
 
@@ -48,7 +58,7 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 879
+    .line 911
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedAsMapEntries$1$1;->delegate()Ljava/util/Map$Entry;
 
     move-result-object p0
@@ -68,7 +78,7 @@
         }
     .end annotation
 
-    .line 882
+    .line 914
     iget-object p0, p0, Lcom/google/common/collect/Synchronized$SynchronizedAsMapEntries$1$1;->val$entry:Ljava/util/Map$Entry;
 
     return-object p0
@@ -77,7 +87,7 @@
 .method public bridge synthetic getValue()Ljava/lang/Object;
     .locals 0
 
-    .line 879
+    .line 911
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedAsMapEntries$1$1;->getValue()Ljava/util/Collection;
 
     move-result-object p0
@@ -95,7 +105,7 @@
         }
     .end annotation
 
-    .line 887
+    .line 919
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedAsMapEntries$1$1;->val$entry:Ljava/util/Map$Entry;
 
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;

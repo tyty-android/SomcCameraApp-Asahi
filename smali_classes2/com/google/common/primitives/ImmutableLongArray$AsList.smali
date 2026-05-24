@@ -35,11 +35,19 @@
 # direct methods
 .method private constructor <init>(Lcom/google/common/primitives/ImmutableLongArray;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "parent"
+        }
+    .end annotation
 
-    .line 420
+    .line 497
     invoke-direct {p0}, Ljava/util/AbstractList;-><init>()V
 
-    .line 421
+    .line 498
     iput-object p1, p0, Lcom/google/common/primitives/ImmutableLongArray$AsList;->parent:Lcom/google/common/primitives/ImmutableLongArray;
 
     return-void
@@ -48,7 +56,7 @@
 .method synthetic constructor <init>(Lcom/google/common/primitives/ImmutableLongArray;Lcom/google/common/primitives/ImmutableLongArray$1;)V
     .locals 0
 
-    .line 417
+    .line 494
     invoke-direct {p0, p1}, Lcom/google/common/primitives/ImmutableLongArray$AsList;-><init>(Lcom/google/common/primitives/ImmutableLongArray;)V
 
     return-void
@@ -58,8 +66,20 @@
 # virtual methods
 .method public contains(Ljava/lang/Object;)Z
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "target"
+        }
+    .end annotation
 
-    .line 438
+    .line 515
     invoke-virtual {p0, p1}, Lcom/google/common/primitives/ImmutableLongArray$AsList;->indexOf(Ljava/lang/Object;)I
 
     move-result p0
@@ -80,19 +100,27 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 7
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 458
+    .line 547
     instance-of v0, p1, Lcom/google/common/primitives/ImmutableLongArray$AsList;
 
     if-eqz v0, :cond_0
 
-    .line 459
+    .line 548
     check-cast p1, Lcom/google/common/primitives/ImmutableLongArray$AsList;
 
-    .line 460
+    .line 549
     iget-object p0, p0, Lcom/google/common/primitives/ImmutableLongArray$AsList;->parent:Lcom/google/common/primitives/ImmutableLongArray;
 
     iget-object p1, p1, Lcom/google/common/primitives/ImmutableLongArray$AsList;->parent:Lcom/google/common/primitives/ImmutableLongArray;
@@ -103,7 +131,7 @@
 
     return p0
 
-    .line 463
+    .line 552
     :cond_0
     instance-of v0, p1, Ljava/util/List;
 
@@ -113,11 +141,11 @@
 
     return v1
 
-    .line 466
+    .line 555
     :cond_1
     check-cast p1, Ljava/util/List;
 
-    .line 467
+    .line 556
     invoke-virtual {p0}, Lcom/google/common/primitives/ImmutableLongArray$AsList;->size()I
 
     move-result v0
@@ -130,7 +158,7 @@
 
     return v1
 
-    .line 470
+    .line 559
     :cond_2
     iget-object v0, p0, Lcom/google/common/primitives/ImmutableLongArray$AsList;->parent:Lcom/google/common/primitives/ImmutableLongArray;
 
@@ -138,7 +166,7 @@
 
     move-result v0
 
-    .line 472
+    .line 561
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -154,7 +182,7 @@
 
     move-result-object v2
 
-    .line 473
+    .line 562
     instance-of v3, v2, Ljava/lang/Long;
 
     if-eqz v3, :cond_4
@@ -198,8 +226,16 @@
 
 .method public get(I)Ljava/lang/Long;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
-    .line 433
+    .line 510
     iget-object p0, p0, Lcom/google/common/primitives/ImmutableLongArray$AsList;->parent:Lcom/google/common/primitives/ImmutableLongArray;
 
     invoke-virtual {p0, p1}, Lcom/google/common/primitives/ImmutableLongArray;->get(I)J
@@ -215,8 +251,16 @@
 
 .method public bridge synthetic get(I)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
-    .line 417
+    .line 494
     invoke-virtual {p0, p1}, Lcom/google/common/primitives/ImmutableLongArray$AsList;->get(I)Ljava/lang/Long;
 
     move-result-object p0
@@ -227,7 +271,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 483
+    .line 572
     iget-object p0, p0, Lcom/google/common/primitives/ImmutableLongArray$AsList;->parent:Lcom/google/common/primitives/ImmutableLongArray;
 
     invoke-virtual {p0}, Lcom/google/common/primitives/ImmutableLongArray;->hashCode()I
@@ -239,8 +283,20 @@
 
 .method public indexOf(Ljava/lang/Object;)I
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "target"
+        }
+    .end annotation
 
-    .line 443
+    .line 520
     instance-of v0, p1, Ljava/lang/Long;
 
     if-eqz v0, :cond_0
@@ -268,8 +324,20 @@
 
 .method public lastIndexOf(Ljava/lang/Object;)I
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "target"
+        }
+    .end annotation
 
-    .line 448
+    .line 525
     instance-of v0, p1, Ljava/lang/Long;
 
     if-eqz v0, :cond_0
@@ -298,7 +366,7 @@
 .method public size()I
     .locals 0
 
-    .line 428
+    .line 505
     iget-object p0, p0, Lcom/google/common/primitives/ImmutableLongArray$AsList;->parent:Lcom/google/common/primitives/ImmutableLongArray;
 
     invoke-virtual {p0}, Lcom/google/common/primitives/ImmutableLongArray;->length()I
@@ -308,8 +376,40 @@
     return p0
 .end method
 
+.method public spliterator()Ljava/util/Spliterator;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Spliterator<",
+            "Ljava/lang/Long;",
+            ">;"
+        }
+    .end annotation
+
+    .line 542
+    iget-object p0, p0, Lcom/google/common/primitives/ImmutableLongArray$AsList;->parent:Lcom/google/common/primitives/ImmutableLongArray;
+
+    invoke-virtual {p0}, Lcom/google/common/primitives/ImmutableLongArray;->spliterator()Ljava/util/Spliterator$OfLong;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public subList(II)Ljava/util/List;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromIndex",
+            "toIndex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -319,7 +419,7 @@
         }
     .end annotation
 
-    .line 453
+    .line 530
     iget-object p0, p0, Lcom/google/common/primitives/ImmutableLongArray$AsList;->parent:Lcom/google/common/primitives/ImmutableLongArray;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/common/primitives/ImmutableLongArray;->subArray(II)Lcom/google/common/primitives/ImmutableLongArray;
@@ -336,7 +436,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 488
+    .line 577
     iget-object p0, p0, Lcom/google/common/primitives/ImmutableLongArray$AsList;->parent:Lcom/google/common/primitives/ImmutableLongArray;
 
     invoke-virtual {p0}, Lcom/google/common/primitives/ImmutableLongArray;->toString()Ljava/lang/String;

@@ -30,8 +30,8 @@
     }
     k = 0x5
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x31
@@ -126,7 +126,11 @@
     move-result-object v1
 
     .line 53
-    invoke-interface {p1, v1}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
+    move-object v2, p1
+
+    check-cast v2, Ljava/util/Set;
+
+    invoke-interface {v2, v1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
     move-result v2
 

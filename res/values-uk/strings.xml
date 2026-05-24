@@ -82,6 +82,7 @@
     <string name="call_notification_incoming_text">Вхідний виклик</string>
     <string name="call_notification_ongoing_text">Активний виклик</string>
     <string name="call_notification_screening_text">Вхідний виклик (Фільтр)</string>
+    <string name="camera_string_saving_process_hint_txt">Збереження... Зачекайте завершення збереження.</string>
     <string name="camera_strings_accept_privacy_policy_txt">Ви вже прийняли політику конфіденційності, але завжди можете змінити своє рішення.</string>
     <string name="camera_strings_accessibility_48_mega_pixel_txt">48 мегапікселів</string>
     <string name="camera_strings_accessibility_adjust_bokeh_txt">Налаштувати ефект боке</string>
@@ -92,6 +93,27 @@
     <string name="camera_strings_accessibility_adjust_framing_size_smaller_txt">Зменшити розмір кадру</string>
     <string name="camera_strings_accessibility_adjust_framing_size_txt">Налаштувати розмір кадру</string>
     <string name="camera_strings_accessibility_adjust_shutter_speed_txt">Витримка</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_look_menu_txt">Кнопка «Закрити». Закриває меню вигляду.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_menu_txt">Закрити меню «Корист.»</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_suggests_txt">Закрити запропоновані налаштування</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_menu_txt">Наразі застосовано «Користувацький вигляд». Відкриває меню налаштувань.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_txt">Користувацький вигляд. Застосовує налаштування вигляду, яскравості та кольору, зареєстровані в меню «Корист.».</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_tab_txt">Вкладка «Корист.». Застосовує налаштування вигляду, яскравості та кольору, зареєстровані в меню «Корист.».</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_button_txt">Кнопка «Корист.». Відкриває меню, яке надає можливість робити додаткові налаштування після застосування рекомендованих налаштувань.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_param_txt">Для %1$s установлено значення %2$s</string>
+    <string name="camera_strings_accessibility_ai_suggestion_first_time_txt">Асистент ШІ-камери. Ця функція пропонує налаштування, як-от колір, відповідно до сцени.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_four_of_some_suggests_txt">Четверте запропоноване налаштування</string>
+    <string name="camera_strings_accessibility_ai_suggestion_look_menu_txt">"%1$s
+Відкриває меню «Креативний образ»"</string>
+    <string name="camera_strings_accessibility_ai_suggestion_new_suggest_txt">Запропоновані нові рекомендовані налаштування</string>
+    <string name="camera_strings_accessibility_ai_suggestion_one_of_some_suggests_txt">Перше запропоноване налаштування</string>
+    <string name="camera_strings_accessibility_ai_suggestion_open_suggests_txt">Розгорнути рекомендовані налаштування</string>
+    <string name="camera_strings_accessibility_ai_suggestion_reset_to_default_txt">Скинути до попередньо запропонованих налаштувань</string>
+    <string name="camera_strings_accessibility_ai_suggestion_selected_suggest_txt">Застосовано ці рекомендовані налаштування</string>
+    <string name="camera_strings_accessibility_ai_suggestion_suggest_lens_txt">Запропонована кнопка об’єктива. Рекомендовано %1$sx.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_surface_of_some_suggests_txt">Запропоновані налаштування. Проведіть пальцем справа наліво, щоб переглянути рекомендовані налаштування.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_three_of_some_suggests_txt">Третє запропоноване налаштування</string>
+    <string name="camera_strings_accessibility_ai_suggestion_two_of_some_suggests_txt">Друге запропоноване налаштування</string>
     <string name="camera_strings_accessibility_arrow_left_button_txt">Стрілка вліво</string>
     <string name="camera_strings_accessibility_arrow_right_button_txt">Стрілка вправо</string>
     <string name="camera_strings_accessibility_audio_level_txt">Вимірювач рівня звуку</string>
@@ -246,6 +268,45 @@
     <string name="camera_strings_advanced_setting_geo_tag_title_txt">Збереження розташування</string>
     <string name="camera_strings_ai_face_restore_description_txt">Ви можете робити фотографії з наведенням на різкість, щоб зробити риси обличчя чіткішими</string>
     <string name="camera_strings_ai_face_restore_txt">Чіткі обличчя</string>
+    <string name="camera_strings_ai_suggestion_introduce_hint_text_txt">[Підказки] Асист. ШІ-камери</string>
+    <string name="camera_strings_aisuggestion_box_name1_txt">Корист.</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_message_txt">Зареєструйте поточні налаштування вигляду, яскравості та кольору на вкладці «Корист.».</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_overwrite_message_txt">Вигляд уже зареєстрований на вкладці «Корист.». Перезаписати?</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_title_txt">Зареєструвати як користувацький вигляд</string>
+    <string name="camera_strings_aisuggestion_box_title_txt">Корист.</string>
+    <string name="camera_strings_aisuggestion_custom_params_contrast_txt">Контр.</string>
+    <string name="camera_strings_aisuggestion_custom_params_ev_txt">Яскрав.</string>
+    <string name="camera_strings_aisuggestion_custom_params_register_txt">Зареєструвати</string>
+    <string name="camera_strings_aisuggestion_custom_params_saturation_txt">Насич.</string>
+    <string name="camera_strings_aisuggestion_custom_params_title_txt">Яскравість/колір</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbab_txt">Тепл.</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbgm_txt">Відтінок</string>
+    <string name="camera_strings_aisuggestion_customlook_register_instruction_txt">Користувацькі вигляди можна використовувати в будь-який час на вкладці «Користувацький вигляд»</string>
+    <string name="camera_strings_aisuggestion_description_txt">"Штучний інтелект (ШІ) автоматично розпізнає сцену і пропонує оптимальні налаштування в мініатюрному вікні попереднього перегляду в правому нижньому куті.
+Якщо торкнутися цього мініатюрного вікна попереднього перегляду, буде автоматично налаштовано відповідно до сцени такі параметри:
+«Вигляд», «Експозиція», «Баланс білого», «Насиченість», «Контраст», «Боке»
+*Ця функція доступна тільки в режимі «Фото».
+*Якщо натиснути й утримувати кнопку затвора, щоб почати запис відео, налаштування насиченості, контрасту й боке не застосовуватимуться."</string>
+    <string name="camera_strings_aisuggestion_guide_description1_txt">Рекомендовані налаштування на основі сцени, визначеної ШІ, відображаються в мініатюрному вікні попереднього перегляду в правому нижньому куті (в правому верхньому куті, якщо тримати пристрій горизонтально). Якщо натиснути мініатюрне вікно попереднього перегляду, то можна застосувати всі ці налаштування одночасно.</string>
+    <string name="camera_strings_aisuggestion_guide_description2_txt">Залежно від сцени також може бути запропоновано певне налаштування об’єктива. У цьому випадку можна змінити налаштування об’єктива відповідно до своїх уподобань.</string>
+    <string name="camera_strings_aisuggestion_guide_description3_txt">"Проведіть пальцем уліво в мініатюрному вікні попереднього перегляду в правому нижньому куті (у правому верхньому куті, якщо тримати пристрій горизонтально), щоб відобразити додаткові рекомендації щодо налаштування.
+Вибрана рекомендація буде збережена як ваше бажане налаштування та буде включена додана до списку рекомендацій під час наступної зйомки в подібній сцені."</string>
+    <string name="camera_strings_aisuggestion_guide_description4_txt">Торкніться кнопки [>], щоб приховати рекомендації, якщо вони не потрібні. Після виявлення нової сцени кнопка [&lt;] засвітиться, щоб показати, що є нові рекомендації щодо налаштування. Щоб ще раз перевірити рекомендації, торкніться кнопки [&lt;].</string>
+    <string name="camera_strings_aisuggestion_guide_description5_txt">Якщо натиснути кнопку налаштування після вибору запропонованих налаштувань, можна додатково налаштувати такі параметри, як яскравість і колір. Ваші налаштування будуть збережені на пристрої та застосовані до запропонованих налаштувань наступного разу, коли буде виявлено подібну сцену.</string>
+    <string name="camera_strings_aisuggestion_guide_description6_txt">Можна зареєструвати запропоновані та зроблені вами налаштування, що дозволить їх завантажувати в будь-який час, щоб робити фотографії з однаковими налаштуваннями. Торкніться [Зареєструвати], щоб додати користувацький вигляд до списку доступних виглядів.</string>
+    <string name="camera_strings_aisuggestion_guide_entry_txt">Перевір. як викор. асист. ШІ-камери</string>
+    <string name="camera_strings_aisuggestion_guide_title_txt">Як викор. асистента ШІ-камери</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_message_txt">Скинути всі налаштування до заводських, зокрема налаштування кольору, яскравості та ваші бажані налаштування?</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_title_txt">Скинути параметри</string>
+    <string name="camera_strings_aisuggestion_params_reset_txt">Скинути параметри</string>
+    <string name="camera_strings_aisuggestion_permitted_item_bokeh_txt">Боке</string>
+    <string name="camera_strings_aisuggestion_permitted_item_lens_txt">Об’єктив</string>
+    <string name="camera_strings_aisuggestion_permitted_item_title_txt">Додати до рекомендацій</string>
+    <string name="camera_strings_aisuggestion_recommend_lens_ratio_txt">Радимо %1$s</string>
+    <string name="camera_strings_aisuggestion_return_to_default_txt">Скасувати зміни</string>
+    <string name="camera_strings_aisuggestion_simple_video_instruction_txt">Під час відеозапису тривалим натиск. налашт. насич., контрасту та боке можуть виглядати по-різному.</string>
+    <string name="camera_strings_aisuggestion_txt">Асистент ШІ-камери</string>
+    <string name="camera_strings_aisuggestion_use_aissuggestion_txt">Викор. асист. ШІ-камери</string>
     <string name="camera_strings_anonymous_analytics_txt">Аналітика анонімних даних</string>
     <string name="camera_strings_application_name">Камера</string>
     <string name="camera_strings_application_name_google_lens_txt">Google Lens</string>
@@ -421,6 +482,7 @@
     <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Не вдалося підключитися до мережі Wi-Fi</string>
     <string name="camera_strings_dialog_user_data_collection_txt">Надаючи свою згоду нижче, ви також погоджуєтеся з тим, що Sony збиратиме &lt;b>&lt;a href=#personal-data>особисті дані&lt;/a>&lt;/b> для забезпечення надання персоналізованої технічної підтримки та вдосконалення роботи пристроїв і послуг. Sony оброблятиме ваші дані відповідно до нашої &lt;b>&lt;a href=https://www.sonymobile.com/privacy/>Політики конфіденційності&lt;/a>&lt;/b>.</string>
     <string name="camera_strings_dialog_video_hdr_hlg_supported_short_description_txt">Деякі пристрої/служби можуть не відтворювати вихідні кольори та яскравість вмісту у форматі HDR. Для перегляду такого вмісту використовуйте пристрої/служби, що підтримують HDR.</string>
+    <string name="camera_strings_digital_tripod_hint_edge_txt">Склад змінився. Наведіть камеру на початковий об’єкт зйомки.</string>
     <string name="camera_strings_digital_zoom_type_description_txt">"Виберіть установку цифрового масштабування.
 
 Стандартне цифрове масштабування: масштабування за допомогою цифрової обробки на основі даних датчика зображень.
@@ -484,6 +546,7 @@
     <string name="camera_strings_fast_capturing_screen_locked_settings_txt">Щоб відкрити меню установок, розблокуйте екран.</string>
     <string name="camera_strings_fast_capturing_screen_locked_streaming_txt">Щоб розпочати потокове відтворення, розблокуйте екран.</string>
     <string name="camera_strings_fast_capturing_screen_locked_title_txt">Екран заблоковано</string>
+    <string name="camera_strings_feature_creative_look_custom_description_txt">Можна зареєструвати вигляд і налаштування яскравості / кольору.</string>
     <string name="camera_strings_feature_creative_look_description_txt">"Завершення зображень (фотографій або відеороликів) можна обирати, вибравши \"look\" (\"образ\").
 
 Креативний образ пропонує 6 попередньо встановлених образів. Кожен з них оптимізований з різною комбінацією колірного тону, насиченості, контрастності, різкості, яскравості та інших елементів зображення, тому ви можете налаштувати обробку зображення, обравши ідеальний баланс цих елементів."</string>
@@ -567,6 +630,7 @@ JPEG: зберігає зображення у форматі JPEG."</string>
     <string name="camera_strings_framing_orientation_description_txt">"Ви можете обрізати об'єкт у горизонтальному або вертикальному кадрі.
 Налаштуйте значення [Авто], щоб орієнтація кадру збігалася з орієнтацією пристрою."</string>
     <string name="camera_strings_framing_select_subject_to_track_txt">"Торкніться об'єкта, положення якого ви хочете заблокувати"</string>
+    <string name="camera_strings_framing_setting_guide_title_txt">Про Автом. Кадрування</string>
     <string name="camera_strings_framing_setting_orientation_landscape_txt">Горизонтально</string>
     <string name="camera_strings_framing_setting_orientation_portrait_txt">Вертикально</string>
     <string name="camera_strings_framing_setting_orientation_title_txt">Орієнтація кадру</string>
@@ -574,6 +638,7 @@ JPEG: зберігає зображення у форматі JPEG."</string>
 Записи з кадруванням зберігаються з роздільною здатністю Full HD. Записи без кадрування зберігаються з роздільною здатністю 4K."</string>
     <string name="camera_strings_framing_setting_save_original_video_off_txt">Запис усього екрана: вимкнено</string>
     <string name="camera_strings_framing_setting_save_original_video_title_txt">Запис усього екрана</string>
+    <string name="camera_strings_framing_setting_snapshot_description_txt">Незалежно від того, чи ввімкнено [Запис усього екрана], моментальні знімки, зроблені під час відеозапису, зберігаються в повноекранному режимі.</string>
     <string name="camera_strings_geotagging_description_txt">Зберігайте фотографії та відеозаписи з позначенням розташування, де їх було створено</string>
     <string name="camera_strings_geotagging_txt">Збереження розташування</string>
     <string name="camera_strings_gimbal_mode_tab_label">Фільмування з ШІ</string>
@@ -592,6 +657,7 @@ JPEG: зберігає зображення у форматі JPEG."</string>
     <string name="camera_strings_gimbal_setting_assist_method_locking_hint_txt">"Фікс. полож. об'єкта: уручну"</string>
     <string name="camera_strings_gimbal_setting_assist_method_locking_txt">Ручний</string>
     <string name="camera_strings_gimbal_setting_assist_method_title_txt">"Фікс. полож. об'єкта"</string>
+    <string name="camera_strings_gimbal_setting_guide_title_txt">Про Фільмування з ШІ</string>
     <string name="camera_strings_gridline_description_txt">Укажіть, чи слід відображати лінії сітки для зручнішого побудування композиції кадрів</string>
     <string name="camera_strings_gridline_txt">Лінії сітки</string>
     <string name="camera_strings_hand_shutter_description_updated_txt">Ви можете розпочати зворотній відлік таймера, повернувши руку долонею до фронтальної камери. Для простішого виявлення витягніть пальці вгору.</string>
@@ -727,6 +793,7 @@ JPEG: зберігає зображення у форматі JPEG."</string>
     <string name="camera_strings_notification_channel_title_saving_process_txt">Процес збереження</string>
     <string name="camera_strings_notification_text_saving_in_progress_txt">Зачекайте, доки завершиться збереження</string>
     <string name="camera_strings_notification_title_saving_in_progress_txt">Триває збереження</string>
+    <string name="camera_strings_notify_saving_process_cannot_launch_app_by_hw_shutter_txt">Якщо натиснути кнопку затвору, коли камера перебуває в режимі зберігання, вона може не запуститися</string>
     <string name="camera_strings_ok_txt">ОК</string>
     <string name="camera_strings_peaking_color_blue_txt">Синій</string>
     <string name="camera_strings_peaking_color_red_txt">Червоний</string>
@@ -735,6 +802,7 @@ JPEG: зберігає зображення у форматі JPEG."</string>
     <string name="camera_strings_peaking_color_yellow_txt">Жовтий</string>
     <string name="camera_strings_peaking_txt">Виділення контуру</string>
     <string name="camera_strings_personal_data_txt">Особисті дані</string>
+    <string name="camera_strings_photopro_setting_guide_title_txt">Про проф. фото</string>
     <string name="camera_strings_privacy_policy_txt">Політика конфіденційності</string>
     <string name="camera_strings_pro_tips_computational_photo_description_txt">"Навіть у режимі P камера автоматично розпізнає сцену та робить чудові автоматичні знімки, зменшуючи розмиття, шум, надмірну або недостатню експозицію.
 Якщо ви не використовуєте цю функцію, ви можете вимкнути її за допомогою кнопки Fn або в МЕНЮ."</string>
@@ -965,6 +1033,7 @@ M (експозиція вручну)"</string>
     <string name="camera_strings_video_stabilization_description_sub_txt">Примітка: Вибір \"Висока якість\" може призвести до скорочення тривалості запису через підвищення температури пристрою.</string>
     <string name="camera_strings_video_stabilization_description_txt">Пристрій Xperia оснащено унікальною гібридною системою стабілізації, яка називається Optical SteadyShot. Вона одночасно виконує оптичну й електронну стабілізацію зображення, дозволяючи знімати плавні відео без ефекту тремтіння рук навіть під час руху.</string>
     <string name="camera_strings_video_stabilization_high_quality_images_txt">Висока якість</string>
+    <string name="camera_strings_videopro_setting_guide_title_txt">Про проф. відео</string>
     <string name="camera_strings_volume_distortion_correction_description_txt">"Виправляє викривлення облич, які з'являються біля краю екрана під час використання надширококутного об'єктива. Це може призвести до викривлення фону або звуження кута огляду."</string>
     <string name="camera_strings_volume_distortion_correction_front_description_txt">"Виправляє викривлення облич, які з'являються біля краю екрана. Це може призвести до викривлення фону або звуження кута огляду."</string>
     <string name="camera_strings_volume_distortion_correction_txt">Компенсація викрив. обличчя</string>
@@ -1042,8 +1111,25 @@ M (експозиція вручну)"</string>
     <string name="clear_text_end_icon_content_description">Видалити текст</string>
     <string name="close_drawer">Закрити меню навігації</string>
     <string name="close_sheet">Закрити аркуш</string>
+    <string name="common_google_play_services_enable_button">Увімкнути</string>
+    <string name="common_google_play_services_enable_text">Додаток %1$s не працюватиме, якщо не ввімкнути сервіси Google Play.</string>
+    <string name="common_google_play_services_enable_title">Увімкнути сервіси Google Play</string>
+    <string name="common_google_play_services_install_button">Установити</string>
+    <string name="common_google_play_services_install_text">Додаток %1$s не працюватиме без сервісів Google Play, яких немає на вашому пристрої.</string>
+    <string name="common_google_play_services_install_title">Установити сервіси Google Play</string>
+    <string name="common_google_play_services_notification_channel_name">Доступність сервісів Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Помилка сервісів Google Play</string>
+    <string name="common_google_play_services_unknown_issue">У додатку %1$s виникла проблема із сервісами Google Play. Повторіть спробу.</string>
+    <string name="common_google_play_services_unsupported_text">Додаток %1$s не працюватиме без сервісів Google Play, які не підтримуються на вашому пристрої.</string>
+    <string name="common_google_play_services_update_button">Оновити</string>
+    <string name="common_google_play_services_update_text">Додаток %1$s не працюватиме, якщо не оновити сервіси Google Play.</string>
+    <string name="common_google_play_services_update_title">Оновіть сервіси Google Play</string>
+    <string name="common_google_play_services_updating_text">Додаток %1$s не працюватиме без сервісів Google Play, які зараз оновлюються.</string>
+    <string name="common_google_play_services_wear_update_text">Потрібна нова версія сервісів Google Play. Вони невдовзі оновляться.</string>
+    <string name="common_open_on_phone">Відкрити на телефоні</string>
+    <string name="common_signin_button_text">Увійти</string>
+    <string name="common_signin_button_text_long">Увійти в облік. запис Google</string>
     <string name="copy">Скопіювати</string>
-    <string name="copy_toast_msg">Посилання скопійовано в буфер обміну</string>
     <string name="default_error_message">Введено недійсні дані</string>
     <string name="default_popup_window_title">Спливаюче вікно</string>
     <string name="dropdown_menu">Спадне меню</string>
@@ -1054,9 +1140,6 @@ M (експозиція вручну)"</string>
     <string name="external_display_connected_description_txt">Ви можете перевірити видошукач з Влогового монітора</string>
     <string name="external_display_connected_title_txt">Влоговий монітор підключено</string>
     <string name="external_display_note_about_external_mic_txt">Примітка. Зовнішній мікрофон слід підключати до Влогового монітора перед записом. Якщо зробити це після запису, Влоговий монітор доведеться перепідключити.</string>
-    <string name="fallback_menu_item_copy_link">Копіювати посилання</string>
-    <string name="fallback_menu_item_open_in_browser">Відкрити у веб-переглядачі</string>
-    <string name="fallback_menu_item_share_link">Надіслати посилання</string>
     <string name="icon_content_description">Значок вікна</string>
     <string name="in_progress">Виконується</string>
     <string name="indeterminate">Частково вибрано</string>

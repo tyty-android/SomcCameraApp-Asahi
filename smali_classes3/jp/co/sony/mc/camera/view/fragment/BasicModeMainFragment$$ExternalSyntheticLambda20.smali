@@ -32,7 +32,7 @@
 
     check-cast p1, Ljp/co/sony/mc/camera/util/TuplesUtil$Quadruple;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;->$r8$lambda$mvt0SZ86csyTzHyiMpQg5MnH0Jk(Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;Ljp/co/sony/mc/camera/util/TuplesUtil$Quadruple;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;->$r8$lambda$TSwKoBSwtHKiKoBK8PgbVYGSUkQ(Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;Ljp/co/sony/mc/camera/util/TuplesUtil$Quadruple;)Lkotlin/Unit;
 
     move-result-object p0
 

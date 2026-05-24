@@ -30,19 +30,33 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/Storage$StorageState;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$1",
+            "type",
+            "state",
+            "areAllStoragesActivated"
+        }
+    .end annotation
 
-    .line 370
+    .line 358
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 371
+    .line 359
     iput-object p2, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;->mStorageType:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
-    .line 372
+    .line 360
     iput-object p3, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;->mStorageState:Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
-    .line 373
+    .line 361
     iput-boolean p4, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;->mAreAllStoragesActivated:Z
 
     return-void
@@ -61,7 +75,7 @@
 .method public run()V
     .locals 9
 
-    .line 378
+    .line 366
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
@@ -70,7 +84,7 @@
 
     move-result-object v0
 
-    .line 379
+    .line 367
     iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
@@ -83,7 +97,7 @@
 
     move-result-object v1
 
-    .line 380
+    .line 368
     iget-object v2, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;->-$$Nest$fgetmStorageStateMap(Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;)Ljava/util/HashMap;
@@ -98,7 +112,7 @@
 
     check-cast v2, Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
-    .line 381
+    .line 369
     iget-object v3, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;
 
     invoke-static {v3}, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;->-$$Nest$fgetmStorageStateMap(Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;)Ljava/util/HashMap;
@@ -109,7 +123,7 @@
 
     move-result v3
 
-    .line 382
+    .line 370
     invoke-static {}, Ljp/co/sony/mc/camera/storage/StorageUtil;->getMountableStorageTypes()Ljava/util/List;
 
     move-result-object v4
@@ -131,7 +145,7 @@
     :cond_0
     move v3, v6
 
-    .line 384
+    .line 372
     :goto_0
     iget-object v4, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;
 
@@ -145,12 +159,12 @@
 
     invoke-virtual {v4, v7, v8}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 386
+    .line 374
     iget-object v4, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;->mStorageType:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
     if-ne v4, v0, :cond_1
 
-    .line 387
+    .line 375
     iget-object v4, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;
 
     iget-object v7, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;->mStorageState:Ljp/co/sony/mc/camera/storage/Storage$StorageState;
@@ -161,51 +175,29 @@
 
     invoke-static {v4, v7}, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;->-$$Nest$mupdateGestureShutterState(Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;Z)V
 
-    .line 390
+    .line 378
     :cond_1
-    iget-object v4, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;
-
-    iget-object v4, v4, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
-
-    invoke-static {v4}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmCameraSettingsHolder(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isStreaming()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_2
-
-    return-void
-
-    .line 394
-    :cond_2
     iget-object v4, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;->mStorageType:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
-    if-ne v4, v0, :cond_4
+    if-ne v4, v0, :cond_3
 
     iget-object v4, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;->mStorageState:Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
-    .line 395
+    .line 379
     invoke-virtual {v4}, Ljp/co/sony/mc/camera/storage/Storage$StorageState;->isWritable()Z
 
     move-result v4
 
-    if-nez v4, :cond_3
+    if-nez v4, :cond_2
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/storage/Storage$StorageState;->isWritable()Z
 
     move-result v1
 
-    if-eqz v1, :cond_4
+    if-eqz v1, :cond_3
 
-    .line 399
-    :cond_3
+    .line 383
+    :cond_2
     iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
@@ -218,21 +210,21 @@
 
     goto :goto_1
 
-    .line 400
-    :cond_4
+    .line 384
+    :cond_3
     iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;->mStorageType:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
     sget-object v4, Ljp/co/sony/mc/camera/storage/Storage$StorageType;->EXTERNAL_CARD:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
-    if-ne v1, v4, :cond_5
+    if-ne v1, v4, :cond_4
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;->mStorageState:Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
     sget-object v4, Ljp/co/sony/mc/camera/storage/Storage$StorageState;->CORRUPT:Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
-    if-ne v1, v4, :cond_5
+    if-ne v1, v4, :cond_4
 
-    .line 402
+    .line 386
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
@@ -251,23 +243,23 @@
 
     return-void
 
-    .line 406
-    :cond_5
+    .line 390
+    :cond_4
     iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;->mStorageType:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
-    if-ne v1, v0, :cond_7
+    if-ne v1, v0, :cond_6
 
-    if-eqz v2, :cond_6
+    if-eqz v2, :cond_5
 
-    .line 411
+    .line 395
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/storage/Storage$StorageState;->isWritable()Z
 
     move-result v1
 
-    if-eqz v1, :cond_7
+    if-eqz v1, :cond_6
 
-    .line 412
-    :cond_6
+    .line 396
+    :cond_5
     iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
@@ -284,14 +276,14 @@
 
     invoke-virtual {v1, v4, v7}, Ljp/co/sony/mc/camera/controller/StateMachine;->sendEvent(Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;[Ljava/lang/Object;)V
 
-    .line 415
+    .line 399
     iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;->mStorageState:Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
     sget-object v4, Ljp/co/sony/mc/camera/storage/Storage$StorageState;->FULL:Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
-    if-eq v1, v4, :cond_7
+    if-eq v1, v4, :cond_6
 
-    .line 416
+    .line 400
     iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
@@ -300,8 +292,8 @@
 
     invoke-static {v1, v0, v4, v6}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mnotifyStorageStateChanged(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/Storage$StorageState;Z)V
 
-    .line 424
-    :cond_7
+    .line 408
+    :cond_6
     :goto_1
     iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;
 
@@ -315,49 +307,49 @@
 
     sget-object v4, Ljp/co/sony/mc/camera/storage/Storage$StorageState;->FULL:Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
-    if-ne v1, v4, :cond_b
+    if-ne v1, v4, :cond_a
 
-    if-eqz v3, :cond_8
+    if-eqz v3, :cond_7
 
-    .line 427
+    .line 411
     iget-boolean v5, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;->mAreAllStoragesActivated:Z
 
     goto :goto_2
 
-    .line 429
-    :cond_8
+    .line 413
+    :cond_7
     iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;->mStorageType:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
-    if-ne v1, v0, :cond_9
+    if-ne v1, v0, :cond_8
 
-    .line 430
+    .line 414
     sget-object v1, Ljp/co/sony/mc/camera/storage/Storage$StorageState;->FULL:Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
-    if-eq v2, v1, :cond_a
+    if-eq v2, v1, :cond_9
 
     goto :goto_2
 
-    .line 434
-    :cond_9
+    .line 418
+    :cond_8
     sget-object v1, Ljp/co/sony/mc/camera/storage/Storage$StorageState;->AVAILABLE:Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
-    if-eq v2, v1, :cond_a
+    if-eq v2, v1, :cond_9
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;->mStorageState:Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
     sget-object v2, Ljp/co/sony/mc/camera/storage/Storage$StorageState;->AVAILABLE:Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
-    if-ne v1, v2, :cond_a
+    if-ne v1, v2, :cond_9
 
     goto :goto_2
 
-    :cond_a
+    :cond_9
     move v5, v6
 
     :goto_2
-    if-eqz v5, :cond_b
+    if-eqz v5, :cond_a
 
-    .line 442
+    .line 426
     iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter$StorageStateChangeTask;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/controller/StateMachine$StorageStateAdapter;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
@@ -376,6 +368,6 @@
 
     invoke-static {v1, v0, p0, v6}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mnotifyStorageStateChanged(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/Storage$StorageState;Z)V
 
-    :cond_b
+    :cond_a
     return-void
 .end method

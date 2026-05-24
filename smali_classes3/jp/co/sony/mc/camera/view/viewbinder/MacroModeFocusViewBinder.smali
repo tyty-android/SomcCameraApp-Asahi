@@ -34,14 +34,14 @@
         "Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;",
         "getViewFinderUiState",
         "()Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;",
+        "basicModeFocusSsUiState",
+        "Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;",
+        "getBasicModeFocusSsUiState",
+        "()Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;",
         "messageUiState",
         "Ljp/co/sony/mc/camera/view/uistate/MessageUiState;",
         "getMessageUiState",
         "()Ljp/co/sony/mc/camera/view/uistate/MessageUiState;",
-        "basicModeCommonUiState",
-        "Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;",
-        "getBasicModeCommonUiState",
-        "()Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;",
         "context",
         "Landroid/content/Context;",
         "kotlin.jvm.PlatformType",
@@ -291,6 +291,17 @@
     return-void
 .end method
 
+.method public static final synthetic access$getBasicModeFocusSsUiState(Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;)Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;
+    .locals 0
+
+    .line 28
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;->getBasicModeFocusSsUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public static final synthetic access$getBinding$p(Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;)Ljp/co/sony/mc/camera/databinding/FragmentMacroFocusBinding;
     .locals 0
 
@@ -383,22 +394,22 @@
     move-result p1
 
     .line 177
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;->getViewFinderUiState()Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;->getBasicModeFocusSsUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;
 
     move-result-object p0
 
-    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->changeFocusDistance(F)V
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;->changeFocusDistance(F)V
 
     return-void
 .end method
 
-.method private final getBasicModeCommonUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
+.method private final getBasicModeFocusSsUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;
     .locals 0
 
-    .line 44
+    .line 42
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentMacroFocusBinding;
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/FragmentMacroFocusBinding;->getBasicModeCommonUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/FragmentMacroFocusBinding;->getBasicModeFocusSsUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;
 
     move-result-object p0
 
@@ -440,7 +451,7 @@
 .method private final getMessageUiState()Ljp/co/sony/mc/camera/view/uistate/MessageUiState;
     .locals 0
 
-    .line 41
+    .line 44
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentMacroFocusBinding;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/FragmentMacroFocusBinding;->getMessageUiState()Ljp/co/sony/mc/camera/view/uistate/MessageUiState;
@@ -793,7 +804,7 @@
     .line 131
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;->context:Landroid/content/Context;
 
-    const v1, 0x7f11035b
+    const v1, 0x7f1103a5
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -820,7 +831,7 @@
     .line 134
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;->context:Landroid/content/Context;
 
-    const v3, 0x7f110098
+    const v3, 0x7f1100ac
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -832,7 +843,7 @@
     :cond_0
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;->context:Landroid/content/Context;
 
-    const v3, 0x7f110099
+    const v3, 0x7f1100ad
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

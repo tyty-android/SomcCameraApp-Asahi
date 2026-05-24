@@ -28,6 +28,19 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/device/AeAwbLockStateChecker;ZZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$aeLocked",
+            "val$awbLocked"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"

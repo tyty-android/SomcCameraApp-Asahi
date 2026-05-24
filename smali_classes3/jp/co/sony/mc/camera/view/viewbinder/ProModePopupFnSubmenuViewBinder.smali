@@ -1053,7 +1053,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0700e2
+    const v2, 0x7f070125
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1074,7 +1074,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f070695
+    const v2, 0x7f070641
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1133,7 +1133,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f11009c
+    const v2, 0x7f1100b0
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1769,7 +1769,7 @@
 
     div-float/2addr v0, v4
 
-    const v1, 0x7f0702c3
+    const v1, 0x7f07027d
 
     .line 266
     invoke-virtual {v2, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -1785,7 +1785,7 @@
     goto :goto_1
 
     :cond_2
-    const v0, 0x7f0702c2
+    const v0, 0x7f07027c
 
     .line 255
     invoke-virtual {v2, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -1847,7 +1847,7 @@
 
     check-cast p1, Landroid/view/ViewGroup$MarginLayoutParams;
 
-    const v0, 0x7f07070f
+    const v0, 0x7f0706bb
 
     .line 281
     invoke-virtual {v2, v0}, Landroid/content/res/Resources;->getDimension(I)F

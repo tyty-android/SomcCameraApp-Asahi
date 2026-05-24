@@ -129,6 +129,14 @@
 
 .method public constructor <init>(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "touchSlop"
+        }
+    .end annotation
 
     .line 59
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -274,6 +282,18 @@
 
 .method private updateLastCheckedParameters(IILandroid/graphics/Point;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "previousX",
+            "previousY",
+            "currentTrack"
+        }
+    .end annotation
 
     .line 198
     iget-object v0, p0, Ljp/co/sony/mc/camera/interaction/TouchMoveAndStopDetector;->mLatestCheckedPos:Landroid/graphics/Point;
@@ -325,6 +345,14 @@
 
 .method public declared-synchronized setTouchStopDetectorListener(Ljp/co/sony/mc/camera/interaction/TouchMoveAndStopDetector$TouchStopDetectorListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     monitor-enter p0
 
@@ -349,6 +377,16 @@
 
 .method public declared-synchronized startTouchStopDetection(II)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "downX",
+            "downY"
+        }
+    .end annotation
 
     monitor-enter p0
 
@@ -468,6 +506,16 @@
 
 .method public declared-synchronized updateCurrentAndLastPosition(II)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "curX",
+            "curY"
+        }
+    .end annotation
 
     monitor-enter p0
 
@@ -499,6 +547,16 @@
 
 .method public declared-synchronized updateCurrentPosition(II)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "curX",
+            "curY"
+        }
+    .end annotation
 
     monitor-enter p0
 

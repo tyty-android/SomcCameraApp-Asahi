@@ -18,11 +18,15 @@
 
 .field public static final IS_HDR:Ljava/lang/String; = "is_hdr"
 
+.field public static final IS_PROCESSING:Ljava/lang/String; = "is_processing"
+
 .field public static final IS_VIDEO_PRO:Ljava/lang/String; = "is_video_pro"
 
 .field public static final MEDIASTORE_ID:Ljava/lang/String; = "mediastore_id"
 
 .field public static final MIME_TYPE:Ljava/lang/String; = "mime_type"
+
+.field public static final ORIENTATION:Ljava/lang/String; = "orientation"
 
 .field public static final RELATIVE_PATH:Ljava/lang/String; = "relative_path"
 

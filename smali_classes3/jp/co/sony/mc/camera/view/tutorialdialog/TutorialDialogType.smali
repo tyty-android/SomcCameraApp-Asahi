@@ -2,6 +2,9 @@
 .super Ljava/lang/Enum;
 .source "TutorialDialogType.kt"
 
+# interfaces
+.implements Landroid/os/Parcelable;
+
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
@@ -14,43 +17,61 @@
     value = {
         "Ljava/lang/Enum<",
         "Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;",
-        ">;"
+        ">;",
+        "Landroid/os/Parcelable;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u00008\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u000e\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0002\u0008\u0086\u0081\u0002\u0018\u0000 \u001c2\u0008\u0012\u0004\u0012\u00020\u00000\u0001:\u0001\u001cBM\u0008\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012:\u0010\u0004\u001a6\u0012\u0016\u0012\u0014\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u00070\u00060\u0008j\u001a\u0012\u0016\u0012\u0014\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u00070\u0006`\u0005\u00a2\u0006\u0004\u0008\t\u0010\nJ\u000e\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0019J\u000e\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u0018\u001a\u00020\u0019R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000b\u0010\u000cRG\u0010\u0004\u001a6\u0012\u0016\u0012\u0014\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u00070\u00060\u0008j\u001a\u0012\u0016\u0012\u0014\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u00070\u0006`\u0005\u00a2\u0006\n\n\u0002\u0010\u000f\u001a\u0004\u0008\r\u0010\u000ej\u0002\u0008\u0010j\u0002\u0008\u0011j\u0002\u0008\u0012j\u0002\u0008\u0013j\u0002\u0008\u0014j\u0002\u0008\u0015\u00a8\u0006\u001d"
+        "\u0000F\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0017\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0086\u0081\u0002\u0018\u0000 -2\u00020\u00012\u0008\u0012\u0004\u0012\u00020\u00000\u0002:\u0001-Ba\u0008\u0002\u0012\n\u0008\u0002\u0010\u0003\u001a\u0004\u0018\u00010\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012:\u0010\u0007\u001a6\u0012\u0016\u0012\u0014\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00040\t0\nj\u001a\u0012\u0016\u0012\u0014\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00040\t`\u0008\u0012\u0006\u0010\u000b\u001a\u00020\u000c\u00a2\u0006\u0004\u0008\r\u0010\u000eJ\u0018\u0010#\u001a\u00020$2\u0006\u0010%\u001a\u00020&2\u0006\u0010\'\u001a\u00020\u0004H\u0016J\u0008\u0010(\u001a\u00020\u0004H\u0016J\u000e\u0010)\u001a\u00020\u000c2\u0006\u0010*\u001a\u00020+J\u000e\u0010,\u001a\u00020$2\u0006\u0010*\u001a\u00020+R\u0015\u0010\u0003\u001a\u0004\u0018\u00010\u0004\u00a2\u0006\n\n\u0002\u0010\u0011\u001a\u0004\u0008\u000f\u0010\u0010R\u0011\u0010\u0005\u001a\u00020\u0006\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0012\u0010\u0013RG\u0010\u0007\u001a6\u0012\u0016\u0012\u0014\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00040\t0\nj\u001a\u0012\u0016\u0012\u0014\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00040\t`\u0008\u00a2\u0006\n\n\u0002\u0010\u0016\u001a\u0004\u0008\u0014\u0010\u0015R\u0011\u0010\u000b\u001a\u00020\u000c\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0017\u0010\u0018j\u0002\u0008\u0019j\u0002\u0008\u001aj\u0002\u0008\u001bj\u0002\u0008\u001cj\u0002\u0008\u001dj\u0002\u0008\u001ej\u0002\u0008\u001fj\u0002\u0008 j\u0002\u0008!j\u0002\u0008\"\u00a8\u0006."
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;",
+        "Landroid/os/Parcelable;",
+        "",
+        "titleResId",
         "",
         "messageType",
         "Ljp/co/sony/mc/camera/setting/MessageType;",
         "pageInfoList",
         "Lkotlin/collections/ArrayList;",
         "Lkotlin/Triple;",
-        "",
         "Ljava/util/ArrayList;",
+        "hasCheckBox",
+        "",
         "<init>",
-        "(Ljava/lang/String;ILjp/co/sony/mc/camera/setting/MessageType;Ljava/util/ArrayList;)V",
+        "(Ljava/lang/String;ILjava/lang/Integer;Ljp/co/sony/mc/camera/setting/MessageType;Ljava/util/ArrayList;Z)V",
+        "getTitleResId",
+        "()Ljava/lang/Integer;",
+        "Ljava/lang/Integer;",
         "getMessageType",
         "()Ljp/co/sony/mc/camera/setting/MessageType;",
         "getPageInfoList",
         "()Ljava/util/ArrayList;",
         "Ljava/util/ArrayList;",
+        "getHasCheckBox",
+        "()Z",
         "NONE",
         "PRO_PHOTO_MODE_FIRST_IN",
         "PRO_VIDEO_MODE_FIRST_IN",
         "AUTO_FRAMING_MODE_FIRST_IN",
         "GIMBAL_MODE_FIRST_IN",
+        "AI_SUGGESTION_INTRODUCTION",
+        "AI_SUGGESTION_SUB_PREVIEW_INTRODUCTION",
+        "AI_SUGGESTION_FIRST_REGISTER_INTRODUCTION",
         "AUTO_FRAMING_SIZE_INFO",
-        "isNeverShow",
+        "DIGITAL_TRIPOD_FIRST_IN",
+        "writeToParcel",
         "",
+        "parcel",
+        "Landroid/os/Parcel;",
+        "flags",
+        "describeContents",
+        "isNeverShow",
         "messageSettings",
         "Ljp/co/sony/mc/camera/setting/MessageSettings;",
         "setNeverShow",
-        "",
         "Companion",
         "SomcCamera_release"
     }
@@ -69,11 +90,29 @@
 
 .field private static final synthetic $VALUES:[Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
 
+.field public static final enum AI_SUGGESTION_FIRST_REGISTER_INTRODUCTION:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+
+.field public static final enum AI_SUGGESTION_INTRODUCTION:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+
+.field public static final enum AI_SUGGESTION_SUB_PREVIEW_INTRODUCTION:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+
 .field public static final enum AUTO_FRAMING_MODE_FIRST_IN:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
 
 .field public static final enum AUTO_FRAMING_SIZE_INFO:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
 
+.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/os/Parcelable$Creator<",
+            "Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 .field public static final Companion:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType$Companion;
+
+.field public static final enum DIGITAL_TRIPOD_FIRST_IN:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
 
 .field public static final enum GIMBAL_MODE_FIRST_IN:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
 
@@ -85,6 +124,8 @@
 
 
 # instance fields
+.field private final hasCheckBox:Z
+
 .field private final messageType:Ljp/co/sony/mc/camera/setting/MessageType;
 
 .field private final pageInfoList:Ljava/util/ArrayList;
@@ -100,10 +141,12 @@
     .end annotation
 .end field
 
+.field private final titleResId:Ljava/lang/Integer;
+
 
 # direct methods
 .method private static final synthetic $values()[Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
-    .locals 6
+    .locals 10
 
     sget-object v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->NONE:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
 
@@ -115,9 +158,17 @@
 
     sget-object v4, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->GIMBAL_MODE_FIRST_IN:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
 
-    sget-object v5, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->AUTO_FRAMING_SIZE_INFO:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+    sget-object v5, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->AI_SUGGESTION_INTRODUCTION:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
 
-    filled-new-array/range {v0 .. v5}, [Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+    sget-object v6, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->AI_SUGGESTION_SUB_PREVIEW_INTRODUCTION:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+
+    sget-object v7, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->AI_SUGGESTION_FIRST_REGISTER_INTRODUCTION:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+
+    sget-object v8, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->AUTO_FRAMING_SIZE_INFO:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+
+    sget-object v9, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->DIGITAL_TRIPOD_FIRST_IN:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+
+    filled-new-array/range {v0 .. v9}, [Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
 
     move-result-object v0
 
@@ -125,414 +176,830 @@
 .end method
 
 .method static constructor <clinit>()V
-    .locals 11
+    .locals 23
 
-    .line 20
+    .line 24
+    new-instance v7, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+
+    .line 26
+    sget-object v4, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    .line 27
+    new-instance v5, Ljava/util/ArrayList;
+
+    invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
+
+    const/4 v6, 0x0
+
+    .line 24
+    const-string v1, "NONE"
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    move-object v0, v7
+
+    invoke-direct/range {v0 .. v6}, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;-><init>(Ljava/lang/String;ILjava/lang/Integer;Ljp/co/sony/mc/camera/setting/MessageType;Ljava/util/ArrayList;Z)V
+
+    sput-object v7, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->NONE:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+
+    .line 30
     new-instance v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
 
-    .line 21
-    sget-object v1, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    const v1, 0x7f1103a7
 
-    .line 22
-    new-instance v2, Ljava/util/ArrayList;
+    .line 31
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
+    move-result-object v11
 
-    .line 20
-    const-string v3, "NONE"
+    .line 32
+    sget-object v12, Ljp/co/sony/mc/camera/setting/MessageType;->PRO_PHOTO_MODE_FIRST_IN_DIALOG:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const/4 v1, 0x3
+
+    .line 34
+    new-array v2, v1, [Lkotlin/Triple;
+
+    new-instance v3, Lkotlin/Triple;
+
+    const v4, 0x7f1103ac
+
+    .line 35
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    const v5, 0x7f1103ab
+
+    .line 36
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v5
+
+    const/4 v6, -0x1
+
+    .line 37
+    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v6
+
+    .line 34
+    invoke-direct {v3, v4, v5, v6}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     const/4 v4, 0x0
 
-    invoke-direct {v0, v3, v4, v1, v2}, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/setting/MessageType;Ljava/util/ArrayList;)V
+    aput-object v3, v2, v4
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->NONE:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+    .line 39
+    new-instance v3, Lkotlin/Triple;
 
-    .line 24
-    new-instance v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+    const v5, 0x7f1103ae
 
-    .line 25
-    sget-object v1, Ljp/co/sony/mc/camera/setting/MessageType;->PRO_PHOTO_MODE_FIRST_IN_DIALOG:Ljp/co/sony/mc/camera/setting/MessageType;
+    .line 40
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    const/4 v2, 0x3
+    move-result-object v5
 
-    .line 27
-    new-array v3, v2, [Lkotlin/Triple;
+    const v7, 0x7f1103ad
 
-    new-instance v5, Lkotlin/Triple;
-
-    const v6, 0x7f110361
-
-    .line 28
-    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v6
-
-    const v7, 0x7f110360
-
-    .line 29
+    .line 41
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v7
 
-    const/4 v8, -0x1
+    .line 39
+    invoke-direct {v3, v5, v7, v6}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 30
+    const/4 v5, 0x1
+
+    aput-object v3, v2, v5
+
+    .line 44
+    new-instance v3, Lkotlin/Triple;
+
+    const v7, 0x7f11019e
+
+    .line 45
+    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v7
+
+    const v8, 0x7f1103a9
+
+    .line 46
     invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v8
 
-    .line 27
-    invoke-direct {v5, v6, v7, v8}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
-
-    aput-object v5, v3, v4
-
-    .line 32
-    new-instance v5, Lkotlin/Triple;
-
-    const v6, 0x7f110363
-
-    .line 33
-    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v6
-
-    const v7, 0x7f110362
-
-    .line 34
-    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v7
-
-    .line 32
-    invoke-direct {v5, v6, v7, v8}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
-
-    const/4 v6, 0x1
-
-    aput-object v5, v3, v6
-
-    .line 37
-    new-instance v5, Lkotlin/Triple;
-
-    const v7, 0x7f110161
-
-    .line 38
-    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v7
-
-    const v9, 0x7f11035e
-
-    .line 39
-    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v9
-
-    .line 37
-    invoke-direct {v5, v7, v9, v8}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    .line 44
+    invoke-direct {v3, v7, v8, v6}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     const/4 v7, 0x2
 
-    aput-object v5, v3, v7
+    aput-object v3, v2, v7
 
-    .line 26
-    invoke-static {v3}, Lkotlin/collections/CollectionsKt;->arrayListOf([Ljava/lang/Object;)Ljava/util/ArrayList;
+    .line 33
+    invoke-static {v2}, Lkotlin/collections/CollectionsKt;->arrayListOf([Ljava/lang/Object;)Ljava/util/ArrayList;
 
-    move-result-object v3
+    move-result-object v13
 
-    .line 24
-    const-string v5, "PRO_PHOTO_MODE_FIRST_IN"
+    const/4 v14, 0x0
 
-    invoke-direct {v0, v5, v6, v1, v3}, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/setting/MessageType;Ljava/util/ArrayList;)V
+    .line 30
+    const-string v9, "PRO_PHOTO_MODE_FIRST_IN"
+
+    const/4 v10, 0x1
+
+    move-object v8, v0
+
+    invoke-direct/range {v8 .. v14}, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;-><init>(Ljava/lang/String;ILjava/lang/Integer;Ljp/co/sony/mc/camera/setting/MessageType;Ljava/util/ArrayList;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->PRO_PHOTO_MODE_FIRST_IN:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
 
-    .line 44
+    .line 52
     new-instance v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
 
-    .line 45
-    sget-object v1, Ljp/co/sony/mc/camera/setting/MessageType;->PRO_VIDEO_MODE_FIRST_IN_DIALOG:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    .line 47
-    new-array v3, v7, [Lkotlin/Triple;
-
-    new-instance v5, Lkotlin/Triple;
-
-    const v9, 0x7f11014a
-
-    .line 48
-    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v9
-
-    const v10, 0x7f110367
-
-    .line 49
-    invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v10
-
-    .line 47
-    invoke-direct {v5, v9, v10, v8}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
-
-    aput-object v5, v3, v4
-
-    .line 52
-    new-instance v5, Lkotlin/Triple;
-
-    const v8, 0x7f11030e
+    const v2, 0x7f1104e8
 
     .line 53
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v18
+
+    .line 54
+    sget-object v19, Ljp/co/sony/mc/camera/setting/MessageType;->PRO_VIDEO_MODE_FIRST_IN_DIALOG:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    .line 56
+    new-array v2, v7, [Lkotlin/Triple;
+
+    new-instance v3, Lkotlin/Triple;
+
+    const v8, 0x7f110187
+
+    .line 57
     invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v8
 
-    const v9, 0x7f110366
+    const v9, 0x7f1103b2
 
-    .line 54
+    .line 58
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v9
 
-    const v10, 0x7f080134
+    .line 56
+    invoke-direct {v3, v8, v9, v6}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 55
-    invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    aput-object v3, v2, v4
 
-    move-result-object v10
+    .line 61
+    new-instance v3, Lkotlin/Triple;
 
-    .line 52
-    invoke-direct {v5, v8, v9, v10}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
-
-    aput-object v5, v3, v6
-
-    .line 46
-    invoke-static {v3}, Lkotlin/collections/CollectionsKt;->arrayListOf([Ljava/lang/Object;)Ljava/util/ArrayList;
-
-    move-result-object v3
-
-    .line 44
-    const-string v5, "PRO_VIDEO_MODE_FIRST_IN"
-
-    invoke-direct {v0, v5, v7, v1, v3}, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/setting/MessageType;Ljava/util/ArrayList;)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->PRO_VIDEO_MODE_FIRST_IN:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
-
-    .line 59
-    new-instance v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
-
-    .line 60
-    sget-object v1, Ljp/co/sony/mc/camera/setting/MessageType;->VIDEO_AUTO_FRAMING_MODE_FIRST_IN_DIALOG:Ljp/co/sony/mc/camera/setting/MessageType;
+    const v6, 0x7f110357
 
     .line 62
-    new-array v3, v7, [Lkotlin/Triple;
+    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    new-instance v5, Lkotlin/Triple;
+    move-result-object v6
 
-    const v8, 0x7f110267
+    const v8, 0x7f1103b1
 
     .line 63
     invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v8
 
-    const v9, 0x7f110268
+    const v9, 0x7f080190
 
     .line 64
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v9
 
-    const v10, 0x7f080343
-
-    .line 65
-    invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v10
-
-    .line 62
-    invoke-direct {v5, v8, v9, v10}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
-
-    aput-object v5, v3, v4
-
-    .line 67
-    new-instance v5, Lkotlin/Triple;
-
-    const v9, 0x7f110269
-
-    .line 69
-    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v9
-
-    const v10, 0x7f080344
-
-    .line 70
-    invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v10
-
-    .line 67
-    invoke-direct {v5, v8, v9, v10}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
-
-    aput-object v5, v3, v6
-
     .line 61
-    invoke-static {v3}, Lkotlin/collections/CollectionsKt;->arrayListOf([Ljava/lang/Object;)Ljava/util/ArrayList;
+    invoke-direct {v3, v6, v8, v9}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
-    move-result-object v3
+    aput-object v3, v2, v5
 
-    .line 59
-    const-string v5, "AUTO_FRAMING_MODE_FIRST_IN"
-
-    invoke-direct {v0, v5, v2, v1, v3}, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/setting/MessageType;Ljava/util/ArrayList;)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->AUTO_FRAMING_MODE_FIRST_IN:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
-
-    .line 74
-    new-instance v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
-
-    .line 75
-    sget-object v1, Ljp/co/sony/mc/camera/setting/MessageType;->VIDEO_GIMBAL_MODE_FIRST_IN_DIALOG:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    .line 77
-    new-array v2, v2, [Lkotlin/Triple;
-
-    new-instance v3, Lkotlin/Triple;
-
-    const v5, 0x7f11027a
-
-    .line 78
-    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v5
-
-    const v8, 0x7f11027c
-
-    .line 79
-    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v8
-
-    const v9, 0x7f080356
-
-    .line 80
-    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v9
-
-    .line 77
-    invoke-direct {v3, v5, v8, v9}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
-
-    aput-object v3, v2, v4
-
-    .line 82
-    new-instance v3, Lkotlin/Triple;
-
-    const v8, 0x7f11027e
-
-    .line 84
-    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v8
-
-    const v9, 0x7f080357
-
-    .line 85
-    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v9
-
-    .line 82
-    invoke-direct {v3, v5, v8, v9}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
-
-    aput-object v3, v2, v6
-
-    .line 87
-    new-instance v3, Lkotlin/Triple;
-
-    const v8, 0x7f11027f
-
-    .line 89
-    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v8
-
-    const v9, 0x7f080358
-
-    .line 90
-    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v9
-
-    .line 87
-    invoke-direct {v3, v5, v8, v9}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
-
-    aput-object v3, v2, v7
-
-    .line 76
+    .line 55
     invoke-static {v2}, Lkotlin/collections/CollectionsKt;->arrayListOf([Ljava/lang/Object;)Ljava/util/ArrayList;
 
-    move-result-object v2
+    move-result-object v20
 
-    .line 74
-    const-string v3, "GIMBAL_MODE_FIRST_IN"
+    const/16 v21, 0x0
 
-    const/4 v5, 0x4
+    .line 52
+    const-string v16, "PRO_VIDEO_MODE_FIRST_IN"
 
-    invoke-direct {v0, v3, v5, v1, v2}, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/setting/MessageType;Ljava/util/ArrayList;)V
+    const/16 v17, 0x2
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->GIMBAL_MODE_FIRST_IN:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+    move-object v15, v0
 
-    .line 94
+    invoke-direct/range {v15 .. v21}, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;-><init>(Ljava/lang/String;ILjava/lang/Integer;Ljp/co/sony/mc/camera/setting/MessageType;Ljava/util/ArrayList;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->PRO_VIDEO_MODE_FIRST_IN:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+
+    .line 69
     new-instance v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
 
-    .line 95
-    sget-object v1, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    const v2, 0x7f1102b7
 
-    .line 97
-    new-array v2, v6, [Lkotlin/Triple;
+    .line 70
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v11
+
+    .line 71
+    sget-object v12, Ljp/co/sony/mc/camera/setting/MessageType;->VIDEO_AUTO_FRAMING_MODE_FIRST_IN_DIALOG:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    .line 73
+    new-array v2, v7, [Lkotlin/Triple;
 
     new-instance v3, Lkotlin/Triple;
 
-    const v5, 0x7f110265
+    const v6, 0x7f1102b0
 
-    .line 98
-    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v5
-
-    const v6, 0x7f110264
-
-    .line 99
+    .line 74
     invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v6
 
-    const v7, 0x7f080345
+    const v8, 0x7f1102b1
+
+    .line 75
+    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v8
+
+    const v9, 0x7f0803b9
+
+    .line 76
+    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v9
+
+    .line 73
+    invoke-direct {v3, v6, v8, v9}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    aput-object v3, v2, v4
+
+    .line 78
+    new-instance v3, Lkotlin/Triple;
+
+    const v8, 0x7f1102b2
+
+    .line 80
+    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v8
+
+    const v9, 0x7f0803ba
+
+    .line 81
+    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v9
+
+    .line 78
+    invoke-direct {v3, v6, v8, v9}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    aput-object v3, v2, v5
+
+    .line 72
+    invoke-static {v2}, Lkotlin/collections/CollectionsKt;->arrayListOf([Ljava/lang/Object;)Ljava/util/ArrayList;
+
+    move-result-object v13
+
+    .line 69
+    const-string v9, "AUTO_FRAMING_MODE_FIRST_IN"
+
+    const/4 v10, 0x3
+
+    move-object v8, v0
+
+    invoke-direct/range {v8 .. v14}, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;-><init>(Ljava/lang/String;ILjava/lang/Integer;Ljp/co/sony/mc/camera/setting/MessageType;Ljava/util/ArrayList;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->AUTO_FRAMING_MODE_FIRST_IN:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+
+    .line 86
+    new-instance v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+
+    const v2, 0x7f1102d5
+
+    .line 87
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v18
+
+    .line 88
+    sget-object v19, Ljp/co/sony/mc/camera/setting/MessageType;->VIDEO_GIMBAL_MODE_FIRST_IN_DIALOG:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    .line 90
+    new-array v2, v1, [Lkotlin/Triple;
+
+    new-instance v3, Lkotlin/Triple;
+
+    const v6, 0x7f1102c5
+
+    .line 91
+    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v6
+
+    const v8, 0x7f1102c7
+
+    .line 92
+    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v8
+
+    const v9, 0x7f0803d0
+
+    .line 93
+    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v9
+
+    .line 90
+    invoke-direct {v3, v6, v8, v9}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    aput-object v3, v2, v4
+
+    .line 95
+    new-instance v3, Lkotlin/Triple;
+
+    const v8, 0x7f1102c9
+
+    .line 97
+    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v8
+
+    const v9, 0x7f0803d1
+
+    .line 98
+    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v9
+
+    .line 95
+    invoke-direct {v3, v6, v8, v9}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    aput-object v3, v2, v5
 
     .line 100
+    new-instance v3, Lkotlin/Triple;
+
+    const v8, 0x7f1102ca
+
+    .line 102
+    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v8
+
+    const v9, 0x7f0803d2
+
+    .line 103
+    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v9
+
+    .line 100
+    invoke-direct {v3, v6, v8, v9}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    aput-object v3, v2, v7
+
+    .line 89
+    invoke-static {v2}, Lkotlin/collections/CollectionsKt;->arrayListOf([Ljava/lang/Object;)Ljava/util/ArrayList;
+
+    move-result-object v20
+
+    .line 86
+    const-string v16, "GIMBAL_MODE_FIRST_IN"
+
+    const/16 v17, 0x4
+
+    move-object v15, v0
+
+    invoke-direct/range {v15 .. v21}, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;-><init>(Ljava/lang/String;ILjava/lang/Integer;Ljp/co/sony/mc/camera/setting/MessageType;Ljava/util/ArrayList;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->GIMBAL_MODE_FIRST_IN:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+
+    .line 108
+    new-instance v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+
+    const v2, 0x7f11013c
+
+    .line 109
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v11
+
+    .line 110
+    sget-object v12, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const/4 v2, 0x6
+
+    .line 112
+    new-array v2, v2, [Lkotlin/Triple;
+
+    new-instance v3, Lkotlin/Triple;
+
+    const v6, 0x7f110146
+
+    .line 113
+    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v6
+
+    const v8, 0x7f110134
+
+    .line 114
+    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v8
+
+    const v9, 0x7f0803b1
+
+    .line 115
+    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v15
+
+    .line 112
+    invoke-direct {v3, v6, v8, v15}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    aput-object v3, v2, v4
+
+    .line 117
+    new-instance v3, Lkotlin/Triple;
+
+    const v8, 0x7f110136
+
+    .line 119
+    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v8
+
+    const v9, 0x7f0803b2
+
+    .line 120
+    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v9
+
+    .line 117
+    invoke-direct {v3, v6, v8, v9}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    aput-object v3, v2, v5
+
+    .line 122
+    new-instance v3, Lkotlin/Triple;
+
+    const v8, 0x7f110137
+
+    .line 124
+    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v8
+
+    const v9, 0x7f0803b3
+
+    .line 125
+    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v9
+
+    .line 122
+    invoke-direct {v3, v6, v8, v9}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    aput-object v3, v2, v7
+
+    .line 127
+    new-instance v3, Lkotlin/Triple;
+
+    const v8, 0x7f110138
+
+    .line 129
+    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v8
+
+    const v9, 0x7f0803b4
+
+    .line 130
+    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v9
+
+    .line 127
+    invoke-direct {v3, v6, v8, v9}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    aput-object v3, v2, v1
+
+    .line 132
+    new-instance v1, Lkotlin/Triple;
+
+    const v3, 0x7f110139
+
+    .line 134
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    const v8, 0x7f0803b5
+
+    .line 135
+    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v8
+
+    .line 132
+    invoke-direct {v1, v6, v3, v8}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    const/4 v3, 0x4
+
+    aput-object v1, v2, v3
+
+    .line 137
+    new-instance v1, Lkotlin/Triple;
+
+    const v3, 0x7f11013a
+
+    .line 139
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    const v8, 0x7f0803b6
+
+    .line 140
+    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v8
+
+    .line 137
+    invoke-direct {v1, v6, v3, v8}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    const/4 v3, 0x5
+
+    aput-object v1, v2, v3
+
+    .line 111
+    invoke-static {v2}, Lkotlin/collections/CollectionsKt;->arrayListOf([Ljava/lang/Object;)Ljava/util/ArrayList;
+
+    move-result-object v13
+
+    .line 108
+    const-string v9, "AI_SUGGESTION_INTRODUCTION"
+
+    const/4 v10, 0x5
+
+    move-object v8, v0
+
+    invoke-direct/range {v8 .. v14}, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;-><init>(Ljava/lang/String;ILjava/lang/Integer;Ljp/co/sony/mc/camera/setting/MessageType;Ljava/util/ArrayList;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->AI_SUGGESTION_INTRODUCTION:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+
+    .line 145
+    new-instance v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+
+    const v1, 0x7f11013b
+
+    .line 146
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v19
+
+    .line 147
+    sget-object v20, Ljp/co/sony/mc/camera/setting/MessageType;->AI_SUGGESTION_SUB_PREVIEW_INTRODUCTION:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    .line 149
+    new-array v1, v5, [Lkotlin/Triple;
+
+    new-instance v2, Lkotlin/Triple;
+
+    const v3, 0x7f110135
+
+    .line 151
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    .line 149
+    invoke-direct {v2, v6, v3, v15}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    aput-object v2, v1, v4
+
+    .line 148
+    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->arrayListOf([Ljava/lang/Object;)Ljava/util/ArrayList;
+
+    move-result-object v21
+
+    const/16 v22, 0x0
+
+    .line 145
+    const-string v17, "AI_SUGGESTION_SUB_PREVIEW_INTRODUCTION"
+
+    const/16 v18, 0x6
+
+    move-object/from16 v16, v0
+
+    invoke-direct/range {v16 .. v22}, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;-><init>(Ljava/lang/String;ILjava/lang/Integer;Ljp/co/sony/mc/camera/setting/MessageType;Ljava/util/ArrayList;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->AI_SUGGESTION_SUB_PREVIEW_INTRODUCTION:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+
+    .line 157
+    new-instance v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+
+    .line 159
+    sget-object v12, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    .line 161
+    new-array v1, v5, [Lkotlin/Triple;
+
+    new-instance v2, Lkotlin/Triple;
+
+    const v3, 0x7f110133
+
+    .line 163
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    const v8, 0x7f0803b7
+
+    .line 164
+    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v8
+
+    .line 161
+    invoke-direct {v2, v6, v3, v8}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    aput-object v2, v1, v4
+
+    .line 160
+    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->arrayListOf([Ljava/lang/Object;)Ljava/util/ArrayList;
+
+    move-result-object v13
+
+    .line 157
+    const-string v9, "AI_SUGGESTION_FIRST_REGISTER_INTRODUCTION"
+
+    const/4 v10, 0x7
+
+    const/4 v11, 0x0
+
+    move-object v8, v0
+
+    invoke-direct/range {v8 .. v14}, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;-><init>(Ljava/lang/String;ILjava/lang/Integer;Ljp/co/sony/mc/camera/setting/MessageType;Ljava/util/ArrayList;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->AI_SUGGESTION_FIRST_REGISTER_INTRODUCTION:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+
+    .line 169
+    new-instance v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+
+    .line 171
+    sget-object v19, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    .line 173
+    new-array v1, v5, [Lkotlin/Triple;
+
+    new-instance v2, Lkotlin/Triple;
+
+    const v3, 0x7f1102ae
+
+    .line 174
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    const v6, 0x7f1102ad
+
+    .line 175
+    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v6
+
+    const v8, 0x7f0803bb
+
+    .line 176
+    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v8
+
+    .line 173
+    invoke-direct {v2, v3, v6, v8}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    aput-object v2, v1, v4
+
+    .line 172
+    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->arrayListOf([Ljava/lang/Object;)Ljava/util/ArrayList;
+
+    move-result-object v20
+
+    const/16 v21, 0x0
+
+    .line 169
+    const-string v16, "AUTO_FRAMING_SIZE_INFO"
+
+    const/16 v17, 0x8
+
+    const/16 v18, 0x0
+
+    move-object v15, v0
+
+    invoke-direct/range {v15 .. v21}, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;-><init>(Ljava/lang/String;ILjava/lang/Integer;Ljp/co/sony/mc/camera/setting/MessageType;Ljava/util/ArrayList;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->AUTO_FRAMING_SIZE_INFO:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+
+    .line 181
+    new-instance v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+
+    const v1, 0x7f1104ce
+
+    .line 182
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v11
+
+    .line 183
+    sget-object v12, Ljp/co/sony/mc/camera/setting/MessageType;->DIGITAL_TRIPOD_FIRST_IN_DIALOG:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    .line 185
+    new-array v1, v7, [Lkotlin/Triple;
+
+    new-instance v2, Lkotlin/Triple;
+
+    const v3, 0x7f110213
+
+    .line 186
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    const v6, 0x7f11020b
+
+    .line 187
+    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v6
+
+    const v7, 0x7f0803ce
+
+    .line 188
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v7
 
-    .line 97
-    invoke-direct {v3, v5, v6, v7}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    .line 185
+    invoke-direct {v2, v3, v6, v7}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
-    aput-object v3, v2, v4
+    aput-object v2, v1, v4
 
-    .line 96
-    invoke-static {v2}, Lkotlin/collections/CollectionsKt;->arrayListOf([Ljava/lang/Object;)Ljava/util/ArrayList;
+    .line 190
+    new-instance v2, Lkotlin/Triple;
 
-    move-result-object v2
+    const v3, 0x7f110211
 
-    .line 94
-    const-string v3, "AUTO_FRAMING_SIZE_INFO"
+    .line 191
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    const/4 v4, 0x5
+    move-result-object v3
 
-    invoke-direct {v0, v3, v4, v1, v2}, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/setting/MessageType;Ljava/util/ArrayList;)V
+    const v4, 0x7f110212
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->AUTO_FRAMING_SIZE_INFO:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
+    .line 192
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v4
+
+    .line 190
+    invoke-direct {v2, v3, v4, v7}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    aput-object v2, v1, v5
+
+    .line 184
+    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->arrayListOf([Ljava/lang/Object;)Ljava/util/ArrayList;
+
+    move-result-object v13
+
+    const/4 v14, 0x1
+
+    .line 181
+    const-string v9, "DIGITAL_TRIPOD_FIRST_IN"
+
+    const/16 v10, 0x9
+
+    move-object v8, v0
+
+    invoke-direct/range {v8 .. v14}, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;-><init>(Ljava/lang/String;ILjava/lang/Integer;Ljp/co/sony/mc/camera/setting/MessageType;Ljava/util/ArrayList;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->DIGITAL_TRIPOD_FIRST_IN:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
 
     invoke-static {}, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->$values()[Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
 
@@ -556,32 +1023,78 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->Companion:Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType$Companion;
 
+    .line 233
+    new-instance v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType$Companion$CREATOR$1;
+
+    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType$Companion$CREATOR$1;-><init>()V
+
+    check-cast v0, Landroid/os/Parcelable$Creator;
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->CREATOR:Landroid/os/Parcelable$Creator;
+
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;ILjp/co/sony/mc/camera/setting/MessageType;Ljava/util/ArrayList;)V
+.method private constructor <init>(Ljava/lang/String;ILjava/lang/Integer;Ljp/co/sony/mc/camera/setting/MessageType;Ljava/util/ArrayList;Z)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
+            "Ljava/lang/Integer;",
             "Ljp/co/sony/mc/camera/setting/MessageType;",
             "Ljava/util/ArrayList<",
             "Lkotlin/Triple<",
             "Ljava/lang/Integer;",
             "Ljava/lang/Integer;",
             "Ljava/lang/Integer;",
-            ">;>;)V"
+            ">;>;Z)V"
         }
     .end annotation
 
-    .line 16
+    .line 18
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 17
-    iput-object p3, p0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->messageType:Ljp/co/sony/mc/camera/setting/MessageType;
+    .line 19
+    iput-object p3, p0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->titleResId:Ljava/lang/Integer;
+
+    .line 20
+    iput-object p4, p0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->messageType:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    .line 21
+    iput-object p5, p0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->pageInfoList:Ljava/util/ArrayList;
+
+    .line 22
+    iput-boolean p6, p0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->hasCheckBox:Z
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Ljava/lang/String;ILjava/lang/Integer;Ljp/co/sony/mc/camera/setting/MessageType;Ljava/util/ArrayList;ZILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .locals 7
+
+    and-int/lit8 p7, p7, 0x1
+
+    if-eqz p7, :cond_0
+
+    const/4 p3, 0x0
+
+    :cond_0
+    move-object v3, p3
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move v2, p2
+
+    move-object v4, p4
+
+    move-object v5, p5
+
+    move v6, p6
 
     .line 18
-    iput-object p4, p0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->pageInfoList:Ljava/util/ArrayList;
+    invoke-direct/range {v0 .. v6}, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;-><init>(Ljava/lang/String;ILjava/lang/Integer;Ljp/co/sony/mc/camera/setting/MessageType;Ljava/util/ArrayList;Z)V
 
     return-void
 .end method
@@ -611,7 +1124,7 @@
 
     move-result-object p0
 
-    .line 131
+    .line 243
     check-cast p0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
 
     return-object p0
@@ -626,7 +1139,7 @@
 
     move-result-object v0
 
-    .line 131
+    .line 243
     check-cast v0, [Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;
 
     return-object v0
@@ -634,10 +1147,27 @@
 
 
 # virtual methods
+.method public describeContents()I
+    .locals 0
+
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method public final getHasCheckBox()Z
+    .locals 0
+
+    .line 22
+    iget-boolean p0, p0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->hasCheckBox:Z
+
+    return p0
+.end method
+
 .method public final getMessageType()Ljp/co/sony/mc/camera/setting/MessageType;
     .locals 0
 
-    .line 17
+    .line 20
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->messageType:Ljp/co/sony/mc/camera/setting/MessageType;
 
     return-object p0
@@ -657,8 +1187,17 @@
         }
     .end annotation
 
-    .line 18
+    .line 21
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->pageInfoList:Ljava/util/ArrayList;
+
+    return-object p0
+.end method
+
+.method public final getTitleResId()Ljava/lang/Integer;
+    .locals 0
+
+    .line 19
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->titleResId:Ljava/lang/Integer;
 
     return-object p0
 .end method
@@ -670,10 +1209,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 106
+    .line 206
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->messageType:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    .line 107
+    .line 207
     sget-object v0, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
     if-eq p0, v0, :cond_0
@@ -702,22 +1241,39 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 112
+    .line 212
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->messageType:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    .line 113
+    .line 213
     sget-object v0, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
     if-eq p0, v0, :cond_0
 
     const/4 v0, 0x1
 
-    .line 114
+    .line 214
     invoke-interface {p1, p0, v0}, Ljp/co/sony/mc/camera/setting/MessageSettings;->setNeverShow(Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
-    .line 115
+    .line 215
     invoke-interface {p1}, Ljp/co/sony/mc/camera/setting/MessageSettings;->save()V
 
     :cond_0
+    return-void
+.end method
+
+.method public writeToParcel(Landroid/os/Parcel;I)V
+    .locals 0
+
+    const-string p2, "parcel"
+
+    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 200
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/tutorialdialog/TutorialDialogType;->ordinal()I
+
+    move-result p0
+
+    invoke-virtual {p1, p0}, Landroid/os/Parcel;->writeInt(I)V
+
     return-void
 .end method

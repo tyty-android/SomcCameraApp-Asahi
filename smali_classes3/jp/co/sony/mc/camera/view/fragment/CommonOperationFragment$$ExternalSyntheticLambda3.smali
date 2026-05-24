@@ -3,40 +3,36 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function3;
+.implements Lkotlin/jvm/functions/Function1;
+
+
+# instance fields
+.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;
 
 
 # direct methods
-.method public synthetic constructor <init>()V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment$$ExternalSyntheticLambda3;->f$0:Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
-    check-cast p1, Ljava/lang/Boolean;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment$$ExternalSyntheticLambda3;->f$0:Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;
 
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+    check-cast p1, Lkotlin/Triple;
 
-    move-result p0
-
-    check-cast p2, Ljava/lang/Boolean;
-
-    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result p1
-
-    check-cast p3, Ljava/lang/Boolean;
-
-    invoke-static {p0, p1, p3}, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;->$r8$lambda$Z8N0Zly627yZilKOcxE-JVJ5wK4(ZZLjava/lang/Boolean;)Lkotlin/Triple;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;->$r8$lambda$sHlcikCWVyhOZqzvgwwdRaSjXnY(Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;Lkotlin/Triple;)Lkotlin/Unit;
 
     move-result-object p0
 

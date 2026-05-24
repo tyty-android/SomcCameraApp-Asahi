@@ -3,34 +3,46 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function4;
+.implements Lkotlin/jvm/functions/Function6;
+
+
+# instance fields
+.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
 
 
 # direct methods
-.method public synthetic constructor <init>()V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState$$ExternalSyntheticLambda4;->f$0:Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState$$ExternalSyntheticLambda4;->f$0:Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
+
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     check-cast p2, Lkotlin/Pair;
 
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+    check-cast p3, Ljava/lang/Boolean;
 
-    check-cast p4, Ljava/lang/Boolean;
+    check-cast p4, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
 
-    invoke-static {p1, p2, p3, p4}, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;->$r8$lambda$FeHHmy-HuopO25OBPel4-dzJEnY(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Lkotlin/Pair;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Ljava/lang/Boolean;)Z
+    check-cast p5, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+
+    check-cast p6, Ljava/lang/Boolean;
+
+    invoke-static/range {p0 .. p6}, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;->$r8$lambda$8fRgCjvokxC_vJ4abk_A4-Uk-c0(Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Lkotlin/Pair;Ljava/lang/Boolean;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljava/lang/Boolean;)Z
 
     move-result p0
 

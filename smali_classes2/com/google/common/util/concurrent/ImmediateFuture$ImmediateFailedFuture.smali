@@ -27,11 +27,19 @@
 # direct methods
 .method constructor <init>(Ljava/lang/Throwable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "thrown"
+        }
+    .end annotation
 
-    .line 92
+    .line 100
     invoke-direct {p0}, Lcom/google/common/util/concurrent/AbstractFuture$TrustedFuture;-><init>()V
 
-    .line 93
+    .line 101
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/ImmediateFuture$ImmediateFailedFuture;->setException(Ljava/lang/Throwable;)Z
 
     return-void

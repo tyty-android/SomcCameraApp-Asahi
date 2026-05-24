@@ -39,6 +39,9 @@
 .field index:I
 
 .field final value:Ljava/lang/Object;
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TV;"
@@ -50,6 +53,17 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/HashBiMap;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "biMap",
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -58,20 +72,24 @@
         }
     .end annotation
 
-    .line 1043
+    .line 1090
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMapEntry;-><init>()V
 
-    .line 1044
+    .line 1091
     iput-object p1, p0, Lcom/google/common/collect/HashBiMap$EntryForValue;->biMap:Lcom/google/common/collect/HashBiMap;
 
-    .line 1045
+    .line 1093
     iget-object p1, p1, Lcom/google/common/collect/HashBiMap;->values:[Ljava/lang/Object;
 
     aget-object p1, p1, p2
 
+    invoke-static {p1}, Lcom/google/common/collect/NullnessCasts;->uncheckedCastNullableTToT(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
     iput-object p1, p0, Lcom/google/common/collect/HashBiMap$EntryForValue;->value:Ljava/lang/Object;
 
-    .line 1046
+    .line 1094
     iput p2, p0, Lcom/google/common/collect/HashBiMap$EntryForValue;->index:I
 
     return-void
@@ -80,7 +98,7 @@
 .method private updateIndex()V
     .locals 3
 
-    .line 1050
+    .line 1098
     iget v0, p0, Lcom/google/common/collect/HashBiMap$EntryForValue;->index:I
 
     const/4 v1, -0x1
@@ -109,7 +127,7 @@
 
     if-nez v0, :cond_1
 
-    .line 1051
+    .line 1099
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$EntryForValue;->biMap:Lcom/google/common/collect/HashBiMap;
 
@@ -129,13 +147,16 @@
 # virtual methods
 .method public getKey()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TV;"
         }
     .end annotation
 
-    .line 1057
+    .line 1106
     iget-object p0, p0, Lcom/google/common/collect/HashBiMap$EntryForValue;->value:Ljava/lang/Object;
 
     return-object p0
@@ -143,23 +164,28 @@
 
 .method public getValue()Ljava/lang/Object;
     .locals 2
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TK;"
         }
     .end annotation
 
-    .line 1062
+    .line 1112
     invoke-direct {p0}, Lcom/google/common/collect/HashBiMap$EntryForValue;->updateIndex()V
 
-    .line 1063
+    .line 1114
     iget v0, p0, Lcom/google/common/collect/HashBiMap$EntryForValue;->index:I
 
     const/4 v1, -0x1
 
     if-ne v0, v1, :cond_0
 
-    const/4 p0, 0x0
+    invoke-static {}, Lcom/google/common/collect/NullnessCasts;->unsafeNull()Ljava/lang/Object;
+
+    move-result-object p0
 
     goto :goto_0
 
@@ -172,22 +198,42 @@
 
     aget-object p0, v0, p0
 
+    invoke-static {p0}, Lcom/google/common/collect/NullnessCasts;->uncheckedCastNullableTToT(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
     :goto_0
     return-object p0
 .end method
 
 .method public setValue(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 3
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)TK;"
         }
     .end annotation
 
-    .line 1068
+    .line 1120
     invoke-direct {p0}, Lcom/google/common/collect/HashBiMap$EntryForValue;->updateIndex()V
 
-    .line 1069
+    .line 1121
     iget v0, p0, Lcom/google/common/collect/HashBiMap$EntryForValue;->index:I
 
     const/4 v1, -0x1
@@ -196,18 +242,21 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 1070
+    .line 1122
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$EntryForValue;->biMap:Lcom/google/common/collect/HashBiMap;
 
     iget-object p0, p0, Lcom/google/common/collect/HashBiMap$EntryForValue;->value:Ljava/lang/Object;
 
     invoke-virtual {v0, p0, p1, v2}, Lcom/google/common/collect/HashBiMap;->putInverse(Ljava/lang/Object;Ljava/lang/Object;Z)Ljava/lang/Object;
 
+    .line 1123
+    invoke-static {}, Lcom/google/common/collect/NullnessCasts;->unsafeNull()Ljava/lang/Object;
+
     move-result-object p0
 
     return-object p0
 
-    .line 1072
+    .line 1125
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$EntryForValue;->biMap:Lcom/google/common/collect/HashBiMap;
 
@@ -217,7 +266,11 @@
 
     aget-object v0, v0, v1
 
-    .line 1073
+    invoke-static {v0}, Lcom/google/common/collect/NullnessCasts;->uncheckedCastNullableTToT(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 1126
     invoke-static {v0, p1}, Lcom/google/common/base/Objects;->equal(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
@@ -226,7 +279,7 @@
 
     return-object p1
 
-    .line 1076
+    .line 1129
     :cond_1
     iget-object v1, p0, Lcom/google/common/collect/HashBiMap$EntryForValue;->biMap:Lcom/google/common/collect/HashBiMap;
 

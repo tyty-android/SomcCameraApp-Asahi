@@ -103,22 +103,22 @@
 .method static constructor <clinit>()V
     .locals 15
 
-    .line 22
+    .line 23
     new-instance v7, Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;
 
-    const v5, 0x7f1103f3
+    const v5, 0x7f11043e
 
-    .line 26
+    .line 27
     const-string v6, "off"
 
-    .line 22
+    .line 23
     const-string v1, "OFF"
 
     const/4 v2, 0x0
 
-    const v3, 0x7f080286
+    const v3, 0x7f0802dc
 
-    const v4, 0x7f0801c7
+    const v4, 0x7f080223
 
     move-object v0, v7
 
@@ -126,22 +126,22 @@
 
     sput-object v7, Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;
 
-    .line 27
+    .line 28
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;
 
-    const v13, 0x7f1103f4
+    const v13, 0x7f11043f
 
-    .line 31
+    .line 32
     const-string v14, "on"
 
-    .line 27
+    .line 28
     const-string v9, "ON"
 
     const/4 v10, 0x1
 
-    const v11, 0x7f080289
+    const v11, 0x7f0802df
 
-    const v12, 0x7f0801ca
+    const v12, 0x7f080226
 
     move-object v8, v0
 
@@ -184,19 +184,19 @@
         }
     .end annotation
 
-    .line 16
+    .line 17
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 17
+    .line 18
     iput p3, p0, Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;->mBasicIconId:I
 
-    .line 18
+    .line 19
     iput p4, p0, Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;->mFnIconId:I
 
-    .line 19
+    .line 20
     iput p5, p0, Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;->mTextId:I
 
-    .line 20
+    .line 21
     iput-object p6, p0, Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;->mValue:Ljava/lang/String;
 
     return-void
@@ -232,14 +232,14 @@
     return-object v0
 .end method
 
-.method public static final getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;
+.method public static final getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Z)[Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;
     .locals 1
     .annotation runtime Lkotlin/jvm/JvmStatic;
     .end annotation
 
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;->Companion:Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase$Companion;
 
-    invoke-virtual {v0, p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase$Companion;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;
+    invoke-virtual {v0, p0, p1, p2}, Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase$Companion;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Z)[Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;
 
     move-result-object p0
 
@@ -255,7 +255,7 @@
 
     move-result-object p0
 
-    .line 128
+    .line 134
     check-cast p0, Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;
 
     return-object p0
@@ -270,7 +270,7 @@
 
     move-result-object v0
 
-    .line 128
+    .line 134
     check-cast v0, [Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;
 
     return-object v0
@@ -281,7 +281,7 @@
 .method public getBasicIconId()I
     .locals 0
 
-    .line 50
+    .line 51
     iget p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;->mBasicIconId:I
 
     return p0
@@ -290,7 +290,7 @@
 .method public getBooleanValue()Z
     .locals 1
 
-    .line 86
+    .line 87
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;->ON:Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;
 
     if-ne p0, v0, :cond_0
@@ -309,7 +309,7 @@
 .method public getIconId()I
     .locals 0
 
-    .line 47
+    .line 48
     iget p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;->mFnIconId:I
 
     return p0
@@ -318,7 +318,7 @@
 .method public getName()Ljava/lang/String;
     .locals 1
 
-    .line 68
+    .line 69
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p0
@@ -344,7 +344,7 @@
         }
     .end annotation
 
-    .line 38
+    .line 39
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->PRODUCT_SHOWCASE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     const-string v0, "PRODUCT_SHOWCASE"
@@ -359,7 +359,7 @@
 .method public getTextId()I
     .locals 0
 
-    .line 59
+    .line 60
     iget p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;->mTextId:I
 
     return p0
@@ -368,7 +368,7 @@
 .method public getValue()Ljava/lang/String;
     .locals 0
 
-    .line 77
+    .line 78
     iget-object p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;->mValue:Ljava/lang/String;
 
     return-object p0

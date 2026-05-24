@@ -109,6 +109,14 @@
 
 .method public setScaleAndRotateDetectorListener(Ljp/co/sony/mc/camera/interaction/TouchScaleAndRotateDetector$ScaleAndRotateDetectorListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 62
     iput-object p1, p0, Ljp/co/sony/mc/camera/interaction/TouchScaleAndRotateDetector;->mListener:Ljp/co/sony/mc/camera/interaction/TouchScaleAndRotateDetector$ScaleAndRotateDetectorListener;
@@ -118,6 +126,16 @@
 
 .method public startScaleAndRotateDetection(Landroid/graphics/PointF;Landroid/graphics/PointF;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "point0",
+            "point1"
+        }
+    .end annotation
 
     .line 66
     new-instance v0, Landroid/graphics/PointF;
@@ -222,6 +240,16 @@
 
 .method public updateCurrentPosition(Landroid/graphics/PointF;Landroid/graphics/PointF;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "point0",
+            "point1"
+        }
+    .end annotation
 
     .line 74
     iget-object v0, p0, Ljp/co/sony/mc/camera/interaction/TouchScaleAndRotateDetector;->mCurrentTouchPos0:Landroid/graphics/PointF;

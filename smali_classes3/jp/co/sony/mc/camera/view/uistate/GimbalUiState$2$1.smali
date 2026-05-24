@@ -57,7 +57,7 @@
 .method public bridge synthetic emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
 
-    .line 136
+    .line 139
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$2$1;->emit(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -81,7 +81,7 @@
         }
     .end annotation
 
-    .line 137
+    .line 140
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$2$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->access$get_isFramingAssistEnabled$p(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;)Landroidx/lifecycle/MutableLiveData;
@@ -96,7 +96,7 @@
 
     invoke-virtual {p2, v0}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
-    .line 138
+    .line 141
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$2$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->access$get_framingAssistCroppedPosition$p(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;)Landroidx/lifecycle/MutableLiveData;
@@ -107,26 +107,51 @@
 
     invoke-virtual {p2, v0}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
-    .line 139
+    .line 142
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isGimbal()Z
 
     move-result p1
 
-    if-eqz p1, :cond_0
+    if-eqz p1, :cond_1
 
-    .line 140
+    .line 143
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$2$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->changeToActionMode()V
 
-    .line 141
+    .line 144
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$2$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;
+
+    invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->access$getCameraStatusModel$p(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;)Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getInitializing()Landroidx/lifecycle/LiveData;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    check-cast p1, Ljava/lang/Boolean;
+
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    .line 145
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$2$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->access$getHandler$p(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;)Landroid/os/Handler;
 
     move-result-object p1
 
-    .line 142
+    .line 146
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$2$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->access$getEnableFramingAssistTask$p(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;)Ljava/lang/Runnable;
@@ -135,7 +160,7 @@
 
     const-wide/16 v0, 0x3e8
 
-    .line 141
+    .line 145
     invoke-virtual {p1, p0, v0, v1}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
     move-result p0
@@ -144,8 +169,18 @@
 
     goto :goto_0
 
-    .line 146
+    .line 150
     :cond_0
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$2$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;
+
+    const/4 p1, 0x1
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->access$setWaitingInitializedToEnableFramingAssist$p(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;Z)V
+
+    goto :goto_0
+
+    .line 153
+    :cond_1
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState$2$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;->access$getHandler$p(Ljp/co/sony/mc/camera/view/uistate/GimbalUiState;)Landroid/os/Handler;
@@ -160,7 +195,7 @@
 
     invoke-virtual {p1, p0}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 148
+    .line 155
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

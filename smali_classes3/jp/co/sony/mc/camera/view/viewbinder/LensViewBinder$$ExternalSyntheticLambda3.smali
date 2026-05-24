@@ -30,7 +30,7 @@
 
     move-result p0
 
-    invoke-static {p1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;->$r8$lambda$_N4O3a22D9ixKhU8p_-h_sFjl8o(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;Z)Lkotlin/Pair;
+    invoke-static {p1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;->$r8$lambda$FcdQgOIyB_A_UqHE_khfgHwAbFw(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;Z)Lkotlin/Pair;
 
     move-result-object p0
 

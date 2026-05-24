@@ -31,56 +31,56 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f090416
+    const v1, 0x7f090419
 
     const/4 v2, 0x7
 
     .line 17
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09006a
+    const v1, 0x7f090076
 
     const/16 v2, 0x8
 
     .line 18
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090406
+    const v1, 0x7f090409
 
     const/16 v2, 0x9
 
     .line 19
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0901db
+    const v1, 0x7f0901de
 
     const/16 v2, 0xa
 
     .line 20
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09017e
+    const v1, 0x7f090182
 
     const/16 v2, 0xb
 
     .line 21
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0904e8
+    const v1, 0x7f0904e6
 
     const/16 v2, 0xc
 
     .line 22
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0904e0
+    const v1, 0x7f0904e3
 
     const/16 v2, 0xd
 
     .line 23
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090379
+    const v1, 0x7f09037c
 
     const/16 v2, 0xe
 
@@ -94,35 +94,35 @@
     .line 25
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09009e
+    const v1, 0x7f0900a6
 
     const/16 v2, 0x10
 
     .line 26
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090206
+    const v1, 0x7f09020e
 
     const/16 v2, 0x11
 
     .line 27
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090257
+    const v1, 0x7f090263
 
     const/16 v2, 0x12
 
     .line 28
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09024d
+    const v1, 0x7f090259
 
     const/16 v2, 0x13
 
     .line 29
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090256
+    const v1, 0x7f090262
 
     const/16 v2, 0x14
 
@@ -134,6 +134,16 @@
 
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root"
+        }
+    .end annotation
 
     .line 43
     sget-object v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -153,6 +163,18 @@
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
     .locals 26
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root",
+            "bindings"
+        }
+    .end annotation
 
     move-object/from16 v3, p0
 
@@ -301,7 +323,7 @@
 
     move-object/from16 v2, p0
 
-    .line 439
+    .line 445
     iput-wide v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mDirtyFlags:J
 
     .line 69
@@ -372,6 +394,17 @@
 
 .method private onChangeBasicModeQuickSettingUiStateIsInfoLayout(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "BasicModeQuickSettingUiStateIsInfoLayout",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -383,10 +416,10 @@
 
     if-nez p2, :cond_0
 
-    .line 173
+    .line 179
     monitor-enter p0
 
-    .line 174
+    .line 180
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mDirtyFlags:J
 
@@ -396,7 +429,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mDirtyFlags:J
 
-    .line 175
+    .line 181
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -420,6 +453,17 @@
 
 .method private onChangeBasicModeQuickSettingUiStateIsSettingLayout(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "BasicModeQuickSettingUiStateIsSettingLayout",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -431,10 +475,10 @@
 
     if-nez p2, :cond_0
 
-    .line 182
+    .line 188
     monitor-enter p0
 
-    .line 183
+    .line 189
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mDirtyFlags:J
 
@@ -444,7 +488,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mDirtyFlags:J
 
-    .line 184
+    .line 190
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -468,6 +512,17 @@
 
 .method private onChangeBasicModeQuickSettingUiStateOptionsItemEnabled(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "BasicModeQuickSettingUiStateOptionsItemEnabled",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -479,10 +534,10 @@
 
     if-nez p2, :cond_0
 
-    .line 164
+    .line 170
     monitor-enter p0
 
-    .line 165
+    .line 171
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mDirtyFlags:J
 
@@ -492,7 +547,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mDirtyFlags:J
 
-    .line 166
+    .line 172
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -516,6 +571,17 @@
 
 .method private onChangeBasicModeQuickSettingUiStateQuickSettingVisible(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "BasicModeQuickSettingUiStateQuickSettingVisible",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -527,10 +593,10 @@
 
     if-nez p2, :cond_0
 
-    .line 209
+    .line 215
     monitor-enter p0
 
-    .line 210
+    .line 216
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mDirtyFlags:J
 
@@ -540,7 +606,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mDirtyFlags:J
 
-    .line 211
+    .line 217
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -564,6 +630,17 @@
 
 .method private onChangeOrientationViewModelLayoutOrientation(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "OrientationViewModelLayoutOrientation",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -575,10 +652,10 @@
 
     if-nez p2, :cond_0
 
-    .line 200
+    .line 206
     monitor-enter p0
 
-    .line 201
+    .line 207
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mDirtyFlags:J
 
@@ -588,7 +665,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mDirtyFlags:J
 
-    .line 202
+    .line 208
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -612,6 +689,17 @@
 
 .method private onChangeViewFinderUiStateIsViewFinderItemClickable(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ViewFinderUiStateIsViewFinderItemClickable",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -623,10 +711,10 @@
 
     if-nez p2, :cond_0
 
-    .line 191
+    .line 197
     monitor-enter p0
 
-    .line 192
+    .line 198
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mDirtyFlags:J
 
@@ -636,7 +724,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mDirtyFlags:J
 
-    .line 193
+    .line 199
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -662,6 +750,16 @@
 # virtual methods
 .method public final _internalCallbackOnClick(ILandroid/view/View;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sourceId",
+            "callbackArg_0"
+        }
+    .end annotation
 
     const/4 p2, 0x1
 
@@ -673,24 +771,24 @@
 
     goto :goto_0
 
-    .line 405
+    .line 411
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mBasicModeQuickSettingUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;
 
     if-eqz p0, :cond_2
 
-    .line 415
+    .line 421
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;->toggleQuickSettingVisible()V
 
     goto :goto_0
 
-    .line 422
+    .line 428
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mBasicModeQuickSettingUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;
 
     if-eqz p0, :cond_2
 
-    .line 432
+    .line 438
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;->showDetailSettings()V
 
     :cond_2
@@ -703,33 +801,33 @@
 
     move-object/from16 v1, p0
 
-    .line 220
+    .line 226
     monitor-enter p0
 
-    .line 221
+    .line 227
     :try_start_0
     iget-wide v2, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mDirtyFlags:J
 
     const-wide/16 v4, 0x0
 
-    .line 222
+    .line 228
     iput-wide v4, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mDirtyFlags:J
 
-    .line 223
+    .line 229
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 224
+    .line 230
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
-    .line 225
+    .line 231
     iget-object v6, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
-    .line 235
+    .line 241
     iget-object v7, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mBasicModeQuickSettingUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;
 
-    const-wide/16 v8, 0x250
+    const-wide/16 v8, 0x450
 
     and-long/2addr v8, v2
 
@@ -739,7 +837,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 251
+    .line 257
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;->getLayoutOrientation()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
@@ -752,12 +850,12 @@
     :goto_0
     const/4 v10, 0x4
 
-    .line 253
+    .line 259
     invoke-virtual {v1, v10, v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v0, :cond_1
 
-    .line 258
+    .line 264
     invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v0
@@ -770,7 +868,7 @@
     const/4 v0, 0x0
 
     :goto_1
-    const-wide/16 v10, 0x288
+    const-wide/16 v10, 0x488
 
     and-long/2addr v10, v2
 
@@ -782,7 +880,7 @@
 
     if-eqz v6, :cond_2
 
-    .line 267
+    .line 273
     invoke-virtual {v6}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->isViewFinderItemClickable()Landroidx/lifecycle/LiveData;
 
     move-result-object v6
@@ -795,12 +893,12 @@
     :goto_2
     const/4 v12, 0x3
 
-    .line 269
+    .line 275
     invoke-virtual {v1, v12, v6}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v6, :cond_3
 
-    .line 274
+    .line 280
     invoke-virtual {v6}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v6
@@ -812,7 +910,7 @@
     :cond_3
     const/4 v6, 0x0
 
-    .line 279
+    .line 285
     :goto_3
     invoke-static {v6}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
@@ -824,19 +922,19 @@
     move v6, v11
 
     :goto_4
-    const-wide/16 v12, 0x327
+    const-wide/16 v12, 0x527
 
     and-long/2addr v12, v2
 
     cmp-long v12, v12, v4
 
-    const-wide/16 v13, 0x320
+    const-wide/16 v13, 0x520
 
-    const-wide/16 v15, 0x302
+    const-wide/16 v15, 0x502
 
-    const-wide/16 v17, 0x304
+    const-wide/16 v17, 0x504
 
-    const-wide/16 v19, 0x301
+    const-wide/16 v19, 0x501
 
     if-eqz v12, :cond_11
 
@@ -848,7 +946,7 @@
 
     if-eqz v7, :cond_5
 
-    .line 288
+    .line 294
     invoke-virtual {v7}, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;->getOptionsItemEnabled()Landroidx/lifecycle/LiveData;
 
     move-result-object v12
@@ -858,13 +956,13 @@
     :cond_5
     const/4 v12, 0x0
 
-    .line 290
+    .line 296
     :goto_5
     invoke-virtual {v1, v11, v12}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v12, :cond_6
 
-    .line 295
+    .line 301
     invoke-virtual {v12}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v12
@@ -876,7 +974,7 @@
     :cond_6
     const/4 v12, 0x0
 
-    .line 300
+    .line 306
     :goto_6
     invoke-static {v12}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
@@ -896,7 +994,7 @@
 
     if-eqz v7, :cond_8
 
-    .line 306
+    .line 312
     invoke-virtual {v7}, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;->isInfoLayout()Landroidx/lifecycle/LiveData;
 
     move-result-object v21
@@ -911,12 +1009,12 @@
     :goto_8
     const/4 v15, 0x1
 
-    .line 308
+    .line 314
     invoke-virtual {v1, v15, v9}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v9, :cond_9
 
-    .line 313
+    .line 319
     invoke-virtual {v9}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v9
@@ -928,7 +1026,7 @@
     :cond_9
     const/4 v9, 0x0
 
-    .line 318
+    .line 324
     :goto_9
     invoke-static {v9}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
@@ -948,7 +1046,7 @@
 
     if-eqz v7, :cond_b
 
-    .line 324
+    .line 330
     invoke-virtual {v7}, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;->isSettingLayout()Landroidx/lifecycle/LiveData;
 
     move-result-object v15
@@ -961,12 +1059,12 @@
     :goto_b
     const/4 v11, 0x2
 
-    .line 326
+    .line 332
     invoke-virtual {v1, v11, v15}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v15, :cond_c
 
-    .line 331
+    .line 337
     invoke-virtual {v15}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v11
@@ -978,7 +1076,7 @@
     :cond_c
     const/4 v11, 0x0
 
-    .line 336
+    .line 342
     :goto_c
     invoke-static {v11}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
@@ -998,7 +1096,7 @@
 
     if-eqz v7, :cond_e
 
-    .line 342
+    .line 348
     invoke-virtual {v7}, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;->getQuickSettingVisible()Landroidx/lifecycle/LiveData;
 
     move-result-object v7
@@ -1011,12 +1109,12 @@
     :goto_e
     const/4 v15, 0x5
 
-    .line 344
+    .line 350
     invoke-virtual {v1, v15, v7}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v7, :cond_f
 
-    .line 349
+    .line 355
     invoke-virtual {v7}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v7
@@ -1030,7 +1128,7 @@
     :cond_f
     const/16 v21, 0x0
 
-    .line 354
+    .line 360
     :goto_f
     invoke-static/range {v21 .. v21}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
@@ -1053,7 +1151,7 @@
     const/4 v12, 0x0
 
     :goto_10
-    const-wide/16 v23, 0x200
+    const-wide/16 v23, 0x400
 
     and-long v23, v2, v23
 
@@ -1061,21 +1159,21 @@
 
     if-eqz v15, :cond_12
 
-    .line 361
+    .line 367
     iget-object v15, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->closeButton:Landroid/widget/ImageButton;
 
     iget-object v13, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mCallback2:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v15, v13}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 362
+    .line 368
     iget-object v13, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->detailMenu:Ljp/co/sony/mc/camera/view/widget/OutlinedButton;
 
     iget-object v14, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mCallback1:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v13, v14}, Ljp/co/sony/mc/camera/view/widget/OutlinedButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 363
+    .line 369
     iget-object v13, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->infoDescription:Landroid/widget/TextView;
 
     const/4 v14, 0x0
@@ -1089,17 +1187,17 @@
 
     if-eqz v13, :cond_13
 
-    .line 368
+    .line 374
     iget-object v13, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->closeButton:Landroid/widget/ImageButton;
 
     invoke-static {v13, v11}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setVisible(Landroid/view/View;Z)V
 
-    .line 369
+    .line 375
     iget-object v13, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->detailMenu:Ljp/co/sony/mc/camera/view/widget/OutlinedButton;
 
     invoke-static {v13, v11}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setVisible(Landroid/view/View;Z)V
 
-    .line 370
+    .line 376
     iget-object v13, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->quickSettingsContainer:Landroid/widget/ScrollView;
 
     invoke-static {v13, v11}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setVisible(Landroid/view/View;Z)V
@@ -1111,7 +1209,7 @@
 
     if-eqz v11, :cond_14
 
-    .line 375
+    .line 381
     iget-object v11, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->container:Ljp/co/sony/mc/camera/view/widget/CustomConstraintLayout;
 
     invoke-static {v11, v12}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setEnabled(Landroid/view/View;Z)V
@@ -1119,13 +1217,13 @@
     :cond_14
     if-eqz v8, :cond_15
 
-    .line 380
+    .line 386
     iget-object v8, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->container:Ljp/co/sony/mc/camera/view/widget/CustomConstraintLayout;
 
     invoke-static {v8, v0}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setOrientation(Landroid/view/View;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
 
     :cond_15
-    const-wide/16 v11, 0x302
+    const-wide/16 v11, 0x502
 
     and-long/2addr v11, v2
 
@@ -1133,7 +1231,7 @@
 
     if-eqz v0, :cond_16
 
-    .line 385
+    .line 391
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->infoContainer:Landroidx/constraintlayout/widget/ConstraintLayout;
 
     invoke-static {v0, v9}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setVisible(Landroid/view/View;Z)V
@@ -1141,13 +1239,13 @@
     :cond_16
     if-eqz v10, :cond_17
 
-    .line 390
+    .line 396
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->infoDescription:Landroid/widget/TextView;
 
     invoke-virtual {v0, v6}, Landroid/widget/TextView;->setClickable(Z)V
 
     :cond_17
-    const-wide/16 v8, 0x320
+    const-wide/16 v8, 0x520
 
     and-long/2addr v2, v8
 
@@ -1155,7 +1253,7 @@
 
     if-eqz v0, :cond_18
 
-    .line 395
+    .line 401
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->quickSettingRoot:Landroidx/constraintlayout/widget/ConstraintLayout;
 
     invoke-static {v0, v7}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setVisible(Landroid/view/View;Z)V
@@ -1166,7 +1264,7 @@
     :catchall_0
     move-exception v0
 
-    .line 223
+    .line 229
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -1222,7 +1320,7 @@
     .line 85
     monitor-enter p0
 
-    const-wide/16 v0, 0x200
+    const-wide/16 v0, 0x400
 
     .line 86
     :try_start_0
@@ -1252,6 +1350,18 @@
 
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "localFieldId",
+            "object",
+            "fieldId"
+        }
+    .end annotation
 
     if-eqz p1, :cond_5
 
@@ -1279,7 +1389,7 @@
 
     return p0
 
-    .line 158
+    .line 164
     :cond_0
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -1289,7 +1399,7 @@
 
     return p0
 
-    .line 156
+    .line 162
     :cond_1
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -1299,7 +1409,7 @@
 
     return p0
 
-    .line 154
+    .line 160
     :cond_2
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -1309,7 +1419,7 @@
 
     return p0
 
-    .line 152
+    .line 158
     :cond_3
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -1319,7 +1429,7 @@
 
     return p0
 
-    .line 150
+    .line 156
     :cond_4
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -1329,7 +1439,7 @@
 
     return p0
 
-    .line 148
+    .line 154
     :cond_5
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -1342,14 +1452,22 @@
 
 .method public setBasicModeQuickSettingUiState(Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "BasicModeQuickSettingUiState"
+        }
+    .end annotation
 
-    .line 136
+    .line 139
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mBasicModeQuickSettingUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;
 
-    .line 137
+    .line 140
     monitor-enter p0
 
-    .line 138
+    .line 141
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mDirtyFlags:J
 
@@ -1359,17 +1477,17 @@
 
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mDirtyFlags:J
 
-    .line 139
+    .line 142
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/4 p1, 0x5
+    const/4 p1, 0x7
 
-    .line 140
+    .line 143
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->notifyPropertyChanged(I)V
 
-    .line 141
+    .line 144
     invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->requestRebind()V
 
     return-void
@@ -1377,7 +1495,7 @@
     :catchall_0
     move-exception p1
 
-    .line 139
+    .line 142
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -1386,16 +1504,41 @@
     throw p1
 .end method
 
+.method public setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "CameraSettingsModel"
+        }
+    .end annotation
+
+    .line 147
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mCameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+    return-void
+.end method
+
 .method public setOrientationViewModel(Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "OrientationViewModel"
+        }
+    .end annotation
 
-    .line 120
+    .line 123
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
-    .line 121
+    .line 124
     monitor-enter p0
 
-    .line 122
+    .line 125
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mDirtyFlags:J
 
@@ -1405,17 +1548,17 @@
 
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mDirtyFlags:J
 
-    .line 123
+    .line 126
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x16
+    const/16 p1, 0x19
 
-    .line 124
+    .line 127
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->notifyPropertyChanged(I)V
 
-    .line 125
+    .line 128
     invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->requestRebind()V
 
     return-void
@@ -1423,7 +1566,7 @@
     :catchall_0
     move-exception p1
 
-    .line 123
+    .line 126
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -1434,8 +1577,18 @@
 
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "variableId",
+            "variable"
+        }
+    .end annotation
 
-    const/16 v0, 0x16
+    const/16 v0, 0x19
 
     if-ne v0, p1, :cond_0
 
@@ -1447,7 +1600,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x25
+    const/16 v0, 0x28
 
     if-ne v0, p1, :cond_1
 
@@ -1459,7 +1612,7 @@
     goto :goto_0
 
     :cond_1
-    const/4 v0, 0x5
+    const/4 v0, 0x7
 
     if-ne v0, p1, :cond_2
 
@@ -1468,12 +1621,24 @@
 
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->setBasicModeQuickSettingUiState(Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;)V
 
+    goto :goto_0
+
+    :cond_2
+    const/16 v0, 0xb
+
+    if-ne v0, p1, :cond_3
+
+    .line 114
+    check-cast p2, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
+
     :goto_0
     const/4 p0, 0x1
 
     goto :goto_1
 
-    :cond_2
+    :cond_3
     const/4 p0, 0x0
 
     :goto_1
@@ -1482,14 +1647,22 @@
 
 .method public setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ViewFinderUiState"
+        }
+    .end annotation
 
-    .line 128
+    .line 131
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
-    .line 129
+    .line 132
     monitor-enter p0
 
-    .line 130
+    .line 133
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mDirtyFlags:J
 
@@ -1499,17 +1672,17 @@
 
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->mDirtyFlags:J
 
-    .line 131
+    .line 134
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x25
+    const/16 p1, 0x28
 
-    .line 132
+    .line 135
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBindingImpl;->notifyPropertyChanged(I)V
 
-    .line 133
+    .line 136
     invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->requestRebind()V
 
     return-void
@@ -1517,7 +1690,7 @@
     :catchall_0
     move-exception p1
 
-    .line 131
+    .line 134
     :try_start_1
     monitor-exit p0
     :try_end_1

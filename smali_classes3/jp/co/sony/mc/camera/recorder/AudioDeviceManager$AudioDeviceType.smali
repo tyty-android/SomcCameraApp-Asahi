@@ -82,7 +82,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 41
+    .line 40
     new-instance v0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;
 
     const-string v1, "LR"
@@ -93,7 +93,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;->LR:Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;
 
-    .line 42
+    .line 41
     new-instance v0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;
 
     const-string v1, "REAR"
@@ -104,7 +104,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;->REAR:Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;
 
-    .line 43
+    .line 42
     new-instance v0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;
 
     const-string v1, "TOP"
@@ -115,7 +115,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;->TOP:Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;
 
-    .line 44
+    .line 43
     new-instance v0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;
 
     const-string v1, "EXTERNAL_MIC"
@@ -151,7 +151,7 @@
         }
     .end annotation
 
-    .line 40
+    .line 39
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -182,7 +182,7 @@
 
     move-result-object p0
 
-    .line 45
+    .line 44
     check-cast p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;
 
     return-object p0
@@ -197,7 +197,7 @@
 
     move-result-object v0
 
-    .line 45
+    .line 44
     check-cast v0, [Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;
 
     return-object v0

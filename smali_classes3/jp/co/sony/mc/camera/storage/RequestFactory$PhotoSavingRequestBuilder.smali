@@ -41,6 +41,18 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusPhoto;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x10,
+            0x0
+        }
+        names = {
+            "commonStatus",
+            "photoStatus",
+            "shouldUpdateOrientationBeforeStoring"
+        }
+    .end annotation
 
     .line 213
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/storage/RequestFactory$RequestBuilder;-><init>(Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;)V
@@ -130,6 +142,14 @@
 
 .method public setCaptureIdForCaptureGroup(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "captureIdForPredictiveCapture"
+        }
+    .end annotation
 
     .line 231
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->mCommonStatus:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
@@ -141,6 +161,14 @@
 
 .method public setImageSource(Ljp/co/sony/mc/camera/storage/PhotoSavingRequest$ImageSourceLifeCycleAdapter;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "adapter"
+        }
+    .end annotation
 
     .line 246
     iput-object p1, p0, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->mSourceAdapter:Ljp/co/sony/mc/camera/storage/PhotoSavingRequest$ImageSourceLifeCycleAdapter;
@@ -150,6 +178,14 @@
 
 .method public setSaveTimeForCaptureGroup(Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "saveTimeForCaptureGroup"
+        }
+    .end annotation
 
     .line 223
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->mCommonStatus:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;

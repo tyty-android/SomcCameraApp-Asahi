@@ -7,11 +7,14 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lcom/google/common/collect/Ordering$ArbitraryOrderingHolder;,
         Lcom/google/common/collect/Ordering$IncomparableValueException;,
-        Lcom/google/common/collect/Ordering$ArbitraryOrdering;,
-        Lcom/google/common/collect/Ordering$ArbitraryOrderingHolder;
+        Lcom/google/common/collect/Ordering$ArbitraryOrdering;
     }
 .end annotation
 
@@ -37,7 +40,7 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 391
+    .line 405
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -54,7 +57,7 @@
         }
     .end annotation
 
-    .line 282
+    .line 293
     sget-object v0, Lcom/google/common/collect/AllEqualOrdering;->INSTANCE:Lcom/google/common/collect/AllEqualOrdering;
 
     return-object v0
@@ -71,7 +74,7 @@
         }
     .end annotation
 
-    .line 315
+    .line 327
     sget-object v0, Lcom/google/common/collect/Ordering$ArbitraryOrderingHolder;->ARBITRARY_ORDERING:Lcom/google/common/collect/Ordering;
 
     return-object v0
@@ -79,6 +82,15 @@
 
 .method public static compound(Ljava/lang/Iterable;)Lcom/google/common/collect/Ordering;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "comparators"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -93,7 +105,7 @@
         }
     .end annotation
 
-    .line 495
+    .line 519
     new-instance v0, Lcom/google/common/collect/CompoundOrdering;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/CompoundOrdering;-><init>(Ljava/lang/Iterable;)V
@@ -103,6 +115,17 @@
 
 .method public static varargs explicit(Ljava/lang/Object;[Ljava/lang/Object;)Lcom/google/common/collect/Ordering;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "leastValue",
+            "remainingValuesInOrder"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -113,7 +136,7 @@
         }
     .end annotation
 
-    .line 246
+    .line 258
     invoke-static {p0, p1}, Lcom/google/common/collect/Lists;->asList(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
@@ -127,6 +150,15 @@
 
 .method public static explicit(Ljava/util/List;)Lcom/google/common/collect/Ordering;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "valuesInOrder"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -139,7 +171,7 @@
         }
     .end annotation
 
-    .line 220
+    .line 232
     new-instance v0, Lcom/google/common/collect/ExplicitOrdering;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/ExplicitOrdering;-><init>(Ljava/util/List;)V
@@ -149,6 +181,15 @@
 
 .method public static from(Lcom/google/common/collect/Ordering;)Lcom/google/common/collect/Ordering;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ordering"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -164,7 +205,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 195
+    .line 207
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -176,6 +217,15 @@
 
 .method public static from(Ljava/util/Comparator;)Lcom/google/common/collect/Ordering;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "comparator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -188,17 +238,17 @@
         }
     .end annotation
 
-    .line 182
+    .line 194
     instance-of v0, p0, Lcom/google/common/collect/Ordering;
 
     if-eqz v0, :cond_0
 
-    .line 183
+    .line 195
     check-cast p0, Lcom/google/common/collect/Ordering;
 
     goto :goto_0
 
-    .line 184
+    .line 196
     :cond_0
     new-instance v0, Lcom/google/common/collect/ComparatorOrdering;
 
@@ -222,7 +272,7 @@
         }
     .end annotation
 
-    .line 162
+    .line 172
     sget-object v0, Lcom/google/common/collect/NaturalOrdering;->INSTANCE:Lcom/google/common/collect/NaturalOrdering;
 
     return-object v0
@@ -239,7 +289,7 @@
         }
     .end annotation
 
-    .line 295
+    .line 306
     sget-object v0, Lcom/google/common/collect/UsingToStringOrdering;->INSTANCE:Lcom/google/common/collect/UsingToStringOrdering;
 
     return-object v0
@@ -250,9 +300,20 @@
 .method public binarySearch(Ljava/util/List;Ljava/lang/Object;)I
     .locals 0
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sortedList",
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -264,7 +325,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 924
+    .line 957
     invoke-static {p1, p2, p0}, Ljava/util/Collections;->binarySearch(Ljava/util/List;Ljava/lang/Object;Ljava/util/Comparator;)I
 
     move-result p0
@@ -274,13 +335,24 @@
 
 .method public abstract compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "left",
+            "right"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;TT;)I"
@@ -290,6 +362,15 @@
 
 .method public compound(Ljava/util/Comparator;)Lcom/google/common/collect/Ordering;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "secondaryComparator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<U:TT;>(",
@@ -300,7 +381,7 @@
         }
     .end annotation
 
-    .line 471
+    .line 492
     new-instance v0, Lcom/google/common/collect/CompoundOrdering;
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -316,6 +397,17 @@
 
 .method public greatestOf(Ljava/lang/Iterable;I)Ljava/util/List;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "iterable",
+            "k"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:TT;>(",
@@ -326,7 +418,7 @@
         }
     .end annotation
 
-    .line 800
+    .line 832
     invoke-virtual {p0}, Lcom/google/common/collect/Ordering;->reverse()Lcom/google/common/collect/Ordering;
 
     move-result-object p0
@@ -340,6 +432,17 @@
 
 .method public greatestOf(Ljava/util/Iterator;I)Ljava/util/List;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "iterator",
+            "k"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:TT;>(",
@@ -350,7 +453,7 @@
         }
     .end annotation
 
-    .line 820
+    .line 852
     invoke-virtual {p0}, Lcom/google/common/collect/Ordering;->reverse()Lcom/google/common/collect/Ordering;
 
     move-result-object p0
@@ -364,6 +467,15 @@
 
 .method public immutableSortedCopy(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableList;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:TT;>(",
@@ -374,7 +486,7 @@
         }
     .end annotation
 
-    .line 863
+    .line 895
     invoke-static {p0, p1}, Lcom/google/common/collect/ImmutableList;->sortedCopyOf(Ljava/util/Comparator;Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
@@ -384,6 +496,15 @@
 
 .method public isOrdered(Ljava/lang/Iterable;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "iterable"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -392,24 +513,24 @@
         }
     .end annotation
 
-    .line 876
+    .line 908
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
 
-    .line 877
+    .line 909
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 878
+    .line 910
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 879
+    .line 911
     :goto_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -417,12 +538,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 880
+    .line 912
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 881
+    .line 913
     invoke-virtual {p0, v0, v1}, Lcom/google/common/collect/Ordering;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result v0
@@ -446,6 +567,15 @@
 
 .method public isStrictlyOrdered(Ljava/lang/Iterable;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "iterable"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -454,24 +584,24 @@
         }
     .end annotation
 
-    .line 900
+    .line 932
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
 
-    .line 901
+    .line 933
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 902
+    .line 934
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 903
+    .line 935
     :goto_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -479,12 +609,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 904
+    .line 936
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 905
+    .line 937
     invoke-virtual {p0, v0, v1}, Lcom/google/common/collect/Ordering;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result v0
@@ -508,6 +638,17 @@
 
 .method public leastOf(Ljava/lang/Iterable;I)Ljava/util/List;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "iterable",
+            "k"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:TT;>(",
@@ -518,17 +659,17 @@
         }
     .end annotation
 
-    .line 724
+    .line 756
     instance-of v0, p1, Ljava/util/Collection;
 
     if-eqz v0, :cond_1
 
-    .line 725
+    .line 757
     move-object v0, p1
 
     check-cast v0, Ljava/util/Collection;
 
-    .line 726
+    .line 758
     invoke-interface {v0}, Ljava/util/Collection;->size()I
 
     move-result v1
@@ -545,25 +686,25 @@
 
     if-gtz v1, :cond_1
 
-    .line 732
+    .line 764
     invoke-interface {v0}, Ljava/util/Collection;->toArray()[Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 733
+    .line 765
     invoke-static {p1, p0}, Ljava/util/Arrays;->sort([Ljava/lang/Object;Ljava/util/Comparator;)V
 
-    .line 734
+    .line 766
     array-length p0, p1
 
     if-le p0, p2, :cond_0
 
-    .line 735
+    .line 767
     invoke-static {p1, p2}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 737
+    .line 769
     :cond_0
     invoke-static {p1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
@@ -575,7 +716,7 @@
 
     return-object p0
 
-    .line 740
+    .line 772
     :cond_1
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -590,6 +731,17 @@
 
 .method public leastOf(Ljava/util/Iterator;I)Ljava/util/List;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "iterator",
+            "k"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:TT;>(",
@@ -600,17 +752,17 @@
         }
     .end annotation
 
-    .line 760
+    .line 792
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 761
+    .line 793
     const-string v0, "k"
 
     invoke-static {p2, v0}, Lcom/google/common/collect/CollectPreconditions;->checkNonnegative(ILjava/lang/String;)I
 
     if-eqz p2, :cond_3
 
-    .line 763
+    .line 795
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
@@ -624,22 +776,22 @@
 
     if-lt p2, v0, :cond_2
 
-    .line 767
+    .line 799
     invoke-static {p1}, Lcom/google/common/collect/Lists;->newArrayList(Ljava/util/Iterator;)Ljava/util/ArrayList;
 
     move-result-object p1
 
-    .line 768
+    .line 800
     invoke-static {p1, p0}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    .line 769
+    .line 801
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
     move-result p0
 
     if-le p0, p2, :cond_1
 
-    .line 770
+    .line 802
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
     move-result p0
@@ -650,34 +802,34 @@
 
     invoke-interface {p0}, Ljava/util/List;->clear()V
 
-    .line 772
+    .line 804
     :cond_1
     invoke-virtual {p1}, Ljava/util/ArrayList;->trimToSize()V
 
-    .line 773
+    .line 805
     invoke-static {p1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p0
 
     return-object p0
 
-    .line 775
+    .line 807
     :cond_2
     invoke-static {p2, p0}, Lcom/google/common/collect/TopKSelector;->least(ILjava/util/Comparator;)Lcom/google/common/collect/TopKSelector;
 
     move-result-object p0
 
-    .line 776
+    .line 808
     invoke-virtual {p0, p1}, Lcom/google/common/collect/TopKSelector;->offerAll(Ljava/util/Iterator;)V
 
-    .line 777
+    .line 809
     invoke-virtual {p0}, Lcom/google/common/collect/TopKSelector;->topK()Ljava/util/List;
 
     move-result-object p0
 
     return-object p0
 
-    .line 764
+    .line 796
     :cond_3
     :goto_0
     invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
@@ -698,7 +850,7 @@
         }
     .end annotation
 
-    .line 525
+    .line 549
     new-instance v0, Lcom/google/common/collect/LexicographicalOrdering;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/LexicographicalOrdering;-><init>(Ljava/util/Comparator;)V
@@ -708,6 +860,18 @@
 
 .method public max(Ljava/lang/Iterable;)Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "iterable"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:TT;>(",
@@ -716,7 +880,7 @@
         }
     .end annotation
 
-    .line 661
+    .line 690
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -731,20 +895,34 @@
 .method public max(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:TT;>(TE;TE;)TE;"
         }
     .end annotation
 
-    .line 680
+    .line 710
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/Ordering;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result p0
@@ -763,24 +941,42 @@
 .method public varargs max(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
     .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b",
+            "c",
+            "rest"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:TT;>(TE;TE;TE;[TE;)TE;"
         }
     .end annotation
 
-    .line 698
+    .line 730
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/Ordering;->max(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -789,7 +985,7 @@
 
     move-result-object p1
 
-    .line 700
+    .line 732
     array-length p2, p4
 
     const/4 p3, 0x0
@@ -799,7 +995,7 @@
 
     aget-object v0, p4, p3
 
-    .line 701
+    .line 733
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/Ordering;->max(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -814,6 +1010,18 @@
 
 .method public max(Ljava/util/Iterator;)Ljava/lang/Object;
     .locals 2
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "iterator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:TT;>(",
@@ -822,12 +1030,12 @@
         }
     .end annotation
 
-    .line 637
+    .line 665
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 639
+    .line 667
     :goto_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -835,7 +1043,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 640
+    .line 668
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
@@ -852,6 +1060,18 @@
 
 .method public min(Ljava/lang/Iterable;)Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "iterable"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:TT;>(",
@@ -860,7 +1080,7 @@
         }
     .end annotation
 
-    .line 575
+    .line 599
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -875,20 +1095,34 @@
 .method public min(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:TT;>(TE;TE;)TE;"
         }
     .end annotation
 
-    .line 594
+    .line 619
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/Ordering;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result p0
@@ -907,24 +1141,42 @@
 .method public varargs min(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
     .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b",
+            "c",
+            "rest"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:TT;>(TE;TE;TE;[TE;)TE;"
         }
     .end annotation
 
-    .line 612
+    .line 639
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/Ordering;->min(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -933,7 +1185,7 @@
 
     move-result-object p1
 
-    .line 614
+    .line 641
     array-length p2, p4
 
     const/4 p3, 0x0
@@ -943,7 +1195,7 @@
 
     aget-object v0, p4, p3
 
-    .line 615
+    .line 642
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/Ordering;->min(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -958,6 +1210,18 @@
 
 .method public min(Ljava/util/Iterator;)Ljava/lang/Object;
     .locals 2
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "iterator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:TT;>(",
@@ -966,12 +1230,12 @@
         }
     .end annotation
 
-    .line 551
+    .line 574
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 553
+    .line 576
     :goto_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -979,7 +1243,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 554
+    .line 577
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
@@ -1004,7 +1268,7 @@
         }
     .end annotation
 
-    .line 418
+    .line 434
     new-instance v0, Lcom/google/common/collect/NullsFirstOrdering;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/NullsFirstOrdering;-><init>(Lcom/google/common/collect/Ordering;)V
@@ -1022,7 +1286,7 @@
         }
     .end annotation
 
-    .line 431
+    .line 449
     new-instance v0, Lcom/google/common/collect/NullsLastOrdering;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/NullsLastOrdering;-><init>(Lcom/google/common/collect/Ordering;)V
@@ -1041,7 +1305,7 @@
         }
     .end annotation
 
-    .line 453
+    .line 471
     invoke-static {}, Lcom/google/common/collect/Maps;->keyFunction()Lcom/google/common/base/Function;
 
     move-result-object v0
@@ -1055,6 +1319,15 @@
 
 .method public onResultOf(Lcom/google/common/base/Function;)Lcom/google/common/collect/Ordering;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "function"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<F:",
@@ -1067,7 +1340,7 @@
         }
     .end annotation
 
-    .line 449
+    .line 467
     new-instance v0, Lcom/google/common/collect/ByFunctionOrdering;
 
     invoke-direct {v0, p1, p0}, Lcom/google/common/collect/ByFunctionOrdering;-><init>(Lcom/google/common/base/Function;Lcom/google/common/collect/Ordering;)V
@@ -1085,7 +1358,7 @@
         }
     .end annotation
 
-    .line 405
+    .line 419
     new-instance v0, Lcom/google/common/collect/ReverseOrdering;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/ReverseOrdering;-><init>(Lcom/google/common/collect/Ordering;)V
@@ -1095,6 +1368,15 @@
 
 .method public sortedCopy(Ljava/lang/Iterable;)Ljava/util/List;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:TT;>(",
@@ -1105,15 +1387,15 @@
         }
     .end annotation
 
-    .line 841
+    .line 873
     invoke-static {p1}, Lcom/google/common/collect/Iterables;->toArray(Ljava/lang/Iterable;)[Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 842
+    .line 874
     invoke-static {p1, p0}, Ljava/util/Arrays;->sort([Ljava/lang/Object;Ljava/util/Comparator;)V
 
-    .line 843
+    .line 875
     invoke-static {p1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0

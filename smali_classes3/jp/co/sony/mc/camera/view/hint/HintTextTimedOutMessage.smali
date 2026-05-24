@@ -24,6 +24,14 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage$MessageType;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     .line 116
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;-><init>()V
@@ -41,6 +49,14 @@
 
 .method public static createTag(Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage$MessageType;)Ljava/lang/String;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     .line 157
     new-instance v0, Ljava/lang/StringBuilder;

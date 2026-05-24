@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/base/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lcom/google/common/base/MoreObjects$ToStringHelper;
@@ -15,7 +18,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 389
+    .line 463
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -24,13 +27,24 @@
 .method public static firstNonNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "first",
+            "second"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -48,7 +62,7 @@
 
     return-object p1
 
-    .line 64
+    .line 68
     :cond_1
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -61,6 +75,15 @@
 
 .method public static toStringHelper(Ljava/lang/Class;)Lcom/google/common/base/MoreObjects$ToStringHelper;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "clazz"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -70,7 +93,7 @@
         }
     .end annotation
 
-    .line 122
+    .line 126
     new-instance v0, Lcom/google/common/base/MoreObjects$ToStringHelper;
 
     invoke-virtual {p0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -86,8 +109,16 @@
 
 .method public static toStringHelper(Ljava/lang/Object;)Lcom/google/common/base/MoreObjects$ToStringHelper;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "self"
+        }
+    .end annotation
 
-    .line 108
+    .line 112
     new-instance v0, Lcom/google/common/base/MoreObjects$ToStringHelper;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -107,8 +138,16 @@
 
 .method public static toStringHelper(Ljava/lang/String;)Lcom/google/common/base/MoreObjects$ToStringHelper;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "className"
+        }
+    .end annotation
 
-    .line 134
+    .line 138
     new-instance v0, Lcom/google/common/base/MoreObjects$ToStringHelper;
 
     const/4 v1, 0x0

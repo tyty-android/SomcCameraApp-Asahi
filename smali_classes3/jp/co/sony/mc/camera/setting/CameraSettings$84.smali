@@ -3,7 +3,7 @@
 .source "CameraSettings.java"
 
 # interfaces
-.implements Ljp/co/sony/mc/camera/setting/SettingsBase$SetCommand;
+.implements Ljp/co/sony/mc/camera/setting/SettingsBase$GetCommand;
 
 
 # annotations
@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1289
+    .line 1517
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,8 +29,19 @@
 
 
 # virtual methods
-.method public setValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljava/util/Map;)Z
+.method public getValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -38,23 +49,17 @@
             ">(",
             "Ljp/co/sony/mc/camera/setting/SettingsBase;",
             "Ljp/co/sony/mc/camera/setting/SettingKey$Key<",
-            "TT;>;TT;",
-            "Ljava/util/Map<",
-            "Ljp/co/sony/mc/camera/setting/CameraProSettingChangedListener;",
-            "Landroid/os/Handler;",
-            ">;)Z"
+            "TT;>;)TT;"
         }
     .end annotation
 
-    .line 1293
+    .line 1521
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1294
-    check-cast p3, Ljava/lang/Integer;
+    .line 1522
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetFramingAssistSwitch(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/FramingAssistSwitch;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetBokehStrength(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljava/lang/Integer;)Z
+    move-result-object p0
 
-    move-result p0
-
-    return p0
+    return-object p0
 .end method

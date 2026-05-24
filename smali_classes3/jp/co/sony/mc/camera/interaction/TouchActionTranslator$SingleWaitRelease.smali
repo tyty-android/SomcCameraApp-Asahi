@@ -38,6 +38,16 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;Landroid/view/MotionEvent;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "motionEvent"
+        }
+    .end annotation
 
     .line 404
     iput-object p1, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$SingleWaitRelease;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;
@@ -79,6 +89,18 @@
 
 .method private isConsideredDoubleTap(Landroid/view/MotionEvent;Landroid/view/MotionEvent;Landroid/view/MotionEvent;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "firstDown",
+            "firstUp",
+            "secondDown"
+        }
+    .end annotation
 
     .line 422
     invoke-virtual {p3}, Landroid/view/MotionEvent;->getEventTime()J
@@ -158,6 +180,14 @@
 # virtual methods
 .method public handleMotionEvent(Landroid/view/MotionEvent;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "motion"
+        }
+    .end annotation
 
     .line 434
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
@@ -335,24 +365,70 @@
 
 .method public handleSingleTouchMoveEvent(Landroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "currentPoint",
+            "lastPoint",
+            "downPoint"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public handleSingleTouchStopEvent(Landroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "currentPoint",
+            "lastPoint",
+            "downPoint"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public handleTouchRotateEvent(FF)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "degreeVsOrigin",
+            "degreeVsLast"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public handleTouchScaleEvent(FFF)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "currentLength",
+            "previousLength",
+            "originalLength"
+        }
+    .end annotation
 
     return-void
 .end method

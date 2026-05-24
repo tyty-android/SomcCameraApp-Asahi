@@ -6,6 +6,11 @@
 .implements Ljava/io/DataInput;
 
 
+# annotations
+.annotation runtime Lcom/google/common/io/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # virtual methods
 .method public abstract readBoolean()Z
 .end method
@@ -23,15 +28,37 @@
 .end method
 
 .method public abstract readFully([B)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "b"
+        }
+    .end annotation
 .end method
 
 .method public abstract readFully([BII)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "b",
+            "off",
+            "len"
+        }
+    .end annotation
 .end method
 
 .method public abstract readInt()I
 .end method
 
 .method public abstract readLine()Ljava/lang/String;
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 .end method
 
 .method public abstract readLong()J
@@ -50,4 +77,12 @@
 .end method
 
 .method public abstract skipBytes(I)I
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "n"
+        }
+    .end annotation
 .end method

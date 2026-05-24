@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract onRelease(Landroid/view/View;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "v"
+        }
+    .end annotation
 .end method

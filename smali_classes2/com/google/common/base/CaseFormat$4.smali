@@ -17,6 +17,20 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;ILcom/google/common/base/CharMatcher;Ljava/lang/String;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "wordBoundary",
+            "wordSeparator"
+        }
+    .end annotation
 
     const/4 v5, 0x0
 
@@ -30,7 +44,7 @@
 
     move-object v4, p4
 
-    .line 84
+    .line 86
     invoke-direct/range {v0 .. v5}, Lcom/google/common/base/CaseFormat;-><init>(Ljava/lang/String;ILcom/google/common/base/CharMatcher;Ljava/lang/String;Lcom/google/common/base/CaseFormat$1;)V
 
     return-void
@@ -40,8 +54,16 @@
 # virtual methods
 .method normalizeWord(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "word"
+        }
+    .end annotation
 
-    .line 87
+    .line 89
     invoke-static {p1}, Lcom/google/common/base/CaseFormat;->access$100(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0

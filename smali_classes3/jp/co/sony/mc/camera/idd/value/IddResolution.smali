@@ -61,7 +61,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 127
+    .line 126
     check-cast p1, Ljava/lang/Enum;
 
     const/4 v0, 0x0
@@ -76,7 +76,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 128
+    .line 127
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/value/IddResolution;->getValue()Ljava/lang/Enum;
 
     move-result-object p0
@@ -113,19 +113,19 @@
 
     goto :goto_0
 
-    .line 131
+    .line 130
     :cond_0
     const-string v1, "10MP"
 
     goto :goto_0
 
-    .line 130
+    .line 129
     :cond_1
     const-string v1, "12MP"
 
     goto :goto_0
 
-    .line 129
+    .line 128
     :cond_2
     const-string v1, "48MP"
 

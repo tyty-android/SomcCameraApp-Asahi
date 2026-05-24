@@ -36,7 +36,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 58
+    .line 64
     new-instance v0, Lcom/google/common/collect/DiscreteDomain$IntegerDomain;
 
     invoke-direct {v0}, Lcom/google/common/collect/DiscreteDomain$IntegerDomain;-><init>()V
@@ -53,7 +53,7 @@
 
     const/4 v1, 0x0
 
-    .line 61
+    .line 67
     invoke-direct {p0, v0, v1}, Lcom/google/common/collect/DiscreteDomain;-><init>(ZLcom/google/common/collect/DiscreteDomain$1;)V
 
     return-void
@@ -62,7 +62,7 @@
 .method static synthetic access$000()Lcom/google/common/collect/DiscreteDomain$IntegerDomain;
     .locals 1
 
-    .line 57
+    .line 63
     sget-object v0, Lcom/google/common/collect/DiscreteDomain$IntegerDomain;->INSTANCE:Lcom/google/common/collect/DiscreteDomain$IntegerDomain;
 
     return-object v0
@@ -71,7 +71,7 @@
 .method private readResolve()Ljava/lang/Object;
     .locals 0
 
-    .line 98
+    .line 106
     sget-object p0, Lcom/google/common/collect/DiscreteDomain$IntegerDomain;->INSTANCE:Lcom/google/common/collect/DiscreteDomain$IntegerDomain;
 
     return-object p0
@@ -81,8 +81,18 @@
 # virtual methods
 .method public bridge synthetic distance(Ljava/lang/Comparable;Ljava/lang/Comparable;)J
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "start",
+            "end"
+        }
+    .end annotation
 
-    .line 57
+    .line 63
     check-cast p1, Ljava/lang/Integer;
 
     check-cast p2, Ljava/lang/Integer;
@@ -96,8 +106,18 @@
 
 .method public distance(Ljava/lang/Integer;Ljava/lang/Integer;)J
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "start",
+            "end"
+        }
+    .end annotation
 
-    .line 84
+    .line 92
     invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
 
     move-result p0
@@ -118,7 +138,7 @@
 .method public bridge synthetic maxValue()Ljava/lang/Comparable;
     .locals 0
 
-    .line 57
+    .line 63
     invoke-virtual {p0}, Lcom/google/common/collect/DiscreteDomain$IntegerDomain;->maxValue()Ljava/lang/Integer;
 
     move-result-object p0
@@ -131,7 +151,7 @@
 
     const p0, 0x7fffffff
 
-    .line 94
+    .line 102
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -142,7 +162,7 @@
 .method public bridge synthetic minValue()Ljava/lang/Comparable;
     .locals 0
 
-    .line 57
+    .line 63
     invoke-virtual {p0}, Lcom/google/common/collect/DiscreteDomain$IntegerDomain;->minValue()Ljava/lang/Integer;
 
     move-result-object p0
@@ -155,7 +175,7 @@
 
     const/high16 p0, -0x80000000
 
-    .line 89
+    .line 97
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -165,8 +185,19 @@
 
 .method public bridge synthetic next(Ljava/lang/Comparable;)Ljava/lang/Comparable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 57
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 63
     check-cast p1, Ljava/lang/Integer;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/DiscreteDomain$IntegerDomain;->next(Ljava/lang/Integer;)Ljava/lang/Integer;
@@ -178,8 +209,19 @@
 
 .method public next(Ljava/lang/Integer;)Ljava/lang/Integer;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 66
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 73
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
     move-result p0
@@ -195,7 +237,7 @@
     :cond_0
     add-int/lit8 p0, p0, 0x1
 
-    .line 67
+    .line 74
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -206,8 +248,18 @@
 
 .method bridge synthetic offset(Ljava/lang/Comparable;J)Ljava/lang/Comparable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "origin",
+            "distance"
+        }
+    .end annotation
 
-    .line 57
+    .line 63
     check-cast p1, Ljava/lang/Integer;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/common/collect/DiscreteDomain$IntegerDomain;->offset(Ljava/lang/Integer;J)Ljava/lang/Integer;
@@ -219,13 +271,23 @@
 
 .method offset(Ljava/lang/Integer;J)Ljava/lang/Integer;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "origin",
+            "distance"
+        }
+    .end annotation
 
-    .line 78
+    .line 86
     const-string p0, "distance"
 
     invoke-static {p2, p3, p0}, Lcom/google/common/collect/CollectPreconditions;->checkNonnegative(JLjava/lang/String;)J
 
-    .line 79
+    .line 87
     invoke-virtual {p1}, Ljava/lang/Integer;->longValue()J
 
     move-result-wide p0
@@ -245,8 +307,19 @@
 
 .method public bridge synthetic previous(Ljava/lang/Comparable;)Ljava/lang/Comparable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 57
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 63
     check-cast p1, Ljava/lang/Integer;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/DiscreteDomain$IntegerDomain;->previous(Ljava/lang/Integer;)Ljava/lang/Integer;
@@ -258,8 +331,19 @@
 
 .method public previous(Ljava/lang/Integer;)Ljava/lang/Integer;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
-    .line 72
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 80
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
     move-result p0
@@ -275,7 +359,7 @@
     :cond_0
     add-int/lit8 p0, p0, -0x1
 
-    .line 73
+    .line 81
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -287,7 +371,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 103
+    .line 111
     const-string p0, "DiscreteDomain.integers()"
 
     return-object p0

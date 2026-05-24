@@ -26,42 +26,42 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentMemoryRecallBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f090220
+    const v1, 0x7f090225
 
     const/4 v2, 0x2
 
     .line 17
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090222
+    const v1, 0x7f090227
 
     const/4 v2, 0x3
 
     .line 18
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090221
+    const v1, 0x7f090226
 
     const/4 v2, 0x4
 
     .line 19
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0902e2
+    const v1, 0x7f0902e7
 
     const/4 v2, 0x5
 
     .line 20
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0902c8
+    const v1, 0x7f0902cd
 
     const/4 v2, 0x6
 
     .line 21
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0902c9
+    const v1, 0x7f0902ce
 
     const/4 v2, 0x7
 
@@ -73,6 +73,16 @@
 
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root"
+        }
+    .end annotation
 
     .line 33
     sget-object v0, Ljp/co/sony/mc/camera/databinding/FragmentMemoryRecallBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -92,6 +102,18 @@
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
     .locals 12
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root",
+            "bindings"
+        }
+    .end annotation
 
     const/4 v0, 0x2
 
@@ -336,6 +358,18 @@
 
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "localFieldId",
+            "object",
+            "fieldId"
+        }
+    .end annotation
 
     const/4 p0, 0x0
 
@@ -344,6 +378,14 @@
 
 .method public setLabelCount(Ljava/lang/Integer;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "LabelCount"
+        }
+    .end annotation
 
     .line 84
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentMemoryRecallBindingImpl;->mLabelCount:Ljava/lang/Integer;
@@ -366,7 +408,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0xf
+    const/16 p1, 0x12
 
     .line 88
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentMemoryRecallBindingImpl;->notifyPropertyChanged(I)V
@@ -390,8 +432,18 @@
 
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "variableId",
+            "variable"
+        }
+    .end annotation
 
-    const/16 v0, 0xf
+    const/16 v0, 0x12
 
     if-ne v0, p1, :cond_0
 

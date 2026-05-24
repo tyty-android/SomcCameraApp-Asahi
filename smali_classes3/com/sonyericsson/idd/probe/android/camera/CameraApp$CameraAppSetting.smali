@@ -61,6 +61,7 @@
         Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FramingAssistMethod;,
         Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LevelMeter;,
         Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$VolumeDistortionCorrection;,
+        Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HwKeyFunctionType;,
         Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;
     }
 .end annotation
@@ -70,6 +71,12 @@
 .field public static final ACCESSIBILITY_FIELD_NUMBER:I = 0x1
 
 .field public static final AFR_SHORTCUT_FIELD_NUMBER:I = 0x46
+
+.field public static final AI_SUGGESTION_CUSTOM_EXTENSION_DATA_BOKEH_FIELD_NUMBER:I = 0x4f
+
+.field public static final AI_SUGGESTION_CUSTOM_EXTENSION_DATA_LENS_FIELD_NUMBER:I = 0x50
+
+.field public static final AI_SUGGESTION_DETECTION_FIELD_NUMBER:I = 0x4e
 
 .field public static final ASPECT_RATIO_FIELD_NUMBER:I = 0x2
 
@@ -94,6 +101,12 @@
 .field public static final C_AND_B_BRIGHTNESS_FIELD_NUMBER:I = 0x8
 
 .field public static final C_AND_B_COLOR_FIELD_NUMBER:I = 0x9
+
+.field public static final DIGITAL_TRIPOD_FRAMING_FIELD_NUMBER:I = 0x51
+
+.field public static final DIGITAL_TRIPOD_FRAMING_INDICATOR_FIELD_NUMBER:I = 0x52
+
+.field public static final DIGITAL_TRIPOD_FRAMING_VIBRATION_FIELD_NUMBER:I = 0x53
 
 .field public static final DIGITAL_ZOOM_FIELD_NUMBER:I = 0xe
 
@@ -140,6 +153,8 @@
 .field public static final HDR_DRO_FIELD_NUMBER:I = 0x21
 
 .field public static final HDR_SDR_FIELD_NUMBER:I = 0x22
+
+.field public static final HW_KEY_FUNCTION_TYPE_FIELD_NUMBER:I = 0x4d
 
 .field public static final ISO_FIELD_NUMBER:I = 0x23
 
@@ -227,6 +242,12 @@
 
 .field private afrShortcut_:F
 
+.field private aiSuggestionCustomExtensionDataBokeh_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+.field private aiSuggestionCustomExtensionDataLens_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+.field private aiSuggestionDetection_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
 .field private aspectRatio_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$AspectRatio;
 
 .field private audioSignals_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$AudioSignals;
@@ -250,6 +271,12 @@
 .field private connectTo_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ConnectTo;
 
 .field private continuousFeedback_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+.field private digitalTripodFramingIndicator_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+.field private digitalTripodFramingVibration_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+.field private digitalTripodFraming_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
 .field private digitalZoom_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DigitalZoom;
 
@@ -297,6 +324,12 @@
 
 .field private hasAfrShortcut:Z
 
+.field private hasAiSuggestionCustomExtensionDataBokeh:Z
+
+.field private hasAiSuggestionCustomExtensionDataLens:Z
+
+.field private hasAiSuggestionDetection:Z
+
 .field private hasAspectRatio:Z
 
 .field private hasAudioSignals:Z
@@ -320,6 +353,12 @@
 .field private hasConnectTo:Z
 
 .field private hasContinuousFeedback:Z
+
+.field private hasDigitalTripodFraming:Z
+
+.field private hasDigitalTripodFramingIndicator:Z
+
+.field private hasDigitalTripodFramingVibration:Z
 
 .field private hasDigitalZoom:Z
 
@@ -366,6 +405,8 @@
 .field private hasHdrDro:Z
 
 .field private hasHdrSdr:Z
+
+.field private hasHwKeyFunctionType:Z
 
 .field private hasIso:Z
 
@@ -448,6 +489,8 @@
 .field private hdrDro_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HdrDro;
 
 .field private hdrSdr_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HdrSdr;
+
+.field private hwKeyFunctionType_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HwKeyFunctionType;
 
 .field private iso_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
@@ -547,6 +590,30 @@
     return-void
 .end method
 
+.method static bridge synthetic -$$Nest$fputaiSuggestionCustomExtensionDataBokeh_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->aiSuggestionCustomExtensionDataBokeh_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    return-void
+.end method
+
+.method static bridge synthetic -$$Nest$fputaiSuggestionCustomExtensionDataLens_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->aiSuggestionCustomExtensionDataLens_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    return-void
+.end method
+
+.method static bridge synthetic -$$Nest$fputaiSuggestionDetection_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->aiSuggestionDetection_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    return-void
+.end method
+
 .method static bridge synthetic -$$Nest$fputaspectRatio_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$AspectRatio;)V
     .locals 0
 
@@ -639,6 +706,30 @@
     .locals 0
 
     iput-object p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->continuousFeedback_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    return-void
+.end method
+
+.method static bridge synthetic -$$Nest$fputdigitalTripodFramingIndicator_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->digitalTripodFramingIndicator_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    return-void
+.end method
+
+.method static bridge synthetic -$$Nest$fputdigitalTripodFramingVibration_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->digitalTripodFramingVibration_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    return-void
+.end method
+
+.method static bridge synthetic -$$Nest$fputdigitalTripodFraming_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->digitalTripodFraming_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     return-void
 .end method
@@ -827,6 +918,30 @@
     return-void
 .end method
 
+.method static bridge synthetic -$$Nest$fputhasAiSuggestionCustomExtensionDataBokeh(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;Z)V
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAiSuggestionCustomExtensionDataBokeh:Z
+
+    return-void
+.end method
+
+.method static bridge synthetic -$$Nest$fputhasAiSuggestionCustomExtensionDataLens(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;Z)V
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAiSuggestionCustomExtensionDataLens:Z
+
+    return-void
+.end method
+
+.method static bridge synthetic -$$Nest$fputhasAiSuggestionDetection(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;Z)V
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAiSuggestionDetection:Z
+
+    return-void
+.end method
+
 .method static bridge synthetic -$$Nest$fputhasAspectRatio(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;Z)V
     .locals 0
 
@@ -919,6 +1034,30 @@
     .locals 0
 
     iput-boolean p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasContinuousFeedback:Z
+
+    return-void
+.end method
+
+.method static bridge synthetic -$$Nest$fputhasDigitalTripodFraming(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;Z)V
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasDigitalTripodFraming:Z
+
+    return-void
+.end method
+
+.method static bridge synthetic -$$Nest$fputhasDigitalTripodFramingIndicator(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;Z)V
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasDigitalTripodFramingIndicator:Z
+
+    return-void
+.end method
+
+.method static bridge synthetic -$$Nest$fputhasDigitalTripodFramingVibration(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;Z)V
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasDigitalTripodFramingVibration:Z
 
     return-void
 .end method
@@ -1103,6 +1242,14 @@
     .locals 0
 
     iput-boolean p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasHdrSdr:Z
+
+    return-void
+.end method
+
+.method static bridge synthetic -$$Nest$fputhasHwKeyFunctionType(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;Z)V
+    .locals 0
+
+    iput-boolean p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasHwKeyFunctionType:Z
 
     return-void
 .end method
@@ -1435,6 +1582,14 @@
     return-void
 .end method
 
+.method static bridge synthetic -$$Nest$fputhwKeyFunctionType_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HwKeyFunctionType;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hwKeyFunctionType_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HwKeyFunctionType;
+
+    return-void
+.end method
+
 .method static bridge synthetic -$$Nest$fputiso_(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;)V
     .locals 0
 
@@ -1750,7 +1905,7 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 6818
+    .line 7471
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
 
     const/4 v1, 0x1
@@ -1759,10 +1914,10 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->defaultInstance:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
 
-    .line 6819
+    .line 7472
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp;->internalForceInit()V
 
-    .line 6820
+    .line 7473
     invoke-direct {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->initFields()V
 
     return-void
@@ -1771,36 +1926,36 @@
 .method private constructor <init>()V
     .locals 2
 
-    .line 992
+    .line 1269
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageLite;-><init>()V
 
-    .line 3130
+    .line 3454
     const-string v0, ""
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->bokeh_:Ljava/lang/String;
 
     const/4 v1, 0x0
 
-    .line 3144
+    .line 3468
     iput v1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->cAndBBrightness_:I
 
-    .line 3151
+    .line 3475
     iput v1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->cAndBColor_:I
 
-    .line 3571
+    .line 3895
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->zoom_:Ljava/lang/String;
 
     const/4 v0, 0x0
 
-    .line 3578
+    .line 3902
     iput v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->afrShortcut_:F
 
     const/4 v0, -0x1
 
-    .line 3934
+    .line 4335
     iput v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->memoizedSerializedSize:I
 
-    .line 993
+    .line 1270
     invoke-direct {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->initFields()V
 
     return-void
@@ -1816,34 +1971,42 @@
 
 .method private constructor <init>(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "noInit"
+        }
+    .end annotation
 
-    .line 995
+    .line 1272
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageLite;-><init>()V
 
-    .line 3130
+    .line 3454
     const-string p1, ""
 
     iput-object p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->bokeh_:Ljava/lang/String;
 
     const/4 v0, 0x0
 
-    .line 3144
+    .line 3468
     iput v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->cAndBBrightness_:I
 
-    .line 3151
+    .line 3475
     iput v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->cAndBColor_:I
 
-    .line 3571
+    .line 3895
     iput-object p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->zoom_:Ljava/lang/String;
 
     const/4 p1, 0x0
 
-    .line 3578
+    .line 3902
     iput p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->afrShortcut_:F
 
     const/4 p1, -0x1
 
-    .line 3934
+    .line 4335
     iput p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->memoizedSerializedSize:I
 
     return-void
@@ -1852,7 +2015,7 @@
 .method public static getDefaultInstance()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
     .locals 1
 
-    .line 999
+    .line 1276
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->defaultInstance:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
 
     return-object v0
@@ -1861,360 +2024,395 @@
 .method private initFields()V
     .locals 1
 
-    .line 3625
+    .line 3998
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Accessibility;->ACCESSIBILITY_START:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Accessibility;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->accessibility_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Accessibility;
 
-    .line 3626
+    .line 3999
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$AspectRatio;->FOUR_TO_THREE:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$AspectRatio;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->aspectRatio_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$AspectRatio;
 
-    .line 3627
+    .line 4000
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$AudioSignals;->ALL:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$AudioSignals;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->audioSignals_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$AudioSignals;
 
-    .line 3628
+    .line 4001
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->autoFrameRate_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
-    .line 3629
+    .line 4002
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$AutoOff;->SETTING_AUTO:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$AutoOff;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->autoNight_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$AutoOff;
 
-    .line 3630
+    .line 4003
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->btRemote_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
-    .line 3631
+    .line 4004
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$AutoOff;->SETTING_AUTO:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$AutoOff;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->closeUpShooting_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$AutoOff;
 
-    .line 3632
+    .line 4005
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$AutoOff;->SETTING_AUTO:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$AutoOff;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->computationalPhoto_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$AutoOff;
 
-    .line 3633
+    .line 4006
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ConnectTo;->RTMP:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ConnectTo;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->connectTo_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ConnectTo;
 
-    .line 3634
+    .line 4007
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->continuousFeedback_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
-    .line 3635
+    .line 4008
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DigitalZoom;->STANDARD:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DigitalZoom;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->digitalZoom_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DigitalZoom;
 
-    .line 3636
+    .line 4009
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Disp;->STANDBY:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Disp;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->disp_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Disp;
 
-    .line 3637
+    .line 4010
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DriveMode;->SINGLE:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DriveMode;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->driveMode_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DriveMode;
 
-    .line 3638
+    .line 4011
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DynamicRange;->WIDE:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DynamicRange;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->dynamicRange_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DynamicRange;
 
-    .line 3639
+    .line 4012
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->enduranceMode_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
-    .line 3640
+    .line 4013
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Ev;->ZERO:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Ev;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->ev_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Ev;
 
-    .line 3641
+    .line 4014
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FaceEyeAf;->FACE_EYE_AF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FaceEyeAf;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->faceEyeAf_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FaceEyeAf;
 
-    .line 3642
+    .line 4015
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FileFormat;->JPEG:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FileFormat;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->fileFormat_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FileFormat;
 
-    .line 3643
+    .line 4016
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;->ST:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->filter_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
-    .line 3644
+    .line 4017
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Flash;->FLASH_OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Flash;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->flash_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Flash;
 
-    .line 3645
+    .line 4018
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusArea;->FOCUS_AREA_WIDE:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusArea;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->focusArea_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusArea;
 
-    .line 3646
+    .line 4019
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusAreaColor;->WHITE:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusAreaColor;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->focusAreaColor_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusAreaColor;
 
-    .line 3647
+    .line 4020
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusMode;->AF_S:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusMode;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->focusMode_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusMode;
 
-    .line 3648
+    .line 4021
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->focusUI_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
-    .line 3649
+    .line 4022
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Fps;->FPS_24:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Fps;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->fps_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Fps;
 
-    .line 3650
+    .line 4023
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->geoTag_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
-    .line 3651
+    .line 4024
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->gridLine_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
-    .line 3652
+    .line 4025
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->handShutter_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
-    .line 3653
+    .line 4026
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->haptic_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
-    .line 3654
+    .line 4027
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HdrDro;->HDR_DRO_AUTO:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HdrDro;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hdrDro_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HdrDro;
 
-    .line 3655
+    .line 4028
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HdrSdr;->HDR_SDR_HDR:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HdrSdr;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hdrSdr_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HdrSdr;
 
-    .line 3656
+    .line 4029
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;->ISO_AUTO:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->iso_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
-    .line 3657
+    .line 4030
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LaunchWithCameraKey;->LAUNCH_CAMERA_APP:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LaunchWithCameraKey;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->launchWithCameraKey_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LaunchWithCameraKey;
 
-    .line 3658
+    .line 4031
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Lens;->FRONT:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Lens;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->lens_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Lens;
 
-    .line 3659
+    .line 4032
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LensCorrection;->IMAGW:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LensCorrection;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->lensCorrection_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LensCorrection;
 
-    .line 3660
+    .line 4033
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LevelCalibration;->LEVEL_CALIBRATION_START:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LevelCalibration;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->levelCalibration_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LevelCalibration;
 
-    .line 3661
+    .line 4034
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$MeteringMode;->MULTI:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$MeteringMode;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->meteringMode_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$MeteringMode;
 
-    .line 3662
+    .line 4035
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Mic;->ALL_STEREO:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Mic;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->mic_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Mic;
 
-    .line 3663
+    .line 4036
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->UNKNOWN:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->mode_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
-    .line 3664
+    .line 4037
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$NetworkUsage;->WIFI_ONLY:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$NetworkUsage;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->networkUsage_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$NetworkUsage;
 
-    .line 3665
+    .line 4038
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->peaking_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
-    .line 3666
+    .line 4039
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$PeakingColor;->PEAKING_COLOR_WHITE:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$PeakingColor;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->peakingColor_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$PeakingColor;
 
-    .line 3667
+    .line 4040
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$PrivacyPolicy;->PRIVACY_POLICY_START:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$PrivacyPolicy;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->privacyPolicy_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$PrivacyPolicy;
 
-    .line 3668
+    .line 4041
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->productShowcase_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
-    .line 3669
+    .line 4042
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Reset;->RESET_START:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Reset;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->reset_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Reset;
 
-    .line 3670
+    .line 4043
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Resolution;->FOUR_K:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Resolution;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->resolution_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Resolution;
 
-    .line 3671
+    .line 4044
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$SelfTimer;->SELF_TIMER_OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$SelfTimer;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->selfTimer_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$SelfTimer;
 
-    .line 3672
+    .line 4045
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->sharpenFaces_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
-    .line 3673
+    .line 4046
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->softSkin_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
-    .line 3674
+    .line 4047
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ShutterSpeed;->SHUTTERSPEED_AUTO:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ShutterSpeed;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->sS_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ShutterSpeed;
 
-    .line 3675
+    .line 4048
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->sSUI_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
-    .line 3676
+    .line 4049
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Stabilization;->HIGH_QUALITY:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Stabilization;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->stabilization_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Stabilization;
 
-    .line 3677
+    .line 4050
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Storage;->INTERNAL_STORAGE:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Storage;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->storage_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Storage;
 
-    .line 3678
+    .line 4051
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$StreamMute;->MUTE:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$StreamMute;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->streamMute_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$StreamMute;
 
-    .line 3679
+    .line 4052
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$StreamVideoQuality;->HIGH:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$StreamVideoQuality;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->streamVideoQuality_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$StreamVideoQuality;
 
-    .line 3680
+    .line 4053
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$SwLicense;->SW_LICENSE_START:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$SwLicense;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->swLicense_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$SwLicense;
 
-    .line 3681
+    .line 4054
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Tips;->TIPS_START:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Tips;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->tips_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Tips;
 
-    .line 3682
+    .line 4055
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$TouchToAdjust;->OBJECT_AE:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$TouchToAdjust;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->touchToAdjust_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$TouchToAdjust;
 
-    .line 3683
+    .line 4056
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->touchTracking_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
-    .line 3684
+    .line 4057
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->videoBacklightCollection_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
-    .line 3685
+    .line 4058
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->videoLight_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
-    .line 3686
+    .line 4059
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$VolumeKeyAs;->ZOOM:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$VolumeKeyAs;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->volumeKeyAs_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$VolumeKeyAs;
 
-    .line 3687
+    .line 4060
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;->WB_AUTO:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->wb_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
-    .line 3688
+    .line 4061
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->windFilter_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
-    .line 3689
+    .line 4062
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ManualFocus;->ZOOM_TO_FLOWER:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ManualFocus;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->manualFocus_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ManualFocus;
 
-    .line 3690
+    .line 4063
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->framingAssist_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
-    .line 3691
+    .line 4064
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FramingAssistMethod;->FRAMING_CENTER:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FramingAssistMethod;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->framingAssistMethod_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FramingAssistMethod;
 
-    .line 3692
+    .line 4065
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LevelMeter;->LEVEL_METER_OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LevelMeter;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->levelMeter_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LevelMeter;
 
-    .line 3693
+    .line 4066
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->saveFullScreenVideo_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
-    .line 3694
+    .line 4067
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->ultraHdr_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
-    .line 3695
+    .line 4068
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$VolumeDistortionCorrection;->VDC_AUTO:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$VolumeDistortionCorrection;
 
     iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->volumeDistortionCorrection_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$VolumeDistortionCorrection;
+
+    .line 4069
+    sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HwKeyFunctionType;->FUNCTION_OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HwKeyFunctionType;
+
+    iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hwKeyFunctionType_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HwKeyFunctionType;
+
+    .line 4070
+    sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->aiSuggestionDetection_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    .line 4071
+    sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->aiSuggestionCustomExtensionDataBokeh_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    .line 4072
+    sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->aiSuggestionCustomExtensionDataLens_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    .line 4073
+    sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->digitalTripodFraming_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    .line 4074
+    sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->digitalTripodFramingIndicator_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    .line 4075
+    sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->OFF:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    iput-object v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->digitalTripodFramingVibration_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     return-void
 .end method
@@ -2222,7 +2420,7 @@
 .method public static newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;
     .locals 1
 
-    .line 4315
+    .line 4744
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;->-$$Nest$smcreate()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;
 
     move-result-object v0
@@ -2232,8 +2430,16 @@
 
 .method public static newBuilder(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "prototype"
+        }
+    .end annotation
 
-    .line 4318
+    .line 4747
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;
 
     move-result-object v0
@@ -2247,25 +2453,34 @@
 
 .method public static parseDelimitedFrom(Ljava/io/InputStream;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "input"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 4284
+    .line 4713
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;
 
     move-result-object v0
 
-    .line 4285
+    .line 4714
     invoke-virtual {v0, p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;->mergeDelimitedFrom(Ljava/io/InputStream;)Z
 
     move-result p0
 
     if-eqz p0, :cond_0
 
-    .line 4286
+    .line 4715
     invoke-static {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;->-$$Nest$mbuildParsed(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
 
     move-result-object p0
@@ -2280,25 +2495,36 @@
 
 .method public static parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "input",
+            "extensionRegistry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 4295
+    .line 4724
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;
 
     move-result-object v0
 
-    .line 4296
+    .line 4725
     invoke-virtual {v0, p0, p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;->mergeDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Z
 
     move-result p0
 
     if-eqz p0, :cond_0
 
-    .line 4297
+    .line 4726
     invoke-static {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;->-$$Nest$mbuildParsed(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
 
     move-result-object p0
@@ -2313,13 +2539,22 @@
 
 .method public static parseFrom(Lcom/google/protobuf/ByteString;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "data"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/protobuf/InvalidProtocolBufferException;
         }
     .end annotation
 
-    .line 4251
+    .line 4680
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;
 
     move-result-object v0
@@ -2339,13 +2574,24 @@
 
 .method public static parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "data",
+            "extensionRegistry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/protobuf/InvalidProtocolBufferException;
         }
     .end annotation
 
-    .line 4257
+    .line 4686
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;
 
     move-result-object v0
@@ -2356,7 +2602,7 @@
 
     check-cast p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;
 
-    .line 4258
+    .line 4687
     invoke-static {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;->-$$Nest$mbuildParsed(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
 
     move-result-object p0
@@ -2366,13 +2612,22 @@
 
 .method public static parseFrom(Lcom/google/protobuf/CodedInputStream;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "input"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 4305
+    .line 4734
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;
 
     move-result-object v0
@@ -2392,13 +2647,24 @@
 
 .method public static parseFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "input",
+            "extensionRegistry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 4311
+    .line 4740
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;
 
     move-result-object v0
@@ -2407,7 +2673,7 @@
 
     move-result-object p0
 
-    .line 4312
+    .line 4741
     invoke-static {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;->-$$Nest$mbuildParsed(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
 
     move-result-object p0
@@ -2417,13 +2683,22 @@
 
 .method public static parseFrom(Ljava/io/InputStream;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "input"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 4273
+    .line 4702
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;
 
     move-result-object v0
@@ -2443,13 +2718,24 @@
 
 .method public static parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "input",
+            "extensionRegistry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 4279
+    .line 4708
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;
 
     move-result-object v0
@@ -2460,7 +2746,7 @@
 
     check-cast p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;
 
-    .line 4280
+    .line 4709
     invoke-static {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;->-$$Nest$mbuildParsed(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
 
     move-result-object p0
@@ -2470,13 +2756,22 @@
 
 .method public static parseFrom([B)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "data"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/protobuf/InvalidProtocolBufferException;
         }
     .end annotation
 
-    .line 4262
+    .line 4691
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;
 
     move-result-object v0
@@ -2496,13 +2791,24 @@
 
 .method public static parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "data",
+            "extensionRegistry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/protobuf/InvalidProtocolBufferException;
         }
     .end annotation
 
-    .line 4268
+    .line 4697
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;
 
     move-result-object v0
@@ -2513,7 +2819,7 @@
 
     check-cast p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;
 
-    .line 4269
+    .line 4698
     invoke-static {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;->-$$Nest$mbuildParsed(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
 
     move-result-object p0
@@ -2526,7 +2832,7 @@
 .method public getAccessibility()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Accessibility;
     .locals 0
 
-    .line 3097
+    .line 3421
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->accessibility_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Accessibility;
 
     return-object p0
@@ -2535,16 +2841,43 @@
 .method public getAfrShortcut()F
     .locals 0
 
-    .line 3580
+    .line 3904
     iget p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->afrShortcut_:F
 
     return p0
 .end method
 
+.method public getAiSuggestionCustomExtensionDataBokeh()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+    .locals 0
+
+    .line 3967
+    iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->aiSuggestionCustomExtensionDataBokeh_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    return-object p0
+.end method
+
+.method public getAiSuggestionCustomExtensionDataLens()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+    .locals 0
+
+    .line 3974
+    iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->aiSuggestionCustomExtensionDataLens_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    return-object p0
+.end method
+
+.method public getAiSuggestionDetection()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+    .locals 0
+
+    .line 3960
+    iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->aiSuggestionDetection_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    return-object p0
+.end method
+
 .method public getAspectRatio()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$AspectRatio;
     .locals 0
 
-    .line 3104
+    .line 3428
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->aspectRatio_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$AspectRatio;
 
     return-object p0
@@ -2553,7 +2886,7 @@
 .method public getAudioSignals()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$AudioSignals;
     .locals 0
 
-    .line 3111
+    .line 3435
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->audioSignals_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$AudioSignals;
 
     return-object p0
@@ -2562,7 +2895,7 @@
 .method public getAutoFrameRate()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
     .locals 0
 
-    .line 3118
+    .line 3442
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->autoFrameRate_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     return-object p0
@@ -2571,7 +2904,7 @@
 .method public getAutoNight()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$AutoOff;
     .locals 0
 
-    .line 3125
+    .line 3449
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->autoNight_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$AutoOff;
 
     return-object p0
@@ -2580,7 +2913,7 @@
 .method public getBokeh()Ljava/lang/String;
     .locals 0
 
-    .line 3132
+    .line 3456
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->bokeh_:Ljava/lang/String;
 
     return-object p0
@@ -2589,7 +2922,7 @@
 .method public getBtRemote()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
     .locals 0
 
-    .line 3139
+    .line 3463
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->btRemote_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     return-object p0
@@ -2598,7 +2931,7 @@
 .method public getCAndBBrightness()I
     .locals 0
 
-    .line 3146
+    .line 3470
     iget p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->cAndBBrightness_:I
 
     return p0
@@ -2607,7 +2940,7 @@
 .method public getCAndBColor()I
     .locals 0
 
-    .line 3153
+    .line 3477
     iget p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->cAndBColor_:I
 
     return p0
@@ -2616,7 +2949,7 @@
 .method public getCloseUpShooting()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$AutoOff;
     .locals 0
 
-    .line 3160
+    .line 3484
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->closeUpShooting_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$AutoOff;
 
     return-object p0
@@ -2625,7 +2958,7 @@
 .method public getComputationalPhoto()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$AutoOff;
     .locals 0
 
-    .line 3167
+    .line 3491
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->computationalPhoto_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$AutoOff;
 
     return-object p0
@@ -2634,7 +2967,7 @@
 .method public getConnectTo()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ConnectTo;
     .locals 0
 
-    .line 3174
+    .line 3498
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->connectTo_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ConnectTo;
 
     return-object p0
@@ -2643,7 +2976,7 @@
 .method public getContinuousFeedback()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
     .locals 0
 
-    .line 3181
+    .line 3505
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->continuousFeedback_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     return-object p0
@@ -2652,7 +2985,7 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/MessageLite;
     .locals 0
 
-    .line 989
+    .line 1266
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getDefaultInstanceForType()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
 
     move-result-object p0
@@ -2663,8 +2996,35 @@
 .method public getDefaultInstanceForType()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
     .locals 0
 
-    .line 1003
+    .line 1280
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->defaultInstance:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;
+
+    return-object p0
+.end method
+
+.method public getDigitalTripodFraming()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+    .locals 0
+
+    .line 3981
+    iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->digitalTripodFraming_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    return-object p0
+.end method
+
+.method public getDigitalTripodFramingIndicator()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+    .locals 0
+
+    .line 3988
+    iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->digitalTripodFramingIndicator_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    return-object p0
+.end method
+
+.method public getDigitalTripodFramingVibration()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+    .locals 0
+
+    .line 3995
+    iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->digitalTripodFramingVibration_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     return-object p0
 .end method
@@ -2672,7 +3032,7 @@
 .method public getDigitalZoom()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DigitalZoom;
     .locals 0
 
-    .line 3188
+    .line 3512
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->digitalZoom_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DigitalZoom;
 
     return-object p0
@@ -2681,7 +3041,7 @@
 .method public getDisp()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Disp;
     .locals 0
 
-    .line 3195
+    .line 3519
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->disp_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Disp;
 
     return-object p0
@@ -2690,7 +3050,7 @@
 .method public getDriveMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DriveMode;
     .locals 0
 
-    .line 3202
+    .line 3526
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->driveMode_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DriveMode;
 
     return-object p0
@@ -2699,7 +3059,7 @@
 .method public getDynamicRange()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DynamicRange;
     .locals 0
 
-    .line 3209
+    .line 3533
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->dynamicRange_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DynamicRange;
 
     return-object p0
@@ -2708,7 +3068,7 @@
 .method public getEnduranceMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
     .locals 0
 
-    .line 3216
+    .line 3540
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->enduranceMode_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     return-object p0
@@ -2717,7 +3077,7 @@
 .method public getEv()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Ev;
     .locals 0
 
-    .line 3223
+    .line 3547
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->ev_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Ev;
 
     return-object p0
@@ -2726,7 +3086,7 @@
 .method public getFaceEyeAf()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FaceEyeAf;
     .locals 0
 
-    .line 3230
+    .line 3554
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->faceEyeAf_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FaceEyeAf;
 
     return-object p0
@@ -2735,7 +3095,7 @@
 .method public getFileFormat()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FileFormat;
     .locals 0
 
-    .line 3237
+    .line 3561
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->fileFormat_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FileFormat;
 
     return-object p0
@@ -2744,7 +3104,7 @@
 .method public getFilter()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
     .locals 0
 
-    .line 3244
+    .line 3568
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->filter_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     return-object p0
@@ -2753,7 +3113,7 @@
 .method public getFlash()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Flash;
     .locals 0
 
-    .line 3251
+    .line 3575
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->flash_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Flash;
 
     return-object p0
@@ -2762,7 +3122,7 @@
 .method public getFocusArea()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusArea;
     .locals 0
 
-    .line 3258
+    .line 3582
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->focusArea_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusArea;
 
     return-object p0
@@ -2771,7 +3131,7 @@
 .method public getFocusAreaColor()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusAreaColor;
     .locals 0
 
-    .line 3265
+    .line 3589
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->focusAreaColor_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusAreaColor;
 
     return-object p0
@@ -2780,7 +3140,7 @@
 .method public getFocusMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusMode;
     .locals 0
 
-    .line 3272
+    .line 3596
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->focusMode_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusMode;
 
     return-object p0
@@ -2789,7 +3149,7 @@
 .method public getFocusUI()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
     .locals 0
 
-    .line 3279
+    .line 3603
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->focusUI_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     return-object p0
@@ -2798,7 +3158,7 @@
 .method public getFps()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Fps;
     .locals 0
 
-    .line 3286
+    .line 3610
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->fps_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Fps;
 
     return-object p0
@@ -2807,7 +3167,7 @@
 .method public getFramingAssist()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
     .locals 0
 
-    .line 3587
+    .line 3911
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->framingAssist_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     return-object p0
@@ -2816,7 +3176,7 @@
 .method public getFramingAssistMethod()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FramingAssistMethod;
     .locals 0
 
-    .line 3594
+    .line 3918
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->framingAssistMethod_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FramingAssistMethod;
 
     return-object p0
@@ -2825,7 +3185,7 @@
 .method public getGeoTag()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
     .locals 0
 
-    .line 3293
+    .line 3617
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->geoTag_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     return-object p0
@@ -2834,7 +3194,7 @@
 .method public getGridLine()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
     .locals 0
 
-    .line 3300
+    .line 3624
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->gridLine_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     return-object p0
@@ -2843,7 +3203,7 @@
 .method public getHandShutter()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
     .locals 0
 
-    .line 3307
+    .line 3631
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->handShutter_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     return-object p0
@@ -2852,7 +3212,7 @@
 .method public getHaptic()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
     .locals 0
 
-    .line 3314
+    .line 3638
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->haptic_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     return-object p0
@@ -2861,7 +3221,7 @@
 .method public getHdrDro()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HdrDro;
     .locals 0
 
-    .line 3321
+    .line 3645
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hdrDro_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HdrDro;
 
     return-object p0
@@ -2870,8 +3230,17 @@
 .method public getHdrSdr()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HdrSdr;
     .locals 0
 
-    .line 3328
+    .line 3652
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hdrSdr_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HdrSdr;
+
+    return-object p0
+.end method
+
+.method public getHwKeyFunctionType()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HwKeyFunctionType;
+    .locals 0
+
+    .line 3953
+    iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hwKeyFunctionType_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HwKeyFunctionType;
 
     return-object p0
 .end method
@@ -2879,7 +3248,7 @@
 .method public getIso()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
     .locals 0
 
-    .line 3335
+    .line 3659
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->iso_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     return-object p0
@@ -2888,7 +3257,7 @@
 .method public getLaunchWithCameraKey()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LaunchWithCameraKey;
     .locals 0
 
-    .line 3342
+    .line 3666
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->launchWithCameraKey_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LaunchWithCameraKey;
 
     return-object p0
@@ -2897,7 +3266,7 @@
 .method public getLens()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Lens;
     .locals 0
 
-    .line 3349
+    .line 3673
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->lens_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Lens;
 
     return-object p0
@@ -2906,7 +3275,7 @@
 .method public getLensCorrection()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LensCorrection;
     .locals 0
 
-    .line 3356
+    .line 3680
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->lensCorrection_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LensCorrection;
 
     return-object p0
@@ -2915,7 +3284,7 @@
 .method public getLevelCalibration()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LevelCalibration;
     .locals 0
 
-    .line 3363
+    .line 3687
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->levelCalibration_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LevelCalibration;
 
     return-object p0
@@ -2924,7 +3293,7 @@
 .method public getLevelMeter()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LevelMeter;
     .locals 0
 
-    .line 3601
+    .line 3925
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->levelMeter_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LevelMeter;
 
     return-object p0
@@ -2933,7 +3302,7 @@
 .method public getManualFocus()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ManualFocus;
     .locals 0
 
-    .line 3566
+    .line 3890
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->manualFocus_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ManualFocus;
 
     return-object p0
@@ -2942,7 +3311,7 @@
 .method public getMeteringMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$MeteringMode;
     .locals 0
 
-    .line 3370
+    .line 3694
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->meteringMode_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$MeteringMode;
 
     return-object p0
@@ -2951,7 +3320,7 @@
 .method public getMic()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Mic;
     .locals 0
 
-    .line 3377
+    .line 3701
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->mic_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Mic;
 
     return-object p0
@@ -2960,7 +3329,7 @@
 .method public getMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
     .locals 0
 
-    .line 3384
+    .line 3708
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->mode_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
     return-object p0
@@ -2969,7 +3338,7 @@
 .method public getNetworkUsage()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$NetworkUsage;
     .locals 0
 
-    .line 3391
+    .line 3715
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->networkUsage_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$NetworkUsage;
 
     return-object p0
@@ -2978,7 +3347,7 @@
 .method public getPeaking()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
     .locals 0
 
-    .line 3398
+    .line 3722
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->peaking_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     return-object p0
@@ -2987,7 +3356,7 @@
 .method public getPeakingColor()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$PeakingColor;
     .locals 0
 
-    .line 3405
+    .line 3729
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->peakingColor_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$PeakingColor;
 
     return-object p0
@@ -2996,7 +3365,7 @@
 .method public getPrivacyPolicy()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$PrivacyPolicy;
     .locals 0
 
-    .line 3412
+    .line 3736
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->privacyPolicy_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$PrivacyPolicy;
 
     return-object p0
@@ -3005,7 +3374,7 @@
 .method public getProductShowcase()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
     .locals 0
 
-    .line 3419
+    .line 3743
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->productShowcase_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     return-object p0
@@ -3014,7 +3383,7 @@
 .method public getReset()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Reset;
     .locals 0
 
-    .line 3426
+    .line 3750
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->reset_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Reset;
 
     return-object p0
@@ -3023,7 +3392,7 @@
 .method public getResolution()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Resolution;
     .locals 0
 
-    .line 3433
+    .line 3757
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->resolution_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Resolution;
 
     return-object p0
@@ -3032,7 +3401,7 @@
 .method public getSS()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ShutterSpeed;
     .locals 0
 
-    .line 3461
+    .line 3785
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->sS_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ShutterSpeed;
 
     return-object p0
@@ -3041,7 +3410,7 @@
 .method public getSSUI()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
     .locals 0
 
-    .line 3468
+    .line 3792
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->sSUI_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     return-object p0
@@ -3050,7 +3419,7 @@
 .method public getSaveFullScreenVideo()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
     .locals 0
 
-    .line 3608
+    .line 3932
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->saveFullScreenVideo_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     return-object p0
@@ -3059,7 +3428,7 @@
 .method public getSelfTimer()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$SelfTimer;
     .locals 0
 
-    .line 3440
+    .line 3764
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->selfTimer_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$SelfTimer;
 
     return-object p0
@@ -3068,7 +3437,7 @@
 .method public getSerializedSize()I
     .locals 3
 
-    .line 3936
+    .line 4337
     iget v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->memoizedSerializedSize:I
 
     const/4 v1, -0x1
@@ -3077,7 +3446,7 @@
 
     return v0
 
-    .line 3940
+    .line 4341
     :cond_0
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAccessibility()Z
 
@@ -3085,7 +3454,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 3942
+    .line 4343
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getAccessibility()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Accessibility;
 
     move-result-object v0
@@ -3105,7 +3474,7 @@
     :cond_1
     const/4 v0, 0x0
 
-    .line 3944
+    .line 4345
     :goto_0
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAspectRatio()Z
 
@@ -3113,7 +3482,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 3946
+    .line 4347
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getAspectRatio()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$AspectRatio;
 
     move-result-object v1
@@ -3130,7 +3499,7 @@
 
     add-int/2addr v0, v1
 
-    .line 3948
+    .line 4349
     :cond_2
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAudioSignals()Z
 
@@ -3138,7 +3507,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 3950
+    .line 4351
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getAudioSignals()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$AudioSignals;
 
     move-result-object v1
@@ -3155,7 +3524,7 @@
 
     add-int/2addr v0, v1
 
-    .line 3952
+    .line 4353
     :cond_3
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAutoFrameRate()Z
 
@@ -3163,7 +3532,7 @@
 
     if-eqz v1, :cond_4
 
-    .line 3954
+    .line 4355
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getAutoFrameRate()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v1
@@ -3180,7 +3549,7 @@
 
     add-int/2addr v0, v1
 
-    .line 3956
+    .line 4357
     :cond_4
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAutoNight()Z
 
@@ -3188,7 +3557,7 @@
 
     if-eqz v1, :cond_5
 
-    .line 3958
+    .line 4359
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getAutoNight()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$AutoOff;
 
     move-result-object v1
@@ -3205,7 +3574,7 @@
 
     add-int/2addr v0, v1
 
-    .line 3960
+    .line 4361
     :cond_5
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasBokeh()Z
 
@@ -3215,7 +3584,7 @@
 
     const/4 v1, 0x6
 
-    .line 3962
+    .line 4363
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getBokeh()Ljava/lang/String;
 
     move-result-object v2
@@ -3226,7 +3595,7 @@
 
     add-int/2addr v0, v1
 
-    .line 3964
+    .line 4365
     :cond_6
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasBtRemote()Z
 
@@ -3234,7 +3603,7 @@
 
     if-eqz v1, :cond_7
 
-    .line 3966
+    .line 4367
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getBtRemote()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v1
@@ -3251,7 +3620,7 @@
 
     add-int/2addr v0, v1
 
-    .line 3968
+    .line 4369
     :cond_7
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasCAndBBrightness()Z
 
@@ -3261,7 +3630,7 @@
 
     const/16 v1, 0x8
 
-    .line 3970
+    .line 4371
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getCAndBBrightness()I
 
     move-result v2
@@ -3272,7 +3641,7 @@
 
     add-int/2addr v0, v1
 
-    .line 3972
+    .line 4373
     :cond_8
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasCAndBColor()Z
 
@@ -3282,7 +3651,7 @@
 
     const/16 v1, 0x9
 
-    .line 3974
+    .line 4375
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getCAndBColor()I
 
     move-result v2
@@ -3293,7 +3662,7 @@
 
     add-int/2addr v0, v1
 
-    .line 3976
+    .line 4377
     :cond_9
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasCloseUpShooting()Z
 
@@ -3301,7 +3670,7 @@
 
     if-eqz v1, :cond_a
 
-    .line 3978
+    .line 4379
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getCloseUpShooting()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$AutoOff;
 
     move-result-object v1
@@ -3318,7 +3687,7 @@
 
     add-int/2addr v0, v1
 
-    .line 3980
+    .line 4381
     :cond_a
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasComputationalPhoto()Z
 
@@ -3326,7 +3695,7 @@
 
     if-eqz v1, :cond_b
 
-    .line 3982
+    .line 4383
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getComputationalPhoto()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$AutoOff;
 
     move-result-object v1
@@ -3343,7 +3712,7 @@
 
     add-int/2addr v0, v1
 
-    .line 3984
+    .line 4385
     :cond_b
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasConnectTo()Z
 
@@ -3351,7 +3720,7 @@
 
     if-eqz v1, :cond_c
 
-    .line 3986
+    .line 4387
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getConnectTo()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ConnectTo;
 
     move-result-object v1
@@ -3368,7 +3737,7 @@
 
     add-int/2addr v0, v1
 
-    .line 3988
+    .line 4389
     :cond_c
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasContinuousFeedback()Z
 
@@ -3376,7 +3745,7 @@
 
     if-eqz v1, :cond_d
 
-    .line 3990
+    .line 4391
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getContinuousFeedback()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v1
@@ -3393,7 +3762,7 @@
 
     add-int/2addr v0, v1
 
-    .line 3992
+    .line 4393
     :cond_d
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasDigitalZoom()Z
 
@@ -3401,7 +3770,7 @@
 
     if-eqz v1, :cond_e
 
-    .line 3994
+    .line 4395
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getDigitalZoom()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DigitalZoom;
 
     move-result-object v1
@@ -3418,7 +3787,7 @@
 
     add-int/2addr v0, v1
 
-    .line 3996
+    .line 4397
     :cond_e
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasDisp()Z
 
@@ -3426,7 +3795,7 @@
 
     if-eqz v1, :cond_f
 
-    .line 3998
+    .line 4399
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getDisp()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Disp;
 
     move-result-object v1
@@ -3443,7 +3812,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4000
+    .line 4401
     :cond_f
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasDriveMode()Z
 
@@ -3451,7 +3820,7 @@
 
     if-eqz v1, :cond_10
 
-    .line 4002
+    .line 4403
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getDriveMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DriveMode;
 
     move-result-object v1
@@ -3468,7 +3837,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4004
+    .line 4405
     :cond_10
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasDynamicRange()Z
 
@@ -3476,7 +3845,7 @@
 
     if-eqz v1, :cond_11
 
-    .line 4006
+    .line 4407
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getDynamicRange()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DynamicRange;
 
     move-result-object v1
@@ -3493,7 +3862,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4008
+    .line 4409
     :cond_11
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasEnduranceMode()Z
 
@@ -3501,7 +3870,7 @@
 
     if-eqz v1, :cond_12
 
-    .line 4010
+    .line 4411
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getEnduranceMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v1
@@ -3518,7 +3887,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4012
+    .line 4413
     :cond_12
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasEv()Z
 
@@ -3526,7 +3895,7 @@
 
     if-eqz v1, :cond_13
 
-    .line 4014
+    .line 4415
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getEv()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Ev;
 
     move-result-object v1
@@ -3543,7 +3912,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4016
+    .line 4417
     :cond_13
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFaceEyeAf()Z
 
@@ -3551,7 +3920,7 @@
 
     if-eqz v1, :cond_14
 
-    .line 4018
+    .line 4419
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getFaceEyeAf()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FaceEyeAf;
 
     move-result-object v1
@@ -3568,7 +3937,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4020
+    .line 4421
     :cond_14
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFileFormat()Z
 
@@ -3576,7 +3945,7 @@
 
     if-eqz v1, :cond_15
 
-    .line 4022
+    .line 4423
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getFileFormat()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FileFormat;
 
     move-result-object v1
@@ -3593,7 +3962,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4024
+    .line 4425
     :cond_15
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFilter()Z
 
@@ -3601,7 +3970,7 @@
 
     if-eqz v1, :cond_16
 
-    .line 4026
+    .line 4427
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getFilter()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     move-result-object v1
@@ -3618,7 +3987,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4028
+    .line 4429
     :cond_16
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFlash()Z
 
@@ -3626,7 +3995,7 @@
 
     if-eqz v1, :cond_17
 
-    .line 4030
+    .line 4431
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getFlash()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Flash;
 
     move-result-object v1
@@ -3643,7 +4012,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4032
+    .line 4433
     :cond_17
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFocusArea()Z
 
@@ -3651,7 +4020,7 @@
 
     if-eqz v1, :cond_18
 
-    .line 4034
+    .line 4435
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getFocusArea()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusArea;
 
     move-result-object v1
@@ -3668,7 +4037,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4036
+    .line 4437
     :cond_18
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFocusAreaColor()Z
 
@@ -3676,7 +4045,7 @@
 
     if-eqz v1, :cond_19
 
-    .line 4038
+    .line 4439
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getFocusAreaColor()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusAreaColor;
 
     move-result-object v1
@@ -3693,7 +4062,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4040
+    .line 4441
     :cond_19
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFocusMode()Z
 
@@ -3701,7 +4070,7 @@
 
     if-eqz v1, :cond_1a
 
-    .line 4042
+    .line 4443
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getFocusMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusMode;
 
     move-result-object v1
@@ -3718,7 +4087,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4044
+    .line 4445
     :cond_1a
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFocusUI()Z
 
@@ -3726,7 +4095,7 @@
 
     if-eqz v1, :cond_1b
 
-    .line 4046
+    .line 4447
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getFocusUI()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v1
@@ -3743,7 +4112,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4048
+    .line 4449
     :cond_1b
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFps()Z
 
@@ -3751,7 +4120,7 @@
 
     if-eqz v1, :cond_1c
 
-    .line 4050
+    .line 4451
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getFps()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Fps;
 
     move-result-object v1
@@ -3768,7 +4137,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4052
+    .line 4453
     :cond_1c
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasGeoTag()Z
 
@@ -3776,7 +4145,7 @@
 
     if-eqz v1, :cond_1d
 
-    .line 4054
+    .line 4455
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getGeoTag()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v1
@@ -3793,7 +4162,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4056
+    .line 4457
     :cond_1d
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasGridLine()Z
 
@@ -3801,7 +4170,7 @@
 
     if-eqz v1, :cond_1e
 
-    .line 4058
+    .line 4459
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getGridLine()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v1
@@ -3818,7 +4187,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4060
+    .line 4461
     :cond_1e
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasHandShutter()Z
 
@@ -3826,7 +4195,7 @@
 
     if-eqz v1, :cond_1f
 
-    .line 4062
+    .line 4463
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getHandShutter()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v1
@@ -3843,7 +4212,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4064
+    .line 4465
     :cond_1f
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasHaptic()Z
 
@@ -3851,7 +4220,7 @@
 
     if-eqz v1, :cond_20
 
-    .line 4066
+    .line 4467
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getHaptic()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v1
@@ -3868,7 +4237,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4068
+    .line 4469
     :cond_20
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasHdrDro()Z
 
@@ -3876,7 +4245,7 @@
 
     if-eqz v1, :cond_21
 
-    .line 4070
+    .line 4471
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getHdrDro()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HdrDro;
 
     move-result-object v1
@@ -3893,7 +4262,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4072
+    .line 4473
     :cond_21
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasHdrSdr()Z
 
@@ -3901,7 +4270,7 @@
 
     if-eqz v1, :cond_22
 
-    .line 4074
+    .line 4475
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getHdrSdr()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HdrSdr;
 
     move-result-object v1
@@ -3918,7 +4287,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4076
+    .line 4477
     :cond_22
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasIso()Z
 
@@ -3926,7 +4295,7 @@
 
     if-eqz v1, :cond_23
 
-    .line 4078
+    .line 4479
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getIso()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     move-result-object v1
@@ -3943,7 +4312,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4080
+    .line 4481
     :cond_23
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasLaunchWithCameraKey()Z
 
@@ -3951,7 +4320,7 @@
 
     if-eqz v1, :cond_24
 
-    .line 4082
+    .line 4483
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getLaunchWithCameraKey()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LaunchWithCameraKey;
 
     move-result-object v1
@@ -3968,7 +4337,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4084
+    .line 4485
     :cond_24
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasLens()Z
 
@@ -3976,7 +4345,7 @@
 
     if-eqz v1, :cond_25
 
-    .line 4086
+    .line 4487
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getLens()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Lens;
 
     move-result-object v1
@@ -3993,7 +4362,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4088
+    .line 4489
     :cond_25
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasLensCorrection()Z
 
@@ -4001,7 +4370,7 @@
 
     if-eqz v1, :cond_26
 
-    .line 4090
+    .line 4491
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getLensCorrection()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LensCorrection;
 
     move-result-object v1
@@ -4018,7 +4387,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4092
+    .line 4493
     :cond_26
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasLevelCalibration()Z
 
@@ -4026,7 +4395,7 @@
 
     if-eqz v1, :cond_27
 
-    .line 4094
+    .line 4495
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getLevelCalibration()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LevelCalibration;
 
     move-result-object v1
@@ -4043,7 +4412,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4096
+    .line 4497
     :cond_27
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasMeteringMode()Z
 
@@ -4051,7 +4420,7 @@
 
     if-eqz v1, :cond_28
 
-    .line 4098
+    .line 4499
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getMeteringMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$MeteringMode;
 
     move-result-object v1
@@ -4068,7 +4437,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4100
+    .line 4501
     :cond_28
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasMic()Z
 
@@ -4076,7 +4445,7 @@
 
     if-eqz v1, :cond_29
 
-    .line 4102
+    .line 4503
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getMic()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Mic;
 
     move-result-object v1
@@ -4093,7 +4462,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4104
+    .line 4505
     :cond_29
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasMode()Z
 
@@ -4101,7 +4470,7 @@
 
     if-eqz v1, :cond_2a
 
-    .line 4106
+    .line 4507
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
     move-result-object v1
@@ -4118,7 +4487,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4108
+    .line 4509
     :cond_2a
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasNetworkUsage()Z
 
@@ -4126,7 +4495,7 @@
 
     if-eqz v1, :cond_2b
 
-    .line 4110
+    .line 4511
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getNetworkUsage()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$NetworkUsage;
 
     move-result-object v1
@@ -4143,7 +4512,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4112
+    .line 4513
     :cond_2b
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasPeaking()Z
 
@@ -4151,7 +4520,7 @@
 
     if-eqz v1, :cond_2c
 
-    .line 4114
+    .line 4515
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getPeaking()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v1
@@ -4168,7 +4537,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4116
+    .line 4517
     :cond_2c
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasPeakingColor()Z
 
@@ -4176,7 +4545,7 @@
 
     if-eqz v1, :cond_2d
 
-    .line 4118
+    .line 4519
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getPeakingColor()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$PeakingColor;
 
     move-result-object v1
@@ -4193,7 +4562,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4120
+    .line 4521
     :cond_2d
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasPrivacyPolicy()Z
 
@@ -4201,7 +4570,7 @@
 
     if-eqz v1, :cond_2e
 
-    .line 4122
+    .line 4523
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getPrivacyPolicy()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$PrivacyPolicy;
 
     move-result-object v1
@@ -4218,7 +4587,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4124
+    .line 4525
     :cond_2e
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasProductShowcase()Z
 
@@ -4226,7 +4595,7 @@
 
     if-eqz v1, :cond_2f
 
-    .line 4126
+    .line 4527
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getProductShowcase()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v1
@@ -4243,7 +4612,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4128
+    .line 4529
     :cond_2f
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasReset()Z
 
@@ -4251,7 +4620,7 @@
 
     if-eqz v1, :cond_30
 
-    .line 4130
+    .line 4531
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getReset()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Reset;
 
     move-result-object v1
@@ -4268,7 +4637,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4132
+    .line 4533
     :cond_30
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasResolution()Z
 
@@ -4276,7 +4645,7 @@
 
     if-eqz v1, :cond_31
 
-    .line 4134
+    .line 4535
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getResolution()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Resolution;
 
     move-result-object v1
@@ -4293,7 +4662,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4136
+    .line 4537
     :cond_31
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasSelfTimer()Z
 
@@ -4301,7 +4670,7 @@
 
     if-eqz v1, :cond_32
 
-    .line 4138
+    .line 4539
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getSelfTimer()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$SelfTimer;
 
     move-result-object v1
@@ -4318,7 +4687,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4140
+    .line 4541
     :cond_32
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasSharpenFaces()Z
 
@@ -4326,7 +4695,7 @@
 
     if-eqz v1, :cond_33
 
-    .line 4142
+    .line 4543
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getSharpenFaces()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v1
@@ -4343,7 +4712,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4144
+    .line 4545
     :cond_33
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasSoftSkin()Z
 
@@ -4351,7 +4720,7 @@
 
     if-eqz v1, :cond_34
 
-    .line 4146
+    .line 4547
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getSoftSkin()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v1
@@ -4368,7 +4737,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4148
+    .line 4549
     :cond_34
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasSS()Z
 
@@ -4376,7 +4745,7 @@
 
     if-eqz v1, :cond_35
 
-    .line 4150
+    .line 4551
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getSS()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ShutterSpeed;
 
     move-result-object v1
@@ -4393,7 +4762,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4152
+    .line 4553
     :cond_35
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasSSUI()Z
 
@@ -4401,7 +4770,7 @@
 
     if-eqz v1, :cond_36
 
-    .line 4154
+    .line 4555
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getSSUI()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v1
@@ -4418,7 +4787,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4156
+    .line 4557
     :cond_36
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasStabilization()Z
 
@@ -4426,7 +4795,7 @@
 
     if-eqz v1, :cond_37
 
-    .line 4158
+    .line 4559
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getStabilization()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Stabilization;
 
     move-result-object v1
@@ -4443,7 +4812,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4160
+    .line 4561
     :cond_37
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasStorage()Z
 
@@ -4451,7 +4820,7 @@
 
     if-eqz v1, :cond_38
 
-    .line 4162
+    .line 4563
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getStorage()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Storage;
 
     move-result-object v1
@@ -4468,7 +4837,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4164
+    .line 4565
     :cond_38
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasStreamMute()Z
 
@@ -4476,7 +4845,7 @@
 
     if-eqz v1, :cond_39
 
-    .line 4166
+    .line 4567
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getStreamMute()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$StreamMute;
 
     move-result-object v1
@@ -4493,7 +4862,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4168
+    .line 4569
     :cond_39
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasStreamVideoQuality()Z
 
@@ -4501,7 +4870,7 @@
 
     if-eqz v1, :cond_3a
 
-    .line 4170
+    .line 4571
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getStreamVideoQuality()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$StreamVideoQuality;
 
     move-result-object v1
@@ -4518,7 +4887,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4172
+    .line 4573
     :cond_3a
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasSwLicense()Z
 
@@ -4526,7 +4895,7 @@
 
     if-eqz v1, :cond_3b
 
-    .line 4174
+    .line 4575
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getSwLicense()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$SwLicense;
 
     move-result-object v1
@@ -4543,7 +4912,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4176
+    .line 4577
     :cond_3b
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasTips()Z
 
@@ -4551,7 +4920,7 @@
 
     if-eqz v1, :cond_3c
 
-    .line 4178
+    .line 4579
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getTips()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Tips;
 
     move-result-object v1
@@ -4568,7 +4937,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4180
+    .line 4581
     :cond_3c
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasTouchToAdjust()Z
 
@@ -4576,7 +4945,7 @@
 
     if-eqz v1, :cond_3d
 
-    .line 4182
+    .line 4583
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getTouchToAdjust()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$TouchToAdjust;
 
     move-result-object v1
@@ -4593,7 +4962,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4184
+    .line 4585
     :cond_3d
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasTouchTracking()Z
 
@@ -4601,7 +4970,7 @@
 
     if-eqz v1, :cond_3e
 
-    .line 4186
+    .line 4587
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getTouchTracking()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v1
@@ -4618,7 +4987,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4188
+    .line 4589
     :cond_3e
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasVideoBacklightCollection()Z
 
@@ -4626,7 +4995,7 @@
 
     if-eqz v1, :cond_3f
 
-    .line 4190
+    .line 4591
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getVideoBacklightCollection()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v1
@@ -4643,7 +5012,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4192
+    .line 4593
     :cond_3f
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasVideoLight()Z
 
@@ -4651,7 +5020,7 @@
 
     if-eqz v1, :cond_40
 
-    .line 4194
+    .line 4595
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getVideoLight()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v1
@@ -4668,7 +5037,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4196
+    .line 4597
     :cond_40
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasVolumeKeyAs()Z
 
@@ -4676,7 +5045,7 @@
 
     if-eqz v1, :cond_41
 
-    .line 4198
+    .line 4599
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getVolumeKeyAs()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$VolumeKeyAs;
 
     move-result-object v1
@@ -4693,7 +5062,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4200
+    .line 4601
     :cond_41
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasWb()Z
 
@@ -4701,7 +5070,7 @@
 
     if-eqz v1, :cond_42
 
-    .line 4202
+    .line 4603
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getWb()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     move-result-object v1
@@ -4718,7 +5087,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4204
+    .line 4605
     :cond_42
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasWindFilter()Z
 
@@ -4726,7 +5095,7 @@
 
     if-eqz v1, :cond_43
 
-    .line 4206
+    .line 4607
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getWindFilter()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v1
@@ -4743,7 +5112,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4208
+    .line 4609
     :cond_43
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasManualFocus()Z
 
@@ -4751,7 +5120,7 @@
 
     if-eqz v1, :cond_44
 
-    .line 4210
+    .line 4611
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getManualFocus()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ManualFocus;
 
     move-result-object v1
@@ -4768,7 +5137,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4212
+    .line 4613
     :cond_44
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasZoom()Z
 
@@ -4778,7 +5147,7 @@
 
     const/16 v1, 0x45
 
-    .line 4214
+    .line 4615
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getZoom()Ljava/lang/String;
 
     move-result-object v2
@@ -4789,7 +5158,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4216
+    .line 4617
     :cond_45
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAfrShortcut()Z
 
@@ -4799,7 +5168,7 @@
 
     const/16 v1, 0x46
 
-    .line 4218
+    .line 4619
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getAfrShortcut()F
 
     move-result v2
@@ -4810,7 +5179,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4220
+    .line 4621
     :cond_46
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFramingAssist()Z
 
@@ -4818,7 +5187,7 @@
 
     if-eqz v1, :cond_47
 
-    .line 4222
+    .line 4623
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getFramingAssist()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v1
@@ -4835,7 +5204,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4224
+    .line 4625
     :cond_47
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFramingAssistMethod()Z
 
@@ -4843,7 +5212,7 @@
 
     if-eqz v1, :cond_48
 
-    .line 4226
+    .line 4627
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getFramingAssistMethod()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FramingAssistMethod;
 
     move-result-object v1
@@ -4860,7 +5229,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4228
+    .line 4629
     :cond_48
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasLevelMeter()Z
 
@@ -4868,7 +5237,7 @@
 
     if-eqz v1, :cond_49
 
-    .line 4230
+    .line 4631
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getLevelMeter()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LevelMeter;
 
     move-result-object v1
@@ -4885,7 +5254,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4232
+    .line 4633
     :cond_49
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasSaveFullScreenVideo()Z
 
@@ -4893,7 +5262,7 @@
 
     if-eqz v1, :cond_4a
 
-    .line 4234
+    .line 4635
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getSaveFullScreenVideo()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v1
@@ -4910,7 +5279,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4236
+    .line 4637
     :cond_4a
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasUltraHdr()Z
 
@@ -4918,7 +5287,7 @@
 
     if-eqz v1, :cond_4b
 
-    .line 4238
+    .line 4639
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getUltraHdr()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v1
@@ -4935,7 +5304,7 @@
 
     add-int/2addr v0, v1
 
-    .line 4240
+    .line 4641
     :cond_4b
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasVolumeDistortionCorrection()Z
 
@@ -4943,7 +5312,7 @@
 
     if-eqz v1, :cond_4c
 
-    .line 4242
+    .line 4643
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getVolumeDistortionCorrection()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$VolumeDistortionCorrection;
 
     move-result-object v1
@@ -4960,8 +5329,183 @@
 
     add-int/2addr v0, v1
 
-    .line 4244
+    .line 4645
     :cond_4c
+    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasHwKeyFunctionType()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_4d
+
+    .line 4647
+    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getHwKeyFunctionType()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HwKeyFunctionType;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HwKeyFunctionType;->getNumber()I
+
+    move-result v1
+
+    const/16 v2, 0x4d
+
+    invoke-static {v2, v1}, Lcom/google/protobuf/CodedOutputStream;->computeEnumSize(II)I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    .line 4649
+    :cond_4d
+    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAiSuggestionDetection()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_4e
+
+    .line 4651
+    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getAiSuggestionDetection()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->getNumber()I
+
+    move-result v1
+
+    const/16 v2, 0x4e
+
+    invoke-static {v2, v1}, Lcom/google/protobuf/CodedOutputStream;->computeEnumSize(II)I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    .line 4653
+    :cond_4e
+    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAiSuggestionCustomExtensionDataBokeh()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_4f
+
+    .line 4655
+    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getAiSuggestionCustomExtensionDataBokeh()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->getNumber()I
+
+    move-result v1
+
+    const/16 v2, 0x4f
+
+    invoke-static {v2, v1}, Lcom/google/protobuf/CodedOutputStream;->computeEnumSize(II)I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    .line 4657
+    :cond_4f
+    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAiSuggestionCustomExtensionDataLens()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_50
+
+    .line 4659
+    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getAiSuggestionCustomExtensionDataLens()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->getNumber()I
+
+    move-result v1
+
+    const/16 v2, 0x50
+
+    invoke-static {v2, v1}, Lcom/google/protobuf/CodedOutputStream;->computeEnumSize(II)I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    .line 4661
+    :cond_50
+    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasDigitalTripodFraming()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_51
+
+    .line 4663
+    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getDigitalTripodFraming()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->getNumber()I
+
+    move-result v1
+
+    const/16 v2, 0x51
+
+    invoke-static {v2, v1}, Lcom/google/protobuf/CodedOutputStream;->computeEnumSize(II)I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    .line 4665
+    :cond_51
+    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasDigitalTripodFramingIndicator()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_52
+
+    .line 4667
+    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getDigitalTripodFramingIndicator()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->getNumber()I
+
+    move-result v1
+
+    const/16 v2, 0x52
+
+    invoke-static {v2, v1}, Lcom/google/protobuf/CodedOutputStream;->computeEnumSize(II)I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    .line 4669
+    :cond_52
+    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasDigitalTripodFramingVibration()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_53
+
+    .line 4671
+    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getDigitalTripodFramingVibration()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->getNumber()I
+
+    move-result v1
+
+    const/16 v2, 0x53
+
+    invoke-static {v2, v1}, Lcom/google/protobuf/CodedOutputStream;->computeEnumSize(II)I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    .line 4673
+    :cond_53
     iput v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->memoizedSerializedSize:I
 
     return v0
@@ -4970,7 +5514,7 @@
 .method public getSharpenFaces()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
     .locals 0
 
-    .line 3447
+    .line 3771
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->sharpenFaces_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     return-object p0
@@ -4979,7 +5523,7 @@
 .method public getSoftSkin()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
     .locals 0
 
-    .line 3454
+    .line 3778
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->softSkin_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     return-object p0
@@ -4988,7 +5532,7 @@
 .method public getStabilization()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Stabilization;
     .locals 0
 
-    .line 3475
+    .line 3799
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->stabilization_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Stabilization;
 
     return-object p0
@@ -4997,7 +5541,7 @@
 .method public getStorage()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Storage;
     .locals 0
 
-    .line 3482
+    .line 3806
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->storage_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Storage;
 
     return-object p0
@@ -5006,7 +5550,7 @@
 .method public getStreamMute()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$StreamMute;
     .locals 0
 
-    .line 3489
+    .line 3813
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->streamMute_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$StreamMute;
 
     return-object p0
@@ -5015,7 +5559,7 @@
 .method public getStreamVideoQuality()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$StreamVideoQuality;
     .locals 0
 
-    .line 3496
+    .line 3820
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->streamVideoQuality_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$StreamVideoQuality;
 
     return-object p0
@@ -5024,7 +5568,7 @@
 .method public getSwLicense()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$SwLicense;
     .locals 0
 
-    .line 3503
+    .line 3827
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->swLicense_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$SwLicense;
 
     return-object p0
@@ -5033,7 +5577,7 @@
 .method public getTips()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Tips;
     .locals 0
 
-    .line 3510
+    .line 3834
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->tips_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Tips;
 
     return-object p0
@@ -5042,7 +5586,7 @@
 .method public getTouchToAdjust()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$TouchToAdjust;
     .locals 0
 
-    .line 3517
+    .line 3841
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->touchToAdjust_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$TouchToAdjust;
 
     return-object p0
@@ -5051,7 +5595,7 @@
 .method public getTouchTracking()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
     .locals 0
 
-    .line 3524
+    .line 3848
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->touchTracking_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     return-object p0
@@ -5060,7 +5604,7 @@
 .method public getUltraHdr()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
     .locals 0
 
-    .line 3615
+    .line 3939
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->ultraHdr_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     return-object p0
@@ -5069,7 +5613,7 @@
 .method public getVideoBacklightCollection()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
     .locals 0
 
-    .line 3531
+    .line 3855
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->videoBacklightCollection_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     return-object p0
@@ -5078,7 +5622,7 @@
 .method public getVideoLight()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
     .locals 0
 
-    .line 3538
+    .line 3862
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->videoLight_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     return-object p0
@@ -5087,7 +5631,7 @@
 .method public getVolumeDistortionCorrection()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$VolumeDistortionCorrection;
     .locals 0
 
-    .line 3622
+    .line 3946
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->volumeDistortionCorrection_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$VolumeDistortionCorrection;
 
     return-object p0
@@ -5096,7 +5640,7 @@
 .method public getVolumeKeyAs()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$VolumeKeyAs;
     .locals 0
 
-    .line 3545
+    .line 3869
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->volumeKeyAs_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$VolumeKeyAs;
 
     return-object p0
@@ -5105,7 +5649,7 @@
 .method public getWb()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
     .locals 0
 
-    .line 3552
+    .line 3876
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->wb_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     return-object p0
@@ -5114,7 +5658,7 @@
 .method public getWindFilter()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
     .locals 0
 
-    .line 3559
+    .line 3883
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->windFilter_:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     return-object p0
@@ -5123,7 +5667,7 @@
 .method public getZoom()Ljava/lang/String;
     .locals 0
 
-    .line 3573
+    .line 3897
     iget-object p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->zoom_:Ljava/lang/String;
 
     return-object p0
@@ -5132,7 +5676,7 @@
 .method public hasAccessibility()Z
     .locals 0
 
-    .line 3096
+    .line 3420
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAccessibility:Z
 
     return p0
@@ -5141,8 +5685,35 @@
 .method public hasAfrShortcut()Z
     .locals 0
 
-    .line 3579
+    .line 3903
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAfrShortcut:Z
+
+    return p0
+.end method
+
+.method public hasAiSuggestionCustomExtensionDataBokeh()Z
+    .locals 0
+
+    .line 3966
+    iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAiSuggestionCustomExtensionDataBokeh:Z
+
+    return p0
+.end method
+
+.method public hasAiSuggestionCustomExtensionDataLens()Z
+    .locals 0
+
+    .line 3973
+    iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAiSuggestionCustomExtensionDataLens:Z
+
+    return p0
+.end method
+
+.method public hasAiSuggestionDetection()Z
+    .locals 0
+
+    .line 3959
+    iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAiSuggestionDetection:Z
 
     return p0
 .end method
@@ -5150,7 +5721,7 @@
 .method public hasAspectRatio()Z
     .locals 0
 
-    .line 3103
+    .line 3427
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAspectRatio:Z
 
     return p0
@@ -5159,7 +5730,7 @@
 .method public hasAudioSignals()Z
     .locals 0
 
-    .line 3110
+    .line 3434
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAudioSignals:Z
 
     return p0
@@ -5168,7 +5739,7 @@
 .method public hasAutoFrameRate()Z
     .locals 0
 
-    .line 3117
+    .line 3441
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAutoFrameRate:Z
 
     return p0
@@ -5177,7 +5748,7 @@
 .method public hasAutoNight()Z
     .locals 0
 
-    .line 3124
+    .line 3448
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAutoNight:Z
 
     return p0
@@ -5186,7 +5757,7 @@
 .method public hasBokeh()Z
     .locals 0
 
-    .line 3131
+    .line 3455
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasBokeh:Z
 
     return p0
@@ -5195,7 +5766,7 @@
 .method public hasBtRemote()Z
     .locals 0
 
-    .line 3138
+    .line 3462
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasBtRemote:Z
 
     return p0
@@ -5204,7 +5775,7 @@
 .method public hasCAndBBrightness()Z
     .locals 0
 
-    .line 3145
+    .line 3469
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasCAndBBrightness:Z
 
     return p0
@@ -5213,7 +5784,7 @@
 .method public hasCAndBColor()Z
     .locals 0
 
-    .line 3152
+    .line 3476
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasCAndBColor:Z
 
     return p0
@@ -5222,7 +5793,7 @@
 .method public hasCloseUpShooting()Z
     .locals 0
 
-    .line 3159
+    .line 3483
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasCloseUpShooting:Z
 
     return p0
@@ -5231,7 +5802,7 @@
 .method public hasComputationalPhoto()Z
     .locals 0
 
-    .line 3166
+    .line 3490
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasComputationalPhoto:Z
 
     return p0
@@ -5240,7 +5811,7 @@
 .method public hasConnectTo()Z
     .locals 0
 
-    .line 3173
+    .line 3497
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasConnectTo:Z
 
     return p0
@@ -5249,8 +5820,35 @@
 .method public hasContinuousFeedback()Z
     .locals 0
 
-    .line 3180
+    .line 3504
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasContinuousFeedback:Z
+
+    return p0
+.end method
+
+.method public hasDigitalTripodFraming()Z
+    .locals 0
+
+    .line 3980
+    iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasDigitalTripodFraming:Z
+
+    return p0
+.end method
+
+.method public hasDigitalTripodFramingIndicator()Z
+    .locals 0
+
+    .line 3987
+    iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasDigitalTripodFramingIndicator:Z
+
+    return p0
+.end method
+
+.method public hasDigitalTripodFramingVibration()Z
+    .locals 0
+
+    .line 3994
+    iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasDigitalTripodFramingVibration:Z
 
     return p0
 .end method
@@ -5258,7 +5856,7 @@
 .method public hasDigitalZoom()Z
     .locals 0
 
-    .line 3187
+    .line 3511
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasDigitalZoom:Z
 
     return p0
@@ -5267,7 +5865,7 @@
 .method public hasDisp()Z
     .locals 0
 
-    .line 3194
+    .line 3518
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasDisp:Z
 
     return p0
@@ -5276,7 +5874,7 @@
 .method public hasDriveMode()Z
     .locals 0
 
-    .line 3201
+    .line 3525
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasDriveMode:Z
 
     return p0
@@ -5285,7 +5883,7 @@
 .method public hasDynamicRange()Z
     .locals 0
 
-    .line 3208
+    .line 3532
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasDynamicRange:Z
 
     return p0
@@ -5294,7 +5892,7 @@
 .method public hasEnduranceMode()Z
     .locals 0
 
-    .line 3215
+    .line 3539
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasEnduranceMode:Z
 
     return p0
@@ -5303,7 +5901,7 @@
 .method public hasEv()Z
     .locals 0
 
-    .line 3222
+    .line 3546
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasEv:Z
 
     return p0
@@ -5312,7 +5910,7 @@
 .method public hasFaceEyeAf()Z
     .locals 0
 
-    .line 3229
+    .line 3553
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFaceEyeAf:Z
 
     return p0
@@ -5321,7 +5919,7 @@
 .method public hasFileFormat()Z
     .locals 0
 
-    .line 3236
+    .line 3560
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFileFormat:Z
 
     return p0
@@ -5330,7 +5928,7 @@
 .method public hasFilter()Z
     .locals 0
 
-    .line 3243
+    .line 3567
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFilter:Z
 
     return p0
@@ -5339,7 +5937,7 @@
 .method public hasFlash()Z
     .locals 0
 
-    .line 3250
+    .line 3574
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFlash:Z
 
     return p0
@@ -5348,7 +5946,7 @@
 .method public hasFocusArea()Z
     .locals 0
 
-    .line 3257
+    .line 3581
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFocusArea:Z
 
     return p0
@@ -5357,7 +5955,7 @@
 .method public hasFocusAreaColor()Z
     .locals 0
 
-    .line 3264
+    .line 3588
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFocusAreaColor:Z
 
     return p0
@@ -5366,7 +5964,7 @@
 .method public hasFocusMode()Z
     .locals 0
 
-    .line 3271
+    .line 3595
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFocusMode:Z
 
     return p0
@@ -5375,7 +5973,7 @@
 .method public hasFocusUI()Z
     .locals 0
 
-    .line 3278
+    .line 3602
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFocusUI:Z
 
     return p0
@@ -5384,7 +5982,7 @@
 .method public hasFps()Z
     .locals 0
 
-    .line 3285
+    .line 3609
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFps:Z
 
     return p0
@@ -5393,7 +5991,7 @@
 .method public hasFramingAssist()Z
     .locals 0
 
-    .line 3586
+    .line 3910
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFramingAssist:Z
 
     return p0
@@ -5402,7 +6000,7 @@
 .method public hasFramingAssistMethod()Z
     .locals 0
 
-    .line 3593
+    .line 3917
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFramingAssistMethod:Z
 
     return p0
@@ -5411,7 +6009,7 @@
 .method public hasGeoTag()Z
     .locals 0
 
-    .line 3292
+    .line 3616
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasGeoTag:Z
 
     return p0
@@ -5420,7 +6018,7 @@
 .method public hasGridLine()Z
     .locals 0
 
-    .line 3299
+    .line 3623
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasGridLine:Z
 
     return p0
@@ -5429,7 +6027,7 @@
 .method public hasHandShutter()Z
     .locals 0
 
-    .line 3306
+    .line 3630
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasHandShutter:Z
 
     return p0
@@ -5438,7 +6036,7 @@
 .method public hasHaptic()Z
     .locals 0
 
-    .line 3313
+    .line 3637
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasHaptic:Z
 
     return p0
@@ -5447,7 +6045,7 @@
 .method public hasHdrDro()Z
     .locals 0
 
-    .line 3320
+    .line 3644
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasHdrDro:Z
 
     return p0
@@ -5456,8 +6054,17 @@
 .method public hasHdrSdr()Z
     .locals 0
 
-    .line 3327
+    .line 3651
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasHdrSdr:Z
+
+    return p0
+.end method
+
+.method public hasHwKeyFunctionType()Z
+    .locals 0
+
+    .line 3952
+    iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasHwKeyFunctionType:Z
 
     return p0
 .end method
@@ -5465,7 +6072,7 @@
 .method public hasIso()Z
     .locals 0
 
-    .line 3334
+    .line 3658
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasIso:Z
 
     return p0
@@ -5474,7 +6081,7 @@
 .method public hasLaunchWithCameraKey()Z
     .locals 0
 
-    .line 3341
+    .line 3665
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasLaunchWithCameraKey:Z
 
     return p0
@@ -5483,7 +6090,7 @@
 .method public hasLens()Z
     .locals 0
 
-    .line 3348
+    .line 3672
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasLens:Z
 
     return p0
@@ -5492,7 +6099,7 @@
 .method public hasLensCorrection()Z
     .locals 0
 
-    .line 3355
+    .line 3679
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasLensCorrection:Z
 
     return p0
@@ -5501,7 +6108,7 @@
 .method public hasLevelCalibration()Z
     .locals 0
 
-    .line 3362
+    .line 3686
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasLevelCalibration:Z
 
     return p0
@@ -5510,7 +6117,7 @@
 .method public hasLevelMeter()Z
     .locals 0
 
-    .line 3600
+    .line 3924
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasLevelMeter:Z
 
     return p0
@@ -5519,7 +6126,7 @@
 .method public hasManualFocus()Z
     .locals 0
 
-    .line 3565
+    .line 3889
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasManualFocus:Z
 
     return p0
@@ -5528,7 +6135,7 @@
 .method public hasMeteringMode()Z
     .locals 0
 
-    .line 3369
+    .line 3693
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasMeteringMode:Z
 
     return p0
@@ -5537,7 +6144,7 @@
 .method public hasMic()Z
     .locals 0
 
-    .line 3376
+    .line 3700
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasMic:Z
 
     return p0
@@ -5546,7 +6153,7 @@
 .method public hasMode()Z
     .locals 0
 
-    .line 3383
+    .line 3707
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasMode:Z
 
     return p0
@@ -5555,7 +6162,7 @@
 .method public hasNetworkUsage()Z
     .locals 0
 
-    .line 3390
+    .line 3714
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasNetworkUsage:Z
 
     return p0
@@ -5564,7 +6171,7 @@
 .method public hasPeaking()Z
     .locals 0
 
-    .line 3397
+    .line 3721
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasPeaking:Z
 
     return p0
@@ -5573,7 +6180,7 @@
 .method public hasPeakingColor()Z
     .locals 0
 
-    .line 3404
+    .line 3728
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasPeakingColor:Z
 
     return p0
@@ -5582,7 +6189,7 @@
 .method public hasPrivacyPolicy()Z
     .locals 0
 
-    .line 3411
+    .line 3735
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasPrivacyPolicy:Z
 
     return p0
@@ -5591,7 +6198,7 @@
 .method public hasProductShowcase()Z
     .locals 0
 
-    .line 3418
+    .line 3742
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasProductShowcase:Z
 
     return p0
@@ -5600,7 +6207,7 @@
 .method public hasReset()Z
     .locals 0
 
-    .line 3425
+    .line 3749
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasReset:Z
 
     return p0
@@ -5609,7 +6216,7 @@
 .method public hasResolution()Z
     .locals 0
 
-    .line 3432
+    .line 3756
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasResolution:Z
 
     return p0
@@ -5618,7 +6225,7 @@
 .method public hasSS()Z
     .locals 0
 
-    .line 3460
+    .line 3784
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasSS:Z
 
     return p0
@@ -5627,7 +6234,7 @@
 .method public hasSSUI()Z
     .locals 0
 
-    .line 3467
+    .line 3791
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasSSUI:Z
 
     return p0
@@ -5636,7 +6243,7 @@
 .method public hasSaveFullScreenVideo()Z
     .locals 0
 
-    .line 3607
+    .line 3931
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasSaveFullScreenVideo:Z
 
     return p0
@@ -5645,7 +6252,7 @@
 .method public hasSelfTimer()Z
     .locals 0
 
-    .line 3439
+    .line 3763
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasSelfTimer:Z
 
     return p0
@@ -5654,7 +6261,7 @@
 .method public hasSharpenFaces()Z
     .locals 0
 
-    .line 3446
+    .line 3770
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasSharpenFaces:Z
 
     return p0
@@ -5663,7 +6270,7 @@
 .method public hasSoftSkin()Z
     .locals 0
 
-    .line 3453
+    .line 3777
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasSoftSkin:Z
 
     return p0
@@ -5672,7 +6279,7 @@
 .method public hasStabilization()Z
     .locals 0
 
-    .line 3474
+    .line 3798
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasStabilization:Z
 
     return p0
@@ -5681,7 +6288,7 @@
 .method public hasStorage()Z
     .locals 0
 
-    .line 3481
+    .line 3805
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasStorage:Z
 
     return p0
@@ -5690,7 +6297,7 @@
 .method public hasStreamMute()Z
     .locals 0
 
-    .line 3488
+    .line 3812
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasStreamMute:Z
 
     return p0
@@ -5699,7 +6306,7 @@
 .method public hasStreamVideoQuality()Z
     .locals 0
 
-    .line 3495
+    .line 3819
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasStreamVideoQuality:Z
 
     return p0
@@ -5708,7 +6315,7 @@
 .method public hasSwLicense()Z
     .locals 0
 
-    .line 3502
+    .line 3826
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasSwLicense:Z
 
     return p0
@@ -5717,7 +6324,7 @@
 .method public hasTips()Z
     .locals 0
 
-    .line 3509
+    .line 3833
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasTips:Z
 
     return p0
@@ -5726,7 +6333,7 @@
 .method public hasTouchToAdjust()Z
     .locals 0
 
-    .line 3516
+    .line 3840
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasTouchToAdjust:Z
 
     return p0
@@ -5735,7 +6342,7 @@
 .method public hasTouchTracking()Z
     .locals 0
 
-    .line 3523
+    .line 3847
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasTouchTracking:Z
 
     return p0
@@ -5744,7 +6351,7 @@
 .method public hasUltraHdr()Z
     .locals 0
 
-    .line 3614
+    .line 3938
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasUltraHdr:Z
 
     return p0
@@ -5753,7 +6360,7 @@
 .method public hasVideoBacklightCollection()Z
     .locals 0
 
-    .line 3530
+    .line 3854
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasVideoBacklightCollection:Z
 
     return p0
@@ -5762,7 +6369,7 @@
 .method public hasVideoLight()Z
     .locals 0
 
-    .line 3537
+    .line 3861
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasVideoLight:Z
 
     return p0
@@ -5771,7 +6378,7 @@
 .method public hasVolumeDistortionCorrection()Z
     .locals 0
 
-    .line 3621
+    .line 3945
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasVolumeDistortionCorrection:Z
 
     return p0
@@ -5780,7 +6387,7 @@
 .method public hasVolumeKeyAs()Z
     .locals 0
 
-    .line 3544
+    .line 3868
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasVolumeKeyAs:Z
 
     return p0
@@ -5789,7 +6396,7 @@
 .method public hasWb()Z
     .locals 0
 
-    .line 3551
+    .line 3875
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasWb:Z
 
     return p0
@@ -5798,7 +6405,7 @@
 .method public hasWindFilter()Z
     .locals 0
 
-    .line 3558
+    .line 3882
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasWindFilter:Z
 
     return p0
@@ -5807,7 +6414,7 @@
 .method public hasZoom()Z
     .locals 0
 
-    .line 3572
+    .line 3896
     iget-boolean p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasZoom:Z
 
     return p0
@@ -5824,7 +6431,7 @@
 .method public bridge synthetic newBuilderForType()Lcom/google/protobuf/MessageLite$Builder;
     .locals 0
 
-    .line 989
+    .line 1266
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->newBuilderForType()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;
 
     move-result-object p0
@@ -5835,7 +6442,7 @@
 .method public newBuilderForType()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;
     .locals 0
 
-    .line 4316
+    .line 4745
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;
 
     move-result-object p0
@@ -5846,7 +6453,7 @@
 .method public bridge synthetic toBuilder()Lcom/google/protobuf/MessageLite$Builder;
     .locals 0
 
-    .line 989
+    .line 1266
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->toBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;
 
     move-result-object p0
@@ -5857,7 +6464,7 @@
 .method public toBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;
     .locals 0
 
-    .line 4320
+    .line 4749
     invoke-static {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->newBuilder(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Builder;
 
     move-result-object p0
@@ -5867,23 +6474,32 @@
 
 .method public writeTo(Lcom/google/protobuf/CodedOutputStream;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "output"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 3703
+    .line 4083
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getSerializedSize()I
 
-    .line 3704
+    .line 4084
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAccessibility()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 3705
+    .line 4085
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getAccessibility()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Accessibility;
 
     move-result-object v0
@@ -5896,7 +6512,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3707
+    .line 4087
     :cond_0
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAspectRatio()Z
 
@@ -5904,7 +6520,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 3708
+    .line 4088
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getAspectRatio()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$AspectRatio;
 
     move-result-object v0
@@ -5917,7 +6533,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3710
+    .line 4090
     :cond_1
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAudioSignals()Z
 
@@ -5925,7 +6541,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 3711
+    .line 4091
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getAudioSignals()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$AudioSignals;
 
     move-result-object v0
@@ -5938,7 +6554,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3713
+    .line 4093
     :cond_2
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAutoFrameRate()Z
 
@@ -5946,7 +6562,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 3714
+    .line 4094
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getAutoFrameRate()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v0
@@ -5959,7 +6575,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3716
+    .line 4096
     :cond_3
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAutoNight()Z
 
@@ -5967,7 +6583,7 @@
 
     if-eqz v0, :cond_4
 
-    .line 3717
+    .line 4097
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getAutoNight()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$AutoOff;
 
     move-result-object v0
@@ -5980,7 +6596,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3719
+    .line 4099
     :cond_4
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasBokeh()Z
 
@@ -5990,14 +6606,14 @@
 
     const/4 v0, 0x6
 
-    .line 3720
+    .line 4100
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getBokeh()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeString(ILjava/lang/String;)V
 
-    .line 3722
+    .line 4102
     :cond_5
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasBtRemote()Z
 
@@ -6005,7 +6621,7 @@
 
     if-eqz v0, :cond_6
 
-    .line 3723
+    .line 4103
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getBtRemote()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v0
@@ -6018,7 +6634,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3725
+    .line 4105
     :cond_6
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasCAndBBrightness()Z
 
@@ -6028,14 +6644,14 @@
 
     const/16 v0, 0x8
 
-    .line 3726
+    .line 4106
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getCAndBBrightness()I
 
     move-result v1
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeSInt32(II)V
 
-    .line 3728
+    .line 4108
     :cond_7
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasCAndBColor()Z
 
@@ -6045,14 +6661,14 @@
 
     const/16 v0, 0x9
 
-    .line 3729
+    .line 4109
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getCAndBColor()I
 
     move-result v1
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeSInt32(II)V
 
-    .line 3731
+    .line 4111
     :cond_8
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasCloseUpShooting()Z
 
@@ -6060,7 +6676,7 @@
 
     if-eqz v0, :cond_9
 
-    .line 3732
+    .line 4112
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getCloseUpShooting()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$AutoOff;
 
     move-result-object v0
@@ -6073,7 +6689,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3734
+    .line 4114
     :cond_9
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasComputationalPhoto()Z
 
@@ -6081,7 +6697,7 @@
 
     if-eqz v0, :cond_a
 
-    .line 3735
+    .line 4115
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getComputationalPhoto()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$AutoOff;
 
     move-result-object v0
@@ -6094,7 +6710,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3737
+    .line 4117
     :cond_a
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasConnectTo()Z
 
@@ -6102,7 +6718,7 @@
 
     if-eqz v0, :cond_b
 
-    .line 3738
+    .line 4118
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getConnectTo()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ConnectTo;
 
     move-result-object v0
@@ -6115,7 +6731,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3740
+    .line 4120
     :cond_b
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasContinuousFeedback()Z
 
@@ -6123,7 +6739,7 @@
 
     if-eqz v0, :cond_c
 
-    .line 3741
+    .line 4121
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getContinuousFeedback()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v0
@@ -6136,7 +6752,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3743
+    .line 4123
     :cond_c
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasDigitalZoom()Z
 
@@ -6144,7 +6760,7 @@
 
     if-eqz v0, :cond_d
 
-    .line 3744
+    .line 4124
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getDigitalZoom()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DigitalZoom;
 
     move-result-object v0
@@ -6157,7 +6773,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3746
+    .line 4126
     :cond_d
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasDisp()Z
 
@@ -6165,7 +6781,7 @@
 
     if-eqz v0, :cond_e
 
-    .line 3747
+    .line 4127
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getDisp()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Disp;
 
     move-result-object v0
@@ -6178,7 +6794,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3749
+    .line 4129
     :cond_e
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasDriveMode()Z
 
@@ -6186,7 +6802,7 @@
 
     if-eqz v0, :cond_f
 
-    .line 3750
+    .line 4130
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getDriveMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DriveMode;
 
     move-result-object v0
@@ -6199,7 +6815,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3752
+    .line 4132
     :cond_f
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasDynamicRange()Z
 
@@ -6207,7 +6823,7 @@
 
     if-eqz v0, :cond_10
 
-    .line 3753
+    .line 4133
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getDynamicRange()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$DynamicRange;
 
     move-result-object v0
@@ -6220,7 +6836,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3755
+    .line 4135
     :cond_10
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasEnduranceMode()Z
 
@@ -6228,7 +6844,7 @@
 
     if-eqz v0, :cond_11
 
-    .line 3756
+    .line 4136
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getEnduranceMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v0
@@ -6241,7 +6857,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3758
+    .line 4138
     :cond_11
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasEv()Z
 
@@ -6249,7 +6865,7 @@
 
     if-eqz v0, :cond_12
 
-    .line 3759
+    .line 4139
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getEv()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Ev;
 
     move-result-object v0
@@ -6262,7 +6878,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3761
+    .line 4141
     :cond_12
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFaceEyeAf()Z
 
@@ -6270,7 +6886,7 @@
 
     if-eqz v0, :cond_13
 
-    .line 3762
+    .line 4142
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getFaceEyeAf()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FaceEyeAf;
 
     move-result-object v0
@@ -6283,7 +6899,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3764
+    .line 4144
     :cond_13
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFileFormat()Z
 
@@ -6291,7 +6907,7 @@
 
     if-eqz v0, :cond_14
 
-    .line 3765
+    .line 4145
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getFileFormat()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FileFormat;
 
     move-result-object v0
@@ -6304,7 +6920,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3767
+    .line 4147
     :cond_14
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFilter()Z
 
@@ -6312,7 +6928,7 @@
 
     if-eqz v0, :cond_15
 
-    .line 3768
+    .line 4148
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getFilter()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Filter;
 
     move-result-object v0
@@ -6325,7 +6941,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3770
+    .line 4150
     :cond_15
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFlash()Z
 
@@ -6333,7 +6949,7 @@
 
     if-eqz v0, :cond_16
 
-    .line 3771
+    .line 4151
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getFlash()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Flash;
 
     move-result-object v0
@@ -6346,7 +6962,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3773
+    .line 4153
     :cond_16
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFocusArea()Z
 
@@ -6354,7 +6970,7 @@
 
     if-eqz v0, :cond_17
 
-    .line 3774
+    .line 4154
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getFocusArea()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusArea;
 
     move-result-object v0
@@ -6367,7 +6983,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3776
+    .line 4156
     :cond_17
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFocusAreaColor()Z
 
@@ -6375,7 +6991,7 @@
 
     if-eqz v0, :cond_18
 
-    .line 3777
+    .line 4157
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getFocusAreaColor()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusAreaColor;
 
     move-result-object v0
@@ -6388,7 +7004,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3779
+    .line 4159
     :cond_18
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFocusMode()Z
 
@@ -6396,7 +7012,7 @@
 
     if-eqz v0, :cond_19
 
-    .line 3780
+    .line 4160
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getFocusMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FocusMode;
 
     move-result-object v0
@@ -6409,7 +7025,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3782
+    .line 4162
     :cond_19
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFocusUI()Z
 
@@ -6417,7 +7033,7 @@
 
     if-eqz v0, :cond_1a
 
-    .line 3783
+    .line 4163
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getFocusUI()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v0
@@ -6430,7 +7046,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3785
+    .line 4165
     :cond_1a
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFps()Z
 
@@ -6438,7 +7054,7 @@
 
     if-eqz v0, :cond_1b
 
-    .line 3786
+    .line 4166
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getFps()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Fps;
 
     move-result-object v0
@@ -6451,7 +7067,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3788
+    .line 4168
     :cond_1b
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasGeoTag()Z
 
@@ -6459,7 +7075,7 @@
 
     if-eqz v0, :cond_1c
 
-    .line 3789
+    .line 4169
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getGeoTag()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v0
@@ -6472,7 +7088,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3791
+    .line 4171
     :cond_1c
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasGridLine()Z
 
@@ -6480,7 +7096,7 @@
 
     if-eqz v0, :cond_1d
 
-    .line 3792
+    .line 4172
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getGridLine()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v0
@@ -6493,7 +7109,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3794
+    .line 4174
     :cond_1d
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasHandShutter()Z
 
@@ -6501,7 +7117,7 @@
 
     if-eqz v0, :cond_1e
 
-    .line 3795
+    .line 4175
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getHandShutter()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v0
@@ -6514,7 +7130,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3797
+    .line 4177
     :cond_1e
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasHaptic()Z
 
@@ -6522,7 +7138,7 @@
 
     if-eqz v0, :cond_1f
 
-    .line 3798
+    .line 4178
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getHaptic()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v0
@@ -6535,7 +7151,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3800
+    .line 4180
     :cond_1f
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasHdrDro()Z
 
@@ -6543,7 +7159,7 @@
 
     if-eqz v0, :cond_20
 
-    .line 3801
+    .line 4181
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getHdrDro()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HdrDro;
 
     move-result-object v0
@@ -6556,7 +7172,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3803
+    .line 4183
     :cond_20
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasHdrSdr()Z
 
@@ -6564,7 +7180,7 @@
 
     if-eqz v0, :cond_21
 
-    .line 3804
+    .line 4184
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getHdrSdr()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HdrSdr;
 
     move-result-object v0
@@ -6577,7 +7193,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3806
+    .line 4186
     :cond_21
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasIso()Z
 
@@ -6585,7 +7201,7 @@
 
     if-eqz v0, :cond_22
 
-    .line 3807
+    .line 4187
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getIso()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Iso;
 
     move-result-object v0
@@ -6598,7 +7214,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3809
+    .line 4189
     :cond_22
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasLaunchWithCameraKey()Z
 
@@ -6606,7 +7222,7 @@
 
     if-eqz v0, :cond_23
 
-    .line 3810
+    .line 4190
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getLaunchWithCameraKey()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LaunchWithCameraKey;
 
     move-result-object v0
@@ -6619,7 +7235,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3812
+    .line 4192
     :cond_23
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasLens()Z
 
@@ -6627,7 +7243,7 @@
 
     if-eqz v0, :cond_24
 
-    .line 3813
+    .line 4193
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getLens()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Lens;
 
     move-result-object v0
@@ -6640,7 +7256,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3815
+    .line 4195
     :cond_24
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasLensCorrection()Z
 
@@ -6648,7 +7264,7 @@
 
     if-eqz v0, :cond_25
 
-    .line 3816
+    .line 4196
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getLensCorrection()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LensCorrection;
 
     move-result-object v0
@@ -6661,7 +7277,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3818
+    .line 4198
     :cond_25
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasLevelCalibration()Z
 
@@ -6669,7 +7285,7 @@
 
     if-eqz v0, :cond_26
 
-    .line 3819
+    .line 4199
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getLevelCalibration()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LevelCalibration;
 
     move-result-object v0
@@ -6682,7 +7298,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3821
+    .line 4201
     :cond_26
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasMeteringMode()Z
 
@@ -6690,7 +7306,7 @@
 
     if-eqz v0, :cond_27
 
-    .line 3822
+    .line 4202
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getMeteringMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$MeteringMode;
 
     move-result-object v0
@@ -6703,7 +7319,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3824
+    .line 4204
     :cond_27
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasMic()Z
 
@@ -6711,7 +7327,7 @@
 
     if-eqz v0, :cond_28
 
-    .line 3825
+    .line 4205
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getMic()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Mic;
 
     move-result-object v0
@@ -6724,7 +7340,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3827
+    .line 4207
     :cond_28
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasMode()Z
 
@@ -6732,7 +7348,7 @@
 
     if-eqz v0, :cond_29
 
-    .line 3828
+    .line 4208
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getMode()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
     move-result-object v0
@@ -6745,7 +7361,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3830
+    .line 4210
     :cond_29
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasNetworkUsage()Z
 
@@ -6753,7 +7369,7 @@
 
     if-eqz v0, :cond_2a
 
-    .line 3831
+    .line 4211
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getNetworkUsage()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$NetworkUsage;
 
     move-result-object v0
@@ -6766,7 +7382,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3833
+    .line 4213
     :cond_2a
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasPeaking()Z
 
@@ -6774,7 +7390,7 @@
 
     if-eqz v0, :cond_2b
 
-    .line 3834
+    .line 4214
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getPeaking()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v0
@@ -6787,7 +7403,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3836
+    .line 4216
     :cond_2b
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasPeakingColor()Z
 
@@ -6795,7 +7411,7 @@
 
     if-eqz v0, :cond_2c
 
-    .line 3837
+    .line 4217
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getPeakingColor()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$PeakingColor;
 
     move-result-object v0
@@ -6808,7 +7424,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3839
+    .line 4219
     :cond_2c
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasPrivacyPolicy()Z
 
@@ -6816,7 +7432,7 @@
 
     if-eqz v0, :cond_2d
 
-    .line 3840
+    .line 4220
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getPrivacyPolicy()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$PrivacyPolicy;
 
     move-result-object v0
@@ -6829,7 +7445,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3842
+    .line 4222
     :cond_2d
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasProductShowcase()Z
 
@@ -6837,7 +7453,7 @@
 
     if-eqz v0, :cond_2e
 
-    .line 3843
+    .line 4223
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getProductShowcase()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v0
@@ -6850,7 +7466,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3845
+    .line 4225
     :cond_2e
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasReset()Z
 
@@ -6858,7 +7474,7 @@
 
     if-eqz v0, :cond_2f
 
-    .line 3846
+    .line 4226
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getReset()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Reset;
 
     move-result-object v0
@@ -6871,7 +7487,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3848
+    .line 4228
     :cond_2f
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasResolution()Z
 
@@ -6879,7 +7495,7 @@
 
     if-eqz v0, :cond_30
 
-    .line 3849
+    .line 4229
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getResolution()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Resolution;
 
     move-result-object v0
@@ -6892,7 +7508,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3851
+    .line 4231
     :cond_30
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasSelfTimer()Z
 
@@ -6900,7 +7516,7 @@
 
     if-eqz v0, :cond_31
 
-    .line 3852
+    .line 4232
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getSelfTimer()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$SelfTimer;
 
     move-result-object v0
@@ -6913,7 +7529,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3854
+    .line 4234
     :cond_31
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasSharpenFaces()Z
 
@@ -6921,7 +7537,7 @@
 
     if-eqz v0, :cond_32
 
-    .line 3855
+    .line 4235
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getSharpenFaces()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v0
@@ -6934,7 +7550,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3857
+    .line 4237
     :cond_32
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasSoftSkin()Z
 
@@ -6942,7 +7558,7 @@
 
     if-eqz v0, :cond_33
 
-    .line 3858
+    .line 4238
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getSoftSkin()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v0
@@ -6955,7 +7571,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3860
+    .line 4240
     :cond_33
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasSS()Z
 
@@ -6963,7 +7579,7 @@
 
     if-eqz v0, :cond_34
 
-    .line 3861
+    .line 4241
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getSS()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ShutterSpeed;
 
     move-result-object v0
@@ -6976,7 +7592,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3863
+    .line 4243
     :cond_34
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasSSUI()Z
 
@@ -6984,7 +7600,7 @@
 
     if-eqz v0, :cond_35
 
-    .line 3864
+    .line 4244
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getSSUI()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v0
@@ -6997,7 +7613,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3866
+    .line 4246
     :cond_35
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasStabilization()Z
 
@@ -7005,7 +7621,7 @@
 
     if-eqz v0, :cond_36
 
-    .line 3867
+    .line 4247
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getStabilization()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Stabilization;
 
     move-result-object v0
@@ -7018,7 +7634,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3869
+    .line 4249
     :cond_36
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasStorage()Z
 
@@ -7026,7 +7642,7 @@
 
     if-eqz v0, :cond_37
 
-    .line 3870
+    .line 4250
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getStorage()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Storage;
 
     move-result-object v0
@@ -7039,7 +7655,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3872
+    .line 4252
     :cond_37
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasStreamMute()Z
 
@@ -7047,7 +7663,7 @@
 
     if-eqz v0, :cond_38
 
-    .line 3873
+    .line 4253
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getStreamMute()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$StreamMute;
 
     move-result-object v0
@@ -7060,7 +7676,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3875
+    .line 4255
     :cond_38
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasStreamVideoQuality()Z
 
@@ -7068,7 +7684,7 @@
 
     if-eqz v0, :cond_39
 
-    .line 3876
+    .line 4256
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getStreamVideoQuality()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$StreamVideoQuality;
 
     move-result-object v0
@@ -7081,7 +7697,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3878
+    .line 4258
     :cond_39
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasSwLicense()Z
 
@@ -7089,7 +7705,7 @@
 
     if-eqz v0, :cond_3a
 
-    .line 3879
+    .line 4259
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getSwLicense()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$SwLicense;
 
     move-result-object v0
@@ -7102,7 +7718,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3881
+    .line 4261
     :cond_3a
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasTips()Z
 
@@ -7110,7 +7726,7 @@
 
     if-eqz v0, :cond_3b
 
-    .line 3882
+    .line 4262
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getTips()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$Tips;
 
     move-result-object v0
@@ -7123,7 +7739,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3884
+    .line 4264
     :cond_3b
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasTouchToAdjust()Z
 
@@ -7131,7 +7747,7 @@
 
     if-eqz v0, :cond_3c
 
-    .line 3885
+    .line 4265
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getTouchToAdjust()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$TouchToAdjust;
 
     move-result-object v0
@@ -7144,7 +7760,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3887
+    .line 4267
     :cond_3c
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasTouchTracking()Z
 
@@ -7152,7 +7768,7 @@
 
     if-eqz v0, :cond_3d
 
-    .line 3888
+    .line 4268
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getTouchTracking()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v0
@@ -7165,7 +7781,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3890
+    .line 4270
     :cond_3d
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasVideoBacklightCollection()Z
 
@@ -7173,7 +7789,7 @@
 
     if-eqz v0, :cond_3e
 
-    .line 3891
+    .line 4271
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getVideoBacklightCollection()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v0
@@ -7186,7 +7802,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3893
+    .line 4273
     :cond_3e
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasVideoLight()Z
 
@@ -7194,7 +7810,7 @@
 
     if-eqz v0, :cond_3f
 
-    .line 3894
+    .line 4274
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getVideoLight()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v0
@@ -7207,7 +7823,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3896
+    .line 4276
     :cond_3f
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasVolumeKeyAs()Z
 
@@ -7215,7 +7831,7 @@
 
     if-eqz v0, :cond_40
 
-    .line 3897
+    .line 4277
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getVolumeKeyAs()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$VolumeKeyAs;
 
     move-result-object v0
@@ -7228,7 +7844,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3899
+    .line 4279
     :cond_40
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasWb()Z
 
@@ -7236,7 +7852,7 @@
 
     if-eqz v0, :cond_41
 
-    .line 3900
+    .line 4280
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getWb()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$WB;
 
     move-result-object v0
@@ -7249,7 +7865,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3902
+    .line 4282
     :cond_41
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasWindFilter()Z
 
@@ -7257,7 +7873,7 @@
 
     if-eqz v0, :cond_42
 
-    .line 3903
+    .line 4283
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getWindFilter()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v0
@@ -7270,7 +7886,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3905
+    .line 4285
     :cond_42
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasManualFocus()Z
 
@@ -7278,7 +7894,7 @@
 
     if-eqz v0, :cond_43
 
-    .line 3906
+    .line 4286
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getManualFocus()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$ManualFocus;
 
     move-result-object v0
@@ -7291,7 +7907,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3908
+    .line 4288
     :cond_43
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasZoom()Z
 
@@ -7301,14 +7917,14 @@
 
     const/16 v0, 0x45
 
-    .line 3909
+    .line 4289
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getZoom()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeString(ILjava/lang/String;)V
 
-    .line 3911
+    .line 4291
     :cond_44
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAfrShortcut()Z
 
@@ -7318,14 +7934,14 @@
 
     const/16 v0, 0x46
 
-    .line 3912
+    .line 4292
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getAfrShortcut()F
 
     move-result v1
 
     invoke-virtual {p1, v0, v1}, Lcom/google/protobuf/CodedOutputStream;->writeFloat(IF)V
 
-    .line 3914
+    .line 4294
     :cond_45
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFramingAssist()Z
 
@@ -7333,7 +7949,7 @@
 
     if-eqz v0, :cond_46
 
-    .line 3915
+    .line 4295
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getFramingAssist()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v0
@@ -7346,7 +7962,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3917
+    .line 4297
     :cond_46
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasFramingAssistMethod()Z
 
@@ -7354,7 +7970,7 @@
 
     if-eqz v0, :cond_47
 
-    .line 3918
+    .line 4298
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getFramingAssistMethod()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$FramingAssistMethod;
 
     move-result-object v0
@@ -7367,7 +7983,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3920
+    .line 4300
     :cond_47
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasLevelMeter()Z
 
@@ -7375,7 +7991,7 @@
 
     if-eqz v0, :cond_48
 
-    .line 3921
+    .line 4301
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getLevelMeter()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$LevelMeter;
 
     move-result-object v0
@@ -7388,7 +8004,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3923
+    .line 4303
     :cond_48
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasSaveFullScreenVideo()Z
 
@@ -7396,7 +8012,7 @@
 
     if-eqz v0, :cond_49
 
-    .line 3924
+    .line 4304
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getSaveFullScreenVideo()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v0
@@ -7409,7 +8025,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3926
+    .line 4306
     :cond_49
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasUltraHdr()Z
 
@@ -7417,7 +8033,7 @@
 
     if-eqz v0, :cond_4a
 
-    .line 3927
+    .line 4307
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getUltraHdr()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object v0
@@ -7430,7 +8046,7 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    .line 3929
+    .line 4309
     :cond_4a
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasVolumeDistortionCorrection()Z
 
@@ -7438,19 +8054,166 @@
 
     if-eqz v0, :cond_4b
 
-    .line 3930
+    .line 4310
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getVolumeDistortionCorrection()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$VolumeDistortionCorrection;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$VolumeDistortionCorrection;->getNumber()I
+
+    move-result v0
+
+    const/16 v1, 0x4c
+
+    invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
+
+    .line 4312
+    :cond_4b
+    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasHwKeyFunctionType()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4c
+
+    .line 4313
+    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getHwKeyFunctionType()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HwKeyFunctionType;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$HwKeyFunctionType;->getNumber()I
+
+    move-result v0
+
+    const/16 v1, 0x4d
+
+    invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
+
+    .line 4315
+    :cond_4c
+    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAiSuggestionDetection()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4d
+
+    .line 4316
+    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getAiSuggestionDetection()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->getNumber()I
+
+    move-result v0
+
+    const/16 v1, 0x4e
+
+    invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
+
+    .line 4318
+    :cond_4d
+    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAiSuggestionCustomExtensionDataBokeh()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4e
+
+    .line 4319
+    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getAiSuggestionCustomExtensionDataBokeh()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->getNumber()I
+
+    move-result v0
+
+    const/16 v1, 0x4f
+
+    invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
+
+    .line 4321
+    :cond_4e
+    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasAiSuggestionCustomExtensionDataLens()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4f
+
+    .line 4322
+    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getAiSuggestionCustomExtensionDataLens()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->getNumber()I
+
+    move-result v0
+
+    const/16 v1, 0x50
+
+    invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
+
+    .line 4324
+    :cond_4f
+    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasDigitalTripodFraming()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_50
+
+    .line 4325
+    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getDigitalTripodFraming()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->getNumber()I
+
+    move-result v0
+
+    const/16 v1, 0x51
+
+    invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
+
+    .line 4327
+    :cond_50
+    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasDigitalTripodFramingIndicator()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_51
+
+    .line 4328
+    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getDigitalTripodFramingIndicator()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->getNumber()I
+
+    move-result v0
+
+    const/16 v1, 0x52
+
+    invoke-virtual {p1, v1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
+
+    .line 4330
+    :cond_51
+    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->hasDigitalTripodFramingVibration()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_52
+
+    .line 4331
+    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting;->getDigitalTripodFramingVibration()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppSetting$VolumeDistortionCorrection;->getNumber()I
+    invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$OnOff;->getNumber()I
 
     move-result p0
 
-    const/16 v0, 0x4c
+    const/16 v0, 0x53
 
     invoke-virtual {p1, v0, p0}, Lcom/google/protobuf/CodedOutputStream;->writeEnum(II)V
 
-    :cond_4b
+    :cond_52
     return-void
 .end method

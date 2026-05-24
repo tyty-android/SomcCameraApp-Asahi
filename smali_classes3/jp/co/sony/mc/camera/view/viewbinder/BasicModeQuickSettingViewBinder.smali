@@ -14,7 +14,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nBasicModeQuickSettingViewBinder.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BasicModeQuickSettingViewBinder.kt\njp/co/sony/mc/camera/view/viewbinder/BasicModeQuickSettingViewBinder\n+ 2 _Maps.kt\nkotlin/collections/MapsKt___MapsKt\n+ 3 View.kt\nandroidx/core/view/ViewKt\n+ 4 _Sequences.kt\nkotlin/sequences/SequencesKt___SequencesKt\n+ 5 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,355:1\n216#2,2:356\n216#2,2:358\n326#3,4:360\n326#3,4:364\n326#3,4:368\n326#3,4:372\n326#3,4:376\n326#3,4:380\n326#3,4:386\n127#4,2:384\n13367#5,2:390\n*S KotlinDebug\n*F\n+ 1 BasicModeQuickSettingViewBinder.kt\njp/co/sony/mc/camera/view/viewbinder/BasicModeQuickSettingViewBinder\n*L\n100#1:356,2\n106#1:358,2\n229#1:360,4\n235#1:364,4\n266#1:368,4\n322#1:372,4\n328#1:376,4\n335#1:380,4\n94#1:386,4\n92#1:384,2\n152#1:390,2\n*E\n"
+    value = "SMAP\nBasicModeQuickSettingViewBinder.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BasicModeQuickSettingViewBinder.kt\njp/co/sony/mc/camera/view/viewbinder/BasicModeQuickSettingViewBinder\n+ 2 _Maps.kt\nkotlin/collections/MapsKt___MapsKt\n+ 3 View.kt\nandroidx/core/view/ViewKt\n+ 4 _Sequences.kt\nkotlin/sequences/SequencesKt___SequencesKt\n+ 5 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,355:1\n216#2,2:356\n216#2,2:358\n326#3,4:360\n326#3,4:364\n326#3,4:368\n326#3,4:372\n326#3,4:376\n326#3,4:380\n326#3,4:386\n127#4,2:384\n13423#5,2:390\n*S KotlinDebug\n*F\n+ 1 BasicModeQuickSettingViewBinder.kt\njp/co/sony/mc/camera/view/viewbinder/BasicModeQuickSettingViewBinder\n*L\n100#1:356,2\n106#1:358,2\n229#1:360,4\n235#1:364,4\n266#1:368,4\n322#1:372,4\n328#1:376,4\n335#1:380,4\n94#1:386,4\n92#1:384,2\n152#1:390,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -694,7 +694,7 @@
 
     move-result-object v3
 
-    const v6, 0x7f07019b
+    const v6, 0x7f0701cf
 
     invoke-virtual {v3, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -894,7 +894,7 @@
 
     move-result-object p0
 
-    const v1, 0x7f070198
+    const v1, 0x7f0701cc
 
     invoke-virtual {p0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1003,7 +1003,7 @@
 
     move-result-object p0
 
-    const v1, 0x7f0701a8
+    const v1, 0x7f0701dc
 
     invoke-virtual {p0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1091,7 +1091,7 @@
 
     move-result-object p0
 
-    const v1, 0x7f070198
+    const v1, 0x7f0701cc
 
     invoke-virtual {p0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1937,7 +1937,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f07019a
+    const v2, 0x7f0701ce
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1948,7 +1948,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0701ba
+    const v3, 0x7f0701ee
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -1959,7 +1959,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0701a6
+    const v4, 0x7f0701da
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

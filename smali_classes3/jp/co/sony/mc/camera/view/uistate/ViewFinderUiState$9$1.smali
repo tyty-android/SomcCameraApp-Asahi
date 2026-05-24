@@ -57,22 +57,22 @@
 .method public bridge synthetic emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
 
-    .line 382
-    check-cast p1, Ljp/co/sony/mc/camera/view/SurfaceRequest;
+    .line 265
+    check-cast p1, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;
 
-    invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$9$1;->emit(Ljp/co/sony/mc/camera/view/SurfaceRequest;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$9$1;->emit(Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public final emit(Ljp/co/sony/mc/camera/view/SurfaceRequest;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final emit(Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ljp/co/sony/mc/camera/view/SurfaceRequest;",
+            "Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Lkotlin/Unit;",
@@ -81,48 +81,24 @@
         }
     .end annotation
 
-    if-eqz p1, :cond_0
+    .line 267
+    instance-of p2, p1, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$AiSuggestionCustomizeMenu;
 
-    .line 383
+    if-nez p2, :cond_0
+
+    .line 268
+    instance-of p1, p1, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$AiSuggestionColorToneProfile;
+
+    if-eqz p1, :cond_1
+
+    .line 270
+    :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$9$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
-    .line 384
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->getCoverState()Landroidx/lifecycle/LiveData;
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->resetFinderItemState()V
 
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
-
-    move-result-object p1
-
-    instance-of p1, p1, Ljp/co/sony/mc/camera/view/uistate/PreviewCoverState$FakeRequested;
-
-    if-nez p1, :cond_0
-
-    .line 385
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->getCoverState()Landroidx/lifecycle/LiveData;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
-
-    move-result-object p1
-
-    instance-of p1, p1, Ljp/co/sony/mc/camera/view/uistate/PreviewCoverState$FakeInitial;
-
-    if-nez p1, :cond_0
-
-    .line 386
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$get_resizeSurfaceEvent$p(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)Landroidx/lifecycle/MutableLiveData;
-
-    move-result-object p0
-
-    sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
-
-    invoke-virtual {p0, p1}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
-
-    .line 389
-    :cond_0
+    .line 272
+    :cond_1
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0

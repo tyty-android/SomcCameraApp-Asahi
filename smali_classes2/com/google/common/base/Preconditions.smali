@@ -3,54 +3,16 @@
 .source "Preconditions.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/base/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # direct methods
-.method static constructor <clinit>()V
-    .locals 4
-
-    .line 1496
-    :try_start_0
-    invoke-static {}, Lcom/google/common/base/Java8Usage;->performCheck()Ljava/lang/String;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception v0
-
-    .line 1498
-    new-instance v1, Ljava/lang/Exception;
-
-    const-string v2, "Guava will drop support for Java 7 in 2021. Please let us know if this will cause you problems: https://github.com/google/guava/issues/5269"
-
-    invoke-direct {v1, v2, v0}, Ljava/lang/Exception;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    .line 1503
-    const-class v0, Lcom/google/common/base/Preconditions;
-
-    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Ljava/util/logging/Logger;->getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;
-
-    move-result-object v0
-
-    sget-object v2, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
-
-    const-string v3, "Java 7 compatibility warning: See https://github.com/google/guava/issues/5269"
-
-    .line 1504
-    invoke-virtual {v0, v2, v3, v1}, Ljava/util/logging/Logger;->log(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    :goto_0
-    return-void
-.end method
-
 .method private constructor <init>()V
     .locals 0
 
-    .line 120
+    .line 119
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -58,14 +20,22 @@
 
 .method private static badElementIndex(IILjava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p2    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "size",
+            "desc"
+        }
+    .end annotation
 
     if-gez p0, :cond_0
 
-    .line 1411
+    .line 1379
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -85,7 +55,7 @@
     :cond_0
     if-ltz p1, :cond_1
 
-    .line 1415
+    .line 1383
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -106,21 +76,15 @@
 
     return-object p0
 
-    .line 1413
+    .line 1381
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
     new-instance p2, Ljava/lang/StringBuilder;
 
-    const/16 v0, 0x1a
-
-    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
     const-string v0, "negative size: "
 
-    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p2
+    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -137,14 +101,22 @@
 
 .method private static badPositionIndex(IILjava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p2    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "size",
+            "desc"
+        }
+    .end annotation
 
     if-gez p0, :cond_0
 
-    .line 1456
+    .line 1424
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -164,7 +136,7 @@
     :cond_0
     if-ltz p1, :cond_1
 
-    .line 1460
+    .line 1428
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -185,21 +157,15 @@
 
     return-object p0
 
-    .line 1458
+    .line 1426
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
     new-instance p2, Ljava/lang/StringBuilder;
 
-    const/16 v0, 0x1a
-
-    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
     const-string v0, "negative size: "
 
-    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p2
+    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -216,6 +182,18 @@
 
 .method private static badPositionIndexes(III)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "start",
+            "end",
+            "size"
+        }
+    .end annotation
 
     if-ltz p0, :cond_3
 
@@ -230,7 +208,7 @@
 
     goto :goto_0
 
-    .line 1491
+    .line 1459
     :cond_1
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -252,7 +230,7 @@
 
     return-object p0
 
-    .line 1488
+    .line 1456
     :cond_2
     :goto_0
     const-string p0, "end index"
@@ -263,7 +241,7 @@
 
     return-object p0
 
-    .line 1485
+    .line 1453
     :cond_3
     :goto_1
     const-string p1, "start index"
@@ -277,12 +255,20 @@
 
 .method public static checkArgument(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "expression"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 130
+    .line 129
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -294,15 +280,25 @@
 .method public static checkArgument(ZLjava/lang/Object;)V
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessage"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 144
+    .line 143
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -317,16 +313,24 @@
 
 .method public static checkArgument(ZLjava/lang/String;C)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 179
+    .line 178
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -349,16 +353,26 @@
 
 .method public static checkArgument(ZLjava/lang/String;CC)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 233
+    .line 232
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -385,16 +399,26 @@
 
 .method public static checkArgument(ZLjava/lang/String;CI)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 247
+    .line 246
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -421,16 +445,26 @@
 
 .method public static checkArgument(ZLjava/lang/String;CJ)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 261
+    .line 260
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -457,20 +491,30 @@
 
 .method public static checkArgument(ZLjava/lang/String;CLjava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 275
+    .line 274
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -493,16 +537,24 @@
 
 .method public static checkArgument(ZLjava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 192
+    .line 191
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -525,16 +577,26 @@
 
 .method public static checkArgument(ZLjava/lang/String;IC)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 289
+    .line 288
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -561,16 +623,26 @@
 
 .method public static checkArgument(ZLjava/lang/String;II)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 303
+    .line 302
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -597,16 +669,26 @@
 
 .method public static checkArgument(ZLjava/lang/String;IJ)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 317
+    .line 316
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -633,20 +715,30 @@
 
 .method public static checkArgument(ZLjava/lang/String;ILjava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 331
+    .line 330
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -669,16 +761,24 @@
 
 .method public static checkArgument(ZLjava/lang/String;J)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 205
+    .line 204
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -701,16 +801,26 @@
 
 .method public static checkArgument(ZLjava/lang/String;JC)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 345
+    .line 344
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -737,16 +847,26 @@
 
 .method public static checkArgument(ZLjava/lang/String;JI)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 359
+    .line 358
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -773,16 +893,26 @@
 
 .method public static checkArgument(ZLjava/lang/String;JJ)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 373
+    .line 372
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -809,20 +939,30 @@
 
 .method public static checkArgument(ZLjava/lang/String;JLjava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p4    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 387
+    .line 386
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -845,20 +985,28 @@
 
 .method public static checkArgument(ZLjava/lang/String;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 219
+    .line 218
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -877,20 +1025,30 @@
 
 .method public static checkArgument(ZLjava/lang/String;Ljava/lang/Object;C)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 401
+    .line 400
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -913,20 +1071,30 @@
 
 .method public static checkArgument(ZLjava/lang/String;Ljava/lang/Object;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 415
+    .line 414
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -949,20 +1117,30 @@
 
 .method public static checkArgument(ZLjava/lang/String;Ljava/lang/Object;J)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 429
+    .line 428
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -986,17 +1164,31 @@
 .method public static checkArgument(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
     .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
@@ -1021,22 +1213,34 @@
 
 .method public static checkArgument(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p4    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2",
+            "p3"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
@@ -1061,26 +1265,40 @@
 
 .method public static checkArgument(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p4    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p5    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2",
+            "p3",
+            "p4"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
@@ -1105,20 +1323,28 @@
 
 .method public static varargs checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p2    # [Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "errorMessageArgs"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 166
+    .line 165
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1133,8 +1359,18 @@
 
 .method public static checkElementIndex(II)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "size"
+        }
+    .end annotation
 
-    .line 1386
+    .line 1354
     const-string v0, "index"
 
     invoke-static {p0, p1, v0}, Lcom/google/common/base/Preconditions;->checkElementIndex(IILjava/lang/String;)I
@@ -1146,10 +1382,18 @@
 
 .method public static checkElementIndex(IILjava/lang/String;)I
     .locals 1
-    .param p2    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "size",
+            "desc"
+        }
+    .end annotation
 
     if-ltz p0, :cond_0
 
@@ -1157,7 +1401,7 @@
 
     return p0
 
-    .line 1404
+    .line 1372
     :cond_0
     new-instance v0, Ljava/lang/IndexOutOfBoundsException;
 
@@ -1173,9 +1417,18 @@
 .method public static checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "reference"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1184,10 +1437,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-    .end annotation
-
-    .line 892
+    .line 904
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     return-object p0
@@ -1196,13 +1446,24 @@
 .method public static checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "reference",
+            "errorMessage"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1213,14 +1474,11 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-    .end annotation
-
     if-eqz p0, :cond_0
 
     return-object p0
 
-    .line 912
+    .line 922
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -1236,13 +1494,22 @@
 .method public static checkNotNull(Ljava/lang/Object;Ljava/lang/String;C)Ljava/lang/Object;
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "reference",
+            "errorMessageTemplate",
+            "p1"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1253,14 +1520,11 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-    .end annotation
-
     if-eqz p0, :cond_0
 
     return-object p0
 
-    .line 956
+    .line 964
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -1284,13 +1548,24 @@
 .method public static checkNotNull(Ljava/lang/Object;Ljava/lang/String;CC)Ljava/lang/Object;
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "reference",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1301,14 +1576,11 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-    .end annotation
-
     if-eqz p0, :cond_0
 
     return-object p0
 
-    .line 1024
+    .line 1027
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -1336,13 +1608,24 @@
 .method public static checkNotNull(Ljava/lang/Object;Ljava/lang/String;CI)Ljava/lang/Object;
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "reference",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1353,14 +1636,11 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-    .end annotation
-
     if-eqz p0, :cond_0
 
     return-object p0
 
-    .line 1041
+    .line 1043
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -1388,13 +1668,24 @@
 .method public static checkNotNull(Ljava/lang/Object;Ljava/lang/String;CJ)Ljava/lang/Object;
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "reference",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1405,14 +1696,11 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-    .end annotation
-
     if-eqz p0, :cond_0
 
     return-object p0
 
-    .line 1058
+    .line 1059
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -1440,17 +1728,28 @@
 .method public static checkNotNull(Ljava/lang/Object;Ljava/lang/String;CLjava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-        .end annotation
-    .end param
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "reference",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1463,14 +1762,11 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-    .end annotation
-
     if-eqz p0, :cond_0
 
     return-object p0
 
-    .line 1078
+    .line 1075
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -1494,13 +1790,22 @@
 .method public static checkNotNull(Ljava/lang/Object;Ljava/lang/String;I)Ljava/lang/Object;
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "reference",
+            "errorMessageTemplate",
+            "p1"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1511,14 +1816,11 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-    .end annotation
-
     if-eqz p0, :cond_0
 
     return-object p0
 
-    .line 973
+    .line 979
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -1542,13 +1844,24 @@
 .method public static checkNotNull(Ljava/lang/Object;Ljava/lang/String;IC)Ljava/lang/Object;
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "reference",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1559,14 +1872,11 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-    .end annotation
-
     if-eqz p0, :cond_0
 
     return-object p0
 
-    .line 1095
+    .line 1091
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -1594,13 +1904,24 @@
 .method public static checkNotNull(Ljava/lang/Object;Ljava/lang/String;II)Ljava/lang/Object;
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "reference",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1611,14 +1932,11 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-    .end annotation
-
     if-eqz p0, :cond_0
 
     return-object p0
 
-    .line 1112
+    .line 1107
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -1646,13 +1964,24 @@
 .method public static checkNotNull(Ljava/lang/Object;Ljava/lang/String;IJ)Ljava/lang/Object;
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "reference",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1663,14 +1992,11 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-    .end annotation
-
     if-eqz p0, :cond_0
 
     return-object p0
 
-    .line 1129
+    .line 1123
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -1698,17 +2024,28 @@
 .method public static checkNotNull(Ljava/lang/Object;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-        .end annotation
-    .end param
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "reference",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1721,14 +2058,11 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-    .end annotation
-
     if-eqz p0, :cond_0
 
     return-object p0
 
-    .line 1149
+    .line 1139
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -1752,13 +2086,22 @@
 .method public static checkNotNull(Ljava/lang/Object;Ljava/lang/String;J)Ljava/lang/Object;
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "reference",
+            "errorMessageTemplate",
+            "p1"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1769,14 +2112,11 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-    .end annotation
-
     if-eqz p0, :cond_0
 
     return-object p0
 
-    .line 990
+    .line 995
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -1800,13 +2140,24 @@
 .method public static checkNotNull(Ljava/lang/Object;Ljava/lang/String;JC)Ljava/lang/Object;
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "reference",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1817,14 +2168,11 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-    .end annotation
-
     if-eqz p0, :cond_0
 
     return-object p0
 
-    .line 1166
+    .line 1155
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -1852,13 +2200,24 @@
 .method public static checkNotNull(Ljava/lang/Object;Ljava/lang/String;JI)Ljava/lang/Object;
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "reference",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1869,14 +2228,11 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-    .end annotation
-
     if-eqz p0, :cond_0
 
     return-object p0
 
-    .line 1183
+    .line 1171
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -1904,13 +2260,24 @@
 .method public static checkNotNull(Ljava/lang/Object;Ljava/lang/String;JJ)Ljava/lang/Object;
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "reference",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1921,14 +2288,11 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-    .end annotation
-
     if-eqz p0, :cond_0
 
     return-object p0
 
-    .line 1200
+    .line 1187
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -1956,17 +2320,28 @@
 .method public static checkNotNull(Ljava/lang/Object;Ljava/lang/String;JLjava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-        .end annotation
-    .end param
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p4    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "reference",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1979,14 +2354,11 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-    .end annotation
-
     if-eqz p0, :cond_0
 
     return-object p0
 
-    .line 1220
+    .line 1203
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -2010,17 +2382,26 @@
 .method public static checkNotNull(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-        .end annotation
-    .end param
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "reference",
+            "errorMessageTemplate",
+            "p1"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -2032,14 +2413,11 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-    .end annotation
-
     if-eqz p0, :cond_0
 
     return-object p0
 
-    .line 1007
+    .line 1011
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -2059,17 +2437,28 @@
 .method public static checkNotNull(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;C)Ljava/lang/Object;
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-        .end annotation
-    .end param
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "reference",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -2081,14 +2470,11 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-    .end annotation
-
     if-eqz p0, :cond_0
 
     return-object p0
 
-    .line 1240
+    .line 1219
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -2112,17 +2498,28 @@
 .method public static checkNotNull(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;I)Ljava/lang/Object;
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-        .end annotation
-    .end param
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "reference",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -2134,14 +2531,11 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-    .end annotation
-
     if-eqz p0, :cond_0
 
     return-object p0
 
-    .line 1260
+    .line 1235
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -2165,17 +2559,28 @@
 .method public static checkNotNull(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;J)Ljava/lang/Object;
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-        .end annotation
-    .end param
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "reference",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -2187,14 +2592,11 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-    .end annotation
-
     if-eqz p0, :cond_0
 
     return-object p0
 
-    .line 1280
+    .line 1251
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -2218,21 +2620,32 @@
 .method public static checkNotNull(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-        .end annotation
-    .end param
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "reference",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -2245,14 +2658,11 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-    .end annotation
-
     if-eqz p0, :cond_0
 
     return-object p0
 
-    .line 1300
+    .line 1270
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -2272,25 +2682,38 @@
 .method public static checkNotNull(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-        .end annotation
-    .end param
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p4    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "reference",
+            "errorMessageTemplate",
+            "p1",
+            "p2",
+            "p3"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -2304,14 +2727,11 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-    .end annotation
-
     if-eqz p0, :cond_0
 
     return-object p0
 
-    .line 1321
+    .line 1290
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -2331,29 +2751,44 @@
 .method public static checkNotNull(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-        .end annotation
-    .end param
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p4    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p5    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "reference",
+            "errorMessageTemplate",
+            "p1",
+            "p2",
+            "p3",
+            "p4"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -2368,14 +2803,11 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-    .end annotation
-
     if-eqz p0, :cond_0
 
     return-object p0
 
-    .line 1343
+    .line 1311
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -2395,17 +2827,26 @@
 .method public static varargs checkNotNull(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-        .end annotation
-    .end param
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # [Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "reference",
+            "errorMessageTemplate",
+            "errorMessageArgs"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -2418,14 +2859,11 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
-    .end annotation
-
     if-eqz p0, :cond_0
 
     return-object p0
 
-    .line 939
+    .line 948
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -2440,8 +2878,18 @@
 
 .method public static checkPositionIndex(II)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "size"
+        }
+    .end annotation
 
-    .line 1431
+    .line 1399
     const-string v0, "index"
 
     invoke-static {p0, p1, v0}, Lcom/google/common/base/Preconditions;->checkPositionIndex(IILjava/lang/String;)I
@@ -2453,10 +2901,18 @@
 
 .method public static checkPositionIndex(IILjava/lang/String;)I
     .locals 1
-    .param p2    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "size",
+            "desc"
+        }
+    .end annotation
 
     if-ltz p0, :cond_0
 
@@ -2464,7 +2920,7 @@
 
     return p0
 
-    .line 1449
+    .line 1417
     :cond_0
     new-instance v0, Ljava/lang/IndexOutOfBoundsException;
 
@@ -2479,6 +2935,18 @@
 
 .method public static checkPositionIndexes(III)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "start",
+            "end",
+            "size"
+        }
+    .end annotation
 
     if-ltz p0, :cond_0
 
@@ -2488,7 +2956,7 @@
 
     return-void
 
-    .line 1479
+    .line 1447
     :cond_0
     new-instance v0, Ljava/lang/IndexOutOfBoundsException;
 
@@ -2503,6 +2971,14 @@
 
 .method public static checkState(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "expression"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
@@ -2520,9 +2996,19 @@
 .method public static checkState(ZLjava/lang/Object;)V
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessage"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
@@ -2543,16 +3029,24 @@
 
 .method public static checkState(ZLjava/lang/String;C)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 551
+    .line 559
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -2575,16 +3069,26 @@
 
 .method public static checkState(ZLjava/lang/String;CC)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 609
+    .line 616
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -2611,16 +3115,26 @@
 
 .method public static checkState(ZLjava/lang/String;CI)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 624
+    .line 630
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -2647,16 +3161,26 @@
 
 .method public static checkState(ZLjava/lang/String;CJ)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 639
+    .line 644
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -2683,20 +3207,30 @@
 
 .method public static checkState(ZLjava/lang/String;CLjava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 654
+    .line 659
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -2719,16 +3253,24 @@
 
 .method public static checkState(ZLjava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 565
+    .line 573
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -2751,16 +3293,26 @@
 
 .method public static checkState(ZLjava/lang/String;IC)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 669
+    .line 673
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -2787,16 +3339,26 @@
 
 .method public static checkState(ZLjava/lang/String;II)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 684
+    .line 687
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -2823,16 +3385,26 @@
 
 .method public static checkState(ZLjava/lang/String;IJ)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 699
+    .line 701
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -2859,20 +3431,30 @@
 
 .method public static checkState(ZLjava/lang/String;ILjava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 714
+    .line 716
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -2895,16 +3477,24 @@
 
 .method public static checkState(ZLjava/lang/String;J)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 579
+    .line 587
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -2927,16 +3517,26 @@
 
 .method public static checkState(ZLjava/lang/String;JC)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 729
+    .line 730
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -2963,10 +3563,20 @@
 
 .method public static checkState(ZLjava/lang/String;JI)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
@@ -2999,16 +3609,26 @@
 
 .method public static checkState(ZLjava/lang/String;JJ)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 759
+    .line 758
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -3035,20 +3655,30 @@
 
 .method public static checkState(ZLjava/lang/String;JLjava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p4    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 774
+    .line 773
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -3071,20 +3701,28 @@
 
 .method public static checkState(ZLjava/lang/String;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 594
+    .line 602
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -3103,20 +3741,30 @@
 
 .method public static checkState(ZLjava/lang/String;Ljava/lang/Object;C)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 789
+    .line 788
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -3139,20 +3787,30 @@
 
 .method public static checkState(ZLjava/lang/String;Ljava/lang/Object;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 804
+    .line 803
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -3175,20 +3833,30 @@
 
 .method public static checkState(ZLjava/lang/String;Ljava/lang/Object;J)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 819
+    .line 818
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -3211,24 +3879,34 @@
 
 .method public static checkState(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 837
+    .line 836
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -3247,28 +3925,40 @@
 
 .method public static checkState(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p4    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2",
+            "p3"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 856
+    .line 855
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -3287,32 +3977,46 @@
 
 .method public static checkState(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p3    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p4    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p5    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "p1",
+            "p2",
+            "p3",
+            "p4"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 876
+    .line 875
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -3332,19 +4036,31 @@
 .method public static varargs checkState(ZLjava/lang/String;[Ljava/lang/Object;)V
     .locals 0
     .param p1    # Ljava/lang/String;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # [Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "expression",
+            "errorMessageTemplate",
+            "errorMessageArgs"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
     return-void
 
-    .line 537
+    .line 545
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 

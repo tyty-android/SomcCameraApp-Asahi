@@ -319,7 +319,7 @@
 
     invoke-static {p1, p3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const p3, 0x7f0c008e
+    const p3, 0x7f0c0085
 
     const/4 v0, 0x0
 
@@ -339,7 +339,7 @@
     .line 55
     new-array p2, p2, [Ljava/lang/Integer;
 
-    const p3, 0x7f0902c9
+    const p3, 0x7f0902ce
 
     invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -347,7 +347,7 @@
 
     aput-object p3, p2, v0
 
-    const p3, 0x7f0902c8
+    const p3, 0x7f0902cd
 
     invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -377,7 +377,7 @@
 
     invoke-virtual {p2, p3}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const p2, 0x7f0902e2
+    const p2, 0x7f0902e7
 
     .line 61
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/view/widget/TextWidthAlignConstraintLayout;->findViewById(I)Landroid/view/View;
@@ -399,7 +399,7 @@
 
     invoke-virtual {p2, p3}, Landroidx/viewpager2/widget/ViewPager2;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$Adapter;)V
 
-    const p3, 0x7f0902d4
+    const p3, 0x7f0902d9
 
     .line 63
     invoke-virtual {p1, p3}, Ljp/co/sony/mc/camera/view/widget/TextWidthAlignConstraintLayout;->findViewById(I)Landroid/view/View;

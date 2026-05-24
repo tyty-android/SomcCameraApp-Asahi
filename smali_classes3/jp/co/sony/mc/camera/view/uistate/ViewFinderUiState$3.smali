@@ -53,7 +53,7 @@
     f = "ViewFinderUiState.kt"
     i = {}
     l = {
-        0x150
+        0xd2
     }
     m = "invokeSuspend"
     n = {}
@@ -167,7 +167,7 @@
 
     move-result-object v0
 
-    .line 335
+    .line 209
     iget v1, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$3;->label:I
 
     const/4 v2, 0x1
@@ -192,14 +192,14 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 336
+    .line 210
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$3;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$getCameraSettingsModel$p(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getAmberBlue()Landroidx/lifecycle/LiveData;
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getBrightness()Landroidx/lifecycle/LiveData;
 
     move-result-object p1
 
@@ -229,7 +229,7 @@
 
     return-object v0
 
-    .line 343
+    .line 223
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

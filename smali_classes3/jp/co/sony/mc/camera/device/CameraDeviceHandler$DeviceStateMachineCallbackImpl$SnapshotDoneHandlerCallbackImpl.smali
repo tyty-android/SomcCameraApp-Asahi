@@ -28,36 +28,55 @@
     .end annotation
 .end field
 
+.field private final mSnapshotRequest:Ljp/co/sony/mc/camera/device/SnapshotRequest;
+
 .field final synthetic this$1:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl;
 
 
 # direct methods
-.method private constructor <init>(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl;Ljava/util/List;)V
+.method private constructor <init>(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl;Ljp/co/sony/mc/camera/device/SnapshotRequest;Ljava/util/List;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$1",
+            "snapshotRequest",
+            "builderList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
+            "Ljp/co/sony/mc/camera/device/SnapshotRequest;",
             "Ljava/util/List<",
             "Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;",
             ">;)V"
         }
     .end annotation
 
-    .line 5844
+    .line 6145
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl$SnapshotDoneHandlerCallbackImpl;->this$1:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 5845
-    iput-object p2, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl$SnapshotDoneHandlerCallbackImpl;->localRequestBuilderList:Ljava/util/List;
+    .line 6146
+    iput-object p2, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl$SnapshotDoneHandlerCallbackImpl;->mSnapshotRequest:Ljp/co/sony/mc/camera/device/SnapshotRequest;
+
+    .line 6147
+    iput-object p3, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl$SnapshotDoneHandlerCallbackImpl;->localRequestBuilderList:Ljava/util/List;
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl;Ljava/util/List;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl$SnapshotDoneHandlerCallbackImpl-IA;)V
+.method synthetic constructor <init>(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl;Ljp/co/sony/mc/camera/device/SnapshotRequest;Ljava/util/List;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl$SnapshotDoneHandlerCallbackImpl-IA;)V
     .locals 0
 
-    invoke-direct {p0, p1, p2}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl$SnapshotDoneHandlerCallbackImpl;-><init>(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl;Ljava/util/List;)V
+    invoke-direct {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl$SnapshotDoneHandlerCallbackImpl;-><init>(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl;Ljp/co/sony/mc/camera/device/SnapshotRequest;Ljava/util/List;)V
 
     return-void
 .end method
@@ -67,8 +86,10 @@
 .method public run()V
     .locals 4
 
-    .line 5850
+    .line 6152
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
@@ -76,16 +97,19 @@
 
     new-array v0, v0, [Ljava/lang/String;
 
-    const/4 v1, 0x0
-
     const-string v2, "SnapshotDoneHandlerCallbackImpl invoked"
 
     aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 5851
+    .line 6153
     :cond_0
+    iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl$SnapshotDoneHandlerCallbackImpl;->mSnapshotRequest:Ljp/co/sony/mc/camera/device/SnapshotRequest;
+
+    iput-boolean v1, v0, Ljp/co/sony/mc/camera/device/SnapshotRequest;->isStoreYuv:Z
+
+    .line 6154
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl$SnapshotDoneHandlerCallbackImpl;->localRequestBuilderList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -106,19 +130,19 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
 
-    .line 5853
+    .line 6156
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger;->get(Ljp/co/sony/mc/camera/storage/RequestFactory$RequestBuilder;)Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;
 
     move-result-object v2
 
     if-eqz v2, :cond_1
 
-    .line 5854
+    .line 6157
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger;->get(Ljp/co/sony/mc/camera/storage/RequestFactory$RequestBuilder;)Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;
 
     move-result-object v1
 
-    .line 5855
+    .line 6158
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v2
@@ -127,11 +151,11 @@
 
     goto :goto_0
 
-    .line 5860
+    .line 6163
     :cond_2
     invoke-static {}, Ljp/co/sony/mc/camera/testevent/TestEventSender;->onPictureTaken()V
 
-    .line 5861
+    .line 6164
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl$SnapshotDoneHandlerCallbackImpl;->this$1:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl;->this$0:Ljp/co/sony/mc/camera/device/CameraDeviceHandler;
@@ -142,7 +166,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 5862
+    .line 6165
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl$SnapshotDoneHandlerCallbackImpl;->this$1:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl;->this$0:Ljp/co/sony/mc/camera/device/CameraDeviceHandler;

@@ -39,7 +39,7 @@
 .method private static synthetic $values()[Lcom/google/common/cache/CacheBuilder$OneWeigher;
     .locals 1
 
-    .line 206
+    .line 260
     sget-object v0, Lcom/google/common/cache/CacheBuilder$OneWeigher;->INSTANCE:Lcom/google/common/cache/CacheBuilder$OneWeigher;
 
     filled-new-array {v0}, [Lcom/google/common/cache/CacheBuilder$OneWeigher;
@@ -52,7 +52,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 207
+    .line 261
     new-instance v0, Lcom/google/common/cache/CacheBuilder$OneWeigher;
 
     const-string v1, "INSTANCE"
@@ -63,7 +63,7 @@
 
     sput-object v0, Lcom/google/common/cache/CacheBuilder$OneWeigher;->INSTANCE:Lcom/google/common/cache/CacheBuilder$OneWeigher;
 
-    .line 206
+    .line 260
     invoke-static {}, Lcom/google/common/cache/CacheBuilder$OneWeigher;->$values()[Lcom/google/common/cache/CacheBuilder$OneWeigher;
 
     move-result-object v0
@@ -75,13 +75,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 206
+    .line 260
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -89,8 +100,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/cache/CacheBuilder$OneWeigher;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 206
+    .line 260
     const-class v0, Lcom/google/common/cache/CacheBuilder$OneWeigher;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -105,7 +124,7 @@
 .method public static values()[Lcom/google/common/cache/CacheBuilder$OneWeigher;
     .locals 1
 
-    .line 206
+    .line 260
     sget-object v0, Lcom/google/common/cache/CacheBuilder$OneWeigher;->$VALUES:[Lcom/google/common/cache/CacheBuilder$OneWeigher;
 
     invoke-virtual {v0}, [Lcom/google/common/cache/CacheBuilder$OneWeigher;->clone()Ljava/lang/Object;
@@ -121,6 +140,16 @@
 # virtual methods
 .method public weigh(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
     const/4 p0, 0x1
 

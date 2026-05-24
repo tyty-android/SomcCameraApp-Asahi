@@ -26,7 +26,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 133
+    .line 127
     invoke-direct {p0}, Lcom/google/common/reflect/Types$ClassOwnership$1LocalClass;-><init>()V
 
     return-void

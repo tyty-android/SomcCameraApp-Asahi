@@ -51,6 +51,15 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/hash/BloomFilter;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bf"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -59,10 +68,10 @@
         }
     .end annotation
 
-    .line 469
+    .line 562
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 470
+    .line 563
     invoke-static {p1}, Lcom/google/common/hash/BloomFilter;->access$000(Lcom/google/common/hash/BloomFilter;)Lcom/google/common/hash/BloomFilterStrategies$LockFreeBitArray;
 
     move-result-object v0
@@ -75,21 +84,21 @@
 
     iput-object v0, p0, Lcom/google/common/hash/BloomFilter$SerialForm;->data:[J
 
-    .line 471
+    .line 564
     invoke-static {p1}, Lcom/google/common/hash/BloomFilter;->access$100(Lcom/google/common/hash/BloomFilter;)I
 
     move-result v0
 
     iput v0, p0, Lcom/google/common/hash/BloomFilter$SerialForm;->numHashFunctions:I
 
-    .line 472
+    .line 565
     invoke-static {p1}, Lcom/google/common/hash/BloomFilter;->access$200(Lcom/google/common/hash/BloomFilter;)Lcom/google/common/hash/Funnel;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/common/hash/BloomFilter$SerialForm;->funnel:Lcom/google/common/hash/Funnel;
 
-    .line 473
+    .line 566
     invoke-static {p1}, Lcom/google/common/hash/BloomFilter;->access$300(Lcom/google/common/hash/BloomFilter;)Lcom/google/common/hash/BloomFilter$Strategy;
 
     move-result-object p1
@@ -104,7 +113,7 @@
 .method readResolve()Ljava/lang/Object;
     .locals 7
 
-    .line 477
+    .line 570
     new-instance v6, Lcom/google/common/hash/BloomFilter;
 
     new-instance v1, Lcom/google/common/hash/BloomFilterStrategies$LockFreeBitArray;

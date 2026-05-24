@@ -20,7 +20,7 @@
 .field final monitor:Lcom/google/common/util/concurrent/Monitor;
 
 .field next:Lcom/google/common/util/concurrent/Monitor$Guard;
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -30,16 +30,24 @@
 # direct methods
 .method protected constructor <init>(Lcom/google/common/util/concurrent/Monitor;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "monitor"
+        }
+    .end annotation
 
-    .line 317
+    .line 320
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 309
+    .line 312
     iput v0, p0, Lcom/google/common/util/concurrent/Monitor$Guard;->waiterCount:I
 
-    .line 318
+    .line 321
     const-string v0, "monitor"
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -50,7 +58,7 @@
 
     iput-object v0, p0, Lcom/google/common/util/concurrent/Monitor$Guard;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
-    .line 319
+    .line 322
     invoke-static {p1}, Lcom/google/common/util/concurrent/Monitor;->access$000(Lcom/google/common/util/concurrent/Monitor;)Ljava/util/concurrent/locks/ReentrantLock;
 
     move-result-object p1

@@ -74,6 +74,14 @@
 
 .method private getImageDetailFragment(Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;)Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDetailFragment;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "item"
+        }
+    .end annotation
 
     .line 119
     sget-object p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeCameraSettingsImageDetailFragment;->Companion:Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeCameraSettingsImageDetailFragment$Companion;
@@ -127,6 +135,19 @@
 
 .method private onSettingValueChanged(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljp/co/sony/mc/camera/setting/SettingAppearance;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value",
+            "appearance"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -255,14 +276,14 @@
 
     new-instance v0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;
 
-    const/4 v6, 0x0
-
-    invoke-direct {v0, v6}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;-><init>(Z)V
+    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;-><init>()V
 
     .line 128
     invoke-virtual {v0, v2, v3}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->get(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     move-result-object v7
+
+    const/4 v6, 0x0
 
     move-object v0, v8
 
@@ -316,7 +337,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f090136
+    const v3, 0x7f090135
 
     invoke-virtual {v1, v3, v0, v2}, Landroidx/fragment/app/FragmentTransaction;->replace(ILandroidx/fragment/app/Fragment;Ljava/lang/String;)Landroidx/fragment/app/FragmentTransaction;
 
@@ -366,6 +387,18 @@
 # virtual methods
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "inflater",
+            "container",
+            "savedInstanceState"
+        }
+    .end annotation
 
     .line 58
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
@@ -376,7 +409,7 @@
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->mRemoconMenuActivity:Ljp/co/sony/mc/camera/RemoconMenuActivity;
 
-    const p3, 0x7f0c00b3
+    const p3, 0x7f0c00aa
 
     const/4 v0, 0x0
 
@@ -385,7 +418,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f0904a9
+    const p2, 0x7f0904aa
 
     .line 61
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -394,7 +427,7 @@
 
     check-cast p2, Landroid/widget/TextView;
 
-    const p3, 0x7f110025
+    const p3, 0x7f110024
 
     .line 62
     invoke-virtual {p0, p3}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->getString(I)Ljava/lang/String;
@@ -424,7 +457,7 @@
     .line 66
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->showFragment()V
 
-    const p2, 0x7f0900a3
+    const p2, 0x7f0900ab
 
     .line 68
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;

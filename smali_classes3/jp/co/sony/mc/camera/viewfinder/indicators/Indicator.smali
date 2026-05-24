@@ -14,6 +14,14 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/ImageView;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
     .line 14
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -53,6 +61,14 @@
 
 .method public set(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "on"
+        }
+    .end annotation
 
     .line 36
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/viewfinder/indicators/Indicator;->mOn:Z
@@ -65,6 +81,14 @@
 
 .method public setImageResource(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "resource"
+        }
+    .end annotation
 
     .line 22
     iget-object p0, p0, Ljp/co/sony/mc/camera/viewfinder/indicators/Indicator;->mView:Landroid/widget/ImageView;
@@ -76,6 +100,14 @@
 
 .method public setSensorOrientation(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "orientation"
+        }
+    .end annotation
 
     .line 41
     iget-object p0, p0, Ljp/co/sony/mc/camera/viewfinder/indicators/Indicator;->mView:Landroid/widget/ImageView;

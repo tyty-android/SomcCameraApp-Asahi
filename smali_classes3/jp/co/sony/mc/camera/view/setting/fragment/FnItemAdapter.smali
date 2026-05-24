@@ -58,6 +58,17 @@
 
 .method public constructor <init>(Ljava/util/List;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "functionCustomList",
+            "selectIndex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -96,6 +107,14 @@
 
 .method public getItemViewType(I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "position"
+        }
+    .end annotation
 
     .line 80
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/FnItemAdapter;->mFunctionCustomList:Ljava/util/List;
@@ -120,6 +139,16 @@
 
 .method public bridge synthetic onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "holder",
+            "position"
+        }
+    .end annotation
 
     .line 31
     check-cast p1, Ljp/co/sony/mc/camera/view/setting/fragment/FnItemAdapter$FnItemViewHolder;
@@ -131,6 +160,16 @@
 
 .method public onBindViewHolder(Ljp/co/sony/mc/camera/view/setting/fragment/FnItemAdapter$FnItemViewHolder;I)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "holder",
+            "position"
+        }
+    .end annotation
 
     .line 89
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/FnItemAdapter;->mFunctionCustomList:Ljava/util/List;
@@ -223,7 +262,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f1100ee
+    const v2, 0x7f110102
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -237,7 +276,7 @@
     .line 114
     iget-object p2, p1, Ljp/co/sony/mc/camera/view/setting/fragment/FnItemAdapter$FnItemViewHolder;->itemView:Landroid/view/View;
 
-    const v2, 0x7f0603bb
+    const v2, 0x7f0603a4
 
     invoke-virtual {p2, v2}, Landroid/view/View;->setBackgroundResource(I)V
 
@@ -277,7 +316,7 @@
     :cond_1
     iget-object p0, p1, Ljp/co/sony/mc/camera/view/setting/fragment/FnItemAdapter$FnItemViewHolder;->itemView:Landroid/view/View;
 
-    const p2, 0x7f0603aa
+    const p2, 0x7f060393
 
     invoke-virtual {p0, p2}, Landroid/view/View;->setBackgroundResource(I)V
 
@@ -292,6 +331,16 @@
 
 .method public bridge synthetic onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "parent",
+            "viewType"
+        }
+    .end annotation
 
     .line 31
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/view/setting/fragment/FnItemAdapter;->onCreateViewHolder(Landroid/view/ViewGroup;I)Ljp/co/sony/mc/camera/view/setting/fragment/FnItemAdapter$FnItemViewHolder;
@@ -303,6 +352,16 @@
 
 .method public onCreateViewHolder(Landroid/view/ViewGroup;I)Ljp/co/sony/mc/camera/view/setting/fragment/FnItemAdapter$FnItemViewHolder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "parent",
+            "viewType"
+        }
+    .end annotation
 
     const/4 p0, 0x2
 
@@ -319,7 +378,7 @@
 
     move-result-object p0
 
-    const p2, 0x7f0c008b
+    const p2, 0x7f0c0082
 
     invoke-virtual {p0, p2, p1, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -337,7 +396,7 @@
 
     move-result-object p0
 
-    const p2, 0x7f0c008a
+    const p2, 0x7f0c0081
 
     invoke-virtual {p0, p2, p1, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -360,7 +419,7 @@
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/FnItemAdapter$FnItemViewHolder;->itemView:Landroid/view/View;
 
-    const v0, 0x7f0603aa
+    const v0, 0x7f060393
 
     invoke-virtual {p0, v0}, Landroid/view/View;->setBackgroundResource(I)V
 
@@ -369,6 +428,14 @@
 
 .method public setOnFnItemClickListener(Ljp/co/sony/mc/camera/view/setting/fragment/FnItemAdapter$OnFnItemClickListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "onFnItemClickListener"
+        }
+    .end annotation
 
     .line 51
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/FnItemAdapter;->mOnFnItemClickListener:Ljp/co/sony/mc/camera/view/setting/fragment/FnItemAdapter$OnFnItemClickListener;
@@ -378,6 +445,14 @@
 
 .method public setSelectIndex(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
     .line 55
     iput p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/FnItemAdapter;->mSelectIndex:I

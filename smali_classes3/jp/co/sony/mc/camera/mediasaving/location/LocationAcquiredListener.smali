@@ -5,6 +5,16 @@
 
 # virtual methods
 .method public abstract onAcquired(ZZ)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "gps",
+            "net"
+        }
+    .end annotation
 .end method
 
 .method public abstract onDisabled()V

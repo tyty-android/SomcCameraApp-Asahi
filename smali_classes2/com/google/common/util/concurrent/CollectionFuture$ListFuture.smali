@@ -29,6 +29,17 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/ImmutableCollection;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "futures",
+            "allMustSucceed"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -39,10 +50,10 @@
         }
     .end annotation
 
-    .line 85
+    .line 91
     invoke-direct {p0, p1, p2}, Lcom/google/common/util/concurrent/CollectionFuture;-><init>(Lcom/google/common/collect/ImmutableCollection;Z)V
 
-    .line 86
+    .line 92
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/CollectionFuture$ListFuture;->init()V
 
     return-void
@@ -52,8 +63,16 @@
 # virtual methods
 .method public bridge synthetic combine(Ljava/util/List;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "values"
+        }
+    .end annotation
 
-    .line 81
+    .line 86
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/CollectionFuture$ListFuture;->combine(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p0
@@ -63,6 +82,15 @@
 
 .method public combine(Ljava/util/List;)Ljava/util/List;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "values"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -74,7 +102,7 @@
         }
     .end annotation
 
-    .line 91
+    .line 97
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result p0
@@ -83,7 +111,7 @@
 
     move-result-object p0
 
-    .line 92
+    .line 98
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -103,7 +131,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 93
+    .line 99
     iget-object v0, v0, Lcom/google/common/util/concurrent/CollectionFuture$Present;->value:Ljava/lang/Object;
 
     goto :goto_1
@@ -116,7 +144,7 @@
 
     goto :goto_0
 
-    .line 95
+    .line 101
     :cond_1
     invoke-static {p0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 

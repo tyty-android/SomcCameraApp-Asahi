@@ -3,40 +3,34 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function2;
+.implements Ljava/util/function/BiConsumer;
 
 
 # instance fields
-.field public final synthetic f$0:Ljava/util/List;
+.field public final synthetic f$0:Lkotlin/jvm/functions/Function2;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/util/List;)V
+.method public synthetic constructor <init>(Lkotlin/jvm/functions/Function2;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/LensUiState$$ExternalSyntheticLambda7;->f$0:Ljava/util/List;
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/LensUiState$$ExternalSyntheticLambda7;->f$0:Lkotlin/jvm/functions/Function2;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final accept(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
 
     .line 0
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/LensUiState$$ExternalSyntheticLambda7;->f$0:Ljava/util/List;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/LensUiState$$ExternalSyntheticLambda7;->f$0:Lkotlin/jvm/functions/Function2;
 
-    check-cast p1, Lkotlin/Pair;
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/uistate/LensUiState;->$r8$lambda$pATbUH2jvmpkq4Kmr45gnYyysP4(Lkotlin/jvm/functions/Function2;Ljava/lang/Object;Ljava/lang/Object;)V
 
-    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;
-
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/uistate/LensUiState;->$r8$lambda$paS3lDHZ3g6k9A9WCkoW68P08Ak(Ljava/util/List;Lkotlin/Pair;Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
+    return-void
 .end method

@@ -24,7 +24,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/PreviewOverlayHintTextViewBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0903cd
+    const v1, 0x7f0903ce
 
     const/4 v2, 0x1
 
@@ -36,6 +36,16 @@
 
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root"
+        }
+    .end annotation
 
     .line 26
     sget-object v0, Ljp/co/sony/mc/camera/databinding/PreviewOverlayHintTextViewBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -55,6 +65,18 @@
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root",
+            "bindings"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -87,7 +109,7 @@
 
     const-wide/16 v0, -0x1
 
-    .line 114
+    .line 120
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/PreviewOverlayHintTextViewBindingImpl;->mDirtyFlags:J
 
     .line 33
@@ -116,21 +138,21 @@
 .method protected executeBindings()V
     .locals 2
 
-    .line 102
+    .line 108
     monitor-enter p0
 
     const-wide/16 v0, 0x0
 
-    .line 104
+    .line 110
     :try_start_0
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/PreviewOverlayHintTextViewBindingImpl;->mDirtyFlags:J
 
-    .line 105
+    .line 111
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 107
+    .line 113
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/PreviewOverlayHintTextViewBindingImpl;->rightHintTextContainerSub:Landroidx/databinding/ViewStubProxy;
 
     invoke-virtual {v0}, Landroidx/databinding/ViewStubProxy;->getBinding()Landroidx/databinding/ViewDataBinding;
@@ -139,7 +161,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 108
+    .line 114
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/PreviewOverlayHintTextViewBindingImpl;->rightHintTextContainerSub:Landroidx/databinding/ViewStubProxy;
 
     invoke-virtual {p0}, Landroidx/databinding/ViewStubProxy;->getBinding()Landroidx/databinding/ViewDataBinding;
@@ -154,7 +176,7 @@
     :catchall_0
     move-exception v0
 
-    .line 105
+    .line 111
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -210,7 +232,7 @@
     .line 42
     monitor-enter p0
 
-    const-wide/16 v0, 0x10
+    const-wide/16 v0, 0x20
 
     .line 43
     :try_start_0
@@ -240,16 +262,53 @@
 
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "localFieldId",
+            "object",
+            "fieldId"
+        }
+    .end annotation
 
     const/4 p0, 0x0
 
     return p0
 .end method
 
+.method public setAiSuggestionUiState(Ljp/co/sony/mc/camera/view/uistate/AiSuggestionUiState;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "AiSuggestionUiState"
+        }
+    .end annotation
+
+    .line 92
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/PreviewOverlayHintTextViewBindingImpl;->mAiSuggestionUiState:Ljp/co/sony/mc/camera/view/uistate/AiSuggestionUiState;
+
+    return-void
+.end method
+
 .method public setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "CameraSettingsModel"
+        }
+    .end annotation
 
-    .line 80
+    .line 83
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/PreviewOverlayHintTextViewBindingImpl;->mCameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     return-void
@@ -257,8 +316,16 @@
 
 .method public setOrientationViewModel(Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "OrientationViewModel"
+        }
+    .end annotation
 
-    .line 83
+    .line 86
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/PreviewOverlayHintTextViewBindingImpl;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
     return-void
@@ -266,17 +333,37 @@
 
 .method public setProModeFocusUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ProModeFocusUiState"
+        }
+    .end annotation
 
-    .line 89
+    .line 95
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/PreviewOverlayHintTextViewBindingImpl;->mProModeFocusUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;
 
     return-void
 .end method
 
 .method public setVariable(ILjava/lang/Object;)Z
-    .locals 1
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "variableId",
+            "variable"
+        }
+    .end annotation
 
-    const/16 v0, 0x8
+    const/16 v0, 0xb
+
+    const/4 v1, 0x1
 
     if-ne v0, p1, :cond_0
 
@@ -288,7 +375,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x16
+    const/16 v0, 0x19
 
     if-ne v0, p1, :cond_1
 
@@ -300,7 +387,7 @@
     goto :goto_0
 
     :cond_1
-    const/16 v0, 0x25
+    const/16 v0, 0x28
 
     if-ne v0, p1, :cond_2
 
@@ -312,31 +399,46 @@
     goto :goto_0
 
     :cond_2
-    const/16 v0, 0x1b
-
-    if-ne v0, p1, :cond_3
+    if-ne v1, p1, :cond_3
 
     .line 71
+    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/AiSuggestionUiState;
+
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/PreviewOverlayHintTextViewBindingImpl;->setAiSuggestionUiState(Ljp/co/sony/mc/camera/view/uistate/AiSuggestionUiState;)V
+
+    goto :goto_0
+
+    :cond_3
+    const/16 v0, 0x1e
+
+    if-ne v0, p1, :cond_4
+
+    .line 74
     check-cast p2, Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;
 
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/PreviewOverlayHintTextViewBindingImpl;->setProModeFocusUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;)V
 
+    goto :goto_0
+
+    :cond_4
+    const/4 v1, 0x0
+
     :goto_0
-    const/4 p0, 0x1
-
-    goto :goto_1
-
-    :cond_3
-    const/4 p0, 0x0
-
-    :goto_1
-    return p0
+    return v1
 .end method
 
 .method public setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ViewFinderUiState"
+        }
+    .end annotation
 
-    .line 86
+    .line 89
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/PreviewOverlayHintTextViewBindingImpl;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     return-void

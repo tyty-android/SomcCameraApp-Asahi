@@ -26,13 +26,24 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;Ljava/lang/Runnable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$runnable"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 6656
+    .line 5522
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl$1;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl$1;->val$runnable:Ljava/lang/Runnable;
@@ -47,12 +58,12 @@
 .method public onCameraDeviceClosed()V
     .locals 0
 
-    .line 6659
+    .line 5525
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl$1;->val$runnable:Ljava/lang/Runnable;
 
     if-eqz p0, :cond_0
 
-    .line 6660
+    .line 5526
     invoke-interface {p0}, Ljava/lang/Runnable;->run()V
 
     :cond_0

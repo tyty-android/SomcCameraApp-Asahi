@@ -33,6 +33,14 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 126
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -71,6 +79,14 @@
 # virtual methods
 .method public getBitmap(Landroid/net/Uri;)Landroid/graphics/Bitmap;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "uri"
+        }
+    .end annotation
 
     const/4 p0, 0x0
 
@@ -79,6 +95,14 @@
 
 .method public prepareBitmap(Landroid/net/Uri;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "uri"
+        }
+    .end annotation
 
     return-void
 .end method

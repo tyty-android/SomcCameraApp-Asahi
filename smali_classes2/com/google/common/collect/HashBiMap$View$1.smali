@@ -40,13 +40,21 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/HashBiMap$View;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 677
+    .line 694
     iput-object p1, p0, Lcom/google/common/collect/HashBiMap$View$1;->this$0:Lcom/google/common/collect/HashBiMap$View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 678
+    .line 695
     iget-object v0, p1, Lcom/google/common/collect/HashBiMap$View;->biMap:Lcom/google/common/collect/HashBiMap;
 
     invoke-static {v0}, Lcom/google/common/collect/HashBiMap;->access$000(Lcom/google/common/collect/HashBiMap;)I
@@ -57,17 +65,17 @@
 
     const/4 v0, -0x1
 
-    .line 679
+    .line 696
     iput v0, p0, Lcom/google/common/collect/HashBiMap$View$1;->indexToRemove:I
 
-    .line 680
+    .line 697
     iget-object v0, p1, Lcom/google/common/collect/HashBiMap$View;->biMap:Lcom/google/common/collect/HashBiMap;
 
     iget v0, v0, Lcom/google/common/collect/HashBiMap;->modCount:I
 
     iput v0, p0, Lcom/google/common/collect/HashBiMap$View$1;->expectedModCount:I
 
-    .line 684
+    .line 701
     iget-object p1, p1, Lcom/google/common/collect/HashBiMap$View;->biMap:Lcom/google/common/collect/HashBiMap;
 
     iget p1, p1, Lcom/google/common/collect/HashBiMap;->size:I
@@ -80,7 +88,7 @@
 .method private checkForComodification()V
     .locals 1
 
-    .line 687
+    .line 704
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$View$1;->this$0:Lcom/google/common/collect/HashBiMap$View;
 
     iget-object v0, v0, Lcom/google/common/collect/HashBiMap$View;->biMap:Lcom/google/common/collect/HashBiMap;
@@ -93,7 +101,7 @@
 
     return-void
 
-    .line 688
+    .line 705
     :cond_0
     new-instance p0, Ljava/util/ConcurrentModificationException;
 
@@ -107,10 +115,10 @@
 .method public hasNext()Z
     .locals 2
 
-    .line 694
+    .line 711
     invoke-direct {p0}, Lcom/google/common/collect/HashBiMap$View$1;->checkForComodification()V
 
-    .line 695
+    .line 712
     iget v0, p0, Lcom/google/common/collect/HashBiMap$View$1;->index:I
 
     const/4 v1, -0x2
@@ -134,20 +142,23 @@
 
 .method public next()Ljava/lang/Object;
     .locals 3
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TT;"
         }
     .end annotation
 
-    .line 700
+    .line 718
     invoke-virtual {p0}, Lcom/google/common/collect/HashBiMap$View$1;->hasNext()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 703
+    .line 721
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$View$1;->this$0:Lcom/google/common/collect/HashBiMap$View;
 
     iget v1, p0, Lcom/google/common/collect/HashBiMap$View$1;->index:I
@@ -156,12 +167,12 @@
 
     move-result-object v0
 
-    .line 704
+    .line 722
     iget v1, p0, Lcom/google/common/collect/HashBiMap$View$1;->index:I
 
     iput v1, p0, Lcom/google/common/collect/HashBiMap$View$1;->indexToRemove:I
 
-    .line 705
+    .line 723
     iget-object v1, p0, Lcom/google/common/collect/HashBiMap$View$1;->this$0:Lcom/google/common/collect/HashBiMap$View;
 
     iget-object v1, v1, Lcom/google/common/collect/HashBiMap$View;->biMap:Lcom/google/common/collect/HashBiMap;
@@ -176,7 +187,7 @@
 
     iput v1, p0, Lcom/google/common/collect/HashBiMap$View$1;->index:I
 
-    .line 706
+    .line 724
     iget v1, p0, Lcom/google/common/collect/HashBiMap$View$1;->remaining:I
 
     add-int/lit8 v1, v1, -0x1
@@ -185,7 +196,7 @@
 
     return-object v0
 
-    .line 701
+    .line 719
     :cond_0
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -197,10 +208,10 @@
 .method public remove()V
     .locals 3
 
-    .line 712
+    .line 730
     invoke-direct {p0}, Lcom/google/common/collect/HashBiMap$View$1;->checkForComodification()V
 
-    .line 713
+    .line 731
     iget v0, p0, Lcom/google/common/collect/HashBiMap$View$1;->indexToRemove:I
 
     const/4 v1, -0x1
@@ -217,7 +228,7 @@
     :goto_0
     invoke-static {v0}, Lcom/google/common/collect/CollectPreconditions;->checkRemove(Z)V
 
-    .line 714
+    .line 732
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$View$1;->this$0:Lcom/google/common/collect/HashBiMap$View;
 
     iget-object v0, v0, Lcom/google/common/collect/HashBiMap$View;->biMap:Lcom/google/common/collect/HashBiMap;
@@ -226,7 +237,7 @@
 
     invoke-virtual {v0, v2}, Lcom/google/common/collect/HashBiMap;->removeEntry(I)V
 
-    .line 715
+    .line 733
     iget v0, p0, Lcom/google/common/collect/HashBiMap$View$1;->index:I
 
     iget-object v2, p0, Lcom/google/common/collect/HashBiMap$View$1;->this$0:Lcom/google/common/collect/HashBiMap$View;
@@ -237,16 +248,16 @@
 
     if-ne v0, v2, :cond_1
 
-    .line 716
+    .line 734
     iget v0, p0, Lcom/google/common/collect/HashBiMap$View$1;->indexToRemove:I
 
     iput v0, p0, Lcom/google/common/collect/HashBiMap$View$1;->index:I
 
-    .line 718
+    .line 736
     :cond_1
     iput v1, p0, Lcom/google/common/collect/HashBiMap$View$1;->indexToRemove:I
 
-    .line 719
+    .line 737
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$View$1;->this$0:Lcom/google/common/collect/HashBiMap$View;
 
     iget-object v0, v0, Lcom/google/common/collect/HashBiMap$View;->biMap:Lcom/google/common/collect/HashBiMap;

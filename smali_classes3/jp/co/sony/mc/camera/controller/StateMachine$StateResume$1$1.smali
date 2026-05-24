@@ -28,13 +28,26 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine$StateResume$1;Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/Storage$StorageReadyState;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$2",
+            "val$type",
+            "val$state"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 2406
+    .line 2439
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateResume$1$1;->this$2:Ljp/co/sony/mc/camera/controller/StateMachine$StateResume$1;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateResume$1$1;->val$type:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
@@ -51,7 +64,7 @@
 .method public run()V
     .locals 3
 
-    .line 2409
+    .line 2442
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateResume$1$1;->this$2:Ljp/co/sony/mc/camera/controller/StateMachine$StateResume$1;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/controller/StateMachine$StateResume$1;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$StateResume;

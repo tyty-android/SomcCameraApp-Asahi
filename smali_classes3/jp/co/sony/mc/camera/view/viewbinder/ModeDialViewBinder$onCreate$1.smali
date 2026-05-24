@@ -55,7 +55,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder$onCreate$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;
 
-    .line 77
+    .line 89
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -70,14 +70,14 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 83
+    .line 95
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getSelectedItemPosition()I
 
     move-result v0
 
     if-eq v0, p2, :cond_0
 
-    .line 84
+    .line 96
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder$onCreate$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;->access$getCameraStatusModel(Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;)Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
@@ -100,10 +100,10 @@
 
     if-eq p2, p1, :cond_0
 
-    .line 88
+    .line 100
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder$onCreate$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;
 
-    .line 89
+    .line 101
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;->access$getModeDialUiState(Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;)Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;
 
     move-result-object p1
@@ -130,7 +130,7 @@
 
     check-cast p1, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;
 
-    .line 88
+    .line 100
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;->access$setCapturingUiMode(Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;)V
 
     :cond_0
@@ -144,7 +144,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 96
+    .line 108
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getSelectedItemPosition()I
 
     move-result v0
@@ -153,10 +153,10 @@
 
     invoke-virtual {p1, v0, v1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->setSelectedItem(IZ)V
 
-    .line 97
+    .line 109
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder$onCreate$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;
 
-    .line 98
+    .line 110
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;->access$getModeDialUiState(Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;)Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;
 
     move-result-object v2
@@ -187,10 +187,10 @@
 
     check-cast v2, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;
 
-    .line 97
+    .line 109
     invoke-static {v0, v2}, Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;->access$setCapturingUiMode(Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;)V
 
-    .line 100
+    .line 112
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder$onCreate$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;->access$getCameraStatusModel(Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;)Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
@@ -217,7 +217,7 @@
 
     invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 79
+    .line 91
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder$onCreate$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;->access$getCameraStatusModel(Ljp/co/sony/mc/camera/view/viewbinder/ModeDialViewBinder;)Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;

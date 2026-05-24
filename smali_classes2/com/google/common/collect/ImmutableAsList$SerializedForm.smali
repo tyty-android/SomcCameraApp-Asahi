@@ -35,6 +35,15 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/ImmutableCollection;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "collection"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -43,10 +52,10 @@
         }
     .end annotation
 
-    .line 64
+    .line 68
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 65
+    .line 69
     iput-object p1, p0, Lcom/google/common/collect/ImmutableAsList$SerializedForm;->collection:Lcom/google/common/collect/ImmutableCollection;
 
     return-void
@@ -57,7 +66,7 @@
 .method readResolve()Ljava/lang/Object;
     .locals 0
 
-    .line 69
+    .line 73
     iget-object p0, p0, Lcom/google/common/collect/ImmutableAsList$SerializedForm;->collection:Lcom/google/common/collect/ImmutableCollection;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableCollection;->asList()Lcom/google/common/collect/ImmutableList;

@@ -51,6 +51,14 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "in"
+        }
+    .end annotation
 
     .line 33
     invoke-direct {p0}, Ljp/co/sony/mc/camera/configuration/parameters/ExtensionData;-><init>()V
@@ -85,6 +93,15 @@
 
 .method constructor <init>(Ljava/util/HashMap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dispCustom"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -106,6 +123,14 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "extensionData"
+        }
+    .end annotation
 
     .line 29
     invoke-direct {p0}, Ljp/co/sony/mc/camera/configuration/parameters/ExtensionData;-><init>()V
@@ -124,6 +149,14 @@
 
 .method public static getDefaultExtensionValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mode"
+        }
+    .end annotation
 
     .line 76
     new-instance v0, Ljava/util/HashMap;
@@ -281,6 +314,14 @@
 
 .method public isChecked(Ljp/co/sony/mc/camera/configuration/parameters/DispCustom;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dispCustom"
+        }
+    .end annotation
 
     .line 56
     iget-object p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;->mDispCustom:Ljava/util/HashMap;
@@ -317,6 +358,16 @@
 
 .method public set(Ljp/co/sony/mc/camera/configuration/parameters/DispCustom;Ljava/lang/Boolean;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
 
     .line 61
     iget-object p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;->mDispCustom:Ljava/util/HashMap;
@@ -332,6 +383,16 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dest",
+            "flags"
+        }
+    .end annotation
 
     .line 52
     iget-object p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;->mDispCustom:Ljava/util/HashMap;

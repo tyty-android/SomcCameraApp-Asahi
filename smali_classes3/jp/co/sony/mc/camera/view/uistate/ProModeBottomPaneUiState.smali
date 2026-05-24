@@ -333,16 +333,6 @@
     return p0
 .end method
 
-.method public static synthetic $r8$lambda$VjUwa9CnaZ6XDB95n-4Fzj3rU4A(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;)[Ljp/co/sony/mc/camera/configuration/parameters/Iso;
-    .locals 0
-
-    invoke-static {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->isoOptions$lambda$4(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;)[Ljp/co/sony/mc/camera/configuration/parameters/Iso;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
 .method public static synthetic $r8$lambda$aXnjVvcbfbuGnv_9qPOL4z43sxM(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/Ev;
     .locals 0
 
@@ -403,6 +393,16 @@
     return p0
 .end method
 
+.method public static synthetic $r8$lambda$uJWfZN_N-iw15Z5u1_arzcfdw9g(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljava/lang/Boolean;Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;)[Ljp/co/sony/mc/camera/configuration/parameters/Iso;
+    .locals 0
+
+    invoke-static/range {p0 .. p6}, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->isoOptions$lambda$4(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljava/lang/Boolean;Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;)[Ljp/co/sony/mc/camera/configuration/parameters/Iso;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public static synthetic $r8$lambda$wc9s5WkSDPcBUo2KouFODJvKODo(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
     .locals 0
 
@@ -420,7 +420,7 @@
 .end method
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;)V
-    .locals 9
+    .locals 11
 
     const-string v0, "cameraStatusModel"
 
@@ -589,55 +589,65 @@
     move-result-object v4
 
     .line 88
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getHybridZoom()Landroidx/lifecycle/LiveData;
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getBokeh()Landroidx/lifecycle/LiveData;
 
     move-result-object v5
 
     .line 89
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getVideoHdr()Landroidx/lifecycle/LiveData;
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getHybridZoom()Landroidx/lifecycle/LiveData;
 
     move-result-object v6
 
     .line 90
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getColorToneProfile()Landroidx/lifecycle/LiveData;
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getVideoHdr()Landroidx/lifecycle/LiveData;
 
     move-result-object v7
 
-    new-instance v8, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$$ExternalSyntheticLambda8;
+    .line 91
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getColorToneProfile()Landroidx/lifecycle/LiveData;
 
-    invoke-direct {v8}, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$$ExternalSyntheticLambda8;-><init>()V
+    move-result-object v8
+
+    .line 92
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getVideoStabilizer()Landroidx/lifecycle/LiveData;
+
+    move-result-object v9
+
+    new-instance v10, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$$ExternalSyntheticLambda8;
+
+    invoke-direct {v10}, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$$ExternalSyntheticLambda8;-><init>()V
 
     .line 85
-    invoke-virtual/range {v2 .. v8}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function5;)Landroidx/lifecycle/LiveData;
+    invoke-virtual/range {v2 .. v10}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function7;)Landroidx/lifecycle/LiveData;
 
     move-result-object v1
 
-    .line 93
+    .line 96
     invoke-static {v1}, Landroidx/lifecycle/Transformations;->distinctUntilChanged(Landroidx/lifecycle/LiveData;)Landroidx/lifecycle/LiveData;
 
     move-result-object v1
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->isoOptions:Landroidx/lifecycle/LiveData;
 
-    .line 95
+    .line 98
     sget-object v2, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 96
+    .line 99
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
 
     move-result-object v3
 
-    .line 97
+    .line 100
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCameraId()Landroidx/lifecycle/LiveData;
 
     move-result-object v4
 
-    .line 98
+    .line 101
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCaptureFps()Landroidx/lifecycle/LiveData;
 
     move-result-object v5
 
-    .line 99
+    .line 102
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getVideoMfHdr()Landroidx/lifecycle/LiveData;
 
     move-result-object v6
@@ -646,22 +656,22 @@
 
     invoke-direct {v7}, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$$ExternalSyntheticLambda9;-><init>()V
 
-    .line 95
+    .line 98
     invoke-virtual/range {v2 .. v7}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function4;)Landroidx/lifecycle/LiveData;
 
     move-result-object v1
 
-    .line 102
+    .line 105
     invoke-static {v1}, Landroidx/lifecycle/Transformations;->distinctUntilChanged(Landroidx/lifecycle/LiveData;)Landroidx/lifecycle/LiveData;
 
     move-result-object v1
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->ssOptions:Landroidx/lifecycle/LiveData;
 
-    .line 104
+    .line 107
     sget-object v2, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 106
+    .line 109
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getShutterSpeed()Landroidx/lifecycle/LiveData;
 
     move-result-object v3
@@ -670,22 +680,22 @@
 
     invoke-direct {v4}, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$$ExternalSyntheticLambda10;-><init>()V
 
-    .line 104
+    .line 107
     invoke-virtual {v2, v1, v3, v4}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object v1
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->ssProgress:Landroidx/lifecycle/LiveData;
 
-    .line 111
+    .line 114
     sget-object v1, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 112
+    .line 115
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getDisplayMode()Landroidx/lifecycle/LiveData;
 
     move-result-object v2
 
-    .line 113
+    .line 116
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->isPro()Landroidx/lifecycle/LiveData;
 
     move-result-object v3
@@ -694,17 +704,17 @@
 
     invoke-direct {v4}, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$$ExternalSyntheticLambda11;-><init>()V
 
-    .line 111
+    .line 114
     invoke-virtual {v1, v2, v3, v4}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object v1
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->dispUiVisible:Landroidx/lifecycle/LiveData;
 
-    .line 118
+    .line 121
     sget-object v2, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 120
+    .line 123
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getRecording()Landroidx/lifecycle/LiveData;
 
     move-result-object p1
@@ -713,14 +723,14 @@
 
     invoke-direct {v3}, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$$ExternalSyntheticLambda1;-><init>()V
 
-    .line 118
+    .line 121
     invoke-virtual {v2, v1, p1, v3}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object p1
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->contentsContainerVisible:Landroidx/lifecycle/LiveData;
 
-    .line 125
+    .line 128
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;->getUpdateCtrlEnableTrigger()Landroidx/lifecycle/LiveData;
 
     move-result-object p1
@@ -735,10 +745,10 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->proModeUiEnabled:Landroidx/lifecycle/LiveData;
 
-    .line 134
+    .line 137
     sget-object v1, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 136
+    .line 139
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;->isAnyFnMenuOpened()Landroidx/lifecycle/LiveData;
 
     move-result-object v2
@@ -747,27 +757,27 @@
 
     invoke-direct {v3}, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$$ExternalSyntheticLambda3;-><init>()V
 
-    .line 134
+    .line 137
     invoke-virtual {v1, p1, v2, v3}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object p1
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->dispButtonEnabled:Landroidx/lifecycle/LiveData;
 
-    .line 141
+    .line 144
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->isPro()Landroidx/lifecycle/LiveData;
 
     move-result-object p1
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->dispButtonVisible:Landroidx/lifecycle/LiveData;
 
-    .line 144
+    .line 147
     sget-object p1, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 145
+    .line 148
     check-cast v0, Landroidx/lifecycle/LiveData;
 
-    .line 146
+    .line 149
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;->isAnyFnMenuOpened()Landroidx/lifecycle/LiveData;
 
     move-result-object p2
@@ -776,7 +786,7 @@
 
     invoke-direct {p3}, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$$ExternalSyntheticLambda4;-><init>()V
 
-    .line 144
+    .line 147
     invoke-virtual {p1, v0, p2, p3}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object p1
@@ -793,7 +803,7 @@
 
     if-nez p1, :cond_2
 
-    .line 150
+    .line 153
     sget-object p1, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$CameraStatusBarSelectType$Ev;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$CameraStatusBarSelectType$Ev;
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -802,12 +812,12 @@
 
     if-eqz p1, :cond_0
 
-    .line 151
+    .line 154
     sget-object v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;->EV:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;
 
     goto :goto_0
 
-    .line 154
+    .line 157
     :cond_0
     sget-object p1, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$CameraStatusBarSelectType$Ss;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$CameraStatusBarSelectType$Ss;
 
@@ -817,12 +827,12 @@
 
     if-eqz p1, :cond_1
 
-    .line 155
+    .line 158
     sget-object v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;->SS:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;
 
     goto :goto_0
 
-    .line 158
+    .line 161
     :cond_1
     sget-object p1, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$CameraStatusBarSelectType$Iso;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$CameraStatusBarSelectType$Iso;
 
@@ -832,7 +842,7 @@
 
     if-eqz p0, :cond_2
 
-    .line 159
+    .line 162
     sget-object v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;->ISO:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;
 
     :cond_2
@@ -879,7 +889,7 @@
 .method private static final dispUiVisible$lambda$7(Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;Z)Z
     .locals 1
 
-    .line 115
+    .line 118
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;->HIDDEN:Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
 
     if-eq p0, v0, :cond_0
@@ -935,11 +945,29 @@
     return p1
 .end method
 
-.method private static final isoOptions$lambda$4(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;)[Ljp/co/sony/mc/camera/configuration/parameters/Iso;
-    .locals 0
+.method private static final isoOptions$lambda$4(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljava/lang/Boolean;Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;)[Ljp/co/sony/mc/camera/configuration/parameters/Iso;
+    .locals 7
 
-    .line 92
-    invoke-static {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;)[Ljp/co/sony/mc/camera/configuration/parameters/Iso;
+    .line 94
+    invoke-static {p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v2
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v3, p3
+
+    move-object v4, p4
+
+    move-object v5, p5
+
+    move-object v6, p6
+
+    invoke-static/range {v0 .. v6}, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZLjp/co/sony/mc/camera/configuration/parameters/HybridZoom;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;)[Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     move-result-object p0
 
@@ -977,7 +1005,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 126
+    .line 129
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isBurstPostProcessing()Landroidx/lifecycle/LiveData;
@@ -1000,7 +1028,7 @@
 
     if-nez p1, :cond_1
 
-    .line 127
+    .line 130
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getInitializing()Landroidx/lifecycle/LiveData;
@@ -1017,7 +1045,7 @@
 
     if-nez p1, :cond_1
 
-    .line 128
+    .line 131
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getSelftimering()Landroidx/lifecycle/LiveData;
@@ -1034,7 +1062,7 @@
 
     if-nez p1, :cond_1
 
-    .line 129
+    .line 132
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getCapturing()Landroidx/lifecycle/LiveData;
@@ -1051,7 +1079,7 @@
 
     if-nez p1, :cond_1
 
-    .line 130
+    .line 133
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getAutoFocusLock()Landroidx/lifecycle/LiveData;
@@ -1074,7 +1102,7 @@
 
     goto :goto_0
 
-    .line 131
+    .line 134
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
@@ -1105,7 +1133,7 @@
 .method private static final ssOptions$lambda$5(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
     .locals 0
 
-    .line 101
+    .line 104
     invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
     move-result-object p0
@@ -1116,7 +1144,7 @@
 .method private static final ssProgress$lambda$6([Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;)I
     .locals 0
 
-    .line 108
+    .line 111
     invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-static {p0, p1}, Lkotlin/collections/ArraysKt;->indexOf([Ljava/lang/Object;Ljava/lang/Object;)I
@@ -1168,7 +1196,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 188
+    .line 191
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->_statusBarSelectType:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {p0, p1}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
@@ -1187,7 +1215,7 @@
         }
     .end annotation
 
-    .line 144
+    .line 147
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->changeFooterTextState:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1204,7 +1232,7 @@
         }
     .end annotation
 
-    .line 118
+    .line 121
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->contentsContainerVisible:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1221,7 +1249,7 @@
         }
     .end annotation
 
-    .line 134
+    .line 137
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->dispButtonEnabled:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1238,7 +1266,7 @@
         }
     .end annotation
 
-    .line 141
+    .line 144
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->dispButtonVisible:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1255,7 +1283,7 @@
         }
     .end annotation
 
-    .line 111
+    .line 114
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->dispUiVisible:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1351,7 +1379,7 @@
         }
     .end annotation
 
-    .line 125
+    .line 128
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->proModeUiEnabled:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1386,7 +1414,7 @@
         }
     .end annotation
 
-    .line 95
+    .line 98
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->ssOptions:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1403,7 +1431,7 @@
         }
     .end annotation
 
-    .line 104
+    .line 107
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->ssProgress:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1446,7 +1474,7 @@
 .method public final hideBottomMainDial()V
     .locals 2
 
-    .line 208
+    .line 211
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->videoBottomMainDialVisible:Landroidx/lifecycle/LiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
@@ -1465,7 +1493,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 209
+    .line 212
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$CameraStatusBarSelectType$None;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$CameraStatusBarSelectType$None;
 
     check-cast v0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$CameraStatusBarSelectType;
@@ -1479,7 +1507,7 @@
 .method public final onDispButtonClicked()V
     .locals 12
 
-    .line 173
+    .line 176
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
@@ -1492,7 +1520,7 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 174
+    .line 177
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getDisplayMode()Landroidx/lifecycle/LiveData;
@@ -1505,7 +1533,7 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
 
-    .line 175
+    .line 178
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
@@ -1514,7 +1542,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 176
+    .line 179
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getProVideoDispCustomExtensionData()Landroidx/lifecycle/LiveData;
@@ -1529,7 +1557,7 @@
 
     goto :goto_0
 
-    .line 178
+    .line 181
     :cond_0
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
@@ -1543,13 +1571,13 @@
 
     check-cast v2, Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
 
-    .line 180
+    .line 183
     :goto_0
     invoke-static {v0, v1, v2}, Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;->getNextState(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;)Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
 
     move-result-object v0
 
-    .line 181
+    .line 184
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->DISPLAY_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v2, "DISPLAY_MODE"
@@ -1560,7 +1588,7 @@
 
     invoke-virtual {p0, v1, v0}, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->setSetting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    .line 182
+    .line 185
     new-instance p0, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
     const/16 v10, 0x3f
@@ -1589,7 +1617,7 @@
 
     move-result-object p0
 
-    .line 183
+    .line 186
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->DISPLAY_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-static {v0, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
@@ -1600,7 +1628,7 @@
 
     move-result-object p0
 
-    .line 184
+    .line 187
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->send()V
 
     return-void
@@ -1609,7 +1637,7 @@
 .method public final onSsIsoEvLabelClicked(I)V
     .locals 0
 
-    .line 204
+    .line 207
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->_ssIsoEvMenuClickEvent:Ljp/co/sony/mc/camera/view/viewmodel/LiveEvent;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1628,21 +1656,21 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 192
+    .line 195
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProPhoto()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 193
+    .line 196
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProP()Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 194
+    .line 197
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->_statusBarSelectType:Landroidx/lifecycle/MutableLiveData;
 
     sget-object p1, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$CameraStatusBarSelectType$Ev;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$CameraStatusBarSelectType$Ev;
@@ -1651,7 +1679,7 @@
 
     goto :goto_0
 
-    .line 196
+    .line 199
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->_statusBarSelectType:Landroidx/lifecycle/MutableLiveData;
 
@@ -1661,7 +1689,7 @@
 
     goto :goto_0
 
-    .line 198
+    .line 201
     :cond_1
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
 
@@ -1669,7 +1697,7 @@
 
     if-eqz p1, :cond_2
 
-    .line 199
+    .line 202
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->_statusBarSelectType:Landroidx/lifecycle/MutableLiveData;
 
     sget-object p1, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$CameraStatusBarSelectType$None;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$CameraStatusBarSelectType$None;

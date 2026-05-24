@@ -21,6 +21,14 @@
 # direct methods
 .method constructor <init>(F)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "animationRatio"
+        }
+    .end annotation
 
     .line 267
     invoke-direct {p0}, Landroid/view/animation/AccelerateInterpolator;-><init>()V
@@ -35,6 +43,14 @@
 # virtual methods
 .method public getInterpolation(F)F
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "input"
+        }
+    .end annotation
 
     .line 273
     iget v0, p0, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView$AlphaAccelerateInterpolator;->mAnimationRatio:F

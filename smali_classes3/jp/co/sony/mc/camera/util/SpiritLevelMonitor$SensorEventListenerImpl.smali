@@ -167,6 +167,18 @@
 
 .method private getOrientation(I[F[F)I
     .locals 11
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "orientation",
+            "R",
+            "result"
+        }
+    .end annotation
 
     const/4 v0, 0x4
 
@@ -307,16 +319,46 @@
 
 # virtual methods
 .method protected abstract notifySpiritLevelChanged(IFF)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "orientation",
+            "pitch",
+            "roll"
+        }
+    .end annotation
 .end method
 
 .method public onAccuracyChanged(Landroid/hardware/Sensor;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sensor",
+            "accuracy"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public onSensorChanged(Landroid/hardware/SensorEvent;)V
     .locals 12
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
 
     .line 265
     iget-object v0, p1, Landroid/hardware/SensorEvent;->sensor:Landroid/hardware/Sensor;

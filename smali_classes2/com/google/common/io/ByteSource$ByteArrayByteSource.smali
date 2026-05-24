@@ -25,10 +25,18 @@
 # direct methods
 .method constructor <init>([B)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bytes"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 567
+    .line 584
     array-length v1, p1
 
     invoke-direct {p0, p1, v0, v1}, Lcom/google/common/io/ByteSource$ByteArrayByteSource;-><init>([BII)V
@@ -38,17 +46,29 @@
 
 .method constructor <init>([BII)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bytes",
+            "offset",
+            "length"
+        }
+    .end annotation
 
-    .line 571
+    .line 588
     invoke-direct {p0}, Lcom/google/common/io/ByteSource;-><init>()V
 
-    .line 572
+    .line 589
     iput-object p1, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->bytes:[B
 
-    .line 573
+    .line 590
     iput p2, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->offset:I
 
-    .line 574
+    .line 591
     iput p3, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->length:I
 
     return-void
@@ -58,13 +78,22 @@
 # virtual methods
 .method public copyTo(Ljava/io/OutputStream;)J
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "output"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 616
+    .line 634
     iget-object v0, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->bytes:[B
 
     iget v1, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->offset:I
@@ -73,7 +102,7 @@
 
     invoke-virtual {p1, v0, v1, v2}, Ljava/io/OutputStream;->write([BII)V
 
-    .line 617
+    .line 635
     iget p0, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->length:I
 
     int-to-long p0, p0
@@ -83,13 +112,22 @@
 
 .method public hash(Lcom/google/common/hash/HashFunction;)Lcom/google/common/hash/HashCode;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "hashFunction"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 622
+    .line 640
     iget-object v0, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->bytes:[B
 
     iget v1, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->offset:I
@@ -106,7 +144,7 @@
 .method public isEmpty()Z
     .locals 0
 
-    .line 589
+    .line 606
     iget p0, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->length:I
 
     if-nez p0, :cond_0
@@ -124,13 +162,8 @@
 
 .method public openBufferedStream()Ljava/io/InputStream;
     .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
 
-    .line 584
+    .line 601
     invoke-virtual {p0}, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->openStream()Ljava/io/InputStream;
 
     move-result-object p0
@@ -141,7 +174,7 @@
 .method public openStream()Ljava/io/InputStream;
     .locals 3
 
-    .line 579
+    .line 596
     new-instance v0, Ljava/io/ByteArrayInputStream;
 
     iget-object v1, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->bytes:[B
@@ -157,6 +190,18 @@
 
 .method public read(Lcom/google/common/io/ByteProcessor;)Ljava/lang/Object;
     .locals 2
+    .annotation runtime Lcom/google/common/io/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "processor"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -173,7 +218,7 @@
         }
     .end annotation
 
-    .line 610
+    .line 628
     iget-object v0, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->bytes:[B
 
     iget v1, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->offset:I
@@ -182,7 +227,7 @@
 
     invoke-interface {p1, v0, v1, p0}, Lcom/google/common/io/ByteProcessor;->processBytes([BII)Z
 
-    .line 611
+    .line 629
     invoke-interface {p1}, Lcom/google/common/io/ByteProcessor;->getResult()Ljava/lang/Object;
 
     move-result-object p0
@@ -193,7 +238,7 @@
 .method public read()[B
     .locals 2
 
-    .line 604
+    .line 621
     iget-object v0, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->bytes:[B
 
     iget v1, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->offset:I
@@ -212,7 +257,7 @@
 .method public size()J
     .locals 2
 
-    .line 594
+    .line 611
     iget p0, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->length:I
 
     int-to-long v0, p0
@@ -231,7 +276,7 @@
         }
     .end annotation
 
-    .line 599
+    .line 616
     iget p0, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->length:I
 
     int-to-long v0, p0
@@ -249,6 +294,16 @@
 
 .method public slice(JJ)Lcom/google/common/io/ByteSource;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "offset",
+            "length"
+        }
+    .end annotation
 
     const-wide/16 v0, 0x0
 
@@ -267,7 +322,7 @@
     :cond_0
     move v2, v4
 
-    .line 627
+    .line 645
     :goto_0
     const-string v5, "offset (%s) may not be negative"
 
@@ -282,13 +337,13 @@
     :cond_1
     move v3, v4
 
-    .line 628
+    .line 646
     :goto_1
     const-string v0, "length (%s) may not be negative"
 
     invoke-static {v3, v0, p3, p4}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;J)V
 
-    .line 630
+    .line 648
     iget v0, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->length:I
 
     int-to-long v0, v0
@@ -297,7 +352,7 @@
 
     move-result-wide p1
 
-    .line 631
+    .line 649
     iget v0, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->length:I
 
     int-to-long v0, v0
@@ -308,14 +363,14 @@
 
     move-result-wide p3
 
-    .line 632
+    .line 650
     iget v0, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->offset:I
 
     long-to-int p1, p1
 
     add-int/2addr v0, p1
 
-    .line 633
+    .line 651
     new-instance p1, Lcom/google/common/io/ByteSource$ByteArrayByteSource;
 
     iget-object p0, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->bytes:[B
@@ -328,50 +383,37 @@
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 3
+    .locals 4
 
-    .line 639
+    .line 656
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "ByteSource.wrap("
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 657
     invoke-static {}, Lcom/google/common/io/BaseEncoding;->base16()Lcom/google/common/io/BaseEncoding;
 
-    move-result-object v0
+    move-result-object v1
 
-    iget-object v1, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->bytes:[B
+    iget-object v2, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->bytes:[B
 
-    iget v2, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->offset:I
+    iget v3, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->offset:I
 
     iget p0, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->length:I
 
-    invoke-virtual {v0, v1, v2, p0}, Lcom/google/common/io/BaseEncoding;->encode([BII)Ljava/lang/String;
+    invoke-virtual {v1, v2, v3, p0}, Lcom/google/common/io/BaseEncoding;->encode([BII)Ljava/lang/String;
 
     move-result-object p0
 
-    const/16 v0, 0x1e
+    const/16 v1, 0x1e
 
-    const-string v1, "..."
+    const-string v2, "..."
 
-    invoke-static {p0, v0, v1}, Lcom/google/common/base/Ascii;->truncate(Ljava/lang/CharSequence;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, v1, v2}, Lcom/google/common/base/Ascii;->truncate(Ljava/lang/CharSequence;ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, 0x11
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v0, "ByteSource.wrap("
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

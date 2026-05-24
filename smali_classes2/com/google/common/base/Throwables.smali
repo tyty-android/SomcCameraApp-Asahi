@@ -3,23 +3,28 @@
 .source "Throwables.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/base/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # static fields
 .field private static final JAVA_LANG_ACCESS_CLASSNAME:Ljava/lang/String; = "sun.misc.JavaLangAccess"
 
 .field static final SHARED_SECRETS_CLASSNAME:Ljava/lang/String; = "sun.misc.SharedSecrets"
 
 .field private static final getStackTraceDepthMethod:Ljava/lang/reflect/Method;
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
 .field private static final getStackTraceElementMethod:Ljava/lang/reflect/Method;
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
 .field private static final jla:Ljava/lang/Object;
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -28,7 +33,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 452
+    .line 461
     invoke-static {}, Lcom/google/common/base/Throwables;->getJLA()Ljava/lang/Object;
 
     move-result-object v0
@@ -43,7 +48,7 @@
 
     goto :goto_0
 
-    .line 460
+    .line 470
     :cond_0
     invoke-static {}, Lcom/google/common/base/Throwables;->getGetMethod()Ljava/lang/reflect/Method;
 
@@ -56,9 +61,9 @@
 
     goto :goto_1
 
-    .line 468
+    .line 479
     :cond_1
-    invoke-static {}, Lcom/google/common/base/Throwables;->getSizeMethod()Ljava/lang/reflect/Method;
+    invoke-static {v0}, Lcom/google/common/base/Throwables;->getSizeMethod(Ljava/lang/Object;)Ljava/lang/reflect/Method;
 
     move-result-object v1
 
@@ -71,7 +76,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 49
+    .line 51
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -80,7 +85,7 @@
 .method static synthetic access$000()Ljava/lang/reflect/Method;
     .locals 1
 
-    .line 48
+    .line 50
     sget-object v0, Lcom/google/common/base/Throwables;->getStackTraceElementMethod:Ljava/lang/reflect/Method;
 
     return-object v0
@@ -89,7 +94,7 @@
 .method static synthetic access$100()Ljava/lang/Object;
     .locals 1
 
-    .line 48
+    .line 50
     sget-object v0, Lcom/google/common/base/Throwables;->jla:Ljava/lang/Object;
 
     return-object v0
@@ -98,7 +103,7 @@
 .method static synthetic access$200(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 48
+    .line 50
     invoke-static {p0, p1, p2}, Lcom/google/common/base/Throwables;->invokeAccessibleNonThrowingMethod(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -109,7 +114,7 @@
 .method static synthetic access$300()Ljava/lang/reflect/Method;
     .locals 1
 
-    .line 48
+    .line 50
     sget-object v0, Lcom/google/common/base/Throwables;->getStackTraceDepthMethod:Ljava/lang/reflect/Method;
 
     return-object v0
@@ -117,6 +122,15 @@
 
 .method public static getCausalChain(Ljava/lang/Throwable;)Ljava/util/List;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "throwable"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -128,17 +142,17 @@
         }
     .end annotation
 
-    .line 293
+    .line 286
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 294
+    .line 287
     new-instance v0, Ljava/util/ArrayList;
 
     const/4 v1, 0x4
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 295
+    .line 288
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     const/4 v1, 0x0
@@ -147,7 +161,7 @@
 
     move-object v1, p0
 
-    .line 303
+    .line 296
     :goto_0
     invoke-virtual {p0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
 
@@ -155,14 +169,14 @@
 
     if-eqz p0, :cond_2
 
-    .line 305
+    .line 298
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     if-eq p0, v1, :cond_1
 
     if-eqz v2, :cond_0
 
-    .line 311
+    .line 304
     invoke-virtual {v1}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
 
     move-result-object v1
@@ -172,7 +186,7 @@
 
     goto :goto_0
 
-    .line 308
+    .line 301
     :cond_1
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -182,7 +196,7 @@
 
     throw v0
 
-    .line 315
+    .line 308
     :cond_2
     invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
@@ -193,6 +207,17 @@
 
 .method public static getCauseAs(Ljava/lang/Throwable;Ljava/lang/Class;)Ljava/lang/Throwable;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "throwable",
+            "expectedCauseType"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<X:",
@@ -204,7 +229,10 @@
         }
     .end annotation
 
-    .line 336
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 329
     :try_start_0
     invoke-virtual {p0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
 
@@ -223,21 +251,21 @@
     :catch_0
     move-exception p1
 
-    .line 338
+    .line 331
     invoke-virtual {p1, p0}, Ljava/lang/ClassCastException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
-    .line 339
+    .line 332
     throw p1
 .end method
 
 .method private static getGetMethod()Ljava/lang/reflect/Method;
     .locals 3
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
     const/4 v0, 0x2
 
-    .line 503
+    .line 517
     new-array v0, v0, [Ljava/lang/Class;
 
     const/4 v1, 0x0
@@ -263,12 +291,12 @@
 
 .method private static getJLA()Ljava/lang/Object;
     .locals 5
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
     const/4 v0, 0x0
 
-    .line 482
+    .line 495
     :try_start_0
     const-string v1, "sun.misc.SharedSecrets"
 
@@ -278,7 +306,7 @@
 
     move-result-object v1
 
-    .line 483
+    .line 496
     const-string v3, "getJavaLangAccess"
 
     new-array v4, v2, [Ljava/lang/Class;
@@ -287,7 +315,7 @@
 
     move-result-object v1
 
-    .line 484
+    .line 497
     new-array v2, v2, [Ljava/lang/Object;
 
     invoke-virtual {v1, v0, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
@@ -303,12 +331,23 @@
     :catch_0
     move-exception v0
 
-    .line 486
+    .line 499
     throw v0
 .end method
 
 .method private static varargs getJlaMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "name",
+            "parameterTypes"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -326,12 +365,12 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
     const/4 v0, 0x0
 
-    .line 534
+    .line 551
     :try_start_0
     const-string v1, "sun.misc.JavaLangAccess"
 
@@ -356,12 +395,20 @@
     :catch_0
     move-exception p0
 
-    .line 536
+    .line 553
     throw p0
 .end method
 
 .method public static getRootCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "throwable"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -369,7 +416,7 @@
 
     move-object v0, p0
 
-    .line 261
+    .line 255
     :goto_0
     invoke-virtual {p0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
 
@@ -381,7 +428,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 268
+    .line 262
     invoke-virtual {v0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
 
     move-result-object p0
@@ -395,7 +442,7 @@
 
     goto :goto_0
 
-    .line 265
+    .line 259
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -409,14 +456,23 @@
     return-object p0
 .end method
 
-.method private static getSizeMethod()Ljava/lang/reflect/Method;
+.method private static getSizeMethod(Ljava/lang/Object;)Ljava/lang/reflect/Method;
     .locals 5
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "jla"
+        }
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
     const/4 v0, 0x0
 
-    .line 519
+    .line 534
     :try_start_0
     const-string v1, "getStackTraceDepth"
 
@@ -438,21 +494,17 @@
 
     return-object v0
 
-    .line 523
+    .line 538
     :cond_0
-    invoke-static {}, Lcom/google/common/base/Throwables;->getJLA()Ljava/lang/Object;
+    new-instance v2, Ljava/lang/Throwable;
+
+    invoke-direct {v2}, Ljava/lang/Throwable;-><init>()V
+
+    filled-new-array {v2}, [Ljava/lang/Object;
 
     move-result-object v2
 
-    new-instance v3, Ljava/lang/Throwable;
-
-    invoke-direct {v3}, Ljava/lang/Throwable;-><init>()V
-
-    filled-new-array {v3}, [Ljava/lang/Object;
-
-    move-result-object v3
-
-    invoke-virtual {v1, v2, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, p0, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/UnsupportedOperationException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
@@ -466,20 +518,28 @@
 
 .method public static getStackTraceAsString(Ljava/lang/Throwable;)Ljava/lang/String;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "throwable"
+        }
+    .end annotation
 
-    .line 351
+    .line 344
     new-instance v0, Ljava/io/StringWriter;
 
     invoke-direct {v0}, Ljava/io/StringWriter;-><init>()V
 
-    .line 352
+    .line 345
     new-instance v1, Ljava/io/PrintWriter;
 
     invoke-direct {v1, v0}, Ljava/io/PrintWriter;-><init>(Ljava/io/Writer;)V
 
     invoke-virtual {p0, v1}, Ljava/lang/Throwable;->printStackTrace(Ljava/io/PrintWriter;)V
 
-    .line 353
+    .line 346
     invoke-virtual {v0}, Ljava/io/StringWriter;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -489,8 +549,20 @@
 
 .method private static varargs invokeAccessibleNonThrowingMethod(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "method",
+            "receiver",
+            "params"
+        }
+    .end annotation
 
-    .line 432
+    .line 439
     :try_start_0
     invoke-virtual {p0, p1, p2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -504,7 +576,7 @@
     :catch_0
     move-exception p0
 
-    .line 436
+    .line 443
     invoke-virtual {p0}, Ljava/lang/reflect/InvocationTargetException;->getCause()Ljava/lang/Throwable;
 
     move-result-object p0
@@ -518,7 +590,7 @@
     :catch_1
     move-exception p0
 
-    .line 434
+    .line 441
     new-instance p1, Ljava/lang/RuntimeException;
 
     invoke-direct {p1, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
@@ -528,6 +600,15 @@
 
 .method private static jlaStackTrace(Ljava/lang/Throwable;)Ljava/util/List;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "t"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -539,10 +620,10 @@
         }
     .end annotation
 
-    .line 407
+    .line 406
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 414
+    .line 413
     new-instance v0, Lcom/google/common/base/Throwables$1;
 
     invoke-direct {v0, p0}, Lcom/google/common/base/Throwables$1;-><init>(Ljava/lang/Throwable;)V
@@ -552,6 +633,15 @@
 
 .method public static lazyStackTrace(Ljava/lang/Throwable;)Ljava/util/List;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "throwable"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -563,21 +653,24 @@
         }
     .end annotation
 
-    .line 388
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    .line 383
     invoke-static {}, Lcom/google/common/base/Throwables;->lazyStackTraceIsLazy()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 389
+    .line 384
     invoke-static {p0}, Lcom/google/common/base/Throwables;->jlaStackTrace(Ljava/lang/Throwable;)Ljava/util/List;
 
     move-result-object p0
 
     goto :goto_0
 
-    .line 390
+    .line 385
     :cond_0
     invoke-virtual {p0}, Ljava/lang/Throwable;->getStackTrace()[Ljava/lang/StackTraceElement;
 
@@ -597,8 +690,10 @@
 
 .method public static lazyStackTraceIsLazy()Z
     .locals 1
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
 
-    .line 402
+    .line 400
     sget-object v0, Lcom/google/common/base/Throwables;->getStackTraceElementMethod:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_0
@@ -620,13 +715,22 @@
 
 .method public static propagate(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "throwable"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 240
+    .line 234
     invoke-static {p0}, Lcom/google/common/base/Throwables;->throwIfUnchecked(Ljava/lang/Throwable;)V
 
-    .line 241
+    .line 235
     new-instance v0, Ljava/lang/RuntimeException;
 
     invoke-direct {v0, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
@@ -637,9 +741,20 @@
 .method public static propagateIfInstanceOf(Ljava/lang/Throwable;Ljava/lang/Class;)V
     .locals 0
     .param p0    # Ljava/lang/Throwable;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "throwable",
+            "declaredType"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<X:",
@@ -662,7 +777,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 104
+    .line 107
     invoke-static {p0, p1}, Lcom/google/common/base/Throwables;->throwIfInstanceOf(Ljava/lang/Throwable;Ljava/lang/Class;)V
 
     :cond_0
@@ -672,15 +787,24 @@
 .method public static propagateIfPossible(Ljava/lang/Throwable;)V
     .locals 0
     .param p0    # Ljava/lang/Throwable;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "throwable"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
     if-eqz p0, :cond_0
 
-    .line 159
+    .line 152
     invoke-static {p0}, Lcom/google/common/base/Throwables;->throwIfUnchecked(Ljava/lang/Throwable;)V
 
     :cond_0
@@ -690,9 +814,20 @@
 .method public static propagateIfPossible(Ljava/lang/Throwable;Ljava/lang/Class;)V
     .locals 0
     .param p0    # Ljava/lang/Throwable;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "throwable",
+            "declaredType"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<X:",
@@ -710,10 +845,13 @@
         }
     .end annotation
 
-    .line 184
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    .line 173
     invoke-static {p0, p1}, Lcom/google/common/base/Throwables;->propagateIfInstanceOf(Ljava/lang/Throwable;Ljava/lang/Class;)V
 
-    .line 185
+    .line 174
     invoke-static {p0}, Lcom/google/common/base/Throwables;->propagateIfPossible(Ljava/lang/Throwable;)V
 
     return-void
@@ -722,9 +860,22 @@
 .method public static propagateIfPossible(Ljava/lang/Throwable;Ljava/lang/Class;Ljava/lang/Class;)V
     .locals 0
     .param p0    # Ljava/lang/Throwable;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "throwable",
+            "declaredType1",
+            "declaredType2"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<X1:",
@@ -747,13 +898,16 @@
         }
     .end annotation
 
-    .line 203
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    .line 194
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 204
+    .line 195
     invoke-static {p0, p1}, Lcom/google/common/base/Throwables;->propagateIfInstanceOf(Ljava/lang/Throwable;Ljava/lang/Class;)V
 
-    .line 205
+    .line 196
     invoke-static {p0, p2}, Lcom/google/common/base/Throwables;->propagateIfPossible(Ljava/lang/Throwable;Ljava/lang/Class;)V
 
     return-void
@@ -761,6 +915,17 @@
 
 .method public static throwIfInstanceOf(Ljava/lang/Throwable;Ljava/lang/Class;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "throwable",
+            "declaredType"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<X:",
@@ -778,10 +943,10 @@
         }
     .end annotation
 
-    .line 74
+    .line 76
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 75
+    .line 77
     invoke-virtual {p1, p0}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
 
     move-result v0
@@ -790,7 +955,7 @@
 
     return-void
 
-    .line 76
+    .line 78
     :cond_0
     invoke-virtual {p1, p0}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -803,29 +968,37 @@
 
 .method public static throwIfUnchecked(Ljava/lang/Throwable;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "throwable"
+        }
+    .end annotation
 
-    .line 128
+    .line 131
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 129
+    .line 132
     instance-of v0, p0, Ljava/lang/RuntimeException;
 
     if-nez v0, :cond_1
 
-    .line 132
+    .line 135
     instance-of v0, p0, Ljava/lang/Error;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 133
+    .line 136
     :cond_0
     check-cast p0, Ljava/lang/Error;
 
     throw p0
 
-    .line 130
+    .line 133
     :cond_1
     check-cast p0, Ljava/lang/RuntimeException;
 

@@ -29,7 +29,6 @@
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="androidx_startup">androidx.startup</string>
     <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
-    <string name="b">"`v ?tjafuu&amp;8~w|'!\"$>j(d0"</string>
     <string name="ble_remote_control_accessibility_device_connected_txt">Bluetooth remote control is connected</string>
     <string name="ble_remote_control_accessibility_device_disconnected_txt">Bluetooth remote control is disconnected</string>
     <string name="ble_remote_control_accessibility_endurance_mode_available_txt">Camera endurance mode is enabled</string>
@@ -100,6 +99,7 @@ You will receive notifications and dialogs. Select Pair on all of them, then pre
     <string name="cam_strings_photo">Photo</string>
     <string name="cam_strings_shutterless">Shutterless</string>
     <string name="cam_strings_video">Video</string>
+    <string name="camera_string_saving_process_hint_txt">Saving... Please wait until saving is complete.</string>
     <string name="camera_strings_Parentheses_txt">" (%1$s)"</string>
     <string name="camera_strings_accept_privacy_policy_txt">You have previously accepted the privacy policy but you can always change your mind.</string>
     <string name="camera_strings_accessibility_48_mega_pixel_txt">48 megapixel</string>
@@ -112,6 +112,27 @@ You will receive notifications and dialogs. Select Pair on all of them, then pre
     <string name="camera_strings_accessibility_adjust_framing_size_smaller_txt">Decrease frame size</string>
     <string name="camera_strings_accessibility_adjust_framing_size_txt">Adjust frame size</string>
     <string name="camera_strings_accessibility_adjust_shutter_speed_txt">Shutter speed</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_look_menu_txt">Close button. Closes the look menu.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_menu_txt">Close custom menu</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_suggests_txt">Close suggested adjustments</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_menu_txt">Currently applied Custom look. Opens the adjustment menu.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_txt">Custom look. Applies look, brightness, and color settings registered in the custom menu.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_tab_txt">Custom tab. Applies look, brightness, and color settings registered in the custom menu.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_button_txt">Custom button. Opens a menu which allows you to make further adjustments when recommended adjustments are applied.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_param_txt">%1$s is set to %2$s</string>
+    <string name="camera_strings_accessibility_ai_suggestion_first_time_txt">AI Camera Assistant. This function suggests settings such as color according to the scene.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_four_of_some_suggests_txt">Fourth suggested adjustment</string>
+    <string name="camera_strings_accessibility_ai_suggestion_look_menu_txt">"%1$s
+Opens the creative look menu"</string>
+    <string name="camera_strings_accessibility_ai_suggestion_new_suggest_txt">New recommended adjustments were suggested</string>
+    <string name="camera_strings_accessibility_ai_suggestion_one_of_some_suggests_txt">First suggested adjustment</string>
+    <string name="camera_strings_accessibility_ai_suggestion_open_suggests_txt">Expand suggested adjustments</string>
+    <string name="camera_strings_accessibility_ai_suggestion_reset_to_default_txt">Reset to pre-suggestion settings</string>
+    <string name="camera_strings_accessibility_ai_suggestion_selected_suggest_txt">These recommended adjustments are applied</string>
+    <string name="camera_strings_accessibility_ai_suggestion_suggest_lens_txt">Suggested lens button. %1$sx is recommended.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_surface_of_some_suggests_txt">Suggested adjustments. Swipe from right to left to display recommended adjustments.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_three_of_some_suggests_txt">Third suggested adjustment</string>
+    <string name="camera_strings_accessibility_ai_suggestion_two_of_some_suggests_txt">Second suggested adjustment</string>
     <string name="camera_strings_accessibility_arrow_left_button_txt">Left arrow</string>
     <string name="camera_strings_accessibility_arrow_right_button_txt">Right arrow</string>
     <string name="camera_strings_accessibility_audio_level_txt">Audio level meter</string>
@@ -255,10 +276,15 @@ You will receive notifications and dialogs. Select Pair on all of them, then pre
     <string name="camera_strings_accessibility_streaming_setting_txt">Network settings</string>
     <string name="camera_strings_accessibility_switch_main_and_front_button_txt">Switch camera between main and front</string>
     <string name="camera_strings_accessibility_switch_photo_and_video_button_txt">Switch between photo and video</string>
+    <string name="camera_strings_accessibility_switch_status_switch_off_txt">Switch Off</string>
+    <string name="camera_strings_accessibility_switch_status_switch_on_txt">Switch On</string>
     <string name="camera_strings_accessibility_tele_macro_txt">Telephoto macro</string>
     <string name="camera_strings_accessibility_title_txt">Accessibility</string>
     <string name="camera_strings_accessibility_touch_auto_exposure_cancel_txt">Cancel auto exposure</string>
     <string name="camera_strings_accessibility_touch_tracking_activation_txt">Swipe with 2 fingers on the viewfinder to activate Touch tracking</string>
+    <string name="camera_strings_accessibility_tripod_framing_disable_txt">おまかせホールド 無効</string>
+    <string name="camera_strings_accessibility_tripod_framing_off_txt">おまかせホールド オフ</string>
+    <string name="camera_strings_accessibility_tripod_framing_on_txt">おまかせホールド オン</string>
     <string name="camera_strings_accessibility_view_finder_txt">Viewfinder</string>
     <string name="camera_strings_accessibility_whitebalance_temperature_1_txt">Temperature 1</string>
     <string name="camera_strings_accessibility_whitebalance_temperature_2_txt">Temperature 2</string>
@@ -274,6 +300,46 @@ You will receive notifications and dialogs. Select Pair on all of them, then pre
     <string name="camera_strings_advanced_setting_geo_tag_title_txt">Save location</string>
     <string name="camera_strings_ai_face_restore_description_txt">You can take photos with facial sharpening to make the features of faces clearer</string>
     <string name="camera_strings_ai_face_restore_txt">Sharpen faces</string>
+    <string name="camera_strings_ai_suggestion_customize_setting_max_value_txt">+2</string>
+    <string name="camera_strings_ai_suggestion_introduce_hint_text_txt">[Tips] AI Camera Assistant</string>
+    <string name="camera_strings_aisuggestion_box_name1_txt">Custom</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_message_txt">Register current look, brightness and color settings to Custom.</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_overwrite_message_txt">A look is already registered in Custom. Overwrite?</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_title_txt">Register as Custom look</string>
+    <string name="camera_strings_aisuggestion_box_title_txt">Custom</string>
+    <string name="camera_strings_aisuggestion_custom_params_contrast_txt">Contrast</string>
+    <string name="camera_strings_aisuggestion_custom_params_ev_txt">Bright.</string>
+    <string name="camera_strings_aisuggestion_custom_params_register_txt">Register</string>
+    <string name="camera_strings_aisuggestion_custom_params_saturation_txt">Saturation</string>
+    <string name="camera_strings_aisuggestion_custom_params_title_txt">Brightness/Color</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbab_txt">Warmth</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbgm_txt">Tint</string>
+    <string name="camera_strings_aisuggestion_customlook_register_instruction_txt">You can use registered custom looks any time from the Custom look tab</string>
+    <string name="camera_strings_aisuggestion_description_txt">"The AI automatically identifies the scene and suggests optimized adjustments in the mini preview on the bottom right.
+If you tap on this mini preview the following settings will be adjusted automatically to suit the scene:
+Look, Exposure, White balance, Saturation, Contrast, Bokeh
+*This function is only available in Photo mode.
+*When you start recording a video by pressing and holding the shutter button, saturation, contrast, and bokeh settings will not be applied."</string>
+    <string name="camera_strings_aisuggestion_guide_description1_txt">Recommended adjustments based on the scene identified by the AI are displayed in the mini preview on the bottom right (top right when held horizontally). You can apply all of these adjustments at once by tapping the mini preview.</string>
+    <string name="camera_strings_aisuggestion_guide_description2_txt">Depending on the scene, a specific lens setting may also be suggested. In this case, you can change to the suggested lens setting depending on your preference.</string>
+    <string name="camera_strings_aisuggestion_guide_description3_txt">"By swiping left on the mini preview in the bottom right (top right when held horizontally), you can display alternative adjustment recommendations.
+The suggestion you select will be saved as your preferred adjustment and will be included in the suggestions next time you shoot in a similar scene."</string>
+    <string name="camera_strings_aisuggestion_guide_description4_txt">You can tap the [>] button to hide suggestions when not needed. When a new scene is identified, the [&lt;] button will light up to show you that there are new adjustment suggestions. To check the suggestions again, tap the [&lt;] button.</string>
+    <string name="camera_strings_aisuggestion_guide_description5_txt">If you tap the adjustment button after selecting suggested adjustments, you can further adjust settings such as brightness and color. Your adjustments will be saved to the device and applied to the suggested adjustments next time a similar scene is detected.</string>
+    <string name="camera_strings_aisuggestion_guide_description6_txt">Suggested adjustments and adjustments made by you can be registered, allowing you to load them at any time to take photos with the same settings. Tap [Register] to add a Custom look to the list of available looks.</string>
+    <string name="camera_strings_aisuggestion_guide_entry_txt">Check how to use AI Camera Assistant</string>
+    <string name="camera_strings_aisuggestion_guide_title_txt">How to use AI Camera Assistant</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_message_txt">Reset all settings to the defaults including color, brightness, and your preferred adjustments?</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_title_txt">Reset parameters</string>
+    <string name="camera_strings_aisuggestion_params_reset_txt">Reset parameters</string>
+    <string name="camera_strings_aisuggestion_permitted_item_bokeh_txt">Bokeh</string>
+    <string name="camera_strings_aisuggestion_permitted_item_lens_txt">Lens</string>
+    <string name="camera_strings_aisuggestion_permitted_item_title_txt">Include in suggestions</string>
+    <string name="camera_strings_aisuggestion_recommend_lens_ratio_txt">%1$s recommended</string>
+    <string name="camera_strings_aisuggestion_return_to_default_txt">Revert</string>
+    <string name="camera_strings_aisuggestion_simple_video_instruction_txt">When recording a video by long pressing, saturation, contrast, and bokeh settings may appear differently.</string>
+    <string name="camera_strings_aisuggestion_txt">AI Camera Assistant</string>
+    <string name="camera_strings_aisuggestion_use_aissuggestion_txt">Using AI Camera Assistant</string>
     <string name="camera_strings_anonymous_analytics_txt">Anonymous analytics</string>
     <string name="camera_strings_application_name">Camera</string>
     <string name="camera_strings_application_name_google_lens_txt">Google Lens</string>
@@ -299,9 +365,10 @@ You will receive notifications and dialogs. Select Pair on all of them, then pre
     <string name="camera_strings_auto_frame_rate_description_note_txt">Note: Auto optimization will not work when the frame rate is set to 120 fps or 24 fps, or when the shutter speed is manually set.</string>
     <string name="camera_strings_auto_frame_rate_description_txt">Automatically optimize the frame rate to improve video quality while recording in low-light conditions</string>
     <string name="camera_strings_auto_frame_rate_title_txt">Auto frame rate</string>
-    <string name="camera_strings_auto_framing_recording_mode_all_video_size_landscape_txt">"4K/
-FHD"</string>
-    <string name="camera_strings_auto_framing_recording_mode_all_video_size_portrait_txt">4K/FHD</string>
+    <string name="camera_strings_auto_framing_recording_mode_all_video_size_landscape_txt">"%1$s/
+%2$s"</string>
+    <string name="camera_strings_auto_framing_recording_mode_all_video_size_portrait_txt">%1$s/%2$s</string>
+    <string name="camera_strings_auto_hold_txt">Auto Hold</string>
     <string name="camera_strings_auto_night_description_txt">"You can take clear photos even at night or in dark conditions.
 It may take time to fully process the image after taking a photo, so hold the camera still until it is complete."</string>
     <string name="camera_strings_auto_night_title_txt">Night shooting</string>
@@ -476,8 +543,23 @@ Password protection:
 Security: 
 "</string>
     <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Cannot connect to Wi-Fi</string>
+    <string name="camera_strings_dialog_tripod_framing_description_txt">発表会やステージ撮影等、同じ構図で撮影をし続けたいシーンで、 ブレやふらつきの少ない安定した動画が撮影できるようにサポートします。 撮影したい位置を決めてから、おまかせホールドをオンにして撮影してみましょう。オン操作時に決めた撮影位置からずれそうになると、画面上でお知らせします。さらに撮影位置を動かしたり、ズーム操作を行うと自動でオフになります。</string>
+    <string name="camera_strings_dialog_tripod_framing_indicator_description_txt">撮影位置からのずれをリアルタイムで確認しながら撮影することができます。</string>
+    <string name="camera_strings_dialog_tripod_framing_txt">デジタル三脚</string>
+    <string name="camera_strings_dialog_tripod_framing_vibration_description_txt">撮影位置がずれそうになると振動でお知らせします。振動音がわずかに入ることがあります。</string>
     <string name="camera_strings_dialog_user_data_collection_txt">If you agree below, Sony will collect your &lt;b>&lt;a href=#personal-data>personal data&lt;/a>&lt;/b> to provide customized support and improve devices and services. Sony will handle your data per our &lt;b>&lt;a href=https://www.sonymobile.com/privacy/>Privacy Policy&lt;/a>&lt;/b>.</string>
     <string name="camera_strings_dialog_video_hdr_hlg_supported_short_description_txt">Some devices/services may not be able to reproduce the original color and brightness of HDR content. Please use devices/services that support HDR when enjoying HDR content.</string>
+    <string name="camera_strings_digital_tripod_arrow_description_txt">撮影位置がずれそうになると、戻す方向を表示します。</string>
+    <string name="camera_strings_digital_tripod_arrow_setting_label_txt">シンプル表示</string>
+    <string name="camera_strings_digital_tripod_description_txt">Steady hold</string>
+    <string name="camera_strings_digital_tripod_disable_hint_capture_setting_txt">Available only when Full HD at 24fps or 30fps and high-quality stabilization are enabled.</string>
+    <string name="camera_strings_digital_tripod_hint_edge_txt">The composition has shifted. Point the camera toward the original subject.</string>
+    <string name="camera_strings_digital_tripod_indicator_description_txt">撮影位置からのずれをリアルタイムで確認しながら撮影することができます。</string>
+    <string name="camera_strings_digital_tripod_indicator_setting_label_txt">ガイド表示</string>
+    <string name="camera_strings_digital_tripod_setting_guide_title_txt">About Steady Hold</string>
+    <string name="camera_strings_digital_tripod_support_setting_title_txt">おまかせホールド撮影補助機能</string>
+    <string name="camera_strings_digital_tripod_support_ui_description_txt">Steady hold Assist</string>
+    <string name="camera_strings_digital_tripod_txt">おまかせホールド(Function name)</string>
     <string name="camera_strings_digital_zoom_type_description_txt">"Select a digital zoom setting.
 
 Standard digital zoom: Zoom using digital processing based on the image sensor data.
@@ -558,8 +640,6 @@ To change focus targets, tap the face of the subject you would like to focus on.
     <string name="camera_strings_face_eye_af_for_video_description_sub_txt">Note: When this setting is enabled, recording duration may be shortened due to increases in device temperature.</string>
     <string name="camera_strings_face_eye_af_settings_face_af_txt">Face AF</string>
     <string name="camera_strings_face_eye_af_settings_txt">Face/Eye AF</string>
-    <string name="camera_strings_facebook_app_id">696119285039559</string>
-    <string name="camera_strings_facebook_client_token">2552c85ca840f6da84c6182bb17fa195</string>
     <string name="camera_strings_facebook_live_description_placeholder_text_txt">Tap to add a description</string>
     <string name="camera_strings_facebook_live_dialog_creating_live_video_txt">Starting live video</string>
     <string name="camera_strings_facebook_live_dialog_where_to_post_txt">Select where to post</string>
@@ -570,7 +650,6 @@ To change this, stop streaming and then go to the Facebook app and change the ca
     <string name="camera_strings_facebook_live_error_unavailable_txt">This live video is unavailable. Select another post.</string>
     <string name="camera_strings_facebook_live_error_url_unavailable_txt">URL not provided if you post on the timeline or in a group</string>
     <string name="camera_strings_facebook_live_no_title_txt">No title</string>
-    <string name="camera_strings_facebook_live_policies_link">&lt;b>&lt;a href=https://www.facebook.com/policies/live>%1$s&lt;/a>&lt;/b></string>
     <string name="camera_strings_facebook_live_post_to_txt">Post live video to</string>
     <string name="camera_strings_facebook_live_privacy_friends_txt">Friends</string>
     <string name="camera_strings_facebook_live_privacy_only_me_txt">Only me</string>
@@ -579,11 +658,11 @@ To change this, stop streaming and then go to the Facebook app and change the ca
     <string name="camera_strings_facebook_live_video_url_txt">Live video URL</string>
     <string name="camera_strings_facebook_login_txt">Log in to Facebook</string>
     <string name="camera_strings_facebook_logout_txt">Log out of Facebook</string>
-    <string name="camera_strings_facebook_security_settings_page_link">&lt;b>&lt;a href=https://www.facebook.com/settings>%1$s&lt;/a>&lt;/b></string>
     <string name="camera_strings_fast_capturing_screen_locked_apps_list_txt">Unlock the screen to use this function</string>
     <string name="camera_strings_fast_capturing_screen_locked_settings_txt">To open the settings, unlock the screen.</string>
     <string name="camera_strings_fast_capturing_screen_locked_streaming_txt">To start streaming, unlock the screen.</string>
     <string name="camera_strings_fast_capturing_screen_locked_title_txt">Screen locked</string>
+    <string name="camera_strings_feature_creative_look_custom_description_txt">You can register looks and brightness/color settings.</string>
     <string name="camera_strings_feature_creative_look_description_txt">"You can choose the finish of images (photos or movies) by selecting a \"look\".
 
 Creative look offers 6 preset looks. Each one is optimized with a different combination of color tone, saturation, contrast, sharpness, brightness, and other image elements, so you can set up image processing with your ideal balance of these elements."</string>
@@ -677,6 +756,7 @@ Tap on the subject you want to track."</string>
     <string name="camera_strings_framing_orientation_description_txt">"You can choose to crop the subject in either a horizontal or vertical frame.
 Set to [Auto] to make the crop orientation the same as the device orientation."</string>
     <string name="camera_strings_framing_select_subject_to_track_txt">Tap on the subject whose position you want to lock</string>
+    <string name="camera_strings_framing_setting_guide_title_txt">About Auto Framing</string>
     <string name="camera_strings_framing_setting_orientation_landscape_txt">Horizontal</string>
     <string name="camera_strings_framing_setting_orientation_portrait_txt">Vertical</string>
     <string name="camera_strings_framing_setting_orientation_title_txt">Frame orientation</string>
@@ -684,6 +764,7 @@ Set to [Auto] to make the crop orientation the same as the device orientation."<
 Cropped recordings are saved with a resolution of Full HD. Uncropped recordings are saved as 4K."</string>
     <string name="camera_strings_framing_setting_save_original_video_off_txt">Full screen recording: Off</string>
     <string name="camera_strings_framing_setting_save_original_video_title_txt">Full screen recording</string>
+    <string name="camera_strings_framing_setting_snapshot_description_txt">Whether [Full screen recording] is on or off, snapshots taken while recording video are saved with full screen.</string>
     <string name="camera_strings_frequency_11_99_txt">11.99</string>
     <string name="camera_strings_frequency_12_5_txt">12.5</string>
     <string name="camera_strings_frequency_14_99_txt">14.99</string>
@@ -707,9 +788,7 @@ This allows you to shoot stable video even in shaky situations such as when jogg
     <string name="camera_strings_gimbal_setting_assist_method_locking_hint_txt">Subject position lock: Manual</string>
     <string name="camera_strings_gimbal_setting_assist_method_locking_txt">Manual</string>
     <string name="camera_strings_gimbal_setting_assist_method_title_txt">Subject position lock</string>
-    <string name="camera_strings_google_privacy_policy_link">&lt;b>&lt;a href=https://policies.google.com/privacy>%1$s&lt;/a>&lt;/b></string>
-    <string name="camera_strings_google_security_settings_link">&lt;b>&lt;a href=https://security.google.com/settings/security/permissions>%1$s&lt;/a>&lt;/b></string>
-    <string name="camera_strings_google_terms_of_use_link">&lt;b>&lt;a href=https://policies.google.com/terms>%1$s&lt;/a>&lt;/b></string>
+    <string name="camera_strings_gimbal_setting_guide_title_txt">About AI Camerawork</string>
     <string name="camera_strings_gridline_description_txt">Set whether or not to display the grid lines to assist you with the composition of images</string>
     <string name="camera_strings_gridline_txt">Grid lines</string>
     <string name="camera_strings_hand_shutter_description_updated_txt">You can start counting down the timer by turning your palm toward the front camera. To make it easier to detect, extend your fingers upward.</string>
@@ -925,6 +1004,7 @@ NO_CAMERA_DEVICE"</string>
     <string name="camera_strings_notification_channel_title_saving_process_txt">Saving process</string>
     <string name="camera_strings_notification_text_saving_in_progress_txt">Please wait until finished saving</string>
     <string name="camera_strings_notification_title_saving_in_progress_txt">Saving in progress</string>
+    <string name="camera_strings_notify_saving_process_cannot_launch_app_by_hw_shutter_txt">Pressing the shutter button may not launch the camera while saving</string>
     <string name="camera_strings_ok_txt">OK</string>
     <string name="camera_strings_peaking_color_blue_txt">Blue</string>
     <string name="camera_strings_peaking_color_red_txt">Red</string>
@@ -933,6 +1013,7 @@ NO_CAMERA_DEVICE"</string>
     <string name="camera_strings_peaking_color_yellow_txt">Yellow</string>
     <string name="camera_strings_peaking_txt">Peaking</string>
     <string name="camera_strings_personal_data_txt">Personal data</string>
+    <string name="camera_strings_photopro_setting_guide_title_txt">About Pro photo</string>
     <string name="camera_strings_privacy_policy_txt">Privacy policy</string>
     <string name="camera_strings_pro_tips_computational_photo_description_txt">"Even in P mode, the camera automatically identifies the scene and takes beautiful auto shots by reducing blur, noise, overexposure, and underexposure.
 If you do not use this, you can turn it off from the Fn button or in MENU."</string>
@@ -1196,8 +1277,6 @@ Note that you may be charged for data depending on your network operator or inte
     <string name="camera_strings_status_bar_video_format_h265_txt">H.265</string>
     <string name="camera_strings_store_fail_txt">Could not save</string>
     <string name="camera_strings_stream_time_extension_guide_title_txt">Guide to extend stream duration</string>
-    <string name="camera_strings_streaming_connect_mode_rtmp_txt">RTMP</string>
-    <string name="camera_strings_streaming_connect_mode_youtube_txt">YouTube™</string>
     <string name="camera_strings_streaming_connect_to_txt">Connect to</string>
     <string name="camera_strings_streaming_error_dialog_chrome_disabled_body_txt">To select a streaming account, tap %1$s, then enable the Google Chrome™ app. You will leave %2$s as a result.</string>
     <string name="camera_strings_streaming_error_dialog_chrome_disabled_title_txt">Google Chrome™ is disabled</string>
@@ -1242,6 +1321,10 @@ Enable the functions you want to use from Menu in the Settings."</string>
     <string name="camera_strings_touch_function_touch_tracking_txt">Touch tracking</string>
     <string name="camera_strings_touch_to_adjust_focus_and_exposure_txt">Focus and brightness</string>
     <string name="camera_strings_touch_tracking_cancel_updated_txt">Cancel Touch tracking</string>
+    <string name="camera_strings_tripod_framing_auto_off_txt">おまかせホールドがオフになりました</string>
+    <string name="camera_strings_tripod_framing_guide_title_txt">おまかせホールドについて</string>
+    <string name="camera_strings_tripod_framing_indicator_title_txt">Digital Tripod Indicator</string>
+    <string name="camera_strings_tripod_framing_vibration_title_txt">振動</string>
     <string name="camera_strings_tutorial_button_got_it_txt">Got it</string>
     <string name="camera_strings_tutorial_button_next_txt">Next</string>
     <string name="camera_strings_ultra_hdr_description_txt">Makes bright areas appear more vivid according to the scene, allowing you to take more immersive photos.</string>
@@ -1251,6 +1334,7 @@ Enable the functions you want to use from Menu in the Settings."</string>
     <string name="camera_strings_use_of_camera_not_authorized_txt">Use of camera restricted for security reasons</string>
     <string name="camera_strings_video_backlight_correction_description_txt">If you turn this setting on, you can automatically shoot video with the optimal exposure, even in backlit situations.</string>
     <string name="camera_strings_video_backlight_correction_txt">Video backlight correction</string>
+    <string name="camera_strings_video_digital_tripod_title_txt">おまかせホールド撮影補助</string>
     <string name="camera_strings_video_explanatory_4k2k_setting_txt">For stable 4K video recording, you must not change this setting unless you use a high-speed SD card (UHS Speed Class 1 or higher, or Speed Class 10 recommended).</string>
     <string name="camera_strings_video_explanatory_slowmotion_setting_txt">"For stable slow motion video recording, don't change this setting unless you use a high-speed SD card (UHS Speed Class 1 or higher, or Speed Class 10 recommended)."</string>
     <string name="camera_strings_video_explanatory_txt">"For stable video recording, we recommend you change data storage to Internal storage. Would you like to change now?
@@ -1266,6 +1350,7 @@ If you continue to use SD card as data storage, be sure to use a high-speed SD c
     <string name="camera_strings_video_stabilization_description_sub_txt">Note: Selecting High quality may shorten recording duration due to increase in device temperature.</string>
     <string name="camera_strings_video_stabilization_description_txt">The Xperia has a unique hybrid stabilization system called Optical SteadyShot - combining optical image stabilization and electronic image stabilization simultaneously. It gives you shake free and smooth videos even when recording on the move.</string>
     <string name="camera_strings_video_stabilization_high_quality_images_txt">High quality</string>
+    <string name="camera_strings_videopro_setting_guide_title_txt">About Pro video</string>
     <string name="camera_strings_volume_distortion_correction_description_txt">Corrects distortion of faces that appear near the edge of the screen when using the ultra-wide lens. This may cause the background to appear distorted or the angle of view to seem narrowed.</string>
     <string name="camera_strings_volume_distortion_correction_front_description_txt">Corrects distortion of faces that appear near the edge of the screen. This may cause the background to appear distorted or the angle of view to seem narrowed.</string>
     <string name="camera_strings_volume_distortion_correction_txt">Face distortion correction</string>
@@ -1307,9 +1392,6 @@ If you continue to use SD card as data storage, be sure to use a high-speed SD c
     <string name="camera_strings_youtube_live_event_audience_txt">Audience</string>
     <string name="camera_strings_youtube_live_event_date_txt">Date</string>
     <string name="camera_strings_youtube_live_event_description_placeholder_text_txt">Tell users more about your stream</string>
-    <string name="camera_strings_youtube_live_event_description_preset_hash_tag_updated_txt">"\#SonyXperiaLive
-#XperiaLiveStreaming
-"</string>
     <string name="camera_strings_youtube_live_event_description_preset_text_txt">This live event is broadcast from Xperia</string>
     <string name="camera_strings_youtube_live_event_description_txt">Description</string>
     <string name="camera_strings_youtube_live_event_dialog_created_txt">Successfully created</string>
@@ -1339,7 +1421,6 @@ No network connection."</string>
     <string name="camera_strings_youtube_stream_account_txt">YouTube account</string>
     <string name="camera_strings_youtube_stream_event_txt">YouTube live event</string>
     <string name="camera_strings_youtube_stream_url_txt">Live event URL</string>
-    <string name="camera_strings_youtube_terms_of_use_link">&lt;b>&lt;a href=https://www.youtube.com/t/terms>%1$s&lt;/a>&lt;/b></string>
     <string name="camera_strings_zoom_hint_txt">%s x</string>
     <string name="camera_strings_zoom_not_supported_in_front_txt">Cannot zoom with front camera</string>
     <string name="camera_strings_zoom_not_supported_in_this_mode_txt">Cannot zoom while in this mode</string>
@@ -1355,8 +1436,25 @@ No network connection."</string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
     <string name="close_drawer">Close navigation menu</string>
     <string name="close_sheet">Close sheet</string>
+    <string name="common_google_play_services_enable_button">Enable</string>
+    <string name="common_google_play_services_enable_text">"%1$s won't work unless you enable Google Play services."</string>
+    <string name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string name="common_google_play_services_install_button">Install</string>
+    <string name="common_google_play_services_install_text">"%1$s won't run without Google Play services, which are missing from your device."</string>
+    <string name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play services availability</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_unknown_issue">%1$s is having trouble with Google Play services. Please try again.</string>
+    <string name="common_google_play_services_unsupported_text">"%1$s won't run without Google Play services, which are not supported by your device."</string>
+    <string name="common_google_play_services_update_button">Update</string>
+    <string name="common_google_play_services_update_text">"%1$s won't run unless you update Google Play services."</string>
+    <string name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_google_play_services_updating_text">"%1$s won't run without Google Play services, which are currently updating."</string>
+    <string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
+    <string name="common_open_on_phone">Open on phone</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="copy">Copy</string>
-    <string name="copy_toast_msg">Link copied to clipboard</string>
     <string name="debug_preference_actionbar_title_reset">Reset</string>
     <string name="debug_preference_entry_title_auto_power_off">Disable Auto Power Off Timer</string>
     <string name="debug_preference_entry_title_camera_settings">Camera Settings</string>
@@ -1374,6 +1472,7 @@ No network connection."</string>
     <string name="debug_preference_entry_title_set_virtual_remain_size">Set virtual remain size (MB)</string>
     <string name="debug_preference_entry_title_simulate_cta_app">Simulate MLC app</string>
     <string name="debug_preference_entry_title_simulate_sd_card_error">Simulate SD card error</string>
+    <string name="debug_preference_entry_title_sub_preview_repeat_fold_collapse">Sub preview repeat fold collapse</string>
     <string name="debug_preference_entry_title_support_transfer_and_tagging">Support Transfer and Tagging</string>
     <string name="debug_preference_entry_title_zoom_max_ratio_x3_limitation">Disable max zoom ratio x3 limitation</string>
     <string name="debug_preference_title_debug_mode">Debug Mode</string>
@@ -1398,9 +1497,6 @@ No network connection."</string>
     <string name="external_display_photopro_stby_txt">Stby</string>
     <string name="fab_transformation_scrim_behavior">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
-    <string name="fallback_menu_item_copy_link">Copy link</string>
-    <string name="fallback_menu_item_open_in_browser">Open in browser</string>
-    <string name="fallback_menu_item_share_link">Share link</string>
     <string name="focus_indicator_animation_mag_object">1.3</string>
     <string name="focus_indicator_animation_mag_single">1.0</string>
     <string name="focus_indicator_animation_mag_touch">1.2</string>
@@ -1427,7 +1523,11 @@ No network connection."</string>
     <string name="key_debug_set_virtual_remain_size">KEY_DEBUG_SET_VIRTUAL_REMAIN_SIZE</string>
     <string name="key_debug_simulate_cta_app">KEY_DEBUG_SIMULATE_CTA_APP</string>
     <string name="key_debug_simulate_sd_card_error">KEY_DEBUG_SIMULATE_SD_CARD_ERROR</string>
+    <string name="key_debug_sub_preview_repeat_fold_collapse">KEY_DEBUG_SUB_PREVIEW_REPEAT_FOLD_COLLAPSE</string>
     <string name="key_debug_zoom_max_ratio_x3_limitation">KEY_DEBUG_DISABLE_MAX_ZOOM_RATIO_TO_X3_LIMITATION</string>
+    <string name="license_content_error">An error has occurred when fetching the license.</string>
+    <string name="license_is_loading">License info is loading.</string>
+    <string name="license_list_is_loading">License list is loading.</string>
     <string name="m3_exceed_max_badge_text_suffix">%1$s%2$s</string>
     <string name="m3_ref_typeface_brand_medium">sans-serif-medium</string>
     <string name="m3_ref_typeface_brand_regular">sans-serif</string>
@@ -1529,16 +1629,19 @@ No network connection."</string>
     <string name="mtrl_timepicker_cancel">Cancel</string>
     <string name="mtrl_timepicker_confirm">OK</string>
     <string name="navigation_menu">Navigation menu</string>
+    <string name="no_licenses_available">This app does not have any open source licenses.</string>
     <string name="not_selected">Not selected</string>
     <string name="not_set">Not set</string>
     <string name="off">Off</string>
     <string name="on">On</string>
+    <string name="oss_license_title">Open source licenses</string>
     <string name="password_toggle_content_description">Show password</string>
     <string name="path_password_eye">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
     <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
     <string name="preference_copied">\"%1$s\" copied to clipboard.</string>
+    <string name="preferences_license_summary">License details for open source software</string>
     <string name="range_end">Range end</string>
     <string name="range_start">Range start</string>
     <string name="search_menu_title">Search</string>

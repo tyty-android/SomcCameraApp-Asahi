@@ -84,6 +84,16 @@
 
 .method initialize(II)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "previewFrameWidth",
+            "previewFrameHeight"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 

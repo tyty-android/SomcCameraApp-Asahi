@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1386
+    .line 1617
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,6 +31,21 @@
 # virtual methods
 .method public setValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljava/util/Map;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key",
+            "value",
+            "listenersMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -46,13 +61,13 @@
         }
     .end annotation
 
-    .line 1390
+    .line 1621
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1391
-    check-cast p3, Landroid/graphics/Point;
+    .line 1622
+    check-cast p3, Ljava/lang/Integer;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetFocusMagnificationPosition(Ljp/co/sony/mc/camera/setting/CameraSettings;Landroid/graphics/Point;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetBokehStrength(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljava/lang/Integer;)Z
 
     move-result p0
 

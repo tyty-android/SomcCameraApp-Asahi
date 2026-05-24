@@ -9,9 +9,11 @@
 # instance fields
 .field public final synthetic f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
+.field public final synthetic f$1:Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
+
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;)V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;)V
     .locals 0
 
     .line 0
@@ -19,20 +21,24 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda35;->f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda35;->f$1:Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
+
     return-void
 .end method
 
 
 # virtual methods
 .method public final onChanged(Ljava/lang/Object;)V
-    .locals 0
+    .locals 1
 
     .line 0
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda35;->f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda35;->f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
-    check-cast p1, Ljava/lang/Float;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda35;->f$1:Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->$r8$lambda$UkNkBqvUQKkmtuavAfT_101T-lw(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Ljava/lang/Float;)V
+    check-cast p1, Lkotlin/Triple;
+
+    invoke-static {v0, p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->$r8$lambda$Vpm39y3vnX49rHwKXkAyPqDdYuk(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;Lkotlin/Triple;)V
 
     return-void
 .end method

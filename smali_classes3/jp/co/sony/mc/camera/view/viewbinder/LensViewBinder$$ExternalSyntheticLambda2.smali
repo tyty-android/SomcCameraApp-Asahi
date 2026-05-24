@@ -32,7 +32,7 @@
 
     check-cast p1, Lkotlin/Unit;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;->$r8$lambda$-q_MZlUIrxewPR7ZqBi-nk2lHc4(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Lkotlin/Unit;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;->$r8$lambda$fHJJD1C1pLSYyE3gnVSoHaH7Oxs(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Lkotlin/Unit;)Lkotlin/Unit;
 
     move-result-object p0
 

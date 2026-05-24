@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 3629
+    .line 3870
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,6 +31,17 @@
 # virtual methods
 .method public isTempChanged(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -42,15 +53,15 @@
         }
     .end annotation
 
-    .line 3633
+    .line 3874
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 3634
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->getAmberBlue()Ljava/lang/Float;
+    .line 3875
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetFocusMode(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
     move-result-object p0
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmAmberBlue(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljava/lang/Float;
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmFocusMode(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
     move-result-object p1
 

@@ -217,7 +217,7 @@
 
     check-cast p1, Landroid/app/NotificationManager;
 
-    const p2, 0x7f110352
+    const p2, 0x7f11039b
 
     .line 39
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/service/SavingService;->getString(I)Ljava/lang/String;
@@ -228,7 +228,7 @@
 
     invoke-static {p2, p3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v0, 0x7f110351
+    const v0, 0x7f11039a
 
     .line 41
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/service/SavingService;->getString(I)Ljava/lang/String;
@@ -271,7 +271,7 @@
 
     invoke-direct {p1, p2, p3}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
-    const p2, 0x7f110354
+    const p2, 0x7f11039d
 
     .line 54
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/service/SavingService;->getString(I)Ljava/lang/String;
@@ -282,7 +282,7 @@
 
     invoke-virtual {p1, p2}, Landroid/app/Notification$Builder;->setContentTitle(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
 
-    const p2, 0x7f110353
+    const p2, 0x7f11039e
 
     .line 56
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/service/SavingService;->getString(I)Ljava/lang/String;
@@ -293,7 +293,7 @@
 
     invoke-virtual {p1, p2}, Landroid/app/Notification$Builder;->setContentText(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
 
-    const p2, 0x7f080277
+    const p2, 0x7f0802cd
 
     .line 58
     invoke-virtual {p1, p2}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;

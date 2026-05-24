@@ -57,7 +57,7 @@
         }
     .end annotation
 
-    .line 74
+    .line 73
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder$QuickRecordEventListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -70,7 +70,7 @@
 .method public lockQuickRecord()V
     .locals 0
 
-    .line 80
+    .line 79
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder$QuickRecordEventListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;->access$getCaptureControlUiState(Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;)Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
@@ -85,7 +85,7 @@
 .method public startQuickRecord()V
     .locals 0
 
-    .line 76
+    .line 75
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder$QuickRecordEventListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;->access$getCaptureControlUiState(Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;)Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
@@ -106,7 +106,7 @@
 .method public stopQuickRecord()V
     .locals 0
 
-    .line 84
+    .line 83
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder$QuickRecordEventListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;->access$getCaptureControlUiState(Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;)Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;

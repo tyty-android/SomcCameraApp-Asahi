@@ -28,7 +28,7 @@
 .method static constructor <clinit>()V
     .locals 13
 
-    .line 651
+    .line 653
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;->values()[Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;
 
     move-result-object v0
@@ -116,7 +116,7 @@
     :try_end_4
     .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
 
-    .line 575
+    .line 577
     :catch_4
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->values()[Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 

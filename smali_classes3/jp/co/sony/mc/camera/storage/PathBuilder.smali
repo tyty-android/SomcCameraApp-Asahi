@@ -87,6 +87,14 @@
 
 .method public static getBurstCoverPath(Ljp/co/sony/mc/camera/storage/SavingRequest;)Ljava/lang/String;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "savingRequest"
+        }
+    .end annotation
 
     .line 110
     new-instance v0, Ljava/lang/StringBuilder;
@@ -232,6 +240,14 @@
 
 .method public static getPhotoPath(Ljp/co/sony/mc/camera/storage/SavingRequest;)Ljava/lang/String;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "savingRequest"
+        }
+    .end annotation
 
     .line 78
     new-instance v0, Ljava/lang/StringBuilder;
@@ -440,6 +456,14 @@
 
 .method public static isBurstFilePath(Ljava/lang/String;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "path"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -483,6 +507,16 @@
 # virtual methods
 .method public getVideoPath(Ljp/co/sony/mc/camera/recorder/RecordingProfile;J)Ljava/lang/String;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "profile",
+            "dateTaken"
+        }
+    .end annotation
 
     .line 58
     new-instance p0, Ljava/lang/StringBuilder;

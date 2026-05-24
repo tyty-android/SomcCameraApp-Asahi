@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 3105
+    .line 3340
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,6 +31,17 @@
 # virtual methods
 .method public getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -42,10 +53,10 @@
         }
     .end annotation
 
-    .line 3109
+    .line 3344
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 3110
+    .line 3345
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCapturingMode(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
@@ -54,12 +65,12 @@
 
     move-result-object p0
 
-    .line 3111
+    .line 3346
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCameraId(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     move-result-object p1
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;->getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/FaceDetection;->getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/FaceDetection;
 
     move-result-object p0
 

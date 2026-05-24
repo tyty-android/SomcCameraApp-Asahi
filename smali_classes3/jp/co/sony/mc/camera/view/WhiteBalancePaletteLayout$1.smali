@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 96
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout$1;->this$0:Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout;
@@ -37,6 +45,16 @@
 # virtual methods
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "view",
+            "event"
+        }
+    .end annotation
 
     .line 99
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I

@@ -19,6 +19,18 @@
 
 .method public static createThumbnailViewFromJpeg(Landroid/app/Activity;[BI)Landroid/widget/RelativeLayout;
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "activity",
+            "data",
+            "orientationDegree"
+        }
+    .end annotation
 
     .line 33
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -66,7 +78,7 @@
 
     if-eqz p0, :cond_2
 
-    const p0, 0x7f0c0031
+    const p0, 0x7f0c0037
 
     .line 46
     invoke-virtual {v3, p0, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
@@ -78,7 +90,7 @@
     goto :goto_0
 
     :cond_2
-    const p0, 0x7f0c0030
+    const p0, 0x7f0c0036
 
     .line 50
     invoke-virtual {v3, p0, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
@@ -88,7 +100,7 @@
     check-cast p0, Landroid/widget/RelativeLayout;
 
     :goto_0
-    const v3, 0x7f090192
+    const v3, 0x7f090196
 
     .line 52
     invoke-virtual {p0, v3}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
@@ -201,6 +213,16 @@
 
 .method public static createThumbnailViewFromUri(Landroid/app/Activity;Landroid/net/Uri;)Landroid/widget/RelativeLayout;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "activity",
+            "uri"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -214,6 +236,18 @@
 
 .method public static createThumbnailViewFromUri(Landroid/app/Activity;Landroid/net/Uri;I)Landroid/widget/RelativeLayout;
     .locals 12
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "activity",
+            "uri",
+            "orientationDegree"
+        }
+    .end annotation
 
     .line 122
     const-string v0, "FileNotFoundException :  = "
@@ -263,7 +297,7 @@
 
     if-eqz v5, :cond_2
 
-    const v5, 0x7f0c0031
+    const v5, 0x7f0c0037
 
     .line 135
     invoke-virtual {v4, v5, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
@@ -275,7 +309,7 @@
     goto :goto_0
 
     :cond_2
-    const v5, 0x7f0c0030
+    const v5, 0x7f0c0036
 
     .line 139
     invoke-virtual {v4, v5, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
@@ -285,7 +319,7 @@
     check-cast v4, Landroid/widget/RelativeLayout;
 
     :goto_0
-    const v5, 0x7f090192
+    const v5, 0x7f090196
 
     .line 141
     invoke-virtual {v4, v5}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
@@ -541,6 +575,16 @@
 
 .method public static rotateThumbnail(Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
     .locals 12
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bitmap",
+            "degree"
+        }
+    .end annotation
 
     .line 94
     const-string v0, ", height = "

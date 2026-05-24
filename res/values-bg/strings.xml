@@ -82,6 +82,7 @@
     <string name="call_notification_incoming_text">Входящо обаждане</string>
     <string name="call_notification_ongoing_text">Текущо обаждане</string>
     <string name="call_notification_screening_text">Преглежда се входящо обаждане</string>
+    <string name="camera_string_saving_process_hint_txt">Запазване... Моля, изчакайте запазването да завърши.</string>
     <string name="camera_strings_accept_privacy_policy_txt">Вече сте приели правилата за поверителност, но може да промените решението си по всяко време.</string>
     <string name="camera_strings_accessibility_48_mega_pixel_txt">48 мегапиксела</string>
     <string name="camera_strings_accessibility_adjust_bokeh_txt">Регулиране на Боке</string>
@@ -92,6 +93,27 @@
     <string name="camera_strings_accessibility_adjust_framing_size_smaller_txt">Намаляване на размера на кадъра</string>
     <string name="camera_strings_accessibility_adjust_framing_size_txt">Регулиране на размера на кадъра</string>
     <string name="camera_strings_accessibility_adjust_shutter_speed_txt">Скорост на затвора</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_look_menu_txt">Бутон за затваряне. Затваря менюто за изглед.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_menu_txt">Затваряне на персонализираното меню</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_suggests_txt">Затваряне на предложените корекции</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_menu_txt">В момента е приложен „Персонализиран изглед“. Отваря менюто за корекции.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_txt">Персонализиран изглед. Прилага настройки за изглед, яркост и цвят, регистрирани в персонализираното меню.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_tab_txt">Персонализиран раздел. Прилага настройки за изглед, яркост и цвят, регистрирани в персонализираното меню.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_button_txt">Персонализиран бутон. Отваря меню, което ви позволява да правите допълнителни корекции, когато се прилагат препоръчителни корекции.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_param_txt">%1$s е зададено на %2$s</string>
+    <string name="camera_strings_accessibility_ai_suggestion_first_time_txt">AI Асистент на камерата. Тази функция предлага настройки, като например цвят, според сцената.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_four_of_some_suggests_txt">Четвърта предложена корекция</string>
+    <string name="camera_strings_accessibility_ai_suggestion_look_menu_txt">"%1$s
+Отваря менюто „Креативен изглед“"</string>
+    <string name="camera_strings_accessibility_ai_suggestion_new_suggest_txt">Предложени са нови препоръчителни корекции</string>
+    <string name="camera_strings_accessibility_ai_suggestion_one_of_some_suggests_txt">Първа предложена корекция</string>
+    <string name="camera_strings_accessibility_ai_suggestion_open_suggests_txt">Разширяване на предложените корекции</string>
+    <string name="camera_strings_accessibility_ai_suggestion_reset_to_default_txt">Възстановяване на настройките преди предложенията</string>
+    <string name="camera_strings_accessibility_ai_suggestion_selected_suggest_txt">Тези препоръчителни корекции се прилагат</string>
+    <string name="camera_strings_accessibility_ai_suggestion_suggest_lens_txt">Предложен бутон на обектива. Препоръчва се %1$sx.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_surface_of_some_suggests_txt">Предложени корекции. Плъзнете от дясно наляво, за да се покажат предложените корекции.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_three_of_some_suggests_txt">Трета предложена корекция</string>
+    <string name="camera_strings_accessibility_ai_suggestion_two_of_some_suggests_txt">Втора предложена корекция</string>
     <string name="camera_strings_accessibility_arrow_left_button_txt">Стрелка наляво</string>
     <string name="camera_strings_accessibility_arrow_right_button_txt">Стрелка надясно</string>
     <string name="camera_strings_accessibility_audio_level_txt">Измерване на нивото на звука</string>
@@ -246,6 +268,45 @@
     <string name="camera_strings_advanced_setting_geo_tag_title_txt">Запис на местоположение</string>
     <string name="camera_strings_ai_face_restore_description_txt">Можете да правите снимки с изостряне на лицето, за да направите чертите на лицата по-ясни</string>
     <string name="camera_strings_ai_face_restore_txt">Изостряне на лицата</string>
+    <string name="camera_strings_ai_suggestion_introduce_hint_text_txt">[Съвети] AI Асистент на кам.</string>
+    <string name="camera_strings_aisuggestion_box_name1_txt">Персон.</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_message_txt">Регистриране на текущите настройки за изглед, яркост и цвят като „Персонализирани“.</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_overwrite_message_txt">В „Персонализирани“ вече е регистриран изглед. Презаписване?</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_title_txt">Регистриране като персонализиран изглед</string>
+    <string name="camera_strings_aisuggestion_box_title_txt">Персон.</string>
+    <string name="camera_strings_aisuggestion_custom_params_contrast_txt">Контр.</string>
+    <string name="camera_strings_aisuggestion_custom_params_ev_txt">Яркост</string>
+    <string name="camera_strings_aisuggestion_custom_params_register_txt">Регистриране</string>
+    <string name="camera_strings_aisuggestion_custom_params_saturation_txt">Насит.</string>
+    <string name="camera_strings_aisuggestion_custom_params_title_txt">Яркост/цвят</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbab_txt">Топл.</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbgm_txt">Оттенък</string>
+    <string name="camera_strings_aisuggestion_customlook_register_instruction_txt">Можете да използвате регистрираните персонализирани изгледи по всяко време от раздела „Персонализиран изглед“</string>
+    <string name="camera_strings_aisuggestion_description_txt">"AI автоматично идентифицира сцената и предлага оптимизирани корекции в мини предварителния преглед долу вдясно.
+Ако докоснете този мини предварителен преглед, следните настройки ще бъдат автоматично коригирани, за да отговарят на сцената:
+Изглед, Експозиция, Баланс на белия цвят, Наситеност, Контраст, Боке
+*Тази функция се поддържа само в режим „Фото“.
+*Когато започнете записване на видео, като натиснете и задържите бутона на затвора на устройството, няма да се прилагат настройките за наситеност, контраст и боке."</string>
+    <string name="camera_strings_aisuggestion_guide_description1_txt">Препоръчаните корекции въз основа на идентифицираната от AI сцена се показват в мини предварителния преглед долу вдясно (горе вдясно, когато се държи хоризонтално). Можете да приложите всички тези корекции наведнъж, като докоснете мини предварителния преглед.</string>
+    <string name="camera_strings_aisuggestion_guide_description2_txt">В зависимост от сцената може да бъде предложена и определена настройка на обектива. В такъв случай можете да промените на предложената настройка на обектива според предпочитанията си.</string>
+    <string name="camera_strings_aisuggestion_guide_description3_txt">"Като плъзнете наляво на мини предварителния преглед долу вдясно (горе вдясно, когато се държи хоризонтално), можете да показвате алтернативни препоръки за корекции.
+Предложението, което изберете, ще бъде запазено като вашата предпочитана корекция и ще бъде включено в предложенията следващия път, когато заснемате в подобна сцена."</string>
+    <string name="camera_strings_aisuggestion_guide_description4_txt">Можете да докоснете бутона [>], за да скриете предложенията, когато не са необходими. Когато бъде идентифицирана нова сцена, бутонът [&lt;] ще светне, за да ви покаже, че има нови предложения за корекции. За да проверите предложенията отново, докоснете бутона [&lt;].</string>
+    <string name="camera_strings_aisuggestion_guide_description5_txt">Ако докоснете бутона за корекции, след като изберете предложените корекции, можете допълнително да регулирате настройки като яркост и цвят. Корекциите ви ще бъдат запазени на устройството и приложени към предложените корекции следващия път, когато бъде засечена подобна сцена.</string>
+    <string name="camera_strings_aisuggestion_guide_description6_txt">Предложените корекции и корекциите, направени от вас, могат да бъдат регистрирани, което ви позволява да ги зареждате по всяко време, за да правите снимки със същите настройки. Докоснете [Регистриране] за добавяне на „Персонализиран изглед“ към списъка с налични изгледи.</string>
+    <string name="camera_strings_aisuggestion_guide_entry_txt">Изп. „AI Асистент на камерата“</string>
+    <string name="camera_strings_aisuggestion_guide_title_txt">Изп. „AI Асистент на камерата“</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_message_txt">Нулиране на всички настройки на тези по подразбиране, включително цвят, яркост и предпочитаните ви корекции?</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_title_txt">Нулиране на параметрите</string>
+    <string name="camera_strings_aisuggestion_params_reset_txt">Нулиране на параметрите</string>
+    <string name="camera_strings_aisuggestion_permitted_item_bokeh_txt">Боке</string>
+    <string name="camera_strings_aisuggestion_permitted_item_lens_txt">Обектив</string>
+    <string name="camera_strings_aisuggestion_permitted_item_title_txt">Включване в предложенията</string>
+    <string name="camera_strings_aisuggestion_recommend_lens_ratio_txt">Препоръчва се %1$s</string>
+    <string name="camera_strings_aisuggestion_return_to_default_txt">Връщане</string>
+    <string name="camera_strings_aisuggestion_simple_video_instruction_txt">При запис на видео, като натиснете прод., настр. за насит., контраст и боке може да изгл. различно.</string>
+    <string name="camera_strings_aisuggestion_txt">AI Асистент на камерата</string>
+    <string name="camera_strings_aisuggestion_use_aissuggestion_txt">AI Асистент на камерата</string>
     <string name="camera_strings_anonymous_analytics_txt">Анонимен анализ</string>
     <string name="camera_strings_application_name">Камера</string>
     <string name="camera_strings_application_name_google_lens_txt">Google Lens</string>
@@ -421,6 +482,7 @@
     <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Не може да се свърже с Wi-Fi</string>
     <string name="camera_strings_dialog_user_data_collection_txt">Ако се съгласите по-долу, Sony ще събира вашите &lt;b>&lt;a href=#personal-data>лични данни&lt;/a>&lt;/b>, с цел предоставяне на персонализирана поддръжка и подобряване на устройствата и услугите. Sony ще борави с данните ви в съответствие с нашите &lt;b>&lt;a href=https://www.sonymobile.com/privacy/>Правила за поверителност&lt;/a>&lt;/b>.</string>
     <string name="camera_strings_dialog_video_hdr_hlg_supported_short_description_txt">Някои устройства/услуги може да не са способни да възпроизведат оригиналните цвят и яркост на HDR съдържанието. Моля, използвайте устройства/услуги, които поддържат HDR, когато се наслаждавате на HDR съдържание.</string>
+    <string name="camera_strings_digital_tripod_hint_edge_txt">Композицията е изместена. Насочете камерата в посоката на оригиналния обект.</string>
     <string name="camera_strings_digital_zoom_type_description_txt">"Изберете настройка за цифрово увеличение.
 
 Стандартно цифрово увеличение: Увеличение чрез цифрова обработка на базата на данните от сензора за изображение.
@@ -484,6 +546,7 @@ AI увеличение супер резолюция: Увеличение чр
     <string name="camera_strings_fast_capturing_screen_locked_settings_txt">Отключете екрана, за да отворите настройките.</string>
     <string name="camera_strings_fast_capturing_screen_locked_streaming_txt">За да започнете поточно предаване отключете екрана.</string>
     <string name="camera_strings_fast_capturing_screen_locked_title_txt">Екранът е заключен</string>
+    <string name="camera_strings_feature_creative_look_custom_description_txt">Можете да регистрирате изгледи и настройки за яркост/цвят.</string>
     <string name="camera_strings_feature_creative_look_description_txt">"Можете да избирате финалния вид на изображенията (снимки или филми), като изберете „изглед“.
 
 „Креативен изглед“ предлага 6 предварително зададени изгледа. Всяка от тях е оптимизирана с различна комбинация от цветови тон, наситеност, контраст, рязкост, яркост и други елементи на изображението, така че можете да настроите обработката на изображението с идеалния баланс на тези елементи."</string>
@@ -566,6 +629,7 @@ JPEG: Записва JPEG изображения."</string>
     <string name="camera_strings_framing_orientation_description_txt">"Можете да изберете дали да изрежете обекта в хоризонтален, или във вертикален кадър.
 Задайте на [Автоматично], за да бъде ориентацията на изрязването същата като ориентацията на устройството."</string>
     <string name="camera_strings_framing_select_subject_to_track_txt">Докоснете обекта, чиято позиция искате да заключите</string>
+    <string name="camera_strings_framing_setting_guide_title_txt">Относно „Автом. кадр. честота“</string>
     <string name="camera_strings_framing_setting_orientation_landscape_txt">Хоризонтален</string>
     <string name="camera_strings_framing_setting_orientation_portrait_txt">Вертикален</string>
     <string name="camera_strings_framing_setting_orientation_title_txt">Ориентация на кад.</string>
@@ -573,6 +637,7 @@ JPEG: Записва JPEG изображения."</string>
 Изрязаните записи се запазват с резолюция Full HD. Записите, които не са изрязани, се запазват в 4K."</string>
     <string name="camera_strings_framing_setting_save_original_video_off_txt">Запис на цял екран: изключено</string>
     <string name="camera_strings_framing_setting_save_original_video_title_txt">Запис на цял екран</string>
+    <string name="camera_strings_framing_setting_snapshot_description_txt">Без значение дали [Запис на цял екран] е включено, или изключено, снимките, направени, докато записвате видео, се запазват на цял екран.</string>
     <string name="camera_strings_geotagging_description_txt">Запазвайте вашите снимки и видеоклипове с местоположенията, на които са заснети</string>
     <string name="camera_strings_geotagging_txt">Запис на местоположение</string>
     <string name="camera_strings_gimbal_mode_tab_label">AI Оператор</string>
@@ -591,6 +656,7 @@ JPEG: Записва JPEG изображения."</string>
     <string name="camera_strings_gimbal_setting_assist_method_locking_hint_txt">Закл. на поз. на обекта: ръчно</string>
     <string name="camera_strings_gimbal_setting_assist_method_locking_txt">Ръчно</string>
     <string name="camera_strings_gimbal_setting_assist_method_title_txt">Закл. поз. об.</string>
+    <string name="camera_strings_gimbal_setting_guide_title_txt">Относно „AI Оператор“</string>
     <string name="camera_strings_gridline_description_txt">Задайте дали да се показва решетката за помощ с композирането на изображения</string>
     <string name="camera_strings_gridline_txt">Решетка</string>
     <string name="camera_strings_hand_shutter_description_updated_txt">Можете да започнете да отброявате таймера, като обърнете дланта си към предната камера. За да улесните засичането, изпънете пръсти нагоре.</string>
@@ -726,6 +792,7 @@ JPEG: Записва JPEG изображения."</string>
     <string name="camera_strings_notification_channel_title_saving_process_txt">Процес на запазване</string>
     <string name="camera_strings_notification_text_saving_in_progress_txt">Моля, изчакайте, докато приключи запазването</string>
     <string name="camera_strings_notification_title_saving_in_progress_txt">Извършва се запазване</string>
+    <string name="camera_strings_notify_saving_process_cannot_launch_app_by_hw_shutter_txt">Натискането на бутона на затвора може да не стартира камерата по време на запазване</string>
     <string name="camera_strings_ok_txt">ОК</string>
     <string name="camera_strings_peaking_color_blue_txt">Син</string>
     <string name="camera_strings_peaking_color_red_txt">Червена</string>
@@ -734,6 +801,7 @@ JPEG: Записва JPEG изображения."</string>
     <string name="camera_strings_peaking_color_yellow_txt">Жълт</string>
     <string name="camera_strings_peaking_txt">Подчертаване</string>
     <string name="camera_strings_personal_data_txt">Лични данни</string>
+    <string name="camera_strings_photopro_setting_guide_title_txt">Относно „Pro фото“</string>
     <string name="camera_strings_privacy_policy_txt">Правила за поверителност</string>
     <string name="camera_strings_pro_tips_computational_photo_description_txt">"Дори в режим P камерата автоматично идентифицира сцената и прави красиви автоматични снимки, като намалява размазването, шума, преекспонирането и недоекспонирането.
 Ако не използвате функцията, можете да я изключите от бутона Fn или в МЕНЮ."</string>
@@ -964,6 +1032,7 @@ M (Ръчна експозиция)"</string>
     <string name="camera_strings_video_stabilization_description_sub_txt">Забележка: Изборът на „Високо качество“ може да съкрати продължителността на записа поради повишаване на температурата на устройството.</string>
     <string name="camera_strings_video_stabilization_description_txt">Xperia има уникална хибридна система за стабилизация, наречена Optical SteadyShot - съчетаваща едновременно оптична стабилизация на изображението и електронна стабилизация на изображението. Предоставя ви гладки видеа без клатене дори когато записвате в движение.</string>
     <string name="camera_strings_video_stabilization_high_quality_images_txt">Вис. кач-во</string>
+    <string name="camera_strings_videopro_setting_guide_title_txt">Относно „Pro видео“</string>
     <string name="camera_strings_volume_distortion_correction_description_txt">Коригира изкривяването на лицата, близо до ръба на екрана при използване на ултраширокия обектив. Това може да предизвика изкривяване на фона или стесняване на зрителния ъгъл.</string>
     <string name="camera_strings_volume_distortion_correction_front_description_txt">Коригира изкривяването на лицата, близо до ръба на екрана. Това може да предизвика изкривяване на фона или стесняване на зрителния ъгъл.</string>
     <string name="camera_strings_volume_distortion_correction_txt">Корекция на изкрив. на лица</string>
@@ -1041,8 +1110,25 @@ M (Ръчна експозиция)"</string>
     <string name="clear_text_end_icon_content_description">Изчистване на текста</string>
     <string name="close_drawer">Затваряне на менюто за навигация</string>
     <string name="close_sheet">Затваряне на таблицата</string>
+    <string name="common_google_play_services_enable_button">Активиране</string>
+    <string name="common_google_play_services_enable_text">%1$s няма да работи, освен ако не активирате услугите за Google Play.</string>
+    <string name="common_google_play_services_enable_title">Активиране на услугите за Google Play</string>
+    <string name="common_google_play_services_install_button">Инсталиране</string>
+    <string name="common_google_play_services_install_text">%1$s няма да се изпълнява, тъй като услугите за Google Play не са инсталирани на устройството ви.</string>
+    <string name="common_google_play_services_install_title">Изтегляне на услугите за Google Play</string>
+    <string name="common_google_play_services_notification_channel_name">Наличност на услугите за Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Грешка в услугите за Google Play</string>
+    <string name="common_google_play_services_unknown_issue">%1$s има проблеми с услугите за Google Play. Моля, опитайте отново.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s няма да се изпълнява, тъй като услугите за Google Play не се поддържат от устройството ви.</string>
+    <string name="common_google_play_services_update_button">Актуализиране</string>
+    <string name="common_google_play_services_update_text">%1$s няма да се изпълнява, освен ако не актуализирате услугите за Google Play.</string>
+    <string name="common_google_play_services_update_title">Актуализиране на услугите за Google Play</string>
+    <string name="common_google_play_services_updating_text">%1$s няма да се изпълнява без услугите за Google Play. Понастоящем те се актуализират.</string>
+    <string name="common_google_play_services_wear_update_text">Необходима е нова версия на услугите за Google Play. Скоро тя ще се актуализира автоматично.</string>
+    <string name="common_open_on_phone">Отваряне на телефона</string>
+    <string name="common_signin_button_text">Вход</string>
+    <string name="common_signin_button_text_long">Вход с Google</string>
     <string name="copy">Копиране</string>
-    <string name="copy_toast_msg">Връзката е копирана в буферната памет</string>
     <string name="default_error_message">Въведеното е невалидно</string>
     <string name="default_popup_window_title">Изскачащ прозорец</string>
     <string name="dropdown_menu">Падащо меню</string>
@@ -1053,9 +1139,6 @@ M (Ръчна експозиция)"</string>
     <string name="external_display_connected_description_txt">Можете да видите визьора на Монитора за влогинг</string>
     <string name="external_display_connected_title_txt">Свързан е Монитор за влогинг</string>
     <string name="external_display_note_about_external_mic_txt">Бележка: за да ползвате външен микрофон, свържете го към Монитора за влогинг преди записване. Ако го свържете след това, ще трябва да свържете Монитора за влогинг отново.</string>
-    <string name="fallback_menu_item_copy_link">Копиране на връзката</string>
-    <string name="fallback_menu_item_open_in_browser">Отваряне в браузър</string>
-    <string name="fallback_menu_item_share_link">Споделяне на връзката</string>
     <string name="icon_content_description">Икона за диалогов прозорец</string>
     <string name="in_progress">В ход</string>
     <string name="indeterminate">Частично отметнато</string>

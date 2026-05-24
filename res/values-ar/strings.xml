@@ -82,6 +82,7 @@
     <string name="call_notification_incoming_text">مكالمة واردة</string>
     <string name="call_notification_ongoing_text">مكالمة جارية</string>
     <string name="call_notification_screening_text">يتم فحص المكالمة الواردة</string>
+    <string name="camera_string_saving_process_hint_txt">جارٍ الحفظ... يُرجى الانتظار حتى يكتمل الحفظ.</string>
     <string name="camera_strings_accept_privacy_policy_txt">لقد وافقت على سياسة الخصوصية من قبل، ولكن يمكنك دائمًا تغيير موقفك في أي وقت.</string>
     <string name="camera_strings_accessibility_48_mega_pixel_txt">‏48 ميغابكسل</string>
     <string name="camera_strings_accessibility_adjust_bokeh_txt">تعديل بوكيه</string>
@@ -92,6 +93,27 @@
     <string name="camera_strings_accessibility_adjust_framing_size_smaller_txt">تقليل حجم الإطار</string>
     <string name="camera_strings_accessibility_adjust_framing_size_txt">تعديل حجم الإطار</string>
     <string name="camera_strings_accessibility_adjust_shutter_speed_txt">سرعة الغالق</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_look_menu_txt">زر الإغلاق. يغلق قائمة المظهر.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_menu_txt">إغلاق القائمة المعدّلة</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_suggests_txt">إغلاق التعديلات المقترحة</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_menu_txt">المظهر المعدّل المطبق حاليًا. يفتح قائمة التعديل.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_txt">المظهر المعدّل. تطبق إعدادات المظهر والسطوع واللون المسجلة في القائمة المعدّلة.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_tab_txt">علامة التبويب المعدّلة. تطبق إعدادات المظهر والسطوع واللون المسجلة في القائمة المعدّلة.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_button_txt">زر معدّل. يفتح قائمة تتيح لك إجراء مزيد من التعديلات عند تطبيق التعديلات المقترحة.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_param_txt">تم تعيين %1$s إلى %2$s</string>
+    <string name="camera_strings_accessibility_ai_suggestion_first_time_txt">مساعد الكاميرا بالذكاء الاصطناعي. تُقدِّم هذه الوظيفة اقتراحات للإعدادات مثل اللون وفقًا للمشهد.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_four_of_some_suggests_txt">رابع تعديل مقترح</string>
+    <string name="camera_strings_accessibility_ai_suggestion_look_menu_txt">"‏%1$s
+يفتح قائمة المظهر الإبداعي"</string>
+    <string name="camera_strings_accessibility_ai_suggestion_new_suggest_txt">تم اقتراح تعديلات جديدة موصى بها</string>
+    <string name="camera_strings_accessibility_ai_suggestion_one_of_some_suggests_txt">أول تعديل مقترح</string>
+    <string name="camera_strings_accessibility_ai_suggestion_open_suggests_txt">توسعة التعديلات المقترحة</string>
+    <string name="camera_strings_accessibility_ai_suggestion_reset_to_default_txt">إعادة التعيين إلى إعدادات الاقتراح المسبق</string>
+    <string name="camera_strings_accessibility_ai_suggestion_selected_suggest_txt">تم تطبيق هذه التعديلات المقترحة</string>
+    <string name="camera_strings_accessibility_ai_suggestion_suggest_lens_txt">زر العدسة المقترح. يوصى بـ ‎%1$sx.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_surface_of_some_suggests_txt">التعديلات المقترحة. اسحب من اليمين إلى اليسار لعرض التعديلات المقترحة.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_three_of_some_suggests_txt">ثالث تعديل مقترح</string>
+    <string name="camera_strings_accessibility_ai_suggestion_two_of_some_suggests_txt">ثاني تعديل مقترح</string>
     <string name="camera_strings_accessibility_arrow_left_button_txt">السهم الأيسر</string>
     <string name="camera_strings_accessibility_arrow_right_button_txt">السهم الأيمن</string>
     <string name="camera_strings_accessibility_audio_level_txt">مقياس مستوى الصوت</string>
@@ -246,6 +268,45 @@
     <string name="camera_strings_advanced_setting_geo_tag_title_txt">حفظ الموقع</string>
     <string name="camera_strings_ai_face_restore_description_txt">يمكنك التقاط صور فوتوغرافية مع زيادة وضوح الوجه لجعل ملامح الوجوه أكثر وضوحًا</string>
     <string name="camera_strings_ai_face_restore_txt">زيادة حدة الوجوه</string>
+    <string name="camera_strings_ai_suggestion_introduce_hint_text_txt">‏[نصائح] مساعد الكاميرا بـ AI</string>
+    <string name="camera_strings_aisuggestion_box_name1_txt">معدّل</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_message_txt">تسجيل المظهر الحالي، والسطوع، وإعدادات اللون كمظهر معدّل.</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_overwrite_message_txt">المظهر مسجل بالفعل في \"معدّل\". هل تريد استبداله؟</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_title_txt">تسجيل كمظهر معدّل</string>
+    <string name="camera_strings_aisuggestion_box_title_txt">معدّل</string>
+    <string name="camera_strings_aisuggestion_custom_params_contrast_txt">تباين</string>
+    <string name="camera_strings_aisuggestion_custom_params_ev_txt">السطوع</string>
+    <string name="camera_strings_aisuggestion_custom_params_register_txt">تسجيل</string>
+    <string name="camera_strings_aisuggestion_custom_params_saturation_txt">تشبع اللون</string>
+    <string name="camera_strings_aisuggestion_custom_params_title_txt">السطوع/اللون</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbab_txt">دفء</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbgm_txt">لون</string>
+    <string name="camera_strings_aisuggestion_customlook_register_instruction_txt">يمكنك استخدام الإطلالات المخصّصة المسجَّلة في أي وقت من علامة التبويب مظهر معدّل</string>
+    <string name="camera_strings_aisuggestion_description_txt">"يتعرف الذكاء الاصطناعي تلقائيًا على المشهد ويقترح تعديلات محسّنة في المعاينة المصغرة في أسفل اليمين.
+إذا نقرت على هذه المعاينة المصغرة، فسيتم ضبط الإعدادات التالية تلقائيًا لتناسب المشهد:
+المظهر، التعرض، توازن الأبيض، التشبع، التباين، بوكيه
+‏*هذه الوظيفة متاحة فقط في وضع الصورة.
+‏*عند بدء تسجيل مقطع فيديو بالضغط مطولاً على زر الغالق، لن يتم تطبيق إعدادات التشبع والتباين والبوكيه."</string>
+    <string name="camera_strings_aisuggestion_guide_description1_txt">يتم عرض التعديلات الموصى بها استنادًا إلى المشهد الذي تعرف عليه الذكاء الاصطناعي في المعاينة المصغرة في أسفل اليمين (أعلى اليمين عند الإمساك أفقيًا). يمكنك تطبيق كل هذه التعديلات دفعة واحدة بالنقر على المعاينة المصغرة.</string>
+    <string name="camera_strings_aisuggestion_guide_description2_txt">اعتمادًا على المشهد، قد يتم أيضًا اقتراح إعداد عدسة محدد. في هذه الحالة، يمكنك التبديل إلى إعداد العدسة المقترح حسب تفضيلك.</string>
+    <string name="camera_strings_aisuggestion_guide_description3_txt">"من خلال السحب إلى اليسار على المعاينة المصغرة في أسفل اليمين (أعلى اليمين عند الإمساك أفقيًا)، يمكنك عرض توصيات ضبط بديلة.
+سيتم حفظ الاقتراح الذي تختاره كتعديلك المفضل، وسيتم تضمينه في الاقتراحات في المرة القادمة التي تصور فيها مشهدًا مشابهًا."</string>
+    <string name="camera_strings_aisuggestion_guide_description4_txt">يمكنك النقر على زر [>] لإخفاء الاقتراحات عند عدم الحاجة إليها. عند التعرف على مشهد جديد، سيضيء زر [&lt;] ليُظهر لك وجود اقتراحات ضبط جديدة. للتحقق من الاقتراحات مرة أخرى، انقر على زر [&lt;].</string>
+    <string name="camera_strings_aisuggestion_guide_description5_txt">إذا قمت بالنقر على زر الضبط بعد اختيار التعديلات المقترحة، يمكنك ضبط إعدادات إضافية مثل السطوع واللون. سيتم حفظ تعديلاتك على الجهاز وتطبيقها على التعديلات المقترحة في المرة القادمة عند اكتشاف مشهد مشابه.</string>
+    <string name="camera_strings_aisuggestion_guide_description6_txt">يمكنك تسجيل التعديلات المقترحة والتعديلات التي أجريتها، مما يتيح لك تحميلها في أي وقت لالتقاط الصور بالإعدادات ذاتها. انقر على [تسجيل] لإضافة مظهر معدّل إلى قائمة المظاهر المتاحة.</string>
+    <string name="camera_strings_aisuggestion_guide_entry_txt">تحقق من كيفية استخدام مساعد الكاميرا AI</string>
+    <string name="camera_strings_aisuggestion_guide_title_txt">كيفية استخدام مساعد الكاميرا AI</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_message_txt">هل ترغب في إعادة تعيين جميع الإعدادات إلى الإعدادات الافتراضية، بما يشمل اللون والسطوع والتعديلات التي تفضلها؟</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_title_txt">إعادة تعيين المعلمات</string>
+    <string name="camera_strings_aisuggestion_params_reset_txt">إعادة تعيين المعلمات</string>
+    <string name="camera_strings_aisuggestion_permitted_item_bokeh_txt">بوكيه</string>
+    <string name="camera_strings_aisuggestion_permitted_item_lens_txt">العدسة</string>
+    <string name="camera_strings_aisuggestion_permitted_item_title_txt">تضمين في الاقتراحات</string>
+    <string name="camera_strings_aisuggestion_recommend_lens_ratio_txt">‏%1$s مُوصى به</string>
+    <string name="camera_strings_aisuggestion_return_to_default_txt">رجوع</string>
+    <string name="camera_strings_aisuggestion_simple_video_instruction_txt">عند تسجيل فيديو بالضغط المطول، قد تظهر إعدادات التشبع والتباين والبوكيه بشكل مختلف.</string>
+    <string name="camera_strings_aisuggestion_txt">مساعد الكاميرا بالذكاء الاصطناعي</string>
+    <string name="camera_strings_aisuggestion_use_aissuggestion_txt">استخدام مساعد الكاميرا AI</string>
     <string name="camera_strings_anonymous_analytics_txt">تحليلات مخفية الهوية</string>
     <string name="camera_strings_application_name">كاميرا</string>
     <string name="camera_strings_application_name_google_lens_txt">Google Lens</string>
@@ -421,6 +482,7 @@
     <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">لا يمكن الاتصال بشبكة Wi-Fi</string>
     <string name="camera_strings_dialog_user_data_collection_txt">إذا وافقت أدناه، ستجمع سوني &lt;b>&lt;a href=#personal-data>بياناتك الشخصية&lt;/a>&lt;/b> لتقديم الدعم المخصص وتحسين الأجهزة والخدمات. ستقوم سوني بمعالجة بياناتك حسب &lt;b>&lt;a href=https://www.sonymobile.com/privacy/>سياسة الخصوصية&lt;/a>&lt;/b> لدينا.</string>
     <string name="camera_strings_dialog_video_hdr_hlg_supported_short_description_txt">قد لا تتمكن بعض الأجهزة/الخدمات من إعادة إنتاج اللون والسطوع الأصليين لمحتوى HDR. يُرجى استخدام أجهزة/خدمات تدعم HDRعند الاستمتاع بمحتوى HDR.</string>
+    <string name="camera_strings_digital_tripod_hint_edge_txt">فشل التكوين. وجِّه الكاميرا نحو الهدف الأصلي.</string>
     <string name="camera_strings_digital_zoom_type_description_txt">"حدد إعداد التكبير/التصغير الرقمي.
 
 التكبير/التصغير الرقمي القياسي: يمكنك التكبير/التصغير باستخدام المعالجة الرقمية بناءً على بيانات مستشعر الصورة.
@@ -484,6 +546,7 @@
     <string name="camera_strings_fast_capturing_screen_locked_settings_txt">لفتح الإعدادات، قم بإلغاء قفل الشاشة.</string>
     <string name="camera_strings_fast_capturing_screen_locked_streaming_txt">لبدء الدفق، قم بإلغاء قفل الشاشة.</string>
     <string name="camera_strings_fast_capturing_screen_locked_title_txt">الشاشة مقفلة</string>
+    <string name="camera_strings_feature_creative_look_custom_description_txt">يمكنك تسجيل المظاهر وإعدادات السطوع/اللون.</string>
     <string name="camera_strings_feature_creative_look_description_txt">"يمكنك اختيار الشكل النهائي للصور (صور فوتوغرافية أو أفلام) من خلال تحديد \"مظهر\".
 
 يقدم المظهر الإبداعي 6 مظاهر مُعدة سابقًا. يحسن كل منها بمزيج من درجة اللون والتشبع والتباين والحدة والسطوع وعناصر أخرى للصور، حتى تتمكن من إعداد معالجة الصور بموازنتك المثالية لتلك العناصر."</string>
@@ -567,6 +630,7 @@
     <string name="camera_strings_framing_orientation_description_txt">"يمكنك اختيار اقتصاص الهدف في إطار أفقي أو عمودي.
 قم بتعيينه على [تلقائي] لجعل اتجاه الاقتصاص مثل اتجاه الجهاز."</string>
     <string name="camera_strings_framing_select_subject_to_track_txt">انقر على الهدف الذي تريد قفل الموقع الخاص به</string>
+    <string name="camera_strings_framing_setting_guide_title_txt">نبذة عن تحديد الإطار التلقائي</string>
     <string name="camera_strings_framing_setting_orientation_landscape_txt">أفقي</string>
     <string name="camera_strings_framing_setting_orientation_portrait_txt">عمودي</string>
     <string name="camera_strings_framing_setting_orientation_title_txt">اتجاه الإطار</string>
@@ -574,6 +638,7 @@
 يتم حفظ التسجيلات المقتصة بدقة ‏Full HD. يتم حفظ التسجيلات غير المقتصة بدقة 4K."</string>
     <string name="camera_strings_framing_setting_save_original_video_off_txt">تسجيل الشاشة الكاملة: إيقاف التشغيل</string>
     <string name="camera_strings_framing_setting_save_original_video_title_txt">تسجيل الشاشة الكاملة</string>
+    <string name="camera_strings_framing_setting_snapshot_description_txt">سواء كان [تسجيل الشاشة الكاملة] قيد التشغيل أو إيقاف التشغيل، سيتم حفظ اللقطات المأخوذة أثناء تسجيل مقطع الفيديو مع الشاشة الكاملة.</string>
     <string name="camera_strings_geotagging_description_txt">حفظ الصور ومقاطع الفيديو بالمواقع التي التُقطت فيها</string>
     <string name="camera_strings_geotagging_txt">حفظ الموقع</string>
     <string name="camera_strings_gimbal_mode_tab_label">أعمال كاميرا بذكاء اصطناعي</string>
@@ -592,6 +657,7 @@
     <string name="camera_strings_gimbal_setting_assist_method_locking_hint_txt">قفل موقع الهدف: يدويًا</string>
     <string name="camera_strings_gimbal_setting_assist_method_locking_txt">يدويًا</string>
     <string name="camera_strings_gimbal_setting_assist_method_title_txt">قفل موقع الهدف</string>
+    <string name="camera_strings_gimbal_setting_guide_title_txt">نبذة عن أعمال الكاميرا بذكاء اصطناعي</string>
     <string name="camera_strings_gridline_description_txt">حدِّد ما إذا كان يمكن عرض خطوط الشبكة لمساعدتك على إنشاء الصور أم لا</string>
     <string name="camera_strings_gridline_txt">خطوط الشبكة</string>
     <string name="camera_strings_hand_shutter_description_updated_txt">يمكنك بدء العد التنازلي للمؤقت من خلال تدوير راحة يديك تجاه الكاميرا الأمامية. لتسهيل عملية الكشف، مدِّد أصابعك إلى أعلى.</string>
@@ -727,6 +793,7 @@
     <string name="camera_strings_notification_channel_title_saving_process_txt">عملية الحفظ</string>
     <string name="camera_strings_notification_text_saving_in_progress_txt">يرجى الانتظار حتى ينتهي الحفظ</string>
     <string name="camera_strings_notification_title_saving_in_progress_txt">الحفظ قيد التقدم</string>
+    <string name="camera_strings_notify_saving_process_cannot_launch_app_by_hw_shutter_txt">قد لا يؤدي الضغط على زر الغالق إلى تشغيل الكاميرا في أثناء الحفظ</string>
     <string name="camera_strings_ok_txt">موافق</string>
     <string name="camera_strings_peaking_color_blue_txt">أزرق</string>
     <string name="camera_strings_peaking_color_red_txt">أحمر</string>
@@ -735,6 +802,7 @@
     <string name="camera_strings_peaking_color_yellow_txt">أصفر</string>
     <string name="camera_strings_peaking_txt">التموج</string>
     <string name="camera_strings_personal_data_txt">البيانات الشخصية</string>
+    <string name="camera_strings_photopro_setting_guide_title_txt">نبذة عن الصورة الاحترافية</string>
     <string name="camera_strings_privacy_policy_txt">سياسة الخصوصية</string>
     <string name="camera_strings_pro_tips_computational_photo_description_txt">"حتى في الوضع P، تحدد الكاميرا المشهد تلقائيًا وتصور لقطات تلقائية جميلة عن طريق خفض التمويه والتشويش والتعريض المفرط والتعريض الناقص للضوء.
 إذا كنت لا تستخدم هذه الميزة، فأوقف تشغيلها من الزر Fn أو من القائمة."</string>
@@ -965,6 +1033,7 @@
     <string name="camera_strings_video_stabilization_description_sub_txt">ملاحظة: قد يقلل تحديد الجودة العالية مدة التسجيل بسبب ارتفاع درجة حرارة الجهاز.</string>
     <string name="camera_strings_video_stabilization_description_txt">يحتوي Xperia على نظام ثبات هجين فريد يُسمى Optical SteadyShot ويجمع بين الثبات الضوئي للصور والثبات الإلكتروني لها في آنٍ واحد. يوفر لك مقاطع فيديو متجانسة خالية من الاهتزازات حتى عند التسجيل أثناء الحركة.</string>
     <string name="camera_strings_video_stabilization_high_quality_images_txt">جودة عالية</string>
+    <string name="camera_strings_videopro_setting_guide_title_txt">نبذة عن الفيديو الاحترافي</string>
     <string name="camera_strings_volume_distortion_correction_description_txt">يصحح تشويه الوجوه التي تظهر بالقرب من حافة الشاشة باستخدام العدسة الواسعة للغاية. قد يتسبب ذلك في ظهور الخلفية مشوهة أو ظهور زاوية الرؤية ضيقة.</string>
     <string name="camera_strings_volume_distortion_correction_front_description_txt">يصحح تشويه الوجوه التي تظهر بالقرب من حافة الشاشة. قد يتسبب ذلك في ظهور الخلفية مشوهة أو ظهور زاوية الرؤية ضيقة.</string>
     <string name="camera_strings_volume_distortion_correction_txt">تصحيح تشويه الوجه</string>
@@ -1042,8 +1111,25 @@
     <string name="clear_text_end_icon_content_description">محو النص</string>
     <string name="close_drawer">إغلاق قائمة التنقل</string>
     <string name="close_sheet">إغلاق الورقة</string>
+    <string name="common_google_play_services_enable_button">تفعيل</string>
+    <string name="common_google_play_services_enable_text">‏لن يعمل %1$s ما لم يتم تفعيل خدمات Google Play.</string>
+    <string name="common_google_play_services_enable_title">‏تفعيل خدمات Google Play</string>
+    <string name="common_google_play_services_install_button">تثبيت</string>
+    <string name="common_google_play_services_install_text">‏لن يتم تشغيل %1$s بدون خدمات Google Play، والتي لا تتوفر على جهازك.</string>
+    <string name="common_google_play_services_install_title">‏الحصول على خدمات Google Play</string>
+    <string name="common_google_play_services_notification_channel_name">‏مدى توفّر خدمات Google Play</string>
+    <string name="common_google_play_services_notification_ticker">‏خطأ في خدمات Google Play</string>
+    <string name="common_google_play_services_unknown_issue">‏لدى %1$s مشكلة في خدمات Google Play. يُرجى إعادة المحاولة.</string>
+    <string name="common_google_play_services_unsupported_text">‏لن يتم تشغيل %1$s بدون خدمات Google Play التي لا يوفرها جهازك.</string>
+    <string name="common_google_play_services_update_button">تحديث</string>
+    <string name="common_google_play_services_update_text">‏لن يتم تشغيل %1$s ما لم يتم تحديث خدمات Google Play.</string>
+    <string name="common_google_play_services_update_title">‏تحديث خدمات Google Play</string>
+    <string name="common_google_play_services_updating_text">‏لن يتم تشغيل %1$s بدون خدمات Google Play، والتي يتم تحديثها حاليًا.</string>
+    <string name="common_google_play_services_wear_update_text">‏يجب توفر إصدار جديد من خدمات Google Play. سيتم تحديثها تلقائيًا قريبًا.</string>
+    <string name="common_open_on_phone">فتح على الهاتف</string>
+    <string name="common_signin_button_text">تسجل الدخول</string>
+    <string name="common_signin_button_text_long">‏تسجيل الدخول عبر Google</string>
     <string name="copy">نسخ</string>
-    <string name="copy_toast_msg">تم نسخ الرابط إلى الحافظة.</string>
     <string name="default_error_message">إدخال غير صالح</string>
     <string name="default_popup_window_title">نافذة منبثقة</string>
     <string name="dropdown_menu">قائمة منسدلة</string>
@@ -1054,9 +1140,6 @@
     <string name="external_display_connected_description_txt">يمكنك التحقق من مصوِّب التصوير من جهاز عرض مدونة الفيديو</string>
     <string name="external_display_connected_title_txt">تم توصيل جهاز عرض مدونة فيديو</string>
     <string name="external_display_note_about_external_mic_txt">ملحوظة: لاستخدام الميكروفون الخارجي، نرجو توصيله بجهاز عرض مدونة الفيديو قبل التسجيل. إذا اتصلت بعد هذا، فستحتاج إلى إعادة توصيل جهاز عرض مدونة الفيديو.</string>
-    <string name="fallback_menu_item_copy_link">نسخ الرابط</string>
-    <string name="fallback_menu_item_open_in_browser">فتح في المتصفح</string>
-    <string name="fallback_menu_item_share_link">مشاركة الرابط</string>
     <string name="icon_content_description">رمز مربع الحوار</string>
     <string name="in_progress">قيد التقدم</string>
     <string name="indeterminate">تم وضع علامة في المربّع بشكل جزئي</string>

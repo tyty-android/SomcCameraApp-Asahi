@@ -21,8 +21,6 @@
 
 .field private mIsVideoHdr:Z
 
-.field private mRecordingOrientation:I
-
 .field private final mSessionIdTag:Ljava/lang/String;
 
 
@@ -51,38 +49,33 @@
     return-void
 .end method
 
-.method static bridge synthetic -$$Nest$msetRecordingOrientation(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;I)V
-    .locals 0
-
-    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->setRecordingOrientation(I)V
-
-    return-void
-.end method
-
 .method private constructor <init>(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sessionId"
+        }
+    .end annotation
 
-    .line 6552
+    .line 7097
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x1
 
-    .line 6548
+    .line 7095
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->mIsNeedRawCapture:Z
 
-    const/4 v0, -0x1
-
-    .line 6550
-    iput v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->mRecordingOrientation:I
-
-    .line 6554
+    .line 7099
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->mSessionIdTag:Ljava/lang/String;
 
-    .line 6555
+    .line 7100
     invoke-direct {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->clear()V
 
     return-void
@@ -101,24 +94,27 @@
 
     const/4 v0, 0x0
 
-    .line 6594
+    .line 7131
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->mIsNeedCapturedFrame:Z
 
-    .line 6595
+    .line 7132
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->mIsVideoHdr:Z
-
-    const/4 v0, -0x1
-
-    .line 6596
-    iput v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->mRecordingOrientation:I
 
     return-void
 .end method
 
 .method private needCapturedFrame(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "needFrame"
+        }
+    .end annotation
 
-    .line 6559
+    .line 7104
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->mIsNeedCapturedFrame:Z
 
     return-void
@@ -126,8 +122,16 @@
 
 .method private needRawCapture(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "need"
+        }
+    .end annotation
 
-    .line 6575
+    .line 7120
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->mIsNeedRawCapture:Z
 
     return-void
@@ -135,18 +139,17 @@
 
 .method private needVideoHdr(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "needHdr"
+        }
+    .end annotation
 
-    .line 6563
+    .line 7108
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->mIsVideoHdr:Z
-
-    return-void
-.end method
-
-.method private setRecordingOrientation(I)V
-    .locals 0
-
-    .line 6583
-    iput p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->mRecordingOrientation:I
 
     return-void
 .end method
@@ -155,8 +158,16 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
-    .line 6608
+    .line 7144
     instance-of v0, p1, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;
 
     if-eqz v0, :cond_0
@@ -186,19 +197,10 @@
     return p0
 .end method
 
-.method public getRecordingOrientation()I
-    .locals 0
-
-    .line 6587
-    iget p0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->mRecordingOrientation:I
-
-    return p0
-.end method
-
 .method public hashCode()I
     .locals 0
 
-    .line 6613
+    .line 7149
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -213,7 +215,7 @@
 .method public isNeedCapturedFrame()Z
     .locals 0
 
-    .line 6567
+    .line 7112
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->mIsNeedCapturedFrame:Z
 
     return p0
@@ -222,7 +224,7 @@
 .method public isNeedRawCapture()Z
     .locals 0
 
-    .line 6579
+    .line 7124
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->mIsNeedRawCapture:Z
 
     return p0
@@ -231,7 +233,7 @@
 .method public isVideoHdr()Z
     .locals 0
 
-    .line 6571
+    .line 7116
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->mIsVideoHdr:Z
 
     return p0
@@ -240,7 +242,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 6601
+    .line 7137
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

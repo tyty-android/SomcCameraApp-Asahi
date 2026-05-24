@@ -5,10 +5,22 @@
     <string name="ble_remote_control_pair_new_controller_description_txt">"To start pairing, interact with the remote controller.
 You will receive notifications and dialogs. Select Pair on all of them, then press any key on the paired device to finish pairing."</string>
     <string name="camera_strings_accessibility_adjust_color_txt">Adjust color</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_txt">Custom look. Applies look, brightness, and color settings registered in the custom menu.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_tab_txt">Custom tab. Applies look, brightness, and color settings registered in the custom menu.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_first_time_txt">AI Camera Assistant. This function suggests settings such as color according to the scene.</string>
     <string name="camera_strings_accessibility_lens_85_to_125mm_txt">85 millimeters to 125 millimeters</string>
     <string name="camera_strings_accessibility_lens_x1_to_x2_mm_txt">%1$s millimeters to %2$s millimeters</string>
     <string name="camera_strings_accessibility_mode_custom_entrance_label">Mode customization</string>
     <string name="camera_strings_accessibility_program_auto_txt">Program auto</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_message_txt">Register current look, brightness and color settings to Custom.</string>
+    <string name="camera_strings_aisuggestion_custom_params_title_txt">Brightness/Color</string>
+    <string name="camera_strings_aisuggestion_description_txt">"The AI automatically identifies the scene and suggests optimized adjustments in the mini preview on the bottom right.
+If you tap on this mini preview the following settings will be adjusted automatically to suit the scene:
+Look, Exposure, White balance, Saturation, Contrast, Bokeh
+*This function is only available in Photo mode.
+*When you start recording a video by pressing and holding the shutter button, saturation, contrast, and bokeh settings will not be applied."</string>
+    <string name="camera_strings_aisuggestion_guide_description5_txt">If you tap the adjustment button after selecting suggested adjustments, you can further adjust settings such as brightness and color. Your adjustments will be saved to the device and applied to the suggested adjustments next time a similar scene is detected.</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_message_txt">Reset all settings to the defaults including color, brightness, and your preferred adjustments?</string>
     <string name="camera_strings_auto_frame_rate_description_note_txt">Note: Auto optimization will not work when the frame rate is set to 120 fps or 24 fps, or when the shutter speed is manually set.</string>
     <string name="camera_strings_auto_frame_rate_description_txt">Automatically optimize the frame rate to improve video quality while recording in low-light conditions</string>
     <string name="camera_strings_auto_night_description_txt">"You can take clear photos even at night or in dark conditions.
@@ -35,9 +47,11 @@ Security:
 "</string>
     <string name="camera_strings_dialog_user_data_collection_txt">If you agree below, Sony will collect your &lt;b>&lt;a href=#personal-data>personal data&lt;/a>&lt;/b> to provide customized support and improve devices and services. Sony will handle your data per our &lt;b>&lt;a href=https://www.sonymobile.com/privacy/>Privacy Policy&lt;/a>&lt;/b>.</string>
     <string name="camera_strings_dialog_video_hdr_hlg_supported_short_description_txt">Some devices/services may not be able to reproduce the original color and brightness of HDR content. Please use devices/services that support HDR when enjoying HDR content.</string>
+    <string name="camera_strings_digital_tripod_hint_edge_txt">The composition has shifted. Point the camera toward the original subject.</string>
     <string name="camera_strings_dro_hdr_description_txt">This setting will optimize the range of values. DRO processing uses a single image, whereas Auto HDR combines multiple exposures to achieve the result.</string>
     <string name="camera_strings_dro_hdr_dro_txt">D-Range Optimizer</string>
     <string name="camera_strings_error_internal_sd_full_txt">Memory full. Delete some files from SD card or Internal storage.</string>
+    <string name="camera_strings_feature_creative_look_custom_description_txt">You can register looks and brightness/color settings.</string>
     <string name="camera_strings_feature_creative_look_description_txt">"You can choose the finish of images (photos or movies) by selecting a \"look\".
 
 Creative look offers 6 preset looks. Each one is optimized with a different combination of color tone, saturation, contrast, sharpness, brightness, and other image elements, so you can set up image processing with your ideal balance of these elements."</string>

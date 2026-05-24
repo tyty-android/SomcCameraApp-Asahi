@@ -26,13 +26,23 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "success"
+        }
+    .end annotation
 
-    .line 3490
+    .line 3851
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CancelBurstCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3491
+    .line 3852
     iput-boolean p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CancelBurstCallback;->mIsPrepareSucceeded:Z
 
     return-void
@@ -50,13 +60,21 @@
 # virtual methods
 .method public onCancelBurstDone(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sessionId"
+        }
+    .end annotation
 
-    .line 3499
+    .line 3860
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CancelBurstCallback;->mIsPrepareSucceeded:Z
 
     if-eqz p1, :cond_0
 
-    .line 3500
+    .line 3861
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CancelBurstCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fgetmDeviceStateMachine(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Ljp/co/sony/mc/camera/device/DeviceStateMachine;
@@ -67,7 +85,7 @@
 
     const/4 v0, 0x1
 
-    .line 3501
+    .line 3862
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
@@ -76,12 +94,12 @@
 
     move-result-object v0
 
-    .line 3500
+    .line 3861
     invoke-virtual {p0, p1, v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->sendEvent(Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;[Ljava/lang/Object;)V
 
     goto :goto_0
 
-    .line 3503
+    .line 3864
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CancelBurstCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
@@ -93,7 +111,7 @@
 
     const/4 v0, 0x0
 
-    .line 3504
+    .line 3865
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
@@ -102,7 +120,7 @@
 
     move-result-object v0
 
-    .line 3503
+    .line 3864
     invoke-virtual {p0, p1, v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->sendEvent(Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;[Ljava/lang/Object;)V
 
     :goto_0

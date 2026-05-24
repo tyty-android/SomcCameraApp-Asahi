@@ -42,9 +42,9 @@
 
     move-result p2
 
-    check-cast p5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    check-cast p5, Ljava/lang/Boolean;
 
-    invoke-static {p0, p1, p3, p2, p5}, Ljp/co/sony/mc/camera/view/uistate/BokehUiState;->$r8$lambda$mXMgdZ-42rjzu8W_tDsOXYzSM98(ZZLjava/lang/Boolean;ZLjp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
+    invoke-static {p0, p1, p3, p2, p5}, Ljp/co/sony/mc/camera/view/uistate/BokehUiState;->$r8$lambda$sPIiQFUH9UkiU7NCf8CZ2caZbCo(ZZLjava/lang/Boolean;ZLjava/lang/Boolean;)Z
 
     move-result p0
 

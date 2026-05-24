@@ -50,7 +50,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$audioDeviceCallback$1;->this$0:Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;
 
-    .line 151
+    .line 150
     invoke-direct {p0}, Landroid/media/AudioDeviceCallback;-><init>()V
 
     return-void
@@ -65,10 +65,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 153
+    .line 152
     invoke-super {p0, p1}, Landroid/media/AudioDeviceCallback;->onAudioDevicesAdded([Landroid/media/AudioDeviceInfo;)V
 
-    .line 154
+    .line 153
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$audioDeviceCallback$1;->this$0:Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->updateAudioDeviceInfo()Z
@@ -77,7 +77,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 155
+    .line 154
     sget-object p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->INSTANCE:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->restartMonitor()V
@@ -93,10 +93,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 160
+    .line 159
     invoke-super {p0, p1}, Landroid/media/AudioDeviceCallback;->onAudioDevicesRemoved([Landroid/media/AudioDeviceInfo;)V
 
-    .line 161
+    .line 160
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$audioDeviceCallback$1;->this$0:Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->updateAudioDeviceInfo()Z
@@ -105,7 +105,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 162
+    .line 161
     sget-object p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->INSTANCE:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->restartMonitor()V

@@ -41,18 +41,42 @@
 # virtual methods
 .method public onCancel(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "parameter"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public onDismiss(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "parameter"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public onOpen(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "parameter"
+        }
+    .end annotation
 
     return-void
 .end method

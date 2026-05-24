@@ -24,8 +24,16 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
-    .line 1129
+    .line 1116
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$PreviewFrameProviderImpl;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -45,10 +53,20 @@
 # virtual methods
 .method public declared-synchronized registerPreviewFrameCallback(Ljp/co/sony/mc/camera/device/PreviewFrameProvider$OnPreviewFrameCallback;Landroid/os/Handler;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "callback",
+            "callbackHandler"
+        }
+    .end annotation
 
     monitor-enter p0
 
-    .line 1134
+    .line 1121
     :try_start_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$PreviewFrameProviderImpl;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
 
@@ -58,12 +76,12 @@
 
     if-nez v0, :cond_0
 
-    .line 1135
+    .line 1122
     monitor-exit p0
 
     return-void
 
-    .line 1137
+    .line 1124
     :cond_0
     :try_start_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$PreviewFrameProviderImpl;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
@@ -80,7 +98,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 1139
+    .line 1126
     monitor-exit p0
 
     return-void
@@ -95,10 +113,18 @@
 
 .method public declared-synchronized unregisterPreviewFrameCallback(Ljp/co/sony/mc/camera/device/PreviewFrameProvider$OnPreviewFrameCallback;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "callback"
+        }
+    .end annotation
 
     monitor-enter p0
 
-    .line 1144
+    .line 1131
     :try_start_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$PreviewFrameProviderImpl;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
 
@@ -108,12 +134,12 @@
 
     if-nez v0, :cond_0
 
-    .line 1145
+    .line 1132
     monitor-exit p0
 
     return-void
 
-    .line 1147
+    .line 1134
     :cond_0
     :try_start_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$PreviewFrameProviderImpl;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
@@ -126,7 +152,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 1148
+    .line 1135
     iget-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$PreviewFrameProviderImpl;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->previewFrameReceiver:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$PreviewFrameReceiver;
@@ -137,7 +163,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 1150
+    .line 1137
     :cond_1
     monitor-exit p0
 

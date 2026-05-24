@@ -16,13 +16,19 @@
 
 # static fields
 .field static final CAUSELESS_CANCELLED:Lcom/google/common/util/concurrent/AbstractFuture$Cancellation;
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+.end field
 
 .field static final CAUSELESS_INTERRUPTED:Lcom/google/common/util/concurrent/AbstractFuture$Cancellation;
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+.end field
 
 
 # instance fields
 .field final cause:Ljava/lang/Throwable;
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -33,24 +39,22 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 307
-    invoke-static {}, Lcom/google/common/util/concurrent/AbstractFuture;->access$300()Z
-
-    move-result v0
+    .line 329
+    sget-boolean v0, Lcom/google/common/util/concurrent/AbstractFuture;->GENERATE_CANCELLATION_CAUSES:Z
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 308
+    .line 330
     sput-object v1, Lcom/google/common/util/concurrent/AbstractFuture$Cancellation;->CAUSELESS_CANCELLED:Lcom/google/common/util/concurrent/AbstractFuture$Cancellation;
 
-    .line 309
+    .line 331
     sput-object v1, Lcom/google/common/util/concurrent/AbstractFuture$Cancellation;->CAUSELESS_INTERRUPTED:Lcom/google/common/util/concurrent/AbstractFuture$Cancellation;
 
     goto :goto_0
 
-    .line 311
+    .line 333
     :cond_0
     new-instance v0, Lcom/google/common/util/concurrent/AbstractFuture$Cancellation;
 
@@ -60,7 +64,7 @@
 
     sput-object v0, Lcom/google/common/util/concurrent/AbstractFuture$Cancellation;->CAUSELESS_CANCELLED:Lcom/google/common/util/concurrent/AbstractFuture$Cancellation;
 
-    .line 312
+    .line 334
     new-instance v0, Lcom/google/common/util/concurrent/AbstractFuture$Cancellation;
 
     const/4 v2, 0x1
@@ -76,17 +80,27 @@
 .method constructor <init>(ZLjava/lang/Throwable;)V
     .locals 0
     .param p2    # Ljava/lang/Throwable;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "wasInterrupted",
+            "cause"
+        }
+    .end annotation
 
-    .line 319
+    .line 341
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 320
+    .line 342
     iput-boolean p1, p0, Lcom/google/common/util/concurrent/AbstractFuture$Cancellation;->wasInterrupted:Z
 
-    .line 321
+    .line 343
     iput-object p2, p0, Lcom/google/common/util/concurrent/AbstractFuture$Cancellation;->cause:Ljava/lang/Throwable;
 
     return-void

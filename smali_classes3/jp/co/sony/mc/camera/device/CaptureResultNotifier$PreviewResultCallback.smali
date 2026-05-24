@@ -16,10 +16,38 @@
 
 # virtual methods
 .method public abstract onApertureReceived(F)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "aperture"
+        }
+    .end annotation
 .end method
 
 .method public abstract onAutoHdrResultChanged(Z)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isHdrRequired"
+        }
+    .end annotation
 .end method
 
 .method public abstract onSsIsoEvReceived(JII)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "ss",
+            "iso",
+            "ev"
+        }
+    .end annotation
 .end method

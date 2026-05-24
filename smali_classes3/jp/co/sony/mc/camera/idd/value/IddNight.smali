@@ -62,7 +62,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 503
+    .line 504
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddNight;->value:Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;
@@ -75,7 +75,7 @@
 .method public final getValue()Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;
     .locals 0
 
-    .line 503
+    .line 504
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddNight;->value:Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;
 
     return-object p0
@@ -84,7 +84,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 504
+    .line 505
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddNight;->value:Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;
 
     sget-object v0, Ljp/co/sony/mc/camera/idd/value/IddNight$WhenMappings;->$EnumSwitchMapping$0:[I
@@ -99,12 +99,12 @@
 
     if-ne p0, v0, :cond_0
 
-    .line 505
+    .line 506
     const-string p0, "AUTO"
 
     goto :goto_0
 
-    .line 506
+    .line 507
     :cond_0
     const-string p0, "OFF"
 

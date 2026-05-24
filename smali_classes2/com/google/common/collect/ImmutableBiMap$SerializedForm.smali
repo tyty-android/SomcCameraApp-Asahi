@@ -33,6 +33,15 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/ImmutableBiMap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bimap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -41,7 +50,7 @@
         }
     .end annotation
 
-    .line 365
+    .line 599
     invoke-direct {p0, p1}, Lcom/google/common/collect/ImmutableMap$SerializedForm;-><init>(Lcom/google/common/collect/ImmutableMap;)V
 
     return-void
@@ -51,6 +60,15 @@
 # virtual methods
 .method makeBuilder(I)Lcom/google/common/collect/ImmutableBiMap$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "size"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -59,7 +77,7 @@
         }
     .end annotation
 
-    .line 370
+    .line 604
     new-instance p0, Lcom/google/common/collect/ImmutableBiMap$Builder;
 
     invoke-direct {p0, p1}, Lcom/google/common/collect/ImmutableBiMap$Builder;-><init>(I)V
@@ -69,8 +87,16 @@
 
 .method bridge synthetic makeBuilder(I)Lcom/google/common/collect/ImmutableMap$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "size"
+        }
+    .end annotation
 
-    .line 363
+    .line 596
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableBiMap$SerializedForm;->makeBuilder(I)Lcom/google/common/collect/ImmutableBiMap$Builder;
 
     move-result-object p0

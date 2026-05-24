@@ -26,6 +26,14 @@
 
 .method static getApi2Value(Ljava/lang/String;)Ljava/lang/Integer;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "vagueControlMode"
+        }
+    .end annotation
 
     .line 523
     invoke-virtual {p0}, Ljava/lang/String;->hashCode()I

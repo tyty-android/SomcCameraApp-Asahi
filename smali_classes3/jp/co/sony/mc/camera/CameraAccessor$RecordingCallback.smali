@@ -25,6 +25,14 @@
 
 # virtual methods
 .method public abstract onAddVideoChapter(Ljp/co/sony/mc/camera/controller/ChapterThumbnail;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "chapterThumbnail"
+        }
+    .end annotation
 .end method
 
 .method public abstract onNotifyMaxDurationReached()V
@@ -34,9 +42,28 @@
 .end method
 
 .method public abstract onRecordError(Ljp/co/sony/mc/camera/CameraAccessor$RecordingCallback$RecordingErrorCode;I)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "what",
+            "extra"
+        }
+    .end annotation
 .end method
 
 .method public abstract onRecordFinished(Ljava/util/List;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "lastVideoSavingRequest"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -48,6 +75,14 @@
 .end method
 
 .method public abstract onRecordingStarted(Z)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "success"
+        }
+    .end annotation
 .end method
 
 .method public abstract onStartRecordingFailed()V
@@ -57,4 +92,12 @@
 .end method
 
 .method public abstract onStoreFinished(Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 .end method

@@ -34,7 +34,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/CameraAccessor$RecordingCallback$RecordingErrorCode;
     .locals 2
 
-    .line 375
+    .line 363
     sget-object v0, Ljp/co/sony/mc/camera/CameraAccessor$RecordingCallback$RecordingErrorCode;->RECORD_ERROR_CODE_UNKNOWN:Ljp/co/sony/mc/camera/CameraAccessor$RecordingCallback$RecordingErrorCode;
 
     sget-object v1, Ljp/co/sony/mc/camera/CameraAccessor$RecordingCallback$RecordingErrorCode;->ERROR_IN_USE_BY_ANOTHER_APPLICATION:Ljp/co/sony/mc/camera/CameraAccessor$RecordingCallback$RecordingErrorCode;
@@ -49,7 +49,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 376
+    .line 364
     new-instance v0, Ljp/co/sony/mc/camera/CameraAccessor$RecordingCallback$RecordingErrorCode;
 
     const-string v1, "RECORD_ERROR_CODE_UNKNOWN"
@@ -60,7 +60,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/CameraAccessor$RecordingCallback$RecordingErrorCode;->RECORD_ERROR_CODE_UNKNOWN:Ljp/co/sony/mc/camera/CameraAccessor$RecordingCallback$RecordingErrorCode;
 
-    .line 377
+    .line 365
     new-instance v0, Ljp/co/sony/mc/camera/CameraAccessor$RecordingCallback$RecordingErrorCode;
 
     const-string v1, "ERROR_IN_USE_BY_ANOTHER_APPLICATION"
@@ -71,7 +71,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/CameraAccessor$RecordingCallback$RecordingErrorCode;->ERROR_IN_USE_BY_ANOTHER_APPLICATION:Ljp/co/sony/mc/camera/CameraAccessor$RecordingCallback$RecordingErrorCode;
 
-    .line 375
+    .line 363
     invoke-static {}, Ljp/co/sony/mc/camera/CameraAccessor$RecordingCallback$RecordingErrorCode;->$values()[Ljp/co/sony/mc/camera/CameraAccessor$RecordingCallback$RecordingErrorCode;
 
     move-result-object v0
@@ -83,13 +83,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 375
+    .line 363
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -97,8 +108,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/CameraAccessor$RecordingCallback$RecordingErrorCode;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 375
+    .line 363
     const-class v0, Ljp/co/sony/mc/camera/CameraAccessor$RecordingCallback$RecordingErrorCode;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -113,7 +132,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/CameraAccessor$RecordingCallback$RecordingErrorCode;
     .locals 1
 
-    .line 375
+    .line 363
     sget-object v0, Ljp/co/sony/mc/camera/CameraAccessor$RecordingCallback$RecordingErrorCode;->$VALUES:[Ljp/co/sony/mc/camera/CameraAccessor$RecordingCallback$RecordingErrorCode;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/CameraAccessor$RecordingCallback$RecordingErrorCode;->clone()Ljava/lang/Object;

@@ -23,6 +23,16 @@
 # direct methods
 .method public varargs constructor <init>(Ljp/co/sony/mc/camera/setting/SettingKey$Key;[Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "values"
+        }
+    .end annotation
 
     .line 90
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

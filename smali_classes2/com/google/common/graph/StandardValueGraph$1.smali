@@ -22,15 +22,33 @@
 
 
 # instance fields
+.field final synthetic this$0:Lcom/google/common/graph/StandardValueGraph;
+
 .field final synthetic val$connections:Lcom/google/common/graph/GraphConnections;
 
 
 # direct methods
 .method constructor <init>(Lcom/google/common/graph/StandardValueGraph;Lcom/google/common/graph/BaseGraph;Ljava/lang/Object;Lcom/google/common/graph/GraphConnections;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0,
+            0x0,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "graph",
+            "node",
+            "val$connections"
+        }
+    .end annotation
 
-    .line 122
+    .line 123
     iput-object p4, p0, Lcom/google/common/graph/StandardValueGraph$1;->val$connections:Lcom/google/common/graph/GraphConnections;
+
+    iput-object p1, p0, Lcom/google/common/graph/StandardValueGraph$1;->this$0:Lcom/google/common/graph/StandardValueGraph;
 
     invoke-direct {p0, p2, p3}, Lcom/google/common/graph/IncidentEdgeSet;-><init>(Lcom/google/common/graph/BaseGraph;Ljava/lang/Object;)V
 
@@ -50,7 +68,7 @@
         }
     .end annotation
 
-    .line 125
+    .line 126
     iget-object v0, p0, Lcom/google/common/graph/StandardValueGraph$1;->val$connections:Lcom/google/common/graph/GraphConnections;
 
     iget-object p0, p0, Lcom/google/common/graph/StandardValueGraph$1;->node:Ljava/lang/Object;

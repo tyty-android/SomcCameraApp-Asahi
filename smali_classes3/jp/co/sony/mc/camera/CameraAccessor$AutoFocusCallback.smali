@@ -19,7 +19,29 @@
 .end method
 
 .method public abstract onAutoFocusDone(IZI)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "burstType",
+            "isAfSuccess",
+            "flashRgb"
+        }
+    .end annotation
 .end method
 
 .method public abstract onFocusAreaUpdated(Z[Landroid/graphics/Rect;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "isAfSuccess",
+            "rect"
+        }
+    .end annotation
 .end method

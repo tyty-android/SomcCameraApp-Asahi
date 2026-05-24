@@ -64,6 +64,14 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "savedInstanceState"
+        }
+    .end annotation
 
     .line 41
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/PresentationFragment;->preso:Landroid/app/Presentation;
@@ -83,6 +91,16 @@
 
 .method public setDisplay(Landroid/content/Context;Landroid/view/Display;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ctxt",
+            "display"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 

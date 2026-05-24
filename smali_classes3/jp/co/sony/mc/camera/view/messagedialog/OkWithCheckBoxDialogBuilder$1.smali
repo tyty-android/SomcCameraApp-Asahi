@@ -30,6 +30,21 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder;Landroid/app/Activity;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder$MessageDialogCheckBoxListener;Landroid/content/DialogInterface$OnClickListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$localActivity",
+            "val$checkBoxListener",
+            "val$localListener"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
@@ -54,6 +69,16 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dialog",
+            "which"
+        }
+    .end annotation
 
     .line 101
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder$1;->val$localActivity:Landroid/app/Activity;

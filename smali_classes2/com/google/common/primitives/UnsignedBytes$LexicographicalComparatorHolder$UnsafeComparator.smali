@@ -43,7 +43,7 @@
 .method private static synthetic $values()[Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;
     .locals 1
 
-    .line 293
+    .line 296
     sget-object v0, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->INSTANCE:Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;
 
     filled-new-array {v0}, [Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;
@@ -56,7 +56,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    .line 295
+    .line 299
     new-instance v0, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;
 
     const-string v1, "INSTANCE"
@@ -67,14 +67,14 @@
 
     sput-object v0, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->INSTANCE:Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;
 
-    .line 293
+    .line 296
     invoke-static {}, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->$values()[Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;
 
     move-result-object v0
 
     sput-object v0, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->$VALUES:[Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;
 
-    .line 297
+    .line 301
     invoke-static {}, Ljava/nio/ByteOrder;->nativeOrder()Ljava/nio/ByteOrder;
 
     move-result-object v0
@@ -87,14 +87,14 @@
 
     sput-boolean v0, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->BIG_ENDIAN:Z
 
-    .line 315
+    .line 319
     invoke-static {}, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->getUnsafe()Lsun/misc/Unsafe;
 
     move-result-object v0
 
     sput-object v0, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->theUnsafe:Lsun/misc/Unsafe;
 
-    .line 318
+    .line 322
     const-class v1, [B
 
     invoke-virtual {v0, v1}, Lsun/misc/Unsafe;->arrayBaseOffset(Ljava/lang/Class;)I
@@ -103,7 +103,7 @@
 
     sput v2, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->BYTE_ARRAY_BASE_OFFSET:I
 
-    .line 323
+    .line 327
     const-string v3, "sun.arch.data.model"
 
     invoke-static {v3}, Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;
@@ -122,7 +122,7 @@
 
     if-nez v2, :cond_0
 
-    .line 326
+    .line 330
     invoke-virtual {v0, v1}, Lsun/misc/Unsafe;->arrayIndexScale(Ljava/lang/Class;)I
 
     move-result v0
@@ -133,7 +133,7 @@
 
     return-void
 
-    .line 327
+    .line 331
     :cond_0
     new-instance v0, Ljava/lang/Error;
 
@@ -144,13 +144,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 294
+    .line 298
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -159,7 +170,7 @@
 .method private static getUnsafe()Lsun/misc/Unsafe;
     .locals 3
 
-    .line 339
+    .line 343
     :try_start_0
     invoke-static {}, Lsun/misc/Unsafe;->getUnsafe()Lsun/misc/Unsafe;
 
@@ -169,7 +180,7 @@
 
     return-object v0
 
-    .line 344
+    .line 348
     :catch_0
     :try_start_1
     new-instance v0, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator$1;
@@ -189,7 +200,7 @@
     :catch_1
     move-exception v0
 
-    .line 360
+    .line 364
     new-instance v1, Ljava/lang/RuntimeException;
 
     const-string v2, "Could not initialize intrinsics"
@@ -205,8 +216,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 293
+    .line 296
     const-class v0, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -221,7 +240,7 @@
 .method public static values()[Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;
     .locals 1
 
-    .line 293
+    .line 296
     sget-object v0, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->$VALUES:[Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;
 
     invoke-virtual {v0}, [Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->clone()Ljava/lang/Object;
@@ -237,8 +256,18 @@
 # virtual methods
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "left",
+            "right"
+        }
+    .end annotation
 
-    .line 293
+    .line 296
     check-cast p1, [B
 
     check-cast p2, [B
@@ -252,8 +281,18 @@
 
 .method public compare([B[B)I
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "left",
+            "right"
+        }
+    .end annotation
 
-    .line 367
+    .line 373
     array-length p0, p1
 
     array-length v0, p2
@@ -269,7 +308,7 @@
     :goto_0
     if-ge v1, v0, :cond_2
 
-    .line 376
+    .line 382
     sget-object v2, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->theUnsafe:Lsun/misc/Unsafe;
 
     sget v3, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->BYTE_ARRAY_BASE_OFFSET:I
@@ -288,7 +327,7 @@
 
     add-long/2addr v8, v6
 
-    .line 377
+    .line 383
     invoke-virtual {v2, p2, v8, v9}, Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J
 
     move-result-wide v2
@@ -297,13 +336,13 @@
 
     if-eqz v6, :cond_1
 
-    .line 379
+    .line 385
     sget-boolean p0, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->BIG_ENDIAN:Z
 
     if-eqz p0, :cond_0
 
-    .line 380
-    invoke-static {v4, v5, v2, v3}, Lcom/google/common/primitives/UnsignedLongs;->compare(JJ)I
+    .line 386
+    invoke-static {v4, v5, v2, v3}, Ljava/lang/Long;->compareUnsigned(JJ)I
 
     move-result p0
 
@@ -312,7 +351,7 @@
     :cond_0
     xor-long p0, v4, v2
 
-    .line 390
+    .line 396
     invoke-static {p0, p1}, Ljava/lang/Long;->numberOfTrailingZeros(J)I
 
     move-result p0
@@ -346,7 +385,7 @@
     :goto_1
     if-ge v1, p0, :cond_4
 
-    .line 397
+    .line 403
     aget-byte v0, p1, v1
 
     aget-byte v2, p2, v1
@@ -364,7 +403,7 @@
 
     goto :goto_1
 
-    .line 402
+    .line 408
     :cond_4
     array-length p0, p1
 
@@ -378,7 +417,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 407
+    .line 413
     const-string p0, "UnsignedBytes.lexicographicalComparator() (sun.misc.Unsafe version)"
 
     return-object p0

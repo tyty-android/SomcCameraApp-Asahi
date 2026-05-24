@@ -27,20 +27,34 @@
 # direct methods
 .method public varargs constructor <init>(ILjava/lang/String;I[Ljp/co/sony/mc/camera/setting/SettingKey$Key;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "drawableResource",
+            "titleString",
+            "backgroundColor",
+            "keys"
+        }
+    .end annotation
 
-    .line 864
+    .line 800
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 865
+    .line 801
     iput p1, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;->drawableResource:I
 
-    .line 866
+    .line 802
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;->titleString:Ljava/lang/String;
 
-    .line 867
+    .line 803
     iput p3, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;->backgroundColor:I
 
-    .line 868
+    .line 804
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;->keys:[Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
     return-void
@@ -51,7 +65,7 @@
 .method public getBackgroundColor()I
     .locals 0
 
-    .line 880
+    .line 816
     iget p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;->backgroundColor:I
 
     return p0
@@ -60,7 +74,7 @@
 .method public getDrawableResource()I
     .locals 0
 
-    .line 872
+    .line 808
     iget p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;->drawableResource:I
 
     return p0
@@ -69,7 +83,7 @@
 .method public getTitleString()Ljava/lang/String;
     .locals 0
 
-    .line 876
+    .line 812
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;->titleString:Ljava/lang/String;
 
     return-object p0

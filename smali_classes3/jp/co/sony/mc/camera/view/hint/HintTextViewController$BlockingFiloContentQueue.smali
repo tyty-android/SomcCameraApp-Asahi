@@ -51,7 +51,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 94
+    .line 92
     new-instance v0, Ljava/util/LinkedHashMap;
 
     invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
@@ -64,7 +64,7 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 100
+    .line 98
     new-instance v0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$BlockingFiloContentQueue$1;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$BlockingFiloContentQueue$1;-><init>()V
@@ -73,7 +73,7 @@
 
     invoke-direct {p0, v1, v0}, Ljava/util/concurrent/PriorityBlockingQueue;-><init>(ILjava/util/Comparator;)V
 
-    .line 113
+    .line 111
     sget-object p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$BlockingFiloContentQueue;->sSequentialIndexMap:Ljava/util/Map;
 
     invoke-interface {p0}, Ljava/util/Map;->clear()V
@@ -86,17 +86,17 @@
 .method public clear()V
     .locals 2
 
-    .line 131
+    .line 129
     invoke-super {p0}, Ljava/util/concurrent/PriorityBlockingQueue;->clear()V
 
-    .line 132
+    .line 130
     sget-object v0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$BlockingFiloContentQueue;->sSequentialIndexMap:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->clear()V
 
     const-wide/16 v0, 0x0
 
-    .line 133
+    .line 131
     iput-wide v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$BlockingFiloContentQueue;->mCount:J
 
     return-void
@@ -104,8 +104,16 @@
 
 .method public bridge synthetic offer(Ljava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "e"
+        }
+    .end annotation
 
-    .line 78
+    .line 76
     check-cast p1, Ljp/co/sony/mc/camera/view/hint/HintTextContent;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$BlockingFiloContentQueue;->offer(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)Z
@@ -117,8 +125,16 @@
 
 .method public offer(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
 
-    .line 118
+    .line 116
     sget-object v0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$BlockingFiloContentQueue;->sSequentialIndexMap:Ljava/util/Map;
 
     iget-wide v1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$BlockingFiloContentQueue;->mCount:J
@@ -135,7 +151,7 @@
 
     invoke-interface {v0, p1, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 119
+    .line 117
     invoke-super {p0, p1}, Ljava/util/concurrent/PriorityBlockingQueue;->offer(Ljava/lang/Object;)Z
 
     move-result p0
@@ -146,7 +162,7 @@
 .method public bridge synthetic poll()Ljava/lang/Object;
     .locals 0
 
-    .line 78
+    .line 76
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$BlockingFiloContentQueue;->poll()Ljp/co/sony/mc/camera/view/hint/HintTextContent;
 
     move-result-object p0
@@ -157,14 +173,14 @@
 .method public poll()Ljp/co/sony/mc/camera/view/hint/HintTextContent;
     .locals 1
 
-    .line 124
+    .line 122
     invoke-super {p0}, Ljava/util/concurrent/PriorityBlockingQueue;->poll()Ljava/lang/Object;
 
     move-result-object p0
 
     check-cast p0, Ljp/co/sony/mc/camera/view/hint/HintTextContent;
 
-    .line 125
+    .line 123
     sget-object v0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$BlockingFiloContentQueue;->sSequentialIndexMap:Ljava/util/Map;
 
     invoke-interface {v0, p0}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;

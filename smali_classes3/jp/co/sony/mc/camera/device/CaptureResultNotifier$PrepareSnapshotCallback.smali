@@ -16,7 +16,35 @@
 
 # virtual methods
 .method public abstract onPrepareSnapshotCancelled(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sessionId"
+        }
+    .end annotation
 .end method
 
 .method public abstract onPrepareSnapshotDone(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;ZZLjp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;III)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "sessionId",
+            "isAfSuccess",
+            "isFlashRequired",
+            "captureStartPoint",
+            "duration",
+            "burstType",
+            "previewLatency"
+        }
+    .end annotation
 .end method

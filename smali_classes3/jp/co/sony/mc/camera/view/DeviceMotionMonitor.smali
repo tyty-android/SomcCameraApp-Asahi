@@ -52,6 +52,14 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 48
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -80,7 +88,7 @@
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/DeviceMotionMonitor;->mWorker:Ljp/co/sony/mc/camera/util/BackgroundWorker;
 
     .line 51
-    const-string v0, "sensor"
+    const-string/jumbo v0, "sensor"
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -95,6 +103,14 @@
 
 .method private declared-synchronized setMoving(Z)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isMoving"
+        }
+    .end annotation
 
     monitor-enter p0
 
@@ -187,6 +203,14 @@
 
 .method public declared-synchronized registerListener(Ljp/co/sony/mc/camera/view/DeviceMotionMonitor$MotionChangedListener;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     monitor-enter p0
 
@@ -454,6 +478,14 @@
 
 .method public declared-synchronized unregisterListener(Ljp/co/sony/mc/camera/view/DeviceMotionMonitor$MotionChangedListener;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     monitor-enter p0
 

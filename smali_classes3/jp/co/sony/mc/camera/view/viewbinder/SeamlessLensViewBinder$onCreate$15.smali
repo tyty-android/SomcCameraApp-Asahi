@@ -48,7 +48,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$onCreate$15;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;
 
-    .line 378
+    .line 471
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -59,7 +59,7 @@
 .method public onZoomStart()V
     .locals 0
 
-    .line 380
+    .line 473
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$onCreate$15;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->access$getLensUiState(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;)Ljp/co/sony/mc/camera/view/uistate/LensUiState;
@@ -74,7 +74,7 @@
 .method public onZoomStop()V
     .locals 0
 
-    .line 384
+    .line 477
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder$onCreate$15;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;->access$getLensUiState(Ljp/co/sony/mc/camera/view/viewbinder/SeamlessLensViewBinder;)Ljp/co/sony/mc/camera/view/uistate/LensUiState;

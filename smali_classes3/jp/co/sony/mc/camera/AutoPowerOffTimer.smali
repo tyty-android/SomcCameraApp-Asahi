@@ -85,6 +85,16 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/CameraActivity;Ljp/co/sony/mc/camera/AutoPowerOffTimer$AutoPowerOffListener;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "activity",
+            "listener"
+        }
+    .end annotation
 
     .line 38
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -114,6 +124,14 @@
 
 .method private declared-synchronized startAutoPowerOff(I)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "duration"
+        }
+    .end annotation
 
     monitor-enter p0
 
@@ -260,6 +278,14 @@
 
 .method private declared-synchronized startAutoPowerOffWarning(I)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "duration"
+        }
+    .end annotation
 
     monitor-enter p0
 
@@ -496,6 +522,18 @@
 
 .method public declared-synchronized setTimeOutDuration(IILjava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "duration",
+            "timeOutWarningOffset",
+            "userdata"
+        }
+    .end annotation
 
     monitor-enter p0
 

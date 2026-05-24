@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 74
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment$2;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;
@@ -37,6 +45,18 @@
 # virtual methods
 .method public onKey(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "dialog",
+            "keyCode",
+            "event"
+        }
+    .end annotation
 
     .line 77
     sget-object p1, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment$3;->$SwitchMap$jp$co$sony$mc$camera$util$KeyEventTranslator$TranslatedKeyCode:[I

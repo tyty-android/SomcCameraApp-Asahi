@@ -33,23 +33,31 @@
 # direct methods
 .method constructor <init>(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "seed"
+        }
+    .end annotation
 
     const/16 v0, 0x10
 
-    .line 95
+    .line 96
     invoke-direct {p0, v0}, Lcom/google/common/hash/AbstractStreamingHasher;-><init>(I)V
 
     int-to-long v0, p1
 
-    .line 96
+    .line 97
     iput-wide v0, p0, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->h1:J
 
-    .line 97
+    .line 98
     iput-wide v0, p0, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->h2:J
 
     const/4 p1, 0x0
 
-    .line 98
+    .line 99
     iput p1, p0, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->length:I
 
     return-void
@@ -57,8 +65,18 @@
 
 .method private bmix64(JJ)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "k1",
+            "k2"
+        }
+    .end annotation
 
-    .line 110
+    .line 111
     iget-wide v0, p0, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->h1:J
 
     invoke-static {p1, p2}, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->mixK1(J)J
@@ -71,12 +89,12 @@
 
     const/16 v0, 0x1b
 
-    .line 112
+    .line 113
     invoke-static {p1, p2, v0}, Ljava/lang/Long;->rotateLeft(JI)J
 
     move-result-wide p1
 
-    .line 113
+    .line 114
     iget-wide v0, p0, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->h2:J
 
     add-long/2addr p1, v0
@@ -89,10 +107,10 @@
 
     add-long/2addr p1, v4
 
-    .line 114
+    .line 115
     iput-wide p1, p0, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->h1:J
 
-    .line 116
+    .line 117
     invoke-static {p3, p4}, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->mixK2(J)J
 
     move-result-wide p1
@@ -103,12 +121,12 @@
 
     const/16 p3, 0x1f
 
-    .line 118
+    .line 119
     invoke-static {p1, p2, p3}, Ljava/lang/Long;->rotateLeft(JI)J
 
     move-result-wide p1
 
-    .line 119
+    .line 120
     iget-wide p3, p0, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->h1:J
 
     add-long/2addr p1, p3
@@ -119,7 +137,7 @@
 
     add-long/2addr p1, p3
 
-    .line 120
+    .line 121
     iput-wide p1, p0, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->h2:J
 
     return-void
@@ -127,6 +145,14 @@
 
 .method private static fmix64(J)J
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "k"
+        }
+    .end annotation
 
     const/16 v0, 0x21
 
@@ -155,6 +181,14 @@
 
 .method private static mixK1(J)J
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "k1"
+        }
+    .end annotation
 
     const-wide v0, -0x783c846eeebdac2bL
 
@@ -162,7 +196,7 @@
 
     const/16 v0, 0x1f
 
-    .line 201
+    .line 202
     invoke-static {p0, p1, v0}, Ljava/lang/Long;->rotateLeft(JI)J
 
     move-result-wide p0
@@ -176,6 +210,14 @@
 
 .method private static mixK2(J)J
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "k2"
+        }
+    .end annotation
 
     const-wide v0, 0x4cf5ad432745937fL    # 5.573325460219186E62
 
@@ -183,7 +225,7 @@
 
     const/16 v0, 0x21
 
-    .line 208
+    .line 209
     invoke-static {p0, p1, v0}, Ljava/lang/Long;->rotateLeft(JI)J
 
     move-result-wide p0
@@ -200,7 +242,7 @@
 .method protected makeHash()Lcom/google/common/hash/HashCode;
     .locals 7
 
-    .line 170
+    .line 171
     iget-wide v0, p0, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->h1:J
 
     iget v2, p0, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->length:I
@@ -209,7 +251,7 @@
 
     xor-long/2addr v0, v3
 
-    .line 171
+    .line 172
     iget-wide v3, p0, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->h2:J
 
     int-to-long v5, v2
@@ -218,29 +260,29 @@
 
     add-long/2addr v0, v2
 
-    .line 173
+    .line 174
     iput-wide v0, p0, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->h1:J
 
     add-long/2addr v2, v0
 
-    .line 174
+    .line 175
     iput-wide v2, p0, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->h2:J
 
-    .line 176
+    .line 177
     invoke-static {v0, v1}, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->fmix64(J)J
 
     move-result-wide v0
 
     iput-wide v0, p0, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->h1:J
 
-    .line 177
+    .line 178
     iget-wide v0, p0, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->h2:J
 
     invoke-static {v0, v1}, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->fmix64(J)J
 
     move-result-wide v0
 
-    .line 179
+    .line 180
     iget-wide v2, p0, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->h1:J
 
     add-long/2addr v2, v0
@@ -249,46 +291,46 @@
 
     add-long/2addr v0, v2
 
-    .line 180
+    .line 181
     iput-wide v0, p0, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->h2:J
 
     const/16 v0, 0x10
 
-    .line 182
+    .line 183
     new-array v0, v0, [B
 
-    .line 183
+    .line 184
     invoke-static {v0}, Ljava/nio/ByteBuffer;->wrap([B)Ljava/nio/ByteBuffer;
 
     move-result-object v0
 
     sget-object v1, Ljava/nio/ByteOrder;->LITTLE_ENDIAN:Ljava/nio/ByteOrder;
 
-    .line 184
+    .line 185
     invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
 
     move-result-object v0
 
     iget-wide v1, p0, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->h1:J
 
-    .line 185
+    .line 186
     invoke-virtual {v0, v1, v2}, Ljava/nio/ByteBuffer;->putLong(J)Ljava/nio/ByteBuffer;
 
     move-result-object v0
 
     iget-wide v1, p0, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->h2:J
 
-    .line 186
+    .line 187
     invoke-virtual {v0, v1, v2}, Ljava/nio/ByteBuffer;->putLong(J)Ljava/nio/ByteBuffer;
 
     move-result-object p0
 
-    .line 187
+    .line 188
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->array()[B
 
     move-result-object p0
 
-    .line 182
+    .line 183
     invoke-static {p0}, Lcom/google/common/hash/HashCode;->fromBytesNoCopy([B)Lcom/google/common/hash/HashCode;
 
     move-result-object p0
@@ -298,21 +340,29 @@
 
 .method protected process(Ljava/nio/ByteBuffer;)V
     .locals 4
-
-    .line 103
-    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->getLong()J
-
-    move-result-wide v0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bb"
+        }
+    .end annotation
 
     .line 104
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->getLong()J
 
-    move-result-wide v2
+    move-result-wide v0
 
     .line 105
-    invoke-direct {p0, v0, v1, v2, v3}, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->bmix64(JJ)V
+    invoke-virtual {p1}, Ljava/nio/ByteBuffer;->getLong()J
+
+    move-result-wide v2
 
     .line 106
+    invoke-direct {p0, v0, v1, v2, v3}, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->bmix64(JJ)V
+
+    .line 107
     iget p1, p0, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->length:I
 
     add-int/lit8 p1, p1, 0x10
@@ -324,8 +374,16 @@
 
 .method protected processRemaining(Ljava/nio/ByteBuffer;)V
     .locals 11
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "bb"
+        }
+    .end annotation
 
-    .line 127
+    .line 128
     iget v0, p0, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->length:I
 
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->remaining()I
@@ -336,7 +394,7 @@
 
     iput v0, p0, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->length:I
 
-    .line 128
+    .line 129
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->remaining()I
 
     move-result v0
@@ -357,7 +415,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    .line 162
+    .line 163
     new-instance p0, Ljava/lang/AssertionError;
 
     const-string p1, "Should never get here."
@@ -369,7 +427,7 @@
     :pswitch_0
     const/16 v0, 0xe
 
-    .line 130
+    .line 131
     invoke-virtual {p1, v0}, Ljava/nio/ByteBuffer;->get(I)B
 
     move-result v0
@@ -385,7 +443,7 @@
     :pswitch_1
     const/16 v0, 0xd
 
-    .line 132
+    .line 133
     invoke-virtual {p1, v0}, Ljava/nio/ByteBuffer;->get(I)B
 
     move-result v0
@@ -403,7 +461,7 @@
     :pswitch_2
     const/16 v0, 0xc
 
-    .line 134
+    .line 135
     invoke-virtual {p1, v0}, Ljava/nio/ByteBuffer;->get(I)B
 
     move-result v0
@@ -421,7 +479,7 @@
     :pswitch_3
     const/16 v0, 0xb
 
-    .line 136
+    .line 137
     invoke-virtual {p1, v0}, Ljava/nio/ByteBuffer;->get(I)B
 
     move-result v0
@@ -439,7 +497,7 @@
     :pswitch_4
     const/16 v0, 0xa
 
-    .line 138
+    .line 139
     invoke-virtual {p1, v0}, Ljava/nio/ByteBuffer;->get(I)B
 
     move-result v0
@@ -457,7 +515,7 @@
     :pswitch_5
     const/16 v0, 0x9
 
-    .line 140
+    .line 141
     invoke-virtual {p1, v0}, Ljava/nio/ByteBuffer;->get(I)B
 
     move-result v0
@@ -472,7 +530,7 @@
 
     xor-long/2addr v7, v0
 
-    .line 142
+    .line 143
     :pswitch_6
     invoke-virtual {p1, v6}, Ljava/nio/ByteBuffer;->get(I)B
 
@@ -486,7 +544,7 @@
 
     xor-long/2addr v7, v0
 
-    .line 144
+    .line 145
     :pswitch_7
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->getLong()J
 
@@ -497,7 +555,7 @@
     :pswitch_8
     const/4 v0, 0x6
 
-    .line 147
+    .line 148
     invoke-virtual {p1, v0}, Ljava/nio/ByteBuffer;->get(I)B
 
     move-result v0
@@ -518,7 +576,7 @@
     :goto_0
     const/4 v9, 0x5
 
-    .line 149
+    .line 150
     invoke-virtual {p1, v9}, Ljava/nio/ByteBuffer;->get(I)B
 
     move-result v9
@@ -541,7 +599,7 @@
     :goto_1
     const/4 v2, 0x4
 
-    .line 151
+    .line 152
     invoke-virtual {p1, v2}, Ljava/nio/ByteBuffer;->get(I)B
 
     move-result v2
@@ -564,7 +622,7 @@
     :goto_2
     const/4 v2, 0x3
 
-    .line 153
+    .line 154
     invoke-virtual {p1, v2}, Ljava/nio/ByteBuffer;->get(I)B
 
     move-result v2
@@ -587,7 +645,7 @@
     :goto_3
     const/4 v2, 0x2
 
-    .line 155
+    .line 156
     invoke-virtual {p1, v2}, Ljava/nio/ByteBuffer;->get(I)B
 
     move-result v2
@@ -610,7 +668,7 @@
     :goto_4
     const/4 v2, 0x1
 
-    .line 157
+    .line 158
     invoke-virtual {p1, v2}, Ljava/nio/ByteBuffer;->get(I)B
 
     move-result v2
@@ -633,7 +691,7 @@
     :goto_5
     const/4 v2, 0x0
 
-    .line 159
+    .line 160
     invoke-virtual {p1, v2}, Ljava/nio/ByteBuffer;->get(I)B
 
     move-result p1
@@ -646,7 +704,7 @@
 
     xor-long/2addr v0, v2
 
-    .line 164
+    .line 165
     :goto_6
     iget-wide v2, p0, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->h1:J
 
@@ -658,7 +716,7 @@
 
     iput-wide v0, p0, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->h1:J
 
-    .line 165
+    .line 166
     iget-wide v0, p0, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->h2:J
 
     invoke-static {v7, v8}, Lcom/google/common/hash/Murmur3_128HashFunction$Murmur3_128Hasher;->mixK2(J)J

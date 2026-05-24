@@ -26,13 +26,24 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$content"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 972
+    .line 921
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$7;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$7;->val$content:Ljp/co/sony/mc/camera/view/hint/HintTextContent;
@@ -47,7 +58,7 @@
 .method public run()V
     .locals 1
 
-    .line 975
+    .line 924
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$7;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;

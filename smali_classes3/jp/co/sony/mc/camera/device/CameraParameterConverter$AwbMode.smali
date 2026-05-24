@@ -180,6 +180,21 @@
 
 .method private constructor <init>(Ljava/lang/String;ILjava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "awbModeApi1",
+            "awbModeApi2"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -202,6 +217,14 @@
 
 .method public static getApi1Value(I)Ljava/lang/String;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "api2Value"
+        }
+    .end annotation
 
     .line 49
     invoke-static {}, Ljp/co/sony/mc/camera/device/CameraParameterConverter$AwbMode;->values()[Ljp/co/sony/mc/camera/device/CameraParameterConverter$AwbMode;
@@ -240,6 +263,14 @@
 
 .method public static getApi2Value(Ljava/lang/String;)I
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "api1Value"
+        }
+    .end annotation
 
     .line 58
     invoke-static {}, Ljp/co/sony/mc/camera/device/CameraParameterConverter$AwbMode;->values()[Ljp/co/sony/mc/camera/device/CameraParameterConverter$AwbMode;
@@ -282,6 +313,14 @@
 
 .method public static isWhiteBalanceCustomParameter(Ljava/lang/String;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     .line 67
     const-string v0, "custom1"
@@ -327,6 +366,14 @@
 
 .method public static isWhiteBalanceTemperatureParameter(Ljava/lang/String;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     .line 73
     const-string/jumbo v0, "temperature1"
@@ -372,6 +419,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/device/CameraParameterConverter$AwbMode;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 26
     const-class v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$AwbMode;

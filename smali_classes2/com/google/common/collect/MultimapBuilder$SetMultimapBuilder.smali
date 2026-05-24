@@ -32,7 +32,7 @@
 
     const/4 v0, 0x0
 
-    .line 438
+    .line 445
     invoke-direct {p0, v0}, Lcom/google/common/collect/MultimapBuilder;-><init>(Lcom/google/common/collect/MultimapBuilder$1;)V
 
     return-void
@@ -43,7 +43,7 @@
 .method public bridge synthetic build()Lcom/google/common/collect/Multimap;
     .locals 0
 
-    .line 437
+    .line 442
     invoke-virtual {p0}, Lcom/google/common/collect/MultimapBuilder$SetMultimapBuilder;->build()Lcom/google/common/collect/SetMultimap;
 
     move-result-object p0
@@ -53,8 +53,16 @@
 
 .method public bridge synthetic build(Lcom/google/common/collect/Multimap;)Lcom/google/common/collect/Multimap;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "multimap"
+        }
+    .end annotation
 
-    .line 437
+    .line 442
     invoke-virtual {p0, p1}, Lcom/google/common/collect/MultimapBuilder$SetMultimapBuilder;->build(Lcom/google/common/collect/Multimap;)Lcom/google/common/collect/SetMultimap;
 
     move-result-object p0
@@ -74,6 +82,15 @@
 
 .method public build(Lcom/google/common/collect/Multimap;)Lcom/google/common/collect/SetMultimap;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "multimap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:TK0;V:TV0;>(",
@@ -84,7 +101,7 @@
         }
     .end annotation
 
-    .line 446
+    .line 453
     invoke-super {p0, p1}, Lcom/google/common/collect/MultimapBuilder;->build(Lcom/google/common/collect/Multimap;)Lcom/google/common/collect/Multimap;
 
     move-result-object p0

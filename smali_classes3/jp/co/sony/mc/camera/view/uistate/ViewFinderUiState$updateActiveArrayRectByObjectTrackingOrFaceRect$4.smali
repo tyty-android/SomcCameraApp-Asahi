@@ -57,7 +57,7 @@
 .method public bridge synthetic emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
 
-    .line 401
+    .line 292
     check-cast p1, Lkotlin/Pair;
 
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$updateActiveArrayRectByObjectTrackingOrFaceRect$4;->emit(Lkotlin/Pair;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -84,7 +84,7 @@
         }
     .end annotation
 
-    .line 401
+    .line 292
     invoke-virtual {p1}, Lkotlin/Pair;->component1()Ljava/lang/Object;
 
     move-result-object p2
@@ -97,7 +97,7 @@
 
     check-cast p1, Landroid/graphics/Rect;
 
-    .line 402
+    .line 293
     invoke-static {}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$getEmptyRect$cp()Landroid/graphics/Rect;
 
     move-result-object v0
@@ -108,14 +108,14 @@
 
     if-nez v0, :cond_0
 
-    .line 403
+    .line 294
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$updateActiveArrayRectByObjectTrackingOrFaceRect$4;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     invoke-static {p0, p2}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$setSelectedTrackingRect$p(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;Landroid/graphics/Rect;)V
 
     goto :goto_0
 
-    .line 404
+    .line 295
     :cond_0
     invoke-static {}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$getEmptyRect$cp()Landroid/graphics/Rect;
 
@@ -127,12 +127,12 @@
 
     if-nez p2, :cond_1
 
-    .line 405
+    .line 296
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$updateActiveArrayRectByObjectTrackingOrFaceRect$4;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$setSelectedTrackingRect$p(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;Landroid/graphics/Rect;)V
 
-    .line 407
+    .line 298
     :cond_1
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

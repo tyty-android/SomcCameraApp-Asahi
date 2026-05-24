@@ -14,11 +14,11 @@
 # static fields
 .field private static final EXPECTED_OVERHEAD:F = 0.95f
 
-.field static final EXTERNAL_TRACK_ID_AUDIO:I = 0x2
+.field private static final EXTERNAL_TRACK_ID_AUDIO:I = 0x2
 
-.field static final EXTERNAL_TRACK_ID_OTHER:I = 0x0
+.field private static final EXTERNAL_TRACK_ID_OTHER:I = 0x0
 
-.field static final EXTERNAL_TRACK_ID_VIDEO:I = 0x1
+.field private static final EXTERNAL_TRACK_ID_VIDEO:I = 0x1
 
 .field private static final TAG:Ljava/lang/String; = "MediaMuxerWrapper"
 
@@ -63,6 +63,19 @@
 # direct methods
 .method constructor <init>(Ljava/io/FileDescriptor;ILcom/sonymobile/android/media/internal/MediaMuxerWrapper$MuxerListener;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "fd",
+            "outputFormat",
+            "listener"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -164,6 +177,14 @@
 # virtual methods
 .method addTrack(Landroid/media/MediaFormat;)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "outputFormat"
+        }
+    .end annotation
 
     .line 114
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/MediaMuxerWrapper;->mMuxer:Landroid/media/MediaMuxer;
@@ -273,6 +294,14 @@
 
 .method endTrack(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "externalTrackIndex"
+        }
+    .end annotation
 
     shl-int/lit8 p1, p1, 0x1c
 
@@ -306,6 +335,16 @@
 
 .method setLocation(FF)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "latitude",
+            "longitude"
+        }
+    .end annotation
 
     .line 87
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/MediaMuxerWrapper;->mMuxer:Landroid/media/MediaMuxer;
@@ -317,6 +356,14 @@
 
 .method setMaxDuration(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "maxDurationMs"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -332,6 +379,14 @@
 
 .method setMaxFileSize(J)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "maxFilesizeBytes"
+        }
+    .end annotation
 
     const-wide/16 v0, 0x0
 
@@ -347,6 +402,14 @@
 
 .method setOrientationHint(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "orientationHint"
+        }
+    .end annotation
 
     .line 83
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/MediaMuxerWrapper;->mMuxer:Landroid/media/MediaMuxer;
@@ -358,6 +421,14 @@
 
 .method setRequestProgressInfoInterval(J)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "ms"
+        }
+    .end annotation
 
     const-wide/16 v0, 0x3e8
 
@@ -448,6 +519,18 @@
 
 .method writeSampleData(ILjava/nio/ByteBuffer;Landroid/media/MediaCodec$BufferInfo;)V
     .locals 11
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "externalTrackIndex",
+            "buffer",
+            "bufferInfo"
+        }
+    .end annotation
 
     .line 140
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/MediaMuxerWrapper;->externalToInternalTrackIdMap:Landroid/util/ArrayMap;

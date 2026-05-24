@@ -7,21 +7,17 @@
 
 
 # instance fields
-.field public final synthetic f$0:Z
-
-.field public final synthetic f$1:Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;
+.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;
 
 
 # direct methods
-.method public synthetic constructor <init>(ZLjp/co/sony/mc/camera/view/fragment/CommonOperationFragment;)V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment$$ExternalSyntheticLambda0;->f$0:Z
-
-    iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment$$ExternalSyntheticLambda0;->f$1:Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;
 
     return-void
 .end method
@@ -29,14 +25,12 @@
 
 # virtual methods
 .method public final onClick(Landroid/view/View;)V
-    .locals 1
+    .locals 0
 
     .line 0
-    iget-boolean v0, p0, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment$$ExternalSyntheticLambda0;->f$0:Z
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;
 
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment$$ExternalSyntheticLambda0;->f$1:Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;
-
-    invoke-static {v0, p0, p1}, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;->$r8$lambda$SS4RbvEP2hw8t0WooDilqRLmCqo(ZLjp/co/sony/mc/camera/view/fragment/CommonOperationFragment;Landroid/view/View;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;->$r8$lambda$qqBbahVChaPzAUsQOheABub7yBI(Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;Landroid/view/View;)V
 
     return-void
 .end method

@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field public final synthetic f$0:I
+.field public final synthetic f$0:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$TripodFramingCroppedPosition;
 
 
 # direct methods
-.method public synthetic constructor <init>(I)V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$TripodFramingCroppedPosition;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p1, p0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda31;->f$0:I
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda31;->f$0:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$TripodFramingCroppedPosition;
 
     return-void
 .end method
@@ -28,11 +28,11 @@
     .locals 0
 
     .line 0
-    iget p0, p0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda31;->f$0:I
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/CameraEventNotifier$$ExternalSyntheticLambda31;->f$0:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$TripodFramingCroppedPosition;
 
     check-cast p1, Ljp/co/sony/mc/camera/view/CameraEventListener;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->$r8$lambda$5W0W0i9QXuBtvQcYuaXCzSytcFo(ILjp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->$r8$lambda$LobbcZEOf1I2tdhwhH3YRcG3slc(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$TripodFramingCroppedPosition;Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 

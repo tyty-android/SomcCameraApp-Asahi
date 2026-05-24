@@ -18,7 +18,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 938
+    .line 941
     invoke-direct {p0}, Lcom/google/common/base/CharMatcher;-><init>()V
 
     return-void
@@ -28,10 +28,19 @@
 # virtual methods
 .method public bridge synthetic apply(Ljava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "character"
+        }
+    .end annotation
+
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 938
+    .line 941
     check-cast p1, Ljava/lang/Character;
 
     invoke-super {p0, p1}, Lcom/google/common/base/CharMatcher;->apply(Ljava/lang/Character;)Z
@@ -44,7 +53,7 @@
 .method public negate()Lcom/google/common/base/CharMatcher;
     .locals 1
 
-    .line 947
+    .line 950
     new-instance v0, Lcom/google/common/base/CharMatcher$NegatedFastMatcher;
 
     invoke-direct {v0, p0}, Lcom/google/common/base/CharMatcher$NegatedFastMatcher;-><init>(Lcom/google/common/base/CharMatcher;)V

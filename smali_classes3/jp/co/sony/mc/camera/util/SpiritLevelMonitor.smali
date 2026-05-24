@@ -135,7 +135,7 @@
 
     move-result-object v0
 
-    const-string v1, "sensor"
+    const-string/jumbo v1, "sensor"
 
     .line 141
     invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -365,6 +365,14 @@
 # virtual methods
 .method public registerSpiritLevelListener(Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SpiritLevelListener;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 148
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mSpiritLevelListeners:Ljava/util/List;
@@ -389,6 +397,14 @@
 
 .method public setCameraCalibrationAccessor(Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment$CameraCalibrationAccessor;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "calibrationAccessor"
+        }
+    .end annotation
 
     .line 136
     iput-object p1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mCameraCalibrationAccessor:Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment$CameraCalibrationAccessor;
@@ -398,6 +414,14 @@
 
 .method public setPoseRotationFetcher(Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$PoseRotationFetcher;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 132
     iput-object p1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mPoseRotationFetcher:Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$PoseRotationFetcher;
@@ -407,6 +431,14 @@
 
 .method public unregisterSpiritLevelListener(Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SpiritLevelListener;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
     .line 158
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mSpiritLevelListeners:Ljava/util/List;

@@ -55,7 +55,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder$onCreate$6;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;
 
-    .line 224
+    .line 217
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -66,13 +66,13 @@
 .method public onProgressChanged(Landroid/widget/SeekBar;IZ)V
     .locals 3
 
-    const-string v0, "seekBar"
+    const-string/jumbo v0, "seekBar"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-eqz p3, :cond_2
 
-    .line 238
+    .line 231
     iget-object p3, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder$onCreate$6;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;
 
     invoke-static {p3}, Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;->access$getFinderUiState(Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;)Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
@@ -85,65 +85,33 @@
 
     int-to-float p2, p2
 
-    const/16 p3, 0xa
+    const/4 p3, 0x2
 
     int-to-float v1, p3
 
     div-float/2addr p2, v1
 
-    .line 241
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder$onCreate$6;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;
-
-    invoke-static {v1}, Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;->access$getBinding$p(Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;)Ljp/co/sony/mc/camera/databinding/FragmentBasicModeFinderItemsBinding;
-
-    move-result-object v1
-
-    iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeFinderItemsBinding;->color:Landroid/widget/SeekBar;
-
-    invoke-virtual {v1}, Landroid/widget/SeekBar;->getMax()I
+    .line 234
+    invoke-virtual {p1}, Landroid/widget/SeekBar;->getMax()I
 
     move-result v1
 
+    invoke-virtual {p1}, Landroid/widget/SeekBar;->getMin()I
+
+    move-result v2
+
+    add-int/2addr v1, v2
+
     div-int/2addr v1, p3
 
-    .line 242
+    .line 236
     invoke-virtual {p1}, Landroid/widget/SeekBar;->getProgress()I
 
     move-result p3
 
-    if-eqz p3, :cond_0
+    if-ne p3, v1, :cond_0
 
-    .line 243
-    invoke-static {p2}, Ljava/lang/Math;->abs(F)F
-
-    move-result p3
-
-    int-to-float v1, v1
-
-    const v2, 0x3da3d70a    # 0.08f
-
-    mul-float/2addr v1, v2
-
-    cmpg-float p3, p3, v1
-
-    if-gez p3, :cond_0
-
-    const/4 p2, 0x0
-
-    .line 245
-    invoke-virtual {p1, p2}, Landroid/widget/SeekBar;->setProgress(I)V
-
-    const/4 p2, 0x0
-
-    .line 248
-    :cond_0
-    invoke-virtual {p1}, Landroid/widget/SeekBar;->getProgress()I
-
-    move-result p3
-
-    if-nez p3, :cond_1
-
-    .line 249
+    .line 237
     iget-object p3, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder$onCreate$6;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;
 
     invoke-static {p3}, Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;->access$getActiveColorBar$p(Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;)Landroid/graphics/drawable/Drawable;
@@ -154,8 +122,8 @@
 
     goto :goto_0
 
-    .line 251
-    :cond_1
+    .line 239
+    :cond_0
     iget-object p3, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder$onCreate$6;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;
 
     invoke-static {p3}, Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;->access$getOriginalColorBar$p(Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;)Landroid/graphics/drawable/Drawable;
@@ -164,8 +132,39 @@
 
     invoke-virtual {p1, p3}, Landroid/widget/SeekBar;->setProgressDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 253
+    .line 242
     :goto_0
+    iget-object p3, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder$onCreate$6;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;
+
+    invoke-static {p3}, Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;->access$getCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;)Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+    move-result-object p3
+
+    invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getAiSuggestion()Landroidx/lifecycle/LiveData;
+
+    move-result-object p3
+
+    invoke-virtual {p3}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object p3
+
+    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestion;->ON_SCENE_AUTO:Ljp/co/sony/mc/camera/configuration/parameters/AiSuggestion;
+
+    if-ne p3, v1, :cond_1
+
+    .line 243
+    iget-object p3, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder$onCreate$6;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;
+
+    invoke-static {p3}, Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;->access$getAiSuggestionUiState$p(Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;)Ljp/co/sony/mc/camera/view/uistate/AiSuggestionUiState;
+
+    move-result-object p3
+
+    invoke-virtual {p3, p2}, Ljp/co/sony/mc/camera/view/uistate/AiSuggestionUiState;->setAiSuggestionAmberBlue(F)V
+
+    goto :goto_1
+
+    .line 245
+    :cond_1
     iget-object p3, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder$onCreate$6;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;
 
     invoke-static {p3}, Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;->access$getFinderUiState(Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;)Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
@@ -174,7 +173,8 @@
 
     invoke-virtual {p3, p2}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->setAmberBlue(F)V
 
-    .line 254
+    .line 247
+    :goto_1
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder$onCreate$6;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;->access$getCommonUiState(Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;)Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
@@ -187,7 +187,7 @@
 
     invoke-virtual {p2, p3}, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;->closeAllMenu(Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason;)Z
 
-    .line 258
+    .line 251
     sget-object p2, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->INSTANCE:Ljp/co/sony/mc/camera/util/AccessibilityUtil;
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->isTalkBackEnabled()Z
@@ -196,7 +196,7 @@
 
     if-eqz p2, :cond_2
 
-    .line 259
+    .line 252
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder$onCreate$6;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;
 
     invoke-static {p0, p1, v0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;->access$stopTrackingTouch(Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;Landroid/widget/SeekBar;Z)V
@@ -208,7 +208,7 @@
 .method public onStartTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 0
 
-    const-string p0, "seekBar"
+    const-string/jumbo p0, "seekBar"
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -218,18 +218,18 @@
 .method public onStopTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 10
 
-    const-string v0, "seekBar"
+    const-string/jumbo v0, "seekBar"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 230
+    .line 223
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder$onCreate$6;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;
 
     const/4 v0, 0x1
 
     invoke-static {p0, p1, v0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;->access$stopTrackingTouch(Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;Landroid/widget/SeekBar;Z)V
 
-    .line 231
+    .line 224
     new-instance p0, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
     const/16 v8, 0x3f
@@ -258,7 +258,7 @@
 
     move-result-object p0
 
-    .line 232
+    .line 225
     sget-object p1, Ljp/co/sony/mc/camera/setting/CameraSettings;->AMBER_BLUE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     const-string v0, "AMBER_BLUE"
@@ -271,7 +271,7 @@
 
     move-result-object p0
 
-    .line 233
+    .line 226
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->send()V
 
     return-void

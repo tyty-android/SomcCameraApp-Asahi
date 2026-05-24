@@ -16,10 +16,42 @@
 
 # virtual methods
 .method public abstract onSurfaceFinalized(Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "previewSurfaceView"
+        }
+    .end annotation
 .end method
 
 .method public abstract onSurfaceInitialized(Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;II)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "previewSurfaceView",
+            "width",
+            "height"
+        }
+    .end annotation
 .end method
 
 .method public abstract onSurfaceSizeChanged(Ljp/co/sony/mc/camera/view/widget/PreviewSurfaceView;II)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "previewSurfaceView",
+            "width",
+            "height"
+        }
+    .end annotation
 .end method

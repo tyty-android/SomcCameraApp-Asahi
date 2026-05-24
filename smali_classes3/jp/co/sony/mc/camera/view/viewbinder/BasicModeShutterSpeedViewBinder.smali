@@ -26,10 +26,10 @@
         "Landroidx/lifecycle/LifecycleOwner;",
         "getLifecycleOwner",
         "()Landroidx/lifecycle/LifecycleOwner;",
-        "viewFinderUiState",
-        "Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;",
-        "getViewFinderUiState",
-        "()Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;",
+        "basicModeFocusSsUiState",
+        "Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;",
+        "getBasicModeFocusSsUiState",
+        "()Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;",
         "cameraSettingsModel",
         "Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;",
         "getCameraSettingsModel",
@@ -172,22 +172,22 @@
     return-void
 .end method
 
+.method public static final synthetic access$getBasicModeFocusSsUiState(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder;)Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;
+    .locals 0
+
+    .line 24
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder;->getBasicModeFocusSsUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public static final synthetic access$getBinding$p(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder;)Ljp/co/sony/mc/camera/databinding/FragmentBasicSsBinding;
     .locals 0
 
     .line 24
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicSsBinding;
-
-    return-object p0
-.end method
-
-.method public static final synthetic access$getViewFinderUiState(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder;)Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
-    .locals 0
-
-    .line 24
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder;->getViewFinderUiState()Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
-
-    move-result-object p0
 
     return-object p0
 .end method
@@ -199,6 +199,21 @@
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicSsBinding;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicSsBinding;->getBasicModeCommonUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    return-object p0
+.end method
+
+.method private final getBasicModeFocusSsUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;
+    .locals 0
+
+    .line 30
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicSsBinding;
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicSsBinding;->getBasicModeFocusSsUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;
 
     move-result-object p0
 
@@ -229,21 +244,6 @@
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicSsBinding;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicSsBinding;->getLifecycleOwner()Landroidx/lifecycle/LifecycleOwner;
-
-    move-result-object p0
-
-    invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
-    return-object p0
-.end method
-
-.method private final getViewFinderUiState()Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
-    .locals 0
-
-    .line 30
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicSsBinding;
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicSsBinding;->getViewFinderUiState()Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     move-result-object p0
 
@@ -291,18 +291,18 @@
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 74
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder;->getViewFinderUiState()Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder;->getBasicModeFocusSsUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;
 
     move-result-object p1
 
-    invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->switchShutterSpeedMode(Z)V
+    invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;->switchShutterSpeedMode(Z)V
 
     if-eqz p2, :cond_0
 
     .line 78
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder;->context:Landroid/content/Context;
 
-    const v0, 0x7f110075
+    const v0, 0x7f110089
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -311,7 +311,7 @@
     .line 79
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder;->context:Landroid/content/Context;
 
-    const v1, 0x7f110098
+    const v1, 0x7f1100ac
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -339,7 +339,7 @@
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder;->context:Landroid/content/Context;
 
-    const v0, 0x7f110074
+    const v0, 0x7f110088
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -348,7 +348,7 @@
     .line 83
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder;->context:Landroid/content/Context;
 
-    const v1, 0x7f110099
+    const v1, 0x7f1100ad
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -588,11 +588,11 @@
     invoke-virtual {v0, v1}, Landroid/graphics/drawable/Drawable;->setAlpha(I)V
 
     .line 112
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder;->getViewFinderUiState()Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder;->getBasicModeFocusSsUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->getBasicSsOptions()Landroidx/lifecycle/LiveData;
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;->getSsOptions()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
@@ -666,7 +666,7 @@
     .line 122
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder;->context:Landroid/content/Context;
 
-    const v2, 0x7f110449
+    const v2, 0x7f110494
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -848,11 +848,11 @@
     invoke-virtual {p1, v0}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     .line 100
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder;->getViewFinderUiState()Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder;->getBasicModeFocusSsUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->getBasicSsOptions()Landroidx/lifecycle/LiveData;
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;->getSsOptions()Landroidx/lifecycle/LiveData;
 
     move-result-object p1
 
@@ -898,11 +898,11 @@
     invoke-virtual {p1, v0, v2}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
     .line 118
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder;->getViewFinderUiState()Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder;->getBasicModeFocusSsUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->getSsValueStringResId()Landroidx/lifecycle/LiveData;
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeFocusSsUiState;->getSsValueStringResId()Landroidx/lifecycle/LiveData;
 
     move-result-object p1
 

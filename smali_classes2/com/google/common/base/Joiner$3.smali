@@ -33,8 +33,20 @@
 # direct methods
 .method constructor <init>([Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "val$rest",
+            "val$first",
+            "val$second"
+        }
+    .end annotation
 
-    .line 463
+    .line 515
     iput-object p1, p0, Lcom/google/common/base/Joiner$3;->val$rest:[Ljava/lang/Object;
 
     iput-object p2, p0, Lcom/google/common/base/Joiner$3;->val$first:Ljava/lang/Object;
@@ -50,6 +62,17 @@
 # virtual methods
 .method public get(I)Ljava/lang/Object;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 
     if-eqz p1, :cond_1
 
@@ -57,7 +80,7 @@
 
     if-eq p1, v0, :cond_0
 
-    .line 477
+    .line 530
     iget-object p0, p0, Lcom/google/common/base/Joiner$3;->val$rest:[Ljava/lang/Object;
 
     add-int/lit8 p1, p1, -0x2
@@ -66,13 +89,13 @@
 
     return-object p0
 
-    .line 475
+    .line 528
     :cond_0
     iget-object p0, p0, Lcom/google/common/base/Joiner$3;->val$second:Ljava/lang/Object;
 
     return-object p0
 
-    .line 473
+    .line 526
     :cond_1
     iget-object p0, p0, Lcom/google/common/base/Joiner$3;->val$first:Ljava/lang/Object;
 
@@ -82,7 +105,7 @@
 .method public size()I
     .locals 0
 
-    .line 466
+    .line 518
     iget-object p0, p0, Lcom/google/common/base/Joiner$3;->val$rest:[Ljava/lang/Object;
 
     array-length p0, p0

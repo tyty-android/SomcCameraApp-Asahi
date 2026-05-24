@@ -26,13 +26,23 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "parameter"
+        }
+    .end annotation
 
-    .line 412
+    .line 404
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$OnDismissListener;->this$0:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 413
+    .line 405
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$OnDismissListener;->mParameter:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
 
     return-void
@@ -42,13 +52,21 @@
 # virtual methods
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dialog"
+        }
+    .end annotation
 
-    .line 418
+    .line 410
     const-string p1, "onDismissListener onDismiss()"
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->-$$Nest$smtrace(Ljava/lang/String;)V
 
-    .line 420
+    .line 412
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$OnDismissListener;->this$0:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->-$$Nest$fgetmOnDismissListener(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;)Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$MessageDialogOnDismissListener;
@@ -59,7 +77,7 @@
 
     invoke-interface {p1, v0}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$MessageDialogOnDismissListener;->onDismiss(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;)V
 
-    .line 421
+    .line 413
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$OnDismissListener;->this$0:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->-$$Nest$fgetmDialogList(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;)Ljava/util/List;
@@ -68,19 +86,19 @@
 
     invoke-interface {p1}, Ljava/util/List;->clear()V
 
-    .line 422
+    .line 414
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$OnDismissListener;->this$0:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;
 
     const/4 v0, 0x0
 
     invoke-static {p1, v0}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->-$$Nest$fputmCurrentDialogId(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;Ljp/co/sony/mc/camera/view/messagedialog/DialogId;)V
 
-    .line 423
+    .line 415
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$OnDismissListener;->this$0:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;
 
     invoke-static {p1, v0}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->-$$Nest$fputmCurrentParameter(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;)V
 
-    .line 424
+    .line 416
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$OnDismissListener;->this$0:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->-$$Nest$mshow(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;)V

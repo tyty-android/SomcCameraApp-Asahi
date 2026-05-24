@@ -28,8 +28,16 @@
 # direct methods
 .method constructor <init>(Ljava/util/NavigableSet;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "val$set"
+        }
+    .end annotation
 
-    .line 1033
+    .line 1171
     iput-object p1, p0, Lcom/google/common/collect/Maps$6;->val$set:Ljava/util/NavigableSet;
 
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingNavigableSet;-><init>()V
@@ -41,13 +49,26 @@
 # virtual methods
 .method public add(Ljava/lang/Object;)Z
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "element"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)Z"
         }
     .end annotation
 
-    .line 1041
+    .line 1179
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -57,6 +78,15 @@
 
 .method public addAll(Ljava/util/Collection;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "es"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -65,7 +95,7 @@
         }
     .end annotation
 
-    .line 1046
+    .line 1184
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -76,7 +106,7 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 1033
+    .line 1171
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$6;->delegate()Ljava/util/NavigableSet;
 
     move-result-object p0
@@ -87,7 +117,7 @@
 .method protected bridge synthetic delegate()Ljava/util/Collection;
     .locals 0
 
-    .line 1033
+    .line 1171
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$6;->delegate()Ljava/util/NavigableSet;
 
     move-result-object p0
@@ -105,7 +135,7 @@
         }
     .end annotation
 
-    .line 1036
+    .line 1174
     iget-object p0, p0, Lcom/google/common/collect/Maps$6;->val$set:Ljava/util/NavigableSet;
 
     return-object p0
@@ -114,7 +144,7 @@
 .method protected bridge synthetic delegate()Ljava/util/Set;
     .locals 0
 
-    .line 1033
+    .line 1171
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$6;->delegate()Ljava/util/NavigableSet;
 
     move-result-object p0
@@ -125,7 +155,7 @@
 .method protected bridge synthetic delegate()Ljava/util/SortedSet;
     .locals 0
 
-    .line 1033
+    .line 1171
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$6;->delegate()Ljava/util/NavigableSet;
 
     move-result-object p0
@@ -143,7 +173,7 @@
         }
     .end annotation
 
-    .line 1083
+    .line 1225
     invoke-super {p0}, Lcom/google/common/collect/ForwardingNavigableSet;->descendingSet()Ljava/util/NavigableSet;
 
     move-result-object p0
@@ -157,6 +187,21 @@
 
 .method public headSet(Ljava/lang/Object;Z)Ljava/util/NavigableSet;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "toElement",
+            "inclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;Z)",
@@ -165,7 +210,7 @@
         }
     .end annotation
 
-    .line 1056
+    .line 1194
     invoke-super {p0, p1, p2}, Lcom/google/common/collect/ForwardingNavigableSet;->headSet(Ljava/lang/Object;Z)Ljava/util/NavigableSet;
 
     move-result-object p0
@@ -179,6 +224,19 @@
 
 .method public headSet(Ljava/lang/Object;)Ljava/util/SortedSet;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "toElement"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)",
@@ -187,7 +245,7 @@
         }
     .end annotation
 
-    .line 1051
+    .line 1189
     invoke-super {p0, p1}, Lcom/google/common/collect/ForwardingNavigableSet;->headSet(Ljava/lang/Object;)Ljava/util/SortedSet;
 
     move-result-object p0
@@ -201,6 +259,29 @@
 
 .method public subSet(Ljava/lang/Object;ZLjava/lang/Object;Z)Ljava/util/NavigableSet;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .param p3    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "fromElement",
+            "fromInclusive",
+            "toElement",
+            "toInclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;ZTE;Z)",
@@ -209,12 +290,12 @@
         }
     .end annotation
 
-    .line 1068
+    .line 1210
     invoke-super {p0, p1, p2, p3, p4}, Lcom/google/common/collect/ForwardingNavigableSet;->subSet(Ljava/lang/Object;ZLjava/lang/Object;Z)Ljava/util/NavigableSet;
 
     move-result-object p0
 
-    .line 1067
+    .line 1209
     invoke-static {p0}, Lcom/google/common/collect/Maps;->access$400(Ljava/util/NavigableSet;)Ljava/util/NavigableSet;
 
     move-result-object p0
@@ -224,6 +305,25 @@
 
 .method public subSet(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromElement",
+            "toElement"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;TE;)",
@@ -232,7 +332,7 @@
         }
     .end annotation
 
-    .line 1061
+    .line 1200
     invoke-super {p0, p1, p2}, Lcom/google/common/collect/ForwardingNavigableSet;->subSet(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;
 
     move-result-object p0
@@ -246,6 +346,21 @@
 
 .method public tailSet(Ljava/lang/Object;Z)Ljava/util/NavigableSet;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromElement",
+            "inclusive"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;Z)",
@@ -254,7 +369,7 @@
         }
     .end annotation
 
-    .line 1078
+    .line 1220
     invoke-super {p0, p1, p2}, Lcom/google/common/collect/ForwardingNavigableSet;->tailSet(Ljava/lang/Object;Z)Ljava/util/NavigableSet;
 
     move-result-object p0
@@ -268,6 +383,19 @@
 
 .method public tailSet(Ljava/lang/Object;)Ljava/util/SortedSet;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fromElement"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)",
@@ -276,7 +404,7 @@
         }
     .end annotation
 
-    .line 1073
+    .line 1215
     invoke-super {p0, p1}, Lcom/google/common/collect/ForwardingNavigableSet;->tailSet(Ljava/lang/Object;)Ljava/util/SortedSet;
 
     move-result-object p0

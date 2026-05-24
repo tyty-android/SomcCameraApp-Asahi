@@ -3,7 +3,7 @@
 .source "CommonSettings.java"
 
 # interfaces
-.implements Ljp/co/sony/mc/camera/setting/SettingsBase$SetCommand;
+.implements Ljp/co/sony/mc/camera/setting/SettingsBase$GetDefaultCommand;
 
 
 # annotations
@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1157
+    .line 1060
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,8 +29,19 @@
 
 
 # virtual methods
-.method public setValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljava/util/Map;)Z
+.method public getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -38,23 +49,22 @@
             ">(",
             "Ljp/co/sony/mc/camera/setting/SettingsBase;",
             "Ljp/co/sony/mc/camera/setting/SettingKey$Key<",
-            "TT;>;TT;",
-            "Ljava/util/Map<",
-            "Ljp/co/sony/mc/camera/setting/CameraProSettingChangedListener;",
-            "Landroid/os/Handler;",
-            ">;)Z"
+            "TT;>;)TT;"
         }
     .end annotation
 
-    .line 1161
+    .line 1064
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 1162
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    .line 1065
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$msetLastProPhotoCapturingMode(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
+    move-result-object p0
 
-    move-result p0
+    .line 1066
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getDefaultCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    return p0
+    move-result-object p0
+
+    return-object p0
 .end method

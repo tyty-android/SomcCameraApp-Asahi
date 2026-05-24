@@ -44,11 +44,19 @@
 # direct methods
 .method constructor <init>(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "expectedSize"
+        }
+    .end annotation
 
-    .line 56
+    .line 55
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 57
+    .line 56
     iput p1, p0, Lcom/google/common/collect/HashBasedTable$Factory;->expectedSize:I
 
     return-void
@@ -59,7 +67,7 @@
 .method public bridge synthetic get()Ljava/lang/Object;
     .locals 0
 
-    .line 53
+    .line 52
     invoke-virtual {p0}, Lcom/google/common/collect/HashBasedTable$Factory;->get()Ljava/util/Map;
 
     move-result-object p0
@@ -77,7 +85,7 @@
         }
     .end annotation
 
-    .line 62
+    .line 61
     iget p0, p0, Lcom/google/common/collect/HashBasedTable$Factory;->expectedSize:I
 
     invoke-static {p0}, Lcom/google/common/collect/Maps;->newLinkedHashMapWithExpectedSize(I)Ljava/util/LinkedHashMap;

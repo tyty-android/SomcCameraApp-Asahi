@@ -23,16 +23,24 @@
 # direct methods
 .method constructor <init>(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "initialCapacity"
+        }
+    .end annotation
 
-    .line 199
+    .line 217
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 197
+    .line 215
     iput v0, p0, Lcom/google/common/primitives/ImmutableIntArray$Builder;->count:I
 
-    .line 200
+    .line 218
     new-array p1, p1, [I
 
     iput-object p1, p0, Lcom/google/common/primitives/ImmutableIntArray$Builder;->array:[I
@@ -42,20 +50,28 @@
 
 .method private ensureRoomFor(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "numberToAdd"
+        }
+    .end annotation
 
-    .line 263
+    .line 305
     iget v0, p0, Lcom/google/common/primitives/ImmutableIntArray$Builder;->count:I
 
     add-int/2addr v0, p1
 
-    .line 264
+    .line 306
     iget-object p1, p0, Lcom/google/common/primitives/ImmutableIntArray$Builder;->array:[I
 
     array-length v1, p1
 
     if-le v0, v1, :cond_0
 
-    .line 265
+    .line 307
     array-length v1, p1
 
     invoke-static {v1, v0}, Lcom/google/common/primitives/ImmutableIntArray$Builder;->expandedCapacity(II)I
@@ -74,6 +90,16 @@
 
 .method private static expandedCapacity(II)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "oldCapacity",
+            "minCapacity"
+        }
+    .end annotation
 
     if-ltz p1, :cond_2
 
@@ -87,7 +113,7 @@
 
     add-int/lit8 p1, p1, -0x1
 
-    .line 277
+    .line 319
     invoke-static {p1}, Ljava/lang/Integer;->highestOneBit(I)I
 
     move-result p0
@@ -102,7 +128,7 @@
     :cond_1
     return p0
 
-    .line 272
+    .line 314
     :cond_2
     new-instance p0, Ljava/lang/AssertionError;
 
@@ -117,13 +143,21 @@
 # virtual methods
 .method public add(I)Lcom/google/common/primitives/ImmutableIntArray$Builder;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
-    .line 208
+    .line 227
     invoke-direct {p0, v0}, Lcom/google/common/primitives/ImmutableIntArray$Builder;->ensureRoomFor(I)V
 
-    .line 209
+    .line 228
     iget-object v1, p0, Lcom/google/common/primitives/ImmutableIntArray$Builder;->array:[I
 
     iget v2, p0, Lcom/google/common/primitives/ImmutableIntArray$Builder;->count:I
@@ -132,7 +166,7 @@
 
     add-int/2addr v2, v0
 
-    .line 210
+    .line 229
     iput v2, p0, Lcom/google/common/primitives/ImmutableIntArray$Builder;->count:I
 
     return-object p0
@@ -140,15 +174,23 @@
 
 .method public addAll(Lcom/google/common/primitives/ImmutableIntArray;)Lcom/google/common/primitives/ImmutableIntArray$Builder;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "values"
+        }
+    .end annotation
 
-    .line 256
+    .line 298
     invoke-virtual {p1}, Lcom/google/common/primitives/ImmutableIntArray;->length()I
 
     move-result v0
 
     invoke-direct {p0, v0}, Lcom/google/common/primitives/ImmutableIntArray$Builder;->ensureRoomFor(I)V
 
-    .line 257
+    .line 299
     invoke-static {p1}, Lcom/google/common/primitives/ImmutableIntArray;->access$000(Lcom/google/common/primitives/ImmutableIntArray;)[I
 
     move-result-object v0
@@ -167,7 +209,7 @@
 
     invoke-static {v0, v1, v2, v3, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 258
+    .line 300
     iget v0, p0, Lcom/google/common/primitives/ImmutableIntArray$Builder;->count:I
 
     invoke-virtual {p1}, Lcom/google/common/primitives/ImmutableIntArray;->length()I
@@ -183,6 +225,15 @@
 
 .method public addAll(Ljava/lang/Iterable;)Lcom/google/common/primitives/ImmutableIntArray$Builder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "values"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -193,12 +244,12 @@
         }
     .end annotation
 
-    .line 230
+    .line 251
     instance-of v0, p1, Ljava/util/Collection;
 
     if-eqz v0, :cond_0
 
-    .line 231
+    .line 252
     check-cast p1, Ljava/util/Collection;
 
     invoke-virtual {p0, p1}, Lcom/google/common/primitives/ImmutableIntArray$Builder;->addAll(Ljava/util/Collection;)Lcom/google/common/primitives/ImmutableIntArray$Builder;
@@ -207,7 +258,7 @@
 
     return-object p0
 
-    .line 233
+    .line 254
     :cond_0
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -226,7 +277,7 @@
 
     check-cast v0, Ljava/lang/Integer;
 
-    .line 234
+    .line 255
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -241,6 +292,15 @@
 
 .method public addAll(Ljava/util/Collection;)Lcom/google/common/primitives/ImmutableIntArray$Builder;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "values"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -251,14 +311,14 @@
         }
     .end annotation
 
-    .line 244
+    .line 266
     invoke-interface {p1}, Ljava/util/Collection;->size()I
 
     move-result v0
 
     invoke-direct {p0, v0}, Lcom/google/common/primitives/ImmutableIntArray$Builder;->ensureRoomFor(I)V
 
-    .line 245
+    .line 267
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -276,7 +336,7 @@
 
     check-cast v0, Ljava/lang/Integer;
 
-    .line 246
+    .line 268
     iget-object v1, p0, Lcom/google/common/primitives/ImmutableIntArray$Builder;->array:[I
 
     iget v2, p0, Lcom/google/common/primitives/ImmutableIntArray$Builder;->count:I
@@ -297,15 +357,68 @@
     return-object p0
 .end method
 
+.method public addAll(Ljava/util/stream/IntStream;)Lcom/google/common/primitives/ImmutableIntArray$Builder;
+    .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "stream"
+        }
+    .end annotation
+
+    .line 283
+    invoke-interface {p1}, Ljava/util/stream/IntStream;->spliterator()Ljava/util/Spliterator$OfInt;
+
+    move-result-object p1
+
+    .line 284
+    invoke-interface {p1}, Ljava/util/Spliterator$OfInt;->getExactSizeIfKnown()J
+
+    move-result-wide v0
+
+    const-wide/16 v2, 0x0
+
+    cmp-long v2, v0, v2
+
+    if-lez v2, :cond_0
+
+    .line 286
+    invoke-static {v0, v1}, Lcom/google/common/primitives/Ints;->saturatedCast(J)I
+
+    move-result v0
+
+    invoke-direct {p0, v0}, Lcom/google/common/primitives/ImmutableIntArray$Builder;->ensureRoomFor(I)V
+
+    .line 288
+    :cond_0
+    new-instance v0, Lcom/google/common/primitives/ImmutableIntArray$Builder$$ExternalSyntheticLambda0;
+
+    invoke-direct {v0, p0}, Lcom/google/common/primitives/ImmutableIntArray$Builder$$ExternalSyntheticLambda0;-><init>(Lcom/google/common/primitives/ImmutableIntArray$Builder;)V
+
+    invoke-interface {p1, v0}, Ljava/util/Spliterator$OfInt;->forEachRemaining(Ljava/util/function/IntConsumer;)V
+
+    return-object p0
+.end method
+
 .method public addAll([I)Lcom/google/common/primitives/ImmutableIntArray$Builder;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "values"
+        }
+    .end annotation
 
-    .line 219
+    .line 239
     array-length v0, p1
 
     invoke-direct {p0, v0}, Lcom/google/common/primitives/ImmutableIntArray$Builder;->ensureRoomFor(I)V
 
-    .line 220
+    .line 240
     iget-object v0, p0, Lcom/google/common/primitives/ImmutableIntArray$Builder;->array:[I
 
     iget v1, p0, Lcom/google/common/primitives/ImmutableIntArray$Builder;->count:I
@@ -316,7 +429,7 @@
 
     invoke-static {p1, v3, v0, v1, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 221
+    .line 241
     iget v0, p0, Lcom/google/common/primitives/ImmutableIntArray$Builder;->count:I
 
     array-length p1, p1
@@ -330,10 +443,8 @@
 
 .method public build()Lcom/google/common/primitives/ImmutableIntArray;
     .locals 4
-    .annotation runtime Lcom/google/errorprone/annotations/CheckReturnValue;
-    .end annotation
 
-    .line 295
+    .line 336
     iget v0, p0, Lcom/google/common/primitives/ImmutableIntArray$Builder;->count:I
 
     if-nez v0, :cond_0

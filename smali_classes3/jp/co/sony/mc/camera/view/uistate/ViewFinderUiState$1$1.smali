@@ -58,7 +58,7 @@
     f = "ViewFinderUiState.kt"
     i = {}
     l = {
-        0x13e
+        0xbb
     }
     m = "invokeSuspend"
     n = {}
@@ -176,7 +176,7 @@
 
     move-result-object v0
 
-    .line 315
+    .line 184
     iget v1, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$1$1;->label:I
 
     const/4 v2, 0x1
@@ -205,14 +205,14 @@
 
     check-cast p1, Ljava/lang/Boolean;
 
-    .line 316
+    .line 185
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p1
 
     if-eqz p1, :cond_2
 
-    .line 318
+    .line 187
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$1$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     move-object v1, p0
@@ -229,7 +229,7 @@
 
     return-object v0
 
-    .line 320
+    .line 189
     :cond_2
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$1$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
@@ -239,16 +239,16 @@
 
     invoke-static {p1, v0}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$setSelectedTrackingRect$p(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;Landroid/graphics/Rect;)V
 
-    .line 321
+    .line 190
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$1$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     invoke-static {}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$getEmptyRect$cp()Landroid/graphics/Rect;
 
     move-result-object p1
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$setSelectedFaceRect$p(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;Landroid/graphics/Rect;)V
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->setSelectedFaceRect(Landroid/graphics/Rect;)V
 
-    .line 323
+    .line 192
     :cond_3
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

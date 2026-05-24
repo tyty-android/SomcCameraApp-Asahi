@@ -24,13 +24,13 @@
     .line 15
     new-instance v0, Landroidx/databinding/ViewDataBinding$IncludedLayouts;
 
-    const/16 v1, 0xc
+    const/16 v1, 0xe
 
     invoke-direct {v0, v1}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;-><init>(I)V
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
 
-    const/16 v1, 0xa
+    const/16 v1, 0xc
 
     .line 16
     new-array v2, v1, [Ljava/lang/String;
@@ -77,6 +77,14 @@
 
     aput-object v4, v2, v5
 
+    const/16 v5, 0xa
+
+    aput-object v4, v2, v5
+
+    const/16 v5, 0xb
+
+    aput-object v4, v2, v5
+
     new-array v4, v1, [I
 
     fill-array-data v4, :array_0
@@ -89,7 +97,7 @@
 
     const/4 v0, 0x0
 
-    .line 29
+    .line 31
     sput-object v0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
     return-void
@@ -108,32 +116,46 @@
         0x9
         0xa
         0xb
+        0xc
+        0xd
     .end array-data
 
     :array_1
     .array-data 4
-        0x7f0c014d
-        0x7f0c014d
-        0x7f0c014d
-        0x7f0c014d
-        0x7f0c014d
-        0x7f0c014d
-        0x7f0c014d
-        0x7f0c014d
-        0x7f0c014d
-        0x7f0c014d
+        0x7f0c0143
+        0x7f0c0143
+        0x7f0c0143
+        0x7f0c0143
+        0x7f0c0143
+        0x7f0c0143
+        0x7f0c0143
+        0x7f0c0143
+        0x7f0c0143
+        0x7f0c0143
+        0x7f0c0143
+        0x7f0c0143
     .end array-data
 .end method
 
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root"
+        }
+    .end annotation
 
-    .line 42
+    .line 44
     sget-object v0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
 
     sget-object v1, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const/16 v2, 0xc
+    const/16 v2, 0xe
 
     invoke-static {p1, p2, v2, v0, v1}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mapBindings(Landroidx/databinding/DataBindingComponent;Landroid/view/View;ILandroidx/databinding/ViewDataBinding$IncludedLayouts;Landroid/util/SparseIntArray;)[Ljava/lang/Object;
 
@@ -145,20 +167,32 @@
 .end method
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
-    .locals 15
+    .locals 17
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root",
+            "bindings"
+        }
+    .end annotation
 
-    move-object v14, p0
+    move-object/from16 v15, p0
 
-    const/16 v0, 0xa
+    const/4 v0, 0x7
 
-    .line 45
+    .line 47
     aget-object v0, p3, v0
 
     move-object v4, v0
 
     check-cast v4, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
-    const/16 v0, 0xb
+    const/16 v0, 0xd
 
     aget-object v0, p3, v0
 
@@ -166,7 +200,7 @@
 
     check-cast v5, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
-    const/16 v0, 0x8
+    const/4 v0, 0x5
 
     aget-object v0, p3, v0
 
@@ -174,7 +208,7 @@
 
     check-cast v6, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
-    const/16 v0, 0x9
+    const/4 v0, 0x6
 
     aget-object v0, p3, v0
 
@@ -182,7 +216,7 @@
 
     check-cast v7, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
-    const/4 v0, 0x2
+    const/16 v0, 0xb
 
     aget-object v0, p3, v0
 
@@ -190,7 +224,7 @@
 
     check-cast v8, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
-    const/4 v0, 0x3
+    const/16 v0, 0xc
 
     aget-object v0, p3, v0
 
@@ -198,7 +232,7 @@
 
     check-cast v9, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
-    const/4 v0, 0x4
+    const/4 v0, 0x2
 
     aget-object v0, p3, v0
 
@@ -206,7 +240,7 @@
 
     check-cast v10, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
-    const/4 v0, 0x6
+    const/16 v0, 0x8
 
     aget-object v0, p3, v0
 
@@ -214,7 +248,7 @@
 
     check-cast v11, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
-    const/4 v0, 0x5
+    const/4 v0, 0x3
 
     aget-object v0, p3, v0
 
@@ -222,7 +256,7 @@
 
     check-cast v12, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
-    const/4 v0, 0x7
+    const/4 v0, 0x4
 
     aget-object v0, p3, v0
 
@@ -230,110 +264,151 @@
 
     check-cast v13, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
-    const/16 v3, 0xc
+    const/16 v0, 0x9
 
-    move-object v0, p0
+    aget-object v0, p3, v0
+
+    move-object v14, v0
+
+    check-cast v14, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    const/16 v0, 0xa
+
+    aget-object v0, p3, v0
+
+    move-object/from16 v16, v0
+
+    check-cast v16, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    const/16 v3, 0xe
+
+    move-object/from16 v0, p0
 
     move-object/from16 v1, p1
 
     move-object/from16 v2, p2
 
-    invoke-direct/range {v0 .. v13}, Ljp/co/sony/mc/camera/databinding/ViewLensBinding;-><init>(Ljava/lang/Object;Landroid/view/View;ILjp/co/sony/mc/camera/databinding/ViewLensSliderBinding;Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;)V
+    move-object/from16 v15, v16
+
+    invoke-direct/range {v0 .. v15}, Ljp/co/sony/mc/camera/databinding/ViewLensBinding;-><init>(Ljava/lang/Object;Landroid/view/View;ILjp/co/sony/mc/camera/databinding/ViewLensSliderBinding;Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;)V
 
     const-wide/16 v0, -0x1
 
-    .line 430
-    iput-wide v0, v14, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
+    move-object/from16 v2, p0
+
+    .line 470
+    iput-wide v0, v2, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
     const/4 v0, 0x0
 
-    .line 57
+    .line 61
     aget-object v0, p3, v0
 
     check-cast v0, Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    iput-object v0, v14, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mboundView0:Landroidx/constraintlayout/widget/ConstraintLayout;
+    iput-object v0, v2, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mboundView0:Landroidx/constraintlayout/widget/ConstraintLayout;
 
     const/4 v1, 0x0
 
-    .line 58
+    .line 62
     invoke-virtual {v0, v1}, Landroidx/constraintlayout/widget/ConstraintLayout;->setTag(Ljava/lang/Object;)V
 
     const/4 v0, 0x1
 
-    .line 59
+    .line 63
     aget-object v0, p3, v0
 
     check-cast v0, Landroid/view/View;
 
-    iput-object v0, v14, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mboundView1:Landroid/view/View;
-
-    .line 60
-    invoke-virtual {v0, v1}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
-
-    .line 61
-    iget-object v0, v14, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderSuperTele:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
-
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
-
-    .line 62
-    iget-object v0, v14, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderSuperTelePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
-
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
-
-    .line 63
-    iget-object v0, v14, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderTele:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
-
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
+    iput-object v0, v2, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mboundView1:Landroid/view/View;
 
     .line 64
-    iget-object v0, v14, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderTelePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
-
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     .line 65
-    iget-object v0, v14, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderUwide:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+    iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderSuperTele:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
+    invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
     .line 66
-    iget-object v0, v14, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderUwidePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+    iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderSuperTelePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
+    invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
     .line 67
-    iget-object v0, v14, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWide:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+    iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderTele:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
+    invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
     .line 68
-    iget-object v0, v14, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWideHybridZoom:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+    iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderTeleHybridZoom:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
+    invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
     .line 69
-    iget-object v0, v14, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWidePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+    iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderTelePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
+    invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
     .line 70
-    iget-object v0, v14, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWidePhysicalHybridZoom:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+    iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderTelePhysicalHybridZoom:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
+    invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
+
+    .line 71
+    iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderUwide:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
+
+    .line 72
+    iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderUwidePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
+
+    .line 73
+    iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWide:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
+
+    .line 74
+    iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWideHybridZoom:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
+
+    .line 75
+    iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWidePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
+
+    .line 76
+    iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWidePhysicalHybridZoom:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
     move-object/from16 v0, p2
 
-    .line 71
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->setRootTag(Landroid/view/View;)V
+    .line 77
+    invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->setRootTag(Landroid/view/View;)V
 
-    .line 73
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->invalidateAll()V
+    .line 79
+    invoke-virtual/range {p0 .. p0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->invalidateAll()V
 
     return-void
 .end method
 
 .method private onChangeLensUiStateLensAreaBackgroundVisibile(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "LensUiStateLensAreaBackgroundVisibile",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -345,20 +420,20 @@
 
     if-nez p2, :cond_0
 
-    .line 310
+    .line 339
     monitor-enter p0
 
-    .line 311
+    .line 340
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v0, 0x400
+    const-wide/16 v0, 0x800
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
-    .line 312
+    .line 341
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -382,6 +457,17 @@
 
 .method private onChangeLensUiStateZoomEnabled(Landroidx/lifecycle/LiveData;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "LensUiStateZoomEnabled",
+            "fieldId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -393,10 +479,10 @@
 
     if-nez p2, :cond_0
 
-    .line 265
+    .line 285
     monitor-enter p0
 
-    .line 266
+    .line 286
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
@@ -406,7 +492,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
-    .line 267
+    .line 287
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -430,13 +516,23 @@
 
 .method private onChangeSliderSuperTele(Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "SliderSuperTele",
+            "fieldId"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
-    .line 256
+    .line 276
     monitor-enter p0
 
-    .line 257
+    .line 277
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
@@ -446,7 +542,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
-    .line 258
+    .line 278
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -470,23 +566,33 @@
 
 .method private onChangeSliderSuperTelePhysical(Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "SliderSuperTelePhysical",
+            "fieldId"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
-    .line 301
+    .line 330
     monitor-enter p0
 
-    .line 302
+    .line 331
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v0, 0x200
+    const-wide/16 v0, 0x400
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
-    .line 303
+    .line 332
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -510,13 +616,23 @@
 
 .method private onChangeSliderTele(Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "SliderTele",
+            "fieldId"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
-    .line 220
+    .line 240
     monitor-enter p0
 
-    .line 221
+    .line 241
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
@@ -526,7 +642,57 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
-    .line 222
+    .line 242
+    monitor-exit p0
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method private onChangeSliderTeleHybridZoom(Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;I)Z
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "SliderTeleHybridZoom",
+            "fieldId"
+        }
+    .end annotation
+
+    if-nez p2, :cond_0
+
+    .line 357
+    monitor-enter p0
+
+    .line 358
+    :try_start_0
+    iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
+
+    const-wide/16 v0, 0x2000
+
+    or-long/2addr p1, v0
+
+    iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
+
+    .line 359
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -550,23 +716,83 @@
 
 .method private onChangeSliderTelePhysical(Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "SliderTelePhysical",
+            "fieldId"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
-    .line 319
+    .line 348
     monitor-enter p0
 
-    .line 320
+    .line 349
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v0, 0x800
+    const-wide/16 v0, 0x1000
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
-    .line 321
+    .line 350
+    monitor-exit p0
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method private onChangeSliderTelePhysicalHybridZoom(Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;I)Z
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "SliderTelePhysicalHybridZoom",
+            "fieldId"
+        }
+    .end annotation
+
+    if-nez p2, :cond_0
+
+    .line 312
+    monitor-enter p0
+
+    .line 313
+    :try_start_0
+    iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
+
+    const-wide/16 v0, 0x100
+
+    or-long/2addr p1, v0
+
+    iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
+
+    .line 314
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -590,13 +816,23 @@
 
 .method private onChangeSliderUwide(Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "SliderUwide",
+            "fieldId"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
-    .line 238
+    .line 258
     monitor-enter p0
 
-    .line 239
+    .line 259
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
@@ -606,7 +842,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
-    .line 240
+    .line 260
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -630,13 +866,23 @@
 
 .method private onChangeSliderUwidePhysical(Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "SliderUwidePhysical",
+            "fieldId"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
-    .line 274
+    .line 294
     monitor-enter p0
 
-    .line 275
+    .line 295
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
@@ -646,7 +892,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
-    .line 276
+    .line 296
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -670,13 +916,23 @@
 
 .method private onChangeSliderWide(Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "SliderWide",
+            "fieldId"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
-    .line 229
+    .line 249
     monitor-enter p0
 
-    .line 230
+    .line 250
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
@@ -686,7 +942,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
-    .line 231
+    .line 251
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -710,23 +966,33 @@
 
 .method private onChangeSliderWideHybridZoom(Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "SliderWideHybridZoom",
+            "fieldId"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
-    .line 292
+    .line 321
     monitor-enter p0
 
-    .line 293
+    .line 322
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v0, 0x100
+    const-wide/16 v0, 0x200
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
-    .line 294
+    .line 323
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -750,13 +1016,23 @@
 
 .method private onChangeSliderWidePhysical(Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "SliderWidePhysical",
+            "fieldId"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
-    .line 283
+    .line 303
     monitor-enter p0
 
-    .line 284
+    .line 304
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
@@ -766,7 +1042,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
-    .line 285
+    .line 305
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -790,13 +1066,23 @@
 
 .method private onChangeSliderWidePhysicalHybridZoom(Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "SliderWidePhysicalHybridZoom",
+            "fieldId"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
-    .line 247
+    .line 267
     monitor-enter p0
 
-    .line 248
+    .line 268
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
@@ -806,7 +1092,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
-    .line 249
+    .line 269
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -833,35 +1119,35 @@
 .method protected executeBindings()V
     .locals 15
 
-    .line 330
+    .line 368
     monitor-enter p0
 
-    .line 331
+    .line 369
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
     const-wide/16 v2, 0x0
 
-    .line 332
+    .line 370
     iput-wide v2, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
-    .line 333
+    .line 371
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 337
+    .line 375
     iget-object v4, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mLensUiState:Ljp/co/sony/mc/camera/view/uistate/LensUiState;
 
-    const-wide/32 v5, 0x12420
+    const-wide/32 v5, 0x48820
 
     and-long/2addr v5, v0
 
     cmp-long v5, v5, v2
 
-    const-wide/32 v6, 0x12400
+    const-wide/32 v6, 0x48800
 
-    const-wide/32 v8, 0x12020
+    const-wide/32 v8, 0x48020
 
     const/4 v10, 0x0
 
@@ -879,7 +1165,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 352
+    .line 390
     invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/uistate/LensUiState;->getZoomEnabled()Landroidx/lifecycle/LiveData;
 
     move-result-object v11
@@ -892,12 +1178,12 @@
     :goto_0
     const/4 v13, 0x5
 
-    .line 354
+    .line 392
     invoke-virtual {p0, v13, v11}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v11, :cond_1
 
-    .line 359
+    .line 397
     invoke-virtual {v11}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v11
@@ -909,7 +1195,7 @@
     :cond_1
     move-object v11, v12
 
-    .line 364
+    .line 402
     :goto_1
     invoke-static {v11}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
@@ -919,12 +1205,12 @@
 
     if-eqz v11, :cond_2
 
-    const-wide/32 v13, 0x40000
+    const-wide/32 v13, 0x100000
 
     goto :goto_2
 
     :cond_2
-    const-wide/32 v13, 0x20000
+    const-wide/32 v13, 0x80000
 
     :goto_2
     or-long/2addr v0, v13
@@ -951,7 +1237,7 @@
 
     if-eqz v4, :cond_6
 
-    .line 382
+    .line 420
     invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/uistate/LensUiState;->getLensAreaBackgroundVisibile()Landroidx/lifecycle/LiveData;
 
     move-result-object v4
@@ -962,14 +1248,14 @@
     move-object v4, v12
 
     :goto_4
-    const/16 v5, 0xa
+    const/16 v5, 0xb
 
-    .line 384
+    .line 422
     invoke-virtual {p0, v5, v4}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v4, :cond_7
 
-    .line 389
+    .line 427
     invoke-virtual {v4}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v4
@@ -978,7 +1264,7 @@
 
     check-cast v12, Ljava/lang/Boolean;
 
-    .line 394
+    .line 432
     :cond_7
     invoke-static {v12}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
@@ -986,7 +1272,7 @@
 
     xor-int/lit8 v4, v4, 0x1
 
-    .line 402
+    .line 440
     invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v4
@@ -1002,7 +1288,7 @@
 
     if-eqz v4, :cond_9
 
-    .line 409
+    .line 447
     iget-object v4, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mboundView0:Landroidx/constraintlayout/widget/ConstraintLayout;
 
     invoke-static {v4, v11}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setAlpha(Landroid/view/View;F)V
@@ -1014,58 +1300,68 @@
 
     if-eqz v0, :cond_a
 
-    .line 414
+    .line 452
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mboundView1:Landroid/view/View;
 
     invoke-static {v0, v10}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setGone(Landroid/view/View;Z)V
 
-    .line 416
+    .line 454
     :cond_a
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderUwide:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 417
-    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderUwidePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
-
-    invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
-
-    .line 418
+    .line 455
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWide:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 419
-    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWidePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
-
-    invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
-
-    .line 420
+    .line 456
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWideHybridZoom:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 421
-    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWidePhysicalHybridZoom:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
-
-    invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
-
-    .line 422
+    .line 457
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderTele:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 423
-    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderTelePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+    .line 458
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderTeleHybridZoom:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 424
+    .line 459
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderSuperTele:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 425
+    .line 460
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderUwidePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
+
+    .line 461
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWidePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
+
+    .line 462
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWidePhysicalHybridZoom:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
+
+    .line 463
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderTelePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
+
+    .line 464
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderTelePhysicalHybridZoom:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
+
+    .line 465
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderSuperTelePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
@@ -1075,7 +1371,7 @@
     :catchall_0
     move-exception v0
 
-    .line 333
+    .line 371
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -1087,10 +1383,10 @@
 .method public hasPendingBindings()Z
     .locals 4
 
-    .line 96
+    .line 104
     monitor-enter p0
 
-    .line 97
+    .line 105
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
@@ -1102,18 +1398,18 @@
 
     if-eqz v0, :cond_0
 
-    .line 98
+    .line 106
     monitor-exit p0
 
     return v1
 
-    .line 100
+    .line 108
     :cond_0
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 101
+    .line 109
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderUwide:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->hasPendingBindings()Z
@@ -1124,9 +1420,9 @@
 
     return v1
 
-    .line 104
+    .line 112
     :cond_1
-    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderUwidePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWide:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->hasPendingBindings()Z
 
@@ -1136,9 +1432,9 @@
 
     return v1
 
-    .line 107
+    .line 115
     :cond_2
-    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWide:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWideHybridZoom:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->hasPendingBindings()Z
 
@@ -1148,9 +1444,9 @@
 
     return v1
 
-    .line 110
+    .line 118
     :cond_3
-    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWidePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderTele:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->hasPendingBindings()Z
 
@@ -1160,9 +1456,9 @@
 
     return v1
 
-    .line 113
+    .line 121
     :cond_4
-    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWideHybridZoom:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderTeleHybridZoom:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->hasPendingBindings()Z
 
@@ -1172,9 +1468,9 @@
 
     return v1
 
-    .line 116
+    .line 124
     :cond_5
-    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWidePhysicalHybridZoom:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderSuperTele:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->hasPendingBindings()Z
 
@@ -1184,9 +1480,9 @@
 
     return v1
 
-    .line 119
+    .line 127
     :cond_6
-    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderTele:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderUwidePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->hasPendingBindings()Z
 
@@ -1196,9 +1492,9 @@
 
     return v1
 
-    .line 122
+    .line 130
     :cond_7
-    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderTelePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWidePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->hasPendingBindings()Z
 
@@ -1208,9 +1504,9 @@
 
     return v1
 
-    .line 125
+    .line 133
     :cond_8
-    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderSuperTele:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWidePhysicalHybridZoom:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->hasPendingBindings()Z
 
@@ -1220,19 +1516,43 @@
 
     return v1
 
-    .line 128
+    .line 136
     :cond_9
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderTelePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->hasPendingBindings()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_a
+
+    return v1
+
+    .line 139
+    :cond_a
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderTelePhysicalHybridZoom:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->hasPendingBindings()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_b
+
+    return v1
+
+    .line 142
+    :cond_b
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderSuperTelePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->hasPendingBindings()Z
 
     move-result p0
 
-    if-eqz p0, :cond_a
+    if-eqz p0, :cond_c
 
     return v1
 
-    :cond_a
+    :cond_c
     const/4 p0, 0x0
 
     return p0
@@ -1240,7 +1560,7 @@
     :catchall_0
     move-exception v0
 
-    .line 100
+    .line 108
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -1252,71 +1572,81 @@
 .method public invalidateAll()V
     .locals 2
 
-    .line 78
+    .line 84
     monitor-enter p0
 
-    const-wide/32 v0, 0x10000
+    const-wide/32 v0, 0x40000
 
-    .line 79
+    .line 85
     :try_start_0
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
-    .line 80
+    .line 86
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 81
+    .line 87
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderUwide:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->invalidateAll()V
 
-    .line 82
-    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderUwidePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->invalidateAll()V
-
-    .line 83
+    .line 88
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWide:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->invalidateAll()V
 
-    .line 84
-    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWidePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->invalidateAll()V
-
-    .line 85
+    .line 89
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWideHybridZoom:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->invalidateAll()V
 
-    .line 86
-    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWidePhysicalHybridZoom:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->invalidateAll()V
-
-    .line 87
+    .line 90
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderTele:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->invalidateAll()V
 
-    .line 88
-    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderTelePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+    .line 91
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderTeleHybridZoom:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->invalidateAll()V
 
-    .line 89
+    .line 92
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderSuperTele:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->invalidateAll()V
 
-    .line 90
+    .line 93
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderUwidePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->invalidateAll()V
+
+    .line 94
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWidePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->invalidateAll()V
+
+    .line 95
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWidePhysicalHybridZoom:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->invalidateAll()V
+
+    .line 96
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderTelePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->invalidateAll()V
+
+    .line 97
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderTelePhysicalHybridZoom:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->invalidateAll()V
+
+    .line 98
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderSuperTelePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->invalidateAll()V
 
-    .line 91
+    .line 99
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->requestRebind()V
 
     return-void
@@ -1324,7 +1654,7 @@
     :catchall_0
     move-exception v0
 
-    .line 80
+    .line 86
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -1335,6 +1665,18 @@
 
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "localFieldId",
+            "object",
+            "fieldId"
+        }
+    .end annotation
 
     packed-switch p1, :pswitch_data_0
 
@@ -1342,8 +1684,18 @@
 
     return p0
 
-    .line 214
+    .line 234
     :pswitch_0
+    check-cast p2, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->onChangeSliderTeleHybridZoom(Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;I)Z
+
+    move-result p0
+
+    return p0
+
+    .line 232
+    :pswitch_1
     check-cast p2, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->onChangeSliderTelePhysical(Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;I)Z
@@ -1352,8 +1704,8 @@
 
     return p0
 
-    .line 212
-    :pswitch_1
+    .line 230
+    :pswitch_2
     check-cast p2, Landroidx/lifecycle/LiveData;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->onChangeLensUiStateLensAreaBackgroundVisibile(Landroidx/lifecycle/LiveData;I)Z
@@ -1362,8 +1714,8 @@
 
     return p0
 
-    .line 210
-    :pswitch_2
+    .line 228
+    :pswitch_3
     check-cast p2, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->onChangeSliderSuperTelePhysical(Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;I)Z
@@ -1372,8 +1724,8 @@
 
     return p0
 
-    .line 208
-    :pswitch_3
+    .line 226
+    :pswitch_4
     check-cast p2, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->onChangeSliderWideHybridZoom(Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;I)Z
@@ -1382,8 +1734,18 @@
 
     return p0
 
-    .line 206
-    :pswitch_4
+    .line 224
+    :pswitch_5
+    check-cast p2, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->onChangeSliderTelePhysicalHybridZoom(Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;I)Z
+
+    move-result p0
+
+    return p0
+
+    .line 222
+    :pswitch_6
     check-cast p2, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->onChangeSliderWidePhysical(Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;I)Z
@@ -1392,8 +1754,8 @@
 
     return p0
 
-    .line 204
-    :pswitch_5
+    .line 220
+    :pswitch_7
     check-cast p2, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->onChangeSliderUwidePhysical(Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;I)Z
@@ -1402,8 +1764,8 @@
 
     return p0
 
-    .line 202
-    :pswitch_6
+    .line 218
+    :pswitch_8
     check-cast p2, Landroidx/lifecycle/LiveData;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->onChangeLensUiStateZoomEnabled(Landroidx/lifecycle/LiveData;I)Z
@@ -1412,8 +1774,8 @@
 
     return p0
 
-    .line 200
-    :pswitch_7
+    .line 216
+    :pswitch_9
     check-cast p2, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->onChangeSliderSuperTele(Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;I)Z
@@ -1422,8 +1784,8 @@
 
     return p0
 
-    .line 198
-    :pswitch_8
+    .line 214
+    :pswitch_a
     check-cast p2, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->onChangeSliderWidePhysicalHybridZoom(Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;I)Z
@@ -1432,8 +1794,8 @@
 
     return p0
 
-    .line 196
-    :pswitch_9
+    .line 212
+    :pswitch_b
     check-cast p2, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->onChangeSliderUwide(Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;I)Z
@@ -1442,8 +1804,8 @@
 
     return p0
 
-    .line 194
-    :pswitch_a
+    .line 210
+    :pswitch_c
     check-cast p2, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->onChangeSliderWide(Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;I)Z
@@ -1452,8 +1814,8 @@
 
     return p0
 
-    .line 192
-    :pswitch_b
+    .line 208
+    :pswitch_d
     check-cast p2, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->onChangeSliderTele(Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;I)Z
@@ -1466,6 +1828,8 @@
 
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_d
+        :pswitch_c
         :pswitch_b
         :pswitch_a
         :pswitch_9
@@ -1483,8 +1847,16 @@
 
 .method public setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "CameraSettingsModel"
+        }
+    .end annotation
 
-    .line 167
+    .line 181
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mCameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     return-void
@@ -1492,8 +1864,16 @@
 
 .method public setCameraStatusModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "CameraStatusModel"
+        }
+    .end annotation
 
-    .line 170
+    .line 184
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mCameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     return-void
@@ -1501,34 +1881,42 @@
 
 .method public setLensUiState(Ljp/co/sony/mc/camera/view/uistate/LensUiState;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "LensUiState"
+        }
+    .end annotation
 
-    .line 159
+    .line 173
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mLensUiState:Ljp/co/sony/mc/camera/view/uistate/LensUiState;
 
-    .line 160
+    .line 174
     monitor-enter p0
 
-    .line 161
+    .line 175
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v2, 0x2000
+    const-wide/32 v2, 0x8000
 
     or-long/2addr v0, v2
 
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mDirtyFlags:J
 
-    .line 162
+    .line 176
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x11
+    const/16 p1, 0x14
 
-    .line 163
+    .line 177
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->notifyPropertyChanged(I)V
 
-    .line 164
+    .line 178
     invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/ViewLensBinding;->requestRebind()V
 
     return-void
@@ -1536,7 +1924,7 @@
     :catchall_0
     move-exception p1
 
-    .line 162
+    .line 176
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -1547,56 +1935,74 @@
 
 .method public setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "lifecycleOwner"
+        }
+    .end annotation
 
-    .line 175
+    .line 189
     invoke-super {p0, p1}, Ljp/co/sony/mc/camera/databinding/ViewLensBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 176
+    .line 190
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderUwide:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 177
-    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderUwidePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
-
-    invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
-
-    .line 178
+    .line 191
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWide:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 179
-    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWidePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
-
-    invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
-
-    .line 180
+    .line 192
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWideHybridZoom:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 181
-    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWidePhysicalHybridZoom:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
-
-    invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
-
-    .line 182
+    .line 193
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderTele:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 183
-    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderTelePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+    .line 194
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderTeleHybridZoom:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 184
+    .line 195
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderSuperTele:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 185
+    .line 196
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderUwidePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
+
+    .line 197
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWidePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
+
+    .line 198
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderWidePhysicalHybridZoom:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
+
+    .line 199
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderTelePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
+
+    .line 200
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderTelePhysicalHybridZoom:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
+
+    invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
+
+    .line 201
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sliderSuperTelePhysical:Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
@@ -1606,8 +2012,16 @@
 
 .method public setOrientationViewModel(Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "OrientationViewModel"
+        }
+    .end annotation
 
-    .line 156
+    .line 170
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
     return-void
@@ -1615,12 +2029,22 @@
 
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "variableId",
+            "variable"
+        }
+    .end annotation
 
-    const/16 v0, 0x16
+    const/16 v0, 0x19
 
     if-ne v0, p1, :cond_0
 
-    .line 138
+    .line 152
     check-cast p2, Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->setOrientationViewModel(Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V
@@ -1628,11 +2052,11 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x11
+    const/16 v0, 0x14
 
     if-ne v0, p1, :cond_1
 
-    .line 141
+    .line 155
     check-cast p2, Ljp/co/sony/mc/camera/view/uistate/LensUiState;
 
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->setLensUiState(Ljp/co/sony/mc/camera/view/uistate/LensUiState;)V
@@ -1640,11 +2064,11 @@
     goto :goto_0
 
     :cond_1
-    const/16 v0, 0x8
+    const/16 v0, 0xb
 
     if-ne v0, p1, :cond_2
 
-    .line 144
+    .line 158
     check-cast p2, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
@@ -1652,11 +2076,11 @@
     goto :goto_0
 
     :cond_2
-    const/16 v0, 0x9
+    const/16 v0, 0xc
 
     if-ne v0, p1, :cond_3
 
-    .line 147
+    .line 161
     check-cast p2, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->setCameraStatusModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;)V

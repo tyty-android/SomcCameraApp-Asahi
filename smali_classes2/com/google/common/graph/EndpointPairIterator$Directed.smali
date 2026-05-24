@@ -27,6 +27,15 @@
 # direct methods
 .method private constructor <init>(Lcom/google/common/graph/BaseGraph;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "graph"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -37,7 +46,7 @@
 
     const/4 v0, 0x0
 
-    .line 68
+    .line 74
     invoke-direct {p0, p1, v0}, Lcom/google/common/graph/EndpointPairIterator;-><init>(Lcom/google/common/graph/BaseGraph;Lcom/google/common/graph/EndpointPairIterator$1;)V
 
     return-void
@@ -46,7 +55,7 @@
 .method synthetic constructor <init>(Lcom/google/common/graph/BaseGraph;Lcom/google/common/graph/EndpointPairIterator$1;)V
     .locals 0
 
-    .line 66
+    .line 72
     invoke-direct {p0, p1}, Lcom/google/common/graph/EndpointPairIterator$Directed;-><init>(Lcom/google/common/graph/BaseGraph;)V
 
     return-void
@@ -64,7 +73,10 @@
         }
     .end annotation
 
-    .line 74
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 81
     :cond_0
     iget-object v0, p0, Lcom/google/common/graph/EndpointPairIterator$Directed;->successorIterator:Ljava/util/Iterator;
 
@@ -74,8 +86,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 75
+    .line 83
     iget-object v0, p0, Lcom/google/common/graph/EndpointPairIterator$Directed;->node:Ljava/lang/Object;
+
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
 
     iget-object p0, p0, Lcom/google/common/graph/EndpointPairIterator$Directed;->successorIterator:Ljava/util/Iterator;
 
@@ -89,7 +105,7 @@
 
     return-object p0
 
-    .line 77
+    .line 85
     :cond_1
     invoke-virtual {p0}, Lcom/google/common/graph/EndpointPairIterator$Directed;->advance()Z
 
@@ -97,7 +113,7 @@
 
     if-nez v0, :cond_0
 
-    .line 78
+    .line 86
     invoke-virtual {p0}, Lcom/google/common/graph/EndpointPairIterator$Directed;->endOfData()Ljava/lang/Object;
 
     move-result-object p0
@@ -109,8 +125,10 @@
 
 .method protected bridge synthetic computeNext()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 
-    .line 66
+    .line 72
     invoke-virtual {p0}, Lcom/google/common/graph/EndpointPairIterator$Directed;->computeNext()Lcom/google/common/graph/EndpointPair;
 
     move-result-object p0

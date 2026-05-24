@@ -48,13 +48,21 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/ImmutableMultimap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 670
+    .line 786
     iput-object p1, p0, Lcom/google/common/collect/ImmutableMultimap$2;->this$0:Lcom/google/common/collect/ImmutableMultimap;
 
     invoke-direct {p0}, Lcom/google/common/collect/UnmodifiableIterator;-><init>()V
 
-    .line 671
+    .line 787
     iget-object p1, p1, Lcom/google/common/collect/ImmutableMultimap;->map:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {p1}, Lcom/google/common/collect/ImmutableMap;->values()Lcom/google/common/collect/ImmutableCollection;
@@ -67,7 +75,7 @@
 
     iput-object p1, p0, Lcom/google/common/collect/ImmutableMultimap$2;->valueCollectionItr:Ljava/util/Iterator;
 
-    .line 672
+    .line 788
     invoke-static {}, Lcom/google/common/collect/Iterators;->emptyIterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p1
@@ -82,7 +90,7 @@
 .method public hasNext()Z
     .locals 1
 
-    .line 676
+    .line 792
     iget-object v0, p0, Lcom/google/common/collect/ImmutableMultimap$2;->valueItr:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -122,7 +130,7 @@
         }
     .end annotation
 
-    .line 681
+    .line 797
     iget-object v0, p0, Lcom/google/common/collect/ImmutableMultimap$2;->valueItr:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -131,7 +139,7 @@
 
     if-nez v0, :cond_0
 
-    .line 682
+    .line 798
     iget-object v0, p0, Lcom/google/common/collect/ImmutableMultimap$2;->valueCollectionItr:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -146,7 +154,7 @@
 
     iput-object v0, p0, Lcom/google/common/collect/ImmutableMultimap$2;->valueItr:Ljava/util/Iterator;
 
-    .line 684
+    .line 800
     :cond_0
     iget-object p0, p0, Lcom/google/common/collect/ImmutableMultimap$2;->valueItr:Ljava/util/Iterator;
 

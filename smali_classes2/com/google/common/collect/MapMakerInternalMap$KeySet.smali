@@ -1,5 +1,5 @@
 .class final Lcom/google/common/collect/MapMakerInternalMap$KeySet;
-.super Lcom/google/common/collect/MapMakerInternalMap$SafeToArraySet;
+.super Ljava/util/AbstractSet;
 .source "MapMakerInternalMap.java"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/google/common/collect/MapMakerInternalMap$SafeToArraySet<",
+        "Ljava/util/AbstractSet<",
         "TK;>;"
     }
 .end annotation
@@ -28,13 +28,19 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/MapMakerInternalMap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 2684
+    .line 2732
     iput-object p1, p0, Lcom/google/common/collect/MapMakerInternalMap$KeySet;->this$0:Lcom/google/common/collect/MapMakerInternalMap;
 
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, Lcom/google/common/collect/MapMakerInternalMap$SafeToArraySet;-><init>(Lcom/google/common/collect/MapMakerInternalMap$1;)V
+    invoke-direct {p0}, Ljava/util/AbstractSet;-><init>()V
 
     return-void
 .end method
@@ -44,7 +50,7 @@
 .method public clear()V
     .locals 0
 
-    .line 2713
+    .line 2761
     iget-object p0, p0, Lcom/google/common/collect/MapMakerInternalMap$KeySet;->this$0:Lcom/google/common/collect/MapMakerInternalMap;
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap;->clear()V
@@ -54,8 +60,16 @@
 
 .method public contains(Ljava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 2703
+    .line 2751
     iget-object p0, p0, Lcom/google/common/collect/MapMakerInternalMap$KeySet;->this$0:Lcom/google/common/collect/MapMakerInternalMap;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/MapMakerInternalMap;->containsKey(Ljava/lang/Object;)Z
@@ -68,7 +82,7 @@
 .method public isEmpty()Z
     .locals 0
 
-    .line 2698
+    .line 2746
     iget-object p0, p0, Lcom/google/common/collect/MapMakerInternalMap$KeySet;->this$0:Lcom/google/common/collect/MapMakerInternalMap;
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap;->isEmpty()Z
@@ -88,7 +102,7 @@
         }
     .end annotation
 
-    .line 2688
+    .line 2736
     new-instance v0, Lcom/google/common/collect/MapMakerInternalMap$KeyIterator;
 
     iget-object p0, p0, Lcom/google/common/collect/MapMakerInternalMap$KeySet;->this$0:Lcom/google/common/collect/MapMakerInternalMap;
@@ -100,8 +114,16 @@
 
 .method public remove(Ljava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 2708
+    .line 2756
     iget-object p0, p0, Lcom/google/common/collect/MapMakerInternalMap$KeySet;->this$0:Lcom/google/common/collect/MapMakerInternalMap;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/MapMakerInternalMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
@@ -124,7 +146,7 @@
 .method public size()I
     .locals 0
 
-    .line 2693
+    .line 2741
     iget-object p0, p0, Lcom/google/common/collect/MapMakerInternalMap$KeySet;->this$0:Lcom/google/common/collect/MapMakerInternalMap;
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap;->size()I

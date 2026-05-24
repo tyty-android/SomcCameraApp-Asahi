@@ -3,36 +3,38 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function3;
+.implements Lkotlin/jvm/functions/Function2;
+
+
+# instance fields
+.field public final synthetic f$0:Ljava/util/List;
 
 
 # direct methods
-.method public synthetic constructor <init>()V
+.method public synthetic constructor <init>(Ljava/util/List;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/LensUiState$$ExternalSyntheticLambda6;->f$0:Ljava/util/List;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
-    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/LensUiState$$ExternalSyntheticLambda6;->f$0:Ljava/util/List;
 
-    check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;
+    check-cast p1, Lkotlin/Pair;
 
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
+    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;
 
-    invoke-static {p1, p2, p3}, Ljp/co/sony/mc/camera/view/uistate/LensUiState;->$r8$lambda$JT7De2dg0fLgF3V6n3gYsBwMnhg(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;)Z
-
-    move-result p0
-
-    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/uistate/LensUiState;->$r8$lambda$IxHbwHCBZmlcmq8wvY_8bBpfvkI(Ljava/util/List;Lkotlin/Pair;Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;)Lkotlin/Unit;
 
     move-result-object p0
 

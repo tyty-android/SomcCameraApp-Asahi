@@ -16,7 +16,23 @@
 
 # virtual methods
 .method public abstract onThumbnailClicked(Ljp/co/sony/mc/camera/view/contentsview/contents/Content;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "content"
+        }
+    .end annotation
 .end method
 
 .method public abstract onThumbnailCreated(Ljp/co/sony/mc/camera/view/contentsview/contents/Content;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "content"
+        }
+    .end annotation
 .end method

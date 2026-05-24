@@ -15,6 +15,8 @@
 
 
 # instance fields
+.field final synthetic this$0:Lcom/google/common/reflect/TypeResolver$TypeTable;
+
 .field final synthetic val$unguarded:Lcom/google/common/reflect/TypeResolver$TypeTable;
 
 .field final synthetic val$var:Ljava/lang/reflect/TypeVariable;
@@ -23,11 +25,25 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/reflect/TypeResolver$TypeTable;Ljava/lang/reflect/TypeVariable;Lcom/google/common/reflect/TypeResolver$TypeTable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$var",
+            "val$unguarded"
+        }
+    .end annotation
 
-    .line 304
+    .line 303
     iput-object p2, p0, Lcom/google/common/reflect/TypeResolver$TypeTable$1;->val$var:Ljava/lang/reflect/TypeVariable;
 
     iput-object p3, p0, Lcom/google/common/reflect/TypeResolver$TypeTable$1;->val$unguarded:Lcom/google/common/reflect/TypeResolver$TypeTable;
+
+    iput-object p1, p0, Lcom/google/common/reflect/TypeResolver$TypeTable$1;->this$0:Lcom/google/common/reflect/TypeResolver$TypeTable;
 
     invoke-direct {p0}, Lcom/google/common/reflect/TypeResolver$TypeTable;-><init>()V
 
@@ -38,6 +54,17 @@
 # virtual methods
 .method public resolveInternal(Ljava/lang/reflect/TypeVariable;Lcom/google/common/reflect/TypeResolver$TypeTable;)Ljava/lang/reflect/Type;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "intermediateVar",
+            "forDependent"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -49,7 +76,7 @@
         }
     .end annotation
 
-    .line 307
+    .line 306
     invoke-interface {p1}, Ljava/lang/reflect/TypeVariable;->getGenericDeclaration()Ljava/lang/reflect/GenericDeclaration;
 
     move-result-object v0
@@ -60,7 +87,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    invoke-interface {v0, v1}, Ljava/lang/reflect/GenericDeclaration;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -68,7 +95,7 @@
 
     return-object p1
 
-    .line 310
+    .line 309
     :cond_0
     iget-object p0, p0, Lcom/google/common/reflect/TypeResolver$TypeTable$1;->val$unguarded:Lcom/google/common/reflect/TypeResolver$TypeTable;
 

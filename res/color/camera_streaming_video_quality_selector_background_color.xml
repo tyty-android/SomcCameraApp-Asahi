@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_selected="true" android:color="@color/camera_streaming_mode_quick_setting_select_background_color" />
-    <item android:color="@color/camera_streaming_mode_video_quality_default_background_color" />
-</selector>

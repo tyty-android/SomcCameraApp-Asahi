@@ -30,11 +30,21 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/Multisets$4;Ljava/util/Iterator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$iterator1"
+        }
+    .end annotation
 
-    .line 601
-    iput-object p1, p0, Lcom/google/common/collect/Multisets$4$1;->this$0:Lcom/google/common/collect/Multisets$4;
-
+    .line 643
     iput-object p2, p0, Lcom/google/common/collect/Multisets$4$1;->val$iterator1:Ljava/util/Iterator;
+
+    iput-object p1, p0, Lcom/google/common/collect/Multisets$4$1;->this$0:Lcom/google/common/collect/Multisets$4;
 
     invoke-direct {p0}, Lcom/google/common/collect/AbstractIterator;-><init>()V
 
@@ -51,7 +61,10 @@
         }
     .end annotation
 
-    .line 604
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 647
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/Multisets$4$1;->val$iterator1:Ljava/util/Iterator;
 
@@ -61,7 +74,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 605
+    .line 648
     iget-object v0, p0, Lcom/google/common/collect/Multisets$4$1;->val$iterator1:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -70,12 +83,12 @@
 
     check-cast v0, Lcom/google/common/collect/Multiset$Entry;
 
-    .line 606
+    .line 649
     invoke-interface {v0}, Lcom/google/common/collect/Multiset$Entry;->getElement()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 607
+    .line 650
     invoke-interface {v0}, Lcom/google/common/collect/Multiset$Entry;->getCount()I
 
     move-result v0
@@ -92,7 +105,7 @@
 
     return-object v1
 
-    .line 611
+    .line 654
     :cond_1
     invoke-virtual {p0}, Lcom/google/common/collect/Multisets$4$1;->endOfData()Ljava/lang/Object;
 

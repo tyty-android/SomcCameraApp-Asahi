@@ -32,7 +32,7 @@
 
     check-cast p1, Landroid/view/ViewGroup$MarginLayoutParams;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;->$r8$lambda$_Aryssnd1cWnknM1XAHMf8wLKM0(ILandroid/view/ViewGroup$MarginLayoutParams;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;->$r8$lambda$LZbF9QkSoGmhsfNYE1oYaiFT5Qc(ILandroid/view/ViewGroup$MarginLayoutParams;)Lkotlin/Unit;
 
     move-result-object p0
 

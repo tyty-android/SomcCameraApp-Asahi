@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/RequestPermissionActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 692
     iput-object p1, p0, Ljp/co/sony/mc/camera/RequestPermissionActivity$4;->this$0:Ljp/co/sony/mc/camera/RequestPermissionActivity;
@@ -37,6 +45,14 @@
 # virtual methods
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "arg0"
+        }
+    .end annotation
 
     .line 695
     iget-object p0, p0, Ljp/co/sony/mc/camera/RequestPermissionActivity$4;->this$0:Ljp/co/sony/mc/camera/RequestPermissionActivity;

@@ -88,22 +88,6 @@
     return-wide v0
 .end method
 
-.method static bridge synthetic -$$Nest$fgetmTempDroppedRtmpFrames(Ljp/co/sony/mc/camera/util/FrameDropChecker;)J
-    .locals 2
-
-    iget-wide v0, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mTempDroppedRtmpFrames:J
-
-    return-wide v0
-.end method
-
-.method static bridge synthetic -$$Nest$fgetmTempTotalRtmpFrames(Ljp/co/sony/mc/camera/util/FrameDropChecker;)J
-    .locals 2
-
-    iget-wide v0, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mTempTotalRtmpFrames:J
-
-    return-wide v0
-.end method
-
 .method static bridge synthetic -$$Nest$fgetmTotalCameraFrames(Ljp/co/sony/mc/camera/util/FrameDropChecker;)J
     .locals 2
 
@@ -128,26 +112,10 @@
     return-void
 .end method
 
-.method static bridge synthetic -$$Nest$fputmTempDroppedRtmpFrames(Ljp/co/sony/mc/camera/util/FrameDropChecker;J)V
-    .locals 0
-
-    iput-wide p1, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mTempDroppedRtmpFrames:J
-
-    return-void
-.end method
-
-.method static bridge synthetic -$$Nest$fputmTempTotalRtmpFrames(Ljp/co/sony/mc/camera/util/FrameDropChecker;J)V
-    .locals 0
-
-    iput-wide p1, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mTempTotalRtmpFrames:J
-
-    return-void
-.end method
-
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 19
+    .line 17
     new-instance v0, Ljp/co/sony/mc/camera/util/FrameDropChecker;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/util/FrameDropChecker;-><init>()V
@@ -160,48 +128,48 @@
 .method private constructor <init>()V
     .locals 2
 
-    .line 74
+    .line 71
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/high16 v0, 0x41f00000    # 30.0f
 
-    .line 24
+    .line 22
     iput v0, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mCaptureRate:F
 
     const-wide/16 v0, 0x0
 
-    .line 26
+    .line 24
     iput-wide v0, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mFirstCameraFrameTimeUs:J
 
-    .line 27
+    .line 25
     iput-wide v0, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mLastCameraFrameTimeUs:J
 
-    .line 28
+    .line 26
     iput-wide v0, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mTempCameraFrameTimeUs:J
 
-    .line 29
+    .line 27
     iput-wide v0, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mTotalCameraFrames:J
 
-    .line 30
+    .line 28
     iput-wide v0, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mTempCameraFrames:J
 
-    .line 31
+    .line 29
     iput-wide v0, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mTempDroppedRtmpFrames:J
 
-    .line 32
+    .line 30
     iput-wide v0, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mTempTotalRtmpFrames:J
 
-    .line 75
+    .line 72
     new-instance v0, Landroid/os/HandlerThread;
 
     const-string v1, "FrameDropChecker"
 
     invoke-direct {v0, v1}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
 
-    .line 76
+    .line 73
     invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
 
-    .line 77
+    .line 74
     new-instance v1, Landroid/os/Handler;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
@@ -218,7 +186,7 @@
 .method public static getInstance()Ljp/co/sony/mc/camera/util/FrameDropChecker;
     .locals 1
 
-    .line 38
+    .line 36
     sget-object v0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->sInstance:Ljp/co/sony/mc/camera/util/FrameDropChecker;
 
     return-object v0
@@ -229,25 +197,25 @@
 
     const-wide/16 v0, 0x0
 
-    .line 81
+    .line 78
     iput-wide v0, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mFirstCameraFrameTimeUs:J
 
-    .line 82
+    .line 79
     iput-wide v0, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mLastCameraFrameTimeUs:J
 
-    .line 83
+    .line 80
     iput-wide v0, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mTempCameraFrameTimeUs:J
 
-    .line 84
+    .line 81
     iput-wide v0, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mTotalCameraFrames:J
 
-    .line 85
+    .line 82
     iput-wide v0, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mTempCameraFrames:J
 
-    .line 86
+    .line 83
     iput-wide v0, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mTempDroppedRtmpFrames:J
 
-    .line 87
+    .line 84
     iput-wide v0, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mTempTotalRtmpFrames:J
 
     return-void
@@ -255,28 +223,38 @@
 
 
 # virtual methods
-.method public startFrameDropMonitoring(ZF)V
+.method public startFrameDropMonitoring(F)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "captureRate"
+        }
+    .end annotation
 
-    .line 47
+    .line 44
     invoke-direct {p0}, Ljp/co/sony/mc/camera/util/FrameDropChecker;->resetParameters()V
 
-    .line 48
-    iput p2, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mCaptureRate:F
+    .line 45
+    iput p1, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mCaptureRate:F
 
-    .line 49
-    new-instance p2, Ljp/co/sony/mc/camera/util/FrameDropChecker$FrameDropCheckTask;
+    .line 46
+    new-instance p1, Ljp/co/sony/mc/camera/util/FrameDropChecker$FrameDropCheckTask;
 
-    invoke-direct {p2, p0, p1}, Ljp/co/sony/mc/camera/util/FrameDropChecker$FrameDropCheckTask;-><init>(Ljp/co/sony/mc/camera/util/FrameDropChecker;Z)V
+    const/4 v0, 0x0
 
-    iput-object p2, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mFrameDropCheckTask:Ljp/co/sony/mc/camera/util/FrameDropChecker$FrameDropCheckTask;
+    invoke-direct {p1, p0, v0}, Ljp/co/sony/mc/camera/util/FrameDropChecker$FrameDropCheckTask;-><init>(Ljp/co/sony/mc/camera/util/FrameDropChecker;Ljp/co/sony/mc/camera/util/FrameDropChecker$FrameDropCheckTask-IA;)V
 
-    .line 50
+    iput-object p1, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mFrameDropCheckTask:Ljp/co/sony/mc/camera/util/FrameDropChecker$FrameDropCheckTask;
+
+    .line 47
     iget-object p0, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mHandler:Landroid/os/Handler;
 
     const-wide/16 v0, 0x2710
 
-    invoke-virtual {p0, p2, v0, v1}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
+    invoke-virtual {p0, p1, v0, v1}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
     return-void
 .end method
@@ -284,7 +262,7 @@
 .method public stopFrameDropMonitoring()V
     .locals 2
 
-    .line 57
+    .line 54
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mHandler:Landroid/os/Handler;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mFrameDropCheckTask:Ljp/co/sony/mc/camera/util/FrameDropChecker$FrameDropCheckTask;
@@ -293,7 +271,7 @@
 
     const/4 v0, 0x0
 
-    .line 58
+    .line 55
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mFrameDropCheckTask:Ljp/co/sony/mc/camera/util/FrameDropChecker$FrameDropCheckTask;
 
     return-void
@@ -301,8 +279,16 @@
 
 .method public updateVideoFrameTimeUs(J)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "presentationTimeUs"
+        }
+    .end annotation
 
-    .line 66
+    .line 63
     iget-wide v0, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mFirstCameraFrameTimeUs:J
 
     const-wide/16 v2, 0x0
@@ -311,17 +297,17 @@
 
     if-nez v0, :cond_0
 
-    .line 67
+    .line 64
     iput-wide p1, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mFirstCameraFrameTimeUs:J
 
-    .line 68
+    .line 65
     iput-wide p1, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mTempCameraFrameTimeUs:J
 
-    .line 70
+    .line 67
     :cond_0
     iput-wide p1, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mLastCameraFrameTimeUs:J
 
-    .line 71
+    .line 68
     iget-wide p1, p0, Ljp/co/sony/mc/camera/util/FrameDropChecker;->mTotalCameraFrames:J
 
     const-wide/16 v0, 0x1

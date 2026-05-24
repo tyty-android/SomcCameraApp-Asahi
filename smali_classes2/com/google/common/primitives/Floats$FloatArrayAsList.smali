@@ -43,10 +43,18 @@
 # direct methods
 .method constructor <init>([F)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "array"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 524
+    .line 588
     array-length v1, p1
 
     invoke-direct {p0, p1, v0, v1}, Lcom/google/common/primitives/Floats$FloatArrayAsList;-><init>([FII)V
@@ -56,17 +64,29 @@
 
 .method constructor <init>([FII)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "array",
+            "start",
+            "end"
+        }
+    .end annotation
 
-    .line 527
+    .line 591
     invoke-direct {p0}, Ljava/util/AbstractList;-><init>()V
 
-    .line 528
+    .line 592
     iput-object p1, p0, Lcom/google/common/primitives/Floats$FloatArrayAsList;->array:[F
 
-    .line 529
+    .line 593
     iput p2, p0, Lcom/google/common/primitives/Floats$FloatArrayAsList;->start:I
 
-    .line 530
+    .line 594
     iput p3, p0, Lcom/google/common/primitives/Floats$FloatArrayAsList;->end:I
 
     return-void
@@ -76,8 +96,20 @@
 # virtual methods
 .method public contains(Ljava/lang/Object;)Z
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "target"
+        }
+    .end annotation
 
-    .line 552
+    .line 616
     instance-of v0, p1, Ljava/lang/Float;
 
     if-eqz v0, :cond_0
@@ -116,9 +148,17 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 7
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -126,21 +166,21 @@
 
     return v0
 
-    .line 603
+    .line 667
     :cond_0
     instance-of v1, p1, Lcom/google/common/primitives/Floats$FloatArrayAsList;
 
     if-eqz v1, :cond_4
 
-    .line 604
+    .line 668
     check-cast p1, Lcom/google/common/primitives/Floats$FloatArrayAsList;
 
-    .line 605
+    .line 669
     invoke-virtual {p0}, Lcom/google/common/primitives/Floats$FloatArrayAsList;->size()I
 
     move-result v1
 
-    .line 606
+    .line 670
     invoke-virtual {p1}, Lcom/google/common/primitives/Floats$FloatArrayAsList;->size()I
 
     move-result v2
@@ -157,7 +197,7 @@
     :goto_0
     if-ge v2, v1, :cond_3
 
-    .line 610
+    .line 674
     iget-object v4, p0, Lcom/google/common/primitives/Floats$FloatArrayAsList;->array:[F
 
     iget v5, p0, Lcom/google/common/primitives/Floats$FloatArrayAsList;->start:I
@@ -188,7 +228,7 @@
     :cond_3
     return v0
 
-    .line 616
+    .line 680
     :cond_4
     invoke-super {p0, p1}, Ljava/util/AbstractList;->equals(Ljava/lang/Object;)Z
 
@@ -199,15 +239,23 @@
 
 .method public get(I)Ljava/lang/Float;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
-    .line 545
+    .line 609
     invoke-virtual {p0}, Lcom/google/common/primitives/Floats$FloatArrayAsList;->size()I
 
     move-result v0
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkElementIndex(II)I
 
-    .line 546
+    .line 610
     iget-object v0, p0, Lcom/google/common/primitives/Floats$FloatArrayAsList;->array:[F
 
     iget p0, p0, Lcom/google/common/primitives/Floats$FloatArrayAsList;->start:I
@@ -225,8 +273,16 @@
 
 .method public bridge synthetic get(I)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "index"
+        }
+    .end annotation
 
-    .line 516
+    .line 580
     invoke-virtual {p0, p1}, Lcom/google/common/primitives/Floats$FloatArrayAsList;->get(I)Ljava/lang/Float;
 
     move-result-object p0
@@ -237,7 +293,7 @@
 .method public hashCode()I
     .locals 3
 
-    .line 622
+    .line 686
     iget v0, p0, Lcom/google/common/primitives/Floats$FloatArrayAsList;->start:I
 
     const/4 v1, 0x1
@@ -249,7 +305,7 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    .line 623
+    .line 687
     iget-object v2, p0, Lcom/google/common/primitives/Floats$FloatArrayAsList;->array:[F
 
     aget v2, v2, v0
@@ -270,13 +326,25 @@
 
 .method public indexOf(Ljava/lang/Object;)I
     .locals 3
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "target"
+        }
+    .end annotation
 
-    .line 558
+    .line 622
     instance-of v0, p1, Ljava/lang/Float;
 
     if-eqz v0, :cond_0
 
-    .line 559
+    .line 623
     iget-object v0, p0, Lcom/google/common/primitives/Floats$FloatArrayAsList;->array:[F
 
     check-cast p1, Ljava/lang/Float;
@@ -295,7 +363,7 @@
 
     if-ltz p1, :cond_0
 
-    .line 561
+    .line 625
     iget p0, p0, Lcom/google/common/primitives/Floats$FloatArrayAsList;->start:I
 
     sub-int/2addr p1, p0
@@ -318,13 +386,25 @@
 
 .method public lastIndexOf(Ljava/lang/Object;)I
     .locals 3
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "target"
+        }
+    .end annotation
 
-    .line 570
+    .line 634
     instance-of v0, p1, Ljava/lang/Float;
 
     if-eqz v0, :cond_0
 
-    .line 571
+    .line 635
     iget-object v0, p0, Lcom/google/common/primitives/Floats$FloatArrayAsList;->array:[F
 
     check-cast p1, Ljava/lang/Float;
@@ -343,7 +423,7 @@
 
     if-ltz p1, :cond_0
 
-    .line 573
+    .line 637
     iget p0, p0, Lcom/google/common/primitives/Floats$FloatArrayAsList;->start:I
 
     sub-int/2addr p1, p0
@@ -358,15 +438,25 @@
 
 .method public set(ILjava/lang/Float;)Ljava/lang/Float;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "element"
+        }
+    .end annotation
 
-    .line 581
+    .line 645
     invoke-virtual {p0}, Lcom/google/common/primitives/Floats$FloatArrayAsList;->size()I
 
     move-result v0
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkElementIndex(II)I
 
-    .line 582
+    .line 646
     iget-object v0, p0, Lcom/google/common/primitives/Floats$FloatArrayAsList;->array:[F
 
     iget p0, p0, Lcom/google/common/primitives/Floats$FloatArrayAsList;->start:I
@@ -377,7 +467,7 @@
 
     add-int/2addr p0, p1
 
-    .line 584
+    .line 648
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -390,7 +480,7 @@
 
     aput p1, v0, p0
 
-    .line 585
+    .line 649
     invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p0
@@ -400,8 +490,18 @@
 
 .method public bridge synthetic set(ILjava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "index",
+            "element"
+        }
+    .end annotation
 
-    .line 516
+    .line 580
     check-cast p2, Ljava/lang/Float;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/common/primitives/Floats$FloatArrayAsList;->set(ILjava/lang/Float;)Ljava/lang/Float;
@@ -414,7 +514,7 @@
 .method public size()I
     .locals 1
 
-    .line 535
+    .line 599
     iget v0, p0, Lcom/google/common/primitives/Floats$FloatArrayAsList;->end:I
 
     iget p0, p0, Lcom/google/common/primitives/Floats$FloatArrayAsList;->start:I
@@ -426,6 +526,17 @@
 
 .method public subList(II)Ljava/util/List;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromIndex",
+            "toIndex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -435,24 +546,24 @@
         }
     .end annotation
 
-    .line 590
+    .line 654
     invoke-virtual {p0}, Lcom/google/common/primitives/Floats$FloatArrayAsList;->size()I
 
     move-result v0
 
-    .line 591
+    .line 655
     invoke-static {p1, p2, v0}, Lcom/google/common/base/Preconditions;->checkPositionIndexes(III)V
 
     if-ne p1, p2, :cond_0
 
-    .line 593
+    .line 657
     invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     move-result-object p0
 
     return-object p0
 
-    .line 595
+    .line 659
     :cond_0
     new-instance v0, Lcom/google/common/primitives/Floats$FloatArrayAsList;
 
@@ -472,7 +583,7 @@
 .method toFloatArray()[F
     .locals 2
 
-    .line 639
+    .line 703
     iget-object v0, p0, Lcom/google/common/primitives/Floats$FloatArrayAsList;->array:[F
 
     iget v1, p0, Lcom/google/common/primitives/Floats$FloatArrayAsList;->start:I
@@ -489,7 +600,7 @@
 .method public toString()Ljava/lang/String;
     .locals 4
 
-    .line 630
+    .line 694
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-virtual {p0}, Lcom/google/common/primitives/Floats$FloatArrayAsList;->size()I
@@ -502,7 +613,7 @@
 
     const/16 v1, 0x5b
 
-    .line 631
+    .line 695
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     move-result-object v1
@@ -515,7 +626,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
-    .line 632
+    .line 696
     iget v1, p0, Lcom/google/common/primitives/Floats$FloatArrayAsList;->start:I
 
     :goto_0
@@ -525,7 +636,7 @@
 
     if-ge v1, v2, :cond_0
 
-    .line 633
+    .line 697
     const-string v2, ", "
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -543,7 +654,7 @@
     :cond_0
     const/16 p0, 0x5d
 
-    .line 635
+    .line 699
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     move-result-object p0

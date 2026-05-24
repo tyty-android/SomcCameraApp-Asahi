@@ -37,7 +37,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -47,6 +47,17 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/AbstractMapBasedMultimap;Ljava/util/SortedMap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "submap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -57,10 +68,10 @@
         }
     .end annotation
 
-    .line 1393
+    .line 1454
     iput-object p1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$SortedAsMap;->this$0:Lcom/google/common/collect/AbstractMapBasedMultimap;
 
-    .line 1394
+    .line 1455
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/AbstractMapBasedMultimap$AsMap;-><init>(Lcom/google/common/collect/AbstractMapBasedMultimap;Ljava/util/Map;)V
 
     return-void
@@ -78,7 +89,10 @@
         }
     .end annotation
 
-    .line 1403
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1465
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$SortedAsMap;->sortedMap()Ljava/util/SortedMap;
 
     move-result-object p0
@@ -93,7 +107,7 @@
 .method bridge synthetic createKeySet()Ljava/util/Set;
     .locals 0
 
-    .line 1391
+    .line 1452
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$SortedAsMap;->createKeySet()Ljava/util/SortedSet;
 
     move-result-object p0
@@ -111,7 +125,7 @@
         }
     .end annotation
 
-    .line 1443
+    .line 1508
     new-instance v0, Lcom/google/common/collect/AbstractMapBasedMultimap$SortedKeySet;
 
     iget-object v1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$SortedAsMap;->this$0:Lcom/google/common/collect/AbstractMapBasedMultimap;
@@ -127,13 +141,16 @@
 
 .method public firstKey()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TK;"
         }
     .end annotation
 
-    .line 1408
+    .line 1471
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$SortedAsMap;->sortedMap()Ljava/util/SortedMap;
 
     move-result-object p0
@@ -147,6 +164,19 @@
 
 .method public headMap(Ljava/lang/Object;)Ljava/util/SortedMap;
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "toKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -157,7 +187,7 @@
         }
     .end annotation
 
-    .line 1418
+    .line 1482
     new-instance v0, Lcom/google/common/collect/AbstractMapBasedMultimap$SortedAsMap;
 
     iget-object v1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$SortedAsMap;->this$0:Lcom/google/common/collect/AbstractMapBasedMultimap;
@@ -178,7 +208,7 @@
 .method public bridge synthetic keySet()Ljava/util/Set;
     .locals 0
 
-    .line 1391
+    .line 1452
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$SortedAsMap;->keySet()Ljava/util/SortedSet;
 
     move-result-object p0
@@ -196,12 +226,12 @@
         }
     .end annotation
 
-    .line 1437
+    .line 1502
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$SortedAsMap;->sortedKeySet:Ljava/util/SortedSet;
 
     if-nez v0, :cond_0
 
-    .line 1438
+    .line 1503
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$SortedAsMap;->createKeySet()Ljava/util/SortedSet;
 
     move-result-object v0
@@ -214,13 +244,16 @@
 
 .method public lastKey()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TK;"
         }
     .end annotation
 
-    .line 1413
+    .line 1477
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$SortedAsMap;->sortedMap()Ljava/util/SortedMap;
 
     move-result-object p0
@@ -244,7 +277,7 @@
         }
     .end annotation
 
-    .line 1398
+    .line 1459
     iget-object p0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$SortedAsMap;->submap:Ljava/util/Map;
 
     check-cast p0, Ljava/util/SortedMap;
@@ -254,6 +287,25 @@
 
 .method public subMap(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedMap;
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromKey",
+            "toKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TK;)",
@@ -264,7 +316,7 @@
         }
     .end annotation
 
-    .line 1423
+    .line 1488
     new-instance v0, Lcom/google/common/collect/AbstractMapBasedMultimap$SortedAsMap;
 
     iget-object v1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$SortedAsMap;->this$0:Lcom/google/common/collect/AbstractMapBasedMultimap;
@@ -284,6 +336,19 @@
 
 .method public tailMap(Ljava/lang/Object;)Ljava/util/SortedMap;
     .locals 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fromKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)",
@@ -294,7 +359,7 @@
         }
     .end annotation
 
-    .line 1428
+    .line 1493
     new-instance v0, Lcom/google/common/collect/AbstractMapBasedMultimap$SortedAsMap;
 
     iget-object v1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$SortedAsMap;->this$0:Lcom/google/common/collect/AbstractMapBasedMultimap;

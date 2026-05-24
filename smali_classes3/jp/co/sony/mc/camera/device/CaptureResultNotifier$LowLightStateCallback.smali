@@ -16,4 +16,12 @@
 
 # virtual methods
 .method public abstract onLowLightStateChanged(Z)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isActive"
+        }
+    .end annotation
 .end method

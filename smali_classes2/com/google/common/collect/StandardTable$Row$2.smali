@@ -22,15 +22,29 @@
 
 
 # instance fields
+.field final synthetic this$1:Lcom/google/common/collect/StandardTable$Row;
+
 .field final synthetic val$entry:Ljava/util/Map$Entry;
 
 
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/StandardTable$Row;Ljava/util/Map$Entry;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$1",
+            "val$entry"
+        }
+    .end annotation
 
-    .line 370
+    .line 411
     iput-object p2, p0, Lcom/google/common/collect/StandardTable$Row$2;->val$entry:Ljava/util/Map$Entry;
+
+    iput-object p1, p0, Lcom/google/common/collect/StandardTable$Row$2;->this$1:Lcom/google/common/collect/StandardTable$Row;
 
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingMapEntry;-><init>()V
 
@@ -42,7 +56,7 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 370
+    .line 411
     invoke-virtual {p0}, Lcom/google/common/collect/StandardTable$Row$2;->delegate()Ljava/util/Map$Entry;
 
     move-result-object p0
@@ -60,7 +74,7 @@
         }
     .end annotation
 
-    .line 373
+    .line 414
     iget-object p0, p0, Lcom/google/common/collect/StandardTable$Row$2;->val$entry:Ljava/util/Map$Entry;
 
     return-object p0
@@ -68,8 +82,20 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "object"
+        }
+    .end annotation
 
-    .line 384
+    .line 425
     invoke-virtual {p0, p1}, Lcom/google/common/collect/StandardTable$Row$2;->standardEquals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -79,13 +105,22 @@
 
 .method public setValue(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TV;)TV;"
         }
     .end annotation
 
-    .line 378
+    .line 419
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1

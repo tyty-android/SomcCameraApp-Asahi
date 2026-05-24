@@ -16,32 +16,11 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000v\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u000f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010 \n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u001a$\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u000c\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00010\u0005H\u0082\u0008\u00a2\u0006\u0002\u0008\u0006\u001a\u001d\u0010\u0007\u001a\u00020\u00012\u0006\u0010\u0008\u001a\u00020\t2\u0006\u0010\u0002\u001a\u00020\u0003H\u0002\u00a2\u0006\u0002\u0008\n\u001a\'\u0010\u000b\u001a\u00020\u00012\u0006\u0010\u000c\u001a\u00020\t2\u0008\u0010\r\u001a\u0004\u0018\u00010\t2\u0006\u0010\u0002\u001a\u00020\u0003H\u0002\u00a2\u0006\u0002\u0008\u000e\u001a&\u0010\u000f\u001a\u0004\u0018\u0001H\u0010\"\u0004\u0008\u0000\u0010\u00102\u000c\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u0002H\u00100\u0005H\u0082\u0008\u00a2\u0006\u0004\u0008\u0011\u0010\u0012\u001a\u000c\u0010\u0013\u001a\u00020\u0001*\u00020\tH\u0000\u001a\u0019\u0010\u0014\u001a\u00020\u0001*\u00020\t2\u0006\u0010\r\u001a\u00020\tH\u0002\u00a2\u0006\u0002\u0008\u0015\u001aw\u0010\u0016\u001a\u00020\t*\u00020\t2\u0006\u0010\u0017\u001a\u00020\t2Q\u0008\u0002\u0010\u0018\u001aK\u0012\u0013\u0012\u00110\t\u00a2\u0006\u000c\u0008\u001a\u0012\u0008\u0008\u001b\u0012\u0004\u0008\u0008(\u001c\u0012\u0013\u0012\u00110\t\u00a2\u0006\u000c\u0008\u001a\u0012\u0008\u0008\u001b\u0012\u0004\u0008\u0008(\u0017\u0012\u0017\u0012\u00150\u001dj\u0002`\u001e\u00a2\u0006\u000c\u0008\u001a\u0012\u0008\u0008\u001b\u0012\u0004\u0008\u0008(\u001f\u0012\u0004\u0012\u00020 0\u00192\u0006\u0010!\u001a\u00020\"2\u0006\u0010#\u001a\u00020\"H\u0007\u001a\u00b4\u0001\u0010\u0016\u001a\u00020\t*\u00020\t2\u0006\u0010\u0017\u001a\u00020\t2Q\u0008\u0002\u0010\u0018\u001aK\u0012\u0013\u0012\u00110\t\u00a2\u0006\u000c\u0008\u001a\u0012\u0008\u0008\u001b\u0012\u0004\u0008\u0008(\u001c\u0012\u0013\u0012\u00110\t\u00a2\u0006\u000c\u0008\u001a\u0012\u0008\u0008\u001b\u0012\u0004\u0008\u0008(\u0017\u0012\u0017\u0012\u00150\u001dj\u0002`\u001e\u00a2\u0006\u000c\u0008\u001a\u0012\u0008\u0008\u001b\u0012\u0004\u0008\u0008(\u001f\u0012\u0004\u0012\u00020 0\u00192\u0006\u0010!\u001a\u00020\"2C\u0008\u0002\u0010$\u001a=\u0012\u0004\u0012\u00020%\u0012\u0013\u0012\u00110\t\u00a2\u0006\u000c\u0008\u001a\u0012\u0008\u0008\u001b\u0012\u0004\u0008\u0008(\u001c\u0012\u0013\u0012\u00110\t\u00a2\u0006\u000c\u0008\u001a\u0012\u0008\u0008\u001b\u0012\u0004\u0008\u0008(\u0017\u0012\u0004\u0012\u00020&0\u0019\u00a2\u0006\u0002\u0008\'H\u0007\u001a\u000c\u0010(\u001a\u00020\u0001*\u00020\tH\u0007\u001a\u001b\u0010)\u001a\u000c\u0012\u0008\u0012\u00060\u001dj\u0002`\u001e0**\u00020\tH\u0002\u00a2\u0006\u0002\u0008+\u001a\'\u0010,\u001a\u00020\u0001*\u0008\u0012\u0004\u0012\u00020\t0-2\u0006\u0010\u001b\u001a\u00020\t2\u0006\u0010\u0002\u001a\u00020\u0003H\u0002\u00a2\u0006\u0002\u0008.\u001a1\u0010/\u001a\u00020\u0001*\u0008\u0012\u0004\u0012\u00020\t0-2\u0006\u0010\u001b\u001a\u00020\t2\u0008\u0010\r\u001a\u0004\u0018\u00010\t2\u0006\u0010\u0002\u001a\u00020\u0003H\u0002\u00a2\u0006\u0002\u00080\u001a5\u00101\u001a\u00020\"*\u0008\u0012\u0004\u0012\u00020\t0-2\u0006\u00102\u001a\u00020\t2\u0012\u00103\u001a\n\u0012\u0006\u0008\u0001\u0012\u00020504\"\u000205H\u0002\u00a2\u0006\u0004\u00086\u00107\u001a\u0011\u00108\u001a\u000209*\u00020&H\u0003\u00a2\u0006\u0002\u0008:\u001a\u0011\u00108\u001a\u000209*\u00020 H\u0003\u00a2\u0006\u0002\u0008:\u00a8\u0006;"
+        "\u0000t\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\u0008\u000c\u001aw\u0010\u0000\u001a\u00020\u0001*\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00012Q\u0008\u0002\u0010\u0003\u001aK\u0012\u0013\u0012\u00110\u0001\u00a2\u0006\u000c\u0008\u0005\u0012\u0008\u0008\u0006\u0012\u0004\u0008\u0008(\u0007\u0012\u0013\u0012\u00110\u0001\u00a2\u0006\u000c\u0008\u0005\u0012\u0008\u0008\u0006\u0012\u0004\u0008\u0008(\u0002\u0012\u0017\u0012\u00150\u0008j\u0002`\n\u00a2\u0006\u000c\u0008\u0005\u0012\u0008\u0008\u0006\u0012\u0004\u0008\u0008(\t\u0012\u0004\u0012\u00020\u000b0\u00042\u0006\u0010\u000c\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\rH\u0007\u001a\u00b4\u0001\u0010\u0000\u001a\u00020\u0001*\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00012Q\u0008\u0002\u0010\u0003\u001aK\u0012\u0013\u0012\u00110\u0001\u00a2\u0006\u000c\u0008\u0005\u0012\u0008\u0008\u0006\u0012\u0004\u0008\u0008(\u0007\u0012\u0013\u0012\u00110\u0001\u00a2\u0006\u000c\u0008\u0005\u0012\u0008\u0008\u0006\u0012\u0004\u0008\u0008(\u0002\u0012\u0017\u0012\u00150\u0008j\u0002`\n\u00a2\u0006\u000c\u0008\u0005\u0012\u0008\u0008\u0006\u0012\u0004\u0008\u0008(\t\u0012\u0004\u0012\u00020\u000b0\u00042\u0006\u0010\u000c\u001a\u00020\r2C\u0008\u0002\u0010\u000f\u001a=\u0012\u0004\u0012\u00020\u0010\u0012\u0013\u0012\u00110\u0001\u00a2\u0006\u000c\u0008\u0005\u0012\u0008\u0008\u0006\u0012\u0004\u0008\u0008(\u0007\u0012\u0013\u0012\u00110\u0001\u00a2\u0006\u000c\u0008\u0005\u0012\u0008\u0008\u0006\u0012\u0004\u0008\u0008(\u0002\u0012\u0004\u0012\u00020\u00110\u0004\u00a2\u0006\u0002\u0008\u0012H\u0007\u001a\u0011\u0010\u0013\u001a\u00020\u0014*\u00020\u0011H\u0003\u00a2\u0006\u0002\u0008\u0015\u001a\u0011\u0010\u0013\u001a\u00020\u0014*\u00020\u000bH\u0003\u00a2\u0006\u0002\u0008\u0015\u001a\u000c\u0010\u0016\u001a\u00020\u0017*\u00020\u0001H\u0007\u001a\u001b\u0010\u0018\u001a\u000c\u0012\u0008\u0012\u00060\u0008j\u0002`\n0\u0019*\u00020\u0001H\u0002\u00a2\u0006\u0002\u0008\u001a\u001a$\u0010\u001b\u001a\u00020\u00172\u0006\u0010\u001c\u001a\u00020\u001d2\u000c\u0010\u001e\u001a\u0008\u0012\u0004\u0012\u00020\u00170\u001fH\u0082\u0008\u00a2\u0006\u0002\u0008 \u001a&\u0010!\u001a\u0004\u0018\u0001H\"\"\u0004\u0008\u0000\u0010\"2\u000c\u0010\u001e\u001a\u0008\u0012\u0004\u0012\u0002H\"0\u001fH\u0082\u0008\u00a2\u0006\u0004\u0008#\u0010$\u001a1\u0010%\u001a\u00020\u0017*\u0008\u0012\u0004\u0012\u00020\u00010&2\u0006\u0010\u0006\u001a\u00020\u00012\u0008\u0010\'\u001a\u0004\u0018\u00010\u00012\u0006\u0010\u001c\u001a\u00020\u001dH\u0002\u00a2\u0006\u0002\u0008(\u001a\'\u0010)\u001a\u00020\u0017*\u0008\u0012\u0004\u0012\u00020\u00010&2\u0006\u0010\u0006\u001a\u00020\u00012\u0006\u0010\u001c\u001a\u00020\u001dH\u0002\u00a2\u0006\u0002\u0008*\u001a5\u0010+\u001a\u00020\r*\u0008\u0012\u0004\u0012\u00020\u00010&2\u0006\u0010,\u001a\u00020\u00012\u0012\u0010-\u001a\n\u0012\u0006\u0008\u0001\u0012\u00020/0.\"\u00020/H\u0002\u00a2\u0006\u0004\u00080\u00101\u001a\'\u00102\u001a\u00020\u00172\u0006\u00103\u001a\u00020\u00012\u0008\u0010\'\u001a\u0004\u0018\u00010\u00012\u0006\u0010\u001c\u001a\u00020\u001dH\u0002\u00a2\u0006\u0002\u00084\u001a\u001d\u00105\u001a\u00020\u00172\u0006\u00106\u001a\u00020\u00012\u0006\u0010\u001c\u001a\u00020\u001dH\u0002\u00a2\u0006\u0002\u00087\u001a\u000c\u00108\u001a\u00020\u0017*\u00020\u0001H\u0000\u001a\u0019\u00109\u001a\u00020\u0017*\u00020\u00012\u0006\u0010\'\u001a\u00020\u0001H\u0002\u00a2\u0006\u0002\u0008:\u00a8\u0006;"
     }
     d2 = {
-        "collectIfThrows",
-        "",
-        "collector",
-        "Lkotlin/io/path/ExceptionsCollector;",
-        "function",
-        "Lkotlin/Function0;",
-        "collectIfThrows$PathsKt__PathRecursiveFunctionsKt",
-        "insecureEnterDirectory",
-        "path",
-        "Ljava/nio/file/Path;",
-        "insecureEnterDirectory$PathsKt__PathRecursiveFunctionsKt",
-        "insecureHandleEntry",
-        "entry",
-        "parent",
-        "insecureHandleEntry$PathsKt__PathRecursiveFunctionsKt",
-        "tryIgnoreNoSuchFileException",
-        "R",
-        "tryIgnoreNoSuchFileException$PathsKt__PathRecursiveFunctionsKt",
-        "(Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;",
-        "checkFileName",
-        "checkNotSameAs",
-        "checkNotSameAs$PathsKt__PathRecursiveFunctionsKt",
         "copyToRecursively",
+        "Ljava/nio/file/Path;",
         "target",
         "onError",
         "Lkotlin/Function3;",
@@ -49,8 +28,8 @@
         "name",
         "source",
         "Ljava/lang/Exception;",
-        "Lkotlin/Exception;",
         "exception",
+        "Lkotlin/Exception;",
         "Lkotlin/io/path/OnErrorResult;",
         "followLinks",
         "",
@@ -59,15 +38,30 @@
         "Lkotlin/io/path/CopyActionContext;",
         "Lkotlin/io/path/CopyActionResult;",
         "Lkotlin/ExtensionFunctionType;",
+        "toFileVisitResult",
+        "Ljava/nio/file/FileVisitResult;",
+        "toFileVisitResult$PathsKt__PathRecursiveFunctionsKt",
         "deleteRecursively",
+        "",
         "deleteRecursivelyImpl",
         "",
         "deleteRecursivelyImpl$PathsKt__PathRecursiveFunctionsKt",
-        "enterDirectory",
-        "Ljava/nio/file/SecureDirectoryStream;",
-        "enterDirectory$PathsKt__PathRecursiveFunctionsKt",
+        "collectIfThrows",
+        "collector",
+        "Lkotlin/io/path/ExceptionsCollector;",
+        "function",
+        "Lkotlin/Function0;",
+        "collectIfThrows$PathsKt__PathRecursiveFunctionsKt",
+        "tryIgnoreNoSuchFileException",
+        "R",
+        "tryIgnoreNoSuchFileException$PathsKt__PathRecursiveFunctionsKt",
+        "(Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;",
         "handleEntry",
+        "Ljava/nio/file/SecureDirectoryStream;",
+        "parent",
         "handleEntry$PathsKt__PathRecursiveFunctionsKt",
+        "enterDirectory",
+        "enterDirectory$PathsKt__PathRecursiveFunctionsKt",
         "isDirectory",
         "entryName",
         "options",
@@ -75,15 +69,21 @@
         "Ljava/nio/file/LinkOption;",
         "isDirectory$PathsKt__PathRecursiveFunctionsKt",
         "(Ljava/nio/file/SecureDirectoryStream;Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Z",
-        "toFileVisitResult",
-        "Ljava/nio/file/FileVisitResult;",
-        "toFileVisitResult$PathsKt__PathRecursiveFunctionsKt",
+        "insecureHandleEntry",
+        "entry",
+        "insecureHandleEntry$PathsKt__PathRecursiveFunctionsKt",
+        "insecureEnterDirectory",
+        "path",
+        "insecureEnterDirectory$PathsKt__PathRecursiveFunctionsKt",
+        "checkFileName",
+        "checkNotSameAs",
+        "checkNotSameAs$PathsKt__PathRecursiveFunctionsKt",
         "kotlin-stdlib-jdk7"
     }
     k = 0x5
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x31
@@ -92,6 +92,56 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$3VYkoVP17knpGuiVw5BoXBQ_zc8(ZLkotlin/io/path/CopyActionContext;Ljava/nio/file/Path;Ljava/nio/file/Path;)Lkotlin/io/path/CopyActionResult;
+    .locals 0
+
+    invoke-static {p0, p1, p2, p3}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt;->copyToRecursively$lambda$1$PathsKt__PathRecursiveFunctionsKt(ZLkotlin/io/path/CopyActionContext;Ljava/nio/file/Path;Ljava/nio/file/Path;)Lkotlin/io/path/CopyActionResult;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$Dn4FOAPbjNDFACiW2KdbJH8lJzc(Ljava/util/ArrayList;Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/io/IOException;)Ljava/nio/file/FileVisitResult;
+    .locals 0
+
+    invoke-static/range {p0 .. p6}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt;->copyToRecursively$lambda$6$lambda$5$PathsKt__PathRecursiveFunctionsKt(Ljava/util/ArrayList;Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/io/IOException;)Ljava/nio/file/FileVisitResult;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$QF8Uhuq7fTQtpHX-cuQgT1yM3No(Ljava/util/ArrayList;Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;Lkotlin/jvm/functions/Function3;Lkotlin/io/path/FileVisitorBuilder;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static/range {p0 .. p6}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt;->copyToRecursively$lambda$6$PathsKt__PathRecursiveFunctionsKt(Ljava/util/ArrayList;Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;Lkotlin/jvm/functions/Function3;Lkotlin/io/path/FileVisitorBuilder;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$r0l1pONWwls6V3X1jucrTqZKxjo(ZLkotlin/io/path/CopyActionContext;Ljava/nio/file/Path;Ljava/nio/file/Path;)Lkotlin/io/path/CopyActionResult;
+    .locals 0
+
+    invoke-static {p0, p1, p2, p3}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt;->copyToRecursively$lambda$0$PathsKt__PathRecursiveFunctionsKt(ZLkotlin/io/path/CopyActionContext;Ljava/nio/file/Path;Ljava/nio/file/Path;)Lkotlin/io/path/CopyActionResult;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$vrBef6cHhs3oA22HfQBDeNxsJGA(Ljava/util/ArrayList;Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;
+    .locals 0
+
+    invoke-static/range {p0 .. p7}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt;->copyToRecursively$lambda$6$lambda$4$PathsKt__PathRecursiveFunctionsKt(Ljava/util/ArrayList;Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public constructor <init>()V
     .locals 0
 
@@ -571,7 +621,7 @@
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     .line 234
-    new-instance v7, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$5;
+    new-instance v7, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$$ExternalSyntheticLambda2;
 
     move-object v0, v7
 
@@ -583,11 +633,7 @@
 
     move-object v6, p2
 
-    invoke-direct/range {v0 .. v6}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$5;-><init>(Ljava/util/ArrayList;Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;Lkotlin/jvm/functions/Function3;)V
-
-    move-object v3, v7
-
-    check-cast v3, Lkotlin/jvm/functions/Function1;
+    invoke-direct/range {v0 .. v6}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$$ExternalSyntheticLambda2;-><init>(Ljava/util/ArrayList;Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;Lkotlin/jvm/functions/Function3;)V
 
     const/4 v4, 0x1
 
@@ -598,6 +644,8 @@
     move-object v0, p0
 
     move v2, p3
+
+    move-object v3, v7
 
     invoke-static/range {v0 .. v5}, Lkotlin/io/path/PathsKt;->visitFileTree$default(Ljava/nio/file/Path;IZLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
 
@@ -658,11 +706,9 @@
     if-eqz p4, :cond_0
 
     .line 81
-    new-instance p4, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$2;
+    new-instance p4, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$$ExternalSyntheticLambda1;
 
-    invoke-direct {p4, p3}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$2;-><init>(Z)V
-
-    check-cast p4, Lkotlin/jvm/functions/Function3;
+    invoke-direct {p4, p3}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$$ExternalSyntheticLambda1;-><init>(Z)V
 
     invoke-static {p0, p1, p2, p3, p4}, Lkotlin/io/path/PathsKt;->copyToRecursively(Ljava/nio/file/Path;Ljava/nio/file/Path;Lkotlin/jvm/functions/Function3;ZLkotlin/jvm/functions/Function3;)Ljava/nio/file/Path;
 
@@ -756,6 +802,10 @@
 
     move-result-object p0
 
+    const-string p7, "last(...)"
+
+    invoke-static {p0, p7}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
     check-cast p0, Ljava/nio/file/Path;
 
     invoke-static {p6, p0}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt;->checkNotSameAs$PathsKt__PathRecursiveFunctionsKt(Ljava/nio/file/Path;Ljava/nio/file/Path;)V
@@ -824,13 +874,11 @@
     if-eqz p5, :cond_1
 
     .line 163
-    new-instance p4, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$4;
+    new-instance p4, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$$ExternalSyntheticLambda0;
 
-    invoke-direct {p4, p3}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$4;-><init>(Z)V
+    invoke-direct {p4, p3}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$$ExternalSyntheticLambda0;-><init>(Z)V
 
-    check-cast p4, Lkotlin/jvm/functions/Function3;
-
-    .line 159
+    .line 157
     :cond_1
     invoke-static {p0, p1, p2, p3, p4}, Lkotlin/io/path/PathsKt;->copyToRecursively(Ljava/nio/file/Path;Ljava/nio/file/Path;Lkotlin/jvm/functions/Function3;ZLkotlin/jvm/functions/Function3;)Ljava/nio/file/Path;
 
@@ -851,7 +899,7 @@
 
     check-cast p2, Lkotlin/jvm/functions/Function3;
 
-    .line 74
+    .line 72
     :cond_0
     invoke-static {p0, p1, p2, p3, p4}, Lkotlin/io/path/PathsKt;->copyToRecursively(Ljava/nio/file/Path;Ljava/nio/file/Path;Lkotlin/jvm/functions/Function3;ZZ)Ljava/nio/file/Path;
 
@@ -946,6 +994,295 @@
 
     move-result-object p0
 
+    return-object p0
+.end method
+
+.method private static final copyToRecursively$lambda$0$PathsKt__PathRecursiveFunctionsKt(ZLkotlin/io/path/CopyActionContext;Ljava/nio/file/Path;Ljava/nio/file/Path;)Lkotlin/io/path/CopyActionResult;
+    .locals 3
+
+    const-string v0, "$this$copyToRecursively"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string/jumbo p1, "src"
+
+    invoke-static {p2, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string p1, "dst"
+
+    invoke-static {p3, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 82
+    sget-object p1, Lkotlin/io/path/LinkFollowing;->INSTANCE:Lkotlin/io/path/LinkFollowing;
+
+    invoke-virtual {p1, p0}, Lkotlin/io/path/LinkFollowing;->toLinkOptions(Z)[Ljava/nio/file/LinkOption;
+
+    move-result-object p0
+
+    const/4 p1, 0x1
+
+    .line 83
+    new-array v0, p1, [Ljava/nio/file/LinkOption;
+
+    const/4 v1, 0x0
+
+    sget-object v2, Ljava/nio/file/LinkOption;->NOFOLLOW_LINKS:Ljava/nio/file/LinkOption;
+
+    aput-object v2, v0, v1
+
+    invoke-static {v0, p1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, [Ljava/nio/file/LinkOption;
+
+    invoke-static {p3, p1}, Ljava/nio/file/Files;->isDirectory(Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Z
+
+    move-result p1
+
+    .line 84
+    array-length v0, p0
+
+    invoke-static {p0, v0}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [Ljava/nio/file/LinkOption;
+
+    array-length v1, v0
+
+    invoke-static {v0, v1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [Ljava/nio/file/LinkOption;
+
+    invoke-static {p2, v0}, Ljava/nio/file/Files;->isDirectory(Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    if-nez p1, :cond_2
+
+    :cond_0
+    if-eqz p1, :cond_1
+
+    .line 87
+    invoke-static {p3}, Lkotlin/io/path/PathsKt;->deleteRecursively(Ljava/nio/file/Path;)V
+
+    .line 89
+    :cond_1
+    new-instance p1, Lkotlin/jvm/internal/SpreadBuilder;
+
+    const/4 v0, 0x2
+
+    invoke-direct {p1, v0}, Lkotlin/jvm/internal/SpreadBuilder;-><init>(I)V
+
+    invoke-virtual {p1, p0}, Lkotlin/jvm/internal/SpreadBuilder;->addSpread(Ljava/lang/Object;)V
+
+    sget-object p0, Ljava/nio/file/StandardCopyOption;->REPLACE_EXISTING:Ljava/nio/file/StandardCopyOption;
+
+    invoke-virtual {p1, p0}, Lkotlin/jvm/internal/SpreadBuilder;->add(Ljava/lang/Object;)V
+
+    invoke-virtual {p1}, Lkotlin/jvm/internal/SpreadBuilder;->size()I
+
+    move-result p0
+
+    new-array p0, p0, [Ljava/nio/file/CopyOption;
+
+    invoke-virtual {p1, p0}, Lkotlin/jvm/internal/SpreadBuilder;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, [Ljava/nio/file/CopyOption;
+
+    array-length p1, p0
+
+    invoke-static {p0, p1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, [Ljava/nio/file/CopyOption;
+
+    invoke-static {p2, p3, p0}, Ljava/nio/file/Files;->copy(Ljava/nio/file/Path;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)Ljava/nio/file/Path;
+
+    move-result-object p0
+
+    const-string p1, "copy(...)"
+
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 93
+    :cond_2
+    sget-object p0, Lkotlin/io/path/CopyActionResult;->CONTINUE:Lkotlin/io/path/CopyActionResult;
+
+    return-object p0
+.end method
+
+.method private static final copyToRecursively$lambda$1$PathsKt__PathRecursiveFunctionsKt(ZLkotlin/io/path/CopyActionContext;Ljava/nio/file/Path;Ljava/nio/file/Path;)Lkotlin/io/path/CopyActionResult;
+    .locals 1
+
+    const-string v0, "<this>"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string/jumbo v0, "src"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "dst"
+
+    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 164
+    invoke-interface {p1, p2, p3, p0}, Lkotlin/io/path/CopyActionContext;->copyToIgnoringExistingDirectory(Ljava/nio/file/Path;Ljava/nio/file/Path;Z)Lkotlin/io/path/CopyActionResult;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method private static final copyToRecursively$lambda$6$PathsKt__PathRecursiveFunctionsKt(Ljava/util/ArrayList;Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;Lkotlin/jvm/functions/Function3;Lkotlin/io/path/FileVisitorBuilder;)Lkotlin/Unit;
+    .locals 8
+
+    const-string v0, "$this$visitFileTree"
+
+    invoke-static {p6, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 235
+    new-instance v0, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$$ExternalSyntheticLambda3;
+
+    move-object v1, v0
+
+    move-object v2, p0
+
+    move-object v3, p1
+
+    move-object v4, p2
+
+    move-object v5, p3
+
+    move-object v6, p4
+
+    move-object v7, p5
+
+    invoke-direct/range {v1 .. v7}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$$ExternalSyntheticLambda3;-><init>(Ljava/util/ArrayList;Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;Lkotlin/jvm/functions/Function3;)V
+
+    invoke-interface {p6, v0}, Lkotlin/io/path/FileVisitorBuilder;->onPreVisitDirectory(Lkotlin/jvm/functions/Function2;)V
+
+    .line 240
+    new-instance v0, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$5$2;
+
+    move-object v1, v0
+
+    invoke-direct/range {v1 .. v7}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$5$2;-><init>(Ljava/util/ArrayList;Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;Lkotlin/jvm/functions/Function3;)V
+
+    check-cast v0, Lkotlin/jvm/functions/Function2;
+
+    invoke-interface {p6, v0}, Lkotlin/io/path/FileVisitorBuilder;->onVisitFile(Lkotlin/jvm/functions/Function2;)V
+
+    .line 241
+    new-instance p1, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$5$3;
+
+    invoke-direct {p1, p5, p2, p3, p4}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$5$3;-><init>(Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;)V
+
+    check-cast p1, Lkotlin/jvm/functions/Function2;
+
+    invoke-interface {p6, p1}, Lkotlin/io/path/FileVisitorBuilder;->onVisitFileFailed(Lkotlin/jvm/functions/Function2;)V
+
+    .line 242
+    new-instance p1, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$$ExternalSyntheticLambda4;
+
+    move-object v0, p1
+
+    move-object v1, p0
+
+    move-object v2, p5
+
+    move-object v3, p2
+
+    move-object v4, p3
+
+    move-object v5, p4
+
+    invoke-direct/range {v0 .. v5}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$$ExternalSyntheticLambda4;-><init>(Ljava/util/ArrayList;Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;)V
+
+    invoke-interface {p6, p1}, Lkotlin/io/path/FileVisitorBuilder;->onPostVisitDirectory(Lkotlin/jvm/functions/Function2;)V
+
+    .line 250
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final copyToRecursively$lambda$6$lambda$4$PathsKt__PathRecursiveFunctionsKt(Ljava/util/ArrayList;Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;
+    .locals 1
+
+    const-string v0, "directory"
+
+    invoke-static {p6, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "attributes"
+
+    invoke-static {p7, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 236
+    invoke-static/range {p0 .. p7}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt;->copyToRecursively$copy$PathsKt__PathRecursiveFunctionsKt(Ljava/util/ArrayList;Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;
+
+    move-result-object p1
+
+    .line 237
+    sget-object p2, Ljava/nio/file/FileVisitResult;->CONTINUE:Ljava/nio/file/FileVisitResult;
+
+    if-ne p1, p2, :cond_0
+
+    invoke-virtual {p0, p6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    :cond_0
+    return-object p1
+.end method
+
+.method private static final copyToRecursively$lambda$6$lambda$5$PathsKt__PathRecursiveFunctionsKt(Ljava/util/ArrayList;Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/io/IOException;)Ljava/nio/file/FileVisitResult;
+    .locals 6
+
+    const-string v0, "directory"
+
+    invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 243
+    check-cast p0, Ljava/util/List;
+
+    invoke-static {p0}, Lkotlin/collections/CollectionsKt;->removeLast(Ljava/util/List;)Ljava/lang/Object;
+
+    if-nez p6, :cond_0
+
+    .line 245
+    sget-object p0, Ljava/nio/file/FileVisitResult;->CONTINUE:Ljava/nio/file/FileVisitResult;
+
+    goto :goto_0
+
+    .line 247
+    :cond_0
+    move-object v5, p6
+
+    check-cast v5, Ljava/lang/Exception;
+
+    move-object v0, p1
+
+    move-object v1, p2
+
+    move-object v2, p3
+
+    move-object v3, p4
+
+    move-object v4, p5
+
+    invoke-static/range {v0 .. v5}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt;->copyToRecursively$error$PathsKt__PathRecursiveFunctionsKt(Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/lang/Exception;)Ljava/nio/file/FileVisitResult;
+
+    move-result-object p0
+
+    :goto_0
     return-object p0
 .end method
 
@@ -1213,6 +1550,10 @@
 
     move-result-object v0
 
+    const-string v2, "iterator(...)"
+
+    invoke-static {v0, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
     :goto_1
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -1430,6 +1771,10 @@
     invoke-interface {v2}, Ljava/nio/file/DirectoryStream;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
+
+    const-string v3, "iterator(...)"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     :goto_1
     invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
@@ -1665,6 +2010,7 @@
 
     goto :goto_0
 
+    .line 271
     :cond_0
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
@@ -1711,6 +2057,7 @@
 
     goto :goto_0
 
+    .line 278
     :cond_0
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 

@@ -44,7 +44,7 @@
 .method private static synthetic $values()[Lcom/google/common/base/Predicates$ObjectPredicate;
     .locals 4
 
-    .line 250
+    .line 258
     sget-object v0, Lcom/google/common/base/Predicates$ObjectPredicate;->ALWAYS_TRUE:Lcom/google/common/base/Predicates$ObjectPredicate;
 
     sget-object v1, Lcom/google/common/base/Predicates$ObjectPredicate;->ALWAYS_FALSE:Lcom/google/common/base/Predicates$ObjectPredicate;
@@ -63,7 +63,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 252
+    .line 260
     new-instance v0, Lcom/google/common/base/Predicates$ObjectPredicate$1;
 
     const-string v1, "ALWAYS_TRUE"
@@ -74,7 +74,7 @@
 
     sput-object v0, Lcom/google/common/base/Predicates$ObjectPredicate;->ALWAYS_TRUE:Lcom/google/common/base/Predicates$ObjectPredicate;
 
-    .line 264
+    .line 272
     new-instance v0, Lcom/google/common/base/Predicates$ObjectPredicate$2;
 
     const-string v1, "ALWAYS_FALSE"
@@ -85,7 +85,7 @@
 
     sput-object v0, Lcom/google/common/base/Predicates$ObjectPredicate;->ALWAYS_FALSE:Lcom/google/common/base/Predicates$ObjectPredicate;
 
-    .line 276
+    .line 284
     new-instance v0, Lcom/google/common/base/Predicates$ObjectPredicate$3;
 
     const-string v1, "IS_NULL"
@@ -96,7 +96,7 @@
 
     sput-object v0, Lcom/google/common/base/Predicates$ObjectPredicate;->IS_NULL:Lcom/google/common/base/Predicates$ObjectPredicate;
 
-    .line 288
+    .line 296
     new-instance v0, Lcom/google/common/base/Predicates$ObjectPredicate$4;
 
     const-string v1, "NOT_NULL"
@@ -107,7 +107,7 @@
 
     sput-object v0, Lcom/google/common/base/Predicates$ObjectPredicate;->NOT_NULL:Lcom/google/common/base/Predicates$ObjectPredicate;
 
-    .line 250
+    .line 258
     invoke-static {}, Lcom/google/common/base/Predicates$ObjectPredicate;->$values()[Lcom/google/common/base/Predicates$ObjectPredicate;
 
     move-result-object v0
@@ -119,13 +119,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 250
+    .line 258
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -134,7 +145,7 @@
 .method synthetic constructor <init>(Ljava/lang/String;ILcom/google/common/base/Predicates$1;)V
     .locals 0
 
-    .line 250
+    .line 258
     invoke-direct {p0, p1, p2}, Lcom/google/common/base/Predicates$ObjectPredicate;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -142,8 +153,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/base/Predicates$ObjectPredicate;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 250
+    .line 258
     const-class v0, Lcom/google/common/base/Predicates$ObjectPredicate;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -158,7 +177,7 @@
 .method public static values()[Lcom/google/common/base/Predicates$ObjectPredicate;
     .locals 1
 
-    .line 250
+    .line 258
     sget-object v0, Lcom/google/common/base/Predicates$ObjectPredicate;->$VALUES:[Lcom/google/common/base/Predicates$ObjectPredicate;
 
     invoke-virtual {v0}, [Lcom/google/common/base/Predicates$ObjectPredicate;->clone()Ljava/lang/Object;

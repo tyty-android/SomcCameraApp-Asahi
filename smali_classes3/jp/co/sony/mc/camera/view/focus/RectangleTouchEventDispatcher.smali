@@ -30,6 +30,15 @@
 # direct methods
 .method public constructor <init>(Ljava/util/HashMap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "rectangles"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -51,6 +60,16 @@
 
 .method private updateTouchView(Ljp/co/sony/mc/camera/view/focus/FaceInformationList;Landroid/view/MotionEvent;)Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "faceList",
+            "event"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -167,6 +186,16 @@
 # virtual methods
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "arg0",
+            "event"
+        }
+    .end annotation
 
     .line 51
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/focus/RectangleTouchEventDispatcher;->mFacetList:Ljp/co/sony/mc/camera/view/focus/FaceInformationList;
@@ -238,6 +267,14 @@
 
 .method public updateFaceList(Ljp/co/sony/mc/camera/view/focus/FaceInformationList;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "list"
+        }
+    .end annotation
 
     .line 46
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/focus/RectangleTouchEventDispatcher;->mFacetList:Ljp/co/sony/mc/camera/view/focus/FaceInformationList;

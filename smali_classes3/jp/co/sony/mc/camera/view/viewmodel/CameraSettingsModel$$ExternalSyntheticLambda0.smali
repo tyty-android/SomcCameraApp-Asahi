@@ -44,7 +44,7 @@
 
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
 
-    invoke-static {v0, v1, p0, p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->$r8$lambda$S5uZZC4U9JKvIL6gyVuJCW7aFOE(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Landroidx/lifecycle/MediatorLiveData;Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;)Lkotlin/Unit;
+    invoke-static {v0, v1, p0, p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->$r8$lambda$E-qU6szwdBS0lM0PFu6kTCbPedE(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Landroidx/lifecycle/MediatorLiveData;Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;)Lkotlin/Unit;
 
     move-result-object p0
 

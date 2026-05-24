@@ -29,8 +29,16 @@
 
 .method private constructor <init>(Ljp/co/sony/mc/camera/device/CameraDeviceHandler;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 7931
+    .line 8546
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$QueueingCountChangedListener;->this$0:Ljp/co/sony/mc/camera/device/CameraDeviceHandler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -48,8 +56,16 @@
 
 .method private onRequestQueueCountChanged(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "savingCount"
+        }
+    .end annotation
 
-    .line 7933
+    .line 8548
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$QueueingCountChangedListener;->this$0:Ljp/co/sony/mc/camera/device/CameraDeviceHandler;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler;->-$$Nest$fgetmExternalNotificationHandler(Ljp/co/sony/mc/camera/device/CameraDeviceHandler;)Landroid/os/Handler;

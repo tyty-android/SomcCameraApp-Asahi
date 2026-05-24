@@ -18,7 +18,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000V\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010(\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0008\u0002\u0008\u0001\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00020\u0001B\u001d\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u000e\u0010\u0004\u001a\n\u0012\u0006\u0008\u0001\u0012\u00020\u00060\u0005\u00a2\u0006\u0002\u0010\u0007J\u000e\u0010\u0014\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u0015H\u0002J\u000e\u0010\u0016\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u0015H\u0002J\u000f\u0010\u0017\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u0015H\u0096\u0002JB\u0010\u0018\u001a\u00020\u0019*\u0008\u0012\u0004\u0012\u00020\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001e2\u0018\u0010\u001f\u001a\u0014\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u001c0!\u0012\u0004\u0012\u00020\u00190 H\u0082H\u00a2\u0006\u0002\u0010\"R\u0014\u0010\u0008\u001a\u00020\t8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\n\u0010\u000bR\u0014\u0010\u000c\u001a\u00020\t8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\r\u0010\u000bR\u0014\u0010\u000e\u001a\u00020\t8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000e\u0010\u000bR\u001a\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\u00100\u00058BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0011\u0010\u0012R\u0018\u0010\u0004\u001a\n\u0012\u0006\u0008\u0001\u0012\u00020\u00060\u0005X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\u0013R\u000e\u0010\u0003\u001a\u00020\u0002X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006#"
+        "\u0000T\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0010(\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0008\u0004\u0008\u0000\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00020\u0001B\u001f\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u000e\u0010\u0004\u001a\n\u0012\u0006\u0008\u0001\u0012\u00020\u00060\u0005\u00a2\u0006\u0004\u0008\u0007\u0010\u0008J\u000f\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u0016H\u0096\u0002JB\u0010\u0017\u001a\u00020\u0018*\u0008\u0012\u0004\u0012\u00020\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u001d2\u0018\u0010\u001e\u001a\u0014\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u001b0 \u0012\u0004\u0012\u00020\u00180\u001fH\u0082H\u00a2\u0006\u0002\u0010!J\u000e\u0010\"\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u0016H\u0002J\u000e\u0010#\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u0016H\u0002R\u000e\u0010\u0003\u001a\u00020\u0002X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0018\u0010\u0004\u001a\n\u0012\u0006\u0008\u0001\u0012\u00020\u00060\u0005X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\tR\u0014\u0010\n\u001a\u00020\u000b8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000c\u0010\rR\u001a\u0010\u000e\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\u00058BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0010\u0010\u0011R\u0014\u0010\u0012\u001a\u00020\u000b8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0013\u0010\rR\u0014\u0010\u0014\u001a\u00020\u000b8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0014\u0010\r\u00a8\u0006$"
     }
     d2 = {
         "Lkotlin/io/path/PathTreeWalk;",
@@ -28,23 +28,22 @@
         "options",
         "",
         "Lkotlin/io/path/PathWalkOption;",
+        "<init>",
         "(Ljava/nio/file/Path;[Lkotlin/io/path/PathWalkOption;)V",
+        "[Lkotlin/io/path/PathWalkOption;",
         "followLinks",
         "",
         "getFollowLinks",
         "()Z",
-        "includeDirectories",
-        "getIncludeDirectories",
-        "isBFS",
         "linkOptions",
         "Ljava/nio/file/LinkOption;",
         "getLinkOptions",
         "()[Ljava/nio/file/LinkOption;",
-        "[Lkotlin/io/path/PathWalkOption;",
-        "bfsIterator",
-        "",
-        "dfsIterator",
+        "includeDirectories",
+        "getIncludeDirectories",
+        "isBFS",
         "iterator",
+        "",
         "yieldIfNeeded",
         "",
         "Lkotlin/sequences/SequenceScope;",
@@ -56,12 +55,14 @@
         "Lkotlin/Function1;",
         "",
         "(Lkotlin/sequences/SequenceScope;Lkotlin/io/path/PathNode;Lkotlin/io/path/DirectoryEntriesReader;Lkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;",
+        "dfsIterator",
+        "bfsIterator",
         "kotlin-stdlib-jdk7"
     }
     k = 0x1
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x30
@@ -89,10 +90,10 @@
     .line 20
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 22
+    .line 21
     iput-object p1, p0, Lkotlin/io/path/PathTreeWalk;->start:Ljava/nio/file/Path;
 
-    .line 23
+    .line 22
     iput-object p2, p0, Lkotlin/io/path/PathTreeWalk;->options:[Lkotlin/io/path/PathWalkOption;
 
     return-void
@@ -151,7 +152,7 @@
         }
     .end annotation
 
-    .line 93
+    .line 92
     new-instance v0, Lkotlin/io/path/PathTreeWalk$bfsIterator$1;
 
     const/4 v1, 0x0
@@ -178,7 +179,7 @@
         }
     .end annotation
 
-    .line 65
+    .line 64
     new-instance v0, Lkotlin/io/path/PathTreeWalk$dfsIterator$1;
 
     const/4 v1, 0x0
@@ -197,7 +198,7 @@
 .method private final getFollowLinks()Z
     .locals 1
 
-    .line 27
+    .line 26
     iget-object p0, p0, Lkotlin/io/path/PathTreeWalk;->options:[Lkotlin/io/path/PathWalkOption;
 
     sget-object v0, Lkotlin/io/path/PathWalkOption;->FOLLOW_LINKS:Lkotlin/io/path/PathWalkOption;
@@ -212,7 +213,7 @@
 .method private final getIncludeDirectories()Z
     .locals 1
 
-    .line 33
+    .line 32
     iget-object p0, p0, Lkotlin/io/path/PathTreeWalk;->options:[Lkotlin/io/path/PathWalkOption;
 
     sget-object v0, Lkotlin/io/path/PathWalkOption;->INCLUDE_DIRECTORIES:Lkotlin/io/path/PathWalkOption;
@@ -227,7 +228,7 @@
 .method private final getLinkOptions()[Ljava/nio/file/LinkOption;
     .locals 1
 
-    .line 30
+    .line 29
     sget-object v0, Lkotlin/io/path/LinkFollowing;->INSTANCE:Lkotlin/io/path/LinkFollowing;
 
     invoke-direct {p0}, Lkotlin/io/path/PathTreeWalk;->getFollowLinks()Z
@@ -244,7 +245,7 @@
 .method private final isBFS()Z
     .locals 1
 
-    .line 36
+    .line 35
     iget-object p0, p0, Lkotlin/io/path/PathTreeWalk;->options:[Lkotlin/io/path/PathWalkOption;
 
     sget-object v0, Lkotlin/io/path/PathWalkOption;->BREADTH_FIRST:Lkotlin/io/path/PathWalkOption;
@@ -282,22 +283,22 @@
         }
     .end annotation
 
-    .line 45
+    .line 44
     invoke-virtual {p2}, Lkotlin/io/path/PathNode;->getPath()Ljava/nio/file/Path;
 
     move-result-object v0
 
-    .line 46
+    .line 45
     invoke-virtual {p2}, Lkotlin/io/path/PathNode;->getParent()Lkotlin/io/path/PathNode;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    .line 48
+    .line 47
     invoke-static {v0}, Lkotlin/io/path/PathsKt;->checkFileName(Ljava/nio/file/Path;)V
 
-    .line 50
+    .line 49
     :cond_0
     invoke-static {p0}, Lkotlin/io/path/PathTreeWalk;->access$getLinkOptions(Lkotlin/io/path/PathTreeWalk;)[Ljava/nio/file/LinkOption;
 
@@ -329,28 +330,28 @@
 
     if-eqz v1, :cond_3
 
-    .line 51
+    .line 50
     invoke-static {p2}, Lkotlin/io/path/PathTreeWalkKt;->access$createsCycle(Lkotlin/io/path/PathNode;)Z
 
     move-result v1
 
     if-nez v1, :cond_2
 
-    .line 54
+    .line 53
     invoke-static {p0}, Lkotlin/io/path/PathTreeWalk;->access$getIncludeDirectories(Lkotlin/io/path/PathTreeWalk;)Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 55
+    .line 54
     invoke-static {v2}, Lkotlin/jvm/internal/InlineMarker;->mark(I)V
 
     invoke-virtual {p1, v0, p5}, Lkotlin/sequences/SequenceScope;->yield(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     invoke-static {v3}, Lkotlin/jvm/internal/InlineMarker;->mark(I)V
 
-    .line 57
+    .line 56
     :cond_1
     invoke-static {p0}, Lkotlin/io/path/PathTreeWalk;->access$getLinkOptions(Lkotlin/io/path/PathTreeWalk;)[Ljava/nio/file/LinkOption;
 
@@ -378,7 +379,7 @@
 
     if-eqz p0, :cond_4
 
-    .line 58
+    .line 57
     invoke-virtual {p3, p2}, Lkotlin/io/path/DirectoryEntriesReader;->readEntries(Lkotlin/io/path/PathNode;)Ljava/util/List;
 
     move-result-object p0
@@ -387,7 +388,7 @@
 
     goto :goto_0
 
-    .line 52
+    .line 51
     :cond_2
     new-instance p0, Ljava/nio/file/FileSystemLoopException;
 
@@ -399,7 +400,7 @@
 
     throw p0
 
-    .line 60
+    .line 59
     :cond_3
     new-array p0, v3, [Ljava/nio/file/LinkOption;
 
@@ -419,7 +420,7 @@
 
     if-eqz p0, :cond_4
 
-    .line 61
+    .line 60
     invoke-static {v2}, Lkotlin/jvm/internal/InlineMarker;->mark(I)V
 
     invoke-virtual {p1, v0, p5}, Lkotlin/sequences/SequenceScope;->yield(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -430,7 +431,7 @@
 
     return-object p0
 
-    .line 63
+    .line 62
     :cond_4
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -451,7 +452,7 @@
         }
     .end annotation
 
-    .line 38
+    .line 37
     invoke-direct {p0}, Lkotlin/io/path/PathTreeWalk;->isBFS()Z
 
     move-result v0

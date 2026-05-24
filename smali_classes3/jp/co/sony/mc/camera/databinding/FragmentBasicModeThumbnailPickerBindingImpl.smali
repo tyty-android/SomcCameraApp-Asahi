@@ -55,11 +55,11 @@
 
     move-result-object v1
 
-    const v3, 0x7f0c0076
+    const v3, 0x7f0c0071
 
-    const v5, 0x7f0c007a
+    const v5, 0x7f0c0075
 
-    const v6, 0x7f0c007b
+    const v6, 0x7f0c0076
 
     filled-new-array {v6, v3, v5}, [I
 
@@ -74,7 +74,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0900a4
+    const v1, 0x7f0900ac
 
     const/4 v2, 0x4
 
@@ -86,6 +86,16 @@
 
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root"
+        }
+    .end annotation
 
     .line 34
     sget-object v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -105,6 +115,18 @@
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "bindingComponent",
+            "root",
+            "bindings"
+        }
+    .end annotation
 
     const/4 v0, 0x4
 
@@ -151,7 +173,7 @@
 
     const-wide/16 v0, -0x1
 
-    .line 186
+    .line 192
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->mDirtyFlags:J
 
     .line 43
@@ -194,13 +216,23 @@
 
 .method private onChangeInfoArea(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBinding;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "InfoArea",
+            "fieldId"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
-    .line 145
+    .line 151
     monitor-enter p0
 
-    .line 146
+    .line 152
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->mDirtyFlags:J
 
@@ -210,7 +242,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->mDirtyFlags:J
 
-    .line 147
+    .line 153
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -234,13 +266,23 @@
 
 .method private onChangeTitleArea(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialTitleBinding;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "TitleArea",
+            "fieldId"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
-    .line 163
+    .line 169
     monitor-enter p0
 
-    .line 164
+    .line 170
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->mDirtyFlags:J
 
@@ -250,7 +292,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->mDirtyFlags:J
 
-    .line 165
+    .line 171
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -274,13 +316,23 @@
 
 .method private onChangeValueArea(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "ValueArea",
+            "fieldId"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
-    .line 154
+    .line 160
     monitor-enter p0
 
-    .line 155
+    .line 161
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->mDirtyFlags:J
 
@@ -290,7 +342,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->mDirtyFlags:J
 
-    .line 156
+    .line 162
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -317,31 +369,31 @@
 .method protected executeBindings()V
     .locals 2
 
-    .line 174
+    .line 180
     monitor-enter p0
 
     const-wide/16 v0, 0x0
 
-    .line 176
+    .line 182
     :try_start_0
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->mDirtyFlags:J
 
-    .line 177
+    .line 183
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 179
+    .line 185
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->titleArea:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialTitleBinding;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 180
+    .line 186
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->valueArea:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 181
+    .line 187
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->infoArea:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBinding;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
@@ -351,7 +403,7 @@
     :catchall_0
     move-exception v0
 
-    .line 177
+    .line 183
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -447,7 +499,7 @@
     .line 55
     monitor-enter p0
 
-    const-wide/16 v0, 0x100
+    const-wide/16 v0, 0x200
 
     .line 56
     :try_start_0
@@ -492,6 +544,18 @@
 
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "localFieldId",
+            "object",
+            "fieldId"
+        }
+    .end annotation
 
     if-eqz p1, :cond_2
 
@@ -507,7 +571,7 @@
 
     return p0
 
-    .line 139
+    .line 145
     :cond_0
     check-cast p2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialTitleBinding;
 
@@ -517,7 +581,7 @@
 
     return p0
 
-    .line 137
+    .line 143
     :cond_1
     check-cast p2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;
 
@@ -527,7 +591,7 @@
 
     return p0
 
-    .line 135
+    .line 141
     :cond_2
     check-cast p2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBinding;
 
@@ -538,10 +602,35 @@
     return p0
 .end method
 
-.method public setBasicModeColorToneProfileUiState(Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;)V
+.method public setAiSuggestionUiState(Ljp/co/sony/mc/camera/view/uistate/AiSuggestionUiState;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "AiSuggestionUiState"
+        }
+    .end annotation
 
     .line 117
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->mAiSuggestionUiState:Ljp/co/sony/mc/camera/view/uistate/AiSuggestionUiState;
+
+    return-void
+.end method
+
+.method public setBasicModeColorToneProfileUiState(Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "BasicModeColorToneProfileUiState"
+        }
+    .end annotation
+
+    .line 123
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->mBasicModeColorToneProfileUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;
 
     return-void
@@ -549,8 +638,16 @@
 
 .method public setBasicModeCommonUiState(Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "BasicModeCommonUiState"
+        }
+    .end annotation
 
-    .line 120
+    .line 126
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->mBasicModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
 
     return-void
@@ -558,8 +655,16 @@
 
 .method public setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "CameraSettingsModel"
+        }
+    .end annotation
 
-    .line 108
+    .line 111
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->mCameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     return-void
@@ -567,8 +672,16 @@
 
 .method public setCameraStatusModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "CameraStatusModel"
+        }
+    .end annotation
 
-    .line 114
+    .line 120
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->mCameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     return-void
@@ -576,21 +689,29 @@
 
 .method public setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "lifecycleOwner"
+        }
+    .end annotation
 
-    .line 125
+    .line 131
     invoke-super {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 126
+    .line 132
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->titleArea:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialTitleBinding;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialTitleBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 127
+    .line 133
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->valueArea:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerValueBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 128
+    .line 134
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->infoArea:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBinding;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
@@ -600,17 +721,37 @@
 
 .method public setOrientationViewModel(Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "OrientationViewModel"
+        }
+    .end annotation
 
-    .line 111
+    .line 114
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
     return-void
 .end method
 
 .method public setVariable(ILjava/lang/Object;)Z
-    .locals 1
+    .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "variableId",
+            "variable"
+        }
+    .end annotation
 
-    const/16 v0, 0x8
+    const/16 v0, 0xb
+
+    const/4 v1, 0x1
 
     if-ne v0, p1, :cond_0
 
@@ -622,7 +763,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x16
+    const/16 v0, 0x19
 
     if-ne v0, p1, :cond_1
 
@@ -634,26 +775,24 @@
     goto :goto_0
 
     :cond_1
-    const/16 v0, 0x9
-
-    if-ne v0, p1, :cond_2
+    if-ne v1, p1, :cond_2
 
     .line 93
-    check-cast p2, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
+    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/AiSuggestionUiState;
 
-    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->setCameraStatusModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;)V
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->setAiSuggestionUiState(Ljp/co/sony/mc/camera/view/uistate/AiSuggestionUiState;)V
 
     goto :goto_0
 
     :cond_2
-    const/4 v0, 0x3
+    const/16 v0, 0xc
 
     if-ne v0, p1, :cond_3
 
     .line 96
-    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;
+    check-cast p2, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
-    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->setBasicModeColorToneProfileUiState(Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;)V
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->setCameraStatusModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;)V
 
     goto :goto_0
 
@@ -663,18 +802,27 @@
     if-ne v0, p1, :cond_4
 
     .line 99
+    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;
+
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->setBasicModeColorToneProfileUiState(Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;)V
+
+    goto :goto_0
+
+    :cond_4
+    const/4 v0, 0x5
+
+    if-ne v0, p1, :cond_5
+
+    .line 102
     check-cast p2, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
 
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBindingImpl;->setBasicModeCommonUiState(Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;)V
 
+    goto :goto_0
+
+    :cond_5
+    const/4 v1, 0x0
+
     :goto_0
-    const/4 p0, 0x1
-
-    goto :goto_1
-
-    :cond_4
-    const/4 p0, 0x0
-
-    :goto_1
-    return p0
+    return v1
 .end method

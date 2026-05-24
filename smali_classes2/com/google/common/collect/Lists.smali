@@ -4,20 +4,23 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/common/collect/Lists$RandomAccessListWrapper;,
-        Lcom/google/common/collect/Lists$AbstractListWrapper;,
-        Lcom/google/common/collect/Lists$RandomAccessReverseList;,
-        Lcom/google/common/collect/Lists$ReverseList;,
-        Lcom/google/common/collect/Lists$CharSequenceAsList;,
-        Lcom/google/common/collect/Lists$StringAsImmutableList;,
-        Lcom/google/common/collect/Lists$RandomAccessPartition;,
-        Lcom/google/common/collect/Lists$Partition;,
+        Lcom/google/common/collect/Lists$OnePlusArrayList;,
+        Lcom/google/common/collect/Lists$TwoPlusArrayList;,
         Lcom/google/common/collect/Lists$TransformingRandomAccessList;,
         Lcom/google/common/collect/Lists$TransformingSequentialList;,
-        Lcom/google/common/collect/Lists$TwoPlusArrayList;,
-        Lcom/google/common/collect/Lists$OnePlusArrayList;
+        Lcom/google/common/collect/Lists$RandomAccessPartition;,
+        Lcom/google/common/collect/Lists$Partition;,
+        Lcom/google/common/collect/Lists$StringAsImmutableList;,
+        Lcom/google/common/collect/Lists$CharSequenceAsList;,
+        Lcom/google/common/collect/Lists$ReverseList;,
+        Lcom/google/common/collect/Lists$RandomAccessReverseList;,
+        Lcom/google/common/collect/Lists$AbstractListWrapper;,
+        Lcom/google/common/collect/Lists$RandomAccessListWrapper;
     }
 .end annotation
 
@@ -26,7 +29,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 67
+    .line 71
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,6 +37,19 @@
 
 .method static addAllImpl(Ljava/util/List;ILjava/lang/Iterable;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "list",
+            "index",
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -46,12 +62,12 @@
         }
     .end annotation
 
-    .line 980
+    .line 1041
     invoke-interface {p0, p1}, Ljava/util/List;->listIterator(I)Ljava/util/ListIterator;
 
     move-result-object p0
 
-    .line 981
+    .line 1042
     invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -69,7 +85,7 @@
 
     move-result-object p2
 
-    .line 982
+    .line 1043
     invoke-interface {p0, p2}, Ljava/util/ListIterator;->add(Ljava/lang/Object;)V
 
     const/4 p2, 0x1
@@ -83,13 +99,26 @@
 .method public static asList(Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/util/List;
     .locals 1
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "first",
+            "second",
+            "rest"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -100,7 +129,7 @@
         }
     .end annotation
 
-    .line 308
+    .line 334
     new-instance v0, Lcom/google/common/collect/Lists$TwoPlusArrayList;
 
     invoke-direct {v0, p0, p1, p2}, Lcom/google/common/collect/Lists$TwoPlusArrayList;-><init>(Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)V
@@ -111,9 +140,20 @@
 .method public static asList(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/util/List;
     .locals 1
     .param p0    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "first",
+            "rest"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -124,7 +164,7 @@
         }
     .end annotation
 
-    .line 288
+    .line 313
     new-instance v0, Lcom/google/common/collect/Lists$OnePlusArrayList;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Lists$OnePlusArrayList;-><init>(Ljava/lang/Object;[Ljava/lang/Object;)V
@@ -134,6 +174,15 @@
 
 .method public static cartesianProduct(Ljava/util/List;)Ljava/util/List;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "lists"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<B:",
@@ -149,7 +198,7 @@
         }
     .end annotation
 
-    .line 427
+    .line 455
     invoke-static {p0}, Lcom/google/common/collect/CartesianList;->create(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p0
@@ -159,6 +208,15 @@
 
 .method public static varargs cartesianProduct([Ljava/util/List;)Ljava/util/List;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "lists"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<B:",
@@ -175,7 +233,7 @@
     .annotation runtime Ljava/lang/SafeVarargs;
     .end annotation
 
-    .line 486
+    .line 514
     invoke-static {p0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
@@ -189,6 +247,15 @@
 
 .method static cast(Ljava/lang/Iterable;)Ljava/util/List;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "iterable"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -201,7 +268,7 @@
         }
     .end annotation
 
-    .line 1137
+    .line 1202
     check-cast p0, Ljava/util/List;
 
     return-object p0
@@ -209,6 +276,15 @@
 
 .method public static charactersOf(Ljava/lang/String;)Lcom/google/common/collect/ImmutableList;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "string"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -220,7 +296,7 @@
         }
     .end annotation
 
-    .line 693
+    .line 735
     new-instance v0, Lcom/google/common/collect/Lists$StringAsImmutableList;
 
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -236,6 +312,15 @@
 
 .method public static charactersOf(Ljava/lang/CharSequence;)Ljava/util/List;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sequence"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -247,7 +332,7 @@
         }
     .end annotation
 
-    .line 707
+    .line 748
     new-instance v0, Lcom/google/common/collect/Lists$CharSequenceAsList;
 
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -263,8 +348,16 @@
 
 .method static computeArrayListCapacity(I)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "arraySize"
+        }
+    .end annotation
 
-    .line 148
+    .line 161
     const-string v0, "arraySize"
 
     invoke-static {p0, v0}, Lcom/google/common/collect/CollectPreconditions;->checkNonnegative(ILjava/lang/String;)I
@@ -275,7 +368,7 @@
 
     add-long/2addr v2, v0
 
-    .line 151
+    .line 164
     div-int/lit8 p0, p0, 0xa
 
     int-to-long v0, p0
@@ -292,9 +385,20 @@
 .method static equalsImpl(Ljava/util/List;Ljava/lang/Object;)Z
     .locals 6
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "thisList",
+            "other"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -305,7 +409,7 @@
         }
     .end annotation
 
-    .line 953
+    .line 1013
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -316,7 +420,7 @@
 
     return v1
 
-    .line 956
+    .line 1016
     :cond_0
     instance-of v0, p1, Ljava/util/List;
 
@@ -326,16 +430,16 @@
 
     return v2
 
-    .line 959
+    .line 1019
     :cond_1
     check-cast p1, Ljava/util/List;
 
-    .line 960
+    .line 1020
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v0
 
-    .line 961
+    .line 1021
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v3
@@ -344,7 +448,7 @@
 
     return v2
 
-    .line 964
+    .line 1024
     :cond_2
     instance-of v3, p0, Ljava/util/RandomAccess;
 
@@ -359,7 +463,7 @@
     :goto_0
     if-ge v3, v0, :cond_4
 
-    .line 967
+    .line 1027
     invoke-interface {p0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
@@ -384,7 +488,7 @@
     :cond_4
     return v1
 
-    .line 973
+    .line 1033
     :cond_5
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -403,6 +507,15 @@
 
 .method static hashCodeImpl(Ljava/util/List;)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "list"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -411,7 +524,7 @@
         }
     .end annotation
 
-    .line 942
+    .line 1002
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -437,7 +550,7 @@
 
     goto :goto_1
 
-    .line 943
+    .line 1003
     :cond_0
     invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
@@ -459,9 +572,20 @@
 .method static indexOfImpl(Ljava/util/List;Ljava/lang/Object;)I
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "list",
+            "element"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -472,25 +596,25 @@
         }
     .end annotation
 
-    .line 990
+    .line 1051
     instance-of v0, p0, Ljava/util/RandomAccess;
 
     if-eqz v0, :cond_0
 
-    .line 991
+    .line 1052
     invoke-static {p0, p1}, Lcom/google/common/collect/Lists;->indexOfRandomAccess(Ljava/util/List;Ljava/lang/Object;)I
 
     move-result p0
 
     return p0
 
-    .line 993
+    .line 1054
     :cond_0
     invoke-interface {p0}, Ljava/util/List;->listIterator()Ljava/util/ListIterator;
 
     move-result-object p0
 
-    .line 994
+    .line 1055
     :cond_1
     invoke-interface {p0}, Ljava/util/ListIterator;->hasNext()Z
 
@@ -498,7 +622,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 995
+    .line 1056
     invoke-interface {p0}, Ljava/util/ListIterator;->next()Ljava/lang/Object;
 
     move-result-object v0
@@ -509,7 +633,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 996
+    .line 1057
     invoke-interface {p0}, Ljava/util/ListIterator;->previousIndex()I
 
     move-result p0
@@ -525,9 +649,20 @@
 .method private static indexOfRandomAccess(Ljava/util/List;Ljava/lang/Object;)I
     .locals 3
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "list",
+            "element"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -538,7 +673,7 @@
         }
     .end annotation
 
-    .line 1004
+    .line 1065
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v0
@@ -550,7 +685,7 @@
     :goto_0
     if-ge v1, v0, :cond_3
 
-    .line 1007
+    .line 1068
     invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
@@ -568,7 +703,7 @@
     :goto_1
     if-ge v1, v0, :cond_3
 
-    .line 1013
+    .line 1074
     invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -595,9 +730,20 @@
 .method static lastIndexOfImpl(Ljava/util/List;Ljava/lang/Object;)I
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "list",
+            "element"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -608,19 +754,19 @@
         }
     .end annotation
 
-    .line 1023
+    .line 1084
     instance-of v0, p0, Ljava/util/RandomAccess;
 
     if-eqz v0, :cond_0
 
-    .line 1024
+    .line 1085
     invoke-static {p0, p1}, Lcom/google/common/collect/Lists;->lastIndexOfRandomAccess(Ljava/util/List;Ljava/lang/Object;)I
 
     move-result p0
 
     return p0
 
-    .line 1026
+    .line 1087
     :cond_0
     invoke-interface {p0}, Ljava/util/List;->size()I
 
@@ -630,7 +776,7 @@
 
     move-result-object p0
 
-    .line 1027
+    .line 1088
     :cond_1
     invoke-interface {p0}, Ljava/util/ListIterator;->hasPrevious()Z
 
@@ -638,7 +784,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 1028
+    .line 1089
     invoke-interface {p0}, Ljava/util/ListIterator;->previous()Ljava/lang/Object;
 
     move-result-object v0
@@ -649,7 +795,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 1029
+    .line 1090
     invoke-interface {p0}, Ljava/util/ListIterator;->nextIndex()I
 
     move-result p0
@@ -665,9 +811,20 @@
 .method private static lastIndexOfRandomAccess(Ljava/util/List;Ljava/lang/Object;)I
     .locals 2
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "list",
+            "element"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -680,7 +837,7 @@
 
     if-nez p1, :cond_1
 
-    .line 1038
+    .line 1099
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result p1
@@ -690,7 +847,7 @@
     :goto_0
     if-ltz p1, :cond_3
 
-    .line 1039
+    .line 1100
     invoke-interface {p0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -704,7 +861,7 @@
 
     goto :goto_0
 
-    .line 1044
+    .line 1105
     :cond_1
     invoke-interface {p0}, Ljava/util/List;->size()I
 
@@ -715,7 +872,7 @@
     :goto_1
     if-ltz v0, :cond_3
 
-    .line 1045
+    .line 1106
     invoke-interface {p0, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -741,6 +898,17 @@
 
 .method static listIteratorImpl(Ljava/util/List;I)Ljava/util/ListIterator;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "list",
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -753,7 +921,7 @@
         }
     .end annotation
 
-    .line 1055
+    .line 1116
     new-instance v0, Lcom/google/common/collect/Lists$AbstractListWrapper;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/Lists$AbstractListWrapper;-><init>(Ljava/util/List;)V
@@ -777,7 +945,7 @@
         }
     .end annotation
 
-    .line 82
+    .line 89
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -787,6 +955,15 @@
 
 .method public static newArrayList(Ljava/lang/Iterable;)Ljava/util/ArrayList;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -799,15 +976,15 @@
         }
     .end annotation
 
-    .line 125
+    .line 136
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 127
+    .line 138
     instance-of v0, p0, Ljava/util/Collection;
 
     if-eqz v0, :cond_0
 
-    .line 128
+    .line 139
     new-instance v0, Ljava/util/ArrayList;
 
     check-cast p0, Ljava/util/Collection;
@@ -816,7 +993,7 @@
 
     goto :goto_0
 
-    .line 129
+    .line 140
     :cond_0
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -832,6 +1009,15 @@
 
 .method public static newArrayList(Ljava/util/Iterator;)Ljava/util/ArrayList;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -844,12 +1030,12 @@
         }
     .end annotation
 
-    .line 141
+    .line 154
     invoke-static {}, Lcom/google/common/collect/Lists;->newArrayList()Ljava/util/ArrayList;
 
     move-result-object v0
 
-    .line 142
+    .line 155
     invoke-static {v0, p0}, Lcom/google/common/collect/Iterators;->addAll(Ljava/util/Collection;Ljava/util/Iterator;)Z
 
     return-object v0
@@ -857,6 +1043,15 @@
 
 .method public static varargs newArrayList([Ljava/lang/Object;)Ljava/util/ArrayList;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -870,22 +1065,22 @@
     .annotation runtime Ljava/lang/SafeVarargs;
     .end annotation
 
-    .line 102
+    .line 110
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 104
+    .line 112
     array-length v0, p0
 
     invoke-static {v0}, Lcom/google/common/collect/Lists;->computeArrayListCapacity(I)I
 
     move-result v0
 
-    .line 105
+    .line 113
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1, v0}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 106
+    .line 114
     invoke-static {v1, p0}, Ljava/util/Collections;->addAll(Ljava/util/Collection;[Ljava/lang/Object;)Z
 
     return-object v1
@@ -893,6 +1088,15 @@
 
 .method public static newArrayListWithCapacity(I)Ljava/util/ArrayList;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "initialArraySize"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -903,12 +1107,12 @@
         }
     .end annotation
 
-    .line 172
+    .line 188
     const-string v0, "initialArraySize"
 
     invoke-static {p0, v0}, Lcom/google/common/collect/CollectPreconditions;->checkNonnegative(ILjava/lang/String;)I
 
-    .line 173
+    .line 189
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0, p0}, Ljava/util/ArrayList;-><init>(I)V
@@ -918,6 +1122,15 @@
 
 .method public static newArrayListWithExpectedSize(I)Ljava/util/ArrayList;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "estimatedSize"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -928,7 +1141,7 @@
         }
     .end annotation
 
-    .line 191
+    .line 209
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-static {p0}, Lcom/google/common/collect/Lists;->computeArrayListCapacity(I)I
@@ -952,7 +1165,7 @@
         }
     .end annotation
 
-    .line 251
+    .line 275
     new-instance v0, Ljava/util/concurrent/CopyOnWriteArrayList;
 
     invoke-direct {v0}, Ljava/util/concurrent/CopyOnWriteArrayList;-><init>()V
@@ -962,6 +1175,15 @@
 
 .method public static newCopyOnWriteArrayList(Ljava/lang/Iterable;)Ljava/util/concurrent/CopyOnWriteArrayList;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -974,23 +1196,23 @@
         }
     .end annotation
 
-    .line 267
+    .line 292
     instance-of v0, p0, Ljava/util/Collection;
 
     if-eqz v0, :cond_0
 
-    .line 268
+    .line 293
     check-cast p0, Ljava/util/Collection;
 
     goto :goto_0
 
-    .line 269
+    .line 294
     :cond_0
     invoke-static {p0}, Lcom/google/common/collect/Lists;->newArrayList(Ljava/lang/Iterable;)Ljava/util/ArrayList;
 
     move-result-object p0
 
-    .line 270
+    .line 295
     :goto_0
     new-instance v0, Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -1011,7 +1233,7 @@
         }
     .end annotation
 
-    .line 213
+    .line 233
     new-instance v0, Ljava/util/LinkedList;
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
@@ -1021,6 +1243,15 @@
 
 .method public static newLinkedList(Ljava/lang/Iterable;)Ljava/util/LinkedList;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -1033,12 +1264,12 @@
         }
     .end annotation
 
-    .line 235
+    .line 258
     invoke-static {}, Lcom/google/common/collect/Lists;->newLinkedList()Ljava/util/LinkedList;
 
     move-result-object v0
 
-    .line 236
+    .line 259
     invoke-static {v0, p0}, Lcom/google/common/collect/Iterables;->addAll(Ljava/util/Collection;Ljava/lang/Iterable;)Z
 
     return-object v0
@@ -1046,6 +1277,17 @@
 
 .method public static partition(Ljava/util/List;I)Ljava/util/List;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "list",
+            "size"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1059,7 +1301,7 @@
         }
     .end annotation
 
-    .line 646
+    .line 687
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     if-lez p1, :cond_0
@@ -1071,23 +1313,23 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 647
+    .line 688
     :goto_0
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 648
+    .line 689
     instance-of v0, p0, Ljava/util/RandomAccess;
 
     if-eqz v0, :cond_1
 
-    .line 649
+    .line 690
     new-instance v0, Lcom/google/common/collect/Lists$RandomAccessPartition;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Lists$RandomAccessPartition;-><init>(Ljava/util/List;I)V
 
     goto :goto_1
 
-    .line 650
+    .line 691
     :cond_1
     new-instance v0, Lcom/google/common/collect/Lists$Partition;
 
@@ -1099,6 +1341,15 @@
 
 .method public static reverse(Ljava/util/List;)Ljava/util/List;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "list"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1111,12 +1362,12 @@
         }
     .end annotation
 
-    .line 783
+    .line 833
     instance-of v0, p0, Lcom/google/common/collect/ImmutableList;
 
     if-eqz v0, :cond_0
 
-    .line 784
+    .line 835
     check-cast p0, Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableList;->reverse()Lcom/google/common/collect/ImmutableList;
@@ -1125,13 +1376,13 @@
 
     return-object p0
 
-    .line 785
+    .line 839
     :cond_0
     instance-of v0, p0, Lcom/google/common/collect/Lists$ReverseList;
 
     if-eqz v0, :cond_1
 
-    .line 786
+    .line 840
     check-cast p0, Lcom/google/common/collect/Lists$ReverseList;
 
     invoke-virtual {p0}, Lcom/google/common/collect/Lists$ReverseList;->getForwardList()Ljava/util/List;
@@ -1140,20 +1391,20 @@
 
     return-object p0
 
-    .line 787
+    .line 841
     :cond_1
     instance-of v0, p0, Ljava/util/RandomAccess;
 
     if-eqz v0, :cond_2
 
-    .line 788
+    .line 842
     new-instance v0, Lcom/google/common/collect/Lists$RandomAccessReverseList;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/Lists$RandomAccessReverseList;-><init>(Ljava/util/List;)V
 
     return-object v0
 
-    .line 790
+    .line 844
     :cond_2
     new-instance v0, Lcom/google/common/collect/Lists$ReverseList;
 
@@ -1164,6 +1415,19 @@
 
 .method static subListImpl(Ljava/util/List;II)Ljava/util/List;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x0,
+            0x0
+        }
+        names = {
+            "list",
+            "fromIndex",
+            "toIndex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -1176,25 +1440,25 @@
         }
     .end annotation
 
-    .line 1061
+    .line 1123
     instance-of v0, p0, Ljava/util/RandomAccess;
 
     if-eqz v0, :cond_0
 
-    .line 1062
+    .line 1124
     new-instance v0, Lcom/google/common/collect/Lists$1;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/Lists$1;-><init>(Ljava/util/List;)V
 
     goto :goto_0
 
-    .line 1072
+    .line 1134
     :cond_0
     new-instance v0, Lcom/google/common/collect/Lists$2;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/Lists$2;-><init>(Ljava/util/List;)V
 
-    .line 1082
+    .line 1144
     :goto_0
     invoke-interface {v0, p1, p2}, Ljava/util/List;->subList(II)Ljava/util/List;
 
@@ -1205,6 +1469,17 @@
 
 .method public static transform(Ljava/util/List;Lcom/google/common/base/Function;)Ljava/util/List;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromList",
+            "function"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<F:",
@@ -1221,19 +1496,19 @@
         }
     .end annotation
 
-    .line 523
+    .line 551
     instance-of v0, p0, Ljava/util/RandomAccess;
 
     if-eqz v0, :cond_0
 
-    .line 524
+    .line 552
     new-instance v0, Lcom/google/common/collect/Lists$TransformingRandomAccessList;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Lists$TransformingRandomAccessList;-><init>(Ljava/util/List;Lcom/google/common/base/Function;)V
 
     goto :goto_0
 
-    .line 525
+    .line 553
     :cond_0
     new-instance v0, Lcom/google/common/collect/Lists$TransformingSequentialList;
 

@@ -3,6 +3,11 @@
 .source "ServiceManagerBridge.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/util/concurrent/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # virtual methods
 .method public abstract servicesByState()Lcom/google/common/collect/ImmutableMultimap;
     .annotation system Ldalvik/annotation/Signature;

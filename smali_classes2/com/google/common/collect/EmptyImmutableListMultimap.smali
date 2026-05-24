@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/google/common/collect/ImmutableListMultimap<",
@@ -24,7 +27,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 28
+    .line 30
     new-instance v0, Lcom/google/common/collect/EmptyImmutableListMultimap;
 
     invoke-direct {v0}, Lcom/google/common/collect/EmptyImmutableListMultimap;-><init>()V
@@ -37,7 +40,7 @@
 .method private constructor <init>()V
     .locals 2
 
-    .line 31
+    .line 33
     invoke-static {}, Lcom/google/common/collect/ImmutableMap;->of()Lcom/google/common/collect/ImmutableMap;
 
     move-result-object v0
@@ -52,8 +55,42 @@
 .method private readResolve()Ljava/lang/Object;
     .locals 0
 
-    .line 35
+    .line 48
     sget-object p0, Lcom/google/common/collect/EmptyImmutableListMultimap;->INSTANCE:Lcom/google/common/collect/EmptyImmutableListMultimap;
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public asMap()Lcom/google/common/collect/ImmutableMap;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/common/collect/ImmutableMap<",
+            "Ljava/lang/Object;",
+            "Ljava/util/Collection<",
+            "Ljava/lang/Object;",
+            ">;>;"
+        }
+    .end annotation
+
+    .line 44
+    invoke-super {p0}, Lcom/google/common/collect/ImmutableListMultimap;->asMap()Lcom/google/common/collect/ImmutableMap;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public bridge synthetic asMap()Ljava/util/Map;
+    .locals 0
+
+    .line 27
+    invoke-virtual {p0}, Lcom/google/common/collect/EmptyImmutableListMultimap;->asMap()Lcom/google/common/collect/ImmutableMap;
+
+    move-result-object p0
 
     return-object p0
 .end method

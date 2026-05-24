@@ -66,7 +66,7 @@
     .line 26
     new-instance v0, Ljp/co/sony/mc/camera/view/LayoutAsyncInflateItems$CameraInflateItem;
 
-    const v1, 0x7f0c005d
+    const v1, 0x7f0c0056
 
     const/16 v2, 0xa
 
@@ -81,7 +81,7 @@
     .line 29
     new-instance v0, Ljp/co/sony/mc/camera/view/LayoutAsyncInflateItems$CameraInflateItem;
 
-    const v1, 0x7f0c0141
+    const v1, 0x7f0c0138
 
     const-string v2, "RECTANGLE_FAST_TOUCH"
 
@@ -96,7 +96,7 @@
 
     const/4 v1, 0x2
 
-    const v2, 0x7f0c005e
+    const v2, 0x7f0c0057
 
     const-string v4, "FAST_CAPTURING_VIEWFINDER_ITEMS"
 
@@ -116,6 +116,21 @@
 
 .method private constructor <init>(Ljava/lang/String;III)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "inflateId",
+            "viewCount"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)V"
@@ -136,6 +151,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/LayoutAsyncInflateItems$CameraInflateItem;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 25
     const-class v0, Ljp/co/sony/mc/camera/view/LayoutAsyncInflateItems$CameraInflateItem;

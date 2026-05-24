@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000T\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\n\n\u0002\u0010\u000b\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B\'\u0008\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0004\u0008\u0008\u0010\tJ\u0008\u0010\u001f\u001a\u00020\u0015H\u0014J\u0008\u0010 \u001a\u00020\u0015H\u0014J\u000e\u0010!\u001a\u00020\u00152\u0006\u0010\"\u001a\u00020\u0011J\u000e\u0010#\u001a\u00020\u00152\u0006\u0010$\u001a\u00020\u0007J\u0008\u0010%\u001a\u00020\u0015H\u0002J\u0006\u0010&\u001a\u00020\u0015J\u0010\u0010\'\u001a\u00020\u00152\u0006\u0010(\u001a\u00020)H\u0002R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\rX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u000fX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0010\u001a\u0004\u0018\u00010\u0011X\u0082\u000e\u00a2\u0006\u0002\n\u0000R(\u0010\u0012\u001a\u0010\u0012\u0004\u0012\u00020\u0014\u0012\u0004\u0012\u00020\u0015\u0018\u00010\u0013X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0016\u0010\u0017\"\u0004\u0008\u0018\u0010\u0019R(\u0010\u001a\u001a\u0010\u0012\u0004\u0012\u00020\u0011\u0012\u0004\u0012\u00020\u0015\u0018\u00010\u0013X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001b\u0010\u0017\"\u0004\u0008\u001c\u0010\u0019R\u000e\u0010\u001d\u001a\u00020\u001eX\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006*"
+        "\u0000N\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0010\u000b\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B\'\u0008\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0004\u0008\u0008\u0010\tJ\u0008\u0010\u001d\u001a\u00020\u0013H\u0014J\u0008\u0010\u001e\u001a\u00020\u0013H\u0014J\u000e\u0010\u001f\u001a\u00020\u00132\u0006\u0010 \u001a\u00020\u000fJ\u0008\u0010!\u001a\u00020\u0013H\u0002J\u0006\u0010\"\u001a\u00020\u0013J\u0010\u0010#\u001a\u00020\u00132\u0006\u0010$\u001a\u00020%H\u0002R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\rX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u000e\u001a\u0004\u0018\u00010\u000fX\u0082\u000e\u00a2\u0006\u0002\n\u0000R(\u0010\u0010\u001a\u0010\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\u0013\u0018\u00010\u0011X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0014\u0010\u0015\"\u0004\u0008\u0016\u0010\u0017R(\u0010\u0018\u001a\u0010\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020\u0013\u0018\u00010\u0011X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0019\u0010\u0015\"\u0004\u0008\u001a\u0010\u0017R\u000e\u0010\u001b\u001a\u00020\u001cX\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006&"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;",
@@ -23,8 +23,6 @@
         "Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;",
         "basicOptionAdapter",
         "Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingOptionItemAdapter;",
-        "streamingOptionAdapter",
-        "Ljp/co/sony/mc/camera/view/setting/streamingquicksetting/StreamingQuickSettingOptionItemAdapter;",
         "quickSettingItem",
         "Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItem;",
         "onOptionItemClick",
@@ -44,8 +42,6 @@
         "onDetachedFromWindow",
         "updateItem",
         "item",
-        "focusOnItemTitleLayout",
-        "accessibilityEvent",
         "updateLayout",
         "setAccessibilityFocus",
         "updateClickableArea",
@@ -98,22 +94,10 @@
 
 .field private quickSettingItem:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItem;
 
-.field private final streamingOptionAdapter:Ljp/co/sony/mc/camera/view/setting/streamingquicksetting/StreamingQuickSettingOptionItemAdapter;
-
 .field private final touchExplorationStateChangeListener:Landroid/view/accessibility/AccessibilityManager$TouchExplorationStateChangeListener;
 
 
 # direct methods
-.method public static synthetic $r8$lambda$BttSwfh96zXc3szX1meUHLlB-wk(Landroidx/constraintlayout/widget/ConstraintSet;I)Lkotlin/Unit;
-    .locals 0
-
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->updateLayout$lambda$8$lambda$7(Landroidx/constraintlayout/widget/ConstraintSet;I)Lkotlin/Unit;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
 .method public static synthetic $r8$lambda$DxCTSsByaeo2eh9EEwdISLLdN_Y(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Z)V
     .locals 0
 
@@ -122,14 +106,12 @@
     return-void
 .end method
 
-.method public static synthetic $r8$lambda$H-W4V-07BQJQ2oEJBTAWLpSXLoE(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingOptionItem;)Lkotlin/Unit;
+.method public static synthetic $r8$lambda$G0XpmxeTYMOUF6gGekF16DAhtYk(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Landroid/view/View;)V
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->_init_$lambda$2(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingOptionItem;)Lkotlin/Unit;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->_init_$lambda$3(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Landroid/view/View;)V
 
-    move-result-object p0
-
-    return-object p0
+    return-void
 .end method
 
 .method public static synthetic $r8$lambda$P6_GBv-vbkkg375cG_FaigS3XVw(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingOptionItem;)Lkotlin/Unit;
@@ -142,20 +124,22 @@
     return-object p0
 .end method
 
-.method public static synthetic $r8$lambda$QsfaDG6UsLkqSsXzQiZZ2GFPqtM(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Landroid/view/View;)V
+.method public static synthetic $r8$lambda$QWRJHPE_bEM-t-jWf62t-najjsk(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Landroid/view/View;)V
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->_init_$lambda$6(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Landroid/view/View;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->_init_$lambda$5(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Landroid/view/View;)V
 
     return-void
 .end method
 
-.method public static synthetic $r8$lambda$dc1NYTtHH_DN-vOHuNkSQzkXgpE(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Landroid/view/View;)V
+.method public static synthetic $r8$lambda$SHjWN8Bc4qCaZgWC-V5qFqrF4CI(Landroidx/constraintlayout/widget/ConstraintSet;I)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->_init_$lambda$4(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Landroid/view/View;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->updateLayout$lambda$7$lambda$6(Landroidx/constraintlayout/widget/ConstraintSet;I)Lkotlin/Unit;
 
-    return-void
+    move-result-object p0
+
+    return-object p0
 .end method
 
 .method static constructor <clinit>()V
@@ -219,17 +203,17 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 31
+    .line 30
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 40
+    .line 38
     new-instance p2, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView$$ExternalSyntheticLambda1;
 
     invoke-direct {p2, p0}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView$$ExternalSyntheticLambda1;-><init>(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;)V
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->touchExplorationStateChangeListener:Landroid/view/accessibility/AccessibilityManager$TouchExplorationStateChangeListener;
 
-    .line 46
+    .line 44
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object p2
@@ -240,17 +224,17 @@
 
     const/4 v0, 0x1
 
-    .line 45
+    .line 43
     invoke-static {p2, p3, v0}, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
     move-result-object p2
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
-    .line 47
+    .line 45
     iget-object p2, p2, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->itemOptions:Landroidx/recyclerview/widget/RecyclerView;
 
-    .line 48
+    .line 46
     new-instance p3, Landroidx/recyclerview/widget/LinearLayoutManager;
 
     const/4 v0, 0x0
@@ -259,25 +243,10 @@
 
     check-cast p3, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
 
+    .line 45
+    invoke-virtual {p2, p3}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutManager(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)V
+
     .line 47
-    invoke-virtual {p2, p3}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutManager(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)V
-
-    .line 49
-    iget-object p2, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
-
-    iget-object p2, p2, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->streamingItemOptions:Landroidx/recyclerview/widget/RecyclerView;
-
-    .line 50
-    new-instance p3, Landroidx/recyclerview/widget/LinearLayoutManager;
-
-    invoke-direct {p3, p1, v0, v0}, Landroidx/recyclerview/widget/LinearLayoutManager;-><init>(Landroid/content/Context;IZ)V
-
-    check-cast p3, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
-
-    .line 49
-    invoke-virtual {p2, p3}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutManager(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)V
-
-    .line 51
     new-instance p1, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingOptionItemAdapter;
 
     new-instance p2, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView$$ExternalSyntheticLambda2;
@@ -288,81 +257,54 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->basicOptionAdapter:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingOptionItemAdapter;
 
-    .line 54
-    new-instance p2, Ljp/co/sony/mc/camera/view/setting/streamingquicksetting/StreamingQuickSettingOptionItemAdapter;
+    .line 50
+    iget-object p2, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
+
+    iget-object p2, p2, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->itemInfo:Landroid/widget/ImageView;
 
     new-instance p3, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView$$ExternalSyntheticLambda3;
 
     invoke-direct {p3, p0}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView$$ExternalSyntheticLambda3;-><init>(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;)V
 
-    invoke-direct {p2, p3}, Ljp/co/sony/mc/camera/view/setting/streamingquicksetting/StreamingQuickSettingOptionItemAdapter;-><init>(Lkotlin/jvm/functions/Function1;)V
+    invoke-virtual {p2, p3}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    iput-object p2, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->streamingOptionAdapter:Ljp/co/sony/mc/camera/view/setting/streamingquicksetting/StreamingQuickSettingOptionItemAdapter;
+    .line 55
+    iget-object p2, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
-    .line 57
-    iget-object p3, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
+    iget-object p2, p2, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->backgroundWithInfo:Landroid/view/View;
 
-    iget-object p3, p3, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->itemInfo:Landroid/widget/ImageView;
+    new-instance p3, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView$$ExternalSyntheticLambda4;
 
-    new-instance v0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView$$ExternalSyntheticLambda4;
+    invoke-direct {p3, p0}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView$$ExternalSyntheticLambda4;-><init>(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;)V
 
-    invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView$$ExternalSyntheticLambda4;-><init>(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;)V
+    invoke-virtual {p2, p3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    invoke-virtual {p3, v0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    .line 60
+    sget-object p2, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->INSTANCE:Ljp/co/sony/mc/camera/util/AccessibilityUtil;
+
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->isTalkBackEnabled()Z
+
+    move-result p2
+
+    invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->updateClickableArea(Z)V
 
     .line 62
-    iget-object p3, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
+    iget-object p2, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
-    iget-object p3, p3, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->backgroundWithInfo:Landroid/view/View;
-
-    new-instance v0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView$$ExternalSyntheticLambda5;
-
-    invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView$$ExternalSyntheticLambda5;-><init>(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;)V
-
-    invoke-virtual {p3, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 67
-    sget-object p3, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->INSTANCE:Ljp/co/sony/mc/camera/util/AccessibilityUtil;
-
-    invoke-virtual {p3}, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->isTalkBackEnabled()Z
-
-    move-result p3
-
-    invoke-direct {p0, p3}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->updateClickableArea(Z)V
-
-    .line 69
-    iget-object p3, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
-
-    iget-object p3, p3, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->itemOptions:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object p2, p2, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->itemOptions:Landroidx/recyclerview/widget/RecyclerView;
 
     check-cast p1, Landroidx/recyclerview/widget/RecyclerView$Adapter;
 
-    invoke-virtual {p3, p1}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$Adapter;)V
+    invoke-virtual {p2, p1}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$Adapter;)V
 
-    .line 70
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->itemOptions:Landroidx/recyclerview/widget/RecyclerView;
-
-    const/4 p3, 0x0
-
-    invoke-virtual {p1, p3}, Landroidx/recyclerview/widget/RecyclerView;->setItemAnimator(Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;)V
-
-    .line 71
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->streamingItemOptions:Landroidx/recyclerview/widget/RecyclerView;
-
-    check-cast p2, Landroidx/recyclerview/widget/RecyclerView$Adapter;
-
-    invoke-virtual {p1, p2}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$Adapter;)V
-
-    .line 72
+    .line 63
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
-    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->streamingItemOptions:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->itemOptions:Landroidx/recyclerview/widget/RecyclerView;
 
-    invoke-virtual {p0, p3}, Landroidx/recyclerview/widget/RecyclerView;->setItemAnimator(Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;)V
+    const/4 p1, 0x0
+
+    invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->setItemAnimator(Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;)V
 
     return-void
 .end method
@@ -383,7 +325,7 @@
 
     const/4 p3, 0x0
 
-    .line 27
+    .line 26
     :cond_1
     invoke-direct {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -401,58 +343,33 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 52
+    .line 48
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->onOptionItemClick:Lkotlin/jvm/functions/Function1;
 
     if-eqz p0, :cond_0
 
     invoke-interface {p0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 53
+    .line 49
     :cond_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 .end method
 
-.method private static final _init_$lambda$2(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingOptionItem;)Lkotlin/Unit;
-    .locals 1
-
-    const-string/jumbo v0, "this$0"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "item"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 55
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->onOptionItemClick:Lkotlin/jvm/functions/Function1;
-
-    if-eqz p0, :cond_0
-
-    invoke-interface {p0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 56
-    :cond_0
-    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
-
-    return-object p0
-.end method
-
-.method private static final _init_$lambda$4(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Landroid/view/View;)V
+.method private static final _init_$lambda$3(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Landroid/view/View;)V
     .locals 0
 
     const-string/jumbo p1, "this$0"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 58
+    .line 51
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->quickSettingItem:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItem;
 
     if-eqz p1, :cond_0
 
-    .line 59
+    .line 52
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->onInfoClick:Lkotlin/jvm/functions/Function1;
 
     if-eqz p0, :cond_0
@@ -463,19 +380,19 @@
     return-void
 .end method
 
-.method private static final _init_$lambda$6(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Landroid/view/View;)V
+.method private static final _init_$lambda$5(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Landroid/view/View;)V
     .locals 0
 
     const-string/jumbo p1, "this$0"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 63
+    .line 56
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->quickSettingItem:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItem;
 
     if-eqz p1, :cond_0
 
-    .line 64
+    .line 57
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->onInfoClick:Lkotlin/jvm/functions/Function1;
 
     if-eqz p0, :cond_0
@@ -493,7 +410,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 41
+    .line 39
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->updateClickableArea(Z)V
 
     return-void
@@ -508,44 +425,37 @@
 
     if-eqz p1, :cond_0
 
-    .line 155
+    .line 125
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->backgroundWithInfo:Landroid/view/View;
 
     invoke-virtual {p1, v1}, Landroid/view/View;->setClickable(Z)V
 
-    .line 156
+    .line 126
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->backgroundWithInfo:Landroid/view/View;
 
     invoke-virtual {p1, v1}, Landroid/view/View;->setEnabled(Z)V
 
-    .line 157
+    .line 127
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->itemInfo:Landroid/widget/ImageView;
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setClickable(Z)V
 
-    .line 158
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->itemInfo:Landroid/widget/ImageView;
-
-    invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setEnabled(Z)V
-
-    .line 159
+    .line 128
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
-    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->streamingItemTitle:Landroid/widget/TextView;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->itemInfo:Landroid/widget/ImageView;
 
-    invoke-virtual {p0, v0}, Landroid/widget/TextView;->setClickable(Z)V
+    invoke-virtual {p0, v0}, Landroid/widget/ImageView;->setEnabled(Z)V
 
     goto :goto_0
 
-    .line 161
+    .line 130
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
@@ -553,74 +463,40 @@
 
     invoke-virtual {p1, v1}, Landroid/widget/ImageView;->setClickable(Z)V
 
-    .line 162
+    .line 131
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->itemInfo:Landroid/widget/ImageView;
 
     invoke-virtual {p1, v1}, Landroid/widget/ImageView;->setEnabled(Z)V
 
-    .line 163
+    .line 132
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->backgroundWithInfo:Landroid/view/View;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setClickable(Z)V
 
-    .line 164
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->backgroundWithInfo:Landroid/view/View;
-
-    invoke-virtual {p1, v0}, Landroid/view/View;->setEnabled(Z)V
-
-    .line 165
+    .line 133
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
-    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->streamingItemTitle:Landroid/widget/TextView;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->backgroundWithInfo:Landroid/view/View;
 
-    invoke-virtual {p0, v1}, Landroid/widget/TextView;->setClickable(Z)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setEnabled(Z)V
 
     :goto_0
     return-void
 .end method
 
 .method private final updateLayout()V
-    .locals 6
+    .locals 5
 
-    .line 95
+    .line 82
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->quickSettingItem:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItem;
 
-    const/4 v1, 0x0
+    if-eqz v0, :cond_2
 
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItem;->getDisPlayType()Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemType;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    :cond_0
-    move-object v0, v1
-
-    :goto_0
-    sget-object v2, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemType;->Basic:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemType;
-
-    const-string v3, "getContext(...)"
-
-    const/4 v4, 0x0
-
-    const/16 v5, 0x8
-
-    if-ne v0, v2, :cond_3
-
-    .line 96
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->quickSettingItem:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItem;
-
-    if-eqz v0, :cond_6
-
-    .line 97
+    .line 83
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->getRoot()Landroid/view/View;
@@ -631,144 +507,82 @@
 
     move-result-object v1
 
-    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v2, "getContext(...)"
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/ContextExtensionsKt;->isLargeDisplaySize(Landroid/content/Context;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_1
+    const/4 v2, 0x0
 
-    .line 98
+    if-eqz v1, :cond_0
+
+    .line 84
     new-instance v1, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;
 
-    iget-object v2, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
+    iget-object v3, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
-    iget-object v2, v2, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->itemOptions:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v3, v3, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->itemOptions:Landroidx/recyclerview/widget/RecyclerView;
 
-    invoke-virtual {v2}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {v3}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
-    move-result-object v2
+    move-result-object v3
 
-    invoke-direct {v1, v2}, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-direct {v1, v3}, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 99
-    iget-object v2, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
+    .line 85
+    iget-object v3, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
-    iget-object v2, v2, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->titleAreaContainer:Landroidx/constraintlayout/widget/ConstraintLayout;
+    iget-object v3, v3, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->titleAreaContainer:Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    invoke-virtual {v2}, Landroidx/constraintlayout/widget/ConstraintLayout;->getId()I
+    invoke-virtual {v3}, Landroidx/constraintlayout/widget/ConstraintLayout;->getId()I
 
-    move-result v2
+    move-result v3
 
-    iput v2, v1, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->topToBottom:I
+    iput v3, v1, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->topToBottom:I
 
-    .line 100
-    iput v4, v1, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->endToEnd:I
+    .line 86
+    iput v2, v1, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->endToEnd:I
 
-    .line 101
-    iget-object v2, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
+    .line 87
+    iget-object v3, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
-    iget-object v2, v2, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->itemOptions:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v3, v3, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->itemOptions:Landroidx/recyclerview/widget/RecyclerView;
 
     check-cast v1, Landroid/view/ViewGroup$LayoutParams;
 
-    invoke-virtual {v2, v1}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v3, v1}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 102
+    .line 88
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->titleAreaContainer:Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    const-string/jumbo v2, "titleAreaContainer"
+    const-string/jumbo v3, "titleAreaContainer"
 
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v1, Landroid/view/View;
 
-    new-instance v2, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView$$ExternalSyntheticLambda0;
+    new-instance v3, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView$$ExternalSyntheticLambda0;
 
-    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView$$ExternalSyntheticLambda0;-><init>()V
+    invoke-direct {v3}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView$$ExternalSyntheticLambda0;-><init>()V
 
-    invoke-static {v1, v2}, Ljp/co/sony/mc/camera/util/ViewExtensionsKt;->adjustConstrain(Landroid/view/View;Lkotlin/jvm/functions/Function2;)Landroid/view/View;
+    invoke-static {v1, v3}, Ljp/co/sony/mc/camera/util/ViewExtensionsKt;->adjustConstrain(Landroid/view/View;Lkotlin/jvm/functions/Function2;)Landroid/view/View;
 
-    .line 107
-    :cond_1
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
-
-    iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->streamingQuickSetting:Landroidx/constraintlayout/widget/ConstraintLayout;
-
-    invoke-virtual {v1, v5}, Landroidx/constraintlayout/widget/ConstraintLayout;->setVisibility(I)V
-
-    .line 108
+    .line 93
+    :cond_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->itemTitle:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->getContext()Landroid/content/Context;
 
-    move-result-object v2
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItem;->getTitleResId()I
-
-    move-result v3
-
-    invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/CharSequence;
-
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 109
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItem;->getHasInfo()Z
-
-    move-result v1
-
-    const-string v2, " "
-
-    if-eqz v1, :cond_2
-
-    .line 110
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
-
-    iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->itemInfo:Landroid/widget/ImageView;
-
-    invoke-virtual {v1, v4}, Landroid/widget/ImageView;->setVisibility(I)V
-
-    .line 111
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
-
-    iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->backgroundWithInfo:Landroid/view/View;
-
-    invoke-virtual {v1, v4}, Landroid/view/View;->setVisibility(I)V
-
-    .line 112
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
-
-    iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->selectedOptionWithInfo:Landroid/widget/TextView;
-
-    invoke-virtual {v1, v4}, Landroid/widget/TextView;->setVisibility(I)V
-
-    .line 113
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
-
-    iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->selectedOption:Landroid/widget/TextView;
-
-    invoke-virtual {v1, v5}, Landroid/widget/TextView;->setVisibility(I)V
-
-    .line 114
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
-
-    iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->selectedOptionWithInfo:Landroid/widget/TextView;
-
-    .line 115
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->getContext()Landroid/content/Context;
-
     move-result-object v3
 
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItem;->getSelectedOptionResId()I
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItem;->getTitleResId()I
 
     move-result v4
 
@@ -778,19 +592,80 @@
 
     check-cast v3, Ljava/lang/CharSequence;
 
-    .line 114
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 116
+    .line 94
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItem;->getHasInfo()Z
+
+    move-result v1
+
+    const-string v3, " "
+
+    const/16 v4, 0x8
+
+    if-eqz v1, :cond_1
+
+    .line 95
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
+
+    iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->itemInfo:Landroid/widget/ImageView;
+
+    invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setVisibility(I)V
+
+    .line 96
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
+
+    iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->backgroundWithInfo:Landroid/view/View;
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+
+    .line 97
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
+
+    iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->selectedOptionWithInfo:Landroid/widget/TextView;
+
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setVisibility(I)V
+
+    .line 98
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
+
+    iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->selectedOption:Landroid/widget/TextView;
+
+    invoke-virtual {v1, v4}, Landroid/widget/TextView;->setVisibility(I)V
+
+    .line 99
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
+
+    iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->selectedOptionWithInfo:Landroid/widget/TextView;
+
+    .line 100
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->getContext()Landroid/content/Context;
+
+    move-result-object v2
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItem;->getSelectedOptionResId()I
+
+    move-result v4
+
+    invoke-virtual {v2, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/CharSequence;
+
+    .line 99
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 101
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->titleArea:Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    new-instance v3, Ljava/lang/StringBuilder;
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 117
+    .line 102
     iget-object v4, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
     iget-object v4, v4, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->itemTitle:Landroid/widget/TextView;
@@ -799,15 +674,15 @@
 
     move-result-object v4
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    .line 118
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    .line 103
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
     iget-object v3, v3, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->selectedOptionWithInfo:Landroid/widget/TextView;
@@ -822,71 +697,71 @@
 
     check-cast v2, Ljava/lang/CharSequence;
 
-    .line 116
+    .line 101
     invoke-virtual {v1, v2}, Landroidx/constraintlayout/widget/ConstraintLayout;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    goto :goto_1
+    goto :goto_0
 
-    .line 120
-    :cond_2
+    .line 105
+    :cond_1
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->itemInfo:Landroid/widget/ImageView;
 
-    invoke-virtual {v1, v5}, Landroid/widget/ImageView;->setVisibility(I)V
+    invoke-virtual {v1, v4}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 121
+    .line 106
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->backgroundWithInfo:Landroid/view/View;
 
-    invoke-virtual {v1, v5}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v4}, Landroid/view/View;->setVisibility(I)V
 
-    .line 122
+    .line 107
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->selectedOptionWithInfo:Landroid/widget/TextView;
 
-    invoke-virtual {v1, v5}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v1, v4}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 123
+    .line 108
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->selectedOption:Landroid/widget/TextView;
 
-    invoke-virtual {v1, v4}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 124
+    .line 109
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->selectedOption:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->getContext()Landroid/content/Context;
 
-    move-result-object v3
+    move-result-object v2
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItem;->getSelectedOptionResId()I
 
     move-result v4
 
-    invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v2, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v2
 
-    check-cast v3, Ljava/lang/CharSequence;
+    check-cast v2, Ljava/lang/CharSequence;
 
-    invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 125
+    .line 110
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->titleArea:Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    new-instance v3, Ljava/lang/StringBuilder;
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 126
+    .line 111
     iget-object v4, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
     iget-object v4, v4, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->itemTitle:Landroid/widget/TextView;
@@ -895,15 +770,15 @@
 
     move-result-object v4
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    .line 127
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    .line 112
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
     iget-object v3, v3, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->selectedOption:Landroid/widget/TextView;
@@ -918,11 +793,11 @@
 
     check-cast v2, Ljava/lang/CharSequence;
 
-    .line 125
+    .line 110
     invoke-virtual {v1, v2}, Landroidx/constraintlayout/widget/ConstraintLayout;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 129
-    :goto_1
+    .line 114
+    :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->basicOptionAdapter:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingOptionItemAdapter;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItem;->getOptions()Ljava/util/List;
@@ -931,129 +806,11 @@
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingOptionItemAdapter;->updateItems(Ljava/util/List;)V
 
-    goto :goto_2
-
-    .line 131
-    :cond_3
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->quickSettingItem:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItem;
-
-    if-eqz v0, :cond_4
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItem;->getDisPlayType()Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemType;
-
-    move-result-object v1
-
-    :cond_4
-    sget-object v0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemType;->Streaming:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemType;
-
-    if-ne v1, v0, :cond_6
-
-    .line 132
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->quickSettingItem:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItem;
-
-    if-eqz v0, :cond_6
-
-    .line 133
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->getRoot()Landroid/view/View;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {v1}, Ljp/co/sony/mc/camera/util/ContextExtensionsKt;->isLargeDisplaySize(Landroid/content/Context;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_5
-
-    .line 134
-    new-instance v1, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;
-
-    .line 135
-    iget-object v2, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
-
-    iget-object v2, v2, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->streamingItemOptions:Landroidx/recyclerview/widget/RecyclerView;
-
-    invoke-virtual {v2}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    move-result-object v2
-
-    .line 134
-    invoke-direct {v1, v2}, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
-
-    .line 137
-    iget-object v2, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
-
-    iget-object v2, v2, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->streamingItemTitle:Landroid/widget/TextView;
-
-    invoke-virtual {v2}, Landroid/widget/TextView;->getId()I
-
-    move-result v2
-
-    iput v2, v1, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->topToBottom:I
-
-    .line 138
-    iput v4, v1, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->endToEnd:I
-
-    .line 139
-    iget-object v2, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
-
-    iget-object v2, v2, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->streamingItemOptions:Landroidx/recyclerview/widget/RecyclerView;
-
-    check-cast v1, Landroid/view/ViewGroup$LayoutParams;
-
-    invoke-virtual {v2, v1}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
-
-    .line 141
-    :cond_5
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
-
-    iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->quickSetting:Landroidx/constraintlayout/widget/ConstraintLayout;
-
-    invoke-virtual {v1, v5}, Landroidx/constraintlayout/widget/ConstraintLayout;->setVisibility(I)V
-
-    .line 142
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
-
-    iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->streamingItemTitle:Landroid/widget/TextView;
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->getContext()Landroid/content/Context;
-
-    move-result-object v2
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItem;->getTitleResId()I
-
-    move-result v3
-
-    invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/CharSequence;
-
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 143
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->streamingOptionAdapter:Ljp/co/sony/mc/camera/view/setting/streamingquicksetting/StreamingQuickSettingOptionItemAdapter;
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItem;->getOptions()Ljava/util/List;
-
-    move-result-object v0
-
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/setting/streamingquicksetting/StreamingQuickSettingOptionItemAdapter;->updateItems(Ljava/util/List;)V
-
-    :cond_6
-    :goto_2
+    :cond_2
     return-void
 .end method
 
-.method private static final updateLayout$lambda$8$lambda$7(Landroidx/constraintlayout/widget/ConstraintSet;I)Lkotlin/Unit;
+.method private static final updateLayout$lambda$7$lambda$6(Landroidx/constraintlayout/widget/ConstraintSet;I)Lkotlin/Unit;
     .locals 2
 
     const-string v0, "$this$adjustConstrain"
@@ -1062,15 +819,15 @@
 
     const/4 v0, 0x7
 
-    .line 103
+    .line 89
     invoke-virtual {p0, p1, v0}, Landroidx/constraintlayout/widget/ConstraintSet;->clear(II)V
 
     const/4 v1, 0x0
 
-    .line 104
+    .line 90
     invoke-virtual {p0, p1, v0, v1, v0}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIII)V
 
-    .line 105
+    .line 91
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
@@ -1078,19 +835,6 @@
 
 
 # virtual methods
-.method public final focusOnItemTitleLayout(I)V
-    .locals 0
-
-    .line 91
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
-
-    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->streamingItemTitle:Landroid/widget/TextView;
-
-    invoke-virtual {p0, p1}, Landroid/widget/TextView;->sendAccessibilityEvent(I)V
-
-    return-void
-.end method
-
 .method public final getOnInfoClick()Lkotlin/jvm/functions/Function1;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
@@ -1103,7 +847,7 @@
         }
     .end annotation
 
-    .line 38
+    .line 36
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->onInfoClick:Lkotlin/jvm/functions/Function1;
 
     return-object p0
@@ -1121,7 +865,7 @@
         }
     .end annotation
 
-    .line 37
+    .line 35
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->onOptionItemClick:Lkotlin/jvm/functions/Function1;
 
     return-object p0
@@ -1130,10 +874,10 @@
 .method protected onAttachedToWindow()V
     .locals 1
 
-    .line 76
+    .line 67
     invoke-super {p0}, Landroid/widget/FrameLayout;->onAttachedToWindow()V
 
-    .line 77
+    .line 68
     sget-object v0, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->INSTANCE:Ljp/co/sony/mc/camera/util/AccessibilityUtil;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->touchExplorationStateChangeListener:Landroid/view/accessibility/AccessibilityManager$TouchExplorationStateChangeListener;
@@ -1146,10 +890,10 @@
 .method protected onDetachedFromWindow()V
     .locals 1
 
-    .line 81
+    .line 72
     invoke-super {p0}, Landroid/widget/FrameLayout;->onDetachedFromWindow()V
 
-    .line 82
+    .line 73
     sget-object v0, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->INSTANCE:Ljp/co/sony/mc/camera/util/AccessibilityUtil;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->touchExplorationStateChangeListener:Landroid/view/accessibility/AccessibilityManager$TouchExplorationStateChangeListener;
@@ -1162,7 +906,7 @@
 .method public final setAccessibilityFocus()V
     .locals 1
 
-    .line 149
+    .line 119
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->binding:Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/QuickSettingItemBinding;->itemOptions:Landroidx/recyclerview/widget/RecyclerView;
@@ -1175,7 +919,7 @@
 
     const/16 v0, 0x8
 
-    .line 150
+    .line 120
     invoke-virtual {p0, v0}, Landroid/view/View;->sendAccessibilityEvent(I)V
 
     return-void
@@ -1194,7 +938,7 @@
         }
     .end annotation
 
-    .line 38
+    .line 36
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->onInfoClick:Lkotlin/jvm/functions/Function1;
 
     return-void
@@ -1213,7 +957,7 @@
         }
     .end annotation
 
-    .line 37
+    .line 35
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->onOptionItemClick:Lkotlin/jvm/functions/Function1;
 
     return-void
@@ -1226,10 +970,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 86
+    .line 77
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->quickSettingItem:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItem;
 
-    .line 87
+    .line 78
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->updateLayout()V
 
     return-void

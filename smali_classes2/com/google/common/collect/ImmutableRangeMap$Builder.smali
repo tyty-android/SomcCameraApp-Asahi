@@ -45,10 +45,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 91
+    .line 116
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 92
+    .line 117
     invoke-static {}, Lcom/google/common/collect/Lists;->newArrayList()Ljava/util/ArrayList;
 
     move-result-object v0
@@ -70,7 +70,7 @@
         }
     .end annotation
 
-    .line 131
+    .line 156
     iget-object v0, p0, Lcom/google/common/collect/ImmutableRangeMap$Builder;->entries:Ljava/util/List;
 
     invoke-static {}, Lcom/google/common/collect/Range;->rangeLexOrdering()Lcom/google/common/collect/Ordering;
@@ -83,7 +83,7 @@
 
     invoke-static {v0, v1}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    .line 132
+    .line 157
     new-instance v0, Lcom/google/common/collect/ImmutableList$Builder;
 
     iget-object v1, p0, Lcom/google/common/collect/ImmutableRangeMap$Builder;->entries:Ljava/util/List;
@@ -94,7 +94,7 @@
 
     invoke-direct {v0, v1}, Lcom/google/common/collect/ImmutableList$Builder;-><init>(I)V
 
-    .line 133
+    .line 158
     new-instance v1, Lcom/google/common/collect/ImmutableList$Builder;
 
     iget-object v2, p0, Lcom/google/common/collect/ImmutableRangeMap$Builder;->entries:Ljava/util/List;
@@ -107,7 +107,7 @@
 
     const/4 v2, 0x0
 
-    .line 134
+    .line 159
     :goto_0
     iget-object v3, p0, Lcom/google/common/collect/ImmutableRangeMap$Builder;->entries:Ljava/util/List;
 
@@ -117,7 +117,7 @@
 
     if-ge v2, v3, :cond_2
 
-    .line 135
+    .line 160
     iget-object v3, p0, Lcom/google/common/collect/ImmutableRangeMap$Builder;->entries:Ljava/util/List;
 
     invoke-interface {v3, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -134,7 +134,7 @@
 
     if-lez v2, :cond_1
 
-    .line 137
+    .line 162
     iget-object v4, p0, Lcom/google/common/collect/ImmutableRangeMap$Builder;->entries:Ljava/util/List;
 
     add-int/lit8 v5, v2, -0x1
@@ -151,7 +151,7 @@
 
     check-cast v4, Lcom/google/common/collect/Range;
 
-    .line 138
+    .line 163
     invoke-virtual {v3, v4}, Lcom/google/common/collect/Range;->isConnected(Lcom/google/common/collect/Range;)Z
 
     move-result v5
@@ -170,59 +170,27 @@
 
     goto :goto_1
 
-    .line 139
+    .line 164
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    invoke-static {v4}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "Overlapping ranges: range "
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    invoke-static {v3}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/String;->length()I
-
-    move-result v2
-
-    add-int/lit8 v2, v2, 0x2f
-
-    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/String;->length()I
-
-    move-result v3
-
-    add-int/2addr v2, v3
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3, v2}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v2, "Overlapping ranges: range "
-
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v2, " overlaps with entry "
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
+    const-string v1, " overlaps with entry "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -234,12 +202,12 @@
 
     throw p0
 
-    .line 143
+    .line 168
     :cond_1
     :goto_1
     invoke-virtual {v0, v3}, Lcom/google/common/collect/ImmutableList$Builder;->add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList$Builder;
 
-    .line 144
+    .line 169
     iget-object v3, p0, Lcom/google/common/collect/ImmutableRangeMap$Builder;->entries:Ljava/util/List;
 
     invoke-interface {v3, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -256,9 +224,9 @@
 
     add-int/lit8 v2, v2, 0x1
 
-    goto/16 :goto_0
+    goto :goto_0
 
-    .line 146
+    .line 171
     :cond_2
     new-instance p0, Lcom/google/common/collect/ImmutableRangeMap;
 
@@ -277,6 +245,15 @@
 
 .method combine(Lcom/google/common/collect/ImmutableRangeMap$Builder;)Lcom/google/common/collect/ImmutableRangeMap$Builder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "builder"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -287,7 +264,7 @@
         }
     .end annotation
 
-    .line 120
+    .line 145
     iget-object v0, p0, Lcom/google/common/collect/ImmutableRangeMap$Builder;->entries:Ljava/util/List;
 
     iget-object p1, p1, Lcom/google/common/collect/ImmutableRangeMap$Builder;->entries:Ljava/util/List;
@@ -299,6 +276,17 @@
 
 .method public put(Lcom/google/common/collect/Range;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableRangeMap$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "range",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -309,13 +297,13 @@
         }
     .end annotation
 
-    .line 102
+    .line 127
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 103
+    .line 128
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 104
+    .line 129
     invoke-virtual {p1}, Lcom/google/common/collect/Range;->isEmpty()Z
 
     move-result v0
@@ -326,7 +314,7 @@
 
     invoke-static {v0, v1, p1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;)V
 
-    .line 105
+    .line 130
     iget-object v0, p0, Lcom/google/common/collect/ImmutableRangeMap$Builder;->entries:Ljava/util/List;
 
     invoke-static {p1, p2}, Lcom/google/common/collect/Maps;->immutableEntry(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map$Entry;
@@ -340,6 +328,15 @@
 
 .method public putAll(Lcom/google/common/collect/RangeMap;)Lcom/google/common/collect/ImmutableRangeMap$Builder;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "rangeMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -350,7 +347,7 @@
         }
     .end annotation
 
-    .line 112
+    .line 137
     invoke-interface {p1}, Lcom/google/common/collect/RangeMap;->asMapOfRanges()Ljava/util/Map;
 
     move-result-object p1
@@ -376,7 +373,7 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 113
+    .line 138
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v1

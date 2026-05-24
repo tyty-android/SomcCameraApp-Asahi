@@ -53,7 +53,7 @@
     .line 20
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/FocusMagnification;
 
-    const v1, 0x7f1103f4
+    const v1, 0x7f11043f
 
     const-string v2, "ON"
 
@@ -70,7 +70,7 @@
 
     const/4 v1, 0x1
 
-    const v2, 0x7f1103f3
+    const v2, 0x7f11043e
 
     const-string v3, "OFF"
 
@@ -90,6 +90,21 @@
 
 .method private constructor <init>(Ljava/lang/String;III)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)V"
@@ -108,8 +123,30 @@
     return-void
 .end method
 
-.method public static calcFocusMagnificationRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;I)F
-    .locals 3
+.method public static calcFocusMagnificationRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljava/lang/Float;IZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)F
+    .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId",
+            "baseZoomRatio",
+            "zoomStep",
+            "isBokeh",
+            "videoStabilizer",
+            "videoMfHdr",
+            "isHfr"
+        }
+    .end annotation
 
     .line 134
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getMaxFocusMagnificationRatio(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/lang/Float;
@@ -137,33 +174,77 @@
 
     .line 137
     :cond_0
-    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+    invoke-virtual {p2}, Ljava/lang/Float;->floatValue()F
 
-    const/4 v2, 0x0
+    move-result v4
 
-    invoke-static {p0, p1, p2, v0, v2}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio;->isInOpticalZoomRange(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ILjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Z
+    sget-object v8, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+
+    const/4 v9, 0x0
+
+    move-object v2, p0
+
+    move-object v3, p1
+
+    move v5, p3
+
+    move v6, p4
+
+    move-object v7, p5
+
+    invoke-static/range {v2 .. v9}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio;->isInOpticalZoomRange(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FIZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 139
-    invoke-static {p2}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getZoomRatio(I)F
+    invoke-virtual {p2}, Ljava/lang/Float;->floatValue()F
 
-    move-result p0
+    move-result v4
+
+    move-object v2, p0
+
+    move-object v3, p1
+
+    move v5, p3
+
+    move v6, p4
+
+    move-object v7, p5
+
+    move-object/from16 v8, p6
+
+    move/from16 v9, p7
+
+    invoke-static/range {v2 .. v9}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getZoomRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FIZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)F
+
+    move-result v0
 
     :goto_0
-    mul-float/2addr p0, v1
+    mul-float/2addr v0, v1
 
-    return p0
+    return v0
 
-    .line 141
+    .line 142
     :cond_1
-    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
 
-    invoke-static {p0, p1, p2, v0, v2}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio;->getBaseZoomRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ILjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)F
+    const/4 v8, 0x0
 
-    move-result p0
+    move-object v2, p0
+
+    move-object v3, p1
+
+    move v4, p3
+
+    move v5, p4
+
+    move-object v6, p5
+
+    invoke-static/range {v2 .. v8}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio;->getBaseZoomRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;IZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)F
+
+    move-result v0
 
     goto :goto_0
 .end method
@@ -171,7 +252,7 @@
 .method public static getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/FocusMagnification;
     .locals 1
 
-    .line 128
+    .line 127
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/FocusMagnification;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/FocusMagnification;
 
     return-object v0
@@ -179,13 +260,23 @@
 
 .method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/FocusMagnification;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "capturingMode",
+            "cameraId"
+        }
+    .end annotation
 
-    .line 105
+    .line 104
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 106
+    .line 105
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
 
     move-result v1
@@ -196,7 +287,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 107
+    .line 106
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProPhoto()Z
 
     move-result p1
@@ -207,13 +298,13 @@
 
     if-ne p0, p1, :cond_1
 
-    .line 108
+    .line 107
     :cond_0
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/FocusMagnification;->ON:Ljp/co/sony/mc/camera/configuration/parameters/FocusMagnification;
 
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 110
+    .line 109
     :cond_1
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/FocusMagnification;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/FocusMagnification;
 
@@ -221,7 +312,7 @@
 
     const/4 p0, 0x0
 
-    .line 111
+    .line 110
     new-array p0, p0, [Ljp/co/sony/mc/camera/configuration/parameters/FocusMagnification;
 
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
@@ -235,6 +326,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/FocusMagnification;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 19
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/FocusMagnification;
@@ -296,7 +395,7 @@
 .method public getName()Ljava/lang/String;
     .locals 0
 
-    .line 116
+    .line 115
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p0

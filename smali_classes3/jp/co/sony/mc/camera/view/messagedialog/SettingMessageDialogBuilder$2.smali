@@ -30,13 +30,28 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder$OnCheckStateConfirmedListener;Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder$OnSettingMessageDialogCheckBoxChangeListener;Landroid/content/DialogInterface$OnClickListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$onCheckStateConfirmedListener",
+            "val$checkBoxListener",
+            "val$onNegativeListener"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 141
+    .line 133
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder$2;->this$0:Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder$2;->val$onCheckStateConfirmedListener:Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder$OnCheckStateConfirmedListener;
@@ -54,20 +69,30 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dialog",
+            "which"
+        }
+    .end annotation
 
-    .line 144
+    .line 136
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder$2;->val$onCheckStateConfirmedListener:Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder$OnCheckStateConfirmedListener;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder$2;->val$checkBoxListener:Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder$OnSettingMessageDialogCheckBoxChangeListener;
 
-    .line 145
+    .line 137
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder$OnSettingMessageDialogCheckBoxChangeListener;->isItemChecked()Z
 
     move-result v1
 
     invoke-interface {v0, v1}, Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder$OnCheckStateConfirmedListener;->onCheckedStateConfirmed(Z)V
 
-    .line 146
+    .line 138
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder$2;->val$onNegativeListener:Landroid/content/DialogInterface$OnClickListener;
 
     invoke-interface {p0, p1, p2}, Landroid/content/DialogInterface$OnClickListener;->onClick(Landroid/content/DialogInterface;I)V

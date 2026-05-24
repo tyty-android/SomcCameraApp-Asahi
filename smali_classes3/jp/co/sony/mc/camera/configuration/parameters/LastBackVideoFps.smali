@@ -26,6 +26,15 @@
 # direct methods
 .method constructor <init>(Ljava/util/HashMap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "lastBackVideoFpsMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -47,6 +56,14 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/configuration/parameters/LastBackVideoFps;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "lastBackVideoFpsMap"
+        }
+    .end annotation
 
     .line 30
     invoke-direct {p0}, Ljp/co/sony/mc/camera/configuration/parameters/ExtensionData;-><init>()V
@@ -118,6 +135,14 @@
 # virtual methods
 .method public get(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mode"
+        }
+    .end annotation
 
     .line 39
     iget-object p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/LastBackVideoFps;->mLastBackVideoFpsMap:Ljava/util/HashMap;
@@ -133,6 +158,16 @@
 
 .method public set(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "videoFps"
+        }
+    .end annotation
 
     .line 35
     iget-object p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/LastBackVideoFps;->mLastBackVideoFpsMap:Ljava/util/HashMap;
@@ -144,6 +179,16 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dest",
+            "flags"
+        }
+    .end annotation
 
     .line 44
     iget-object p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/LastBackVideoFps;->mLastBackVideoFpsMap:Ljava/util/HashMap;

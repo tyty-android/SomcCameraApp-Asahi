@@ -63,9 +63,9 @@
     .line 26
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;
 
-    const v1, 0x7f0802fb
+    const v1, 0x7f080369
 
-    const v2, 0x7f110480
+    const v2, 0x7f1104c9
 
     const-string v3, "OBJECT_TRACKING_AE"
 
@@ -78,9 +78,9 @@
     .line 29
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;
 
-    const v1, 0x7f0802fa
+    const v1, 0x7f080368
 
-    const v2, 0x7f110481
+    const v2, 0x7f1104ca
 
     const-string v3, "OBJECT_TRACKING"
 
@@ -93,9 +93,9 @@
     .line 32
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;
 
-    const v1, 0x7f0802f9
+    const v1, 0x7f080367
 
-    const v2, 0x7f11047e
+    const v2, 0x7f1104c7
 
     const-string v3, "FOCUS_ONLY"
 
@@ -108,9 +108,9 @@
     .line 35
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;
 
-    const v1, 0x7f0802f8
+    const v1, 0x7f080366
 
-    const v2, 0x7f110482
+    const v2, 0x7f1104cb
 
     const-string v3, "FOCUS_AND_EXPOSURE"
 
@@ -132,6 +132,21 @@
 
 .method private constructor <init>(Ljava/lang/String;III)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)V"
@@ -152,6 +167,16 @@
 
 .method public static getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId"
+        }
+    .end annotation
 
     .line 133
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;
@@ -194,6 +219,16 @@
 
 .method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId"
+        }
+    .end annotation
 
     .line 104
     new-instance v0, Ljava/util/ArrayList;
@@ -305,6 +340,16 @@
 
 .method private static isObjectTrackingSupported(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId"
+        }
+    .end annotation
 
     .line 159
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getCameraCapability(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;
@@ -358,6 +403,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 25
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;

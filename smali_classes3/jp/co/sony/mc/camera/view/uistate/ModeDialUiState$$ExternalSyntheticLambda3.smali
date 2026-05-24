@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function8;
+.implements Lkotlin/jvm/functions/Function9;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
@@ -66,7 +66,13 @@
 
     check-cast p7, Ljava/lang/Boolean;
 
-    invoke-static/range {p0 .. p7}, Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;->$r8$lambda$JmpfZ4Vo3cq38XEMBayJaJpwCAE(Ljava/lang/Boolean;ZZZZZZLjava/lang/Boolean;)Z
+    check-cast p9, Ljava/lang/Boolean;
+
+    invoke-virtual {p9}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p8
+
+    invoke-static/range {p0 .. p8}, Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;->$r8$lambda$P5VW6x_cX6W5VPib-0E24PNaiEI(Ljava/lang/Boolean;ZZZZZZLjava/lang/Boolean;Z)Z
 
     move-result p0
 

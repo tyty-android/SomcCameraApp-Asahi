@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/MultiWindowActivity;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 229
     iput-object p1, p0, Ljp/co/sony/mc/camera/MultiWindowActivity$2;->this$0:Ljp/co/sony/mc/camera/MultiWindowActivity;
@@ -37,6 +45,14 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dialogInterface"
+        }
+    .end annotation
 
     .line 232
     invoke-static {}, Landroid/os/Process;->myPid()I

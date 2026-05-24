@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function4;
+.implements Lkotlin/jvm/functions/Function5;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
@@ -34,7 +34,13 @@
 
     check-cast p4, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
 
-    invoke-static {p0, p2, p3, p4}, Ljp/co/sony/mc/camera/view/viewbinder/HintTextViewBinder;->$r8$lambda$R7RS7NiZ7Y3rl9TQ3bH59tbpb1c(FLandroid/util/Size;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)Ljp/co/sony/mc/camera/util/TuplesUtil$Quadruple;
+    check-cast p5, Ljava/lang/Boolean;
+
+    invoke-virtual {p5}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    invoke-static {p0, p2, p3, p4, p1}, Ljp/co/sony/mc/camera/view/viewbinder/HintTextViewBinder;->$r8$lambda$NplIBdEYA4yD4xTbVx36bk91UWk(FLandroid/util/Size;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;Z)Ljp/co/sony/mc/camera/util/TuplesUtil$Quintuple;
 
     move-result-object p0
 

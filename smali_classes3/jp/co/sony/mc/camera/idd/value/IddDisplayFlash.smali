@@ -63,7 +63,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 417
+    .line 431
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;->value:Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;
@@ -76,7 +76,7 @@
 .method public final getValue()Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;
     .locals 0
 
-    .line 417
+    .line 431
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;->value:Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;
 
     return-object p0
@@ -89,7 +89,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 417
+    .line 431
     iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;->value:Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;
 
     return-void
@@ -98,7 +98,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 418
+    .line 432
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;->value:Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;
 
     sget-object v0, Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash$WhenMappings;->$EnumSwitchMapping$0:[I
@@ -117,18 +117,18 @@
 
     if-eq p0, v0, :cond_0
 
-    .line 421
+    .line 435
     const-string p0, "OFF"
 
     goto :goto_0
 
-    .line 420
+    .line 434
     :cond_0
     const-string p0, "FILL_FLASH"
 
     goto :goto_0
 
-    .line 419
+    .line 433
     :cond_1
     const-string p0, "AUTO"
 

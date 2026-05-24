@@ -30,7 +30,7 @@
 
     check-cast p2, Ljava/lang/Boolean;
 
-    invoke-static {p0, p2}, Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;->$r8$lambda$qKmQ-Q8xx0apKYJi3EW1A0Yp9Yk(ZLjava/lang/Boolean;)Z
+    invoke-static {p0, p2}, Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;->$r8$lambda$i3o2kj1euGb9Zz6ph1HKhr39VxQ(ZLjava/lang/Boolean;)Z
 
     move-result p0
 

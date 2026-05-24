@@ -21,6 +21,14 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/view/EventProcedure;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 231
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
@@ -40,24 +48,60 @@
 
 .method doClick(Landroid/graphics/Point;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "point"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method doDoubleClick(Landroid/graphics/Point;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "point"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method doLongClick(Landroid/graphics/Point;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "point"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method doTouchAreaMove(Landroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "currentPoint",
+            "lastPoint",
+            "downPoint"
+        }
+    .end annotation
 
     return-void
 .end method
@@ -70,6 +114,14 @@
 
 .method doTouchAreaScaling(F)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "scaleLength"
+        }
+    .end annotation
 
     return-void
 .end method

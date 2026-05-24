@@ -47,6 +47,15 @@
 # direct methods
 .method constructor <init>(Ljava/util/EnumMap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "delegate"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -55,10 +64,10 @@
         }
     .end annotation
 
-    .line 107
+    .line 120
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 108
+    .line 121
     iput-object p1, p0, Lcom/google/common/collect/ImmutableEnumMap$EnumSerializedForm;->delegate:Ljava/util/EnumMap;
 
     return-void
@@ -69,7 +78,7 @@
 .method readResolve()Ljava/lang/Object;
     .locals 2
 
-    .line 112
+    .line 125
     new-instance v0, Lcom/google/common/collect/ImmutableEnumMap;
 
     iget-object p0, p0, Lcom/google/common/collect/ImmutableEnumMap$EnumSerializedForm;->delegate:Ljava/util/EnumMap;

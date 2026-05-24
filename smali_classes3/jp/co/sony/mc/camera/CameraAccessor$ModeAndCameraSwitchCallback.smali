@@ -5,7 +5,6 @@
 # interfaces
 .implements Ljp/co/sony/mc/camera/CameraAccessor$PreviewCallback;
 .implements Ljp/co/sony/mc/camera/CameraAccessor$ReadyStateCallback;
-.implements Ljp/co/sony/mc/camera/CameraAccessor$SwitchLensStateCallback;
 
 
 # annotations
@@ -30,6 +29,14 @@
 .end method
 
 .method public abstract onNewSettingsApplied(Z)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isReconfigureNeeded"
+        }
+    .end annotation
 .end method
 
 .method public abstract onPreviewStopped()V
@@ -38,10 +45,32 @@
 .method public abstract onReadyToResizeSurface()V
 .end method
 
-.method public abstract onRemainSavingMediaFound(IZ)V
+.method public abstract onRemainSavingMediaFound(IZZ)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "total",
+            "isVideo",
+            "showSavingProgress"
+        }
+    .end annotation
 .end method
 
 .method public abstract onRemainSavingProgress(II)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "total",
+            "progress"
+        }
+    .end annotation
 .end method
 
 .method public abstract onResumeTimeout()V

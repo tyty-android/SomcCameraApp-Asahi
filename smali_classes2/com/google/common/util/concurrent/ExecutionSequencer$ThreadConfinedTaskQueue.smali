@@ -16,17 +16,29 @@
 
 # instance fields
 .field nextExecutor:Ljava/util/concurrent/Executor;
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+.end field
 
 .field nextTask:Ljava/lang/Runnable;
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+.end field
 
 .field thread:Ljava/lang/Thread;
+    .annotation runtime Lcom/google/errorprone/annotations/concurrent/LazyInit;
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+.end field
 
 
 # direct methods
 .method private constructor <init>()V
     .locals 0
 
-    .line 101
+    .line 110
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -35,7 +47,7 @@
 .method synthetic constructor <init>(Lcom/google/common/util/concurrent/ExecutionSequencer$1;)V
     .locals 0
 
-    .line 101
+    .line 110
     invoke-direct {p0}, Lcom/google/common/util/concurrent/ExecutionSequencer$ThreadConfinedTaskQueue;-><init>()V
 
     return-void

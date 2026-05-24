@@ -31,10 +31,10 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 280
+    .line 279
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 281
+    .line 280
     invoke-static {}, Lcom/google/common/collect/ImmutableMap;->of()Lcom/google/common/collect/ImmutableMap;
 
     move-result-object v0
@@ -46,6 +46,15 @@
 
 .method private constructor <init>(Lcom/google/common/collect/ImmutableMap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "map"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -56,10 +65,10 @@
         }
     .end annotation
 
-    .line 284
+    .line 283
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 285
+    .line 284
     iput-object p1, p0, Lcom/google/common/reflect/TypeResolver$TypeTable;->map:Lcom/google/common/collect/ImmutableMap;
 
     return-void
@@ -69,6 +78,15 @@
 # virtual methods
 .method final resolve(Ljava/lang/reflect/TypeVariable;)Ljava/lang/reflect/Type;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "var"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -78,12 +96,12 @@
         }
     .end annotation
 
-    .line 303
+    .line 302
     new-instance v0, Lcom/google/common/reflect/TypeResolver$TypeTable$1;
 
     invoke-direct {v0, p0, p1, p0}, Lcom/google/common/reflect/TypeResolver$TypeTable$1;-><init>(Lcom/google/common/reflect/TypeResolver$TypeTable;Ljava/lang/reflect/TypeVariable;Lcom/google/common/reflect/TypeResolver$TypeTable;)V
 
-    .line 313
+    .line 312
     invoke-virtual {p0, p1, v0}, Lcom/google/common/reflect/TypeResolver$TypeTable;->resolveInternal(Ljava/lang/reflect/TypeVariable;Lcom/google/common/reflect/TypeResolver$TypeTable;)Ljava/lang/reflect/Type;
 
     move-result-object p0
@@ -93,6 +111,17 @@
 
 .method resolveInternal(Ljava/lang/reflect/TypeVariable;Lcom/google/common/reflect/TypeResolver$TypeTable;)Ljava/lang/reflect/Type;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "var",
+            "forDependants"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -104,7 +133,7 @@
         }
     .end annotation
 
-    .line 325
+    .line 324
     iget-object p0, p0, Lcom/google/common/reflect/TypeResolver$TypeTable;->map:Lcom/google/common/collect/ImmutableMap;
 
     new-instance v0, Lcom/google/common/reflect/TypeResolver$TypeVariableKey;
@@ -121,19 +150,19 @@
 
     if-nez p0, :cond_2
 
-    .line 327
+    .line 326
     invoke-interface {p1}, Ljava/lang/reflect/TypeVariable;->getBounds()[Ljava/lang/reflect/Type;
 
     move-result-object p0
 
-    .line 328
+    .line 327
     array-length v1, p0
 
     if-nez v1, :cond_0
 
     return-object p1
 
-    .line 331
+    .line 330
     :cond_0
     new-instance v1, Lcom/google/common/reflect/TypeResolver;
 
@@ -143,12 +172,12 @@
 
     move-result-object p2
 
-    .line 360
+    .line 359
     sget-boolean v0, Lcom/google/common/reflect/Types$NativeTypeVariableEquals;->NATIVE_TYPE_VARIABLE_ONLY:Z
 
     if-eqz v0, :cond_1
 
-    .line 361
+    .line 360
     invoke-static {p0, p2}, Ljava/util/Arrays;->equals([Ljava/lang/Object;[Ljava/lang/Object;)Z
 
     move-result p0
@@ -157,7 +186,7 @@
 
     return-object p1
 
-    .line 365
+    .line 364
     :cond_1
     invoke-interface {p1}, Ljava/lang/reflect/TypeVariable;->getGenericDeclaration()Ljava/lang/reflect/GenericDeclaration;
 
@@ -167,14 +196,14 @@
 
     move-result-object p1
 
-    .line 364
+    .line 363
     invoke-static {p0, p1, p2}, Lcom/google/common/reflect/Types;->newArtificialTypeVariable(Ljava/lang/reflect/GenericDeclaration;Ljava/lang/String;[Ljava/lang/reflect/Type;)Ljava/lang/reflect/TypeVariable;
 
     move-result-object p0
 
     return-object p0
 
-    .line 368
+    .line 367
     :cond_2
     new-instance p1, Lcom/google/common/reflect/TypeResolver;
 
@@ -189,6 +218,15 @@
 
 .method final where(Ljava/util/Map;)Lcom/google/common/reflect/TypeResolver$TypeTable;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "mappings"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -201,17 +239,17 @@
         }
     .end annotation
 
-    .line 290
+    .line 289
     invoke-static {}, Lcom/google/common/collect/ImmutableMap;->builder()Lcom/google/common/collect/ImmutableMap$Builder;
 
     move-result-object v0
 
-    .line 291
+    .line 290
     iget-object p0, p0, Lcom/google/common/reflect/TypeResolver$TypeTable;->map:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {v0, p0}, Lcom/google/common/collect/ImmutableMap$Builder;->putAll(Ljava/util/Map;)Lcom/google/common/collect/ImmutableMap$Builder;
 
-    .line 292
+    .line 291
     invoke-interface {p1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object p0
@@ -233,21 +271,21 @@
 
     check-cast p1, Ljava/util/Map$Entry;
 
-    .line 293
+    .line 292
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Lcom/google/common/reflect/TypeResolver$TypeVariableKey;
 
-    .line 294
+    .line 293
     invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, Ljava/lang/reflect/Type;
 
-    .line 295
+    .line 294
     invoke-virtual {v1, p1}, Lcom/google/common/reflect/TypeResolver$TypeVariableKey;->equalsType(Ljava/lang/reflect/Type;)Z
 
     move-result v2
@@ -258,16 +296,16 @@
 
     invoke-static {v2, v3, v1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;Ljava/lang/Object;)V
 
-    .line 296
+    .line 295
     invoke-virtual {v0, v1, p1}, Lcom/google/common/collect/ImmutableMap$Builder;->put(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap$Builder;
 
     goto :goto_0
 
-    .line 298
+    .line 297
     :cond_0
     new-instance p0, Lcom/google/common/reflect/TypeResolver$TypeTable;
 
-    invoke-virtual {v0}, Lcom/google/common/collect/ImmutableMap$Builder;->build()Lcom/google/common/collect/ImmutableMap;
+    invoke-virtual {v0}, Lcom/google/common/collect/ImmutableMap$Builder;->buildOrThrow()Lcom/google/common/collect/ImmutableMap;
 
     move-result-object p1
 

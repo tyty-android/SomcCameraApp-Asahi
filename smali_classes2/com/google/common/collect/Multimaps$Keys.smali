@@ -40,6 +40,15 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/Multimap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "multimap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -48,10 +57,10 @@
         }
     .end annotation
 
-    .line 1574
+    .line 1729
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMultiset;-><init>()V
 
-    .line 1575
+    .line 1730
     iput-object p1, p0, Lcom/google/common/collect/Multimaps$Keys;->multimap:Lcom/google/common/collect/Multimap;
 
     return-void
@@ -62,7 +71,7 @@
 .method public clear()V
     .locals 0
 
-    .line 1653
+    .line 1809
     iget-object p0, p0, Lcom/google/common/collect/Multimaps$Keys;->multimap:Lcom/google/common/collect/Multimap;
 
     invoke-interface {p0}, Lcom/google/common/collect/Multimap;->clear()V
@@ -73,11 +82,19 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "element"
+        }
+    .end annotation
 
-    .line 1611
+    .line 1767
     iget-object p0, p0, Lcom/google/common/collect/Multimaps$Keys;->multimap:Lcom/google/common/collect/Multimap;
 
     invoke-interface {p0, p1}, Lcom/google/common/collect/Multimap;->containsKey(Ljava/lang/Object;)Z
@@ -90,11 +107,19 @@
 .method public count(Ljava/lang/Object;)I
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "element"
+        }
+    .end annotation
 
-    .line 1621
+    .line 1777
     iget-object p0, p0, Lcom/google/common/collect/Multimaps$Keys;->multimap:Lcom/google/common/collect/Multimap;
 
     invoke-interface {p0}, Lcom/google/common/collect/Multimap;->asMap()Ljava/util/Map;
@@ -113,7 +138,7 @@
 
     goto :goto_0
 
-    .line 1622
+    .line 1778
     :cond_0
     invoke-interface {p0}, Ljava/util/Collection;->size()I
 
@@ -126,7 +151,7 @@
 .method distinctElements()I
     .locals 0
 
-    .line 1601
+    .line 1757
     iget-object p0, p0, Lcom/google/common/collect/Multimaps$Keys;->multimap:Lcom/google/common/collect/Multimap;
 
     invoke-interface {p0}, Lcom/google/common/collect/Multimap;->asMap()Ljava/util/Map;
@@ -150,7 +175,7 @@
         }
     .end annotation
 
-    .line 1663
+    .line 1819
     new-instance p0, Ljava/lang/AssertionError;
 
     const-string v0, "should never be called"
@@ -170,7 +195,7 @@
         }
     .end annotation
 
-    .line 1658
+    .line 1814
     iget-object p0, p0, Lcom/google/common/collect/Multimaps$Keys;->multimap:Lcom/google/common/collect/Multimap;
 
     invoke-interface {p0}, Lcom/google/common/collect/Multimap;->keySet()Ljava/util/Set;
@@ -191,12 +216,12 @@
         }
     .end annotation
 
-    .line 1580
+    .line 1735
     new-instance v0, Lcom/google/common/collect/Multimaps$Keys$1;
 
     iget-object v1, p0, Lcom/google/common/collect/Multimaps$Keys;->multimap:Lcom/google/common/collect/Multimap;
 
-    .line 1581
+    .line 1736
     invoke-interface {v1}, Lcom/google/common/collect/Multimap;->asMap()Ljava/util/Map;
 
     move-result-object v1
@@ -224,7 +249,7 @@
         }
     .end annotation
 
-    .line 1616
+    .line 1772
     iget-object p0, p0, Lcom/google/common/collect/Multimaps$Keys;->multimap:Lcom/google/common/collect/Multimap;
 
     invoke-interface {p0}, Lcom/google/common/collect/Multimap;->entries()Ljava/util/Collection;
@@ -245,25 +270,35 @@
 .method public remove(Ljava/lang/Object;I)I
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "element",
+            "occurrences"
+        }
+    .end annotation
 
-    .line 1627
+    .line 1783
     const-string v0, "occurrences"
 
     invoke-static {p2, v0}, Lcom/google/common/collect/CollectPreconditions;->checkNonnegative(ILjava/lang/String;)I
 
     if-nez p2, :cond_0
 
-    .line 1629
+    .line 1785
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Multimaps$Keys;->count(Ljava/lang/Object;)I
 
     move-result p0
 
     return p0
 
-    .line 1632
+    .line 1788
     :cond_0
     iget-object p0, p0, Lcom/google/common/collect/Multimaps$Keys;->multimap:Lcom/google/common/collect/Multimap;
 
@@ -283,7 +318,7 @@
 
     return p1
 
-    .line 1638
+    .line 1794
     :cond_1
     invoke-interface {p0}, Ljava/util/Collection;->size()I
 
@@ -291,12 +326,12 @@
 
     if-lt p2, v0, :cond_2
 
-    .line 1640
+    .line 1796
     invoke-interface {p0}, Ljava/util/Collection;->clear()V
 
     goto :goto_1
 
-    .line 1642
+    .line 1798
     :cond_2
     invoke-interface {p0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
@@ -305,10 +340,10 @@
     :goto_0
     if-ge p1, p2, :cond_3
 
-    .line 1644
+    .line 1800
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    .line 1645
+    .line 1801
     invoke-interface {p0}, Ljava/util/Iterator;->remove()V
 
     add-int/lit8 p1, p1, 0x1
@@ -323,7 +358,7 @@
 .method public size()I
     .locals 0
 
-    .line 1606
+    .line 1762
     iget-object p0, p0, Lcom/google/common/collect/Multimaps$Keys;->multimap:Lcom/google/common/collect/Multimap;
 
     invoke-interface {p0}, Lcom/google/common/collect/Multimap;->size()I

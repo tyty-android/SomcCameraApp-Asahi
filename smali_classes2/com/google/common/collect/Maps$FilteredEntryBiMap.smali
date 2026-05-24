@@ -45,6 +45,17 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/BiMap;Lcom/google/common/base/Predicate;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "delegate",
+            "predicate"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -57,13 +68,13 @@
         }
     .end annotation
 
-    .line 3061
+    .line 3375
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/Maps$FilteredEntryMap;-><init>(Ljava/util/Map;Lcom/google/common/base/Predicate;)V
 
-    .line 3062
+    .line 3376
     new-instance v0, Lcom/google/common/collect/Maps$FilteredEntryBiMap;
 
-    .line 3063
+    .line 3377
     invoke-interface {p1}, Lcom/google/common/collect/BiMap;->inverse()Lcom/google/common/collect/BiMap;
 
     move-result-object p1
@@ -81,6 +92,19 @@
 
 .method private constructor <init>(Lcom/google/common/collect/BiMap;Lcom/google/common/base/Predicate;Lcom/google/common/collect/BiMap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "delegate",
+            "predicate",
+            "inverse"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -95,10 +119,10 @@
         }
     .end annotation
 
-    .line 3068
+    .line 3382
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/Maps$FilteredEntryMap;-><init>(Ljava/util/Map;Lcom/google/common/base/Predicate;)V
 
-    .line 3069
+    .line 3383
     iput-object p3, p0, Lcom/google/common/collect/Maps$FilteredEntryBiMap;->inverse:Lcom/google/common/collect/BiMap;
 
     return-void
@@ -106,6 +130,15 @@
 
 .method private static inversePredicate(Lcom/google/common/base/Predicate;)Lcom/google/common/base/Predicate;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "forwardPredicate"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -123,7 +156,7 @@
         }
     .end annotation
 
-    .line 3052
+    .line 3365
     new-instance v0, Lcom/google/common/collect/Maps$FilteredEntryBiMap$1;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/Maps$FilteredEntryBiMap$1;-><init>(Lcom/google/common/base/Predicate;)V
@@ -136,27 +169,41 @@
 .method public forcePut(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;TV;)TV;"
         }
     .end annotation
 
-    .line 3078
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 3393
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/Maps$FilteredEntryBiMap;->apply(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 3079
+    .line 3394
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$FilteredEntryBiMap;->unfiltered()Lcom/google/common/collect/BiMap;
 
     move-result-object p0
@@ -178,7 +225,7 @@
         }
     .end annotation
 
-    .line 3084
+    .line 3399
     iget-object p0, p0, Lcom/google/common/collect/Maps$FilteredEntryBiMap;->inverse:Lcom/google/common/collect/BiMap;
 
     return-object p0
@@ -194,7 +241,7 @@
         }
     .end annotation
 
-    .line 3073
+    .line 3387
     iget-object p0, p0, Lcom/google/common/collect/Maps$FilteredEntryBiMap;->unfiltered:Ljava/util/Map;
 
     check-cast p0, Lcom/google/common/collect/BiMap;
@@ -205,7 +252,7 @@
 .method public bridge synthetic values()Ljava/util/Collection;
     .locals 0
 
-    .line 3046
+    .line 3358
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$FilteredEntryBiMap;->values()Ljava/util/Set;
 
     move-result-object p0
@@ -223,7 +270,7 @@
         }
     .end annotation
 
-    .line 3089
+    .line 3404
     iget-object p0, p0, Lcom/google/common/collect/Maps$FilteredEntryBiMap;->inverse:Lcom/google/common/collect/BiMap;
 
     invoke-interface {p0}, Lcom/google/common/collect/BiMap;->keySet()Ljava/util/Set;

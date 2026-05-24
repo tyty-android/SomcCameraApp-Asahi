@@ -27,20 +27,34 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;JLjava/util/concurrent/TimeUnit;D)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "stopwatch",
+            "warmupPeriod",
+            "timeUnit",
+            "coldFactor"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
-    .line 217
+    .line 220
     invoke-direct {p0, p1, v0}, Lcom/google/common/util/concurrent/SmoothRateLimiter;-><init>(Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;Lcom/google/common/util/concurrent/SmoothRateLimiter$1;)V
 
-    .line 218
+    .line 221
     invoke-virtual {p4, p2, p3}, Ljava/util/concurrent/TimeUnit;->toMicros(J)J
 
     move-result-wide p1
 
     iput-wide p1, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothWarmingUp;->warmupPeriodMicros:J
 
-    .line 219
+    .line 222
     iput-wide p5, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothWarmingUp;->coldFactor:D
 
     return-void
@@ -48,8 +62,16 @@
 
 .method private permitsToTime(D)D
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "permits"
+        }
+    .end annotation
 
-    .line 261
+    .line 264
     iget-wide v0, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothWarmingUp;->stableIntervalMicros:D
 
     iget-wide v2, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothWarmingUp;->slope:D
@@ -66,7 +88,7 @@
 .method coolDownIntervalMicros()D
     .locals 4
 
-    .line 266
+    .line 269
     iget-wide v0, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothWarmingUp;->warmupPeriodMicros:J
 
     long-to-double v0, v0
@@ -80,16 +102,26 @@
 
 .method doSetRate(DD)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "permitsPerSecond",
+            "stableIntervalMicros"
+        }
+    .end annotation
 
-    .line 224
+    .line 227
     iget-wide p1, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothWarmingUp;->maxPermits:D
 
-    .line 225
+    .line 228
     iget-wide v0, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothWarmingUp;->coldFactor:D
 
     mul-double/2addr v0, p3
 
-    .line 226
+    .line 229
     iget-wide v2, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothWarmingUp;->warmupPeriodMicros:J
 
     long-to-double v4, v2
@@ -114,12 +146,12 @@
 
     add-double/2addr v4, v2
 
-    .line 227
+    .line 230
     iput-wide v4, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothWarmingUp;->maxPermits:D
 
     sub-double/2addr v0, p3
 
-    .line 229
+    .line 232
     iget-wide p3, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothWarmingUp;->maxPermits:D
 
     iget-wide v2, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothWarmingUp;->thresholdPermits:D
@@ -138,7 +170,7 @@
 
     if-nez p3, :cond_0
 
-    .line 232
+    .line 235
     iput-wide v0, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothWarmingUp;->storedPermits:D
 
     goto :goto_1
@@ -148,12 +180,12 @@
 
     if-nez p3, :cond_1
 
-    .line 236
+    .line 239
     iget-wide p1, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothWarmingUp;->maxPermits:D
 
     goto :goto_0
 
-    .line 237
+    .line 240
     :cond_1
     iget-wide p3, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothWarmingUp;->storedPermits:D
 
@@ -172,8 +204,18 @@
 
 .method storedPermitsToWaitTime(DD)J
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "storedPermits",
+            "permitsToTake"
+        }
+    .end annotation
 
-    .line 243
+    .line 246
     iget-wide v0, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothWarmingUp;->thresholdPermits:D
 
     sub-double/2addr p1, v0
@@ -184,19 +226,19 @@
 
     if-lez v0, :cond_0
 
-    .line 247
+    .line 250
     invoke-static {p1, p2, p3, p4}, Ljava/lang/Math;->min(DD)D
 
     move-result-wide v0
 
-    .line 250
+    .line 253
     invoke-direct {p0, p1, p2}, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothWarmingUp;->permitsToTime(D)D
 
     move-result-wide v2
 
     sub-double/2addr p1, v0
 
-    .line 251
+    .line 254
     invoke-direct {p0, p1, p2}, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothWarmingUp;->permitsToTime(D)D
 
     move-result-wide p1
@@ -218,7 +260,7 @@
     :cond_0
     const-wide/16 p1, 0x0
 
-    .line 256
+    .line 259
     :goto_0
     iget-wide v0, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothWarmingUp;->stableIntervalMicros:D
 

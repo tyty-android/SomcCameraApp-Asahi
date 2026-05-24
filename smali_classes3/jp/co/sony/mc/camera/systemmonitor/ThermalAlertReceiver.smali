@@ -230,6 +230,16 @@
 
 .method public constructor <init>(Landroid/app/Activity;Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver$ThermalAlertReceiverListener;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "activity",
+            "listener"
+        }
+    .end annotation
 
     .line 329
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -322,6 +332,14 @@
 
 .method private changeToWarningExtraState(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isOnStartup"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -338,6 +356,14 @@
 
 .method private changeToWarningState(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isOnStartup"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -357,6 +383,14 @@
 
 .method private checkEnduranceStartupStatus(I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "status"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -459,6 +493,16 @@
 
 .method private checkLowTempBurnTimeoutTimerDuration(II)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "thermalLevel",
+            "durationSec"
+        }
+    .end annotation
 
     if-nez p2, :cond_0
 
@@ -521,6 +565,16 @@
 
 .method private checkStartupStatus(ILjava/lang/String;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "status",
+            "service"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -790,6 +844,14 @@
 
 .method private finishOnStartup(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isEndurance"
+        }
+    .end annotation
 
     .line 470
     iget-object p0, p0, Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver;->mListener:Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver$ThermalAlertReceiverListener;
@@ -803,6 +865,14 @@
 
 .method private sendIntentChangeTempActivateStateToHpm(I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     .line 628
     new-instance v0, Landroid/content/Intent;
@@ -1072,6 +1142,16 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "intent"
+        }
+    .end annotation
 
     .line 416
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;

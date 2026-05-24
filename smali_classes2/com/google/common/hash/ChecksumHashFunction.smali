@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/hash/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation runtime Lcom/google/errorprone/annotations/Immutable;
 .end annotation
 
@@ -41,6 +44,19 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/hash/ImmutableSupplier;ILjava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "checksumSupplier",
+            "bits",
+            "toString"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -53,10 +69,10 @@
         }
     .end annotation
 
-    .line 36
+    .line 37
     invoke-direct {p0}, Lcom/google/common/hash/AbstractHashFunction;-><init>()V
 
-    .line 37
+    .line 38
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -84,16 +100,16 @@
     :goto_0
     const/4 p1, 0x1
 
-    .line 38
+    .line 39
     :goto_1
     const-string v0, "bits (%s) must be either 32 or 64"
 
     invoke-static {p1, v0, p2}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;I)V
 
-    .line 39
+    .line 40
     iput p2, p0, Lcom/google/common/hash/ChecksumHashFunction;->bits:I
 
-    .line 40
+    .line 41
     invoke-static {p3}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -108,7 +124,7 @@
 .method static synthetic access$100(Lcom/google/common/hash/ChecksumHashFunction;)I
     .locals 0
 
-    .line 30
+    .line 31
     iget p0, p0, Lcom/google/common/hash/ChecksumHashFunction;->bits:I
 
     return p0
@@ -119,7 +135,7 @@
 .method public bits()I
     .locals 0
 
-    .line 45
+    .line 46
     iget p0, p0, Lcom/google/common/hash/ChecksumHashFunction;->bits:I
 
     return p0
@@ -128,7 +144,7 @@
 .method public newHasher()Lcom/google/common/hash/Hasher;
     .locals 3
 
-    .line 50
+    .line 51
     new-instance v0, Lcom/google/common/hash/ChecksumHashFunction$ChecksumHasher;
 
     iget-object v1, p0, Lcom/google/common/hash/ChecksumHashFunction;->checksumSupplier:Lcom/google/common/hash/ImmutableSupplier;
@@ -149,7 +165,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 55
+    .line 56
     iget-object p0, p0, Lcom/google/common/hash/ChecksumHashFunction;->toString:Ljava/lang/String;
 
     return-object p0

@@ -6,6 +6,14 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/ImageView;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
     .line 19
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/viewfinder/indicators/Indicator;-><init>(Landroid/widget/ImageView;)V
@@ -49,6 +57,14 @@
 # virtual methods
 .method public isAcquired(Z)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "acquired"
+        }
+    .end annotation
 
     .line 23
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
@@ -78,7 +94,7 @@
     .line 27
     iget-object p1, p0, Ljp/co/sony/mc/camera/viewfinder/indicators/GeotagIndicator;->mView:Landroid/widget/ImageView;
 
-    const v0, 0x7f08022b
+    const v0, 0x7f080287
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -91,7 +107,7 @@
 
     move-result-object p0
 
-    const v0, 0x7f1100ae
+    const v0, 0x7f1100c2
 
     .line 29
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -119,7 +135,7 @@
     .line 35
     iget-object p1, p0, Ljp/co/sony/mc/camera/viewfinder/indicators/GeotagIndicator;->mView:Landroid/widget/ImageView;
 
-    const v0, 0x7f0802d2
+    const v0, 0x7f080356
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -129,7 +145,7 @@
     :cond_2
     iget-object p1, p0, Ljp/co/sony/mc/camera/viewfinder/indicators/GeotagIndicator;->mView:Landroid/widget/ImageView;
 
-    const v0, 0x7f08022c
+    const v0, 0x7f080288
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -143,7 +159,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1100af
+    const v1, 0x7f1100c3
 
     .line 40
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;

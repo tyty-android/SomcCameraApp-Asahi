@@ -59,21 +59,8 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 768
+    .line 613
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
-.end method
-
-
-# virtual methods
-.method public getPreviewVisible()Z
-    .locals 0
-
-    .line 768
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/PreviewCoverState$DefaultImpls;->getPreviewVisible(Ljp/co/sony/mc/camera/view/uistate/PreviewCoverState;)Z
-
-    move-result p0
-
-    return p0
 .end method

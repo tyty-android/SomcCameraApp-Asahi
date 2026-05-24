@@ -24,11 +24,19 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "controller"
+        }
+    .end annotation
 
-    .line 7877
+    .line 6761
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7878
+    .line 6762
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$ApertureDetectListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     return-void
@@ -38,8 +46,16 @@
 # virtual methods
 .method public onApertureDetected(F)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "aperture"
+        }
+    .end annotation
 
-    .line 7883
+    .line 6767
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ApertureDetectListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;

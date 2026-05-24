@@ -16,4 +16,16 @@
 
 # virtual methods
 .method public abstract onObjectTracked(Landroid/graphics/Rect;ZZ)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "trackedObjectRect",
+            "isLost",
+            "isAfLocked"
+        }
+    .end annotation
 .end method

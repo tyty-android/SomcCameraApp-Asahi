@@ -32,6 +32,23 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/device/WbStatusResultChecker;Ljava/lang/Integer;[IFF)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$status",
+            "val$ratio",
+            "val$temperature",
+            "val$gm"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"

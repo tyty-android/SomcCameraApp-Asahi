@@ -15,12 +15,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nCaptureButton.kt\nKotlin\n*S Kotlin\n*F\n+ 1 CaptureButton.kt\njp/co/sony/mc/camera/view/widget/CaptureButton\n+ 2 Transform.kt\nkotlinx/coroutines/flow/FlowKt__TransformKt\n+ 3 Emitters.kt\nkotlinx/coroutines/flow/FlowKt__EmittersKt\n+ 4 SafeCollector.common.kt\nkotlinx/coroutines/flow/internal/SafeCollector_commonKt\n+ 5 View.kt\nandroidx/core/view/ViewKt\n+ 6 StateFlow.kt\nkotlinx/coroutines/flow/StateFlowKt\n*L\n1#1,471:1\n53#2:472\n55#2:476\n50#3:473\n55#3:475\n107#4:474\n93#5,13:477\n230#6,5:490\n*S KotlinDebug\n*F\n+ 1 CaptureButton.kt\njp/co/sony/mc/camera/view/widget/CaptureButton\n*L\n85#1:472\n85#1:476\n85#1:473\n85#1:475\n85#1:474\n127#1:477,13\n393#1:490,5\n*E\n"
+    value = "SMAP\nCaptureButton.kt\nKotlin\n*S Kotlin\n*F\n+ 1 CaptureButton.kt\njp/co/sony/mc/camera/view/widget/CaptureButton\n+ 2 Transform.kt\nkotlinx/coroutines/flow/FlowKt__TransformKt\n+ 3 Emitters.kt\nkotlinx/coroutines/flow/FlowKt__EmittersKt\n+ 4 SafeCollector.common.kt\nkotlinx/coroutines/flow/internal/SafeCollector_commonKt\n+ 5 View.kt\nandroidx/core/view/ViewKt\n+ 6 StateFlow.kt\nkotlinx/coroutines/flow/StateFlowKt\n*L\n1#1,486:1\n53#2:487\n55#2:491\n50#3:488\n55#3:490\n107#4:489\n93#5,13:492\n230#6,5:505\n*S KotlinDebug\n*F\n+ 1 CaptureButton.kt\njp/co/sony/mc/camera/view/widget/CaptureButton\n*L\n89#1:487\n89#1:491\n89#1:488\n89#1:490\n89#1:489\n131#1:492,13\n408#1:505,5\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u008c\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0007\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\r\u0008\u0007\u0018\u00002\u00020\u0001:\u0005RSTUVB\'\u0008\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0004\u0008\u0008\u0010\tJ\u0010\u0010>\u001a\u0002012\u0006\u0010?\u001a\u00020@H\u0016J\u000c\u0010A\u001a\u00020B*\u000205H\u0002J\u0006\u0010C\u001a\u00020BJ\u0006\u0010D\u001a\u00020BJ\u0006\u0010E\u001a\u00020BJ\u000e\u0010F\u001a\u00020B2\u0006\u0010G\u001a\u000201J\u000e\u0010H\u001a\u00020B2\u0006\u0010I\u001a\u00020JJ\u0010\u0010K\u001a\u00020B2\u0006\u0010L\u001a\u00020.H\u0002J\u000e\u0010M\u001a\u00020B2\u0006\u0010N\u001a\u00020\u0007J\u0018\u0010O\u001a\u0002012\u0006\u0010P\u001a\u00020\u00072\u0006\u0010Q\u001a\u00020\u0007H\u0002R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u000c\u001a\u0004\u0018\u00010\rX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000e\u0010\u000f\"\u0004\u0008\u0010\u0010\u0011R\u001c\u0010\u0012\u001a\u0004\u0018\u00010\u0013X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0014\u0010\u0015\"\u0004\u0008\u0016\u0010\u0017R\u000e\u0010\u0018\u001a\u00020\u0007X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u0019\u001a\u0004\u0018\u00010\u001aX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001b\u0010\u001c\"\u0004\u0008\u001d\u0010\u001eR(\u0010!\u001a\u0004\u0018\u00010 2\u0008\u0010\u001f\u001a\u0004\u0018\u00010 @FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\"\u0010#\"\u0004\u0008$\u0010%R\u001c\u0010&\u001a\u0004\u0018\u00010\'X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008(\u0010)\"\u0004\u0008*\u0010+R\u0014\u0010,\u001a\u0008\u0012\u0004\u0012\u00020.0-X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010/\u001a\u0008\u0012\u0004\u0012\u00020100X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u00102\u001a\u000203X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u00104\u001a\u0002058BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u00086\u00107R\u0014\u00108\u001a\u0002098BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008:\u0010;R\u0014\u0010<\u001a\u0002098BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008=\u0010;\u00a8\u0006W"
+        "\u0000\u0094\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0007\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\r\u0008\u0007\u0018\u00002\u00020\u0001:\u0005XYZ[\\B\'\u0008\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0004\u0008\u0008\u0010\tJ\u0010\u0010D\u001a\u0002072\u0006\u0010E\u001a\u00020FH\u0016J\u000c\u0010G\u001a\u00020H*\u00020;H\u0002J\u0006\u0010I\u001a\u00020HJ\u0006\u0010J\u001a\u00020HJ\u0006\u0010K\u001a\u00020HJ\u000e\u0010L\u001a\u00020H2\u0006\u0010M\u001a\u000207J\u000e\u0010N\u001a\u00020H2\u0006\u0010O\u001a\u00020PJ\u0010\u0010Q\u001a\u00020H2\u0006\u0010R\u001a\u000204H\u0002J\u000e\u0010S\u001a\u00020H2\u0006\u0010T\u001a\u00020\u0007J\u0018\u0010U\u001a\u0002072\u0006\u0010V\u001a\u00020\u00072\u0006\u0010W\u001a\u00020\u0007H\u0002R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u000c\u001a\u0004\u0018\u00010\rX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000e\u0010\u000f\"\u0004\u0008\u0010\u0010\u0011R\u001c\u0010\u0012\u001a\u0004\u0018\u00010\u0013X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0014\u0010\u0015\"\u0004\u0008\u0016\u0010\u0017R\u001c\u0010\u0018\u001a\u0004\u0018\u00010\u0019X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001a\u0010\u001b\"\u0004\u0008\u001c\u0010\u001dR\u000e\u0010\u001e\u001a\u00020\u0007X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u001f\u001a\u0004\u0018\u00010 X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008!\u0010\"\"\u0004\u0008#\u0010$R(\u0010\'\u001a\u0004\u0018\u00010&2\u0008\u0010%\u001a\u0004\u0018\u00010&@FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008(\u0010)\"\u0004\u0008*\u0010+R\u001c\u0010,\u001a\u0004\u0018\u00010-X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008.\u0010/\"\u0004\u00080\u00101R\u0014\u00102\u001a\u0008\u0012\u0004\u0012\u00020403X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u00105\u001a\u0008\u0012\u0004\u0012\u00020706X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u00108\u001a\u000209X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010:\u001a\u00020;8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008<\u0010=R\u0014\u0010>\u001a\u00020?8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008@\u0010AR\u0014\u0010B\u001a\u00020?8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008C\u0010A\u00a8\u0006]"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/widget/CaptureButton;",
@@ -47,6 +47,12 @@
         "()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;",
         "setCameraSettingsModel",
         "(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V",
+        "messageUiState",
+        "Ljp/co/sony/mc/camera/view/uistate/MessageUiState;",
+        "getMessageUiState",
+        "()Ljp/co/sony/mc/camera/view/uistate/MessageUiState;",
+        "setMessageUiState",
+        "(Ljp/co/sony/mc/camera/view/uistate/MessageUiState;)V",
         "normalStateBaseButtonImageResourceId",
         "singleCaptureListener",
         "Ljp/co/sony/mc/camera/view/widget/CaptureButton$SingleCaptureEventListener;",
@@ -157,6 +163,8 @@
     .end annotation
 .end field
 
+.field private messageUiState:Ljp/co/sony/mc/camera/view/uistate/MessageUiState;
+
 .field private normalStateBaseButtonImageResourceId:I
 
 .field private quickRecordListener:Ljp/co/sony/mc/camera/view/widget/CaptureButton$QuickRecordEventListener;
@@ -226,22 +234,22 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 41
+    .line 44
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 44
+    .line 47
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object p2
 
-    .line 45
+    .line 48
     move-object p3, p0
 
     check-cast p3, Landroid/view/ViewGroup;
 
     const/4 v0, 0x1
 
-    .line 43
+    .line 46
     invoke-static {p2, p3, v0}, Ljp/co/sony/mc/camera/databinding/CaptureButtonLayoutBinding;->inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Ljp/co/sony/mc/camera/databinding/CaptureButtonLayoutBinding;
 
     move-result-object p2
@@ -252,12 +260,12 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->binding:Ljp/co/sony/mc/camera/databinding/CaptureButtonLayoutBinding;
 
-    const p3, 0x7f080366
+    const p3, 0x7f0803de
 
-    .line 52
+    .line 56
     iput p3, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->normalStateBaseButtonImageResourceId:I
 
-    .line 82
+    .line 86
     sget-object p3, Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState$None;->INSTANCE:Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState$None;
 
     invoke-static {p3}, Lkotlinx/coroutines/flow/StateFlowKt;->MutableStateFlow(Ljava/lang/Object;)Lkotlinx/coroutines/flow/MutableStateFlow;
@@ -266,24 +274,24 @@
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->buttonState:Lkotlinx/coroutines/flow/MutableStateFlow;
 
-    .line 84
+    .line 88
     check-cast p3, Lkotlinx/coroutines/flow/Flow;
 
-    .line 474
+    .line 489
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/CaptureButton$special$$inlined$map$1;
 
     invoke-direct {v0, p3}, Ljp/co/sony/mc/camera/view/widget/CaptureButton$special$$inlined$map$1;-><init>(Lkotlinx/coroutines/flow/Flow;)V
 
     check-cast v0, Lkotlinx/coroutines/flow/Flow;
 
-    .line 86
+    .line 90
     invoke-static {v0}, Lkotlinx/coroutines/flow/FlowKt;->distinctUntilChanged(Lkotlinx/coroutines/flow/Flow;)Lkotlinx/coroutines/flow/Flow;
 
     move-result-object p3
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->lockSwitchVisible:Lkotlinx/coroutines/flow/Flow;
 
-    .line 88
+    .line 92
     new-instance p3, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;
 
     invoke-direct {p3, p1}, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;-><init>(Landroid/content/Context;)V
@@ -292,29 +300,29 @@
 
     const/4 p3, 0x0
 
-    .line 112
+    .line 116
     invoke-virtual {p0, p3}, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->setClipChildren(Z)V
 
-    .line 113
+    .line 117
     iget-object p3, p2, Ljp/co/sony/mc/camera/databinding/CaptureButtonLayoutBinding;->lock:Landroid/widget/ImageView;
 
-    .line 114
+    .line 118
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    const v1, 0x7f07013c
+    const v1, 0x7f07017d
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v0
 
-    .line 115
+    .line 119
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
-    const v3, 0x7f07024f
+    const v3, 0x7f070253
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -324,13 +332,13 @@
 
     int-to-float v0, v0
 
-    .line 113
+    .line 117
     invoke-virtual {p3, v0}, Landroid/widget/ImageView;->setTranslationX(F)V
 
-    .line 120
+    .line 124
     iget-object p2, p2, Ljp/co/sony/mc/camera/databinding/CaptureButtonLayoutBinding;->lockBackground:Landroid/widget/ImageView;
 
-    .line 121
+    .line 125
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p3
@@ -339,7 +347,7 @@
 
     move-result p3
 
-    .line 122
+    .line 126
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
@@ -352,22 +360,22 @@
 
     int-to-float p1, p3
 
-    .line 120
+    .line 124
     invoke-virtual {p2, p1}, Landroid/widget/ImageView;->setTranslationX(F)V
 
-    .line 127
+    .line 131
     move-object p1, p0
 
     check-cast p1, Landroid/view/View;
 
-    .line 477
+    .line 492
     invoke-virtual {p1}, Landroid/view/View;->isAttachedToWindow()Z
 
     move-result p2
 
     if-eqz p2, :cond_0
 
-    .line 128
+    .line 132
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->access$getScope(Ljp/co/sony/mc/camera/view/widget/CaptureButton;)Lkotlinx/coroutines/CoroutineScope;
 
     move-result-object v0
@@ -392,7 +400,7 @@
 
     invoke-static/range {v0 .. v5}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
 
-    .line 270
+    .line 285
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->access$getScope(Ljp/co/sony/mc/camera/view/widget/CaptureButton;)Lkotlinx/coroutines/CoroutineScope;
 
     move-result-object p1
@@ -401,7 +409,7 @@
 
     goto :goto_0
 
-    .line 480
+    .line 495
     :cond_0
     new-instance p2, Ljp/co/sony/mc/camera/view/widget/CaptureButton$special$$inlined$doOnAttach$1;
 
@@ -431,7 +439,7 @@
 
     const/4 p3, 0x0
 
-    .line 37
+    .line 40
     :cond_1
     invoke-direct {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/widget/CaptureButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -441,7 +449,7 @@
 .method public static final synthetic access$bindViews(Ljp/co/sony/mc/camera/view/widget/CaptureButton;Lkotlinx/coroutines/CoroutineScope;)V
     .locals 0
 
-    .line 37
+    .line 40
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->bindViews(Lkotlinx/coroutines/CoroutineScope;)V
 
     return-void
@@ -450,7 +458,7 @@
 .method public static final synthetic access$changeButtonState(Ljp/co/sony/mc/camera/view/widget/CaptureButton;Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState;)V
     .locals 0
 
-    .line 37
+    .line 40
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->changeButtonState(Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState;)V
 
     return-void
@@ -459,7 +467,7 @@
 .method public static final synthetic access$getBinding$p(Ljp/co/sony/mc/camera/view/widget/CaptureButton;)Ljp/co/sony/mc/camera/databinding/CaptureButtonLayoutBinding;
     .locals 0
 
-    .line 37
+    .line 40
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->binding:Ljp/co/sony/mc/camera/databinding/CaptureButtonLayoutBinding;
 
     return-object p0
@@ -468,7 +476,7 @@
 .method public static final synthetic access$getButtonState$p(Ljp/co/sony/mc/camera/view/widget/CaptureButton;)Lkotlinx/coroutines/flow/MutableStateFlow;
     .locals 0
 
-    .line 37
+    .line 40
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->buttonState:Lkotlinx/coroutines/flow/MutableStateFlow;
 
     return-object p0
@@ -477,7 +485,7 @@
 .method public static final synthetic access$getGestureResolver$p(Ljp/co/sony/mc/camera/view/widget/CaptureButton;)Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;
     .locals 0
 
-    .line 37
+    .line 40
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->gestureResolver:Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;
 
     return-object p0
@@ -486,7 +494,7 @@
 .method public static final synthetic access$getLockSwitchVisible$p(Ljp/co/sony/mc/camera/view/widget/CaptureButton;)Lkotlinx/coroutines/flow/Flow;
     .locals 0
 
-    .line 37
+    .line 40
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->lockSwitchVisible:Lkotlinx/coroutines/flow/Flow;
 
     return-object p0
@@ -495,7 +503,7 @@
 .method public static final synthetic access$getMaxTranslationX(Ljp/co/sony/mc/camera/view/widget/CaptureButton;)F
     .locals 0
 
-    .line 37
+    .line 40
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->getMaxTranslationX()F
 
     move-result p0
@@ -506,7 +514,7 @@
 .method public static final synthetic access$getNormalStateBaseButtonImageResourceId$p(Ljp/co/sony/mc/camera/view/widget/CaptureButton;)I
     .locals 0
 
-    .line 37
+    .line 40
     iget p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->normalStateBaseButtonImageResourceId:I
 
     return p0
@@ -515,7 +523,7 @@
 .method public static final synthetic access$getScope(Ljp/co/sony/mc/camera/view/widget/CaptureButton;)Lkotlinx/coroutines/CoroutineScope;
     .locals 0
 
-    .line 37
+    .line 40
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->getScope()Lkotlinx/coroutines/CoroutineScope;
 
     move-result-object p0
@@ -526,7 +534,7 @@
 .method public static final synthetic access$getTranslationXDifference(Ljp/co/sony/mc/camera/view/widget/CaptureButton;)F
     .locals 0
 
-    .line 37
+    .line 40
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->getTranslationXDifference()F
 
     move-result p0
@@ -537,7 +545,7 @@
 .method public static final synthetic access$isTouchInsideCaptureButton(Ljp/co/sony/mc/camera/view/widget/CaptureButton;II)Z
     .locals 0
 
-    .line 37
+    .line 40
     invoke-direct {p0, p1, p2}, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->isTouchInsideCaptureButton(II)Z
 
     move-result p0
@@ -548,7 +556,7 @@
 .method private final bindViews(Lkotlinx/coroutines/CoroutineScope;)V
     .locals 8
 
-    .line 285
+    .line 300
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/CaptureButton$bindViews$1;
 
     const/4 v1, 0x0
@@ -571,7 +579,7 @@
 
     invoke-static/range {v2 .. v7}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
 
-    .line 314
+    .line 329
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/CaptureButton$bindViews$2;
 
     invoke-direct {v0, p0, v1}, Ljp/co/sony/mc/camera/view/widget/CaptureButton$bindViews$2;-><init>(Ljp/co/sony/mc/camera/view/widget/CaptureButton;Lkotlin/coroutines/Continuation;)V
@@ -590,7 +598,7 @@
 
     const/4 v0, 0x1
 
-    .line 392
+    .line 407
     new-array v0, v0, [Ljava/lang/String;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->buttonState:Lkotlinx/coroutines/flow/MutableStateFlow;
@@ -629,28 +637,28 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 393
+    .line 408
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->buttonState:Lkotlinx/coroutines/flow/MutableStateFlow;
 
-    .line 491
+    .line 506
     :cond_0
     invoke-interface {v0}, Lkotlinx/coroutines/flow/MutableStateFlow;->getValue()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 492
+    .line 507
     move-object v2, v1
 
     check-cast v2, Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState;
 
-    .line 493
+    .line 508
     invoke-interface {v0, v1, p1}, Lkotlinx/coroutines/flow/MutableStateFlow;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 395
+    .line 410
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     if-eqz p0, :cond_1
@@ -666,7 +674,7 @@
 .method private final getMaxTranslationX()F
     .locals 4
 
-    .line 94
+    .line 98
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -675,7 +683,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f07013c
+    const v1, 0x7f07017d
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -687,7 +695,7 @@
 
     div-float/2addr v0, v1
 
-    .line 95
+    .line 99
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->getContext()Landroid/content/Context;
 
     move-result-object v2
@@ -696,7 +704,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f07024f
+    const v3, 0x7f070253
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -706,7 +714,7 @@
 
     add-float/2addr v0, v2
 
-    .line 97
+    .line 101
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->getContext()Landroid/content/Context;
 
     move-result-object p0
@@ -715,7 +723,7 @@
 
     move-result-object p0
 
-    const v2, 0x7f07024c
+    const v2, 0x7f070250
 
     invoke-virtual {p0, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -733,7 +741,7 @@
 .method private final getScope()Lkotlinx/coroutines/CoroutineScope;
     .locals 0
 
-    .line 91
+    .line 95
     check-cast p0, Landroid/view/View;
 
     invoke-static {p0}, Landroidx/lifecycle/ViewTreeLifecycleOwner;->get(Landroid/view/View;)Landroidx/lifecycle/LifecycleOwner;
@@ -754,7 +762,7 @@
 .method private final getTranslationXDifference()F
     .locals 2
 
-    .line 103
+    .line 107
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -763,13 +771,13 @@
 
     move-result-object v0
 
-    const v1, 0x7f07024c
+    const v1, 0x7f070250
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v0
 
-    .line 106
+    .line 110
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->getContext()Landroid/content/Context;
 
     move-result-object p0
@@ -778,7 +786,7 @@
 
     move-result-object p0
 
-    const v1, 0x7f07024b
+    const v1, 0x7f07024f
 
     invoke-virtual {p0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -802,7 +810,7 @@
 
     if-ltz p2, :cond_0
 
-    .line 410
+    .line 425
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->binding:Ljp/co/sony/mc/camera/databinding/CaptureButtonLayoutBinding;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/CaptureButtonLayoutBinding;->root:Landroidx/constraintlayout/widget/ConstraintLayout;
@@ -839,7 +847,7 @@
 .method public final getButtonHoldEventListener()Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonHoldEventListener;
     .locals 0
 
-    .line 80
+    .line 84
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->buttonHoldEventListener:Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonHoldEventListener;
 
     return-object p0
@@ -848,7 +856,7 @@
 .method public final getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
     .locals 0
 
-    .line 50
+    .line 53
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     return-object p0
@@ -857,8 +865,17 @@
 .method public final getCameraStatusModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
     .locals 0
 
-    .line 49
+    .line 52
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
+
+    return-object p0
+.end method
+
+.method public final getMessageUiState()Ljp/co/sony/mc/camera/view/uistate/MessageUiState;
+    .locals 0
+
+    .line 54
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->messageUiState:Ljp/co/sony/mc/camera/view/uistate/MessageUiState;
 
     return-object p0
 .end method
@@ -866,7 +883,7 @@
 .method public final getQuickRecordListener()Ljp/co/sony/mc/camera/view/widget/CaptureButton$QuickRecordEventListener;
     .locals 0
 
-    .line 70
+    .line 74
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->quickRecordListener:Ljp/co/sony/mc/camera/view/widget/CaptureButton$QuickRecordEventListener;
 
     return-object p0
@@ -875,7 +892,7 @@
 .method public final getSingleCaptureListener()Ljp/co/sony/mc/camera/view/widget/CaptureButton$SingleCaptureEventListener;
     .locals 0
 
-    .line 54
+    .line 58
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->singleCaptureListener:Ljp/co/sony/mc/camera/view/widget/CaptureButton$SingleCaptureEventListener;
 
     return-object p0
@@ -890,7 +907,7 @@
 .method public final onRecordingStarted()V
     .locals 2
 
-    .line 329
+    .line 344
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->buttonState:Lkotlinx/coroutines/flow/MutableStateFlow;
 
     invoke-interface {v0}, Lkotlinx/coroutines/flow/MutableStateFlow;->getValue()Ljava/lang/Object;
@@ -905,7 +922,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 330
+    .line 345
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->quickRecordListener:Ljp/co/sony/mc/camera/view/widget/CaptureButton$QuickRecordEventListener;
 
     if-eqz p0, :cond_1
@@ -914,7 +931,7 @@
 
     goto :goto_0
 
-    .line 331
+    .line 346
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->buttonState:Lkotlinx/coroutines/flow/MutableStateFlow;
 
@@ -930,7 +947,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 332
+    .line 347
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState$RecordingWithFingerHold;
 
     const/4 v1, 0x0
@@ -949,7 +966,7 @@
 .method public final onRecordingStopping()V
     .locals 2
 
-    .line 340
+    .line 355
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->buttonState:Lkotlinx/coroutines/flow/MutableStateFlow;
 
     invoke-interface {v0}, Lkotlinx/coroutines/flow/MutableStateFlow;->getValue()Ljava/lang/Object;
@@ -960,7 +977,7 @@
 
     if-nez v0, :cond_0
 
-    .line 341
+    .line 356
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->buttonState:Lkotlinx/coroutines/flow/MutableStateFlow;
 
     invoke-interface {v0}, Lkotlinx/coroutines/flow/MutableStateFlow;->getValue()Ljava/lang/Object;
@@ -975,7 +992,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 343
+    .line 358
     :cond_0
     sget-object v0, Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState$RecordingStopping;->INSTANCE:Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState$RecordingStopping;
 
@@ -994,14 +1011,14 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 275
+    .line 290
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->isEnabled()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 276
+    .line 291
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v0
@@ -1021,7 +1038,7 @@
 
     return p0
 
-    .line 281
+    .line 296
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->gestureResolver:Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;
 
@@ -1039,7 +1056,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 362
+    .line 377
     sget-object p1, Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState$None;->INSTANCE:Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState$None;
 
     check-cast p1, Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState;
@@ -1048,7 +1065,7 @@
 
     goto :goto_1
 
-    .line 364
+    .line 379
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->buttonState:Lkotlinx/coroutines/flow/MutableStateFlow;
 
@@ -1058,7 +1075,7 @@
 
     check-cast p1, Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState;
 
-    .line 365
+    .line 380
     sget-object v0, Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState$RequestStartRecording;->INSTANCE:Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState$RequestStartRecording;
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1067,7 +1084,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 366
+    .line 381
     sget-object p1, Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState$RequestStopRecording;->INSTANCE:Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState$RequestStopRecording;
 
     check-cast p1, Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState;
@@ -1076,7 +1093,7 @@
 
     goto :goto_1
 
-    .line 368
+    .line 383
     :cond_1
     instance-of v0, p1, Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState$RecordingWithFingerHold;
 
@@ -1092,7 +1109,7 @@
 
     goto :goto_0
 
-    .line 372
+    .line 387
     :cond_2
     sget-object v0, Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState$Ready;
 
@@ -1110,7 +1127,7 @@
 
     if-eqz p1, :cond_6
 
-    .line 373
+    .line 388
     :cond_3
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->buttonHoldEventListener:Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonHoldEventListener;
 
@@ -1118,7 +1135,7 @@
 
     invoke-interface {p1}, Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonHoldEventListener;->onCaptureButtonRelease()V
 
-    .line 374
+    .line 389
     :cond_4
     sget-object p1, Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState$None;->INSTANCE:Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState$None;
 
@@ -1128,7 +1145,7 @@
 
     goto :goto_1
 
-    .line 369
+    .line 384
     :cond_5
     :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->quickRecordListener:Ljp/co/sony/mc/camera/view/widget/CaptureButton$QuickRecordEventListener;
@@ -1145,7 +1162,7 @@
 .method public final setButtonHoldEventListener(Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonHoldEventListener;)V
     .locals 0
 
-    .line 80
+    .line 84
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->buttonHoldEventListener:Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonHoldEventListener;
 
     return-void
@@ -1154,7 +1171,7 @@
 .method public final setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
     .locals 0
 
-    .line 50
+    .line 53
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     return-void
@@ -1163,7 +1180,7 @@
 .method public final setCameraStatusModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;)V
     .locals 0
 
-    .line 49
+    .line 52
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     return-void
@@ -1172,15 +1189,24 @@
 .method public final setImageResource(I)V
     .locals 1
 
-    .line 402
+    .line 417
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->binding:Ljp/co/sony/mc/camera/databinding/CaptureButtonLayoutBinding;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/CaptureButtonLayoutBinding;->baseButton:Landroid/widget/ImageView;
 
     invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 403
+    .line 418
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->normalStateBaseButtonImageResourceId:I
+
+    return-void
+.end method
+
+.method public final setMessageUiState(Ljp/co/sony/mc/camera/view/uistate/MessageUiState;)V
+    .locals 0
+
+    .line 54
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->messageUiState:Ljp/co/sony/mc/camera/view/uistate/MessageUiState;
 
     return-void
 .end method
@@ -1188,7 +1214,7 @@
 .method public final setQuickRecordListener(Ljp/co/sony/mc/camera/view/widget/CaptureButton$QuickRecordEventListener;)V
     .locals 2
 
-    .line 72
+    .line 76
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->quickRecordListener:Ljp/co/sony/mc/camera/view/widget/CaptureButton$QuickRecordEventListener;
 
     invoke-static {v0, p1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1197,7 +1223,7 @@
 
     if-nez v0, :cond_1
 
-    .line 73
+    .line 77
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->gestureResolver:Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;
 
     if-eqz p1, :cond_0
@@ -1209,11 +1235,11 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 74
+    .line 78
     :goto_0
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher;->setDetectLongPress(Z)V
 
-    .line 76
+    .line 80
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->quickRecordListener:Ljp/co/sony/mc/camera/view/widget/CaptureButton$QuickRecordEventListener;
 
     :cond_1
@@ -1223,7 +1249,7 @@
 .method public final setSingleCaptureListener(Ljp/co/sony/mc/camera/view/widget/CaptureButton$SingleCaptureEventListener;)V
     .locals 0
 
-    .line 54
+    .line 58
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->singleCaptureListener:Ljp/co/sony/mc/camera/view/widget/CaptureButton$SingleCaptureEventListener;
 
     return-void
@@ -1236,7 +1262,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 383
+    .line 398
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->binding:Ljp/co/sony/mc/camera/databinding/CaptureButtonLayoutBinding;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/CaptureButtonLayoutBinding;->lock:Landroid/widget/ImageView;

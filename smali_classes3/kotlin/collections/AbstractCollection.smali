@@ -26,17 +26,20 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u00006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u001e\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0006\n\u0002\u0010(\n\u0000\n\u0002\u0010\u0011\n\u0002\u0010\u0000\n\u0002\u0008\u0005\n\u0002\u0010\u000e\n\u0000\u0008\'\u0018\u0000*\u0006\u0008\u0000\u0010\u0001 \u00012\u0008\u0012\u0004\u0012\u0002H\u00010\u0002B\u0007\u0008\u0004\u00a2\u0006\u0002\u0010\u0003J\u0016\u0010\u0008\u001a\u00020\t2\u0006\u0010\n\u001a\u00028\u0000H\u0096\u0002\u00a2\u0006\u0002\u0010\u000bJ\u0016\u0010\u000c\u001a\u00020\t2\u000c\u0010\r\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0002H\u0016J\u0008\u0010\u000e\u001a\u00020\tH\u0016J\u000f\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0010H\u00a6\u0002J\u0015\u0010\u0011\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00130\u0012H\u0015\u00a2\u0006\u0002\u0010\u0014J\'\u0010\u0011\u001a\u0008\u0012\u0004\u0012\u0002H\u00150\u0012\"\u0004\u0008\u0001\u0010\u00152\u000c\u0010\u0016\u001a\u0008\u0012\u0004\u0012\u0002H\u00150\u0012H\u0014\u00a2\u0006\u0002\u0010\u0017J\u0008\u0010\u0018\u001a\u00020\u0019H\u0016R\u0012\u0010\u0004\u001a\u00020\u0005X\u00a6\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0006\u0010\u0007\u00a8\u0006\u001a"
+        "\u00006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u001e\n\u0002\u0008\u0003\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010(\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0006\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0011\n\u0002\u0010\u0000\n\u0002\u0008\u0005\u0008\'\u0018\u0000*\u0006\u0008\u0000\u0010\u0001 \u00012\u0008\u0012\u0004\u0012\u0002H\u00010\u0002B\t\u0008\u0004\u00a2\u0006\u0004\u0008\u0003\u0010\u0004J\u000f\u0010\t\u001a\u0008\u0012\u0004\u0012\u00028\u00000\nH\u00a6\u0002J\u0016\u0010\u000b\u001a\u00020\u000c2\u0006\u0010\r\u001a\u00028\u0000H\u0096\u0002\u00a2\u0006\u0002\u0010\u000eJ\u0016\u0010\u000f\u001a\u00020\u000c2\u000c\u0010\u0010\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0002H\u0016J\u0008\u0010\u0011\u001a\u00020\u000cH\u0016J\u0008\u0010\u0012\u001a\u00020\u0013H\u0016J\u0015\u0010\u0014\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00160\u0015H\u0015\u00a2\u0006\u0002\u0010\u0017J\'\u0010\u0014\u001a\u0008\u0012\u0004\u0012\u0002H\u00180\u0015\"\u0004\u0008\u0001\u0010\u00182\u000c\u0010\u0019\u001a\u0008\u0012\u0004\u0012\u0002H\u00180\u0015H\u0014\u00a2\u0006\u0002\u0010\u001aR\u0012\u0010\u0005\u001a\u00020\u0006X\u00a6\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0007\u0010\u0008\u00a8\u0006\u001b"
     }
     d2 = {
         "Lkotlin/collections/AbstractCollection;",
         "E",
         "",
+        "<init>",
         "()V",
         "size",
         "",
         "getSize",
         "()I",
+        "iterator",
+        "",
         "contains",
         "",
         "element",
@@ -44,7 +47,7 @@
         "containsAll",
         "elements",
         "isEmpty",
-        "iterator",
+        "toString",
         "",
         "toArray",
         "",
@@ -53,14 +56,12 @@
         "T",
         "array",
         "([Ljava/lang/Object;)[Ljava/lang/Object;",
-        "toString",
-        "",
         "kotlin-stdlib"
     }
     k = 0x1
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x30
@@ -68,13 +69,44 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$B441ZGcCSKKTBFWtLUFnJDN9ccw(Lkotlin/collections/AbstractCollection;Ljava/lang/Object;)Ljava/lang/CharSequence;
+    .locals 0
+
+    invoke-static {p0, p1}, Lkotlin/collections/AbstractCollection;->toString$lambda$2(Lkotlin/collections/AbstractCollection;Ljava/lang/Object;)Ljava/lang/CharSequence;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method protected constructor <init>()V
     .locals 0
 
-    .line 14
+    .line 15
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
+.end method
+
+.method private static final toString$lambda$2(Lkotlin/collections/AbstractCollection;Ljava/lang/Object;)Ljava/lang/CharSequence;
+    .locals 0
+
+    if-ne p1, p0, :cond_0
+
+    .line 27
+    const-string p0, "(this Collection)"
+
+    goto :goto_0
+
+    :cond_0
+    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p0
+
+    :goto_0
+    check-cast p0, Ljava/lang/CharSequence;
+
+    return-object p0
 .end method
 
 
@@ -409,13 +441,9 @@
 
     check-cast v3, Ljava/lang/CharSequence;
 
-    new-instance v4, Lkotlin/collections/AbstractCollection$toString$1;
+    new-instance v6, Lkotlin/collections/AbstractCollection$$ExternalSyntheticLambda0;
 
-    invoke-direct {v4, p0}, Lkotlin/collections/AbstractCollection$toString$1;-><init>(Lkotlin/collections/AbstractCollection;)V
-
-    move-object v6, v4
-
-    check-cast v6, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v6, p0}, Lkotlin/collections/AbstractCollection$$ExternalSyntheticLambda0;-><init>(Lkotlin/collections/AbstractCollection;)V
 
     const/16 v7, 0x18
 

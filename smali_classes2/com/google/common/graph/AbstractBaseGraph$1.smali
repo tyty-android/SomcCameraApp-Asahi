@@ -29,8 +29,16 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/graph/AbstractBaseGraph;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 67
+    .line 69
     iput-object p1, p0, Lcom/google/common/graph/AbstractBaseGraph$1;->this$0:Lcom/google/common/graph/AbstractBaseGraph;
 
     invoke-direct {p0}, Ljava/util/AbstractSet;-><init>()V
@@ -43,11 +51,19 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 3
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
-    .line 89
+    .line 91
     instance-of v0, p1, Lcom/google/common/graph/EndpointPair;
 
     const/4 v1, 0x0
@@ -56,11 +72,11 @@
 
     return v1
 
-    .line 92
+    .line 94
     :cond_0
     check-cast p1, Lcom/google/common/graph/EndpointPair;
 
-    .line 93
+    .line 95
     iget-object v0, p0, Lcom/google/common/graph/AbstractBaseGraph$1;->this$0:Lcom/google/common/graph/AbstractBaseGraph;
 
     invoke-virtual {v0, p1}, Lcom/google/common/graph/AbstractBaseGraph;->isOrderingCompatible(Lcom/google/common/graph/EndpointPair;)Z
@@ -71,7 +87,7 @@
 
     iget-object v0, p0, Lcom/google/common/graph/AbstractBaseGraph$1;->this$0:Lcom/google/common/graph/AbstractBaseGraph;
 
-    .line 94
+    .line 96
     invoke-virtual {v0}, Lcom/google/common/graph/AbstractBaseGraph;->nodes()Ljava/util/Set;
 
     move-result-object v0
@@ -88,7 +104,7 @@
 
     iget-object p0, p0, Lcom/google/common/graph/AbstractBaseGraph$1;->this$0:Lcom/google/common/graph/AbstractBaseGraph;
 
-    .line 95
+    .line 97
     invoke-virtual {p1}, Lcom/google/common/graph/EndpointPair;->nodeU()Ljava/lang/Object;
 
     move-result-object v0
@@ -124,7 +140,7 @@
         }
     .end annotation
 
-    .line 70
+    .line 72
     iget-object p0, p0, Lcom/google/common/graph/AbstractBaseGraph$1;->this$0:Lcom/google/common/graph/AbstractBaseGraph;
 
     invoke-static {p0}, Lcom/google/common/graph/EndpointPairIterator;->of(Lcom/google/common/graph/BaseGraph;)Lcom/google/common/graph/EndpointPairIterator;
@@ -137,7 +153,7 @@
 .method public bridge synthetic iterator()Ljava/util/Iterator;
     .locals 0
 
-    .line 67
+    .line 69
     invoke-virtual {p0}, Lcom/google/common/graph/AbstractBaseGraph$1;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p0
@@ -147,8 +163,20 @@
 
 .method public remove(Ljava/lang/Object;)Z
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 80
+    .line 82
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -159,7 +187,7 @@
 .method public size()I
     .locals 2
 
-    .line 75
+    .line 77
     iget-object p0, p0, Lcom/google/common/graph/AbstractBaseGraph$1;->this$0:Lcom/google/common/graph/AbstractBaseGraph;
 
     invoke-virtual {p0}, Lcom/google/common/graph/AbstractBaseGraph;->edgeCount()J

@@ -142,6 +142,14 @@
 
 .method private static loadAvailableKeys(Landroid/content/Context;)Z
     .locals 10
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 340
     const-string v0, "Failed in getCameraCharacteristics"
@@ -259,6 +267,17 @@
 
 .method private static loadBaseCondition(Ljp/co/sony/mc/camera/device/CameraParameterValidator$ValidationCase;Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "validationCase",
+            "parser"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -351,6 +370,17 @@
 
 .method private static loadCheckCondition(Ljp/co/sony/mc/camera/device/CameraParameterValidator$ValidationCase;Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "validationCase",
+            "parser"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -443,6 +473,19 @@
 
 .method private static loadCheckList(Landroid/content/Context;Ljava/util/List;I)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "list",
+            "xmlId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -638,6 +681,14 @@
 
 .method public static declared-synchronized loadCheckList(Landroid/content/Context;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     const-class v0, Ljp/co/sony/mc/camera/device/CameraParameterValidator;
 
@@ -754,6 +805,16 @@
 
 .method public static declared-synchronized validate(Ljava/lang/String;Ljp/co/sony/mc/camera/device/CaptureRequestHolder;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "targetId",
+            "request"
+        }
+    .end annotation
 
     const-class v0, Ljp/co/sony/mc/camera/device/CameraParameterValidator;
 

@@ -26,13 +26,24 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$4;Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$1",
+            "val$keyCode"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 199
+    .line 197
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$4$1;->this$1:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$4;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$4$1;->val$keyCode:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
@@ -47,7 +58,7 @@
 .method public run()V
     .locals 1
 
-    .line 202
+    .line 200
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$4$1;->val$keyCode:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
 
     if-eqz v0, :cond_0
@@ -62,7 +73,7 @@
 
     if-nez v0, :cond_0
 
-    .line 203
+    .line 201
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$4$1;->this$1:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$4;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$4;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;
@@ -73,7 +84,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$PairTimeoutTimer;->-$$Nest$mstop(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$PairTimeoutTimer;)V
 
-    .line 204
+    .line 202
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$4$1;->this$1:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$4;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$4;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;
@@ -84,7 +95,7 @@
 
     invoke-virtual {v0}, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;->stopPairing()V
 
-    .line 205
+    .line 203
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$4$1;->this$1:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$4;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$4;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;

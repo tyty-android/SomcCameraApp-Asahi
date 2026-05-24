@@ -30,7 +30,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 65
+    .line 69
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -40,8 +40,16 @@
 # virtual methods
 .method public call(Lcom/google/common/util/concurrent/Service$Listener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
-    .line 68
+    .line 72
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Service$Listener;->running()V
 
     return-void
@@ -49,8 +57,16 @@
 
 .method public bridge synthetic call(Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
-    .line 65
+    .line 69
     check-cast p1, Lcom/google/common/util/concurrent/Service$Listener;
 
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/AbstractService$2;->call(Lcom/google/common/util/concurrent/Service$Listener;)V
@@ -61,7 +77,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 73
+    .line 77
     const-string p0, "running()"
 
     return-object p0

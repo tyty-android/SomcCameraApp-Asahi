@@ -26,8 +26,6 @@
 
 .field public static final mtrl_btn_textappearance_all_caps:I = 0x7f050005
 
-.field public static final show_ime_fullscreen:I = 0x7f050006
-
 
 # direct methods
 .method private constructor <init>()V

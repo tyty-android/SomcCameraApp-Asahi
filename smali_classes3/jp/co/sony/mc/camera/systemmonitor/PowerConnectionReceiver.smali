@@ -20,6 +20,16 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljp/co/sony/mc/camera/systemmonitor/PowerConnectionReceiver$PowerConnectionReceiverListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "listener"
+        }
+    .end annotation
 
     .line 23
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -79,6 +89,16 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "intent"
+        }
+    .end annotation
 
     .line 42
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;

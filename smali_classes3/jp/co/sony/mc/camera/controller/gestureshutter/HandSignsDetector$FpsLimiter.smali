@@ -27,6 +27,14 @@
 # direct methods
 .method constructor <init>(I)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "targetFps"
+        }
+    .end annotation
 
     .line 54
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -65,6 +73,14 @@
 
 .method private logFps(J)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "currentTimeStamp"
+        }
+    .end annotation
 
     .line 90
     iget-wide v0, p0, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector$FpsLimiter;->mFpsDetectStartTime:J

@@ -82,6 +82,14 @@
 
 .method public isSameUri(Landroid/net/Uri;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "uri"
+        }
+    .end annotation
 
     .line 105
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/album/AlbumPreloader$PreloadedCacheHolder;->mUri:Landroid/net/Uri;
@@ -111,6 +119,16 @@
 
 .method public update(Landroid/net/Uri;Landroid/graphics/Bitmap;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "uri",
+            "bitmap"
+        }
+    .end annotation
 
     .line 55
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/controller/album/AlbumPreloader$PreloadedCacheHolder;->isSameUri(Landroid/net/Uri;)Z

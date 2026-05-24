@@ -15,28 +15,29 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\"\n\u0002\u0008\u0003\n\u0002\u0010\u0008\n\u0002\u0010\u001e\n\u0002\u0008\u0002\u0008\u0080\u0003\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002J%\u0010\u0003\u001a\u00020\u00042\n\u0010\u0005\u001a\u0006\u0012\u0002\u0008\u00030\u00062\n\u0010\u0007\u001a\u0006\u0012\u0002\u0008\u00030\u0006H\u0000\u00a2\u0006\u0002\u0008\u0008J\u0019\u0010\t\u001a\u00020\n2\n\u0010\u0005\u001a\u0006\u0012\u0002\u0008\u00030\u000bH\u0000\u00a2\u0006\u0002\u0008\u000c\u00a8\u0006\r"
+        "\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0003\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u001e\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0010\"\n\u0002\u0008\u0003\u0008\u0080\u0003\u0018\u00002\u00020\u0001B\t\u0008\u0002\u00a2\u0006\u0004\u0008\u0002\u0010\u0003J\u0019\u0010\u0004\u001a\u00020\u00052\n\u0010\u0006\u001a\u0006\u0012\u0002\u0008\u00030\u0007H\u0000\u00a2\u0006\u0002\u0008\u0008J%\u0010\t\u001a\u00020\n2\n\u0010\u0006\u001a\u0006\u0012\u0002\u0008\u00030\u000b2\n\u0010\u000c\u001a\u0006\u0012\u0002\u0008\u00030\u000bH\u0000\u00a2\u0006\u0002\u0008\r\u00a8\u0006\u000e"
     }
     d2 = {
         "Lkotlin/collections/AbstractSet$Companion;",
         "",
+        "<init>",
         "()V",
-        "setEquals",
+        "unorderedHashCode",
         "",
         "c",
         "",
+        "unorderedHashCode$kotlin_stdlib",
+        "setEquals",
+        "",
+        "",
         "other",
         "setEquals$kotlin_stdlib",
-        "unorderedHashCode",
-        "",
-        "",
-        "unorderedHashCode$kotlin_stdlib",
         "kotlin-stdlib"
     }
     k = 0x1
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x30
@@ -100,11 +101,9 @@
 
     .line 44
     :cond_0
-    check-cast p1, Ljava/util/Collection;
-
     check-cast p2, Ljava/util/Collection;
 
-    invoke-interface {p1, p2}, Ljava/util/Collection;->containsAll(Ljava/util/Collection;)Z
+    invoke-interface {p1, p2}, Ljava/util/Set;->containsAll(Ljava/util/Collection;)Z
 
     move-result p0
 

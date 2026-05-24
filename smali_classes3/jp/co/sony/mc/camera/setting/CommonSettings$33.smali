@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 575
+    .line 497
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,6 +31,17 @@
 # virtual methods
 .method public getValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -42,11 +53,11 @@
         }
     .end annotation
 
-    .line 579
+    .line 501
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 580
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getLastBackVideoFps()Ljp/co/sony/mc/camera/configuration/parameters/LastBackVideoFps;
+    .line 502
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$mgetLastProPhotoCapturingMode(Ljp/co/sony/mc/camera/setting/CommonSettings;)Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
 

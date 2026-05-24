@@ -32,6 +32,18 @@
 
 .method public constructor <init>(Landroid/os/Handler;Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceDetectionCallback;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "handler",
+            "callback",
+            "isYuvFrameDrawSupported"
+        }
+    .end annotation
 
     .line 44
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/device/CaptureResultCheckerBase;-><init>(Landroid/os/Handler;)V
@@ -59,6 +71,14 @@
 
 .method private checkAfState(Ljava/lang/Integer;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "afState"
+        }
+    .end annotation
 
     const/4 p0, 0x4
 
@@ -94,6 +114,14 @@
 
 .method private countValidFace([Landroid/hardware/camera2/params/Face;)I
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "faces"
+        }
+    .end annotation
 
     .line 277
     array-length v0, p1
@@ -127,6 +155,16 @@
 
 .method private isFaceEqualed(Landroid/hardware/camera2/params/Face;Landroid/hardware/camera2/params/Face;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "face1",
+            "face2"
+        }
+    .end annotation
 
     .line 286
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/device/FaceDetectionResultChecker;->isValidFace(Landroid/hardware/camera2/params/Face;)Z
@@ -309,6 +347,16 @@
 
 .method private isFaceUpdated([Landroid/hardware/camera2/params/Face;[I)Z
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "faces",
+            "faceSelectArea"
+        }
+    .end annotation
 
     .line 214
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/FaceDetectionResultChecker;->mLastFaces:[Landroid/hardware/camera2/params/Face;
@@ -512,6 +560,14 @@
 
 .method private isValidEyePosition(Landroid/graphics/Point;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "eyePosition"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -537,6 +593,14 @@
 
 .method private isValidFace(Landroid/hardware/camera2/params/Face;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "face"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -574,6 +638,16 @@
 
 .method private isValidResults([Landroid/hardware/camera2/params/Face;[I)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "faces",
+            "faceSelectArea"
+        }
+    .end annotation
 
     const/4 p0, 0x1
 
@@ -656,6 +730,16 @@
 # virtual methods
 .method public checkOnCompleted(Landroid/hardware/camera2/CaptureRequest;Ljp/co/sony/mc/camera/device/CaptureResultHolder;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "resultHolder"
+        }
+    .end annotation
 
     .line 51
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CaptureResultHolder;->getLatest()Landroid/hardware/camera2/CaptureResult;
@@ -671,6 +755,16 @@
 
 .method checkSync(Landroid/hardware/camera2/CaptureResult;Z)V
     .locals 22
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x10
+        }
+        names = {
+            "result",
+            "notifySync"
+        }
+    .end annotation
 
     move-object/from16 v0, p0
 

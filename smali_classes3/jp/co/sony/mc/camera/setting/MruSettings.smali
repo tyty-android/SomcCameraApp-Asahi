@@ -10,6 +10,14 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 19
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -60,6 +68,14 @@
 
 .method public setMode(Ljava/lang/String;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     .line 29
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/MruSettings;->mAccessor:Ljp/co/sony/mc/camera/setting/SharedPreferencesAccessor;

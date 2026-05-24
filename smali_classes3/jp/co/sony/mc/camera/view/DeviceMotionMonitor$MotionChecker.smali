@@ -81,6 +81,14 @@
 
 .method private isMoved(F)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "accValue"
+        }
+    .end annotation
 
     const/high16 p0, 0x42a00000    # 80.0f
 
@@ -111,6 +119,14 @@
 
 .method private isStable(F)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "accValue"
+        }
+    .end annotation
 
     .line 230
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/DeviceMotionMonitor$MotionChecker;->isMoved(F)Z

@@ -33,18 +33,26 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/DenseImmutableTable$ImmutableArrayMap;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 123
+    .line 133
     iput-object p1, p0, Lcom/google/common/collect/DenseImmutableTable$ImmutableArrayMap$1;->this$0:Lcom/google/common/collect/DenseImmutableTable$ImmutableArrayMap;
 
     invoke-direct {p0}, Lcom/google/common/collect/AbstractIterator;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 124
+    .line 134
     iput v0, p0, Lcom/google/common/collect/DenseImmutableTable$ImmutableArrayMap$1;->index:I
 
-    .line 125
+    .line 135
     invoke-virtual {p1}, Lcom/google/common/collect/DenseImmutableTable$ImmutableArrayMap;->keyToIndex()Lcom/google/common/collect/ImmutableMap;
 
     move-result-object p1
@@ -62,8 +70,10 @@
 # virtual methods
 .method protected bridge synthetic computeNext()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 
-    .line 123
+    .line 133
     invoke-virtual {p0}, Lcom/google/common/collect/DenseImmutableTable$ImmutableArrayMap$1;->computeNext()Ljava/util/Map$Entry;
 
     move-result-object p0
@@ -81,7 +91,10 @@
         }
     .end annotation
 
-    .line 129
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 140
     iget v0, p0, Lcom/google/common/collect/DenseImmutableTable$ImmutableArrayMap$1;->index:I
 
     :goto_0
@@ -95,7 +108,7 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 130
+    .line 141
     iget-object v1, p0, Lcom/google/common/collect/DenseImmutableTable$ImmutableArrayMap$1;->this$0:Lcom/google/common/collect/DenseImmutableTable$ImmutableArrayMap;
 
     invoke-virtual {v1, v0}, Lcom/google/common/collect/DenseImmutableTable$ImmutableArrayMap;->getValue(I)Ljava/lang/Object;
@@ -104,7 +117,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 132
+    .line 143
     iget-object v1, p0, Lcom/google/common/collect/DenseImmutableTable$ImmutableArrayMap$1;->this$0:Lcom/google/common/collect/DenseImmutableTable$ImmutableArrayMap;
 
     iget p0, p0, Lcom/google/common/collect/DenseImmutableTable$ImmutableArrayMap$1;->index:I
@@ -119,13 +132,13 @@
 
     return-object p0
 
-    .line 129
+    .line 140
     :cond_0
     iget v0, p0, Lcom/google/common/collect/DenseImmutableTable$ImmutableArrayMap$1;->index:I
 
     goto :goto_0
 
-    .line 135
+    .line 146
     :cond_1
     invoke-virtual {p0}, Lcom/google/common/collect/DenseImmutableTable$ImmutableArrayMap$1;->endOfData()Ljava/lang/Object;
 

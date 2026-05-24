@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/base/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Enum<",
@@ -84,7 +87,7 @@
 .method private static synthetic $values()[Lcom/google/common/base/StandardSystemProperty;
     .locals 28
 
-    .line 26
+    .line 27
     sget-object v0, Lcom/google/common/base/StandardSystemProperty;->JAVA_VERSION:Lcom/google/common/base/StandardSystemProperty;
 
     sget-object v1, Lcom/google/common/base/StandardSystemProperty;->JAVA_VENDOR:Lcom/google/common/base/StandardSystemProperty;
@@ -151,7 +154,7 @@
 .method static constructor <clinit>()V
     .locals 4
 
-    .line 30
+    .line 33
     new-instance v0, Lcom/google/common/base/StandardSystemProperty;
 
     const/4 v1, 0x0
@@ -164,7 +167,7 @@
 
     sput-object v0, Lcom/google/common/base/StandardSystemProperty;->JAVA_VERSION:Lcom/google/common/base/StandardSystemProperty;
 
-    .line 33
+    .line 36
     new-instance v0, Lcom/google/common/base/StandardSystemProperty;
 
     const/4 v1, 0x1
@@ -177,7 +180,7 @@
 
     sput-object v0, Lcom/google/common/base/StandardSystemProperty;->JAVA_VENDOR:Lcom/google/common/base/StandardSystemProperty;
 
-    .line 36
+    .line 39
     new-instance v0, Lcom/google/common/base/StandardSystemProperty;
 
     const/4 v1, 0x2
@@ -190,7 +193,7 @@
 
     sput-object v0, Lcom/google/common/base/StandardSystemProperty;->JAVA_VENDOR_URL:Lcom/google/common/base/StandardSystemProperty;
 
-    .line 39
+    .line 42
     new-instance v0, Lcom/google/common/base/StandardSystemProperty;
 
     const/4 v1, 0x3
@@ -203,7 +206,7 @@
 
     sput-object v0, Lcom/google/common/base/StandardSystemProperty;->JAVA_HOME:Lcom/google/common/base/StandardSystemProperty;
 
-    .line 42
+    .line 45
     new-instance v0, Lcom/google/common/base/StandardSystemProperty;
 
     const/4 v1, 0x4
@@ -216,7 +219,7 @@
 
     sput-object v0, Lcom/google/common/base/StandardSystemProperty;->JAVA_VM_SPECIFICATION_VERSION:Lcom/google/common/base/StandardSystemProperty;
 
-    .line 45
+    .line 48
     new-instance v0, Lcom/google/common/base/StandardSystemProperty;
 
     const/4 v1, 0x5
@@ -229,7 +232,7 @@
 
     sput-object v0, Lcom/google/common/base/StandardSystemProperty;->JAVA_VM_SPECIFICATION_VENDOR:Lcom/google/common/base/StandardSystemProperty;
 
-    .line 48
+    .line 51
     new-instance v0, Lcom/google/common/base/StandardSystemProperty;
 
     const/4 v1, 0x6
@@ -242,7 +245,7 @@
 
     sput-object v0, Lcom/google/common/base/StandardSystemProperty;->JAVA_VM_SPECIFICATION_NAME:Lcom/google/common/base/StandardSystemProperty;
 
-    .line 51
+    .line 54
     new-instance v0, Lcom/google/common/base/StandardSystemProperty;
 
     const/4 v1, 0x7
@@ -255,7 +258,7 @@
 
     sput-object v0, Lcom/google/common/base/StandardSystemProperty;->JAVA_VM_VERSION:Lcom/google/common/base/StandardSystemProperty;
 
-    .line 54
+    .line 57
     new-instance v0, Lcom/google/common/base/StandardSystemProperty;
 
     const/16 v1, 0x8
@@ -268,7 +271,7 @@
 
     sput-object v0, Lcom/google/common/base/StandardSystemProperty;->JAVA_VM_VENDOR:Lcom/google/common/base/StandardSystemProperty;
 
-    .line 57
+    .line 60
     new-instance v0, Lcom/google/common/base/StandardSystemProperty;
 
     const/16 v1, 0x9
@@ -281,7 +284,7 @@
 
     sput-object v0, Lcom/google/common/base/StandardSystemProperty;->JAVA_VM_NAME:Lcom/google/common/base/StandardSystemProperty;
 
-    .line 60
+    .line 63
     new-instance v0, Lcom/google/common/base/StandardSystemProperty;
 
     const/16 v1, 0xa
@@ -294,7 +297,7 @@
 
     sput-object v0, Lcom/google/common/base/StandardSystemProperty;->JAVA_SPECIFICATION_VERSION:Lcom/google/common/base/StandardSystemProperty;
 
-    .line 63
+    .line 66
     new-instance v0, Lcom/google/common/base/StandardSystemProperty;
 
     const/16 v1, 0xb
@@ -307,7 +310,7 @@
 
     sput-object v0, Lcom/google/common/base/StandardSystemProperty;->JAVA_SPECIFICATION_VENDOR:Lcom/google/common/base/StandardSystemProperty;
 
-    .line 66
+    .line 69
     new-instance v0, Lcom/google/common/base/StandardSystemProperty;
 
     const/16 v1, 0xc
@@ -320,7 +323,7 @@
 
     sput-object v0, Lcom/google/common/base/StandardSystemProperty;->JAVA_SPECIFICATION_NAME:Lcom/google/common/base/StandardSystemProperty;
 
-    .line 69
+    .line 72
     new-instance v0, Lcom/google/common/base/StandardSystemProperty;
 
     const/16 v1, 0xd
@@ -333,7 +336,7 @@
 
     sput-object v0, Lcom/google/common/base/StandardSystemProperty;->JAVA_CLASS_VERSION:Lcom/google/common/base/StandardSystemProperty;
 
-    .line 72
+    .line 75
     new-instance v0, Lcom/google/common/base/StandardSystemProperty;
 
     const/16 v1, 0xe
@@ -346,7 +349,7 @@
 
     sput-object v0, Lcom/google/common/base/StandardSystemProperty;->JAVA_CLASS_PATH:Lcom/google/common/base/StandardSystemProperty;
 
-    .line 75
+    .line 78
     new-instance v0, Lcom/google/common/base/StandardSystemProperty;
 
     const/16 v1, 0xf
@@ -359,7 +362,7 @@
 
     sput-object v0, Lcom/google/common/base/StandardSystemProperty;->JAVA_LIBRARY_PATH:Lcom/google/common/base/StandardSystemProperty;
 
-    .line 78
+    .line 81
     new-instance v0, Lcom/google/common/base/StandardSystemProperty;
 
     const/16 v1, 0x10
@@ -372,7 +375,7 @@
 
     sput-object v0, Lcom/google/common/base/StandardSystemProperty;->JAVA_IO_TMPDIR:Lcom/google/common/base/StandardSystemProperty;
 
-    .line 81
+    .line 84
     new-instance v0, Lcom/google/common/base/StandardSystemProperty;
 
     const/16 v1, 0x11
@@ -385,7 +388,7 @@
 
     sput-object v0, Lcom/google/common/base/StandardSystemProperty;->JAVA_COMPILER:Lcom/google/common/base/StandardSystemProperty;
 
-    .line 91
+    .line 94
     new-instance v0, Lcom/google/common/base/StandardSystemProperty;
 
     const/16 v1, 0x12
@@ -398,7 +401,7 @@
 
     sput-object v0, Lcom/google/common/base/StandardSystemProperty;->JAVA_EXT_DIRS:Lcom/google/common/base/StandardSystemProperty;
 
-    .line 95
+    .line 98
     new-instance v0, Lcom/google/common/base/StandardSystemProperty;
 
     const/16 v1, 0x13
@@ -411,7 +414,7 @@
 
     sput-object v0, Lcom/google/common/base/StandardSystemProperty;->OS_NAME:Lcom/google/common/base/StandardSystemProperty;
 
-    .line 98
+    .line 101
     new-instance v0, Lcom/google/common/base/StandardSystemProperty;
 
     const/16 v1, 0x14
@@ -424,7 +427,7 @@
 
     sput-object v0, Lcom/google/common/base/StandardSystemProperty;->OS_ARCH:Lcom/google/common/base/StandardSystemProperty;
 
-    .line 101
+    .line 104
     new-instance v0, Lcom/google/common/base/StandardSystemProperty;
 
     const/16 v1, 0x15
@@ -437,7 +440,7 @@
 
     sput-object v0, Lcom/google/common/base/StandardSystemProperty;->OS_VERSION:Lcom/google/common/base/StandardSystemProperty;
 
-    .line 104
+    .line 107
     new-instance v0, Lcom/google/common/base/StandardSystemProperty;
 
     const/16 v1, 0x16
@@ -450,7 +453,7 @@
 
     sput-object v0, Lcom/google/common/base/StandardSystemProperty;->FILE_SEPARATOR:Lcom/google/common/base/StandardSystemProperty;
 
-    .line 107
+    .line 110
     new-instance v0, Lcom/google/common/base/StandardSystemProperty;
 
     const/16 v1, 0x17
@@ -463,7 +466,7 @@
 
     sput-object v0, Lcom/google/common/base/StandardSystemProperty;->PATH_SEPARATOR:Lcom/google/common/base/StandardSystemProperty;
 
-    .line 110
+    .line 113
     new-instance v0, Lcom/google/common/base/StandardSystemProperty;
 
     const/16 v1, 0x18
@@ -476,7 +479,7 @@
 
     sput-object v0, Lcom/google/common/base/StandardSystemProperty;->LINE_SEPARATOR:Lcom/google/common/base/StandardSystemProperty;
 
-    .line 113
+    .line 116
     new-instance v0, Lcom/google/common/base/StandardSystemProperty;
 
     const/16 v1, 0x19
@@ -489,7 +492,7 @@
 
     sput-object v0, Lcom/google/common/base/StandardSystemProperty;->USER_NAME:Lcom/google/common/base/StandardSystemProperty;
 
-    .line 116
+    .line 119
     new-instance v0, Lcom/google/common/base/StandardSystemProperty;
 
     const/16 v1, 0x1a
@@ -502,7 +505,7 @@
 
     sput-object v0, Lcom/google/common/base/StandardSystemProperty;->USER_HOME:Lcom/google/common/base/StandardSystemProperty;
 
-    .line 119
+    .line 122
     new-instance v0, Lcom/google/common/base/StandardSystemProperty;
 
     const/16 v1, 0x1b
@@ -515,7 +518,7 @@
 
     sput-object v0, Lcom/google/common/base/StandardSystemProperty;->USER_DIR:Lcom/google/common/base/StandardSystemProperty;
 
-    .line 26
+    .line 27
     invoke-static {}, Lcom/google/common/base/StandardSystemProperty;->$values()[Lcom/google/common/base/StandardSystemProperty;
 
     move-result-object v0
@@ -527,6 +530,19 @@
 
 .method private constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -535,10 +551,10 @@
         }
     .end annotation
 
-    .line 123
+    .line 126
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 124
+    .line 127
     iput-object p3, p0, Lcom/google/common/base/StandardSystemProperty;->key:Ljava/lang/String;
 
     return-void
@@ -546,8 +562,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/base/StandardSystemProperty;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 26
+    .line 27
     const-class v0, Lcom/google/common/base/StandardSystemProperty;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -562,7 +586,7 @@
 .method public static values()[Lcom/google/common/base/StandardSystemProperty;
     .locals 1
 
-    .line 26
+    .line 27
     sget-object v0, Lcom/google/common/base/StandardSystemProperty;->$VALUES:[Lcom/google/common/base/StandardSystemProperty;
 
     invoke-virtual {v0}, [Lcom/google/common/base/StandardSystemProperty;->clone()Ljava/lang/Object;
@@ -579,49 +603,25 @@
 .method public key()Ljava/lang/String;
     .locals 0
 
-    .line 129
+    .line 132
     iget-object p0, p0, Lcom/google/common/base/StandardSystemProperty;->key:Ljava/lang/String;
 
     return-object p0
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 3
+    .locals 2
 
-    .line 163
+    .line 166
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
     invoke-virtual {p0}, Lcom/google/common/base/StandardSystemProperty;->key()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p0}, Lcom/google/common/base/StandardSystemProperty;->value()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    move-result v1
-
-    add-int/lit8 v1, v1, 0x1
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/String;->length()I
-
-    move-result v2
-
-    add-int/2addr v1, v2
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -630,6 +630,10 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
+
+    invoke-virtual {p0}, Lcom/google/common/base/StandardSystemProperty;->value()Ljava/lang/String;
+
+    move-result-object p0
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -644,10 +648,10 @@
 
 .method public value()Ljava/lang/String;
     .locals 0
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
-    .line 157
+    .line 160
     iget-object p0, p0, Lcom/google/common/base/StandardSystemProperty;->key:Ljava/lang/String;
 
     invoke-static {p0}, Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;

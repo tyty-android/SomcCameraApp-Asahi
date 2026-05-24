@@ -34,6 +34,9 @@
             "TE;>;"
         }
     .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 .end field
 
 .field isLinkedHash:Z
@@ -45,7 +48,7 @@
 
     const/4 v0, 0x4
 
-    .line 430
+    .line 495
     invoke-direct {p0, v0}, Lcom/google/common/collect/ImmutableMultiset$Builder;-><init>(I)V
 
     return-void
@@ -53,19 +56,27 @@
 
 .method constructor <init>(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "estimatedDistinct"
+        }
+    .end annotation
 
-    .line 433
+    .line 498
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableCollection$Builder;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 417
+    .line 482
     iput-boolean v0, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->buildInvoked:Z
 
-    .line 423
+    .line 488
     iput-boolean v0, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->isLinkedHash:Z
 
-    .line 434
+    .line 499
     invoke-static {p1}, Lcom/google/common/collect/ObjectCountHashMap;->createWithExpectedSize(I)Lcom/google/common/collect/ObjectCountHashMap;
 
     move-result-object p1
@@ -77,21 +88,29 @@
 
 .method constructor <init>(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "forSubtype"
+        }
+    .end annotation
 
-    .line 437
+    .line 502
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableCollection$Builder;-><init>()V
 
     const/4 p1, 0x0
 
-    .line 417
+    .line 482
     iput-boolean p1, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->buildInvoked:Z
 
-    .line 423
+    .line 488
     iput-boolean p1, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->isLinkedHash:Z
 
     const/4 p1, 0x0
 
-    .line 439
+    .line 504
     iput-object p1, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->contents:Lcom/google/common/collect/ObjectCountHashMap;
 
     return-void
@@ -99,6 +118,15 @@
 
 .method static tryGetMap(Ljava/lang/Iterable;)Lcom/google/common/collect/ObjectCountHashMap;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "multiset"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -111,28 +139,28 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
-    .line 578
+    .line 646
     instance-of v0, p0, Lcom/google/common/collect/RegularImmutableMultiset;
 
     if-eqz v0, :cond_0
 
-    .line 579
+    .line 647
     check-cast p0, Lcom/google/common/collect/RegularImmutableMultiset;
 
     iget-object p0, p0, Lcom/google/common/collect/RegularImmutableMultiset;->contents:Lcom/google/common/collect/ObjectCountHashMap;
 
     return-object p0
 
-    .line 580
+    .line 648
     :cond_0
     instance-of v0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset;
 
     if-eqz v0, :cond_1
 
-    .line 581
+    .line 649
     check-cast p0, Lcom/google/common/collect/AbstractMapBasedMultiset;
 
     iget-object p0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset;->backingMap:Lcom/google/common/collect/ObjectCountHashMap;
@@ -149,8 +177,16 @@
 # virtual methods
 .method public bridge synthetic add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableCollection$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "element"
+        }
+    .end annotation
 
-    .line 410
+    .line 470
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableMultiset$Builder;->add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMultiset$Builder;
 
     move-result-object p0
@@ -160,8 +196,16 @@
 
 .method public bridge synthetic add([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableCollection$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
 
-    .line 410
+    .line 470
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableMultiset$Builder;->add([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMultiset$Builder;
 
     move-result-object p0
@@ -171,6 +215,15 @@
 
 .method public add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMultiset$Builder;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "element"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)",
@@ -181,7 +234,7 @@
 
     const/4 v0, 0x1
 
-    .line 452
+    .line 517
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/ImmutableMultiset$Builder;->addCopies(Ljava/lang/Object;I)Lcom/google/common/collect/ImmutableMultiset$Builder;
 
     move-result-object p0
@@ -191,6 +244,15 @@
 
 .method public varargs add([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMultiset$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([TE;)",
@@ -199,7 +261,7 @@
         }
     .end annotation
 
-    .line 465
+    .line 530
     invoke-super {p0, p1}, Lcom/google/common/collect/ImmutableCollection$Builder;->add([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableCollection$Builder;
 
     return-object p0
@@ -207,8 +269,16 @@
 
 .method public bridge synthetic addAll(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableCollection$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
 
-    .line 410
+    .line 470
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableMultiset$Builder;->addAll(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableMultiset$Builder;
 
     move-result-object p0
@@ -218,8 +288,16 @@
 
 .method public bridge synthetic addAll(Ljava/util/Iterator;)Lcom/google/common/collect/ImmutableCollection$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
 
-    .line 410
+    .line 470
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableMultiset$Builder;->addAll(Ljava/util/Iterator;)Lcom/google/common/collect/ImmutableMultiset$Builder;
 
     move-result-object p0
@@ -229,6 +307,15 @@
 
 .method public addAll(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableMultiset$Builder;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -239,24 +326,29 @@
         }
     .end annotation
 
-    .line 536
+    .line 603
+    iget-object v0, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->contents:Lcom/google/common/collect/ObjectCountHashMap;
+
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 604
     instance-of v0, p1, Lcom/google/common/collect/Multiset;
 
     if-eqz v0, :cond_1
 
-    .line 537
+    .line 605
     invoke-static {p1}, Lcom/google/common/collect/Multisets;->cast(Ljava/lang/Iterable;)Lcom/google/common/collect/Multiset;
 
     move-result-object p1
 
-    .line 538
+    .line 606
     invoke-static {p1}, Lcom/google/common/collect/ImmutableMultiset$Builder;->tryGetMap(Ljava/lang/Iterable;)Lcom/google/common/collect/ObjectCountHashMap;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 540
+    .line 608
     iget-object p1, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->contents:Lcom/google/common/collect/ObjectCountHashMap;
 
     invoke-virtual {p1}, Lcom/google/common/collect/ObjectCountHashMap;->size()I
@@ -273,7 +365,7 @@
 
     invoke-virtual {p1, v1}, Lcom/google/common/collect/ObjectCountHashMap;->ensureCapacity(I)V
 
-    .line 541
+    .line 609
     invoke-virtual {v0}, Lcom/google/common/collect/ObjectCountHashMap;->firstIndex()I
 
     move-result p1
@@ -281,7 +373,7 @@
     :goto_0
     if-ltz p1, :cond_2
 
-    .line 542
+    .line 610
     invoke-virtual {v0, p1}, Lcom/google/common/collect/ObjectCountHashMap;->getKey(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -292,20 +384,20 @@
 
     invoke-virtual {p0, v1, v2}, Lcom/google/common/collect/ImmutableMultiset$Builder;->addCopies(Ljava/lang/Object;I)Lcom/google/common/collect/ImmutableMultiset$Builder;
 
-    .line 541
+    .line 609
     invoke-virtual {v0, p1}, Lcom/google/common/collect/ObjectCountHashMap;->nextIndex(I)I
 
     move-result p1
 
     goto :goto_0
 
-    .line 545
+    .line 613
     :cond_0
     invoke-interface {p1}, Lcom/google/common/collect/Multiset;->entrySet()Ljava/util/Set;
 
     move-result-object v0
 
-    .line 546
+    .line 614
     iget-object v1, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->contents:Lcom/google/common/collect/ObjectCountHashMap;
 
     invoke-virtual {v1}, Lcom/google/common/collect/ObjectCountHashMap;->size()I
@@ -322,7 +414,7 @@
 
     invoke-virtual {v1, v0}, Lcom/google/common/collect/ObjectCountHashMap;->ensureCapacity(I)V
 
-    .line 547
+    .line 615
     invoke-interface {p1}, Lcom/google/common/collect/Multiset;->entrySet()Ljava/util/Set;
 
     move-result-object p1
@@ -344,7 +436,7 @@
 
     check-cast v0, Lcom/google/common/collect/Multiset$Entry;
 
-    .line 548
+    .line 616
     invoke-interface {v0}, Lcom/google/common/collect/Multiset$Entry;->getElement()Ljava/lang/Object;
 
     move-result-object v1
@@ -357,7 +449,7 @@
 
     goto :goto_1
 
-    .line 552
+    .line 620
     :cond_1
     invoke-super {p0, p1}, Lcom/google/common/collect/ImmutableCollection$Builder;->addAll(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableCollection$Builder;
 
@@ -367,6 +459,15 @@
 
 .method public addAll(Ljava/util/Iterator;)Lcom/google/common/collect/ImmutableMultiset$Builder;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -377,7 +478,7 @@
         }
     .end annotation
 
-    .line 567
+    .line 635
     invoke-super {p0, p1}, Lcom/google/common/collect/ImmutableCollection$Builder;->addAll(Ljava/util/Iterator;)Lcom/google/common/collect/ImmutableCollection$Builder;
 
     return-object p0
@@ -385,6 +486,17 @@
 
 .method public addCopies(Ljava/lang/Object;I)Lcom/google/common/collect/ImmutableMultiset$Builder;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "element",
+            "occurrences"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;I)",
@@ -393,11 +505,16 @@
         }
     .end annotation
 
+    .line 547
+    iget-object v0, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->contents:Lcom/google/common/collect/ObjectCountHashMap;
+
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
     if-nez p2, :cond_0
 
     return-object p0
 
-    .line 485
+    .line 551
     :cond_0
     iget-boolean v0, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->buildInvoked:Z
 
@@ -405,7 +522,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 486
+    .line 552
     new-instance v0, Lcom/google/common/collect/ObjectCountHashMap;
 
     iget-object v2, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->contents:Lcom/google/common/collect/ObjectCountHashMap;
@@ -414,17 +531,17 @@
 
     iput-object v0, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->contents:Lcom/google/common/collect/ObjectCountHashMap;
 
-    .line 487
+    .line 553
     iput-boolean v1, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->isLinkedHash:Z
 
-    .line 489
+    .line 555
     :cond_1
     iput-boolean v1, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->buildInvoked:Z
 
-    .line 490
+    .line 556
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 491
+    .line 557
     iget-object v0, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->contents:Lcom/google/common/collect/ObjectCountHashMap;
 
     invoke-virtual {v0, p1}, Lcom/google/common/collect/ObjectCountHashMap;->get(Ljava/lang/Object;)I
@@ -441,7 +558,7 @@
 .method public bridge synthetic build()Lcom/google/common/collect/ImmutableCollection;
     .locals 0
 
-    .line 410
+    .line 470
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMultiset$Builder;->build()Lcom/google/common/collect/ImmutableMultiset;
 
     move-result-object p0
@@ -459,7 +576,12 @@
         }
     .end annotation
 
-    .line 593
+    .line 661
+    iget-object v0, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->contents:Lcom/google/common/collect/ObjectCountHashMap;
+
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 662
     iget-object v0, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->contents:Lcom/google/common/collect/ObjectCountHashMap;
 
     invoke-virtual {v0}, Lcom/google/common/collect/ObjectCountHashMap;->size()I
@@ -468,20 +590,20 @@
 
     if-nez v0, :cond_0
 
-    .line 594
+    .line 663
     invoke-static {}, Lcom/google/common/collect/ImmutableMultiset;->of()Lcom/google/common/collect/ImmutableMultiset;
 
     move-result-object p0
 
     return-object p0
 
-    .line 596
+    .line 665
     :cond_0
     iget-boolean v0, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->isLinkedHash:Z
 
     if-eqz v0, :cond_1
 
-    .line 599
+    .line 668
     new-instance v0, Lcom/google/common/collect/ObjectCountHashMap;
 
     iget-object v1, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->contents:Lcom/google/common/collect/ObjectCountHashMap;
@@ -492,16 +614,16 @@
 
     const/4 v0, 0x0
 
-    .line 600
+    .line 669
     iput-boolean v0, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->isLinkedHash:Z
 
     :cond_1
     const/4 v0, 0x1
 
-    .line 602
+    .line 671
     iput-boolean v0, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->buildInvoked:Z
 
-    .line 604
+    .line 673
     new-instance v0, Lcom/google/common/collect/RegularImmutableMultiset;
 
     iget-object p0, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->contents:Lcom/google/common/collect/ObjectCountHashMap;
@@ -513,6 +635,17 @@
 
 .method public setCount(Ljava/lang/Object;I)Lcom/google/common/collect/ImmutableMultiset$Builder;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "element",
+            "count"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;I)",
@@ -521,16 +654,21 @@
         }
     .end annotation
 
+    .line 573
+    iget-object v0, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->contents:Lcom/google/common/collect/ObjectCountHashMap;
+
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
     const/4 v0, 0x0
 
     if-nez p2, :cond_0
 
-    .line 507
+    .line 574
     iget-boolean v1, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->isLinkedHash:Z
 
     if-nez v1, :cond_0
 
-    .line 508
+    .line 575
     new-instance v1, Lcom/google/common/collect/ObjectCountLinkedHashMap;
 
     iget-object v2, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->contents:Lcom/google/common/collect/ObjectCountHashMap;
@@ -541,18 +679,18 @@
 
     const/4 v1, 0x1
 
-    .line 509
+    .line 576
     iput-boolean v1, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->isLinkedHash:Z
 
     goto :goto_0
 
-    .line 512
+    .line 579
     :cond_0
     iget-boolean v1, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->buildInvoked:Z
 
     if-eqz v1, :cond_1
 
-    .line 513
+    .line 580
     new-instance v1, Lcom/google/common/collect/ObjectCountHashMap;
 
     iget-object v2, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->contents:Lcom/google/common/collect/ObjectCountHashMap;
@@ -561,27 +699,27 @@
 
     iput-object v1, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->contents:Lcom/google/common/collect/ObjectCountHashMap;
 
-    .line 514
+    .line 581
     iput-boolean v0, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->isLinkedHash:Z
 
-    .line 516
+    .line 583
     :cond_1
     :goto_0
     iput-boolean v0, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->buildInvoked:Z
 
-    .line 517
+    .line 584
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     if-nez p2, :cond_2
 
-    .line 519
+    .line 586
     iget-object p2, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->contents:Lcom/google/common/collect/ObjectCountHashMap;
 
     invoke-virtual {p2, p1}, Lcom/google/common/collect/ObjectCountHashMap;->remove(Ljava/lang/Object;)I
 
     goto :goto_1
 
-    .line 521
+    .line 588
     :cond_2
     iget-object v0, p0, Lcom/google/common/collect/ImmutableMultiset$Builder;->contents:Lcom/google/common/collect/ObjectCountHashMap;
 

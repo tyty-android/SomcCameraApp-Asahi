@@ -38,7 +38,7 @@
 .method private static synthetic $values()[Lcom/google/common/graph/ElementOrder$Type;
     .locals 4
 
-    .line 67
+    .line 68
     sget-object v0, Lcom/google/common/graph/ElementOrder$Type;->UNORDERED:Lcom/google/common/graph/ElementOrder$Type;
 
     sget-object v1, Lcom/google/common/graph/ElementOrder$Type;->STABLE:Lcom/google/common/graph/ElementOrder$Type;
@@ -57,7 +57,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 68
+    .line 69
     new-instance v0, Lcom/google/common/graph/ElementOrder$Type;
 
     const-string v1, "UNORDERED"
@@ -68,7 +68,7 @@
 
     sput-object v0, Lcom/google/common/graph/ElementOrder$Type;->UNORDERED:Lcom/google/common/graph/ElementOrder$Type;
 
-    .line 69
+    .line 70
     new-instance v0, Lcom/google/common/graph/ElementOrder$Type;
 
     const-string v1, "STABLE"
@@ -79,7 +79,7 @@
 
     sput-object v0, Lcom/google/common/graph/ElementOrder$Type;->STABLE:Lcom/google/common/graph/ElementOrder$Type;
 
-    .line 70
+    .line 71
     new-instance v0, Lcom/google/common/graph/ElementOrder$Type;
 
     const-string v1, "INSERTION"
@@ -90,7 +90,7 @@
 
     sput-object v0, Lcom/google/common/graph/ElementOrder$Type;->INSERTION:Lcom/google/common/graph/ElementOrder$Type;
 
-    .line 71
+    .line 72
     new-instance v0, Lcom/google/common/graph/ElementOrder$Type;
 
     const-string v1, "SORTED"
@@ -101,7 +101,7 @@
 
     sput-object v0, Lcom/google/common/graph/ElementOrder$Type;->SORTED:Lcom/google/common/graph/ElementOrder$Type;
 
-    .line 67
+    .line 68
     invoke-static {}, Lcom/google/common/graph/ElementOrder$Type;->$values()[Lcom/google/common/graph/ElementOrder$Type;
 
     move-result-object v0
@@ -113,13 +113,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 67
+    .line 68
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -127,8 +138,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/graph/ElementOrder$Type;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 67
+    .line 68
     const-class v0, Lcom/google/common/graph/ElementOrder$Type;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -143,7 +162,7 @@
 .method public static values()[Lcom/google/common/graph/ElementOrder$Type;
     .locals 1
 
-    .line 67
+    .line 68
     sget-object v0, Lcom/google/common/graph/ElementOrder$Type;->$VALUES:[Lcom/google/common/graph/ElementOrder$Type;
 
     invoke-virtual {v0}, [Lcom/google/common/graph/ElementOrder$Type;->clone()Ljava/lang/Object;

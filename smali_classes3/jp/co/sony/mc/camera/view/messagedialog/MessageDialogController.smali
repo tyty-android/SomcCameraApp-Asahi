@@ -43,8 +43,6 @@
     .end annotation
 .end field
 
-.field private mLayoutOrientation:Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
-
 .field private final mMessageList:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -149,18 +147,38 @@
 
 .method public constructor <init>(Landroid/app/Activity;Ljp/co/sony/mc/camera/setting/MessageSettings;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$MessageDialogOnClickListener;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$MessageDialogOnClickListener;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$MessageDialogOnCancelListener;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$MessageDialogOnDismissListener;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$MessageDialogOnOpenListener;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "activity",
+            "messageSettings",
+            "onClickPositiveListener",
+            "onClickNegativeListener",
+            "onCancelListener",
+            "onDismissListener",
+            "onOpenListener"
+        }
+    .end annotation
 
-    .line 141
+    .line 139
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 40
+    .line 39
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mMessageList:Ljava/util/List;
 
-    .line 41
+    .line 40
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -168,36 +186,31 @@
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mDialogList:Ljava/util/List;
 
     .line 43
-    sget-object v0, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;->PORTRAIT:Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mLayoutOrientation:Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
-
-    .line 45
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;-><init>()V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mCurrentParameter:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
 
-    .line 143
+    .line 141
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mContext:Landroid/content/Context;
 
-    .line 144
+    .line 142
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mMessageSettings:Ljp/co/sony/mc/camera/setting/MessageSettings;
 
-    .line 145
+    .line 143
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mOnClickPositiveListener:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$MessageDialogOnClickListener;
 
-    .line 146
+    .line 144
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mOnClickNegativeListener:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$MessageDialogOnClickListener;
 
-    .line 147
+    .line 145
     iput-object p5, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mOnCancelListener:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$MessageDialogOnCancelListener;
 
-    .line 148
+    .line 146
     iput-object p6, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mOnDismissListener:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$MessageDialogOnDismissListener;
 
-    .line 149
+    .line 147
     iput-object p7, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mOnOpenListener:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$MessageDialogOnOpenListener;
 
     return-void
@@ -205,8 +218,16 @@
 
 .method private isNeverShow(Ljp/co/sony/mc/camera/view/messagedialog/DialogId;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dialogId"
+        }
+    .end annotation
 
-    .line 251
+    .line 243
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->getMessageType()Ljp/co/sony/mc/camera/setting/MessageType;
 
     move-result-object v0
@@ -215,7 +236,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 252
+    .line 244
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mMessageSettings:Ljp/co/sony/mc/camera/setting/MessageSettings;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->getMessageType()Ljp/co/sony/mc/camera/setting/MessageType;
@@ -237,12 +258,12 @@
 .method private show()V
     .locals 12
 
-    .line 192
+    .line 190
     const-string/jumbo v0, "show() E"
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->trace(Ljava/lang/String;)V
 
-    .line 194
+    .line 192
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mMessageList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
@@ -253,7 +274,7 @@
 
     return-void
 
-    .line 198
+    .line 196
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mCurrentDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
@@ -263,7 +284,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 200
+    .line 198
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mMessageList:Ljava/util/List;
 
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -282,7 +303,7 @@
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mMessageList:Ljava/util/List;
 
-    .line 201
+    .line 199
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -297,14 +318,14 @@
 
     if-eq v0, v3, :cond_1
 
-    .line 202
+    .line 200
     const-string/jumbo p0, "show() Message is shown"
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->trace(Ljava/lang/String;)V
 
     return-void
 
-    .line 206
+    .line 204
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mDialogList:Ljava/util/List;
 
@@ -314,7 +335,7 @@
 
     sub-int/2addr v0, v1
 
-    .line 207
+    .line 205
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mDialogList:Ljava/util/List;
 
     invoke-interface {v3, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -327,7 +348,7 @@
 
     invoke-virtual {v3, v4}, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
-    .line 208
+    .line 206
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mDialogList:Ljava/util/List;
 
     invoke-interface {v3, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -338,12 +359,12 @@
 
     invoke-virtual {v3}, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog;->dismiss()V
 
-    .line 209
+    .line 207
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mDialogList:Ljava/util/List;
 
     invoke-interface {v3, v0}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
-    .line 210
+    .line 208
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mMessageList:Ljava/util/List;
 
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -360,14 +381,14 @@
 
     if-ne v0, v3, :cond_2
 
-    .line 211
+    .line 209
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mMessageList:Ljava/util/List;
 
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mCurrentParameter:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
 
     invoke-interface {v0, v1, v3}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
-    .line 215
+    .line 213
     :cond_2
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mDialogList:Ljava/util/List;
 
@@ -389,7 +410,7 @@
 
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mMessageList:Ljava/util/List;
 
-    .line 218
+    .line 216
     invoke-interface {v3, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -402,7 +423,7 @@
 
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mMessageList:Ljava/util/List;
 
-    .line 219
+    .line 217
     invoke-interface {v3, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -415,7 +436,7 @@
 
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mMessageList:Ljava/util/List;
 
-    .line 220
+    .line 218
     invoke-interface {v3, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -428,7 +449,7 @@
 
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mMessageList:Ljava/util/List;
 
-    .line 221
+    .line 219
     invoke-interface {v3, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -441,7 +462,7 @@
 
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mMessageList:Ljava/util/List;
 
-    .line 222
+    .line 220
     invoke-interface {v3, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -450,14 +471,14 @@
 
     invoke-direct {v11, p0, v3}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$OnDismissListener;-><init>(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;)V
 
-    .line 215
+    .line 213
     invoke-virtual/range {v4 .. v11}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;->create(Landroid/content/Context;Ljp/co/sony/mc/camera/setting/MessageSettings;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;Landroid/content/DialogInterface$OnDismissListener;)Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog;
 
     move-result-object v3
 
     invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 225
+    .line 223
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mOnOpenListener:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$MessageDialogOnOpenListener;
 
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mMessageList:Ljava/util/List;
@@ -470,7 +491,7 @@
 
     invoke-interface {v0, v3}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$MessageDialogOnOpenListener;->onOpen(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;)V
 
-    .line 228
+    .line 226
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mDialogList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -487,86 +508,7 @@
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog;->show()V
 
-    .line 229
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mMessageList:Ljava/util/List;
-
-    invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
-
-    iget-object v0, v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    sget-object v3, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->STREAMING_NOTES_ON_USE_CHECK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    if-eq v0, v3, :cond_3
-
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mMessageList:Ljava/util/List;
-
-    .line 230
-    invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
-
-    iget-object v0, v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    sget-object v3, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->STREAMING_PRIVACY_POLICY_CHECK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    if-eq v0, v3, :cond_3
-
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mMessageList:Ljava/util/List;
-
-    .line 231
-    invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
-
-    iget-object v0, v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    sget-object v3, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->SELECT_YOUTUBE_EVENT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    if-eq v0, v3, :cond_3
-
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mMessageList:Ljava/util/List;
-
-    .line 232
-    invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
-
-    iget-object v0, v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    sget-object v3, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FACEBOOK_LIVE_SELECT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    if-ne v0, v3, :cond_4
-
-    .line 233
-    :cond_3
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mDialogList:Ljava/util/List;
-
-    invoke-interface {v0}, Ljava/util/List;->size()I
-
-    move-result v3
-
-    sub-int/2addr v3, v1
-
-    invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog;
-
-    invoke-virtual {v0, v2}, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog;->setPositiveButtonEnabled(Z)V
-
-    .line 235
-    :cond_4
+    .line 227
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mMessageList:Ljava/util/List;
 
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -579,7 +521,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mCurrentDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 236
+    .line 228
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mMessageList:Ljava/util/List;
 
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -590,12 +532,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mCurrentParameter:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
 
-    .line 237
+    .line 229
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mMessageList:Ljava/util/List;
 
     invoke-interface {p0, v2}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
-    .line 239
+    .line 231
     const-string/jumbo p0, "show() X"
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->trace(Ljava/lang/String;)V
@@ -605,10 +547,18 @@
 
 .method private static trace(Ljava/lang/String;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "message"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
-    .line 50
+    .line 48
     new-array v0, v0, [Ljava/lang/String;
 
     const/4 v1, 0x0
@@ -625,12 +575,12 @@
 .method public clear()V
     .locals 3
 
-    .line 262
+    .line 254
     const-string v0, "clear()"
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->trace(Ljava/lang/String;)V
 
-    .line 264
+    .line 256
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mDialogList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -652,29 +602,29 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog;
 
-    .line 265
+    .line 257
     invoke-virtual {v1, v2}, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
-    .line 266
+    .line 258
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog;->dismiss()V
 
     goto :goto_0
 
-    .line 268
+    .line 260
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mDialogList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    .line 269
+    .line 261
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mMessageList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    .line 270
+    .line 262
     iput-object v2, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mCurrentDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 271
+    .line 263
     iput-object v2, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mCurrentParameter:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
 
     return-void
@@ -682,6 +632,15 @@
 
 .method public isCurrentDialogInList(Ljava/util/List;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dialogIdList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -691,7 +650,7 @@
         }
     .end annotation
 
-    .line 324
+    .line 316
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mCurrentDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     if-nez v0, :cond_0
@@ -700,7 +659,7 @@
 
     return p0
 
-    .line 327
+    .line 319
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -724,7 +683,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->trace(Ljava/lang/String;)V
 
-    .line 328
+    .line 320
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mCurrentDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-interface {p1, p0}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
@@ -737,12 +696,12 @@
 .method public isOpened()Z
     .locals 0
 
-    .line 307
+    .line 299
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mCurrentDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     if-eqz p0, :cond_0
 
-    .line 308
+    .line 300
     const-string p0, "isOpened() true"
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->trace(Ljava/lang/String;)V
@@ -751,7 +710,7 @@
 
     return p0
 
-    .line 311
+    .line 303
     :cond_0
     const-string p0, "isOpened() false"
 
@@ -764,6 +723,15 @@
 
 .method public removeDialogsInList(Ljava/util/List;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dialogIdList"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -773,7 +741,7 @@
         }
     .end annotation
 
-    .line 281
+    .line 273
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mCurrentDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     if-eqz v0, :cond_0
@@ -784,7 +752,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 282
+    .line 274
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "removeDialogsInList dismiss = "
@@ -803,7 +771,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->trace(Ljava/lang/String;)V
 
-    .line 284
+    .line 276
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mDialogList:Ljava/util/List;
 
     const/4 v1, 0x0
@@ -818,7 +786,7 @@
 
     invoke-virtual {v0, v2}, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
-    .line 285
+    .line 277
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mDialogList:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -829,13 +797,13 @@
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog;->dismiss()V
 
-    .line 286
+    .line 278
     iput-object v2, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mCurrentDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 287
+    .line 279
     iput-object v2, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mCurrentParameter:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
 
-    .line 290
+    .line 282
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mMessageList:Ljava/util/List;
 
@@ -843,7 +811,7 @@
 
     move-result-object p0
 
-    .line 291
+    .line 283
     :cond_1
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
@@ -852,14 +820,14 @@
 
     if-eqz v0, :cond_2
 
-    .line 292
+    .line 284
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
 
-    .line 293
+    .line 285
     iget-object v1, v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-interface {p1, v1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
@@ -868,10 +836,10 @@
 
     if-eqz v1, :cond_1
 
-    .line 294
+    .line 286
     invoke-interface {p0}, Ljava/util/Iterator;->remove()V
 
-    .line 295
+    .line 287
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "removeDialogsInList remove = "
@@ -898,8 +866,16 @@
 
 .method public request(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "parameter"
+        }
+    .end annotation
 
-    .line 164
+    .line 162
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "request() E DLG_ID = "
@@ -918,7 +894,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->trace(Ljava/lang/String;)V
 
-    .line 166
+    .line 164
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mCurrentDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     const/4 v1, 0x1
@@ -931,14 +907,14 @@
 
     if-ne v0, v2, :cond_0
 
-    .line 167
+    .line 165
     const-string p0, "request() current showing"
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->trace(Ljava/lang/String;)V
 
     return v1
 
-    .line 171
+    .line 169
     :cond_0
     iget-object v0, p1, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
@@ -948,7 +924,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 172
+    .line 170
     const-string p0, "request() isNeverShow = true"
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->trace(Ljava/lang/String;)V
@@ -957,13 +933,13 @@
 
     return p0
 
-    .line 176
+    .line 174
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mMessageList:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 178
+    .line 176
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->mMessageList:Ljava/util/List;
 
     new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$PriorityComparator;
@@ -974,10 +950,10 @@
 
     invoke-static {v0, v2}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    .line 179
+    .line 177
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->show()V
 
-    .line 180
+    .line 178
     new-instance p0, Ljava/lang/StringBuilder;
 
     const-string v0, "request() X DLG_ID = "
@@ -1002,7 +978,7 @@
 .method public showDialogInList()V
     .locals 0
 
-    .line 336
+    .line 328
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->show()V
 
     return-void

@@ -3,6 +3,7 @@
     <item type="id" name="abgm_layout" />
     <item type="id" name="abgm_reset" />
     <item type="id" name="abgm_text" />
+    <item type="id" name="acceptable_focus_area_bottom" />
     <item type="id" name="accessibility_action_clickable_span" />
     <item type="id" name="accessibility_custom_action_0" />
     <item type="id" name="accessibility_custom_action_1" />
@@ -52,15 +53,18 @@
     <item type="id" name="action_mode_bar" />
     <item type="id" name="action_mode_bar_stub" />
     <item type="id" name="action_mode_close_button" />
-    <item type="id" name="action_select_text1" />
-    <item type="id" name="action_select_text2" />
-    <item type="id" name="action_select_text3" />
     <item type="id" name="action_text" />
     <item type="id" name="actions" />
     <item type="id" name="activity_chooser_view_content" />
     <item type="id" name="addon_image" />
     <item type="id" name="addon_name" />
     <item type="id" name="adjusting_line" />
+    <item type="id" name="ai_suggestion_control" />
+    <item type="id" name="ai_suggestion_customize_layout" />
+    <item type="id" name="ai_suggestion_customize_menu" />
+    <item type="id" name="ai_suggestion_reset_button_layout" />
+    <item type="id" name="ai_suggestion_sub_preview" />
+    <item type="id" name="ai_suggestion_sub_preview_layout" />
     <item type="id" name="alertTitle" />
     <item type="id" name="alert_dialog_footer_txt" />
     <item type="id" name="alert_dialog_header_txt" />
@@ -70,17 +74,20 @@
     <item type="id" name="anchor_port" />
     <item type="id" name="androidx_compose_ui_view_composition_context" />
     <item type="id" name="androidx_window_activity_scope" />
+    <item type="id" name="angle_checked_text" />
+    <item type="id" name="angle_indicator" />
+    <item type="id" name="angle_title" />
     <item type="id" name="any_problem" />
     <item type="id" name="aperture" />
     <item type="id" name="aperture_button" />
+    <item type="id" name="arrow_checked_text" />
+    <item type="id" name="arrow_indicator" />
     <item type="id" name="arrow_left_button" />
     <item type="id" name="arrow_left_icon" />
     <item type="id" name="arrow_right_button" />
     <item type="id" name="arrow_right_icon" />
+    <item type="id" name="arrow_title" />
     <item type="id" name="aspectRatio" />
-    <item type="id" name="audience" />
-    <item type="id" name="audience_adults" />
-    <item type="id" name="audience_kids" />
     <item type="id" name="audio_indicator" />
     <item type="id" name="audio_level" />
     <item type="id" name="audio_level_1_container" />
@@ -122,7 +129,6 @@
     <item type="id" name="audio_level_text_2nd" />
     <item type="id" name="audio_level_view" />
     <item type="id" name="audio_level_widget" />
-    <item type="id" name="audio_mute" />
     <item type="id" name="auto_focus_rect" />
     <item type="id" name="auto_framing_orientation" />
     <item type="id" name="auto_framing_recording_mode" />
@@ -131,8 +137,8 @@
     <item type="id" name="auto_framing_size_menu_button" />
     <item type="id" name="back" />
     <item type="id" name="background" />
+    <item type="id" name="background_thumbnail" />
     <item type="id" name="background_with_info" />
-    <item type="id" name="ban_message_text" />
     <item type="id" name="base_button" />
     <item type="id" name="base_line" />
     <item type="id" name="basic_finder_overlay" />
@@ -149,7 +155,6 @@
     <item type="id" name="battery_image_group" />
     <item type="id" name="battery_text" />
     <item type="id" name="binding_reference" />
-    <item type="id" name="bitrate_value" />
     <item type="id" name="black_screen" />
     <item type="id" name="blur_view" />
     <item type="id" name="body" />
@@ -159,11 +164,6 @@
     <item type="id" name="bottom_pane" />
     <item type="id" name="brightness" />
     <item type="id" name="brightness_anchor" />
-    <item type="id" name="browser_actions_header_text" />
-    <item type="id" name="browser_actions_menu_item_icon" />
-    <item type="id" name="browser_actions_menu_item_text" />
-    <item type="id" name="browser_actions_menu_items" />
-    <item type="id" name="browser_actions_menu_view" />
     <item type="id" name="burst_count" />
     <item type="id" name="burst_count_icon" />
     <item type="id" name="burst_count_text" />
@@ -202,11 +202,6 @@
     <item type="id" name="category_recycler_view" />
     <item type="id" name="category_root" />
     <item type="id" name="center_rectangle" />
-    <item type="id" name="chat" />
-    <item type="id" name="chat_area" />
-    <item type="id" name="chat_background" />
-    <item type="id" name="chat_guide_text" />
-    <item type="id" name="chat_log_list" />
     <item type="id" name="check_box" />
     <item type="id" name="checkbox" />
     <item type="id" name="checked_text" />
@@ -221,7 +216,11 @@
     <item type="id" name="color" />
     <item type="id" name="color_anchor" />
     <item type="id" name="color_tone_profile_button" />
+    <item type="id" name="color_tone_profile_image" />
+    <item type="id" name="color_tone_profile_layout" />
     <item type="id" name="color_tone_profile_overlay" />
+    <item type="id" name="color_tone_profile_underline" />
+    <item type="id" name="color_tone_profile_value" />
     <item type="id" name="common_mode_custom_area" />
     <item type="id" name="common_mode_recycler_view" />
     <item type="id" name="common_mode_rotatable_layout" />
@@ -236,8 +235,6 @@
     <item type="id" name="confirm_button_adjust" />
     <item type="id" name="confirm_gm" />
     <item type="id" name="confirm_temperature" />
-    <item type="id" name="connect_mode" />
-    <item type="id" name="connect_setting" />
     <item type="id" name="constraint_layout" />
     <item type="id" name="consume_window_insets_tag" />
     <item type="id" name="container" />
@@ -257,6 +254,12 @@
     <item type="id" name="content_thumbnail_temporary" />
     <item type="id" name="contents_container" />
     <item type="id" name="continuous_shooting" />
+    <item type="id" name="contrast" />
+    <item type="id" name="contrast_anchor" />
+    <item type="id" name="contrast_default_indicator" />
+    <item type="id" name="contrast_title" />
+    <item type="id" name="contrast_value" />
+    <item type="id" name="control_and_detail_split_line" />
     <item type="id" name="control_view" />
     <item type="id" name="coordinator" />
     <item type="id" name="cover_frame" />
@@ -267,19 +270,19 @@
     <item type="id" name="custom_area_container" />
     <item type="id" name="custom_button" />
     <item type="id" name="custom_text" />
+    <item type="id" name="customize_settings_list" />
+    <item type="id" name="customize_settings_split_line" />
+    <item type="id" name="customize_settings_title_txt" />
     <item type="id" name="dataBinding" />
-    <item type="id" name="date" />
     <item type="id" name="date_picker_actions" />
-    <item type="id" name="date_time_area" />
-    <item type="id" name="date_time_center" />
     <item type="id" name="debug_fragment_actionbar_reset" />
     <item type="id" name="decor_content_parent" />
     <item type="id" name="default_activity_button" />
     <item type="id" name="default_focused_view" />
     <item type="id" name="description" />
     <item type="id" name="description_and_settings_split_line" />
+    <item type="id" name="description_and_settings_title_split_line" />
     <item type="id" name="description_bottom_cover" />
-    <item type="id" name="description_counter" />
     <item type="id" name="description_info_background" />
     <item type="id" name="description_split_line" />
     <item type="id" name="design_bottom_sheet" />
@@ -292,8 +295,6 @@
     <item type="id" name="dial_focus" />
     <item type="id" name="dial_ss" />
     <item type="id" name="dialogWithCheckBox" />
-    <item type="id" name="dialogWithRadioButton" />
-    <item type="id" name="dialogYoutubeAccountActionSelect" />
     <item type="id" name="dialog_button" />
     <item type="id" name="dialog_content" />
     <item type="id" name="dialog_mode_restricted_in_high_temperature" />
@@ -311,7 +312,6 @@
     <item type="id" name="early_thumbnail_container" />
     <item type="id" name="early_thumbnail_image" />
     <item type="id" name="edit_query" />
-    <item type="id" name="edit_text" />
     <item type="id" name="edit_text_id" />
     <item type="id" name="endurance_mode" />
     <item type="id" name="endurance_mode_layout" />
@@ -319,13 +319,17 @@
     <item type="id" name="endurance_mode_txt" />
     <item type="id" name="endurance_mode_value" />
     <item type="id" name="ev" />
+    <item type="id" name="ev_anchor" />
     <item type="id" name="ev_background" />
+    <item type="id" name="ev_default_indicator" />
     <item type="id" name="ev_image" />
     <item type="id" name="ev_layout" />
     <item type="id" name="ev_slider" />
     <item type="id" name="ev_slider_group" />
     <item type="id" name="ev_submenu" />
+    <item type="id" name="ev_title" />
     <item type="id" name="ev_underline" />
+    <item type="id" name="ev_value" />
     <item type="id" name="expand_activities_button" />
     <item type="id" name="expanded_menu" />
     <item type="id" name="explain_text" />
@@ -343,10 +347,6 @@
     <item type="id" name="eye_image" />
     <item type="id" name="f_number" />
     <item type="id" name="face_rectangle" />
-    <item type="id" name="facebook_go_live_description" />
-    <item type="id" name="facebook_go_live_setting_description" />
-    <item type="id" name="facebook_go_live_setting_privacy" />
-    <item type="id" name="facebook_live_privacy" />
     <item type="id" name="facing" />
     <item type="id" name="farming_assist_indicator" />
     <item type="id" name="fast_capturing_auto_focus" />
@@ -383,9 +383,14 @@
     <item type="id" name="focus_rectangles" />
     <item type="id" name="focus_rectangles_container" />
     <item type="id" name="focus_root" />
+    <item type="id" name="focus_ss_menu" />
     <item type="id" name="focus_status" />
     <item type="id" name="focus_zoom_info_text" />
+    <item type="id" name="fold_button" />
+    <item type="id" name="fold_image" />
+    <item type="id" name="fold_notice_image" />
     <item type="id" name="footer_text" />
+    <item type="id" name="foreground_thumbnail" />
     <item type="id" name="fragment_common_operation_frame" />
     <item type="id" name="fragment_container" />
     <item type="id" name="fragment_container_view_tag" />
@@ -406,8 +411,6 @@
     <item type="id" name="ghost_view" />
     <item type="id" name="ghost_view_holder" />
     <item type="id" name="google_lens" />
-    <item type="id" name="gradation_bottom" />
-    <item type="id" name="gradation_top" />
     <item type="id" name="grid_line" />
     <item type="id" name="grid_line_view" />
     <item type="id" name="group_divider" />
@@ -415,7 +418,6 @@
     <item type="id" name="group_title" />
     <item type="id" name="guide" />
     <item type="id" name="guide_category_end" />
-    <item type="id" name="guide_line" />
     <item type="id" name="guideline_center" />
     <item type="id" name="hdr" />
     <item type="id" name="header_background" />
@@ -425,6 +427,9 @@
     <item type="id" name="hide_fn_menu_cover" />
     <item type="id" name="hide_ime_id" />
     <item type="id" name="hide_in_inspector_tag" />
+    <item type="id" name="highlight_circle" />
+    <item type="id" name="highlight_circle_end" />
+    <item type="id" name="highlight_circle_start" />
     <item type="id" name="hint_text" />
     <item type="id" name="hint_text_container" />
     <item type="id" name="hint_text_left_button" />
@@ -445,8 +450,11 @@
     <item type="id" name="image" />
     <item type="id" name="imageView" />
     <item type="id" name="image_background" />
-    <item type="id" name="image_button" />
     <item type="id" name="indicator" />
+    <item type="id" name="indicator_1" />
+    <item type="id" name="indicator_2" />
+    <item type="id" name="indicator_description" />
+    <item type="id" name="indicator_description_split_line" />
     <item type="id" name="indicator_icon_container" />
     <item type="id" name="indicator_root_view" />
     <item type="id" name="info" />
@@ -468,6 +476,7 @@
     <item type="id" name="inner_cover" />
     <item type="id" name="inspection_slot_table_set" />
     <item type="id" name="intercept_drag" />
+    <item type="id" name="introduction_button" />
     <item type="id" name="is_pooling_container_tag" />
     <item type="id" name="iso" />
     <item type="id" name="iso_background" />
@@ -476,27 +485,18 @@
     <item type="id" name="iso_submenu" />
     <item type="id" name="iso_underline" />
     <item type="id" name="item_button" />
-    <item type="id" name="item_date" />
-    <item type="id" name="item_description" />
     <item type="id" name="item_info" />
     <item type="id" name="item_list" />
     <item type="id" name="item_options" />
-    <item type="id" name="item_time" />
     <item type="id" name="item_title" />
     <item type="id" name="item_touch_helper_previous_elevation" />
-    <item type="id" name="jump_latest_chat_button" />
     <item type="id" name="label" />
     <item type="id" name="label_end" />
     <item type="id" name="label_ev" />
     <item type="id" name="label_iso" />
     <item type="id" name="label_ss" />
     <item type="id" name="label_start" />
-    <item type="id" name="latency" />
-    <item type="id" name="latency_low" />
-    <item type="id" name="latency_normal" />
-    <item type="id" name="layout_action_bar" />
     <item type="id" name="layout_mode_switch_container" />
-    <item type="id" name="layout_save_button" />
     <item type="id" name="left_area" />
     <item type="id" name="left_button" />
     <item type="id" name="left_selftimer_countdown_text" />
@@ -505,6 +505,10 @@
     <item type="id" name="level_meter" />
     <item type="id" name="level_meter_container" />
     <item type="id" name="level_meter_frameLayout" />
+    <item type="id" name="license" />
+    <item type="id" name="license_activity_scrollview" />
+    <item type="id" name="license_activity_textview" />
+    <item type="id" name="license_list" />
     <item type="id" name="line" />
     <item type="id" name="line1" />
     <item type="id" name="line3" />
@@ -516,11 +520,8 @@
     <item type="id" name="list_item" />
     <item type="id" name="list_refresh_cover" />
     <item type="id" name="listview_for_talkback" />
-    <item type="id" name="live_event_url_text" />
     <item type="id" name="lock" />
     <item type="id" name="lock_background" />
-    <item type="id" name="login" />
-    <item type="id" name="login_button" />
     <item type="id" name="low_light_mode" />
     <item type="id" name="m3_side_sheet" />
     <item type="id" name="macro_indicator" />
@@ -529,7 +530,6 @@
     <item type="id" name="main_circle" />
     <item type="id" name="main_description" />
     <item type="id" name="main_label" />
-    <item type="id" name="manual_menu" />
     <item type="id" name="manual_ss_bar" />
     <item type="id" name="mask" />
     <item type="id" name="masked" />
@@ -660,18 +660,14 @@
     <item type="id" name="navigation_bar_item_large_label_view" />
     <item type="id" name="navigation_bar_item_small_label_view" />
     <item type="id" name="navigation_header_container" />
-    <item type="id" name="network_icon" />
-    <item type="id" name="network_offline" />
-    <item type="id" name="network_state_area" />
-    <item type="id" name="network_usage" />
     <item type="id" name="nextButton" />
+    <item type="id" name="no_licenses_text" />
     <item type="id" name="notification_background" />
     <item type="id" name="notification_content" />
     <item type="id" name="notification_main_column" />
     <item type="id" name="notification_main_column_container" />
     <item type="id" name="notification_title" />
     <item type="id" name="off" />
-    <item type="id" name="ok_button" />
     <item type="id" name="on" />
     <item type="id" name="onAttachStateChangeListener" />
     <item type="id" name="onDateChanged" />
@@ -693,6 +689,7 @@
     <item type="id" name="operation_frame_container" />
     <item type="id" name="overlay" />
     <item type="id" name="pageIndicator" />
+    <item type="id" name="page_indicator_container" />
     <item type="id" name="pair_controller_description" />
     <item type="id" name="pair_controller_image" />
     <item type="id" name="pair_new_controller" />
@@ -705,6 +702,7 @@
     <item type="id" name="peaking_title" />
     <item type="id" name="permission_list" />
     <item type="id" name="permission_text" />
+    <item type="id" name="photo_bokeh_lens" />
     <item type="id" name="photo_bottom_main_dial" />
     <item type="id" name="photo_format" />
     <item type="id" name="photo_icons_area" />
@@ -727,10 +725,6 @@
     <item type="id" name="preview_frame" />
     <item type="id" name="preview_hint_text_view_container" />
     <item type="id" name="preview_surface_overlay" />
-    <item type="id" name="privacy" />
-    <item type="id" name="privacy_private" />
-    <item type="id" name="privacy_public" />
-    <item type="id" name="privacy_unlisted" />
     <item type="id" name="pro_mode_capturing_mode_menu" />
     <item type="id" name="pro_mode_capturing_mode_menu_info" />
     <item type="id" name="pro_mode_focus_zoom_container" />
@@ -741,6 +735,7 @@
     <item type="id" name="pro_mode_zoom_icon" />
     <item type="id" name="pro_photo_mode_lens" />
     <item type="id" name="pro_video_mode_lens" />
+    <item type="id" name="pro_video_mode_without_hybrid_lens" />
     <item type="id" name="pro_video_product_showcase" />
     <item type="id" name="pro_video_recording_sub_button_area" />
     <item type="id" name="product_showcase" />
@@ -755,7 +750,6 @@
     <item type="id" name="quick_setting_root" />
     <item type="id" name="quick_settings_container" />
     <item type="id" name="radio" />
-    <item type="id" name="radioGroup" />
     <item type="id" name="rec" />
     <item type="id" name="rec_status_container" />
     <item type="id" name="rec_status_text_root" />
@@ -776,6 +770,8 @@
     <item type="id" name="report_drawn" />
     <item type="id" name="reset" />
     <item type="id" name="reset_button" />
+    <item type="id" name="reset_button_image" />
+    <item type="id" name="reset_button_text" />
     <item type="id" name="resolution" />
     <item type="id" name="retry_and_done_btn" />
     <item type="id" name="retry_btn" />
@@ -788,11 +784,11 @@
     <item type="id" name="root" />
     <item type="id" name="root_container" />
     <item type="id" name="row_index_key" />
-    <item type="id" name="rtmp" />
-    <item type="id" name="rtmp_key" />
-    <item type="id" name="rtmp_key_text" />
-    <item type="id" name="rtmp_url" />
-    <item type="id" name="rtmp_url_text" />
+    <item type="id" name="saturation" />
+    <item type="id" name="saturation_anchor" />
+    <item type="id" name="saturation_default_indicator" />
+    <item type="id" name="saturation_title" />
+    <item type="id" name="saturation_value" />
     <item type="id" name="save" />
     <item type="id" name="save_non_transition_alpha" />
     <item type="id" name="save_overlay_view" />
@@ -801,16 +797,18 @@
     <item type="id" name="scrollIndicatorDown" />
     <item type="id" name="scrollIndicatorUp" />
     <item type="id" name="scrollView" />
-    <item type="id" name="scroll_area" />
     <item type="id" name="scroll_content" />
     <item type="id" name="scroll_content_space" />
-    <item type="id" name="scroll_contents" />
     <item type="id" name="scroll_message" />
     <item type="id" name="scroll_points" />
     <item type="id" name="scroll_view" />
-    <item type="id" name="seamless_lens_bokeh" />
-    <item type="id" name="seamless_lens_norm" />
+    <item type="id" name="seamless_lens_photo" />
+    <item type="id" name="seamless_lens_video" />
+    <item type="id" name="seamless_lens_video_bokeh" />
+    <item type="id" name="seamless_lens_video_intelligent_active" />
     <item type="id" name="seamless_lens_video_mf_hdr" />
+    <item type="id" name="seamless_lens_video_steady_shot" />
+    <item type="id" name="seamless_lens_video_steady_shot_mf_hdr" />
     <item type="id" name="search_badge" />
     <item type="id" name="search_bar" />
     <item type="id" name="search_button" />
@@ -836,7 +834,6 @@
     <item type="id" name="selftimer_countdown_bg" />
     <item type="id" name="selftimer_countdown_circle" />
     <item type="id" name="selftimer_counter" />
-    <item type="id" name="separator" />
     <item type="id" name="set" />
     <item type="id" name="set_btn" />
     <item type="id" name="setting_check_box" />
@@ -846,19 +843,19 @@
     <item type="id" name="setting_title" />
     <item type="id" name="setting_value" />
     <item type="id" name="setting_value_switch" />
+    <item type="id" name="settings" />
     <item type="id" name="settingsContainer" />
     <item type="id" name="settings_recycler_view" />
-    <item type="id" name="shape_id" />
-    <item type="id" name="share_button" />
-    <item type="id" name="share_text" />
+    <item type="id" name="settings_scroll_view" />
     <item type="id" name="shortcut" />
     <item type="id" name="single_shooting" />
-    <item type="id" name="size_change_button" />
     <item type="id" name="slider" />
     <item type="id" name="slider_super_tele" />
     <item type="id" name="slider_super_tele_physical" />
     <item type="id" name="slider_tele" />
+    <item type="id" name="slider_tele_hybrid_zoom" />
     <item type="id" name="slider_tele_physical" />
+    <item type="id" name="slider_tele_physical_hybrid_zoom" />
     <item type="id" name="slider_touch_area" />
     <item type="id" name="slider_uwide" />
     <item type="id" name="slider_uwide_physical" />
@@ -891,30 +888,29 @@
     <item type="id" name="status_bar_container" />
     <item type="id" name="storage" />
     <item type="id" name="storage_dialog" />
-    <item type="id" name="stream_live_chat" />
-    <item type="id" name="stream_mic_icon" />
-    <item type="id" name="stream_status" />
-    <item type="id" name="streaming" />
-    <item type="id" name="streaming_consent_text" />
-    <item type="id" name="streaming_duration_landscape" />
-    <item type="id" name="streaming_duration_portrait" />
-    <item type="id" name="streaming_item_options" />
-    <item type="id" name="streaming_item_title" />
-    <item type="id" name="streaming_quick_setting" />
-    <item type="id" name="streaming_setting_text1" />
-    <item type="id" name="streaming_setting_text2" />
-    <item type="id" name="streaming_setting_text3" />
-    <item type="id" name="streaming_status" />
-    <item type="id" name="streaming_text" />
     <item type="id" name="strength" />
     <item type="id" name="sub_button" />
     <item type="id" name="sub_category_title" />
+    <item type="id" name="sub_cover_view" />
     <item type="id" name="sub_description" />
+    <item type="id" name="sub_placeholder_layout" />
+    <item type="id" name="sub_placeholder_layout_cover" />
+    <item type="id" name="sub_placeholder_view" />
+    <item type="id" name="sub_preview" />
+    <item type="id" name="sub_preview_layout" />
+    <item type="id" name="sub_preview_selected_image_land" />
+    <item type="id" name="sub_preview_selected_image_port" />
+    <item type="id" name="sub_preview_selected_image_reverse_land" />
+    <item type="id" name="sub_preview_splash" />
+    <item type="id" name="sub_preview_splash_above" />
+    <item type="id" name="sub_preview_splash_below" />
+    <item type="id" name="sub_preview_surface_container_anchor" />
     <item type="id" name="submenu" />
     <item type="id" name="submenu_overlay" />
     <item type="id" name="submenuarrow" />
     <item type="id" name="submit_area" />
     <item type="id" name="surface_container" />
+    <item type="id" name="surface_view_container" />
     <item type="id" name="switchWidget" />
     <item type="id" name="switch_button" />
     <item type="id" name="switch_widget" />
@@ -966,14 +962,11 @@
     <item type="id" name="title_area_container" />
     <item type="id" name="title_bar" />
     <item type="id" name="title_bar_layout" />
-    <item type="id" name="title_bottom" />
     <item type="id" name="title_container" />
-    <item type="id" name="title_counter" />
     <item type="id" name="title_root" />
     <item type="id" name="title_template" />
     <item type="id" name="title_text" />
     <item type="id" name="title_text_container" />
-    <item type="id" name="title_top" />
     <item type="id" name="toast" />
     <item type="id" name="topPanel" />
     <item type="id" name="top_area" />
@@ -989,6 +982,7 @@
     <item type="id" name="transition_transform" />
     <item type="id" name="transparent_screen" />
     <item type="id" name="trigger_root" />
+    <item type="id" name="tripod_framing_mode" />
     <item type="id" name="tutorial_dialog" />
     <item type="id" name="up" />
     <item type="id" name="user_operation_blocker" />
@@ -996,22 +990,21 @@
     <item type="id" name="value_ab" />
     <item type="id" name="value_abgm" />
     <item type="id" name="value_area" />
-    <item type="id" name="value_container" />
     <item type="id" name="value_gm" />
     <item type="id" name="value_list" />
     <item type="id" name="value_stub" />
     <item type="id" name="value_temperature" />
+    <item type="id" name="vibration_description" />
+    <item type="id" name="vibration_description_split_line" />
+    <item type="id" name="vibration_switch_layout" />
+    <item type="id" name="vibration_switch_layout_split_line" />
+    <item type="id" name="video_auto_framing_lens" />
     <item type="id" name="video_bottom_main_dial" />
     <item type="id" name="video_bottom_main_dial_close_button" />
     <item type="id" name="video_format" />
     <item type="id" name="video_fps" />
     <item type="id" name="video_fps_setting" />
     <item type="id" name="video_icons_area" />
-    <item type="id" name="video_quality" />
-    <item type="id" name="video_quality_select_text" />
-    <item type="id" name="video_quality_selector" />
-    <item type="id" name="video_quality_selector_container" />
-    <item type="id" name="video_quality_title" />
     <item type="id" name="video_size" />
     <item type="id" name="video_size_setting" />
     <item type="id" name="video_speed_ratio" />
@@ -1030,10 +1023,20 @@
     <item type="id" name="viewfinder_capture" />
     <item type="id" name="visibility_animator_id" />
     <item type="id" name="visible_removing_fragment_view_tag" />
+    <item type="id" name="wb_ab" />
+    <item type="id" name="wb_ab_anchor" />
+    <item type="id" name="wb_ab_default_indicator" />
+    <item type="id" name="wb_ab_title" />
+    <item type="id" name="wb_ab_value" />
     <item type="id" name="wb_confirm" />
     <item type="id" name="wb_fail" />
     <item type="id" name="wb_fetch" />
     <item type="id" name="wb_fn_submenu" />
+    <item type="id" name="wb_gm" />
+    <item type="id" name="wb_gm_anchor" />
+    <item type="id" name="wb_gm_default_indicator" />
+    <item type="id" name="wb_gm_title" />
+    <item type="id" name="wb_gm_value" />
     <item type="id" name="wb_grid_a" />
     <item type="id" name="wb_grid_b" />
     <item type="id" name="wb_grid_g" />
@@ -1052,10 +1055,5 @@
     <item type="id" name="white_balance_custom_gm" />
     <item type="id" name="with_icon" />
     <item type="id" name="wrapped_composition_tag" />
-    <item type="id" name="youtube" />
-    <item type="id" name="youtube_account" />
-    <item type="id" name="youtube_account_text" />
-    <item type="id" name="youtube_event_text" />
-    <item type="id" name="youtube_live_chat_button" />
     <item type="id" name="zoom_icon" />
 </resources>

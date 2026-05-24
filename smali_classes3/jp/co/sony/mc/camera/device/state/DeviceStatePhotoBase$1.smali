@@ -22,7 +22,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 721
+    .line 778
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;->values()[Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
 
     move-result-object v0

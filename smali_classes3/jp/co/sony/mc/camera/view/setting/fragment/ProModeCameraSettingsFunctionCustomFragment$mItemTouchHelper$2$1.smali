@@ -396,7 +396,7 @@
 
     if-eqz v0, :cond_3
 
-    const v1, 0x7f0603ba
+    const v1, 0x7f0603a3
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundResource(I)V
 

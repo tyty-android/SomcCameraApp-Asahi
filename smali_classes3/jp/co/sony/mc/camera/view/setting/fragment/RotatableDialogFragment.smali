@@ -432,7 +432,7 @@
 
     invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    const p1, 0x7f12050f
+    const p1, 0x7f120516
 
     invoke-virtual {p0, p1}, Landroid/view/Window;->setWindowAnimations(I)V
 
@@ -452,7 +452,7 @@
 
     invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    const p1, 0x7f12050e
+    const p1, 0x7f120515
 
     invoke-virtual {p0, p1}, Landroid/view/Window;->setWindowAnimations(I)V
 

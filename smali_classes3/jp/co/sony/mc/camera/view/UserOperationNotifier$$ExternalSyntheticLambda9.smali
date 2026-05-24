@@ -24,7 +24,7 @@
     .line 0
     check-cast p1, Ljp/co/sony/mc/camera/view/UserOperationListener;
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/view/UserOperationNotifier;->$r8$lambda$q7Fwd20HjBgM_ILKC1Ba_rq7U40(Ljp/co/sony/mc/camera/view/UserOperationListener;)Lkotlin/Unit;
+    invoke-static {p1}, Ljp/co/sony/mc/camera/view/UserOperationNotifier;->$r8$lambda$rlWAQMTyhWSQMGogXO-w_YEZEWk(Ljp/co/sony/mc/camera/view/UserOperationListener;)Lkotlin/Unit;
 
     move-result-object p0
 

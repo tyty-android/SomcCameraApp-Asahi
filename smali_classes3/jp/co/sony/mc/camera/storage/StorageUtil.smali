@@ -64,6 +64,14 @@
 
 .method private static checkStorageWritable(Ljava/lang/String;)Z
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "targetPath"
+        }
+    .end annotation
 
     const-string v0, "Failed createTempFile() not allowed : "
 
@@ -227,6 +235,16 @@
 
 .method public static checkWritable(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Landroid/content/Context;)Z
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "context"
+        }
+    .end annotation
 
     .line 385
     sget-object v0, Landroid/os/Environment;->DIRECTORY_DCIM:Ljava/lang/String;
@@ -298,6 +316,16 @@
 
 .method public static deleteVideoFile(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljava/lang/String;)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "path"
+        }
+    .end annotation
 
     .line 353
     invoke-static {}, Ljp/co/sony/mc/camera/CameraApplication;->getContext()Landroid/content/Context;
@@ -422,6 +450,16 @@
 
 .method public static exists(Landroid/content/Context;Landroid/net/Uri;)Z
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "uri"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -534,6 +572,16 @@
 
 .method public static getOneShotStorageTypeFromUri(Landroid/net/Uri;Landroid/content/Context;)Ljp/co/sony/mc/camera/storage/Storage$StorageType;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "uri",
+            "context"
+        }
+    .end annotation
 
     .line 130
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -757,6 +805,16 @@
 
 .method public static getPathFromType(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Landroid/content/Context;)Ljava/lang/String;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "context"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -811,6 +869,14 @@
 
 .method private static getStorageManager(Landroid/content/Context;)Landroid/os/storage/StorageManager;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 166
     const-string/jumbo v0, "storage"
@@ -826,6 +892,18 @@
 
 .method public static getStorageType(Landroid/os/storage/StorageVolume;Ljava/lang/String;Landroid/content/Context;)Ljp/co/sony/mc/camera/storage/Storage$StorageType;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "volume",
+            "path",
+            "context"
+        }
+    .end annotation
 
     .line 87
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -915,6 +993,16 @@
 
 .method public static getVolume(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Landroid/content/Context;)Ljava/lang/String;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "context"
+        }
+    .end annotation
 
     .line 450
     sget-object v0, Ljp/co/sony/mc/camera/storage/Storage$StorageType;->INTERNAL:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
@@ -981,6 +1069,16 @@
 
 .method public static getVolumeState(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Landroid/content/Context;)Ljava/lang/String;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "context"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -1080,6 +1178,14 @@
 
 .method private static getVolumeType(Landroid/os/storage/StorageVolume;)Ljp/co/sony/mc/camera/storage/Storage$StorageType;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "volume"
+        }
+    .end annotation
 
     if-nez p0, :cond_0
 
@@ -1110,6 +1216,16 @@
 
 .method public static getVolumeType(Ljava/lang/String;Landroid/content/Context;)Ljp/co/sony/mc/camera/storage/Storage$StorageType;
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "volumeName",
+            "context"
+        }
+    .end annotation
 
     .line 203
     sget-object v0, Ljp/co/sony/mc/camera/storage/Storage$StorageType;->UNKNOWN:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
@@ -1191,6 +1307,16 @@
 
 .method public static getVolumeUuid(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Landroid/content/Context;)Ljava/lang/String;
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "context"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -1276,6 +1402,14 @@
 
 .method public static isExistRemovableStorage(Landroid/content/Context;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -1320,6 +1454,14 @@
 
 .method private static normalizeUuid(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fsUuid"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
@@ -1347,6 +1489,14 @@
 
 .method public static releasePending(Landroid/net/Uri;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "item"
+        }
+    .end annotation
 
     if-eqz p0, :cond_0
 
@@ -1438,6 +1588,14 @@
 
 .method public static updateBurstCaptureName(Ljava/lang/String;)Z
     .locals 12
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "path"
+        }
+    .end annotation
 
     const-string v0, "_COVER.JPG"
 

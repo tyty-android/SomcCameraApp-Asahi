@@ -36,7 +36,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/view/FragmentController$EnduranceMode;
     .locals 3
 
-    .line 506
+    .line 468
     sget-object v0, Ljp/co/sony/mc/camera/view/FragmentController$EnduranceMode;->DEACTIVATE:Ljp/co/sony/mc/camera/view/FragmentController$EnduranceMode;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/FragmentController$EnduranceMode;->ACTIVATE:Ljp/co/sony/mc/camera/view/FragmentController$EnduranceMode;
@@ -53,7 +53,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 507
+    .line 469
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$EnduranceMode;
 
     const-string v1, "DEACTIVATE"
@@ -64,7 +64,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/FragmentController$EnduranceMode;->DEACTIVATE:Ljp/co/sony/mc/camera/view/FragmentController$EnduranceMode;
 
-    .line 508
+    .line 470
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$EnduranceMode;
 
     const-string v1, "ACTIVATE"
@@ -75,7 +75,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/FragmentController$EnduranceMode;->ACTIVATE:Ljp/co/sony/mc/camera/view/FragmentController$EnduranceMode;
 
-    .line 509
+    .line 471
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$EnduranceMode;
 
     const-string v1, "TEMP_ACTIVATE"
@@ -86,7 +86,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/FragmentController$EnduranceMode;->TEMP_ACTIVATE:Ljp/co/sony/mc/camera/view/FragmentController$EnduranceMode;
 
-    .line 506
+    .line 468
     invoke-static {}, Ljp/co/sony/mc/camera/view/FragmentController$EnduranceMode;->$values()[Ljp/co/sony/mc/camera/view/FragmentController$EnduranceMode;
 
     move-result-object v0
@@ -98,13 +98,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 506
+    .line 468
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -112,8 +123,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/FragmentController$EnduranceMode;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 506
+    .line 468
     const-class v0, Ljp/co/sony/mc/camera/view/FragmentController$EnduranceMode;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -128,7 +147,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/view/FragmentController$EnduranceMode;
     .locals 1
 
-    .line 506
+    .line 468
     sget-object v0, Ljp/co/sony/mc/camera/view/FragmentController$EnduranceMode;->$VALUES:[Ljp/co/sony/mc/camera/view/FragmentController$EnduranceMode;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/view/FragmentController$EnduranceMode;->clone()Ljava/lang/Object;

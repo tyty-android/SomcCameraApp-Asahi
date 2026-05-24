@@ -171,7 +171,7 @@
 
     move-result-object p0
 
-    const v0, 0x7f090136
+    const v0, 0x7f090135
 
     .line 98
     invoke-virtual {p0, v0}, Landroidx/fragment/app/FragmentManager;->findFragmentById(I)Landroidx/fragment/app/Fragment;
@@ -300,7 +300,7 @@
     return-void
 
     :cond_1
-    const p1, 0x7f0c0024
+    const p1, 0x7f0c0025
 
     .line 49
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/MemoryRecallActivity;->setContentView(I)V
@@ -316,7 +316,7 @@
 
     if-eqz v0, :cond_2
 
-    const v0, 0x7f090136
+    const v0, 0x7f090135
 
     .line 52
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/MemoryRecallActivity;->findViewById(I)Landroid/view/View;

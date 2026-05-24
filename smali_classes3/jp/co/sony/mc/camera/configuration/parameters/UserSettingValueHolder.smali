@@ -82,6 +82,15 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "defaultValue"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)V"
@@ -152,6 +161,15 @@
 
 .method private deserialize(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "valueStr"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -276,6 +294,15 @@
 
 .method private getParameterState(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValueHolder$ParameterState;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "className"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -450,6 +477,15 @@
 
 .method private serialize(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)",
@@ -518,6 +554,15 @@
 
 .method public applyRecommendedValue(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)V"
@@ -648,6 +693,15 @@
 
 .method public forceChange(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)Z"
@@ -783,6 +837,14 @@
 
 .method public parseValueString(Ljava/lang/String;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     if-nez p1, :cond_0
 
@@ -905,6 +967,15 @@
 
 .method public set(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)V"
@@ -942,6 +1013,14 @@
 
 .method public setInt(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
 
     .line 517
     iput p1, p0, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValueHolder;->mIntValue:I
@@ -951,6 +1030,15 @@
 
 .method public setOptions([Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "options"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([TT;)V"
@@ -1045,6 +1133,15 @@
 
 .method public updateDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)TT;"

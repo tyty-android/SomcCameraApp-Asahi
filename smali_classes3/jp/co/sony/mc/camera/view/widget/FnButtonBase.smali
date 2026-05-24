@@ -178,7 +178,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f080309
+    const v1, 0x7f080379
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -220,7 +220,7 @@
     :goto_0
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/widget/FnButtonBase;->labelMark:Landroid/graphics/drawable/Drawable;
 
-    const v0, 0x7f0c00a2
+    const v0, 0x7f0c0099
 
     .line 77
     move-object v2, p0
@@ -401,7 +401,7 @@
 .method private final getContainerWithValue()Landroid/view/ViewGroup;
     .locals 1
 
-    const v0, 0x7f090132
+    const v0, 0x7f090131
 
     .line 42
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/widget/FnButtonBase;->findViewById(I)Landroid/view/View;
@@ -420,7 +420,7 @@
 .method private final getIconNoValue()Landroid/widget/ImageView;
     .locals 1
 
-    const v0, 0x7f09023b
+    const v0, 0x7f090243
 
     .line 39
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/widget/FnButtonBase;->findViewById(I)Landroid/view/View;
@@ -439,7 +439,7 @@
 .method private final getIconWithValue()Landroid/widget/ImageView;
     .locals 1
 
-    const v0, 0x7f09023d
+    const v0, 0x7f090246
 
     .line 44
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/widget/FnButtonBase;->findViewById(I)Landroid/view/View;

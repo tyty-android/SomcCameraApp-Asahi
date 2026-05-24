@@ -82,7 +82,7 @@
     .line 211
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    const v1, 0x7f090217
+    const v1, 0x7f09021d
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -107,7 +107,7 @@
 
     move-result-object p1
 
-    const v1, 0x7f04010c
+    const v1, 0x7f04010e
 
     const/4 v2, 0x1
 

@@ -40,6 +40,22 @@
 
 .method public constructor <init>(Landroid/os/Handler;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Ljp/co/sony/mc/camera/device/CaptureResultNotifier$AutoFocusResultCallback;ZZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "handler",
+            "sessionId",
+            "callback",
+            "isAvailableResAfDriveMode",
+            "isYuvFrameDrawSupported"
+        }
+    .end annotation
 
     .line 36
     invoke-direct {p0, p1, p4, p5}, Ljp/co/sony/mc/camera/device/AutoFocusSuccessChecker;-><init>(Landroid/os/Handler;ZZ)V
@@ -70,6 +86,14 @@
 
 .method private changeTo(Ljp/co/sony/mc/camera/device/AutoFocusResultChecker$State;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "next"
+        }
+    .end annotation
 
     .line 148
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/AutoFocusResultChecker;->mState:Ljp/co/sony/mc/camera/device/AutoFocusResultChecker$State;
@@ -135,6 +159,16 @@
 
 .method private check(Landroid/hardware/camera2/CaptureRequest;Landroid/hardware/camera2/CaptureResult;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "result"
+        }
+    .end annotation
 
     .line 57
     sget-object v0, Ljp/co/sony/mc/camera/device/AutoFocusResultChecker$4;->$SwitchMap$jp$co$sony$mc$camera$device$AutoFocusResultChecker$State:[I
@@ -318,6 +352,14 @@
 
 .method private checkAfState(Ljava/lang/Integer;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "afState"
+        }
+    .end annotation
 
     const/4 p0, 0x4
 
@@ -405,6 +447,16 @@
 # virtual methods
 .method public checkOnCompleted(Landroid/hardware/camera2/CaptureRequest;Ljp/co/sony/mc/camera/device/CaptureResultHolder;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "resultHolder"
+        }
+    .end annotation
 
     .line 50
     invoke-super {p0, p1, p2}, Ljp/co/sony/mc/camera/device/AutoFocusSuccessChecker;->checkOnCompleted(Landroid/hardware/camera2/CaptureRequest;Ljp/co/sony/mc/camera/device/CaptureResultHolder;)V
@@ -421,6 +473,16 @@
 
 .method public checkOnPartial(Landroid/hardware/camera2/CaptureRequest;Landroid/hardware/camera2/CaptureResult;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "result"
+        }
+    .end annotation
 
     .line 44
     invoke-super {p0, p1, p2}, Ljp/co/sony/mc/camera/device/AutoFocusSuccessChecker;->checkOnPartial(Landroid/hardware/camera2/CaptureRequest;Landroid/hardware/camera2/CaptureResult;)V

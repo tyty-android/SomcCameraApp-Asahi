@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/math/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<X:",
@@ -20,7 +23,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 28
+    .line 29
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,6 +32,17 @@
 
 # virtual methods
 .method abstract minus(Ljava/lang/Number;Ljava/lang/Number;)Ljava/lang/Number;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "a",
+            "b"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TX;TX;)TX;"
@@ -38,6 +52,17 @@
 
 .method final roundToDouble(Ljava/lang/Number;Ljava/math/RoundingMode;)D
     .locals 12
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "x",
+            "mode"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TX;",
@@ -46,22 +71,22 @@
         }
     .end annotation
 
-    .line 46
+    .line 47
     const-string v0, "x"
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 47
+    .line 48
     const-string v0, "mode"
 
     invoke-static {p2, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 48
+    .line 49
     invoke-virtual {p0, p1}, Lcom/google/common/math/ToDoubleRounder;->roundToDoubleArbitrarily(Ljava/lang/Number;)D
 
     move-result-wide v0
 
-    .line 49
+    .line 50
     invoke-static {v0, v1}, Ljava/lang/Double;->isInfinite(D)Z
 
     move-result v2
@@ -72,7 +97,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 50
+    .line 51
     sget-object v2, Lcom/google/common/math/ToDoubleRounder$1;->$SwitchMap$java$math$RoundingMode:[I
 
     invoke-virtual {p2}, Ljava/math/RoundingMode;->ordinal()I
@@ -87,29 +112,15 @@
 
     goto :goto_1
 
-    .line 67
+    .line 68
     :pswitch_0
     new-instance p0, Ljava/lang/ArithmeticException;
 
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    new-instance p2, Ljava/lang/StringBuilder;
 
-    move-result-object p1
+    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-virtual {p2}, Ljava/lang/String;->length()I
-
-    move-result p2
-
-    add-int/lit8 p2, p2, 0x2c
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0, p2}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -153,7 +164,7 @@
     :cond_1
     return-wide v3
 
-    .line 55
+    .line 56
     :pswitch_4
     invoke-virtual {p0, p1}, Lcom/google/common/math/ToDoubleRounder;->sign(Ljava/lang/Number;)I
 
@@ -165,7 +176,7 @@
 
     return-wide p0
 
-    .line 70
+    .line 71
     :cond_2
     :goto_1
     sget-object v2, Ljava/math/RoundingMode;->UNNECESSARY:Ljava/math/RoundingMode;
@@ -174,7 +185,7 @@
 
     move-result-object v2
 
-    .line 71
+    .line 72
     move-object v7, p1
 
     check-cast v7, Ljava/lang/Comparable;
@@ -183,7 +194,7 @@
 
     move-result v7
 
-    .line 72
+    .line 73
     sget-object v8, Lcom/google/common/math/ToDoubleRounder$1;->$SwitchMap$java$math$RoundingMode:[I
 
     invoke-virtual {p2}, Ljava/math/RoundingMode;->ordinal()I
@@ -196,7 +207,7 @@
 
     packed-switch v8, :pswitch_data_1
 
-    .line 150
+    .line 151
     new-instance p0, Ljava/lang/AssertionError;
 
     invoke-direct {p0, v9}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
@@ -213,13 +224,13 @@
     :cond_3
     const/4 p0, 0x0
 
-    .line 74
+    .line 75
     :goto_2
     invoke-static {p0}, Lcom/google/common/math/MathPreconditions;->checkRoundingUnnecessary(Z)V
 
     return-wide v0
 
-    .line 91
+    .line 92
     :pswitch_6
     invoke-virtual {p0, p1}, Lcom/google/common/math/ToDoubleRounder;->sign(Ljava/lang/Number;)I
 
@@ -231,7 +242,7 @@
 
     goto :goto_3
 
-    .line 92
+    .line 93
     :cond_4
     invoke-static {v0, v1}, Ljava/lang/Math;->nextUp(D)D
 
@@ -245,7 +256,7 @@
 
     goto :goto_4
 
-    .line 96
+    .line 97
     :cond_6
     invoke-static {v0, v1}, Lcom/google/common/math/DoubleUtils;->nextDown(D)D
 
@@ -259,7 +270,7 @@
 
     goto :goto_5
 
-    .line 81
+    .line 82
     :cond_7
     invoke-static {v0, v1}, Ljava/lang/Math;->nextUp(D)D
 
@@ -273,7 +284,7 @@
 
     goto :goto_6
 
-    .line 79
+    .line 80
     :cond_8
     invoke-static {v0, v1}, Lcom/google/common/math/DoubleUtils;->nextDown(D)D
 
@@ -285,7 +296,7 @@
     :pswitch_9
     if-ltz v7, :cond_a
 
-    .line 110
+    .line 111
     invoke-static {v0, v1}, Ljava/lang/Math;->nextUp(D)D
 
     move-result-wide v3
@@ -296,7 +307,7 @@
 
     return-wide v0
 
-    .line 114
+    .line 115
     :cond_9
     sget-object v5, Ljava/math/RoundingMode;->CEILING:Ljava/math/RoundingMode;
 
@@ -306,7 +317,7 @@
 
     goto :goto_7
 
-    .line 118
+    .line 119
     :cond_a
     invoke-static {v0, v1}, Lcom/google/common/math/DoubleUtils;->nextDown(D)D
 
@@ -318,7 +329,7 @@
 
     return-wide v0
 
-    .line 122
+    .line 123
     :cond_b
     sget-object v3, Ljava/math/RoundingMode;->FLOOR:Ljava/math/RoundingMode;
 
@@ -336,18 +347,18 @@
 
     move-wide v0, v10
 
-    .line 125
+    .line 126
     :goto_7
     invoke-virtual {p0, p1, v2}, Lcom/google/common/math/ToDoubleRounder;->minus(Ljava/lang/Number;Ljava/lang/Number;)Ljava/lang/Number;
 
     move-result-object v2
 
-    .line 126
+    .line 127
     invoke-virtual {p0, v5, p1}, Lcom/google/common/math/ToDoubleRounder;->minus(Ljava/lang/Number;Ljava/lang/Number;)Ljava/lang/Number;
 
     move-result-object v5
 
-    .line 127
+    .line 128
     check-cast v2, Ljava/lang/Comparable;
 
     invoke-interface {v2, v5}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
@@ -363,7 +374,7 @@
 
     return-wide v3
 
-    .line 134
+    .line 135
     :cond_d
     sget-object v2, Lcom/google/common/math/ToDoubleRounder$1;->$SwitchMap$java$math$RoundingMode:[I
 
@@ -385,7 +396,7 @@
 
     if-ne p2, v2, :cond_f
 
-    .line 144
+    .line 145
     invoke-virtual {p0, p1}, Lcom/google/common/math/ToDoubleRounder;->sign(Ljava/lang/Number;)I
 
     move-result p0
@@ -397,7 +408,7 @@
     :cond_e
     return-wide v0
 
-    .line 146
+    .line 147
     :cond_f
     new-instance p0, Ljava/lang/AssertionError;
 
@@ -405,7 +416,7 @@
 
     throw p0
 
-    .line 142
+    .line 143
     :cond_10
     invoke-virtual {p0, p1}, Lcom/google/common/math/ToDoubleRounder;->sign(Ljava/lang/Number;)I
 
@@ -421,7 +432,7 @@
     :goto_8
     return-wide v0
 
-    .line 138
+    .line 139
     :cond_12
     invoke-static {v0, v1}, Ljava/lang/Double;->doubleToRawLongBits(D)J
 
@@ -445,7 +456,7 @@
     :goto_9
     return-wide v0
 
-    .line 83
+    .line 84
     :pswitch_a
     invoke-virtual {p0, p1}, Lcom/google/common/math/ToDoubleRounder;->sign(Ljava/lang/Number;)I
 
@@ -457,7 +468,7 @@
 
     goto :goto_a
 
-    .line 86
+    .line 87
     :cond_14
     invoke-static {v0, v1}, Lcom/google/common/math/DoubleUtils;->nextDown(D)D
 
@@ -471,7 +482,7 @@
 
     goto :goto_b
 
-    .line 88
+    .line 89
     :cond_16
     invoke-static {v0, v1}, Ljava/lang/Math;->nextUp(D)D
 
@@ -506,6 +517,15 @@
 .end method
 
 .method abstract roundToDoubleArbitrarily(Ljava/lang/Number;)D
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "x"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TX;)D"
@@ -514,6 +534,15 @@
 .end method
 
 .method abstract sign(Ljava/lang/Number;)I
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "x"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TX;)I"
@@ -522,6 +551,17 @@
 .end method
 
 .method abstract toX(DLjava/math/RoundingMode;)Ljava/lang/Number;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "d",
+            "mode"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(D",

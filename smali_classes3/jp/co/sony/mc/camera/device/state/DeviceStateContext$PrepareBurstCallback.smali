@@ -24,8 +24,16 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 3441
+    .line 3806
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$PrepareBurstCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -45,10 +53,20 @@
 # virtual methods
 .method public onPrepareBurstDone(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "sessionId",
+            "success"
+        }
+    .end annotation
 
     if-eqz p2, :cond_0
 
-    .line 3448
+    .line 3813
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$PrepareBurstCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fgetmDeviceStateMachine(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Ljp/co/sony/mc/camera/device/DeviceStateMachine;
@@ -59,7 +77,7 @@
 
     const/4 p2, 0x1
 
-    .line 3449
+    .line 3814
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p2
@@ -68,12 +86,12 @@
 
     move-result-object p2
 
-    .line 3448
+    .line 3813
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->sendEvent(Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;[Ljava/lang/Object;)V
 
     goto :goto_0
 
-    .line 3451
+    .line 3816
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$PrepareBurstCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
@@ -85,7 +103,7 @@
 
     const/4 p2, 0x0
 
-    .line 3452
+    .line 3817
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p2
@@ -94,7 +112,7 @@
 
     move-result-object p2
 
-    .line 3451
+    .line 3816
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->sendEvent(Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;[Ljava/lang/Object;)V
 
     :goto_0

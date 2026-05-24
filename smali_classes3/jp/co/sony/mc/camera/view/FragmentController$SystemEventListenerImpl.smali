@@ -24,11 +24,19 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "controller"
+        }
+    .end annotation
 
-    .line 8251
+    .line 7175
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 8252
+    .line 7176
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$SystemEventListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     return-void
@@ -38,8 +46,16 @@
 # virtual methods
 .method public onBatteryLevelChanged(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "batteryLevel"
+        }
+    .end annotation
 
-    .line 8262
+    .line 7186
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SystemEventListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mhandleBatteryLevelChanged(Ljp/co/sony/mc/camera/view/FragmentController;I)V
@@ -49,8 +65,16 @@
 
 .method public onBatteryStateChanged(Ljp/co/sony/mc/camera/SystemEventNotifier$BatteryStatus;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "status"
+        }
+    .end annotation
 
-    .line 8257
+    .line 7181
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SystemEventListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mhandleBatteryStateChanged(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/SystemEventNotifier$BatteryStatus;)V
@@ -60,8 +84,16 @@
 
 .method public onPowerConnectionChanged(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isConnect"
+        }
+    .end annotation
 
-    .line 8272
+    .line 7196
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SystemEventListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mhandlePowerConnectionStateChanged(Ljp/co/sony/mc/camera/view/FragmentController;Z)V
@@ -72,7 +104,7 @@
 .method public onTempEnduranceModeActivated()V
     .locals 0
 
-    .line 8277
+    .line 7201
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SystemEventListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mtempEnduranceModeActivated(Ljp/co/sony/mc/camera/view/FragmentController;)V
@@ -82,8 +114,16 @@
 
 .method public onThermalStateChanged(Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "status"
+        }
+    .end annotation
 
-    .line 8267
+    .line 7191
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SystemEventListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mhandleThermalStateChanged(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;)V

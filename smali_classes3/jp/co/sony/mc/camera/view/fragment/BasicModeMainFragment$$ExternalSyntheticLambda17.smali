@@ -30,7 +30,7 @@
 
     move-result p0
 
-    invoke-static {p1, p0}, Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;->$r8$lambda$H3Ycipp3GtnSOnn1a4rB3vw7jmo(Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;Z)Lkotlin/Pair;
+    invoke-static {p1, p0}, Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;->$r8$lambda$3vS2t7gScPz9yO1YEVl1G5xXYiA(Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;Z)Lkotlin/Pair;
 
     move-result-object p0
 

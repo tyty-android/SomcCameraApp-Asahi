@@ -26,13 +26,24 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/CameraSettingsActivity;Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$item"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 794
+    .line 796
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->val$item:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
@@ -47,7 +58,7 @@
 .method public run()V
     .locals 3
 
-    .line 797
+    .line 799
     sget-object v0, Ljp/co/sony/mc/camera/CameraSettingsActivity$10;->$SwitchMap$jp$co$sony$mc$camera$view$setting$settingitem$SettingLayoutType:[I
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->val$item:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
@@ -64,7 +75,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    .line 819
+    .line 821
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->val$item:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;->getKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
@@ -75,30 +86,30 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 820
+    .line 822
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->-$$Nest$mshowResetDataConfirmation(Ljp/co/sony/mc/camera/CameraSettingsActivity;)V
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
-    .line 816
+    .line 818
     :pswitch_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->-$$Nest$mshowFunctionCustom(Ljp/co/sony/mc/camera/CameraSettingsActivity;)V
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
-    .line 813
+    .line 815
     :pswitch_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->-$$Nest$mshowMemoryRecall(Ljp/co/sony/mc/camera/CameraSettingsActivity;)V
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
-    .line 810
+    .line 812
     :pswitch_2
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
@@ -106,9 +117,9 @@
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->showImageDetail(Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;)V
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
-    .line 807
+    .line 809
     :pswitch_3
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
@@ -116,9 +127,9 @@
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->showDetail(Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;)V
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
-    .line 802
+    .line 804
     :pswitch_4
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
@@ -126,9 +137,9 @@
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->showValueSelectDialog(Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;)V
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
-    .line 799
+    .line 801
     :pswitch_5
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
@@ -136,9 +147,9 @@
 
     invoke-static {v0, p0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->-$$Nest$mtoggleSwitch(Ljp/co/sony/mc/camera/CameraSettingsActivity;Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;)V
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
-    .line 823
+    .line 825
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->val$item:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
 
@@ -150,12 +161,12 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 824
+    .line 826
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->-$$Nest$mshowAccessibilityCompliance(Ljp/co/sony/mc/camera/CameraSettingsActivity;)V
 
-    .line 825
+    .line 827
     new-instance p0, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;-><init>()V
@@ -168,17 +179,17 @@
 
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->ACCESSIBILITY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 826
+    .line 828
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->setting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
     move-result-object p0
 
-    .line 827
+    .line 829
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->send()V
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
-    .line 828
+    .line 830
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->val$item:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
 
@@ -190,7 +201,7 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 829
+    .line 831
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/CameraSettingsActivity;->mResultIntent:Landroid/content/Intent;
@@ -201,14 +212,14 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
 
-    .line 831
+    .line 833
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->onBackPressed()V
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
-    .line 832
+    .line 834
     :cond_2
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->val$item:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
 
@@ -220,19 +231,19 @@
 
     if-ne v0, v1, :cond_3
 
-    .line 833
+    .line 835
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/controller/launcher/ApplicationLauncher;->launchAudioSettings(Landroid/app/Activity;)V
 
-    .line 835
+    .line 837
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent$Context;
 
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/WindNoiseReduction;->DUMMY_ON:Ljp/co/sony/mc/camera/configuration/parameters/WindNoiseReduction;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent$Context;->setWinderFilter(Ljp/co/sony/mc/camera/configuration/parameters/WindNoiseReduction;)V
 
-    .line 836
+    .line 838
     new-instance p0, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;-><init>()V
@@ -251,17 +262,17 @@
 
     invoke-direct {v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/WindNoiseReduction;)V
 
-    .line 837
+    .line 839
     invoke-virtual {p0, v0, v1}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->setting(Ljp/co/sony/mc/camera/idd/value/IddSettingKey;Ljp/co/sony/mc/camera/idd/value/IddSettingValue;)Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
     move-result-object p0
 
-    .line 839
+    .line 841
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->send()V
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
-    .line 840
+    .line 842
     :cond_3
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->val$item:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
 
@@ -273,7 +284,7 @@
 
     if-ne v0, v1, :cond_4
 
-    .line 841
+    .line 843
     new-instance v0, Landroid/content/Intent;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
@@ -282,14 +293,14 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 843
+    .line 845
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     const/16 v1, 0x18
 
     invoke-virtual {p0, v0, v1}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->startActivityForResult(Landroid/content/Intent;I)V
 
-    .line 845
+    .line 847
     new-instance p0, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;-><init>()V
@@ -302,17 +313,17 @@
 
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->HORIZONTAL_LEVEL_METER:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 846
+    .line 848
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->setting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
     move-result-object p0
 
-    .line 847
+    .line 849
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->send()V
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
-    .line 848
+    .line 850
     :cond_4
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->val$item:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
 
@@ -324,10 +335,10 @@
 
     if-ne v0, v1, :cond_5
 
-    .line 849
+    .line 851
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
-    const v1, 0x7f110475
+    const v1, 0x7f1104be
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->getString(I)Ljava/lang/String;
 
@@ -337,14 +348,14 @@
 
     move-result-object v0
 
-    .line 851
+    .line 853
     new-instance v1, Landroid/content/Intent;
 
     const-string v2, "android.intent.action.VIEW"
 
     invoke-direct {v1, v2, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 853
+    .line 855
     :try_start_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
@@ -352,7 +363,7 @@
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 857
+    .line 859
     :catch_0
     new-instance p0, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
@@ -366,17 +377,17 @@
 
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->TIPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 858
+    .line 860
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->setting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
     move-result-object p0
 
-    .line 859
+    .line 861
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->send()V
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
-    .line 860
+    .line 862
     :cond_5
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->val$item:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
 
@@ -388,12 +399,12 @@
 
     if-ne v0, v1, :cond_6
 
-    .line 861
+    .line 863
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->launchOssLicenseFragment()V
 
-    .line 862
+    .line 864
     new-instance p0, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;-><init>()V
@@ -406,37 +417,18 @@
 
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 863
+    .line 865
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->setting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
     move-result-object p0
 
-    .line 864
+    .line 866
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->send()V
 
-    goto/16 :goto_0
-
-    .line 865
-    :cond_6
-    iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->val$item:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;->getKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
-
-    move-result-object v0
-
-    sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_NOTES_ON_USE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    if-ne v0, v1, :cond_7
+    goto/16 :goto_1
 
     .line 867
-    iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->-$$Nest$mshowStreamingNotesOnUseInformation(Ljp/co/sony/mc/camera/CameraSettingsActivity;)V
-
-    goto/16 :goto_0
-
-    .line 868
-    :cond_7
+    :cond_6
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->val$item:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;->getKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
@@ -445,57 +437,17 @@
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    if-ne v0, v1, :cond_8
+    if-ne v0, v1, :cond_7
 
-    .line 870
+    .line 869
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->-$$Nest$mshowPrivacyPolicyInformation(Ljp/co/sony/mc/camera/CameraSettingsActivity;)V
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
-    .line 871
-    :cond_8
-    iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->val$item:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;->getKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
-
-    move-result-object v0
-
-    sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    if-ne v0, v1, :cond_9
-
-    .line 873
-    iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->-$$Nest$mshowStreamingPrivacyPolicyInformation(Ljp/co/sony/mc/camera/CameraSettingsActivity;)V
-
-    .line 874
-    new-instance p0, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
-
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;-><init>()V
-
-    sget-object v0, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->MENU:Ljp/co/sony/mc/camera/idd/value/IddUserControl;
-
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->changeLocation(Ljp/co/sony/mc/camera/idd/value/IddUserControl;)Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
-
-    move-result-object p0
-
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    .line 875
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->setting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
-
-    move-result-object p0
-
-    .line 876
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->send()V
-
-    goto :goto_0
-
-    .line 877
-    :cond_9
+    .line 870
+    :cond_7
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->val$item:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;->getKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
@@ -504,9 +456,9 @@
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    if-ne v0, v1, :cond_c
+    if-ne v0, v1, :cond_a
 
-    .line 878
+    .line 871
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->-$$Nest$fgetmStoredSettings(Ljp/co/sony/mc/camera/CameraSettingsActivity;)Ljp/co/sony/mc/camera/setting/StoredSettings;
@@ -523,11 +475,11 @@
 
     move-result v0
 
-    if-nez v0, :cond_a
+    if-nez v0, :cond_8
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
-    .line 880
+    .line 873
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -536,27 +488,27 @@
 
     move-result v0
 
-    if-eqz v0, :cond_a
+    if-eqz v0, :cond_8
 
-    .line 881
+    .line 874
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;-><init>()V
 
-    .line 882
+    .line 875
     sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_CTA:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     iput-object v1, v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 883
+    .line 876
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->showSettingMessageDialog(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;)Z
 
-    goto :goto_0
+    goto/16 :goto_1
 
-    .line 885
-    :cond_a
+    .line 878
+    :cond_8
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/CameraSettingsActivity;->mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -565,9 +517,9 @@
 
     move-result v0
 
-    if-eqz v0, :cond_b
+    if-eqz v0, :cond_9
 
-    .line 886
+    .line 879
     new-instance v0, Landroid/content/Intent;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
@@ -576,15 +528,15 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 888
+    .line 881
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->startActivity(Landroid/content/Intent;)V
 
-    goto :goto_0
+    goto :goto_1
 
-    .line 890
-    :cond_b
+    .line 883
+    :cond_9
     new-instance v0, Landroid/content/Intent;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
@@ -593,15 +545,15 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 892
+    .line 885
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->startActivity(Landroid/content/Intent;)V
 
-    goto :goto_0
+    goto :goto_1
 
-    .line 895
-    :cond_c
+    .line 888
+    :cond_a
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->val$item:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;->getKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
@@ -610,20 +562,90 @@
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->RECOMMENDED_SETTINGS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    if-ne v0, v1, :cond_d
+    if-ne v0, v1, :cond_b
 
-    .line 896
+    .line 889
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     sget-object v0, Ljp/co/sony/mc/camera/idd/value/IddRecommendedMenu$LaunchedFrom;->MENU:Ljp/co/sony/mc/camera/idd/value/IddRecommendedMenu$LaunchedFrom;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->launchRecommendedSettings(Ljp/co/sony/mc/camera/idd/value/IddRecommendedMenu$LaunchedFrom;)V
 
-    :cond_d
-    :goto_0
-    return-void
+    goto :goto_1
 
-    nop
+    .line 890
+    :cond_b
+    iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->val$item:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;->getKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+
+    move-result-object v0
+
+    sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->MODE_INTRODUCTION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+
+    if-eq v0, v1, :cond_e
+
+    iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->val$item:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
+
+    .line 891
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;->getKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+
+    move-result-object v0
+
+    sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->TRIPOD_FRAMING_INTRODUCTION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+
+    if-ne v0, v1, :cond_c
+
+    goto :goto_0
+
+    .line 893
+    :cond_c
+    iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->val$item:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;->getKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+
+    move-result-object v0
+
+    sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->AI_SUGGESTION_DETECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    if-ne v0, v1, :cond_d
+
+    .line 894
+    iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->launchAiSuggestionSettings()V
+
+    goto :goto_1
+
+    .line 895
+    :cond_d
+    iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->val$item:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;->getKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+
+    move-result-object v0
+
+    sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->TRIPOD_FRAMING_ASSISTANCE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    if-ne v0, v1, :cond_f
+
+    .line 896
+    iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->launchTripodFramingAssistanceSettings()V
+
+    goto :goto_1
+
+    .line 892
+    :cond_e
+    :goto_0
+    iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$6;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->launchFeatureIntroduction()V
+
+    :cond_f
+    :goto_1
+    return-void
 
     :pswitch_data_0
     .packed-switch 0x1

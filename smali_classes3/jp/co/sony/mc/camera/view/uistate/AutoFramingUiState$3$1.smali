@@ -163,7 +163,7 @@
 
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
-    .line 108
+    .line 110
     iget v0, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$3$1;->label:I
 
     if-nez v0, :cond_1
@@ -182,7 +182,7 @@
 
     check-cast v1, Ljava/lang/Boolean;
 
-    .line 109
+    .line 111
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p1
@@ -195,12 +195,12 @@
 
     if-nez p1, :cond_0
 
-    .line 110
+    .line 112
     sget-object p1, Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;->AUTO_FRAMING:Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;
 
     if-ne v0, p1, :cond_0
 
-    .line 112
+    .line 114
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$3$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;->access$getMessageUiState$p(Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;)Ljp/co/sony/mc/camera/view/uistate/MessageUiState;
@@ -217,7 +217,7 @@
 
     goto :goto_0
 
-    .line 114
+    .line 116
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState$3$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/AutoFramingUiState;
 
@@ -225,7 +225,7 @@
 
     move-result-object p0
 
-    .line 115
+    .line 117
     const-class p1, Ljp/co/sony/mc/camera/view/hint/HintTextAutoFramingTrackingLost;
 
     const-string p1, "getSimpleName(...)"
@@ -234,16 +234,16 @@
 
     invoke-static {v0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 114
+    .line 116
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/uistate/MessageUiState;->hideHintText(Ljava/lang/String;)V
 
-    .line 118
+    .line 120
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 
-    .line 108
+    .line 110
     :cond_1
     new-instance p0, Ljava/lang/IllegalStateException;
 

@@ -23,12 +23,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nScatterMap.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ScatterMap.kt\nandroidx/collection/MutableScatterMap\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 ScatterMap.kt\nandroidx/collection/ScatterMapKt\n+ 4 _Maps.kt\nkotlin/collections/MapsKt___MapsKt\n+ 5 ScatterMap.kt\nandroidx/collection/ScatterMap\n+ 6 ScatterSet.kt\nandroidx/collection/ScatterSet\n+ 7 ObjectList.kt\nandroidx/collection/ObjectList\n*L\n1#1,1834:1\n1268#1,2:2003\n1272#1,5:2011\n1268#1,2:2042\n1272#1,5:2050\n1268#1,2:2067\n1272#1,5:2075\n1#2:1835\n1656#3,6:1836\n1810#3:1854\n1672#3:1858\n1589#3,3:1871\n1603#3:1875\n1599#3:1878\n1779#3,3:1883\n1793#3,3:1887\n1717#3:1891\n1705#3:1893\n1699#3:1894\n1712#3:1899\n1802#3:1901\n1589#3,3:1911\n1603#3:1915\n1599#3:1918\n1779#3,3:1923\n1793#3,3:1927\n1717#3:1931\n1705#3:1933\n1699#3:1934\n1712#3:1939\n1802#3:1941\n1810#3:1956\n1672#3:1960\n1810#3:1981\n1672#3:1985\n1656#3,6:2005\n1656#3,6:2016\n1589#3,3:2022\n1599#3:2025\n1603#3:2026\n1779#3,3:2027\n1793#3,3:2030\n1717#3:2033\n1705#3:2034\n1699#3:2035\n1712#3:2036\n1802#3:2037\n1666#3:2038\n1645#3:2039\n1664#3:2040\n1645#3:2041\n1656#3,6:2044\n1779#3,3:2055\n1810#3:2058\n1699#3:2059\n1669#3:2060\n1645#3:2061\n1589#3,3:2062\n1599#3:2065\n1603#3:2066\n1656#3,6:2069\n1656#3,6:2080\n1656#3,6:2086\n215#4,2:1842\n391#5,4:1844\n363#5,6:1848\n373#5,3:1855\n376#5,2:1859\n396#5,2:1861\n379#5,6:1863\n398#5:1869\n633#5:1870\n634#5:1874\n636#5,2:1876\n638#5,4:1879\n642#5:1886\n643#5:1890\n644#5:1892\n645#5,4:1895\n651#5:1900\n652#5,8:1902\n633#5:1910\n634#5:1914\n636#5,2:1916\n638#5,4:1919\n642#5:1926\n643#5:1930\n644#5:1932\n645#5,4:1935\n651#5:1940\n652#5,8:1942\n363#5,6:1950\n373#5,3:1957\n376#5,9:1961\n267#6,4:1970\n237#6,7:1974\n248#6,3:1982\n251#6,2:1986\n272#6,2:1988\n254#6,6:1990\n274#6:1996\n305#7,6:1997\n*S KotlinDebug\n*F\n+ 1 ScatterMap.kt\nandroidx/collection/MutableScatterMap\n*L\n1113#1:2003,2\n1113#1:2011,5\n1180#1:2042,2\n1180#1:2050,5\n1255#1:2067,2\n1255#1:2075,5\n848#1:1836,6\n972#1:1854\n972#1:1858\n1021#1:1871,3\n1021#1:1875\n1021#1:1878\n1021#1:1883,3\n1021#1:1887,3\n1021#1:1891\n1021#1:1893\n1021#1:1894\n1021#1:1899\n1021#1:1901\n1033#1:1911,3\n1033#1:1915\n1033#1:1918\n1033#1:1923,3\n1033#1:1927,3\n1033#1:1931\n1033#1:1933\n1033#1:1934\n1033#1:1939\n1033#1:1941\n1047#1:1956\n1047#1:1960\n1093#1:1981\n1093#1:1985\n1113#1:2005,6\n1129#1:2016,6\n1145#1:2022,3\n1146#1:2025\n1147#1:2026\n1154#1:2027,3\n1155#1:2030,3\n1156#1:2033\n1157#1:2034\n1157#1:2035\n1161#1:2036\n1164#1:2037\n1173#1:2038\n1173#1:2039\n1179#1:2040\n1179#1:2041\n1180#1:2044,6\n1195#1:2055,3\n1196#1:2058\n1198#1:2059\n1250#1:2060\n1250#1:2061\n1252#1:2062,3\n1253#1:2065\n1255#1:2066\n1255#1:2069,6\n1269#1:2080,6\n1275#1:2086,6\n963#1:1842,2\n972#1:1844,4\n972#1:1848,6\n972#1:1855,3\n972#1:1859,2\n972#1:1861,2\n972#1:1863,6\n972#1:1869\n1021#1:1870\n1021#1:1874\n1021#1:1876,2\n1021#1:1879,4\n1021#1:1886\n1021#1:1890\n1021#1:1892\n1021#1:1895,4\n1021#1:1900\n1021#1:1902,8\n1033#1:1910\n1033#1:1914\n1033#1:1916,2\n1033#1:1919,4\n1033#1:1926\n1033#1:1930\n1033#1:1932\n1033#1:1935,4\n1033#1:1940\n1033#1:1942,8\n1047#1:1950,6\n1047#1:1957,3\n1047#1:1961,9\n1093#1:1970,4\n1093#1:1974,7\n1093#1:1982,3\n1093#1:1986,2\n1093#1:1988,2\n1093#1:1990,6\n1093#1:1996\n1102#1:1997,6\n*E\n"
+    value = "SMAP\nScatterMap.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ScatterMap.kt\nandroidx/collection/MutableScatterMap\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 ScatterMap.kt\nandroidx/collection/ScatterMapKt\n+ 4 _Maps.kt\nkotlin/collections/MapsKt___MapsKt\n+ 5 ScatterMap.kt\nandroidx/collection/ScatterMap\n+ 6 ScatterSet.kt\nandroidx/collection/ScatterSet\n+ 7 ObjectList.kt\nandroidx/collection/ObjectList\n*L\n1#1,1850:1\n1284#1,2:2019\n1288#1,5:2027\n1284#1,2:2058\n1288#1,5:2066\n1284#1,2:2083\n1288#1,5:2091\n1284#1,2:2097\n1288#1,5:2105\n1#2:1851\n1672#3,6:1852\n1826#3:1870\n1688#3:1874\n1605#3,3:1887\n1619#3:1891\n1615#3:1894\n1795#3,3:1899\n1809#3,3:1903\n1733#3:1907\n1721#3:1909\n1715#3:1910\n1728#3:1915\n1818#3:1917\n1605#3,3:1927\n1619#3:1931\n1615#3:1934\n1795#3,3:1939\n1809#3,3:1943\n1733#3:1947\n1721#3:1949\n1715#3:1950\n1728#3:1955\n1818#3:1957\n1826#3:1972\n1688#3:1976\n1826#3:1997\n1688#3:2001\n1672#3,6:2021\n1672#3,6:2032\n1605#3,3:2038\n1615#3:2041\n1619#3:2042\n1795#3,3:2043\n1809#3,3:2046\n1733#3:2049\n1721#3:2050\n1715#3:2051\n1728#3:2052\n1818#3:2053\n1682#3:2054\n1661#3:2055\n1680#3:2056\n1661#3:2057\n1672#3,6:2060\n1795#3,3:2071\n1826#3:2074\n1715#3:2075\n1685#3:2076\n1661#3:2077\n1605#3,3:2078\n1615#3:2081\n1619#3:2082\n1672#3,6:2085\n1661#3:2096\n1672#3,6:2099\n1672#3,6:2110\n1672#3,6:2116\n215#4,2:1858\n391#5,4:1860\n363#5,6:1864\n373#5,3:1871\n376#5,2:1875\n396#5,2:1877\n379#5,6:1879\n398#5:1885\n633#5:1886\n634#5:1890\n636#5,2:1892\n638#5,4:1895\n642#5:1902\n643#5:1906\n644#5:1908\n645#5,4:1911\n651#5:1916\n652#5,8:1918\n633#5:1926\n634#5:1930\n636#5,2:1932\n638#5,4:1935\n642#5:1942\n643#5:1946\n644#5:1948\n645#5,4:1951\n651#5:1956\n652#5,8:1958\n363#5,6:1966\n373#5,3:1973\n376#5,9:1977\n267#6,4:1986\n237#6,7:1990\n248#6,3:1998\n251#6,2:2002\n272#6,2:2004\n254#6,6:2006\n274#6:2012\n305#7,6:2013\n*S KotlinDebug\n*F\n+ 1 ScatterMap.kt\nandroidx/collection/MutableScatterMap\n*L\n1113#1:2019,2\n1113#1:2027,5\n1180#1:2058,2\n1180#1:2066,5\n1254#1:2083,2\n1254#1:2091,5\n1270#1:2097,2\n1270#1:2105,5\n848#1:1852,6\n972#1:1870\n972#1:1874\n1021#1:1887,3\n1021#1:1891\n1021#1:1894\n1021#1:1899,3\n1021#1:1903,3\n1021#1:1907\n1021#1:1909\n1021#1:1910\n1021#1:1915\n1021#1:1917\n1033#1:1927,3\n1033#1:1931\n1033#1:1934\n1033#1:1939,3\n1033#1:1943,3\n1033#1:1947\n1033#1:1949\n1033#1:1950\n1033#1:1955\n1033#1:1957\n1047#1:1972\n1047#1:1976\n1093#1:1997\n1093#1:2001\n1113#1:2021,6\n1129#1:2032,6\n1145#1:2038,3\n1146#1:2041\n1147#1:2042\n1154#1:2043,3\n1155#1:2046,3\n1156#1:2049\n1157#1:2050\n1157#1:2051\n1161#1:2052\n1164#1:2053\n1173#1:2054\n1173#1:2055\n1179#1:2056\n1179#1:2057\n1180#1:2060,6\n1195#1:2071,3\n1196#1:2074\n1198#1:2075\n1249#1:2076\n1249#1:2077\n1251#1:2078,3\n1252#1:2081\n1254#1:2082\n1254#1:2085,6\n1268#1:2096\n1270#1:2099,6\n1285#1:2110,6\n1291#1:2116,6\n963#1:1858,2\n972#1:1860,4\n972#1:1864,6\n972#1:1871,3\n972#1:1875,2\n972#1:1877,2\n972#1:1879,6\n972#1:1885\n1021#1:1886\n1021#1:1890\n1021#1:1892,2\n1021#1:1895,4\n1021#1:1902\n1021#1:1906\n1021#1:1908\n1021#1:1911,4\n1021#1:1916\n1021#1:1918,8\n1033#1:1926\n1033#1:1930\n1033#1:1932,2\n1033#1:1935,4\n1033#1:1942\n1033#1:1946\n1033#1:1948\n1033#1:1951,4\n1033#1:1956\n1033#1:1958,8\n1047#1:1966,6\n1047#1:1973,3\n1047#1:1977,9\n1093#1:1986,4\n1093#1:1990,7\n1093#1:1998,3\n1093#1:2002,2\n1093#1:2004,2\n1093#1:2006,6\n1093#1:2012\n1102#1:2013,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000r\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010%\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\t\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0000\n\u0002\u0010\u001c\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010$\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0002\u0008\u000c\n\u0002\u0010\t\n\u0002\u0008\u0002\u0018\u0000*\u0004\u0008\u0000\u0010\u0001*\u0004\u0008\u0001\u0010\u00022\u000e\u0012\u0004\u0012\u0002H\u0001\u0012\u0004\u0012\u0002H\u00020\u0003:\u0001DB\u000f\u0012\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006J\u0008\u0010\u0008\u001a\u00020\tH\u0002J\u0012\u0010\n\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010\u000bJ\u0006\u0010\u000c\u001a\u00020\tJS\u0010\r\u001a\u00028\u00012\u0006\u0010\u000e\u001a\u00028\u000028\u0010\u000f\u001a4\u0012\u0013\u0012\u00118\u0000\u00a2\u0006\u000c\u0008\u0011\u0012\u0008\u0008\u0012\u0012\u0004\u0008\u0008(\u000e\u0012\u0015\u0012\u0013\u0018\u00018\u0001\u00a2\u0006\u000c\u0008\u0011\u0012\u0008\u0008\u0012\u0012\u0004\u0008\u0008(\u0013\u0012\u0004\u0012\u00028\u00010\u0010H\u0086\u0008\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0014J\u0010\u0010\u0015\u001a\u00020\u00052\u0006\u0010\u0016\u001a\u00020\u0005H\u0002J\u0015\u0010\u0017\u001a\u00020\u00052\u0006\u0010\u000e\u001a\u00028\u0000H\u0001\u00a2\u0006\u0002\u0010\u0018J\'\u0010\u0019\u001a\u00028\u00012\u0006\u0010\u000e\u001a\u00028\u00002\u000c\u0010\u001a\u001a\u0008\u0012\u0004\u0012\u00028\u00010\u001bH\u0086\u0008\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u001cJ\u0008\u0010\u001d\u001a\u00020\tH\u0002J\u0010\u0010\u001e\u001a\u00020\t2\u0006\u0010\u001f\u001a\u00020\u0005H\u0002J\u0010\u0010 \u001a\u00020\t2\u0006\u0010\u0004\u001a\u00020\u0005H\u0002J\u0016\u0010!\u001a\u00020\t2\u0006\u0010\u000e\u001a\u00028\u0000H\u0086\n\u00a2\u0006\u0002\u0010\"J\u0017\u0010!\u001a\u00020\t2\u000c\u0010#\u001a\u0008\u0012\u0004\u0012\u00028\u00000$H\u0086\nJ\u0017\u0010!\u001a\u00020\t2\u000c\u0010#\u001a\u0008\u0012\u0004\u0012\u00028\u00000%H\u0086\nJ\u001e\u0010!\u001a\u00020\t2\u000e\u0010#\u001a\n\u0012\u0006\u0008\u0001\u0012\u00028\u00000&H\u0086\n\u00a2\u0006\u0002\u0010\'J\u0017\u0010!\u001a\u00020\t2\u000c\u0010#\u001a\u0008\u0012\u0004\u0012\u00028\u00000(H\u0086\nJ\u0017\u0010!\u001a\u00020\t2\u000c\u0010#\u001a\u0008\u0012\u0004\u0012\u00028\u00000)H\u0086\nJ\u001d\u0010*\u001a\u00020\t2\u0012\u0010+\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010\u0003H\u0086\nJ*\u0010*\u001a\u00020\t2\u001a\u0010,\u001a\u0016\u0012\u0012\u0008\u0001\u0012\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010-0&H\u0086\n\u00a2\u0006\u0002\u0010.J\u001d\u0010*\u001a\u00020\t2\u0012\u0010/\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010-H\u0086\nJ#\u0010*\u001a\u00020\t2\u0018\u0010,\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010-0(H\u0086\nJ\u001d\u0010*\u001a\u00020\t2\u0012\u0010+\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u000100H\u0086\nJ#\u0010*\u001a\u00020\t2\u0018\u0010,\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010-0)H\u0086\nJ\u001d\u00101\u001a\u0004\u0018\u00018\u00012\u0006\u0010\u000e\u001a\u00028\u00002\u0006\u0010\u0013\u001a\u00028\u0001\u00a2\u0006\u0002\u00102J\u001a\u00103\u001a\u00020\t2\u0012\u0010+\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010\u0003J\'\u00103\u001a\u00020\t2\u001a\u0010,\u001a\u0016\u0012\u0012\u0008\u0001\u0012\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010-0&\u00a2\u0006\u0002\u0010.J \u00103\u001a\u00020\t2\u0018\u0010,\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010-0(J\u001a\u00103\u001a\u00020\t2\u0012\u0010+\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u000100J \u00103\u001a\u00020\t2\u0018\u0010,\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010-0)J\u0015\u00104\u001a\u0004\u0018\u00018\u00012\u0006\u0010\u000e\u001a\u00028\u0000\u00a2\u0006\u0002\u00105J\u001b\u00104\u001a\u0002062\u0006\u0010\u000e\u001a\u00028\u00002\u0006\u0010\u0013\u001a\u00028\u0001\u00a2\u0006\u0002\u00107J&\u00108\u001a\u00020\t2\u0018\u00109\u001a\u0014\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u0001\u0012\u0004\u0012\u0002060\u0010H\u0086\u0008\u00f8\u0001\u0000J\u0017\u0010:\u001a\u0004\u0018\u00018\u00012\u0006\u0010;\u001a\u00020\u0005H\u0001\u00a2\u0006\u0002\u0010<J\u0010\u0010=\u001a\u00020\t2\u0006\u0010>\u001a\u00020\u0005H\u0002J\u001e\u0010?\u001a\u00020\t2\u0006\u0010\u000e\u001a\u00028\u00002\u0006\u0010\u0013\u001a\u00028\u0001H\u0086\u0002\u00a2\u0006\u0002\u0010@J\u0006\u0010A\u001a\u00020\u0005J\u0019\u0010B\u001a\u00020\t2\u0006\u0010;\u001a\u00020\u00052\u0006\u0010\u0013\u001a\u00020CH\u0082\u0008R\u000e\u0010\u0007\u001a\u00020\u0005X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u0082\u0002\u0007\n\u0005\u0008\u009920\u0001\u00a8\u0006E"
+        "\u0000r\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010%\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\t\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0000\n\u0002\u0010\u001c\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010$\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0002\u0008\r\n\u0002\u0010\t\n\u0002\u0008\u0002\u0018\u0000*\u0004\u0008\u0000\u0010\u0001*\u0004\u0008\u0001\u0010\u00022\u000e\u0012\u0004\u0012\u0002H\u0001\u0012\u0004\u0012\u0002H\u00020\u0003:\u0001EB\u000f\u0012\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006J\u0008\u0010\u0008\u001a\u00020\tH\u0002J\u0012\u0010\n\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010\u000bJ\u0006\u0010\u000c\u001a\u00020\tJS\u0010\r\u001a\u00028\u00012\u0006\u0010\u000e\u001a\u00028\u000028\u0010\u000f\u001a4\u0012\u0013\u0012\u00118\u0000\u00a2\u0006\u000c\u0008\u0011\u0012\u0008\u0008\u0012\u0012\u0004\u0008\u0008(\u000e\u0012\u0015\u0012\u0013\u0018\u00018\u0001\u00a2\u0006\u000c\u0008\u0011\u0012\u0008\u0008\u0012\u0012\u0004\u0008\u0008(\u0013\u0012\u0004\u0012\u00028\u00010\u0010H\u0086\u0008\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0014J\u0010\u0010\u0015\u001a\u00020\u00052\u0006\u0010\u0016\u001a\u00020\u0005H\u0002J\u0015\u0010\u0017\u001a\u00020\u00052\u0006\u0010\u000e\u001a\u00028\u0000H\u0001\u00a2\u0006\u0002\u0010\u0018J\'\u0010\u0019\u001a\u00028\u00012\u0006\u0010\u000e\u001a\u00028\u00002\u000c\u0010\u001a\u001a\u0008\u0012\u0004\u0012\u00028\u00010\u001bH\u0086\u0008\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u001cJ\u0008\u0010\u001d\u001a\u00020\tH\u0002J\u0010\u0010\u001e\u001a\u00020\t2\u0006\u0010\u001f\u001a\u00020\u0005H\u0002J\u0010\u0010 \u001a\u00020\t2\u0006\u0010\u0004\u001a\u00020\u0005H\u0002J\u0016\u0010!\u001a\u00020\t2\u0006\u0010\u000e\u001a\u00028\u0000H\u0086\n\u00a2\u0006\u0002\u0010\"J\u0017\u0010!\u001a\u00020\t2\u000c\u0010#\u001a\u0008\u0012\u0004\u0012\u00028\u00000$H\u0086\nJ\u0017\u0010!\u001a\u00020\t2\u000c\u0010#\u001a\u0008\u0012\u0004\u0012\u00028\u00000%H\u0086\nJ\u001e\u0010!\u001a\u00020\t2\u000e\u0010#\u001a\n\u0012\u0006\u0008\u0001\u0012\u00028\u00000&H\u0086\n\u00a2\u0006\u0002\u0010\'J\u0017\u0010!\u001a\u00020\t2\u000c\u0010#\u001a\u0008\u0012\u0004\u0012\u00028\u00000(H\u0086\nJ\u0017\u0010!\u001a\u00020\t2\u000c\u0010#\u001a\u0008\u0012\u0004\u0012\u00028\u00000)H\u0086\nJ\u001d\u0010*\u001a\u00020\t2\u0012\u0010+\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010\u0003H\u0086\nJ*\u0010*\u001a\u00020\t2\u001a\u0010,\u001a\u0016\u0012\u0012\u0008\u0001\u0012\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010-0&H\u0086\n\u00a2\u0006\u0002\u0010.J\u001d\u0010*\u001a\u00020\t2\u0012\u0010/\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010-H\u0086\nJ#\u0010*\u001a\u00020\t2\u0018\u0010,\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010-0(H\u0086\nJ\u001d\u0010*\u001a\u00020\t2\u0012\u0010+\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u000100H\u0086\nJ#\u0010*\u001a\u00020\t2\u0018\u0010,\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010-0)H\u0086\nJ\u001d\u00101\u001a\u0004\u0018\u00018\u00012\u0006\u0010\u000e\u001a\u00028\u00002\u0006\u0010\u0013\u001a\u00028\u0001\u00a2\u0006\u0002\u00102J\u001a\u00103\u001a\u00020\t2\u0012\u0010+\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010\u0003J\'\u00103\u001a\u00020\t2\u001a\u0010,\u001a\u0016\u0012\u0012\u0008\u0001\u0012\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010-0&\u00a2\u0006\u0002\u0010.J \u00103\u001a\u00020\t2\u0018\u0010,\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010-0(J\u001a\u00103\u001a\u00020\t2\u0012\u0010+\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u000100J \u00103\u001a\u00020\t2\u0018\u0010,\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010-0)J\u0015\u00104\u001a\u0004\u0018\u00018\u00012\u0006\u0010\u000e\u001a\u00028\u0000\u00a2\u0006\u0002\u00105J\u001b\u00104\u001a\u0002062\u0006\u0010\u000e\u001a\u00028\u00002\u0006\u0010\u0013\u001a\u00028\u0001\u00a2\u0006\u0002\u00107J\u0008\u00108\u001a\u00020\tH\u0002J&\u00109\u001a\u00020\t2\u0018\u0010:\u001a\u0014\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u0001\u0012\u0004\u0012\u0002060\u0010H\u0086\u0008\u00f8\u0001\u0000J\u0017\u0010;\u001a\u0004\u0018\u00018\u00012\u0006\u0010<\u001a\u00020\u0005H\u0001\u00a2\u0006\u0002\u0010=J\u0010\u0010>\u001a\u00020\t2\u0006\u0010?\u001a\u00020\u0005H\u0002J\u001e\u0010@\u001a\u00020\t2\u0006\u0010\u000e\u001a\u00028\u00002\u0006\u0010\u0013\u001a\u00028\u0001H\u0086\u0002\u00a2\u0006\u0002\u0010AJ\u0006\u0010B\u001a\u00020\u0005J\u0019\u0010C\u001a\u00020\t2\u0006\u0010<\u001a\u00020\u00052\u0006\u0010\u0013\u001a\u00020DH\u0082\u0008R\u000e\u0010\u0007\u001a\u00020\u0005X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u0082\u0002\u0007\n\u0005\u0008\u009920\u0001\u00a8\u0006F"
     }
     d2 = {
         "Landroidx/collection/MutableScatterMap;",
@@ -87,6 +87,7 @@
         "(Ljava/lang/Object;)Ljava/lang/Object;",
         "",
         "(Ljava/lang/Object;Ljava/lang/Object;)Z",
+        "removeDeletedMarkers",
         "removeIf",
         "predicate",
         "removeValueAt",
@@ -229,18 +230,14 @@
 
     if-gtz v0, :cond_0
 
-    .line 1232
+    .line 1231
     iget v0, p0, Landroidx/collection/MutableScatterMap;->_capacity:I
-
-    invoke-static {v0}, Landroidx/collection/ScatterMapKt;->nextCapacity(I)I
-
-    move-result v0
 
     invoke-direct {p0, v0}, Landroidx/collection/MutableScatterMap;->resizeStorage(I)V
 
     goto :goto_0
 
-    .line 1234
+    .line 1233
     :cond_0
     iget v0, p0, Landroidx/collection/MutableScatterMap;->_capacity:I
 
@@ -274,7 +271,7 @@
 
     shl-int/lit8 v4, v4, 0x3
 
-    .line 2057
+    .line 2073
     aget-wide v5, v2, v3
 
     ushr-long/2addr v5, v4
@@ -317,7 +314,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 2059
+    .line 2075
     invoke-static {v2, v3}, Ljava/lang/Long;->numberOfTrailingZeros(J)I
 
     move-result p0
@@ -409,7 +406,7 @@
 
     shl-int/lit8 p1, p1, 0x3
 
-    .line 1840
+    .line 1856
     aget-wide v2, v0, v1
 
     const-wide/16 v4, 0xff
@@ -471,30 +468,137 @@
     return-void
 .end method
 
+.method private final removeDeletedMarkers()V
+    .locals 14
+
+    .line 1262
+    iget-object v0, p0, Landroidx/collection/MutableScatterMap;->metadata:[J
+
+    .line 1263
+    iget v1, p0, Landroidx/collection/MutableScatterMap;->_capacity:I
+
+    const/4 v2, 0x0
+
+    move v3, v2
+
+    :goto_0
+    if-ge v2, v1, :cond_1
+
+    shr-int/lit8 v4, v2, 0x3
+
+    .line 2096
+    aget-wide v5, v0, v4
+
+    and-int/lit8 v7, v2, 0x7
+
+    shl-int/lit8 v7, v7, 0x3
+
+    shr-long/2addr v5, v7
+
+    const-wide/16 v8, 0xff
+
+    and-long/2addr v5, v8
+
+    const-wide/16 v10, 0xfe
+
+    cmp-long v5, v5, v10
+
+    if-nez v5, :cond_0
+
+    .line 2097
+    iget-object v5, p0, Landroidx/collection/MutableScatterMap;->metadata:[J
+
+    .line 2103
+    aget-wide v10, v5, v4
+
+    shl-long v12, v8, v7
+
+    not-long v12, v12
+
+    and-long/2addr v10, v12
+
+    const-wide/16 v12, 0x80
+
+    shl-long v6, v12, v7
+
+    or-long/2addr v6, v10
+
+    aput-wide v6, v5, v4
+
+    .line 2105
+    iget v4, p0, Landroidx/collection/MutableScatterMap;->_capacity:I
+
+    add-int/lit8 v6, v2, -0x7
+
+    and-int/2addr v6, v4
+
+    and-int/lit8 v4, v4, 0x7
+
+    add-int/2addr v6, v4
+
+    shr-int/lit8 v4, v6, 0x3
+
+    and-int/lit8 v6, v6, 0x7
+
+    shl-int/lit8 v6, v6, 0x3
+
+    .line 2103
+    aget-wide v10, v5, v4
+
+    shl-long v7, v8, v6
+
+    not-long v7, v7
+
+    and-long/2addr v7, v10
+
+    shl-long v9, v12, v6
+
+    or-long v6, v7, v9
+
+    aput-wide v6, v5, v4
+
+    add-int/lit8 v3, v3, 0x1
+
+    :cond_0
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    .line 1275
+    :cond_1
+    iget v0, p0, Landroidx/collection/MutableScatterMap;->growthLimit:I
+
+    add-int/2addr v0, v3
+
+    iput v0, p0, Landroidx/collection/MutableScatterMap;->growthLimit:I
+
+    return-void
+.end method
+
 .method private final resizeStorage(I)V
     .locals 21
 
     move-object/from16 v0, p0
 
-    .line 1239
+    .line 1238
     iget-object v1, v0, Landroidx/collection/MutableScatterMap;->metadata:[J
 
-    .line 1240
+    .line 1239
     iget-object v2, v0, Landroidx/collection/MutableScatterMap;->keys:[Ljava/lang/Object;
 
-    .line 1241
+    .line 1240
     iget-object v3, v0, Landroidx/collection/MutableScatterMap;->values:[Ljava/lang/Object;
 
-    .line 1242
+    .line 1241
     iget v4, v0, Landroidx/collection/MutableScatterMap;->_capacity:I
 
-    .line 1244
+    .line 1243
     invoke-direct/range {p0 .. p1}, Landroidx/collection/MutableScatterMap;->initializeStorage(I)V
 
-    .line 1246
+    .line 1245
     iget-object v5, v0, Landroidx/collection/MutableScatterMap;->keys:[Ljava/lang/Object;
 
-    .line 1247
+    .line 1246
     iget-object v6, v0, Landroidx/collection/MutableScatterMap;->values:[Ljava/lang/Object;
 
     const/4 v8, 0x0
@@ -504,7 +608,7 @@
 
     shr-int/lit8 v9, v8, 0x3
 
-    .line 2061
+    .line 2077
     aget-wide v9, v1, v9
 
     and-int/lit8 v11, v8, 0x7
@@ -523,12 +627,12 @@
 
     if-gez v9, :cond_1
 
-    .line 1251
+    .line 1250
     aget-object v9, v2, v8
 
     if-eqz v9, :cond_0
 
-    .line 2062
+    .line 2078
     invoke-virtual {v9}, Ljava/lang/Object;->hashCode()I
 
     move-result v10
@@ -549,7 +653,7 @@
 
     ushr-int/lit8 v13, v10, 0x7
 
-    .line 1253
+    .line 1252
     invoke-direct {v0, v13}, Landroidx/collection/MutableScatterMap;->findFirstAvailableSlot(I)I
 
     move-result v13
@@ -558,7 +662,7 @@
 
     int-to-long v14, v10
 
-    .line 2067
+    .line 2083
     iget-object v10, v0, Landroidx/collection/MutableScatterMap;->metadata:[J
 
     shr-int/lit8 v16, v13, 0x3
@@ -567,7 +671,7 @@
 
     shl-int/lit8 v17, v17, 0x3
 
-    .line 2073
+    .line 2089
     aget-wide v18, v10, v16
 
     move/from16 v20, v8
@@ -584,7 +688,7 @@
 
     aput-wide v7, v10, v16
 
-    .line 2075
+    .line 2091
     iget v7, v0, Landroidx/collection/MutableScatterMap;->_capacity:I
 
     add-int/lit8 v8, v13, -0x7
@@ -601,7 +705,7 @@
 
     shl-int/lit8 v8, v8, 0x3
 
-    .line 2073
+    .line 2089
     aget-wide v16, v10, v7
 
     shl-long/2addr v11, v8
@@ -616,10 +720,10 @@
 
     aput-wide v11, v10, v7
 
-    .line 1256
+    .line 1255
     aput-object v9, v5, v13
 
-    .line 1257
+    .line 1256
     aget-object v7, v3, v20
 
     aput-object v7, v6, v13
@@ -641,7 +745,7 @@
 .method private final writeMetadata(IJ)V
     .locals 9
 
-    .line 1268
+    .line 1284
     iget-object v0, p0, Landroidx/collection/MutableScatterMap;->metadata:[J
 
     shr-int/lit8 v1, p1, 0x3
@@ -650,7 +754,7 @@
 
     shl-int/lit8 v2, v2, 0x3
 
-    .line 2084
+    .line 2114
     aget-wide v3, v0, v1
 
     const-wide/16 v5, 0xff
@@ -667,7 +771,7 @@
 
     aput-wide v2, v0, v1
 
-    .line 1272
+    .line 1288
     iget p0, p0, Landroidx/collection/MutableScatterMap;->_capacity:I
 
     add-int/lit8 p1, p1, -0x7
@@ -684,7 +788,7 @@
 
     shl-int/lit8 p1, p1, 0x3
 
-    .line 2090
+    .line 2120
     aget-wide v1, v0, p0
 
     shl-long v3, v5, p1
@@ -714,7 +818,7 @@
         }
     .end annotation
 
-    .line 1292
+    .line 1308
     new-instance v0, Landroidx/collection/MutableScatterMap$MutableMapWrapper;
 
     invoke-direct {v0, p0}, Landroidx/collection/MutableScatterMap$MutableMapWrapper;-><init>(Landroidx/collection/MutableScatterMap;)V
@@ -765,7 +869,7 @@
 
     shl-int/lit8 v2, v2, 0x3
 
-    .line 2020
+    .line 2036
     aget-wide v4, v1, v3
 
     const-wide/16 v6, 0xff
@@ -890,7 +994,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 2022
+    .line 2038
     invoke-virtual/range {p1 .. p1}, Ljava/lang/Object;->hashCode()I
 
     move-result v3
@@ -930,7 +1034,7 @@
 
     shl-int/lit8 v10, v10, 0x3
 
-    .line 2029
+    .line 2045
     aget-wide v11, v8, v9
 
     ushr-long/2addr v11, v10
@@ -984,7 +1088,7 @@
 
     if-eqz v19, :cond_2
 
-    .line 2035
+    .line 2051
     invoke-static {v2, v3}, Ljava/lang/Long;->numberOfTrailingZeros(J)I
 
     move-result v16
@@ -1048,7 +1152,7 @@
 
     shr-int/lit8 v3, v1, 0x3
 
-    .line 2039
+    .line 2055
     aget-wide v2, v2, v3
 
     and-int/lit8 v7, v1, 0x7
@@ -1092,7 +1196,7 @@
 
     shr-int/lit8 v4, v1, 0x3
 
-    .line 2041
+    .line 2057
     aget-wide v7, v3, v4
 
     and-int/lit8 v3, v1, 0x7
@@ -1122,10 +1226,10 @@
     .line 1179
     iput v2, v0, Landroidx/collection/MutableScatterMap;->growthLimit:I
 
-    .line 2042
+    .line 2058
     iget-object v2, v0, Landroidx/collection/MutableScatterMap;->metadata:[J
 
-    .line 2048
+    .line 2064
     aget-wide v7, v2, v4
 
     shl-long v12, v5, v3
@@ -1140,7 +1244,7 @@
 
     aput-wide v7, v2, v4
 
-    .line 2050
+    .line 2066
     iget v0, v0, Landroidx/collection/MutableScatterMap;->_capacity:I
 
     add-int/lit8 v3, v1, -0x7
@@ -1157,7 +1261,7 @@
 
     shl-int/lit8 v3, v3, 0x3
 
-    .line 2048
+    .line 2064
     aget-wide v7, v2, v0
 
     shl-long v4, v5, v3
@@ -1233,10 +1337,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1998
+    .line 2014
     iget-object v0, p1, Landroidx/collection/ObjectList;->content:[Ljava/lang/Object;
 
-    .line 1999
+    .line 2015
     iget p1, p1, Landroidx/collection/ObjectList;->_size:I
 
     const/4 v1, 0x0
@@ -1244,7 +1348,7 @@
     :goto_0
     if-ge v1, p1, :cond_0
 
-    .line 2000
+    .line 2016
     aget-object v2, v0, v1
 
     .line 1103
@@ -1272,13 +1376,13 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1971
+    .line 1987
     iget-object v0, p1, Landroidx/collection/ScatterSet;->elements:[Ljava/lang/Object;
 
-    .line 1975
+    .line 1991
     iget-object p1, p1, Landroidx/collection/ScatterSet;->metadata:[J
 
-    .line 1976
+    .line 1992
     array-length v1, p1
 
     add-int/lit8 v1, v1, -0x2
@@ -1289,7 +1393,7 @@
 
     move v3, v2
 
-    .line 1979
+    .line 1995
     :goto_0
     aget-wide v4, p1, v3
 
@@ -1338,7 +1442,7 @@
 
     add-int/2addr v9, v8
 
-    .line 1988
+    .line 2004
     aget-object v9, v0, v9
 
     .line 1094
@@ -1672,16 +1776,16 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1844
+    .line 1860
     iget-object v0, p1, Landroidx/collection/ScatterMap;->keys:[Ljava/lang/Object;
 
-    .line 1845
+    .line 1861
     iget-object v1, p1, Landroidx/collection/ScatterMap;->values:[Ljava/lang/Object;
 
-    .line 1848
+    .line 1864
     iget-object p1, p1, Landroidx/collection/ScatterMap;->metadata:[J
 
-    .line 1849
+    .line 1865
     array-length v2, p1
 
     add-int/lit8 v2, v2, -0x2
@@ -1692,7 +1796,7 @@
 
     move v4, v3
 
-    .line 1852
+    .line 1868
     :goto_0
     aget-wide v5, p1, v4
 
@@ -1741,7 +1845,7 @@
 
     add-int/2addr v10, v9
 
-    .line 1861
+    .line 1877
     aget-object v11, v0, v10
 
     aget-object v10, v1, v10
@@ -1835,7 +1939,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1842
+    .line 1858
     invoke-interface {p1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object p1
@@ -1986,7 +2090,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 1871
+    .line 1887
     invoke-virtual {p1}, Ljava/lang/Object;->hashCode()I
 
     move-result v2
@@ -2007,7 +2111,7 @@
 
     and-int/lit8 v3, v2, 0x7f
 
-    .line 1876
+    .line 1892
     iget v4, v0, Landroidx/collection/ScatterMap;->_capacity:I
 
     ushr-int/lit8 v2, v2, 0x7
@@ -2015,7 +2119,7 @@
     :goto_1
     and-int/2addr v2, v4
 
-    .line 1882
+    .line 1898
     iget-object v5, v0, Landroidx/collection/ScatterMap;->metadata:[J
 
     shr-int/lit8 v6, v2, 0x3
@@ -2024,7 +2128,7 @@
 
     shl-int/lit8 v7, v7, 0x3
 
-    .line 1885
+    .line 1901
     aget-wide v8, v5, v6
 
     ushr-long/2addr v8, v7
@@ -2074,7 +2178,7 @@
 
     if-eqz v13, :cond_2
 
-    .line 1894
+    .line 1910
     invoke-static {v7, v8}, Ljava/lang/Long;->numberOfTrailingZeros(J)I
 
     move-result v11
@@ -2085,7 +2189,7 @@
 
     and-int/2addr v11, v4
 
-    .line 1895
+    .line 1911
     iget-object v12, v0, Landroidx/collection/ScatterMap;->keys:[Ljava/lang/Object;
 
     aget-object v12, v12, v11
@@ -2166,7 +2270,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1911
+    .line 1927
     invoke-virtual/range {p1 .. p1}, Ljava/lang/Object;->hashCode()I
 
     move-result v4
@@ -2187,7 +2291,7 @@
 
     and-int/lit8 v5, v4, 0x7f
 
-    .line 1916
+    .line 1932
     iget v6, v2, Landroidx/collection/ScatterMap;->_capacity:I
 
     ushr-int/lit8 v4, v4, 0x7
@@ -2196,7 +2300,7 @@
 
     const/4 v7, 0x0
 
-    .line 1922
+    .line 1938
     :goto_1
     iget-object v8, v2, Landroidx/collection/ScatterMap;->metadata:[J
 
@@ -2206,7 +2310,7 @@
 
     shl-int/lit8 v10, v10, 0x3
 
-    .line 1925
+    .line 1941
     aget-wide v11, v8, v9
 
     ushr-long/2addr v11, v10
@@ -2258,7 +2362,7 @@
 
     if-eqz v12, :cond_2
 
-    .line 1934
+    .line 1950
     invoke-static {v10, v11}, Ljava/lang/Long;->numberOfTrailingZeros(J)I
 
     move-result v12
@@ -2269,7 +2373,7 @@
 
     and-int/2addr v12, v6
 
-    .line 1935
+    .line 1951
     iget-object v3, v2, Landroidx/collection/ScatterMap;->keys:[Ljava/lang/Object;
 
     aget-object v3, v3, v12
@@ -2369,10 +2473,10 @@
 
     check-cast v0, Landroidx/collection/ScatterMap;
 
-    .line 1950
+    .line 1966
     iget-object v0, v0, Landroidx/collection/ScatterMap;->metadata:[J
 
-    .line 1951
+    .line 1967
     array-length v1, v0
 
     add-int/lit8 v1, v1, -0x2
@@ -2383,7 +2487,7 @@
 
     move v3, v2
 
-    .line 1954
+    .line 1970
     :goto_0
     aget-wide v4, v0, v3
 
@@ -2492,7 +2596,7 @@
 
     iput v0, p0, Landroidx/collection/MutableScatterMap;->_size:I
 
-    .line 2003
+    .line 2019
     iget-object v0, p0, Landroidx/collection/MutableScatterMap;->metadata:[J
 
     shr-int/lit8 v1, p1, 0x3
@@ -2501,7 +2605,7 @@
 
     shl-int/lit8 v2, v2, 0x3
 
-    .line 2009
+    .line 2025
     aget-wide v3, v0, v1
 
     const-wide/16 v5, 0xff
@@ -2520,7 +2624,7 @@
 
     aput-wide v2, v0, v1
 
-    .line 2011
+    .line 2027
     iget v1, p0, Landroidx/collection/MutableScatterMap;->_capacity:I
 
     add-int/lit8 v2, p1, -0x7
@@ -2537,7 +2641,7 @@
 
     shl-int/lit8 v2, v2, 0x3
 
-    .line 2009
+    .line 2025
     aget-wide v3, v0, v1
 
     shl-long/2addr v5, v2

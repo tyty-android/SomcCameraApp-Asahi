@@ -22,7 +22,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 611
+    .line 596
     invoke-static {}, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->values()[Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
 
     move-result-object v0

@@ -52,7 +52,7 @@
 .method public constructor <init>(F)V
     .locals 0
 
-    .line 351
+    .line 365
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Ljp/co/sony/mc/camera/idd/value/IddZoomRatio;->value:F
@@ -65,7 +65,7 @@
 .method public final getValue()F
     .locals 0
 
-    .line 351
+    .line 365
     iget p0, p0, Ljp/co/sony/mc/camera/idd/value/IddZoomRatio;->value:F
 
     return p0
@@ -74,7 +74,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 352
+    .line 366
     sget-object v0, Lkotlin/jvm/internal/StringCompanionObject;->INSTANCE:Lkotlin/jvm/internal/StringCompanionObject;
 
     iget p0, p0, Ljp/co/sony/mc/camera/idd/value/IddZoomRatio;->value:F

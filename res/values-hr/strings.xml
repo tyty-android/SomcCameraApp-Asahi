@@ -82,6 +82,7 @@ Prikazat će se obavijesti i dijaloški okviri. Odaberite opciju Upari na svima,
     <string name="call_notification_incoming_text">Dolazni poziv</string>
     <string name="call_notification_ongoing_text">Poziv u tijeku</string>
     <string name="call_notification_screening_text">Filtriranje dolaznog poziva</string>
+    <string name="camera_string_saving_process_hint_txt">Spremanje... Pričekajte da se dovrši spremanje.</string>
     <string name="camera_strings_accept_privacy_policy_txt">Već ste prihvatili pravilnik o zaštiti privatnosti, no uvijek se možete predomisliti.</string>
     <string name="camera_strings_accessibility_48_mega_pixel_txt">48 megapiksela</string>
     <string name="camera_strings_accessibility_adjust_bokeh_txt">Prilagodba efekta bokeh</string>
@@ -92,6 +93,27 @@ Prikazat će se obavijesti i dijaloški okviri. Odaberite opciju Upari na svima,
     <string name="camera_strings_accessibility_adjust_framing_size_smaller_txt">Smanjenje veličine kadra</string>
     <string name="camera_strings_accessibility_adjust_framing_size_txt">Prilagođavanje veličine kadra</string>
     <string name="camera_strings_accessibility_adjust_shutter_speed_txt">Brzina zatvarača</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_look_menu_txt">Gumb Zatvori. Zatvara izbornik za izgled.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_menu_txt">Zatvori prilagođeni izbornik</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_suggests_txt">Zatvori predložene prilagodbe</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_menu_txt">Trenutačno je primijenjen Prilagođeni izgled. Otvara izbornik za prilagodbu.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_txt">Prilagođeni izgled. Primjenjuju se postavke izgleda, svjetline i boje koje su registrirane na prilagođenom izborniku.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_tab_txt">Prilagođena kartica. Primjenjuju se postavke izgleda, svjetline i boje koje su registrirane na prilagođenom izborniku.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_button_txt">Prilagođeni gumb. Otvara izbornik putem kojeg možete izvršavati daljnje prilagodbe kada se primijene preporučene prilagodbe.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_param_txt">Stavka %1$s postavljena je na %2$s</string>
+    <string name="camera_strings_accessibility_ai_suggestion_first_time_txt">AI pomoćnik za fotoaparat. Ova funkcija predlaže postavke sukladno sceni, kao što je boja.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_four_of_some_suggests_txt">Četvrta predložena prilagodba</string>
+    <string name="camera_strings_accessibility_ai_suggestion_look_menu_txt">"%1$s
+Otvara izbornik za kreativni izgled"</string>
+    <string name="camera_strings_accessibility_ai_suggestion_new_suggest_txt">Predložene su nove preporučene prilagodbe</string>
+    <string name="camera_strings_accessibility_ai_suggestion_one_of_some_suggests_txt">Prva predložena prilagodba</string>
+    <string name="camera_strings_accessibility_ai_suggestion_open_suggests_txt">Proširite predložene prilagodbe</string>
+    <string name="camera_strings_accessibility_ai_suggestion_reset_to_default_txt">Ponovno postavite na prethodno predložene postavke</string>
+    <string name="camera_strings_accessibility_ai_suggestion_selected_suggest_txt">Primijenjene su ove preporučene prilagodbe</string>
+    <string name="camera_strings_accessibility_ai_suggestion_suggest_lens_txt">Predloženi gumb objektiva. Preporučuje se %1$sx.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_surface_of_some_suggests_txt">Predložene prilagodbe. Kliznite zdesna nalijevo za prikaz preporučenih prilagodbi.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_three_of_some_suggests_txt">Treća predložena prilagodba</string>
+    <string name="camera_strings_accessibility_ai_suggestion_two_of_some_suggests_txt">Druga predložena prilagodba</string>
     <string name="camera_strings_accessibility_arrow_left_button_txt">Strelica ulijevo</string>
     <string name="camera_strings_accessibility_arrow_right_button_txt">Strelica udesno</string>
     <string name="camera_strings_accessibility_audio_level_txt">Mjerač razine zvuka</string>
@@ -246,6 +268,45 @@ Prikazat će se obavijesti i dijaloški okviri. Odaberite opciju Upari na svima,
     <string name="camera_strings_advanced_setting_geo_tag_title_txt">Spremi lokaciju</string>
     <string name="camera_strings_ai_face_restore_description_txt">Možete snimati fotografije pomoću izoštravanja lica kako bi crte lica bile jasnije</string>
     <string name="camera_strings_ai_face_restore_txt">Izoštravanje lica</string>
+    <string name="camera_strings_ai_suggestion_introduce_hint_text_txt">[Savjeti] AI pomoćnik za foto.</string>
+    <string name="camera_strings_aisuggestion_box_name1_txt">Prilagodi</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_message_txt">Registrirajte postavke trenutačnog izgleda, svjetline i boje kao Prilagođeno.</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_overwrite_message_txt">Izgled je već registriran u opciji Prilagođeno. Želite li prepisati?</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_title_txt">Registracija kao prilagođenog izgleda</string>
+    <string name="camera_strings_aisuggestion_box_title_txt">Prilagodi</string>
+    <string name="camera_strings_aisuggestion_custom_params_contrast_txt">Kontrast</string>
+    <string name="camera_strings_aisuggestion_custom_params_ev_txt">Svjetlina</string>
+    <string name="camera_strings_aisuggestion_custom_params_register_txt">Registriraj se</string>
+    <string name="camera_strings_aisuggestion_custom_params_saturation_txt">Zasićen.</string>
+    <string name="camera_strings_aisuggestion_custom_params_title_txt">Svjetlina/boja</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbab_txt">Toplina</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbgm_txt">Nijansa</string>
+    <string name="camera_strings_aisuggestion_customlook_register_instruction_txt">Registraciju prilagođenog izgleda možete upotrijebiti u bilo kojem trenutku putem kartice Prilagođeni izgled</string>
+    <string name="camera_strings_aisuggestion_description_txt">"AI automatski prepoznaje scenu i predlaže optimizirane prilagodbe u malom pretpregledu na donjem desnom dijelu.
+Ako dodirnete taj mali pretpregled, sljedeće će se postavke automatski prilagoditi sukladno sceni:
+Izgled, Ekspozicija, Balans bijele boje, Zasićenost, Kontrast, Bokeh
+*Ta je funkcija dostupna samo u Načinu rada Fotografija.
+*Kada započnete snimanje videozapisa tako da pritisnete i držite gumb zatvarača, postavke zasićenosti, kontrasta i bokeha neće se primijeniti."</string>
+    <string name="camera_strings_aisuggestion_guide_description1_txt">Preporučene prilagodbe na temelju scene koju prepozna AI prikazane su u malom pretpregledu u donjem desnom dijelu (gornji desni dio kada uređaj držite vodoravno). Sve te prilagodbe možete primijeniti odjednom tako da dodirnete mali pretpregled.</string>
+    <string name="camera_strings_aisuggestion_guide_description2_txt">Ovisno o sceni, može se predložiti i postavka određenog objektiva. U tom slučaju, možete promijeniti na predloženu postavku objektiva ovisno o preferenciji.</string>
+    <string name="camera_strings_aisuggestion_guide_description3_txt">"Ako kliznete ulijevo po malom pretpregledu na donjem desnom dijelu (gornji desni dio kada uređaj držite vodoravno), možete prikazati alternativne preporuke prilagodbe.
+Prijedlog koji odaberete spremit će se kao željena prilagodba i obuhvatit će se u prijedloge sljedeći put kada snimate u sličnoj sceni."</string>
+    <string name="camera_strings_aisuggestion_guide_description4_txt">Možete dodirnuti gumb [>] kako biste sakrili prijedloge kada nisu potrebni. Kada se prepozna nova scena, osvijetlit će se gumb [&lt;] kako bi vam pokazao da postoje novi prijedlozi za prilagodbu. Kako biste ponovno pogledali prijedloge, dodirnite gumb [&lt;].</string>
+    <string name="camera_strings_aisuggestion_guide_description5_txt">Ako dodirnite gumb za prilagođavanje nakon što odaberete predložene prilagodbe, možete prilagoditi dodatne postavke, kao što su svjetlina i boja. Vaše će se prilagodbe spremiti na uređaj i primijeniti na predložene prilagodbe sljedeći put kada se otkrije slična scena.</string>
+    <string name="camera_strings_aisuggestion_guide_description6_txt">Predložene prilagodbe i prilagodbe koje ste izvršili mogu se registrirati te ih možete učitati u bilo kojem trenutku kako biste snimali fotografije istim postavkama. Dodirnite [Registriraj se] kako biste dodali Prilagođeni izgled na popis dostupnih izgleda.</string>
+    <string name="camera_strings_aisuggestion_guide_entry_txt">Kako upotreb. AI pomoćnik za foto.</string>
+    <string name="camera_strings_aisuggestion_guide_title_txt">Kako upotreb. AI pomoćnik za foto.</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_message_txt">Želite li ponovno postaviti sve postavke na zadane, uključujući boju, svjetlinu i željene prilagodbe?</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_title_txt">Ponovno postavljanje parametara</string>
+    <string name="camera_strings_aisuggestion_params_reset_txt">Ponovno postavljanje parametara</string>
+    <string name="camera_strings_aisuggestion_permitted_item_bokeh_txt">Bokeh</string>
+    <string name="camera_strings_aisuggestion_permitted_item_lens_txt">Objektiv</string>
+    <string name="camera_strings_aisuggestion_permitted_item_title_txt">Uključivanje u prijedloge</string>
+    <string name="camera_strings_aisuggestion_recommend_lens_ratio_txt">Preporučeno: %1$s</string>
+    <string name="camera_strings_aisuggestion_return_to_default_txt">Vrati</string>
+    <string name="camera_strings_aisuggestion_simple_video_instruction_txt">Kada snimate video. dugim pritiskom, postavke zasićenosti, kontrasta i bokeha mogu se prikazati drugačije.</string>
+    <string name="camera_strings_aisuggestion_txt">AI pomoćnik za fotoaparat</string>
+    <string name="camera_strings_aisuggestion_use_aissuggestion_txt">Upotre. AI pomoćnika za foto.</string>
     <string name="camera_strings_anonymous_analytics_txt">Anonimna analitika</string>
     <string name="camera_strings_application_name">Kamera</string>
     <string name="camera_strings_application_name_google_lens_txt">Google Lens</string>
@@ -421,6 +482,7 @@ Zaštita:
     <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Povezivanje s Wi-Fi mrežom nije moguće</string>
     <string name="camera_strings_dialog_user_data_collection_txt">Ako se u nastavku s time složite, tvrtka Sony će prikupljati vaše &lt;b>&lt;a href=#personal-data>osobne podatke&lt;/a>&lt;/b> radi pružanja prilagođene podrške i poboljšanja uređaja i usluga. Sony će upotrebljavati vaše podatke u skladu s našim &lt;b>&lt;a href=https://www.sonymobile.com/privacy/>Pravilnikom o zaštiti privatnosti&lt;/a>&lt;/b>.</string>
     <string name="camera_strings_dialog_video_hdr_hlg_supported_short_description_txt">Neki uređaji/usluge možda neće moći reproducirati izvornu boju i svjetlinu HDR sadržaja. Koristite uređaje/usluge koji podržavaju format HDR kada uživate u HDR sadržaju.</string>
+    <string name="camera_strings_digital_tripod_hint_edge_txt">Kompozicija se promijenila. Usmjerite fotoaparat prema izvornom predmetu.</string>
     <string name="camera_strings_digital_zoom_type_description_txt">"Odaberite postavku digitalnog zuma.
 
 Standardni digitalni zum: zumirajte koristeći digitalnu obradu koja se zasniva na podacima senzora slike.
@@ -484,6 +546,7 @@ Da biste to promijenili, zaustavite streaming, a zatim idite na aplikaciju Faceb
     <string name="camera_strings_fast_capturing_screen_locked_settings_txt">Da biste otvorili postavke, otključajte zaslon.</string>
     <string name="camera_strings_fast_capturing_screen_locked_streaming_txt">Za početak streaminga potrebno je otključati zaslon.</string>
     <string name="camera_strings_fast_capturing_screen_locked_title_txt">Zaslon je zaključan</string>
+    <string name="camera_strings_feature_creative_look_custom_description_txt">Možete registrirati izglede i postavke svjetline/boje.</string>
     <string name="camera_strings_feature_creative_look_description_txt">"Možete odabrati završnu obradu slika (fotografija ili filmova) odabirom opcije „izgled”.
 
 Kreativni izgled pruža šest unaprijed postavljenih izgleda. Svaki je optimiziran različitom kombinacijom tonova boje, zasićenosti, kontrasta, oštrine, svjetline i drugih elemenata slike pa možete postaviti obradu slike sa svojim idealnim omjerom tih elemenata."</string>
@@ -567,6 +630,7 @@ Dotaknite predmet koji želite pratiti."</string>
     <string name="camera_strings_framing_orientation_description_txt">"Predmet možete obrezati u vodoravnom ili okomitom kadru.
 Postavite na [Automatski] kako bi obrezana orijentacija bila ista kao i uređaj."</string>
     <string name="camera_strings_framing_select_subject_to_track_txt">Dotaknite predmet čiji položaj želite zaključati</string>
+    <string name="camera_strings_framing_setting_guide_title_txt">Više o Automatskom određivanju kadra</string>
     <string name="camera_strings_framing_setting_orientation_landscape_txt">Vodoravna</string>
     <string name="camera_strings_framing_setting_orientation_portrait_txt">Okomita</string>
     <string name="camera_strings_framing_setting_orientation_title_txt">Orijentacija kadra</string>
@@ -574,6 +638,7 @@ Postavite na [Automatski] kako bi obrezana orijentacija bila ista kao i uređaj.
 Obrezane snimke spremaju se u Full HD razlučivosti. Neobrezane snimke spremaju se kao 4K."</string>
     <string name="camera_strings_framing_setting_save_original_video_off_txt">Snimanje cijelog zaslona: isključeno</string>
     <string name="camera_strings_framing_setting_save_original_video_title_txt">Snimanje cijelog zaslona</string>
+    <string name="camera_strings_framing_setting_snapshot_description_txt">Bez obzira na to je li [Snimanje cijelog zaslona] uključeno ili isključeno, brze snimke snimljene tijekom snimanja videozapisa spremljene su kao cijeli zaslon.</string>
     <string name="camera_strings_geotagging_description_txt">Spremajte fotografije i videozapise s označenim lokacijama na kojima su snimljene</string>
     <string name="camera_strings_geotagging_txt">Spremi lokaciju</string>
     <string name="camera_strings_gimbal_mode_tab_label">AI snimanje fotoaparatom</string>
@@ -592,6 +657,7 @@ Time vam se omogućuje stabilno snimanje videozapisa u nestabilnim situacijama, 
     <string name="camera_strings_gimbal_setting_assist_method_locking_hint_txt">Zaključ. položaja predmeta: Ruč.</string>
     <string name="camera_strings_gimbal_setting_assist_method_locking_txt">Ručno</string>
     <string name="camera_strings_gimbal_setting_assist_method_title_txt">Zaklj. polož. predmeta</string>
+    <string name="camera_strings_gimbal_setting_guide_title_txt">Više o AI snimanju fotoaparatom</string>
     <string name="camera_strings_gridline_description_txt">Odaberite želite li da budu prikazane crte rešetke koje pomažu u kompoziciji slike</string>
     <string name="camera_strings_gridline_txt">Crte rešetke</string>
     <string name="camera_strings_hand_shutter_description_updated_txt">Odbrojavanje započnite tako da okrenete dlan prema prednjoj kameri. Kako bi ga bilo lakše prepoznati, ispružite prste prema gore.</string>
@@ -727,6 +793,7 @@ Snimke zaslona napravljene tijekom snimanja videozapisa uvijek koriste standardn
     <string name="camera_strings_notification_channel_title_saving_process_txt">Postupak spremanja</string>
     <string name="camera_strings_notification_text_saving_in_progress_txt">Pričekajte da se dovrši spremanje</string>
     <string name="camera_strings_notification_title_saving_in_progress_txt">Spremanje u tijeku</string>
+    <string name="camera_strings_notify_saving_process_cannot_launch_app_by_hw_shutter_txt">Pritiskom gumba zatvarača možda se neće pokrenuti fotoaparat tijekom spremanja</string>
     <string name="camera_strings_ok_txt">U redu</string>
     <string name="camera_strings_peaking_color_blue_txt">Plavo</string>
     <string name="camera_strings_peaking_color_red_txt">Crvena</string>
@@ -735,6 +802,7 @@ Snimke zaslona napravljene tijekom snimanja videozapisa uvijek koriste standardn
     <string name="camera_strings_peaking_color_yellow_txt">Žuto</string>
     <string name="camera_strings_peaking_txt">Isticanje</string>
     <string name="camera_strings_personal_data_txt">Osobni podaci</string>
+    <string name="camera_strings_photopro_setting_guide_title_txt">Više o Pro fotografiji</string>
     <string name="camera_strings_privacy_policy_txt">Pravila privatnosti</string>
     <string name="camera_strings_pro_tips_computational_photo_description_txt">"Čak i u Načinu rada P, fotoaparat automatski prepoznaje scenu i snima prekrasne automatske fotografije tako da smanji zamućenje, buku, preekspoziciju i podekspoziciju.
 Ako je ne upotrebljavate, funkciju možete isključiti gumbom Fn ili u IZBORNIKU."</string>
@@ -965,6 +1033,7 @@ Ako nastavite koristiti SD karticu kao pohranu podataka, obavezno koristite SD k
     <string name="camera_strings_video_stabilization_description_sub_txt">Napomena: odabir visoke kvalitete može skratiti trajanje snimanja zbog povećanja temperature uređaja.</string>
     <string name="camera_strings_video_stabilization_description_txt">Uređaj Xperia opremljen je jedinstvenim sustavom hibridne stabilizacije poznatim pod nazivom Optical SteadyShot - to je kombinacija istovremene optičke i elektroničke stabilizacije slike. Pruža vam uglađene videozapise bez trešnje, čak i kada snimate u pokretu.</string>
     <string name="camera_strings_video_stabilization_high_quality_images_txt">Visoka kvaliteta</string>
+    <string name="camera_strings_videopro_setting_guide_title_txt">Više o Pro videozapisu</string>
     <string name="camera_strings_volume_distortion_correction_description_txt">Ispravlja izobličenje lica koja se pojavljuju u blizini ruba zaslona tijekom upotrebe ultra širokokutnog objektiva. Zbog toga se može pojaviti izobličenje pozadine ili se kut prikaza može suziti.</string>
     <string name="camera_strings_volume_distortion_correction_front_description_txt">Ispravlja izobličenje lica koja se pojavljuju u blizini ruba zaslona. Zbog toga se može pojaviti izobličenje pozadine ili se kut prikaza može suziti.</string>
     <string name="camera_strings_volume_distortion_correction_txt">Ispravak izobličenja lica</string>
@@ -1042,8 +1111,25 @@ Nema mrežne veze."</string>
     <string name="clear_text_end_icon_content_description">Brisanje teksta</string>
     <string name="close_drawer">Zatvaranje izbornika za navigaciju</string>
     <string name="close_sheet">Zatvaranje lista</string>
+    <string name="common_google_play_services_enable_button">Omogući</string>
+    <string name="common_google_play_services_enable_text">%1$s neće funkcionirati ako ne omogućite usluge Google Playa.</string>
+    <string name="common_google_play_services_enable_title">Omogućivanje usluga Google Playa</string>
+    <string name="common_google_play_services_install_button">Instaliraj</string>
+    <string name="common_google_play_services_install_text">%1$s neće funkcionirati bez usluga Google Playa koje nisu instalirane na vašem uređaju.</string>
+    <string name="common_google_play_services_install_title">Preuzimanje usluga Google Playa</string>
+    <string name="common_google_play_services_notification_channel_name">Dostupnost usluga za Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Pogreška Usluga za Google Play</string>
+    <string name="common_google_play_services_unknown_issue">%1$s ima poteškoća s uslugama Google Playa. Pokušajte ponovo.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s neće funkcionirati bez usluga Google Playa koje vaš uređaj ne podržava.</string>
+    <string name="common_google_play_services_update_button">Ažuriraj</string>
+    <string name="common_google_play_services_update_text">%1$s neće funkcionirati ako ne ažurirate Google Play usluge.</string>
+    <string name="common_google_play_services_update_title">Ažuriranje usluga Google Playa</string>
+    <string name="common_google_play_services_updating_text">%1$s neće se pokrenuti bez usluga Google Playa koje se trenutačno ažuriraju.</string>
+    <string name="common_google_play_services_wear_update_text">Potrebna je nova verzija usluga Google Playa. Uskoro će se ažurirati.</string>
+    <string name="common_open_on_phone">Otvori na telefonu</string>
+    <string name="common_signin_button_text">Prijava</string>
+    <string name="common_signin_button_text_long">Prijava putem Googlea</string>
     <string name="copy">Kopiraj</string>
-    <string name="copy_toast_msg">Veza je kopirana u međuspremnik</string>
     <string name="default_error_message">Nevažeći unos</string>
     <string name="default_popup_window_title">Skočni prozor</string>
     <string name="dropdown_menu">Padajući izbornik</string>
@@ -1054,9 +1140,6 @@ Nema mrežne veze."</string>
     <string name="external_display_connected_description_txt">Možete pogledati tražilo u Monitoru za vloganje</string>
     <string name="external_display_connected_title_txt">Monitor za vloganje je povezan</string>
     <string name="external_display_note_about_external_mic_txt">Napomena: za upotrebu vanjskog mikrofona povežite se s Monitorom za vloganje prije snimanja. Ako se povežete kasnije, trebat ćete ponovno povezati Monitor za vloganje.</string>
-    <string name="fallback_menu_item_copy_link">Kopiraj vezu</string>
-    <string name="fallback_menu_item_open_in_browser">Otvori u pregledniku</string>
-    <string name="fallback_menu_item_share_link">Podijeli vezu</string>
     <string name="icon_content_description">Ikona dijaloga</string>
     <string name="in_progress">U tijeku</string>
     <string name="indeterminate">Djelomično potvrđeno</string>

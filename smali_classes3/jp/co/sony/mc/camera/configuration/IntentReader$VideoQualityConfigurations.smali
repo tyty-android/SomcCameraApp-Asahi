@@ -31,6 +31,20 @@
 # direct methods
 .method public constructor <init>(JJIZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "maxFileSize",
+            "maxDuration",
+            "quality",
+            "hasSizeLimit"
+        }
+    .end annotation
 
     .line 48
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

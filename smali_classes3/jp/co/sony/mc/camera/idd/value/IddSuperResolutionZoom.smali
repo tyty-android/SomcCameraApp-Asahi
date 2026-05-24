@@ -55,7 +55,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 395
+    .line 409
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingBooleanValue;
 
     const/4 v0, 0x0
@@ -70,7 +70,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 397
+    .line 411
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;->getValue()Ljp/co/sony/mc/camera/configuration/parameters/UserSettingBooleanValue;
 
     move-result-object p0

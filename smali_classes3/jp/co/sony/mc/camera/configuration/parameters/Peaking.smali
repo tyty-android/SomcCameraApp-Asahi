@@ -55,15 +55,15 @@
     .line 19
     new-instance v6, Ljp/co/sony/mc/camera/configuration/parameters/Peaking;
 
-    const v4, 0x7f1103f4
+    const v4, 0x7f11043f
 
-    const v5, 0x7f11046f
+    const v5, 0x7f1104b8
 
     const-string v1, "ON"
 
     const/4 v2, 0x0
 
-    const v3, 0x7f08027d
+    const v3, 0x7f0802d3
 
     move-object v0, v6
 
@@ -74,15 +74,15 @@
     .line 23
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Peaking;
 
-    const v11, 0x7f1103f3
+    const v11, 0x7f11043e
 
-    const v12, 0x7f11046e
+    const v12, 0x7f1104b7
 
     const-string v8, "OFF"
 
     const/4 v9, 0x1
 
-    const v10, 0x7f08027a
+    const v10, 0x7f0802d0
 
     move-object v7, v0
 
@@ -102,6 +102,23 @@
 
 .method private constructor <init>(Ljava/lang/String;IIII)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId",
+            "shortTextId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(III)V"
@@ -134,6 +151,16 @@
 
 .method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/Peaking;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "capturingMode",
+            "cameraId"
+        }
+    .end annotation
 
     .line 79
     new-instance v0, Ljava/util/ArrayList;
@@ -187,6 +214,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/Peaking;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 18
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/Peaking;

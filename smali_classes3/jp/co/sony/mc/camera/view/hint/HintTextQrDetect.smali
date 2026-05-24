@@ -28,6 +28,14 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     .line 105
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;-><init>()V
@@ -45,6 +53,14 @@
 
 .method public static createTag(Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;)Ljava/lang/String;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     .line 191
     new-instance v0, Ljava/lang/StringBuilder;
@@ -261,6 +277,14 @@
 
 .method public setLeftButtonListener(Landroid/view/View$OnClickListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "leftButtonListener"
+        }
+    .end annotation
 
     .line 183
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect;->mLeftButtonListener:Landroid/view/View$OnClickListener;
@@ -270,6 +294,14 @@
 
 .method public setMessageListener(Landroid/view/View$OnClickListener;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "messageListener"
+        }
+    .end annotation
 
     .line 175
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect;->mMessageListener:Landroid/view/View$OnClickListener;
@@ -279,6 +311,14 @@
 
 .method public setMessageString(Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "message"
+        }
+    .end annotation
 
     .line 136
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect;->mType:Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;

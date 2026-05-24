@@ -24,7 +24,7 @@
     .line 0
     check-cast p1, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;->$r8$lambda$JLqaPAosgvxfO-hTRw0WKqxobJs(Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;)Z
+    invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;->$r8$lambda$NV4AIhZa6lV4EkXYzGZQ4FV0hkg(Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;)Z
 
     move-result p0
 

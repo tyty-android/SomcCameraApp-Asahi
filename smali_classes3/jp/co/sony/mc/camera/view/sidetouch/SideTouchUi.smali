@@ -60,6 +60,14 @@
 
 .method public constructor <init>(Landroid/view/ViewGroup;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "movableArea"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -71,6 +79,16 @@
 
 .method public constructor <init>(Landroid/view/ViewGroup;Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "movableArea",
+            "oneShot"
+        }
+    .end annotation
 
     .line 74
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -100,6 +118,18 @@
 
 .method private attachInternal(Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi$Icon;Landroid/graphics/Point;Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi$Type;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "icon",
+            "point",
+            "type"
+        }
+    .end annotation
 
     .line 314
     iget v0, p3, Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi$Type;->layer:I
@@ -181,6 +211,14 @@
 
 .method private attemptLayerFocusChange(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fromLayer"
+        }
+    .end annotation
 
     .line 371
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi;->searchNextIconLayer(I)Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi$IconLayer;
@@ -218,6 +256,14 @@
 
 .method private compareTo(Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi$Type;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     .line 280
     iget v0, p1, Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi$Type;->layer:I
@@ -241,6 +287,14 @@
 
 .method private destroyIcon(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "layer"
+        }
+    .end annotation
 
     .line 260
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi;->mIconLayer:Landroid/util/SparseArray;
@@ -262,6 +316,14 @@
 
 .method private detachIcon(I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "layer"
+        }
+    .end annotation
 
     .line 242
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi;->getIcon(I)Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi$Icon;
@@ -283,6 +345,16 @@
 
 .method private findNextIconLayer(IZ)Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi$IconLayer;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "currentLayerNum",
+            "upperDirection"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -335,6 +407,14 @@
 
 .method private getAttachPoint(I)Landroid/graphics/Point;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "layer"
+        }
+    .end annotation
 
     .line 298
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi;->mIconLayer:Landroid/util/SparseArray;
@@ -368,6 +448,14 @@
 
 .method private getIcon(I)Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi$Icon;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "layer"
+        }
+    .end annotation
 
     .line 291
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi;->mIconLayer:Landroid/util/SparseArray;
@@ -401,6 +489,14 @@
 
 .method private getIconLayer(I)Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi$IconLayer;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "layer"
+        }
+    .end annotation
 
     .line 305
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi;->mIconLayer:Landroid/util/SparseArray;
@@ -431,6 +527,14 @@
 
 .method private getIconType(I)Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi$Type;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "layer"
+        }
+    .end annotation
 
     .line 284
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi;->mIconLayer:Landroid/util/SparseArray;
@@ -464,6 +568,14 @@
 
 .method private removeIconView(I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "layer"
+        }
+    .end annotation
 
     .line 348
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi;->getIcon(I)Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi$Icon;
@@ -495,6 +607,14 @@
 
 .method private requestLayerFocus(I)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "layer"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
@@ -570,6 +690,14 @@
 
 .method private searchNextIconLayer(I)Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi$IconLayer;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fromLayerNum"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -603,6 +731,16 @@
 # virtual methods
 .method public attachIcon(Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi$Type;Landroid/graphics/Point;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "type",
+            "point"
+        }
+    .end annotation
 
     .line 150
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi;->mMovableArea:Landroid/view/ViewGroup;
@@ -623,6 +761,14 @@
 
 .method public varargs containsAll([Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi$Type;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "types"
+        }
+    .end annotation
 
     .line 135
     array-length v0, p1
@@ -658,6 +804,14 @@
 
 .method public varargs containsIn([Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi$Type;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "types"
+        }
+    .end annotation
 
     .line 120
     array-length v0, p1
@@ -726,6 +880,14 @@
 
 .method public destroyTo(Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi$Type;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     .line 272
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi;->compareTo(Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi$Type;)Z
@@ -751,6 +913,14 @@
 
 .method public detachTo(Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi$Type;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
     .line 230
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi;->compareTo(Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi$Type;)Z
@@ -776,12 +946,28 @@
 
 .method public setScreenButtonListenerFactory(Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "factory"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public setUiOrientation(I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "orientation"
+        }
+    .end annotation
 
     .line 90
     iput p1, p0, Ljp/co/sony/mc/camera/view/sidetouch/SideTouchUi;->mOrientation:I

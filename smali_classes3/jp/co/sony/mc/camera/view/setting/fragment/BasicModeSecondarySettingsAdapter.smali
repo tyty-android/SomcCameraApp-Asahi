@@ -256,7 +256,7 @@
 
     move-result-object p2
 
-    const p3, 0x7f0c0071
+    const p3, 0x7f0c006c
 
     const/4 v0, 0x0
 
@@ -363,7 +363,7 @@
 
     move-result-object p0
 
-    const v1, 0x7f0700a4
+    const v1, 0x7f0700e7
 
     .line 66
     invoke-virtual {p0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -388,7 +388,7 @@
     invoke-virtual {p3, v1, v3, p0, v4}, Landroid/view/View;->setPaddingRelative(IIII)V
 
     :goto_1
-    const p0, 0x7f0904a9
+    const p0, 0x7f0904aa
 
     .line 71
     invoke-virtual {p2, p0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -433,7 +433,7 @@
 
     move-result-object p0
 
-    const v1, 0x7f090472
+    const v1, 0x7f090466
 
     .line 79
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -486,7 +486,7 @@
     invoke-virtual {v1, v4}, Landroid/widget/TextView;->setVisibility(I)V
 
     :goto_2
-    const p0, 0x7f09047b
+    const p0, 0x7f09047c
 
     .line 89
     invoke-virtual {p2, p0}, Landroid/view/View;->findViewById(I)Landroid/view/View;

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center_vertical" android:id="@android:id/background" android:height="8.0dip">
+        <shape android:shape="rectangle">
+            <corners android:radius="4.0dip" />
+            <padding android:left="1.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+            <solid android:color="#0d000000" />
+        </shape>
+    </item>
+    <item android:gravity="center_vertical" android:id="@android:id/background" android:height="6.0dip">
+        <shape android:shape="rectangle">
+            <corners android:radius="3.0dip" />
+            <padding android:left="1.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+            <solid android:color="#1a000000" />
+        </shape>
+    </item>
+    <item android:gravity="center_vertical" android:id="@android:id/background" android:height="4.0dip">
+        <shape android:shape="rectangle">
+            <corners android:radius="2.0dip" />
+            <padding android:left="1.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+            <solid android:color="#b3000000" />
+        </shape>
+    </item>
+    <item android:gravity="center_vertical" android:id="@android:id/background" android:height="2.0dip">
+        <shape android:shape="rectangle">
+            <corners android:radius="1.0dip" />
+            <gradient android:height="2.0dip" android:startColor="#ff00ff22" android:endColor="#ffff00c3" android:angle="0.0" />
+        </shape>
+    </item>
+</layer-list>

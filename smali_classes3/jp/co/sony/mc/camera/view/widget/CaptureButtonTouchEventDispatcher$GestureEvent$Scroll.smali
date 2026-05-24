@@ -99,19 +99,19 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 228
+    .line 232
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 229
+    .line 233
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$GestureEvent$Scroll;->last:Landroid/graphics/Point;
 
-    .line 230
+    .line 234
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$GestureEvent$Scroll;->new:Landroid/graphics/Point;
 
-    .line 231
+    .line 235
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$GestureEvent$Scroll;->direction:Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;
 
-    .line 233
+    .line 237
     iget p3, p2, Landroid/graphics/Point;->x:I
 
     iget v0, p1, Landroid/graphics/Point;->x:I
@@ -122,7 +122,7 @@
 
     iput p3, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$GestureEvent$Scroll;->diffX:F
 
-    .line 234
+    .line 238
     iget p2, p2, Landroid/graphics/Point;->y:I
 
     iget p1, p1, Landroid/graphics/Point;->y:I
@@ -273,7 +273,7 @@
 .method public final getDiffX()F
     .locals 0
 
-    .line 233
+    .line 237
     iget p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$GestureEvent$Scroll;->diffX:F
 
     return p0
@@ -282,7 +282,7 @@
 .method public final getDiffY()F
     .locals 0
 
-    .line 234
+    .line 238
     iget p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$GestureEvent$Scroll;->diffY:F
 
     return p0
@@ -291,7 +291,7 @@
 .method public final getDirection()Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;
     .locals 0
 
-    .line 231
+    .line 235
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$GestureEvent$Scroll;->direction:Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$Direction;
 
     return-object p0
@@ -300,7 +300,7 @@
 .method public final getLast()Landroid/graphics/Point;
     .locals 0
 
-    .line 229
+    .line 233
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$GestureEvent$Scroll;->last:Landroid/graphics/Point;
 
     return-object p0
@@ -309,7 +309,7 @@
 .method public final getNew()Landroid/graphics/Point;
     .locals 0
 
-    .line 230
+    .line 234
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$GestureEvent$Scroll;->new:Landroid/graphics/Point;
 
     return-object p0

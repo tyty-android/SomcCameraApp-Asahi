@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function5;
+.implements Lkotlin/jvm/functions/Function6;
 
 
 # direct methods
@@ -18,29 +18,39 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 6
 
     .line 0
     check-cast p1, Ljava/lang/Boolean;
 
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
-    move-result p0
+    move-result v0
 
-    check-cast p2, Ljava/lang/Boolean;
+    move-object v1, p2
 
-    check-cast p3, Ljava/lang/Boolean;
+    check-cast v1, Ljava/lang/Boolean;
+
+    move-object v2, p3
+
+    check-cast v2, Ljava/lang/Boolean;
 
     check-cast p4, Ljava/lang/Boolean;
 
     invoke-virtual {p4}, Ljava/lang/Boolean;->booleanValue()Z
 
-    move-result p1
+    move-result v3
 
-    check-cast p5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    move-object v4, p5
 
-    invoke-static {p0, p2, p3, p1, p5}, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;->$r8$lambda$k1STARR2KiJRizpTjSjF2Nlpmys(ZLjava/lang/Boolean;Ljava/lang/Boolean;ZLjp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
+    check-cast v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    move-object v5, p6
+
+    check-cast v5, Ljava/lang/Boolean;
+
+    invoke-static/range {v0 .. v5}, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;->$r8$lambda$eDuuq4TeBEF4gMbKF0YZBP7XcUY(ZLjava/lang/Boolean;Ljava/lang/Boolean;ZLjp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljava/lang/Boolean;)Z
 
     move-result p0
 

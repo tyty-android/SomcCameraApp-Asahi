@@ -14,7 +14,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nFramingAssistPositionMode.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FramingAssistPositionMode.kt\njp/co/sony/mc/camera/configuration/parameters/FramingAssistPositionMode$Companion\n+ 2 ArraysJVM.kt\nkotlin/collections/ArraysKt__ArraysJVMKt\n*L\n1#1,95:1\n37#2,2:96\n*S KotlinDebug\n*F\n+ 1 FramingAssistPositionMode.kt\njp/co/sony/mc/camera/configuration/parameters/FramingAssistPositionMode$Companion\n*L\n92#1:96,2\n*E\n"
+    value = "SMAP\nFramingAssistPositionMode.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FramingAssistPositionMode.kt\njp/co/sony/mc/camera/configuration/parameters/FramingAssistPositionMode$Companion\n+ 2 ArraysJVM.kt\nkotlin/collections/ArraysKt__ArraysJVMKt\n*L\n1#1,95:1\n37#2:96\n36#2,3:97\n*S KotlinDebug\n*F\n+ 1 FramingAssistPositionMode.kt\njp/co/sony/mc/camera/configuration/parameters/FramingAssistPositionMode$Companion\n*L\n92#1:96\n92#1:97,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -160,7 +160,7 @@
 
     const/4 p1, 0x0
 
-    .line 97
+    .line 99
     new-array p1, p1, [Ljp/co/sony/mc/camera/configuration/parameters/FramingAssistPositionMode;
 
     invoke-interface {p0, p1}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;

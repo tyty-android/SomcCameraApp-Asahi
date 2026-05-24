@@ -61,7 +61,7 @@
     .line 22
     new-instance v6, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;
 
-    const v4, 0x7f1103f3
+    const v4, 0x7f11043e
 
     const-string v5, "off"
 
@@ -69,7 +69,7 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f080197
+    const v3, 0x7f0801f3
 
     move-object v0, v6
 
@@ -80,7 +80,7 @@
     .line 26
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;
 
-    const v11, 0x7f1103f2
+    const v11, 0x7f11043d
 
     const-string v12, "display-auto"
 
@@ -88,7 +88,7 @@
 
     const/4 v9, 0x1
 
-    const v10, 0x7f08017f
+    const v10, 0x7f0801db
 
     move-object v7, v0
 
@@ -99,7 +99,7 @@
     .line 30
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;
 
-    const v5, 0x7f1103f4
+    const v5, 0x7f11043f
 
     const-string v6, "display-on"
 
@@ -107,7 +107,7 @@
 
     const/4 v3, 0x2
 
-    const v4, 0x7f080183
+    const v4, 0x7f0801df
 
     move-object v1, v0
 
@@ -127,6 +127,23 @@
 
 .method private constructor <init>(Ljava/lang/String;IIILjava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "iconId",
+            "textId",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -167,6 +184,14 @@
 
 .method public static getDisplayFlashFromParameterString(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "flashString"
+        }
+    .end annotation
 
     .line 137
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;->values()[Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;
@@ -208,6 +233,16 @@
 
 .method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId"
+        }
+    .end annotation
 
     .line 105
     new-instance v0, Ljava/util/ArrayList;
@@ -325,6 +360,18 @@
 
 .method public static getValidValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;)Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId",
+            "value"
+        }
+    .end annotation
 
     .line 154
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;
@@ -361,6 +408,14 @@
 
 .method public static isSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "cameraId"
+        }
+    .end annotation
 
     .line 128
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isDisplayFlashModeSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
@@ -372,6 +427,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 21
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;

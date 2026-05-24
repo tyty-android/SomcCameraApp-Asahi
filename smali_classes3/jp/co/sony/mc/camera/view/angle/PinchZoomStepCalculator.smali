@@ -41,6 +41,16 @@
 # virtual methods
 .method public varargs calculate(Ljp/co/sony/mc/camera/view/angle/VariableIndex;[Ljava/lang/Object;)Ljp/co/sony/mc/camera/view/angle/VariableIndex;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "args"
+        }
+    .end annotation
 
     const/4 p0, 0x0
 

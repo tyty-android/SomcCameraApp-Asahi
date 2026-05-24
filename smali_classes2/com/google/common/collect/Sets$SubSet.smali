@@ -42,6 +42,17 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/ImmutableMap;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "inputSet",
+            "mask"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -52,13 +63,13 @@
         }
     .end annotation
 
-    .line 1426
+    .line 1560
     invoke-direct {p0}, Ljava/util/AbstractSet;-><init>()V
 
-    .line 1427
+    .line 1561
     iput-object p1, p0, Lcom/google/common/collect/Sets$SubSet;->inputSet:Lcom/google/common/collect/ImmutableMap;
 
-    .line 1428
+    .line 1562
     iput p2, p0, Lcom/google/common/collect/Sets$SubSet;->mask:I
 
     return-void
@@ -67,7 +78,7 @@
 .method static synthetic access$100(Lcom/google/common/collect/Sets$SubSet;)Lcom/google/common/collect/ImmutableMap;
     .locals 0
 
-    .line 1422
+    .line 1556
     iget-object p0, p0, Lcom/google/common/collect/Sets$SubSet;->inputSet:Lcom/google/common/collect/ImmutableMap;
 
     return-object p0
@@ -76,7 +87,7 @@
 .method static synthetic access$200(Lcom/google/common/collect/Sets$SubSet;)I
     .locals 0
 
-    .line 1422
+    .line 1556
     iget p0, p0, Lcom/google/common/collect/Sets$SubSet;->mask:I
 
     return p0
@@ -87,11 +98,19 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 1461
+    .line 1595
     iget-object v0, p0, Lcom/google/common/collect/Sets$SubSet;->inputSet:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {v0, p1}, Lcom/google/common/collect/ImmutableMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -102,7 +121,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 1462
+    .line 1596
     iget p0, p0, Lcom/google/common/collect/Sets$SubSet;->mask:I
 
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
@@ -136,7 +155,7 @@
         }
     .end annotation
 
-    .line 1433
+    .line 1567
     new-instance v0, Lcom/google/common/collect/Sets$SubSet$1;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/Sets$SubSet$1;-><init>(Lcom/google/common/collect/Sets$SubSet;)V
@@ -147,7 +166,7 @@
 .method public size()I
     .locals 0
 
-    .line 1456
+    .line 1590
     iget p0, p0, Lcom/google/common/collect/Sets$SubSet;->mask:I
 
     invoke-static {p0}, Ljava/lang/Integer;->bitCount(I)I

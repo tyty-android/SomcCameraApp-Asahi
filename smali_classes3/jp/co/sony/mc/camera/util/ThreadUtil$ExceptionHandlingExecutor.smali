@@ -17,6 +17,16 @@
 # direct methods
 .method public constructor <init>(ILjava/util/concurrent/ThreadFactory;)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "nThreads",
+            "threadFactory"
+        }
+    .end annotation
 
     .line 174
     sget-object v5, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
@@ -44,6 +54,16 @@
 # virtual methods
 .method protected afterExecute(Ljava/lang/Runnable;Ljava/lang/Throwable;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "r",
+            "t"
+        }
+    .end annotation
 
     .line 192
     invoke-super {p0, p1, p2}, Ljava/util/concurrent/ThreadPoolExecutor;->afterExecute(Ljava/lang/Runnable;Ljava/lang/Throwable;)V
@@ -176,6 +196,14 @@
 
 .method public execute(Ljava/lang/Runnable;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "command"
+        }
+    .end annotation
 
     .line 182
     instance-of v0, p1, Ljava/util/concurrent/Future;

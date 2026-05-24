@@ -23,6 +23,16 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/Object;Landroid/os/Handler;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "obj",
+            "handler"
+        }
+    .end annotation
 
     .line 48
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

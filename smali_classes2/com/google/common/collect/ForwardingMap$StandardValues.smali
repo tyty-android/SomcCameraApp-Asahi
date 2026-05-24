@@ -21,11 +21,26 @@
 .end annotation
 
 
+# instance fields
+.field final synthetic this$0:Lcom/google/common/collect/ForwardingMap;
+
+
 # direct methods
 .method public constructor <init>(Lcom/google/common/collect/ForwardingMap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 227
+    .line 228
+    iput-object p1, p0, Lcom/google/common/collect/ForwardingMap$StandardValues;->this$0:Lcom/google/common/collect/ForwardingMap;
+
+    .line 229
     invoke-direct {p0, p1}, Lcom/google/common/collect/Maps$Values;-><init>(Ljava/util/Map;)V
 
     return-void

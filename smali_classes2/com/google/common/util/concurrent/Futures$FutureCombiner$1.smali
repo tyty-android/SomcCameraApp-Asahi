@@ -27,15 +27,35 @@
 
 
 # instance fields
+.field final synthetic this$0:Lcom/google/common/util/concurrent/Futures$FutureCombiner;
+
 .field final synthetic val$combiner:Ljava/lang/Runnable;
 
 
 # direct methods
 .method constructor <init>(Lcom/google/common/util/concurrent/Futures$FutureCombiner;Ljava/lang/Runnable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$combiner"
+        }
+    .end annotation
 
-    .line 702
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .line 773
     iput-object p2, p0, Lcom/google/common/util/concurrent/Futures$FutureCombiner$1;->val$combiner:Ljava/lang/Runnable;
+
+    iput-object p1, p0, Lcom/google/common/util/concurrent/Futures$FutureCombiner$1;->this$0:Lcom/google/common/util/concurrent/Futures$FutureCombiner;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -52,7 +72,10 @@
         }
     .end annotation
 
-    .line 702
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 773
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/Futures$FutureCombiner$1;->call()Ljava/lang/Void;
 
     move-result-object p0
@@ -68,7 +91,10 @@
         }
     .end annotation
 
-    .line 705
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 777
     iget-object p0, p0, Lcom/google/common/util/concurrent/Futures$FutureCombiner$1;->val$combiner:Ljava/lang/Runnable;
 
     invoke-interface {p0}, Ljava/lang/Runnable;->run()V

@@ -30,7 +30,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1266
+    .line 1370
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,7 +46,7 @@
         }
     .end annotation
 
-    .line 1266
+    .line 1370
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/AbstractFuture$UnsafeAtomicHelper$1;->run()Lsun/misc/Unsafe;
 
     move-result-object p0
@@ -62,10 +62,10 @@
         }
     .end annotation
 
-    .line 1269
+    .line 1373
     const-class p0, Lsun/misc/Unsafe;
 
-    .line 1270
+    .line 1374
     invoke-virtual {p0}, Ljava/lang/Class;->getDeclaredFields()[Ljava/lang/reflect/Field;
 
     move-result-object v0
@@ -81,24 +81,24 @@
 
     const/4 v4, 0x1
 
-    .line 1271
+    .line 1375
     invoke-virtual {v3, v4}, Ljava/lang/reflect/Field;->setAccessible(Z)V
 
     const/4 v4, 0x0
 
-    .line 1272
+    .line 1376
     invoke-virtual {v3, v4}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 1273
+    .line 1377
     invoke-virtual {p0, v3}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
 
     move-result v4
 
     if-eqz v4, :cond_0
 
-    .line 1274
+    .line 1378
     invoke-virtual {p0, v3}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -112,7 +112,7 @@
 
     goto :goto_0
 
-    .line 1277
+    .line 1381
     :cond_1
     new-instance p0, Ljava/lang/NoSuchFieldError;
 

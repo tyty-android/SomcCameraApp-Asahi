@@ -40,7 +40,7 @@
 .method private static synthetic $values()[Lcom/google/common/io/Files$FilePredicate;
     .locals 2
 
-    .line 890
+    .line 884
     sget-object v0, Lcom/google/common/io/Files$FilePredicate;->IS_DIRECTORY:Lcom/google/common/io/Files$FilePredicate;
 
     sget-object v1, Lcom/google/common/io/Files$FilePredicate;->IS_FILE:Lcom/google/common/io/Files$FilePredicate;
@@ -55,7 +55,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 891
+    .line 885
     new-instance v0, Lcom/google/common/io/Files$FilePredicate$1;
 
     const-string v1, "IS_DIRECTORY"
@@ -66,7 +66,7 @@
 
     sput-object v0, Lcom/google/common/io/Files$FilePredicate;->IS_DIRECTORY:Lcom/google/common/io/Files$FilePredicate;
 
-    .line 903
+    .line 897
     new-instance v0, Lcom/google/common/io/Files$FilePredicate$2;
 
     const-string v1, "IS_FILE"
@@ -77,7 +77,7 @@
 
     sput-object v0, Lcom/google/common/io/Files$FilePredicate;->IS_FILE:Lcom/google/common/io/Files$FilePredicate;
 
-    .line 890
+    .line 884
     invoke-static {}, Lcom/google/common/io/Files$FilePredicate;->$values()[Lcom/google/common/io/Files$FilePredicate;
 
     move-result-object v0
@@ -89,13 +89,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 890
+    .line 884
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -104,7 +115,7 @@
 .method synthetic constructor <init>(Ljava/lang/String;ILcom/google/common/io/Files$1;)V
     .locals 0
 
-    .line 890
+    .line 884
     invoke-direct {p0, p1, p2}, Lcom/google/common/io/Files$FilePredicate;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -112,8 +123,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/io/Files$FilePredicate;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 890
+    .line 884
     const-class v0, Lcom/google/common/io/Files$FilePredicate;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -128,7 +147,7 @@
 .method public static values()[Lcom/google/common/io/Files$FilePredicate;
     .locals 1
 
-    .line 890
+    .line 884
     sget-object v0, Lcom/google/common/io/Files$FilePredicate;->$VALUES:[Lcom/google/common/io/Files$FilePredicate;
 
     invoke-virtual {v0}, [Lcom/google/common/io/Files$FilePredicate;->clone()Ljava/lang/Object;

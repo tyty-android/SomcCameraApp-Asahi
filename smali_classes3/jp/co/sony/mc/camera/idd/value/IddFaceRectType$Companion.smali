@@ -48,7 +48,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 94
+    .line 153
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -71,7 +71,7 @@
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 95
+    .line 154
     sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddFaceRectType$Companion$WhenMappings;->$EnumSwitchMapping$0:[I
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;->ordinal()I
@@ -96,12 +96,12 @@
 
     if-ne p0, p1, :cond_0
 
-    .line 99
+    .line 158
     sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddFaceRectType;->ANIMAL_BODY:Ljp/co/sony/mc/camera/idd/value/IddFaceRectType;
 
     goto :goto_0
 
-    .line 95
+    .line 154
     :cond_0
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
@@ -109,19 +109,19 @@
 
     throw p0
 
-    .line 98
+    .line 157
     :cond_1
     sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddFaceRectType;->ANIMAL_FACE:Ljp/co/sony/mc/camera/idd/value/IddFaceRectType;
 
     goto :goto_0
 
-    .line 97
+    .line 156
     :cond_2
     sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddFaceRectType;->HUMAN_BODY:Ljp/co/sony/mc/camera/idd/value/IddFaceRectType;
 
     goto :goto_0
 
-    .line 96
+    .line 155
     :cond_3
     sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddFaceRectType;->HUMAN_FACE:Ljp/co/sony/mc/camera/idd/value/IddFaceRectType;
 

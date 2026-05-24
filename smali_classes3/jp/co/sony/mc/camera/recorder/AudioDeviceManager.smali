@@ -122,7 +122,7 @@
 
     sput v0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->$stable:I
 
-    .line 27
+    .line 26
     new-instance v0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;-><init>()V
@@ -135,27 +135,27 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 24
+    .line 23
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 31
+    .line 30
     const-string v0, "back"
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->REAR_MIC_ADDRESS:Ljava/lang/String;
 
-    .line 32
+    .line 31
     const-string/jumbo v0, "top"
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->TOP_MIC_ADDRESS:Ljava/lang/String;
 
-    .line 36
+    .line 35
     new-instance v0, Ljava/util/concurrent/CopyOnWriteArrayList;
 
     invoke-direct {v0}, Ljava/util/concurrent/CopyOnWriteArrayList;-><init>()V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->audioResourceChangedListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
 
-    .line 38
+    .line 37
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -164,7 +164,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->audioDeviceInfos:Ljava/util/Map;
 
-    .line 151
+    .line 150
     new-instance v0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$audioDeviceCallback$1;
 
     invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$audioDeviceCallback$1;-><init>(Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;)V
@@ -179,7 +179,7 @@
 .method public static final synthetic access$getInstance$cp()Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;
     .locals 1
 
-    .line 24
+    .line 23
     sget-object v0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->instance:Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;
 
     return-object v0
@@ -200,14 +200,14 @@
 .method private final isRearMic(Landroid/media/AudioDeviceInfo;)Z
     .locals 2
 
-    .line 125
+    .line 124
     invoke-static {}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isRearMicSupported()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 126
+    .line 125
     invoke-virtual {p1}, Landroid/media/AudioDeviceInfo;->getType()I
 
     move-result v0
@@ -216,7 +216,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 127
+    .line 126
     invoke-virtual {p1}, Landroid/media/AudioDeviceInfo;->getAddress()Ljava/lang/String;
 
     move-result-object p1
@@ -243,14 +243,14 @@
 .method private final isTopMic(Landroid/media/AudioDeviceInfo;)Z
     .locals 2
 
-    .line 137
+    .line 136
     invoke-static {}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isTopMicSupported()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 138
+    .line 137
     invoke-virtual {p1}, Landroid/media/AudioDeviceInfo;->getType()I
 
     move-result v0
@@ -259,7 +259,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 139
+    .line 138
     invoke-virtual {p1}, Landroid/media/AudioDeviceInfo;->getAddress()Ljava/lang/String;
 
     move-result-object p1
@@ -288,7 +288,7 @@
 .method public final deinit()V
     .locals 2
 
-    .line 64
+    .line 63
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->audioManager:Landroid/media/AudioManager;
 
     if-eqz v0, :cond_0
@@ -300,10 +300,10 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 65
+    .line 64
     iput-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->audioManager:Landroid/media/AudioManager;
 
-    .line 66
+    .line 65
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->audioDeviceInfos:Ljava/util/Map;
 
     invoke-interface {p0}, Ljava/util/Map;->clear()V
@@ -316,14 +316,14 @@
 
     if-eqz p1, :cond_0
 
-    .line 212
+    .line 209
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->isExternalMicConnected()Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 213
+    .line 210
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->audioDeviceInfos:Ljava/util/Map;
 
     sget-object p1, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;->EXTERNAL_MIC:Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;
@@ -336,7 +336,7 @@
 
     return-object p0
 
-    .line 215
+    .line 212
     :cond_0
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
@@ -356,12 +356,12 @@
 
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/Mic;
 
-    .line 216
+    .line 213
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->LR:Ljp/co/sony/mc/camera/configuration/parameters/Mic;
 
     if-ne p1, v0, :cond_1
 
-    .line 217
+    .line 214
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->audioDeviceInfos:Ljava/util/Map;
 
     sget-object p1, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;->LR:Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;
@@ -374,13 +374,13 @@
 
     return-object p0
 
-    .line 218
+    .line 215
     :cond_1
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->REAR:Ljp/co/sony/mc/camera/configuration/parameters/Mic;
 
     if-ne p1, v0, :cond_2
 
-    .line 219
+    .line 216
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->audioDeviceInfos:Ljava/util/Map;
 
     sget-object p1, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;->REAR:Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;
@@ -393,13 +393,13 @@
 
     return-object p0
 
-    .line 220
+    .line 217
     :cond_2
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->TOP:Ljp/co/sony/mc/camera/configuration/parameters/Mic;
 
     if-ne p1, v0, :cond_3
 
-    .line 221
+    .line 218
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->audioDeviceInfos:Ljava/util/Map;
 
     sget-object p1, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;->TOP:Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;
@@ -421,20 +421,20 @@
 .method public final init()V
     .locals 3
 
-    .line 51
+    .line 50
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->audioManager:Landroid/media/AudioManager;
 
     if-nez v0, :cond_0
 
-    .line 52
+    .line 51
     invoke-static {}, Ljp/co/sony/mc/camera/CameraApplication;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    .line 53
+    .line 52
     const-string v1, "audio"
 
-    .line 52
+    .line 51
     invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -447,7 +447,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->audioManager:Landroid/media/AudioManager;
 
-    .line 56
+    .line 55
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->audioManager:Landroid/media/AudioManager;
 
@@ -459,7 +459,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/media/AudioManager;->registerAudioDeviceCallback(Landroid/media/AudioDeviceCallback;Landroid/os/Handler;)V
 
-    .line 57
+    .line 56
     :cond_1
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->updateAudioDeviceInfo()Z
 
@@ -473,7 +473,7 @@
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 97
+    .line 96
     invoke-virtual {p1}, Landroid/media/AudioDeviceInfo;->getType()I
 
     move-result p0
@@ -516,7 +516,7 @@
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 81
+    .line 80
     invoke-virtual {p1}, Landroid/media/AudioDeviceInfo;->getType()I
 
     move-result p0
@@ -547,7 +547,7 @@
 .method public final isExternalMicConnected()Z
     .locals 1
 
-    .line 148
+    .line 147
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->audioDeviceInfos:Ljava/util/Map;
 
     sget-object v0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;->EXTERNAL_MIC:Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;
@@ -566,7 +566,7 @@
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 115
+    .line 114
     invoke-virtual {p1}, Landroid/media/AudioDeviceInfo;->getType()I
 
     move-result p0
@@ -593,12 +593,12 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 232
+    .line 229
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->audioResourceChangedListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/concurrent/CopyOnWriteArrayList;->addIfAbsent(Ljava/lang/Object;)Z
 
-    .line 234
+    .line 231
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->audioDeviceInfos:Ljava/util/Map;
 
     invoke-interface {p0}, Ljava/util/Map;->isEmpty()Z
@@ -609,7 +609,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 235
+    .line 232
     invoke-interface {p1}, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioResourceChangedListener;->onAudioResourceChanged()V
 
     :cond_0
@@ -623,7 +623,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 243
+    .line 240
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->audioResourceChangedListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
 
     invoke-virtual {p0, p1}, Ljava/util/concurrent/CopyOnWriteArrayList;->remove(Ljava/lang/Object;)Z
@@ -634,19 +634,19 @@
 .method public final updateAudioDeviceInfo()Z
     .locals 9
 
-    .line 168
+    .line 167
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->audioDeviceInfos:Ljava/util/Map;
 
     invoke-static {v0}, Lkotlin/collections/MapsKt;->toMap(Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object v0
 
-    .line 169
+    .line 168
     iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->audioDeviceInfos:Ljava/util/Map;
 
     invoke-interface {v1}, Ljava/util/Map;->clear()V
 
-    .line 170
+    .line 169
     iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->audioDeviceInfos:Ljava/util/Map;
 
     sget-object v2, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;->LR:Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;
@@ -655,7 +655,7 @@
 
     invoke-interface {v1, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 172
+    .line 171
     iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->audioManager:Landroid/media/AudioManager;
 
     const/4 v2, 0x1
@@ -673,7 +673,7 @@
     :cond_0
     new-array v1, v3, [Landroid/media/AudioDeviceInfo;
 
-    .line 173
+    .line 172
     :cond_1
     array-length v4, v1
 
@@ -684,14 +684,14 @@
 
     aget-object v6, v1, v5
 
-    .line 174
+    .line 173
     invoke-direct {p0, v6}, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->isRearMic(Landroid/media/AudioDeviceInfo;)Z
 
     move-result v7
 
     if-eqz v7, :cond_2
 
-    .line 175
+    .line 174
     iget-object v7, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->audioDeviceInfos:Ljava/util/Map;
 
     sget-object v8, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;->REAR:Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;
@@ -700,7 +700,7 @@
 
     goto :goto_1
 
-    .line 176
+    .line 175
     :cond_2
     invoke-direct {p0, v6}, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->isTopMic(Landroid/media/AudioDeviceInfo;)Z
 
@@ -708,7 +708,7 @@
 
     if-eqz v7, :cond_3
 
-    .line 177
+    .line 176
     iget-object v7, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->audioDeviceInfos:Ljava/util/Map;
 
     sget-object v8, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;->TOP:Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;
@@ -717,7 +717,7 @@
 
     goto :goto_1
 
-    .line 178
+    .line 177
     :cond_3
     invoke-virtual {p0, v6}, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->isExternalMic(Landroid/media/AudioDeviceInfo;)Z
 
@@ -725,7 +725,7 @@
 
     if-eqz v7, :cond_4
 
-    .line 179
+    .line 178
     iget-object v7, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->audioDeviceInfos:Ljava/util/Map;
 
     sget-object v8, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;->EXTERNAL_MIC:Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;
@@ -738,7 +738,7 @@
 
     goto :goto_0
 
-    .line 182
+    .line 181
     :cond_5
     iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->audioDeviceInfos:Ljava/util/Map;
 
@@ -748,7 +748,7 @@
 
     move-result v1
 
-    .line 183
+    .line 182
     sget-object v4, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;->EXTERNAL_MIC:Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;
 
     invoke-interface {v0, v4}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
@@ -757,7 +757,7 @@
 
     if-eq v1, v0, :cond_9
 
-    .line 184
+    .line 183
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->audioResourceChangedListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
 
     invoke-virtual {v0}, Ljava/util/concurrent/CopyOnWriteArrayList;->iterator()Ljava/util/Iterator;
@@ -781,12 +781,12 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioResourceChangedListener;
 
-    .line 185
+    .line 184
     invoke-interface {v1}, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioResourceChangedListener;->onAudioResourceChanged()V
 
     goto :goto_2
 
-    .line 187
+    .line 186
     :cond_6
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
@@ -802,7 +802,7 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/Mic;
 
-    .line 188
+    .line 187
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->audioDeviceInfos:Ljava/util/Map;
 
     sget-object v1, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;->EXTERNAL_MIC:Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$AudioDeviceType;
@@ -813,7 +813,7 @@
 
     if-eqz p0, :cond_7
 
-    .line 190
+    .line 189
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent$Context;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent$Context;->getSet()Ljp/co/sony/mc/camera/idd/value/IddSetting;
@@ -824,18 +824,7 @@
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/idd/value/IddSetting;->setMic(Ljp/co/sony/mc/camera/idd/value/IddMic;)V
 
-    .line 191
-    sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;->getSet()Ljp/co/sony/mc/camera/idd/value/IddSetting;
-
-    move-result-object p0
-
-    sget-object v0, Ljp/co/sony/mc/camera/idd/value/IddMic;->EXTERNAL:Ljp/co/sony/mc/camera/idd/value/IddMic;
-
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/idd/value/IddSetting;->setMic(Ljp/co/sony/mc/camera/idd/value/IddMic;)V
-
-    .line 192
+    .line 190
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_8
@@ -850,7 +839,7 @@
 
     goto :goto_3
 
-    .line 195
+    .line 193
     :cond_7
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent$Context;
 
@@ -864,26 +853,11 @@
 
     invoke-virtual {v1, v0}, Ljp/co/sony/mc/camera/idd/value/IddMic$Companion;->getMicTypeFromSetting(Ljp/co/sony/mc/camera/configuration/parameters/Mic;)Ljp/co/sony/mc/camera/idd/value/IddMic;
 
-    move-result-object v1
-
-    invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/idd/value/IddSetting;->setMic(Ljp/co/sony/mc/camera/idd/value/IddMic;)V
-
-    .line 196
-    sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;->getSet()Ljp/co/sony/mc/camera/idd/value/IddSetting;
-
-    move-result-object p0
-
-    sget-object v1, Ljp/co/sony/mc/camera/idd/value/IddMic;->Companion:Ljp/co/sony/mc/camera/idd/value/IddMic$Companion;
-
-    invoke-virtual {v1, v0}, Ljp/co/sony/mc/camera/idd/value/IddMic$Companion;->getMicTypeFromSetting(Ljp/co/sony/mc/camera/configuration/parameters/Mic;)Ljp/co/sony/mc/camera/idd/value/IddMic;
-
     move-result-object v0
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/idd/value/IddSetting;->setMic(Ljp/co/sony/mc/camera/idd/value/IddMic;)V
 
-    .line 197
+    .line 194
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_8

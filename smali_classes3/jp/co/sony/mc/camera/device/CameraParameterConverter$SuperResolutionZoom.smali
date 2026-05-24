@@ -26,6 +26,14 @@
 
 .method static getApi2Value(Ljava/lang/String;)Ljava/lang/Integer;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "superResolutionZoomApi1"
+        }
+    .end annotation
 
     .line 732
     invoke-virtual {p0}, Ljava/lang/String;->hashCode()I

@@ -82,9 +82,9 @@
     .line 186
     new-instance v0, Ljp/co/sony/mc/camera/sound/SoundPlayer$Type;
 
-    const-string v1, "selftimer_1sec.m4a"
+    const-string/jumbo v1, "selftimer_1sec.m4a"
 
-    const v2, 0x7f100007
+    const v2, 0x7f100008
 
     const-string v3, "SELF_TIMER_1SEC"
 
@@ -97,9 +97,9 @@
     .line 187
     new-instance v0, Ljp/co/sony/mc/camera/sound/SoundPlayer$Type;
 
-    const-string v1, "selftimer_3sec.m4a"
+    const-string/jumbo v1, "selftimer_3sec.m4a"
 
-    const v2, 0x7f100008
+    const v2, 0x7f100009
 
     const-string v3, "SELF_TIMER_3SEC"
 
@@ -112,9 +112,9 @@
     .line 188
     new-instance v0, Ljp/co/sony/mc/camera/sound/SoundPlayer$Type;
 
-    const-string v1, "selftimer_4sec.m4a"
+    const-string/jumbo v1, "selftimer_4sec.m4a"
 
-    const v2, 0x7f100009
+    const v2, 0x7f10000a
 
     const-string v3, "SELF_TIMER_4SEC"
 
@@ -136,6 +136,21 @@
 
 .method private constructor <init>(Ljava/lang/String;ILjava/lang/String;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "soundName",
+            "resourceId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -307,6 +322,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/sound/SoundPlayer$Type;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 185
     const-class v0, Ljp/co/sony/mc/camera/sound/SoundPlayer$Type;

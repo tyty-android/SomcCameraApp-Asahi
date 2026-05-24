@@ -51,6 +51,14 @@
 # virtual methods
 .method public attach(Ljp/co/sony/mc/camera/view/hint/HintTextView;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
     if-nez p1, :cond_0
 
@@ -87,6 +95,14 @@
 
 .method public canShow(Ljp/co/sony/mc/camera/setting/MessageSettings;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "messageSettings"
+        }
+    .end annotation
 
     const/4 p0, 0x1
 
@@ -95,6 +111,14 @@
 
 .method public detach(Ljp/co/sony/mc/camera/view/hint/HintTextView;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "view"
+        }
+    .end annotation
 
     if-nez p1, :cond_0
 
@@ -119,6 +143,14 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
     .line 186
     instance-of v0, p1, Ljp/co/sony/mc/camera/view/hint/HintTextContent;
@@ -321,6 +353,14 @@
 
 .method public increaseDisplayCount(Ljp/co/sony/mc/camera/setting/MessageSettings;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "messageSettings"
+        }
+    .end annotation
 
     return-void
 .end method

@@ -10,8 +10,8 @@
     }
     k = 0x4
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     pn = "kotlin.collections"

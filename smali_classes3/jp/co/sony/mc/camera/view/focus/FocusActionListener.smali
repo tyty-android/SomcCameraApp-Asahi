@@ -11,6 +11,14 @@
 .end method
 
 .method public abstract onFaceSelected(Landroid/graphics/Point;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "point"
+        }
+    .end annotation
 .end method
 
 .method public abstract onFaceTouched()V
@@ -26,6 +34,14 @@
 .end method
 
 .method public abstract onTouchFocusVisibilityChanged(Z)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isVisible"
+        }
+    .end annotation
 .end method
 
 .method public abstract onTouched()V

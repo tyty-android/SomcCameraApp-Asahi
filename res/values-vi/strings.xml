@@ -82,6 +82,7 @@ Bạn sẽ nhận được thông báo và hộp thoại. Chọn Ghép nối tr�
     <string name="call_notification_incoming_text">Cuộc gọi đến</string>
     <string name="call_notification_ongoing_text">Cuộc gọi đang thực hiện</string>
     <string name="call_notification_screening_text">Đang sàng lọc cuộc gọi đến</string>
+    <string name="camera_string_saving_process_hint_txt">Đang lưu... Vui lòng đợi cho đến khi quá trình lưu hoàn tất.</string>
     <string name="camera_strings_accept_privacy_policy_txt">Trước đây, bạn đã chấp nhận chính sách bảo mật nhưng bạn luôn có thể thay đổi quyết định của mình.</string>
     <string name="camera_strings_accessibility_48_mega_pixel_txt">48 megapixel</string>
     <string name="camera_strings_accessibility_adjust_bokeh_txt">Điều chỉnh Bokeh</string>
@@ -92,6 +93,27 @@ Bạn sẽ nhận được thông báo và hộp thoại. Chọn Ghép nối tr�
     <string name="camera_strings_accessibility_adjust_framing_size_smaller_txt">Giảm kích thước khung hình</string>
     <string name="camera_strings_accessibility_adjust_framing_size_txt">Điều chỉnh kích thước khung</string>
     <string name="camera_strings_accessibility_adjust_shutter_speed_txt">Tốc độ chụp</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_look_menu_txt">Nút Đóng. Đóng trình đơn giao diện.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_menu_txt">Đóng trình đơn tùy chỉnh</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_suggests_txt">Đóng các điều chỉnh được đề xuất</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_menu_txt">Giao diện Tùy chỉnh hiện đang được áp dụng. Mở trình đơn điều chỉnh.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_txt">Giao diện Tùy chỉnh. Áp dụng các cài đặt giao diện, độ sáng và màu sắc đã được đăng ký trong trình đơn tùy chỉnh.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_tab_txt">Tab tùy chỉnh. Áp dụng các cài đặt giao diện, độ sáng và màu sắc đã được đăng ký trong trình đơn tùy chỉnh.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_button_txt">Nút tùy chỉnh. Mở một trình đơn cho phép bạn thực hiện thêm các điều chỉnh khi các điều chỉnh được khuyến nghị đang được áp dụng.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_param_txt">%1$s được đặt thành %2$s</string>
+    <string name="camera_strings_accessibility_ai_suggestion_first_time_txt">Trợ lý máy ảnh AI. Chức năng này đề xuất các cài đặt như màu sắc theo cảnh.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_four_of_some_suggests_txt">Điều chỉnh được đề xuất thứ tư</string>
+    <string name="camera_strings_accessibility_ai_suggestion_look_menu_txt">"%1$s
+Mở trình đơn phong cách sáng tạo"</string>
+    <string name="camera_strings_accessibility_ai_suggestion_new_suggest_txt">Các điều chỉnh được khuyến nghị mới đã được đề xuất</string>
+    <string name="camera_strings_accessibility_ai_suggestion_one_of_some_suggests_txt">Điều chỉnh được đề xuất đầu tiên</string>
+    <string name="camera_strings_accessibility_ai_suggestion_open_suggests_txt">Mở rộng các điều chỉnh được đề xuất</string>
+    <string name="camera_strings_accessibility_ai_suggestion_reset_to_default_txt">Đặt lại về các cài đặt trước khi đề xuất</string>
+    <string name="camera_strings_accessibility_ai_suggestion_selected_suggest_txt">Các điều chỉnh được khuyến nghị này đã được áp dụng</string>
+    <string name="camera_strings_accessibility_ai_suggestion_suggest_lens_txt">Nút ống kính được đề xuất. Khuyến nghị %1$sx.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_surface_of_some_suggests_txt">Các điều chỉnh được đề xuất. Vuốt từ phải sang trái để hiển thị các điều chỉnh được khuyến nghị.</string>
+    <string name="camera_strings_accessibility_ai_suggestion_three_of_some_suggests_txt">Điều chỉnh được đề xuất thứ ba</string>
+    <string name="camera_strings_accessibility_ai_suggestion_two_of_some_suggests_txt">Điều chỉnh được đề xuất thứ hai</string>
     <string name="camera_strings_accessibility_arrow_left_button_txt">Mũi tên sang trái</string>
     <string name="camera_strings_accessibility_arrow_right_button_txt">Mũi tên sang phải</string>
     <string name="camera_strings_accessibility_audio_level_txt">Mức cân bằng âm thanh</string>
@@ -246,6 +268,45 @@ Bạn sẽ nhận được thông báo và hộp thoại. Chọn Ghép nối tr�
     <string name="camera_strings_advanced_setting_geo_tag_title_txt">Lưu vị trí</string>
     <string name="camera_strings_ai_face_restore_description_txt">Bạn có thể chụp ảnh với tính năng làm nét khuôn mặt để làm rõ nét hơn các đường nét trên khuôn mặt</string>
     <string name="camera_strings_ai_face_restore_txt">Làm sắc nét khuôn mặt</string>
+    <string name="camera_strings_ai_suggestion_introduce_hint_text_txt">[Mẹo] Trợ lý máy ảnh AI</string>
+    <string name="camera_strings_aisuggestion_box_name1_txt">Tùy chỉnh</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_message_txt">Đăng ký giao diện, cài đặt độ sáng và màu hiện tại thành Tùy chỉnh.</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_overwrite_message_txt">Một giao diện đã được đăng ký trong Tùy chỉnh. Ghi đè?</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_title_txt">Đăng ký làm giao diện Tùy chỉnh</string>
+    <string name="camera_strings_aisuggestion_box_title_txt">Tùy chỉnh</string>
+    <string name="camera_strings_aisuggestion_custom_params_contrast_txt">T. phản</string>
+    <string name="camera_strings_aisuggestion_custom_params_ev_txt">Độ sáng</string>
+    <string name="camera_strings_aisuggestion_custom_params_register_txt">Đăng ký</string>
+    <string name="camera_strings_aisuggestion_custom_params_saturation_txt">Bão hòa</string>
+    <string name="camera_strings_aisuggestion_custom_params_title_txt">Độ sáng/màu</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbab_txt">Độ ấm</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbgm_txt">Tô màu</string>
+    <string name="camera_strings_aisuggestion_customlook_register_instruction_txt">Bạn có thể sử dụng các giao diện tùy chỉnh đã đăng ký bất cứ lúc nào từ tab giao diện Tùy chỉnh</string>
+    <string name="camera_strings_aisuggestion_description_txt">"AI tự động nhận dạng cảnh và đề xuất các điều chỉnh tối ưu trong bản xem trước nhỏ ở góc dưới cùng bên phải.
+Nếu bạn chạm vào bản xem trước nhỏ này, các cài đặt sau sẽ được tự động điều chỉnh cho phù hợp với cảnh:
+Giao diện, Phơi sáng, Cân bằng trắng, Độ bão hòa, Độ tương phản, Bokeh
+*Chức năng này chỉ khả dụng ở chế độ Ảnh.
+*Khi bạn bắt đầu quay video bằng cách nhấn và giữ nút chụp, các cài đặt độ bão hòa, độ tương phản và bokeh sẽ không được áp dụng."</string>
+    <string name="camera_strings_aisuggestion_guide_description1_txt">Các điều chỉnh được đề xuất dựa trên cảnh do AI xác định sẽ hiển thị trong bản xem trước nhỏ ở góc dưới cùng bên phải (góc trên cùng bên phải khi giữ theo chiều ngang). Bạn có thể áp dụng tất cả các điều chỉnh này cùng một lúc bằng cách chạm vào bản xem trước nhỏ.</string>
+    <string name="camera_strings_aisuggestion_guide_description2_txt">Tùy thuộc vào cảnh, một cài đặt ống kính cụ thể cũng có thể được đề xuất. Trong trường hợp này, bạn có thể thay đổi sang cài đặt ống kính được đề xuất tùy theo sở thích của mình.</string>
+    <string name="camera_strings_aisuggestion_guide_description3_txt">"Bằng cách vuốt sang trái trên bản xem trước nhỏ ở góc dưới cùng bên phải (góc trên cùng bên phải khi giữ theo chiều ngang), bạn có thể hiển thị các đề xuất điều chỉnh thay thế.
+Đề xuất bạn chọn sẽ được lưu làm điều chỉnh ưa thích của bạn và sẽ xuất hiện trong các đề xuất vào lần tiếp theo khi bạn chụp ở một cảnh tương tự."</string>
+    <string name="camera_strings_aisuggestion_guide_description4_txt">Bạn có thể chạm vào nút [>] để ẩn các đề xuất khi không cần thiết. Khi nhận dạng được một cảnh mới, nút [&lt;] sẽ sáng lên để cho bạn biết rằng có các đề xuất điều chỉnh mới. Để xem lại các đề xuất, hãy chạm vào nút [&lt;].</string>
+    <string name="camera_strings_aisuggestion_guide_description5_txt">Nếu bạn chạm vào nút điều chỉnh sau khi chọn các điều chỉnh được đề xuất, bạn có thể điều chỉnh thêm các cài đặt như độ sáng và màu sắc. Các điều chỉnh của bạn sẽ được lưu vào thiết bị và được áp dụng cho các điều chỉnh được đề xuất vào lần tiếp theo khi phát hiện một cảnh tương tự.</string>
+    <string name="camera_strings_aisuggestion_guide_description6_txt">Các điều chỉnh được đề xuất và các điều chỉnh do bạn thực hiện có thể được đăng ký, cho phép bạn tải các điều chỉnh đó bất cứ lúc nào để chụp ảnh với cùng cài đặt. Chạm vào [Đăng ký] để thêm giao diện Tùy chỉnh vào danh sách các giao diện khả dụng.</string>
+    <string name="camera_strings_aisuggestion_guide_entry_txt">Xem cách sử dụng Trợ lý máy ảnh AI</string>
+    <string name="camera_strings_aisuggestion_guide_title_txt">Cách sử dụng Trợ lý máy ảnh AI</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_message_txt">Đặt lại tất cả cài đặt về mặc định bao gồm màu, độ sáng và các điều chỉnh ưa thích của bạn?</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_title_txt">Đặt lại thông số</string>
+    <string name="camera_strings_aisuggestion_params_reset_txt">Đặt lại thông số</string>
+    <string name="camera_strings_aisuggestion_permitted_item_bokeh_txt">Bokeh</string>
+    <string name="camera_strings_aisuggestion_permitted_item_lens_txt">Ống kính</string>
+    <string name="camera_strings_aisuggestion_permitted_item_title_txt">Bao gồm trong các đề xuất</string>
+    <string name="camera_strings_aisuggestion_recommend_lens_ratio_txt">%1$s được đề xuất</string>
+    <string name="camera_strings_aisuggestion_return_to_default_txt">Hoàn nguyên</string>
+    <string name="camera_strings_aisuggestion_simple_video_instruction_txt">Khi quay video bằng cách nhấn và giữ, các cài đặt độ bão hòa, độ tương phản và bokeh có thể hiển thị khác nhau.</string>
+    <string name="camera_strings_aisuggestion_txt">Trợ lý máy ảnh AI</string>
+    <string name="camera_strings_aisuggestion_use_aissuggestion_txt">Sử dụng Trợ lý máy ảnh AI</string>
     <string name="camera_strings_anonymous_analytics_txt">Phân tích ẩn danh</string>
     <string name="camera_strings_application_name">Camera</string>
     <string name="camera_strings_application_name_google_lens_txt">Google Lens</string>
@@ -421,6 +482,7 @@ Bảo mật:
     <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Không thể kết nối với Wi-Fi</string>
     <string name="camera_strings_dialog_user_data_collection_txt">Nếu bạn đồng ý ở bên dưới, Sony sẽ thu thập &lt;b>&lt;a href=#personal-data>dữ liệu cá nhân&lt;/a>&lt;/b> của bạn để cung cấp hỗ trợ tùy chỉnh và cải thiện các thiết bị và dịch vụ. Sony sẽ xử lý dữ liệu của bạn theo &lt;b>&lt;a href=https://www.sonymobile.com/privacy/>Chính sách quyền riêng tư&lt;/a>&lt;/b> của chúng tôi.</string>
     <string name="camera_strings_dialog_video_hdr_hlg_supported_short_description_txt">Một số thiết bị/dịch vụ có thể không tái tạo được màu sắc và độ sáng nguyên bản của nội dung HDR. Hãy sử dụng những thiết bị/dịch vụ hỗ trợ HDR khi thưởng thức nội dung HDR.</string>
+    <string name="camera_strings_digital_tripod_hint_edge_txt">Bố cục đã thay đổi. Hướng camera về phía chủ thể ban đầu.</string>
     <string name="camera_strings_digital_zoom_type_description_txt">"Chọn cài đặt phóng to thu nhỏ kỹ thuật số.
 
 Phóng to thu nhỏ kỹ thuật số tiêu chuẩn: Phóng to thu nhỏ bằng phương pháp xử lý kỹ thuật số dựa trên dữ liệu cảm biến hình ảnh.
@@ -484,6 +546,7 @@ Phóng to thu nhỏ siêu độ phân giải AI: Phóng to thu nhỏ bằng phư
     <string name="camera_strings_fast_capturing_screen_locked_settings_txt">Để mở cài đặt, hãy mở khóa màn hình.</string>
     <string name="camera_strings_fast_capturing_screen_locked_streaming_txt">Để bắt đầu phát trực tiếp, hãy mở khóa màn hình.</string>
     <string name="camera_strings_fast_capturing_screen_locked_title_txt">Đã khóa màn hình</string>
+    <string name="camera_strings_feature_creative_look_custom_description_txt">Bạn có thể đăng ký giao diện và cài đặt độ sáng/màu.</string>
     <string name="camera_strings_feature_creative_look_description_txt">"Bạn có thể chọn lớp kết thúc của hình ảnh (ảnh chụp hoặc phim) bằng cách chọn \"phong cách\".
 
 Phong cách sáng tạo cung cấp 6 phong cách cài đặt sẵn. Mỗi diện mạo được tối ưu hóa với sự kết hợp khác nhau về tông màu, độ bão hòa, độ tương phản, độ sắc nét, độ sáng và các yếu tố hình ảnh khác, vì vậy bạn có thể thiết lập cách xử lý hình ảnh với sự cân bằng lý tưởng giữa các yếu tố này."</string>
@@ -567,6 +630,7 @@ Hãy nhấn vào đối tượng cần theo dõi."</string>
     <string name="camera_strings_framing_orientation_description_txt">"Bạn có thể chọn cắt đối tượng theo khung ngang hoặc dọc.
 Đặt thành [Tự động] để làm cho hướng cắt giống với hướng thiết bị."</string>
     <string name="camera_strings_framing_select_subject_to_track_txt">Hãy nhấn vào chủ thể mà bạn muốn khóa vị trí</string>
+    <string name="camera_strings_framing_setting_guide_title_txt">Giới thiệu về Khung hình tự động</string>
     <string name="camera_strings_framing_setting_orientation_landscape_txt">Ngang</string>
     <string name="camera_strings_framing_setting_orientation_portrait_txt">Dọc</string>
     <string name="camera_strings_framing_setting_orientation_title_txt">Hướng khung</string>
@@ -574,6 +638,7 @@ Hãy nhấn vào đối tượng cần theo dõi."</string>
 Các bản ghi đã cắt sẽ được lưu với độ phân giải Full HD. Các bản ghi chưa cắt sẽ được lưu dưới dạng 4K."</string>
     <string name="camera_strings_framing_setting_save_original_video_off_txt">Ghi hình toàn màn hình: Tắt</string>
     <string name="camera_strings_framing_setting_save_original_video_title_txt">Ghi hình toàn màn hình</string>
+    <string name="camera_strings_framing_setting_snapshot_description_txt">Cho dù chế độ [Ghi hình toàn màn hình] được bật hay tắt, ảnh chụp nhanh trong khi quay video sẽ được lưu ở chế độ toàn màn hình.</string>
     <string name="camera_strings_geotagging_description_txt">Lưu ảnh chụp và video của bạn với vị trí bạn đã chụp/quay</string>
     <string name="camera_strings_geotagging_txt">Lưu vị trí</string>
     <string name="camera_strings_gimbal_mode_tab_label">Công nghệ quay phim AI</string>
@@ -592,6 +657,7 @@ Tính năng này giúp bạn quay video ổn định ngay cả trong những tì
     <string name="camera_strings_gimbal_setting_assist_method_locking_hint_txt">Khóa vị trí đối tượng: T.công</string>
     <string name="camera_strings_gimbal_setting_assist_method_locking_txt">T.công</string>
     <string name="camera_strings_gimbal_setting_assist_method_title_txt">Khóa vị trí đối tượng</string>
+    <string name="camera_strings_gimbal_setting_guide_title_txt">Giới thiệu về Công nghệ quay phim AI</string>
     <string name="camera_strings_gridline_description_txt">Đặt có hiển thị đường lưới để hỗ trợ bạn trong việc bố cục hình ảnh hay không</string>
     <string name="camera_strings_gridline_txt">Đường lưới</string>
     <string name="camera_strings_hand_shutter_description_updated_txt">Bạn có thể bắt đầu đếm ngược cho tính năng chụp hẹn giờ bằng cách hướng lòng bàn tay về phía camera trước. Để giúp camera dễ dàng phát hiện bàn tay của bạn, hãy duỗi thẳng các ngón tay lên trên.</string>
@@ -727,6 +793,7 @@ Với Chuẩn, mỗi khung trang trí sẽ được xử lý riêng biệt.
     <string name="camera_strings_notification_channel_title_saving_process_txt">Quá trình lưu</string>
     <string name="camera_strings_notification_text_saving_in_progress_txt">Vui lòng đợi cho đến khi lưu xong</string>
     <string name="camera_strings_notification_title_saving_in_progress_txt">Đang lưu</string>
+    <string name="camera_strings_notify_saving_process_cannot_launch_app_by_hw_shutter_txt">Việc nhấn nút chụp có thể không khởi chạy camera trong khi đang lưu</string>
     <string name="camera_strings_ok_txt">OK</string>
     <string name="camera_strings_peaking_color_blue_txt">Lam</string>
     <string name="camera_strings_peaking_color_red_txt">Màu đỏ</string>
@@ -735,6 +802,7 @@ Với Chuẩn, mỗi khung trang trí sẽ được xử lý riêng biệt.
     <string name="camera_strings_peaking_color_yellow_txt">Vàng</string>
     <string name="camera_strings_peaking_txt">Đỉnh</string>
     <string name="camera_strings_personal_data_txt">Dữ liệu cá nhân</string>
+    <string name="camera_strings_photopro_setting_guide_title_txt">Giới thiệu về Ảnh Pro</string>
     <string name="camera_strings_privacy_policy_txt">Chính sách bảo mật</string>
     <string name="camera_strings_pro_tips_computational_photo_description_txt">"Ngay cả ở chế độ P, camera vẫn tự động nhận dạng cảnh chụp và chụp những bức ảnh tự động đẹp mắt bằng cách giảm mờ, nhiễu, phơi sáng quá mức và thiếu sáng.
 Nếu không sử dụng tính năng này, bạn có thể tắt bằng nút Fn hoặc trong MENU."</string>
@@ -965,6 +1033,7 @@ Nếu bạn tiếp tục sử dụng thẻ SD làm bộ nhớ dữ liệu, hãy 
     <string name="camera_strings_video_stabilization_description_sub_txt">Lưu ý: Việc chọn Chất lượng cao có thể rút ngắn thời lượng quay do nhiệt độ thiết bị tăng.</string>
     <string name="camera_strings_video_stabilization_description_txt">Chiếc Xperia có hệ thống ổn định kết hợp độc đáo có tên gọi là Optical SteadyShot - kết hợp đồng thời cả ổn định hình ảnh quang học và ổn định hình ảnh điện tử. Hệ thống này giúp bạn quay video mượt mà và không bị rung ngay cả khi quay trong khi di chuyển.</string>
     <string name="camera_strings_video_stabilization_high_quality_images_txt">Chất lượng cao</string>
+    <string name="camera_strings_videopro_setting_guide_title_txt">Giới thiệu về Video Pro</string>
     <string name="camera_strings_volume_distortion_correction_description_txt">Sửa lỗi méo khuôn mặt xuất hiện gần cạnh màn hình khi sử dụng ống kính góc siêu rộng. Chế độ này có thể khiến hình nền bị méo hoặc góc nhìn có vẻ bị thu hẹp.</string>
     <string name="camera_strings_volume_distortion_correction_front_description_txt">Sửa lỗi méo khuôn mặt xuất hiện gần cạnh màn hình. Chế độ này có thể khiến hình nền bị méo hoặc góc nhìn có vẻ bị thu hẹp.</string>
     <string name="camera_strings_volume_distortion_correction_txt">Sửa lỗi méo ảnh</string>
@@ -1042,8 +1111,25 @@ Không có kết nối mạng."</string>
     <string name="clear_text_end_icon_content_description">Xóa văn bản</string>
     <string name="close_drawer">Đóng trình đơn điều hướng</string>
     <string name="close_sheet">Đóng trang tính</string>
+    <string name="common_google_play_services_enable_button">Bật</string>
+    <string name="common_google_play_services_enable_text">%1$s sẽ không hoạt động nếu bạn không bật dịch vụ của Google Play.</string>
+    <string name="common_google_play_services_enable_title">Bật dịch vụ của Google Play</string>
+    <string name="common_google_play_services_install_button">Cài đặt</string>
+    <string name="common_google_play_services_install_text">%1$s sẽ không chạy nếu không có dịch vụ của Google Play. Thiết bị của bạn bị thiếu dịch vụ này.</string>
+    <string name="common_google_play_services_install_title">Cài đặt dịch vụ của Google Play</string>
+    <string name="common_google_play_services_notification_channel_name">Phạm vi cung cấp các dịch vụ của Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Lỗi dịch vụ của Google Play</string>
+    <string name="common_google_play_services_unknown_issue">%1$s đang gặp sự cố với các dịch vụ của Google Play. Hãy thử lại.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s sẽ không chạy nếu không có các dịch vụ của Google Play. Thiết bị của bạn không hỗ trợ các dịch vụ này.</string>
+    <string name="common_google_play_services_update_button">Cập nhật</string>
+    <string name="common_google_play_services_update_text">%1$s sẽ không chạy trừ khi bạn cập nhật Dịch vụ của Google Play.</string>
+    <string name="common_google_play_services_update_title">Cập nhật dịch vụ của Google Play</string>
+    <string name="common_google_play_services_updating_text">%1$s sẽ không chạy nếu không có dịch vụ của Google Play. Dịch vụ này hiện đang cập nhật.</string>
+    <string name="common_google_play_services_wear_update_text">Cần phiên bản mới của dịch vụ Google Play. Dịch vụ sẽ sớm tự động cập nhật.</string>
+    <string name="common_open_on_phone">Mở trên điện thoại</string>
+    <string name="common_signin_button_text">Đăng nhập</string>
+    <string name="common_signin_button_text_long">Đăng nhập bằng Google</string>
     <string name="copy">Sao chép</string>
-    <string name="copy_toast_msg">Đã sao chép đường liên kết vào khay nhớ tạm</string>
     <string name="default_error_message">Giá trị nhập không hợp lệ</string>
     <string name="default_popup_window_title">Cửa sổ bật lên</string>
     <string name="dropdown_menu">Trình đơn thả xuống</string>
@@ -1054,9 +1140,6 @@ Không có kết nối mạng."</string>
     <string name="external_display_connected_description_txt">Bạn có thể kiểm tra kính ngắm từ Màn hình Vlog</string>
     <string name="external_display_connected_title_txt">Đã kết nối màn hình Vlog</string>
     <string name="external_display_note_about_external_mic_txt">Lưu ý: Để dùng micrô ngoài, vui lòng kết nối micrô với Màn hình Vlog trước khi quay. Nếu kết nối micrô ngoài sau khi quay, bạn cần kết nối lại Màn hình Vlog.</string>
-    <string name="fallback_menu_item_copy_link">Sao chép đường liên kết</string>
-    <string name="fallback_menu_item_open_in_browser">Mở trong trình duyệt</string>
-    <string name="fallback_menu_item_share_link">Chia sẻ liên kết</string>
     <string name="icon_content_description">Biểu tượng hộp thoại</string>
     <string name="in_progress">Đang thực hiện</string>
     <string name="indeterminate">Đã kiểm tra một phần</string>

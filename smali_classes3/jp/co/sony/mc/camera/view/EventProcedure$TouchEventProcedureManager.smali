@@ -32,6 +32,14 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/view/EventProcedure;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 146
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventProcedureManager;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
@@ -75,6 +83,16 @@
 
 .method private varargs register(Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventProcedure;[Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventSource;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "procedure",
+            "sources"
+        }
+    .end annotation
 
     .line 189
     array-length v0, p2
@@ -103,6 +121,14 @@
 # virtual methods
 .method public find(Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventSource;)Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventProcedure;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "source"
+        }
+    .end annotation
 
     .line 175
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$TouchEventProcedureManager;->mProcedures:Ljava/util/Map;

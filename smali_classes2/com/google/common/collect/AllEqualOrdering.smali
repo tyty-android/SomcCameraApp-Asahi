@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/google/common/collect/Ordering<",
@@ -27,7 +30,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 31
+    .line 33
     new-instance v0, Lcom/google/common/collect/AllEqualOrdering;
 
     invoke-direct {v0}, Lcom/google/common/collect/AllEqualOrdering;-><init>()V
@@ -40,7 +43,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 30
+    .line 32
     invoke-direct {p0}, Lcom/google/common/collect/Ordering;-><init>()V
 
     return-void
@@ -49,7 +52,7 @@
 .method private readResolve()Ljava/lang/Object;
     .locals 0
 
-    .line 55
+    .line 58
     sget-object p0, Lcom/google/common/collect/AllEqualOrdering;->INSTANCE:Lcom/google/common/collect/AllEqualOrdering;
 
     return-object p0
@@ -60,13 +63,23 @@
 .method public compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "left",
+            "right"
+        }
+    .end annotation
 
     const/4 p0, 0x0
 
@@ -75,6 +88,15 @@
 
 .method public immutableSortedCopy(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableList;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "iterable"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -87,7 +109,7 @@
         }
     .end annotation
 
-    .line 45
+    .line 48
     invoke-static {p1}, Lcom/google/common/collect/ImmutableList;->copyOf(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
@@ -112,6 +134,15 @@
 
 .method public sortedCopy(Ljava/lang/Iterable;)Ljava/util/List;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "iterable"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -124,7 +155,7 @@
         }
     .end annotation
 
-    .line 40
+    .line 43
     invoke-static {p1}, Lcom/google/common/collect/Lists;->newArrayList(Ljava/lang/Iterable;)Ljava/util/ArrayList;
 
     move-result-object p0
@@ -135,7 +166,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 60
+    .line 63
     const-string p0, "Ordering.allEqual()"
 
     return-object p0

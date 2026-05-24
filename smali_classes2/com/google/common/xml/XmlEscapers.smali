@@ -3,6 +3,11 @@
 .source "XmlEscapers.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/xml/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # static fields
 .field private static final MAX_ASCII_CONTROL_CHAR:C = '\u001f'
 
@@ -19,7 +24,7 @@
 .method static constructor <clinit>()V
     .locals 7
 
-    .line 107
+    .line 106
     invoke-static {}, Lcom/google/common/escape/Escapers;->builder()Lcom/google/common/escape/Escapers$Builder;
 
     move-result-object v0
@@ -28,10 +33,10 @@
 
     const/4 v2, 0x0
 
-    .line 111
+    .line 110
     invoke-virtual {v0, v2, v1}, Lcom/google/common/escape/Escapers$Builder;->setSafeRange(CC)Lcom/google/common/escape/Escapers$Builder;
 
-    .line 113
+    .line 112
     const-string v1, "\ufffd"
 
     invoke-virtual {v0, v1}, Lcom/google/common/escape/Escapers$Builder;->setUnsafeReplacement(Ljava/lang/String;)Lcom/google/common/escape/Escapers$Builder;
@@ -53,7 +58,7 @@
 
     if-eq v2, v4, :cond_0
 
-    .line 126
+    .line 125
     invoke-virtual {v0, v2, v1}, Lcom/google/common/escape/Escapers$Builder;->addEscape(CLjava/lang/String;)Lcom/google/common/escape/Escapers$Builder;
 
     :cond_0
@@ -66,26 +71,26 @@
     :cond_1
     const/16 v1, 0x26
 
-    .line 132
+    .line 131
     const-string v2, "&amp;"
 
     invoke-virtual {v0, v1, v2}, Lcom/google/common/escape/Escapers$Builder;->addEscape(CLjava/lang/String;)Lcom/google/common/escape/Escapers$Builder;
 
     const/16 v1, 0x3c
 
-    .line 133
+    .line 132
     const-string v2, "&lt;"
 
     invoke-virtual {v0, v1, v2}, Lcom/google/common/escape/Escapers$Builder;->addEscape(CLjava/lang/String;)Lcom/google/common/escape/Escapers$Builder;
 
     const/16 v1, 0x3e
 
-    .line 134
+    .line 133
     const-string v2, "&gt;"
 
     invoke-virtual {v0, v1, v2}, Lcom/google/common/escape/Escapers$Builder;->addEscape(CLjava/lang/String;)Lcom/google/common/escape/Escapers$Builder;
 
-    .line 135
+    .line 134
     invoke-virtual {v0}, Lcom/google/common/escape/Escapers$Builder;->build()Lcom/google/common/escape/Escaper;
 
     move-result-object v1
@@ -94,41 +99,41 @@
 
     const/16 v1, 0x27
 
-    .line 136
+    .line 135
     const-string v2, "&apos;"
 
     invoke-virtual {v0, v1, v2}, Lcom/google/common/escape/Escapers$Builder;->addEscape(CLjava/lang/String;)Lcom/google/common/escape/Escapers$Builder;
 
     const/16 v1, 0x22
 
-    .line 137
+    .line 136
     const-string v2, "&quot;"
 
     invoke-virtual {v0, v1, v2}, Lcom/google/common/escape/Escapers$Builder;->addEscape(CLjava/lang/String;)Lcom/google/common/escape/Escapers$Builder;
 
-    .line 138
+    .line 137
     invoke-virtual {v0}, Lcom/google/common/escape/Escapers$Builder;->build()Lcom/google/common/escape/Escaper;
 
     move-result-object v1
 
     sput-object v1, Lcom/google/common/xml/XmlEscapers;->XML_ESCAPER:Lcom/google/common/escape/Escaper;
 
-    .line 139
+    .line 138
     const-string v1, "&#x9;"
 
     invoke-virtual {v0, v6, v1}, Lcom/google/common/escape/Escapers$Builder;->addEscape(CLjava/lang/String;)Lcom/google/common/escape/Escapers$Builder;
 
-    .line 140
+    .line 139
     const-string v1, "&#xA;"
 
     invoke-virtual {v0, v5, v1}, Lcom/google/common/escape/Escapers$Builder;->addEscape(CLjava/lang/String;)Lcom/google/common/escape/Escapers$Builder;
 
-    .line 141
+    .line 140
     const-string v1, "&#xD;"
 
     invoke-virtual {v0, v4, v1}, Lcom/google/common/escape/Escapers$Builder;->addEscape(CLjava/lang/String;)Lcom/google/common/escape/Escapers$Builder;
 
-    .line 142
+    .line 141
     invoke-virtual {v0}, Lcom/google/common/escape/Escapers$Builder;->build()Lcom/google/common/escape/Escaper;
 
     move-result-object v0
@@ -141,7 +146,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 44
+    .line 43
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -150,7 +155,7 @@
 .method public static xmlAttributeEscaper()Lcom/google/common/escape/Escaper;
     .locals 1
 
-    .line 99
+    .line 98
     sget-object v0, Lcom/google/common/xml/XmlEscapers;->XML_ATTRIBUTE_ESCAPER:Lcom/google/common/escape/Escaper;
 
     return-object v0
@@ -159,7 +164,7 @@
 .method public static xmlContentEscaper()Lcom/google/common/escape/Escaper;
     .locals 1
 
-    .line 75
+    .line 74
     sget-object v0, Lcom/google/common/xml/XmlEscapers;->XML_CONTENT_ESCAPER:Lcom/google/common/escape/Escaper;
 
     return-object v0

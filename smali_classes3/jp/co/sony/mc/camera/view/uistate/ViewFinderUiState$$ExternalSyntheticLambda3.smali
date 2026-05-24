@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements Lkotlin/jvm/functions/Function4;
 
 
 # direct methods
@@ -18,13 +18,27 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
-    check-cast p1, Ljava/lang/Integer;
+    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->$r8$lambda$8iCagaPDfiUTOxsQtA0T7R2pCAA(Ljava/lang/Integer;)Ljava/lang/String;
+    check-cast p2, Ljava/lang/Boolean;
+
+    check-cast p3, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;
+
+    check-cast p4, Ljava/lang/Boolean;
+
+    invoke-virtual {p4}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
+
+    invoke-static {p1, p2, p3, p0}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->$r8$lambda$OO9HAq-tCrk9rR2HN0fe3Jxr8YM(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljava/lang/Boolean;Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;Z)Z
+
+    move-result p0
+
+    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0
 

@@ -11,18 +11,18 @@
     d2 = {
         "Lkotlin/text/FlagEnum;",
         "",
-        "mask",
-        "",
-        "getMask",
-        "()I",
         "value",
+        "",
         "getValue",
+        "()I",
+        "mask",
+        "getMask",
         "kotlin-stdlib"
     }
     k = 0x1
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x30

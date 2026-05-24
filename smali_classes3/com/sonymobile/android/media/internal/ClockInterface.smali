@@ -29,6 +29,14 @@
 .end method
 
 .method public abstract isPausedAt(J)Z
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "presentationTime"
+        }
+    .end annotation
 .end method
 
 .method public abstract isStarted()Z

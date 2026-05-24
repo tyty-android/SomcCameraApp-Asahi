@@ -27,4 +27,12 @@
 .end method
 
 .method public abstract onClick(Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "item"
+        }
+    .end annotation
 .end method

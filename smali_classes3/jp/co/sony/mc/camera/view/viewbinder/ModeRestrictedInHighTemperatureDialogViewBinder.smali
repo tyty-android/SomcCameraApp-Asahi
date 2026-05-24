@@ -694,7 +694,7 @@
 
     if-eqz p1, :cond_0
 
-    const p1, 0x7f0902f9
+    const p1, 0x7f0902fe
 
     .line 55
     invoke-virtual {p0, p1}, Landroid/view/View;->setNextFocusDownId(I)V
@@ -864,7 +864,7 @@
     .line 41
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ModeRestrictedInHighTemperatureDialogViewBinder;->context:Landroid/content/Context;
 
-    const v1, 0x7f1101a0
+    const v1, 0x7f1101dd
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -873,7 +873,7 @@
     .line 43
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ModeRestrictedInHighTemperatureDialogViewBinder;->context:Landroid/content/Context;
 
-    const v2, 0x7f110350
+    const v2, 0x7f110399
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

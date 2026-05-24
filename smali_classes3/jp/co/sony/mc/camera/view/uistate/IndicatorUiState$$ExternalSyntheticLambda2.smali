@@ -28,7 +28,7 @@
 
     check-cast p3, Ljava/lang/Boolean;
 
-    invoke-static {p1, p2, p3}, Ljp/co/sony/mc/camera/view/uistate/IndicatorUiState;->$r8$lambda$gGtdFzRfmTZRj26JWCiRGb4ffIk(Ljava/lang/Boolean;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljava/lang/Boolean;)Z
+    invoke-static {p1, p2, p3}, Ljp/co/sony/mc/camera/view/uistate/IndicatorUiState;->$r8$lambda$ifdO6BS3TkcjIhdvR5_PKVyaBD0(Ljava/lang/Boolean;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljava/lang/Boolean;)Z
 
     move-result p0
 

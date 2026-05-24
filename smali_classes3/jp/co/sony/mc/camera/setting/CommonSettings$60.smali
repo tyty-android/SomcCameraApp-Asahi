@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 795
+    .line 707
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,6 +31,21 @@
 # virtual methods
 .method public setValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljava/util/Map;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "setting",
+            "key",
+            "value",
+            "listenersMap"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -46,13 +61,13 @@
         }
     .end annotation
 
-    .line 799
+    .line 711
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 800
-    check-cast p3, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    .line 712
+    check-cast p3, Ljava/lang/Long;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$msetLastCameraId(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
+    invoke-virtual {p1, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->setAppPauseTime(Ljava/lang/Long;)Z
 
     move-result p0
 

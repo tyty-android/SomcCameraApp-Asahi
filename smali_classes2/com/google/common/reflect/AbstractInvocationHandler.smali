@@ -6,6 +6,11 @@
 .implements Ljava/lang/reflect/InvocationHandler;
 
 
+# annotations
+.annotation runtime Lcom/google/common/reflect/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # static fields
 .field private static final NO_ARGS:[Ljava/lang/Object;
 
@@ -16,7 +21,7 @@
 
     const/4 v0, 0x0
 
-    .line 44
+    .line 46
     new-array v0, v0, [Ljava/lang/Object;
 
     sput-object v0, Lcom/google/common/reflect/AbstractInvocationHandler;->NO_ARGS:[Ljava/lang/Object;
@@ -27,7 +32,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 42
+    .line 44
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -35,6 +40,17 @@
 
 .method private static isProxyOfSameInterfaces(Ljava/lang/Object;Ljava/lang/Class;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "arg",
+            "proxyClass"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -44,14 +60,14 @@
         }
     .end annotation
 
-    .line 136
+    .line 140
     invoke-virtual {p1, p0}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 142
+    .line 146
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -62,7 +78,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 143
+    .line 147
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p0
@@ -100,8 +116,20 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "obj"
+        }
+    .end annotation
 
-    .line 113
+    .line 117
     invoke-super {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -110,17 +138,33 @@
 .end method
 
 .method protected abstract handleInvocation(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "proxy",
+            "method",
+            "args"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Throwable;
         }
+    .end annotation
+
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end method
 
 .method public hashCode()I
     .locals 0
 
-    .line 122
+    .line 126
     invoke-super {p0}, Ljava/lang/Object;->hashCode()I
 
     move-result p0
@@ -131,21 +175,37 @@
 .method public final invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
     .param p3    # [Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "proxy",
+            "method",
+            "args"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Throwable;
         }
     .end annotation
 
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
     if-nez p3, :cond_0
 
-    .line 65
+    .line 68
     sget-object p3, Lcom/google/common/reflect/AbstractInvocationHandler;->NO_ARGS:[Ljava/lang/Object;
 
-    .line 67
+    .line 70
     :cond_0
     array-length v0, p3
 
@@ -163,7 +223,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 68
+    .line 71
     invoke-virtual {p0}, Lcom/google/common/reflect/AbstractInvocationHandler;->hashCode()I
 
     move-result p0
@@ -174,7 +234,7 @@
 
     return-object p0
 
-    .line 70
+    .line 73
     :cond_1
     array-length v0, p3
 
@@ -182,7 +242,7 @@
 
     if-ne v0, v1, :cond_5
 
-    .line 71
+    .line 74
     invoke-virtual {p2}, Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
 
     move-result-object v0
@@ -195,7 +255,7 @@
 
     if-eqz v0, :cond_5
 
-    .line 72
+    .line 75
     invoke-virtual {p2}, Ljava/lang/reflect/Method;->getParameterTypes()[Ljava/lang/Class;
 
     move-result-object v0
@@ -208,12 +268,12 @@
 
     if-ne v0, v3, :cond_5
 
-    .line 73
+    .line 76
     aget-object p2, p3, v2
 
     if-nez p2, :cond_2
 
-    .line 75
+    .line 78
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0
@@ -223,14 +283,14 @@
     :cond_2
     if-ne p1, p2, :cond_3
 
-    .line 78
+    .line 81
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0
 
     return-object p0
 
-    .line 80
+    .line 83
     :cond_3
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -242,7 +302,7 @@
 
     if-eqz p1, :cond_4
 
-    .line 81
+    .line 84
     invoke-static {p2}, Ljava/lang/reflect/Proxy;->getInvocationHandler(Ljava/lang/Object;)Ljava/lang/reflect/InvocationHandler;
 
     move-result-object p1
@@ -258,7 +318,7 @@
     :cond_4
     move v1, v2
 
-    .line 80
+    .line 83
     :goto_0
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -266,7 +326,7 @@
 
     return-object p0
 
-    .line 83
+    .line 86
     :cond_5
     array-length v0, p3
 
@@ -284,14 +344,14 @@
 
     if-eqz v0, :cond_6
 
-    .line 84
+    .line 87
     invoke-virtual {p0}, Lcom/google/common/reflect/AbstractInvocationHandler;->toString()Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 
-    .line 86
+    .line 89
     :cond_6
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/common/reflect/AbstractInvocationHandler;->handleInvocation(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -303,7 +363,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 132
+    .line 136
     invoke-super {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0

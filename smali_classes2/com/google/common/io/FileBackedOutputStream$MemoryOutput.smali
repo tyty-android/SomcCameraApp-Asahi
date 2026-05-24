@@ -18,7 +18,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 71
+    .line 86
     invoke-direct {p0}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
     return-void
@@ -27,7 +27,7 @@
 .method synthetic constructor <init>(Lcom/google/common/io/FileBackedOutputStream$1;)V
     .locals 0
 
-    .line 71
+    .line 86
     invoke-direct {p0}, Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;-><init>()V
 
     return-void
@@ -38,7 +38,7 @@
 .method getBuffer()[B
     .locals 0
 
-    .line 73
+    .line 88
     iget-object p0, p0, Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;->buf:[B
 
     return-object p0
@@ -47,7 +47,7 @@
 .method getCount()I
     .locals 0
 
-    .line 77
+    .line 92
     iget p0, p0, Lcom/google/common/io/FileBackedOutputStream$MemoryOutput;->count:I
 
     return p0

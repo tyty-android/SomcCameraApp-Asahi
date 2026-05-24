@@ -26,13 +26,23 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;Ljp/co/sony/mc/camera/recorder/RecorderParameters;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "parameters"
+        }
+    .end annotation
 
-    .line 350
+    .line 338
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$PrepareTask;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 351
+    .line 339
     iput-object p2, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$PrepareTask;->mParameters:Ljp/co/sony/mc/camera/recorder/RecorderParameters;
 
     return-void
@@ -45,14 +55,14 @@
 
     const-string v0, "Fail to verify state in PrepareTask. state:"
 
-    .line 356
+    .line 344
     iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$PrepareTask;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mStateLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 357
+    .line 345
     :try_start_0
     iget-object v2, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$PrepareTask;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
@@ -78,7 +88,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 358
+    .line 346
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -103,18 +113,18 @@
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->-$$Nest$smtrace(Ljava/lang/String;)V
 
-    .line 359
+    .line 347
     monitor-exit v1
 
     return-void
 
-    .line 361
+    .line 349
     :cond_0
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 362
+    .line 350
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$PrepareTask;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$PrepareTask;->mParameters:Ljp/co/sony/mc/camera/recorder/RecorderParameters;
@@ -125,7 +135,7 @@
 
     if-nez v0, :cond_1
 
-    .line 363
+    .line 351
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$PrepareTask;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->notifyError()V
@@ -136,7 +146,7 @@
     :catchall_0
     move-exception p0
 
-    .line 361
+    .line 349
     :try_start_1
     monitor-exit v1
     :try_end_1

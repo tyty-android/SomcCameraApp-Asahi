@@ -16,4 +16,14 @@
 
 # virtual methods
 .method public abstract onCheckConfirmed(Ljp/co/sony/mc/camera/view/messagedialog/DialogId;Z)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "dialogId",
+            "isChecked"
+        }
+    .end annotation
 .end method

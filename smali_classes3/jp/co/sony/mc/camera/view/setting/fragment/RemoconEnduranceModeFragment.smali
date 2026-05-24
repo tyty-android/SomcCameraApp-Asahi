@@ -227,6 +227,14 @@
 
 .method private showDialog(Ljp/co/sony/mc/camera/view/messagedialog/DialogId;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dialogId"
+        }
+    .end annotation
 
     .line 165
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
@@ -321,8 +329,20 @@
 # virtual methods
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "inflater",
+            "container",
+            "savedInstanceState"
+        }
+    .end annotation
 
-    const p3, 0x7f0c00b4
+    const p3, 0x7f0c00ab
 
     const/4 v0, 0x0
 
@@ -331,7 +351,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f0904a9
+    const p2, 0x7f0904aa
 
     .line 59
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -340,7 +360,7 @@
 
     check-cast p2, Landroid/widget/TextView;
 
-    const p3, 0x7f110044
+    const p3, 0x7f110043
 
     .line 60
     invoke-virtual {p0, p3}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconEnduranceModeFragment;->getString(I)Ljava/lang/String;
@@ -349,7 +369,7 @@
 
     invoke-virtual {p2, p3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const p2, 0x7f090161
+    const p2, 0x7f090167
 
     .line 61
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -384,7 +404,7 @@
 
     move-result-object p3
 
-    const v0, 0x7f11003b
+    const v0, 0x7f11003a
 
     .line 62
     invoke-virtual {p0, v0, p3}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconEnduranceModeFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
@@ -400,7 +420,7 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconEnduranceModeFragment;->mSettings:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
-    const p2, 0x7f0901a2
+    const p2, 0x7f0901a5
 
     .line 68
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -411,7 +431,7 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconEnduranceModeFragment;->mEnduranceMode:Landroid/widget/TextView;
 
-    const p2, 0x7f09047a
+    const p2, 0x7f09047b
 
     .line 70
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -422,7 +442,7 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconEnduranceModeFragment;->mSwitch:Landroid/widget/Switch;
 
-    const p2, 0x7f0900a3
+    const p2, 0x7f0900ab
 
     .line 72
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -440,6 +460,16 @@
 
 .method public onDismiss(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;I)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "what"
+        }
+    .end annotation
 
     .line 131
     sget-object v0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconEnduranceModeFragment$2;->$SwitchMap$jp$co$sony$mc$camera$view$messagedialog$DialogId:[I

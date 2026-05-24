@@ -1,4 +1,4 @@
-.class Lcom/google/common/collect/Synchronized$SynchronizedAsMapValues;
+.class final Lcom/google/common/collect/Synchronized$SynchronizedAsMapValues;
 .super Lcom/google/common/collect/Synchronized$SynchronizedCollection;
 .source "Synchronized.java"
 
@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0xa
+    accessFlags = 0x18
     name = "SynchronizedAsMapValues"
 .end annotation
 
@@ -33,9 +33,20 @@
 .method constructor <init>(Ljava/util/Collection;Ljava/lang/Object;)V
     .locals 1
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "delegate",
+            "mutex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -49,7 +60,7 @@
 
     const/4 v0, 0x0
 
-    .line 1253
+    .line 1303
     invoke-direct {p0, p1, p2, v0}, Lcom/google/common/collect/Synchronized$SynchronizedCollection;-><init>(Ljava/util/Collection;Ljava/lang/Object;Lcom/google/common/collect/Synchronized$1;)V
 
     return-void
@@ -68,7 +79,7 @@
         }
     .end annotation
 
-    .line 1259
+    .line 1309
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedAsMapValues$1;
 
     invoke-super {p0}, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->iterator()Ljava/util/Iterator;

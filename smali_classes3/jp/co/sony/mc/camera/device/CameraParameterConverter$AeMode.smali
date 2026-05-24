@@ -26,6 +26,16 @@
 
 .method static getApi2Value(Ljava/lang/String;Ljava/lang/String;)I
     .locals 12
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "aeModeApi1",
+            "flashModeApi1"
+        }
+    .end annotation
 
     .line 245
     invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
@@ -156,7 +166,7 @@
 
     const-string v10, "iso-prio"
 
-    const-string v11, "semi-auto"
+    const-string/jumbo v11, "semi-auto"
 
     packed-switch p1, :pswitch_data_0
 
@@ -516,6 +526,8 @@
 
     :goto_e
     return v6
+
+    nop
 
     :sswitch_data_0
     .sparse-switch

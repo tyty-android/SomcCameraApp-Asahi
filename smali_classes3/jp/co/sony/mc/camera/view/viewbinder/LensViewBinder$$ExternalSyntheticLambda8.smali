@@ -52,7 +52,7 @@
 
     move-object v5, p2
 
-    invoke-static/range {v0 .. v5}, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;->$r8$lambda$F4NEbuUA8yAi3uh0Du3j1KbqKqM(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Lkotlin/jvm/internal/Ref$BooleanRef;Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Landroid/view/View;Landroid/view/MotionEvent;)Z
+    invoke-static/range {v0 .. v5}, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;->$r8$lambda$Pvqlq9VWsuCIF84f_kQqtBEJeBc(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;Lkotlin/jvm/internal/Ref$BooleanRef;Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;Landroid/view/View;Landroid/view/MotionEvent;)Z
 
     move-result p0
 

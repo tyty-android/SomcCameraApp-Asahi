@@ -35,7 +35,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -45,8 +45,16 @@
 # direct methods
 .method private constructor <init>(Lcom/google/common/reflect/TypeToken;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 755
+    .line 764
     iput-object p1, p0, Lcom/google/common/reflect/TypeToken$ClassSet;->this$0:Lcom/google/common/reflect/TypeToken;
 
     invoke-direct {p0, p1}, Lcom/google/common/reflect/TypeToken$TypeSet;-><init>(Lcom/google/common/reflect/TypeToken;)V
@@ -57,7 +65,7 @@
 .method synthetic constructor <init>(Lcom/google/common/reflect/TypeToken;Lcom/google/common/reflect/TypeToken$1;)V
     .locals 0
 
-    .line 755
+    .line 764
     invoke-direct {p0, p1}, Lcom/google/common/reflect/TypeToken$ClassSet;-><init>(Lcom/google/common/reflect/TypeToken;)V
 
     return-void
@@ -66,7 +74,7 @@
 .method private readResolve()Ljava/lang/Object;
     .locals 0
 
-    .line 796
+    .line 805
     iget-object p0, p0, Lcom/google/common/reflect/TypeToken$ClassSet;->this$0:Lcom/google/common/reflect/TypeToken;
 
     invoke-virtual {p0}, Lcom/google/common/reflect/TypeToken;->getTypes()Lcom/google/common/reflect/TypeToken$TypeSet;
@@ -98,7 +106,7 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 755
+    .line 764
     invoke-virtual {p0}, Lcom/google/common/reflect/TypeToken$ClassSet;->delegate()Ljava/util/Set;
 
     move-result-object p0
@@ -109,7 +117,7 @@
 .method protected bridge synthetic delegate()Ljava/util/Collection;
     .locals 0
 
-    .line 755
+    .line 764
     invoke-virtual {p0}, Lcom/google/common/reflect/TypeToken$ClassSet;->delegate()Ljava/util/Set;
 
     move-result-object p0
@@ -128,15 +136,15 @@
         }
     .end annotation
 
-    .line 761
+    .line 770
     iget-object v0, p0, Lcom/google/common/reflect/TypeToken$ClassSet;->classes:Lcom/google/common/collect/ImmutableSet;
 
     if-nez v0, :cond_0
 
-    .line 764
+    .line 773
     sget-object v0, Lcom/google/common/reflect/TypeToken$TypeCollector;->FOR_GENERIC_TYPE:Lcom/google/common/reflect/TypeToken$TypeCollector;
 
-    .line 766
+    .line 775
     invoke-virtual {v0}, Lcom/google/common/reflect/TypeToken$TypeCollector;->classesOnly()Lcom/google/common/reflect/TypeToken$TypeCollector;
 
     move-result-object v0
@@ -147,19 +155,19 @@
 
     move-result-object v0
 
-    .line 768
+    .line 777
     invoke-static {v0}, Lcom/google/common/collect/FluentIterable;->from(Ljava/lang/Iterable;)Lcom/google/common/collect/FluentIterable;
 
     move-result-object v0
 
     sget-object v1, Lcom/google/common/reflect/TypeToken$TypeFilter;->IGNORE_TYPE_VARIABLE_OR_WILDCARD:Lcom/google/common/reflect/TypeToken$TypeFilter;
 
-    .line 769
+    .line 778
     invoke-virtual {v0, v1}, Lcom/google/common/collect/FluentIterable;->filter(Lcom/google/common/base/Predicate;)Lcom/google/common/collect/FluentIterable;
 
     move-result-object v0
 
-    .line 770
+    .line 779
     invoke-virtual {v0}, Lcom/google/common/collect/FluentIterable;->toSet()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object v0
@@ -180,7 +188,7 @@
         }
     .end annotation
 
-    .line 792
+    .line 801
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     const-string v0, "classes().interfaces() not supported."
@@ -201,10 +209,10 @@
         }
     .end annotation
 
-    .line 785
+    .line 794
     sget-object v0, Lcom/google/common/reflect/TypeToken$TypeCollector;->FOR_RAW_TYPE:Lcom/google/common/reflect/TypeToken$TypeCollector;
 
-    .line 786
+    .line 795
     invoke-virtual {v0}, Lcom/google/common/reflect/TypeToken$TypeCollector;->classesOnly()Lcom/google/common/reflect/TypeToken$TypeCollector;
 
     move-result-object v0
@@ -219,7 +227,7 @@
 
     move-result-object p0
 
-    .line 787
+    .line 796
     invoke-static {p0}, Lcom/google/common/collect/ImmutableSet;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/ImmutableSet;
 
     move-result-object p0

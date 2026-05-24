@@ -26,6 +26,16 @@
 # direct methods
 .method private constructor <init>(Ljava/util/concurrent/CountDownLatch;Ljp/co/sony/mc/camera/util/capability/PlatformCapability$OnPlatformCapabilityPreparedCallback;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "latch",
+            "callback"
+        }
+    .end annotation
 
     .line 276
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

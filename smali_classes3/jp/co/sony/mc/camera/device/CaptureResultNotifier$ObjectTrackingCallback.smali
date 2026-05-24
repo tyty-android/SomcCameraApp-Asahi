@@ -16,4 +16,14 @@
 
 # virtual methods
 .method public abstract onObjectTracked(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ObjectTrackingResult;Z)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "objectTrackingResult",
+            "isAfLocked"
+        }
+    .end annotation
 .end method

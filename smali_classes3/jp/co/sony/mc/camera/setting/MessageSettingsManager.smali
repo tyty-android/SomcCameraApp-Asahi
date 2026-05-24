@@ -15,6 +15,14 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 28
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,6 +48,14 @@
 
 .method private makeKey(Ljp/co/sony/mc/camera/setting/MessageType;)Ljava/lang/String;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "message"
+        }
+    .end annotation
 
     .line 35
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/MessageType;->isPrefix()Z
@@ -99,6 +115,14 @@
 
 .method public getDisplayCount(Ljp/co/sony/mc/camera/setting/MessageType;)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "message"
+        }
+    .end annotation
 
     .line 58
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/setting/MessageSettingsManager;->makeKey(Ljp/co/sony/mc/camera/setting/MessageType;)Ljava/lang/String;
@@ -119,6 +143,14 @@
 
 .method public isNeverShow(Ljp/co/sony/mc/camera/setting/MessageType;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "message"
+        }
+    .end annotation
 
     .line 46
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/setting/MessageSettingsManager;->makeKey(Ljp/co/sony/mc/camera/setting/MessageType;)Ljava/lang/String;
@@ -150,6 +182,16 @@
 
 .method public setDisplayCount(Ljp/co/sony/mc/camera/setting/MessageType;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "message",
+            "count"
+        }
+    .end annotation
 
     .line 64
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/setting/MessageSettingsManager;->makeKey(Ljp/co/sony/mc/camera/setting/MessageType;)Ljava/lang/String;
@@ -168,6 +210,16 @@
 
 .method public setNeverShow(Ljp/co/sony/mc/camera/setting/MessageType;Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "message",
+            "neverShowMessage"
+        }
+    .end annotation
 
     .line 52
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/setting/MessageSettingsManager;->makeKey(Ljp/co/sony/mc/camera/setting/MessageType;)Ljava/lang/String;

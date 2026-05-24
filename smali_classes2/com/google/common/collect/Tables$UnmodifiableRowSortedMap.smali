@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
+    accessFlags = 0x1a
     name = "UnmodifiableRowSortedMap"
 .end annotation
 
@@ -40,6 +40,15 @@
 # direct methods
 .method public constructor <init>(Lcom/google/common/collect/RowSortedTable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "delegate"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -48,7 +57,7 @@
         }
     .end annotation
 
-    .line 560
+    .line 669
     invoke-direct {p0, p1}, Lcom/google/common/collect/Tables$UnmodifiableTable;-><init>(Lcom/google/common/collect/Table;)V
 
     return-void
@@ -66,7 +75,7 @@
         }
     .end annotation
 
-    .line 565
+    .line 674
     invoke-super {p0}, Lcom/google/common/collect/Tables$UnmodifiableTable;->delegate()Lcom/google/common/collect/Table;
 
     move-result-object p0
@@ -79,7 +88,7 @@
 .method protected bridge synthetic delegate()Lcom/google/common/collect/Table;
     .locals 0
 
-    .line 556
+    .line 664
     invoke-virtual {p0}, Lcom/google/common/collect/Tables$UnmodifiableRowSortedMap;->delegate()Lcom/google/common/collect/RowSortedTable;
 
     move-result-object p0
@@ -90,7 +99,7 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 556
+    .line 664
     invoke-virtual {p0}, Lcom/google/common/collect/Tables$UnmodifiableRowSortedMap;->delegate()Lcom/google/common/collect/RowSortedTable;
 
     move-result-object p0
@@ -101,7 +110,7 @@
 .method public bridge synthetic rowKeySet()Ljava/util/Set;
     .locals 0
 
-    .line 556
+    .line 664
     invoke-virtual {p0}, Lcom/google/common/collect/Tables$UnmodifiableRowSortedMap;->rowKeySet()Ljava/util/SortedSet;
 
     move-result-object p0
@@ -119,7 +128,7 @@
         }
     .end annotation
 
-    .line 576
+    .line 685
     invoke-virtual {p0}, Lcom/google/common/collect/Tables$UnmodifiableRowSortedMap;->delegate()Lcom/google/common/collect/RowSortedTable;
 
     move-result-object p0
@@ -138,7 +147,7 @@
 .method public bridge synthetic rowMap()Ljava/util/Map;
     .locals 0
 
-    .line 556
+    .line 664
     invoke-virtual {p0}, Lcom/google/common/collect/Tables$UnmodifiableRowSortedMap;->rowMap()Ljava/util/SortedMap;
 
     move-result-object p0
@@ -158,12 +167,12 @@
         }
     .end annotation
 
-    .line 570
-    invoke-static {}, Lcom/google/common/collect/Tables;->access$000()Lcom/google/common/base/Function;
+    .line 679
+    invoke-static {}, Lcom/google/common/collect/Tables;->access$100()Lcom/google/common/base/Function;
 
     move-result-object v0
 
-    .line 571
+    .line 680
     invoke-virtual {p0}, Lcom/google/common/collect/Tables$UnmodifiableRowSortedMap;->delegate()Lcom/google/common/collect/RowSortedTable;
 
     move-result-object p0

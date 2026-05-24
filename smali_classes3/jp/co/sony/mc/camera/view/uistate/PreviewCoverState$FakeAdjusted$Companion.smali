@@ -42,7 +42,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 784
+    .line 629
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -65,7 +65,7 @@
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 786
+    .line 631
     new-instance p0, Ljp/co/sony/mc/camera/view/uistate/PreviewCoverState$FakeAdjusted;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/PreviewCoverState$FakeInitial;->getCopiedPreview()Landroid/graphics/Bitmap;

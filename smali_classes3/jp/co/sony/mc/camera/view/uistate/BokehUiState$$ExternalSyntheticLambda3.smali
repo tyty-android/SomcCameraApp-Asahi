@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements Lkotlin/jvm/functions/Function2;
 
 
 # direct methods
@@ -18,13 +18,15 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
     check-cast p1, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/BokehUiState;->$r8$lambda$NNM8j69Nv_INhoe9QkkLk5io9ew(Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;)I
+    check-cast p2, Ljava/lang/Integer;
+
+    invoke-static {p1, p2}, Ljp/co/sony/mc/camera/view/uistate/BokehUiState;->$r8$lambda$kUVE3fcKb9v7sa0zHpdBnmKa-vo(Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;Ljava/lang/Integer;)I
 
     move-result p0
 

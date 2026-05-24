@@ -28,15 +28,29 @@
 .method public constructor <init>(Ljava/net/Inet4Address;Ljava/net/Inet4Address;II)V
     .locals 5
     .param p1    # Ljava/net/Inet4Address;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
     .param p2    # Ljava/net/Inet4Address;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "server",
+            "client",
+            "port",
+            "flags"
+        }
+    .end annotation
 
-    .line 666
+    .line 776
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x1
@@ -56,7 +70,7 @@
     :cond_0
     move v3, v2
 
-    .line 667
+    .line 777
     :goto_0
     const-string v4, "port \'%s\' is out of range (0 <= port <= 0xffff)"
 
@@ -71,14 +85,14 @@
     :cond_1
     move v0, v2
 
-    .line 669
+    .line 779
     :goto_1
     const-string v1, "flags \'%s\' is out of range (0 <= flags <= 0xffff)"
 
     invoke-static {v0, v1, p4}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;I)V
 
-    .line 674
-    invoke-static {}, Lcom/google/common/net/InetAddresses;->access$000()Ljava/net/Inet4Address;
+    .line 784
+    invoke-static {}, Lcom/google/common/net/InetAddresses;->access$200()Ljava/net/Inet4Address;
 
     move-result-object v0
 
@@ -90,8 +104,8 @@
 
     iput-object p1, p0, Lcom/google/common/net/InetAddresses$TeredoInfo;->server:Ljava/net/Inet4Address;
 
-    .line 675
-    invoke-static {}, Lcom/google/common/net/InetAddresses;->access$000()Ljava/net/Inet4Address;
+    .line 785
+    invoke-static {}, Lcom/google/common/net/InetAddresses;->access$200()Ljava/net/Inet4Address;
 
     move-result-object p1
 
@@ -103,10 +117,10 @@
 
     iput-object p1, p0, Lcom/google/common/net/InetAddresses$TeredoInfo;->client:Ljava/net/Inet4Address;
 
-    .line 676
+    .line 786
     iput p3, p0, Lcom/google/common/net/InetAddresses$TeredoInfo;->port:I
 
-    .line 677
+    .line 787
     iput p4, p0, Lcom/google/common/net/InetAddresses$TeredoInfo;->flags:I
 
     return-void
@@ -117,7 +131,7 @@
 .method public getClient()Ljava/net/Inet4Address;
     .locals 0
 
-    .line 685
+    .line 795
     iget-object p0, p0, Lcom/google/common/net/InetAddresses$TeredoInfo;->client:Ljava/net/Inet4Address;
 
     return-object p0
@@ -126,7 +140,7 @@
 .method public getFlags()I
     .locals 0
 
-    .line 693
+    .line 803
     iget p0, p0, Lcom/google/common/net/InetAddresses$TeredoInfo;->flags:I
 
     return p0
@@ -135,7 +149,7 @@
 .method public getPort()I
     .locals 0
 
-    .line 689
+    .line 799
     iget p0, p0, Lcom/google/common/net/InetAddresses$TeredoInfo;->port:I
 
     return p0
@@ -144,7 +158,7 @@
 .method public getServer()Ljava/net/Inet4Address;
     .locals 0
 
-    .line 681
+    .line 791
     iget-object p0, p0, Lcom/google/common/net/InetAddresses$TeredoInfo;->server:Ljava/net/Inet4Address;
 
     return-object p0

@@ -60,6 +60,38 @@
 # direct methods
 .method public constructor <init>(JILandroid/location/Location;IILjava/lang/String;Ljava/lang/String;Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;Ljp/co/sony/mc/camera/configuration/parameters/DriveMode$BurstType;Ljava/lang/String;Ljava/lang/String;ZZ)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10,
+            0x10,
+            0x10,
+            0x10,
+            0x10,
+            0x10,
+            0x10,
+            0x10,
+            0x10,
+            0x10,
+            0x10,
+            0x10
+        }
+        names = {
+            "dateTaken_in",
+            "orientation_in",
+            "location_in",
+            "width_in",
+            "height_in",
+            "mimeType_in",
+            "fileExtension_in",
+            "savedFileType_in",
+            "burstType_in",
+            "path",
+            "cropValue_in",
+            "addToMediaStore_in",
+            "takenByFastCapture_in"
+        }
+    .end annotation
 
     move-object v0, p0
 
@@ -161,6 +193,14 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "data"
+        }
+    .end annotation
 
     .line 131
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -280,6 +320,18 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;Ljava/lang/String;J)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "data",
+            "newFilePath",
+            "newDataTaken"
+        }
+    .end annotation
 
     .line 159
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

@@ -1,14 +1,11 @@
 .class Lcom/google/common/reflect/Types$1;
-.super Ljava/lang/Object;
+.super Lcom/google/common/reflect/TypeVisitor;
 .source "Types.java"
-
-# interfaces
-.implements Lcom/google/common/base/Function;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/google/common/reflect/Types;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/google/common/reflect/Types;->getComponentType(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -16,51 +13,145 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lcom/google/common/base/Function<",
-        "Ljava/lang/reflect/Type;",
-        "Ljava/lang/String;",
-        ">;"
-    }
-.end annotation
+
+# instance fields
+.field final synthetic val$result:Ljava/util/concurrent/atomic/AtomicReference;
 
 
 # direct methods
-.method constructor <init>()V
+.method constructor <init>(Ljava/util/concurrent/atomic/AtomicReference;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "val$result"
+        }
+    .end annotation
 
-    .line 58
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 175
+    iput-object p1, p0, Lcom/google/common/reflect/Types$1;->val$result:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-direct {p0}, Lcom/google/common/reflect/TypeVisitor;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public bridge synthetic apply(Ljava/lang/Object;)Ljava/lang/Object;
+.method visitClass(Ljava/lang/Class;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "t"
+        }
+    .end annotation
 
-    .line 58
-    check-cast p1, Ljava/lang/reflect/Type;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Class<",
+            "*>;)V"
+        }
+    .end annotation
 
-    invoke-virtual {p0, p1}, Lcom/google/common/reflect/Types$1;->apply(Ljava/lang/reflect/Type;)Ljava/lang/String;
+    .line 193
+    iget-object p0, p0, Lcom/google/common/reflect/Types$1;->val$result:Ljava/util/concurrent/atomic/AtomicReference;
 
-    move-result-object p0
+    invoke-virtual {p1}, Ljava/lang/Class;->getComponentType()Ljava/lang/Class;
 
-    return-object p0
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
+
+    return-void
 .end method
 
-.method public apply(Ljava/lang/reflect/Type;)Ljava/lang/String;
+.method visitGenericArrayType(Ljava/lang/reflect/GenericArrayType;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "t"
+        }
+    .end annotation
 
-    .line 61
-    sget-object p0, Lcom/google/common/reflect/Types$JavaVersion;->CURRENT:Lcom/google/common/reflect/Types$JavaVersion;
+    .line 188
+    iget-object p0, p0, Lcom/google/common/reflect/Types$1;->val$result:Ljava/util/concurrent/atomic/AtomicReference;
 
-    invoke-virtual {p0, p1}, Lcom/google/common/reflect/Types$JavaVersion;->typeName(Ljava/lang/reflect/Type;)Ljava/lang/String;
+    invoke-interface {p1}, Ljava/lang/reflect/GenericArrayType;->getGenericComponentType()Ljava/lang/reflect/Type;
 
-    move-result-object p0
+    move-result-object p1
 
-    return-object p0
+    invoke-virtual {p0, p1}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method visitTypeVariable(Ljava/lang/reflect/TypeVariable;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "t"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/reflect/TypeVariable<",
+            "*>;)V"
+        }
+    .end annotation
+
+    .line 178
+    iget-object p0, p0, Lcom/google/common/reflect/Types$1;->val$result:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-interface {p1}, Ljava/lang/reflect/TypeVariable;->getBounds()[Ljava/lang/reflect/Type;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lcom/google/common/reflect/Types;->access$100([Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method visitWildcardType(Ljava/lang/reflect/WildcardType;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "t"
+        }
+    .end annotation
+
+    .line 183
+    iget-object p0, p0, Lcom/google/common/reflect/Types$1;->val$result:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-interface {p1}, Ljava/lang/reflect/WildcardType;->getUpperBounds()[Ljava/lang/reflect/Type;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lcom/google/common/reflect/Types;->access$100([Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
+
+    return-void
 .end method

@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1a
+    accessFlags = 0x18
     name = "SynchronizedDeque"
 .end annotation
 
@@ -37,9 +37,20 @@
 .method constructor <init>(Ljava/util/Deque;Ljava/lang/Object;)V
     .locals 0
     .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "delegate",
+            "mutex"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -50,7 +61,7 @@
         }
     .end annotation
 
-    .line 1706
+    .line 1783
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/Synchronized$SynchronizedQueue;-><init>(Ljava/util/Queue;Ljava/lang/Object;)V
 
     return-void
@@ -60,18 +71,27 @@
 # virtual methods
 .method public addFirst(Ljava/lang/Object;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)V"
         }
     .end annotation
 
-    .line 1716
+    .line 1793
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1717
+    .line 1794
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->delegate()Ljava/util/Deque;
 
@@ -79,7 +99,7 @@
 
     invoke-interface {p0, p1}, Ljava/util/Deque;->addFirst(Ljava/lang/Object;)V
 
-    .line 1718
+    .line 1795
     monitor-exit v0
 
     return-void
@@ -96,18 +116,27 @@
 
 .method public addLast(Ljava/lang/Object;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)V"
         }
     .end annotation
 
-    .line 1723
+    .line 1800
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1724
+    .line 1801
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->delegate()Ljava/util/Deque;
 
@@ -115,7 +144,7 @@
 
     invoke-interface {p0, p1}, Ljava/util/Deque;->addLast(Ljava/lang/Object;)V
 
-    .line 1725
+    .line 1802
     monitor-exit v0
 
     return-void
@@ -133,7 +162,7 @@
 .method bridge synthetic delegate()Ljava/lang/Object;
     .locals 0
 
-    .line 1703
+    .line 1779
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->delegate()Ljava/util/Deque;
 
     move-result-object p0
@@ -144,7 +173,7 @@
 .method bridge synthetic delegate()Ljava/util/Collection;
     .locals 0
 
-    .line 1703
+    .line 1779
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->delegate()Ljava/util/Deque;
 
     move-result-object p0
@@ -162,7 +191,7 @@
         }
     .end annotation
 
-    .line 1711
+    .line 1788
     invoke-super {p0}, Lcom/google/common/collect/Synchronized$SynchronizedQueue;->delegate()Ljava/util/Queue;
 
     move-result-object p0
@@ -175,7 +204,7 @@
 .method bridge synthetic delegate()Ljava/util/Queue;
     .locals 0
 
-    .line 1703
+    .line 1779
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->delegate()Ljava/util/Deque;
 
     move-result-object p0
@@ -193,12 +222,12 @@
         }
     .end annotation
 
-    .line 1828
+    .line 1909
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1829
+    .line 1910
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->delegate()Ljava/util/Deque;
 
@@ -215,7 +244,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1830
+    .line 1911
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -231,12 +260,12 @@
         }
     .end annotation
 
-    .line 1772
+    .line 1851
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1773
+    .line 1852
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->delegate()Ljava/util/Deque;
 
@@ -253,7 +282,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1774
+    .line 1853
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -269,12 +298,12 @@
         }
     .end annotation
 
-    .line 1779
+    .line 1858
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1780
+    .line 1859
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->delegate()Ljava/util/Deque;
 
@@ -291,7 +320,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1781
+    .line 1860
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -301,18 +330,27 @@
 
 .method public offerFirst(Ljava/lang/Object;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)Z"
         }
     .end annotation
 
-    .line 1730
+    .line 1807
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1731
+    .line 1808
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->delegate()Ljava/util/Deque;
 
@@ -329,7 +367,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1732
+    .line 1809
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -339,18 +377,27 @@
 
 .method public offerLast(Ljava/lang/Object;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)Z"
         }
     .end annotation
 
-    .line 1737
+    .line 1814
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1738
+    .line 1815
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->delegate()Ljava/util/Deque;
 
@@ -367,7 +414,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1739
+    .line 1816
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -383,12 +430,15 @@
         }
     .end annotation
 
-    .line 1786
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1866
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1787
+    .line 1867
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->delegate()Ljava/util/Deque;
 
@@ -405,7 +455,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1788
+    .line 1868
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -421,12 +471,15 @@
         }
     .end annotation
 
-    .line 1793
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1874
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1794
+    .line 1875
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->delegate()Ljava/util/Deque;
 
@@ -443,7 +496,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1795
+    .line 1876
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -459,12 +512,15 @@
         }
     .end annotation
 
-    .line 1758
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1836
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1759
+    .line 1837
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->delegate()Ljava/util/Deque;
 
@@ -481,7 +537,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1760
+    .line 1838
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -497,12 +553,15 @@
         }
     .end annotation
 
-    .line 1765
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 1844
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1766
+    .line 1845
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->delegate()Ljava/util/Deque;
 
@@ -519,7 +578,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1767
+    .line 1846
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -535,12 +594,12 @@
         }
     .end annotation
 
-    .line 1821
+    .line 1902
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1822
+    .line 1903
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->delegate()Ljava/util/Deque;
 
@@ -557,7 +616,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1823
+    .line 1904
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -567,18 +626,27 @@
 
 .method public push(Ljava/lang/Object;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "e"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;)V"
         }
     .end annotation
 
-    .line 1814
+    .line 1895
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1815
+    .line 1896
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->delegate()Ljava/util/Deque;
 
@@ -586,7 +654,7 @@
 
     invoke-interface {p0, p1}, Ljava/util/Deque;->push(Ljava/lang/Object;)V
 
-    .line 1816
+    .line 1897
     monitor-exit v0
 
     return-void
@@ -609,12 +677,12 @@
         }
     .end annotation
 
-    .line 1744
+    .line 1821
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1745
+    .line 1822
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->delegate()Ljava/util/Deque;
 
@@ -631,7 +699,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1746
+    .line 1823
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -641,13 +709,25 @@
 
 .method public removeFirstOccurrence(Ljava/lang/Object;)Z
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 1800
+    .line 1881
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1801
+    .line 1882
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->delegate()Ljava/util/Deque;
 
@@ -664,7 +744,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1802
+    .line 1883
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -680,12 +760,12 @@
         }
     .end annotation
 
-    .line 1751
+    .line 1828
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1752
+    .line 1829
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->delegate()Ljava/util/Deque;
 
@@ -702,7 +782,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1753
+    .line 1830
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -712,13 +792,25 @@
 
 .method public removeLastOccurrence(Ljava/lang/Object;)Z
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 1807
+    .line 1888
     iget-object v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->mutex:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 1808
+    .line 1889
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/Synchronized$SynchronizedDeque;->delegate()Ljava/util/Deque;
 
@@ -735,7 +827,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1809
+    .line 1890
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

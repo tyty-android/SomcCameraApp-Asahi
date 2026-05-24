@@ -36,25 +36,25 @@
         "R",
         "Lkotlin/reflect/KCallable;",
         "Lkotlin/Function;",
-        "isExternal",
+        "isInline",
         "",
-        "isExternal$annotations",
+        "isInline$annotations",
         "()V",
         "()Z",
-        "isInfix",
-        "isInfix$annotations",
-        "isInline",
-        "isInline$annotations",
+        "isExternal",
+        "isExternal$annotations",
         "isOperator",
         "isOperator$annotations",
+        "isInfix",
+        "isInfix$annotations",
         "isSuspend",
         "isSuspend$annotations",
         "kotlin-stdlib"
     }
     k = 0x1
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x30

@@ -339,7 +339,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f090209
+    const v3, 0x7f090211
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -360,7 +360,7 @@
 .method private final setTextStyle(Z)V
     .locals 1
 
-    const v0, 0x7f090094
+    const v0, 0x7f09009d
 
     .line 217
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
@@ -369,7 +369,7 @@
 
     invoke-virtual {v0, p1}, Landroid/view/View;->setEnabled(Z)V
 
-    const v0, 0x7f090095
+    const v0, 0x7f09009e
 
     .line 218
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
@@ -553,9 +553,9 @@
     .line 201
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->setTextStyle(Z)V
 
-    const p1, 0x7f09008b
+    const p1, 0x7f090094
 
-    const v0, 0x7f09007b
+    const v0, 0x7f090084
 
     .line 202
     filled-new-array {p1, v0}, [I
@@ -580,14 +580,14 @@
 
     :array_0
     .array-data 4
-        0x7f090087
-        0x7f090088
-        0x7f090089
-        0x7f09008a
-        0x7f090077
-        0x7f090078
-        0x7f090079
-        0x7f09007a
+        0x7f090090
+        0x7f090091
+        0x7f090092
+        0x7f090093
+        0x7f090080
+        0x7f090081
+        0x7f090082
+        0x7f090083
     .end array-data
 .end method
 
@@ -616,7 +616,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0c014f
+    const v1, 0x7f0c0144
 
     check-cast p0, Landroid/view/ViewGroup;
 
@@ -640,7 +640,7 @@
     .line 64
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList1:Ljava/util/ArrayList;
 
-    const v1, 0x7f090084
+    const v1, 0x7f09008d
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -651,7 +651,7 @@
     .line 65
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList1:Ljava/util/ArrayList;
 
-    const v1, 0x7f09008c
+    const v1, 0x7f090095
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -662,7 +662,7 @@
     .line 66
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList1:Ljava/util/ArrayList;
 
-    const v1, 0x7f09008d
+    const v1, 0x7f090096
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -673,7 +673,7 @@
     .line 67
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList1:Ljava/util/ArrayList;
 
-    const v1, 0x7f09008e
+    const v1, 0x7f090097
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -684,7 +684,7 @@
     .line 68
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList1:Ljava/util/ArrayList;
 
-    const v1, 0x7f09008f
+    const v1, 0x7f090098
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -695,7 +695,7 @@
     .line 69
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList1:Ljava/util/ArrayList;
 
-    const v1, 0x7f090090
+    const v1, 0x7f090099
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -706,7 +706,7 @@
     .line 70
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList1:Ljava/util/ArrayList;
 
-    const v1, 0x7f090091
+    const v1, 0x7f09009a
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -717,7 +717,7 @@
     .line 71
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList1:Ljava/util/ArrayList;
 
-    const v1, 0x7f090092
+    const v1, 0x7f09009b
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -728,7 +728,7 @@
     .line 72
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList1:Ljava/util/ArrayList;
 
-    const v1, 0x7f090093
+    const v1, 0x7f09009c
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -739,7 +739,7 @@
     .line 73
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList1:Ljava/util/ArrayList;
 
-    const v1, 0x7f090085
+    const v1, 0x7f09008e
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -750,7 +750,7 @@
     .line 74
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList1:Ljava/util/ArrayList;
 
-    const v1, 0x7f090086
+    const v1, 0x7f09008f
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -761,7 +761,7 @@
     .line 75
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList1:Ljava/util/ArrayList;
 
-    const v1, 0x7f090087
+    const v1, 0x7f090090
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -772,7 +772,7 @@
     .line 76
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList1:Ljava/util/ArrayList;
 
-    const v1, 0x7f090088
+    const v1, 0x7f090091
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -783,7 +783,7 @@
     .line 77
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList1:Ljava/util/ArrayList;
 
-    const v1, 0x7f090089
+    const v1, 0x7f090092
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -794,7 +794,7 @@
     .line 78
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList1:Ljava/util/ArrayList;
 
-    const v1, 0x7f09008a
+    const v1, 0x7f090093
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -805,7 +805,7 @@
     .line 79
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList1:Ljava/util/ArrayList;
 
-    const v1, 0x7f09008b
+    const v1, 0x7f090094
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -816,7 +816,7 @@
     .line 80
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList2:Ljava/util/ArrayList;
 
-    const v1, 0x7f090074
+    const v1, 0x7f09007d
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -827,7 +827,7 @@
     .line 81
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList2:Ljava/util/ArrayList;
 
-    const v1, 0x7f09007c
+    const v1, 0x7f090085
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -838,7 +838,7 @@
     .line 82
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList2:Ljava/util/ArrayList;
 
-    const v1, 0x7f09007d
+    const v1, 0x7f090086
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -849,7 +849,7 @@
     .line 83
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList2:Ljava/util/ArrayList;
 
-    const v1, 0x7f09007e
+    const v1, 0x7f090087
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -860,7 +860,7 @@
     .line 84
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList2:Ljava/util/ArrayList;
 
-    const v1, 0x7f09007f
+    const v1, 0x7f090088
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -871,7 +871,7 @@
     .line 85
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList2:Ljava/util/ArrayList;
 
-    const v1, 0x7f090080
+    const v1, 0x7f090089
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -882,7 +882,7 @@
     .line 86
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList2:Ljava/util/ArrayList;
 
-    const v1, 0x7f090081
+    const v1, 0x7f09008a
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -893,7 +893,7 @@
     .line 87
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList2:Ljava/util/ArrayList;
 
-    const v1, 0x7f090082
+    const v1, 0x7f09008b
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -904,7 +904,7 @@
     .line 88
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList2:Ljava/util/ArrayList;
 
-    const v1, 0x7f090083
+    const v1, 0x7f09008c
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -915,7 +915,7 @@
     .line 89
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList2:Ljava/util/ArrayList;
 
-    const v1, 0x7f090075
+    const v1, 0x7f09007e
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -926,7 +926,7 @@
     .line 90
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList2:Ljava/util/ArrayList;
 
-    const v1, 0x7f090076
+    const v1, 0x7f09007f
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -937,7 +937,7 @@
     .line 91
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList2:Ljava/util/ArrayList;
 
-    const v1, 0x7f090077
+    const v1, 0x7f090080
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -948,7 +948,7 @@
     .line 92
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList2:Ljava/util/ArrayList;
 
-    const v1, 0x7f090078
+    const v1, 0x7f090081
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -959,7 +959,7 @@
     .line 93
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList2:Ljava/util/ArrayList;
 
-    const v1, 0x7f090079
+    const v1, 0x7f090082
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -970,7 +970,7 @@
     .line 94
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList2:Ljava/util/ArrayList;
 
-    const v1, 0x7f09007a
+    const v1, 0x7f090083
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -981,7 +981,7 @@
     .line 95
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->levelGaugeList2:Ljava/util/ArrayList;
 
-    const v1, 0x7f09007b
+    const v1, 0x7f090084
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->findViewById(I)Landroid/view/View;
 
@@ -1104,7 +1104,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f090209
+    const v3, 0x7f090211
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

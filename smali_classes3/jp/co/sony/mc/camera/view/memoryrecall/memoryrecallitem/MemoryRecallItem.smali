@@ -385,7 +385,7 @@
 
     if-eqz p0, :cond_0
 
-    const p0, 0x7f1100d7
+    const p0, 0x7f1100eb
 
     invoke-virtual {p1, p0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

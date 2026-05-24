@@ -4,14 +4,17 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/google/common/collect/Collections2$PermutationIterator;,
-        Lcom/google/common/collect/Collections2$PermutationCollection;,
-        Lcom/google/common/collect/Collections2$OrderedPermutationIterator;,
-        Lcom/google/common/collect/Collections2$OrderedPermutationCollection;,
+        Lcom/google/common/collect/Collections2$FilteredCollection;,
         Lcom/google/common/collect/Collections2$TransformedCollection;,
-        Lcom/google/common/collect/Collections2$FilteredCollection;
+        Lcom/google/common/collect/Collections2$OrderedPermutationCollection;,
+        Lcom/google/common/collect/Collections2$PermutationCollection;,
+        Lcom/google/common/collect/Collections2$PermutationIterator;,
+        Lcom/google/common/collect/Collections2$OrderedPermutationIterator;
     }
 .end annotation
 
@@ -20,7 +23,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 55
+    .line 58
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,7 +32,7 @@
 .method static synthetic access$000(Ljava/util/List;Ljava/util/List;)Z
     .locals 0
 
-    .line 54
+    .line 57
     invoke-static {p0, p1}, Lcom/google/common/collect/Collections2;->isPermutation(Ljava/util/List;Ljava/util/List;)Z
 
     move-result p0
@@ -39,6 +42,17 @@
 
 .method static containsAllImpl(Ljava/util/Collection;Ljava/util/Collection;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "self",
+            "c"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -49,7 +63,7 @@
         }
     .end annotation
 
-    .line 300
+    .line 305
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -65,7 +79,7 @@
 
     move-result-object v0
 
-    .line 301
+    .line 306
     invoke-interface {p0, v0}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
 
     move-result v0
@@ -84,6 +98,15 @@
 
 .method private static counts(Ljava/util/Collection;)Lcom/google/common/collect/ObjectCountHashMap;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "collection"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -96,12 +119,12 @@
         }
     .end annotation
 
-    .line 676
+    .line 696
     new-instance v0, Lcom/google/common/collect/ObjectCountHashMap;
 
     invoke-direct {v0}, Lcom/google/common/collect/ObjectCountHashMap;-><init>()V
 
-    .line 677
+    .line 697
     invoke-interface {p0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -117,7 +140,7 @@
 
     move-result-object v1
 
-    .line 678
+    .line 698
     invoke-virtual {v0, v1}, Lcom/google/common/collect/ObjectCountHashMap;->get(Ljava/lang/Object;)I
 
     move-result v2
@@ -134,6 +157,17 @@
 
 .method public static filter(Ljava/util/Collection;Lcom/google/common/base/Predicate;)Ljava/util/Collection;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "unfiltered",
+            "predicate"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -148,12 +182,12 @@
         }
     .end annotation
 
-    .line 85
+    .line 89
     instance-of v0, p0, Lcom/google/common/collect/Collections2$FilteredCollection;
 
     if-eqz v0, :cond_0
 
-    .line 88
+    .line 92
     check-cast p0, Lcom/google/common/collect/Collections2$FilteredCollection;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Collections2$FilteredCollection;->createCombined(Lcom/google/common/base/Predicate;)Lcom/google/common/collect/Collections2$FilteredCollection;
@@ -162,7 +196,7 @@
 
     return-object p0
 
-    .line 91
+    .line 95
     :cond_0
     new-instance v0, Lcom/google/common/collect/Collections2$FilteredCollection;
 
@@ -185,6 +219,17 @@
 
 .method private static isPermutation(Ljava/util/List;Ljava/util/List;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "first",
+            "second"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -195,7 +240,7 @@
         }
     .end annotation
 
-    .line 659
+    .line 678
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v0
@@ -210,18 +255,18 @@
 
     return v2
 
-    .line 662
+    .line 681
     :cond_0
     invoke-static {p0}, Lcom/google/common/collect/Collections2;->counts(Ljava/util/Collection;)Lcom/google/common/collect/ObjectCountHashMap;
 
     move-result-object v0
 
-    .line 663
+    .line 682
     invoke-static {p1}, Lcom/google/common/collect/Collections2;->counts(Ljava/util/Collection;)Lcom/google/common/collect/ObjectCountHashMap;
 
     move-result-object v1
 
-    .line 664
+    .line 683
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v3
@@ -237,7 +282,7 @@
     :cond_1
     move p1, v2
 
-    .line 667
+    .line 686
     :goto_0
     invoke-interface {p0}, Ljava/util/List;->size()I
 
@@ -245,7 +290,7 @@
 
     if-ge p1, v3, :cond_3
 
-    .line 668
+    .line 687
     invoke-virtual {v0, p1}, Lcom/google/common/collect/ObjectCountHashMap;->getValue(I)I
 
     move-result v3
@@ -275,13 +320,21 @@
 
 .method static newStringBuilderForCollection(I)Ljava/lang/StringBuilder;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "size"
+        }
+    .end annotation
 
-    .line 328
+    .line 333
     const-string v0, "size"
 
     invoke-static {p0, v0}, Lcom/google/common/collect/CollectPreconditions;->checkNonnegative(ILjava/lang/String;)I
 
-    .line 329
+    .line 334
     new-instance v0, Ljava/lang/StringBuilder;
 
     int-to-long v1, p0
@@ -305,6 +358,15 @@
 
 .method public static orderedPermutations(Ljava/lang/Iterable;)Ljava/util/Collection;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E::",
@@ -318,7 +380,7 @@
         }
     .end annotation
 
-    .line 357
+    .line 361
     invoke-static {}, Lcom/google/common/collect/Ordering;->natural()Lcom/google/common/collect/Ordering;
 
     move-result-object v0
@@ -332,6 +394,17 @@
 
 .method public static orderedPermutations(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/Collection;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "elements",
+            "comparator"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -347,7 +420,7 @@
         }
     .end annotation
 
-    .line 409
+    .line 412
     new-instance v0, Lcom/google/common/collect/Collections2$OrderedPermutationCollection;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Collections2$OrderedPermutationCollection;-><init>(Ljava/lang/Iterable;Ljava/util/Comparator;)V
@@ -357,6 +430,15 @@
 
 .method public static permutations(Ljava/util/Collection;)Ljava/util/Collection;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "elements"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -370,7 +452,7 @@
         }
     .end annotation
 
-    .line 554
+    .line 572
     new-instance v0, Lcom/google/common/collect/Collections2$PermutationCollection;
 
     invoke-static {p0}, Lcom/google/common/collect/ImmutableList;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/ImmutableList;
@@ -385,9 +467,20 @@
 .method static safeContains(Ljava/util/Collection;Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "collection",
+            "object"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -398,10 +491,10 @@
         }
     .end annotation
 
-    .line 99
+    .line 103
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 101
+    .line 105
     :try_start_0
     invoke-interface {p0, p1}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
 
@@ -421,9 +514,20 @@
 .method static safeRemove(Ljava/util/Collection;Ljava/lang/Object;)Z
     .locals 0
     .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "collection",
+            "object"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -434,10 +538,10 @@
         }
     .end annotation
 
-    .line 112
+    .line 116
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 114
+    .line 118
     :try_start_0
     invoke-interface {p0, p1}, Ljava/util/Collection;->remove(Ljava/lang/Object;)Z
 
@@ -456,6 +560,15 @@
 
 .method static toStringImpl(Ljava/util/Collection;)Ljava/lang/String;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "collection"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -465,7 +578,7 @@
         }
     .end annotation
 
-    .line 310
+    .line 315
     invoke-interface {p0}, Ljava/util/Collection;->size()I
 
     move-result v0
@@ -480,7 +593,7 @@
 
     move-result-object v0
 
-    .line 312
+    .line 317
     invoke-interface {p0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -500,7 +613,7 @@
 
     if-nez v2, :cond_0
 
-    .line 314
+    .line 319
     const-string v2, ", "
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -508,14 +621,14 @@
     :cond_0
     if-ne v3, p0, :cond_1
 
-    .line 318
+    .line 323
     const-string v2, "(this Collection)"
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_1
 
-    .line 320
+    .line 325
     :cond_1
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -527,7 +640,7 @@
     :cond_2
     const/16 p0, 0x5d
 
-    .line 323
+    .line 328
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     move-result-object p0
@@ -541,6 +654,17 @@
 
 .method public static transform(Ljava/util/Collection;Lcom/google/common/base/Function;)Ljava/util/Collection;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "fromCollection",
+            "function"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<F:",
@@ -557,7 +681,7 @@
         }
     .end annotation
 
-    .line 255
+    .line 259
     new-instance v0, Lcom/google/common/collect/Collections2$TransformedCollection;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Collections2$TransformedCollection;-><init>(Ljava/util/Collection;Lcom/google/common/base/Function;)V

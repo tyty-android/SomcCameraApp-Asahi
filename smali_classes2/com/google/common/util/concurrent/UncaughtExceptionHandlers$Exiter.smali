@@ -18,7 +18,7 @@
 
 
 # static fields
-.field private static final logger:Ljava/util/logging/Logger;
+.field private static final logger:Lcom/google/common/util/concurrent/LazyLogger;
 
 
 # instance fields
@@ -27,31 +27,35 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 2
 
-    .line 57
-    const-class v0, Lcom/google/common/util/concurrent/UncaughtExceptionHandlers$Exiter;
+    .line 59
+    new-instance v0, Lcom/google/common/util/concurrent/LazyLogger;
 
-    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+    const-class v1, Lcom/google/common/util/concurrent/UncaughtExceptionHandlers$Exiter;
 
-    move-result-object v0
+    invoke-direct {v0, v1}, Lcom/google/common/util/concurrent/LazyLogger;-><init>(Ljava/lang/Class;)V
 
-    invoke-static {v0}, Ljava/util/logging/Logger;->getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/common/util/concurrent/UncaughtExceptionHandlers$Exiter;->logger:Ljava/util/logging/Logger;
+    sput-object v0, Lcom/google/common/util/concurrent/UncaughtExceptionHandlers$Exiter;->logger:Lcom/google/common/util/concurrent/LazyLogger;
 
     return-void
 .end method
 
 .method constructor <init>(Ljava/lang/Runtime;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "runtime"
+        }
+    .end annotation
 
-    .line 61
+    .line 63
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 62
+    .line 64
     iput-object p1, p0, Lcom/google/common/util/concurrent/UncaughtExceptionHandlers$Exiter;->runtime:Ljava/lang/Runtime;
 
     return-void
@@ -61,12 +65,27 @@
 # virtual methods
 .method public uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "t",
+            "e"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
-    .line 68
+    .line 70
     :try_start_0
-    sget-object v1, Lcom/google/common/util/concurrent/UncaughtExceptionHandlers$Exiter;->logger:Ljava/util/logging/Logger;
+    sget-object v1, Lcom/google/common/util/concurrent/UncaughtExceptionHandlers$Exiter;->logger:Lcom/google/common/util/concurrent/LazyLogger;
+
+    .line 71
+    invoke-virtual {v1}, Lcom/google/common/util/concurrent/LazyLogger;->get()Ljava/util/logging/Logger;
+
+    move-result-object v1
 
     sget-object v2, Ljava/util/logging/Level;->SEVERE:Ljava/util/logging/Level;
 
@@ -78,12 +97,12 @@
 
     move-result-object p1
 
-    .line 69
+    .line 74
     invoke-static {v3, v4, p1}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 68
+    .line 72
     invoke-virtual {v1, v2, p1, p2}, Ljava/util/logging/Logger;->log(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -93,7 +112,7 @@
     :catchall_0
     move-exception p1
 
-    .line 73
+    .line 79
     :try_start_1
     sget-object v1, Ljava/lang/System;->err:Ljava/io/PrintStream;
 
@@ -103,7 +122,7 @@
 
     invoke-virtual {v1, p2}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
-    .line 74
+    .line 80
     sget-object p2, Ljava/lang/System;->err:Ljava/io/PrintStream;
 
     invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
@@ -114,7 +133,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 76
+    .line 82
     :goto_0
     iget-object p0, p0, Lcom/google/common/util/concurrent/UncaughtExceptionHandlers$Exiter;->runtime:Ljava/lang/Runtime;
 
@@ -129,6 +148,6 @@
 
     invoke-virtual {p0, v0}, Ljava/lang/Runtime;->exit(I)V
 
-    .line 77
+    .line 83
     throw p1
 .end method

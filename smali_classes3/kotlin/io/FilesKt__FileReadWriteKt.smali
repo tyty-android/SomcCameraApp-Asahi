@@ -10,30 +10,45 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0090\u0001\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0012\n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010 \n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u001a\u0018\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0000\u001a\u0012\u0010\u0006\u001a\u00020\u0007*\u00020\u00082\u0006\u0010\t\u001a\u00020\n\u001a\u001c\u0010\u000b\u001a\u00020\u0007*\u00020\u00082\u0006\u0010\u000c\u001a\u00020\r2\u0008\u0008\u0002\u0010\u000e\u001a\u00020\u000f\u001a!\u0010\u0010\u001a\u00020\u0011*\u00020\u00082\u0008\u0008\u0002\u0010\u000e\u001a\u00020\u000f2\u0008\u0008\u0002\u0010\u0012\u001a\u00020\u0003H\u0087\u0008\u001a!\u0010\u0013\u001a\u00020\u0014*\u00020\u00082\u0008\u0008\u0002\u0010\u000e\u001a\u00020\u000f2\u0008\u0008\u0002\u0010\u0012\u001a\u00020\u0003H\u0087\u0008\u001aB\u0010\u0015\u001a\u00020\u0007*\u00020\u000826\u0010\u0016\u001a2\u0012\u0013\u0012\u00110\n\u00a2\u0006\u000c\u0008\u0018\u0012\u0008\u0008\u0019\u0012\u0004\u0008\u0008(\u001a\u0012\u0013\u0012\u00110\u0003\u00a2\u0006\u000c\u0008\u0018\u0012\u0008\u0008\u0019\u0012\u0004\u0008\u0008(\u001b\u0012\u0004\u0012\u00020\u00070\u0017\u001aJ\u0010\u0015\u001a\u00020\u0007*\u00020\u00082\u0006\u0010\u001c\u001a\u00020\u000326\u0010\u0016\u001a2\u0012\u0013\u0012\u00110\n\u00a2\u0006\u000c\u0008\u0018\u0012\u0008\u0008\u0019\u0012\u0004\u0008\u0008(\u001a\u0012\u0013\u0012\u00110\u0003\u00a2\u0006\u000c\u0008\u0018\u0012\u0008\u0008\u0019\u0012\u0004\u0008\u0008(\u001b\u0012\u0004\u0012\u00020\u00070\u0017\u001a7\u0010\u001d\u001a\u00020\u0007*\u00020\u00082\u0008\u0008\u0002\u0010\u000e\u001a\u00020\u000f2!\u0010\u0016\u001a\u001d\u0012\u0013\u0012\u00110\r\u00a2\u0006\u000c\u0008\u0018\u0012\u0008\u0008\u0019\u0012\u0004\u0008\u0008(\u001f\u0012\u0004\u0012\u00020\u00070\u001e\u001a\r\u0010 \u001a\u00020!*\u00020\u0008H\u0087\u0008\u001a\u0014\u0010\"\u001a\n #*\u0004\u0018\u00010\u00050\u0005*\u00020\u000fH\u0000\u001a\r\u0010$\u001a\u00020%*\u00020\u0008H\u0087\u0008\u001a\u0017\u0010&\u001a\u00020\'*\u00020\u00082\u0008\u0008\u0002\u0010\u000e\u001a\u00020\u000fH\u0087\u0008\u001a\n\u0010(\u001a\u00020\n*\u00020\u0008\u001a\u001a\u0010)\u001a\u0008\u0012\u0004\u0012\u00020\r0**\u00020\u00082\u0008\u0008\u0002\u0010\u000e\u001a\u00020\u000f\u001a\u0014\u0010+\u001a\u00020\r*\u00020\u00082\u0008\u0008\u0002\u0010\u000e\u001a\u00020\u000f\u001a\u0017\u0010,\u001a\u00020-*\u00020\u00082\u0008\u0008\u0002\u0010\u000e\u001a\u00020\u000fH\u0087\u0008\u001aL\u0010.\u001a\u0002H/\"\u0004\u0008\u0000\u0010/*\u00020\u00082\u0008\u0008\u0002\u0010\u000e\u001a\u00020\u000f2\u0018\u00100\u001a\u0014\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\r01\u0012\u0004\u0012\u0002H/0\u001eH\u0086\u0008\u00f8\u0001\u0000\u0082\u0002\n\n\u0008\u0008\u0001\u0012\u0002\u0010\u0002 \u0001\u00a2\u0006\u0002\u00102\u001a\u0012\u00103\u001a\u00020\u0007*\u00020\u00082\u0006\u0010\t\u001a\u00020\n\u001a\u001c\u00104\u001a\u00020\u0007*\u00020\u00082\u0006\u0010\u000c\u001a\u00020\r2\u0008\u0008\u0002\u0010\u000e\u001a\u00020\u000f\u001a\u001c\u00105\u001a\u00020\u0007*\u0002062\u0006\u0010\u000c\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000fH\u0000\u001a\u0017\u00107\u001a\u000208*\u00020\u00082\u0008\u0008\u0002\u0010\u000e\u001a\u00020\u000fH\u0087\u0008\u0082\u0002\u0007\n\u0005\u0008\u009920\u0001\u00a8\u00069"
+        "\u0000\u008c\u0001\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0012\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u001a\u0017\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\u0008\u0008\u0002\u0010\u0003\u001a\u00020\u0004H\u0087\u0008\u001a!\u0010\u0005\u001a\u00020\u0006*\u00020\u00022\u0008\u0008\u0002\u0010\u0003\u001a\u00020\u00042\u0008\u0008\u0002\u0010\u0007\u001a\u00020\u0008H\u0087\u0008\u001a\u0017\u0010\t\u001a\u00020\n*\u00020\u00022\u0008\u0008\u0002\u0010\u0003\u001a\u00020\u0004H\u0087\u0008\u001a!\u0010\u000b\u001a\u00020\u000c*\u00020\u00022\u0008\u0008\u0002\u0010\u0003\u001a\u00020\u00042\u0008\u0008\u0002\u0010\u0007\u001a\u00020\u0008H\u0087\u0008\u001a\u0017\u0010\r\u001a\u00020\u000e*\u00020\u00022\u0008\u0008\u0002\u0010\u0003\u001a\u00020\u0004H\u0087\u0008\u001a\n\u0010\u000f\u001a\u00020\u0010*\u00020\u0002\u001a\u0012\u0010\u0011\u001a\u00020\u0012*\u00020\u00022\u0006\u0010\u0013\u001a\u00020\u0010\u001a\u0012\u0010\u0014\u001a\u00020\u0012*\u00020\u00022\u0006\u0010\u0013\u001a\u00020\u0010\u001a\u0014\u0010\u0015\u001a\u00020\u0016*\u00020\u00022\u0008\u0008\u0002\u0010\u0003\u001a\u00020\u0004\u001a\u001c\u0010\u0017\u001a\u00020\u0012*\u00020\u00022\u0006\u0010\u0018\u001a\u00020\u00162\u0008\u0008\u0002\u0010\u0003\u001a\u00020\u0004\u001a\u001c\u0010\u0019\u001a\u00020\u0012*\u00020\u00022\u0006\u0010\u0018\u001a\u00020\u00162\u0008\u0008\u0002\u0010\u0003\u001a\u00020\u0004\u001a\u001c\u0010\u001a\u001a\u00020\u0012*\u00020\u001b2\u0006\u0010\u0018\u001a\u00020\u00162\u0006\u0010\u0003\u001a\u00020\u0004H\u0000\u001a\u0019\u0010\u001c\u001a\n \u001e*\u0004\u0018\u00010\u001d0\u001d*\u00020\u0004H\u0000\u00a2\u0006\u0002\u0010\u001f\u001a\u0018\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020\u00082\u0006\u0010#\u001a\u00020\u001dH\u0000\u001aB\u0010$\u001a\u00020\u0012*\u00020\u000226\u0010%\u001a2\u0012\u0013\u0012\u00110\u0010\u00a2\u0006\u000c\u0008\'\u0012\u0008\u0008(\u0012\u0004\u0008\u0008()\u0012\u0013\u0012\u00110\u0008\u00a2\u0006\u000c\u0008\'\u0012\u0008\u0008(\u0012\u0004\u0008\u0008(*\u0012\u0004\u0012\u00020\u00120&\u001aJ\u0010$\u001a\u00020\u0012*\u00020\u00022\u0006\u0010+\u001a\u00020\u000826\u0010%\u001a2\u0012\u0013\u0012\u00110\u0010\u00a2\u0006\u000c\u0008\'\u0012\u0008\u0008(\u0012\u0004\u0008\u0008()\u0012\u0013\u0012\u00110\u0008\u00a2\u0006\u000c\u0008\'\u0012\u0008\u0008(\u0012\u0004\u0008\u0008(*\u0012\u0004\u0012\u00020\u00120&\u001a7\u0010,\u001a\u00020\u0012*\u00020\u00022\u0008\u0008\u0002\u0010\u0003\u001a\u00020\u00042!\u0010%\u001a\u001d\u0012\u0013\u0012\u00110\u0016\u00a2\u0006\u000c\u0008\'\u0012\u0008\u0008(\u0012\u0004\u0008\u0008(.\u0012\u0004\u0012\u00020\u00120-\u001a\r\u0010/\u001a\u000200*\u00020\u0002H\u0087\u0008\u001a\r\u00101\u001a\u000202*\u00020\u0002H\u0087\u0008\u001a\u001a\u00103\u001a\u0008\u0012\u0004\u0012\u00020\u001604*\u00020\u00022\u0008\u0008\u0002\u0010\u0003\u001a\u00020\u0004\u001aL\u00105\u001a\u0002H6\"\u0004\u0008\u0000\u00106*\u00020\u00022\u0008\u0008\u0002\u0010\u0003\u001a\u00020\u00042\u0018\u00107\u001a\u0014\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u001608\u0012\u0004\u0012\u0002H60-H\u0086\u0008\u00f8\u0001\u0000\u0082\u0002\n\n\u0008\u0008\u0001\u0012\u0002\u0010\u0002 \u0001\u00a2\u0006\u0002\u00109\u0082\u0002\u0007\n\u0005\u0008\u009920\u0001\u00a8\u0006:"
     }
     d2 = {
-        "byteBufferForEncoding",
-        "Ljava/nio/ByteBuffer;",
-        "chunkSize",
-        "",
-        "encoder",
-        "Ljava/nio/charset/CharsetEncoder;",
-        "appendBytes",
-        "",
+        "reader",
+        "Ljava/io/InputStreamReader;",
         "Ljava/io/File;",
-        "array",
-        "",
-        "appendText",
-        "text",
-        "",
         "charset",
         "Ljava/nio/charset/Charset;",
         "bufferedReader",
         "Ljava/io/BufferedReader;",
         "bufferSize",
+        "",
+        "writer",
+        "Ljava/io/OutputStreamWriter;",
         "bufferedWriter",
         "Ljava/io/BufferedWriter;",
+        "printWriter",
+        "Ljava/io/PrintWriter;",
+        "readBytes",
+        "",
+        "writeBytes",
+        "",
+        "array",
+        "appendBytes",
+        "readText",
+        "",
+        "writeText",
+        "text",
+        "appendText",
+        "writeTextImpl",
+        "Ljava/io/OutputStream;",
+        "newReplaceEncoder",
+        "Ljava/nio/charset/CharsetEncoder;",
+        "kotlin.jvm.PlatformType",
+        "(Ljava/nio/charset/Charset;)Ljava/nio/charset/CharsetEncoder;",
+        "byteBufferForEncoding",
+        "Ljava/nio/ByteBuffer;",
+        "chunkSize",
+        "encoder",
         "forEachBlock",
         "action",
         "Lkotlin/Function2;",
@@ -47,35 +62,21 @@
         "line",
         "inputStream",
         "Ljava/io/FileInputStream;",
-        "newReplaceEncoder",
-        "kotlin.jvm.PlatformType",
         "outputStream",
         "Ljava/io/FileOutputStream;",
-        "printWriter",
-        "Ljava/io/PrintWriter;",
-        "readBytes",
         "readLines",
         "",
-        "readText",
-        "reader",
-        "Ljava/io/InputStreamReader;",
         "useLines",
         "T",
         "block",
         "Lkotlin/sequences/Sequence;",
         "(Ljava/io/File;Ljava/nio/charset/Charset;Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;",
-        "writeBytes",
-        "writeText",
-        "writeTextImpl",
-        "Ljava/io/OutputStream;",
-        "writer",
-        "Ljava/io/OutputStreamWriter;",
         "kotlin-stdlib"
     }
     k = 0x5
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x31
@@ -84,6 +85,16 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$4EcuRhbBdJT1OYuEKwTrZ40dPsY(Ljava/util/ArrayList;Ljava/lang/String;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Lkotlin/io/FilesKt__FileReadWriteKt;->readLines$lambda$9$FilesKt__FileReadWriteKt(Ljava/util/ArrayList;Ljava/lang/String;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public constructor <init>()V
     .locals 0
 
@@ -280,6 +291,7 @@
 
     const/16 p2, 0x2000
 
+    .line 35
     :cond_1
     const-string p3, "<this>"
 
@@ -381,6 +393,7 @@
 
     const/16 p2, 0x2000
 
+    .line 51
     :cond_1
     const-string p3, "<this>"
 
@@ -769,6 +782,7 @@
     .line 59
     sget-object p1, Lkotlin/text/Charsets;->UTF_8:Ljava/nio/charset/Charset;
 
+    .line 58
     :cond_0
     const-string p2, "<this>"
 
@@ -1087,11 +1101,9 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 273
-    new-instance v1, Lkotlin/io/FilesKt__FileReadWriteKt$readLines$1;
+    new-instance v1, Lkotlin/io/FilesKt__FileReadWriteKt$$ExternalSyntheticLambda0;
 
-    invoke-direct {v1, v0}, Lkotlin/io/FilesKt__FileReadWriteKt$readLines$1;-><init>(Ljava/util/ArrayList;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, v0}, Lkotlin/io/FilesKt__FileReadWriteKt$$ExternalSyntheticLambda0;-><init>(Ljava/util/ArrayList;)V
 
     invoke-static {p0, p1, v1}, Lkotlin/io/FilesKt;->forEachLine(Ljava/io/File;Ljava/nio/charset/Charset;Lkotlin/jvm/functions/Function1;)V
 
@@ -1115,6 +1127,21 @@
     invoke-static {p0, p1}, Lkotlin/io/FilesKt;->readLines(Ljava/io/File;Ljava/nio/charset/Charset;)Ljava/util/List;
 
     move-result-object p0
+
+    return-object p0
+.end method
+
+.method private static final readLines$lambda$9$FilesKt__FileReadWriteKt(Ljava/util/ArrayList;Ljava/lang/String;)Lkotlin/Unit;
+    .locals 1
+
+    const-string v0, "it"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 273
+    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 .end method
@@ -1231,6 +1258,7 @@
     .line 27
     sget-object p1, Lkotlin/text/Charsets;->UTF_8:Ljava/nio/charset/Charset;
 
+    .line 26
     :cond_0
     const-string p2, "<this>"
 
@@ -1830,10 +1858,6 @@
 
     const-string p1, "Check failed."
 
-    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
     invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     throw p0
@@ -1877,6 +1901,7 @@
     .line 43
     sget-object p1, Lkotlin/text/Charsets;->UTF_8:Ljava/nio/charset/Charset;
 
+    .line 42
     :cond_0
     const-string p2, "<this>"
 

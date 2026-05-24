@@ -23,17 +23,27 @@
 # direct methods
 .method private constructor <init>(II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "scale",
+            "index"
+        }
+    .end annotation
 
-    .line 220
+    .line 229
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 221
+    .line 230
     invoke-static {p2, p1}, Lcom/google/common/math/Quantiles;->access$300(II)V
 
-    .line 222
+    .line 231
     iput p1, p0, Lcom/google/common/math/Quantiles$ScaleAndIndex;->scale:I
 
-    .line 223
+    .line 232
     iput p2, p0, Lcom/google/common/math/Quantiles$ScaleAndIndex;->index:I
 
     return-void
@@ -42,7 +52,7 @@
 .method synthetic constructor <init>(IILcom/google/common/math/Quantiles$1;)V
     .locals 0
 
-    .line 215
+    .line 224
     invoke-direct {p0, p1, p2}, Lcom/google/common/math/Quantiles$ScaleAndIndex;-><init>(II)V
 
     return-void
@@ -52,6 +62,15 @@
 # virtual methods
 .method public compute(Ljava/util/Collection;)D
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dataset"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -62,7 +81,7 @@
         }
     .end annotation
 
-    .line 235
+    .line 244
     invoke-static {p1}, Lcom/google/common/primitives/Doubles;->toArray(Ljava/util/Collection;)[D
 
     move-result-object p1
@@ -76,8 +95,16 @@
 
 .method public varargs compute([D)D
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dataset"
+        }
+    .end annotation
 
-    .line 246
+    .line 255
     invoke-virtual {p1}, [D->clone()Ljava/lang/Object;
 
     move-result-object p1
@@ -93,8 +120,16 @@
 
 .method public varargs compute([I)D
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dataset"
+        }
+    .end annotation
 
-    .line 269
+    .line 278
     invoke-static {p1}, Lcom/google/common/math/Quantiles;->access$500([I)[D
 
     move-result-object p1
@@ -108,8 +143,16 @@
 
 .method public varargs compute([J)D
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dataset"
+        }
+    .end annotation
 
-    .line 258
+    .line 267
     invoke-static {p1}, Lcom/google/common/math/Quantiles;->access$400([J)[D
 
     move-result-object p1
@@ -123,8 +166,16 @@
 
 .method public varargs computeInPlace([D)D
     .locals 13
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "dataset"
+        }
+    .end annotation
 
-    .line 280
+    .line 289
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -145,7 +196,7 @@
 
     invoke-static {v0, v3}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/Object;)V
 
-    .line 281
+    .line 290
     invoke-static {p1}, Lcom/google/common/math/Quantiles;->access$600([D)Z
 
     move-result v0
@@ -156,7 +207,7 @@
 
     return-wide p0
 
-    .line 292
+    .line 301
     :cond_1
     iget v0, p0, Lcom/google/common/math/Quantiles$ScaleAndIndex;->index:I
 
@@ -170,7 +221,7 @@
 
     mul-long/2addr v3, v5
 
-    .line 296
+    .line 305
     iget v0, p0, Lcom/google/common/math/Quantiles$ScaleAndIndex;->scale:I
 
     int-to-long v5, v0
@@ -185,7 +236,7 @@
 
     int-to-long v5, v0
 
-    .line 297
+    .line 306
     iget v7, p0, Lcom/google/common/math/Quantiles$ScaleAndIndex;->scale:I
 
     int-to-long v7, v7
@@ -196,7 +247,7 @@
 
     long-to-int v3, v3
 
-    .line 298
+    .line 307
     array-length v4, p1
 
     sub-int/2addr v4, v2
@@ -205,7 +256,7 @@
 
     if-nez v3, :cond_2
 
-    .line 300
+    .line 309
     aget-wide p0, p1, v0
 
     return-wide p0
@@ -213,14 +264,14 @@
     :cond_2
     add-int/lit8 v1, v0, 0x1
 
-    .line 302
+    .line 311
     array-length v4, p1
 
     sub-int/2addr v4, v2
 
     invoke-static {v1, p1, v1, v4}, Lcom/google/common/math/Quantiles;->access$700(I[DII)V
 
-    .line 303
+    .line 312
     aget-wide v5, p1, v0
 
     aget-wide v7, p1, v1

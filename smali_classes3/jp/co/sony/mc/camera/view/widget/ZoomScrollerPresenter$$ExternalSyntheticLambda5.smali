@@ -3,17 +3,15 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
 .field public final synthetic f$0:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
-.field public final synthetic f$1:Lkotlin/Pair;
-
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;Lkotlin/Pair;)V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;)V
     .locals 0
 
     .line 0
@@ -21,22 +19,22 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$$ExternalSyntheticLambda5;->f$0:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
-    iput-object p2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$$ExternalSyntheticLambda5;->f$1:Lkotlin/Pair;
-
     return-void
 .end method
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
-    .locals 1
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 0
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$$ExternalSyntheticLambda5;->f$0:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$$ExternalSyntheticLambda5;->f$0:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$$ExternalSyntheticLambda5;->f$1:Lkotlin/Pair;
+    check-cast p1, Ljava/lang/Boolean;
 
-    invoke-static {v0, p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->$r8$lambda$rl7GH2LFgndI-PRt0G2e1dI_Dko(Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;Lkotlin/Pair;Landroid/view/View;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->$r8$lambda$YaORV8on0bTwDJcgRUIzfeEQfeM(Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;Ljava/lang/Boolean;)Lkotlin/Unit;
 
-    return-void
+    move-result-object p0
+
+    return-object p0
 .end method

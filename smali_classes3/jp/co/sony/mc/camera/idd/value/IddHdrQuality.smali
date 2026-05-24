@@ -63,7 +63,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 492
+    .line 493
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;->value:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
@@ -76,7 +76,7 @@
 .method public final getValue()Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
     .locals 0
 
-    .line 492
+    .line 493
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;->value:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
 
     return-object p0
@@ -89,7 +89,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 492
+    .line 493
     iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;->value:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
 
     return-void
@@ -98,7 +98,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 493
+    .line 494
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;->value:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
 
     sget-object v0, Ljp/co/sony/mc/camera/idd/value/IddHdrQuality$WhenMappings;->$EnumSwitchMapping$0:[I
@@ -113,12 +113,12 @@
 
     if-ne p0, v0, :cond_0
 
-    .line 494
+    .line 495
     const-string p0, "HIGH"
 
     goto :goto_0
 
-    .line 495
+    .line 496
     :cond_0
     const-string p0, "STANDARD"
 

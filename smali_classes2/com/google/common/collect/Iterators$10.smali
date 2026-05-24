@@ -1,11 +1,14 @@
 .class Lcom/google/common/collect/Iterators$10;
-.super Lcom/google/common/collect/UnmodifiableIterator;
+.super Ljava/lang/Object;
 .source "Iterators.java"
+
+# interfaces
+.implements Ljava/util/Enumeration;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/common/collect/Iterators;->forEnumeration(Ljava/util/Enumeration;)Lcom/google/common/collect/UnmodifiableIterator;
+    value = Lcom/google/common/collect/Iterators;->asEnumeration(Ljava/util/Iterator;)Ljava/util/Enumeration;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,55 +18,73 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/google/common/collect/UnmodifiableIterator<",
+        "Ljava/lang/Object;",
+        "Ljava/util/Enumeration<",
         "TT;>;"
     }
 .end annotation
 
 
 # instance fields
-.field final synthetic val$enumeration:Ljava/util/Enumeration;
+.field final synthetic val$iterator:Ljava/util/Iterator;
 
 
 # direct methods
-.method constructor <init>(Ljava/util/Enumeration;)V
+.method constructor <init>(Ljava/util/Iterator;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "val$iterator"
+        }
+    .end annotation
 
-    .line 1087
-    iput-object p1, p0, Lcom/google/common/collect/Iterators$10;->val$enumeration:Ljava/util/Enumeration;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
 
-    invoke-direct {p0}, Lcom/google/common/collect/UnmodifiableIterator;-><init>()V
+    .line 1167
+    iput-object p1, p0, Lcom/google/common/collect/Iterators$10;->val$iterator:Ljava/util/Iterator;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public hasNext()Z
+.method public hasMoreElements()Z
     .locals 0
 
-    .line 1090
-    iget-object p0, p0, Lcom/google/common/collect/Iterators$10;->val$enumeration:Ljava/util/Enumeration;
+    .line 1170
+    iget-object p0, p0, Lcom/google/common/collect/Iterators$10;->val$iterator:Ljava/util/Iterator;
 
-    invoke-interface {p0}, Ljava/util/Enumeration;->hasMoreElements()Z
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result p0
 
     return p0
 .end method
 
-.method public next()Ljava/lang/Object;
+.method public nextElement()Ljava/lang/Object;
     .locals 0
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TT;"
         }
     .end annotation
 
-    .line 1095
-    iget-object p0, p0, Lcom/google/common/collect/Iterators$10;->val$enumeration:Ljava/util/Enumeration;
+    .line 1176
+    iget-object p0, p0, Lcom/google/common/collect/Iterators$10;->val$iterator:Ljava/util/Iterator;
 
-    invoke-interface {p0}, Ljava/util/Enumeration;->nextElement()Ljava/lang/Object;
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object p0
 

@@ -3,6 +3,11 @@
 .source "UrlEscapers.java"
 
 
+# annotations
+.annotation runtime Lcom/google/common/net/ElementTypesAreNonnullByDefault;
+.end annotation
+
+
 # static fields
 .field private static final URL_FORM_PARAMETER_ESCAPER:Lcom/google/common/escape/Escaper;
 
@@ -19,7 +24,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 77
+    .line 80
     new-instance v0, Lcom/google/common/net/PercentEscaper;
 
     const-string v1, "-_.*"
@@ -30,7 +35,7 @@
 
     sput-object v0, Lcom/google/common/net/UrlEscapers;->URL_FORM_PARAMETER_ESCAPER:Lcom/google/common/escape/Escaper;
 
-    .line 113
+    .line 117
     new-instance v0, Lcom/google/common/net/PercentEscaper;
 
     const-string v1, "-._~!$\'()*,;&=@:+"
@@ -41,7 +46,7 @@
 
     sput-object v0, Lcom/google/common/net/UrlEscapers;->URL_PATH_SEGMENT_ESCAPER:Lcom/google/common/escape/Escaper;
 
-    .line 145
+    .line 148
     new-instance v0, Lcom/google/common/net/PercentEscaper;
 
     const-string v1, "-._~!$\'()*,;&=@:+/?"
@@ -56,7 +61,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 33
+    .line 34
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -65,7 +70,7 @@
 .method public static urlFormParameterEscaper()Lcom/google/common/escape/Escaper;
     .locals 1
 
-    .line 74
+    .line 77
     sget-object v0, Lcom/google/common/net/UrlEscapers;->URL_FORM_PARAMETER_ESCAPER:Lcom/google/common/escape/Escaper;
 
     return-object v0
@@ -74,7 +79,7 @@
 .method public static urlFragmentEscaper()Lcom/google/common/escape/Escaper;
     .locals 1
 
-    .line 142
+    .line 145
     sget-object v0, Lcom/google/common/net/UrlEscapers;->URL_FRAGMENT_ESCAPER:Lcom/google/common/escape/Escaper;
 
     return-object v0
@@ -83,7 +88,7 @@
 .method public static urlPathSegmentEscaper()Lcom/google/common/escape/Escaper;
     .locals 1
 
-    .line 110
+    .line 114
     sget-object v0, Lcom/google/common/net/UrlEscapers;->URL_PATH_SEGMENT_ESCAPER:Lcom/google/common/escape/Escaper;
 
     return-object v0

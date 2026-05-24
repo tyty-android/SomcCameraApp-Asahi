@@ -48,7 +48,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 255
+    .line 270
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -71,7 +71,7 @@
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 256
+    .line 271
     sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddMic$Companion$WhenMappings;->$EnumSwitchMapping$0:[I
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->ordinal()I
@@ -92,12 +92,12 @@
 
     if-ne p0, p1, :cond_0
 
-    .line 259
+    .line 274
     sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddMic;->INTERNAL_TOP:Ljp/co/sony/mc/camera/idd/value/IddMic;
 
     goto :goto_0
 
-    .line 256
+    .line 271
     :cond_0
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
@@ -105,13 +105,13 @@
 
     throw p0
 
-    .line 258
+    .line 273
     :cond_1
     sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddMic;->INTERNAL_REAR:Ljp/co/sony/mc/camera/idd/value/IddMic;
 
     goto :goto_0
 
-    .line 257
+    .line 272
     :cond_2
     sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddMic;->INTERNAL_LR:Ljp/co/sony/mc/camera/idd/value/IddMic;
 

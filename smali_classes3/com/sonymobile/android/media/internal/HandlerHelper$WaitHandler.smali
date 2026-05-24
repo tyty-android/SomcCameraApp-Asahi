@@ -33,6 +33,16 @@
 
 .method private constructor <init>(Landroid/os/Looper;Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "looper",
+            "lock"
+        }
+    .end annotation
 
     .line 29
     invoke-direct {p0, p1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
@@ -55,6 +65,14 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "msg"
+        }
+    .end annotation
 
     .line 35
     iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;

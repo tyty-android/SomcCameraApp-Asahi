@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010(\n\u0002\u0008\u000b\u0008\u0002\u0018\u00002\u00020\u0001B!\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0008\u0010\u0004\u001a\u0004\u0018\u00010\u0001\u0012\u0008\u0010\u0005\u001a\u0004\u0018\u00010\u0000\u00a2\u0006\u0002\u0010\u0006R\"\u0010\u0007\u001a\n\u0012\u0004\u0012\u00020\u0000\u0018\u00010\u0008X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\t\u0010\n\"\u0004\u0008\u000b\u0010\u000cR\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0001\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\r\u0010\u000eR\u0013\u0010\u0005\u001a\u0004\u0018\u00010\u0000\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000f\u0010\u0010R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0011\u0010\u0012\u00a8\u0006\u0013"
+        "\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0010(\n\u0002\u0008\u0005\u0008\u0002\u0018\u00002\u00020\u0001B#\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0008\u0010\u0004\u001a\u0004\u0018\u00010\u0001\u0012\u0008\u0010\u0005\u001a\u0004\u0018\u00010\u0000\u00a2\u0006\u0004\u0008\u0006\u0010\u0007R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0008\u0010\tR\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0001\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\n\u0010\u000bR\u0013\u0010\u0005\u001a\u0004\u0018\u00010\u0000\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000c\u0010\rR\"\u0010\u000e\u001a\n\u0012\u0004\u0012\u00020\u0000\u0018\u00010\u000fX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0010\u0010\u0011\"\u0004\u0008\u0012\u0010\u0013\u00a8\u0006\u0014"
     }
     d2 = {
         "Lkotlin/io/path/PathNode;",
@@ -15,25 +15,26 @@
         "Ljava/nio/file/Path;",
         "key",
         "parent",
+        "<init>",
         "(Ljava/nio/file/Path;Ljava/lang/Object;Lkotlin/io/path/PathNode;)V",
+        "getPath",
+        "()Ljava/nio/file/Path;",
+        "getKey",
+        "()Ljava/lang/Object;",
+        "getParent",
+        "()Lkotlin/io/path/PathNode;",
         "contentIterator",
         "",
         "getContentIterator",
         "()Ljava/util/Iterator;",
         "setContentIterator",
         "(Ljava/util/Iterator;)V",
-        "getKey",
-        "()Ljava/lang/Object;",
-        "getParent",
-        "()Lkotlin/io/path/PathNode;",
-        "getPath",
-        "()Ljava/nio/file/Path;",
         "kotlin-stdlib-jdk7"
     }
     k = 0x1
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x30
@@ -66,7 +67,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 119
+    .line 118
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlin/io/path/PathNode;->path:Ljava/nio/file/Path;
@@ -91,7 +92,7 @@
         }
     .end annotation
 
-    .line 120
+    .line 119
     iget-object p0, p0, Lkotlin/io/path/PathNode;->contentIterator:Ljava/util/Iterator;
 
     return-object p0
@@ -100,7 +101,7 @@
 .method public final getKey()Ljava/lang/Object;
     .locals 0
 
-    .line 119
+    .line 118
     iget-object p0, p0, Lkotlin/io/path/PathNode;->key:Ljava/lang/Object;
 
     return-object p0
@@ -109,7 +110,7 @@
 .method public final getParent()Lkotlin/io/path/PathNode;
     .locals 0
 
-    .line 119
+    .line 118
     iget-object p0, p0, Lkotlin/io/path/PathNode;->parent:Lkotlin/io/path/PathNode;
 
     return-object p0
@@ -118,7 +119,7 @@
 .method public final getPath()Ljava/nio/file/Path;
     .locals 0
 
-    .line 119
+    .line 118
     iget-object p0, p0, Lkotlin/io/path/PathNode;->path:Ljava/nio/file/Path;
 
     return-object p0
@@ -135,7 +136,7 @@
         }
     .end annotation
 
-    .line 120
+    .line 119
     iput-object p1, p0, Lkotlin/io/path/PathNode;->contentIterator:Ljava/util/Iterator;
 
     return-void

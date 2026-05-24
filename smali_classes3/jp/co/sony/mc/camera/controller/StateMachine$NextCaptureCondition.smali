@@ -36,7 +36,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/controller/StateMachine$NextCaptureCondition;
     .locals 3
 
-    .line 4047
+    .line 3904
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$NextCaptureCondition;->READY:Ljp/co/sony/mc/camera/controller/StateMachine$NextCaptureCondition;
 
     sget-object v1, Ljp/co/sony/mc/camera/controller/StateMachine$NextCaptureCondition;->REQUESTED:Ljp/co/sony/mc/camera/controller/StateMachine$NextCaptureCondition;
@@ -53,7 +53,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 4051
+    .line 3908
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$NextCaptureCondition;
 
     const-string v1, "READY"
@@ -64,7 +64,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$NextCaptureCondition;->READY:Ljp/co/sony/mc/camera/controller/StateMachine$NextCaptureCondition;
 
-    .line 4057
+    .line 3914
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$NextCaptureCondition;
 
     const-string v1, "REQUESTED"
@@ -75,7 +75,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$NextCaptureCondition;->REQUESTED:Ljp/co/sony/mc/camera/controller/StateMachine$NextCaptureCondition;
 
-    .line 4063
+    .line 3920
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$NextCaptureCondition;
 
     const-string v1, "UNACCEPTABLE"
@@ -86,7 +86,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$NextCaptureCondition;->UNACCEPTABLE:Ljp/co/sony/mc/camera/controller/StateMachine$NextCaptureCondition;
 
-    .line 4047
+    .line 3904
     invoke-static {}, Ljp/co/sony/mc/camera/controller/StateMachine$NextCaptureCondition;->$values()[Ljp/co/sony/mc/camera/controller/StateMachine$NextCaptureCondition;
 
     move-result-object v0
@@ -98,13 +98,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 4047
+    .line 3904
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -112,8 +123,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/controller/StateMachine$NextCaptureCondition;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 4047
+    .line 3904
     const-class v0, Ljp/co/sony/mc/camera/controller/StateMachine$NextCaptureCondition;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -128,7 +147,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/controller/StateMachine$NextCaptureCondition;
     .locals 1
 
-    .line 4047
+    .line 3904
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$NextCaptureCondition;->$VALUES:[Ljp/co/sony/mc/camera/controller/StateMachine$NextCaptureCondition;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/controller/StateMachine$NextCaptureCondition;->clone()Ljava/lang/Object;

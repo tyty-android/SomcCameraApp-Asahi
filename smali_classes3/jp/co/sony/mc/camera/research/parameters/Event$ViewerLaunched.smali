@@ -38,7 +38,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/research/parameters/Event$ViewerLaunched;
     .locals 2
 
-    .line 303
+    .line 302
     sget-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$ViewerLaunched;->NOT_LAUNCHED:Ljp/co/sony/mc/camera/research/parameters/Event$ViewerLaunched;
 
     sget-object v1, Ljp/co/sony/mc/camera/research/parameters/Event$ViewerLaunched;->LAUNCHED:Ljp/co/sony/mc/camera/research/parameters/Event$ViewerLaunched;
@@ -53,7 +53,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 304
+    .line 303
     new-instance v0, Ljp/co/sony/mc/camera/research/parameters/Event$ViewerLaunched;
 
     const-string v1, "NOT_LAUNCHED"
@@ -64,7 +64,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$ViewerLaunched;->NOT_LAUNCHED:Ljp/co/sony/mc/camera/research/parameters/Event$ViewerLaunched;
 
-    .line 305
+    .line 304
     new-instance v0, Ljp/co/sony/mc/camera/research/parameters/Event$ViewerLaunched;
 
     const-string v1, "LAUNCHED"
@@ -75,7 +75,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$ViewerLaunched;->LAUNCHED:Ljp/co/sony/mc/camera/research/parameters/Event$ViewerLaunched;
 
-    .line 303
+    .line 302
     invoke-static {}, Ljp/co/sony/mc/camera/research/parameters/Event$ViewerLaunched;->$values()[Ljp/co/sony/mc/camera/research/parameters/Event$ViewerLaunched;
 
     move-result-object v0
@@ -87,16 +87,29 @@
 
 .method private constructor <init>(Ljava/lang/String;II)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)V"
         }
     .end annotation
 
-    .line 310
+    .line 309
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 311
+    .line 310
     iput p3, p0, Ljp/co/sony/mc/camera/research/parameters/Event$ViewerLaunched;->mValue:I
 
     return-void
@@ -104,10 +117,18 @@
 
 .method public static getType(Ljp/co/sony/mc/camera/research/parameters/Event$CaptureOperation;)Ljp/co/sony/mc/camera/research/parameters/Event$ViewerLaunched;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "operation"
+        }
+    .end annotation
 
     if-nez p0, :cond_0
 
-    .line 315
+    .line 314
     sget-object p0, Ljp/co/sony/mc/camera/research/parameters/Event$ViewerLaunched;->NOT_LAUNCHED:Ljp/co/sony/mc/camera/research/parameters/Event$ViewerLaunched;
 
     goto :goto_0
@@ -121,8 +142,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/research/parameters/Event$ViewerLaunched;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 303
+    .line 302
     const-class v0, Ljp/co/sony/mc/camera/research/parameters/Event$ViewerLaunched;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -137,7 +166,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/research/parameters/Event$ViewerLaunched;
     .locals 1
 
-    .line 303
+    .line 302
     sget-object v0, Ljp/co/sony/mc/camera/research/parameters/Event$ViewerLaunched;->$VALUES:[Ljp/co/sony/mc/camera/research/parameters/Event$ViewerLaunched;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/research/parameters/Event$ViewerLaunched;->clone()Ljava/lang/Object;

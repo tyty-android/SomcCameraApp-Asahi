@@ -3,17 +3,17 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Landroidx/lifecycle/Observer;
 
 
 # instance fields
 .field public final synthetic f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
-.field public final synthetic f$1:Ljp/co/sony/mc/camera/view/hint/HintTextSsFocusGuide;
+.field public final synthetic f$1:Landroid/view/View;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Ljp/co/sony/mc/camera/view/hint/HintTextSsFocusGuide;)V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Landroid/view/View;)V
     .locals 0
 
     .line 0
@@ -21,22 +21,24 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda24;->f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
-    iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda24;->f$1:Ljp/co/sony/mc/camera/view/hint/HintTextSsFocusGuide;
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda24;->f$1:Landroid/view/View;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
+.method public final onChanged(Ljava/lang/Object;)V
     .locals 1
 
     .line 0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda24;->f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda24;->f$1:Ljp/co/sony/mc/camera/view/hint/HintTextSsFocusGuide;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda24;->f$1:Landroid/view/View;
 
-    invoke-static {v0, p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->$r8$lambda$h6Fewv2gIqRKJBlHh7O3NfJhp48(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Ljp/co/sony/mc/camera/view/hint/HintTextSsFocusGuide;Landroid/view/View;)V
+    check-cast p1, Ljava/lang/Boolean;
+
+    invoke-static {v0, p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->$r8$lambda$SQtmkOnGPQKtNC20Ed2MYBa_SGc(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Landroid/view/View;Ljava/lang/Boolean;)V
 
     return-void
 .end method

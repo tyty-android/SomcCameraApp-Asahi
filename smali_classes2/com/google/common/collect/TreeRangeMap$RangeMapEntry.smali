@@ -49,6 +49,19 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/Cut;Lcom/google/common/collect/Cut;Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "lowerBound",
+            "upperBound",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -59,7 +72,7 @@
         }
     .end annotation
 
-    .line 71
+    .line 101
     invoke-static {p1, p2}, Lcom/google/common/collect/Range;->create(Lcom/google/common/collect/Cut;Lcom/google/common/collect/Cut;)Lcom/google/common/collect/Range;
 
     move-result-object p1
@@ -71,6 +84,17 @@
 
 .method constructor <init>(Lcom/google/common/collect/Range;Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "range",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -79,13 +103,13 @@
         }
     .end annotation
 
-    .line 74
+    .line 104
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMapEntry;-><init>()V
 
-    .line 75
+    .line 105
     iput-object p1, p0, Lcom/google/common/collect/TreeRangeMap$RangeMapEntry;->range:Lcom/google/common/collect/Range;
 
-    .line 76
+    .line 106
     iput-object p2, p0, Lcom/google/common/collect/TreeRangeMap$RangeMapEntry;->value:Ljava/lang/Object;
 
     return-void
@@ -95,13 +119,22 @@
 # virtual methods
 .method public contains(Ljava/lang/Comparable;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)Z"
         }
     .end annotation
 
-    .line 90
+    .line 120
     iget-object p0, p0, Lcom/google/common/collect/TreeRangeMap$RangeMapEntry;->range:Lcom/google/common/collect/Range;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Range;->contains(Ljava/lang/Comparable;)Z
@@ -121,7 +154,7 @@
         }
     .end annotation
 
-    .line 81
+    .line 111
     iget-object p0, p0, Lcom/google/common/collect/TreeRangeMap$RangeMapEntry;->range:Lcom/google/common/collect/Range;
 
     return-object p0
@@ -130,7 +163,7 @@
 .method public bridge synthetic getKey()Ljava/lang/Object;
     .locals 0
 
-    .line 65
+    .line 95
     invoke-virtual {p0}, Lcom/google/common/collect/TreeRangeMap$RangeMapEntry;->getKey()Lcom/google/common/collect/Range;
 
     move-result-object p0
@@ -148,7 +181,7 @@
         }
     .end annotation
 
-    .line 94
+    .line 124
     iget-object p0, p0, Lcom/google/common/collect/TreeRangeMap$RangeMapEntry;->range:Lcom/google/common/collect/Range;
 
     iget-object p0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
@@ -166,7 +199,7 @@
         }
     .end annotation
 
-    .line 98
+    .line 128
     iget-object p0, p0, Lcom/google/common/collect/TreeRangeMap$RangeMapEntry;->range:Lcom/google/common/collect/Range;
 
     iget-object p0, p0, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
@@ -182,7 +215,7 @@
         }
     .end annotation
 
-    .line 86
+    .line 116
     iget-object p0, p0, Lcom/google/common/collect/TreeRangeMap$RangeMapEntry;->value:Ljava/lang/Object;
 
     return-object p0

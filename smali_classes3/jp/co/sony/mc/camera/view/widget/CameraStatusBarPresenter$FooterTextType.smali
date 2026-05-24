@@ -90,13 +90,13 @@
 
     const/4 v4, -0x1
 
-    const v5, 0x7f090278
+    const v5, 0x7f090281
 
     const-string v1, "SS"
 
     const/4 v2, 0x0
 
-    const v3, 0x7f09044c
+    const v3, 0x7f09044e
 
     move-object v0, v6
 
@@ -107,15 +107,15 @@
     .line 372
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;
 
-    const v11, 0x7f090263
+    const v11, 0x7f090270
 
-    const v12, 0x7f090277
+    const v12, 0x7f090280
 
     const-string v8, "ISO"
 
     const/4 v9, 0x1
 
-    const v10, 0x7f090261
+    const v10, 0x7f09026e
 
     move-object v7, v0
 
@@ -126,15 +126,15 @@
     .line 373
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;
 
-    const v5, 0x7f0901a9
+    const v5, 0x7f0901ae
 
-    const v6, 0x7f090276
+    const v6, 0x7f09027f
 
     const-string v2, "EV"
 
     const/4 v3, 0x2
 
-    const v4, 0x7f0901a7
+    const v4, 0x7f0901aa
 
     move-object v1, v0
 
@@ -154,6 +154,23 @@
 
 .method private constructor <init>(Ljava/lang/String;IIII)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal",
+            "textResId",
+            "imageResId",
+            "backgroundResId"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(III)V"
@@ -177,6 +194,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 370
     const-class v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;

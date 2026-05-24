@@ -44,10 +44,6 @@
 .field public static final enum WIDE_PHYSICAL:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
 
-# instance fields
-.field private mIsFront:Z
-
-
 # direct methods
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
     .locals 9
@@ -79,7 +75,7 @@
 .end method
 
 .method static constructor <clinit>()V
-    .locals 4
+    .locals 3
 
     .line 37
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
@@ -88,7 +84,7 @@
 
     const/4 v2, 0x0
 
-    invoke-direct {v0, v1, v2, v2}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;-><init>(Ljava/lang/String;IZ)V
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
@@ -97,9 +93,9 @@
 
     const-string v1, "FRONT"
 
-    const/4 v3, 0x1
+    const/4 v2, 0x1
 
-    invoke-direct {v0, v1, v3, v3}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;-><init>(Ljava/lang/String;IZ)V
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->FRONT:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
@@ -108,9 +104,9 @@
 
     const-string v1, "TELE"
 
-    const/4 v3, 0x2
+    const/4 v2, 0x2
 
-    invoke-direct {v0, v1, v3, v2}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;-><init>(Ljava/lang/String;IZ)V
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
@@ -119,9 +115,9 @@
 
     const-string v1, "TELE_PHYSICAL"
 
-    const/4 v3, 0x3
+    const/4 v2, 0x3
 
-    invoke-direct {v0, v1, v3, v2}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;-><init>(Ljava/lang/String;IZ)V
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE_PHYSICAL:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
@@ -130,9 +126,9 @@
 
     const-string v1, "WIDE"
 
-    const/4 v3, 0x4
+    const/4 v2, 0x4
 
-    invoke-direct {v0, v1, v3, v2}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;-><init>(Ljava/lang/String;IZ)V
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
@@ -141,9 +137,9 @@
 
     const-string v1, "WIDE_PHYSICAL"
 
-    const/4 v3, 0x5
+    const/4 v2, 0x5
 
-    invoke-direct {v0, v1, v3, v2}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;-><init>(Ljava/lang/String;IZ)V
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->WIDE_PHYSICAL:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
@@ -152,9 +148,9 @@
 
     const-string v1, "SLOW_MOTION"
 
-    const/4 v3, 0x6
+    const/4 v2, 0x6
 
-    invoke-direct {v0, v1, v3, v2}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;-><init>(Ljava/lang/String;IZ)V
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->SLOW_MOTION:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
@@ -163,9 +159,9 @@
 
     const-string v1, "ULTRA_WIDE"
 
-    const/4 v3, 0x7
+    const/4 v2, 0x7
 
-    invoke-direct {v0, v1, v3, v2}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;-><init>(Ljava/lang/String;IZ)V
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->ULTRA_WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
@@ -174,9 +170,9 @@
 
     const-string v1, "ULTRA_WIDE_PHYSICAL"
 
-    const/16 v3, 0x8
+    const/16 v2, 0x8
 
-    invoke-direct {v0, v1, v3, v2}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;-><init>(Ljava/lang/String;IZ)V
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;-><init>(Ljava/lang/String;I)V
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->ULTRA_WIDE_PHYSICAL:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
@@ -190,27 +186,45 @@
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;IZ)V
+.method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(Z)V"
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
         }
     .end annotation
 
-    .line 50
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
 
-    .line 51
-    iput-boolean p3, p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->mIsFront:Z
+    .line 36
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
 .end method
 
 .method public static convertFrom(Ljava/lang/String;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "name",
+            "defaultCameraId"
+        }
+    .end annotation
 
-    .line 73
+    .line 71
     :try_start_0
     invoke-static {p0}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
@@ -223,7 +237,7 @@
     :catch_0
     const/4 v0, 0x1
 
-    .line 75
+    .line 73
     new-array v0, v0, [Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -258,6 +272,14 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
     .line 36
     const-class v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
@@ -291,7 +313,7 @@
 .method public getCameraInfo()Ljp/co/sony/mc/camera/device/CameraInfo;
     .locals 1
 
-    .line 67
+    .line 65
     invoke-static {}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getAvailableCameraIdsMap()Ljava/util/Map;
 
     move-result-object v0
@@ -306,37 +328,45 @@
 .end method
 
 .method public getFacingId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-    .locals 0
+    .locals 1
 
-    .line 63
-    iget-boolean p0, p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->mIsFront:Z
+    .line 61
+    sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->FRONT:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    if-eqz p0, :cond_0
-
-    sget-object p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->FRONT:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    if-ne p0, v0, :cond_0
 
     goto :goto_0
 
     :cond_0
-    sget-object p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     :goto_0
-    return-object p0
+    return-object v0
 .end method
 
 .method public isFront()Z
-    .locals 0
+    .locals 1
 
-    .line 55
-    iget-boolean p0, p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->mIsFront:Z
+    .line 49
+    sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->FRONT:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
+    if-ne p0, v0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
     return p0
 .end method
 
 .method public isPhysicalCameraId()Z
     .locals 1
 
-    .line 59
+    .line 57
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE_PHYSICAL:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     if-eq p0, v0, :cond_1
@@ -364,10 +394,37 @@
     return p0
 .end method
 
+.method public isTele()Z
+    .locals 1
+
+    .line 53
+    sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    if-eq p0, v0, :cond_1
+
+    sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE_PHYSICAL:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    if-ne p0, v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 p0, 0x1
+
+    :goto_1
+    return p0
+.end method
+
 .method public toLogical()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
     .locals 2
 
-    .line 81
+    .line 79
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$1;->$SwitchMap$jp$co$sony$mc$camera$device$CameraInfo$CameraId:[I
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->ordinal()I
@@ -390,21 +447,66 @@
 
     return-object p0
 
-    .line 87
+    .line 85
     :cond_0
     sget-object p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     return-object p0
 
-    .line 85
+    .line 83
     :cond_1
     sget-object p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     return-object p0
 
-    .line 83
+    .line 81
     :cond_2
     sget-object p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->ULTRA_WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    return-object p0
+.end method
+
+.method public toPhysical()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    .locals 2
+
+    .line 91
+    sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$1;->$SwitchMap$jp$co$sony$mc$camera$device$CameraInfo$CameraId:[I
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->ordinal()I
+
+    move-result v1
+
+    aget v0, v0, v1
+
+    const/4 v1, 0x4
+
+    if-eq v0, v1, :cond_2
+
+    const/4 v1, 0x5
+
+    if-eq v0, v1, :cond_1
+
+    const/4 v1, 0x6
+
+    if-eq v0, v1, :cond_0
+
+    return-object p0
+
+    .line 97
+    :cond_0
+    sget-object p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE_PHYSICAL:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    return-object p0
+
+    .line 95
+    :cond_1
+    sget-object p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->WIDE_PHYSICAL:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    return-object p0
+
+    .line 93
+    :cond_2
+    sget-object p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->ULTRA_WIDE_PHYSICAL:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     return-object p0
 .end method

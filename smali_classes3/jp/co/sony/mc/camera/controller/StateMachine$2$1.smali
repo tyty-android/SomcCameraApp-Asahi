@@ -26,13 +26,24 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine$2;Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            "this$1",
+            "val$result"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 500
+    .line 484
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$2$1;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$2;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/controller/StateMachine$2$1;->val$result:Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;
@@ -47,7 +58,7 @@
 .method public run()V
     .locals 6
 
-    .line 503
+    .line 487
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$2$1;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$2;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/controller/StateMachine$2;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
@@ -64,7 +75,7 @@
 
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mcalculateRemainStorage(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/storage/Storage$StorageType;)V
 
-    .line 504
+    .line 488
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$2$1;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$2;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/controller/StateMachine$2;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
@@ -81,13 +92,26 @@
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$2$1;->val$result:Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;
 
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;->getSavingRequest()Ljp/co/sony/mc/camera/storage/SavingRequest;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/storage/SavingRequest;->isOneShot()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$2$1;->val$result:Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;
+
+    .line 489
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;->isSuccess()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 505
+    .line 490
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$2$1;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$2;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/controller/StateMachine$2;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
@@ -110,8 +134,72 @@
 
     invoke-static {v0, v1, v2}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mchangeTo(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/controller/StateMachine$State;[Ljava/lang/Object;)V
 
-    .line 507
+    .line 492
     :cond_0
+    iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$2$1;->val$result:Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;->isYuvImage()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    .line 493
+    iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$2$1;->val$result:Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;->getRequestedId()I
+
+    move-result v0
+
+    .line 494
+    iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$2$1;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$2;
+
+    iget-object v1, v1, Ljp/co/sony/mc/camera/controller/StateMachine$2;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
+
+    invoke-static {v1, v0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mgetCaptureCallback(Ljp/co/sony/mc/camera/controller/StateMachine;I)Ljp/co/sony/mc/camera/CameraAccessor$CaptureCallback;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_3
+
+    .line 496
+    iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$2$1;->val$result:Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;->isSuccess()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 497
+    iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$2$1;->val$result:Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;->getRequestedId()I
+
+    move-result v1
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$2$1;->val$result:Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;
+
+    invoke-interface {v0, v1, p0}, Ljp/co/sony/mc/camera/CameraAccessor$CaptureCallback;->onStoreFinished(ILjp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
+
+    goto :goto_0
+
+    .line 499
+    :cond_1
+    iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$2$1;->val$result:Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;->getRequestedId()I
+
+    move-result v1
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$2$1;->val$result:Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;
+
+    invoke-interface {v0, v1, p0}, Ljp/co/sony/mc/camera/CameraAccessor$CaptureCallback;->onStoreError(ILjp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
+
+    goto :goto_0
+
+    .line 503
+    :cond_2
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$2$1;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$2;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/controller/StateMachine$2;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
@@ -126,5 +214,7 @@
 
     invoke-virtual {v0, v1, p0}, Ljp/co/sony/mc/camera/controller/StateMachine;->sendEvent(Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;[Ljava/lang/Object;)V
 
+    :cond_3
+    :goto_0
     return-void
 .end method

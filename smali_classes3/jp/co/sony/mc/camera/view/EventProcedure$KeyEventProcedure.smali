@@ -37,13 +37,21 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/view/EventProcedure;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 458
+    .line 457
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 461
+    .line 460
     new-instance p1, Ljp/co/sony/mc/camera/view/EventProcedure$VariableUserEventTicker;
 
     const/4 v0, 0x0
@@ -58,7 +66,7 @@
 .method private closeZoomLens()V
     .locals 0
 
-    .line 855
+    .line 840
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -72,22 +80,30 @@
 
 .method private dispatchKeyDown(Landroid/view/KeyEvent;)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
 
-    .line 729
+    .line 714
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getRepeatCount()I
 
     move-result v0
 
     if-lez v0, :cond_0
 
-    .line 735
+    .line 720
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->dispatchKeyDownAfterTheSecondTime(Landroid/view/KeyEvent;)Z
 
     move-result p0
 
     return p0
 
-    .line 737
+    .line 722
     :cond_0
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->dispatchKeyDownInTheFirstTime(Landroid/view/KeyEvent;)Z
 
@@ -98,15 +114,23 @@
 
 .method private dispatchKeyDownAfterTheSecondTime(Landroid/view/KeyEvent;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
 
-    .line 701
+    .line 686
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmKeyEventTranslator(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/util/KeyEventTranslator;
 
     move-result-object p0
 
-    .line 702
+    .line 687
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
 
     move-result p1
@@ -115,7 +139,7 @@
 
     move-result-object p0
 
-    .line 704
+    .line 689
     sget-object p1, Ljp/co/sony/mc/camera/view/EventProcedure$1;->$SwitchMap$jp$co$sony$mc$camera$util$KeyEventTranslator$TranslatedKeyCode:[I
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->ordinal()I
@@ -143,16 +167,24 @@
 .end method
 
 .method private dispatchKeyDownInTheFirstTime(Landroid/view/KeyEvent;)Z
-    .locals 9
+    .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
 
-    .line 499
+    .line 498
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
 
     move-result-object v0
 
-    .line 500
+    .line 499
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
 
     move-result v1
@@ -165,7 +197,7 @@
 
     move-result v3
 
-    .line 499
+    .line 498
     invoke-static {v1, v2, v3}, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventSource;->from(III)Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventSource;
 
     move-result-object v1
@@ -180,7 +212,7 @@
 
     return v1
 
-    .line 504
+    .line 503
     :cond_0
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
@@ -194,14 +226,14 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;
 
-    .line 505
+    .line 504
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v2
 
     sget-object v3, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 506
+    .line 505
     invoke-virtual {v2, v3}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object v2
@@ -212,14 +244,14 @@
 
     move-result-object v2
 
-    .line 507
+    .line 506
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v3}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmKeyEventTranslator(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/util/KeyEventTranslator;
 
     move-result-object v3
 
-    .line 508
+    .line 507
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
 
     move-result v4
@@ -228,7 +260,7 @@
 
     move-result-object v3
 
-    .line 510
+    .line 509
     sget-object v4, Ljp/co/sony/mc/camera/view/EventProcedure$1;->$SwitchMap$jp$co$sony$mc$camera$util$KeyEventTranslator$TranslatedKeyCode:[I
 
     invoke-virtual {v3}, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->ordinal()I
@@ -244,7 +276,7 @@
     :pswitch_0
     return v5
 
-    .line 689
+    .line 674
     :pswitch_1
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->isZoomLensOpened()Z
 
@@ -258,7 +290,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 690
+    .line 675
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->startZooming()V
 
     return v1
@@ -266,7 +298,7 @@
     :cond_1
     return v5
 
-    .line 682
+    .line 667
     :pswitch_2
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->isZoomLensOpened()Z
 
@@ -280,7 +312,7 @@
 
     if-eqz p1, :cond_2
 
-    .line 683
+    .line 668
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->startZooming()V
 
     return v1
@@ -288,7 +320,7 @@
     :cond_2
     return v5
 
-    .line 679
+    .line 664
     :pswitch_3
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->isZoomLensOpened()Z
 
@@ -299,7 +331,7 @@
     :pswitch_4
     return v1
 
-    .line 527
+    .line 526
     :pswitch_5
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
@@ -313,7 +345,7 @@
 
     if-eqz p1, :cond_3
 
-    .line 528
+    .line 527
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -324,7 +356,7 @@
 
     return v1
 
-    .line 531
+    .line 530
     :cond_3
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
 
@@ -332,7 +364,7 @@
 
     if-eqz p1, :cond_4
 
-    .line 532
+    .line 531
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmUserOperationListener(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/UserOperationListener;
@@ -343,7 +375,7 @@
 
     return v1
 
-    .line 535
+    .line 534
     :cond_4
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;->isSelftimerMode()Z
 
@@ -351,7 +383,7 @@
 
     if-eqz p1, :cond_5
 
-    .line 536
+    .line 535
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmUserOperationListener(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/UserOperationListener;
@@ -360,7 +392,7 @@
 
     invoke-interface {p1}, Ljp/co/sony/mc/camera/view/UserOperationListener;->onFocusPressedDuringSelftimer()V
 
-    .line 538
+    .line 537
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p1
@@ -373,7 +405,7 @@
 
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
-    .line 540
+    .line 539
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->AF_S:Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
     if-eq p1, v0, :cond_5
@@ -384,7 +416,7 @@
 
     return v1
 
-    .line 545
+    .line 544
     :cond_5
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
@@ -396,7 +428,7 @@
 
     return v1
 
-    .line 518
+    .line 517
     :pswitch_6
     invoke-direct {p0, v5}, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->prepareZooming(Z)Z
 
@@ -404,13 +436,13 @@
 
     if-eqz p1, :cond_6
 
-    .line 519
+    .line 518
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->startZooming()V
 
     :cond_6
     return v1
 
-    .line 512
+    .line 511
     :pswitch_7
     invoke-direct {p0, v1}, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->prepareZooming(Z)Z
 
@@ -418,13 +450,13 @@
 
     if-eqz p1, :cond_7
 
-    .line 513
+    .line 512
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->startZooming()V
 
     :cond_7
     return v1
 
-    .line 551
+    .line 550
     :pswitch_8
     iget-object v4, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
@@ -438,7 +470,7 @@
 
     if-eqz v4, :cond_8
 
-    .line 552
+    .line 551
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -449,7 +481,7 @@
 
     return v1
 
-    .line 557
+    .line 556
     :cond_8
     iget-object v4, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
@@ -463,13 +495,7 @@
 
     if-nez v4, :cond_9
 
-    invoke-virtual {v2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isStreaming()Z
-
-    move-result v4
-
-    if-nez v4, :cond_9
-
-    .line 558
+    .line 557
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -480,7 +506,7 @@
 
     return v1
 
-    .line 563
+    .line 562
     :cond_9
     :pswitch_9
     iget-object v4, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
@@ -495,7 +521,7 @@
 
     if-eqz v4, :cond_a
 
-    .line 564
+    .line 563
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -506,28 +532,28 @@
 
     return v1
 
-    .line 567
+    .line 566
     :cond_a
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;->isSelftimerMode()Z
 
     move-result v4
 
-    if-nez v4, :cond_1a
+    if-nez v4, :cond_18
 
-    .line 568
+    .line 567
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
 
-    move-result v4
+    move-result v2
 
-    const/16 v6, 0x82
+    const/16 v4, 0x82
 
-    const/16 v7, 0x19
+    const/16 v6, 0x19
 
-    const/16 v8, 0x18
+    const/16 v7, 0x18
 
-    if-eqz v4, :cond_11
+    if-eqz v2, :cond_f
 
-    .line 569
+    .line 568
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmUserOperationListener(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/UserOperationListener;
@@ -536,7 +562,7 @@
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/view/UserOperationListener;->onShutterPressedDuringVideo()V
 
-    .line 570
+    .line 569
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -547,28 +573,9 @@
 
     move-result v0
 
-    if-eqz v0, :cond_c
-
-    .line 571
-    invoke-virtual {v2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isStreaming()Z
-
-    move-result v0
-
     if-eqz v0, :cond_b
 
-    .line 572
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->confirmStopStreaming()V
-
-    goto :goto_0
-
-    .line 574
-    :cond_b
+    .line 570
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -579,27 +586,8 @@
 
     goto :goto_0
 
-    .line 577
-    :cond_c
-    invoke-virtual {v2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isStreaming()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_d
-
-    .line 578
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->prepareStreaming()V
-
-    goto :goto_0
-
-    .line 580
-    :cond_d
+    .line 572
+    :cond_b
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -608,7 +596,7 @@
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->prepareRecording()V
 
-    .line 581
+    .line 573
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -617,32 +605,32 @@
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->startRecording()V
 
-    .line 584
+    .line 575
     :goto_0
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
 
     move-result p0
 
-    if-eq p0, v8, :cond_10
+    if-eq p0, v7, :cond_e
 
-    .line 585
+    .line 576
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
 
     move-result p0
 
-    if-ne p0, v7, :cond_e
+    if-ne p0, v6, :cond_c
 
     goto :goto_1
 
-    .line 590
-    :cond_e
+    .line 579
+    :cond_c
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
 
     move-result p0
 
-    if-ne p0, v6, :cond_f
+    if-ne p0, v4, :cond_d
 
-    .line 591
+    .line 580
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent$Context;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent$Context;->getEnv()Ljp/co/sony/mc/camera/idd/value/IddEnvironment;
@@ -651,25 +639,13 @@
 
     sget-object p1, Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;->OTHER:Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;
 
-    .line 592
+    .line 581
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->setCaptureTrigger(Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;)V
-
-    .line 593
-    sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;->getEnv()Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;
-
-    move-result-object p0
-
-    sget-object p1, Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;->OTHER:Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;
-
-    .line 594
-    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->setCaptureTrigger(Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;)V
 
     goto :goto_2
 
-    .line 596
-    :cond_f
+    .line 583
+    :cond_d
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent$Context;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent$Context;->getEnv()Ljp/co/sony/mc/camera/idd/value/IddEnvironment;
@@ -678,25 +654,13 @@
 
     sget-object p1, Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;->CAMERA_KEY:Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;
 
-    .line 597
+    .line 584
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->setCaptureTrigger(Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;)V
-
-    .line 598
-    sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;->getEnv()Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;
-
-    move-result-object p0
-
-    sget-object p1, Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;->CAMERA_KEY:Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;
-
-    .line 599
-    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->setCaptureTrigger(Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;)V
 
     goto :goto_2
 
-    .line 586
-    :cond_10
+    .line 577
+    :cond_e
     :goto_1
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent$Context;
 
@@ -706,26 +670,14 @@
 
     sget-object p1, Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;->VOLUME_KEY:Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;
 
-    .line 587
+    .line 578
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->setCaptureTrigger(Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;)V
-
-    .line 588
-    sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;->getEnv()Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;
-
-    move-result-object p0
-
-    sget-object p1, Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;->VOLUME_KEY:Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;
-
-    .line 589
-    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->setCaptureTrigger(Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;)V
 
     :goto_2
     return v1
 
-    .line 604
-    :cond_11
+    .line 589
+    :cond_f
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -736,9 +688,9 @@
 
     move-result v2
 
-    if-eqz v2, :cond_1e
+    if-eqz v2, :cond_1c
 
-    .line 605
+    .line 590
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -749,7 +701,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_12
+    if-nez v2, :cond_10
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
@@ -757,12 +709,12 @@
 
     move-result-object v2
 
-    .line 606
+    .line 591
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/view/FragmentController;->isCaptureReadyWorking()Z
 
     move-result v2
 
-    if-nez v2, :cond_12
+    if-nez v2, :cond_10
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
@@ -770,22 +722,22 @@
 
     move-result-object v2
 
-    .line 607
+    .line 592
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/view/FragmentController;->isInFocusSearch()Z
 
     move-result v2
 
-    if-eqz v2, :cond_1e
+    if-eqz v2, :cond_1c
 
-    .line 610
-    :cond_12
+    .line 595
+    :cond_10
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;->isBurstMode()Z
 
     move-result v2
 
-    if-nez v2, :cond_13
+    if-nez v2, :cond_11
 
-    .line 611
+    .line 596
     sget-object v2, Ljp/co/sony/mc/camera/view/EventProcedure$1;->$SwitchMap$jp$co$sony$mc$camera$util$KeyEventTranslator$TranslatedKeyCode:[I
 
     invoke-virtual {v3}, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->ordinal()I
@@ -794,39 +746,39 @@
 
     aget v2, v2, v3
 
-    if-eq v2, v1, :cond_14
+    if-eq v2, v1, :cond_12
 
     const/4 v3, 0x2
 
-    if-eq v2, v3, :cond_14
+    if-eq v2, v3, :cond_12
 
-    :cond_13
+    :cond_11
     move v5, v1
 
-    .line 622
-    :cond_14
+    .line 607
+    :cond_12
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
 
     move-result-object v2
 
-    .line 623
+    .line 608
     invoke-virtual {v2, v5}, Ljp/co/sony/mc/camera/view/FragmentController;->requestCaptureReady(Z)Z
 
     move-result v2
 
-    if-nez v2, :cond_15
+    if-nez v2, :cond_13
 
     return v1
 
-    .line 627
-    :cond_15
+    .line 612
+    :cond_13
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;->TAKE_PHOTO:Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;
 
-    if-ne v0, v2, :cond_16
+    if-ne v0, v2, :cond_14
 
-    .line 628
+    .line 613
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -837,8 +789,8 @@
 
     goto :goto_3
 
-    .line 630
-    :cond_16
+    .line 615
+    :cond_14
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -847,32 +799,32 @@
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->requestBurstCapture()V
 
-    .line 633
+    .line 618
     :goto_3
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
 
     move-result p0
 
-    if-eq p0, v8, :cond_19
+    if-eq p0, v7, :cond_17
 
-    .line 634
+    .line 619
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
 
     move-result p0
 
-    if-ne p0, v7, :cond_17
+    if-ne p0, v6, :cond_15
 
     goto :goto_4
 
-    .line 637
-    :cond_17
+    .line 622
+    :cond_15
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
 
     move-result p0
 
-    if-ne p0, v6, :cond_18
+    if-ne p0, v4, :cond_16
 
-    .line 638
+    .line 623
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent$Context;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent$Context;->getEnv()Ljp/co/sony/mc/camera/idd/value/IddEnvironment;
@@ -881,13 +833,13 @@
 
     sget-object p1, Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;->OTHER:Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;
 
-    .line 639
+    .line 624
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->setCaptureTrigger(Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;)V
 
     goto :goto_5
 
-    .line 641
-    :cond_18
+    .line 626
+    :cond_16
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent$Context;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent$Context;->getEnv()Ljp/co/sony/mc/camera/idd/value/IddEnvironment;
@@ -896,13 +848,13 @@
 
     sget-object p1, Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;->CAMERA_KEY:Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;
 
-    .line 642
+    .line 627
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->setCaptureTrigger(Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;)V
 
     goto :goto_5
 
-    .line 635
-    :cond_19
+    .line 620
+    :cond_17
     :goto_4
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent$Context;
 
@@ -912,13 +864,13 @@
 
     sget-object p1, Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;->VOLUME_KEY:Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;
 
-    .line 636
+    .line 621
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->setCaptureTrigger(Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;)V
 
     goto :goto_5
 
-    .line 647
-    :cond_1a
+    .line 632
+    :cond_18
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -929,9 +881,9 @@
 
     move-result p1
 
-    if-nez p1, :cond_1b
+    if-nez p1, :cond_19
 
-    .line 648
+    .line 633
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -942,8 +894,8 @@
 
     return v1
 
-    .line 651
-    :cond_1b
+    .line 636
+    :cond_19
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -954,33 +906,33 @@
 
     move-result p1
 
-    if-eqz p1, :cond_1e
+    if-eqz p1, :cond_1c
 
-    .line 652
+    .line 637
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p1
 
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    .line 653
+    .line 638
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
-    .line 654
+    .line 639
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->AF_S:Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
-    if-eq p1, v0, :cond_1c
+    if-eq p1, v0, :cond_1a
 
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->MF:Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
-    if-ne p1, v0, :cond_1d
+    if-ne p1, v0, :cond_1b
 
-    .line 655
-    :cond_1c
+    .line 640
+    :cond_1a
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -989,8 +941,8 @@
 
     invoke-virtual {p1, v5}, Ljp/co/sony/mc/camera/view/FragmentController;->requestCaptureReady(Z)Z
 
-    .line 658
-    :cond_1d
+    .line 643
+    :cond_1b
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -999,7 +951,7 @@
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->toggleSelfTimer()V
 
-    .line 659
+    .line 644
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent$Context;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent$Context;->getEnv()Ljp/co/sony/mc/camera/idd/value/IddEnvironment;
@@ -1008,14 +960,12 @@
 
     sget-object p1, Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;->SELF_TIMER:Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;
 
-    .line 660
+    .line 645
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->setCaptureTrigger(Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;)V
 
-    :cond_1e
+    :cond_1c
     :goto_5
     return v1
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x1
@@ -1039,15 +989,23 @@
 
 .method private dispatchKeyLongPress(Landroid/view/KeyEvent;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
 
-    .line 835
+    .line 820
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmKeyEventTranslator(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/util/KeyEventTranslator;
 
     move-result-object p0
 
-    .line 836
+    .line 821
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
 
     move-result p1
@@ -1056,7 +1014,7 @@
 
     move-result-object p0
 
-    .line 838
+    .line 823
     sget-object p1, Ljp/co/sony/mc/camera/view/EventProcedure$1;->$SwitchMap$jp$co$sony$mc$camera$util$KeyEventTranslator$TranslatedKeyCode:[I
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->ordinal()I
@@ -1072,8 +1030,16 @@
 
 .method private dispatchKeyUp(Landroid/view/KeyEvent;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
 
-    .line 749
+    .line 734
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
@@ -1086,14 +1052,14 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;
 
-    .line 750
+    .line 735
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v1
 
     sget-object v2, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 751
+    .line 736
     invoke-virtual {v1, v2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object v1
@@ -1104,7 +1070,7 @@
 
     move-result-object v1
 
-    .line 753
+    .line 738
     sget-object v2, Ljp/co/sony/mc/camera/view/EventProcedure$1;->$SwitchMap$jp$co$sony$mc$camera$util$KeyEventTranslator$TranslatedKeyCode:[I
 
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
@@ -1135,7 +1101,7 @@
 
     return v2
 
-    .line 823
+    .line 808
     :pswitch_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->isZoomLensOpened()Z
 
@@ -1143,7 +1109,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 824
+    .line 809
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->stopZooming()V
 
     return v3
@@ -1151,7 +1117,7 @@
     :cond_0
     return v2
 
-    .line 818
+    .line 803
     :pswitch_1
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->isZoomLensOpened()Z
 
@@ -1162,7 +1128,7 @@
     :pswitch_2
     return v3
 
-    .line 801
+    .line 786
     :pswitch_3
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->isZoomLensOpened()Z
 
@@ -1170,12 +1136,12 @@
 
     if-eqz p1, :cond_1
 
-    .line 802
+    .line 787
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->closeZoomLens()V
 
     return v3
 
-    .line 805
+    .line 790
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
@@ -1189,7 +1155,7 @@
 
     return p0
 
-    .line 782
+    .line 767
     :pswitch_4
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
 
@@ -1199,7 +1165,7 @@
 
     return v3
 
-    .line 787
+    .line 772
     :cond_2
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
@@ -1213,7 +1179,7 @@
 
     if-nez p1, :cond_3
 
-    .line 788
+    .line 773
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -1225,7 +1191,7 @@
     :cond_3
     return v3
 
-    .line 764
+    .line 749
     :pswitch_5
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
 
@@ -1235,7 +1201,7 @@
 
     return v3
 
-    .line 767
+    .line 752
     :cond_4
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;->isSelftimerMode()Z
 
@@ -1243,7 +1209,7 @@
 
     if-eqz p1, :cond_5
 
-    .line 769
+    .line 754
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p1
@@ -1256,7 +1222,7 @@
 
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
-    .line 771
+    .line 756
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->AF_S:Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
     if-eq p1, v0, :cond_5
@@ -1267,7 +1233,7 @@
 
     return v3
 
-    .line 776
+    .line 761
     :cond_5
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
@@ -1281,7 +1247,7 @@
 
     if-nez p1, :cond_6
 
-    .line 777
+    .line 762
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -1293,7 +1259,7 @@
     :cond_6
     return v3
 
-    .line 761
+    .line 746
     :pswitch_6
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
 
@@ -1301,13 +1267,13 @@
 
     return p0
 
-    .line 757
+    .line 742
     :pswitch_7
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->stopZooming()V
 
     return v3
 
-    .line 795
+    .line 780
     :pswitch_8
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;->isBurstMode()Z
 
@@ -1315,7 +1281,7 @@
 
     if-eqz p1, :cond_7
 
-    .line 796
+    .line 781
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -1350,7 +1316,7 @@
 .method private isZoomLensOpened()Z
     .locals 0
 
-    .line 851
+    .line 836
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -1367,7 +1333,7 @@
 .method private performKeyZooming()V
     .locals 5
 
-    .line 883
+    .line 868
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -1382,7 +1348,7 @@
 
     return-void
 
-    .line 887
+    .line 872
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->mVariableIndex:Ljp/co/sony/mc/camera/view/angle/VariableIndex;
 
@@ -1390,12 +1356,12 @@
 
     move-result v0
 
-    .line 888
+    .line 873
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->mVariableIndexCalculator:Ljp/co/sony/mc/camera/view/angle/VariableIndex$Calculator;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->mVariableIndex:Ljp/co/sony/mc/camera/view/angle/VariableIndex;
 
-    .line 889
+    .line 874
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v3
@@ -1408,21 +1374,21 @@
 
     move-result-object v3
 
-    .line 888
+    .line 873
     invoke-interface {v1, v2, v3}, Ljp/co/sony/mc/camera/view/angle/VariableIndex$Calculator;->calculate(Ljp/co/sony/mc/camera/view/angle/VariableIndex;[Ljava/lang/Object;)Ljp/co/sony/mc/camera/view/angle/VariableIndex;
 
     move-result-object v1
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->mVariableIndex:Ljp/co/sony/mc/camera/view/angle/VariableIndex;
 
-    .line 890
+    .line 875
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/angle/VariableIndex;->getIndex()I
 
     move-result v1
 
     if-eq v0, v1, :cond_1
 
-    .line 892
+    .line 877
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -1443,8 +1409,16 @@
 
 .method private prepareZooming(Z)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "isZoomIn"
+        }
+    .end annotation
 
-    .line 859
+    .line 844
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -1457,14 +1431,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 860
+    .line 845
     new-instance v0, Ljp/co/sony/mc/camera/view/angle/KeyZoomStepCalculator;
 
     invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/angle/KeyZoomStepCalculator;-><init>(Z)V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->mVariableIndexCalculator:Ljp/co/sony/mc/camera/view/angle/VariableIndex$Calculator;
 
-    .line 861
+    .line 846
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$mgetVariableIndex(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/angle/VariableIndex;
@@ -1473,7 +1447,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->mVariableIndex:Ljp/co/sony/mc/camera/view/angle/VariableIndex;
 
-    .line 862
+    .line 847
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/angle/VariableIndex;->getIndex()I
 
     move-result p1
@@ -1493,7 +1467,7 @@
 .method private startZooming()V
     .locals 2
 
-    .line 869
+    .line 854
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -1508,7 +1482,7 @@
 
     return-void
 
-    .line 873
+    .line 858
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->mKeyEventTicker:Ljp/co/sony/mc/camera/view/EventProcedure$VariableUserEventTicker;
 
@@ -1526,12 +1500,12 @@
 .method private stopZooming()V
     .locals 2
 
-    .line 897
+    .line 882
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->mKeyEventTicker:Ljp/co/sony/mc/camera/view/EventProcedure$VariableUserEventTicker;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/EventProcedure$VariableUserEventTicker;->stop()V
 
-    .line 898
+    .line 883
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -1546,13 +1520,13 @@
 
     return-void
 
-    .line 902
+    .line 887
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->mVariableIndex:Ljp/co/sony/mc/camera/view/angle/VariableIndex;
 
     if-eqz v0, :cond_1
 
-    .line 903
+    .line 888
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -1561,7 +1535,7 @@
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->finishZoom()V
 
-    .line 905
+    .line 890
     iget v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->mInitialZoomStep:I
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->mVariableIndex:Ljp/co/sony/mc/camera/view/angle/VariableIndex;
@@ -1572,7 +1546,7 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 906
+    .line 891
     new-instance v0, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;-><init>()V
@@ -1585,14 +1559,14 @@
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->ZOOM_RATIO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    .line 907
+    .line 892
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->setting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
     move-result-object v0
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->send()V
 
-    .line 908
+    .line 893
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -1605,7 +1579,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 909
+    .line 894
     sget-object v0, Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent$Context;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent$Context;->getEnv()Ljp/co/sony/mc/camera/idd/value/IddEnvironment;
@@ -1614,22 +1588,13 @@
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->incrementCountZoomInRecording()V
 
-    .line 910
-    sget-object v0, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;->getEnv()Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->IncrementCountZoomInRecording()V
-
     :cond_1
     const/4 v0, 0x0
 
-    .line 914
+    .line 898
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->mVariableIndex:Ljp/co/sony/mc/camera/view/angle/VariableIndex;
 
-    .line 915
+    .line 899
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->mVariableIndexCalculator:Ljp/co/sony/mc/camera/view/angle/VariableIndex$Calculator;
 
     return-void
@@ -1640,7 +1605,7 @@
 .method public clearKeyEventIfInHandling()V
     .locals 1
 
-    .line 493
+    .line 492
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmKeyEventTranslator(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/util/KeyEventTranslator;
@@ -1649,7 +1614,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 494
+    .line 493
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmKeyEventTranslator(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/util/KeyEventTranslator;
@@ -1664,15 +1629,23 @@
 
 .method public sendKeyDown(Landroid/view/KeyEvent;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
 
-    .line 465
+    .line 464
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x1
 
-    .line 466
+    .line 465
     new-array v0, v0, [Ljava/lang/String;
 
     const/4 v1, 0x0
@@ -1683,7 +1656,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 468
+    .line 467
     :cond_0
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->dispatchKeyDown(Landroid/view/KeyEvent;)Z
 
@@ -1694,15 +1667,23 @@
 
 .method public sendKeyLongPress(Landroid/view/KeyEvent;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
 
-    .line 479
+    .line 478
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x1
 
-    .line 480
+    .line 479
     new-array v0, v0, [Ljava/lang/String;
 
     const/4 v1, 0x0
@@ -1713,7 +1694,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 482
+    .line 481
     :cond_0
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->dispatchKeyLongPress(Landroid/view/KeyEvent;)Z
 
@@ -1724,15 +1705,23 @@
 
 .method public sendKeyUp(Landroid/view/KeyEvent;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "event"
+        }
+    .end annotation
 
-    .line 472
+    .line 471
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x1
 
-    .line 473
+    .line 472
     new-array v0, v0, [Ljava/lang/String;
 
     const/4 v1, 0x0
@@ -1743,7 +1732,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 475
+    .line 474
     :cond_0
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->dispatchKeyUp(Landroid/view/KeyEvent;)Z
 
@@ -1754,8 +1743,16 @@
 
 .method public setKeyEventMonitorListener(Ljp/co/sony/mc/camera/util/KeyEventTranslator$KeyEventMonitorListener;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
 
-    .line 487
+    .line 486
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmKeyEventTranslator(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/util/KeyEventTranslator;
@@ -1764,7 +1761,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 488
+    .line 487
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$KeyEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmKeyEventTranslator(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/util/KeyEventTranslator;

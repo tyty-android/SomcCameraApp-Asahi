@@ -44,6 +44,20 @@
 
 .method public static getThumbnail(Landroid/content/ContentResolver;JILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "cr",
+            "origId",
+            "kind",
+            "options"
+        }
+    .end annotation
 
     const/4 p0, 0x0
 

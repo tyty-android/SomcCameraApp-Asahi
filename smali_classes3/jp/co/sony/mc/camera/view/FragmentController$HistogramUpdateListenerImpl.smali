@@ -24,11 +24,19 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "controller"
+        }
+    .end annotation
 
-    .line 7940
+    .line 6824
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7941
+    .line 6825
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$HistogramUpdateListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     return-void
@@ -38,8 +46,16 @@
 # virtual methods
 .method public onHistogramChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$HistogramResult;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "histogramResult"
+        }
+    .end annotation
 
-    .line 7946
+    .line 6830
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$HistogramUpdateListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     const-class v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
@@ -54,7 +70,7 @@
 
     move-result-object p0
 
-    .line 7947
+    .line 6831
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/ProModeFinderOverlayUiState;->onHistogramChangedEvent(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$HistogramResult;)V
 
     return-void

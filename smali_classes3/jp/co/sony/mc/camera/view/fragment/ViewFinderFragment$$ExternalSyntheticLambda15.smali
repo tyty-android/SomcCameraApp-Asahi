@@ -3,36 +3,34 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroidx/lifecycle/Observer;
-
-
-# instance fields
-.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
+.implements Lkotlin/jvm/functions/Function3;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;)V
+.method public synthetic constructor <init>()V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda15;->f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onChanged(Ljava/lang/Object;)V
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda15;->f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
+    check-cast p1, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
 
-    check-cast p1, Ljava/lang/Boolean;
+    check-cast p2, Landroid/util/Size;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->$r8$lambda$UKAI5RyNAvLBROvpG2e5uDYvljc(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Ljava/lang/Boolean;)V
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    return-void
+    invoke-static {p1, p2, p3}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->$r8$lambda$bV3Zxpg9eHJKTxXg-tolrCGMavI(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Triple;
+
+    move-result-object p0
+
+    return-object p0
 .end method

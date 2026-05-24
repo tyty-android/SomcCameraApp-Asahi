@@ -153,6 +153,16 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/controller/qrdetection/QrDetectionController$QrDetectResultListener;Landroid/os/Handler;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "listener",
+            "scheduler"
+        }
+    .end annotation
 
     .line 65
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -211,6 +221,14 @@
 
 .method private Detect([B)Lcom/google/zxing/Result;
     .locals 13
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "yuvbyte"
+        }
+    .end annotation
 
     .line 72
     new-instance v0, Landroid/graphics/Rect;
@@ -321,6 +339,15 @@
 
 .method private detectResultFromSource(Lcom/google/zxing/LuminanceSource;)Lcom/google/zxing/Result;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "source"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/zxing/NotFoundException;
@@ -388,6 +415,18 @@
 
 .method private postDetect(IILjava/nio/ByteBuffer;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "width",
+            "height",
+            "byteBuffer"
+        }
+    .end annotation
 
     .line 182
     iget v0, p0, Ljp/co/sony/mc/camera/controller/qrdetection/QrDetector;->mImageWidth:I
@@ -517,6 +556,14 @@
 
 .method public startDetect(Ljp/co/sony/mc/camera/device/PreviewFrameProvider;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "receiver"
+        }
+    .end annotation
 
     .line 145
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/qrdetection/QrDetector;->mPreviewFrameProvider:Ljp/co/sony/mc/camera/device/PreviewFrameProvider;

@@ -61,6 +61,16 @@
 
 .method constructor <init>(Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;Landroid/content/Context;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "context"
+        }
+    .end annotation
 
     .line 415
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LevelMeterFeedbackPlayer;->this$0:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;
@@ -177,6 +187,18 @@
 # virtual methods
 .method playSound(FFLjp/co/sony/mc/camera/view/HorizontalLevelMeterView$SoundType;)V
     .locals 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "roll",
+            "pitch",
+            "soundType"
+        }
+    .end annotation
 
     .line 433
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LevelMeterFeedbackPlayer;->this$0:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;

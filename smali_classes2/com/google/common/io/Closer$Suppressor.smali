@@ -16,4 +16,16 @@
 
 # virtual methods
 .method public abstract suppress(Ljava/io/Closeable;Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "closeable",
+            "thrown",
+            "suppressed"
+        }
+    .end annotation
 .end method

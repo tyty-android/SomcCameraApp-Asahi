@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
+    accessFlags = 0x1a
     name = "Base64Encoding"
 .end annotation
 
@@ -18,14 +18,24 @@
 .method private constructor <init>(Lcom/google/common/io/BaseEncoding$Alphabet;Ljava/lang/Character;)V
     .locals 0
     .param p2    # Ljava/lang/Character;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "alphabet",
+            "paddingChar"
+        }
+    .end annotation
 
-    .line 942
+    .line 1006
     invoke-direct {p0, p1, p2}, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding;-><init>(Lcom/google/common/io/BaseEncoding$Alphabet;Ljava/lang/Character;)V
 
-    .line 943
+    .line 1007
     invoke-static {p1}, Lcom/google/common/io/BaseEncoding$Alphabet;->access$000(Lcom/google/common/io/BaseEncoding$Alphabet;)[C
 
     move-result-object p0
@@ -52,11 +62,23 @@
 .method constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Character;)V
     .locals 1
     .param p3    # Ljava/lang/Character;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "name",
+            "alphabetChars",
+            "paddingChar"
+        }
+    .end annotation
 
-    .line 938
+    .line 1002
     new-instance v0, Lcom/google/common/io/BaseEncoding$Alphabet;
 
     invoke-virtual {p2}, Ljava/lang/String;->toCharArray()[C
@@ -74,21 +96,32 @@
 # virtual methods
 .method decodeTo([BLjava/lang/CharSequence;)I
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "target",
+            "chars"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/common/io/BaseEncoding$DecodingException;
         }
     .end annotation
 
-    .line 965
+    .line 1029
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 966
+    .line 1030
     invoke-virtual {p0, p2}, Lcom/google/common/io/BaseEncoding$Base64Encoding;->trimTrailingPadding(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
     move-result-object p2
 
-    .line 967
+    .line 1031
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$Base64Encoding;->alphabet:Lcom/google/common/io/BaseEncoding$Alphabet;
 
     invoke-interface {p2}, Ljava/lang/CharSequence;->length()I
@@ -105,7 +138,7 @@
 
     move v1, v0
 
-    .line 971
+    .line 1035
     :goto_0
     invoke-interface {p2}, Ljava/lang/CharSequence;->length()I
 
@@ -113,7 +146,7 @@
 
     if-ge v0, v2, :cond_2
 
-    .line 972
+    .line 1036
     iget-object v2, p0, Lcom/google/common/io/BaseEncoding$Base64Encoding;->alphabet:Lcom/google/common/io/BaseEncoding$Alphabet;
 
     add-int/lit8 v3, v0, 0x1
@@ -128,7 +161,7 @@
 
     shl-int/lit8 v2, v2, 0x12
 
-    .line 973
+    .line 1037
     iget-object v4, p0, Lcom/google/common/io/BaseEncoding$Base64Encoding;->alphabet:Lcom/google/common/io/BaseEncoding$Alphabet;
 
     add-int/lit8 v5, v0, 0x2
@@ -151,17 +184,17 @@
 
     int-to-byte v4, v4
 
-    .line 974
+    .line 1038
     aput-byte v4, p1, v1
 
-    .line 975
+    .line 1039
     invoke-interface {p2}, Ljava/lang/CharSequence;->length()I
 
     move-result v4
 
     if-ge v5, v4, :cond_1
 
-    .line 976
+    .line 1040
     iget-object v4, p0, Lcom/google/common/io/BaseEncoding$Base64Encoding;->alphabet:Lcom/google/common/io/BaseEncoding$Alphabet;
 
     add-int/lit8 v6, v0, 0x3
@@ -186,17 +219,17 @@
 
     int-to-byte v5, v5
 
-    .line 977
+    .line 1041
     aput-byte v5, p1, v3
 
-    .line 978
+    .line 1042
     invoke-interface {p2}, Ljava/lang/CharSequence;->length()I
 
     move-result v3
 
     if-ge v6, v3, :cond_0
 
-    .line 979
+    .line 1043
     iget-object v3, p0, Lcom/google/common/io/BaseEncoding$Base64Encoding;->alphabet:Lcom/google/common/io/BaseEncoding$Alphabet;
 
     add-int/lit8 v0, v0, 0x4
@@ -217,7 +250,7 @@
 
     int-to-byte v2, v2
 
-    .line 980
+    .line 1044
     aput-byte v2, p1, v4
 
     goto :goto_0
@@ -239,27 +272,21 @@
     :cond_2
     return v1
 
-    .line 968
+    .line 1032
     :cond_3
     new-instance p0, Lcom/google/common/io/BaseEncoding$DecodingException;
 
-    invoke-interface {p2}, Ljava/lang/CharSequence;->length()I
-
-    move-result p1
-
-    new-instance p2, Ljava/lang/StringBuilder;
-
-    const/16 v0, 0x20
-
-    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(I)V
+    new-instance p1, Ljava/lang/StringBuilder;
 
     const-string v0, "Invalid input length "
 
-    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p2
+    invoke-interface {p2}, Ljava/lang/CharSequence;->length()I
 
-    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result p2
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -274,18 +301,33 @@
 
 .method encodeTo(Ljava/lang/Appendable;[BII)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "target",
+            "bytes",
+            "off",
+            "len"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 948
+    .line 1012
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     add-int v0, p3, p4
 
-    .line 949
+    .line 1013
     array-length v1, p2
 
     invoke-static {p3, v0, v1}, Lcom/google/common/base/Preconditions;->checkPositionIndexes(III)V
@@ -297,7 +339,7 @@
 
     add-int/lit8 v1, p3, 0x1
 
-    .line 952
+    .line 1016
     aget-byte v2, p2, p3
 
     and-int/lit16 v2, v2, 0xff
@@ -322,7 +364,7 @@
 
     or-int/2addr v1, v2
 
-    .line 953
+    .line 1017
     iget-object v2, p0, Lcom/google/common/io/BaseEncoding$Base64Encoding;->alphabet:Lcom/google/common/io/BaseEncoding$Alphabet;
 
     ushr-int/lit8 v3, v1, 0x12
@@ -333,7 +375,7 @@
 
     invoke-interface {p1, v2}, Ljava/lang/Appendable;->append(C)Ljava/lang/Appendable;
 
-    .line 954
+    .line 1018
     iget-object v2, p0, Lcom/google/common/io/BaseEncoding$Base64Encoding;->alphabet:Lcom/google/common/io/BaseEncoding$Alphabet;
 
     ushr-int/lit8 v3, v1, 0xc
@@ -346,7 +388,7 @@
 
     invoke-interface {p1, v2}, Ljava/lang/Appendable;->append(C)Ljava/lang/Appendable;
 
-    .line 955
+    .line 1019
     iget-object v2, p0, Lcom/google/common/io/BaseEncoding$Base64Encoding;->alphabet:Lcom/google/common/io/BaseEncoding$Alphabet;
 
     ushr-int/lit8 v3, v1, 0x6
@@ -359,7 +401,7 @@
 
     invoke-interface {p1, v2}, Ljava/lang/Appendable;->append(C)Ljava/lang/Appendable;
 
-    .line 956
+    .line 1020
     iget-object v2, p0, Lcom/google/common/io/BaseEncoding$Base64Encoding;->alphabet:Lcom/google/common/io/BaseEncoding$Alphabet;
 
     and-int/lit8 v1, v1, 0x3f
@@ -379,7 +421,7 @@
 
     sub-int/2addr v0, p3
 
-    .line 959
+    .line 1023
     invoke-virtual {p0, p1, p2, p3, v0}, Lcom/google/common/io/BaseEncoding$Base64Encoding;->encodeChunkTo(Ljava/lang/Appendable;[BII)V
 
     :cond_1
@@ -389,11 +431,21 @@
 .method newInstance(Lcom/google/common/io/BaseEncoding$Alphabet;Ljava/lang/Character;)Lcom/google/common/io/BaseEncoding;
     .locals 0
     .param p2    # Ljava/lang/Character;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "alphabet",
+            "paddingChar"
+        }
+    .end annotation
 
-    .line 989
+    .line 1053
     new-instance p0, Lcom/google/common/io/BaseEncoding$Base64Encoding;
 
     invoke-direct {p0, p1, p2}, Lcom/google/common/io/BaseEncoding$Base64Encoding;-><init>(Lcom/google/common/io/BaseEncoding$Alphabet;Ljava/lang/Character;)V

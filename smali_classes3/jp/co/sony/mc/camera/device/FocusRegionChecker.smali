@@ -51,6 +51,20 @@
 
 .method public constructor <init>(Landroid/os/Handler;Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusRegionChangedCallback;ZZ)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "handler",
+            "callback",
+            "isAvailableResAfDriveMode",
+            "isYuvFrameDrawSupported"
+        }
+    .end annotation
 
     .line 34
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/device/CaptureResultCheckerBase;-><init>(Landroid/os/Handler;)V
@@ -69,6 +83,14 @@
 
 .method private getAfDriveMode(Landroid/hardware/camera2/CaptureResult;)Ljava/lang/Integer;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 
     .line 75
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/device/FocusRegionChecker;->mIsAvailableResAfDriveMode:Z
@@ -100,6 +122,14 @@
 
 .method private isFocusSucceeded([Landroid/hardware/camera2/params/MeteringRectangle;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "afRegions"
+        }
+    .end annotation
 
     const/4 p0, 0x0
 
@@ -152,6 +182,22 @@
 
 .method private isFocusSucceededForFrameDrawUnsupported(Ljava/lang/Integer;II[Landroid/hardware/camera2/params/MeteringRectangle;I)Z
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "afState",
+            "afDriveMode",
+            "afRegionMode",
+            "afRegions",
+            "afFailureReason"
+        }
+    .end annotation
 
     const/4 p0, 0x1
 
@@ -253,6 +299,16 @@
 
 .method private notifyOnFocusAreaUpdate([Landroid/hardware/camera2/params/MeteringRectangle;Z)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x0
+        }
+        names = {
+            "afRegions",
+            "isAfSuccess"
+        }
+    .end annotation
 
     .line 123
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
@@ -325,6 +381,16 @@
 # virtual methods
 .method public checkOnCompleted(Landroid/hardware/camera2/CaptureRequest;Ljp/co/sony/mc/camera/device/CaptureResultHolder;)V
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "request",
+            "resultHolder"
+        }
+    .end annotation
 
     .line 43
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CaptureResultHolder;->getLatest()Landroid/hardware/camera2/CaptureResult;

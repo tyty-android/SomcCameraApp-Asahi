@@ -22,13 +22,13 @@
     .locals 0
 
     .line 0
-    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;
+    check-cast p1, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;->$r8$lambda$0Pwuqi06iA3qUEiRTjI_YW6RjPc(Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;)I
+    invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;->$r8$lambda$gW55GCMWFzn3kkGokng8BJ3O9Z8(Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;)Z
 
     move-result p0
 
-    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0
 

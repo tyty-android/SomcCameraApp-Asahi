@@ -31,6 +31,16 @@
 
 .method public static isAvailable(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "packageName"
+        }
+    .end annotation
 
     const/4 v0, 0x1
 
@@ -139,6 +149,14 @@
 
 .method private static isSecureSignature(Landroid/content/pm/Signature;)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "signature"
+        }
+    .end annotation
 
     .line 77
     invoke-virtual {p0}, Landroid/content/pm/Signature;->toCharsString()Ljava/lang/String;

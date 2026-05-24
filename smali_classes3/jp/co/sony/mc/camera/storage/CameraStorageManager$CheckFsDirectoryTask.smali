@@ -37,6 +37,18 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/storage/CameraStorageManager;Landroid/content/Context;Ljp/co/sony/mc/camera/storage/Storage$StorageType;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010,
+            0x0,
+            0x0
+        }
+        names = {
+            "this$0",
+            "context",
+            "type"
+        }
+    .end annotation
 
     .line 492
     iput-object p1, p0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$CheckFsDirectoryTask;->this$0:Ljp/co/sony/mc/camera/storage/CameraStorageManager;

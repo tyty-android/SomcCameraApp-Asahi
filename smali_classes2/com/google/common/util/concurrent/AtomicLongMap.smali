@@ -7,6 +7,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/util/concurrent/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<K:",
@@ -20,6 +23,9 @@
 
 # instance fields
 .field private transient asMap:Ljava/util/Map;
+    .annotation runtime Lcom/google/errorprone/annotations/concurrent/LazyInit;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -29,7 +35,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -48,6 +54,15 @@
 # direct methods
 .method private constructor <init>(Ljava/util/concurrent/ConcurrentHashMap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "map"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -58,10 +73,10 @@
         }
     .end annotation
 
-    .line 60
+    .line 65
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 61
+    .line 66
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -85,7 +100,7 @@
         }
     .end annotation
 
-    .line 66
+    .line 71
     new-instance v0, Lcom/google/common/util/concurrent/AtomicLongMap;
 
     new-instance v1, Ljava/util/concurrent/ConcurrentHashMap;
@@ -99,6 +114,15 @@
 
 .method public static create(Ljava/util/Map;)Lcom/google/common/util/concurrent/AtomicLongMap;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "m"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -113,12 +137,12 @@
         }
     .end annotation
 
-    .line 71
+    .line 76
     invoke-static {}, Lcom/google/common/util/concurrent/AtomicLongMap;->create()Lcom/google/common/util/concurrent/AtomicLongMap;
 
     move-result-object v0
 
-    .line 72
+    .line 77
     invoke-virtual {v0, p0}, Lcom/google/common/util/concurrent/AtomicLongMap;->putAll(Ljava/util/Map;)V
 
     return-object v0
@@ -136,19 +160,19 @@
         }
     .end annotation
 
-    .line 337
+    .line 341
     iget-object v0, p0, Lcom/google/common/util/concurrent/AtomicLongMap;->map:Ljava/util/concurrent/ConcurrentHashMap;
 
     new-instance v1, Lcom/google/common/util/concurrent/AtomicLongMap$1;
 
     invoke-direct {v1, p0}, Lcom/google/common/util/concurrent/AtomicLongMap$1;-><init>(Lcom/google/common/util/concurrent/AtomicLongMap;)V
 
-    .line 338
+    .line 342
     invoke-static {v0, v1}, Lcom/google/common/collect/Maps;->transformValues(Ljava/util/Map;Lcom/google/common/base/Function;)Ljava/util/Map;
 
     move-result-object p0
 
-    .line 337
+    .line 341
     invoke-static {p0}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object p0
@@ -160,13 +184,24 @@
 # virtual methods
 .method public addAndGet(Ljava/lang/Object;J)J
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "delta"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;J)J"
         }
     .end annotation
 
-    .line 109
+    .line 114
     :cond_0
     iget-object v0, p0, Lcom/google/common/util/concurrent/AtomicLongMap;->map:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -178,7 +213,7 @@
 
     if-nez v0, :cond_1
 
-    .line 111
+    .line 116
     iget-object v0, p0, Lcom/google/common/util/concurrent/AtomicLongMap;->map:Ljava/util/concurrent/ConcurrentHashMap;
 
     new-instance v1, Ljava/util/concurrent/atomic/AtomicLong;
@@ -195,7 +230,7 @@
 
     return-wide p2
 
-    .line 119
+    .line 124
     :cond_1
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
 
@@ -207,7 +242,7 @@
 
     if-nez v3, :cond_2
 
-    .line 122
+    .line 127
     iget-object v1, p0, Lcom/google/common/util/concurrent/AtomicLongMap;->map:Ljava/util/concurrent/ConcurrentHashMap;
 
     new-instance v2, Ljava/util/concurrent/atomic/AtomicLong;
@@ -225,7 +260,7 @@
     :cond_2
     add-long v3, v1, p2
 
-    .line 130
+    .line 135
     invoke-virtual {v0, v1, v2, v3, v4}, Ljava/util/concurrent/atomic/AtomicLong;->compareAndSet(JJ)Z
 
     move-result v1
@@ -247,12 +282,12 @@
         }
     .end annotation
 
-    .line 332
+    .line 336
     iget-object v0, p0, Lcom/google/common/util/concurrent/AtomicLongMap;->asMap:Ljava/util/Map;
 
     if-nez v0, :cond_0
 
-    .line 333
+    .line 337
     invoke-direct {p0}, Lcom/google/common/util/concurrent/AtomicLongMap;->createAsMap()Ljava/util/Map;
 
     move-result-object v0
@@ -266,7 +301,7 @@
 .method public clear()V
     .locals 0
 
-    .line 373
+    .line 377
     iget-object p0, p0, Lcom/google/common/util/concurrent/AtomicLongMap;->map:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {p0}, Ljava/util/concurrent/ConcurrentHashMap;->clear()V
@@ -276,8 +311,16 @@
 
 .method public containsKey(Ljava/lang/Object;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 350
+    .line 354
     iget-object p0, p0, Lcom/google/common/util/concurrent/AtomicLongMap;->map:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {p0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->containsKey(Ljava/lang/Object;)Z
@@ -289,6 +332,15 @@
 
 .method public decrementAndGet(Ljava/lang/Object;)J
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)J"
@@ -297,7 +349,7 @@
 
     const-wide/16 v0, -0x1
 
-    .line 98
+    .line 103
     invoke-virtual {p0, p1, v0, v1}, Lcom/google/common/util/concurrent/AtomicLongMap;->addAndGet(Ljava/lang/Object;J)J
 
     move-result-wide p0
@@ -307,13 +359,22 @@
 
 .method public get(Ljava/lang/Object;)J
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)J"
         }
     .end annotation
 
-    .line 81
+    .line 86
     iget-object p0, p0, Lcom/google/common/util/concurrent/AtomicLongMap;->map:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {p0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -328,7 +389,7 @@
 
     goto :goto_0
 
-    .line 82
+    .line 87
     :cond_0
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
 
@@ -340,13 +401,24 @@
 
 .method public getAndAdd(Ljava/lang/Object;J)J
     .locals 7
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "delta"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;J)J"
         }
     .end annotation
 
-    .line 162
+    .line 167
     :cond_0
     iget-object v0, p0, Lcom/google/common/util/concurrent/AtomicLongMap;->map:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -360,7 +432,7 @@
 
     if-nez v0, :cond_1
 
-    .line 164
+    .line 169
     iget-object v0, p0, Lcom/google/common/util/concurrent/AtomicLongMap;->map:Ljava/util/concurrent/ConcurrentHashMap;
 
     new-instance v3, Ljava/util/concurrent/atomic/AtomicLong;
@@ -377,7 +449,7 @@
 
     return-wide v1
 
-    .line 172
+    .line 177
     :cond_1
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
 
@@ -387,7 +459,7 @@
 
     if-nez v5, :cond_2
 
-    .line 175
+    .line 180
     iget-object v3, p0, Lcom/google/common/util/concurrent/AtomicLongMap;->map:Ljava/util/concurrent/ConcurrentHashMap;
 
     new-instance v4, Ljava/util/concurrent/atomic/AtomicLong;
@@ -405,7 +477,7 @@
     :cond_2
     add-long v5, v3, p2
 
-    .line 183
+    .line 188
     invoke-virtual {v0, v3, v4, v5, v6}, Ljava/util/concurrent/atomic/AtomicLong;->compareAndSet(JJ)Z
 
     move-result v5
@@ -417,6 +489,15 @@
 
 .method public getAndDecrement(Ljava/lang/Object;)J
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)J"
@@ -425,7 +506,7 @@
 
     const-wide/16 v0, -0x1
 
-    .line 151
+    .line 156
     invoke-virtual {p0, p1, v0, v1}, Lcom/google/common/util/concurrent/AtomicLongMap;->getAndAdd(Ljava/lang/Object;J)J
 
     move-result-wide p0
@@ -435,6 +516,15 @@
 
 .method public getAndIncrement(Ljava/lang/Object;)J
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)J"
@@ -443,7 +533,7 @@
 
     const-wide/16 v0, 0x1
 
-    .line 143
+    .line 148
     invoke-virtual {p0, p1, v0, v1}, Lcom/google/common/util/concurrent/AtomicLongMap;->getAndAdd(Ljava/lang/Object;J)J
 
     move-result-wide p0
@@ -453,6 +543,15 @@
 
 .method public incrementAndGet(Ljava/lang/Object;)J
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)J"
@@ -461,7 +560,7 @@
 
     const-wide/16 v0, 0x1
 
-    .line 90
+    .line 95
     invoke-virtual {p0, p1, v0, v1}, Lcom/google/common/util/concurrent/AtomicLongMap;->addAndGet(Ljava/lang/Object;J)J
 
     move-result-wide p0
@@ -472,7 +571,7 @@
 .method public isEmpty()Z
     .locals 0
 
-    .line 363
+    .line 367
     iget-object p0, p0, Lcom/google/common/util/concurrent/AtomicLongMap;->map:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {p0}, Ljava/util/concurrent/ConcurrentHashMap;->isEmpty()Z
@@ -484,13 +583,24 @@
 
 .method public put(Ljava/lang/Object;J)J
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "newValue"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;J)J"
         }
     .end annotation
 
-    .line 199
+    .line 204
     :cond_0
     iget-object v0, p0, Lcom/google/common/util/concurrent/AtomicLongMap;->map:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -504,7 +614,7 @@
 
     if-nez v0, :cond_1
 
-    .line 201
+    .line 206
     iget-object v0, p0, Lcom/google/common/util/concurrent/AtomicLongMap;->map:Ljava/util/concurrent/ConcurrentHashMap;
 
     new-instance v3, Ljava/util/concurrent/atomic/AtomicLong;
@@ -521,7 +631,7 @@
 
     return-wide v1
 
-    .line 209
+    .line 214
     :cond_1
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
 
@@ -531,7 +641,7 @@
 
     if-nez v5, :cond_2
 
-    .line 212
+    .line 217
     iget-object v3, p0, Lcom/google/common/util/concurrent/AtomicLongMap;->map:Ljava/util/concurrent/ConcurrentHashMap;
 
     new-instance v4, Ljava/util/concurrent/atomic/AtomicLong;
@@ -546,7 +656,7 @@
 
     return-wide v1
 
-    .line 219
+    .line 224
     :cond_2
     invoke-virtual {v0, v3, v4, p2, p3}, Ljava/util/concurrent/atomic/AtomicLong;->compareAndSet(JJ)Z
 
@@ -559,6 +669,15 @@
 
 .method public putAll(Ljava/util/Map;)V
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "m"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -569,7 +688,7 @@
         }
     .end annotation
 
-    .line 234
+    .line 239
     invoke-interface {p1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object p1
@@ -591,7 +710,7 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 235
+    .line 240
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v1
@@ -616,13 +735,24 @@
 
 .method putIfAbsent(Ljava/lang/Object;J)J
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "newValue"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;J)J"
         }
     .end annotation
 
-    .line 411
+    .line 415
     :cond_0
     iget-object v0, p0, Lcom/google/common/util/concurrent/AtomicLongMap;->map:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -636,7 +766,7 @@
 
     if-nez v0, :cond_1
 
-    .line 413
+    .line 417
     iget-object v0, p0, Lcom/google/common/util/concurrent/AtomicLongMap;->map:Ljava/util/concurrent/ConcurrentHashMap;
 
     new-instance v3, Ljava/util/concurrent/atomic/AtomicLong;
@@ -653,7 +783,7 @@
 
     return-wide v1
 
-    .line 420
+    .line 424
     :cond_1
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
 
@@ -663,7 +793,7 @@
 
     if-nez v5, :cond_2
 
-    .line 423
+    .line 427
     iget-object v3, p0, Lcom/google/common/util/concurrent/AtomicLongMap;->map:Ljava/util/concurrent/ConcurrentHashMap;
 
     new-instance v4, Ljava/util/concurrent/atomic/AtomicLong;
@@ -684,13 +814,22 @@
 
 .method public remove(Ljava/lang/Object;)J
     .locals 6
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)J"
         }
     .end annotation
 
-    .line 245
+    .line 250
     iget-object v0, p0, Lcom/google/common/util/concurrent/AtomicLongMap;->map:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -705,7 +844,7 @@
 
     return-wide v1
 
-    .line 251
+    .line 256
     :cond_0
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
 
@@ -715,14 +854,14 @@
 
     if-eqz v5, :cond_1
 
-    .line 252
+    .line 257
     invoke-virtual {v0, v3, v4, v1, v2}, Ljava/util/concurrent/atomic/AtomicLong;->compareAndSet(JJ)Z
 
     move-result v5
 
     if-eqz v5, :cond_0
 
-    .line 254
+    .line 259
     :cond_1
     iget-object p0, p0, Lcom/google/common/util/concurrent/AtomicLongMap;->map:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -733,13 +872,24 @@
 
 .method remove(Ljava/lang/Object;J)Z
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;J)Z"
         }
     .end annotation
 
-    .line 266
+    .line 271
     iget-object v0, p0, Lcom/google/common/util/concurrent/AtomicLongMap;->map:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -754,7 +904,7 @@
 
     return v1
 
-    .line 271
+    .line 276
     :cond_0
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
 
@@ -773,7 +923,7 @@
 
     if-eqz v4, :cond_3
 
-    .line 276
+    .line 281
     invoke-virtual {v0, v2, v3, p2, p3}, Ljava/util/concurrent/atomic/AtomicLong;->compareAndSet(JJ)Z
 
     move-result p2
@@ -785,7 +935,7 @@
     :cond_2
     return v1
 
-    .line 278
+    .line 283
     :cond_3
     :goto_0
     iget-object p0, p0, Lcom/google/common/util/concurrent/AtomicLongMap;->map:Ljava/util/concurrent/ConcurrentHashMap;
@@ -800,7 +950,7 @@
 .method public removeAllZeros()V
     .locals 4
 
-    .line 305
+    .line 309
     iget-object p0, p0, Lcom/google/common/util/concurrent/AtomicLongMap;->map:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {p0}, Ljava/util/concurrent/ConcurrentHashMap;->entrySet()Ljava/util/Set;
@@ -811,7 +961,7 @@
 
     move-result-object p0
 
-    .line 306
+    .line 310
     :cond_0
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
@@ -820,14 +970,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 307
+    .line 311
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 308
+    .line 312
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v0
@@ -836,7 +986,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 309
+    .line 313
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
 
     move-result-wide v0
@@ -847,7 +997,7 @@
 
     if-nez v0, :cond_0
 
-    .line 310
+    .line 314
     invoke-interface {p0}, Ljava/util/Iterator;->remove()V
 
     goto :goto_0
@@ -858,6 +1008,15 @@
 
 .method public removeIfZero(Ljava/lang/Object;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;)Z"
@@ -866,7 +1025,7 @@
 
     const-wide/16 v0, 0x0
 
-    .line 295
+    .line 299
     invoke-virtual {p0, p1, v0, v1}, Lcom/google/common/util/concurrent/AtomicLongMap;->remove(Ljava/lang/Object;J)Z
 
     move-result p0
@@ -876,6 +1035,19 @@
 
 .method replace(Ljava/lang/Object;JJ)Z
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "expectedOldValue",
+            "newValue"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;JJ)Z"
@@ -890,7 +1062,7 @@
 
     if-nez v2, :cond_1
 
-    .line 443
+    .line 447
     invoke-virtual {p0, p1, p4, p5}, Lcom/google/common/util/concurrent/AtomicLongMap;->putIfAbsent(Ljava/lang/Object;J)J
 
     move-result-wide p0
@@ -904,7 +1076,7 @@
     :cond_0
     return v3
 
-    .line 445
+    .line 449
     :cond_1
     iget-object p0, p0, Lcom/google/common/util/concurrent/AtomicLongMap;->map:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -918,7 +1090,7 @@
 
     goto :goto_0
 
-    .line 446
+    .line 450
     :cond_2
     invoke-virtual {p0, p2, p3, p4, p5}, Ljava/util/concurrent/atomic/AtomicLong;->compareAndSet(JJ)Z
 
@@ -931,7 +1103,7 @@
 .method public size()I
     .locals 0
 
-    .line 358
+    .line 362
     iget-object p0, p0, Lcom/google/common/util/concurrent/AtomicLongMap;->map:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {p0}, Ljava/util/concurrent/ConcurrentHashMap;->size()I
@@ -944,7 +1116,7 @@
 .method public sum()J
     .locals 4
 
-    .line 322
+    .line 326
     iget-object p0, p0, Lcom/google/common/util/concurrent/AtomicLongMap;->map:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {p0}, Ljava/util/concurrent/ConcurrentHashMap;->values()Ljava/util/Collection;
@@ -970,7 +1142,7 @@
 
     check-cast v2, Ljava/util/concurrent/atomic/AtomicLong;
 
-    .line 323
+    .line 327
     invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
 
     move-result-wide v2
@@ -986,7 +1158,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 378
+    .line 382
     iget-object p0, p0, Lcom/google/common/util/concurrent/AtomicLongMap;->map:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {p0}, Ljava/util/concurrent/ConcurrentHashMap;->toString()Ljava/lang/String;

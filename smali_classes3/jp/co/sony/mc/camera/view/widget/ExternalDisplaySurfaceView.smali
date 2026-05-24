@@ -1539,7 +1539,7 @@
 
     new-instance v1, Ljava/lang/StringBuilder;
 
-    const-string v2, "setFixedSurfaceSize(w:"
+    const-string/jumbo v2, "setFixedSurfaceSize(w:"
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 

@@ -24,12 +24,12 @@
 
     const/16 v0, 0x80
 
-    .line 329
+    .line 345
     new-array v0, v0, [B
 
     const/4 v1, -0x1
 
-    .line 330
+    .line 346
     invoke-static {v0, v1}, Ljava/util/Arrays;->fill([BB)V
 
     const/4 v1, 0x0
@@ -45,7 +45,7 @@
 
     int-to-byte v4, v2
 
-    .line 332
+    .line 348
     aput-byte v4, v0, v3
 
     add-int/lit8 v2, v2, 0x1
@@ -64,19 +64,19 @@
 
     int-to-byte v3, v3
 
-    .line 335
+    .line 351
     aput-byte v3, v0, v2
 
     add-int/lit8 v2, v1, 0x61
 
-    .line 336
+    .line 352
     aput-byte v3, v0, v2
 
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_1
 
-    .line 338
+    .line 354
     :cond_1
     sput-object v0, Lcom/google/common/primitives/Longs$AsciiDigits;->asciiDigits:[B
 
@@ -86,7 +86,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 324
+    .line 340
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -94,12 +94,20 @@
 
 .method static digit(C)I
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "c"
+        }
+    .end annotation
 
     const/16 v0, 0x80
 
     if-ge p0, v0, :cond_0
 
-    .line 342
+    .line 358
     sget-object v0, Lcom/google/common/primitives/Longs$AsciiDigits;->asciiDigits:[B
 
     aget-byte p0, v0, p0

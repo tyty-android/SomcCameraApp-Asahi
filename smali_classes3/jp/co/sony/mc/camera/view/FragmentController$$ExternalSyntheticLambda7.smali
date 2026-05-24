@@ -30,9 +30,9 @@
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$$ExternalSyntheticLambda7;->f$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    check-cast p1, Landroid/util/Pair;
+    check-cast p1, Ljava/lang/Boolean;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController;->$r8$lambda$kyWEkDaFZZWAOSSY_wIhSgNrfYI(Ljp/co/sony/mc/camera/view/FragmentController;Landroid/util/Pair;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController;->$r8$lambda$a5uG7q4M4Lp3LEehi3FWsuMLhDM(Ljp/co/sony/mc/camera/view/FragmentController;Ljava/lang/Boolean;)V
 
     return-void
 .end method

@@ -30,8 +30,19 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/google/common/collect/MapMakerInternalMap;II)V
+.method constructor <init>(Lcom/google/common/collect/MapMakerInternalMap;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "map",
+            "initialCapacity"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -41,12 +52,12 @@
             "Lcom/google/common/collect/MapMakerInternalMap$StrongKeyDummyValueEntry<",
             "TK;>;",
             "Lcom/google/common/collect/MapMakerInternalMap$StrongKeyDummyValueSegment<",
-            "TK;>;>;II)V"
+            "TK;>;>;I)V"
         }
     .end annotation
 
-    .line 2095
-    invoke-direct {p0, p1, p2, p3}, Lcom/google/common/collect/MapMakerInternalMap$Segment;-><init>(Lcom/google/common/collect/MapMakerInternalMap;II)V
+    .line 2139
+    invoke-direct {p0, p1, p2}, Lcom/google/common/collect/MapMakerInternalMap$Segment;-><init>(Lcom/google/common/collect/MapMakerInternalMap;I)V
 
     return-void
 .end method
@@ -55,8 +66,16 @@
 # virtual methods
 .method public bridge synthetic castForTesting(Lcom/google/common/collect/MapMakerInternalMap$InternalEntry;)Lcom/google/common/collect/MapMakerInternalMap$InternalEntry;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "entry"
+        }
+    .end annotation
 
-    .line 2088
+    .line 2133
     invoke-virtual {p0, p1}, Lcom/google/common/collect/MapMakerInternalMap$StrongKeyDummyValueSegment;->castForTesting(Lcom/google/common/collect/MapMakerInternalMap$InternalEntry;)Lcom/google/common/collect/MapMakerInternalMap$StrongKeyDummyValueEntry;
 
     move-result-object p0
@@ -66,6 +85,15 @@
 
 .method public castForTesting(Lcom/google/common/collect/MapMakerInternalMap$InternalEntry;)Lcom/google/common/collect/MapMakerInternalMap$StrongKeyDummyValueEntry;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "entry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -78,7 +106,7 @@
         }
     .end annotation
 
-    .line 2106
+    .line 2150
     check-cast p1, Lcom/google/common/collect/MapMakerInternalMap$StrongKeyDummyValueEntry;
 
     return-object p1
@@ -87,7 +115,7 @@
 .method bridge synthetic self()Lcom/google/common/collect/MapMakerInternalMap$Segment;
     .locals 0
 
-    .line 2088
+    .line 2133
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$StrongKeyDummyValueSegment;->self()Lcom/google/common/collect/MapMakerInternalMap$StrongKeyDummyValueSegment;
 
     move-result-object p0

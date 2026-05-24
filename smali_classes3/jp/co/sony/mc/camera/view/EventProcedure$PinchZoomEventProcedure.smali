@@ -27,6 +27,14 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/EventProcedure;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 375
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$PinchZoomEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
@@ -134,19 +142,10 @@
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->incrementCountZoomInRecording()V
 
-    .line 445
-    sget-object v0, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;->getEnv()Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->IncrementCountZoomInRecording()V
-
     :cond_0
     const/4 v0, 0x0
 
-    .line 448
+    .line 447
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$PinchZoomEventProcedure;->mVariableIndex:Ljp/co/sony/mc/camera/view/angle/VariableIndex;
 
     :cond_1
@@ -166,6 +165,14 @@
 
 .method public doClick(Landroid/graphics/Point;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "point"
+        }
+    .end annotation
 
     .line 393
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$PinchZoomEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
@@ -195,6 +202,14 @@
 
 .method doDoubleClick(Landroid/graphics/Point;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "point"
+        }
+    .end annotation
 
     .line 400
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$PinchZoomEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
@@ -210,6 +225,14 @@
 
 .method doLongClick(Landroid/graphics/Point;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "point"
+        }
+    .end annotation
 
     .line 405
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$PinchZoomEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
@@ -225,6 +248,18 @@
 
 .method doTouchAreaMove(Landroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "currentPoint",
+            "lastPoint",
+            "downPoint"
+        }
+    .end annotation
 
     .line 418
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$PinchZoomEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
@@ -276,6 +311,14 @@
 
 .method public doTouchAreaScaling(F)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "scaleLength"
+        }
+    .end annotation
 
     .line 423
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$PinchZoomEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;

@@ -47,17 +47,17 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 73
+    .line 75
     invoke-direct {p0}, Lcom/google/common/eventbus/Dispatcher;-><init>()V
 
-    .line 78
+    .line 80
     new-instance v0, Lcom/google/common/eventbus/Dispatcher$PerThreadQueuedDispatcher$1;
 
     invoke-direct {v0, p0}, Lcom/google/common/eventbus/Dispatcher$PerThreadQueuedDispatcher$1;-><init>(Lcom/google/common/eventbus/Dispatcher$PerThreadQueuedDispatcher;)V
 
     iput-object v0, p0, Lcom/google/common/eventbus/Dispatcher$PerThreadQueuedDispatcher;->queue:Ljava/lang/ThreadLocal;
 
-    .line 87
+    .line 89
     new-instance v0, Lcom/google/common/eventbus/Dispatcher$PerThreadQueuedDispatcher$2;
 
     invoke-direct {v0, p0}, Lcom/google/common/eventbus/Dispatcher$PerThreadQueuedDispatcher$2;-><init>(Lcom/google/common/eventbus/Dispatcher$PerThreadQueuedDispatcher;)V
@@ -70,7 +70,7 @@
 .method synthetic constructor <init>(Lcom/google/common/eventbus/Dispatcher$1;)V
     .locals 0
 
-    .line 73
+    .line 75
     invoke-direct {p0}, Lcom/google/common/eventbus/Dispatcher$PerThreadQueuedDispatcher;-><init>()V
 
     return-void
@@ -80,6 +80,17 @@
 # virtual methods
 .method dispatch(Ljava/lang/Object;Ljava/util/Iterator;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "event",
+            "subscribers"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -90,13 +101,13 @@
         }
     .end annotation
 
-    .line 97
+    .line 99
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 98
+    .line 100
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 99
+    .line 102
     iget-object v0, p0, Lcom/google/common/eventbus/Dispatcher$PerThreadQueuedDispatcher;->queue:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
@@ -105,7 +116,13 @@
 
     check-cast v0, Ljava/util/Queue;
 
-    .line 100
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/util/Queue;
+
+    .line 103
     new-instance v1, Lcom/google/common/eventbus/Dispatcher$PerThreadQueuedDispatcher$Event;
 
     const/4 v2, 0x0
@@ -114,7 +131,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/Queue;->offer(Ljava/lang/Object;)Z
 
-    .line 102
+    .line 105
     iget-object p1, p0, Lcom/google/common/eventbus/Dispatcher$PerThreadQueuedDispatcher;->dispatching:Ljava/lang/ThreadLocal;
 
     invoke-virtual {p1}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
@@ -129,7 +146,7 @@
 
     if-nez p1, :cond_2
 
-    .line 103
+    .line 106
     iget-object p1, p0, Lcom/google/common/eventbus/Dispatcher$PerThreadQueuedDispatcher;->dispatching:Ljava/lang/ThreadLocal;
 
     const/4 p2, 0x1
@@ -140,7 +157,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
 
-    .line 106
+    .line 109
     :cond_0
     :try_start_0
     invoke-interface {v0}, Ljava/util/Queue;->poll()Ljava/lang/Object;
@@ -151,7 +168,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 107
+    .line 110
     :goto_0
     invoke-static {p1}, Lcom/google/common/eventbus/Dispatcher$PerThreadQueuedDispatcher$Event;->access$400(Lcom/google/common/eventbus/Dispatcher$PerThreadQueuedDispatcher$Event;)Ljava/util/Iterator;
 
@@ -163,7 +180,7 @@
 
     if-eqz p2, :cond_0
 
-    .line 108
+    .line 111
     invoke-static {p1}, Lcom/google/common/eventbus/Dispatcher$PerThreadQueuedDispatcher$Event;->access$400(Lcom/google/common/eventbus/Dispatcher$PerThreadQueuedDispatcher$Event;)Ljava/util/Iterator;
 
     move-result-object p2
@@ -184,13 +201,13 @@
 
     goto :goto_0
 
-    .line 112
+    .line 115
     :cond_1
     iget-object p1, p0, Lcom/google/common/eventbus/Dispatcher$PerThreadQueuedDispatcher;->dispatching:Ljava/lang/ThreadLocal;
 
     invoke-virtual {p1}, Ljava/lang/ThreadLocal;->remove()V
 
-    .line 113
+    .line 116
     iget-object p0, p0, Lcom/google/common/eventbus/Dispatcher$PerThreadQueuedDispatcher;->queue:Ljava/lang/ThreadLocal;
 
     invoke-virtual {p0}, Ljava/lang/ThreadLocal;->remove()V
@@ -200,17 +217,17 @@
     :catchall_0
     move-exception p1
 
-    .line 112
+    .line 115
     iget-object p2, p0, Lcom/google/common/eventbus/Dispatcher$PerThreadQueuedDispatcher;->dispatching:Ljava/lang/ThreadLocal;
 
     invoke-virtual {p2}, Ljava/lang/ThreadLocal;->remove()V
 
-    .line 113
+    .line 116
     iget-object p0, p0, Lcom/google/common/eventbus/Dispatcher$PerThreadQueuedDispatcher;->queue:Ljava/lang/ThreadLocal;
 
     invoke-virtual {p0}, Ljava/lang/ThreadLocal;->remove()V
 
-    .line 114
+    .line 117
     throw p1
 
     :cond_2

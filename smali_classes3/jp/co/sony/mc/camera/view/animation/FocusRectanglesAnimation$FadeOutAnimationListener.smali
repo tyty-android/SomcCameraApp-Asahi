@@ -24,6 +24,14 @@
 # direct methods
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 190
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation$FadeOutAnimationListener;->this$0:Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation;
@@ -45,6 +53,14 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/view/animation/Animation;)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "animation"
+        }
+    .end annotation
 
     .line 198
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation$FadeOutAnimationListener;->this$0:Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation;
@@ -81,12 +97,28 @@
 
 .method public onAnimationRepeat(Landroid/view/animation/Animation;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "animation"
+        }
+    .end annotation
 
     return-void
 .end method
 
 .method public onAnimationStart(Landroid/view/animation/Animation;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "animation"
+        }
+    .end annotation
 
     return-void
 .end method

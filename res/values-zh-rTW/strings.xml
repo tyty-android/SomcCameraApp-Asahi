@@ -82,6 +82,7 @@
     <string name="call_notification_incoming_text">來電</string>
     <string name="call_notification_ongoing_text">通話中</string>
     <string name="call_notification_screening_text">正在過濾來電</string>
+    <string name="camera_string_saving_process_hint_txt">儲存中... 請稍候直到儲存完成。</string>
     <string name="camera_strings_accept_privacy_policy_txt">您之前已接受隱私權政策，但您可以隨時變更決定。</string>
     <string name="camera_strings_accessibility_48_mega_pixel_txt">4800 萬畫素</string>
     <string name="camera_strings_accessibility_adjust_bokeh_txt">調整背景虛化</string>
@@ -92,6 +93,27 @@
     <string name="camera_strings_accessibility_adjust_framing_size_smaller_txt">縮小取景框尺寸</string>
     <string name="camera_strings_accessibility_adjust_framing_size_txt">調整取景框尺寸</string>
     <string name="camera_strings_accessibility_adjust_shutter_speed_txt">快門速度</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_look_menu_txt">關閉按鈕。關閉風格目錄。</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_menu_txt">關閉[自訂]目錄</string>
+    <string name="camera_strings_accessibility_ai_suggestion_close_suggests_txt">關閉推薦調整項目</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_menu_txt">目前已套用的[自訂]風格。開啟調整項目目錄。</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_look_txt">[自訂]風格。套用已登錄在[自訂]目錄中的風格、亮度，以及色彩設定。</string>
+    <string name="camera_strings_accessibility_ai_suggestion_custom_tab_txt">[自訂]索引標籤。套用已登錄在[自訂]目錄中的風格、亮度，以及色彩設定。</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_button_txt">[自訂]目錄按鈕。開啟目錄，讓您在套用建議調整項目後作出進一步的調整。</string>
+    <string name="camera_strings_accessibility_ai_suggestion_edit_param_txt">%1$s已設定為%2$s</string>
+    <string name="camera_strings_accessibility_ai_suggestion_first_time_txt">AI攝影助理。此功能推薦設定，例如根據場景來推薦色彩。</string>
+    <string name="camera_strings_accessibility_ai_suggestion_four_of_some_suggests_txt">第四個推薦調整項目</string>
+    <string name="camera_strings_accessibility_ai_suggestion_look_menu_txt">"%1$s
+開啟創意外觀目錄"</string>
+    <string name="camera_strings_accessibility_ai_suggestion_new_suggest_txt">已推薦新的建議調整項目</string>
+    <string name="camera_strings_accessibility_ai_suggestion_one_of_some_suggests_txt">第一個推薦調整項目</string>
+    <string name="camera_strings_accessibility_ai_suggestion_open_suggests_txt">展開推薦調整項目</string>
+    <string name="camera_strings_accessibility_ai_suggestion_reset_to_default_txt">重設為套用推薦之前的設定</string>
+    <string name="camera_strings_accessibility_ai_suggestion_selected_suggest_txt">已套用這些建議調整項目</string>
+    <string name="camera_strings_accessibility_ai_suggestion_suggest_lens_txt">推薦鏡頭按鈕。建議使用%1$sx。</string>
+    <string name="camera_strings_accessibility_ai_suggestion_surface_of_some_suggests_txt">推薦調整項目。從右到左滑動即可顯示建議調整項目。</string>
+    <string name="camera_strings_accessibility_ai_suggestion_three_of_some_suggests_txt">第三個推薦調整項目</string>
+    <string name="camera_strings_accessibility_ai_suggestion_two_of_some_suggests_txt">第二個推薦調整項目</string>
     <string name="camera_strings_accessibility_arrow_left_button_txt">左箭頭</string>
     <string name="camera_strings_accessibility_arrow_right_button_txt">右箭頭</string>
     <string name="camera_strings_accessibility_audio_level_txt">音訊電平量表</string>
@@ -246,6 +268,45 @@
     <string name="camera_strings_advanced_setting_geo_tag_title_txt">儲存地點</string>
     <string name="camera_strings_ai_face_restore_description_txt">拍攝相片時可進行臉部銳化，讓臉部特徵更加清晰</string>
     <string name="camera_strings_ai_face_restore_txt">清晰臉部</string>
+    <string name="camera_strings_ai_suggestion_introduce_hint_text_txt">[祕訣]AI攝影助理</string>
+    <string name="camera_strings_aisuggestion_box_name1_txt">自訂</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_message_txt">將目前的風格、亮度和色彩設定登錄到[自訂]。</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_overwrite_message_txt">已經有一套風格登錄在[自訂]中。是否要將其覆蓋？</string>
+    <string name="camera_strings_aisuggestion_box_saving_dialog_title_txt">登錄為[自訂]風格</string>
+    <string name="camera_strings_aisuggestion_box_title_txt">自訂</string>
+    <string name="camera_strings_aisuggestion_custom_params_contrast_txt">對比</string>
+    <string name="camera_strings_aisuggestion_custom_params_ev_txt">亮度</string>
+    <string name="camera_strings_aisuggestion_custom_params_register_txt">登錄</string>
+    <string name="camera_strings_aisuggestion_custom_params_saturation_txt">飽和度</string>
+    <string name="camera_strings_aisuggestion_custom_params_title_txt">亮度/色彩</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbab_txt">色溫</string>
+    <string name="camera_strings_aisuggestion_custom_params_wbgm_txt">著色</string>
+    <string name="camera_strings_aisuggestion_customlook_register_instruction_txt">您可以隨時從[自訂]風格索引標籤中使用已登錄的[自訂]風格</string>
+    <string name="camera_strings_aisuggestion_description_txt">"AI自動辨識場景，並在右下角的迷你預覽中推薦已最佳化的調整項目。
+若您輕觸此迷你預覽，則下列的設定會自動調整來配合場景：
+風格，曝光，白平衡，飽和度，對比，背景虛化
+*此功能僅在[拍照模式]中可使用。
+*當您長按[快門] 按鈕來開始錄製影片時，飽和度、對比和背景虛化設定將不會套用。"</string>
+    <string name="camera_strings_aisuggestion_guide_description1_txt">根據AI辨識場景的推薦調整項目顯示在右下角（橫向手持時位於右上角）的迷你預覽中。您可以輕觸迷你預覽來立即套用所有這些調整項目。</string>
+    <string name="camera_strings_aisuggestion_guide_description2_txt">根據場景，系統也可能推薦特定的鏡頭設定。在此情況下，您可以根據自己的喜好來變更到推薦的鏡頭設定。</string>
+    <string name="camera_strings_aisuggestion_guide_description3_txt">"在右下角（橫向手持時位於右上角）的迷你預覽上向左滑動，您就可以顯示其他調整推薦。
+您選取的推薦會儲存為您偏好的調整項目，並會在您下一次拍攝類似的場景時包含在推薦中。"</string>
+    <string name="camera_strings_aisuggestion_guide_description4_txt">您可以輕觸[>]按鈕，以便在不需要時隱藏推薦。當辨識到新的場景時，[&lt;]按鈕會亮起，來向您顯示新的調整推薦。若要再次查看推薦，請輕觸[&lt;]按鈕。</string>
+    <string name="camera_strings_aisuggestion_guide_description5_txt">若您在選取推薦調整項目後輕觸調整按鈕，您就可以進一步調整亮度和色彩等等的設定。您的調整項目會儲存到裝置，並在下次偵測到類似場景時套用到推薦調整項目。</string>
+    <string name="camera_strings_aisuggestion_guide_description6_txt">您可以登錄推薦的調整和您所作出的調整，以便您隨時將其載入並使用相同的設定來拍攝相片。輕觸[登錄]即可將[自訂]風格新增到可用風格清單。</string>
+    <string name="camera_strings_aisuggestion_guide_entry_txt">查看如何使用AI攝影助理</string>
+    <string name="camera_strings_aisuggestion_guide_title_txt">如何使用AI攝影助理</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_message_txt">是否要將所有設定重設至預設，包括色彩、亮度，以及您偏好的調整項目？</string>
+    <string name="camera_strings_aisuggestion_params_reset_dialog_title_txt">重設參數</string>
+    <string name="camera_strings_aisuggestion_params_reset_txt">重設參數</string>
+    <string name="camera_strings_aisuggestion_permitted_item_bokeh_txt">背景虛化</string>
+    <string name="camera_strings_aisuggestion_permitted_item_lens_txt">鏡頭</string>
+    <string name="camera_strings_aisuggestion_permitted_item_title_txt">包含在推薦中</string>
+    <string name="camera_strings_aisuggestion_recommend_lens_ratio_txt">推薦使用%1$s</string>
+    <string name="camera_strings_aisuggestion_return_to_default_txt">還原</string>
+    <string name="camera_strings_aisuggestion_simple_video_instruction_txt">透過長按[快門] 按鈕來錄製影片時，飽和度、對比和背景虛化設定可能會顯示為不同。</string>
+    <string name="camera_strings_aisuggestion_txt">AI攝影助理</string>
+    <string name="camera_strings_aisuggestion_use_aissuggestion_txt">使用AI攝影助理</string>
     <string name="camera_strings_anonymous_analytics_txt">匿名分析</string>
     <string name="camera_strings_application_name">相機</string>
     <string name="camera_strings_application_name_google_lens_txt">Google Lens</string>
@@ -421,6 +482,7 @@
     <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">無法連線到Wi-Fi</string>
     <string name="camera_strings_dialog_user_data_collection_txt">如果您同意以下內容，索尼將會收集您的&lt;b>&lt;a href=#personal-data>個人資料&lt;/a>&lt;/b>以提供自訂支援並改善裝置與服務。索尼會根據我們的&lt;b>&lt;a href=https://www.sonymobile.com/privacy/>隱私權政策&lt;/a>&lt;/b>處理您的資料。</string>
     <string name="camera_strings_dialog_video_hdr_hlg_supported_short_description_txt">部分裝置/服務可能無法重現HDR內容原本的色彩和亮度。請在享受HDR內容時使用支援HDR的裝置/服務。</string>
+    <string name="camera_strings_digital_tripod_hint_edge_txt">構圖已轉移。將相機指向原本的拍攝主體。</string>
     <string name="camera_strings_digital_zoom_type_description_txt">"選取一項數位縮放設定。
 
 標準數位縮放: 此縮放功能使用數位處理，以感光元件的資料為基礎。
@@ -484,6 +546,7 @@ AI超高解析度縮放: 此縮放功能使用數位處理，以更妥善保留�
     <string name="camera_strings_fast_capturing_screen_locked_settings_txt">若要開啟設定，請將螢幕解鎖。</string>
     <string name="camera_strings_fast_capturing_screen_locked_streaming_txt">若要開始串流，請解鎖螢幕。</string>
     <string name="camera_strings_fast_capturing_screen_locked_title_txt">已鎖定螢幕</string>
+    <string name="camera_strings_feature_creative_look_custom_description_txt">您可以登錄風格和亮度/色彩設定。</string>
     <string name="camera_strings_feature_creative_look_description_txt">"您可以透過選取「外觀」來選擇影像 (相片或影片) 的成品效果。
 
 創意外觀提供6款預設外觀。每款外觀都經過優化，搭配色調、飽和度、對比、銳利度、亮度和其他影像元素的不同組合，讓您可以搭配您對於這些元素的理想平衡來設定影像處理。"</string>
@@ -567,6 +630,7 @@ JPEG：儲存JPEG影像。"</string>
     <string name="camera_strings_framing_orientation_description_txt">"您可以選擇在橫向或直向的取景框中裁剪拍攝主體。
 設定為[自動]來讓裁剪方向與裝置方向相同。"</string>
     <string name="camera_strings_framing_select_subject_to_track_txt">輕觸您想要鎖定其位置的拍攝主體</string>
+    <string name="camera_strings_framing_setting_guide_title_txt">關於自動取景</string>
     <string name="camera_strings_framing_setting_orientation_landscape_txt">橫向</string>
     <string name="camera_strings_framing_setting_orientation_portrait_txt">直向</string>
     <string name="camera_strings_framing_setting_orientation_title_txt">取景框方向</string>
@@ -574,6 +638,7 @@ JPEG：儲存JPEG影像。"</string>
 已裁剪錄製以超高畫質解析度儲存。未裁剪錄製以4K儲存。"</string>
     <string name="camera_strings_framing_setting_save_original_video_off_txt">全螢幕錄製：關</string>
     <string name="camera_strings_framing_setting_save_original_video_title_txt">全螢幕錄製</string>
+    <string name="camera_strings_framing_setting_snapshot_description_txt">無論[全螢幕錄製]為開啟或關閉，錄製影片時拍攝的快照都會以全螢幕儲存。</string>
     <string name="camera_strings_geotagging_description_txt">儲存您的相片及影片並附拍攝地點</string>
     <string name="camera_strings_geotagging_txt">儲存地點</string>
     <string name="camera_strings_gimbal_mode_tab_label">AI 錄影</string>
@@ -592,6 +657,7 @@ JPEG：儲存JPEG影像。"</string>
     <string name="camera_strings_gimbal_setting_assist_method_locking_hint_txt">拍攝主體位置鎖定：手動</string>
     <string name="camera_strings_gimbal_setting_assist_method_locking_txt">手動</string>
     <string name="camera_strings_gimbal_setting_assist_method_title_txt">拍攝主體位置鎖定</string>
+    <string name="camera_strings_gimbal_setting_guide_title_txt">關於AI錄影</string>
     <string name="camera_strings_gridline_description_txt">設定是否要顯示格狀線條來協助您為影像構圖</string>
     <string name="camera_strings_gridline_txt">格狀線條</string>
     <string name="camera_strings_hand_shutter_description_updated_txt">只要將您的手掌朝向正面相機，就可以令倒數計時器開始倒數。為更方便偵測，請往上張開手指。</string>
@@ -727,6 +793,7 @@ JPEG：儲存JPEG影像。"</string>
     <string name="camera_strings_notification_channel_title_saving_process_txt">儲存過程</string>
     <string name="camera_strings_notification_text_saving_in_progress_txt">請等待直至儲存完成</string>
     <string name="camera_strings_notification_title_saving_in_progress_txt">儲存進行中</string>
+    <string name="camera_strings_notify_saving_process_cannot_launch_app_by_hw_shutter_txt">儲存時按下[快門]按鈕可能無法啟動相機</string>
     <string name="camera_strings_ok_txt">確定</string>
     <string name="camera_strings_peaking_color_blue_txt">藍色</string>
     <string name="camera_strings_peaking_color_red_txt">紅色</string>
@@ -735,6 +802,7 @@ JPEG：儲存JPEG影像。"</string>
     <string name="camera_strings_peaking_color_yellow_txt">黃色</string>
     <string name="camera_strings_peaking_txt">峰值</string>
     <string name="camera_strings_personal_data_txt">個人資料</string>
+    <string name="camera_strings_photopro_setting_guide_title_txt">關於專業拍照</string>
     <string name="camera_strings_privacy_policy_txt">隱私權政策</string>
     <string name="camera_strings_pro_tips_computational_photo_description_txt">"就算在P模式中，相機也會自動辨識場景來拍攝精美的自動相片，並減少模糊、雜訊、曝光過度和曝光不足的情況。
 若您不想要使用此功能，則可以從Fn按鈕或在[目錄]中將其關閉。"</string>
@@ -965,6 +1033,7 @@ M(手動曝光)"</string>
     <string name="camera_strings_video_stabilization_description_sub_txt">注意：選取[高品質]可能會導致錄製時間因上升的裝置溫度而縮短。</string>
     <string name="camera_strings_video_stabilization_description_txt">Xperia擁有獨特的混合穩定系統Optical SteadyShot，將光學影像和電子影像的穩定技術同步結合。這讓您即使在走動時進行錄製，也可以製作流暢不晃動的影片。</string>
     <string name="camera_strings_video_stabilization_high_quality_images_txt">高品質</string>
+    <string name="camera_strings_videopro_setting_guide_title_txt">關於專業錄影</string>
     <string name="camera_strings_volume_distortion_correction_description_txt">校正使用超廣角鏡頭時出現在螢幕邊緣附近的臉部失真。這可能會導致背景顯得扭曲或令視角顯得比較狹窄。</string>
     <string name="camera_strings_volume_distortion_correction_front_description_txt">校正出現在螢幕邊緣附近的臉部失真。這可能會導致背景顯得扭曲或令視角顯得比較狹窄。</string>
     <string name="camera_strings_volume_distortion_correction_txt">臉部失真校正</string>
@@ -1042,8 +1111,25 @@ M(手動曝光)"</string>
     <string name="clear_text_end_icon_content_description">清除文字</string>
     <string name="close_drawer">關閉導覽選單</string>
     <string name="close_sheet">關閉功能表</string>
+    <string name="common_google_play_services_enable_button">啟用</string>
+    <string name="common_google_play_services_enable_text">您必須啟用 Google Play 服務，才能執行「%1$s」。</string>
+    <string name="common_google_play_services_enable_title">啟用 Google Play 服務</string>
+    <string name="common_google_play_services_install_button">安裝</string>
+    <string name="common_google_play_services_install_text">您的裝置並未安裝 Google Play 服務，因此無法執行「%1$s」。</string>
+    <string name="common_google_play_services_install_title">取得 Google Play 服務</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play 服務可用性</string>
+    <string name="common_google_play_services_notification_ticker">Google Play 服務發生錯誤</string>
+    <string name="common_google_play_services_unknown_issue">「%1$s」無法存取 Google Play 服務，請再試一次。</string>
+    <string name="common_google_play_services_unsupported_text">您的裝置不支援 Google Play 服務，因此無法執行「%1$s」。</string>
+    <string name="common_google_play_services_update_button">更新</string>
+    <string name="common_google_play_services_update_text">您必須更新 Google Play 服務，才能執行「%1$s」。</string>
+    <string name="common_google_play_services_update_title">更新 Google Play 服務</string>
+    <string name="common_google_play_services_updating_text">執行「%1$s」所需的 Google Play 服務正在更新。</string>
+    <string name="common_google_play_services_wear_update_text">必須使用新版 Google Play 服務。該服務稍後就會自動更新。</string>
+    <string name="common_open_on_phone">在手機上開啟</string>
+    <string name="common_signin_button_text">登入</string>
+    <string name="common_signin_button_text_long">使用 Google 帳戶登入</string>
     <string name="copy">複製</string>
-    <string name="copy_toast_msg">已將連結複製到剪貼簿</string>
     <string name="default_error_message">輸入內容無效</string>
     <string name="default_popup_window_title">彈出式視窗</string>
     <string name="dropdown_menu">下拉式選單</string>
@@ -1054,9 +1140,6 @@ M(手動曝光)"</string>
     <string name="external_display_connected_description_txt">您可以從Vlog監視器中檢視觀景窗</string>
     <string name="external_display_connected_title_txt">Vlog監視器已連線</string>
     <string name="external_display_note_about_external_mic_txt">注意：若要使用外置麥克風，請先將它與Vlog監視器連接再進行錄製。若您稍後才連接它，您就需要將Vlog監視器重新連接。</string>
-    <string name="fallback_menu_item_copy_link">複製連結</string>
-    <string name="fallback_menu_item_open_in_browser">在瀏覽器中開啟</string>
-    <string name="fallback_menu_item_share_link">分享連結</string>
     <string name="icon_content_description">對話方塊圖示</string>
     <string name="in_progress">處理中</string>
     <string name="indeterminate">部分檢查</string>

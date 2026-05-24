@@ -28,13 +28,26 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;[Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010,
+            0x1010
+        }
+        names = {
+            "this$0",
+            "val$event",
+            "val$objects"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 1594
+    .line 1808
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$3;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$3;->val$event:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
@@ -51,7 +64,7 @@
 .method public run()V
     .locals 2
 
-    .line 1597
+    .line 1811
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$3;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fgetmDeviceStateMachine(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Ljp/co/sony/mc/camera/device/DeviceStateMachine;

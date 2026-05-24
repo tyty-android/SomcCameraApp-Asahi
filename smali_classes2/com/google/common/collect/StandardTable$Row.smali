@@ -30,7 +30,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -48,18 +48,29 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/StandardTable;Ljava/lang/Object;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x0
+        }
+        names = {
+            "this$0",
+            "rowKey"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TR;)V"
         }
     .end annotation
 
-    .line 271
+    .line 307
     iput-object p1, p0, Lcom/google/common/collect/StandardTable$Row;->this$0:Lcom/google/common/collect/StandardTable;
 
     invoke-direct {p0}, Lcom/google/common/collect/Maps$IteratorBasedAbstractMap;-><init>()V
 
-    .line 272
+    .line 308
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -71,76 +82,21 @@
 
 
 # virtual methods
-.method backingRowMap()Ljava/util/Map;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Map<",
-            "TC;TV;>;"
-        }
-    .end annotation
-
-    .line 278
-    iget-object v0, p0, Lcom/google/common/collect/StandardTable$Row;->backingRowMap:Ljava/util/Map;
-
-    if-eqz v0, :cond_1
-
-    invoke-interface {v0}, Ljava/util/Map;->isEmpty()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/google/common/collect/StandardTable$Row;->this$0:Lcom/google/common/collect/StandardTable;
-
-    iget-object v0, v0, Lcom/google/common/collect/StandardTable;->backingMap:Ljava/util/Map;
-
-    iget-object v1, p0, Lcom/google/common/collect/StandardTable$Row;->rowKey:Ljava/lang/Object;
-
-    invoke-interface {v0, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    goto :goto_0
-
-    .line 280
-    :cond_0
-    iget-object p0, p0, Lcom/google/common/collect/StandardTable$Row;->backingRowMap:Ljava/util/Map;
-
-    goto :goto_1
-
-    .line 279
-    :cond_1
-    :goto_0
-    invoke-virtual {p0}, Lcom/google/common/collect/StandardTable$Row;->computeBackingRowMap()Ljava/util/Map;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/google/common/collect/StandardTable$Row;->backingRowMap:Ljava/util/Map;
-
-    move-object p0, v0
-
-    :goto_1
-    return-object p0
-.end method
-
 .method public clear()V
     .locals 1
 
-    .line 330
-    invoke-virtual {p0}, Lcom/google/common/collect/StandardTable$Row;->backingRowMap()Ljava/util/Map;
+    .line 371
+    invoke-virtual {p0}, Lcom/google/common/collect/StandardTable$Row;->updateBackingRowMapField()V
 
-    move-result-object v0
+    .line 372
+    iget-object v0, p0, Lcom/google/common/collect/StandardTable$Row;->backingRowMap:Ljava/util/Map;
 
     if-eqz v0, :cond_0
 
-    .line 332
+    .line 373
     invoke-interface {v0}, Ljava/util/Map;->clear()V
 
-    .line 334
+    .line 375
     :cond_0
     invoke-virtual {p0}, Lcom/google/common/collect/StandardTable$Row;->maintainEmptyInvariant()V
 
@@ -157,7 +113,10 @@
         }
     .end annotation
 
-    .line 284
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 321
     iget-object v0, p0, Lcom/google/common/collect/StandardTable$Row;->this$0:Lcom/google/common/collect/StandardTable;
 
     iget-object v0, v0, Lcom/google/common/collect/StandardTable;->backingMap:Ljava/util/Map;
@@ -175,17 +134,29 @@
 
 .method public containsKey(Ljava/lang/Object;)Z
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
 
-    .line 297
-    invoke-virtual {p0}, Lcom/google/common/collect/StandardTable$Row;->backingRowMap()Ljava/util/Map;
-
-    move-result-object p0
+    .line 335
+    invoke-virtual {p0}, Lcom/google/common/collect/StandardTable$Row;->updateBackingRowMapField()V
 
     if-eqz p1, :cond_0
 
+    .line 336
+    iget-object p0, p0, Lcom/google/common/collect/StandardTable$Row;->backingRowMap:Ljava/util/Map;
+
     if-eqz p0, :cond_0
 
-    .line 298
     invoke-static {p0, p1}, Lcom/google/common/collect/Maps;->safeContainsKey(Ljava/util/Map;Ljava/lang/Object;)Z
 
     move-result p0
@@ -214,21 +185,22 @@
         }
     .end annotation
 
-    .line 345
-    invoke-virtual {p0}, Lcom/google/common/collect/StandardTable$Row;->backingRowMap()Ljava/util/Map;
+    .line 386
+    invoke-virtual {p0}, Lcom/google/common/collect/StandardTable$Row;->updateBackingRowMapField()V
 
-    move-result-object v0
+    .line 387
+    iget-object v0, p0, Lcom/google/common/collect/StandardTable$Row;->backingRowMap:Ljava/util/Map;
 
     if-nez v0, :cond_0
 
-    .line 347
+    .line 388
     invoke-static {}, Lcom/google/common/collect/Iterators;->emptyModifiableIterator()Ljava/util/Iterator;
 
     move-result-object p0
 
     return-object p0
 
-    .line 349
+    .line 390
     :cond_0
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
@@ -238,7 +210,7 @@
 
     move-result-object v0
 
-    .line 350
+    .line 391
     new-instance v1, Lcom/google/common/collect/StandardTable$Row$1;
 
     invoke-direct {v1, p0, v0}, Lcom/google/common/collect/StandardTable$Row$1;-><init>(Lcom/google/common/collect/StandardTable$Row;Ljava/util/Iterator;)V
@@ -248,6 +220,19 @@
 
 .method public get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -256,16 +241,19 @@
         }
     .end annotation
 
-    .line 303
-    invoke-virtual {p0}, Lcom/google/common/collect/StandardTable$Row;->backingRowMap()Ljava/util/Map;
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 
-    move-result-object p0
+    .line 342
+    invoke-virtual {p0}, Lcom/google/common/collect/StandardTable$Row;->updateBackingRowMapField()V
 
     if-eqz p1, :cond_0
 
+    .line 343
+    iget-object p0, p0, Lcom/google/common/collect/StandardTable$Row;->backingRowMap:Ljava/util/Map;
+
     if-eqz p0, :cond_0
 
-    .line 304
     invoke-static {p0, p1}, Lcom/google/common/collect/Maps;->safeGet(Ljava/util/Map;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -282,14 +270,13 @@
 .method maintainEmptyInvariant()V
     .locals 2
 
-    .line 289
-    invoke-virtual {p0}, Lcom/google/common/collect/StandardTable$Row;->backingRowMap()Ljava/util/Map;
+    .line 326
+    invoke-virtual {p0}, Lcom/google/common/collect/StandardTable$Row;->updateBackingRowMapField()V
 
-    move-result-object v0
+    .line 327
+    iget-object v0, p0, Lcom/google/common/collect/StandardTable$Row;->backingRowMap:Ljava/util/Map;
 
     if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/google/common/collect/StandardTable$Row;->backingRowMap:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->isEmpty()Z
 
@@ -297,7 +284,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 290
+    .line 328
     iget-object v0, p0, Lcom/google/common/collect/StandardTable$Row;->this$0:Lcom/google/common/collect/StandardTable;
 
     iget-object v0, v0, Lcom/google/common/collect/StandardTable;->backingMap:Ljava/util/Map;
@@ -308,7 +295,7 @@
 
     const/4 v0, 0x0
 
-    .line 291
+    .line 329
     iput-object v0, p0, Lcom/google/common/collect/StandardTable$Row;->backingRowMap:Ljava/util/Map;
 
     :cond_0
@@ -317,19 +304,33 @@
 
 .method public put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TC;TV;)TV;"
         }
     .end annotation
 
-    .line 309
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 349
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 310
+    .line 350
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 311
+    .line 351
     iget-object v0, p0, Lcom/google/common/collect/StandardTable$Row;->backingRowMap:Ljava/util/Map;
 
     if-eqz v0, :cond_0
@@ -340,7 +341,7 @@
 
     if-nez v0, :cond_0
 
-    .line 312
+    .line 352
     iget-object p0, p0, Lcom/google/common/collect/StandardTable$Row;->backingRowMap:Ljava/util/Map;
 
     invoke-interface {p0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -349,7 +350,7 @@
 
     return-object p0
 
-    .line 314
+    .line 354
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/StandardTable$Row;->this$0:Lcom/google/common/collect/StandardTable;
 
@@ -364,6 +365,19 @@
 
 .method public remove(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/CheckForNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "key"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -372,10 +386,14 @@
         }
     .end annotation
 
-    .line 319
-    invoke-virtual {p0}, Lcom/google/common/collect/StandardTable$Row;->backingRowMap()Ljava/util/Map;
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
 
-    move-result-object v0
+    .line 360
+    invoke-virtual {p0}, Lcom/google/common/collect/StandardTable$Row;->updateBackingRowMapField()V
+
+    .line 361
+    iget-object v0, p0, Lcom/google/common/collect/StandardTable$Row;->backingRowMap:Ljava/util/Map;
 
     if-nez v0, :cond_0
 
@@ -383,13 +401,13 @@
 
     return-object p0
 
-    .line 323
+    .line 364
     :cond_0
     invoke-static {v0, p1}, Lcom/google/common/collect/Maps;->safeRemove(Ljava/util/Map;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 324
+    .line 365
     invoke-virtual {p0}, Lcom/google/common/collect/StandardTable$Row;->maintainEmptyInvariant()V
 
     return-object p1
@@ -398,10 +416,11 @@
 .method public size()I
     .locals 0
 
-    .line 339
-    invoke-virtual {p0}, Lcom/google/common/collect/StandardTable$Row;->backingRowMap()Ljava/util/Map;
+    .line 380
+    invoke-virtual {p0}, Lcom/google/common/collect/StandardTable$Row;->updateBackingRowMapField()V
 
-    move-result-object p0
+    .line 381
+    iget-object p0, p0, Lcom/google/common/collect/StandardTable$Row;->backingRowMap:Ljava/util/Map;
 
     if-nez p0, :cond_0
 
@@ -409,7 +428,6 @@
 
     goto :goto_0
 
-    .line 340
     :cond_0
     invoke-interface {p0}, Ljava/util/Map;->size()I
 
@@ -419,8 +437,55 @@
     return p0
 .end method
 
+.method final updateBackingRowMapField()V
+    .locals 2
+
+    .line 314
+    iget-object v0, p0, Lcom/google/common/collect/StandardTable$Row;->backingRowMap:Ljava/util/Map;
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {v0}, Ljava/util/Map;->isEmpty()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/google/common/collect/StandardTable$Row;->this$0:Lcom/google/common/collect/StandardTable;
+
+    iget-object v0, v0, Lcom/google/common/collect/StandardTable;->backingMap:Ljava/util/Map;
+
+    iget-object v1, p0, Lcom/google/common/collect/StandardTable$Row;->rowKey:Ljava/lang/Object;
+
+    invoke-interface {v0, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 315
+    :cond_0
+    invoke-virtual {p0}, Lcom/google/common/collect/StandardTable$Row;->computeBackingRowMap()Ljava/util/Map;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/google/common/collect/StandardTable$Row;->backingRowMap:Ljava/util/Map;
+
+    :cond_1
+    return-void
+.end method
+
 .method wrapEntry(Ljava/util/Map$Entry;)Ljava/util/Map$Entry;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "entry"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -431,7 +496,7 @@
         }
     .end annotation
 
-    .line 370
+    .line 411
     new-instance v0, Lcom/google/common/collect/StandardTable$Row$2;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/StandardTable$Row$2;-><init>(Lcom/google/common/collect/StandardTable$Row;Ljava/util/Map$Entry;)V

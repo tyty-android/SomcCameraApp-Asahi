@@ -24,6 +24,14 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/device/CancelBurstStateChecker;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
     .line 81
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/CancelBurstStateChecker$1;->this$0:Ljp/co/sony/mc/camera/device/CancelBurstStateChecker;

@@ -14,6 +14,14 @@
 # direct methods
 .method public constructor <init>(Landroid/content/SharedPreferences;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "prefs"
+        }
+    .end annotation
 
     .line 32
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -28,6 +36,16 @@
 # virtual methods
 .method public readBoolean(Ljava/lang/String;Z)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "defaultValue"
+        }
+    .end annotation
 
     .line 59
     iget-object p0, p0, Ljp/co/sony/mc/camera/configuration/SharedPreferencesReader;->mPreferences:Landroid/content/SharedPreferences;
@@ -47,6 +65,16 @@
 
 .method public readInt(Ljava/lang/String;I)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "defaultValue"
+        }
+    .end annotation
 
     .line 66
     iget-object p0, p0, Ljp/co/sony/mc/camera/configuration/SharedPreferencesReader;->mPreferences:Landroid/content/SharedPreferences;
@@ -66,6 +94,16 @@
 
 .method public readLong(Ljava/lang/String;J)Ljava/lang/Long;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "defaultValue"
+        }
+    .end annotation
 
     .line 74
     iget-object p0, p0, Ljp/co/sony/mc/camera/configuration/SharedPreferencesReader;->mPreferences:Landroid/content/SharedPreferences;
@@ -95,6 +133,16 @@
 
 .method public readString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "defaultValue"
+        }
+    .end annotation
 
     .line 51
     iget-object p0, p0, Ljp/co/sony/mc/camera/configuration/SharedPreferencesReader;->mPreferences:Landroid/content/SharedPreferences;
@@ -114,6 +162,17 @@
 
 .method public readStringMap(Ljava/util/List;Ljava/lang/String;)Ljava/util/Map;
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "keySet",
+            "prefix"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

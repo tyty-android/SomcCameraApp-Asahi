@@ -55,7 +55,7 @@
 
     :catch_0
     :try_start_1
-    sget-object v1, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->PRO_PHOTO:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
+    sget-object v1, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->VIDEO_AUTO_FRAMING:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->ordinal()I
 
@@ -69,7 +69,7 @@
 
     :catch_1
     :try_start_2
-    sget-object v1, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->PRO_VIDEO:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
+    sget-object v1, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->PRO_PHOTO:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->ordinal()I
 
@@ -83,7 +83,7 @@
 
     :catch_2
     :try_start_3
-    sget-object v1, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->MACRO:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
+    sget-object v1, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->PRO_VIDEO:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->ordinal()I
 
@@ -96,6 +96,48 @@
     .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
 
     :catch_3
+    :try_start_4
+    sget-object v1, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->PRO_VIDEO_WITHOUT_HYBRID:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x5
+
+    aput v2, v0, v1
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
+    :catch_4
+    :try_start_5
+    sget-object v1, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->MACRO:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x6
+
+    aput v2, v0, v1
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+
+    :catch_5
+    :try_start_6
+    sget-object v1, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->PHOTO_BOKEH:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$LensSliderType;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x7
+
+    aput v2, v0, v1
+    :try_end_6
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
+
+    :catch_6
     sput-object v0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$WhenMappings;->$EnumSwitchMapping$0:[I
 
     return-void

@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements Lkotlin/jvm/functions/Function2;
 
 
 # direct methods
@@ -18,17 +18,19 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
-    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->$r8$lambda$wdWhek58bz8Pr8AVtUASWC3yHbg(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
+    check-cast p2, Ljava/lang/Boolean;
+
+    invoke-static {p1, p2}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->$r8$lambda$IX4ZJLKXj5902khnKQDRPxNVeZY(Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;Ljava/lang/Boolean;)I
 
     move-result p0
 
-    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 

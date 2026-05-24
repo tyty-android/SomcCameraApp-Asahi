@@ -52,7 +52,7 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/viewbinder/ThermalNoticeViewBinder$onCreate$3$1$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ThermalNoticeViewBinder;
 
-    .line 511
+    .line 496
     invoke-direct {p0}, Landroid/view/View$AccessibilityDelegate;-><init>()V
 
     return-void
@@ -71,17 +71,17 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 516
+    .line 501
     invoke-super {p0, p1, p2}, Landroid/view/View$AccessibilityDelegate;->onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
-    .line 517
+    .line 502
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ThermalNoticeViewBinder$onCreate$3$1$1;->$this_apply:Landroidx/constraintlayout/widget/ConstraintLayout;
 
     const/4 p2, 0x0
 
     invoke-virtual {p1, p2}, Landroidx/constraintlayout/widget/ConstraintLayout;->setAccessibilityDelegate(Landroid/view/View$AccessibilityDelegate;)V
 
-    .line 518
+    .line 503
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ThermalNoticeViewBinder$onCreate$3$1$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ThermalNoticeViewBinder;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/ThermalNoticeViewBinder;->access$getBinding$p(Ljp/co/sony/mc/camera/view/viewbinder/ThermalNoticeViewBinder;)Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationThermalNoticeBinding;

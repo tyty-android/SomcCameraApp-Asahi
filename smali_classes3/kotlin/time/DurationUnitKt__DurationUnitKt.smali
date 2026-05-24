@@ -12,24 +12,24 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u001c\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000c\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0000\u001a\u0018\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0001\u001a\u0010\u0010\u0006\u001a\u00020\u00012\u0006\u0010\u0007\u001a\u00020\u0008H\u0001\u001a\u000c\u0010\u0007\u001a\u00020\u0008*\u00020\u0001H\u0001\u00a8\u0006\t"
+        "\u0000\u001a\n\u0000\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000c\n\u0000\n\u0002\u0010\u000b\n\u0000\u001a\u000c\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u0001\u001a\u0010\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0000\u001a\u00020\u0001H\u0001\u001a\u0018\u0010\u0004\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\u0008H\u0001\u00a8\u0006\t"
     }
     d2 = {
-        "durationUnitByIsoChar",
+        "shortName",
+        "",
         "Lkotlin/time/DurationUnit;",
+        "durationUnitByShortName",
+        "durationUnitByIsoChar",
         "isoChar",
         "",
         "isTimeComponent",
-        "",
-        "durationUnitByShortName",
-        "shortName",
         "",
         "kotlin-stdlib"
     }
     k = 0x5
     mv = {
+        0x2,
         0x1,
-        0x9,
         0x0
     }
     xi = 0x31
@@ -85,36 +85,23 @@
     :cond_1
     const/16 p1, 0x48
 
-    if-ne p0, p1, :cond_2
+    if-eq p0, p1, :cond_4
 
-    .line 99
-    sget-object p0, Lkotlin/time/DurationUnit;->HOURS:Lkotlin/time/DurationUnit;
-
-    goto :goto_0
-
-    :cond_2
     const/16 p1, 0x4d
 
-    if-ne p0, p1, :cond_3
+    if-eq p0, p1, :cond_3
 
-    .line 100
-    sget-object p0, Lkotlin/time/DurationUnit;->MINUTES:Lkotlin/time/DurationUnit;
-
-    goto :goto_0
-
-    :cond_3
     const/16 p1, 0x53
 
-    if-ne p0, p1, :cond_4
+    if-ne p0, p1, :cond_2
 
     .line 101
     sget-object p0, Lkotlin/time/DurationUnit;->SECONDS:Lkotlin/time/DurationUnit;
 
-    :goto_0
-    return-object p0
+    goto :goto_0
 
     .line 102
-    :cond_4
+    :cond_2
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -134,6 +121,19 @@
     invoke-direct {p1, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p1
+
+    .line 100
+    :cond_3
+    sget-object p0, Lkotlin/time/DurationUnit;->MINUTES:Lkotlin/time/DurationUnit;
+
+    goto :goto_0
+
+    .line 99
+    :cond_4
+    sget-object p0, Lkotlin/time/DurationUnit;->HOURS:Lkotlin/time/DurationUnit;
+
+    :goto_0
+    return-object p0
 .end method
 
 .method public static final durationUnitByShortName(Ljava/lang/String;)Lkotlin/time/DurationUnit;

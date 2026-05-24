@@ -88,28 +88,22 @@
 
 # virtual methods
 .method public onZoomCurrentPositionClicked()V
-    .locals 1
+    .locals 0
 
-    .line 485
+    .line 487
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$bind$16;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;->access$getLensUiState(Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;)Ljp/co/sony/mc/camera/view/uistate/LensUiState;
 
     move-result-object p0
 
-    .line 486
-    sget-object v0, Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$ZoomCurrentPositionClicked;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$ZoomCurrentPositionClicked;
-
-    check-cast v0, Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason;
-
-    .line 485
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/uistate/LensUiState;->closeBasicModeMenu(Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason;)V
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/LensUiState;->onZoomCurrentPositionClicked()V
 
     return-void
 .end method
 
 .method public onZoomJumpClicked(I)V
-    .locals 9
+    .locals 11
 
     .line 461
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$bind$16;->$vm:Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;
@@ -254,6 +248,50 @@
 
     move-result-object v0
 
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getBokeh()Landroidx/lifecycle/LiveData;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    check-cast v0, Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v7
+
+    .line 474
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$bind$16;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;->access$getCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;)Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getVideoStabilizer()Landroidx/lifecycle/LiveData;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    move-object v8, v0
+
+    check-cast v8, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+
+    .line 475
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$bind$16;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;->access$getCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;)Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+    move-result-object v0
+
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getVideoMfHdr()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
@@ -264,11 +302,11 @@
 
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    move-object v7, v0
+    move-object v9, v0
 
-    check-cast v7, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+    check-cast v9, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
 
-    .line 474
+    .line 476
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$bind$16;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;->access$getCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;)Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
@@ -289,16 +327,16 @@
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;->isHfr()Z
 
-    move-result v8
+    move-result v10
 
     move v6, p1
 
     .line 469
-    invoke-virtual/range {v3 .. v8}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio$Companion;->getBaseZoomRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ILjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)F
+    invoke-virtual/range {v3 .. v10}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio$Companion;->getBaseZoomRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;IZLjp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)F
 
     move-result p1
 
-    .line 476
+    .line 478
     new-instance v0, Lkotlin/Pair;
 
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$bind$16;->$lens:Lkotlin/Pair;
@@ -313,10 +351,10 @@
 
     invoke-direct {v0, v3, p1}, Lkotlin/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 477
+    .line 479
     new-array p1, v1, [Ljava/lang/String;
 
-    .line 478
+    .line 480
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtimeNanos()J
 
     move-result-wide v3
@@ -337,10 +375,10 @@
 
     aput-object v1, p1, v2
 
-    .line 477
+    .line 479
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 479
+    .line 481
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$bind$16;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;->access$getLensUiState(Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder;)Ljp/co/sony/mc/camera/view/uistate/LensUiState;

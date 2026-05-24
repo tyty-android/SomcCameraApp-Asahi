@@ -24,8 +24,16 @@
 # direct methods
 .method constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine$RequestStoreTask;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$1"
+        }
+    .end annotation
 
-    .line 7575
+    .line 7270
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$RequestStoreTask$2;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$RequestStoreTask;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +46,7 @@
 .method public run()V
     .locals 2
 
-    .line 7578
+    .line 7273
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$RequestStoreTask$2;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$RequestStoreTask;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$RequestStoreTask;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;

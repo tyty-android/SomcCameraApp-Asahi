@@ -31,6 +31,14 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "context"
+        }
+    .end annotation
 
     .line 50
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -77,6 +85,16 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "fileName"
+        }
+    .end annotation
 
     .line 57
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -125,6 +143,14 @@
 
 .method private apply(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "apply"
+        }
+    .end annotation
 
     if-eqz p1, :cond_0
 
@@ -137,6 +163,16 @@
 
 .method public static createPrefix(Ljp/co/sony/mc/camera/configuration/ParameterCategory;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Ljava/lang/String;
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "category",
+            "mode"
+        }
+    .end annotation
 
     .line 197
     new-instance v0, Ljava/lang/StringBuilder;
@@ -195,6 +231,16 @@
 
 .method public static getCameraSettingPreferencesName(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "cameraId"
+        }
+    .end annotation
 
     .line 229
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->getCameraSettingPreferencesName(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/lang/String;
@@ -206,6 +252,18 @@
 
 .method public static getSharedPreferences(Landroid/content/Context;Ljava/lang/String;I)Landroid/content/SharedPreferences;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "context",
+            "fileName",
+            "mode"
+        }
+    .end annotation
 
     .line 224
     invoke-virtual {p0, p1, p2}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
@@ -230,6 +288,14 @@
 
 .method public clear(Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "apply"
+        }
+    .end annotation
 
     .line 157
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/SharedPreferencesAccessor;->mWriter:Ljp/co/sony/mc/camera/configuration/SharedPreferencesWriter;
@@ -244,6 +310,14 @@
 
 .method public clearParameters(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "apply"
+        }
+    .end annotation
 
     .line 75
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/setting/SharedPreferencesAccessor;->reset()V
@@ -265,6 +339,15 @@
 
 .method public getStringMap(Ljava/lang/String;)Ljava/util/Map;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "prefix"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -308,6 +391,16 @@
 
 .method public readBoolean(Ljava/lang/String;Z)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "defaultValue"
+        }
+    .end annotation
 
     .line 89
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/SharedPreferencesAccessor;->mReader:Ljp/co/sony/mc/camera/configuration/SharedPreferencesReader;
@@ -362,6 +455,16 @@
 
 .method public readInt(Ljava/lang/String;I)I
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "defaultValue"
+        }
+    .end annotation
 
     .line 105
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/SharedPreferencesAccessor;->mReader:Ljp/co/sony/mc/camera/configuration/SharedPreferencesReader;
@@ -416,6 +519,16 @@
 
 .method public readLong(Ljava/lang/String;J)J
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "defaultValue"
+        }
+    .end annotation
 
     .line 140
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/SharedPreferencesAccessor;->mReader:Ljp/co/sony/mc/camera/configuration/SharedPreferencesReader;
@@ -480,6 +593,16 @@
 
 .method public readString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "defaultValue"
+        }
+    .end annotation
 
     .line 123
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/SharedPreferencesAccessor;->mReader:Ljp/co/sony/mc/camera/configuration/SharedPreferencesReader;
@@ -534,6 +657,16 @@
 
 .method public remove(Ljava/lang/String;Z)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "apply"
+        }
+    .end annotation
 
     .line 148
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/SharedPreferencesAccessor;->mWriter:Ljp/co/sony/mc/camera/configuration/SharedPreferencesWriter;
@@ -559,6 +692,17 @@
 
 .method public setStringMap(Ljava/lang/String;Ljava/util/Map;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "prefix",
+            "params"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -580,6 +724,18 @@
 
 .method public writeBoolean(Ljava/lang/String;ZZ)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value",
+            "apply"
+        }
+    .end annotation
 
     .line 80
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -635,6 +791,18 @@
 
 .method public writeInt(Ljava/lang/String;IZ)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value",
+            "apply"
+        }
+    .end annotation
 
     .line 97
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -690,6 +858,18 @@
 
 .method public writeLong(Ljava/lang/String;JZ)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value",
+            "apply"
+        }
+    .end annotation
 
     .line 131
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -751,6 +931,14 @@
 
 .method public writeParameters(Z)V
     .locals 5
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "apply"
+        }
+    .end annotation
 
     .line 64
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/SharedPreferencesAccessor;->mMaps:Ljava/util/Map;
@@ -831,6 +1019,18 @@
 
 .method public writeString(Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "value",
+            "apply"
+        }
+    .end annotation
 
     .line 114
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z

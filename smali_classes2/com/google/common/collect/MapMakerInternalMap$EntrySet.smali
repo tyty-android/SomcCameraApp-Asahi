@@ -1,5 +1,5 @@
 .class final Lcom/google/common/collect/MapMakerInternalMap$EntrySet;
-.super Lcom/google/common/collect/MapMakerInternalMap$SafeToArraySet;
+.super Ljava/util/AbstractSet;
 .source "MapMakerInternalMap.java"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/google/common/collect/MapMakerInternalMap$SafeToArraySet<",
+        "Ljava/util/AbstractSet<",
         "Ljava/util/Map$Entry<",
         "TK;TV;>;>;"
     }
@@ -29,13 +29,19 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/MapMakerInternalMap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            "this$0"
+        }
+    .end annotation
 
-    .line 2760
+    .line 2795
     iput-object p1, p0, Lcom/google/common/collect/MapMakerInternalMap$EntrySet;->this$0:Lcom/google/common/collect/MapMakerInternalMap;
 
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, Lcom/google/common/collect/MapMakerInternalMap$SafeToArraySet;-><init>(Lcom/google/common/collect/MapMakerInternalMap$1;)V
+    invoke-direct {p0}, Ljava/util/AbstractSet;-><init>()V
 
     return-void
 .end method
@@ -45,7 +51,7 @@
 .method public clear()V
     .locals 0
 
-    .line 2804
+    .line 2839
     iget-object p0, p0, Lcom/google/common/collect/MapMakerInternalMap$EntrySet;->this$0:Lcom/google/common/collect/MapMakerInternalMap;
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap;->clear()V
@@ -55,8 +61,16 @@
 
 .method public contains(Ljava/lang/Object;)Z
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 2769
+    .line 2804
     instance-of v0, p1, Ljava/util/Map$Entry;
 
     const/4 v1, 0x0
@@ -65,11 +79,11 @@
 
     return v1
 
-    .line 2772
+    .line 2807
     :cond_0
     check-cast p1, Ljava/util/Map$Entry;
 
-    .line 2773
+    .line 2808
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
@@ -78,7 +92,7 @@
 
     return v1
 
-    .line 2777
+    .line 2812
     :cond_1
     iget-object v2, p0, Lcom/google/common/collect/MapMakerInternalMap$EntrySet;->this$0:Lcom/google/common/collect/MapMakerInternalMap;
 
@@ -88,7 +102,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 2779
+    .line 2814
     iget-object p0, p0, Lcom/google/common/collect/MapMakerInternalMap$EntrySet;->this$0:Lcom/google/common/collect/MapMakerInternalMap;
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap;->valueEquivalence()Lcom/google/common/base/Equivalence;
@@ -114,7 +128,7 @@
 .method public isEmpty()Z
     .locals 0
 
-    .line 2799
+    .line 2834
     iget-object p0, p0, Lcom/google/common/collect/MapMakerInternalMap$EntrySet;->this$0:Lcom/google/common/collect/MapMakerInternalMap;
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap;->isEmpty()Z
@@ -135,7 +149,7 @@
         }
     .end annotation
 
-    .line 2764
+    .line 2799
     new-instance v0, Lcom/google/common/collect/MapMakerInternalMap$EntryIterator;
 
     iget-object p0, p0, Lcom/google/common/collect/MapMakerInternalMap$EntrySet;->this$0:Lcom/google/common/collect/MapMakerInternalMap;
@@ -147,8 +161,16 @@
 
 .method public remove(Ljava/lang/Object;)Z
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "o"
+        }
+    .end annotation
 
-    .line 2784
+    .line 2819
     instance-of v0, p1, Ljava/util/Map$Entry;
 
     const/4 v1, 0x0
@@ -157,18 +179,18 @@
 
     return v1
 
-    .line 2787
+    .line 2822
     :cond_0
     check-cast p1, Ljava/util/Map$Entry;
 
-    .line 2788
+    .line 2823
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    .line 2789
+    .line 2824
     iget-object p0, p0, Lcom/google/common/collect/MapMakerInternalMap$EntrySet;->this$0:Lcom/google/common/collect/MapMakerInternalMap;
 
     invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -190,7 +212,7 @@
 .method public size()I
     .locals 0
 
-    .line 2794
+    .line 2829
     iget-object p0, p0, Lcom/google/common/collect/MapMakerInternalMap$EntrySet;->this$0:Lcom/google/common/collect/MapMakerInternalMap;
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap;->size()I

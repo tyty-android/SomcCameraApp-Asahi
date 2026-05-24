@@ -40,7 +40,7 @@
 .method private static synthetic $values()[Lcom/google/common/reflect/Types$JavaVersion;
     .locals 4
 
-    .line 548
+    .line 547
     sget-object v0, Lcom/google/common/reflect/Types$JavaVersion;->JAVA6:Lcom/google/common/reflect/Types$JavaVersion;
 
     sget-object v1, Lcom/google/common/reflect/Types$JavaVersion;->JAVA7:Lcom/google/common/reflect/Types$JavaVersion;
@@ -59,7 +59,7 @@
 .method static constructor <clinit>()V
     .locals 6
 
-    .line 549
+    .line 548
     new-instance v0, Lcom/google/common/reflect/Types$JavaVersion$1;
 
     const-string v1, "JAVA6"
@@ -70,7 +70,7 @@
 
     sput-object v0, Lcom/google/common/reflect/Types$JavaVersion;->JAVA6:Lcom/google/common/reflect/Types$JavaVersion;
 
-    .line 567
+    .line 566
     new-instance v1, Lcom/google/common/reflect/Types$JavaVersion$2;
 
     const-string v2, "JAVA7"
@@ -81,7 +81,7 @@
 
     sput-object v1, Lcom/google/common/reflect/Types$JavaVersion;->JAVA7:Lcom/google/common/reflect/Types$JavaVersion;
 
-    .line 582
+    .line 581
     new-instance v2, Lcom/google/common/reflect/Types$JavaVersion$3;
 
     const-string v3, "JAVA8"
@@ -92,7 +92,7 @@
 
     sput-object v2, Lcom/google/common/reflect/Types$JavaVersion;->JAVA8:Lcom/google/common/reflect/Types$JavaVersion;
 
-    .line 612
+    .line 604
     new-instance v3, Lcom/google/common/reflect/Types$JavaVersion$4;
 
     const-string v4, "JAVA9"
@@ -103,14 +103,14 @@
 
     sput-object v3, Lcom/google/common/reflect/Types$JavaVersion;->JAVA9:Lcom/google/common/reflect/Types$JavaVersion;
 
-    .line 548
+    .line 547
     invoke-static {}, Lcom/google/common/reflect/Types$JavaVersion;->$values()[Lcom/google/common/reflect/Types$JavaVersion;
 
     move-result-object v4
 
     sput-object v4, Lcom/google/common/reflect/Types$JavaVersion;->$VALUES:[Lcom/google/common/reflect/Types$JavaVersion;
 
-    .line 637
+    .line 629
     const-class v4, Ljava/lang/reflect/AnnotatedElement;
 
     const-class v5, Ljava/lang/reflect/TypeVariable;
@@ -121,7 +121,7 @@
 
     if-eqz v4, :cond_1
 
-    .line 638
+    .line 630
     new-instance v0, Lcom/google/common/reflect/Types$JavaVersion$5;
 
     invoke-direct {v0}, Lcom/google/common/reflect/Types$JavaVersion$5;-><init>()V
@@ -130,32 +130,32 @@
 
     move-result-object v0
 
-    .line 639
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    .line 631
+    invoke-interface {v0}, Ljava/lang/reflect/Type;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     const-string v1, "java.util.Map.java.util.Map"
 
-    .line 640
+    .line 632
     invoke-virtual {v0, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 641
+    .line 633
     sput-object v2, Lcom/google/common/reflect/Types$JavaVersion;->CURRENT:Lcom/google/common/reflect/Types$JavaVersion;
 
     goto :goto_0
 
-    .line 643
+    .line 635
     :cond_0
     sput-object v3, Lcom/google/common/reflect/Types$JavaVersion;->CURRENT:Lcom/google/common/reflect/Types$JavaVersion;
 
     goto :goto_0
 
-    .line 645
+    .line 637
     :cond_1
     new-instance v2, Lcom/google/common/reflect/Types$JavaVersion$6;
 
@@ -169,12 +169,12 @@
 
     if-eqz v2, :cond_2
 
-    .line 646
+    .line 638
     sput-object v1, Lcom/google/common/reflect/Types$JavaVersion;->CURRENT:Lcom/google/common/reflect/Types$JavaVersion;
 
     goto :goto_0
 
-    .line 648
+    .line 640
     :cond_2
     sput-object v0, Lcom/google/common/reflect/Types$JavaVersion;->CURRENT:Lcom/google/common/reflect/Types$JavaVersion;
 
@@ -184,13 +184,24 @@
 
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000,
+            0x1000
+        }
+        names = {
+            "$enum$name",
+            "$enum$ordinal"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 548
+    .line 547
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -199,7 +210,7 @@
 .method synthetic constructor <init>(Ljava/lang/String;ILcom/google/common/reflect/Types$1;)V
     .locals 0
 
-    .line 548
+    .line 547
     invoke-direct {p0, p1, p2}, Lcom/google/common/reflect/Types$JavaVersion;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -207,8 +218,16 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/reflect/Types$JavaVersion;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8000
+        }
+        names = {
+            "name"
+        }
+    .end annotation
 
-    .line 548
+    .line 547
     const-class v0, Lcom/google/common/reflect/Types$JavaVersion;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -223,7 +242,7 @@
 .method public static values()[Lcom/google/common/reflect/Types$JavaVersion;
     .locals 1
 
-    .line 548
+    .line 547
     sget-object v0, Lcom/google/common/reflect/Types$JavaVersion;->$VALUES:[Lcom/google/common/reflect/Types$JavaVersion;
 
     invoke-virtual {v0}, [Lcom/google/common/reflect/Types$JavaVersion;->clone()Ljava/lang/Object;
@@ -246,12 +265,28 @@
 .end method
 
 .method abstract newArrayType(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "componentType"
+        }
+    .end annotation
 .end method
 
 .method typeName(Ljava/lang/reflect/Type;)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 
-    .line 665
+    .line 657
     invoke-static {p1}, Lcom/google/common/reflect/Types;->toString(Ljava/lang/reflect/Type;)Ljava/lang/String;
 
     move-result-object p0
@@ -261,6 +296,15 @@
 
 .method final usedInGenericType([Ljava/lang/reflect/Type;)Lcom/google/common/collect/ImmutableList;
     .locals 4
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "types"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
@@ -272,12 +316,12 @@
         }
     .end annotation
 
-    .line 657
+    .line 649
     invoke-static {}, Lcom/google/common/collect/ImmutableList;->builder()Lcom/google/common/collect/ImmutableList$Builder;
 
     move-result-object v0
 
-    .line 658
+    .line 650
     array-length v1, p1
 
     const/4 v2, 0x0
@@ -287,7 +331,7 @@
 
     aget-object v3, p1, v2
 
-    .line 659
+    .line 651
     invoke-virtual {p0, v3}, Lcom/google/common/reflect/Types$JavaVersion;->usedInGenericType(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
 
     move-result-object v3
@@ -298,7 +342,7 @@
 
     goto :goto_0
 
-    .line 661
+    .line 653
     :cond_0
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableList$Builder;->build()Lcom/google/common/collect/ImmutableList;
 
@@ -308,4 +352,12 @@
 .end method
 
 .method abstract usedInGenericType(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "type"
+        }
+    .end annotation
 .end method

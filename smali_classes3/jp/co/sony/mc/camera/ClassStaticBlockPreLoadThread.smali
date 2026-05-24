@@ -24,6 +24,14 @@
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/ClassStaticBlockPreLoadThread$PreloadDoneCallback;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "callback"
+        }
+    .end annotation
 
     .line 45
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V

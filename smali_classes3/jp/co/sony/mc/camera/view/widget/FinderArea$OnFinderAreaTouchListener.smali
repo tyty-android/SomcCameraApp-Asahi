@@ -19,24 +19,68 @@
 .end method
 
 .method public abstract onCaptureAreaDoubleTapUp(Landroid/graphics/Point;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "point"
+        }
+    .end annotation
 .end method
 
 .method public abstract onCaptureAreaIsReadyToScale()V
 .end method
 
 .method public abstract onCaptureAreaLongPressed(Landroid/graphics/Point;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "point"
+        }
+    .end annotation
 .end method
 
 .method public abstract onCaptureAreaMoved(Landroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "currentPoint",
+            "lastPoint",
+            "downPoint"
+        }
+    .end annotation
 .end method
 
 .method public abstract onCaptureAreaReleased()V
 .end method
 
 .method public abstract onCaptureAreaScaled(F)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "scaleLength"
+        }
+    .end annotation
 .end method
 
 .method public abstract onCaptureAreaSingleTapUp(Landroid/graphics/Point;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "point"
+        }
+    .end annotation
 .end method
 
 .method public abstract onCaptureAreaStopped()V

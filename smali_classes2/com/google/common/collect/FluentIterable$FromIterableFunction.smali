@@ -35,7 +35,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 839
+    .line 850
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -45,6 +45,15 @@
 # virtual methods
 .method public apply(Ljava/lang/Iterable;)Lcom/google/common/collect/FluentIterable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "fromObject"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -55,7 +64,7 @@
         }
     .end annotation
 
-    .line 842
+    .line 854
     invoke-static {p1}, Lcom/google/common/collect/FluentIterable;->from(Ljava/lang/Iterable;)Lcom/google/common/collect/FluentIterable;
 
     move-result-object p0
@@ -65,8 +74,16 @@
 
 .method public bridge synthetic apply(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "fromObject"
+        }
+    .end annotation
 
-    .line 839
+    .line 850
     check-cast p1, Ljava/lang/Iterable;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/FluentIterable$FromIterableFunction;->apply(Ljava/lang/Iterable;)Lcom/google/common/collect/FluentIterable;

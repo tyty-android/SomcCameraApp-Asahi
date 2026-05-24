@@ -14,7 +14,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nFramingAssistSwitch.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FramingAssistSwitch.kt\njp/co/sony/mc/camera/configuration/parameters/FramingAssistSwitch$Companion\n+ 2 ArraysJVM.kt\nkotlin/collections/ArraysKt__ArraysJVMKt\n*L\n1#1,88:1\n37#2,2:89\n*S KotlinDebug\n*F\n+ 1 FramingAssistSwitch.kt\njp/co/sony/mc/camera/configuration/parameters/FramingAssistSwitch$Companion\n*L\n80#1:89,2\n*E\n"
+    value = "SMAP\nFramingAssistSwitch.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FramingAssistSwitch.kt\njp/co/sony/mc/camera/configuration/parameters/FramingAssistSwitch$Companion\n+ 2 ArraysJVM.kt\nkotlin/collections/ArraysKt__ArraysJVMKt\n*L\n1#1,88:1\n37#2:89\n36#2,3:90\n*S KotlinDebug\n*F\n+ 1 FramingAssistSwitch.kt\njp/co/sony/mc/camera/configuration/parameters/FramingAssistSwitch$Companion\n*L\n80#1:89\n80#1:90,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -113,7 +113,7 @@
 
     const/4 p1, 0x0
 
-    .line 90
+    .line 92
     new-array p1, p1, [Ljp/co/sony/mc/camera/configuration/parameters/FramingAssistSwitch;
 
     invoke-interface {p0, p1}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;

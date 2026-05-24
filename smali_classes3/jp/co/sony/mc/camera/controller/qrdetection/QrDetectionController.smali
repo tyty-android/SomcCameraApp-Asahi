@@ -61,6 +61,14 @@
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/controller/qrdetection/QrDetectionController$QrDetectNotifyListener;)V
     .locals 3
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "callback"
+        }
+    .end annotation
 
     .line 57
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -117,6 +125,14 @@
 
 .method private getMassagedText(Lcom/google/zxing/Result;)Ljava/lang/String;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "result"
+        }
+    .end annotation
 
     .line 124
     invoke-virtual {p1}, Lcom/google/zxing/Result;->getText()Ljava/lang/String;
@@ -197,6 +213,16 @@
 # virtual methods
 .method public handlePreviewStarted(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Z)V
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "oneShot"
+        }
+    .end annotation
 
     .line 75
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/qrdetection/QrDetectionController;->mPreviewFrameProvider:Ljp/co/sony/mc/camera/device/PreviewFrameProvider;
@@ -287,6 +313,18 @@
 
 .method public handlePreviewStarted(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;ZLjp/co/sony/mc/camera/device/PreviewFrameProvider;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "mode",
+            "oneShot",
+            "receiver"
+        }
+    .end annotation
 
     .line 70
     iput-object p3, p0, Ljp/co/sony/mc/camera/controller/qrdetection/QrDetectionController;->mPreviewFrameProvider:Ljp/co/sony/mc/camera/device/PreviewFrameProvider;
@@ -329,6 +367,14 @@
 
 .method public handleSettingsChanged(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "isOn"
+        }
+    .end annotation
 
     .line 120
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/controller/qrdetection/QrDetectionController;->mIsQrDetectionOn:Z

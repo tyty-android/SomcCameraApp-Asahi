@@ -684,7 +684,7 @@
     .line 144
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeCameraStatusBarViewBinder;->proModeBottomPaneUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;
 
-    const p1, 0x7f090278
+    const p1, 0x7f090281
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->onSsIsoEvLabelClicked(I)V
 
@@ -738,7 +738,7 @@
     .line 187
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeCameraStatusBarViewBinder;->proModeBottomPaneUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;
 
-    const p1, 0x7f090276
+    const p1, 0x7f09027f
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->onSsIsoEvLabelClicked(I)V
 
@@ -826,7 +826,7 @@
     .line 219
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeCameraStatusBarViewBinder;->proModeBottomPaneUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;
 
-    const p1, 0x7f090277
+    const p1, 0x7f090280
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->onSsIsoEvLabelClicked(I)V
 
@@ -861,7 +861,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f07074a
+    const v2, 0x7f0706f7
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -878,7 +878,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f070742
+    const v3, 0x7f0706ef
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -892,7 +892,7 @@
     .line 250
     invoke-virtual {v3, v0}, Landroidx/constraintlayout/widget/ConstraintSet;->clone(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
-    const v4, 0x7f090278
+    const v4, 0x7f090281
 
     const/4 v5, 0x2
 
@@ -945,12 +945,12 @@
 
     invoke-virtual {p0, v6}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    const p0, 0x7f0901f6
+    const p0, 0x7f0901fa
 
     .line 268
     invoke-virtual {v3, v4, v7, p0, v5}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIII)V
 
-    const p0, 0x7f0901bf
+    const p0, 0x7f0901c6
 
     .line 269
     invoke-virtual {v3, v4, v5, p0, v7}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIII)V

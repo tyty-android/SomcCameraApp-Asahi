@@ -45,7 +45,7 @@
         }
     .end annotation
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 .end field
 
@@ -63,9 +63,22 @@
 .method constructor <init>(Ljava/lang/Object;ILcom/google/common/cache/ReferenceEntry;)V
     .locals 1
     .param p3    # Lcom/google/common/cache/ReferenceEntry;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .annotation runtime Ljavax/annotation/CheckForNull;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "hash",
+            "next"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;I",
@@ -74,23 +87,23 @@
         }
     .end annotation
 
-    .line 938
+    .line 976
     invoke-direct {p0}, Lcom/google/common/cache/LocalCache$AbstractReferenceEntry;-><init>()V
 
-    .line 953
+    .line 991
     invoke-static {}, Lcom/google/common/cache/LocalCache;->unset()Lcom/google/common/cache/LocalCache$ValueReference;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/common/cache/LocalCache$StrongEntry;->valueReference:Lcom/google/common/cache/LocalCache$ValueReference;
 
-    .line 939
+    .line 977
     iput-object p1, p0, Lcom/google/common/cache/LocalCache$StrongEntry;->key:Ljava/lang/Object;
 
-    .line 940
+    .line 978
     iput p2, p0, Lcom/google/common/cache/LocalCache$StrongEntry;->hash:I
 
-    .line 941
+    .line 979
     iput-object p3, p0, Lcom/google/common/cache/LocalCache$StrongEntry;->next:Lcom/google/common/cache/ReferenceEntry;
 
     return-void
@@ -101,7 +114,7 @@
 .method public getHash()I
     .locals 0
 
-    .line 967
+    .line 1005
     iget p0, p0, Lcom/google/common/cache/LocalCache$StrongEntry;->hash:I
 
     return p0
@@ -115,7 +128,7 @@
         }
     .end annotation
 
-    .line 946
+    .line 984
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$StrongEntry;->key:Ljava/lang/Object;
 
     return-object p0
@@ -131,7 +144,7 @@
         }
     .end annotation
 
-    .line 972
+    .line 1010
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$StrongEntry;->next:Lcom/google/common/cache/ReferenceEntry;
 
     return-object p0
@@ -147,7 +160,7 @@
         }
     .end annotation
 
-    .line 957
+    .line 995
     iget-object p0, p0, Lcom/google/common/cache/LocalCache$StrongEntry;->valueReference:Lcom/google/common/cache/LocalCache$ValueReference;
 
     return-object p0
@@ -155,6 +168,15 @@
 
 .method public setValueReference(Lcom/google/common/cache/LocalCache$ValueReference;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "valueReference"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -163,7 +185,7 @@
         }
     .end annotation
 
-    .line 962
+    .line 1000
     iput-object p1, p0, Lcom/google/common/cache/LocalCache$StrongEntry;->valueReference:Lcom/google/common/cache/LocalCache$ValueReference;
 
     return-void

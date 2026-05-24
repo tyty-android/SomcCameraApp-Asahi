@@ -24,7 +24,7 @@
     .line 0
     check-cast p1, Ljp/co/sony/mc/camera/view/CameraEventListener;
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->$r8$lambda$_c1oAAUwxNgJQ4l1BznxNNw8vOM(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
+    invoke-static {p1}, Ljp/co/sony/mc/camera/view/CameraEventNotifier;->$r8$lambda$BI_QHd7N51bZBMPXi9mV1-1FD9Y(Ljp/co/sony/mc/camera/view/CameraEventListener;)Lkotlin/Unit;
 
     move-result-object p0
 

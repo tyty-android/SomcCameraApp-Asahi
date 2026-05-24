@@ -93,16 +93,12 @@
         "MACRO_MODE",
         "COMPUTATIONAL_MODE",
         "ACCESSIBILITY",
-        "CONNECT_TO",
         "FOCUS_UI",
         "LEVEL_CALIBRATION",
-        "NETWORK_USAGE",
         "PRIVACY_POLICY",
         "SELF_TIMER",
         "SHARPEN_FACES",
         "SS_UI",
-        "STREAM_MUTE",
-        "STREAM_VIDEO_QUALITY",
         "SW_LICENSE",
         "TOUCH_TRACKING",
         "VIDEO_BACKLIGHT_COLLECTION",
@@ -115,6 +111,10 @@
         "SAVE_FULL_SCREEN_VIDEO",
         "ULTRA_HDR",
         "VOLUME_DISTORTION_CORRECTION",
+        "AI_SUGGESTION_DETECTION",
+        "AI_SUGGESTION_CUSTOM_EXTENSION_DATA",
+        "DIGITAL_TRIPOD_FRAMING",
+        "DIGITAL_TRIPOD_FRAMING_ASSISTANCE_EXTENSION_DATA",
         "Companion",
         "SomcCamera_release"
     }
@@ -143,6 +143,10 @@
 
 .field public static final enum AF_ON:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
+.field public static final enum AI_SUGGESTION_CUSTOM_EXTENSION_DATA:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+.field public static final enum AI_SUGGESTION_DETECTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
 .field public static final enum AMBER_BLUE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
 .field public static final enum APERTURE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
@@ -165,11 +169,13 @@
 
 .field public static final enum COMPUTATIONAL_MODE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-.field public static final enum CONNECT_TO:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
-
 .field public static final Companion:Ljp/co/sony/mc/camera/idd/value/IddSettingKey$Companion;
 
 .field public static final enum DESTINATION_TO_SAVE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+.field public static final enum DIGITAL_TRIPOD_FRAMING:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+.field public static final enum DIGITAL_TRIPOD_FRAMING_ASSISTANCE_EXTENSION_DATA:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
 .field public static final enum DISP:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
@@ -235,8 +241,6 @@
 
 .field public static final enum MIC:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-.field public static final enum NETWORK_USAGE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
-
 .field public static final enum NIGHT:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
 .field public static final enum PEAKING:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
@@ -270,10 +274,6 @@
 .field public static final enum SOFT_SKIN:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
 .field public static final enum SS_UI:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
-
-.field public static final enum STREAM_MUTE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
-
-.field public static final enum STREAM_VIDEO_QUALITY:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
 .field public static final enum SUPER_RESOLUTION_ZOOM:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
@@ -448,49 +448,49 @@
 
     sget-object v65, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ACCESSIBILITY:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    sget-object v66, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->CONNECT_TO:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v66, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FOCUS_UI:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    sget-object v67, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FOCUS_UI:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v67, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->LEVEL_CALIBRATION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    sget-object v68, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->LEVEL_CALIBRATION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v68, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    sget-object v69, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->NETWORK_USAGE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v69, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SELF_TIMER:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    sget-object v70, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v70, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SHARPEN_FACES:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    sget-object v71, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SELF_TIMER:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v71, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SS_UI:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    sget-object v72, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SHARPEN_FACES:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v72, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SW_LICENSE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    sget-object v73, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SS_UI:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v73, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->TOUCH_TRACKING:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    sget-object v74, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->STREAM_MUTE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v74, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VIDEO_BACKLIGHT_COLLECTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    sget-object v75, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->STREAM_VIDEO_QUALITY:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v75, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->MANUAL_FOCUS:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    sget-object v76, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SW_LICENSE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v76, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->AUTO_FRAMING_ORIENTATION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    sget-object v77, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->TOUCH_TRACKING:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v77, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->AFR_SHORTCUT:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    sget-object v78, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VIDEO_BACKLIGHT_COLLECTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v78, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FRAMING_ASSIST:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    sget-object v79, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->MANUAL_FOCUS:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v79, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FRAMING_ASSIST_METHOD:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    sget-object v80, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->AUTO_FRAMING_ORIENTATION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v80, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->LEVEL_METER:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    sget-object v81, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->AFR_SHORTCUT:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v81, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SAVE_FULL_SCREEN_VIDEO:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    sget-object v82, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FRAMING_ASSIST:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v82, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ULTRA_HDR:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    sget-object v83, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FRAMING_ASSIST_METHOD:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v83, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VOLUME_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    sget-object v84, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->LEVEL_METER:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v84, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->AI_SUGGESTION_DETECTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    sget-object v85, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SAVE_FULL_SCREEN_VIDEO:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v85, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->AI_SUGGESTION_CUSTOM_EXTENSION_DATA:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    sget-object v86, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ULTRA_HDR:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v86, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->DIGITAL_TRIPOD_FRAMING:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    sget-object v87, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VOLUME_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v87, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->DIGITAL_TRIPOD_FRAMING_ASSISTANCE_EXTENSION_DATA:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     filled-new-array/range {v0 .. v87}, [Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
@@ -1231,244 +1231,244 @@
     .line 78
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    const-string v1, "CONNECT_TO"
+    const-string v1, "FOCUS_UI"
 
     const/16 v2, 0x42
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->CONNECT_TO:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FOCUS_UI:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     .line 79
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    const-string v1, "FOCUS_UI"
+    const-string v1, "LEVEL_CALIBRATION"
 
     const/16 v2, 0x43
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FOCUS_UI:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->LEVEL_CALIBRATION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     .line 80
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    const-string v1, "LEVEL_CALIBRATION"
+    const-string v1, "PRIVACY_POLICY"
 
     const/16 v2, 0x44
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->LEVEL_CALIBRATION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     .line 81
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    const-string v1, "NETWORK_USAGE"
+    const-string v1, "SELF_TIMER"
 
     const/16 v2, 0x45
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->NETWORK_USAGE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SELF_TIMER:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     .line 82
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    const-string v1, "PRIVACY_POLICY"
+    const-string v1, "SHARPEN_FACES"
 
     const/16 v2, 0x46
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SHARPEN_FACES:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     .line 83
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    const-string v1, "SELF_TIMER"
+    const-string v1, "SS_UI"
 
     const/16 v2, 0x47
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SELF_TIMER:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SS_UI:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     .line 84
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    const-string v1, "SHARPEN_FACES"
+    const-string v1, "SW_LICENSE"
 
     const/16 v2, 0x48
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SHARPEN_FACES:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SW_LICENSE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     .line 85
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    const-string v1, "SS_UI"
+    const-string v1, "TOUCH_TRACKING"
 
     const/16 v2, 0x49
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SS_UI:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->TOUCH_TRACKING:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     .line 86
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    const-string v1, "STREAM_MUTE"
+    const-string v1, "VIDEO_BACKLIGHT_COLLECTION"
 
     const/16 v2, 0x4a
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->STREAM_MUTE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VIDEO_BACKLIGHT_COLLECTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     .line 87
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    const-string v1, "STREAM_VIDEO_QUALITY"
+    const-string v1, "MANUAL_FOCUS"
 
     const/16 v2, 0x4b
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->STREAM_VIDEO_QUALITY:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->MANUAL_FOCUS:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     .line 88
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    const-string v1, "SW_LICENSE"
+    const-string v1, "AUTO_FRAMING_ORIENTATION"
 
     const/16 v2, 0x4c
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SW_LICENSE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->AUTO_FRAMING_ORIENTATION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     .line 89
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    const-string v1, "TOUCH_TRACKING"
+    const-string v1, "AFR_SHORTCUT"
 
     const/16 v2, 0x4d
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->TOUCH_TRACKING:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->AFR_SHORTCUT:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     .line 90
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    const-string v1, "VIDEO_BACKLIGHT_COLLECTION"
+    const-string v1, "FRAMING_ASSIST"
 
     const/16 v2, 0x4e
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VIDEO_BACKLIGHT_COLLECTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FRAMING_ASSIST:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     .line 91
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    const-string v1, "MANUAL_FOCUS"
+    const-string v1, "FRAMING_ASSIST_METHOD"
 
     const/16 v2, 0x4f
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->MANUAL_FOCUS:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FRAMING_ASSIST_METHOD:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     .line 92
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    const-string v1, "AUTO_FRAMING_ORIENTATION"
+    const-string v1, "LEVEL_METER"
 
     const/16 v2, 0x50
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->AUTO_FRAMING_ORIENTATION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->LEVEL_METER:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     .line 93
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    const-string v1, "AFR_SHORTCUT"
+    const-string v1, "SAVE_FULL_SCREEN_VIDEO"
 
     const/16 v2, 0x51
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->AFR_SHORTCUT:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SAVE_FULL_SCREEN_VIDEO:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     .line 94
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    const-string v1, "FRAMING_ASSIST"
+    const-string v1, "ULTRA_HDR"
 
     const/16 v2, 0x52
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FRAMING_ASSIST:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ULTRA_HDR:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     .line 95
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    const-string v1, "FRAMING_ASSIST_METHOD"
+    const-string v1, "VOLUME_DISTORTION_CORRECTION"
 
     const/16 v2, 0x53
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FRAMING_ASSIST_METHOD:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VOLUME_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     .line 96
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    const-string v1, "LEVEL_METER"
+    const-string v1, "AI_SUGGESTION_DETECTION"
 
     const/16 v2, 0x54
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->LEVEL_METER:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->AI_SUGGESTION_DETECTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     .line 97
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    const-string v1, "SAVE_FULL_SCREEN_VIDEO"
+    const-string v1, "AI_SUGGESTION_CUSTOM_EXTENSION_DATA"
 
     const/16 v2, 0x55
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SAVE_FULL_SCREEN_VIDEO:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->AI_SUGGESTION_CUSTOM_EXTENSION_DATA:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     .line 98
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    const-string v1, "ULTRA_HDR"
+    const-string v1, "DIGITAL_TRIPOD_FRAMING"
 
     const/16 v2, 0x56
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ULTRA_HDR:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->DIGITAL_TRIPOD_FRAMING:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     .line 99
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    const-string v1, "VOLUME_DISTORTION_CORRECTION"
+    const-string v1, "DIGITAL_TRIPOD_FRAMING_ASSISTANCE_EXTENSION_DATA"
 
     const/16 v2, 0x57
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VOLUME_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->DIGITAL_TRIPOD_FRAMING_ASSISTANCE_EXTENSION_DATA:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-static {}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->$values()[Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
@@ -1534,7 +1534,7 @@
 
     move-result-object p0
 
-    .line 191
+    .line 192
     check-cast p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     return-object p0
@@ -1549,7 +1549,7 @@
 
     move-result-object v0
 
-    .line 191
+    .line 192
     check-cast v0, [Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     return-object v0

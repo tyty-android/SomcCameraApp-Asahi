@@ -4,6 +4,9 @@
 
 
 # annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
 .annotation runtime Lcom/google/errorprone/annotations/Immutable;
     containerOf = {
         "R",
@@ -73,10 +76,10 @@
 .method static constructor <clinit>()V
     .locals 4
 
-    .line 27
+    .line 32
     new-instance v0, Lcom/google/common/collect/SparseImmutableTable;
 
-    .line 29
+    .line 34
     invoke-static {}, Lcom/google/common/collect/ImmutableList;->of()Lcom/google/common/collect/ImmutableList;
 
     move-result-object v1
@@ -98,6 +101,19 @@
 
 .method constructor <init>(Lcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableSet;Lcom/google/common/collect/ImmutableSet;)V
     .locals 9
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0,
+            0x0
+        }
+        names = {
+            "cellList",
+            "rowSpace",
+            "columnSpace"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -111,20 +127,20 @@
         }
     .end annotation
 
-    .line 46
+    .line 51
     invoke-direct {p0}, Lcom/google/common/collect/RegularImmutableTable;-><init>()V
 
-    .line 47
+    .line 52
     invoke-static {p2}, Lcom/google/common/collect/Maps;->indexMap(Ljava/util/Collection;)Lcom/google/common/collect/ImmutableMap;
 
     move-result-object v0
 
-    .line 48
+    .line 53
     invoke-static {}, Lcom/google/common/collect/Maps;->newLinkedHashMap()Ljava/util/LinkedHashMap;
 
     move-result-object v1
 
-    .line 49
+    .line 54
     invoke-virtual {p2}, Lcom/google/common/collect/ImmutableSet;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p2
@@ -140,7 +156,7 @@
 
     move-result-object v2
 
-    .line 50
+    .line 55
     new-instance v3, Ljava/util/LinkedHashMap;
 
     invoke-direct {v3}, Ljava/util/LinkedHashMap;-><init>()V
@@ -149,13 +165,13 @@
 
     goto :goto_0
 
-    .line 52
+    .line 57
     :cond_0
     invoke-static {}, Lcom/google/common/collect/Maps;->newLinkedHashMap()Ljava/util/LinkedHashMap;
 
     move-result-object p2
 
-    .line 53
+    .line 58
     invoke-virtual {p3}, Lcom/google/common/collect/ImmutableSet;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p3
@@ -171,7 +187,7 @@
 
     move-result-object v2
 
-    .line 54
+    .line 59
     new-instance v3, Ljava/util/LinkedHashMap;
 
     invoke-direct {v3}, Ljava/util/LinkedHashMap;-><init>()V
@@ -180,7 +196,7 @@
 
     goto :goto_1
 
-    .line 56
+    .line 61
     :cond_1
     invoke-virtual {p1}, Lcom/google/common/collect/ImmutableList;->size()I
 
@@ -188,7 +204,7 @@
 
     new-array p3, p3, [I
 
-    .line 57
+    .line 62
     invoke-virtual {p1}, Lcom/google/common/collect/ImmutableList;->size()I
 
     move-result v2
@@ -197,7 +213,7 @@
 
     const/4 v3, 0x0
 
-    .line 58
+    .line 63
     :goto_2
     invoke-virtual {p1}, Lcom/google/common/collect/ImmutableList;->size()I
 
@@ -205,30 +221,36 @@
 
     if-ge v3, v4, :cond_2
 
-    .line 59
+    .line 64
     invoke-virtual {p1, v3}, Lcom/google/common/collect/ImmutableList;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Lcom/google/common/collect/Table$Cell;
 
-    .line 60
+    .line 65
     invoke-interface {v4}, Lcom/google/common/collect/Table$Cell;->getRowKey()Ljava/lang/Object;
 
     move-result-object v5
 
-    .line 61
+    .line 66
     invoke-interface {v4}, Lcom/google/common/collect/Table$Cell;->getColumnKey()Ljava/lang/Object;
 
     move-result-object v6
 
-    .line 62
+    .line 67
     invoke-interface {v4}, Lcom/google/common/collect/Table$Cell;->getValue()Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 64
+    .line 73
     invoke-interface {v0, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/lang/Integer;
+
+    invoke-static {v7}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v7
 
@@ -240,30 +262,42 @@
 
     aput v7, p3, v3
 
-    .line 65
+    .line 74
     invoke-interface {v1, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v7
 
     check-cast v7, Ljava/util/Map;
 
-    .line 66
+    invoke-static {v7}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/util/Map;
+
+    .line 75
     invoke-interface {v7}, Ljava/util/Map;->size()I
 
     move-result v8
 
     aput v8, v2, v3
 
-    .line 67
+    .line 76
     invoke-interface {v7, v6, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v7
 
-    .line 68
+    .line 77
     invoke-virtual {p0, v5, v6, v7, v4}, Lcom/google/common/collect/SparseImmutableTable;->checkNoDuplicate(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 69
+    .line 78
     invoke-interface {p2, v6}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Ljava/util/Map;
+
+    invoke-static {v6}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v6
 
@@ -275,24 +309,24 @@
 
     goto :goto_2
 
-    .line 71
+    .line 80
     :cond_2
     iput-object p3, p0, Lcom/google/common/collect/SparseImmutableTable;->cellRowIndices:[I
 
-    .line 72
+    .line 81
     iput-object v2, p0, Lcom/google/common/collect/SparseImmutableTable;->cellColumnInRowIndices:[I
 
-    .line 73
+    .line 82
     new-instance p1, Lcom/google/common/collect/ImmutableMap$Builder;
 
-    .line 74
+    .line 83
     invoke-interface {v1}, Ljava/util/Map;->size()I
 
     move-result p3
 
     invoke-direct {p1, p3}, Lcom/google/common/collect/ImmutableMap$Builder;-><init>(I)V
 
-    .line 75
+    .line 84
     invoke-interface {v1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object p3
@@ -314,7 +348,7 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 76
+    .line 85
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v1
@@ -333,25 +367,25 @@
 
     goto :goto_3
 
-    .line 78
+    .line 87
     :cond_3
-    invoke-virtual {p1}, Lcom/google/common/collect/ImmutableMap$Builder;->build()Lcom/google/common/collect/ImmutableMap;
+    invoke-virtual {p1}, Lcom/google/common/collect/ImmutableMap$Builder;->buildOrThrow()Lcom/google/common/collect/ImmutableMap;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/google/common/collect/SparseImmutableTable;->rowMap:Lcom/google/common/collect/ImmutableMap;
 
-    .line 80
+    .line 89
     new-instance p1, Lcom/google/common/collect/ImmutableMap$Builder;
 
-    .line 81
+    .line 90
     invoke-interface {p2}, Ljava/util/Map;->size()I
 
     move-result p3
 
     invoke-direct {p1, p3}, Lcom/google/common/collect/ImmutableMap$Builder;-><init>(I)V
 
-    .line 82
+    .line 91
     invoke-interface {p2}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object p2
@@ -373,7 +407,7 @@
 
     check-cast p3, Ljava/util/Map$Entry;
 
-    .line 83
+    .line 92
     invoke-interface {p3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
@@ -392,9 +426,9 @@
 
     goto :goto_4
 
-    .line 85
+    .line 94
     :cond_4
-    invoke-virtual {p1}, Lcom/google/common/collect/ImmutableMap$Builder;->build()Lcom/google/common/collect/ImmutableMap;
+    invoke-virtual {p1}, Lcom/google/common/collect/ImmutableMap$Builder;->buildOrThrow()Lcom/google/common/collect/ImmutableMap;
 
     move-result-object p1
 
@@ -417,10 +451,10 @@
         }
     .end annotation
 
-    .line 91
+    .line 100
     iget-object p0, p0, Lcom/google/common/collect/SparseImmutableTable;->columnMap:Lcom/google/common/collect/ImmutableMap;
 
-    .line 92
+    .line 101
     invoke-static {p0}, Lcom/google/common/collect/ImmutableMap;->copyOf(Ljava/util/Map;)Lcom/google/common/collect/ImmutableMap;
 
     move-result-object p0
@@ -431,89 +465,8 @@
 .method public bridge synthetic columnMap()Ljava/util/Map;
     .locals 0
 
-    .line 24
+    .line 28
     invoke-virtual {p0}, Lcom/google/common/collect/SparseImmutableTable;->columnMap()Lcom/google/common/collect/ImmutableMap;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method createSerializedForm()Lcom/google/common/collect/ImmutableTable$SerializedForm;
-    .locals 6
-
-    .line 127
-    invoke-virtual {p0}, Lcom/google/common/collect/SparseImmutableTable;->columnKeySet()Lcom/google/common/collect/ImmutableSet;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lcom/google/common/collect/Maps;->indexMap(Ljava/util/Collection;)Lcom/google/common/collect/ImmutableMap;
-
-    move-result-object v0
-
-    .line 128
-    invoke-virtual {p0}, Lcom/google/common/collect/SparseImmutableTable;->cellSet()Lcom/google/common/collect/ImmutableSet;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Lcom/google/common/collect/ImmutableSet;->size()I
-
-    move-result v1
-
-    new-array v1, v1, [I
-
-    .line 130
-    invoke-virtual {p0}, Lcom/google/common/collect/SparseImmutableTable;->cellSet()Lcom/google/common/collect/ImmutableSet;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/google/common/collect/ImmutableSet;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
-
-    move-result-object v2
-
-    const/4 v3, 0x0
-
-    :goto_0
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_0
-
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Lcom/google/common/collect/Table$Cell;
-
-    add-int/lit8 v5, v3, 0x1
-
-    .line 131
-    invoke-interface {v4}, Lcom/google/common/collect/Table$Cell;->getColumnKey()Ljava/lang/Object;
-
-    move-result-object v4
-
-    invoke-interface {v0, v4}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Ljava/lang/Integer;
-
-    invoke-virtual {v4}, Ljava/lang/Integer;->intValue()I
-
-    move-result v4
-
-    aput v4, v1, v3
-
-    move v3, v5
-
-    goto :goto_0
-
-    .line 133
-    :cond_0
-    iget-object v0, p0, Lcom/google/common/collect/SparseImmutableTable;->cellRowIndices:[I
-
-    invoke-static {p0, v0, v1}, Lcom/google/common/collect/ImmutableTable$SerializedForm;->create(Lcom/google/common/collect/ImmutableTable;[I[I)Lcom/google/common/collect/ImmutableTable$SerializedForm;
 
     move-result-object p0
 
@@ -522,6 +475,15 @@
 
 .method getCell(I)Lcom/google/common/collect/Table$Cell;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -530,12 +492,12 @@
         }
     .end annotation
 
-    .line 109
+    .line 118
     iget-object v0, p0, Lcom/google/common/collect/SparseImmutableTable;->cellRowIndices:[I
 
     aget v0, v0, p1
 
-    .line 110
+    .line 119
     iget-object v1, p0, Lcom/google/common/collect/SparseImmutableTable;->rowMap:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {v1}, Lcom/google/common/collect/ImmutableMap;->entrySet()Lcom/google/common/collect/ImmutableSet;
@@ -552,19 +514,19 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 111
+    .line 120
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Lcom/google/common/collect/ImmutableMap;
 
-    .line 112
+    .line 121
     iget-object p0, p0, Lcom/google/common/collect/SparseImmutableTable;->cellColumnInRowIndices:[I
 
     aget p0, p0, p1
 
-    .line 113
+    .line 122
     invoke-virtual {v1}, Lcom/google/common/collect/ImmutableMap;->entrySet()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object p1
@@ -579,7 +541,7 @@
 
     check-cast p0, Ljava/util/Map$Entry;
 
-    .line 114
+    .line 123
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object p1
@@ -601,18 +563,27 @@
 
 .method getValue(I)Ljava/lang/Object;
     .locals 2
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TV;"
         }
     .end annotation
 
-    .line 119
+    .line 128
     iget-object v0, p0, Lcom/google/common/collect/SparseImmutableTable;->cellRowIndices:[I
 
     aget v0, v0, p1
 
-    .line 120
+    .line 129
     iget-object v1, p0, Lcom/google/common/collect/SparseImmutableTable;->rowMap:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {v1}, Lcom/google/common/collect/ImmutableMap;->values()Lcom/google/common/collect/ImmutableCollection;
@@ -629,12 +600,12 @@
 
     check-cast v0, Lcom/google/common/collect/ImmutableMap;
 
-    .line 121
+    .line 130
     iget-object p0, p0, Lcom/google/common/collect/SparseImmutableTable;->cellColumnInRowIndices:[I
 
     aget p0, p0, p1
 
-    .line 122
+    .line 131
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableMap;->values()Lcom/google/common/collect/ImmutableCollection;
 
     move-result-object p1
@@ -662,10 +633,10 @@
         }
     .end annotation
 
-    .line 98
+    .line 107
     iget-object p0, p0, Lcom/google/common/collect/SparseImmutableTable;->rowMap:Lcom/google/common/collect/ImmutableMap;
 
-    .line 99
+    .line 108
     invoke-static {p0}, Lcom/google/common/collect/ImmutableMap;->copyOf(Ljava/util/Map;)Lcom/google/common/collect/ImmutableMap;
 
     move-result-object p0
@@ -676,7 +647,7 @@
 .method public bridge synthetic rowMap()Ljava/util/Map;
     .locals 0
 
-    .line 24
+    .line 28
     invoke-virtual {p0}, Lcom/google/common/collect/SparseImmutableTable;->rowMap()Lcom/google/common/collect/ImmutableMap;
 
     move-result-object p0
@@ -687,10 +658,97 @@
 .method public size()I
     .locals 0
 
-    .line 104
+    .line 113
     iget-object p0, p0, Lcom/google/common/collect/SparseImmutableTable;->cellRowIndices:[I
 
     array-length p0, p0
 
     return p0
+.end method
+
+.method writeReplace()Ljava/lang/Object;
+    .locals 6
+
+    .line 138
+    invoke-virtual {p0}, Lcom/google/common/collect/SparseImmutableTable;->columnKeySet()Lcom/google/common/collect/ImmutableSet;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/google/common/collect/Maps;->indexMap(Ljava/util/Collection;)Lcom/google/common/collect/ImmutableMap;
+
+    move-result-object v0
+
+    .line 139
+    invoke-virtual {p0}, Lcom/google/common/collect/SparseImmutableTable;->cellSet()Lcom/google/common/collect/ImmutableSet;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/google/common/collect/ImmutableSet;->size()I
+
+    move-result v1
+
+    new-array v1, v1, [I
+
+    .line 141
+    invoke-virtual {p0}, Lcom/google/common/collect/SparseImmutableTable;->cellSet()Lcom/google/common/collect/ImmutableSet;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/google/common/collect/ImmutableSet;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
+
+    move-result-object v2
+
+    const/4 v3, 0x0
+
+    :goto_0
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Lcom/google/common/collect/Table$Cell;
+
+    add-int/lit8 v5, v3, 0x1
+
+    .line 143
+    invoke-interface {v4}, Lcom/google/common/collect/Table$Cell;->getColumnKey()Ljava/lang/Object;
+
+    move-result-object v4
+
+    invoke-interface {v0, v4}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/lang/Integer;
+
+    invoke-static {v4}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/lang/Integer;
+
+    invoke-virtual {v4}, Ljava/lang/Integer;->intValue()I
+
+    move-result v4
+
+    aput v4, v1, v3
+
+    move v3, v5
+
+    goto :goto_0
+
+    .line 145
+    :cond_0
+    iget-object v0, p0, Lcom/google/common/collect/SparseImmutableTable;->cellRowIndices:[I
+
+    invoke-static {p0, v0, v1}, Lcom/google/common/collect/ImmutableTable$SerializedForm;->create(Lcom/google/common/collect/ImmutableTable;[I[I)Lcom/google/common/collect/ImmutableTable$SerializedForm;
+
+    move-result-object p0
+
+    return-object p0
 .end method

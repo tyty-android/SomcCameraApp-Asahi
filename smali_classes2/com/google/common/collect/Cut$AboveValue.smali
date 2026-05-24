@@ -31,13 +31,22 @@
 # direct methods
 .method constructor <init>(Ljava/lang/Comparable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "endpoint"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TC;)V"
         }
     .end annotation
 
-    .line 388
+    .line 398
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -53,6 +62,15 @@
 # virtual methods
 .method canonical(Lcom/google/common/collect/DiscreteDomain;)Lcom/google/common/collect/Cut;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "domain"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -63,14 +81,14 @@
         }
     .end annotation
 
-    .line 454
+    .line 463
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Cut$AboveValue;->leastValueAbove(Lcom/google/common/collect/DiscreteDomain;)Ljava/lang/Comparable;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 455
+    .line 464
     invoke-static {p0}, Lcom/google/common/collect/Cut$AboveValue;->belowValue(Ljava/lang/Comparable;)Lcom/google/common/collect/Cut;
 
     move-result-object p0
@@ -88,8 +106,16 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x1000
+        }
+        names = {
+            "that"
+        }
+    .end annotation
 
-    .line 386
+    .line 396
     check-cast p1, Lcom/google/common/collect/Cut;
 
     invoke-super {p0, p1}, Lcom/google/common/collect/Cut;->compareTo(Lcom/google/common/collect/Cut;)I
@@ -101,10 +127,18 @@
 
 .method describeAsLowerBound(Ljava/lang/StringBuilder;)V
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sb"
+        }
+    .end annotation
 
     const/16 v0, 0x28
 
-    .line 434
+    .line 442
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     move-result-object p1
@@ -118,8 +152,16 @@
 
 .method describeAsUpperBound(Ljava/lang/StringBuilder;)V
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "sb"
+        }
+    .end annotation
 
-    .line 439
+    .line 447
     iget-object p0, p0, Lcom/google/common/collect/Cut$AboveValue;->endpoint:Ljava/lang/Comparable;
 
     invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -135,6 +177,15 @@
 
 .method greatestValueBelow(Lcom/google/common/collect/DiscreteDomain;)Ljava/lang/Comparable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "domain"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -143,7 +194,7 @@
         }
     .end annotation
 
-    .line 449
+    .line 458
     iget-object p0, p0, Lcom/google/common/collect/Cut$AboveValue;->endpoint:Ljava/lang/Comparable;
 
     return-object p0
@@ -152,10 +203,10 @@
 .method public hashCode()I
     .locals 0
 
-    .line 460
+    .line 469
     iget-object p0, p0, Lcom/google/common/collect/Cut$AboveValue;->endpoint:Ljava/lang/Comparable;
 
-    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
+    invoke-interface {p0}, Ljava/lang/Comparable;->hashCode()I
 
     move-result p0
 
@@ -166,13 +217,22 @@
 
 .method isLessThan(Ljava/lang/Comparable;)Z
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "value"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TC;)Z"
         }
     .end annotation
 
-    .line 393
+    .line 403
     iget-object p0, p0, Lcom/google/common/collect/Cut$AboveValue;->endpoint:Ljava/lang/Comparable;
 
     invoke-static {p0, p1}, Lcom/google/common/collect/Range;->compareOrThrow(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
@@ -194,6 +254,15 @@
 
 .method leastValueAbove(Lcom/google/common/collect/DiscreteDomain;)Ljava/lang/Comparable;
     .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "domain"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -202,7 +271,10 @@
         }
     .end annotation
 
-    .line 444
+    .annotation runtime Ljavax/annotation/CheckForNull;
+    .end annotation
+
+    .line 453
     iget-object p0, p0, Lcom/google/common/collect/Cut$AboveValue;->endpoint:Ljava/lang/Comparable;
 
     invoke-virtual {p1, p0}, Lcom/google/common/collect/DiscreteDomain;->next(Ljava/lang/Comparable;)Ljava/lang/Comparable;
@@ -215,34 +287,16 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 465
+    .line 474
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "/"
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
     iget-object p0, p0, Lcom/google/common/collect/Cut$AboveValue;->endpoint:Ljava/lang/Comparable;
 
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    add-int/lit8 v0, v0, 0x2
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v0, "/"
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -262,7 +316,7 @@
 .method typeAsLowerBound()Lcom/google/common/collect/BoundType;
     .locals 0
 
-    .line 398
+    .line 408
     sget-object p0, Lcom/google/common/collect/BoundType;->OPEN:Lcom/google/common/collect/BoundType;
 
     return-object p0
@@ -271,7 +325,7 @@
 .method typeAsUpperBound()Lcom/google/common/collect/BoundType;
     .locals 0
 
-    .line 403
+    .line 413
     sget-object p0, Lcom/google/common/collect/BoundType;->CLOSED:Lcom/google/common/collect/BoundType;
 
     return-object p0
@@ -279,6 +333,17 @@
 
 .method withLowerBoundType(Lcom/google/common/collect/BoundType;Lcom/google/common/collect/DiscreteDomain;)Lcom/google/common/collect/Cut;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "boundType",
+            "domain"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -290,7 +355,7 @@
         }
     .end annotation
 
-    .line 408
+    .line 418
     sget-object v0, Lcom/google/common/collect/Cut$1;->$SwitchMap$com$google$common$collect$BoundType:[I
 
     invoke-virtual {p1}, Lcom/google/common/collect/BoundType;->ordinal()I
@@ -309,7 +374,7 @@
 
     return-object p0
 
-    .line 415
+    .line 425
     :cond_0
     new-instance p0, Ljava/lang/AssertionError;
 
@@ -317,7 +382,7 @@
 
     throw p0
 
-    .line 412
+    .line 422
     :cond_1
     iget-object p0, p0, Lcom/google/common/collect/Cut$AboveValue;->endpoint:Ljava/lang/Comparable;
 
@@ -327,7 +392,7 @@
 
     if-nez p0, :cond_2
 
-    .line 413
+    .line 423
     invoke-static {}, Lcom/google/common/collect/Cut;->belowAll()Lcom/google/common/collect/Cut;
 
     move-result-object p0
@@ -345,6 +410,17 @@
 
 .method withUpperBoundType(Lcom/google/common/collect/BoundType;Lcom/google/common/collect/DiscreteDomain;)Lcom/google/common/collect/Cut;
     .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "boundType",
+            "domain"
+        }
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -356,7 +432,7 @@
         }
     .end annotation
 
-    .line 421
+    .line 430
     sget-object v0, Lcom/google/common/collect/Cut$1;->$SwitchMap$com$google$common$collect$BoundType:[I
 
     invoke-virtual {p1}, Lcom/google/common/collect/BoundType;->ordinal()I
@@ -373,7 +449,7 @@
 
     if-ne p1, v0, :cond_1
 
-    .line 423
+    .line 432
     iget-object p0, p0, Lcom/google/common/collect/Cut$AboveValue;->endpoint:Ljava/lang/Comparable;
 
     invoke-virtual {p2, p0}, Lcom/google/common/collect/DiscreteDomain;->next(Ljava/lang/Comparable;)Ljava/lang/Comparable;
@@ -382,7 +458,7 @@
 
     if-nez p0, :cond_0
 
-    .line 424
+    .line 433
     invoke-static {}, Lcom/google/common/collect/Cut;->aboveAll()Lcom/google/common/collect/Cut;
 
     move-result-object p0
@@ -397,7 +473,7 @@
     :goto_0
     return-object p0
 
-    .line 428
+    .line 437
     :cond_1
     new-instance p0, Ljava/lang/AssertionError;
 
